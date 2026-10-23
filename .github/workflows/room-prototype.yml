@@ -1,0 +1,20 @@
+name: Future rooms prototype contracts
+on:
+  pull_request:
+    paths:
+      - 'prototypes/rooms/**'
+      - 'docs/future-rooms/**'
+      - '.github/workflows/room-prototype.yml'
+permissions:
+  contents: read
+jobs:
+  verify-concepts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node prototypes/rooms/verify.mjs
+      - run: node --check prototypes/rooms/rooms.js
+      - run: node --check prototypes/rooms/qa.js

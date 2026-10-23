@@ -1,0 +1,83 @@
+window.GLP_ROOM_CONTENT = {
+  "schemaVersion": 1,
+  "status": "Nondeployed review prototype; not religious instruction",
+  "readerRelease": "fa6e4fecd1a5c602b30ffd13ca23416ae911ea83",
+  "anchors": [
+    {
+      "id": "pauri04.line05",
+      "text": "ਅੰਮ੍ਰਿਤ ਵੇਲਾ ਸਚੁ ਨਾਉ ਵਡਿਆਈ ਵੀਚਾਰੁ ॥",
+      "ang": 2,
+      "sourceLine": 5,
+      "sha256": "56643feeed338eecf3ab31e9b01efaad080f8087659ca7a311f5eef4098cf9a7",
+      "unit": "Pauri 4",
+      "comparison": "Exact frozen-source hash and independent displayed Gurmukhi comparison, SriGranth Ang 2, 2026-10-23; qualified collation still pending",
+      "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=2"
+    },
+    {
+      "id": "pauri05.line05",
+      "text": "ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥",
+      "ang": 2,
+      "sourceLine": 8,
+      "sha256": "b2584941f005a8a2213c9c9de3165a5eaf2ae179995f882b296317ed532bc989",
+      "unit": "Pauri 5",
+      "comparison": "Exact frozen-source hash and independent displayed Gurmukhi comparison, SriGranth Ang 2, 2026-10-23; qualified collation still pending",
+      "sourceUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=2"
+    }
+  ],
+  "places": [
+    {
+      "id": "harmandir",
+      "name": "Sri Harmandir Sahib",
+      "gurmukhi": "ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਸਾਹਿਬ",
+      "location": "Amritsar, Punjab, India",
+      "address": "Sri Harmandir Sahib, Amritsar, Punjab, India",
+      "timeZone": "Asia/Kolkata",
+      "intro": "Sri Harmandir Sahib stands within the Sarovar in Amritsar. Its four entrances welcome people from all directions.",
+      "introSource": "https://sgpc.net/sri-harmandir-sahib/",
+      "officialUrl": "https://kirtan.sgpc.net/",
+      "officialLabel": "Open SGPC kirtan page",
+      "routeNote": "The official page includes kirtan and dated recordings. Current broadcast status has not been checked.",
+      "checkedOn": "2026-10-23",
+      "photo": null,
+      "photoRights": "No image used; rights clearance outstanding",
+      "broadcastStatus": "not_checked",
+      "playbackTested": false
+    },
+    {
+      "id": "fremont",
+      "name": "Gurdwara Sahib Fremont",
+      "gurmukhi": null,
+      "location": "Fremont, California, USA",
+      "address": "300 Gurdwara Road, Fremont, CA, USA",
+      "timeZone": "America/Los_Angeles",
+      "intro": "Gurdwara Sahib Fremont welcomes visitors of all faiths. Its official site introduces Sikh teachings and the community kitchen, langar.",
+      "introSource": "https://fremontgurdwara.org/",
+      "officialUrl": "https://www.youtube.com/c/gurdwarasahibfremont",
+      "officialLabel": "Open official YouTube channel",
+      "routeNote": "This channel is linked by the gurdwara’s official website. Opening it does not imply a broadcast is currently live.",
+      "checkedOn": "2026-10-23",
+      "photo": null,
+      "photoRights": "No image used; rights clearance outstanding",
+      "broadcastStatus": "not_checked",
+      "playbackTested": false
+    },
+    {
+      "id": "sanjose",
+      "name": "Sikh Gurdwara Sahib – San Jose",
+      "gurmukhi": null,
+      "location": "San Jose, California, USA",
+      "address": "3636 Gurdwara Ave, San Jose, CA 95148, USA",
+      "timeZone": "America/Los_Angeles",
+      "intro": "The San Jose gurdwara was founded in 1984. Its official history records the first phase of the present facility opening in August 2004 and the second in April 2011.",
+      "introSource": "https://sanjosegurdwara.org/about.html",
+      "officialUrl": "https://sanjosegurdwara.org/audioStreaming.html",
+      "officialLabel": "Open official audio page",
+      "routeNote": "The official audio page lists a SikhNet route; its direct mobile link is marked TBD. No working direct stream or current live status is claimed.",
+      "checkedOn": "2026-10-23",
+      "photo": null,
+      "photoRights": "No image used; rights clearance outstanding",
+      "broadcastStatus": "not_checked",
+      "playbackTested": false
+    }
+  ]
+};
