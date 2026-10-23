@@ -8,7 +8,7 @@
  document.addEventListener('click',async e=>{
   if(e.target.closest('[data-action="install"]'))message();
   if(e.target.closest('#check-update')){if(!registration){message();return;}try{await registration.update();offline=registration.waiting?'An update is ready. Export learning before loading it.':'Update check complete. No waiting update is currently available.';}catch{offline='Could not check for updates. Your reading and learning are unchanged.';}message();}
-  if(e.target.closest('#apply-update')&&registration?.waiting){if(window.GLP_BEFORE_UPDATE&&!await window.GLP_BEFORE_UPDATE()){offline='Learning could not be saved. Export a backup before loading the update.';message();return;}updateRequested=true;registration.waiting.postMessage({type:'ACTIVATE_GLP_UPDATE'});}
+  if(e.target.closest('#apply-update')&&registration?.waiting){updateRequested=true;registration.waiting.postMessage({type:'ACTIVATE_GLP_UPDATE'});}
  });
  let reloading=false;navigator.serviceWorker?.addEventListener('controllerchange',()=>{if(reloading||!updateRequested)return;reloading=true;location.reload();});
 })();
