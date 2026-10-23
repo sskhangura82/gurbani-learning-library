@@ -33,3 +33,29 @@ dialog{max-height:calc(100dvh - 36px)}.tuk{overflow-wrap:anywhere}
 @media(max-width:380px){.unit-lesson{padding:15px}.unit-lesson h3{font-size:25px}.dock-main{flex-wrap:wrap}.dock-main .primary{flex:1 1 100px}}
 
 button,select{min-width:44px}
+
+/* Revision 5 — reduce interface area, not scripture or touch targets. */
+main{padding-bottom:110px}
+.reading-bar{padding:5px 0;border-bottom:0;background:var(--paper)}
+.bar-secondary,.dock-top,#pace-open{display:none}
+#guide-caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.modes{border-radius:10px;max-width:650px}.modes button{min-height:48px;padding:5px 6px}
+.modes button span{font-size:11px;line-height:1.5}
+.reading-dock{padding:6px 12px max(6px,env(safe-area-inset-bottom));max-width:720px;border-radius:12px 12px 0 0;box-shadow:none}
+.dock-main{flex-wrap:nowrap;gap:6px}.dock-main .primary{min-width:110px;flex:1 1 auto}
+.dock-main button{min-height:44px;min-width:44px;padding:7px 10px}.dock-main #tools-open{font-size:17px;letter-spacing:1px;padding:4px 8px}
+#quiet-toggle{font-size:12px;min-width:58px}#return-follow{font-size:11px;max-width:100px;white-space:normal;line-height:1.3}
+.passage{padding:10px 0 3px}.section-caption{gap:10px;margin:4px 0 7px}.section-caption h2{font-size:10px;letter-spacing:.6px}
+.scripture-line{padding:3px 0 5px}.tuk{line-height:1.75;padding:3px 7px;border-radius:4px}
+.tuk[data-current=true]{background:transparent}
+:root[data-radiance=true] .tuk{text-shadow:0 0 6px var(--glow)}
+:root[data-radiance=true] .g-word[data-active=true]{text-shadow:.35px 0 currentColor,-.35px 0 currentColor,0 0 7px var(--glow),0 0 11px var(--glow)}
+.simple-meaning{padding:3px 10px 8px}.simple-meaning .english{line-height:1.7}.simple-meaning .punjabi{line-height:1.8;margin-top:3px}.simple-meaning .expand-hint{margin-top:3px}
+.scripture-line~.scripture-line .expand-hint{display:none}
+.coverage-note{margin:10px auto 0;padding:7px 10px}
+body.quiet-reading .reading-bar{display:none}body.quiet-reading .page-header,body.quiet-reading .intro{display:none}
+body.quiet-reading #tools-open{display:none}body.quiet-reading .reading-dock{max-width:420px}
+body.roomy-spacing .tuk{line-height:2.1;padding-top:9px;padding-bottom:9px}body.roomy-spacing .scripture-line{padding-top:7px;padding-bottom:12px}body.roomy-spacing .passage{padding-top:22px;padding-bottom:8px}
+@media(min-width:720px){.reading-dock{bottom:10px;border:1px solid var(--line);border-radius:12px}.tuk{padding-left:18px;padding-right:18px}}
+@media(max-width:380px){.dock-main .primary{min-width:96px}.dock-main button{padding:7px}.dock-main{gap:4px}.reading-dock{padding-left:8px;padding-right:8px}#quiet-toggle{min-width:54px}#return-follow{max-width:78px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){:root[data-radiance=true] .tuk,:root[data-radiance=true] .g-word[data-active=true]{text-shadow:none!important}}
