@@ -1,5 +1,5 @@
 /* Frozen static release cache. Learning is never part of a network response. */
-const VERSION='glp-static-0.9-japji-v1-r1';
+const VERSION='glp-static-0.9-japji-v1-r2';
 const PREFIX='glp-static:'+self.registration.scope+':';
 const CACHE=PREFIX+VERSION;
 const ASSETS=['./','./full-japji.html','./index.html','./pauri-2-lesson.html','./js/continuous-core.js','./js/line-meanings.js','./css/app.css','./css/japji-full.css','./js/app.js','./js/content.js','./js/core.js','./js/gurdwaras.js','./js/places.js','./js/japji-full-data.js','./js/japji-full.js','./js/japji-lessons.js','./js/learning.js','./js/pwa.js','./icons/icon-180.png','./icons/icon-192.png','./icons/icon-512.png','./manifest.webmanifest'];
