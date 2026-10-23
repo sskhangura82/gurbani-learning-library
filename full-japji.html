@@ -13,22 +13,21 @@
 <header class="page-header"><div class="brand">GURBANI <span>LEARNING LIBRARY</span></div><button id="explore" type="button">Explore ↗</button></header>
 <main>
 <section class="intro"><p class="eyebrow">ONE CONTINUOUS READING</p><h1>Japji Sahib <span lang="pa">ਜਪੁਜੀ ਸਾਹਿਬ</span></h1><p>Mool Mantar to the closing Salok · 38 pauris</p></section>
-<nav class="reading-bar" aria-label="Reading depth">
- <div class="modes" role="group" aria-label="Choose reading depth">
-  <button type="button" data-depth="read" aria-pressed="true">Read <span lang="pa">ਪਾਠ</span></button>
-  <button type="button" data-depth="understand" aria-pressed="false">Understand <span lang="pa">ਸਰਲ ਅਰਥ</span></button>
-  <button type="button" data-depth="study" aria-pressed="false">Study <span lang="pa">ਵਿਸਥਾਰ</span></button>
- </div>
- <div class="bar-secondary"><p id="mode-description">Gurmukhi only. Keep reading without turning pages.</p><button type="button" id="settings-open" aria-label="Open reading settings">Aa</button><button type="button" id="jump-open">Jump</button></div>
-</nav>
+<p id="mode-description" class="sr-only">Gurmukhi only. One continuous reading.</p>
 <div class="coverage-note" id="coverage-note" hidden>Original English/Punjabi meanings throughout. All teaching is a draft awaiting qualified human review; scripture, meaning, interpretation and application remain separate.</div>
 <section id="continuous-reader" aria-label="Complete Japji Sahib, continuous reading" tabindex="-1"></section>
-<footer class="end-note"><p>End of Japji Sahib</p><button type="button" id="back-start">Return to the beginning</button><button type="button" id="coverage-open">Sources &amp; teaching coverage</button><p class="version">GLP-001 · 0.9-japji-v1 · revision 5</p></footer>
+<footer class="end-note"><p>End of Japji Sahib</p><button type="button" id="back-start">Return to the beginning</button><button type="button" id="coverage-open">Sources &amp; teaching coverage</button><p class="version">GLP-001 · 0.9-japji-v1 · revision 6</p></footer>
 </main>
-<aside class="reading-dock" aria-label="Automatic reading controls">
- <div class="dock-top"><span id="dock-position">Mool Mantar</span><button type="button" id="save-place" aria-pressed="false" aria-label="Save current reading line">☆ Save</button><button type="button" id="start-here">Start here</button></div>
- <div class="dock-main"><button type="button" id="play" class="primary">▶ Play scroll</button><button type="button" id="return-follow" hidden>Return to glow</button><button type="button" id="pace-open">Pace <span id="pace-label">70</span></button><button type="button" id="quiet-toggle" aria-pressed="false" aria-label="Hide reading banners">Quiet</button><button type="button" id="tools-open" aria-label="Reading controls and more">•••</button></div>
- <p id="guide-caption">Silent visual guide · listen in your preferred app.</p>
+<aside class="reading-dock" aria-label="Reading controls">
+ <button type="button" id="play" class="primary" aria-label="Play silent visual guide" aria-pressed="false"><span aria-hidden="true">▶</span></button>
+ <button type="button" id="dock-position" aria-label="Current reading location. Jump to a passage">Mool Mantar</button>
+ <div class="modes" role="group" aria-label="Reading depth">
+  <button type="button" data-depth="read" aria-label="Read · Gurmukhi only" aria-pressed="true"><span aria-hidden="true">●</span>Read</button>
+  <button type="button" data-depth="understand" aria-label="Understand · English and Punjabi meanings" aria-pressed="false"><span aria-hidden="true">●</span>Meaning</button>
+  <button type="button" data-depth="study" aria-label="Study · deeper learning" aria-pressed="false"><span aria-hidden="true">●</span>Study</button>
+ </div>
+ <button type="button" id="tools-open" aria-label="Expand reading controls" aria-haspopup="dialog" aria-controls="reader-dialog" aria-expanded="false"><span aria-hidden="true">⌃</span></button>
+ <p id="guide-caption" class="sr-only">Silent visual guide · not synchronized to audio.</p>
 </aside>
 <div class="sr-only" id="status" role="status" aria-live="polite"></div>
 <dialog id="reader-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><div><p id="dialog-kicker" class="eyebrow">EXPLORE</p><h2 id="dialog-title">More understanding</h2></div><button type="button" id="dialog-close" aria-label="Close and return to the same reading position">×</button></div><div id="dialog-body"></div></dialog>

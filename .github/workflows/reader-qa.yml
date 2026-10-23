@@ -21,3 +21,5 @@ jobs:
         run: node tests/shared-learning.mjs
       - name: Reader code syntax
         run: node --check js/japji-full.js
+      - name: Revision 6 preservation and preferences
+        run: node tests/r6-contract.mjs

@@ -20,7 +20,7 @@ body[data-depth=understand] .simple-meaning,body[data-depth=study] .simple-meani
 dialog{color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:0;border-radius:14px;max-height:88vh;max-width:min(620px,calc(100% - 24px));width:620px;box-shadow:0 8px 60px #0004}dialog::backdrop{background:#0005}.dialog-heading{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;position:sticky;top:0;background:var(--paper);z-index:2;border-bottom:1px solid var(--line);gap:12px}.dialog-heading h2{font:27px/1.3 Georgia,serif;margin:0}.dialog-heading .eyebrow{margin:0 0 6px}.dialog-heading button{font-size:26px;min-width:44px;padding:2px 10px}#dialog-body{padding:20px 22px 26px;font-size:14px;line-height:1.9}#dialog-body>p{margin:0 0 14px}#dialog-body .excerpt{font:25px/2 'Gurmukhi MN','Noto Serif Gurmukhi',serif;margin:0 0 18px}#dialog-body .deep-study{display:block;padding:14px 0;border-bottom:0}#dialog-body .simple-dialog{font-size:14px;color:var(--muted)}.source-links{margin-top:20px;font-size:12px}.source-links a{display:block;margin-top:9px;overflow-wrap:anywhere}.setting-row{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:15px 0;font-size:14px}.setting-row select{max-width:190px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px;border-radius:8px}.setting-row input[type=range]{max-width:180px;width:48%}.setting-row input[type=checkbox]{width:23px;height:23px}.plain-note{font-size:12px!important;color:var(--muted)}.menu-list{display:flex;flex-direction:column;gap:10px}.menu-list button{text-align:left}.menu-list small{display:block;font-size:11px;color:var(--muted)}.connection-card{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}.connection-card h3{font:24px/1.35 Georgia,serif}.context-gurmukhi{font:23px/1.9 'Gurmukhi MN','Noto Serif Gurmukhi',serif}.learning-field{width:100%;min-height:140px;border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--surface);color:var(--ink);resize:vertical}.file-import{display:block;margin:15px 0}.file-import input{max-width:100%;font-size:12px}.pause-note{font-size:12px;color:var(--muted)}
 @media(min-width:720px){.intro{padding-top:30px}.intro h1{font-size:48px}.reading-dock{bottom:12px;border:1px solid var(--line);border-radius:14px}.tuk{padding:13px 24px}.reading-bar{padding-top:12px}.modes{max-width:560px}}
 @media(max-width:380px){main{padding-left:14px;padding-right:14px}.page-header{padding-left:14px;padding-right:14px}.intro h1{font-size:34px}.intro h1 span{font-size:22px}.bar-secondary p{font-size:10px}.bar-secondary button{font-size:11px;padding:5px 8px}.reading-dock{padding-left:10px;padding-right:10px}.dock-main button{font-size:11px;padding:8px 9px}.dock-main .primary{min-width:110px}.tuk{padding-left:3px;padding-right:3px}#dialog-body{padding:17px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}:root[data-radiance=true] .tuk,:root[data-radiance=true] .g-word[data-active=true]{text-shadow:none!important}.g-word[data-active=true]{text-decoration:underline;text-underline-offset:5px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.tuk,.g-word[data-active=true]{text-shadow:none!important}.g-word[data-active=true]{text-decoration:underline;text-underline-offset:5px}}
 @media print{.page-header,.reading-bar,.reading-dock,dialog,.end-note button{display:none!important}main{max-width:none;padding-bottom:0}.tuk{background:transparent!important;text-shadow:none!important;color:black!important}.tuk:before{display:none}.scripture-line{break-inside:avoid}}
 
 /* v0.9: layered draft lessons; continuous source nodes stay mounted. */
@@ -59,3 +59,38 @@ body.roomy-spacing .tuk{line-height:2.1;padding-top:9px;padding-bottom:9px}body.
 @media(min-width:720px){.reading-dock{bottom:10px;border:1px solid var(--line);border-radius:12px}.tuk{padding-left:18px;padding-right:18px}}
 @media(max-width:380px){.dock-main .primary{min-width:96px}.dock-main button{padding:7px}.dock-main{gap:4px}.reading-dock{padding-left:8px;padding-right:8px}#quiet-toggle{min-width:54px}#return-follow{max-width:78px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){:root[data-radiance=true] .tuk,:root[data-radiance=true] .g-word[data-active=true]{text-shadow:none!important}}
+
+/* Revision 6 — a continuous scripture column and one permanent control surface. */
+html{scroll-padding-top:14px;scroll-padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+main{padding-bottom:calc(120px + env(safe-area-inset-bottom))}
+.passage{position:relative;padding:0;margin:38px 0 0}
+.section-caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.section-caption:after{display:none}
+.scripture-line{padding:0;margin:0;scroll-margin-top:14px;scroll-margin-bottom:88px}
+.scripture-line+.scripture-line{margin-top:9px}
+.tuk{line-height:1.9;padding:0 7px;border:0;border-radius:0;background:none!important}
+.tuk[data-current=true]:before{top:25%;bottom:25%;width:2px}
+body[data-depth=understand] .scripture-line+.scripture-line{margin-top:19px}
+.simple-meaning{padding:5px 7px 0;border-radius:0;line-height:1.8}
+.simple-meaning .punjabi{line-height:1.9;margin-top:5px}
+body[data-depth=study] .section-caption{position:static;width:auto;height:auto;clip:auto;white-space:normal;margin:8px 0 15px;overflow:visible}
+body[data-depth=study] .scripture-line+.scripture-line{margin-top:19px}
+body.quiet-reading .coverage-note{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden;padding:0;margin:0}
+body.quiet-reading .page-header,body.quiet-reading .intro{display:none}
+body.quiet-reading #tools-open{display:block}
+.reading-dock,body.quiet-reading .reading-dock{display:flex;align-items:center;gap:4px;max-width:560px;left:8px;right:8px;bottom:8px;width:auto;padding:4px 4px calc(4px + env(safe-area-inset-bottom));border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 14px #00000008}
+.reading-dock>button{flex:0 0 44px;width:44px;min-width:44px;min-height:44px;height:44px;padding:0;border:0;border-radius:8px;font-size:18px}
+.reading-dock .primary{font-size:18px;font-weight:600;background:var(--accent);color:var(--paper)}
+.reading-dock #dock-position{flex:1 1 44px;min-width:44px;overflow:hidden;background:transparent;text-align:left;font-size:11px;line-height:1.35;padding:2px 4px}
+#dock-position span,#dock-position small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#dock-position small{font-size:10px;color:var(--muted)}
+.reading-dock .modes{display:flex;flex:0 0 132px;max-width:none;margin:0;border:0;border-radius:0;background:transparent;overflow:visible}
+.reading-dock .modes button{flex:0 0 44px;width:44px;min-width:44px;min-height:44px;height:44px;border:0;border-radius:8px;font-size:11px;line-height:1.3;padding:2px 0;background:transparent;color:var(--muted)}
+.reading-dock .modes button span{display:block;font:10px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;opacity:.4}
+.reading-dock .modes button[aria-pressed=true]{color:var(--ink);background:var(--wash);font-weight:650}
+.reading-dock .modes button[aria-pressed=true] span{opacity:1;color:var(--accent)}
+.reading-dock #tools-open{display:block;letter-spacing:0;font-size:23px;padding:0;background:transparent}
+.reading-dock #tools-open[aria-expanded=true]{background:var(--wash)}
+body.roomy-spacing .passage{padding:0;margin-top:40px}body.roomy-spacing .scripture-line{padding:0}body.roomy-spacing .scripture-line+.scripture-line{margin-top:12px}body.roomy-spacing .tuk{line-height:2.1;padding:0 7px}
+.setting-row{min-height:44px}.setting-row input[type=checkbox]{margin:10px;flex-shrink:0}.setting-row select{min-height:44px;min-width:44px}
+@media(min-width:720px){.tuk{padding-left:18px;padding-right:18px}}
+@media print{.reading-dock{display:none!important}.section-caption{position:static;width:auto;height:auto;clip:auto}.tuk[data-current=true]:before{display:none}}

@@ -1,0 +1,26 @@
+{
+  "environment": "Node portable contracts",
+  "checks": [
+    {
+      "name": "Root and full reader entrypoints use the same accepted interface",
+      "status": "PASS"
+    },
+    {
+      "name": "Every frozen scripture, bilingual draft, Study draft, directory and learning-coordination file is byte-identical to R5",
+      "status": "PASS"
+    },
+    {
+      "name": "Persistent-control preference defaults safely, validates boolean and survives export/import",
+      "status": "PASS"
+    },
+    {
+      "name": "A stale tab cannot overwrite the persistent-control preference or saved notes",
+      "status": "PASS"
+    },
+    {
+      "name": "One complete guide traversal visits all 385 original lines once in order without an early stop",
+      "status": "PASS"
+    }
+  ],
+  "total": 5
+}

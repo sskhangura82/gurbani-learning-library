@@ -1,0 +1,267 @@
+{
+  "status": "PASS",
+  "total": 38,
+  "checks": [
+    {
+      "name": "385 mounted occurrences exactly reconstruct frozen source text and IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "385 bilingual meaning buttons and 42 Study drafts",
+      "status": "PASS"
+    },
+    {
+      "name": "390px: single 54px dock, all six targets at least 44px",
+      "status": "PASS"
+    },
+    {
+      "name": "390px: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "320px: single 54px dock, all six targets at least 44px",
+      "status": "PASS"
+    },
+    {
+      "name": "320px: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Read: 9px between adjacent tuks",
+      "status": "PASS"
+    },
+    {
+      "name": "Read: 38px between pauris",
+      "status": "PASS"
+    },
+    {
+      "name": "Accessible pauri headings retained without visible rules or cards",
+      "status": "PASS"
+    },
+    {
+      "name": "Read to Understand preserves occurrence, offset and guide",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "anchor": {
+            "id": "pauri03.line01",
+            "top": 14
+          },
+          "guide": {
+            "index": 3,
+            "token": 6
+          },
+          "mode": "read",
+          "playing": false,
+          "following": false
+        },
+        "after": {
+          "anchor": {
+            "id": "pauri03.line01",
+            "top": 13.734375
+          },
+          "guide": {
+            "index": 3,
+            "token": 6
+          },
+          "mode": "understand",
+          "playing": false,
+          "following": false
+        }
+      }
+    },
+    {
+      "name": "Depth change retains the exact 385 scripture DOM nodes",
+      "status": "PASS"
+    },
+    {
+      "name": "Understand: 19px separation and 5px meaning attachment",
+      "status": "PASS"
+    },
+    {
+      "name": "Play enters immersive mode, leaves the entire dock accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "Pause holds the exact guide word",
+      "status": "PASS"
+    },
+    {
+      "name": "Resume advances without restarting",
+      "status": "PASS"
+    },
+    {
+      "name": "Meaning opens deeper draft without resetting guide",
+      "status": "PASS"
+    },
+    {
+      "name": "Meaning close restores reading anchor",
+      "status": "PASS"
+    },
+    {
+      "name": "Study pauses guide and keeps original occurrence",
+      "status": "PASS"
+    },
+    {
+      "name": "Study preserves distinct close sense, interpretation and application",
+      "status": "PASS"
+    },
+    {
+      "name": "Persistent-control setting prevents immersive header hiding",
+      "status": "PASS"
+    },
+    {
+      "name": "Theme day is actually applied",
+      "status": "PASS"
+    },
+    {
+      "name": "Theme amrit is actually applied",
+      "status": "PASS"
+    },
+    {
+      "name": "Radiance can be disabled; current word keeps underline",
+      "status": "PASS"
+    },
+    {
+      "name": "320px / 48px Gurmukhi: no page overflow and 1.9 line-height",
+      "status": "PASS"
+    },
+    {
+      "name": "390px / 48px Gurmukhi: no page overflow and 1.9 line-height",
+      "status": "PASS"
+    },
+    {
+      "name": "844px / 48px Gurmukhi: no page overflow and 1.9 line-height",
+      "status": "PASS"
+    },
+    {
+      "name": "320px / 48px: focused meaning 16 is above dock",
+      "status": "PASS",
+      "details": {
+        "top": 616.578125,
+        "bottom": 755.953125,
+        "dockTop": 782
+      }
+    },
+    {
+      "name": "320px / 48px: focused meaning 208 is above dock",
+      "status": "PASS",
+      "details": {
+        "top": 616.5625,
+        "bottom": 755.9375,
+        "dockTop": 782
+      }
+    },
+    {
+      "name": "320px / 48px: focused meaning 384 is above dock",
+      "status": "PASS",
+      "details": {
+        "top": 637.171875,
+        "bottom": 755.546875,
+        "dockTop": 782
+      }
+    },
+    {
+      "name": "390px / 48px: focused meaning 16 is above dock",
+      "status": "PASS",
+      "details": {
+        "top": 616.765625,
+        "bottom": 756.140625,
+        "dockTop": 782
+      }
+    },
+    {
+      "name": "390px / 48px: focused meaning 208 is above dock",
+      "status": "PASS",
+      "details": {
+        "top": 647.421875,
+        "bottom": 756.40625,
+        "dockTop": 782
+      }
+    },
+    {
+      "name": "390px / 48px: focused meaning 384 is above dock",
+      "status": "PASS",
+      "details": {
+        "top": 637.8125,
+        "bottom": 756.1875,
+        "dockTop": 782
+      }
+    },
+    {
+      "name": "Final Study action is fully visible above dock",
+      "status": "PASS"
+    },
+    {
+      "name": "Deep anchor 30 retained across depth change",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "id": "pauri04.line01",
+          "top": 14
+        },
+        "after": {
+          "id": "pauri04.line01",
+          "top": 14.09375
+        }
+      }
+    },
+    {
+      "name": "Deep anchor 208 retained across depth change",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "id": "pauri24.line01",
+          "top": 14
+        },
+        "after": {
+          "id": "pauri24.line01",
+          "top": 14.296875
+        }
+      }
+    },
+    {
+      "name": "Deep anchor 378 retained across depth change",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "id": "closing.line01",
+          "top": 14
+        },
+        "after": {
+          "id": "closing.line01",
+          "top": 13.8125
+        }
+      }
+    },
+    {
+      "name": "Japji has no assigned raag claim",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing gurdwara directory and deliberate broadcaster entry retained",
+      "status": "PASS"
+    }
+  ],
+  "metrics": {
+    "width": 390,
+    "dockHeight": 54,
+    "topChrome": 0,
+    "scriptureSize": "30px",
+    "lineHeight": "57px",
+    "theme": "amrit",
+    "mode": "read",
+    "immersive": true,
+    "anchor": {
+      "id": "pauri03.line01",
+      "top": 14
+    },
+    "overflow": false
+  },
+  "physicalIPhone": "NOT TESTED",
+  "Safari": "NOT TESTED",
+  "VoiceOver": "NOT TESTED",
+  "HomeScreen": "NOT TESTED",
+  "offline": "NOT TESTED",
+  "serviceWorker": "Separate HTTPS upgrade/rollback gate"
+}

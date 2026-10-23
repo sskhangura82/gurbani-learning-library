@@ -1,0 +1,29 @@
+{
+  "version": "0.9-japji-v1-r6-darbar-3",
+  "base": "3a1005067742b70f57d536c7ee494278efd71c59",
+  "assets": {
+    "css/app.css": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434",
+    "css/japji-full.css": "58320b6e5500d5025f81c7f38a95180d2709bc4d7b1154544e0229c4e878780e",
+    "full-japji.html": "ec3c10b54de647366b993cfe90396fd83a7bb72578ca389c5806145803b864fa",
+    "icons/icon-180.png": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7",
+    "icons/icon-192.png": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739",
+    "icons/icon-512.png": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c",
+    "index.html": "ec3c10b54de647366b993cfe90396fd83a7bb72578ca389c5806145803b864fa",
+    "js/app.js": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55",
+    "js/content.js": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62",
+    "js/continuous-core.js": "d591b1e1a2919c566fad078751d69b6c686c2ed02c0bbffa93ac5b2af9fc84c4",
+    "js/core.js": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306",
+    "js/gurdwaras.js": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2",
+    "js/japji-full-data.js": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+    "js/japji-full.js": "83dcd30c575789e9acec58666b833c39e8fb4ac32d97311f0fa7650be38d42e7",
+    "js/japji-lessons.js": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+    "js/learning.js": "35d260fab9cb8bed05a035602b23259357b67ed860b20a27d75b94a6ae65ceb9",
+    "js/line-meanings.js": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+    "js/places.js": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef",
+    "js/pwa.js": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+    "js/shared-learning.js": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+    "manifest.webmanifest": "95329f3b35fa3e8ebb9e48f0ed49f236f5a0b56298737bd73b31b74d9647a7d3",
+    "pauri-2-lesson.html": "3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875",
+    "sw.js": "e415de215fc48795b8ec413908d4b297fba0400bb31fe945ebf522e2f6b6143f"
+  }
+}
