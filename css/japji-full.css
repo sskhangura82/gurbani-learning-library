@@ -22,3 +22,14 @@ dialog{color:var(--ink);background:var(--paper);border:1px solid var(--line);pad
 @media(max-width:380px){main{padding-left:14px;padding-right:14px}.page-header{padding-left:14px;padding-right:14px}.intro h1{font-size:34px}.intro h1 span{font-size:22px}.bar-secondary p{font-size:10px}.bar-secondary button{font-size:11px;padding:5px 8px}.reading-dock{padding-left:10px;padding-right:10px}.dock-main button{font-size:11px;padding:8px 9px}.dock-main .primary{min-width:110px}.tuk{padding-left:3px;padding-right:3px}#dialog-body{padding:17px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}:root[data-radiance=true] .tuk,:root[data-radiance=true] .g-word[data-active=true]{text-shadow:none!important}.g-word[data-active=true]{text-decoration:underline;text-underline-offset:5px}}
 @media print{.page-header,.reading-bar,.reading-dock,dialog,.end-note button{display:none!important}main{max-width:none;padding-bottom:0}.tuk{background:transparent!important;text-shadow:none!important;color:black!important}.tuk:before{display:none}.scripture-line{break-inside:avoid}}
+
+/* v0.9: layered draft lessons; continuous source nodes stay mounted. */
+.unit-lesson{display:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0 30px;overflow-wrap:anywhere}
+body[data-depth=study] .unit-lesson,#dialog-body .unit-lesson{display:block}
+.unit-lesson h3{font:28px/1.35 Georgia,serif}.unit-lesson h4{margin:25px 0 8px}.unit-lesson p{font-size:14px;line-height:1.95}.unit-lesson dt{font:20px/1.9 'Gurmukhi MN',serif}.unit-lesson dd{margin:0 0 14px;color:var(--muted)}.unit-lesson .application{border-left:3px solid var(--accent);padding-left:14px}.unit-lesson summary{cursor:pointer;min-height:44px;padding:9px 0}.unit-lesson details{margin:25px 0}
+.bar-secondary button,.dock-top button{min-height:44px}.g-word[data-active=true]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}button{touch-action:manipulation}
+dialog{max-height:calc(100dvh - 36px)}.tuk{overflow-wrap:anywhere}
+@media(max-width:380px){.unit-lesson{padding:15px}.unit-lesson h3{font-size:25px}.dock-main{flex-wrap:wrap}.dock-main .primary{flex:1 1 100px}}
+
+button,select{min-width:44px}

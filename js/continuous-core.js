@@ -32,8 +32,8 @@
    if(!lineId){const u=units.findIndex(x=>x.id===saved);if(u>=0)lineId=model.lines[model.starts[u]].id;}
    if(lineId&&!bookmarks.includes(lineId))bookmarks.push(lineId);
   }
-  const notes=Object.create(null);if(s.notes&&typeof s.notes==='object')for(const key of Object.keys(s.notes))if(model.byId.has(key)&&typeof s.notes[key]==='string')notes[key]=s.notes[key].slice(0,6000);
-  return {version:2,hasGuided:typeof s.hasGuided==='boolean'?s.hasGuided:Boolean(s.guide||s.token||s.line),mode:['read','understand','study'].includes(s.mode)?s.mode:'read',theme:['day','amrit'].includes(s.theme)?s.theme:'day',radiance:typeof s.radiance==='boolean'?s.radiance:true,size:clamp(integer(s.size,30),24,42),pace:[50,70,100,140].includes(s.pace)?s.pace:70,emphasis:['word','line'].includes(s.emphasis)?s.emphasis:'word',guide:{index:guideIndex,token:guideToken},read:{id,offset:clamp(finite(s.read?.offset),-400,800)},bookmarks,notes};
+  const notes=Object.create(null);if(s.notes&&typeof s.notes==='object')for(const key of Object.keys(s.notes))if(typeof s.notes[key]==='string'){const ui=units.findIndex(u=>u.id===key),id=model.byId.has(key)?key:ui>=0?model.lines[model.starts[ui]].id:null;if(id)notes[id]=s.notes[key].slice(0,12000);}
+  return {version:2,hasGuided:typeof s.hasGuided==='boolean'?s.hasGuided:Boolean(s.guide||s.token||s.line),mode:['read','understand','study'].includes(s.mode)?s.mode:'read',theme:['day','amrit'].includes(s.theme)?s.theme:'day',radiance:typeof s.radiance==='boolean'?s.radiance:true,size:clamp(integer(s.size,30),24,48),pace:[50,70,100,140].includes(s.pace)?s.pace:70,emphasis:['word','line'].includes(s.emphasis)?s.emphasis:'word',guide:{index:guideIndex,token:guideToken},read:{id,offset:clamp(finite(s.read?.offset),-400,800)},bookmarks,notes};
  }
  function parseImport(text,model,units){
   if(typeof text!=='string'||text.length>2500000)throw Error('Learning file is too large.');
