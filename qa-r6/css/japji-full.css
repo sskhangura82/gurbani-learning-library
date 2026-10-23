@@ -100,3 +100,6 @@ body.roomy-spacing .passage{padding:0;margin-top:40px}body.roomy-spacing .script
 .tuk-ending{white-space:nowrap}
 .tuk.mool-mantar{font-weight:600}
 .unit-lesson h3{font-size:22px}
+
+/* Keep the longest word/pauri-ending pair intact at 48px on narrow screens. */
+@media(max-width:380px){main{padding-left:10px;padding-right:10px}.tuk{padding-left:0;padding-right:0}}

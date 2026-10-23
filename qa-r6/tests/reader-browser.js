@@ -19,7 +19,7 @@ document.getElementById('large').onclick=()=>setting('set-size',48);document.get
 document.getElementById('quiet').onclick=async()=>{await close();await click('#tools-open');await click('[data-action="reader-quiet"]');};
 document.getElementById('early').onclick=()=>jump(4);document.getElementById('pauri3').onclick=()=>jump(16);document.getElementById('long').onclick=()=>jump(w().GLP_FULL_JAPJI.units.slice(0,26).reduce((n,u)=>n+u.lines.length,0));
 document.getElementById('run').onclick=async()=>{checks.length=0;try{
- await close();await mode('read');await setting('set-size',30);await setting('set-persistent',false);
+ await until(()=>w().GLP_CONTINUOUS_DEBUG?.lineCount===385);await d().fonts.ready;if(w().GLP_CONTINUOUS_DEBUG.isPlaying())await click('#play');await close();await mode('read');await setting('set-size',30);await setting('set-persistent',false);
  const rows=[...d().querySelectorAll('.scripture-line')],source=w().GLP_FULL_JAPJI.units.flatMap(u=>u.lines);
  check('385 mounted occurrences exactly reconstruct frozen source text and IDs',rows.length===385&&rows.every((r,i)=>r.querySelector('.tuk').textContent===source[i].text&&r.dataset.occurrence===source[i].id));
  check('Mool Mantar uses typographic emphasis without a container',parseInt(w().getComputedStyle($('.mool-mantar')).fontWeight)>=600&&w().getComputedStyle($('.mool-mantar')).backgroundColor==='rgba(0, 0, 0, 0)');
