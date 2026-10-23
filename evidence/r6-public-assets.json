@@ -1,0 +1,153 @@
+{
+  "checkedAt": "2026-10-23T21:27:10.171447+00:00",
+  "deploymentCommit": "fa6e4fecd1a5c602b30ffd13ca23416ae911ea83",
+  "runtime": "0.9-japji-v1-r6-darbar-6",
+  "url": "https://sskhangura82.github.io/gurbani-learning-library/full-japji.html",
+  "checks": [
+    {
+      "path": "css/app.css",
+      "status": 200,
+      "sha256": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434",
+      "matches": true
+    },
+    {
+      "path": "css/japji-full.css",
+      "status": 200,
+      "sha256": "f46578b85e7418d89d709d59a4e145c2e6d8df5081df63ce1ffd03f30b4672b1",
+      "matches": true
+    },
+    {
+      "path": "full-japji.html",
+      "status": 200,
+      "sha256": "b8d9531b76b4cf869dcdb7d6923c888f60be34651b7f8402dba14b6b20427336",
+      "matches": true
+    },
+    {
+      "path": "icons/icon-180.png",
+      "status": 200,
+      "sha256": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7",
+      "matches": true
+    },
+    {
+      "path": "icons/icon-192.png",
+      "status": 200,
+      "sha256": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739",
+      "matches": true
+    },
+    {
+      "path": "icons/icon-512.png",
+      "status": 200,
+      "sha256": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "b8d9531b76b4cf869dcdb7d6923c888f60be34651b7f8402dba14b6b20427336",
+      "matches": true
+    },
+    {
+      "path": "js/app.js",
+      "status": 200,
+      "sha256": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55",
+      "matches": true
+    },
+    {
+      "path": "js/content.js",
+      "status": 200,
+      "sha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62",
+      "matches": true
+    },
+    {
+      "path": "js/continuous-core.js",
+      "status": 200,
+      "sha256": "d591b1e1a2919c566fad078751d69b6c686c2ed02c0bbffa93ac5b2af9fc84c4",
+      "matches": true
+    },
+    {
+      "path": "js/core.js",
+      "status": 200,
+      "sha256": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306",
+      "matches": true
+    },
+    {
+      "path": "js/gurdwaras.js",
+      "status": 200,
+      "sha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2",
+      "matches": true
+    },
+    {
+      "path": "js/japji-full-data.js",
+      "status": 200,
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "matches": true
+    },
+    {
+      "path": "js/japji-full.js",
+      "status": 200,
+      "sha256": "6b9667026bbe793eb33150ca66d28a9a9402cb031cd82ccd2b46a71df6412a69",
+      "matches": true
+    },
+    {
+      "path": "js/japji-lessons.js",
+      "status": 200,
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+      "matches": true
+    },
+    {
+      "path": "js/learning.js",
+      "status": 200,
+      "sha256": "35d260fab9cb8bed05a035602b23259357b67ed860b20a27d75b94a6ae65ceb9",
+      "matches": true
+    },
+    {
+      "path": "js/line-meanings.js",
+      "status": 200,
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+      "matches": true
+    },
+    {
+      "path": "js/places.js",
+      "status": 200,
+      "sha256": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef",
+      "matches": true
+    },
+    {
+      "path": "js/pwa.js",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+      "matches": true
+    },
+    {
+      "path": "js/shared-learning.js",
+      "status": 200,
+      "sha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "matches": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "sha256": "95329f3b35fa3e8ebb9e48f0ed49f236f5a0b56298737bd73b31b74d9647a7d3",
+      "matches": true
+    },
+    {
+      "path": "pauri-2-lesson.html",
+      "status": 200,
+      "sha256": "3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875",
+      "matches": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "sha256": "16e759f5d7c180f5325cd7b01f2c17780eee0733f2cd303463013376c7721225",
+      "matches": true
+    },
+    {
+      "path": "",
+      "status": 200,
+      "sha256": "b8d9531b76b4cf869dcdb7d6923c888f60be34651b7f8402dba14b6b20427336",
+      "matches": true
+    }
+  ],
+  "status": "PASS"
+}

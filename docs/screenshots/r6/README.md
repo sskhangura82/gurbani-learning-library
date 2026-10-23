@@ -18,3 +18,7 @@ These are desktop Chrome iframe captures. Physical iPhone/Safari/VoiceOver/Dynam
 `mool-long-line.jpg`: 390×844, 30px, Amrit Vela / Read. Full Mool Mantar (the longest frozen occurrence, 71 Unicode code points in this source) wraps naturally, with the title and opening Salok below and no colored scripture container. Captured after the final typography, ending-pair and active-color corrections.
 
 All nine images now show the final darbar-6 runtime and the 47-check passing harness. The final independent Claude pass inspected read-day, mool-long-line and large-320; the other six were recaptured afterward with unchanged runtime code. Study shows the Mool Mantar source and its clearly separate, unreviewed Study draft. The first three failed-design captures remain in Git history at commit 7463f5b; the current files replace those superseded captures.
+
+## Public release
+
+`public-family.jpg` shows the actual GitHub Pages reader after the normal explicit update flow to Revision 6. Desktop Chrome; not a physical iPhone capture.
