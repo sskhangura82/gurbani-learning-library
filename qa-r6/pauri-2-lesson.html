@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A personal Gurbani reader with three depths of understanding, connected teachings, and source-aware raag context.">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'none'; frame-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<!-- HOSTED_METADATA -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Gurbani">
+<meta name="theme-color" content="#faf9f5">
+<meta name="robots" content="noindex,nofollow">
+<!-- /HOSTED_METADATA -->
+<title>Gurbani Learning Library · Japji Sahib</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<a href="#reader" class="skip-link">Skip to Gurbani</a>
+<aside class="sidebar" aria-label="Learning library">
+  <a class="brand" href="#" id="home-link" aria-label="Return to Pauri 2">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 7c4-2 8-1 11 1 3-2 7-3 11-1v19c-4-2-8-1-11 1-3-2-7-3-11-1V7Z"/><path d="M16 8v19"/></svg></span>
+    <span><strong lang="pa">ਗੁਰਬਾਣੀ</strong><small>LEARNING LIBRARY</small></span>
+  </a>
+  <div class="sidebar-note">Read slowly.<br>Understand deeply.</div>
+  <p class="nav-label">YOUR LIBRARY</p>
+  <button class="nav-item active" id="current-lesson" aria-current="page"><span class="nav-icon">01</span><span>Japji Sahib<small>Pauri 2 · Ang 1</small></span><span aria-hidden="true">›</span></button>
+  <button class="nav-item" id="anand-link"><span class="nav-icon">♫</span><span>Anand Sahib<small>Raag heading example</small></span><span aria-hidden="true">›</span></button>
+  <div class="nav-divider"></div>
+  <button class="nav-item" id="saved-link"><span class="nav-icon">◇</span><span>Saved learning<small>Bookmarks & reflections</small></span></button>
+  <button class="nav-item" id="about-link"><span class="nav-icon">i</span><span>About this build</span></button>
+  <div class="sidebar-bottom"><span class="little-dot"></span> Personal prototype <strong>0.6</strong><p>One passage, thoughtfully explored.<br>No account. No tracking.</p></div>
+</aside>
+<div class="main-shell">
+  <header class="topbar"><span class="breadcrumb">NITNEM <span>/</span> JAPJI SAHIB</span><button id="sources-button" class="text-button">Sources & review <span aria-hidden="true">↗</span></button></header>
+  <main id="main">
+    <div class="page-heading">
+      <div><p class="eyebrow">YOUR NEXT LESSON · PAURI 02</p><h1>Japji Sahib <span lang="pa">ਜਪੁਜੀ ਸਾਹਿਬ</span></h1><p class="byline">Guru Nanak Dev Ji <span>·</span> Sri Guru Granth Sahib Ji, Ang 1</p></div>
+      <button class="round-button" id="notes-button" aria-label="Open reflection notebook" title="Open reflection notebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11v16H5zM8 8h5M8 12h4M18 4v16"/></svg></button>
+    </div>
+    <div class="reader-toolbar">
+      <div class="mode-switch" role="group" aria-label="Reading depth">
+        <button data-mode="read" aria-pressed="false">Read <span lang="pa">ਪਾਠ</span></button>
+        <button data-mode="understand" aria-pressed="true">Understand <span lang="pa">ਸਰਲ ਅਰਥ</span></button>
+        <button data-mode="study" aria-pressed="false">Study <span lang="pa">ਵਿਸਥਾਰ</span></button>
+      </div>
+      <button id="appearance-button" class="appearance-button" aria-label="Reading appearance and focus">Aa <span>Appearance</span></button><div class="font-tools" role="group" aria-label="Gurmukhi text size"><button id="font-less" aria-label="Decrease Gurmukhi text size">A−</button><button id="font-more" aria-label="Increase Gurmukhi text size">A+</button></div>
+    <button id="exit-focus" class="exit-focus" hidden>Exit quiet reading</button></div>
+    <div class="context-toolbar"><p id="mode-description">Original Gurbani, with a simple explanation in both languages.</p><div><a class="pill" href="full-japji.html" aria-label="Read all 38 Pauris in original Gurmukhi">Full Japji · Read ↗</a><button id="gurdwaras-button" class="pill">Gurdwaras <span aria-hidden="true">↗</span></button><button id="related-button" class="pill">Related teachings <span aria-hidden="true">↗</span></button><button id="raag-button" class="pill">Raag & meaning <span aria-hidden="true">♫</span></button></div></div>
+    <div class="content-layout">
+      <section id="reader" tabindex="-1" aria-label="Japji Sahib Pauri 2"></section>
+      <aside class="study-rail" aria-label="Lesson context">
+        <div class="rail-card"><p class="eyebrow">THE THREAD OF THIS PAURI</p><h2>Understanding<br>Hukam.</h2><p>From the coming into being of forms to a change in our sense of “I”.</p><div class="theme-row"><button class="theme" data-theme="hukam"><span lang="pa">ਹੁਕਮ</span> Hukam</button><button class="theme" data-theme="haumai"><span lang="pa">ਹਉਮੈ</span> Haumai</button></div><p class="tiny">Themes are teaching aids, not additions to Gurbani.</p></div>
+        <div class="rail-prompt"><span class="quote-mark" aria-hidden="true">“</span><p>If everyone is already within Hukam, what changes when we understand it?</p><button id="reflect-button" class="text-button">Keep a reflection <span aria-hidden="true">→</span></button></div>
+        <div class="review-note"><span class="little-dot amber"></span><strong>Educational draft</strong><p>Source-checked text. Explanations and connections await qualified human review.</p></div>
+      </aside>
+    </div>
+    <footer class="page-footer"><span>GLP-001 · A personal learning library</span><button class="text-button" id="coverage-button">What’s included in this build?</button></footer>
+  </main>
+</div>
+<dialog id="explore-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><div><p id="dialog-kicker" class="eyebrow">EXPLORE</p><h2 id="dialog-title">Related teachings</h2></div><button id="dialog-close" class="round-button" aria-label="Close and return to your reading">×</button></div><div id="dialog-content" class="dialog-content"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p class="noscript">This reader needs JavaScript for its reading modes. The source text remains available in data/content.json in the project package.</p></noscript>
+<script src="js/content.js"></script><script src="js/core.js"></script><script src="js/gurdwaras.js"></script>
+<script src="js/places.js"></script>
+<script src="js/app.js"></script>
+</body></html>
