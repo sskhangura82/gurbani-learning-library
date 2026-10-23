@@ -1,0 +1,609 @@
+{
+  "runtime": "0.9-japji-v1-r6-darbar-6",
+  "units": 42,
+  "pauris": 38,
+  "totals": {
+    "originalOccurrences": 385,
+    "exactHashes": 385,
+    "englishDrafts": 385,
+    "punjabiDrafts": 385,
+    "studyDrafts": 42
+  },
+  "coverage": [
+    {
+      "id": "mool",
+      "title": "Mool Mantar",
+      "angs": [
+        1
+      ],
+      "originalOccurrences": 1,
+      "exactHashes": 1,
+      "englishDrafts": 1,
+      "punjabiDrafts": 1,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "title",
+      "title": "Jap",
+      "angs": [
+        1
+      ],
+      "originalOccurrences": 1,
+      "exactHashes": 1,
+      "englishDrafts": 1,
+      "punjabiDrafts": 1,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "opening",
+      "title": "Opening Salok",
+      "angs": [
+        1
+      ],
+      "originalOccurrences": 2,
+      "exactHashes": 2,
+      "englishDrafts": 2,
+      "punjabiDrafts": 2,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri01",
+      "title": "Pauri 1",
+      "angs": [
+        1
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri02",
+      "title": "Pauri 2",
+      "angs": [
+        1
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri03",
+      "title": "Pauri 3",
+      "angs": [
+        1,
+        2
+      ],
+      "originalOccurrences": 14,
+      "exactHashes": 14,
+      "englishDrafts": 14,
+      "punjabiDrafts": 14,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri04",
+      "title": "Pauri 4",
+      "angs": [
+        2
+      ],
+      "originalOccurrences": 7,
+      "exactHashes": 7,
+      "englishDrafts": 7,
+      "punjabiDrafts": 7,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri05",
+      "title": "Pauri 5",
+      "angs": [
+        2
+      ],
+      "originalOccurrences": 11,
+      "exactHashes": 11,
+      "englishDrafts": 11,
+      "punjabiDrafts": 11,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri06",
+      "title": "Pauri 6",
+      "angs": [
+        2
+      ],
+      "originalOccurrences": 5,
+      "exactHashes": 5,
+      "englishDrafts": 5,
+      "punjabiDrafts": 5,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri07",
+      "title": "Pauri 7",
+      "angs": [
+        2
+      ],
+      "originalOccurrences": 7,
+      "exactHashes": 7,
+      "englishDrafts": 7,
+      "punjabiDrafts": 7,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri08",
+      "title": "Pauri 8",
+      "angs": [
+        2
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri09",
+      "title": "Pauri 9",
+      "angs": [
+        2,
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri10",
+      "title": "Pauri 10",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri11",
+      "title": "Pauri 11",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri12",
+      "title": "Pauri 12",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri13",
+      "title": "Pauri 13",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "Line 1 remains OPEN"
+    },
+    {
+      "id": "pauri14",
+      "title": "Pauri 14",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri15",
+      "title": "Pauri 15",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri16",
+      "title": "Pauri 16",
+      "angs": [
+        3
+      ],
+      "originalOccurrences": 24,
+      "exactHashes": 24,
+      "englishDrafts": 24,
+      "punjabiDrafts": 24,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri17",
+      "title": "Pauri 17",
+      "angs": [
+        3,
+        4
+      ],
+      "originalOccurrences": 12,
+      "exactHashes": 12,
+      "englishDrafts": 12,
+      "punjabiDrafts": 12,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri18",
+      "title": "Pauri 18",
+      "angs": [
+        4
+      ],
+      "originalOccurrences": 12,
+      "exactHashes": 12,
+      "englishDrafts": 12,
+      "punjabiDrafts": 12,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri19",
+      "title": "Pauri 19",
+      "angs": [
+        4
+      ],
+      "originalOccurrences": 15,
+      "exactHashes": 15,
+      "englishDrafts": 15,
+      "punjabiDrafts": 15,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri20",
+      "title": "Pauri 20",
+      "angs": [
+        4
+      ],
+      "originalOccurrences": 10,
+      "exactHashes": 10,
+      "englishDrafts": 10,
+      "punjabiDrafts": 10,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri21",
+      "title": "Pauri 21",
+      "angs": [
+        4,
+        5
+      ],
+      "originalOccurrences": 18,
+      "exactHashes": 18,
+      "englishDrafts": 18,
+      "punjabiDrafts": 18,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri22",
+      "title": "Pauri 22",
+      "angs": [
+        5
+      ],
+      "originalOccurrences": 5,
+      "exactHashes": 5,
+      "englishDrafts": 5,
+      "punjabiDrafts": 5,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri23",
+      "title": "Pauri 23",
+      "angs": [
+        5
+      ],
+      "originalOccurrences": 4,
+      "exactHashes": 4,
+      "englishDrafts": 4,
+      "punjabiDrafts": 4,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri24",
+      "title": "Pauri 24",
+      "angs": [
+        5
+      ],
+      "originalOccurrences": 16,
+      "exactHashes": 16,
+      "englishDrafts": 16,
+      "punjabiDrafts": 16,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri25",
+      "title": "Pauri 25",
+      "angs": [
+        5
+      ],
+      "originalOccurrences": 17,
+      "exactHashes": 17,
+      "englishDrafts": 17,
+      "punjabiDrafts": 17,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri26",
+      "title": "Pauri 26",
+      "angs": [
+        5,
+        6
+      ],
+      "originalOccurrences": 26,
+      "exactHashes": 26,
+      "englishDrafts": 26,
+      "punjabiDrafts": 26,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri27",
+      "title": "Pauri 27",
+      "angs": [
+        6
+      ],
+      "originalOccurrences": 22,
+      "exactHashes": 22,
+      "englishDrafts": 22,
+      "punjabiDrafts": 22,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri28",
+      "title": "Pauri 28",
+      "angs": [
+        6
+      ],
+      "originalOccurrences": 5,
+      "exactHashes": 5,
+      "englishDrafts": 5,
+      "punjabiDrafts": 5,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri29",
+      "title": "Pauri 29",
+      "angs": [
+        6,
+        7
+      ],
+      "originalOccurrences": 5,
+      "exactHashes": 5,
+      "englishDrafts": 5,
+      "punjabiDrafts": 5,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri30",
+      "title": "Pauri 30",
+      "angs": [
+        7
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri31",
+      "title": "Pauri 31",
+      "angs": [
+        7
+      ],
+      "originalOccurrences": 6,
+      "exactHashes": 6,
+      "englishDrafts": 6,
+      "punjabiDrafts": 6,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri32",
+      "title": "Pauri 32",
+      "angs": [
+        7
+      ],
+      "originalOccurrences": 5,
+      "exactHashes": 5,
+      "englishDrafts": 5,
+      "punjabiDrafts": 5,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri33",
+      "title": "Pauri 33",
+      "angs": [
+        7
+      ],
+      "originalOccurrences": 8,
+      "exactHashes": 8,
+      "englishDrafts": 8,
+      "punjabiDrafts": 8,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri34",
+      "title": "Pauri 34",
+      "angs": [
+        7
+      ],
+      "originalOccurrences": 11,
+      "exactHashes": 11,
+      "englishDrafts": 11,
+      "punjabiDrafts": 11,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri35",
+      "title": "Pauri 35",
+      "angs": [
+        7
+      ],
+      "originalOccurrences": 10,
+      "exactHashes": 10,
+      "englishDrafts": 10,
+      "punjabiDrafts": 10,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri36",
+      "title": "Pauri 36",
+      "angs": [
+        7,
+        8
+      ],
+      "originalOccurrences": 8,
+      "exactHashes": 8,
+      "englishDrafts": 8,
+      "punjabiDrafts": 8,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri37",
+      "title": "Pauri 37",
+      "angs": [
+        8
+      ],
+      "originalOccurrences": 18,
+      "exactHashes": 18,
+      "englishDrafts": 18,
+      "punjabiDrafts": 18,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "pauri38",
+      "title": "Pauri 38",
+      "angs": [
+        8
+      ],
+      "originalOccurrences": 7,
+      "exactHashes": 7,
+      "englishDrafts": 7,
+      "punjabiDrafts": 7,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    },
+    {
+      "id": "closing",
+      "title": "Closing Salok",
+      "angs": [
+        8
+      ],
+      "originalOccurrences": 7,
+      "exactHashes": 7,
+      "englishDrafts": 7,
+      "punjabiDrafts": 7,
+      "studyDrafts": 1,
+      "review": "Unreviewed AI-assisted editorial drafts; no qualified approval claimed",
+      "independentComparison": "No new source decision in this UI release"
+    }
+  ]
+}

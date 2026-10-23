@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "at": "2026-10-23T20:37:30.938Z",
+  "environment": "Desktop Chrome, isolated namespaced HTTPS QA fixture",
+  "loaded": "Revision 5 rollback",
+  "check": "Reflection newly written through Revision 6 UI survived rollback to Revision 5",
+  "value": "QA r6 · new synthetic reflection saved in Revision 6",
+  "syntheticOnly": true
+}

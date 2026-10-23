@@ -1,0 +1,40 @@
+{
+  "status": "FAIL",
+  "environment": "Desktop Chrome; forced matchMedia branch and exact extracted CSS declarations; not OS-toggle or physical iPhone proof",
+  "checks": [
+    {
+      "name": "Reduced-motion media-query branch enabled (test injection)",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact production reduced-motion declarations suppress text shadows",
+      "status": "FAIL"
+    },
+    {
+      "name": "Word and line transitions are suppressed",
+      "status": "PASS"
+    },
+    {
+      "name": "Guide scrolling uses instant behavior, never smooth",
+      "status": "PASS",
+      "observed": [
+        "instant",
+        "instant",
+        "instant",
+        "instant",
+        "instant",
+        "instant"
+      ]
+    },
+    {
+      "name": "Current word has underline without glow",
+      "status": "PASS"
+    },
+    {
+      "name": "Guide location updates do not steal keyboard focus",
+      "status": "PASS"
+    }
+  ],
+  "total": 6,
+  "locationWhisper": "Not implemented; dock label updates without moving focus"
+}

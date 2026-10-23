@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-10-23T21:08:18.479Z",
+  "environment": "Node; no physical device claim",
+  "total": 27,
+  "checks": [
+    {
+      "name": "42 ordered units and exactly Pauris 1–38",
+      "status": "PASS"
+    },
+    {
+      "name": "385 unique occurrences, authentic Ang range, exact SHA-256 for every line",
+      "status": "PASS"
+    },
+    {
+      "name": "Frozen source JS byte-identical to 0.7-japji2",
+      "status": "PASS"
+    },
+    {
+      "name": "Each Pauri ends with its consecutive Gurmukhi numeral",
+      "status": "PASS"
+    },
+    {
+      "name": "Closing boundary excludes So Dar",
+      "status": "PASS"
+    },
+    {
+      "name": "Whitespace-preserving token rendering reconstructs every original line",
+      "status": "PASS"
+    },
+    {
+      "name": "Original six Pauri 2 lines and all legacy editorial material retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Japji raag remains unassigned; all three related excerpts inside enclosing context",
+      "status": "PASS"
+    },
+    {
+      "name": "v0.7 reading preferences and section bookmarks migrate without loss",
+      "status": "PASS"
+    },
+    {
+      "name": "Both learning keys exported byte-for-byte including unknown legacy fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Origin-transfer backup restores both records in empty destination",
+      "status": "PASS"
+    },
+    {
+      "name": "Import merges conflicting reflections and section bookmarks",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy learning exports v1/2/3 are accepted and retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid JSON, foreign exports, invalid notes and future schemas rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Oversize note conflict fails before any write",
+      "status": "PASS"
+    },
+    {
+      "name": "Failed second-key write rolls back first-key change",
+      "status": "PASS"
+    },
+    {
+      "name": "Damaged current learning is not overwritten during import",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent browsers do not share notes",
+      "status": "PASS"
+    },
+    {
+      "name": "42 genuine authored bilingual meanings and Study drafts, all pending human review",
+      "status": "PASS"
+    },
+    {
+      "name": "No audio/TTS/microphone/request runtime in silent guide",
+      "status": "PASS"
+    },
+    {
+      "name": "Continuous model preserves all source strings and all 41 section transitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Final guide token stops without overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Continuous v2 export accepts line bookmarks and merges both reflection versions",
+      "status": "PASS"
+    },
+    {
+      "name": "Intermediate section notes migrate to continuous occurrence IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "All three generations export raw records without losing unknown legacy fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Continuous future schema and foreign occurrence notes rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "385 original bilingual line meanings match every occurrence once",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "pending": [
+    "Physical iPhone Safari and Home Screen",
+    "VoiceOver and pronunciation review",
+    "Qualified human scriptural collation",
+    "Comprehensive multi-tradition scholarship"
+  ]
+}

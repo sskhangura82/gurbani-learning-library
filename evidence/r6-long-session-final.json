@@ -1,0 +1,401 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-23T20:49:47.276Z",
+  "observedAt": "2026-10-23T21:20:47.278Z",
+  "wallMinutes": 31.000033333333334,
+  "activeVisibleMinutes": 31.000005000000012,
+  "requiredActiveMinutes": 31,
+  "sourceOccurrences": 385,
+  "failures": [],
+  "visibility": [],
+  "samples": [
+    {
+      "at": "2026-10-23T20:49:48.278Z",
+      "activeMinutes": 0.016683333333333335,
+      "guide": {
+        "index": 2,
+        "token": 0
+      },
+      "scrollY": 181,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:50:47.277Z",
+      "activeMinutes": 1.0000050000000125,
+      "guide": {
+        "index": 5,
+        "token": 7
+      },
+      "scrollY": 181,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:51:47.277Z",
+      "activeMinutes": 2.000006666666642,
+      "guide": {
+        "index": 9,
+        "token": 0
+      },
+      "scrollY": 702,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:52:47.277Z",
+      "activeMinutes": 3.0000050000000122,
+      "guide": {
+        "index": 12,
+        "token": 8
+      },
+      "scrollY": 1223,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:53:47.277Z",
+      "activeMinutes": 4.000005000000012,
+      "guide": {
+        "index": 16,
+        "token": 2
+      },
+      "scrollY": 1781,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:54:47.278Z",
+      "activeMinutes": 5.000008333333334,
+      "guide": {
+        "index": 21,
+        "token": 0
+      },
+      "scrollY": 2311,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:55:47.277Z",
+      "activeMinutes": 6.000005000000012,
+      "guide": {
+        "index": 25,
+        "token": 5
+      },
+      "scrollY": 2311,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:56:47.278Z",
+      "activeMinutes": 7.000006666666642,
+      "guide": {
+        "index": 31,
+        "token": 0
+      },
+      "scrollY": 2830,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:57:47.278Z",
+      "activeMinutes": 8.000006666666641,
+      "guide": {
+        "index": 34,
+        "token": 5
+      },
+      "scrollY": 3360,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:58:47.277Z",
+      "activeMinutes": 9.000005000000012,
+      "guide": {
+        "index": 39,
+        "token": 1
+      },
+      "scrollY": 3947,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T20:59:47.277Z",
+      "activeMinutes": 10.000005000000012,
+      "guide": {
+        "index": 43,
+        "token": 7
+      },
+      "scrollY": 4448,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:00:47.278Z",
+      "activeMinutes": 11.000005000000012,
+      "guide": {
+        "index": 47,
+        "token": 4
+      },
+      "scrollY": 5006,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:01:47.277Z",
+      "activeMinutes": 12.000006666666641,
+      "guide": {
+        "index": 50,
+        "token": 2
+      },
+      "scrollY": 5006,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:02:47.277Z",
+      "activeMinutes": 13.000005000000012,
+      "guide": {
+        "index": 53,
+        "token": 4
+      },
+      "scrollY": 5518,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:03:47.278Z",
+      "activeMinutes": 14.000006666666641,
+      "guide": {
+        "index": 56,
+        "token": 7
+      },
+      "scrollY": 6048,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:04:47.278Z",
+      "activeMinutes": 15.000006666666641,
+      "guide": {
+        "index": 60,
+        "token": 0
+      },
+      "scrollY": 6597,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:05:47.278Z",
+      "activeMinutes": 16.000006666666643,
+      "guide": {
+        "index": 65,
+        "token": 2
+      },
+      "scrollY": 6597,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:06:47.278Z",
+      "activeMinutes": 17.000005000000012,
+      "guide": {
+        "index": 71,
+        "token": 0
+      },
+      "scrollY": 7174,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:07:47.277Z",
+      "activeMinutes": 18.000005000000012,
+      "guide": {
+        "index": 76,
+        "token": 2
+      },
+      "scrollY": 7713,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:08:47.277Z",
+      "activeMinutes": 19.000005000000012,
+      "guide": {
+        "index": 82,
+        "token": 0
+      },
+      "scrollY": 8214,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:09:47.277Z",
+      "activeMinutes": 20.000005000000012,
+      "guide": {
+        "index": 87,
+        "token": 0
+      },
+      "scrollY": 8791,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:10:47.277Z",
+      "activeMinutes": 21.000005000000012,
+      "guide": {
+        "index": 92,
+        "token": 0
+      },
+      "scrollY": 9339,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:11:47.277Z",
+      "activeMinutes": 22.000005000000012,
+      "guide": {
+        "index": 96,
+        "token": 5
+      },
+      "scrollY": 9339,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:12:47.277Z",
+      "activeMinutes": 23.000006666666643,
+      "guide": {
+        "index": 101,
+        "token": 6
+      },
+      "scrollY": 9887,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:13:47.278Z",
+      "activeMinutes": 24.000006666666643,
+      "guide": {
+        "index": 107,
+        "token": 3
+      },
+      "scrollY": 10435,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:14:47.277Z",
+      "activeMinutes": 25.000005000000012,
+      "guide": {
+        "index": 112,
+        "token": 5
+      },
+      "scrollY": 10983,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:15:47.278Z",
+      "activeMinutes": 26.000005000000012,
+      "guide": {
+        "index": 117,
+        "token": 4
+      },
+      "scrollY": 10983,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:16:47.277Z",
+      "activeMinutes": 27.000005000000012,
+      "guide": {
+        "index": 122,
+        "token": 5
+      },
+      "scrollY": 11502,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:17:47.277Z",
+      "activeMinutes": 28.00000333333332,
+      "guide": {
+        "index": 128,
+        "token": 1
+      },
+      "scrollY": 12030,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:18:47.277Z",
+      "activeMinutes": 29.00000333333332,
+      "guide": {
+        "index": 133,
+        "token": 3
+      },
+      "scrollY": 12030,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:19:47.277Z",
+      "activeMinutes": 30.00000833333327,
+      "guide": {
+        "index": 138,
+        "token": 4
+      },
+      "scrollY": 12578,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    },
+    {
+      "at": "2026-10-23T21:20:47.277Z",
+      "activeMinutes": 31.000005000000012,
+      "guide": {
+        "index": 143,
+        "token": 3
+      },
+      "scrollY": 13088,
+      "sourceStable": true,
+      "visible": "visible",
+      "playing": true
+    }
+  ],
+  "longTasks": [],
+  "environment": "Desktop Chrome, real elapsed time at 390×844 CSS px; not iPhone Safari evidence",
+  "runtime": "0.9-japji-v1-r6-darbar-6",
+  "scope": "31-minute guide and DOM stability observation; separate traversal tests cover all 385 occurrences. Not a complete 385-occurrence timed recitation."
+}

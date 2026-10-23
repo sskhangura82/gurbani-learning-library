@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-23T21:08:18.637Z",
+  "environment": "Node deterministic Web Locks simulation; browser tests recorded separately",
+  "checks": [
+    {
+      "name": "Stale reading-position save retains another tab’s newer reflection",
+      "status": "PASS"
+    },
+    {
+      "name": "Queued different-note saves preserve both notes without last-writer loss",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent bookmark additions merge; stale reading cannot resurrect removed bookmark",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale background save preserves theme, size and explicit preference changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Intentional empty reflection stays empty after a stale tab saves",
+      "status": "PASS"
+    },
+    {
+      "name": "Second editor is refused; closing first editor releases ownership",
+      "status": "PASS"
+    },
+    {
+      "name": "Import cannot overwrite a reflection being edited in another tab",
+      "status": "PASS"
+    },
+    {
+      "name": "Import after editor closes merges, and stale writer retains imported reflection",
+      "status": "PASS"
+    },
+    {
+      "name": "Future and damaged records are never overwritten by background persistence",
+      "status": "PASS"
+    },
+    {
+      "name": "Quota error preserves stored data and rejects save",
+      "status": "PASS"
+    },
+    {
+      "name": "No Web Locks means no unsafe writes or editor permission",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing three-record export/import format still includes merged saved learning",
+      "status": "PASS"
+    }
+  ],
+  "total": 12
+}

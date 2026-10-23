@@ -1,0 +1,37 @@
+{
+  "environment": "Node service-worker simulation; not a physical offline test",
+  "checks": [
+    {
+      "name": "23 static responses hash-verified before install",
+      "status": "PASS"
+    },
+    {
+      "name": "Every installation fetch bypasses stale HTTP cache",
+      "status": "PASS"
+    },
+    {
+      "name": "No automatic skipWaiting on install",
+      "status": "PASS"
+    },
+    {
+      "name": "Activation removes only this app scope caches",
+      "status": "PASS"
+    },
+    {
+      "name": "Only explicit update message activates",
+      "status": "PASS"
+    },
+    {
+      "name": "Reader serves exact cached bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-origin requests untouched",
+      "status": "PASS"
+    },
+    {
+      "name": "Corrupted release fails installation and preserves prior active worker",
+      "status": "PASS"
+    }
+  ]
+}
