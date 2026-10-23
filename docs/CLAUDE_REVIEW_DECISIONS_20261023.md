@@ -23,3 +23,5 @@ This is a design review, not a licensed religious ruling.
    - Don't imply live status without current provider evidence; no automatic sound before deliberate entry.
 
 **Sequence:** Japji reader QA + stable release first → Simran Room design/research → Gurdwara arrival design/research. One GitHub source of truth, one release baseline, Claude PASS/FAIL screenshot review before promotion.
+
+**Deployment reconciliation:** Work promoted the intermediate R5 compact/Quiet implementation to main (c1bc7c9) while the documents were being saved. This ledger now guides the NEXT, separate R6 refinement; do not reapply or redeploy R5 as a new candidate.

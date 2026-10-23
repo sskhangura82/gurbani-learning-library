@@ -3,8 +3,8 @@
 Status: Work-ready source-controlled handoff. Founder accepted direction 2026-10-23.
 Authoritative stable family site: https://sskhangura82.github.io/gurbani-learning-library/full-japji.html
 Repo: https://github.com/sskhangura82/gurbani-learning-library
-Stable release before this order: Revision 4, commit 924cd58b57483e8a26b14cf185e328823672076b
-Review branch (created separately): feature/glp-darbar-reader-r5-20261023
+Current production baseline for remaining work: Revision 5, commit c1bc7c90ef172509edd6dc7b206bc6b8f2a6a9ec (Revision 4 commit 924cd58b57483e8a26b14cf185e328823672076b preserved as history)
+Review branch for standards, screenshots and portable QA: feature/glp-darbar-reader-r5-20261023 (the five R5 source-file changes were already independently promoted to main and are identical here)
 
 ## Objective
 Make the existing complete Japji Sahib reader as serene and effortless as possible on iPhone. Only after the reader passes acceptance, move to design and prototype of (1) authentic Sikh Naam Simran/meditation, and (2) destination-specific Gurdwara arrival. Do not create competing apps or switch away from the canonical GitHub repo.
@@ -13,8 +13,8 @@ Make the existing complete Japji Sahib reader as serene and effortless as possib
 - docs/DARBAR_STANDARD_V1.md — precise design and editorial guardrails, including Claude's four recommendations with safety/accessibility refinements
 - Two founder iPhone screenshots from conversation 2026-10-23 showing top-bar/dock overhead and excessive vertical spacing
 - Revision 4 release evidence: ChatGPT Library /Gurbani Learning Library/Family access - 2026-10-23/GLP-001_Japji_v1_Release_Evidence_2026-10-23.html
-- Existing 0.9 Revision 4 source and tests. Do not depend on legacy Mac Cloudflare link.
-- Local scoped Revision 5 prototype on Mac: ~/Library/Application Support/GurbaniLearningLibrary/releases/0.9-japji-v1-r5-candidate — its compact/Quiet screenshots, measured chrome reduction and tests are *candidate evidence*, not an approved release.
+- Current 0.9 Revision 5 source, tests and public GitHub Pages. Do not depend on legacy Mac Cloudflare link.
+- Revision 5 was independently promoted by Work before this handoff was complete; the Mac release is ~/Library/Application Support/GurbaniLearningLibrary/releases/0.9-japji-v1-r5. Its compact/Quiet screenshots and measurements now describe the deployed baseline, not a competing candidate.
 
 ## Phase 1 — finish the reading canvas FIRST
 1. One continuous immutable Gurmukhi document (all 385 occurrences; all 38 Pauris, beginning/closing passages). Keep all 385 short English+Punjabi drafts and 42 Study drafts unchanged, explicitly draft-labeled. Do not invent, modify or import scripture from a new source.
@@ -26,11 +26,11 @@ Make the existing complete Japji Sahib reader as serene and effortless as possib
 7. Review performance: CSS flow/reflow, DOM updates at 385 lines, >30 min scroll session, no unintended shifts when controls recede, reduced-motion support, accessible focus, min 44x44px touch target.
 
 ## Phase 1 testing and promotion gate
-- Baseline 47 automated + 9 r4 browser checks remain passing.
+- Preserve Revision 5 verification: 47 automated checks, 26 isolated-browser checks (including a secure loopback service-worker update/rollback), 12 live-site browser checks and 24 hash-matched public assets. Those results are not physical iPhone acceptance.
 - Additional tests cover all 385 exact source hashes, all 385 meaning controls/42 Study layers, compact/quiet UI, no hidden controls lost, 320/390px and largest scripture size, external radio links and optional menus unchanged.
-- Test actual HTTPS versioned service-worker upgrade and rollback with saved notes/bookmarks/theme retained. The first local R5 candidate passed 23 browser assertions (metrics & Quiet interaction) but its *test harness* stalled waiting for a service-worker update after a loopback symlink change; this is NOT a pass for upgrade/rollback and needs repair. Do not ignore or mislabel this.
+- Test every new R6 candidate for versioned service-worker upgrade/rollback with saved notes/bookmarks/theme retained. The early R5 harness did stall on one waiting-update observation; Work subsequently diagnosed the race and recorded 26 passing isolated-browser checks, including loopback update and rollback. Do not conflate that with a tested real-device iPhone upgrade or with a full live-HTTPS rollback; repeat the relevant gates for any further code changes.
 - Real physical iPhone Safari portrait/landscape/standalone Home Screen/VoiceOver/offline if accessible; if not, mark NOT RUN. Do not describe desktop viewport as physical device evidence.
-- Preserve Revision 4 publicly until the new candidate passes; use feature branch/PR and review before promotion. Promote only a verified non-regressing UI candidate to the existing GitHub Pages family URL, not a newly invented address. Preserve rollback+update instructions.
+- Keep publicly deployed Revision 5 stable while building a NEW R6 single-dock/reader-layout candidate on a separate branch and PR. Promote only after tests and review to the SAME GitHub Pages family URL; preserve rollback+update instructions. This documentation/QA PR does not require changing the current site.
 - Capture Day, Amrit Vela, Read, Understand, Study, and Quiet screenshots showing at least three pauris and a long line, and record measured old/new top, dock and tuk heights.
 
 ## Phase 2 — separate Meditation/Simran Room concept (not public shipping)
@@ -48,7 +48,7 @@ Make the existing complete Japji Sahib reader as serene and effortless as possib
 - Deliver place/source/license register and static UX prototype as an isolated review, not a production change.
 
 ## Collaboration
-- ChatGPT remains integration lead; Claude supplies design/review verdict only (PASS/FAIL, evidence, fixes) after the first complete reader candidate. Work implements and tests.
+- ChatGPT remains integration lead; Claude supplies design/review verdict only (PASS/FAIL, evidence, fixes) after the next R6 reader candidate. Work implements and tests.
 - Distinguish independent AI review from qualified Gurbani/Punjabi/santhiya or raag endorsement.
 - Open GitHub PRs with exact source diff, screenshots, test reports, branch base SHA and rollback. No protected Governed Studio infrastructure changes.
 - Use GitHub as canonical source; copy nonsecret summaries/evidence into ChatGPT Library /Gurbani Learning Library. Optional Google Drive backup only if a connected writable destination is clearly available; don't store private user notes or any credentials in public source.

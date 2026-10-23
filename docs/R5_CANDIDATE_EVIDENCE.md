@@ -39,3 +39,11 @@ Measured combined chrome reduction **54.9%**, typical row reduction **33.5%**.
 - Remove per-pauri decorative separators from the Read and Understand scripture canvas; preserve accessible headings/Jumps.
 - Repeat 47+ automated checks and relevant real HTTPS tests, and demonstrate note preservation across update and rollback.
 - If physical iPhone unavailable, report NOT RUN.
+
+
+## Subsequent independent Work promotion (23 October 2026, 12:23 Pacific)
+During preparation of the GitHub handoff, Work independently promoted exactly the same five R5 UI files to main in commit **c1bc7c90ef172509edd6dc7b206bc6b8f2a6a9ec**. Each UI file matches this review branch byte-for-byte; the open PR therefore proposes **documentation, screenshots, tests and CI only**, not a second UI deployment.
+
+Work's deployed R5 receipt records **47 automated checks**, **26 isolated-browser checks**, **12 real public HTTPS Chrome checks**, and **24 published asset hashes**; it also records an actual secure-loopback service-worker update/rollback with learning retained. The early symlink-harness observation reported above is historical and superseded for the R5 release, not a present R5 blocker.
+
+The R5 release is still **not physical iPhone acceptance**, and the strict Claude target of a single 56px dock with depth dots/swipe, removing decorative scripture separators, plus R6 UX verification remains to be implemented separately.
