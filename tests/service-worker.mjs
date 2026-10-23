@@ -1,0 +1,15 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import crypto from 'node:crypto';
+const root=new URL('../',import.meta.url),source=fs.readFileSync(new URL('sw.js',root),'utf8'),scope='https://example.test/gurbani/';
+function harness(corrupt=false){const events={},calls=[],saved=new Map();const previous='glp-static:'+scope+':old',other='glp-static:https://example.test/other/:old';
+ const self={registration:{scope},location:{href:scope+'sw.js',origin:'https://example.test'},clients:{claim:async()=>calls.push('claim')},skipWaiting:()=>calls.push('skip'),addEventListener:(name,fn)=>events[name]=fn};
+ const caches={open:async key=>({put:async(req,res)=>saved.set(req.url,res),match:async req=>{for(const [u,res] of saved)if(new URL(u).pathname===new URL(req.url).pathname)return res.clone();}}),keys:async()=>[previous,other,'unrelated-app'],delete:async key=>calls.push({deleted:key})};
+ const fetch=async req=>{assert.equal(req.cache,'reload');assert.ok(new URL(req.url).searchParams.get('glp_release'));let path=new URL(req.url).pathname.slice(new URL(scope).pathname.length)||'index.html';return new Response(corrupt&&path==='full-japji.html'?'corrupt':fs.readFileSync(new URL(''+path,root)));};
+ vm.runInNewContext(source,{self,caches,URL,Request,crypto:crypto.webcrypto,Uint8Array,fetch});return{events,calls,saved,previous};
+}
+let h=harness(),pending;h.events.install({waitUntil:p=>pending=p});await pending;assert.equal(h.saved.size,23);assert.ok(!h.calls.includes('skip'));
+h.events.activate({waitUntil:p=>pending=p});await pending;assert.deepEqual(h.calls.filter(x=>x.deleted),[{deleted:h.previous}]);
+h.events.message({data:{type:'IGNORE'}});assert.ok(!h.calls.includes('skip'));h.events.message({data:{type:'ACTIVATE_GLP_UPDATE'}});assert.ok(h.calls.includes('skip'));
+let response;h.events.fetch({request:new Request(scope+'full-japji.html'),respondWith:p=>response=p});assert.equal(await(await response).text(),fs.readFileSync(new URL('full-japji.html',root),'utf8'));
+let intercepted=false;h.events.fetch({request:new Request('https://outside.test/'),respondWith:()=>intercepted=true});assert.equal(intercepted,false);
+let bad=harness(true);bad.events.install({waitUntil:p=>pending=p});await assert.rejects(pending,/hash mismatch/);assert.ok(bad.calls.some(x=>x.deleted?.startsWith('glp-static:'+scope)));assert.ok(!bad.calls.includes('skip'));
+const result={environment:'Node service-worker simulation; not a physical offline test',checks:['23 static responses hash-verified before install','Every installation fetch bypasses stale HTTP cache','No automatic skipWaiting on install','Activation removes only this app scope caches','Only explicit update message activates','Reader serves exact cached bytes','Cross-origin requests untouched','Corrupted release fails installation and preserves prior active worker'].map(name=>({name,status:'PASS'}))};fs.writeFileSync(new URL('evidence/service-worker-verification.json',root),JSON.stringify(result,null,2));console.log(JSON.stringify({total:result.checks.length,status:'PASS'}));
