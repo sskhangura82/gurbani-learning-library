@@ -13,7 +13,7 @@ let raw=null,storageOK=true,storageDamaged=false;try{const saved=localStorage.ge
 let state=C.normalise(raw,model,units),playing=false,following=true,started=false,finished=false,raf=0,deadline=0,persistTimer=0;
 let afterModalClose=null,modalReturn=null,dialogFocus=null,paintedIndex=-1,paintedTokens=[],scrollTimer=0,importCandidate=null,programmaticUntil=0;
 const shared=window.GLP_SHARED_LEARNING.create({storage:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},locks:navigator.locks,key:KEY,normalise:s=>C.normalise(s,model,units),seed:state});
-let pendingNotes={},pendingBookmarks={},saveChain=Promise.resolve(),notePermit=null,noteGeneration=0;
+let pendingNotes={},pendingBookmarks={},pendingPreferences={},saveChain=Promise.resolve(),notePermit=null,noteGeneration=0;
 function refreshLearning(saved){state.notes={...saved.notes,...pendingNotes};const marks=new Set(saved.bookmarks);for(const [id,on] of Object.entries(pendingBookmarks))on?marks.add(id):marks.delete(id);state.bookmarks=[...marks];updateDock();}
 function releaseNote(){noteGeneration++;const permit=notePermit;if(permit)persist(true).then(()=>{if(notePermit===permit&&!Object.keys(pendingNotes).length){notePermit=null;permit.release();}});}
 started=state.hasGuided;
@@ -32,8 +32,8 @@ function status(text){$('status').textContent=text;}
 function persist(now=false){
  const save=()=>{persistTimer=0;saveChain=saveChain.then(async()=>{
   if(storageDamaged){status('Saved learning needs recovery and has not been overwritten. Export a backup.');return;}
-  const edits={notes:{...pendingNotes},bookmarks:{...pendingBookmarks}};
-  try{const saved=await shared.save(state,edits);for(const [id,v] of Object.entries(edits.notes))if(pendingNotes[id]===v)delete pendingNotes[id];for(const [id,v] of Object.entries(edits.bookmarks))if(pendingBookmarks[id]===v)delete pendingBookmarks[id];storageOK=true;refreshLearning(saved);if($('note-status')&&notePermit)$('note-status').textContent=Object.keys(pendingNotes).length?'Saving…':'Saved in this browser. Close this reflection to edit in another tab.';}
+  const edits={notes:{...pendingNotes},bookmarks:{...pendingBookmarks},preferences:{...pendingPreferences}};
+  try{const saved=await shared.save(state,edits);for(const [id,v] of Object.entries(edits.notes))if(pendingNotes[id]===v)delete pendingNotes[id];for(const [id,v] of Object.entries(edits.bookmarks))if(pendingBookmarks[id]===v)delete pendingBookmarks[id];for(const [id,v] of Object.entries(edits.preferences))if(pendingPreferences[id]===v)delete pendingPreferences[id];storageOK=true;refreshLearning(saved);if($('note-status')&&notePermit)$('note-status').textContent=Object.keys(pendingNotes).length?'Saving…':'Saved in this browser. Close this reflection to edit in another tab.';}
   catch(err){storageOK=false;status(err.message||'Browser storage unavailable. Export learning before closing.');if($('note-status'))$('note-status').textContent='Not saved. Export your learning before leaving.';}
  });return saveChain;};
  if(now){clearTimeout(persistTimer);return save();}if(!persistTimer)persistTimer=setTimeout(save,450);return saveChain;
@@ -96,7 +96,7 @@ function begin(){
 function togglePlay(){playing?pause('Reading guide paused.'):begin();}
 function startHere(index){state.guide={index,token:0};following=true;finished=false;started=true;begin();}
 function goTo(index){detach();const point={id:lines[index].id,offset:0};state.read=point;restoreAnchor(point);updateDock();persist();}
-function changeMode(mode,preferredAnchor){if(!['read','understand','study'].includes(mode))return;const point=preferredAnchor||anchor();if(mode==='study'&&playing)pause('Study mode: the visual guide is paused. External audio is unchanged.');state.mode=mode;applyMode();restoreAnchor(point);state.read=point;updateDock();persist();}
+function changeMode(mode,preferredAnchor){if(!['read','understand','study'].includes(mode))return;const point=preferredAnchor||anchor();if(mode==='study'&&playing)pause('Study mode: the visual guide is paused. External audio is unchanged.');state.mode=mode;pendingPreferences.mode=mode;applyMode();restoreAnchor(point);state.read=point;updateDock();persist();}
 function openDialog(title,body,kicker='EXPLORE'){
  releaseNote();const d=$('reader-dialog');if(!d.open){modalReturn=anchor();dialogFocus=document.activeElement;detach();}
  $('dialog-title').textContent=title;$('dialog-kicker').textContent=kicker;$('dialog-body').innerHTML=body;
@@ -136,12 +136,12 @@ $('play').addEventListener('click',togglePlay);$('start-here').addEventListener(
 $('return-follow').addEventListener('click',()=>{following=true;paint();focusGuide(true);});
 $('save-place').addEventListener('click',()=>{const id=anchor().id;state.read=anchor();state.bookmarks=state.bookmarks.includes(id)?state.bookmarks.filter(x=>x!==id):[...state.bookmarks,id];pendingBookmarks[id]=state.bookmarks.includes(id);updateDock();persist(true);});
 $('settings-open').addEventListener('click',settings);$('pace-open').addEventListener('click',settings);$('jump-open').addEventListener('click',jumps);$('explore').addEventListener('click',explore);$('coverage-open').addEventListener('click',coverage);$('back-start').addEventListener('click',()=>goTo(0));
-$('dialog-body').addEventListener('input',e=>{if(e.target.id==='reflection'){const id=e.target.dataset.lineId;if(notePermit&&model.byId.has(id)){state.notes[id]=e.target.value.slice(0,12000);pendingNotes[id]=state.notes[id];$('note-status').textContent='Saving…';persist(true);}}if(e.target.id==='set-size'){state.size=Math.max(24,Math.min(48,Number(e.target.value)));applyAppearance();persist();}});
+$('dialog-body').addEventListener('input',e=>{if(e.target.id==='reflection'){const id=e.target.dataset.lineId;if(notePermit&&model.byId.has(id)){state.notes[id]=e.target.value.slice(0,12000);pendingNotes[id]=state.notes[id];$('note-status').textContent='Saving…';persist(true);}}if(e.target.id==='set-size'){state.size=Math.max(24,Math.min(48,Number(e.target.value)));pendingPreferences.size=state.size;applyAppearance();persist();}});
 $('dialog-body').addEventListener('change',async e=>{
  const id=e.target.id;if(id==='set-theme'){state.theme=['day','amrit'].includes(e.target.value)?e.target.value:'day';applyAppearance();}
  if(id==='set-radiance'){state.radiance=e.target.checked;applyAppearance();}
  if(id==='set-pace'){const oldPace=state.pace;state.pace=Number(e.target.value);if(deadline)deadline=performance.now()+Math.max(0,deadline-performance.now())*oldPace/state.pace;}
- if(id==='set-emphasis'){state.emphasis=e.target.value;paint();}persist();
+ if(id==='set-emphasis'){state.emphasis=e.target.value;paint();}const preference={"set-theme":'theme',"set-radiance":'radiance',"set-pace":'pace',"set-emphasis":'emphasis'}[id];if(preference)pendingPreferences[preference]=state[preference];persist();
  if(id==='import-file'){try{const f=e.target.files?.[0];e.target.value='';if(!f)return;if(f.size>2500000)throw Error('Learning file is too large.');importCandidate=L.parse(await f.text());$('import-preview').innerHTML='<p>Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together.</p><button data-action="apply-import">Merge learning</button><button data-action="cancel-import">Cancel</button>';}catch(err){importCandidate=null;$('import-preview').textContent=err.message;}}
 });
 window.addEventListener('wheel',()=>{detach();},{passive:true});

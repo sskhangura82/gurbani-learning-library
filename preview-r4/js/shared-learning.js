@@ -6,7 +6,7 @@
   function read(){const raw=storage.getItem(key);if(raw===null)return normalise(seed);const s=JSON.parse(raw);if(!s||typeof s!=='object'||Array.isArray(s)||(s.version!=null&&s.version!==2))throw Error('Saved learning needs recovery or a newer reader. Export a backup.');return normalise(s);}
   function exclusive(fn){if(!supported)return Promise.reject(Error('Safe saving is unavailable in this browser. Export learning before closing.'));return locks.request(writeName,fn);}
   function save(snapshot,edits={}){return exclusive(()=>{
-   const latest=read(),next=normalise(snapshot);next.notes={...latest.notes,...edits.notes};
+   const latest=read(),next=normalise({...latest,read:snapshot.read,guide:snapshot.guide,hasGuided:snapshot.hasGuided,...edits.preferences});next.notes={...latest.notes,...edits.notes};
    const marks=new Set(latest.bookmarks);for(const [id,on] of Object.entries(edits.bookmarks||{}))on?marks.add(id):marks.delete(id);next.bookmarks=[...marks];
    storage.setItem(key,JSON.stringify(next));return next;
   });}
