@@ -1,3 +1,0 @@
-/* Exact declarations extracted from the production reduced-motion media query. */
-*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.tuk,.g-word[data-active=true]{text-shadow:none!important}.g-word[data-active=true]{text-decoration:underline;text-underline-offset:5px}
-#reduced-results{position:fixed;top:0;right:0;max-width:550px;background:#fff;color:#111;padding:20px;white-space:pre-wrap;z-index:100;font:14px/1.5 system-ui}
