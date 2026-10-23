@@ -21,8 +21,8 @@ Runtime baseline: R5 `c1bc7c90ef172509edd6dc7b206bc6b8f2a6a9ec`, preserved as ta
 | Reduced-motion branch | 8 PASS, forced `matchMedia` branch and extracted production CSS; explicitly not an OS-toggle or iPhone test |
 | Independent Claude review | PASS DESIGN, `CLAUDE_R6_DESIGN_REVIEW.md`; bounded AI review, not religious or language approval |
 | Screenshot set | Nine final-runtime captures under `docs/screenshots/r6/`; themes, depths, Pauris 1/2/3, immersive, longest source occurrence and 320px/48px |
-| Actual HTTPS lifecycle | Final darbar-6 → unique R5 rollback passed with three synthetic learning generations, bookmarks, theme, 36px text and radiance choice; R6-created reflection also retained. Final return/cache-fallback receipt is recorded separately. |
-| Elapsed-time performance | First R6 31-minute run PASS, all 385 nodes stable, no observed interruptions/long tasks. Final darbar-6 31-minute run is the remaining timed gate. |
+| Actual HTTPS lifecycle | Final darbar-6 → unique R5 rollback passed with three synthetic learning generations, bookmarks, theme, 36px text and radiance choice; R6-created reflection also retained. Final R5 → R6 return and cached reload after server files returned HTTP 404 also PASS; `evidence/r6-https-final-lifecycle.json`. |
+| Elapsed-time performance | First R6 31-minute run PASS, all 385 nodes stable, no observed interruptions/long tasks. Final darbar-6 run also PASS: 31.000005 active visible minutes, no failures or visibility interruptions. This observes performance and DOM stability, not a complete timed reading of all 385 occurrences. |
 | Physical iPhone/Safari | NOT TESTED: portrait/landscape, real Dynamic Type, VoiceOver, Home Screen, notched safe-area and airplane mode. Only a Mac and desktop Chrome were available. |
 
 The 47 viewport checks do not establish storage safety on an insecure origin; storage is checked separately over actual HTTPS using `glp001.qa-r6.*` records. No family learning key is seeded, exported or written by that fixture.
@@ -45,4 +45,4 @@ Run `node tests/verify.mjs`, `node tests/service-worker.mjs`, `node tests/shared
 
 `tests/sw-browser.html` permits seeding/loading only on an isolated HTTPS test location and refuses to overwrite non-fixture records. Deployment copies must replace the learning prefix with `glp001.qa-r6.` and use an independent worker scope. The temporary public QA fixture is removed after testing. Do not expose the project root, private notes, account material or credentials.
 
-See `R6_RELEASE_AND_ROLLBACK.md` for operator instructions. Release acceptance and exact promoted commit are recorded after all applicable gates close.
+See `R6_RELEASE_AND_ROLLBACK.md` for operator instructions. Applicable desktop and HTTPS acceptance gates are closed in `R6_ACCEPTANCE.md`. The exact promoted commit is recorded in the subsequent release receipt.

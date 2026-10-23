@@ -4,7 +4,7 @@ Family entrypoint remains https://sskhangura82.github.io/gurbani-learning-librar
 
 ## Update a reader
 
-Open the dock's expansion, then Explore → iPhone & offline help → Check for update. Export learning before a consequential update or moving between browser/Home Screen contexts. Use Load update when ready; the app persists pending learning before activation. Close old reader tabs after the new version loads. Never clear site data as an update step.
+In R5 Quiet mode, first use Controls to reveal the options, then the ••• button. In R6, open the dock’s ⌃ expansion. Choose Explore → iPhone & offline help → Check for update. Export learning before a consequential update or moving between browser/Home Screen contexts. Use Load update when ready; the app persists pending learning before activation. Close old reader tabs after the new version loads. Never clear site data as an update step.
 
 The worker validates all 23 shell routes (22 distinct content files; plus the worker gives 23 distinct runtime files) against SHA-256 before installation. A failed or incomplete download cannot activate a partial shell. Waiting updates do not take over until the reader requests them. The scope-specific static cache contains no notes or reflections.
 
