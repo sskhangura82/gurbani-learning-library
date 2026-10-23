@@ -41,14 +41,20 @@ function persist(now=false){
 }
 function sources(ids){return '<div class="source-links">'+(ids||[]).map(id=>old.sources[id]).filter(Boolean).map(s=>a(s.url,s.title)).join('')+'</div>';}
 function deepMarkup(e){return '<div class="deep-study"><p class="draft-label">EXPLANATION · EDUCATIONAL DRAFT</p><p class="pronunciation">'+h(e.pronunciation)+'</p><h3>'+h(e.heading)+'</h3><div class="vocabulary">'+(e.words||[]).map(w=>'<div><b lang="pa">'+h(w[0])+'</b>'+h(w[1])+'</div>').join('')+'</div><p>'+h(e.study)+'</p><p class="punjabi" lang="pa">'+h(e.studyPunjabi)+'</p>'+(e.interpretationNote?'<p class="interpretation">'+h(e.interpretationNote)+'</p>':'')+sources(e.sourceIds)+'</div>';}
-function tokensMarkup(line){let i=0;return line.parts.map(p=>/^\s+$/u.test(p)?h(p):'<span class="g-word" data-token="'+i+++'">'+h(p)+'</span>').join('');}
+function tokensMarkup(line){
+ // Preserve every source character and token index; only keep a final danda with its preceding word.
+ const words=line.parts.map((p,index)=>/^\s+$/u.test(p)?-1:index).filter(index=>index>=0);
+ const last=words.at(-1),join=words.length>1&&/^[॥।੦-੯0-9]+$/u.test(line.parts[last]);
+ const start=join?words.at(-2):-1;let token=0;
+ return line.parts.map((part,index)=>(index===start?'<span class="tuk-ending">':'')+(/^\s+$/u.test(part)?h(part):'<span class="g-word" data-token="'+token+++'">'+h(part)+'</span>')+(join&&index===last?'</span>':'')).join('');
+}
 function lessonIntro(){const l=old.lesson;return '<div class="study-intro"><p class="draft-label">FULL LEARNING · DRAFT</p><h3>'+h(l.title)+'</h3><p>'+h(l.bridge)+'</p><p><strong>'+h(l.keyQuestion)+'</strong></p></div>';}
 function lessonReflection(){const l=old.lesson;return '<div class="study-reflection"><h3>Bring the teaching into life</h3><p>'+h(l.application)+'</p><p class="punjabi-text" lang="pa">'+h(l.applicationPunjabi)+'</p><p><strong>Teach-back:</strong> '+h(l.teachBack)+'</p><div class="line-actions"><button data-action="related">Related teachings</button><button data-action="note" data-index="10">Keep a reflection</button></div><p class="draft-label">'+h(l.reviewNote)+'</p></div>';}
 // Render every occurrence once. Mode changes only change visibility around it.
 $('continuous-reader').innerHTML=units.map((u,ui)=>{
  const hasTeaching=u.id==='pauri02';
  const body=u.lines.map((l,li)=>{const i=model.starts[ui]+li,line=lines[i],e=explanations.get(l.id);
- return '<article class="scripture-line" id="line-'+i+'" data-index="'+i+'" data-occurrence="'+h(l.id)+'"><p class="tuk" lang="pa" data-text-sha256="'+h(l.sha256)+'">'+tokensMarkup(line)+'</p>'+(e?'<button type="button" class="simple-meaning" data-action="meaning" data-index="'+i+'" aria-label="Read more about '+h(u.title)+' line '+(li+1)+'"><span class="english">'+h(e.english)+'</span><span class="punjabi" lang="pa">'+h(e.punjabi)+'</span><span class="expand-hint">Draft meaning · tap to explore</span></button>'+(e.study?deepMarkup(e):''):'')+'</article>';}).join('');
+ return '<article class="scripture-line" id="line-'+i+'" data-index="'+i+'" data-occurrence="'+h(l.id)+'"><p class="tuk'+(ui===0?' mool-mantar':'')+'" lang="pa" data-text-sha256="'+h(l.sha256)+'">'+tokensMarkup(line)+'</p>'+(e?'<button type="button" class="simple-meaning" data-action="meaning" data-index="'+i+'" aria-label="Read more about '+h(u.title)+' line '+(li+1)+'"><span class="english">'+h(e.english)+'</span><span class="punjabi" lang="pa">'+h(e.punjabi)+'</span><span class="expand-hint">Draft meaning · tap to explore</span></button>'+(e.study?deepMarkup(e):''):'')+'</article>';}).join('');
  return '<section class="passage" id="section-'+h(u.id)+'" data-unit="'+ui+'" aria-labelledby="caption-'+h(u.id)+'"><div class="section-caption"><h2 id="caption-'+h(u.id)+'">'+h(u.title)+'</h2></div>'+(hasTeaching?lessonIntro():'')+body+unitLesson(u)+(hasTeaching?lessonReflection():'')+'</section>';
 }).join('');
 const rows=[...document.querySelectorAll('.scripture-line')],tuks=rows.map(r=>r.querySelector('.tuk')),wordNodes=tuks.map(t=>[...t.querySelectorAll('.g-word')]);

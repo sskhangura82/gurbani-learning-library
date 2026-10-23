@@ -1,0 +1,125 @@
+{
+  "status": "FAIL",
+  "error": "One active word carries both color and underline",
+  "checks": [
+    {
+      "name": "385 mounted occurrences exactly reconstruct frozen source text and IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Mool Mantar uses typographic emphasis without a container",
+      "status": "PASS"
+    },
+    {
+      "name": "Depth controls include their visible English label in the accessible name",
+      "status": "PASS"
+    },
+    {
+      "name": "All original guide token indexes remain contiguous within each source occurrence",
+      "status": "PASS"
+    },
+    {
+      "name": "385 bilingual meaning buttons and 42 Study drafts",
+      "status": "PASS"
+    },
+    {
+      "name": "390px: single 54px dock, all six targets at least 44px",
+      "status": "PASS"
+    },
+    {
+      "name": "390px: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "320px: single 54px dock, all six targets at least 44px",
+      "status": "PASS"
+    },
+    {
+      "name": "320px: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Read: 9px between adjacent tuks",
+      "status": "PASS"
+    },
+    {
+      "name": "Read: 38px between pauris",
+      "status": "PASS"
+    },
+    {
+      "name": "Accessible pauri headings retained without visible rules or cards",
+      "status": "PASS"
+    },
+    {
+      "name": "Read to Understand preserves occurrence, offset and guide",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "anchor": {
+            "id": "pauri03.line01",
+            "top": 13.78125
+          },
+          "guide": {
+            "index": 18,
+            "token": 2
+          },
+          "mode": "read",
+          "playing": false,
+          "following": false
+        },
+        "after": {
+          "anchor": {
+            "id": "pauri03.line01",
+            "top": 14.078125
+          },
+          "guide": {
+            "index": 18,
+            "token": 2
+          },
+          "mode": "understand",
+          "playing": false,
+          "following": false
+        }
+      }
+    },
+    {
+      "name": "Depth change retains the exact 385 scripture DOM nodes",
+      "status": "PASS"
+    },
+    {
+      "name": "Understand: 19px separation and 5px meaning attachment",
+      "status": "PASS"
+    },
+    {
+      "name": "Play enters immersive mode, leaves the entire dock accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "Pause holds the exact guide word",
+      "status": "PASS"
+    },
+    {
+      "name": "Resume advances without restarting",
+      "status": "PASS"
+    },
+    {
+      "name": "One active word carries both color and underline",
+      "status": "FAIL"
+    }
+  ],
+  "metrics": {
+    "width": 320,
+    "dockHeight": 54,
+    "topChrome": 0,
+    "scriptureSize": "30px",
+    "lineHeight": "57px",
+    "theme": "day",
+    "mode": "understand",
+    "immersive": true,
+    "anchor": {
+      "id": "pauri03.line02",
+      "top": -33.890625
+    },
+    "overflow": false
+  }
+}

@@ -15,4 +15,6 @@ The left panel is the application. The right panel is QA instrumentation, not pr
 
 These are desktop Chrome iframe captures. Physical iPhone/Safari/VoiceOver/Dynamic Type/Home Screen are NOT TESTED. Pauris 1, 2 and 3 are represented across the set, not compressed into a single phone screen.
 
-`mool-long-line.jpg`: 390×844, 30px, Amrit Vela / Read. Full Mool Mantar (the longest frozen occurrence, 71 Unicode code points in this source) wraps naturally, with the title and opening Salok below and no colored scripture container. Captured after focus-protection changes; the later reduced-motion fix does not affect this normal-motion view.
+`mool-long-line.jpg`: 390×844, 30px, Amrit Vela / Read. Full Mool Mantar (the longest frozen occurrence, 71 Unicode code points in this source) wraps naturally, with the title and opening Salok below and no colored scripture container. Captured after the final typography, ending-pair and active-color corrections.
+
+All nine images now show the final darbar-6 runtime and the 47-check passing harness. The final independent Claude pass inspected read-day, mool-long-line and large-320; the other six were recaptured afterward with unchanged runtime code. Study shows the Mool Mantar source and its clearly separate, unreviewed Study draft. The first three failed-design captures remain in Git history at commit 7463f5b; the current files replace those superseded captures.

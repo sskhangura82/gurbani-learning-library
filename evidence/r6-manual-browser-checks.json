@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-23T20:27:33.032932+00:00",
+  "environment": "Actual desktop Chrome tabs, HTTPS qa-r6 namespace",
+  "checks": [
+    {
+      "name": "New reflection saved via R6 textarea",
+      "status": "PASS",
+      "syntheticValue": "QA r6 \u00b7 new synthetic reflection saved in Revision 6"
+    },
+    {
+      "name": "Competing tab is read-only while first reflection editor owns Web Lock",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh tab becomes editable after previous editor closes and retains the new R6 reflection",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape closes expansion and restores focus to the dock",
+      "status": "PASS"
+    }
+  ],
+  "note": "An immediate retry while closure was still settling remained read-only; a subsequent fresh editor acquired the released lock. No family learning was touched."
+}

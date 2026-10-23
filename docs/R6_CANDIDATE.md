@@ -1,48 +1,48 @@
-# Work Order 008 — Revision 6 candidate
+# Work Order 008 — Revision 6 Darbar reader
 
-Base: `3a1005067742b70f57d536c7ee494278efd71c59` (documentation/QA merge of PR #1). Runtime baseline remains R5 `c1bc7c90ef172509edd6dc7b206bc6b8f2a6a9ec`. The public family reader is unchanged while this candidate is tested.
-
-Candidate worker version: `0.9-japji-v1-r6-darbar-3`.
+Runtime baseline: R5 `c1bc7c90ef172509edd6dc7b206bc6b8f2a6a9ec`, preserved as tag `japji-v1-0.9-r5`. Work began from verified main after documentation PR #1; subsequent main advances were isolated `qa-r6/` test fixtures, never replacement family reader assets. Candidate PR: #3. Runtime worker: `0.9-japji-v1-r6-darbar-6`.
 
 ## Implemented
 
-- One continuous document: all 385 Gurmukhi occurrences, all 385 existing bilingual draft meanings and 42 Study drafts. Scripture, editorial assets, gurdwara directory, learning coordination, import/export and PWA update modules are byte-identical to R5; a portable manifest verifies them.
-- Read/Understand have no decorative pauri rules or scripture cards. Accessible headings and Jump remain. Read gap: 9px within a pauri, 38px between pauris; 1.9 line-height at the existing adjustable 30px default. Understand attaches meaning with 5px padding and gives 19px before the next tuk.
-- One 54px dock excluding safe-area inset: Play/Pause, current location/Jump, Read, Meaning (accessible name Understand), Study, expansion. All six buttons are at least 44×44 CSS px at 320px and 390px. The complete dock stays visible in immersive mode.
-- Header recedes during guided reading or after scrolling into the text. Expansion reveals all options; keyboard Escape closes the dialog and returns focus. Optional persistent-page-controls preference prevents automatic immersive hiding. It uses the existing version-2 learning record and Web Locks merge protection.
-- Mode/explanation changes preserve the reading occurrence and independent guide index. Study pauses guidance. Radiance, theme, notes and bookmarks remain available.
-- Horizontal page swipes were evaluated and deferred: no edge gesture interception, touchmove cancellation, or VoiceOver-specific gesture claim. Three visible buttons and keyboard access provide depth switching. Physical iOS validation is required before adding gesture shortcuts.
+- All 385 original Gurmukhi occurrences remain in one mounted document. Source text, whitespace, hashes and guide token indexes are preserved. All 385 bilingual meaning drafts, 42 Study drafts and review labels remain. Eleven frozen scripture/editorial/directory/learning/PWA files are byte-identical to R5.
+- Read and Understand remove decorative scripture containers and pauri rules. Accessible headings and Jump remain. Read uses 9px between tuks and 38px between pauris, with 1.9 line-height and 30px default. Understand attaches meaning at 5px and separates subsequent tuks by 19px.
+- One 54px dock, excluding safe-area inset, contains six targets of at least 44×44px: Play/Pause, current location/Jump, Read, Meaning, Study and expansion. The entire dock stays visible in immersive mode. Expansion exposes every secondary action; Escape returns focus. A persistent-page-controls preference is saved in the existing version-2 learning record with Web Locks merge protection.
+- Read/Understand switches retain the reading occurrence, offset and independent guide index, including during Play. Study pauses the guide. Meanings can open without resetting the clock and return to the same reading place.
+- Mool Mantar uses 600-weight typography without a card. A presentation-only span keeps each terminal danda/numeral with its preceding word. At ≤380px, 10px main margins and no inner tuk padding keep even the Pauri 25 ending pair inside the column at 48px. No scripture was shortened or edited.
+- Active color and underline change together immediately; only the restrained shadow transitions. Reduced motion suppresses all shadows and transitions in both radiance states. Day/Amrit Vela, optional radiance, pause/resume, saved reflections/bookmarks, related teachings, raag context and the gurdwara directory remain available.
+- Horizontal depth gestures are deferred until actual iOS navigation and VoiceOver can be checked. Visible buttons and keyboard access are the supported controls. No edge gesture interception, audio, TTS or false recording alignment was added.
 
-## Evidence so far
+## Evidence
 
-- 52 portable Node checks: 27 inherited source/learning, 8 service-worker contracts, 12 multi-tab coordination, 5 new preservation/preference/entrypoint/traversal contracts.
-- 38 browser interaction checks in `evidence/r6-browser-checks.json`, using a desktop Chrome iframe at 320/390/844 CSS px. Mode anchor before/after differs by less than 1px in the recorded check. A separate keyboard interaction verified Escape restores focus to Expand.
-- `docs/screenshots/r6/`: actual desktop viewport captures, including the QA console outside the mobile-sized reader. Pauris 1, 2, 3 and 24 are represented across the set. These are not photographs of a physical phone. Screenshot cropping failed in the browser service; complete viewport captures are retained.
-- R5 supplied chrome measurements were 60.6px top + 57px dock = 117.6px; R6 has no sticky top control bar and a 54px dock, a 63.6px reduction (54.1%) from that supplied R5 measurement. R5's archived `r5-compact-amrit.png` visually shows Day; it is retained as historical evidence and is not accepted as proof of the Amrit theme. Fresh R6 theme attributes and screenshots agree.
+| Check | Result and scope |
+| --- | --- |
+| Portable Node suite | 53 PASS: 27 source/learning, 8 service-worker, 12 shared-learning, 6 R6 contracts |
+| Browser interactions | 47 PASS, desktop Chrome at 320/390/844 CSS px; includes all 385 ending pairs at 30/48px, active-Play mode change, exact DOM reconstruction and focused controls above the dock |
+| Reduced-motion branch | 8 PASS, forced `matchMedia` branch and extracted production CSS; explicitly not an OS-toggle or iPhone test |
+| Independent Claude review | PASS DESIGN, `CLAUDE_R6_DESIGN_REVIEW.md`; bounded AI review, not religious or language approval |
+| Screenshot set | Nine final-runtime captures under `docs/screenshots/r6/`; themes, depths, Pauris 1/2/3, immersive, longest source occurrence and 320px/48px |
+| Actual HTTPS lifecycle | Final darbar-6 → unique R5 rollback passed with three synthetic learning generations, bookmarks, theme, 36px text and radiance choice; R6-created reflection also retained. Final return/cache-fallback receipt is recorded separately. |
+| Elapsed-time performance | First R6 31-minute run PASS, all 385 nodes stable, no observed interruptions/long tasks. Final darbar-6 31-minute run is the remaining timed gate. |
+| Physical iPhone/Safari | NOT TESTED: portrait/landscape, real Dynamic Type, VoiceOver, Home Screen, notched safe-area and airplane mode. Only a Mac and desktop Chrome were available. |
 
-## Open gates / honest limits
+The 47 viewport checks do not establish storage safety on an insecure origin; storage is checked separately over actual HTTPS using `glp001.qa-r6.*` records. No family learning key is seeded, exported or written by that fixture.
 
-- Actual HTTPS upgrade/rollback with synthetic saved learning: in progress, separate disposable origin. No family release will be downgraded for this test.
-- Independent Claude design PASS/FAIL: requested again after fixing the first review packet and adding focus/motion checks. The first review withheld approval because filenames were not discoverable, and requested explicit focus and reduced-motion evidence.
-- Physical iPhone/Safari, Home Screen, VoiceOver, real airplane mode and real Dynamic Type: NOT TESTED; only a Mac is connected and the available automated browser is desktop Chrome.
-- A sustained >30-minute real browser scroll session is not yet recorded. Full guide traversal is covered by a deterministic contract, which is not elapsed-time evidence.
-- Pauri 13 line 1 independent comparison remains OPEN. No scripture was repaired or substituted. All 385 meanings and 42 Study units remain unreviewed AI-assisted drafts; qualified Sikh/Punjabi/santhiya review remains separate from Claude design review.
+The supplied R5 measurements were 60.6px sticky top controls plus 57px dock = 117.6px. R6 removes the sticky top bar and uses a 54px dock, reducing that measured reserved chrome by 63.6px (54.1%). A typical one-row tuk is 57px tall, or 66px including the next-tuk gap. These are desktop CSS measurements, not physical-device acceptance.
 
-## Reproduction
+## Findings retained honestly
 
-Run `node tests/verify.mjs`, `node tests/service-worker.mjs`, `node tests/shared-learning.mjs`, `node tests/r6-contract.mjs`. Serve the static repo and open `tests/reader-browser.html` for browser checks. On an insecure origin the reader protects learning by refusing unsafe writes; those viewport tests do not establish persistence.
+Claude's first review was blocked by an incomplete screenshot manifest; its second identified three design defects. All three were fixed before the third PASS. The new tests also found a real active-color lag and the oversized Pauri 25 ending pair at the largest narrow-screen setting; both were corrected.
 
-`tests/sw-browser.html` refuses synthetic seeding outside a disposable HTTPS `trycloudflare.com` origin and refuses to overwrite non-fixture learning. It exercises the application's own Check update / Load update flow. The temporary server binds loopback, serves only curated public assets, disables directory listing, and can simulate an unavailable origin. Never expose the project root, account files, credentials or family exports.
+Two harness errors were corrected: label comparison initially counted an aria-hidden dot, and an old update observer incorrectly used the unchanged human-facing “Revision 6” label to infer reload between two R6 worker versions. The lifecycle harness now waits for the iframe load event. An initial final-retention check encountered the radiance value deliberately changed by another QA tab; the final lifecycle run restored the explicit fixture setting and separated viewport QA onto a different origin. The failing records remain in evidence.
 
-## Rollback
+Nonblocking Claude follow-ups remain: repeated per-passage meaning hint; narrower apparent pauri separation in Understand; truncated visual location at 320px (complete accessible name retained); meaning-button speech-name refinement; platform-specific Mool font-weight inspection. The first reduced-motion block is drift-checked; the second is redundant. Ending geometry is swept in Read; the source column width is shared by the other depths.
 
-Preserve the R5 commit and full release. Rollback must restore the complete R5 static bundle and generate a **new unique** worker version with `tests/build-sw.mjs`; do not delete a worker, reuse an installed cache version or clear browser learning. Close older reader tabs after exporting a backup. Release promotion and its receipt are separate from this candidate record.
+Pauri 13, line 1 independent comparison remains **OPEN**. No source was silently repaired. All 385 meanings and 42 Study lessons remain unreviewed AI-assisted drafts pending qualified Sikh/Punjabi/santhiya review.
 
-## Review follow-up before second Claude pass
+## Reproduce
 
-- Screenshot manifest now lists exact filenames; `mool-long-line.jpg` shows the longest source occurrence without a container.
-- Added focus-in protection: main-column controls are scrolled above the dock when focused. Six meaning checks at 320/390px and 48px plus the final Study action pass. Expanded depth-anchor checks at Pauris 4/24 and closing Salok pass with subpixel offsets.
-- Six reduced-motion branch checks pass using test-only `matchMedia` injection and exact CSS declarations extracted from the production media query. This exercises real CSS/guide branches, but is explicitly **not a real OS preference toggle or physical iPhone test**. No section whisper animation exists; location updates do not steal focus.
-- The first motion run found an inherited emphasis shadow remaining when radiance was off. The production reduced-motion rule now removes that shadow for both radiance settings; the failing result is retained in `evidence/r6-reduced-motion-before-fix.json`.
-- Typical one-row R6 tuk box is 57px at 30px × 1.9 line-height; including the 9px next-tuk gap gives a 66px row pitch. Source wrapping increases actual row height normally. Supplied R5 typical row measurement was 66.5px; this refinement primarily removes section decoration and top chrome, not text size.
-- The temporary Cloudflare HTTPS origin was blocked in the available browser. An isolated `qa-r6/` GitHub Pages fixture now uses `glp001.qa-r6.*` keys and its own worker scope. Its addition does not change the family reader root assets.
+Run `node tests/verify.mjs`, `node tests/service-worker.mjs`, `node tests/shared-learning.mjs`, and `node tests/r6-contract.mjs`. Serve the static files and open `tests/reader-browser.html`; the test waits for reader/font initialization. `tests/long-session.html` measures 31 real visible minutes without acceleration. `tests/generate-reduced-motion-fixture.py` regenerates the forced-motion fixture from production CSS.
+
+`tests/sw-browser.html` permits seeding/loading only on an isolated HTTPS test location and refuses to overwrite non-fixture records. Deployment copies must replace the learning prefix with `glp001.qa-r6.` and use an independent worker scope. The temporary public QA fixture is removed after testing. Do not expose the project root, private notes, account material or credentials.
+
+See `R6_RELEASE_AND_ROLLBACK.md` for operator instructions. Release acceptance and exact promoted commit are recorded after all applicable gates close.

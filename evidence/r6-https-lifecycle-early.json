@@ -1,0 +1,183 @@
+{
+  "checks": [
+    {
+      "name": "Initial real HTTPS service worker installed",
+      "status": "PASS",
+      "at": "2026-10-23T20:14:45.309Z",
+      "details": {
+        "secureContext": true
+      }
+    },
+    {
+      "name": "Learning retained in 0.9-japji-v1-r5",
+      "status": "PASS",
+      "at": "2026-10-23T20:14:45.663Z",
+      "details": {
+        "version": "0.9-japji-v1-r5",
+        "lines": 385,
+        "theme": "amrit",
+        "size": 36,
+        "radiance": false,
+        "bookmarks": [
+          "pauri02.line01"
+        ],
+        "note": "Synthetic fixture matched; private content not collected",
+        "active": "activated",
+        "caches": [
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-0.9/:0.9-japji-v1-rollback-r2-checked",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-r4/:0.9-r4-rollback-r3-20261023",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r4-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r5-quiet-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/qa-r6/:qa-r6-r5-initial-20261023"
+        ]
+      }
+    },
+    {
+      "name": "Versioned update is waiting for explicit action",
+      "status": "PASS",
+      "at": "2026-10-23T20:21:24.932Z",
+      "details": {
+        "loaded": "0.9-japji-v1-r5"
+      }
+    },
+    {
+      "name": "Explicit application update completed",
+      "status": "PASS",
+      "at": "2026-10-23T20:21:57.282Z",
+      "details": {
+        "from": "0.9-japji-v1-r5",
+        "to": "0.9-japji-v1-r6"
+      }
+    },
+    {
+      "name": "Learning retained in 0.9-japji-v1-r6",
+      "status": "PASS",
+      "at": "2026-10-23T20:21:57.635Z",
+      "details": {
+        "version": "0.9-japji-v1-r6",
+        "lines": 385,
+        "theme": "amrit",
+        "size": 36,
+        "radiance": false,
+        "bookmarks": [
+          "pauri02.line01"
+        ],
+        "note": "Synthetic fixture matched; private content not collected",
+        "active": "activated",
+        "caches": [
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-0.9/:0.9-japji-v1-rollback-r2-checked",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-r4/:0.9-r4-rollback-r3-20261023",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r4-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r5-quiet-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/qa-r6/:qa-r6-r6-darbar-3"
+        ]
+      }
+    },
+    {
+      "name": "Learning retained in 0.9-japji-v1-r6",
+      "status": "PASS",
+      "at": "2026-10-23T20:26:55.219Z",
+      "details": {
+        "version": "0.9-japji-v1-r6",
+        "lines": 385,
+        "theme": "amrit",
+        "size": 36,
+        "radiance": false,
+        "bookmarks": [
+          "pauri02.line01"
+        ],
+        "note": "Synthetic fixture matched; private content not collected",
+        "active": "activated",
+        "caches": [
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-0.9/:0.9-japji-v1-rollback-r2-checked",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-r4/:0.9-r4-rollback-r3-20261023",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r4-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r5-quiet-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/qa-r6/:qa-r6-r6-darbar-3"
+        ]
+      }
+    },
+    {
+      "name": "Versioned update is waiting for explicit action",
+      "status": "PASS",
+      "at": "2026-10-23T20:29:43.241Z",
+      "details": {
+        "loaded": "0.9-japji-v1-r6"
+      }
+    },
+    {
+      "name": "Explicit application update completed",
+      "status": "PASS",
+      "at": "2026-10-23T20:34:58.016Z",
+      "details": {
+        "from": "0.9-japji-v1-r6",
+        "to": "0.9-japji-v1-r5"
+      }
+    },
+    {
+      "name": "Learning retained in 0.9-japji-v1-r5",
+      "status": "PASS",
+      "at": "2026-10-23T20:34:58.367Z",
+      "details": {
+        "version": "0.9-japji-v1-r5",
+        "lines": 385,
+        "theme": "amrit",
+        "size": 36,
+        "radiance": false,
+        "bookmarks": [
+          "pauri02.line01"
+        ],
+        "note": "Synthetic fixture matched; private content not collected",
+        "active": "activated",
+        "caches": [
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-0.9/:0.9-japji-v1-rollback-r2-checked",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-r4/:0.9-r4-rollback-r3-20261023",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r4-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r5-quiet-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/qa-r6/:qa-r6-r5-rollback-20261023"
+        ]
+      }
+    },
+    {
+      "name": "Versioned update is waiting for explicit action",
+      "status": "PASS",
+      "at": "2026-10-23T20:38:03.505Z",
+      "details": {
+        "loaded": "0.9-japji-v1-r5"
+      }
+    },
+    {
+      "name": "Explicit application update completed",
+      "status": "PASS",
+      "at": "2026-10-23T20:38:16.022Z",
+      "details": {
+        "from": "0.9-japji-v1-r5",
+        "to": "0.9-japji-v1-r6"
+      }
+    },
+    {
+      "name": "Learning retained in 0.9-japji-v1-r6",
+      "status": "PASS",
+      "at": "2026-10-23T20:38:16.374Z",
+      "details": {
+        "version": "0.9-japji-v1-r6",
+        "lines": 385,
+        "theme": "amrit",
+        "size": 36,
+        "radiance": false,
+        "bookmarks": [
+          "pauri02.line01"
+        ],
+        "note": "Synthetic fixture matched; private content not collected",
+        "active": "activated",
+        "caches": [
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-0.9/:0.9-japji-v1-rollback-r2-checked",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/preview-r4/:0.9-r4-rollback-r3-20261023",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r4-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/:0.9-japji-v1-r5-quiet-final",
+          "glp-static:https://sskhangura82.github.io/gurbani-learning-library/qa-r6/:qa-r6-r6-darbar-4"
+        ]
+      }
+    }
+  ]
+}

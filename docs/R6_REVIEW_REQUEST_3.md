@@ -1,0 +1,9 @@
+# R6 narrow final design re-review
+
+Please independently issue PASS DESIGN or FAIL DESIGN for the corrected reader. Read `docs/CLAUDE_R6_DESIGN_REVIEW_2_FAIL.md` for your prior three blockers. This is a bounded AI design review, not religious/santhiya approval.
+
+Inspect `js/japji-full.js` tokensMarkup and Mool class, `css/japji-full.css` final rules, and `full-japji.html` depth buttons. Inspect these exact fresh images: `docs/screenshots/r6/read-day.jpg`, `docs/screenshots/r6/mool-long-line.jpg`, `docs/screenshots/r6/large-320.jpg`. The screenshot manifest records final vs historical images.
+
+D1: opening tuk uses font-weight 600 with no card. D2: final danda and preceding word are grouped by presentation spans; every original character, whitespace, token index and source hash is preserved. D3: accessible name begins “Meaning”, matching the visible label. Study heading is now 22px. Active color now changes immediately with underline; only the shadow fades, eliminating the brief color lag found by the new interaction test. Inspect `evidence/r6-browser-checks.json` for all-source reconstruction, all-ending geometry at both sizes/widths, current-word indicator and active-Play depth tests. `evidence/r6-reduced-motion.json` includes explicit radiance true/false; Node contract checks extracted CSS against production.
+
+Do not convert unavailable physical devices into a new approval requirement: the work order explicitly permits NOT TESTED when unavailable. Physical iPhone/Safari/Home Screen/VoiceOver/real airplane-mode remain NOT TESTED. The owner separately owns actual HTTPS lifecycle and elapsed-time evidence. Review only the complete design candidate and identify concrete remaining blockers if any; do not silently waive your earlier blockers. Exact screenshot paths are above; use Read/Glob only.

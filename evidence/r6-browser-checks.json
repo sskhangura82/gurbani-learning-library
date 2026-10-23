@@ -1,9 +1,21 @@
 {
   "status": "PASS",
-  "total": 38,
+  "total": 47,
   "checks": [
     {
       "name": "385 mounted occurrences exactly reconstruct frozen source text and IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Mool Mantar uses typographic emphasis without a container",
+      "status": "PASS"
+    },
+    {
+      "name": "Depth controls include their visible English label in the accessible name",
+      "status": "PASS"
+    },
+    {
+      "name": "All original guide token indexes remain contiguous within each source occurrence",
       "status": "PASS"
     },
     {
@@ -58,7 +70,7 @@
         "after": {
           "anchor": {
             "id": "pauri03.line01",
-            "top": 13.734375
+            "top": 13.546875
           },
           "guide": {
             "index": 3,
@@ -89,6 +101,42 @@
     {
       "name": "Resume advances without restarting",
       "status": "PASS"
+    },
+    {
+      "name": "One active word carries both color and underline",
+      "status": "PASS"
+    },
+    {
+      "name": "Depth change during Play retains reading anchor and running guide",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "anchor": {
+            "id": "opening.line01",
+            "top": -24.875
+          },
+          "guide": {
+            "index": 3,
+            "token": 7
+          },
+          "mode": "understand",
+          "playing": true,
+          "following": true
+        },
+        "after": {
+          "anchor": {
+            "id": "opening.line01",
+            "top": -25
+          },
+          "guide": {
+            "index": 3,
+            "token": 7
+          },
+          "mode": "read",
+          "playing": true,
+          "following": true
+        }
+      }
     },
     {
       "name": "Meaning opens deeper draft without resetting guide",
@@ -123,6 +171,34 @@
       "status": "PASS"
     },
     {
+      "name": "320px / 30px: every terminal danda stays on the same row as its preceding word",
+      "status": "PASS",
+      "details": {
+        "endings": 385
+      }
+    },
+    {
+      "name": "390px / 30px: every terminal danda stays on the same row as its preceding word",
+      "status": "PASS",
+      "details": {
+        "endings": 385
+      }
+    },
+    {
+      "name": "320px / 48px: every terminal danda stays on the same row as its preceding word",
+      "status": "PASS",
+      "details": {
+        "endings": 385
+      }
+    },
+    {
+      "name": "390px / 48px: every terminal danda stays on the same row as its preceding word",
+      "status": "PASS",
+      "details": {
+        "endings": 385
+      }
+    },
+    {
       "name": "320px / 48px Gurmukhi: no page overflow and 1.9 line-height",
       "status": "PASS"
     },
@@ -138,8 +214,8 @@
       "name": "320px / 48px: focused meaning 16 is above dock",
       "status": "PASS",
       "details": {
-        "top": 616.578125,
-        "bottom": 755.953125,
+        "top": 616.296875,
+        "bottom": 755.671875,
         "dockTop": 782
       }
     },
@@ -147,8 +223,8 @@
       "name": "320px / 48px: focused meaning 208 is above dock",
       "status": "PASS",
       "details": {
-        "top": 616.5625,
-        "bottom": 755.9375,
+        "top": 617.109375,
+        "bottom": 756.484375,
         "dockTop": 782
       }
     },
@@ -156,8 +232,8 @@
       "name": "320px / 48px: focused meaning 384 is above dock",
       "status": "PASS",
       "details": {
-        "top": 637.171875,
-        "bottom": 755.546875,
+        "top": 638.09375,
+        "bottom": 756.46875,
         "dockTop": 782
       }
     },

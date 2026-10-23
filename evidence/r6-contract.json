@@ -20,7 +20,11 @@
     {
       "name": "One complete guide traversal visits all 385 original lines once in order without an early stop",
       "status": "PASS"
+    },
+    {
+      "name": "Forced reduced-motion fixture exactly matches production declarations",
+      "status": "PASS"
     }
   ],
-  "total": 5
+  "total": 6
 }

@@ -8,7 +8,7 @@ main{max-width:960px;margin:auto;padding:0 24px 190px}.intro{text-align:center;p
 .reading-bar{position:sticky;top:0;z-index:20;padding:9px 0 7px;background:var(--paper);border-bottom:1px solid var(--line)}.modes{display:flex;max-width:540px;margin:auto;border:1px solid var(--line);border-radius:11px;overflow:hidden;background:var(--surface)}.modes button{flex:1;border:0;border-radius:0;font-size:13px;padding:8px 6px;min-height:52px;background:transparent}.modes button+button{border-left:1px solid var(--line)}.modes button span{display:block;font:12px/1.7 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif}.modes button[aria-pressed=true]{background:var(--accent);color:var(--paper);font-weight:650}.bar-secondary{display:flex;gap:7px;align-items:center;max-width:760px;margin:6px auto 0}.bar-secondary p{margin:0;flex:1;font-size:11px;color:var(--muted);line-height:1.5}.bar-secondary button{font-size:12px;min-height:36px;padding:5px 11px}
 .coverage-note{max-width:760px;margin:18px auto 0;padding:10px 14px;border-left:2px solid var(--line);font-size:12px;color:var(--muted)}
 #continuous-reader{max-width:760px;margin:0 auto;outline:none}.passage{padding:22px 0 8px;scroll-margin-top:var(--bar-height)}.section-caption{display:flex;align-items:center;gap:14px;margin:8px 0 15px;color:var(--muted)}.section-caption h2{font-size:11px;font-weight:550;margin:0;letter-spacing:1px;white-space:nowrap}.section-caption:after{content:'';height:1px;background:var(--line);flex:1;opacity:.5}.scripture-line{padding:7px 0 12px;scroll-margin-top:var(--bar-height)}.tuk{font:400 var(--gurmukhi-size)/2.1 'Gurmukhi MN','Noto Serif Gurmukhi','Raavi',serif;word-break:normal;overflow-wrap:normal;margin:0;text-align:center;padding:9px 7px;border-radius:8px;position:relative;color:var(--ink)}
-.g-word{transition:color .2s ease,text-shadow .2s ease}.tuk[data-current=true]{background:var(--wash)}.tuk[data-current=true]:before{position:absolute;left:0;top:20%;bottom:20%;content:'';width:2px;background:var(--accent);border-radius:2px}.g-word[data-active=true]{color:var(--accent);text-shadow:.4px 0 currentColor,-.4px 0 currentColor}
+.g-word{transition:text-shadow .2s ease}.tuk[data-current=true]{background:var(--wash)}.tuk[data-current=true]:before{position:absolute;left:0;top:20%;bottom:20%;content:'';width:2px;background:var(--accent);border-radius:2px}.g-word[data-active=true]{color:var(--accent);text-shadow:.4px 0 currentColor,-.4px 0 currentColor}
 :root[data-radiance=true] .tuk{text-shadow:0 0 8px var(--glow)}:root[data-radiance=true] .g-word[data-active=true]{text-shadow:.4px 0 currentColor,-.4px 0 currentColor,0 0 7px var(--glow),0 0 17px var(--glow)}
 :root[data-radiance=false] .g-word[data-active=true]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
 .simple-meaning{display:none;width:100%;text-align:center;border:0;background:transparent;border-radius:10px;padding:5px 12px 14px;max-width:650px;margin:auto;color:var(--muted);line-height:1.8}.simple-meaning:hover{background:var(--wash)}.simple-meaning span{display:block}.simple-meaning .english{font-size:14px}.simple-meaning .punjabi{font:16px/1.9 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif;margin-top:5px}.simple-meaning .expand-hint{font-size:10px;color:var(--accent);margin-top:7px}.pending-meaning,.pending-study{display:none;font-size:11px;color:var(--muted);margin:7px 9px 14px;line-height:1.8}.pending-meaning a{font-size:11px}
@@ -94,3 +94,12 @@ body.roomy-spacing .passage{padding:0;margin-top:40px}body.roomy-spacing .script
 .setting-row{min-height:44px}.setting-row input[type=checkbox]{margin:10px;flex-shrink:0}.setting-row select{min-height:44px;min-width:44px}
 @media(min-width:720px){.tuk{padding-left:18px;padding-right:18px}}
 @media print{.reading-dock{display:none!important}.section-caption{position:static;width:auto;height:auto;clip:auto}.tuk[data-current=true]:before{display:none}}
+
+/* Review corrections: typographic opening, intact endings, subordinate study titles. */
+.tuk{overflow-wrap:break-word}
+.tuk-ending{white-space:nowrap}
+.tuk.mool-mantar{font-weight:600}
+.unit-lesson h3{font-size:22px}
+
+/* Keep the longest word/pauri-ending pair intact at 48px on narrow screens. */
+@media(max-width:380px){main{padding-left:10px;padding-right:10px}.tuk{padding-left:0;padding-right:0}}
