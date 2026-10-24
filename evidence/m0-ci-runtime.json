@@ -1,0 +1,13 @@
+{
+  "runtimeCommit": "b599b11789d0e07120a913e9f071e8ccaeb744eb",
+  "worker": "0.9-japji-v1-m0-candidate-2",
+  "workflow": "GLP Reader Quality Gate",
+  "runId": 40111972371,
+  "runNumber": 19,
+  "status": "completed",
+  "conclusion": "success",
+  "portableChecks": 75,
+  "browserChecks": 88,
+  "source": "GitHub connected workflow API; browser report separately recorded",
+  "releaseAcceptance": "BLOCKED; actual lifecycle, persistence and physical iPhone gates not run"
+}

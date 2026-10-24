@@ -16,7 +16,7 @@
 <p id="mode-description" class="sr-only">Gurmukhi only. One continuous reading.</p>
 <div class="coverage-note" id="coverage-note" hidden>Original English/Punjabi meanings throughout. All teaching is a draft awaiting qualified human review; scripture, meaning, interpretation and application remain separate.</div>
 <section id="continuous-reader" aria-label="Complete Japji Sahib, continuous reading" tabindex="-1"></section>
-<footer class="end-note"><p>End of Japji Sahib</p><button type="button" id="back-start">Return to the beginning</button><button type="button" id="coverage-open">Sources &amp; teaching coverage</button><p class="version">GLP-001 · 0.9-japji-v1 · revision 7</p></footer>
+<footer class="end-note"><p>End of Japji Sahib</p><button type="button" id="back-start">Return to the beginning</button><button type="button" id="coverage-open">Sources &amp; teaching coverage</button><p class="version">GLP-001 · 0.9-japji-v1 · M0 candidate 2</p></footer>
 </main>
 <aside class="reading-dock" aria-label="Reading controls">
  <button type="button" id="play" class="primary" aria-label="Play silent visual guide" aria-pressed="false"><span aria-hidden="true">▶</span></button>
@@ -26,17 +26,17 @@
   <button type="button" data-depth="understand" aria-label="Meaning · Understand in English and Punjabi" aria-pressed="false"><span aria-hidden="true">●</span>Meaning</button>
   <button type="button" data-depth="study" aria-label="Study · deeper learning" aria-pressed="false"><span aria-hidden="true">●</span>Study</button>
  </div>
- <button type="button" id="pace-shortcut" aria-label="Adjust silent visual scrolling pace" aria-haspopup="true" aria-controls="pace-tray" aria-expanded="false"><span id="pace-number">70</span><small>pace</small></button>
  <button type="button" id="tools-open" aria-label="Expand reading controls" aria-haspopup="dialog" aria-controls="reader-dialog" aria-expanded="false"><span aria-hidden="true">⌃</span></button>
  <p id="guide-caption" class="sr-only">Silent visual guide · not synchronized to audio.</p>
 </aside>
-<section id="pace-tray" class="pace-tray" role="group" aria-label="Adjust visual reading speed" hidden>
- <div class="pace-tray-heading"><strong>Visual scrolling pace</strong><button id="pace-close" type="button" aria-label="Close pace controls">×</button></div>
+<dialog id="pace-tray" class="pace-tray" aria-labelledby="pace-title">
+ <button id="pace-menu" class="pace-back" type="button">← Reading menu</button>
+ <div class="pace-tray-heading"><strong id="pace-title">Visual scrolling pace</strong><button id="pace-close" type="button" aria-label="Close pace controls">×</button></div>
  <div class="pace-tray-controls"><button type="button" id="pace-less" aria-label="Slow down by 5">−</button><input id="pace-slider" type="range" min="50" max="160" step="5" value="70" aria-label="Illustrative visual pace in tokens per minute"><button type="button" id="pace-more" aria-label="Speed up by 5">+</button><output id="pace-value" for="pace-slider">70</output></div>
  <p>Silent visual guide · not synchronized to your recording</p>
-</section>
+</dialog>
 <div class="sr-only" id="status" role="status" aria-live="polite"></div>
-<dialog id="reader-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><div><p id="dialog-kicker" class="eyebrow">EXPLORE</p><h2 id="dialog-title">More understanding</h2></div><button type="button" id="dialog-close" aria-label="Close and return to the same reading position">×</button></div><div id="dialog-body"></div></dialog>
+<dialog id="reader-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><div><p id="dialog-kicker" class="eyebrow">EXPLORE</p><h2 id="dialog-title" tabindex="-1">More understanding</h2></div><button type="button" id="dialog-close" aria-label="Close and return to the same reading position">×</button></div><div id="dialog-body"></div></dialog>
 <noscript><p>JavaScript is needed for the continuous reader and its teaching modes.</p></noscript>
 <script src="js/japji-full-data.js"></script><script src="js/content.js"></script><script src="js/gurdwaras.js"></script><script src="js/continuous-core.js"></script><script src="js/learning.js"></script><script src="js/shared-learning.js"></script><script src="js/japji-lessons.js"></script><script src="js/line-meanings.js"></script><script src="js/japji-full.js"></script><script src="js/pwa.js"></script>
 </body>
