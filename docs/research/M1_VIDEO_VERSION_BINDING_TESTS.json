@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checkCount": 13,
+  "checks": [
+    "Valid synthetic-style metadata shape with attested creator-bound version is structurally accepted",
+    "Player matching video ID and observed duration unlocks checked-map metadata gate",
+    "Eight-second additional intro fails closed despite identical YouTube ID",
+    "Missing runtime duration fails closed until YouTube API returns it",
+    "Different video ID fails even with same duration",
+    "Reviewed map with YouTube ID but no checked upload descriptor fails",
+    "Original-audio offset disagreement fails the map",
+    "Shifted creator upload anchor fails against original segment when duration was changed",
+    "Anchor without a checked original-text line hash cannot authorize sync",
+    "Anchors must be human checked, diverse, ordered and spaced through reviewed coverage",
+    "Intro and silence remain unhighlighted even with a valid video descriptor",
+    "A title, hash and runtime clock do not let automated code detect a same-duration content edit",
+    "Malformed reviewed map segment never crashes anchor validation"
+  ],
+  "recordingConsumed": false,
+  "claim": "Metadata-only synthetic fixtures; NO verification of YouTube content audio itself."
+}

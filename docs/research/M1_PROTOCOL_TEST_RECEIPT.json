@@ -1,0 +1,28 @@
+{
+  "project": "GLP-001",
+  "suite": "M1 metadata preregistration",
+  "status": "PASS",
+  "count": 18,
+  "checks": [
+    "Frozen 385 occurrence registry uses original per-line hashes",
+    "Synthetic timeline is well-formed but cannot claim synchronization",
+    "Unmapped introduction and pauses produce no bogus highlight",
+    "Public sync rejects synthetic fixture even if mechanically valid",
+    "Invalid or missing canonical Gurmukhi source is rejected",
+    "Timeline overlap or time reversal cannot pass",
+    "Undeclared repeats cannot be mistaken for another source occurrence",
+    "Missing independent human review cannot claim line sync",
+    "Real recording without consent record cannot be admitted",
+    "Only checked line map with recording rights and review seal can sync",
+    "Word maps require reviewed indices and source bounds",
+    "Word index cannot be laundered into line-reviewed mapping",
+    "Invalid video IDs cannot be used in metadata",
+    "Unknown occurrence, missing mapped kind and invalid confidence rejected",
+    "Boundary measurement calculates declared sample error, not invented accuracy",
+    "No media data, secret or YouTube downloads in alignment core",
+    "Consecutive mapped words of one tuk do not count as a repeated performance",
+    "Malformed segments cannot crash metadata validation"
+  ],
+  "realMediaProcessed": false,
+  "qualifiedReviewPerformed": false
+}
