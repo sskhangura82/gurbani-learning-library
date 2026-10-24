@@ -31,7 +31,7 @@ The R7 home, Gurdwara and Simran navigation, editorial drafts, original source a
 | Actual browser R7 → M0 → R7 → M0 | **NOT RUN — BLOCKED** | Available controlled preview is insecure HTTP; no service worker or Web Locks. Four versioned loopback bundles built successfully; not executed in a controlled loopback browser |
 | Browser saved-learning write / reload / upgrade | **NOT RUN — BLOCKED** | Insecure preview safely refuses writes without Web Locks. Portable export/import, stale-tab and concurrency contracts pass; no claim of real-browser persistence |
 | Physical iPhone Safari / Home Screen / VoiceOver / Dynamic Type / airplane mode | **NOT RUN — BLOCKED** | No physical iPhone available. Exact PR #10 manual matrix included with provenance |
-| Independent Claude design review | CONDITIONAL PASS (candidate 1); candidate 2 follow-up pending | Original review and integration decisions are preserved; device/lifecycle gates remain blocked |
+| Independent Claude design review | CONDITIONAL PASS (candidate 2 follow-up) | Both independent reviews and integration decisions are preserved; D1/D2/D4 resolved; device/lifecycle gates remain blocked |
 | Independent Pauri 13 line 1 comparison | **OPEN** | No source decision or text edit in this UI work |
 | Qualified religious / translation review | NOT COMPLETE | All bilingual meanings and Study drafts retain their honest review status |
 
@@ -62,3 +62,7 @@ Candidate 2 resolves Claude findings D1, D2 and D4; see `M0_REVIEW_DECISIONS.md`
 `docs/acceptance/M0_PHYSICAL_IPHONE_ACCEPTANCE.md` is copied byte-for-byte from PR #10 head `860b7820c164154620a2a729be0729f3461feb00`. Its family URL references identify R7, not an M0 test address. Before running M0 device acceptance, record a controlled candidate URL and verify the M0 runtime/worker; testing the current family R7 release cannot pass M0. R8/video rows in that shared checklist are outside M0 scope. All M0 physical rows remain NOT RUN.
 
 Additional screenshots: `m0-grouped-menu-320.jpg` provides a same-width comparison with R7, and `m0-pace-back-390.jpg` shows the explicit return action. All candidate screenshots are desktop approximations; see the original review for the first-pass findings.
+
+## Tested runtime and CI
+
+Runtime candidate 2 commit: `b599b11789d0e07120a913e9f071e8ccaeb744eb`. GitHub quality-gate run `40111972371` completed successfully (run 19). The handoff PR is #11; later review/receipt commits must preserve the runtime hashes in `M0_APP_MANIFEST.json`. The final PR head quality gate is checked separately at handoff.

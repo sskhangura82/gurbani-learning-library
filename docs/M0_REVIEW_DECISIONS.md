@@ -16,3 +16,7 @@ Claude's original read-only review of candidate 1 returned **CONDITIONAL PASS fo
 | D10: sequential traversal of 385 meaning buttons | Add to physical VoiceOver/switch/keyboard acceptance. Test navigation between pauris and exit paths; do not infer accessible traversal from desktop DOM counts. |
 
 Candidate 2 regression evidence adds the version, all-line disclosure and Pace Back checks to the full width/size/theme/depth matrix. The actual lifecycle, browser persistence, physical iPhone and independent Pauri 13 line 1 gates remain open. A design verdict never authorizes publication.
+
+## Independent follow-up result
+
+`M0_CLAUDE_DESIGN_REVIEW_2.md` records CONDITIONAL PASS for candidate 2 design and BLOCKED for release. Claude independently confirmed D1, D2 and D4 resolved; D3 remains a disclosed naming tradeoff, and D5/D6/D10 remain device follow-ups. Its worker-hash concern was checked separately: `m0-worker-hashes.json` verifies all 32 pinned responses against actual candidate bytes, and `tests/service-worker.mjs` passed installation using those real bytes in Node simulation. This does not establish actual browser lifecycle behavior.
