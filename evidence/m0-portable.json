@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-24T16:07:55.765862+00:00",
+  "environment": "Node portable tests; Web Locks and service worker are simulations",
+  "total": 75,
+  "status": "PASS",
+  "suites": [
+    {
+      "suite": "verify",
+      "exitCode": 0,
+      "output": "{\"total\":27,\"status\":\"PASS\"}"
+    },
+    {
+      "suite": "service-worker",
+      "exitCode": 0,
+      "output": "{\"total\":8,\"status\":\"PASS\"}"
+    },
+    {
+      "suite": "shared-learning",
+      "exitCode": 0,
+      "output": "{\"total\":12,\"status\":\"PASS\"}"
+    },
+    {
+      "suite": "r6-contract",
+      "exitCode": 0,
+      "output": "{\"total\":7,\"status\":\"PASS\"}"
+    },
+    {
+      "suite": "r7-contract",
+      "exitCode": 0,
+      "output": "{\"total\":12,\"checks\":[\"Entry points are distinct home and unchanged continuous Japji\",\"Home has three direct accessible destinations without login\",\"PWA Home Screen starts at root with unchanged app id\",\"Guide pace normalizer accepts every five step up to 160\",\"Old and new pace preferences remain compatible\",\"Reader exposes numeric pace through Reading essentials and no media\",\"Pace logic enters existing synchronized preference-merging mechanism\",\"The frozen scripture and editorial layers remain separate\",\"Three gurdwara sources are official HTTPS and not media embeds\",\"Simran preview is silent and does not persist meditation metrics\",\"External place links use explicit new-tab protections\",\"New routes and scripts are included in offline release\"],\"status\":\"PASS\"}"
+    },
+    {
+      "suite": "m0-contract",
+      "exitCode": 0,
+      "output": "{\"total\":9,\"status\":\"PASS\"}"
+    }
+  ]
+}

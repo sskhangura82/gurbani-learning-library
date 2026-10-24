@@ -11,7 +11,7 @@ const safeUrl=u=>{try{const v=new URL(u);return v.protocol==='https:'?v.href:'#'
 const a=(u,label)=>'<a href="'+h(safeUrl(u))+'" target="_blank" rel="noopener noreferrer">'+h(label)+' ↗</a>';
 let raw=null,storageOK=true,storageDamaged=false;try{const saved=localStorage.getItem(KEY)||localStorage.getItem(LEGACY);raw=saved?JSON.parse(saved):null;if(saved&&(!raw||typeof raw!=='object'||Array.isArray(raw)||(raw.version!=null&&raw.version!==2)||(raw.schemaVersion!=null&&![1,2].includes(raw.schemaVersion))))throw Error('Newer schema');}catch(_){storageOK=false;storageDamaged=true;}
 let state=C.normalise(raw,model,units),playing=false,following=true,started=false,finished=false,raf=0,deadline=0,persistTimer=0;
-let quietMode=false,roomySpacing=false;
+let quietMode=false,roomySpacing=false,paceReturn=null;
 let afterModalClose=null,modalReturn=null,dialogFocus=null,paintedIndex=-1,paintedTokens=[],scrollTimer=0,importCandidate=null,programmaticUntil=0;
 const shared=window.GLP_SHARED_LEARNING.create({storage:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},locks:navigator.locks,key:KEY,normalise:s=>C.normalise(s,model,units),seed:state});
 let pendingNotes={},pendingBookmarks={},pendingPreferences={},saveChain=Promise.resolve(),notePermit=null,noteGeneration=0;
@@ -71,21 +71,34 @@ function setVisualPace(value){
  const pace=Math.max(50,Math.min(160,Math.round(value/5)*5)),previous=state.pace;
  state.pace=pace;if(deadline)deadline=performance.now()+Math.max(0,deadline-performance.now())*previous/pace;
  pendingPreferences.pace=pace;
- $('pace-number').textContent=String(pace);$('pace-value').textContent=String(pace);$('pace-slider').value=String(pace);
+ if($('pace-number'))$('pace-number').textContent=String(pace);$('pace-value').textContent=String(pace);$('pace-slider').value=String(pace);
  const output=$('pace-settings-number');if(output)output.textContent=String(pace);
- $('pace-shortcut').setAttribute('aria-label','Visual pace '+pace+' tokens per minute. Adjust speed');
+ if($('pace-shortcut'))$('pace-shortcut').setAttribute('aria-label','Pace '+pace+' illustrative tokens per minute. Adjust speed');
  persist();status('Visual scrolling pace '+pace+' illustrative tokens per minute.');
 }
 function openPaceTray(){
- if($('reader-dialog').open)closeDialog(()=>openPaceTray());
- else{$('pace-tray').hidden=false;$('pace-shortcut').setAttribute('aria-expanded','true');$('pace-slider').value=String(state.pace);$('pace-slider').focus({preventScroll:true});}
+ if($('reader-dialog').open)closeDialog(openPaceTray);
+ else{paceReturn=anchor();detach();$('pace-slider').value=String(state.pace);$('pace-value').textContent=String(state.pace);$('pace-tray').showModal();$('pace-slider').focus({preventScroll:true});}
 }
-function closePaceTray(){
- $('pace-tray').hidden=true;$('pace-shortcut').setAttribute('aria-expanded','false');$('pace-shortcut').focus({preventScroll:true});
-}
+function closePaceTray(){if($('pace-tray').open)$('pace-tray').close();}
+$('pace-tray').addEventListener('close',()=>{if(paceReturn){restoreAnchor(paceReturn);state.read=paceReturn;paceReturn=null;}$('tools-open').focus({preventScroll:true});rememberVisible();});
 function readingTools(){
- const i=model.byId.get(state.read.id)??0,saved=state.bookmarks.includes(lines[i].id);
- openDialog('Reading controls','<p class="plain-note">'+h($('mode-description').textContent)+'</p><p class="plain-note">'+h($('dock-position').getAttribute('title'))+' · '+h($('guide-caption').textContent)+'</p><div class="menu-list"><button data-action="reader-home">Library home</button><button data-action="reader-pace">Visual reading pace · <strong>'+state.pace+'</strong></button><button data-action="reader-settings">Text, radiance &amp; visual pace</button><button data-action="reader-jump">Jump to a passage</button><button data-action="reader-save">'+(saved?'Remove saved reading line':'Save this reading line')+'</button><button data-action="note" data-index="'+i+'">Keep a reflection here</button><button data-action="reader-start">Start scrolling from here</button>'+(!following&&started?'<button data-action="reader-follow">Return to glow</button>':'')+'<button data-action="reader-quiet">'+(quietMode?'Show page heading':'Enter immersive reading')+'</button><button data-action="reader-spacing">'+(roomySpacing?'Use closer spacing':'Use spacious spacing')+'</button><button data-action="reader-explore">Explore · learning, raag &amp; gurdwaras</button></div><p class="plain-note">The dock always stays visible. Expand it by touch or keyboard for every option. Escape closes a panel. No audio is played or synchronized.</p>','READING OPTIONS');
+ const study=visibleStudyIndex(),i=study??(model.byId.get(anchor().id)??0),saved=state.bookmarks.includes(lines[i].id);
+ openDialog('Reading','<p class="reader-location">'+h(lines[i].unitTitle)+(study===null?' · line '+(lines[i].lineIndex+1):' · Study')+'</p>'+
+ '<div class="reader-menu-grid" role="group" aria-label="Reading essentials">'+
+ '<button type="button" data-action="reader-jump"><strong>Jump</strong><small>Choose a pauri</small></button>'+
+ '<button type="button" data-action="learning"><strong>Saved learning</strong><small>Notes &amp; bookmarks</small></button>'+
+ '<button type="button" data-action="reader-settings"><strong>Appearance</strong><small>Text &amp; radiance</small></button>'+
+ '<button type="button" id="pace-shortcut" data-action="reader-pace" aria-haspopup="dialog" aria-controls="pace-tray"><strong>Pace <span id="pace-number">'+state.pace+'</span></strong><small>Silent visual guide</small></button></div>'+
+ '<details class="reader-more"><summary>This passage &amp; reading options</summary><div class="reader-more-actions">'+
+ '<button data-action="reader-save" data-index="'+i+'">'+(saved?'Remove saved line':'Save this line')+'</button>'+
+ '<button data-action="note" data-index="'+i+'">Write a reflection</button>'+
+ '<button data-action="reader-start" data-index="'+i+'">Start guide here</button>'+
+ (!following&&started?'<button data-action="reader-follow">Return to glow</button>':'')+
+ '<button data-action="reader-quiet">'+(quietMode?'Show page heading':'Immersive reading')+'</button>'+
+ '<button data-action="reader-spacing">'+(roomySpacing?'Closer spacing':'More spacing')+'</button>'+
+ '</div></details><div class="reader-menu-footer"><button data-action="reader-explore">Explore</button><button data-action="reader-home">Library home</button></div>'+
+ '<p class="plain-note reader-clock-note">Silent visual guide · not synchronized to recordings.</p>','READING MENU');
 }
 function readingTop(){return 14;}
 function updateBarHeight(){document.documentElement.style.setProperty('--bar-height',readingTop()+'px');}
@@ -99,16 +112,22 @@ function restoreAnchor(point){const idx=model.byId.get(point.id);if(idx===undefi
 function rememberVisible(){state.read=anchor();updateDock();persist();}
 function applyAppearance(){document.documentElement.dataset.theme=state.theme;const themeMeta=document.querySelector('meta[name="theme-color"]');if(themeMeta)themeMeta.content=state.theme==='amrit'?'#111929':'#faf6ec';document.documentElement.dataset.radiance=String(state.radiance);document.documentElement.style.setProperty('--gurmukhi-size',state.size+'px');}
 function applyMode(){document.body.dataset.depth=state.mode;document.querySelectorAll('.modes [data-depth]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.depth===state.mode)));$('mode-description').textContent={read:'Gurmukhi only. One continuous reading.',understand:'Short meanings below the words. Tap for more.',study:'Full learning: words, meaning, context and reflection.'}[state.mode];$('coverage-note').hidden=state.mode==='read';updateBarHeight();}
+function visibleStudyIndex(){
+ if(state.mode!=='study')return null;
+ const block=[...document.querySelectorAll('#continuous-reader .unit-lesson, #continuous-reader .study-intro, #continuous-reader .study-reflection')].find(el=>{const box=el.getBoundingClientRect();return box.top<=readingTop()+1&&box.bottom>readingTop();});
+ return block?model.starts[Number(block.closest('.passage').dataset.unit)]:null;
+}
 function updateDock(){
- const readIndex=model.byId.get(state.read.id)??state.guide.index;const current=(playing&&following)?state.guide.index:readIndex;
- const location=lines[current].unitTitle+' · line '+(lines[current].lineIndex+1);
- $('dock-position').innerHTML='<span>'+h(lines[current].unitTitle)+'</span><small>Line '+(lines[current].lineIndex+1)+'</small>';
+ const readIndex=model.byId.get(state.read.id)??state.guide.index,study=visibleStudyIndex();const current=(playing&&following)?state.guide.index:(study??readIndex);
+ const detail=study===null?'Line '+(lines[current].lineIndex+1):'Study';
+ const location=lines[current].unitTitle+' · '+detail;
+ $('dock-position').innerHTML='<span>'+h(lines[current].unitTitle)+'</span><small>'+detail+'</small>';
  $('dock-position').title=location;$('dock-position').setAttribute('aria-label',location+'. Jump to a passage');
  $('play').setAttribute('aria-pressed',String(playing));
  $('play').innerHTML='<span aria-hidden="true">'+(playing?'❚❚':finished?'↺':'▶')+'</span>';
  $('play').setAttribute('aria-label',(playing?'Pause':finished?'Replay':started?'Resume':'Play')+' silent visual guide');
  $('play').title=$('play').getAttribute('aria-label');
- $('pace-number').textContent=String(state.pace);$('pace-shortcut').setAttribute('aria-label','Visual pace '+state.pace+' tokens per minute. Adjust speed');
+ if($('pace-number'))$('pace-number').textContent=String(state.pace);
  $('guide-caption').textContent=finished?'Reading guide complete.':playing?(following?'Auto-scroll · visual pace, not audio-synced.':'Guide continues · scrolling held while you explore.'):'Silent visual guide · listen in your preferred app.';
 }
 function paint(){
@@ -119,7 +138,7 @@ function paint(){
  paintedTokens.forEach(n=>{if(n)n.dataset.active='true';});updateDock();
 }
 function focusGuide(force=false){
- if(!following||$('reader-dialog').open||(!playing&&!force))return;
+ if(!following||$('reader-dialog').open||$('pace-tray').open||(!playing&&!force))return;
  const rect=rows[state.guide.index].getBoundingClientRect(),top=readingTop();
  const bottom=$('play').closest('.reading-dock').getBoundingClientRect().top-16;
  const item=state.emphasis==='word'?wordNodes[state.guide.index][state.guide.token]:tuks[state.guide.index];const ir=item.getBoundingClientRect();
@@ -142,7 +161,7 @@ function changeMode(mode,preferredAnchor){if(!['read','understand','study'].incl
 function openDialog(title,body,kicker='EXPLORE'){
  releaseNote();const d=$('reader-dialog');if(!d.open){modalReturn=anchor();dialogFocus=document.activeElement;detach();}
  $('dialog-title').textContent=title;$('dialog-kicker').textContent=kicker;$('dialog-body').innerHTML=body;
- if(!d.open)d.showModal();else d.scrollTop=0;$('tools-open').setAttribute('aria-expanded','true');
+ d.dataset.view=title==='Reading'?'reading-menu':'detail';if(!d.open)d.showModal();else{d.scrollTop=0;$('dialog-title').focus({preventScroll:true});}$('tools-open').setAttribute('aria-expanded','true');
 }
 function closeDialog(after){afterModalClose=typeof after==='function'?after:null;if($('reader-dialog').open)$('reader-dialog').close();else{const done=afterModalClose;afterModalClose=null;if(done)done();}}
 $('reader-dialog').addEventListener('close',()=>{$('tools-open').setAttribute('aria-expanded','false');releaseNote();if(modalReturn){restoreAnchor(modalReturn);state.read=modalReturn;}if(dialogFocus?.isConnected)dialogFocus.focus({preventScroll:true});modalReturn=null;dialogFocus=null;rememberVisible();const done=afterModalClose;afterModalClose=null;if(done)done();});
@@ -150,7 +169,7 @@ $('dialog-close').addEventListener('click',closeDialog);
 function showMeaning(index){const line=lines[index],e=explanations.get(line.id);if(!e)return;
  openDialog(line.unitTitle+' · line '+(line.lineIndex+1),'<p class="excerpt" lang="pa">'+h(line.text)+'</p><div class="simple-dialog"><p>'+h(e.english)+'</p><p class="punjabi-text" lang="pa">'+h(e.punjabi)+'</p></div>'+(e.study?deepMarkup(e):'')+'<p class="plain-note">The following Study draft covers the whole enclosing passage.</p>'+unitLesson(units[line.unitIndex])+'<div class="line-actions"><button data-action="study-at" data-index="'+index+'" class="primary">Open full learning here</button><button data-action="pause" type="button">Pause visual guide</button><button data-action="note" data-index="'+index+'">Reflection</button></div><p class="plain-note">The guide may continue while this explanation is open, but it will not move your reading. Close this panel to return to the same place.</p>','MEANING → DEEPER UNDERSTANDING');
 }
-function settings(){openDialog('Reading settings','<label class="setting-row">Keep page controls visible<input id="set-persistent" type="checkbox" '+(state.persistentControls?'checked':'')+'></label><p class="plain-note">Keeps the page heading and Explore button available during guided reading. The bottom dock is always visible in either setting.</p><label class="setting-row">Appearance<select id="set-theme"><option value="day">Day</option><option value="amrit">Amrit Vela</option></select></label><label class="setting-row">Text size<input id="set-size" type="range" min="24" max="48" step="2" value="'+state.size+'"></label><label class="setting-row">Letter radiance<input id="set-radiance" type="checkbox" '+(state.radiance?'checked':'')+'></label><label class="setting-row">Visual pace <output id="pace-settings-number">'+state.pace+'</output><input id="set-pace" type="range" min="50" max="160" step="5" value="'+state.pace+'"></label><label class="setting-row">Emphasis<select id="set-emphasis"><option value="word">Current word</option><option value="line">Current line</option></select></label><p class="plain-note">Play scroll advances the text at your chosen visual pace. It does not play sound or listen to another app, so adjust it yourself alongside your recording. The visual guide pauses when this page is hidden.</p><p class="plain-note">Reduced motion on your device removes animated scrolling and glow effects.</p>','READING · NOT AUDIO');$('set-theme').value=state.theme;$('set-pace').value=state.pace;$('set-emphasis').value=state.emphasis;}
+function settings(){openDialog('Reading settings','<button type="button" data-action="reader-menu">← Reading menu</button><label class="setting-row">Keep page controls visible<input id="set-persistent" type="checkbox" '+(state.persistentControls?'checked':'')+'></label><p class="plain-note">Keeps the page heading and Explore button available during guided reading. The bottom dock is always visible in either setting.</p><label class="setting-row">Appearance<select id="set-theme"><option value="day">Day</option><option value="amrit">Amrit Vela</option></select></label><label class="setting-row">Scripture size <output id="size-number">'+state.size+'px</output><input id="set-size" type="range" min="24" max="60" step="2" value="'+state.size+'"></label><p class="plain-note">30px is the default; 60px is 200%. Large endings may wrap to keep every character visible.</p><label class="setting-row">Letter radiance<input id="set-radiance" type="checkbox" '+(state.radiance?'checked':'')+'></label><label class="setting-row">Visual pace <output id="pace-settings-number">'+state.pace+'</output><input id="set-pace" type="range" min="50" max="160" step="5" value="'+state.pace+'"></label><label class="setting-row">Emphasis<select id="set-emphasis"><option value="word">Current word</option><option value="line">Current line</option></select></label><p class="plain-note">Play scroll advances the text at your chosen visual pace. It does not play sound or listen to another app, so adjust it yourself alongside your recording. The visual guide pauses when this page is hidden.</p><p class="plain-note">Reduced motion on your device removes animated scrolling and glow effects.</p>','READING · NOT AUDIO');$('set-theme').value=state.theme;$('set-pace').value=state.pace;$('set-emphasis').value=state.emphasis;}
 function jumps(){openDialog('Jump within Japji Sahib','<p class="plain-note">These are bookmarks within one continuous page. Jumping never removes the surrounding Gurbani or resets a running guide.</p><div class="menu-list">'+units.map((u,i)=>'<button data-action="jump" data-index="'+model.starts[i]+'">'+h(u.title)+'<small>Ang '+h(u.angs.join('–'))+'</small></button>').join('')+'</div>','CONTENTS');}
 function explore(){openDialog('Explore without losing your place','<div class="menu-list"><button data-action="related">Related teachings<small>Three contextual connections from the Pauri 2 lesson</small></button><button data-action="raag">Raag &amp; meaning<small>Musical context, separate from your reading depth</small></button><button data-action="gurdwaras">Gurdwaras<small>Quiet entrances to external broadcasts</small></button><button data-action="learning">Saved places &amp; reflections<small>Stored in this browser, exportable</small></button><button data-action="install">iPhone &amp; offline help<small>Install, transfer learning and check updates</small></button><button data-action="coverage">Sources &amp; coverage<small>What is written, and what still needs review</small></button></div>');}
 function related(){openDialog('Related teachings','<p class="plain-note">These three links extend the Pauri 2 lesson. They are selected, source-checked drafts—not an exhaustive topic search or reviewed scholarship.</p>'+old.related.map((r,i)=>'<section class="connection-card"><p class="draft-label">'+h(r.author)+' · Ang '+r.ang+'</p><h3>'+h(r.title)+'</h3><p class="context-gurmukhi" lang="pa">'+h(r.excerpt)+'</p><p>'+h(r.english)+'</p><p class="punjabi-text" lang="pa">'+h(r.punjabi)+'</p><p><strong>Why connected:</strong> '+h(r.why)+'</p><button data-action="context" data-index="'+i+'">Read the complete context</button></section>').join(''),'CONNECTED TEACHING');}
@@ -171,22 +190,22 @@ async function note(index){
 }
 function learning(){const saved=state.bookmarks;openDialog('Saved learning','<p class="plain-note">Saved in this browser. One tab at a time can edit reflections; other tabs may keep reading. Close old reader tabs after updating. Separate devices do not synchronize automatically. Other people using this browser profile can see its notes. Export before changing address or Home Screen context.</p><div class="menu-list">'+saved.map(id=>{const i=model.byId.get(id),l=lines[i];return '<button data-action="jump" data-index="'+i+'">'+h(l.unitTitle)+' · line '+(l.lineIndex+1)+'<small lang="pa">'+h(l.text)+'</small></button>';}).join('')+(saved.length?'':'<p>No saved lines yet.</p>')+'</div><div class="line-actions"><button data-action="note" data-index="'+(model.byId.get(state.read.id)||0)+'">Write a reflection here</button><button data-action="export">Export learning</button></div><label class="file-import">Import or merge learning from any GLP reader<input type="file" id="import-file" accept="application/json,.json"></label><div id="import-preview"></div><p class="plain-note">Your previous Pauri 2 notebook has not been changed. It is still available in the original detailed lesson.</p><a href="pauri-2-lesson.html">Original Pauri 2 notebook ↗</a>','BOOKMARKS · NOTES · BACKUP');}
 async function exportLearning(){await persist(true);let exported;try{exported=L.exportAll(localStorage);}catch{exported=JSON.stringify({format:'glp-family-learning',version:1,projectId:'GLP-001',records:{[KEY]:JSON.stringify(state)}});}if(!storageOK&&!storageDamaged){const bundle=JSON.parse(exported);bundle.records[KEY]=JSON.stringify(state);exported=JSON.stringify(bundle,null,2);}const blob=new Blob([exported],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='Gurbani-learning.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),3000);status('Learning export prepared.');}
-async function action(kind,index){switch(kind){case'reader-home':closeDialog(()=>{persist(true).then(()=>{location.href='index.html';});});break;case'reader-pace':closeDialog(openPaceTray);break;case'reader-settings':settings();break;case'reader-jump':jumps();break;case'reader-save':closeDialog(savePlace);break;case'reader-start':closeDialog(()=>startHere(model.byId.get(anchor().id)??0));break;case'reader-follow':closeDialog(returnToGuide);break;case'reader-quiet':closeDialog(toggleQuiet);break;case'reader-spacing':closeDialog(toggleSpacing);break;case'reader-explore':explore();break;case'meaning':showMeaning(index);break;case'study-at':closeDialog(()=>{changeMode('study',{id:lines[index].id,offset:0});goTo(index);});break;case'pause':pause('Visual guide paused. External audio is unchanged.');break;case'note':note(index);break;case'jump':closeDialog(()=>goTo(index));break;case'related':related();break;case'context':context(index);break;case'raag':raag();break;case'gurdwaras':gurdwaras();break;case'place':place(index);break;case'coverage':coverage();break;case'learning':learning();break;case'export':exportLearning();break;case'install':installHelp();break;case'cancel-import':importCandidate=null;$('import-preview').textContent='Import cancelled. Nothing changed.';break;case'apply-import':if(importCandidate){pause();try{await persist(true);await shared.importWith(()=>L.importAll(localStorage,importCandidate));const incoming=JSON.parse(localStorage.getItem(KEY)||'null');importCandidate=null;closeDialog(()=>{state=C.normalise(incoming,model,units);storageOK=true;storageDamaged=false;started=state.hasGuided;finished=false;applyAppearance();applyMode();restoreAnchor(state.read);paint();persist(true);status('Learning merged. Existing reflections were preserved.');});}catch(err){$('import-preview').textContent=err.message;}}break;}}
+async function action(kind,index){switch(kind){case'reader-menu':readingTools();break;case'reader-home':closeDialog(()=>{persist(true).then(()=>{location.href='index.html';});});break;case'reader-pace':closeDialog(openPaceTray);break;case'reader-settings':settings();break;case'reader-jump':jumps();break;case'reader-save':closeDialog(()=>savePlace(index));break;case'reader-start':closeDialog(()=>startHere(index));break;case'reader-follow':closeDialog(returnToGuide);break;case'reader-quiet':closeDialog(toggleQuiet);break;case'reader-spacing':closeDialog(toggleSpacing);break;case'reader-explore':explore();break;case'meaning':showMeaning(index);break;case'study-at':closeDialog(()=>{changeMode('study',{id:lines[index].id,offset:0});goTo(index);});break;case'pause':pause('Visual guide paused. External audio is unchanged.');break;case'note':note(index);break;case'jump':closeDialog(()=>goTo(index));break;case'related':related();break;case'context':context(index);break;case'raag':raag();break;case'gurdwaras':gurdwaras();break;case'place':place(index);break;case'coverage':coverage();break;case'learning':learning();break;case'export':exportLearning();break;case'install':installHelp();break;case'cancel-import':importCandidate=null;$('import-preview').textContent='Import cancelled. Nothing changed.';break;case'apply-import':if(importCandidate){pause();try{await persist(true);await shared.importWith(()=>L.importAll(localStorage,importCandidate));const incoming=JSON.parse(localStorage.getItem(KEY)||'null');importCandidate=null;closeDialog(()=>{state=C.normalise(incoming,model,units);storageOK=true;storageDamaged=false;started=state.hasGuided;finished=false;applyAppearance();applyMode();restoreAnchor(state.read);paint();persist(true);status('Learning merged. Existing reflections were preserved.');});}catch(err){$('import-preview').textContent=err.message;}}break;}}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b)return;const idx=Number(b.dataset.index);action(b.dataset.action,Number.isInteger(idx)?idx:0);});
 document.querySelectorAll('.modes [data-depth]').forEach(b=>b.addEventListener('click',()=>changeMode(b.dataset.depth)));
 $('tools-open').addEventListener('click',readingTools);
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&quietMode&&!$('reader-dialog').open){setQuiet(false);$('tools-open').focus({preventScroll:true});}});
-$('pace-shortcut').addEventListener('click',()=>{$('pace-tray').hidden?openPaceTray():closePaceTray();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&quietMode&&!$('reader-dialog').open&&!$('pace-tray').open){setQuiet(false);$('tools-open').focus({preventScroll:true});}});
+// Pace is reached from Reading essentials, preserving the six dock controls.
  $('pace-close').addEventListener('click',closePaceTray);
  $('pace-less').addEventListener('click',()=>setVisualPace(state.pace-5));
  $('pace-more').addEventListener('click',()=>setVisualPace(state.pace+5));
  $('pace-slider').addEventListener('input',e=>setVisualPace(Number(e.target.value)));
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('pace-tray').hidden){e.stopPropagation();closePaceTray();}});
+
  $('play').addEventListener('click',togglePlay);
 function returnToGuide(){following=true;paint();focusGuide(true);}
-function savePlace(){const id=anchor().id;state.read=anchor();state.bookmarks=state.bookmarks.includes(id)?state.bookmarks.filter(x=>x!==id):[...state.bookmarks,id];pendingBookmarks[id]=state.bookmarks.includes(id);updateDock();persist(true);status(state.bookmarks.includes(id)?'Reading line saved.':'Saved reading line removed.');}
+function savePlace(index){const id=lines[index]?.id??anchor().id;state.read=anchor();state.bookmarks=state.bookmarks.includes(id)?state.bookmarks.filter(x=>x!==id):[...state.bookmarks,id];pendingBookmarks[id]=state.bookmarks.includes(id);updateDock();persist(true);status(state.bookmarks.includes(id)?'Reading line saved.':'Saved reading line removed.');}
 $('dock-position').addEventListener('click',jumps);$('explore').addEventListener('click',explore);$('coverage-open').addEventListener('click',coverage);$('back-start').addEventListener('click',()=>goTo(0));
-$('dialog-body').addEventListener('input',e=>{if(e.target.id==='reflection'){const id=e.target.dataset.lineId;if(notePermit&&model.byId.has(id)){state.notes[id]=e.target.value.slice(0,12000);pendingNotes[id]=state.notes[id];$('note-status').textContent='Saving…';persist(true);}}if(e.target.id==='set-pace'){setVisualPace(Number(e.target.value));}if(e.target.id==='set-size'){state.size=Math.max(24,Math.min(48,Number(e.target.value)));pendingPreferences.size=state.size;applyAppearance();persist();}});
+$('dialog-body').addEventListener('input',e=>{if(e.target.id==='reflection'){const id=e.target.dataset.lineId;if(notePermit&&model.byId.has(id)){state.notes[id]=e.target.value.slice(0,12000);pendingNotes[id]=state.notes[id];$('note-status').textContent='Saving…';persist(true);}}if(e.target.id==='set-pace'){setVisualPace(Number(e.target.value));}if(e.target.id==='set-size'){state.size=Math.max(24,Math.min(60,Number(e.target.value)));pendingPreferences.size=state.size;if($('size-number'))$('size-number').textContent=state.size+'px';applyAppearance();persist();}});
 $('dialog-body').addEventListener('change',async e=>{
  const id=e.target.id;if(id==='set-persistent'){state.persistentControls=e.target.checked;pendingPreferences.persistentControls=state.persistentControls;if(state.persistentControls)setQuiet(false);}
  if(id==='set-theme'){state.theme=['day','amrit'].includes(e.target.value)?e.target.value:'day';applyAppearance();}
@@ -214,5 +233,5 @@ window.addEventListener('storage',e=>{if(e.key!==KEY)return;try{refreshLearning(
 window.addEventListener('beforeunload',e=>{if(Object.keys(pendingNotes).length){e.preventDefault();e.returnValue='';}});
 window.GLP_BEFORE_UPDATE=async()=>{pause();await persist(true);return storageOK&&!storageDamaged;};
 applyAppearance();applyMode();paint();if(raw)restoreAnchor(state.read);rememberVisible();
-window.GLP_CONTINUOUS_DEBUG=Object.freeze({version:'0.9-japji-v1-r7',lineCount:lines.length,units:units.length,explanationCount:explanations.size,getState:()=>JSON.parse(JSON.stringify(state)),isPlaying:()=>playing,isFollowing:()=>following});
+window.GLP_CONTINUOUS_DEBUG=Object.freeze({version:'0.9-japji-v1-m0-candidate-1',lineCount:lines.length,units:units.length,explanationCount:explanations.size,getState:()=>JSON.parse(JSON.stringify(state)),isPlaying:()=>playing,isFollowing:()=>following});
 })();

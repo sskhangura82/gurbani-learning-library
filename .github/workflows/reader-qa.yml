@@ -25,3 +25,5 @@ jobs:
         run: node tests/r6-contract.mjs
       - name: Revision 7 home, pace and rooms contracts
         run: node tests/r7-contract.mjs
+      - name: M0 reader preservation and 200 percent learning contracts
+        run: node tests/m0-contract.mjs

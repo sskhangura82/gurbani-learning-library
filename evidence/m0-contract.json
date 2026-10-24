@@ -1,0 +1,44 @@
+{
+  "baseline": "254f3871b785b756208379138dcc17472a3733ff",
+  "environment": "Node portable contracts; not physical-device or actual service-worker lifecycle evidence",
+  "checks": [
+    {
+      "name": "All 28 preserved R7 runtime files are byte-identical, including home, rooms, scripture, drafts, and shared-learning locking",
+      "status": "PASS"
+    },
+    {
+      "name": "200% scripture validates 60px, clamps extremes, and preserves the 30px default",
+      "status": "PASS"
+    },
+    {
+      "name": "200% size, exact Punjabi reflection, bookmarks and reading anchor survive full export/import",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale-tab reading save cannot reduce 200% size or lose a newer note/bookmark",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing version 2 state schema and storage key remain unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Six-target dock retains current location with pace in the grouped Reading menu",
+      "status": "PASS"
+    },
+    {
+      "name": "Pace uses a native dialog with close-event anchor and focus restoration",
+      "status": "PASS"
+    },
+    {
+      "name": "No R8 media/player or new third-party requests enter the reader",
+      "status": "PASS"
+    },
+    {
+      "name": "Worker declares a new M0 version, while app startup remains account-free and static",
+      "status": "PASS"
+    }
+  ],
+  "total": 9,
+  "status": "PASS"
+}

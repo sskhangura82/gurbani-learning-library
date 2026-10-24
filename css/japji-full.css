@@ -104,20 +104,27 @@ body.roomy-spacing .passage{padding:0;margin-top:40px}body.roomy-spacing .script
 /* Keep the longest word/pauri-ending pair intact at 48px on narrow screens. */
 @media(max-width:380px){main{padding-left:10px;padding-right:10px}.tuk{padding-left:0;padding-right:0}}
 
-/* Revision 7: a one-tap visible speed shortcut with an accessible adjustable tray. */
-.reading-dock #pace-shortcut{flex:0 0 47px;min-width:47px;width:47px;height:44px;min-height:44px;border:0;border-radius:8px;background:transparent;padding:0 2px;font-size:13px;font-variant-numeric:tabular-nums;font-weight:650;line-height:1.1;color:var(--ink)}
-.reading-dock #pace-shortcut span,.reading-dock #pace-shortcut small{display:block;text-align:center}
-.reading-dock #pace-shortcut small{font-weight:450;font-size:9px;letter-spacing:.04em;color:var(--muted)}
-.reading-dock #pace-shortcut[aria-expanded=true]{background:var(--wash)}
-.pace-tray{position:fixed;z-index:35;left:50%;bottom:calc(69px + env(safe-area-inset-bottom));transform:translateX(-50%);width:min(540px,calc(100vw - 20px));border-radius:13px;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 10px 32px #0003;padding:10px 12px}
-.pace-tray[hidden]{display:none}.pace-tray-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}.pace-tray-heading strong{font-size:13px;font-weight:600}
-.pace-tray-heading button,.pace-tray-controls button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:9px;min-width:44px;min-height:44px;padding:5px 8px}
-.pace-tray-heading button{font-size:23px}.pace-tray-controls{display:flex;gap:6px;align-items:center;margin-top:7px}
-.pace-tray-controls input[type=range]{min-width:90px;flex:1;accent-color:var(--accent);height:44px}
-.pace-tray-controls output{font-size:13px;font-weight:650;min-width:28px;font-variant-numeric:tabular-nums;text-align:right}
-.pace-tray p{color:var(--muted);font-size:10px;line-height:1.5;margin:4px 0 1px}
-@media(max-width:370px){
- .reading-dock #dock-position{display:none}
- .reading-dock .modes{flex:0 0 132px}
- .reading-dock #pace-shortcut{flex:0 0 45px;width:45px;min-width:45px}
-}
+/* M0: six persistent targets, with visual pace in the grouped Reading menu. */
+.reading-dock #dock-position{display:block;flex:1 1 44px;min-width:44px}
+.reader-location{font-size:13px;color:var(--muted);margin:0 0 12px!important}
+.reader-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.reader-menu-grid button{text-align:left;padding:10px 12px;min-height:66px;line-height:1.45;overflow-wrap:anywhere}
+.reader-menu-grid strong,.reader-menu-grid small{display:block}.reader-menu-grid strong{font-size:15px;font-weight:600}.reader-menu-grid small{font-size:12px;color:var(--muted);margin-top:3px}
+.reader-more{margin:14px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.reader-more summary{cursor:pointer;min-height:48px;padding:11px 0;font-size:13px}
+.reader-more-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:0 0 12px}
+.reader-more-actions button{font-size:13px;line-height:1.4;text-align:left;padding:9px 10px}
+.reader-menu-footer{display:flex;gap:8px;flex-wrap:wrap}.reader-menu-footer button{flex:1;font-size:13px}
+.reader-clock-note{font-size:11px!important;margin:12px 0 0!important}
+dialog[data-view=reading-menu]{max-width:min(460px,calc(100% - 24px))}
+dialog[data-view=reading-menu] .dialog-heading{padding:12px 16px}
+dialog[data-view=reading-menu] #dialog-body{padding:12px 16px 16px}
+.setting-row{flex-wrap:wrap;gap:8px}.setting-row input[type=range]{min-height:44px;min-width:120px}.setting-row output{font-variant-numeric:tabular-nums}.setting-row input[type=checkbox]{margin:10px}
+/* A pair stays together when it fits, and wraps naturally at very large scripture sizes. */
+.tuk-ending{display:inline-block;max-width:100%;white-space:normal;vertical-align:bottom}
+.tuk{overflow:visible;line-height:1.9}
+.pace-tray{position:fixed;inset:auto 10px calc(69px + env(safe-area-inset-bottom));margin:0 auto;transform:none;width:min(540px,calc(100% - 20px));max-width:calc(100% - 20px);max-height:calc(100dvh - 100px);border-radius:13px;background:var(--surface);padding:12px}
+.pace-tray:not([open]){display:none}.pace-tray-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}.pace-tray-heading strong{font-size:16px}
+.pace-tray-heading button,.pace-tray-controls button{min-width:44px;min-height:44px;padding:5px 8px}.pace-tray-heading button{font-size:23px}
+.pace-tray-controls{display:flex;gap:6px;align-items:center;margin-top:8px}.pace-tray-controls input[type=range]{min-width:70px;width:100%;flex:1;accent-color:var(--accent);height:44px}.pace-tray-controls output{font-size:14px;font-weight:650;min-width:28px;font-variant-numeric:tabular-nums;text-align:right}.pace-tray p{color:var(--muted);font-size:12px;line-height:1.5;margin:8px 0 0}
+@media(max-width:350px){.reader-menu-grid button{padding:9px}.reader-menu-grid strong{font-size:14px}.reader-menu-grid small{font-size:11px}}
