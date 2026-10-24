@@ -1,0 +1,18 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 'node:vm';import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),C=require('../js/continuous-core.js'),L=require('../js/learning.js'),root=new URL('../',import.meta.url),read=name=>fs.readFileSync(new URL(name,root),'utf8');
+const a=[],test=(name,fn)=>{fn();a.push(name);},scope={window:{}};
+vm.runInNewContext(read('js/japji-full-data.js'),scope);
+const model=C.flatten(scope.window.GLP_FULL_JAPJI.units),units=scope.window.GLP_FULL_JAPJI.units;
+test('Entry points are distinct home and unchanged continuous Japji',()=>{const home=read('index.html'),reader=read('full-japji.html');assert.notEqual(home,reader);assert.match(home,/A moment with/);assert.match(reader,/id="continuous-reader"/);});
+test('Home has three direct accessible destinations without login',()=>{const s=read('index.html');for(const f of ['full-japji.html','gurdwaras.html','simran.html'])assert.ok(s.includes('href="'+f+'"'));assert.ok(!/<form[\s>]|type="password"|oauth\b/i.test(s));});
+test('PWA Home Screen starts at root with unchanged app id',()=>{const m=JSON.parse(read('manifest.webmanifest'));assert.equal(m.start_url,'./');assert.equal(m.id,'./');});
+test('Guide pace normalizer accepts every five step up to 160',()=>{for(let v=50;v<=160;v+=5)assert.equal(C.normalise({pace:v},model,units).pace,v);for(const v of [45,165,163,0,'160'])assert.equal(C.normalise({pace:v},model,units).pace,70);});
+test('Old and new pace preferences remain compatible',()=>{for(const v of [50,70,100,140,150,155,160])assert.equal(L.normalize({pace:v}).pace,v);});
+test('Reader exposes one-tap numeric pace control and no media',()=>{const s=read('full-japji.html');assert.match(s,/id="pace-shortcut"/);assert.match(s,/id="pace-slider"/);assert.match(s,/max="160"/);assert.ok(!/<(?:audio|video|iframe)\b/i.test(s));});
+test('Pace logic enters existing synchronized preference-merging mechanism',()=>{const s=read('js/japji-full.js');assert.ok(s.includes('pendingPreferences.pace=pace'));assert.ok(s.includes('setVisualPace'));assert.ok(s.includes('reader-home'));assert.ok(!s.includes('speechSynthesis'));});
+test('The frozen scripture and editorial layers remain separate',()=>{assert.equal(model.lines.length,385);assert.equal(units.length,42);const names=Object.keys(scope.window.GLP_FULL_JAPJI.coverage||{});assert.ok(names.length>0);assert.match(read('index.html'),/educational drafts pending qualified review/i);});
+test('Three gurdwara sources are official HTTPS and not media embeds',()=>{const s=read('js/arrivals.js');for(const host of ['new.sgpc.net','fremontgurdwara.org','sanjosegurdwara.org'])assert.ok(s.includes('https://'+host));assert.ok(!/<iframe|autoplay|new Audio/i.test(read('gurdwara.html')));});
+test('Simran preview is silent and does not persist meditation metrics',()=>{const s=read('js/simran.js');assert.ok(!s.includes('localStorage'));assert.ok(!/Audio|speechSynthesis|getUserMedia/.test(s));assert.match(read('simran.html'),/specialist review/);});
+test('External place links use explicit new-tab protections',()=>{const s=read('gurdwara.html');assert.ok((s.match(/target="_blank" rel="noopener noreferrer"/g)||[]).length>=3);});
+test('New routes and scripts are included in offline release',()=>{const s=read('sw.js');for(const path of ['./index.html','./gurdwaras.html','./gurdwara.html','./simran.html','./js/home.js','./js/arrivals.js','./js/simran.js'])assert.ok(s.includes('"'+path+'"'),path);});
+console.log(JSON.stringify({total:a.length,checks:a,status:'PASS'}));

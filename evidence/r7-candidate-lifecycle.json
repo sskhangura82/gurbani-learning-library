@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "Isolated lifecycle browser starts",
+    "Revision 6 current service worker active",
+    "Initial R6 preserves synthetic reflection and bookmarks",
+    "Initial R6 retains three learning generations",
+    "R6→R7 downloaded a waiting new service worker",
+    "Reader upgraded to R7 without changing URL",
+    "After R7 upgrade preserves synthetic reflection and bookmarks",
+    "After R7 upgrade retains three learning generations",
+    "Custom 160 pace stored without overwriting original reflection",
+    "R7→R6 rollback downloaded a waiting new service worker",
+    "After actual rollback preserves synthetic reflection and bookmarks",
+    "After actual rollback retains three learning generations",
+    "Rollback→R7 return downloaded a waiting new service worker",
+    "After return to R7 preserves synthetic reflection and bookmarks",
+    "After return to R7 retains three learning generations",
+    "New home entrypoint available after re-upgrade"
+  ],
+  "count": 16,
+  "fail": null,
+  "environment": "Isolated secure loopback Chrome with real service-worker install, R6→R7→R6→R7",
+  "notes": "Only synthetic learning, no user data or public URL touched",
+  "checkedAt": "2026-10-24T00:50:34.558Z",
+  "limitations": [
+    "Not public HTTPS lifecycle, physical iPhone or real airplane mode"
+  ]
+}

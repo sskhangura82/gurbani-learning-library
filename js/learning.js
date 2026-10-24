@@ -10,7 +10,7 @@
  const int=(v,min,max,d)=>Number.isInteger(v)?Math.max(min,Math.min(max,v)):d;
  function normalize(x){
   x=plain(x)?x:{};
-  const s={schemaVersion:2,unit:int(x.unit,0,41,0),line:int(x.line,0,40,0),token:int(x.token,0,100,0),mode:['read','understand','study'].includes(x.mode)?x.mode:'read',theme:['day','amrit'].includes(x.theme)?x.theme:'day',radiance:x.radiance!==false,size:int(x.size,24,48,30),pace:[50,70,100,140].includes(x.pace)?x.pace:70,emphasis:x.emphasis==='line'?'line':'word',layout:x.layout==='continuous'?'continuous':'section',bookmarks:[...new Set(Array.isArray(x.bookmarks)?x.bookmarks.filter(id=>ids.includes(id)):[])],notes:{}};
+  const s={schemaVersion:2,unit:int(x.unit,0,41,0),line:int(x.line,0,40,0),token:int(x.token,0,100,0),mode:['read','understand','study'].includes(x.mode)?x.mode:'read',theme:['day','amrit'].includes(x.theme)?x.theme:'day',radiance:x.radiance!==false,size:int(x.size,24,48,30),pace:Number.isInteger(x.pace)&&x.pace>=50&&x.pace<=160&&x.pace%5===0?x.pace:70,emphasis:x.emphasis==='line'?'line':'word',layout:x.layout==='continuous'?'continuous':'section',bookmarks:[...new Set(Array.isArray(x.bookmarks)?x.bookmarks.filter(id=>ids.includes(id)):[])],notes:{}};
   if(plain(x.notes))for(const id of ids)if(typeof x.notes[id]==='string'&&x.notes[id].length<=12000)s.notes[id]=x.notes[id];
   return s;
  }
