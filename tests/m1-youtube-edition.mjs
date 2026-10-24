@@ -103,6 +103,13 @@ check('A title, hash and runtime clock do not let automated code detect a same-d
  assert.equal(r.syncAllowed,true);
  assert.ok(r.limits.includes('Cannot detect same-duration content edits'));
 });
+check('Malformed reviewed map segment never crashes anchor validation',()=>{
+ const m=make();m.segments[1]=null;
+ const result=validateTimingMap(m,options);
+ assert.equal(result.valid,false);
+ assert.ok(result.errors.some(e=>e.reason==='segment_not_object'));
+ assert.equal(assessYouTubePlayback(m,options,{videoId:'M7lc1UVf-VE',providerDurationMs:9000}).syncAllowed,false);
+});
 const report={status:'PASS',checkCount:checkList.length,checks:checkList,recordingConsumed:false,claim:'Metadata-only synthetic fixtures; NO verification of YouTube content audio itself.'};
 fs.writeFileSync(path.join(root,'docs/research/M1_VIDEO_VERSION_BINDING_TESTS.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));

@@ -20,7 +20,7 @@ The earlier timing-map validator checked the video ID, frozen Gurmukhi hashes, r
 
 ## New fail-closed tests
 
-The original 18 M1 synthetic timing/rights tests still pass; the 12 new video-edition tests pass. The new tests deliberately try:
+The original 18 M1 synthetic timing/rights tests still pass; the 13 new video-edition tests pass, including a malformed-segment crash guard. The new tests deliberately try:
 
 1. Same video ID but an eight-second-longer edit.
 2. Unknown runtime duration or different video ID.

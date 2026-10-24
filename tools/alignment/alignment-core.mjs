@@ -43,7 +43,8 @@ function checkVideoBinding(map,lineIndex,errors){
   previous=a.videoTimeMs;
  }
  if(v.anchors.length>=3&&Array.isArray(map.segments)&&map.segments.length){
-  const span=(map.segments.at(-1).endMs-map.segments[0].startMs);
+  const first=map.segments[0],last=map.segments.at(-1);
+  const span=first&&last&&Number.isFinite(first.startMs)&&Number.isFinite(last.endMs)?last.endMs-first.startMs:NaN;
   const spread=v.anchors.at(-1).videoTimeMs-v.anchors[0].videoTimeMs;
   if(Number.isFinite(span)&&spread<span*.35)errors.push(issue('anchor_distribution_too_narrow'));
  }
@@ -134,7 +135,7 @@ export function assessYouTubePlayback(map,opts,{videoId,providerDurationMs}={}){
 export function segmentAt(segments,clockMs){
  if(!num(clockMs)||!Array.isArray(segments))return null;
  let lo=0,hi=segments.length-1;
- while(lo<=hi){const mid=(lo+hi)>>1,seg=segments[mid];if(clockMs<seg.startMs)hi=mid-1;else if(clockMs>=seg.endMs)lo=mid+1;else return seg.kind==='mapped'?seg:null;}
+ while(lo<=hi){const mid=(lo+hi)>>1,seg=segments[mid];if(!seg||!Number.isFinite(seg.startMs)||!Number.isFinite(seg.endMs))return null;if(clockMs<seg.startMs)hi=mid-1;else if(clockMs>=seg.endMs)lo=mid+1;else return seg.kind==='mapped'?seg:null;}
  return null;
 }
 export function boundaryError({expected,actual}){
