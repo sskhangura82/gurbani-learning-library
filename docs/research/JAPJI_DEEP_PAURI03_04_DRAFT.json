@@ -1,0 +1,274 @@
+{
+  "schema": 1,
+  "project": "GLP-001",
+  "contentType": "deep-learning-draft",
+  "asOf": "2026-10-24",
+  "status": "DRAFT_NOT_HUMAN_REVIEWED",
+  "sourceRelease": "japji-v1-0.9-r7",
+  "scope": "Pauris 3 and 4, exact corpus occurrence binding, all commentary original. Does not update active app lessons.",
+  "bibliography": [
+    {
+      "id": "S1",
+      "title": "Prof Sahib Singh Guru Granth Darpan Ang 2",
+      "url": "https://www.gurugranthdarpan.net/0002.html"
+    },
+    {
+      "id": "S2",
+      "title": "Guru Nanak Nishkam Sewak Jatha Jap Ji Sahib",
+      "url": "https://gnnsj.org/sikh-dharam/gurbani/jap-ji-sahib/"
+    },
+    {
+      "id": "S3",
+      "title": "Sikh Research and Education Center Japji",
+      "url": "https://srec.gurmat.info/articles/sri-guru-granth-sahib/japji-sahib/"
+    }
+  ],
+  "units": [
+    {
+      "id": "pauri03",
+      "title": "Many descriptions, none the whole",
+      "spine": "The many ways people praise divine power/giving/knowledge/near and far are incomplete; the Giver's generosity and Hukam outlast every single viewpoint.",
+      "englishArrival": "One person notices power, another a gift, another knowledge or presence. The repeated voices invite humility: each view contributes without exhausting the Divine.",
+      "punjabiArrival": "ਕੋਈ ਤਾਕਤ ਨੂੰ, ਕੋਈ ਦਾਤ ਨੂੰ, ਕੋਈ ਗਿਆਨ ਜਾਂ ਨੇੜਤਾ ਨੂੰ ਵੇਖਦਾ ਹੈ। ਹਰ ਬਿਆਨ ਕੁਝ ਦੱਸਦਾ ਹੈ, ਪਰ ਕੋਈ ਇਕੱਲਾ ਸਾਰਾ ਨਹੀਂ ਦੱਸ ਸਕਦਾ।",
+      "vocabulary": [
+        {
+          "g": "ਗਾਵੈ ਕੋ",
+          "en": "someone sings/praises"
+        },
+        {
+          "g": "ਤਾਣੁ",
+          "en": "strength or power"
+        },
+        {
+          "g": "ਦਾਤਿ",
+          "en": "gift"
+        },
+        {
+          "g": "ਵਿਖਮੁ",
+          "en": "difficult"
+        },
+        {
+          "g": "ਖੇਹ",
+          "en": "dust"
+        },
+        {
+          "g": "ਹਾਦਰਾ ਹਦੂਰਿ",
+          "en": "present/near"
+        },
+        {
+          "g": "ਤੋਟਿ",
+          "en": "shortage/end"
+        },
+        {
+          "g": "ਵੇਪਰਵਾਹੁ",
+          "en": "unconcerned/free from need (Divine attribute)"
+        }
+      ],
+      "theTurn": "After multiplying examples of what people say, the pauri concludes with the endless giving and a Hukam beyond any one speaker's account.",
+      "connection": "Pauri 2 Hukam; Pauri 4 the Giver and what offering is possible; review any separate SGGS connections in full context.",
+      "reflection": "When are you tempted to treat one experience or explanation as the whole? Can gratitude coexist with intellectual humility?",
+      "teachBack": "Name three distinct kinds of praise in the first eight lines and explain why the final lines discourage a complete human account."
+    },
+    {
+      "id": "pauri04",
+      "title": "Beyond bargains: what offering, what words?",
+      "spine": "The sovereign Giver receives endless requests. The stanza asks what true offering and speech look like, turning toward Divine Name, remembrance, grace and the True One.",
+      "englishArrival": "When everything is already a gift, what could a person place before the Giver? The questions of an offering and spoken words move the pauri from transaction toward reflection and grace.",
+      "punjabiArrival": "ਜਦੋਂ ਸਭ ਦਾਤਾਂ ਦਾਤਾਰ ਤੋਂ ਹਨ, ਤਾਂ ਅਸੀਂ ਉਸ ਅੱਗੇ ਕੀ ਰੱਖ ਸਕਦੇ ਹਾਂ? ਪਉੜੀ ਭੇਟ ਅਤੇ ਬੋਲਣ ਦੇ ਸਵਾਲ ਤੋਂ ਸੱਚੇ ਨਾਮ, ਵਿਚਾਰ ਅਤੇ ਬਖ਼ਸ਼ਿਸ਼ ਵੱਲ ਆਉਂਦੀ ਹੈ।",
+      "vocabulary": [
+        {
+          "g": "ਸਾਚਾ ਸਾਹਿਬੁ",
+          "en": "enduring True Sovereign"
+        },
+        {
+          "g": "ਨਾਇ",
+          "en": "contested contextual rendering: Name or justice/order"
+        },
+        {
+          "g": "ਭਾਖਿਆ",
+          "en": "expressed/spoken"
+        },
+        {
+          "g": "ਦਾਤਾਰੁ",
+          "en": "Giver"
+        },
+        {
+          "g": "ਦਰਬਾਰੁ",
+          "en": "court"
+        },
+        {
+          "g": "ਅੰਮ੍ਰਿਤ ਵੇਲਾ",
+          "en": "auspicious early period / time for awakening and reflection"
+        },
+        {
+          "g": "ਕਰਮੀ",
+          "en": "deeds/grace wording debated"
+        },
+        {
+          "g": "ਨਦਰੀ",
+          "en": "through the glance/grace"
+        }
+      ],
+      "theTurn": "The human questions shift from asking and offering toward remembrance and the recognition that the True One is the source.",
+      "connection": "Pauri 3 ending on giving and Hukam, Pauri 5 on the nature of the One; compare other Ang references only after human review.",
+      "reflection": "When does gratitude become a bargain? Can you contemplate something meaningful without treating attention as a transaction?",
+      "teachBack": "What are the two questions about offering and speech, and how does Amrit Vela change the direction of the stanza?"
+    }
+  ],
+  "lines": [
+    {
+      "id": "pauri03.line01",
+      "simpleEn": "People praise Divine power or strength, each from their own understanding.",
+      "simplePa": "ਕੋਈ ਅਕਾਲ ਪੁਰਖ ਦੀ ਤਾਕਤ ਦਾ ਗੁਣ ਗਾਉਂਦਾ ਹੈ, ਆਪਣੀ ਸਮਝ ਅਨੁਸਾਰ।",
+      "study": "The repeated ‘ਗਾਵੈ ਕੋ’ is a poetic pattern of different voices. Do not turn this into a claim that political or physical power makes someone closer to God.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line02",
+      "simpleEn": "Some praise the gifts they have received and recognize a sign of giving.",
+      "simplePa": "ਕੋਈ ਮਿਲੀ ਦਾਤ ਨੂੰ ਦਾਤਾਰ ਦੀ ਨਿਸ਼ਾਨੀ ਮੰਨ ਕੇ ਵਡਿਆਈ ਕਰਦਾ ਹੈ।",
+      "study": "This is the vocabulary of gift and gratitude. The experience of one gift cannot account for the whole Divine nature.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line03",
+      "simpleEn": "Some praise beautiful virtues and greatness.",
+      "simplePa": "ਕੋਈ ਸੋਹਣੇ ਗੁਣਾਂ ਅਤੇ ਵਡਿਆਈਆਂ ਨੂੰ ਯਾਦ ਕਰ ਕੇ ਗਾਉਂਦਾ ਹੈ।",
+      "study": "Attention shifts from what a person has received to qualities worthy of praise. ‘ਚਾਰ’ in this context is glossed as beautiful by commentators; verify the historical grammar.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line04",
+      "simpleEn": "Some speak of difficult knowledge and deep reflection.",
+      "simplePa": "ਕੋਈ ਔਖੀ ਵਿਦਿਆ ਅਤੇ ਡੂੰਘੇ ਵਿਚਾਰ ਦੀ ਗੱਲ ਕਰਦਾ ਹੈ।",
+      "study": "Knowledge is one approach to praise, but the stanza's diversity cautions against making any single intellectual description the entirety of truth.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line05",
+      "simpleEn": "Some describe the creating of the body and its return to dust.",
+      "simplePa": "ਕੋਈ ਸਰੀਰ ਦੀ ਸਿਰਜਣਾ ਅਤੇ ਉਸ ਦੇ ਮਿੱਟੀ ਹੋ ਜਾਣ ਦੀ ਗੱਲ ਕਰਦਾ ਹੈ।",
+      "study": "Creation and mortality appear together. This is devotional poetry about transience, not a laboratory description of cells or matter.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line06",
+      "simpleEn": "Some describe the giving and taking of life.",
+      "simplePa": "ਕੋਈ ਜੀਵਨ ਲੈਣ ਅਤੇ ਫਿਰ ਦੇਣ ਦੀ ਗੱਲ ਕਰਦਾ ਹੈ।",
+      "study": "The line belongs with the preceding creation/dissolution image; avoid inferring a medical or biological doctrine from its wording.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line07",
+      "simpleEn": "To some, the Divine appears far away.",
+      "simplePa": "ਕਿਸੇ ਨੂੰ ਅਕਾਲ ਪੁਰਖ ਦੂਰ ਜਾਪਦਾ ਹੈ।",
+      "study": "The stanza now turns from descriptions of power to the person's perception of nearness. This line is one attributed vantage, not an endorsement that the Divine is absent.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line08",
+      "simpleEn": "To others, the Divine is seen as near and present.",
+      "simplePa": "ਕਿਸੇ ਨੂੰ ਅਕਾਲ ਪੁਰਖ ਹਾਜ਼ਰ-ਨਾਜ਼ਰ, ਨੇੜੇ ਦਿੱਸਦਾ ਹੈ।",
+      "study": "Place the near and far lines side by side. Opposed human experiences do not force Guru Nanak to make two contradictory Divine assertions.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line09",
+      "simpleEn": "There is no end to speaking of these qualities.",
+      "simplePa": "ਇਨ੍ਹਾਂ ਬਾਰੇ ਕਹਿਣ ਦਾ ਕੋਈ ਅੰਤ ਨਹੀਂ ਆਉਂਦਾ।",
+      "study": "The culmination begins: all human descriptions are partial. Do not present uncertainty here as mere refusal to think; it opens humility.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line10",
+      "simpleEn": "Countless voices have spoken again and again.",
+      "simplePa": "ਅਣਗਿਣਤ ਲੋਕ ਵਾਰ-ਵਾਰ ਗੱਲ ਕਹਿੰਦੇ ਆਏ ਹਨ।",
+      "study": "Repetition does not yield an exhaustive account. The many voices may deepen appreciation without possessing the whole.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line11",
+      "simpleEn": "The Giver keeps giving while receivers grow weary.",
+      "simplePa": "ਦਾਤਾਰ ਦਿੰਦਾ ਰਹਿੰਦਾ ਹੈ, ਪਰ ਲੈਣ ਵਾਲੇ ਥੱਕ ਜਾਂਦੇ ਹਨ।",
+      "study": "The imbalance between giving and receiving evokes abundance; it is not a promise that any requested possession will materialize.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line12",
+      "simpleEn": "Across ages, beings continue to receive and partake.",
+      "simplePa": "ਜੁਗਾਂ-ਜੁਗਾਂ ਤੋਂ ਜੀਵ ਦਾਤਾਂ ਲੈਂਦੇ ਤੇ ਵਰਤਦੇ ਆ ਰਹੇ ਹਨ।",
+      "study": "The temporal scope broadens. What one person experiences in a lifetime is only a partial vantage.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line13",
+      "simpleEn": "The Divine Hukam directs the path and course of what unfolds.",
+      "simplePa": "ਹੁਕਮ ਦੇ ਅਨੁਸਾਰ ਰਾਹ ਚੱਲਦਾ ਹੈ।",
+      "study": "Connect to Pauri 2: the multiplying descriptions still meet the mystery and breadth of Hukam. Avoid mechanistic fatalism.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri03.line14",
+      "simpleEn": "Nanak speaks of the carefree Divine flourishing.",
+      "simplePa": "ਨਾਨਕ ਜੀ ਬੇਪਰਵਾਹ ਅਕਾਲ ਪੁਰਖ ਦੀ ਖਿੜੀ ਹੋਈ ਅਵਸਥਾ ਦਾ ਜ਼ਿਕਰ ਕਰਦੇ ਹਨ।",
+      "study": "‘ਵੇਪਰਵਾਹੁ’ should not be taught as a human license for indifference to others; this is a Divine depiction whose poetry needs qualified interpretation.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line01",
+      "simpleEn": "The True Sovereign endures; the Name/order and language of love require careful interpretation.",
+      "simplePa": "ਸਦਾ-ਥਿਰ ਸਾਹਿਬ ਦੀ ਗੱਲ ਹੈ; 'ਸਾਚੁ ਨਾਇ' ਅਤੇ ਅਪਾਰ ਪ੍ਰੇਮ ਦੀ ਵਿਆਖਿਆ ਧਿਆਨ ਨਾਲ ਕਰਨੀ ਹੈ।",
+      "study": "Professor Sahib Singh reads ਨਾਇ through ਨਿਆਇ, Divine justice/order, with grammatical argument; other translations emphasize Divine Name. The short meaning must disclose this rather than resolve it by AI fiat.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line02",
+      "simpleEn": "People repeatedly ask for gifts; the Giver gives.",
+      "simplePa": "ਲੋਕ ਵਾਰ-ਵਾਰ ਦਾਤ ਮੰਗਦੇ ਹਨ, ਤੇ ਦਾਤਾਰ ਦਾਤਾਂ ਦੇਂਦਾ ਹੈ।",
+      "study": "Notice the repeated request before the next question. The pauri is not merely a guarantee that material petitions are always granted.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line03",
+      "simpleEn": "What offering could we place before the Divine court?",
+      "simplePa": "ਫਿਰ ਦਰਬਾਰ ਵਿਚ ਕੀ ਭੇਟ ਰੱਖੀਏ ਕਿ ਦਰਸ਼ਨ ਹੋਣ?",
+      "study": "The image of a court recalls approaching a sovereign with an offering. Guru Nanak turns the reader's assumption about giving and receiving into a question.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line04",
+      "simpleEn": "What words could we speak so that love is received?",
+      "simplePa": "ਮੂੰਹੋਂ ਕਿਹੜਾ ਬੋਲ ਬੋਲੀਏ ਜਿਸ ਨੂੰ ਸੁਣ ਕੇ ਪਿਆਰ ਮਿਲੇ?",
+      "study": "This continues the sincere question, not a technique promising that repeating a particular phrase mechanically earns favor.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line05",
+      "simpleEn": "In Amrit Vela, contemplate the True Name and Divine greatness.",
+      "simplePa": "ਅੰਮ੍ਰਿਤ ਵੇਲੇ ਸੱਚੇ ਨਾਮ ਅਤੇ ਵਡਿਆਈ ਦਾ ਵੀਚਾਰ ਕਰੀਏ।",
+      "study": "Sikh tradition commonly associates Amrit Vela with the early hours. Darpan also explains conditions favorable to inward attention; no spiritual stopwatch follows from the line alone.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line06",
+      "simpleEn": "Garment and liberation language invokes deeds/grace and the Divine glance.",
+      "simplePa": "ਕਰਮੀ ਕਪੜਾ ਅਤੇ ਨਦਰ ਨਾਲ ਮੁਕਤੀ ਦੇ ਦਰ ਦੀ ਗੱਲ ਆਉਂਦੀ ਹੈ।",
+      "study": "This difficult metaphor should be reviewed against original morphology and named scholarship before a literal interpretation is fixed; keep grace and the Divine glance visible.",
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pauri04.line07",
+      "simpleEn": "Nanak says the True One is truly so, by the One's own reality.",
+      "simplePa": "ਨਾਨਕ ਜੀ ਅਖੀਰ ਵਿਚ ਅਕਾਲ ਪੁਰਖ ਦੀ ਸੱਚੀ ਹੋਂਦ ਵੱਲ ਧਿਆਨ ਲੈ ਜਾਂਦੇ ਹਨ।",
+      "study": "Pauri 4 closes by shifting attention from ‘what can I offer?’ toward the True One. Full theological nuance requires qualified Punjabi/Gurbani review.",
+      "reviewStatus": "draft"
+    }
+  ],
+  "editorialRules": [
+    "Original Gurmukhi text from immutable corpus only",
+    "Every summary is original and pending human review",
+    "Where Naai/Likhi interpretations differ, cite by named tradition",
+    "Do not convert liturgical language into psychiatric diagnosis or physiology",
+    "Status visible before any promotion"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "Chrome starts",
+    "Home installed versioned hashed shell without opening reader",
+    "Home page under active service worker",
+    "All 40 manifest responses were cached",
+    "Home works while network is blocked",
+    "Complete Japji reader works while network blocked",
+    "Simran preview works while network blocked",
+    "Gurdwara directory works while network blocked",
+    "Full Nitnem library information works offline without invented source text",
+    "Source-bound Psychology room remains usable offline"
+  ],
+  "count": 10,
+  "fail": null,
+  "checkedAt": "2026-10-24T21:56:37.030Z",
+  "environment": "Isolated Mac Chrome CDP offline network emulation",
+  "limits": [
+    "Not real iPhone airplane mode",
+    "No network-provider playback tested"
+  ]
+}

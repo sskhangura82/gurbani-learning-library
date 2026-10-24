@@ -4,7 +4,7 @@ const a=[],test=(name,fn)=>{fn();a.push(name);},scope={window:{}};
 vm.runInNewContext(read('js/japji-full-data.js'),scope);
 const model=C.flatten(scope.window.GLP_FULL_JAPJI.units),units=scope.window.GLP_FULL_JAPJI.units;
 test('Entry points are distinct home and unchanged continuous Japji',()=>{const home=read('index.html'),reader=read('full-japji.html');assert.notEqual(home,reader);assert.match(home,/A moment with/);assert.match(reader,/id="continuous-reader"/);});
-test('Home has three direct accessible destinations without login',()=>{const s=read('index.html');for(const f of ['full-japji.html','gurdwaras.html','simran.html'])assert.ok(s.includes('href="'+f+'"'));assert.ok(!/<form[\s>]|type="password"|oauth\b/i.test(s));});
+test('Home preserves three primary destinations and adds distinct learning rooms without login',()=>{const s=read('index.html');for(const f of ['full-japji.html','gurdwaras.html','simran.html'])assert.ok(s.includes('href="'+f+'"'));assert.ok(!/<form[\s>]|type="password"|oauth\b/i.test(s));});
 test('PWA Home Screen starts at root with unchanged app id',()=>{const m=JSON.parse(read('manifest.webmanifest'));assert.equal(m.start_url,'./');assert.equal(m.id,'./');});
 test('Guide pace normalizer accepts every five step up to 160',()=>{for(let v=50;v<=160;v+=5)assert.equal(C.normalise({pace:v},model,units).pace,v);for(const v of [45,165,163,0,'160'])assert.equal(C.normalise({pace:v},model,units).pace,70);});
 test('Old and new pace preferences remain compatible',()=>{for(const v of [50,70,100,140,150,155,160])assert.equal(L.normalize({pace:v}).pace,v);});
