@@ -1,0 +1,26 @@
+name: GLP M1 Alignment Preregistration
+on:
+  pull_request:
+    paths:
+      - 'tools/alignment/**'
+      - 'tests/m1-*'
+      - 'docs/research/M1_*'
+      - 'docs/acceptance/M0_*'
+      - '.github/workflows/glp-m1-alignment-prereg.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  metadata-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify synthetic metadata and rights gate
+        run: node tests/m1-alignment-protocol.mjs
+      - name: Confirm no media input files exist in preregistration
+        run: |
+          test ! -e recordings
+          test ! -e media/private
