@@ -1,0 +1,257 @@
+{
+  "origin": "http://127.0.0.1:8766",
+  "when": "2026-10-24T17:54:15.002Z",
+  "checks": [
+    "loopback page navigation",
+    "real Service Worker + Web Locks in trusted loopback",
+    "Initial real loopback service worker installed #1",
+    "Learning retained in #1",
+    "R7 initially loaded",
+    "three synthetic storage generations retained",
+    "Versioned update is waiting for explicit action #1",
+    "Explicit application update completed #1",
+    "Learning retained in #2",
+    "runtime 02-m0",
+    "synthetic learning intact 02-m0",
+    "Versioned update is waiting for explicit action #2",
+    "Explicit application update completed #2",
+    "Learning retained in #3",
+    "runtime 03-r7-rollback",
+    "synthetic learning intact 03-r7-rollback",
+    "Versioned update is waiting for explicit action #3",
+    "Explicit application update completed #3",
+    "Learning retained in #4",
+    "runtime 04-m0-repeat",
+    "synthetic learning intact 04-m0-repeat",
+    "Reader reload completed #1",
+    "Learning retained in #5",
+    "cached M0 survived origin 503",
+    "no Chrome page exceptions"
+  ],
+  "events": [
+    {
+      "step": "Initial real loopback service worker installed",
+      "count": 1,
+      "latest": {
+        "name": "Initial real loopback service worker installed",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:16.175Z",
+        "details": {
+          "secureContext": true
+        }
+      }
+    },
+    {
+      "step": "Learning retained in",
+      "count": 1,
+      "latest": {
+        "name": "Learning retained in 0.9-japji-v1-r7",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:16.527Z",
+        "details": {
+          "version": "0.9-japji-v1-r7",
+          "lines": 385,
+          "theme": "amrit",
+          "size": 36,
+          "radiance": false,
+          "bookmarks": [
+            "pauri02.line01"
+          ],
+          "note": "Synthetic fixture matched; private content not collected",
+          "active": "activated",
+          "caches": [
+            "glp-static:http://127.0.0.1:8766/:qa-m0-01-r7-20261024T175103894668Z-loopback"
+          ]
+        }
+      }
+    },
+    {
+      "step": "Versioned update is waiting for explicit action",
+      "count": 1,
+      "latest": {
+        "name": "Versioned update is waiting for explicit action",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:17.698Z",
+        "details": {
+          "loaded": "0.9-japji-v1-r7"
+        }
+      }
+    },
+    {
+      "step": "Explicit application update completed",
+      "count": 1,
+      "latest": {
+        "name": "Explicit application update completed",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:19.652Z",
+        "details": {
+          "from": "0.9-japji-v1-r7",
+          "to": "0.9-japji-v1-m0-candidate-2"
+        }
+      }
+    },
+    {
+      "step": "Learning retained in",
+      "count": 2,
+      "latest": {
+        "name": "Learning retained in 0.9-japji-v1-m0-candidate-2",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:20.003Z",
+        "details": {
+          "version": "0.9-japji-v1-m0-candidate-2",
+          "lines": 385,
+          "theme": "amrit",
+          "size": 36,
+          "radiance": false,
+          "bookmarks": [
+            "pauri02.line01"
+          ],
+          "note": "Synthetic fixture matched; private content not collected",
+          "active": "activated",
+          "caches": [
+            "glp-static:http://127.0.0.1:8766/:qa-m0-02-m0-20261024T175103894668Z-loopback"
+          ]
+        }
+      }
+    },
+    {
+      "step": "Versioned update is waiting for explicit action",
+      "count": 2,
+      "latest": {
+        "name": "Versioned update is waiting for explicit action",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:20.514Z",
+        "details": {
+          "loaded": "0.9-japji-v1-m0-candidate-2"
+        }
+      }
+    },
+    {
+      "step": "Explicit application update completed",
+      "count": 2,
+      "latest": {
+        "name": "Explicit application update completed",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:22.425Z",
+        "details": {
+          "from": "0.9-japji-v1-m0-candidate-2",
+          "to": "0.9-japji-v1-r7"
+        }
+      }
+    },
+    {
+      "step": "Learning retained in",
+      "count": 3,
+      "latest": {
+        "name": "Learning retained in 0.9-japji-v1-r7",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:22.777Z",
+        "details": {
+          "version": "0.9-japji-v1-r7",
+          "lines": 385,
+          "theme": "amrit",
+          "size": 36,
+          "radiance": false,
+          "bookmarks": [
+            "pauri02.line01"
+          ],
+          "note": "Synthetic fixture matched; private content not collected",
+          "active": "activated",
+          "caches": [
+            "glp-static:http://127.0.0.1:8766/:qa-m0-03-r7-rollback-20261024T175103894668Z-loopback"
+          ]
+        }
+      }
+    },
+    {
+      "step": "Versioned update is waiting for explicit action",
+      "count": 3,
+      "latest": {
+        "name": "Versioned update is waiting for explicit action",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:23.281Z",
+        "details": {
+          "loaded": "0.9-japji-v1-r7"
+        }
+      }
+    },
+    {
+      "step": "Explicit application update completed",
+      "count": 3,
+      "latest": {
+        "name": "Explicit application update completed",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:25.192Z",
+        "details": {
+          "from": "0.9-japji-v1-r7",
+          "to": "0.9-japji-v1-m0-candidate-2"
+        }
+      }
+    },
+    {
+      "step": "Learning retained in",
+      "count": 4,
+      "latest": {
+        "name": "Learning retained in 0.9-japji-v1-m0-candidate-2",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:25.544Z",
+        "details": {
+          "version": "0.9-japji-v1-m0-candidate-2",
+          "lines": 385,
+          "theme": "amrit",
+          "size": 36,
+          "radiance": false,
+          "bookmarks": [
+            "pauri02.line01"
+          ],
+          "note": "Synthetic fixture matched; private content not collected",
+          "active": "activated",
+          "caches": [
+            "glp-static:http://127.0.0.1:8766/:qa-m0-04-m0-repeat-20261024T175103894668Z-loopback"
+          ]
+        }
+      }
+    },
+    {
+      "step": "Reader reload completed",
+      "count": 1,
+      "latest": {
+        "name": "Reader reload completed",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:25.933Z",
+        "details": {
+          "count": 385
+        }
+      }
+    },
+    {
+      "step": "Learning retained in",
+      "count": 5,
+      "latest": {
+        "name": "Learning retained in 0.9-japji-v1-m0-candidate-2",
+        "status": "PASS",
+        "at": "2026-10-24T17:54:26.286Z",
+        "details": {
+          "version": "0.9-japji-v1-m0-candidate-2",
+          "lines": 385,
+          "theme": "amrit",
+          "size": 36,
+          "radiance": false,
+          "bookmarks": [
+            "pauri02.line01"
+          ],
+          "note": "Synthetic fixture matched; private content not collected",
+          "active": "activated",
+          "caches": [
+            "glp-static:http://127.0.0.1:8766/:qa-m0-04-m0-repeat-20261024T175103894668Z-loopback"
+          ]
+        }
+      }
+    }
+  ],
+  "browserErrors": [],
+  "physicalIPhone": "NOT_RUN",
+  "privateLearning": "NOT_ACCESSED",
+  "status": "PASS",
+  "done": "2026-10-24T17:54:26.316Z"
+}

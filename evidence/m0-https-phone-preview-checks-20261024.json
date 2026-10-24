@@ -1,0 +1,77 @@
+{
+  "origin": "https://act-blank-depot-verification.trycloudflare.com",
+  "checkedAt": "2026-10-24T17:58:38.830Z",
+  "checks": [
+    {
+      "label": "HTTPS preview navigation",
+      "details": "ok"
+    },
+    {
+      "label": "Secure-context HTTPS and Web Locks",
+      "details": {
+        "isSecureContext": true,
+        "hasSW": true,
+        "hasLocks": true,
+        "version": "0.9-japji-v1-m0-candidate-2",
+        "lines": 385,
+        "draftMeanings": 385,
+        "study": 42
+      }
+    },
+    {
+      "label": "Correct M0 runtime"
+    },
+    {
+      "label": "All bilingual meaning drafts and 42 Study sections"
+    },
+    {
+      "label": "Original Gurmukhi matches immutable dataset"
+    },
+    {
+      "label": "Real worker registered under temporary HTTPS origin"
+    },
+    {
+      "label": "Site reopens under installed service worker"
+    },
+    {
+      "label": "Menu shows 4 grouped actions, no towering stack"
+    },
+    {
+      "label": "Saved learning opens without changing page"
+    },
+    {
+      "label": "Real saved reflection stored via app UI"
+    },
+    {
+      "label": "Real HTML reload retains synthetic Punjabi reflection"
+    },
+    {
+      "label": "No unexpected autoplay"
+    },
+    {
+      "label": "320 CSS width and 54px dock without overflow",
+      "details": {
+        "width": 320,
+        "scrollWidth": 320,
+        "dock": 54,
+        "location": 62
+      }
+    },
+    {
+      "label": "No uncaught browser JavaScript exceptions",
+      "details": {
+        "errors": 0
+      }
+    },
+    {
+      "label": "No third-party requests from static reader",
+      "details": {
+        "untrusted": []
+      }
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Fresh isolated desktop Chrome via temporary Cloudflare HTTPS; not real physical iPhone or user Safari",
+  "physicalIPhone": "NOT TESTED"
+}
