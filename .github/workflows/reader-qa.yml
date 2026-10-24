@@ -23,3 +23,5 @@ jobs:
         run: node --check js/japji-full.js
       - name: Revision 6 preservation and preferences
         run: node tests/r6-contract.mjs
+      - name: Revision 7 home, pace and rooms contracts
+        run: node tests/r7-contract.mjs

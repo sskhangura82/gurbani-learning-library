@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Chrome starts",
+    "Home installed versioned hashed shell without opening reader",
+    "Home page under active service worker",
+    "All 32 manifest responses were cached",
+    "Home works while network is blocked",
+    "Complete Japji reader works while network blocked",
+    "Simran preview works while network blocked",
+    "Gurdwara directory works while network blocked"
+  ],
+  "count": 8,
+  "fail": null,
+  "checkedAt": "2026-10-24T00:50:27.001Z",
+  "environment": "Isolated Mac Chrome CDP offline network emulation",
+  "limits": [
+    "Not real iPhone airplane mode",
+    "No network-provider playback tested"
+  ]
+}

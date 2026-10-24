@@ -1,0 +1,41 @@
+:root{color-scheme:light;--paper:#f7f2e7;--surface:#fffcf6;--ink:#302c25;--muted:#655c4e;--line:#ded4c0;--gold:#806027;--hue:#eee1bc;--herotext:#322b20;--shadow:0 15px 45px rgba(71,55,33,.055)}
+:root[data-theme=amrit],body[data-theme=amrit]{color-scheme:dark;--paper:#111a2a;--surface:#1b2639;--ink:#f7e8c8;--muted:#c1b6a3;--line:#364255;--gold:#f0cf87;--hue:#24334c;--herotext:#fbebc9;--shadow:0 15px 60px #0002}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.7;min-width:280px;transition:background .2s,color .2s}
+button,a,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.skip{position:absolute;top:-100px;left:14px;background:var(--surface);padding:10px;z-index:100}.skip:focus{top:7px}
+.page-shell{max-width:1080px;margin:auto;padding:0 clamp(18px,4.5vw,58px) 28px}.home-header{padding:25px 0;display:flex;align-items:center;justify-content:space-between;gap:14px}.wordmark{font-size:12px;letter-spacing:.19em;font-weight:700;line-height:1.5;text-decoration:none;color:var(--ink)}.wordmark span{display:block;color:var(--muted);font-size:9px;letter-spacing:.145em;font-weight:500}
+#home-theme{border:1px solid var(--line);color:var(--ink);background:transparent;font-size:12px;padding:9px 12px;border-radius:100px;min-height:44px;white-space:nowrap}
+.home-hero{text-align:center;padding:20px 0 50px;max-width:790px;margin:auto;position:relative}.opening{font:60px/1.3 'Gurmukhi MN','Noto Serif Gurmukhi',serif;color:var(--gold);margin:10px 0 30px;text-shadow:0 0 45px rgba(188,151,79,.15)}.smallline{font-size:10px;letter-spacing:.26em;font-weight:600;color:var(--gold)}.home-hero h1{font:clamp(40px,7.4vw,72px)/1.13 Georgia,'Times New Roman',serif;letter-spacing:-.03em;font-weight:400;margin:18px auto 16px;color:var(--herotext)}.home-hero h1 em{font-weight:400;color:var(--gold)}.hero-copy{font-size:clamp(14px,2.4vw,18px);color:var(--muted);max-width:470px;margin:0 auto;line-height:1.9}.hero-rule{width:58px;height:1px;background:var(--gold);opacity:.6;margin:36px auto 0}
+#destinations{max-width:860px;margin:auto}.nitnem-card{display:block;position:relative;text-decoration:none;color:var(--ink);background:linear-gradient(114deg,var(--surface) 0%,var(--surface) 62%,var(--hue) 100%);border:1px solid var(--line);border-radius:22px;padding:clamp(25px,5vw,48px);overflow:hidden;box-shadow:var(--shadow)}.nitnem-card:hover,.destination:hover{border-color:var(--gold);transform:translateY(-1px)}
+.nitnem-text{position:relative;z-index:1;max-width:510px}.section-kicker,.destination-kicker{font-size:11px;color:var(--gold);letter-spacing:.16em;font-weight:650}.nitnem-card h2{font:clamp(34px,6vw,51px)/1.2 Georgia,serif;font-weight:400;letter-spacing:-.025em;margin:20px 0 13px}.nitnem-card h2 span{display:block;font:clamp(23px,3.8vw,31px)/1.8 'Gurmukhi MN','Noto Serif Gurmukhi',serif;color:var(--gold)}.nitnem-card p{font-size:15px;line-height:1.85;color:var(--muted);max-width:435px;margin:13px 0 24px}
+.feature-link{display:inline-flex;gap:15px;align-items:center;border-bottom:1px solid var(--gold);padding:9px 0;font-size:15px;font-weight:600;color:var(--ink)}.feature-link span{color:var(--gold);font-size:21px}.card-foot{display:block;margin-top:35px;font-size:11px;color:var(--muted)}.card-mark{position:absolute;right:3%;top:25%;opacity:.07;font:230px/1 'Gurmukhi MN',serif;color:var(--gold);pointer-events:none}
+.destination-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.destination{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:280px;padding:26px;border-radius:19px;overflow:hidden;text-decoration:none;border:1px solid var(--line);transition:transform .2s,border-color .2s}.destination h2{font:31px Georgia,serif;font-weight:400;margin:37px 0 8px}.destination p{font-size:13px;line-height:1.8;margin:0 0 20px;max-width:265px}.destination-link{display:block;margin-top:auto;border-bottom:1px solid currentColor;padding-bottom:4px;font-size:12px;font-weight:650}.destination-symbol{position:absolute;right:23px;top:9px;font:60px Georgia,serif;opacity:.17}
+.gurdwara-card{background:linear-gradient(145deg,#f3e4d5,#f5ecdf);color:#463526}.gurdwara-card .destination-kicker{color:#805e3b}
+.simran-card{background:linear-gradient(138deg,#1d3840,#142e35);color:#f4e7ce;border-color:#35525a}.simran-card .destination-kicker{color:#b4d4bf}
+.library-future{max-width:760px;margin:75px auto 40px;text-align:center}.library-future h2{font:clamp(29px,4vw,39px)/1.35 Georgia,serif;font-weight:400;margin:15px 0}.library-future>p:not(.smallline){max-width:580px;margin:14px auto;color:var(--muted);line-height:1.9;font-size:14px}.library-future .coming{font-size:12px!important;line-height:1.9!important}.footer{border-top:1px solid var(--line);padding-top:23px;max-width:860px;margin:auto;color:var(--muted);text-align:center}.footer p{font-size:12px;line-height:1.8}.footer summary{font-size:12px;color:var(--gold);cursor:pointer;min-height:44px;display:inline-flex;align-items:center}.footer .small{font-size:10px}
+@media(max-width:620px){.home-header{padding-top:18px;padding-bottom:8px}.opening{font-size:49px;margin:13px 0 23px}.home-hero{padding-top:12px;padding-bottom:39px}.home-hero h1{font-size:clamp(37px,10vw,49px);max-width:330px}.hero-copy{max-width:310px}.hero-rule{margin-top:30px}.nitnem-card{padding:24px 22px 29px}.nitnem-card h2{margin:12px 0;font-size:36px}.nitnem-card p{font-size:13px}.card-foot{margin-top:28px}.card-mark{right:-20px;top:50px;font-size:170px}.destination-grid{grid-template-columns:1fr;gap:11px}.destination{min-height:186px;padding:22px}.destination h2{font-size:28px;margin:17px 0 4px}.destination p{font-size:12px;margin:0 0 12px;max-width:275px}.destination-symbol{font-size:42px}.library-future{margin-top:55px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:after,*:before{transition:none!important;animation:none!important}}
+/* Phone home: all three destinations should be discoverable near the first viewport. */
+@media(max-width:620px){
+ .home-hero{padding:5px 0 22px}
+ .opening{font-size:43px;margin:0 0 9px}
+ .home-hero h1{font-size:38px;margin:9px auto 8px;max-width:345px}
+ .hero-copy{font-size:13px;line-height:1.6;max-width:330px}
+ .hero-rule{margin-top:19px}
+ .nitnem-card{padding:19px 20px 20px}
+ .nitnem-card h2{font-size:32px;margin:9px 0 4px}
+ .nitnem-card h2 span{font-size:23px;line-height:1.5}
+ .nitnem-card p{font-size:12px;line-height:1.65;margin:4px 0 10px}
+ .feature-link{padding:5px 0;font-size:13px}
+ .card-foot{margin-top:13px;font-size:10px}
+ .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:10px}
+ .destination{min-height:189px;padding:16px 12px}
+ .destination-kicker{font-size:9px;line-height:1.3}
+ .destination h2{font-size:23px;margin:12px 0 7px}
+ .destination p{font-size:11px;line-height:1.55;margin:0 0 8px}
+ .destination-link{font-size:11px}
+ .destination-symbol{right:13px;top:5px;font-size:34px}
+}
+@media(max-width:345px){
+ .home-hero h1{font-size:34px}.destination{min-height:224px}.destination h2{font-size:22px}
+ .destination-link{font-size:10px}
+}
