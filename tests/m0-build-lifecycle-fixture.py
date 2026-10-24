@@ -1,5 +1,5 @@
 """Build four isolated loopback bundles. No server, browser control or production writes."""
-import argparse,ast,json,re,shutil,subprocess
+import argparse,ast,json,re,shutil,subprocess,datetime
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--r7',required=True,type=Path);p.add_argument('--candidate',type=Path,default=Path(__file__).resolve().parent.parent);p.add_argument('--output',required=True,type=Path);a=p.parse_args()
 if a.output.exists():p.error('Output must be new; existing files are never overwritten')
@@ -10,6 +10,7 @@ for source in [a.r7,a.candidate]:
  for name in names:
   if not (source/name).is_file():p.error('Missing runtime file: '+str(source/name))
 a.output.mkdir(parents=True)
+run_id=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
 for stage,source in [('01-r7',a.r7),('02-m0',a.candidate),('03-r7-rollback',a.r7),('04-m0-repeat',a.candidate)]:
  dest=a.output/stage;dest.mkdir()
  for name in names:
@@ -17,7 +18,7 @@ for stage,source in [('01-r7',a.r7),('02-m0',a.candidate),('03-r7-rollback',a.r7
  for path in dest.rglob('*.js'):path.write_text(path.read_text().replace('glp001.','glp001.qa-m0.'))
  (dest/'tests').mkdir()
  for name in ['m0-sw-browser.html','m0-sw-browser.js','build-sw.mjs']:shutil.copy2(root/'tests'/name,dest/'tests'/name)
- version='qa-m0-'+stage+'-20261024'
+ version='qa-m0-'+stage+'-'+run_id
  subprocess.run(['node','tests/build-sw.mjs',version],cwd=dest,check=True)
  (dest/'tests/build-sw.mjs').unlink()
  (dest/'fixture-stage.json').write_text(json.dumps({'stage':stage,'version':version}))

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-24",
+  "runtimeCommit": "d1e79d645d2e0a27fd9aa94a32c7f520ed4bbfdb",
+  "method": "Controlled desktop Chrome keyboard input through the actual UI; informal accessibility check",
+  "checks": [
+    {
+      "name": "Pace slider End key sets 160",
+      "status": "PASS",
+      "observed": "Visible pace output 160"
+    },
+    {
+      "name": "Tab from the pace slider reaches the increment control",
+      "status": "PASS",
+      "observed": "Focused control id pace-more"
+    },
+    {
+      "name": "Escape closes native pace modal and restores dock focus",
+      "status": "PASS",
+      "observed": "No open attribute on pace-tray; focused control id tools-open"
+    }
+  ],
+  "physicalVoiceOver": "NOT RUN",
+  "qualifiedAccessibilityReview": "NOT CLAIMED"
+}

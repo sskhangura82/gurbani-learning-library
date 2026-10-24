@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "total": 61,
+  "total": 88,
   "checks": [
     {
       "name": "385 mounted occurrences exactly reconstruct frozen source text and IDs",
@@ -94,6 +94,10 @@
       "status": "PASS"
     },
     {
+      "name": "Pace provides an explicit return to the grouped Reading menu",
+      "status": "PASS"
+    },
+    {
       "name": "Read to Understand preserves occurrence, offset and guide",
       "status": "PASS",
       "details": {
@@ -138,6 +142,10 @@
       "status": "PASS"
     },
     {
+      "name": "All 385 meaning drafts retain visible provenance during immersive reading",
+      "status": "PASS"
+    },
+    {
       "name": "Pause holds the exact guide word",
       "status": "PASS"
     },
@@ -156,7 +164,7 @@
         "before": {
           "anchor": {
             "id": "pauri02.line06",
-            "top": -76.625
+            "top": -97.625
           },
           "guide": {
             "index": 16,
@@ -169,7 +177,7 @@
         "after": {
           "anchor": {
             "id": "pauri02.line06",
-            "top": -77
+            "top": -98
           },
           "guide": {
             "index": 16,
@@ -297,7 +305,7 @@
       "name": "320px / 48px: focused meaning 384 is above dock",
       "status": "PASS",
       "details": {
-        "top": 637.09375,
+        "top": 616.09375,
         "bottom": 755.46875,
         "dockTop": 782
       }
@@ -324,7 +332,7 @@
       "name": "390px / 48px: focused meaning 384 is above dock",
       "status": "PASS",
       "details": {
-        "top": 637.8125,
+        "top": 616.8125,
         "bottom": 756.1875,
         "dockTop": 782
       }
@@ -382,6 +390,466 @@
     {
       "name": "Existing gurdwara directory and deliberate broadcaster entry retained",
       "status": "PASS"
+    },
+    {
+      "name": "Sources panel identifies the actual M0 candidate version",
+      "status": "PASS"
+    },
+    {
+      "name": "320px / 30px / day / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "day",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 14
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 30px / day / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "day",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 13.546875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 30px / day / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "day",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 13.4375
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 30px / amrit / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "amrit",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 13
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 30px / amrit / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "amrit",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 12.546875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 30px / amrit / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "amrit",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 12.4375
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 60px / day / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "day",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 12
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 60px / day / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "day",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 11.546875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 60px / day / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "day",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 11.4375
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 60px / amrit / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "amrit",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 11
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 60px / amrit / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "amrit",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 10.546875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "320px / 60px / amrit / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "amrit",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line01",
+          "top": 10.4375
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 30px / day / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "day",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 30px / day / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "day",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19.1875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 30px / day / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "day",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 30px / amrit / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "amrit",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 30px / amrit / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "amrit",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19.1875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 30px / amrit / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "30px",
+        "lineHeight": "57px",
+        "theme": "amrit",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 60px / day / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "day",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 60px / day / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "day",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19.1875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 60px / day / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "day",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 60px / amrit / read: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "amrit",
+        "mode": "read",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 60px / amrit / understand: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "amrit",
+        "mode": "understand",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19.1875
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px / 60px / amrit / study: no overflow, 54px dock and legible scripture line box",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "dockHeight": 54,
+        "topChrome": 0,
+        "scriptureSize": "60px",
+        "lineHeight": "114px",
+        "theme": "amrit",
+        "mode": "study",
+        "immersive": true,
+        "anchor": {
+          "id": "pauri03.line09",
+          "top": -19
+        },
+        "overflow": false
+      }
     }
   ],
   "environment": {
@@ -395,7 +863,7 @@
     "topChrome": 0,
     "scriptureSize": "30px",
     "lineHeight": "57px",
-    "theme": "amrit",
+    "theme": "day",
     "mode": "read",
     "immersive": true,
     "anchor": {

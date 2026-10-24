@@ -7,7 +7,7 @@ This is a **candidate-only** packet. Nothing in these instructions authorizes me
 - Verified base main: `254f3871b785b756208379138dcc17472a3733ff`.
 - Accepted R7 runtime: `57d0acdf43b6f4935e159468128ec9a503b5aaa1`, tag `japji-v1-0.9-r7`.
 - R7 service worker: `0.9-japji-v1-r7-home-speed-2`.
-- Candidate worker: `0.9-japji-v1-m0-candidate-1`; 32 content-hash-checked cache routes.
+- Candidate worker: `0.9-japji-v1-m0-candidate-2`; 32 content-hash-checked cache routes.
 - R7 runtime custody hashes: `R7_APP_MANIFEST.json`; candidate hashes: `M0_APP_MANIFEST.json`.
 - Unchanged learning record keys and schemas; `js/shared-learning.js` is byte-identical to R7. No clearing, renaming, migrating or uploading family browser storage.
 

@@ -26,12 +26,12 @@ The R7 home, Gurdwara and Simran navigation, editorial drafts, original source a
 | Portable regression suite | PASS — 75 checks | `evidence/m0-portable.json`; 27 source/learning + 8 worker simulation + 12 shared-learning simulation + 7 R6 + 12 R7 + 9 M0 |
 | Source and draft coverage | PASS | 385 exact Gurmukhi hashes; 385 English and 385 Punjabi short drafts; 42 Study drafts across 42 units / 38 pauris; `evidence/m0-coverage.json` |
 | R7 preservation | PASS | 28 unchanged runtime files; `tests/fixtures/m0-r7-preserved-sha256.json` |
-| Desktop browser regression | PASS — 61 checks | Real Chrome rendering at CSS viewports; in-page scripted checks are not physical iPhone or Web Locks evidence |
+| Desktop browser regression | PASS — 88 checks | Real Chrome rendering at CSS viewports; in-page scripted checks are not physical iPhone or Web Locks evidence |
 | Keyboard pace / Escape | PASS, informal | End sets 160; Tab reaches increment; Escape closes the native dialog and focus returns to `tools-open` |
 | Actual browser R7 → M0 → R7 → M0 | **NOT RUN — BLOCKED** | Available controlled preview is insecure HTTP; no service worker or Web Locks. Four versioned loopback bundles built successfully; not executed in a controlled loopback browser |
 | Browser saved-learning write / reload / upgrade | **NOT RUN — BLOCKED** | Insecure preview safely refuses writes without Web Locks. Portable export/import, stale-tab and concurrency contracts pass; no claim of real-browser persistence |
 | Physical iPhone Safari / Home Screen / VoiceOver / Dynamic Type / airplane mode | **NOT RUN — BLOCKED** | No physical iPhone available. Exact PR #10 manual matrix included with provenance |
-| Independent Claude design review | PENDING | Complete packet will be reviewed before the candidate PR is returned; cannot close device/lifecycle gates |
+| Independent Claude design review | CONDITIONAL PASS (candidate 1); candidate 2 follow-up pending | Original review and integration decisions are preserved; device/lifecycle gates remain blocked |
 | Independent Pauri 13 line 1 comparison | **OPEN** | No source decision or text edit in this UI work |
 | Qualified religious / translation review | NOT COMPLETE | All bilingual meanings and Study drafts retain their honest review status |
 
@@ -54,3 +54,11 @@ Do not infer OS-level 200% Dynamic Type, global browser zoom, VoiceOver, reduced
 ## Open requirements and next acceptance step
 
 Keep this PR draft and unmerged until the actual versioned lifecycle, browser persistence and physical iPhone matrix pass, and the founder accepts the complete candidate. Review any Claude findings and resolve material issues before acceptance. See `M0_ROLLBACK_AND_LIFECYCLE.md` for pinned R7 rollback, test-only fixture commands, downgrade-size caveat and no-data-loss rules. A blocked candidate is never the family release.
+
+Candidate 2 resolves Claude findings D1, D2 and D4; see `M0_REVIEW_DECISIONS.md`. Draft labels remain visible under every meaning, Sources shows the actual candidate identity, and Pace offers an explicit Reading-menu return. The compact label Meaning is mapped explicitly to Understand. Runtime worker version advanced for the changed shell.
+
+## Physical checklist provenance
+
+`docs/acceptance/M0_PHYSICAL_IPHONE_ACCEPTANCE.md` is copied byte-for-byte from PR #10 head `860b7820c164154620a2a729be0729f3461feb00`. Its family URL references identify R7, not an M0 test address. Before running M0 device acceptance, record a controlled candidate URL and verify the M0 runtime/worker; testing the current family R7 release cannot pass M0. R8/video rows in that shared checklist are outside M0 scope. All M0 physical rows remain NOT RUN.
+
+Additional screenshots: `m0-grouped-menu-320.jpg` provides a same-width comparison with R7, and `m0-pace-back-390.jpg` shows the explicit return action. All candidate screenshots are desktop approximations; see the original review for the first-pass findings.
