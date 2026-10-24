@@ -62,7 +62,8 @@ try{
  await send('Emulation.setDeviceMetricsOverride',{width:320,height:740,deviceScaleFactor:1,mobile:true},session);check('Simran 320px no sideways overflow',await evaljs('document.documentElement.scrollWidth<=innerWidth'));
  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]},session);check('Reduced motion controls honored',await evaljs('matchMedia("(prefers-reduced-motion: reduce)").matches'));
  check('No uncaught JS errors',exceptions.length===0);
- check('No third-party requests before explicit outbound visit',requests.every(u=>u.startsWith(base+'/')||u==='about:blank'||u.startsWith('data:')));
+ console.log('OBSERVED_NETWORK_URLS',JSON.stringify([...new Set(requests)]));
+ check('No third-party requests before explicit outbound visit',requests.every(u=>u.startsWith(base+'/')||u===new URL('/favicon.ico',base).href||u==='about:blank'||u.startsWith('data:')));
  console.log('COMPLETE',checks.length,'browser checks');
 }catch(e){fail=String(e);console.error('FAIL',fail);try{await snap('failure');}catch(_){} }
 finally{
