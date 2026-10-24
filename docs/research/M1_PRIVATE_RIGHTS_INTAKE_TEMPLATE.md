@@ -36,6 +36,9 @@ We may not submit the recording to an external model or cloud service based on a
 - Authorized person and role: record privately, outside public repo: `__________`.
 - Confirmation method and date: `__________`.
 - Private rights record reference: `rights-__________`.
+- Current published YouTube video ID, creator-confirmed length and source-to-video offset (milliseconds): `__________`. These do not prove permanent content identity; a creator may subsequently edit an upload.
+- At least three creator- or reviewer-checked video clock/consented original audio anchors (early, middle, late), with related exact Gurbani occurrence IDs and SHA-256s: private reviewer ledger `__________`.
+- Reviewer-check date and exact observed upload/version: `__________`. Any changed duration/offset requires re-review and a newly versioned map.
 - Source recording checksum SHA-256: `__________` (computed only after a permissible file is received).
 - Processing location and approved tools: `__________`.
 - Authorized reviewers: `__________`.

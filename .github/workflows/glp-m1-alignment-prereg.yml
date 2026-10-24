@@ -20,6 +20,8 @@ jobs:
           node-version: '22'
       - name: Verify synthetic metadata and rights gate
         run: node tests/m1-alignment-protocol.mjs
+      - name: Reject shifted video editions and unreviewed YouTube anchors
+        run: node tests/m1-youtube-edition.mjs
       - name: Confirm no media input files exist in preregistration
         run: |
           test ! -e recordings

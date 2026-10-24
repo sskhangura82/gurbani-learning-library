@@ -49,6 +49,12 @@ A versioned `recording_timings/v1/<opaque-recording-id>.json` contains:
 
 The accompanying validator is **research-only**: no media file intake, no ASR, no HTTP network, no YouTube secrets.
 
+### Video-version binding — mandatory for reviewed YouTube maps
+
+A valid original-recording checksum and YouTube video ID **alone are insufficient**. Every checked map tied to a YouTube upload also carries **recording.videoBinding**: reviewer-observed video duration in milliseconds; signed constant source-to-video offset; checked-at date; and at least three diverse, independent, human-confirmed anchor pairs. Each anchor binds a canonical Gurmukhi line occurrence and SHA, its time in the separately permitted source file, and its time in the reviewed YouTube edition. The validator rejects anchors outside their mapped tuk, anchors inconsistent with the offset, and anchors with altered text or missing confirmation.
+
+At actual playback, the application must call its video-binding gate using the official player-reported video ID and duration. A mismatch, unknown duration, unreviewed upload or altered source identity yields **NOT SYNCHRONIZED**, not a guessed scroll. An eight-second intro added under the same YouTube ID is a tested rejection case. **Same-duration content edits cannot be detected reliably from metadata alone**; this must remain a published limitation and an occasion for human re-verification.
+
 ## Proposed sampling and blind review
 
 For the first single permitted recording:

@@ -19,6 +19,36 @@ export function createLineIndex(units){
  return registry;
 }
 
+/* Bind reviewed timing to the actual checked YouTube upload/edition, not merely its ID.
+   Anchors attest manual checking; they cannot fingerprint a mutable YouTube stream.
+   An edited video with identical duration may be undetectable at runtime. */
+function checkVideoBinding(map,lineIndex,errors){
+ const rec=map.recording||{},v=rec.videoBinding;
+ if(!rec.videoId)return;
+ if(!v||typeof v!=='object'){errors.push(issue('youtube_version_binding_required'));return;}
+ if(!Number.isInteger(v.observedDurationMs)||v.observedDurationMs<=0||v.observedDurationMs>86400000)errors.push(issue('video_duration_invalid'));
+ if(!Number.isInteger(v.sourceOffsetMs)||Math.abs(v.sourceOffsetMs)>3600000)errors.push(issue('video_source_offset_invalid'));
+ if(!/^20\d\d-\d\d-\d\d$/.test(v.checkedAt||''))errors.push(issue('video_version_review_date_required'));
+ if(!Array.isArray(v.anchors)||v.anchors.length<3||v.anchors.length>100) {errors.push(issue('video_anchor_count_invalid'));return;}
+ const seen=new Set();let previous=-1;
+ for(let i=0;i<v.anchors.length;i++){
+  const a=v.anchors[i],src=lineIndex?.get(a?.occurrenceId);
+  if(!src||src.sha256!==a.sourceSha256||seen.has(a.occurrenceId)){errors.push(issue('anchor_occurrence_unverified',i));continue;}
+  seen.add(a.occurrenceId);
+  if(a.reviewerConfirmed!==true)errors.push(issue('anchor_human_check_missing',i));
+  if(!Number.isInteger(a.videoTimeMs)||!Number.isInteger(a.sourceTimeMs)||a.videoTimeMs<0||a.sourceTimeMs<0||a.videoTimeMs<previous||a.videoTimeMs>=v.observedDurationMs)errors.push(issue('anchor_clock_invalid',i));
+  if(Number.isInteger(v.sourceOffsetMs)&&Math.abs(a.videoTimeMs-a.sourceTimeMs-v.sourceOffsetMs)>500)errors.push(issue('anchor_offset_mismatch',i));
+  const matched=segmentAt(map.segments,a.videoTimeMs);
+  if(!matched||matched.occurrenceId!==a.occurrenceId)errors.push(issue('anchor_does_not_match_reviewed_video_segment',i));
+  previous=a.videoTimeMs;
+ }
+ if(v.anchors.length>=3&&Array.isArray(map.segments)&&map.segments.length){
+  const span=(map.segments.at(-1).endMs-map.segments[0].startMs);
+  const spread=v.anchors.at(-1).videoTimeMs-v.anchors[0].videoTimeMs;
+  if(Number.isFinite(span)&&spread<span*.35)errors.push(issue('anchor_distribution_too_narrow'));
+ }
+}
+
 export function validateTimingMap(map,{lineIndex,scriptureRelease,corpusSha256,forPublic=false,durationMs=null}={}){
  const errors=[];
  if(!(lineIndex instanceof Map)||lineIndex.size===0)errors.push(issue('no_canonical_index'));
@@ -76,6 +106,7 @@ export function validateTimingMap(map,{lineIndex,scriptureRelease,corpusSha256,f
   }
  }
  const reviewed=['line_checked','word_checked'].includes(map.reviewStatus);
+ if(reviewed&&rec.videoId)checkVideoBinding(map,lineIndex,errors);
  const seal=map.reviewer||{};
  if(reviewed&&(!/^timing-review-[A-Za-z0-9_-]{4,96}$/.test(seal.reviewRecordId||'')||typeof seal.role!=='string'||seal.role.trim().length<3||!/^20\d\d-\d\d-\d\d$/.test(seal.date||'')))errors.push(issue('qualified_review_record_missing'));
  if(forPublic){
@@ -86,6 +117,18 @@ export function validateTimingMap(map,{lineIndex,scriptureRelease,corpusSha256,f
  const valid=errors.length===0;
  const safeSegments=Array.isArray(map.segments)?map.segments:[];
  return {valid,eligibleForSynchronizedDisplay:Boolean(valid&&reviewed&&rec.provenance!=='synthetic_fixture'),reviewStatus:map.reviewStatus,mappedSegments:safeSegments.filter(s=>s?.kind==='mapped').length,coveredOccurrences:new Set(safeSegments.filter(s=>s?.kind==='mapped').map(s=>s.occurrenceId)).size,errors};
+}
+
+/* Strict, metadata-only runtime gate. No access to video pixels/audio is assumed. */
+export function assessYouTubePlayback(map,opts,{videoId,providerDurationMs}={}){
+ const validated=validateTimingMap(map,{...opts,forPublic:true});
+ if(!validated.eligibleForSynchronizedDisplay)return {syncAllowed:false,reason:'rights_review_or_video_binding_failed'};
+ const binding=map.recording?.videoBinding;
+ if(!binding||map.recording.videoId!==videoId)return {syncAllowed:false,reason:'youtube_id_mismatch'};
+ if(!Number.isFinite(providerDurationMs)||providerDurationMs<=0)return {syncAllowed:false,reason:'video_duration_unavailable'};
+ const tolerance=Math.min(2000,Math.max(1000,binding.observedDurationMs*.001));
+ if(Math.abs(providerDurationMs-binding.observedDurationMs)>tolerance)return {syncAllowed:false,reason:'video_edition_duration_mismatch'};
+ return {syncAllowed:true,reason:'id_duration_reviewed_anchors_match_metadata',limits:'Cannot detect same-duration content edits automatically; re-check suspicious uploads'};
 }
 
 export function segmentAt(segments,clockMs){

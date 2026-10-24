@@ -37,6 +37,15 @@
 | Reduced Motion | Device Accessibility → Reduce Motion; no compulsory breathing radiance or smooth scroll; current passage remains indicated without glow | NOT RUN |
 | Long session | 20–30 minutes of uninterrupted reading and controlled pause/resume without accumulating drift, heat or lost place | NOT RUN |
 | R8 YouTube beta (separate candidate) | Do **not** test on family site until PR #7 has a valid controlled test address and provider policy review; embedded real visible video, user gesture and close/pause | NOT RUN |
+| R8 visible player identity | On a separately controlled R8 candidate, select a real embeddable Japji video by intentional tap; check official player ≥200×200 with complete branding, ads and controls, no audio-only extractor | NOT RUN |
+| Consent and playback gesture | No YouTube requests before load; user presses Play; no unexpected autoplay, muted background trick or external scraping | NOT RUN |
+| Real playback clock and seek | Pausing, seeking backward/forward and changing YouTube playback speed update the official clock; manual guide never falsely claims synchronization | NOT RUN |
+| Safe Study/modal transitions | Opening a deep meaning while YouTube plays pauses video and keeps it visible/policy-compliant or stops it; closing never secretly leaves audio playing | NOT RUN |
+| Unmapped video handling | A chosen unmapped recording plays visibly but the reader says **not synchronized** and never lights a false matching line | NOT RUN |
+| Edited-upload duration mismatch | Using an approved controlled test descriptor only, simulate same video ID with +8000 ms longer runtime; line-match gate refuses sync and falls back to manual | NOT RUN |
+| Provider buffering/ad/failed embed | Buffer, ad break, disabled embed, closed player, screen lock and Home Screen background return do not leave hidden playing video or confidently wrong text highlight | NOT RUN |
+| Phone screen constraints | At portrait/landscape 320/390 CSS width, official player remains at least 200×200, dock and Gurbani are reachable, no cropped matras or inaccessible controls | NOT RUN |
+| Video privacy/permission | Consent to contact YouTube is understandable; no media download, arbitrary caption scraping, background audio guarantee or private user recording upload | NOT RUN |
 
 ## Evidence and decision fields (fill after running; no sensitive identifiers)
 

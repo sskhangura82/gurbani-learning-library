@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {createLineIndex,validateTimingMap,segmentAt,boundaryError} from '../tools/alignment/alignment-core.mjs';
+import {createLineIndex,validateTimingMap,assessYouTubePlayback,segmentAt,boundaryError} from '../tools/alignment/alignment-core.mjs';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const bytes=fs.readFileSync(path.join(root,'js/japji-full-data.js'));
 const ctxt={window:{}};vm.runInNewContext(bytes.toString('utf8'),ctxt);
@@ -24,6 +24,17 @@ const synthetic={
  {kind:'unmapped',reason:'commentary',startMs:3700,endMs:4100},
  {kind:'mapped',occurrenceId:ids[2],sourceSha256:lines[2].sha256,startMs:4100,endMs:6000}
  ]};
+function bindCheckedVideo(map){
+ map.recording.videoBinding={
+  observedDurationMs:9900,sourceOffsetMs:1000,checkedAt:'2026-10-24',
+  anchors:[
+   {occurrenceId:ids[0],sourceSha256:lines[0].sha256,videoTimeMs:1500,sourceTimeMs:500,reviewerConfirmed:true},
+   {occurrenceId:ids[1],sourceSha256:lines[1].sha256,videoTimeMs:2900,sourceTimeMs:1900,reviewerConfirmed:true},
+   {occurrenceId:ids[2],sourceSha256:lines[2].sha256,videoTimeMs:5000,sourceTimeMs:4000,reviewerConfirmed:true}
+  ]
+ };
+ return map;
+}
 const clone=x=>structuredClone(x);
 const errors=m=>validateTimingMap(m,opts).errors.map(e=>e.reason);
 const checks=[];const check=(label,fn)=>{fn();checks.push(label);};
@@ -72,6 +83,7 @@ check('Only checked line map with recording rights and review seal can sync',()=
  const map=clone(synthetic);map.reviewStatus='line_checked';
  map.recording={recordingId:'pilot_0003',provenance:'creator_supplied',contentSha256:'a'.repeat(64),videoId:'M7lc1UVf-VE',rights:{privateConsentRef:'rights-consent_00003',analysisPermitted:true,publicTimingMetadataPermitted:true,publicReferencePermitted:true}};
  map.reviewer={reviewRecordId:'timing-review-00003',role:'independent_timing_reviewer',date:'2026-10-24'};
+ bindCheckedVideo(map);
  assert.equal(validateTimingMap(map,{...opts,forPublic:true}).eligibleForSynchronizedDisplay,true);
  map.recording.rights.publicTimingMetadataPermitted=false;
  assert.equal(validateTimingMap(map,{...opts,forPublic:true}).eligibleForSynchronizedDisplay,false);
