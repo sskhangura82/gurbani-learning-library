@@ -32,6 +32,7 @@ The mechanically complete 42 entries are valuable *seeds*. The test does **not**
 - Auditor: `node tests/m2-editorial-audit.mjs`.
 - Exemplar binding check: `node tests/m2-exemplar-integrity.mjs`.
 - Artifact: `M2_EXEMPLAR_SOURCE_BINDINGS.json` with all 12 immutable occurrence hashes and frozen-file SHA-256. These tests check source identity and the presence of the nine teaching movements—not whether an interpretation is correct.
+- Additional Claude review repair: 11 source/exegesis-structure checks via node tests/m2-quote-fidelity.mjs. It enforces twelve full exact Gurbani quotes with canonical IDs, real vocabulary tokens (including ਚੁਪੈ · ਚੁਪ), five Hukam forms counted eleven times, strict close-meaning verbs and ਲਿਖਿ, seven independently ordered sections in each pauri, and named interpretation variants. This tests textual fidelity and chapter structure, NOT qualified religious accuracy.
 - No user notes, recordings, video credentials or private annotations enter these checks.
 
 ### Qualified human review (future, separately arranged)

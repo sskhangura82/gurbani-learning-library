@@ -6,7 +6,7 @@
 
 **The question before every added paragraph:** Does this help a learner move from the actual line to an honest understanding? The canonical scripture is displayed in the app unchanged and larger than all editorial text. The reader may see (a) the original Gurmukhi, (b) one or two English/Punjabi simple-meaning sentences, and (c) this deeper Study scaffold, always reachable *without leaving the occurrence*. Nine teaching movements per pauri: Arrival → Vocabulary → Close reading → Context → Attributed differences → The turn → Connections → Reflection → Teach-back. Underlying authoring unit = the pauri; major tuks remain addressable.
 
-**Source and review codes:** [S1] Professor Sahib Singh, *Sri Guru Granth Darpan*, Ang 1, https://www.gurugranthdarpan.net/0001.html ; [S2] GNNSJ, *Jap Ji Sahib*, https://gnnsj.org/sikh-dharam/gurbani/jap-ji-sahib/ ; [S3] Sikh Research & Education Center, Japji translation, https://srec.gurmat.info/articles/sri-guru-granth-sahib/japji-sahib/ ; [S4] Teja Singh, *Japji Sahib* translation (source text/reference context only), https://library.gurmat.info/download/japji-sahib-a-translation-teja-singh.pdf ; [S5] Professor Sahib Singh, Darpan Ang 466, https://www.gurugranthdarpan.net/0466.html ; [S6] SikhRI, *Guru Granth Sahib Project: Methodology*, https://gurugranthsahib.io/info/english/methodology . A source link supports a *specific* reading, not every sentence in this draft. The teacher's comparative conclusions remain original and provisional.
+**Source and review codes:** [S1] Professor Sahib Singh, *Sri Guru Granth Darpan*, Ang 1, https://www.gurugranthdarpan.net/0001.html ; [S2] GNNSJ, *Jap Ji Sahib*, https://gnnsj.org/sikh-dharam/gurbani/jap-ji-sahib/ ; [S3] Sikh Research & Education Center, Japji translation, https://srec.gurmat.info/articles/sri-guru-granth-sahib/japji-sahib/ ; [S4] Teja Singh, *Japji Sahib* translation (source text/reference context only), https://library.gurmat.info/download/japji-sahib-a-translation-teja-singh.pdf ; [S5] Professor Sahib Singh, Darpan Ang 466, https://www.gurugranthdarpan.net/0466.html ; [S6] SikhRI, *Guru Granth Sahib Project: Methodology*, https://gurugranthsahib.io/info/english/methodology ; [S7] SriGranth (Ang 1), displayed Sant Singh Khalsa English rendering of Pauri 2, https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1 . A source link supports a *specific* reading, not every sentence in this draft. The teacher's comparative conclusions remain original and provisional.
 
 ---
 
@@ -25,7 +25,7 @@ The pauri begins with four attempts that cannot, *on their own*, bring the desir
 | Gurmukhi | Working English / Punjabi gloss | Important caution |
 |---|---|---|
 | **ਸੋਚੈ · ਸੋਚਿ · ਸੋਚੀ** | Purification/cleanliness in Sahib Singh's grammatical argument; mental thinking in other English readings. / ਸੁੱਚ-ਪਵਿੱਤਰਤਾ *ਜਾਂ* ਸੋਚਣਾ—ਵਿਆਖਿਆ ਵਿਚ ਅੰਤਰ | Do not merge the three distinct spellings or conceal the disagreement. [S1], [S2], [S3], [S4] |
-| **ਚੁਪੈ · ਚੁਪਿ** | External silence and inner quiet / ਬਾਹਰਲੀ ਚੁੱਪ ਅਤੇ ਅੰਦਰਲਾ ਟਿਕਾਉ | The line distinguishes maintaining silence from attaining peace; grammatical gloss provisional. [S1] |
+| **ਚੁਪੈ · ਚੁਪ** | By/through silence versus quiet within / ਬਾਹਰਲੀ ਚੁੱਪ ਅਤੇ ਮਨ ਦਾ ਟਿਕਾਉ | These are the two actual forms in pauri01.line02; distinguish them without changing or inventing a vowel ending. Grammar remains reviewer-pending. [S1] |
 | **ਲਿਵ ਤਾਰ** | Sustained attention/concentration / ਇਕ-ਤਾਰ ਲਿਵ | Not a prescription for breath-holding or a fixed meditation timer. [S1] |
 | **ਭੁਖਿਆ · ਭੁਖ** | Hungry/craving, often read as inner thirst / ਤ੍ਰਿਸ਼ਨਾ, ਲਾਲਸਾ | Avoid conflating every form of bodily hunger with moral failure. [S1] |
 | **ਸਹਸ ਸਿਆਣਪਾ** | Vast ingenuity/clever strategies / ਬਹੁਤ ਚਤੁਰਾਈਆਂ | Not a rejection of education; asks whether cleverness can accomplish the aim. [S1] |
@@ -39,6 +39,8 @@ The historical word forms and endings should be confirmed by a Gurbani-grammar s
 
 ### 01 · `pauri01.line01`
 
+> **Exact Gurbani · pauri01.line01:** ਸੋਚੈ ਸੋਚਿ ਨ ਹੋਵਈ ਜੇ ਸੋਚੀ ਲਖ ਵਾਰ ॥
+
 **Simple English draft:** Repetition by itself cannot give the inner purity being sought. Sahib Singh reads the line through outward cleansing; other published readings emphasize repeated thinking.
 
 **ਸੌਖੀ ਪੰਜਾਬੀ:** ਵਾਰ-ਵਾਰ ਕਰਮ ਕਰਨ ਨਾਲ ਹੀ ਮਨ ਦੀ ਸੁੱਚ ਨਹੀਂ ਆ ਜਾਂਦੀ। ਸਾਹਿਬ ਸਿੰਘ ਜੀ ਇੱਥੇ ਬਾਹਰਲੀ ਸੁੱਚ ਦਾ ਅਰਥ ਲੈਂਦੇ ਹਨ; ਹੋਰ ਅਨੁਵਾਦਾਂ ਵਿਚ 'ਸੋਚਣ' ਵਾਲਾ ਅਰਥ ਵੀ ਮਿਲਦਾ ਹੈ।
@@ -46,6 +48,8 @@ The historical word forms and endings should be confirmed by a Gurbani-grammar s
 **Study movement:** This tuk requires honest interpretive plurality. Sahib Singh's *Darpan* specifically explains the forms through **ਸੁਚਿ**, ritual purity and cleansing, and connects the argument to the fifth tuk's question. Teja Singh and other English interpretive traditions hear repeated thinking or mental reasoning. The downstream pedagogical point shared by many readings is that repetition alone does not transform a person's relation to Truth, but the *grammatical argument itself is not identical*. Let learners see both renderings before asking which stronger claim each would support. **Do not display one as the only translation.** [S1], [S2], [S3], [S4]
 
 ### 02 · `pauri01.line02`
+
+> **Exact Gurbani · pauri01.line02:** ਚੁਪੈ ਚੁਪ ਨ ਹੋਵਈ ਜੇ ਲਾਇ ਰਹਾ ਲਿਵ ਤਾਰ ॥
 
 **Simple English draft:** Even prolonged outward silence is not identical to inward stillness.
 
@@ -55,6 +59,8 @@ The historical word forms and endings should be confirmed by a Gurbani-grammar s
 
 ### 03 · `pauri01.line03`
 
+> **Exact Gurbani · pauri01.line03:** ਭੁਖਿਆ ਭੁਖ ਨ ਉਤਰੀ ਜੇ ਬੰਨਾ ਪੁਰੀਆ ਭਾਰ ॥
+
 **Simple English draft:** The hunger of craving does not cease merely because one gathers still more possessions.
 
 **ਸੌਖੀ ਪੰਜਾਬੀ:** ਜਿੰਨੇ ਮਰਜ਼ੀ ਪਦਾਰਥ ਇਕੱਠੇ ਕਰ ਲਈਏ, ਮਨ ਦੀ ਤ੍ਰਿਸ਼ਨਾ ਸਿਰਫ਼ ਇਕੱਠਾ ਕਰਨ ਨਾਲ ਨਹੀਂ ਮੁੱਕਦੀ।
@@ -62,6 +68,8 @@ The historical word forms and endings should be confirmed by a Gurbani-grammar s
 **Study movement:** The phrase about bearing the weight of worlds heightens the image: more accumulation is not necessarily the answer to desire. Sahib Singh glosses the hunger here as **ਤ੍ਰਿਸ਼ਨਾ**, and the amassed goods as the weight of the world's possessions. Do not casually translate it as clinical hunger or as an instruction for fasting. The pauri's question is not whether basic needs matter but whether acquisition alone can create the truthful life it seeks. [S1]
 
 ### 04 · `pauri01.line04`
+
+> **Exact Gurbani · pauri01.line04:** ਸਹਸ ਸਿਆਣਪਾ ਲਖ ਹੋਹਿ ਤ ਇਕ ਨ ਚਲੈ ਨਾਲਿ ॥
 
 **Simple English draft:** Countless clever strategies cannot substitute for the transformation the pauri asks about.
 
@@ -71,6 +79,8 @@ The historical word forms and endings should be confirmed by a Gurbani-grammar s
 
 ### 05 · `pauri01.line05`
 
+> **Exact Gurbani · pauri01.line05:** ਕਿਵ ਸਚਿਆਰਾ ਹੋਈਐ ਕਿਵ ਕੂੜੈ ਤੁਟੈ ਪਾਲਿ ॥
+
 **Simple English draft:** How can a person become truly shaped by Truth, and how can the separating veil of falsehood be broken?
 
 **ਸੌਖੀ ਪੰਜਾਬੀ:** ਫਿਰ ਮਨੁੱਖ ਸਚਿਆਰਾ ਕਿਵੇਂ ਬਣੇ? ਕੂੜ ਦਾ ਪੜਦਾ ਕਿਵੇਂ ਟੁੱਟੇ?
@@ -79,11 +89,13 @@ The historical word forms and endings should be confirmed by a Gurbani-grammar s
 
 ### 06 · `pauri01.line06`
 
-**Simple English draft:** Nanak's answer points to walking in Hukam—in accord with the Divine order or will—rather than treating spiritual life as accumulated achievements.
+> **Exact Gurbani · pauri01.line06:** ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥
 
-**ਸੌਖੀ ਪੰਜਾਬੀ:** ਜਵਾਬ ਹੈ—ਰਜ਼ਾ ਵਾਲੇ ਦੇ ਹੁਕਮ ਵਿਚ ਤੁਰਨਾ, ਸਿਰਫ਼ ਗੱਲ ਸਮਝ ਲੈਣਾ ਨਹੀਂ ਸਗੋਂ ਜੀਵਨ ਨੂੰ ਉਸ ਅਨੁਸਾਰ ਢਾਲਣਾ।
+**Simple English draft:** Walk in accordance with Divine Hukam, the order or will. Nanak says this way is written alongside us from the beginning; the exact sense of the inscription needs careful explanation.
 
-**Study movement:** **ਚਲਣਾ** is a verb of motion and conduct. The pauri ends not with another ritual but with a way of living. “ਹੁਕਮਿ ਰਜਾਈ” and “ਲਿਖਿਆ ਨਾਲਿ” should not be flattened into mechanical fatalism; Pauri 2 unfolds the range and mystery of Hukam, and other Gurbani describes conduct and responsibility. Our caution against treating Hukam as permission for inaction is an explicit modern ethical application, not a quotation claiming Guru Nanak addressed that precise contemporary argument. [S1], [S2]
+**ਸੌਖੀ ਪੰਜਾਬੀ:** ਰਜ਼ਾ ਦੇ ਮਾਲਕ ਦੇ ਹੁਕਮ ਵਿਚ ਤੁਰਨਾ ਹੈ। ਨਾਨਕ ਜੀ ਦੱਸਦੇ ਹਨ ਕਿ ਇਹ ਰਾਹ ਧੁਰ ਤੋਂ ਜੀਵਨ ਨਾਲ ਲਿਖਿਆ ਆ ਰਿਹਾ ਹੈ। ‘ਲਿਖਿਆ ਨਾਲਿ’ ਨੂੰ ਅਰਥ ਵਿਚੋਂ ਨਾ ਛੱਡੀਏ।
+
+**Study movement:** **ਚਲਣਾ** is a verb of motion and conduct. The pauri ends not with another ritual but with a way of living. **ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ** belongs to the original answer and must remain in our close translation. Sahib Singh explains that the principle of walking in the Divine Hukam has been set from the beginning; another teaching translation describes it as something inscribed with the person. These are interpretations of the phrase, not permission to teach mechanical fatalism. The further caution against using Hukam to excuse inaction is explicitly an ethical reflection from our application. [S1], [S2], [S3]
 
 ## 4. The turn, as a lesson
 
@@ -131,7 +143,11 @@ Consider a meaningful outward practice—reading, service, contemplation, genero
 
 | Gurmukhi | Draft English / Punjabi help | Editorial caution |
 |---|---|---|
-| **ਹੁਕਮੀ · ਹੁਕਮਿ · ਹੁਕਮੈ** | Within / by Hukam; different forms in context / ਹੁਕਮ ਦੇ ਅਨੁਸਾਰ, ਹੁਕਮ ਵਿਚ, ਹੁਕਮ ਨੂੰ | Preserve endings, do not claim all three are interchangeable in grammar. [S1] |
+| **ਹੁਕਮੀ** (five times) | Appears with the arising of forms and beings, different conditions, grace and wandering / ਹੁਕਮ ਅਨੁਸਾਰ | Sahib Singh glosses it as by/within Hukam; don't silently regularize its written ending. [S1] |
+| **ਹੁਕਮੁ** (once) | Hukam itself, in the line where it cannot be fully told / ਹੁਕਮ ਦਾ ਪੂਰਾ ਬਿਆਨ ਨਹੀਂ | Only in pauri02.line01. The **ੁ** is part of the original spelling. [S1] |
+| **ਹੁਕਮਿ** (twice) | By or within Hukam, in granting honour and in written outcomes / ਹੁਕਮ ਅਨੁਸਾਰ | In lines 2 and 3. The **ਿ** has a grammatical role requiring specialist confirmation. [S1] |
+| **ਹੁਕਮੈ** (twice) | The relation to Hukam in “ਹੁਕਮੈ ਅੰਦਰਿ” and in understanding it, “ਹੁਕਮੈ ਜੇ ਬੁਝੈ” / ਹੁਕਮ ਦੇ ਅੰਦਰ; ਹੁਕਮ ਨੂੰ ਬੁੱਝਣਾ | In lines 5 and 6; same form but different immediate syntactic relations. [S1] |
+| **ਹੁਕਮ** (once) | Hukam, in “ਬਾਹਰਿ ਹੁਕਮ ਨ ਕੋਇ” / ਹੁਕਮ ਤੋਂ ਬਾਹਰ ਕੋਈ ਨਹੀਂ | In line 5. Do not replace with another of the five source forms. [S1] |
 | **ਆਕਾਰ** | Forms, shapes, manifestations / ਰੂਪ, ਸਰੂਪ | May include physical forms/beings; a cosmic-science model is not implied by this word. [S1] |
 | **ਜੀਅ** | Living beings / ਜੀਵ | Keep original spelling; pronunciation requires specialist review. [S1] |
 | **ਵਡਿਆਈ** | Esteem/honour in an interpretable context / ਵਡਿਆਈ, ਆਦਰ | Do not reduce to contemporary social popularity. [S1] |
@@ -146,6 +162,8 @@ Consider a meaningful outward practice—reading, service, contemplation, genero
 
 ### 01 · `pauri02.line01`
 
+> **Exact Gurbani · pauri02.line01:** ਹੁਕਮੀ ਹੋਵਨਿ ਆਕਾਰ ਹੁਕਮੁ ਨ ਕਹਿਆ ਜਾਈ ॥
+
 **Simple English draft:** Forms arise within Hukam, but Hukam cannot be fully captured by description.
 
 **ਸੌਖੀ ਪੰਜਾਬੀ:** ਸਾਰੇ ਆਕਾਰ ਹੁਕਮ ਅਨੁਸਾਰ ਬਣਦੇ ਹਨ, ਪਰ ਹੁਕਮ ਨੂੰ ਸ਼ਬਦਾਂ ਵਿਚ ਪੂਰਾ ਨਹੀਂ ਸਮਝਾਇਆ ਜਾ ਸਕਦਾ।
@@ -154,21 +172,27 @@ Consider a meaningful outward practice—reading, service, contemplation, genero
 
 ### 02 · `pauri02.line02`
 
-**Simple English draft:** Living beings arise within Hukam; honour and recognition too are described through Hukam.
+> **Exact Gurbani · pauri02.line02:** ਹੁਕਮੀ ਹੋਵਨਿ ਜੀਅ ਹੁਕਮਿ ਮਿਲੈ ਵਡਿਆਈ ॥
 
-**ਸੌਖੀ ਪੰਜਾਬੀ:** ਜੀਵ ਹੁਕਮ ਅੰਦਰ ਹੋਂਦ ਵਿਚ ਆਉਂਦੇ ਹਨ ਅਤੇ ਵਡਿਆਈ ਵੀ ਇਸੇ ਦੇ ਅਧੀਨ ਮਿਲਦੀ ਹੈ।
+**Simple English draft:** Living beings arise under Hukam; by Hukam, honour or praise is **received**.
 
-**Study movement:** The argument moves from shapes to living beings and from life to esteem. The presence of **ਵਡਿਆਈ** means the pauri is not solely about abstract cosmology: it concerns how people experience significance. Avoid teaching that wealthy or highly ranked people are automatically spiritually favored. The distinction between outward reputation and spiritual honor is interpretive and needs named source review before final copy. [S1]
+**ਸੌਖੀ ਪੰਜਾਬੀ:** ਜੀਵ ਹੁਕਮ ਅਨੁਸਾਰ ਹੋਂਦ ਵਿਚ ਆਉਂਦੇ ਹਨ ਅਤੇ ਹੁਕਮ ਅਨੁਸਾਰ ਹੀ ਵਡਿਆਈ **ਮਿਲਦੀ ਹੈ**।
+
+**Study movement:** The argument moves from forms to living beings and then to **ਮਿਲੈ ਵਡਿਆਈ**—honour or praise being received within Hukam. Do not weaken the verb **ਮਿਲੈ** into “is discussed.” The line does not establish that wealthy or highly ranked people are automatically spiritually favoured. A distinction between outward reputation and spiritual honour must be labelled as interpretation and reviewed before final copy. [S1]
 
 ### 03 · `pauri02.line03`
 
-**Simple English draft:** Differing conditions, and experiences of suffering and well-being, are discussed within Hukam.
+> **Exact Gurbani · pauri02.line03:** ਹੁਕਮੀ ਉਤਮੁ ਨੀਚੁ ਹੁਕਮਿ ਲਿਖਿ ਦੁਖ ਸੁਖ ਪਾਈਅਹਿ ॥
 
-**ਸੌਖੀ ਪੰਜਾਬੀ:** ਉੱਚੇ-ਨੀਵੇਂ ਹਾਲ ਅਤੇ ਦੁੱਖ-ਸੁੱਖ ਦੇ ਅਨੁਭਵ ਵੀ ਹੁਕਮ ਅੰਦਰ ਦੱਸੇ ਗਏ ਹਨ।
+**Simple English draft:** High and low conditions are within Hukam; **according to what is written** within Hukam, suffering and ease are **received or experienced**.
 
-**Study movement:** This line needs special ethical care. Sahib Singh notes the forms of high and low and the experiencing of joy and pain in the larger order. A reader might be tempted to turn this into a judgment on a specific suffering person. That is **not** a justified inference from this line alone. A teaching view should neither erase the difficulty of the text nor offer “you deserved this” as the Guru's explanation of another human being's suffering. Compare conduct and responsibility from other Gurbani only with enclosing context. [S1]
+**ਸੌਖੀ ਪੰਜਾਬੀ:** ਹੁਕਮ ਅੰਦਰ ਉੱਚੇ-ਨੀਵੇਂ ਹਾਲ ਹਨ; ਹੁਕਮ ਵਿਚ **ਲਿਖੇ ਅਨੁਸਾਰ** ਦੁੱਖ-ਸੁੱਖ **ਭੋਗੀਦੇ ਹਨ**।
+
+**Study movement:** **ਲਿਖਿ** cannot disappear from the direct sense. Sahib Singh explains it as written/inscribed, according to what has been written, and expands the interpretation through deeds experienced within Hukam [S1]. A different English teaching tradition foregrounds the written Divine command but does not spell out that karmic expansion in its short rendering [S7]. The emphasis differs; this is **not proof that the traditions teach opposite theologies**. The line also says that ਦੁਖ and ਸੁਖ are received/experienced (**ਪਾਈਅਹਿ**), not merely “discussed.” Neither reading supports telling a specific suffering person that they deserved harm. Such a judgment would be our own unjustified inference, not the line's stated claim. [S1], [S7]
 
 ### 04 · `pauri02.line04`
+
+> **Exact Gurbani · pauri02.line04:** ਇਕਨਾ ਹੁਕਮੀ ਬਖਸੀਸ ਇਕਿ ਹੁਕਮੀ ਸਦਾ ਭਵਾਈਅਹਿ ॥
 
 **Simple English draft:** Hukam encompasses the giving of grace and the continuing wandering of some beings.
 
@@ -178,6 +202,8 @@ Consider a meaningful outward practice—reading, service, contemplation, genero
 
 ### 05 · `pauri02.line05`
 
+> **Exact Gurbani · pauri02.line05:** ਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ ਬਾਹਰਿ ਹੁਕਮ ਨ ਕੋਇ ॥
+
 **Simple English draft:** Everyone is within Hukam; no one exists outside it.
 
 **ਸੌਖੀ ਪੰਜਾਬੀ:** ਹਰ ਜੀਵ ਹੁਕਮ ਅੰਦਰ ਹੈ; ਕੋਈ ਉਸ ਤੋਂ ਬਾਹਰ ਨਹੀਂ।
@@ -186,11 +212,19 @@ Consider a meaningful outward practice—reading, service, contemplation, genero
 
 ### 06 · `pauri02.line06`
 
+> **Exact Gurbani · pauri02.line06:** ਨਾਨਕ ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ ॥੨॥
+
 **Simple English draft:** Nanak teaches that one who understands Hukam does not speak from haumai, the self-asserting “I.”
 
-**ਸੌਖੀ ਪੰਜਾਬੀ:** ਹੇ ਨਾਨਕ! ਹੁਕਮ ਦੀ ਸਮਝ ਨਾਲ 'ਮੈਂ ਹੀ ਸਭ ਕੁਝ' ਵਾਲੀ ਹਉਮੈ ਢਿੱਲੀ ਪੈਂਦੀ ਹੈ।
+**ਸੌਖੀ ਪੰਜਾਬੀ:** ਹੇ ਨਾਨਕ! ਹੁਕਮ ਦੀ ਸਮਝ ਨਾਲ ਆਪਣੇ ਆਪ ਨੂੰ ਸਭ ਕੁਝ ਮੰਨਣ ਵਾਲੀ ਹਉਮੈ ਢਿੱਲੀ ਪੈਂਦੀ ਹੈ।
 
 **Study movement:** The last line is the turn. Everyone was already within Hukam in line five; line six names the transformation of someone who **ਬੁਝੈ**—understands. Consider why a speaker would claim solitary authorship for everything when life is woven into an order wider than any individual. Ang 466 includes Guru Nanak Sahib's **ਹਉ ਵਿਚਿ** salok and Guru Angad Sahib's **ਹਉਮੈ** salok, which support a candidate connection on how ego acts and is transformed. Avoid importing clinical psychology or commanding suppression of healthy identity. [S1], [S5]
+
+### Where the published readings place their emphasis — **ਲਿਖਿ**
+
+The writing in **ਹੁਕਮਿ ਲਿਖਿ** is an actual word of the third line, not decorative metaphor we may omit. Professor Sahib Singh glosses **ਲਿਖਿ** as **ਲਿਖ ਕੇ, ਲਿਖੇ ਅਨੁਸਾਰ** and connects the lived consequences with the account of deeds [S1]. The English interpretation displayed at SriGranth places the emphasis on a **written Divine command**, without spelling out the same explanatory karmic clause in its concise rendering [S7]. This is a **difference in the amount and focus of commentary**, not proof the scholars disagree on every theological point. Both require us to represent the writing/inscription in the direct meaning.
+
+**ਪੰਜਾਬੀ ਵਿਚ:** ‘ਲਿਖਿ’ ਨੂੰ ਸੌਖੇ ਅਰਥ ਵਿਚ ਵੀ ਬਚਾ ਕੇ ਰੱਖਣਾ ਹੈ। ਸਾਹਿਬ ਸਿੰਘ ਜੀ ਇਸ ਨੂੰ ਲਿਖੇ ਅਨੁਸਾਰ ਸਮਝਾ ਕੇ ਕਰਮਾਂ ਦੇ ਪ੍ਰਸੰਗ ਨਾਲ ਸਮਝਾਉਂਦੇ ਹਨ [S1]। ਸ੍ਰੀਗ੍ਰੰਥ ਉੱਤੇ ਦਿੱਤੇ ਅੰਗਰੇਜ਼ੀ ਅਰਥ ਵਿਚ ਲਿਖੇ ਹੋਏ ਦੈਵੀ ਹੁਕਮ ਨੂੰ ਮੁੱਖ ਰੱਖਿਆ ਗਿਆ ਹੈ [S7]। ਇਹ ਦੋ ਵੱਖਰੇ ਵਿਆਖਿਆਤਮਕ ਜ਼ੋਰ ਹਨ; ਇਨ੍ਹਾਂ ਨੂੰ ਦੋ ਵਿਰੋਧੀ ਧਰਮ-ਮਤ ਕਹਿਣਾ ਠੀਕ ਨਹੀਂ। ਇਸ ਤੋਂ ਇਹ ਨਤੀਜਾ ਵੀ ਨਾ ਕੱਢੀਏ ਕਿ ਕਿਸੇ ਦੁਖੀ ਮਨੁੱਖ ਨੂੰ ਨੁਕਸਾਨ ਸਹਿਣਾ ਹੀ ਚਾਹੀਦਾ ਹੈ।
 
 ## 4. The turn: from existence to recognition
 
@@ -219,7 +253,7 @@ Choose a situation where you worked hard and believed you controlled everything.
 
 **Question:** How are “all beings are within Hukam” and “one who understands Hukam no longer speaks in haumai” different claims? Use the fifth and sixth tuks to explain them, and say why Hukam should not become an excuse for harming or abandoning others.
 
-**ਪ੍ਰਸ਼ਨ:** 'ਸਭੁ ਕੋ ਹੁਕਮੈ ਅੰਦਰਿ' ਅਤੇ 'ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ' ਵਿਚ ਕੀ ਫ਼ਰਕ ਹੈ? ਪੰਜਵੀਂ ਅਤੇ ਛੇਵੀਂ ਤੁਕ ਨਾਲ ਸਮਝਾਓ। ਹੁਕਮ ਦੀ ਗੱਲ ਜ਼ਿੰਮੇਵਾਰੀ ਛੱਡਣ ਦਾ ਬਹਾਨਾ ਕਿਉਂ ਨਹੀਂ ਬਣਨੀ ਚਾਹੀਦੀ?
+**ਪ੍ਰਸ਼ਨ:** 'ਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ' ਅਤੇ 'ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ' ਵਿਚ ਕੀ ਫ਼ਰਕ ਹੈ? ਪੰਜਵੀਂ ਅਤੇ ਛੇਵੀਂ ਤੁਕ ਨਾਲ ਸਮਝਾਓ। ਹੁਕਮ ਦੀ ਗੱਲ ਜ਼ਿੰਮੇਵਾਰੀ ਛੱਡਣ ਦਾ ਬਹਾਨਾ ਕਿਉਂ ਨਹੀਂ ਬਣਨੀ ਚਾਹੀਦੀ?
 
 **Editorial holds:** precise noun-case grammar for different Hukam forms; care regarding ਉਤਮੁ/ਨੀਚੁ and pain; the direct Sense vs expanded ethical application distinction; word timing and santhiya review; Ang 466 enclosing context and proper authorship. Status **DRAFT**.
 

@@ -36,7 +36,7 @@ check('Manuscript mentions each occurrence exactly once as a heading',()=>{
  const ids=[...manuscript.matchAll(/^### \d{2} · \`(pauri\d{2}\.line\d{2})\`$/gm)].map(m=>m[1]);
  assert.deepEqual(ids,bindings.units.flatMap(u=>u.lines.map(l=>l.id)));
 });
-check('Both lessons have nine pedagogic movements, instead of one loose translation',()=>{
+check('The manuscript has the principal lesson scaffold (independent per-pauri checks run separately)',()=>{
  assert.ok(manuscript.includes('Arrival')&&manuscript.includes('Vocabulary')||manuscript.includes('Words that carry'));
  for(const label of ['Close reading','The turn','Reflection','Teach-back','Connected-teaching','interpretive']){
   assert.ok(manuscript.includes(label),label);
