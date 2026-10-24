@@ -1,0 +1,139 @@
+{
+  "project": "GLP-001",
+  "status": "DRAFT_NOT_HUMAN_REVIEWED",
+  "sourceRelease": "japji-v1-0.9-r7",
+  "sourceCorpusSHA256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+  "sourceCount": 21,
+  "units": {
+    "pauri03": 14,
+    "pauri04": 7
+  },
+  "occurrences": [
+    {
+      "id": "pauri03.line01",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "92a9744b7f2bbcd7325e76dba02cc92dc5a44074505beddb86953b9576187f31"
+    },
+    {
+      "id": "pauri03.line02",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "0a836a4cc455f4dcb772a1b18cdfa00522deec106dbd4d86a99aa330f0dd3db9"
+    },
+    {
+      "id": "pauri03.line03",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "816055bb82db927d5b1e6c98aff7349d5481398ba401d15616c27452339c2d8c"
+    },
+    {
+      "id": "pauri03.line04",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "bd33d70538c82585bf0c2adeed523314a85441758b72f9264228140b8d4e173f"
+    },
+    {
+      "id": "pauri03.line05",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "7b9f7dc8d2f8d57d854b6f9c31aeebb1f94cfe6ce96e621d9551a626bf834009"
+    },
+    {
+      "id": "pauri03.line06",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "5c1b4e4e7d39c0bc67f65ccfe9edd6159fc86848a1260efd46ba376d6446416a"
+    },
+    {
+      "id": "pauri03.line07",
+      "unitId": "pauri03",
+      "ang": 1,
+      "sha256": "5857bc61483883b936ae5f0d778d6534824f891dd6e653cdb6a70fd0e42b5201"
+    },
+    {
+      "id": "pauri03.line08",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "286d40f858aab213e418d0497432f5e7199a39c75caa7a4abf3a0d8c6faa79d1"
+    },
+    {
+      "id": "pauri03.line09",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "75cc8682ec02a86bb62b1e70df0e93123f2b1cf1cb644e9138cb7236b39b129e"
+    },
+    {
+      "id": "pauri03.line10",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "7342f3444ccd1c7db10baf0dbf1cb4b0b2f64dc977320cf38d23ae4ebe278c27"
+    },
+    {
+      "id": "pauri03.line11",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "6ae080d43e79dda59a80249b3338b889d7cd8ead221e66fa96ae7113caa3ba68"
+    },
+    {
+      "id": "pauri03.line12",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "37054cb27296b87bd2c40d19997220572cc1d4220ee17b3ba966f70b74e9a734"
+    },
+    {
+      "id": "pauri03.line13",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "21dd65dedb651f4190943abab7d10e254f887e3a95d0b6951ed26fb30f12a8db"
+    },
+    {
+      "id": "pauri03.line14",
+      "unitId": "pauri03",
+      "ang": 2,
+      "sha256": "16ede2c3a7d2273a11ed34013e96cd005c04d2a2bf197edf22e7df913783e966"
+    },
+    {
+      "id": "pauri04.line01",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "866202ede96f44a82e3e373071828181681f5cdd73431c4c57586d7ddefc7b45"
+    },
+    {
+      "id": "pauri04.line02",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "62e266de07e094b6d07b757b5627e3e1a681596a8483adfad75de42334a74b9a"
+    },
+    {
+      "id": "pauri04.line03",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "f5e5c20ca9ab1d22ea8b5788878c7b54faccd5005c4331c27a3047d04341c5fb"
+    },
+    {
+      "id": "pauri04.line04",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "fb6037993c41ac0ad14b6c8a30d4f679b8982dca86d884f263ea13af69f2f1ad"
+    },
+    {
+      "id": "pauri04.line05",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "56643feeed338eecf3ab31e9b01efaad080f8087659ca7a311f5eef4098cf9a7"
+    },
+    {
+      "id": "pauri04.line06",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "abb1353a9569c880efb1938156001c5558406deb773ec75edd173edffc8d6936"
+    },
+    {
+      "id": "pauri04.line07",
+      "unitId": "pauri04",
+      "ang": 2,
+      "sha256": "66dc6f90d54521bbbf17273a05023be8295d5c1e26f4b8df5e4d22ed8cc38a33"
+    }
+  ]
+}

@@ -39,3 +39,9 @@ button,a,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,
  .home-hero h1{font-size:34px}.destination{min-height:224px}.destination h2{font-size:22px}
  .destination-link{font-size:10px}
 }
+/* Distinct, quiet fourth doorway below the three existing entries. */
+.mind-door{display:flex;align-items:center;gap:17px;min-height:87px;margin-top:12px;padding:17px 24px;border:1px solid var(--line);border-radius:17px;background:var(--surface);text-decoration:none;color:var(--ink)}
+.mind-door:hover{border-color:var(--gold)}.mind-symbol{font:39px/1 Georgia,serif;color:var(--gold);flex:0 0 48px;text-align:center}
+.mind-door strong{display:block;font:22px/1.35 Georgia,serif;font-weight:400}.mind-door small{display:block;font-size:11px;color:var(--muted);line-height:1.6;margin-top:3px}
+.mind-arrow{margin-left:auto;flex:0 0 auto;color:var(--gold);font-size:19px}.nitnem-explore{display:inline-flex;align-items:center;min-height:44px;margin:10px auto 0;font-size:13px;text-decoration:none;border-bottom:1px solid var(--gold);font-weight:600}
+@media(max-width:620px){.mind-door{gap:11px;padding:13px 15px;min-height:77px}.mind-symbol{font-size:32px;flex-basis:32px}.mind-door strong{font-size:20px}.mind-door small{font-size:10px}}

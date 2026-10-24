@@ -1,0 +1,45 @@
+name: GLP Nitnem and Mind Room Quality Gate
+on:
+  pull_request:
+    paths:
+      - 'nitnem.html'
+      - 'psychology.html'
+      - 'index.html'
+      - 'css/nitnem.css'
+      - 'css/psychology.css'
+      - 'js/nitnem-*.js'
+      - 'js/mind-room-content.js'
+      - 'js/psychology-page.js'
+      - 'docs/research/NITNEM_*'
+      - 'docs/research/PSYCHOLOGY_*'
+      - 'docs/research/JAPJI_DEEP_PAURI03_04_*'
+      - 'docs/research/MOOL_MANTAR_*'
+      - 'tests/nitnem-mind-*'
+      - 'tests/japji-deep-*'
+      - '.github/workflows/glp-nitnem-mind-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  content-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Existing 385 source and learning regression contracts
+        run: |
+          node tests/verify.mjs
+          node tests/service-worker.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+      - name: Nitnem register and Psychology Room exact source validation
+        run: node tests/nitnem-mind-contract.mjs
+      - name: Deep Study Pauri 3–4 exact source binding
+        run: node tests/japji-deep-pa03-pa04.mjs
+      - name: No unauthorized personal data or recordings
+        run: |
+          test ! -d recordings
+          test ! -d media/private

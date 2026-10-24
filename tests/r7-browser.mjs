@@ -16,7 +16,7 @@ try{
  await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true},session);
  await nav('');await ready('!!document.querySelector(".nitnem-card")');
  check('Root landing is not Japji reader',await evaljs('!!document.querySelector(".home-hero")&&!document.querySelector("#continuous-reader")'));
- check('Three accessible destinations',await evaljs('document.querySelectorAll("#destinations a[href]").length===3'));
+ check('Four accessible home doors including psychology',await evaljs('document.querySelectorAll("#destinations a[href]").length===4'));
  check('Nitnem opens Japji; other rooms separate',await evaljs('document.querySelector(".nitnem-card").getAttribute("href")==="full-japji.html"&&[...document.querySelectorAll("#destinations a")].some(a=>a.getAttribute("href")=="gurdwaras.html")&&[...document.querySelectorAll("#destinations a")].some(a=>a.getAttribute("href")=="simran.html")'));
  check('No gamification or ads on home',await evaljs('document.querySelectorAll("audio,video,iframe").length===0'));
  await snap('home-day');
