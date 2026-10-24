@@ -13,10 +13,10 @@ try{
  await send('Page.enable',{},session);await send('Runtime.enable',{},session);await send('Network.enable',{},session);
  await nav('');await until('document.querySelector(".nitnem-card")');
  await until('navigator.serviceWorker&&(async()=>!!(await navigator.serviceWorker.ready).active)()');
- await until('(async()=>{const ks=await caches.keys();return ks.some(k=>k.includes("r8-menu-listen-candidate-3"));})()');
+ await until('(async()=>{const ks=await caches.keys();return ks.some(k=>k.includes("r8-menu-listen-candidate-4"));})()');
  check('R8 Home installed versioned hashed shell without YouTube consent',true);
  await send('Page.reload',{ignoreCache:false},session);await sleep(700);await until('navigator.serviceWorker.controller!==null');check('Home page under active service worker',true);
- const cacheCount=await run('(async()=>{const k=(await caches.keys()).find(x=>x.includes("r8-menu-listen-candidate-3"));const c=await caches.open(k);return (await c.keys()).length})()');
+ const cacheCount=await run('(async()=>{const k=(await caches.keys()).find(x=>x.includes("r8-menu-listen-candidate-4"));const c=await caches.open(k);return (await c.keys()).length})()');
  check('All 34 manifest responses were cached',cacheCount===34);
  await send('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0},session);
  await nav('');await until('!!document.querySelector(".nitnem-card")');check('Home works while network is blocked',true);

@@ -23,7 +23,7 @@ try {
  await run('document.querySelector(".reader-more summary").click()');
  test('Secondary actions become available without replacing main menu',await run('document.querySelector(".reader-more").open&&document.querySelector("[data-action=reader-start]")'));
  await run('document.querySelector("[data-action=reader-listen]").click()');
- test('YouTube chooser appears with search link and paste field',await run('document.getElementById("reader-dialog").open && !!document.getElementById("youtube-url")&&document.querySelector(".yt-search-link").target==="_blank"'));
+ test('YouTube chooser appears with search link and paste field',await run('document.getElementById("reader-dialog").open && !!document.getElementById("youtube-url")&&!!document.getElementById("youtube-query")&&!!document.getElementById("youtube-search")'));
  test('Still no external YouTube requests before actual selection',requests.every(x=>!x.includes('youtube.com')));
  await snap('youtube-chooser');
  await run('document.getElementById("youtube-url").value="javascript:alert(1)";document.querySelector("[data-action=youtube-load]").click()');

@@ -11,7 +11,8 @@
  function chooserHtml(){
   return '<div class="yt-chooser">'+
    '<p>Choose a video to hear while you read. Play it using the visible YouTube controls.</p>'+
-   '<a class="yt-search-link" href="https://www.youtube.com/results?search_query=Japji%20Sahib%20full%20paath" target="_blank" rel="noopener noreferrer">Search YouTube for Japji Sahib ↗</a>'+
+   '<label for="youtube-query" class="yt-label">Find a recitation</label>'+
+   '<div class="yt-search-row"><input id="youtube-query" type="search" value="Japji Sahib full paath" autocomplete="off" aria-label="Search YouTube for a Gurbani recording"><button type="button" id="youtube-search">Search YouTube ↗</button></div>'+
    '<p class="plain-note">Search on YouTube, then paste the video link below. In-app search is planned.</p>'+
    '<label for="youtube-url" class="yt-label">Paste a YouTube video link</label>'+
    '<input id="youtube-url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://www.youtube.com/watch?v=…" aria-describedby="youtube-chooser-note">'+
@@ -90,7 +91,12 @@
   panel.hidden=true;dialogHidden=true;
  }
  function resumeAfterDialog(){if(dialogHidden&&videoId){panel.hidden=false;dialogHidden=false;showStatus('YouTube paused while you studied. Press Play on the visible video player to resume.');}}
- $('youtube-close').addEventListener('click',close);
+ document.addEventListener('click',event=>{
+  if(event.target.id!=='youtube-search')return;
+  const search=document.getElementById('youtube-query')?.value?.trim()||'Japji Sahib';
+  window.open('https://www.youtube.com/results?search_query='+encodeURIComponent(search), '_blank', 'noopener,noreferrer');
+});
+$('youtube-close').addEventListener('click',close);
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&videoId)pause();});
  window.addEventListener('pagehide',close);
  window.GLP_YOUTUBE=Object.freeze({chooserHtml,open,close,pause,hideForDialog,resumeAfterDialog,isOpen:()=>Boolean(videoId)});
