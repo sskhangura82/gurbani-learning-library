@@ -25,3 +25,5 @@ jobs:
         run: node tests/r6-contract.mjs
       - name: Revision 7 home, pace and rooms contracts
         run: node tests/r7-contract.mjs
+      - name: R8 YouTube URL and timing provenance contracts
+        run: node tests/r8-youtube-contract.mjs
