@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "count": 32,
+  "url": "https://sskhangura82.github.io/gurbani-learning-library/",
+  "release": "0.9-japji-v1-r7-home-speed-2",
+  "asOfUtc": "2026-10-24T00:56:04Z",
+  "checked": [
+    {
+      "asset": "./",
+      "status": 200,
+      "sha256": "bfa25eae0cd7fd0e187b3fb006d205829c8ad1ab1cc52c6ff87cddc47cc1c4d0",
+      "bytes": 4056
+    },
+    {
+      "asset": "./full-japji.html",
+      "status": 200,
+      "sha256": "1add0c3f283453ac7cc6b5e22a21e092b72fef74319672b73f444bf6d40f7ae1",
+      "bytes": 5188
+    },
+    {
+      "asset": "./index.html",
+      "status": 200,
+      "sha256": "bfa25eae0cd7fd0e187b3fb006d205829c8ad1ab1cc52c6ff87cddc47cc1c4d0",
+      "bytes": 4056
+    },
+    {
+      "asset": "./gurdwaras.html",
+      "status": 200,
+      "sha256": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e",
+      "bytes": 2494
+    },
+    {
+      "asset": "./gurdwara.html",
+      "status": 200,
+      "sha256": "ad399c868cfe51397c0f6f62f6df58aa9f405894c5734273ee61308fb6598fa7",
+      "bytes": 2503
+    },
+    {
+      "asset": "./simran.html",
+      "status": 200,
+      "sha256": "4b4b943cf3f9423aca2364ce85a16cb963042f9d4e559e4ef628c1af623fbc0b",
+      "bytes": 3394
+    },
+    {
+      "asset": "./pauri-2-lesson.html",
+      "status": 200,
+      "sha256": "3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875",
+      "bytes": 6906
+    },
+    {
+      "asset": "./css/app.css",
+      "status": 200,
+      "sha256": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434",
+      "bytes": 25013
+    },
+    {
+      "asset": "./css/japji-full.css",
+      "status": 200,
+      "sha256": "c99f924634f7594cb2639559caab8c707ddeb9e7c8721ae88c4f2297127071e5",
+      "bytes": 21084
+    },
+    {
+      "asset": "./css/home.css",
+      "status": 200,
+      "sha256": "24d470426f4789b1744b07d2186348f3ce13a6006ef8aa6a0af4fffe2a69749a",
+      "bytes": 7301
+    },
+    {
+      "asset": "./css/arrivals.css",
+      "status": 200,
+      "sha256": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801",
+      "bytes": 6415
+    },
+    {
+      "asset": "./css/simran.css",
+      "status": 200,
+      "sha256": "fc89ee8ef942184619a29a94175d868149fed40219f51a4a9e9084b20a0f912f",
+      "bytes": 4134
+    },
+    {
+      "asset": "./js/home.js",
+      "status": 200,
+      "sha256": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4",
+      "bytes": 1489
+    },
+    {
+      "asset": "./js/arrivals.js",
+      "status": 200,
+      "sha256": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118",
+      "bytes": 3690
+    },
+    {
+      "asset": "./js/simran.js",
+      "status": 200,
+      "sha256": "98a36a10931836f8ebe4ed06df461af56617abd4abf5f6b0229ad62e4df092fa",
+      "bytes": 2173
+    },
+    {
+      "asset": "./js/app.js",
+      "status": 200,
+      "sha256": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55",
+      "bytes": 25133
+    },
+    {
+      "asset": "./js/content.js",
+      "status": 200,
+      "sha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62",
+      "bytes": 24595
+    },
+    {
+      "asset": "./js/core.js",
+      "status": 200,
+      "sha256": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306",
+      "bytes": 5710
+    },
+    {
+      "asset": "./js/gurdwaras.js",
+      "status": 200,
+      "sha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2",
+      "bytes": 7977
+    },
+    {
+      "asset": "./js/places.js",
+      "status": 200,
+      "sha256": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef",
+      "bytes": 1833
+    },
+    {
+      "asset": "./js/continuous-core.js",
+      "status": 200,
+      "sha256": "010d9e4dc79f22731f76394fc89869bbdc70947c5caab9d47b6b937c9fcdfa6e",
+      "bytes": 4249
+    },
+    {
+      "asset": "./js/japji-full-data.js",
+      "status": 200,
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "bytes": 83714
+    },
+    {
+      "asset": "./js/japji-full.js",
+      "status": 200,
+      "sha256": "3ec2dc3917704956741d3ea91add143167bd5b884d2996059e79537aa4c7c218",
+      "bytes": 39875
+    },
+    {
+      "asset": "./js/japji-lessons.js",
+      "status": 200,
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+      "bytes": 257626
+    },
+    {
+      "asset": "./js/line-meanings.js",
+      "status": 200,
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+      "bytes": 115470
+    },
+    {
+      "asset": "./js/learning.js",
+      "status": 200,
+      "sha256": "cafa93c019596a9cbd414341d787620eb4fc94f1ba64df0fdadde8e698a9d6a7",
+      "bytes": 6497
+    },
+    {
+      "asset": "./js/shared-learning.js",
+      "status": 200,
+      "sha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "bytes": 2119
+    },
+    {
+      "asset": "./js/pwa.js",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+      "bytes": 2333
+    },
+    {
+      "asset": "./icons/icon-180.png",
+      "status": 200,
+      "sha256": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7",
+      "bytes": 955
+    },
+    {
+      "asset": "./icons/icon-192.png",
+      "status": 200,
+      "sha256": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739",
+      "bytes": 983
+    },
+    {
+      "asset": "./icons/icon-512.png",
+      "status": 200,
+      "sha256": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c",
+      "bytes": 2962
+    },
+    {
+      "asset": "./manifest.webmanifest",
+      "status": 200,
+      "sha256": "0e795b2245fce45a042b6c8b4b49feafcd3ad893c8a44535b77109803e25510a",
+      "bytes": 565
+    }
+  ],
+  "privacy": "No personal notes fetched; static public shell only"
+}
