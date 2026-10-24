@@ -1,0 +1,91 @@
+{
+  "project": "GLP-001",
+  "artifact": "M2 source bindings for English/Punjabi educational draft",
+  "status": "DRAFT_NOT_HUMAN_REVIEWED",
+  "sourceAuthority": "frozen original Gurmukhi in js/japji-full-data.js",
+  "sourceDataSHA256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+  "occurrences": 12,
+  "units": [
+    {
+      "unitId": "pauri01",
+      "ang": 1,
+      "sourceRelease": "japji-v1-0.9-r7",
+      "lines": [
+        {
+          "id": "pauri01.line01",
+          "ang": 1,
+          "sha256": "5c0c71b676dc697820dff6ab1cda77b5d491c75b46c2c48adbfe7134e4ba7fc6"
+        },
+        {
+          "id": "pauri01.line02",
+          "ang": 1,
+          "sha256": "0e12e72beb1bb30783a53eb36cd5c6147ae3bf1b3200c78d48dbbfcd5a9830e6"
+        },
+        {
+          "id": "pauri01.line03",
+          "ang": 1,
+          "sha256": "8bcfd795b72ba6e62842fc98485e1661e38003d69ea66cbe85bfa3b138cad26b"
+        },
+        {
+          "id": "pauri01.line04",
+          "ang": 1,
+          "sha256": "5530b0114c2dd6f9a07cbcc5e719e3b04b98bec494194def0d0d0b69999a3565"
+        },
+        {
+          "id": "pauri01.line05",
+          "ang": 1,
+          "sha256": "89bfefa054887bd52501faefc35355b82c94b91193ce8c51c8a9c981fc14479b"
+        },
+        {
+          "id": "pauri01.line06",
+          "ang": 1,
+          "sha256": "ebcd7c74f4cb7876211467c8b1bd2b2d2d93e2540243f6201e91703c4f69e769"
+        }
+      ]
+    },
+    {
+      "unitId": "pauri02",
+      "ang": 1,
+      "sourceRelease": "japji-v1-0.9-r7",
+      "lines": [
+        {
+          "id": "pauri02.line01",
+          "ang": 1,
+          "sha256": "a27ab546255bbc9aa3e38646b07384b36771635073e4dcd287aee17d22274021"
+        },
+        {
+          "id": "pauri02.line02",
+          "ang": 1,
+          "sha256": "5ef06ee61163baddd39d4303c8acea55cb9651b5e4933e2b7ffd1a11c1c1f6fe"
+        },
+        {
+          "id": "pauri02.line03",
+          "ang": 1,
+          "sha256": "8c439481992a967f62096b37d75aa31141dff30402f14e7336a42b466ac38797"
+        },
+        {
+          "id": "pauri02.line04",
+          "ang": 1,
+          "sha256": "73b6dc0c710f9b101a69109f68837f600537c42f51cd0212c980a503086fc04e"
+        },
+        {
+          "id": "pauri02.line05",
+          "ang": 1,
+          "sha256": "5274917537ffc83a89f7eeba9ce1bf63c7bd15c50802b47f06f6ec20bb7bf1a6"
+        },
+        {
+          "id": "pauri02.line06",
+          "ang": 1,
+          "sha256": "135ba3f6a5997077616ce884c747ea2d0decbb679f17e7540cab49d8fdfef665"
+        }
+      ]
+    }
+  ],
+  "editorialReview": {
+    "sourceChecked": false,
+    "qualifiedPunjabiReviewed": false,
+    "qualifiedScriptureReviewed": false,
+    "santhiyaReviewed": false,
+    "founderProductAccepted": false
+  }
+}
