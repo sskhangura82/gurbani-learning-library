@@ -1,0 +1,31 @@
+{
+  "checks": [
+    "Isolated browser starts",
+    "Reader loads on a real origin",
+    "No video player or external scripts before opt-in",
+    "385 exact Gurmukhi occurrences preserved",
+    "Short reader menu is in compact grouped layout",
+    "Reading menu has less than three-quarters screen height",
+    "More controls are collapsed, and previous functions remain available",
+    "Secondary actions become available without replacing main menu",
+    "YouTube chooser appears with search link and paste field",
+    "Still no external YouTube requests before actual selection",
+    "Unsafe URL visibly rejected",
+    "Explicit choice mounts a visible official API player container",
+    "Player viewport meets YouTube minimum height",
+    "No automatic play after loading",
+    "Video marked unaligned rather than pretending to glow",
+    "Study menu pauses/hides video before covering it",
+    "Closing dialog restores paused visible player",
+    "Closing player destroys it so audio cannot continue hidden",
+    "All three modes work after closing video",
+    "Existing original Gurmukhi unchanged after all interactions",
+    "320px menu layout has no horizontal scroll",
+    "No javascript exceptions"
+  ],
+  "count": 22,
+  "fail": null,
+  "exceptions": [],
+  "scope": "Isolated desktop Chrome; mock YouTube API; NOT actual YouTube playback nor physical iPhone",
+  "checkedAt": "2026-10-24T01:19:23.574Z"
+}

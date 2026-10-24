@@ -121,3 +121,50 @@ body.roomy-spacing .passage{padding:0;margin-top:40px}body.roomy-spacing .script
  .reading-dock .modes{flex:0 0 132px}
  .reading-dock #pace-shortcut{flex:0 0 45px;width:45px;min-width:45px}
 }
+
+/* R8 bounded menu: short, grouped choices instead of full-height stacked settings. */
+dialog[data-view="reader-menu"]{max-height:min(660px,75dvh);width:min(520px,calc(100% - 24px))}
+dialog[data-view="reader-menu"] .dialog-heading{padding:11px 16px}
+dialog[data-view="reader-menu"] .dialog-heading h2{font-size:25px}
+dialog[data-view="reader-menu"] #dialog-body{padding:10px 15px 16px}
+.reader-mini-top{display:flex;gap:12px;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px;margin:0 0 13px}
+.reader-mini-top button{background:transparent;border:0;min-height:44px;font-size:12px;color:var(--accent);font-weight:600;padding:0 5px}
+.reader-mini-top span{min-width:0;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reader-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.reader-menu-grid button{border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);min-height:67px;display:flex;align-items:center;text-align:left;padding:9px 12px;gap:12px;line-height:1.4}
+.reader-menu-grid button strong{font-size:14px;font-weight:600;display:block}
+.reader-menu-grid button small{display:block;font-size:10px;line-height:1.5;color:var(--muted);margin-top:3px}
+.reader-menu-grid .reader-main-link{grid-column:span 2;background:var(--wash)}
+.reader-main-link>span:first-child{display:flex;align-items:center;justify-content:center;flex:0 0 35px;height:35px;border-radius:50%;background:var(--accent);color:var(--paper);font-size:15px}
+.reader-more{margin-top:13px;border-top:1px solid var(--line);padding-top:3px}
+.reader-more summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-size:12px;color:var(--muted);user-select:none}
+.reader-more-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding-top:8px}
+.reader-more-actions button{font-size:12px;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:8px;min-height:44px;padding:8px 10px}
+/* Selected video remains visibly inside the reading screen. It cannot play hidden in the background. */
+.youtube-panel{position:sticky;top:0;z-index:22;max-width:720px;margin:0 auto;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:0 0 12px 12px;padding:9px 12px 10px;box-shadow:0 6px 16px #0002}
+.youtube-panel[hidden]{display:none!important}
+.youtube-heading{display:flex;gap:12px;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);margin-bottom:7px}
+.youtube-heading button{min-height:44px;border:1px solid var(--line);border-radius:9px;background:var(--surface);padding:8px 12px;color:var(--ink);font-size:12px}
+.youtube-player-frame{width:100%;min-height:200px;aspect-ratio:16/9;max-height:400px;display:flex;justify-content:center;align-items:center;overflow:hidden;background:#060606}
+.youtube-player-frame iframe{width:100%!important;height:100%!important;min-height:200px;display:block;border:0}
+.youtube-status{color:var(--muted);font-size:10px;line-height:1.6;margin:8px 0 3px}
+#youtube-external{color:var(--accent);font-size:11px}
+.youtube-open .reading-dock{z-index:30}
+.yt-chooser label{display:block;font-size:12px;font-weight:600;color:var(--ink);margin:12px 0 6px}
+.yt-chooser input[type=url]{display:block;width:100%;min-height:44px;padding:9px 10px;font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:9px}
+.yt-chooser .yt-search-link{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-size:13px;font-weight:600}
+.yt-chooser button.primary{background:var(--accent);color:var(--paper);min-height:44px}
+.yt-error{font-size:12px;color:#a44229;margin:7px 0}
+@media(max-width:400px){
+ dialog[data-view="reader-menu"]{max-height:min(530px,72dvh)}
+ .reader-menu-grid button{min-height:64px;padding:8px 9px}
+ .reader-menu-grid button strong{font-size:13px}
+ .youtube-panel{padding:8px 8px 10px}
+ .youtube-player-frame{min-height:200px;aspect-ratio:unset;height:210px}
+}
+@media(prefers-reduced-motion:reduce){.youtube-panel *{animation:none!important;transition:none!important}}
+dialog[data-view="video-chooser"]{max-height:min(660px,76dvh);width:min(540px,calc(100% - 24px))}
+dialog[data-view="video-chooser"] .dialog-heading{padding:12px 16px}
+dialog[data-view="video-chooser"] .dialog-heading h2{font-size:25px}
+dialog[data-view="video-chooser"] #dialog-body{padding:12px 17px 18px}
+dialog[data-view="video-chooser"] .yt-chooser>p{margin:3px 0 10px;font-size:12px;line-height:1.65}

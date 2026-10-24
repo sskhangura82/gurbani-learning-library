@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Chrome starts",
+    "R8 Home installed versioned hashed shell without YouTube consent",
+    "Home page under active service worker",
+    "All 34 manifest responses were cached",
+    "Home works while network is blocked",
+    "Japji reader loads without external video requests while network blocked",
+    "Simran preview works while network blocked",
+    "Gurdwara directory works while network blocked"
+  ],
+  "count": 8,
+  "fail": null,
+  "checkedAt": "2026-10-24T01:19:22.282Z",
+  "environment": "Isolated Mac Chrome CDP offline network emulation",
+  "limits": [
+    "Not real iPhone airplane mode",
+    "No network-provider playback tested"
+  ]
+}
