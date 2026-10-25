@@ -2,7 +2,7 @@
   "environment": "Node service-worker simulation; not a physical offline test",
   "checks": [
     {
-      "name": "23 static responses hash-verified before install",
+      "name": "41 static responses (including Mind CSS) hash-verified before install",
       "status": "PASS"
     },
     {

@@ -1,0 +1,100 @@
+/* GLP-001 · nondeployed UX review. One shared Gurbani library, not a second app.
+   The original line is the center; Sikh reading and psychology remain distinct. */
+:root {
+ --page:#faf6ec;
+ --surface:#faf6ec;
+ --text:#302c25;
+ --muted:#645b4d;
+ --line:#ded4c2;
+ --accent:#8a642c;
+ --ink:#4f3e2d;
+ --mind-sikh:#5a4634;
+ --mind-psych:#3f4f63;
+ color-scheme:light;
+}
+body{background:var(--page);color:var(--text);line-height:1.75}
+a{color:var(--ink)}
+.top{max-width:780px;padding:9px 22px;min-height:46px}
+.top>span{letter-spacing:.1em;font-size:9px}
+main{max-width:780px;margin:0 auto;padding:0 24px}
+.entrance{text-align:left;max-width:740px;padding:0 0 5px;margin:0}
+.entrance h1{font:400 23px/1.3 'Gurmukhi MN','Noto Serif Gurmukhi',serif;letter-spacing:0;margin:2px 0 5px}
+.entrance h1 span{font-weight:500}
+.entrance h1 small{font:13px/1.4 -apple-system,BlinkMacSystemFont,Arial,sans-serif;margin-left:10px;color:var(--muted)}
+.entrance>p:not(.eyebrow){margin:0 0 8px;text-align:left;font-size:12px;max-width:600px;color:var(--muted)}
+.lesson{max-width:none;margin:0;padding:0 0 8px;border:0;border-radius:0;background:transparent;scroll-margin-top:12px}
+.teaching-source{padding:7px 0 19px;border:0}
+.teaching-source>.section-label{display:none}
+.gurmukhi{font:500 clamp(32px,7.5vw,42px)/1.95 'Gurmukhi MN','Noto Serif Gurmukhi','Raavi',serif;margin:7px 0 8px;text-align:center;max-width:100%;color:var(--text)}
+.source-ref{text-align:center;font-size:11px;margin:0 0 7px;color:var(--muted)}
+.review-note{font-size:10px!important;color:var(--muted)!important;line-height:1.55;margin:5px 0 9px!important}
+.teaching-source .review-note{text-align:center;margin:3px 0 15px!important}
+.teaching-source>p:not(.gurmukhi):not(.source-ref):not(.review-note){max-width:660px;font-size:14px;line-height:1.85;margin:9px auto;text-align:left}
+.teaching-source .punjabi{font:17px/1.85 'Gurmukhi MN','Noto Sans Gurmukhi',serif;color:var(--mind-sikh)}
+.topics{margin:18px auto 0;max-width:none}
+.section-head{text-align:left}
+.section-head h2{font:400 13px/1.5 -apple-system,BlinkMacSystemFont,Arial,sans-serif;color:var(--muted);margin:0 0 8px}
+.topic-nav{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.topic-button,.topic-button[aria-pressed=true]{
+ display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:15px;
+ min-height:56px;max-width:100%;padding:9px 11px;
+ background:transparent;border:0;border-bottom:1px solid var(--line);
+ border-radius:0;color:var(--text);
+}
+.topic-button[aria-pressed=true]{background:#f3e8d0;border-left:2px solid var(--accent);padding-left:9px}
+.topic-small{font:18px/1.55 'Gurmukhi MN','Noto Serif Gurmukhi',serif;color:var(--mind-sikh)}
+.topic-button strong{font:400 14px/1.5 -apple-system,BlinkMacSystemFont,Arial,sans-serif;text-align:right;max-width:55%}
+.lesson-detail{margin-top:23px;border-top:1px solid var(--line);padding-top:19px}
+.lesson-detail h2{font:600 16px/1.5 -apple-system,BlinkMacSystemFont,Arial,sans-serif;margin:0 0 4px}
+.lesson .subtitle{font-size:14px;line-height:1.5;margin:0 0 12px;color:var(--muted)}
+.section-label{color:var(--muted);font-size:10px;letter-spacing:.05em;text-transform:none}
+.two-lenses{display:block;margin:14px 0 25px}
+.two-lenses section{padding:8px 0 12px}
+.two-lenses section p{font-size:14px;line-height:1.85;margin:7px 0}
+.sikh-lens p{color:var(--mind-sikh)!important}
+.psych-lens{border-left:2px solid var(--mind-psych);padding-left:14px!important}
+.psych-lens .section-label,.psych-lens p{color:var(--mind-psych)!important}
+.practice{padding:7px 0 4px;background:transparent;border-radius:0;margin:11px 0 22px}
+.practice p{line-height:1.85;color:var(--muted)}
+.practice .boundary{color:var(--muted);font-size:13px}
+.practice blockquote{font:400 18px/1.6 Georgia,serif;margin:13px 0 18px;padding-left:13px;border-left:1px solid var(--line)}
+.refs{border-top:1px solid var(--line);padding-top:13px}
+.refs a{min-height:44px;display:inline-flex;align-items:center}
+.history{max-width:720px;margin:22px auto;padding:0;border-top:1px solid var(--line)}
+.history details{padding:4px 0}
+.history summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-size:14px;color:var(--mind-sikh)}
+.history>p,.history details>p{font-size:13px;color:var(--muted);line-height:1.8}
+.history-entry{padding:15px 0}
+.history-title{font-size:20px}
+.closing{text-align:left;max-width:none;margin:40px auto 28px;border-top:1px solid var(--line);padding-top:20px}
+.closing h2{font:24px/1.4 Georgia,serif}
+.closing p:not(.eyebrow){font-size:13px}
+.closing a{margin:8px 0}
+footer{max-width:780px;margin:20px auto 0}
+@media(min-width:800px){.two-lenses{display:grid;grid-template-columns:1fr 1fr;gap:24px}}
+@media(max-width:650px){
+ .top{padding:7px 15px}
+ main{padding:0 17px}
+ .entrance{padding:0 0 6px}
+ .entrance h1{font-size:20px}
+ .entrance>p:not(.eyebrow){font-size:11px}
+ .gurmukhi{font-size:clamp(31px,7.5vw,39px);line-height:1.84}
+ .teaching-source{padding:5px 0 11px}
+ .topic-button,.topic-button[aria-pressed=true]{min-height:58px}
+ .topic-small{font-size:16px}
+ .topic-button strong{font-size:13px}
+ .lesson-detail{margin-top:17px}
+ .closing{margin-top:30px}
+ footer{padding:15px}
+}
+@media(max-width:350px){
+ main{padding:0 11px}
+ .gurmukhi{font-size:31px;overflow-wrap:normal;word-break:normal}
+ .topic-button{gap:9px}
+ .topic-button strong{font-size:12px}
+}
+@media(prefers-color-scheme:dark){
+ :root{--page:#121b2b;--surface:#121b2b;--text:#f0e6cf;--muted:#d4c7ae;--line:#38445a;--accent:#f0c87f;--ink:#e4ca99;--mind-sikh:#e3d3b3;--mind-psych:#b9c6d6;color-scheme:dark}
+ .topic-button[aria-pressed=true]{background:#2e2b36}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*:before,*:after{transition:none!important;animation:none!important}}
