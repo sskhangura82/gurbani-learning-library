@@ -1,0 +1,392 @@
+{
+  "project": "GLP-001",
+  "packet": "PSY-CONTENT",
+  "recordVersion": 1,
+  "documentStatus": "DRAFT_FOR_EDITORIAL_REVIEW_ONLY",
+  "sourceCorpus": {
+    "ref": "js/japji-full-data.js",
+    "originalHashesRequired": true,
+    "externalGurbaniNotIngested": true
+  },
+  "policy": {
+    "runtimePublication": false,
+    "noClinicalInstructions": true,
+    "noDiagnosis": true,
+    "noSpiritualScores": true,
+    "noAnalytics": true,
+    "noPersonalProfiling": true,
+    "noSyntheticVoice": true,
+    "noTreatmentClaims": true
+  },
+  "psychologyEvidenceRegister": {
+    "EX_DARPAN_ANG1": {
+      "url": "https://www.gurugranthdarpan.net/0001.html",
+      "title": "Sahib Singh, Guru Granth Darpan (Ang 1)",
+      "role": "proposed_exegetical_source",
+      "textExtractReviewed": false
+    },
+    "EX_DARPAN_ANG3": {
+      "url": "https://www.gurugranthdarpan.net/0003.html",
+      "title": "Sahib Singh, Guru Granth Darpan (Ang 3)",
+      "role": "proposed_exegetical_source",
+      "textExtractReviewed": false
+    },
+    "EX_DARPAN_ANG6": {
+      "url": "https://www.gurugranthdarpan.net/0006.html",
+      "title": "Sahib Singh, Guru Granth Darpan (Ang 6)",
+      "role": "proposed_exegetical_source",
+      "textExtractReviewed": false
+    },
+    "PSY_CRA_2014": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24864005/",
+      "title": "Craske et al. (2014), Maximizing exposure therapy: an inhibitory learning approach",
+      "tier": "A",
+      "scope": "A theory and treatment context, NOT proof of Sikh theology nor a user exposure instruction",
+      "exactAbstractQuoteReviewed": false
+    },
+    "PSY_MEZ_2004": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15367078/",
+      "title": "Mezulis et al. (2004), self-serving attributional bias meta-analysis",
+      "tier": "A",
+      "scope": "Population-level cognitive tendency, not the theological construct haumai",
+      "exactAbstractQuoteReviewed": false
+    },
+    "PSY_BERR_2016": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27977239/",
+      "title": "Berridge and Robinson (2016), reward and wanting vs liking",
+      "tier": "A",
+      "scope": "Reward-science construct, not equivalent to Gurbani's spiritual hunger",
+      "exactAbstractQuoteReviewed": false
+    },
+    "PSY_GOY_2014": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24395196/",
+      "title": "Goyal et al. (2014), Meditation Programs for Psychological Stress and Well-being",
+      "tier": "B",
+      "scope": "Evidence on meditation interventions with quality limits, not Naam Simran efficacy",
+      "exactAbstractQuoteReviewed": false
+    }
+  },
+  "topics": [
+    {
+      "themeId": "mind.courage",
+      "slug": "nirbhau-nirvair",
+      "title": {
+        "en": "Courage without hostility",
+        "pa": "ਨਿਰਭਉ ਨਿਰਵੈਰੁ"
+      },
+      "status": {
+        "draft": true,
+        "sourceAnchorsCheckedAgainstFrozenCorpus": true,
+        "sikhPunjabiReviewed": false,
+        "psychologyEvidenceReviewed": false,
+        "founderProductAccepted": false,
+        "publicRuntimePublished": false
+      },
+      "anchors": [
+        {
+          "occurrenceId": "mool.line01",
+          "sourceSha256": "9c83d0b7995531208b087fc82e87ac477f04ca2119b77365dbcf58190998b9d4",
+          "quote": "ਨਿਰਭਉ ਨਿਰਵੈਰੁ",
+          "ang": 1
+        }
+      ],
+      "practiceInstruction": false,
+      "centralQuestion": {
+        "en": "How can courage and freedom from hostility belong together?",
+        "pa": "ਵੈਰ ਤੋਂ ਬਿਨਾਂ ਨਿਰਭਉ ਹੋਣ ਦੇ ਅਰਥ ਨੂੰ ਕਿਵੇਂ ਸਮਝੀਏ?"
+      },
+      "closeMeaning": {
+        "en": "The Divine is described as without fear and without enmity; this is not a measure of whether a person experiences fear.",
+        "pa": "ਮੂਲ ਮੰਤਰ ਵਿਚ ਅਕਾਲ ਪੁਰਖ ਨੂੰ ਨਿਰਭਉ ਤੇ ਨਿਰਵੈਰੁ ਕਿਹਾ ਗਿਆ ਹੈ; ਇਹ ਮਨੁੱਖ ਦੇ ਡਰ ਦੀ ਕੋਈ ਜਾਂਚ ਨਹੀਂ ਹੈ।",
+        "authority": "AI-assisted original draft, not a literal/theological equivalent"
+      },
+      "sikhReading": {
+        "en": "These are attributes of the One in the Mool Mantar; an application to human relationships requires additional, attributed Gurbani.",
+        "pa": "ਇਹ ਮੂਲ ਮੰਤਰ ਵਿੱਚ ਪਰਮਾਤਮਾ ਦੇ ਗੁਣ ਹਨ। ਮਨੁੱਖੀ ਜੀਵਨ ਲਈ ਅਰਥ ਕਰਦਿਆਂ ਹੋਰ ਬਾਣੀ ਤੇ ਪ੍ਰਮਾਣਿਕ ਵਿਆਖਿਆ ਦੀ ਲੋੜ ਹੈ।",
+        "attributionStatus": "named_sources_pending_exact_excerpt",
+        "sources": [
+          "EX_DARPAN_ANG1"
+        ]
+      },
+      "psychologyLens": {
+        "tier": "A",
+        "focus": "Fear can be present while action remains possible",
+        "summary": "Inhibitory-learning research examines fear and avoidance. This is a separate psychology lens, not a command to suppress fear or a spiritual claim.",
+        "sourceIds": [
+          "PSY_CRA_2014"
+        ],
+        "authority": "empirical analogy, original draft; evidence/source review pending"
+      },
+      "whereComparisonBreaks": "The Mool Mantar describes the Divine, not a human anxiety score. The psychology model neither interprets Nirvair nor proves Sikh metaphysics.",
+      "explicitBoundary": "Not a demand to be fearless, remain in danger, intimidate others, or replace qualified care.",
+      "ordinaryScenario": {
+        "en": "In an invented situation, someone responds to disagreement without retaliation while acknowledging the risks.",
+        "pa": "ਕਲਪਿਤ ਹਾਲਾਤ ਵਿਚ ਕੋਈ ਵਿਅਕਤੀ ਮਤਭੇਦ ਦਾ ਜਵਾਬ ਬਿਨਾਂ ਬਦਲੇ ਦੇ ਦਿੰਦਾ ਹੈ ਅਤੇ ਖ਼ਤਰੇ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਨਹੀਂ ਕਰਦਾ।",
+        "label": "illustrative only; not advice, diagnosis or guidance about a real person"
+      },
+      "optionalReflection": {
+        "en": "Where does acting with courage differ from acting with anger?",
+        "pa": "ਹਿੰਮਤ ਨਾਲ ਕੰਮ ਕਰਨ ਅਤੇ ਗੁੱਸੇ ਨਾਲ ਕੰਮ ਕਰਨ ਵਿਚ ਕੀ ਫ਼ਰਕ ਹੈ?",
+        "authorship": "ours",
+        "scored": false
+      },
+      "teachBack": {
+        "en": "Why must we not confuse a Divine attribute with a person's emotional state?",
+        "pa": "ਪਰਮਾਤਮਾ ਦੇ ਗੁਣ ਨੂੰ ਮਨੁੱਖੀ ਭਾਵਨਾ ਨਾਲ ਇਕੋ ਜਿਹਾ ਕਿਉਂ ਨਹੀਂ ਸਮਝਣਾ ਚਾਹੀਦਾ?"
+      },
+      "externalScriptureCandidates": [
+        {
+          "candidateId": "external.salok.m9.16.ang1427",
+          "ang": 1427,
+          "displayOriginalQuote": null,
+          "corpusStatus": "NOT_INGESTED",
+          "humanCollation": "PENDING",
+          "publicUse": false
+        }
+      ]
+    },
+    {
+      "themeId": "mind.haumai",
+      "slug": "hukam-haumai",
+      "title": {
+        "en": "Haumai and the self-claim",
+        "pa": "ਹੁਕਮ ਅਤੇ ਹਉਮੈ"
+      },
+      "status": {
+        "draft": true,
+        "sourceAnchorsCheckedAgainstFrozenCorpus": true,
+        "sikhPunjabiReviewed": false,
+        "psychologyEvidenceReviewed": false,
+        "founderProductAccepted": false,
+        "publicRuntimePublished": false
+      },
+      "anchors": [
+        {
+          "occurrenceId": "pauri02.line05",
+          "sourceSha256": "5274917537ffc83a89f7eeba9ce1bf63c7bd15c50802b47f06f6ec20bb7bf1a6",
+          "quote": "ਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ",
+          "ang": 1
+        },
+        {
+          "occurrenceId": "pauri02.line06",
+          "sourceSha256": "135ba3f6a5997077616ce884c747ea2d0decbb679f17e7540cab49d8fdfef665",
+          "quote": "ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ",
+          "ang": 1
+        }
+      ],
+      "practiceInstruction": false,
+      "centralQuestion": {
+        "en": "If everyone exists within Hukam, what changes when Hukam is understood?",
+        "pa": "ਜਦੋਂ ਸਭ ਹੁਕਮ ਵਿੱਚ ਹਨ ਤਾਂ ਹੁਕਮ ਦੀ ਸੂਝ ਨਾਲ ਕੀ ਬਦਲਦਾ ਹੈ?"
+      },
+      "closeMeaning": {
+        "en": "Pauri 2 first states that no one stands outside Hukam, then links understanding Hukam to the self-asserting 'I'.",
+        "pa": "ਦੂਜੀ ਪਉੜੀ ਪਹਿਲਾਂ ਆਖਦੀ ਹੈ ਕਿ ਕੋਈ ਹੁਕਮ ਤੋਂ ਬਾਹਰ ਨਹੀਂ; ਫਿਰ ਹੁਕਮ ਦੀ ਸੂਝ ਨੂੰ ਹਉਮੈ ਨਾਲ ਜੋੜਦੀ ਹੈ।",
+        "authority": "AI-assisted original draft, not a literal/theological equivalent"
+      },
+      "sikhReading": {
+        "en": "Read both lines in order: existing within Hukam is not identical to understanding Hukam. An attributed Sikh explanation must remain distinct from a social-psychology analogy.",
+        "pa": "ਦੋਵੇਂ ਤੁਕਾਂ ਇਕੱਠੀਆਂ ਪੜ੍ਹੀਏ: ਹੁਕਮ ਅੰਦਰ ਹੋਣਾ ਅਤੇ ਹੁਕਮ ਨੂੰ ਸਮਝਣਾ ਇਕ ਗੱਲ ਨਹੀਂ। ਗੁਰਮਤਿ ਦੀ ਵਿਆਖਿਆ ਨੂੰ ਮਨੋਵਿਗਿਆਨ ਤੋਂ ਵੱਖ ਰੱਖਣਾ ਹੈ।",
+        "attributionStatus": "named_sources_pending_exact_excerpt",
+        "sources": [
+          "EX_DARPAN_ANG1"
+        ]
+      },
+      "psychologyLens": {
+        "tier": "A",
+        "focus": "Self-serving attribution tendency",
+        "summary": "Cognitive research describes the tendency to credit oneself for success more than for failure; it is not a diagnosis.",
+        "sourceIds": [
+          "PSY_MEZ_2004"
+        ],
+        "authority": "empirical analogy, original draft; evidence/source review pending"
+      },
+      "whereComparisonBreaks": "Haumai in Gurbani concerns relationship to Hukam and the 'I'; a self-serving attribution bias does not explain, measure or cure haumai.",
+      "explicitBoundary": "Not the same as Freud's structural ego, narcissism, a diagnosis, or a judgment about a relative.",
+      "ordinaryScenario": {
+        "en": "In a fictional project debrief, people recognize collaborators, circumstances and their own efforts rather than taking all the credit.",
+        "pa": "ਕਲਪਿਤ ਕੰਮ ਦੀ ਗੱਲਬਾਤ ਵਿੱਚ ਸਹਿਯੋਗੀ, ਹਾਲਾਤ ਅਤੇ ਆਪਣੀ ਮਿਹਨਤ ਤਿੰਨਾਂ ਨੂੰ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ।",
+        "label": "illustrative only; not advice, diagnosis or guidance about a real person"
+      },
+      "optionalReflection": {
+        "en": "What does the word 'I' do when success is described?",
+        "pa": "ਕਾਮਯਾਬੀ ਬਾਰੇ ਦੱਸਣ ਸਮੇਂ 'ਮੈਂ' ਸ਼ਬਦ ਕੀ ਕੰਮ ਕਰਦਾ ਹੈ?",
+        "authorship": "ours",
+        "scored": false
+      },
+      "teachBack": {
+        "en": "Why is cognitive self-bias not identical to the theological concept of haumai?",
+        "pa": "ਮਨ ਦੀ ਆਪਣੇ ਪੱਖ ਵਾਲੀ ਰੁਚੀ ਹਉਮੈ ਦੇ ਗੁਰਮਤਿ ਅਰਥ ਦੇ ਬਰਾਬਰ ਕਿਉਂ ਨਹੀਂ?"
+      },
+      "externalScriptureCandidates": [
+        {
+          "candidateId": "external.asadiwaar.ang466.saloks",
+          "ang": 466,
+          "displayOriginalQuote": null,
+          "corpusStatus": "NOT_INGESTED",
+          "humanCollation": "PENDING",
+          "publicUse": false
+        }
+      ]
+    },
+    {
+      "themeId": "mind.craving",
+      "slug": "bhukh-santokh",
+      "title": {
+        "en": "The hunger of more",
+        "pa": "ਤ੍ਰਿਸ਼ਨਾ ਅਤੇ ਸੰਤੋਖ"
+      },
+      "status": {
+        "draft": true,
+        "sourceAnchorsCheckedAgainstFrozenCorpus": true,
+        "sikhPunjabiReviewed": false,
+        "psychologyEvidenceReviewed": false,
+        "founderProductAccepted": false,
+        "publicRuntimePublished": false
+      },
+      "anchors": [
+        {
+          "occurrenceId": "pauri01.line03",
+          "sourceSha256": "8bcfd795b72ba6e62842fc98485e1661e38003d69ea66cbe85bfa3b138cad26b",
+          "quote": "ਭੁਖਿਆ ਭੁਖ",
+          "ang": 1
+        },
+        {
+          "occurrenceId": "pauri10.line01",
+          "sourceSha256": "13dcdafd0ace7de0c890bf43ad7597d4f8346519b862e50a401c5c43d2a962f1",
+          "quote": "ਸੁਣਿਐ ਸਤੁ ਸੰਤੋਖੁ ਗਿਆਨੁ",
+          "ang": 3
+        }
+      ],
+      "practiceInstruction": false,
+      "centralQuestion": {
+        "en": "Why can abundance fail to end a feeling of lack?",
+        "pa": "ਬਹੁਤ ਸਾਰੀਆਂ ਚੀਜ਼ਾਂ ਹੋਣ ਤੇ ਵੀ ਅੰਦਰਲੀ ਤ੍ਰਿਸ਼ਨਾ ਕਿਉਂ ਰਹਿੰਦੀ ਹੈ?"
+      },
+      "closeMeaning": {
+        "en": "Japji contrasts unsatisfied craving with contentment and wisdom arising through listening.",
+        "pa": "ਜਪੁਜੀ ਵਿਚ ਨਾ ਮੁੱਕਣ ਵਾਲੀ ਤ੍ਰਿਸ਼ਨਾ ਦੇ ਨਾਲ ਸੁਣਿਐ ਤੋਂ ਉਪਜਦੇ ਸੰਤੋਖ ਤੇ ਗਿਆਨ ਦੀ ਗੱਲ ਆਉਂਦੀ ਹੈ।",
+        "authority": "AI-assisted original draft, not a literal/theological equivalent"
+      },
+      "sikhReading": {
+        "en": "The juxtaposition is a proposed learning connection, not a single line quoted from the Guru; place each complete occurrence in its own pauri.",
+        "pa": "ਇਹ ਦੋ ਪਉੜੀਆਂ ਨੂੰ ਜੋੜਨ ਵਾਲੀ ਸਾਡੀ ਸਿੱਖਿਆਕ ਤੁਲਨਾ ਹੈ, ਗੁਰੂ ਦੀ ਇੱਕੋ ਤੁਕ ਨਹੀਂ; ਹਰ ਤੁਕ ਆਪਣੀ ਪਉੜੀ ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਪੜ੍ਹੀ ਜਾਵੇ।",
+        "attributionStatus": "named_sources_pending_exact_excerpt",
+        "sources": [
+          "EX_DARPAN_ANG1",
+          "EX_DARPAN_ANG3"
+        ]
+      },
+      "psychologyLens": {
+        "tier": "A",
+        "focus": "Wanting versus liking; hedonic adaptation",
+        "summary": "Reward science distinguishes motivation to obtain something from the pleasure received; this is a helpful comparison, not a Gurbani translation.",
+        "sourceIds": [
+          "PSY_BERR_2016"
+        ],
+        "authority": "empirical analogy, original draft; evidence/source review pending"
+      },
+      "whereComparisonBreaks": "The Gurbani concern is spiritual craving and contentment; it is not reducible to dopamine or a reward-theory model.",
+      "explicitBoundary": "Not a judgment on bodily hunger, poverty, seeking work, ordinary needs, or substance-use difficulties.",
+      "ordinaryScenario": {
+        "en": "A fictional character enjoys acquiring a new object but soon begins anticipating another; the example describes an observation, not a diagnosis.",
+        "pa": "ਇੱਕ ਕਲਪਿਤ ਵਿਅਕਤੀ ਨਵੀਂ ਚੀਜ਼ ਲੈ ਕੇ ਖ਼ੁਸ਼ ਹੁੰਦਾ ਹੈ, ਫਿਰ ਛੇਤੀ ਹੋਰ ਦੀ ਉਡੀਕ ਸ਼ੁਰੂ ਕਰ ਦਿੰਦਾ ਹੈ; ਇਹ ਵੇਰਵਾ ਹੈ, ਨਿਦਾਨ ਨਹੀਂ।",
+        "label": "illustrative only; not advice, diagnosis or guidance about a real person"
+      },
+      "optionalReflection": {
+        "en": "What is the difference between needing something and endlessly craving more?",
+        "pa": "ਕਿਸੇ ਲੋੜ ਅਤੇ ਲਗਾਤਾਰ ਹੋਰ ਦੀ ਤ੍ਰਿਸ਼ਨਾ ਵਿੱਚ ਕੀ ਅੰਤਰ ਹੈ?",
+        "authorship": "ours",
+        "scored": false
+      },
+      "teachBack": {
+        "en": "How does Japji's language of Santokh exceed a reward-science comparison?",
+        "pa": "ਜਪੁਜੀ ਦੇ ਸੰਤੋਖ ਦਾ ਅਰਥ ਇਨਾਮ ਵਾਲੇ ਮਨੋਵਿਗਿਆਨ ਤੋਂ ਕਿਵੇਂ ਵੱਡਾ ਹੈ?"
+      },
+      "externalScriptureCandidates": []
+    },
+    {
+      "themeId": "mind.quiet",
+      "slug": "chup-liv",
+      "title": {
+        "en": "Outer silence and the mind",
+        "pa": "ਚੁੱਪ ਅਤੇ ਮਨ"
+      },
+      "status": {
+        "draft": true,
+        "sourceAnchorsCheckedAgainstFrozenCorpus": true,
+        "sikhPunjabiReviewed": false,
+        "psychologyEvidenceReviewed": false,
+        "founderProductAccepted": false,
+        "publicRuntimePublished": false
+      },
+      "anchors": [
+        {
+          "occurrenceId": "pauri01.line02",
+          "sourceSha256": "0e12e72beb1bb30783a53eb36cd5c6147ae3bf1b3200c78d48dbbfcd5a9830e6",
+          "quote": "ਚੁਪੈ ਚੁਪ",
+          "ang": 1
+        },
+        {
+          "occurrenceId": "pauri28.line03",
+          "sourceSha256": "fecd2a974beffd3ceb1fcc5634ac75dbc18351a91d505690148ceb5c16390aa2",
+          "quote": "ਮਨਿ ਜੀਤੈ ਜਗੁ ਜੀਤੁ",
+          "ang": 6
+        }
+      ],
+      "practiceInstruction": false,
+      "centralQuestion": {
+        "en": "Does not speaking mean the mind is quiet?",
+        "pa": "ਕੀ ਬੋਲਣਾ ਬੰਦ ਕਰਨ ਨਾਲ ਮਨ ਦੀ ਚੁੱਪ ਬਣ ਜਾਂਦੀ ਹੈ?"
+      },
+      "closeMeaning": {
+        "en": "Japji questions whether outward silence alone brings inner stillness and elsewhere speaks of mastering the mind.",
+        "pa": "ਜਪੁਜੀ ਪੁੱਛਦੀ ਹੈ ਕਿ ਕੀ ਬਾਹਰਲੀ ਚੁੱਪ ਹੀ ਮਨ ਦਾ ਟਿਕਾਉ ਹੈ; ਹੋਰ ਪਉੜੀ ਵਿੱਚ ਮਨ ਨੂੰ ਜਿੱਤਣ ਦੀ ਗੱਲ ਹੈ।",
+        "authority": "AI-assisted original draft, not a literal/theological equivalent"
+      },
+      "sikhReading": {
+        "en": "The verses have specific spiritual contexts. A silence analogy must not be presented as a full interpretation of Nam Simran.",
+        "pa": "ਇਨ੍ਹਾਂ ਤੁਕਾਂ ਦਾ ਖ਼ਾਸ ਆਤਮਕ ਸੰਦਰਭ ਹੈ। ਕੇਵਲ ਚੁੱਪ ਦੀ ਤੁਲਨਾ ਨੂੰ ਨਾਮ ਸਿਮਰਨ ਦੀ ਪੂਰੀ ਵਿਆਖਿਆ ਨਾ ਬਣਾਈਏ।",
+        "attributionStatus": "named_sources_pending_exact_excerpt",
+        "sources": [
+          "EX_DARPAN_ANG1",
+          "EX_DARPAN_ANG6"
+        ]
+      },
+      "psychologyLens": {
+        "tier": "B",
+        "focus": "Attention and meditation-intervention evidence with important limitations",
+        "summary": "Meditation studies investigate some psychological effects but do not provide a measure of Naam Simran or spiritual realization.",
+        "sourceIds": [
+          "PSY_GOY_2014"
+        ],
+        "authority": "empirical analogy, original draft; evidence/source review pending"
+      },
+      "whereComparisonBreaks": "Gurbani's reflection on outer silence, mental attention and Naam cannot be equated with a modern mindfulness intervention.",
+      "explicitBoundary": "Not a breath-holding exercise, not a mandatory technique, not a promise of symptom relief and not a replacement for care.",
+      "ordinaryScenario": {
+        "en": "Someone sitting quietly in a fictional scene may still notice a mind full of unresolved arguments.",
+        "pa": "ਕਲਪਿਤ ਦ੍ਰਿਸ਼ ਵਿਚ ਕੋਈ ਵਿਅਕਤੀ ਚੁੱਪ ਬੈਠਿਆ ਹੋਵੇ ਪਰ ਮਨ ਵਿਚ ਅਜੇ ਵੀ ਬਹਿਸਾਂ ਚੱਲਦੀਆਂ ਹੋਣ।",
+        "label": "illustrative only; not advice, diagnosis or guidance about a real person"
+      },
+      "optionalReflection": {
+        "en": "Where do you see a difference between silence outside and stillness within?",
+        "pa": "ਬਾਹਰਲੀ ਚੁੱਪ ਅਤੇ ਅੰਦਰਲੇ ਟਿਕਾਉ ਵਿੱਚ ਕੀ ਫ਼ਰਕ ਦਿਸਦਾ ਹੈ?",
+        "authorship": "ours",
+        "scored": false
+      },
+      "teachBack": {
+        "en": "Why is a psychology study of meditation not proof of the meaning or results of Simran?",
+        "pa": "ਧਿਆਨ ਬਾਰੇ ਮਨੋਵਿਗਿਆਨਕ ਅਧਿਐਨ ਸਿਮਰਨ ਦੇ ਅਰਥ ਜਾਂ ਨਤੀਜਿਆਂ ਦਾ ਪ੍ਰਮਾਣ ਕਿਉਂ ਨਹੀਂ?"
+      },
+      "externalScriptureCandidates": []
+    }
+  ],
+  "publication": {
+    "humanSikhPunjabiReviewed": false,
+    "humanPsychologyEvidenceReviewed": false,
+    "founderProductAccepted": false,
+    "publicReleaseWord": false,
+    "notes": "This draft is NOT the PR #12 runtime; do not substitute this packet for scholarly or psychological verification."
+  }
+}
