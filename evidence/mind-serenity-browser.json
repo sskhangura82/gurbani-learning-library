@@ -1,0 +1,42 @@
+{
+  "checks": [
+    "Chrome starts isolated",
+    "Page navigation 390",
+    "Source line appears in first phone screen 390",
+    "Source lettering dominates title 390",
+    "All topics are accessible list rows 390",
+    "No horizontal scroll 390",
+    "No decorative emblem or scripture card 390",
+    "History shelf closed by default 390",
+    "Original source line unchanged 390",
+    "Topic selection loads exact new scripture 390",
+    "Explanations remain separately labelled 390",
+    "No media, remote inputs, or user analytics 390",
+    "Page navigation 320",
+    "Source line appears in first phone screen 320",
+    "Source lettering dominates title 320",
+    "All topics are accessible list rows 320",
+    "No horizontal scroll 320",
+    "No decorative emblem or scripture card 320",
+    "History shelf closed by default 320",
+    "Original source line unchanged 320",
+    "Topic selection loads exact new scripture 320",
+    "Explanations remain separately labelled 320",
+    "No media, remote inputs, or user analytics 320",
+    "Dark variant is high contrast",
+    "Home still has exactly three primary room cards",
+    "Study paths are a quiet row, not a fourth card",
+    "Home contains both Mind preview and Nitnem roadmap",
+    "Home has no horizontal overflow",
+    "No JavaScript exceptions"
+  ],
+  "screens": [
+    "docs/screenshots/nitnem-mind/mind-serenity-day-390.png",
+    "docs/screenshots/nitnem-mind/mind-serenity-day-320.png",
+    "docs/screenshots/nitnem-mind/mind-serenity-amrit-390.png",
+    "docs/screenshots/nitnem-mind/mind-serenity-home-390.png"
+  ],
+  "errors": [],
+  "note": "Mac Chrome simulated mobile viewport. Not a physical iPhone or approved psychology lesson.",
+  "finishedAt": "2026-10-25T01:39:09.362Z"
+}
