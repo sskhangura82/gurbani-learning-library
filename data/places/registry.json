@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 2,
+  "projectId": "GLP-001",
+  "recordStatus": "draft_non_runtime",
+  "frozenOn": "2026-10-24",
+  "meaningOfSourceChecked": "URL visited and an exact short source excerpt recorded; does not equal institution, name, media or human review",
+  "rules": {
+    "autoPlay": false,
+    "autoEmbed": false,
+    "streamLiveStatus": "never infer from clock or page title",
+    "noPhotosUntilRights": true,
+    "userLocation": false,
+    "analytics": false,
+    "recentVisits": false
+  },
+  "places": [
+    {
+      "placeId": "harmandir",
+      "names": {
+        "en": {
+          "text": "Sri Harmandir Sahib",
+          "review": "source_checked",
+          "evidenceIds": [
+            "H1"
+          ]
+        },
+        "pa": {
+          "text": "ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਸਾਹਿਬ",
+          "review": "source_checked_punjabi_human_pending",
+          "evidenceIds": [
+            "H1"
+          ]
+        }
+      },
+      "location": {
+        "city": "Amritsar",
+        "region": "Punjab",
+        "country": "IN",
+        "publicAddress": null,
+        "timeZone": "Asia/Kolkata",
+        "evidenceIds": [
+          "H1"
+        ]
+      },
+      "facts": [
+        {
+          "factId": "harmandir.four_entrances",
+          "en": "Sri Harmandir Sahib has entrances on four sides.",
+          "pa": null,
+          "status": "source_checked_draft",
+          "evidenceIds": [
+            "H1"
+          ]
+        },
+        {
+          "factId": "harmandir.adi_granth",
+          "en": "Guru Arjan Sahib installed the Adi Granth here in 1604; Baba Buddha Ji was the first Granthi.",
+          "pa": null,
+          "status": "source_checked_draft",
+          "evidenceIds": [
+            "H2"
+          ]
+        }
+      ],
+      "arrivalDraft": {
+        "en": "Water surrounding the shrine; an entrance in every direction.",
+        "pa": null,
+        "status": "editorial_draft",
+        "evidenceIds": [
+          "H1"
+        ]
+      },
+      "routes": [
+        {
+          "routeId": "harmandir.sgpc.kirtan",
+          "kind": "official_outbound_broadcast_page",
+          "url": "https://kirtan.sgpc.net/",
+          "authority": "SGPC",
+          "evidenceIds": [
+            "H4"
+          ],
+          "linkStatus": "official_linked",
+          "liveStatus": "not_checked",
+          "embedPermission": "not_granted",
+          "userGestureRequired": true,
+          "rightsNote": "SGPC reserves Gurbani broadcasting rights; outbound only",
+          "rightsEvidenceIds": [
+            "H3"
+          ]
+        }
+      ],
+      "media": {
+        "assets": [],
+        "rightsStatus": "no_asset_selected_or_licensed"
+      },
+      "programme": {
+        "status": "not_checked",
+        "schedule": null
+      },
+      "review": {
+        "institutionalFacts": "source_checked_human_pending",
+        "names": "human_punjabi_pending",
+        "media": "not_selected",
+        "founderProductAccepted": false,
+        "publishedRevision": null
+      },
+      "conflicts": [],
+      "recheck": {
+        "routesEveryDays": 30,
+        "factsEveryDays": 365
+      }
+    },
+    {
+      "placeId": "fremont",
+      "names": {
+        "en": {
+          "text": "Gurdwara Sahib Fremont",
+          "review": "source_checked",
+          "evidenceIds": [
+            "F1"
+          ]
+        },
+        "pa": {
+          "text": null,
+          "review": "withheld_pending_punjabi_reviewer",
+          "evidenceIds": []
+        }
+      },
+      "location": {
+        "city": "Fremont",
+        "region": "California",
+        "country": "US",
+        "publicAddress": null,
+        "timeZone": "America/Los_Angeles",
+        "evidenceIds": [
+          "F1"
+        ]
+      },
+      "facts": [
+        {
+          "factId": "fremont.established",
+          "en": "The gurdwara states it was established in 1978.",
+          "pa": null,
+          "status": "source_checked_draft",
+          "evidenceIds": [
+            "F1"
+          ]
+        },
+        {
+          "factId": "fremont.daily",
+          "en": "The institution describes itself as open seven days a week.",
+          "pa": null,
+          "status": "source_checked_draft",
+          "evidenceIds": [
+            "F2"
+          ]
+        }
+      ],
+      "arrivalDraft": {
+        "en": "A Bay Area sangat gathering across generations.",
+        "pa": null,
+        "status": "editorial_draft",
+        "evidenceIds": [
+          "F1"
+        ]
+      },
+      "routes": [
+        {
+          "routeId": "fremont.youtube",
+          "kind": "official_outbound_video_channel",
+          "url": "https://www.youtube.com/c/gurdwarasahibfremont",
+          "authority": "Linked by the institution",
+          "evidenceIds": [
+            "F3"
+          ],
+          "linkStatus": "official_linked",
+          "liveStatus": "not_checked",
+          "embedPermission": "not_assessed",
+          "userGestureRequired": true
+        },
+        {
+          "routeId": "fremont.radio",
+          "kind": "official_outbound_radio_page",
+          "url": "https://station.voscast.com/4d768bbfbd215/",
+          "authority": "Linked by the institution",
+          "evidenceIds": [
+            "F4"
+          ],
+          "linkStatus": "official_linked",
+          "liveStatus": "not_checked",
+          "embedPermission": "not_assessed",
+          "userGestureRequired": true
+        }
+      ],
+      "media": {
+        "assets": [],
+        "rightsStatus": "no_asset_selected_or_licensed"
+      },
+      "programme": {
+        "status": "not_checked",
+        "schedule": null
+      },
+      "review": {
+        "institutionalFacts": "source_checked_human_pending",
+        "names": "human_punjabi_pending",
+        "media": "not_selected",
+        "founderProductAccepted": false,
+        "publishedRevision": null
+      },
+      "conflicts": [
+        {
+          "id": "fremont.founding_year",
+          "status": "unresolved_secondary_claim",
+          "details": "Institution states established 1978; a secondary legacy listing reportedly says founded 1980. Do not display legacy claim without independent verification.",
+          "evidenceIds": [
+            "F1",
+            "FLEG"
+          ],
+          "publicDisplay": false
+        }
+      ],
+      "recheck": {
+        "routesEveryDays": 30,
+        "factsEveryDays": 365
+      }
+    },
+    {
+      "placeId": "sanjose",
+      "names": {
+        "en": {
+          "text": "Sikh Gurdwara Sahib San Jose",
+          "review": "source_checked",
+          "evidenceIds": [
+            "S1"
+          ]
+        },
+        "pa": {
+          "text": null,
+          "review": "withheld_pending_punjabi_reviewer",
+          "evidenceIds": []
+        }
+      },
+      "location": {
+        "city": "San Jose",
+        "region": "California",
+        "country": "US",
+        "publicAddress": "3636 Gurdwara Avenue, San Jose, CA 95148",
+        "timeZone": "America/Los_Angeles",
+        "evidenceIds": [
+          "S2"
+        ]
+      },
+      "facts": [
+        {
+          "factId": "sanjose.founding",
+          "en": "The official history records the congregation being founded in 1984.",
+          "pa": null,
+          "status": "source_checked_draft",
+          "evidenceIds": [
+            "S1"
+          ]
+        },
+        {
+          "factId": "sanjose.evergreen",
+          "en": "The present site is in the Evergreen Hills of San Jose.",
+          "pa": null,
+          "status": "source_checked_draft",
+          "evidenceIds": [
+            "S2"
+          ]
+        }
+      ],
+      "arrivalDraft": {
+        "en": "A South Bay congregation now gathering in the Evergreen Hills.",
+        "pa": null,
+        "status": "editorial_draft",
+        "evidenceIds": [
+          "S1",
+          "S2"
+        ]
+      },
+      "routes": [
+        {
+          "routeId": "sanjose.audio",
+          "kind": "official_outbound_audio_page",
+          "url": "https://sanjosegurdwara.org/audioStreaming.html",
+          "authority": "Official institution page",
+          "evidenceIds": [
+            "S5"
+          ],
+          "linkStatus": "official_page",
+          "liveStatus": "not_checked",
+          "embedPermission": "not_assessed",
+          "userGestureRequired": true
+        }
+      ],
+      "media": {
+        "assets": [],
+        "rightsStatus": "no_asset_selected_or_licensed"
+      },
+      "programme": {
+        "status": "not_checked",
+        "schedule": null
+      },
+      "review": {
+        "institutionalFacts": "source_checked_human_pending",
+        "names": "human_punjabi_pending",
+        "media": "not_selected",
+        "founderProductAccepted": false,
+        "publishedRevision": null
+      },
+      "conflicts": [
+        {
+          "id": "sanjose.founding_vs_operation",
+          "status": "distinct_milestones_review_pending",
+          "details": "Official history says founded 1984; official transparency says operating since 1985. These may refer to different events; do not conflate.",
+          "evidenceIds": [
+            "S1",
+            "S3"
+          ],
+          "publicDisplay": false
+        },
+        {
+          "id": "sanjose.address",
+          "status": "unresolved_legacy_street_label",
+          "details": "Official contact/history uses Gurdwara Avenue, while an official financial page calls the same number Murillo Avenue. Show current contact address only; do not assume the reason for the difference.",
+          "evidenceIds": [
+            "S2",
+            "S4"
+          ],
+          "publicDisplay": false
+        }
+      ],
+      "recheck": {
+        "routesEveryDays": 30,
+        "factsEveryDays": 365
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "project": "GLP-001",
+  "packet": "GUR-PLACE-DATA",
+  "baseSHA": "254f3871b785b756208379138dcc17472a3733ff",
+  "checkedAt": "2026-10-25T00:55:40.594425+00:00",
+  "result": "DRAFT_PASS",
+  "places": 3,
+  "factRecords": 6,
+  "outboundRoutes": 4,
+  "unresolvedClaimRecords": 3,
+  "mediaAssets": 0,
+  "evidenceSourceRecords": 14,
+  "testCount": 16,
+  "failed": 0,
+  "existingR7Contract": "PASS",
+  "codeChangedInRuntime": false,
+  "liveFamilySite": "UNCHANGED",
+  "physicalIPhone": "NOT_RUN",
+  "liveBroadcasts": "NOT_CHECKED",
+  "licensedPhotos": "NONE",
+  "religiousOrInstitutionalHumanReview": "PENDING",
+  "statusNote": "Data and synthetic fixtures only. Source excerpts cross-checked against institutions on 2026-10-24; exact dates and conflict entries remain review pending. No authority to publish UI or stream."
+}
