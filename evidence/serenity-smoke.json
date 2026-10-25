@@ -1,0 +1,187 @@
+{
+  "checkedAt": "2026-10-25T01:30:00.255Z",
+  "checks": [
+    "Isolated browser available",
+    "Real local HTML navigation",
+    "385 source lines preserved",
+    "385 meanings and 42 units remain mounted",
+    "320px no horizontal overflow",
+    "320px reader starts near top",
+    "320px compact dock",
+    "320px six accessible controls",
+    "320px Understand no overflow",
+    "390px no horizontal overflow",
+    "390px reader starts near top",
+    "390px compact dock",
+    "390px six accessible controls",
+    "390px Understand no overflow",
+    "320px/200% scripture reflows",
+    "Guided visual play works",
+    "Guide pauses",
+    "No JS exceptions"
+  ],
+  "metrics": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "firstTop": 90,
+      "dockHeight": 52,
+      "headerHeight": 49,
+      "targets": [
+        {
+          "id": "play",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "dock-position",
+          "width": 78,
+          "height": 44
+        },
+        {
+          "id": "read",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "understand",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "study",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "tools-open",
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "depth": "read"
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "firstTop": 90,
+      "dockHeight": 52,
+      "headerHeight": 49,
+      "targets": [
+        {
+          "id": "play",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "dock-position",
+          "width": 78,
+          "height": 44
+        },
+        {
+          "id": "read",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "understand",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "study",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "tools-open",
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "depth": "understand"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "firstTop": 96,
+      "dockHeight": 52,
+      "headerHeight": 49,
+      "targets": [
+        {
+          "id": "play",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "dock-position",
+          "width": 133,
+          "height": 44
+        },
+        {
+          "id": "read",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "understand",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "study",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "tools-open",
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "depth": "read"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "firstTop": 96,
+      "dockHeight": 52,
+      "headerHeight": 49,
+      "targets": [
+        {
+          "id": "play",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "dock-position",
+          "width": 133,
+          "height": 44
+        },
+        {
+          "id": "read",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "understand",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "study",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "tools-open",
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "depth": "understand"
+    }
+  ],
+  "errors": [],
+  "scope": "Isolated Mac Chrome simulated 320/390 widths, not physical iPhone"
+}
