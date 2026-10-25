@@ -68,7 +68,7 @@ test('No Jaap text model or verse-by-verse immutable source proof is claimed',()
 });
 test('No reader route is created for Jaap',()=>{
  assert.equal(program.records.find(x=>x.id==='jaap').readerRoute,null);
- assert.equal(program.records.find(x=>x.id==='jaap').sourceState,'not_ingested');
+ assert.equal(program.records.find(x=>x.id==='jaap').sourceState,'digital_candidate');
 });
 test('No human review, permissions, or public publication authority exists',()=>{
  assert.equal(report.sourceEditionHumanApproval,'PENDING');

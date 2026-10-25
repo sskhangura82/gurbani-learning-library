@@ -44,16 +44,16 @@
       "sourceFamily": "dasam",
       "sourceAnchor": "Jaap Sahib from named Dasam Bani edition; no SGGS Ang number",
       "originalScope": "Complete Jaap Sahib, from an exact edition/recitation boundary",
-      "sourceState": "not_ingested",
+      "sourceState": "digital_candidate",
       "readerRoute": null,
       "educationalStatus": "none",
-      "humanSourceReview": "not_started",
+      "humanSourceReview": "pending_independent_original_edition_comparison",
       "blockedOn": [
-        "choose an exact authentic Jaap Sahib/Dasam Bani printed edition and permissions",
-        "resolve distinct meter/metrical section boundaries; HTML groups many numbered chhands into paragraphs",
-        "independently collate all original Gurmukhi words and 199 numbered endings",
-        "qualified Sikh/Punjabi source review and reader rights",
-        "integrate through existing reader and complete physical iPhone acceptance"
+        "independent Dasam physical/reference edition adjudication of 67 digital differences",
+        "qualified Sikh/Punjabi review of 21 printed metrical headings, original spelling, chhand sequence and preface",
+        "reuse rights and a distinct approved source-edition ID",
+        "real iPhone original-source layout, pronunciation/pace and offline QA",
+        "explicit founder final public-release word"
       ],
       "originalSourceStructuralAudit": {
         "evidenceFile": "docs/research/n3-dasam-jaap/jaap-199-structure-audit.json",
@@ -66,6 +66,20 @@
         "humanEditionCollation": "PENDING",
         "fullOriginalSourceModelBuilt": false,
         "eligibleForReader": false
+      },
+      "fullDigitalSourceCandidate": {
+        "modelFile": "docs/research/n3-dasam-jaap/jaap-199-original-candidate.json",
+        "comparisonFile": "docs/research/n3-dasam-jaap/jaap-text-discrepancy-ledger.json",
+        "originalNumberedChhands": 199,
+        "originalVerseParagraphs": 782,
+        "sourceMeterHeadingCandidates": 21,
+        "prefaceOriginalCandidates": 6,
+        "comparatorChhandExactIgnoringWhitespace": 132,
+        "digitalDisagreementsRequiringEditionReview": 67,
+        "authorizedDasamPrintedEdition": "PENDING",
+        "humanCollation": "PENDING",
+        "reusableRights": "PENDING",
+        "readerReleaseApproved": false
       }
     },
     {
@@ -143,12 +157,12 @@
       "sourceState": "source_audit_blocked",
       "readerRoute": null,
       "educationalStatus": "none",
-      "humanSourceReview": "not_started",
+      "humanSourceReview": "pending_independent_unicode_and_source_edition",
       "blockedOn": [
-        "source heading punctuation difference at row 0",
-        "nonstandard private-use Unicode U+F03D at Ang 920 candidate digital row 13 (global row 123)",
-        "independent published-edition comparison and human Sikh/Punjabi review",
-        "no active source model or public reader until review"
+        "independently adjudicate Pauri 24 source private-use Unicode U+F03D; preserve and quarantine original until reviewed",
+        "adjudicate Ang 917 title-terminal punctuation difference",
+        "independent authoritative SGGS edition and qualified Sikh/Punjabi source collation",
+        "full-reader iPhone Safari/VoiceOver and offline acceptance before release"
       ],
       "sourceAudit": {
         "evidenceFile": "docs/research/n2-anand/anand-source-audit.json",
@@ -163,6 +177,18 @@
         "knownProblem": "Heading punctuation difference plus source-private-use U+F03D vs comparator Unicode in Anand Pauri 24",
         "machineIntakePromotable": false,
         "humanEditionAdjudication": "PENDING"
+      },
+      "originalSourceCandidate": {
+        "modelFile": "docs/research/n2-anand/anand-40-original-candidate.json",
+        "comparisonFile": "docs/research/n2-anand/anand-complete-text-candidate-ledger.json",
+        "completePauris": 40,
+        "originalVerseLines": 208,
+        "separateSourceHeadings": 2,
+        "digitallyQuarantinedOccurrence": "anand24.line03",
+        "quarantinedGurmukhiSourceCodepoint": "U+F03D",
+        "reviewedReplacementText": "NONE — do not auto-convert",
+        "humanEditionReview": "PENDING",
+        "sourcePublicationEligible": false
       }
     },
     {

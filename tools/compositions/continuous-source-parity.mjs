@@ -5,7 +5,7 @@
 import {validateComposition,learningNamespace,stableSourceDigest} from './composition-core.mjs';
 
 function freezeUnits(units){
- for(const u of units){for(const l of u.lines)Object.freeze(l);Object.freeze(u.lines);Object.freeze(u);}
+ for(const u of units){for(const l of u.lines)Object.freeze(l);Object.freeze(u.lines);for(const h of u.meterHeadingDigitalCandidates||[])Object.freeze(h);if(u.meterHeadingDigitalCandidates)Object.freeze(u.meterHeadingDigitalCandidates);Object.freeze(u);}
  return Object.freeze(units);
 }
 export function adaptNonshippingSourceCandidate(composition,{explicitReviewOnly=false}={}){
@@ -23,6 +23,7 @@ export function adaptNonshippingSourceCandidate(composition,{explicitReviewOnly=
   printedRaag:u.printedRaag,
   raagEvidence:u.raagEvidence,
   originalHeadingIsFirstLine:u.sourceHeadingIncludedInLines===true,
+  meterHeadingDigitalCandidates:(u.metricalHeadingsDigitalCandidates||[]).map(h=>({text:h.text,sha256:h.sha256,digitalParagraphIndex:h.digitalParagraphIndex,qualifiedReview:false})),
   lines:u.lines.map(l=>({id:l.id,text:l.text,sha256:l.sha256,ang:l.location.system==='ang'?l.location.ang:null}))
  })));
  return Object.freeze({

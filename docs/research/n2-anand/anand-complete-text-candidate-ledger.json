@@ -1,0 +1,124 @@
+{
+  "capturedAtUtc": "2026-10-25T20:04:30.287740+00:00",
+  "status": "40_PAURI_SOURCE_CANDIDATE_WITH_ONE_QUARANTINED_GURMUKHI_UNICODE_LINE",
+  "primary": [
+    {
+      "url": "https://srigurugranth.net/0917.html",
+      "httpStatus": 200,
+      "pageBytes": 18824,
+      "pageSha256": "5f6976e1be09c218acc9cacf34bf28a22ddea2c0ad32dc4fd0d4ea4a4c31249d",
+      "gurmukhiParagraphs": 38
+    },
+    {
+      "url": "https://srigurugranth.net/0918.html",
+      "httpStatus": 200,
+      "pageBytes": 18623,
+      "pageSha256": "0ecb733d6bd02f4ae4aa41ac96bcdffe957caf1bf743b09f8501b2fbb1a08e98",
+      "gurmukhiParagraphs": 36
+    },
+    {
+      "url": "https://srigurugranth.net/0919.html",
+      "httpStatus": 200,
+      "pageBytes": 19138,
+      "pageSha256": "3ea7ad1459ccf01a6d5088f61f58ec9c84619d14616aeeae1edb0a1bb139afcf",
+      "gurmukhiParagraphs": 36
+    },
+    {
+      "url": "https://srigurugranth.net/0920.html",
+      "httpStatus": 200,
+      "pageBytes": 19068,
+      "pageSha256": "def4acac346045b7d58c8595abe8b4e88fee59cb8837e5c09a2de40a9210cf4c",
+      "gurmukhiParagraphs": 35
+    },
+    {
+      "url": "https://srigurugranth.net/0921.html",
+      "httpStatus": 200,
+      "pageBytes": 18373,
+      "pageSha256": "0ff9bc5980ed15139589818fbd92160e7174077dcd2f2343f2b84d4c910b25bf",
+      "gurmukhiParagraphs": 33
+    },
+    {
+      "url": "https://srigurugranth.net/0922.html",
+      "httpStatus": 200,
+      "pageBytes": 18382,
+      "pageSha256": "8cc73b6f3ea773c2d243319871a6eba88218af84819b75406ebce929055b2452",
+      "gurmukhiParagraphs": 32
+    }
+  ],
+  "secondDigitalSource": [
+    {
+      "url": "https://opengranth.org/ang/917/",
+      "httpStatus": 200,
+      "pageBytes": 41802,
+      "pageSha256": "226d6fbf6a688ebf34181f32c9ac59b8b821ead17dbe1700de017f8bb841ea16",
+      "gurmukhiParagraphs": 38
+    },
+    {
+      "url": "https://opengranth.org/ang/918/",
+      "httpStatus": 200,
+      "pageBytes": 40660,
+      "pageSha256": "483ac87e544b4dbf70bd590b7868a4c7b50c31bbadc955dbcd563557bd05cf4d",
+      "gurmukhiParagraphs": 36
+    },
+    {
+      "url": "https://opengranth.org/ang/919/",
+      "httpStatus": 200,
+      "pageBytes": 41243,
+      "pageSha256": "2232b4808b1b55e3713f54cbf932231005135626f38776f4ecefc5b3ffd61911",
+      "gurmukhiParagraphs": 36
+    },
+    {
+      "url": "https://opengranth.org/ang/920/",
+      "httpStatus": 200,
+      "pageBytes": 40715,
+      "pageSha256": "d3e3b8d39a277254687931fae7189170e157716afd04f47685ed947b069debfc",
+      "gurmukhiParagraphs": 35
+    },
+    {
+      "url": "https://opengranth.org/ang/921/",
+      "httpStatus": 200,
+      "pageBytes": 39083,
+      "pageSha256": "115d2d2facc7668c63bc7c15d9dd07b3616ea3afcd778cd69253a7457da64b19",
+      "gurmukhiParagraphs": 33
+    },
+    {
+      "url": "https://opengranth.org/ang/922/",
+      "httpStatus": 200,
+      "pageBytes": 38675,
+      "pageSha256": "92356cb27c1bc9fea390c61d39d1f1a39ed3e8fc57662407149d873544daa2e4",
+      "gurmukhiParagraphs": 32
+    }
+  ],
+  "unitCount": 40,
+  "originalVerseRows": 208,
+  "originalHeaders": 2,
+  "originalsMatchedNFC": 208,
+  "digitalRowsCompared": 210,
+  "ambiguousRows": [
+    {
+      "globalRow": 0,
+      "originalPrimary": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ",
+      "originalComparator": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ ॥",
+      "primarySha256": "3918f1fc48d89824018588a7f682514e23b52d88802f85d02dbaad2a74966718",
+      "comparatorSha256": "45ab661c54623ebdda92e79e35b26a3227a9a91bbd31311215e61b0d33dfd1d4",
+      "disposition": "REVIEW_ONLY_NO_AUTOMATIC_TEXT_REPLACEMENT"
+    },
+    {
+      "globalRow": 123,
+      "originalPrimary": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚੀ ਆਖਿ ਵਖਾਣੀ ॥",
+      "originalComparator": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚਂੀ ਆਖਿ ਵਖਾਣੀ ॥",
+      "primarySha256": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+      "comparatorSha256": "afc775a4bdd3a1e45ac64fb748605048d56ecb2a70d021dd9886e8a49a897673",
+      "disposition": "REVIEW_ONLY_NO_AUTOMATIC_TEXT_REPLACEMENT"
+    }
+  ],
+  "exactPauriCount": 40,
+  "quarantinedOriginalSourceGlobalRow": 123,
+  "quarantinedSourcePrivateUseCodepoint": "U+F03D",
+  "note": "Quarantined source line is retained byte-for-byte in the research model but any GUI must NOT display it as approved Gurmukhi until adjudicated.",
+  "digitalSourcesIndependentlyCollatedEdition": false,
+  "humanSikhPunjabiReview": "PENDING",
+  "rightsAndReuse": "PENDING",
+  "publishedReaderReady": false,
+  "originalLineAutoCorrectionPerformed": false
+}

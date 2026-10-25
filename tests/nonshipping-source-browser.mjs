@@ -42,7 +42,7 @@ async function exactOriginal(){
  const inspect=[
   '(async()=>{',
   'const k=GLP_SOURCE_QA.getState().sourceKey;',
-  'const src=k==="sohila"?"../docs/research/n1-sohila/sohila-candidate-original.json":k==="savaiye"?"../docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json":"../docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json";',
+  'const src=k==="sohila"?"../docs/research/n1-sohila/sohila-candidate-original.json":k==="savaiye"?"../docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json":k==="jaap"?"../docs/research/n3-dasam-jaap/jaap-199-original-candidate.json":k==="anand"?"../docs/research/n2-anand/anand-40-original-candidate.json":"../docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json";',
   'const r=await fetch(src,{cache:"no-store"}),x=await r.json();',
   'const expected=x.units.flatMap(u=>u.lines);',
   'const actual=[...document.querySelectorAll(".qa-source-line")];',
@@ -126,6 +126,41 @@ try{
  check('Bounded Chaupai original has no horizontal overflow at phone width',await run('document.documentElement.scrollWidth<=innerWidth'));
  const image3=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
  fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-chaupai-320.png'),Buffer.from(image3.data,'base64'));
+ await click('#load-jaap');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="jaap"&&window.GLP_SOURCE_QA.getState().readerReady','Jaap 199 original source candidate verified',40000);
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('Jaap 199 complete chhands and 782 original source rows accepted by one unchanged engine',current.sourceKey==='jaap'&&current.unitCount===199&&current.lineCount===782&&current.sourceApproved===false&&current.releaseAuthorized===false,current);
+ const firstJaap=await run('(()=>({domLines:document.querySelectorAll(".qa-source-line").length,selectorOptions:document.querySelectorAll("#qa-unit-picker option").length,preface:document.querySelectorAll(".qa-preface").length,first:document.querySelector(".qa-source-line")?.textContent}))()');
+ check('Jaap sources are virtualized by chhand and six preface rows remain separate',firstJaap.domLines===6&&firstJaap.selectorOptions===199&&firstJaap.preface===6&&firstJaap.first.startsWith('ਚੱਕ੍ਰ ਚਿਹਨ'),firstJaap);
+ await run('(()=>{const sel=document.getElementById("qa-unit-picker");sel.value="1";sel.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const metre=await run('(()=>({displayed:document.querySelectorAll(".qa-unit").length,meterText:document.querySelector(".qa-meter")?.textContent,sourceLine:document.querySelector(".qa-source-line")?.textContent,picked:GLP_SOURCE_QA.getState().position.index}))()');
+ check('Jaap second chhand shows exact original source meter heading once',metre.displayed===1&&metre.meterText==='ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥'&&metre.sourceLine?.startsWith('ਨਮਸਤ੍ਵੰ'),metre);
+ await run('(()=>{const sel=document.getElementById("qa-unit-picker");sel.value="98";sel.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const midJaap=await run('(()=>({unit:document.querySelector(".qa-unit")?.dataset.unitId,selected:document.getElementById("qa-unit-picker").value,rendered:document.querySelectorAll(".qa-source-line").length}))()');
+ check('Direct accessible Jaap chhand picker reaches 99th without rendering all 782 source lines',midJaap.unit==='jaap099'&&midJaap.selected==='98'&&midJaap.rendered<15,midJaap);
+ await run('(()=>{const sel=document.getElementById("qa-unit-picker");sel.value="198";sel.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const lastJaap=await run('(()=>({unit:document.querySelector(".qa-unit")?.dataset.unitId,final:document.querySelector(".qa-source-line:last-child")?.textContent,next:document.getElementById("qa-next").disabled}))()');
+ check('Chhand 199 ends at original 199 marker and disables Next',lastJaap.unit==='jaap199'&&lastJaap.final?.endsWith('॥੧੯੯॥')&&lastJaap.next,lastJaap);
+ await size(320,740);
+ check('Jaap long source one-chhand viewport has no overflow at 320px',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image4=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-jaap-320.png'),Buffer.from(image4.data,'base64'));
+ await click('#load-anand');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="anand"&&window.GLP_SOURCE_QA.getState().readerReady','Anand 40-pauri source structurally verified',40000);
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('Full Anand 40 pauris, 208 source verses under one strict unapproved reader engine',current.sourceKey==='anand'&&current.unitCount===40&&current.lineCount===208&&!current.releaseAuthorized,current);
+ const firstAnand=await run('(()=>({preface:document.querySelectorAll(".qa-preface").length,selectorOptions:document.querySelectorAll("#qa-unit-picker option").length,first:document.querySelector(".qa-source-line")?.textContent}))()');
+ check('Anand two opening source records preserved separate from 40 selectable pauris',firstAnand.preface===2&&firstAnand.selectorOptions===40&&firstAnand.first.startsWith('ਅਨੰਦੁ ਭਇਆ'),firstAnand);
+ await run('(()=>{const s=document.getElementById("qa-unit-picker");s.value="23";s.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const anandReview=await run('(()=>{const hold=document.querySelector(".qa-quarantine"),all=[...document.querySelectorAll(".qa-source-line,.qa-quarantine")];return {unit:document.querySelector(".qa-unit")?.dataset.unitId,held:hold?.dataset.id,sha:hold?.dataset.sourceSha256,visible:document.body.innerText.includes(String.fromCharCode(0xF03D)),count:all.length,text:hold?.textContent}})()');
+ check('Anand Pauri 24 source anomaly is visibly held and unsupported U+F03D NEVER rendered as scripture',anandReview.unit==='anand24'&&anandReview.held==='anand24.line03'&&anandReview.sha?.length===64&&!anandReview.visible&&anandReview.text?.includes('under independent Unicode/edition review'),anandReview);
+ const anandGuide=await run('(()=>{let count=0;while(!document.getElementById("qa-status").textContent.startsWith("STOP:")&&count++<150){GLP_SOURCE_QA.step();}return {count,stopped:document.getElementById("qa-status").textContent.startsWith("STOP:"),playing:GLP_SOURCE_QA.getState().playing}})()');
+ check('Anand silent visual guide stops before ambiguous original rather than silently reciting it',anandGuide.stopped&&!anandGuide.playing&&anandGuide.count<150,anandGuide);
+ await size(320,740);
+ check('Anand quarantined Pauri 24 source QA fits small phone layout',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image5=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-anand-hold-320.png'),Buffer.from(image5.data,'base64'));
+ check('Jaap original source browser makes zero network requests to third-party sites',requests.every(x=>x.startsWith(origin+'/')),{count:requests.length});
  check('All candidate network requests are same loopback origin',requests.every(x=>x.startsWith(origin+'/')),{requests:requests.length});
  check('No browser JavaScript exceptions',exceptions.length===0,{exceptions});
 }catch(e){failed=String(e);exceptions.push(failed);console.error('FAIL '+failed);}
@@ -133,7 +168,7 @@ finally{
  const result={checkedAt:new Date().toISOString(),status:failed?'FAIL':'PASS',checks,errors:exceptions,
   scope:'Nonshipping source-only Chrome QA against existing continuous-core; two unapproved digital original candidates, no family app',
   actualIPhone:'NOT TESTED',humanEditionReview:'PENDING',publicationAllowed:false,
-  screenshots:['evidence/nitnem-original-qa-sohila-320.png','evidence/nitnem-original-qa-savaiye-390.png','evidence/nitnem-original-qa-chaupai-320.png']};
+  screenshots:['evidence/nitnem-original-qa-sohila-320.png','evidence/nitnem-original-qa-savaiye-390.png','evidence/nitnem-original-qa-chaupai-320.png','evidence/nitnem-original-qa-jaap-320.png','evidence/nitnem-original-qa-anand-hold-320.png']};
  fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-browser.json'),JSON.stringify(result,null,2)+'\n');
  try{if(ws?.readyState===1)await send('Browser.close')}catch{}
  try{ws?.close()}catch{}

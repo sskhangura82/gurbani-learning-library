@@ -7,7 +7,7 @@ const program=JSON.parse(fs.readFileSync(new URL('docs/research/full-nitnem-prog
 const results=[];
 function check(title,fun){fun();results.push(title);}
 check('Reference-catalog-only source state cannot be treated as edition collation',()=>{
- assert.equal(x.status,'PUBLIC_LIBRARY_INDEXES_PLUS_SAVAIYE_DIGITAL_CANDIDATE_NOT_EDITION_VERIFIED');
+ assert.equal(x.status,'PUBLIC_LIBRARY_INDEXES_PLUS_JAAP_AND_SAVAIYE_DIGITAL_CANDIDATES_NOT_EDITION_VERIFIED');
  assert.equal(x.publicDigitizedIndex.checkedAs,'catalog_index_only_not_pdf_contents');
  assert.equal(x.publicDigitizedIndex.kind.includes('not an authenticated publisher seal'),true);
 });
@@ -22,6 +22,6 @@ check('Ten morning Savaiye explicitly differ from evening one',()=>{const b=x.ba
 check('Chaupai morning/SGPC evening source boundaries are held separately',()=>{const b=x.banis.find(b=>b.id==='chaupai');assert.ok(b.namedBoundary.start.includes('ਹਮਰੀ ਕਰੋ'));assert.ok(b.namedBoundary.end.includes('ਦੁਸਟ ਦੋਖ'));assert.ok(b.requirements.some(s=>s.includes('not equated silently')));});
 check('Selected authentic primary edition and full text are both NOT available',()=>{assert.ok(x.banis.every(b=>b.editionSelected===false&&b.originalSourceImported===false));assert.equal(x.security.pdfContentsReviewed,false);});
 check('No OCR, PDF commits, third-party copy permission or web live route claims',()=>{assert.equal(x.security.ocrPerformed,false);assert.equal(x.security.downloadedFilesCommitted,false);assert.equal(x.security.mediaRightsApproved,false);assert.equal(x.security.readersEnabled,false);});
-check('N3 records Savaiye only as a digital research candidate, with no family-reader access',()=>{for(const y of x.banis){const v=program.records.find(p=>p.id===y.id);assert.equal(v.sourceState,y.id==='savaiye'?'digital_candidate':'not_ingested');assert.equal(v.readerRoute,null);}assert.equal(x.banis.find(b=>b.id==='savaiye').digitalResearchCandidate.familyRuntimeImported,false);});
+check('N3 records Savaiye only as a digital research candidate, with no family-reader access',()=>{for(const y of x.banis){const v=program.records.find(p=>p.id===y.id);assert.equal(v.sourceState,['jaap','savaiye'].includes(y.id)?'digital_candidate':'not_ingested');assert.equal(v.readerRoute,null);}assert.equal(x.banis.find(b=>b.id==='savaiye').digitalResearchCandidate.familyRuntimeImported,false);});
 check('Qualified human review and founder publication remain necessary',()=>{assert.equal(x.humanReviewStatus,'PENDING');assert.equal(x.releaseAuthorized,false);assert.equal(program.publicationAuthorized,false);});
 console.log(JSON.stringify({status:'PASS',checks:results.length,cases:results,scope:'catalog candidates only; no textual edition verified'},null,2));

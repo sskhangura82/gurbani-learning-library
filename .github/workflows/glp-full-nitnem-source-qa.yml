@@ -37,15 +37,21 @@ jobs:
         run: node tests/savaiye-continuous-parity.mjs
       - name: Rehras Chaupai bounded 25-pauri source excerpt with 49 review holds
         run: node tests/chaupai-excerpt-source.mjs
-      - name: Jaap 199-chhand web-numbering comparison (NO text equivalence)
+      - name: Jaap 199-chhand web-numbering comparison (historical structure-only receipt)
         run: node tests/jaap-structure-audit.mjs
+      - name: Complete Jaap original digital candidate and all 67 source differences
+        run: node tests/jaap-full-source-intake.mjs
+      - name: Jaap complete 782-row compatibility with existing continuous core
+        run: node tests/jaap-continuous-parity.mjs
+      - name: Full 40-pauri Anand original with strict Pauri 24 Unicode quarantine
+        run: node tests/anand-40-full-source.mjs
       - name: Sohila compatibility with existing R7 continuous reader — nonshipping
         run: node tests/sohila-continuous-parity.mjs
       - name: Rehras ordered composite component boundaries — no verse ingestion
         run: node tests/rehras-component-ledger.mjs
       - name: Python source intake syntax only — no web calls or app writes
         run: |
-          python3 -c 'import ast; files=["intake_sohila.py","audit_anand.py","intake_savaiye.py","intake_chaupai_excerpt.py","audit_jaap_structure.py"]; [ast.parse(open("tools/compositions/"+f,encoding="utf-8").read()) for f in files]'
+          python3 -c 'import ast; files=["intake_sohila.py","audit_anand.py","intake_savaiye.py","intake_chaupai_excerpt.py","audit_jaap_structure.py","intake_jaap_full.py","intake_anand_40.py"]; [ast.parse(open("tools/compositions/"+f,encoding="utf-8").read()) for f in files]'
       - name: Nonshipping source guard
         run: |
           node --check tests/sohila-source-intake.mjs
@@ -57,6 +63,9 @@ jobs:
           node --check tests/dasam-source-shortlist.mjs
           node --check tests/chaupai-excerpt-source.mjs
           node --check tests/jaap-structure-audit.mjs
+          node --check tests/jaap-full-source-intake.mjs
+          node --check tests/jaap-continuous-parity.mjs
+          node --check tests/anand-40-full-source.mjs
           node --check tests/nonshipping-source-browser.mjs
           node --check tests/nonshipping-source-reader.mjs
           test -f tests/nonshipping-source-reader.html
@@ -71,4 +80,7 @@ jobs:
           test ! -f jaap.html
           test ! -f savaiye.html
           ! grep -q 'tests/nonshipping-source-reader' sw.js
+          test ! -f js/jaap-full-data.js
+          test ! -f js/anand-full-data.js
+          ! grep -q 'n3-dasam-jaap' sw.js
           git diff --exit-code -- full-japji.html js/japji-full-data.js js/learning.js js/shared-learning.js sw.js index.html

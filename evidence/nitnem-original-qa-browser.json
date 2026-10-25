@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T18:15:59.233Z",
+  "checkedAt": "2026-10-25T20:08:15.415Z",
   "status": "PASS",
   "checks": [
     {
@@ -76,7 +76,7 @@
       "details": {
         "width": 320,
         "scrollWidth": 320,
-        "dockHeight": 104
+        "dockHeight": 152
       }
     },
     {
@@ -207,10 +207,133 @@
       "details": {}
     },
     {
+      "label": "Jaap 199 complete chhands and 782 original source rows accepted by one unchanged engine",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "jaap",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 199,
+        "lineCount": 782,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 781
+      }
+    },
+    {
+      "label": "Jaap sources are virtualized by chhand and six preface rows remain separate",
+      "status": "PASS",
+      "details": {
+        "domLines": 6,
+        "selectorOptions": 199,
+        "preface": 6,
+        "first": "ਚੱਕ੍ਰ ਚਿਹਨ ਅਰੁ ਬਰਨ ਜਾਤਿ ਅਰੁ ਪਾਤਿ ਨਹਿਨ ਜਿਹ ॥"
+      }
+    },
+    {
+      "label": "Jaap second chhand shows exact original source meter heading once",
+      "status": "PASS",
+      "details": {
+        "displayed": 1,
+        "meterText": "ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥",
+        "sourceLine": "ਨਮਸਤ੍ਵੰ ਅਕਾਲੇ ॥",
+        "picked": 6
+      }
+    },
+    {
+      "label": "Direct accessible Jaap chhand picker reaches 99th without rendering all 782 source lines",
+      "status": "PASS",
+      "details": {
+        "unit": "jaap099",
+        "selected": "98",
+        "rendered": 4
+      }
+    },
+    {
+      "label": "Chhand 199 ends at original 199 marker and disables Next",
+      "status": "PASS",
+      "details": {
+        "unit": "jaap199",
+        "final": "ਸਦਾ ਅੰਗ ਸੰਗੇ ਅਭੰਗੰ ਬਿਭੂਤੇ ॥੧੯੯॥",
+        "next": true
+      }
+    },
+    {
+      "label": "Jaap long source one-chhand viewport has no overflow at 320px",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Full Anand 40 pauris, 208 source verses under one strict unapproved reader engine",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "anand",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 40,
+        "lineCount": 208,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 207
+      }
+    },
+    {
+      "label": "Anand two opening source records preserved separate from 40 selectable pauris",
+      "status": "PASS",
+      "details": {
+        "preface": 2,
+        "selectorOptions": 40,
+        "first": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥"
+      }
+    },
+    {
+      "label": "Anand Pauri 24 source anomaly is visibly held and unsupported U+F03D NEVER rendered as scripture",
+      "status": "PASS",
+      "details": {
+        "unit": "anand24",
+        "held": "anand24.line03",
+        "sha": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+        "visible": false,
+        "count": 6,
+        "text": "Original Gurmukhi line under independent Unicode/edition review (U+F03D); withheld from the recitation preview. Source SHA-256 preserved."
+      }
+    },
+    {
+      "label": "Anand silent visual guide stops before ambiguous original rather than silently reciting it",
+      "status": "PASS",
+      "details": {
+        "count": 16,
+        "stopped": true,
+        "playing": false
+      }
+    },
+    {
+      "label": "Anand quarantined Pauri 24 source QA fits small phone layout",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Jaap original source browser makes zero network requests to third-party sites",
+      "status": "PASS",
+      "details": {
+        "count": 14
+      }
+    },
+    {
       "label": "All candidate network requests are same loopback origin",
       "status": "PASS",
       "details": {
-        "requests": 12
+        "requests": 14
       }
     },
     {
@@ -229,6 +352,8 @@
   "screenshots": [
     "evidence/nitnem-original-qa-sohila-320.png",
     "evidence/nitnem-original-qa-savaiye-390.png",
-    "evidence/nitnem-original-qa-chaupai-320.png"
+    "evidence/nitnem-original-qa-chaupai-320.png",
+    "evidence/nitnem-original-qa-jaap-320.png",
+    "evidence/nitnem-original-qa-anand-hold-320.png"
   ]
 }

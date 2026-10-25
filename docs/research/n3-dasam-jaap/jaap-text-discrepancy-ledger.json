@@ -1,0 +1,2121 @@
+{
+  "capturedAtUtc": "2026-10-25T19:55:54.136666+00:00",
+  "status": "199_CHHAND_DIGITAL_ORIGINAL_CANDIDATE_67_COMPARISON_HOLDS",
+  "sourceFamily": "dasam",
+  "compositionId": "jaap-sahib",
+  "primary": {
+    "url": "https://gurdwaras.com/nitnem/jaap-sahib",
+    "httpStatus": 200,
+    "pageBytes": 867432,
+    "pageSha256": "122ba9766e5ff370b8174fea8c4e94105a0bdb0b378a6bdeeb542aaf64c38219",
+    "capturedAtUtc": "2026-10-25T19:55:53.785716+00:00"
+  },
+  "comparator": {
+    "url": "https://www.discoversikhism.com/learn_gurbani/learn_jaap_sahib.html",
+    "httpStatus": 200,
+    "pageBytes": 101992,
+    "pageSha256": "3d32c560806c4c4590a414eed63359ad21981eae184d858410d11ee3ee41111b",
+    "capturedAtUtc": "2026-10-25T19:55:54.126404+00:00"
+  },
+  "primaryTotalGurmukhiParagraphs": 809,
+  "primaryPrefaceDigitalParagraphs": 6,
+  "primaryMeterHeadingDigitalParagraphs": 21,
+  "primaryOriginalVerseParagraphs": 782,
+  "comparatorOriginalGurmukhiParagraphs": 59,
+  "fullNumberedChhands": 199,
+  "comparisonExactUnicodeIgnoringWhitespace": 132,
+  "comparatorDisagreements": 67,
+  "sourceSitesTextLineageIndependent": "UNVERIFIED",
+  "footersExcludedFromJaapOriginal": true,
+  "siteFooterAfterChhand199Sha256": "ce1f4703d2c5298865e36c6f05d6a6110a54739a5b5112e584527ec26ba469ce",
+  "comparisonMethod": "199 numbered original chhand groups; optional removal of exact same printed meter headings in SECOND SITE COMPARISON ONLY; Unicode NFC plus whitespace removal; original text unchanged",
+  "perChhandComparison": [
+    {
+      "chhand": 1,
+      "originalLines": 6,
+      "primaryChhandSourceSha256": "5f3e4065cf768e602c2590ccaef1ad8e4f6c984019fa828b3269491599a41e10",
+      "secondSiteChhandSourceSha256": "cdcef9a15a61bf02ef218a1e7211a405e79e9b41a6d08bb2d069053b787338af",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "cdcef9a15a61bf02ef218a1e7211a405e79e9b41a6d08bb2d069053b787338af",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚੱਕ੍ਰ ਚਿਹਨ ਅਰੁ ਬਰਨ ਜਾਤਿ ਅਰੁ ਪਾਤਿ ਨਹਿਨ ਜਿਹ ॥ ਰੂਪ ਰੰਗ ਅਰੁ ਰੇਖ ਭੇਖ ਕੋਊ ਕਹਿ ਨ ਸਕਤਿ ਕਿਹ ॥ ਅਚਲ ਮੂਰਤਿ ਅਨਭਉ ਪ੍ਰਕਾਸ ਅਮਿਤੋਜਿ ਕਹਿਜੈ ॥ ਕੋਟਿ ਇੰਦ੍ਰ ਇੰਦ੍ਰਾਣਿ ਸਾਹੁ ਸਾਹਾਣਿ ਗਣਿਜੈ ॥ ਤ੍ਰਿਭਵਣ ਮਹੀਪ ਸੁਰ ਨਰ ਅਸੁਰ ਨੇਤਿ ਨੇਤਿ ਬਨ ਤ੍ਰਿਣ ਕਹਤ ॥ ਤ੍ਵ ਸਰਬ ਨਾਮ ਕਥੈ ਕਵਨ ਕਰਮ ਨਾਮ ਬਰਣਤ ਸੁਮਤਿ ॥੧॥"
+    },
+    {
+      "chhand": 2,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d2c72fdbc5c9b8072af37c9ac7bcacda242833613bd22776ec9cd37eb233b213",
+      "secondSiteChhandSourceSha256": "a3d1150a3a381065a397b168bd6ebe3713fb2a5926aee9af36446fa9c176608b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7ebc9dbd877d2239368f97beeaa711da278127aaa31929ea25c87e9e2336eaf0",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "a139714edb3e28ffba635f33da8cf14c9d43eadc729480656e119fa18de1014c"
+      ],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥ ਨਮਸਤ੍ਵੰ ਅਕਾਲੇ ॥ ਨਮਸਤ੍ਵੰ ਕ੍ਰਿਪਾਲੇ ॥ ਨਮਸਤ੍ਵੰ ਅਰੂਪੇ ॥ ਨਮਸਤ੍ਵੰ ਅਨੂਪੇ ॥੨॥"
+    },
+    {
+      "chhand": 3,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "e051d20b78d6f32619e0dc5da5148869c0b1adb61fc47c8ecb6a82d5815ac56f",
+      "secondSiteChhandSourceSha256": "e051d20b78d6f32619e0dc5da5148869c0b1adb61fc47c8ecb6a82d5815ac56f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e051d20b78d6f32619e0dc5da5148869c0b1adb61fc47c8ecb6a82d5815ac56f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 4,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "146b4ecd9a52bcc6ec345bb5dd475b7b911488cbd5f28e2d3c8023a5bc65b766",
+      "secondSiteChhandSourceSha256": "146b4ecd9a52bcc6ec345bb5dd475b7b911488cbd5f28e2d3c8023a5bc65b766",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "146b4ecd9a52bcc6ec345bb5dd475b7b911488cbd5f28e2d3c8023a5bc65b766",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 5,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ed1538acce09f3b5276b52382f5b7e55900805248d5f61eea2408f9770a29adc",
+      "secondSiteChhandSourceSha256": "ed1538acce09f3b5276b52382f5b7e55900805248d5f61eea2408f9770a29adc",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ed1538acce09f3b5276b52382f5b7e55900805248d5f61eea2408f9770a29adc",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 6,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a49b661ace5e25977d4222d7bcd8240f3e5cf94163dd4f303e315800b2c91552",
+      "secondSiteChhandSourceSha256": "a49b661ace5e25977d4222d7bcd8240f3e5cf94163dd4f303e315800b2c91552",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a49b661ace5e25977d4222d7bcd8240f3e5cf94163dd4f303e315800b2c91552",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 7,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "5c1189013b3bfede923799f29b310b9f79e67b3890f480482c7f4f7c14a0474e",
+      "secondSiteChhandSourceSha256": "5c1189013b3bfede923799f29b310b9f79e67b3890f480482c7f4f7c14a0474e",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "5c1189013b3bfede923799f29b310b9f79e67b3890f480482c7f4f7c14a0474e",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 8,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "3924a707311fc164be4f191ef264686ce6f6018d3112ec9d1d5dec6e3893da1b",
+      "secondSiteChhandSourceSha256": "6b0b6ffdd35ed7c7fb828d58130d3e4d69f3049fd52f6d51f2533cf5a7a62e42",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6b0b6ffdd35ed7c7fb828d58130d3e4d69f3049fd52f6d51f2533cf5a7a62e42",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 9,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "f31378b883d19e5a523f874f33677b20d40f795c38d04e230d0fa927455377f9",
+      "secondSiteChhandSourceSha256": "f31378b883d19e5a523f874f33677b20d40f795c38d04e230d0fa927455377f9",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f31378b883d19e5a523f874f33677b20d40f795c38d04e230d0fa927455377f9",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 10,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "070f33bbce852d08f97cfd9d7de7751b9735be42412aa3992870ed55c08bdbb1",
+      "secondSiteChhandSourceSha256": "070f33bbce852d08f97cfd9d7de7751b9735be42412aa3992870ed55c08bdbb1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "070f33bbce852d08f97cfd9d7de7751b9735be42412aa3992870ed55c08bdbb1",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 11,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6b2efb9b74936a911081ae44d5553721be3438c537e4f9c21574c19dec9a640d",
+      "secondSiteChhandSourceSha256": "6b2efb9b74936a911081ae44d5553721be3438c537e4f9c21574c19dec9a640d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6b2efb9b74936a911081ae44d5553721be3438c537e4f9c21574c19dec9a640d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 12,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1e66def0bd285b602ce486a063ddc13d2f16db6bc07dfae6c275900a0790da94",
+      "secondSiteChhandSourceSha256": "1e66def0bd285b602ce486a063ddc13d2f16db6bc07dfae6c275900a0790da94",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1e66def0bd285b602ce486a063ddc13d2f16db6bc07dfae6c275900a0790da94",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 13,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2ff7facc0140a80318915a983b1e4f94a1f0d388e0292c658b0e95aa4b63c26f",
+      "secondSiteChhandSourceSha256": "2ff7facc0140a80318915a983b1e4f94a1f0d388e0292c658b0e95aa4b63c26f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2ff7facc0140a80318915a983b1e4f94a1f0d388e0292c658b0e95aa4b63c26f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 14,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "dad3312f98042d5aaeb55fdf947de82092fa804f19e186820629efafa69c8258",
+      "secondSiteChhandSourceSha256": "dad3312f98042d5aaeb55fdf947de82092fa804f19e186820629efafa69c8258",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "dad3312f98042d5aaeb55fdf947de82092fa804f19e186820629efafa69c8258",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 15,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "f3b8797477381d6b2961cbaa56a6cae2a9fb6a1126c0edad5198c569dd1e8cca",
+      "secondSiteChhandSourceSha256": "f3b8797477381d6b2961cbaa56a6cae2a9fb6a1126c0edad5198c569dd1e8cca",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f3b8797477381d6b2961cbaa56a6cae2a9fb6a1126c0edad5198c569dd1e8cca",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 16,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4daf581a9f05184185bd4059a4a7239f33e02d13d4ad2590adb7f783a73e18e8",
+      "secondSiteChhandSourceSha256": "4daf581a9f05184185bd4059a4a7239f33e02d13d4ad2590adb7f783a73e18e8",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "4daf581a9f05184185bd4059a4a7239f33e02d13d4ad2590adb7f783a73e18e8",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 17,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "96b922739d46e214792baf41b2647fadad9db3c24e786f77c3d93bf0ce2d1257",
+      "secondSiteChhandSourceSha256": "96b922739d46e214792baf41b2647fadad9db3c24e786f77c3d93bf0ce2d1257",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "96b922739d46e214792baf41b2647fadad9db3c24e786f77c3d93bf0ce2d1257",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 18,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ab61257271d48c421c31e1926aac5dff0e88ca7ddf580b688e5972100a97a2e0",
+      "secondSiteChhandSourceSha256": "ab61257271d48c421c31e1926aac5dff0e88ca7ddf580b688e5972100a97a2e0",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ab61257271d48c421c31e1926aac5dff0e88ca7ddf580b688e5972100a97a2e0",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 19,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6432749e93535d7d572acde863fbacd0c9286ed76f6b8048c4ebd5e217f15e6d",
+      "secondSiteChhandSourceSha256": "6432749e93535d7d572acde863fbacd0c9286ed76f6b8048c4ebd5e217f15e6d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6432749e93535d7d572acde863fbacd0c9286ed76f6b8048c4ebd5e217f15e6d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 20,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cc5fb880173ed2de0cf28d289580e9043c4943f6bf531c6b39a202dd743089b0",
+      "secondSiteChhandSourceSha256": "cc5fb880173ed2de0cf28d289580e9043c4943f6bf531c6b39a202dd743089b0",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "cc5fb880173ed2de0cf28d289580e9043c4943f6bf531c6b39a202dd743089b0",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 21,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a198cc1275083f14493fcf836ed6a0af63e216a8881bd0718287d58d58fb1e11",
+      "secondSiteChhandSourceSha256": "a198cc1275083f14493fcf836ed6a0af63e216a8881bd0718287d58d58fb1e11",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a198cc1275083f14493fcf836ed6a0af63e216a8881bd0718287d58d58fb1e11",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 22,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d95738dc51b37d127df15dc459c1d544329039ef52870ea6fd8ba29e9f5d9334",
+      "secondSiteChhandSourceSha256": "d95738dc51b37d127df15dc459c1d544329039ef52870ea6fd8ba29e9f5d9334",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "d95738dc51b37d127df15dc459c1d544329039ef52870ea6fd8ba29e9f5d9334",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 23,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ac22651933f2d3408a41c67289cb8507a9fb7289fd475780340e67272bb7f111",
+      "secondSiteChhandSourceSha256": "ac22651933f2d3408a41c67289cb8507a9fb7289fd475780340e67272bb7f111",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ac22651933f2d3408a41c67289cb8507a9fb7289fd475780340e67272bb7f111",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 24,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "5edf84af9ce92c82a94f4d40890c1f482378cc32d93af8d8fe681c8052756b1d",
+      "secondSiteChhandSourceSha256": "25a72ec439a56d4b4790beb440d17a4c80d839f0f648fa0aa9fd852f1a68efd2",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "25a72ec439a56d4b4790beb440d17a4c80d839f0f648fa0aa9fd852f1a68efd2",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 25,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "9ddb3ec0032cd3e82863ec6c1303c109bba2f7132462c9df7b153fe9a9cb6da1",
+      "secondSiteChhandSourceSha256": "9ddb3ec0032cd3e82863ec6c1303c109bba2f7132462c9df7b153fe9a9cb6da1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9ddb3ec0032cd3e82863ec6c1303c109bba2f7132462c9df7b153fe9a9cb6da1",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 26,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "92185f5e202eaf0a605b5b5ef124bc524db749d96b4c9ddd50adba46545412f8",
+      "secondSiteChhandSourceSha256": "92185f5e202eaf0a605b5b5ef124bc524db749d96b4c9ddd50adba46545412f8",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "92185f5e202eaf0a605b5b5ef124bc524db749d96b4c9ddd50adba46545412f8",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 27,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "0efdc0007da6a408e9eb29572b51448b121ded8dbc54ba27681d9cd26d34967c",
+      "secondSiteChhandSourceSha256": "0efdc0007da6a408e9eb29572b51448b121ded8dbc54ba27681d9cd26d34967c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "0efdc0007da6a408e9eb29572b51448b121ded8dbc54ba27681d9cd26d34967c",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 28,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "3b60ed1becc8ac332d3e8fc26b8bef7fce3d5b8a079885b6c8347b4c149db4c6",
+      "secondSiteChhandSourceSha256": "3b60ed1becc8ac332d3e8fc26b8bef7fce3d5b8a079885b6c8347b4c149db4c6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "3b60ed1becc8ac332d3e8fc26b8bef7fce3d5b8a079885b6c8347b4c149db4c6",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 29,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "8f58bfd19c66e1f4cae18180d69bc04a59a6e3417decd70fd5df5e4bc4eb9d4e",
+      "secondSiteChhandSourceSha256": "d8118dfdc40a5aaf87d5a8a00822cee39b57e3a1b5acb2c40af5f8680fa19253",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "d8118dfdc40a5aaf87d5a8a00822cee39b57e3a1b5acb2c40af5f8680fa19253",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚਾਚਰੀ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥  ਅਰੂਪ ਹੈਂ ॥ ਅਨੂਪ ਹੈਂ ॥ ਅਜੂ ਹੈਂ ॥ ਅਭੂ ਹੈਂ ॥੨੯॥"
+    },
+    {
+      "chhand": 30,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "35d150c608ac5c2c9223c16e5e9eaffe9d5819e629147b9c2cea2ca90df0a342",
+      "secondSiteChhandSourceSha256": "35d150c608ac5c2c9223c16e5e9eaffe9d5819e629147b9c2cea2ca90df0a342",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "35d150c608ac5c2c9223c16e5e9eaffe9d5819e629147b9c2cea2ca90df0a342",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 31,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2ddfdf5494f9f21a95454e94167eac56bd379ac6c153ab428fd00e3c4f62d1ba",
+      "secondSiteChhandSourceSha256": "2ddfdf5494f9f21a95454e94167eac56bd379ac6c153ab428fd00e3c4f62d1ba",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2ddfdf5494f9f21a95454e94167eac56bd379ac6c153ab428fd00e3c4f62d1ba",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 32,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "bfd8a4c9a1bbaf019cea8fdbd60a9709685df0d5c21bb136b43a0bc23faab259",
+      "secondSiteChhandSourceSha256": "51a68864a526b3491ce0aa2d1c54a4b66c9c5ca39d0f6090fe515116fe77dc0d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "51a68864a526b3491ce0aa2d1c54a4b66c9c5ca39d0f6090fe515116fe77dc0d",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਤ੍ਰਿਮਾਨ ਹੈਂ ॥ ਨਿਧਾਨ ਹੈਂ ॥ ਤ੍ਰਿਬਰਗ ਹੈ ॥ ਅਸਰਗ ਹੈਂ ॥੩੨॥"
+    },
+    {
+      "chhand": 33,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a0e3794a667fefaccb3eeba2ef011fcf0d2f1da2a3ad88235aa7e5089d1cb265",
+      "secondSiteChhandSourceSha256": "a0e3794a667fefaccb3eeba2ef011fcf0d2f1da2a3ad88235aa7e5089d1cb265",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a0e3794a667fefaccb3eeba2ef011fcf0d2f1da2a3ad88235aa7e5089d1cb265",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 34,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "df3e48c1671b38737bc3a50b1449de8b7c3cd4d765213408014d8aacc3734cba",
+      "secondSiteChhandSourceSha256": "df3e48c1671b38737bc3a50b1449de8b7c3cd4d765213408014d8aacc3734cba",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "df3e48c1671b38737bc3a50b1449de8b7c3cd4d765213408014d8aacc3734cba",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 35,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "598e74a6a1331ec1e06962dd76f044a0104a1e85d10057ca2ba1c55681774063",
+      "secondSiteChhandSourceSha256": "598e74a6a1331ec1e06962dd76f044a0104a1e85d10057ca2ba1c55681774063",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "598e74a6a1331ec1e06962dd76f044a0104a1e85d10057ca2ba1c55681774063",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 36,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "51457e1849b57a926b121206685323764570ef33b47ecc6f74cf30c9bef1f041",
+      "secondSiteChhandSourceSha256": "1228150dba578e062b8c306bcb6d86cb5061771ec9721a33b353f498bb0f4e5a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1228150dba578e062b8c306bcb6d86cb5061771ec9721a33b353f498bb0f4e5a",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਮੀਕ ਹੈਂ ॥ ਰਫੀਕ ਹੈਂ ॥ ਅਧੰਧ ਹੈਂ ॥ ਅਬੰਧ ਹੈਂ ॥੩੬॥"
+    },
+    {
+      "chhand": 37,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "959838dd3a0b051cfeb2ed5d676431b06aca04e2853770f3ac5ff7aea804d922",
+      "secondSiteChhandSourceSha256": "959838dd3a0b051cfeb2ed5d676431b06aca04e2853770f3ac5ff7aea804d922",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "959838dd3a0b051cfeb2ed5d676431b06aca04e2853770f3ac5ff7aea804d922",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 38,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "eb66d33a065d5efac03ea89616776748390f87cbfeb4bcb42bc76364c2862dca",
+      "secondSiteChhandSourceSha256": "eb66d33a065d5efac03ea89616776748390f87cbfeb4bcb42bc76364c2862dca",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "eb66d33a065d5efac03ea89616776748390f87cbfeb4bcb42bc76364c2862dca",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 39,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2fe925fe4785b276d7febe922e927589463ff5043c0e1265ae5e117909d601cb",
+      "secondSiteChhandSourceSha256": "2fe925fe4785b276d7febe922e927589463ff5043c0e1265ae5e117909d601cb",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2fe925fe4785b276d7febe922e927589463ff5043c0e1265ae5e117909d601cb",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 40,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "9dc3741f9c655b20527f3f04843ab5be81efa5010e2d53d538e42a72b6f9a9b2",
+      "secondSiteChhandSourceSha256": "9dc3741f9c655b20527f3f04843ab5be81efa5010e2d53d538e42a72b6f9a9b2",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9dc3741f9c655b20527f3f04843ab5be81efa5010e2d53d538e42a72b6f9a9b2",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 41,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cf56081dfdd71e444b8ee336e71b5fe85925f2c7a740ab5d315eebe4ad7183f6",
+      "secondSiteChhandSourceSha256": "cf56081dfdd71e444b8ee336e71b5fe85925f2c7a740ab5d315eebe4ad7183f6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "cf56081dfdd71e444b8ee336e71b5fe85925f2c7a740ab5d315eebe4ad7183f6",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 42,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "152fe59f8d2aae07a867cb58e7b493f0d9a4a38ed5d81daf9ad5075716b0f675",
+      "secondSiteChhandSourceSha256": "152fe59f8d2aae07a867cb58e7b493f0d9a4a38ed5d81daf9ad5075716b0f675",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "152fe59f8d2aae07a867cb58e7b493f0d9a4a38ed5d81daf9ad5075716b0f675",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 43,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "aeee0d9911f59276f35421ab7f8e4e82ec16064d9d703d7e6c388770a6c783ce",
+      "secondSiteChhandSourceSha256": "aeee0d9911f59276f35421ab7f8e4e82ec16064d9d703d7e6c388770a6c783ce",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "aeee0d9911f59276f35421ab7f8e4e82ec16064d9d703d7e6c388770a6c783ce",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 44,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "5d7c74d7b49d44f6d4cf40dda0d85840a23378fe0cb28e39e3aac41b03609030",
+      "secondSiteChhandSourceSha256": "49824829b658b29d5d23a72702aca48a0d69478dbac88337e2f773d308007b91",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "5d7c74d7b49d44f6d4cf40dda0d85840a23378fe0cb28e39e3aac41b03609030",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "a139714edb3e28ffba635f33da8cf14c9d43eadc729480656e119fa18de1014c"
+      ],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 45,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "e2f642a79720fc30521ee79714112b52d5d5a9130786d21c9f8a885353459fc1",
+      "secondSiteChhandSourceSha256": "e2f642a79720fc30521ee79714112b52d5d5a9130786d21c9f8a885353459fc1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e2f642a79720fc30521ee79714112b52d5d5a9130786d21c9f8a885353459fc1",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 46,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "0b6cbab91b7b552ded3af6804473a3f4c0d2b98531094230559bb04006dbeda0",
+      "secondSiteChhandSourceSha256": "0b6cbab91b7b552ded3af6804473a3f4c0d2b98531094230559bb04006dbeda0",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "0b6cbab91b7b552ded3af6804473a3f4c0d2b98531094230559bb04006dbeda0",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 47,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6d04dae79b68c37dd98097aa3ef65a0ce56fd9682be5f686fd62ed0e54ec772f",
+      "secondSiteChhandSourceSha256": "6d04dae79b68c37dd98097aa3ef65a0ce56fd9682be5f686fd62ed0e54ec772f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6d04dae79b68c37dd98097aa3ef65a0ce56fd9682be5f686fd62ed0e54ec772f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 48,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a2af6033699d7f43247c88f62b2cdd525e53415febedec71a06796e98371dd4a",
+      "secondSiteChhandSourceSha256": "a2af6033699d7f43247c88f62b2cdd525e53415febedec71a06796e98371dd4a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a2af6033699d7f43247c88f62b2cdd525e53415febedec71a06796e98371dd4a",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 49,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ed35e0c2f9bd8510a146ef1383e0e7f5027887bb23bd4e709f269d61e490a45f",
+      "secondSiteChhandSourceSha256": "ed35e0c2f9bd8510a146ef1383e0e7f5027887bb23bd4e709f269d61e490a45f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ed35e0c2f9bd8510a146ef1383e0e7f5027887bb23bd4e709f269d61e490a45f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 50,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "9f1c17e3e6e0c2893eca52275ee5352cd7876af2df45a12ada76dd5aadce8525",
+      "secondSiteChhandSourceSha256": "9f1c17e3e6e0c2893eca52275ee5352cd7876af2df45a12ada76dd5aadce8525",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9f1c17e3e6e0c2893eca52275ee5352cd7876af2df45a12ada76dd5aadce8525",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 51,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "6111268402e01858afd40ff8b67767adbb445fd1c4927c24d120ff10d1067f2a",
+      "secondSiteChhandSourceSha256": "6111268402e01858afd40ff8b67767adbb445fd1c4927c24d120ff10d1067f2a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6111268402e01858afd40ff8b67767adbb445fd1c4927c24d120ff10d1067f2a",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 52,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "147fbd5b33c6a1c2beb1c878e1b7ae3d36e46f237dc0a49ad3d167432cff4caf",
+      "secondSiteChhandSourceSha256": "147fbd5b33c6a1c2beb1c878e1b7ae3d36e46f237dc0a49ad3d167432cff4caf",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "147fbd5b33c6a1c2beb1c878e1b7ae3d36e46f237dc0a49ad3d167432cff4caf",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 53,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "02bb5ba35d18dc937e8b8b257732edfcdd68483cdf3c72d2ca4f0ff23e9fd343",
+      "secondSiteChhandSourceSha256": "02bb5ba35d18dc937e8b8b257732edfcdd68483cdf3c72d2ca4f0ff23e9fd343",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "02bb5ba35d18dc937e8b8b257732edfcdd68483cdf3c72d2ca4f0ff23e9fd343",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 54,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "aba934aa3db90f5121833726caea347d6a504a20e7b8b27aab89f1b527a2551d",
+      "secondSiteChhandSourceSha256": "3dcfba18500480e0b1840753073475fe26a325eccaf21afb3e2d909b17cda74f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "3dcfba18500480e0b1840753073475fe26a325eccaf21afb3e2d909b17cda74f",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਨਿੱਤ ਨਾਰਾਇਣੇ ਕਰੂਰ ਕਰਮੇ ॥ ਨਮੋ ਪ੍ਰੇਤ ਅਪ੍ਰੇਤ ਦੇਵੇ ਸੁਧਰਮੇ ॥੫੪॥"
+    },
+    {
+      "chhand": 55,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ad20f4ea8b098400c5014d0d1250bd45cf8d7f790b3048f4b06b11e4136bdd6b",
+      "secondSiteChhandSourceSha256": "73db290cd7d7e899a9f58c36d30ae688ee987ad126b4c85334fb6fafb76c1176",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "73db290cd7d7e899a9f58c36d30ae688ee987ad126b4c85334fb6fafb76c1176",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਰੋਗ ਹਰਤਾ ਨਮੋ ਰਾਗ ਰੂਪੇ ॥ ਨਮੋ ਸਾਹ ਸਾਹੰ ਨਮੋ ਭੂਪ ਭੂਪੇ ॥੫੫॥"
+    },
+    {
+      "chhand": 56,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "dda6584dbe0483fcfb16370dd3e39eb9783b7baeb5f508341457f13b3a28af88",
+      "secondSiteChhandSourceSha256": "5aea3ad08676e2d1a03191a92b6dc6fea965de285ad620081f625280004d5d2f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "5aea3ad08676e2d1a03191a92b6dc6fea965de285ad620081f625280004d5d2f",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਦਾਨ ਦਾਨੇ ਨਮੋ ਮਾਨ ਮਾਨੇ ॥ ਨਮੋ ਰੋਗ ਰੋਗੇ ਨਮਸਤੰ ਸਨਾਨੇ ॥੫੬॥"
+    },
+    {
+      "chhand": 57,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "28621c4be5be4e417417271ac1d1ca54875905da85048cfddcdc8428ad0cc817",
+      "secondSiteChhandSourceSha256": "28621c4be5be4e417417271ac1d1ca54875905da85048cfddcdc8428ad0cc817",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "28621c4be5be4e417417271ac1d1ca54875905da85048cfddcdc8428ad0cc817",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 58,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "bee2b88e71df277b941984d24677c271a0f263ab72b7cc2db4b7cdc519259004",
+      "secondSiteChhandSourceSha256": "bee2b88e71df277b941984d24677c271a0f263ab72b7cc2db4b7cdc519259004",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "bee2b88e71df277b941984d24677c271a0f263ab72b7cc2db4b7cdc519259004",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 59,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "6d2851c88effc96556e0e5433944fb1bb19a8c210746a4503cbef35d64cd7c5d",
+      "secondSiteChhandSourceSha256": "fa99689c185561b9abe19090a408225ae4c199b39874603305b3b3c3e64e793a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "fa99689c185561b9abe19090a408225ae4c199b39874603305b3b3c3e64e793a",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਸਦਾ ਸਿਧਿਦਾ ਬੁਧਿਦਾ ਬ੍ਰਿਧਿ ਕਰਤਾ ॥ ਅਧੋ ਉਰਧ ਅਰਧੰ ਅਘੰ ਓਘ ਹਰਤਾ ॥੫੯॥"
+    },
+    {
+      "chhand": 60,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "bd701e5926f4ef5b4141ab2d666e75602bb02f20c2fb0946f3c558634583a397",
+      "secondSiteChhandSourceSha256": "ea0bd1349cc2b22af872b319f3c8c98bb0050ab135481c18953299287449be55",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ea0bd1349cc2b22af872b319f3c8c98bb0050ab135481c18953299287449be55",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਪਰੰ ਪਰਮ ਪਰਮੇਸ੍ਵਰੰ ਪ੍ਰੋਛ ਪਾਲੰ ॥ ਸਦਾ ਸਰਬਦਾ ਸਿਧਿ ਦਾਤਾ ਦਿਆਲੰ ॥੬੦॥"
+    },
+    {
+      "chhand": 61,
+      "originalLines": 2,
+      "primaryChhandSourceSha256": "024a48ef4c78e4f583cea02d589b435bf865263c2751bac8c0675972e88d4e29",
+      "secondSiteChhandSourceSha256": "024a48ef4c78e4f583cea02d589b435bf865263c2751bac8c0675972e88d4e29",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "024a48ef4c78e4f583cea02d589b435bf865263c2751bac8c0675972e88d4e29",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 62,
+      "originalLines": 5,
+      "primaryChhandSourceSha256": "38c398e4628ece661db18d15b778991d114a3630c244e717d931e25849b178e9",
+      "secondSiteChhandSourceSha256": "83d51a7fe11884fcf0513b5707a06eec67bf5c7b95cd011f19a43ffd3be56d48",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "83d51a7fe11884fcf0513b5707a06eec67bf5c7b95cd011f19a43ffd3be56d48",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਤੇਰਾ ਜੋਰੁ ॥ ਚਾਚਰੀ ਛੰਦ ॥ ਜਲੇ ਹੈਂ ॥ ਥਲੇ ਹੈਂ ॥ ਅਭੀਤ ਹੈਂ ॥ ਅਭੇ ਹੈਂ ॥੬੨॥"
+    },
+    {
+      "chhand": 63,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "b89c8bd7a8164e961f651df39d7041174c1587facde1470feb39c62a7684aaeb",
+      "secondSiteChhandSourceSha256": "b89c8bd7a8164e961f651df39d7041174c1587facde1470feb39c62a7684aaeb",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "b89c8bd7a8164e961f651df39d7041174c1587facde1470feb39c62a7684aaeb",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 64,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "463573a35514c2d3d9450ae5a6d937aae70d56a3b34725ceaac26abc20e79d77",
+      "secondSiteChhandSourceSha256": "4732081f9c2eb2fa9800ff188ea3a63d3e33ae4381813c51c430602a2066f020",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "463573a35514c2d3d9450ae5a6d937aae70d56a3b34725ceaac26abc20e79d77",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "a139714edb3e28ffba635f33da8cf14c9d43eadc729480656e119fa18de1014c"
+      ],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 65,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ebe8c28db97cd92a7000dd337f8ba0fada50fe98da1689003b270d348a53c010",
+      "secondSiteChhandSourceSha256": "ebe8c28db97cd92a7000dd337f8ba0fada50fe98da1689003b270d348a53c010",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ebe8c28db97cd92a7000dd337f8ba0fada50fe98da1689003b270d348a53c010",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 66,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "62235a1e31ef86db4a2b6ab94be194344a226ccdda0eea11c3b80d98d247adeb",
+      "secondSiteChhandSourceSha256": "62235a1e31ef86db4a2b6ab94be194344a226ccdda0eea11c3b80d98d247adeb",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "62235a1e31ef86db4a2b6ab94be194344a226ccdda0eea11c3b80d98d247adeb",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 67,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6af40426a30531a9d184a052a9b72bf99bd2692bd74fe2e019dec3273e7bd901",
+      "secondSiteChhandSourceSha256": "b7f196aecc4897f9a379d74fcf236f91b33cff8ee51d7dcee2e1c7a4e95ec20f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "b7f196aecc4897f9a379d74fcf236f91b33cff8ee51d7dcee2e1c7a4e95ec20f",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਰਾਜ ਰਾਜੇ ॥ ਨਮੋ ਸਾਜ ਸਾਜੇ ॥ ਨਮੋ ਸਾਹ ਸਾਹੇ॥ ਨਮੋ ਮਾਹ ਮਾਹੇ ॥੬੭॥"
+    },
+    {
+      "chhand": 68,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "db5a39e04c5119fe1d4f2dbe9daf27b08d740c361908c36058d88657f29db42d",
+      "secondSiteChhandSourceSha256": "2b504a99b52f12c155233eef85973878342c8f6f854189d9b283fd7e4d1676af",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2b504a99b52f12c155233eef85973878342c8f6f854189d9b283fd7e4d1676af",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਗੀਤ ਗੀਤੇ ॥ ਨਮੋ ਪ੍ਰੀਤਿ ਪ੍ਰੀਤੇ ॥ ਨਮੋ ਰੋਖ ਰੋਖੇ ॥ ਨਮੋ ਸੋਖ ਸੋਖੇ ॥੬੮॥"
+    },
+    {
+      "chhand": 69,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7a1efe1a3949f79f34cb66e968fd3549896ad82655adf553d4fe44d3311fc7ac",
+      "secondSiteChhandSourceSha256": "7a1efe1a3949f79f34cb66e968fd3549896ad82655adf553d4fe44d3311fc7ac",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7a1efe1a3949f79f34cb66e968fd3549896ad82655adf553d4fe44d3311fc7ac",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 70,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1c2895eb50e6d8a34c4925b7d67d49cfe37bd588d4e0325fe2a940327170b4ef",
+      "secondSiteChhandSourceSha256": "1c2895eb50e6d8a34c4925b7d67d49cfe37bd588d4e0325fe2a940327170b4ef",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1c2895eb50e6d8a34c4925b7d67d49cfe37bd588d4e0325fe2a940327170b4ef",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 71,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "b12bf8661c9ee83bc543a98d1ed577f233106ddb24a7a469059024b7744bba5b",
+      "secondSiteChhandSourceSha256": "b12bf8661c9ee83bc543a98d1ed577f233106ddb24a7a469059024b7744bba5b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "b12bf8661c9ee83bc543a98d1ed577f233106ddb24a7a469059024b7744bba5b",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 72,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "f5e3316e4c703bed62540f9181575a2c2425ad524be3348bbcef5311c2dc5b8a",
+      "secondSiteChhandSourceSha256": "b359a013c7d2ee025358d4c35f2f6a3c84e701966976336cd82b5cefb0ecf93f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "b359a013c7d2ee025358d4c35f2f6a3c84e701966976336cd82b5cefb0ecf93f",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਜੀਵ ਜੀਵੰ ਨਮੋ ਬੀਜ ਬੀਜੇ ॥ ਅਖਿੱਜੇ ਅਭਿੱਜੇ ॥ ਸਮਸਤੰ ਪ੍ਰਸਿੱਜੇ ॥੭੨॥"
+    },
+    {
+      "chhand": 73,
+      "originalLines": 3,
+      "primaryChhandSourceSha256": "938705fec99e8e301cd52d27eecddc4f109a3e459d87a1d6b5e5fefc12906dd3",
+      "secondSiteChhandSourceSha256": "175018118af28d330157f73e054e547bfd86db41b7bb81a9f4155e3113a13d45",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "175018118af28d330157f73e054e547bfd86db41b7bb81a9f4155e3113a13d45",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕ੍ਰਿਪਾਲੰ ਸਰੂਪੇ ਕੁਕਰਮੰ ਪ੍ਰਣਾਸੀ ॥ ਸਦਾ ਸਰਬਦਾ ਰਿਧਿ ਸਿਧੰ ਨਿਵਾਸੀ ॥੭੩॥"
+    },
+    {
+      "chhand": 74,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4ac6aab1b0521e6bbd6836e45312d7544a19cc7ffa997f8e453ae566e71391c8",
+      "secondSiteChhandSourceSha256": "7778390c5f4361acec69f4a0f942789adf05c805555984242658a95ec4bc41e1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7778390c5f4361acec69f4a0f942789adf05c805555984242658a95ec4bc41e1",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚਰਪਟ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਅੰਮ੍ਰਿਤ ਕਰਮੇ ॥ ਅੰਬ੍ਰਿਤ ਧਰਮੇ ॥ ਅਖਿਲ ਜੋਗੇ ॥ ਅਚਲ ਭੋਗੇ ॥੭੪॥"
+    },
+    {
+      "chhand": 75,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1346afcd97212083a349511f8e35bae6e7e8dc61f4344e70c6d22096b62b0d0a",
+      "secondSiteChhandSourceSha256": "72f6f675db559087c31bac3b69252e9ae28b282540477411cabd9cbef317bc89",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "72f6f675db559087c31bac3b69252e9ae28b282540477411cabd9cbef317bc89",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਚਲ ਰਾਜੇ ॥ ਅਟਲ ਸਾਜੇ ॥ ਅਖਲ ਧਰਮੰ ॥ ਅਲਖ ਕਰਮੰ ॥੭੫॥"
+    },
+    {
+      "chhand": 76,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "329e3fd4fdb5d3be5e41c8cfda0351c03e36a62a38338724e186bb860cca97ff",
+      "secondSiteChhandSourceSha256": "329e3fd4fdb5d3be5e41c8cfda0351c03e36a62a38338724e186bb860cca97ff",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "329e3fd4fdb5d3be5e41c8cfda0351c03e36a62a38338724e186bb860cca97ff",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 77,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "407ae6ee39529673225478e8e72c8dbd8024ed8cf58abf19ad59764c42275c8d",
+      "secondSiteChhandSourceSha256": "407ae6ee39529673225478e8e72c8dbd8024ed8cf58abf19ad59764c42275c8d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "407ae6ee39529673225478e8e72c8dbd8024ed8cf58abf19ad59764c42275c8d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 78,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "f2da3d993c7fb77735ab21bda807be354deb015cedc653b9ded31cb7aa960d6d",
+      "secondSiteChhandSourceSha256": "f2da3d993c7fb77735ab21bda807be354deb015cedc653b9ded31cb7aa960d6d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f2da3d993c7fb77735ab21bda807be354deb015cedc653b9ded31cb7aa960d6d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 79,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "147b75f0ec09cc6d0c893e3dc889746f7e1b214c1b18364ef5270181274127fc",
+      "secondSiteChhandSourceSha256": "f5728e5f3fec3cd423205503382da37bed8340085fb5aae7f9922303b539bbee",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f5728e5f3fec3cd423205503382da37bed8340085fb5aae7f9922303b539bbee",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਰੂਆਲ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਆਦਿ ਰੂਪ ਅਨਾਦਿ ਮੂਰਤਿ ਅਜੋਨਿ ਪੁਰਖ ਅਪਾਰ ॥ ਸਰਬ ਮਾਨ ਤ੍ਰਿਮਾਨ ਦੇਵ ਅਭੇਵ ਆਦਿ ਉਦਾਰ ॥ ਸਰਬ ਪਾਲਕ ਸਰਬ ਘਾਲਕ ਸਰਬ ਕੋ ਪੁਨਿ ਕਾਲ ॥ ਜੱਤ੍ਰ ਤੱਤ੍ਰ ਬਿਰਾਜਹੀ ਅਵਧੂਤ ਰੂਪ ਰਿਸਾਲ ॥੭੯॥"
+    },
+    {
+      "chhand": 80,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ff84ba2ca811133bf3d520879224522f592fca7827ccd3e8749b3c1ddb6b85a5",
+      "secondSiteChhandSourceSha256": "e7102686646c6bd324bdf44029a01209fe05a6ceccf19acee6e0cf0122e5ff61",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e7102686646c6bd324bdf44029a01209fe05a6ceccf19acee6e0cf0122e5ff61",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਾਮ ਠਾਮ ਨ ਜਾਤਿ ਜਾਕਰ ਰੂਪ ਰੰਗ ਨ ਰੇਖ ॥ ਆਦਿ ਪੁਰਖ ਉਦਾਰ ਮੂਰਤਿ ਅਜੋਨਿ ਆਦਿ ਅਸੇਖ ॥ ਦੇਸ ਅਉਰ ਨ ਭੇਸ ਜਾਕਰ ਰੂਪ ਰੇਖ ਨ ਰਾਗ ॥ ਜਤ੍ਰ ਤਤ੍ਰ ਦਿਸਾ ਵਿਸਾ ਹੁਇ ਫੈਲਿਓ ਅਨੁਰਾਗ ॥੮੦॥"
+    },
+    {
+      "chhand": 81,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7afda7a84ac463cdaae900f312dcc995e032b6b3784bd14501a82b0b65271b64",
+      "secondSiteChhandSourceSha256": "7afda7a84ac463cdaae900f312dcc995e032b6b3784bd14501a82b0b65271b64",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7afda7a84ac463cdaae900f312dcc995e032b6b3784bd14501a82b0b65271b64",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 82,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d12112e9b9bb579e597a99a145172255dce69c5a74497a6c9145420fd80ea243",
+      "secondSiteChhandSourceSha256": "2cb10a467ea20f3dddffd4f4dd5ce2792fd765a248b3789b05d91fe7d31bbd8a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2cb10a467ea20f3dddffd4f4dd5ce2792fd765a248b3789b05d91fe7d31bbd8a",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਦੇਵ ਭੇਵ ਨ ਜਾਨਹੀ ਜਿਹ ਬੇਦ ਅਉਰ ਕਤੇਬ ॥ ਰੂਪ ਰੰਗ ਨ ਜਾਤਿ ਪਾਤਿ ਸੁ ਜਾਨਈ ਕਿਹ ਜੇਬ ॥ ਤਾਤ ਮਾਤ ਨ ਜਾਤ ਜਾਕਰ ਜਨਮ ਮਰਨ ਬਿਹੀਨ ॥ ਚੱਕ੍ਰ ਬੱਕ੍ਰ ਫਿਰੈ ਚਤੁਰ ਚਕਿ ਮਾਨ ਹੀ ਪੁਰ ਤੀਨ ॥੮੨॥"
+    },
+    {
+      "chhand": 83,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "106d46af0d73d693a54b4f8b9d7036dcd182dd28474279496b83a0a6f8f985d6",
+      "secondSiteChhandSourceSha256": "d7e85b0d85c9715f34788250676a60605d5f34bb04ad1c455174f38b25fbc426",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "d7e85b0d85c9715f34788250676a60605d5f34bb04ad1c455174f38b25fbc426",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਲੋਕ ਚਉਦਹ ਕੇ ਬਿਖੈ ਜਗ ਜਾਪ ਹੀ ਜਿਹ ਜਾਪੁ ॥ ਆਦਿ ਦੇਵ ਅਨਾਦਿ ਮੂਰਤਿ ਥਾਪਿਓ ਸਬੈ ਜਿਹ ਥਾਪੁ ॥ ਪਰਮ ਰੂਪ ਪੁਨੀਤ ਮੂਰਤਿ ਪੂਰਨ ਪੁਰਖ ਅਪਾਰ ॥ ਸਰਬ ਬਿਸ੍ਵ ਰਚਿਓ ਸੁਯੰਭਵ ਗੜਨ ਭੰਜਨਹਾਰ ॥੮੩॥"
+    },
+    {
+      "chhand": 84,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "b83471c9a2fd7c2799362b7d76cbd4c02373a5de0698f3231e022ca60dd34aaa",
+      "secondSiteChhandSourceSha256": "06f6d2e7f32da3ac8a700182f99bba183b764bebccd7d6d3b2b5dd9e6c7e090d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "06f6d2e7f32da3ac8a700182f99bba183b764bebccd7d6d3b2b5dd9e6c7e090d",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਾਲ ਹੀਨ ਕਲਾ ਸੰਜੁਗਤਿ ਅਕਾਲ ਪੁਰਖ ਅਦੇਸ ॥ ਧਰਮ ਧਾਮ ਸੁ ਭਰਮ ਰਹਤ ਅਭੂਤ ਅਲਖ ਅਭੇਸ ॥ ਅੰਗ ਰਾਗ ਨ ਰੰਗ ਜਾ ਕਹਿ ਜਾਤਿ ਪਾਤਿ ਨ ਨਾਮ ॥ ਗਰਬ ਗੰਜਨ ਦੁਸਟ ਭੰਜਨ ਮੁਕਤਿ ਦਾਇਕ ਕਾਮ ॥੮੪॥"
+    },
+    {
+      "chhand": 85,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "27d1a41ef3ced51fae1add7abc7a925a8304f24ae3e2ce7b586d116699916cd4",
+      "secondSiteChhandSourceSha256": "596ad2ad9e2cc92605789d9fe0b36e2a66b6e75c949997ac3a5508355fefdae4",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "596ad2ad9e2cc92605789d9fe0b36e2a66b6e75c949997ac3a5508355fefdae4",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਆਪ ਰੂਪ ਅਮੀਕ ਅਨਉਸਤਤਿ ਏਕ ਪੁਰਖ ਅਵਧੂਤ ॥ ਗਰਬ ਗੰਜਨ ਸਰਬ ਭੰਜਨ ਆਦਿ ਰੂਪ ਅਸੂਤ ॥ ਅੰਹ ਹੀਨ ਅਭੰਗ ਅਨਾਤਮ ਏਕ ਪੁਰਖ ਅਪਾਰ ॥ ਸਰਬ ਲਾਇਕ ਸਰਬ ਘਾਇਕ ਸਰਬ ਕੋ ਪ੍ਰਤਿਪਾਰ ॥੮੫॥"
+    },
+    {
+      "chhand": 86,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2b67b59aceee1bd8593d77f563fb08afd47421ffa8457cb944a4904ebf9877c0",
+      "secondSiteChhandSourceSha256": "c96e554f3d8d97772d6ba09419d4b293df516622ad1c301178aeeed528ce5fd9",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "c96e554f3d8d97772d6ba09419d4b293df516622ad1c301178aeeed528ce5fd9",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਸਰਬ ਗੰਤਾ ਸਰਬ ਹੰਤਾ ਸਰਬ ਤੇ ਅਨਭੇਖ ॥ ਸਰਬ ਸਾਸਤ੍ਰ ਨ ਜਾਨਹੀ ਜਿਹ ਰੂਪ ਰੰਗੁ ਅਰੁ ਰੇਖ ॥ ਪਰਮ ਬੇਦ ਪੁਰਾਣ ਜਾਕਹਿ ਨੇਤਿ ਭਾਖਤ ਨਿਤ ॥ ਕੋਟਿ ਸਿੰਮ੍ਰਿਤ ਪੁਰਾਨ ਸਾਸਤ੍ਰ ਨ ਆਵਈ ਵਹੁ ਚਿੱਤ ॥੮੬॥"
+    },
+    {
+      "chhand": 87,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cf8c5cc52a21a97d7996b3d517655caaf51540ce31dec0089f402b4403dc1aa0",
+      "secondSiteChhandSourceSha256": "37ef7cfa1355c4d122b0d08a8038989424bda651ecaebcf38c1ff245e6a0ce50",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "37ef7cfa1355c4d122b0d08a8038989424bda651ecaebcf38c1ff245e6a0ce50",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਮਧੁਭਾਰ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਗੁਨ ਗਨ ਉਦਾਰ ॥ ਮਹਿਮਾ ਅਪਾਰ ॥ ਆਸਨ ਅਭੰਗ ॥ ਉਪਮਾ ਅਨੰਗ ॥੮੭॥"
+    },
+    {
+      "chhand": 88,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1ad2ad4396f1dbd65f0b7ccbd93ec6337fab0c70bd38499b1aeda6f5eb9a04fb",
+      "secondSiteChhandSourceSha256": "e7d8a367887cf46df2174858143ad296133b7a0058e21973afd61be689dc5aa0",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e7d8a367887cf46df2174858143ad296133b7a0058e21973afd61be689dc5aa0",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਨਭਉ ਪ੍ਰਕਾਸ ॥ ਨਿਸ ਦਿਨ ਅਨਾਸ ॥ ਆਜਾਨੁ ਬਾਹੁ ॥ ਸਾਹਾਨੁ ਸਾਹੁ ॥੮੮॥"
+    },
+    {
+      "chhand": 89,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "21a0bdc1c001b83f43e772b1390bff7e05bc357a2236bcaa109549a5f615385d",
+      "secondSiteChhandSourceSha256": "21a0bdc1c001b83f43e772b1390bff7e05bc357a2236bcaa109549a5f615385d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "21a0bdc1c001b83f43e772b1390bff7e05bc357a2236bcaa109549a5f615385d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 90,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "00d94a06d1a6ad9b0dc4292df8fa602b857b5280203b5ed30f12bd085139f1a5",
+      "secondSiteChhandSourceSha256": "00d94a06d1a6ad9b0dc4292df8fa602b857b5280203b5ed30f12bd085139f1a5",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "00d94a06d1a6ad9b0dc4292df8fa602b857b5280203b5ed30f12bd085139f1a5",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 91,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1da730b595a1fea95cff8d5b3b4f16bf7fdcaa7b513ef8855d3f0f4d1eabad19",
+      "secondSiteChhandSourceSha256": "37ce6308d57327d010db7c65d4737063321af5a7a34715ba58ffeea22e68aec7",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "37ce6308d57327d010db7c65d4737063321af5a7a34715ba58ffeea22e68aec7",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 92,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "c0bb0a2501808f3a0ec5d59ace9a2fd94d1378b4352305d8eb3cf76b9a980aa9",
+      "secondSiteChhandSourceSha256": "258d60d115aa670243a0c8a1167b44f174d1e3de69db241d01bf189f89e7efb4",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "258d60d115aa670243a0c8a1167b44f174d1e3de69db241d01bf189f89e7efb4",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਮੁਨਿ ਗਨ ਪ੍ਰਨਾਮ ॥ ਨਿਰਭੈ ਨਿਕਾਮ ॥ ਅਤਿ ਦੁਤਿ ਪ੍ਰਚੰਡ ॥ ਮਿਤ ਗਤਿ ਅਖੰਡ ॥੯੨॥"
+    },
+    {
+      "chhand": 93,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "164f701e573c2c31a93510793ac63de00589b1fb2f6315a8059b7f5899d04be3",
+      "secondSiteChhandSourceSha256": "368fea5c285201318236736b73cdf18e3c580f240c9317aeb69a5f49627bd339",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "368fea5c285201318236736b73cdf18e3c580f240c9317aeb69a5f49627bd339",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਆਲਿਸ੍ਯ ਕਰਮ ॥ ਆਦ੍ਰਿਸ੍ਯ ਧਰਮ ॥ ਸਰਬਾ ਭਰਣਾਢਯ ॥ ਅਨਡੰਡ ਬਾਢਯ ॥੯੩॥"
+    },
+    {
+      "chhand": 94,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ff4609ff93d53b82147d17617edb7cce60d31dd4d284b2a097b298ea5ac53331",
+      "secondSiteChhandSourceSha256": "513533c8fa4f64e0676175d3913f60d07e41b31e02ecc30ec9288b6b054f3f3d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "513533c8fa4f64e0676175d3913f60d07e41b31e02ecc30ec9288b6b054f3f3d",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚਾਚਰੀ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਗੁਬਿੰਦੇ ॥ ਮੁਕੰਦੇ ॥ ਉਦਾਰੇ ॥ ਅਪਾਰੇ ॥੯੪॥"
+    },
+    {
+      "chhand": 95,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "96dec7b0c169f96a6baa9ac41eb1b5edbf36f75bd529cbe8be7fb042dfac9f13",
+      "secondSiteChhandSourceSha256": "96dec7b0c169f96a6baa9ac41eb1b5edbf36f75bd529cbe8be7fb042dfac9f13",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "96dec7b0c169f96a6baa9ac41eb1b5edbf36f75bd529cbe8be7fb042dfac9f13",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 96,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "eb26a4d4f9e34364f6baf2ad0133169e606e77f3810a14c4908d841ac0f1bd4d",
+      "secondSiteChhandSourceSha256": "9a4133697c836e0478f7f4a39ef0390e5c0006f3715b4bebacd1d369d56bae9e",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "d382328109a209bc2ae1930738076a73adf9729edb10f8a8d66d99302b961fd0",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "a139714edb3e28ffba635f33da8cf14c9d43eadc729480656e119fa18de1014c"
+      ],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਕਰਤਾ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਹਰਤਾ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਦਾਨੇ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਜਾਨੇ ॥੯੬॥"
+    },
+    {
+      "chhand": 97,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "b85571cf8fccc0498f1d59b4f977104e43994a0da1482625cd29a7cd5ffda072",
+      "secondSiteChhandSourceSha256": "ab0d5e764be55535bdbe87df7c2d73e5c2e047caa39cedc49e074b0a9ff063ea",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ab0d5e764be55535bdbe87df7c2d73e5c2e047caa39cedc49e074b0a9ff063ea",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਵਰਤੀ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਭਰਤੀ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਪਾਲੇ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਕਾਲੇ ॥੯੭॥"
+    },
+    {
+      "chhand": 98,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7d32494457be80ca8815bb74e8846e61782864d29b395157748ff90e8de7eced",
+      "secondSiteChhandSourceSha256": "1c22b67913fbfaafba52eba9c8cc0d536652cab6d600dfd441888d900d335264",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1c22b67913fbfaafba52eba9c8cc0d536652cab6d600dfd441888d900d335264",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਪਾਸੇ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਵਾਸੇ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਮਾਨਯੈ ॥ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਦਾਨਯੈ ॥੯੮॥"
+    },
+    {
+      "chhand": 99,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "46e777e4739900f5b7ebe35c026238e9a527c554583d37845af6cf7533c65bf7",
+      "secondSiteChhandSourceSha256": "d6c0230d48a2e02ceb573443854a79561c81fb54a29d3967d22d33982c4b8af6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "46e777e4739900f5b7ebe35c026238e9a527c554583d37845af6cf7533c65bf7",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "f8a43194c47ada1dbb9ff3a36a003f0704082a6113c1c7c689fc5d35ba08d6c1"
+      ],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 100,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6dcd9c4b06815490ac156d41540f31368593bdf9d65bdee627423d1925434556",
+      "secondSiteChhandSourceSha256": "6dcd9c4b06815490ac156d41540f31368593bdf9d65bdee627423d1925434556",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6dcd9c4b06815490ac156d41540f31368593bdf9d65bdee627423d1925434556",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 101,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "be80112a0af19be29865df943f99ab975dc0c28fde1cc419a89d5c7e2f20bd61",
+      "secondSiteChhandSourceSha256": "be80112a0af19be29865df943f99ab975dc0c28fde1cc419a89d5c7e2f20bd61",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "be80112a0af19be29865df943f99ab975dc0c28fde1cc419a89d5c7e2f20bd61",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 102,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7e700d4db6f43c6634a134f9f4437d66e3edf11a598b766c203414aeedaf8ad6",
+      "secondSiteChhandSourceSha256": "7e700d4db6f43c6634a134f9f4437d66e3edf11a598b766c203414aeedaf8ad6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7e700d4db6f43c6634a134f9f4437d66e3edf11a598b766c203414aeedaf8ad6",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 103,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cc6b371d199eabd1810d39a969d590a9b7853ea640556075e0ed4ecae7ae825e",
+      "secondSiteChhandSourceSha256": "d81798efec99b92b7f8bd89ddd2fa80d23c1b399411bd43f5afcafc306901fb7",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "d81798efec99b92b7f8bd89ddd2fa80d23c1b399411bd43f5afcafc306901fb7",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਭਗਵਤੀ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ਕਥਤੇ ॥ ਕਿ ਆਛਿੱਜ ਦੇਸੈ ॥ ਕਿ ਆਭਿੱਜ ਭੇਸੈ ॥ ਕਿ ਆਗੰਜ ਕਰਮੈ ॥ ਕਿ ਆਭੰਜ ਭਰਮੈ ॥੧੦੩॥"
+    },
+    {
+      "chhand": 104,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "66772c230112db5129133aa123ceceba02fb8f7306ee4d28876b41250fa0dd97",
+      "secondSiteChhandSourceSha256": "66772c230112db5129133aa123ceceba02fb8f7306ee4d28876b41250fa0dd97",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "66772c230112db5129133aa123ceceba02fb8f7306ee4d28876b41250fa0dd97",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 105,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "9644790cd08b3eb2af7ce46292950f47d096ef4d7d581d764bf4a1407c73a9bc",
+      "secondSiteChhandSourceSha256": "9644790cd08b3eb2af7ce46292950f47d096ef4d7d581d764bf4a1407c73a9bc",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9644790cd08b3eb2af7ce46292950f47d096ef4d7d581d764bf4a1407c73a9bc",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 106,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "0e08407c4d25a3bb6c32710cc16c69b56d4b0ecfa1d57fe6c7721174a63771c3",
+      "secondSiteChhandSourceSha256": "0e08407c4d25a3bb6c32710cc16c69b56d4b0ecfa1d57fe6c7721174a63771c3",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "0e08407c4d25a3bb6c32710cc16c69b56d4b0ecfa1d57fe6c7721174a63771c3",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 107,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "72d8c81d14d86e45499dcf9593db9ce93773daeea6eebd6bea0fea53cec0b9aa",
+      "secondSiteChhandSourceSha256": "72d8c81d14d86e45499dcf9593db9ce93773daeea6eebd6bea0fea53cec0b9aa",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "72d8c81d14d86e45499dcf9593db9ce93773daeea6eebd6bea0fea53cec0b9aa",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 108,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "47096afb71675a1752271f513b31356bdef00feb92fab6cfb5fade290c0c9987",
+      "secondSiteChhandSourceSha256": "f8622d321b247bfcf07f747caaf4d046ff36475d3b510fcfec1758f9e58e741c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f8622d321b247bfcf07f747caaf4d046ff36475d3b510fcfec1758f9e58e741c",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਰੋਜੀ ਰਜਾਕੈ ॥ ਰਹੀਮੈ ਰਿਹਾਕੈ ॥ ਕਿ ਪਾਕ ਬਿਐਬ ਹੈਂ ॥ ਕਿ ਗੈਬੁਲ ਗ਼ੈਬ ਹੈਂ ॥੧੦੮॥"
+    },
+    {
+      "chhand": 109,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4cf89fca3b770241cc0186fcaf662063e53f54475dbe7ba91d9b405de8cf3095",
+      "secondSiteChhandSourceSha256": "9b2b94831ab0707e6a492b64ad182091eb1cfab501a81c3a0d1353fc4886f78f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9b2b94831ab0707e6a492b64ad182091eb1cfab501a81c3a0d1353fc4886f78f",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਅਫਵੁਲ ਗੁਨਾਹ ਹੈਂ ॥ ਕਿ ਸਾਹਾਨ ਸਾਹ ਹੈਂ ॥ ਕਿ ਕਾਰਨ ਕੁਨਿੰਦ ਹੈਂ ॥ ਕਿ ਰੋਜੀ ਦਿਹਿੰਦ ਹੈਂ ॥੧੦੯॥"
+    },
+    {
+      "chhand": 110,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d36a29f2109ee60d9ded8544092377bff5856bbbe496ab50255379b6a2359266",
+      "secondSiteChhandSourceSha256": "4d5980536327bf680571cebddb855cf36c89e4989d62337360cda2e1da48ac5b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "4d5980536327bf680571cebddb855cf36c89e4989d62337360cda2e1da48ac5b",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਰਾਜਕ ਰਹੀਮ ਹੈਂ ॥ ਕਿ ਕਰਮੰ ਕਰੀਮ ਹੈਂ ॥ ਕਿ ਸਰਬੰ ਕਲੀ ਹੈਂ ॥ ਕਿ ਸਰਬੰ ਦਲੀ ਹੈਂ ॥੧੧੦॥"
+    },
+    {
+      "chhand": 111,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "789f67edbe84b58e6b30af244e825d51e281fb89ff119e688239e1716fa5f786",
+      "secondSiteChhandSourceSha256": "789f67edbe84b58e6b30af244e825d51e281fb89ff119e688239e1716fa5f786",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "789f67edbe84b58e6b30af244e825d51e281fb89ff119e688239e1716fa5f786",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 112,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2280ae8d0dd74cedc0e538f27d0662cfd1ee53b03ef6df5b0039de40d97b5d1e",
+      "secondSiteChhandSourceSha256": "2280ae8d0dd74cedc0e538f27d0662cfd1ee53b03ef6df5b0039de40d97b5d1e",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2280ae8d0dd74cedc0e538f27d0662cfd1ee53b03ef6df5b0039de40d97b5d1e",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 113,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "e1e836ad2b6541dedb9d6c83678ad1d0787a0be9e756470f0a20f4f3fe1e0ad6",
+      "secondSiteChhandSourceSha256": "e1e836ad2b6541dedb9d6c83678ad1d0787a0be9e756470f0a20f4f3fe1e0ad6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e1e836ad2b6541dedb9d6c83678ad1d0787a0be9e756470f0a20f4f3fe1e0ad6",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 114,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "85935024f64fc67114f33db6bd745979e2944b036326f027e57cba8fd7e18fa7",
+      "secondSiteChhandSourceSha256": "85935024f64fc67114f33db6bd745979e2944b036326f027e57cba8fd7e18fa7",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "85935024f64fc67114f33db6bd745979e2944b036326f027e57cba8fd7e18fa7",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 115,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6d3b4a9e80a2818f28264771f71ab8dab0c623f5213014a7aa304bdea7ba6db9",
+      "secondSiteChhandSourceSha256": "6d3b4a9e80a2818f28264771f71ab8dab0c623f5213014a7aa304bdea7ba6db9",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6d3b4a9e80a2818f28264771f71ab8dab0c623f5213014a7aa304bdea7ba6db9",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 116,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "30f3976b535958746b0567f7c4609b56aeea2e62f220ba24c43a5d61f63f8d1c",
+      "secondSiteChhandSourceSha256": "30f3976b535958746b0567f7c4609b56aeea2e62f220ba24c43a5d61f63f8d1c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "30f3976b535958746b0567f7c4609b56aeea2e62f220ba24c43a5d61f63f8d1c",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 117,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ccd6beb05eaea83cfa9677f5282ba5aa3c763440360cebfd09706f95750ddd5f",
+      "secondSiteChhandSourceSha256": "ccd6beb05eaea83cfa9677f5282ba5aa3c763440360cebfd09706f95750ddd5f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ccd6beb05eaea83cfa9677f5282ba5aa3c763440360cebfd09706f95750ddd5f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 118,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4af324e498e24d6a77602e165b9e1296d3a0ce77dfa34aa395f371e5c9258331",
+      "secondSiteChhandSourceSha256": "4af324e498e24d6a77602e165b9e1296d3a0ce77dfa34aa395f371e5c9258331",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "4af324e498e24d6a77602e165b9e1296d3a0ce77dfa34aa395f371e5c9258331",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 119,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "be26705e46846e2c25737ec34be591b89f927b978e635f1c567170ee2ef7ba98",
+      "secondSiteChhandSourceSha256": "be26705e46846e2c25737ec34be591b89f927b978e635f1c567170ee2ef7ba98",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "be26705e46846e2c25737ec34be591b89f927b978e635f1c567170ee2ef7ba98",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 120,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "f71d45be50ec3b616f5e82fdb6c3c7112f4c514e228e41be08432641f415faad",
+      "secondSiteChhandSourceSha256": "19af3ee10cff3b3834a499116bd12ebca01054bc13a0d682496db70b18c3eb7b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "19af3ee10cff3b3834a499116bd12ebca01054bc13a0d682496db70b18c3eb7b",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਸਰਬੰ ਕਲੀਮੈ ॥ ਕਿ ਪਰਮੰ ਫਹੀਮੈ ॥ ਕਿ ਆਕਿਲ ਅਲਾਮੈ ॥ ਕਿ ਸਾਹਿਬ ਕਲਾਮੈ ॥੧੨੦॥"
+    },
+    {
+      "chhand": 121,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "812aa86c87be16031f2a4f67326fff8921bd3df131881c1e45b073f50bafbd20",
+      "secondSiteChhandSourceSha256": "47dd68f35e04639b0e595684b985401db5723c86885c62c6c45aa0dbb625f64b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "47dd68f35e04639b0e595684b985401db5723c86885c62c6c45aa0dbb625f64b",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਹੁਸਨਲ ਵਜੂ ਹੈਂ ॥ ਤਮਾਮੁਲ ਰੁਜੂ ਹੈਂ ॥ ਹਮੇਸੁਲ ਸਲਾਮੈ ॥ ਸਲੀਖਤ ਮੁਦਾਮੈਂ ॥੧੨੧॥"
+    },
+    {
+      "chhand": 122,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d80ee91037c6f472c05bf7b54a9f586e44354aaa84a866dd9a812ecfb7864a13",
+      "secondSiteChhandSourceSha256": "224324d09872f0e1b93068b213f24a0b262020f7b5403499c0c1259805ca95b1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "224324d09872f0e1b93068b213f24a0b262020f7b5403499c0c1259805ca95b1",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਗ਼ਨੀਮੁਲ ਸਿਕਸਤੈ ॥ ਗਰੀਬੁਲ ਪਰਸਤੈ ॥ ਬਿਲੰਦੁਲ ਮਕਾਨੈ ॥ ਜਮੀਨੁਲ ਜਮਾਨੈ ॥੧੨੨॥"
+    },
+    {
+      "chhand": 123,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d367ecde6883f879e46174de2d6e08490b1101cd52b22c5f948862780c8633a9",
+      "secondSiteChhandSourceSha256": "1d312b0be1162e583c512e99ff4d55767f15bd87bbf6329e53ec1b28fff677f2",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1d312b0be1162e583c512e99ff4d55767f15bd87bbf6329e53ec1b28fff677f2",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਤਮੀਜੁਲ ਤਮਾਮੈਂ ॥ ਰੁਜੂਅਲ ਨਿਧਾਨੈਂ ॥ ਹਰੀਫੁਲ ਅਜੀਮੈਂ ॥ ਰਜਾਇਕ ਯਕੀਨੈ ॥੧੨੩॥"
+    },
+    {
+      "chhand": 124,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2a92699b22a35c5a7b7963fb705bb980ad55c81cf549488447d2ca82f6af2885",
+      "secondSiteChhandSourceSha256": "27b3b6b2c315acfc7909af32406f7321019c8a2bc31602b29e2e796dcbe87e16",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "27b3b6b2c315acfc7909af32406f7321019c8a2bc31602b29e2e796dcbe87e16",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਨੇਕੁਲ ਤਰੰਗ ਹੈਂ ॥ ਅਭੇਦ ਹੈਂ ਅਭੰਗ ਹੈਂ ॥ ਅਜੀਜੁਲ ਨਿਵਾਜ ਹੈਂ ॥ ਗ਼ਨੀਮੁਲ ਖਿਰਾਜ ਹੈਂ ॥੧੨੪॥"
+    },
+    {
+      "chhand": 125,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "c6584a3a281e9879d6c3561f8b5bc77dcefadb3600523dd9536daf38e8fedf96",
+      "secondSiteChhandSourceSha256": "7a9fba0c0f7c881c4f221d0a0aca3e3e17ea02a15a67c88c44d93b8f1bb9caac",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7a9fba0c0f7c881c4f221d0a0aca3e3e17ea02a15a67c88c44d93b8f1bb9caac",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਿਰੁਕਤ ਸਰੂਪ ਹੈਂ ॥ ਤ੍ਰਿਮੁਕਤਿ ਬਿਭੂਤ ਹੈਂ ॥ ਪ੍ਰਭੁਗਤਿ ਪ੍ਰਭਾ ਹੈਂ ॥ ਸੁਜੁਗਤਿ ਸੁਧਾ ਹੈਂ ॥੧੨੫॥"
+    },
+    {
+      "chhand": 126,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "95ce4a6ecf75b4bac2c6666d778defebc46caa9294dd83eaa75b7c6dd13f6fc6",
+      "secondSiteChhandSourceSha256": "a3b0cca4c8a893213086ad2685c4da99d398a207cf472e59d0209e8909d57be6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a3b0cca4c8a893213086ad2685c4da99d398a207cf472e59d0209e8909d57be6",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 127,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "464cd364f5a6a026fda1e2d384da28145fcc60369fe3adb63acec99b5aedde7a",
+      "secondSiteChhandSourceSha256": "464cd364f5a6a026fda1e2d384da28145fcc60369fe3adb63acec99b5aedde7a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "464cd364f5a6a026fda1e2d384da28145fcc60369fe3adb63acec99b5aedde7a",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 128,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "b063fc15ee1d0165121a0c7e59ee56f98c074d653b34f3e5f43cb3e32d8265fd",
+      "secondSiteChhandSourceSha256": "9daa330b0e9e439e36c1e24afc1da35e64f7f6a405f7f99919c5b4d8da9078ec",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9daa330b0e9e439e36c1e24afc1da35e64f7f6a405f7f99919c5b4d8da9078ec",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਓਅੰ ਆਦਿ ਰੂਪੇ ॥ ਅਨਾਦਿ ਸਰੂਪੈ ॥ ਅਨੰਗੀ ਅਨਾਮੇ ॥ ਤ੍ਰਿਭੰਗੀ ਤ੍ਰਿਕਾਮੇ ॥੧੨੮॥"
+    },
+    {
+      "chhand": 129,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "8b8376ebb4cd9c46645caef6a69f1971778ef332db87ccecab3ce5018f89f35e",
+      "secondSiteChhandSourceSha256": "8b8376ebb4cd9c46645caef6a69f1971778ef332db87ccecab3ce5018f89f35e",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "8b8376ebb4cd9c46645caef6a69f1971778ef332db87ccecab3ce5018f89f35e",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 130,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "0388958a726904891029891509e54ad9a31a866e19369b85b4f0f1ced4a6d516",
+      "secondSiteChhandSourceSha256": "0388958a726904891029891509e54ad9a31a866e19369b85b4f0f1ced4a6d516",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "0388958a726904891029891509e54ad9a31a866e19369b85b4f0f1ced4a6d516",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 131,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "271bd56b86f0c46ebf62d24e1413b34c9c52373a0704a4eca0fcea34455ba223",
+      "secondSiteChhandSourceSha256": "4689484c8ca53b9ccfe85b70c5bcedcca5478b582fe218c3459bb831edb7743c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "4689484c8ca53b9ccfe85b70c5bcedcca5478b582fe218c3459bb831edb7743c",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਿਰੁਕਤਿ ਪ੍ਰਭਾ ਹੈਂ ॥ ਸਦੈਵੰ ਸਦਾ ਹੈਂ ॥ ਬਿਭੁਗਤਿ ਸਰੂਪ ਹੈ ॥ ਪ੍ਰਜੁਗਤਿ ਅਨੂਪ ਹੈਂ ॥੧੩੧॥"
+    },
+    {
+      "chhand": 132,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "85cd19fe7c9b714810666407df8dad9cd85e03e25b99e490b983f45fe206c501",
+      "secondSiteChhandSourceSha256": "85cd19fe7c9b714810666407df8dad9cd85e03e25b99e490b983f45fe206c501",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "85cd19fe7c9b714810666407df8dad9cd85e03e25b99e490b983f45fe206c501",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 133,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "c06278d0829410b3c4242642c22f1c7f254c4b8306cbcd6d3d7a8fe4cd62a105",
+      "secondSiteChhandSourceSha256": "7829a6d2dfeeb4adfcf75567e6ba18d4dc2b739a06b2bcda54dc9cbbff6ca933",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "c06278d0829410b3c4242642c22f1c7f254c4b8306cbcd6d3d7a8fe4cd62a105",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "f8a43194c47ada1dbb9ff3a36a003f0704082a6113c1c7c689fc5d35ba08d6c1"
+      ],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 134,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "89d8709c17669bc0b6fff7e9e3e9bdc12ef05fa5b4a3b8d7c8830257884accf0",
+      "secondSiteChhandSourceSha256": "89d8709c17669bc0b6fff7e9e3e9bdc12ef05fa5b4a3b8d7c8830257884accf0",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "89d8709c17669bc0b6fff7e9e3e9bdc12ef05fa5b4a3b8d7c8830257884accf0",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 135,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "9711d7480c51e5d9e7024c6eee0472bc8d181728e6a96806e369124f949871bb",
+      "secondSiteChhandSourceSha256": "9711d7480c51e5d9e7024c6eee0472bc8d181728e6a96806e369124f949871bb",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9711d7480c51e5d9e7024c6eee0472bc8d181728e6a96806e369124f949871bb",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 136,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a3982c4c8f3bc84356bd2a8bf18fed245d5e3945e384ba5d6df8505f4605fbe8",
+      "secondSiteChhandSourceSha256": "a3982c4c8f3bc84356bd2a8bf18fed245d5e3945e384ba5d6df8505f4605fbe8",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a3982c4c8f3bc84356bd2a8bf18fed245d5e3945e384ba5d6df8505f4605fbe8",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 137,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1c226b0056cc41d93c6b83b1fbc16930cacdb0628d3eb20912d98d7ed3132383",
+      "secondSiteChhandSourceSha256": "1c226b0056cc41d93c6b83b1fbc16930cacdb0628d3eb20912d98d7ed3132383",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1c226b0056cc41d93c6b83b1fbc16930cacdb0628d3eb20912d98d7ed3132383",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 138,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ffc75fcda37988f1cb3e3262a6e0356c12d78a8fdf60147a54a43b3d3cff5433",
+      "secondSiteChhandSourceSha256": "ffc75fcda37988f1cb3e3262a6e0356c12d78a8fdf60147a54a43b3d3cff5433",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ffc75fcda37988f1cb3e3262a6e0356c12d78a8fdf60147a54a43b3d3cff5433",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 139,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cb12eee27b6ef0e634ba8a18714148b0a2f8e7c8427049a11f4c2a95b70fb791",
+      "secondSiteChhandSourceSha256": "cb12eee27b6ef0e634ba8a18714148b0a2f8e7c8427049a11f4c2a95b70fb791",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "cb12eee27b6ef0e634ba8a18714148b0a2f8e7c8427049a11f4c2a95b70fb791",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 140,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "41d74bf2a91ce617818302f868c2076a114df3e8461338a851611e6eae8d31b4",
+      "secondSiteChhandSourceSha256": "41d74bf2a91ce617818302f868c2076a114df3e8461338a851611e6eae8d31b4",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "41d74bf2a91ce617818302f868c2076a114df3e8461338a851611e6eae8d31b4",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 141,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "12920694a6e7d0edfd580f9ef38d38919f432109cad69f099d11d317d21ad24f",
+      "secondSiteChhandSourceSha256": "a6d34de8e26ceea383fe31e4a3b6b81c7cd45e59b543c51bfe6e4edd01b12795",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a6d34de8e26ceea383fe31e4a3b6b81c7cd45e59b543c51bfe6e4edd01b12795",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਨਿਤ ਹੈਂ ॥ ਸੁਨਿਤ ਹੈਂ ॥ ਅਜਾਤ ਹੈਂ ॥ ਅਜਾਦਿ ਹੈਂ ॥੧੪੧॥"
+    },
+    {
+      "chhand": 142,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cd8a7e5dc839f12a40e7d63182de9a7fba33256b9a6304b26f84496935529066",
+      "secondSiteChhandSourceSha256": "529515b80236c6629dcf2cef15a3ee6541ac597261acee8558cc4fc4411a4fb6",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "529515b80236c6629dcf2cef15a3ee6541ac597261acee8558cc4fc4411a4fb6",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਚਰਪਟ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਸਰਬੰ ਹੰਤਾ ॥ ਸਰਬ ਗੰਤਾ ॥ ਸਰਬੰ ਖਿਆਤਾ ॥ ਸਰਬੰ ਗਿਆਤਾ ॥੧੪੨॥"
+    },
+    {
+      "chhand": 143,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "18248a56daa55e2d17841960457cfc9e245ba98a95f848bcbbb8e5845bc5f0c1",
+      "secondSiteChhandSourceSha256": "18248a56daa55e2d17841960457cfc9e245ba98a95f848bcbbb8e5845bc5f0c1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "18248a56daa55e2d17841960457cfc9e245ba98a95f848bcbbb8e5845bc5f0c1",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 144,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2e579df19fd5e354ac7076b4c6732e139b46f0990a6e48656489660fcc158cf7",
+      "secondSiteChhandSourceSha256": "2e579df19fd5e354ac7076b4c6732e139b46f0990a6e48656489660fcc158cf7",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2e579df19fd5e354ac7076b4c6732e139b46f0990a6e48656489660fcc158cf7",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 145,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "35975a6a84ee1b0d6c8f30a8dc55078120eeee50ca13e6bb997558a954db8fc7",
+      "secondSiteChhandSourceSha256": "1f88df00ee7184baa7ae69fa76263d7f8df2f09465fced6f13cdc3b778424446",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1f88df00ee7184baa7ae69fa76263d7f8df2f09465fced6f13cdc3b778424446",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਰਸਾਵਲ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਨਮੋ ਨਰਕ ਨਾਸੇ ॥ ਸਦੈਵੰ ਪ੍ਰਕਾਸੇ ॥ ਅਨੰਗੰ ਸਰੂਪੇ ॥ ਅਭੰਗੰ ਬਿਭੂਤੇ ॥੧੪੫॥"
+    },
+    {
+      "chhand": 146,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "568ea3514a3f855250aea34149de8bbfe0e83d319892ec6d1257430091f61aeb",
+      "secondSiteChhandSourceSha256": "568ea3514a3f855250aea34149de8bbfe0e83d319892ec6d1257430091f61aeb",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "568ea3514a3f855250aea34149de8bbfe0e83d319892ec6d1257430091f61aeb",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 147,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cb6dcdbabd3f40dd64938b547560c98bfa4ebc07035cb85f24097d8d28f2c709",
+      "secondSiteChhandSourceSha256": "cb6dcdbabd3f40dd64938b547560c98bfa4ebc07035cb85f24097d8d28f2c709",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "cb6dcdbabd3f40dd64938b547560c98bfa4ebc07035cb85f24097d8d28f2c709",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 148,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "5cb947e7b609e93605bde723d7b55616f23dde9f26f93b76bfabeb57bb3567c5",
+      "secondSiteChhandSourceSha256": "fa7e4219c097cde45014b453cab9cd61a2225624298e109c295bc2d45e3976d2",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "fa7e4219c097cde45014b453cab9cd61a2225624298e109c295bc2d45e3976d2",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨ ਪੋਤ੍ਰੈ ਨ ਪੁਤ੍ਰੈ॥ ਨ ਸਤ੍ਰੈ ਨ ਮਿਤ੍ਰੈ ॥ ਨ ਤਾਤੈ ਨ ਮਾਤੈ ॥ ਨ ਜਾਤੈ ਨ ਪਾਤੈ ॥੧੪੮॥"
+    },
+    {
+      "chhand": 149,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cb3fc76f3fe5d37438fda2fcc1a4ed71006cb29ade8feb91d1805fa9a236558d",
+      "secondSiteChhandSourceSha256": "cb3fc76f3fe5d37438fda2fcc1a4ed71006cb29ade8feb91d1805fa9a236558d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "cb3fc76f3fe5d37438fda2fcc1a4ed71006cb29ade8feb91d1805fa9a236558d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 150,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "156e74adb5757abdf90e66f13f1d5bfe28f2e0a93deda599af2940cc50f3ef71",
+      "secondSiteChhandSourceSha256": "18a6fcb87418cb38b927491d62c5c19cdc1987b6eccd150b723efd73fc088cf4",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "18a6fcb87418cb38b927491d62c5c19cdc1987b6eccd150b723efd73fc088cf4",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਭਗਵਤੀ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਕਿ ਜਾਹਿਰ ਜਹੂਰ ਹੈਂ ॥ ਕਿ ਹਾਜਿਰ ਹਜੂਰ ਹੈਂ ॥ ਹਮੇਸੁਲ ਸਲਾਮ ਹੈਂ ॥ ਸਮਸਤੁਲ ਕਲਾਮ ਹੈਂ ॥੧੫੦॥"
+    },
+    {
+      "chhand": 151,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "9f0e48a2a4b5fa4c2d25e0d4e94b5de72cc95764febd8b9b33d0a1a8ad9cb159",
+      "secondSiteChhandSourceSha256": "1bf7635df4c39a0e59b4106221cc6c7fa24c24c4d8c4b4dc554ff68e9206ff71",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1bf7635df4c39a0e59b4106221cc6c7fa24c24c4d8c4b4dc554ff68e9206ff71",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਸਾਹਿਬ ਦਿਮਾਗ ਹੈਂ ॥ ਕਿ ਹੁਸਨਲ ਚਰਾਗ ਹੈਂ ॥ ਕਿ ਕਾਮਲ ਕਰੀਮ ਹੈਂ ॥ ਕਿ ਰਾਜਕ ਰਹੀਮ ਹੈਂ ॥੧੫੧॥"
+    },
+    {
+      "chhand": 152,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7989ad0ce74cc62f48a0cd59e1bce074bc9415a5241989a0e8a53ea189ce6241",
+      "secondSiteChhandSourceSha256": "af78b10581da9efcd8c856573f49ae516cd69c9e899b3dc9f3fd0c36b2715d6e",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "af78b10581da9efcd8c856573f49ae516cd69c9e899b3dc9f3fd0c36b2715d6e",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਰੋਜੀ ਦਿਹਿੰਦ ਹੈਂ ॥ ਕਿ ਰਾਜਕ ਰਹਿੰਦ ਹੈਂ ॥ ਕਰੀਮੁਲ ਕਮਾਲ ਹੈਂ ॥ ਕਿ ਹੁਸਨਲ ਜਮਾਲ ਹੈਂ ॥੧੫੨॥"
+    },
+    {
+      "chhand": 153,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "c462ed836623594c7e2cf79f8788556af380b85db63967f261d1ea57390ecd28",
+      "secondSiteChhandSourceSha256": "0013a8f364920a2170ff0d25b795034c851558fa7dd2f6b9fb85ccdfbf6d513f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "0013a8f364920a2170ff0d25b795034c851558fa7dd2f6b9fb85ccdfbf6d513f",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਗ਼ਨੀਮੁਲ ਖ਼ਿਰਾਜ ਹੈਂ ॥ ਗ਼ਰੀਬੁਲ ਨਿਵਾਜ ਹੈਂ ॥ ਹਰਫਿੁਲ ਸਿਕੰਨ ਹੈਂ ॥ ਹਿਰਾਸੁਲ ਫਿਕੰਨ ਹੈਂ ॥੧੫੩॥"
+    },
+    {
+      "chhand": 154,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "027f52c40165a1a11db2e1beb8b86f51940c2daaa632f8b41e8c860bdfb9576a",
+      "secondSiteChhandSourceSha256": "027f52c40165a1a11db2e1beb8b86f51940c2daaa632f8b41e8c860bdfb9576a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "027f52c40165a1a11db2e1beb8b86f51940c2daaa632f8b41e8c860bdfb9576a",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 155,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "827391876c0eef6c53146a5eb2a6adb71e9d84bafe83e2c1df58fcf3b5d126ba",
+      "secondSiteChhandSourceSha256": "827391876c0eef6c53146a5eb2a6adb71e9d84bafe83e2c1df58fcf3b5d126ba",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "827391876c0eef6c53146a5eb2a6adb71e9d84bafe83e2c1df58fcf3b5d126ba",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 156,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "5fd19277652d2c0064aa15b27723bfbed365b9c3dad3c6f5bf5eb764a6c9a76f",
+      "secondSiteChhandSourceSha256": "5fd19277652d2c0064aa15b27723bfbed365b9c3dad3c6f5bf5eb764a6c9a76f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "5fd19277652d2c0064aa15b27723bfbed365b9c3dad3c6f5bf5eb764a6c9a76f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 157,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "c1a72cfd7d4d360ff3c8664fdd1e46f3336d3d8a73f5e7aaf397f7f3290f574d",
+      "secondSiteChhandSourceSha256": "c1a72cfd7d4d360ff3c8664fdd1e46f3336d3d8a73f5e7aaf397f7f3290f574d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "c1a72cfd7d4d360ff3c8664fdd1e46f3336d3d8a73f5e7aaf397f7f3290f574d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 158,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "de3a011a82d9ef0a5b8e64569d0aec461d1951f2bbddef44ffe6e514aa7a8a8c",
+      "secondSiteChhandSourceSha256": "f8ed93be9c2b4c9b9e3aa30c97b6a34a3a8aec76c55a38c254060729209e7b35",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f8ed93be9c2b4c9b9e3aa30c97b6a34a3a8aec76c55a38c254060729209e7b35",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਜਮੀਨੁਲ ਜਮਾਂ ਹੈਂ ॥ ਅਮੀਕੁਲ ਇਮਾਂ ਹੈਂ ॥ ਕਰੀਮੁਲ ਕਮਾਲ ਹੈਂ ॥ ਕਿ ਜੁਰਅਤਿ ਜਮਾਲ ਹੈਂ ॥੧੫੮॥"
+    },
+    {
+      "chhand": 159,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2e1f6888850748cc4c9e85c39fbf60531c63537313cef097370211aeb1e657d4",
+      "secondSiteChhandSourceSha256": "97389eaa6de3e5fcf3afadadad56899dcb9803ace3661e39255b40bbedcaf4ac",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "97389eaa6de3e5fcf3afadadad56899dcb9803ace3661e39255b40bbedcaf4ac",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਕਿ ਅਚਲੰ ਪ੍ਰਕਾਸ ਹੈਂ ॥ ਕਿ ਅਮਿਤੋ ਸੁਬਾਸ ਹੈਂ ॥ ਕਿ ਅਜਬ ਸਰੂਪ ਹੈਂ ॥ ਕਿ ਅਮਿਤੋ ਬਿਭੁੂਤ ਹੈਂ ॥੧੫੯॥"
+    },
+    {
+      "chhand": 160,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "6fc1070f14a63c3157b18250107c1cf0586f346c60b3d0203440033d6de395d9",
+      "secondSiteChhandSourceSha256": "6fc1070f14a63c3157b18250107c1cf0586f346c60b3d0203440033d6de395d9",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6fc1070f14a63c3157b18250107c1cf0586f346c60b3d0203440033d6de395d9",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 161,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "d71bbc79f27ade69f94846c34882e41a745f4dc935191359f5ca35b8d563a74b",
+      "secondSiteChhandSourceSha256": "2abc0db11e50e6e6a5865888ecc7878ce1a322fa59cef77bc2152bc14a793f33",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "2abc0db11e50e6e6a5865888ecc7878ce1a322fa59cef77bc2152bc14a793f33",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਮਧੁਭਾਰ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਮੁਨਿ ਮਨਿ ਪ੍ਰਨਾਮ ॥ ਗੁਨਿ ਗਨ ਮੁਦਾਮ ॥ ਅਰਿ ਬਰ ਅਗੰਜ ॥ ਹਰਿ ਨਰ ਪ੍ਰਭੰਜ ॥੧੬੧॥"
+    },
+    {
+      "chhand": 162,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "450721b3f76ce47d03772ad5a2180216b2dde735f892bd7fee613249a7fca90d",
+      "secondSiteChhandSourceSha256": "450721b3f76ce47d03772ad5a2180216b2dde735f892bd7fee613249a7fca90d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "450721b3f76ce47d03772ad5a2180216b2dde735f892bd7fee613249a7fca90d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 163,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "bdd7c97452dd1d42dc2ec6f50be06c8930e86d331ef4b9116e1fecfe96e12df7",
+      "secondSiteChhandSourceSha256": "bdd7c97452dd1d42dc2ec6f50be06c8930e86d331ef4b9116e1fecfe96e12df7",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "bdd7c97452dd1d42dc2ec6f50be06c8930e86d331ef4b9116e1fecfe96e12df7",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 164,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2421a0fd0898fd7b829ba81a6f181c751d3d7c700defaf12e33035b3fbb6f2b2",
+      "secondSiteChhandSourceSha256": "1bc9de92a642b6771be44bcd0093732f1c84dfdbe6a18245095aba28199b4386",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1bc9de92a642b6771be44bcd0093732f1c84dfdbe6a18245095aba28199b4386",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਨਿਛੱਜ ਅੰਗ ॥ ਆਸਨ ਅਭੰਗ ॥ ਉਪਮਾ ਅਪਾਰ ॥ ਗਤਿ ਮਿਤਿ ਉਦਾਰ ॥੧੬੪॥"
+    },
+    {
+      "chhand": 165,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "3422bd0eeb49146f7eaa0475ae54d642a5a462ce3e85102dc97dedce68b106ad",
+      "secondSiteChhandSourceSha256": "3422bd0eeb49146f7eaa0475ae54d642a5a462ce3e85102dc97dedce68b106ad",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "3422bd0eeb49146f7eaa0475ae54d642a5a462ce3e85102dc97dedce68b106ad",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 166,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4ddcb9401d655dcb90cbf9da16bee667ae18c8d93bd5520e6df845ca21f21b3c",
+      "secondSiteChhandSourceSha256": "4ddcb9401d655dcb90cbf9da16bee667ae18c8d93bd5520e6df845ca21f21b3c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "4ddcb9401d655dcb90cbf9da16bee667ae18c8d93bd5520e6df845ca21f21b3c",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 167,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "643ad482ca08082699e32725e2e309d0f4cd687d9ef84998a9da327910418ef1",
+      "secondSiteChhandSourceSha256": "643ad482ca08082699e32725e2e309d0f4cd687d9ef84998a9da327910418ef1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "643ad482ca08082699e32725e2e309d0f4cd687d9ef84998a9da327910418ef1",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 168,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4523bff44c826c3a542e1610e703eb4ea5ce8e79c6daf96d1c9037f0cd3e1600",
+      "secondSiteChhandSourceSha256": "f2f8380b84e8535a5557ac286483ef4f71f9a822671bbbc7533988dafc15e080",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "f2f8380b84e8535a5557ac286483ef4f71f9a822671bbbc7533988dafc15e080",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਘਰ ਘਰਿ ਪ੍ਰਨਾਮ ॥ ਚਿਤ ਚਰਨ ਨਾਮ ॥ ਅਨਿਛੱਜ ਗਾਤ ॥ ਆਜਿਜ ਨ ਬਾਤ ॥੧੬੮॥"
+    },
+    {
+      "chhand": 169,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2e54f77911a379972717c226474e3803ff7b6e3c71e79e5f32f38aadd51e381d",
+      "secondSiteChhandSourceSha256": "9a95fb5c0c204791a07ba97a361360b4f01540ce8835f070cdd00179de6f28f1",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9a95fb5c0c204791a07ba97a361360b4f01540ce8835f070cdd00179de6f28f1",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਨਝੰਝ ਗਾਤ ॥ ਅਨਰੰਜ ਬਾਤ ॥ ਅਨਟੁਟ ਤੰਡਾਰ ॥ ਅਨਠਟ ਅਪਾਰ ॥੧੬੯॥"
+    },
+    {
+      "chhand": 170,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a209936c1b021357fafd360b8fd2ffdb421ea5890603d5aa796dcb5c9213e519",
+      "secondSiteChhandSourceSha256": "a209936c1b021357fafd360b8fd2ffdb421ea5890603d5aa796dcb5c9213e519",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a209936c1b021357fafd360b8fd2ffdb421ea5890603d5aa796dcb5c9213e519",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 171,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "2e2fafe0b2040886774253f1de3cc8309bd162e7560b4faf92ba58057a5f0d65",
+      "secondSiteChhandSourceSha256": "1a0789310ccdb0a6f743d0fa3eb19f6cf687a93dd67e4090ffa42a038988afe5",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1a0789310ccdb0a6f743d0fa3eb19f6cf687a93dd67e4090ffa42a038988afe5",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਹਰਿ ਬੋਲ ਮਨਾ ਛੰਦ ॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਕਰੁਣਾਲਯ ਹੈਂ ॥ ਅਰਿ ਘਾਲਯ ਹੈਂ ॥ ਖਲ ਖੰਡਨ ਹੈਂ ॥ ਮਹਿ ਮੰਡਨ ਹੈਂ ॥੧੭੧॥"
+    },
+    {
+      "chhand": 172,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "479657b0e74dab376f9386f9fa27122e26afe4bd1e7e112332aa26a319d50789",
+      "secondSiteChhandSourceSha256": "479657b0e74dab376f9386f9fa27122e26afe4bd1e7e112332aa26a319d50789",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "479657b0e74dab376f9386f9fa27122e26afe4bd1e7e112332aa26a319d50789",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 173,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "658fd61db66d430db82f8f6b6b67f149ce03ece6b6820f2bef7ad62d876e64ec",
+      "secondSiteChhandSourceSha256": "658fd61db66d430db82f8f6b6b67f149ce03ece6b6820f2bef7ad62d876e64ec",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "658fd61db66d430db82f8f6b6b67f149ce03ece6b6820f2bef7ad62d876e64ec",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 174,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "665606d86710e313e54c56095f8d1ec6e486c02b1fb50ab08fba4b23a37d273d",
+      "secondSiteChhandSourceSha256": "665606d86710e313e54c56095f8d1ec6e486c02b1fb50ab08fba4b23a37d273d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "665606d86710e313e54c56095f8d1ec6e486c02b1fb50ab08fba4b23a37d273d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 175,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "044e6bc2846bc9e9511afdb018e0ee0045d5b5ba97d26e5eb167c2aee50ec3e5",
+      "secondSiteChhandSourceSha256": "044e6bc2846bc9e9511afdb018e0ee0045d5b5ba97d26e5eb167c2aee50ec3e5",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "044e6bc2846bc9e9511afdb018e0ee0045d5b5ba97d26e5eb167c2aee50ec3e5",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 176,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7d1475cf8c81e4a0253f222fc9bdeeceaf694d1398dab3160d6aef460285de2c",
+      "secondSiteChhandSourceSha256": "7d1475cf8c81e4a0253f222fc9bdeeceaf694d1398dab3160d6aef460285de2c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7d1475cf8c81e4a0253f222fc9bdeeceaf694d1398dab3160d6aef460285de2c",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 177,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "e785251b64b3f81a83edef7624b0bfbc15c3dd8db5823f7150a6b9ab622f2c05",
+      "secondSiteChhandSourceSha256": "3f4a9fbf04c63f253f595d7694fe704e3a944f0a6dc5dcb5b597f3ec10acfe1f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "3f4a9fbf04c63f253f595d7694fe704e3a944f0a6dc5dcb5b597f3ec10acfe1f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 178,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "24383fae9ff9f4a583f4caae7362046343f0eeda6b0286831b9128ae90aac693",
+      "secondSiteChhandSourceSha256": "1486b024f4347180d038066316ff61643f6665ca585fbdd06a02bd226cdec855",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "1486b024f4347180d038066316ff61643f6665ca585fbdd06a02bd226cdec855",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਮ੍ਰਿਤਾਮ੍ਰਿਤ ਹੈਂ ॥ ਕਰੁਣਾਕ੍ਰਿਤ ਹੈਂ ॥ ਅਕ੍ਰਿਤਾਕ੍ਰਤ ਹੈਂ ॥ ਧਰਣੀਧ੍ਰਿਤ ਹੈਂ ॥੧੭੮॥"
+    },
+    {
+      "chhand": 179,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "cd5d165e7dc7f63d7d0eab3e66d2545b03c64064befbae7b86ec53dc862fd60c",
+      "secondSiteChhandSourceSha256": "fa40bee8150913aa1d136aa0ba0f64fb5bc4dbb0b8b2f1ad0237e7318b9077bb",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "fa40bee8150913aa1d136aa0ba0f64fb5bc4dbb0b8b2f1ad0237e7318b9077bb",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਮ੍ਰਿਤੇਸ੍ਵਰ ਹੈਂ ॥ ਪਰਮੇਸ੍ਵਰ ਹੈਂ ॥ ਅਕ੍ਰਿਤਾਕ੍ਰਿਤ ਹੈਂ ॥ ਅਮ੍ਰਿਤਾਮ੍ਰਿਤ ਹੈਂ ॥੧੭੯॥"
+    },
+    {
+      "chhand": 180,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "12a95ded0be202ddbd62e41d305044d97cbabe93ce2e08e73a1d6a146e54e7e0",
+      "secondSiteChhandSourceSha256": "44e754e95b4f36495e9f561edfe9342a1ea802095112a6e92f706862f3699040",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "44e754e95b4f36495e9f561edfe9342a1ea802095112a6e92f706862f3699040",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 181,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "16d6a3739c8755d1300168f59b40fe574de98558185c2b029c62f0b27c623118",
+      "secondSiteChhandSourceSha256": "16d6a3739c8755d1300168f59b40fe574de98558185c2b029c62f0b27c623118",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "16d6a3739c8755d1300168f59b40fe574de98558185c2b029c62f0b27c623118",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 182,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "87bb8d9c0bf469d30cc803d09ef82e93170ca3a2ce5af4f6223947d4d724643d",
+      "secondSiteChhandSourceSha256": "87bb8d9c0bf469d30cc803d09ef82e93170ca3a2ce5af4f6223947d4d724643d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "87bb8d9c0bf469d30cc803d09ef82e93170ca3a2ce5af4f6223947d4d724643d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 183,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "99d3a95da115ffb5cc6c13ec889f8802f1ee77e973ccfb5d441011de3f0e2f9a",
+      "secondSiteChhandSourceSha256": "7b24fa511de000299bb494adbbc3574e636fa7678386c39ab7dfabfee0be528b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "7b24fa511de000299bb494adbbc3574e636fa7678386c39ab7dfabfee0be528b",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 184,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "58e9659e39f2bab847909541a21dfa959d02c4419a065fbbccef5b2d11debf5b",
+      "secondSiteChhandSourceSha256": "58e9659e39f2bab847909541a21dfa959d02c4419a065fbbccef5b2d11debf5b",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "58e9659e39f2bab847909541a21dfa959d02c4419a065fbbccef5b2d11debf5b",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 185,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "f9ee611ccaff7f4dd5a676574096b89286e4b3d75398da7f829e4b25b6e9f0b8",
+      "secondSiteChhandSourceSha256": "ace08ebd9505f36fcd87765468c49ed5e8f4157b72e3758efde7092a2c2a253a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "b717b25d5de1266b1a13e91a2a5d731a662922bda406cb919523224b447230cb",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "a139714edb3e28ffba635f33da8cf14c9d43eadc729480656e119fa18de1014c"
+      ],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥ ਨਮੋ ਸੂਰਜ ਸੁਰਜੇ ਨਮੋ ਚੰਦ੍ਰ ਚੰਦ੍ਰੇ ॥ ਨਮੋ ਰਾਜ ਰਾਜੇ ਨਮੋ ਇੰਦ੍ਰ ਇੰਦ੍ਰੇ॥ ਨਮੋ ਅੰਧਕਾਰੇ ਨਮੋ ਤੇਜ ਤੇਜੇ ॥ ਨਮੋ ਬ੍ਰਿੰਦ ਬ੍ਰਿੰਦੇ ਨਮੋ ਬੀਜ ਬੀਜੇ ॥੧੮੫॥"
+    },
+    {
+      "chhand": 186,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "1b5c30a76edc668495be2fffd3e64f9c20db2405587418f46ef311345fcd5c4e",
+      "secondSiteChhandSourceSha256": "8b366092b41549ea041d3b6a7db727eff36e971417ab339424b534a96b765bda",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "8b366092b41549ea041d3b6a7db727eff36e971417ab339424b534a96b765bda",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਰਾਜਸੰ ਤਾਮਸੰ ਸਾਂਤਿ ਰੂਪੇ ॥ ਨਮੋ ਪਰਮ ਤੱਤੰ ਅਤਤੰ ਸਰੂਪੇ ॥ ਨਮੋ ਜੋਗ ਜੋਗੇ ਨਮੋ ਗਿਆਨ ਗਿਆਨੇ ॥ ਨਮੋ ਮੰਤ੍ਰ ਮੰਤ੍ਰੇ ਨਮੋ ਧਿਆਨ ਧਿਆਨੇ ॥੧੮੬॥"
+    },
+    {
+      "chhand": 187,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "10e2cd072a4925af629545752e5f8c8c5a5aa79fc56b77b113e27cfc62025612",
+      "secondSiteChhandSourceSha256": "e46ceea0e76947df6e7e50ff828ba5c52bffc4068f30f900a1386bb6dae16ff3",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e46ceea0e76947df6e7e50ff828ba5c52bffc4068f30f900a1386bb6dae16ff3",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਨਮੋ ਜੁਧ ਜੁਧੇ ਨਮੋ ਗਿਆਨ ਗਿਆਨੇ ॥ ਨਮੋ ਭੋਜ ਭੋਜੇ ਨਮੋ ਪਾਨ ਪਾਨੇ ॥ ਨਮੋ ਕਲਹ ਕਰਤਾ ਨਮੋ ਸਾਂਤਿ ਰੂਪੇ ॥ ਨਮੋ ਇੰਦ੍ਰ ਇੰਦ੍ਰੇ ਅਨਾਦੰ ਬਿਭੂਤੇ ॥੧੮੭॥"
+    },
+    {
+      "chhand": 188,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "4fc68b4cba8f577030a9620faf824972eeb9e6171d132540ca9b1cef05079696",
+      "secondSiteChhandSourceSha256": "4fc68b4cba8f577030a9620faf824972eeb9e6171d132540ca9b1cef05079696",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "4fc68b4cba8f577030a9620faf824972eeb9e6171d132540ca9b1cef05079696",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 189,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "fe08b9c55fec2e99d9128f65076d34b733c9a782f2812a52c2794b5fbd3a0177",
+      "secondSiteChhandSourceSha256": "f683d50eaeed5e7935f73a49448bcc57cca9e008bbc6f963e6184a0243d10797",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "fe08b9c55fec2e99d9128f65076d34b733c9a782f2812a52c2794b5fbd3a0177",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "3d83fb4d7d8ced29225edb025eaf9e16e4febfe946e4ae3fc08d755e7a0d0cfe"
+      ],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 190,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "a61c96a8256f2efcf6ebae25f0b11868e87676dd3cb3b7d84474eb4e1664c76f",
+      "secondSiteChhandSourceSha256": "a61c96a8256f2efcf6ebae25f0b11868e87676dd3cb3b7d84474eb4e1664c76f",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a61c96a8256f2efcf6ebae25f0b11868e87676dd3cb3b7d84474eb4e1664c76f",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 191,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "3bcc68d302cdadf600bec8b65c09c8c5e76ff88420a255894b247e94825475f5",
+      "secondSiteChhandSourceSha256": "aaa3d0f16052a4fb9c15cfed813423423dcdea434a58e0c8ff00f1b15be61c95",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "aaa3d0f16052a4fb9c15cfed813423423dcdea434a58e0c8ff00f1b15be61c95",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਅਗੰਜ ॥ ਅਭੰਜ ॥ ਅਲਖ ॥ ਅਭਖ ॥੧੯੧॥"
+    },
+    {
+      "chhand": 192,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "78013f8aa68941ebe962bc9a70578ea0d86f10ebb9e24bcb354d6ebb562519de",
+      "secondSiteChhandSourceSha256": "78013f8aa68941ebe962bc9a70578ea0d86f10ebb9e24bcb354d6ebb562519de",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "78013f8aa68941ebe962bc9a70578ea0d86f10ebb9e24bcb354d6ebb562519de",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 193,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "ee9ffcf2978d278a1b8bda63c5759da74d8dc273846ac29701b8767ca355a86a",
+      "secondSiteChhandSourceSha256": "ee9ffcf2978d278a1b8bda63c5759da74d8dc273846ac29701b8767ca355a86a",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "ee9ffcf2978d278a1b8bda63c5759da74d8dc273846ac29701b8767ca355a86a",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 194,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "07b1905c9c281095f637cbd27776cff7632449f62c8e45c0be672e50d348c166",
+      "secondSiteChhandSourceSha256": "a7c911415748efb0b73e92e3f336854136e8a277cd85f11a2a41de2873aae57c",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "a7c911415748efb0b73e92e3f336854136e8a277cd85f11a2a41de2873aae57c",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 195,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "e9e1e7edf95b3b14e637ef129ee6ccf8ffc6ef35c87d8d1584930a38c4c6fab3",
+      "secondSiteChhandSourceSha256": "e9e1e7edf95b3b14e637ef129ee6ccf8ffc6ef35c87d8d1584930a38c4c6fab3",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "e9e1e7edf95b3b14e637ef129ee6ccf8ffc6ef35c87d8d1584930a38c4c6fab3",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 196,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "b988adcb4e1510a54eaa562872c328a30e561547d34bd58877ae33ef57f5c5bd",
+      "secondSiteChhandSourceSha256": "b988adcb4e1510a54eaa562872c328a30e561547d34bd58877ae33ef57f5c5bd",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "b988adcb4e1510a54eaa562872c328a30e561547d34bd58877ae33ef57f5c5bd",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    },
+    {
+      "chhand": 197,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "5739c7e3f042edf8569e292501b0bf9f19387e241b27e264ffffe361ef1db768",
+      "secondSiteChhandSourceSha256": "210a6605c163b9bacd469085096ed81a78c826c410176f5b1388f78e45626690",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "6788e9708e3bbdb1d592f98e53992056244cdcdcd14eb4ee63fa5356a5b8f93e",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [
+        "a139714edb3e28ffba635f33da8cf14c9d43eadc729480656e119fa18de1014c"
+      ],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥ ਨਮਸਤੁਲ ਪ੍ਰਣਾਮੇ ਸਮਸਤੁਲ ਪ੍ਰਣਾਸੇ ॥ ਅਗੰਜੁਲ ਅਨਾਮੇ ਸਮਸਤੁਲ ਨਿਵਾਸੇ ॥ ਨ੍ਰਿਕਾਮੰ ਬਿਭੂਤੇ ॥ ਸਮਸਤੁਲ ਸਰੂਪੇ ॥ ਕੁਕਰਮੰ ਪ੍ਰਣਾਸੀ ਸੁਧਰਮੰ ਬਿਭੂਤੇ ॥੧੯੭॥"
+    },
+    {
+      "chhand": 198,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "7194a6fe8ea5f42606aafaf61fa4645117cd241e7adac62893eafe0e1ed45966",
+      "secondSiteChhandSourceSha256": "9fa49f0a2baca70abf5b84351a1675c35853a6d998f5d0cafb6735282aa87696",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "9fa49f0a2baca70abf5b84351a1675c35853a6d998f5d0cafb6735282aa87696",
+      "identicalUnicodeIgnoringWhitespace": false,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": true,
+      "originalDigitalComparatorVersion": "ਸਦਾ ਸੱਚਿਦਾਨੰਦ ਸੱਤ੍ਰੰ ਪ੍ਰਣਾਸੀ ॥ ਕਰੀਮੁਲ ਕੁਨਿੰਦਾ ਸਮਸਤੁਲ ਨਿਵਾਸੀ ॥ ਅਜਾਇਬ ਬਿਭੂਤੇ ਗਜਾਇਬ ਗਨੀਮੇ ॥ ਹਰੀਅੰ ਕਰੀਅੰ ਕਰੀਮੁਲ ਰਹੀਮੇ॥੧੯੮॥"
+    },
+    {
+      "chhand": 199,
+      "originalLines": 4,
+      "primaryChhandSourceSha256": "86f9c5c48d9c886904c1020e44d5659867729c949a7ec7567443416fc4abc80d",
+      "secondSiteChhandSourceSha256": "86f9c5c48d9c886904c1020e44d5659867729c949a7ec7567443416fc4abc80d",
+      "secondSiteTextWithoutExactHeadingPrefixSha256": "86f9c5c48d9c886904c1020e44d5659867729c949a7ec7567443416fc4abc80d",
+      "identicalUnicodeIgnoringWhitespace": true,
+      "exactHeadingPrefixesDroppedForComparisonOnly": [],
+      "requiresTextEditionAdjudication": false
+    }
+  ],
+  "originalCandidateIncludesNoModernTranslation": true,
+  "printedMetreHeadingsIndependentlyReviewed": false,
+  "qualifiedSikhPunjabiReview": "PENDING",
+  "physicalReferenceEditionCollation": "PENDING",
+  "rightsAndReuseApproval": "PENDING",
+  "publishedReaderReady": false,
+  "limitations": [
+    "67 textual or heading-layout chhand comparison results remain unresolved; web sites are not independent authoritative manuscripts.",
+    "Full original digital source is 782 HTML verse lines across 199 numbered chhands, plus 21 additional meter heading candidate rows and six preface rows.",
+    "No HTML layout, spelling, metre heading or meter-specific pronunciation was silently repaired. Source is not approved for family paath.",
+    "Modern translations, audio, browser notes, licenses and user personal data were not imported."
+  ]
+}

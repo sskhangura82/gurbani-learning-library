@@ -22,7 +22,7 @@ body{background:var(--qa-bg);color:var(--qa-ink);margin:0;font-family:-apple-sys
 .qa-dock button,.qa-dock select{min-height:44px;padding:6px 10px;background:#fffdfa;color:var(--qa-ink);border:1px solid var(--qa-line);border-radius:8px}
 .qa-dock>button{min-width:61px}.qa-dock #qa-play{min-width:90px}
 .qa-location{flex:1 1 90px;font-size:12px;text-align:center;color:var(--qa-muted)}
-.qa-dock label{font-size:12px;display:flex;gap:4px;align-items:center}
+.qa-dock label{font-size:12px;display:flex;gap:4px;align-items:center}.qa-dock #qa-unit-picker{max-width:95px;min-width:80px}.qa-meter{font:400 19px/1.5 "Gurmukhi MN","Noto Serif Gurmukhi",serif;text-align:center;color:#526c5b;border-bottom:1px dotted #cbbfad;padding:4px;margin:2px auto 12px}.qa-quarantine{font:600 12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff1e8;border:2px solid #a06841;color:#703e25;border-radius:10px;padding:12px;max-width:540px;margin:15px auto;text-align:center}
 .qa-footer{max-width:740px;margin:20px auto;padding:14px 20px 100px;color:var(--qa-muted);font-size:12px}
 .qa-footer button{min-height:44px;border:1px solid var(--qa-line);border-radius:8px;margin:4px 8px 4px 0}
 button:focus-visible,select:focus-visible{outline:3px solid #355a4a;outline-offset:3px}

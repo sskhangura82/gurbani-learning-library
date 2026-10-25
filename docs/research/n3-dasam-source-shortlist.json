@@ -3,7 +3,7 @@
   "project": "GLP-001",
   "lane": "N3-DASAM-ORIGINAL-SOURCE-CANDIDATE-SELECTION",
   "capturedDate": "2026-10-25",
-  "status": "PUBLIC_LIBRARY_INDEXES_PLUS_SAVAIYE_DIGITAL_CANDIDATE_NOT_EDITION_VERIFIED",
+  "status": "PUBLIC_LIBRARY_INDEXES_PLUS_JAAP_AND_SAVAIYE_DIGITAL_CANDIDATES_NOT_EDITION_VERIFIED",
   "publisherFramework": {
     "name": "SGPC Sikh Rehat Maryada, Article IV",
     "url": "https://sgpc.net/sikh-rehat-maryada-in-english/",
@@ -105,6 +105,16 @@
         "fullOriginalTextEquivalence": "UNVERIFIED",
         "originalReaderSourceModelCreated": false,
         "editorialApproval": false
+      },
+      "originalDigitalResearchModel": {
+        "modelFile": "docs/research/n3-dasam-jaap/jaap-199-original-candidate.json",
+        "comparisonFile": "docs/research/n3-dasam-jaap/jaap-text-discrepancy-ledger.json",
+        "completeNumberedChhands": 199,
+        "originalDigitalVerseRows": 782,
+        "sourceMeterHeadingsSeparatelyPreserved": 21,
+        "discrepantChhandGroups": 67,
+        "familyRuntimeImported": false,
+        "humanEditionApproval": false
       }
     },
     {
