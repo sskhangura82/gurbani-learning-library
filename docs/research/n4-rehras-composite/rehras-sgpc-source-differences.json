@@ -1,0 +1,174 @@
+{
+  "capturedAtUtc": "2026-10-25T20:33:54.152879+00:00",
+  "status": "SGPC_SIX_SECTION_REHRAS_DIGITAL_SOURCE_CANDIDATE_NOT_EDITION_APPROVED",
+  "originalReference": "https://sgpc.net/wp-content/uploads/2025/06/Sikh-Rehat-Maryada-English-n.pdf",
+  "digitalPrimary": {
+    "url": "https://www.discoversikhism.com/learn_gurbani/learn_rehras_sahib.html",
+    "httpStatus": 200,
+    "bytes": 93478,
+    "webPageSha256": "d0f2105a11c2b79adf5c3947311fa973f201febe4d9b42553d6445833fdb4fef",
+    "extractedOriginalParagraphs": 52
+  },
+  "digitalComparator": {
+    "url": "https://gurdwaras.com/nitnem/rehras-sahib",
+    "httpStatus": 200,
+    "bytes": 665035,
+    "webPageSha256": "7c8dd4d771c59a56ba361550c3b77a5edc61f454543ebaf3eedcc7d59072fe95",
+    "extractedOriginalParagraphs": 531
+  },
+  "componentOrder": [
+    "sggs-nine",
+    "chaupai-25",
+    "savaiya-pae-gahe",
+    "dohira-sagal-duar",
+    "anand-selected",
+    "mundawani-slok"
+  ],
+  "componentSourceFamily": [
+    "sggs",
+    "dasam",
+    "dasam",
+    "dasam",
+    "sggs",
+    "sggs"
+  ],
+  "sourceUnitCounts": [
+    9,
+    25,
+    1,
+    1,
+    6,
+    2
+  ],
+  "originalSourceLineRecords": 159,
+  "sggsNineHymnsWebParagraphGroups": [
+    [
+      3,
+      9
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      15,
+      17
+    ],
+    [
+      17,
+      22
+    ],
+    [
+      22,
+      24
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      25,
+      26
+    ]
+  ],
+  "chaupaiSourcePositiveExactSubstring": true,
+  "rehrasSelectedAnandPauriTextComparisons": [
+    {
+      "sourcePauri": 1,
+      "primaryRehrasWebHtmlParagraph": 41,
+      "modelSourceLineCount": 5,
+      "modelExactSubstringInsideRehrasPage": true,
+      "fullBlockEquality": false,
+      "requiresFurtherEditorialReview": true
+    },
+    {
+      "sourcePauri": 2,
+      "primaryRehrasWebHtmlParagraph": 42,
+      "modelSourceLineCount": 5,
+      "modelExactSubstringInsideRehrasPage": true,
+      "fullBlockEquality": true,
+      "requiresFurtherEditorialReview": false
+    },
+    {
+      "sourcePauri": 3,
+      "primaryRehrasWebHtmlParagraph": 43,
+      "modelSourceLineCount": 5,
+      "modelExactSubstringInsideRehrasPage": true,
+      "fullBlockEquality": true,
+      "requiresFurtherEditorialReview": false
+    },
+    {
+      "sourcePauri": 4,
+      "primaryRehrasWebHtmlParagraph": 44,
+      "modelSourceLineCount": 6,
+      "modelExactSubstringInsideRehrasPage": true,
+      "fullBlockEquality": true,
+      "requiresFurtherEditorialReview": false
+    },
+    {
+      "sourcePauri": 5,
+      "primaryRehrasWebHtmlParagraph": 45,
+      "modelSourceLineCount": 5,
+      "modelExactSubstringInsideRehrasPage": true,
+      "fullBlockEquality": true,
+      "requiresFurtherEditorialReview": false
+    },
+    {
+      "sourcePauri": 40,
+      "primaryRehrasWebHtmlParagraph": 46,
+      "modelSourceLineCount": 6,
+      "modelExactSubstringInsideRehrasPage": true,
+      "fullBlockEquality": true,
+      "requiresFurtherEditorialReview": false
+    }
+  ],
+  "digitalPageIncludedBlocks": "SGPC selection 3–48 inclusive; Chaupai/Anand from previously frozen original sources",
+  "excludedExtraVariantWebParagraphs": [
+    {
+      "digitalHtmlParagraph": 0,
+      "originalSha256": "ad5e3f2744d6defb5e89dace7b7302546e5301008e56bdbd0df964ab13faf716",
+      "originalByteLength": 463
+    },
+    {
+      "digitalHtmlParagraph": 1,
+      "originalSha256": "a6e127f14a4dc1bd7ba7d21f04997a2b237b1c666cb0ffb2ebac6be5a51210c3",
+      "originalByteLength": 431
+    },
+    {
+      "digitalHtmlParagraph": 2,
+      "originalSha256": "3c829b237032f37ca923df15ea6b24bbbb01483e010c5942b5b369ec30745f25",
+      "originalByteLength": 403
+    },
+    {
+      "digitalHtmlParagraph": 49,
+      "originalSha256": "23064b75c1d9433a12e50b006a51a41f7bb8534e20aa2fe439b3d61d2c53792e",
+      "originalByteLength": 730
+    },
+    {
+      "digitalHtmlParagraph": 50,
+      "originalSha256": "1df7c7700064fd5c281dcee7a128bcd1d0f3f6d5769766711b5b4ad053b28d1b",
+      "originalByteLength": 518
+    },
+    {
+      "digitalHtmlParagraph": 51,
+      "originalSha256": "536fa52606c86e900f0ea35d0fc0ace83a97be06802d89330bbc293814b75046",
+      "originalByteLength": 723
+    }
+  ],
+  "excludedExtraVariantStatement": "Extra page material outside SGPC selected sequence is neither erased from evidence nor declared an invalid Sikh practice.",
+  "sourceEditionCollation": "PENDING",
+  "qualifiedSikhPunjabiReview": "PENDING",
+  "rights": "PENDING",
+  "comparatorOriginalWordingIndependentlyCollated": false,
+  "totalCompositeBaniSourceApproved": false,
+  "familyReaderEnabled": false,
+  "published": false
+}

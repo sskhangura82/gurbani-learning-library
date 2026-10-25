@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "tav-prasad-savaiye",
+  "title": "Tav-Prasad Savaiye",
+  "titleGurmukhi": "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ",
+  "sourceWork": "Akal Ustat — ten Sravag Sudh Savaiye",
+  "prefaceOriginalCandidate": [
+    {
+      "ordinal": 1,
+      "text": "ੴ",
+      "sha256": "1cd0846b2924d9185ab6df52c5db88c7b9dc3a554b216d4e3e1f44046acb5194"
+    },
+    {
+      "ordinal": 2,
+      "text": "ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ ਸ੍ਰੀ ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਹ ॥",
+      "sha256": "5873c1162aea52e5249314ca0558571ec2cc9bbb288cf139798a10ded1e05733"
+    },
+    {
+      "ordinal": 3,
+      "text": "ਪਾਤਿਸਾਹੀ੧੦॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਸ੍ਵਯੇ ॥",
+      "sha256": "aa6fd49b590bdff8d9eb28584b681f520d26725d76192a841474be3ef2b40990"
+    }
+  ],
+  "edition": {
+    "editionId": "dasam-sravag-sudh-digital-candidate-20261025",
+    "sourceFamily": "dasam",
+    "locationScheme": "dasam_section",
+    "sourceRelease": "2026-10-25 public web transcription snapshot",
+    "sourceFileHash": "4f76412cf3f669df418528796b11ae4c2303ccd1c3ecb0012107329fe4a1598f",
+    "sourceStatus": "machine_frozen",
+    "rightsStatus": "original_gurmukhi_web_reuse_not_approved",
+    "humanCollationApproved": false,
+    "editionAuthority": null,
+    "editionCitation": null,
+    "sourceComparator": "https://gurdwaras.com/nitnem/tav-prasad-savaiye"
+  },
+  "ui": {
+    "readable": false,
+    "meaningReviewStatus": "not_ingested",
+    "studyReviewStatus": "not_ingested",
+    "preserveLegacyLearningKeys": false,
+    "raagStatus": "not_applicable",
+    "reviewBannerRequired": true
+  },
+  "units": [
+    {
+      "unitId": "savaiye01",
+      "kind": "stanza",
+      "title": "Savaiya 1",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye01.line01",
+          "text": "ਸ੍ਰਾਵਗ ਸੁੱਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+          "sha256": "c01176ae4f09dd620be823a3a8f4d7de7c7eb91a8f47b0be9a6d395c5c340db9",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 1,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye01.line02",
+          "text": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁੱਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+          "sha256": "1526adb95942ed1237e87b06a16057400fe314f71c78e8a1cfd5fe08ac0d1129",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 1,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye01.line03",
+          "text": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+          "sha256": "ef474bba3123b3cf27fd9052759812545398c89abf63a5e54a496e16537d08a1",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 1,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye01.line04",
+          "text": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥੧॥",
+          "sha256": "c86b7e62106fd14a2405976e37199cb5049c15443aadbd418c3d83f83b5a92fa",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 1,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye02",
+      "kind": "stanza",
+      "title": "Savaiya 2",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye02.line01",
+          "text": "ਮਾਤੇ ਮਤੰਗ ਜਰੇ ਜਰ ਸੰਗ ਅਨੂਪ ਉਤੰਗ ਸੁਰੰਗ ਸਵਾਰੇ ॥",
+          "sha256": "708f27a9feed19d2f6b594f6d7e0e615702c127e364670db98b8aa2566e100d0",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 2,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye02.line02",
+          "text": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+          "sha256": "383135bfdcf7dc69a18c0f671324b0b535bc45bb7bd6bef7303dd616e607b5c9",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 2,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye02.line03",
+          "text": "ਭਾਰੀ ਭੁਜਾਨ ਕੇ ਭੂਪ ਭਲੀ ਬਿਧਿ ਨਿਆਵਤ ਸੀਸ ਨ ਜਾਤ ਬਿਚਾਰੇ ॥",
+          "sha256": "534c0cdf1e57960649d87f9fbd2ae3d6e0dbcab8ac37fd7ac96cd0d40f4a10d5",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 2,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye02.line04",
+          "text": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕੌ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥੨॥",
+          "sha256": "8805213d9d0331b2297c311bc3299dd0493ed7684ec6b8fb6fd7bd7f5dc9a3c3",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 2,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye03",
+      "kind": "stanza",
+      "title": "Savaiya 3",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye03.line01",
+          "text": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+          "sha256": "f45f80559d819444f412a032dd1c1eff1247df47ac23851983c167a9c859d4ca",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 3,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye03.line02",
+          "text": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+          "sha256": "cd0d651425b927182471ef571a999d350b4d36ccb9c65b4f28f498b102419732",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 3,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye03.line03",
+          "text": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀਂ ਜਾਤ ਬਿਚਾਰੇ ॥",
+          "sha256": "0a72034cbba0e079dd8d5c60144a26759666d955aba68959319492fee5b25ad8",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 3,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye03.line04",
+          "text": "ਸ੍ਰੀ ਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥੩॥",
+          "sha256": "062c0e6e3426070ad3eb901f3208745b3fa61f249f2ce7e4ced125d24b2b2421",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 3,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye04",
+      "kind": "stanza",
+      "title": "Savaiya 4",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye04.line01",
+          "text": "ਤੀਰਥ ਨਾਨ ਦਇਆ ਦਮ ਦਾਨ ਸੁ ਸੰਜਮ ਨੇਮ ਅਨੇਕ ਬਿਸੇਖੈ ॥",
+          "sha256": "693065b1687f1535dfee7b775c49bd0c8dd10bee12c9d9ff970183a36ac78222",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 4,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye04.line02",
+          "text": "ਬੇਦ ਪੁਰਾਨ ਕਤੇਬ ਕੁਰਾਨ ਜਮੀਨ ਜਮਾਨ ਸਬਾਨ ਕੇ ਪੇਖੈ ॥",
+          "sha256": "8b5bfd3dc4e395aa23157a60c6f9246575517e035bf22c67de89a54342a21496",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 4,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye04.line03",
+          "text": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+          "sha256": "60f167dc2b16c641707409102f014abc4d071be1b360ee26967b26ccac1b3e2e",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 4,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye04.line04",
+          "text": "ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਭੂਪਤਿ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਨ ਲੇਖੈ ॥੪॥",
+          "sha256": "a7361ac9d72121e3475a28b39c15c3ca600a4acd2bd97abca67d914807dd6468",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 4,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye05",
+      "kind": "stanza",
+      "title": "Savaiya 5",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye05.line01",
+          "text": "ਸੁੱਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+          "sha256": "f71458b3ec944aae1fd03844d83250cc8c6e3810ad518ed8f05cc8e5601717ff",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 5,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye05.line02",
+          "text": "ਭਾਰੀ ਗੁਮਾਨ ਭਰੇ ਮਨ ਮੈਂ ਕਰ ਪਰਬਤ ਪੰਖ ਹਲੇ ਨ ਹਲੈਂਗੇ ॥",
+          "sha256": "3f76ec362873fc76539e08a3c610acad44a4f1c8452d3cc3d889ced1c41e9227",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 5,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye05.line03",
+          "text": "ਤੋਰਿ ਅਰੀਨ ਮਰੋਰਿ ਮਵਾਸਨ ਮਾਤੇ ਮਤੰਗਨ ਮਾਨ ਮਲੈਂਗੇ ॥",
+          "sha256": "fc06ee9b58965a5f44647aeb9e3dd765fe5ff4f57233d7b6447304ec791d9e8f",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 5,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye05.line04",
+          "text": "ਸ੍ਰੀ ਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਕ੍ਰਿਪਾ ਬਿਨੁ ਤਿਆਗਿ ਜਹਾਨ ਨਿਦਾਨ ਚਲੈਂਗੇ ॥੫॥",
+          "sha256": "01d69a35b638ed82f767faa7447bbc97204a7e26e87a3538528d51b99da52950",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 5,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye06",
+      "kind": "stanza",
+      "title": "Savaiya 6",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye06.line01",
+          "text": "ਬੀਰ ਅਪਾਰ ਬਡੇ ਬਰਿਆਰ ਅਬਿਚਾਰਹਿ ਸਾਰ ਕੀ ਧਾਰ ਭਛੱਯਾ ॥",
+          "sha256": "4516dc895c8ddca911bbc5ec4982f201bb6a6b595f9f0540cd18a44e47fed9b4",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 6,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye06.line02",
+          "text": "ਤੋਰਤ ਦੇਸ ਮਲਿੰਦ ਮਵਾਸਨ ਮਾਤੇ ਗਜਾਨ ਕੇ ਮਾਨ ਮਲੱਯਾ ॥",
+          "sha256": "2ec5c4fdb48ce589e703fddf8b44d1126f574e0f214ba3f0f3ef842993c45139",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 6,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye06.line03",
+          "text": "ਗਾੜ੍ਹੇ ਗੜ੍ਹਾਨ ਕੋ ਤੋੜਨਹਾਰ ਸੁ ਬਾਤਨ ਹੀਂ ਚਕ ਚਾਰ ਲਵੱਯਾ ॥",
+          "sha256": "54540d9eb1e7382b17cb0084deeb38b222b3225bb66f860385ef8bb6fb3a3cef",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 6,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye06.line04",
+          "text": "ਸਾਹਿਬੁ ਸ੍ਰੀ ਸਭ ਕੋ ਸਿਰਨਾਇਕ ਜਾਚਕ ਅਨੇਕ ਸੁ ਏਕ ਦਿਵੱਯਾ ॥੬॥",
+          "sha256": "e769b48168f56f3d128c98db1d972deffea53b00a6294bb7c9ae4d5e5b692ae2",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 6,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye07",
+      "kind": "stanza",
+      "title": "Savaiya 7",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye07.line01",
+          "text": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+          "sha256": "38514953c611d7e5a24b3ba04fc53842e758698fc5503a4d3a3675faad688d56",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 7,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye07.line02",
+          "text": "ਜੀਵ ਜਿਤੇ ਜਲ ਮੈ ਥਲ ਮੈ ਪਲ ਹੀ ਪਲ ਮੈ ਸਭ ਥਾਪ ਥਪੈਂਗੇ ॥",
+          "sha256": "64164955e43ee162a47e4bb132b3c8faac43d62886fca34bce7035686aa8fc52",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 7,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye07.line03",
+          "text": "ਪੁੰਨ ਪ੍ਰਤਾਪਨ ਬਾਢ ਜੈਤ ਧੁਨ ਪਾਪਨ ਕੇ ਬਹੁ ਪੁੰਜ ਖਪੈਂਗੇ ॥",
+          "sha256": "ec64b5efa57cc6ea7f9c9e120bed78608eac6411b1b30a94b2718ec228e636ec",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 7,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye07.line04",
+          "text": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈਂ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥੭॥",
+          "sha256": "d331f18e40548046d8b0b7b650adbc541526c0c148e832c3570c95117bf23931",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 7,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye08",
+      "kind": "stanza",
+      "title": "Savaiya 8",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye08.line01",
+          "text": "ਮਾਨਵ ਇੰਦ੍ਰ ਗਜਿੰਦ੍ਰ ਨਰਾਧਪ ਜੌਨ ਤ੍ਰਿਲੋਕ ਕੋ ਰਾਜ ਕਰੈਂਗੇ ॥",
+          "sha256": "0c9d0507a8a7d05f1eb4d8981c6f8e58dfd56881ad0c02eed532e951165ba7d5",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 8,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye08.line02",
+          "text": "ਕੋਟਿ ਇਸਨਾਨ ਗਜਾਦਿਕ ਦਾਨ ਅਨੇਕ ਸੁਅੰਬਰ ਸਾਜ ਬਰੈਂਗੇ ॥",
+          "sha256": "981ffc4fe8e6b5eb62fb66836204274f61d2c1afe4f1c5149ac53faf595e8e07",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 8,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye08.line03",
+          "text": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਿਤ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸਿ ਪਰੈਂਗੇ ॥",
+          "sha256": "3b5257a0688b5dc6964a4174c4c33db693d7ac387f24af0e08acadf771fa097d",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 8,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye08.line04",
+          "text": "ਜੇ ਨਰ ਸ੍ਰੀ ਪਤਿ ਕੇ ਪ੍ਰਸ ਹੈਂ ਪਗ ਤੇ ਨਰ ਫੇਰ ਨ ਦੇਹ ਧਰੈਂਗੇ ॥੮॥",
+          "sha256": "a904b9eaa45e4f18cc90f1b991ae4bddafeaa0579546ab9303393616e0cb35f1",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 8,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye09",
+      "kind": "stanza",
+      "title": "Savaiya 9",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye09.line01",
+          "text": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਉ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+          "sha256": "ca8affee7b33fd075cdcf4eb37285861ade11eb128e31daa49b1855c0ef704fd",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 9,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye09.line02",
+          "text": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨਿ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+          "sha256": "50a015d3c670a06f6aa8367deef3789861a53cab463cc520f9c948921596d246",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 9,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye09.line03",
+          "text": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+          "sha256": "d10dc40408a9860c97790dc658aabada43e7fe42fdc09e732f5997680c558b1b",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 9,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye09.line04",
+          "text": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥੯॥",
+          "sha256": "85f303d91618c10f31ade02375a2503cce1cb194c993a3e50dd9ab54737d6170",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 9,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "savaiye10",
+      "kind": "stanza",
+      "title": "Savaiya 10",
+      "titleGurmukhi": "",
+      "printedRaag": null,
+      "raagEvidence": null,
+      "originalHeadingIsFirstLine": false,
+      "lines": [
+        {
+          "id": "savaiye10.line01",
+          "text": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+          "sha256": "02ccd261ced71cb466d56d8370cadd133227a0206c8d9f096a0888b90cc80c47",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 10,
+            "line": 1
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye10.line02",
+          "text": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+          "sha256": "3c0b2f3a5a9d82386f44b44263d4ebed2a976a1cc52306462fea614a0eaa7d00",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 10,
+            "line": 2
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye10.line03",
+          "text": "ਕੋਉ ਬੁਤਾਨ ਕੋ ਪੂਜਤ ਹੈ ਪਸੁ ਕੋਉ ਮ੍ਰਿਤਾਨ ਕੋ ਪੂਜਨ ਧਾਇਓ ॥",
+          "sha256": "de313c3701b5969ea7dc9201ebe027fc046c46372ef3196417e64157992e1dad",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 10,
+            "line": 3
+          },
+          "sourceLayer": "original_digital_candidate"
+        },
+        {
+          "id": "savaiye10.line04",
+          "text": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਿਝਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥੧੦॥",
+          "sha256": "de8bc9d640117d50d97b971704e9d3e7d3d58d4e9e3596cd18483f1e7a39be1f",
+          "location": {
+            "system": "dasam_section",
+            "section": "Akal Ustat / Sravag Sudh",
+            "savaiya": 10,
+            "line": 4
+          },
+          "sourceLayer": "original_digital_candidate"
+        }
+      ]
+    }
+  ]
+}

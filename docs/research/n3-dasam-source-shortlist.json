@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "project": "GLP-001",
+  "lane": "N3-DASAM-ORIGINAL-SOURCE-CANDIDATE-SELECTION",
+  "capturedDate": "2026-10-25",
+  "status": "PUBLIC_LIBRARY_INDEXES_PLUS_JAAP_AND_SAVAIYE_DIGITAL_CANDIDATES_NOT_EDITION_VERIFIED",
+  "publisherFramework": {
+    "name": "SGPC Sikh Rehat Maryada, Article IV",
+    "url": "https://sgpc.net/sikh-rehat-maryada-in-english/",
+    "limits": "Names Jaap and ten Savaiye, plus the exact evening Chaupai segment. Five morning bani usage must also be represented accurately with named Sikh tradition/revision source rather than inferred from generic page titles."
+  },
+  "publicDigitizedIndex": {
+    "site": "Vidhia Sikh Digital Library",
+    "url": "https://www.vidhia.com/",
+    "kind": "Third-party library listing of scans/PDFs; filename or '(SGPC)' label not an authenticated publisher seal or permission to republish",
+    "checkedAs": "catalog_index_only_not_pdf_contents",
+    "items": [
+      {
+        "displayName": "Das Granthi (SGPC)",
+        "listedSize": "14.87 MB",
+        "relevance": [
+          "jaap",
+          "savaiye",
+          "chaupai"
+        ],
+        "candidateOnly": true
+      },
+      {
+        "displayName": "Nitnem (SGPC)",
+        "listedSize": "33.13 MB",
+        "relevance": [
+          "jaap",
+          "savaiye",
+          "chaupai"
+        ],
+        "candidateOnly": true
+      },
+      {
+        "displayName": "Jaap Sahib - Gurmukhi",
+        "listedSize": "65.84 KB",
+        "relevance": [
+          "jaap"
+        ],
+        "candidateOnly": true
+      },
+      {
+        "displayName": "Tva Prasad Svaye - Gurmukhi",
+        "listedSize": "35.2 KB",
+        "relevance": [
+          "savaiye"
+        ],
+        "candidateOnly": true
+      },
+      {
+        "displayName": "Chaupai Sahib",
+        "listedSize": "89.48 KB",
+        "relevance": [
+          "chaupai"
+        ],
+        "candidateOnly": true
+      },
+      {
+        "displayName": "Rehiras Sahib - Gurmukhi",
+        "listedSize": "55.01 KB",
+        "relevance": [
+          "chaupai",
+          "rehras"
+        ],
+        "candidateOnly": true
+      }
+    ]
+  },
+  "banis": [
+    {
+      "id": "jaap",
+      "displayName": "Jaap Sahib",
+      "sourceFamily": "dasam",
+      "editionSelected": false,
+      "originalSourceImported": false,
+      "referenceCandidates": [
+        "Das Granthi (SGPC)",
+        "Nitnem (SGPC)",
+        "Jaap Sahib - Gurmukhi"
+      ],
+      "namedBoundary": {
+        "start": "Must be explicitly verified from chosen Dasam Bani edition",
+        "end": "Must be explicitly verified; never infer from OCR count"
+      },
+      "requirements": [
+        "SGPC/Dasam authentic edition authority",
+        "exact original Gurmukhi and structure count",
+        "second source with lineage independence",
+        "all source hashes",
+        "reuse review",
+        "qualified Sikh/Punjabi approval"
+      ],
+      "readerRoute": null,
+      "digitalOriginalStructuralAudit": {
+        "evidenceFile": "docs/research/n3-dasam-jaap/jaap-199-structure-audit.json",
+        "primary": "https://www.discoversikhism.com/learn_gurbani/learn_jaap_sahib.html",
+        "comparator": "https://gurdwaras.com/nitnem/jaap-sahib",
+        "twoSourcesNumberedChhands": 199,
+        "firstSourceGurmukhiParagraphs": 59,
+        "secondSourceGurmukhiParagraphs": 809,
+        "fullOriginalTextEquivalence": "UNVERIFIED",
+        "originalReaderSourceModelCreated": false,
+        "editorialApproval": false
+      },
+      "originalDigitalResearchModel": {
+        "modelFile": "docs/research/n3-dasam-jaap/jaap-199-original-candidate.json",
+        "comparisonFile": "docs/research/n3-dasam-jaap/jaap-text-discrepancy-ledger.json",
+        "completeNumberedChhands": 199,
+        "originalDigitalVerseRows": 782,
+        "sourceMeterHeadingsSeparatelyPreserved": 21,
+        "discrepantChhandGroups": 67,
+        "familyRuntimeImported": false,
+        "humanEditionApproval": false
+      }
+    },
+    {
+      "id": "savaiye",
+      "displayName": "Tav-Prasad Savaiye",
+      "sourceFamily": "dasam",
+      "editionSelected": false,
+      "originalSourceImported": false,
+      "referenceCandidates": [
+        "Das Granthi (SGPC)",
+        "Nitnem (SGPC)",
+        "Tva Prasad Svaye - Gurmukhi"
+      ],
+      "namedBoundary": {
+        "start": "The prescribed ten Savaiye beginning Sravag Sudh (ਸ੍ਰਾਵਗ ਸੁਧ)",
+        "end": "Exactly the tenth Savaiya of the named source/recitation edition"
+      },
+      "requirements": [
+        "exact 10 Savaiye printed boundaries and numbering",
+        "no conflation with evening Pae Gahe Savaiya",
+        "second independent original collation",
+        "source/reuse rights",
+        "qualified human review"
+      ],
+      "expectedUnits": 10,
+      "readerRoute": null,
+      "sourceResearchStatus": "digital_original_candidate_draft_only",
+      "digitalResearchCandidate": {
+        "originalModel": "docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json",
+        "comparison": "docs/research/n3-dasam-savaiye/savaiye-digital-discrepancy-ledger.json",
+        "primary": "https://www.discoversikhism.com/learn_gurbani/learn_tav_prasad_savaiye.html",
+        "comparator": "https://gurdwaras.com/nitnem/tav-prasad-savaiye",
+        "sourceFamily": "dasam",
+        "stanzas": 10,
+        "lines": 40,
+        "exactTextMatches": 21,
+        "counterAdjustedMatches": 27,
+        "remainingVariantRows": 13,
+        "digitalLineageIndependence": "UNVERIFIED",
+        "publisherEditionApproval": false,
+        "familyRuntimeImported": false,
+        "publishable": false
+      }
+    },
+    {
+      "id": "chaupai",
+      "displayName": "Benti Chaupai Sahib",
+      "sourceFamily": "dasam",
+      "editionSelected": false,
+      "originalSourceImported": false,
+      "referenceCandidates": [
+        "Das Granthi (SGPC)",
+        "Nitnem (SGPC)",
+        "Chaupai Sahib",
+        "Rehiras Sahib - Gurmukhi"
+      ],
+      "namedBoundary": {
+        "start": "ਹਮਰੀ ਕਰੋ ਹਾਥ ਦੈ ਰੱਛਾ (Hamri Karo Hath Dai Rachha)",
+        "end": "ਦੁਸਟ ਦੋਖ ਤੇ ਲੇਹੁ ਬਚਾਈ (Dust Dokh Te Leho Bachai), SGPC evening Rehras excerpt; separately verify longer Benti Chaupai recitations"
+      },
+      "requirements": [
+        "edition-level canonical verse boundaries",
+        "SGPC evening excerpt not equated silently with full morning Chaupai",
+        "named version/variant ID",
+        "independent original collation",
+        "permissions and qualified review"
+      ],
+      "readerRoute": null,
+      "eveningRehrasExcerptDigitalResearch": {
+        "sourceModel": "docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json",
+        "variantLedger": "docs/research/n4-chaupai-excerpt/chaupai-variant-boundary-ledger.json",
+        "primary": "https://www.discoversikhism.com/learn_gurbani/learn_chaupai_sahib.html",
+        "comparator": "https://gurdwaras.com/nitnem/chaupai-sahib",
+        "recitationPauris": 25,
+        "originalSegments": 100,
+        "textualVariantsUnresolved": 49,
+        "sourceEditionAdjudicated": false,
+        "fullMorningRecitationResolved": false,
+        "familyReaderReleased": false
+      },
+      "expandedLongVariantDigitalResearch": {
+        "sourceModel": "docs/research/n3-chaupai-variants/chaupai-site-expanded-29-pauri-candidate.json",
+        "comparison": "docs/research/n3-chaupai-variants/chaupai-long-short-boundary-ledger.json",
+        "sourceOrigin": "https://www.discoversikhism.com/learn_gurbani/learn_chaupai_sahib.html",
+        "comparisonOrigin": "https://gurdwaras.com/nitnem/chaupai-sahib",
+        "boundaries": {
+          "SGPCEveningExcerpt": 25,
+          "siteExpandedSource": 29
+        },
+        "originalSourceTuksInExpandedVariant": 116,
+        "additionalWebSiteSourceTuks": 16,
+        "additionalOriginalTextualVariantRows": 7,
+        "fullMorningVersionReligiouslyAdjudicated": false,
+        "readersPublished": false
+      }
+    }
+  ],
+  "researchActions": [
+    "Resolve Tav-Prasad Savaiye 13 original textual/orthographic variant rows against an authoritative printed edition; digital concordance is not editorial approval.",
+    "Jaap has two digital 199-chhand numbering patterns but requires independent original text collation; counts are not a full verified source.",
+    "Identify exact published edition and publisher/rights from inside reference scans (not by filename).",
+    "Manually compare first/last verses, pauri/chhand numbering and variant boundaries.",
+    "Build machine-readable full-source model only once source edition is selected.",
+    "Validate corpus hashes and independence of comparison sources.",
+    "Separate original scripture from modern translations and typed interpretation.",
+    "Do not import / publish human-reviewed status from machine self-claims.",
+    "Keep the SGPC evening Chaupai excerpt (25 pauris) distinct from longer morning Chaupai; digital web variants cannot decide the accepted tradition."
+  ],
+  "security": {
+    "downloadedFilesCommitted": false,
+    "pdfContentsReviewed": false,
+    "ocrPerformed": false,
+    "mediaRightsApproved": false,
+    "readersEnabled": false,
+    "gitHubMainTouched": false,
+    "researchCandidateOriginalGurmukhiCapturedOnly": true,
+    "publishedOriginalTexts": false
+  },
+  "humanReviewStatus": "PENDING",
+  "releaseAuthorized": false
+}

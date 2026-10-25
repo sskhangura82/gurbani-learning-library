@@ -1,0 +1,99 @@
+name: GLP Full Nitnem Original Source Candidate (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-full-nitnem-n1-sohila-source-20261025
+  pull_request:
+    branches:
+      - feature/glp-generic-composition-parity-20261024
+permissions:
+  contents: read
+jobs:
+  source-custody:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Frozen Japji source and existing learning contracts
+        run: |
+          node tests/verify.mjs
+          node tests/service-worker.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+      - name: Generic source model and 385-line Japji parity
+        run: node tests/composition-parity.mjs
+      - name: Kirtan Sohila original source intake and publication refusals
+        run: node tests/sohila-source-intake.mjs
+      - name: Anand 40-pauri comparison and explicit ambiguity hold
+        run: node tests/anand-source-audit.mjs
+      - name: Tav-Prasad Savaiye ten stanza source candidate, 13 source variants held
+        run: node tests/savaiye-source-intake.mjs
+      - name: All three morning Dasam source/edition shortlists held appropriately
+        run: node tests/dasam-source-shortlist.mjs
+      - name: Savaiye source-only reader parity with no invented SGGS Angs
+        run: node tests/savaiye-continuous-parity.mjs
+      - name: Rehras Chaupai bounded 25-pauri source excerpt with 49 review holds
+        run: node tests/chaupai-excerpt-source.mjs
+      - name: Jaap 199-chhand web-numbering comparison (historical structure-only receipt)
+        run: node tests/jaap-structure-audit.mjs
+      - name: Complete Jaap original digital candidate and all 67 source differences
+        run: node tests/jaap-full-source-intake.mjs
+      - name: Jaap complete 782-row compatibility with existing continuous core
+        run: node tests/jaap-continuous-parity.mjs
+      - name: Full 40-pauri Anand original with strict Pauri 24 Unicode quarantine
+        run: node tests/anand-40-full-source.mjs
+      - name: Sohila compatibility with existing R7 continuous reader — nonshipping
+        run: node tests/sohila-continuous-parity.mjs
+      - name: Rehras ordered composite component boundaries — no verse ingestion
+        run: node tests/rehras-component-ledger.mjs
+      - name: Complete SGPC 6-section Rehras digitally frozen source — unapproved
+        run: node tests/rehras-complete-sgpc-source.mjs
+      - name: Mixed SGGS-Dasam Rehras composition parity with original reader core
+        run: node tests/rehras-continuous-parity.mjs
+      - name: Short 25 versus expanded 29 pauri Chaupai original digital variants
+        run: node tests/chaupai-expanded-variant.mjs
+      - name: Python source intake syntax only — no web calls or app writes
+        run: |
+          python3 -c 'import ast; files=["intake_sohila.py","audit_anand.py","intake_savaiye.py","intake_chaupai_excerpt.py","audit_jaap_structure.py","intake_jaap_full.py","intake_anand_40.py","intake_rehras_sgpc.py","intake_chaupai_variants.py"]; [ast.parse(open("tools/compositions/"+f,encoding="utf-8").read()) for f in files]'
+      - name: Nonshipping source guard
+        run: |
+          node --check tests/sohila-source-intake.mjs
+          node --check tests/anand-source-audit.mjs
+          node --check tests/sohila-continuous-parity.mjs
+          node --check tests/rehras-component-ledger.mjs
+          node --check tests/savaiye-source-intake.mjs
+          node --check tests/savaiye-continuous-parity.mjs
+          node --check tests/dasam-source-shortlist.mjs
+          node --check tests/chaupai-excerpt-source.mjs
+          node --check tests/jaap-structure-audit.mjs
+          node --check tests/jaap-full-source-intake.mjs
+          node --check tests/jaap-continuous-parity.mjs
+          node --check tests/anand-40-full-source.mjs
+          node --check tests/rehras-complete-sgpc-source.mjs
+          node --check tests/rehras-continuous-parity.mjs
+          node --check tests/chaupai-expanded-variant.mjs
+          node --check tests/nonshipping-source-browser.mjs
+          node --check tests/nonshipping-source-reader.mjs
+          test -f tests/nonshipping-source-reader.html
+          test -f tests/nonshipping-source-reader.css
+          python3 -c 'import ast; ast.parse(open("tools/compositions/intake_savaiye.py", encoding="utf-8").read())'
+          node --check tools/compositions/continuous-source-parity.mjs
+          node --check tools/compositions/continuous-rehras-composite.mjs
+          test ! -f sohila.html
+          test ! -f anand.html
+          test ! -f js/sohila-data.js
+          test ! -f js/anand-data.js
+          test ! -f chaupai.html
+          test ! -f jaap.html
+          test ! -f savaiye.html
+          ! grep -q 'tests/nonshipping-source-reader' sw.js
+          test ! -f js/jaap-full-data.js
+          test ! -f js/anand-full-data.js
+          ! grep -q 'n3-dasam-jaap' sw.js
+          ! grep -q 'n4-rehras-composite' sw.js
+          test ! -f rehras.html
+          test ! -f js/rehras-full-data.js
+          git diff --exit-code -- full-japji.html js/japji-full-data.js js/learning.js js/shared-learning.js sw.js index.html

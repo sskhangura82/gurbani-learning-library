@@ -1,0 +1,276 @@
+{
+  "capturedAtUtc": "2026-10-25T20:38:36.733442+00:00",
+  "status": "TWO_NAMED_DIGITAL_CHAUPAI_BOUNDS_25_AND_29_WITH_UNRESOLVED_RIGHTS_AND_TEXT",
+  "primary": {
+    "url": "https://www.discoversikhism.com/learn_gurbani/learn_chaupai_sahib.html",
+    "httpStatus": 200,
+    "webPageSha256": "7d91c4e6c00ea6001dacf2d050a57c1a27692fe36e36467ee896a2cff466caba",
+    "pageBytes": 52428,
+    "sourceParagraphs": 21
+  },
+  "comparator": {
+    "url": "https://gurdwaras.com/nitnem/chaupai-sahib",
+    "httpStatus": 200,
+    "webPageSha256": "cb35094949d3a79d75edf84bfd90ac79827c388128ad43769a5fb1466276a013",
+    "pageBytes": 236464,
+    "sourceParagraphs": 174
+  },
+  "SGPCRehrasBound": {
+    "pauris": 25,
+    "lastOriginal": "ਦੁਸਟ ਦੋਖ ਤੇ ਲੇਹੁ ਬਚਾਈ",
+    "sourceModel": "docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json"
+  },
+  "expandedWebsiteBound": {
+    "pauris": 29,
+    "sourceOriginalLines": 116,
+    "sourceModelName": "chaupai-website-expanded-29-variant",
+    "remainingPauris": [
+      26,
+      27,
+      28,
+      29
+    ],
+    "newSeparateMeterHeadings": [
+      {
+        "text": "ਅੜਿੱਲ ॥",
+        "sha256": "c2c01ef345e6d48d01d6993fa94292f84e2ebff5761e332a1c7f4ba71cf73664",
+        "digitalParagraph": 17,
+        "approved": false
+      },
+      {
+        "text": "ਚੌਪਈ ॥",
+        "sha256": "537a076d0005d37a1e1529bb6cffd99cddffadff42b6e0e19995799563fad595",
+        "digitalParagraph": 18,
+        "approved": false
+      }
+    ]
+  },
+  "additionalPaureeOriginals": 16,
+  "additionComparedWithSecondSite": [
+    {
+      "sourceOccurrenceId": "chaupai-long26.line01",
+      "pauri": 26,
+      "primaryOriginalSha256": "55beb0da09fdff8d5fc1ee6f930ca60e80ff72ea180970310f51bfd7fb7cd6ab",
+      "comparatorWebParagraph": 147,
+      "comparatorOriginalSha256": "55beb0da09fdff8d5fc1ee6f930ca60e80ff72ea180970310f51bfd7fb7cd6ab",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long26.line02",
+      "pauri": 26,
+      "primaryOriginalSha256": "1e5077c121bf2c666ffaacf528f134a5309ffd972d97ea0bc0de74b6a85915a1",
+      "comparatorWebParagraph": 148,
+      "comparatorOriginalSha256": "b1490526d5b611b5e2154086b4d1639b860eaa9df8016080d5f13df3662bd139",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਗ੍ਰੰਥ ਕਰਾ ਪੂਰਨ ਸੁਭ ਰਾਤਾ ॥",
+      "comparatorDigitalText": "ਗ੍ਰੰਥ ਕਰਾ ਪੂਰਨ ਸੁਭਰਾਤਾ ॥"
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long26.line03",
+      "pauri": 26,
+      "primaryOriginalSha256": "5b8badd0411b0fdd5ac46c71f6ca8106a3eea41fb4035c01311f1b660e3b505e",
+      "comparatorWebParagraph": 149,
+      "comparatorOriginalSha256": "5b8badd0411b0fdd5ac46c71f6ca8106a3eea41fb4035c01311f1b660e3b505e",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long26.line04",
+      "pauri": 26,
+      "primaryOriginalSha256": "d64431cae5cc54787fe9d1424f4e5ff5d3082b34da015080eaa5bf7fb896ae44",
+      "comparatorWebParagraph": 150,
+      "comparatorOriginalSha256": "a785a8b7431db7f02de5760bdc9ac6a793ed2710e5abe695bb3868c1d7d00c3a",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long27.line01",
+      "pauri": 27,
+      "primaryOriginalSha256": "9b3624527922fb626fe1a734fd7d9b1af900fefe43f2986499954ec0f2b54562",
+      "comparatorWebParagraph": 151,
+      "comparatorOriginalSha256": "9b3624527922fb626fe1a734fd7d9b1af900fefe43f2986499954ec0f2b54562",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long27.line02",
+      "pauri": 27,
+      "primaryOriginalSha256": "0db99a199e76597e5603fabf9e2cbb28c607956a59b9a75dd51f85eff8d68458",
+      "comparatorWebParagraph": 152,
+      "comparatorOriginalSha256": "0db99a199e76597e5603fabf9e2cbb28c607956a59b9a75dd51f85eff8d68458",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long27.line03",
+      "pauri": 27,
+      "primaryOriginalSha256": "49164b84819218c3a511b013d58d0922860d405475ca70c8bf35233651286485",
+      "comparatorWebParagraph": 153,
+      "comparatorOriginalSha256": "7ee4aa4d7835eb08706a395c2b2af062f5d76f4fde18e02ba24556fe62736d45",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਮਨ ਬਾਂਛਤ ਫਲ ਪਾਵੈ ਸੋਈ ॥",
+      "comparatorDigitalText": "ਮਨ ਬਾਛਤ ਫਲ ਪਾਵੈ ਸੋਈ ॥"
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long27.line04",
+      "pauri": 27,
+      "primaryOriginalSha256": "9d2770b9971ecae64efadd4dda3e6c45c71ea7a2e40e62529d85910d200ae3ee",
+      "comparatorWebParagraph": 154,
+      "comparatorOriginalSha256": "8e9db64e01f69c633d3827c035f6f0a3f7667f3a5bb31ece17ccd2d042b52bbb",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long28.line01",
+      "pauri": 28,
+      "primaryOriginalSha256": "7f2fcc3e30637c6baea1ddac5a798bcc3260d20819d5fdd4ff28959bc2f0cb7c",
+      "comparatorWebParagraph": 156,
+      "comparatorOriginalSha256": "7f2fcc3e30637c6baea1ddac5a798bcc3260d20819d5fdd4ff28959bc2f0cb7c",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long28.line02",
+      "pauri": 28,
+      "primaryOriginalSha256": "3887b0c09666f64cdfc168af657a34ace202a24e6d87981f54d05c4a4d7f62c3",
+      "comparatorWebParagraph": 157,
+      "comparatorOriginalSha256": "5334f7ddc43cf3b152c401dc140c073390042b6bf9536ae104813980599f2558",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਸੁਨੈ ਮੂੜ੍ਹ ਚਿਤ ਲਾਇ ਚਤੁਰਤਾ ਆਵਈ ॥",
+      "comparatorDigitalText": "ਸੁਨੈ ਮੂੜ ਚਿਤ ਲਾਇ ਚਤੁਰਤਾ ਆਵਈ ॥"
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long28.line03",
+      "pauri": 28,
+      "primaryOriginalSha256": "266293ecc69085155bc53bebcd7b94c44a5c426792820344af27d4f6f7476387",
+      "comparatorWebParagraph": 158,
+      "comparatorOriginalSha256": "266293ecc69085155bc53bebcd7b94c44a5c426792820344af27d4f6f7476387",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long28.line04",
+      "pauri": 28,
+      "primaryOriginalSha256": "4b05fd83708f9accd09fc57406a20f6bcdfa9560bbb03355d34f1791b414ef13",
+      "comparatorWebParagraph": 159,
+      "comparatorOriginalSha256": "701f4969cac5f16cc3ccb6fe9bc7e8202d7aa3f26544c7fe80e371243f4b7331",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਹੋ ਜੋ ਯਾਕੀ ਏਕ ਬਾਰ ਚੌਪਈ ਕੋ ਕਹੈ ॥੨੮॥",
+      "comparatorDigitalText": "ਹੋ ਜੋ ਯਾ ਕੀ ਏਕ ਬਾਰ ਚੌਪਈ ਕੋ ਕਹੈ ॥੪੦੪॥"
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long29.line01",
+      "pauri": 29,
+      "primaryOriginalSha256": "41538fd6d89168cdef30fcdcd5ce8f24d182bd04577566f20656ddd5e5faaa7f",
+      "comparatorWebParagraph": 161,
+      "comparatorOriginalSha256": "ffedd5a51ec5a71d100597fbac30427a1a1c320c4c584b6445df4388d1d945e6",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਸੰਬਤ ਸੱਤ੍ਰਹ ਸਹਸ ਭਣਿੱਜੈ ॥",
+      "comparatorDigitalText": "ਸੰਬਤ ਸਤ੍ਰਹ ਸਹਸ ਭਣਿਜੈ ॥"
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long29.line02",
+      "pauri": 29,
+      "primaryOriginalSha256": "bef584ba6d402860c6f874e33652ddbf8d24c1d2270a63984094fe97239041d5",
+      "comparatorWebParagraph": 162,
+      "comparatorOriginalSha256": "f5f2458d3ef4fe4871e6c0be58d06512eb94fd5db3b59523e19bebc76cf9b1cf",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਅਰਧ ਸਹਸ ਫੁਨਿ ਤੀਨਿ ਕਹਿੱਜੈ ॥",
+      "comparatorDigitalText": "ਅਰਧ ਸਹਸ ਫੁਨਿ ਤੀਨਿ ਕਹਿਜੈ ॥"
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long29.line03",
+      "pauri": 29,
+      "primaryOriginalSha256": "bf092e974aa6b7538d720fe487cc6c09b99a43be5a4aef80bbe2d796e0f0a5a6",
+      "comparatorWebParagraph": 163,
+      "comparatorOriginalSha256": "bf092e974aa6b7538d720fe487cc6c09b99a43be5a4aef80bbe2d796e0f0a5a6",
+      "exactNfc": true,
+      "matchesAfterOnlyTerminalCountersIgnored": true,
+      "needsHumanEditionComparison": false
+    },
+    {
+      "sourceOccurrenceId": "chaupai-long29.line04",
+      "pauri": 29,
+      "primaryOriginalSha256": "51d439fc51fa821e042981d4d209e1165f4fdd592ac8a3a521daab042b9fafdf",
+      "comparatorWebParagraph": 164,
+      "comparatorOriginalSha256": "a57c6115e8f695fb56d2dda647650a0655bd2781fddb984790e16fd6b4616564",
+      "exactNfc": false,
+      "matchesAfterOnlyTerminalCountersIgnored": false,
+      "needsHumanEditionComparison": true,
+      "primaryDigitalText": "ਤੀਰ ਸਤੁੱਦ੍ਰਵ ਗ੍ਰੰਥ ਸੁਧਾਰਾ ॥੨੯॥",
+      "comparatorDigitalText": "ਤੀਰ ਸਤੁਦ੍ਰਵ ਗ੍ਰੰਥ ਸੁਧਾਰਾ ॥੪੦੫॥"
+    }
+  ],
+  "newAdditionalTukExactMatches": 7,
+  "newAdditionalTukCounterComparisonMatches": 9,
+  "postScriptCandidateSections": [
+    {
+      "kind": "evening_savaiya_candidate",
+      "sourceHeading": "ਸ੍ਵੈਯਾ ॥",
+      "sourceHeadingSha256": "5e7e579050219d532289a26d52c00b1a3ff241ae141cc2220a09d5c4b62956d6",
+      "originalLines": [
+        {
+          "text": "ਪਾਂਇ ਗਹੇ ਜਬ ਤੇ ਤੁਮਰੇ ਤਬ ਤੇ ਕੋਊ ਆਂਖ ਤਰੇ ਨਹੀ ਆਨਯੋ ॥",
+          "sha256": "e459a6c5dd16dfaf591e85aeafa3772e0c7dbbda910280907ce27037f2e386c3"
+        },
+        {
+          "text": "ਰਾਮ ਰਹੀਮ ਪੁਰਾਨ ਕੁਰਾਨ ਅਨੇਕ ਕਹੈਂ ਮਤ ਏਕ ਨ ਮਾਨਯੋ ॥",
+          "sha256": "c80c22e767092ae91d2e5a8302ea2c981756b9b8d1d810be2d8d57b530f8df75"
+        },
+        {
+          "text": "ਸਿੰਮ੍ਰਿਤਿ ਸਾਸਤ੍ਰ ਬੇਦ ਸਭੈ ਬਹੁ ਭੇਦ ਕਹੈ ਹਮ ਏਕ ਨ ਜਾਨਯੋ ॥",
+          "sha256": "8677fd576e0d438113082683d98481ea130d8ea7f0f5c5db6be19b17a5515997"
+        },
+        {
+          "text": "ਸ੍ਰੀ ਅਸਿਪਾਨ ਕ੍ਰਿਪਾ ਤੁਮਰੀ ਕਰਿ ਮੈ ਨ ਕਹਯੋ ਸਭ ਤੋਹਿ ਬਖਾਨਯੋ ॥੧॥",
+          "sha256": "222fb3bb3f9f68e35f2d8d8982b191e4b61641b3495be7266a38eaa056ec5b1f"
+        }
+      ],
+      "editionScope": "separate_webpage_sequence_NOT_automatically_part_of_morning_Chaupai"
+    },
+    {
+      "kind": "dohira_candidate",
+      "sourceHeading": "ਦੋਹਰਾ ॥",
+      "sourceHeadingSha256": "485f674c9a1425fae04bcea542b9aba686fbb872a7607c2a2e0ca9134dd4d696",
+      "originalLines": [
+        {
+          "text": "ਸਗਲ ਦੁਆਰ ਕਉ ਛਾਡਿ ਕੈ ਗਹਯੋ ਤੁਹਾਰੋ ਦੁਆਰ ॥",
+          "sha256": "53cc8287d79b0174181a0f2f821ccc83bca585e50aae3c2516ea5b02722da304"
+        },
+        {
+          "text": "ਬਾਂਹਿ ਗਹੇ ਕੀ ਲਾਜ ਅਸਿ ਗੋਬਿੰਦ ਦਾਸ ਤੁਹਾਰ ॥",
+          "sha256": "564534d9f0c300118fb158f5879ccf62a03d8b34c2c44d5678cb864005b75301"
+        }
+      ],
+      "editionScope": "separate_webpage_sequence_NOT_automatically_part_of_morning_Chaupai"
+    }
+  ],
+  "unapprovedDevotionalWebsiteFooterSha256": "ce1f4703d2c5298865e36c6f05d6a6110a54739a5b5112e584527ec26ba469ce",
+  "warning": "25 SGPC Rehras excerpt and 29 site-expanded Chaupai have different scope. Do NOT assert which is universal complete morning version; separately choose edition and Sikh tradition.",
+  "humanSourceEditionReview": "PENDING",
+  "expandedVariantPracticeApproved": false,
+  "rightsApproved": false,
+  "published": false,
+  "otherDasamRehrasSavaiyaAndDohiraMustRemainDistinct": true
+}

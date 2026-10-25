@@ -1,0 +1,215 @@
+/* GLP-001 nonshipping Full Nitnem original-only browser QA.
+ * Drives actual Chrome against trusted loopback, not public web/iPhone.
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawn} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const port=Number(process.env.GLP_NITNEM_QA_PORT||8990);
+if(port!==8990)throw Error('Only a dedicated 127.0.0.1:8990 loopback fixture permitted');
+const origin='http://127.0.0.1:'+port;
+const profile=fs.mkdtempSync('/tmp/glp-nitnem-original-qa-');
+const chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--headless=new','--remote-debugging-address=127.0.0.1','--remote-debugging-port=0','--user-data-dir='+profile,'--no-first-run','--disable-background-networking','about:blank'],{stdio:'ignore'});
+let ws,session,seq=0,failed=null,exceptions=[],requests=[];
+const pending=new Map(),checks=[],sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function check(label,test,details={}){if(!test)throw Error(label+': '+JSON.stringify(details));checks.push({label,status:'PASS',details});console.log('PASS '+label);}
+function send(method,params={},sid){return new Promise((resolve,reject)=>{
+ const id=++seq,timer=setTimeout(()=>{pending.delete(id);reject(Error('CDP timeout '+method));},16000);
+ pending.set(id,{resolve,reject,timer});ws.send(JSON.stringify({id,method,params,...(sid?{sessionId:sid}:{})}));
+});}
+async function run(expression){
+ const response=await send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true},session);
+ if(response.exceptionDetails)throw Error('Browser expression exception: '+JSON.stringify(response.exceptionDetails));
+ return response.result.value;
+}
+async function until(expression,label,timeout=22000){
+ const end=Date.now()+timeout;
+ while(Date.now()<end){
+  try{if(await run(expression))return;}catch{}
+  await sleep(110);
+ }
+ throw Error('Timed out: '+label);
+}
+async function click(selector){
+ await run('(()=>{let b=document.querySelector('+JSON.stringify(selector)+');if(!b)throw Error("Missing control");b.click();return true})()');
+}
+async function size(width,height){
+ await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true},session);
+ await sleep(100);
+}
+async function exactOriginal(){
+ const inspect=[
+  '(async()=>{',
+  'const k=GLP_SOURCE_QA.getState().sourceKey;',
+  'const src=k==="sohila"?"../docs/research/n1-sohila/sohila-candidate-original.json":k==="savaiye"?"../docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json":k==="jaap"?"../docs/research/n3-dasam-jaap/jaap-199-original-candidate.json":k==="anand"?"../docs/research/n2-anand/anand-40-original-candidate.json":k==="rehras"?"../docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json":"../docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json";',
+  'const r=await fetch(src,{cache:"no-store"}),x=await r.json();',
+  'const allUnits=x.units??x.sections.flatMap(s=>s.units);const chosen=k==="rehras"?allUnits.filter(u=>u.unitId===document.querySelector(".qa-unit")?.dataset.unitId):allUnits;const expected=chosen.flatMap(u=>u.lines);',
+  'const actual=[...document.querySelectorAll(".qa-source-line")];',
+  'return actual.length===expected.length&&actual.every((e,i)=>e.textContent===expected[i].text&&e.dataset.id===expected[i].id&&e.dataset.sourceSha256===expected[i].sha256);',
+  '})()'
+ ].join('');
+ return await run(inspect);
+}
+try{
+ const pf=path.join(profile,'DevToolsActivePort');
+ for(let i=0;!fs.existsSync(pf)&&i<130;i++)await sleep(100);
+ check('Fresh isolated Chrome starts',fs.existsSync(pf));
+ const [portDebug,endpoint]=fs.readFileSync(pf,'utf8').trim().split('\n');
+ ws=new WebSocket('ws://127.0.0.1:'+portDebug+endpoint);
+ await new Promise((res,rej)=>{ws.onopen=res;ws.onerror=rej;});
+ ws.onmessage=e=>{
+  const m=JSON.parse(e.data);
+  if(m.id){const p=pending.get(m.id);if(p){clearTimeout(p.timer);pending.delete(m.id);m.error?p.reject(Error(JSON.stringify(m.error))):p.resolve(m.result);}}
+  else if(m.method==='Runtime.exceptionThrown')exceptions.push(m.params.exceptionDetails?.text||'Browser exception');
+  else if(m.method==='Network.requestWillBeSent')requests.push(m.params.request?.url);
+ };
+ const {targetId}=await send('Target.createTarget',{url:'about:blank'});
+ ({sessionId:session}=await send('Target.attachToTarget',{targetId,flatten:true}));
+ await send('Page.enable',{},session);await send('Runtime.enable',{},session);await send('Network.enable',{},session);
+ await size(320,740);
+ const nav=await send('Page.navigate',{url:origin+'/tests/nonshipping-source-reader.html'},session);
+ check('Local source QA page navigates',!nav.errorText);
+ await until('window.GLP_SOURCE_QA?.getState().readerReady===true','Sohila source verified');
+ const intro=await run('({message:document.querySelector(".qa-warning").textContent,secure:isSecureContext,location:location.hostname,status:document.getElementById("qa-status").textContent})');
+ check('Page is trusted loopback and visibly warns against recitation',intro.secure&&intro.location==='127.0.0.1'&&intro.message.includes('UNREVIEWED DIGITAL SOURCE')&&intro.status.includes('SHA-256 verified'),intro);
+ let current=await run('GLP_SOURCE_QA.getState()');
+ check('Five frozen Sohila shabads and 56 source lines render but are unapproved',current.sourceKey==='sohila'&&current.unitCount===5&&current.lineCount===56&&!current.releaseAuthorized&&!current.learningStored,current);
+ check('All 56 original Sohila line strings, source IDs and SHA-256 hashes match immutable model',await exactOriginal());
+ const noMeaning=await run('(()=>{let a=[...document.querySelectorAll(".qa-footer button")];return a.length===2&&a.every(b=>b.disabled&&b.getAttribute("aria-label").includes("pending"))})()');
+ check('Meaning and Study remain disabled pending specialist review',noMeaning);
+ const first=await run('({prev:document.getElementById("qa-previous").disabled,next:document.getElementById("qa-next").disabled,active:document.querySelectorAll(".qa-source-line[aria-current=location]").length})');
+ check('First shabad has one current marker and correct boundary controls',first.prev&&!first.next&&first.active===1,first);
+ await click('#qa-next');
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('Next navigates to source shabad 2 without changing a verse',current.position.index===12&&current.sourceKey==='sohila');
+ await click('#qa-previous');
+ check('Previous navigates back to original shabad 1',await run('GLP_SOURCE_QA.getState().position.index===0'));
+ for(const [w,h] of [[320,740],[390,844]]){
+  await size(w,h);
+  const metric=await run('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,dockHeight:document.querySelector(".qa-dock").getBoundingClientRect().height})');
+  check('Sohila candidate has no horizontal overflow at '+w+'px',metric.scrollWidth<=metric.width,metric);
+ }
+ await run('(()=>{const x=document.getElementById("qa-size");x.value="48";x.dispatchEvent(new Event("change",{bubbles:true}));return true;})()');
+ const textSize=await run('parseFloat(getComputedStyle(document.querySelector(".qa-source-line")).fontSize)');
+ check('Existing reader 48px larger Gurmukhi setting works',textSize===48,{size:textSize});
+ await size(320,740);
+ check('48px Gurmukhi does not cause horizontal page overflow at 320px',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image1=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-sohila-320.png'),Buffer.from(image1.data,'base64'));
+ await click('#load-savaiye');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="savaiye" && window.GLP_SOURCE_QA.getState().readerReady','Savaiye 10x4 source verified');
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('Ten Savaiye and all 40 source rows use the same existing continuous core',current.unitCount===10&&current.lineCount===40&&current.sourceKey==='savaiye',current);
+ check('All 40 original Savaiye words, hashes and source IDs match frozen candidate',await exactOriginal());
+ const preface=await run('({count:document.querySelectorAll(".qa-preface").length,gurmukhi:[...document.querySelectorAll(".qa-preface")].map(x=>x.textContent),sourceCount:document.querySelectorAll(".qa-source-line").length})');
+ check('Three original candidate preface blocks are separately visible once',preface.count===3&&preface.sourceCount===40&&preface.gurmukhi[0]==='ੴ',preface);
+ const privateState=await run('({storage:localStorage.length,serviceWorker:navigator.serviceWorker.controller!==null,media:!!document.querySelector("audio,video,iframe"),release:GLP_SOURCE_QA.getState().releaseAuthorized})');
+ check('QA uses no private learning storage, worker, media, or release permission',privateState.storage===0&&!privateState.serviceWorker&&!privateState.media&&!privateState.release,privateState);
+ const step=await run('(()=>{let before=GLP_SOURCE_QA.getState().position;let success=GLP_SOURCE_QA.step();let after=GLP_SOURCE_QA.getState().position;return {before,after,success}})()');
+ check('Same token progression engine advances an original Savaiya word',step.success&&step.after.index===step.before.index&&step.after.token>step.before.token,step);
+ await run('(()=>{const x=document.getElementById("qa-size");x.value="30";x.dispatchEvent(new Event("change",{bubbles:true}));return true;})()');
+ await size(390,844);
+ const image2=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-savaiye-390.png'),Buffer.from(image2.data,'base64'));
+ await click('#load-chaupai');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="chaupai"&&window.GLP_SOURCE_QA.getState().readerReady','SGPC excerpt 25x4 source verified');
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('SGPC Rehras Chaupai excerpt has 25 pauris and 100 original tuk segments',current.sourceKey==='chaupai'&&current.unitCount===25&&current.lineCount===100&&!current.releaseAuthorized,current);
+ check('All 100 bounded Chaupai original source strings, IDs and hashes match immutable digital candidate',await exactOriginal());
+ check('The 25-pauri segment retains the exact SGPC start and end while avoiding any claim to complete morning Chaupai',await run('(()=>{const x=[...document.querySelectorAll(".qa-source-line")];return x[0].textContent.startsWith("ਹਮਰੀ ਕਰੋ")&&x.at(-1).textContent.startsWith("ਦੁਸਟ ਦੋਖ ਤੇ ਲੇਹੁ ਬਚਾਈ")&&document.getElementById("load-chaupai").textContent.includes("Rehras excerpt")})()'));
+ await click('#qa-next');
+ check('Existing reader core moves cleanly to the next Chaupai pauri',await run('GLP_SOURCE_QA.getState().position.index===4'));
+ await click('#qa-previous');
+ check('Previous button restores the first bounded Chaupai original tuk',await run('GLP_SOURCE_QA.getState().position.index===0'));
+ await size(320,740);
+ check('Bounded Chaupai original has no horizontal overflow at phone width',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image3=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-chaupai-320.png'),Buffer.from(image3.data,'base64'));
+ await click('#load-jaap');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="jaap"&&window.GLP_SOURCE_QA.getState().readerReady','Jaap 199 original source candidate verified',40000);
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('Jaap 199 complete chhands and 782 original source rows accepted by one unchanged engine',current.sourceKey==='jaap'&&current.unitCount===199&&current.lineCount===782&&current.sourceApproved===false&&current.releaseAuthorized===false,current);
+ const firstJaap=await run('(()=>({domLines:document.querySelectorAll(".qa-source-line").length,selectorOptions:document.querySelectorAll("#qa-unit-picker option").length,preface:document.querySelectorAll(".qa-preface").length,first:document.querySelector(".qa-source-line")?.textContent}))()');
+ check('Jaap sources are virtualized by chhand and six preface rows remain separate',firstJaap.domLines===6&&firstJaap.selectorOptions===199&&firstJaap.preface===6&&firstJaap.first.startsWith('ਚੱਕ੍ਰ ਚਿਹਨ'),firstJaap);
+ await run('(()=>{const sel=document.getElementById("qa-unit-picker");sel.value="1";sel.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const metre=await run('(()=>({displayed:document.querySelectorAll(".qa-unit").length,meterText:document.querySelector(".qa-meter")?.textContent,sourceLine:document.querySelector(".qa-source-line")?.textContent,picked:GLP_SOURCE_QA.getState().position.index}))()');
+ check('Jaap second chhand shows exact original source meter heading once',metre.displayed===1&&metre.meterText==='ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥'&&metre.sourceLine?.startsWith('ਨਮਸਤ੍ਵੰ'),metre);
+ await run('(()=>{const sel=document.getElementById("qa-unit-picker");sel.value="98";sel.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const midJaap=await run('(()=>({unit:document.querySelector(".qa-unit")?.dataset.unitId,selected:document.getElementById("qa-unit-picker").value,rendered:document.querySelectorAll(".qa-source-line").length}))()');
+ check('Direct accessible Jaap chhand picker reaches 99th without rendering all 782 source lines',midJaap.unit==='jaap099'&&midJaap.selected==='98'&&midJaap.rendered<15,midJaap);
+ await run('(()=>{const sel=document.getElementById("qa-unit-picker");sel.value="198";sel.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const lastJaap=await run('(()=>({unit:document.querySelector(".qa-unit")?.dataset.unitId,final:document.querySelector(".qa-source-line:last-child")?.textContent,next:document.getElementById("qa-next").disabled}))()');
+ check('Chhand 199 ends at original 199 marker and disables Next',lastJaap.unit==='jaap199'&&lastJaap.final?.endsWith('॥੧੯੯॥')&&lastJaap.next,lastJaap);
+ await size(320,740);
+ check('Jaap long source one-chhand viewport has no overflow at 320px',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image4=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-jaap-320.png'),Buffer.from(image4.data,'base64'));
+ await click('#load-anand');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="anand"&&window.GLP_SOURCE_QA.getState().readerReady','Anand 40-pauri source structurally verified',40000);
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('Full Anand 40 pauris, 208 source verses under one strict unapproved reader engine',current.sourceKey==='anand'&&current.unitCount===40&&current.lineCount===208&&!current.releaseAuthorized,current);
+ const firstAnand=await run('(()=>({preface:document.querySelectorAll(".qa-preface").length,selectorOptions:document.querySelectorAll("#qa-unit-picker option").length,first:document.querySelector(".qa-source-line")?.textContent}))()');
+ check('Anand two opening source records preserved separate from 40 selectable pauris',firstAnand.preface===2&&firstAnand.selectorOptions===40&&firstAnand.first.startsWith('ਅਨੰਦੁ ਭਇਆ'),firstAnand);
+ await run('(()=>{const s=document.getElementById("qa-unit-picker");s.value="23";s.dispatchEvent(new Event("change",{bubbles:true}));return true})()');
+ const anandReview=await run('(()=>{const hold=document.querySelector(".qa-quarantine"),all=[...document.querySelectorAll(".qa-source-line,.qa-quarantine")];return {unit:document.querySelector(".qa-unit")?.dataset.unitId,held:hold?.dataset.id,sha:hold?.dataset.sourceSha256,visible:document.body.innerText.includes(String.fromCharCode(0xF03D)),count:all.length,text:hold?.textContent}})()');
+ check('Anand Pauri 24 source anomaly is visibly held and unsupported U+F03D NEVER rendered as scripture',anandReview.unit==='anand24'&&anandReview.held==='anand24.line03'&&anandReview.sha?.length===64&&!anandReview.visible&&anandReview.text?.includes('under independent Unicode/edition review'),anandReview);
+ const anandGuide=await run('(()=>{let count=0;while(!document.getElementById("qa-status").textContent.startsWith("STOP:")&&count++<150){GLP_SOURCE_QA.step();}return {count,stopped:document.getElementById("qa-status").textContent.startsWith("STOP:"),playing:GLP_SOURCE_QA.getState().playing}})()');
+ check('Anand silent visual guide stops before ambiguous original rather than silently reciting it',anandGuide.stopped&&!anandGuide.playing&&anandGuide.count<150,anandGuide);
+ await size(320,740);
+ check('Anand quarantined Pauri 24 source QA fits small phone layout',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image5=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-anand-hold-320.png'),Buffer.from(image5.data,'base64'));
+ await click('#load-rehras');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="rehras" && window.GLP_SOURCE_QA.getState().readerReady','Mixed SGPC Rehras source candidate verified',40000);
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('SGPC mixed-source Rehras 44 units and 159 original records enter one existing reader engine',current.sourceKey==='rehras'&&current.unitCount===44&&current.lineCount===159&&!current.releaseAuthorized,current);
+ check('Rehras first SGGS hymn original text is SHA-bound to digital SGPC source candidate',await exactOriginal());
+ const sgStart=await run('(()=>({unit:document.querySelector(".qa-unit")?.dataset.unitId,text:document.querySelector(".qa-unit .qa-source-line")?.textContent,options:document.querySelectorAll("#qa-unit-picker option").length,preface:document.querySelectorAll(".qa-preface").length}))()');
+ check('First of nine SGGS hymns is So Dar; 44 direct section choices available',sgStart.unit==='rehras.sggs01'&&sgStart.text?.startsWith('ਸੋ ਦਰੁ')&&sgStart.options===44&&sgStart.preface===0,sgStart);
+ async function rehrasJump(index){
+  const expression='(()=>{const x=document.getElementById("qa-unit-picker");x.value='+JSON.stringify(String(index))+';x.dispatchEvent(new Event("change",{bubbles:true}));return {select:x.value,unit:document.querySelector(".qa-unit")?.dataset.unitId,text:document.querySelector(".qa-unit .qa-source-line")?.textContent,kind:document.querySelector(".qa-unit h2")?.textContent,position:GLP_SOURCE_QA.getState().position.index}})()';
+  const state=await run(expression);
+  if(state.select!==String(index))throw Error('Rehras QA select failed at '+index+': '+JSON.stringify(state));
+  return state;
+ }
+ let currentBlock=await rehrasJump(8);
+ check('Ninth and final SGGS opening hymn remains named independently',currentBlock.unit==='rehras.sggs09'&&currentBlock.text?.startsWith('ਆਸਾ ਮਹਲਾ ੫'),currentBlock);
+ currentBlock=await rehrasJump(9);
+ check('Rehras switches from SGGS hymn 9 to bounded Dasam Chaupai Pauri 1',currentBlock.unit==='rehras.chaupai01'&&currentBlock.text?.startsWith('ਹਮਰੀ ਕਰੋ'),currentBlock);
+ currentBlock=await rehrasJump(34);
+ check('Pae Gahe evening Savaiya follows 25 Chaupai pauris without substituting morning ten Savaiye',currentBlock.unit==='rehras.savaiya01'&&currentBlock.text?.includes('ਪਾਂਇ ਗਹੇ ਜਬ ਤੇ ਤੁਮਰੇ'),currentBlock);
+ currentBlock=await rehrasJump(35);
+ check('Sagal Duar Dohira directly follows evening Savaiya',currentBlock.unit==='rehras.dohira01'&&currentBlock.text?.includes('ਸਗਲ ਦੁਆਰ ਕਉ ਛਾਡਿ ਕੈ'),currentBlock);
+ currentBlock=await rehrasJump(36);
+ check('Anand first selected pauri is included from verified original source',currentBlock.unit==='rehras.anand01'&&currentBlock.text?.startsWith('ਅਨੰਦੁ ਭਇਆ'),currentBlock);
+ currentBlock=await rehrasJump(41);
+ check('Selected Anand Pauri 40 follows first five without disputed Pauri 24',currentBlock.unit==='rehras.anand40'&&currentBlock.text?.startsWith('ਅਨਦੁ ਸੁਣਹੁ'),currentBlock);
+ currentBlock=await rehrasJump(42);
+ check('Mundawani occurs after selected Anand without automatically appending extra verses',currentBlock.unit==='rehras.mundawani'&&currentBlock.text?.startsWith('ਮੁੰਦਾਵਣੀ'),currentBlock);
+ currentBlock=await rehrasJump(43);
+ check('Mahla 5 Tera Keeta Slok is final Rehras unit and Next is disabled',currentBlock.unit==='rehras.slok'&&currentBlock.text?.startsWith('ਸਲੋਕ ਮਹਲਾ ੫')&&await run('document.getElementById("qa-next").disabled'),currentBlock);
+ check('Last Rehras composite original lines match the source model hashes exactly',await exactOriginal());
+ check('Browser never displays any quarantined Anand Pauri 24 source as part of Rehras',await run('!document.body.innerText.includes(String.fromCharCode(0xF03D))'));
+ await size(320,740);
+ check('44-unit mixed source reader fits narrow phone viewport without overflow',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image6=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-rehras-320.png'),Buffer.from(image6.data,'base64'));
+ check('Jaap original source browser makes zero network requests to third-party sites',requests.every(x=>x.startsWith(origin+'/')),{count:requests.length});
+ check('All candidate network requests are same loopback origin',requests.every(x=>x.startsWith(origin+'/')),{requests:requests.length});
+ check('No browser JavaScript exceptions',exceptions.length===0,{exceptions});
+}catch(e){failed=String(e);exceptions.push(failed);console.error('FAIL '+failed);}
+finally{
+ const result={checkedAt:new Date().toISOString(),status:failed?'FAIL':'PASS',checks,errors:exceptions,
+  scope:'Nonshipping source-only Chrome QA against existing continuous-core; two unapproved digital original candidates, no family app',
+  actualIPhone:'NOT TESTED',humanEditionReview:'PENDING',publicationAllowed:false,
+  screenshots:['evidence/nitnem-original-qa-sohila-320.png','evidence/nitnem-original-qa-savaiye-390.png','evidence/nitnem-original-qa-chaupai-320.png','evidence/nitnem-original-qa-jaap-320.png', 'evidence/nitnem-original-qa-anand-hold-320.png','evidence/nitnem-original-qa-rehras-320.png']};
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-browser.json'),JSON.stringify(result,null,2)+'\n');
+ try{if(ws?.readyState===1)await send('Browser.close')}catch{}
+ try{ws?.close()}catch{}
+ await sleep(200);
+ if(chrome.exitCode===null)chrome.kill('SIGTERM');
+ fs.rmSync(profile,{recursive:true,force:true});
+ if(failed)process.exitCode=1;
+ console.log('RESULT '+result.status+' '+checks.length+' checks');
+}

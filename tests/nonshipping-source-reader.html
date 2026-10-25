@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; worker-src 'none'; media-src 'none'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Full Nitnem · ORIGINAL SOURCE QA ONLY</title>
+<link rel="stylesheet" href="../css/japji-full.css">
+<link rel="stylesheet" href="nonshipping-source-reader.css">
+</head>
+<body>
+<a href="#source-content" class="skip">Skip to original source</a>
+<header class="qa-header">
+ <p class="qa-kicker">GLP-001 · ORIGINAL SOURCE ENGINEERING</p>
+ <h1>Source reader <span lang="pa">ੴ</span></h1>
+ <p class="qa-warning" role="status"><strong>UNREVIEWED DIGITAL SOURCE — ENGINEERING QA ONLY.</strong> This is not an approved Nitnem edition. Do not use it for recitation or family learning.</p>
+ <nav aria-label="Choose a source candidate" class="qa-select">
+  <button id="load-sohila" type="button" data-source="sohila" aria-pressed="true">Kirtan Sohila · 5 shabads</button>
+  <button id="load-savaiye" type="button" data-source="savaiye" aria-pressed="false">Tav-Prasad Savaiye · 10 stanzas</button>
+  <button id="load-chaupai" type="button" data-source="chaupai" aria-pressed="false">Benti Chaupai · SGPC Rehras excerpt · 25 pauris</button>
+  <button id="load-jaap" type="button" data-source="jaap" aria-pressed="false">Jaap Sahib · 199 chhands · source QA</button>
+  <button id="load-anand" type="button" data-source="anand" aria-pressed="false">Anand Sahib · 40 pauris · one source hold</button>
+  <button id="load-rehras" type="button" data-source="rehras" aria-pressed="false">Rehras · six SGPC source sections · UNREVIEWED</button>
+ </nav>
+ <p class="qa-source-status" id="qa-status" role="status" aria-live="polite">Loading checked original-source candidate…</p>
+</header>
+<main id="source-content" class="qa-main">
+ <section class="qa-original-context" aria-label="Scripture and editorial source boundaries">
+  <h2>Original Gurmukhi candidate</h2>
+  <p>Displayed text is checked against its frozen SHA-256 source receipt. Translations and Study are withheld while the edition and Punjabi review are pending.</p>
+  <div id="original-preface" aria-label="Original digital preface, if present"></div>
+ </section>
+ <div id="composition-original" aria-label="Original source lines"></div>
+</main>
+<div class="qa-dock" role="group" aria-label="Source review navigation controls">
+ <button id="qa-previous" type="button" aria-label="Previous shabad or stanza">Previous</button>
+ <span class="qa-location" id="qa-location" aria-live="off">Source candidate</span>
+ <button id="qa-next" type="button" aria-label="Next shabad or stanza">Next</button>
+ <label for="qa-unit-picker">Section <select id="qa-unit-picker" aria-label="Select source shabad, stanza, pauri or Jaap chhand"></select></label>
+ <button id="qa-play" type="button" aria-pressed="false">Play guide</button>
+ <label for="qa-size">Size <select id="qa-size" aria-label="Original Gurmukhi text size"><option value="30">30</option><option value="40">40</option><option value="48">48</option></select></label>
+</div>
+<footer class="qa-footer">
+ <button disabled type="button" aria-label="Meaning unavailable; qualified translation review pending">Meaning pending review</button>
+ <button disabled type="button" aria-label="Study unavailable; qualified educational review pending">Study pending review</button>
+ <p>Visual guide is silent, not synchronized to recorded recitation. No notes, telemetry, audio, family data, or service worker are used in this QA.</p>
+</footer>
+<script src="../js/continuous-core.js"></script>
+<script type="module" src="nonshipping-source-reader.mjs"></script>
+</body></html>

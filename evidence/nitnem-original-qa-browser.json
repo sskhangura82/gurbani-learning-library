@@ -1,0 +1,497 @@
+{
+  "checkedAt": "2026-10-25T20:44:19.557Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "label": "Fresh isolated Chrome starts",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Local source QA page navigates",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Page is trusted loopback and visibly warns against recitation",
+      "status": "PASS",
+      "details": {
+        "message": "UNREVIEWED DIGITAL SOURCE — ENGINEERING QA ONLY. This is not an approved Nitnem edition. Do not use it for recitation or family learning.",
+        "secure": true,
+        "location": "127.0.0.1",
+        "status": "SHA-256 verified: 56 ORIGINAL DIGITAL CANDIDATE lines; 5 units. Engineering-only digital Gurmukhi candidate. No qualified source/edition approval or family release."
+      }
+    },
+    {
+      "label": "Five frozen Sohila shabads and 56 source lines render but are unapproved",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "sohila",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 5,
+        "lineCount": 56,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 55
+      }
+    },
+    {
+      "label": "All 56 original Sohila line strings, source IDs and SHA-256 hashes match immutable model",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Meaning and Study remain disabled pending specialist review",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "First shabad has one current marker and correct boundary controls",
+      "status": "PASS",
+      "details": {
+        "prev": true,
+        "next": false,
+        "active": 1
+      }
+    },
+    {
+      "label": "Next navigates to source shabad 2 without changing a verse",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Previous navigates back to original shabad 1",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Sohila candidate has no horizontal overflow at 320px",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "scrollWidth": 320,
+        "dockHeight": 152
+      }
+    },
+    {
+      "label": "Sohila candidate has no horizontal overflow at 390px",
+      "status": "PASS",
+      "details": {
+        "width": 390,
+        "scrollWidth": 390,
+        "dockHeight": 113
+      }
+    },
+    {
+      "label": "Existing reader 48px larger Gurmukhi setting works",
+      "status": "PASS",
+      "details": {
+        "size": 48
+      }
+    },
+    {
+      "label": "48px Gurmukhi does not cause horizontal page overflow at 320px",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Ten Savaiye and all 40 source rows use the same existing continuous core",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "savaiye",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 10,
+        "lineCount": 40,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 39
+      }
+    },
+    {
+      "label": "All 40 original Savaiye words, hashes and source IDs match frozen candidate",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Three original candidate preface blocks are separately visible once",
+      "status": "PASS",
+      "details": {
+        "count": 3,
+        "gurmukhi": [
+          "ੴ",
+          "ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ ਸ੍ਰੀ ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਹ ॥",
+          "ਪਾਤਿਸਾਹੀ੧੦॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਸ੍ਵਯੇ ॥"
+        ],
+        "sourceCount": 40
+      }
+    },
+    {
+      "label": "QA uses no private learning storage, worker, media, or release permission",
+      "status": "PASS",
+      "details": {
+        "storage": 0,
+        "serviceWorker": false,
+        "media": false,
+        "release": false
+      }
+    },
+    {
+      "label": "Same token progression engine advances an original Savaiya word",
+      "status": "PASS",
+      "details": {
+        "before": {
+          "index": 0,
+          "token": 0
+        },
+        "after": {
+          "index": 0,
+          "token": 1
+        },
+        "success": true
+      }
+    },
+    {
+      "label": "SGPC Rehras Chaupai excerpt has 25 pauris and 100 original tuk segments",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "chaupai",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 25,
+        "lineCount": 100,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 99
+      }
+    },
+    {
+      "label": "All 100 bounded Chaupai original source strings, IDs and hashes match immutable digital candidate",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "The 25-pauri segment retains the exact SGPC start and end while avoiding any claim to complete morning Chaupai",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Existing reader core moves cleanly to the next Chaupai pauri",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Previous button restores the first bounded Chaupai original tuk",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Bounded Chaupai original has no horizontal overflow at phone width",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Jaap 199 complete chhands and 782 original source rows accepted by one unchanged engine",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "jaap",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 199,
+        "lineCount": 782,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 781
+      }
+    },
+    {
+      "label": "Jaap sources are virtualized by chhand and six preface rows remain separate",
+      "status": "PASS",
+      "details": {
+        "domLines": 6,
+        "selectorOptions": 199,
+        "preface": 6,
+        "first": "ਚੱਕ੍ਰ ਚਿਹਨ ਅਰੁ ਬਰਨ ਜਾਤਿ ਅਰੁ ਪਾਤਿ ਨਹਿਨ ਜਿਹ ॥"
+      }
+    },
+    {
+      "label": "Jaap second chhand shows exact original source meter heading once",
+      "status": "PASS",
+      "details": {
+        "displayed": 1,
+        "meterText": "ਭੁਜੰਗ ਪ੍ਰਯਾਤ ਛੰਦ ॥",
+        "sourceLine": "ਨਮਸਤ੍ਵੰ ਅਕਾਲੇ ॥",
+        "picked": 6
+      }
+    },
+    {
+      "label": "Direct accessible Jaap chhand picker reaches 99th without rendering all 782 source lines",
+      "status": "PASS",
+      "details": {
+        "unit": "jaap099",
+        "selected": "98",
+        "rendered": 4
+      }
+    },
+    {
+      "label": "Chhand 199 ends at original 199 marker and disables Next",
+      "status": "PASS",
+      "details": {
+        "unit": "jaap199",
+        "final": "ਸਦਾ ਅੰਗ ਸੰਗੇ ਅਭੰਗੰ ਬਿਭੂਤੇ ॥੧੯੯॥",
+        "next": true
+      }
+    },
+    {
+      "label": "Jaap long source one-chhand viewport has no overflow at 320px",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Full Anand 40 pauris, 208 source verses under one strict unapproved reader engine",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "anand",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 40,
+        "lineCount": 208,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 207
+      }
+    },
+    {
+      "label": "Anand two opening source records preserved separate from 40 selectable pauris",
+      "status": "PASS",
+      "details": {
+        "preface": 2,
+        "selectorOptions": 40,
+        "first": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥"
+      }
+    },
+    {
+      "label": "Anand Pauri 24 source anomaly is visibly held and unsupported U+F03D NEVER rendered as scripture",
+      "status": "PASS",
+      "details": {
+        "unit": "anand24",
+        "held": "anand24.line03",
+        "sha": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+        "visible": false,
+        "count": 6,
+        "text": "Original Gurmukhi line under independent Unicode/edition review (U+F03D); withheld from the recitation preview. Source SHA-256 preserved."
+      }
+    },
+    {
+      "label": "Anand silent visual guide stops before ambiguous original rather than silently reciting it",
+      "status": "PASS",
+      "details": {
+        "count": 16,
+        "stopped": true,
+        "playing": false
+      }
+    },
+    {
+      "label": "Anand quarantined Pauri 24 source QA fits small phone layout",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "SGPC mixed-source Rehras 44 units and 159 original records enter one existing reader engine",
+      "status": "PASS",
+      "details": {
+        "sourceKey": "rehras",
+        "readerReady": true,
+        "playing": false,
+        "unitCount": 44,
+        "lineCount": 159,
+        "position": {
+          "index": 0,
+          "token": 0
+        },
+        "sourceApproved": false,
+        "learningStored": false,
+        "releaseAuthorized": false,
+        "guideLastIndex": 158
+      }
+    },
+    {
+      "label": "Rehras first SGGS hymn original text is SHA-bound to digital SGPC source candidate",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "First of nine SGGS hymns is So Dar; 44 direct section choices available",
+      "status": "PASS",
+      "details": {
+        "unit": "rehras.sggs01",
+        "text": "ਸੋ ਦਰੁ ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੧ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+        "options": 44,
+        "preface": 0
+      }
+    },
+    {
+      "label": "Ninth and final SGGS opening hymn remains named independently",
+      "status": "PASS",
+      "details": {
+        "select": "8",
+        "unit": "rehras.sggs09",
+        "text": "ਆਸਾ ਮਹਲਾ ੫ ॥ਭਈ ਪਰਾਪਤਿ ਮਾਨੁਖ ਦੇਹੁਰੀਆ ॥ ਗੋਬਿੰਦ ਮਿਲਣ ਕੀ ਇਹ ਤੇਰੀ ਬਰੀਆ ॥ਅਵਰਿ ਕਾਜ ਤੇਰੈ ਕਿਤੈ ਨ ਕਾਮ ॥ ਮਿਲੁ ਸਾਧਸੰਗਤਿ ਭਜੁ ਕੇਵਲ ਨਾਮ ॥੧॥ਸਰੰਜਾਮਿ ਲਾਗੁ ਭਵਜਲ ਤਰਨ ਕੈ ॥ ਜਨਮੁ ਬ੍ਰਿਥਾ ਜਾਤ ਰੰਗਿ ਮਾਇਆ ਕੈ ॥੧॥ ਰਹਾਉ ॥ਜਪੁ ਤਪੁ ਸੰਜਮੁ ਧਰਮੁ ਨ ਕਮਾਇਆ ॥ ਸੇਵਾ ਸਾਧ ਨ ਜਾਨਿਆ ਹਰਿ ਰਾਇਆ ॥ਕਹੁ ਨਾਨਕ ਹਮ ਨੀਚ ਕਰੰਮਾ ॥ ਸਰਣਿ ਪਰੇ ਕੀ ਰਾਖਹੁ ਸਰਮਾ ॥੨॥੪॥",
+        "kind": "SGGS Rehras Hymn 9 · sggs · DIGITAL SOURCE CANDIDATE",
+        "position": 22
+      }
+    },
+    {
+      "label": "Rehras switches from SGGS hymn 9 to bounded Dasam Chaupai Pauri 1",
+      "status": "PASS",
+      "details": {
+        "select": "9",
+        "unit": "rehras.chaupai01",
+        "text": "ਹਮਰੀ ਕਰੋ ਹਾਥ ਦੈ ਰੱਛਾ ॥",
+        "kind": "Rehras Chaupai Pauri 1 · dasam · DIGITAL SOURCE CANDIDATE",
+        "position": 23
+      }
+    },
+    {
+      "label": "Pae Gahe evening Savaiya follows 25 Chaupai pauris without substituting morning ten Savaiye",
+      "status": "PASS",
+      "details": {
+        "select": "34",
+        "unit": "rehras.savaiya01",
+        "text": "ਸ੍ਵੈਯਾ ॥ਪਾਂਇ ਗਹੇ ਜਬ ਤੇ ਤੁਮਰੇ ਤਬ ਤੇ ਕੋਊ ਆਂਖ ਤਰੇ ਨਹੀ ਆਨਯੋ ॥ਰਾਮ ਰਹੀਮ ਪੁਰਾਨ ਕੁਰਾਨ ਅਨੇਕ ਕਹੈਂ ਮਤ ਏਕ ਨ ਮਾਨਯੋ ॥ਸਿੰਮ੍ਰਿਤਿ ਸਾਸਤ੍ਰ ਬੇਦ ਸਭੈ ਬਹੁ ਭੇਦ ਕਹੈ ਹਮ ਏਕ ਨ ਜਾਨਯੋ ॥ਸ੍ਰੀ ਅਸਿਪਾਨ ਕ੍ਰਿਪਾ ਤੁਮਰੀ ਕਰਿ ਮੈ ਨ ਕਹਯੋ ਸਭ ਤੋਹਿ ਬਖਾਨਯੋ ॥੧॥",
+        "kind": "Evening Savaiya · Pae Gahe · dasam · DIGITAL SOURCE CANDIDATE",
+        "position": 123
+      }
+    },
+    {
+      "label": "Sagal Duar Dohira directly follows evening Savaiya",
+      "status": "PASS",
+      "details": {
+        "select": "35",
+        "unit": "rehras.dohira01",
+        "text": "ਦੋਹਰਾ ॥ਸਗਲ ਦੁਆਰ ਕਉ ਛਾਡਿ ਕੈ ਗਹਯੋ ਤੁਹਾਰੋ ਦੁਆਰ ॥ਬਾਂਹਿ ਗਹੇ ਕੀ ਲਾਜ ਅਸਿ ਗੋਬਿੰਦ ਦਾਸ ਤੁਹਾਰ ॥",
+        "kind": "Evening Dohira · Sagal Duar · dasam · DIGITAL SOURCE CANDIDATE",
+        "position": 124
+      }
+    },
+    {
+      "label": "Anand first selected pauri is included from verified original source",
+      "status": "PASS",
+      "details": {
+        "select": "36",
+        "unit": "rehras.anand01",
+        "text": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥",
+        "kind": "Anand Sahib · Pauri 1 · sggs · DIGITAL SOURCE CANDIDATE",
+        "position": 125
+      }
+    },
+    {
+      "label": "Selected Anand Pauri 40 follows first five without disputed Pauri 24",
+      "status": "PASS",
+      "details": {
+        "select": "41",
+        "unit": "rehras.anand40",
+        "text": "ਅਨਦੁ ਸੁਣਹੁ ਵਡਭਾਗੀਹੋ ਸਗਲ ਮਨੋਰਥ ਪੂਰੇ ॥",
+        "kind": "Anand Sahib · Pauri 40 · sggs · DIGITAL SOURCE CANDIDATE",
+        "position": 151
+      }
+    },
+    {
+      "label": "Mundawani occurs after selected Anand without automatically appending extra verses",
+      "status": "PASS",
+      "details": {
+        "select": "42",
+        "unit": "rehras.mundawani",
+        "text": "ਮੁੰਦਾਵਣੀ ਮਹਲਾ ੫ ॥ਥਾਲ ਵਿਚਿ ਤਿੰਨਿ ਵਸਤੂ ਪਈਓ ਸਤੁ ਸੰਤੋਖੁ ਵੀਚਾਰੋ ॥ਅੰਮ੍ਰਿਤ ਨਾਮੁ ਠਾਕੁਰ ਕਾ ਪਇਓ ਜਿਸ ਕਾ ਸਭਸੁ ਅਧਾਰੋ ॥ਜੇ ਕੋ ਖਾਵੈ ਜੇ ਕੋ ਭੁੰਚੈ ਤਿਸ ਕਾ ਹੋਇ ਉਧਾਰੋ ॥ਏਹ ਵਸਤੁ ਤਜੀ ਨਹ ਜਾਈ ਨਿਤ ਨਿਤ ਰਖੁ ਉਰਿ ਧਾਰੋ ॥ਤਮ ਸੰਸਾਰੁ ਚਰਨ ਲਗਿ ਤਰੀਐ ਸਭੁ ਨਾਨਕ ਬ੍ਰਹਮ ਪਸਾਰੋ ॥੧॥",
+        "kind": "Mundawani Mahla 5 · sggs · DIGITAL SOURCE CANDIDATE",
+        "position": 157
+      }
+    },
+    {
+      "label": "Mahla 5 Tera Keeta Slok is final Rehras unit and Next is disabled",
+      "status": "PASS",
+      "details": {
+        "select": "43",
+        "unit": "rehras.slok",
+        "text": "ਸਲੋਕ ਮਹਲਾ ੫ ॥ਤੇਰਾ ਕੀਤਾ ਜਾਤੋ ਨਾਹੀ ਮੈਨੋ ਜੋਗੁ ਕੀਤੋਈ ॥ਮੈ ਨਿਰਗੁਣਿਆਰੇ ਕੋ ਗੁਣੁ ਨਾਹੀ ਆਪੇ ਤਰਸੁ ਪਇਓਈ ॥ਤਰਸੁ ਪਇਆ ਮਿਹਰਾਮਤਿ ਹੋਈ ਸਤਿਗੁਰੁ ਸਜਣੁ ਮਿਲਿਆ ॥ਨਾਨਕ ਨਾਮੁ ਮਿਲੈ ਤਾਂ ਜੀਵਾਂ ਤਨੁ ਮਨੁ ਥੀਵੈ ਹਰਿਆ ॥੧॥",
+        "kind": "Slok Mahla 5 · Tera Keeta · sggs · DIGITAL SOURCE CANDIDATE",
+        "position": 158
+      }
+    },
+    {
+      "label": "Last Rehras composite original lines match the source model hashes exactly",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Browser never displays any quarantined Anand Pauri 24 source as part of Rehras",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "44-unit mixed source reader fits narrow phone viewport without overflow",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "label": "Jaap original source browser makes zero network requests to third-party sites",
+      "status": "PASS",
+      "details": {
+        "count": 17
+      }
+    },
+    {
+      "label": "All candidate network requests are same loopback origin",
+      "status": "PASS",
+      "details": {
+        "requests": 17
+      }
+    },
+    {
+      "label": "No browser JavaScript exceptions",
+      "status": "PASS",
+      "details": {
+        "exceptions": []
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Nonshipping source-only Chrome QA against existing continuous-core; two unapproved digital original candidates, no family app",
+  "actualIPhone": "NOT TESTED",
+  "humanEditionReview": "PENDING",
+  "publicationAllowed": false,
+  "screenshots": [
+    "evidence/nitnem-original-qa-sohila-320.png",
+    "evidence/nitnem-original-qa-savaiye-390.png",
+    "evidence/nitnem-original-qa-chaupai-320.png",
+    "evidence/nitnem-original-qa-jaap-320.png",
+    "evidence/nitnem-original-qa-anand-hold-320.png",
+    "evidence/nitnem-original-qa-rehras-320.png"
+  ]
+}

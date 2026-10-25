@@ -1,0 +1,252 @@
+/* GLP-001 Full Nitnem local QA only. Two frozen ORIGINAL digital source
+ * candidates share accepted continuous-core.js. Never served via family PWA.
+ * No storage, audio, analytics, permissions or unverified teaching.
+ */
+const LOCAL_HOSTS=new Set(['localhost','127.0.0.1']);
+const SOURCES=Object.freeze({
+ sohila:{
+  path:'../docs/research/n1-sohila/sohila-candidate-original.json',
+  digest:'badd09042c55995be3b0d7af23059a3275cd8f317adc5250014db8b7e3f0dfde',
+  compositionId:'kirtan-sohila',units:5,lines:56,sourceFamily:'sggs'
+ },
+ savaiye:{
+  path:'../docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json',
+  digest:'bbd78d6efc4339757199e3b06191de43ea886455d026ca35b5a09a78eb14ba8e',
+  compositionId:'tav-prasad-savaiye',units:10,lines:40,sourceFamily:'dasam'
+ },
+ chaupai:{
+  path:'../docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json',
+  digest:'06fd09902871c1aed28913e265443080575ac60ebf1afff4195aa7f346ac3747',
+  compositionId:'rehras-benti-chaupai-excerpt',units:25,lines:100,sourceFamily:'dasam'
+ },
+ jaap:{
+  path:'../docs/research/n3-dasam-jaap/jaap-199-original-candidate.json',
+  digest:'dd41b99e82473e6f4e4387437ae07a33d33c7cfd717b0408599dec1e7d96f494',
+  compositionId:'jaap-sahib',units:199,lines:782,sourceFamily:'dasam'
+ },
+ anand:{
+  path:'../docs/research/n2-anand/anand-40-original-candidate.json',
+  digest:'3efd383d9e5a351934d516582a7acb6d2eeb315f5faa8d4badf12cf3a31c9ab9',
+  compositionId:'anand-sahib',units:40,lines:208,sourceFamily:'sggs'
+ },
+ rehras:{
+  path:'../docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json',
+  digest:'e1a2a6d7d61ecfa273d3724438a317d552bcffd62e4bd602c9c10530d699659a',
+  compositionId:'sodar-rehras-sgpc-digital-candidate',units:44,lines:159,sourceFamily:'composite',sections:6
+ }
+});
+const $=id=>document.getElementById(id);
+const C=window.GLPContinuousCore;
+let sourceKey=null,units=[],model=null,activeRecord=null,position={index:0,token:0},unitIndex=0,playing=false,clock=null,readerReady=false;
+const securityMsg='Engineering-only digital Gurmukhi candidate. No qualified source/edition approval or family release.';
+async function sha(value){
+ const bytes=new TextEncoder().encode(value);
+ const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',bytes));
+ return [...hash].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+const metadata=o=>JSON.stringify(o.units.flatMap(u=>u.lines.map(l=>[u.unitId,l.id,l.text,l.sha256,l.location??null])));
+function fail(message){
+ pause();
+ $('qa-status').textContent='SOURCE BLOCKED: '+message;
+ $('composition-original').replaceChildren();
+ $('original-preface').replaceChildren();
+ readerReady=false;
+ throw Error(message);
+}
+function pause(){
+ playing=false;
+ if(clock!==null){clearInterval(clock);clock=null;}
+ $('qa-play').setAttribute('aria-pressed','false');
+ $('qa-play').textContent='Play guide';
+}
+function status(label){$('qa-status').textContent=label;}
+async function verifyRecord(record,spec){
+ if(spec.sourceFamily==='composite'){
+  const expectedOrder=['sggs-nine','chaupai-25','savaiya-pae-gahe','dohira-sagal-duar','anand-selected','mundawani-slok'];
+  if(record.compositionId!==spec.compositionId||record.sections?.length!==6||record.sections.map(s=>s.componentId).join('|')!==expectedOrder.join('|')||
+     record.sourceFamily!=='composite'||record.sourceApproved!==false||record.humanTextCollationApproved!==false||
+     record.readerEnabled!==false||record.releaseAuthorized!==false)fail('Six-section SGPC source candidate identity or publication hold changed');
+  const allUnits=record.sections.flatMap(s=>s.units);
+  const allLines=allUnits.flatMap(u=>u.lines);
+  if(allUnits.length!==spec.units||allLines.length!==spec.lines)fail('Complete SGPC Rehras 44/159 source count changed');
+  if(await sha(JSON.stringify(record))!==spec.digest)fail('SGPC Rehras original full candidate digest changed');
+  const unique=new Set();
+  for(const section of record.sections){
+   if(section.humanTextApproved!==false||section.rightsApproved!==false||section.variationReviewPending!==true)fail('Unapproved SGPC source falsely promoted');
+   for(const u of section.units)for(const l of u.lines){
+    if(unique.has(l.id)||l.sourceFamily!==section.sourceFamily||await sha(l.text)!==l.sha256)fail('SGPC original mixed-source identity or SHA mismatch');
+    unique.add(l.id);
+    if(l.sourceFamily==='dasam'&&(l.location.system!=='dasam_section'||Object.hasOwn(l.location,'ang')))fail('Dasam text claims invented SGGS Ang');
+    if(l.sourceFamily==='sggs'&&!['ang','sggs_rehras_section'].includes(l.location.system))fail('SGGS source locator scheme unexpected');
+   }
+  }
+  return allLines;
+ }
+ if(record.compositionId!==spec.compositionId||record.units?.length!==spec.units)fail('Unexpected source identity');
+ if(record.edition?.sourceFamily!==spec.sourceFamily||record.edition?.humanCollationApproved!==false)fail('Source review identity mismatch');
+ if(record.ui?.readable!==false||record.ui?.meaningReviewStatus!=='not_ingested'||record.ui?.studyReviewStatus!=='not_ingested')fail('This source fixture must remain UNAPPROVED');
+ const sourceLines=record.units.flatMap(u=>u.lines);
+ if(sourceLines.length!==spec.lines)fail('Missing original Gurmukhi line');
+ if(await sha(metadata(record))!==spec.digest)fail('Candidate full original text/order hash does not match');
+ const ids=new Set();
+ for(const line of sourceLines){
+  if(ids.has(line.id)||typeof line.text!=='string'||!line.text.trim())fail('Duplicate/empty original source');
+  ids.add(line.id);
+  if(await sha(line.text)!==line.sha256)fail('Original text SHA-256 verification failed');
+  if(line.location?.system!==(spec.sourceFamily==='sggs'?'ang':'dasam_section'))fail('Inconsistent composition source locator');
+  if(spec.sourceFamily==='dasam'&&('ang' in line.location))fail('Invented SGGS Ang on Dasam original');
+ }
+ if(spec.compositionId==='kirtan-sohila'&&record.units.some(u=>u.sourceHeadingIncludedInLines!==true))fail('Original Sohila headings must remain exactly once in source');
+ if(spec.compositionId==='anand-sahib'&&(record.prefaceOriginalDigitalCandidates?.length!==2||sourceLines.filter(l=>l.humanTextEditionReviewNeeded===true).length!==1))fail('Anand editorial source hold or original prefatory source changed');
+ if(spec.sourceFamily==='dasam'&&((spec.compositionId==='jaap-sahib'&&record.prefaceOriginalDigitalCandidates?.length!==6)||(spec.compositionId!=='jaap-sahib'&&record.prefaceOriginalCandidate?.length!==3)))fail('Original-source preface does not match this Dasam candidate');
+ return sourceLines;
+}
+function createWords(line){
+ const p=document.createElement('p');
+ p.dataset.id=line.id;p.dataset.sourceSha256=line.sha256;
+ if(line.humanTextEditionReviewNeeded===true){
+  p.className='qa-quarantine';p.lang='en';p.setAttribute('role','note');
+  p.textContent='Original Gurmukhi line under independent Unicode/edition review (U+F03D); withheld from the recitation preview. Source SHA-256 preserved.';
+  return p;
+ }
+ p.lang='pa';p.className='qa-source-line';
+ const parts=line.text.split(/(\s+)/u).filter(Boolean);
+ for(const part of parts){
+  if(/^\s+$/u.test(part)){p.append(document.createTextNode(part));continue;}
+  const word=document.createElement('span');word.className='qa-word';word.textContent=part;
+  word.dataset.word=String(p.querySelectorAll('.qa-word').length);
+  p.append(word);
+ }
+ return p;
+}
+function build(record){
+ const parent=$('composition-original'),preface=$('original-preface');
+ const fragment=document.createDocumentFragment();
+ for(const [i,u] of (record.units||record.sections?.flatMap(s=>s.units)||[]).entries()){
+  // Long Jaap (199 chhands) displays one checked unit at a time; no 782-line DOM.
+  if((sourceKey==='jaap'||sourceKey==='anand'||sourceKey==='rehras')&&i!==unitIndex)continue;
+  const section=document.createElement('section');
+  section.className='qa-unit';section.id='qa-unit-'+i;section.dataset.unitId=u.unitId;
+  const title=document.createElement('h2');
+  title.textContent=(record.compositionId==='sodar-rehras-sgpc-digital-candidate'?u.title+' · '+u.sourceFamily:(record.compositionId==='kirtan-sohila'?'Shabad ':record.compositionId==='tav-prasad-savaiye'?'Savaiya ':record.compositionId==='jaap-sahib'?'Jaap Chhand ':record.compositionId==='anand-sahib'?'Anand Pauri ':'Rehras Chaupai Pauri ')+(i+1))+' · DIGITAL SOURCE CANDIDATE';
+  section.append(title);
+  if(sourceKey==='jaap')for(const h of u.metricalHeadingsDigitalCandidates||[]){const marker=document.createElement('p');marker.className='qa-meter';marker.lang='pa';marker.dataset.sourceSha256=h.sha256;marker.textContent=h.text;section.append(marker);}
+  for(const l of u.lines)section.append(createWords(l));
+  fragment.append(section);
+ }
+ parent.replaceChildren(fragment);
+ const originalPreface=document.createDocumentFragment();
+ const prefaceRows=record.prefaceOriginalCandidate||record.prefaceOriginalDigitalCandidates||[];
+ for(const r of prefaceRows){
+  const p=document.createElement('p');
+  p.className='qa-preface';p.lang='pa';p.textContent=r.text??r.originalText;
+  originalPreface.append(p);
+ }
+ preface.replaceChildren(originalPreface);
+}
+function updateLocation(){
+ const current=model.lines[position.index];
+ if(!current)return;
+ $('qa-location').textContent=(sourceKey==='sohila'?'Shabad ':sourceKey==='savaiye'?'Savaiya ':sourceKey==='jaap'?'Jaap Chhand ':sourceKey==='anand'?'Anand Pauri ':sourceKey==='rehras'?'Rehras section ':'Rehras Chaupai Pauri ')+(current.unitIndex+1)+' · line '+(current.lineIndex+1);
+ $('qa-unit-picker').value=String(current.unitIndex);
+ $('qa-previous').disabled=current.unitIndex===0;
+ $('qa-next').disabled=current.unitIndex===units.length-1;
+}
+function mark(){
+ for(const x of document.querySelectorAll('.qa-word[data-active=true]'))delete x.dataset.active;
+ for(const x of document.querySelectorAll('.qa-source-line[aria-current]'))x.removeAttribute('aria-current');
+ const l=model.lines[position.index],element=document.querySelector('[data-id="'+l.id+'"]');
+ if(!element)return;
+ const word=element.querySelectorAll('.qa-word')[position.token];
+ if(word)word.dataset.active='true';
+ element.setAttribute('aria-current','location');
+ unitIndex=l.unitIndex;
+ updateLocation();
+ return element;
+}
+function goToUnit(i){
+ if(!readerReady)return;
+ pause();
+ unitIndex=Math.max(0,Math.min(units.length-1,i));
+ position={index:model.starts[unitIndex],token:0};
+ if(sourceKey==='jaap'||sourceKey==='anand'||sourceKey==='rehras')build(activeRecord);
+ mark();
+ $('qa-unit-'+unitIndex).scrollIntoView({behavior:'instant',block:'start'});
+ status('Unreviewed source · '+$('qa-location').textContent+'. '+securityMsg);
+}
+function step(){
+ if(!readerReady||!model)return false;
+ const next=C.advance(position,model.lines);
+ if(next.finished){pause();status('Source guide completed. '+securityMsg);return false;}
+ if(sourceKey==='anand'&&(model.lines[position.index].id==='anand24.line03'||model.lines[next.index].id==='anand24.line03')){
+  pause();position={index:next.index,token:0};
+  if(model.lines[position.index].unitIndex!==unitIndex)build(activeRecord);
+  mark();
+  status('STOP: Anand Pauri 24 original text contains unresolved Unicode. The original remains preserved for human review, not recitation.');
+  return false;
+ }
+ position={index:next.index,token:next.token};
+ if((sourceKey==='jaap'||sourceKey==='anand'||sourceKey==='rehras')&&model.lines[position.index].unitIndex!==unitIndex)build(activeRecord);
+ const current=mark();
+ if(next.newLine&&current)current.scrollIntoView({behavior:'instant',block:'center'});
+ return true;
+}
+function start(){
+ if(!readerReady||playing)return;
+ playing=true;$('qa-play').setAttribute('aria-pressed','true');$('qa-play').textContent='Pause guide';
+ status('Silent visual guide · unapproved source candidate, not audio synchronized.');
+ clock=setInterval(step,600);
+}
+async function load(key){
+ if(!LOCAL_HOSTS.has(location.hostname)||!isSecureContext)throw Error('Nonshipping source viewer only works on trusted loopback');
+ if(!Object.hasOwn(SOURCES,key))throw Error('Unknown research source');
+ pause();readerReady=false;
+ sourceKey=key;
+ for(const button of document.querySelectorAll('[data-source]'))button.setAttribute('aria-pressed',String(button.dataset.source===key));
+ status('Verifying immutable source hash for '+key+'…');
+ $('composition-original').replaceChildren();
+ const response=await fetch(SOURCES[key].path,{cache:'no-store'});
+ if(!response.ok)fail('Frozen source candidate unavailable');
+ const record=await response.json();
+ await verifyRecord(record,SOURCES[key]);
+ units=(record.units||record.sections?.flatMap(s=>s.units)||[]).map(u=>({
+  id:u.unitId,title:u.title,lines:u.lines.map(l=>({
+   id:l.id,text:l.text,sha256:l.sha256,
+   ang:l.location.system==='ang'?l.location.ang:null
+  }))
+ }));
+ model=C.flatten(units);
+ if(model.lines.length!==SOURCES[key].lines)fail('Continuous-core original count mismatch');
+ const choices=document.createDocumentFragment();
+ units.forEach((u,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=(sourceKey==='jaap'?'Chhand ':sourceKey==='sohila'?'Shabad ':sourceKey==='savaiye'?'Savaiya ':sourceKey==='jaap'?'Chhand ':sourceKey==='rehras'?'Section ':'Pauri ')+(i+1);choices.append(o);});
+ $('qa-unit-picker').replaceChildren(choices);
+ unitIndex=0;activeRecord=record;
+ build(record);position={index:0,token:0};readerReady=true;
+ mark();
+ window.scrollTo({top:0,behavior:'instant'});
+ status('SHA-256 verified: '+model.lines.length+' ORIGINAL DIGITAL CANDIDATE lines; '+units.length+' units. '+securityMsg);
+}
+$('load-sohila').addEventListener('click',()=>load('sohila').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('load-savaiye').addEventListener('click',()=>load('savaiye').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('load-chaupai').addEventListener('click',()=>load('chaupai').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('load-jaap').addEventListener('click',()=>load('jaap').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('load-anand').addEventListener('click',()=>load('anand').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('load-rehras').addEventListener('click',()=>load('rehras').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('qa-previous').addEventListener('click',()=>goToUnit(unitIndex-1));
+$('qa-next').addEventListener('click',()=>goToUnit(unitIndex+1));
+$('qa-unit-picker').addEventListener('change',e=>{const i=Number(e.target.value);if(Number.isInteger(i)&&i>=0&&i<units.length)goToUnit(i);});
+$('qa-play').addEventListener('click',()=>playing?pause():start());
+$('qa-size').addEventListener('change',e=>{
+ const size=Number(e.target.value);
+ if(![30,40,48].includes(size)){e.target.value='30';return;}
+ document.documentElement.style.setProperty('--qa-gurmukhi',size+'px');
+ status('Gurmukhi '+size+'px · '+securityMsg);
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
+window.GLP_SOURCE_QA=Object.freeze({
+ getState:()=>({sourceKey,readerReady,playing,unitCount:units.length,lineCount:model?.lines.length||0,position:{...position},
+                sourceApproved:false,learningStored:false,releaseAuthorized:false,
+                guideLastIndex:model?.lines.length-1??null}),
+ step:()=>step()
+});
+load('sohila').catch(e=>status('SOURCE BLOCKED: '+e.message));
