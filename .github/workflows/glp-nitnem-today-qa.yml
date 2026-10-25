@@ -1,0 +1,47 @@
+name: GLP Full Nitnem Today QA (private preview, no publishing)
+on:
+  push:
+    branches:
+      - feature/glp-nitnem-today-hub-20261025
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preserve existing reader, scripture and learning
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: Full Nitnem linked-reading static route contract
+        run: |
+          node --check js/nitnem-today.js
+          node --check tests/nitnem-today-browser.mjs
+          node --check tests/nitnem-today-gated-browser.mjs
+          node tests/nitnem-today-contract.mjs
+      - name: Gated HTTPS source allowlist with throwaway credentials
+        run: |
+          python3 -c 'import ast; [ast.parse(open(x).read()) for x in ["tests/serve-gated-nitnem-today.py","tests/nitnem-today-gate-contract.py"]]'
+          python3 tests/nitnem-today-gate-contract.py
+      - name: Original preexisting frozen service-worker reproducibility
+        run: |
+          node tests/build-sw.mjs 0.9-japji-v1-m0-serenity-review-2
+          git diff --exit-code -- sw.js
+      - name: No production deploy or unapproved in-app scripture
+        run: |
+          test ! -f jaap.html
+          test ! -f rehras.html
+          test ! -f anand.html
+          test ! -f sohila.html
+          ! grep -q 'nitnem-today.html' sw.js
+          git diff --exit-code -- full-japji.html js/japji-full-data.js js/japji-full.js js/learning.js js/shared-learning.js

@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-10-25T18:49:23.844Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Fresh isolated browser launched",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Private invitation opens trusted HTTPS",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Secure HttpOnly SameSite signed cookie issued",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Invitation bearer token is absent from final reader address",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Seven complete reading destinations grouped into 5 morning, 1 evening, 1 night",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Japji points to our own source and other six to external HTTPS full text",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Ardas kept separate from seven banis",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Nothing is automatically marked complete on page load",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "320px phone: no horizontal overflow and reading/complete targets 44px",
+      "status": "PASS",
+      "data": {
+        "scroll": 320,
+        "width": 320,
+        "buttonHeights": [
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44
+        ],
+        "targets": 7
+      }
+    },
+    {
+      "name": "390px phone: no horizontal overflow and reading/complete targets 44px",
+      "status": "PASS",
+      "data": {
+        "scroll": 390,
+        "width": 390,
+        "buttonHeights": [
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44
+        ],
+        "targets": 7
+      }
+    },
+    {
+      "name": "Explicit mark changes only one of seven",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Only local, explicitly requested completion recorded",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Marked daily completion persists on reload",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Mark toggles off without changing any external reading",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Seven separate completion controls reach 7/7",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Previous-day marks are not mistaken for current completion",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "No external provider is loaded merely by opening the Nitnem hub",
+      "status": "PASS",
+      "data": {
+        "requestCount": 11
+      }
+    },
+    {
+      "name": "Existing Serenity Japji route stays navigable",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Existing Japji 385 original occurrences stay available",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Returning from existing reader to Full Nitnem does not lose the hub",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "Hub route is not replaced by the original service-worker offline fallback",
+      "status": "PASS",
+      "data": {}
+    },
+    {
+      "name": "No unhandled script errors",
+      "status": "PASS",
+      "data": {}
+    }
+  ],
+  "errors": [],
+  "scope": "Mac Chrome phone viewport, invite-gated HTTPS Full Nitnem portal and original Japji reader; not physical iOS Safari",
+  "publicationScope": "GATED LINKED READING PREVIEW; external sources not edition certified",
+  "appScriptureChanged": false,
+  "externalSourceContentsCopied": false
+}
