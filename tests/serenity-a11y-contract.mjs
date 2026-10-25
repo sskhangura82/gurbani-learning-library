@@ -1,0 +1,26 @@
+/* GLP-001 draft-only accessibility contract, structural not a VoiceOver pass. */
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+import vm from 'node:vm';
+const root=new URL('../',import.meta.url);
+const read=x=>fs.readFileSync(new URL(x,root),'utf8');
+const js=read('js/japji-full.js'),css=read('css/reader-serenity.css'),html=read('full-japji.html');
+const scope={window:{}};vm.runInNewContext(read('js/japji-full-data.js'),scope);
+const units=scope.window.GLP_FULL_JAPJI.units;
+const lines=units.flatMap(u=>u.lines);
+assert.equal(lines.length,385);assert.equal(units.length,42);
+for(const line of lines)assert.equal(crypto.createHash('sha256').update(line.text).digest('hex'),line.sha256);
+assert.ok(js.includes('aria-label="Draft meaning for '));
+assert.match(js,/qualified review pending/);
+assert.match(js,/class="jump-adjacent"/);
+assert.match(js,/Previous passage:/);
+assert.match(js,/Next passage:/);
+assert.match(js,/aria-current="location"/);
+assert.match(js,/status\('Moved to '/);
+assert.match(js,/data-action="jump"/);
+assert.match(css,/\.jump-adjacent button/);
+assert.match(css,/min-height:44px/);
+assert.match(html,/role="status" aria-live="polite"/);
+assert.match(html,/id="dock-position"/);
+console.log(JSON.stringify({status:'PASS',checks:13,scope:'Static source and declared accessibility behavior, not a real-browser/iOS screen-reader certification'}));

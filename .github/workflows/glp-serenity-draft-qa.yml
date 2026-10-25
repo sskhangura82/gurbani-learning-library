@@ -1,0 +1,61 @@
+name: GLP Serenity Draft QA - no deployment
+on:
+  push:
+    branches:
+      - feature/glp-reader-serenity-review-20261024
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Scripture, saved learning, and M0 contracts
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/serenity-a11y-contract.mjs
+      - name: Hash-checked candidate offline shell
+        run: |
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: Reproducible unique review worker
+        run: |
+          node tests/build-sw.mjs 0.9-japji-v1-m0-serenity-review-2
+          git diff --exit-code -- sw.js
+      - name: Prepare isolated allowlisted phone-preview package (no hosting)
+        env:
+          PINNED_SHA: ${{ github.sha }}
+          PREVIEW_ROOT: ${{ runner.temp }}/GurbaniLearningLibrary/previews/serenity-ci
+        run: |
+          node --check tests/prepare-private-preview.mjs
+          node --check tests/private-preview-browser-check.mjs
+          node --check tests/serenity-a11y-browser.mjs
+          node --check tests/gated-preview-browser-check.mjs
+          python3 -c 'import ast; ast.parse(open("tests/serve-private-preview.py").read()); ast.parse(open("tests/serve-gated-phone-preview.py").read()); ast.parse(open("tests/gated-preview-contract.py").read())'
+          node tests/prepare-private-preview.mjs "$PREVIEW_ROOT" "$PINNED_SHA"
+          test -f "$PREVIEW_ROOT/sw.js"
+          test -f "$PREVIEW_ROOT/css/reader-serenity.css"
+          test ! -e "$PREVIEW_ROOT/.git"
+          test ! -e "$PREVIEW_ROOT/tests"
+          python3 tests/serve-private-preview.py "$PREVIEW_ROOT" --port 8897 &
+          preview_pid=$!
+          trap 'kill "$preview_pid" 2>/dev/null || true' EXIT
+          sleep 1
+          curl --fail --silent --show-error http://127.0.0.1:8897/full-japji.html >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8897/css/reader-serenity.css >/dev/null
+          test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8897/.git/config)" = 404
+          test "$(curl --path-as-is --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8897/../sw.js)" = 404
+          test "$(curl --silent --request POST --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8897/full-japji.html)" = 405
+      - name: Gated preview contract with throwaway credentials (no hosting)
+        env:
+          PREVIEW_ROOT: ${{ runner.temp }}/GurbaniLearningLibrary/previews/serenity-ci
+        run: |
+          python3 tests/gated-preview-contract.py "$PREVIEW_ROOT"

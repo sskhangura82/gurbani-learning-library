@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-10-25T06:24:49.309Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Isolated Chrome launched",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "QA reader navigates in actual Chrome",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "385 exact source lines, 42 named passages and 385 accessible draft labels",
+      "status": "PASS",
+      "details": {
+        "n": 385,
+        "matching": true,
+        "passages": 42,
+        "meaningCount": 385,
+        "draftLabels": true
+      }
+    },
+    {
+      "name": "Initial Jump has concise previous/next navigation and exactly one current passage",
+      "status": "PASS",
+      "details": {
+        "rows": 42,
+        "group": "group",
+        "previous": true,
+        "next": false,
+        "current": 1,
+        "position": "Current passage: Mool Mantar. You can move one passage at a time or choose any passage below.",
+        "metrics": [
+          {
+            "w": 125,
+            "h": 46.59375
+          },
+          {
+            "w": 125,
+            "h": 46.59375
+          }
+        ]
+      }
+    },
+    {
+      "name": "320px adjacent buttons remain at least 44px and unclipped",
+      "status": "PASS",
+      "details": [
+        {
+          "w": 125,
+          "h": 46.59375
+        },
+        {
+          "w": 125,
+          "h": 46.59375
+        }
+      ]
+    },
+    {
+      "name": "Next passage moves reading anchor, announces destination and restores focus",
+      "status": "PASS",
+      "details": {
+        "id": "title.line01",
+        "expected": "title.line01",
+        "status": "Moved to Jap · line 1.",
+        "focus": "dock-position"
+      }
+    },
+    {
+      "name": "Middle passage offers both neighbors with one current marker",
+      "status": "PASS",
+      "details": {
+        "prev": false,
+        "next": false,
+        "current": 1
+      }
+    },
+    {
+      "name": "Previous passage restores exact first-unit anchor",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Last passage disables Next and preserves all 42 jump destinations",
+      "status": "PASS",
+      "details": {
+        "last": "378"
+      }
+    },
+    {
+      "name": "Escape closes native Jump dialog and returns keyboard focus to dock",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "Chrome accessibility tree identifies draft button and review disclaimer",
+      "status": "PASS",
+      "details": {
+        "accessibleName": "Draft meaning for Pauri 3, line 1. Open detailed explanation; qualified review pending"
+      }
+    },
+    {
+      "name": "Meaning mode remains usable at 320px with no overflow",
+      "status": "PASS",
+      "details": {
+        "width": 320,
+        "window": 320,
+        "meaningVisible": true
+      }
+    },
+    {
+      "name": "Reduced-motion preference disables Gurmukhi animated transition",
+      "status": "PASS",
+      "details": {
+        "matches": true,
+        "shadow": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "No unhandled JavaScript exceptions",
+      "status": "PASS",
+      "details": {}
+    }
+  ],
+  "errors": [],
+  "environment": "Actual isolated Mac Chrome accessibility tree + 320px mobile viewport. Not physical iOS Safari/VoiceOver."
+}

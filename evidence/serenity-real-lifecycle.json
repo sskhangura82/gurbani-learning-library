@@ -1,0 +1,157 @@
+{
+  "scenario": "PR18 serenity actual Chrome R7→M0→R7→M0, versioned cache, explicit activation, synthetic learning, origin 503",
+  "at": "2026-10-25T06:23:14.920Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Real Chrome isolated loopback available",
+      "status": "PASS",
+      "data": {
+        "base": "http://127.0.0.1:8970",
+        "profile": "disposable"
+      },
+      "at": "2026-10-25T06:23:03.671Z"
+    },
+    {
+      "name": "Real browser at 01-r7",
+      "status": "PASS",
+      "data": {
+        "reader": {
+          "version": "0.9-japji-v1-r7",
+          "lines": 385,
+          "source": 385
+        },
+        "worker": {
+          "active": "activated",
+          "controller": true
+        },
+        "css": {
+          "versions": [
+            "glp-static:http://127.0.0.1:8970/:qa-m0-01-r7-20261025T062303222262Z"
+          ],
+          "hasCSS": false
+        }
+      },
+      "at": "2026-10-25T06:23:04.604Z"
+    },
+    {
+      "name": "Update waited for explicit user action 02-m0",
+      "status": "PASS",
+      "data": {
+        "oldReader": "0.9-japji-v1-r7"
+      },
+      "at": "2026-10-25T06:23:05.709Z"
+    },
+    {
+      "name": "Real browser at 02-m0",
+      "status": "PASS",
+      "data": {
+        "reader": {
+          "version": "0.9-japji-v1-m0-candidate-2",
+          "lines": 385,
+          "source": 385
+        },
+        "worker": {
+          "active": "activated",
+          "controller": true
+        },
+        "css": {
+          "versions": [
+            "glp-static:http://127.0.0.1:8970/:qa-m0-02-m0-20261025T062303222262Z"
+          ],
+          "hasCSS": true
+        }
+      },
+      "at": "2026-10-25T06:23:07.915Z"
+    },
+    {
+      "name": "Update waited for explicit user action 03-r7-rollback",
+      "status": "PASS",
+      "data": {
+        "oldReader": "0.9-japji-v1-m0-candidate-2"
+      },
+      "at": "2026-10-25T06:23:08.469Z"
+    },
+    {
+      "name": "Real browser at 03-r7-rollback",
+      "status": "PASS",
+      "data": {
+        "reader": {
+          "version": "0.9-japji-v1-r7",
+          "lines": 385,
+          "source": 385
+        },
+        "worker": {
+          "active": "activated",
+          "controller": true
+        },
+        "css": {
+          "versions": [
+            "glp-static:http://127.0.0.1:8970/:qa-m0-03-r7-rollback-20261025T062303222262Z"
+          ],
+          "hasCSS": false
+        }
+      },
+      "at": "2026-10-25T06:23:10.679Z"
+    },
+    {
+      "name": "Update waited for explicit user action 04-m0-repeat",
+      "status": "PASS",
+      "data": {
+        "oldReader": "0.9-japji-v1-r7"
+      },
+      "at": "2026-10-25T06:23:11.232Z"
+    },
+    {
+      "name": "Real browser at 04-m0-repeat",
+      "status": "PASS",
+      "data": {
+        "reader": {
+          "version": "0.9-japji-v1-m0-candidate-2",
+          "lines": 385,
+          "source": 385
+        },
+        "worker": {
+          "active": "activated",
+          "controller": true
+        },
+        "css": {
+          "versions": [
+            "glp-static:http://127.0.0.1:8970/:qa-m0-04-m0-repeat-20261025T062303222262Z"
+          ],
+          "hasCSS": true
+        }
+      },
+      "at": "2026-10-25T06:23:13.440Z"
+    },
+    {
+      "name": "CSS and scripture survive simulated 503 with saved learning",
+      "status": "PASS",
+      "data": {
+        "offline": {
+          "lines": 385,
+          "styleSheets": [
+            "japji-full.css",
+            "reader-serenity.css"
+          ],
+          "dockHeight": "52px"
+        }
+      },
+      "at": "2026-10-25T06:23:14.918Z"
+    },
+    {
+      "name": "No fixture FAIL results",
+      "status": "PASS",
+      "data": {
+        "checks": 15
+      },
+      "at": "2026-10-25T06:23:14.919Z"
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Isolated Chrome on trusted loopback, not physical iPhone",
+    "QA protocol guard and private namespace patched only inside temp fixture",
+    "Simulated origin 503, not physical airplane mode"
+  ]
+}
