@@ -47,13 +47,13 @@ Source capture is manual/research-only: `python3 tools/compositions/intake_sohil
 
 ## Parallel engineering work orders — do not idle for editorial reviews
 
-**N1** Sohila source receipt + generic-reader architecture and test harness. Current deliverable = frozen source candidate, discrepancy ledger, fails-closed machine contracts.
+**N1** Sohila source receipt + generic-reader bridge. The frozen 56-line original source now passes an explicit *nonshipping* adapter `tools/compositions/continuous-source-parity.mjs` against the existing R7 continuous-reader core (five boundaries, 56 exact lines, every token, passage transition, source-specific prospective storage namespace, and no active route). `tests/sohila-continuous-parity.mjs` proves source parity, refuses unreviewed public claims, and never writes browser data. Accepted R7 supports 48px scripture; the 60px Serenity successor is a **separate future integration** and is not falsely claimed by this baseline. No second-bani public reader or source approval exists.
 
 **N2** Full Anand original-source audit. A **40-pauri / 210-row** digital cross-comparison now exists at `docs/research/n2-anand/anand-source-audit.json` (208/210 exact NFC row matches). Global row 0 has a heading-terminator difference; global row 123 (Ang 920, digital row 13) has a source-private-use U+F03D character where the second website uses a different Gurmukhi combining character sequence. Neither is silently normalized or certified; no Anand composition model or reader is generated. Independent SGGS edition adjudication and qualified review are required before ingestion. Other lanes need not idle.
 
 **N3** Jaap, Savaiye, Chaupai original-source versions and bounded comparison (names/limits/edition). Build independent data validation tests; no SGGS Ang assignments to Dasam text.
 
-**N4** Rehras ordered composition from already verified source slices. Distinguish SGGS and Dasam components and named traditions; never blindly concatenate websites.
+**N4** Rehras six-section **non-text** SGPC composition manifest is now authored under `docs/research/n4-rehras-component-ledger.json`: nine SGGS hymns; Benti Chaupai excerpt; distinct evening Savaiya; distinct Dohira; Anand first five plus 40th pauri; Mundawani and Mahla 5 Slok. `tests/rehras-component-ledger.mjs` forbids invented Dasam Ang labels, conflating the morning ten Savaiye with the evening one, or silently offering any unverified verse. It contains **no Rehras text**, no enabled route and does not settle community-version differences.
 
 **N5** Integration: reconcile the source contracts from this branch with PR #12's existing Nitnem collection and PR #18's proven Serenity reader, without including PR #12's unreviewed Mind lesson in a production release. Use one reader framework, per-composition local state, release worker manifest, stable rollback. Ardas is a companion practice.
 

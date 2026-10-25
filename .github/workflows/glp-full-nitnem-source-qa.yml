@@ -29,6 +29,10 @@ jobs:
         run: node tests/sohila-source-intake.mjs
       - name: Anand 40-pauri comparison and explicit ambiguity hold
         run: node tests/anand-source-audit.mjs
+      - name: Sohila compatibility with existing R7 continuous reader — nonshipping
+        run: node tests/sohila-continuous-parity.mjs
+      - name: Rehras ordered composite component boundaries — no verse ingestion
+        run: node tests/rehras-component-ledger.mjs
       - name: Python source intake syntax only — no web calls or app writes
         run: |
           python3 -c 'import ast; ast.parse(open("tools/compositions/intake_sohila.py",encoding="utf-8").read()); ast.parse(open("tools/compositions/audit_anand.py",encoding="utf-8").read())'
@@ -36,6 +40,9 @@ jobs:
         run: |
           node --check tests/sohila-source-intake.mjs
           node --check tests/anand-source-audit.mjs
+          node --check tests/sohila-continuous-parity.mjs
+          node --check tests/rehras-component-ledger.mjs
+          node --check tools/compositions/continuous-source-parity.mjs
           test ! -f sohila.html
           test ! -f anand.html
           test ! -f js/sohila-data.js
