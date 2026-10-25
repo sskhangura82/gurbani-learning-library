@@ -1,0 +1,100 @@
+{
+  "testedAt": "2026-10-25T05:26:37.774Z",
+  "scope": "Private tailnet HTTPS reader on disposable Mac Chrome mobile viewports",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Isolated Chrome profile started",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T05:26:34.014Z"
+    },
+    {
+      "name": "Private URL provides real HTTPS, SW and Web Locks",
+      "status": "PASS",
+      "details": {
+        "secure": true,
+        "sw": true,
+        "locks": true
+      },
+      "at": "2026-10-25T05:26:34.364Z"
+    },
+    {
+      "name": "Complete reader and Serenity styling rendered",
+      "status": "PASS",
+      "details": {
+        "version": "0.9-japji-v1-m0-candidate-2"
+      },
+      "at": "2026-10-25T05:26:34.364Z"
+    },
+    {
+      "name": "Original 385 Gurmukhi source strings byte-equivalent",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T05:26:34.364Z"
+    },
+    {
+      "name": "Serenity 6-button dock fits 320px",
+      "status": "PASS",
+      "details": {
+        "dockHeight": 52
+      },
+      "at": "2026-10-25T05:26:34.655Z"
+    },
+    {
+      "name": "Serenity 6-button dock fits 390px",
+      "status": "PASS",
+      "details": {
+        "dockHeight": 52
+      },
+      "at": "2026-10-25T05:26:34.955Z"
+    },
+    {
+      "name": "Versioned release worker caches Serenity CSS and reader",
+      "status": "PASS",
+      "details": {
+        "versionCount": 1
+      },
+      "at": "2026-10-25T05:26:35.676Z"
+    },
+    {
+      "name": "Synthetic reflection and bookmark persist after reload",
+      "status": "PASS",
+      "details": {
+        "notes": 1,
+        "bookmarks": 1
+      },
+      "at": "2026-10-25T05:26:36.851Z"
+    },
+    {
+      "name": "Full original reader and stylesheet work with network blocked",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T05:26:37.558Z"
+    },
+    {
+      "name": "Home loads from cache with network blocked",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T05:26:37.575Z"
+    },
+    {
+      "name": "Synthetic saved learning survives offline navigation",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T05:26:37.773Z"
+    },
+    {
+      "name": "No browser runtime exceptions in tested flow",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T05:26:37.774Z"
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "Only synthetic QA learning on new isolated origin; no personal notes read or exported",
+    "Native iPhone Safari/VoiceOver and real airplane mode NOT TESTED",
+    "Private tailnet URL intentionally omitted from public evidence"
+  ]
+}
