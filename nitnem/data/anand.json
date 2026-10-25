@@ -1,0 +1,3554 @@
+{
+  "schema": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+  "compositionId": "anand",
+  "originalCompositionId": "anand-sahib",
+  "title": "Anand Sahib",
+  "titleGurmukhi": "ਅਨੰਦੁ ਸਾਹਿਬ",
+  "daypart": "Morning",
+  "sourceFamily": "sggs",
+  "reference": "Sri Guru Granth Sahib Ji, Ang 917–922 · full forty pauris",
+  "caveat": "Pauri 24 has a quarantined digital Unicode source line",
+  "sourceFileSha256": "4b78b5cc06622e6a21086a95594f90bdf6ead649c774faa532da595947bb6667",
+  "sourceRepositoryCommit": "373ccc34f4a1c0ccb6ce36654bf6e9574087200f",
+  "editionId": "sggs-anand-40-digital-candidate-20261025",
+  "sourceStatus": "DIGITAL_ORIGINAL_CANDIDATE_UNAPPROVED",
+  "humanCollationApproved": false,
+  "rightsCleared": false,
+  "translationApproved": false,
+  "publishedAsFamilyScripture": false,
+  "sections": [],
+  "preface": [
+    {
+      "text": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ",
+      "sha256": "3918f1fc48d89824018588a7f682514e23b52d88802f85d02dbaad2a74966718"
+    },
+    {
+      "text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "sha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013"
+    }
+  ],
+  "unitCount": 40,
+  "originalLineCount": 208,
+  "units": [
+    {
+      "id": "anand01",
+      "title": "Anand Sahib · Pauri 1",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand01.line01",
+          "text": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥",
+          "sha256": "d14d993865589bd7856dae09b4db6212bebdc276bcfddbeee5f299a7048d2d85",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 2,
+            "globalSourceRow": 2,
+            "pauri": 1,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand01.line02",
+          "text": "ਸਤਿਗੁਰੁ ਤ ਪਾਇਆ ਸਹਜ ਸੇਤੀ ਮਨਿ ਵਜੀਆ ਵਾਧਾਈਆ ॥",
+          "sha256": "c2a0dcc5d41cee8b31cd9fa79d499da90d7e75716785f42e865742e52aa941e3",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 3,
+            "globalSourceRow": 3,
+            "pauri": 1,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand01.line03",
+          "text": "ਰਾਗ ਰਤਨ ਪਰਵਾਰ ਪਰੀਆ ਸਬਦ ਗਾਵਣ ਆਈਆ ॥",
+          "sha256": "d702c214b3e480d8d21ab911b06eac41988d7f0976724fae4efa41646d581c2f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 4,
+            "globalSourceRow": 4,
+            "pauri": 1,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand01.line04",
+          "text": "ਸਬਦੋ ਤ ਗਾਵਹੁ ਹਰੀ ਕੇਰਾ ਮਨਿ ਜਿਨੀ ਵਸਾਇਆ ॥",
+          "sha256": "e22e6ab0c1260e3e105c70e8f23ad5ef60804e813a9bc02df73e6a8002d7d5a5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 5,
+            "globalSourceRow": 5,
+            "pauri": 1,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand01.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਅਨੰਦੁ ਹੋਆ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥੧॥",
+          "sha256": "a22e6df242dea7fef284cab7e58d28dfcdd179d296a531cd3c212ce2a63dd7dd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 6,
+            "globalSourceRow": 6,
+            "pauri": 1,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand02",
+      "title": "Anand Sahib · Pauri 2",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand02.line01",
+          "text": "ਏ ਮਨ ਮੇਰਿਆ ਤੂ ਸਦਾ ਰਹੁ ਹਰਿ ਨਾਲੇ ॥",
+          "sha256": "7c5ce0b487e7007fad427b32dd05e37214d1909e5a760e8866235fb39c353903",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 7,
+            "globalSourceRow": 7,
+            "pauri": 2,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand02.line02",
+          "text": "ਹਰਿ ਨਾਲਿ ਰਹੁ ਤੂ ਮੰਨ ਮੇਰੇ ਦੂਖ ਸਭਿ ਵਿਸਾਰਣਾ ॥",
+          "sha256": "44a88235826ca062694f41764e450cfd58ed0641b94d64112339d6bd9f2c3f45",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 8,
+            "globalSourceRow": 8,
+            "pauri": 2,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand02.line03",
+          "text": "ਅੰਗੀਕਾਰੁ ਓਹੁ ਕਰੇ ਤੇਰਾ ਕਾਰਜ ਸਭਿ ਸਵਾਰਣਾ ॥",
+          "sha256": "1cccae25edad8f4556f1dc7d725b11340fb5a830088fa9bbda24d61f937b70b9",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 9,
+            "globalSourceRow": 9,
+            "pauri": 2,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand02.line04",
+          "text": "ਸਭਨਾ ਗਲਾ ਸਮਰਥੁ ਸੁਆਮੀ ਸੋ ਕਿਉ ਮਨਹੁ ਵਿਸਾਰੇ ॥",
+          "sha256": "95b655ae58a8b13539b05e667e5b76a038dd7dfae19e2f6fbf82e505a66b6969",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 10,
+            "globalSourceRow": 10,
+            "pauri": 2,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand02.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਮੰਨ ਮੇਰੇ ਸਦਾ ਰਹੁ ਹਰਿ ਨਾਲੇ ॥੨॥",
+          "sha256": "097e870f1ce888db3c586fd559c57e535bb0ce7d5dc84a5977dfde4b9c5dd353",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 11,
+            "globalSourceRow": 11,
+            "pauri": 2,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand03",
+      "title": "Anand Sahib · Pauri 3",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand03.line01",
+          "text": "ਸਾਚੇ ਸਾਹਿਬਾ ਕਿਆ ਨਾਹੀ ਘਰਿ ਤੇਰੈ ॥",
+          "sha256": "17a3df037b6a8cb1eed60022b096fdf2e615ea910847499b3b6dd808b8e57bd8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 12,
+            "globalSourceRow": 12,
+            "pauri": 3,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand03.line02",
+          "text": "ਘਰਿ ਤ ਤੇਰੈ ਸਭੁ ਕਿਛੁ ਹੈ ਜਿਸੁ ਦੇਹਿ ਸੁ ਪਾਵਏ ॥",
+          "sha256": "f5b8bf2e5419dde72ebacd78a6cb07f1338be3fe8eba0bf8943b7528aafe22a6",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 13,
+            "globalSourceRow": 13,
+            "pauri": 3,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand03.line03",
+          "text": "ਸਦਾ ਸਿਫਤਿ ਸਲਾਹ ਤੇਰੀ ਨਾਮੁ ਮਨਿ ਵਸਾਵਏ ॥",
+          "sha256": "b41e44a3cb5fa139dec2c21e06378bba63f53589aeceaf36bbdc9b1787907b96",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 14,
+            "globalSourceRow": 14,
+            "pauri": 3,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand03.line04",
+          "text": "ਨਾਮੁ ਜਿਨ ਕੈ ਮਨਿ ਵਸਿਆ ਵਾਜੇ ਸਬਦ ਘਨੇਰੇ ॥",
+          "sha256": "02ce3b83eb654ca8830ed70ad480889f7334c0f22bfb0a3b63835a080ed6c307",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 15,
+            "globalSourceRow": 15,
+            "pauri": 3,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand03.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਚੇ ਸਾਹਿਬ ਕਿਆ ਨਾਹੀ ਘਰਿ ਤੇਰੈ ॥੩॥",
+          "sha256": "9f443969c6ca545a311e7ff23fa3409c0cea2a4f78d72b7afe19a95ae82dd6b8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 16,
+            "globalSourceRow": 16,
+            "pauri": 3,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand04",
+      "title": "Anand Sahib · Pauri 4",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand04.line01",
+          "text": "ਸਾਚਾ ਨਾਮੁ ਮੇਰਾ ਆਧਾਰੋ ॥",
+          "sha256": "337f354dbbf5162aa6939b9088387a0f09401ba8606e04ad5e065f33e7f1c354",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 17,
+            "globalSourceRow": 17,
+            "pauri": 4,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand04.line02",
+          "text": "ਸਾਚੁ ਨਾਮੁ ਅਧਾਰੁ ਮੇਰਾ ਜਿਨਿ ਭੁਖਾ ਸਭਿ ਗਵਾਈਆ ॥",
+          "sha256": "341789f2f62f7a5f5939505e287ea83cc02bb196acd7e8e7b99764277ae1ee8a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 18,
+            "globalSourceRow": 18,
+            "pauri": 4,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand04.line03",
+          "text": "ਕਰਿ ਸਾਂਤਿ ਸੁਖ ਮਨਿ ਆਇ ਵਸਿਆ ਜਿਨਿ ਇਛਾ ਸਭਿ ਪੁਜਾਈਆ ॥",
+          "sha256": "aa3c97f7549b32962fd04548b90f2d4a8a9d356c3dbfbb4ff2d81b556cba1b1b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 19,
+            "globalSourceRow": 19,
+            "pauri": 4,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand04.line04",
+          "text": "ਸਦਾ ਕੁਰਬਾਣੁ ਕੀਤਾ ਗੁਰੂ ਵਿਟਹੁ ਜਿਸ ਦੀਆ ਏਹਿ ਵਡਿਆਈਆ ॥",
+          "sha256": "9d6b566888b5139f106e27797fb398eb15a941d563cfe9df10aeabaa350e15cf",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 20,
+            "globalSourceRow": 20,
+            "pauri": 4,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand04.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸੁਣਹੁ ਸੰਤਹੁ ਸਬਦਿ ਧਰਹੁ ਪਿਆਰੋ ॥",
+          "sha256": "b9e032b59554d4cd0fe02db6e1300eca259f78261adf7ea758e19359e359e3db",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 21,
+            "globalSourceRow": 21,
+            "pauri": 4,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand04.line06",
+          "text": "ਸਾਚਾ ਨਾਮੁ ਮੇਰਾ ਆਧਾਰੋ ॥੪॥",
+          "sha256": "2e3c00fe12cdf6daa9d3047ebd6b8007d83dab903c1ab44484db718b95f1a809",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 22,
+            "globalSourceRow": 22,
+            "pauri": 4,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand05",
+      "title": "Anand Sahib · Pauri 5",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand05.line01",
+          "text": "ਵਾਜੇ ਪੰਚ ਸਬਦ ਤਿਤੁ ਘਰਿ ਸਭਾਗੈ ॥",
+          "sha256": "295aeebfe78204c9e7cd427cbf3b58bd9c253d8085999e50d85718d4e45f6f4f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 23,
+            "globalSourceRow": 23,
+            "pauri": 5,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand05.line02",
+          "text": "ਘਰਿ ਸਭਾਗੈ ਸਬਦ ਵਾਜੇ ਕਲਾ ਜਿਤੁ ਘਰਿ ਧਾਰੀਆ ॥",
+          "sha256": "02cdbfcb8ae49cad5e39a10553b013ae4f9a68ccca98c7c5a34320de47f5c0cb",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 24,
+            "globalSourceRow": 24,
+            "pauri": 5,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand05.line03",
+          "text": "ਪੰਚ ਦੂਤ ਤੁਧੁ ਵਸਿ ਕੀਤੇ ਕਾਲੁ ਕੰਟਕੁ ਮਾਰਿਆ ॥",
+          "sha256": "190f9cb6e31b7bd75f976cc70505141f48fcccc06859d9b10919ccb8cb8615b5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 25,
+            "globalSourceRow": 25,
+            "pauri": 5,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand05.line04",
+          "text": "ਧੁਰਿ ਕਰਮਿ ਪਾਇਆ ਤੁਧੁ ਜਿਨ ਕਉ ਸਿ ਨਾਮਿ ਹਰਿ ਕੈ ਲਾਗੇ ॥",
+          "sha256": "4e6388d46f01eb5cf8568b1fd24ca17e515fd5c9dca00dd1645eab81781cec2d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 26,
+            "globalSourceRow": 26,
+            "pauri": 5,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand05.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਤਹ ਸੁਖੁ ਹੋਆ ਤਿਤੁ ਘਰਿ ਅਨਹਦ ਵਾਜੇ ॥੫॥",
+          "sha256": "dbfa07ad6e792a433022ec7ec702bcf796afef7522e5148bb9f6b434c26156fd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 27,
+            "globalSourceRow": 27,
+            "pauri": 5,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand06",
+      "title": "Anand Sahib · Pauri 6",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand06.line01",
+          "text": "ਸਾਚੀ ਲਿਵੈ ਬਿਨੁ ਦੇਹ ਨਿਮਾਣੀ ॥",
+          "sha256": "36cc4db202331c4320c31cc03d704cb9a7a928001d9d4c31580b3f21e5999798",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 28,
+            "globalSourceRow": 28,
+            "pauri": 6,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand06.line02",
+          "text": "ਦੇਹ ਨਿਮਾਣੀ ਲਿਵੈ ਬਾਝਹੁ ਕਿਆ ਕਰੇ ਵੇਚਾਰੀਆ ॥",
+          "sha256": "a1642b00e921266942c36b9ae06b7bf6e7cd01e027dc151af78a51cd42891099",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 29,
+            "globalSourceRow": 29,
+            "pauri": 6,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand06.line03",
+          "text": "ਤੁਧੁ ਬਾਝੁ ਸਮਰਥ ਕੋਇ ਨਾਹੀ ਕ੍ਰਿਪਾ ਕਰਿ ਬਨਵਾਰੀਆ ॥",
+          "sha256": "ca9c975794326f217b5a8b92f81f0a530edebd8fd4242bc73d6e740b725f5f63",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 30,
+            "globalSourceRow": 30,
+            "pauri": 6,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand06.line04",
+          "text": "ਏਸ ਨਉ ਹੋਰੁ ਥਾਉ ਨਾਹੀ ਸਬਦਿ ਲਾਗਿ ਸਵਾਰੀਆ ॥",
+          "sha256": "e5c563ad374204679fe4512ed20f8fa721a5304c06986538f49a63d085b4a525",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 31,
+            "globalSourceRow": 31,
+            "pauri": 6,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand06.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਲਿਵੈ ਬਾਝਹੁ ਕਿਆ ਕਰੇ ਵੇਚਾਰੀਆ ॥੬॥",
+          "sha256": "9acbd42d6c424644044bd6425dcac49b47e826490ebc416c2891f9b853e5d2ec",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 32,
+            "globalSourceRow": 32,
+            "pauri": 6,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand07",
+      "title": "Anand Sahib · Pauri 7",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand07.line01",
+          "text": "ਆਨੰਦੁ ਆਨੰਦੁ ਸਭੁ ਕੋ ਕਹੈ ਆਨੰਦੁ ਗੁਰੂ ਤੇ ਜਾਣਿਆ ॥",
+          "sha256": "67f246782da75aa5a12acb9616dc7a41562743ae0aabfb553b2af09166c1928a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 33,
+            "globalSourceRow": 33,
+            "pauri": 7,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand07.line02",
+          "text": "ਜਾਣਿਆ ਆਨੰਦੁ ਸਦਾ ਗੁਰ ਤੇ ਕ੍ਰਿਪਾ ਕਰੇ ਪਿਆਰਿਆ ॥",
+          "sha256": "790fab4629e158dd65f51d07fd396f2d23976ca9039edf2e635459a6ee7ec7b0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 34,
+            "globalSourceRow": 34,
+            "pauri": 7,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand07.line03",
+          "text": "ਕਰਿ ਕਿਰਪਾ ਕਿਲਵਿਖ ਕਟੇ ਗਿਆਨ ਅੰਜਨੁ ਸਾਰਿਆ ॥",
+          "sha256": "0c139b53f0fc0b6a5999b2d466208e81d7230acc070d51b2d13a0fe22001733c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 35,
+            "globalSourceRow": 35,
+            "pauri": 7,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand07.line04",
+          "text": "ਅੰਦਰਹੁ ਜਿਨ ਕਾ ਮੋਹੁ ਤੁਟਾ ਤਿਨ ਕਾ ਸਬਦੁ ਸਚੈ ਸਵਾਰਿਆ ॥",
+          "sha256": "7dd259007c51e0ddbb984b3ad980e79f5670ba2936dacbafd2b0283dfc745d1a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 36,
+            "globalSourceRow": 36,
+            "pauri": 7,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand07.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਏਹੁ ਅਨੰਦੁ ਹੈ ਆਨੰਦੁ ਗੁਰ ਤੇ ਜਾਣਿਆ ॥੭॥",
+          "sha256": "e338c6571bf9e0b107efed386a0e9c5f76636090464573a0cb1618e29908374d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 917,
+            "digitalParagraph": 37,
+            "globalSourceRow": 37,
+            "pauri": 7,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand08",
+      "title": "Anand Sahib · Pauri 8",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand08.line01",
+          "text": "ਬਾਬਾ ਜਿਸੁ ਤੂ ਦੇਹਿ ਸੋਈ ਜਨੁ ਪਾਵੈ ॥",
+          "sha256": "01b6a8cf7eba3934216cd3ed86d80991110bd3c88a54ef6f466c4515b8e70eaa",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 0,
+            "globalSourceRow": 38,
+            "pauri": 8,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand08.line02",
+          "text": "ਪਾਵੈ ਤ ਸੋ ਜਨੁ ਦੇਹਿ ਜਿਸ ਨੋ ਹੋਰਿ ਕਿਆ ਕਰਹਿ ਵੇਚਾਰਿਆ ॥",
+          "sha256": "ae33af884c51f5d216c07fa1e7a66be4952a2d49ed712a74586e4ff00db2daf2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 1,
+            "globalSourceRow": 39,
+            "pauri": 8,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand08.line03",
+          "text": "ਇਕਿ ਭਰਮਿ ਭੂਲੇ ਫਿਰਹਿ ਦਹ ਦਿਸਿ ਇਕਿ ਨਾਮਿ ਲਾਗਿ ਸਵਾਰਿਆ ॥",
+          "sha256": "eca69b43fb3a8ba131cd71ec9aa2d3428dd31842b531e5605e0bff2c388301ff",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 2,
+            "globalSourceRow": 40,
+            "pauri": 8,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand08.line04",
+          "text": "ਗੁਰ ਪਰਸਾਦੀ ਮਨੁ ਭਇਆ ਨਿਰਮਲੁ ਜਿਨਾ ਭਾਣਾ ਭਾਵਏ ॥",
+          "sha256": "f54984ad93f7bb72f7d9fb5d37e5520b2429a64c6f5a63a29e6fd65e9724a363",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 3,
+            "globalSourceRow": 41,
+            "pauri": 8,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand08.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਜਿਸੁ ਦੇਹਿ ਪਿਆਰੇ ਸੋਈ ਜਨੁ ਪਾਵਏ ॥੮॥",
+          "sha256": "79aeacd71d6e4951e07e5304bc70b65a69ab25aafbdd1c0db436d7cc020fc905",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 4,
+            "globalSourceRow": 42,
+            "pauri": 8,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand09",
+      "title": "Anand Sahib · Pauri 9",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand09.line01",
+          "text": "ਆਵਹੁ ਸੰਤ ਪਿਆਰਿਹੋ ਅਕਥ ਕੀ ਕਰਹ ਕਹਾਣੀ ॥",
+          "sha256": "1b4a1bcb22ce9cdf6f83f677e3745b73455c07cc1fe638b40298fff30e032d3a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 5,
+            "globalSourceRow": 43,
+            "pauri": 9,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand09.line02",
+          "text": "ਕਰਹ ਕਹਾਣੀ ਅਕਥ ਕੇਰੀ ਕਿਤੁ ਦੁਆਰੈ ਪਾਈਐ ॥",
+          "sha256": "37c46345aedcda6cbbdb74590e80964ce88dafdb797d86231b547049dbb847b2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 6,
+            "globalSourceRow": 44,
+            "pauri": 9,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand09.line03",
+          "text": "ਤਨੁ ਮਨੁ ਧਨੁ ਸਭੁ ਸਉਪਿ ਗੁਰ ਕਉ ਹੁਕਮਿ ਮੰਨਿਐ ਪਾਈਐ ॥",
+          "sha256": "0053fc357c99fc2b3725bad9eda5a9a151bd2e849e699187678a5a1323fb12f5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 7,
+            "globalSourceRow": 45,
+            "pauri": 9,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand09.line04",
+          "text": "ਹੁਕਮੁ ਮੰਨਿਹੁ ਗੁਰੂ ਕੇਰਾ ਗਾਵਹੁ ਸਚੀ ਬਾਣੀ ॥",
+          "sha256": "42c44e20ea6389bb6c5feecb7b3553f7d61ca63db154863fbc5c829010fa94d3",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 8,
+            "globalSourceRow": 46,
+            "pauri": 9,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand09.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸੁਣਹੁ ਸੰਤਹੁ ਕਥਿਹੁ ਅਕਥ ਕਹਾਣੀ ॥੯॥",
+          "sha256": "9d5e2376c49adcdcc0f044d8205ce289d0d46259aa428502e512ff631627bf22",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 9,
+            "globalSourceRow": 47,
+            "pauri": 9,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand10",
+      "title": "Anand Sahib · Pauri 10",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand10.line01",
+          "text": "ਏ ਮਨ ਚੰਚਲਾ ਚਤੁਰਾਈ ਕਿਨੈ ਨ ਪਾਇਆ ॥",
+          "sha256": "f167a3398e73cc62ee5e3626683b18f3feaa3b7625ec923c3bff98ddfb8913f8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 10,
+            "globalSourceRow": 48,
+            "pauri": 10,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand10.line02",
+          "text": "ਚਤੁਰਾਈ ਨ ਪਾਇਆ ਕਿਨੈ ਤੂ ਸੁਣਿ ਮੰਨ ਮੇਰਿਆ ॥",
+          "sha256": "29358cd9d7c0d4d2e93fe4126941e9816760e44d8eb53221b2b2fc2825285532",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 11,
+            "globalSourceRow": 49,
+            "pauri": 10,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand10.line03",
+          "text": "ਏਹ ਮਾਇਆ ਮੋਹਣੀ ਜਿਨਿ ਏਤੁ ਭਰਮਿ ਭੁਲਾਇਆ ॥",
+          "sha256": "3fe67a29c1cea6f9618ec7b2a28f07f1a1bdc021a002272949d9ba555561fc6e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 12,
+            "globalSourceRow": 50,
+            "pauri": 10,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand10.line04",
+          "text": "ਮਾਇਆ ਤ ਮੋਹਣੀ ਤਿਨੈ ਕੀਤੀ ਜਿਨਿ ਠਗਉਲੀ ਪਾਈਆ ॥",
+          "sha256": "622a5e78b0606c1470296aa2816ab001d7c25458519a9d9d8230002f2b7c802c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 13,
+            "globalSourceRow": 51,
+            "pauri": 10,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand10.line05",
+          "text": "ਕੁਰਬਾਣੁ ਕੀਤਾ ਤਿਸੈ ਵਿਟਹੁ ਜਿਨਿ ਮੋਹੁ ਮੀਠਾ ਲਾਇਆ ॥",
+          "sha256": "059cfb37674d45e73710adb9cf3f7507e2c40c8c5a187b74efc8efc7d999c768",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 14,
+            "globalSourceRow": 52,
+            "pauri": 10,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand10.line06",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਮਨ ਚੰਚਲ ਚਤੁਰਾਈ ਕਿਨੈ ਨ ਪਾਇਆ ॥੧੦॥",
+          "sha256": "cb2b413732f31525d1fff69942dc9211e5b7503f96dfc3488cf442e7d8771569",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 15,
+            "globalSourceRow": 53,
+            "pauri": 10,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand11",
+      "title": "Anand Sahib · Pauri 11",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand11.line01",
+          "text": "ਏ ਮਨ ਪਿਆਰਿਆ ਤੂ ਸਦਾ ਸਚੁ ਸਮਾਲੇ ॥",
+          "sha256": "686a02c663975f84fda19a9b2ddb59b208161f5245a0a790b99285e06dd07b7a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 16,
+            "globalSourceRow": 54,
+            "pauri": 11,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand11.line02",
+          "text": "ਏਹੁ ਕੁਟੰਬੁ ਤੂ ਜਿ ਦੇਖਦਾ ਚਲੈ ਨਾਹੀ ਤੇਰੈ ਨਾਲੇ ॥",
+          "sha256": "51dd8e6146656a37d0c10d0e41b00b6e8135aefdac34cbafc8ec5a6828f52d98",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 17,
+            "globalSourceRow": 55,
+            "pauri": 11,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand11.line03",
+          "text": "ਸਾਥਿ ਤੇਰੈ ਚਲੈ ਨਾਹੀ ਤਿਸੁ ਨਾਲਿ ਕਿਉ ਚਿਤੁ ਲਾਈਐ ॥",
+          "sha256": "8beb1ac18d632796e3fcd12b8cb3e7faa529db622a60d59afc9f0d5d94184fe8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 18,
+            "globalSourceRow": 56,
+            "pauri": 11,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand11.line04",
+          "text": "ਐਸਾ ਕੰਮੁ ਮੂਲੇ ਨ ਕੀਚੈ ਜਿਤੁ ਅੰਤਿ ਪਛੋਤਾਈਐ ॥",
+          "sha256": "25d85fce91fd0036b9329e6d5734871ccdd816efa4ddadc89330c67a9ac29bb0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 19,
+            "globalSourceRow": 57,
+            "pauri": 11,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand11.line05",
+          "text": "ਸਤਿਗੁਰੂ ਕਾ ਉਪਦੇਸੁ ਸੁਣਿ ਤੂ ਹੋਵੈ ਤੇਰੈ ਨਾਲੇ ॥",
+          "sha256": "fa2c07c50664beff7aff2aa98079f0d8c9e2e91fe9368d39c3c7473296aab7b1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 20,
+            "globalSourceRow": 58,
+            "pauri": 11,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand11.line06",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਮਨ ਪਿਆਰੇ ਤੂ ਸਦਾ ਸਚੁ ਸਮਾਲੇ ॥੧੧॥",
+          "sha256": "fa1953c06cf3c3ad8488d8724b76c3a370adb87154207587643934ed06ee1c8a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 21,
+            "globalSourceRow": 59,
+            "pauri": 11,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand12",
+      "title": "Anand Sahib · Pauri 12",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand12.line01",
+          "text": "ਅਗਮ ਅਗੋਚਰਾ ਤੇਰਾ ਅੰਤੁ ਨ ਪਾਇਆ ॥",
+          "sha256": "6cc35d03187c6b0996850ed739534a7ba7a97c033db4ff2e70e6a667412042ce",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 22,
+            "globalSourceRow": 60,
+            "pauri": 12,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand12.line02",
+          "text": "ਅੰਤੋ ਨ ਪਾਇਆ ਕਿਨੈ ਤੇਰਾ ਆਪਣਾ ਆਪੁ ਤੂ ਜਾਣਹੇ ॥",
+          "sha256": "b90b1ec91127c307d67f0347fbb90899aa48d656d1b9cf91bd5cd0d1b53734a0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 23,
+            "globalSourceRow": 61,
+            "pauri": 12,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand12.line03",
+          "text": "ਜੀਅ ਜੰਤ ਸਭਿ ਖੇਲੁ ਤੇਰਾ ਕਿਆ ਕੋ ਆਖਿ ਵਖਾਣਏ ॥",
+          "sha256": "77d8e641e492ce852348905fe819b494c31d247854d5f14aa84053fbc278989a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 24,
+            "globalSourceRow": 62,
+            "pauri": 12,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand12.line04",
+          "text": "ਆਖਹਿ ਤ ਵੇਖਹਿ ਸਭੁ ਤੂਹੈ ਜਿਨਿ ਜਗਤੁ ਉਪਾਇਆ ॥",
+          "sha256": "f7e55b04ba46a5e2211ab6d523f3984c2e8bb67ba6477f9c0c7c62fda26c10a8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 25,
+            "globalSourceRow": 63,
+            "pauri": 12,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand12.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਤੂ ਸਦਾ ਅਗੰਮੁ ਹੈ ਤੇਰਾ ਅੰਤੁ ਨ ਪਾਇਆ ॥੧੨॥",
+          "sha256": "b6ea5888a6fa74a3c5748d3ff67d6ca26bbd18ae66f0319605a0abcf4cc3d120",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 26,
+            "globalSourceRow": 64,
+            "pauri": 12,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand13",
+      "title": "Anand Sahib · Pauri 13",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand13.line01",
+          "text": "ਸੁਰਿ ਨਰ ਮੁਨਿ ਜਨ ਅੰਮ੍ਰਿਤੁ ਖੋਜਦੇ ਸੁ ਅੰਮ੍ਰਿਤੁ ਗੁਰ ਤੇ ਪਾਇਆ ॥",
+          "sha256": "877fab7e7f79a4a273f862158bde149fd3cda6f6f65c03ad933314c3c8c5dfdd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 27,
+            "globalSourceRow": 65,
+            "pauri": 13,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand13.line02",
+          "text": "ਪਾਇਆ ਅੰਮ੍ਰਿਤੁ ਗੁਰਿ ਕ੍ਰਿਪਾ ਕੀਨੀ ਸਚਾ ਮਨਿ ਵਸਾਇਆ ॥",
+          "sha256": "a7088309095512d8304cb902351b66cdbb4a8bf0dcf9f1a3104681ad5358aed5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 28,
+            "globalSourceRow": 66,
+            "pauri": 13,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand13.line03",
+          "text": "ਜੀਅ ਜੰਤ ਸਭਿ ਤੁਧੁ ਉਪਾਏ ਇਕਿ ਵੇਖਿ ਪਰਸਣਿ ਆਇਆ ॥",
+          "sha256": "c10336aaed6c162ef04e3999e4fac33f6a1cdecc0f6343a681300772eb33771d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 29,
+            "globalSourceRow": 67,
+            "pauri": 13,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand13.line04",
+          "text": "ਲਬੁ ਲੋਭੁ ਅਹੰਕਾਰੁ ਚੂਕਾ ਸਤਿਗੁਰੂ ਭਲਾ ਭਾਇਆ ॥",
+          "sha256": "1fcc14ae5e8bb1c01f333c3db026d7c4255b84a1e39e04cc723d6e084bb8669d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 30,
+            "globalSourceRow": 68,
+            "pauri": 13,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand13.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਜਿਸ ਨੋ ਆਪਿ ਤੁਠਾ ਤਿਨਿ ਅੰਮ੍ਰਿਤੁ ਗੁਰ ਤੇ ਪਾਇਆ ॥੧੩॥",
+          "sha256": "421bca647ba25e9b8a5527b23b9a6285ac5752e5940b59d61a76ec7b3f59697f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 31,
+            "globalSourceRow": 69,
+            "pauri": 13,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand14",
+      "title": "Anand Sahib · Pauri 14",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand14.line01",
+          "text": "ਭਗਤਾ ਕੀ ਚਾਲ ਨਿਰਾਲੀ ॥",
+          "sha256": "834204d9b06ab0621509320c9b81a660c2a746456da5a422d6d5c712e360b0fe",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 32,
+            "globalSourceRow": 70,
+            "pauri": 14,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand14.line02",
+          "text": "ਚਾਲਾ ਨਿਰਾਲੀ ਭਗਤਾਹ ਕੇਰੀ ਬਿਖਮ ਮਾਰਗਿ ਚਲਣਾ ॥",
+          "sha256": "d304e41c14fae82bd30789f389c066f4ab56bcdfd0ca3b95ce700650f238a7e4",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 33,
+            "globalSourceRow": 71,
+            "pauri": 14,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand14.line03",
+          "text": "ਲਬੁ ਲੋਭੁ ਅਹੰਕਾਰੁ ਤਜਿ ਤ੍ਰਿਸਨਾ ਬਹੁਤੁ ਨਾਹੀ ਬੋਲਣਾ ॥",
+          "sha256": "23eb22765ab9b70d2ee019d6d92eb826d4262b375f56058243e0c8daa65fecc5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 34,
+            "globalSourceRow": 72,
+            "pauri": 14,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand14.line04",
+          "text": "ਖੰਨਿਅਹੁ ਤਿਖੀ ਵਾਲਹੁ ਨਿਕੀ ਏਤੁ ਮਾਰਗਿ ਜਾਣਾ ॥",
+          "sha256": "8f710641e650dca319901def6b462a61cc5906a1cda20ccb7d9d73d0d59af713",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 918,
+            "digitalParagraph": 35,
+            "globalSourceRow": 73,
+            "pauri": 14,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand14.line05",
+          "text": "ਗੁਰ ਪਰਸਾਦੀ ਜਿਨੀ ਆਪੁ ਤਜਿਆ ਹਰਿ ਵਾਸਨਾ ਸਮਾਣੀ ॥",
+          "sha256": "1eaf435d1829b615c9f0ba07e20143642f78e1c86096af0d076507eb721585e4",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 0,
+            "globalSourceRow": 74,
+            "pauri": 14,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand14.line06",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਚਾਲ ਭਗਤਾ ਜੁਗਹੁ ਜੁਗੁ ਨਿਰਾਲੀ ॥੧੪॥",
+          "sha256": "6e647bb8de66ff02dcb6fc3cca475e12ed0c611c37773af1ca09454c88b13905",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 1,
+            "globalSourceRow": 75,
+            "pauri": 14,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand15",
+      "title": "Anand Sahib · Pauri 15",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand15.line01",
+          "text": "ਜਿਉ ਤੂ ਚਲਾਇਹਿ ਤਿਵ ਚਲਹ ਸੁਆਮੀ ਹੋਰੁ ਕਿਆ ਜਾਣਾ ਗੁਣ ਤੇਰੇ ॥",
+          "sha256": "82003af20dccaf8662a2e332e0ff78b432ac96a40195a6769f6df1433ff0214c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 2,
+            "globalSourceRow": 76,
+            "pauri": 15,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand15.line02",
+          "text": "ਜਿਵ ਤੂ ਚਲਾਇਹਿ ਤਿਵੈ ਚਲਹ ਜਿਨਾ ਮਾਰਗਿ ਪਾਵਹੇ ॥",
+          "sha256": "cecc6f01c76322c28b896f9c6fbdff8a7f91be594d5e42eeeda0e932d0f32c42",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 3,
+            "globalSourceRow": 77,
+            "pauri": 15,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand15.line03",
+          "text": "ਕਰਿ ਕਿਰਪਾ ਜਿਨ ਨਾਮਿ ਲਾਇਹਿ ਸਿ ਹਰਿ ਹਰਿ ਸਦਾ ਧਿਆਵਹੇ ॥",
+          "sha256": "3d4492cea89a206fbbf1eded0d625dcd5491733dba341cbb399d3d3042fa0953",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 4,
+            "globalSourceRow": 78,
+            "pauri": 15,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand15.line04",
+          "text": "ਜਿਸ ਨੋ ਕਥਾ ਸੁਣਾਇਹਿ ਆਪਣੀ ਸਿ ਗੁਰਦੁਆਰੈ ਸੁਖੁ ਪਾਵਹੇ ॥",
+          "sha256": "cb09a7341144f9dedf1a96e243fc03580f7d373d471076553f75fadb19777b24",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 5,
+            "globalSourceRow": 79,
+            "pauri": 15,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand15.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਚੇ ਸਾਹਿਬ ਜਿਉ ਭਾਵੈ ਤਿਵੈ ਚਲਾਵਹੇ ॥੧੫॥",
+          "sha256": "2c5ec5925dee004034edeadbafc7f902551c8ee65d7e25025bdbc4e1c5878156",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 6,
+            "globalSourceRow": 80,
+            "pauri": 15,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand16",
+      "title": "Anand Sahib · Pauri 16",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand16.line01",
+          "text": "ਏਹੁ ਸੋਹਿਲਾ ਸਬਦੁ ਸੁਹਾਵਾ ॥",
+          "sha256": "f3a92108d0a58d12f6fc299086730521566412880d9523dc2c6869a9d7ef0aff",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 7,
+            "globalSourceRow": 81,
+            "pauri": 16,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand16.line02",
+          "text": "ਸਬਦੋ ਸੁਹਾਵਾ ਸਦਾ ਸੋਹਿਲਾ ਸਤਿਗੁਰੂ ਸੁਣਾਇਆ ॥",
+          "sha256": "c4a083dd947e86215f0f8a7c02c6c4c86f7d159eab04c48ee6ef04c7b7c4b014",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 8,
+            "globalSourceRow": 82,
+            "pauri": 16,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand16.line03",
+          "text": "ਏਹੁ ਤਿਨ ਕੈ ਮੰਨਿ ਵਸਿਆ ਜਿਨ ਧੁਰਹੁ ਲਿਖਿਆ ਆਇਆ ॥",
+          "sha256": "9e7171ed43d7eb5822da7cda9d7f74ac32d4ba55626fd6dabfc6469c8d0bcccf",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 9,
+            "globalSourceRow": 83,
+            "pauri": 16,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand16.line04",
+          "text": "ਇਕਿ ਫਿਰਹਿ ਘਨੇਰੇ ਕਰਹਿ ਗਲਾ ਗਲੀ ਕਿਨੈ ਨ ਪਾਇਆ ॥",
+          "sha256": "1710539d367383d21816a82654ef635d9fe9063f3b283f343078b9ecc722db29",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 10,
+            "globalSourceRow": 84,
+            "pauri": 16,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand16.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਬਦੁ ਸੋਹਿਲਾ ਸਤਿਗੁਰੂ ਸੁਣਾਇਆ ॥੧੬॥",
+          "sha256": "71d042fc44c81e9f2498428e44e9d4ee993382f0a594fb57bbc2ad6743a8725f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 11,
+            "globalSourceRow": 85,
+            "pauri": 16,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand17",
+      "title": "Anand Sahib · Pauri 17",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand17.line01",
+          "text": "ਪਵਿਤੁ ਹੋਏ ਸੇ ਜਨਾ ਜਿਨੀ ਹਰਿ ਧਿਆਇਆ ॥",
+          "sha256": "7c252984da90b7574e16bbacd410b4de600e6f310fc1f98452e2b8e7f4c75aa0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 12,
+            "globalSourceRow": 86,
+            "pauri": 17,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand17.line02",
+          "text": "ਹਰਿ ਧਿਆਇਆ ਪਵਿਤੁ ਹੋਏ ਗੁਰਮੁਖਿ ਜਿਨੀ ਧਿਆਇਆ ॥",
+          "sha256": "448405264283bddd2e897549aa6e87bb4249f12ee012127e8cfcaa9591143208",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 13,
+            "globalSourceRow": 87,
+            "pauri": 17,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand17.line03",
+          "text": "ਪਵਿਤੁ ਮਾਤਾ ਪਿਤਾ ਕੁਟੰਬ ਸਹਿਤ ਸਿਉ ਪਵਿਤੁ ਸੰਗਤਿ ਸਬਾਈਆ ॥",
+          "sha256": "89ff7c6c5c1e7a5f539aa99c72d030e2e4dcd644d78e5023e1323764c0c1e6d6",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 14,
+            "globalSourceRow": 88,
+            "pauri": 17,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand17.line04",
+          "text": "ਕਹਦੇ ਪਵਿਤੁ ਸੁਣਦੇ ਪਵਿਤੁ ਸੇ ਪਵਿਤੁ ਜਿਨੀ ਮੰਨਿ ਵਸਾਇਆ ॥",
+          "sha256": "14e342e3849f808f69397b0e5e90829afc6006f2548e513255d36719a570729b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 15,
+            "globalSourceRow": 89,
+            "pauri": 17,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand17.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸੇ ਪਵਿਤੁ ਜਿਨੀ ਗੁਰਮੁਖਿ ਹਰਿ ਹਰਿ ਧਿਆਇਆ ॥੧੭॥",
+          "sha256": "197c162200c85b9a8e43937a6a56cc2fe1b8bd07def28481de53d85908206f27",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 16,
+            "globalSourceRow": 90,
+            "pauri": 17,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand18",
+      "title": "Anand Sahib · Pauri 18",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand18.line01",
+          "text": "ਕਰਮੀ ਸਹਜੁ ਨ ਊਪਜੈ ਵਿਣੁ ਸਹਜੈ ਸਹਸਾ ਨ ਜਾਇ ॥",
+          "sha256": "5662d0e9e4cd52c2838a510129e3ed28a6cffc4d4e9365e1ef0dbfb7bfb03529",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 17,
+            "globalSourceRow": 91,
+            "pauri": 18,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand18.line02",
+          "text": "ਨਹ ਜਾਇ ਸਹਸਾ ਕਿਤੈ ਸੰਜਮਿ ਰਹੇ ਕਰਮ ਕਮਾਏ ॥",
+          "sha256": "3e37eb5257cf0f6f281341a48badf99ab548e5e85c2f88f162e656df6eba3747",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 18,
+            "globalSourceRow": 92,
+            "pauri": 18,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand18.line03",
+          "text": "ਸਹਸੈ ਜੀਉ ਮਲੀਣੁ ਹੈ ਕਿਤੁ ਸੰਜਮਿ ਧੋਤਾ ਜਾਏ ॥",
+          "sha256": "c43a85f701bc7fd601a9437d51ec1439fc0132350fb124c43d13856129a56b3c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 19,
+            "globalSourceRow": 93,
+            "pauri": 18,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand18.line04",
+          "text": "ਮੰਨੁ ਧੋਵਹੁ ਸਬਦਿ ਲਾਗਹੁ ਹਰਿ ਸਿਉ ਰਹਹੁ ਚਿਤੁ ਲਾਇ ॥",
+          "sha256": "af28b57089125dafebae6c9945a83edbd9a0181874147b10543a7902e097ab6a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 20,
+            "globalSourceRow": 94,
+            "pauri": 18,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand18.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਗੁਰ ਪਰਸਾਦੀ ਸਹਜੁ ਉਪਜੈ ਇਹੁ ਸਹਸਾ ਇਵ ਜਾਇ ॥੧੮॥",
+          "sha256": "3b4598687ed897257973811d722dcad9eefd91ef2384467592b4cebd4e4530fd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 21,
+            "globalSourceRow": 95,
+            "pauri": 18,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand19",
+      "title": "Anand Sahib · Pauri 19",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand19.line01",
+          "text": "ਜੀਅਹੁ ਮੈਲੇ ਬਾਹਰਹੁ ਨਿਰਮਲ ॥",
+          "sha256": "aed383ba8a5465ed5b260619fb387adf2baabfd1c9ed88af5d49f60723e7a426",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 22,
+            "globalSourceRow": 96,
+            "pauri": 19,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand19.line02",
+          "text": "ਬਾਹਰਹੁ ਨਿਰਮਲ ਜੀਅਹੁ ਤ ਮੈਲੇ ਤਿਨੀ ਜਨਮੁ ਜੂਐ ਹਾਰਿਆ ॥",
+          "sha256": "8d6c77fa9b55754132116a00675ee306b7abcdc4e509c6f7dfe69b1bebd78478",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 23,
+            "globalSourceRow": 97,
+            "pauri": 19,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand19.line03",
+          "text": "ਏਹ ਤਿਸਨਾ ਵਡਾ ਰੋਗੁ ਲਗਾ ਮਰਣੁ ਮਨਹੁ ਵਿਸਾਰਿਆ ॥",
+          "sha256": "3de4b6603c5d3bb75f44252c74b38fa26a050d5f62f803045fa9e6500a985876",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 24,
+            "globalSourceRow": 98,
+            "pauri": 19,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand19.line04",
+          "text": "ਵੇਦਾ ਮਹਿ ਨਾਮੁ ਉਤਮੁ ਸੋ ਸੁਣਹਿ ਨਾਹੀ ਫਿਰਹਿ ਜਿਉ ਬੇਤਾਲਿਆ ॥",
+          "sha256": "28d22a5f5903b81c3a152793b035c61f25afe5757a9835904195451835964286",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 25,
+            "globalSourceRow": 99,
+            "pauri": 19,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand19.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਜਿਨ ਸਚੁ ਤਜਿਆ ਕੂੜੇ ਲਾਗੇ ਤਿਨੀ ਜਨਮੁ ਜੂਐ ਹਾਰਿਆ ॥੧੯॥",
+          "sha256": "acb57a1869a63890f919fb38a211147fd54affd61cdf968b2240b06751fed5a9",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 26,
+            "globalSourceRow": 100,
+            "pauri": 19,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand20",
+      "title": "Anand Sahib · Pauri 20",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand20.line01",
+          "text": "ਜੀਅਹੁ ਨਿਰਮਲ ਬਾਹਰਹੁ ਨਿਰਮਲ ॥",
+          "sha256": "71be18dded9ca0f9814618137142162eaed760b1a31fa01ce12e864111e122b5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 27,
+            "globalSourceRow": 101,
+            "pauri": 20,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand20.line02",
+          "text": "ਬਾਹਰਹੁ ਤ ਨਿਰਮਲ ਜੀਅਹੁ ਨਿਰਮਲ ਸਤਿਗੁਰ ਤੇ ਕਰਣੀ ਕਮਾਣੀ ॥",
+          "sha256": "d8dd55db114c83e8af7e7d35823e82567acbb27013c623e1518df6ed3a79ffbf",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 28,
+            "globalSourceRow": 102,
+            "pauri": 20,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand20.line03",
+          "text": "ਕੂੜ ਕੀ ਸੋਇ ਪਹੁਚੈ ਨਾਹੀ ਮਨਸਾ ਸਚਿ ਸਮਾਣੀ ॥",
+          "sha256": "a12e52b5028c8f2729cd50b929e6b8f7f84e93187693cbf9084dd5fff6787671",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 29,
+            "globalSourceRow": 103,
+            "pauri": 20,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand20.line04",
+          "text": "ਜਨਮੁ ਰਤਨੁ ਜਿਨੀ ਖਟਿਆ ਭਲੇ ਸੇ ਵਣਜਾਰੇ ॥",
+          "sha256": "63bc8ebc0bb2038f7e59a1729869fb3fd31c24b5a45a3710bea8e0ab887f07c7",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 30,
+            "globalSourceRow": 104,
+            "pauri": 20,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand20.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਜਿਨ ਮੰਨੁ ਨਿਰਮਲੁ ਸਦਾ ਰਹਹਿ ਗੁਰ ਨਾਲੇ ॥੨੦॥",
+          "sha256": "421c5736396c9a1d0444d3e600b91ea54486344678ba93abed25c9387c73d453",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 31,
+            "globalSourceRow": 105,
+            "pauri": 20,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand21",
+      "title": "Anand Sahib · Pauri 21",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand21.line01",
+          "text": "ਜੇ ਕੋ ਸਿਖੁ ਗੁਰੂ ਸੇਤੀ ਸਨਮੁਖੁ ਹੋਵੈ ॥",
+          "sha256": "ba61e5156d4883bb80e912c659151b2c1ef4b30f05509d182b8b9b0dab0c0c7b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 32,
+            "globalSourceRow": 106,
+            "pauri": 21,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand21.line02",
+          "text": "ਹੋਵੈ ਤ ਸਨਮੁਖੁ ਸਿਖੁ ਕੋਈ ਜੀਅਹੁ ਰਹੈ ਗੁਰ ਨਾਲੇ ॥",
+          "sha256": "fb42c640eb141a42dc60e27da419e37e6eee449365117a1d74c926aa240d55d6",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 33,
+            "globalSourceRow": 107,
+            "pauri": 21,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand21.line03",
+          "text": "ਗੁਰ ਕੇ ਚਰਨ ਹਿਰਦੈ ਧਿਆਏ ਅੰਤਰ ਆਤਮੈ ਸਮਾਲੇ ॥",
+          "sha256": "a7f771242e1852051eafafcbc9ddca81dbb8be5d57803ef71dda45c9053360fb",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 34,
+            "globalSourceRow": 108,
+            "pauri": 21,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand21.line04",
+          "text": "ਆਪੁ ਛਡਿ ਸਦਾ ਰਹੈ ਪਰਣੈ ਗੁਰ ਬਿਨੁ ਅਵਰੁ ਨ ਜਾਣੈ ਕੋਏ ॥",
+          "sha256": "1496601e267e8dcf2e7043a158787955e63f81e0618cd4dd3c77fe82ac521f4a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 919,
+            "digitalParagraph": 35,
+            "globalSourceRow": 109,
+            "pauri": 21,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand21.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸੁਣਹੁ ਸੰਤਹੁ ਸੋ ਸਿਖੁ ਸਨਮੁਖੁ ਹੋਏ ॥੨੧॥",
+          "sha256": "1e59569049e3725a1a675bf7cf3bdb90188c1d38dcf798c2a853c2b7927bb8d4",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 0,
+            "globalSourceRow": 110,
+            "pauri": 21,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand22",
+      "title": "Anand Sahib · Pauri 22",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand22.line01",
+          "text": "ਜੇ ਕੋ ਗੁਰ ਤੇ ਵੇਮੁਖੁ ਹੋਵੈ ਬਿਨੁ ਸਤਿਗੁਰ ਮੁਕਤਿ ਨ ਪਾਵੈ ॥",
+          "sha256": "ad7711eb981af4922b76a8e0727e782e2c30091a8306f78744947079ae591664",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 1,
+            "globalSourceRow": 111,
+            "pauri": 22,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand22.line02",
+          "text": "ਪਾਵੈ ਮੁਕਤਿ ਨ ਹੋਰ ਥੈ ਕੋਈ ਪੁਛਹੁ ਬਿਬੇਕੀਆ ਜਾਏ ॥",
+          "sha256": "c9cd70a610f8d462d6ee783b4c4b37f70cc80cb283b0e2914c59b2714ebacffb",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 2,
+            "globalSourceRow": 112,
+            "pauri": 22,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand22.line03",
+          "text": "ਅਨੇਕ ਜੂਨੀ ਭਰਮਿ ਆਵੈ ਵਿਣੁ ਸਤਿਗੁਰ ਮੁਕਤਿ ਨ ਪਾਏ ॥",
+          "sha256": "0c7ccd24ac965153043ed7c32d6b6d52593b3187025afebc75b78185965276d6",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 3,
+            "globalSourceRow": 113,
+            "pauri": 22,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand22.line04",
+          "text": "ਫਿਰਿ ਮੁਕਤਿ ਪਾਏ ਲਾਗਿ ਚਰਣੀ ਸਤਿਗੁਰੂ ਸਬਦੁ ਸੁਣਾਏ ॥",
+          "sha256": "ace59bfe54e17bbbbc7fa2781ac8915009b6ec8be47c84f27d5d2cd424f7d463",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 4,
+            "globalSourceRow": 114,
+            "pauri": 22,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand22.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਵੀਚਾਰਿ ਦੇਖਹੁ ਵਿਣੁ ਸਤਿਗੁਰ ਮੁਕਤਿ ਨ ਪਾਏ ॥੨੨॥",
+          "sha256": "4c96b87de13ff4a44c31c4c30e895c8d62d3a3459521274bfc86b4b38356833a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 5,
+            "globalSourceRow": 115,
+            "pauri": 22,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand23",
+      "title": "Anand Sahib · Pauri 23",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand23.line01",
+          "text": "ਆਵਹੁ ਸਿਖ ਸਤਿਗੁਰੂ ਕੇ ਪਿਆਰਿਹੋ ਗਾਵਹੁ ਸਚੀ ਬਾਣੀ ॥",
+          "sha256": "d1f41478221efac244b5ce13ef4214e0bb5c57dc5b5e24c1e51d945311fa0f2f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 6,
+            "globalSourceRow": 116,
+            "pauri": 23,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand23.line02",
+          "text": "ਬਾਣੀ ਤ ਗਾਵਹੁ ਗੁਰੂ ਕੇਰੀ ਬਾਣੀਆ ਸਿਰਿ ਬਾਣੀ ॥",
+          "sha256": "aa26417f02d250203534851fa81666dc64b5872844e5cd3f89da5eb8cf1d52d5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 7,
+            "globalSourceRow": 117,
+            "pauri": 23,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand23.line03",
+          "text": "ਜਿਨ ਕਉ ਨਦਰਿ ਕਰਮੁ ਹੋਵੈ ਹਿਰਦੈ ਤਿਨਾ ਸਮਾਣੀ ॥",
+          "sha256": "a6baffb3a5e1885353eb4006e581a45f9eae30b84d6669cf0aea4b404f25aeee",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 8,
+            "globalSourceRow": 118,
+            "pauri": 23,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand23.line04",
+          "text": "ਪੀਵਹੁ ਅੰਮ੍ਰਿਤੁ ਸਦਾ ਰਹਹੁ ਹਰਿ ਰੰਗਿ ਜਪਿਹੁ ਸਾਰਿਗਪਾਣੀ ॥",
+          "sha256": "babc87533905a54926128305d9cf1654e8419a1c994cb49f7c4740ff72af918e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 9,
+            "globalSourceRow": 119,
+            "pauri": 23,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand23.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਦਾ ਗਾਵਹੁ ਏਹ ਸਚੀ ਬਾਣੀ ॥੨੩॥",
+          "sha256": "38e5a9b8a2fb72ce74a5f5b3e8c0f128f2123dc0f8036d6b837e19851983e402",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 10,
+            "globalSourceRow": 120,
+            "pauri": 23,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand24",
+      "title": "Anand Sahib · Pauri 24",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand24.line01",
+          "text": "ਸਤਿਗੁਰੂ ਬਿਨਾ ਹੋਰ ਕਚੀ ਹੈ ਬਾਣੀ ॥",
+          "sha256": "07a3dbf6673e43b036328639e06d882122b5b967777a17cf78429b3b89927e6c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 11,
+            "globalSourceRow": 121,
+            "pauri": 24,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand24.line02",
+          "text": "ਬਾਣੀ ਤ ਕਚੀ ਸਤਿਗੁਰੂ ਬਾਝਹੁ ਹੋਰ ਕਚੀ ਬਾਣੀ ॥",
+          "sha256": "6d6dcef0f4512f9f750e5479bed924101ceeb974567fee8f6ee7878dd326bef9",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 12,
+            "globalSourceRow": 122,
+            "pauri": 24,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand24.line03",
+          "text": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚੀ ਆਖਿ ਵਖਾਣੀ ॥",
+          "sha256": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 13,
+            "globalSourceRow": 123,
+            "pauri": 24,
+            "pauriLine": 3
+          },
+          "held": true
+        },
+        {
+          "id": "anand24.line04",
+          "text": "ਹਰਿ ਹਰਿ ਨਿਤ ਕਰਹਿ ਰਸਨਾ ਕਹਿਆ ਕਛੂ ਨ ਜਾਣੀ ॥",
+          "sha256": "c7ad527a4941db2cc2ff0b6dc9c95bd924663e0d228afbdc7f574bafc5ba62f6",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 14,
+            "globalSourceRow": 124,
+            "pauri": 24,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand24.line05",
+          "text": "ਚਿਤੁ ਜਿਨ ਕਾ ਹਿਰਿ ਲਇਆ ਮਾਇਆ ਬੋਲਨਿ ਪਏ ਰਵਾਣੀ ॥",
+          "sha256": "32503433632c966833021959e4cefd0835475aace370c05f7ed709124290e08c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 15,
+            "globalSourceRow": 125,
+            "pauri": 24,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand24.line06",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਤਿਗੁਰੂ ਬਾਝਹੁ ਹੋਰ ਕਚੀ ਬਾਣੀ ॥੨੪॥",
+          "sha256": "50c056a346197edc02f2d8914723f190a48db68f38beae108573dc07f48f71c4",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 16,
+            "globalSourceRow": 126,
+            "pauri": 24,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand25",
+      "title": "Anand Sahib · Pauri 25",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand25.line01",
+          "text": "ਗੁਰ ਕਾ ਸਬਦੁ ਰਤੰਨੁ ਹੈ ਹੀਰੇ ਜਿਤੁ ਜੜਾਉ ॥",
+          "sha256": "ea6e9a304494c700ce63a9c766144b992482abc5c878d2cf003136aa813b5380",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 17,
+            "globalSourceRow": 127,
+            "pauri": 25,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand25.line02",
+          "text": "ਸਬਦੁ ਰਤਨੁ ਜਿਤੁ ਮੰਨੁ ਲਾਗਾ ਏਹੁ ਹੋਆ ਸਮਾਉ ॥",
+          "sha256": "d131e8c0d6ebae42cff18e7442ef9430bd7c6e8083bfc4d0a503005ae25f8d48",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 18,
+            "globalSourceRow": 128,
+            "pauri": 25,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand25.line03",
+          "text": "ਸਬਦ ਸੇਤੀ ਮਨੁ ਮਿਲਿਆ ਸਚੈ ਲਾਇਆ ਭਾਉ ॥",
+          "sha256": "c82407a4a81d60f9ab911fbda178b8f4ebf622115c411b8bcb03ad2806f0e56d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 19,
+            "globalSourceRow": 129,
+            "pauri": 25,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand25.line04",
+          "text": "ਆਪੇ ਹੀਰਾ ਰਤਨੁ ਆਪੇ ਜਿਸ ਨੋ ਦੇਇ ਬੁਝਾਇ ॥",
+          "sha256": "6817f4665368a8a18da1043727b39ecde30c0a0f2c52bcdd5d676a40f7bc71c1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 20,
+            "globalSourceRow": 130,
+            "pauri": 25,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand25.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਬਦੁ ਰਤਨੁ ਹੈ ਹੀਰਾ ਜਿਤੁ ਜੜਾਉ ॥੨੫॥",
+          "sha256": "02098e88b80e2e322cfb0b21f05736bc92ed7c48d985e8da6cc8614d89dc18d2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 21,
+            "globalSourceRow": 131,
+            "pauri": 25,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand26",
+      "title": "Anand Sahib · Pauri 26",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand26.line01",
+          "text": "ਸਿਵ ਸਕਤਿ ਆਪਿ ਉਪਾਇ ਕੈ ਕਰਤਾ ਆਪੇ ਹੁਕਮੁ ਵਰਤਾਏ ॥",
+          "sha256": "24703e84dbe875fceb2e588c7be0f45f77c136eaa0230e7f8459bb5d3200556d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 22,
+            "globalSourceRow": 132,
+            "pauri": 26,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand26.line02",
+          "text": "ਹੁਕਮੁ ਵਰਤਾਏ ਆਪਿ ਵੇਖੈ ਗੁਰਮੁਖਿ ਕਿਸੈ ਬੁਝਾਏ ॥",
+          "sha256": "19bdbce4929077d4a9f8b2f1c231a855a7a717b36238e36d2ed228642e489d79",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 23,
+            "globalSourceRow": 133,
+            "pauri": 26,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand26.line03",
+          "text": "ਤੋੜੇ ਬੰਧਨ ਹੋਵੈ ਮੁਕਤੁ ਸਬਦੁ ਮੰਨਿ ਵਸਾਏ ॥",
+          "sha256": "49be8fa8eedc51b4ba2afd57f09e68268598e21d4dc67f66ae105b7e6440ae4f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 24,
+            "globalSourceRow": 134,
+            "pauri": 26,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand26.line04",
+          "text": "ਗੁਰਮੁਖਿ ਜਿਸ ਨੋ ਆਪਿ ਕਰੇ ਸੁ ਹੋਵੈ ਏਕਸ ਸਿਉ ਲਿਵ ਲਾਏ ॥",
+          "sha256": "b721ebb2844a547c0fa1e2f13f24b1bda9de56b1f351050bfea8c598b6041258",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 25,
+            "globalSourceRow": 135,
+            "pauri": 26,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand26.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਆਪਿ ਕਰਤਾ ਆਪੇ ਹੁਕਮੁ ਬੁਝਾਏ ॥੨੬॥",
+          "sha256": "e8367ea1d6790c10ac24a1a1e6e8772359f89bd99b8153ee7d655bd8fe9c7067",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 26,
+            "globalSourceRow": 136,
+            "pauri": 26,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand27",
+      "title": "Anand Sahib · Pauri 27",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand27.line01",
+          "text": "ਸਿਮ੍ਰਿਤਿ ਸਾਸਤ੍ਰ ਪੁੰਨ ਪਾਪ ਬੀਚਾਰਦੇ ਤਤੈ ਸਾਰ ਨ ਜਾਣੀ ॥",
+          "sha256": "4c39a5e6da20db56f5d019bc500d6575c09e9195d0afcae7ca9c548b9c1ac3ec",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 27,
+            "globalSourceRow": 137,
+            "pauri": 27,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand27.line02",
+          "text": "ਤਤੈ ਸਾਰ ਨ ਜਾਣੀ ਗੁਰੂ ਬਾਝਹੁ ਤਤੈ ਸਾਰ ਨ ਜਾਣੀ ॥",
+          "sha256": "85375f3d2188b4d0c54744de9fe4740e6332bfde0b1a0c16db258010ba9df1b5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 28,
+            "globalSourceRow": 138,
+            "pauri": 27,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand27.line03",
+          "text": "ਤਿਹੀ ਗੁਣੀ ਸੰਸਾਰੁ ਭ੍ਰਮਿ ਸੁਤਾ ਸੁਤਿਆ ਰੈਣਿ ਵਿਹਾਣੀ ॥",
+          "sha256": "7b4720ab7d48364cc03141be27999b8e36c1f471c5f5a3b02b889d0d901bebaa",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 29,
+            "globalSourceRow": 139,
+            "pauri": 27,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand27.line04",
+          "text": "ਗੁਰ ਕਿਰਪਾ ਤੇ ਸੇ ਜਨ ਜਾਗੇ ਜਿਨਾ ਹਰਿ ਮਨਿ ਵਸਿਆ ਬੋਲਹਿ ਅੰਮ੍ਰਿਤ ਬਾਣੀ ॥",
+          "sha256": "62d838d46f24261a08e1c364d2d69d992a7fc0e57eb3607aa368ea009b61e6b3",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 30,
+            "globalSourceRow": 140,
+            "pauri": 27,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand27.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸੋ ਤਤੁ ਪਾਏ ਜਿਸ ਨੋ ਅਨਦਿਨੁ ਹਰਿ ਲਿਵ ਲਾਗੈ ਜਾਗਤ ਰੈਣਿ ਵਿਹਾਣੀ ॥੨੭॥",
+          "sha256": "0f1fef85ad79990897cabb1f281a7a8a42ba753740961d54ddeead1cf036fc9f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 31,
+            "globalSourceRow": 141,
+            "pauri": 27,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand28",
+      "title": "Anand Sahib · Pauri 28",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand28.line01",
+          "text": "ਮਾਤਾ ਕੇ ਉਦਰ ਮਹਿ ਪ੍ਰਤਿਪਾਲ ਕਰੇ ਸੋ ਕਿਉ ਮਨਹੁ ਵਿਸਾਰੀਐ ॥",
+          "sha256": "611bb335c0e3d7e41315739268f8fe6e3582adab8855fdfec788f35372697746",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 32,
+            "globalSourceRow": 142,
+            "pauri": 28,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand28.line02",
+          "text": "ਮਨਹੁ ਕਿਉ ਵਿਸਾਰੀਐ ਏਵਡੁ ਦਾਤਾ ਜਿ ਅਗਨਿ ਮਹਿ ਆਹਾਰੁ ਪਹੁਚਾਵਏ ॥",
+          "sha256": "f67ff8320cf97ce76ac23f34b932a9ad61686c00fcd4f7c85c41fd5bcf17b93a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 33,
+            "globalSourceRow": 143,
+            "pauri": 28,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand28.line03",
+          "text": "ਓਸ ਨੋ ਕਿਹੁ ਪੋਹਿ ਨ ਸਕੀ ਜਿਸ ਨਉ ਆਪਣੀ ਲਿਵ ਲਾਵਏ ॥",
+          "sha256": "1dea08645d9a149807a984820c23ccab656b214e7941b4afb1a24de835781ce2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 920,
+            "digitalParagraph": 34,
+            "globalSourceRow": 144,
+            "pauri": 28,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand28.line04",
+          "text": "ਆਪਣੀ ਲਿਵ ਆਪੇ ਲਾਏ ਗੁਰਮੁਖਿ ਸਦਾ ਸਮਾਲੀਐ ॥",
+          "sha256": "4971a769630083b4b701037f2c4a3fe66d9d303d904ce5e6c0dd78c343bdaff0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 0,
+            "globalSourceRow": 145,
+            "pauri": 28,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand28.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਏਵਡੁ ਦਾਤਾ ਸੋ ਕਿਉ ਮਨਹੁ ਵਿਸਾਰੀਐ ॥੨੮॥",
+          "sha256": "adfc7e93ec75cca0d64d2d06bc654704cfee9e4b1c6cbcb89b00d43c6f93d64c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 1,
+            "globalSourceRow": 146,
+            "pauri": 28,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand29",
+      "title": "Anand Sahib · Pauri 29",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand29.line01",
+          "text": "ਜੈਸੀ ਅਗਨਿ ਉਦਰ ਮਹਿ ਤੈਸੀ ਬਾਹਰਿ ਮਾਇਆ ॥",
+          "sha256": "83ef1e6439ab37b0284a2dc69b9fb6cdc885df2747a36b3ddf6ee43698a5f161",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 2,
+            "globalSourceRow": 147,
+            "pauri": 29,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand29.line02",
+          "text": "ਮਾਇਆ ਅਗਨਿ ਸਭ ਇਕੋ ਜੇਹੀ ਕਰਤੈ ਖੇਲੁ ਰਚਾਇਆ ॥",
+          "sha256": "cb480f76e22d4120b36264e2c9eed606342facaf795bda74fdfe54de6e1f0b3b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 3,
+            "globalSourceRow": 148,
+            "pauri": 29,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand29.line03",
+          "text": "ਜਾ ਤਿਸੁ ਭਾਣਾ ਤਾ ਜੰਮਿਆ ਪਰਵਾਰਿ ਭਲਾ ਭਾਇਆ ॥",
+          "sha256": "a8f0f65e50f28b9b8d2ef88aa717fc09eeb87d348ecaa1f2decc6dfcefa1d220",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 4,
+            "globalSourceRow": 149,
+            "pauri": 29,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand29.line04",
+          "text": "ਲਿਵ ਛੁੜਕੀ ਲਗੀ ਤ੍ਰਿਸਨਾ ਮਾਇਆ ਅਮਰੁ ਵਰਤਾਇਆ ॥",
+          "sha256": "2436074b822a137278f4a1d69cc407fe0f72bb6a77ade5e8348b37413b2f68ea",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 5,
+            "globalSourceRow": 150,
+            "pauri": 29,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand29.line05",
+          "text": "ਏਹ ਮਾਇਆ ਜਿਤੁ ਹਰਿ ਵਿਸਰੈ ਮੋਹੁ ਉਪਜੈ ਭਾਉ ਦੂਜਾ ਲਾਇਆ ॥",
+          "sha256": "215aab625f51c0beb7e2afd2f0afca8df0bdb9c07863efd33074a85519d99f44",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 6,
+            "globalSourceRow": 151,
+            "pauri": 29,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand29.line06",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਗੁਰ ਪਰਸਾਦੀ ਜਿਨਾ ਲਿਵ ਲਾਗੀ ਤਿਨੀ ਵਿਚੇ ਮਾਇਆ ਪਾਇਆ ॥੨੯॥",
+          "sha256": "6308433632e72c45345219917da5dbf5244448ccbf4cc842bcec477db69d098d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 7,
+            "globalSourceRow": 152,
+            "pauri": 29,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand30",
+      "title": "Anand Sahib · Pauri 30",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand30.line01",
+          "text": "ਹਰਿ ਆਪਿ ਅਮੁਲਕੁ ਹੈ ਮੁਲਿ ਨ ਪਾਇਆ ਜਾਇ ॥",
+          "sha256": "6f19b7e948625e7c07debfd8d669740f8d2a07e313233f86604b46bdaa3ecd16",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 8,
+            "globalSourceRow": 153,
+            "pauri": 30,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand30.line02",
+          "text": "ਮੁਲਿ ਨ ਪਾਇਆ ਜਾਇ ਕਿਸੈ ਵਿਟਹੁ ਰਹੇ ਲੋਕ ਵਿਲਲਾਇ ॥",
+          "sha256": "a6c534e82604e46faeb72882dad2574b07814cd7be4a58a8785c8bc8f7baee10",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 9,
+            "globalSourceRow": 154,
+            "pauri": 30,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand30.line03",
+          "text": "ਐਸਾ ਸਤਿਗੁਰੁ ਜੇ ਮਿਲੈ ਤਿਸ ਨੋ ਸਿਰੁ ਸਉਪੀਐ ਵਿਚਹੁ ਆਪੁ ਜਾਇ ॥",
+          "sha256": "2ad9fd14091f7a46b675d03364e264816b78192f25f6d48b0aee06869ecb0b4a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 10,
+            "globalSourceRow": 155,
+            "pauri": 30,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand30.line04",
+          "text": "ਜਿਸ ਦਾ ਜੀਉ ਤਿਸੁ ਮਿਲਿ ਰਹੈ ਹਰਿ ਵਸੈ ਮਨਿ ਆਇ ॥",
+          "sha256": "0b5b2806717ba30f1501f80aa9b20ba5966cb2512caf9e2ebe65c0d672ef9d91",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 11,
+            "globalSourceRow": 156,
+            "pauri": 30,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand30.line05",
+          "text": "ਹਰਿ ਆਪਿ ਅਮੁਲਕੁ ਹੈ ਭਾਗ ਤਿਨਾ ਕੇ ਨਾਨਕਾ ਜਿਨ ਹਰਿ ਪਲੈ ਪਾਇ ॥੩੦॥",
+          "sha256": "d94583add32b6826d20ecab84351e769c1912a6157031c8d7b3ac701686e6619",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 12,
+            "globalSourceRow": 157,
+            "pauri": 30,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand31",
+      "title": "Anand Sahib · Pauri 31",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand31.line01",
+          "text": "ਹਰਿ ਰਾਸਿ ਮੇਰੀ ਮਨੁ ਵਣਜਾਰਾ ॥",
+          "sha256": "a14c28867499ba142e450f00962ed5a64f838b1a152842d5e478e46a9fe580ec",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 13,
+            "globalSourceRow": 158,
+            "pauri": 31,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand31.line02",
+          "text": "ਹਰਿ ਰਾਸਿ ਮੇਰੀ ਮਨੁ ਵਣਜਾਰਾ ਸਤਿਗੁਰ ਤੇ ਰਾਸਿ ਜਾਣੀ ॥",
+          "sha256": "94021c7cfdd774a03c7791eae6a636f566cf0eb319dce04565d7496e4e3be1cd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 14,
+            "globalSourceRow": 159,
+            "pauri": 31,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand31.line03",
+          "text": "ਹਰਿ ਹਰਿ ਨਿਤ ਜਪਿਹੁ ਜੀਅਹੁ ਲਾਹਾ ਖਟਿਹੁ ਦਿਹਾੜੀ ॥",
+          "sha256": "bb612065b26680edee37cb67d00004ed3d807821d5ba2e7f3f4beac61e61a40b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 15,
+            "globalSourceRow": 160,
+            "pauri": 31,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand31.line04",
+          "text": "ਏਹੁ ਧਨੁ ਤਿਨਾ ਮਿਲਿਆ ਜਿਨ ਹਰਿ ਆਪੇ ਭਾਣਾ ॥",
+          "sha256": "2cfd2fa7b8a44573a0cce73c4bece153706fb47f6af4b42b7441456b0aa20421",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 16,
+            "globalSourceRow": 161,
+            "pauri": 31,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand31.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਹਰਿ ਰਾਸਿ ਮੇਰੀ ਮਨੁ ਹੋਆ ਵਣਜਾਰਾ ॥੩੧॥",
+          "sha256": "4a473251d42fab4791675041010ae78dd7942b277cc8ef78608888ce45b54d2c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 17,
+            "globalSourceRow": 162,
+            "pauri": 31,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand32",
+      "title": "Anand Sahib · Pauri 32",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand32.line01",
+          "text": "ਏ ਰਸਨਾ ਤੂ ਅਨ ਰਸਿ ਰਾਚਿ ਰਹੀ ਤੇਰੀ ਪਿਆਸ ਨ ਜਾਇ ॥",
+          "sha256": "42b9707d215723c4eb3633a81c18d793517fa7ae453bc162712cc075c42d81d5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 18,
+            "globalSourceRow": 163,
+            "pauri": 32,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand32.line02",
+          "text": "ਪਿਆਸ ਨ ਜਾਇ ਹੋਰਤੁ ਕਿਤੈ ਜਿਚਰੁ ਹਰਿ ਰਸੁ ਪਲੈ ਨ ਪਾਇ ॥",
+          "sha256": "1388de0b81ba24b8508f1cca177a1b5121797f3fcd553cb11f6bd91680770ac7",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 19,
+            "globalSourceRow": 164,
+            "pauri": 32,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand32.line03",
+          "text": "ਹਰਿ ਰਸੁ ਪਾਇ ਪਲੈ ਪੀਐ ਹਰਿ ਰਸੁ ਬਹੁੜਿ ਨ ਤ੍ਰਿਸਨਾ ਲਾਗੈ ਆਇ ॥",
+          "sha256": "ae583140ec19cc0e51f51240b1ee1a392ba4f71b871c2668290c6871cffc6cce",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 20,
+            "globalSourceRow": 165,
+            "pauri": 32,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand32.line04",
+          "text": "ਏਹੁ ਹਰਿ ਰਸੁ ਕਰਮੀ ਪਾਈਐ ਸਤਿਗੁਰੁ ਮਿਲੈ ਜਿਸੁ ਆਇ ॥",
+          "sha256": "e81dd77088f63ee22d7667f765985d64fab8f1d93b4b77b36767f9efbccc060d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 21,
+            "globalSourceRow": 166,
+            "pauri": 32,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand32.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਹੋਰਿ ਅਨ ਰਸ ਸਭਿ ਵੀਸਰੇ ਜਾ ਹਰਿ ਵਸੈ ਮਨਿ ਆਇ ॥੩੨॥",
+          "sha256": "4478f27538dea1c85f06a9a5d090bf781f7947167aac69f33ae6c5499fa2b9c4",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 22,
+            "globalSourceRow": 167,
+            "pauri": 32,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand33",
+      "title": "Anand Sahib · Pauri 33",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand33.line01",
+          "text": "ਏ ਸਰੀਰਾ ਮੇਰਿਆ ਹਰਿ ਤੁਮ ਮਹਿ ਜੋਤਿ ਰਖੀ ਤਾ ਤੂ ਜਗ ਮਹਿ ਆਇਆ ॥",
+          "sha256": "3b007eb23cec2d184ca1379df286cc3347209a4719c17b33ead47ec85543c304",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 23,
+            "globalSourceRow": 168,
+            "pauri": 33,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand33.line02",
+          "text": "ਹਰਿ ਜੋਤਿ ਰਖੀ ਤੁਧੁ ਵਿਚਿ ਤਾ ਤੂ ਜਗ ਮਹਿ ਆਇਆ ॥",
+          "sha256": "17b96b013db3570c39af2a2683d86277d0ec25bc546b98241b85f10c4dc84427",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 24,
+            "globalSourceRow": 169,
+            "pauri": 33,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand33.line03",
+          "text": "ਹਰਿ ਆਪੇ ਮਾਤਾ ਆਪੇ ਪਿਤਾ ਜਿਨਿ ਜੀਉ ਉਪਾਇ ਜਗਤੁ ਦਿਖਾਇਆ ॥",
+          "sha256": "1f8cd678dd050634237445020bc56b0766210dba8361e11b39ee2d87e2c0dc9f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 25,
+            "globalSourceRow": 170,
+            "pauri": 33,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand33.line04",
+          "text": "ਗੁਰ ਪਰਸਾਦੀ ਬੁਝਿਆ ਤਾ ਚਲਤੁ ਹੋਆ ਚਲਤੁ ਨਦਰੀ ਆਇਆ ॥",
+          "sha256": "989e4facb75d60e00dfb9c177d98bd721e4146abb599950587ac2a41e6bc2c7d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 26,
+            "globalSourceRow": 171,
+            "pauri": 33,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand33.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸ੍ਰਿਸਟਿ ਕਾ ਮੂਲੁ ਰਚਿਆ ਜੋਤਿ ਰਾਖੀ ਤਾ ਤੂ ਜਗ ਮਹਿ ਆਇਆ ॥੩੩॥",
+          "sha256": "9612f0ea90622c73be99a1046f0da54ad83a85034d844c46fd7f82d8beee9d5e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 27,
+            "globalSourceRow": 172,
+            "pauri": 33,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand34",
+      "title": "Anand Sahib · Pauri 34",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand34.line01",
+          "text": "ਮਨਿ ਚਾਉ ਭਇਆ ਪ੍ਰਭ ਆਗਮੁ ਸੁਣਿਆ ॥",
+          "sha256": "fc0aa5e51cd5c70f25cf8d6205068ecd98aeac87932916dd6c83da139421d84f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 28,
+            "globalSourceRow": 173,
+            "pauri": 34,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand34.line02",
+          "text": "ਹਰਿ ਮੰਗਲੁ ਗਾਉ ਸਖੀ ਗ੍ਰਿਹੁ ਮੰਦਰੁ ਬਣਿਆ ॥",
+          "sha256": "577d5ce5820af94f7de168817970822c42e3738199027ee399eb4f16af0b3685",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 29,
+            "globalSourceRow": 174,
+            "pauri": 34,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand34.line03",
+          "text": "ਹਰਿ ਗਾਉ ਮੰਗਲੁ ਨਿਤ ਸਖੀਏ ਸੋਗੁ ਦੂਖੁ ਨ ਵਿਆਪਏ ॥",
+          "sha256": "4a44dda99faba1a91c6092757952d57c89c398280ad49bb4ebf10330e8961a62",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 30,
+            "globalSourceRow": 175,
+            "pauri": 34,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand34.line04",
+          "text": "ਗੁਰ ਚਰਨ ਲਾਗੇ ਦਿਨ ਸਭਾਗੇ ਆਪਣਾ ਪਿਰੁ ਜਾਪਏ ॥",
+          "sha256": "7cb57ca6b8410e40e104e495435bcd6a8e44f037e9e1c46dbc2df25ff54faca1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 31,
+            "globalSourceRow": 176,
+            "pauri": 34,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand34.line05",
+          "text": "ਅਨਹਤ ਬਾਣੀ ਗੁਰ ਸਬਦਿ ਜਾਣੀ ਹਰਿ ਨਾਮੁ ਹਰਿ ਰਸੁ ਭੋਗੋ ॥",
+          "sha256": "0840723cdde94658c62b749e0ab5c7af3b8e23c73f9a2e4b15b58ba508d531ea",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 921,
+            "digitalParagraph": 32,
+            "globalSourceRow": 177,
+            "pauri": 34,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand34.line06",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਪ੍ਰਭੁ ਆਪਿ ਮਿਲਿਆ ਕਰਣ ਕਾਰਣ ਜੋਗੋ ॥੩੪॥",
+          "sha256": "a7a6c230c0285b219688277b3ab261e0fda55ff3f8c7363505399e8fd873ac1e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 0,
+            "globalSourceRow": 178,
+            "pauri": 34,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand35",
+      "title": "Anand Sahib · Pauri 35",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand35.line01",
+          "text": "ਏ ਸਰੀਰਾ ਮੇਰਿਆ ਇਸੁ ਜਗ ਮਹਿ ਆਇ ਕੈ ਕਿਆ ਤੁਧੁ ਕਰਮ ਕਮਾਇਆ ॥",
+          "sha256": "1b14f360c3c8c3eba654bb00c7e6ea8fa73d9288e76b81b9ffecdba0e82b53d2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 1,
+            "globalSourceRow": 179,
+            "pauri": 35,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand35.line02",
+          "text": "ਕਿ ਕਰਮ ਕਮਾਇਆ ਤੁਧੁ ਸਰੀਰਾ ਜਾ ਤੂ ਜਗ ਮਹਿ ਆਇਆ ॥",
+          "sha256": "5a030984d58d131257e3b1b085dcb4f6d1657140106dd4c1057bcbc33d0bb067",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 2,
+            "globalSourceRow": 180,
+            "pauri": 35,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand35.line03",
+          "text": "ਜਿਨਿ ਹਰਿ ਤੇਰਾ ਰਚਨੁ ਰਚਿਆ ਸੋ ਹਰਿ ਮਨਿ ਨ ਵਸਾਇਆ ॥",
+          "sha256": "477d442562cbdc5a432f1b26df93b95ac29ad66a18838d8f055601c35dd20275",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 3,
+            "globalSourceRow": 181,
+            "pauri": 35,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand35.line04",
+          "text": "ਗੁਰ ਪਰਸਾਦੀ ਹਰਿ ਮੰਨਿ ਵਸਿਆ ਪੂਰਬਿ ਲਿਖਿਆ ਪਾਇਆ ॥",
+          "sha256": "1e9c7e45ea0b45496983827d5cc9c829371b4fadb70a7fde37848378c4af79e9",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 4,
+            "globalSourceRow": 182,
+            "pauri": 35,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand35.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਏਹੁ ਸਰੀਰੁ ਪਰਵਾਣੁ ਹੋਆ ਜਿਨਿ ਸਤਿਗੁਰ ਸਿਉ ਚਿਤੁ ਲਾਇਆ ॥੩੫॥",
+          "sha256": "b997d891eeb1c18aef780c15d0e781f159713bf03020e930f72b4925b466486b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 5,
+            "globalSourceRow": 183,
+            "pauri": 35,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand36",
+      "title": "Anand Sahib · Pauri 36",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand36.line01",
+          "text": "ਏ ਨੇਤ੍ਰਹੁ ਮੇਰਿਹੋ ਹਰਿ ਤੁਮ ਮਹਿ ਜੋਤਿ ਧਰੀ ਹਰਿ ਬਿਨੁ ਅਵਰੁ ਨ ਦੇਖਹੁ ਕੋਈ ॥",
+          "sha256": "3015b8af209597ed7610b4cb2515fa7c349b8ca3b5875425ab23040186e4da89",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 6,
+            "globalSourceRow": 184,
+            "pauri": 36,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand36.line02",
+          "text": "ਹਰਿ ਬਿਨੁ ਅਵਰੁ ਨ ਦੇਖਹੁ ਕੋਈ ਨਦਰੀ ਹਰਿ ਨਿਹਾਲਿਆ ॥",
+          "sha256": "f87f2b5b6b71f3ba540787c23b59f8ff63cf5d53ad2f20f5ed02b93eb101da71",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 7,
+            "globalSourceRow": 185,
+            "pauri": 36,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand36.line03",
+          "text": "ਏਹੁ ਵਿਸੁ ਸੰਸਾਰੁ ਤੁਮ ਦੇਖਦੇ ਏਹੁ ਹਰਿ ਕਾ ਰੂਪੁ ਹੈ ਹਰਿ ਰੂਪੁ ਨਦਰੀ ਆਇਆ ॥",
+          "sha256": "6e5c5d0f95ebb73db2c5c0f342c9d88da9b731fdcfaec4c86b7d76a2800c8389",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 8,
+            "globalSourceRow": 186,
+            "pauri": 36,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand36.line04",
+          "text": "ਗੁਰ ਪਰਸਾਦੀ ਬੁਝਿਆ ਜਾ ਵੇਖਾ ਹਰਿ ਇਕੁ ਹੈ ਹਰਿ ਬਿਨੁ ਅਵਰੁ ਨ ਕੋਈ ॥",
+          "sha256": "38eea54969f86d9fc3e95668bbc8c7912bdfc3e09bc61f36bf0c515533f7561f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 9,
+            "globalSourceRow": 187,
+            "pauri": 36,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand36.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਏਹਿ ਨੇਤ੍ਰ ਅੰਧ ਸੇ ਸਤਿਗੁਰਿ ਮਿਲਿਐ ਦਿਬ ਦ੍ਰਿਸਟਿ ਹੋਈ ॥੩੬॥",
+          "sha256": "c31324ffb18f5d9cbf7fd656d8db856519c795db6d5e353a16b9d1a3f26b02fa",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 10,
+            "globalSourceRow": 188,
+            "pauri": 36,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand37",
+      "title": "Anand Sahib · Pauri 37",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand37.line01",
+          "text": "ਏ ਸ੍ਰਵਣਹੁ ਮੇਰਿਹੋ ਸਾਚੈ ਸੁਨਣੈ ਨੋ ਪਠਾਏ ॥",
+          "sha256": "de62343dda3461bf5c949f9c73ffa7785f261ef9a67472c5b3c3201d78718d51",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 11,
+            "globalSourceRow": 189,
+            "pauri": 37,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand37.line02",
+          "text": "ਸਾਚੈ ਸੁਨਣੈ ਨੋ ਪਠਾਏ ਸਰੀਰਿ ਲਾਏ ਸੁਣਹੁ ਸਤਿ ਬਾਣੀ ॥",
+          "sha256": "7134b65c8225f9cb49e84b7a58ad12bd9cc9407bd52fa6b774bc9dd86c3478d7",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 12,
+            "globalSourceRow": 190,
+            "pauri": 37,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand37.line03",
+          "text": "ਜਿਤੁ ਸੁਣੀ ਮਨੁ ਤਨੁ ਹਰਿਆ ਹੋਆ ਰਸਨਾ ਰਸਿ ਸਮਾਣੀ ॥",
+          "sha256": "0d1f0242b4c12beee5fb4132a1a589df709d204a0dc55411ca94d72e45cb8ef5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 13,
+            "globalSourceRow": 191,
+            "pauri": 37,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand37.line04",
+          "text": "ਸਚੁ ਅਲਖ ਵਿਡਾਣੀ ਤਾ ਕੀ ਗਤਿ ਕਹੀ ਨ ਜਾਏ ॥",
+          "sha256": "14044cf53802c8957ab8c12fbe1be5b1e6c7af31b50f59555bd7ac888835bc0d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 14,
+            "globalSourceRow": 192,
+            "pauri": 37,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand37.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਅੰਮ੍ਰਿਤ ਨਾਮੁ ਸੁਣਹੁ ਪਵਿਤ੍ਰ ਹੋਵਹੁ ਸਾਚੈ ਸੁਨਣੈ ਨੋ ਪਠਾਏ ॥੩੭॥",
+          "sha256": "c1e86ec8810f2f2adec0912b254e2175e08be4b9c3abb2736015626da00228e4",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 15,
+            "globalSourceRow": 193,
+            "pauri": 37,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand38",
+      "title": "Anand Sahib · Pauri 38",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand38.line01",
+          "text": "ਹਰਿ ਜੀਉ ਗੁਫਾ ਅੰਦਰਿ ਰਖਿ ਕੈ ਵਾਜਾ ਪਵਣੁ ਵਜਾਇਆ ॥",
+          "sha256": "0562ae3f50fb85c62a254dd286371650476404007e66bb89fc8c427fd4dfa7b1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 16,
+            "globalSourceRow": 194,
+            "pauri": 38,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand38.line02",
+          "text": "ਵਜਾਇਆ ਵਾਜਾ ਪਉਣ ਨਉ ਦੁਆਰੇ ਪਰਗਟੁ ਕੀਏ ਦਸਵਾ ਗੁਪਤੁ ਰਖਾਇਆ ॥",
+          "sha256": "3ece29c21388c0d58b7eb95b3cb9396041b3b72c6b2373560c02e6636ae1e8f8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 17,
+            "globalSourceRow": 195,
+            "pauri": 38,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand38.line03",
+          "text": "ਗੁਰਦੁਆਰੈ ਲਾਇ ਭਾਵਨੀ ਇਕਨਾ ਦਸਵਾ ਦੁਆਰੁ ਦਿਖਾਇਆ ॥",
+          "sha256": "c357b067d730199dccd1c5eedbc76940560675b1fed0fd60e38bcd173cd4810f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 18,
+            "globalSourceRow": 196,
+            "pauri": 38,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand38.line04",
+          "text": "ਤਹ ਅਨੇਕ ਰੂਪ ਨਾਉ ਨਵ ਨਿਧਿ ਤਿਸ ਦਾ ਅੰਤੁ ਨ ਜਾਈ ਪਾਇਆ ॥",
+          "sha256": "f3429dd18f1a8b02b2338a6c1b7031b5fde7b9de62ecb401d8b253394675f6e9",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 19,
+            "globalSourceRow": 197,
+            "pauri": 38,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand38.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਹਰਿ ਪਿਆਰੈ ਜੀਉ ਗੁਫਾ ਅੰਦਰਿ ਰਖਿ ਕੈ ਵਾਜਾ ਪਵਣੁ ਵਜਾਇਆ ॥੩੮॥",
+          "sha256": "4aaa57a43f081b9f31b83d3efa3694ba8528f36868cabfd8a12a8e40d9c729c9",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 20,
+            "globalSourceRow": 198,
+            "pauri": 38,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand39",
+      "title": "Anand Sahib · Pauri 39",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand39.line01",
+          "text": "ਏਹੁ ਸਾਚਾ ਸੋਹਿਲਾ ਸਾਚੈ ਘਰਿ ਗਾਵਹੁ ॥",
+          "sha256": "76433dee60754de8407f7c8bacb2df28a542d0d4c45de96cc6128abb39d5c5be",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 21,
+            "globalSourceRow": 199,
+            "pauri": 39,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand39.line02",
+          "text": "ਗਾਵਹੁ ਤ ਸੋਹਿਲਾ ਘਰਿ ਸਾਚੈ ਜਿਥੈ ਸਦਾ ਸਚੁ ਧਿਆਵਹੇ ॥",
+          "sha256": "b3437b6361386b4cc5c6086d21f02fe449c7c78fd4f97446751b37c666c45719",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 22,
+            "globalSourceRow": 200,
+            "pauri": 39,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand39.line03",
+          "text": "ਸਚੋ ਧਿਆਵਹਿ ਜਾ ਤੁਧੁ ਭਾਵਹਿ ਗੁਰਮੁਖਿ ਜਿਨਾ ਬੁਝਾਵਹੇ ॥",
+          "sha256": "28a22c10dc123fbf73c5eec9ba67ecb5433ceb5b752bd38feceac098bd48be1a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 23,
+            "globalSourceRow": 201,
+            "pauri": 39,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand39.line04",
+          "text": "ਇਹੁ ਸਚੁ ਸਭਨਾ ਕਾ ਖਸਮੁ ਹੈ ਜਿਸੁ ਬਖਸੇ ਸੋ ਜਨੁ ਪਾਵਹੇ ॥",
+          "sha256": "08ee84a82f124d83f7ee70bd473a0e49bdd20f12737392609c53d258bde2e661",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 24,
+            "globalSourceRow": 202,
+            "pauri": 39,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand39.line05",
+          "text": "ਕਹੈ ਨਾਨਕੁ ਸਚੁ ਸੋਹਿਲਾ ਸਚੈ ਘਰਿ ਗਾਵਹੇ ॥੩੯॥",
+          "sha256": "974c49a48a08cab4dd2daa34b8a04c4a6ff4e3bc166ebd0258dffb0dbac33970",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 25,
+            "globalSourceRow": 203,
+            "pauri": 39,
+            "pauriLine": 5
+          },
+          "held": false
+        }
+      ]
+    },
+    {
+      "id": "anand40",
+      "title": "Anand Sahib · Pauri 40",
+      "sourceFamily": "sggs",
+      "componentId": "",
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "anand40.line01",
+          "text": "ਅਨਦੁ ਸੁਣਹੁ ਵਡਭਾਗੀਹੋ ਸਗਲ ਮਨੋਰਥ ਪੂਰੇ ॥",
+          "sha256": "be4bc19edd463c608ce099e3a5cf0cd04a00f672166ba941a35d9f7a09129fe2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 26,
+            "globalSourceRow": 204,
+            "pauri": 40,
+            "pauriLine": 1
+          },
+          "held": false
+        },
+        {
+          "id": "anand40.line02",
+          "text": "ਪਾਰਬ੍ਰਹਮੁ ਪ੍ਰਭੁ ਪਾਇਆ ਉਤਰੇ ਸਗਲ ਵਿਸੂਰੇ ॥",
+          "sha256": "2a7d3581fec953d5c71b6622d718109377c45cbeb76b900aa183915d98136769",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 27,
+            "globalSourceRow": 205,
+            "pauri": 40,
+            "pauriLine": 2
+          },
+          "held": false
+        },
+        {
+          "id": "anand40.line03",
+          "text": "ਦੂਖ ਰੋਗ ਸੰਤਾਪ ਉਤਰੇ ਸੁਣੀ ਸਚੀ ਬਾਣੀ ॥",
+          "sha256": "862612c2679ab8fe849957492145efd8448e2e64c062da20405facea89ad0798",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 28,
+            "globalSourceRow": 206,
+            "pauri": 40,
+            "pauriLine": 3
+          },
+          "held": false
+        },
+        {
+          "id": "anand40.line04",
+          "text": "ਸੰਤ ਸਾਜਨ ਭਏ ਸਰਸੇ ਪੂਰੇ ਗੁਰ ਤੇ ਜਾਣੀ ॥",
+          "sha256": "87480a179e5e5092743afd81ab576afbefe0b564a40a192d11c1a8b58c04b53c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 29,
+            "globalSourceRow": 207,
+            "pauri": 40,
+            "pauriLine": 4
+          },
+          "held": false
+        },
+        {
+          "id": "anand40.line05",
+          "text": "ਸੁਣਤੇ ਪੁਨੀਤ ਕਹਤੇ ਪਵਿਤੁ ਸਤਿਗੁਰੁ ਰਹਿਆ ਭਰਪੂਰੇ ॥",
+          "sha256": "06eb4f28bfb70ea0202462899fe95b32d68c5dcd5b6e23c20dc84b0471115666",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 30,
+            "globalSourceRow": 208,
+            "pauri": 40,
+            "pauriLine": 5
+          },
+          "held": false
+        },
+        {
+          "id": "anand40.line06",
+          "text": "ਬਿਨਵੰਤਿ ਨਾਨਕੁ ਗੁਰ ਚਰਣ ਲਾਗੇ ਵਾਜੇ ਅਨਹਦ ਤੂਰੇ ॥੪੦॥੧॥",
+          "sha256": "024b60590dcd6048a582dca91d9d85a35ef82c9195ecf8adf3f6e299c6d6a55b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 922,
+            "digitalParagraph": 31,
+            "globalSourceRow": 209,
+            "pauri": 40,
+            "pauriLine": 6
+          },
+          "held": false
+        }
+      ]
+    }
+  ]
+}
