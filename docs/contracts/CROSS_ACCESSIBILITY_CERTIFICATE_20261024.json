@@ -1,0 +1,23 @@
+{
+  "project": "GLP-001",
+  "subject": "CROSS-ACCESSIBILITY",
+  "baseCommit": "254f3871b785b756208379138dcc17472a3733ff",
+  "checkedAt": "2026-10-25T00:50:30.820717+00:00",
+  "scope": "Pure reusable candidate contracts and synthetic tests; no runtime integration",
+  "result": "PASS",
+  "sourceEnvelopeAndQuoteChecks": 12,
+  "contrastTokenChecks": 4,
+  "accessibilityFixtureChecks": 5,
+  "total": 21,
+  "unchangedRuntime": true,
+  "physicalIPhone": "NOT_RUN",
+  "actualDOMMeasured": "NOT_RUN",
+  "editorialApproval": "NONE",
+  "publicRelease": "NO",
+  "caveats": [
+    "Evidence URL contents are not retrieved by the contract helper",
+    "Palette checks use proposed tokens, not actual browser CSS",
+    "A11y outlines are synthetic until future rooms submit real measurements",
+    "Founder product acceptance does not substitute for human reviewers"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "captured_at_utc": "2026-10-25T06:34:51.746588+00:00",
+  "status": "WEB_CORROBORATED_NOT_EDITION_APPROVED",
+  "scope": "Published web text exact-UTF-8/NFC corroboration, not independent printed edition/qualified Sikh review",
+  "frozen_anchor": {
+    "ang": 3,
+    "unit": "pauri13",
+    "line_count": 6,
+    "lines": [
+      {
+        "id": "pauri13.line01",
+        "source_line": 6,
+        "frozen_sha256": "b5b6448d48770ad74e695ff84fa87f0705fd528688297468c1bda066e1288a44",
+        "web_matches": 3
+      },
+      {
+        "id": "pauri13.line02",
+        "source_line": 7,
+        "frozen_sha256": "4634c77633d0a66875f23178372d5d83788277bc71d898f2d866a2bc246dc826",
+        "web_matches": 2
+      },
+      {
+        "id": "pauri13.line03",
+        "source_line": 7,
+        "frozen_sha256": "e9379a8f7191dd34f58a0503eb1a9b0c1c95f7031052cf9bb3179a67bf7d6ad8",
+        "web_matches": 2
+      },
+      {
+        "id": "pauri13.line04",
+        "source_line": 7,
+        "frozen_sha256": "306dc324ecc05ed3c5e72cf6ff999d3e293183fdde6f0e744d452b0eafb319c4",
+        "web_matches": 2
+      },
+      {
+        "id": "pauri13.line05",
+        "source_line": 7,
+        "frozen_sha256": "4347c1cccd40cc451316af51f9704e63f6983687b2f83a5e1e217b82aa8fee30",
+        "web_matches": 2
+      },
+      {
+        "id": "pauri13.line06",
+        "source_line": 8,
+        "frozen_sha256": "6288abbadb7f243619906ccfa22a76c3d90a40fdfad80109f1177e270e3a13f2",
+        "web_matches": 2
+      }
+    ]
+  },
+  "first_line_original": "ਮੰਨੈ ਸੁਰਤਿ ਹੋਵੈ ਮਨਿ ਬੁਧਿ ॥",
+  "first_line_original_sha256": "b5b6448d48770ad74e695ff84fa87f0705fd528688297468c1bda066e1288a44",
+  "pages": [
+    {
+      "source": "SriGranth",
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=KeertanPage&I=21743&K=3&L=6&Lang=1",
+      "http_status": 200,
+      "retrieved_bytes": 14368,
+      "page_sha256": "207b74fd964d5cb34598c0cc4c6af3c4706407d6dbb2e276e44b38838e9f79b7",
+      "exact_nfc_html_matches": [
+        "pauri13.line01"
+      ],
+      "unmatched_not_disagreements": [
+        "pauri13.line02",
+        "pauri13.line03",
+        "pauri13.line04",
+        "pauri13.line05",
+        "pauri13.line06"
+      ]
+    },
+    {
+      "source": "SiriGuruGranth",
+      "url": "https://srigurugranth.net/0003.html",
+      "http_status": 200,
+      "retrieved_bytes": 22958,
+      "page_sha256": "4369d72257ab361d017df5b4cbe2756e9dc382258392ea55c154217a4bec90fb",
+      "exact_nfc_html_matches": [
+        "pauri13.line01",
+        "pauri13.line02",
+        "pauri13.line03",
+        "pauri13.line04",
+        "pauri13.line05",
+        "pauri13.line06"
+      ],
+      "unmatched_not_disagreements": []
+    },
+    {
+      "source": "GurbaniTabs",
+      "url": "https://www.gurbanitabs.com/angs/3/%E0%A8%85%E0%A9%B0%E0%A8%97-%E0%A9%A9",
+      "http_status": 200,
+      "retrieved_bytes": 74265,
+      "page_sha256": "5b66e96abfee584a71c841c30547cf79969ab65fd8b97674529a631dbcbadb2f",
+      "exact_nfc_html_matches": [
+        "pauri13.line01",
+        "pauri13.line02",
+        "pauri13.line03",
+        "pauri13.line04",
+        "pauri13.line05",
+        "pauri13.line06"
+      ],
+      "unmatched_not_disagreements": []
+    }
+  ],
+  "method": "HTTPS 200 HTML snapshot SHA-256; UTF-8 decode, HTML entities decoded, tag removal, Unicode NFC and whitespace compaction; exact original Gurmukhi substring only",
+  "limitation": "Websites may share the same digital source; this is NOT three independently collated printed editions. No SGPC source-edition signoff or linguistic scholarship. Non-match can reflect markup, not a textual discrepancy.",
+  "qualified_sikh_punjabi_review": "PENDING",
+  "independent_source_edition_collation": "PENDING",
+  "frozen_corpus_modified": false,
+  "public_release_authorized": false
+}

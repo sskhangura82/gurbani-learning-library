@@ -25,3 +25,7 @@ jobs:
         run: node tests/r6-contract.mjs
       - name: Revision 7 home, pace and rooms contracts
         run: node tests/r7-contract.mjs
+      - name: Cross-room original source and review-state contracts
+        run: node tests/source-envelope.mjs
+      - name: Pauri 13 published-web text corroboration (not edition approval)
+        run: node tests/pauri13-web-corroboration.mjs
