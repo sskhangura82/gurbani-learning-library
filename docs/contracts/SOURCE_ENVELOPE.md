@@ -57,3 +57,7 @@ Run `node --test tests/source-envelope.mjs tests/contrast.mjs tests/a11y-order.m
 4. Keep qualified Sikh/Punjabi, psychology, media-rights, physical device, provider and founder release decisions as separate gates.
 
 Blueprint basis: user-supplied Claude PSY-R §8, GUR-R §5, X-INT §§3–6 (2026-10-24). This contract does not represent formal verification of religious meaning, outside claims, media ownership or device behavior.
+
+## Pauri 13 line 1 web-only source evidence (24 Oct 2026)
+
+The read-only `docs/contracts/PAURI13_WEB_CORROBORATION_20261024.md` and `evidence/pauri13-web-corroboration.json` corroborate the unchanged Ang 3 / `pauri13.line01` Gurmukhi against three public web transcriptions. All six lines of Pauri 13 matched at least two websites. **This is NOT independent source-edition collation or qualified Punjabi/Sikh approval.** It changes no source bytes, editorial draft, app, worker or release authority; physical/edition adjudication remains OPEN. The CI companion `tests/pauri13-web-corroboration.mjs` checks recorded hashes/claims offline rather than treating a third-party website as an authority gate.
