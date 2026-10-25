@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-10-25T05:26:37.774Z",
+  "testedAt": "2026-10-25T06:27:56.677Z",
   "scope": "Private tailnet HTTPS reader on disposable Mac Chrome mobile viewports",
   "status": "PASS",
   "checks": [
@@ -7,7 +7,7 @@
       "name": "Isolated Chrome profile started",
       "status": "PASS",
       "details": {},
-      "at": "2026-10-25T05:26:34.014Z"
+      "at": "2026-10-25T06:27:52.876Z"
     },
     {
       "name": "Private URL provides real HTTPS, SW and Web Locks",
@@ -17,7 +17,7 @@
         "sw": true,
         "locks": true
       },
-      "at": "2026-10-25T05:26:34.364Z"
+      "at": "2026-10-25T06:27:53.275Z"
     },
     {
       "name": "Complete reader and Serenity styling rendered",
@@ -25,13 +25,13 @@
       "details": {
         "version": "0.9-japji-v1-m0-candidate-2"
       },
-      "at": "2026-10-25T05:26:34.364Z"
+      "at": "2026-10-25T06:27:53.275Z"
     },
     {
       "name": "Original 385 Gurmukhi source strings byte-equivalent",
       "status": "PASS",
       "details": {},
-      "at": "2026-10-25T05:26:34.364Z"
+      "at": "2026-10-25T06:27:53.276Z"
     },
     {
       "name": "Serenity 6-button dock fits 320px",
@@ -39,7 +39,7 @@
       "details": {
         "dockHeight": 52
       },
-      "at": "2026-10-25T05:26:34.655Z"
+      "at": "2026-10-25T06:27:53.564Z"
     },
     {
       "name": "Serenity 6-button dock fits 390px",
@@ -47,7 +47,7 @@
       "details": {
         "dockHeight": 52
       },
-      "at": "2026-10-25T05:26:34.955Z"
+      "at": "2026-10-25T06:27:53.860Z"
     },
     {
       "name": "Versioned release worker caches Serenity CSS and reader",
@@ -55,7 +55,7 @@
       "details": {
         "versionCount": 1
       },
-      "at": "2026-10-25T05:26:35.676Z"
+      "at": "2026-10-25T06:27:54.584Z"
     },
     {
       "name": "Synthetic reflection and bookmark persist after reload",
@@ -64,31 +64,31 @@
         "notes": 1,
         "bookmarks": 1
       },
-      "at": "2026-10-25T05:26:36.851Z"
+      "at": "2026-10-25T06:27:55.757Z"
     },
     {
       "name": "Full original reader and stylesheet work with network blocked",
       "status": "PASS",
       "details": {},
-      "at": "2026-10-25T05:26:37.558Z"
+      "at": "2026-10-25T06:27:56.468Z"
     },
     {
       "name": "Home loads from cache with network blocked",
       "status": "PASS",
       "details": {},
-      "at": "2026-10-25T05:26:37.575Z"
+      "at": "2026-10-25T06:27:56.484Z"
     },
     {
       "name": "Synthetic saved learning survives offline navigation",
       "status": "PASS",
       "details": {},
-      "at": "2026-10-25T05:26:37.773Z"
+      "at": "2026-10-25T06:27:56.677Z"
     },
     {
       "name": "No browser runtime exceptions in tested flow",
       "status": "PASS",
       "details": {},
-      "at": "2026-10-25T05:26:37.774Z"
+      "at": "2026-10-25T06:27:56.677Z"
     }
   ],
   "errors": [],

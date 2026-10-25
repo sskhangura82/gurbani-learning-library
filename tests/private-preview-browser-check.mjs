@@ -10,8 +10,8 @@ import {fileURLToPath} from 'node:url';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const preview=process.env.GLP_PRIVATE_PREVIEW_URL;
 const url=preview&&new URL(preview);
-if(!url||url.protocol!=='https:'||!url.hostname.endsWith('.ts.net')||url.port!=='10000'||url.pathname!=='/full-japji.html')
- throw Error('Set GLP_PRIVATE_PREVIEW_URL to the private tailnet HTTPS:10000 reader URL');
+if(!url||url.protocol!=='https:'||!url.hostname.endsWith('.ts.net')||!['10000','10001'].includes(url.port)||url.pathname!=='/full-japji.html')
+ throw Error('Set GLP_PRIVATE_PREVIEW_URL to the private tailnet HTTPS reader URL on approved port 10000 or 10001');
 const source=preview;
 const profile=fs.mkdtempSync('/tmp/glp-private-phoneqa-');
 const chromePath='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
