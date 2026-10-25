@@ -1,0 +1,118 @@
+{
+  "testedAt": "2026-10-25T11:58:54.054Z",
+  "scope": "Bearer-invitation-gated external HTTPS reader on disposable Chrome; no family browser data",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Isolated Chrome profile started",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:46.899Z"
+    },
+    {
+      "name": "Secure HttpOnly SameSite signed access cookie issued",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:47.820Z"
+    },
+    {
+      "name": "Invite token is absent from the final reader URL",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:47.821Z"
+    },
+    {
+      "name": "Private Git files remain unreachable after authorization",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:47.953Z"
+    },
+    {
+      "name": "Private URL provides real HTTPS, SW and Web Locks",
+      "status": "PASS",
+      "details": {
+        "secure": true,
+        "sw": true,
+        "locks": true
+      },
+      "at": "2026-10-25T11:58:49.335Z"
+    },
+    {
+      "name": "Complete reader and Serenity styling rendered",
+      "status": "PASS",
+      "details": {
+        "version": "0.9-japji-v1-m0-candidate-2"
+      },
+      "at": "2026-10-25T11:58:49.335Z"
+    },
+    {
+      "name": "Original 385 Gurmukhi source strings byte-equivalent",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:49.336Z"
+    },
+    {
+      "name": "Serenity 6-button dock fits 320px",
+      "status": "PASS",
+      "details": {
+        "dockHeight": 52
+      },
+      "at": "2026-10-25T11:58:49.624Z"
+    },
+    {
+      "name": "Serenity 6-button dock fits 390px",
+      "status": "PASS",
+      "details": {
+        "dockHeight": 52
+      },
+      "at": "2026-10-25T11:58:49.914Z"
+    },
+    {
+      "name": "Versioned release worker caches Serenity CSS and reader",
+      "status": "PASS",
+      "details": {
+        "versionCount": 1
+      },
+      "at": "2026-10-25T11:58:51.950Z"
+    },
+    {
+      "name": "Synthetic reflection and bookmark persist after reload",
+      "status": "PASS",
+      "details": {
+        "notes": 1,
+        "bookmarks": 1
+      },
+      "at": "2026-10-25T11:58:53.129Z"
+    },
+    {
+      "name": "Full original reader and stylesheet work with network blocked",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:53.836Z"
+    },
+    {
+      "name": "Home loads from cache with network blocked",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:53.848Z"
+    },
+    {
+      "name": "Synthetic saved learning survives offline navigation",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:54.053Z"
+    },
+    {
+      "name": "No browser runtime exceptions in tested flow",
+      "status": "PASS",
+      "details": {},
+      "at": "2026-10-25T11:58:54.054Z"
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "Only synthetic QA learning on new isolated origin; no personal notes read or exported",
+    "Native iPhone Safari/VoiceOver and real airplane mode NOT TESTED",
+    "Invitation secret and public QA hostname intentionally omitted from public evidence"
+  ]
+}

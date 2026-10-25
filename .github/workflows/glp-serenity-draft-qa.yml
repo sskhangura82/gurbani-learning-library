@@ -38,7 +38,8 @@ jobs:
           node --check tests/prepare-private-preview.mjs
           node --check tests/private-preview-browser-check.mjs
           node --check tests/serenity-a11y-browser.mjs
-          python3 -c 'import ast; ast.parse(open("tests/serve-private-preview.py").read())'
+          node --check tests/gated-preview-browser-check.mjs
+          python3 -c 'import ast; ast.parse(open("tests/serve-private-preview.py").read()); ast.parse(open("tests/serve-gated-phone-preview.py").read()); ast.parse(open("tests/gated-preview-contract.py").read())'
           node tests/prepare-private-preview.mjs "$PREVIEW_ROOT" "$PINNED_SHA"
           test -f "$PREVIEW_ROOT/sw.js"
           test -f "$PREVIEW_ROOT/css/reader-serenity.css"
@@ -53,3 +54,8 @@ jobs:
           test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8897/.git/config)" = 404
           test "$(curl --path-as-is --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8897/../sw.js)" = 404
           test "$(curl --silent --request POST --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8897/full-japji.html)" = 405
+      - name: Gated preview contract with throwaway credentials (no hosting)
+        env:
+          PREVIEW_ROOT: ${{ runner.temp }}/GurbaniLearningLibrary/previews/serenity-ci
+        run: |
+          python3 tests/gated-preview-contract.py "$PREVIEW_ROOT"
