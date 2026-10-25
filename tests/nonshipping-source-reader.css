@@ -1,0 +1,31 @@
+/* Deliberately local nonshipping source-parity fixture, not a replacement PWA. */
+:root{--qa-bg:#faf7ef;--qa-ink:#263832;--qa-line:#cbbfad;--qa-muted:#586760;--qa-alert:#66431c}
+body{background:var(--qa-bg);color:var(--qa-ink);margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.qa-header{max-width:760px;margin:0 auto;padding:18px 20px 12px}
+.qa-kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--qa-muted);margin:0}
+.qa-header h1{font:32px/1.3 Georgia,serif;margin:8px 0}.qa-header h1 span{font-size:29px}
+.qa-warning{background:#fcf2dc;border:1px solid #a77d4b;border-radius:8px;padding:12px 14px;color:#5d3816;line-height:1.55;font-size:13px}
+.qa-select{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.qa-select button{min-height:44px;flex:1 1 210px;background:#f5f0e6;color:var(--qa-ink);border:1px solid var(--qa-line);text-align:center;font-size:13px}
+.qa-select button[aria-pressed=true]{border:2px solid #365c4d;background:#eaf0e9;font-weight:650}
+.qa-source-status{font-size:13px;min-height:20px;color:var(--qa-muted)}
+.qa-main{max-width:720px;margin:auto;padding:0 20px 150px}
+.qa-original-context h2{font:23px/1.4 Georgia,serif;margin:10px 0 2px}
+.qa-original-context>p{font-size:12px;line-height:1.55;color:var(--qa-muted)}
+.qa-preface{font:normal var(--qa-gurmukhi,30px)/1.9 "Gurmukhi MN","Noto Serif Gurmukhi",serif;text-align:center;overflow-wrap:anywhere}
+.qa-unit{padding:8px 0 18px;border-bottom:1px solid var(--qa-line);scroll-margin-top:16px}
+.qa-unit>h2{font:600 13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--qa-muted);text-transform:uppercase;letter-spacing:1.25px;text-align:center;margin:14px 0}
+.qa-source-line{font:400 var(--qa-gurmukhi,30px)/1.9 "Gurmukhi MN","Noto Serif Gurmukhi","Raavi",serif;white-space:normal;text-align:center;overflow-wrap:anywhere;margin:8px 0;padding:4px 0;color:var(--qa-ink)}
+.qa-source-line .qa-word{transition:background-color .2s}
+.qa-word[data-active=true]{background:rgba(54,92,77,.12);text-decoration:underline;text-underline-offset:6px}
+.qa-dock{max-width:780px;position:fixed;z-index:10;bottom:0;left:0;right:0;margin:auto;display:flex;gap:7px;align-items:center;flex-wrap:wrap;background:#f7f2e7;border:1px solid var(--qa-line);border-radius:12px 12px 0 0;padding:7px 10px calc(9px + env(safe-area-inset-bottom))}
+.qa-dock button,.qa-dock select{min-height:44px;padding:6px 10px;background:#fffdfa;color:var(--qa-ink);border:1px solid var(--qa-line);border-radius:8px}
+.qa-dock>button{min-width:61px}.qa-dock #qa-play{min-width:90px}
+.qa-location{flex:1 1 90px;font-size:12px;text-align:center;color:var(--qa-muted)}
+.qa-dock label{font-size:12px;display:flex;gap:4px;align-items:center}
+.qa-footer{max-width:740px;margin:20px auto;padding:14px 20px 100px;color:var(--qa-muted);font-size:12px}
+.qa-footer button{min-height:44px;border:1px solid var(--qa-line);border-radius:8px;margin:4px 8px 4px 0}
+button:focus-visible,select:focus-visible{outline:3px solid #355a4a;outline-offset:3px}
+.qa-error{padding:12px;color:#7a2626;font-weight:700}
+@media(max-width:370px){.qa-header{padding:9px 12px}.qa-main{padding:0 12px 155px}.qa-header h1{font-size:27px}.qa-dock{gap:4px;padding:4px 5px calc(6px + env(safe-area-inset-bottom))}.qa-dock>button{padding:3px 5px;min-width:55px}.qa-location{flex:1 1 78px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

@@ -4,7 +4,20 @@
   "referenceFramework": {
     "name": "SGPC Sikh Rehat Maryada Article IV with five-bani morning practice documented separately",
     "url": "https://sgpc.net/sikh-rehat-maryada-in-english/",
-    "policy": "Name the actual edition and practice scope. Do not quietly replace a community variant with another tradition's composition."
+    "policy": "Name the actual edition and practice scope. Do not quietly replace a community variant with another tradition's composition.",
+    "publishedSGPCEnglishArticleIVMorning": [
+      "japji",
+      "jaap",
+      "savaiye"
+    ],
+    "extendedFiveBaniMorningPractice": [
+      "japji",
+      "jaap",
+      "savaiye",
+      "chaupai",
+      "anand"
+    ],
+    "scopeDisclosure": "Article IV English SGPC morning explicitly lists Japji, Jaap and Ten Savaiye; the familiar additional morning Chaupai/Anand is tracked as a broader five-bani practice, and neither practice is silently equated with the other."
   },
   "familyRelease": "accepted-japji-r7-only",
   "publicationAuthorized": false,
@@ -36,10 +49,24 @@
       "educationalStatus": "none",
       "humanSourceReview": "not_started",
       "blockedOn": [
-        "edition selection",
-        "full original collation",
-        "rights and qualified review"
-      ]
+        "choose an exact authentic Jaap Sahib/Dasam Bani printed edition and permissions",
+        "resolve distinct meter/metrical section boundaries; HTML groups many numbered chhands into paragraphs",
+        "independently collate all original Gurmukhi words and 199 numbered endings",
+        "qualified Sikh/Punjabi source review and reader rights",
+        "integrate through existing reader and complete physical iPhone acceptance"
+      ],
+      "originalSourceStructuralAudit": {
+        "evidenceFile": "docs/research/n3-dasam-jaap/jaap-199-structure-audit.json",
+        "twoDigitalTranscriptionsExamined": true,
+        "chhandOrdinalMarkers": 199,
+        "orderedNumberSequenceAgrees": true,
+        "firstSourceParagraphs": 59,
+        "secondSourceParagraphs": 809,
+        "originalTextLineComparison": "NOT_PERFORMED_DUE_TO_DIFFERENT_GROUPING",
+        "humanEditionCollation": "PENDING",
+        "fullOriginalSourceModelBuilt": false,
+        "eligibleForReader": false
+      }
     },
     {
       "id": "savaiye",
@@ -48,15 +75,33 @@
       "sourceFamily": "dasam",
       "sourceAnchor": "Ten Savaiye beginning Sravag Sudh, Akal Ustat; named edition required",
       "originalScope": "Exactly prescribed ten Savaiye; no guessed extra Savaiye",
-      "sourceState": "not_ingested",
+      "sourceState": "digital_candidate",
       "readerRoute": null,
       "educationalStatus": "none",
-      "humanSourceReview": "not_started",
+      "humanSourceReview": "pending_independent_edition_collation",
       "blockedOn": [
-        "exact ten-stanza boundaries",
-        "digital and independent edition collation",
-        "rights and qualified review"
-      ]
+        "choose an exact printed/authorized Dasam Bani original edition",
+        "collate 13 remaining spelling/orthography discrepancies without machine correction",
+        "compare three prefatory source headings and Akal Ustat verse numbering",
+        "qualified Sikh/Punjabi source and rights review",
+        "reuse the existing reader with a non-SGGS source locator and independent learning namespace",
+        "physical iPhone and review acceptance"
+      ],
+      "digitalSourceCandidate": {
+        "modelFile": "docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json",
+        "evidenceFile": "docs/research/n3-dasam-savaiye/savaiye-digital-discrepancy-ledger.json",
+        "dasamSourceWork": "Akal Ustat, ten Sravag Sudh Savaiye",
+        "stanzas": 10,
+        "originalVerseLines": 40,
+        "prefaceCandidateBlocks": 3,
+        "exactDigitalRowMatches": 21,
+        "matchesAfterOnlyVerseNumeralsRemoved": 27,
+        "substantiveOrOrthographicVariantsPendingReview": 13,
+        "reusedSourcePermissions": "NOT_CLEARED",
+        "editionAuthorityApproval": "PENDING",
+        "humanSourceCollation": "PENDING",
+        "eligibleForReader": false
+      }
     },
     {
       "id": "chaupai",
@@ -73,7 +118,20 @@
         "edition and ending boundary",
         "variant ledger",
         "rights and qualified review"
-      ]
+      ],
+      "eveningExcerptResearch": {
+        "scope": "SGPC Rehras Benti Chaupai 25-pauri segment, NOT necessarily entire morning version",
+        "sourceModel": "docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json",
+        "comparison": "docs/research/n4-chaupai-excerpt/chaupai-variant-boundary-ledger.json",
+        "pauris": 25,
+        "originalTukSegments": 100,
+        "exactDigitalRows": 39,
+        "comparisonAfterOnlyCounterDeletion": 51,
+        "unresolvedTextualVariants": 49,
+        "editorialAcceptance": "PENDING",
+        "fullMorningVersionResolved": false,
+        "readerRoute": null
+      }
     },
     {
       "id": "anand",
@@ -124,7 +182,13 @@
         "Dasam boundaries",
         "Anand selection",
         "human review"
-      ]
+      ],
+      "componentResearch": {
+        "bentiChaupaiEveningExcerptDigitalCandidate": "docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json",
+        "wholeCompositeSourceVerified": false,
+        "qualifiedReview": "PENDING",
+        "readerRoute": null
+      }
     },
     {
       "id": "sohila",

@@ -29,22 +29,46 @@ jobs:
         run: node tests/sohila-source-intake.mjs
       - name: Anand 40-pauri comparison and explicit ambiguity hold
         run: node tests/anand-source-audit.mjs
+      - name: Tav-Prasad Savaiye ten stanza source candidate, 13 source variants held
+        run: node tests/savaiye-source-intake.mjs
+      - name: All three morning Dasam source/edition shortlists held appropriately
+        run: node tests/dasam-source-shortlist.mjs
+      - name: Savaiye source-only reader parity with no invented SGGS Angs
+        run: node tests/savaiye-continuous-parity.mjs
+      - name: Rehras Chaupai bounded 25-pauri source excerpt with 49 review holds
+        run: node tests/chaupai-excerpt-source.mjs
+      - name: Jaap 199-chhand web-numbering comparison (NO text equivalence)
+        run: node tests/jaap-structure-audit.mjs
       - name: Sohila compatibility with existing R7 continuous reader — nonshipping
         run: node tests/sohila-continuous-parity.mjs
       - name: Rehras ordered composite component boundaries — no verse ingestion
         run: node tests/rehras-component-ledger.mjs
       - name: Python source intake syntax only — no web calls or app writes
         run: |
-          python3 -c 'import ast; ast.parse(open("tools/compositions/intake_sohila.py",encoding="utf-8").read()); ast.parse(open("tools/compositions/audit_anand.py",encoding="utf-8").read())'
+          python3 -c 'import ast; files=["intake_sohila.py","audit_anand.py","intake_savaiye.py","intake_chaupai_excerpt.py","audit_jaap_structure.py"]; [ast.parse(open("tools/compositions/"+f,encoding="utf-8").read()) for f in files]'
       - name: Nonshipping source guard
         run: |
           node --check tests/sohila-source-intake.mjs
           node --check tests/anand-source-audit.mjs
           node --check tests/sohila-continuous-parity.mjs
           node --check tests/rehras-component-ledger.mjs
+          node --check tests/savaiye-source-intake.mjs
+          node --check tests/savaiye-continuous-parity.mjs
+          node --check tests/dasam-source-shortlist.mjs
+          node --check tests/chaupai-excerpt-source.mjs
+          node --check tests/jaap-structure-audit.mjs
+          node --check tests/nonshipping-source-browser.mjs
+          node --check tests/nonshipping-source-reader.mjs
+          test -f tests/nonshipping-source-reader.html
+          test -f tests/nonshipping-source-reader.css
+          python3 -c 'import ast; ast.parse(open("tools/compositions/intake_savaiye.py", encoding="utf-8").read())'
           node --check tools/compositions/continuous-source-parity.mjs
           test ! -f sohila.html
           test ! -f anand.html
           test ! -f js/sohila-data.js
           test ! -f js/anand-data.js
+          test ! -f chaupai.html
+          test ! -f jaap.html
+          test ! -f savaiye.html
+          ! grep -q 'tests/nonshipping-source-reader' sw.js
           git diff --exit-code -- full-japji.html js/japji-full-data.js js/learning.js js/shared-learning.js sw.js index.html

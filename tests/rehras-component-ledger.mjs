@@ -51,7 +51,11 @@ test('No SGGS Ang is fabricated for any Dasam segment',()=>{
 });
 test('All actual scripture/intake/edition fields remain blocked and absent',()=>{
  assert.equal(ledger.noRuntimeSourceData,true);assert.equal(ledger.noPublication,true);
- assert.ok(ledger.segments.every(s=>s.sourceStatus==='not_ingested'&&s.verifiedOriginalCount===null&&s.sourceEditionId===null));
+ assert.ok(ledger.segments.every(s=>['not_ingested','digital_candidate_not_ingested_into_runtime'].includes(s.sourceStatus)&&s.verifiedOriginalCount===null&&s.sourceEditionId===null));
+ const bounded=ledger.segments.find(s=>s.id==='benti-chaupai-rehras');
+ assert.equal(bounded.digitalResearchCandidate.recitationPauris,25);
+ assert.equal(bounded.digitalResearchCandidate.orthographicOrSubstantiveVariantsPending,49);
+ assert.equal(bounded.digitalResearchCandidate.familyReaderEnabled,false);
  assert.ok(program.records.find(x=>x.id==='rehras').readerRoute===null);
 });
 test('Ardas remains a separate companion prayer, not a seventh Rehras verse source',()=>{

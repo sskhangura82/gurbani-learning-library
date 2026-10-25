@@ -1,0 +1,489 @@
+{
+  "capturedAtUtc": "2026-10-25T17:55:37.607624+00:00",
+  "status": "DIGITAL_ORIGINAL_CANDIDATE_WITH_13_TEXTUAL_VARIANTS",
+  "publisherEditionSelected": false,
+  "humanEditionCollation": "PENDING",
+  "independenceOfDigitalTextLineages": "UNVERIFIED",
+  "reuseRights": "NOT_CLEARED",
+  "publicationAuthorized": false,
+  "fullReaderReady": false,
+  "primary": {
+    "url": "https://www.discoversikhism.com/learn_gurbani/learn_tav_prasad_savaiye.html",
+    "httpStatus": 200,
+    "contentBytes": 45968,
+    "pageSha256": "56373a8a4dfc7919f9c1365e6ac56235fc7265ed468e251b4fdb36e249f7769e",
+    "retrievedAtUtc": "2026-10-25T17:55:37.500751+00:00"
+  },
+  "comparator": {
+    "url": "https://gurdwaras.com/nitnem/tav-prasad-savaiye",
+    "httpStatus": 200,
+    "contentBytes": 114519,
+    "pageSha256": "4e9a173aca76bd4c36273d735973b940402b4afb1f861e43602e89317949aff0",
+    "retrievedAtUtc": "2026-10-25T17:55:37.605240+00:00"
+  },
+  "savaiyaCount": 10,
+  "primaryOriginalVerseLines": 40,
+  "comparatorOriginalVerseLines": 40,
+  "prefaceOriginalBlocks": 3,
+  "primarySiteExtraDevotionalFooterExcluded": true,
+  "siteFooterNotPartOfTenSavaiyeSha256": "ce1f4703d2c5298865e36c6f05d6a6110a54739a5b5112e584527ec26ba469ce",
+  "exactNfcWebRowMatches": 21,
+  "numeralOnlyNormalizedRowMatches": 27,
+  "sourceDifferencesAfterCounterComparison": 13,
+  "comparisons": [
+    {
+      "ordinal": 1,
+      "savaiya": 1,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "c01176ae4f09dd620be823a3a8f4d7de7c7eb91a8f47b0be9a6d395c5c340db9",
+      "comparatorSourceSHA256": "c01176ae4f09dd620be823a3a8f4d7de7c7eb91a8f47b0be9a6d395c5c340db9",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 2,
+      "savaiya": 1,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "1526adb95942ed1237e87b06a16057400fe314f71c78e8a1cfd5fe08ac0d1129",
+      "comparatorSourceSHA256": "1526adb95942ed1237e87b06a16057400fe314f71c78e8a1cfd5fe08ac0d1129",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 3,
+      "savaiya": 1,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "ef474bba3123b3cf27fd9052759812545398c89abf63a5e54a496e16537d08a1",
+      "comparatorSourceSHA256": "ef474bba3123b3cf27fd9052759812545398c89abf63a5e54a496e16537d08a1",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 4,
+      "savaiya": 1,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "c86b7e62106fd14a2405976e37199cb5049c15443aadbd418c3d83f83b5a92fa",
+      "comparatorSourceSHA256": "23889a023cae45e543743811f905a27390ea5bd829292a861c4bd19fc80f4838",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 5,
+      "savaiya": 2,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "708f27a9feed19d2f6b594f6d7e0e615702c127e364670db98b8aa2566e100d0",
+      "comparatorSourceSHA256": "708f27a9feed19d2f6b594f6d7e0e615702c127e364670db98b8aa2566e100d0",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 6,
+      "savaiya": 2,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "383135bfdcf7dc69a18c0f671324b0b535bc45bb7bd6bef7303dd616e607b5c9",
+      "comparatorSourceSHA256": "bc98d3320212ef528f2e29c43314e9e2851307e681ae2e37044279b5a63c24e6",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕਉ ਜਾਤ ਨਿਵਾਰੇ ॥",
+      "comparatorDigitalOriginal": "ਕੋਟ ਤੁਰੰਗ ਕੁਰੰਗ ਸੇ ਕੂਦਤ ਪਉਨ ਕੇ ਗਉਨ ਕੋ ਜਾਤ ਨਿਵਾਰੇ ॥"
+    },
+    {
+      "ordinal": 7,
+      "savaiya": 2,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "534c0cdf1e57960649d87f9fbd2ae3d6e0dbcab8ac37fd7ac96cd0d40f4a10d5",
+      "comparatorSourceSHA256": "534c0cdf1e57960649d87f9fbd2ae3d6e0dbcab8ac37fd7ac96cd0d40f4a10d5",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 8,
+      "savaiya": 2,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "8805213d9d0331b2297c311bc3299dd0493ed7684ec6b8fb6fd7bd7f5dc9a3c3",
+      "comparatorSourceSHA256": "33f006aa2938d22b723d6bb14f4e5174116aa6d1c431586205b18a7d2af211ea",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕੌ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥੨॥",
+      "comparatorDigitalOriginal": "ਏਤੇ ਭਏ ਤੁ ਕਹਾ ਭਏ ਭੂਪਤਿ ਅੰਤ ਕੋ ਨਾਂਗੇ ਹੀ ਪਾਂਇ ਪਧਾਰੇ ॥੨॥੨੨॥"
+    },
+    {
+      "ordinal": 9,
+      "savaiya": 3,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "f45f80559d819444f412a032dd1c1eff1247df47ac23851983c167a9c859d4ca",
+      "comparatorSourceSHA256": "f45f80559d819444f412a032dd1c1eff1247df47ac23851983c167a9c859d4ca",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 10,
+      "savaiya": 3,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "cd0d651425b927182471ef571a999d350b4d36ccb9c65b4f28f498b102419732",
+      "comparatorSourceSHA256": "cd0d651425b927182471ef571a999d350b4d36ccb9c65b4f28f498b102419732",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 11,
+      "savaiya": 3,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "0a72034cbba0e079dd8d5c60144a26759666d955aba68959319492fee5b25ad8",
+      "comparatorSourceSHA256": "0a72034cbba0e079dd8d5c60144a26759666d955aba68959319492fee5b25ad8",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 12,
+      "savaiya": 3,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "062c0e6e3426070ad3eb901f3208745b3fa61f249f2ce7e4ced125d24b2b2421",
+      "comparatorSourceSHA256": "c3c8b4f50436ad1ba5caf7fc9098729844912ea83ae26fe87685a77d091f609c",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 13,
+      "savaiya": 4,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "693065b1687f1535dfee7b775c49bd0c8dd10bee12c9d9ff970183a36ac78222",
+      "comparatorSourceSHA256": "693065b1687f1535dfee7b775c49bd0c8dd10bee12c9d9ff970183a36ac78222",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 14,
+      "savaiya": 4,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "8b5bfd3dc4e395aa23157a60c6f9246575517e035bf22c67de89a54342a21496",
+      "comparatorSourceSHA256": "8b5bfd3dc4e395aa23157a60c6f9246575517e035bf22c67de89a54342a21496",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 15,
+      "savaiya": 4,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "60f167dc2b16c641707409102f014abc4d071be1b360ee26967b26ccac1b3e2e",
+      "comparatorSourceSHA256": "d9718b25896d7f5ab8022d1c4f520dc975b0bb4bb060e81bc0ab74a18391c1d2",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰਕ ਦੇਖੈ ॥",
+      "comparatorDigitalOriginal": "ਪਉਨ ਅਹਾਰ ਜਤੀ ਜਤ ਧਾਰ ਸਬੈ ਸੁ ਬਿਚਾਰ ਹਜਾਰ ਕ ਦੇਖੈ ॥"
+    },
+    {
+      "ordinal": 16,
+      "savaiya": 4,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "a7361ac9d72121e3475a28b39c15c3ca600a4acd2bd97abca67d914807dd6468",
+      "comparatorSourceSHA256": "e5f93a93d6a9a1f2d30c0465f98ff7e5692801aa4a9b77119942f3185074bfb7",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 17,
+      "savaiya": 5,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "f71458b3ec944aae1fd03844d83250cc8c6e3810ad518ed8f05cc8e5601717ff",
+      "comparatorSourceSHA256": "594be63dd22caf818d4a72d5c479247b766ecc5249b2f711075b5554d5dc3fde",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਸੁੱਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥",
+      "comparatorDigitalOriginal": "ਸੱੁਧ ਸਿਪਾਹ ਦੁਰੰਤ ਦੁਬਾਹ ਸੁ ਸਾਜ ਸਨਾਹ ਦੁਰਜਾਨ ਦਲੈਂਗੇ ॥"
+    },
+    {
+      "ordinal": 18,
+      "savaiya": 5,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "3f76ec362873fc76539e08a3c610acad44a4f1c8452d3cc3d889ced1c41e9227",
+      "comparatorSourceSHA256": "3f76ec362873fc76539e08a3c610acad44a4f1c8452d3cc3d889ced1c41e9227",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 19,
+      "savaiya": 5,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "fc06ee9b58965a5f44647aeb9e3dd765fe5ff4f57233d7b6447304ec791d9e8f",
+      "comparatorSourceSHA256": "fc06ee9b58965a5f44647aeb9e3dd765fe5ff4f57233d7b6447304ec791d9e8f",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 20,
+      "savaiya": 5,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "01d69a35b638ed82f767faa7447bbc97204a7e26e87a3538528d51b99da52950",
+      "comparatorSourceSHA256": "7b57861ddff939b0163450d3d8facc01cd577ecfb5919128f348a2cee1eda2ff",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 21,
+      "savaiya": 6,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "4516dc895c8ddca911bbc5ec4982f201bb6a6b595f9f0540cd18a44e47fed9b4",
+      "comparatorSourceSHA256": "4516dc895c8ddca911bbc5ec4982f201bb6a6b595f9f0540cd18a44e47fed9b4",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 22,
+      "savaiya": 6,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "2ec5c4fdb48ce589e703fddf8b44d1126f574e0f214ba3f0f3ef842993c45139",
+      "comparatorSourceSHA256": "2ec5c4fdb48ce589e703fddf8b44d1126f574e0f214ba3f0f3ef842993c45139",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 23,
+      "savaiya": 6,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "54540d9eb1e7382b17cb0084deeb38b222b3225bb66f860385ef8bb6fb3a3cef",
+      "comparatorSourceSHA256": "54540d9eb1e7382b17cb0084deeb38b222b3225bb66f860385ef8bb6fb3a3cef",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 24,
+      "savaiya": 6,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "e769b48168f56f3d128c98db1d972deffea53b00a6294bb7c9ae4d5e5b692ae2",
+      "comparatorSourceSHA256": "81613938c6037c7b6300f9f7547a6b49cf434372af696602bdef5aa9e61ebc46",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 25,
+      "savaiya": 7,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "38514953c611d7e5a24b3ba04fc53842e758698fc5503a4d3a3675faad688d56",
+      "comparatorSourceSHA256": "96bd550fb8dedabc4f007b15b898587b7835c1f6bf73126b7f53be134a3deefe",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥",
+      "comparatorDigitalOriginal": "ਦਾਨਵ ਦੇਵ ਫਨਿੰਦ ਨਿਸਾਚਰ ਭੂਤ ਭਵਿਖ ਭਵਾਨ ਜਪੈਂਗੇ ॥"
+    },
+    {
+      "ordinal": 26,
+      "savaiya": 7,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "64164955e43ee162a47e4bb132b3c8faac43d62886fca34bce7035686aa8fc52",
+      "comparatorSourceSHA256": "64164955e43ee162a47e4bb132b3c8faac43d62886fca34bce7035686aa8fc52",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 27,
+      "savaiya": 7,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "ec64b5efa57cc6ea7f9c9e120bed78608eac6411b1b30a94b2718ec228e636ec",
+      "comparatorSourceSHA256": "ec64b5efa57cc6ea7f9c9e120bed78608eac6411b1b30a94b2718ec228e636ec",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 28,
+      "savaiya": 7,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "d331f18e40548046d8b0b7b650adbc541526c0c148e832c3570c95117bf23931",
+      "comparatorSourceSHA256": "81cfa8081f29127202f691f1bea074226acb6b21c152cf6b3886944039040aee",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈਂ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਲੋਕ ਚਪੈਂਗੇ ॥੭॥",
+      "comparatorDigitalOriginal": "ਸਾਧ ਸਮੂਹ ਪ੍ਰਸੰਨ ਫਿਰੈਂ ਜਗ ਸਤ੍ਰ ਸਭੈ ਅਵਿਲੋਕ ਚਪੈਂਗੇ ॥੭॥੨੭॥"
+    },
+    {
+      "ordinal": 29,
+      "savaiya": 8,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "0c9d0507a8a7d05f1eb4d8981c6f8e58dfd56881ad0c02eed532e951165ba7d5",
+      "comparatorSourceSHA256": "0c9d0507a8a7d05f1eb4d8981c6f8e58dfd56881ad0c02eed532e951165ba7d5",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 30,
+      "savaiya": 8,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "981ffc4fe8e6b5eb62fb66836204274f61d2c1afe4f1c5149ac53faf595e8e07",
+      "comparatorSourceSHA256": "981ffc4fe8e6b5eb62fb66836204274f61d2c1afe4f1c5149ac53faf595e8e07",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 31,
+      "savaiya": 8,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "3b5257a0688b5dc6964a4174c4c33db693d7ac387f24af0e08acadf771fa097d",
+      "comparatorSourceSHA256": "ae67b01bdc61d21aa6d514314f63790c617214d0a92b89b7d1114d865a8294b3",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਿਤ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸਿ ਪਰੈਂਗੇ ॥",
+      "comparatorDigitalOriginal": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸ ਪਰੈਂਗੇ ॥"
+    },
+    {
+      "ordinal": 32,
+      "savaiya": 8,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "a904b9eaa45e4f18cc90f1b991ae4bddafeaa0579546ab9303393616e0cb35f1",
+      "comparatorSourceSHA256": "e95a2c66339014e807385d553a05df27d36389925b3e686358cf5fb8302e3cc3",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 33,
+      "savaiya": 9,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "ca8affee7b33fd075cdcf4eb37285861ade11eb128e31daa49b1855c0ef704fd",
+      "comparatorSourceSHA256": "074810cb377d7d475952a6b7e8c208fcb8725944ffd97e0281bd1b054f92ed38",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਉ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+      "comparatorDigitalOriginal": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਊ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥"
+    },
+    {
+      "ordinal": 34,
+      "savaiya": 9,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "50a015d3c670a06f6aa8367deef3789861a53cab463cc520f9c948921596d246",
+      "comparatorSourceSHA256": "50a015d3c670a06f6aa8367deef3789861a53cab463cc520f9c948921596d246",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 35,
+      "savaiya": 9,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "d10dc40408a9860c97790dc658aabada43e7fe42fdc09e732f5997680c558b1b",
+      "comparatorSourceSHA256": "2da02f7af1f93da8bc8a00fb21ff851997328572e1a7bf866e33023f4e2e166b",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+      "comparatorDigitalOriginal": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋਂ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥"
+    },
+    {
+      "ordinal": 36,
+      "savaiya": 9,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "85f303d91618c10f31ade02375a2503cce1cb194c993a3e50dd9ab54737d6170",
+      "comparatorSourceSHA256": "63b7228618c889410fa010b3b48410a6531f7ae09c4b3139b30f2f80aeb6ff87",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥੯॥",
+      "comparatorDigitalOriginal": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭੁ ਪਾਇਓ ॥੯॥੨੯॥"
+    },
+    {
+      "ordinal": 37,
+      "savaiya": 10,
+      "lineWithinSavaiya": 1,
+      "primarySourceSHA256": "02ccd261ced71cb466d56d8370cadd133227a0206c8d9f096a0888b90cc80c47",
+      "comparatorSourceSHA256": "f88b57db14d06944889b02df85ca45e22a23f8ae24fda65334e61ae31534aa69",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+      "comparatorDigitalOriginal": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗੁ ਗਰੇ ਲਟਕਾਇਓ ॥"
+    },
+    {
+      "ordinal": 38,
+      "savaiya": 10,
+      "lineWithinSavaiya": 2,
+      "primarySourceSHA256": "3c0b2f3a5a9d82386f44b44263d4ebed2a976a1cc52306462fea614a0eaa7d00",
+      "comparatorSourceSHA256": "3c0b2f3a5a9d82386f44b44263d4ebed2a976a1cc52306462fea614a0eaa7d00",
+      "exactNfcWebRowMatch": true,
+      "trailingNumeralsRemovedComparisonMatch": true,
+      "requiresHumanSourceReview": false
+    },
+    {
+      "ordinal": 39,
+      "savaiya": 10,
+      "lineWithinSavaiya": 3,
+      "primarySourceSHA256": "de313c3701b5969ea7dc9201ebe027fc046c46372ef3196417e64157992e1dad",
+      "comparatorSourceSHA256": "7d705a938514322eb898248169d30c630924a225ce3db6bd92983388bb6b45d6",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਕੋਉ ਬੁਤਾਨ ਕੋ ਪੂਜਤ ਹੈ ਪਸੁ ਕੋਉ ਮ੍ਰਿਤਾਨ ਕੋ ਪੂਜਨ ਧਾਇਓ ॥",
+      "comparatorDigitalOriginal": "ਕੋਊ ਬੁਤਾਨ ਕੋ ਪੂਜਤ ਹੈ ਪਸੁ ਕੋਊ ਮ੍ਰਿਤਾਨ ਕੋ ਪੂਜਨ ਧਾਇਓ ॥"
+    },
+    {
+      "ordinal": 40,
+      "savaiya": 10,
+      "lineWithinSavaiya": 4,
+      "primarySourceSHA256": "de8bc9d640117d50d97b971704e9d3e7d3d58d4e9e3596cd18483f1e7a39be1f",
+      "comparatorSourceSHA256": "beaae567e6703e7ef90031594f74d837109fb0f517a30d322748dd1f9fff9284",
+      "exactNfcWebRowMatch": false,
+      "trailingNumeralsRemovedComparisonMatch": false,
+      "requiresHumanSourceReview": true,
+      "primaryDigitalOriginal": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਿਝਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥੧੦॥",
+      "comparatorDigitalOriginal": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਝਿਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥੧੦॥੩੦॥"
+    }
+  ],
+  "sourceHeaderCandidates": {
+    "primary": [
+      [
+        "ੴ"
+      ],
+      [
+        "ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ ਸ੍ਰੀ ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਹ ॥"
+      ],
+      [
+        "ਪਾਤਿਸਾਹੀ੧੦॥ ਤ੍ਵਪ੍ਰਸਾਦਿ ॥ ਸ੍ਵਯੇ ॥"
+      ]
+    ],
+    "comparator": [
+      "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ",
+      "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "ਪਾਤਿਸ਼ਾਹੀ ੧੦ ॥",
+      "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ॥ ਸਵੱਯੇ ॥"
+    ]
+  },
+  "method": "HTML original-Gurmukhi paragraph blocks only; separate preface; ten stanza boundaries; strict NFC; terminal Gurmukhi verse counters stripped ONLY FOR COMPARISON, NEVER for storage",
+  "risks": [
+    "Two digital websites are not independent authoritative physical/SGPC editions",
+    "13 lines differ after terminal verse counters; none were silently revised",
+    "A website devotional footer after tenth savaiya is EXCLUDED from the original corpus candidate",
+    "Preface differs across the sites; qualified heading/Dasam source review required",
+    "Modern English translations, audio, scores, private notes and publication rights not imported",
+    "No SGGS Ang fabricated for Dasam Bani"
+  ]
+}

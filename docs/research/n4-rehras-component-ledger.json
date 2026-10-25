@@ -28,11 +28,23 @@
       "sourceReference": "Benti Chaupai excerpt beginning Hamri Karo Hath Dai Rachha through Dust Dokh Te Leho Bachai in SGPC reading",
       "count": null,
       "scope": "explicit named excerpt, not whole competing edition",
-      "sourceStatus": "not_ingested",
+      "sourceStatus": "digital_candidate_not_ingested_into_runtime",
       "dependentComposition": "chaupai",
       "verifiedOriginalCount": null,
       "locationScheme": "dasam_section",
-      "sourceEditionId": null
+      "sourceEditionId": null,
+      "digitalResearchCandidate": {
+        "sourceModel": "docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json",
+        "sourceDifferences": "docs/research/n4-chaupai-excerpt/chaupai-variant-boundary-ledger.json",
+        "recitationPauris": 25,
+        "sourceTukSegments": 100,
+        "comparatorDasamNumbers": "377–401",
+        "exactDigitalRows": 39,
+        "matchesAfterOnlyCounterDeletion": 51,
+        "orthographicOrSubstantiveVariantsPending": 49,
+        "printedEditionApproval": "PENDING",
+        "familyReaderEnabled": false
+      }
     },
     {
       "id": "savaiya-pae-gahe",
@@ -103,6 +115,7 @@
     "Component family and sequence are planning metadata; no invented line counts, Ang assignment for Dasam Bani, fake translation or recitation timing.",
     "The morning ten Tav-Prasad Savaiye and evening Pae Gahe Savaiya are separate source occurrences.",
     "The shorter Anand selection cannot be sourced by truncating or changing a full composition without verified boundaries.",
-    "Named variants should be separate edition manifests, not a silent merged/default reader."
+    "Named variants should be separate edition manifests, not a silent merged/default reader.",
+    "The evening Benti Chaupai SGPC excerpt now has a separate digital 25-pauri candidate with 49 textual variants; no chosen authoritative edition or runtime text."
   ]
 }

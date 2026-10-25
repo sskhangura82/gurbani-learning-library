@@ -23,11 +23,13 @@ export function adaptNonshippingSourceCandidate(composition,{explicitReviewOnly=
   printedRaag:u.printedRaag,
   raagEvidence:u.raagEvidence,
   originalHeadingIsFirstLine:u.sourceHeadingIncludedInLines===true,
-  lines:u.lines.map(l=>({id:l.id,text:l.text,sha256:l.sha256,ang:l.location.ang}))
+  lines:u.lines.map(l=>({id:l.id,text:l.text,sha256:l.sha256,ang:l.location.system==='ang'?l.location.ang:null}))
  })));
  return Object.freeze({
   kind:'NONSHIPPING_SOURCE_PARITY_ONLY',
   sourceDigest,compositionId:composition.compositionId,editionId:composition.edition.editionId,
+  sourceFamily:composition.edition.sourceFamily,
+  sourceLocationByOccurrence:Object.freeze(Object.fromEntries(composition.units.flatMap(u=>u.lines.map(l=>[l.id,Object.freeze({...l.location})])))),
   sourceStatus:composition.edition.sourceStatus,
   releaseAuthorized:false,
   uiRoute:null,
