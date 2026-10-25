@@ -1,0 +1,31 @@
+name: GLP Serenity Draft QA - no deployment
+on:
+  push:
+    branches:
+      - feature/glp-reader-serenity-review-20261024
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Scripture, saved learning, and M0 contracts
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+      - name: Hash-checked candidate offline shell
+        run: |
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: Reproducible unique review worker
+        run: |
+          node tests/build-sw.mjs 0.9-japji-v1-m0-serenity-review-1
+          git diff --exit-code -- sw.js
