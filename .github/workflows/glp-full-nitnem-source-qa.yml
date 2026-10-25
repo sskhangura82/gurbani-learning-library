@@ -1,0 +1,43 @@
+name: GLP Full Nitnem N1 Original Source Candidate (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-full-nitnem-n1-sohila-source-20261025
+  pull_request:
+    branches:
+      - feature/glp-generic-composition-parity-20261024
+permissions:
+  contents: read
+jobs:
+  source-custody:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Frozen Japji source and existing learning contracts
+        run: |
+          node tests/verify.mjs
+          node tests/service-worker.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+      - name: Generic source model and 385-line Japji parity
+        run: node tests/composition-parity.mjs
+      - name: Kirtan Sohila original source intake and publication refusals
+        run: node tests/sohila-source-intake.mjs
+      - name: Anand 40-pauri comparison and explicit ambiguity hold
+        run: node tests/anand-source-audit.mjs
+      - name: Python source intake syntax only — no web calls or app writes
+        run: |
+          python3 -c 'import ast; ast.parse(open("tools/compositions/intake_sohila.py",encoding="utf-8").read()); ast.parse(open("tools/compositions/audit_anand.py",encoding="utf-8").read())'
+      - name: Nonshipping source guard
+        run: |
+          node --check tests/sohila-source-intake.mjs
+          node --check tests/anand-source-audit.mjs
+          test ! -f sohila.html
+          test ! -f anand.html
+          test ! -f js/sohila-data.js
+          test ! -f js/anand-data.js
+          git diff --exit-code -- full-japji.html js/japji-full-data.js js/learning.js js/shared-learning.js sw.js index.html

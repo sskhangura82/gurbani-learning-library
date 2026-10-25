@@ -1,0 +1,714 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "kirtan-sohila",
+  "title": "Kirtan Sohila",
+  "titleGurmukhi": "ਸੋਹਿਲਾ",
+  "edition": {
+    "editionId": "sggs-digital-ang12-13-source-candidate-20261025",
+    "sourceFamily": "sggs",
+    "locationScheme": "ang",
+    "sourceRelease": "retrieved-2026-10-25-primary-html",
+    "sourceFileHash": "4ce6a81d11a1532066d39096efc67c18a900b8be384d7cae2854121721bd1680",
+    "sourceStatus": "machine_frozen",
+    "rightsStatus": "original_gurmukhi_not_yet_cleared_for_project_release",
+    "humanCollationApproved": false,
+    "editionAuthority": null,
+    "editionCitation": null,
+    "secondSource": "opengranth.org/ang/12-13"
+  },
+  "ui": {
+    "readable": false,
+    "meaningReviewStatus": "not_ingested",
+    "studyReviewStatus": "not_ingested",
+    "preserveLegacyLearningKeys": false,
+    "raagStatus": "printed_source_pending_review"
+  },
+  "units": [
+    {
+      "unitId": "sohila01",
+      "kind": "shabad",
+      "title": "Shabad 1 · Gauree Deepakee · Guru Nanak Sahib",
+      "titleGurmukhi": "",
+      "printedRaag": "ਸੋਹਿਲਾ ਰਾਗੁ ਗਉੜੀ ਦੀਪਕੀ ਮਹਲਾ ੧",
+      "raagEvidence": {
+        "source": "https://srigurugranth.net/0012.html",
+        "sourceRow": 22
+      },
+      "sourceHeadingIncludedInLines": true,
+      "lines": [
+        {
+          "id": "sohila01.line01",
+          "text": "ਸੋਹਿਲਾ ਰਾਗੁ ਗਉੜੀ ਦੀਪਕੀ ਮਹਲਾ ੧",
+          "sha256": "52cecbfaeb8e75cd05f4edecfc34b743b6be05cdde875fd638a2bbcff39b2728",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 22,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line02",
+          "text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+          "sha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 23,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line03",
+          "text": "ਜੈ ਘਰਿ ਕੀਰਤਿ ਆਖੀਐ ਕਰਤੇ ਕਾ ਹੋਇ ਬੀਚਾਰੋ ॥",
+          "sha256": "0d226fd1b6f987dd2b0050048cbe5b5eb518ce5f745282c77fe73edd76dd6948",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 24,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line04",
+          "text": "ਤਿਤੁ ਘਰਿ ਗਾਵਹੁ ਸੋਹਿਲਾ ਸਿਵਰਿਹੁ ਸਿਰਜਣਹਾਰੋ ॥੧॥",
+          "sha256": "95eb417addea9ff41c47fd2963f6266d76d5d9177c7f41ac8c8534ea3ab3f712",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 25,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line05",
+          "text": "ਤੁਮ ਗਾਵਹੁ ਮੇਰੇ ਨਿਰਭਉ ਕਾ ਸੋਹਿਲਾ ॥",
+          "sha256": "ee54c839f53bf8bc8e4dce0228a4416eb6b6298106b2956aea3b30cedd37d125",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 26,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line06",
+          "text": "ਹਉ ਵਾਰੀ ਜਿਤੁ ਸੋਹਿਲੈ ਸਦਾ ਸੁਖੁ ਹੋਇ ॥੧॥ ਰਹਾਉ ॥",
+          "sha256": "0178297321fe7769b02cb204108a887a8b309c7c901b4022076103566d4c488f",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 27,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line07",
+          "text": "ਨਿਤ ਨਿਤ ਜੀਅੜੇ ਸਮਾਲੀਅਨਿ ਦੇਖੈਗਾ ਦੇਵਣਹਾਰੁ ॥",
+          "sha256": "444f31fdb5a55267173d5c96ae3bea4c20cb262d4fc8ebedbceac677a63bd68b",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 28,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line08",
+          "text": "ਤੇਰੇ ਦਾਨੈ ਕੀਮਤਿ ਨਾ ਪਵੈ ਤਿਸੁ ਦਾਤੇ ਕਵਣੁ ਸੁਮਾਰੁ ॥੨॥",
+          "sha256": "e108b0a76521512ac9e1c18ea08d518de6727d871d69392827cc158d37d84890",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 29,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line09",
+          "text": "ਸੰਬਤਿ ਸਾਹਾ ਲਿਖਿਆ ਮਿਲਿ ਕਰਿ ਪਾਵਹੁ ਤੇਲੁ ॥",
+          "sha256": "0dff7432bb7712723b14adea296883ee27582afff5973eb4dec673546845a8ec",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 30,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line10",
+          "text": "ਦੇਹੁ ਸਜਣ ਅਸੀਸੜੀਆ ਜਿਉ ਹੋਵੈ ਸਾਹਿਬ ਸਿਉ ਮੇਲੁ ॥੩॥",
+          "sha256": "c7401aa3b5d381c150dd8bf3e5385c4b46702397e22e572b0bfcde158e17b734",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 31,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line11",
+          "text": "ਘਰਿ ਘਰਿ ਏਹੋ ਪਾਹੁਚਾ ਸਦੜੇ ਨਿਤ ਪਵੰਨਿ ॥",
+          "sha256": "f87cadf60ad9585783d1e3b051f03000a84bb5ba73ce4af87c145a409ab4e2da",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 32,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila01.line12",
+          "text": "ਸਦਣਹਾਰਾ ਸਿਮਰੀਐ ਨਾਨਕ ਸੇ ਦਿਹ ਆਵੰਨਿ ॥੪॥੧॥",
+          "sha256": "5513958e9dbccd1212f56027c1bf08a2620130ff339e5463366df4aad4f6e36e",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 33,
+          "sourceLayer": "gurmukhi_original_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "sohila02",
+      "kind": "shabad",
+      "title": "Shabad 2 · Aasaa · Guru Nanak Sahib",
+      "titleGurmukhi": "",
+      "printedRaag": "ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੧ ॥",
+      "raagEvidence": {
+        "source": "https://srigurugranth.net/0012.html",
+        "sourceRow": 34
+      },
+      "sourceHeadingIncludedInLines": true,
+      "lines": [
+        {
+          "id": "sohila02.line01",
+          "text": "ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੧ ॥",
+          "sha256": "dea869cfdb0889b2e1fe372b94ad7af4f64ba442ef016a2f8c1fde5479b54238",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 34,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line02",
+          "text": "ਛਿਅ ਘਰ ਛਿਅ ਗੁਰ ਛਿਅ ਉਪਦੇਸ ॥",
+          "sha256": "98ffeac6b28378106f13c8c5d886c37fd7140ad0f9425036bb44545fa9f4a414",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 35,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line03",
+          "text": "ਗੁਰੁ ਗੁਰੁ ਏਕੋ ਵੇਸ ਅਨੇਕ ॥੧॥",
+          "sha256": "af5b86d89e1928a665665b08fd77a8070f2925fbd6b960ea883f01d17baf9b02",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 36,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line04",
+          "text": "ਬਾਬਾ ਜੈ ਘਰਿ ਕਰਤੇ ਕੀਰਤਿ ਹੋਇ ॥",
+          "sha256": "a88bf948583df44b1aa6102b0f60c4e41dbbc9b1c9e5a1d330aee3164cb4a6bb",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 37,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line05",
+          "text": "ਸੋ ਘਰੁ ਰਾਖੁ ਵਡਾਈ ਤੋਇ ॥੧॥ ਰਹਾਉ ॥",
+          "sha256": "1caa175a574f09d73bd64d10525a39f6dde689e40ab3ad074bab11dd70816383",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 38,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line06",
+          "text": "ਵਿਸੁਏ ਚਸਿਆ ਘੜੀਆ ਪਹਰਾ ਥਿਤੀ ਵਾਰੀ ਮਾਹੁ ਹੋਆ ॥",
+          "sha256": "6b0ef071c57e06b539c4df2e9a7fd98475e5d440556e9ae3af6d12304ba1e38e",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 39,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line07",
+          "text": "ਸੂਰਜੁ ਏਕੋ ਰੁਤਿ ਅਨੇਕ ॥",
+          "sha256": "d12dd1797edebd3f162c4a440f9fa81aa8286cff807c3797afe3c0e5fc574ef1",
+          "location": {
+            "system": "ang",
+            "ang": 12
+          },
+          "digitalPageRow": 40,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila02.line08",
+          "text": "ਨਾਨਕ ਕਰਤੇ ਕੇ ਕੇਤੇ ਵੇਸ ॥੨॥੨॥",
+          "sha256": "d4261c1678f6424ab3a23fe3b18d4d6bd523e05034d6f38f125cf86799778e71",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 0,
+          "sourceLayer": "gurmukhi_original_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "sohila03",
+      "kind": "shabad",
+      "title": "Shabad 3 · Dhanaasree · Guru Nanak Sahib",
+      "titleGurmukhi": "",
+      "printedRaag": "ਰਾਗੁ ਧਨਾਸਰੀ ਮਹਲਾ ੧ ॥",
+      "raagEvidence": {
+        "source": "https://srigurugranth.net/0013.html",
+        "sourceRow": 1
+      },
+      "sourceHeadingIncludedInLines": true,
+      "lines": [
+        {
+          "id": "sohila03.line01",
+          "text": "ਰਾਗੁ ਧਨਾਸਰੀ ਮਹਲਾ ੧ ॥",
+          "sha256": "a37ae1ed8c3b9a03399ee512faee90b998175a626b6bc338633094e912307da8",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 1,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line02",
+          "text": "ਗਗਨ ਮੈ ਥਾਲੁ ਰਵਿ ਚੰਦੁ ਦੀਪਕ ਬਨੇ ਤਾਰਿਕਾ ਮੰਡਲ ਜਨਕ ਮੋਤੀ ॥",
+          "sha256": "accd0bb1cae0476d511fece45083036a8666bf64f5cfdc0d2d7f325ef1751311",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 2,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line03",
+          "text": "ਧੂਪੁ ਮਲਆਨਲੋ ਪਵਣੁ ਚਵਰੋ ਕਰੇ ਸਗਲ ਬਨਰਾਇ ਫੂਲੰਤ ਜੋਤੀ ॥੧॥",
+          "sha256": "217f912efb58e0b28a7660f097a8846c5b8e79a14bd454d7388d325eb412b417",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 3,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line04",
+          "text": "ਕੈਸੀ ਆਰਤੀ ਹੋਇ ॥",
+          "sha256": "2829cf32b98f4ce2205b79d976df954a63b7dec1ddb8e2edabd662197faf1d7e",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 4,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line05",
+          "text": "ਭਵ ਖੰਡਨਾ ਤੇਰੀ ਆਰਤੀ ॥",
+          "sha256": "174137584c98a304660c119cc240dd8706f61143977ed32eb1230476439fbc61",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 5,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line06",
+          "text": "ਅਨਹਤਾ ਸਬਦ ਵਾਜੰਤ ਭੇਰੀ ॥੧॥ ਰਹਾਉ ॥",
+          "sha256": "d39bcabf442f61940fc7aea81399a29ca914b78e1e5fe5d3af9fa14b4ff78d8d",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 6,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line07",
+          "text": "ਸਹਸ ਤਵ ਨੈਨ ਨਨ ਨੈਨ ਹਹਿ ਤੋਹਿ ਕਉ ਸਹਸ ਮੂਰਤਿ ਨਨਾ ਏਕ ਤੋੁਹੀ ॥",
+          "sha256": "99ae3934b64ae697857cdf5d7d217d7428ecd2dee4c8cf335fa6080786842cdc",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 7,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line08",
+          "text": "ਸਹਸ ਪਦ ਬਿਮਲ ਨਨ ਏਕ ਪਦ ਗੰਧ ਬਿਨੁ ਸਹਸ ਤਵ ਗੰਧ ਇਵ ਚਲਤ ਮੋਹੀ ॥੨॥",
+          "sha256": "14e11655ad365e7783da4719b6cdbb61ae2d62552726fac75f1fcb559919a272",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 8,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line09",
+          "text": "ਸਭ ਮਹਿ ਜੋਤਿ ਜੋਤਿ ਹੈ ਸੋਇ ॥",
+          "sha256": "753649097139411ca92f8555bb25651879c4a437ebaf44f214a66b5255c3e84b",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 9,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line10",
+          "text": "ਤਿਸ ਦੈ ਚਾਨਣਿ ਸਭ ਮਹਿ ਚਾਨਣੁ ਹੋਇ ॥",
+          "sha256": "24d50fc067455cf4647b04c2ea42c5667656d9ad1d834397e0c26c029dc95c1a",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 10,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line11",
+          "text": "ਗੁਰ ਸਾਖੀ ਜੋਤਿ ਪਰਗਟੁ ਹੋਇ ॥",
+          "sha256": "2674ec0553fbabc2858e884f4193e7c5bd7ae43c71abaafd361d1fa02f45463c",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 11,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line12",
+          "text": "ਜੋ ਤਿਸੁ ਭਾਵੈ ਸੁ ਆਰਤੀ ਹੋਇ ॥੩॥",
+          "sha256": "de4f34e2f1192b5ae01e56db549c2941109d9397f5ce846b2ba7ad67417794af",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 12,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line13",
+          "text": "ਹਰਿ ਚਰਣ ਕਵਲ ਮਕਰੰਦ ਲੋਭਿਤ ਮਨੋ ਅਨਦਿਨੋੁ ਮੋਹਿ ਆਹੀ ਪਿਆਸਾ ॥",
+          "sha256": "cc525eaca6a2b79cc03633cff3ccd6c4cf6c591b4bf3245592da8afe60224360",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 13,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila03.line14",
+          "text": "ਕ੍ਰਿਪਾ ਜਲੁ ਦੇਹਿ ਨਾਨਕ ਸਾਰਿੰਗ ਕਉ ਹੋਇ ਜਾ ਤੇ ਤੇਰੈ ਨਾਇ ਵਾਸਾ ॥੪॥੩॥",
+          "sha256": "3d01f53348febada4bb40b67da29067534f101afd41fdb1cf6aa5fba7984dd70",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 14,
+          "sourceLayer": "gurmukhi_original_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "sohila04",
+      "kind": "shabad",
+      "title": "Shabad 4 · Gauree Poorbee · Guru Ram Das Sahib",
+      "titleGurmukhi": "",
+      "printedRaag": "ਰਾਗੁ ਗਉੜੀ ਪੂਰਬੀ ਮਹਲਾ ੪ ॥",
+      "raagEvidence": {
+        "source": "https://srigurugranth.net/0013.html",
+        "sourceRow": 15
+      },
+      "sourceHeadingIncludedInLines": true,
+      "lines": [
+        {
+          "id": "sohila04.line01",
+          "text": "ਰਾਗੁ ਗਉੜੀ ਪੂਰਬੀ ਮਹਲਾ ੪ ॥",
+          "sha256": "2243aee8ed18fd703a82d95448c9e1942b2bbcc6ae0513db5f42507853740902",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 15,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line02",
+          "text": "ਕਾਮਿ ਕਰੋਧਿ ਨਗਰੁ ਬਹੁ ਭਰਿਆ ਮਿਲਿ ਸਾਧੂ ਖੰਡਲ ਖੰਡਾ ਹੇ ॥",
+          "sha256": "ef872e60d055fb75e384637e79accfc5d6d4d70807c30a9760b5ee17f4a5629a",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 16,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line03",
+          "text": "ਪੂਰਬਿ ਲਿਖਤ ਲਿਖੇ ਗੁਰੁ ਪਾਇਆ ਮਨਿ ਹਰਿ ਲਿਵ ਮੰਡਲ ਮੰਡਾ ਹੇ ॥੧॥",
+          "sha256": "eef8136b8d33cfa282116dfcdb0d89d7bb2f5a094f59e40923a00b84a7d98b2c",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 17,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line04",
+          "text": "ਕਰਿ ਸਾਧੂ ਅੰਜੁਲੀ ਪੁਨੁ ਵਡਾ ਹੇ ॥",
+          "sha256": "04e080736fcd441d13652bb94387cd128abe674cee60100f8dc27f9b291e9254",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 18,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line05",
+          "text": "ਕਰਿ ਡੰਡਉਤ ਪੁਨੁ ਵਡਾ ਹੇ ॥੧॥ ਰਹਾਉ ॥",
+          "sha256": "d54224ae2cf6a23fa7b016539158d8d2678f4182af536c306d5bef9ba01e2792",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 19,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line06",
+          "text": "ਸਾਕਤ ਹਰਿ ਰਸ ਸਾਦੁ ਨ ਜਾਣਿਆ ਤਿਨ ਅੰਤਰਿ ਹਉਮੈ ਕੰਡਾ ਹੇ ॥",
+          "sha256": "fab839f0ff5f98b395999110cb490a066cb1c92d4980beda7690a623a39da0a3",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 20,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line07",
+          "text": "ਜਿਉ ਜਿਉ ਚਲਹਿ ਚੁਭੈ ਦੁਖੁ ਪਾਵਹਿ ਜਮਕਾਲੁ ਸਹਹਿ ਸਿਰਿ ਡੰਡਾ ਹੇ ॥੨॥",
+          "sha256": "6cd70329bcad856444e88ca5565881fccad324804b77c17fd62792ab90fdd537",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 21,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line08",
+          "text": "ਹਰਿ ਜਨ ਹਰਿ ਹਰਿ ਨਾਮਿ ਸਮਾਣੇ ਦੁਖੁ ਜਨਮ ਮਰਣ ਭਵ ਖੰਡਾ ਹੇ ॥",
+          "sha256": "7adf0038e8d6539ae820382ed905da1a818cc398612d62515b873c5bf368981f",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 22,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line09",
+          "text": "ਅਬਿਨਾਸੀ ਪੁਰਖੁ ਪਾਇਆ ਪਰਮੇਸਰੁ ਬਹੁ ਸੋਭ ਖੰਡ ਬ੍ਰਹਮੰਡਾ ਹੇ ॥੩॥",
+          "sha256": "5c915273573a7d5ca12ac6a998bc3f384bf82ff66d2bf5403509d080fb58e43d",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 23,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line10",
+          "text": "ਹਮ ਗਰੀਬ ਮਸਕੀਨ ਪ੍ਰਭ ਤੇਰੇ ਹਰਿ ਰਾਖੁ ਰਾਖੁ ਵਡ ਵਡਾ ਹੇ ॥",
+          "sha256": "c7ef302b3906d2292946b89296610275c072a240ffffe3061147845ee5db07ed",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 24,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila04.line11",
+          "text": "ਜਨ ਨਾਨਕ ਨਾਮੁ ਅਧਾਰੁ ਟੇਕ ਹੈ ਹਰਿ ਨਾਮੇ ਹੀ ਸੁਖੁ ਮੰਡਾ ਹੇ ॥੪॥੪॥",
+          "sha256": "66c0ed636f7033cdbd2991bb5fe69a07085d8b4f4d89ae191754c1005d8011df",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 25,
+          "sourceLayer": "gurmukhi_original_candidate"
+        }
+      ]
+    },
+    {
+      "unitId": "sohila05",
+      "kind": "shabad",
+      "title": "Shabad 5 · Gauree Poorbee · Guru Arjan Sahib",
+      "titleGurmukhi": "",
+      "printedRaag": "ਰਾਗੁ ਗਉੜੀ ਪੂਰਬੀ ਮਹਲਾ ੫ ॥",
+      "raagEvidence": {
+        "source": "https://srigurugranth.net/0013.html",
+        "sourceRow": 26
+      },
+      "sourceHeadingIncludedInLines": true,
+      "lines": [
+        {
+          "id": "sohila05.line01",
+          "text": "ਰਾਗੁ ਗਉੜੀ ਪੂਰਬੀ ਮਹਲਾ ੫ ॥",
+          "sha256": "a80c87976186d249c309e0d6a7ac34091769b1a538b2239ef7409c99789f92a1",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 26,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line02",
+          "text": "ਕਰਉ ਬੇਨੰਤੀ ਸੁਣਹੁ ਮੇਰੇ ਮੀਤਾ ਸੰਤ ਟਹਲ ਕੀ ਬੇਲਾ ॥",
+          "sha256": "1fb878ec6fc776e61be4592155f6d8855bba2cd860f0928fcf906e96eb905ccd",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 27,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line03",
+          "text": "ਈਹਾ ਖਾਟਿ ਚਲਹੁ ਹਰਿ ਲਾਹਾ ਆਗੈ ਬਸਨੁ ਸੁਹੇਲਾ ॥੧॥",
+          "sha256": "c06d5192efba0bc1f1891807219a6d2ac422de5bcd14faead550770a804b9a9f",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 28,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line04",
+          "text": "ਅਉਧ ਘਟੈ ਦਿਨਸੁ ਰੈਣਾਰੇ ॥",
+          "sha256": "80696e7ff347e52abf67d4d43523bb927e554ea07d3ef81c0459aef356b5c6e4",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 29,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line05",
+          "text": "ਮਨ ਗੁਰ ਮਿਲਿ ਕਾਜ ਸਵਾਰੇ ॥੧॥ ਰਹਾਉ ॥",
+          "sha256": "576e42b2a1fec97352f5babbf93833ada45600e39e0a1f21e89df3c886917c3d",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 30,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line06",
+          "text": "ਇਹੁ ਸੰਸਾਰੁ ਬਿਕਾਰੁ ਸੰਸੇ ਮਹਿ ਤਰਿਓ ਬ੍ਰਹਮ ਗਿਆਨੀ ॥",
+          "sha256": "5010667fb23fd97805046d7fe0a2fd28cd1e496fc92b9a8c738c8660f639a212",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 31,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line07",
+          "text": "ਜਿਸਹਿ ਜਗਾਇ ਪੀਆਵੈ ਇਹੁ ਰਸੁ ਅਕਥ ਕਥਾ ਤਿਨਿ ਜਾਨੀ ॥੨॥",
+          "sha256": "c2c4f97bfb78221d27922dab12c84f47072c8c307f9cb0122417523101beff2d",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 32,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line08",
+          "text": "ਜਾ ਕਉ ਆਏ ਸੋਈ ਬਿਹਾਝਹੁ ਹਰਿ ਗੁਰ ਤੇ ਮਨਹਿ ਬਸੇਰਾ ॥",
+          "sha256": "8a6af8dd6251798da291664e1878699f5735fe2ac5198052d3e566613ebc24a7",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 33,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line09",
+          "text": "ਨਿਜ ਘਰਿ ਮਹਲੁ ਪਾਵਹੁ ਸੁਖ ਸਹਜੇ ਬਹੁਰਿ ਨ ਹੋਇਗੋ ਫੇਰਾ ॥੩॥",
+          "sha256": "5570c6b54096ead94e6316295d5dc969f07b9f203b246ac5c1f27349b6e9e4ee",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 34,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line10",
+          "text": "ਅੰਤਰਜਾਮੀ ਪੁਰਖ ਬਿਧਾਤੇ ਸਰਧਾ ਮਨ ਕੀ ਪੂਰੇ ॥",
+          "sha256": "16e2762d07fd5c062da98da9caa382a872084427e3dd3f3bb645427fb5d35729",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 35,
+          "sourceLayer": "gurmukhi_original_candidate"
+        },
+        {
+          "id": "sohila05.line11",
+          "text": "ਨਾਨਕ ਦਾਸੁ ਇਹੈ ਸੁਖੁ ਮਾਗੈ ਮੋ ਕਉ ਕਰਿ ਸੰਤਨ ਕੀ ਧੂਰੇ ॥੪॥੫॥",
+          "sha256": "d8e3a42a4384e5107d345b4165aeca65b80542db3bd37b8b3e535bb575119413",
+          "location": {
+            "system": "ang",
+            "ang": 13
+          },
+          "digitalPageRow": 36,
+          "sourceLayer": "gurmukhi_original_candidate"
+        }
+      ]
+    }
+  ]
+}

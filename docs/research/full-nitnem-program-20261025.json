@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "programId": "glp001-full-nitnem",
+  "referenceFramework": {
+    "name": "SGPC Sikh Rehat Maryada Article IV with five-bani morning practice documented separately",
+    "url": "https://sgpc.net/sikh-rehat-maryada-in-english/",
+    "policy": "Name the actual edition and practice scope. Do not quietly replace a community variant with another tradition's composition."
+  },
+  "familyRelease": "accepted-japji-r7-only",
+  "publicationAuthorized": false,
+  "records": [
+    {
+      "id": "japji",
+      "period": "morning",
+      "title": "Japji Sahib",
+      "sourceFamily": "sggs",
+      "sourceAnchor": "Sri Guru Granth Sahib Ji Ang 1–8",
+      "originalScope": "Complete existing 42-unit original; 385 immutable source occurrences",
+      "sourceState": "existing_live_original",
+      "readerRoute": "full-japji.html",
+      "educationalStatus": "bilingual_drafts_unapproved",
+      "humanSourceReview": "pending_independent_edition_check",
+      "blockedOn": [
+        "scholarly review of original and draft explanations"
+      ]
+    },
+    {
+      "id": "jaap",
+      "period": "morning",
+      "title": "Jaap Sahib",
+      "sourceFamily": "dasam",
+      "sourceAnchor": "Jaap Sahib from named Dasam Bani edition; no SGGS Ang number",
+      "originalScope": "Complete Jaap Sahib, from an exact edition/recitation boundary",
+      "sourceState": "not_ingested",
+      "readerRoute": null,
+      "educationalStatus": "none",
+      "humanSourceReview": "not_started",
+      "blockedOn": [
+        "edition selection",
+        "full original collation",
+        "rights and qualified review"
+      ]
+    },
+    {
+      "id": "savaiye",
+      "period": "morning",
+      "title": "Tav-Prasad Savaiye",
+      "sourceFamily": "dasam",
+      "sourceAnchor": "Ten Savaiye beginning Sravag Sudh, Akal Ustat; named edition required",
+      "originalScope": "Exactly prescribed ten Savaiye; no guessed extra Savaiye",
+      "sourceState": "not_ingested",
+      "readerRoute": null,
+      "educationalStatus": "none",
+      "humanSourceReview": "not_started",
+      "blockedOn": [
+        "exact ten-stanza boundaries",
+        "digital and independent edition collation",
+        "rights and qualified review"
+      ]
+    },
+    {
+      "id": "chaupai",
+      "period": "morning",
+      "title": "Benti Chaupai Sahib",
+      "sourceFamily": "dasam",
+      "sourceAnchor": "Begins Hamri Karo Hath Dai Rachha; named Dasam Bani and boundary required",
+      "originalScope": "Document SGPC segment and alternate longer forms as named variants, never silently merge",
+      "sourceState": "not_ingested",
+      "readerRoute": null,
+      "educationalStatus": "none",
+      "humanSourceReview": "not_started",
+      "blockedOn": [
+        "edition and ending boundary",
+        "variant ledger",
+        "rights and qualified review"
+      ]
+    },
+    {
+      "id": "anand",
+      "period": "morning",
+      "title": "Anand Sahib",
+      "sourceFamily": "sggs",
+      "sourceAnchor": "Sri Guru Granth Sahib Ji Ang 917–922",
+      "originalScope": "Forty pauris as morning full Anand; six-pauri selection is a distinct usage",
+      "sourceState": "source_audit_blocked",
+      "readerRoute": null,
+      "educationalStatus": "none",
+      "humanSourceReview": "not_started",
+      "blockedOn": [
+        "source heading punctuation difference at row 0",
+        "nonstandard private-use Unicode U+F03D at Ang 920 candidate digital row 13 (global row 123)",
+        "independent published-edition comparison and human Sikh/Punjabi review",
+        "no active source model or public reader until review"
+      ],
+      "sourceAudit": {
+        "evidenceFile": "docs/research/n2-anand/anand-source-audit.json",
+        "sourceAngs": "917–922",
+        "originalDigitalRows": 210,
+        "totalNumberedPauris": 40,
+        "normalizedExactDigitalRows": 208,
+        "disputedDigitalRowIndexes": [
+          0,
+          123
+        ],
+        "knownProblem": "Heading punctuation difference plus source-private-use U+F03D vs comparator Unicode in Anand Pauri 24",
+        "machineIntakePromotable": false,
+        "humanEditionAdjudication": "PENDING"
+      }
+    },
+    {
+      "id": "rehras",
+      "period": "evening",
+      "title": "Sodar Rehras Sahib",
+      "sourceFamily": "composite",
+      "sourceAnchor": "SGPC Article IV: SGGS opening So Dar and So Purakh hymns, Dasam Bani excerpts, selected Anand, Mundawani and Mahla 5 Slok",
+      "originalScope": "Compose ordered verified sections from their own named sources; prohibit SGGS Ang labels for Dasam excerpts",
+      "sourceState": "not_ingested",
+      "readerRoute": null,
+      "educationalStatus": "none",
+      "humanSourceReview": "not_started",
+      "blockedOn": [
+        "component-by-component sources",
+        "explicit SGPC order and extra-verse choices",
+        "Dasam boundaries",
+        "Anand selection",
+        "human review"
+      ]
+    },
+    {
+      "id": "sohila",
+      "period": "night",
+      "title": "Kirtan Sohila",
+      "sourceFamily": "sggs",
+      "sourceAnchor": "Sri Guru Granth Sahib Ji Ang 12–13",
+      "originalScope": "Five shabads; candidate has 56 original digital rows including source headings; some websites combine printed lines",
+      "sourceState": "digital_candidate",
+      "readerRoute": null,
+      "educationalStatus": "none",
+      "humanSourceReview": "pending",
+      "candidate": {
+        "modelFile": "docs/research/n1-sohila/sohila-candidate-original.json",
+        "evidenceFile": "docs/research/n1-sohila/sohila-source-comparison.json",
+        "shabads": 5,
+        "digitalOriginalRows": 56,
+        "exactWebRowMatches": 51,
+        "normalizedWebSubstringMatches": 56,
+        "digitalCorpusStatus": "machine_frozen_not_edition_certified",
+        "independentEditionReview": "pending"
+      },
+      "blockedOn": [
+        "physical/reference-edition collation",
+        "heading and segmentation review",
+        "qualified Sikh/Punjabi review",
+        "existing-reader visual and persistence parity",
+        "iPhone Safari acceptance"
+      ]
+    }
+  ],
+  "companionPractice": {
+    "id": "ardas",
+    "title": "Ardas",
+    "periods": [
+      "morning",
+      "evening"
+    ],
+    "sourceFamily": "ardas",
+    "sourceAnchor": "Prescribed SGPC Rehat Maryada Ardas model with allowed context-specific sections",
+    "sourceState": "not_ingested",
+    "readerRoute": null,
+    "status": "companion_prayer_not_an_sggs_bani",
+    "blockedOn": [
+      "official prayer text and permissible variation scope",
+      "human review"
+    ]
+  },
+  "requiredReleaseGates": [
+    "source_edition_identity",
+    "original_occurrence_sha256s",
+    "source_comparison_with_discrepancy_ledger",
+    "independent_edition_collation",
+    "named_reuse_rights",
+    "qualified_sikh_punjabi_review",
+    "product_design_review",
+    "actual_iphone_safari_voiceover_offline",
+    "founder_final_publication_word"
+  ],
+  "nonDelegableChanges": [
+    "publish_to_family_main",
+    "change_canonical_scripture_without_edition_adjudication",
+    "ingest_private_learning_records",
+    "claim_qualified_religious_approval"
+  ],
+  "notes": "Zero new bans/bani routes published. PR14 provides reusable pure composition model. PR12 owns collection UI; future N1 integration must reconcile branches without merging unreviewed Mind Room. No user data in this program."
+}

@@ -1,0 +1,395 @@
+{
+  "capturedAtUtc": "2026-10-25T14:47:37.887854+00:00",
+  "status": "AUDIT_BLOCKED_ON_EDITION_AND_UNICODE_REVIEW",
+  "sourceFamily": "sggs",
+  "compositionId": "anand-sahib",
+  "fullSourceScope": "Full Anand Sahib, 40 pauris on Ang 917–922; no 6-pauri-shortcut substitution",
+  "sourceAngs": [
+    917,
+    918,
+    919,
+    920,
+    921,
+    922
+  ],
+  "firstPageRows": [
+    38,
+    36,
+    36,
+    35,
+    33,
+    32
+  ],
+  "totalCandidateDigitalRows": 210,
+  "pauriNumberEndings": [
+    {
+      "pauri": 1,
+      "globalRow": 6,
+      "ang": 917,
+      "sourceSha256": "a22e6df242dea7fef284cab7e58d28dfcdd179d296a531cd3c212ce2a63dd7dd"
+    },
+    {
+      "pauri": 2,
+      "globalRow": 11,
+      "ang": 917,
+      "sourceSha256": "097e870f1ce888db3c586fd559c57e535bb0ce7d5dc84a5977dfde4b9c5dd353"
+    },
+    {
+      "pauri": 3,
+      "globalRow": 16,
+      "ang": 917,
+      "sourceSha256": "9f443969c6ca545a311e7ff23fa3409c0cea2a4f78d72b7afe19a95ae82dd6b8"
+    },
+    {
+      "pauri": 4,
+      "globalRow": 22,
+      "ang": 917,
+      "sourceSha256": "2e3c00fe12cdf6daa9d3047ebd6b8007d83dab903c1ab44484db718b95f1a809"
+    },
+    {
+      "pauri": 5,
+      "globalRow": 27,
+      "ang": 917,
+      "sourceSha256": "dbfa07ad6e792a433022ec7ec702bcf796afef7522e5148bb9f6b434c26156fd"
+    },
+    {
+      "pauri": 6,
+      "globalRow": 32,
+      "ang": 917,
+      "sourceSha256": "9acbd42d6c424644044bd6425dcac49b47e826490ebc416c2891f9b853e5d2ec"
+    },
+    {
+      "pauri": 7,
+      "globalRow": 37,
+      "ang": 917,
+      "sourceSha256": "e338c6571bf9e0b107efed386a0e9c5f76636090464573a0cb1618e29908374d"
+    },
+    {
+      "pauri": 8,
+      "globalRow": 42,
+      "ang": 918,
+      "sourceSha256": "79aeacd71d6e4951e07e5304bc70b65a69ab25aafbdd1c0db436d7cc020fc905"
+    },
+    {
+      "pauri": 9,
+      "globalRow": 47,
+      "ang": 918,
+      "sourceSha256": "9d5e2376c49adcdcc0f044d8205ce289d0d46259aa428502e512ff631627bf22"
+    },
+    {
+      "pauri": 10,
+      "globalRow": 53,
+      "ang": 918,
+      "sourceSha256": "cb2b413732f31525d1fff69942dc9211e5b7503f96dfc3488cf442e7d8771569"
+    },
+    {
+      "pauri": 11,
+      "globalRow": 59,
+      "ang": 918,
+      "sourceSha256": "fa1953c06cf3c3ad8488d8724b76c3a370adb87154207587643934ed06ee1c8a"
+    },
+    {
+      "pauri": 12,
+      "globalRow": 64,
+      "ang": 918,
+      "sourceSha256": "b6ea5888a6fa74a3c5748d3ff67d6ca26bbd18ae66f0319605a0abcf4cc3d120"
+    },
+    {
+      "pauri": 13,
+      "globalRow": 69,
+      "ang": 918,
+      "sourceSha256": "421bca647ba25e9b8a5527b23b9a6285ac5752e5940b59d61a76ec7b3f59697f"
+    },
+    {
+      "pauri": 14,
+      "globalRow": 75,
+      "ang": 919,
+      "sourceSha256": "6e647bb8de66ff02dcb6fc3cca475e12ed0c611c37773af1ca09454c88b13905"
+    },
+    {
+      "pauri": 15,
+      "globalRow": 80,
+      "ang": 919,
+      "sourceSha256": "2c5ec5925dee004034edeadbafc7f902551c8ee65d7e25025bdbc4e1c5878156"
+    },
+    {
+      "pauri": 16,
+      "globalRow": 85,
+      "ang": 919,
+      "sourceSha256": "71d042fc44c81e9f2498428e44e9d4ee993382f0a594fb57bbc2ad6743a8725f"
+    },
+    {
+      "pauri": 17,
+      "globalRow": 90,
+      "ang": 919,
+      "sourceSha256": "197c162200c85b9a8e43937a6a56cc2fe1b8bd07def28481de53d85908206f27"
+    },
+    {
+      "pauri": 18,
+      "globalRow": 95,
+      "ang": 919,
+      "sourceSha256": "3b4598687ed897257973811d722dcad9eefd91ef2384467592b4cebd4e4530fd"
+    },
+    {
+      "pauri": 19,
+      "globalRow": 100,
+      "ang": 919,
+      "sourceSha256": "acb57a1869a63890f919fb38a211147fd54affd61cdf968b2240b06751fed5a9"
+    },
+    {
+      "pauri": 20,
+      "globalRow": 105,
+      "ang": 919,
+      "sourceSha256": "421c5736396c9a1d0444d3e600b91ea54486344678ba93abed25c9387c73d453"
+    },
+    {
+      "pauri": 21,
+      "globalRow": 110,
+      "ang": 920,
+      "sourceSha256": "1e59569049e3725a1a675bf7cf3bdb90188c1d38dcf798c2a853c2b7927bb8d4"
+    },
+    {
+      "pauri": 22,
+      "globalRow": 115,
+      "ang": 920,
+      "sourceSha256": "4c96b87de13ff4a44c31c4c30e895c8d62d3a3459521274bfc86b4b38356833a"
+    },
+    {
+      "pauri": 23,
+      "globalRow": 120,
+      "ang": 920,
+      "sourceSha256": "38e5a9b8a2fb72ce74a5f5b3e8c0f128f2123dc0f8036d6b837e19851983e402"
+    },
+    {
+      "pauri": 24,
+      "globalRow": 126,
+      "ang": 920,
+      "sourceSha256": "50c056a346197edc02f2d8914723f190a48db68f38beae108573dc07f48f71c4"
+    },
+    {
+      "pauri": 25,
+      "globalRow": 131,
+      "ang": 920,
+      "sourceSha256": "02098e88b80e2e322cfb0b21f05736bc92ed7c48d985e8da6cc8614d89dc18d2"
+    },
+    {
+      "pauri": 26,
+      "globalRow": 136,
+      "ang": 920,
+      "sourceSha256": "e8367ea1d6790c10ac24a1a1e6e8772359f89bd99b8153ee7d655bd8fe9c7067"
+    },
+    {
+      "pauri": 27,
+      "globalRow": 141,
+      "ang": 920,
+      "sourceSha256": "0f1fef85ad79990897cabb1f281a7a8a42ba753740961d54ddeead1cf036fc9f"
+    },
+    {
+      "pauri": 28,
+      "globalRow": 146,
+      "ang": 921,
+      "sourceSha256": "adfc7e93ec75cca0d64d2d06bc654704cfee9e4b1c6cbcb89b00d43c6f93d64c"
+    },
+    {
+      "pauri": 29,
+      "globalRow": 152,
+      "ang": 921,
+      "sourceSha256": "6308433632e72c45345219917da5dbf5244448ccbf4cc842bcec477db69d098d"
+    },
+    {
+      "pauri": 30,
+      "globalRow": 157,
+      "ang": 921,
+      "sourceSha256": "d94583add32b6826d20ecab84351e769c1912a6157031c8d7b3ac701686e6619"
+    },
+    {
+      "pauri": 31,
+      "globalRow": 162,
+      "ang": 921,
+      "sourceSha256": "4a473251d42fab4791675041010ae78dd7942b277cc8ef78608888ce45b54d2c"
+    },
+    {
+      "pauri": 32,
+      "globalRow": 167,
+      "ang": 921,
+      "sourceSha256": "4478f27538dea1c85f06a9a5d090bf781f7947167aac69f33ae6c5499fa2b9c4"
+    },
+    {
+      "pauri": 33,
+      "globalRow": 172,
+      "ang": 921,
+      "sourceSha256": "9612f0ea90622c73be99a1046f0da54ad83a85034d844c46fd7f82d8beee9d5e"
+    },
+    {
+      "pauri": 34,
+      "globalRow": 178,
+      "ang": 922,
+      "sourceSha256": "a7a6c230c0285b219688277b3ab261e0fda55ff3f8c7363505399e8fd873ac1e"
+    },
+    {
+      "pauri": 35,
+      "globalRow": 183,
+      "ang": 922,
+      "sourceSha256": "b997d891eeb1c18aef780c15d0e781f159713bf03020e930f72b4925b466486b"
+    },
+    {
+      "pauri": 36,
+      "globalRow": 188,
+      "ang": 922,
+      "sourceSha256": "c31324ffb18f5d9cbf7fd656d8db856519c795db6d5e353a16b9d1a3f26b02fa"
+    },
+    {
+      "pauri": 37,
+      "globalRow": 193,
+      "ang": 922,
+      "sourceSha256": "c1e86ec8810f2f2adec0912b254e2175e08be4b9c3abb2736015626da00228e4"
+    },
+    {
+      "pauri": 38,
+      "globalRow": 198,
+      "ang": 922,
+      "sourceSha256": "4aaa57a43f081b9f31b83d3efa3694ba8528f36868cabfd8a12a8e40d9c729c9"
+    },
+    {
+      "pauri": 39,
+      "globalRow": 203,
+      "ang": 922,
+      "sourceSha256": "974c49a48a08cab4dd2daa34b8a04c4a6ff4e3bc166ebd0258dffb0dbac33970"
+    },
+    {
+      "pauri": 40,
+      "globalRow": 209,
+      "ang": 922,
+      "sourceSha256": "024b60590dcd6048a582dca91d9d85a35ef82c9195ecf8adf3f6e299c6d6a55b"
+    }
+  ],
+  "pauriCount": 40,
+  "primary": [
+    {
+      "url": "https://srigurugranth.net/0917.html",
+      "ang": 917,
+      "bytes": 18824,
+      "pageSha256": "5f6976e1be09c218acc9cacf34bf28a22ddea2c0ad32dc4fd0d4ea4a4c31249d",
+      "rows": 38
+    },
+    {
+      "url": "https://srigurugranth.net/0918.html",
+      "ang": 918,
+      "bytes": 18623,
+      "pageSha256": "0ecb733d6bd02f4ae4aa41ac96bcdffe957caf1bf743b09f8501b2fbb1a08e98",
+      "rows": 36
+    },
+    {
+      "url": "https://srigurugranth.net/0919.html",
+      "ang": 919,
+      "bytes": 19138,
+      "pageSha256": "3ea7ad1459ccf01a6d5088f61f58ec9c84619d14616aeeae1edb0a1bb139afcf",
+      "rows": 36
+    },
+    {
+      "url": "https://srigurugranth.net/0920.html",
+      "ang": 920,
+      "bytes": 19068,
+      "pageSha256": "def4acac346045b7d58c8595abe8b4e88fee59cb8837e5c09a2de40a9210cf4c",
+      "rows": 35
+    },
+    {
+      "url": "https://srigurugranth.net/0921.html",
+      "ang": 921,
+      "bytes": 18373,
+      "pageSha256": "0ff9bc5980ed15139589818fbd92160e7174077dcd2f2343f2b84d4c910b25bf",
+      "rows": 33
+    },
+    {
+      "url": "https://srigurugranth.net/0922.html",
+      "ang": 922,
+      "bytes": 18382,
+      "pageSha256": "8cc73b6f3ea773c2d243319871a6eba88218af84819b75406ebce929055b2452",
+      "rows": 32
+    }
+  ],
+  "comparator": [
+    {
+      "url": "https://opengranth.org/ang/917/",
+      "ang": 917,
+      "bytes": 41802,
+      "pageSha256": "226d6fbf6a688ebf34181f32c9ac59b8b821ead17dbe1700de017f8bb841ea16",
+      "rows": 38
+    },
+    {
+      "url": "https://opengranth.org/ang/918/",
+      "ang": 918,
+      "bytes": 40660,
+      "pageSha256": "483ac87e544b4dbf70bd590b7868a4c7b50c31bbadc955dbcd563557bd05cf4d",
+      "rows": 36
+    },
+    {
+      "url": "https://opengranth.org/ang/919/",
+      "ang": 919,
+      "bytes": 41243,
+      "pageSha256": "2232b4808b1b55e3713f54cbf932231005135626f38776f4ecefc5b3ffd61911",
+      "rows": 36
+    },
+    {
+      "url": "https://opengranth.org/ang/920/",
+      "ang": 920,
+      "bytes": 40715,
+      "pageSha256": "d3e3b8d39a277254687931fae7189170e157716afd04f47685ed947b069debfc",
+      "rows": 35
+    },
+    {
+      "url": "https://opengranth.org/ang/921/",
+      "ang": 921,
+      "bytes": 39083,
+      "pageSha256": "115d2d2facc7668c63bc7c15d9dd07b3616ea3afcd778cd69253a7457da64b19",
+      "rows": 33
+    },
+    {
+      "url": "https://opengranth.org/ang/922/",
+      "ang": 922,
+      "bytes": 38675,
+      "pageSha256": "92356cb27c1bc9fea390c61d39d1f1a39ed3e8fc57662407149d873544daa2e4",
+      "rows": 32
+    }
+  ],
+  "identicalNfcRows": 208,
+  "unicodeOrHeadingMismatches": [
+    {
+      "globalRow": 0,
+      "ang": 917,
+      "primaryDigitalRow": 0,
+      "originalPrimary": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ",
+      "originalComparator": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ ॥",
+      "primaryOriginalSha256": "3918f1fc48d89824018588a7f682514e23b52d88802f85d02dbaad2a74966718",
+      "comparatorOriginalSha256": "45ab661c54623ebdda92e79e35b26a3227a9a91bbd31311215e61b0d33dfd1d4",
+      "primaryNonstandardUnicode": []
+    },
+    {
+      "globalRow": 123,
+      "ang": 920,
+      "primaryDigitalRow": 13,
+      "originalPrimary": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚੀ ਆਖਿ ਵਖਾਣੀ ॥",
+      "originalComparator": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚਂੀ ਆਖਿ ਵਖਾਣੀ ॥",
+      "primaryOriginalSha256": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+      "comparatorOriginalSha256": "afc775a4bdd3a1e45ac64fb748605048d56ecb2a70d021dd9886e8a49a897673",
+      "primaryNonstandardUnicode": [
+        {
+          "codepoint": "U+F03D",
+          "name": "UNASSIGNED"
+        }
+      ]
+    }
+  ],
+  "knownRisks": [
+    "Header on Ang 917 has a terminal danda variation in the second digital text",
+    "Ang 920 row 14? A character near ਕਚੀ has a private-use code point U+F03D in primary while secondary uses normal Unicode combining notation; never auto-replace",
+    "Web-only digital comparison is not independent physical/SGPC edition collation",
+    "Original draft is deliberately NOT ingested as a release composition until reviewed",
+    "Modern translations, audio, timings and private learning were not imported"
+  ],
+  "candidateSourceModelProduced": false,
+  "automaticUnicodeCorrectionAllowed": false,
+  "humanEditionCollation": "PENDING",
+  "rightsReview": "PENDING",
+  "publicationAuthorized": false
+}
