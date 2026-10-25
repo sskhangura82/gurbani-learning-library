@@ -14,3 +14,17 @@ button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}bu
 dialog{border:1px solid var(--line);border-radius:15px;background:var(--raised);color:var(--ink);width:min(96vw,560px);max-height:84vh;overflow:auto;padding:16px;box-shadow:0 20px 60px rgba(0,0,0,.24)}dialog::backdrop{background:rgba(8,24,19,.62)}.dialog-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px;padding-bottom:8px}.dialog-heading h2{font:24px Georgia,serif;margin:0}.dialog-heading button{min-width:44px;min-height:44px;background:transparent;border:1px solid var(--line);border-radius:8px}.jump-list{display:grid;grid-template-columns:1fr;gap:5px;margin:12px 0}.jump-list button{background:transparent;border:1px solid var(--line);border-radius:7px;padding:9px 12px;min-height:44px;text-align:left}.jump-list button[aria-current=location]{border-color:var(--gold);background:var(--accent-light);font-weight:750}.tools-current{font-size:13px;color:var(--muted)}.tools-group{display:grid;gap:8px;padding:13px 0;border-bottom:1px solid var(--line)}.tools-group button,.tools-group select,.tools-group input[type=file]{min-height:44px}.tools-group button{background:var(--accent-light);border:1px solid var(--line);border-radius:7px;padding:8px}.tools-group label{font-size:12px;font-weight:650}.tools-group textarea{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:7px;min-height:95px;padding:9px;width:100%;font-size:14px}.tools-group input[type=range]{width:100%;accent-color:var(--accent)}.tools-group .hint{font-size:11px;color:var(--muted)}.import-label{display:block}.tools-group input[type=file]{width:100%;font-size:12px}
 @media(max-width:420px){.library-header{padding:12px}.collection,.reader{padding-left:12px;padding-right:12px}.dock{gap:3px;padding-left:5px;padding-right:5px}.dock .round{width:39px;min-width:39px}.dock .position{min-width:59px}.modes button{min-width:44px;font-size:10px;padding:3px}.bani-card{gap:7px}.g-title{font-size:23px}.reader-heading h1{font-size:35px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Revision: continuous Gurbani reading through the complete bani */
+.view-row{display:flex;gap:6px;align-items:center;justify-content:center;max-width:580px;margin:12px auto 3px;background:var(--raised);border:1px solid var(--line);padding:5px;border-radius:12px}
+.view-row button{border:0;border-radius:9px;background:transparent;color:var(--muted);padding:10px 13px;font-size:12px;min-height:44px;flex:1}
+.view-row button[aria-pressed=true]{background:var(--accent);color:var(--raised);font-weight:700}
+.view-help{font-size:11px;color:var(--muted);text-align:center;line-height:1.5;max-width:565px;margin:5px auto 12px}
+.passage-block{padding:6px 0 15px;border-bottom:1px solid var(--line);scroll-margin-top:14px}
+.passage-block:last-child{border-bottom:0}
+.passage-block .unit-heading{margin-top:26px;margin-bottom:18px}
+.passage-block .source-study{max-width:580px}
+body[data-view=continuous] .source-unit{padding-top:0}
+body[data-view=passage] .passage-block{border-bottom:0}
+body[data-view=continuous] .between-units{margin-top:10px}
+@media(max-width:420px){.view-row button{padding:9px 6px;font-size:12px}.passage-block .unit-heading{font-size:11px;letter-spacing:.5px}.view-help{padding:0 4px}}

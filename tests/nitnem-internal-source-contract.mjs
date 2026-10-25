@@ -104,6 +104,10 @@ test('Gurmukhi reader, word-guide and settings use the existing exact continuous
  assert.ok(script.includes('const next=C.advance'));
  assert.ok(script.includes('C.flatten'));
  assert.ok(page.includes('id="size" min="28" max="60"'));
+ assert.ok(page.includes('id="view-continuous"')&&page.includes('id="view-passage"'));
+ assert.ok(script.includes("view:'continuous'")&&script.includes("state.view==='continuous'"));
+ assert.ok(script.includes('updateScrolledLine')&&script.includes('lineNodes.get'));
+ assert.ok(script.includes("if(nextLine.held)"));
 });
 test('Saved reading namespaces cannot collide with canonical Japji learning',()=>{
  assert.ok(script.includes('glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.'));
@@ -116,7 +120,7 @@ test('Internal page contains zero third-party scripture links or remote script s
  assert.ok(!/<iframe\b/i.test(page));
 });
 test('Scoped second service worker does not replace or delete Japji root cache',()=>{
- assert.equal(sha(read('nitnem/sw.js')),'3d5457c1e59cd0416c537308c9ce78959979fd32f9e5a5aaeb9caedd067ea2d0');
+ assert.equal(sha(read('nitnem/sw.js')),'78c3c8ee043043850226bfe9268678040e186ac48acc7eb1020fdc87a5468e16');
  assert.ok(sw.includes('glp-nitnem-source-review:'));
  assert.ok(!sw.includes('glp-static:'));
  assert.ok(sw.includes('new URL("./",self.location.href)'));

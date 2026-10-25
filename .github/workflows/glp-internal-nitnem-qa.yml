@@ -43,6 +43,9 @@ jobs:
           node --check tests/nitnem-internal-browser.mjs
           node --check tests/nitnem-internal-gated-browser.mjs
           node --check tests/nitnem-cross-scope-gated-browser.mjs
+          node --check tests/nitnem-continuous-browser.mjs
+          node --check tests/nitnem-continuous-gated-browser.mjs
+          node --check tests/nitnem-continuous-rollback-browser.mjs
           node tests/nitnem-internal-source-contract.mjs
           node tests/nitnem-today-contract.mjs
       - name: Deterministic private-only Nitnem service worker
@@ -54,6 +57,12 @@ jobs:
         run: |
           python3 -c 'import ast; [ast.parse(open(x).read()) for x in ["tests/serve-gated-internal-nitnem.py","tests/nitnem-internal-gate-contract.py","tools/nitnem/build-source-packs.py","tools/nitnem/build-private-sw.py"]]'
           python3 tests/nitnem-internal-gate-contract.py
+      - name: Build isolated CONTINUOUS reader version and prove old cache survives
+        run: |
+          python3 tools/nitnem/build-versioned-reader.py --output "${{ runner.temp }}/glp-nitnem-continuous-v2"
+          python3 tools/nitnem/build-versioned-reader.py --output "${{ runner.temp }}/glp-nitnem-continuous-v2" --verify
+          python3 -c 'import ast; [ast.parse(open(x).read()) for x in ["tools/nitnem/build-versioned-reader.py","tests/serve-gated-continuous-nitnem.py","tests/nitnem-continuous-gate-contract.py"]]'
+          python3 tests/nitnem-continuous-gate-contract.py
       - name: Family-release and external-source leakage holds remain active
         run: |
           test ! -f jaap.html

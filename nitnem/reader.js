@@ -10,8 +10,9 @@ const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore;
 const codec=new TextDecoder('utf-8',{fatal:true});
 const state={library:null,pack:null,model:null,units:[],bani:null,unit:0,index:0,token:0,playing:false,timeout:0,mode:'read',
- size:36,theme:'day',pace:70,notes:{},bookmarks:[],currentKey:null,rev:0,sourceVerified:false};
+ size:36,theme:'day',pace:70,view:'continuous',notes:{},bookmarks:[],currentKey:null,rev:0,sourceVerified:false};
 const sourceNotice='Digital original · private testing only. Independent scripture and rights review pending.';
+const lineNodes=new Map();let activeRow=null,activeWord=null,scrollTrackTimer=0,programmaticUntil=0;
 function announce(s){$('announcer').textContent=s;}
 function status(s){$('source-lineage').textContent=s;announce(s);}
 function error(s){pause();$('source-unit').replaceChildren();status('SOURCE BLOCKED: '+s);state.sourceVerified=false;throw Error(s);}
@@ -87,13 +88,14 @@ function loadSaved(pack){
  state.theme=['day','amrit'].includes(saved.theme)?saved.theme:'day';
  state.pace=Number.isInteger(saved.pace)&&saved.pace>=50&&saved.pace<=160?saved.pace:70;
  state.mode=['read','meaning','study'].includes(saved.mode)?saved.mode:'read';
+ state.view=['continuous','passage'].includes(saved.view)?saved.view:'continuous';
  state.index=state.model.byId.has(saved.lineId)?state.model.byId.get(saved.lineId):0;
  state.unit=state.model.lines[state.index].unitIndex;state.token=0;
 }
 function save(){
  if(!state.pack)return false;
  const payload={notes:state.notes,bookmarks:state.bookmarks,lineId:state.model.lines[state.index].id,
-  size:state.size,theme:state.theme,pace:state.pace,mode:state.mode};
+  size:state.size,theme:state.theme,pace:state.pace,mode:state.mode,view:state.view};
  const record={schema:1,compositionId:state.pack.compositionId,editionId:state.pack.editionId,
   rev:++state.rev,savedAt:new Date().toISOString(),payload};
  try{localStorage.setItem(state.currentKey,JSON.stringify(record));return true;}
@@ -116,7 +118,7 @@ function toggleMode(mode){
   :mode==='study'
    ?'Study: these are source-location facts and review status, not interpretations or spiritual advice.'
    :'';
- if(state.sourceVerified)renderUnit();
+ if(state.sourceVerified){renderUnit();scrollToCurrent(false);}
  save();
 }
 function applyStyle(){
@@ -151,6 +153,7 @@ function createLine(l){
   const tuk=document.createElement('p');tuk.className='tuk';tuk.lang='pa';tuk.append(words(l));
   row.append(tuk);
  }
+ lineNodes.set(l.id,row);
  row.addEventListener('click',()=>{
   const i=state.model.byId.get(l.id);
   if(i==null)return;
@@ -173,57 +176,119 @@ function detail(l){
  }
  return block;
 }
-function renderUnit(){
- if(!state.pack)return;
- const section=$('source-unit');section.replaceChildren();
- const u=state.pack.units[state.unit];
- const top=document.createElement('h2');top.className='unit-heading';top.textContent=u.title;
- section.append(top);
- if(state.unit===0)for(const p of state.pack.preface||[]){
-  const element=document.createElement('p');element.className='original-preface';element.lang='pa';element.textContent=p.text;section.append(element);
+function passage(index){
+ const u=state.pack.units[index],section=document.createElement('section');
+ section.className='passage-block';section.dataset.unitIndex=String(index);
+ section.id='nitnem-passage-'+index;
+ section.setAttribute('aria-label',u.title);
+ const top=document.createElement('h2');top.className='unit-heading';top.textContent=u.title;section.append(top);
+ if(index===0)for(const p of state.pack.preface||[]){
+  const element=document.createElement('p');element.className='original-preface';element.lang='pa';
+  element.textContent=p.text;section.append(element);
  }
- for(const h of u.metricalHeadings||[]){
-  const header=document.createElement('p');header.className='meter-heading';header.lang='pa';header.textContent=h.text;section.append(header);
+ for(const heading of u.metricalHeadings||[]){
+  const h=document.createElement('p');h.className='meter-heading';h.lang='pa';h.textContent=heading.text;
+  section.append(h);
  }
  for(const l of u.lines)section.append(createLine(l));
- if(state.mode==='study')section.append(detail(u.lines[0]));
- else if(state.mode==='meaning'){
+ if(state.mode==='study'){
+  const detailBlock=detail(u.lines[0]);section.append(detailBlock);
+ }else if(state.mode==='meaning'&&state.view==='passage'){
   const note=document.createElement('div');note.className='source-study';
   note.textContent='No reviewed line-by-line meaning is available for this bani yet. Original Gurmukhi above remains visible.';
   section.append(note);
  }
- $('position-label').textContent=u.title.replace('DIGITAL SOURCE CANDIDATE','');
- $('position-detail').textContent='Line '+(state.model.lines[state.index].lineIndex+1)+' of '+u.lines.length;
- $('prev-unit').disabled=state.unit===0;
- $('next-unit').disabled=state.unit===state.pack.units.length-1;
- $('reading-end').hidden=state.unit!==state.pack.units.length-1;
+ return section;
+}
+function updateViewButtons(){
+ document.body.dataset.view=state.view;
+ $('view-continuous').setAttribute('aria-pressed',String(state.view==='continuous'));
+ $('view-passage').setAttribute('aria-pressed',String(state.view==='passage'));
+ $('view-help').textContent=state.view==='continuous'
+  ?'Gurmukhi flows through the entire bani without another tap. Jump to any passage using the bottom reading dock.'
+  :'One passage is shown at a time. Use Previous, Next or Jump to move.';
+}
+function renderUnit(){
+ if(!state.pack)return;
+ const holder=$('source-unit'),fragment=document.createDocumentFragment();
+ lineNodes.clear();activeRow=null;activeWord=null;
+ const current=state.unit;
+ if(state.view==='continuous'){
+  for(let i=0;i<state.pack.units.length;i++)fragment.append(passage(i));
+ }else fragment.append(passage(current));
+ holder.replaceChildren(fragment);
+ updateViewButtons();
+ $('prev-unit').disabled=current===0;
+ $('next-unit').disabled=current===state.pack.units.length-1;
+ $('reading-end').hidden=current!==state.pack.units.length-1;
  paint();
 }
 function paint(){
- for(const e of $('source-unit').querySelectorAll('.g-word[data-active=true]'))delete e.dataset.active;
- for(const e of $('source-unit').querySelectorAll('.scripture-line[aria-current]'))e.removeAttribute('aria-current');
- const l=state.model?.lines[state.index];if(!l)return;
- const row=$('source-unit').querySelector('[data-line-id="'+l.id+'"]');
+ if(activeRow)activeRow.removeAttribute('aria-current');
+ if(activeWord)delete activeWord.dataset.active;
+ activeRow=null;activeWord=null;
+ const line=state.model?.lines[state.index];
+ if(!line)return;
+ const row=lineNodes.get(line.id);
  if(row){
-  row.setAttribute('aria-current','location');
-  const word=row.querySelectorAll('.g-word')[state.token];
-  if(word)word.dataset.active='true';
+  row.setAttribute('aria-current','location');activeRow=row;
+  activeWord=row.querySelectorAll('.g-word')[state.token]||null;
+  if(activeWord)activeWord.dataset.active='true';
  }
- $('position-detail').textContent='Line '+(l.lineIndex+1)+' of '+state.units[l.unitIndex].lines.length;
+ const unit=state.pack.units[line.unitIndex];
+ $('position-label').textContent=unit.title;
+ $('position-detail').textContent='Line '+(line.lineIndex+1)+' of '+unit.lines.length;
+ $('prev-unit').disabled=line.unitIndex===0;
+ $('next-unit').disabled=line.unitIndex===state.pack.units.length-1;
+ $('reading-end').hidden=line.unitIndex!==state.pack.units.length-1;
  $('play').textContent=state.playing?'❚❚':'▶';
  $('play').setAttribute('aria-pressed',String(state.playing));
  $('play').setAttribute('aria-label',(state.playing?'Pause':'Play')+' silent visual guide');
 }
+function scrollToCurrent(focus=false){
+ const line=state.model?.lines[state.index];
+ if(!line)return;
+ const row=lineNodes.get(line.id);
+ if(!row)return;
+ programmaticUntil=performance.now()+1100;
+ row.scrollIntoView({behavior:'instant',block:'start'});
+ if(focus)$('source-unit').focus({preventScroll:true});
+}
+function selectView(view){
+ if(!state.pack||!['continuous','passage'].includes(view)||state.view===view)return;
+ pause();
+ state.view=view;
+ renderUnit();scrollToCurrent(false);save();
+ announce(view==='continuous'?'Continuous original Gurbani reading is ready.':'One passage at a time is ready.');
+}
 function goUnit(unit,focus=false){
  if(!state.pack)return;
- pause();state.unit=Math.min(state.pack.units.length-1,Math.max(0,Number(unit)||0));
+ pause();
+ state.unit=Math.max(0,Math.min(state.pack.units.length-1,Number(unit)||0));
  state.index=state.model.starts[state.unit];state.token=0;
- renderUnit();save();
- $('source-unit').scrollIntoView({behavior:'instant',block:'start'});
- if(focus)$('source-unit').focus({preventScroll:true});
+ if(state.view==='passage')renderUnit();
+ else paint();
+ scrollToCurrent(focus);save();
  announce('Reading '+state.pack.title+' · '+state.units[state.unit].title+'. Original digital source review pending.');
  const query=new URL(location.href);query.searchParams.set('bani',state.bani);query.searchParams.set('unit',String(state.unit+1));
  history.replaceState({bani:state.bani},'',query.pathname+query.search);
+}
+function updateScrolledLine(){
+ scrollTrackTimer=0;
+ if(!state.sourceVerified||!state.model||state.view!=='continuous'||state.playing||performance.now()<programmaticUntil)return;
+ const lines=state.model.lines,at=Math.max(120,Math.min(innerHeight*.22,300));
+ let lo=0,hi=lines.length-1;
+ while(lo<hi){
+  const mid=(lo+hi)>>1,el=lineNodes.get(lines[mid].id);
+  if(el&&el.getBoundingClientRect().bottom<=at)lo=mid+1;
+  else hi=mid;
+ }
+ const id=lines[lo].id;
+ if(state.index!==lo){
+  state.index=lo;state.unit=lines[lo].unitIndex;state.token=0;
+  paint();save();
+  $('position-label').textContent=state.pack.units[state.unit].title;
+ }
 }
 function guideStep(){
  if(!state.model||!state.sourceVerified)return false;
@@ -231,14 +296,21 @@ function guideStep(){
  if(next.finished){pause();announce('Silent visual guide reached the end of this source candidate.');return false;}
  const sourceUnit=state.pack.units[next.index===state.index?state.unit:state.model.lines[next.index].unitIndex];
  const nextLine=sourceUnit.lines[state.model.lines[next.index].lineIndex];
- if(nextLine.held){pause();state.index=next.index;state.token=0;state.unit=state.model.lines[next.index].unitIndex;renderUnit();
+ if(nextLine.held){pause();state.index=next.index;state.token=0;state.unit=state.model.lines[next.index].unitIndex;
+  if(state.view==='passage')renderUnit();else paint();
+  scrollToCurrent(false);
   announce('STOP: Anand Sahib Pauri 24 original text needs an independent Unicode/source review.');save();return false;}
  const nextUnit=state.model.lines[next.index].unitIndex;
  state.index=next.index;state.token=next.token;
- if(nextUnit!==state.unit){state.unit=nextUnit;renderUnit();}
- else paint();
- const row=$('source-unit').querySelector('[data-line-id="'+state.model.lines[state.index].id+'"]');
- if(row&&next.newLine)row.scrollIntoView({behavior:'smooth',block:'center'});
+ if(nextUnit!==state.unit){
+  state.unit=nextUnit;
+  if(state.view==='passage')renderUnit();else paint();
+ }else paint();
+ const row=lineNodes.get(state.model.lines[state.index].id);
+ if(row&&next.newLine){
+  programmaticUntil=performance.now()+750;
+  row.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});
+ }
  return true;
 }
 function pause(){
@@ -280,8 +352,15 @@ function chooseBani(name){
   applyStyle();
   state.sourceVerified=true;
   toggleMode(state.mode);
-  const fromURL=Number(new URL(location.href).searchParams.get('unit'));
-  goUnit(Number.isInteger(fromURL)&&fromURL>=1&&fromURL<=pack.unitCount?fromURL-1:state.unit);
+  const requested=new URL(location.href).searchParams.get('unit');
+  const fromURL=requested===null?null:Number(requested);
+  const selected=fromURL!==null&&Number.isInteger(fromURL)&&fromURL>=1&&fromURL<=pack.unitCount?fromURL-1:null;
+  if(selected!==null&&selected!==state.unit)goUnit(selected);
+  else if(state.index>0)scrollToCurrent(false);
+  else{
+   programmaticUntil=performance.now()+1100;
+   $('reader').scrollIntoView({behavior:'instant',block:'start'});
+  }
   status('Exact original source hashes verified · '+pack.originalLineCount+' Gurmukhi records · edition review pending.');
   const query=new URL(location.href);query.searchParams.set('bani',name);history.replaceState({bani:name},'',query.pathname+query.search);
   return pack;
@@ -292,6 +371,7 @@ function chooseBani(name){
 }
 function collection(){
  pause();state.pack=null;state.model=null;state.bani=null;state.sourceVerified=false;
+ lineNodes.clear();activeRow=null;activeWord=null;
  $('collection').hidden=false;$('reader').hidden=true;$('dock').hidden=true;$('library-back').hidden=true;
  history.replaceState({},'',location.pathname);window.scrollTo({top:0,behavior:'instant'});
 }
@@ -324,7 +404,7 @@ function exportLearning(){
  const data={project:'GLP-001-NITNEM-PRIVATE-REVIEW',schema:1,compositionId:state.pack.compositionId,
   editionId:state.pack.editionId,exportedAt:new Date().toISOString(),
   state:{notes:state.notes,bookmarks:state.bookmarks,lineId:state.model.lines[state.index].id,
-   size:state.size,theme:state.theme,pace:state.pace,mode:state.mode}};
+   size:state.size,theme:state.theme,pace:state.pace,mode:state.mode,view:state.view}};
  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
  const url=URL.createObjectURL(blob);const a=document.createElement('a');
  a.href=url;a.download='nitnem-source-review-'+state.bani+'-learning.json';document.body.append(a);a.click();a.remove();
@@ -340,8 +420,8 @@ async function importLearning(file){
  const parsed=C.normalise({...incoming.state,read:{id:incoming.state.lineId,offset:0}},state.model,state.units);
  state.notes=parsed.notes;state.bookmarks=parsed.bookmarks;
  state.size=parsed.size;state.theme=parsed.theme;state.pace=parsed.pace;
- state.mode=parsed.mode;state.index=state.model.byId.get(parsed.read.id)??0;state.unit=state.model.lines[state.index].unitIndex;
- applyStyle();state.sourceVerified=true;toggleMode(state.mode);renderUnit();
+ state.mode=parsed.mode;state.view=['continuous','passage'].includes(incoming.state.view)?incoming.state.view:'continuous';state.index=state.model.byId.get(parsed.read.id)??0;state.unit=state.model.lines[state.index].unitIndex;
+ applyStyle();state.sourceVerified=true;toggleMode(state.mode);renderUnit();scrollToCurrent(false);
  if(!save())throw Error('Browser rejected imported learning; do not close until exported');
  $('save-status').textContent='Matching edition learning imported only into this private beta.';
 }
@@ -376,6 +456,13 @@ $('prev-unit').addEventListener('click',()=>goUnit(state.unit-1,true));
 $('next-unit').addEventListener('click',()=>goUnit(state.unit+1,true));
 $('jump').addEventListener('click',openJump);$('jump-close').addEventListener('click',()=>$('jump-dialog').close());
 $('reading-tools').addEventListener('click',openTools);$('tools-close').addEventListener('click',()=>$('tools-dialog').close());
+$('view-continuous').addEventListener('click',()=>selectView('continuous'));
+$('view-passage').addEventListener('click',()=>selectView('passage'));
+window.addEventListener('scroll',()=>{
+ if(!state.sourceVerified||state.view!=='continuous'||state.playing||performance.now()<programmaticUntil)return;
+ if(scrollTrackTimer)clearTimeout(scrollTrackTimer);
+ scrollTrackTimer=setTimeout(updateScrolledLine,130);
+},{passive:true});
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>toggleMode(b.dataset.mode)));
 $('play').addEventListener('click',toggleGuide);
 $('size').addEventListener('input',e=>{state.size=Number(e.target.value);applyStyle();save();});
@@ -404,7 +491,7 @@ window.NITNEM_INTERNAL_QA=Object.freeze({
  getState:()=>({bani:state.bani,sourceVerified:state.sourceVerified,
   unitCount:state.units.length,lineCount:state.model?.lines.length||0,unit:state.unit,
   index:state.index,token:state.token,playing:state.playing,mode:state.mode,
-  notes:Object.keys(state.notes).length,bookmarks:state.bookmarks.length,
+  notes:Object.keys(state.notes).length,bookmarks:state.bookmarks.length,view:state.view,
   sourceApproved:false,translationApproved:false,releaseAuthorized:false,
   offlineScope:'/nitnem/',lastLineHeld:!!currentLine()?.held}),
  step:()=>guideStep(),library:()=>library()
