@@ -41,6 +41,8 @@ jobs:
           node --check nitnem/continuous-core.js
           node --check nitnem/sw.js
           node --check tests/nitnem-internal-browser.mjs
+          node --check tests/nitnem-internal-gated-browser.mjs
+          node --check tests/nitnem-cross-scope-gated-browser.mjs
           node tests/nitnem-internal-source-contract.mjs
           node tests/nitnem-today-contract.mjs
       - name: Deterministic private-only Nitnem service worker
