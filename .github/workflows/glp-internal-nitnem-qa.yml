@@ -1,0 +1,63 @@
+name: GLP Integrated Nitnem Internal Original Reader QA (no deployment)
+on:
+  push:
+    branches:
+      - feature/glp-internal-nitnem-reader-review-20261025
+permissions:
+  contents: read
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch ONLY pinned second GitHub source branch for reproducible original candidate bytes
+        uses: actions/checkout@v4
+        with:
+          repository: sskhangura82/gurbani-learning-library
+          ref: 373ccc34f4a1c0ccb6ce36654bf6e9574087200f
+          path: pinned-source-evidence
+          persist-credentials: false
+      - name: Build/verify six exact original Gurmukhi packs from pinned SHA
+        run: |
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-source-evidence --output nitnem/data --verify
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-source-evidence --output nitnem/data
+          git diff --exit-code -- nitnem/data
+      - name: Existing accepted Japji source, browser learning and worker checks
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: Source-gated Full Nitnem reader static contracts
+        run: |
+          node --check nitnem/reader.js
+          node --check nitnem/continuous-core.js
+          node --check nitnem/sw.js
+          node --check tests/nitnem-internal-browser.mjs
+          node tests/nitnem-internal-source-contract.mjs
+          node tests/nitnem-today-contract.mjs
+      - name: Deterministic private-only Nitnem service worker
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/nitnem-internal-source-contract.mjs
+      - name: Gated same-origin original assets — throwaway auth and source tampering test
+        run: |
+          python3 -c 'import ast; [ast.parse(open(x).read()) for x in ["tests/serve-gated-internal-nitnem.py","tests/nitnem-internal-gate-contract.py","tools/nitnem/build-source-packs.py","tools/nitnem/build-private-sw.py"]]'
+          python3 tests/nitnem-internal-gate-contract.py
+      - name: Family-release and external-source leakage holds remain active
+        run: |
+          test ! -f jaap.html
+          test ! -f anand.html
+          test ! -f rehras.html
+          ! grep -q 'nitnem/data/' sw.js
+          ! grep -q 'nitnem/sw.js' sw.js
+          ! grep -q 'href="https://' nitnem/index.html
+          git diff --exit-code -- sw.js full-japji.html js/japji-full-data.js js/japji-full.js js/learning.js js/shared-learning.js index.html

@@ -1,0 +1,385 @@
+{
+  "checkedAt": "2026-10-25T21:33:48.379Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Fresh isolated Chrome profile launched",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "All seven bani cards are inside library and ONLY Japji links to an internal route",
+      "result": "PASS",
+      "detail": {
+        "all": 7,
+        "internal": 6,
+        "links": [
+          "../full-japji.html"
+        ],
+        "warn": "Private source-review edition. These newly integrated Gurmukhi texts have not completed independent scripture-edition or reuse-rights review. Do not treat this test version as a certified Gutka. Some recitation traditions use different boundaries."
+      }
+    },
+    {
+      "name": "Private source and qualified-review warning visibly shown",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Original-source manifest has exact six candidate entries and no publication authority",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "sohila is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "sohila",
+        "sourceVerified": true,
+        "unitCount": 5,
+        "lineCount": 56,
+        "unit": 0,
+        "index": 0,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Sohila source contains visible original Gurmukhi and no third-party links",
+      "result": "PASS",
+      "detail": {
+        "units": 1,
+        "originalRows": 12,
+        "pa": "ਕੀਰਤਨ ਸੋਹਿਲਾ",
+        "first": "ਸੋਹਿਲਾ ਰਾਗੁ ਗਉੜੀ ਦੀਪਕੀ ਮਹਲਾ ੧",
+        "links": 0
+      }
+    },
+    {
+      "name": "Next passage moves to Sohila Shabad 2 in same reader",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Passage menu has exactly five directly accessible Sohila sections",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Jump to final Sohila Shabad 5 works",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Meaning keeps original Gurmukhi visible but does not fabricate a translation",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Study offers source-line facts, not purported religious interpretation",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Small iPhone viewport fits reader and six dock buttons ≥44px",
+      "result": "PASS",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "dockVisible": true,
+        "dockWidth": 320,
+        "targets": [
+          44,
+          44,
+          44,
+          44,
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "name": "60px Gurmukhi and Amrit dark appearance controlled and visible",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Private scoped bookmark saves by source occurrence",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Private reflection saves in this bani/edition local namespace",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Saved source-scoped learning, size and theme survive full reload",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "savaiye is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "savaiye",
+        "sourceVerified": true,
+        "unitCount": 10,
+        "lineCount": 40,
+        "unit": 0,
+        "index": 0,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Savaiye independent learning namespace has no Sohila bookmarks/notes",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "chaupai is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "chaupai",
+        "sourceVerified": true,
+        "unitCount": 29,
+        "lineCount": 116,
+        "unit": 0,
+        "index": 0,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Chaupai reader clearly labels 29-pauri digital variation, not SGPC-universal original",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "jaap is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "jaap",
+        "sourceVerified": true,
+        "unitCount": 199,
+        "lineCount": 782,
+        "unit": 0,
+        "index": 0,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Long Jaap does not render 782 rows in the DOM at once",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Jaap picker has 199 chhands",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Direct navigation to chhand 99 works",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "anand is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "anand",
+        "sourceVerified": true,
+        "unitCount": 40,
+        "lineCount": 208,
+        "unit": 0,
+        "index": 0,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Anand Pauri 24 original is held with visible warning, no PUA displayed",
+      "result": "PASS",
+      "detail": {
+        "unit": 23,
+        "warnings": 1,
+        "hasPUA": false,
+        "holdText": "Original line held for source reviewAnand Sahib Pauri 24 contains an unresolved digital Gurmukhi character (U+F03D). Its exact source is preserved in our research, but not presented as approved reading text.Source occurrence anand24.line03 · editor review pending"
+      }
+    },
+    {
+      "name": "rehras is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "rehras",
+        "sourceVerified": true,
+        "unitCount": 44,
+        "lineCount": 159,
+        "unit": 0,
+        "index": 0,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Mixed SGGS+Dasam Rehras Savaiya unit is independently labeled as Dasam",
+      "result": "PASS",
+      "detail": {
+        "head": "Evening Savaiya · Pae Gahe",
+        "unit": 34
+      }
+    },
+    {
+      "name": "Rehras mixed-source reader has no horizontal overflow",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Offline install is explicit opt-in, preserving the existing Japji service worker",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "New worker is ONLY registered under /nitnem/ with one source-bound cache",
+      "result": "PASS",
+      "detail": {
+        "active": "activated",
+        "scope": "http://127.0.0.1:8996/nitnem/",
+        "script": "http://127.0.0.1:8996/nitnem/sw.js",
+        "keys": [
+          "glp-nitnem-source-review:glp-private-nitnem-qa-8391ea3db53f55c8b7"
+        ]
+      }
+    },
+    {
+      "name": "Whole Jaap original 199/782 reads from private verified offline cache with network BLOCKED",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "anand is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "anand",
+        "sourceVerified": true,
+        "unitCount": 40,
+        "lineCount": 208,
+        "unit": 23,
+        "index": 119,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Different Anand original 40/208 also loads while network is BLOCKED",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "rehras is verified, internally loaded and NOT approved",
+      "result": "PASS",
+      "detail": {
+        "bani": "rehras",
+        "sourceVerified": true,
+        "unitCount": 44,
+        "lineCount": 159,
+        "unit": 34,
+        "index": 123,
+        "token": 0,
+        "playing": false,
+        "mode": "read",
+        "notes": 0,
+        "bookmarks": 0,
+        "sourceApproved": false,
+        "translationApproved": false,
+        "releaseAuthorized": false,
+        "offlineScope": "/nitnem/",
+        "lastLineHeld": false
+      }
+    },
+    {
+      "name": "Mixed SGGS+Dasam Rehras source also loads while network BLOCKED",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "No third-party website requests ever occur in six-source internal reader",
+      "result": "PASS",
+      "detail": {
+        "requests": 40
+      }
+    },
+    {
+      "name": "No browser JS exceptions across online/offline tests",
+      "result": "PASS",
+      "detail": {
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "app": "GLP private integrated original digital source reader",
+  "privateReview": true,
+  "sourceFamilies": "SGGS + Dasam, unresolved edition/rights/human review",
+  "noExternalLinks": true,
+  "nativeIPhoneSafari": "NOT RUN",
+  "sourceScholarApproved": false,
+  "publicFamilyPublished": false
+}
