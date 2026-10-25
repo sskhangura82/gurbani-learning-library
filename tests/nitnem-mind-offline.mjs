@@ -1,5 +1,5 @@
 import fs from 'node:fs';import path from 'node:path';import {spawn} from 'node:child_process';import {fileURLToPath} from 'node:url';
-const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),base='http://127.0.0.1:8921',profile=fs.mkdtempSync('/tmp/glp-r7-offline-');
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),base=process.env.GLP_QA_BASE||'http://127.0.0.1:8921',profile=fs.mkdtempSync('/tmp/glp-r7-offline-');
 const chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--headless=new','--remote-debugging-address=127.0.0.1','--remote-debugging-port=0','--user-data-dir='+profile,'--no-first-run','--disable-background-networking','about:blank'],{stdio:'ignore'});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));const tasks=new Map();let seq=0,session,ws;const checks=[];let fail=null;
 function check(k,v){if(!v)throw Error(k);checks.push(k);console.log('PASS',k);}
@@ -13,11 +13,11 @@ try{
  await send('Page.enable',{},session);await send('Runtime.enable',{},session);await send('Network.enable',{},session);
  await nav('');await until('document.querySelector(".nitnem-card")');
  await until('navigator.serviceWorker&&(async()=>!!(await navigator.serviceWorker.ready).active)()');
- await until('(async()=>{const ks=await caches.keys();return ks.some(k=>k.includes("candidate-nitnem-mind-4"));})()');
+ await until('(async()=>{const ks=await caches.keys();return ks.some(k=>k.includes("mind-serenity-review-1"));})()');
  check('Home installed versioned hashed shell without opening reader',true);
  await send('Page.reload',{ignoreCache:false},session);await sleep(700);await until('navigator.serviceWorker.controller!==null');check('Home page under active service worker',true);
- const cacheCount=await run('(async()=>{const k=(await caches.keys()).find(x=>x.includes("candidate-nitnem-mind-4"));const c=await caches.open(k);return (await c.keys()).length})()');
- check('All 40 manifest responses were cached',cacheCount===40);
+ const cacheCount=await run('(async()=>{const k=(await caches.keys()).find(x=>x.includes("mind-serenity-review-1"));const c=await caches.open(k);return (await c.keys()).length})()');
+ check('All 41 manifest responses were cached',cacheCount===41);
  await send('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0},session);
  await nav('');await until('!!document.querySelector(".nitnem-card")');check('Home works while network is blocked',true);
  await nav('full-japji.html');await until('window.GLP_CONTINUOUS_DEBUG?.lineCount===385');check('Complete Japji reader works while network blocked',true);
@@ -25,6 +25,8 @@ try{
  await nav('gurdwaras.html');await until('document.querySelectorAll(".place-card").length===3');check('Gurdwara directory works while network blocked',true);
  await nav('nitnem.html');await until('document.querySelectorAll(".bani-item").length===7');check('Full Nitnem library information works offline without invented source text',true);
  await nav('psychology.html');await until('document.querySelectorAll(".topic-button").length===4');check('Source-bound Psychology room remains usable offline',true);
+ check('Exact original Gurmukhi remains visible offline',await run('document.getElementById("gurbani-exact")?.textContent.trim().length>0'));
+ check('Serenity style loaded from the offline shell',await run('([...document.styleSheets].some(s=>s.href?.endsWith("/css/mind-serenity-preview.css")&&s.cssRules?.length>0))'));
  console.log('COMPLETE '+checks.length+' offline checks');
 }catch(e){fail=String(e);console.log('FAIL',fail);}
 finally{

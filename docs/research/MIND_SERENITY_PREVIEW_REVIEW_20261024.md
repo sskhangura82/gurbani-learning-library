@@ -36,3 +36,13 @@ This is a child PR targeted at PR #12's branch. It changes only `psychology.html
 Rollback is reverting this child branch; its parent PR #12 original screenshots and content remain preserved. No runtime state/schema changes, no data migration.
 
 **Research basis:** Claude's founder-supplied PSY-R / PSY-D / X-INT October 24 briefs and the accepted three-door Darbar Standard.
+
+## Engineering repair after initial visual review · 24 October 2026 (Pacific)
+
+**Problem confirmed:** after the psychology/home redesign, the draft service worker still pinned the parent HTML hashes and did not cache `css/mind-serenity-preview.css`. The parent visual-pass result alone therefore did not demonstrate that this review candidate could install or load offline.
+
+**Review-only repair:** add the new stylesheet to `tests/build-sw.mjs` and regenerate `sw.js` with a unique **candidate** cache version `0.9-japji-v1-mind-serenity-review-1`. No original Gurbani, psychology/source records, content renderers, learning data, Home Screen identity, live worker or provider integration changed.
+
+**Verification:** `node tests/mind-precache-contract.mjs` verified **69 file-hash and local-resource assertions** across a **41-route** manifest. The 16 parent Nitnem/Mind source/privacy contracts and 8 worker-simulation checks were updated and passed, along with baseline source (27), shared-learning (12), R6 (7) and R7 (12) contracts. An actual isolated Mac Chrome run using `GLP_QA_BASE=http://127.0.0.1:8959 node tests/nitnem-mind-offline.mjs` passed **12 checks** with Chrome network emulation set to offline: Home, Japji (385 lines), Simran, Gurdwara directory, seven-entry Nitnem roadmap and four-topic Mind room; the Mind original Gurmukhi was visible and its new CSS loaded from cache. See `evidence/nitnem-mind-offline.json` and `evidence/service-worker-verification.json`. The QA server was loopback-only and stopped afterward. No private learning records were read or exported.
+
+**Holds unchanged:** simulated offline Chrome is not physical iPhone airplane-mode or Safari/VoiceOver acceptance. No independent Sikh/Punjabi or psychology evidence signoff has been obtained; PR #17 remains research, not automatic content promotion. No merger with PR #12, main, deployment or family publication. Any future accepted release requires a fresh worker version and independent release authorization.
