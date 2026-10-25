@@ -42,9 +42,9 @@ async function exactOriginal(){
  const inspect=[
   '(async()=>{',
   'const k=GLP_SOURCE_QA.getState().sourceKey;',
-  'const src=k==="sohila"?"../docs/research/n1-sohila/sohila-candidate-original.json":k==="savaiye"?"../docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json":k==="jaap"?"../docs/research/n3-dasam-jaap/jaap-199-original-candidate.json":k==="anand"?"../docs/research/n2-anand/anand-40-original-candidate.json":"../docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json";',
+  'const src=k==="sohila"?"../docs/research/n1-sohila/sohila-candidate-original.json":k==="savaiye"?"../docs/research/n3-dasam-savaiye/savaiye-ten-original-candidate.json":k==="jaap"?"../docs/research/n3-dasam-jaap/jaap-199-original-candidate.json":k==="anand"?"../docs/research/n2-anand/anand-40-original-candidate.json":k==="rehras"?"../docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json":"../docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json";',
   'const r=await fetch(src,{cache:"no-store"}),x=await r.json();',
-  'const expected=x.units.flatMap(u=>u.lines);',
+  'const allUnits=x.units??x.sections.flatMap(s=>s.units);const chosen=k==="rehras"?allUnits.filter(u=>u.unitId===document.querySelector(".qa-unit")?.dataset.unitId):allUnits;const expected=chosen.flatMap(u=>u.lines);',
   'const actual=[...document.querySelectorAll(".qa-source-line")];',
   'return actual.length===expected.length&&actual.every((e,i)=>e.textContent===expected[i].text&&e.dataset.id===expected[i].id&&e.dataset.sourceSha256===expected[i].sha256);',
   '})()'
@@ -160,6 +160,41 @@ try{
  check('Anand quarantined Pauri 24 source QA fits small phone layout',await run('document.documentElement.scrollWidth<=innerWidth'));
  const image5=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
  fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-anand-hold-320.png'),Buffer.from(image5.data,'base64'));
+ await click('#load-rehras');
+ await until('window.GLP_SOURCE_QA.getState().sourceKey==="rehras" && window.GLP_SOURCE_QA.getState().readerReady','Mixed SGPC Rehras source candidate verified',40000);
+ current=await run('GLP_SOURCE_QA.getState()');
+ check('SGPC mixed-source Rehras 44 units and 159 original records enter one existing reader engine',current.sourceKey==='rehras'&&current.unitCount===44&&current.lineCount===159&&!current.releaseAuthorized,current);
+ check('Rehras first SGGS hymn original text is SHA-bound to digital SGPC source candidate',await exactOriginal());
+ const sgStart=await run('(()=>({unit:document.querySelector(".qa-unit")?.dataset.unitId,text:document.querySelector(".qa-unit .qa-source-line")?.textContent,options:document.querySelectorAll("#qa-unit-picker option").length,preface:document.querySelectorAll(".qa-preface").length}))()');
+ check('First of nine SGGS hymns is So Dar; 44 direct section choices available',sgStart.unit==='rehras.sggs01'&&sgStart.text?.startsWith('ਸੋ ਦਰੁ')&&sgStart.options===44&&sgStart.preface===0,sgStart);
+ async function rehrasJump(index){
+  const expression='(()=>{const x=document.getElementById("qa-unit-picker");x.value='+JSON.stringify(String(index))+';x.dispatchEvent(new Event("change",{bubbles:true}));return {select:x.value,unit:document.querySelector(".qa-unit")?.dataset.unitId,text:document.querySelector(".qa-unit .qa-source-line")?.textContent,kind:document.querySelector(".qa-unit h2")?.textContent,position:GLP_SOURCE_QA.getState().position.index}})()';
+  const state=await run(expression);
+  if(state.select!==String(index))throw Error('Rehras QA select failed at '+index+': '+JSON.stringify(state));
+  return state;
+ }
+ let currentBlock=await rehrasJump(8);
+ check('Ninth and final SGGS opening hymn remains named independently',currentBlock.unit==='rehras.sggs09'&&currentBlock.text?.startsWith('ਆਸਾ ਮਹਲਾ ੫'),currentBlock);
+ currentBlock=await rehrasJump(9);
+ check('Rehras switches from SGGS hymn 9 to bounded Dasam Chaupai Pauri 1',currentBlock.unit==='rehras.chaupai01'&&currentBlock.text?.startsWith('ਹਮਰੀ ਕਰੋ'),currentBlock);
+ currentBlock=await rehrasJump(34);
+ check('Pae Gahe evening Savaiya follows 25 Chaupai pauris without substituting morning ten Savaiye',currentBlock.unit==='rehras.savaiya01'&&currentBlock.text?.includes('ਪਾਂਇ ਗਹੇ ਜਬ ਤੇ ਤੁਮਰੇ'),currentBlock);
+ currentBlock=await rehrasJump(35);
+ check('Sagal Duar Dohira directly follows evening Savaiya',currentBlock.unit==='rehras.dohira01'&&currentBlock.text?.includes('ਸਗਲ ਦੁਆਰ ਕਉ ਛਾਡਿ ਕੈ'),currentBlock);
+ currentBlock=await rehrasJump(36);
+ check('Anand first selected pauri is included from verified original source',currentBlock.unit==='rehras.anand01'&&currentBlock.text?.startsWith('ਅਨੰਦੁ ਭਇਆ'),currentBlock);
+ currentBlock=await rehrasJump(41);
+ check('Selected Anand Pauri 40 follows first five without disputed Pauri 24',currentBlock.unit==='rehras.anand40'&&currentBlock.text?.startsWith('ਅਨਦੁ ਸੁਣਹੁ'),currentBlock);
+ currentBlock=await rehrasJump(42);
+ check('Mundawani occurs after selected Anand without automatically appending extra verses',currentBlock.unit==='rehras.mundawani'&&currentBlock.text?.startsWith('ਮੁੰਦਾਵਣੀ'),currentBlock);
+ currentBlock=await rehrasJump(43);
+ check('Mahla 5 Tera Keeta Slok is final Rehras unit and Next is disabled',currentBlock.unit==='rehras.slok'&&currentBlock.text?.startsWith('ਸਲੋਕ ਮਹਲਾ ੫')&&await run('document.getElementById("qa-next").disabled'),currentBlock);
+ check('Last Rehras composite original lines match the source model hashes exactly',await exactOriginal());
+ check('Browser never displays any quarantined Anand Pauri 24 source as part of Rehras',await run('!document.body.innerText.includes(String.fromCharCode(0xF03D))'));
+ await size(320,740);
+ check('44-unit mixed source reader fits narrow phone viewport without overflow',await run('document.documentElement.scrollWidth<=innerWidth'));
+ const image6=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
+ fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-rehras-320.png'),Buffer.from(image6.data,'base64'));
  check('Jaap original source browser makes zero network requests to third-party sites',requests.every(x=>x.startsWith(origin+'/')),{count:requests.length});
  check('All candidate network requests are same loopback origin',requests.every(x=>x.startsWith(origin+'/')),{requests:requests.length});
  check('No browser JavaScript exceptions',exceptions.length===0,{exceptions});
@@ -168,7 +203,7 @@ finally{
  const result={checkedAt:new Date().toISOString(),status:failed?'FAIL':'PASS',checks,errors:exceptions,
   scope:'Nonshipping source-only Chrome QA against existing continuous-core; two unapproved digital original candidates, no family app',
   actualIPhone:'NOT TESTED',humanEditionReview:'PENDING',publicationAllowed:false,
-  screenshots:['evidence/nitnem-original-qa-sohila-320.png','evidence/nitnem-original-qa-savaiye-390.png','evidence/nitnem-original-qa-chaupai-320.png','evidence/nitnem-original-qa-jaap-320.png','evidence/nitnem-original-qa-anand-hold-320.png']};
+  screenshots:['evidence/nitnem-original-qa-sohila-320.png','evidence/nitnem-original-qa-savaiye-390.png','evidence/nitnem-original-qa-chaupai-320.png','evidence/nitnem-original-qa-jaap-320.png', 'evidence/nitnem-original-qa-anand-hold-320.png','evidence/nitnem-original-qa-rehras-320.png']};
  fs.writeFileSync(path.join(root,'evidence/nitnem-original-qa-browser.json'),JSON.stringify(result,null,2)+'\n');
  try{if(ws?.readyState===1)await send('Browser.close')}catch{}
  try{ws?.close()}catch{}

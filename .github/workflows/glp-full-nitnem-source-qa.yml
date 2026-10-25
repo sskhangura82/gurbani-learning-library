@@ -1,4 +1,4 @@
-name: GLP Full Nitnem N1 Original Source Candidate (nondeploying)
+name: GLP Full Nitnem Original Source Candidate (nondeploying)
 on:
   push:
     branches:
@@ -49,9 +49,15 @@ jobs:
         run: node tests/sohila-continuous-parity.mjs
       - name: Rehras ordered composite component boundaries — no verse ingestion
         run: node tests/rehras-component-ledger.mjs
+      - name: Complete SGPC 6-section Rehras digitally frozen source — unapproved
+        run: node tests/rehras-complete-sgpc-source.mjs
+      - name: Mixed SGGS-Dasam Rehras composition parity with original reader core
+        run: node tests/rehras-continuous-parity.mjs
+      - name: Short 25 versus expanded 29 pauri Chaupai original digital variants
+        run: node tests/chaupai-expanded-variant.mjs
       - name: Python source intake syntax only — no web calls or app writes
         run: |
-          python3 -c 'import ast; files=["intake_sohila.py","audit_anand.py","intake_savaiye.py","intake_chaupai_excerpt.py","audit_jaap_structure.py","intake_jaap_full.py","intake_anand_40.py"]; [ast.parse(open("tools/compositions/"+f,encoding="utf-8").read()) for f in files]'
+          python3 -c 'import ast; files=["intake_sohila.py","audit_anand.py","intake_savaiye.py","intake_chaupai_excerpt.py","audit_jaap_structure.py","intake_jaap_full.py","intake_anand_40.py","intake_rehras_sgpc.py","intake_chaupai_variants.py"]; [ast.parse(open("tools/compositions/"+f,encoding="utf-8").read()) for f in files]'
       - name: Nonshipping source guard
         run: |
           node --check tests/sohila-source-intake.mjs
@@ -66,12 +72,16 @@ jobs:
           node --check tests/jaap-full-source-intake.mjs
           node --check tests/jaap-continuous-parity.mjs
           node --check tests/anand-40-full-source.mjs
+          node --check tests/rehras-complete-sgpc-source.mjs
+          node --check tests/rehras-continuous-parity.mjs
+          node --check tests/chaupai-expanded-variant.mjs
           node --check tests/nonshipping-source-browser.mjs
           node --check tests/nonshipping-source-reader.mjs
           test -f tests/nonshipping-source-reader.html
           test -f tests/nonshipping-source-reader.css
           python3 -c 'import ast; ast.parse(open("tools/compositions/intake_savaiye.py", encoding="utf-8").read())'
           node --check tools/compositions/continuous-source-parity.mjs
+          node --check tools/compositions/continuous-rehras-composite.mjs
           test ! -f sohila.html
           test ! -f anand.html
           test ! -f js/sohila-data.js
@@ -83,4 +93,7 @@ jobs:
           test ! -f js/jaap-full-data.js
           test ! -f js/anand-full-data.js
           ! grep -q 'n3-dasam-jaap' sw.js
+          ! grep -q 'n4-rehras-composite' sw.js
+          test ! -f rehras.html
+          test ! -f js/rehras-full-data.js
           git diff --exit-code -- full-japji.html js/japji-full-data.js js/learning.js js/shared-learning.js sw.js index.html

@@ -194,6 +194,21 @@
         "sourceEditionAdjudicated": false,
         "fullMorningRecitationResolved": false,
         "familyReaderReleased": false
+      },
+      "expandedLongVariantDigitalResearch": {
+        "sourceModel": "docs/research/n3-chaupai-variants/chaupai-site-expanded-29-pauri-candidate.json",
+        "comparison": "docs/research/n3-chaupai-variants/chaupai-long-short-boundary-ledger.json",
+        "sourceOrigin": "https://www.discoversikhism.com/learn_gurbani/learn_chaupai_sahib.html",
+        "comparisonOrigin": "https://gurdwaras.com/nitnem/chaupai-sahib",
+        "boundaries": {
+          "SGPCEveningExcerpt": 25,
+          "siteExpandedSource": 29
+        },
+        "originalSourceTuksInExpandedVariant": 116,
+        "additionalWebSiteSourceTuks": 16,
+        "additionalOriginalTextualVariantRows": 7,
+        "fullMorningVersionReligiouslyAdjudicated": false,
+        "readersPublished": false
       }
     }
   ],

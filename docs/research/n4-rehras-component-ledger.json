@@ -15,11 +15,14 @@
       "sourceReference": "Nine SGGS hymns after Japji (So Dar through Saran Pare Ki Rakho Sarma) according to SGPC Article IV",
       "count": 9,
       "scope": "nine hymns",
-      "sourceStatus": "not_ingested",
+      "sourceStatus": "digital_candidate_not_ingested_into_runtime",
       "dependentComposition": null,
       "verifiedOriginalCount": null,
       "locationScheme": "ang",
-      "sourceEditionId": null
+      "sourceEditionId": null,
+      "compositeOriginalCandidate": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+      "digitalCandidateUnitCount": 9,
+      "sourceEditionHumanApproved": false
     },
     {
       "id": "benti-chaupai-rehras",
@@ -44,7 +47,10 @@
         "orthographicOrSubstantiveVariantsPending": 49,
         "printedEditionApproval": "PENDING",
         "familyReaderEnabled": false
-      }
+      },
+      "compositeOriginalCandidate": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+      "digitalCandidateUnitCount": 25,
+      "sourceEditionHumanApproved": false
     },
     {
       "id": "savaiya-pae-gahe",
@@ -53,11 +59,14 @@
       "sourceReference": "Savaiya beginning Pae Gahe Jab Te Tumre; not a substitute for the ten morning Tav-Prasad Savaiye",
       "count": 1,
       "scope": "one specific savaiya",
-      "sourceStatus": "not_ingested",
+      "sourceStatus": "digital_candidate_not_ingested_into_runtime",
       "dependentComposition": null,
       "verifiedOriginalCount": null,
       "locationScheme": "dasam_section",
-      "sourceEditionId": null
+      "sourceEditionId": null,
+      "compositeOriginalCandidate": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+      "digitalCandidateUnitCount": 1,
+      "sourceEditionHumanApproved": false
     },
     {
       "id": "dohira-sagal-duar",
@@ -66,11 +75,14 @@
       "sourceReference": "Dohira beginning Sagal Duar Kau Chhad Kai",
       "count": 1,
       "scope": "one specific dohira",
-      "sourceStatus": "not_ingested",
+      "sourceStatus": "digital_candidate_not_ingested_into_runtime",
       "dependentComposition": null,
       "verifiedOriginalCount": null,
       "locationScheme": "dasam_section",
-      "sourceEditionId": null
+      "sourceEditionId": null,
+      "compositeOriginalCandidate": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+      "digitalCandidateUnitCount": 1,
+      "sourceEditionHumanApproved": false
     },
     {
       "id": "anand-selected",
@@ -79,7 +91,7 @@
       "sourceReference": "The first five and last (40th) pauris of full Anand Sahib, not a distinct invented scripture",
       "count": 6,
       "scope": "source indices 1, 2, 3, 4, 5, 40",
-      "sourceStatus": "not_ingested",
+      "sourceStatus": "digital_candidate_not_ingested_into_runtime",
       "dependentComposition": "anand",
       "selection": [
         1,
@@ -91,7 +103,10 @@
       ],
       "verifiedOriginalCount": null,
       "locationScheme": "ang",
-      "sourceEditionId": null
+      "sourceEditionId": null,
+      "compositeOriginalCandidate": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+      "digitalCandidateUnitCount": 6,
+      "sourceEditionHumanApproved": false
     },
     {
       "id": "mundawani-slok",
@@ -100,11 +115,14 @@
       "sourceReference": "Mundawani and Mahla 5 Slok beginning Tera Keeta Jato Nahi",
       "count": 2,
       "scope": "two named SGGS segments",
-      "sourceStatus": "not_ingested",
+      "sourceStatus": "digital_candidate_not_ingested_into_runtime",
       "dependentComposition": null,
       "verifiedOriginalCount": null,
       "locationScheme": "ang",
-      "sourceEditionId": null
+      "sourceEditionId": null,
+      "compositeOriginalCandidate": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+      "digitalCandidateUnitCount": 2,
+      "sourceEditionHumanApproved": false
     }
   ],
   "companionOutsideBaniSequence": "ardas",
@@ -116,6 +134,7 @@
     "The morning ten Tav-Prasad Savaiye and evening Pae Gahe Savaiya are separate source occurrences.",
     "The shorter Anand selection cannot be sourced by truncating or changing a full composition without verified boundaries.",
     "Named variants should be separate edition manifests, not a silent merged/default reader.",
-    "The evening Benti Chaupai SGPC excerpt now has a separate digital 25-pauri candidate with 49 textual variants; no chosen authoritative edition or runtime text."
+    "The evening Benti Chaupai SGPC excerpt now has a separate digital 25-pauri candidate with 49 textual variants; no chosen authoritative edition or runtime text.",
+    "All six SGPC components now have a digitally assembled source candidate with 44 units / 159 original records; this is not independent source collation or family approval."
   ]
 }

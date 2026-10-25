@@ -17,7 +17,8 @@
       "chaupai",
       "anand"
     ],
-    "scopeDisclosure": "Article IV English SGPC morning explicitly lists Japji, Jaap and Ten Savaiye; the familiar additional morning Chaupai/Anand is tracked as a broader five-bani practice, and neither practice is silently equated with the other."
+    "scopeDisclosure": "Article IV English SGPC morning explicitly lists Japji, Jaap and Ten Savaiye; the familiar additional morning Chaupai/Anand is tracked as a broader five-bani practice, and neither practice is silently equated with the other.",
+    "variantDisclosure": "SGPC narrow Rehras has six ordered components; online Rehras pages can include extra verses outside this exact sequence. Benti Chaupai scope differs across recitation traditions, so 25- and 29-pauri digital variants are separately named and pending independent authoritative edition review."
   },
   "familyRelease": "accepted-japji-r7-only",
   "publicationAuthorized": false,
@@ -145,6 +146,19 @@
         "editorialAcceptance": "PENDING",
         "fullMorningVersionResolved": false,
         "readerRoute": null
+      },
+      "digitalLongVariantResearch": {
+        "sourceModel": "docs/research/n3-chaupai-variants/chaupai-site-expanded-29-pauri-candidate.json",
+        "comparisonReceipt": "docs/research/n3-chaupai-variants/chaupai-long-short-boundary-ledger.json",
+        "SGPCEveningRehrasExcerptPauris": 25,
+        "expandedWebsitePauris": 29,
+        "expandedAdditionalOriginalTuks": 16,
+        "newSourceComparisonsExact": 7,
+        "newSourceComparisonsAfterOnlyVerseCounterDeletion": 9,
+        "additionalWebsiteSavaiyaAndDohiraAsSeparatePostscript": true,
+        "sourceEditionOrTraditionChosenForMorning": "NONE — independently review",
+        "familySourceApproved": false,
+        "originalMorningReaderRoute": null
       }
     },
     {
@@ -198,22 +212,47 @@
       "sourceFamily": "composite",
       "sourceAnchor": "SGPC Article IV: SGGS opening So Dar and So Purakh hymns, Dasam Bani excerpts, selected Anand, Mundawani and Mahla 5 Slok",
       "originalScope": "Compose ordered verified sections from their own named sources; prohibit SGGS Ang labels for Dasam excerpts",
-      "sourceState": "not_ingested",
+      "sourceState": "digital_composite_candidate",
       "readerRoute": null,
       "educationalStatus": "none",
-      "humanSourceReview": "not_started",
+      "humanSourceReview": "pending_sgpc_edition_and_qualifying_scholar_review",
       "blockedOn": [
-        "component-by-component sources",
-        "explicit SGPC order and extra-verse choices",
-        "Dasam boundaries",
-        "Anand selection",
-        "human review"
+        "independent SGGS original edition/Ang collation for 9 So Dar/So Purakh hymns, Mundawani and Mahla 5 Slok",
+        "qualified Dasam edition/rights/variant adjudication of Benti Chaupai, evening Pae Gahe Savaiya and Sagal Duar Dohira",
+        "selected Anand 1–5 and 40 original text and recitation headings religious reviewer signoff",
+        "separate named practice variants for 6 additional paragraphs on digital source page, without silently including or denying them",
+        "qualified Sikh/Punjabi source, scripture and bilingual teaching review",
+        "full source version iPhone Safari, VoiceOver, real airplane-mode review and founder final publication word"
       ],
       "componentResearch": {
         "bentiChaupaiEveningExcerptDigitalCandidate": "docs/research/n4-chaupai-excerpt/chaupai-sgpc-excerpt-candidate.json",
         "wholeCompositeSourceVerified": false,
         "qualifiedReview": "PENDING",
         "readerRoute": null
+      },
+      "fullDigitalSGPCSourceCandidate": {
+        "sourceModel": "docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json",
+        "reviewReceipt": "docs/research/n4-rehras-composite/rehras-sgpc-source-differences.json",
+        "officialFramework": "https://sgpc.net/wp-content/uploads/2025/06/Sikh-Rehat-Maryada-English-n.pdf",
+        "orderedComponents": 6,
+        "sourceReadingUnits": 44,
+        "originalDigitalSourceRecords": 159,
+        "componentUnitCounts": [
+          9,
+          25,
+          1,
+          1,
+          6,
+          2
+        ],
+        "SGGSSourceComponents": 3,
+        "DasamSourceComponents": 3,
+        "webpageOutsideSGPCSelectionHasSixBoundedExtraRecords": true,
+        "humanOriginalEditionApproved": false,
+        "rightsVerified": false,
+        "sourceLineageIndependence": "UNVERIFIED",
+        "familyReaderReleased": false,
+        "iPhoneAndOfflineAccepted": false
       }
     },
     {

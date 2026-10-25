@@ -28,6 +28,11 @@ const SOURCES=Object.freeze({
   path:'../docs/research/n2-anand/anand-40-original-candidate.json',
   digest:'3efd383d9e5a351934d516582a7acb6d2eeb315f5faa8d4badf12cf3a31c9ab9',
   compositionId:'anand-sahib',units:40,lines:208,sourceFamily:'sggs'
+ },
+ rehras:{
+  path:'../docs/research/n4-rehras-composite/rehras-sgpc-digital-composite-candidate.json',
+  digest:'e1a2a6d7d61ecfa273d3724438a317d552bcffd62e4bd602c9c10530d699659a',
+  compositionId:'sodar-rehras-sgpc-digital-candidate',units:44,lines:159,sourceFamily:'composite',sections:6
  }
 });
 const $=id=>document.getElementById(id);
@@ -56,6 +61,27 @@ function pause(){
 }
 function status(label){$('qa-status').textContent=label;}
 async function verifyRecord(record,spec){
+ if(spec.sourceFamily==='composite'){
+  const expectedOrder=['sggs-nine','chaupai-25','savaiya-pae-gahe','dohira-sagal-duar','anand-selected','mundawani-slok'];
+  if(record.compositionId!==spec.compositionId||record.sections?.length!==6||record.sections.map(s=>s.componentId).join('|')!==expectedOrder.join('|')||
+     record.sourceFamily!=='composite'||record.sourceApproved!==false||record.humanTextCollationApproved!==false||
+     record.readerEnabled!==false||record.releaseAuthorized!==false)fail('Six-section SGPC source candidate identity or publication hold changed');
+  const allUnits=record.sections.flatMap(s=>s.units);
+  const allLines=allUnits.flatMap(u=>u.lines);
+  if(allUnits.length!==spec.units||allLines.length!==spec.lines)fail('Complete SGPC Rehras 44/159 source count changed');
+  if(await sha(JSON.stringify(record))!==spec.digest)fail('SGPC Rehras original full candidate digest changed');
+  const unique=new Set();
+  for(const section of record.sections){
+   if(section.humanTextApproved!==false||section.rightsApproved!==false||section.variationReviewPending!==true)fail('Unapproved SGPC source falsely promoted');
+   for(const u of section.units)for(const l of u.lines){
+    if(unique.has(l.id)||l.sourceFamily!==section.sourceFamily||await sha(l.text)!==l.sha256)fail('SGPC original mixed-source identity or SHA mismatch');
+    unique.add(l.id);
+    if(l.sourceFamily==='dasam'&&(l.location.system!=='dasam_section'||Object.hasOwn(l.location,'ang')))fail('Dasam text claims invented SGGS Ang');
+    if(l.sourceFamily==='sggs'&&!['ang','sggs_rehras_section'].includes(l.location.system))fail('SGGS source locator scheme unexpected');
+   }
+  }
+  return allLines;
+ }
  if(record.compositionId!==spec.compositionId||record.units?.length!==spec.units)fail('Unexpected source identity');
  if(record.edition?.sourceFamily!==spec.sourceFamily||record.edition?.humanCollationApproved!==false)fail('Source review identity mismatch');
  if(record.ui?.readable!==false||record.ui?.meaningReviewStatus!=='not_ingested'||record.ui?.studyReviewStatus!=='not_ingested')fail('This source fixture must remain UNAPPROVED');
@@ -96,13 +122,13 @@ function createWords(line){
 function build(record){
  const parent=$('composition-original'),preface=$('original-preface');
  const fragment=document.createDocumentFragment();
- for(const [i,u] of record.units.entries()){
+ for(const [i,u] of (record.units||record.sections?.flatMap(s=>s.units)||[]).entries()){
   // Long Jaap (199 chhands) displays one checked unit at a time; no 782-line DOM.
-  if((sourceKey==='jaap'||sourceKey==='anand')&&i!==unitIndex)continue;
+  if((sourceKey==='jaap'||sourceKey==='anand'||sourceKey==='rehras')&&i!==unitIndex)continue;
   const section=document.createElement('section');
   section.className='qa-unit';section.id='qa-unit-'+i;section.dataset.unitId=u.unitId;
   const title=document.createElement('h2');
-  title.textContent=(record.compositionId==='kirtan-sohila'?'Shabad ':record.compositionId==='tav-prasad-savaiye'?'Savaiya ':record.compositionId==='jaap-sahib'?'Jaap Chhand ':record.compositionId==='anand-sahib'?'Anand Pauri ':'Rehras Chaupai Pauri ')+(i+1)+' · DIGITAL SOURCE CANDIDATE';
+  title.textContent=(record.compositionId==='sodar-rehras-sgpc-digital-candidate'?u.title+' · '+u.sourceFamily:(record.compositionId==='kirtan-sohila'?'Shabad ':record.compositionId==='tav-prasad-savaiye'?'Savaiya ':record.compositionId==='jaap-sahib'?'Jaap Chhand ':record.compositionId==='anand-sahib'?'Anand Pauri ':'Rehras Chaupai Pauri ')+(i+1))+' · DIGITAL SOURCE CANDIDATE';
   section.append(title);
   if(sourceKey==='jaap')for(const h of u.metricalHeadingsDigitalCandidates||[]){const marker=document.createElement('p');marker.className='qa-meter';marker.lang='pa';marker.dataset.sourceSha256=h.sha256;marker.textContent=h.text;section.append(marker);}
   for(const l of u.lines)section.append(createWords(l));
@@ -121,7 +147,7 @@ function build(record){
 function updateLocation(){
  const current=model.lines[position.index];
  if(!current)return;
- $('qa-location').textContent=(sourceKey==='sohila'?'Shabad ':sourceKey==='savaiye'?'Savaiya ':sourceKey==='jaap'?'Jaap Chhand ':sourceKey==='anand'?'Anand Pauri ':'Rehras Chaupai Pauri ')+(current.unitIndex+1)+' · line '+(current.lineIndex+1);
+ $('qa-location').textContent=(sourceKey==='sohila'?'Shabad ':sourceKey==='savaiye'?'Savaiya ':sourceKey==='jaap'?'Jaap Chhand ':sourceKey==='anand'?'Anand Pauri ':sourceKey==='rehras'?'Rehras section ':'Rehras Chaupai Pauri ')+(current.unitIndex+1)+' · line '+(current.lineIndex+1);
  $('qa-unit-picker').value=String(current.unitIndex);
  $('qa-previous').disabled=current.unitIndex===0;
  $('qa-next').disabled=current.unitIndex===units.length-1;
@@ -143,7 +169,7 @@ function goToUnit(i){
  pause();
  unitIndex=Math.max(0,Math.min(units.length-1,i));
  position={index:model.starts[unitIndex],token:0};
- if(sourceKey==='jaap'||sourceKey==='anand')build(activeRecord);
+ if(sourceKey==='jaap'||sourceKey==='anand'||sourceKey==='rehras')build(activeRecord);
  mark();
  $('qa-unit-'+unitIndex).scrollIntoView({behavior:'instant',block:'start'});
  status('Unreviewed source · '+$('qa-location').textContent+'. '+securityMsg);
@@ -160,7 +186,7 @@ function step(){
   return false;
  }
  position={index:next.index,token:next.token};
- if((sourceKey==='jaap'||sourceKey==='anand')&&model.lines[position.index].unitIndex!==unitIndex)build(activeRecord);
+ if((sourceKey==='jaap'||sourceKey==='anand'||sourceKey==='rehras')&&model.lines[position.index].unitIndex!==unitIndex)build(activeRecord);
  const current=mark();
  if(next.newLine&&current)current.scrollIntoView({behavior:'instant',block:'center'});
  return true;
@@ -183,7 +209,7 @@ async function load(key){
  if(!response.ok)fail('Frozen source candidate unavailable');
  const record=await response.json();
  await verifyRecord(record,SOURCES[key]);
- units=record.units.map(u=>({
+ units=(record.units||record.sections?.flatMap(s=>s.units)||[]).map(u=>({
   id:u.unitId,title:u.title,lines:u.lines.map(l=>({
    id:l.id,text:l.text,sha256:l.sha256,
    ang:l.location.system==='ang'?l.location.ang:null
@@ -192,7 +218,7 @@ async function load(key){
  model=C.flatten(units);
  if(model.lines.length!==SOURCES[key].lines)fail('Continuous-core original count mismatch');
  const choices=document.createDocumentFragment();
- units.forEach((u,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=(sourceKey==='jaap'?'Chhand ':sourceKey==='sohila'?'Shabad ':sourceKey==='savaiye'?'Savaiya ':sourceKey==='jaap'?'Chhand ':'Pauri ')+(i+1);choices.append(o);});
+ units.forEach((u,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=(sourceKey==='jaap'?'Chhand ':sourceKey==='sohila'?'Shabad ':sourceKey==='savaiye'?'Savaiya ':sourceKey==='jaap'?'Chhand ':sourceKey==='rehras'?'Section ':'Pauri ')+(i+1);choices.append(o);});
  $('qa-unit-picker').replaceChildren(choices);
  unitIndex=0;activeRecord=record;
  build(record);position={index:0,token:0};readerReady=true;
@@ -205,6 +231,7 @@ $('load-savaiye').addEventListener('click',()=>load('savaiye').catch(e=>status('
 $('load-chaupai').addEventListener('click',()=>load('chaupai').catch(e=>status('SOURCE BLOCKED: '+e.message)));
 $('load-jaap').addEventListener('click',()=>load('jaap').catch(e=>status('SOURCE BLOCKED: '+e.message)));
 $('load-anand').addEventListener('click',()=>load('anand').catch(e=>status('SOURCE BLOCKED: '+e.message)));
+$('load-rehras').addEventListener('click',()=>load('rehras').catch(e=>status('SOURCE BLOCKED: '+e.message)));
 $('qa-previous').addEventListener('click',()=>goToUnit(unitIndex-1));
 $('qa-next').addEventListener('click',()=>goToUnit(unitIndex+1));
 $('qa-unit-picker').addEventListener('change',e=>{const i=Number(e.target.value);if(Number.isInteger(i)&&i>=0&&i<units.length)goToUnit(i);});
