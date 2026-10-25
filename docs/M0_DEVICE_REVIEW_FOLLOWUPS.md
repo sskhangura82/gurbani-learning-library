@@ -10,3 +10,7 @@ All rows are **NOT RUN**. Supplement the exact PR #10 physical checklist using a
 | D2 residual | Verify the clipped qualified-review banner is discoverable with VoiceOver and that meaning-button accessible names provide adequate context; inspect repeated draft-hint legibility and contrast with 60px scripture and system text scaling | NOT RUN |
 
 No qualified accessibility or religious review is claimed. Preserve synthetic learning backup and record failures before any release decision.
+
+## Automated browser preflight, distinct from physical acceptance
+
+On 24 October 2026 Pacific, the Serenity child PR introduced adjacent Previous/Next passage controls in the existing Jump dialog, a current-passage marker, improved draft-meaning accessible names, and a polite location announcement. An isolated Mac Chrome test passed 14 checks using the actual accessibility tree for the name, keyboard/Escape focus restoration, reduced-motion stylesheet behavior and 320px layout. **These tests do not close any D5/D6/D10 or D2-residual rows above**; qualified human accessibility checks and native iPhone VoiceOver remain NOT RUN. Evidence: `tests/serenity-a11y-browser.mjs`, `evidence/serenity-a11y-qa.json`, `evidence/serenity-a11y-jump-320.png`. Preserve all original text and real family reading data.

@@ -19,7 +19,8 @@ try{
  ({sessionId:session}=await send('Target.attachToTarget',{targetId,flatten:true}));
  await send('Page.enable',{},session);await send('Runtime.enable',{},session);
  await width(390,844);
- const v=await send('Page.navigate',{url:'http://127.0.0.1:8894/full-japji.html'},session);ok('Real local HTML navigation',!v.errorText);await ready();
+ const qaPort=Number(process.env.GLP_SERENITY_QA_PORT||8894);if(![8894,8969].includes(qaPort))throw Error('Serenity smoke QA must use approved loopback port');
+ const v=await send('Page.navigate',{url:'http://127.0.0.1:'+qaPort+'/full-japji.html'},session);ok('Real local HTML navigation',!v.errorText);await ready();
  ok('385 source lines preserved',await run('JSON.stringify([...document.querySelectorAll(".tuk")].map(x=>x.textContent))===JSON.stringify(GLP_FULL_JAPJI.units.flatMap(u=>u.lines.map(l=>l.text)))'));
  ok('385 meanings and 42 units remain mounted',await run('GLP_CONTINUOUS_DEBUG.explanationCount===385&&GLP_CONTINUOUS_DEBUG.units===42'));
  for(const [w,h] of [[320,740],[390,844]]){

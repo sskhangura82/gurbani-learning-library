@@ -1,16 +1,16 @@
 {
   "scenario": "PR18 serenity actual Chrome R7→M0→R7→M0, versioned cache, explicit activation, synthetic learning, origin 503",
-  "at": "2026-10-25T03:52:34.155Z",
+  "at": "2026-10-25T06:23:14.920Z",
   "status": "PASS",
   "checks": [
     {
       "name": "Real Chrome isolated loopback available",
       "status": "PASS",
       "data": {
-        "base": "http://127.0.0.1:8937",
+        "base": "http://127.0.0.1:8970",
         "profile": "disposable"
       },
-      "at": "2026-10-25T03:52:22.873Z"
+      "at": "2026-10-25T06:23:03.671Z"
     },
     {
       "name": "Real browser at 01-r7",
@@ -27,12 +27,12 @@
         },
         "css": {
           "versions": [
-            "glp-static:http://127.0.0.1:8937/:qa-m0-01-r7-20261025T035023231173Z"
+            "glp-static:http://127.0.0.1:8970/:qa-m0-01-r7-20261025T062303222262Z"
           ],
           "hasCSS": false
         }
       },
-      "at": "2026-10-25T03:52:23.835Z"
+      "at": "2026-10-25T06:23:04.604Z"
     },
     {
       "name": "Update waited for explicit user action 02-m0",
@@ -40,7 +40,7 @@
       "data": {
         "oldReader": "0.9-japji-v1-r7"
       },
-      "at": "2026-10-25T03:52:24.943Z"
+      "at": "2026-10-25T06:23:05.709Z"
     },
     {
       "name": "Real browser at 02-m0",
@@ -57,12 +57,12 @@
         },
         "css": {
           "versions": [
-            "glp-static:http://127.0.0.1:8937/:qa-m0-02-m0-20261025T035023231173Z"
+            "glp-static:http://127.0.0.1:8970/:qa-m0-02-m0-20261025T062303222262Z"
           ],
           "hasCSS": true
         }
       },
-      "at": "2026-10-25T03:52:27.146Z"
+      "at": "2026-10-25T06:23:07.915Z"
     },
     {
       "name": "Update waited for explicit user action 03-r7-rollback",
@@ -70,7 +70,7 @@
       "data": {
         "oldReader": "0.9-japji-v1-m0-candidate-2"
       },
-      "at": "2026-10-25T03:52:27.700Z"
+      "at": "2026-10-25T06:23:08.469Z"
     },
     {
       "name": "Real browser at 03-r7-rollback",
@@ -87,12 +87,12 @@
         },
         "css": {
           "versions": [
-            "glp-static:http://127.0.0.1:8937/:qa-m0-03-r7-rollback-20261025T035023231173Z"
+            "glp-static:http://127.0.0.1:8970/:qa-m0-03-r7-rollback-20261025T062303222262Z"
           ],
           "hasCSS": false
         }
       },
-      "at": "2026-10-25T03:52:29.912Z"
+      "at": "2026-10-25T06:23:10.679Z"
     },
     {
       "name": "Update waited for explicit user action 04-m0-repeat",
@@ -100,7 +100,7 @@
       "data": {
         "oldReader": "0.9-japji-v1-r7"
       },
-      "at": "2026-10-25T03:52:30.464Z"
+      "at": "2026-10-25T06:23:11.232Z"
     },
     {
       "name": "Real browser at 04-m0-repeat",
@@ -117,12 +117,12 @@
         },
         "css": {
           "versions": [
-            "glp-static:http://127.0.0.1:8937/:qa-m0-04-m0-repeat-20261025T035023231173Z"
+            "glp-static:http://127.0.0.1:8970/:qa-m0-04-m0-repeat-20261025T062303222262Z"
           ],
           "hasCSS": true
         }
       },
-      "at": "2026-10-25T03:52:32.674Z"
+      "at": "2026-10-25T06:23:13.440Z"
     },
     {
       "name": "CSS and scripture survive simulated 503 with saved learning",
@@ -137,7 +137,7 @@
           "dockHeight": "52px"
         }
       },
-      "at": "2026-10-25T03:52:34.152Z"
+      "at": "2026-10-25T06:23:14.918Z"
     },
     {
       "name": "No fixture FAIL results",
@@ -145,7 +145,7 @@
       "data": {
         "checks": 15
       },
-      "at": "2026-10-25T03:52:34.154Z"
+      "at": "2026-10-25T06:23:14.919Z"
     }
   ],
   "errors": [],

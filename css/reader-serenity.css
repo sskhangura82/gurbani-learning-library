@@ -105,3 +105,9 @@ body.roomy-spacing[data-depth="understand"] .scripture-line + .scripture-line { 
     white-space: nowrap;
   }
 }
+
+/* Passage navigation: one step at a time without tabbing through 42 jump targets. */
+.jump-adjacent{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin:14px 0 20px}
+.jump-adjacent button{width:100%;min-height:44px;padding:9px 12px;text-align:center;font-size:14px}
+.jump-adjacent button:disabled{opacity:.48;cursor:default}
+.menu-list [aria-current="location"]{border-color:var(--accent);box-shadow:inset 3px 0 var(--accent)}
