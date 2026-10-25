@@ -1,0 +1,30 @@
+name: GLP Mind Draft QA - no deployment
+on:
+  push:
+    branches:
+      - feature/glp-mind-gurbani-first-preview-20261024
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Source, room, and saved learning contracts
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/nitnem-mind-contract.mjs
+      - name: Hash-checked candidate offline shell
+        run: |
+          node tests/service-worker.mjs
+          node tests/mind-precache-contract.mjs
+      - name: Reproducible unique review worker
+        run: |
+          node tests/build-sw.mjs 0.9-japji-v1-mind-serenity-review-1
+          git diff --exit-code -- sw.js
