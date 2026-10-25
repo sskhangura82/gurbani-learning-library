@@ -1,0 +1,32 @@
+{
+  "project": "GLP-001",
+  "subject": "PSY-CONTENT",
+  "baseSHA": "254f3871b785b756208379138dcc17472a3733ff",
+  "checkedAt": "2026-10-25T01:04:46.629251+00:00",
+  "result": "EDITORIAL_DRAFT_TESTED_NOT_APPROVED",
+  "topics": 4,
+  "bilingualStoryboards": 2,
+  "beatsPerStoryboard": 10,
+  "sourceBoundQuotes": 7,
+  "externalGurbaniCandidatesNotIngested": 2,
+  "psychologyEvidencePointers": 7,
+  "tests": 13,
+  "failingTests": 0,
+  "existingR7Contract": "PASS",
+  "runtimeModified": false,
+  "newUIOrAccounts": false,
+  "publication": "NO",
+  "review": {
+    "SikhPunjabi": "PENDING",
+    "psychologyEvidence": "PENDING",
+    "founderProductAcceptance": "NOT_REQUESTED"
+  },
+  "caveats": [
+    "Proposal derived from Claude blueprint, not externally reviewed clinical or religious education",
+    "Authoritative Gurbani comes only from frozen original Japji corpus IDs and SHA",
+    "External Ang 1427 / 466 comparisons remain candidates with no displayable Gurmukhi until intake",
+    "Evidence pointers are NOT checked full exact excerpts or scholarly signoff",
+    "No practice or medical instructions authorized",
+    "Works independent of PR #12 runtime and preserves original Site release"
+  ]
+}
