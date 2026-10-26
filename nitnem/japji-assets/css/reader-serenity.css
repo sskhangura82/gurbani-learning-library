@@ -1,0 +1,113 @@
+/* GLP-001 M0 successor: phone-first serene reading rhythm.
+   Review-only overlay; source/scripture/learning JS remain unmodified.
+   Compact, focused defaults. Large-text and roomier settings remain available. */
+
+@media (max-width:719px) {
+  /* A threshold, not an oversized cover page. */
+  .page-header {
+    padding: 5px 14px 0;
+    min-height: 45px;
+  }
+  .page-header .brand {
+    font-size: 9px;
+    letter-spacing: 1.45px;
+  }
+  .page-header .brand span { font-size: 7px; }
+  .page-header #explore { min-width: 60px; min-height: 44px; font-size: 11px; }
+
+  main { padding: 0 15px calc(94px + env(safe-area-inset-bottom)); }
+  .intro { padding: 0 0 4px; }
+  .intro .eyebrow,
+  .intro > p:last-child { display: none; }
+  .intro h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: clamp(19px, 6.2vw, 25px);
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+  }
+  .intro h1 span {
+    display: inline-block;
+    margin: 0;
+    font-size: clamp(19px, 5.8vw, 24px);
+    line-height: 1.7;
+  }
+
+  /* Continuous reading must not look like 42 isolated cards. */
+  .passage { margin-top: 12px; }
+  .passage:first-child { margin-top: 5px; }
+  .scripture-line + .scripture-line { margin-top: 4px; }
+  .tuk { padding: 0 3px; line-height: 1.78; }
+  .tuk.mool-mantar { font-weight: 540; }
+  body[data-depth="understand"] .scripture-line + .scripture-line { margin-top: 10px; }
+  .simple-meaning {
+    padding: 0 5px 2px;
+    border-radius: 6px;
+    line-height: 1.55;
+  }
+  .simple-meaning .english { line-height: 1.55; }
+  .simple-meaning .punjabi { line-height: 1.65; margin-top: 2px; }
+  .simple-meaning .expand-hint { margin-top: 2px; }
+  body[data-depth="study"] .scripture-line + .scripture-line { margin-top: 13px; }
+  body[data-depth="study"] .passage { margin-top: 20px; }
+
+  /* One low visual-weight control strip, accessible sizes unchanged. */
+  .reading-dock,
+  body.quiet-reading .reading-dock {
+    padding: 3px 5px calc(3px + env(safe-area-inset-bottom));
+    gap: 3px;
+    border-radius: 10px;
+    box-shadow: 0 -2px 15px rgba(0,0,0,.035);
+  }
+  .reading-dock > button {
+    min-width: 44px; min-height: 44px; height: 44px;
+    border-radius: 7px;
+  }
+  .reading-dock .modes button {
+    min-width: 44px; min-height: 44px; height: 44px;
+    border-radius: 7px;
+  }
+  #dock-position span { font-size: 11px; font-weight: 600; }
+  #dock-position small { font-size: 9px; }
+  .reading-dock .modes button:not([aria-pressed="true"]) { opacity: .82; }
+}
+@media (max-width:350px) {
+  main { padding-inline: 9px; }
+  .intro h1 { font-size: 20px; gap: 7px; }
+  .intro h1 span { font-size: 19px; }
+  .tuk { padding-inline: 0; }
+  .reading-dock, body.quiet-reading .reading-dock { left: 4px; right: 4px; padding-inline: 3px; gap: 2px; }
+}
+
+/* Restore the optional spacious presentation without touching the default. */
+body.roomy-spacing .passage { margin-top: 38px; }
+body.roomy-spacing .scripture-line + .scripture-line { margin-top: 12px; }
+body.roomy-spacing .tuk { line-height: 2.05; }
+body.roomy-spacing[data-depth="understand"] .scripture-line + .scripture-line { margin-top: 19px; }
+
+/* Never sacrifice readable matras, visible focus or reduced motion. */
+@media (prefers-reduced-motion:reduce) {
+  .g-word, .tuk, .reading-dock { transition: none!important; animation: none!important; }
+}
+
+/* The global editorial notice remains available to assistive technology;
+   every meaning already has its own visible 'Draft' status. */
+@media (max-width:719px) {
+  .coverage-note:not([hidden]) {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: 0; border: 0;
+    overflow: hidden; clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Passage navigation: one step at a time without tabbing through 42 jump targets. */
+.jump-adjacent{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin:14px 0 20px}
+.jump-adjacent button{width:100%;min-height:44px;padding:9px 12px;text-align:center;font-size:14px}
+.jump-adjacent button:disabled{opacity:.48;cursor:default}
+.menu-list [aria-current="location"]{border-color:var(--accent);box-shadow:inset 3px 0 var(--accent)}

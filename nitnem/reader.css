@@ -57,3 +57,87 @@ body[data-view=continuous] .between-units{margin-top:10px}
 .next-lesson[hidden]{display:none}
 body[data-mode=meaning] .unit-learning,body[data-mode=study] .unit-learning{scroll-margin-bottom:95px}
 @media(max-width:420px){.learning-article,.unit-learning{padding:12px}.learn-body[lang=pa]{font-size:17px}.learn-topic{font-size:21px}.learn-words{grid-template-columns:105px 1fr}.unit-learning .learn-heading{font-size:19px}}
+
+/* JAPJI SAHIB FORMAT PARITY — source-reading typography and learning depth.
+ * Faithfully reuse the approved Japji layout semantics without importing its
+ * page-wide selectors or changing any original Gurmukhi bytes.
+ */
+:root{--gurmukhi-size:30px}
+.reader{max-width:760px}
+.reader-heading{padding:22px 4px 16px}
+.reader-heading h1{font:normal clamp(34px,8vw,48px)/1.35 Georgia,serif;margin:4px 0}
+.reader-heading h1 #bani-title-pa{display:block;font:normal 25px/1.65 "Gurmukhi MN","Noto Serif Gurmukhi",serif}
+.reader-heading .reader-subtitle{font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--muted)}
+.source-unit{padding:0;margin:0}
+.passage-block{padding:0 0 8px;margin:38px 0 0;border-bottom:0}
+.passage-block .unit-heading{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;margin:-1px;padding:0}
+body[data-mode=study] .passage-block .unit-heading{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;font-size:11px;font-weight:550;letter-spacing:1px;text-transform:none;text-align:left;color:var(--muted);margin:8px 0 15px;padding:0}
+.scripture-line{padding:0;margin:0;scroll-margin-top:14px;scroll-margin-bottom:88px}
+.scripture-line+.scripture-line{margin-top:9px}
+body[data-mode=meaning] .scripture-line+.scripture-line,body[data-mode=study] .scripture-line+.scripture-line{margin-top:19px}
+.tuk{font:400 var(--gurmukhi-size)/1.9 'Gurmukhi MN','Noto Serif Gurmukhi','Raavi',serif;text-align:center;padding:0 7px;border:0;border-radius:0;background:none!important;overflow-wrap:anywhere;color:var(--ink)}
+.tuk-ending{display:inline-block;max-width:100%;white-space:normal;vertical-align:bottom}
+.g-word[data-active=true]{background:transparent;box-shadow:none;color:var(--accent);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.scripture-line[aria-current=location] .tuk{border-left:2px solid var(--accent);padding-left:5px}
+.simple-meaning{width:100%;display:block;text-align:center;border:0;background:transparent;border-radius:0;padding:5px 7px 8px;max-width:650px;margin:auto;color:var(--muted);line-height:1.8;cursor:pointer}
+.simple-meaning:hover,.simple-meaning:focus-visible{background:var(--accent-light)}
+.simple-meaning span{display:block}
+.simple-meaning .english{font:14px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.simple-meaning .punjabi{font:normal 16px/1.9 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif;margin-top:5px}
+.simple-meaning .expand-hint{font-size:10px;color:var(--accent);margin-top:5px}
+.passage-summary{max-width:650px;margin:12px auto 22px;padding:10px 7px 14px;border-top:1px solid var(--line);text-align:center;color:var(--muted)}
+.passage-summary .meaning-label{font-size:11px;color:var(--muted);margin:7px 0}
+.passage-summary>p:not(.draft-label):not(.meaning-label){font-size:14px;line-height:1.8;margin:8px 0}
+.passage-summary>p[lang=pa]{font:normal 16px/1.9 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif}
+.passage-summary .passage-explore{border:0;background:none;color:var(--accent);min-height:44px;padding:6px 14px;font-size:11px;border-radius:8px}
+.unit-lesson{background:var(--raised);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0 30px;overflow-wrap:anywhere}
+.unit-lesson h3{font:22px/1.35 Georgia,serif;margin:8px 0 14px}
+.unit-lesson h4{font-size:14px;line-height:1.5;margin:25px 0 8px}
+.unit-lesson p{font-size:14px;line-height:1.95;margin:0 0 14px}
+.unit-lesson .punjabi-text,.learning-article .punjabi-text{font:normal 17px/1.9 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif}
+.unit-lesson dt,.learning-article dt{font:normal 20px/1.9 'Gurmukhi MN',serif}
+.unit-lesson dd,.learning-article dd{margin:0 0 14px;color:var(--muted);font-size:13px}
+.unit-lesson .application{border-left:3px solid var(--accent);padding-left:14px}
+.unit-lesson details{margin:25px 0}
+.unit-lesson summary{cursor:pointer;min-height:44px;padding:9px 0}
+.draft-label{font-size:10px!important;color:var(--muted);letter-spacing:.8px;line-height:1.6!important}
+.pending-meaning{font-size:11px!important;line-height:1.75!important;color:var(--muted);margin:6px 0 13px!important}
+.learning-disclosure{max-width:760px;border:1px solid var(--line);border-radius:9px;background:var(--raised);overflow:hidden}
+.learning-disclosure summary{cursor:pointer;min-height:44px;padding:10px 14px;font-size:12px;line-height:1.6;color:var(--muted);background:var(--raised)}
+.learning-disclosure[open] summary{border-bottom:1px solid var(--line)}
+.learning-disclosure .learning-article{padding:16px 18px;border:0;border-radius:0}
+.learning-article h3{font:22px/1.35 Georgia,serif}
+.learning-article h4{font-size:14px;margin:22px 0 8px}
+.learning-article p{font-size:14px;line-height:1.9}
+.learning-article .application{border-left:3px solid var(--accent);padding-left:14px}
+.line-detail .excerpt{font:normal 25px/2 'Gurmukhi MN','Noto Serif Gurmukhi',serif;margin:0 0 18px;text-align:center;white-space:pre-wrap}
+.line-detail .simple-dialog{font-size:14px;color:var(--muted);line-height:1.85;text-align:center}
+.line-detail .simple-dialog .punjabi-text{font:normal 17px/1.9 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif}
+.line-detail h4{font-size:14px;margin:20px 0 8px}
+.line-detail p{line-height:1.85}
+.line-detail .unit-lesson{margin:20px 0}
+#meaning-dialog{border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:0;border-radius:14px;max-height:88dvh;width:min(620px,calc(100% - 24px));max-width:620px;overflow-y:auto}
+#meaning-dialog .dialog-heading{padding:14px 19px;position:sticky;top:0;background:var(--paper);z-index:2}
+#meaning-dialog .dialog-heading h2{font:22px/1.35 Georgia,serif;margin:0}
+.meaning-dialog-body{padding:17px 20px 25px}
+.source-hash{overflow-wrap:anywhere;word-break:break-word;font:11px/1.6 ui-monospace,monospace}
+.reader .review-mode{padding:7px 9px;border-left:0;border-bottom:1px solid var(--line);background:transparent;color:var(--muted)}
+/* Same six-target, calm bottom dock as Japji Sahib, rather than a large pill. */
+.dock,.dock.reading-dock{display:flex;align-items:center;gap:4px;max-width:560px;left:8px;right:8px;bottom:8px;width:auto;padding:4px 4px calc(4px + env(safe-area-inset-bottom));border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 14px #00000008;min-height:0}
+.dock[hidden]{display:none!important}
+.dock>button{flex:0 0 44px;width:44px;min-width:44px;min-height:44px;height:44px;padding:0;border:0;border-radius:8px;font-size:18px;background:transparent}
+.dock .primary{background:var(--accent);color:var(--paper)}
+.dock .position{display:flex;flex:1 1 44px;min-width:44px;width:auto;align-items:flex-start;text-align:left;padding:2px 4px;background:transparent;border:0}
+.dock .position span,.dock .position small{display:block;overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap;text-align:left;font-size:11px}
+.dock .position small{color:var(--muted);font-size:10px}
+.dock .modes{display:flex;flex:0 0 132px;max-width:none;margin:0;border:0;border-radius:0;background:transparent;overflow:visible;gap:0}
+.dock .modes button{flex:0 0 44px;width:44px;min-width:44px;min-height:44px;height:44px;border:0;border-radius:8px;font-size:11px;line-height:1.3;padding:2px 0;background:transparent;color:var(--muted)}
+.dock .modes button span{display:block;font:10px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;opacity:.4}
+.dock .modes button[aria-pressed=true]{background:var(--accent-light);color:var(--ink);font-weight:650}
+.dock .modes button[aria-pressed=true] span{opacity:1;color:var(--accent)}
+.dock #reading-tools{letter-spacing:0;font-size:23px}
+@media(max-width:380px){.dock{gap:3px;padding:4px 4px calc(4px + env(safe-area-inset-bottom))}.dock .modes{flex:0 0 132px}.dock .position{min-width:44px}.reader-heading h1{font-size:34px}.unit-lesson{padding:15px}.meaning-dialog-body{padding:15px}}
+@media(prefers-reduced-motion:reduce){.g-word{transition:none!important}.g-word[data-active=true]{text-shadow:none!important;text-decoration:underline}}
+
+/* Programmatically focused dialog title is a reading landmark, not a control. */
+#meaning-dialog-title:focus{outline:none}

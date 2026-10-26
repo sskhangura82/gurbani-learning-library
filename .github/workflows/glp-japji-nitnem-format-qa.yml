@@ -1,0 +1,73 @@
+name: GLP Japji-Matched Full Nitnem Format and Visual Pace 200 (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-japji-format-parity-pace-200-20261025
+permissions:
+  contents: read
+jobs:
+  source-teaching-ui-parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Pin the unchanged original Gurmukhi source and editor status
+        uses: actions/checkout@v4
+        with:
+          repository: sskhangura82/gurbani-learning-library
+          ref: 373ccc34f4a1c0ccb6ce36654bf6e9574087200f
+          path: pinned-original-source
+          persist-credentials: false
+      - name: Verify immutable SGGS/Dasam originals and source-anchored bilingual drafts
+        run: |
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-source --output nitnem/data --verify
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-source --output nitnem/data
+          git diff --exit-code -- nitnem/data
+          node tools/nitnem/build-learning-pack.mjs
+          git diff --exit-code -- nitnem/learning/course.v1.json
+          node tests/nitnem-teaching-contract.mjs
+          node tests/nitnem-internal-source-contract.mjs
+          node tests/glp-trust-contract.mjs
+      - name: Recreate the exact original Japji sources and visual-pace-200 private overlay
+        run: |
+          python3 tools/nitnem/build-japji-parity.py
+          git diff --exit-code -- nitnem/japji.html nitnem/japji-assets
+          node tests/glp-japji-parity-contract.mjs
+          node --check nitnem/reader.js
+          node --check nitnem/learning/learning-ui.js
+          node --check nitnem/japji-assets/js/japji-full.js
+      - name: Keep the original 385-line Japji and prior root saved-learning features green
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: New offline shell precaches 29 reviewed app assets, not the root Japji worker
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/glp-japji-parity-contract.mjs
+          node tests/nitnem-internal-source-contract.mjs
+      - name: Immutable versioned 30-asset source and reading-mode build
+        run: |
+          python3 tools/nitnem/build-japji-format-reader.py --output "${{ runner.temp }}/glp-japji-parity"
+          python3 tools/nitnem/build-japji-format-reader.py --output "${{ runner.temp }}/glp-japji-parity" --verify
+      - name: Signed private-gateway and intentional source-tampering defenses
+        run: |
+          python3 -c 'import ast; [ast.parse(open(p).read()) for p in ["tools/nitnem/build-japji-parity.py","tools/nitnem/build-japji-format-reader.py","tests/serve-gated-japji-format-nitnem.py","tests/glp-japji-format-gate-contract.py"]]'
+          python3 tests/glp-japji-format-gate-contract.py
+      - name: Chrome test scripts syntax, no public merge, no client or script redeploy
+        run: |
+          node --check tests/nitnem-format-parity-browser.mjs
+          node --check tests/nitnem-format-parity-gated-browser.mjs
+          git diff --exit-code -- full-japji.html sw.js js/japji-full-data.js js/japji-full.js js/continuous-core.js js/learning.js js/shared-learning.js index.html
+          ! grep -q 'nitnem-parity/' sw.js
+          test ! -d nitnem-parity
+          test ! -d nitnem-trust
+          test ! -d nitnem-learning
