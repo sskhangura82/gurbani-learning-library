@@ -148,7 +148,10 @@ function lineNote(course,bani,l){
  button.setAttribute('aria-label','Draft meaning for this line. Tap for more; qualified review pending.');
  const en=elt('span','english',e.simpleEn),pa=elt('span','punjabi',e.simplePa);
  pa.lang='pa';
- button.append(en,pa,elt('span','expand-hint','Draft meaning · tap to explore'));
+ const label=e.kind==='HEADING_OR_INVOCATION_CONTEXT'
+  ?'Heading / invocation · draft context · tap to explore'
+  :'Draft meaning · tap to explore';
+ button.append(en,pa,elt('span','expand-hint',label));
  return button;
 }
 function lineDetails(course,bani,line,unit){
