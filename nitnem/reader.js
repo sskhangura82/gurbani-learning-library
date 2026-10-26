@@ -11,7 +11,7 @@ const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
 const codec=new TextDecoder('utf-8',{fatal:true});
 const state={library:null,pack:null,model:null,units:[],bani:null,unit:0,index:0,token:0,playing:false,timeout:0,mode:'read',
- size:36,theme:'day',pace:70,view:'continuous',notes:{},bookmarks:[],currentKey:null,rev:0,sourceVerified:false,
+ size:30,theme:'day',pace:70,view:'continuous',notes:{},bookmarks:[],currentKey:null,rev:0,sourceVerified:false,
  learning:null,learningError:null};
 const sourceNotice='Digital original · private testing only. Independent scripture and rights review pending.';
 const lineNodes=new Map();let activeRow=null,activeWord=null,scrollTrackTimer=0,programmaticUntil=0;
@@ -113,9 +113,9 @@ function loadSaved(pack){
   if(acceptable.has(id)&&typeof value==='string')state.notes[id]=value.slice(0,12000);
  }
  state.bookmarks=Array.isArray(saved.bookmarks)?saved.bookmarks.filter(id=>acceptable.has(id)).slice(0,2000):[];
- state.size=Number.isInteger(saved.size)&&saved.size>=28&&saved.size<=60?saved.size:36;
+ state.size=Number.isInteger(saved.size)&&saved.size>=24&&saved.size<=60?saved.size:30;
  state.theme=['day','amrit'].includes(saved.theme)?saved.theme:'day';
- state.pace=Number.isInteger(saved.pace)&&saved.pace>=50&&saved.pace<=160?saved.pace:70;
+ state.pace=Number.isInteger(saved.pace)&&saved.pace>=50&&saved.pace<=200&&saved.pace%5===0?saved.pace:70;
  state.mode=['read','meaning','study'].includes(saved.mode)?saved.mode:'read';
  state.view=['continuous','passage'].includes(saved.view)?saved.view:'continuous';
  state.index=state.model.byId.has(saved.lineId)?state.model.byId.get(saved.lineId):0;
@@ -143,10 +143,11 @@ function toggleMode(mode){
  const pane=$('review-mode');
  pane.hidden=mode==='read';
  pane.textContent=mode==='meaning'
-  ?'SIMPLE MEANING · draft English and Punjabi educational paraphrases, NOT reviewed scripture translations. Unwritten lines stay visibly pending.'
+  ?'Short English and Punjabi meanings below authored lines. Tap for more. Passage summaries and incomplete coverage are identified separately.'
   :mode==='study'
-   ?'LEARN IN DEPTH · original beginner lessons, vocabulary, context and reflections; all are drafts awaiting qualified Sikh/Punjabi review.'
+   ?'Study · source-bound passage meaning, close sense, context, words and grammar, interpretation, reflection and teach-back. Draft, not reviewed santhiya.'
    :'';
+ if(mode==='study'&&state.playing)pause();
  if(state.sourceVerified){
   L.overview($('learning-overview'),state.learning,state.bani,mode);
   renderUnit();scrollToCurrent(false);
@@ -162,10 +163,24 @@ function applyStyle(){
 function words(line){
  const parts=state.model.lines[state.model.byId.get(line.id)].parts;
  const doc=document.createDocumentFragment();let token=0;
- for(const part of parts){
-  if(/^\s+$/u.test(part)){doc.append(document.createTextNode(part));continue;}
-  const word=document.createElement('span');word.className='g-word';word.textContent=part;
-  word.dataset.token=String(token++);doc.append(word);
+ // Match Japji's ending treatment: keep the final danda/numerals with the
+ // preceding word without changing a single original Gurmukhi character.
+ const words=parts.map((part,i)=>/^\s+$/u.test(part)?-1:i).filter(i=>i>=0);
+ const last=words.at(-1),join=words.length>1&&/^[॥।੦-੯0-9]+$/u.test(parts[last]);
+ const start=join?words.at(-2):-1;
+ let current=doc;
+ for(let i=0;i<parts.length;i++){
+  const part=parts[i];
+  if(i===start){
+   const together=document.createElement('span');together.className='tuk-ending';
+   doc.append(together);current=together;
+  }
+  if(/^\s+$/u.test(part))current.append(document.createTextNode(part));
+  else{
+   const word=document.createElement('span');word.className='g-word';
+   word.textContent=part;word.dataset.token=String(token++);current.append(word);
+  }
+  if(join&&i===last)current=doc;
  }
  return doc;
 }
@@ -386,8 +401,9 @@ function chooseBani(name){
   if(state.model.lines.length!==entry.lines)throw Error('Core original-source line count differs from signed manifest');
   loadSaved(pack);
   $('collection').hidden=true;$('reader').hidden=false;$('dock').hidden=false;$('library-back').hidden=false;
-  $('bani-title').textContent=pack.titleGurmukhi;
-  $('bani-subtitle').textContent=pack.title;
+  $('bani-title-en').textContent=pack.title;
+  $('bani-title-pa').textContent=pack.titleGurmukhi;
+  $('bani-subtitle').textContent=pack.unitCount+' passages · continuous reading · source review';
   $('bani-variant').textContent=pack.reference+' · '+pack.caveat;
   applyStyle();
   state.sourceVerified=true;
@@ -431,6 +447,44 @@ function openTools(){
  $('save-status').textContent='';
  modal('tools-dialog',$('reading-tools'));
 }
+let meaningFocusReturn=null;
+function openMeaningDetail(button){
+ if(!state.sourceVerified||!state.learning||!state.pack)return;
+ const body=$('meaning-dialog-body'),dlg=$('meaning-dialog');
+ let content=null,title='';
+ if(button.dataset.meaningLine){
+  const id=button.dataset.meaningLine,index=state.model.byId.get(id);
+  if(index===undefined)return;
+  const m=state.model.lines[index],source=state.pack.units[m.unitIndex].lines[m.lineIndex];
+  if(source.held||source.sha256!==m.sha256)return;
+  content=L.lineDetails(state.learning,state.bani,source,state.pack.units[m.unitIndex]);
+  title=state.pack.units[m.unitIndex].title+' · line '+(m.lineIndex+1);
+ }else if(button.dataset.detailUnit){
+  const u=state.pack.units.find(x=>x.id===button.dataset.detailUnit);
+  if(!u)return;
+  content=L.unitLesson(state.learning,state.bani,u,'study','passage');
+  title=u.title+' · meaning and study';
+ }
+ if(!content)return;
+ pause();
+ meaningFocusReturn=button;
+ $('meaning-dialog-title').textContent=title;
+ body.replaceChildren(content);
+ dlg.showModal();
+ $('meaning-dialog-title').focus({preventScroll:true});
+}
+$('source-unit').addEventListener('click',e=>{
+ const button=e.target.closest('button[data-meaning-line],button[data-detail-unit]');
+ if(!button||!$('source-unit').contains(button))return;
+ e.preventDefault();e.stopPropagation();
+ openMeaningDetail(button);
+});
+$('meaning-close').addEventListener('click',()=>$('meaning-dialog').close());
+$('meaning-dialog').addEventListener('close',()=>{
+ $('meaning-dialog-body').replaceChildren();
+ if(meaningFocusReturn?.isConnected)meaningFocusReturn.focus({preventScroll:true});
+ meaningFocusReturn=null;
+});
 function openJump(){
  if(!state.pack)return;
  const list=$('jump-list');list.replaceChildren();
@@ -462,7 +516,9 @@ async function importLearning(file){
  throw Error('This is not the matching private-review bani and edition.');
  const parsed=C.normalise({...incoming.state,read:{id:incoming.state.lineId,offset:0}},state.model,state.units);
  state.notes=parsed.notes;state.bookmarks=parsed.bookmarks;
- state.size=parsed.size;state.theme=parsed.theme;state.pace=parsed.pace;
+ state.size=parsed.size;state.theme=parsed.theme;
+ const rawPace=Number(incoming.state?.pace);
+ state.pace=Number.isInteger(rawPace)&&rawPace>=50&&rawPace<=200&&rawPace%5===0?rawPace:parsed.pace;
  state.mode=parsed.mode;state.view=['continuous','passage'].includes(incoming.state.view)?incoming.state.view:'continuous';state.index=state.model.byId.get(parsed.read.id)??0;state.unit=state.model.lines[state.index].unitIndex;
  applyStyle();state.sourceVerified=true;toggleMode(state.mode);renderUnit();scrollToCurrent(false);
  if(!save())throw Error('Browser rejected imported learning; do not close until exported');
@@ -515,7 +571,14 @@ document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',(
 $('play').addEventListener('click',toggleGuide);
 $('size').addEventListener('input',e=>{state.size=Number(e.target.value);applyStyle();save();});
 $('theme').addEventListener('change',e=>{state.theme=e.target.value;applyStyle();save();});
-$('pace').addEventListener('input',e=>{state.pace=Number(e.target.value);applyStyle();save();});
+function setVisualPace(value){
+ if(!Number.isFinite(value))return;
+ const next=Math.max(50,Math.min(200,Math.round(value/5)*5));
+ state.pace=next;applyStyle();save();
+ if(state.playing){clearTimeout(state.timeout);state.timeout=setTimeout(pulse,Math.round(60000/state.pace));}
+ announce('Silent visual guide: '+next+' illustrative tokens per minute. Not synchronized to audio.');
+}
+$('pace').addEventListener('input',e=>setVisualPace(Number(e.target.value)));
 $('bookmark').addEventListener('click',()=>{
  const id=currentLine().id;
  if(state.bookmarks.includes(id))state.bookmarks=state.bookmarks.filter(x=>x!==id);
@@ -538,7 +601,7 @@ window.addEventListener('storage',e=>{if(e.key===state.currentKey&&state.pack)an
 window.NITNEM_INTERNAL_QA=Object.freeze({
  getState:()=>({bani:state.bani,sourceVerified:state.sourceVerified,
   unitCount:state.units.length,lineCount:state.model?.lines.length||0,unit:state.unit,
-  index:state.index,token:state.token,playing:state.playing,mode:state.mode,
+  index:state.index,token:state.token,playing:state.playing,mode:state.mode,pace:state.pace,
   notes:Object.keys(state.notes).length,bookmarks:state.bookmarks.length,view:state.view,
   sourceApproved:false,translationApproved:false,releaseAuthorized:false,
   teachingAvailable:!!state.learning,

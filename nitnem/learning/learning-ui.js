@@ -1,119 +1,179 @@
-/* GLP-001 private learning draft renderer.
- * Text DOM nodes only: no HTML injection, no improvisation, no provider calls.
- * The original Gurmukhi comes only from immutable source packs, NEVER here.
+/* GLP-001 — Japji-format aligned teaching renderer.
+ * Canonical original Gurbani is NEVER sourced from this file.
+ * Bilingual line meaning directly under the exact occurrence, tap to explore.
+ * Unit-level summaries are explicitly distinguished from line translations.
+ * Study follows Japji's actual heading order; missing fields are disclosed,
+ * not invented. All text constructed with textContent, never untrusted HTML.
  */
 (()=>{
 'use strict';
-const elt=(name,cls,text)=>{
- const n=document.createElement(name);
+const elt=(tag,cls,value)=>{
+ const n=document.createElement(tag);
  if(cls)n.className=cls;
- if(text!==undefined)n.textContent=text;
+ if(value!==undefined)n.textContent=value;
  return n;
 };
-function para(label,text,lang){
- const box=elt('div','learn-paragraph');
- if(label)box.append(elt('p','learn-tag',label));
- const p=elt('p','learn-body',text);
- if(lang)p.lang=lang;
- box.append(p);return box;
+const appendText=(parent,tag,cls,value,lang)=>{
+ const el=elt(tag,cls,value);
+ if(lang)el.lang=lang;
+ parent.append(el);
+ return el;
+};
+function draft(label='ORIGINAL STUDY DRAFT · HUMAN REVIEW PENDING'){
+ return elt('p','draft-label',label);
 }
-function statusBadge(){
- const b=elt('span','learning-draft-label','EDUCATIONAL DRAFT · NOT SCHOLAR-REVIEWED');
- b.setAttribute('aria-label','This explanation has not been reviewed by a qualified Sikh or Punjabi scholar');
- return b;
+function paragraph(text,lang){
+ const p=elt('p',lang==='pa'?'punjabi-text':'',text);
+ if(lang)p.lang=lang;return p;
 }
-function noLesson(reason,summary=false){
- const card=elt('div','learning-not-written');
- card.append(elt('strong',null,summary?'Lesson outline pending':'Detailed explanation not written yet'));
- card.append(elt('p',null,reason));
- return card;
+function field(root,heading,text,lang){
+ root.append(elt('h4','',heading),paragraph(text,lang));
+}
+function pending(text){
+ const note=elt('p','pending-meaning',text);
+ note.setAttribute('role','note');
+ return note;
 }
 function coverageText(course,bani){
- const record=course.coverage.byBani[bani];
- return record.draftLessons+' of '+record.totalUnits+' passages drafted · '+record.firstLineNotes+' selective line notes · 0 scholar-reviewed';
+ const r=course?.coverage?.byBani?.[bani];
+ return r?r.draftLessons+' of '+r.totalUnits+' passages drafted · '+r.firstLineNotes+' selective line notes · 0 scholar-reviewed':'Learning is not yet verified.';
 }
 function overview(node,course,bani,mode){
  node.replaceChildren();node.hidden=mode==='read';
  if(mode==='read')return;
  if(!course||!course.banis?.[bani]){
-  node.append(noLesson('This original-source reader works, but its authored learning package is not yet available. No meanings have been invented.',true));
+  node.append(pending('Educational material unavailable. The original Gurmukhi remains readable; no translation has been generated.'));
   return;
  }
- const record=course.banis[bani],wrap=elt('article','learning-article');
- wrap.append(statusBadge());
- wrap.append(elt('p','learn-section-label',mode==='meaning'?'THE BANI IN SIMPLE WORDS':'UNDERSTANDING THE FULL BANI'));
- wrap.append(elt('h2','learn-topic',record.theme));
- wrap.append(para('Simple English',record.simpleEn,'en'));
- wrap.append(para('ਸੌਖੀ ਪੰਜਾਬੀ',record.simplePa,'pa'));
+ const r=course.banis[bani],rCount=course.coverage.byBani[bani];
+ const details=elt('details','learning-disclosure');
+ const summary=elt('summary','learning-summary','About this bani · '+rCount.draftLessons+' of '+rCount.totalUnits+' drafts');
+ const intro=elt('section','learning-article');
+ intro.append(draft('FULL LEARNING · ORIGINAL EDUCATIONAL DRAFT · HUMAN REVIEW PENDING'));
+ appendText(intro,'h3','learn-topic',r.theme);
+ field(intro,'Passage meaning · overview, not word-for-word translation',r.simpleEn,'en');
+ intro.append(paragraph(r.simplePa,'pa'));
  if(mode==='study'){
-  wrap.append(para('Study the whole bani',record.deeperEn,'en'));
-  const words=elt('dl','learn-words');
-  for(const pair of record.words){
-   const dt=elt('dt',null,pair[0]);dt.lang='pa';
-   words.append(dt,elt('dd',null,pair[1]));
+  field(intro,'Close sense',r.deeperEn,'en');
+  field(intro,'Place in this bani',r.theme,'en');
+  const vocab=elt('dl','learn-dl');
+  for(const [word,gloss] of r.words){
+   appendText(vocab,'dt','',word,'pa');
+   appendText(vocab,'dd','',gloss);
   }
-  const vocabulary=elt('section','learn-vocabulary');
-  vocabulary.append(elt('h3',null,'Key words · ਮੁੱਖ ਸ਼ਬਦ'),words);
-  wrap.append(vocabulary);
-  wrap.append(para('Interpretive care',record.caution));
-  wrap.append(para('Reflect',record.reflection));
-  wrap.append(para('Teach-back question',record.question));
+  intro.append(elt('h4','', 'Words & grammar · working glosses'),vocab);
+  intro.append(pending('Grammatical parsing and human-checked pronunciation are not yet written for every word.'));
+  field(intro,'Interpretation & open questions',r.caution);
+  const action=elt('section','application');
+  field(action,'Practical reflection · application, not translation',r.reflection);
+  field(action,'Teach it back',r.question);
+  intro.append(action);
  }
- wrap.append(elt('p','learn-coverage',coverageText(course,bani)));
- wrap.append(elt('p','learn-coverage-detail',
-  'The remaining passages are still being written. These are original educational paraphrases, not verified translations of every Gurbani line.'));
- node.append(wrap);
+ intro.append(elt('p','learn-coverage',coverageText(course,bani)));
+ intro.append(pending('Only authored passages display explanations. Original Gurbani remains complete and unchanged; full line-by-line educational coverage is still being written.'));
+ details.append(summary,intro);
+ node.append(details);
+}
+function noLesson(reason){
+ const box=elt('div','learning-not-written');
+ box.append(elt('strong','', 'Detailed explanation not written yet'));
+ box.append(elt('p','',reason));
+ return box;
+}
+function vocabList(study){
+ const dl=elt('dl','lesson-vocabulary');
+ for(const item of study.words){
+  appendText(dl,'dt','',item.gurmukhi,'pa');
+  appendText(dl,'dd','',item.workingGloss);
+ }
+ return dl;
+}
+function sourceDetails(course,bani,unit){
+ const lesson=course.unitLessons[bani+'|'+unit.id];
+ const details=elt('details','lesson-sources');
+ details.append(elt('summary','', 'Sources, passage anchors & review'));
+ appendText(details,'p','', 'Original source occurrence: '+lesson.sourceAnchor.id);
+ appendText(details,'p','source-hash', 'Source SHA-256: '+lesson.sourceAnchor.sha256);
+ appendText(details,'p','', 'The source edition and these explanations are still unapproved. The citations below are research starting points, not scholarly approval.');
+ const info=course.banis?.[bani];
+ for(const k of info?.sourceKeys||[]){
+  const src=course.meta.references.find(x=>x.key===k);
+  if(src)appendText(details,'p','source-reference',(src.title||src.key)+' · '+(src.scope||'source information'));
+ }
+ return details;
 }
 function unitLesson(course,bani,u,mode,view){
  if(mode==='read')return null;
- const draft=course?.unitLessons?.[bani+'|'+u.id];
- if(!draft){
-  if(view==='continuous')return null;
-  return noLesson('This passage has no finished bilingual draft. The Gurmukhi above remains unchanged; source-specific writing and human review are still pending.');
+ const e=course?.unitLessons?.[bani+'|'+u.id];
+ if(!e){
+  return view==='continuous'?null:noLesson('The original source is available, but this passage has no authored bilingual explanation. Qualified review is also pending.');
  }
- const card=elt('section','unit-learning');
+ if(mode==='meaning'){
+  const card=elt('section','passage-summary');
+  card.dataset.lessonUnit=u.id;
+  card.append(draft('PASSAGE SUMMARY · NOT THE MEANING OF A SINGLE LINE'));
+  card.append(elt('p','meaning-label','Passage meaning · summary, not word-for-word translation'));
+  card.append(paragraph(e.simple.en,'en'),paragraph(e.simple.pa,'pa'));
+  const more=elt('button','passage-explore','Explore deeper passage study');
+  more.type='button';more.dataset.detailUnit=u.id;
+  more.setAttribute('aria-label','Explore unreviewed detailed study for '+u.title);
+  card.append(more);
+  return card;
+ }
+ const card=elt('section','unit-lesson');
  card.dataset.lessonUnit=u.id;
- card.append(statusBadge());
- card.append(elt('h3','learn-heading',mode==='meaning'?'Simple explanation · ਸਰਲ ਅਰਥ':'Learning room · ਵਿਸਥਾਰ'));
- card.append(para('English · educational paraphrase',draft.simple.en,'en'));
- card.append(para('ਸੌਖੀ ਪੰਜਾਬੀ · ਸਮਝ',draft.simple.pa,'pa'));
- if(mode==='study'){
-  const study=draft.study;
-  card.append(para('Main idea',study.focus));
-  card.append(para('Close reading and context',study.closeReading));
-  const dl=elt('dl','learn-words');
-  for(const item of study.words){
-   const dt=elt('dt',null,item.gurmukhi);dt.lang='pa';
-   dl.append(dt,elt('dd',null,item.workingGloss));
-  }
-  const terms=elt('section','learn-vocabulary');
-  terms.append(elt('h4',null,'Vocabulary · working glosses'),dl);
-  card.append(terms);
-  card.append(para('Where interpretation needs care',study.interpretationCare));
-  card.append(para('Reflection · ਵਿਚਾਰ',study.reflection));
-  card.append(para('Explain it back in your own words',study.teachBack));
- }
+ card.append(draft());
+ card.append(elt('h3','',u.title+' · meaning and study'));
+ field(card,'Passage meaning · summary, not word-for-word translation',e.simple.en,'en');
+ card.append(paragraph(e.simple.pa,'pa'));
+ field(card,'Close sense',e.study.closeReading,'en');
+ card.append(pending('Extended Punjabi close-sense interpretation pending independent editorial review.'));
+ field(card,'Place in '+(course.banis?.[bani]?.titleEn||'this bani'),e.study.focus,'en');
+ card.append(elt('h4','', 'Words & grammar'),vocabList(e.study));
+ card.append(pending('These are working vocabulary glosses; detailed inflection/grammar review has not been completed.'));
+ field(card,'Pronunciation support','Not yet available. These teaching notes are not santhiya, a recording or a checked audio alignment.');
+ field(card,'Interpretation & open questions',e.study.interpretationCare,'en');
+ const application=elt('section','application');
+ field(application,'Practical reflection · application, not translation',e.study.reflection,'en');
+ application.append(pending('An expanded Punjabi practical reflection has not been independently authored/reviewed.'));
+ field(application,'Teach it back',e.study.teachBack,'en');
+ card.append(application,sourceDetails(course,bani,u));
  return card;
 }
 function lineNote(course,bani,l){
- const record=course?.closeTextNotes?.[bani+'|'+l.id];
- if(!record||record.sourceSha256!==l.sha256)return null;
- const box=elt('aside','line-simple-note');
- box.dataset.lineLessonId=l.id;
- box.append(elt('p','learn-tag','SELECTIVE LINE NOTE · DRAFT, NOT LITERAL TRANSLATION'));
- box.append(para('English',record.simpleEn,'en'));
- box.append(para('ਪੰਜਾਬੀ',record.simplePa,'pa'));
- const nuance=elt('p','line-nuance','Interpretive care: '+record.interpretiveCaution);
- box.append(nuance);
- return box;
+ const e=course?.closeTextNotes?.[bani+'|'+l.id];
+ if(!e||e.sourceSha256!==l.sha256||l.held)return null;
+ const button=elt('button','simple-meaning');
+ button.type='button';button.dataset.meaningLine=l.id;
+ button.setAttribute('aria-label','Draft meaning for this line. Tap for more; qualified review pending.');
+ const en=elt('span','english',e.simpleEn),pa=elt('span','punjabi',e.simplePa);
+ pa.lang='pa';
+ button.append(en,pa,elt('span','expand-hint','Draft meaning · tap to explore'));
+ return button;
+}
+function lineDetails(course,bani,line,unit){
+ const e=course?.closeTextNotes?.[bani+'|'+line.id];
+ if(!e||e.sourceSha256!==line.sha256||line.held)return null;
+ const wrapper=elt('div','line-detail');
+ appendText(wrapper,'p','excerpt',line.text,'pa');
+ const simple=elt('div','simple-dialog');
+ simple.append(paragraph(e.simpleEn,'en'),paragraph(e.simplePa,'pa'));
+ wrapper.append(simple);
+ wrapper.append(draft('EXPLANATION · EDUCATIONAL DRAFT'));
+ field(wrapper,'Interpretation & open questions',e.interpretiveCaution);
+ const study=course.unitLessons?.[bani+'|'+unit.id];
+ if(study){
+  wrapper.append(pending('The following Study draft covers the entire enclosing passage, not just this line.'));
+  wrapper.append(unitLesson(course,bani,unit,'study','passage'));
+ }else{
+  wrapper.append(noLesson('Only a selective line note is authored. Deeper passage study is still being prepared.'));
+ }
+ return wrapper;
 }
 function nextIndex(course,bani,units,current){
- const lessons=course?.unitLessons;
- if(!lessons)return -1;
- for(let i=current+1;i<units.length;i++){
-  if(Object.hasOwn(lessons,bani+'|'+units[i].id))return i;
- }
+ for(let i=current+1;i<units.length;i++)
+  if(course?.unitLessons?.[bani+'|'+units[i].id])return i;
  return -1;
 }
-window.GLP_NitnemLearning=Object.freeze({overview,unitLesson,lineNote,nextIndex,coverageText});
+window.GLP_NitnemLearning=Object.freeze({overview,unitLesson,lineNote,lineDetails,nextIndex,coverageText});
 })();

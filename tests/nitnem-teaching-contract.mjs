@@ -132,7 +132,7 @@ check('Meaning content does not manufacture explanations for unlisted chhands',(
  assert.ok(!course.unitLessons['anand|anand24']);
  const ui=read('nitnem/learning/learning-ui.js').toString();
  assert.ok(ui.includes('Detailed explanation not written yet'));
- assert.ok(ui.includes('if(view==='));
- assert.ok(ui.includes('NOT SCHOLAR-REVIEWED'));
+ assert.ok(ui.includes("view==='continuous'"));
+ assert.ok(ui.includes('HUMAN REVIEW PENDING'));
 });
 console.log(JSON.stringify({status:'PASS',checks:checks.length,cases:checks,sourceUnits:327,writtenUnitDrafts:50,closeTextDrafts:20,approvedLessons:0,publicRelease:false},null,2));

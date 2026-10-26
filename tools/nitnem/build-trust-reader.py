@@ -13,7 +13,20 @@ FILES=[
  'learning/learning-ui.js','learning/course.v1.json',
  'trust/index.html','trust/corrections.html','trust/trust.css',
  'data/library.json','data/jaap.json','data/savaiye.json',
- 'data/chaupai.json','data/anand.json','data/rehras.json','data/sohila.json'
+ 'data/chaupai.json','data/anand.json','data/rehras.json','data/sohila.json',
+ 'japji.html',
+ 'japji-assets/icon-180.png',
+ 'japji-assets/css/japji-full.css',
+ 'japji-assets/css/reader-serenity.css',
+ 'japji-assets/js/japji-full-data.js',
+ 'japji-assets/js/content.js',
+ 'japji-assets/js/gurdwaras.js',
+ 'japji-assets/js/continuous-core.js',
+ 'japji-assets/js/learning.js',
+ 'japji-assets/js/shared-learning.js',
+ 'japji-assets/js/japji-lessons.js',
+ 'japji-assets/js/line-meanings.js',
+ 'japji-assets/js/japji-full.js'
 ]
 OLD_PREFIX='const PREFIX="glp-nitnem-source-review:";'
 NEW_PREFIX='const PREFIX="glp-nitnem-trust-review:";'

@@ -26,7 +26,7 @@ test('Original source manifest is the exact hard-pinned library version',()=>{
 });
 test('All seven banis are represented, with original Japji as same-site link only',()=>{
  assert.equal((page.match(/class="bani-card"/g)||[]).length,7);
- assert.ok(page.includes('href="../full-japji.html"'));
+ assert.ok(page.includes('href="japji.html"'));
  assert.ok(!page.includes('href="https://'));
 });
 test('All six additional original-text assets are local and hash-pinned',()=>{
@@ -103,7 +103,7 @@ test('Gurmukhi reader, word-guide and settings use the existing exact continuous
  assert.equal(sha(read('nitnem/continuous-core.js')),sha(read('js/continuous-core.js')));
  assert.ok(script.includes('const next=C.advance'));
  assert.ok(script.includes('C.flatten'));
- assert.ok(page.includes('id="size" min="28" max="60"'));
+ assert.ok(page.includes('id="size" min="24" max="60"'));
  assert.ok(page.includes('id="view-continuous"')&&page.includes('id="view-passage"'));
  assert.ok(script.includes("view:'continuous'")&&script.includes("state.view==='continuous'"));
  assert.ok(script.includes('updateScrolledLine')&&script.includes('lineNodes.get'));
@@ -120,7 +120,7 @@ test('Internal page contains zero third-party scripture links or remote script s
  assert.ok(!/<iframe\b/i.test(page));
 });
 test('Scoped second service worker does not replace or delete Japji root cache',()=>{
- assert.equal(sha(read('nitnem/sw.js')),'7d240de3e14cb9e807553ae0a22d1849c686ba491e83aaaabc67dead06bb2806');
+ assert.equal(sha(read('nitnem/sw.js')),'2ed8736b3a9273993d46f5805a4653497e18c43b242670cbe11ba1051f68618f');
  assert.ok(sw.includes('glp-nitnem-source-review:'));
  assert.ok(!sw.includes('glp-static:'));
  assert.ok(sw.includes('new URL("./",self.location.href)'));
@@ -130,7 +130,7 @@ test('Cache manifest covers all six data JSON assets and exact 11 QA app files',
  const m=sw.match(/^const EXPECTED=(\{[^\n]+\});/m);
  assert.ok(m);
  const expected=JSON.parse(m[1]);
- assert.equal(Object.keys(expected).length,16);
+ assert.equal(Object.keys(expected).length,29);
  assert.ok(expected['./trust/index.html']);
  assert.ok(expected['./trust/corrections.html']);
  assert.ok(expected['./trust/trust.css']);
