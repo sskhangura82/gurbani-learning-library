@@ -5,12 +5,14 @@
 (()=>{
 'use strict';
 const EXPECTED_LIBRARY='b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a';
+const EXPECTED_LEARNING='5dc9f9dd1b3a8e882763ce48ee654200f84d34179df157eeb303da59f1258c57';
 const EXPECTED_SOURCE_COMMIT='373ccc34f4a1c0ccb6ce36654bf6e9574087200f';
 const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
-const $=id=>document.getElementById(id),C=window.GLPContinuousCore;
+const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
 const codec=new TextDecoder('utf-8',{fatal:true});
 const state={library:null,pack:null,model:null,units:[],bani:null,unit:0,index:0,token:0,playing:false,timeout:0,mode:'read',
- size:36,theme:'day',pace:70,view:'continuous',notes:{},bookmarks:[],currentKey:null,rev:0,sourceVerified:false};
+ size:36,theme:'day',pace:70,view:'continuous',notes:{},bookmarks:[],currentKey:null,rev:0,sourceVerified:false,
+ learning:null,learningError:null};
 const sourceNotice='Digital original · private testing only. Independent scripture and rights review pending.';
 const lineNodes=new Map();let activeRow=null,activeWord=null,scrollTrackTimer=0,programmaticUntil=0;
 function announce(s){$('announcer').textContent=s;}
@@ -66,6 +68,33 @@ async function verifyPack(x,entry,name){
  if(name!=='anand'&&held.length)throw Error('Unexpected original-source hold: '+name);
  return x;
 }
+async function teachingCourse(pack){
+ const course=await jsonBytes('learning/course.v1.json',EXPECTED_LEARNING);
+ if(course?.meta?.schema!=='GLP-NITNEM-TEACHING-DRAFT-V1'||
+    course.meta.editorialStatus!=='DRAFT_AI_UNREVIEWED'||
+    course.meta.publicationAllowed!==false||
+    course.meta.sourceOriginalUnchanged!==true||
+    course.meta.baseSourceCommit!==EXPECTED_SOURCE_COMMIT||
+    course.meta.boundManifestSHA256!==EXPECTED_LIBRARY||
+    course.coverage.reviewedUnitLessons!==0||
+    course.coverage.reviewedSourceMeaningLines!==0||
+    !course.banis?.[pack.compositionId])throw Error('Learning draft metadata or source-review hold is invalid');
+ const unitMap=new Map(pack.units.map(u=>[u.id,u]));
+ const lines=new Map(pack.units.flatMap(u=>u.lines.map(l=>[l.id,l])));
+ for(const [key,entry] of Object.entries(course.unitLessons||{})){
+  if(!key.startsWith(pack.compositionId+'|'))continue;
+  const source=unitMap.get(entry.unitId);
+  if(!source||entry.status!=='DRAFT_AI_UNREVIEWED'||!source.lines.some(l=>l.id===entry.sourceAnchor.id&&l.sha256===entry.sourceAnchor.sha256))
+   throw Error('Educational unit is not bound to this exact Gurmukhi source: '+key);
+ }
+ for(const [key,note] of Object.entries(course.closeTextNotes||{})){
+  if(!key.startsWith(pack.compositionId+'|'))continue;
+  const original=lines.get(note.lineId);
+  if(!original||original.held||original.sha256!==note.sourceSha256||note.status!=='DRAFT_AI_UNREVIEWED')
+   throw Error('Simple lesson is not bound to this exact safe original occurrence: '+key);
+ }
+ return course;
+}
 function storageKey(x){
  return 'glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.'+x.compositionId+'.'+x.editionId;
 }
@@ -114,11 +143,14 @@ function toggleMode(mode){
  const pane=$('review-mode');
  pane.hidden=mode==='read';
  pane.textContent=mode==='meaning'
-  ?'Meaning: source-approved Punjabi/English line translations are still being prepared. No guessed translation is displayed.'
+  ?'SIMPLE MEANING · draft English and Punjabi educational paraphrases, NOT reviewed scripture translations. Unwritten lines stay visibly pending.'
   :mode==='study'
-   ?'Study: these are source-location facts and review status, not interpretations or spiritual advice.'
+   ?'LEARN IN DEPTH · original beginner lessons, vocabulary, context and reflections; all are drafts awaiting qualified Sikh/Punjabi review.'
    :'';
- if(state.sourceVerified){renderUnit();scrollToCurrent(false);}
+ if(state.sourceVerified){
+  L.overview($('learning-overview'),state.learning,state.bani,mode);
+  renderUnit();scrollToCurrent(false);
+ }
  save();
 }
 function applyStyle(){
@@ -152,6 +184,10 @@ function createLine(l){
  }else{
   const tuk=document.createElement('p');tuk.className='tuk';tuk.lang='pa';tuk.append(words(l));
   row.append(tuk);
+  if(state.mode!=='read'&&state.learning){
+   const note=L.lineNote(state.learning,state.bani,l);
+   if(note)row.append(note);
+  }
  }
  lineNodes.set(l.id,row);
  row.addEventListener('click',()=>{
@@ -191,12 +227,10 @@ function passage(index){
   section.append(h);
  }
  for(const l of u.lines)section.append(createLine(l));
- if(state.mode==='study'){
-  const detailBlock=detail(u.lines[0]);section.append(detailBlock);
- }else if(state.mode==='meaning'&&state.view==='passage'){
-  const note=document.createElement('div');note.className='source-study';
-  note.textContent='No reviewed line-by-line meaning is available for this bani yet. Original Gurmukhi above remains visible.';
-  section.append(note);
+ if(state.mode!=='read'){
+  const authored=L.unitLesson(state.learning,state.bani,u,state.mode,state.view);
+  if(authored)section.append(authored);
+  if(state.mode==='study'&&state.view==='passage')section.append(detail(u.lines[0]));
  }
  return section;
 }
@@ -241,6 +275,9 @@ function paint(){
  $('prev-unit').disabled=line.unitIndex===0;
  $('next-unit').disabled=line.unitIndex===state.pack.units.length-1;
  $('reading-end').hidden=line.unitIndex!==state.pack.units.length-1;
+ const next=state.mode==='read'?-1:L.nextIndex(state.learning,state.bani,state.pack.units,state.unit);
+ const button=$('next-written-lesson');button.hidden=next<0;
+ if(next>=0){button.dataset.nextUnit=String(next);button.textContent='Next written '+(state.mode==='study'?'learning':'meaning')+' lesson · passage '+(next+1);}
  $('play').textContent=state.playing?'❚❚':'▶';
  $('play').setAttribute('aria-pressed',String(state.playing));
  $('play').setAttribute('aria-label',(state.playing?'Pause':'Play')+' silent visual guide');
@@ -341,6 +378,9 @@ function chooseBani(name){
   const lib=await library(),entry=lib.entries[name];
   const pack=await verifyPack(await jsonBytes(entry.path,entry.sha256),entry,name);
   state.pack=pack;state.bani=name;
+  state.learning=null;state.learningError=null;
+  try{state.learning=await teachingCourse(pack);}
+  catch(err){state.learningError=err.message;state.learning=null;}
   state.units=pack.units.map(u=>({id:u.id,title:u.title,lines:u.lines.map(l=>({id:l.id,text:l.text,sha256:l.sha256,ang:l.location.system==='ang'?l.location.ang:null}))}));
   state.model=C.flatten(state.units);
   if(state.model.lines.length!==entry.lines)throw Error('Core original-source line count differs from signed manifest');
@@ -361,7 +401,9 @@ function chooseBani(name){
    programmaticUntil=performance.now()+1100;
    $('reader').scrollIntoView({behavior:'instant',block:'start'});
   }
-  status('Exact original source hashes verified · '+pack.originalLineCount+' Gurmukhi records · edition review pending.');
+  status('Exact original hashes verified · '+pack.originalLineCount+' Gurmukhi records. '+(state.learning
+   ?L.coverageText(state.learning,name)+' · educational DRAFT ONLY'
+   :'Teaching unavailable: '+state.learningError));
   const query=new URL(location.href);query.searchParams.set('bani',name);history.replaceState({bani:name},'',query.pathname+query.search);
   return pack;
  })().catch(e=>{
@@ -373,6 +415,7 @@ function collection(){
  pause();state.pack=null;state.model=null;state.bani=null;state.sourceVerified=false;
  lineNodes.clear();activeRow=null;activeWord=null;
  $('collection').hidden=false;$('reader').hidden=true;$('dock').hidden=true;$('library-back').hidden=true;
+ $('learning-overview').hidden=true;$('learning-overview').replaceChildren();
  history.replaceState({},'',location.pathname);window.scrollTo({top:0,behavior:'instant'});
 }
 function modal(id,openedFrom){
@@ -456,6 +499,11 @@ $('prev-unit').addEventListener('click',()=>goUnit(state.unit-1,true));
 $('next-unit').addEventListener('click',()=>goUnit(state.unit+1,true));
 $('jump').addEventListener('click',openJump);$('jump-close').addEventListener('click',()=>$('jump-dialog').close());
 $('reading-tools').addEventListener('click',openTools);$('tools-close').addEventListener('click',()=>$('tools-dialog').close());
+$('next-written-lesson').addEventListener('click',()=>{
+ const button=$('next-written-lesson');
+ if(button.hidden||!Number.isInteger(Number(button.dataset.nextUnit)))return;
+ goUnit(Number(button.dataset.nextUnit),true);
+});
 $('view-continuous').addEventListener('click',()=>selectView('continuous'));
 $('view-passage').addEventListener('click',()=>selectView('passage'));
 window.addEventListener('scroll',()=>{
@@ -493,6 +541,10 @@ window.NITNEM_INTERNAL_QA=Object.freeze({
   index:state.index,token:state.token,playing:state.playing,mode:state.mode,
   notes:Object.keys(state.notes).length,bookmarks:state.bookmarks.length,view:state.view,
   sourceApproved:false,translationApproved:false,releaseAuthorized:false,
+  teachingAvailable:!!state.learning,
+  authoredLessons:state.learning?.coverage?.byBani?.[state.bani]?.draftLessons||0,
+  sourceUnitCount:state.pack?.unitCount||0,
+  editorReviewedLessons:0,
   offlineScope:'/nitnem/',lastLineHeld:!!currentLine()?.held}),
  step:()=>guideStep(),library:()=>library()
 });
