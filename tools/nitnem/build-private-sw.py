@@ -1,5 +1,5 @@
 """Private FULL NITNEM QA sw generator — relative scope /nitnem/ only.
-Zero external links/requests. Integrity checked offline source assets; no
+No automatic external requests; optional SGPC link is user-triggered. Offline integrity checked; no
 deployment or mutation of root Japji service worker or accepted family PWA.
 """
 import hashlib,json
@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parents[2]/'nitnem'
 FILES=[
  'index.html','reader.css','reader.js','continuous-core.js',
  'learning/learning-ui.js','learning/course.v1.json',
+ 'trust/index.html','trust/corrections.html','trust/trust.css',
  'data/library.json','data/jaap.json','data/savaiye.json','data/chaupai.json',
  'data/anand.json','data/rehras.json','data/sohila.json'
 ]

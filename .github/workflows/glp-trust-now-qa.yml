@@ -1,0 +1,71 @@
+name: GLP Trust, Privacy and Source Corrections Candidate (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-trust-practice-now-20261025
+permissions:
+  contents: read
+jobs:
+  trust-source-and-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch exact frozen source-research evidence only
+        uses: actions/checkout@v4
+        with:
+          repository: sskhangura82/gurbani-learning-library
+          ref: 373ccc34f4a1c0ccb6ce36654bf6e9574087200f
+          path: pinned-original-research
+          persist-credentials: false
+      - name: Original six-bani digital source bytes and bilingual lessons unchanged
+        run: |
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-research --output nitnem/data --verify
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-research --output nitnem/data
+          git diff --exit-code -- nitnem/data
+          node tools/nitnem/build-learning-pack.mjs
+          git diff --exit-code -- nitnem/learning/course.v1.json
+          node tests/nitnem-teaching-contract.mjs
+          node tests/nitnem-internal-source-contract.mjs
+      - name: Static trust, privacy, correction and exact offsite-link contract
+        run: |
+          node --check tests/glp-trust-contract.mjs
+          node tests/glp-trust-contract.mjs
+          node --check nitnem/reader.js
+          node --check nitnem/learning/learning-ui.js
+          node --check tests/glp-trust-browser.mjs
+          node --check tests/glp-trust-gated-browser.mjs
+      - name: Reader, saved learning and previous root-worker regression
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: Deterministic 16-asset source-only and static trust worker
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/glp-trust-contract.mjs
+      - name: Build a distinct review path without overwriting old offline apps
+        run: |
+          python3 tools/nitnem/build-trust-reader.py --output "${{ runner.temp }}/glp-nitnem-trust"
+          python3 tools/nitnem/build-trust-reader.py --output "${{ runner.temp }}/glp-nitnem-trust" --verify
+      - name: Temp signed-owner gateway rejects tampered correction registry and any unauthorized action
+        run: |
+          python3 -c 'import ast; [ast.parse(open(p).read()) for p in ["tests/serve-gated-trust-nitnem.py","tests/glp-trust-gate-contract.py","tools/nitnem/build-trust-reader.py"]]'
+          python3 tests/glp-trust-gate-contract.py
+      - name: Preserve accepted public Japji and leave family main untouched
+        run: |
+          test ! -f jaap.html
+          test ! -f rehras.html
+          ! grep -q 'nitnem-trust/' sw.js
+          git diff --exit-code -- sw.js full-japji.html js/japji-full-data.js js/japji-full.js js/learning.js js/shared-learning.js index.html
+          test ! -e nitnem-continuous
+          test ! -e nitnem-learning
+          test ! -e nitnem-trust

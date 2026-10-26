@@ -1,0 +1,22 @@
+:root{--paper:#faf7ee;--raised:#fffdf8;--ink:#243c32;--muted:#58695f;--line:#d5d1c5;--accent:#365942;--tint:#edf1eb;--gold:#886d36;--warn:#f9eed9;--warnline:#bc975e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{font:15px/1.66 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);margin:0;padding:0 16px 75px}
+body[data-theme=amrit]{--paper:#101c25;--raised:#1a2c33;--ink:#f3eee0;--muted:#b9c8c0;--line:#485a60;--accent:#aed4ba;--tint:#22363c;--gold:#d8b977;--warn:#423524;--warnline:#9e8957;color-scheme:dark}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}header{max-width:740px;margin:0 auto;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line);padding:15px 0;font-size:12px}
+header a{display:inline-flex;align-items:center;min-height:44px}header .wordmark{font-weight:800;letter-spacing:1px;margin-right:auto;color:var(--ink);text-decoration:none}
+header .status{font-size:10px;letter-spacing:1px;color:var(--muted);font-weight:700}
+main{max-width:740px;margin:auto}.hero{text-align:center;padding:26px 0 17px}.ikon{font:38px Georgia,serif;color:var(--gold);margin:0}.eyebrow{font-size:11px;letter-spacing:1.5px;font-weight:700;color:var(--muted);text-transform:uppercase;margin:13px 0 5px}
+h1{font:normal clamp(29px,7vw,41px)/1.25 Georgia,serif;margin:5px 0 12px}h2{font:normal 25px/1.28 Georgia,serif;margin:5px 0 12px}h3{font-size:16px;line-height:1.45;margin:15px 0 6px}
+.lede{max-width:620px;margin:0 auto;color:var(--muted);font-size:14px}.notice{border:1px solid var(--warnline);background:var(--warn);border-radius:11px;padding:12px 14px;margin:20px 0;font-size:12px}
+.toc{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0 23px}.toc a{padding:9px 11px;min-height:44px;border:1px solid var(--line);background:var(--raised);border-radius:9px;text-decoration:none;font-size:12px;display:inline-flex;align-items:center}
+section.panel{padding:18px 18px 19px;border:1px solid var(--line);border-radius:14px;background:var(--raised);margin:15px 0 22px;scroll-margin-top:20px}
+section.panel p{margin:9px 0;font-size:13px;line-height:1.75}
+section.panel ul{padding-left:20px;font-size:13px;line-height:1.8}
+section.panel li{margin-bottom:5px}.status-line{display:block;font-size:11px;letter-spacing:.6px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.punjabi{font:18px/1.75 "Gurmukhi MN","Noto Serif Gurmukhi",serif;color:var(--ink)}
+.inline-link{display:inline-flex;align-items:center;padding:10px 13px;background:var(--tint);border:1px solid var(--line);border-radius:9px;font-size:13px;min-height:44px;text-decoration:none;font-weight:700;margin:9px 0}
+.external-note{font-size:11px;color:var(--muted);display:block}footer{max-width:740px;margin:25px auto 0;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:12px}
+table{width:100%;border-collapse:collapse;display:table;font-size:12px;line-height:1.55}th,td{padding:9px 8px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{font-weight:800;color:var(--ink);background:var(--tint)}td{color:var(--ink);overflow-wrap:anywhere}table a{overflow-wrap:anywhere}
+.table-scroll{overflow-x:auto;max-width:100%}.source-refs{font-size:11px;color:var(--muted)}
+pre{white-space:pre-wrap;word-break:break-word}.small{font-size:12px;color:var(--muted)}.skip{position:absolute;left:-10000px}.skip:focus{position:relative;left:auto}
+@media(max-width:430px){body{padding:0 12px 55px}.status{display:none}section.panel{padding:13px}table{font-size:11px}th,td{padding:8px 5px}.toc{gap:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
