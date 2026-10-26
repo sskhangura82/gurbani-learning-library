@@ -1,0 +1,2805 @@
+{
+  "meta": {
+    "schema": "GLP-NITNEM-TEACHING-DRAFT-V1",
+    "editorialStatus": "DRAFT_AI_UNREVIEWED",
+    "interpretationType": "ORIGINAL_EDUCATIONAL_PARAPHRASE_NOT_CANONICAL_TRANSLATION",
+    "languageSupport": [
+      "en",
+      "pa"
+    ],
+    "reviewer": null,
+    "rightsStatus": "not_checked_for_public_teaching",
+    "authorNote": "Explanations are original teaching drafts, not exact Gurbani translations, and require qualified Sikh/Punjabi/Gurbani editorial review.",
+    "sourcePolicy": "Gurmukhi original text and hash never modified or replaced by a teaching layer",
+    "baseSourceCommit": "373ccc34f4a1c0ccb6ce36654bf6e9574087200f",
+    "references": [
+      {
+        "key": "sgpc",
+        "title": "Sikh Rehat Maryada, Article IV",
+        "url": "https://sgpc.net/sikh-rehat-maryada-in-english/",
+        "scope": "Daily bani order and variants; not theological exegesis"
+      },
+      {
+        "key": "sikhri-anand",
+        "title": "SikhRI Anand Sahib Course",
+        "url": "https://sikhri.org/courses/anandu-sahib",
+        "scope": "Overview and pauri-by-pauri study approach, no lesson text copied"
+      },
+      {
+        "key": "sikhri-bliss",
+        "title": "SikhRI — A Call to Inner Bliss",
+        "url": "https://sikhri.org/inspiration/a-call-to-inner-bliss-will-you-answer",
+        "scope": "Anand Pauri 1 framing; independently reviewed interpretation needed"
+      },
+      {
+        "key": "sikhri-love",
+        "title": "SikhRI — Guru Gobind Singh Sahib remembrance",
+        "url": "https://sikhri.org/inspiration/guru-gobind-singh-sahibs-prakash-purab-today-2",
+        "scope": "Tav-Prasad Savaiye love emphasis"
+      },
+      {
+        "key": "sahibsingh-sohila",
+        "title": "Professor Sahib Singh, Sri Guru Granth Darpan, Ang 12",
+        "url": "https://www.gurugranthdarpan.net/0012.html",
+        "scope": "Gurmukhi stanza context and vocabulary; not copied"
+      },
+      {
+        "key": "sikhnet-sohila",
+        "title": "SikhNet — Kirtan Sohila overview",
+        "url": "https://sikhnet.com/banis/kirtan-sohila",
+        "scope": "Five-shabad sequence/attribution; omit unsupported health/supernatural claims"
+      },
+      {
+        "key": "sikhri-method",
+        "title": "SikhRI Guru Granth Sahib Project methodology",
+        "url": "https://gurugranthsahib.io/info/english/methodology",
+        "scope": "Editorial methods and interpretive care"
+      },
+      {
+        "key": "internal-jaap",
+        "title": "GLP #20 full Jaap source discrepancy ledger",
+        "scope": "Private frozen source research; 67 digital groups unresolved"
+      },
+      {
+        "key": "internal-chaupai",
+        "title": "GLP #20 Benti Chaupai variant ledger",
+        "scope": "Private frozen original source research; 25 versus 29 pauri boundaries"
+      },
+      {
+        "key": "internal-rehras",
+        "title": "GLP #20 SGPC Rehras source-ledger",
+        "scope": "Private frozen mixed SGGS/Dasam source research"
+      }
+    ],
+    "revision": "SOHILA_COMPLETE_LINE_DRAFT_V2",
+    "previousVersion": "course.v1.json",
+    "boundManifestSHA256": "b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a",
+    "publicationAllowed": false,
+    "sourceOriginalUnchanged": true,
+    "specificSourceParaphrasesOnly": true,
+    "absentLessonsAlwaysLabelledPending": true
+  },
+  "coverage": {
+    "unitTotal": 327,
+    "sourceLineTotal": 1361,
+    "writtenUnitLessons": 50,
+    "closeTextOccurrenceNotes": 73,
+    "reviewedUnitLessons": 0,
+    "reviewedSourceMeaningLines": 0,
+    "byBani": {
+      "jaap": {
+        "totalUnits": 199,
+        "draftLessons": 7,
+        "firstLineNotes": 6,
+        "sourceRecords": 782,
+        "sourceEdition": "jaap-199-digital-original-candidate-20261025"
+      },
+      "savaiye": {
+        "totalUnits": 10,
+        "draftLessons": 10,
+        "firstLineNotes": 2,
+        "sourceRecords": 40,
+        "sourceEdition": "dasam-sravag-sudh-digital-candidate-20261025"
+      },
+      "chaupai": {
+        "totalUnits": 29,
+        "draftLessons": 7,
+        "firstLineNotes": 4,
+        "sourceRecords": 116,
+        "sourceEdition": "dasam-chaupai-expanded-29-website-candidate-20261025"
+      },
+      "anand": {
+        "totalUnits": 40,
+        "draftLessons": 7,
+        "firstLineNotes": 3,
+        "sourceRecords": 208,
+        "sourceEdition": "sggs-anand-40-digital-candidate-20261025"
+      },
+      "rehras": {
+        "totalUnits": 44,
+        "draftLessons": 14,
+        "firstLineNotes": 2,
+        "sourceRecords": 159,
+        "sourceEdition": "sgpc-digital-composite-unreviewed-20261025"
+      },
+      "sohila": {
+        "totalUnits": 5,
+        "draftLessons": 5,
+        "firstLineNotes": 56,
+        "sourceRecords": 56,
+        "sourceEdition": "sggs-digital-ang12-13-source-candidate-20261025"
+      }
+    }
+  },
+  "banis": {
+    "jaap": {
+      "theme": "Remembering the One who cannot be contained in labels",
+      "titleEn": "Jaap Sahib",
+      "titlePa": "ਜਾਪੁ ਸਾਹਿਬ",
+      "simpleEn": "Jaap Sahib offers many names and descriptions of the One while reminding us that the Divine cannot be limited to a body, caste, colour, appearance or human category. Its repeated salutations turn language itself into attentive praise.",
+      "simplePa": "ਜਾਪੁ ਸਾਹਿਬ ਅਕਾਲ ਪੁਰਖ ਦੇ ਅਨੇਕ ਗੁਣ ਯਾਦ ਕਰਵਾਉਂਦਾ ਹੈ। ਨਾਲ ਹੀ ਦੱਸਦਾ ਹੈ ਕਿ ਰੱਬ ਨੂੰ ਰੂਪ, ਰੰਗ, ਜਾਤ ਜਾਂ ਕਿਸੇ ਇਕ ਨਾਂ ਵਿਚ ਬੰਨ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਵਾਰ-ਵਾਰ ਕੀਤਾ ਨਮਸਕਾਰ ਮਨ ਨੂੰ ਇਕਾਗਰ ਕਰਦਾ ਹੈ।",
+      "deeperEn": "The opening refuses to reduce the Divine to a picture or social identity. Later chhands praise the One with many attributes, rhythmic names and poetic contrasts. The apparent paradox matters: we name what cannot be completely named. The names are ways of turning attention toward the One, not a list of independent gods.",
+      "words": [
+        [
+          "ਅਕਾਲ",
+          "Beyond time and death"
+        ],
+        [
+          "ਅਰੂਪ",
+          "Without a limiting form"
+        ],
+        [
+          "ਨਮਸਤ੍ਵੰ",
+          "A salutation: I bow to You"
+        ],
+        [
+          "ਕ੍ਰਿਪਾਲ",
+          "Compassionate"
+        ]
+      ],
+      "caution": "Jaap uses diverse Braj, Sanskritic and Persian-influenced word forms. Specific etymologies, metre names, pronunciation and 67 source-variant groups remain editorially unapproved.",
+      "reflection": "If the Divine is not confined to human labels, what happens when I judge people only by appearance or status?",
+      "question": "Why does Jaap Sahib use many names while saying that no label can fully define the One?",
+      "sourceKeys": [
+        "internal-jaap",
+        "sikhri-method"
+      ]
+    },
+    "savaiye": {
+      "theme": "Love and sincerity matter more than display",
+      "titleEn": "Tav-Prasad Savaiye",
+      "titlePa": "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ",
+      "simpleEn": "These ten Savaiye question whether rituals, wealth, political power, outward spiritual appearances or military strength can bring us near the Divine without sincere love and devotion. The message is not to abandon ethical action; it is to avoid mistaking display for inner transformation.",
+      "simplePa": "ਦਸ ਸਵੱਯੇ ਪੁੱਛਦੇ ਹਨ: ਜੇ ਦਿਲ ਵਿਚ ਪ੍ਰੇਮ ਤੇ ਸੱਚੀ ਭਗਤੀ ਨਹੀਂ, ਤਾਂ ਦਿਖਾਵਾ, ਧਨ, ਤਾਕਤ ਜਾਂ ਸਿਰਫ਼ ਰਸਮਾਂ ਕਿੰਨਾ ਕੰਮ ਆਉਂਦੀਆਂ ਹਨ? ਇਹ ਚੰਗੇ ਕਰਮ ਛੱਡਣ ਦੀ ਗੱਲ ਨਹੀਂ, ਸਗੋਂ ਦਿਲ ਦੀ ਸਚਾਈ ਵੱਲ ਧਿਆਨ ਹੈ।",
+      "deeperEn": "The poems build their argument with striking examples: ascetics, kings, armies and worship practices. Each can impress observers, but the text continually asks what gives a life spiritual weight. Savaiya 9 states its emphasis on love especially clearly. When studying, separate the poem’s critique of hollow practice from a broad claim that all religious disciplines or communities are worthless.",
+      "words": [
+        [
+          "ਸ੍ਰਾਵਗ",
+          "A religious practitioner; exact historical usage needs review"
+        ],
+        [
+          "ਤੀਰਥ",
+          "Pilgrimage place"
+        ],
+        [
+          "ਕ੍ਰਿਪਾ",
+          "Grace"
+        ],
+        [
+          "ਪ੍ਰੇਮ",
+          "Love"
+        ]
+      ],
+      "caution": "This is the morning group beginning Sravag Sudh, not the evening Pae Gahe Savaiya in Rehras. Unresolved digital spelling differences require comparison with a named source edition.",
+      "reflection": "Where can a small sincere act express more love than an impressive outward display?",
+      "question": "What distinction do these Savaiye make between religious appearance and loving devotion?",
+      "sourceKeys": [
+        "sgpc",
+        "sikhri-love"
+      ]
+    },
+    "chaupai": {
+      "theme": "A prayer for protection and steadfastness",
+      "titleEn": "Benti Chaupai Sahib",
+      "titlePa": "ਬੇਨਤੀ ਚੌਪਈ ਸਾਹਿਬ",
+      "simpleEn": "Benti Chaupai speaks in the voice of someone asking the Divine for protection, courage, guidance and support. It also asks that the mind remain turned toward the One. Its forceful language about enemies must be read with literary and historical care rather than applied casually to other people.",
+      "simplePa": "ਬੇਨਤੀ ਚੌਪਈ ਵਿਚ ਰੱਖਿਆ, ਹੌਸਲਾ ਅਤੇ ਸਹਾਰਾ ਮੰਗਿਆ ਜਾਂਦਾ ਹੈ। ਮਨ ਰੱਬ ਦੇ ਚਰਨਾਂ ਨਾਲ ਜੁੜਿਆ ਰਹੇ—ਇਹ ਬੇਨਤੀ ਵੀ ਮੁੜ ਆਉਂਦੀ ਹੈ। ਵੈਰੀਆਂ ਬਾਰੇ ਤਿੱਖੀ ਭਾਸ਼ਾ ਦਾ ਅਰਥ ਸਮਝਣ ਲਈ ਸੰਦਰਭ ਜ਼ਰੂਰੀ ਹੈ।",
+      "deeperEn": "The opening verses seek refuge and request that fear not overwhelm the speaker. The prayer repeatedly expresses dependence upon the Divine while using the heightened imagery of a martial literary world. A responsible learning lesson distinguishes the actual wording from a proposed modern psychological application; neither the text nor the app authorizes aggression against a person.",
+      "words": [
+        [
+          "ਬੇਨਤੀ",
+          "Humble request or supplication"
+        ],
+        [
+          "ਰੱਛਾ",
+          "Protection"
+        ],
+        [
+          "ਚਰਨ",
+          "Feet; often a metaphor for humble refuge"
+        ],
+        [
+          "ਭਜਨ",
+          "Remembrance or devotion"
+        ]
+      ],
+      "caution": "The current reader uses an explicitly named expanded 29-pauri website candidate. The shorter 25-pauri evening Rehras excerpt and other accepted traditions require separate source and community review.",
+      "reflection": "What does it mean to ask for courage while also accepting responsibility for our actions?",
+      "question": "Which phrases ask for protection, and which ask for closeness to the Divine?",
+      "sourceKeys": [
+        "internal-chaupai",
+        "sgpc"
+      ]
+    },
+    "anand": {
+      "theme": "The steadier joy of understanding and living the Guru’s wisdom",
+      "titleEn": "Anand Sahib",
+      "titlePa": "ਅਨੰਦੁ ਸਾਹਿਬ",
+      "simpleEn": "Anand Sahib explores joy that goes deeper than brief pleasures. Guru Amar Das describes a life transformed through the Guru’s wisdom, remembrance of the One, inner steadiness and freedom from consuming attachment.",
+      "simplePa": "ਅਨੰਦੁ ਸਾਹਿਬ ਥੋੜ੍ਹੇ ਸਮੇਂ ਦੀ ਖੁਸ਼ੀ ਤੋਂ ਵੱਧ ਡੂੰਘੇ ਅਨੰਦ ਦੀ ਗੱਲ ਕਰਦਾ ਹੈ। ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ, ਨਾਮ ਦੀ ਯਾਦ ਅਤੇ ਮਨ ਦੀ ਸਹਜ ਅਵਸਥਾ ਨਾਲ ਜੀਵਨ ਵਿਚ ਟਿਕਾਊ ਖਿੜਾਉ ਆਉਂਦਾ ਹੈ।",
+      "deeperEn": "The composition begins with an expression of discovery: bliss has arisen because the Guru has been found. The following pauris address the mind, the True One, Naam and inner transformation. Its forty-pauri journey is not a promise that every follower will always feel happy or never experience pain; the concept of anand is richer than a temporary pleasant mood.",
+      "words": [
+        [
+          "ਅਨੰਦੁ",
+          "Bliss or deep joy"
+        ],
+        [
+          "ਸਤਿਗੁਰੂ",
+          "True Guru"
+        ],
+        [
+          "ਸਹਜ",
+          "Natural spiritual poise or equipoise"
+        ],
+        [
+          "ਸਬਦ",
+          "The Guru’s Word or wisdom"
+        ]
+      ],
+      "caution": "The digital original contains an unresolved private-use Unicode glyph in Pauri 24, withheld in our reader. The full 40-pauri morning composition must not be silently replaced by the first five plus last pauri used within Rehras.",
+      "reflection": "Can inner steadiness coexist with a difficult day?",
+      "question": "How does the opening of Anand Sahib connect joy to the Guru rather than possessions?",
+      "sourceKeys": [
+        "sikhri-anand",
+        "sikhri-bliss"
+      ]
+    },
+    "rehras": {
+      "theme": "Evening remembrance, humility, gratitude and renewed courage",
+      "titleEn": "Sodar Rehras Sahib",
+      "titlePa": "ਸੋ ਦਰੁ ਰਹਿਰਾਸਿ",
+      "simpleEn": "Rehras gathers hymns from Sri Guru Granth Sahib and passages from Dasam Bani into an evening prayer. It remembers the vastness of the One, our dependence on grace, courage through fear, and the opportunity to live purposefully.",
+      "simplePa": "ਰਹਿਰਾਸਿ ਸ਼ਾਮ ਵੇਲੇ ਰੱਬ ਦੀ ਵਡਿਆਈ, ਸ਼ੁਕਰਾਨੇ ਅਤੇ ਸਹਾਰੇ ਦੀ ਬਾਣੀ ਹੈ। ਇਸ ਵਿਚ ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੇ ਸ਼ਬਦ ਅਤੇ ਦਸਮ ਬਾਣੀ ਦੇ ਭਾਗ ਇੱਕ ਨਿਰਧਾਰਿਤ ਕ੍ਰਮ ਵਿਚ ਆਉਂਦੇ ਹਨ।",
+      "deeperEn": "The SGPC sequence opens with nine hymns that praise the One and reflect on Naam and life. It moves to Benti Chaupai’s supplication, an evening Savaiya and Dohira, six selected Anand pauris, and Mundawani and the Mahla 5 Slok. Each part retains its own source family; a single blanket translation would obscure those transitions. Some communities use an extended Rehras sequence, which must be a named separate version.",
+      "words": [
+        [
+          "ਸੋ ਦਰੁ",
+          "That doorway or court; a poetic question in the opening"
+        ],
+        [
+          "ਰਹਿਰਾਸਿ",
+          "Evening prayer or devotional routine"
+        ],
+        [
+          "ਬਖ਼ਸ਼ਿਸ਼",
+          "Grace or gift"
+        ],
+        [
+          "ਅਰਦਾਸ",
+          "Supplication; kept as a companion practice"
+        ]
+      ],
+      "caution": "This reader follows a specifically bounded SGPC six-part digital source candidate. Additional Rehras passages and precise original-source spellings remain under review; mixed Dasam/SGGS verses are not all on a single SGGS Ang.",
+      "reflection": "At the end of the day, what can we carry forward with gratitude, and what should we release?",
+      "question": "Why is Rehras studied as a collection with multiple authors and source families?",
+      "sourceKeys": [
+        "sgpc",
+        "internal-rehras"
+      ]
+    },
+    "sohila": {
+      "theme": "Ending the day with remembrance, wonder and humility",
+      "titleEn": "Kirtan Sohila",
+      "titlePa": "ਕੀਰਤਨ ਸੋਹਿਲਾ",
+      "simpleEn": "Kirtan Sohila is a five-shabad night prayer. Its images range from songs of joyful union and the changing seasons to the sky as a vast act of praise. It reminds us that life is limited and that remembrance, service and humility matter now.",
+      "simplePa": "ਕੀਰਤਨ ਸੋਹਿਲਾ ਰਾਤ ਦੀ ਪੰਜ ਸ਼ਬਦਾਂ ਵਾਲੀ ਬਾਣੀ ਹੈ। ਇਸ ਵਿਚ ਸਿਰਜਣਹਾਰ ਦੀ ਵਡਿਆਈ, ਮਿਲਾਪ ਦਾ ਪਿਆਰ, ਕੁਦਰਤ ਦੀ ਆਰਤੀ ਅਤੇ ਜੀਵਨ ਦੀ ਅਸਥਿਰਤਾ ਦੀ ਯਾਦ ਹੈ। ਰਾਤ ਨੂੰ ਮਨ ਨਿਮਰਤਾ ਨਾਲ ਟਿਕਾਉਣ ਦੀ ਸਿੱਖਿਆ ਮਿਲਦੀ ਹੈ।",
+      "deeperEn": "The five shabads move through distinct images: a song of praise, many approaches pointing toward the One, the cosmos as an offering, the challenge of anger and desire, and the urgency of using life well. It is not accurate to flatten all five into the same single “sleep well” message. Their printed raags and Guru attributions belong to the original source metadata, not to claims about one mandatory recording style.",
+      "words": [
+        [
+          "ਸੋਹਿਲਾ",
+          "Song of joy or praise, with wedding-song imagery"
+        ],
+        [
+          "ਕੀਰਤਿ",
+          "Praise"
+        ],
+        [
+          "ਆਰਤੀ",
+          "Ceremonial offering or praise; cosmic imagery in Shabad 3"
+        ],
+        [
+          "ਸਿਮਰੀਐ",
+          "Remember or keep in remembrance"
+        ]
+      ],
+      "caution": "Five shabads by Guru Nanak, Guru Ram Das and Guru Arjan. Wedding and death imagery in the first shabad needs careful cultural interpretation; do not turn this into supernatural or medical claims.",
+      "reflection": "What part of today deserves gratitude, and what matters enough not to postpone?",
+      "question": "How does Sohila move from songs of celebration to remembering that time is limited?",
+      "sourceKeys": [
+        "sahibsingh-sohila",
+        "sikhnet-sohila"
+      ]
+    }
+  },
+  "unitLessons": {
+    "sohila|sohila01": {
+      "unitId": "sohila01",
+      "sourceAnchor": {
+        "id": "sohila01.line01",
+        "sha256": "52cecbfaeb8e75cd05f4edecfc34b743b6be05cdde875fd638a2bbcff39b2728"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "In a place where the Creator is remembered and discussed, sing a song of praise. The shabad uses wedding and departure imagery to ask us to remember the One while life is here.",
+        "pa": "ਜਿੱਥੇ ਕਰਤਾਰ ਦੀ ਸਿਫ਼ਤ ਤੇ ਵਿਚਾਰ ਹੁੰਦੀ ਹੈ, ਉੱਥੇ ਵਡਿਆਈ ਦੇ ਗੀਤ ਗਾਓ। ਵਿਆਹ ਅਤੇ ਵਿਛੋੜੇ ਦੀ ਤਸਵੀਰ ਜੀਵਨ ਦੀ ਸੀਮਾ ਯਾਦ ਕਰਵਾਉਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Praise, meeting and the limits of a human lifetime.",
+        "closeReading": "The first lines invite praise in the company of others; later images of an appointed day and an invitation deepen the meaning. The wedding imagery holds both joy and awareness of departure. The repeated request is to remember the Giver, not to predict when a person will die.",
+        "words": [
+          {
+            "gurmukhi": "ਸੋਹਿਲਾ",
+            "workingGloss": "Song of joyful praise",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਿਰਜਣਹਾਰ",
+            "workingGloss": "Creator",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਦਣਹਾਰਾ",
+            "workingGloss": "The One who calls",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Professor Sahib Singh discusses the cultural wedding-song image. Marriage language is poetic, not a literal claim that a reader is getting married.",
+        "reflection": "What song or remembrance would you want to carry into life’s uncertain moments?",
+        "teachBack": "How can a song contain both joy and a reminder that our time is limited?"
+      }
+    },
+    "sohila|sohila02": {
+      "unitId": "sohila02",
+      "sourceAnchor": {
+        "id": "sohila02.line01",
+        "sha256": "dea869cfdb0889b2e1fe372b94ad7af4f64ba442ef016a2f8c1fde5479b54238"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "People may teach in different ways, yet the shabad points toward the One beneath those varied approaches. As seasons and calendars change under one sun, the Creator is not confined to one outward system.",
+        "pa": "ਲੋਕਾਂ ਦੇ ਵਿਚਾਰ ਤੇ ਰਾਹ ਵੱਖਰੇ ਹੋ ਸਕਦੇ ਹਨ, ਪਰ ਬਾਣੀ ਇੱਕੋ ਮੂਲ ਵੱਲ ਧਿਆਨ ਦਿਵਾਉਂਦੀ ਹੈ। ਇੱਕ ਸੂਰਜ ਹੇਠ ਰੁੱਤਾਂ ਤੇ ਸਮੇਂ ਦੇ ਰੂਪ ਬਦਲਦੇ ਹਨ।"
+      },
+      "study": {
+        "focus": "Many teachings, one underlying Source.",
+        "closeReading": "Notice the references to six schools and different forms of instruction. The shabad then turns from cataloguing them to its refrain about praise of the Creator. The image of one sun and many seasons helps the learner grasp diversity without losing the unity being praised.",
+        "words": [
+          {
+            "gurmukhi": "ਛਿਅ",
+            "workingGloss": "Six",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਉਪਦੇਸ",
+            "workingGloss": "Teachings",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕਰਤੇ",
+            "workingGloss": "The Creator",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "This should not be taught as proof that every religious doctrine is identical. The shabad makes a poetic point with a specific historical image.",
+        "reflection": "When have different descriptions helped you understand one shared reality?",
+        "teachBack": "What does the image of one sun with many seasons contribute to this shabad?"
+      }
+    },
+    "sohila|sohila03": {
+      "unitId": "sohila03",
+      "sourceAnchor": {
+        "id": "sohila03.line01",
+        "sha256": "a37ae1ed8c3b9a03399ee512faee90b998175a626b6bc338633094e912307da8"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The sky becomes a vast platter, the sun and moon lamps, the stars jewels and the wind a fan. The shabad turns our attention from a limited human ritual toward the whole creation praising the One.",
+        "pa": "ਆਕਾਸ਼ ਥਾਲ, ਸੂਰਜ-ਚੰਦ ਦੀਵੇ ਅਤੇ ਤਾਰੇ ਮੋਤੀ ਵਰਗੇ ਦਿਸਦੇ ਹਨ। ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਮਨੁੱਖੀ ਰਸਮ ਤੋਂ ਪਰੇ ਸਾਰੀ ਕੁਦਰਤ ਨੂੰ ਵਡਿਆਈ ਦੀ ਤਸਵੀਰ ਵਿਚ ਲਿਆਉਂਦੇ ਹਨ।"
+      },
+      "study": {
+        "focus": "The cosmos as a poetic aarti.",
+        "closeReading": "In the opening, familiar elements of ritual are recast as sky, celestial lights, fragrance and wind. The shift is from a small constructed offering to wonder at the vast created world. Later lines ask for the grace that allows remembrance.",
+        "words": [
+          {
+            "gurmukhi": "ਗਗਨ",
+            "workingGloss": "Sky",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਥਾਲੁ",
+            "workingGloss": "Platter",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਆਰਤੀ",
+            "workingGloss": "Offering or worshipful praise",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "This is poetry and devotion, not a literal astrophysical model or a demand to reject every form of congregational worship.",
+        "reflection": "How does looking at the natural world change the size of your gratitude?",
+        "teachBack": "Name three elements of the cosmic aarti and describe what changes when the whole sky becomes the place of praise."
+      }
+    },
+    "sohila|sohila04": {
+      "unitId": "sohila04",
+      "sourceAnchor": {
+        "id": "sohila04.line01",
+        "sha256": "2243aee8ed18fd703a82d95448c9e1942b2bbcc6ae0513db5f42507853740902"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The mind can become crowded with desire and anger. The shabad turns toward the Guru, humble fellowship and Naam as a source of steadiness rather than leaving the mind to be ruled by its strongest impulses.",
+        "pa": "ਕਾਮ ਤੇ ਕ੍ਰੋਧ ਨਾਲ ਮਨ ਭਰ ਸਕਦਾ ਹੈ। ਬਾਣੀ ਗੁਰੂ, ਸੰਗਤ ਅਤੇ ਨਾਮ ਵੱਲ ਮੁੜ ਕੇ ਅੰਦਰਲੇ ਭਟਕਾਅ ਤੋਂ ਟਿਕਾਉ ਲੱਭਣ ਦੀ ਗੱਲ ਕਰਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "From inner turmoil toward spiritual support.",
+        "closeReading": "The opening names desire and anger; the succeeding language of bowing and seeking the holy congregation is a change of posture. The emphasis is on moving away from self-importance toward remembrance and disciplined humility.",
+        "words": [
+          {
+            "gurmukhi": "ਕਾਮਿ",
+            "workingGloss": "Desire",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕਰੋਧਿ",
+            "workingGloss": "Anger",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਾਧੂ",
+            "workingGloss": "Holy person or company in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not diagnose ordinary feelings as disease or use this shabad to shame someone for experiencing emotion. It calls for a transformed response.",
+        "reflection": "What helps you respond with steadiness when anger first rises?",
+        "teachBack": "What changes between the opening image of a crowded inner city and the later request for Naam?"
+      }
+    },
+    "sohila|sohila05": {
+      "unitId": "sohila05",
+      "sourceAnchor": {
+        "id": "sohila05.line01",
+        "sha256": "a80c87976186d249c309e0d6a7ac34091769b1a538b2239ef7409c99789f92a1"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Life is passing day by day; this shabad asks us not to waste the opportunity for remembrance and service. Its closing prayer seeks humility among those who live close to the Divine.",
+        "pa": "ਦਿਨ ਰਾਤ ਨਾਲ ਉਮਰ ਘਟਦੀ ਜਾਂਦੀ ਹੈ। ਸ਼ਬਦ ਯਾਦ ਦਿਵਾਉਂਦਾ ਹੈ ਕਿ ਸੇਵਾ, ਨਾਮ ਅਤੇ ਨਿਮਰਤਾ ਦਾ ਮੌਕਾ ਹੁਣ ਹੈ।"
+      },
+      "study": {
+        "focus": "Life’s urgency, service and humility.",
+        "closeReading": "The opening invites friends to listen because this is the time to serve. The phrase about day and night passing is followed by a request to put life’s purpose in order through the Guru. The ending seeks to be dust of the feet of the saintly: an image of radical humility.",
+        "words": [
+          {
+            "gurmukhi": "ਬੇਨੰਤੀ",
+            "workingGloss": "Supplication",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਉਧ",
+            "workingGloss": "Lifetime",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਟਹਲ",
+            "workingGloss": "Service",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not read the passing of time as a reason for panic or as a prediction about lifespan; this is a call to meaningful practice.",
+        "reflection": "Which act of care is worth doing today rather than postponing?",
+        "teachBack": "Why does the last shabad place service and humility next to awareness of time?"
+      }
+    },
+    "savaiye|savaiye01": {
+      "unitId": "savaiye01",
+      "sourceAnchor": {
+        "id": "savaiye01.line01",
+        "sha256": "c01176ae4f09dd620be823a3a8f4d7de7c7eb91a8f47b0be9a6d395c5c340db9"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The speaker has seen many disciplined religious paths, yet says that outward learning and practice cannot replace even a tiny measure of divine grace and loving connection.",
+        "pa": "ਅਨੇਕ ਧਾਰਮਿਕ ਰਾਹਾਂ ਤੇ ਤਪੱਸਿਆ ਦਾ ਜ਼ਿਕਰ ਹੈ, ਪਰ ਪ੍ਰੇਮ ਅਤੇ ਬਖ਼ਸ਼ਿਸ਼ ਤੋਂ ਬਿਨਾਂ ਸਿਰਫ਼ ਦਿਖਾਵਾ ਕਾਫ਼ੀ ਨਹੀਂ।"
+      },
+      "study": {
+        "focus": "The limit of outward discipline.",
+        "closeReading": "The stanza lists practitioners and approaches to spiritual life before changing emphasis to divine grace. The contrast asks how much outward effort accomplishes if the heart remains unchanged.",
+        "words": [
+          {
+            "gurmukhi": "ਜੋਗ",
+            "workingGloss": "Yogic practice",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਜਤੀ",
+            "workingGloss": "One practicing restraint",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕ੍ਰਿਪਾ",
+            "workingGloss": "Grace",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "This is an interpretive overview; it is not a rejection of all sincere spiritual disciplines.",
+        "reflection": "What inward quality should accompany a spiritual routine?",
+        "teachBack": "What is the stanza comparing with divine grace?"
+      }
+    },
+    "savaiye|savaiye02": {
+      "unitId": "savaiye02",
+      "sourceAnchor": {
+        "id": "savaiye02.line01",
+        "sha256": "708f27a9feed19d2f6b594f6d7e0e615702c127e364670db98b8aa2566e100d0"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Even royal splendour, decorated elephants and powerful possessions are temporary. They cannot be carried with us at the end of life.",
+        "pa": "ਰਾਜਸੀ ਠਾਠ ਤੇ ਧਨ-ਦੌਲਤ ਵੀ ਅਸਥਿਰ ਹਨ। ਅੰਤ ਵੇਲੇ ਮਨੁੱਖ ਖਾਲੀ ਹੱਥ ਜਾਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Power and wealth cannot remove impermanence.",
+        "closeReading": "The images of decorated royal life culminate in a stark closing contrast: however mighty a ruler, the person departs without those possessions.",
+        "words": [
+          {
+            "gurmukhi": "ਭੂਪਤਿ",
+            "workingGloss": "Ruler or king",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅੰਤ",
+            "workingGloss": "End",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "The stanza is not a claim that poverty is automatically virtuous. It asks what wealth can and cannot do.",
+        "reflection": "What do I value that cannot be purchased?",
+        "teachBack": "How does the closing image challenge the opening display of royal power?"
+      }
+    },
+    "savaiye|savaiye03": {
+      "unitId": "savaiye03",
+      "sourceAnchor": {
+        "id": "savaiye03.line01",
+        "sha256": "f45f80559d819444f412a032dd1c1eff1247df47ac23851983c167a9c859d4ca"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Conquering territories and receiving public acclaim does not make a life spiritually complete. The stanza asks what remains when victory and recognition end.",
+        "pa": "ਦੇਸ ਜਿੱਤਣਾ ਜਾਂ ਲੋਕਾਂ ਦੀ ਵਾਹ-ਵਾਹ ਹਾਸਲ ਕਰਨੀ ਅੰਤਿਮ ਮੰਜ਼ਿਲ ਨਹੀਂ। ਬਾਣੀ ਪੁੱਛਦੀ ਹੈ ਕਿ ਉਸ ਤੋਂ ਅੱਗੇ ਕੀ ਰਹਿ ਜਾਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Military triumph contrasted with divine remembrance.",
+        "closeReading": "Drums and victory announce human power; the last line points back to remembrance of the One. The argument builds through contrast rather than a literal military instruction.",
+        "words": [
+          {
+            "gurmukhi": "ਜੀਤ",
+            "workingGloss": "Victory",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਭਜੇ",
+            "workingGloss": "Remembered or devoted to",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Historical martial imagery is descriptive and theological; it is not permission for present-day violence.",
+        "reflection": "When can recognition distract from why we began a task?",
+        "teachBack": "What is contrasted with the noise of victory?"
+      }
+    },
+    "savaiye|savaiye04": {
+      "unitId": "savaiye04",
+      "sourceAnchor": {
+        "id": "savaiye04.line01",
+        "sha256": "693065b1687f1535dfee7b775c49bd0c8dd10bee12c9d9ff970183a36ac78222"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Pilgrimage, charity and self-restraint appear in this stanza, but outward acts by themselves do not replace sincere inner devotion.",
+        "pa": "ਤੀਰਥ, ਦਾਨ ਅਤੇ ਸੰਜਮ ਦਾ ਜ਼ਿਕਰ ਕਰਕੇ ਬਾਣੀ ਦਿਲ ਦੀ ਸਚੀ ਭਗਤੀ ਦੀ ਲੋੜ ਯਾਦ ਕਰਵਾਉਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Religious activity and inward orientation.",
+        "closeReading": "The list of commendable practices is deliberately expansive. The final comparison asks the reader whether method and display have displaced the purpose of devotion.",
+        "words": [
+          {
+            "gurmukhi": "ਤੀਰਥ",
+            "workingGloss": "Place of pilgrimage",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਦਾਨ",
+            "workingGloss": "Giving",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸੰਜਮ",
+            "workingGloss": "Restraint",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Avoid teaching that seva, charity or ethical restraint are worthless. The passage questions relying solely on their external form.",
+        "reflection": "How can generosity stay sincere when nobody sees it?",
+        "teachBack": "What is missing when a ritual becomes only a public display?"
+      }
+    },
+    "savaiye|savaiye05": {
+      "unitId": "savaiye05",
+      "sourceAnchor": {
+        "id": "savaiye05.line01",
+        "sha256": "f71458b3ec944aae1fd03844d83250cc8c6e3810ad518ed8f05cc8e5601717ff"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The stanza uses armed strength and a formidable army to remind us that even forceful worldly protection has limits; the deepest shelter is not military power alone.",
+        "pa": "ਤਾਕਤਵਰ ਫੌਜਾਂ ਤੇ ਹਥਿਆਰਾਂ ਦੀ ਤਸਵੀਰ ਹੈ, ਪਰ ਬਾਣੀ ਦੱਸਦੀ ਹੈ ਕਿ ਸਿਰਫ਼ ਬਾਹਰਲੀ ਤਾਕਤ ਸਦਾ ਦਾ ਆਸਰਾ ਨਹੀਂ।"
+      },
+      "study": {
+        "focus": "The limits of physical power.",
+        "closeReading": "The forceful names and descriptions of warriors give way to the reality of leaving the world. The stanza asks where ultimate reliance belongs.",
+        "words": [
+          {
+            "gurmukhi": "ਸਿਪਾਹ",
+            "workingGloss": "Soldiers",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਨਾਹ",
+            "workingGloss": "Armour",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਜਹਾਨ",
+            "workingGloss": "World",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not turn spiritual dependence into an argument against responsible self-defence, safety or care.",
+        "reflection": "What helps me remain responsible while remembering my limits?",
+        "teachBack": "What does the final line add after all the military images?"
+      }
+    },
+    "savaiye|savaiye06": {
+      "unitId": "savaiye06",
+      "sourceAnchor": {
+        "id": "savaiye06.line01",
+        "sha256": "4516dc895c8ddca911bbc5ec4982f201bb6a6b595f9f0540cd18a44e47fed9b4"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Strong warriors and impressive feats are placed beside the One who remains the source of gifts for countless seekers.",
+        "pa": "ਬਹਾਦਰ ਯੋਧਿਆਂ ਦੀ ਤਾਕਤ ਦੇ ਨਾਲ ਉਸ ਇੱਕ ਦਾਤਾਰ ਦੀ ਯਾਦ ਆਉਂਦੀ ਹੈ ਜਿਸ ਕੋਲ ਅਨੇਕ ਮੰਗਣ ਵਾਲੇ ਹਨ।"
+      },
+      "study": {
+        "focus": "Human courage and the Divine as giver.",
+        "closeReading": "The stanza’s bold imagery should be read as a contrast of scale: remarkable people remain dependent on something greater than their strength.",
+        "words": [
+          {
+            "gurmukhi": "ਬੀਰ",
+            "workingGloss": "Warrior or brave person",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਦਿਵੱਯਾ",
+            "workingGloss": "Giver in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Some unusual historical words need qualified Dasam Bani grammar review before exact translation.",
+        "reflection": "How is courage different from believing oneself all-powerful?",
+        "teachBack": "Who is presented as the source of gifts beyond human strength?"
+      }
+    },
+    "savaiye|savaiye07": {
+      "unitId": "savaiye07",
+      "sourceAnchor": {
+        "id": "savaiye07.line01",
+        "sha256": "38514953c611d7e5a24b3ba04fc53842e758698fc5503a4d3a3675faad688d56"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The stanza describes many kinds of beings across time and turns the reader toward the One who is not restricted to one generation or realm.",
+        "pa": "ਅਤੀਤ, ਵਰਤਮਾਨ ਅਤੇ ਭਵਿੱਖ ਦੇ ਅਨੇਕ ਜੀਵਾਂ ਦਾ ਜ਼ਿਕਰ ਕਰਕੇ ਧਿਆਨ ਇੱਕ ਅਕਾਲ ਸਰੋਤ ਵੱਲ ਜਾਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Remembrance extends beyond one time and group.",
+        "closeReading": "Notice the widening circles of beings and time. The text invites awe but should not be forced into a literal modern taxonomy of supernatural creatures.",
+        "words": [
+          {
+            "gurmukhi": "ਭੂਤ",
+            "workingGloss": "Past",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਭਵਿੱਖ",
+            "workingGloss": "Future",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਜਪੈਂਗੇ",
+            "workingGloss": "Will remember or recite",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Mythic or cosmic lists in devotional poetry are not evidence of particular physical creatures.",
+        "reflection": "What changes when my perspective expands beyond my own generation?",
+        "teachBack": "How does the stanza widen the circle of remembrance?"
+      }
+    },
+    "savaiye|savaiye08": {
+      "unitId": "savaiye08",
+      "sourceAnchor": {
+        "id": "savaiye08.line01",
+        "sha256": "0c9d0507a8a7d05f1eb4d8981c6f8e58dfd56881ad0c02eed532e951165ba7d5"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Even rulers of vast kingdoms are subject to limits. The stanza turns attention from rank and power to the grace of the One.",
+        "pa": "ਤਿੰਨ ਲੋਕਾਂ ਦੇ ਰਾਜਿਆਂ ਵਰਗੀ ਵੱਡੀ ਤਾਕਤ ਵੀ ਅੰਤਿਮ ਸਹਾਰਾ ਨਹੀਂ। ਧਿਆਨ ਪ੍ਰਭੂ ਦੀ ਕਿਰਪਾ ਵੱਲ ਹੈ।"
+      },
+      "study": {
+        "focus": "No earthly status is permanent.",
+        "closeReading": "Titles of kings and cosmic rulership build the comparison; then grace becomes the decisive term. Its images should be read in their poetic register.",
+        "words": [
+          {
+            "gurmukhi": "ਇੰਦ੍ਰ",
+            "workingGloss": "Indra, named in traditional imagery",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਰਾਜ",
+            "workingGloss": "Rule or kingdom",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪ੍ਰਸ",
+            "workingGloss": "Grace in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not read this as a guarantee of literal immortality for anyone who says particular words.",
+        "reflection": "What is more enduring than a title?",
+        "teachBack": "How do kings and rulers function in the stanza’s contrast?"
+      }
+    },
+    "savaiye|savaiye09": {
+      "unitId": "savaiye09",
+      "sourceAnchor": {
+        "id": "savaiye09.line01",
+        "sha256": "ca8affee7b33fd075cdcf4eb37285861ade11eb128e31daa49b1855c0ef704fd"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Closing the eyes or performing impressive austerities is not the same as loving union with the Divine. The stanza states its main emphasis clearly: love matters.",
+        "pa": "ਸਿਰਫ਼ ਅੱਖਾਂ ਮੀਟ ਕੇ ਬੈਠਣਾ ਜਾਂ ਕਠਨ ਤਪ ਕਰਨਾ ਹੀ ਸਭ ਕੁਝ ਨਹੀਂ। ਬਾਣੀ ਪ੍ਰੇਮ ਨੂੰ ਮੂਲ ਗੱਲ ਵਜੋਂ ਸਾਹਮਣੇ ਰੱਖਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "The decisive place of love.",
+        "closeReading": "The image of a motionless person or crane-like display introduces a criticism of outward piety. The closing declaration about prem is the interpretive pivot of the ten Savaiye.",
+        "words": [
+          {
+            "gurmukhi": "ਧਿਆਨ",
+            "workingGloss": "Contemplative attention",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪ੍ਰੇਮ",
+            "workingGloss": "Love",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪ੍ਰਭ",
+            "workingGloss": "The Divine",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "The text does not make sincere meditation wrong; it warns against confusing posture with the inner relationship.",
+        "reflection": "Can love be recognized in daily conduct rather than just an appearance?",
+        "teachBack": "What does the final declaration add to the critique of outward stillness?"
+      }
+    },
+    "savaiye|savaiye10": {
+      "unitId": "savaiye10",
+      "sourceAnchor": {
+        "id": "savaiye10.line01",
+        "sha256": "02ccd261ced71cb466d56d8370cadd133227a0206c8d9f096a0888b90cc80c47"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "This stanza compares different objects and forms of worship and warns that external symbols by themselves do not ensure insight into the One.",
+        "pa": "ਪੂਜਾ ਦੇ ਵੱਖਰੇ ਚਿੰਨ੍ਹ ਤੇ ਰੀਤਾਂ ਦਿਖਾਏ ਗਏ ਹਨ। ਬਾਣੀ ਯਾਦ ਦਿਵਾਉਂਦੀ ਹੈ ਕਿ ਚਿੰਨ੍ਹ ਹੀ ਅੰਦਰਲੀ ਸਮਝ ਨਹੀਂ ਬਣਾਉਂਦੇ।"
+      },
+      "study": {
+        "focus": "Distinguishing sacred objects from inner insight.",
+        "closeReading": "Several ritual forms appear in rapid succession before the closing reflection on not discerning the Divine. The learner should see the original terms and consider the context rather than using a short overview to insult others.",
+        "words": [
+          {
+            "gurmukhi": "ਪਾਹਨ",
+            "workingGloss": "Stone",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕੂਰ ਕ੍ਰਿਆ",
+            "workingGloss": "Ritual action presented critically in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "This wording refers to historical religious practices. Do not repurpose the lesson to mock neighbours or other faith communities.",
+        "reflection": "Where does a meaningful symbol help me, and where can it become an empty substitute?",
+        "teachBack": "How does the final line relate to the objects listed earlier?"
+      }
+    },
+    "jaap|jaap001": {
+      "unitId": "jaap001",
+      "sourceAnchor": {
+        "id": "jaap001.line01",
+        "sha256": "d850d3607c0a68c4c526c05a44085b0f15bd7f7241b92ca7c16e66de4a282a77"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The One cannot be confined to caste, colour, shape, clothing or a visible mark. Human language may praise, but it cannot completely describe the Divine.",
+        "pa": "ਅਕਾਲ ਪੁਰਖ ਨੂੰ ਜਾਤ, ਰੰਗ, ਆਕਾਰ ਜਾਂ ਭੇਖ ਵਿਚ ਕੈਦ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਅਸੀਂ ਗੁਣ ਗਾ ਸਕਦੇ ਹਾਂ, ਪਰ ਉਸ ਦੀ ਪੂਰੀ ਹੱਦ ਨਹੀਂ ਬੰਨ੍ਹ ਸਕਦੇ।"
+      },
+      "study": {
+        "focus": "Beyond human labels and descriptions.",
+        "closeReading": "The opening names common human ways of classifying a person, then denies that any can enclose the Divine. The final question about the One’s names opens the long sequence of praise that follows.",
+        "words": [
+          {
+            "gurmukhi": "ਚੱਕ੍ਰ ਚਿਹਨ",
+            "workingGloss": "Visible mark or identifying sign",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਬਰਨ",
+            "workingGloss": "Colour or social description",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਜਾਤਿ",
+            "workingGloss": "Social category/caste",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਨਭਉ",
+            "workingGloss": "Self-existent or beyond ordinary apprehension; verify grammar",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Jaap is multilingual poetry. The opening is not a license to erase human experiences of caste injustice; it calls into question imposing limiting labels on the One.",
+        "reflection": "What changes when I resist reducing anyone to a label?",
+        "teachBack": "Why does the poem ask how the many names could all be told?"
+      }
+    },
+    "jaap|jaap002": {
+      "unitId": "jaap002",
+      "sourceAnchor": {
+        "id": "jaap002.line01",
+        "sha256": "e208dc126558823576f80992a6b19943825e398e205e908389d5078e6e4453f1"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The repeated salutations remember the timeless, compassionate, formless and incomparable One.",
+        "pa": "ਇੱਥੇ ਵਾਰ-ਵਾਰ ਨਮਸਕਾਰ ਕਰਦਿਆਂ ਅਕਾਲ, ਕਿਰਪਾਲ, ਅਰੂਪ ਅਤੇ ਅਨੂਪ ਪ੍ਰਭੂ ਨੂੰ ਯਾਦ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Four names that work together.",
+        "closeReading": "The repetition makes each word a new focus for attention. Timelessness and compassion stand next to formlessness and incomparability, rather than suggesting four different divine beings.",
+        "words": [
+          {
+            "gurmukhi": "ਅਕਾਲੇ",
+            "workingGloss": "Beyond time or death",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕ੍ਰਿਪਾਲੇ",
+            "workingGloss": "Compassionate",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਰੂਪੇ",
+            "workingGloss": "Not limited to form",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਨੂਪੇ",
+            "workingGloss": "Without comparison",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "These are close working glosses; the morphology, pronunciation and metre still require qualified review.",
+        "reflection": "Which attribute opens a question rather than merely giving you an answer?",
+        "teachBack": "What is the function of repeating ਨਮਸਤੰ?"
+      }
+    },
+    "jaap|jaap003": {
+      "unitId": "jaap003",
+      "sourceAnchor": {
+        "id": "jaap003.line01",
+        "sha256": "7f5eef81a783c560d4f65c6cee2c9d94b0e69ebe22710ddf045f47c2dc5389fa"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The salutation continues: the One cannot be contained in ordinary appearance, depiction, body or birth.",
+        "pa": "ਨਮਸਕਾਰ ਦੀ ਲੜੀ ਵਿਚ ਰੂਪ, ਲਿਖਤ, ਦੇਹ ਅਤੇ ਜਨਮ ਦੀਆਂ ਹੱਦਾਂ ਤੋਂ ਪਰੇ ਸਿਰਜਣਹਾਰ ਨੂੰ ਯਾਦ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "The Divine is more than what can be represented.",
+        "closeReading": "Short rhythmical expressions give the mind something to hold while pointing to what those expressions cannot capture. Study these in their context, without inventing a detailed biological claim.",
+        "words": [
+          {
+            "gurmukhi": "ਅਲੇਖੇ",
+            "workingGloss": "Beyond depiction or writing",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਕਾਏ",
+            "workingGloss": "Without a limiting body",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਜਾਏ",
+            "workingGloss": "Unborn",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "A poetic denial of bodily limits is not a testable claim about human physiology.",
+        "reflection": "When can a picture help understanding, and when can it mislead?",
+        "teachBack": "How does this chhand extend the first chhand’s refusal of fixed appearance?"
+      }
+    },
+    "jaap|jaap004": {
+      "unitId": "jaap004",
+      "sourceAnchor": {
+        "id": "jaap004.line01",
+        "sha256": "0f99f881ba167123c6f030e26ea1a94d87000e5f30e5c1bc0daebf91978de500"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The One is praised as not subject to ordinary destruction, not captured by one assigned name or fixed place.",
+        "pa": "ਇਸ ਛੰਦ ਵਿਚ ਉਸ ਪ੍ਰਭੂ ਨੂੰ ਯਾਦ ਕੀਤਾ ਗਿਆ ਹੈ ਜੋ ਨਾਸ, ਇੱਕੋ ਨਾਂ ਜਾਂ ਇੱਕੋ ਥਾਂ ਦੀ ਹੱਦ ਵਿਚ ਨਹੀਂ ਆਉਂਦਾ।"
+      },
+      "study": {
+        "focus": "No final container for the One.",
+        "closeReading": "The rhythm repeats several negative attributes. Their shared poetic movement is to remove limitations rather than offer competing portraits of the Divine.",
+        "words": [
+          {
+            "gurmukhi": "ਅਗੰਜੇ",
+            "workingGloss": "Unconquered or indestructible, pending exact gloss",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਭੰਜੇ",
+            "workingGloss": "Unbroken",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਨਾਮੇ",
+            "workingGloss": "Beyond a single name",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Word roots and specific translations must be checked against a Dasam Bani glossary, not generated from superficial similarities.",
+        "reflection": "Which label do you treat as more final than it should be?",
+        "teachBack": "What do the repeated negatives teach about trying to define the One?"
+      }
+    },
+    "jaap|jaap005": {
+      "unitId": "jaap005",
+      "sourceAnchor": {
+        "id": "jaap005.line01",
+        "sha256": "eaf65febb1e3bd4766d1389f3750b6e6d0eb16ae4848b677fac474874a55b933"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Another set of salutations points beyond ordinary human classifications of action, dwelling and name.",
+        "pa": "ਨਮਸਕਾਰ ਦੇ ਨਵੇਂ ਸ਼ਬਦ ਮਨੁੱਖੀ ਕੰਮ, ਵਸੇਬੇ ਅਤੇ ਨਾਵਾਂ ਦੀਆਂ ਹੱਦਾਂ ਤੋਂ ਪਰੇ ਧਿਆਨ ਲੈ ਜਾਂਦੇ ਹਨ।"
+      },
+      "study": {
+        "focus": "The sequence of words, not isolated labels.",
+        "closeReading": "Chhand 5 continues the rhythm of address. The safest first step is to see its relationship to the surrounding salutations before insisting on a single English meaning for every historically layered term.",
+        "words": [
+          {
+            "gurmukhi": "ਨਮਸਤੰ",
+            "workingGloss": "I offer salutations",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਨਾਮੰ",
+            "workingGloss": "Without a restricting name",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਧਾਮੰ",
+            "workingGloss": "Not confined to a dwelling, draft gloss",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Terms such as ਅਕਰਮੰ and ਅਧਰਮੰ require contextual expert adjudication; the app must not teach an unqualified claim that the Divine is “unethical.”",
+        "reflection": "Can a term mean something different in devotional poetry than in daily speech?",
+        "teachBack": "How does the larger sequence keep a single ambiguous word from being misunderstood?"
+      }
+    },
+    "jaap|jaap006": {
+      "unitId": "jaap006",
+      "sourceAnchor": {
+        "id": "jaap006.line01",
+        "sha256": "fbc98d08454ea2099390f83b783ec4efc111778aa0ccccf0bde147a6a0efad68"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The One is saluted as unconquered and beyond fear or injury; the language expresses trust rather than human invulnerability.",
+        "pa": "ਇੱਥੇ ਅਜਿੱਤ ਅਤੇ ਨਿਡਰ ਪ੍ਰਭੂ ਨੂੰ ਨਮਸਕਾਰ ਹੈ। ਇਹ ਮਨੁੱਖ ਨੂੰ ਅਜਿੱਤ ਬਣਨ ਦੀ ਗਾਰੰਟੀ ਨਹੀਂ, ਭਰੋਸੇ ਦੀ ਭਾਸ਼ਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Courageful names of the One.",
+        "closeReading": "Words associated with defeat and fear carry devotional force here. The surrounding salutation sequence keeps the praise directed to the Divine rather than a mortal warrior.",
+        "words": [
+          {
+            "gurmukhi": "ਅਜੀਤੇ",
+            "workingGloss": "Unconquered",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਭੀਤੇ",
+            "workingGloss": "Fearless",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਨਮਸਤੰ",
+            "workingGloss": "Salutation",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not claim that reciting these words prevents physical injury. Pronunciation and nuanced lexicon remain review-needed.",
+        "reflection": "How can faith support courage without denying real danger?",
+        "teachBack": "Whose qualities are being praised in these four lines?"
+      }
+    },
+    "jaap|jaap007": {
+      "unitId": "jaap007",
+      "sourceAnchor": {
+        "id": "jaap007.line01",
+        "sha256": "e6530ebe381d0d38d208885013d9c824c765514ca7fbc8dfe7decae1442ff910"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The One is remembered as without beginning and beyond ordinary cutting or measuring, extending the image of the limitless.",
+        "pa": "ਉਹ ਇੱਕ ਅਨਾਦਿ ਅਤੇ ਮਾਪ ਤੋਂ ਪਰੇ ਹੈ। ਸ਼ਬਦ ਵਾਰ-ਵਾਰ ਹੱਦਾਂ ਤੋਂ ਉੱਚੀ ਹਸਤੀ ਵੱਲ ਧਿਆਨ ਲੈ ਜਾਂਦੇ ਹਨ।"
+      },
+      "study": {
+        "focus": "Beginningless and unfathomable praise.",
+        "closeReading": "The opening chhands cumulatively build a language of awe. Rather than memorizing unreviewed word lists, compare their shared movement from human limits toward the One beyond them.",
+        "words": [
+          {
+            "gurmukhi": "ਅਨਾਦੇ",
+            "workingGloss": "Without a beginning",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਛੇਦੇ",
+            "workingGloss": "Not cut or divided",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਗਾਧੇ",
+            "workingGloss": "Unfathomably deep",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Some nearby source spellings and phonemes vary across digital transcriptions; santhiya remains a separate human-led task.",
+        "reflection": "What does awe feel like when you accept that your knowledge is incomplete?",
+        "teachBack": "What has changed from Jaap’s first chhand to this set of salutations?"
+      }
+    },
+    "chaupai|chaupai-rehras01": {
+      "unitId": "chaupai-rehras01",
+      "sourceAnchor": {
+        "id": "chaupai-rehras01.line01",
+        "sha256": "294632c9cb55d436f21ebae0f828930a6cd5cd3a9cef1ba259b90f5723717177"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The opening asks the Divine to protect the speaker, guide the mind and keep it close in humble refuge.",
+        "pa": "ਸ਼ੁਰੂ ਵਿਚ ਰੱਖਿਆ ਦੀ ਬੇਨਤੀ ਹੈ। ਮਨ ਪ੍ਰਭੂ ਦੇ ਚਰਨਾਂ ਨਾਲ ਜੁੜਿਆ ਰਹੇ ਅਤੇ ਉਹ ਆਪਣੇ ਸੇਵਕ ਦੀ ਸੰਭਾਲ ਕਰੇ।"
+      },
+      "study": {
+        "focus": "Protection joined to inner orientation.",
+        "closeReading": "The request for safety sits beside a request about where the mind should remain. This is more than a demand for a particular outcome; the speaker asks to live in relationship with the Divine.",
+        "words": [
+          {
+            "gurmukhi": "ਰੱਛਾ",
+            "workingGloss": "Protection",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਚਰਨਨ",
+            "workingGloss": "Feet; humble refuge",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪ੍ਰਤਿਪਾਰਾ",
+            "workingGloss": "Care or sustenance",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "A prayer for protection is not a promise that hardships never happen.",
+        "reflection": "How can seeking safety and seeking a steadier mind belong together?",
+        "teachBack": "Where in the first pauri does the prayer move from protection to relationship?"
+      }
+    },
+    "chaupai|chaupai-rehras02": {
+      "unitId": "chaupai-rehras02",
+      "sourceAnchor": {
+        "id": "chaupai-rehras02.line01",
+        "sha256": "1545c1c862bbfc8454b1d1f58185eeb11bc8a652105e39edd8aadd857a23b4fc"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The prayer asks for defence against harm and wellbeing for one’s family and community.",
+        "pa": "ਬੇਨਤੀ ਵਿਚ ਦੁੱਖ ਤੇ ਵੈਰ ਤੋਂ ਬਚਾਅ ਨਾਲ ਪਰਿਵਾਰ ਅਤੇ ਸਿੱਖ ਸੇਵਕਾਂ ਦੀ ਸੁਖ-ਸ਼ਾਂਤੀ ਵੀ ਮੰਗੀ ਜਾਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Protection of self and community.",
+        "closeReading": "The movement expands from “me” to family and other servants or Sikhs. It is meaningful to study this communal scope alongside the martial language rather than isolating one aggressive phrase.",
+        "words": [
+          {
+            "gurmukhi": "ਦੁਸਟ",
+            "workingGloss": "Hostile or wicked in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪਰਿਵਾਰਾ",
+            "workingGloss": "Family",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸੇਵਕ",
+            "workingGloss": "Servant or devotee",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Language about destroying enemies belongs to a particular literary and historical context. Do not use a devotional lesson to label actual neighbours as enemies or excuse violence.",
+        "reflection": "Whose safety do I include when I pray for my own?",
+        "teachBack": "What does the stanza ask for beyond the speaker alone?"
+      }
+    },
+    "chaupai|chaupai-rehras03": {
+      "unitId": "chaupai-rehras03",
+      "sourceAnchor": {
+        "id": "chaupai-rehras03.line01",
+        "sha256": "b5352f44c5121fb7f40a8e19a128d1a20f1ae4e6c862a80d7412802804da3864"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The speaker asks for help against danger and for a lasting thirst for divine remembrance.",
+        "pa": "ਸੰਕਟ ਤੋਂ ਬਚਾਅ ਦੇ ਨਾਲ ਭਜਨ ਦੀ ਪਿਆਸ ਕਾਇਮ ਰਹਿਣ ਦੀ ਬੇਨਤੀ ਵੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Courage and remembrance.",
+        "closeReading": "The final request for longing toward devotion gives direction to the earlier images of protection. Learning should preserve both the martial and inward language.",
+        "words": [
+          {
+            "gurmukhi": "ਆਸਾ",
+            "workingGloss": "Hope",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਭਜਨ",
+            "workingGloss": "Devotional remembrance",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪਿਯਾਸਾ",
+            "workingGloss": "Thirst or longing",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "The image of a “foe” should not be automatically converted into a diagnosis of someone’s psychology.",
+        "reflection": "What kind of longing would help direct your actions?",
+        "teachBack": "How does the final line reshape the earlier appeal for protection?"
+      }
+    },
+    "chaupai|chaupai-rehras04": {
+      "unitId": "chaupai-rehras04",
+      "sourceAnchor": {
+        "id": "chaupai-rehras04.line01",
+        "sha256": "a19083cc6772a21afa01137804975d7cf0b05f8c2be83e2c92e54abf8289e81b"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The speaker pledges reliance on the One and asks that the community be carried through danger.",
+        "pa": "ਬਾਣੀ ਵਿਚ ਹੋਰ ਆਸਰਿਆਂ ਤੋਂ ਉਪਰ ਪ੍ਰਭੂ ਉੱਤੇ ਭਰੋਸਾ ਅਤੇ ਸੇਵਕ ਸਿੱਖਾਂ ਦੀ ਰੱਖਿਆ ਦੀ ਬੇਨਤੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Exclusive reliance and responsibility.",
+        "closeReading": "The pauri places trust and a plea for others side by side. Martial expressions are present, but a learning application should not flatten them into an invitation to personal aggression.",
+        "words": [
+          {
+            "gurmukhi": "ਧਯਾਊਂ",
+            "workingGloss": "I contemplate or remember",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸੇਵਕ ਸਿੱਖਯ",
+            "workingGloss": "Servant Sikhs in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "The boundaries of historically contextual enemy-language need qualified literary review.",
+        "reflection": "What does loyalty to the One look like in the way I treat others?",
+        "teachBack": "What are the two kinds of requests in this pauri?"
+      }
+    },
+    "chaupai|chaupai-rehras05": {
+      "unitId": "chaupai-rehras05",
+      "sourceAnchor": {
+        "id": "chaupai-rehras05.line01",
+        "sha256": "cf2903fb1e17e06783dee586f85476055f28f6605409136068dbf8383768cc0f"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The prayer asks the Divine to remain close through fear, even the fear of death.",
+        "pa": "ਮੌਤ ਦੇ ਡਰ ਸਮੇਤ ਹਰ ਸੰਕਟ ਵੇਲੇ ਸਹਾਰੇ ਅਤੇ ਰੱਖਿਆ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Protection through mortality.",
+        "closeReading": "The appeal becomes more personal: the speaker asks to be lifted up when afraid. It expresses dependence and hope, not an empirically guaranteed escape from danger.",
+        "words": [
+          {
+            "gurmukhi": "ਮਰਨ ਕਾਲ",
+            "workingGloss": "Time of death",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਤ੍ਰਾਸ",
+            "workingGloss": "Fear",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਉਬਰਿਯੈ",
+            "workingGloss": "Rescue or uplift",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not tell vulnerable people that danger can be ignored because the prayer has been recited.",
+        "reflection": "What support helps a person face fear more wisely?",
+        "teachBack": "How does this pauri describe the speaker’s relationship to fear?"
+      }
+    },
+    "chaupai|chaupai-rehras06": {
+      "unitId": "chaupai-rehras06",
+      "sourceAnchor": {
+        "id": "chaupai-rehras06.line01",
+        "sha256": "bfc2d1793ff8f8e089ce278fb048549c6df01df92ce7f422b70ce3b8b7ad2e19"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The Divine is addressed as protector, helper of the humble and Sovereign beyond ordinary limits.",
+        "pa": "ਰੱਖਣਹਾਰ, ਦੀਨਬੰਧੂ ਅਤੇ ਸਭ ਤੋਂ ਵੱਡੇ ਸਹਾਰੇ ਨੂੰ ਯਾਦ ਕਰਕੇ ਰੱਖਿਆ ਮੰਗੀ ਗਈ ਹੈ।"
+      },
+      "study": {
+        "focus": "Names of shelter and sovereignty.",
+        "closeReading": "Each title develops the speaker’s trust in the One. The phrase about the fourteen realms is a traditional cosmic image of breadth, not modern astronomical measurement.",
+        "words": [
+          {
+            "gurmukhi": "ਰਾਖਨਹਾਰੇ",
+            "workingGloss": "Protector",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਦੀਨਬੰਧੁ",
+            "workingGloss": "Companion of the lowly",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਚਤੁਰਦਸ",
+            "workingGloss": "Fourteen in traditional cosmology",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Treat cosmic imagery as poetry in its historical context, not a scientific map.",
+        "reflection": "Whom do I need to include in the care shown to the lowly?",
+        "teachBack": "How do the various titles expand the idea of protection?"
+      }
+    },
+    "chaupai|chaupai-rehras07": {
+      "unitId": "chaupai-rehras07",
+      "sourceAnchor": {
+        "id": "chaupai-rehras07.line01",
+        "sha256": "72f797acea32f9ea55f326771de27e38f36bdd9ddc0e4e8c0397c5c80a5ee62b"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The stanza places famous figures of traditional cosmology inside time, while pointing beyond them toward the One.",
+        "pa": "ਬ੍ਰਹਮਾ, ਸ਼ਿਵ ਅਤੇ ਵਿਸ਼ਨੂ ਦੇ ਨਾਮ ਲੈ ਕੇ ਵੀ ਬਾਣੀ ਸਮੇਂ ਤੇ ਹੱਦਾਂ ਤੋਂ ਪਰੇ ਅਸਲ ਸਹਾਰੇ ਵੱਲ ਧਿਆਨ ਕਰਵਾਉਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "The changing within time and the One beyond it.",
+        "closeReading": "The names of divine figures are used within the poem’s traditional vocabulary. The important comparison is that manifestations occur in time; do not collapse the imagery into a literal historical timetable.",
+        "words": [
+          {
+            "gurmukhi": "ਕਾਲ",
+            "workingGloss": "Time or death, context-sensitive",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਵਤਰਾ",
+            "workingGloss": "Appeared or took form",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "This is a theological poem, not data proving a precise age of the universe.",
+        "reflection": "What helps me remember that even impressive systems change?",
+        "teachBack": "What contrast does the repetition of ਕਾਲ create?"
+      }
+    },
+    "anand|anand01": {
+      "unitId": "anand01",
+      "sourceAnchor": {
+        "id": "anand01.line01",
+        "sha256": "d14d993865589bd7856dae09b4db6212bebdc276bcfddbeee5f299a7048d2d85"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The opening celebrates a kind of bliss connected with finding the True Guru. The mind feels a deep, natural song of joy through the Guru’s Sabad.",
+        "pa": "ਪਹਿਲੀ ਪਉੜੀ ਵਿਚ ਸਤਿਗੁਰੂ ਨੂੰ ਪਾ ਕੇ ਅੰਦਰ ਅਨੰਦ ਉਪਜਣ ਦੀ ਖੁਸ਼ੀ ਹੈ। ਮਨ ਵਿਚ ਸਹਜ ਅਤੇ ਸ਼ਬਦ ਦੀ ਵਡਿਆਈ ਵੱਜਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Joy as encounter with the Guru’s wisdom.",
+        "closeReading": "The opening addresses the speaker’s mother in intimate language. The discovery of the Satiguru leads to a celebration in the mind. The imagery of instruments and song should not be reduced to an external concert alone.",
+        "words": [
+          {
+            "gurmukhi": "ਅਨੰਦੁ",
+            "workingGloss": "Deep joy or bliss",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਤਿਗੁਰੂ",
+            "workingGloss": "True Guru",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਹਜ",
+            "workingGloss": "Steadiness or equipoise",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਬਦ",
+            "workingGloss": "The Guru’s Word",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "SikhRI interprets this as durable bliss rather than fleeting pleasure. Treat the educational comparison as interpretation, not a promise of constant happy emotions.",
+        "reflection": "What is different between excitement and a grounded sense of joy?",
+        "teachBack": "Why does the Guru appear in the first and final lines of this pauri?"
+      }
+    },
+    "anand|anand02": {
+      "unitId": "anand02",
+      "sourceAnchor": {
+        "id": "anand02.line01",
+        "sha256": "7c5ce0b487e7007fad427b32dd05e37214d1909e5a760e8866235fb39c353903"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The speaker addresses the mind: stay connected to the Divine and do not forget the source of comfort and guidance.",
+        "pa": "ਆਪਣੇ ਮਨ ਨੂੰ ਆਖਿਆ ਜਾਂਦਾ ਹੈ: ਹਮੇਸ਼ਾ ਹਰਿ ਨਾਲ ਜੁੜਿਆ ਰਹੁ, ਉਸ ਸਹਾਰੇ ਨੂੰ ਨਾ ਵਿਸਾਰ।"
+      },
+      "study": {
+        "focus": "A direct conversation with the mind.",
+        "closeReading": "The word “mind” at the opening makes this intimate rather than abstract. The invitation to remain with the One and move through sorrow sits in a larger teaching of remembrance, not a demand to hide feelings.",
+        "words": [
+          {
+            "gurmukhi": "ਮਨ",
+            "workingGloss": "Mind",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਨਾਲੇ",
+            "workingGloss": "With or together",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਵਿਸਾਰੇ",
+            "workingGloss": "Forget",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "It should not be presented as clinical treatment for sadness or a promise that grief cannot occur.",
+        "reflection": "What gentle reminder would you give your mind at a difficult moment?",
+        "teachBack": "To whom does the speaker speak, and what is repeatedly requested?"
+      }
+    },
+    "anand|anand03": {
+      "unitId": "anand03",
+      "sourceAnchor": {
+        "id": "anand03.line01",
+        "sha256": "17a3df037b6a8cb1eed60022b096fdf2e615ea910847499b3b6dd808b8e57bd8"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Everything the speaker truly needs is held within the True One. The pauri turns from asking for things to cultivating praise and Naam within the mind.",
+        "pa": "ਸੱਚੇ ਸਾਹਿਬ ਕੋਲ ਘਾਟ ਨਹੀਂ। ਪਉੜੀ ਮੰਗਣ ਤੋਂ ਅੱਗੇ ਮਨ ਵਿਚ ਨਾਮ ਅਤੇ ਸਿਫ਼ਤ ਵਸਾਉਣ ਵੱਲ ਧਿਆਨ ਕਰਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Abundance and gratitude.",
+        "closeReading": "The repeated rhetorical question emphasizes the Giver’s abundance. The movement toward praise and Naam keeps this from becoming simply a request for material benefits.",
+        "words": [
+          {
+            "gurmukhi": "ਸਾਚੇ ਸਾਹਿਬਾ",
+            "workingGloss": "O True Sovereign",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਿਫਤਿ ਸਲਾਹ",
+            "workingGloss": "Praise",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਨਾਮੁ",
+            "workingGloss": "Divine Name/remembered presence",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "A phrase about the One having everything is not a guarantee that every personal wish is granted.",
+        "reflection": "What can gratitude change even before circumstances change?",
+        "teachBack": "How does the pauri connect abundance to remembrance?"
+      }
+    },
+    "anand|anand04": {
+      "unitId": "anand04",
+      "sourceAnchor": {
+        "id": "anand04.line01",
+        "sha256": "337f354dbbf5162aa6939b9088387a0f09401ba8606e04ad5e065f33e7f1c354"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "True Naam is described as the speaker’s support, easing the hunger of craving and bringing inward calm.",
+        "pa": "ਸੱਚਾ ਨਾਮ ਆਸਰਾ ਬਣਦਾ ਹੈ; ਤ੍ਰਿਸ਼ਨਾ ਦੀ ਭੁੱਖ ਘਟਦੀ ਹੈ ਅਤੇ ਮਨ ਨੂੰ ਸ਼ਾਂਤੀ ਮਿਲਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "A source of steadiness stronger than craving.",
+        "closeReading": "The repeated refrain of Naam as support frames the movement. The pauri uses inner hunger and contentment imagery rather than prescribing a dietary practice.",
+        "words": [
+          {
+            "gurmukhi": "ਆਧਾਰੋ",
+            "workingGloss": "Support or foundation",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਭੁਖਾ",
+            "workingGloss": "Hungers or cravings in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਾਂਤਿ",
+            "workingGloss": "Peace",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not confuse metaphorical hunger here with physical starvation or make claims about medical appetite control.",
+        "reflection": "Where does wanting more make it harder to notice what is enough?",
+        "teachBack": "Which recurring phrase tells you what the speaker relies upon?"
+      }
+    },
+    "anand|anand05": {
+      "unitId": "anand05",
+      "sourceAnchor": {
+        "id": "anand05.line01",
+        "sha256": "295aeebfe78204c9e7cd427cbf3b58bd9c253d8085999e50d85718d4e45f6f4f"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The fortunate inner home resounds with Sabad. The stanza describes freedom from impulses that once overpowered the mind.",
+        "pa": "ਮਨ ਦੇ ਸੁਭਾਗੇ ਘਰ ਵਿਚ ਸ਼ਬਦ ਦੀ ਧੁਨ ਹੈ। ਅੰਦਰਲੇ ਵਿਕਾਰਾਂ ਦੇ ਵੱਸ ਘਟਣ ਦੀ ਤਸਵੀਰ ਦਿੱਤੀ ਗਈ ਹੈ।"
+      },
+      "study": {
+        "focus": "Inner music and transformation.",
+        "closeReading": "The poetic language of five sounds, the five troublemakers and unstruck melody expresses a transformed spiritual condition. It belongs to Gurbani’s symbolism of the mind, not a numerical recipe.",
+        "words": [
+          {
+            "gurmukhi": "ਪੰਚ ਸਬਦ",
+            "workingGloss": "Five sounds or forms in a symbolic context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਅਨਹਦ",
+            "workingGloss": "Unstruck or limitless sound imagery",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਪੰਚ ਦੂਤ",
+            "workingGloss": "Five disruptive tendencies",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "No specific sound frequency, neurological mechanism or promised effect is established by this metaphor.",
+        "reflection": "What habits lose strength when attention grows steadier?",
+        "teachBack": "How does the imagery of music describe an inner transformation?"
+      }
+    },
+    "anand|anand06": {
+      "unitId": "anand06",
+      "sourceAnchor": {
+        "id": "anand06.line01",
+        "sha256": "36cc4db202331c4320c31cc03d704cb9a7a928001d9d4c31580b3f21e5999798"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Without a sincere connection to the One, the body’s life feels spiritually unsupported; the speaker asks for grace and the guidance of Sabad.",
+        "pa": "ਸੱਚੀ ਲਿਵ ਤੋਂ ਬਿਨਾਂ ਜੀਵਨ ਅੰਦਰੋਂ ਅਧੂਰਾ ਮਹਿਸੂਸ ਹੁੰਦਾ ਹੈ। ਬਾਣੀ ਕਿਰਪਾ ਤੇ ਸ਼ਬਦ ਦੇ ਸਹਾਰੇ ਵੱਲ ਮੁੜਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "The importance of a sustained orientation.",
+        "closeReading": "The refrain about the body lacking liv makes an interior point through physical language. The request for grace gives the stanza the character of prayer rather than condemnation.",
+        "words": [
+          {
+            "gurmukhi": "ਲਿਵ",
+            "workingGloss": "Loving concentration or attunement",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਦੇਹ",
+            "workingGloss": "Body",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕ੍ਰਿਪਾ",
+            "workingGloss": "Grace",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not imply that anyone without religious practice has no dignity or medical worth.",
+        "reflection": "What helps bring your attention back to what matters?",
+        "teachBack": "What is being asked for after naming the absence of liv?"
+      }
+    },
+    "anand|anand07": {
+      "unitId": "anand07",
+      "sourceAnchor": {
+        "id": "anand07.line01",
+        "sha256": "67f246782da75aa5a12acb9616dc7a41562743ae0aabfb553b2af09166c1928a"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Many people speak about happiness, but this pauri says the deeper Anand is learned through the Guru’s wisdom and a loosening of attachment.",
+        "pa": "ਖੁਸ਼ੀ ਦਾ ਨਾਂ ਸਭ ਲੈਂਦੇ ਹਨ, ਪਰ ਅਸਲ ਅਨੰਦ ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ ਤੇ ਮੋਹ ਦੇ ਘਟਣ ਨਾਲ ਸਮਝ ਆਉਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Naming joy versus understanding it.",
+        "closeReading": "The stanza repeats “anand” before explaining that the Guru reveals its meaning. The line about applying the salve of knowledge connects inner vision with release from attachment.",
+        "words": [
+          {
+            "gurmukhi": "ਗਿਆਨ ਅੰਜਨੁ",
+            "workingGloss": "The salve of wisdom; poetic eye-image",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਮੋਹੁ",
+            "workingGloss": "Attachment",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਗੁਰੂ ਤੇ",
+            "workingGloss": "Through the Guru",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not equate ordinary joyful emotions with moral failure; this pauri speaks about depth and direction.",
+        "reflection": "What kind of happiness remains meaningful during a difficult season?",
+        "teachBack": "Why does the pauri repeat the word anand before explaining it?"
+      }
+    },
+    "rehras|rehras.sggs01": {
+      "unitId": "rehras.sggs01",
+      "sourceAnchor": {
+        "id": "rehras.sggs01.line01",
+        "sha256": "fa017ae8de35accd4732494b07b039d90f3250d2c3488ff59eb700e7cfba3c7a"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "So Dar asks what kind of Divine court or presence holds the world. Wind, water, fire, musicians and beings become part of a vast language of praise.",
+        "pa": "ਸੋ ਦਰ ਪੁੱਛਦਾ ਹੈ ਕਿ ਪ੍ਰਭੂ ਦਾ ਦਰ ਕਿਹੋ ਜਿਹਾ ਹੈ। ਪਵਣ, ਪਾਣੀ, ਅੱਗ ਅਤੇ ਅਨੇਕ ਜੀਵ ਉਸ ਦੀ ਵਡਿਆਈ ਗਾਉਂਦੇ ਦਿਖਾਏ ਗਏ ਹਨ।"
+      },
+      "study": {
+        "focus": "The uncountable court of the One.",
+        "closeReading": "The hymn answers its own question through an ever-expanding roll call of creation. The repeated praise of the One is far wider than a single palace or music performance.",
+        "words": [
+          {
+            "gurmukhi": "ਸੋ ਦਰੁ",
+            "workingGloss": "That doorway/court",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਗਾਵਨਿ",
+            "workingGloss": "They sing/praise",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਹੁਕਮੁ",
+            "workingGloss": "Hukam or Divine order",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Cosmic praise is poetic and theological. Do not present it as evidence of literally audible planets or wind.",
+        "reflection": "How does the hymn help you notice things bigger than yourself?",
+        "teachBack": "Why does the list of singers keep expanding?"
+      }
+    },
+    "rehras|rehras.sggs02": {
+      "unitId": "rehras.sggs02",
+      "sourceAnchor": {
+        "id": "rehras.sggs02.line01",
+        "sha256": "cedf8a10b30f45bf31dc7d45d3b2d3df697a642f90dfcfb2b98b1b9c3a4c3e58"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The True One is so deep and vast that the speaker cannot measure or price that greatness. Praise continues even when explanation reaches its limits.",
+        "pa": "ਸੱਚੇ ਸਾਹਿਬ ਦੀ ਵਡਿਆਈ ਬੇਅੰਤ ਹੈ; ਮਨੁੱਖ ਉਸ ਦਾ ਪੂਰਾ ਮੋਲ ਨਹੀਂ ਪਾ ਸਕਦਾ। ਫਿਰ ਵੀ ਸਿਫ਼ਤ ਜਾਰੀ ਰਹਿੰਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "The limits of measuring greatness.",
+        "closeReading": "A repeated question about size and value is a way of expressing wonder. The poem does not reject understanding; it recognizes its boundaries.",
+        "words": [
+          {
+            "gurmukhi": "ਵਡਾ",
+            "workingGloss": "Great",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਗਹਿਰ ਗੰਭੀਰਾ",
+            "workingGloss": "Deep and profound",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਕੀਮਤਿ",
+            "workingGloss": "Value or measure",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not translate metaphorical greatness into literal physical height or mass.",
+        "reflection": "Where can humility improve the quality of understanding?",
+        "teachBack": "What repeated question shows the difficulty of describing the One?"
+      }
+    },
+    "rehras|rehras.sggs03": {
+      "unitId": "rehras.sggs03",
+      "sourceAnchor": {
+        "id": "rehras.sggs03.line01",
+        "sha256": "707ec4f389679256221d093be5aa32d40abdb2914072529d2aee027a37ce3dc1"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Naam is so precious that losing remembrance feels like losing life’s direction. The hymn asks how the true Giver could be forgotten.",
+        "pa": "ਨਾਮ ਦੀ ਯਾਦ ਜੀਵਨ ਦੀ ਡੂੰਘੀ ਲੋੜ ਵਾਂਗ ਦੱਸੀ ਗਈ ਹੈ। ਸੱਚੇ ਦਾਤਾਰ ਨੂੰ ਕਿਵੇਂ ਭੁਲਾਈਏ—ਇਹ ਮੁੱਖ ਪੁਕਾਰ ਹੈ।"
+      },
+      "study": {
+        "focus": "Remembrance as spiritual nourishment.",
+        "closeReading": "The language of hunger and life is intense. Its central idea is longing for Naam and recognition of the Giver, not a medical statement about breathing or survival.",
+        "words": [
+          {
+            "gurmukhi": "ਆਖਾ ਜੀਵਾ",
+            "workingGloss": "I live through remembrance/praise, working gloss",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਨਾਉ",
+            "workingGloss": "Name/Naam",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਭੂਖ",
+            "workingGloss": "Hunger or yearning",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not convert spiritual metaphor into advice to skip food or treatment.",
+        "reflection": "What do you return to when attention scatters?",
+        "teachBack": "How does hunger imagery make remembrance feel urgent?"
+      }
+    },
+    "rehras|rehras.sggs04": {
+      "unitId": "rehras.sggs04",
+      "sourceAnchor": {
+        "id": "rehras.sggs04.line01",
+        "sha256": "dc9a8200d879a4143b40b0a3a9b20bb11deddd79651dd8aa06b7900fc9a250c0"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The speaker asks the Guru for the light of Naam. The hymn places humility and sangat at the centre of a daily path.",
+        "pa": "ਗੁਰੂ ਅੱਗੇ ਨਾਮ ਦਾ ਪ੍ਰਕਾਸ਼ ਮੰਗਿਆ ਗਿਆ ਹੈ। ਨਿਮਰਤਾ ਅਤੇ ਸੰਗਤ ਨੂੰ ਜੀਵਨ ਦੇ ਰਾਹ ਵਿਚ ਮਹੱਤਵ ਦਿੱਤਾ ਗਿਆ ਹੈ।"
+      },
+      "study": {
+        "focus": "Naam through Guru and community.",
+        "closeReading": "The hymn includes the word ਰਹਰਾਸਿ in the source. See how supplication, teaching and community become connected; the concept is richer than a time slot.",
+        "words": [
+          {
+            "gurmukhi": "ਗੁਰਮਤਿ",
+            "workingGloss": "Guru’s wisdom",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਰਹਰਾਸਿ",
+            "workingGloss": "Daily path or devotional practice in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸੰਗਤਿ",
+            "workingGloss": "Community/fellowship",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "An authoritative linguistic interpretation of this historical term needs source-specific review.",
+        "reflection": "How can good company support a difficult habit?",
+        "teachBack": "What is the speaker asking of the Guru?"
+      }
+    },
+    "rehras|rehras.sggs05": {
+      "unitId": "rehras.sggs05",
+      "sourceAnchor": {
+        "id": "rehras.sggs05.line01",
+        "sha256": "96d5cbb00ded7cc57d041fefb851a269f1e1d8141b92d71ba4cd6cbc81f29f3a"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Why be consumed by worry when the Giver sustains creation? The hymn counsels remembrance and trust through images from animals and the natural world.",
+        "pa": "ਜਦੋਂ ਦਾਤਾਰ ਸ੍ਰਿਸ਼ਟੀ ਦੀ ਸੰਭਾਲ ਕਰਦਾ ਹੈ, ਮਨ ਬੇਅੰਤ ਚਿੰਤਾ ਵਿਚ ਕਿਉਂ ਡੁੱਬੇ? ਸ਼ਬਦ ਕੁਦਰਤ ਦੀਆਂ ਮਿਸਾਲਾਂ ਨਾਲ ਭਰੋਸਾ ਸਿਖਾਉਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "Trust without abandoning responsibility.",
+        "closeReading": "Natural-world examples show care for small beings. The point is an invitation to trust and remembrance, not an instruction to avoid earning, feeding family or making responsible plans.",
+        "words": [
+          {
+            "gurmukhi": "ਚਿਤਵਹਿ",
+            "workingGloss": "You worry or think about",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਰਿਜਕੁ",
+            "workingGloss": "Sustenance",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਤਸੰਗਤਿ",
+            "workingGloss": "Company oriented toward Truth",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Never use this lesson to tell someone to neglect finances, nutrition or medical needs.",
+        "reflection": "Can trust make you more responsible rather than less?",
+        "teachBack": "Why does the shabad use small creatures to illustrate care?"
+      }
+    },
+    "rehras|rehras.sggs06": {
+      "unitId": "rehras.sggs06",
+      "sourceAnchor": {
+        "id": "rehras.sggs06.line01",
+        "sha256": "a3929e78442e51b17175816ee200108610ef404daf877e76dee80e3ca503671c"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "So Purakh praises the One as the source of all beings and the giver of life; the hymn repeatedly draws attention beyond the individual.",
+        "pa": "ਸੋ ਪੁਰਖ ਵਿਚ ਸਾਰੇ ਜੀਵਾਂ ਦੇ ਦਾਤਾਰ ਦੀ ਵਡਿਆਈ ਹੈ। ਵਾਰ-ਵਾਰ ਸਾਡਾ ਧਿਆਨ ਆਪਣੇ ਤੋਂ ਵੱਡੀ ਸ੍ਰਿਸ਼ਟੀ ਵੱਲ ਜਾਂਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "The Giver of all life.",
+        "closeReading": "Repeated address to Hari and the Creator ties together the world, the devotee and the possibility of remembrance. The cosmic language encourages gratitude and humility.",
+        "words": [
+          {
+            "gurmukhi": "ਸੋ ਪੁਰਖੁ",
+            "workingGloss": "That One Being",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਿਰਜਣਹਾਰਾ",
+            "workingGloss": "Creator",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਦਾਤਾਰਾ",
+            "workingGloss": "Giver",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Terms for the Divine are understood in a Sikh theological setting and must not be used to make all traditions identical.",
+        "reflection": "How might gratitude change the way you treat another being?",
+        "teachBack": "Which repeated phrases hold the hymn together?"
+      }
+    },
+    "rehras|rehras.sggs09": {
+      "unitId": "rehras.sggs09",
+      "sourceAnchor": {
+        "id": "rehras.sggs09.line01",
+        "sha256": "78f9b9496462ba9b3749cc085563ab21f4ef10ea51541f0989bf488d60311446"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Human life is presented as a precious opportunity to meet the Divine through Naam and sangat. The call is to make meaningful use of this chance.",
+        "pa": "ਮਨੁੱਖਾ ਜੀਵਨ ਨੂੰ ਕੀਮਤੀ ਮੌਕਾ ਕਿਹਾ ਗਿਆ ਹੈ। ਨਾਮ ਤੇ ਸੰਗਤ ਰਾਹੀਂ ਇਸ ਮੌਕੇ ਨੂੰ ਸਾਰਥਕ ਕਰਨ ਦੀ ਪੁਕਾਰ ਹੈ।"
+      },
+      "study": {
+        "focus": "The preciousness of this life.",
+        "closeReading": "The opening “ਭਈ ਪਰਾਪਤਿ ਮਾਨੁਖ ਦੇਹੁਰੀਆ” establishes urgency. The following image of crossing life’s ocean broadens the meaning beyond the pursuit of short-lived rewards.",
+        "words": [
+          {
+            "gurmukhi": "ਮਾਨੁਖ ਦੇਹੁਰੀਆ",
+            "workingGloss": "Human body/life",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਬਰੀਆ",
+            "workingGloss": "Opportunity or turn",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਾਧਸੰਗਤਿ",
+            "workingGloss": "Company of seekers",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Urgency is not permission to threaten or frighten children about death or afterlife.",
+        "reflection": "What is worth doing with the opportunity of today?",
+        "teachBack": "What does the hymn call the human body, and what responsibility follows?"
+      }
+    },
+    "rehras|rehras.chaupai01": {
+      "unitId": "rehras.chaupai01",
+      "sourceAnchor": {
+        "id": "rehras.chaupai-rehras01.line01",
+        "sha256": "294632c9cb55d436f21ebae0f828930a6cd5cd3a9cef1ba259b90f5723717177"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The evening prayer turns from SGGS hymns to Benti Chaupai’s appeal for protection and steady devotion.",
+        "pa": "ਇੱਥੇ ਰਹਿਰਾਸਿ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੇ ਸ਼ਬਦਾਂ ਤੋਂ ਬੇਨਤੀ ਚੌਪਈ ਦੇ ਰੱਖਿਆ ਵਾਲੇ ਸੁਰ ਵਿਚ ਆਉਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "A change of source family and prayer voice.",
+        "closeReading": "The Benti Chaupai excerpt is a Dasam Bani segment, not an SGGS verse. The learner should see both the source change and the continuity of remembrance and trust.",
+        "words": [
+          {
+            "gurmukhi": "ਰੱਛਾ",
+            "workingGloss": "Protection",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਚਰਨਨ",
+            "workingGloss": "Feet/refuge",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Our 25-pauri evening excerpt is distinct from the expanded 29-pauri morning digital candidate.",
+        "reflection": "How does prayer sound different when it turns to a direct plea?",
+        "teachBack": "Which source family begins at this passage?"
+      }
+    },
+    "rehras|rehras.savaiya01": {
+      "unitId": "rehras.savaiya01",
+      "sourceAnchor": {
+        "id": "rehras.savaiya01.line01",
+        "sha256": "cb355b27933207808a59df661c91cbfde728ccf0756007cc6b528064120af44d"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The evening Savaiya speaks of relying on the Divine rather than dividing one’s allegiance among competing descriptions and books.",
+        "pa": "ਸ਼ਾਮ ਦੇ ਸਵੱਯੇ ਵਿਚ ਸਾਰਾ ਭਰੋਸਾ ਇੱਕ ਪ੍ਰਭੂ ਦੇ ਦਰ ਵੱਲ ਕੀਤਾ ਗਿਆ ਹੈ।"
+      },
+      "study": {
+        "focus": "One source of reliance despite many labels.",
+        "closeReading": "This is the Pae Gahe Savaiya, not one of the ten Sravag Sudh morning Savaiye. It uses historically layered references to traditions and sacred books while making a devotional statement of dependence.",
+        "words": [
+          {
+            "gurmukhi": "ਪਾਂਇ ਗਹੇ",
+            "workingGloss": "Taking refuge at the feet",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਮਤ",
+            "workingGloss": "Opinion or doctrine",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not use references to named traditions to insult their followers; qualified religious-linguistic review remains necessary.",
+        "reflection": "What is the difference between openness to learning and losing one’s own grounding?",
+        "teachBack": "Why must this evening Savaiya not be confused with the ten morning Savaiye?"
+      }
+    },
+    "rehras|rehras.dohira01": {
+      "unitId": "rehras.dohira01",
+      "sourceAnchor": {
+        "id": "rehras.dohira01.line01",
+        "sha256": "b0dfff8a55753d6eed3f4214d93eb16877dfbd736a26d21e1d3a933fa5a8c2ad"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The Dohira asks for refuge at the One’s doorway, using the image of holding the protective hand of the Divine.",
+        "pa": "ਦੋਹਿਰੇ ਵਿਚ ਹੋਰ ਦਰ ਛੱਡ ਕੇ ਪ੍ਰਭੂ ਦੇ ਦਰ ਨੂੰ ਫੜਨ ਦੀ ਨਿਮਰ ਬੇਨਤੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Refuge and commitment.",
+        "closeReading": "The very short form concentrates the preceding appeal into a memorable image of one doorway and faithful dependence.",
+        "words": [
+          {
+            "gurmukhi": "ਸਗਲ ਦੁਆਰ",
+            "workingGloss": "All other doors",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਦੁਆਰ",
+            "workingGloss": "Door or refuge",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Do not literalize the doorway as one physical building; it is devotional imagery.",
+        "reflection": "What does it mean to seek guidance rather than control every outcome?",
+        "teachBack": "Which image carries the meaning of refuge in the Dohira?"
+      }
+    },
+    "rehras|rehras.anand01": {
+      "unitId": "rehras.anand01",
+      "sourceAnchor": {
+        "id": "rehras.anand01.line01",
+        "sha256": "d14d993865589bd7856dae09b4db6212bebdc276bcfddbeee5f299a7048d2d85"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Rehras now selects Anand Sahib’s first five and last pauri, carrying the theme of deep joy into the evening sequence.",
+        "pa": "ਇੱਥੇ ਰਹਿਰਾਸਿ ਵਿਚ ਅਨੰਦੁ ਸਾਹਿਬ ਦੀਆਂ ਪਹਿਲੀਆਂ ਪੰਜ ਅਤੇ ਆਖ਼ਰੀ ਪਉੜੀ ਆਉਂਦੀਆਂ ਹਨ। ਅਨੰਦ ਦਾ ਸੁਰ ਸ਼ਾਮ ਦੀ ਬਾਣੀ ਵਿਚ ਜੁੜਦਾ ਹੈ।"
+      },
+      "study": {
+        "focus": "A source-bound return to Anand.",
+        "closeReading": "The selected Anand verses have their own SGGS source, even when included inside the mixed Rehras order. Study the complete Anand Sahib separately to understand the full forty-pauri argument.",
+        "words": [
+          {
+            "gurmukhi": "ਅਨੰਦੁ",
+            "workingGloss": "Bliss",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਤਿਗੁਰੂ",
+            "workingGloss": "True Guru",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "This is a selection, not a new authorship or a replacement for all forty Anand pauris.",
+        "reflection": "How does the feeling of evening prayer change when these verses begin?",
+        "teachBack": "Which pauris of Anand are included here?"
+      }
+    },
+    "rehras|rehras.anand40": {
+      "unitId": "rehras.anand40",
+      "sourceAnchor": {
+        "id": "rehras.anand40.line01",
+        "sha256": "be4bc19edd463c608ce099e3a5cf0cd04a00f672166ba941a35d9f7a09129fe2"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The selected concluding Anand pauri returns to blessings, hearing true bani and the completion of the inner search.",
+        "pa": "ਅਨੰਦ ਦੀ ਚਾਲੀਵੀਂ ਪਉੜੀ ਸੱਚੀ ਬਾਣੀ ਸੁਣਨ ਅਤੇ ਅੰਦਰਲੇ ਸੁਖ ਦੀ ਯਾਦ ਨਾਲ ਇਹ ਭਾਗ ਸਮਾਪਤ ਕਰਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Completion in the selected Anand portion.",
+        "closeReading": "The final pauri belongs to Anand Sahib and closes the shortened Rehras selection. Read it with the first five, without pretending the intervening thirty-four pauris were not part of the complete bani.",
+        "words": [
+          {
+            "gurmukhi": "ਵਡਭਾਗੀਹੋ",
+            "workingGloss": "O fortunate ones",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸਚੀ ਬਾਣੀ",
+            "workingGloss": "True Bani in context",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Expressions about pain and illness in devotional verse should not be marketed as guaranteed medical treatment.",
+        "reflection": "What would it mean to listen with attention rather than rush?",
+        "teachBack": "Why is the last pauri selected alongside the first five?"
+      }
+    },
+    "rehras|rehras.mundawani": {
+      "unitId": "rehras.mundawani",
+      "sourceAnchor": {
+        "id": "rehras.mundawani.line01",
+        "sha256": "14809a1832d8965796c929bb3ea477a3db7d9593df97a1ca6ffc5123f67acb33"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "Mundawani uses the image of a platter containing truth, contentment and reflection, with Naam as nourishing sustenance.",
+        "pa": "ਮੁੰਦਾਵਣੀ ਵਿਚ ਥਾਲ ਦੀ ਤਸਵੀਰ ਨਾਲ ਸਤ, ਸੰਤੋਖ, ਵਿਚਾਰ ਅਤੇ ਨਾਮ ਦੀ ਅੰਮ੍ਰਿਤ ਰੂਪੀ ਦਾਤ ਸਮਝਾਈ ਗਈ ਹੈ।"
+      },
+      "study": {
+        "focus": "Nourishment through truth, contentment and reflection.",
+        "closeReading": "The imagery names qualities that belong together. This is a spiritual platter, not a dietary plan or literal claim about nutritional contents.",
+        "words": [
+          {
+            "gurmukhi": "ਸਤੁ",
+            "workingGloss": "Truthfulness",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਸੰਤੋਖੁ",
+            "workingGloss": "Contentment",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਵੀਚਾਰੋ",
+            "workingGloss": "Reflection",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Modern comparisons with mindfulness or nutrition must be explicitly labeled as our commentary, not source translation.",
+        "reflection": "What quality would you bring to tomorrow’s “platter”?",
+        "teachBack": "What three things appear in the image of the platter?"
+      }
+    },
+    "rehras|rehras.slok": {
+      "unitId": "rehras.slok",
+      "sourceAnchor": {
+        "id": "rehras.slok.line01",
+        "sha256": "d9e78b57d5d27b321f1032efe22f14da7c72871af4fc8836e6ed0c39b8e63161"
+      },
+      "status": "DRAFT_AI_UNREVIEWED",
+      "type": "ORIGINAL_EDUCATIONAL_PARAPHRASE",
+      "simple": {
+        "en": "The final Slok is full of gratitude and humility: the speaker recognizes how much the Giver has done and asks for the gift of Naam.",
+        "pa": "ਆਖ਼ਰੀ ਸਲੋਕ ਵਿਚ ਸ਼ੁਕਰਾਨਾ ਤੇ ਨਿਮਰਤਾ ਹੈ। ਦਾਤਾਰ ਦੀ ਮਿਹਰ ਨੂੰ ਮੰਨ ਕੇ ਨਾਮ ਦੀ ਦਾਤ ਮੰਗੀ ਜਾਂਦੀ ਹੈ।"
+      },
+      "study": {
+        "focus": "Ending with gratitude rather than entitlement.",
+        "closeReading": "The opening “ਤੇਰਾ ਕੀਤਾ ਜਾਤੋ ਨਾਹੀ” marks the tone. The speaker sees grace not as a prize earned by moral superiority but as something received with humility.",
+        "words": [
+          {
+            "gurmukhi": "ਤੇਰਾ ਕੀਤਾ",
+            "workingGloss": "What You have done",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਮਿਹਰਾਮਤਿ",
+            "workingGloss": "Mercy or kindness",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          },
+          {
+            "gurmukhi": "ਨਾਮੁ",
+            "workingGloss": "Divine Naam",
+            "status": "WORKING_GLOSS_NOT_APPROVED"
+          }
+        ],
+        "interpretationCare": "Avoid the idea that gratitude should silence someone facing harm or needing support.",
+        "reflection": "What can you acknowledge as a gift without denying today’s difficulties?",
+        "teachBack": "How is the Slok’s voice different from a demand for rewards?"
+      }
+    }
+  },
+  "closeTextNotes": {
+    "jaap|jaap001.line01": {
+      "lineId": "jaap001.line01",
+      "sourceSha256": "d850d3607c0a68c4c526c05a44085b0f15bd7f7241b92ca7c16e66de4a282a77",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The Divine is not contained by emblems, social colour, caste or inherited rank.",
+      "simplePa": "ਅਕਾਲ ਪੁਰਖ ਨੂੰ ਚਿੰਨ੍ਹ, ਰੰਗ, ਜਾਤ ਜਾਂ ਪਾਤ ਦੀ ਹੱਦ ਵਿਚ ਨਹੀਂ ਬੰਨ੍ਹ ਸਕਦੇ।",
+      "interpretiveCaution": "The opening names human categories to question their application to the One."
+    },
+    "jaap|jaap001.line02": {
+      "lineId": "jaap001.line02",
+      "sourceSha256": "4f8a9c7a371bc7d793019059a5f1a547313cb454948c900c3edae349128e09c7",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "No outward shape, appearance, distinguishing mark or clothing can fully depict the One.",
+      "simplePa": "ਕੋਈ ਰੂਪ, ਰੰਗ, ਨਿਸ਼ਾਨ ਜਾਂ ਭੇਖ ਉਸ ਦੀ ਪੂਰੀ ਪਛਾਣ ਨਹੀਂ ਬਣਾ ਸਕਦਾ।",
+      "interpretiveCaution": "Keep this poetic refusal of limiting form distinct from claims about how a human should dress."
+    },
+    "jaap|jaap002.line01": {
+      "lineId": "jaap002.line01",
+      "sourceSha256": "e208dc126558823576f80992a6b19943825e398e205e908389d5078e6e4453f1",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "A salutation to the Timeless One.",
+      "simplePa": "ਅਕਾਲ ਨੂੰ ਨਮਸਕਾਰ।",
+      "interpretiveCaution": "A short salutation, not a definition that exhausts the Divine."
+    },
+    "jaap|jaap002.line02": {
+      "lineId": "jaap002.line02",
+      "sourceSha256": "36f67244572a0b0b25cab9f970bbb2ca2f015fae5523b500f664d8761bdd94d0",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "A salutation to the Compassionate One.",
+      "simplePa": "ਕਿਰਪਾਲੂ ਨੂੰ ਨਮਸਕਾਰ।",
+      "interpretiveCaution": "Compassion sits beside timelessness in this chhand."
+    },
+    "jaap|jaap002.line03": {
+      "lineId": "jaap002.line03",
+      "sourceSha256": "87d45b10e231e08c502d4875628059f3f6155f84bb6580725069f9f111925b35",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "A salutation to the One beyond limiting form.",
+      "simplePa": "ਰੂਪ ਦੀ ਹੱਦ ਤੋਂ ਪਰੇ ਪ੍ਰਭੂ ਨੂੰ ਨਮਸਕਾਰ।",
+      "interpretiveCaution": "A devotional name, not an argument that images are the same as the One."
+    },
+    "jaap|jaap002.line04": {
+      "lineId": "jaap002.line04",
+      "sourceSha256": "d9b8602d50cfa43cc9c3b23b91e3a4fab43d98ff08334e97251a26abef6b641c",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "A salutation to the Incomparable One.",
+      "simplePa": "ਜਿਸ ਦੀ ਤੁਲਨਾ ਨਹੀਂ, ਉਸ ਨੂੰ ਨਮਸਕਾਰ।",
+      "interpretiveCaution": "The phrase completes the fourfold salutation."
+    },
+    "savaiye|savaiye09.line04": {
+      "lineId": "savaiye09.line04",
+      "sourceSha256": "85f303d91618c10f31ade02375a2503cce1cb194c993a3e50dd9ab54737d6170",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The stanza culminates in a striking affirmation that love is the way to encounter the Divine.",
+      "simplePa": "ਆਖ਼ਰੀ ਤੁਕ ਪ੍ਰੇਮ ਨੂੰ ਪ੍ਰਭੂ ਨਾਲ ਮਿਲਾਪ ਦਾ ਮੁੱਖ ਰਾਹ ਦੱਸਦੀ ਹੈ।",
+      "interpretiveCaution": "Interpretation of ਪ੍ਰੇਮ here needs contextual Sikh/Dasam scholarly review."
+    },
+    "savaiye|savaiye04.line01": {
+      "lineId": "savaiye04.line01",
+      "sourceSha256": "693065b1687f1535dfee7b775c49bd0c8dd10bee12c9d9ff970183a36ac78222",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The line lists pilgrimage, giving, restraint and other religious disciplines.",
+      "simplePa": "ਇਸ ਤੁਕ ਵਿਚ ਤੀਰਥ, ਦਾਨ, ਸੰਜਮ ਅਤੇ ਹੋਰ ਧਾਰਮਿਕ ਕਰਮਾਂ ਦਾ ਜ਼ਿਕਰ ਹੈ।",
+      "interpretiveCaution": "This line lists practices; the entire stanza develops the contrast with inner devotion."
+    },
+    "chaupai|chaupai-rehras01.line01": {
+      "lineId": "chaupai-rehras01.line01",
+      "sourceSha256": "294632c9cb55d436f21ebae0f828930a6cd5cd3a9cef1ba259b90f5723717177",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "An opening request for Divine protection.",
+      "simplePa": "ਪਹਿਲੀ ਤੁਕ ਵਿਚ ਰੱਬੀ ਰੱਖਿਆ ਦੀ ਬੇਨਤੀ ਹੈ।",
+      "interpretiveCaution": "Do not present this plea as a safety guarantee."
+    },
+    "chaupai|chaupai-rehras01.line02": {
+      "lineId": "chaupai-rehras01.line02",
+      "sourceSha256": "9ba1391fd658458700688a14ce558756115ea5904328ac83793ba5c5a65c6f5d",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "A prayer that heartfelt hopes may be fulfilled.",
+      "simplePa": "ਮਨ ਦੀਆਂ ਆਸਾਂ ਪੂਰੀਆਂ ਹੋਣ ਦੀ ਬੇਨਤੀ ਹੈ।",
+      "interpretiveCaution": "This is prayer language, not a prediction of material results."
+    },
+    "chaupai|chaupai-rehras01.line03": {
+      "lineId": "chaupai-rehras01.line03",
+      "sourceSha256": "4e1d4097a392e0217b2c97597b198f7ffc84b13dd202d2cba7520e9daca392ed",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "May my mind remain turned toward Your feet, an image of devoted refuge.",
+      "simplePa": "ਮੇਰਾ ਮਨ ਤੇਰੇ ਚਰਨਾਂ ਦੀ ਸ਼ਰਨ ਵਿਚ ਲੱਗਾ ਰਹੇ।",
+      "interpretiveCaution": "Feet/charan functions as devotional imagery, not merely physical geography."
+    },
+    "chaupai|chaupai-rehras01.line04": {
+      "lineId": "chaupai-rehras01.line04",
+      "sourceSha256": "97115f51df517f8900802eb3e3bbc96103f9c92d200cdd30a6022e0a69b118be",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Care for me as one who belongs to You.",
+      "simplePa": "ਮੈਨੂੰ ਆਪਣਾ ਜਾਣ ਕੇ ਸੰਭਾਲੋ।",
+      "interpretiveCaution": "The relationship matters as much as the protection requested."
+    },
+    "anand|anand01.line01": {
+      "lineId": "anand01.line01",
+      "sourceSha256": "d14d993865589bd7856dae09b4db6212bebdc276bcfddbeee5f299a7048d2d85",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Bliss has arisen, O mother, because I have found the True Guru.",
+      "simplePa": "ਹੇ ਮਾਏ, ਸਤਿਗੁਰੂ ਮਿਲਣ ਨਾਲ ਮੇਰੇ ਅੰਦਰ ਅਨੰਦ ਹੋਇਆ ਹੈ।",
+      "interpretiveCaution": "A poetic first-person declaration, not a diagnosis of constant emotional happiness."
+    },
+    "anand|anand02.line01": {
+      "lineId": "anand02.line01",
+      "sourceSha256": "7c5ce0b487e7007fad427b32dd05e37214d1909e5a760e8866235fb39c353903",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "O my mind, remain in remembrance of the Divine.",
+      "simplePa": "ਹੇ ਮੇਰੇ ਮਨ, ਸਦਾ ਹਰਿ ਨਾਲ ਜੁੜਿਆ ਰਹੁ।",
+      "interpretiveCaution": "The speaker is addressing the mind; do not convert this into a medical claim."
+    },
+    "anand|anand07.line01": {
+      "lineId": "anand07.line01",
+      "sourceSha256": "67f246782da75aa5a12acb9616dc7a41562743ae0aabfb553b2af09166c1928a",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Many speak of bliss, but the Guru’s wisdom shows what it truly is.",
+      "simplePa": "ਅਨੰਦ ਦਾ ਨਾਂ ਸਭ ਲੈਂਦੇ ਹਨ; ਉਸ ਦੀ ਡੂੰਘੀ ਸਮਝ ਗੁਰੂ ਤੋਂ ਹੁੰਦੀ ਹੈ।",
+      "interpretiveCaution": "The distinction between saying a word and experiencing its meaning matters."
+    },
+    "sohila|sohila01.line03": {
+      "lineId": "sohila01.line03",
+      "sourceSha256": "0d226fd1b6f987dd2b0050048cbe5b5eb518ce5f745282c77fe73edd76dd6948",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Where the Creator is praised and reflected upon, spiritual understanding is cultivated.",
+      "simplePa": "ਜਿੱਥੇ ਕਰਤਾਰ ਦੀ ਸਿਫ਼ਤ ਅਤੇ ਵਿਚਾਰ ਹੁੰਦਾ ਹੈ, ਉੱਥੇ ਮਨ ਨੂੰ ਸਿੱਖਣ ਦਾ ਮੌਕਾ ਮਿਲਦਾ ਹੈ।",
+      "interpretiveCaution": "Read with the following invitation to sing praise, not as an address to one physical house only."
+    },
+    "sohila|sohila03.line02": {
+      "lineId": "sohila03.line02",
+      "sourceSha256": "accd0bb1cae0476d511fece45083036a8666bf64f5cfdc0d2d7f325ef1751311",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The sky is imagined as a platter, the sun and moon as lamps, and stars as jewels.",
+      "simplePa": "ਆਕਾਸ਼ ਥਾਲ, ਸੂਰਜ ਤੇ ਚੰਦ ਦੀਵੇ ਅਤੇ ਤਾਰੇ ਮੋਤੀਆਂ ਵਾਂਗ ਹਨ।",
+      "interpretiveCaution": "Cosmic aarti poetry, not an astronomical mechanism."
+    },
+    "sohila|sohila05.line02": {
+      "lineId": "sohila05.line02",
+      "sourceSha256": "1fb878ec6fc776e61be4592155f6d8855bba2cd860f0928fcf906e96eb905ccd",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Listen, friends: this is the time to serve with humility.",
+      "simplePa": "ਸੁਣੋ ਮਿੱਤਰੋ, ਇਹ ਸੇਵਾ ਦਾ ਵੇਲਾ ਹੈ।",
+      "interpretiveCaution": "Its urgency arises from the whole shabad’s reflection on time."
+    },
+    "rehras|rehras.chaupai-rehras01.line01": {
+      "lineId": "rehras.chaupai-rehras01.line01",
+      "sourceSha256": "294632c9cb55d436f21ebae0f828930a6cd5cd3a9cef1ba259b90f5723717177",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The Rehras source now turns to a request for protection from Benti Chaupai.",
+      "simplePa": "ਰਹਿਰਾਸਿ ਵਿਚ ਇੱਥੇ ਬੇਨਤੀ ਚੌਪਈ ਦੀ ਰੱਖਿਆ ਵਾਲੀ ਅਰਦਾਸ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ।",
+      "interpretiveCaution": "The source family changes to Dasam Bani at this point."
+    },
+    "rehras|rehras.anand01.line01": {
+      "lineId": "rehras.anand01.line01",
+      "sourceSha256": "d14d993865589bd7856dae09b4db6212bebdc276bcfddbeee5f299a7048d2d85",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The selected Anand portion begins with joy arising through finding the True Guru.",
+      "simplePa": "ਰਹਿਰਾਸਿ ਦੇ ਚੁਣੇ ਅਨੰਦ ਭਾਗ ਦੀ ਸ਼ੁਰੂਆਤ ਸਤਿਗੁਰੂ ਮਿਲਣ ਦੀ ਖੁਸ਼ੀ ਨਾਲ ਹੁੰਦੀ ਹੈ।",
+      "interpretiveCaution": "Anand’s forty-pauri original composition remains separate."
+    },
+    "sohila|sohila01.line01": {
+      "lineId": "sohila01.line01",
+      "sourceSha256": "52cecbfaeb8e75cd05f4edecfc34b743b6be05cdde875fd638a2bbcff39b2728",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "HEADING_OR_INVOCATION_CONTEXT",
+      "simpleEn": "Source heading: this is Sohila, in Raag Gauree Deepakee, attributed to Guru Nanak Sahib (Mahala 1).",
+      "simplePa": "ਇਹ ਬਾਣੀ ਦਾ ਸਿਰਲੇਖ ਹੈ: ਸੋਹਿਲਾ, ਰਾਗ ਗਉੜੀ ਦੀਪਕੀ, ਮਹਲਾ ਪਹਿਲਾ — ਗੁਰੂ ਨਾਨਕ ਸਾਹਿਬ ਜੀ।",
+      "interpretiveCaution": "A musical/source heading identifies the composition. It is not a new verse or a prescribed recording."
+    },
+    "sohila|sohila01.line02": {
+      "lineId": "sohila01.line02",
+      "sourceSha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "HEADING_OR_INVOCATION_CONTEXT",
+      "simpleEn": "The opening invocation remembers the One, approached through the grace of the True Guru.",
+      "simplePa": "ਆਰੰਭ ਵਿੱਚ ਇੱਕ ਅਕਾਲ ਪੁਰਖ ਅਤੇ ਸਤਿਗੁਰੂ ਦੀ ਕਿਰਪਾ ਰਾਹੀਂ ਉਸ ਦੀ ਪਛਾਣ ਦੀ ਯਾਦ ਹੈ।",
+      "interpretiveCaution": "This is the written invocation, distinct from the shabad’s subsequent numbered lines."
+    },
+    "sohila|sohila01.line04": {
+      "lineId": "sohila01.line04",
+      "sourceSha256": "95eb417addea9ff41c47fd2963f6266d76d5d9177c7f41ac8c8534ea3ab3f712",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "In that place, sing the song of praise and keep the Creator in remembrance.",
+      "simplePa": "ਉਸ ਥਾਂ ਸਿਫ਼ਤ ਦਾ ਸੋਹਿਲਾ ਗਾਵੋ ਅਤੇ ਆਪਣੇ ਸਿਰਜਣਹਾਰ ਨੂੰ ਯਾਦ ਰੱਖੋ।",
+      "interpretiveCaution": "The phrase “that home” refers back to the gathering/place of praise and reflection in the previous line."
+    },
+    "sohila|sohila01.line05": {
+      "lineId": "sohila01.line05",
+      "sourceSha256": "ee54c839f53bf8bc8e4dce0228a4416eb6b6298106b2956aea3b30cedd37d125",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Sing the joyful song of praise to the Fearless One.",
+      "simplePa": "ਮੇਰੇ ਨਿਰਭਉ ਪ੍ਰਭੂ ਦੀ ਵਡਿਆਈ ਦਾ ਸੋਹਿਲਾ ਗਾਓ।",
+      "interpretiveCaution": "The Fearless One is the Divine being praised, not a claim that the worshipper never feels fear."
+    },
+    "sohila|sohila01.line06": {
+      "lineId": "sohila01.line06",
+      "sourceSha256": "0178297321fe7769b02cb204108a887a8b309c7c901b4022076103566d4c488f",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "I cherish this song of praise, through which lasting spiritual peace is sought. This is the refrain.",
+      "simplePa": "ਮੈਂ ਉਸ ਸੋਹਿਲੇ ਤੋਂ ਸਦਕੇ ਜਾਂਦਾ ਹਾਂ ਜਿਸ ਨਾਲ ਟਿਕਾਊ ਆਤਮਕ ਸੁਖ ਮਿਲਦਾ ਹੈ; ਇਹ ਰਹਾਉ ਦੀ ਤੁਕ ਹੈ।",
+      "interpretiveCaution": "“Rahau” is the poem’s interpretive refrain, not a mechanical instruction about audio length."
+    },
+    "sohila|sohila01.line07": {
+      "lineId": "sohila01.line07",
+      "sourceSha256": "444f31fdb5a55267173d5c96ae3bea4c20cb262d4fc8ebedbceac677a63bd68b",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Living beings are continually cared for; the Giver watches over and sustains them.",
+      "simplePa": "ਜੀਵਾਂ ਦੀ ਨਿੱਤ ਸੰਭਾਲ ਹੁੰਦੀ ਹੈ; ਦਾਤਾਰ ਉਨ੍ਹਾਂ ਦੀ ਦੇਖਭਾਲ ਕਰਦਾ ਹੈ।",
+      "interpretiveCaution": "The care of living beings is a devotional statement, not a guarantee against hardship or illness."
+    },
+    "sohila|sohila01.line08": {
+      "lineId": "sohila01.line08",
+      "sourceSha256": "e108b0a76521512ac9e1c18ea08d518de6727d871d69392827cc158d37d84890",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Your gifts cannot be fully measured; how could we set a limit on You, the Giver?",
+      "simplePa": "ਤੇਰੀਆਂ ਦਾਤਾਂ ਦਾ ਮੁੱਲ ਪੂਰਾ ਨਹੀਂ ਪਾਇਆ ਜਾ ਸਕਦਾ; ਉਸ ਦਾਤਾਰ ਦਾ ਅੰਤ ਕੌਣ ਜਾਣ ਸਕਦਾ ਹੈ?",
+      "interpretiveCaution": "The rhetorical question emphasizes the limits of human reckoning of generosity."
+    },
+    "sohila|sohila01.line09": {
+      "lineId": "sohila01.line09",
+      "sourceSha256": "0dff7432bb7712723b14adea296883ee27582afff5973eb4dec673546845a8ec",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "A date has been appointed; in wedding imagery, friends gather to prepare and anoint the bride with oil.",
+      "simplePa": "ਵਿਆਹ ਦੇ ਰੂਪਕ ਵਿੱਚ ਸਾਹਾ ਮਿਥਿਆ ਗਿਆ ਹੈ; ਸਹੇਲੀਆਂ ਰਲ ਕੇ ਤੇਲ ਦੀ ਰਸਮ ਦੀ ਤਿਆਰੀ ਕਰਦੀਆਂ ਹਨ।",
+      "interpretiveCaution": "Wedding preparations are a metaphor for a soul facing a destined departure, not a literal ceremony required of readers."
+    },
+    "sohila|sohila01.line10": {
+      "lineId": "sohila01.line10",
+      "sourceSha256": "c7401aa3b5d381c150dd8bf3e5385c4b46702397e22e572b0bfcde158e17b734",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Friends, give your blessings so that union with the Beloved Lord may come about.",
+      "simplePa": "ਹੇ ਸੱਜਣੋ, ਅਸੀਸਾਂ ਦਿਓ ਕਿ ਮੇਰਾ ਆਪਣੇ ਸਾਹਿਬ ਨਾਲ ਮਿਲਾਪ ਹੋਵੇ।",
+      "interpretiveCaution": "The blessings continue the wedding/union metaphor; they are not a predicted event date."
+    },
+    "sohila|sohila01.line11": {
+      "lineId": "sohila01.line11",
+      "sourceSha256": "f87cadf60ad9585783d1e3b051f03000a84bb5ba73ce4af87c145a409ab4e2da",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The invitation reaches every home; calls to depart keep arriving.",
+      "simplePa": "ਹਰ ਘਰ ਸੱਦੇ ਪਹੁੰਚਦੇ ਹਨ; ਵਿਦਾਈ ਦਾ ਬੁਲਾਵਾ ਨਿੱਤ ਆ ਰਿਹਾ ਹੈ।",
+      "interpretiveCaution": "The imagery speaks to mortality across all households, not a request to fear a particular day."
+    },
+    "sohila|sohila01.line12": {
+      "lineId": "sohila01.line12",
+      "sourceSha256": "5513958e9dbccd1212f56027c1bf08a2620130ff339e5463366df4aad4f6e36e",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Remember the One who calls, says Nanak; our own days of departure will also come.",
+      "simplePa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਸੱਦਾ ਭੇਜਣ ਵਾਲੇ ਨੂੰ ਸਿਮਰੋ, ਕਿਉਂਕਿ ਸਾਡੇ ਲਈ ਵੀ ਉਹ ਦਿਨ ਆਉਣੇ ਹਨ।",
+      "interpretiveCaution": "Mortality imagery invites meaningful remembrance; it is not a prediction of anyone’s lifespan."
+    },
+    "sohila|sohila02.line01": {
+      "lineId": "sohila02.line01",
+      "sourceSha256": "dea869cfdb0889b2e1fe372b94ad7af4f64ba442ef016a2f8c1fde5479b54238",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "HEADING_OR_INVOCATION_CONTEXT",
+      "simpleEn": "Source heading: Raag Aasaa, Mahala 1, attributed to Guru Nanak Sahib.",
+      "simplePa": "ਇਹ ਸਿਰਲੇਖ ਰਾਗ ਆਸਾ ਅਤੇ ਮਹਲਾ ਪਹਿਲਾ — ਗੁਰੂ ਨਾਨਕ ਸਾਹਿਬ ਜੀ — ਦਰਸਾਉਂਦਾ ਹੈ।",
+      "interpretiveCaution": "Raag information is source metadata; it does not certify a particular modern melody."
+    },
+    "sohila|sohila02.line02": {
+      "lineId": "sohila02.line02",
+      "sourceSha256": "98ffeac6b28378106f13c8c5d886c37fd7140ad0f9425036bb44545fa9f4a414",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The verse names six schools, six teachers and six forms of instruction.",
+      "simplePa": "ਤੁਕ ਛੇ ਮੱਤਾਂ ਜਾਂ ਸ਼ਾਸਤਰਾਂ, ਉਨ੍ਹਾਂ ਦੇ ਛੇ ਗੁਰੂਆਂ ਅਤੇ ਛੇ ਉਪਦੇਸ਼ਾਂ ਦਾ ਜ਼ਿਕਰ ਕਰਦੀ ਹੈ।",
+      "interpretiveCaution": "The traditional “six” refers to philosophical systems, not necessarily six separate physical houses."
+    },
+    "sohila|sohila02.line03": {
+      "lineId": "sohila02.line03",
+      "sourceSha256": "af5b86d89e1928a665665b08fd77a8070f2925fbd6b960ea883f01d17baf9b02",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Their forms and teachings may be many, yet the ultimate Divine Source is One.",
+      "simplePa": "ਉਪਦੇਸ਼ ਅਤੇ ਰੂਪ ਕਈ ਹੋ ਸਕਦੇ ਹਨ, ਪਰ ਉਨ੍ਹਾਂ ਦੇ ਪਿੱਛੇ ਮੂਲ ਪ੍ਰਭੂ ਇੱਕੋ ਹੈ।",
+      "interpretiveCaution": "This poetic claim of oneness does not mean that all historical philosophies agree on every doctrine."
+    },
+    "sohila|sohila02.line04": {
+      "lineId": "sohila02.line04",
+      "sourceSha256": "a88bf948583df44b1aa6102b0f60c4e41dbbc9b1c9e5a1d330aee3164cb4a6bb",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "O friend, hold close the place in which the Creator’s praise is spoken.",
+      "simplePa": "ਹੇ ਭਾਈ, ਜਿਸ ਥਾਂ ਕਰਤਾਰ ਦੀ ਸਿਫ਼ਤ ਹੁੰਦੀ ਹੈ, ਉਸ ਥਾਂ ਵੱਲ ਧਿਆਨ ਦੇ।",
+      "interpretiveCaution": "The “house” can describe the gathering or environment of praise and reflection."
+    },
+    "sohila|sohila02.line05": {
+      "lineId": "sohila02.line05",
+      "sourceSha256": "1caa175a574f09d73bd64d10525a39f6dde689e40ab3ad074bab11dd70816383",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Protect that place of praise; it is for your good. This is the central refrain.",
+      "simplePa": "ਉਸ ਸਿਫ਼ਤ ਵਾਲੇ ਆਸਰੇ ਨੂੰ ਸੰਭਾਲ ਕੇ ਰੱਖ, ਇਸੇ ਵਿੱਚ ਤੇਰੀ ਭਲਾਈ ਹੈ; ਇਹ ਰਹਾਉ ਹੈ।",
+      "interpretiveCaution": "The refrain gives practical focus to praise, not preference for any particular building."
+    },
+    "sohila|sohila02.line06": {
+      "lineId": "sohila02.line06",
+      "sourceSha256": "6b0ef071c57e06b539c4df2e9a7fd98475e5d440556e9ae3af6d12304ba1e38e",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Moments, hours, watches, lunar days, weekdays and months make up the changing measures of time.",
+      "simplePa": "ਵਿਸੁਏ, ਚਸੇ, ਘੜੀਆਂ, ਪਹਰ, ਥਿੱਤਾਂ, ਵਾਰ ਅਤੇ ਮਹੀਨੇ — ਸਮੇਂ ਦੇ ਕਈ ਮਾਪ ਹਨ।",
+      "interpretiveCaution": "Ancient time units are named as a poetic list; their precise conversion is not the focus of this teaching note."
+    },
+    "sohila|sohila02.line07": {
+      "lineId": "sohila02.line07",
+      "sourceSha256": "d12dd1797edebd3f162c4a440f9fa81aa8286cff807c3797afe3c0e5fc574ef1",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "There is one sun, though it is experienced across many seasons.",
+      "simplePa": "ਸੂਰਜ ਇੱਕੋ ਹੈ ਪਰ ਰੁੱਤਾਂ ਅਨੇਕ ਹਨ।",
+      "interpretiveCaution": "The single sun and many seasons illustrate unity amid changing appearances."
+    },
+    "sohila|sohila02.line08": {
+      "lineId": "sohila02.line08",
+      "sourceSha256": "d4261c1678f6424ab3a23fe3b18d4d6bd523e05034d6f38f125cf86799778e71",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Nanak says the Creator appears to us in countless forms and expressions.",
+      "simplePa": "ਨਾਨਕ ਆਖਦੇ ਹਨ ਕਿ ਕਰਤਾਰ ਦੇ ਰੂਪ ਤੇ ਪ੍ਰਗਟਾਵੇ ਅਨੇਕ ਹਨ।",
+      "interpretiveCaution": "This closes the sun/seasons comparison without limiting the Divine to visible physical shapes."
+    },
+    "sohila|sohila03.line01": {
+      "lineId": "sohila03.line01",
+      "sourceSha256": "a37ae1ed8c3b9a03399ee512faee90b998175a626b6bc338633094e912307da8",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "HEADING_OR_INVOCATION_CONTEXT",
+      "simpleEn": "Source heading: Raag Dhanaasree, Mahala 1, attributed to Guru Nanak Sahib.",
+      "simplePa": "ਇਹ ਸਿਰਲੇਖ ਰਾਗ ਧਨਾਸਰੀ ਅਤੇ ਮਹਲਾ ਪਹਿਲਾ — ਗੁਰੂ ਨਾਨਕ ਸਾਹਿਬ ਜੀ — ਦੱਸਦਾ ਹੈ।",
+      "interpretiveCaution": "A written raag heading is separate from a claim about an audio recording’s performance."
+    },
+    "sohila|sohila03.line03": {
+      "lineId": "sohila03.line03",
+      "sourceSha256": "217f912efb58e0b28a7660f097a8846c5b8e79a14bd454d7388d325eb412b417",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Fragrant air becomes incense, the wind waves the ceremonial fan, and the flowering forest joins the light-filled offering.",
+      "simplePa": "ਸੁਗੰਧੀ ਹਵਾ ਧੂਪ ਵਾਂਗ, ਪਵਣ ਚੌਰ ਵਾਂਗ ਅਤੇ ਫੁੱਲਾਂ ਨਾਲ ਭਰੇ ਬਨ ਸਿਰਜਣਹਾਰ ਦੀ ਆਰਤੀ ਦਾ ਰੂਪ ਬਣਦੇ ਹਨ।",
+      "interpretiveCaution": "Nature supplies poetic ritual imagery; the text is not prescribing a ritual instrument list."
+    },
+    "sohila|sohila03.line04": {
+      "lineId": "sohila03.line04",
+      "sourceSha256": "2829cf32b98f4ce2205b79d976df954a63b7dec1ddb8e2edabd662197faf1d7e",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "What an extraordinary act of praise this is!",
+      "simplePa": "ਕਿੰਨੀ ਅਦਭੁਤ ਆਰਤੀ ਦੀ ਇਹ ਤਸਵੀਰ ਹੈ!",
+      "interpretiveCaution": "The exclamation follows cosmic imagery; it is not an ordinary question about how to perform a ritual."
+    },
+    "sohila|sohila03.line05": {
+      "lineId": "sohila03.line05",
+      "sourceSha256": "174137584c98a304660c119cc240dd8706f61143977ed32eb1230476439fbc61",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "O One who frees beings from the bondage of coming and going, this vast praise is Your aarti.",
+      "simplePa": "ਹੇ ਜਨਮ-ਮਰਨ ਦੇ ਬੰਧਨ ਕੱਟਣ ਵਾਲੇ, ਇਹ ਵਿਸ਼ਾਲ ਵਡਿਆਈ ਤੇਰੀ ਆਰਤੀ ਹੈ।",
+      "interpretiveCaution": "Bhav-khandan is devotional language about spiritual bondage, not a clinical claim."
+    },
+    "sohila|sohila03.line06": {
+      "lineId": "sohila03.line06",
+      "sourceSha256": "d39bcabf442f61940fc7aea81399a29ca914b78e1e5fe5d3af9fa14b4ff78d8d",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The unstruck sound is imagined as a great drum of praise; the refrain calls attention to the divine offering.",
+      "simplePa": "ਅਨਹਦ ਸ਼ਬਦ ਵੱਡੀ ਭੇਰੀ ਦੇ ਨਾਦ ਵਾਂਗ ਵੱਜਦਾ ਦਿਖਾਇਆ ਹੈ; ਰਹਾਉ ਆਰਤੀ ਦੇ ਭਾਵ ਉੱਤੇ ਧਿਆਨ ਦਿਵਾਉਂਦਾ ਹੈ।",
+      "interpretiveCaution": "Anhad imagery should not be turned into a scientifically specified acoustic frequency."
+    },
+    "sohila|sohila03.line07": {
+      "lineId": "sohila03.line07",
+      "sourceSha256": "99ae3934b64ae697857cdf5d7d217d7428ecd2dee4c8cf335fa6080786842cdc",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "You are praised as having countless eyes, yet no one limited eye; countless forms, yet no single confining form.",
+      "simplePa": "ਤੇਰੀਆਂ ਅਣਗਿਣਤ ਅੱਖਾਂ ਤੇ ਰੂਪ ਕਹੇ ਗਏ ਹਨ, ਫਿਰ ਵੀ ਤੂੰ ਕਿਸੇ ਇੱਕ ਅੱਖ ਜਾਂ ਰੂਪ ਦੀ ਹੱਦ ਵਿੱਚ ਨਹੀਂ।",
+      "interpretiveCaution": "The apparent contradiction is deliberate: Divine presence throughout creation without a limiting body."
+    },
+    "sohila|sohila03.line08": {
+      "lineId": "sohila03.line08",
+      "sourceSha256": "14e11655ad365e7783da4719b6cdbb61ae2d62552726fac75f1fcb559919a272",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Countless pure feet and perceptions are Yours, yet You are not restricted to one physical foot or sense of smell; this wonder captivates the speaker.",
+      "simplePa": "ਅਨੇਕ ਪਵਿੱਤਰ ਚਰਨ ਅਤੇ ਸੁਗੰਧ ਦੇ ਅਨੁਭਵ ਤੇਰੇ ਦੱਸੇ ਹਨ, ਪਰ ਤੂੰ ਇੱਕ ਸਰੀਰਕ ਚਰਨ ਜਾਂ ਇੰਦਰੀ ਦੀ ਹੱਦ ਵਿੱਚ ਨਹੀਂ; ਇਹ ਅਚਰਜ ਮਨ ਨੂੰ ਮੋਹ ਲੈਂਦਾ ਹੈ।",
+      "interpretiveCaution": "The verse pairs presence in all beings with the inability to assign one limiting physical body."
+    },
+    "sohila|sohila03.line09": {
+      "lineId": "sohila03.line09",
+      "sourceSha256": "753649097139411ca92f8555bb25651879c4a437ebaf44f214a66b5255c3e84b",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The One Divine Light is present within everyone.",
+      "simplePa": "ਸਭ ਦੇ ਅੰਦਰ ਉਸ ਇੱਕ ਪ੍ਰਭੂ ਦੀ ਜੋਤਿ ਮੌਜੂਦ ਹੈ।",
+      "interpretiveCaution": "This is the poem’s spiritual vision of shared Divine light, not a claim about measurable photons."
+    },
+    "sohila|sohila03.line10": {
+      "lineId": "sohila03.line10",
+      "sourceSha256": "24d50fc067455cf4647b04c2ea42c5667656d9ad1d834397e0c26c029dc95c1a",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Through that Light, light shines within all beings.",
+      "simplePa": "ਉਸ ਦੀ ਜੋਤਿ ਦੇ ਚਾਨਣ ਨਾਲ ਸਭ ਜੀਵਾਂ ਵਿੱਚ ਚਾਨਣ ਹੈ।",
+      "interpretiveCaution": "The line develops the previous claim that the same Divine presence is in all."
+    },
+    "sohila|sohila03.line11": {
+      "lineId": "sohila03.line11",
+      "sourceSha256": "2674ec0553fbabc2858e884f4193e7c5bd7ae43c71abaafd361d1fa02f45463c",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Through the Guru’s teaching and witness, that Light becomes known or revealed.",
+      "simplePa": "ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ ਤੇ ਸਾਖੀ ਰਾਹੀਂ ਉਹ ਜੋਤਿ ਸਮਝ ਵਿੱਚ ਪਰਗਟ ਹੁੰਦੀ ਹੈ।",
+      "interpretiveCaution": "Guru-sakhi refers to the Guru’s teaching/testimony; it is not a licence to guess a historical anecdote."
+    },
+    "sohila|sohila03.line12": {
+      "lineId": "sohila03.line12",
+      "sourceSha256": "de4f34e2f1192b5ae01e56db549c2941109d9397f5ce846b2ba7ad67417794af",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "What pleases the Divine is the true aarti, the worthy act of praise.",
+      "simplePa": "ਜੋ ਪ੍ਰਭੂ ਨੂੰ ਭਾਉਂਦਾ ਹੈ, ਉਹੀ ਸੱਚੀ ਆਰਤੀ ਹੈ।",
+      "interpretiveCaution": "The line turns the cosmic metaphor toward sincerity, rather than outward spectacle alone."
+    },
+    "sohila|sohila03.line13": {
+      "lineId": "sohila03.line13",
+      "sourceSha256": "cc525eaca6a2b79cc03633cff3ccd6c4cf6c591b4bf3245592da8afe60224360",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "My mind longs constantly for the nectar of the lotus-like Divine feet.",
+      "simplePa": "ਮੇਰਾ ਮਨ ਪ੍ਰਭੂ ਦੇ ਕਮਲ-ਚਰਨਾਂ ਦੇ ਰਸ ਲਈ ਦਿਨ-ਰਾਤ ਤਰਸਦਾ ਹੈ।",
+      "interpretiveCaution": "Lotus-feet and nectar are devotional metaphors for longing and refuge, not literal anatomy or fluid."
+    },
+    "sohila|sohila03.line14": {
+      "lineId": "sohila03.line14",
+      "sourceSha256": "3d01f53348febada4bb40b67da29067534f101afd41fdb1cf6aa5fba7984dd70",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Grant the water of compassion to this thirsty bird-like soul, says Nanak, so that it may abide in Your Naam.",
+      "simplePa": "ਨਾਨਕ ਬੇਨਤੀ ਕਰਦੇ ਹਨ: ਤ੍ਰਿਸ਼ਨਾਤੁਰ ਸਾਰਿੰਗ ਵਾਂਗ ਇਸ ਮਨ ਨੂੰ ਕਿਰਪਾ ਦਾ ਜਲ ਦੇਹੋ ਤਾਂ ਜੋ ਇਹ ਤੇਰੇ ਨਾਮ ਵਿੱਚ ਟਿਕੇ।",
+      "interpretiveCaution": "The Sarang/thirsty bird is a traditional image; the request is for grace and remembrance."
+    },
+    "sohila|sohila04.line01": {
+      "lineId": "sohila04.line01",
+      "sourceSha256": "2243aee8ed18fd703a82d95448c9e1942b2bbcc6ae0513db5f42507853740902",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "HEADING_OR_INVOCATION_CONTEXT",
+      "simpleEn": "Source heading: Raag Gauree Poorbee, Mahala 4, attributed to Guru Ram Das Sahib.",
+      "simplePa": "ਇਹ ਸਿਰਲੇਖ ਰਾਗ ਗਉੜੀ ਪੂਰਬੀ ਅਤੇ ਮਹਲਾ ਚੌਥਾ — ਗੁਰੂ ਰਾਮ ਦਾਸ ਸਾਹਿਬ ਜੀ — ਦੱਸਦਾ ਹੈ।",
+      "interpretiveCaution": "This is authorship/raag information, not a separate meaning-bearing stanza."
+    },
+    "sohila|sohila04.line02": {
+      "lineId": "sohila04.line02",
+      "sourceSha256": "ef872e60d055fb75e384637e79accfc5d6d4d70807c30a9760b5ee17f4a5629a",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The city of the mind is crowded by desire and anger; through the company of the Guru-oriented holy person, those forces are broken down.",
+      "simplePa": "ਮਨ ਦੇ ਨਗਰ ਵਿੱਚ ਕਾਮ ਤੇ ਕ੍ਰੋਧ ਬਹੁਤ ਭਰੇ ਹਨ; ਸਾਧੂ ਜਾਂ ਗੁਰੂ ਦੀ ਸੰਗਤ ਰਾਹੀਂ ਇਹ ਵਿਕਾਰ ਟੁੱਟਣ ਲੱਗਦੇ ਹਨ।",
+      "interpretiveCaution": "The “city” is an inner-life metaphor. Emotions are not themselves a medical diagnosis."
+    },
+    "sohila|sohila04.line03": {
+      "lineId": "sohila04.line03",
+      "sourceSha256": "eef8136b8d33cfa282116dfcdb0d89d7bb2f5a094f59e40923a00b84a7d98b2c",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Through a grace-filled destiny the Guru is encountered, and the mind is adorned with loving attention to Hari.",
+      "simplePa": "ਪੂਰਬਲੇ ਲੇਖ ਜਾਂ ਕਿਰਪਾ ਨਾਲ ਗੁਰੂ ਮਿਲਦਾ ਹੈ ਅਤੇ ਮਨ ਹਰਿ ਦੀ ਲਿਵ ਨਾਲ ਸਜਦਾ ਹੈ।",
+      "interpretiveCaution": "“Written before” belongs to the poem’s theological vocabulary; do not turn it into a prediction about a person’s fate."
+    },
+    "sohila|sohila04.line04": {
+      "lineId": "sohila04.line04",
+      "sourceSha256": "04e080736fcd441d13652bb94387cd128abe674cee60100f8dc27f9b291e9254",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Offer respectful folded hands to the saintly or Guru-oriented person; the verse values such humility greatly.",
+      "simplePa": "ਸਾਧੂ ਅੱਗੇ ਆਦਰ ਨਾਲ ਅੰਜਲੀ ਜੋੜਨਾ ਵੱਡਾ ਪੁੰਨ ਦੱਸਿਆ ਗਿਆ ਹੈ।",
+      "interpretiveCaution": "The gesture stands for respect and humility; the lesson must not demand submission to an unaccountable individual."
+    },
+    "sohila|sohila04.line05": {
+      "lineId": "sohila04.line05",
+      "sourceSha256": "d54224ae2cf6a23fa7b016539158d8d2678f4182af536c306d5bef9ba01e2792",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Bow with humility; the refrain again honours respectful reverence.",
+      "simplePa": "ਨਿਮਰਤਾ ਨਾਲ ਡੰਡਉਤ ਕਰੋ; ਰਹਾਉ ਵਿੱਚ ਆਦਰ ਦੇ ਭਾਵ ਦੀ ਵਡਿਆਈ ਹੈ।",
+      "interpretiveCaution": "This poetic praise of a gesture does not require a single outward ritual of all readers."
+    },
+    "sohila|sohila04.line06": {
+      "lineId": "sohila04.line06",
+      "sourceSha256": "fab839f0ff5f98b395999110cb490a066cb1c92d4980beda7690a623a39da0a3",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Those turned away from Hari do not know the taste of Divine love; ego remains like a thorn within.",
+      "simplePa": "ਹਰਿ ਤੋਂ ਮੂੰਹ ਮੋੜਿਆ ਮਨ ਨਾਮ ਦੇ ਰਸ ਨੂੰ ਨਹੀਂ ਜਾਣਦਾ ਅਤੇ ਹਉਮੈ ਅੰਦਰ ਕੰਡੇ ਵਾਂਗ ਚੁੱਭਦੀ ਹੈ।",
+      "interpretiveCaution": "The thorn is a moral/spiritual metaphor, not a physical injury or a label for condemning neighbours."
+    },
+    "sohila|sohila04.line07": {
+      "lineId": "sohila04.line07",
+      "sourceSha256": "6cd70329bcad856444e88ca5565881fccad324804b77c17fd62792ab90fdd537",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "As they move through life, that inner thorn brings pain; the line uses the image of death’s discipline.",
+      "simplePa": "ਜਿਵੇਂ ਜੀਵਨ ਵਿੱਚ ਤੁਰਦੇ ਹਨ, ਹਉਮੈ ਦਾ ਕੰਡਾ ਦੁੱਖ ਦਿੰਦਾ ਹੈ; ਜਮਕਾਲ ਦੇ ਡੰਡੇ ਦੀ ਤਿੱਖੀ ਤਸਵੀਰ ਆਉਂਦੀ ਹੈ।",
+      "interpretiveCaution": "Jamakal is traditional spiritual imagery; do not present it as proof of literal punishment for a reader."
+    },
+    "sohila|sohila04.line08": {
+      "lineId": "sohila04.line08",
+      "sourceSha256": "7adf0038e8d6539ae820382ed905da1a818cc398612d62515b873c5bf368981f",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Those who live immersed in Hari’s Naam find release from the suffering bound up with the world and repeated birth and death.",
+      "simplePa": "ਹਰਿ ਦੇ ਸੇਵਕ ਨਾਮ ਵਿੱਚ ਰੰਗੇ ਰਹਿੰਦੇ ਹਨ ਅਤੇ ਜਨਮ-ਮਰਨ ਤੇ ਸੰਸਾਰ ਦੇ ਦੁੱਖ ਦੇ ਬੰਧਨ ਤੋਂ ਛੁਟਕਾਰਾ ਲੱਭਦੇ ਹਨ।",
+      "interpretiveCaution": "This is spiritual liberation imagery, not a promise of freedom from illness or grief."
+    },
+    "sohila|sohila04.line09": {
+      "lineId": "sohila04.line09",
+      "sourceSha256": "5c915273573a7d5ca12ac6a998bc3f384bf82ff66d2bf5403509d080fb58e43d",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "They discover the enduring Divine, the Lord beyond decay, and the shabad describes their spiritual honour through creation.",
+      "simplePa": "ਉਹ ਅਬਿਨਾਸੀ ਪ੍ਰਭੂ ਨੂੰ ਪਛਾਣਦੇ ਹਨ ਅਤੇ ਸ਼ਬਦ ਉਨ੍ਹਾਂ ਦੀ ਆਤਮਕ ਵਡਿਆਈ ਨੂੰ ਸ੍ਰਿਸ਼ਟੀ ਵਿੱਚ ਫੈਲਿਆ ਦਿਖਾਉਂਦਾ ਹੈ।",
+      "interpretiveCaution": "Cosmic honour is devotional expression, not a claim of measurable personal fame."
+    },
+    "sohila|sohila04.line10": {
+      "lineId": "sohila04.line10",
+      "sourceSha256": "c7ef302b3906d2292946b89296610275c072a240ffffe3061147845ee5db07ed",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "We are humble and small before You, O great Lord; please keep us in Your protection.",
+      "simplePa": "ਹੇ ਵੱਡੇ ਪ੍ਰਭੂ, ਅਸੀਂ ਗਰੀਬ ਤੇ ਨਿਮਾਣੇ ਹਾਂ; ਸਾਨੂੰ ਆਪਣੀ ਰੱਖਿਆ ਵਿੱਚ ਰੱਖੋ।",
+      "interpretiveCaution": "Humility in prayer need not mean surrendering personal dignity or asking for protection instead of practical safety."
+    },
+    "sohila|sohila04.line11": {
+      "lineId": "sohila04.line11",
+      "sourceSha256": "66c0ed636f7033cdbd2991bb5fe69a07085d8b4f4d89ae191754c1005d8011df",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Nanak says Naam is the servant’s support and foundation; peace is found in that remembrance.",
+      "simplePa": "ਨਾਨਕ ਆਖਦੇ ਹਨ ਕਿ ਨਾਮ ਹੀ ਸੇਵਕ ਦਾ ਆਸਰਾ ਤੇ ਟੇਕ ਹੈ; ਉਸ ਨਾਮ ਵਿੱਚ ਸੁਖ ਮਿਲਦਾ ਹੈ।",
+      "interpretiveCaution": "Naam as support is the concluding spiritual theme, not a substitute for ordinary help or care."
+    },
+    "sohila|sohila05.line01": {
+      "lineId": "sohila05.line01",
+      "sourceSha256": "a80c87976186d249c309e0d6a7ac34091769b1a538b2239ef7409c99789f92a1",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "HEADING_OR_INVOCATION_CONTEXT",
+      "simpleEn": "Source heading: Raag Gauree Poorbee, Mahala 5, attributed to Guru Arjan Sahib.",
+      "simplePa": "ਇਹ ਸਿਰਲੇਖ ਰਾਗ ਗਉੜੀ ਪੂਰਬੀ ਅਤੇ ਮਹਲਾ ਪੰਜਵਾਂ — ਗੁਰੂ ਅਰਜਨ ਸਾਹਿਬ ਜੀ — ਦੱਸਦਾ ਹੈ।",
+      "interpretiveCaution": "This identifies the source raag and Guru; a reading translation should not recast it as a devotional sentence."
+    },
+    "sohila|sohila05.line03": {
+      "lineId": "sohila05.line03",
+      "sourceSha256": "c06d5192efba0bc1f1891807219a6d2ac422de5bcd14faead550770a804b9a9f",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Earn the true spiritual profit of remembering Hari in this life, so that your onward dwelling may be peaceful.",
+      "simplePa": "ਇਸ ਜੀਵਨ ਵਿੱਚ ਹਰਿ ਨਾਮ ਦਾ ਸੱਚਾ ਲਾਹਾ ਖੱਟੋ, ਤਾਂ ਜੋ ਅੱਗੇ ਦਾ ਸਫ਼ਰ ਸੁਖ ਵਾਲਾ ਹੋਵੇ।",
+      "interpretiveCaution": "The trade/profit metaphor relates to spiritual purpose, not a promise about literal financial return."
+    },
+    "sohila|sohila05.line04": {
+      "lineId": "sohila05.line04",
+      "sourceSha256": "80696e7ff347e52abf67d4d43523bb927e554ea07d3ef81c0459aef356b5c6e4",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Our allotted span of life grows shorter as day and night pass.",
+      "simplePa": "ਦਿਨ ਅਤੇ ਰਾਤ ਦੇ ਲੰਘਣ ਨਾਲ ਜੀਵਨ ਦੀ ਅਉਧ ਘਟਦੀ ਜਾਂਦੀ ਹੈ।",
+      "interpretiveCaution": "This is an invitation to awareness of impermanence, not a clinical life-expectancy estimate."
+    },
+    "sohila|sohila05.line05": {
+      "lineId": "sohila05.line05",
+      "sourceSha256": "576e42b2a1fec97352f5babbf93833ada45600e39e0a1f21e89df3c886917c3d",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "O mind, meet the Guru and bring the purpose of your life into order. This is the refrain.",
+      "simplePa": "ਹੇ ਮਨ, ਗੁਰੂ ਨੂੰ ਮਿਲ ਕੇ ਆਪਣੇ ਜੀਵਨ ਦਾ ਅਸਲ ਕੰਮ ਸੰਵਾਰ; ਇਹ ਰਹਾਉ ਹੈ।",
+      "interpretiveCaution": "The imperative concerns the spiritual purpose of life, not a demand to be constantly productive."
+    },
+    "sohila|sohila05.line06": {
+      "lineId": "sohila05.line06",
+      "sourceSha256": "5010667fb23fd97805046d7fe0a2fd28cd1e496fc92b9a8c738c8660f639a212",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "This world is full of entanglement, harmful impulses and doubt; spiritual wisdom helps one cross through.",
+      "simplePa": "ਇਸ ਸੰਸਾਰ ਵਿੱਚ ਵਿਕਾਰ ਅਤੇ ਸੰਸੇ ਹਨ; ਬ੍ਰਹਮ-ਗਿਆਨ ਵਾਲਾ ਮਨੁੱਖ ਇਨ੍ਹਾਂ ਤੋਂ ਪਾਰ ਹੋਣ ਦੀ ਸੇਧ ਪਾਉਂਦਾ ਹੈ।",
+      "interpretiveCaution": "Crossing an ocean/world is metaphorical; do not teach this as immunity from mental-health difficulty."
+    },
+    "sohila|sohila05.line07": {
+      "lineId": "sohila05.line07",
+      "sourceSha256": "c2c4f97bfb78221d27922dab12c84f47072c8c307f9cb0122417523101beff2d",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "The one awakened and given the sweetness of Divine awareness comes to know the otherwise indescribable teaching.",
+      "simplePa": "ਜਿਸ ਨੂੰ ਪ੍ਰਭੂ ਆਪ ਜਗਾ ਕੇ ਨਾਮ-ਰਸ ਦਾ ਸੁਆਦ ਦਿੰਦਾ ਹੈ, ਉਹ ਅਕਥ ਅਨੁਭਵ ਦੀ ਸਮਝ ਪਾਉਂਦਾ ਹੈ।",
+      "interpretiveCaution": "The “taste” and ineffable story are spiritual images, not literal intoxicants or a sensory test."
+    },
+    "sohila|sohila05.line08": {
+      "lineId": "sohila05.line08",
+      "sourceSha256": "8a6af8dd6251798da291664e1878699f5735fe2ac5198052d3e566613ebc24a7",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Acquire the purpose for which you came into life: let Hari dwell within the mind through the Guru.",
+      "simplePa": "ਜਿਸ ਅਸਲ ਕੰਮ ਲਈ ਆਏ ਹੋ, ਉਸ ਦਾ ਲਾਹਾ ਲਵੋ; ਗੁਰੂ ਰਾਹੀਂ ਹਰਿ ਨੂੰ ਮਨ ਵਿੱਚ ਵਸਾਓ।",
+      "interpretiveCaution": "“Trade” and “purchase” continue the shabad’s ethical/spiritual profit metaphor."
+    },
+    "sohila|sohila05.line09": {
+      "lineId": "sohila05.line09",
+      "sourceSha256": "5570c6b54096ead94e6316295d5dc969f07b9f203b246ac5c1f27349b6e9e4ee",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Rest in your own true inner home and receive peace in natural poise; the verse speaks of freedom from the cycle of return.",
+      "simplePa": "ਆਪਣੇ ਨਿਜ ਘਰ ਵਿੱਚ ਸਹਜ ਦਾ ਸੁਖ ਪਾਓ; ਬਾਣੀ ਮੁੜ-ਮੁੜ ਆਉਣ ਦੇ ਚੱਕਰ ਤੋਂ ਮੁਕਤੀ ਦੀ ਤਸਵੀਰ ਦਿੰਦੀ ਹੈ।",
+      "interpretiveCaution": "The inner home and no-return are theological images; they are not literal travel directions or a scientific claim."
+    },
+    "sohila|sohila05.line10": {
+      "lineId": "sohila05.line10",
+      "sourceSha256": "16e2762d07fd5c062da98da9caa382a872084427e3dd3f3bb645427fb5d35729",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "O Knower of hearts, the Creator, please receive and fulfil the sincere longing within my mind.",
+      "simplePa": "ਹੇ ਅੰਤਰਜਾਮੀ ਕਰਤਾਰ, ਮੇਰੇ ਮਨ ਦੀ ਸੱਚੀ ਸ਼ਰਧਾ ਅਤੇ ਤਾਂਘ ਨੂੰ ਕਬੂਲ ਕਰੋ।",
+      "interpretiveCaution": "A prayer to the all-knowing Divine does not imply every worldly desire will be fulfilled on demand."
+    },
+    "sohila|sohila05.line11": {
+      "lineId": "sohila05.line11",
+      "sourceSha256": "d8e3a42a4384e5107d345b4165aeca65b80542db3bd37b8b3e535bb575119413",
+      "status": "DRAFT_AI_UNREVIEWED",
+      "kind": "SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION",
+      "simpleEn": "Nanak asks for this joy alone: make me as humble as the dust beneath the feet of the saintly.",
+      "simplePa": "ਨਾਨਕ ਇਹੀ ਸੁਖ ਮੰਗਦੇ ਹਨ ਕਿ ਮੈਂ ਸੰਤ ਜਨਾਂ ਦੇ ਚਰਨਾਂ ਦੀ ਧੂੜ ਵਰਗਾ ਨਿਮਾਣਾ ਬਣਾਂ।",
+      "interpretiveCaution": "Dust-of-feet is an image of profound humility, not an instruction for humiliating a person."
+    }
+  }
+}
