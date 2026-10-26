@@ -1,0 +1,68 @@
+name: GLP Nitnem Bilingual Meaning and Learn Draft QA (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-nitnem-meaning-study-drafts-20261025
+permissions:
+  contents: read
+jobs:
+  verified-educational-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Obtain exact prior frozen original-source reference for reconciliation
+        uses: actions/checkout@v4
+        with:
+          repository: sskhangura82/gurbani-learning-library
+          ref: 373ccc34f4a1c0ccb6ce36654bf6e9574087200f
+          path: pinned-original-research
+          persist-credentials: false
+      - name: Source corpus is immutable and all original line hashes remain pinned
+        run: |
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-research --output nitnem/data --verify
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-research --output nitnem/data
+          git diff --exit-code -- nitnem/data
+      - name: Deterministic bilingual learning draft source/lesson bindings
+        run: |
+          node --check tools/nitnem/lesson-drafts.mjs
+          node --check tools/nitnem/build-learning-pack.mjs
+          node --check nitnem/learning/learning-ui.js
+          node tools/nitnem/build-learning-pack.mjs
+          git diff --exit-code -- nitnem/learning/course.v1.json
+          node tests/nitnem-teaching-contract.mjs
+          node tests/nitnem-internal-source-contract.mjs
+      - name: Previously accepted Japji original, learning and worker regressions
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: Offline worker includes exact source AND editorial draft assets
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node --check nitnem/reader.js
+          node --check nitnem/sw.js
+      - name: Separate versioned private learning bundle is independently reproducible
+        run: |
+          python3 tools/nitnem/build-learning-reader.py --output "${{ runner.temp }}/glp-learning-r1"
+          python3 tools/nitnem/build-learning-reader.py --output "${{ runner.temp }}/glp-learning-r1" --verify
+      - name: Ephemeral private gateway refuses forged source/course and unauthorized reads
+        run: |
+          python3 -c 'import ast; [ast.parse(open(n).read()) for n in ["tests/nitnem-learning-gate-contract.py","tests/serve-gated-learning-nitnem.py","tools/nitnem/build-learning-reader.py"]]'
+          python3 tests/nitnem-learning-gate-contract.py
+      - name: Chrome scripts parse, but cannot claim real iPhone acceptance
+        run: |
+          node --check tests/nitnem-learning-browser.mjs
+          node --check tests/nitnem-learning-gated-browser.mjs
+          test ! -e nitnem-learning
+          test ! -e nitnem-continuous
+          ! grep -q 'nitnem-learning/' sw.js
+          git diff --exit-code -- full-japji.html sw.js js/japji-full-data.js js/japji-full.js js/learning.js js/shared-learning.js index.html

@@ -95,8 +95,8 @@ test('The 29-pauri Chaupai source clearly names its site-specific unapproved var
 });
 test('Library has original Read, Meaning, Study controls but does not fabricate translations',()=>{
  assert.deepEqual([...page.matchAll(/<button[^>]+data-mode="([^"]+)"/g)].map(x=>x[1]),['read','meaning','study']);
- assert.ok(script.includes('No guessed translation'));
- assert.ok(script.includes('No reviewed line-by-line meaning is available'));
+ assert.ok(script.includes('DRAFT')&&script.includes('teachingCourse'));
+ assert.ok(script.includes('L.unitLesson('));
  assert.ok(!page.includes('translation='));
 });
 test('Gurmukhi reader, word-guide and settings use the existing exact continuous core',()=>{
@@ -120,7 +120,7 @@ test('Internal page contains zero third-party scripture links or remote script s
  assert.ok(!/<iframe\b/i.test(page));
 });
 test('Scoped second service worker does not replace or delete Japji root cache',()=>{
- assert.equal(sha(read('nitnem/sw.js')),'78c3c8ee043043850226bfe9268678040e186ac48acc7eb1020fdc87a5468e16');
+ assert.equal(sha(read('nitnem/sw.js')),'db9fef6f9290e1eba3732b78ce605f4efd45f13b6aa2ea322c417614d3770c33');
  assert.ok(sw.includes('glp-nitnem-source-review:'));
  assert.ok(!sw.includes('glp-static:'));
  assert.ok(sw.includes('new URL("./",self.location.href)'));
@@ -130,7 +130,9 @@ test('Cache manifest covers all six data JSON assets and exact 11 QA app files',
  const m=sw.match(/^const EXPECTED=(\{[^\n]+\});/m);
  assert.ok(m);
  const expected=JSON.parse(m[1]);
- assert.equal(Object.keys(expected).length,11);
+ assert.equal(Object.keys(expected).length,13);
+ assert.ok(expected['./learning/course.v1.json']);
+ assert.ok(expected['./learning/learning-ui.js']);
  for(const [file,hash] of Object.entries(expected)){
   assert.equal(sha(read('nitnem/'+file.slice(2))),hash);
  }

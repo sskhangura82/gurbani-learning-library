@@ -30,24 +30,26 @@
  <div class="collection-group" aria-labelledby="night-heading"><div class="group-heading"><div><p class="eyebrow">ਰਾਤ · NIGHT</p><h2 id="night-heading">Night</h2></div><span>07</span></div>
   <div class="bani-list"><button class="bani-card" type="button" data-open="sohila"><span class="num">07</span><span class="bani-details"><span lang="pa" class="g-title">ਕੀਰਤਨ ਸੋਹਿਲਾ</span><strong>Kirtan Sohila</strong><small>Five shabads · SGGS Ang 12–13 · original-text candidate</small></span><span aria-hidden="true" class="chevron">›</span></button></div>
  </div>
- <footer class="collection-footer"><p>All six additional original texts load from this same site. No third-party scripture links, translation engines or media are embedded.</p><p id="offline-message" role="status" aria-live="polite">Checking whether this private edition is saved for offline review…</p><button id="offline-install" type="button">Prepare private offline reading</button><p>Offline saving is for source-review testing, not proof of religious accuracy or approved family release.</p></footer>
+ <footer class="collection-footer"><p>All six additional original texts and the drafted English/Punjabi lessons load from this same site. No third-party scripture links, translation engines or media are embedded. Full lesson coverage remains under construction.</p><p id="offline-message" role="status" aria-live="polite">Checking whether this private edition is saved for offline review…</p><button id="offline-install" type="button">Prepare private offline reading</button><p>Offline saving is for source-review testing, not proof of religious accuracy or approved family release.</p></footer>
 </section>
 <section id="reader" class="reader" aria-labelledby="bani-title" hidden>
  <div class="reader-heading"><p class="eyebrow" id="reader-kicker">DIGITAL ORIGINAL · UNDER REVIEW</p><h1 id="bani-title" lang="pa"></h1><p class="reader-subtitle" id="bani-subtitle"></p><p class="variant" id="bani-variant"></p></div>
- <div class="candidate-banner source-warning" role="note"><strong>Original-text review candidate.</strong> Exact edition, source comparisons and rights are not yet independently approved. Meanings and Study interpretation are withheld rather than invented.</div>
+ <div class="candidate-banner source-warning" role="note"><strong>Private source and learning review.</strong> Original source editions, reuse rights and bilingual explanations remain unapproved. Meaning and Learn display only clearly marked authored drafts; missing lessons are never generated or filled in automatically.</div>
  <div class="review-mode" id="review-mode" hidden aria-live="polite"></div>
+ <section class="learning-overview" id="learning-overview" hidden aria-label="Bani overview and learning coverage"></section>
  <div class="source-lineage" id="source-lineage" role="status" aria-live="polite"></div>
  <div class="view-row" role="group" aria-label="Original Gurbani reading layout"><button id="view-continuous" type="button" aria-pressed="true">Continuous reading</button><button id="view-passage" type="button" aria-pressed="false">One passage</button></div>
  <p class="view-help" id="view-help">The complete bani flows below without leaving the reader. Jump to any passage from the reading dock.</p>
  <section id="source-unit" class="source-unit" aria-label="Original Gurmukhi reading" tabindex="-1"></section>
  <nav class="between-units" aria-label="Continue reading"><button id="prev-unit" type="button">← Previous passage</button><button id="next-unit" type="button">Next passage →</button></nav>
+ <button id="next-written-lesson" class="next-lesson" type="button" hidden>Continue to next written lesson</button>
  <div class="reading-end" id="reading-end" hidden>End of this source candidate. This does not certify a complete approved bani edition.</div>
 </section>
 </main>
 <aside class="dock" id="dock" aria-label="Reading controls" hidden>
  <button id="play" type="button" class="round" aria-label="Play silent visual guide" aria-pressed="false">▶</button>
  <button id="jump" type="button" class="position" aria-label="Choose a passage or stanza"><span id="position-label">Passage</span><small id="position-detail">Line 1</small></button>
- <div class="modes" role="group" aria-label="Reading depth"><button type="button" data-mode="read" aria-pressed="true">Read</button><button type="button" data-mode="meaning" aria-pressed="false">Meaning</button><button type="button" data-mode="study" aria-pressed="false">Study</button></div>
+ <div class="modes" role="group" aria-label="Reading depth"><button type="button" data-mode="read" aria-pressed="true">Read</button><button type="button" data-mode="meaning" aria-pressed="false">Meaning</button><button type="button" data-mode="study" aria-label="Deep learning mode" aria-pressed="false">Learn</button></div>
  <button id="reading-tools" type="button" class="round" aria-label="Reading tools and saved learning">☰</button>
 </aside>
 <dialog id="jump-dialog" aria-labelledby="jump-title"><div class="dialog-heading"><h2 id="jump-title">Go to a passage</h2><button type="button" id="jump-close" aria-label="Close passage list">×</button></div><div id="jump-list" class="jump-list"></div></dialog>
@@ -59,5 +61,5 @@
 </dialog>
 <div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
 <noscript><p>Enable JavaScript to load verified local original-text candidates. Japji Sahib is available separately through the family reader.</p></noscript>
-<script src="continuous-core.js"></script><script src="reader.js"></script>
+<script src="continuous-core.js"></script><script src="learning/learning-ui.js"></script><script src="reader.js"></script>
 </body></html>

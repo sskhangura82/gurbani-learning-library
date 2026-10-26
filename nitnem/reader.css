@@ -28,3 +28,32 @@ body[data-view=continuous] .source-unit{padding-top:0}
 body[data-view=passage] .passage-block{border-bottom:0}
 body[data-view=continuous] .between-units{margin-top:10px}
 @media(max-width:420px){.view-row button{padding:9px 6px;font-size:12px}.passage-block .unit-heading{font-size:11px;letter-spacing:.5px}.view-help{padding:0 4px}}
+
+/* Nitnem bilingual Meaning / Learn — draft layers strictly below source Gurbani */
+.learning-overview{max-width:700px;margin:18px auto 24px}
+.learning-article{border:1px solid var(--line);border-radius:14px;background:var(--raised);padding:16px}
+.learning-draft-label{display:inline-block;font:750 10px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.4px;border:1px solid var(--warnline);background:var(--warn);padding:3px 8px;border-radius:30px;color:var(--ink)}
+.learn-section-label,.learn-tag{color:var(--muted);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:14px 0 4px}
+.learn-topic{font:normal 24px/1.3 Georgia,serif;margin:7px 0 13px;color:var(--ink)}
+.learn-paragraph{margin:10px auto}.learn-body{font-size:14px;line-height:1.7;margin:4px 0;color:var(--ink)}
+.learn-body[lang=pa]{font:normal 18px/1.78 "Gurmukhi MN","Noto Serif Gurmukhi",serif}
+.learn-coverage{color:var(--ink);font-size:12px;border-top:1px solid var(--line);padding-top:12px;margin:13px 0 4px;font-weight:750}
+.learn-coverage-detail{color:var(--muted);font-size:11px;line-height:1.6;margin:6px 0}
+.learning-not-written{border:1px dashed var(--line);background:var(--raised);padding:13px 14px;border-radius:10px;margin:16px auto;font-size:12px;color:var(--muted)}
+.learning-not-written strong{color:var(--ink)}.learning-not-written p{margin:5px 0}
+.unit-learning{background:var(--raised);border:1px solid var(--line);border-radius:12px;padding:14px;margin:25px auto 8px;max-width:650px}
+.unit-learning .learn-heading{font:normal 21px Georgia,serif;margin:11px 0;color:var(--ink)}
+.learn-vocabulary{margin:13px 0;padding:12px;border-radius:10px;background:var(--accent-light)}
+.learn-vocabulary h3,.learn-vocabulary h4{font-size:12px;letter-spacing:.4px;margin:0 0 9px}
+.learn-words{display:grid;grid-template-columns:minmax(75px,1fr) 2.2fr;gap:6px 9px;margin:0;font-size:12px}
+.learn-words dt{font:normal 16px/1.5 "Gurmukhi MN","Noto Serif Gurmukhi",serif}
+.learn-words dd{margin:0;color:var(--muted);line-height:1.5}
+.line-simple-note{max-width:640px;margin:7px auto 15px;padding:10px 13px;border:1px solid var(--line);border-radius:9px;background:var(--raised);text-align:left}
+.line-simple-note .learn-body{font-size:12px;line-height:1.65}
+.line-simple-note .learn-body[lang=pa]{font-size:16px}
+.line-simple-note .learn-tag{margin:3px 0;font-size:9px}
+.line-nuance{font-size:11px;color:var(--muted);line-height:1.55;margin:10px 0 0}
+.next-lesson{border:1px solid var(--line);background:var(--accent-light);color:var(--ink);border-radius:10px;padding:11px 14px;min-height:44px;display:block;width:100%;margin:18px auto;max-width:700px;font-weight:700;font-size:13px}
+.next-lesson[hidden]{display:none}
+body[data-mode=meaning] .unit-learning,body[data-mode=study] .unit-learning{scroll-margin-bottom:95px}
+@media(max-width:420px){.learning-article,.unit-learning{padding:12px}.learn-body[lang=pa]{font-size:17px}.learn-topic{font-size:21px}.learn-words{grid-template-columns:105px 1fr}.unit-learning .learn-heading{font-size:19px}}
