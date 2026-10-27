@@ -126,7 +126,7 @@ test('Versioned source-only service worker includes all three trust assets and o
  const m=worker.match(/^const EXPECTED=(\{[^\n]+\});/m);
  assert.ok(m);
  const hashes=JSON.parse(m[1]);
- assert.equal(Object.keys(hashes).length,33);
+ assert.equal(Object.keys(hashes).length,34);
  for(const f of ['./trust/index.html','./trust/corrections.html','./trust/trust.css','./learning/course.v1.json','./data/rehras.json']){
   assert.equal(hashes[f],sha(fs.readFileSync(path.join(root,'nitnem',f.slice(2)))),f);
  }
