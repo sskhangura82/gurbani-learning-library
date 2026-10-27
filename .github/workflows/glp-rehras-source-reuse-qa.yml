@@ -1,0 +1,36 @@
+name: GLP Rehras exact-source reuse and original unique context (source-only)
+on:
+  push:
+    branches:
+      - feature/glp-rehras-exact-origin-learning-20261027
+permissions:
+  contents: read
+jobs:
+  rehras-origin-provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify all exact-original Rehras reuse and unique source records
+        run: |
+          node --check tools/nitnem/rehras-exact-source-reuse.mjs
+          node --check tools/nitnem/rehras-unique-source-drafts.mjs
+          node --check tests/glp-rehras-source-reuse-contract.mjs
+          node tests/glp-rehras-source-reuse-contract.mjs
+      - name: Original Japji, all earlier Nitnem courses and source bytes must remain unchanged
+        run: |
+          node tests/glp-japji-parity-contract.mjs
+          node tests/glp-anand-p31-40-contract.mjs
+          node tests/glp-chaupai-full-drafts-v4.mjs
+          node tests/glp-savaiye-line-coverage-v3.mjs
+          node tests/glp-sohila-line-coverage-v2.mjs
+          node tests/nitnem-internal-source-contract.mjs
+          node tests/nitnem-teaching-contract.mjs
+          node tests/glp-trust-contract.mjs
+      - name: Do not publish, merge source, or ship a second app
+        run: |
+          git diff --exit-code -- full-japji.html sw.js js/japji-full-data.js js/japji-full.js js/continuous-core.js js/learning.js js/shared-learning.js index.html nitnem/data nitnem/reader.js nitnem/sw.js nitnem/learning
+          test ! -d nitnem-rehras
+          test ! -d nitnem-anand-p01-07
