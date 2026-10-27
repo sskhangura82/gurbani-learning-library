@@ -1,0 +1,34 @@
+name: GLP Jaap Sahib opening 15 source-bound bilingual drafts (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-jaap-early-15-chhands-learning-20261027
+permissions:
+  contents: read
+jobs:
+  jaap-original-early-lexicon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify original Gurmukhi, draft source-ID mapping and early Chhand vocabulary
+        run: |
+          node --check tools/nitnem/jaap-chhands01-15-drafts.mjs
+          node --check tests/glp-jaap-early-draft-contract.mjs
+          node tests/glp-jaap-early-draft-contract.mjs
+      - name: Protect original Japji and prior original/frozen Nitnem course
+        run: |
+          node tests/glp-japji-parity-contract.mjs
+          node tests/glp-anand-p31-40-contract.mjs
+          node tests/glp-chaupai-full-drafts-v4.mjs
+          node tests/glp-savaiye-line-coverage-v3.mjs
+          node tests/glp-sohila-line-coverage-v2.mjs
+          node tests/nitnem-internal-source-contract.mjs
+          node tests/nitnem-teaching-contract.mjs
+      - name: Never deploy an unreviewed Jaap source glossary
+        run: |
+          git diff --exit-code -- full-japji.html sw.js index.html js/japji-full-data.js js/japji-full.js nitnem/data nitnem/learning nitnem/reader.js nitnem/sw.js
+          test ! -d nitnem-jaap
+          test ! -d nitnem-anand-p01-07
