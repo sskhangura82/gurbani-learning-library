@@ -1,0 +1,83 @@
+name: GLP Tav-Prasad Savaiye 40/40 Bilingual Line Drafts (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-savaiye-40-line-meanings-20261027
+permissions:
+  contents: read
+jobs:
+  savaiye-source-bound-teaching:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Obtain frozen, original Gurbani source evidence
+        uses: actions/checkout@v4
+        with:
+          repository: sskhangura82/gurbani-learning-library
+          ref: 373ccc34f4a1c0ccb6ce36654bf6e9574087200f
+          path: pinned-original-nitnem
+          persist-credentials: false
+      - name: Every original source line byte unchanged and no false editorial permission
+        run: |
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-nitnem --output nitnem/data --verify
+          python3 tools/nitnem/build-source-packs.py --source-root pinned-original-nitnem --output nitnem/data
+          git diff --exit-code -- nitnem/data
+      - name: Preserve course.v1/v2 and deterministically compile new source-bound course.v3
+        run: |
+          node --check tools/nitnem/sohila-line-drafts.mjs
+          node --check tools/nitnem/build-learning-pack-v2.mjs
+          node tools/nitnem/build-learning-pack.mjs
+          git diff --exit-code -- nitnem/learning/course.v1.json
+          node tools/nitnem/build-learning-pack-v2.mjs
+          git diff --exit-code -- nitnem/learning/course.v2.json
+          node --check tools/nitnem/savaiye-line-drafts.mjs
+          node --check tools/nitnem/build-learning-pack-v3.mjs
+          node tools/nitnem/build-learning-pack-v3.mjs
+          git diff --exit-code -- nitnem/learning/course.v3.json
+          node tests/nitnem-teaching-contract.mjs
+          node tests/glp-savaiye-line-coverage-v3.mjs
+          node tests/glp-sohila-line-coverage-v2.mjs
+      - name: Keep Japji's 385/42 source, meaning and Study format byte-identical
+        run: |
+          python3 tools/nitnem/build-japji-parity.py
+          git diff --exit-code -- nitnem/japji.html nitnem/japji-assets
+          node tests/glp-japji-parity-contract.mjs
+          node --check nitnem/reader.js
+          node --check nitnem/learning/learning-ui.js
+      - name: Existing original Japji/learning/offline and source review regressions
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+          node tests/nitnem-internal-source-contract.mjs
+          node tests/glp-trust-contract.mjs
+      - name: Offline worker binds 31 original+lesson assets, no root cache mutation
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/glp-sohila-line-coverage-v2.mjs
+      - name: Build exact separate 32-asset Savaiye review route, prior versions retained
+        run: |
+          python3 tools/nitnem/build-savaiye-reader.py --output "${{ runner.temp }}/glp-savaiye-40"
+          python3 tools/nitnem/build-savaiye-reader.py --output "${{ runner.temp }}/glp-savaiye-40" --verify
+      - name: 175 private signed-gateway security checks including deliberately tampered meaning source
+        run: |
+          python3 -c 'import ast; [ast.parse(open(x).read()) for x in ["tools/nitnem/build-savaiye-reader.py","tests/serve-gated-savaiye-nitnem.py","tests/glp-savaiye-gate-contract.py"]]'
+          python3 tests/glp-savaiye-gate-contract.py
+      - name: Chrome QA scripts parse; no public GitHub Pages source mutation
+        run: |
+          node --check tests/glp-savaiye-40-browser.mjs
+          node --check tests/glp-savaiye-40-gated-browser.mjs
+          git diff --exit-code -- full-japji.html sw.js js/japji-full-data.js js/japji-full.js js/continuous-core.js js/learning.js js/shared-learning.js index.html
+          ! grep -q 'nitnem-savaiye/' sw.js
+          test ! -d nitnem-sohila
+          test ! -d nitnem-parity
+          test ! -d nitnem-trust

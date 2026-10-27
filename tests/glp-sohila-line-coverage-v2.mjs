@@ -89,10 +89,10 @@ test('Sohila remaining 50 records are labeled educational drafts, not exact cano
  assert.equal(scripture.length,50);
  assert.ok(scripture.every(([,x])=>x.kind==='SELECTIVE_EDUCATIONAL_PARAPHRASE_NOT_LITERAL_TRANSLATION'));
 });
-test('Nitnem new private reader only pins SHA of V2 course, no network APIs or direct data mutation',()=>{
- assert.ok(script.includes('learning/course.v2.json'));
+test('Sohila V2 immutable and current V3 reader source-pinned with no external APIs',()=>{
+ assert.ok(script.includes('learning/course.v3.json'));
  assert.ok(!script.includes('jsonBytes("https://'));
- assert.ok(script.includes("EXPECTED_LEARNING='"+sha(read('nitnem/learning/course.v2.json'))+"'"));
+ assert.ok(script.includes("EXPECTED_LEARNING='"+sha(read('nitnem/learning/course.v3.json'))+"'"));
  assert.ok(ui.includes("e.kind==='HEADING_OR_INVOCATION_CONTEXT'"));
  assert.ok(ui.includes('Draft meaning · tap to explore'));
  assert.ok(script.includes('Gurmukhi occurrence hash changed'));
