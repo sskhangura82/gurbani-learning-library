@@ -109,7 +109,7 @@ test('Private 29 source/teaching/Japji cache assets SHA match all actual files',
  const match=worker.match(/^const EXPECTED=(\{[^\n]+\});/m);
  assert.ok(match);
  const m=JSON.parse(match[1]);
- assert.equal(Object.keys(m).length,30);
+ assert.equal(Object.keys(m).length,31);
  for(const [k,v] of Object.entries(m))assert.equal(sha(read('nitnem/'+k.slice(2))),v,k);
  assert.ok(m['./japji.html']);
  assert.ok(m['./japji-assets/js/japji-full.js']);
