@@ -157,8 +157,8 @@ test('Quarantined Anand Pauri 24 line is still held, never given a fabricated tr
  assert.ok(!now.closeTextNotes['anand|anand24.line03']);
 });
 test('Active private reader loads exact source SHA-bound V4; no new remote translation API',()=>{
- assert.ok(reader.includes("EXPECTED_LEARNING='"+sha(buf('nitnem/learning/course.v5.json'))+"'"));
- assert.ok(reader.includes("jsonBytes('learning/course.v5.json',EXPECTED_LEARNING)"));
+ assert.ok(reader.includes("EXPECTED_LEARNING='"+sha(buf('nitnem/learning/course.v6.json'))+"'"));
+ assert.ok(reader.includes("jsonBytes('learning/course.v6.json',EXPECTED_LEARNING)"));
  assert.ok(reader.includes('Gurmukhi occurrence hash changed'));
  assert.ok(!reader.includes('fetch("https://'));
 });
