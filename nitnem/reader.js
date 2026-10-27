@@ -5,7 +5,7 @@
 (()=>{
 'use strict';
 const EXPECTED_LIBRARY='b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a';
-const EXPECTED_LEARNING='12cec4b2b04ce70d1230fd0e1f8454f82b8da79306671285eefe4b1852b1f626';
+const EXPECTED_LEARNING='6555b1b014eebaa3625e87957f0ad14cf6918cf146875f8c1be14d028b30325e';
 const EXPECTED_SOURCE_COMMIT='373ccc34f4a1c0ccb6ce36654bf6e9574087200f';
 const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
@@ -69,7 +69,7 @@ async function verifyPack(x,entry,name){
  return x;
 }
 async function teachingCourse(pack){
- const course=await jsonBytes('learning/course.v3.json',EXPECTED_LEARNING);
+ const course=await jsonBytes('learning/course.v4.json',EXPECTED_LEARNING);
  if(course?.meta?.schema!=='GLP-NITNEM-TEACHING-DRAFT-V1'||
     course.meta.editorialStatus!=='DRAFT_AI_UNREVIEWED'||
     course.meta.publicationAllowed!==false||
@@ -233,6 +233,20 @@ function passage(index){
  section.id='nitnem-passage-'+index;
  section.setAttribute('aria-label',u.title);
  const top=document.createElement('h2');top.className='unit-heading';top.textContent=u.title;section.append(top);
+ if(state.bani==='chaupai'&&index===24){
+  const boundary=document.createElement('p');
+  boundary.className='source-variant-boundary';
+  boundary.setAttribute('role','note');
+  boundary.textContent='Source boundary · This pauri ends the SGPC-bounded Benti Chaupai excerpt. Four additional pauris follow ONLY in this separately labeled 29-pauri digital candidate.';
+  section.append(boundary);
+ }
+ if(state.bani==='chaupai'&&index>=25){
+  const boundary=document.createElement('p');
+  boundary.className='source-variant-boundary source-variant-extended';
+  boundary.setAttribute('role','note');
+  boundary.textContent='Extended source · Pauri '+(index+1)+' of a 29-pauri website candidate. Not asserted to be part of every morning or SGPC Rehras practice. Source and edition review pending.';
+  section.append(boundary);
+ }
  if(index===0)for(const p of state.pack.preface||[]){
   const element=document.createElement('p');element.className='original-preface';element.lang='pa';
   element.textContent=p.text;section.append(element);

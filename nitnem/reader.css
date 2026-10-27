@@ -141,3 +141,11 @@ body[data-mode=meaning] .scripture-line+.scripture-line,body[data-mode=study] .s
 
 /* Programmatically focused dialog title is a reading landmark, not a control. */
 #meaning-dialog-title:focus{outline:none}
+
+/* Visibly distinguish a non-adjudicated extended source without touching
+   original Gurmukhi. Same in Read, Meaning and Study, even with hidden headings. */
+.source-variant-boundary{max-width:670px;margin:15px auto 18px;padding:9px 13px;
+ border-left:2px solid var(--gold);color:var(--muted);background:var(--raised);
+ font:11px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.source-variant-extended{border-left-width:3px;letter-spacing:.12px}
+@media(max-width:420px){.source-variant-boundary{font-size:11px;padding:8px 11px}}
