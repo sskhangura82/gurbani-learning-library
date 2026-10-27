@@ -121,8 +121,8 @@ check('Totals: 291/1361 line drafts, 85/327 Study lessons; previous complete Sav
 });
 check('Reader pins exact V5 SHA not previous, never calls external scripture or translation provider',()=>{
  const script=b('nitnem/reader.js').toString();
- assert.ok(script.includes("const EXPECTED_LEARNING='"+sha(b('nitnem/learning/course.v6.json'))+"'"));
- assert.ok(script.includes("jsonBytes('learning/course.v6.json',EXPECTED_LEARNING)"));
+ assert.ok(script.includes("const EXPECTED_LEARNING='"+sha(b('nitnem/learning/course.v7.json'))+"'"));
+ assert.ok(script.includes("jsonBytes('learning/course.v7.json',EXPECTED_LEARNING)"));
  assert.ok(script.includes('Gurmukhi occurrence hash changed'));
  assert.ok(!script.includes('fetch("https://'));
 });
