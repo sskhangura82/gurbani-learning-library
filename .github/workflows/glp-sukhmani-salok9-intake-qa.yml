@@ -1,0 +1,53 @@
+name: GLP Sukhmani + Salok Mahalla 9 Source-Only Intake (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-sukhmani-salok9-source-intake-20261027
+permissions:
+  contents: read
+jobs:
+  verify-source-only-candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Ensure source-only work contains no canonical original or public reader changes
+        run: |
+          git diff --exit-code HEAD^ HEAD -- full-japji.html sw.js index.html js/ nitnem/ css/
+          test ! -e study/index.html
+          test ! -e study/sw.js
+          test ! -e study/reader.js
+      - name: Verify source parser and per-line exact ASCII/Unicode SHA integrity
+        run: |
+          node --check tools/study/build-source-intake.mjs
+          node --check tools/study/build-source-outline.mjs
+          node tests/glp-sukhmani-salok9-source-intake.mjs
+          node tools/study/build-source-outline.mjs --verify
+      - name: Check 24 Ashtpadis, 192 numbered Pauris, two Rahau, 57 complete Salok Mahalla 9
+        run: |
+          node tests/glp-sukhmani-structure-and-sant-pilot.mjs
+          node --check tools/study/build-sant-learning-pilot.mjs
+          node tools/study/build-sant-learning-pilot.mjs --verify
+      - name: Existing original Japji and accepted learning regression suites stay green
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/m0-contract.mjs
+          node tests/m0-coverage.mjs
+          node tests/service-worker.mjs
+          node tests/m0-precache-contract.mjs
+      - name: No scripture display or publication authority was added
+        run: |
+          test ! -d study/deploy
+          test ! -d study/public
+          ! grep -q 'study/sources/sukhmani' sw.js
+          ! grep -q 'study/sources/salok-mahala9' sw.js
+          ! grep -q 'study/sources/sukhmani' full-japji.html
+          ! grep -q 'study/sources/salok-mahala9' full-japji.html
+          test -f docs/GLP_SUKHMANI_SALOK9_NEXT_BUILD_20261027.md

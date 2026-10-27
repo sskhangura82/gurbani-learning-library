@@ -1,0 +1,2189 @@
+{
+  "schema": "GLP-001-SGGS-PRE-REVIEW-WITNESS-V1",
+  "collectionId": "salok-mahala9",
+  "titleGurmukhi": "ਸਲੋਕ ਮਹਲਾ ੯",
+  "titleEnglish": "Salok Mahalla 9",
+  "writer": "Guru Tegh Bahadur Sahib, Mahala 9",
+  "pageSpan": [
+    1426,
+    1429
+  ],
+  "salokCount": 57,
+  "sourceRowCount": 117,
+  "sourceHeadings": [
+    {
+      "id": "43WC",
+      "orderId": 60366,
+      "ang": 1426,
+      "sourceAngLine": 9,
+      "typeId": 1,
+      "sourceAscii": "<> siqgur pRswid ]",
+      "text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "sourceTextHeld": false,
+      "sourceHoldReason": null,
+      "sourceAsciiSha256": "190d7a2da9bf0dc0329a74f10a8a4fff49eb5c772356d68e6bbb060038ca5104",
+      "textSha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013"
+    },
+    {
+      "id": "B2R1",
+      "orderId": 60367,
+      "ang": 1426,
+      "sourceAngLine": 10,
+      "typeId": 2,
+      "sourceAscii": "slok mhlw 9 ]",
+      "text": "ਸਲੋਕ ਮਹਲਾ ੯ ॥",
+      "sourceTextHeld": false,
+      "sourceHoldReason": null,
+      "sourceAsciiSha256": "8358ad7c36bb04f7e2c2fafdba2c228a1b49e8e9449653c870fb18b5da653458",
+      "textSha256": "60c3afa39eea34268d45ab18e398fb1e0f59a96f898d20d37a4ee9af4d68ca63"
+    },
+    {
+      "id": "94ME",
+      "orderId": 60472,
+      "ang": 1429,
+      "sourceAngLine": 5,
+      "typeId": 2,
+      "sourceAscii": "dohrw ]",
+      "text": "ਦੋਹਰਾ ॥",
+      "sourceTextHeld": false,
+      "sourceHoldReason": null,
+      "sourceAsciiSha256": "d3b2cde81c40dd5b57d7d27b6cbdc491017e80582a6f20890b9205d442982b8e",
+      "textSha256": "485f674c9a1425fae04bcea542b9aba686fbb872a7607c2a2e0ca9134dd4d696"
+    }
+  ],
+  "saloks": [
+    {
+      "id": "salok-mahala9-01",
+      "ordinal": 1,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "CVCZ",
+          "orderId": 60368,
+          "ang": 1426,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "gun goibMd gwieE nhI; jnmu AkwrQ kInu ]",
+          "text": "ਗੁਨ ਗੋਬਿੰਦ ਗਾਇਓ ਨਹੀ; ਜਨਮੁ ਅਕਾਰਥ ਕੀਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9d86f0ee35c726077b308b1840649827d247a6b5c31aae7c8f2e209c26cdb77c",
+          "textSha256": "3426e03cd2f665f4c066dc02ef02233b28f85dca832128b9bc92b21e39dcf929"
+        },
+        {
+          "id": "5P84",
+          "orderId": 60369,
+          "ang": 1426,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. hir Bju mnw; ijh ibiD jl kau mInu ]1]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਹਰਿ ਭਜੁ ਮਨਾ; ਜਿਹ ਬਿਧਿ ਜਲ ਕਉ ਮੀਨੁ ॥੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "16cc50df5460d3af6b2fb3d85a1bf2e6d4a62e7c61e47aff4bcb7c0d3ee9aea8",
+          "textSha256": "81ed79f7c824e61da7821d038920dfb5f41b779a7a75043e20b91989eda960ff"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-02",
+      "ordinal": 2,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "8G8U",
+          "orderId": 60370,
+          "ang": 1426,
+          "sourceAngLine": 11,
+          "typeId": 4,
+          "sourceAscii": "ibiKAn isau kwhy ricE; inmK. n hoih audwsu ]",
+          "text": "ਬਿਖਿਅਨ ਸਿਉ ਕਾਹੇ ਰਚਿਓ; ਨਿਮਖ. ਨ ਹੋਹਿ ਉਦਾਸੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "023e9b08a280a7da8ef4fc7f711e5f0e8ea7210c81f8cc9e8b0f09779a3b0d7e",
+          "textSha256": "d6a39fcaaa6991916c9d0cf309450863a0c05b6c2568b100bd34569f1082cd3a"
+        },
+        {
+          "id": "PSYM",
+          "orderId": 60371,
+          "ang": 1426,
+          "sourceAngLine": 11,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. Bju hir mnw; prY n. jm kI Pws ]2]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਭਜੁ ਹਰਿ ਮਨਾ; ਪਰੈ ਨ. ਜਮ ਕੀ ਫਾਸ ॥੨॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "5d2698aad010a7026b2e20b8101729517ebfa6c568eaf4ec5b2dd9f5c2c9dbcc",
+          "textSha256": "d96ea429db693ec05a479f8ae21a79ec9f5e7c7638278adf91d70cb9e175e18b"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-03",
+      "ordinal": 3,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "HCV5",
+          "orderId": 60372,
+          "ang": 1426,
+          "sourceAngLine": 12,
+          "typeId": 4,
+          "sourceAscii": "qrnwpo. ieau hI gieE; lIE jrw qnu jIiq ]",
+          "text": "ਤਰਨਾਪੋ. ਇਉ ਹੀ ਗਇਓ; ਲੀਓ ਜਰਾ ਤਨੁ ਜੀਤਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "d7cf938aa6c72ab0a223266fcce5ed1bd080254d5aa7f9cc96ead8ae33c630e2",
+          "textSha256": "e1fb50e35f49011254913a2c2ee16fa3fc4679e4d40bd1e1daf37628eac7ad30"
+        },
+        {
+          "id": "6GPB",
+          "orderId": 60373,
+          "ang": 1426,
+          "sourceAngLine": 12,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. Bju hir mnw; AauD jwqu hY bIiq ]3]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਭਜੁ ਹਰਿ ਮਨਾ; ਅਉਧ ਜਾਤੁ ਹੈ ਬੀਤਿ ॥੩॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2948e3cefec14fb3506e1b062fac9c76ef9cf6194dc382923758de1bae2dc28e",
+          "textSha256": "1eb763227381486eef8032a27435db97ba92ec9f307862f39bd963d25c142400"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-04",
+      "ordinal": 4,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "X6MU",
+          "orderId": 60374,
+          "ang": 1426,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "ibriD BieE. sUJY nhI; kwlu phUicE Awin ]",
+          "text": "ਬਿਰਧਿ ਭਇਓ. ਸੂਝੈ ਨਹੀ; ਕਾਲੁ ਪਹੂਚਿਓ ਆਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "1b462e2ecaaf503a1b3017aa583d87b52ae5589d2b6d1dce67dcafa1aef3de34",
+          "textSha256": "4fcdf7d7b2fa173c5b5147be7c42ab490e6d6289855f906dda1bcf612691e2c3"
+        },
+        {
+          "id": "66AX",
+          "orderId": 60375,
+          "ang": 1426,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. nr bwvry; ikau. n BjY Bgvwnu ]4]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਨਰ ਬਾਵਰੇ; ਕਿਉ. ਨ ਭਜੈ ਭਗਵਾਨੁ ॥੪॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "c27c71ccf3da19bd2b7bdbd3c97fa28ff19ceac5abd90af660315a1d6768b456",
+          "textSha256": "e8cc03e5979a2728f6e0f3fdf346d704e6298edf0ddda66f957bc5cdee8cb2d2"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-05",
+      "ordinal": 5,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "1GQF",
+          "orderId": 60376,
+          "ang": 1426,
+          "sourceAngLine": 14,
+          "typeId": 4,
+          "sourceAscii": "Dnu dwrw sMpiq sgl; ijin ApunI kir mwin ]",
+          "text": "ਧਨੁ ਦਾਰਾ ਸੰਪਤਿ ਸਗਲ; ਜਿਨਿ ਅਪੁਨੀ ਕਰਿ ਮਾਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "1a91254b5bbf9f8092bdbf31bc786d4734cbe24eb0ff26abe9e13c85d018b945",
+          "textSha256": "ba542e5ce8c46f3e88193609b1e8f901bed5cd53df67502be4c115c829c98be0"
+        },
+        {
+          "id": "QEL8",
+          "orderId": 60377,
+          "ang": 1426,
+          "sourceAngLine": 14,
+          "typeId": 4,
+          "sourceAscii": "ien mY kCu sMgI nhI; nwnk. swcI jwin ]5]",
+          "text": "ਇਨ ਮੈ ਕਛੁ ਸੰਗੀ ਨਹੀ; ਨਾਨਕ. ਸਾਚੀ ਜਾਨਿ ॥੫॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "a4dd4565b54e03f0f192bc4339eb4dfa7c486e4402bdda6db89578895e473a0f",
+          "textSha256": "db260910ceb0be71c8684d43b98be50e354330fe5ac2b50c49ca5bb44b0e854f"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-06",
+      "ordinal": 6,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "2BH7",
+          "orderId": 60378,
+          "ang": 1426,
+          "sourceAngLine": 15,
+          "typeId": 4,
+          "sourceAscii": "piqq. auDwrn BY hrn; hir. AnwQ ky nwQ ]",
+          "text": "ਪਤਿਤ. ਉਧਾਰਨ ਭੈ ਹਰਨ; ਹਰਿ. ਅਨਾਥ ਕੇ ਨਾਥ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2c68b52dc04517ac473c6c9c37688823deb1de23a13fcf3d9b8bef31d0c11d92",
+          "textSha256": "ec0fc99930fcc211b4c80758a83d2c1c81476dadd4494429cca9c31fa0747e2a"
+        },
+        {
+          "id": "C042",
+          "orderId": 60379,
+          "ang": 1426,
+          "sourceAngLine": 15,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. iqh jwnIAY; sdw bsqu qum swiQ ]6]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਤਿਹ ਜਾਨੀਐ; ਸਦਾ ਬਸਤੁ ਤੁਮ ਸਾਥਿ ॥੬॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "895f9cbe1fc3921ad964c728f68fc0f10ff14df52dec68b4b93510ca6dfcb19a",
+          "textSha256": "f256d6ac9b10a65870b268cd89eca991ca0ef05a0d4e944f91c6db61c3405f89"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-07",
+      "ordinal": 7,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "BDU3",
+          "orderId": 60380,
+          "ang": 1426,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "qnu Dnu ijh qo kau dIE; qW isau nyhu. n kIn ]",
+          "text": "ਤਨੁ ਧਨੁ ਜਿਹ ਤੋ ਕਉ ਦੀਓ; ਤਾਂ ਸਿਉ ਨੇਹੁ. ਨ ਕੀਨ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "29a6bd8c6bbd40d4b23928a8db59ad5dd0636128188ce9dcc3ad90cc677612f1",
+          "textSha256": "e991c3eb3a74937b830affbb8e0ca67414f103c54745cbe8c6e45a3aaa212a6a"
+        },
+        {
+          "id": "M3YB",
+          "orderId": 60381,
+          "ang": 1426,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. nr bwvry; Ab ikau folq dIn ]7]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਨਰ ਬਾਵਰੇ; ਅਬ ਕਿਉ ਡੋਲਤ ਦੀਨ ॥੭॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "8a6c1e4be4baad01026add7ec0aec791809e412d2ffee3aa27537da93d80c512",
+          "textSha256": "34206f15d2ec6649e43227d2a099c4d5c8cf3c64973d6160beb4662a08104619"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-08",
+      "ordinal": 8,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "695N",
+          "orderId": 60382,
+          "ang": 1426,
+          "sourceAngLine": 17,
+          "typeId": 4,
+          "sourceAscii": "qnu Dnu sMpY suK dIE; Aru ijh nIky Dwm ]",
+          "text": "ਤਨੁ ਧਨੁ ਸੰਪੈ ਸੁਖ ਦੀਓ; ਅਰੁ ਜਿਹ ਨੀਕੇ ਧਾਮ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2d43beaa13bda44b56f793838b03c009227a21ffaf038ebf306e9a52fb1889ce",
+          "textSha256": "58d16ab9b177c13a9a80d273c9e687cbb7e9f4eb3b5ed098a34f956bb69411c0"
+        },
+        {
+          "id": "25VM",
+          "orderId": 60383,
+          "ang": 1426,
+          "sourceAngLine": 17,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. sunu ry mnw; ismrq kwih n. rwmu ]8]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨੁ ਰੇ ਮਨਾ; ਸਿਮਰਤ ਕਾਹਿ ਨ. ਰਾਮੁ ॥੮॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "3cb04554a554c9507fd0ca6e195de88bc4b101a413646fa12c3a23f883a9491d",
+          "textSha256": "763613539b3edb7e4f9f1925b2a50ffa1e2d0061ab2b97865b3c2b9c8e6b4130"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-09",
+      "ordinal": 9,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "DX06",
+          "orderId": 60384,
+          "ang": 1426,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "sB suK dwqw rwmu hY; dUsr nwihn koie ]",
+          "text": "ਸਭ ਸੁਖ ਦਾਤਾ ਰਾਮੁ ਹੈ; ਦੂਸਰ ਨਾਹਿਨ ਕੋਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "a89b2716c1632e4823eeb03ed702e41eab1de288dd8f871ff03b74a19314004d",
+          "textSha256": "319eba2ec4c88a929add92b81e1fb1730ee6f03e7f609b013e13d02fd743328f"
+        },
+        {
+          "id": "ZSH9",
+          "orderId": 60385,
+          "ang": 1426,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; iqh ismrq. giq hoie ]9]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਤਿਹ ਸਿਮਰਤ. ਗਤਿ ਹੋਇ ॥੯॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "a3ad4f61d0361e9ae9d36367e93e6db236b3f0bda5007510b24f10cf158f4686",
+          "textSha256": "b8505cefbf72e1505b5e0cc23a4411cc01ab77aeb1985c1442885d9632c745b6"
+        }
+      ],
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-10",
+      "ordinal": 10,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "3DMV",
+          "orderId": 60386,
+          "ang": 1427,
+          "sourceAngLine": 1,
+          "typeId": 4,
+          "sourceAscii": "ijh ismrq. giq pweIAY; iqh Bju ry qY mIq ]",
+          "text": "ਜਿਹ ਸਿਮਰਤ. ਗਤਿ ਪਾਈਐ; ਤਿਹ ਭਜੁ ਰੇ ਤੈ ਮੀਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "b5880b328740d4b21b9749b26b457a968194c39826b76929f55b6ff06d7f07a7",
+          "textSha256": "1dfb56086c882b9a456436938c403669fdc48a39560fdb08c850e675f416be02"
+        },
+        {
+          "id": "0RWM",
+          "orderId": 60387,
+          "ang": 1427,
+          "sourceAngLine": 1,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. sunu ry mnw; AauD Gtq hY nIq ]10]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨੁ ਰੇ ਮਨਾ; ਅਉਧ ਘਟਤ ਹੈ ਨੀਤ ॥੧੦॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "61e4ea557de5569924ce34b273f689034f913d127cabcb1182522656efe57d8f",
+          "textSha256": "dc042ce0ba1fbaf68b91d4390fccc0c9c574320305796513315deb07ad2d11d6"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-11",
+      "ordinal": 11,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "MXRP",
+          "orderId": 60388,
+          "ang": 1427,
+          "sourceAngLine": 2,
+          "typeId": 4,
+          "sourceAscii": "pWc qq ko qnu ricE; jwnhu cqur sujwn ]",
+          "text": "ਪਾਂਚ ਤਤ ਕੋ ਤਨੁ ਰਚਿਓ; ਜਾਨਹੁ ਚਤੁਰ ਸੁਜਾਨ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "60d91781954af2a3325f2944e28826360b103152fb2ce4933264f2ff642fe91e",
+          "textSha256": "668823645c393145b9c6e4a11578355217190b0dc7415c5a04288b213e163afe"
+        },
+        {
+          "id": "D2JK",
+          "orderId": 60389,
+          "ang": 1427,
+          "sourceAngLine": 2,
+          "typeId": 4,
+          "sourceAscii": "ijh qy aupijE nwnkw; lIn qwih mY mwnu ]11]",
+          "text": "ਜਿਹ ਤੇ ਉਪਜਿਓ ਨਾਨਕਾ; ਲੀਨ ਤਾਹਿ ਮੈ ਮਾਨੁ ॥੧੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "074d56dadc7aabb687d2f3ee04f6fe568d2c841acaea5f7dfbb4d8a141123d6b",
+          "textSha256": "9f44459d01ecf5b3cad014efec90e46a63ee5fddebc00224af68a9ad236f49f5"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-12",
+      "ordinal": 12,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "38UE",
+          "orderId": 60390,
+          "ang": 1427,
+          "sourceAngLine": 3,
+          "typeId": 4,
+          "sourceAscii": "Gt Gt mY hir jU bsY; sMqn; kihE pukwir ]",
+          "text": "ਘਟ ਘਟ ਮੈ ਹਰਿ ਜੂ ਬਸੈ; ਸੰਤਨ; ਕਹਿਓ ਪੁਕਾਰਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "47262dfad0915330160b289d66343f04e77998064d12e89bcb5a799b94c5def2",
+          "textSha256": "cb91da63bf0789ebb7d8d8b03a731dc04c168ce46d0b36d8fbca93bf5552d60f"
+        },
+        {
+          "id": "NY49",
+          "orderId": 60391,
+          "ang": 1427,
+          "sourceAngLine": 3,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. iqh Bju mnw; Bau iniD auqrih pwir ]12]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਤਿਹ ਭਜੁ ਮਨਾ; ਭਉ ਨਿਧਿ ਉਤਰਹਿ ਪਾਰਿ ॥੧੨॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "75a0b85ca0391d4b799df6b85380fc24ded4cfdcea70ef83e7f288239d271382",
+          "textSha256": "d0b205cbcde513e6dd9413e9b6a44c98296c283f26b615ea4ab437bb698aeeed"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-13",
+      "ordinal": 13,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "MFZW",
+          "orderId": 60392,
+          "ang": 1427,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "suKu duKu ijh prsY nhI; loBu mohu AiBmwnu ]",
+          "text": "ਸੁਖੁ ਦੁਖੁ ਜਿਹ ਪਰਸੈ ਨਹੀ; ਲੋਭੁ ਮੋਹੁ ਅਭਿਮਾਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "b2fe19879a0f191f9005934ba88676fd3f9f3d68004e00c323dbabe9050a4c3b",
+          "textSha256": "434f0d8405bde93cabc7f6e7a2733fb3cf03146180548684ba509814a4ce950d"
+        },
+        {
+          "id": "2H36",
+          "orderId": 60393,
+          "ang": 1427,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. sunu ry mnw; so mUriq Bgvwn ]13]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨੁ ਰੇ ਮਨਾ; ਸੋ ਮੂਰਤਿ ਭਗਵਾਨ ॥੧੩॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "04c2317d7fcadfeba9a035a7b7add67aa9c19dbaddb5b2730eb032db0f038798",
+          "textSha256": "9dab9e3ac498d12773ed8759d73d8990e1ca0c50a600f20f98e8ba388c38ad82"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-14",
+      "ordinal": 14,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "R074",
+          "orderId": 60394,
+          "ang": 1427,
+          "sourceAngLine": 5,
+          "typeId": 4,
+          "sourceAscii": "ausqiq inMidAw nwih ijih; kMcn loh smwin ]",
+          "text": "ਉਸਤਤਿ ਨਿੰਦਿਆ ਨਾਹਿ ਜਿਹਿ; ਕੰਚਨ ਲੋਹ ਸਮਾਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "0834d2b48d1c6d4fee4ccf4da7826cc2b2e403ea78f43d911331202ca5bbb167",
+          "textSha256": "a57201f5a2bd6147523dc8a6e1f7b38e24e63d397d3c2b713c76dc1295b276d6"
+        },
+        {
+          "id": "D6BL",
+          "orderId": 60395,
+          "ang": 1427,
+          "sourceAngLine": 5,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; mukiq qwih qY jwin ]14]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੪॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "145ca44391b878055b6bc7dbed8137bf8226489b48e42a6fd1cf6166ae24e7bf",
+          "textSha256": "4cba5e18159e7f7393c8730c20ff99088086c05bb9ec02b9454d56c384e896aa"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-15",
+      "ordinal": 15,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "9YAA",
+          "orderId": 60396,
+          "ang": 1427,
+          "sourceAngLine": 6,
+          "typeId": 4,
+          "sourceAscii": "hrKu sogu jw kY nhI; bYrI mIq smwin ]",
+          "text": "ਹਰਖੁ ਸੋਗੁ ਜਾ ਕੈ ਨਹੀ; ਬੈਰੀ ਮੀਤ ਸਮਾਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "c723ac3cc29e9c47f3d0e0ba47bc31109c471c50806946141c8fd5b1f8653378",
+          "textSha256": "211efca351e08678c6afc2b07ce5e156f25a220a47381fbe64e7c69d48fe7312"
+        },
+        {
+          "id": "XP4Z",
+          "orderId": 60397,
+          "ang": 1427,
+          "sourceAngLine": 6,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; mukiq qwih qY jwin ]15]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੫॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "5aa8c65ff4e8cf1decd410756e0951195554f52654c94e9f5f7c467fd7a18b52",
+          "textSha256": "d47326da6a4b4d45d0d66df040d5ce4f678168f0a40dc820b2f89421d853d9f2"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-16",
+      "ordinal": 16,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "NB48",
+          "orderId": 60398,
+          "ang": 1427,
+          "sourceAngLine": 7,
+          "typeId": 4,
+          "sourceAscii": "BY kwhU kau dyq nih; nih BY mwnq Awn ]",
+          "text": "ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ; ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9ed9c3e58158c6ca6d8438319285cb015585b28282841d59013fe4b613b0b884",
+          "textSha256": "070b87df1b59f9303a53392246df272ee580ded8e97f744497030f8c1699a0e4"
+        },
+        {
+          "id": "5GVA",
+          "orderId": 60399,
+          "ang": 1427,
+          "sourceAngLine": 7,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; igAwnI qwih bKwin ]16]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਗਿਆਨੀ ਤਾਹਿ ਬਖਾਨਿ ॥੧੬॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "3638097f8612f7f9c390181dcf6dec8e66de67cfaefdf27ec2712a62ccafcc8d",
+          "textSha256": "5945bd2cfae272b383619771118cf2a473125328e8f47c739bd5f18334fa5a12"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-17",
+      "ordinal": 17,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "9GBG",
+          "orderId": 60400,
+          "ang": 1427,
+          "sourceAngLine": 8,
+          "typeId": 4,
+          "sourceAscii": "ijih ibiKAw sglI qjI; lIE ByK bYrwg ]",
+          "text": "ਜਿਹਿ ਬਿਖਿਆ ਸਗਲੀ ਤਜੀ; ਲੀਓ ਭੇਖ ਬੈਰਾਗ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "f3d91d0e977c6f0acb1a64041be1cf959d5b90dd8d4cc5ab22ceee7ecc97946d",
+          "textSha256": "0852f2d14fe952a3f1db9498a6f9b78ede6d9c55b41d5a49b8e0627194a28593"
+        },
+        {
+          "id": "M1K9",
+          "orderId": 60401,
+          "ang": 1427,
+          "sourceAngLine": 8,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. sunu ry mnw; iqh nr mwQY Bwgu ]17]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨੁ ਰੇ ਮਨਾ; ਤਿਹ ਨਰ ਮਾਥੈ ਭਾਗੁ ॥੧੭॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "7dfbfc18a078b56408fb280577f85b623fb1e90f02ea8368eaa7aa578e17ebce",
+          "textSha256": "fa510b6c8b15ec48c5f6cd503e1b38ec1e38f87c55cff2dbf80365c19c565ba4"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-18",
+      "ordinal": 18,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "DFPD",
+          "orderId": 60402,
+          "ang": 1427,
+          "sourceAngLine": 9,
+          "typeId": 4,
+          "sourceAscii": "ijih mwieAw mmqw qjI; sB qy BieE audwsu ]",
+          "text": "ਜਿਹਿ ਮਾਇਆ ਮਮਤਾ ਤਜੀ; ਸਭ ਤੇ ਭਇਓ ਉਦਾਸੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "ab6f81b67ff61d5960ae519059e9b878c648264b82480274adc263271af359f2",
+          "textSha256": "72534d092994a850b9ea6038eb335e7827c82caa7af10ca7e320cd1ee683d50f"
+        },
+        {
+          "id": "MHEJ",
+          "orderId": 60403,
+          "ang": 1427,
+          "sourceAngLine": 9,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. sunu ry mnw; iqh Git bRhm invwsu ]18]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨੁ ਰੇ ਮਨਾ; ਤਿਹ ਘਟਿ ਬ੍ਰਹਮ ਨਿਵਾਸੁ ॥੧੮॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "35d3bd9265d3ea1c1ba0472fe79a0f8db08b80eff761785ce2761c0bc55d60cb",
+          "textSha256": "07d73557caf85613aa282c496e136e6123c6ebc680994c8b28a1d605566d9df9"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-19",
+      "ordinal": 19,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "3AVA",
+          "orderId": 60404,
+          "ang": 1427,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "ijih pRwnI haumY qjI; krqw rwmu pCwin ]",
+          "text": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ; ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "35299e41eb08761a9754111265c443dfa8d897ef8277b9604f8587dcaaa55898",
+          "textSha256": "64d707d2a9abbfa85c13800ef37f9534b58a299355ae537aa33313bf1bf66605"
+        },
+        {
+          "id": "Q6YC",
+          "orderId": 60405,
+          "ang": 1427,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. vhu mukiq nru; ieh mn swcI mwnu ]19]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਵਹੁ ਮੁਕਤਿ ਨਰੁ; ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "a9976711950562e22f0f7aa07d40cb3804247726753c9883ad4a07f2e2462b9d",
+          "textSha256": "672100f11a4edbb12ac89294fb0d1f6e2f9c4da65fc2b9bd3f69a860cb3aac78"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-20",
+      "ordinal": 20,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "NZN1",
+          "orderId": 60406,
+          "ang": 1427,
+          "sourceAngLine": 11,
+          "typeId": 4,
+          "sourceAscii": "BY nwsn. durmiq hrn; kil mY hir ko nwmu ]",
+          "text": "ਭੈ ਨਾਸਨ. ਦੁਰਮਤਿ ਹਰਨ; ਕਲਿ ਮੈ ਹਰਿ ਕੋ ਨਾਮੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2b25826a60322d488a06b073ae25cb8a31cacae31dcc5174c1bd4df5ba98dc56",
+          "textSha256": "b58a4f213480de25ab07af36dc41d07abf8eff792f1f69e3325cbb59f9230163"
+        },
+        {
+          "id": "N87E",
+          "orderId": 60407,
+          "ang": 1427,
+          "sourceAngLine": 11,
+          "typeId": 4,
+          "sourceAscii": "inis idnu jo nwnk BjY; sPl hoih iqh kwm ]20]",
+          "text": "ਨਿਸਿ ਦਿਨੁ ਜੋ ਨਾਨਕ ਭਜੈ; ਸਫਲ ਹੋਹਿ ਤਿਹ ਕਾਮ ॥੨੦॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "28103aea973f0b2dba5e8e518c4de35067adc3a4dc63001ff8cc41fd3ffe8e9f",
+          "textSha256": "edc398a6d1e365cf0d9c600280725a10feb5670ea262169c94923a6d2781a8c3"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-21",
+      "ordinal": 21,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "6CJL",
+          "orderId": 60408,
+          "ang": 1427,
+          "sourceAngLine": 12,
+          "typeId": 4,
+          "sourceAscii": "ijhbw gun goibMd Bjhu; krn sunhu hir nwmu ]",
+          "text": "ਜਿਹਬਾ ਗੁਨ ਗੋਬਿੰਦ ਭਜਹੁ; ਕਰਨ ਸੁਨਹੁ ਹਰਿ ਨਾਮੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "52841bd5d1fd112520430b6d841764d727d4ae80c62b412c5cf609eff1b4dd84",
+          "textSha256": "3ff614c896b8ffd73cdfe9a7460d7eccd55cb80c170b1dd93b8020f09b7215c9"
+        },
+        {
+          "id": "LXHQ",
+          "orderId": 60409,
+          "ang": 1427,
+          "sourceAngLine": 12,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; prih n jm kY Dwm ]21]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਪਰਹਿ ਨ ਜਮ ਕੈ ਧਾਮ ॥੨੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9ddc144255eff665b1c3a64db02c60f5aa769133d0bda88fcc563737334b2deb",
+          "textSha256": "7db6b6b6983a9d7ee430baa7292f70936a96c16c39f1b5cdd3e788f82839d7ed"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-22",
+      "ordinal": 22,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "UMC6",
+          "orderId": 60410,
+          "ang": 1427,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "jo pRwnI mmqw qjY; loB moh AhMkwr ]",
+          "text": "ਜੋ ਪ੍ਰਾਨੀ ਮਮਤਾ ਤਜੈ; ਲੋਭ ਮੋਹ ਅਹੰਕਾਰ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "feebc2a1ab4097b10d886b602b5f9d1d6b6e02d3bb06de7ac5d2443cda4d0fd8",
+          "textSha256": "59f0c22fdff1a74c24158ec5db44fbff86361dbbddf2b217da326f3a32b2cd61"
+        },
+        {
+          "id": "2GC1",
+          "orderId": 60411,
+          "ang": 1427,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. Awpn qrY; Aaurn lyq auDwr ]22]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਆਪਨ ਤਰੈ; ਅਉਰਨ ਲੇਤ ਉਧਾਰ ॥੨੨॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "1492ffb05aad075ea4e6f4d5989a0a19553af7101e8c5df03d5c078d53de6907",
+          "textSha256": "5a2e4df2a95c66e1aa97feb691d27f065a57038814b2e36dfbb07dcf73b6ca3a"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-23",
+      "ordinal": 23,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "V0DJ",
+          "orderId": 60412,
+          "ang": 1427,
+          "sourceAngLine": 14,
+          "typeId": 4,
+          "sourceAscii": "ijau supnw Aru pyKnw; AYsy jg kau jwin ]",
+          "text": "ਜਿਉ ਸੁਪਨਾ ਅਰੁ ਪੇਖਨਾ; ਐਸੇ ਜਗ ਕਉ ਜਾਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "f7f7d33e95b92d904a7592ded663ccfad85a1408d80887857e336269831ab979",
+          "textSha256": "2b44d788d962999accc9feb3919e981e5c2ca66961855248e7390c98b814685a"
+        },
+        {
+          "id": "JTHD",
+          "orderId": 60413,
+          "ang": 1427,
+          "sourceAngLine": 14,
+          "typeId": 4,
+          "sourceAscii": "ien mY kCu swco nhI; nwnk. ibnu Bgvwn ]23]",
+          "text": "ਇਨ ਮੈ ਕਛੁ ਸਾਚੋ ਨਹੀ; ਨਾਨਕ. ਬਿਨੁ ਭਗਵਾਨ ॥੨੩॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "7556a9ba0b1d57df69b14bd87793842d292a0bdf0659185c97128f9516d02b01",
+          "textSha256": "5b9eab6da2565763ed4a4e1244468ef01177811dc133a73ed0a895aead5c832d"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-24",
+      "ordinal": 24,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "CKXJ",
+          "orderId": 60414,
+          "ang": 1427,
+          "sourceAngLine": 15,
+          "typeId": 4,
+          "sourceAscii": "inis idnu mwieAw kwrny; pRwnI folq nIq ]",
+          "text": "ਨਿਸਿ ਦਿਨੁ ਮਾਇਆ ਕਾਰਨੇ; ਪ੍ਰਾਨੀ ਡੋਲਤ ਨੀਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "0b522d94546dc39c850b0c74e5a5fb5889d32d59e9444ec74304da8e0bd5e026",
+          "textSha256": "b8405c63ce44eb5e04873f7121641785f9d6bba2c36973ccce96042ea740a5d2"
+        },
+        {
+          "id": "SVSB",
+          "orderId": 60415,
+          "ang": 1427,
+          "sourceAngLine": 15,
+          "typeId": 4,
+          "sourceAscii": "kotn mY. nwnk koaU; nwrwienu ijh cIiq ]24]",
+          "text": "ਕੋਟਨ ਮੈ. ਨਾਨਕ ਕੋਊ; ਨਾਰਾਇਨੁ ਜਿਹ ਚੀਤਿ ॥੨੪॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "13289099092a9ffdfe3c25003edfabbc936c33d033c56400b142725c76d54932",
+          "textSha256": "f55d82c554df5599ddddbcc88f88a0836eec659dd29b89276a2d714887f8a175"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-25",
+      "ordinal": 25,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "Q1DK",
+          "orderId": 60416,
+          "ang": 1427,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "jYsy jl qy budbudw; aupjY ibnsY nIq ]",
+          "text": "ਜੈਸੇ ਜਲ ਤੇ ਬੁਦਬੁਦਾ; ਉਪਜੈ ਬਿਨਸੈ ਨੀਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "79341af1c2af4cfae7448f88d5c5528f581b683cc1c9b01bc21d1623f914461f",
+          "textSha256": "45ae21f40c76fdc4712cf1e590b2052e611df4401d3fd529101908a005463dc2"
+        },
+        {
+          "id": "LS4E",
+          "orderId": 60417,
+          "ang": 1427,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "jg rcnw qYsy rcI; khu nwnk. suin mIq ]25]",
+          "text": "ਜਗ ਰਚਨਾ ਤੈਸੇ ਰਚੀ; ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਮੀਤ ॥੨੫॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "a32ec09c51a9aa11181a794478e0739fe20fb4b05527f9fa4e61d68e345b0253",
+          "textSha256": "0576c6aa05cdee31abecf3601804d7451e74f037618b5707286ce308b9eff989"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-26",
+      "ordinal": 26,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "MLRL",
+          "orderId": 60418,
+          "ang": 1427,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "pRwnI kCU. n cyqeI; mid mwieAw kY AMDu ]",
+          "text": "ਪ੍ਰਾਨੀ ਕਛੂ. ਨ ਚੇਤਈ; ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "5f5b7944b5e3c94a072dc711c3d5cbfa51ab2d66be4ac16efb725da90ed1bcab",
+          "textSha256": "448e5a059757ee2e1e54719a34122ea6b7ad99200de16f809025d27104ea47fd"
+        },
+        {
+          "id": "UQ4N",
+          "orderId": 60419,
+          "ang": 1427,
+          "sourceAngLine": 17,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. ibnu hir Bjn; prq qwih jm PMD ]26]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਬਿਨੁ ਹਰਿ ਭਜਨ; ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੨੬॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "40e7a10dc07828e2ca07f7a08e000c28a47a697800bc94d18a80e7eec8639082",
+          "textSha256": "26910785497102dbdf935f722c08a248b66142e5a0e65418817104dade9df1d3"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-27",
+      "ordinal": 27,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "Q6AC",
+          "orderId": 60420,
+          "ang": 1427,
+          "sourceAngLine": 17,
+          "typeId": 4,
+          "sourceAscii": "jau suK kau cwhY sdw; srin rwm kI lyh ]",
+          "text": "ਜਉ ਸੁਖ ਕਉ ਚਾਹੈ ਸਦਾ; ਸਰਨਿ ਰਾਮ ਕੀ ਲੇਹ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "5e2fdc68d93b6ba7e112500313a540b271fbb7696cef65b77cce41250412b136",
+          "textSha256": "58451476208d058bffcfb432953f0837b630de9aaf56931f42dd600fd6deb3e0"
+        },
+        {
+          "id": "DXGR",
+          "orderId": 60421,
+          "ang": 1427,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; durlB mwnuK dyh ]27]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਦੁਰਲਭ ਮਾਨੁਖ ਦੇਹ ॥੨੭॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "d08d9a68c05626928d297f899308d6492bb7264e06452a349694c1a9b4580b6f",
+          "textSha256": "8e9b5d6b75349e3856af55905b676dd7f48eb445f3b2c9b725a2648dac160968"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-28",
+      "ordinal": 28,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "48JC",
+          "orderId": 60422,
+          "ang": 1427,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "mwieAw kwrin DwvhI; mUrK log Ajwn ]",
+          "text": "ਮਾਇਆ ਕਾਰਨਿ ਧਾਵਹੀ; ਮੂਰਖ ਲੋਗ ਅਜਾਨ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "93610928dbda0c700518221e7701a1108e97fb47f1026c091c15d0d397b4fe16",
+          "textSha256": "6393a26027a40f4ddcf315c8fa2ea5dee17095baf045ef33f592c0b415e01ef1"
+        },
+        {
+          "id": "JBCJ",
+          "orderId": 60423,
+          "ang": 1427,
+          "sourceAngLine": 19,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. ibnu hir Bjn ibrQw; jnmu isrwn ]28]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਬਿਨੁ ਹਰਿ ਭਜਨ ਬਿਰਥਾ; ਜਨਮੁ ਸਿਰਾਨ ॥੨੮॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "624ccfbad08cc5a01dfd2b6d6bebb67285d9f4cc0c9b76aa69b888a0e4f2b1eb",
+          "textSha256": "bb329cafc4eab548ec3a9a0e59c80400cb6549bd3022733318b1025a1bc7731d"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-29",
+      "ordinal": 29,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "320R",
+          "orderId": 60424,
+          "ang": 1427,
+          "sourceAngLine": 19,
+          "typeId": 4,
+          "sourceAscii": "jo pRwnI. inis idnu BjY; rUp rwm iqh jwnu ]",
+          "text": "ਜੋ ਪ੍ਰਾਨੀ. ਨਿਸਿ ਦਿਨੁ ਭਜੈ; ਰੂਪ ਰਾਮ ਤਿਹ ਜਾਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "3f343fa32e538e44a6adad1e9f670844a4731c5f34671ee1192e19f15bdebc61",
+          "textSha256": "05430d96960754a23370eff5c94693fe2388be0f69a3a00a938ba897bb1fa31a"
+        },
+        {
+          "id": "A1T0",
+          "orderId": 60425,
+          "ang": 1428,
+          "sourceAngLine": 1,
+          "typeId": 4,
+          "sourceAscii": "hir jn hir AMqru nhI; nwnk. swcI mwnu ]29]",
+          "text": "ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ; ਨਾਨਕ. ਸਾਚੀ ਮਾਨੁ ॥੨੯॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "ad104a813afbb914e4ad92887d6aec35256e028e0c04b9bd91f6cfdbabb49319",
+          "textSha256": "8afdc2897b05e4253f7b88d93b05142003de9070237550d67d3a53f180e6824d"
+        }
+      ],
+      "angStart": 1427,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-30",
+      "ordinal": 30,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "WZY5",
+          "orderId": 60426,
+          "ang": 1428,
+          "sourceAngLine": 1,
+          "typeId": 4,
+          "sourceAscii": "mnu mwieAw mY PiD rihE; ibsirE goibMd nwmu ]",
+          "text": "ਮਨੁ ਮਾਇਆ ਮੈ ਫਧਿ ਰਹਿਓ; ਬਿਸਰਿਓ ਗੋਬਿੰਦ ਨਾਮੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "ce2b99d70009144d37903f6d18adc26a1ba38f67c7bfa8c9a8661f5a52f8a3cc",
+          "textSha256": "ac374407fe50f797026278ab6c650f96a941fac60ef23d72ec6b26b5bd762eb0"
+        },
+        {
+          "id": "8UJJ",
+          "orderId": 60427,
+          "ang": 1428,
+          "sourceAngLine": 2,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. ibnu hir Bjn; jIvn kauny kwm ]30]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਬਿਨੁ ਹਰਿ ਭਜਨ; ਜੀਵਨ ਕਉਨੇ ਕਾਮ ॥੩੦॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "ab4da11ea06722beea7f99af259895e38fbc22abe6d145a8e0d6623faa278599",
+          "textSha256": "90d11fd48c558450e4a186ff98f1990a1f00bc43340a478ca7a4ea099fcc29ad"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-31",
+      "ordinal": 31,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "392V",
+          "orderId": 60428,
+          "ang": 1428,
+          "sourceAngLine": 2,
+          "typeId": 4,
+          "sourceAscii": "pRwnI rwmu. n cyqeI; mid mwieAw kY AMDu ]",
+          "text": "ਪ੍ਰਾਨੀ ਰਾਮੁ. ਨ ਚੇਤਈ; ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "f241723cb48d75f84b7b5049145fb3af3dad6d59d49a0ff5b05362725a4d5032",
+          "textSha256": "94e55265c431b234819b22bf4d97685b12f4eaa87681912830d6a1b58de87856"
+        },
+        {
+          "id": "2UU0",
+          "orderId": 60429,
+          "ang": 1428,
+          "sourceAngLine": 3,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. hir Bjn ibnu; prq qwih jm PMD ]31]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਹਰਿ ਭਜਨ ਬਿਨੁ; ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੩੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "0014ec1695a1c9851e6017547da87e7e6ecd571362e881da872129f3fbec490a",
+          "textSha256": "d209d53ad518e11632b92d256a084da4b9800fb16023b98825f32632f0614977"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-32",
+      "ordinal": 32,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "GP1L",
+          "orderId": 60430,
+          "ang": 1428,
+          "sourceAngLine": 3,
+          "typeId": 4,
+          "sourceAscii": "suK mY bhu sMgI Bey; duK mY sMig. n koie ]",
+          "text": "ਸੁਖ ਮੈ ਬਹੁ ਸੰਗੀ ਭਏ; ਦੁਖ ਮੈ ਸੰਗਿ. ਨ ਕੋਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "467662904fdba9edd0f1a6a92f4297c347f80fa20f7106419e1c1c922b93206a",
+          "textSha256": "fcb3f4c429605822af36b6e3688e6c9d9f060c35a556d1b05d9fb42e9cca9101"
+        },
+        {
+          "id": "4GEC",
+          "orderId": 60431,
+          "ang": 1428,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. hir Bju mnw; AMiq shweI hoie ]32]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਹਰਿ ਭਜੁ ਮਨਾ; ਅੰਤਿ ਸਹਾਈ ਹੋਇ ॥੩੨॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "796f5a39db02b351ace798b45b78affa7fefd03588ba4736f01ed2c761c09f40",
+          "textSha256": "3bb70c1101fa90662fd13150658fa390018e031b67e30f38bd5a4b0e84da7b9e"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-33",
+      "ordinal": 33,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "EPRD",
+          "orderId": 60432,
+          "ang": 1428,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "jnm jnm Brmq iPirE; imitE n. jm ko qRwsu ]",
+          "text": "ਜਨਮ ਜਨਮ ਭਰਮਤ ਫਿਰਿਓ; ਮਿਟਿਓ ਨ. ਜਮ ਕੋ ਤ੍ਰਾਸੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "813d5a3b0f099d1d748c237b6145c1179074014942d893f7eaa490c92a3f3960",
+          "textSha256": "f86e247fb4caf0a22d45de3678dac35baa64a9e12a7bcec5e61e5909bb052cb7"
+        },
+        {
+          "id": "FGBT",
+          "orderId": 60433,
+          "ang": 1428,
+          "sourceAngLine": 5,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. hir Bju mnw; inrBY pwvih bwsu ]33]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਹਰਿ ਭਜੁ ਮਨਾ; ਨਿਰਭੈ ਪਾਵਹਿ ਬਾਸੁ ॥੩੩॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "df5117b217d933ccbffe650ca5df3eac691eca6d39922f96d5781a5dc21d6dda",
+          "textSha256": "233264bb6f9b6524345a881cd5f90f2f5a986f693b1c30ce98d612ef8dedc4a7"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-34",
+      "ordinal": 34,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "09RX",
+          "orderId": 60434,
+          "ang": 1428,
+          "sourceAngLine": 5,
+          "typeId": 4,
+          "sourceAscii": "jqn bhuqu mY kir rihE; imitE n. mn ko mwnu ]",
+          "text": "ਜਤਨ ਬਹੁਤੁ ਮੈ ਕਰਿ ਰਹਿਓ; ਮਿਟਿਓ ਨ. ਮਨ ਕੋ ਮਾਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "fc18a941bb4459e9bfbf4452e6f726e7f509934bcff143e358075f270b314fc7",
+          "textSha256": "4fd9878ee8cd9c1a9eff84037cb628aa121ec3fcd721b759da28ec8d98ead2e3"
+        },
+        {
+          "id": "81YR",
+          "orderId": 60435,
+          "ang": 1428,
+          "sourceAngLine": 6,
+          "typeId": 4,
+          "sourceAscii": "durmiq isau. nwnk PiDE; rwiK lyhu Bgvwn ]34]",
+          "text": "ਦੁਰਮਤਿ ਸਿਉ. ਨਾਨਕ ਫਧਿਓ; ਰਾਖਿ ਲੇਹੁ ਭਗਵਾਨ ॥੩੪॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "eed09d759bcacafdc65bf6b3e5b02c1e31ea753c04b6f113d3c2d90f71848f89",
+          "textSha256": "353abe54fe259b40fbb0dfc17664bf6c7ab12488fbc921d02aa4a59c363de490"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-35",
+      "ordinal": 35,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "CCE4",
+          "orderId": 60436,
+          "ang": 1428,
+          "sourceAngLine": 7,
+          "typeId": 4,
+          "sourceAscii": "bwl juAwnI Aru ibriD Puin; qIin AvsQw jwin ]",
+          "text": "ਬਾਲ ਜੁਆਨੀ ਅਰੁ ਬਿਰਧਿ ਫੁਨਿ; ਤੀਨਿ ਅਵਸਥਾ ਜਾਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "b42fb164377542211c7d7317c928645e27cbdf37584c9463efba32b6f714290d",
+          "textSha256": "b37149510ddc3a59e29a484ad672dac857a54badec121074acba3dd108186b62"
+        },
+        {
+          "id": "KWV5",
+          "orderId": 60437,
+          "ang": 1428,
+          "sourceAngLine": 7,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. hir Bjn ibnu; ibrQw sB hI mwnu ]35]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਹਰਿ ਭਜਨ ਬਿਨੁ; ਬਿਰਥਾ ਸਭ ਹੀ ਮਾਨੁ ॥੩੫॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "c870ef2827852a249377afb9a732e7039b40804d71150767ab4a95e2a7900b41",
+          "textSha256": "37887432907ce8e9add6749f888a33babff9488e1d1f5a6f21b833acad21f5a0"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-36",
+      "ordinal": 36,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "4XF6",
+          "orderId": 60438,
+          "ang": 1428,
+          "sourceAngLine": 8,
+          "typeId": 4,
+          "sourceAscii": "krxo huqo. su nw kIE; pirE loB kY PMD ]",
+          "text": "ਕਰਣੋ ਹੁਤੋ. ਸੁ ਨਾ ਕੀਓ; ਪਰਿਓ ਲੋਭ ਕੈ ਫੰਧ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "939c69473b5728f05e6bcbabbf3c1c7f34a5c537d860f4e1049b8f5b807e9b24",
+          "textSha256": "6d8de840da178af93573bf6cc26caf40048d4fdcc3be3bec95b619b6c5fb5b63"
+        },
+        {
+          "id": "C987",
+          "orderId": 60439,
+          "ang": 1428,
+          "sourceAngLine": 8,
+          "typeId": 4,
+          "sourceAscii": "nwnk. simE rim gieE; Ab ikau rovq AMD ]36]",
+          "text": "ਨਾਨਕ. ਸਮਿਓ ਰਮਿ ਗਇਓ; ਅਬ ਕਿਉ ਰੋਵਤ ਅੰਧ ॥੩੬॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "6e50f0e24f0f36fd55a5f2553344463009ae87622a434bac666d3b50b42461f6",
+          "textSha256": "0f5fdb0b249e77b2fbef0a76121fddcb8a3b20d84e7ac1b1fd0f171ab81d92e9"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-37",
+      "ordinal": 37,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "3X2Q",
+          "orderId": 60440,
+          "ang": 1428,
+          "sourceAngLine": 9,
+          "typeId": 4,
+          "sourceAscii": "mnu mwieAw mY rim rihE; inksq nwihn. mIq ]",
+          "text": "ਮਨੁ ਮਾਇਆ ਮੈ ਰਮਿ ਰਹਿਓ; ਨਿਕਸਤ ਨਾਹਿਨ. ਮੀਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "471023f7629d3f29f11eef40114826cbe987286668467306482384f367eab174",
+          "textSha256": "3150170fcf62561fad796ca6d421d4dc377568920b812de4fad9c72ca6b52e24"
+        },
+        {
+          "id": "YQ3X",
+          "orderId": 60441,
+          "ang": 1428,
+          "sourceAngLine": 9,
+          "typeId": 4,
+          "sourceAscii": "nwnk. mUriq icqR ijau; Cwifq nwihn BIiq ]37]",
+          "text": "ਨਾਨਕ. ਮੂਰਤਿ ਚਿਤ੍ਰ ਜਿਉ; ਛਾਡਿਤ ਨਾਹਿਨ ਭੀਤਿ ॥੩੭॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "41de48c2cbf0de4a96a09437a13633dd2ef2b601f9c23fb4815cb5ff792f38d5",
+          "textSha256": "e43def9e527d22378af1b44c376fb1627bae3fcf1eac2d6b3572c178cfe7bb42"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-38",
+      "ordinal": 38,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "08CU",
+          "orderId": 60442,
+          "ang": 1428,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "nr cwhq kCu Aaur; AaurY kI AaurY BeI ]",
+          "text": "ਨਰ ਚਾਹਤ ਕਛੁ ਅਉਰ; ਅਉਰੈ ਕੀ ਅਉਰੈ ਭਈ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "86d479ece7e05bbbc1f3de72859ae7a140927967cf3690709c6d1dfd40438d49",
+          "textSha256": "a5ad3f599f30337fae2b17b265586ef4435e9a7447aceac93ca40755f4e12cd3"
+        },
+        {
+          "id": "RZPN",
+          "orderId": 60443,
+          "ang": 1428,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "icqvq rihE Tgaur; nwnk. PwsI gil prI ]38]",
+          "text": "ਚਿਤਵਤ ਰਹਿਓ ਠਗਉਰ; ਨਾਨਕ. ਫਾਸੀ ਗਲਿ ਪਰੀ ॥੩੮॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "3c592f0a442690c9fbd2a7500506408cc9ba488c91f98aa515444a049e158f95",
+          "textSha256": "44aa0ff98346996ddc80fe65b08bee45674ec2e4fdd942278ed016c3de465aec"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-39",
+      "ordinal": 39,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "MDUA",
+          "orderId": 60444,
+          "ang": 1428,
+          "sourceAngLine": 11,
+          "typeId": 4,
+          "sourceAscii": "jqn bhuq suK ky kIey; duK ko kIE. n koie ]",
+          "text": "ਜਤਨ ਬਹੁਤ ਸੁਖ ਕੇ ਕੀਏ; ਦੁਖ ਕੋ ਕੀਓ. ਨ ਕੋਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "ecb09015d7132670297ab7089a27c5a2da3aaa51a44398557c31e64077aaac6b",
+          "textSha256": "ac16c1ca3b3ba4e166e7818c52062b613d9403d4be715834049aff803ff0b02e"
+        },
+        {
+          "id": "CBAN",
+          "orderId": 60445,
+          "ang": 1428,
+          "sourceAngLine": 11,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. suin ry mnw; hir BwvY so hoie ]39]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਸੁਨਿ ਰੇ ਮਨਾ; ਹਰਿ ਭਾਵੈ ਸੋ ਹੋਇ ॥੩੯॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "59a4ee7fd6e5ee6a31bacaf564ada7b4a8c33ee8d4e026b0191f4123d5aea41d",
+          "textSha256": "0eb0cf0388460afe92aeac657d5ee016e60170347a1c38fde0be76ddbf559927"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-40",
+      "ordinal": 40,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "NHPV",
+          "orderId": 60446,
+          "ang": 1428,
+          "sourceAngLine": 12,
+          "typeId": 4,
+          "sourceAscii": "jgqu iBKwrI iPrqu hY; sB ko dwqw rwmu ]",
+          "text": "ਜਗਤੁ ਭਿਖਾਰੀ ਫਿਰਤੁ ਹੈ; ਸਭ ਕੋ ਦਾਤਾ ਰਾਮੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "05943be6332fcdbd095fe24148cc7752a290cba242283fdd51f250bd36c75496",
+          "textSha256": "9655d8884822ab90b949e139bd748fe64b7ebf1ac629c8e0954ad2ce3e81199e"
+        },
+        {
+          "id": "ATWR",
+          "orderId": 60447,
+          "ang": 1428,
+          "sourceAngLine": 12,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. mn ismru iqh; pUrn hovih kwm ]40]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਮਨ ਸਿਮਰੁ ਤਿਹ; ਪੂਰਨ ਹੋਵਹਿ ਕਾਮ ॥੪੦॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "f583ce2be3728077698b7a9655db4eb169e8d6733c0ff19bbcb89397665b5a69",
+          "textSha256": "9b1e5eef3886cbeadf7234ab2a8ee8b96790bb7949ed725fd691d9c3e1874add"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-41",
+      "ordinal": 41,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "R5K9",
+          "orderId": 60448,
+          "ang": 1428,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "JUTY mwnu. khw krY; jgu supny ijau jwnu ]",
+          "text": "ਝੂਠੈ ਮਾਨੁ. ਕਹਾ ਕਰੈ; ਜਗੁ ਸੁਪਨੇ ਜਿਉ ਜਾਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9a7d7115153ef5979bd574e5d4df2a32053198ebd9cab7d7f9ef849731737669",
+          "textSha256": "44cb628e8b357887a63b409f4581f41ae4ef1bf318ebd44c36e6ed87b098c285"
+        },
+        {
+          "id": "R2PA",
+          "orderId": 60449,
+          "ang": 1428,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "ien mY kCu qyro nhI; nwnk. kihE bKwin ]41]",
+          "text": "ਇਨ ਮੈ ਕਛੁ ਤੇਰੋ ਨਹੀ; ਨਾਨਕ. ਕਹਿਓ ਬਖਾਨਿ ॥੪੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2a6dfb181901ee6f3f1e3f894dc0169d8532ae32833982d9a857bc59a54597a4",
+          "textSha256": "d8d1b62bf9dae0ea3c411b35c9be3d82af5bf1876eacc45c8817a9b2b97ad5f0"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-42",
+      "ordinal": 42,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "NJ31",
+          "orderId": 60450,
+          "ang": 1428,
+          "sourceAngLine": 13,
+          "typeId": 4,
+          "sourceAscii": "grbu krqu hY dyh ko; ibnsY iCn mY mIq ]",
+          "text": "ਗਰਬੁ ਕਰਤੁ ਹੈ ਦੇਹ ਕੋ; ਬਿਨਸੈ ਛਿਨ ਮੈ ਮੀਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9d6b225bf0930e52035b6e47b42842900c360397c5c5506ecb8d1a0aba5271ee",
+          "textSha256": "feeccbecd457f83677e0cc858327cd19b0a896c9714ebd3da90aff782d2b6af4"
+        },
+        {
+          "id": "X9DF",
+          "orderId": 60451,
+          "ang": 1428,
+          "sourceAngLine": 14,
+          "typeId": 4,
+          "sourceAscii": "ijih pRwnI. hir jsu kihE; nwnk. iqih jgu jIiq ]42]",
+          "text": "ਜਿਹਿ ਪ੍ਰਾਨੀ. ਹਰਿ ਜਸੁ ਕਹਿਓ; ਨਾਨਕ. ਤਿਹਿ ਜਗੁ ਜੀਤਿ ॥੪੨॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "ad17570993be7fc069f5124e4ba30d98e41c4f7e0ea87435245ef763580cc8ef",
+          "textSha256": "d3f6f2095ec106f3c546cb313670bd677eaa3dd99c4af8c85fb895df338810d8"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-43",
+      "ordinal": 43,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "3GKJ",
+          "orderId": 60452,
+          "ang": 1428,
+          "sourceAngLine": 14,
+          "typeId": 4,
+          "sourceAscii": "ijh Git ismrnu rwm ko; so nru mukqw jwnu ]",
+          "text": "ਜਿਹ ਘਟਿ ਸਿਮਰਨੁ ਰਾਮ ਕੋ; ਸੋ ਨਰੁ ਮੁਕਤਾ ਜਾਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "7fd14eccaaa1929ecfb14f3867a7487f0a69bde80f368e532ca77caaf103d5e1",
+          "textSha256": "b2d6dceeadfaf08bd18e7a7c43d77f5e6368fb946c3ca67c553b7978b430aefc"
+        },
+        {
+          "id": "11UU",
+          "orderId": 60453,
+          "ang": 1428,
+          "sourceAngLine": 15,
+          "typeId": 4,
+          "sourceAscii": "iqih nr hir AMqru nhI; nwnk. swcI mwnu ]43]",
+          "text": "ਤਿਹਿ ਨਰ ਹਰਿ ਅੰਤਰੁ ਨਹੀ; ਨਾਨਕ. ਸਾਚੀ ਮਾਨੁ ॥੪੩॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "314aa0b284496d490f2beb45e957ec2a3528546bcd955f1e701d84521401c2f6",
+          "textSha256": "144e4b41850a6ebb0ae51769950ed6603971bf9270cd63a206709e417133b6c3"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-44",
+      "ordinal": 44,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "RV93",
+          "orderId": 60454,
+          "ang": 1428,
+          "sourceAngLine": 15,
+          "typeId": 4,
+          "sourceAscii": "eyk Bgiq Bgvwn; ijh pRwnI kY nwih min ]",
+          "text": "ਏਕ ਭਗਤਿ ਭਗਵਾਨ; ਜਿਹ ਪ੍ਰਾਨੀ ਕੈ ਨਾਹਿ ਮਨਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "a9477ed761c90b93d42ce73aaad0ed8bcd629e60aadb60ad297e9533b49111d9",
+          "textSha256": "353065bf232ab1d10ca3b961fd62423ce45a75647d77645c681dddfa858dc0f2"
+        },
+        {
+          "id": "U4R6",
+          "orderId": 60455,
+          "ang": 1428,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "jYsy sUkr suAwn; nwnk. mwno qwih qnu ]44]",
+          "text": "ਜੈਸੇ ਸੂਕਰ ਸੁਆਨ; ਨਾਨਕ. ਮਾਨੋ ਤਾਹਿ ਤਨੁ ॥੪੪॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2b577a318d653ec2ee56a6184d86cc083f069a699122744f84a4be81d88feb3e",
+          "textSha256": "4501ca7a03155c4b0871cba892d32cdb1dffd9d27569d16db0dd508fdd1e9c0f"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-45",
+      "ordinal": 45,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "VH7H",
+          "orderId": 60456,
+          "ang": 1428,
+          "sourceAngLine": 16,
+          "typeId": 4,
+          "sourceAscii": "suAwmI ko igRhu ijau sdw; suAwn qjq nhI inq ]",
+          "text": "ਸੁਆਮੀ ਕੋ ਗ੍ਰਿਹੁ ਜਿਉ ਸਦਾ; ਸੁਆਨ ਤਜਤ ਨਹੀ ਨਿਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "6c6b0d0aaaf919e4285e13d5c4ee082a2c42a841b66d1206abce1545d8ac2398",
+          "textSha256": "90b849f7197a47a809ae0ae4e04cd4af62bc0aab62fa1d3cc6f863d01f9c6a43"
+        },
+        {
+          "id": "UT9M",
+          "orderId": 60457,
+          "ang": 1428,
+          "sourceAngLine": 17,
+          "typeId": 4,
+          "sourceAscii": "nwnk. ieh ibiD hir Bjau; iek min huie iek iciq ]45]",
+          "text": "ਨਾਨਕ. ਇਹ ਬਿਧਿ ਹਰਿ ਭਜਉ; ਇਕ ਮਨਿ ਹੁਇ ਇਕ ਚਿਤਿ ॥੪੫॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "f654e9ddb91c8a5a795d6dc20534b3fc29f8884c99e4397905a632e5470f9e4a",
+          "textSha256": "4253997744543df94e691417140eb3a5bb4e5af9d7ea5e324db74e1b79cdd796"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-46",
+      "ordinal": 46,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "5FBT",
+          "orderId": 60458,
+          "ang": 1428,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "qIrQ brq Aru dwn kir; mn mY DrY gumwnu ]",
+          "text": "ਤੀਰਥ ਬਰਤ ਅਰੁ ਦਾਨ ਕਰਿ; ਮਨ ਮੈ ਧਰੈ ਗੁਮਾਨੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "28ac074983559e800d4c4a2e286e447a91c85a669c1add262a4a85269c7f6a90",
+          "textSha256": "3a67ac35ff9336e0134aff0ff99246396f0683beb151a22a120a823ea529cb78"
+        },
+        {
+          "id": "P9CD",
+          "orderId": 60459,
+          "ang": 1428,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "nwnk. inhPl jwq iqh; ijau kuMcr iesnwnu ]46]",
+          "text": "ਨਾਨਕ. ਨਿਹਫਲ ਜਾਤ ਤਿਹ; ਜਿਉ ਕੁੰਚਰ ਇਸਨਾਨੁ ॥੪੬॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "c27f75828c8f297abd8d26c727129c49b9eeb0afd6cffb4dfbaaab24fbbdacf6",
+          "textSha256": "26919fe00007684456f2b5f6a36eba2196cd044ef0f6f2f5de9cd0113c245230"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-47",
+      "ordinal": 47,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "NH6N",
+          "orderId": 60460,
+          "ang": 1428,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "isru kMipE, pg fgmgy; nYn joiq. qy hIn ]",
+          "text": "ਸਿਰੁ ਕੰਪਿਓ, ਪਗ ਡਗਮਗੇ; ਨੈਨ ਜੋਤਿ. ਤੇ ਹੀਨ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "b1310a79123bd26c3f802e6c85130495ea60b0939a5776f34490e0d29842e41c",
+          "textSha256": "4c40ddd8e1b6612c53d24efa06703f55bf4d69cf61553817d478c03c4b3c6c75"
+        },
+        {
+          "id": "PGFM",
+          "orderId": 60461,
+          "ang": 1428,
+          "sourceAngLine": 18,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. ieh ibiD BeI; qaU. n hir ris lIn ]47]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਇਹ ਬਿਧਿ ਭਈ; ਤਊ. ਨ ਹਰਿ ਰਸਿ ਲੀਨ ॥੪੭॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "587ae5143344b70b5000567bccee5b2a90e851f7a27e5505ff2cdf13f1a3b472",
+          "textSha256": "2d5c6e29593aaf775a7c62cd8c47ab94346e605715d049dfe6a7835987adda30"
+        }
+      ],
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-48",
+      "ordinal": 48,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "UEBN",
+          "orderId": 60462,
+          "ang": 1429,
+          "sourceAngLine": 1,
+          "typeId": 4,
+          "sourceAscii": "inj kir dyiKE. jgqu mY; ko kwhU ko nwih ]",
+          "text": "ਨਿਜ ਕਰਿ ਦੇਖਿਓ. ਜਗਤੁ ਮੈ; ਕੋ ਕਾਹੂ ਕੋ ਨਾਹਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "e6235ceccd1057603e58d1ce2019033ff095c5dfc19829762a8bc09130245907",
+          "textSha256": "a4bced4dde62f9a7ff77f59c419787f3c929334d79a7e7b9b98f1dd26481cc54"
+        },
+        {
+          "id": "7YTR",
+          "orderId": 60463,
+          "ang": 1429,
+          "sourceAngLine": 1,
+          "typeId": 4,
+          "sourceAscii": "nwnk. iQru hir Bgiq hY; iqh rwKo mn mwih ]48]",
+          "text": "ਨਾਨਕ. ਥਿਰੁ ਹਰਿ ਭਗਤਿ ਹੈ; ਤਿਹ ਰਾਖੋ ਮਨ ਮਾਹਿ ॥੪੮॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "6d86f0c98c134ec1989292706d6bfd961a385982e0f3639b62be238fcd097406",
+          "textSha256": "5be026b829247dc94ac3acbeb64a5333af76e07bbe4c4148a306584c68a35013"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-49",
+      "ordinal": 49,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "BS92",
+          "orderId": 60464,
+          "ang": 1429,
+          "sourceAngLine": 2,
+          "typeId": 4,
+          "sourceAscii": "jg rcnw sB JUT hY; jwin lyhu ry mIq ]",
+          "text": "ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ; ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "cece4fe0cdca90cbeaae64c253b1d9d5be389e87434d9bd151c02e220f060d16",
+          "textSha256": "2db975f36350f36d0cf9228616e2778d88135551d211fda7ea6763f56c193906"
+        },
+        {
+          "id": "CHVQ",
+          "orderId": 60465,
+          "ang": 1429,
+          "sourceAngLine": 2,
+          "typeId": 4,
+          "sourceAscii": "kih nwnk. iQru nw rhY; ijau bwlU kI BIiq ]49]",
+          "text": "ਕਹਿ ਨਾਨਕ. ਥਿਰੁ ਨਾ ਰਹੈ; ਜਿਉ ਬਾਲੂ ਕੀ ਭੀਤਿ ॥੪੯॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "1bd84cef40128ec45b589e62fafeea0a8fa5b2854dc22db9a97d816f30c039ae",
+          "textSha256": "29638f4e2e0b70acc2d4b651b2c4d20a832128128fb035ec2efb3fc52da9fb0c"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-50",
+      "ordinal": 50,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "2G6B",
+          "orderId": 60466,
+          "ang": 1429,
+          "sourceAngLine": 3,
+          "typeId": 4,
+          "sourceAscii": "rwmu gieE; rwvnu gieE; jw kau bhu prvwru ]",
+          "text": "ਰਾਮੁ ਗਇਓ; ਰਾਵਨੁ ਗਇਓ; ਜਾ ਕਉ ਬਹੁ ਪਰਵਾਰੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9ee1a54c489ab5183aa5b337f9766ab42e05f5b093604b29ed25cd9b5078c55d",
+          "textSha256": "0d88aa9bdb0ff0167d41b543ca045b2681974ba88e2b1537e726a8d2f84642ab"
+        },
+        {
+          "id": "MSFT",
+          "orderId": 60467,
+          "ang": 1429,
+          "sourceAngLine": 3,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. iQru kCu nhI; supny ijau sMswru ]50]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਥਿਰੁ ਕਛੁ ਨਹੀ; ਸੁਪਨੇ ਜਿਉ ਸੰਸਾਰੁ ॥੫੦॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2977a41c51abdfa311dfd95ad3ee81e9d50dece18b7b9b5dd1b92acc02e2ad6f",
+          "textSha256": "e4b14e7e4d0c17fae5cd5bce4eefaf3f3acb230eac5f429a02e09a663878386e"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-51",
+      "ordinal": 51,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "KYJQ",
+          "orderId": 60468,
+          "ang": 1429,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "icMqw. qw kI kIjIAY; jo AnhonI hoie ]",
+          "text": "ਚਿੰਤਾ. ਤਾ ਕੀ ਕੀਜੀਐ; ਜੋ ਅਨਹੋਨੀ ਹੋਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "9bb55d3f64168fd6b967ade90de1c94ce83b4ca648b1a3a53072fd80a45b9fe3",
+          "textSha256": "a382101b53391eb4ea0b9eceb725a16186d5d7e210799bc34190ca1879260b03"
+        },
+        {
+          "id": "FKND",
+          "orderId": 60469,
+          "ang": 1429,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "iehu mwrgu sMswr ko; nwnk. iQru nhI koie ]51]",
+          "text": "ਇਹੁ ਮਾਰਗੁ ਸੰਸਾਰ ਕੋ; ਨਾਨਕ. ਥਿਰੁ ਨਹੀ ਕੋਇ ॥੫੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "b976284175a32ffa5155570a83552ef3192a198998bdafe4b2fceb9c8ae896ee",
+          "textSha256": "7b06fbdc528b605a74ee5ce9653fde778d1c31ec3f795fd99f5077c68ad458a6"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-52",
+      "ordinal": 52,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "7C65",
+          "orderId": 60470,
+          "ang": 1429,
+          "sourceAngLine": 4,
+          "typeId": 4,
+          "sourceAscii": "jo aupijE. so ibnis hY; pro Awju kY kwil ]",
+          "text": "ਜੋ ਉਪਜਿਓ. ਸੋ ਬਿਨਸਿ ਹੈ; ਪਰੋ ਆਜੁ ਕੈ ਕਾਲਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "7db6abbcce1982db6eb7fc16d5d9c68d1c2e6a3413ae8779f25fe252f556b5da",
+          "textSha256": "63ab08b01d40611d8c0521b44329e372e55c95f254f64aea2eaeab2507c3c348"
+        },
+        {
+          "id": "AAV4",
+          "orderId": 60471,
+          "ang": 1429,
+          "sourceAngLine": 5,
+          "typeId": 4,
+          "sourceAscii": "nwnk. hir gun gwie ly; Cwif sgl jMjwl ]52]",
+          "text": "ਨਾਨਕ. ਹਰਿ ਗੁਨ ਗਾਇ ਲੇ; ਛਾਡਿ ਸਗਲ ਜੰਜਾਲ ॥੫੨॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "e4340be952129920f1912f9a5ebd08ba58d1759c2f6eaacae2c1c4d4e1449841",
+          "textSha256": "a903c985688914e293a24ac4e2682fd53c57810e533556b7ed94da17688354b0"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-53",
+      "ordinal": 53,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "31ZA",
+          "orderId": 60473,
+          "ang": 1429,
+          "sourceAngLine": 6,
+          "typeId": 4,
+          "sourceAscii": "blu CutikE, bMDn pry; kCU n hoq aupwie ]",
+          "text": "ਬਲੁ ਛੁਟਕਿਓ, ਬੰਧਨ ਪਰੇ; ਕਛੂ ਨ ਹੋਤ ਉਪਾਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "0288c0245912964e6e6faf1989ca681e440f585437cda04daa127d0ffee76b82",
+          "textSha256": "aa88a3d60e27a17737c9e4b3b5b9fc6a70be1f8361a676385fe378358e2a7e69"
+        },
+        {
+          "id": "PG76",
+          "orderId": 60474,
+          "ang": 1429,
+          "sourceAngLine": 6,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. Ab Et hir; gj ijau hohu shwie ]53]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਅਬ ਓਟ ਹਰਿ; ਗਜ ਜਿਉ ਹੋਹੁ ਸਹਾਇ ॥੫੩॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "7f8e248456648648a774dfce0fc64d623eeb3ed1f08c461276e2739c968a5edc",
+          "textSha256": "63cf2b2a736e13f8d64567e431ffdd8be8a7b8e21c428a263e13277a3240942e"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-54",
+      "ordinal": 54,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "V024",
+          "orderId": 60475,
+          "ang": 1429,
+          "sourceAngLine": 7,
+          "typeId": 4,
+          "sourceAscii": "blu hoAw bMDn Cuty; sBu ikCu hoq aupwie ]",
+          "text": "ਬਲੁ ਹੋਆ ਬੰਧਨ ਛੁਟੇ; ਸਭੁ ਕਿਛੁ ਹੋਤ ਉਪਾਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "22e8c503a98c7f1df47add82a8daf18eea787edcf3890780e147a71dfdb4d586",
+          "textSha256": "e1ae1b8ad5b6ddecb251c47dcf2083b0a3b03c27cbb09135f2a769699ba0b67e"
+        },
+        {
+          "id": "6HHQ",
+          "orderId": 60476,
+          "ang": 1429,
+          "sourceAngLine": 7,
+          "typeId": 4,
+          "sourceAscii": "nwnk. sBu ikCu qumrY hwQ mY; qum hI hoq shwie ]54]",
+          "text": "ਨਾਨਕ. ਸਭੁ ਕਿਛੁ ਤੁਮਰੈ ਹਾਥ ਮੈ; ਤੁਮ ਹੀ ਹੋਤ ਸਹਾਇ ॥੫੪॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "d0ee354637c6618f3013d04447685b279d8f802a644718f4d0125d1a82e15b9a",
+          "textSha256": "0b71c1fa2abe27faeadc6e1cf84e74041dbc681f015ce8fd463059edb42a1c7d"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-55",
+      "ordinal": 55,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "01LW",
+          "orderId": 60477,
+          "ang": 1429,
+          "sourceAngLine": 8,
+          "typeId": 4,
+          "sourceAscii": "sMg sKw siB qij gey; koaU. n inbihE swiQ ]",
+          "text": "ਸੰਗ ਸਖਾ ਸਭਿ ਤਜਿ ਗਏ; ਕੋਊ. ਨ ਨਿਬਹਿਓ ਸਾਥਿ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "013477aa4a845c7bec0a2c29970db55070e71df306b44cc1e35ea87a9270d9c6",
+          "textSha256": "582939654ce37235d6bc091237ff69c868d0fcde7f783174f5ccf13da854c1fd"
+        },
+        {
+          "id": "60ZF",
+          "orderId": 60478,
+          "ang": 1429,
+          "sourceAngLine": 8,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. ieh ibpiq mY; tyk eyk rGunwQ ]55]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਇਹ ਬਿਪਤਿ ਮੈ; ਟੇਕ ਏਕ ਰਘੁਨਾਥ ॥੫੫॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "2f8b5feaad72f24a3446957d914701cac5883a15f833ca36b3d37d9bc4e84c03",
+          "textSha256": "cce105835f9ca040be74dcc50e6096a01b604a9261871e75352deb1bd61dd1e7"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-56",
+      "ordinal": 56,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "L63U",
+          "orderId": 60479,
+          "ang": 1429,
+          "sourceAngLine": 9,
+          "typeId": 4,
+          "sourceAscii": "nwmu rihE. swDU rihE; rihE guru goibMdu ]",
+          "text": "ਨਾਮੁ ਰਹਿਓ. ਸਾਧੂ ਰਹਿਓ; ਰਹਿਓ ਗੁਰੁ ਗੋਬਿੰਦੁ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "8b3b99fc6177aa5ffdd9c7dc3f1fa025a27d879a18d4fa92dec6b32d7a976ed5",
+          "textSha256": "b64d32349a00c8859e9a20c0901237979f0234bbbd5aa9a2e218354deac30e9d"
+        },
+        {
+          "id": "52FC",
+          "orderId": 60480,
+          "ang": 1429,
+          "sourceAngLine": 9,
+          "typeId": 4,
+          "sourceAscii": "khu nwnk. ieh jgq mY; ikn jipE gur mMqu ]56]",
+          "text": "ਕਹੁ ਨਾਨਕ. ਇਹ ਜਗਤ ਮੈ; ਕਿਨ ਜਪਿਓ ਗੁਰ ਮੰਤੁ ॥੫੬॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "26c1f742f5f9fe4345476cdb343fda7ef1f8193e89100e2b588cc42ae3cf0f96",
+          "textSha256": "951f327061cc3203e4a267e34edb74081f0cbfcfaeec5846ae77833cba88f7ad"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    },
+    {
+      "id": "salok-mahala9-57",
+      "ordinal": 57,
+      "heading": "Guru Tegh Bahadur Sahib, Salok Mahala9",
+      "sourceRows": [
+        {
+          "id": "1RTH",
+          "orderId": 60481,
+          "ang": 1429,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "rwm nwmu aur mY gihE; jw kY sm. nhI koie ]",
+          "text": "ਰਾਮ ਨਾਮੁ ਉਰ ਮੈ ਗਹਿਓ; ਜਾ ਕੈ ਸਮ. ਨਹੀ ਕੋਇ ॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "fe9beff95cfa840c5fa72e617bb0801f059fa4479fab03474669519ef9ce9112",
+          "textSha256": "e351bd1a1754895f7b53464fc0306a2b811affbe0d18cb1747b4a88778f02e67"
+        },
+        {
+          "id": "ATZ1",
+          "orderId": 60482,
+          "ang": 1429,
+          "sourceAngLine": 10,
+          "typeId": 4,
+          "sourceAscii": "ijh ismrq. sMkt imtY; drsu quhwro hoie ]57]1]",
+          "text": "ਜਿਹ ਸਿਮਰਤ. ਸੰਕਟ ਮਿਟੈ; ਦਰਸੁ ਤੁਹਾਰੋ ਹੋਇ ॥੫੭॥੧॥",
+          "sourceTextHeld": false,
+          "sourceHoldReason": null,
+          "sourceAsciiSha256": "d0fd40f6b71dddbc1ecf921f4746b1b7d6fd8dd85f68bcb01cfbdeddebeb53e2",
+          "textSha256": "f58b53f60216e80f69fc699e70f4695939c41d985c286051eeef5708169029c3"
+        }
+      ],
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceStatus": "DIGITAL_WITNESS_UNCOLLATED",
+      "meaningApproved": false
+    }
+  ],
+  "provenance": {
+    "upstream": "https://github.com/shabados/database/releases/tag/4.8.7",
+    "databaseVersion": "Shabad OS archived SQLite 4.8.7 (2022)",
+    "databaseSha256": "d8e071347bd5485cc6aa2533c1f51347a16ed1724b4d8abaa4939520257074c2",
+    "converter": "gurmukhi-utils 3.2.2 (pinned)",
+    "conversion": "All but the one precisely logged source hold 7ST5 roundtrip losslessly; original ASCII always preserved",
+    "conversionHoldIds": [
+      "7ST5"
+    ],
+    "conversionHoldAngs": [
+      282
+    ],
+    "licenseNotice": "SGGS original public domain; Shabad OS digitization notice preserves scriptural text and attribution",
+    "textStatus": "DIGITAL_WITNESS_SOURCE_NOT_INDEPENDENTLY_COLLATED",
+    "humanSourceApproved": false,
+    "rightsReviewedForApp": false,
+    "teachingApproved": false,
+    "familyPublicationAuthorized": false,
+    "externalScriptureReaderRequired": false
+  },
+  "historicCompositionClaimsPendingReview": true,
+  "admission": "SOURCE_RESEARCH_ONLY_NOT_VERIFIED_FOR_FAMILY_PAATH",
+  "teachingState": "NOT_WRITTEN",
+  "publicationAllowed": false
+}
