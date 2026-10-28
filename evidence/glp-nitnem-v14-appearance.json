@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "failed": 0,
+  "environment": "Node VM using the shipped controller, reader handlers and scroll-tracking function; browser checks are separate",
+  "results": [
+    {
+      "name": "Saved dark appearance applies in the head before the body exists",
+      "status": "PASS"
+    },
+    {
+      "name": "Device preference follows system changes until a reader makes an explicit choice",
+      "status": "PASS"
+    },
+    {
+      "name": "One tap synchronizes selected buttons, both settings menus and the browser color",
+      "status": "PASS"
+    },
+    {
+      "name": "A selected theme survives reload and carries between Nitnem and Japji palettes",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy per-bani preference migrates only once and cannot replace the shared choice",
+      "status": "PASS"
+    },
+    {
+      "name": "Readers without a legacy choice keep following the device after reload",
+      "status": "PASS"
+    },
+    {
+      "name": "An appearance change in another tab updates this view without writing again",
+      "status": "PASS"
+    },
+    {
+      "name": "Clearing the shared preference resumes the current device preference",
+      "status": "PASS"
+    },
+    {
+      "name": "Blocked local storage still allows theme switching and reports the saving limit",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid preferences cannot become CSS themes or overwrite other learning data",
+      "status": "PASS"
+    },
+    {
+      "name": "Nitnem theme events preserve newer learning saved by another tab",
+      "status": "PASS"
+    },
+    {
+      "name": "Both reader documents provide labeled native buttons before opening any menu",
+      "status": "PASS"
+    },
+    {
+      "name": "Nitnem scroll tracking chooses a line below a wrapped persistent header",
+      "status": "PASS"
+    },
+    {
+      "name": "Japji theme events and its settings selector leave learning persistence untouched",
+      "status": "PASS"
+    }
+  ]
+}
