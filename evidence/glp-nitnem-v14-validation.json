@@ -1,5 +1,5 @@
 {
-  "status": "CANDIDATE_TESTED_NOT_DEPLOYED",
+  "status": "PRIVATE_PREVIEW_ACTIVE",
   "checkedAt": "2026-10-28T23:09:06.528448+00:00",
   "baseCommit": "889f329f1a61ef5e3eda386a5bd3f7edade976e9",
   "courseSHA256": "3a0d15041cccb837b063165ff5acbcdb3345a59616b57fca392c8be0d9f801d9",
@@ -71,6 +71,32 @@
   "independentModelReview": false,
   "physicalIPhoneSafariVoiceOver": "NOT_TESTED",
   "realOffline": "NOT_TESTED",
-  "githubCI": "NOT_YET_RUN",
-  "privateDeployment": "NOT_YET_ACTIVATED"
+  "githubCI": {
+    "run": 40785316619,
+    "conclusion": "success",
+    "headSha": "9253c3bfb7a0356d4e92653453189cd476747f52"
+  },
+  "privateDeployment": {
+    "status": "ACTIVE",
+    "deployedAtUtc": "2026-10-28T23:10:31.086913+00:00",
+    "deployedAtLocal": "2026-10-28T16:10:31.086913-07:00",
+    "allHistoricalFilesPreserved": 565,
+    "previousExtraAssetsVerified": 532,
+    "newAssets": 45,
+    "totalExtraAssets": 577,
+    "stagingAuthenticatedAssetsVerified": 577,
+    "liveLocalRepresentativeAssetsVerified": 10,
+    "liveHttpsRepresentativeAssetsVerified": 10,
+    "anonymousStatus": 401,
+    "invitationStatus": 303,
+    "inviteTarget": "/nitnem-learning-v14/index.html",
+    "sameAuthConfig": true,
+    "sameInvitation": true,
+    "sameTunnel": true,
+    "audienceChanged": false,
+    "publicRootChanged": false,
+    "previousSnapshotUnmodified": true,
+    "temporaryStagingStopped": true
+  },
+  "sourceCommit": "9253c3bfb7a0356d4e92653453189cd476747f52"
 }

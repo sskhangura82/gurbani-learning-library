@@ -2,7 +2,7 @@
 
 Date: October 28, 2026.
 Source branch: `feature/glp-jaap-76-90-20261028`.
-Status: tested candidate; private deployment not yet activated.
+Status: active in the existing private preview. Activated October 28, 2026 at 4:10:31 p.m. PDT after exact-commit CI, staging and authenticated HTTPS checks passed.
 
 ## Reconciled starting point
 
@@ -58,10 +58,22 @@ The V13 and V14 course compilers reproduce the immutable course bytes exactly. T
 
 Course SHA-256: `3a0d15041cccb837b063165ff5acbcdb3345a59616b57fca392c8be0d9f801d9`.
 
-Synthetic gateway fixtures are not a substitute for hashing actual historical snapshot files; staging and live delivery checks are still required before activation.
+Synthetic gateway fixtures are not a substitute for hashing actual historical snapshots. Actual staging and live delivery were verified separately as recorded below.
+
+## Private deployment receipt
+
+Deployed source commit: `9253c3bfb7a0356d4e92653453189cd476747f52`.
+
+GitHub Actions run `40785316619` completed successfully for that exact commit. The workflow is nondeploying; the existing private preview was switched separately after CI success.
+
+Staging verified all 577 authenticated extra routes, all 565 files from the previous V13 snapshot, the 532 historical extra routes and the 33 root-manifest assets. The old snapshot remains unchanged. All 45 new V14 package files were checked against their expected hashes.
+
+After activation, ten representative files passed exact-hash checks through both the live loopback gateway and existing HTTPS tunnel. They include the new course, reader, worker, appearance files and embedded Japji assets, plus the old V13 course. Anonymous requests still return 401. The existing invitation returns a 303 redirect to `/nitnem-learning-v14/index.html`, with Secure, HttpOnly and SameSite=Lax cookie flags retained. The auth configuration, invitation, audience and tunnel were not changed. The temporary staging server was stopped after live verification.
+
+The actual application bytes are those in the deployed source commit. The later receipt commit changes only this document and the validation JSON. No private invitation token, cookie or operational secret is included in these records.
 
 ## Rollback and continuation
 
-Public main and the public/root Japji runtime are not targeted by this update. Private deployment must preserve the existing auth configuration, invitation expiry, tunnel and audience. The V13 snapshot and gateway are the rollback target; do not overwrite them or clear browser learning to upgrade.
+Public main and the public/root Japji runtime are not targeted by this update. Private deployment preserved the existing auth configuration, invitation expiry, tunnel and audience. The V13 snapshot and gateway are the rollback target; do not overwrite them or clear browser learning to upgrade.
 
 After V14, Jaap still has 436 source records and 109 Study lessons to draft. Including the held Anand section, 442 records and 110 lessons remain. The next contiguous batch is Jaap Sahib Chhands 91–105.
