@@ -1,0 +1,41 @@
+{
+  "checkedAtUtc": "2026-10-28T20:37:26.111502+00:00",
+  "status": "PASS_LOCAL_READY_FOR_PRIVATE_STAGING",
+  "courseSHA256": "4d9ba106831d499fdec8982a0c9ec1415f90e64cb86f02a93db0b6096280fdb4",
+  "sourceReviewReceiptSHA256": "229b27ceb6c19e1f95336b42cacd2fa1f4076681a6528e9879e2e313997c72fb",
+  "newLineDrafts": 58,
+  "newStudyLessons": 15,
+  "sourceRecordsCovered": 859,
+  "studyLessons": 202,
+  "jaapSourceRecordsCovered": 286,
+  "jaapStudyLessons": 75,
+  "previousNotesUnchanged": 801,
+  "previousStudiesUnchanged": 187,
+  "earlierCourseFilesPreserved": 12,
+  "qualifiedHumanReviews": 0,
+  "anandPauri24Held": true,
+  "tests": {
+    "sourceTeachingRenderingContract": 14,
+    "independentSourceDraftChecks": 13,
+    "appearanceControllerAndReaderIntegration": 14,
+    "privateWorkerLifecycle": 7,
+    "rootJapji": 27,
+    "sharedLearning": 12,
+    "rootServiceWorker": 8,
+    "syntheticPrivateGateway": 558,
+    "immutablePackageAssets": 44
+  },
+  "reproducible": [
+    "course.v12.json",
+    "course.v13.json",
+    "nitnem/sw.js"
+  ],
+  "sourceAndContentReview": "PASS_AI_DRAFT_REVIEW_NOT_SCHOLARLY_APPROVAL",
+  "appearanceAssetsByteIdenticalToV11": true,
+  "gatewayLogicUnchangedExceptExplicitAllowlistAndLandingRedirect": true,
+  "browserStatus": "No new browser walkthrough for this content-only increment. Actual learning renderer exercised for all 58 notes and 15 Study lessons. Unchanged appearance assets retain bounded V11 browser evidence only; physical-device acceptance remains pending.",
+  "privateDeploymentStatus": "PENDING_STAGING_AND_EXACT_COMMIT_CI",
+  "publicAudienceChanged": false,
+  "publicJapjiUnchanged": true,
+  "localGatewayExecution": "Passed with the automatically reviewed localhost socket exception after the default filesystem sandbox blocked socket creation; synthetic test credentials only."
+}
