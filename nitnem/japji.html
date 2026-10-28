@@ -4,13 +4,14 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark"><meta name="robots" content="noindex,nofollow">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; media-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<meta name="theme-color" content="#faf6ec"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#faf6ec" data-light="#faf6ec" data-dark="#111929"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>Japji Sahib · Continuous Reading</title>
-<link rel="stylesheet" href="japji-assets/css/japji-full.css"><link rel="stylesheet" href="japji-assets/css/reader-serenity.css"><link rel="apple-touch-icon" href="japji-assets/icon-180.png">
+<script src="appearance.js"></script>
+<link rel="stylesheet" href="japji-assets/css/japji-full.css"><link rel="stylesheet" href="japji-assets/css/reader-serenity.css"><link rel="stylesheet" href="appearance.css"><link rel="apple-touch-icon" href="japji-assets/icon-180.png">
 </head>
 <body data-depth="read">
 <a class="skip" href="#continuous-reader">Skip to Gurbani</a>
-<header class="page-header"><a href="index.html" class="brand" aria-label="Return to Gurbani Learning Library home">GURBANI <span>LEARNING LIBRARY</span></a><button id="explore" type="button">Explore ↗</button></header>
+<header class="page-header appearance-header"><a href="index.html" class="brand" aria-label="Return to Gurbani Learning Library home">GURBANI <span>LEARNING LIBRARY</span></a><div class="appearance-controls" role="group" aria-label="Color appearance"><button type="button" data-appearance="day" aria-pressed="true">Light</button><button type="button" data-appearance="amrit" aria-pressed="false">Dark</button></div><button id="explore" type="button">Explore ↗</button></header><span id="appearance-status" class="sr-only" role="status" aria-live="polite"></span>
 <main>
 <section class="intro"><p class="eyebrow">ONE CONTINUOUS READING</p><h1>Japji Sahib <span lang="pa">ਜਪੁਜੀ ਸਾਹਿਬ</span></h1><p>Mool Mantar to the closing Salok · 38 pauris</p></section>
 <p id="mode-description" class="sr-only">Gurmukhi only. One continuous reading.</p>

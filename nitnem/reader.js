@@ -5,7 +5,7 @@
 (()=>{
 'use strict';
 const EXPECTED_LIBRARY='b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a';
-const EXPECTED_LEARNING='ba32eb65d0592738160ab1cece6e59ca01d608b80026a10ae3c51f80e9a59e28';
+const EXPECTED_LEARNING='dde70081af4576620da500b712a7c8eb1c5c4ea1e35753b7ccdfb0a0bc755d69';
 const EXPECTED_SOURCE_COMMIT='373ccc34f4a1c0ccb6ce36654bf6e9574087200f';
 const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
@@ -69,7 +69,7 @@ async function verifyPack(x,entry,name){
  return x;
 }
 async function teachingCourse(pack){
- const course=await jsonBytes('learning/course.v10.json',EXPECTED_LEARNING);
+ const course=await jsonBytes('learning/course.v11.json',EXPECTED_LEARNING);
  if(course?.meta?.schema!=='GLP-NITNEM-TEACHING-DRAFT-V1'||
     course.meta.editorialStatus!=='DRAFT_AI_UNREVIEWED'||
     course.meta.publicationAllowed!==false||
@@ -114,7 +114,7 @@ function loadSaved(pack){
  }
  state.bookmarks=Array.isArray(saved.bookmarks)?saved.bookmarks.filter(id=>acceptable.has(id)).slice(0,2000):[];
  state.size=Number.isInteger(saved.size)&&saved.size>=24&&saved.size<=60?saved.size:30;
- state.theme=['day','amrit'].includes(saved.theme)?saved.theme:'day';
+ state.theme=window.GLP_APPEARANCE.adoptLegacy(saved.theme);
  state.pace=Number.isInteger(saved.pace)&&saved.pace>=50&&saved.pace<=200&&saved.pace%5===0?saved.pace:70;
  state.mode=['read','meaning','study'].includes(saved.mode)?saved.mode:'read';
  state.view=['continuous','passage'].includes(saved.view)?saved.view:'continuous';
@@ -155,6 +155,7 @@ function toggleMode(mode){
  save();
 }
 function applyStyle(){
+ state.theme=window.GLP_APPEARANCE.get();
  document.body.dataset.theme=state.theme;
  document.documentElement.style.setProperty('--gurmukhi-size',state.size+'px');
  $('size').value=String(state.size);$('size-value').textContent=state.size+'px';
@@ -342,7 +343,8 @@ function goUnit(unit,focus=false){
 function updateScrolledLine(){
  scrollTrackTimer=0;
  if(!state.sourceVerified||!state.model||state.view!=='continuous'||state.playing||performance.now()<programmaticUntil)return;
- const lines=state.model.lines,at=Math.max(120,Math.min(innerHeight*.22,300));
+ const headerBottom=document.querySelector('.appearance-header')?.getBoundingClientRect().bottom||0;
+ const lines=state.model.lines,at=Math.max(headerBottom+14,120,Math.min(innerHeight*.22,300));
  let lo=0,hi=lines.length-1;
  while(lo<hi){
   const mid=(lo+hi)>>1,el=lineNodes.get(lines[mid].id);
@@ -531,7 +533,7 @@ async function importLearning(file){
  throw Error('This is not the matching private-review bani and edition.');
  const parsed=C.normalise({...incoming.state,read:{id:incoming.state.lineId,offset:0}},state.model,state.units);
  state.notes=parsed.notes;state.bookmarks=parsed.bookmarks;
- state.size=parsed.size;state.theme=parsed.theme;
+ state.size=parsed.size;state.theme=window.GLP_APPEARANCE.get();
  const rawPace=Number(incoming.state?.pace);
  state.pace=Number.isInteger(rawPace)&&rawPace>=50&&rawPace<=200&&rawPace%5===0?rawPace:parsed.pace;
  state.mode=parsed.mode;state.view=['continuous','passage'].includes(incoming.state.view)?incoming.state.view:'continuous';state.index=state.model.byId.get(parsed.read.id)??0;state.unit=state.model.lines[state.index].unitIndex;
@@ -585,7 +587,8 @@ window.addEventListener('scroll',()=>{
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>toggleMode(b.dataset.mode)));
 $('play').addEventListener('click',toggleGuide);
 $('size').addEventListener('input',e=>{state.size=Number(e.target.value);applyStyle();save();});
-$('theme').addEventListener('change',e=>{state.theme=e.target.value;applyStyle();save();});
+$('theme').addEventListener('change',e=>window.GLP_APPEARANCE.set(e.target.value));
+window.addEventListener('glp:appearance',e=>{state.theme=e.detail.theme;$('theme').value=state.theme;});
 function setVisualPace(value){
  if(!Number.isFinite(value))return;
  const next=Math.max(50,Math.min(200,Math.round(value/5)*5));

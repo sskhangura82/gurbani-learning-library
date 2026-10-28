@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#f9f6ef">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#faf7ee" data-light="#faf7ee" data-dark="#101c25">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'self'">
 <title>ਪੂਰਾ ਨਿਤਨੇਮ · Gurbani Learning Library</title>
-<link rel="stylesheet" href="reader.css"><link rel="apple-touch-icon" href="../icons/icon-180.png">
+<script src="appearance.js"></script>
+<link rel="stylesheet" href="reader.css"><link rel="stylesheet" href="appearance.css"><link rel="apple-touch-icon" href="../icons/icon-180.png">
 </head>
 <body data-theme="day" data-mode="read">
 <a class="skip" href="#main">Skip to reading</a>
-<header class="library-header"><button type="button" id="library-back" aria-label="Return to the Nitnem collection" hidden>← Library</button><a class="brand" href="index.html" aria-label="Gurbani Learning Library — Full Nitnem">GURBANI <span>LEARNING LIBRARY</span></a><span class="header-state">PRIVATE READER BETA</span></header>
+<header class="library-header appearance-header"><button type="button" id="library-back" aria-label="Return to the Nitnem collection" hidden><span aria-hidden="true">←</span></button><a class="brand" href="index.html" aria-label="Gurbani Learning Library — Full Nitnem">GURBANI <span>LEARNING LIBRARY</span></a><span class="header-state">PRIVATE READER BETA</span><div class="appearance-controls" role="group" aria-label="Color appearance"><button type="button" data-appearance="day" aria-pressed="true">Light</button><button type="button" data-appearance="amrit" aria-pressed="false">Dark</button></div></header><span id="appearance-status" class="sr-only" role="status" aria-live="polite"></span>
 <main id="main">
 <section id="collection" class="collection" aria-labelledby="collection-title">
  <div class="collection-intro"><p class="symbol" lang="pa">ੴ</p><p class="eyebrow">OUR DAILY PRACTICE · ONE LIBRARY</p><h1 id="collection-title" lang="pa">ਪੂਰਾ ਨਿਤਨੇਮ</h1><p class="lead">Full Nitnem. Morning, evening and night.</p><p class="lede">Read each bani here, without being sent to another website. Japji Sahib keeps its existing verified reader; the other six are original-text review candidates inside the same library.</p></div>
@@ -55,7 +56,7 @@
 <dialog id="jump-dialog" aria-labelledby="jump-title"><div class="dialog-heading"><h2 id="jump-title">Go to a passage</h2><button type="button" id="jump-close" aria-label="Close passage list">×</button></div><div id="jump-list" class="jump-list"></div></dialog>
 <dialog id="tools-dialog" aria-labelledby="tools-title"><div class="dialog-heading"><h2 id="tools-title">Reading tools</h2><button type="button" id="tools-close" aria-label="Close reading tools">×</button></div>
  <p id="tools-current" class="tools-current"></p>
- <div class="tools-group"><button type="button" id="bookmark">☆ Save current line</button><label for="size">Gurmukhi size <output id="size-value">30px</output></label><input type="range" id="size" min="24" max="60" step="2" value="30"><label for="theme">Reading appearance</label><select id="theme"><option value="day">Day · warm paper</option><option value="amrit">Amrit · dark ink</option></select><label for="pace">Silent visual pace <output id="pace-value">70</output> tokens/min</label><input id="pace" type="range" min="50" max="200" step="5" value="70" aria-label="Silent visual guide pace from 50 to 200 tokens per minute"><p class="hint">Visual word-guide pace only · not a recording or audio-playback speed.</p></div>
+ <div class="tools-group"><button type="button" id="bookmark">☆ Save current line</button><label for="size">Gurmukhi size <output id="size-value">30px</output></label><input type="range" id="size" min="24" max="60" step="2" value="30"><label for="theme">Reading appearance</label><select id="theme"><option value="day">Light · warm paper</option><option value="amrit">Dark · Amrit</option></select><label for="pace">Silent visual pace <output id="pace-value">70</output> tokens/min</label><input id="pace" type="range" min="50" max="200" step="5" value="70" aria-label="Silent visual guide pace from 50 to 200 tokens per minute"><p class="hint">Visual word-guide pace only · not a recording or audio-playback speed.</p></div>
  <div class="tools-group"><label for="note">Your private reflection about the current original line</label><textarea id="note" rows="5" maxlength="12000" placeholder="Write only what you choose to save on this device."></textarea><button id="save-note" type="button">Save reflection locally</button><p id="save-status" role="status" aria-live="polite"></p></div>
  <div class="tools-group"><button id="export-learning" type="button">Export my test learning</button><label for="import-learning" class="import-label">Import my test learning</label><input id="import-learning" type="file" accept="application/json,.json"><p class="hint">Test learning stays under separate keys for each bani/edition. It does not overwrite Japji learning.</p></div>
 </dialog>

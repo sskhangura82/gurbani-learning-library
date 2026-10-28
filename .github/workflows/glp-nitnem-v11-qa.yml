@@ -1,0 +1,48 @@
+name: Full Nitnem V11 Jaap Chhands 31-45 (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-jaap-31-45-theme-20261028
+  pull_request:
+    paths:
+      - 'tools/nitnem/**'
+      - 'nitnem/**'
+      - 'tests/nitnem-v11-*'
+      - 'tests/serve-gated-nitnem-v11.py'
+      - 'tests/nitnem-worker-lifecycle.mjs'
+      - 'tests/nitnem-appearance.mjs'
+      - '.github/workflows/glp-nitnem-v11-qa.yml'
+permissions:
+  contents: read
+jobs:
+  source-and-private-reader:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce immutable courses and preserve original source
+        run: |
+          node tools/nitnem/build-learning-pack-v10.mjs
+          node tools/nitnem/build-learning-pack-v11.mjs
+          git diff --exit-code -- nitnem/data nitnem/learning/course.v10.json nitnem/learning/course.v11.json
+      - name: Exact Jaap coverage and prior teaching preservation
+        run: node tests/nitnem-v11-contract.mjs
+      - name: Shared Light and Dark appearance behavior
+        run: node tests/nitnem-appearance.mjs
+      - name: Original Japji and saved-learning regression
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/service-worker.mjs
+      - name: Scoped worker integrity and lifecycle
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/nitnem-worker-lifecycle.mjs
+      - name: Immutable private review package and access gate
+        run: |
+          python3 tools/nitnem/build-full-nitnem-v11-reader.py --output "${{ runner.temp }}/nitnem-v11"
+          python3 tools/nitnem/build-full-nitnem-v11-reader.py --output "${{ runner.temp }}/nitnem-v11" --verify
+          python3 tests/nitnem-v11-gate-contract.py

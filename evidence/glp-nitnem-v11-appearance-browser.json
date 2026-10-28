@@ -1,0 +1,48 @@
+{
+  "status": "PASS_BOUNDED_CHROME_UI_CHECKS",
+  "checkedAtUtc": "2026-10-28T18:10:43.398367+00:00",
+  "environment": "Cloud Chrome; managed HTTP preview; collection and embedded Japji reader only",
+  "actualContentWidthsCssPx": [
+    375,
+    305
+  ],
+  "iframeOuterWidthsCssPx": [
+    390,
+    320
+  ],
+  "horizontalOverflow": false,
+  "appearanceButtonHeightCssPx": 44,
+  "appearanceButtonWidthCssPx": 52,
+  "checks": [
+    "Light and Dark visible without opening Reading Tools",
+    "Selected state exposed through aria-pressed",
+    "Dark persisted across reload",
+    "Choice carried from collection to embedded Japji",
+    "Same-origin second page updated through storage event",
+    "Header remained at top while scrolling in quiet Japji reading",
+    "Coordinate taps and native Tab/Return switched theme without moving the reading passage after scroll-padding fix",
+    "Narrow collection and Japji headers fit without horizontal overflow"
+  ],
+  "correctedDuringQA": [
+    "Root scroll padding caused keyboard focus on sticky controls to jump to page top; moved header offset to reading-target scroll margins",
+    "Removed appearance-triggered learning writes to prevent stale-tab overwrite",
+    "Retained system-following mode across reload without falsely adopting an automatically saved per-bani theme"
+  ],
+  "files": {
+    "appearance.css": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377",
+    "appearance.js": "64dafaea92554e904abd565b652b5b544ccb9b15ff3c63a7a3520217a95e5a5f",
+    "reader.js": "46b762f607182de34be48bc3203f9110c336bdf529757febed4db4de3e959e08",
+    "japji-assets/js/japji-full.js": "7a8ee5a2c0e36888f73130565afc4aae7a05fe2fbf00b2bd7db6a11710178570"
+  },
+  "screenshots": {
+    "nitnem-v11-light-preview-20261028.jpg": "e690c19abf4292b0d21768f140bebd101a6d142bc929af8a74d7e8797368a00a",
+    "nitnem-v11-dark-preview-20261028.jpg": "875ecdc47acc0248953b13aa3280f3a5bfda7a9330c13ef222bc36724100a870"
+  },
+  "limitations": [
+    "Six additional source readers cannot initialize in the managed HTTP browser because crypto.subtle is unavailable; integrity checks were not weakened",
+    "Six-bani source identity and the new Jaap lesson rendering exercised separately in Node contracts",
+    "Playwright locator clicks can auto-scroll before clicking sticky controls; direct coordinate taps and native keyboard events were used for position stability",
+    "Physical iPhone, Safari, VoiceOver and real offline behavior remain unverified",
+    "Appearance is local to the browser origin; shared preference transfer through learning backups is not claimed"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "checkedAtUtc": "2026-10-28T18:11:34.217930+00:00",
+  "status": "PASS_CANDIDATE_AWAITING_PRIVATE_ACTIVATION",
+  "courseSHA256": "dde70081af4576620da500b712a7c8eb1c5c4ea1e35753b7ccdfb0a0bc755d69",
+  "sourceReviewReceiptSHA256": "6dee033f5f00efd37f689d54eb1f73051e7ab65d401586b267f6f6c80643f0f9",
+  "newLineDrafts": 60,
+  "newStudyLessons": 15,
+  "sourceRecordsCovered": 755,
+  "studyLessons": 172,
+  "jaapSourceRecordsCovered": 182,
+  "jaapStudyLessons": 45,
+  "previousNotesUnchanged": 695,
+  "previousStudiesUnchanged": 157,
+  "earlierCourseFilesPreserved": 10,
+  "qualifiedHumanReviews": 0,
+  "anandPauri24Held": true,
+  "tests": {
+    "sourceTeachingRenderingContract": 12,
+    "appearanceControllerAndReaderIntegration": 14,
+    "privateWorkerLifecycle": 7,
+    "rootJapji": 27,
+    "sharedLearning": 12,
+    "rootServiceWorker": 8,
+    "syntheticPrivateGateway": 471,
+    "immutablePackageAssets": 42
+  },
+  "reproducible": [
+    "course.v10.json",
+    "course.v11.json",
+    "nitnem/sw.js"
+  ],
+  "browserStatus": "Bounded cloud Chrome checks passed for collection and embedded Japji, including phone-width layouts. Six additional reader initialization blocked by insecure HTTP crypto limitation; no physical-device claim. See appearance-browser receipt.",
+  "privateDeploymentStatus": "PENDING",
+  "publicAudienceChanged": false,
+  "publicJapjiUnchanged": true
+}

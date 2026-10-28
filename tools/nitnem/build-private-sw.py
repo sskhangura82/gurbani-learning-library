@@ -9,8 +9,8 @@ parser.add_argument('--previous-worker-sha256',help='Explicitly advance only thi
 args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[2]/'nitnem'
 FILES=[
- 'index.html','reader.css','reader.js','continuous-core.js',
- 'learning/learning-ui.js','learning/course.v1.json','learning/course.v2.json','learning/course.v3.json','learning/course.v4.json','learning/course.v5.json','learning/course.v6.json','learning/course.v7.json','learning/course.v8.json','learning/course.v9.json','learning/course.v10.json',
+ 'index.html','reader.css','reader.js','appearance.js','appearance.css','continuous-core.js',
+ 'learning/learning-ui.js','learning/course.v1.json','learning/course.v2.json','learning/course.v3.json','learning/course.v4.json','learning/course.v5.json','learning/course.v6.json','learning/course.v7.json','learning/course.v8.json','learning/course.v9.json','learning/course.v10.json','learning/course.v11.json',
  'trust/index.html','trust/corrections.html','trust/trust.css',
  'data/library.json','data/jaap.json','data/savaiye.json','data/chaupai.json',
  'data/anand.json','data/rehras.json','data/sohila.json',
