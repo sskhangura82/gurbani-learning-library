@@ -4,7 +4,7 @@
 
 **Source branch:** `feature/glp-jaap-46-60-20261028`
 
-**Status:** Content and local release checks passed. Mac, CI and private delivery verification are pending activation; teaching remains unreviewed educational draft material.
+**Status:** Active in the existing private reader as of **1:18 p.m. PDT, October 28, 2026**. Local, hosting Mac, GitHub and authenticated HTTPS checks passed. Teaching remains unreviewed educational draft material.
 
 ## Teaching increment
 
@@ -43,7 +43,7 @@ The separate V12 package contains 43 assets in its own cache namespace. Its gate
 
 ## Verification and delivery
 
-All local checks below passed. The local sandbox initially prevented the gateway test from binding its loopback socket; the same bounded synthetic test passed with the required execution permission. Mac, CI and private HTTPS outcomes are pending. The detailed release receipt is `evidence/glp-nitnem-v12-validation.json`.
+All local checks below passed. The content, appearance, worker and gateway checks also passed on the hosting Mac. [GitHub Actions run 40761867242](https://github.com/sskhangura82/gurbani-learning-library/actions/runs/40761867242) passed for the exact deployed source commit. The local sandbox initially prevented the gateway test from binding its loopback socket; the same bounded synthetic test passed with the required execution permission. The detailed release receipt is `evidence/glp-nitnem-v12-validation.json`.
 
 | Gate | Count | Local result |
 | --- | ---: | --- |
@@ -65,7 +65,17 @@ The V11 and V12 courses and the generated private worker reproduce their recorde
 
 This content increment does not introduce a new browser walkthrough. The unchanged appearance assets retain their bounded V11 browser evidence; the new teaching receives source, rendering and package checks. Physical iPhone, Safari, VoiceOver and real offline behavior remain unverified.
 
-No invitation token, session cookie, private hostname or operational process identifier belongs in this document. Deployment will preserve the existing invitation, authentication configuration, tunnel and audience, and retain the previous snapshot for rollback.
+## Private deployment receipt
+
+The active versioned route is `/nitnem-learning-v12/`. The existing invitation now redirects there. Its authentication configuration, cookie protections, tunnel and audience are unchanged. All **478 previous snapshot files**, including **445 earlier extra allowlisted assets**, were preserved byte for byte. The V11 snapshot remains available for rollback.
+
+- **Deployed source commit:** `ec1c3ec3706a0843f96404f0c632fe73cc3bd2a5`
+- **Deployment:** October 28, 2026, 1:18 p.m. PDT.
+- **Staging:** All 488 extra routes passed authenticated exact-byte delivery checks.
+- **Live delivery:** Ten representative current and historical assets passed exact-byte checks on both loopback and HTTPS, including the new course, reader, worker and preserved appearance assets.
+- **Access protection:** Anonymous requests returned 401; the existing invitation returned the expected 303 redirect, with Secure, HttpOnly and SameSite cookie flags retained.
+
+The initially requested staging port was occupied. The completed immutable snapshot was reverified and served on an OS-assigned loopback port, leaving the existing listener untouched. No invitation token, session cookie, private hostname or operational process identifier is recorded here.
 
 ## Continuation
 

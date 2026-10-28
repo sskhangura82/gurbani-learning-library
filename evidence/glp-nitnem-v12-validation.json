@@ -1,6 +1,6 @@
 {
   "checkedAtUtc": "2026-10-28T20:16:06.452645+00:00",
-  "status": "PASS_LOCAL_READY_FOR_PRIVATE_STAGING",
+  "status": "PASS_PRIVATE_PREVIEW_ACTIVE",
   "courseSHA256": "431642c41ce9634643f115737d63dd6067a2c2fe16eba7a29302134ce41e3d3b",
   "sourceReviewReceiptSHA256": "9a349cdc30d05f5d2bfe1e27cb5790acc38f6671426a52a33cb62f8a2c8dff71",
   "newLineDrafts": 46,
@@ -34,7 +34,50 @@
   "appearanceAssetsByteIdenticalToV11": true,
   "gatewayLogicUnchangedExceptExplicitAllowlistAndLandingRedirect": true,
   "browserStatus": "No new browser walkthrough for this content-only increment. Actual learning renderer exercised for all 46 notes and 15 Study lessons. Unchanged appearance assets retain bounded V11 browser evidence only; physical-device acceptance remains pending.",
-  "privateDeploymentStatus": "PENDING",
+  "privateDeploymentStatus": "PRIVATE_PREVIEW_ACTIVE",
   "publicAudienceChanged": false,
-  "publicJapjiUnchanged": true
+  "publicJapjiUnchanged": true,
+  "deployedSourceCommit": "ec1c3ec3706a0843f96404f0c632fe73cc3bd2a5",
+  "deployedAtUtc": "2026-10-28T20:18:29.848734+00:00",
+  "deployedAtLocal": "2026-10-28T13:18:29.848734-07:00",
+  "privateReaderPath": "/nitnem-learning-v12/index.html",
+  "historicalPreservation": {
+    "previousSnapshotFiles": 478,
+    "previousExtraAllowlistedAssets": 445,
+    "rootManifestAssets": 33,
+    "allUnchanged": true
+  },
+  "privateDeliveryVerification": {
+    "stagedAuthenticatedExtraAssets": 488,
+    "newVersionAssets": 43,
+    "liveLocalRepresentativeAssets": 10,
+    "liveHTTPSRepresentativeAssets": 10,
+    "anonymousStatus": 401,
+    "invitationRedirectStatus": 303,
+    "cookieFlagsVerified": [
+      "Secure",
+      "HttpOnly",
+      "SameSite=Lax"
+    ],
+    "existingInvitationRetained": true,
+    "existingAuthenticationConfigurationRetained": true,
+    "existingTunnelRetained": true
+  },
+  "hostingMacChecks": {
+    "sourceTeachingRenderingContract": 14,
+    "appearanceControllerAndReaderIntegration": 14,
+    "privateWorkerLifecycle": 7,
+    "syntheticPrivateGateway": 514,
+    "immutablePackageAssets": 43,
+    "status": "PASS"
+  },
+  "rollbackSnapshotPreserved": true,
+  "githubActions": {
+    "runId": 40761867242,
+    "sourceCommit": "ec1c3ec3706a0843f96404f0c632fe73cc3bd2a5",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow": "Full Nitnem V12 Jaap Chhands 46-60 (nondeploying)"
+  },
+  "stagingRecovery": "The requested staging port was already occupied. The prepared immutable snapshot was reverified and served on an OS-assigned loopback port; the existing listener was left untouched."
 }
