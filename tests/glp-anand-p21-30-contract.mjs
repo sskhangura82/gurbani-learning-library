@@ -114,8 +114,8 @@ check('Honest coverage grows to 337/1361 line notes and 94/327 deep source-unit 
 });
 check('Live preview is tied to V6 immutable bytes and no external AI/scripture endpoint',()=>{
  const s=buf('nitnem/reader.js').toString('utf8');
- assert.ok(s.includes("const EXPECTED_LEARNING='"+sha(buf('nitnem/learning/course.v7.json'))+"'"));
- assert.ok(s.includes("jsonBytes('learning/course.v7.json',EXPECTED_LEARNING)"));
+ assert.ok(s.includes("const EXPECTED_LEARNING='"+sha(buf('nitnem/learning/course.v8.json'))+"'"));
+ assert.ok(s.includes("jsonBytes('learning/course.v8.json',EXPECTED_LEARNING)"));
  assert.ok(s.includes('Gurmukhi occurrence hash changed'));
  assert.ok(!s.includes('fetch("https://'));
 });

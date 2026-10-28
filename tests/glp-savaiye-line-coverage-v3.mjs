@@ -114,8 +114,8 @@ check('New source editor cannot substitute Rehras evening Savaiya for morning Sr
 });
 check('No runtime external translation calls; pinned course SHA and original immutability checks retained',()=>{
  const script=text('nitnem/reader.js');
- assert.ok(script.includes("const EXPECTED_LEARNING='"+sha(buf('nitnem/learning/course.v7.json'))+"'"));
- assert.ok(script.includes("jsonBytes('learning/course.v7.json',EXPECTED_LEARNING)"));
+ assert.ok(script.includes("const EXPECTED_LEARNING='"+sha(buf('nitnem/learning/course.v8.json'))+"'"));
+ assert.ok(script.includes("jsonBytes('learning/course.v8.json',EXPECTED_LEARNING)"));
  assert.ok(script.includes('Gurmukhi occurrence hash changed'));
  assert.ok(!script.includes('fetch("https://'));
 });

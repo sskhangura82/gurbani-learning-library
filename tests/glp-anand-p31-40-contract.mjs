@@ -119,8 +119,8 @@ check('V7 audit retains source custody, DRAFT editor and no family/public releas
 });
 check('Reader loads exactly hashed V7, and does not call third-party text or AI service',()=>{
  const s=raw('nitnem/reader.js').toString('utf8');
- assert.ok(s.includes("const EXPECTED_LEARNING='"+sha(raw('nitnem/learning/course.v7.json'))+"'"));
- assert.ok(s.includes("jsonBytes('learning/course.v7.json',EXPECTED_LEARNING)"));
+ assert.ok(s.includes("const EXPECTED_LEARNING='"+sha(raw('nitnem/learning/course.v8.json'))+"'"));
+ assert.ok(s.includes("jsonBytes('learning/course.v8.json',EXPECTED_LEARNING)"));
  assert.ok(s.includes('Gurmukhi occurrence hash changed'));
  assert.ok(!s.includes('fetch("https://'));
 });

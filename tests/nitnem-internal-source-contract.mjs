@@ -120,7 +120,7 @@ test('Internal page contains zero third-party scripture links or remote script s
  assert.ok(!/<iframe\b/i.test(page));
 });
 test('Scoped second service worker does not replace or delete Japji root cache',()=>{
- assert.equal(sha(read('nitnem/sw.js')),'741f7e4276ebe2e780a7a3d6e9cd0b906fd3d734bca61279514048e18cb49bc1');
+ assert.equal(sha(read('nitnem/sw.js')),'9d8a611d4e969a96f0a0bd4a08e1a509292c2fa933bea88caae5181307fa05eb');
  assert.ok(sw.includes('glp-nitnem-source-review:'));
  assert.ok(!sw.includes('glp-static:'));
  assert.ok(sw.includes('new URL("./",self.location.href)'));
@@ -130,7 +130,7 @@ test('Cache manifest covers all six data JSON assets and exact 11 QA app files',
  const m=sw.match(/^const EXPECTED=(\{[^\n]+\});/m);
  assert.ok(m);
  const expected=JSON.parse(m[1]);
- assert.equal(Object.keys(expected).length,35);
+ assert.equal(Object.keys(expected).length,36);
  assert.ok(expected['./trust/index.html']);
  assert.ok(expected['./trust/corrections.html']);
  assert.ok(expected['./trust/trust.css']);
