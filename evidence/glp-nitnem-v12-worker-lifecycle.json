@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": 7,
+  "failed": 0,
+  "environment": "Node VM with real local assets and in-memory caches; no physical-device offline claim",
+  "results": [
+    {
+      "name": "Install verifies and caches every real manifest asset without automatic activation",
+      "status": "PASS"
+    },
+    {
+      "name": "Activation uses its event argument, removes only older own caches, and claims clients",
+      "status": "PASS"
+    },
+    {
+      "name": "Offline fetch returns exact cached original bytes even with a query string",
+      "status": "PASS"
+    },
+    {
+      "name": "Only same-scope GET requests are intercepted; an uncached request uses the network",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt asset rejects installation and deletes only the incomplete new cache",
+      "status": "PASS"
+    },
+    {
+      "name": "missing asset rejects installation and deletes only the incomplete new cache",
+      "status": "PASS"
+    },
+    {
+      "name": "Only the explicit private Nitnem update message requests skipWaiting",
+      "status": "PASS"
+    }
+  ]
+}

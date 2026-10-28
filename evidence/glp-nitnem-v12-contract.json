@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "failed": 0,
+  "sourceRecords": 801,
+  "studyLessons": 187,
+  "newLineDrafts": 46,
+  "newStudyLessons": 15,
+  "previousNotesPreserved": 755,
+  "previousStudiesPreserved": 172,
+  "humanReviewed": 0,
+  "heldAnand24": true,
+  "environment": "Node source/hash checks and real renderer with DOM stub; no browser/device claim",
+  "results": [
+    {
+      "name": "All eleven earlier course snapshots keep their released byte hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned manifest and all six original packs preserve every source occurrence and review status",
+      "status": "PASS"
+    },
+    {
+      "name": "All 755 previous notes, 172 previous studies and the editorial/reuse evidence are identical",
+      "status": "PASS"
+    },
+    {
+      "name": "The increment is exactly 46 Jaap notes and 15 studies for Chhands 46 through 60",
+      "status": "PASS"
+    },
+    {
+      "name": "Longer paired lines keep their frozen two-record grouping without inflating coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated sun and honour addresses retain the same main explanation in both languages",
+      "status": "PASS"
+    },
+    {
+      "name": "Every new explanation has exact source identity, both languages and explicit unreviewed status",
+      "status": "PASS"
+    },
+    {
+      "name": "Each new Study is substantive, source-anchored and uses vocabulary present in its own chhand",
+      "status": "PASS"
+    },
+    {
+      "name": "Totals reconcile to 801 notes and 187 studies; every other bani retains the previous coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "Anand Pauri 24 remains fully withheld and Jaap 61 onward remains pending",
+      "status": "PASS"
+    },
+    {
+      "name": "Research references and alternative-reading notes never confer human approval",
+      "status": "PASS"
+    },
+    {
+      "name": "The real renderer exposes all new notes and studies while Read stays clear and wrong hashes fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "The active course, unchanged learning renderer and public Japji remain pinned",
+      "status": "PASS"
+    },
+    {
+      "name": "The worker pins all twelve course files and every active offline asset to current bytes",
+      "status": "PASS"
+    }
+  ]
+}

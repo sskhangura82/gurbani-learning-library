@@ -1,0 +1,918 @@
+{
+  "schema": "GLP-001-JAAP-46-52-RESEARCH-V1",
+  "recordedAtUtc": "2026-10-28 20:06:00 UTC",
+  "status": "ASSISTANT_RESEARCH_FOR_UNREVIEWED_EDUCATIONAL_DRAFTS",
+  "humanReviewed": false,
+  "qualifiedReviewClaimed": false,
+  "sourceCorrectionApplied": false,
+  "scope": {
+    "bani": "jaap",
+    "unitIds": [
+      "jaap046",
+      "jaap047",
+      "jaap048",
+      "jaap049",
+      "jaap050",
+      "jaap051",
+      "jaap052"
+    ],
+    "newLineDrafts": 24,
+    "newStudyDrafts": 7,
+    "sourceRecordCounts": {
+      "jaap046": 4,
+      "jaap047": 4,
+      "jaap048": 4,
+      "jaap049": 4,
+      "jaap050": 2,
+      "jaap051": 2,
+      "jaap052": 4
+    },
+    "manuscriptPath": "tools/nitnem/jaap-chhands46-52-drafts.mjs",
+    "manuscriptSha256": "c573c4466d1ccf67e83ddb22328249648187d3c14adf01ec27fbcc36bf567af4",
+    "exports": [
+      "jaap46to52Lines",
+      "jaap46to52Deep"
+    ],
+    "baselineCoursePath": "nitnem/learning/course.v11.json",
+    "baselineCourseSha256": "dde70081af4576620da500b712a7c8eb1c5c4ea1e35753b7ccdfb0a0bc755d69",
+    "baselineCoverage": {
+      "sourceRecords": 755,
+      "studyLessons": 172
+    }
+  },
+  "sourceBasis": {
+    "sourcePackPath": "nitnem/data/jaap.json",
+    "sourcePackFileSha256": "3ac2bbf35e91d1d626a0a4c45c8059857c01bed1368f378bef5d06741422fecb",
+    "upstreamOriginalCandidateSha256": "271b9b5f53d9630733b04dcf78b30bb77331fc5f46253b9b519f64545c2b9fc6",
+    "upstreamRepositoryCommit": "373ccc34f4a1c0ccb6ce36654bf6e9574087200f",
+    "editionId": "jaap-199-digital-original-candidate-20261025",
+    "sourceStatus": "DIGITAL_ORIGINAL_CANDIDATE_UNAPPROVED",
+    "retainedGlobalCaveat": "Digital source; 67 chhand-group discrepancies await review",
+    "humanCollationApproved": false,
+    "translationApproved": false,
+    "rightsCleared": false,
+    "publishedAsFamilyScripture": false,
+    "sourceAnchors": [
+      {
+        "unitId": "jaap046",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap046.line01",
+            "sourceSha256": "d5d86316e56c1663b1bfe69bef0e0375f94d102bec09a2a96f7249621fe40cb7",
+            "held": false
+          },
+          {
+            "lineId": "jaap046.line02",
+            "sourceSha256": "77457db0851e58ad043a91404bc4826c0455d1f22443dce66d2ab47eb011c356",
+            "held": false
+          },
+          {
+            "lineId": "jaap046.line03",
+            "sourceSha256": "efd8e1f989f5047b4745236c6a1687aea3d19cb4fa28fd5301a31c8139f3ca21",
+            "held": false
+          },
+          {
+            "lineId": "jaap046.line04",
+            "sourceSha256": "24c00c952d9252a538db5a5df8b83deb667d53dc59a9e93409ba19c2005a1ccc",
+            "held": false
+          }
+        ]
+      },
+      {
+        "unitId": "jaap047",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap047.line01",
+            "sourceSha256": "b8d44aba0b9854a56608b25202c00fc0ad6e806214e2e62ebeca1f1b465385f8",
+            "held": false
+          },
+          {
+            "lineId": "jaap047.line02",
+            "sourceSha256": "efd8e1f989f5047b4745236c6a1687aea3d19cb4fa28fd5301a31c8139f3ca21",
+            "held": false
+          },
+          {
+            "lineId": "jaap047.line03",
+            "sourceSha256": "3530af798e7dc39dba81cadc93d6e70ce8dbf892ebfb46fec1c9465a2b39be94",
+            "held": false
+          },
+          {
+            "lineId": "jaap047.line04",
+            "sourceSha256": "b82e4fe0b31a456bebc98ea5459c43938bba5e7b2232eb43edadb4083463642a",
+            "held": false
+          }
+        ]
+      },
+      {
+        "unitId": "jaap048",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap048.line01",
+            "sourceSha256": "3af2a50628a366e0c1ad5bf66a32d98d20b3650bf4bd2aff6c4a893bedcf3e85",
+            "held": false
+          },
+          {
+            "lineId": "jaap048.line02",
+            "sourceSha256": "87e5cca474c6812a9fd3b812de06d25edabbee482ad80960108cfd5b5b13664f",
+            "held": false
+          },
+          {
+            "lineId": "jaap048.line03",
+            "sourceSha256": "96a6eef48925e334fb2379bda3fc0b79cc5bafa7cc030c4caf4f4f1db95f8256",
+            "held": false
+          },
+          {
+            "lineId": "jaap048.line04",
+            "sourceSha256": "146c782ae32cde175f5f2ab2fb6ea81f196f25d499fd5d0f0cad4035169bc1a1",
+            "held": false
+          }
+        ]
+      },
+      {
+        "unitId": "jaap049",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap049.line01",
+            "sourceSha256": "cdc4b2cfd877ad2c225edd3cfe22aef66cba93eb0b17e656ba07d364b838e87f",
+            "held": false
+          },
+          {
+            "lineId": "jaap049.line02",
+            "sourceSha256": "1def3f5500c3d4b1f8512ab5472f33194072306bae0bcec38b6f320f302c05a0",
+            "held": false
+          },
+          {
+            "lineId": "jaap049.line03",
+            "sourceSha256": "abdbf338e1062fde82b7858f3a3fc88a2d3000eef2c68b293469b5b2fdbf35db",
+            "held": false
+          },
+          {
+            "lineId": "jaap049.line04",
+            "sourceSha256": "e422eb18694d2aab8237023c1c6904cdccf2e115650719b4a997934143ba281a",
+            "held": false
+          }
+        ]
+      },
+      {
+        "unitId": "jaap050",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap050.line01",
+            "sourceSha256": "87e5acef8acc3c55e64cd80b77a8f7c8c3fcba01c1ecf39affb8b5a09a9b4cfb",
+            "held": false
+          },
+          {
+            "lineId": "jaap050.line02",
+            "sourceSha256": "70a1cab2260b93031d8c998cb63f2577498c3611533e94f834e332e757e5825b",
+            "held": false
+          }
+        ]
+      },
+      {
+        "unitId": "jaap051",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap051.line01",
+            "sourceSha256": "3eca513e92f3b3474561c718317192cb05201f8f1a3d8babcea76d6f3b8a60e9",
+            "held": false
+          },
+          {
+            "lineId": "jaap051.line02",
+            "sourceSha256": "1863a898804f5d641edfc89310c9d9be501181a12b8141d2034b93c80e2b9b13",
+            "held": false
+          }
+        ]
+      },
+      {
+        "unitId": "jaap052",
+        "metricalHeadings": [],
+        "lines": [
+          {
+            "lineId": "jaap052.line01",
+            "sourceSha256": "a1b07ac7d278127d29cfb10f9d09f99675edc3ace22470a2166e659508d579ef",
+            "held": false
+          },
+          {
+            "lineId": "jaap052.line02",
+            "sourceSha256": "28e6784cae0bf1e05b62c62821d87c015f5fa480a5497f7d3507a347225c4911",
+            "held": false
+          },
+          {
+            "lineId": "jaap052.line03",
+            "sourceSha256": "257d974c480b820fd8dc1a0e6820315864a6f1b34c9619e27334dc1322c842cf",
+            "held": false
+          },
+          {
+            "lineId": "jaap052.line04",
+            "sourceSha256": "f26b354275506e81a8eff2f81af69b645f47294692a164c52ee2362b0860dfab",
+            "held": false
+          }
+        ]
+      }
+    ]
+  },
+  "batchComparison": {
+    "ledgerPath": "docs/research/n3-dasam-jaap/jaap-text-discrepancy-ledger.json",
+    "retrievedReadOnlyFromCommit": "373ccc34f4a1c0ccb6ce36654bf6e9574087200f",
+    "ledgerFileSha256": "68a8664a6469b0bb637823d4789d1a7ff5dd8f8fb1877a760a398a11b685939d",
+    "capturedAtUtc": "2026-10-25T19:55:54.136666+00:00",
+    "primaryUrl": "https://gurdwaras.com/nitnem/jaap-sahib",
+    "comparatorUrl": "https://www.discoversikhism.com/learn_gurbani/learn_jaap_sahib.html",
+    "sourceSitesTextLineageIndependent": "UNVERIFIED",
+    "method": "199 numbered original chhand groups; optional removal of exact same printed meter headings in SECOND SITE COMPARISON ONLY; Unicode NFC plus whitespace removal; original text unchanged",
+    "matchingGroups": 7,
+    "localLedgerFlags": [],
+    "perChhandComparison": [
+      {
+        "chhand": 46,
+        "originalLines": 4,
+        "primaryChhandSourceSha256": "0b6cbab91b7b552ded3af6804473a3f4c0d2b98531094230559bb04006dbeda0",
+        "secondSiteChhandSourceSha256": "0b6cbab91b7b552ded3af6804473a3f4c0d2b98531094230559bb04006dbeda0",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "0b6cbab91b7b552ded3af6804473a3f4c0d2b98531094230559bb04006dbeda0",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      },
+      {
+        "chhand": 47,
+        "originalLines": 4,
+        "primaryChhandSourceSha256": "6d04dae79b68c37dd98097aa3ef65a0ce56fd9682be5f686fd62ed0e54ec772f",
+        "secondSiteChhandSourceSha256": "6d04dae79b68c37dd98097aa3ef65a0ce56fd9682be5f686fd62ed0e54ec772f",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "6d04dae79b68c37dd98097aa3ef65a0ce56fd9682be5f686fd62ed0e54ec772f",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      },
+      {
+        "chhand": 48,
+        "originalLines": 4,
+        "primaryChhandSourceSha256": "a2af6033699d7f43247c88f62b2cdd525e53415febedec71a06796e98371dd4a",
+        "secondSiteChhandSourceSha256": "a2af6033699d7f43247c88f62b2cdd525e53415febedec71a06796e98371dd4a",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "a2af6033699d7f43247c88f62b2cdd525e53415febedec71a06796e98371dd4a",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      },
+      {
+        "chhand": 49,
+        "originalLines": 4,
+        "primaryChhandSourceSha256": "ed35e0c2f9bd8510a146ef1383e0e7f5027887bb23bd4e709f269d61e490a45f",
+        "secondSiteChhandSourceSha256": "ed35e0c2f9bd8510a146ef1383e0e7f5027887bb23bd4e709f269d61e490a45f",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "ed35e0c2f9bd8510a146ef1383e0e7f5027887bb23bd4e709f269d61e490a45f",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      },
+      {
+        "chhand": 50,
+        "originalLines": 2,
+        "primaryChhandSourceSha256": "9f1c17e3e6e0c2893eca52275ee5352cd7876af2df45a12ada76dd5aadce8525",
+        "secondSiteChhandSourceSha256": "9f1c17e3e6e0c2893eca52275ee5352cd7876af2df45a12ada76dd5aadce8525",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "9f1c17e3e6e0c2893eca52275ee5352cd7876af2df45a12ada76dd5aadce8525",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      },
+      {
+        "chhand": 51,
+        "originalLines": 2,
+        "primaryChhandSourceSha256": "6111268402e01858afd40ff8b67767adbb445fd1c4927c24d120ff10d1067f2a",
+        "secondSiteChhandSourceSha256": "6111268402e01858afd40ff8b67767adbb445fd1c4927c24d120ff10d1067f2a",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "6111268402e01858afd40ff8b67767adbb445fd1c4927c24d120ff10d1067f2a",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      },
+      {
+        "chhand": 52,
+        "originalLines": 4,
+        "primaryChhandSourceSha256": "147fbd5b33c6a1c2beb1c878e1b7ae3d36e46f237dc0a49ad3d167432cff4caf",
+        "secondSiteChhandSourceSha256": "147fbd5b33c6a1c2beb1c878e1b7ae3d36e46f237dc0a49ad3d167432cff4caf",
+        "secondSiteTextWithoutExactHeadingPrefixSha256": "147fbd5b33c6a1c2beb1c878e1b7ae3d36e46f237dc0a49ad3d167432cff4caf",
+        "identicalUnicodeIgnoringWhitespace": true,
+        "exactHeadingPrefixesDroppedForComparisonOnly": [],
+        "requiresTextEditionAdjudication": false
+      }
+    ],
+    "scopeLimit": "All seven groups match in the pinned two-site comparison. This does not approve the edition, establish independent witness lineage, or remove the global 67-group caveat.",
+    "additionalCommentaryWitnessDifferences": [
+      {
+        "lineId": "jaap048.line01",
+        "frozenForm": "ਨ੍ਰਿੱਤ ਨ੍ਰਿੱਤੇ",
+        "commentaryWitnessForm": "ਨ੍ਰਿਤ ਨ੍ਰਿਤੇ",
+        "referenceKey": "jaap-bvs-46-60",
+        "kind": "ADDAK_VARIATION",
+        "action": "Frozen source retained; this commentary is not the pinned comparator."
+      },
+      {
+        "lineId": "jaap051.line02",
+        "frozenForm": "ਬ੍ਰਿਧੇ",
+        "commentaryWitnessForm": "ਬ੍ਰਿੱਧੇ",
+        "referenceKey": "jaap-bvs-46-60",
+        "kind": "ADDAK_VARIATION",
+        "action": "Frozen source retained."
+      },
+      {
+        "lineId": "jaap052.line03",
+        "frozenForm": "ਗਿਆਤਾ",
+        "commentaryWitnessForm": "ਗਯਾਤਾ",
+        "referenceKey": "jaap-bvs-46-60",
+        "kind": "ORTHOGRAPHIC_VARIATION",
+        "action": "Frozen source retained."
+      }
+    ]
+  },
+  "references": [
+    {
+      "key": "jaap-neki-46-60",
+      "title": "Jaswant Singh Neki, Basking in the Divine Presence: A Study of Jaap Sahib",
+      "url": "https://gurmatveechar.com/books/English_Books/Basking.in.the.Divine.Presence.-.A.Study.of.Jaap.Sahib.by.Jaswant.Singh.Neki.%28GurmatVeechar.com%29.pdf",
+      "sourceType": "Author's published commentary and poetic interpretation, digitised",
+      "locator": "Printed pages 38–40 / PDF indices 32–34, Chhands 46–52; printed page 42 / PDF index 36 for the repeated honour phrase at 56.",
+      "inspectionMethod": "Read the retrieved PDF text for the identified chhands. The web screenshot endpoint returned placeholders, so no visual-inspection claim is made for this PDF.",
+      "scope": "Short lexical and comparative checks. The poetic rendering is not treated as a literal dictionary or copied as the teaching prose."
+    },
+    {
+      "key": "jaap-rampurkhera-46-60",
+      "title": "Sant Sewa Singh, Nitnem Saral Steek, Gurdwara Rampur Khera",
+      "url": "https://www.rampurkhera.com/upload_images/10721569355a397ae221961.pdf",
+      "sourceType": "Punjabi commentary published by the author's institution",
+      "locator": "Printed pages 65–67 / PDF indices 72–74: 46 and first pair of 47 on page 65; remainder of 47 through 50 on page 66; 51–52 on page 67.",
+      "inspectionMethod": "Downloaded the public institutional PDF, rendered these original pages locally, and directly read the displayed Gurmukhi commentary and footnotes. Web screenshot placeholders and legacy-font extraction were not counted as visual inspection.",
+      "scope": "Primary Punjabi commentary comparison for the selected word senses. The original explanatory sentences and passages in the new lesson were authored afresh."
+    },
+    {
+      "key": "jaap-bvs-46-60",
+      "title": "Sikh Translations, Chh. #44–63 Bhujang Prayaath Chhand & Chaacharee Chhand",
+      "url": "https://www.sikhtranslations.com/chh/",
+      "sourceType": "Modern secondary rendering presented as Bhai Vir Singh-derived commentary",
+      "locator": "Chhands 46–52 and their footnotes; the repeated honour phrase at 56 is independently covered by the companion author.",
+      "inspectionMethod": "Read page text and relevant footnotes directly.",
+      "scope": "Alternative readings and witness spellings. The underlying printed Bhai Vir Singh edition was not directly inspected; no direct classic-edition attribution is invented."
+    },
+    {
+      "key": "jaap-mahankosh-pan-46-60",
+      "title": "Bhai Kahn Singh Nabha, Mahan Kosh: ਪਾਨ",
+      "url": "https://punjabi.com/dictionary/wordmeaning?search=ਪਾਨ",
+      "sourceType": "Historical Punjabi dictionary entry reproduced digitally",
+      "locator": "Mahan Kosh section, numbered sense 3 (ਪਾਣਿ / ਹੱਥ), distinct from the other dictionary sections below.",
+      "inspectionMethod": "Read the full historical entry and distinguish its listed homonyms.",
+      "scope": "Lexical corroboration for hand. There is no Jaap-specific citation in this sense; it does not settle the entire compound or alter frozen ਪਾਨ."
+    },
+    {
+      "key": "jaap-mahankosh-tan-46-60",
+      "title": "Bhai Kahn Singh Nabha, Mahan Kosh: ਤਾਨ",
+      "url": "https://punjabi.com/dictionary/wordmeaning?search=ਤਾਨ",
+      "sourceType": "Historical Punjabi dictionary entry reproduced digitally",
+      "locator": "Mahan Kosh section, musical expansion of notes; separately attributed modern Punjabi and Bhai Maya Singh sections follow.",
+      "inspectionMethod": "Read the historical section and identify the separate dictionary attributions.",
+      "scope": "Supports melodic movement. The power/strength gloss in the Maya Singh section is not attributed to Mahan Kosh."
+    },
+    {
+      "key": "jaap-mahankosh-astra-46-60",
+      "title": "Bhai Kahn Singh Nabha, Mahan Kosh: ਅਸਤ੍ਰ",
+      "url": "https://punjabi.com/dictionary/wordmeaning?search=ਅਸਤ੍ਰ",
+      "sourceType": "Historical Punjabi dictionary entry reproduced digitally",
+      "locator": "Opening Mahan Kosh definition of a projected weapon.",
+      "inspectionMethod": "Read the historical definition and distinguish the unrelated Maya Singh headword below.",
+      "scope": "Supplies the projected-weapon sense. Historical accounts of mantra weapons are outside the lesson and are not accepted as efficacy claims."
+    },
+    {
+      "key": "jaap-mahankosh-sastra-46-60",
+      "title": "Bhai Kahn Singh Nabha, Mahan Kosh: ਸਸਤ੍ਰ",
+      "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਸਸਤ੍ਰ",
+      "sourceType": "Historical Punjabi dictionary entry reproduced digitally",
+      "locator": "Mahan Kosh definition and four subclasses, including weapons held and weapons released.",
+      "inspectionMethod": "Read the short historical entry directly.",
+      "scope": "Shows that ਸਸਤ੍ਰ is broad and need not exclude ਅਸਤ੍ਰ. The lesson does not turn the pair into a mutually exclusive modern weapon taxonomy."
+    },
+    {
+      "key": "jaap-mahankosh-bibhut-46-60",
+      "title": "Bhai Kahn Singh Nabha, Mahan Kosh: ਬਿਭੂਤ",
+      "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਬਿਭੂਤ",
+      "sourceType": "Historical Punjabi dictionary entry reproduced digitally",
+      "locator": "Mahan Kosh section below the SGGS dictionaries: wealth/affluence first, ash second.",
+      "inspectionMethod": "Read the historical section directly and distinguish it from the newer dictionaries on the same page.",
+      "scope": "Lexical range for ਬਿਭੂਤੇ, not a Jaap-specific citation. The abundance reading is selected in the passage context."
+    }
+  ],
+  "lineChecks": [
+    {
+      "lineId": "jaap046.line01",
+      "sourceSha256": "d5d86316e56c1663b1bfe69bef0e0375f94d102bec09a2a96f7249621fe40cb7",
+      "term": "ਅਨੰਗੀ ਅਨਾਥੇ",
+      "selectedWorkingSense": "Bodiless and subject to no master",
+      "referenceKeys": [
+        "jaap-neki-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap046.line02",
+      "sourceSha256": "77457db0851e58ad043a91404bc4826c0455d1f22443dce66d2ab47eb011c356",
+      "term": "ਨ੍ਰਿਸੰਗੀ ਪ੍ਰਮਾਥੇ",
+      "selectedWorkingSense": "Independent of a companion; power of dissolution",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Churning rather than destruction",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ],
+          "scope": "A derivative commentary interpretation, not a source-word correction."
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap046.line03",
+      "sourceSha256": "efd8e1f989f5047b4745236c6a1687aea3d19cb4fa28fd5301a31c8139f3ca21",
+      "term": "ਭਾਨ ਭਾਨੇ",
+      "selectedWorkingSense": "Radiance that supplies the light of suns",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap046.line04",
+      "sourceSha256": "24c00c952d9252a538db5a5df8b83deb667d53dc59a9e93409ba19c2005a1ccc",
+      "term": "ਮਾਨ ਮਾਨੇ",
+      "selectedWorkingSense": "Honour of those who are honoured",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Neki's soul-of-reverence emphasis here and giver-of-honour emphasis at 56",
+          "referenceKeys": [
+            "jaap-neki-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap047.line01",
+      "sourceSha256": "b8d44aba0b9854a56608b25202c00fc0ad6e806214e2e62ebeca1f1b465385f8",
+      "term": "ਚੰਦ੍ਰ ਚੰਦ੍ਰੇ",
+      "selectedWorkingSense": "The moon image intensified through its gentle radiance",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap047.line02",
+      "sourceSha256": "efd8e1f989f5047b4745236c6a1687aea3d19cb4fa28fd5301a31c8139f3ca21",
+      "term": "ਭਾਨ ਭਾਨੇ",
+      "selectedWorkingSense": "Same selected sun-radiance sense as 46.03",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap047.line03",
+      "sourceSha256": "3530af798e7dc39dba81cadc93d6e70ce8dbf892ebfb46fec1c9465a2b39be94",
+      "term": "ਗੀਤ ਗੀਤੇ",
+      "selectedWorkingSense": "Song as a repeated image of inner essence and delight",
+      "referenceKeys": [
+        "jaap-neki-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap047.line04",
+      "sourceSha256": "b82e4fe0b31a456bebc98ea5459c43938bba5e7b2232eb43edadb4083463642a",
+      "term": "ਤਾਨ ਤਾਨੇ",
+      "selectedWorkingSense": "Melodic movement; the melody image intensified",
+      "referenceKeys": [
+        "jaap-mahankosh-tan-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Power, with an instrument-related footnote",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ],
+          "scope": "These are kept distinct from the selected musical reading; Mahan Kosh is not cited for the derivative page's power gloss."
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap048.line01",
+      "sourceSha256": "3af2a50628a366e0c1ad5bf66a32d98d20b3650bf4bd2aff6c4a893bedcf3e85",
+      "term": "ਨ੍ਰਿੱਤ ਨ੍ਰਿੱਤੇ",
+      "selectedWorkingSense": "Dance and its living rhythm",
+      "referenceKeys": [
+        "jaap-neki-46-60",
+        "jaap-rampurkhera-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Bliss and the world's churning",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ],
+          "scope": "A derivative expansion, not a requirement to perform a dance."
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap048.line02",
+      "sourceSha256": "87e5cca474c6812a9fd3b812de06d25edabbee482ad80960108cfd5b5b13664f",
+      "term": "ਨਾਦ ਨਾਦੇ",
+      "selectedWorkingSense": "Sound and resonance intensified",
+      "referenceKeys": [
+        "jaap-neki-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap048.line03",
+      "sourceSha256": "96a6eef48925e334fb2379bda3fc0b79cc5bafa7cc030c4caf4f4f1db95f8256",
+      "term": "ਪਾਨ ਪਾਨੇ",
+      "selectedWorkingSense": "The strength or capacity of hands",
+      "referenceKeys": [
+        "jaap-mahankosh-pan-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Drum-beating in a poetic musical rendering",
+          "referenceKeys": [
+            "jaap-neki-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap048.line04",
+      "sourceSha256": "146c782ae32cde175f5f2ab2fb6ea81f196f25d499fd5d0f0cad4035169bc1a1",
+      "term": "ਬਾਦ ਬਾਦੇ",
+      "selectedWorkingSense": "Music sounded through instruments",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap049.line01",
+      "sourceSha256": "cdc4b2cfd877ad2c225edd3cfe22aef66cba93eb0b17e656ba07d364b838e87f",
+      "term": "ਅਨੰਗੀ ਅਨਾਮੇ",
+      "selectedWorkingSense": "Bodiless; not exhausted by a descriptive name",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap049.line02",
+      "sourceSha256": "1def3f5500c3d4b1f8512ab5472f33194072306bae0bcec38b6f320f302c05a0",
+      "term": "ਸਮਸਤੀ ਸਰੂਪੇ",
+      "selectedWorkingSense": "Presence throughout all forms",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "All-pervasive beauty as a poetic emphasis",
+          "referenceKeys": [
+            "jaap-neki-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap049.line03",
+      "sourceSha256": "abdbf338e1062fde82b7858f3a3fc88a2d3000eef2c68b293469b5b2fdbf35db",
+      "term": "ਪ੍ਰਭੰਗੀ ਪ੍ਰਮਾਥੇ",
+      "selectedWorkingSense": "Breaking and bringing formed things to an end",
+      "referenceKeys": [
+        "jaap-neki-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Destruction directed toward ਦੋਖੀਆਂ, offenders or adversaries",
+          "referenceKeys": [
+            "jaap-rampurkhera-46-60"
+          ]
+        },
+        {
+          "sense": "Breaking paired with churning",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap049.line04",
+      "sourceSha256": "e422eb18694d2aab8237023c1c6904cdccf2e115650719b4a997934143ba281a",
+      "term": "ਸਮਸਤੀ ਬਿਭੂਤੇ",
+      "selectedWorkingSense": "All abundance and splendour rest in the One",
+      "referenceKeys": [
+        "jaap-mahankosh-bibhut-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Manifestation as a derivative emphasis",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap050.line01",
+      "sourceSha256": "87e5acef8acc3c55e64cd80b77a8f7c8c3fcba01c1ecf39affb8b5a09a9b4cfb",
+      "term": "ਕਲੰਕੰ ਬਿਨਾ ਨੇਕਲੰਕੀ ਸਰੂਪੇ",
+      "selectedWorkingSense": "Absence of blemish reiterated as unstained being",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap050.line02",
+      "sourceSha256": "70a1cab2260b93031d8c998cb63f2577498c3611533e94f834e332e757e5825b",
+      "term": "ਰਾਜ ਰਾਜੇਸ੍ਵਰੰ ਪਰਮ ਰੂਪੇ",
+      "selectedWorkingSense": "Sovereignty above rulers and supreme being",
+      "referenceKeys": [
+        "jaap-neki-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Radiance is more explicit in the Punjabi commentary",
+          "referenceKeys": [
+            "jaap-rampurkhera-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap051.line01",
+      "sourceSha256": "3eca513e92f3b3474561c718317192cb05201f8f1a3d8babcea76d6f3b8a60e9",
+      "term": "ਜੋਗ ਜੋਗੇਸ੍ਵਰੰ ਪਰਮ ਸਿੱਧੇ",
+      "selectedWorkingSense": "Mastery beyond yoga's masters and supreme spiritual perfection",
+      "referenceKeys": [
+        "jaap-neki-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Mastery over siddhis is explicit in the Punjabi commentary",
+          "referenceKeys": [
+            "jaap-rampurkhera-46-60"
+          ],
+          "scope": "A traditional term is explained without promising extraordinary powers."
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap051.line02",
+      "sourceSha256": "1863a898804f5d641edfc89310c9d9be501181a12b8141d2034b93c80e2b9b13",
+      "term": "ਰਾਜ ਰਾਜੇਸ੍ਵਰੰ ਪਰਮ ਬ੍ਰਿਧੇ",
+      "selectedWorkingSense": "Sovereignty and unsurpassed eminence",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Esteem as a poetic emphasis",
+          "referenceKeys": [
+            "jaap-neki-46-60"
+          ],
+          "scope": "None of these selected contextual readings makes physical age the main meaning."
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap052.line01",
+      "sourceSha256": "a1b07ac7d278127d29cfb10f9d09f99675edc3ace22470a2166e659508d579ef",
+      "term": "ਸਸਤ੍ਰ ਪਾਣੇ",
+      "selectedWorkingSense": "Weapons borne in the hand",
+      "referenceKeys": [
+        "jaap-mahankosh-sastra-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "Destructive capacity stressed in the derivative rendering",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap052.line02",
+      "sourceSha256": "28e6784cae0bf1e05b62c62821d87c015f5fa480a5497f7d3507a347225c4911",
+      "term": "ਅਸਤ੍ਰ ਮਾਣੇ",
+      "selectedWorkingSense": "Wielding or projecting weapons that are cast forth",
+      "referenceKeys": [
+        "jaap-mahankosh-astra-46-60",
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60"
+      ],
+      "alternatives": [
+        {
+          "sense": "An arrow of wisdom as an interpretive extension",
+          "referenceKeys": [
+            "jaap-bvs-46-60"
+          ]
+        }
+      ],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap052.line03",
+      "sourceSha256": "257d974c480b820fd8dc1a0e6820315864a6f1b34c9619e27334dc1322c842cf",
+      "term": "ਪਰਮ ਗਿਆਤਾ",
+      "selectedWorkingSense": "Complete or supreme knowing",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    },
+    {
+      "lineId": "jaap052.line04",
+      "sourceSha256": "f26b354275506e81a8eff2f81af69b645f47294692a164c52ee2362b0860dfab",
+      "term": "ਲੋਕ ਮਾਤਾ",
+      "selectedWorkingSense": "The world's Mother; life-giving care",
+      "referenceKeys": [
+        "jaap-rampurkhera-46-60",
+        "jaap-neki-46-60",
+        "jaap-bvs-46-60"
+      ],
+      "alternatives": [],
+      "humanReviewed": false
+    }
+  ],
+  "focusedEvidence": [
+    {
+      "lineIds": [
+        "jaap046.line02",
+        "jaap049.line03"
+      ],
+      "referenceKey": "jaap-rampurkhera-46-60",
+      "locator": {
+        "printedPages": [
+          65,
+          66
+        ],
+        "pdfPageIndices": [
+          72,
+          73
+        ],
+        "position": "Explanation of ਨ੍ਰਿਸੰਗੀ ਪ੍ਰਮਾਥੇ near the lower half of page 65; ਪ੍ਰਭੰਗੀ ਪ੍ਰਮਾਥੇ around the middle of page 66."
+      },
+      "inspectionMethod": "Direct visual reading of the locally rendered original PDF pages.",
+      "sourceObservation": "The first explanation and footnote use a destructive sense. A higher-resolution visual recheck of page 66 confirms ਦੋਖੀਆਂ, offenders or adversaries, in the later explanation; it does not say ਦੇਹੀਆਂ, bodies.",
+      "scopeLimit": "The draft's broader dissolution sense at 49.03 follows Neki. Sant Sewa Singh's directed destruction emphasis and the derivative commentary's churning interpretation remain distinct. The lesson does not issue a human command."
+    },
+    {
+      "lineIds": [
+        "jaap047.line04",
+        "jaap048.line03"
+      ],
+      "referenceKey": "jaap-rampurkhera-46-60",
+      "locator": {
+        "printedPage": 66,
+        "pdfPageIndex": 73,
+        "position": "The opening song/taan pair, then the ਪਾਨ/ਬਾਦ pair with numbered hand/instrument footnotes."
+      },
+      "inspectionMethod": "Direct visual reading, including the bottom-of-page footnotes.",
+      "sourceObservation": "The commentary makes ਤਾਨ musical and identifies ਪਾਨ with the capacity of hands.",
+      "scopeLimit": "Dictionary corroboration is lexical; Neki's drum image and the derivative page's power/instrument taan readings remain visible."
+    },
+    {
+      "lineIds": [
+        "jaap051.line02",
+        "jaap052.line01",
+        "jaap052.line02",
+        "jaap052.line03",
+        "jaap052.line04"
+      ],
+      "referenceKey": "jaap-rampurkhera-46-60",
+      "locator": {
+        "printedPage": 67,
+        "pdfPageIndex": 74,
+        "position": "Top of page: second half of 51, then the two weapon clauses, complete knower and world-mother pair."
+      },
+      "inspectionMethod": "Direct visual reading of all relevant clauses and the footnote on ਅਸਤ੍ਰ.",
+      "sourceObservation": "The sequence combines greatness, weapon bearing/use, knowing and motherhood.",
+      "scopeLimit": "The paraphrase keeps every clause, without treating greatness as bodily age or motherhood as a biological restriction."
+    }
+  ],
+  "crossUnitConsistency": [
+    {
+      "lineIds": [
+        "jaap046.line03",
+        "jaap047.line02"
+      ],
+      "kind": "EXACT_ORIGINAL_LINE_REPEAT",
+      "sourceSha256": "efd8e1f989f5047b4745236c6a1687aea3d19cb4fa28fd5301a31c8139f3ca21",
+      "agreedSimpleEn": "I bow to You, the radiance from which every sun receives its light.",
+      "agreedSimplePa": "ਹੇ ਪ੍ਰਭੂ, ਤੈਨੂੰ ਨਮਸਕਾਰ ਹੈ; ਹਰ ਸੂਰਜ ਦਾ ਚਾਨਣ ਤੇਰੇ ਪ੍ਰਕਾਸ਼ ਤੋਂ ਹੈ।",
+      "validation": "Both exported notes share their main strings through constants; exact equality was checked."
+    },
+    {
+      "lineIds": [
+        "jaap046.line04",
+        "jaap056.line02"
+      ],
+      "kind": "REPEATED_PHRASE_WITH_DISTINCT_NUMBERING",
+      "sourceSha256ByLine": {
+        "jaap046.line04": "24c00c952d9252a538db5a5df8b83deb667d53dc59a9e93409ba19c2005a1ccc",
+        "jaap056.line02": "29d19322e243b0dcab66e06e2db7c65f517e5ec6a6834ff39f25cf2ca08653cd"
+      },
+      "agreedSimpleEn": "I bow to You, the honour of all who are honoured.",
+      "agreedSimplePa": "ਹੇ ਪ੍ਰਭੂ, ਤੈਨੂੰ ਨਮਸਕਾਰ ਹੈ; ਸਾਰੇ ਮਾਣ ਵਾਲਿਆਂ ਦਾ ਵੀ ਮਾਣ ਤੂੰ ਹੀ ਹੈਂ।",
+      "validation": "The companion author agreed these exact main strings. The 46 closing number and the 56 unnumbered line remain distinct source bytes; integration equality must be checked on both imported modules."
+    }
+  ],
+  "authoringAndValidation": {
+    "method": "Read exact frozen Gurmukhi first, inspect the Punjabi commentary, compare limited lexical and poetic alternatives, and author original line explanations and passage observations. No modern translation was imported.",
+    "provisionalInterpretationsRemainVisible": true,
+    "sourceIdsAndOrderChecked": true,
+    "exactSourceVocabularyChecked": true,
+    "noReplacementCharactersChecked": true,
+    "allEntriesExplicitlyHumanReviewedFalse": true,
+    "sourcePackHashUnchanged": true,
+    "bilingualStudyScope": "English and Punjabi unit summaries with the established structured Study fields; no reader schema change.",
+    "sourceRecordAccounting": "Chhands 50 and 51 each retain two source records. Multiple epithets within a long record are explained without splitting IDs or inflating coverage. Learner-facing prose uses line/ਤੁਕ rather than record.",
+    "lookupLimits": [
+      "No usable direct Mahan Kosh ਪ੍ਰਮਾਥ, ਬ੍ਰਿਧ or ਮਾਣੇ entry was recovered during these lookups; no such entry is cited.",
+      "Web PDF screenshots returned text placeholders. The Punjabi PDF was downloaded and rendered locally before a visual-inspection claim was made."
+    ],
+    "limitations": [
+      "Assistant research and independent assistant editorial review are not qualified Sikh/Punjabi review, santhiya approval or an approved translation.",
+      "All prior source caveats and held sections, including Anand Pauri 24, remain unchanged.",
+      "Selected interpretations are educational working senses and do not exhaust the classical or theological range.",
+      "Body, music, martial and maternal images are read in passage context without prescriptive ritual, bodily contempt or gender exclusion."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "checkedAtUtc": "2026-10-28T20:16:06.452645+00:00",
+  "status": "PASS_LOCAL_READY_FOR_PRIVATE_STAGING",
+  "courseSHA256": "431642c41ce9634643f115737d63dd6067a2c2fe16eba7a29302134ce41e3d3b",
+  "sourceReviewReceiptSHA256": "9a349cdc30d05f5d2bfe1e27cb5790acc38f6671426a52a33cb62f8a2c8dff71",
+  "newLineDrafts": 46,
+  "newStudyLessons": 15,
+  "sourceRecordsCovered": 801,
+  "studyLessons": 187,
+  "jaapSourceRecordsCovered": 228,
+  "jaapStudyLessons": 60,
+  "previousNotesUnchanged": 755,
+  "previousStudiesUnchanged": 172,
+  "earlierCourseFilesPreserved": 11,
+  "qualifiedHumanReviews": 0,
+  "anandPauri24Held": true,
+  "tests": {
+    "sourceTeachingRenderingContract": 14,
+    "independentSourceDraftChecks": 13,
+    "appearanceControllerAndReaderIntegration": 14,
+    "privateWorkerLifecycle": 7,
+    "rootJapji": 27,
+    "sharedLearning": 12,
+    "rootServiceWorker": 8,
+    "syntheticPrivateGateway": 514,
+    "immutablePackageAssets": 43
+  },
+  "reproducible": [
+    "course.v11.json",
+    "course.v12.json",
+    "nitnem/sw.js"
+  ],
+  "sourceAndContentReview": "PASS_AI_DRAFT_REVIEW_NOT_SCHOLARLY_APPROVAL",
+  "appearanceAssetsByteIdenticalToV11": true,
+  "gatewayLogicUnchangedExceptExplicitAllowlistAndLandingRedirect": true,
+  "browserStatus": "No new browser walkthrough for this content-only increment. Actual learning renderer exercised for all 46 notes and 15 Study lessons. Unchanged appearance assets retain bounded V11 browser evidence only; physical-device acceptance remains pending.",
+  "privateDeploymentStatus": "PENDING",
+  "publicAudienceChanged": false,
+  "publicJapjiUnchanged": true
+}
