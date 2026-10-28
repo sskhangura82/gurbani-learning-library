@@ -1,6 +1,6 @@
 {
-  "checkedAtUtc": "2026-10-28T20:37:26.111502+00:00",
-  "status": "PASS_LOCAL_READY_FOR_PRIVATE_STAGING",
+  "checkedAtUtc": "2026-10-28T21:48:02.336472+00:00",
+  "status": "PASS_PRIVATE_PREVIEW_ACTIVE",
   "courseSHA256": "4d9ba106831d499fdec8982a0c9ec1415f90e64cb86f02a93db0b6096280fdb4",
   "sourceReviewReceiptSHA256": "229b27ceb6c19e1f95336b42cacd2fa1f4076681a6528e9879e2e313997c72fb",
   "newLineDrafts": 58,
@@ -34,8 +34,52 @@
   "appearanceAssetsByteIdenticalToV11": true,
   "gatewayLogicUnchangedExceptExplicitAllowlistAndLandingRedirect": true,
   "browserStatus": "No new browser walkthrough for this content-only increment. Actual learning renderer exercised for all 58 notes and 15 Study lessons. Unchanged appearance assets retain bounded V11 browser evidence only; physical-device acceptance remains pending.",
-  "privateDeploymentStatus": "PENDING_STAGING_AND_EXACT_COMMIT_CI",
+  "privateDeploymentStatus": "PRIVATE_PREVIEW_ACTIVE",
   "publicAudienceChanged": false,
   "publicJapjiUnchanged": true,
-  "localGatewayExecution": "Passed with the automatically reviewed localhost socket exception after the default filesystem sandbox blocked socket creation; synthetic test credentials only."
+  "localGatewayExecution": "Passed with the automatically reviewed localhost socket exception after the default filesystem sandbox blocked socket creation; synthetic test credentials only.",
+  "deployedSourceCommit": "1d4ec287139040d569663a531d1e2dd9261833bf",
+  "deployedAtUtc": "2026-10-28T21:47:25.223307+00:00",
+  "deployedAtLocal": "2026-10-28T14:47:25.223307-07:00",
+  "privateReaderPath": "/nitnem-learning-v13/index.html",
+  "historicalPreservation": {
+    "previousSnapshotFiles": 521,
+    "previousExtraAllowlistedAssets": 488,
+    "rootManifestAssets": 33,
+    "allUnchanged": true
+  },
+  "privateDeliveryVerification": {
+    "stagedAuthenticatedExtraAssets": 532,
+    "newVersionAssets": 44,
+    "liveLocalRepresentativeAssets": 10,
+    "liveHTTPSRepresentativeAssets": 10,
+    "anonymousStatus": 401,
+    "invitationRedirectStatus": 303,
+    "cookieFlagsVerified": [
+      "Secure",
+      "HttpOnly",
+      "SameSite=Lax"
+    ],
+    "existingInvitationRetained": true,
+    "existingAuthenticationConfigurationRetained": true,
+    "existingTunnelRetained": true
+  },
+  "hostingMacChecks": {
+    "sourceTeachingRenderingContract": 14,
+    "appearanceControllerAndReaderIntegration": 14,
+    "privateWorkerLifecycle": 7,
+    "syntheticPrivateGateway": 558,
+    "immutablePackageAssets": 44,
+    "status": "PASS"
+  },
+  "rollbackSnapshotPreserved": true,
+  "githubActions": {
+    "runId": 40774755994,
+    "sourceCommit": "1d4ec287139040d569663a531d1e2dd9261833bf",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow": "Full Nitnem V13 Jaap Chhands 61-75 (nondeploying)"
+  },
+  "transferRecovery": "The file-write connector did not complete. The source git bundle was transferred in bounded chunks through the existing authorized process connector, its complete SHA-256 was checked, and the prepared worktree was advanced only by a verified fast-forward.",
+  "temporaryStagingServerStopped": true
 }

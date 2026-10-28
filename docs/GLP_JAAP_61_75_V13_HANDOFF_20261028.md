@@ -4,7 +4,7 @@
 
 **Source branch:** `feature/glp-jaap-61-75-20261028`
 
-**Status:** Local verification passed. Private staging, exact-commit CI and activation are pending; the release receipt will record their actual outcomes.
+**Status:** Active in the existing private reader as V13. Activated October 28, 2026 at **2:47:25 p.m. PDT** after local, hosting-Mac, exact-commit CI, staging and authenticated HTTPS checks passed.
 
 ## Teaching increment
 
@@ -65,11 +65,21 @@ Independent source-review receipt SHA-256: `229b27ceb6c19e1f95336b42cacd2fa1f407
 
 The generated source worker uses `glp-private-nitnem-qa-9eefd3ea55c8a9969a`, with 43 cached assets. Its SHA-256 is `fabf3436781403896e71a2cc51203d507790b1a3a9f23e6c2d5f0de432f6fecf`; the isolated package worker SHA-256 is `e868f5d0a3fa3eb073be0390aa1a4250a59327e4645aba7bbd56b45aa6888b8b`.
 
-The release receipt is `evidence/glp-nitnem-v13-validation.json`. Private delivery and exact-commit CI remain pending at this source commit.
+The release receipt is `evidence/glp-nitnem-v13-validation.json`.
+
+**Deployed source commit:** `1d4ec287139040d569663a531d1e2dd9261833bf`.
+
+[GitHub Actions run 40774755994](https://github.com/sskhangura82/gurbani-learning-library/actions/runs/40774755994) completed successfully for that exact source commit. The workflow is nondeploying; private activation was performed separately after success.
+
+Hosting-Mac content, appearance, private-worker and synthetic-gateway checks also passed. Staging verified all **532 authenticated extra assets**, including all 44 new V13 files. Actual historical preservation separately verified all **521 previous snapshot files**, all **488 previous extra allowlisted assets**, and the **33 root-manifest assets**. These were compared byte-for-byte; the previous V12 snapshot remains unchanged.
+
+After activation, ten representative assets passed exact-hash checks through both live loopback and the existing HTTPS tunnel. They include the V13 course, reader, worker and appearance assets, plus the previous V12 course. Anonymous requests return 401; the existing invitation returns a 303 redirect to `/nitnem-learning-v13/index.html`. Secure, HttpOnly and SameSite=Lax cookie flags were retained. The temporary staging server was closed after the live checks.
+
+The initial file-write transfer did not complete. The source bundle was subsequently transferred in bounded chunks through the existing authorized process connector, checked against its complete SHA-256, and applied only by a verified fast-forward to the prepared feature worktree. Activation began only after the complete transfer, staging and exact-commit CI succeeded.
 
 This content increment does not introduce a new browser walkthrough. Unchanged appearance assets retain the bounded browser evidence from V11. New teaching receives source, actual-renderer, package and delivery checks; physical iPhone, Safari, VoiceOver and real offline behavior remain unverified.
 
-Deployment will preserve the existing invitation, authentication configuration, tunnel and audience. The previous V12 snapshot will remain available for rollback. This document contains no invitation token, cookie, private hostname or operational process identifier.
+Deployment preserved the existing invitation, authentication configuration, tunnel and audience. Public/root Japji and public main were not changed. The previous V12 snapshot remains available for rollback. This document contains no invitation token, cookie, private hostname or operational process identifier.
 
 ## Continuation
 
