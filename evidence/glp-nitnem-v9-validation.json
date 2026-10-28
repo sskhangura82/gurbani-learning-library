@@ -22,7 +22,40 @@
     "course.v9.json",
     "nitnem/sw.js"
   ],
-  "browserStatus": "Managed HTTP preview opened, but crypto.subtle unavailable in its insecure origin; authenticated HTTPS verification pending. No completed browser or physical-device claim.",
-  "privateDeploymentStatus": "PENDING",
-  "historicalDeploymentBytePreservation": "To be checked against all 326 active prior extra-route hashes before replacement."
+  "browserStatus": "NOT_COMPLETED: managed HTTP preview could not use crypto.subtle; cloud browser request to private HTTPS reader returned a generic blocked message. No completed browser or physical-device claim. Real UI renderer is covered by the V9 Node contract.",
+  "privateDeploymentStatus": "PRIVATE_PREVIEW_ACTIVE",
+  "historicalDeploymentBytePreservation": {
+    "allPreviousFiles": 359,
+    "previousExtraAllowlistedAssets": 326,
+    "rootManifestAssets": 33,
+    "result": "PASS"
+  },
+  "deployedAt": "2026-10-28T16:52:17.528410+00:00",
+  "deployedSourceCommit": "a8b3d476a285497ca7b507779edac0dc92b02b66",
+  "privateReaderPath": "/nitnem-learning-v9/index.html",
+  "privateDeliveryVerification": {
+    "stagedAuthenticatedAssets": 364,
+    "newVersionAssets": 38,
+    "liveLocalRepresentativeAssets": 5,
+    "liveHTTPSRepresentativeAssets": 5,
+    "anonymousStatus": 401,
+    "invitationRedirectStatus": 303,
+    "cookieFlagsVerified": [
+      "Secure",
+      "HttpOnly",
+      "SameSite=Lax"
+    ],
+    "existingInvitationRetained": true,
+    "existingAuthenticationConfigurationRetained": true,
+    "existingTunnelRetained": true
+  },
+  "publicAudienceChanged": false,
+  "rollbackSnapshotPreserved": true,
+  "githubActions": {
+    "runId": 40730009721,
+    "sourceCommit": "a8b3d476a285497ca7b507779edac0dc92b02b66",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow": "Full Nitnem V9 source-bound draft continuation (nondeploying)"
+  }
 }
