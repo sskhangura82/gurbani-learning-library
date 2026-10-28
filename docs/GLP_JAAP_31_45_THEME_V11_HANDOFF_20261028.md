@@ -2,13 +2,13 @@
 
 **Date:** October 28, 2026
 **Source branch:** `feature/glp-jaap-31-45-theme-20261028`
-**Status:** Validated educational draft candidate. Local release checks and immutable package verification passed. Private activation is pending; browser observations cover the stated surfaces only.
+**Status:** Active in the existing private preview as of **11:13 a.m. PDT, October 28, 2026**. Local, Mac, GitHub and authenticated HTTPS checks passed. Browser observations cover the stated surfaces only; teaching remains unreviewed educational draft material.
 
 ## Content and coverage
 
-V11 adds **60 English/Punjabi line explanations and 15 deeper Study lessons** for Jaap Sahib Chhands 31–45. The candidate course is `nitnem/learning/course.v11.json`; its recorded coverage is:
+V11 adds **60 English/Punjabi line explanations and 15 deeper Study lessons** for Jaap Sahib Chhands 31–45. The active course is `nitnem/learning/course.v11.json`; its recorded coverage is:
 
-| Coverage | V10 | V11 candidate |
+| Coverage | V10 | V11 |
 | --- | ---: | ---: |
 | Jaap explained source records | 122/782 | **182/782** |
 | Jaap Study drafts | 30/199 | **45/199** |
@@ -45,9 +45,9 @@ Keyboard focus initially exposed a jump associated with root scroll padding. The
 
 The six additional bani readers could not complete their browser source-integrity initialization in this HTTP environment because `crypto.subtle` was absent. Six-bani source checks and new Jaap renderer checks are a separate form of evidence and must not be described as completed browser walkthroughs. Physical iPhone, Safari, VoiceOver and real offline behavior remain unverified.
 
-## Release verification — local checks passed
+## Release verification — passed
 
-The final local receipts record the following passing checks. GitHub and actual private delivery will be recorded separately after synchronization and activation.
+The final local receipts record the following passing checks. The content, appearance, worker and gateway contracts also passed on the authorized Mac. [GitHub Actions run 40742949948](https://github.com/sskhangura82/gurbani-learning-library/actions/runs/40742949948) passed for the exact deployed source commit.
 
 | Gate | Verified count | Status |
 | --- | ---: | --- |
@@ -62,14 +62,14 @@ The final local receipts record the following passing checks. GitHub and actual 
 
 These suites overlap. None establishes qualified religious review or physical-device acceptance.
 
-## Private deployment receipt — pending
+## Private deployment receipt
 
-The intended versioned route is `/nitnem-learning-v11/`. The update preserves the existing private authentication configuration and tunnel. Activation, authenticated delivery and rollback evidence must be recorded after the actual deployment.
+The active versioned route is `/nitnem-learning-v11/`. The existing private invitation now redirects there. Authentication configuration, cookie protections, tunnel and audience are unchanged. All 436 files of the previous snapshot and its 403 extra allowlisted assets were preserved byte for byte; the previous V10 snapshot remains available for rollback.
 
-- **Final source commit:** PENDING
+- **Deployed source commit:** `df229e385b59e9fa66a589fab0a960479dcb41cd`
 - **Final course SHA-256:** `dde70081af4576620da500b712a7c8eb1c5c4ea1e35753b7ccdfb0a0bc755d69`
 - **Package verification receipt:** 42 assets, `glp-nitnem-learning-v11-review:` namespace, versioned worker SHA-256 `f919b6f5c7edc3ae1d363fb47bd7b514c51a2bae2ce8dd8e9ca39b557cd0f7f0`.
-- **Deployment time and authenticated delivery result:** PENDING
-- **Sanitized deployment/rollback evidence:** PENDING
+- **Deployment:** October 28, 2026, 11:13 a.m. PDT. All 445 extra routes passed authenticated staging delivery; ten representative active and historical assets passed exact-byte checks on both loopback and live HTTPS. These included the new appearance JavaScript/CSS, both reader shells, embedded Japji script, course, reader and worker. Anonymous requests returned 401; the existing invitation returned the expected 303 redirect.
+- **Sanitized deployment and rollback evidence:** `evidence/glp-nitnem-v11-validation.json`. Browser details and screenshots: `evidence/glp-nitnem-v11-appearance-browser.json`, `nitnem-v11-light-preview-20261028.jpg`, and `nitnem-v11-dark-preview-20261028.jpg`.
 
-This document contains no credentials, private hostnames or remote process identifiers. Remaining Jaap coverage after this candidate is **600 source records and 154 Study lessons**; Anand’s held section adds six records and one lesson. The next contiguous content batch is Jaap Chhands 46–60.
+This document contains no credentials, private hostnames or remote process identifiers. Remaining Jaap coverage after this release is **600 source records and 154 Study lessons**; Anand’s held section adds six records and one lesson. The next contiguous content batch is Jaap Chhands 46–60.

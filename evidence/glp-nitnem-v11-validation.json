@@ -1,6 +1,6 @@
 {
   "checkedAtUtc": "2026-10-28T18:11:34.217930+00:00",
-  "status": "PASS_CANDIDATE_AWAITING_PRIVATE_ACTIVATION",
+  "status": "PASS_PRIVATE_PREVIEW_ACTIVE",
   "courseSHA256": "dde70081af4576620da500b712a7c8eb1c5c4ea1e35753b7ccdfb0a0bc755d69",
   "sourceReviewReceiptSHA256": "6dee033f5f00efd37f689d54eb1f73051e7ab65d401586b267f6f6c80643f0f9",
   "newLineDrafts": 60,
@@ -30,7 +30,41 @@
     "nitnem/sw.js"
   ],
   "browserStatus": "Bounded cloud Chrome checks passed for collection and embedded Japji, including phone-width layouts. Six additional reader initialization blocked by insecure HTTP crypto limitation; no physical-device claim. See appearance-browser receipt.",
-  "privateDeploymentStatus": "PENDING",
+  "privateDeploymentStatus": "PRIVATE_PREVIEW_ACTIVE",
   "publicAudienceChanged": false,
-  "publicJapjiUnchanged": true
+  "publicJapjiUnchanged": true,
+  "deployedSourceCommit": "df229e385b59e9fa66a589fab0a960479dcb41cd",
+  "deployedAtUtc": "2026-10-28T18:13:37.201365+00:00",
+  "deployedAtLocal": "2026-10-28T11:13:37.201365-07:00",
+  "privateReaderPath": "/nitnem-learning-v11/index.html",
+  "historicalPreservation": {
+    "previousSnapshotFiles": 436,
+    "previousExtraAllowlistedAssets": 403,
+    "rootManifestAssets": 33,
+    "allUnchanged": true
+  },
+  "privateDeliveryVerification": {
+    "stagedAuthenticatedExtraAssets": 445,
+    "newVersionAssets": 42,
+    "liveLocalRepresentativeAssets": 10,
+    "liveHTTPSRepresentativeAssets": 10,
+    "anonymousStatus": 401,
+    "invitationRedirectStatus": 303,
+    "cookieFlagsVerified": [
+      "Secure",
+      "HttpOnly",
+      "SameSite=Lax"
+    ],
+    "existingInvitationRetained": true,
+    "existingAuthenticationConfigurationRetained": true,
+    "existingTunnelRetained": true
+  },
+  "rollbackSnapshotPreserved": true,
+  "githubActions": {
+    "runId": 40742949948,
+    "sourceCommit": "df229e385b59e9fa66a589fab0a960479dcb41cd",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow": "Full Nitnem V11 Jaap Chhands 31-45 (nondeploying)"
+  }
 }
