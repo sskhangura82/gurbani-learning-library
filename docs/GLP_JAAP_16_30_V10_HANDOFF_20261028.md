@@ -2,7 +2,7 @@
 
 **Date:** October 28, 2026
 **Source branch:** `feature/glp-jaap-16-30-20261028`
-**Status:** Verified local educational draft candidate. Private deployment is **pending**; an actual deployment receipt will be added separately.
+**Status:** Active private educational preview. Source, preservation, renderer, access and authenticated HTTPS delivery checks passed. Qualified review and physical-device acceptance remain pending.
 
 ## Content and coverage
 
@@ -54,6 +54,14 @@ The separate V10 package contains **39 assets, of which 38 are cached**. The rea
 
 ## Deployment and next batch
 
-Private deployment remains pending. A subsequent receipt must record the actual deployed revision, preservation and authenticated delivery results, and any browser outcome. This handoff contains no credentials, private hostnames or remote process identifiers.
+The deployment receipt below records the completed private update. This handoff contains no credentials, private hostnames or remote process identifiers.
 
 The next planned content batch is **Jaap Chhands 31–45**. Remaining Jaap coverage is **660 source records and 169 Study lessons**; Anand’s held Pauri 24 adds six records and one lesson. Continue with exact source anchoring, original bilingual prose and explicit interpretive uncertainty.
+
+## Private deployment receipt
+
+V10 became active on **October 28, 2026 at 10:16 a.m. Pacific (PDT)** from source commit `ff807ec0ace9f037bc36fea545d44fc49609e03e`. The existing invitation now opens `/nitnem-learning-v10/index.html`. Authentication configuration, cookie protections, access duration, tunnel and public Japji deployment remain unchanged.
+
+All **397 files** from the previous immutable snapshot were retained byte for byte, including its **364 extra allowlisted assets** and **33 root-manifest assets**. The candidate adds **39 files**, producing **403 extra routes**. Authenticated staging requests returned the expected bytes for every one of those 403 assets. Live loopback and HTTPS requests then verified the V10 index, reader, course and scoped worker, plus the preserved V9 course. Anonymous access returned 401; invitation exchange returned the intended 303 redirect.
+
+GitHub Actions run `40733967704` completed successfully for the deployed source commit. The retained V9 snapshot and gateway remain available for rollback. Browser and physical-device verification limits stated above still apply. The sanitized evidence is `evidence/glp-nitnem-v10-validation.json`.

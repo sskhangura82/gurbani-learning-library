@@ -1,6 +1,6 @@
 {
   "checkedAtUtc": "2026-10-28T17:14:43.273775+00:00",
-  "status": "LOCAL_VERIFICATION_PASS",
+  "status": "PASS_PRIVATE_PREVIEW_ACTIVE",
   "courseSHA256": "ba32eb65d0592738160ab1cece6e59ca01d608b80026a10ae3c51f80e9a59e28",
   "sourceReviewReceiptSHA256": "fd7a7b92f31e7e02929db477766b40d0ecfa5f3450afaf8c41101a0856dd4399",
   "newLineDrafts": 60,
@@ -30,6 +30,41 @@
   ],
   "readerChangeScope": "Only active course filename and pinned SHA change; reader logic and teaching renderer byte preservation verified.",
   "browserStatus": "Not repeated: prior managed HTTP preview lacks crypto.subtle; private HTTPS request was blocked in cloud browser. Real renderer exercised in Node; no browser or physical-device acceptance claimed.",
-  "privateDeploymentStatus": "PENDING",
-  "publicAudienceChanged": false
+  "privateDeploymentStatus": "PRIVATE_PREVIEW_ACTIVE",
+  "publicAudienceChanged": false,
+  "deployedSourceCommit": "ff807ec0ace9f037bc36fea545d44fc49609e03e",
+  "deployedAtUtc": "2026-10-28T17:16:54.355286+00:00",
+  "deployedAtLocal": "2026-10-28T10:16:54.355286-07:00",
+  "privateReaderPath": "/nitnem-learning-v10/index.html",
+  "historicalPreservation": {
+    "previousSnapshotFiles": 397,
+    "previousExtraAllowlistedAssets": 364,
+    "rootManifestAssets": 33,
+    "allUnchanged": true
+  },
+  "privateDeliveryVerification": {
+    "stagedAuthenticatedExtraAssets": 403,
+    "newVersionAssets": 39,
+    "liveLocalRepresentativeAssets": 5,
+    "liveHTTPSRepresentativeAssets": 5,
+    "anonymousStatus": 401,
+    "invitationRedirectStatus": 303,
+    "cookieFlagsVerified": [
+      "Secure",
+      "HttpOnly",
+      "SameSite=Lax"
+    ],
+    "existingInvitationRetained": true,
+    "existingAuthenticationConfigurationRetained": true,
+    "existingTunnelRetained": true
+  },
+  "publicJapjiUnchanged": true,
+  "rollbackSnapshotPreserved": true,
+  "githubActions": {
+    "runId": 40733967704,
+    "sourceCommit": "ff807ec0ace9f037bc36fea545d44fc49609e03e",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow": "Full Nitnem V10 Jaap Chhands 16-30 (nondeploying)"
+  }
 }
