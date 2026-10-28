@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checks": 12,
+  "failed": 0,
+  "sourceRecords": 695,
+  "studyLessons": 157,
+  "newLineDrafts": 60,
+  "newStudyLessons": 15,
+  "previousNotesPreserved": 635,
+  "previousStudiesPreserved": 142,
+  "humanReviewed": 0,
+  "heldAnand24": true,
+  "environment": "Node source/hash checks and real renderer with DOM stub; no browser/device claim",
+  "results": [
+    {
+      "name": "All nine earlier course snapshots keep their released byte hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned manifest and all six original packs preserve every source occurrence and review status",
+      "status": "PASS"
+    },
+    {
+      "name": "All 635 previous notes, 142 previous studies and the editorial/reuse evidence are identical",
+      "status": "PASS"
+    },
+    {
+      "name": "The increment is exactly 60 Jaap notes and 15 studies for Chhands 16 through 30",
+      "status": "PASS"
+    },
+    {
+      "name": "Every new explanation has exact source identity, both languages and explicit unreviewed status",
+      "status": "PASS"
+    },
+    {
+      "name": "Each new Study is substantive, source-anchored and uses vocabulary present in its own chhand",
+      "status": "PASS"
+    },
+    {
+      "name": "Totals reconcile to 695 notes and 157 studies; every other bani retains the previous coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "Anand Pauri 24 remains fully withheld and Jaap 31 onward remains pending",
+      "status": "PASS"
+    },
+    {
+      "name": "Research references and alternative-reading notes never confer human approval",
+      "status": "PASS"
+    },
+    {
+      "name": "The real renderer exposes all new notes and studies while Read stays clear and wrong hashes fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "The reader changes only the course version and hash, preserving pace, navigation and saved-learning logic",
+      "status": "PASS"
+    },
+    {
+      "name": "The worker pins all ten course files and every active offline asset to current bytes",
+      "status": "PASS"
+    }
+  ]
+}

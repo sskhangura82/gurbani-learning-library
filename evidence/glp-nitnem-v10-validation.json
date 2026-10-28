@@ -1,0 +1,35 @@
+{
+  "checkedAtUtc": "2026-10-28T17:14:43.273775+00:00",
+  "status": "LOCAL_VERIFICATION_PASS",
+  "courseSHA256": "ba32eb65d0592738160ab1cece6e59ca01d608b80026a10ae3c51f80e9a59e28",
+  "sourceReviewReceiptSHA256": "fd7a7b92f31e7e02929db477766b40d0ecfa5f3450afaf8c41101a0856dd4399",
+  "newLineDrafts": 60,
+  "newStudyLessons": 15,
+  "sourceRecordsCovered": 695,
+  "studyLessons": 157,
+  "jaapSourceRecordsCovered": 122,
+  "jaapStudyLessons": 30,
+  "previousNotesUnchanged": 635,
+  "previousStudiesUnchanged": 142,
+  "earlierCourseFilesPreserved": 9,
+  "qualifiedHumanReviews": 0,
+  "anandPauri24Held": true,
+  "tests": {
+    "sourceTeachingRenderingContract": 12,
+    "privateWorkerLifecycle": 7,
+    "rootJapji": 27,
+    "sharedLearning": 12,
+    "rootServiceWorker": 8,
+    "syntheticPrivateGateway": 429,
+    "immutablePackageAssets": 39
+  },
+  "reproducible": [
+    "course.v9.json",
+    "course.v10.json",
+    "nitnem/sw.js"
+  ],
+  "readerChangeScope": "Only active course filename and pinned SHA change; reader logic and teaching renderer byte preservation verified.",
+  "browserStatus": "Not repeated: prior managed HTTP preview lacks crypto.subtle; private HTTPS request was blocked in cloud browser. Real renderer exercised in Node; no browser or physical-device acceptance claimed.",
+  "privateDeploymentStatus": "PENDING",
+  "publicAudienceChanged": false
+}

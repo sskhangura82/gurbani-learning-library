@@ -1,0 +1,45 @@
+name: Full Nitnem V10 Jaap Chhands 16-30 (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-jaap-16-30-20261028
+  pull_request:
+    paths:
+      - 'tools/nitnem/**'
+      - 'nitnem/**'
+      - 'tests/nitnem-v10-*'
+      - 'tests/serve-gated-nitnem-v10.py'
+      - 'tests/nitnem-worker-lifecycle.mjs'
+      - '.github/workflows/glp-nitnem-v10-qa.yml'
+permissions:
+  contents: read
+jobs:
+  source-and-private-reader:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce immutable courses and preserve original source
+        run: |
+          node tools/nitnem/build-learning-pack-v9.mjs
+          node tools/nitnem/build-learning-pack-v10.mjs
+          git diff --exit-code -- nitnem/data nitnem/learning/course.v9.json nitnem/learning/course.v10.json
+      - name: Exact Jaap coverage and prior teaching preservation
+        run: node tests/nitnem-v10-contract.mjs
+      - name: Original Japji and saved-learning regression
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/service-worker.mjs
+      - name: Scoped worker integrity and lifecycle
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/nitnem-worker-lifecycle.mjs
+      - name: Immutable private review package and access gate
+        run: |
+          python3 tools/nitnem/build-full-nitnem-v10-reader.py --output "${{ runner.temp }}/nitnem-v10"
+          python3 tools/nitnem/build-full-nitnem-v10-reader.py --output "${{ runner.temp }}/nitnem-v10" --verify
+          python3 tests/nitnem-v10-gate-contract.py

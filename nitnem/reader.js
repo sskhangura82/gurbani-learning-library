@@ -5,7 +5,7 @@
 (()=>{
 'use strict';
 const EXPECTED_LIBRARY='b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a';
-const EXPECTED_LEARNING='7516a55af45c91576239fa07b064af8f3b5fd2f8b97cf9b2905bbad6e31f4e32';
+const EXPECTED_LEARNING='ba32eb65d0592738160ab1cece6e59ca01d608b80026a10ae3c51f80e9a59e28';
 const EXPECTED_SOURCE_COMMIT='373ccc34f4a1c0ccb6ce36654bf6e9574087200f';
 const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
@@ -69,7 +69,7 @@ async function verifyPack(x,entry,name){
  return x;
 }
 async function teachingCourse(pack){
- const course=await jsonBytes('learning/course.v9.json',EXPECTED_LEARNING);
+ const course=await jsonBytes('learning/course.v10.json',EXPECTED_LEARNING);
  if(course?.meta?.schema!=='GLP-NITNEM-TEACHING-DRAFT-V1'||
     course.meta.editorialStatus!=='DRAFT_AI_UNREVIEWED'||
     course.meta.publicationAllowed!==false||
