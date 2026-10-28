@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "checks": 13,
+  "failed": 0,
+  "sourceRecords": 635,
+  "studyLessons": 142,
+  "addedSourceRecords": 213,
+  "addedStudyLessons": 38,
+  "exactReusedRecords": 130,
+  "aggregatedRehrasContexts": 27,
+  "humanReviewed": 0,
+  "heldPauri24": true,
+  "environment": "Local source/hash contracts and real renderer in DOM stub; not a browser/device acceptance test",
+  "results": [
+    {
+      "name": "All eight historical course snapshots retain their accepted byte hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned manifest, six source packs, 1361 exact lines and 327 unique units remain immutable",
+      "status": "PASS"
+    },
+    {
+      "name": "Prior 422 notes change only through exact retained before/after amendment evidence; all 104 studies survive",
+      "status": "PASS"
+    },
+    {
+      "name": "Exactly 213 source records and 38 studies are added in the stated three categories",
+      "status": "PASS"
+    },
+    {
+      "name": "130 reused Rehras notes match exact original text, family, SHA, order, current draft and provenance",
+      "status": "PASS"
+    },
+    {
+      "name": "28 reused Rehras studies preserve source study content with separate occurrence and context",
+      "status": "PASS"
+    },
+    {
+      "name": "27 distinct Rehras contexts identify aggregated source records and their actual scripture family",
+      "status": "PASS"
+    },
+    {
+      "name": "Jaap and Rehras packet amendments retain true before values and admitted after values",
+      "status": "PASS"
+    },
+    {
+      "name": "Every admitted note and Study is source-bound, bilingual, unreviewed and contains no rewritten scripture",
+      "status": "PASS"
+    },
+    {
+      "name": "Coverage reconciles 635 records and 142 studies while Anand24 and remaining Jaap stay pending",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft metadata and review totals retain the existing authority boundary",
+      "status": "PASS"
+    },
+    {
+      "name": "Real renderer labels all 27 aggregate summaries in inline, accessible and detail views",
+      "status": "PASS"
+    },
+    {
+      "name": "Reader selects exactly SHA-pinned V9 and its worker pins every retained course and asset",
+      "status": "PASS"
+    }
+  ]
+}

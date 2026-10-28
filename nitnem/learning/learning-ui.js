@@ -36,7 +36,7 @@ function pending(text){
 }
 function coverageText(course,bani){
  const r=course?.coverage?.byBani?.[bani];
- return r?r.draftLessons+' of '+r.totalUnits+' passages drafted · '+r.firstLineNotes+' selective line notes · 0 scholar-reviewed':'Learning is not yet verified.';
+ return r?r.draftLessons+' of '+r.totalUnits+' Study drafts · '+r.firstLineNotes+' of '+r.sourceRecords+(bani==='rehras'?' source records explained':' line drafts')+' · 0 scholar-reviewed':'Learning is not yet verified.';
 }
 function overview(node,course,bani,mode){
  node.replaceChildren();node.hidden=mode==='read';
@@ -70,7 +70,9 @@ function overview(node,course,bani,mode){
   intro.append(action);
  }
  intro.append(elt('p','learn-coverage',coverageText(course,bani)));
- intro.append(pending('Only authored passages display explanations. Original Gurbani remains complete and unchanged; full line-by-line educational coverage is still being written.'));
+ intro.append(pending(bani==='rehras'
+  ?'Some Rehras source records contain several verse lines. Their explanations are marked as passage context. Exact recurring Chaupai and Anand passages reuse earlier educational drafts; all require qualified review.'
+  :'Only authored passages display explanations. The original source is preserved, with disputed text withheld. Full educational coverage is still being written.'));
  details.append(summary,intro);
  node.append(details);
 }
@@ -94,6 +96,7 @@ function sourceDetails(course,bani,unit){
  details.append(elt('summary','', 'Sources, passage anchors & review'));
  appendText(details,'p','', 'Original source occurrence: '+lesson.sourceAnchor.id);
  appendText(details,'p','source-hash', 'Source SHA-256: '+lesson.sourceAnchor.sha256);
+ if(lesson.provenance)appendText(details,'p','source-reference','This passage reuses a draft for the same original text in '+lesson.provenance.bani+' ('+lesson.provenance.id+'). Its Rehras context and occurrence remain distinct.');
  appendText(details,'p','', 'The source edition and these explanations are still unapproved. The citations below are research starting points, not scholarly approval.');
  const info=course.banis?.[bani];
  for(const k of info?.sourceKeys||[]){
@@ -145,10 +148,11 @@ function lineNote(course,bani,l){
  if(!e||e.sourceSha256!==l.sha256||l.held)return null;
  const button=elt('button','simple-meaning');
  button.type='button';button.dataset.meaningLine=l.id;
- button.setAttribute('aria-label','Draft meaning for this line. Tap for more; qualified review pending.');
+ const aggregate=e.kind==='AGGREGATED_SOURCE_RECORD_EDUCATIONAL_CONTEXT_NOT_LITERAL_TRANSLATION';
+ button.setAttribute('aria-label',aggregate?'Passage context, educational draft. This source record may contain several verse lines. Tap to explore.':'Draft meaning for this line. Tap for more; qualified review pending.');
  const en=elt('span','english',e.simpleEn),pa=elt('span','punjabi',e.simplePa);
  pa.lang='pa';
- const label=e.kind==='HEADING_OR_INVOCATION_CONTEXT'
+ const label=aggregate?'Passage context · educational draft · tap to explore':e.kind==='HEADING_OR_INVOCATION_CONTEXT'
   ?'Heading / invocation · draft context · tap to explore'
   :'Draft meaning · tap to explore';
  button.append(en,pa,elt('span','expand-hint',label));
@@ -162,7 +166,10 @@ function lineDetails(course,bani,line,unit){
  const simple=elt('div','simple-dialog');
  simple.append(paragraph(e.simpleEn,'en'),paragraph(e.simplePa,'pa'));
  wrapper.append(simple);
- wrapper.append(draft('EXPLANATION · EDUCATIONAL DRAFT'));
+ const aggregate=e.kind==='AGGREGATED_SOURCE_RECORD_EDUCATIONAL_CONTEXT_NOT_LITERAL_TRANSLATION';
+ wrapper.append(draft(aggregate?'PASSAGE CONTEXT · EDUCATIONAL DRAFT':'EXPLANATION · EDUCATIONAL DRAFT'));
+ if(aggregate)wrapper.append(pending('This explanation summarizes the whole stored passage, which may contain several verse lines. It is not a separate translation of each internal line.'));
+ if(e.provenance)wrapper.append(pending('Reused from the same original text in '+e.provenance.bani+' ('+e.provenance.id+'). This Rehras occurrence keeps its own reading position and source identity.'));
  field(wrapper,'Interpretation & open questions',e.interpretiveCaution);
  const study=course.unitLessons?.[bani+'|'+unit.id];
  if(study){

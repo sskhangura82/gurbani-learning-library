@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-28T16:49:29.317621+00:00",
+  "status": "PASS",
+  "candidateCourseSHA256": "7516a55af45c91576239fa07b064af8f3b5fd2f8b97cf9b2905bbad6e31f4e32",
+  "sourceRecordsCovered": 635,
+  "studyLessons": 142,
+  "qualifiedHumanReviews": 0,
+  "tests": {
+    "v9IndependentContract": 13,
+    "privateWorkerLifecycle": 7,
+    "rootJapji": 27,
+    "sharedLearning": 12,
+    "rootServiceWorker": 8,
+    "rehrasSourceReusePacket": 14,
+    "jaapSourcePacket": 12,
+    "syntheticPrivateGateway": 388,
+    "immutablePackageAssets": 38
+  },
+  "syntheticGatewayEnvironment": "Python loopback test with sandbox permission for binding; no production configuration used",
+  "reproducible": [
+    "course.v8.json",
+    "course.v9.json",
+    "nitnem/sw.js"
+  ],
+  "browserStatus": "Managed HTTP preview opened, but crypto.subtle unavailable in its insecure origin; authenticated HTTPS verification pending. No completed browser or physical-device claim.",
+  "privateDeploymentStatus": "PENDING",
+  "historicalDeploymentBytePreservation": "To be checked against all 326 active prior extra-route hashes before replacement."
+}

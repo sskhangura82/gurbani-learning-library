@@ -2,12 +2,15 @@
 No automatic external requests; optional SGPC link is user-triggered. Offline integrity checked; no
 deployment or mutation of root Japji service worker or accepted family PWA.
 """
-import hashlib,json
+import argparse,hashlib,json
 from pathlib import Path
+parser=argparse.ArgumentParser(description='Build the scoped private worker with exact asset hashes.')
+parser.add_argument('--previous-worker-sha256',help='Explicitly advance only this exact existing worker; all prior release snapshots remain immutable.')
+args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[2]/'nitnem'
 FILES=[
  'index.html','reader.css','reader.js','continuous-core.js',
- 'learning/learning-ui.js','learning/course.v1.json','learning/course.v2.json','learning/course.v3.json','learning/course.v4.json','learning/course.v5.json','learning/course.v6.json','learning/course.v7.json','learning/course.v8.json',
+ 'learning/learning-ui.js','learning/course.v1.json','learning/course.v2.json','learning/course.v3.json','learning/course.v4.json','learning/course.v5.json','learning/course.v6.json','learning/course.v7.json','learning/course.v8.json','learning/course.v9.json',
  'trust/index.html','trust/corrections.html','trust/trust.css',
  'data/library.json','data/jaap.json','data/savaiye.json','data/chaupai.json',
  'data/anand.json','data/rehras.json','data/sohila.json',
@@ -59,7 +62,7 @@ self.addEventListener("install",event=>event.waitUntil((async()=>{
  }catch(e){await caches.delete(CACHE);throw e;}
 })()));
 self.addEventListener("message",e=>{if(e.data?.type==="ACTIVATE_PRIVATE_NITNEM_UPDATE")self.skipWaiting();});
-self.addEventListener("activate",e=>event.waitUntil((async()=>{
+self.addEventListener("activate",e=>e.waitUntil((async()=>{
  const keys=await caches.keys();
  await Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)));
  await self.clients.claim();
@@ -77,6 +80,8 @@ self.addEventListener("fetch",e=>{
 '''
 worker=worker.replace('__VERSION__',json.dumps(version)).replace('__HASHES__',json.dumps(hashes,ensure_ascii=False,separators=(',',':')))
 target=ROOT/'sw.js'
-if target.exists() and target.read_text()!=worker:raise RuntimeError('Do not silently rewrite a versioned QA worker')
+if target.exists() and target.read_text()!=worker:
+ if not args.previous_worker_sha256 or sha(target.read_bytes())!=args.previous_worker_sha256:
+  raise RuntimeError('Do not silently rewrite a versioned QA worker; explicit matching --previous-worker-sha256 is required')
 target.write_text(worker)
 print(json.dumps({'status':'SOURCE_QA_ONLY','version':version,'cacheAssets':len(FILES),'workerSha256':sha(worker.encode('utf8'))}))

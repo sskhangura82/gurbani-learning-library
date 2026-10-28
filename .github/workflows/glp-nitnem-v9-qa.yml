@@ -1,0 +1,49 @@
+name: Full Nitnem V9 source-bound draft continuation (nondeploying)
+on:
+  push:
+    branches:
+      - feature/glp-nitnem-continuation-20261028
+  pull_request:
+    paths:
+      - 'tools/nitnem/**'
+      - 'nitnem/**'
+      - 'tests/nitnem-v9-*.mjs'
+      - 'tests/nitnem-v9-*.py'
+      - 'tests/serve-gated-nitnem-v9.py'
+      - 'tests/nitnem-worker-lifecycle.mjs'
+      - '.github/workflows/glp-nitnem-v9-qa.yml'
+permissions:
+  contents: read
+jobs:
+  source-and-private-reader:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce immutable V8 and new V9 without source drift
+        run: |
+          node tools/nitnem/build-learning-pack-v8.mjs
+          node tools/nitnem/build-learning-pack-v9.mjs
+          git diff --exit-code -- nitnem/data nitnem/learning/course.v8.json nitnem/learning/course.v9.json
+      - name: Exact occurrence coverage, editorial ledger and source reuse
+        run: |
+          node tests/nitnem-v9-contract.mjs
+          node tests/glp-rehras-source-reuse-contract.mjs
+          node tests/glp-jaap-early-draft-contract.mjs
+      - name: Unchanged Japji and saved-learning contracts
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/service-worker.mjs
+      - name: Scoped worker integrity and lifecycle
+        run: |
+          python3 tools/nitnem/build-private-sw.py
+          git diff --exit-code -- nitnem/sw.js
+          node tests/nitnem-worker-lifecycle.mjs
+      - name: Immutable private review package and access gate
+        run: |
+          python3 tools/nitnem/build-full-nitnem-v9-reader.py --output "${{ runner.temp }}/nitnem-v9"
+          python3 tools/nitnem/build-full-nitnem-v9-reader.py --output "${{ runner.temp }}/nitnem-v9" --verify
+          python3 tests/nitnem-v9-gate-contract.py

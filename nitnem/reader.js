@@ -5,7 +5,7 @@
 (()=>{
 'use strict';
 const EXPECTED_LIBRARY='b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a';
-const EXPECTED_LEARNING='b2fefd5aa5a76e7d47fe21ceae72bf987b35c49f507de89f119f3cf87bc2e8c5';
+const EXPECTED_LEARNING='7516a55af45c91576239fa07b064af8f3b5fd2f8b97cf9b2905bbad6e31f4e32';
 const EXPECTED_SOURCE_COMMIT='373ccc34f4a1c0ccb6ce36654bf6e9574087200f';
 const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
@@ -69,7 +69,7 @@ async function verifyPack(x,entry,name){
  return x;
 }
 async function teachingCourse(pack){
- const course=await jsonBytes('learning/course.v8.json',EXPECTED_LEARNING);
+ const course=await jsonBytes('learning/course.v9.json',EXPECTED_LEARNING);
  if(course?.meta?.schema!=='GLP-NITNEM-TEACHING-DRAFT-V1'||
     course.meta.editorialStatus!=='DRAFT_AI_UNREVIEWED'||
     course.meta.publicationAllowed!==false||
@@ -472,7 +472,8 @@ function openMeaningDetail(button){
   const m=state.model.lines[index],source=state.pack.units[m.unitIndex].lines[m.lineIndex];
   if(source.held||source.sha256!==m.sha256)return;
   content=L.lineDetails(state.learning,state.bani,source,state.pack.units[m.unitIndex]);
-  title=state.pack.units[m.unitIndex].title+' · line '+(m.lineIndex+1);
+  const isPassageContext=state.learning.closeTextNotes[state.bani+'|'+id]?.kind==='AGGREGATED_SOURCE_RECORD_EDUCATIONAL_CONTEXT_NOT_LITERAL_TRANSLATION';
+  title=state.pack.units[m.unitIndex].title+(isPassageContext?' · source record ':' · line ')+(m.lineIndex+1);
  }else if(button.dataset.detailUnit){
   const u=state.pack.units.find(x=>x.id===button.dataset.detailUnit);
   if(!u)return;
