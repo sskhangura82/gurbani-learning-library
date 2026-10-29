@@ -27,7 +27,6 @@ one('jaap076.line01','jaap091.line01');s=s.replaceAll('jaap76-','jaap91-');
 one('Fresh isolated headless Chrome on hosting Mac;','Fresh isolated headless Chrome in the candidate QA environment;');
 // The diagnostic getter assumes a source model. Wait for rendered source
 // rather than querying it during the asynchronous pack/model transition.
-// Errors and failed assertions are never swallowed by this readiness guard.
 const readiness='window.NITNEM_INTERNAL_QA?.getState().sourceVerified&&NITNEM_INTERNAL_QA.getState().teachingAvailable';
 assert.equal(s.split(readiness).length,4);
 s=s.replaceAll(readiness,'!!document.querySelector("#source-unit .scripture-line")&&'+readiness);
@@ -45,6 +44,20 @@ const glyphCheck=` await run('document.fonts.ready.then(()=>true)');
  fs.writeFileSync(path.join(evidence,'rendered-fonts.json'),JSON.stringify({status:'PASS',source:'Chrome CSS.getPlatformFontsForNode',fontFilesIncluded:false,checks:glyphEvidence},null,2)+'\\n');
 `;
 one(' const expected=source.units.slice(90,105)',glyphCheck+' const expected=source.units.slice(90,105)');
+// The unchanged reader suppresses scroll tracking for 1100ms after its own
+// navigation. Let that documented guard settle before testing a manual scroll.
+// A one-pixel user-like scroll then triggers the real debounced tracking path.
+const settle=` await delay(1200);
+ await run('window.scrollBy(0,1)');
+ await until('NITNEM_INTERNAL_QA.getState().unit===90','settled reading position at Chhand91');
+ const themePosition=await run('({y:scrollY,index:NITNEM_INTERNAL_QA.getState().index})');
+`;
+one(" check('Dark header stays visible while reading later chhands',",settle+" check('Dark header stays visible while reading later chhands',");
+const positionCheck=` const lightPosition=await run('({y:scrollY,index:NITNEM_INTERNAL_QA.getState().index})');
+ check('Changing theme preserves the settled visible passage and reading index',Math.abs(lightPosition.y-themePosition.y)<2&&lightPosition.index===themePosition.index,{before:themePosition,after:lightPosition});
+ fs.writeFileSync(path.join(evidence,'theme-position.json'),JSON.stringify({status:'PASS',before:themePosition,after:lightPosition,scope:'Settled manual scrolling after the existing 1100ms programmatic-scroll guard; rapid-switch races are not claimed tested'},null,2)+'\\n');
+`;
+one(" await shot('nitnem-v15-jaap91-light-390.png');",positionCheck+" await shot('nitnem-v15-jaap91-light-390.png');");
 const generated=path.join(root,'tests/.nitnem-v15-browser.generated.mjs');assert.ok(!fs.existsSync(generated));
 fs.writeFileSync(generated,s,{flag:'wx'});
 let status=1;
