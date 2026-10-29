@@ -1,6 +1,6 @@
-/* Reuse the inspected 19-check browser scenario against a separately built
- * V15 package. No existing profile, private invitation or running Mac process.
- * The generated harness is temporary; the original V14 test is never edited.
+/* Adapt the inspected browser scenario to a separate V15 package.
+ * No existing profile, private invitation or running Mac process is used.
+ * Actual platform-font checks guard against unreadable Gurmukhi screenshots.
  */
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -25,13 +25,26 @@ one('jaap090.line02','jaap102.line02');one('smallest or the child','primal');
 one('All 90 authored Jaap','All 105 authored Jaap');one('.length===90','.length===105');
 one('jaap076.line01','jaap091.line01');s=s.replaceAll('jaap76-','jaap91-');
 one('Fresh isolated headless Chrome on hosting Mac;','Fresh isolated headless Chrome in the candidate QA environment;');
-// The diagnostic getter assumes the source model already exists. During a
-// fresh navigation the pack can be assigned before that model is ready.
-// Wait for actual rendered source first, rather than calling the getter in
-// that transient state. No runtime error or failed assertion is swallowed.
+// The diagnostic getter assumes a source model. Wait for rendered source
+// rather than querying it during the asynchronous pack/model transition.
+// Errors and failed assertions are never swallowed by this readiness guard.
 const readiness='window.NITNEM_INTERNAL_QA?.getState().sourceVerified&&NITNEM_INTERNAL_QA.getState().teachingAvailable';
-assert.equal(s.split(readiness).length,4,'Exactly initial, reload and Anand readiness checks must be adapted');
+assert.equal(s.split(readiness).length,4);
 s=s.replaceAll(readiness,'!!document.querySelector("#source-unit .scripture-line")&&'+readiness);
+const glyphCheck=` await run('document.fonts.ready.then(()=>true)');
+ await send('DOM.enable',{},session);await send('CSS.enable',{},session);
+ const {root:fontDocument}=await send('DOM.getDocument',{depth:0},session);
+ const glyphEvidence=[];
+ for(const selector of ['[data-line-id="jaap091.line01"] .g-word','[data-meaning-line="jaap091.line01"] .punjabi']){
+  const {nodeId}=await send('DOM.querySelector',{nodeId:fontDocument.nodeId,selector},session);
+  if(!nodeId)throw Error('Gurmukhi glyph-test element missing: '+selector);
+  const {fonts}=await send('CSS.getPlatformFontsForNode',{nodeId},session);
+  glyphEvidence.push({selector,fonts});
+ }
+ check('Real Gurmukhi fonts supply glyphs for scripture and Punjabi explanation',glyphEvidence.every(x=>x.fonts.some(f=>/Gurmukhi/i.test(f.familyName)&&f.glyphCount>0)),{glyphEvidence});
+ fs.writeFileSync(path.join(evidence,'rendered-fonts.json'),JSON.stringify({status:'PASS',source:'Chrome CSS.getPlatformFontsForNode',fontFilesIncluded:false,checks:glyphEvidence},null,2)+'\\n');
+`;
+one(' const expected=source.units.slice(90,105)',glyphCheck+' const expected=source.units.slice(90,105)');
 const generated=path.join(root,'tests/.nitnem-v15-browser.generated.mjs');assert.ok(!fs.existsSync(generated));
 fs.writeFileSync(generated,s,{flag:'wx'});
 let status=1;
