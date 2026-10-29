@@ -1,0 +1,109 @@
+{
+  "references": [
+    {
+      "key": "jaap-text6-v16",
+      "title": "SriDasam.org: original text witness, page 6",
+      "url": "https://www.sridasam.org/0006.html",
+      "scope": "Directly read the Gurmukhi witness covering 106–120. Compared source forms, not translation authority. Differences include ਚਿਤ੍ਰੰ/ਚਿੱਤ੍ਰੰ, nukta forms, ਦਿਹਿੰਦ/ਦਿਹੰਦ, ਆਕਿਲ/ਆਕਲ and internal counters. Frozen source is not corrected."
+    },
+    {
+      "key": "jaap-bvs-106-120-v16",
+      "title": "Sikh Translations: Bhai Vir Singh-derived Bhagvathee commentary",
+      "url": "https://www.sikhtranslations.com/chh-2/",
+      "scope": "Direct HTML consultation limited to disputed interpretations: protection/warrior/canopy, awareness/fearlessness, independence, vitality/release, deen/indwelling, reaching/knowing, sovereignty/radiance and speech. This is a derivative account, not direct inspection of a printed Bhai Vir Singh edition."
+    },
+    {
+      "key": "jaap-punjabi-comparison-v16",
+      "title": "Japo Satnam: Punjabi and English Jaap Sahib comparison",
+      "url": "https://japosatnam.com/jaap-sahib/",
+      "scope": "Compared only alternative senses at 106–108, 113, 115 and 120. The Punjabi and English columns sometimes differ. No assertion of independent textual provenance or qualified approval is made."
+    },
+    {
+      "key": "jaap-arabic-persian-lexicon-v16",
+      "title": "Punjabi Di Arabi-Farsi Shabdshala, edited by Boota Singh Brar and Jaj Singh",
+      "url": "https://www.punjabi-kavita.com/Punjabi-Di-Arabi-Farsi-Shabdshala.php",
+      "scope": "Directly inspected ਕਲਾਮ, ਕਲੀਮ and ਫ਼ਹੀਮ entries. They support discourse, speaker and understanding senses; this is lexical context, not exact-line textual adjudication."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "unitIds": [
+        "jaap106",
+        "jaap107",
+        "jaap108",
+        "jaap109",
+        "jaap110",
+        "jaap111",
+        "jaap112",
+        "jaap113",
+        "jaap114",
+        "jaap115",
+        "jaap116",
+        "jaap117",
+        "jaap118",
+        "jaap119",
+        "jaap120"
+      ],
+      "referenceKeys": [
+        "internal-jaap",
+        "jaap-text6-v16"
+      ],
+      "finding": "The frozen batch has fifteen four-line units, no new metrical headings and sixty occurrence IDs. Original spellings, hashes, grouping and open source-review flags remain untouched. All new teaching is original educational draft content, not a literal or approved translation.",
+      "humanReviewed": false
+    },
+    {
+      "unitIds": [
+        "jaap106",
+        "jaap107",
+        "jaap108",
+        "jaap113",
+        "jaap115",
+        "jaap120"
+      ],
+      "referenceKeys": [
+        "jaap-bvs-106-120-v16",
+        "jaap-punjabi-comparison-v16",
+        "jaap-arabic-persian-lexicon-v16"
+      ],
+      "finding": "Selected readings remain provisional: protection with warrior/canopy alternatives; awareness with fearlessness; self-dependence with universal dependence; release with vitality; giving/taking with deen/indwelling; reaching with knowing; speech with a power-related English alternative. Lexical evidence supports speaker/discourse at 120. The draft exposes these choices instead of silently reconciling them.",
+      "humanReviewed": false
+    },
+    {
+      "unitIds": [
+        "jaap112",
+        "jaap114",
+        "jaap116",
+        "jaap117"
+      ],
+      "referenceKeys": [
+        "internal-jaap"
+      ],
+      "finding": "Exact source repeats carry the same English/Punjabi main wording, ignoring only the terminal stanza counter for comparison. The original counters and line hashes are never changed. New local cautions and passage-specific Study lessons explain the changed context.",
+      "humanReviewed": false
+    },
+    {
+      "unitIds": [
+        "jaap106",
+        "jaap107",
+        "jaap108",
+        "jaap109",
+        "jaap110",
+        "jaap111",
+        "jaap112",
+        "jaap113",
+        "jaap114",
+        "jaap115",
+        "jaap116",
+        "jaap117",
+        "jaap118",
+        "jaap119",
+        "jaap120"
+      ],
+      "referenceKeys": [
+        "internal-jaap"
+      ],
+      "finding": "Author editorial self-review and separate mechanical/browser tests are not independent-model or qualified Sikh/Punjabi review. Dictionary endpoints that failed to return content were not used as evidence. No PDF analysis or physical-device acceptance is claimed.",
+      "humanReviewed": false
+    }
+  ]
+}

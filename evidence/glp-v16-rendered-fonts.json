@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "source": "Chrome CSS.getPlatformFontsForNode",
+  "fontFilesIncluded": false,
+  "checks": [
+    {
+      "selector": "[data-line-id=\"jaap106.line01\"] .g-word",
+      "fonts": [
+        {
+          "familyName": "Gurmukhi MN",
+          "postScriptName": "GurmukhiMN",
+          "isCustomFont": false,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "selector": "[data-meaning-line=\"jaap106.line01\"] .punjabi",
+      "fonts": [
+        {
+          "familyName": "Gurmukhi MN",
+          "postScriptName": "GurmukhiMN",
+          "isCustomFont": false,
+          "glyphCount": 30
+        }
+      ]
+    }
+  ]
+}

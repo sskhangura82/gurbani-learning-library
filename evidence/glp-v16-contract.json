@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "failed": 0,
+  "sourceRecords": 1039,
+  "studyLessons": 247,
+  "newSourceRecords": 60,
+  "newStudies": 15,
+  "previousNotesPreserved": 979,
+  "previousStudiesPreserved": 232,
+  "liveDeployment": false,
+  "humanReviewed": 0,
+  "results": [
+    {
+      "name": "Exact V15 and all fifteen previous course bytes preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Frozen manifest and six original source packs preserve hashes, records and review flags",
+      "status": "PASS"
+    },
+    {
+      "name": "979 prior notes and 232 prior Study objects remain exact",
+      "status": "PASS"
+    },
+    {
+      "name": "The increment is precisely Chhands 106–120: 60 records, 15 studies, no added headings",
+      "status": "PASS"
+    },
+    {
+      "name": "New notes are bilingual, unique source occurrences and explicitly unreviewed",
+      "status": "PASS"
+    },
+    {
+      "name": "Each new Study has all established fields and vocabulary from its own source",
+      "status": "PASS"
+    },
+    {
+      "name": "Five exact repeated lines reuse main wording without changing source counters",
+      "status": "PASS"
+    },
+    {
+      "name": "Coverage independently reconciles to 1039 records,247 studies and Jaap466/120",
+      "status": "PASS"
+    },
+    {
+      "name": "Anand24 remains wholly withheld and Jaap121 onward stays pending",
+      "status": "PASS"
+    },
+    {
+      "name": "References are additive; uncertainty and authority boundaries remain explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "The real renderer exposes new meanings and studies; Read stays clear and wrong hashes fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "V15 theme-jump repair and all saved-learning/appearance bytes are preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "All 47 package and 46 worker-cache assets have independently matching hashes and version scope",
+      "status": "PASS"
+    },
+    {
+      "name": "No other package files or banis were changed",
+      "status": "PASS"
+    }
+  ]
+}

@@ -32,7 +32,7 @@ with tempfile.TemporaryDirectory(prefix=f'glp-v{version}-gateway-') as temp:
  for rel in sorted(names):
   assert '..' not in Path(rel).parts and not rel.startswith('/')
   if rel.startswith(prefix):src=site/rel[len(prefix):]
-  elif rel.split('/')[0].startswith('nitnem') and '/' in rel:src=ROOT/'nitnem'/rel.split('/',1)[1]
+  elif rel.split('/')[0].startswith('nitnem') and '/' in rel:src=site/rel.split('/',1)[1]
   else:src=ROOT/rel
   assert src.is_file() and not src.is_symlink(),str(src)
   dst=root/rel;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dst);hashes[rel]=sha(dst.read_bytes())
