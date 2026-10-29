@@ -103,6 +103,11 @@ let reader=files.get('reader.js').toString();
 const oldPin="const EXPECTED_LEARNING='"+priorHash+"';";
 assert.equal(reader.split(oldPin).length,2);assert.equal(reader.split("jsonBytes('learning/course.v14.json',EXPECTED_LEARNING)").length,2);
 reader=reader.replace(oldPin,"const EXPECTED_LEARNING='"+sha(courseBytes)+"';").replace("jsonBytes('learning/course.v14.json',EXPECTED_LEARNING)","jsonBytes('learning/course.v15.json',EXPECTED_LEARNING)");
+// BODY carries data-mode for styling, but must not receive a mode-button
+// click handler: bubbling theme/bookmark clicks otherwise rerender and jump.
+const broadModeSelector="document.querySelectorAll('[data-mode]')";
+assert.equal(reader.split(broadModeSelector).length,3,'Expected exactly the aria update and click binding');
+reader=reader.replaceAll(broadModeSelector,"document.querySelectorAll('button[data-mode]')");
 files.set('reader.js',Buffer.from(reader));files.set('learning/course.v15.json',courseBytes);
 const expected=Object.fromEntries([...files].map(([name,bytes])=>['./'+name,sha(bytes)]));
 assert.equal(Object.keys(expected).length,45);
@@ -115,6 +120,6 @@ fs.mkdirSync(path.join(out,'site'),{recursive:true});fs.mkdirSync(path.join(out,
 for(const [name,bytes] of files){const p=path.join(out,'site',name);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,bytes,{flag:'wx'});}
 const preserved={};
 for(const name of ['nitnem/data/library.json',...Object.values(manifest.entries).map(e=>'nitnem/'+e.path),...Array.from({length:14},(_,i)=>'nitnem/learning/course.v'+(i+1)+'.json'),'nitnem/appearance.js','nitnem/appearance.css','nitnem/index.html','nitnem/reader.css','nitnem/japji.html','nitnem/japji-assets/js/japji-full.js','full-japji.html','index.html','js/japji-full.js','sw.js'])preserved[name]=sha(read(name));
-const report={status:'BUILT_NONDEPLOYING_CANDIDATE',baseCommit,courseSHA256:sha(courseBytes),sourceRecords:979,studyLessons:232,jaapRecords:406,jaapStudies:105,additionalCoveredRecords:60,originalNewMainExplanations:59,priorExactMainExplanationReuses:1,addedStudies:15,previousNotesPreserved:919,previousStudiesPreserved:217,originalFilesPreserved:preserved,assetHashes:Object.fromEntries([...files].map(([n,b])=>[n,sha(b)])),assets:46,cachedAssets:45,humanReviewed:0,independentModelReview:false,liveDeployment:false,publicMainChanged:false,desktopExecution:'BLOCKED_BEFORE_RUNNING',heldAnand24:true};
+const report={status:'BUILT_NONDEPLOYING_CANDIDATE',baseCommit,courseSHA256:sha(courseBytes),sourceRecords:979,studyLessons:232,jaapRecords:406,jaapStudies:105,additionalCoveredRecords:60,originalNewMainExplanations:59,priorExactMainExplanationReuses:1,addedStudies:15,previousNotesPreserved:919,previousStudiesPreserved:217,originalFilesPreserved:preserved,assetHashes:Object.fromEntries([...files].map(([n,b])=>[n,sha(b)])),assets:46,cachedAssets:45,humanReviewed:0,independentModelReview:false,liveDeployment:false,publicMainChanged:false,desktopExecution:'BLOCKED_BEFORE_RUNNING',heldAnand24:true,runtimeAmendments:[{path:'reader.js',change:'Restrict both mode-control selectors to button[data-mode]',reason:'BODY also has data-mode; its inherited click listener caused unrelated clicks to rerender and scroll the reader',scope:'Generated candidate only; original runtime and appearance files unchanged'}]};
 fs.writeFileSync(path.join(out,'evidence/build.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
