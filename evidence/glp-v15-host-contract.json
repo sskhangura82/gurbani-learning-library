@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "failed": 0,
+  "sourceRecords": 979,
+  "studyLessons": 232,
+  "addedCoveredRecords": 60,
+  "newMainExplanations": 59,
+  "priorMainReuses": 1,
+  "addedStudyLessons": 15,
+  "liveDeployment": false,
+  "environment": "Node with the actual learning renderer and a DOM stub; not browser or scholarly review",
+  "results": [
+    {
+      "name": "Pinned V14 course and all fourteen packaged prior courses remain byte-identical",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned manifest and all source packs retain every source hash and unapproved status",
+      "status": "PASS"
+    },
+    {
+      "name": "All 919 earlier notes and 217 earlier studies remain exact, including editorial/reuse history",
+      "status": "PASS"
+    },
+    {
+      "name": "Exactly sixty new occurrences and fifteen new studies cover 91-105, without counting headings",
+      "status": "PASS"
+    },
+    {
+      "name": "Every added note is bilingual, source-bound, non-generic and explicitly unreviewed",
+      "status": "PASS"
+    },
+    {
+      "name": "Every added Study has bilingual summary, substantive close reading and exact-source vocabulary",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeat handling is exact and new-versus-reused coverage accounting is honest",
+      "status": "PASS"
+    },
+    {
+      "name": "Totals reconcile to 979/1361 records and 232/327 studies; other banis retain coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "Anand 24 stays withheld and all Jaap 106 onward remain pending",
+      "status": "PASS"
+    },
+    {
+      "name": "Research is additive, authority remains unchanged and disputed alternatives remain exposed",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual learning renderer displays all added source-specific teaching and rejects wrong hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "Appearance, header, saved-learning and embedded Japji bytes remain unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Reader changes are confined to course binding and two button-only mode selectors; worker code is unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "All 46 candidate assets and 45 cached assets match independently recomputed hashes",
+      "status": "PASS"
+    }
+  ]
+}

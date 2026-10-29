@@ -1,0 +1,84 @@
+name: Full Nitnem V15 private release qualification - NONDEPLOYING
+on:
+  push:
+    branches: [feature/glp-v15-private-release-20261028]
+  pull_request:
+    paths:
+      - 'tools/nitnem/*91-95-candidate.mjs'
+      - 'tools/nitnem/*96-100-candidate.mjs'
+      - 'tools/nitnem/*101-105-candidate.mjs'
+      - 'tools/nitnem/*91-105-research.mjs'
+      - 'tools/nitnem/build-nitnem-v15-candidate.mjs'
+      - 'tests/nitnem-v15-*.mjs'
+      - '.github/workflows/glp-nitnem-v15-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  source-and-isolated-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm lineage and build only into a new temporary candidate
+        run: |
+          git merge-base --is-ancestor 2f50e75732af3b8625a68ed897341d42d9a36f3c HEAD
+          node tools/nitnem/build-nitnem-v15-candidate.mjs --out "$RUNNER_TEMP/glp-v15-candidate"
+      - name: Verify source, prior teaching, new coverage and actual learning renderer
+        run: node tests/nitnem-v15-candidate.mjs --out "$RUNNER_TEMP/glp-v15-candidate"
+      - name: Baseline appearance, Japji and saved-learning regressions
+        run: |
+          node tests/nitnem-appearance.mjs
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/service-worker.mjs
+          node tests/nitnem-worker-lifecycle.mjs
+      - name: Baseline V14 private gateway remains intact - not a V15 deployment test
+        run: python3 tests/nitnem-v14-gate-contract.py
+      - name: Generated V15 gateway with synthetic credentials
+        run: python3 tests/generated-private-gateway-contract.py --site "$RUNNER_TEMP/glp-v15-candidate/site" --version 15 --report "$RUNNER_TEMP/glp-v15-candidate/evidence/gateway-v15.json"
+      - name: Supply Gurmukhi fonts to this disposable Linux QA runner only
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-core
+          fc-cache -f
+          fc-match -f '%{family}\n' 'Noto Sans Gurmukhi' | grep -F 'Noto Sans Gurmukhi'
+      - name: Real isolated browser - candidate package and synthetic learning only
+        run: node tests/nitnem-v15-browser-candidate.mjs --out "$RUNNER_TEMP/glp-v15-candidate"
+      - name: Recheck package hashes and untouched application source
+        run: |
+          node tests/nitnem-v15-candidate.mjs --out "$RUNNER_TEMP/glp-v15-candidate"
+          git diff --exit-code -- nitnem full-japji.html index.html js css sw.js
+      - name: Record exact commit and nondeployment status
+        env:
+          CANDIDATE_DIR: ${{ runner.temp }}/glp-v15-candidate
+        run: |
+          python3 - <<'PY'
+          import os,json,pathlib
+          p=pathlib.Path(os.environ['CANDIDATE_DIR'])
+          build=json.loads((p/'evidence/build.json').read_text())
+          contract=json.loads((p/'evidence/contract.json').read_text())
+          browser=json.loads((p/'evidence/glp-nitnem-v15-browser.json').read_text())
+          fonts=json.loads((p/'evidence/rendered-fonts.json').read_text())
+          assert contract['status']=='PASS' and browser['status']=='PASS' and fonts['status']=='PASS'
+          assert not any(f.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.eot'} for f in p.rglob('*') if f.is_file())
+          receipt={'status':'VERIFIED_NONDEPLOYING_CANDIDATE','commit':os.environ['GITHUB_SHA'],'runId':os.environ['GITHUB_RUN_ID'],'build':build,'contractChecks':contract['checks'],'browserChecks':browser['checks'],'gurmukhiPlatformGlyphCheck':'PASS','liveDeployment':False,'humanReviewed':False,'physicalIPhoneSafari':'NOT_TESTED','realOffline':'NOT_TESTED'}
+          (p/'evidence/ci-receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+            f.write('# V15 candidate verified; NOT DEPLOYED\n\n')
+            f.write('Jaap 91-105: 60 additional covered source records, including one exact prior main-meaning reuse, and 15 Study drafts.\n\n')
+            f.write('Candidate totals: 979/1361 records and 232/327 studies. Jaap: 406/782 records and 105/199 studies.\n\n')
+            f.write('Original source, earlier teaching and Light/Dark assets preserved. Gurmukhi glyph supply verified in Chrome; screenshots require visual inspection too. Anand24 held. Qualified review and physical iPhone/Safari/offline acceptance pending.\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: glp-nitnem-v15-candidate-${{ github.sha }}
+          path: ${{ runner.temp }}/glp-v15-candidate
+          retention-days: 14
+          if-no-files-found: warn
