@@ -25,6 +25,13 @@ one('jaap090.line02','jaap102.line02');one('smallest or the child','primal');
 one('All 90 authored Jaap','All 105 authored Jaap');one('.length===90','.length===105');
 one('jaap076.line01','jaap091.line01');s=s.replaceAll('jaap76-','jaap91-');
 one('Fresh isolated headless Chrome on hosting Mac;','Fresh isolated headless Chrome in the candidate QA environment;');
+// The diagnostic getter assumes the source model already exists. During a
+// fresh navigation the pack can be assigned before that model is ready.
+// Wait for actual rendered source first, rather than calling the getter in
+// that transient state. No runtime error or failed assertion is swallowed.
+const readiness='window.NITNEM_INTERNAL_QA?.getState().sourceVerified&&NITNEM_INTERNAL_QA.getState().teachingAvailable';
+assert.equal(s.split(readiness).length,4,'Exactly initial, reload and Anand readiness checks must be adapted');
+s=s.replaceAll(readiness,'!!document.querySelector("#source-unit .scripture-line")&&'+readiness);
 const generated=path.join(root,'tests/.nitnem-v15-browser.generated.mjs');assert.ok(!fs.existsSync(generated));
 fs.writeFileSync(generated,s,{flag:'wx'});
 let status=1;
