@@ -10,14 +10,14 @@ import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 
-const root=fileURLToPath(new URL('../',import.meta.url));
+const root=path.resolve(fileURLToPath(new URL('../',import.meta.url)));
 const evidence=path.join(root,'evidence'),shots=path.join(evidence,'screenshots','sukhmani');
 const KEY='glp001.sukhmani.v1',JAPJI='glp001.continuous.v2',PREFIX='/gurbani-learning-library/';
 const sentinel='SYNTHETIC JAPJI SENTINEL — DO NOT CHANGE';
-const report={startedAt:new Date().toISOString(),engine:'chromium',browserVersion:null,fixture:'Ephemeral localhost server under /gurbani-learning-library/, fresh nonpersistent browser contexts',checks:[],screenshots:[],runtimeErrors:[],limitations:['No physical iPhone, Safari Home Screen, VoiceOver or actual airplane-mode acceptance.','Hidden-page guide behavior uses an explicitly simulated document.hidden signal.','Offline service worker is explicitly registered by this test at trusted localhost; production pwa.js registers automatically on HTTPS.']};
+const report={startedAt:new Date().toISOString(),engine:'chromium',browserVersion:null,fixture:'Ephemeral localhost server under /gurbani-learning-library/, fresh nonpersistent browser contexts',checks:[],screenshots:[],setupDiagnostics:[],runtimeErrors:[],limitations:['No physical iPhone, Safari Home Screen, VoiceOver or actual airplane-mode acceptance.','Hidden-page guide behavior uses an explicitly simulated document.hidden signal.','Offline service worker is explicitly registered by this test at trusted localhost; production pwa.js registers automatically on HTTPS.']};
 await fs.mkdir(shots,{recursive:true});
 const checks=report.checks;
-let activePage=null;
+let activePage=null,setupAttempt=0;
 async function diagnostic(page,name){if(page&&!page.isClosed()){try{await screenshot(page,name);}catch(e){report.screenshots.push({name,error:e.message});}}}
 async function check(name,fn,details={}){try{await fn();checks.push({name,status:'passed',...details});return true;}catch(e){checks.push({name,status:'failed',error:e.stack||String(e),...details});await diagnostic(activePage,'failure-'+checks.length+'-'+(details.width||'scenario'));return false;}}
 function loadData(text,key){const context={window:{}};vm.runInNewContext(text,context,{timeout:3000});return JSON.parse(JSON.stringify(context.window[key]));}
@@ -43,10 +43,25 @@ const server=http.createServer(async(req,res)=>{
 let browser,origin;
 async function fresh(viewport,{serviceWorkers='block',initial=null}={}){
  const context=await browser.newContext({viewport,deviceScaleFactor:1,acceptDownloads:true,serviceWorkers,reducedMotion:'reduce'});
- await context.addInitScript(({KEY,JAPJI,sentinel,initial})=>{if(localStorage.getItem(JAPJI)===null)localStorage.setItem(JAPJI,sentinel);if(initial!==null&&localStorage.getItem(KEY)===null)localStorage.setItem(KEY,initial);},{KEY,JAPJI,sentinel,initial});
- const page=await context.newPage();activePage=page;page.setDefaultTimeout(12000);page.on('pageerror',error=>report.runtimeErrors.push({viewport:viewport.width,message:error.message}));
- await page.goto(origin+PREFIX+'sukhmani.html');await page.waitForFunction(()=>document.querySelectorAll('#sukhmani-text .sk-line').length===510);
- return {context,page};
+ const attempt=++setupAttempt;let page,mainResponseStatus=null;
+ try{
+  await context.addInitScript(({KEY,JAPJI,sentinel,initial})=>{if(localStorage.getItem(JAPJI)===null)localStorage.setItem(JAPJI,sentinel);if(initial!==null&&localStorage.getItem(KEY)===null)localStorage.setItem(KEY,initial);},{KEY,JAPJI,sentinel,initial});
+  page=await context.newPage();activePage=page;page.setDefaultTimeout(12000);page.on('pageerror',error=>report.runtimeErrors.push({viewport:viewport.width,message:error.message}));
+  const response=await page.goto(origin+PREFIX+'sukhmani.html');mainResponseStatus=response?.status()??null;
+  assert.equal(mainResponseStatus,200,'Sukhmani main document must return HTTP 200 before reader checks');
+  await page.waitForFunction(()=>document.querySelectorAll('#sukhmani-text .sk-line').length===510);
+  return {context,page};
+ }catch(error){
+  const setup={attempt,width:viewport.width,height:viewport.height,mainResponseStatus,error:error.stack||String(error)};
+  if(page&&!page.isClosed()){
+   try{Object.assign(setup,await page.evaluate(()=>({url:location.href,title:document.title,bodyText:(document.body?.innerText||'').slice(0,2000),renderedLineCount:document.querySelectorAll('#sukhmani-text .sk-line').length})));}catch(diagnosticError){setup.diagnosticError=diagnosticError.message;}
+   await diagnostic(page,'failure-initial-load-'+attempt+'-'+viewport.width);
+  }
+  report.setupDiagnostics.push(setup);
+  try{await context.close();}catch(closeError){setup.closeError=closeError.message;}
+  if(activePage===page)activePage=null;
+  throw error;
+ }
 }
 async function screenshot(page,name){await page.screenshot({path:path.join(shots,name+'.png'),fullPage:false});report.screenshots.push('evidence/screenshots/sukhmani/'+name+'.png');}
 async function closeDialog(page){if(await page.locator('#sk-dialog').evaluate(d=>d.open)){await page.locator('#sk-dialog-close').click();await page.waitForFunction(()=>!document.getElementById('sk-dialog').open);}}
