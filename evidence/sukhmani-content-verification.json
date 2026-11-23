@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "total": 8,
+  "checks": [
+    "Exactly the requested first six, not a claim of a complete composition",
+    "All original Unicode bytes match the frozen first-six sequence",
+    "A separately retrieved transcription agrees in exact order, text and Ang",
+    "Six Saloks, 48 ten-line pauris, both Rahau lines and all headings survive",
+    "Every source occurrence has its own bilingual draft and optional reading aid",
+    "Six introductions, six Salok studies, 48 pauri studies and Rahau study are contextual",
+    "Source and editorial content remain separate and source attribution is retained",
+    "Existing library entry and offline shell include the functional reader"
+  ],
+  "sourceOccurrences": 510,
+  "pauriVerseLines": 480,
+  "salokVerseLines": 14,
+  "rahauLines": 2,
+  "headings": 14,
+  "meaningDrafts": 510,
+  "passageStudyDrafts": 55,
+  "humanReviewed": 0
+}

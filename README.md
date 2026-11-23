@@ -4,6 +4,12 @@
 
 [Open the existing family site](https://sskhangura82.github.io/gurbani-learning-library/) · [Read Japji Sahib directly](https://sskhangura82.github.io/gurbani-learning-library/full-japji.html)
 
+## Sukhmani Sahib: first-six development preview
+
+This branch adds `sukhmani.html` to the existing library: Ashtpadis 1–6 of 24, all six Saloks, 48 pauris and the Rahau, across Ang 262–271. Its 510 original source occurrences (including headings) are compared with a second digital source. English/Punjabi line explanations, passage studies and approximate transliteration remain clearly labeled drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
+
+See [scope, sources and review status](docs/SUKHMANI_FIRST_SIX.md). This preview does not claim a complete Sukhmani Sahib, qualified human review or publication to the family site. Existing Japji source and learning are preserved.
+
 ## What is included in the Revision 7 candidate
 
 - A simple, calming **home page** (Nitnem/Japji, Visit a Gurdwara, Simran Room).

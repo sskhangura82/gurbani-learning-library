@@ -1,0 +1,597 @@
+{
+  "schema": "glp-sukhmani-editorial-spot-review-v1",
+  "composition": "Sukhmani Sahib",
+  "coverage": "Ashtpadis 1–6 of 24",
+  "createdAt": "2026-11-23T13:00:45.099009+00:00",
+  "reviewer": {
+    "type": "AI assistant",
+    "agent": "sukhmani_reader",
+    "separateReviewTask": true,
+    "qualifiedHumanReviewer": false,
+    "bilingualExpertReview": false,
+    "religiousOrScholarlyCertification": false
+  },
+  "status": "focused_spot_review_complete_with_three_author_followups_verified",
+  "limitations": [
+    "AI editorial spot review only; not a comprehensive review of all 510 source occurrences or all teaching content.",
+    "Not a bilingual-expert review, qualified Punjabi/Gurbani approval, religious endorsement or certification.",
+    "No independent printed-edition collation was performed by this reviewer.",
+    "Absence of a confirmed material error within the sampled scope is not a guarantee that all translation, theological or linguistic issues have been resolved.",
+    "Selected commentary consultation is not a comprehensive survey of Sikh interpretive traditions.",
+    "This record concerns authored content, not browser behavior, offline reliability or pronunciation certification."
+  ],
+  "artifacts": {
+    "authoringAshtpadis1To3": {
+      "filename": "sukhmani-teaching-1-3.json",
+      "pathRelativeToTaskWorkspace": "sukhmani-teaching-1-3.json",
+      "sha256": "beef3c341e4cc16ae931e439475e19c2b5e4904f07a6d5d3b7d0f3ede7a0eec6",
+      "hashBasis": "Exact UTF-8 file bytes reread after the adopted followups"
+    },
+    "authoringAshtpadis4To6": {
+      "filename": "sukhmani-teaching-4-6.json",
+      "pathRelativeToTaskWorkspace": "sukhmani-teaching-4-6.json",
+      "sha256": "50ccd90eb05ded0db9a58c1959194453b655ef3b844b910f03e3948803216c31",
+      "hashBasis": "Exact UTF-8 file bytes reread after the adopted followups"
+    },
+    "originalSource": {
+      "filename": "sukhmani-1-6-source.json",
+      "pathRelativeToTaskWorkspace": "sukhmani-source/sukhmani-1-6-source.json",
+      "sha256": "7d7dbac106e2a5bdc9660b8623d493a985c9368ff5b21af7083aca00161f336e",
+      "hashBasis": "Exact UTF-8 file bytes reread after the adopted followups"
+    }
+  },
+  "scope": {
+    "targetedPassages": [
+      {
+        "ashtpadi": 1,
+        "pauri": 7,
+        "focus": "anhad and spiritual experience",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a01.p07.l01",
+          "sukhmani.a01.p07.l02",
+          "sukhmani.a01.p07.l03",
+          "sukhmani.a01.p07.l04",
+          "sukhmani.a01.p07.l05",
+          "sukhmani.a01.p07.l06",
+          "sukhmani.a01.p07.l07",
+          "sukhmani.a01.p07.l08",
+          "sukhmani.a01.p07.l09",
+          "sukhmani.a01.p07.l10"
+        ],
+        "angs": [
+          263
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 3,
+        "pauri": 1,
+        "focus": "sacrificial offerings and severe ascetic examples",
+        "sourceOccurrenceCount": 11,
+        "sourceIds": [
+          "sukhmani.a03.p01.l01",
+          "sukhmani.a03.p01.l02",
+          "sukhmani.a03.p01.l03",
+          "sukhmani.a03.p01.l04",
+          "sukhmani.a03.p01.l05",
+          "sukhmani.a03.p01.l06",
+          "sukhmani.a03.p01.l07",
+          "sukhmani.a03.p01.l08",
+          "sukhmani.a03.p01.l09",
+          "sukhmani.a03.p01.l10",
+          "sukhmani.a03.p01.l11"
+        ],
+        "angs": [
+          265
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 3,
+        "pauri": 8,
+        "focus": "Naam and ethical conduct",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a03.p08.l01",
+          "sukhmani.a03.p08.l02",
+          "sukhmani.a03.p08.l03",
+          "sukhmani.a03.p08.l04",
+          "sukhmani.a03.p08.l05",
+          "sukhmani.a03.p08.l06",
+          "sukhmani.a03.p08.l07",
+          "sukhmani.a03.p08.l08",
+          "sukhmani.a03.p08.l09",
+          "sukhmani.a03.p08.l10"
+        ],
+        "angs": [
+          266
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 4,
+        "pauri": 6,
+        "focus": "bodily-disability metaphors and grace",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a04.p06.l01",
+          "sukhmani.a04.p06.l02",
+          "sukhmani.a04.p06.l03",
+          "sukhmani.a04.p06.l04",
+          "sukhmani.a04.p06.l05",
+          "sukhmani.a04.p06.l06",
+          "sukhmani.a04.p06.l07",
+          "sukhmani.a04.p06.l08",
+          "sukhmani.a04.p06.l09",
+          "sukhmani.a04.p06.l10"
+        ],
+        "angs": [
+          267
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 5,
+        "pauri": 5,
+        "focus": "par-tria and ethical use of faculties",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a05.p05.l01",
+          "sukhmani.a05.p05.l02",
+          "sukhmani.a05.p05.l03",
+          "sukhmani.a05.p05.l04",
+          "sukhmani.a05.p05.l05",
+          "sukhmani.a05.p05.l06",
+          "sukhmani.a05.p05.l07",
+          "sukhmani.a05.p05.l08",
+          "sukhmani.a05.p05.l09",
+          "sukhmani.a05.p05.l10"
+        ],
+        "angs": [
+          268,
+          269
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 6,
+        "pauri": 5,
+        "focus": "neeki jaat and attributed human-birth interpretation",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a06.p05.l01",
+          "sukhmani.a06.p05.l02",
+          "sukhmani.a06.p05.l03",
+          "sukhmani.a06.p05.l04",
+          "sukhmani.a06.p05.l05",
+          "sukhmani.a06.p05.l06",
+          "sukhmani.a06.p05.l07",
+          "sukhmani.a06.p05.l08",
+          "sukhmani.a06.p05.l09",
+          "sukhmani.a06.p05.l10"
+        ],
+        "angs": [
+          270
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      }
+    ],
+    "targetedSourceOccurrenceCount": 61,
+    "targetedCountNote": "The total of 61 includes the Ashtpadi heading occurrence in 3.1; it is not a claim that all 61 items are individual poetic verses.",
+    "additionalPassageReadThroughs": [
+      {
+        "ashtpadi": 1,
+        "pauri": 2,
+        "focus": "rebirth, death, spiritual assurances and fear",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a01.p02.l01",
+          "sukhmani.a01.p02.l02",
+          "sukhmani.a01.p02.l03",
+          "sukhmani.a01.p02.l04",
+          "sukhmani.a01.p02.l05",
+          "sukhmani.a01.p02.l06",
+          "sukhmani.a01.p02.l07",
+          "sukhmani.a01.p02.l08",
+          "sukhmani.a01.p02.l09",
+          "sukhmani.a01.p02.l10"
+        ],
+        "angs": [
+          262
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 2,
+        "pauri": 1,
+        "focus": "death, Divine companionship and deliverance",
+        "sourceOccurrenceCount": 11,
+        "sourceIds": [
+          "sukhmani.a02.p01.l01",
+          "sukhmani.a02.p01.l02",
+          "sukhmani.a02.p01.l03",
+          "sukhmani.a02.p01.l04",
+          "sukhmani.a02.p01.l05",
+          "sukhmani.a02.p01.l06",
+          "sukhmani.a02.p01.l07",
+          "sukhmani.a02.p01.l08",
+          "sukhmani.a02.p01.l09",
+          "sukhmani.a02.p01.l10",
+          "sukhmani.a02.p01.l11"
+        ],
+        "angs": [
+          264
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      },
+      {
+        "ashtpadi": 2,
+        "pauri": 8,
+        "focus": "pain and suffering, holy company and traditional imagery",
+        "sourceOccurrenceCount": 10,
+        "sourceIds": [
+          "sukhmani.a02.p08.l01",
+          "sukhmani.a02.p08.l02",
+          "sukhmani.a02.p08.l03",
+          "sukhmani.a02.p08.l04",
+          "sukhmani.a02.p08.l05",
+          "sukhmani.a02.p08.l06",
+          "sukhmani.a02.p08.l07",
+          "sukhmani.a02.p08.l08",
+          "sukhmani.a02.p08.l09",
+          "sukhmani.a02.p08.l10"
+        ],
+        "angs": [
+          265
+        ],
+        "reviewedMaterial": [
+          "Original Gurmukhi occurrence text",
+          "English concise meanings",
+          "Punjabi concise meanings",
+          "English and Punjabi passage study",
+          "Related Ashtpadi caution when present"
+        ]
+      }
+    ],
+    "additionalSourceOccurrenceCount": 31,
+    "thematicSpotChecks": {
+      "selection": "English-meaning keyword scan, followed by reading the displayed source, English and Punjabi lines; this is a limited thematic sample, not a complete semantic audit.",
+      "keywordRegex": "cure|heal|disease|illness|sick|suffer|pain|death|protect|fear|hell|heaven|liberat|salvat|birth|soul",
+      "sourceIds": [
+        "sukhmani.a01.p02.l02",
+        "sukhmani.a01.p02.l03",
+        "sukhmani.a01.p02.l07",
+        "sukhmani.a01.p04.l05",
+        "sukhmani.a01.p05.l08",
+        "sukhmani.a02.salok.l02",
+        "sukhmani.a02.p01.l04",
+        "sukhmani.a02.p02.l03",
+        "sukhmani.a02.p03.l01",
+        "sukhmani.a02.p06.l01",
+        "sukhmani.a02.p07.l09",
+        "sukhmani.a02.p08.l04",
+        "sukhmani.a03.p02.l10",
+        "sukhmani.a03.p04.l01",
+        "sukhmani.a03.p04.l07",
+        "sukhmani.a03.p05.l07",
+        "sukhmani.a03.p06.l09",
+        "sukhmani.a04.p03.l10",
+        "sukhmani.a04.p04.l01",
+        "sukhmani.a04.p05.l01",
+        "sukhmani.a04.p06.l03",
+        "sukhmani.a04.p07.l06",
+        "sukhmani.a05.p07.l06",
+        "sukhmani.a06.p03.l01",
+        "sukhmani.a06.p03.l03",
+        "sukhmani.a06.p05.l07"
+      ],
+      "overlapsOtherReviewedPassages": true,
+      "themes": [
+        "medical or physical guarantees",
+        "death and rebirth",
+        "liberation and grace",
+        "protection and suffering",
+        "avoiding exclusively psychological reductions"
+      ]
+    },
+    "additionalStudyAndMetadataChecks": [
+      "Ashtpadi cautions and target studies",
+      "Related study discussion of rebirth, health, grief and protection",
+      "Metadata and named-commentary attribution scan",
+      "Search of studies for Sri Chand attribution and human-approval claims"
+    ],
+    "alignmentFinding": "No line-meaning mismatch was identified in the six targeted passages. This is not a claim of manually reviewing alignment for all 510 occurrences."
+  },
+  "findings": [
+    {
+      "passage": "1.7",
+      "sourceIds": [
+        "sukhmani.a01.p07.l01",
+        "sukhmani.a01.p07.l02",
+        "sukhmani.a01.p07.l03",
+        "sukhmani.a01.p07.l04",
+        "sukhmani.a01.p07.l05",
+        "sukhmani.a01.p07.l06",
+        "sukhmani.a01.p07.l07",
+        "sukhmani.a01.p07.l08",
+        "sukhmani.a01.p07.l09",
+        "sukhmani.a01.p07.l10"
+      ],
+      "classification": "interpretation_supported_with_alternative_gloss",
+      "finding": "The draft's unstruck resonance reading of anhad is a recognized interpretation. Sahib Singh also glosses anhad in terms of uninterrupted continuity. The study preserves spiritual language and supplies neither a physical mechanism nor a measurable frequency; it does not require a particular sensation from readers.",
+      "definiteMaterialErrorFound": false,
+      "remainingInterpretiveQuestion": "Unstruck and uninterrupted are not identical glosses; a fuller scholarly edition could compare these readings. No mandatory correction was identified in this spot review.",
+      "consultedUrls": [
+        "https://www.gurugranthdarpan.net/0263.html"
+      ]
+    },
+    {
+      "passage": "3.1",
+      "sourceIds": [
+        "sukhmani.a03.p01.l01",
+        "sukhmani.a03.p01.l02",
+        "sukhmani.a03.p01.l03",
+        "sukhmani.a03.p01.l04",
+        "sukhmani.a03.p01.l05",
+        "sukhmani.a03.p01.l06",
+        "sukhmani.a03.p01.l07",
+        "sukhmani.a03.p01.l08",
+        "sukhmani.a03.p01.l09",
+        "sukhmani.a03.p01.l10",
+        "sukhmani.a03.p01.l11"
+      ],
+      "classification": "lexical_choice_transparently_explained",
+      "finding": "The draft preserves the list and identifies severe bodily-sacrifice examples as being criticized rather than prescribed. The concise wording uses offerings for ratna; the study attributes Sahib Singh's ghee reading and distinguishes the jewels rendering used by some English translations.",
+      "definiteMaterialErrorFound": false,
+      "consultedUrls": [
+        "https://www.gurugranthdarpan.net/0265.html"
+      ]
+    },
+    {
+      "passage": "3.8",
+      "sourceIds": [
+        "sukhmani.a03.p08.l01",
+        "sukhmani.a03.p08.l02",
+        "sukhmani.a03.p08.l03",
+        "sukhmani.a03.p08.l04",
+        "sukhmani.a03.p08.l05",
+        "sukhmani.a03.p08.l06",
+        "sukhmani.a03.p08.l07",
+        "sukhmani.a03.p08.l08",
+        "sukhmani.a03.p08.l09",
+        "sukhmani.a03.p08.l10"
+      ],
+      "classification": "meaning_preserved",
+      "finding": "The paired lines retain remembrance of the Divine Naam and clean, truthful action. The study preserves ethical conduct, holy company and Divine praise rather than reducing the passage to mechanical repetition.",
+      "definiteMaterialErrorFound": false,
+      "consultedUrls": [
+        "https://www.gurugranthdarpan.net/0266.html"
+      ]
+    },
+    {
+      "passage": "4.6",
+      "sourceIds": [
+        "sukhmani.a04.p06.l01",
+        "sukhmani.a04.p06.l02",
+        "sukhmani.a04.p06.l03",
+        "sukhmani.a04.p06.l04",
+        "sukhmani.a04.p06.l05",
+        "sukhmani.a04.p06.l06",
+        "sukhmani.a04.p06.l07",
+        "sukhmani.a04.p06.l08",
+        "sukhmani.a04.p06.l09",
+        "sukhmani.a04.p06.l10"
+      ],
+      "classification": "meaning_preserved_with_adopted_clarification",
+      "finding": "The historical bodily imagery is retained and the study identifies its spiritual argument without treating it as a universal description of disabled people's abilities, worth or access to the Divine. The final concise wording makes the divine addressee explicit in the hand-holding appeal.",
+      "definiteMaterialErrorFound": false,
+      "consultedUrls": [
+        "https://www.gurugranthdarpan.net/0267.html"
+      ]
+    },
+    {
+      "passage": "5.5",
+      "sourceIds": [
+        "sukhmani.a05.p05.l01",
+        "sukhmani.a05.p05.l02",
+        "sukhmani.a05.p05.l03",
+        "sukhmani.a05.p05.l04",
+        "sukhmani.a05.p05.l05",
+        "sukhmani.a05.p05.l06",
+        "sukhmani.a05.p05.l07",
+        "sukhmani.a05.p05.l08",
+        "sukhmani.a05.p05.l09",
+        "sukhmani.a05.p05.l10"
+      ],
+      "classification": "meaning_preserved_application_identified",
+      "finding": "The concise meaning preserves the gendered par-tria example, another's wife. Mutual fidelity and dignity are explicitly identified as broader editorial application. The reading of par-bikaar as harm to others is supported by Sahib Singh's commentary.",
+      "definiteMaterialErrorFound": false,
+      "consultedUrls": [
+        "https://www.gurugranthdarpan.net/0269.html"
+      ]
+    },
+    {
+      "passage": "6.5",
+      "sourceIds": [
+        "sukhmani.a06.p05.l01",
+        "sukhmani.a06.p05.l02",
+        "sukhmani.a06.p05.l03",
+        "sukhmani.a06.p05.l04",
+        "sukhmani.a06.p05.l05",
+        "sukhmani.a06.p05.l06",
+        "sukhmani.a06.p05.l07",
+        "sukhmani.a06.p05.l08",
+        "sukhmani.a06.p05.l09",
+        "sukhmani.a06.p05.l10"
+      ],
+      "classification": "attributed_interpretation_verified",
+      "finding": "The human-birth reading of neeki jaat is expressly supported by Sahib Singh on Ang 270. The study attributes that choice, acknowledges the interpretive question and does not use the passage to endorse caste superiority.",
+      "definiteMaterialErrorFound": false,
+      "consultedUrls": [
+        "https://www.gurugranthdarpan.net/0270.html"
+      ]
+    }
+  ],
+  "thematicFindings": [
+    "The sampled teaching retains rebirth, liberation, Divine grace and presence as religious concepts rather than consistently reducing them to psychology.",
+    "No medical cure guarantee was identified in the reviewed material; studies distinguish devotional assurances from guaranteed bodily invulnerability.",
+    "No invented Sri Chand attribution or qualified-human-endorsement claim was identified in the reviewed material.",
+    "The teaching metadata labels the work as draft and explicitly leaves qualified review pending."
+  ],
+  "adoptedFollowups": [
+    {
+      "sourceId": "sukhmani.a02.p01.l04",
+      "classification": "interpretive_precision",
+      "originalEnglish": "Where the terrifying messenger of death brings crushing fear,",
+      "reason": "The concise wording inserted fear and adopted a crushing-verb construction. Sahib Singh parses dut jam dalai as a host of death's messengers; the author chose that interpretation after direct consultation.",
+      "finalMeaning": {
+        "en": "Where one faces the dreadful host of death's messengers,",
+        "pa": "ਜਿੱਥੇ ਭਿਆਨਕ ਜਮਦੂਤਾਂ ਦੀ ਫ਼ੌਜ ਦਾ ਸਾਹਮਣਾ ਹੋਵੇ,",
+        "status": "draft",
+        "sourceIds": [
+          "sukhmani.a02.p01.l04"
+        ],
+        "ang": 264
+      },
+      "verification": "Updated authoring JSON reread; lexical commentary source also present in the corresponding study.",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0264.html",
+      "adopted": true,
+      "scriptureChanged": false
+    },
+    {
+      "sourceId": "sukhmani.a02.p08.l04",
+      "classification": "avoid_unmarked_narrowing",
+      "originalEnglish": "Attending to Naam relieves inward pain and distress.",
+      "reason": "Inward unnecessarily narrowed the scope of dard dukh in the concise meaning. The final wording preserves the broader devotional assurance; medical-guarantee cautions belong in the interpretive layer.",
+      "finalMeaning": {
+        "en": "On hearing Naam, pain and suffering fall away.",
+        "pa": "ਨਾਮ ਸੁਣਨ ਨਾਲ ਦਰਦ ਅਤੇ ਦੁੱਖ ਦੂਰ ਹੋ ਜਾਂਦੇ ਹਨ।",
+        "status": "draft",
+        "sourceIds": [
+          "sukhmani.a02.p08.l04"
+        ],
+        "ang": 265
+      },
+      "verification": "Updated English and Punjabi meanings reread in the authoring JSON.",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0265.html",
+      "adopted": true,
+      "scriptureChanged": false
+    },
+    {
+      "sourceId": "sukhmani.a04.p06.l02",
+      "classification": "clarify_divine_addressee",
+      "originalEnglish": "Take that person's hand, so the journey may be sustained to its end.",
+      "reason": "The original draft left the divine addressee implicit. The revised line makes the prayer to God and remaining faithful explicit, consistent with the commentary and the pauri's concluding address.",
+      "finalMeaning": {
+        "en": "O God, take this person's hand, so they can remain faithful to the end.",
+        "pa": "ਹੇ ਪ੍ਰਭੂ! ਇਸ ਦਾ ਹੱਥ ਫੜ ਲੈ, ਤਾਂ ਜੋ ਅੰਤ ਤਕ ਪ੍ਰੀਤ ਨਿਭਾ ਸਕੇ।"
+      },
+      "verification": "Updated English and Punjabi meanings reread in the authoring JSON.",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0267.html",
+      "adopted": true,
+      "scriptureChanged": false
+    }
+  ],
+  "consultedWebSources": [
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 263,
+      "url": "https://www.gurugranthdarpan.net/0263.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "1.7: anhad, sahaj and contemplative imagery"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 264,
+      "url": "https://www.gurugranthdarpan.net/0264.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "2.1: dut jam dalai as a host of death's messengers"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 265,
+      "url": "https://www.gurugranthdarpan.net/0265.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "2.8: pain and suffering; 3.1: ratna and sacrificial offerings"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 266,
+      "url": "https://www.gurugranthdarpan.net/0266.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "3.8: Naam together with pure conduct"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 267,
+      "url": "https://www.gurugranthdarpan.net/0267.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "4.6: bodily imagery, night/day and the appeal to God to take the hand"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 269,
+      "url": "https://www.gurugranthdarpan.net/0269.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "5.5: par-tria, par-bikaar and ethical use of faculties"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 270,
+      "url": "https://www.gurugranthdarpan.net/0270.html",
+      "consultation": "Opened and read selected relevant commentary during this AI review",
+      "purpose": "6.5: explicit human-birth interpretation of neeki jaat"
+    }
+  ],
+  "reviewerContentChanges": false,
+  "summary": "No confirmed blocking mistranslation or line mismatch was identified within the specified scope. Three precision followups were adopted by the content authors and verified in the final hashed authoring JSON. Interpretive alternatives and review limitations remain explicit."
+}
