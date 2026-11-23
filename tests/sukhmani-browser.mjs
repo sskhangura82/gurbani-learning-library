@@ -113,10 +113,29 @@ try{
    },{width:viewport.width});
    if(viewport.width===390)await check('Read, Meaning and Study preview screenshots',async()=>{
     for(const [mode,name]of [['read','read-390'],['understand','meaning-390'],['study','study-390']]){
+     await closeDialog(page);
      await page.locator('.modes button[data-depth="'+mode+'"]').click();
-     if(mode==='read')await page.evaluate(()=>scrollTo(0,0));
-     else if(mode==='understand')await page.locator(lineSelector(firstStudyLine.id)).evaluate(n=>n.scrollIntoView({block:'start'}));
-     else await page.locator('.sk-unit').filter({has:page.locator(lineSelector(firstStudyLine.id))}).locator('.sk-study').evaluate(n=>n.scrollIntoView({block:'start'}));
+     await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+     if(mode==='read'){
+      await page.locator('#ashtpadi-nav a').filter({hasText:/^1$/}).click();
+      await page.waitForFunction(()=>document.getElementById('sk-position').textContent.includes('Ashtpadi 1'));
+      await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+      await page.evaluate(()=>scrollTo(0,0));
+     }else{
+      await page.locator('#sk-position').click();
+      await page.locator('#sk-dialog .sk-options').first().getByRole('button',{name:/^Pauri 1\b/}).click();
+      await page.waitForFunction(()=>!document.getElementById('sk-dialog').open&&document.getElementById('sk-position').textContent.includes('Ashtpadi 1')&&document.getElementById('sk-position').textContent.includes('Pauri 1'));
+      await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+      const unit=page.locator('.sk-unit').filter({has:page.locator(lineSelector(firstStudyLine.id))});
+      // Keep the final verse with its following study so the visible passage and dock agree after scroll tracking settles.
+      const target=mode==='understand'?page.locator(lineSelector(firstStudyLine.id)):unit.locator('.sk-line').last();
+      const targetId=await target.getAttribute('data-line-id');
+      await target.evaluate(n=>n.scrollIntoView({block:'start'}));
+      await page.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,targetId);
+      assert.match(await page.locator('#sk-position').innerText(),/Pauri 1/);
+     }
+     assert.match(await page.locator('#sk-position').innerText(),/Ashtpadi 1/);
+     assert.equal(await page.locator('#ashtpadi-nav a').filter({hasText:/^1$/}).getAttribute('aria-current'),'true');
      await screenshot(page,name);
     }
    },{width:viewport.width});
@@ -129,9 +148,17 @@ try{
   ({context,page}=await fresh({width:390,height:844}));
   const note='SYNTHETIC reflection for automated verification only.';
   await check('Bookmark and reflection survive reload and resume; Japji remains unchanged',async()=>{
-   await saveNote(page,firstStudyLine.id,note);await page.locator('#sk-bookmark').click();await page.waitForFunction(({KEY,id})=>JSON.parse(localStorage.getItem(KEY)||'{}').bookmarks?.includes(id),{KEY,id:firstStudyLine.id});await closeDialog(page);
+   await saveNote(page,firstStudyLine.id,note);
+   assert.equal(await page.locator('#sk-bookmark').textContent(),'Bookmark this line');assert.equal(await page.locator('#sk-bookmark').getAttribute('aria-pressed'),'false');
+   for(const marked of [true,false,true]){
+    await page.locator('#sk-bookmark').click();
+    await page.waitForFunction(({KEY,id,marked})=>JSON.parse(localStorage.getItem(KEY)||'{}').bookmarks?.includes(id)===marked&&document.getElementById('sk-bookmark').textContent===(marked?'Remove bookmark':'Bookmark this line'),{KEY,id:firstStudyLine.id,marked});
+    assert.equal(await page.locator('#sk-bookmark').getAttribute('aria-pressed'),String(marked));
+   }
+   await closeDialog(page);
    await page.reload();await page.locator('#resume-reading').waitFor();await page.locator('#resume-reading').click();
    const s=await state(page);assert.equal(s.notes[firstStudyLine.id],note);assert.ok(s.bookmarks.includes(firstStudyLine.id));assert.equal(s.read,firstStudyLine.id);assert.equal(await page.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
+   await openLine(page,firstStudyLine.id);assert.equal(await page.locator('#sk-bookmark').textContent(),'Remove bookmark');assert.equal(await page.locator('#sk-bookmark').getAttribute('aria-pressed'),'true');await closeDialog(page);
   });
   let exported;
   await check('Sukhmani export contains the saved learning and excludes Japji',async()=>{
