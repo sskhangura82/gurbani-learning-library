@@ -6,6 +6,11 @@
  const button=(text,fn,attrs={})=>{const b=el('button',text);b.type='button';for(const [k,v]of Object.entries(attrs))b.setAttribute(k,v);b.addEventListener('click',fn);return b;};
  const announce=text=>{$('status').textContent=text;};
  let m;try{m=L.model(pack);}catch(e){$('sukhmani-text').replaceChildren(el('p','This reading pack could not load. Reload while online.','coverage-note'));for(const b of document.querySelectorAll('button'))b.disabled=true;return;}
+ const firstAshtpadi=pack.ashtpadis[0].number,lastAshtpadi=pack.ashtpadis[pack.ashtpadis.length-1].number,totalAshtpadis=24;
+ const ashtpadiRange=firstAshtpadi===lastAshtpadi?String(firstAshtpadi):firstAshtpadi+'–'+lastAshtpadi,coverageLabel='Ashtpadis '+ashtpadiRange+' of '+totalAshtpadis;
+ const salokCount=pack.ashtpadis.filter(a=>a.lines.some(l=>l.kind==='salok')).length,pauriCount=new Set(m.lines.filter(l=>l.pauri).map(l=>l.ashtpadi+'.'+l.pauri)).size;
+ const remainingScope=lastAshtpadi<totalAshtpadis?'Ashtpadis '+(lastAshtpadi+1)+'–'+totalAshtpadis+' are not included in this reading pack.':'All '+totalAshtpadis+' Ashtpadis are included in this reading pack.';
+ const scopeNote='This pack contains '+salokCount+' introductory Saloks and '+pauriCount+' pauris in their original order. '+remainingScope;
  let state=L.seed(m),storage=null,shared=null,writable=false,originalRaw=null,loadError='',pending=Promise.resolve(true),scrollTimer=null,guideTimer=null,playing=false,internalScroll=false,lastActive=null,editorLease=null,editor=null,returnFocus=null,dialogGeneration=0;
  const nodes=new Map(),units=new Map(),unitLines=new Map(),meanings=teaching.meanings||{},lessons=teaching.ashtpadis||{},dialog=$('sk-dialog'),body=$('sk-dialog-body');
  try{storage=window.localStorage;originalRaw=storage.getItem(L.KEY);state=L.read(m,storage);shared=window.GLP_SHARED_LEARNING.create({storage,locks:navigator.locks,key:L.KEY,normalise:s=>L.normalise(m,s),seed:L.seed(m)});writable=shared.supported;if(!writable)loadError='Safe saving is unavailable in this browser. You can read and download Sukhmani learning for this session.';}catch(e){loadError=e.message;}
@@ -62,6 +67,11 @@
   const c=studyCard(value,unit.endsWith('.salok')?'Salok':unit.endsWith('.rahau')?'Rahau':'Pauri '+n);if(c){const lines=unitLines.get(unit)||[];if(lines.length){const start=Math.min(...lines.map(l=>l.ang)),end=Math.max(...lines.map(l=>l.ang));c.append(el('p',locationLabel(lines[0])+' · Ang '+start+(end!==start?'–'+end:''),'draft-label'));}container.append(c);}
  }
  function render(){
+  document.title='Sukhmani Sahib · Ashtpadis '+ashtpadiRange+' · Gurbani Learning Library';
+  $('sk-coverage').textContent='Guru Arjan Dev Ji · Raag Gauri · '+coverageLabel;$('sk-scope').textContent=scopeNote;
+  $('sukhmani-text').setAttribute('aria-label','Sukhmani Sahib, Ashtpadis '+firstAshtpadi+' to '+lastAshtpadi);
+  $('sk-end-title').textContent='End of Ashtpadi '+lastAshtpadi;$('sk-end-scope').textContent=lastAshtpadi<totalAshtpadis?'This is the end of this reading pack. Sukhmani Sahib continues through Ashtpadi '+totalAshtpadis+'.':'End of Sukhmani Sahib.';
+  $('sk-version').textContent='GLP-001 · Sukhmani '+ashtpadiRange+' · Development preview';
   const fragment=document.createDocumentFragment();$('ashtpadi-nav').replaceChildren();
   for(const a of pack.ashtpadis){
    const link=el('a',String(a.number));link.href='#ashtpadi-'+a.number;link.setAttribute('aria-label','Read Ashtpadi '+a.number);link.addEventListener('click',e=>{e.preventDefault();jump(a.lines[0].id);});$('ashtpadi-nav').append(link);
@@ -99,7 +109,7 @@
  function setMode(mode){if(!['read','understand','study'].includes(mode))return;if(mode==='study')pause();maintainAnchor(()=>{state.mode=mode;appearance();});save({preferences:{mode}});announce(mode==='read'?'Gurmukhi reading.':mode==='understand'?'English and Punjabi explanation drafts.':'Study drafts are now shown after each passage.');}
  function jump(id,focus=false){if(!nodes.has(id))return;pause();current(id);state.guide=id;internalScroll=true;nodes.get(id).scrollIntoView({block:'start',behavior:'auto'});if(focus)nodes.get(id).querySelector('.tuk').focus({preventScroll:true});requestAnimationFrame(()=>{internalScroll=false;});save();$('resume-notice').hidden=true;}
  function pause(){playing=false;clearTimeout(guideTimer);guideTimer=null;$('sk-play').textContent='▶';$('sk-play').setAttribute('aria-pressed','false');$('sk-play').setAttribute('aria-label','Start silent line guide');}
- function tick(){if(!playing)return;const index=m.lines.findIndex(l=>l.id===state.guide);if(index<0){pause();return;}const line=m.lines[index];current(line.id);state.hasGuided=true;internalScroll=true;nodes.get(line.id).scrollIntoView({block:'center',behavior:'auto'});requestAnimationFrame(()=>{internalScroll=false;});save();const delay=Math.max(1600,line.gurmukhi.split(/\s+/).length*60000/state.pace);guideTimer=setTimeout(()=>{if(!playing)return;if(index+1===m.lines.length){pause();announce('Reached the end of Ashtpadi 6. The remaining Ashtpadis are not in this reading pack.');return;}state.guide=m.lines[index+1].id;tick();},delay);}
+ function tick(){if(!playing)return;const index=m.lines.findIndex(l=>l.id===state.guide);if(index<0){pause();return;}const line=m.lines[index];current(line.id);state.hasGuided=true;internalScroll=true;nodes.get(line.id).scrollIntoView({block:'center',behavior:'auto'});requestAnimationFrame(()=>{internalScroll=false;});save();const delay=Math.max(1600,line.gurmukhi.split(/\s+/).length*60000/state.pace);guideTimer=setTimeout(()=>{if(!playing)return;if(index+1===m.lines.length){pause();announce('Reached the end of Ashtpadi '+lastAshtpadi+'. '+remainingScope);return;}state.guide=m.lines[index+1].id;tick();},delay);}
  function toggleGuide(){if(playing){pause();announce('Silent guide paused.');return;}if(state.mode==='study')setMode('read');state.guide=state.read;playing=true;$('sk-play').textContent='Ⅱ';$('sk-play').setAttribute('aria-pressed','true');$('sk-play').setAttribute('aria-label','Pause silent line guide');announce('Silent visual guide started. It is not synchronized to a recording.');tick();}
  async function releaseEditor(saveDraft=true){
   if(editor&&saveDraft&&editor.input.value!==editor.original){const value=editor.input.value;state.notes[editor.id]=value;await save({notes:{[editor.id]:value}});}
@@ -124,7 +134,7 @@
   field.addEventListener('input',()=>{noteState.textContent='Unsaved reflection. Save or close this panel to keep it in this session.';});body.append(saveButton);
   body.append(el('div',null,'sk-source'));body.lastChild.append(plainNote(sourceNotes(line)),plainNote('Gurmukhi is reproduced as supplied by the source; explanations do not alter it.'));
  }
- async function openJump(){await openDialog('Choose a passage','ASHTPADIS 1–6');for(const a of pack.ashtpadis){body.append(el('h3','Ashtpadi '+a.number,'sk-section-title'));const grid=el('div',null,'sk-options');for(const [unit,lines]of unitLines){if(lines[0].ashtpadi!==a.number||unit.endsWith('.intro'))continue;const first=lines[0];const b=button(first.pauri?'Pauri '+first.pauri:unit.endsWith('.rahau')?'Rahau':'Salok',async()=>{await closeDialog();jump(first.id,true);});b.append(el('small','Ang '+first.ang));grid.append(b);}body.append(grid);}}
+ async function openJump(){await openDialog('Choose a passage','ASHTPADIS '+ashtpadiRange);for(const a of pack.ashtpadis){body.append(el('h3','Ashtpadi '+a.number,'sk-section-title'));const grid=el('div',null,'sk-options');for(const [unit,lines]of unitLines){if(lines[0].ashtpadi!==a.number||unit.endsWith('.intro'))continue;const first=lines[0];const b=button(first.pauri?'Pauri '+first.pauri:unit.endsWith('.rahau')?'Rahau':'Salok',async()=>{await closeDialog();jump(first.id,true);});b.append(el('small','Ang '+first.ang));grid.append(b);}body.append(grid);}}
  function row(label,control){const r=el('div',null,'sk-control-row'),l=el('label',label);l.htmlFor=control.id;r.append(l,control);return r;}
  function download(filename,text){const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);}
  async function exportLearning(){await releaseEditor();await pending;download('sukhmani-learning.json',L.exportState(m,state));announce('Sukhmani learning exported. Japji learning has its own export.');}
@@ -142,8 +152,8 @@
   body.append(el('h3','Offline reading','sk-section-title'));const offline=el('p','Offline availability depends on the installed static reading pack.','sk-reader-note');offline.id='offline-status';body.append(offline);const updates=el('div',null,'sk-actions');updates.append(button('Check for update',()=>{},{id:'check-update'}));const apply=button('Load available update',()=>{},{id:'apply-update'});apply.hidden=true;updates.append(apply);body.append(updates,button('Sources & review status',openSources));
  }
  async function openSources(){
-  await openDialog('Sources & review status','ASHTPADIS 1–6 OF 24');
-  body.append(plainNote('This pack contains six introductory Saloks and 48 pauris. It does not contain Ashtpadis 7–24.'),el('h3','Original Gurmukhi','sk-section-title'));
+  await openDialog('Sources & review status',coverageLabel.toUpperCase());
+  body.append(plainNote(scopeNote),el('h3','Original Gurmukhi','sk-section-title'));
   const source=pack.source||pack.meta?.source||{};body.append(el('p','Source: '+(source.name||'See the source manifest supplied with this reading pack')+'.'),plainNote(m.lines.length+' preserved source occurrences, including headings and Rahau. Each retains its Ang reference and source identifier.'));
   if(source.status)body.append(plainNote('Digital source status: '+String(source.status).replaceAll('_',' ')+'.'));
   if(source.comparison?.matchedOccurrences)body.append(plainNote(source.comparison.matchedOccurrences+' occurrences were compared against '+source.comparison.name+'. This does not establish that the digital sources derive from independent printed editions.'));

@@ -24,6 +24,12 @@ function loadData(text,key){const context={window:{}};vm.runInNewContext(text,co
 const data=loadData(await fs.readFile(path.join(root,'js/sukhmani-data.js'),'utf8'),'GLP_SUKHMANI');
 const teaching=loadData(await fs.readFile(path.join(root,'js/sukhmani-teaching.js'),'utf8'),'GLP_SUKHMANI_TEACHING');
 const lines=data.ashtpadis.flatMap(a=>a.lines),firstStudyLine=lines.find(l=>l.ashtpadi===1&&l.kind==='pauri'),otherLine=lines.find(l=>l.ashtpadi===2&&l.kind==='pauri');
+const lineById=new Map(lines.map(line=>[line.id,line])),lastAshtpadi=data.ashtpadis.at(-1).number;
+const sourceStudyUnits=[...new Map(lines.filter(line=>['salok','pauri','rahau'].includes(line.kind)).map(line=>[line.unitId,line])).values()];
+report.coverage={ashtpadis:data.ashtpadis.map(a=>a.number),sourceOccurrences:lines.length,studyUnits:sourceStudyUnits.length,overviews:data.ashtpadis.length,firstSix:{sourceOccurrences:lines.filter(line=>line.ashtpadi<=6).length,studyUnits:sourceStudyUnits.filter(line=>line.ashtpadi<=6).length,overviews:data.ashtpadis.filter(a=>a.number<=6).length}};
+// Frozen first-six format with made-up learning; no current-reader export helper constructs it.
+const firstSixState={version:2,read:'sukhmani.a06.p07.l03',guide:'sukhmani.a06.p06.l01',hasGuided:true,mode:'understand',theme:'amrit',size:34,pace:85,pronunciation:true,bookmarks:['sukhmani.a02.p08.l05','sukhmani.a06.p07.l03'],notes:{'sukhmani.a02.p08.l05':'SYNTHETIC first-six reflection on holy company.','sukhmani.a06.p07.l03':'SYNTHETIC first-six saved-place reflection.'}};
+const firstSixExport={projectId:'GLP-001',format:'glp-sukhmani-learning',version:1,composition:'sukhmani',createdAt:'2026-11-23T00:00:00.000Z',state:{...structuredClone(firstSixState),bookmarks:[...firstSixState.bookmarks,'sukhmani.a04.p02.l03'],notes:{...firstSixState.notes,'sukhmani.a04.p02.l03':'SYNTHETIC reflection imported from a first-six backup.'}}};
 const lineSelector=id=>`.sk-line[data-line-id="${id}"]`;
 const sourceRows=lines.map(l=>({id:l.id,text:l.gurmukhi,ang:String(l.ang)}));
 const sourceSnapshot=page=>page.locator('#sukhmani-text .sk-line').evaluateAll(rows=>rows.map(r=>({id:r.dataset.lineId,text:r.querySelector('p.tuk').textContent,ang:r.dataset.ang})));
@@ -49,7 +55,7 @@ async function fresh(viewport,{serviceWorkers='block',initial=null}={}){
   page=await context.newPage();activePage=page;page.setDefaultTimeout(12000);page.on('pageerror',error=>report.runtimeErrors.push({viewport:viewport.width,message:error.message}));
   const response=await page.goto(origin+PREFIX+'sukhmani.html');mainResponseStatus=response?.status()??null;
   assert.equal(mainResponseStatus,200,'Sukhmani main document must return HTTP 200 before reader checks');
-  await page.waitForFunction(()=>document.querySelectorAll('#sukhmani-text .sk-line').length===510);
+  await page.waitForFunction(count=>document.querySelectorAll('#sukhmani-text .sk-line').length===count,lines.length);
   return {context,page};
  }catch(error){
   const setup={attempt,width:viewport.width,height:viewport.height,mainResponseStatus,error:error.stack||String(error)};
@@ -74,20 +80,34 @@ async function importFile(page,value){await page.locator('#sk-import').setInputF
 try{
  await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve);});origin='http://127.0.0.1:'+server.address().port;
  browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});report.browserVersion=browser.version();
+ await check('The expanded reading pack covers Ashtpadis 1–12',()=>assert.deepEqual(data.ashtpadis.map(a=>a.number),Array.from({length:12},(_,i)=>i+1)));
 
  // The real source pack is compared with actual rendered text, not a reimplementation.
  for(const viewport of [{width:390,height:844},{width:320,height:740},{width:1280,height:900}]){
   let context,page;
   try{
    ({context,page}=await fresh(viewport));
-   await check('All 510 original occurrences, exact Unicode, order and Ang',async()=>assert.deepEqual(await sourceSnapshot(page),sourceRows),{width:viewport.width});
-   await check('Every occurrence has its own English and Punjabi explanation',async()=>{
+   await check('All '+lines.length+' original occurrences, exact Unicode, order and Ang',async()=>assert.deepEqual(await sourceSnapshot(page),sourceRows),{width:viewport.width});
+   await check('Every occurrence and study retains its own English and Punjabi teaching',async()=>{
     const rendered=await page.locator('#sukhmani-text .sk-line').evaluateAll(rows=>rows.map(r=>({id:r.dataset.lineId,en:r.querySelector('.simple-meaning .english')?.textContent,pa:r.querySelector('.simple-meaning .punjabi')?.textContent})));
     assert.deepEqual(rendered,lines.map(l=>({id:l.id,en:teaching.meanings[l.id].en,pa:teaching.meanings[l.id].pa})));
-    assert.equal(await page.locator('.sk-unit > .sk-study').count(),55);assert.equal(await page.locator('.sk-ashtpadi > .sk-study').count(),6);
+    const studies=await page.locator('.sk-unit > .sk-study').evaluateAll(cards=>Object.fromEntries(cards.map(card=>[card.parentElement.id.slice('unit-'.length),card.textContent])));
+    const overviews=await page.locator('.sk-ashtpadi > .sk-study').evaluateAll(cards=>Object.fromEntries(cards.map(card=>[card.parentElement.id,card.textContent])));
+    assert.equal(Object.keys(studies).length,sourceStudyUnits.length);assert.equal(Object.keys(overviews).length,data.ashtpadis.length);
+    for(const a of data.ashtpadis){
+     const lesson=teaching.ashtpadis[String(a.number)];
+     for(const language of ['en','pa'])assert.ok(overviews['ashtpadi-'+a.number].includes(lesson.overview[language]),'Overview '+a.number+' '+language+' must retain its text');
+     for(const unit of [lesson.salok,lesson.rahau,...lesson.pauris].filter(Boolean)){
+      const unitId=lineById.get(unit.sourceIds[0])?.unitId;assert.ok(studies[unitId],'Study must be attached to '+unitId);
+      for(const field of ['explanation','reflection'])for(const language of ['en','pa'])assert.ok(studies[unitId].includes(unit[field][language]),unitId+' '+field+' '+language+' must retain its text');
+     }
+    }
    },{width:viewport.width});
-   await check('Six in-document Ashtpadi links navigate without replacing text',async()=>{
-    for(const a of data.ashtpadis){await page.locator('#ashtpadi-nav a').filter({hasText:new RegExp('^'+a.number+'$')}).click();await page.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,a.lines[0].id);assert.equal(await page.locator('.sk-line').count(),510);assert.ok(Math.abs(await page.locator(lineSelector(a.lines[0].id)).evaluate(n=>n.getBoundingClientRect().top))<65);}
+   await check('All '+data.ashtpadis.length+' Ashtpadi links fit and navigate without replacing text',async()=>{
+    const navigation=page.locator('#ashtpadi-nav a');assert.equal(await navigation.count(),data.ashtpadis.length);
+    assert.ok(await navigation.evaluateAll(links=>links.every(link=>{const r=link.getBoundingClientRect();return r.width>=44&&r.height>=44&&r.left>=0&&r.right<=innerWidth;})),'Navigation touch targets must fit the viewport');
+    for(const a of data.ashtpadis){await navigation.filter({hasText:new RegExp('^'+a.number+'$')}).click();await page.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,a.lines[0].id);assert.equal(await page.locator('.sk-line').count(),lines.length);assert.ok(Math.abs(await page.locator(lineSelector(a.lines[0].id)).evaluate(n=>n.getBoundingClientRect().top))<65);}
+    assert.equal(await page.locator('#sk-end-title').textContent(),'End of Ashtpadi '+lastAshtpadi);assert.match(await page.locator('#sk-coverage').textContent(),/Ashtpadis 1–12 of 24/);
     assert.match(await page.locator('.end-note').innerText(),/continues through Ashtpadi 24/);
    },{width:viewport.width});
    await check('Mode changes preserve original nodes and the reading anchor',async()=>{
@@ -138,6 +158,14 @@ try{
      assert.equal(await page.locator('#ashtpadi-nav a').filter({hasText:/^1$/}).getAttribute('aria-current'),'true');
      await screenshot(page,name);
     }
+    const eighthLastLine=lines.filter(line=>line.ashtpadi===8&&line.pauri===8).at(-1);assert.ok(eighthLastLine);
+    await page.locator('#sk-position').click();await page.locator('#sk-dialog .sk-options').nth(data.ashtpadis.findIndex(a=>a.number===8)).getByRole('button',{name:/^Pauri 8\b/}).click();
+    await page.waitForFunction(()=>!document.getElementById('sk-dialog').open&&document.getElementById('sk-position').textContent.includes('Ashtpadi 8'));
+    await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+    await page.locator(lineSelector(eighthLastLine.id)).evaluate(n=>n.scrollIntoView({block:'start'}));await page.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,eighthLastLine.id);
+    const eighthStudy=page.locator('.sk-unit').filter({has:page.locator(lineSelector(eighthLastLine.id))}).locator('.sk-study');
+    assert.ok(await eighthStudy.evaluate(n=>{const r=n.getBoundingClientRect();return r.top<innerHeight-100&&r.bottom>0;}),'The new Ashtpadi 8 teaching must be in the screenshot viewport');
+    assert.match(await page.locator('#sk-position').innerText(),/Ashtpadi 8/);assert.match(await page.locator('#sk-position').innerText(),/Pauri 8/);await screenshot(page,'study-ashtpadi-8-390');
    },{width:viewport.width});
   }catch(e){checks.push({name:'Viewport scenario setup or execution',width:viewport.width,status:'failed',error:e.stack||String(e)});await diagnostic(page,'failure-setup-'+viewport.width);}finally{await context?.close();}
  }
@@ -174,7 +202,7 @@ try{
    assert.equal(await page.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
   });
   await check('Two tabs coordinate reflection edits and preserve each other’s saved notes',async()=>{
-   await closeDialog(page);await openLine(page,firstStudyLine.id);const second=await context.newPage();second.on('pageerror',e=>report.runtimeErrors.push({scenario:'second tab',message:e.message}));await second.goto(origin+PREFIX+'sukhmani.html');await second.waitForFunction(()=>document.querySelectorAll('.sk-line').length===510);await openLine(second,otherLine.id);
+   await closeDialog(page);await openLine(page,firstStudyLine.id);const second=await context.newPage();second.on('pageerror',e=>report.runtimeErrors.push({scenario:'second tab',message:e.message}));await second.goto(origin+PREFIX+'sukhmani.html');await second.waitForFunction(count=>document.querySelectorAll('.sk-line').length===count,lines.length);await openLine(second,otherLine.id);
    assert.ok(await second.locator('#sk-reflection').evaluate(n=>n.readOnly),'Concurrent editor should be read-only');assert.ok(await second.locator('#sk-save-reflection').isDisabled());
    await page.locator('#sk-reflection').fill('SYNTHETIC note from tab one');await page.locator('#sk-save-reflection').click();await waitNote(page,firstStudyLine.id,'SYNTHETIC note from tab one');await closeDialog(page);
    await closeDialog(second);await saveNote(second,otherLine.id,'SYNTHETIC note from tab two');await closeDialog(second);const s=await state(second);assert.equal(s.notes[firstStudyLine.id],'SYNTHETIC note from tab one');assert.equal(s.notes[otherLine.id],'SYNTHETIC note from tab two');assert.equal(await second.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);await second.close();
@@ -186,6 +214,32 @@ try{
    await page.locator('#sk-play').click();await page.waitForFunction(()=>document.getElementById('sk-play').getAttribute('aria-pressed')==='true');await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'));delete document.hidden;});assert.equal(await page.locator('#sk-play').getAttribute('aria-pressed'),'false');
   });
  }catch(e){checks.push({name:'Learning scenario setup or execution',status:'failed',error:e.stack||String(e)});await diagnostic(page,'failure-setup-learning');}finally{await context?.close();}
+
+ // Existing first-six records and exports keep their original schema when the pack grows.
+ let legacyContext,legacyPage;try{
+  ({context:legacyContext,page:legacyPage}=await fresh({width:390,height:844},{initial:JSON.stringify(firstSixState)}));
+  await check('An existing first-six record resumes with its notes, bookmarks and preferences intact',async()=>{
+   assert.deepEqual(await state(legacyPage),firstSixState);assert.equal(await legacyPage.locator('#storage-warning').isVisible(),false);
+   await legacyPage.locator('#resume-reading').click();await legacyPage.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,firstSixState.read);
+   const resumed=await state(legacyPage);assert.equal(resumed.read,firstSixState.read);assert.deepEqual(resumed.notes,firstSixState.notes);assert.deepEqual(resumed.bookmarks,firstSixState.bookmarks);
+   for(const key of ['version','mode','theme','size','pace','pronunciation'])assert.equal(resumed[key],firstSixState[key]);
+   assert.equal(await legacyPage.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
+  });
+  await check('Ashtpadi 12 Pauri 8 is readable and a first-six backup merges without losing new learning',async()=>{
+   const target=lines.find(line=>line.ashtpadi===12&&line.pauri===8&&line.kind==='pauri');assert.ok(target,'Ashtpadi 12 Pauri 8 must be present');
+   await legacyPage.locator('#sk-position').click();await legacyPage.locator('#sk-dialog .sk-options').nth(data.ashtpadis.findIndex(a=>a.number===12)).getByRole('button',{name:/^Pauri 8\b/}).click();
+   await legacyPage.waitForFunction(()=>!document.getElementById('sk-dialog').open&&document.getElementById('sk-position').textContent.includes('Ashtpadi 12')&&document.getElementById('sk-position').textContent.includes('Pauri 8'));
+   assert.equal(await legacyPage.locator(lineSelector(target.id)+' p.tuk').textContent(),target.gurmukhi);assert.equal(await legacyPage.locator(lineSelector(target.id)+' .simple-meaning .english').textContent(),teaching.meanings[target.id].en);
+   await saveNote(legacyPage,target.id,'SYNTHETIC reflection in Ashtpadi 12.');await legacyPage.locator('#sk-bookmark').click();await legacyPage.waitForFunction(({KEY,id})=>JSON.parse(localStorage.getItem(KEY)||'{}').bookmarks?.includes(id),{KEY,id:target.id});await closeDialog(legacyPage);
+   const before=await state(legacyPage);await tools(legacyPage);await importFile(legacyPage,firstSixExport);await legacyPage.waitForFunction(()=>document.getElementById('sk-import-result').textContent.includes('merged'));
+   const after=await state(legacyPage);assert.equal(after.read,before.read);assert.equal(after.read,target.id);assert.equal(after.notes[target.id],'SYNTHETIC reflection in Ashtpadi 12.');assert.ok(after.bookmarks.includes(target.id));
+   for(const [id,note]of Object.entries(firstSixExport.state.notes))assert.equal(after.notes[id],note);
+   for(const id of firstSixExport.state.bookmarks)assert.ok(after.bookmarks.includes(id));
+   for(const key of ['version','guide','hasGuided','mode','theme','size','pace','pronunciation'])assert.equal(after[key],before[key]);
+   assert.equal(await legacyPage.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
+   await closeDialog(legacyPage);await legacyPage.reload();await legacyPage.locator('#resume-reading').click();await legacyPage.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,target.id);assert.equal((await state(legacyPage)).notes[target.id],after.notes[target.id]);
+  });
+ }catch(e){checks.push({name:'First-six compatibility scenario setup or execution',status:'failed',error:e.stack||String(e)});await diagnostic(legacyPage,'failure-setup-first-six-compatibility');}finally{await legacyContext?.close();}
 
  for(const [name,record]of [['corrupt','{unfinished'],['future',JSON.stringify({version:99,notes:{private:'SYNTHETIC future-format note'}})]]){
   let context,page;try{
@@ -205,7 +259,7 @@ try{
    const count=await offlinePage.evaluate(async()=>{const names=(await caches.keys()).filter(n=>n.startsWith('glp-static:'+location.origin+'/gurbani-learning-library/:'));if(names.length!==1)throw Error('Unexpected cache count: '+names.length);return (await (await caches.open(names[0])).keys()).length;});assert.equal(count,Object.keys(expected).length);
   });
   await check('Offline reload renders all source and teaching while preserving local notes',async()=>{
-   await saveNote(offlinePage,otherLine.id,'SYNTHETIC offline reflection');await closeDialog(offlinePage);const before=await raw(offlinePage);await offlineContext.setOffline(true);await offlinePage.reload();await offlinePage.waitForFunction(()=>document.querySelectorAll('.sk-line').length===510);assert.deepEqual(await sourceSnapshot(offlinePage),sourceRows);assert.equal(await offlinePage.locator('.simple-meaning').count(),510);assert.equal(await raw(offlinePage),before);await offlinePage.locator('#ashtpadi-nav a').filter({hasText:/^6$/}).click();assert.match(await offlinePage.locator('#sk-position').innerText(),/Ashtpadi 6/);assert.equal(await offlinePage.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
+   await saveNote(offlinePage,otherLine.id,'SYNTHETIC offline reflection');await closeDialog(offlinePage);const before=await raw(offlinePage);await offlineContext.setOffline(true);await offlinePage.reload();await offlinePage.waitForFunction(count=>document.querySelectorAll('.sk-line').length===count,lines.length);assert.deepEqual(await sourceSnapshot(offlinePage),sourceRows);assert.equal(await offlinePage.locator('.simple-meaning').count(),lines.length);assert.equal(await raw(offlinePage),before);await offlinePage.locator('#ashtpadi-nav a').filter({hasText:new RegExp('^'+lastAshtpadi+'$')}).click();assert.ok((await offlinePage.locator('#sk-position').innerText()).includes('Ashtpadi '+lastAshtpadi));assert.equal(await offlinePage.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
    const leaked=await offlinePage.evaluate(async()=>{for(const name of await caches.keys()){const c=await caches.open(name);for(const req of await c.keys()){const r=await c.match(req);if((await r.text()).includes('SYNTHETIC offline reflection'))return true;}}return false;});assert.equal(leaked,false,'Private reflections must not enter the static cache');
   });
  }catch(e){checks.push({name:'Offline scenario setup or execution',status:'failed',error:e.stack||String(e)});await diagnostic(offlinePage,'failure-setup-offline');}finally{await offlineContext?.close();}

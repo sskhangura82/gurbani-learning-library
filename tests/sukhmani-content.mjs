@@ -7,6 +7,11 @@ const root = new URL('../', import.meta.url);
 const read = path => fs.readFileSync(new URL(path, root), 'utf8');
 const json = path => JSON.parse(read(path));
 const hash = text => crypto.createHash('sha256').update(text).digest('hex');
+function canonical(value) {
+  if (Array.isArray(value)) return '['+value.map(canonical).join(',')+']';
+  if (value && typeof value==='object') return '{'+Object.keys(value).sort().map(k=>JSON.stringify(k)+':'+canonical(value[k])).join(',')+'}';
+  return JSON.stringify(value);
+}
 function data(path, name) {
   const context = {window: {}};
   vm.runInNewContext(read(path), context, {timeout: 3000});
@@ -20,16 +25,17 @@ const checks = [];
 function test(name, fn) { fn(); checks.push(name); }
 const bilingual = x => x && typeof x.en === 'string' && x.en.trim().length > 0 && typeof x.pa === 'string' && /[\u0a00-\u0a7f]/u.test(x.pa);
 
-test('Exactly the requested first six, not a claim of a complete composition', () => {
-  assert.deepEqual(source.ashtpadis.map(a => a.number), [1,2,3,4,5,6]);
+test('Exactly Ashtpadis 1–12, without claiming the complete composition', () => {
+  assert.deepEqual(source.ashtpadis.map(a => a.number), [1,2,3,4,5,6,7,8,9,10,11,12]);
   assert.equal(source.completeComposition, false);
-  assert.equal(lines.length, 510);
-  assert.equal(source.lineCount, 510);
-  assert.equal(new Set(lines.map(l => l.id)).size, 510);
+  assert.equal(lines.length, 1019);
+  assert.equal(source.lineCount, 1019);
+  assert.equal(new Set(lines.map(l => l.id)).size, 1019);
+  assert.deepEqual(source.ashtpadis.map(a=>a.lines.length), [90,84,84,84,84,84,86,85,86,84,84,84]);
 });
-test('All original Unicode bytes match the frozen first-six sequence', () => {
+test('All original Unicode bytes match the frozen first-twelve sequence', () => {
   const actual = hash(lines.map(l => l.gurmukhi).join('\n'));
-  assert.equal(actual, '0f732567f161ac7f5c5f1035c6c14147cd57ca98702197aea715f035f15ebdf6');
+  assert.equal(actual, '5e4a556a4cf30520b7ebc76e228429dfb9c098527626f72f5c00e2215e935481');
   assert.equal(source.textSequenceSha256, actual);
   for (const [i,l] of lines.entries()) {
     assert.equal(l.sha256, hash(l.gurmukhi), l.id);
@@ -37,29 +43,41 @@ test('All original Unicode bytes match the frozen first-six sequence', () => {
     assert.ok(l.sourceId.startsWith('opengranth:34d2a7cab032c8ea24d21ff20f64653bd03766f4:'), l.id);
   }
 });
+test('The first-six source records, IDs, meanings and studies remain exactly preserved', () => {
+  const frozen=json('evidence/sukhmani-first-six-baseline.json');
+  assert.equal(frozen.frozenCommit, '28337270a1f149b96882acf420cf7dcd5c8910ce');
+  const firstSix=source.ashtpadis.filter(a=>a.number<=6);
+  const originalLines=firstSix.flatMap(a=>a.lines);
+  assert.equal(originalLines.length,510);
+  assert.equal(hash(originalLines.map(l=>l.gurmukhi).join('\n')),frozen.textSequenceSha256);
+  assert.equal(hash(canonical(firstSix)),frozen.sourceAshtpadisSha256);
+  assert.equal(hash(canonical(Object.fromEntries(originalLines.map(l=>[l.id,teaching.meanings[l.id]])))),frozen.meaningsSha256);
+  assert.equal(hash(canonical(Object.fromEntries(firstSix.map(a=>[a.number,teaching.ashtpadis[a.number]])))),frozen.studyAshtpadisSha256);
+});
 test('A separately retrieved transcription agrees in exact order, text and Ang', () => {
   const comparison = json('evidence/sukhmani-srigranth-gurmukhi.json');
   assert.deepEqual(lines.map(l => ({ang:l.ang, gurmukhi:l.gurmukhi})), comparison.lines);
   const report = json('evidence/sukhmani-source-collation.json');
-  assert.equal(report.exactMatches, 510);
+  assert.equal(report.exactMatches, 1019);
   assert.deepEqual(report.differences, []);
   assert.deepEqual(report.differentAngs, []);
   assert.equal(report.humanCollationApproved, false);
   assert.equal(report.comparisonSourcesIndependentEditionsProven, false);
 });
-test('Six Saloks, 48 ten-line pauris, both Rahau lines and all headings survive', () => {
+test('Twelve complete Saloks, 96 ten-line pauris, both Rahau lines and all headings survive', () => {
   const count = kind => lines.filter(l => l.kind === kind).length;
-  assert.equal(count('pauri'), 480);
-  assert.equal(count('salok'), 14);
+  assert.equal(count('pauri'), 960);
+  assert.equal(count('salok'), 31);
   assert.equal(count('rahau'), 2);
-  assert.equal(count('heading'), 14);
+  assert.equal(count('heading'), 26);
+  const salokVerseCounts=[4,2,2,2,2,2,4,3,4,2,2,2];
   for (const a of source.ashtpadis) {
-    assert.equal(a.lines.filter(l=>l.kind==='salok').length, a.number===1?4:2);
+    assert.equal(a.lines.filter(l=>l.kind==='salok').length, salokVerseCounts[a.number-1]);
     for (let p=1;p<=8;p++) assert.equal(a.lines.filter(l=>l.kind==='pauri' && l.pauri===p).length, 10);
   }
   assert.equal(lines[0].gurmukhi, 'ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥');
-  assert.equal(lines.at(-1).gurmukhi, 'ਨਾਨਕ ਇਨ ਕੈ ਕਛੂ ਨ ਹਾਥ ॥੮॥੬॥');
-  assert.deepEqual([...new Set(lines.map(l=>l.ang))], [262,263,264,265,266,267,268,269,270,271]);
+  assert.equal(lines.at(-1).gurmukhi, 'ਨਾਮੁ ਜਪੈ ਨਾਨਕ ਮਨਿ ਪ੍ਰੀਤਿ ॥੮॥੧੨॥');
+  assert.deepEqual([...new Set(lines.map(l=>l.ang))], Array.from({length:18},(_,i)=>262+i));
 });
 test('Every source occurrence has its own bilingual draft and optional reading aid', () => {
   assert.deepEqual(Object.keys(teaching.meanings).sort(), [...byId.keys()].sort());
@@ -74,7 +92,7 @@ test('Every source occurrence has its own bilingual draft and optional reading a
   assert.equal(teaching.meta.status, 'draft');
   assert.equal(teaching.meta.humanReviewed, false);
 });
-test('Six introductions, six Salok studies, 48 pauri studies and Rahau study are contextual', () => {
+test('Twelve introductions and all 109 passage studies have exact contextual anchors', () => {
   let total=0;
   for (const a of source.ashtpadis) {
     const t=teaching.ashtpadis[a.number];
@@ -98,9 +116,12 @@ test('Six introductions, six Salok studies, 48 pauri studies and Rahau study are
         assert.equal(l.ashtpadi,a.number,id);
         if (g.number) assert.equal(l.pauri,g.number,id);
       }
+      const expectedIds=a.lines.filter(l=>l.unitId===(g.number?'sukhmani.a'+String(a.number).padStart(2,'0')+'.p'+String(g.number).padStart(2,'0'):g===t.salok?'sukhmani.a'+String(a.number).padStart(2,'0')+'.salok':'sukhmani.a'+String(a.number).padStart(2,'0')+'.rahau')).map(l=>l.id);
+      assert.deepEqual(g.sourceIds,expectedIds,'Study must enclose the complete original passage');
+      assert.ok(g.sources?.some(s=>s.url?.startsWith('https://www.srigranth.org/')), 'Passage source links are available in-app');
     }
   }
-  assert.equal(total, 55);
+  assert.equal(total, 109);
 });
 test('Source and editorial content remain separate and source attribution is retained', () => {
   assert.ok(lines.every(l=>!('en' in l) && !('translation' in l) && !('meaning' in l)));
@@ -111,13 +132,13 @@ test('Source and editorial content remain separate and source attribution is ret
 });
 test('Existing library entry and offline shell include the functional reader', () => {
   assert.ok(read('index.html').includes('href="sukhmani.html"'));
-  assert.ok(read('index.html').includes('Ashtpadis 1–6 of 24'));
+  assert.ok(read('index.html').includes('Ashtpadis 1–12 of 24'));
   const sw = read('sw.js');
   for (const name of ['sukhmani.html','css/sukhmani.css','js/sukhmani-reader.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js']) {
     assert.ok(sw.includes('"./'+name+'"'), name);
   }
 });
 
-const report={status:'PASS', total:checks.length, checks, sourceOccurrences:lines.length, pauriVerseLines:480, salokVerseLines:14, rahauLines:2, headings:14, meaningDrafts:Object.keys(teaching.meanings).length, passageStudyDrafts:55, humanReviewed:0};
+const report={status:'PASS', total:checks.length, checks, sourceOccurrences:lines.length, newSourceOccurrences:509, firstSixPreserved:true, pauriVerseLines:960, salokVerseLines:31, rahauLines:2, headings:26, meaningDrafts:Object.keys(teaching.meanings).length, passageStudyDrafts:109, humanReviewed:0};
 fs.writeFileSync(new URL('evidence/sukhmani-content-verification.json',root),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report));

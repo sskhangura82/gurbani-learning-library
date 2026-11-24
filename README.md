@@ -4,13 +4,13 @@
 
 [Open the existing family site](https://sskhangura82.github.io/gurbani-learning-library/) · [Read Japji Sahib directly](https://sskhangura82.github.io/gurbani-learning-library/full-japji.html)
 
-## Sukhmani Sahib: first-six development preview
+## Sukhmani Sahib: first-twelve development preview
 
-This branch adds `sukhmani.html` to the existing library: Ashtpadis 1–6 of 24, all six Saloks, 48 pauris and the Rahau, across Ang 262–271. Its 510 original source occurrences (including headings) are compared with a second digital source. English/Punjabi line explanations, passage studies and approximate transliteration remain clearly labeled drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
+This branch adds `sukhmani.html` to the existing library: Ashtpadis 1–12 of 24, all twelve Saloks, 96 pauris and the Rahau, across Ang 262–279. Its 1,019 original source occurrences (including headings) are compared with a second digital source. English/Punjabi line explanations, passage studies and approximate transliteration remain clearly labeled drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
 
-See [scope, sources and review status](docs/SUKHMANI_FIRST_SIX.md). This preview does not claim a complete Sukhmani Sahib, qualified human review or publication to the family site. Existing Japji source and learning are preserved.
+See [scope, sources and review status](docs/SUKHMANI_FIRST_TWELVE.md). This preview does not claim a complete Sukhmani Sahib, qualified human review or publication to the family site. Existing Japji source and learning are preserved.
 
-## What is included in the Revision 7 candidate
+## What is included in Revision 7
 
 - A simple, calming **home page** (Nitnem/Japji, Visit a Gurdwara, Simran Room).
 - Japji Sahib 38 Pauris plus Mool Mantar and Saloks, continuous Unicode Gurmukhi across all 385 source occurrences.
@@ -38,6 +38,8 @@ node tests/service-worker.mjs
 node tests/shared-learning.mjs
 node tests/r6-contract.mjs
 node tests/r7-contract.mjs
+node tests/sukhmani-content.mjs
+node tests/sukhmani-reader-core.mjs
 ```
 
 Mac Chrome browser and lifecycle harnesses are in `tests/r7-*.mjs` and require an explicit, disposable local fixture. They do not read personal learning from the real family site.

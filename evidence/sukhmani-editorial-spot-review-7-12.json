@@ -1,0 +1,514 @@
+{
+  "schema": "glp-sukhmani-editorial-spot-review-v1",
+  "composition": "Sukhmani Sahib",
+  "coverage": "New Ashtpadis 7–12 within the app’s Ashtpadis 1–12 of 24 pack",
+  "createdAt": "2026-11-24T03:29:47.832757+00:00",
+  "reviewer": {
+    "type": "AI assistant",
+    "agent": "sukhmani_reader",
+    "separateReviewTask": true,
+    "qualifiedHumanReviewer": false,
+    "bilingualExpertReview": false,
+    "religiousOrScholarlyCertification": false
+  },
+  "status": "focused_ai_editorial_review_complete_no_remaining_blocking_issue_identified_within_scope",
+  "limitations": [
+    "This is an AI editorial review, not qualified human approval, a comprehensive bilingual-expert review, religious certification or a guarantee of correctness.",
+    "All new English concise meanings and English unit studies were read, but Punjabi checking was selective; vocabulary, pronunciation, teach-back prompts and every possible historical or theological implication were not comprehensively audited.",
+    "Selected consultation of Professor Sahib Singh is not a comprehensive survey of Sikh interpretive traditions. Attributed choices remain interpretations.",
+    "No independent printed-edition collation was performed by this reviewer. Source identity and digital text comparison are separate verification work.",
+    "This evidence concerns editorial content. It does not establish browser, offline, storage, accessibility or pronunciation correctness.",
+    "A named person’s spiritual standing, including Sri Chand Ji’s, is not certified or rejected by this review."
+  ],
+  "artifacts": {
+    "finalAuthoring7To9": {
+      "pathRelativeToTaskWorkspace": "sukhmani-teaching-7-9.json",
+      "sha256": "5760f51743bf6dac85e294b81e5b5d12bead07089c518125a7ce105781902763",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "finalAuthoring10To12": {
+      "pathRelativeToTaskWorkspace": "sukhmani-teaching-10-12.json",
+      "sha256": "029953d12e6eeee2e416438d2624472045d213779d9f46ba7ea4b695355a2dad",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "source7To12": {
+      "pathRelativeToTaskWorkspace": "sukhmani-source-next/sukhmani-7-12-source.json",
+      "sha256": "54812e131e829f7ea97d8eada37ead17dd8af10634545a681e53321a47f017df",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "combinedSource1To12": {
+      "pathRelativeToTaskWorkspace": "sukhmani-source-next/sukhmani-1-12-source.json",
+      "sha256": "d5443e60234dc7647884415ad1b72c0c0aab749c7c5943ee0bfa16386acbe8d4",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "immutableMeaningSnapshot7To9": {
+      "pathRelativeToTaskWorkspace": "sukhmani-meanings-7-9-review.json",
+      "sha256": "c3df9282e5d300b28ba3023be3b00fbd10a3d8423ec93a45c66d0c8650cfd079",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "immutableMeaningSnapshot10To12": {
+      "pathRelativeToTaskWorkspace": "sukhmani-meanings-10-12-review.json",
+      "sha256": "67bf3f5977ca534767ef3838e470fba4acb688b6dc4c4b3ca8e0511f64fe4a2e",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "immutableStudySnapshot10To11": {
+      "pathRelativeToTaskWorkspace": "sukhmani-studies-10-11-review.json",
+      "sha256": "f7bf90cae4598ab4744994b88a49c55e5b09cfa96ed8f3709caf5a88bb11466c",
+      "hashBasis": "Exact UTF-8 file bytes"
+    },
+    "finalStudy12Object": {
+      "pathRelativeToTaskWorkspace": "sukhmani-study-12.json",
+      "sha256": "2bef6f85f8c571ae8e7039165fa44967adae497af91a9402af4dc330d69a70b2",
+      "hashBasis": "Exact UTF-8 file bytes"
+    }
+  },
+  "scope": {
+    "englishConciseMeanings": {
+      "ashtpadis": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sourceOccurrenceCount": 509,
+      "method": "Every English concise meaning read paired with original Gurmukhi; initial authoring/snapshots plus final changed meanings reread.",
+      "countNote": "Occurrences include headings and Salok/pauri text; 509 is not a count of individual poetic verses."
+    },
+    "punjabiConciseMeanings": {
+      "sourceOccurrenceCount": 226,
+      "exactSelectors": [
+        {
+          "ashtpadis": [
+            8,
+            9
+          ],
+          "selection": "Every source occurrence",
+          "count": 171
+        },
+        {
+          "ashtpadi": 7,
+          "pauri": 7,
+          "selection": "Every source occurrence",
+          "count": 10
+        },
+        {
+          "sourceIds": [
+            "sukhmani.a07.p06.l01",
+            "sukhmani.a07.p06.l08",
+            "sukhmani.a07.p06.l10",
+            "sukhmani.a07.p08.l04"
+          ],
+          "count": 4
+        },
+        {
+          "ashtpadi": 10,
+          "pauri": 2,
+          "selection": "Every source occurrence",
+          "count": 10
+        },
+        {
+          "ashtpadi": 11,
+          "pauri": 2,
+          "selection": "Every source occurrence",
+          "count": 10
+        },
+        {
+          "ashtpadi": 12,
+          "pauri": 1,
+          "selection": "Every source occurrence including the heading",
+          "count": 11
+        },
+        {
+          "ashtpadi": 12,
+          "pauri": 8,
+          "selection": "Every source occurrence",
+          "count": 10
+        }
+      ],
+      "method": "Selected original Gurmukhi, English and Punjabi meanings compared; no claim of bilingual-expert verification."
+    },
+    "englishUnitStudies": {
+      "ashtpadis": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "selection": "Every Salok study and every pauri 1–8 study",
+      "unitCount": 54,
+      "material": [
+        "titles",
+        "explanations",
+        "reflections"
+      ]
+    },
+    "punjabiUnitStudies": {
+      "unitCount": 28,
+      "exactSelectors": [
+        {
+          "ashtpadis": [
+            8,
+            9
+          ],
+          "selection": "All Salok and pauri studies",
+          "count": 18
+        },
+        {
+          "ashtpadi": 7,
+          "pauris": [
+            6,
+            7,
+            8
+          ],
+          "count": 3
+        },
+        {
+          "ashtpadi": 10,
+          "pauris": [
+            2,
+            7
+          ],
+          "count": 2
+        },
+        {
+          "ashtpadi": 11,
+          "pauris": [
+            2,
+            4
+          ],
+          "count": 2
+        },
+        {
+          "ashtpadi": 12,
+          "pauris": [
+            1,
+            6,
+            8
+          ],
+          "count": 3
+        }
+      ],
+      "material": "Selected explanations and related reflections"
+    },
+    "bilingualOverviewsAndCautions": {
+      "ashtpadis": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "overviewCount": 6,
+      "cautionCount": 6
+    },
+    "finalRevisionVerification": {
+      "meaningDifferencesFromImmutableSnapshots": {
+        "7To9": [
+          "sukhmani.a07.p06.l01",
+          "sukhmani.a07.p06.l08",
+          "sukhmani.a07.p06.l10",
+          "sukhmani.a08.p08.l09"
+        ],
+        "10To12": [
+          "sukhmani.a10.p07.l03"
+        ]
+      },
+      "final10And11StudiesEqualReviewedSnapshot": true,
+      "final12StudyEqualsCurrentRootObject": true,
+      "final12ClarityChange": "Both language explanations for 12.8 reread after the closing sentence was clarified to praise and a heart turned toward Naam. Meanings unchanged by this final prose change.",
+      "previouslyReadStudy12Sha256": "9ea32515285abb50241f526c4aa7390eb86badad877888d12a9c616b3d5b54ac"
+    }
+  },
+  "interpretiveFindings": [
+    {
+      "passages": [
+        "7.6",
+        "7.7",
+        "7.8"
+      ],
+      "finding": "The final text keeps holy company, deliverance, reunion, Naam and Divine presence as religious concepts. Broad devotional assurances are retained without creating a clinical guarantee. The 7.8 study now explicitly identifies Sahib Singh’s comparison-reading of upma alongside the concise praise-language reading.",
+      "selectedCommentaryAngs": [
+        272
+      ]
+    },
+    {
+      "passages": [
+        "8.Salok",
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4"
+      ],
+      "finding": "The Brahm Gyani’s traits include equal regard, humility, compassion, beneficent action and grace. Natural images are presented as analogies. The instrumental reading of remembrance through the Brahm Gyani in 8.4 is attributed.",
+      "selectedCommentaryAngs": [
+        272,
+        273
+      ]
+    },
+    {
+      "passages": [
+        "8.6",
+        "8.7",
+        "8.8"
+      ],
+      "finding": "The explicit identification with the Supreme Divine, Creator and Formless One remains visible. Mahesur is identified as Shiva; the all-virtues reading in 8.7 is attributed. The study does not reduce the passage to psychology or certify a named person, and does not derive bodily immortality from the identity language.",
+      "selectedCommentaryAngs": [
+        273,
+        274
+      ]
+    },
+    {
+      "passages": [
+        "9.Salok",
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "9.5"
+      ],
+      "finding": "Religious terms are interpreted through their immediate ethical and devotional definitions. The four-varna passages retain universal access without asserting inherited spiritual superiority. Aparas is not mistranslated as a caste label; bhagauti is not assigned the same meaning in every external context.",
+      "selectedCommentaryAngs": [
+        274
+      ]
+    },
+    {
+      "passages": [
+        "9.6",
+        "9.7"
+      ],
+      "finding": "Ramdas is read contextually as a servant of the Divine. Jivan mukti remains liberation while living in loving acceptance of Divine command; the comparisons convey equanimity and do not make poison safe. The selected maan/abhimaan reading is attributed.",
+      "selectedCommentaryAngs": [
+        275
+      ]
+    },
+    {
+      "passages": [
+        "10.2",
+        "10.7"
+      ],
+      "finding": "Abhig aatam nikor retains the hard or unsoftened-heart sense. Avataar in 10.7 follows Sahib Singh’s contextual reading of created beings, with the broader word range acknowledged in the study.",
+      "selectedCommentaryAngs": [
+        275,
+        276
+      ]
+    },
+    {
+      "passages": [
+        "11.2",
+        "11.4",
+        "11.8"
+      ],
+      "finding": "Divine agency remains explicit, including the without-breath line; no breathing technique or human claim of unlimited authority is introduced. Stones versus stone-hearted imagery and the selected Divine-delight reading are attributed. The abiding place in 11.8 is treated as union, not a compulsory building or automatic attendance reward.",
+      "selectedCommentaryAngs": [
+        277,
+        278
+      ]
+    },
+    {
+      "passages": [
+        "12.1"
+      ],
+      "finding": "The severe dog, filth and rebirth imagery is retained. The study distinguishes explicit many-life language from Sahib Singh’s ethical-image explanation without presenting either as permission to demean people.",
+      "selectedCommentaryAngs": [
+        278
+      ]
+    },
+    {
+      "passages": [
+        "12.6",
+        "12.8"
+      ],
+      "finding": "The final teaching retains the selected reading of the Divine abiding in its own being. The truth of creation in 12.8 is explained through Sahib Singh’s completeness reading; no assertion that each finite object lasts forever is added. Loving remembrance remains the conclusion.",
+      "selectedCommentaryAngs": [
+        279
+      ]
+    }
+  ],
+  "adoptedFollowups": [
+    {
+      "sourceId": "sukhmani.a07.p06.l08",
+      "gurmukhi": "ਸਾਧ ਕੈ ਸੰਗਿ ਨ ਬਿਰਥਾ ਜਾਵੈ ॥",
+      "origin": "reader_suggested",
+      "classification": "correct_subject",
+      "reason": "The earlier wording introduced time as the subject. The final wording follows the person leaving fulfilled rather than empty-handed.",
+      "before": {
+        "en": "The time spent in holy company does not go to waste.",
+        "pa": "ਸਾਧ ਜਨਾਂ ਦੀ ਸੰਗਤ ਵਿੱਚ ਬਿਤਾਇਆ ਸਮਾਂ ਵਿਅਰਥ ਨਹੀਂ ਜਾਂਦਾ।"
+      },
+      "final": {
+        "en": "In holy company, one does not depart empty-handed.",
+        "pa": "ਸਾਧ ਦੀ ਸੰਗਤ ਵਿੱਚੋਂ ਮਨੁੱਖ ਖਾਲੀ ਹੱਥ ਨਹੀਂ ਜਾਂਦਾ।"
+      },
+      "status": "adopted_and_final_text_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0272.html",
+      "scriptureChanged": false
+    },
+    {
+      "sourceId": "sukhmani.a07.p06.l10",
+      "gurmukhi": "ਨਾਨਕ ਉਧਰੈ ਸਾਧ ਸੁਨਿ ਰਸੈ ॥੬॥",
+      "origin": "reader_suggested",
+      "classification": "lexical_precision",
+      "reason": "The earlier wording added listening with delight. The final text follows the attributed reading of hearing the holy person’s teaching.",
+      "before": {
+        "en": "Nanak: listening with delight to the holy brings deliverance.",
+        "pa": "ਨਾਨਕ ਆਖਦਾ ਹੈ: ਸਾਧ ਦੇ ਬਚਨ ਰਸ ਨਾਲ ਸੁਣ ਕੇ ਜੀਵ ਉੱਧਰਦਾ ਹੈ।"
+      },
+      "final": {
+        "en": "Nanak: hearing the holy person’s teaching brings deliverance.",
+        "pa": "ਨਾਨਕ ਆਖਦਾ ਹੈ: ਸਾਧ ਦੇ ਬਚਨ ਸੁਣ ਕੇ ਜੀਵ ਪਾਰ ਲੰਘਦਾ ਹੈ।"
+      },
+      "status": "adopted_and_final_text_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0272.html",
+      "scriptureChanged": false
+    },
+    {
+      "sourceId": "sukhmani.a10.p07.l03",
+      "gurmukhi": "ਕਈ ਕੋਟਿ ਹੋਏ ਅਵਤਾਰ ॥",
+      "origin": "reader_suggested",
+      "classification": "avoid_theological_narrowing",
+      "reason": "Divine descents narrowed avataar here. Sahib Singh reads the line as beings coming into existence; that contextual choice is now reflected in both languages and the study.",
+      "before": {
+        "en": "Countless divine descents have appeared.",
+        "pa": "ਕਰੋੜਾਂ ਅਵਤਾਰ ਹੋਏ ਹਨ।"
+      },
+      "final": {
+        "en": "Countless beings have come into existence.",
+        "pa": "ਕਰੋੜਾਂ ਪ੍ਰਾਣੀ ਪੈਦਾ ਹੋਏ ਹਨ।"
+      },
+      "status": "adopted_and_final_text_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0276.html",
+      "scriptureChanged": false
+    },
+    {
+      "sourceId": "sukhmani.a07.p06.l01",
+      "gurmukhi": "ਸਾਧ ਕੈ ਸੰਗਿ ਨਹੀ ਕਛੁ ਘਾਲ ॥",
+      "origin": "source_agent_suggested",
+      "classification": "attributed_contextual_precision",
+      "reason": "The final wording specifies arduous ascetic striving, consistent with the selected commentary; this avoids implying that learning and devotion need no effort.",
+      "before": {
+        "en": "In holy company, no arduous striving is required.",
+        "pa": "ਸਾਧ ਜਨਾਂ ਦੀ ਸੰਗਤ ਵਿੱਚ ਔਖੀ ਘਾਲਣਾ ਨਹੀਂ ਘਾਲਣੀ ਪੈਂਦੀ।"
+      },
+      "final": {
+        "en": "In holy company, arduous ascetic striving is not required.",
+        "pa": "ਸਾਧ ਜਨਾਂ ਦੀ ਸੰਗਤ ਵਿੱਚ ਤਪ ਵਰਗੀ ਔਖੀ ਘਾਲਣਾ ਦੀ ਲੋੜ ਨਹੀਂ ਰਹਿੰਦੀ।"
+      },
+      "status": "adopted_and_final_text_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0272.html",
+      "scriptureChanged": false
+    },
+    {
+      "sourceId": "sukhmani.a08.p08.l09",
+      "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਕੀ ਸੋਭਾ ਬ੍ਰਹਮ ਗਿਆਨੀ ਬਨੀ ॥",
+      "origin": "author_self_audit",
+      "classification": "remove_added_cognition",
+      "reason": "The author removed known by from the splendour line. The final meaning retains the source’s sense of fittingness.",
+      "before": {
+        "en": "The Brahm Gyani's splendour is fittingly known by the Brahm Gyani.",
+        "pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਦੀ ਸੋਭਾ ਬ੍ਰਹਮ ਗਿਆਨੀ ਨੂੰ ਹੀ ਫਬਦੀ ਹੈ।"
+      },
+      "final": {
+        "en": "The Brahm Gyani’s splendour befits the Brahm Gyani alone.",
+        "pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਦੀ ਸੋਭਾ ਬ੍ਰਹਮ ਗਿਆਨੀ ਨੂੰ ਹੀ ਫਬਦੀ ਹੈ।"
+      },
+      "status": "adopted_and_final_text_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0274.html",
+      "scriptureChanged": false
+    }
+  ],
+  "additionalAdoptedClarifications": [
+    {
+      "sourceId": "sukhmani.a07.p08.l04",
+      "classification": "interpretive_alternative_not_confirmed_mistranslation",
+      "change": "Concise praise-language retained; the study adds the attributed comparison-with-the-all-pervading-Divine alternative.",
+      "status": "final_study_note_and_source_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0272.html"
+    },
+    {
+      "sourceId": "sukhmani.a12.p01.l03",
+      "classification": "bilingual_precision_before_immutable_snapshot",
+      "change": "Punjabi harmonized with the literal English image; the study separately explains the ethical-image interpretation and explicit rebirth context.",
+      "finalMeaning": {
+        "en": "becomes a dog, bound for hell.",
+        "pa": "ਉਹ ਕੁੱਤਾ ਬਣ ਕੇ ਨਰਕ ਦਾ ਭਾਗੀ ਹੁੰਦਾ ਹੈ।"
+      },
+      "status": "final_meaning_and_study_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0278.html"
+    },
+    {
+      "sourceId": "sukhmani.a12.p08.l08",
+      "classification": "precision_before_immutable_snapshot",
+      "change": "In every being / ਹਰ ਸਰੀਰ ਵਿੱਚ replaces an inward-heart wording, aligning the body, hearing and voicing image.",
+      "finalMeaning": {
+        "en": "In every being it is heard through the ears and voiced.",
+        "pa": "ਹਰ ਸਰੀਰ ਵਿੱਚ ਉਹ ਕੰਨਾਂ ਨਾਲ ਸੁਣੀ ਅਤੇ ਮੂੰਹੋਂ ਉਚਾਰੀ ਜਾਂਦੀ ਹੈ।"
+      },
+      "status": "final_meaning_reread",
+      "consultedUrl": "https://www.gurugranthdarpan.net/0279.html"
+    }
+  ],
+  "consultedWebSources": [
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 271,
+      "url": "https://www.gurugranthdarpan.net/0271.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 272,
+      "url": "https://www.gurugranthdarpan.net/0272.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 273,
+      "url": "https://www.gurugranthdarpan.net/0273.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 274,
+      "url": "https://www.gurugranthdarpan.net/0274.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 275,
+      "url": "https://www.gurugranthdarpan.net/0275.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 276,
+      "url": "https://www.gurugranthdarpan.net/0276.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 277,
+      "url": "https://www.gurugranthdarpan.net/0277.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 278,
+      "url": "https://www.gurugranthdarpan.net/0278.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    },
+    {
+      "title": "Professor Sahib Singh, Sri Guru Granth Darpan",
+      "ang": 279,
+      "url": "https://www.gurugranthdarpan.net/0279.html",
+      "consultation": "Page opened and selected relevant commentary read during this AI review"
+    }
+  ],
+  "remainingBlockingIssues": [],
+  "reviewerContentChanges": false,
+  "summary": "No remaining blocking mistranslation, source-line mismatch, invented named-saint attribution or medical guarantee was identified within the stated review scope. Adopted precision changes and interpretive alternatives were verified in the final hashed authoring files. Qualified human Punjabi/Gurbani review remains outstanding."
+}

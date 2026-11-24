@@ -1,0 +1,77 @@
+{
+  "checkedAtUtc": "2026-11-24T03:26:33.482323+00:00",
+  "environment": "Local Node/Python portable checks; browser outcomes are separate GitHub Actions evidence",
+  "status": "PASS",
+  "checksPassed": 87,
+  "commands": [
+    {
+      "command": "node tests/verify.mjs",
+      "passed": 27
+    },
+    {
+      "command": "node tests/service-worker.mjs",
+      "passed": 8
+    },
+    {
+      "command": "node tests/shared-learning.mjs",
+      "passed": 12
+    },
+    {
+      "command": "node tests/r6-contract.mjs",
+      "passed": 7
+    },
+    {
+      "command": "node tests/r7-contract.mjs",
+      "passed": 12
+    },
+    {
+      "command": "node tests/sukhmani-content.mjs",
+      "passed": 9
+    },
+    {
+      "command": "node tests/sukhmani-reader-core.mjs",
+      "passed": 12
+    }
+  ],
+  "pinnedUpstreamVerification": {
+    "command": "python3 tools/sukhmani/verify-upstream.py --cache <retrieved-pinned-source-cache>",
+    "matchedOccurrences": 1019,
+    "pinnedCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "status": "PASS"
+  },
+  "sourceCoverage": {
+    "ashtpadis": [
+      1,
+      12
+    ],
+    "sourceOccurrences": 1019,
+    "newSourceOccurrences": 509,
+    "firstSixPreservedExactly": true
+  },
+  "teachingCoverage": {
+    "bilingualMeaningPairs": 1019,
+    "passageStudies": 109,
+    "ashtpadiOverviews": 12,
+    "vocabularyEntries": 101,
+    "humanReviewed": 0
+  },
+  "runtimeSha256": {
+    "js/sukhmani-data.js": "171dc0eb9d924d227fdc77fd863f09cd1541f4a2185b3b70ea76803ac756f125",
+    "js/sukhmani-teaching.js": "0bbbb2ea64701b1241f40550b780db74ad76b9d422c48833e5b4faa11df92473",
+    "js/sukhmani-reader.js": "5a7dd21da0607781284d43a310a52d3ba98cf308896f7f6596b2fcd1dc95d85e",
+    "sukhmani.html": "c2e5aea54849eea8aebdbd09f1df507aaa5e6e01fa70d080b2df92c838d85efa",
+    "css/sukhmani.css": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f",
+    "sw.js": "b01c99d74b42675acc6b6818e9118529e18fd358889c7244c1d53c9e2e82b1b0"
+  },
+  "browserEvidenceLocation": "PR #34 links the actual GitHub Actions report and screenshots. This receipt does not claim a browser pass.",
+  "limits": [
+    "No qualified human Gurbani/Punjabi approval.",
+    "No physical iPhone Safari, VoiceOver, Home Screen or device airplane-mode acceptance claimed."
+  ],
+  "finalWordingAndOfflineHashRecheckAtUtc": "2026-11-24T03:28:06.227979+00:00",
+  "finalWordingAndOfflineHashRechecks": [
+    "node tests/sukhmani-content.mjs:9 PASS",
+    "node tests/service-worker.mjs:8 PASS",
+    "git diff --check:PASS"
+  ]
+}

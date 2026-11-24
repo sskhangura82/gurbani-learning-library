@@ -2,6 +2,8 @@
 
 Date: 2026-11-23 (Pacific)
 
+Historical first-six checkpoint, frozen at commit `28337270a1f149b96882acf420cf7dcd5c8910ce`. The current development preview continues through Ashtpadi 12; see [first-twelve scope and evidence](SUKHMANI_FIRST_TWELVE.md). Counts below describe the original first-six checkpoint.
+
 ## What this change delivers
 
 The existing Gurbani Learning Library gains `sukhmani.html`, a continuous reader for **Ashtpadis 1–6 of 24**. The home page links to it. The original Japji reader, its source text, existing meanings and saved-learning modules are unchanged. Later Nitnem branches are not merged or overwritten by this change.

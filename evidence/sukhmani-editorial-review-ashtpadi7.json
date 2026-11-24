@@ -1,0 +1,90 @@
+{
+  "status": "AI_FOCUSED_REVIEW_NO_BLOCKING_ISSUE",
+  "reviewer": "Separate AI editorial reviewer; not a qualified human reviewer",
+  "humanApproved": false,
+  "qualifiedPunjabiReviewApproved": false,
+  "subjectFile": "sukhmani-teaching-7-9.json",
+  "initialInspectedSubjectSha256": "835ccd974f2eaf5e5a7ae909bfa7d55c505a5ddd64d14d2edb561940fa8c53d3",
+  "scope": {
+    "ashtpadi7GurmukhiContextRead": true,
+    "englishAndPunjabiMeaningPairsRead": [
+      "sukhmani.a07.p06.l01",
+      "sukhmani.a07.p06.l02",
+      "sukhmani.a07.p06.l03",
+      "sukhmani.a07.p06.l04",
+      "sukhmani.a07.p06.l05",
+      "sukhmani.a07.p06.l06",
+      "sukhmani.a07.p06.l07",
+      "sukhmani.a07.p06.l08",
+      "sukhmani.a07.p06.l09",
+      "sukhmani.a07.p06.l10",
+      "sukhmani.a07.p08.l01",
+      "sukhmani.a07.p08.l02",
+      "sukhmani.a07.p08.l03",
+      "sukhmani.a07.p08.l04",
+      "sukhmani.a07.p08.l05",
+      "sukhmani.a07.p08.l06",
+      "sukhmani.a07.p08.l07",
+      "sukhmani.a07.p08.l08",
+      "sukhmani.a07.p08.l09",
+      "sukhmani.a07.p08.l10"
+    ],
+    "bilingualStudiesRead": [
+      "sukhmani.a07.p06",
+      "sukhmani.a07.p08"
+    ],
+    "otherBilingualFieldsRead": [
+      "ashtpadi7.overview",
+      "ashtpadi7.caution"
+    ],
+    "wholeTeachingPackageReviewed": false
+  },
+  "checks": [
+    {
+      "topic": "7.6 revised biratha/rasai meanings",
+      "finding": "Supported by selected Sahib Singh lexical commentary; empty-handed departure and hearing holy teaching are retained."
+    },
+    {
+      "topic": "7.8 unity claim",
+      "finding": "Strong no-separation assertion is retained and contextualized through earlier ethical qualities. No historical person or hereditary title is certified."
+    },
+    {
+      "topic": "7overview",
+      "finding": "Sums the source themes without reducing liberation to mood improvement or turning devotional promises into medical guarantees."
+    }
+  ],
+  "nonBlockingSuggestions": [
+    {
+      "field": "ashtpadi7.pauri6.explanation",
+      "suggestion": "Specify ascetic striving where the initial sentence says toil, consistent with the cited ghaal/tap lexical gloss.",
+      "resolution": "Accepted in concise bilingual meaning and study; inspected."
+    },
+    {
+      "field": "ashtpadi7.pauri8.explanation",
+      "suggestion": "Optionally acknowledge Sahib Singh’s reading of upma in lines3–4 as comparison with the Divine beyond gunas and all-pervading. Current praise/excellence reading is not recorded as a definite error.",
+      "resolution": "Accepted as attributed bilingual study note; inspected."
+    }
+  ],
+  "consultedCommentary": [
+    {
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 272,
+      "url": "https://www.gurugranthdarpan.net/0272.html",
+      "scope": "Selected 7.6 ghaal, biratha, rasai and 7.8 upma/comparison context."
+    }
+  ],
+  "sourceTextChanged": false,
+  "subjectSha256": "5760f51743bf6dac85e294b81e5b5d12bead07089c518125a7ce105781902763",
+  "targetedFollowupReview": {
+    "status": "accepted_refinements_inspected",
+    "subjectSha256": "5760f51743bf6dac85e294b81e5b5d12bead07089c518125a7ce105781902763",
+    "fieldsRereadInBothLanguages": [
+      "sukhmani.a07.p06.l01",
+      "ashtpadi7.pauri6.explanation",
+      "ashtpadi7.pauri8.explanation"
+    ],
+    "findings": "Ascetic-striving wording clarifies ghaal/tap without erasing the devotional assurance. Upma comparison reading is now explicitly attributed while concise praise-language is identified as a distinct rendering. No further issue found in these revised fields.",
+    "wholeTeachingPackageReread": false
+  }
+}

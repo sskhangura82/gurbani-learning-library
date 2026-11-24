@@ -1,6 +1,6 @@
 # Sukhmani Sahib expansion — build contract (draft)
 Date: 2026-11-23
-Status: First-six implementation in development. See `SUKHMANI_FIRST_SIX.md` for actual scope, source comparison, tests and remaining review. This is not a claim of a complete 24-Ashtpadi release or qualified human approval.
+Status: First-twelve implementation in development. See `SUKHMANI_FIRST_TWELVE.md` for actual scope, source comparison, tests and remaining review. This is not a claim of a complete 24-Ashtpadi release or qualified human approval.
 
 ## Goal
 Add Sukhmani Sahib to the **existing** Gurbani Learning Library alongside Japji Sahib, never as a second separate app. Do not modify production content merely to announce completion.
@@ -35,6 +35,6 @@ Add Sukhmani Sahib to the **existing** Gurbani Learning Library alongside Japji 
 5. Test on physical iPhone Safari and explain limits; no deployment/merge without explicit release review.
 
 ## Existing release context
-The older R7 candidate document was superseded by `docs/R7_RELEASE_AND_ROLLBACK.md`: R7 was published on 2026-10-23. The public main head checked for this work is `254f3871b785b756208379138dcc17472a3733ff`. This development branch adds the requested first six Ashtpadis; it does not replace or publish over the live reader. Later Nitnem development branches remain intact.
+The older R7 candidate document was superseded by `docs/R7_RELEASE_AND_ROLLBACK.md`: R7 was published on 2026-10-23. The public main head checked for this work is `254f3871b785b756208379138dcc17472a3733ff`. This development branch now includes the first twelve Ashtpadis; it does not replace or publish over the live reader. Later Nitnem development branches remain intact.
 
 References: README.md; docs/TEACHING_EXPANSION_ARCHITECTURE.md; docs/R7_RELEASE_CANDIDATE.md.
