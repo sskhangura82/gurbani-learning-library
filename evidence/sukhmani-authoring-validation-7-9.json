@@ -1,0 +1,43 @@
+{
+  "artifact": "/workspace/scratch/848c7bc44421/sukhmani-teaching-7-9.json",
+  "sha256": "5760f51743bf6dac85e294b81e5b5d12bead07089c518125a7ce105781902763",
+  "bytes": 204939,
+  "status": "draft",
+  "humanReviewed": false,
+  "coverage": {
+    "lineMeanings": 257,
+    "ashtpadiOverviews": 3,
+    "salokStudies": 3,
+    "pauriStudies": 24,
+    "rahauStudies": 0,
+    "vocabularyEntries": 27,
+    "humanReviewed": 0
+  },
+  "meaningsByAshtpadi": {
+    "7": 86,
+    "8": 85,
+    "9": 86
+  },
+  "studiesByAshtpadi": {
+    "7": 9,
+    "8": 9,
+    "9": 9
+  },
+  "checks": {
+    "exactOccurrenceSet": true,
+    "exactUnitMembershipAndOrder": true,
+    "exactAngReferences": true,
+    "retainedGurmukhiHashesMatch": true,
+    "englishFieldsHaveNoStrayNonLatinLetters": true,
+    "bilingualFieldsPresent": true,
+    "sourceReferencesPresent": true
+  },
+  "editorialNotes": [
+    "Original bilingual teaching drafted from primary Gurmukhi; selected Darpan lexical checks attributed.",
+    "Independent AI reading reviewed all 257 English meanings and key Punjabi; qualified human review remains pending.",
+    "Accepted 7.6 corrections: ascetic striving, person not leaving empty-handed, hearing teaching from the holy person.",
+    "7.8 retains concise praise reading and notes Darpan comparison alternative.",
+    "8.4 instrumental reading and 8.7 all-virtues reading are attributed; 8.6–8 retain explicit Divine-identification language.",
+    "Aparas, bhagauti and Ramdas are explained in their immediate contexts; no named saint is certified."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "AI_FOCUSED_REVIEW_NO_BLOCKING_ISSUE",
+  "reviewer": "Separate AI reviewer of root-authored Ashtpadi12 study prose",
+  "humanApproved": false,
+  "qualifiedPunjabiReviewApproved": false,
+  "subjectFile": "sukhmani-teaching-10-12.json",
+  "subjectSha256": "029953d12e6eeee2e416438d2624472045d213779d9f46ba7ea4b695355a2dad",
+  "initialInspectedStudy12Sha256": "9ea32515285abb50241f526c4aa7390eb86badad877888d12a9c616b3d5b54ac",
+  "finalStudy12Sha256": "2bef6f85f8c571ae8e7039165fa44967adae497af91a9402af4dc330d69a70b2",
+  "scope": {
+    "bilingualStudyTitlesAndExplanationsRead": [
+      "sukhmani.a12.salok",
+      "sukhmani.a12.p01",
+      "sukhmani.a12.p02",
+      "sukhmani.a12.p03",
+      "sukhmani.a12.p04",
+      "sukhmani.a12.p05",
+      "sukhmani.a12.p06",
+      "sukhmani.a12.p07",
+      "sukhmani.a12.p08"
+    ],
+    "otherBilingualFieldsRead": [
+      "ashtpadi12.overview",
+      "ashtpadi12.caution"
+    ],
+    "sourceContext": "All 84 source occurrences in Ashtpadi 12 were used in authorship of the separate line meanings; these study explanations were subsequently checked against that source.",
+    "wholeTeachingPackageReviewed": false,
+    "reflectionAndVocabularyEditorialReviewClaimed": false
+  },
+  "findings": [
+    {
+      "topic": "Humility and severe images",
+      "result": "Study retains explicit birth/death and degradation language; selected commentary’s filth/conduct reading is attributed. No moral licence to demean another person is inferred."
+    },
+    {
+      "topic": "Hukam and agency",
+      "result": "Dependence on Divine capacity is retained with responsible conduct as an identified practical application."
+    },
+    {
+      "topic": "12.8 truth/completeness",
+      "result": "Source-close true-language and Sahib Singh’s completeness reading are distinguished; no assertion that finite objects never change."
+    }
+  ],
+  "refinement": {
+    "field": "ashtpadi12.pauri8.explanation",
+    "reason": "Punjabi wording could sound like receiving praise; clarified the intended heart offering praise.",
+    "acceptedByAuthor": true,
+    "revisedEnglishClosing": "After the examination of pride, the Ashtpadi ends in praise and a heart turned toward Naam.",
+    "revisedPunjabiClosing": "ਹੰਕਾਰ ਦੀ ਪੜਤਾਲ ਮਗਰੋਂ ਅਸਟਪਦੀ ਉਸਤਤਿ ਕਰਦੇ ਅਤੇ ਨਾਮ ਵੱਲ ਮੁੜੇ ਹਿਰਦੇ ਨਾਲ ਮੁੱਕਦੀ ਹੈ।",
+    "targetedFollowupBothLanguagesInspected": true,
+    "programmaticDiffOnlyTwoExplanationStrings": true,
+    "sourceTextChanged": false
+  },
+  "consultedSources": [
+    {
+      "url": "https://www.gurugranthdarpan.net/0278.html",
+      "scope": "Humility and animal/rebirth imagery, selected passages only."
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/0279.html",
+      "scope": "Abiding in Divine being; creation truth/completeness, selected passages only."
+    }
+  ]
+}

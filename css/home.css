@@ -39,3 +39,6 @@ button,a,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,
  .home-hero h1{font-size:34px}.destination{min-height:224px}.destination h2{font-size:22px}
  .destination-link{font-size:10px}
 }
+.sukhmani-home-link{display:block;margin-top:16px;padding:24px 28px;border:1px solid var(--line);border-radius:19px;background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow)}
+.sukhmani-home-link:hover{border-color:var(--gold)}.sukhmani-home-link h2{font:clamp(27px,4vw,36px)/1.3 Georgia,serif;margin:9px 0}.sukhmani-home-link h2 span{float:right;color:var(--gold);font-size:26px}.sukhmani-home-link p{font-size:14px;color:var(--muted);margin:8px 0}.sukhmani-home-link .card-foot{margin-top:12px}
+@media(max-width:620px){.sukhmani-home-link{padding:20px;margin-top:12px}.sukhmani-home-link p{font-size:13px}.sukhmani-home-link .section-kicker{font-size:10px}}

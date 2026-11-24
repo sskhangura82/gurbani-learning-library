@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "total": 9,
+  "checks": [
+    "Exactly Ashtpadis 1–12, without claiming the complete composition",
+    "All original Unicode bytes match the frozen first-twelve sequence",
+    "The first-six source records, IDs, meanings and studies remain exactly preserved",
+    "A separately retrieved transcription agrees in exact order, text and Ang",
+    "Twelve complete Saloks, 96 ten-line pauris, both Rahau lines and all headings survive",
+    "Every source occurrence has its own bilingual draft and optional reading aid",
+    "Twelve introductions and all 109 passage studies have exact contextual anchors",
+    "Source and editorial content remain separate and source attribution is retained",
+    "Existing library entry and offline shell include the functional reader"
+  ],
+  "sourceOccurrences": 1019,
+  "newSourceOccurrences": 509,
+  "firstSixPreserved": true,
+  "pauriVerseLines": 960,
+  "salokVerseLines": 31,
+  "rahauLines": 2,
+  "headings": 26,
+  "meaningDrafts": 1019,
+  "passageStudyDrafts": 109,
+  "humanReviewed": 0
+}

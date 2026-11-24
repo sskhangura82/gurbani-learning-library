@@ -1,0 +1,72 @@
+{
+  "schema": "GLP-SUKHMANI-AI-EDITORIAL-REVIEW-1",
+  "date": "2026-11-23",
+  "reviewer": "Separate ChatGPT subagent; not a qualified human reviewer",
+  "subject": "sukhmani-teaching-1-3.json",
+  "subjectSha256": "beef3c341e4cc16ae931e439475e19c2b5e4904f07a6d5d3b7d0f3ede7a0eec6",
+  "result": "No blocking issue identified in the inspected scope",
+  "scope": {
+    "englishMeaningsComparedToOriginalGurmukhi": 258,
+    "bilingualStudiesInspected": [
+      "1.2",
+      "1.7",
+      "1.8",
+      "2.5",
+      "2.8",
+      "3.1",
+      "3.2",
+      "3.6",
+      "3.8"
+    ],
+    "punjabiMeaningsSpotChecked": [
+      "sukhmani.a01.p01.l06",
+      "sukhmani.a01.p08.l07",
+      "sukhmani.a02.p03.l07",
+      "sukhmani.a02.p07.l06",
+      "sukhmani.a03.p02.l04",
+      "sukhmani.a03.p06.l10",
+      "sukhmani.a03.p08.l02"
+    ]
+  },
+  "limitations": [
+    "Not a complete Punjabi line-by-line review.",
+    "No claim of scholarly approval or certified pronunciation.",
+    "Interpretive glosses remain AI-assisted educational drafts."
+  ],
+  "checks": [
+    "Religious liberation language retained without medical or physical invulnerability claims.",
+    "Ashtpadi1.7 contemplative resonance not misrepresented as measured physical frequency.",
+    "Ashtpadi3.1 ratna and3.2haivar lexical choices explicitly sourced.",
+    "Ashtpadi3.6 moral conduct retained; no exemption from accountability.",
+    "Ashtpadi3.8 Naam joined to truthful action rather than sectarian ranking."
+  ],
+  "initialSubjectSha256": "d69d5401726dc2af29b90ecb4027546183f21db31203676a12e3778bad01a6fd",
+  "scopeAppliesTo": "Initial review scope below applies to initialSubjectSha256. Follow-up review covers only the named changed meanings and their associated study context, not a fresh complete reread.",
+  "followUpReview": {
+    "subjectSha256": "beef3c341e4cc16ae931e439475e19c2b5e4904f07a6d5d3b7d0f3ede7a0eec6",
+    "changesReviewed": [
+      {
+        "id": "sukhmani.a02.p01.l04",
+        "previousInspectedEnglish": "Where the terrifying messenger of death brings crushing fear,",
+        "currentEnglish": "Where one faces the dreadful host of death's messengers,",
+        "currentPunjabi": "ਜਿੱਥੇ ਭਿਆਨਕ ਜਮਦੂਤਾਂ ਦੀ ਫ਼ੌਜ ਦਾ ਸਾਹਮਣਾ ਹੋਵੇ,",
+        "finding": "Revised host-of-messengers wording better matches the named Darpan grammatical reading of dut jam dalai. Primary Gurmukhi unchanged.",
+        "support": "https://www.gurugranthdarpan.net/0264.html"
+      },
+      {
+        "id": "sukhmani.a02.p08.l04",
+        "previousInspectedEnglish": "Attending to Naam relieves inward pain and distress.",
+        "currentEnglish": "On hearing Naam, pain and suffering fall away.",
+        "currentPunjabi": "ਨਾਮ ਸੁਣਨ ਨਾਲ ਦਰਦ ਅਤੇ ਦੁੱਖ ਦੂਰ ਹੋ ਜਾਂਦੇ ਹਨ।",
+        "finding": "Closer rendering of the source without adding inward to the line meaning; devotional context and non-medical limitations remain in the teaching. Primary Gurmukhi unchanged.",
+        "support": "https://www.gurugranthdarpan.net/0265.html"
+      }
+    ],
+    "associatedStudiesReread": [
+      "sukhmani.a02.p01",
+      "sukhmani.a02.p08"
+    ],
+    "limitations": "Original complete file snapshot was not retained by this reviewer; this records a targeted follow-up against previously inspected English wording and current source/context, not a byte-level proof that no other edits occurred.",
+    "result": "No blocking issue in the targeted updates."
+  }
+}
