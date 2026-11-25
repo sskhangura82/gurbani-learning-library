@@ -96,7 +96,8 @@ function search(raw){
   const vocab=u.vocabulary.map(v=>v.g+" "+v.roman+" "+v.en).join(" ");
   const tags=u.tags.join(" "),fields=u.title+" "+u.label+" "+vocab;
   let score=0;
-  for(const word of q.split(" ").filter(x=>x.length>=3)){if(match(tags,word))score+=4;if(match(fields,word))score+=2;}
+  const stop=new Set(["the","what","which","does","how","who","where","why","are","can","for","and","you","about","with","tell","show","this","that","your","from"]);
+  for(const word of q.split(" ").filter(x=>x.length>=3&&!stop.has(x))){if(match(tags,word))score+=4;if(match(fields,word))score+=2;}
   if(match(u.title,q)||match(tags,q))score+=8;
   return {index:i,score};
  }).sort((x,y)=>y.score-x.score);
