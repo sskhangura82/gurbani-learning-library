@@ -1,0 +1,72 @@
+{
+  "schema": "GLP-NITNEM-LIBRARY-V2",
+  "sourceCommit": "373ccc34f4a1c0ccb6ce36654bf6e9574087200f",
+  "sourceFamilySite": "gurbani-learning-library",
+  "releaseStatus": "PUBLIC_EDUCATIONAL_DRAFT",
+  "canonicalJapji": "../full-japji.html",
+  "audioSynced": false,
+  "entries": {
+    "jaap": {
+      "path": "data/jaap.json",
+      "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+      "units": 199,
+      "lines": 782,
+      "title": "Jaap Sahib",
+      "titleGurmukhi": "ਜਾਪੁ ਸਾਹਿਬ",
+      "editionId": "jaap-banidb-direct-20261125",
+      "daypart": "Morning"
+    },
+    "savaiye": {
+      "path": "data/savaiye.json",
+      "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+      "units": 10,
+      "lines": 40,
+      "title": "Tav-Prasad Savaiye",
+      "titleGurmukhi": "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ",
+      "editionId": "savaiye-discover-narrow-repairs-20261125",
+      "daypart": "Morning"
+    },
+    "chaupai": {
+      "path": "data/chaupai.json",
+      "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+      "units": 29,
+      "lines": 116,
+      "title": "Benti Chaupai Sahib",
+      "titleGurmukhi": "ਬੇਨਤੀ ਚੌਪਈ ਸਾਹਿਬ",
+      "editionId": "chaupai-expanded29-narrow-repairs-20261125",
+      "daypart": "Morning"
+    },
+    "anand": {
+      "path": "data/anand.json",
+      "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+      "units": 40,
+      "lines": 208,
+      "title": "Anand Sahib",
+      "titleGurmukhi": "ਅਨੰਦੁ ਸਾਹਿਬ",
+      "editionId": "anand-opengranth-pinned-20261125",
+      "daypart": "Morning"
+    },
+    "rehras": {
+      "path": "data/rehras.json",
+      "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+      "units": 44,
+      "lines": 159,
+      "title": "Sodar Rehras Sahib",
+      "titleGurmukhi": "ਰਹਿਰਾਸਿ ਸਾਹਿਬ",
+      "editionId": "rehras-sgpc-selection-narrow-repairs-20261125",
+      "daypart": "Evening"
+    },
+    "sohila": {
+      "path": "data/sohila.json",
+      "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+      "units": 5,
+      "lines": 56,
+      "title": "Kirtan Sohila",
+      "titleGurmukhi": "ਕੀਰਤਨ ਸੋਹਿਲਾ",
+      "editionId": "sohila-srigranth-digitally-collated-20261125",
+      "daypart": "Night"
+    }
+  },
+  "releaseId": "nitnem-complete-20261125",
+  "qualifiedHumanReviewed": false
+}

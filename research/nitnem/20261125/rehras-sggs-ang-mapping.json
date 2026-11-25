@@ -1,0 +1,2520 @@
+{
+  "schema": "glp001.rehras-sggs-ang-mapping.v1",
+  "createdAtUtc": "2026-11-25T13:04:19.920040+00:00",
+  "sourcePackSha256": "5c0635f6c87328ab40360662653fc47872e4244171c107976b77f039033ba28d",
+  "allOriginalSourceTextAndIdsPreserved": true,
+  "sggsSourceRecordsMapped": 57,
+  "totalRehrasSourceRecords": 159,
+  "noGurmukhiWordOrVerseOmissionsObserved": true,
+  "humanCollationApproved": false,
+  "scope": "57 SGGS aggregate rows: nine Sodar/Sopurakh hymns on Angs 8–12, Anand Paurees 1–5 and 40 on Angs 917 and 922, Mundawani and final Salok on Ang 1429. Digital text-only verification; two heading-final danda variants preserved. The separate Dasam portion is not covered by this SGGS mapping.",
+  "rows": [
+    {
+      "id": "rehras.sggs01.line01",
+      "textSha256": "fa017ae8de35accd4732494b07b039d90f3250d2c3488ff59eb700e7cfba3c7a",
+      "unitId": "rehras.sggs01",
+      "location": {
+        "system": "ang",
+        "hymn": 1,
+        "digitalHtmlParagraph": 3,
+        "ang": 8,
+        "angEnd": 8,
+        "angs": [
+          8
+        ],
+        "angRange": "8",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 8,
+            "sourceRecord": 39,
+            "sourceLine": 14
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 40,
+            "sourceLine": 14
+          }
+        ]
+      },
+      "matchingMethod": "all words and verses exact after whitespace comparison; the old source and SriGranth omit only the final heading danda that Open Granth includes",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0008.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=8&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs01.line02",
+      "textSha256": "18ca3e87b2b076c5f322f6567759d164c78fba3c5630d6084d3f3bd23e8672f8",
+      "unitId": "rehras.sggs01",
+      "location": {
+        "system": "ang",
+        "hymn": 1,
+        "digitalHtmlParagraph": 4,
+        "ang": 8,
+        "angEnd": 8,
+        "angs": [
+          8
+        ],
+        "angRange": "8",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 8,
+            "sourceRecord": 41,
+            "sourceLine": 14
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 42,
+            "sourceLine": 15
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 43,
+            "sourceLine": 15
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 44,
+            "sourceLine": 16
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0008.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=8&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs01.line03",
+      "textSha256": "c415694cd99d471e94b4c60cc413059460613e73d2b16847496a2be162fa5af1",
+      "unitId": "rehras.sggs01",
+      "location": {
+        "system": "ang",
+        "hymn": 1,
+        "digitalHtmlParagraph": 5,
+        "ang": 8,
+        "angEnd": 8,
+        "angs": [
+          8
+        ],
+        "angRange": "8",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 8,
+            "sourceRecord": 45,
+            "sourceLine": 17
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 46,
+            "sourceLine": 17
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 47,
+            "sourceLine": 18
+          },
+          {
+            "ang": 8,
+            "sourceRecord": 48,
+            "sourceLine": 19
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0008.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=8&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs01.line04",
+      "textSha256": "5ff4dec4646044437ad20484446d087c58e419679a247a9852d0dc847a94688e",
+      "unitId": "rehras.sggs01",
+      "location": {
+        "system": "ang",
+        "hymn": 1,
+        "digitalHtmlParagraph": 6,
+        "ang": 9,
+        "angEnd": 9,
+        "angs": [
+          9
+        ],
+        "angRange": "9",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 1,
+            "sourceLine": 1
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 2,
+            "sourceLine": 1
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 3,
+            "sourceLine": 2
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 4,
+            "sourceLine": 2
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs01.line05",
+      "textSha256": "f1c87da032813570cfcfbb1472e5279f90959e685d316e06104dbeed4a690921",
+      "unitId": "rehras.sggs01",
+      "location": {
+        "system": "ang",
+        "hymn": 1,
+        "digitalHtmlParagraph": 7,
+        "ang": 9,
+        "angEnd": 9,
+        "angs": [
+          9
+        ],
+        "angRange": "9",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 5,
+            "sourceLine": 3
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 6,
+            "sourceLine": 4
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 7,
+            "sourceLine": 4
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 8,
+            "sourceLine": 5
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 9,
+            "sourceLine": 5
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs01.line06",
+      "textSha256": "b5312ed00429ee8af8ed61a95970fd1fe5238a10bab44e46aaafca8b77479adc",
+      "unitId": "rehras.sggs01",
+      "location": {
+        "system": "ang",
+        "hymn": 1,
+        "digitalHtmlParagraph": 8,
+        "ang": 9,
+        "angEnd": 9,
+        "angs": [
+          9
+        ],
+        "angRange": "9",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 10,
+            "sourceLine": 6
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 11,
+            "sourceLine": 6
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 12,
+            "sourceLine": 7
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 13,
+            "sourceLine": 7
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 14,
+            "sourceLine": 8
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs02.line01",
+      "textSha256": "cedf8a10b30f45bf31dc7d45d3b2d3df697a642f90dfcfb2b98b1b9c3a4c3e58",
+      "unitId": "rehras.sggs02",
+      "location": {
+        "system": "ang",
+        "hymn": 2,
+        "digitalHtmlParagraph": 9,
+        "ang": 9,
+        "angEnd": 9,
+        "angs": [
+          9
+        ],
+        "angRange": "9",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 15,
+            "sourceLine": 9
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 16,
+            "sourceLine": 9
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 17,
+            "sourceLine": 9
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 18,
+            "sourceLine": 9
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 19,
+            "sourceLine": 10
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 20,
+            "sourceLine": 10
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 21,
+            "sourceLine": 10
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs02.line02",
+      "textSha256": "cb06d9f96b87ffe5351197f034ba3d0e61bc8983a52c78c7a848c92f1187afea",
+      "unitId": "rehras.sggs02",
+      "location": {
+        "system": "ang",
+        "hymn": 2,
+        "digitalHtmlParagraph": 10,
+        "ang": 9,
+        "angEnd": 9,
+        "angs": [
+          9
+        ],
+        "angRange": "9",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 22,
+            "sourceLine": 11
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 23,
+            "sourceLine": 11
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 24,
+            "sourceLine": 12
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 25,
+            "sourceLine": 12
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 26,
+            "sourceLine": 12
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 27,
+            "sourceLine": 13
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 28,
+            "sourceLine": 13
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 29,
+            "sourceLine": 13
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 30,
+            "sourceLine": 14
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 31,
+            "sourceLine": 14
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 32,
+            "sourceLine": 14
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 33,
+            "sourceLine": 15
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs03.line01",
+      "textSha256": "707ec4f389679256221d093be5aa32d40abdb2914072529d2aee027a37ce3dc1",
+      "unitId": "rehras.sggs03",
+      "location": {
+        "system": "ang",
+        "hymn": 3,
+        "digitalHtmlParagraph": 11,
+        "ang": 9,
+        "angEnd": 9,
+        "angs": [
+          9
+        ],
+        "angRange": "9",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 34,
+            "sourceLine": 15
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 35,
+            "sourceLine": 15
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 36,
+            "sourceLine": 15
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 37,
+            "sourceLine": 16
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 38,
+            "sourceLine": 16
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 39,
+            "sourceLine": 16
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 40,
+            "sourceLine": 17
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 41,
+            "sourceLine": 17
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 42,
+            "sourceLine": 17
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 43,
+            "sourceLine": 18
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 44,
+            "sourceLine": 18
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs03.line02",
+      "textSha256": "a6b6429339284f50112568081d39a57ff8175bdcd5b410437a84976a95522c26",
+      "unitId": "rehras.sggs03",
+      "location": {
+        "system": "ang",
+        "hymn": 3,
+        "digitalHtmlParagraph": 12,
+        "ang": 9,
+        "angEnd": 10,
+        "angs": [
+          9,
+          10
+        ],
+        "angRange": "9–10",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 9,
+            "sourceRecord": 45,
+            "sourceLine": 18
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 46,
+            "sourceLine": 18
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 47,
+            "sourceLine": 19
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 48,
+            "sourceLine": 19
+          },
+          {
+            "ang": 9,
+            "sourceRecord": 49,
+            "sourceLine": 19
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 1,
+            "sourceLine": 1
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 2,
+            "sourceLine": 1
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 3,
+            "sourceLine": 1
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0009.md",
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0010.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=9&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=10&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs04.line01",
+      "textSha256": "dc9a8200d879a4143b40b0a3a9b20bb11deddd79651dd8aa06b7900fc9a250c0",
+      "unitId": "rehras.sggs04",
+      "location": {
+        "system": "ang",
+        "hymn": 4,
+        "digitalHtmlParagraph": 13,
+        "ang": 10,
+        "angEnd": 10,
+        "angs": [
+          10
+        ],
+        "angRange": "10",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 10,
+            "sourceRecord": 4,
+            "sourceLine": 1
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 5,
+            "sourceLine": 2
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 6,
+            "sourceLine": 2
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 7,
+            "sourceLine": 3
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 8,
+            "sourceLine": 3
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0010.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=10&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs04.line02",
+      "textSha256": "ca5b8d00e0943a49b370067d9398eb86d44909e31da75c8e72b16df378331a2f",
+      "unitId": "rehras.sggs04",
+      "location": {
+        "system": "ang",
+        "hymn": 4,
+        "digitalHtmlParagraph": 14,
+        "ang": 10,
+        "angEnd": 10,
+        "angs": [
+          10
+        ],
+        "angRange": "10",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 10,
+            "sourceRecord": 9,
+            "sourceLine": 4
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 10,
+            "sourceLine": 5
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 11,
+            "sourceLine": 6
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 12,
+            "sourceLine": 6
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 13,
+            "sourceLine": 7
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 14,
+            "sourceLine": 8
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0010.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=10&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs05.line01",
+      "textSha256": "96d5cbb00ded7cc57d041fefb851a269f1e1d8141b92d71ba4cd6cbc81f29f3a",
+      "unitId": "rehras.sggs05",
+      "location": {
+        "system": "ang",
+        "hymn": 5,
+        "digitalHtmlParagraph": 15,
+        "ang": 10,
+        "angEnd": 10,
+        "angs": [
+          10
+        ],
+        "angRange": "10",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 10,
+            "sourceRecord": 15,
+            "sourceLine": 8
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 16,
+            "sourceLine": 9
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 17,
+            "sourceLine": 9
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 18,
+            "sourceLine": 10
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 19,
+            "sourceLine": 10
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0010.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=10&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs05.line02",
+      "textSha256": "82cc837e8d3b656c254a055ffceb52425345d1ee906e42ba7a025636b0684be0",
+      "unitId": "rehras.sggs05",
+      "location": {
+        "system": "ang",
+        "hymn": 5,
+        "digitalHtmlParagraph": 16,
+        "ang": 10,
+        "angEnd": 10,
+        "angs": [
+          10
+        ],
+        "angRange": "10",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 10,
+            "sourceRecord": 20,
+            "sourceLine": 11
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 21,
+            "sourceLine": 12
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 22,
+            "sourceLine": 12
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 23,
+            "sourceLine": 13
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 24,
+            "sourceLine": 13
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 25,
+            "sourceLine": 14
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0010.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=10&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs06.line01",
+      "textSha256": "a3929e78442e51b17175816ee200108610ef404daf877e76dee80e3ca503671c",
+      "unitId": "rehras.sggs06",
+      "location": {
+        "system": "ang",
+        "hymn": 6,
+        "digitalHtmlParagraph": 17,
+        "ang": 10,
+        "angEnd": 10,
+        "angs": [
+          10
+        ],
+        "angRange": "10",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 10,
+            "sourceRecord": 26,
+            "sourceLine": 16
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 27,
+            "sourceLine": 17
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 28,
+            "sourceLine": 17
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 29,
+            "sourceLine": 18
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 30,
+            "sourceLine": 18
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 31,
+            "sourceLine": 19
+          },
+          {
+            "ang": 10,
+            "sourceRecord": 32,
+            "sourceLine": 19
+          }
+        ]
+      },
+      "matchingMethod": "all words and verses exact after whitespace comparison; the old source and SriGranth omit only the final heading danda that Open Granth includes",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0010.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=10&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs06.line02",
+      "textSha256": "25e413884f8e17926b0b1deaaae571e59976aeda9005888db15b29db87db5ff9",
+      "unitId": "rehras.sggs06",
+      "location": {
+        "system": "ang",
+        "hymn": 6,
+        "digitalHtmlParagraph": 18,
+        "ang": 11,
+        "angEnd": 11,
+        "angs": [
+          11
+        ],
+        "angRange": "11",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 11,
+            "sourceRecord": 1,
+            "sourceLine": 1
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 2,
+            "sourceLine": 1
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 3,
+            "sourceLine": 2
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 4,
+            "sourceLine": 3
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 5,
+            "sourceLine": 3
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0011.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=11&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs06.line03",
+      "textSha256": "40d9f173d4b16fd10e5e82b6a6f8676e8936e9954e9b2c8524d4da069f9febe4",
+      "unitId": "rehras.sggs06",
+      "location": {
+        "system": "ang",
+        "hymn": 6,
+        "digitalHtmlParagraph": 19,
+        "ang": 11,
+        "angEnd": 11,
+        "angs": [
+          11
+        ],
+        "angRange": "11",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 11,
+            "sourceRecord": 6,
+            "sourceLine": 4
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 7,
+            "sourceLine": 4
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 8,
+            "sourceLine": 5
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 9,
+            "sourceLine": 6
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 10,
+            "sourceLine": 7
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0011.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=11&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs06.line04",
+      "textSha256": "965db38dfd65abc7cd86acb7c16913a6d914acffea7ab6b1e81833afa9c887a8",
+      "unitId": "rehras.sggs06",
+      "location": {
+        "system": "ang",
+        "hymn": 6,
+        "digitalHtmlParagraph": 20,
+        "ang": 11,
+        "angEnd": 11,
+        "angs": [
+          11
+        ],
+        "angRange": "11",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 11,
+            "sourceRecord": 11,
+            "sourceLine": 7
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 12,
+            "sourceLine": 8
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 13,
+            "sourceLine": 9
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 14,
+            "sourceLine": 10
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 15,
+            "sourceLine": 10
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0011.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=11&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs06.line05",
+      "textSha256": "d10065a58085d78369be1766299ebfbcd415855b1a01ba093b7840e765208da9",
+      "unitId": "rehras.sggs06",
+      "location": {
+        "system": "ang",
+        "hymn": 6,
+        "digitalHtmlParagraph": 21,
+        "ang": 11,
+        "angEnd": 11,
+        "angs": [
+          11
+        ],
+        "angRange": "11",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 11,
+            "sourceRecord": 16,
+            "sourceLine": 11
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 17,
+            "sourceLine": 12
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 18,
+            "sourceLine": 12
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 19,
+            "sourceLine": 13
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 20,
+            "sourceLine": 13
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0011.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=11&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs07.line01",
+      "textSha256": "e0b9512aeb3c6bede3a0d20bf7eff2a5991cc5d99a7395e1bb3751441b506f95",
+      "unitId": "rehras.sggs07",
+      "location": {
+        "system": "ang",
+        "hymn": 7,
+        "digitalHtmlParagraph": 22,
+        "ang": 11,
+        "angEnd": 11,
+        "angs": [
+          11
+        ],
+        "angRange": "11",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 11,
+            "sourceRecord": 21,
+            "sourceLine": 14
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 22,
+            "sourceLine": 14
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 23,
+            "sourceLine": 15
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 24,
+            "sourceLine": 15
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 25,
+            "sourceLine": 16
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 26,
+            "sourceLine": 16
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 27,
+            "sourceLine": 16
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 28,
+            "sourceLine": 17
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 29,
+            "sourceLine": 17
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 30,
+            "sourceLine": 18
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 31,
+            "sourceLine": 18
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0011.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=11&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs07.line02",
+      "textSha256": "5606844a1f952f26c226f0009f39220b715be656dd9c3064fcddb8efcd7ff53a",
+      "unitId": "rehras.sggs07",
+      "location": {
+        "system": "ang",
+        "hymn": 7,
+        "digitalHtmlParagraph": 23,
+        "ang": 11,
+        "angEnd": 12,
+        "angs": [
+          11,
+          12
+        ],
+        "angRange": "11–12",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 11,
+            "sourceRecord": 32,
+            "sourceLine": 18
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 33,
+            "sourceLine": 19
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 34,
+            "sourceLine": 19
+          },
+          {
+            "ang": 11,
+            "sourceRecord": 35,
+            "sourceLine": 19
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 1,
+            "sourceLine": 1
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 2,
+            "sourceLine": 1
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 3,
+            "sourceLine": 1
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 4,
+            "sourceLine": 2
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0011.md",
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0012.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=11&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=12&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs08.line01",
+      "textSha256": "fb30da40feb61c287dbdb7167649f9c460703f942b350c3aadac09466362d5ec",
+      "unitId": "rehras.sggs08",
+      "location": {
+        "system": "ang",
+        "hymn": 8,
+        "digitalHtmlParagraph": 24,
+        "ang": 12,
+        "angEnd": 12,
+        "angs": [
+          12
+        ],
+        "angRange": "12",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 12,
+            "sourceRecord": 5,
+            "sourceLine": 2
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 6,
+            "sourceLine": 2
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 7,
+            "sourceLine": 3
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 8,
+            "sourceLine": 4
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 9,
+            "sourceLine": 4
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 10,
+            "sourceLine": 4
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 11,
+            "sourceLine": 5
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0012.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=12&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.sggs09.line01",
+      "textSha256": "78f9b9496462ba9b3749cc085563ab21f4ef10ea51541f0989bf488d60311446",
+      "unitId": "rehras.sggs09",
+      "location": {
+        "system": "ang",
+        "hymn": 9,
+        "digitalHtmlParagraph": 25,
+        "ang": 12,
+        "angEnd": 12,
+        "angs": [
+          12
+        ],
+        "angRange": "12",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 12,
+            "sourceRecord": 12,
+            "sourceLine": 6
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 13,
+            "sourceLine": 6
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 14,
+            "sourceLine": 6
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 15,
+            "sourceLine": 6
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 16,
+            "sourceLine": 7
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 17,
+            "sourceLine": 7
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 18,
+            "sourceLine": 8
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 19,
+            "sourceLine": 8
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 20,
+            "sourceLine": 8
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 21,
+            "sourceLine": 9
+          },
+          {
+            "ang": 12,
+            "sourceRecord": 22,
+            "sourceLine": 9
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0012.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=12&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand01.line01",
+      "textSha256": "d14d993865589bd7856dae09b4db6212bebdc276bcfddbeee5f299a7048d2d85",
+      "unitId": "rehras.anand01",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 2,
+        "globalSourceRow": 2,
+        "pauri": 1,
+        "pauriLine": 1,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 3,
+            "sourceLine": 2
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand01.line02",
+      "textSha256": "c2a0dcc5d41cee8b31cd9fa79d499da90d7e75716785f42e865742e52aa941e3",
+      "unitId": "rehras.anand01",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 3,
+        "globalSourceRow": 3,
+        "pauri": 1,
+        "pauriLine": 2,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 4,
+            "sourceLine": 2
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand01.line03",
+      "textSha256": "d702c214b3e480d8d21ab911b06eac41988d7f0976724fae4efa41646d581c2f",
+      "unitId": "rehras.anand01",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 4,
+        "globalSourceRow": 4,
+        "pauri": 1,
+        "pauriLine": 3,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 5,
+            "sourceLine": 3
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand01.line04",
+      "textSha256": "e22e6ab0c1260e3e105c70e8f23ad5ef60804e813a9bc02df73e6a8002d7d5a5",
+      "unitId": "rehras.anand01",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 5,
+        "globalSourceRow": 5,
+        "pauri": 1,
+        "pauriLine": 4,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 6,
+            "sourceLine": 3
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand01.line05",
+      "textSha256": "a22e6df242dea7fef284cab7e58d28dfcdd179d296a531cd3c212ce2a63dd7dd",
+      "unitId": "rehras.anand01",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 6,
+        "globalSourceRow": 6,
+        "pauri": 1,
+        "pauriLine": 5,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 7,
+            "sourceLine": 4
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand02.line01",
+      "textSha256": "7c5ce0b487e7007fad427b32dd05e37214d1909e5a760e8866235fb39c353903",
+      "unitId": "rehras.anand02",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 7,
+        "globalSourceRow": 7,
+        "pauri": 2,
+        "pauriLine": 1,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 8,
+            "sourceLine": 4
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand02.line02",
+      "textSha256": "44a88235826ca062694f41764e450cfd58ed0641b94d64112339d6bd9f2c3f45",
+      "unitId": "rehras.anand02",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 8,
+        "globalSourceRow": 8,
+        "pauri": 2,
+        "pauriLine": 2,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 9,
+            "sourceLine": 5
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand02.line03",
+      "textSha256": "1cccae25edad8f4556f1dc7d725b11340fb5a830088fa9bbda24d61f937b70b9",
+      "unitId": "rehras.anand02",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 9,
+        "globalSourceRow": 9,
+        "pauri": 2,
+        "pauriLine": 3,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 10,
+            "sourceLine": 5
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand02.line04",
+      "textSha256": "95b655ae58a8b13539b05e667e5b76a038dd7dfae19e2f6fbf82e505a66b6969",
+      "unitId": "rehras.anand02",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 10,
+        "globalSourceRow": 10,
+        "pauri": 2,
+        "pauriLine": 4,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 11,
+            "sourceLine": 6
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand02.line05",
+      "textSha256": "097e870f1ce888db3c586fd559c57e535bb0ce7d5dc84a5977dfde4b9c5dd353",
+      "unitId": "rehras.anand02",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 11,
+        "globalSourceRow": 11,
+        "pauri": 2,
+        "pauriLine": 5,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 12,
+            "sourceLine": 6
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand03.line01",
+      "textSha256": "17a3df037b6a8cb1eed60022b096fdf2e615ea910847499b3b6dd808b8e57bd8",
+      "unitId": "rehras.anand03",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 12,
+        "globalSourceRow": 12,
+        "pauri": 3,
+        "pauriLine": 1,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 13,
+            "sourceLine": 7
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand03.line02",
+      "textSha256": "f5b8bf2e5419dde72ebacd78a6cb07f1338be3fe8eba0bf8943b7528aafe22a6",
+      "unitId": "rehras.anand03",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 13,
+        "globalSourceRow": 13,
+        "pauri": 3,
+        "pauriLine": 2,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 14,
+            "sourceLine": 7
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand03.line03",
+      "textSha256": "b41e44a3cb5fa139dec2c21e06378bba63f53589aeceaf36bbdc9b1787907b96",
+      "unitId": "rehras.anand03",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 14,
+        "globalSourceRow": 14,
+        "pauri": 3,
+        "pauriLine": 3,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 15,
+            "sourceLine": 7
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand03.line04",
+      "textSha256": "02ce3b83eb654ca8830ed70ad480889f7334c0f22bfb0a3b63835a080ed6c307",
+      "unitId": "rehras.anand03",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 15,
+        "globalSourceRow": 15,
+        "pauri": 3,
+        "pauriLine": 4,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 16,
+            "sourceLine": 8
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand03.line05",
+      "textSha256": "9f443969c6ca545a311e7ff23fa3409c0cea2a4f78d72b7afe19a95ae82dd6b8",
+      "unitId": "rehras.anand03",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 16,
+        "globalSourceRow": 16,
+        "pauri": 3,
+        "pauriLine": 5,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 17,
+            "sourceLine": 8
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand04.line01",
+      "textSha256": "337f354dbbf5162aa6939b9088387a0f09401ba8606e04ad5e065f33e7f1c354",
+      "unitId": "rehras.anand04",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 17,
+        "globalSourceRow": 17,
+        "pauri": 4,
+        "pauriLine": 1,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 18,
+            "sourceLine": 9
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand04.line02",
+      "textSha256": "341789f2f62f7a5f5939505e287ea83cc02bb196acd7e8e7b99764277ae1ee8a",
+      "unitId": "rehras.anand04",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 18,
+        "globalSourceRow": 18,
+        "pauri": 4,
+        "pauriLine": 2,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 19,
+            "sourceLine": 9
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand04.line03",
+      "textSha256": "aa3c97f7549b32962fd04548b90f2d4a8a9d356c3dbfbb4ff2d81b556cba1b1b",
+      "unitId": "rehras.anand04",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 19,
+        "globalSourceRow": 19,
+        "pauri": 4,
+        "pauriLine": 3,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 20,
+            "sourceLine": 10
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand04.line04",
+      "textSha256": "9d6b566888b5139f106e27797fb398eb15a941d563cfe9df10aeabaa350e15cf",
+      "unitId": "rehras.anand04",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 20,
+        "globalSourceRow": 20,
+        "pauri": 4,
+        "pauriLine": 4,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 21,
+            "sourceLine": 10
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand04.line05",
+      "textSha256": "b9e032b59554d4cd0fe02db6e1300eca259f78261adf7ea758e19359e359e3db",
+      "unitId": "rehras.anand04",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 21,
+        "globalSourceRow": 21,
+        "pauri": 4,
+        "pauriLine": 5,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 22,
+            "sourceLine": 11
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand04.line06",
+      "textSha256": "2e3c00fe12cdf6daa9d3047ebd6b8007d83dab903c1ab44484db718b95f1a809",
+      "unitId": "rehras.anand04",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 22,
+        "globalSourceRow": 22,
+        "pauri": 4,
+        "pauriLine": 6,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 23,
+            "sourceLine": 11
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand05.line01",
+      "textSha256": "295aeebfe78204c9e7cd427cbf3b58bd9c253d8085999e50d85718d4e45f6f4f",
+      "unitId": "rehras.anand05",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 23,
+        "globalSourceRow": 23,
+        "pauri": 5,
+        "pauriLine": 1,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 24,
+            "sourceLine": 12
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand05.line02",
+      "textSha256": "02cdbfcb8ae49cad5e39a10553b013ae4f9a68ccca98c7c5a34320de47f5c0cb",
+      "unitId": "rehras.anand05",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 24,
+        "globalSourceRow": 24,
+        "pauri": 5,
+        "pauriLine": 2,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 25,
+            "sourceLine": 12
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand05.line03",
+      "textSha256": "190f9cb6e31b7bd75f976cc70505141f48fcccc06859d9b10919ccb8cb8615b5",
+      "unitId": "rehras.anand05",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 25,
+        "globalSourceRow": 25,
+        "pauri": 5,
+        "pauriLine": 3,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 26,
+            "sourceLine": 12
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand05.line04",
+      "textSha256": "4e6388d46f01eb5cf8568b1fd24ca17e515fd5c9dca00dd1645eab81781cec2d",
+      "unitId": "rehras.anand05",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 26,
+        "globalSourceRow": 26,
+        "pauri": 5,
+        "pauriLine": 4,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 27,
+            "sourceLine": 13
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand05.line05",
+      "textSha256": "dbfa07ad6e792a433022ec7ec702bcf796afef7522e5148bb9f6b434c26156fd",
+      "unitId": "rehras.anand05",
+      "location": {
+        "system": "ang",
+        "ang": 917,
+        "digitalParagraph": 27,
+        "globalSourceRow": 27,
+        "pauri": 5,
+        "pauriLine": 5,
+        "angEnd": 917,
+        "angs": [
+          917
+        ],
+        "angRange": "917",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 917,
+            "sourceRecord": 28,
+            "sourceLine": 13
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0917.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=917&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand40.line01",
+      "textSha256": "be4bc19edd463c608ce099e3a5cf0cd04a00f672166ba941a35d9f7a09129fe2",
+      "unitId": "rehras.anand40",
+      "location": {
+        "system": "ang",
+        "ang": 922,
+        "digitalParagraph": 26,
+        "globalSourceRow": 204,
+        "pauri": 40,
+        "pauriLine": 1,
+        "angEnd": 922,
+        "angs": [
+          922
+        ],
+        "angRange": "922",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 922,
+            "sourceRecord": 27,
+            "sourceLine": 17
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0922.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=922&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand40.line02",
+      "textSha256": "2a7d3581fec953d5c71b6622d718109377c45cbeb76b900aa183915d98136769",
+      "unitId": "rehras.anand40",
+      "location": {
+        "system": "ang",
+        "ang": 922,
+        "digitalParagraph": 27,
+        "globalSourceRow": 205,
+        "pauri": 40,
+        "pauriLine": 2,
+        "angEnd": 922,
+        "angs": [
+          922
+        ],
+        "angRange": "922",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 922,
+            "sourceRecord": 28,
+            "sourceLine": 17
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0922.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=922&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand40.line03",
+      "textSha256": "862612c2679ab8fe849957492145efd8448e2e64c062da20405facea89ad0798",
+      "unitId": "rehras.anand40",
+      "location": {
+        "system": "ang",
+        "ang": 922,
+        "digitalParagraph": 28,
+        "globalSourceRow": 206,
+        "pauri": 40,
+        "pauriLine": 3,
+        "angEnd": 922,
+        "angs": [
+          922
+        ],
+        "angRange": "922",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 922,
+            "sourceRecord": 29,
+            "sourceLine": 18
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0922.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=922&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand40.line04",
+      "textSha256": "87480a179e5e5092743afd81ab576afbefe0b564a40a192d11c1a8b58c04b53c",
+      "unitId": "rehras.anand40",
+      "location": {
+        "system": "ang",
+        "ang": 922,
+        "digitalParagraph": 29,
+        "globalSourceRow": 207,
+        "pauri": 40,
+        "pauriLine": 4,
+        "angEnd": 922,
+        "angs": [
+          922
+        ],
+        "angRange": "922",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 922,
+            "sourceRecord": 30,
+            "sourceLine": 18
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0922.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=922&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand40.line05",
+      "textSha256": "06eb4f28bfb70ea0202462899fe95b32d68c5dcd5b6e23c20dc84b0471115666",
+      "unitId": "rehras.anand40",
+      "location": {
+        "system": "ang",
+        "ang": 922,
+        "digitalParagraph": 30,
+        "globalSourceRow": 208,
+        "pauri": 40,
+        "pauriLine": 5,
+        "angEnd": 922,
+        "angs": [
+          922
+        ],
+        "angRange": "922",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 922,
+            "sourceRecord": 31,
+            "sourceLine": 18
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0922.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=922&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.anand40.line06",
+      "textSha256": "024b60590dcd6048a582dca91d9d85a35ef82c9195ecf8adf3f6e299c6d6a55b",
+      "unitId": "rehras.anand40",
+      "location": {
+        "system": "ang",
+        "ang": 922,
+        "digitalParagraph": 31,
+        "globalSourceRow": 209,
+        "pauri": 40,
+        "pauriLine": 6,
+        "angEnd": 922,
+        "angs": [
+          922
+        ],
+        "angRange": "922",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 922,
+            "sourceRecord": 32,
+            "sourceLine": 19
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0922.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=922&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.mundawani.line01",
+      "textSha256": "14809a1832d8965796c929bb3ea477a3db7d9593df97a1ca6ffc5123f67acb33",
+      "unitId": "rehras.mundawani",
+      "location": {
+        "system": "ang",
+        "section": "mundawani",
+        "digitalHtmlParagraph": 47,
+        "ang": 1429,
+        "angEnd": 1429,
+        "angs": [
+          1429
+        ],
+        "angRange": "1429",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 1429,
+            "sourceRecord": 22,
+            "sourceLine": 11
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 23,
+            "sourceLine": 12
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 24,
+            "sourceLine": 12
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 25,
+            "sourceLine": 13
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 26,
+            "sourceLine": 13
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 27,
+            "sourceLine": 14
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1429.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    },
+    {
+      "id": "rehras.slok.line01",
+      "textSha256": "d9e78b57d5d27b321f1032efe22f14da7c72871af4fc8836e6ed0c39b8e63161",
+      "unitId": "rehras.slok",
+      "location": {
+        "system": "ang",
+        "section": "slok",
+        "digitalHtmlParagraph": 48,
+        "ang": 1429,
+        "angEnd": 1429,
+        "angs": [
+          1429
+        ],
+        "angRange": "1429",
+        "angEdition": "Pinned Open Granth occurrence mapping checked against SriGranth Gurmukhi page text",
+        "sourceRecords": [
+          {
+            "ang": 1429,
+            "sourceRecord": 28,
+            "sourceLine": 14
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 29,
+            "sourceLine": 14
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 30,
+            "sourceLine": 15
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 31,
+            "sourceLine": 15
+          },
+          {
+            "ang": 1429,
+            "sourceRecord": 32,
+            "sourceLine": 16
+          }
+        ]
+      },
+      "matchingMethod": "exact Gurmukhi occurrence match after removing whitespace for comparison only",
+      "sourceUrls": [
+        "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1429.md"
+      ],
+      "comparisonUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=0"
+      ]
+    }
+  ]
+}

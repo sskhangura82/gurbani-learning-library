@@ -1,0 +1,24 @@
+{
+  "artifact": "nitnem-teaching-121-160.json",
+  "sha256": "c27a5671e3081a1390586bb3d540ae504f940a6c38269223a7a4c65b4b2634a3",
+  "role": "Author self-review; separate root review is recorded by root",
+  "checksActuallyPerformed": [
+    "Read all160 source lines in their grouped order while drafting original bilingual meanings.",
+    "Compared difficult selected lexemes with the linked commentary and dictionary sources; recorded alternative constructions and source keys.",
+    "Reviewed original English/Punjabi passage-specific prose during authoring; all40 deep-study passages have separate Punjabi text.",
+    "Validated all160 IDs/hashes,40 anchors,120 source-present vocabulary terms,all references/sourceChecks and4 heading hashes.",
+    "Removed unsupported afflictions gloss at129, added explicit alternate direction of ruju at121, removed unnecessary comparison at130, and replaced heading implementation prose."
+  ],
+  "counts": {
+    "meaningPairs": 160,
+    "studies": 40,
+    "vocabulary": 120,
+    "headings": 4,
+    "exactSourceMeaningReuses": 28,
+    "references": 8,
+    "sourceChecks": 19
+  },
+  "sourceOriginalChanged": false,
+  "qualifiedHumanReviewed": 0,
+  "limits": "This author self-review is not independent or qualified scholarly review. Source API collation belongs to the separate source-audit agent; browser and release behavior belong to the root/engineering review."
+}

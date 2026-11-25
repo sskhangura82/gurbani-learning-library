@@ -1,0 +1,388 @@
+{
+  "schema": "glp001.source-integration-receipt.v1",
+  "verifiedAtUtc": "2026-11-25T13:32:47.275053+00:00",
+  "scope": "Independent comparison of frozen source-prototype files with the current local runtime files; no public HTTP or browser claim.",
+  "qualifiedHumanReviewCount": 0,
+  "sourceManifest": "proposed-source-manifest.json",
+  "sourceManifestSha256": "7e0defa75fa40e08319d91f2a4229e5ec234c73acfd2e51d3e07d1583f6375d0",
+  "hashExplanation": "The proposed-source-manifest hashes exact frozen prototype JSON files. Runtime files are separately hashed because six documented top-level publication metadata fields are changed, added, or removed during integration. The preserved payload is the full source JSON object after excluding precisely those six fields; all units, lines, hashes, locations, headings, preface, display order and audit metadata remain equal.",
+  "allowedTopLevelMetadataFields": [
+    "previousEditionIds",
+    "publicationStatus",
+    "publishedAsFamilyScripture",
+    "releaseId",
+    "rightsCleared",
+    "schema"
+  ],
+  "entries": {
+    "jaap": {
+      "prototypeFile": "proposed-packs/jaap.json",
+      "prototypeSha256": "ddd7f5788c9112a7fcb0bea007e04d96bb4a4121df936f4b49e186cb2b7a67cf",
+      "runtimeFile": "nitnem/data/jaap.json",
+      "runtimeSha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+      "editionId": "jaap-banidb-direct-20261125",
+      "unitCount": 199,
+      "sourceRecordCount": 782,
+      "changedTopLevelFields": [
+        "previousEditionIds",
+        "publicationStatus",
+        "publishedAsFamilyScripture",
+        "releaseId",
+        "rightsCleared",
+        "schema"
+      ],
+      "metadataChanges": {
+        "previousEditionIds": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": [
+            "jaap-199-digital-original-candidate-20261025"
+          ]
+        },
+        "publicationStatus": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "EDUCATIONAL_DRAFT"
+        },
+        "publishedAsFamilyScripture": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "releaseId": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "nitnem-complete-20261125"
+        },
+        "rightsCleared": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "schema": {
+          "prototypePresent": true,
+          "prototypeValue": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+          "runtimePresent": true,
+          "runtimeValue": "GLP-NITNEM-SOURCE-V2"
+        }
+      },
+      "allOtherFieldsEqual": true,
+      "allUnitsAndSourceRecordsEqual": true,
+      "allPrefaceAndHeadingsEqual": true,
+      "preservedPayloadCanonicalSha256": "7002bb7ce4512497750f42d22596afd4d682fbd1d8b879041e15c39aed5ad8ae"
+    },
+    "savaiye": {
+      "prototypeFile": "proposed-packs/savaiye.json",
+      "prototypeSha256": "96cea03347f558c060c2886af36afa08311cef27ef5aead770f6f8b67b0e9bd7",
+      "runtimeFile": "nitnem/data/savaiye.json",
+      "runtimeSha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+      "editionId": "savaiye-discover-narrow-repairs-20261125",
+      "unitCount": 10,
+      "sourceRecordCount": 40,
+      "changedTopLevelFields": [
+        "previousEditionIds",
+        "publicationStatus",
+        "publishedAsFamilyScripture",
+        "releaseId",
+        "rightsCleared",
+        "schema"
+      ],
+      "metadataChanges": {
+        "previousEditionIds": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": [
+            "dasam-sravag-sudh-digital-candidate-20261025"
+          ]
+        },
+        "publicationStatus": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "EDUCATIONAL_DRAFT"
+        },
+        "publishedAsFamilyScripture": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "releaseId": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "nitnem-complete-20261125"
+        },
+        "rightsCleared": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "schema": {
+          "prototypePresent": true,
+          "prototypeValue": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+          "runtimePresent": true,
+          "runtimeValue": "GLP-NITNEM-SOURCE-V2"
+        }
+      },
+      "allOtherFieldsEqual": true,
+      "allUnitsAndSourceRecordsEqual": true,
+      "allPrefaceAndHeadingsEqual": true,
+      "preservedPayloadCanonicalSha256": "bebcc114a3f4142d3c7637c08ab537aa393f03337353c5f05a2f2d10d76b05cd"
+    },
+    "chaupai": {
+      "prototypeFile": "proposed-packs/chaupai.json",
+      "prototypeSha256": "a64759bba8e6c9d2d2d8a2f7299a7a571168b672be00c8796c973022455dc35a",
+      "runtimeFile": "nitnem/data/chaupai.json",
+      "runtimeSha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+      "editionId": "chaupai-expanded29-narrow-repairs-20261125",
+      "unitCount": 29,
+      "sourceRecordCount": 116,
+      "changedTopLevelFields": [
+        "previousEditionIds",
+        "publicationStatus",
+        "publishedAsFamilyScripture",
+        "releaseId",
+        "rightsCleared",
+        "schema"
+      ],
+      "metadataChanges": {
+        "previousEditionIds": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": [
+            "dasam-chaupai-expanded-29-website-candidate-20261025"
+          ]
+        },
+        "publicationStatus": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "EDUCATIONAL_DRAFT"
+        },
+        "publishedAsFamilyScripture": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "releaseId": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "nitnem-complete-20261125"
+        },
+        "rightsCleared": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "schema": {
+          "prototypePresent": true,
+          "prototypeValue": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+          "runtimePresent": true,
+          "runtimeValue": "GLP-NITNEM-SOURCE-V2"
+        }
+      },
+      "allOtherFieldsEqual": true,
+      "allUnitsAndSourceRecordsEqual": true,
+      "allPrefaceAndHeadingsEqual": true,
+      "preservedPayloadCanonicalSha256": "a320ae67fe561f5f3fcc04b91dae37d84cdd190d0e22b799dba0c5159a4a2870"
+    },
+    "anand": {
+      "prototypeFile": "proposed-packs/anand.json",
+      "prototypeSha256": "089c99f32d93e7414e0a93d775e43c7412c05e0228ace64512cbd4e2c7b5ebb6",
+      "runtimeFile": "nitnem/data/anand.json",
+      "runtimeSha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+      "editionId": "anand-opengranth-pinned-20261125",
+      "unitCount": 40,
+      "sourceRecordCount": 208,
+      "changedTopLevelFields": [
+        "previousEditionIds",
+        "publicationStatus",
+        "publishedAsFamilyScripture",
+        "releaseId",
+        "rightsCleared",
+        "schema"
+      ],
+      "metadataChanges": {
+        "previousEditionIds": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": [
+            "sggs-anand-40-digital-candidate-20261025"
+          ]
+        },
+        "publicationStatus": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "EDUCATIONAL_DRAFT"
+        },
+        "publishedAsFamilyScripture": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "releaseId": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "nitnem-complete-20261125"
+        },
+        "rightsCleared": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "schema": {
+          "prototypePresent": true,
+          "prototypeValue": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+          "runtimePresent": true,
+          "runtimeValue": "GLP-NITNEM-SOURCE-V2"
+        }
+      },
+      "allOtherFieldsEqual": true,
+      "allUnitsAndSourceRecordsEqual": true,
+      "allPrefaceAndHeadingsEqual": true,
+      "preservedPayloadCanonicalSha256": "6e80bfc660f5930c4ac90ac75a7abe83c3e40b4b4e569a9aaca454fbe116f564"
+    },
+    "rehras": {
+      "prototypeFile": "proposed-packs/rehras.json",
+      "prototypeSha256": "735dd7c3dddec856bc77b0165b2b1fbba4775f37a5ab98e7a6839f0d6d7daab8",
+      "runtimeFile": "nitnem/data/rehras.json",
+      "runtimeSha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+      "editionId": "rehras-sgpc-selection-narrow-repairs-20261125",
+      "unitCount": 44,
+      "sourceRecordCount": 159,
+      "changedTopLevelFields": [
+        "previousEditionIds",
+        "publicationStatus",
+        "publishedAsFamilyScripture",
+        "releaseId",
+        "rightsCleared",
+        "schema"
+      ],
+      "metadataChanges": {
+        "previousEditionIds": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": [
+            "sgpc-digital-composite-unreviewed-20261025"
+          ]
+        },
+        "publicationStatus": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "EDUCATIONAL_DRAFT"
+        },
+        "publishedAsFamilyScripture": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "releaseId": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "nitnem-complete-20261125"
+        },
+        "rightsCleared": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "schema": {
+          "prototypePresent": true,
+          "prototypeValue": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+          "runtimePresent": true,
+          "runtimeValue": "GLP-NITNEM-SOURCE-V2"
+        }
+      },
+      "allOtherFieldsEqual": true,
+      "allUnitsAndSourceRecordsEqual": true,
+      "allPrefaceAndHeadingsEqual": true,
+      "preservedPayloadCanonicalSha256": "6ceef1d3d48d5f7bbb5effc6f271bb9bbd52488fb9b1978ac425d4f308b4be2e"
+    },
+    "sohila": {
+      "prototypeFile": "proposed-packs/sohila.json",
+      "prototypeSha256": "03982aef989784561f2543ab287ad7781c8196d200b0a9b10bf99c0d6c424791",
+      "runtimeFile": "nitnem/data/sohila.json",
+      "runtimeSha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+      "editionId": "sohila-srigranth-digitally-collated-20261125",
+      "unitCount": 5,
+      "sourceRecordCount": 56,
+      "changedTopLevelFields": [
+        "previousEditionIds",
+        "publicationStatus",
+        "publishedAsFamilyScripture",
+        "releaseId",
+        "rightsCleared",
+        "schema"
+      ],
+      "metadataChanges": {
+        "previousEditionIds": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": [
+            "sggs-digital-ang12-13-source-candidate-20261025"
+          ]
+        },
+        "publicationStatus": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "EDUCATIONAL_DRAFT"
+        },
+        "publishedAsFamilyScripture": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "releaseId": {
+          "prototypePresent": false,
+          "prototypeValue": null,
+          "runtimePresent": true,
+          "runtimeValue": "nitnem-complete-20261125"
+        },
+        "rightsCleared": {
+          "prototypePresent": true,
+          "prototypeValue": false,
+          "runtimePresent": false,
+          "runtimeValue": null
+        },
+        "schema": {
+          "prototypePresent": true,
+          "prototypeValue": "GLP-001-NITNEM-SOURCE-REVIEW-V1",
+          "runtimePresent": true,
+          "runtimeValue": "GLP-NITNEM-SOURCE-V2"
+        }
+      },
+      "allOtherFieldsEqual": true,
+      "allUnitsAndSourceRecordsEqual": true,
+      "allPrefaceAndHeadingsEqual": true,
+      "preservedPayloadCanonicalSha256": "bfcaac9a88b15a27f108d82d60eee691f8d031674e2f643d3d5a322a358fd67a"
+    }
+  },
+  "totalUnits": 327,
+  "totalSourceRecords": 1361,
+  "status": "PASS"
+}

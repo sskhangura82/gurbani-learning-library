@@ -49,7 +49,7 @@ const server=http.createServer(async(req,res)=>{
   const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
   if(pathname==='/favicon.ico'){res.writeHead(204);res.end();return;}
   if(!pathname.startsWith(PREFIX)){res.writeHead(404);res.end('Not found');return;}
-  const relative=pathname.slice(PREFIX.length)||'index.html',filename=path.resolve(root,relative);
+  const relative=pathname.slice(PREFIX.length)||'index.html',filename=path.resolve(root,relative.endsWith('/')?relative+'index.html':relative);
   if(filename!==root&&!filename.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}
   const bytes=await fs.readFile(filename);res.writeHead(200,{'Content-Type':types[path.extname(filename)]||'application/octet-stream','Cache-Control':'no-store'});res.end(bytes);
  }catch{res.writeHead(404);res.end('Not found');}

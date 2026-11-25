@@ -1,0 +1,72 @@
+{
+  "schema": "glp.nitnem-recovered-baseline.v1",
+  "gitCommit": "59988183230a087fd6de264c3803c3e34dbf59c4",
+  "generator": "tools/nitnem/build-nitnem-v16-candidate.mjs",
+  "sourceCourse": "course.v16.json",
+  "courseSHA256": "61aad9f2c2642d975747368616a3b47cab26306f66384d50ab6e7b0f3c7c09ed",
+  "sourceRecords": 1361,
+  "meanings": 1039,
+  "studies": 247,
+  "coverage": {
+    "jaap": {
+      "totalUnits": 199,
+      "draftLessons": 120,
+      "firstLineNotes": 466,
+      "sourceRecords": 782,
+      "sourceEdition": "jaap-199-digital-original-candidate-20261025"
+    },
+    "savaiye": {
+      "totalUnits": 10,
+      "draftLessons": 10,
+      "firstLineNotes": 40,
+      "sourceRecords": 40,
+      "sourceEdition": "dasam-sravag-sudh-digital-candidate-20261025"
+    },
+    "chaupai": {
+      "totalUnits": 29,
+      "draftLessons": 29,
+      "firstLineNotes": 116,
+      "sourceRecords": 116,
+      "sourceEdition": "dasam-chaupai-expanded-29-website-candidate-20261025"
+    },
+    "anand": {
+      "totalUnits": 40,
+      "draftLessons": 39,
+      "firstLineNotes": 202,
+      "sourceRecords": 208,
+      "sourceEdition": "sggs-anand-40-digital-candidate-20261025"
+    },
+    "rehras": {
+      "totalUnits": 44,
+      "draftLessons": 44,
+      "firstLineNotes": 159,
+      "sourceRecords": 159,
+      "sourceEdition": "sgpc-digital-composite-unreviewed-20261025"
+    },
+    "sohila": {
+      "totalUnits": 5,
+      "draftLessons": 5,
+      "firstLineNotes": 56,
+      "sourceRecords": 56,
+      "sourceEdition": "sggs-digital-ang12-13-source-candidate-20261025"
+    }
+  },
+  "recoveredAssetHashes": {
+    "index.html": "971572b412a17af2fcdef246b4bcec6e0b339a837e4704a3990a14d872e23bed",
+    "reader.js": "c6d20bdbee76ace72efbe5167094b938406bbbdadee6537393f70ac721d48d27",
+    "reader.css": "49c6c16643aa8975dcd1d51756196e5901cee0324a2c1069cb0d4d9bc2df559a",
+    "continuous-core.js": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+    "appearance.js": "64dafaea92554e904abd565b652b5b544ccb9b15ff3c63a7a3520217a95e5a5f",
+    "appearance.css": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377",
+    "learning/learning-ui.js": "63d3132f166681cbc23d2286988c8ada0a852735dd84c317776c6160b51215dc",
+    "learning/course.v16.json": "61aad9f2c2642d975747368616a3b47cab26306f66384d50ab6e7b0f3c7c09ed",
+    "data/library.json": "b5865b293acc3ea91a20487dd82efd6f503d22dc5823bc2a67effcd146840d7a",
+    "data/jaap.json": "3ac2bbf35e91d1d626a0a4c45c8059857c01bed1368f378bef5d06741422fecb",
+    "data/savaiye.json": "7c96c919b1c12c6bfe8f295a94bfcda8fb8cc42bf8f18b92c842acd834ca9651",
+    "data/chaupai.json": "cd8d990a3ae5f1c1257a8636059b9ea0b11d0617c6a8aab6ff2a77246a780e30",
+    "data/anand.json": "70b8c69e70b241eef1b46b326e7bbc127d4526f061eb41b150d1f9944df884c4",
+    "data/rehras.json": "5c0635f6c87328ab40360662653fc47872e4244171c107976b77f039033ba28d",
+    "data/sohila.json": "d212a854971679b1cef98833dbc4a13c1c4af37f524629c918960fef45887897"
+  },
+  "preservationPolicy": "Existing meanings and study objects are preserved except explicitly documented source/lexical corrections; new content fills only exact missing IDs. This baseline is evidence, not scholarly approval."
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "glp001.independent-ai-editorial-review.v1",
+  "reviewedAtUtc": "2026-11-25T13:06:41.103708+00:00",
+  "reviewer": "independent source/editorial AI agent",
+  "qualifiedHumanReviewCount": 0,
+  "inputFile": "/workspace/scratch/848c7bc44421/nitnem-teaching-anand24.json",
+  "inputSha256": "d679241d618893915d56c1ddf7ccf55c75938a5734a8149535e3f96d5802659a",
+  "scope": {
+    "englishLineMeaningsRead": 6,
+    "punjabiLineMeaningsRead": 6,
+    "bilingualUnitSummariesRead": 1,
+    "bilingualFullStudiesRead": 1,
+    "bilingualVocabularyEntriesRead": 6,
+    "bilingualReflectionsAndTeachbackRead": true,
+    "allSourceHashBindingsVerified": true,
+    "citationSourcesOpenedIndependently": true
+  },
+  "primaryReferences": [
+    {
+      "url": "https://www.gurugranthdarpan.net/0920.html",
+      "scope": "Pauri24 grammatical/contextual commentary and adjacent23/25. Kachi, agentive plural kachin, ravani and Maya interpretation independently checked. The site retains the legacy private-use glyph and was not used as a clean Unicode witness."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0920.md",
+      "scope": "Exact source text; all six meanings bound to matching source hashes."
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=920&g=1&h=0&k=0&p=0&r=0&t=0",
+      "scope": "Original Pauri24 and adjacent23/25 text; legacy glyph retained."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "verified",
+      "item": "six line meanings",
+      "finding": "The English and Punjabi paraphrases preserve the Guru-centered claim, agentive plural in line03, lack of understanding in line04, and Maya-captured attention with outward utterance in line05."
+    },
+    {
+      "severity": "verified",
+      "item": "full study and context",
+      "finding": "Adjacent Pauris23 and25 are accurately connected. Sahib Singh’s interpretation is attributed rather than substituted for the original. Learner applications and interpretive cautions are distinguishable from the text."
+    }
+  ],
+  "requiredCorrections": [],
+  "result": "NO_REQUIRED_CORRECTION_FOUND_WITHIN_STATED_AI_REVIEW_SCOPE",
+  "limitations": "This is an independent AI editorial check of the listed six meanings and one study; it is not qualified human review, a universal interpretive ruling, or physical-edition collation."
+}

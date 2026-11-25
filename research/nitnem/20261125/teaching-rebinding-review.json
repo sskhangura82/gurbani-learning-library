@@ -1,0 +1,229 @@
+{
+  "schema": "glp001.source-amendment-teaching-impact.v1",
+  "reviewedAtUtc": "2026-11-25T13:17:58.675274+00:00",
+  "legacyCourseSha256": "61aad9f2c2642d975747368616a3b47cab26306f66384d50ab6e7b0f3c7c09ed",
+  "scope": "All10 affected existing meaning pairs and their10 related existing unit studies were read against the corrected Gurmukhi; the newly authored Anand24 andJaap177 records were absent from V16 and are separately reviewed. This is a scoped AI review, not a review of the entire oldcourse.",
+  "qualifiedHumanReviewCount": 0,
+  "affectedExistingMeaningCount": 10,
+  "rows": [
+    {
+      "compositionId": "jaap",
+      "lineId": "jaap177.line04",
+      "meaningKey": "jaap|jaap177.line04",
+      "studyKey": "jaap|jaap177",
+      "oldSha256": "9838b67efedadc3baef4983b9a30bda238db987f20f9c3953d8a17b7c42f5b5b",
+      "newSha256": "7c3175fec453334a1b9c8656939a7d9a3923102183593967da31f6abb63e8c42",
+      "legacyMeaningExists": false,
+      "legacyStudyExists": false,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "No V16 meaning for this occurrence. Bind the newly authored original material to the corrected source.",
+      "recommendedEdits": []
+    },
+    {
+      "compositionId": "savaiye",
+      "lineId": "savaiye08.line03",
+      "meaningKey": "savaiye|savaiye08.line03",
+      "studyKey": "savaiye|savaiye08",
+      "oldSha256": "3b5257a0688b5dc6964a4174c4c33db693d7ac387f24af0e08acadf771fa097d",
+      "newSha256": "71e2dd232b29114f6efb49005e9e06899ccc569bee096806ea52c1d95132c9cd",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": []
+    },
+    {
+      "compositionId": "savaiye",
+      "lineId": "savaiye10.line04",
+      "meaningKey": "savaiye|savaiye10.line04",
+      "studyKey": "savaiye|savaiye10",
+      "oldSha256": "de8bc9d640117d50d97b971704e9d3e7d3d58d4e9e3596cd18483f1e7a39be1f",
+      "newSha256": "15ad7a05fa0b6996c00992b0fd87135eeee36ab45d8e14f73719aa96e0ac48af",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": []
+    },
+    {
+      "compositionId": "chaupai",
+      "lineId": "chaupai-rehras05.line02",
+      "meaningKey": "chaupai|chaupai-rehras05.line02",
+      "studyKey": "chaupai|chaupai-rehras05",
+      "oldSha256": "a292ba84a7c9aa67146893717028d598d219b0f3e869f25e7fd0a60b8af8a06b",
+      "newSha256": "1c6c20280c5cdd0c9f418be41ff1a9080ad78f37683a33eb48d3e2a87ffb8492",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": []
+    },
+    {
+      "compositionId": "chaupai",
+      "lineId": "chaupai-rehras10.line03",
+      "meaningKey": "chaupai|chaupai-rehras10.line03",
+      "studyKey": "chaupai|chaupai-rehras10",
+      "oldSha256": "28830933604f6cce33fab53ef95a4d7abeae44832fd37a4c465cbf765c9be2cb",
+      "newSha256": "d1cad0536ed54ae32e6cfa61d7a15989ca756a47760ecfb178db40f0cc506f35",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": [
+        {
+          "target": "chaupai|chaupai-rehras10.study.words",
+          "oldGurmukhi": "ਸਵਗੁਨ",
+          "newGurmukhi": "ਸਿਵਗੁਨ",
+          "reason": "Vocabulary spelling must match the repaired original. Existing good-qualities/blessings working gloss can remain."
+        }
+      ]
+    },
+    {
+      "compositionId": "chaupai",
+      "lineId": "chaupai-rehras20.line02",
+      "meaningKey": "chaupai|chaupai-rehras20.line02",
+      "studyKey": "chaupai|chaupai-rehras20",
+      "oldSha256": "18933d8de59d7e02ac9f260ad4a531a687990c495d31081c72aa8827fda059ed",
+      "newSha256": "3c2a51ec0807f744113c96060fed6d4d5df6753efd0f27f80190930b8bb4728e",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": [
+        {
+          "target": "chaupai|chaupai-rehras20.line02",
+          "simpleEn": "Rescue the Sikh disciples, and destroy the opponents.",
+          "simplePa": "ਸਿੱਖ ਸੇਵਕਾਂ ਨੂੰ ਬਚਾ ਅਤੇ ਵਿਰੋਧੀਆਂ ਦਾ ਸੰਘਾਰ ਕਰ।",
+          "reason": "Recommended fidelity refinement: ਸੰਘਰੋ is stronger than the current “overcome”/“ਵਿਰੋਧ ਨੂੰ ਰੋਕ”. Keep its explicit divine-petition context and the existing caution against equating present-day non-Sikhs with targets."
+        }
+      ]
+    },
+    {
+      "compositionId": "chaupai",
+      "lineId": "chaupai-rehras23.line01",
+      "meaningKey": "chaupai|chaupai-rehras23.line01",
+      "studyKey": "chaupai|chaupai-rehras23",
+      "oldSha256": "fe1feebf7740aef63659533ccdce307c73f2af99ea0f3b4ecf7c07579ed93c44",
+      "newSha256": "164321e4a75de2f1f5c963e3a0d00ee178a3f7540ac29d86cad0729a99c62f5f",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": true,
+      "semanticReview": "Independent fidelity issue found in existing paraphrase: “remembered in prayer”/“ਉਸ ਦੀ ਬੇਨਤੀ ਇੱਥੇ ਯਾਦ ਕੀਤੀ” is not in this source clause. Make it a connected clause leading into23.2.",
+      "recommendedEdits": [
+        {
+          "target": "chaupai|chaupai-rehras23.line01",
+          "simpleEn": "Those upon whom You look with Your merciful gaze—",
+          "simplePa": "ਜਿਨ੍ਹਾਂ ਵੱਲ ਤੂੰ ਕਿਰਪਾ ਦੀ ਨਿਗਾਹ ਨਾਲ ਤੱਕਦਾ ਹੈਂ—",
+          "reason": "Retains the original clause and its continuation in the next source line without inserting a claim about remembered prayer."
+        }
+      ]
+    },
+    {
+      "compositionId": "anand",
+      "lineId": "anand24.line03",
+      "meaningKey": "anand|anand24.line03",
+      "studyKey": "anand|anand24",
+      "oldSha256": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+      "newSha256": "afc775a4bdd3a1e45ac64fb748605048d56ecb2a70d021dd9886e8a49a897673",
+      "legacyMeaningExists": false,
+      "legacyStudyExists": false,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "No V16 meaning for this occurrence. Bind the newly authored original material to the corrected source.",
+      "recommendedEdits": []
+    },
+    {
+      "compositionId": "rehras",
+      "lineId": "rehras.chaupai-rehras05.line02",
+      "meaningKey": "rehras|rehras.chaupai-rehras05.line02",
+      "studyKey": "rehras|rehras.chaupai05",
+      "oldSha256": "a292ba84a7c9aa67146893717028d598d219b0f3e869f25e7fd0a60b8af8a06b",
+      "newSha256": "1c6c20280c5cdd0c9f418be41ff1a9080ad78f37683a33eb48d3e2a87ffb8492",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": [
+        {
+          "target": "rehras|rehras.chaupai-rehras05.line02.provenance.sourceSha256",
+          "newValue": "1c6c20280c5cdd0c9f418be41ff1a9080ad78f37683a33eb48d3e2a87ffb8492",
+          "reason": "Update the exact-text reuse binding to the equally repaired morning Chaupai occurrence; preserve separate Rehras context."
+        }
+      ]
+    },
+    {
+      "compositionId": "rehras",
+      "lineId": "rehras.chaupai-rehras10.line03",
+      "meaningKey": "rehras|rehras.chaupai-rehras10.line03",
+      "studyKey": "rehras|rehras.chaupai10",
+      "oldSha256": "28830933604f6cce33fab53ef95a4d7abeae44832fd37a4c465cbf765c9be2cb",
+      "newSha256": "d1cad0536ed54ae32e6cfa61d7a15989ca756a47760ecfb178db40f0cc506f35",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": [
+        {
+          "target": "rehras|rehras.chaupai10.study.words",
+          "oldGurmukhi": "ਸਵਗੁਨ",
+          "newGurmukhi": "ਸਿਵਗੁਨ",
+          "reason": "Vocabulary spelling must match the repaired original. Existing good-qualities/blessings working gloss can remain."
+        },
+        {
+          "target": "rehras|rehras.chaupai-rehras10.line03.provenance.sourceSha256",
+          "newValue": "d1cad0536ed54ae32e6cfa61d7a15989ca756a47760ecfb178db40f0cc506f35",
+          "reason": "Update the exact-text reuse binding to the equally repaired morning Chaupai occurrence; preserve separate Rehras context."
+        }
+      ]
+    },
+    {
+      "compositionId": "rehras",
+      "lineId": "rehras.chaupai-rehras20.line02",
+      "meaningKey": "rehras|rehras.chaupai-rehras20.line02",
+      "studyKey": "rehras|rehras.chaupai20",
+      "oldSha256": "18933d8de59d7e02ac9f260ad4a531a687990c495d31081c72aa8827fda059ed",
+      "newSha256": "3c2a51ec0807f744113c96060fed6d4d5df6753efd0f27f80190930b8bb4728e",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": false,
+      "semanticReview": "The narrow source repair does not change the intended sense of the existing English/Punjabi paraphrase. Both language fields and the related existing unit study were read.",
+      "recommendedEdits": [
+        {
+          "target": "rehras|rehras.chaupai-rehras20.line02",
+          "simpleEn": "Rescue the Sikh disciples, and destroy the opponents.",
+          "simplePa": "ਸਿੱਖ ਸੇਵਕਾਂ ਨੂੰ ਬਚਾ ਅਤੇ ਵਿਰੋਧੀਆਂ ਦਾ ਸੰਘਾਰ ਕਰ।",
+          "reason": "Recommended fidelity refinement: ਸੰਘਰੋ is stronger than the current “overcome”/“ਵਿਰੋਧ ਨੂੰ ਰੋਕ”. Keep its explicit divine-petition context and the existing caution against equating present-day non-Sikhs with targets."
+        },
+        {
+          "target": "rehras|rehras.chaupai-rehras20.line02.provenance.sourceSha256",
+          "newValue": "3c2a51ec0807f744113c96060fed6d4d5df6753efd0f27f80190930b8bb4728e",
+          "reason": "Update the exact-text reuse binding to the equally repaired morning Chaupai occurrence; preserve separate Rehras context."
+        }
+      ]
+    },
+    {
+      "compositionId": "rehras",
+      "lineId": "rehras.chaupai-rehras23.line01",
+      "meaningKey": "rehras|rehras.chaupai-rehras23.line01",
+      "studyKey": "rehras|rehras.chaupai23",
+      "oldSha256": "fe1feebf7740aef63659533ccdce307c73f2af99ea0f3b4ecf7c07579ed93c44",
+      "newSha256": "164321e4a75de2f1f5c963e3a0d00ee178a3f7540ac29d86cad0729a99c62f5f",
+      "legacyMeaningExists": true,
+      "legacyStudyExists": true,
+      "studyAnchorAlsoNeedsRebinding": true,
+      "semanticReview": "Independent fidelity issue found in existing paraphrase: “remembered in prayer”/“ਉਸ ਦੀ ਬੇਨਤੀ ਇੱਥੇ ਯਾਦ ਕੀਤੀ” is not in this source clause. Make it a connected clause leading into23.2.",
+      "recommendedEdits": [
+        {
+          "target": "rehras|rehras.chaupai-rehras23.line01",
+          "simpleEn": "Those upon whom You look with Your merciful gaze—",
+          "simplePa": "ਜਿਨ੍ਹਾਂ ਵੱਲ ਤੂੰ ਕਿਰਪਾ ਦੀ ਨਿਗਾਹ ਨਾਲ ਤੱਕਦਾ ਹੈਂ—",
+          "reason": "Retains the original clause and its continuation in the next source line without inserting a claim about remembered prayer."
+        },
+        {
+          "target": "rehras|rehras.chaupai-rehras23.line01.provenance.sourceSha256",
+          "newValue": "164321e4a75de2f1f5c963e3a0d00ee178a3f7540ac29d86cad0729a99c62f5f",
+          "reason": "Update the exact-text reuse binding to the equally repaired morning Chaupai occurrence; preserve separate Rehras context."
+        }
+      ]
+    }
+  ]
+}

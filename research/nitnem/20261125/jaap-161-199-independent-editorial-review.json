@@ -1,0 +1,244 @@
+{
+  "schema": "glp001.independent-ai-editorial-review.v1",
+  "reviewer": "Independent source/editorial AI agent /root/source_13_18, separate from teaching author",
+  "reviewCompletedAtUtc": "2026-11-25T13:40:20.446692+00:00",
+  "status": "PASS_WITH_QUALIFIED_HUMAN_REVIEW_PENDING",
+  "inputFile": "nitnem-teaching-161-199.json",
+  "inputSha256": "43cd937cd5796d708e18cf8bfd65e73fde5d33b356baa07b0969ea47d0d83d2c",
+  "sourceSubsetFile": "nitnem-source-audit/jaap-161-199-source.json",
+  "sourceSubsetSha256": "67042e531bb30d94a80f3c4976a2170b36f033bfff68fc5d4c6f11430f37ff04",
+  "range": [
+    161,
+    199
+  ],
+  "scope": {
+    "exactGurmukhiSourceOccurrencesRead": 156,
+    "englishMeaningRecordsRead": 156,
+    "punjabiMeaningRecordsRead": 156,
+    "fullBilingualUnitStudiesRead": 39,
+    "bilingualUnitSummariesRead": 39,
+    "bilingualVocabularyEntriesRead": 161,
+    "bilingualHeadingNotesRead": 5,
+    "allStudyFocusCloseReadingInterpretationCareReflectionTeachBackFieldsRead": true,
+    "allSourceAndHeadingBindingsIndependentlyChecked": true,
+    "all156StudyLineAnchorsIndependentlyChecked": true,
+    "finalCompiledMeaningsComparedWithReviewedDrafts": true,
+    "onlyCompiledWordingDifferenceFromFinalDrafts": "jaap164.line02 reuses the existing same-source087.line03 English/Punjabi meaning, independently read and found consistent."
+  },
+  "method": [
+    "Read all source lines and each English/Punjabi meaning and the entirety of all39 bilingual studies, summaries, vocabulary, cautions, reflections and teach-back fields in three staggered batches.",
+    "Independently visually inspected the printed Sahib Singh commentary at PDF pages103–119 (printed102–118), including the complete161–199 range; source text and alternative readings were kept distinct.",
+    "Rechecked every requested correction in compiled output, all5 heading notes, exact-string reuse decisions and the final source193 ordering.",
+    "Independently recomputed all156 source text SHA256 values and checked meaning keys, source hashes, complete unit coverage, every study source anchor, heading text/hash/index and reference-key existence.",
+    "Verified all7 declared exact-string reuse mappings against original source strings and matching English/Punjabi fields. The explicitly separate166.03 interpretation remains documented rather than silently overriding the earlier088.03 teaching."
+  ],
+  "primaryPrintedReference": {
+    "title": "Professor Sahib Singh, Jaap Sahib, Savaiye, Chaupai Steek",
+    "publisher": "Singh Book Stall, Amritsar",
+    "url": "https://gurbani-audios-c4abhzghhnccd5gj.z01.azurefd.net/database/vidhia.com/Professor%20Sahib%20Singh/Prof-Sahib-Singh-Sri-Jaap-Sahib-Steek.pdf",
+    "localFile": "nitnem-teaching-161-199-research/sahib-singh-jaap-steek.pdf",
+    "sha256": "1284a06232d35ed25b0a9c2ce4e745fcc81b86dcd256f4099604ccb070a764a3",
+    "pdfPagesIndependentlyViewed": [
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "printedPagesIndependentlyViewed": [
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118
+    ]
+  },
+  "additionalDirectChecks": [
+    {
+      "url": "https://api.banidb.com/v2/banis/4",
+      "role": "Selected digital Gurmukhi source; full source collation recorded in separate source audit."
+    },
+    {
+      "url": "https://www.sridasam.org/0008.html",
+      "role": "Direct original-text comparison witness161–169; spelling/counter differences not silently adopted."
+    },
+    {
+      "url": "https://www.sridasam.org/0009.html",
+      "role": "Direct original-text comparison witness170–190, including178 karna/karuna and188 bank/bak differences."
+    },
+    {
+      "url": "https://www.sridasam.org/0010.html",
+      "role": "Direct original-text witness URL for191–199 and closing boundary, with primary final text also independently read in printed commentary."
+    },
+    {
+      "url": "https://srec.gurmat.info/srecarticles/sridasamgranthsahib/jaap.html",
+      "role": "Limited displayed187 hand/sustenance reading comparison; no translation imported."
+    },
+    {
+      "url": "https://www.shabados.com/jap-sahib/",
+      "role": "Limited displayed187 food/drink reading comparison; no translation imported."
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "units": [
+        165
+      ],
+      "topic": "Particular derivation made explicit",
+      "resolution": "The selected Vishnu-related analysis of ਅਭੰਡ now names Vishnu in both main meanings and preserves the separate indivisibility alternative.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        171,
+        176
+      ],
+      "topic": "Source force retained",
+      "resolution": "Destruction of adversaries/the wicked is stated directly rather than limited to loss of their power. Contextual cautions distinguish Divine praise from human retaliation.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        177,
+        178
+      ],
+      "topic": "Clear English for representation limits",
+      "resolution": "Ambiguous English unfashionable was replaced by language about a being beyond a fashioned image or unrepresentable being.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        182
+      ],
+      "topic": "Unwarranted definition of adversaries removed",
+      "resolution": "The added those who oppose You clause was removed; the source adversary term remains without assigning it to contemporary religious disagreement.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        183
+      ],
+      "topic": "Selected commentary distinguished",
+      "resolution": "Complete being is the main reading of ਸਰਬਾ ਕ੍ਰਿਤ, explicitly following Sahib Singh; the all-form interpretation is separately identified.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        187
+      ],
+      "topic": "Hand/drink alternative disclosed",
+      "resolution": "The food/drink reading is retained with an explicit note that Sahib Singh reads ਪਾਨ through hand and explains sustenance in Divine hands. The reviewer also independently checked the displayed drink reading in the ShabadOS comparison text.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        191
+      ],
+      "topic": "Food independence stated accurately",
+      "resolution": "The summary now says the Divine does not depend on food, avoiding a separate claim about inability to be sustained.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        192,
+        196,
+        198
+      ],
+      "topic": "Punjabi fluency",
+      "resolution": "Awkward ਉਸਤਤੇ/ਉਸਤਤੀ constructions were replaced by grammatical sentences about praise.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        196
+      ],
+      "topic": "Unsupported ontology removed",
+      "resolution": "The main meaning directly states freedom from ritual dependence, without the added to establish Your being clause. Associated study wording was aligned.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        197
+      ],
+      "topic": "Punjabi source relation and agency",
+      "resolution": "Universal-form wording now mirrors the selected source; destruction of wrongful deeds is stated with clear Divine agency.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        198
+      ],
+      "topic": "Destruction and wrath retained",
+      "resolution": "The English main meanings now preserve ਪ੍ਰਣਾਸੀ as destruction and ਗਜਾਇਬ as bringing wrath; compassionate descriptions and contextual cautions remain.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        199
+      ],
+      "topic": "Faithful ending without extraneous instruction",
+      "resolution": "The ending remains exactly at the selected199 counter; unnecessary prose about adding unverified verses was removed.",
+      "status": "verified resolved in final input"
+    },
+    {
+      "units": [
+        193
+      ],
+      "topic": "Provenance claim limited to evidence",
+      "resolution": "Ancient source order was corrected to Selected source order. The selected ਅਗਾਹ/ਅਢਾਹ ordering is preserved without an unsupported antiquity claim.",
+      "status": "verified resolved in final input"
+    }
+  ],
+  "difficultReadingsChecked": {
+    "161-162": "Divine rulership/dissolution and completeness; selected senses distinguished from unsupported avatar identification.",
+    "165-166": "Vishnu-related particular derivation and creative-powers analysis explicitly attributed; alternate readings recorded.",
+    "170": "Unseen/unmatched sustaining duty and resolute action retained.",
+    "172": "Strife causation preserved alongside universal deliverance.",
+    "177-180": "Selected177 tippi,178 source/commentary spelling difference,179 immeasurability and180 amrit compound kept distinct.",
+    "183-184": "Complete-being selection and as-you-are interpretation explicitly identified.",
+    "185-188": "Darkness/radiance, three qualities, conflict/peace, nourishment alternatives, beauty and three-world/three-time distinction preserved.",
+    "190-196": "Selected unmoving analysis190, source order193, no-superior-master and not-bound-to-silence194, attachment195 and ritual independence196 retained.",
+    "197-199": "Universal form and ethical contrast, destruction and wrath beside mercy, final four quarters/self-existence/birth-death interpretation/companionship all checked."
+  },
+  "unresolvedRequiredCorrectionsIdentified": [],
+  "limitations": [
+    "This is independent AI editorial review, not qualified human Sikh, Punjabi, linguistic or theological certification.",
+    "The selected digital edition and documented commentarial interpretations are not asserted to settle all historical readings, recitation traditions or interpretations.",
+    "The independent reviewer directly inspected the Sahib Singh printed pages; the author’s separate Neki comparison was not re-performed as a complete independent reading.",
+    "No browser, audio, pronunciation, physical-device or clinical claims are part of this editorial report.",
+    "Earlier Jaap1–160 teachings were not comprehensively editorially rereviewed here;164.02 exact-source reuse and166.03 non-reuse were checked specifically."
+  ],
+  "qualifiedHumanReviewCount": 0,
+  "humanReviewer": null,
+  "noCopiedModernTranslationImportedByReview": true,
+  "sourceAuditFile": "source-audit-report.json",
+  "sourceAuditSha256": "185db8f77216635b71ded7cef81cf7702dc626d573ba1e73b6b95bed2a36c58d",
+  "runtimeSourceReceiptFile": "runtime-source-receipt.json",
+  "runtimeSourceReceiptSha256": "3585d9a5d8c79c6675f692aac4dd29a8a53adce55999a4c84c0938b01febaf48",
+  "batchReviewEvidence": "jaap-161-199-editorial-review-progress.json",
+  "batchReviewEvidenceSha256": "67e87efd4bed804883887a8fe8d51124c5170d547081c0af53916f537c44481d"
+}

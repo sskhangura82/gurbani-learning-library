@@ -33,6 +33,18 @@ jobs:
         run: |
           node --check js/sukhmani-reader.js
           node --check js/sukhmani-learning.js
+      - name: Complete Nitnem sources, teaching and preservation
+        run: node tests/nitnem-content.mjs
+      - name: Nitnem saved learning, edition migration and safe merging
+        run: node tests/nitnem-learning.mjs
+      - name: Nitnem asynchronous reflection and reader lifecycle
+        run: node tests/nitnem-ui-lifecycle.mjs
+      - name: Nitnem code syntax
+        run: |
+          node --check nitnem/reader.js
+          node --check nitnem/local-learning.js
+          node --check nitnem/learning/learning-ui.js
+          node --check nitnem/offline.js
   verify-sukhmani-browser:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -57,4 +69,29 @@ jobs:
           path: |
             evidence/sukhmani-browser-verification.json
             evidence/screenshots/sukhmani/
+          if-no-files-found: warn
+  verify-nitnem-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser test tools
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Install Chromium and Gurmukhi fonts
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Test all Nitnem readers, local learning, layouts and offline access
+        run: node tests/nitnem-browser.mjs
+      - name: Retain Nitnem browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nitnem-browser-evidence
+          path: |
+            evidence/nitnem-browser-verification.json
+            evidence/screenshots/nitnem/
           if-no-files-found: warn
