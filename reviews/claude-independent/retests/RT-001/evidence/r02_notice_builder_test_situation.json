@@ -1,0 +1,56 @@
+{
+ "builder_test_window_390x844_desktop_style": {
+  "immersiveMode": true,
+  "pageScrolledTo": 24,
+  "windowHeight": 844,
+  "noticeBoxPx": [
+   2,
+   1
+  ],
+  "noticeClip": "rect(0px, 0px, 0px, 0px)",
+  "noticePosition": "absolute",
+  "buttonBoxPx": [
+   26,
+   589,
+   76,
+   81
+  ],
+  "elementUnderButtonCentre": "SPAN.g-word",
+  "buttonIsWhatATapWouldHit": false,
+  "aSightedReaderCanSeeTheNotice": false,
+  "noticeText": "3 saved items were kept aside because this reader could not ",
+  "playwrightCallsItVisible": true,
+  "playwrightClickSucceeded": false,
+  "clickProblem": [
+   "- <span class=\"g-word\" data-token=\"0\" data-active=\"true\">ੴ</span> from <section tabindex=\"-1\" aria-busy=\"false\" id=\"continuous-reader\" data-source-integrity=\"verified\" aria-label=\"Complete Japji Sahib, continuous reading\">…</section> subtree intercepts pointer events"
+  ],
+  "savedLearningScreenOpened": false
+ },
+ "phone_emulation_used_in_this_review": {
+  "immersiveMode": true,
+  "pageScrolledTo": 24,
+  "windowHeight": 664,
+  "noticeBoxPx": [
+   2,
+   1
+  ],
+  "noticeClip": "rect(0px, 0px, 0px, 0px)",
+  "noticePosition": "absolute",
+  "buttonBoxPx": [
+   26,
+   589,
+   76,
+   81
+  ],
+  "elementUnderButtonCentre": "BUTTON#dock-position",
+  "buttonIsWhatATapWouldHit": false,
+  "aSightedReaderCanSeeTheNotice": false,
+  "noticeText": "3 saved items were kept aside because this reader could not ",
+  "playwrightCallsItVisible": true,
+  "playwrightClickSucceeded": false,
+  "clickProblem": [
+   "- <span class=\"g-word\" data-token=\"0\" data-active=\"true\">ੴ</span> from <section tabindex=\"-1\" aria-busy=\"false\" id=\"continuous-reader\" data-source-integrity=\"verified\" aria-label=\"Complete Japji Sahib, continuous reading\">…</section> subtree intercepts pointer events"
+  ],
+  "savedLearningScreenOpened": false
+ }
+}

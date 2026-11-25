@@ -8,6 +8,18 @@ meanings, market research and device testing are partial or not done, and are ma
 
 ---
 
+> **Note added 25 November 2026, after re-test RT-001.** Everything below describes the
+> published version and still stands. Since then: (1) the builder offered a repair
+> candidate (PR #40, unmerged). I re-tested it: the fix for altered scripture works, the
+> fix for screen readers works in the browser, the fix for lost notes is partial. I would
+> not release it yet — three small corrections and one check on an iPhone come first. See
+> [`retests/RT-001_PR40_FIRST_REPAIRS.md`](retests/RT-001_PR40_FIRST_REPAIRS.md).
+> (2) I found a gap in my own audit: "every occurrence" of Gurbani meant the three
+> readers; 31 further occurrences are shown elsewhere in the app. They are collated now —
+> 29 exact, 2 lines differ in three words (CI-S-16). See
+> [`ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md`](ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md).
+> The register now has 64 entries. The verdict and the score have not changed.
+
 ## Is it working?
 
 **As a reading app: yes.** All nine compositions open, read cleanly, keep your place and

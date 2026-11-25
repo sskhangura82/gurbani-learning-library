@@ -106,3 +106,41 @@ opened in full. Everything else in D04 and D05 is marked as unverified prior kno
 Read after my findings were committed (`1246fb4`): 30 test files (inventory and targeted
 reading), 69 evidence files (inventory; 6 read), 27 documents (2 in full, the rest
 searched), 16 research files (7 read). Builder's ten Node test files re-run: 10 / 10 pass.
+
+---
+
+## Addendum after re-test RT-001 (25 November 2026)
+
+The frozen test cases above are unchanged. Two things are added.
+
+### Correction to the scripture rows
+
+"3,809 / 3,809" is complete for the three readers. It is **not** every occurrence of
+Gurbani in the app. Found and examined since
+([`ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md`](ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md)):
+
+| What | Examined / of | Kind | Result |
+|---|---|---|---|
+| Whole lines of Gurbani outside the readers | 31 / 31 | scripted, complete; one digital reference | 29 exact; 2 lines differ in three words (CI-S-16) |
+| Gurmukhi quoted inside English teaching text | 1,889 / 1,889 | scripted, complete; 60 exceptions read one by one | No misquotation; 60 are labelled variants, dictionary headwords or grammar terms |
+| Vocabulary headwords against their own passage | 1,508 / 1,508 | scripted, complete | 1,498 exact; 10 base forms or terms (CI-M-13) |
+| Gurbani quoted inside Punjabi-language teaching text | 0 | — | **Not examined**: script alone cannot separate it from prose |
+| Run-time check of the 31 lines when opened | 2 / 2 screens that show them from `js/content.js` | browser emulation | Fail on both versions (CI-R-07) |
+
+### Re-test of candidate PR #40 at `09e829e`
+
+Record: [`retests/RT-001_PR40_FIRST_REPAIRS.md`](retests/RT-001_PR40_FIRST_REPAIRS.md).
+All in emulation. Device: none.
+
+| Finding | Examined | Verdict |
+|---|---|---|
+| CI-R-01 | Original script: 13 variants across 3 readers. Wider: 21 alterations × 2 readers; offline copy damaged in 3 readers; late changes; WebKit engine, 4 situations × 2 readers | Reproduced and fixed |
+| CI-R-02 | Original test; 8 kinds of unplaceable item; 10 kinds of unreadable record; backup, wipe, restore twice, 3 merges; 4 return situations for the notice; rollback and old tab | Partly fixed (RT1-01, CI-R-09) |
+| CI-A-01 | 3,773 / 3,773 meaning buttons, name and role from the browser's accessibility tree; original scan on 21 screen states | Fixed in the browser; VoiceOver on a device not done |
+| Regression | Update, 4 saved records, 3,809 / 3,809 rows on screen, 9 / 9 compositions offline, broken release, repair by later release | Pass |
+| Builder's tests, run by this reviewer | 12 / 12 non-browser files; 2 / 2 browser suites (27 checks) | Pass |
+
+A check on one of my own earlier statements: the first review listed "messages shown" with
+a helper that could not tell drawn text from text clipped to one pixel. No finding rested
+on it. Re-measured by size on screen: the Nitnem and Sukhmani warnings are real banners;
+the Japji reader's are not visible (CI-R-09).

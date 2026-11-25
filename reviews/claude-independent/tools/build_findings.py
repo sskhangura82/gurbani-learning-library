@@ -8,7 +8,12 @@ Every deliverable refers to findings by the IDs defined here, so an ID never cha
 Severity scale is the one frozen in 00_BASELINE_AND_FROZEN_CRITERIA.md section 5.
 `s0c` = "S0 candidate": would be Critical if a qualified print collation confirms the app's reading is wrong.
 `status` values: OPEN · OPEN-NEEDS-SCHOLAR · OPEN-OWNER-DECISION · UPSTREAM · PASS-NOTE
-`origin`: INDEPENDENT (found before the builder's tests and documents were opened) or COMPARISON (found while comparing).
+               · FIX-VERIFIED-ON-CANDIDATE (second reviewer reproduced the defect and saw it fixed on a named, unmerged candidate, in emulation;
+                 the public app is unchanged until that candidate is merged and deployed)
+               · PARTLY-FIXED-ON-CANDIDATE (as above, with named criteria still open)
+`origin`: INDEPENDENT (found before the builder's tests and documents were opened), COMPARISON (found while comparing),
+          or RETEST (found during a re-test; true of the published version unless the entry says otherwise).
+A re-test never rewrites a finding: `retest(...)` adds a dated note and may change the status, nothing else.
 """
 import json, pathlib, sys
 
@@ -283,11 +288,92 @@ f('CI-X-04', 'PASS', 'Process', 'Where the builder\'s own records and this revie
   'The builder has been honest about limits; the differences in this review are mostly things its tests never looked at, not things it hid.', '—', '—', 'PASS-NOTE', origin='COMPARISON')
 
 
+# ───────────────────────────── Found during re-test RT-001 (2026-11-25) ─────────────────────────────
+# Each of these is true of the published version a3476ac (and of candidate PR #40 unless stated). Evidence: retests/RT-001/ and evidence/sA1_*.
+RT = 'reviews/claude-independent/retests/RT-001/evidence/'
+f('CI-S-16', 'S1', 'Scripture', 'Three words quoted from Sri Guru Granth Sahib outside the readers use a doubled half-ha spelling; in the test font an extra letter ਹ is drawn',
+  'js/content.js → related[1].context[4] ("ਜਿਨ੍ਹ੍ਹੀ", "ਤਿਨ੍ਹ੍ਹਾ") and related[2].context[4] ("ਸਮ੍ਹ੍ਹਾਲੇ"); drawn by js/japji-full.js context() (Japji reader → Explore → Related teachings → Read the complete context) and by pauri-2-lesson.html',
+  'Sri Guru Granth Sahib Ang 472, Salok M1: "ਨਾਨਕ ਜਿਨੑੀ ਗੁਰਮੁਖਿ ਬੁਝਿਆ ਤਿਨੑਾ ਸੂਤਕੁ ਨਾਹਿ ॥੩॥"; Ang 394, Asa M5: "ਸਿਮਰਿ ਸਿਮਰਿ ਤਿਸੁ ਸਦਾ ਸਮੑਾਲੇ ॥੧॥ ਰਹਾਉ ॥" (reference spelling)',
+  'The first review collated the 3,809 occurrences inside the three readers and missed 31 occurrences of Gurbani shown elsewhere. Collated now (addendum S-A1): 29 of 31 exact against the same digital reference; these two lines differ, and only in this sign. '
+  'The reference, and the app\'s own Sukhmani text, write the sign as one character (ੑ). Here it is written as subscript-ha twice. In the font available to this review the doubled form is drawn as ਜਿਨ੍ਹਹੀ, ਤਿਨ੍ਹਹਾ, ਸਮ੍ਹਹਾਲੇ — a full extra ਹ. '
+  'Apple\'s Gurmukhi font was not available, so what an iPhone draws is unknown. ' + E + 'sA1_gurbani_outside_readers.json; ' + E + 'screenshots/sA1_doubled_ha_comparison.png, sA1_doubled_ha_related1_line.png.',
+  'On the screen tested, three words of Gurbani are misspelt. It also shows these passages were taken from a different digital source family than the readers, so one source review does not cover both.',
+  'Write the sign as the readers do. Better: quote related passages by line reference from the same checked source as the readers, so one collation and one run-time check cover every line of Gurbani the app shows.',
+  'The 31 occurrences collate exactly; a device screenshot of both lines matches a printed page.', s0c=True, origin='RETEST')
+
+f('CI-R-07', 'S2', 'Reliability', 'Gurbani shown outside the three readers has no check when it is opened: Related teachings, the older Pauri 2 lesson and the Simran page',
+  'js/content.js (scripture.lines, related[].excerpt, related[].context, raagExample.heading), used by js/japji-full.js related(), context(), raag() and by pauri-2-lesson.html with js/app.js; simran.html (p.gurbani-line). Not covered by js/source-integrity.js in PR #40',
+  '31 occurrences: Japji Pauri 2 (6 lines); Ang 466 salok (8 lines and an excerpt); Ang 472 salok (5 and an excerpt); Ang 394 shabad (7 and an excerpt); the Anand heading, Ang 917; one line of Japji Pauri 4 on the Simran page',
+  'With one word of js/content.js changed in transit, the Japji reader showed "ਹਉਮੈ ਦੀਰਘ ਭੋਗੁ ਹੈ" for "ਰੋਗੁ" in the Related-teachings card and in its full context, and the older lesson page showed "ਹੁਕਮੀ ਹੋਵਨਿ ਅਕਾਰ" for "ਆਕਾਰ" — no warning, on the published version and on candidate PR #40 alike. '
+  'The offline installer\'s whole-file check still covers these files at install time. Missed in the first review: its tamper test and its collation covered only the three readers\' own text. ' + RT + 'r01_damaged_offline_copy_and_unchecked_file_candidate.json, …_published.json; screenshot ' + RT + 'screenshots/japji_related_teachings_altered_text_shown.png.',
+  'The same rule as CI-R-01 — altered scripture must not be shown as if it were sound — on a smaller surface.',
+  'Hold every quoted line of Gurbani in a checked source set and have these screens quote from it by line reference. Until then give js/content.js the same file check and verify its scripture strings before drawing them.',
+  'The tamper script, extended to these screens, reports "withheld" for every variant; the collation register lists these occurrences.', origin='RETEST')
+
+f('CI-R-08', 'S2', 'Reliability', 'After a failed scripture check there is no way back from inside the app',
+  'sw.js fetch handler (the offline copy answers first, also when online); nitnem/reader.js failure message ("Please try again"); on PR #40 also the failure branch of js/japji-full.js and js/sukhmani-reader.js (every control switched off; advice "Reload while online")',
+  'Published version: any Nitnem bani. Candidate PR #40: also Japji Sahib and Sukhmani Sahib',
+  'A scripture file was altered inside the offline copy after a clean install. The reader refused to show it, which is right — and then kept refusing: on trying again, on reloading while online, with the network off, and after "check for update" when no newer release existed. '
+  'Published version, Nitnem: the damaged bani never opens again; other banis and "Export my learning" stay reachable. Candidate, Japji and Sukhmani: the page shows only the message, and every button is off, including the way to "Export learning", so that reader\'s notes cannot be backed up while the fault lasts. '
+  'The one thing a reader can do — clear the site\'s data or remove the Home Screen app — also erases saved notes. Loading a later release does repair it (tested). ' + RT + 'r01_damaged_offline_copy_and_unchecked_file_candidate.json; both_builds_extras_published.json, …_candidate.json; regression_update_offline_text.json.',
+  'Refusing is right. Leaving a person with no reading, no backup and advice that cannot work is not. Damage to an offline copy is rare, but this is the moment the app most needs to be trusted.',
+  'On a failed check, fetch that file again past the offline copy, check it, and replace the bad copy if the fresh one passes. Offer "Download again". Keep "Export learning" working on the failure screen. Say what failed, that notes are safe, and what to press.',
+  'With a damaged offline copy and the network on, the reader recovers by itself or with one press and saved learning is untouched; with the network off, the screen still offers export and says to reconnect.', origin='RETEST')
+
+f('CI-R-09', 'S2', 'Reliability', 'Japji reader: warnings about saved learning are not visible to a sighted reader',
+  'Published: js/japji-full.js writes the warning only to #status, an announcement line that is not drawn on screen. PR #40 adds aside#retained-learning with class "coverage-note", which css/japji-full.css line 78 clips to one pixel during immersive reading (body.quiet-reading .coverage-note)',
+  'Japji Sahib reader',
+  'Published version: when the saved record cannot be read, saving stops and nothing appears on screen (0 visible warnings in 3 cases tested). Candidate PR #40: a notice exists, but a returning reader is put straight into immersive reading, where the notice measures 2×1 pixels. '
+  'It was on screen in 1 of 4 return situations (only when the reader had left at the very top), vanished at the first scroll and did not return at the top. In the builder\'s own test situation it was never on screen; that test passes because the test tool counts any non-empty box as "visible" and clicks the instant the reader is ready, before immersive reading begins about 140 ms later — the same click 1.5 seconds later failed 3 times of 3. '
+  'The Sukhmani and Nitnem readers show a real banner on opening (checked). The first review listed page messages with a helper that could not tell drawn text from text clipped to a pixel; no finding rested on it, and it is replaced here by a size-on-screen measurement. '
+  + RT + 'r02_notice_visibility_candidate.json, r02_notice_extras_candidate.json, …_published.json, r02_notice_builder_test_situation.json, r02_notice_timeline.json, r02_notice_click_at_once_or_later.json; screenshots/japji_resumed_mid_text_no_notice.png, japji_left_at_top_notice_visible.png.',
+  'A person whose notes have been kept aside, or whose saving has stopped, is not told unless they use a screen reader or happen to open Saved learning.',
+  'Show the notice where immersive reading does not hide it — for example a small marker on the bottom bar that opens Saved learning — and announce it once. Do not reuse a style that is hidden on purpose.',
+  'In each return situation (at the top, resumed mid-text, after scrolling, during guided reading) a measurement of the notice\'s size on screen, not its mere presence in the page, shows it visible and its button tappable.', origin='RETEST')
+
+f('CI-R-10', 'S3', 'Reliability', 'Saved-learning wording and restore: raw technical messages, and a backup holding one unplaceable note is refused whole',
+  'js/japji-full.js (note screen and #import-preview print the raw error text); js/learning.js parse() ("Invalid line reflection."); nitnem/reader.js ("Source SHA-256 verification failed: data/sohila.json")',
+  'Japji Sahib and Nitnem readers',
+  'Shown to readers on both versions: "Unterminated string in JSON at position 44 (line 1 column 45)"; "Invalid line reflection."; "This bani could not load: Source SHA-256 verification failed: data/sohila.json. Please try again." '
+  'Restoring a backup that holds one note on a line this edition does not have is refused whole, and the note is not brought in (the backup file itself is unchanged). With an unreadable saved record the Japji reader can save nothing new and offers no way to set that record aside and start afresh — the same gap as CI-R-03. '
+  + RT + 'both_builds_extras_published.json, …_candidate.json; r02_saved_learning_candidate.json.',
+  'A parent or grandparent cannot act on these words. And a note from another edition should be kept aside, not turned away.',
+  'Plain sentences that say what happened and what to do. On restore, keep unplaceable notes aside, as opening a record now does in PR #40. Offer "set the damaged record aside and start afresh", keeping the original for export.',
+  'No message shown to a reader contains a file name or the words JSON or SHA; restoring the other-edition backup brings its note in as kept aside.', origin='RETEST')
+
+f('CI-M-13', 'S3', 'Meanings and teaching', 'Ten vocabulary headwords are not the form found in the passage',
+  'js/sukhmani-teaching.js → ashtpadis 11, 18, 23 (vocabulary); nitnem/learning/course.complete.json → unitLessons sohila|sohila01, anand|anand06 (study.words) and banis.jaap, banis.chaupai, banis.rehras (words)',
+  'Sukhmani Ashtpadis 11, 18, 23; Sohila shabad 1; Anand pauri 6; overview word lists for Jaap, Chaupai, Rehras',
+  'Every vocabulary headword in the teaching layer was checked against the passage it belongs to: 1,498 of 1,508 occur there exactly as written. Five give a base form the passage does not contain (ਹੁਕਮ where the passage has ਹੁਕਮਿ and ਹੁਕਮੇ; ਸਿਰਜਣਹਾਰ for ਸਿਰਜਣਹਾਰੋ; ਲਿਵ for ਲਿਵੈ; ਕ੍ਰਿਪਾਲ for ਕ੍ਰਿਪਾਲੇ and ਕ੍ਰਿਪਾਲੰ; ਚਰਨ for ਚਰਨਨ). '
+  'Two join words that do not stand side by side in the text (ਨਿਰਗੁਨੁ ਸਰਗੁਨੁ; ਅਨਹਤ ਨਾਦ). Three in the Rehras overview are terms about the bani, not words in it (ਰਹਿਰਾਸਿ, ਬਖ਼ਸ਼ਿਸ਼, ਅਰਦਾਸ). '
+  'Also checked: 1,889 Gurmukhi words or phrases quoted inside English teaching text. 1,829 match the app\'s Gurbani exactly; the other 60 were read one by one and are labelled variant readings from other sources, dictionary headwords or grammar terms. No misquotation was found. '
+  'Not checked, because script alone cannot separate them from prose: quotations inside Punjabi-language teaching text. ' + E + 'sA1c_vocabulary_headwords.csv; ' + E + 'sA1b_gurmukhi_quoted_in_english_teaching.csv.',
+  'A learner who compares the word list with the line will not find the word. Small — but in scripture study the written form is the point.',
+  'Show the form from the line first and the base form second, labelled as such; mark terms about a bani as terms.',
+  'The headword script reports no unlabelled exception.', origin='RETEST')
+
+
+# ───────────────────────────── Re-test outcomes (status and a dated note only) ─────────────────────────────
+def retest(fid, status, note):
+    x = next(x for x in F if x['id'] == fid); x['status'] = status; x['retest'] = note
+
+RT1 = 'Re-test RT-001, 2026-11-25, candidate PR #40 at 09e829e (unmerged; the public app is unchanged). '
+retest('CI-R-01', 'FIX-VERIFIED-ON-CANDIDATE', RT1 + 'REPRODUCED AND FIXED, for everything this finding named. The original tamper script now reports "refused" for every variant in all three readers '
+       '(Nitnem 8 of 8 as before; Japji 3 of 3; Sukhmani 2 of 2). A wider test — 21 kinds of alteration per reader, to the file in transit and to the text in memory — was refused 21 of 21 by both readers; the published version showed altered text in 5 of the 21 and a wrong number of lines in others. '
+       'A damaged offline copy is refused. Genuine text opens online and offline, in Chromium and in the WebKit engine. Emulation only: no device. Found alongside and registered separately: CI-R-07, CI-R-08. Record: retests/RT-001_PR40_FIRST_REPAIRS.md.')
+retest('CI-R-02', 'PARTLY-FIXED-ON-CANDIDATE', RT1 + 'PARTLY FIXED. Fixed: opening a record no longer drops or cuts anything — notes and bookmarks on unknown lines, notes over 12,000 characters and colliding notes are kept whole, shown on the Saved-learning screen, '
+       'included in the backup, and survive wipe-and-restore (restoring twice changes nothing). Remaining: (1) RT1-01 — kept-aside items are destroyed without a word when an older copy of the reader opens the same record: a rollback to the published version, or a tab left open from before the update. '
+       '(2) CI-R-09 — the notice is not on screen for a returning reader in 3 of 4 situations. Record: retests/RT-001_PR40_FIRST_REPAIRS.md.')
+retest('CI-A-01', 'FIX-VERIFIED-ON-CANDIDATE', RT1 + 'FIXED IN THE BROWSER; ONE CRITERION REMAINS. All 3,773 meaning buttons (Japji 385, Sukhmani 2,027, Nitnem 1,361) now give assistive technology a name containing the English and the Punjabi meaning; none carries a fixed label. '
+       'The original scan falls from 62, 387 and 2,028 failing elements to 6, 2 and 1, none of them a meaning. Remaining, from this finding\'s own acceptance test: VoiceOver on a physical iPhone, which no one has run. Sukhmani\'s 2,027 line-buttons (CI-A-02) are unchanged. Record: retests/RT-001_PR40_FIRST_REPAIRS.md.')
+
+
 def render(findings):
     order = {'S0': 0, 'S1': 1, 'S2': 2, 'S3': 3, 'PASS': 4}
     out = ['# Findings register', '',
            'Generated by `tools/build_findings.py` — edit that file, not this one. Severity scale: see `00_BASELINE_AND_FROZEN_CRITERIA.md` §5.',
-           '"S0 candidate" means: becomes Critical if a qualified collation against print confirms the app\'s reading is wrong. No S0 is confirmed today, because no printed edition has been consulted by anyone.', '']
+           '"S0 candidate" means: becomes Critical if a qualified collation against print confirms the app\'s reading is wrong. No S0 is confirmed today, because no printed edition has been consulted by anyone.',
+           'Entries CI-S-16, CI-R-07 to CI-R-10 and CI-M-13 were found during re-test RT-001 (2026-11-25). A "Re-test" line under a finding is a dated addition; the finding above it is unchanged. Defects that exist only in an unmerged candidate are not listed here: see `retests/`.', '']
     counts = {}
     for x in findings: counts[x['severity']] = counts.get(x['severity'], 0) + 1
     out += ['| Severity | Count |', '|---|---|'] + [f'| {k} | {counts[k]} |' for k in sorted(counts, key=lambda k: order[k])]
@@ -302,7 +388,7 @@ def render(findings):
                 f'- **Severity:** {sev}', f'- **Area:** {x["area"]} · **Found:** {x["origin"].lower()} · **Status:** {x["status"]}',
                 f'- **Exact location:** {x["location"]}', f'- **Composition / verse:** {x["composition_or_verse"]}',
                 f'- **Evidence:** {x["evidence"]}', f'- **Why it matters:** {x["why_it_matters"]}',
-                f'- **Proposed correction:** {x["proposed_correction"]}', f'- **Acceptance test:** {x["acceptance_test"]}', '']
+                f'- **Proposed correction:** {x["proposed_correction"]}', f'- **Acceptance test:** {x["acceptance_test"]}'] + ([f'- **Re-test:** {x["retest"]}'] if x.get('retest') else []) + ['']
     return '\n'.join(out)
 
 

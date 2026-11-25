@@ -1,0 +1,27 @@
+{
+ "label": "pr40",
+ "on_open": [
+  {
+   "where": "P#learning-status.candidate-banner",
+   "visibleToSighted": true,
+   "box": [
+    366,
+    84,
+    392
+   ],
+   "text": "Your saved learning was kept unchanged. A reflection is invalid or outside this edition. The original record i"
+  }
+ ],
+ "after_scrolling": [
+  {
+   "where": "P#learning-status.candidate-banner",
+   "visibleToSighted": false,
+   "box": [
+    366,
+    84,
+    -308
+   ],
+   "text": "Your saved learning was kept unchanged. A reflection is invalid or outside this edition. The original record i"
+  }
+ ]
+}

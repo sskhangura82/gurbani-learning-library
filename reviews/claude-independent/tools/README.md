@@ -35,3 +35,24 @@ These are emulation results. They are not Safari, not an iPhone, and not VoiceOv
 | `r04_corrupt_package.py`, `r04_shots.py` | R-04 |
 | `r06_slow.py` | R-06 (lab profile; local server sends files uncompressed) |
 | `d_tests_nitnem.py`, `d_tests_nitnem2.py`, `d_tests_japji_sukhmani.py` | D-01…D-07 (synthetic notes only) |
+
+## Added during re-test RT-001 (25 November 2026)
+
+| Script | What it checks | Needs |
+|---|---|---|
+| `sA1_gurbani_outside_readers.py` | Addendum S-A1, part A: the 31 whole-line occurrences of Gurbani outside the three readers, collated | repository; Shabad OS database; `app_corpus.json` |
+| `sA1b_gurmukhi_quoted_in_english_teaching.py` | Part B: every Gurmukhi run quoted inside English teaching text | repository; outputs of the above |
+| `sA1c_vocabulary_headwords.py` | Part C: every vocabulary headword against its own passage | repository; `app_corpus.json` |
+| `sA1_shot_doubled_ha.py` | Screenshots for CI-S-16 | browser |
+
+The re-test's own browser scripts are in `../retests/RT-001/tools/`. They expect the
+published version at port 8080, candidate PR #40 at port 8082, and `switch_server.py` at
+port 8090 serving prepared copies (`v1` published, `v5` candidate, `v6` the candidate under
+a later release name, `v7` the candidate with one damaged file, `v8`/`v9` the candidate with
+one word of scripture changed, without and with matching page tags). One script,
+`rt6_webkit_engine.py`, runs under the system Python with WebKitGTK and a virtual display.
+
+`switch_server.py` (both copies) no longer answers "not changed" by file date. The copy used
+in the first review did. That does not affect the first review's update tests, which only
+moved forward to newer files, but it would mislead any test that swaps back to an older
+version — which is how the fault was found.

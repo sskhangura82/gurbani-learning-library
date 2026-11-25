@@ -1,0 +1,153 @@
+{
+ "label": "pr40",
+ "base": "http://127.0.0.1:8082/gurbani-learning-library/",
+ "situations": {
+  "returning_reader_at_the_start": {
+   "when_the_reader_opens": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 24,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": 14,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "spoken_status_line_on_open": "",
+   "after_scrolling_down_a_little": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 524,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": -486,
+    "insideTheScreen": false,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "after_scrolling_back_to_the_very_top": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 0,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": 38,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "tools_menu_mentions_kept_aside_items": false,
+   "explore_menu_mentions_kept_aside_items": false,
+   "saved_learning_screen_shows_kept_aside_items": true,
+   "taps_from_reading_to_the_kept_aside_items": 3
+  },
+  "returning_reader_resuming_at_pauri_20": {
+   "when_the_reader_opens": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 16280,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": -16242,
+    "insideTheScreen": false,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "spoken_status_line_on_open": "",
+   "after_scrolling_down_a_little": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 16780,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": -16742,
+    "insideTheScreen": false,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "after_scrolling_back_to_the_very_top": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 0,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": 38,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "tools_menu_mentions_kept_aside_items": false,
+   "explore_menu_mentions_kept_aside_items": false,
+   "saved_learning_screen_shows_kept_aside_items": true,
+   "taps_from_reading_to_the_kept_aside_items": 3
+  },
+  "returning_reader_resuming_at_pauri_2": {
+   "when_the_reader_opens": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 1370,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": -1332,
+    "insideTheScreen": false,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "spoken_status_line_on_open": "",
+   "after_scrolling_down_a_little": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 1870,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": -1832,
+    "insideTheScreen": false,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "after_scrolling_back_to_the_very_top": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 0,
+    "noticeWidthPx": 2,
+    "noticeHeightPx": 1,
+    "noticeTopRelativeToScreen": 38,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": false,
+    "buttonCanBeTapped": false,
+    "aSightedReaderCanSeeIt": false,
+    "text": "2 saved items were kept aside because this reader could not place or edit them. You can vi"
+   },
+   "tools_menu_mentions_kept_aside_items": false,
+   "explore_menu_mentions_kept_aside_items": false,
+   "saved_learning_screen_shows_kept_aside_items": true,
+   "taps_from_reading_to_the_kept_aside_items": 3
+  }
+ }
+}

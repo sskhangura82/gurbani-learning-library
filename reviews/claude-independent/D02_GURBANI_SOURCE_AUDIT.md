@@ -6,6 +6,15 @@ none sampled. It is **not** a collation against print and not a scholarly ruling
 system. Where the app and the reference differ I cannot say which is right; I can only say
 that they differ, where, and how.
 
+> **Correction added 25 November 2026.** "Every occurrence" below means every occurrence
+> inside the three readers: 3,809. The app also shows 31 occurrences of Gurbani outside
+> them — Related teachings in the Japji reader, the older Pauri 2 lesson page and the
+> Simran page — which this audit did not count. They are collated in
+> [`ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md`](ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md):
+> 29 exact; 2 lines differ in three words of Sri Guru Granth Sahib text (CI-S-16). So the
+> sentence "Sri Guru Granth Sahib text: no letter-level difference" holds for the readers,
+> not for the whole app.
+
 ## 1. Coverage register
 
 Row-level register: [`evidence/s05_register.csv`](evidence/s05_register.csv) — one row per

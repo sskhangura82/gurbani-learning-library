@@ -26,9 +26,15 @@ It says nothing about being better or worse than any other app.
 ## Override
 
 - **Confirmed critical defects (S0): 0.**
-- **Critical if confirmed by print collation (S0 candidates): 6** — all in Dasam Bani text. Because no printed edition has been consulted by anyone, these are unknown, and unknown is not a pass.
+- **Critical if confirmed by print collation (S0 candidates): 7** — 6 in Dasam Bani text, and one (CI-S-16, found in re-test RT-001) in three words of Sri Guru Granth Sahib quoted outside the readers. Because no printed edition has been consulted by anyone, these are unknown, and unknown is not a pass.
 - No privacy breach found. One data-loss path found (CI-R-02), rated high rather than critical because it does not occur in ordinary use today.
 - Under the gate rule the release is **not approved as verified scripture**. See D12.
+
+## After re-test RT-001 (2026-11-25)
+
+- The score above describes the **published** version and has not moved: nothing has been merged or deployed since the review.
+- On candidate PR #40 the fixes for CI-R-01 and CI-A-01 were reproduced and verified in emulation, and CI-R-02 was partly fixed. If that candidate is corrected as the re-test record asks, merged and deployed, the reliability and accessibility rows lose a high-severity item each; reliability still holds CI-R-03.
+- Six entries were added to the register (one high: CI-S-16). None changes a category score: scripture was already held at 1 by open high-severity items.
 
 ## What moves the number
 
@@ -41,4 +47,4 @@ It says nothing about being better or worse than any other app.
 
 ## Findings behind the scores
 
-58 register entries: 16 high, 28 medium, 8 low, 6 passed notes. Full list: `FINDINGS_REGISTER.md`.
+64 register entries: 17 high, 31 medium, 10 low, 6 passed notes. Full list: `FINDINGS_REGISTER.md`.

@@ -89,9 +89,13 @@ for name, w, got, of, score, why, a, b in CATS:
 sc += [f'| **Total** | 100% | | | | **{now:.0f} of 100** | Ceiling without human and device validation: 75 |', '',
        '## Override', '',
        '- **Confirmed critical defects (S0): 0.**',
-       f'- **Critical if confirmed by print collation (S0 candidates): {sum(1 for x in F if x["s0_candidate"])}** — all in Dasam Bani text. Because no printed edition has been consulted by anyone, these are unknown, and unknown is not a pass.',
+       f'- **Critical if confirmed by print collation (S0 candidates): {sum(1 for x in F if x["s0_candidate"])}** — {sum(1 for x in F if x["s0_candidate"]) - 1} in Dasam Bani text, and one (CI-S-16, found in re-test RT-001) in three words of Sri Guru Granth Sahib quoted outside the readers. Because no printed edition has been consulted by anyone, these are unknown, and unknown is not a pass.',
        '- No privacy breach found. One data-loss path found (CI-R-02), rated high rather than critical because it does not occur in ordinary use today.',
        '- Under the gate rule the release is **not approved as verified scripture**. See D12.', '',
+       '## After re-test RT-001 (2026-11-25)', '',
+       '- The score above describes the **published** version and has not moved: nothing has been merged or deployed since the review.',
+       '- On candidate PR #40 the fixes for CI-R-01 and CI-A-01 were reproduced and verified in emulation, and CI-R-02 was partly fixed. If that candidate is corrected as the re-test record asks, merged and deployed, the reliability and accessibility rows lose a high-severity item each; reliability still holds CI-R-03.',
+       '- Six entries were added to the register (one high: CI-S-16). None changes a category score: scripture was already held at 1 by open high-severity items.', '',
        '## What moves the number', '',
        '| If… | Total |', '|---|---|',
        f'| Today | {now:.0f} |',
@@ -108,23 +112,28 @@ WAVE = {'CI-R-01': 1, 'CI-R-02': 1, 'CI-A-01': 1, 'CI-M-09': 1, 'CI-M-08': 1, 'C
         'CI-S-12': 2, 'CI-X-02': 2, 'CI-S-06': 2, 'CI-S-07': 2, 'CI-S-05': 2, 'CI-S-02': 2, 'CI-S-03': 2, 'CI-S-04': 2, 'CI-S-11': 2, 'CI-S-10': 2, 'CI-S-08': 2, 'CI-S-09': 2,
         'CI-S-13': 2, 'CI-S-14': 2, 'CI-S-01': 2, 'CI-P-01': 2, 'CI-M-01': 2, 'CI-M-02': 2, 'CI-M-03': 2, 'CI-M-04': 2, 'CI-M-05': 2,
         'CI-U-01': 3, 'CI-U-02': 3, 'CI-U-04': 3, 'CI-U-05': 3, 'CI-U-06': 3, 'CI-U-07': 3, 'CI-U-08': 3, 'CI-U-09': 3, 'CI-U-10': 3, 'CI-A-02': 3, 'CI-A-03': 3, 'CI-R-04': 3, 'CI-R-05': 3, 'CI-P-02': 3,
-        'CI-M-06': 4, 'CI-M-10': 4, 'CI-M-11': 4, 'CI-E-01': 4, 'CI-E-02': 4, 'CI-S-15': 4}
+        'CI-M-06': 4, 'CI-M-10': 4, 'CI-M-11': 4, 'CI-E-01': 4, 'CI-E-02': 4, 'CI-S-15': 4,
+        # found during re-test RT-001
+        'CI-R-07': 1, 'CI-R-08': 1, 'CI-R-09': 1, 'CI-R-10': 1, 'CI-S-16': 2, 'CI-M-13': 4}
+STATUS_WORDS = {'OPEN': 'Open', 'OPEN-NEEDS-SCHOLAR': 'Open — needs a qualified reviewer', 'OPEN-OWNER-DECISION': 'Open — owner decision', 'UPSTREAM': 'Report upstream',
+                'FIX-VERIFIED-ON-CANDIDATE': 'Fix verified on candidate PR #40 in emulation — not yet public', 'PARTLY-FIXED-ON-CANDIDATE': 'Partly fixed on candidate PR #40 — not yet public'}
 WHO = {1: 'Claude proposes, ChatGPT reviews (no scripture text touched)', 2: 'Owner decides edition and reviewers; scholars collate; then builder applies with before/after records',
        3: 'Builder and Claude, design agreed first', 4: 'After waves 1–3; with scholars for content'}
 TITLE = {1: 'Wave 1 — Safety, honesty and access (can start now; no Gurbani text changes)', 2: 'Wave 2 — Scripture and meaning foundation (needs the owner and qualified reviewers)',
          3: 'Wave 3 — One reader, one saved-learning store', 4: 'Wave 4 — Depth: words, cross-references, Punjabi-first study'}
 order = {'S1': 0, 'S2': 1, 'S3': 2}
 bl = ['# D10 · Prioritized improvement backlog', '', 'Generated from `findings/findings.json`. Each row links to its full entry (location, evidence, correction, acceptance test) in `FINDINGS_REGISTER.md`.',
+      'Updated after re-test RT-001 (2026-11-25): six items added (CI-R-07 to CI-R-10, CI-S-16, CI-M-13) and a "Where it stands" column. "Fix verified on candidate" means the second reviewer saw the fix work on an unmerged candidate in emulation; the public app is unchanged until it is merged and deployed.',
       'Order inside a wave is by severity. "S0 cand." = critical if print collation confirms it.', '']
 open_items = [x for x in F if x['severity'] != 'PASS']
 missing = [x['id'] for x in open_items if x['id'] not in WAVE]
 assert not missing, missing
 for w in (1, 2, 3, 4):
     items = sorted([x for x in open_items if WAVE[x['id']] == w], key=lambda x: (order[x['severity']], x['id']))
-    bl += [f'## {TITLE[w]}', '', f'*Who:* {WHO[w]}', '', '| ID | Severity | What to do | Done when |', '|---|---|---|---|']
+    bl += [f'## {TITLE[w]}', '', f'*Who:* {WHO[w]}', '', '| ID | Severity | What to do | Done when | Where it stands |', '|---|---|---|---|---|']
     for x in items:
         sv = x['severity'] + (' (S0 cand.)' if x['s0_candidate'] else '')
-        bl.append(f"| [{x['id']}](FINDINGS_REGISTER.md#{x['id'].lower()}) | {sv} | {x['proposed_correction']} | {x['acceptance_test']} |")
+        bl.append(f"| [{x['id']}](FINDINGS_REGISTER.md#{x['id'].lower()}) | {sv} | {x['proposed_correction']} | {x['acceptance_test']} | {STATUS_WORDS.get(x['status'], x['status'])} |")
     bl.append('')
 bl += ['## Not in the backlog on purpose', '',
        '- New compositions (the release note names Salok Mahalla 9 next). Recommendation: none until waves 1 and 2 are closed.',

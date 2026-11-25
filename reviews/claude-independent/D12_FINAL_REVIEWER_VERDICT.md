@@ -10,6 +10,15 @@ Sikh scholar, not a lawyer; no physical device)
 below.**
 **Not ready for wider promotion, for new compositions, or for any comparative claim.**
 
+> **Note added 25 November 2026, after re-test RT-001.** The verdict above is unchanged;
+> nothing has been merged or deployed. Read "six findings" below as **seven**: CI-S-16,
+> three words of Sri Guru Granth Sahib text quoted outside the readers, was found in an
+> addendum to the audit. On the repair candidate (PR #40): **not ready to release as it
+> stands** — protect kept-aside notes from older copies of the reader, make the notice
+> visible, keep the backup reachable on the failure screen, and open Japji and Sukhmani
+> once on a real iPhone first. See
+> [`retests/RT-001_PR40_FIRST_REPAIRS.md`](retests/RT-001_PR40_FIRST_REPAIRS.md) §3.
+
 ## Why
 
 Under the gate rule fixed before testing, an open critical defect means "not approved".

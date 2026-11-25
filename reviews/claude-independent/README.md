@@ -6,6 +6,14 @@ files only. No application file is changed.**
 
 Start with [`D01_EXECUTIVE_ASSESSMENT.md`](D01_EXECUTIVE_ASSESSMENT.md).
 
+**Since the review (25 November 2026):** the builder offered a first repair candidate
+(PR #40) and asked for an independent re-test. The result is in
+[`retests/RT-001_PR40_FIRST_REPAIRS.md`](retests/RT-001_PR40_FIRST_REPAIRS.md). While doing
+it I found a gap in my own scripture audit and closed it:
+[`ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md`](ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md).
+The twelve deliverables below describe the published version and are unchanged except for
+dated notes.
+
 ## Order of work (the commits prove it)
 
 | Step | File | Commit |
@@ -13,7 +21,8 @@ Start with [`D01_EXECUTIVE_ASSESSMENT.md`](D01_EXECUTIVE_ASSESSMENT.md).
 | Pin the version; freeze criteria before testing | [`00_BASELINE_AND_FROZEN_CRITERIA.md`](00_BASELINE_AND_FROZEN_CRITERIA.md) | `5e19b7a` |
 | Record findings before opening the builder's tests | [`01_INITIAL_FINDINGS_BEFORE_COMPARISON.md`](01_INITIAL_FINDINGS_BEFORE_COMPARISON.md) | `1246fb4` |
 | Compare; correct my own error | [`02_COMPARISON_WITH_BUILDER_TESTS.md`](02_COMPARISON_WITH_BUILDER_TESTS.md) | `c90f708` |
-| Deliverables | `D01` … `D12` | this commit |
+| Deliverables | `D01` … `D12` | `ffd3d17` |
+| Re-test of candidate PR #40; scripture addendum S-A1 | [`retests/`](retests/RT-001_PR40_FIRST_REPAIRS.md), [`ADDENDUM_S-A1…`](ADDENDUM_S-A1_GURBANI_OUTSIDE_THE_READERS.md) | this commit |
 
 ## Deliverables
 
@@ -30,9 +39,15 @@ Start with [`D01_EXECUTIVE_ASSESSMENT.md`](D01_EXECUTIVE_ASSESSMENT.md).
 11. [Implementation plan](D11_IMPLEMENTATION_PLAN.md)
 12. [Final reviewer verdict](D12_FINAL_REVIEWER_VERDICT.md)
 
-Registers: [findings](FINDINGS_REGISTER.md) (58 entries) · [coverage](COVERAGE_REGISTER.md)
-· scripture row by row `evidence/s05_register.csv` · meanings read by hand
-`evidence/m05_manual_reading.json`.
+Registers: [findings](FINDINGS_REGISTER.md) (64 entries: 58 from the review, 6 found in
+re-test RT-001) · [coverage](COVERAGE_REGISTER.md) · scripture row by row
+`evidence/s05_register.csv` (3,809 rows inside the readers) and `evidence/sA1_register.csv`
+(31 rows outside them) · meanings read by hand `evidence/m05_manual_reading.json`.
+
+Re-tests: [`retests/RT-001_PR40_FIRST_REPAIRS.md`](retests/RT-001_PR40_FIRST_REPAIRS.md) —
+verdicts on CI-R-01, CI-R-02 and CI-A-01 for candidate PR #40. Defects that exist only in
+an unmerged candidate are kept there (`retests/RT-001/candidate_findings.json`), not in the
+main register.
 
 ## Reading the evidence labels
 
@@ -44,7 +59,8 @@ recommendation.
 
 - The reviewer is an AI system: not a Sikh scholar, not a lawyer.
 - All app testing was in headless Chromium with phone emulation. No Safari, no iPhone, no
-  VoiceOver.
+  VoiceOver. (Re-test RT-001 added one run in the WebKit engine on Linux — the engine
+  family Safari is built on, but not Safari and not a device.)
 - No printed saroop, Dasam Granth or gutka was available.
 - No real person took part in any usability task. Personas are simulations.
 - No other app was installed or used.

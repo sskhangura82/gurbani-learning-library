@@ -1,0 +1,208 @@
+{
+  "schema": "glp.review-repairs-browser.v1",
+  "startedAtUtc": "2026-11-25T20:27:01.938Z",
+  "engine": "Chromium",
+  "checks": [
+    {
+      "name": "Unknown and long Japji learning remains visible, complete, editable elsewhere, exportable and stable after reload",
+      "status": "passed",
+      "detail": {
+        "retainedNotes": 2,
+        "retainedBookmarks": 1,
+        "longNoteCharacters": 12103,
+        "fullReadonlyValuesChecked": true,
+        "ordinarySaveAndExportChecked": true,
+        "reloadIdempotenceChecked": true
+      }
+    },
+    {
+      "name": "Japji malformed JSON remains byte-identical through loading and original-record export",
+      "status": "passed",
+      "detail": {
+        "rawRecordPreserved": true,
+        "exportPreserved": true,
+        "readingContinues": true
+      }
+    },
+    {
+      "name": "Japji invalid note shape remains byte-identical through loading and original-record export",
+      "status": "passed",
+      "detail": {
+        "rawRecordPreserved": true,
+        "exportPreserved": true,
+        "readingContinues": true
+      }
+    },
+    {
+      "name": "Japji all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Japji",
+        "meaningButtonsChecked": 385,
+        "bilingualNameChecks": 770,
+        "nativeAXNodes": 14099,
+        "firstAriaSnapshotSha256": "0f4991a00e6d9716dc9fe65da7724711a615173f39b1f7031fa92cbc4c2070b8",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Sukhmani all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Sukhmani",
+        "meaningButtonsChecked": 2027,
+        "bilingualNameChecks": 4054,
+        "nativeAXNodes": 38409,
+        "firstAriaSnapshotSha256": "d17fdaa20c1e406d45b128c124136489d651cc26be76385e69594c50275b2749",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Nitnem jaap: all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Nitnem jaap",
+        "meaningButtonsChecked": 782,
+        "bilingualNameChecks": 1564,
+        "nativeAXNodes": 24448,
+        "firstAriaSnapshotSha256": "817f2f561448419d2ef346ba360cce4fd0397e157ef5273b587db06dc99cdca7",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Nitnem savaiye: all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Nitnem savaiye",
+        "meaningButtonsChecked": 40,
+        "bilingualNameChecks": 80,
+        "nativeAXNodes": 2627,
+        "firstAriaSnapshotSha256": "84ef40a4a0e8833533c67b1bc779dd3ff53ea02b16aa4230d7843cdde311ba40",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Nitnem chaupai: all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Nitnem chaupai",
+        "meaningButtonsChecked": 116,
+        "bilingualNameChecks": 232,
+        "nativeAXNodes": 4718,
+        "firstAriaSnapshotSha256": "fa1e28ea47aedc528ea4607d91a3201f9092e3e674a0b80e97cc08d523dfc2ab",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Nitnem anand: all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Nitnem anand",
+        "meaningButtonsChecked": 208,
+        "bilingualNameChecks": 416,
+        "nativeAXNodes": 10922,
+        "firstAriaSnapshotSha256": "8c1a452a5e5b9d10540d4c5cd789427e55892715248f0abd2ea84173bce53d7e",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Nitnem rehras: all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Nitnem rehras",
+        "meaningButtonsChecked": 159,
+        "bilingualNameChecks": 318,
+        "nativeAXNodes": 11273,
+        "firstAriaSnapshotSha256": "ce73ad63d6de027842ea7bf0b907cc9233403205dfba01ff4c898c9411fdd10c",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    },
+    {
+      "name": "Nitnem sohila: all visible EN/PA meanings are in native accessible names",
+      "status": "passed",
+      "detail": {
+        "reader": "Nitnem sohila",
+        "meaningButtonsChecked": 56,
+        "bilingualNameChecks": 112,
+        "nativeAXNodes": 2797,
+        "firstAriaSnapshotSha256": "753c6ae472ee412579c3c432660cbcf5ca089e74e104c189bcfb2798bc834495",
+        "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+      }
+    }
+  ],
+  "runtimeErrors": [],
+  "accessibility": [
+    {
+      "reader": "Japji",
+      "meaningButtonsChecked": 385,
+      "bilingualNameChecks": 770,
+      "nativeAXNodes": 14099,
+      "firstAriaSnapshotSha256": "0f4991a00e6d9716dc9fe65da7724711a615173f39b1f7031fa92cbc4c2070b8",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Sukhmani",
+      "meaningButtonsChecked": 2027,
+      "bilingualNameChecks": 4054,
+      "nativeAXNodes": 38409,
+      "firstAriaSnapshotSha256": "d17fdaa20c1e406d45b128c124136489d651cc26be76385e69594c50275b2749",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Nitnem jaap",
+      "meaningButtonsChecked": 782,
+      "bilingualNameChecks": 1564,
+      "nativeAXNodes": 24448,
+      "firstAriaSnapshotSha256": "817f2f561448419d2ef346ba360cce4fd0397e157ef5273b587db06dc99cdca7",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Nitnem savaiye",
+      "meaningButtonsChecked": 40,
+      "bilingualNameChecks": 80,
+      "nativeAXNodes": 2627,
+      "firstAriaSnapshotSha256": "84ef40a4a0e8833533c67b1bc779dd3ff53ea02b16aa4230d7843cdde311ba40",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Nitnem chaupai",
+      "meaningButtonsChecked": 116,
+      "bilingualNameChecks": 232,
+      "nativeAXNodes": 4718,
+      "firstAriaSnapshotSha256": "fa1e28ea47aedc528ea4607d91a3201f9092e3e674a0b80e97cc08d523dfc2ab",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Nitnem anand",
+      "meaningButtonsChecked": 208,
+      "bilingualNameChecks": 416,
+      "nativeAXNodes": 10922,
+      "firstAriaSnapshotSha256": "8c1a452a5e5b9d10540d4c5cd789427e55892715248f0abd2ea84173bce53d7e",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Nitnem rehras",
+      "meaningButtonsChecked": 159,
+      "bilingualNameChecks": 318,
+      "nativeAXNodes": 11273,
+      "firstAriaSnapshotSha256": "ce73ad63d6de027842ea7bf0b907cc9233403205dfba01ff4c898c9411fdd10c",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    },
+    {
+      "reader": "Nitnem sohila",
+      "meaningButtonsChecked": 56,
+      "bilingualNameChecks": 112,
+      "nativeAXNodes": 2797,
+      "firstAriaSnapshotSha256": "753c6ae472ee412579c3c432660cbcf5ca089e74e104c189bcfb2798bc834495",
+      "method": "Chromium native AX tree joined to DOMSnapshot.backendNodeId; visible EN/PA compared after whitespace collapse only"
+    }
+  ],
+  "limitations": [
+    "No physical iPhone, Safari or VoiceOver acceptance is claimed.",
+    "Accessible names are read from Chromium’s native Accessibility.getFullAXTree, matched to real DOM backend node IDs. This is not an assistive-technology listening test.",
+    "All learning fixtures and downloads are synthetic and use fresh nonpersistent browser contexts."
+  ],
+  "browserVersion": "153.0.8010.12",
+  "completedAtUtc": "2026-11-25T20:27:14.473Z",
+  "status": "PASS"
+}

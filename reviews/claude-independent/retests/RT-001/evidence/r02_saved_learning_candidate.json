@@ -1,0 +1,497 @@
+{
+ "label": "pr40",
+ "base": "http://127.0.0.1:8082/gurbani-learning-library/",
+ "cases": {
+  "A:note_and_bookmark_on_unknown_lines": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 7,
+   "inPlace": [],
+   "keptAside": [
+    [
+     "nope.line99",
+     "unknown_line",
+     7
+    ]
+   ],
+   "keptAsideBookmarks": [
+    "nope.line98"
+   ],
+   "bookmarkNamesStillStored": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 2 saved items were kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": [],
+   "shownOnScreen": {
+    "heading": "Learning kept aside",
+    "notes": [
+     [
+      "Saved reflection · nope.line99",
+      "A note attached to a line outside this edition.",
+      7,
+      true
+     ]
+    ],
+    "bookmarks": [
+     "nope.line98"
+    ]
+   },
+   "textOnScreenEqualsStoredText": true,
+   "scriptRan": null,
+   "injectedElement": false
+  },
+  "A:note_longer_than_12000_on_a_real_line": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 13539,
+   "inPlace": [],
+   "keptAside": [
+    [
+     "pauri01.line06",
+     "long_reflection",
+     13539
+    ]
+   ],
+   "keptAsideBookmarks": [],
+   "bookmarkNamesStillStored": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 1 saved item was kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": [],
+   "shownOnScreen": {
+    "heading": "Learning kept aside",
+    "notes": [
+     [
+      "Saved reflection · pauri01.line06",
+      "A note longer than the current editing limit. The full text is kept.",
+      13539,
+      true
+     ]
+    ],
+    "bookmarks": []
+   },
+   "textOnScreenEqualsStoredText": true,
+   "scriptRan": null,
+   "injectedElement": false
+  },
+  "A:note_of_exactly_12000": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 12000,
+   "inPlace": [
+    "pauri01.line06"
+   ],
+   "keptAside": [],
+   "keptAsideBookmarks": [],
+   "bookmarkNamesStillStored": true,
+   "notice": null,
+   "page_errors": []
+  },
+  "A:note_of_12001": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 12001,
+   "inPlace": [],
+   "keptAside": [
+    [
+     "pauri01.line06",
+     "long_reflection",
+     12001
+    ]
+   ],
+   "keptAsideBookmarks": [],
+   "bookmarkNamesStillStored": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 1 saved item was kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": [],
+   "shownOnScreen": {
+    "heading": "Learning kept aside",
+    "notes": [
+     [
+      "Saved reflection · pauri01.line06",
+      "A note longer than the current editing limit. The full text is kept.",
+      12001,
+      true
+     ]
+    ],
+    "bookmarks": []
+   },
+   "textOnScreenEqualsStoredText": true,
+   "scriptRan": null,
+   "injectedElement": false
+  },
+  "A:older_section_note_meets_line_note_A_first": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 11,
+   "inPlace": [
+    "pauri04.line01"
+   ],
+   "keptAside": [
+    [
+     "pauri04.line01",
+     "migration_collision",
+     11
+    ]
+   ],
+   "keptAsideBookmarks": [],
+   "bookmarkNamesStillStored": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 1 saved item was kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": [],
+   "shownOnScreen": {
+    "heading": "Learning kept aside",
+    "notes": [
+     [
+      "Saved reflection · pauri04.line01",
+      "A second note for the same reading place. Both notes are kept.",
+      11,
+      true
+     ]
+    ],
+    "bookmarks": []
+   },
+   "textOnScreenEqualsStoredText": true,
+   "scriptRan": null,
+   "injectedElement": false
+  },
+  "A:older_section_note_meets_line_note_B_first": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 11,
+   "inPlace": [
+    "pauri04.line01"
+   ],
+   "keptAside": [
+    [
+     "pauri04",
+     "migration_collision",
+     11
+    ]
+   ],
+   "keptAsideBookmarks": [],
+   "bookmarkNamesStillStored": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 1 saved item was kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": [],
+   "shownOnScreen": {
+    "heading": "Learning kept aside",
+    "notes": [
+     [
+      "Saved reflection · pauri04",
+      "A second note for the same reading place. Both notes are kept.",
+      11,
+      true
+     ]
+    ],
+    "bookmarks": []
+   },
+   "textOnScreenEqualsStoredText": true,
+   "scriptRan": null,
+   "injectedElement": false
+  },
+  "A:older_section_note_identical_text": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 9,
+   "inPlace": [
+    "pauri04.line01"
+   ],
+   "keptAside": [],
+   "keptAsideBookmarks": [],
+   "bookmarkNamesStillStored": true,
+   "notice": null,
+   "page_errors": []
+  },
+  "A:markup_inside_a_note_and_a_bookmark_name": {
+   "linesShown": 385,
+   "everyNoteTextStillStoredComplete": true,
+   "longestStored": 88,
+   "inPlace": [],
+   "keptAside": [
+    [
+     "nope.line77",
+     "unknown_line",
+     88
+    ]
+   ],
+   "keptAsideBookmarks": [
+    "<img src=x onerror=\"window.__xss=1\"><svg onload=\"window.__xss=2\"></svg><b id=\"inj\">B</b>"
+   ],
+   "bookmarkNamesStillStored": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 2 saved items were kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": [],
+   "shownOnScreen": {
+    "heading": "Learning kept aside",
+    "notes": [
+     [
+      "Saved reflection · nope.line77",
+      "A note attached to a line outside this edition.",
+      88,
+      true
+     ]
+    ],
+    "bookmarks": [
+     "<img src=x onerror=\"window.__xss=1\"><svg onload=\"window.__xs"
+    ]
+   },
+   "textOnScreenEqualsStoredText": true,
+   "scriptRan": null,
+   "injectedElement": false
+  },
+  "B:cut_off_json": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਨਾਨਕ ਏਵੈ ਜਾਣੀਐ ਸਭੁ ਆਪੇ ਸਚਿਆਰੁ ॥੪॥ |  | Pauri 4 · line 7 |  | Unterminated string in JSON at position 44 (line 1 column 45) |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:newer_version": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved learning needs recovery or a newer reader. Export a backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:kept_aside_is_text": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved learning kept aside needs recovery. Export its unchanged backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:kept_aside_wrong_shape": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved learning kept aside needs recovery. Export its unchanged backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:kept_aside_unknown_reason": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | A retained reflection needs recovery. Its original record is unchanged. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:kept_aside_extra_field": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved learning kept aside needs recovery. Export its unchanged backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:notes_is_text": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved reflections need recovery. Export the original backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:a_note_is_a_number": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved reflections need recovery. Export the original backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:bookmarks_is_text": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved bookmarks need recovery. Export the original backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "B:a_bookmark_is_a_number": {
+   "linesShown": 385,
+   "recordLeftExactlyAsItWas": true,
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "status": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+   "page_errors": [],
+   "backupContainsTheUnreadRecordExactly": true,
+   "noteBoxPresent": true,
+   "noteBoxEditable": false,
+   "dialogSays": "PERSONAL NOTES |  | Your reflection | × |  | ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥ |  | Pauri 5 · line 5 |  | Saved bookmarks need recovery. Export the original backup. |  | Export learning",
+   "recordStillExactlyAsItWas_afterTryingToWrite": true
+  },
+  "C:older_reader_record": {
+   "olderRecordLeftExactlyAsItWas": true,
+   "bothNotesStored": true,
+   "inPlace": {
+    "pauri04.line01": "LEGACY-UNIT-NOTE"
+   },
+   "keptAside": {
+    "notes": [
+     {
+      "id": "notaunit",
+      "text": "LEGACY-UNKNOWN",
+      "reason": "unknown_line"
+     }
+    ],
+    "bookmarks": [
+     "zzz"
+    ]
+   },
+   "bookmarks": [
+    "pauri04.line01"
+   ],
+   "notice": "[IN THE PAGE BUT NOT VISIBLE: 2x1px] 2 saved items were kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning",
+   "page_errors": []
+  },
+  "D:ordinary_use_backup_restore": {
+   "after_ordinary_use_and_reload": {
+    "ordinaryNote": [
+     "mool.line01"
+    ],
+    "bookmarks": [
+     "mool.line01"
+    ],
+    "emphasis": "line",
+    "theme": "amrit",
+    "keptAside": {
+     "notes": [
+      {
+       "id": "nope.line99",
+       "text": "KEEP-ME",
+       "reason": "unknown_line"
+      }
+     ],
+     "bookmarks": [
+      "nope.line98"
+     ]
+    },
+    "notice": "[ON SCREEN] 2 saved items were kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved. View saved learning"
+   },
+   "backup_file": {
+    "format": "glp-family-learning",
+    "holdsOrdinaryNote": true,
+    "holdsKeptAsideNote": true,
+    "holdsKeptAsideBookmark": true,
+    "bytes": 710
+   },
+   "after_wipe": {
+    "record": {
+     "notes": {},
+     "bookmarks": [],
+     "keptAside": {
+      "notes": [],
+      "bookmarks": []
+     }
+    }
+   },
+   "restore_1_said": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. |  | Merge learningCancel",
+   "after_restore_1": {
+    "notes": {
+     "mool.line01": "RT2-ORDINARY-NOTE"
+    },
+    "bookmarks": [
+     "mool.line01"
+    ],
+    "keptAside": {
+     "notes": [
+      {
+       "id": "nope.line99",
+       "text": "KEEP-ME",
+       "reason": "unknown_line"
+      }
+     ],
+     "bookmarks": [
+      "nope.line98"
+     ]
+    },
+    "emphasis": "line",
+    "theme": "amrit"
+   },
+   "restore_2_said": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. |  | Merge learningCancel",
+   "after_restore_2_same_backup_again": {
+    "notes": {
+     "mool.line01": "RT2-ORDINARY-NOTE"
+    },
+    "bookmarks": [
+     "mool.line01"
+    ],
+    "keptAside": {
+     "notes": [
+      {
+       "id": "nope.line99",
+       "text": "KEEP-ME",
+       "reason": "unknown_line"
+      }
+     ],
+     "bookmarks": [
+      "nope.line98"
+     ]
+    }
+   },
+   "second_restore_changed_nothing": true,
+   "restored_equals_what_was_backed_up": true,
+   "restore_3_said": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. |  | Merge learningCancel",
+   "after_merging_a_different_backup": {
+    "noteOnSharedLine": "RT2-ORDINARY-NOTE\n\n— Imported reflection —\nRT2-OTHER-DEVICE-NOTE",
+    "keptAsideNotes": [
+     "KEEP-ME",
+     "KEPT-ON-OTHER-DEVICE"
+    ],
+    "keptAsideBookmarks": [
+     "nope.line98",
+     "nope.line54"
+    ],
+    "bothNotesKept": true
+   },
+   "restore_4_too_long_to_combine_said": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. |  | Merge learningCancel",
+   "too_long_to_combine_changed_nothing": true,
+   "restore_5_other_edition_said": "Invalid line reflection.",
+   "other_edition_backup": {
+    "changedNothing": true,
+    "noteBroughtIn": false
+   },
+   "page_errors": []
+  },
+  "E:unreadable_then_restore": {
+   "said": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. |  | Merge learningCancel",
+   "afterApply": "Unterminated string in JSON at position 44 (line 1 column 45)",
+   "recordNow": "{\"version\":2,\"notes\":{\"mool.line01\":\"KEEP-ME",
+   "unreadableRecordStillExactlyThere": true,
+   "notice": "[ON SCREEN] Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup. View saved learning",
+   "anyControlToSetTheDamagedRecordAsideAndStartFresh": true
+  }
+ }
+}

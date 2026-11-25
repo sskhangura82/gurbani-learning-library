@@ -1,0 +1,524 @@
+{
+ "label": "pr40",
+ "base": "http://127.0.0.1:8082/gurbani-learning-library/",
+ "filesInOfflineList": 57,
+ "offline_genuine": {
+  "filesInOfflineCopy": 57,
+  "japji": {
+   "integrity": "verified",
+   "scriptureLinesShown": 385,
+   "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+   "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥ Pauri 1 ",
+   "visibleControls": 10,
+   "visibleControlsEnabled": 10,
+   "visibleLinks": [
+    "Skip to Gurbani -> #continuous-reader",
+    "GURBANI LEARNING LIBRARY -> index.html"
+   ],
+   "controlled": true
+  },
+  "sukhmani": {
+   "integrity": "verified",
+   "scriptureLinesShown": 2027,
+   "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+   "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਸਤਿਗੁਰਏ ਨਮਹ ॥ ",
+   "visibleControls": 9,
+   "visibleControlsEnabled": 9,
+   "visibleLinks": [
+    "Skip to Gurbani -> #sukhmani-text",
+    "GURBANI LEARNING LIBRARY -> index.html",
+    "1 -> #ashtpadi-1",
+    "2 -> #ashtpadi-2",
+    "3 -> #ashtpadi-3",
+    "4 -> #ashtpadi-4",
+    "5 -> #ashtpadi-5",
+    "6 -> #ashtpadi-6",
+    "7 -> #ashtpadi-7",
+    "8 -> #ashtpadi-8",
+    "9 -> #ashtpadi-9",
+    "10 -> #ashtpadi-10",
+    "11 -> #ashtpadi-11",
+    "12 -> #ashtpadi-12",
+    "13 -> #ashtpadi-13",
+    "14 -> #ashtpadi-14",
+    "15 -> #ashtpadi-15",
+    "16 -> #ashtpadi-16",
+    "17 -> #ashtpadi-17",
+    "18 -> #ashtpadi-18",
+    "19 -> #ashtpadi-19",
+    "20 -> #ashtpadi-20",
+    "21 -> #ashtpadi-21",
+    "22 -> #ashtpadi-22",
+    "23 -> #ashtpadi-23",
+    "24 -> #ashtpadi-24"
+   ],
+   "controlled": true
+  },
+  "nitnem_lines_first_screen": {
+   "sohila": 56,
+   "jaap": 782
+  }
+ },
+ "late_changes": {
+  "japji": {
+   "replace_global_then_redraw": {
+    "globalReplaced": true,
+    "targetAfterRedraw": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+    "alteredTextDisplayed": false
+   },
+   "change_text_while_check_is_waiting": {
+    "digestsWaiting": 386,
+    "lineObjectFrozenWhileCheckPending": true,
+    "textChangedInMemory": false,
+    "duringCheck": {
+     "integrity": "checking",
+     "scriptureLinesShown": 0,
+     "targetLineShown": null,
+     "message": "Checking original scripture…",
+     "visibleControls": 8,
+     "visibleControlsEnabled": 0,
+     "visibleLinks": [
+      "Skip to Gurbani -> #continuous-reader",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": false
+    },
+    "afterRelease": {
+     "integrity": "verified",
+     "scriptureLinesShown": 385,
+     "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+     "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥ Pauri 1 ",
+     "visibleControls": 10,
+     "visibleControlsEnabled": 10,
+     "visibleLinks": [
+      "Skip to Gurbani -> #continuous-reader",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": false
+    },
+    "alteredTextDisplayed": false
+   }
+  },
+  "sukhmani": {
+   "replace_global_then_redraw": {
+    "globalReplaced": true,
+    "targetAfterRedraw": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+    "alteredTextDisplayed": false
+   },
+   "change_text_while_check_is_waiting": {
+    "digestsWaiting": 2028,
+    "lineObjectFrozenWhileCheckPending": true,
+    "textChangedInMemory": false,
+    "duringCheck": {
+     "integrity": "checking",
+     "scriptureLinesShown": 0,
+     "targetLineShown": null,
+     "message": "Checking original scripture…",
+     "visibleControls": 7,
+     "visibleControlsEnabled": 0,
+     "visibleLinks": [
+      "Skip to Gurbani -> #sukhmani-text",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": false
+    },
+    "afterRelease": {
+     "integrity": "verified",
+     "scriptureLinesShown": 2027,
+     "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+     "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਸਤਿਗੁਰਏ ਨਮਹ ॥ ",
+     "visibleControls": 9,
+     "visibleControlsEnabled": 9,
+     "visibleLinks": [
+      "Skip to Gurbani -> #sukhmani-text",
+      "GURBANI LEARNING LIBRARY -> index.html",
+      "1 -> #ashtpadi-1",
+      "2 -> #ashtpadi-2",
+      "3 -> #ashtpadi-3",
+      "4 -> #ashtpadi-4",
+      "5 -> #ashtpadi-5",
+      "6 -> #ashtpadi-6",
+      "7 -> #ashtpadi-7",
+      "8 -> #ashtpadi-8",
+      "9 -> #ashtpadi-9",
+      "10 -> #ashtpadi-10",
+      "11 -> #ashtpadi-11",
+      "12 -> #ashtpadi-12",
+      "13 -> #ashtpadi-13",
+      "14 -> #ashtpadi-14",
+      "15 -> #ashtpadi-15",
+      "16 -> #ashtpadi-16",
+      "17 -> #ashtpadi-17",
+      "18 -> #ashtpadi-18",
+      "19 -> #ashtpadi-19",
+      "20 -> #ashtpadi-20",
+      "21 -> #ashtpadi-21",
+      "22 -> #ashtpadi-22",
+      "23 -> #ashtpadi-23",
+      "24 -> #ashtpadi-24"
+     ],
+     "controlled": false
+    },
+    "alteredTextDisplayed": false
+   }
+  }
+ },
+ "failure_screen": {
+  "japji": {
+   "integrity": "failed",
+   "scriptureLinesShown": 0,
+   "targetLineShown": null,
+   "message": "The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved learning has not been changed.",
+   "visibleControls": 8,
+   "visibleControlsEnabled": 0,
+   "visibleLinks": [
+    "Skip to Gurbani -> #continuous-reader",
+    "GURBANI LEARNING LIBRARY -> index.html"
+   ],
+   "controlled": false,
+   "statusText": "Scripture verification failed. Reload while online.",
+   "buttons": [
+    "Explore ↗ [off]",
+    "▶ [off]",
+    "Mool Mantar [off]",
+    "●Read [off]",
+    "●Meaning [off]",
+    "●Study [off]",
+    "70pace [off]",
+    "⌃ [off]"
+   ],
+   "retryControl": false,
+   "exportReachable": false
+  },
+  "sukhmani": {
+   "integrity": "failed",
+   "scriptureLinesShown": 0,
+   "targetLineShown": null,
+   "message": "The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved learning has not been changed.",
+   "visibleControls": 7,
+   "visibleControlsEnabled": 0,
+   "visibleLinks": [
+    "Skip to Gurbani -> #sukhmani-text",
+    "GURBANI LEARNING LIBRARY -> index.html"
+   ],
+   "controlled": false,
+   "statusText": "Scripture verification failed. Reload while online.",
+   "buttons": [
+    "About this reading [off]",
+    "▶ [off]",
+    "Ashtpadi 1 [off]",
+    "Read [off]",
+    "Meaning [off]",
+    "Study [off]",
+    "☷ [off]"
+   ],
+   "retryControl": false,
+   "exportReachable": false
+  }
+ },
+ "ms_from_page_start_to_first_scripture_line": {
+  "japji:cpu_x1": {
+   "ms_runs": [
+    128,
+    128,
+    121
+   ],
+   "ms_median": 128
+  },
+  "japji:cpu_x4": {
+   "ms_runs": [
+    462,
+    472,
+    462
+   ],
+   "ms_median": 462
+  },
+  "japji:cpu_x6": {
+   "ms_runs": [
+    703,
+    682,
+    674
+   ],
+   "ms_median": 682
+  },
+  "sukhmani:cpu_x1": {
+   "ms_runs": [
+    212,
+    221,
+    209
+   ],
+   "ms_median": 212
+  },
+  "sukhmani:cpu_x4": {
+   "ms_runs": [
+    744,
+    703,
+    832
+   ],
+   "ms_median": 744
+  },
+  "sukhmani:cpu_x6": {
+   "ms_runs": [
+    1224,
+    1151,
+    1202
+   ],
+   "ms_median": 1202
+  }
+ },
+ "offline_copy_damaged_SUPERSEDED": {
+  "note": "Method flawed: the same tab was reloaded and the browser answered from its short-term memory, so the damaged offline copy was never read (except for the Nitnem file, which the reader fetches afresh). These rows prove nothing about Japji or Sukhmani. The corrected test is rt1c_offline_copy_damage.py.",
+  "rows": {
+   "japji": {
+    "before": {
+     "integrity": "verified",
+     "scriptureLinesShown": 385,
+     "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+     "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥ Pauri 1 ",
+     "visibleControls": 10,
+     "visibleControlsEnabled": 10,
+     "visibleLinks": [
+      "Skip to Gurbani -> #continuous-reader",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": true
+    },
+    "action": "altered-in-offline-copy",
+    "reload_online_1": {
+     "integrity": "verified",
+     "scriptureLinesShown": 385,
+     "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+     "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥ Pauri 1 ",
+     "visibleControls": 10,
+     "visibleControlsEnabled": 10,
+     "visibleLinks": [
+      "Skip to Gurbani -> #continuous-reader",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": true,
+     "alteredTextDisplayed": false
+    },
+    "reload_online_2": {
+     "integrity": "verified",
+     "scriptureLinesShown": 385,
+     "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+     "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥ Pauri 1 ",
+     "visibleControls": 10,
+     "visibleControlsEnabled": 10,
+     "visibleLinks": [
+      "Skip to Gurbani -> #continuous-reader",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": true,
+     "alteredTextDisplayed": false
+    },
+    "after_update_check_message": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "after_update_check": {
+     "integrity": "verified",
+     "scriptureLinesShown": 385,
+     "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+     "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥ Pauri 1 ",
+     "visibleControls": 10,
+     "visibleControlsEnabled": 10,
+     "visibleLinks": [
+      "Skip to Gurbani -> #continuous-reader",
+      "GURBANI LEARNING LIBRARY -> index.html"
+     ],
+     "controlled": true,
+     "alteredTextDisplayed": false
+    }
+   },
+   "sukhmani": {
+    "before": {
+     "integrity": "verified",
+     "scriptureLinesShown": 2027,
+     "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+     "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਸਤਿਗੁਰਏ ਨਮਹ ॥ ",
+     "visibleControls": 9,
+     "visibleControlsEnabled": 9,
+     "visibleLinks": [
+      "Skip to Gurbani -> #sukhmani-text",
+      "GURBANI LEARNING LIBRARY -> index.html",
+      "1 -> #ashtpadi-1",
+      "2 -> #ashtpadi-2",
+      "3 -> #ashtpadi-3",
+      "4 -> #ashtpadi-4",
+      "5 -> #ashtpadi-5",
+      "6 -> #ashtpadi-6",
+      "7 -> #ashtpadi-7",
+      "8 -> #ashtpadi-8",
+      "9 -> #ashtpadi-9",
+      "10 -> #ashtpadi-10",
+      "11 -> #ashtpadi-11",
+      "12 -> #ashtpadi-12",
+      "13 -> #ashtpadi-13",
+      "14 -> #ashtpadi-14",
+      "15 -> #ashtpadi-15",
+      "16 -> #ashtpadi-16",
+      "17 -> #ashtpadi-17",
+      "18 -> #ashtpadi-18",
+      "19 -> #ashtpadi-19",
+      "20 -> #ashtpadi-20",
+      "21 -> #ashtpadi-21",
+      "22 -> #ashtpadi-22",
+      "23 -> #ashtpadi-23",
+      "24 -> #ashtpadi-24"
+     ],
+     "controlled": true
+    },
+    "action": "altered-in-offline-copy",
+    "reload_online_1": {
+     "integrity": "verified",
+     "scriptureLinesShown": 2027,
+     "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+     "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਸਤਿਗੁਰਏ ਨਮਹ ॥ ",
+     "visibleControls": 9,
+     "visibleControlsEnabled": 9,
+     "visibleLinks": [
+      "Skip to Gurbani -> #sukhmani-text",
+      "GURBANI LEARNING LIBRARY -> index.html",
+      "1 -> #ashtpadi-1",
+      "2 -> #ashtpadi-2",
+      "3 -> #ashtpadi-3",
+      "4 -> #ashtpadi-4",
+      "5 -> #ashtpadi-5",
+      "6 -> #ashtpadi-6",
+      "7 -> #ashtpadi-7",
+      "8 -> #ashtpadi-8",
+      "9 -> #ashtpadi-9",
+      "10 -> #ashtpadi-10",
+      "11 -> #ashtpadi-11",
+      "12 -> #ashtpadi-12",
+      "13 -> #ashtpadi-13",
+      "14 -> #ashtpadi-14",
+      "15 -> #ashtpadi-15",
+      "16 -> #ashtpadi-16",
+      "17 -> #ashtpadi-17",
+      "18 -> #ashtpadi-18",
+      "19 -> #ashtpadi-19",
+      "20 -> #ashtpadi-20",
+      "21 -> #ashtpadi-21",
+      "22 -> #ashtpadi-22",
+      "23 -> #ashtpadi-23",
+      "24 -> #ashtpadi-24"
+     ],
+     "controlled": true,
+     "alteredTextDisplayed": false
+    },
+    "reload_online_2": {
+     "integrity": "verified",
+     "scriptureLinesShown": 2027,
+     "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+     "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਸਤਿਗੁਰਏ ਨਮਹ ॥ ",
+     "visibleControls": 9,
+     "visibleControlsEnabled": 9,
+     "visibleLinks": [
+      "Skip to Gurbani -> #sukhmani-text",
+      "GURBANI LEARNING LIBRARY -> index.html",
+      "1 -> #ashtpadi-1",
+      "2 -> #ashtpadi-2",
+      "3 -> #ashtpadi-3",
+      "4 -> #ashtpadi-4",
+      "5 -> #ashtpadi-5",
+      "6 -> #ashtpadi-6",
+      "7 -> #ashtpadi-7",
+      "8 -> #ashtpadi-8",
+      "9 -> #ashtpadi-9",
+      "10 -> #ashtpadi-10",
+      "11 -> #ashtpadi-11",
+      "12 -> #ashtpadi-12",
+      "13 -> #ashtpadi-13",
+      "14 -> #ashtpadi-14",
+      "15 -> #ashtpadi-15",
+      "16 -> #ashtpadi-16",
+      "17 -> #ashtpadi-17",
+      "18 -> #ashtpadi-18",
+      "19 -> #ashtpadi-19",
+      "20 -> #ashtpadi-20",
+      "21 -> #ashtpadi-21",
+      "22 -> #ashtpadi-22",
+      "23 -> #ashtpadi-23",
+      "24 -> #ashtpadi-24"
+     ],
+     "controlled": true,
+     "alteredTextDisplayed": false
+    },
+    "after_update_check_message": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "after_update_check": {
+     "integrity": "verified",
+     "scriptureLinesShown": 2027,
+     "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+     "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਸਤਿਗੁਰਏ ਨਮਹ ॥ ",
+     "visibleControls": 9,
+     "visibleControlsEnabled": 9,
+     "visibleLinks": [
+      "Skip to Gurbani -> #sukhmani-text",
+      "GURBANI LEARNING LIBRARY -> index.html",
+      "1 -> #ashtpadi-1",
+      "2 -> #ashtpadi-2",
+      "3 -> #ashtpadi-3",
+      "4 -> #ashtpadi-4",
+      "5 -> #ashtpadi-5",
+      "6 -> #ashtpadi-6",
+      "7 -> #ashtpadi-7",
+      "8 -> #ashtpadi-8",
+      "9 -> #ashtpadi-9",
+      "10 -> #ashtpadi-10",
+      "11 -> #ashtpadi-11",
+      "12 -> #ashtpadi-12",
+      "13 -> #ashtpadi-13",
+      "14 -> #ashtpadi-14",
+      "15 -> #ashtpadi-15",
+      "16 -> #ashtpadi-16",
+      "17 -> #ashtpadi-17",
+      "18 -> #ashtpadi-18",
+      "19 -> #ashtpadi-19",
+      "20 -> #ashtpadi-20",
+      "21 -> #ashtpadi-21",
+      "22 -> #ashtpadi-22",
+      "23 -> #ashtpadi-23",
+      "24 -> #ashtpadi-24"
+     ],
+     "controlled": true,
+     "alteredTextDisplayed": false
+    }
+   },
+   "nitnem_sohila": {
+    "action": "altered-in-offline-copy",
+    "sohila": {
+     "readerOpen": false,
+     "lines": 0,
+     "target": null,
+     "messages": [
+      "This bani could not load: Source SHA-256 verification failed: data/sohila.json. Please try again.",
+      "The library is saved for offline reading on this device. Keep a separate learning backup.",
+      "This bani could not load: Source SHA-256 verification failed: data/sohila.json. Please try again."
+     ]
+    },
+    "other_bani_still_opens_lines": 782
+   }
+  }
+ },
+ "gurbani_from_unchecked_file_SUPERSEDED": {
+  "note": "The Japji part of this section clicked a hidden button and timed out. The corrected test is in rt1c_offline_copy_damage.py.",
+  "rows": {
+   "occurrencesAltered": 3,
+   "japji_reader": {
+    "mainTextIntegrity": "verified",
+    "mainLines": 385,
+    "relatedCards": [
+     "error: Page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"button[data-action=\\\"related\\\"]\")\n    - locator"
+    ],
+    "contextLines": [],
+    "alteredGurbaniDisplayed": false,
+    "anyWarning": false
+   },
+   "older_pauri2_lesson_page": {
+    "alteredGurbaniDisplayed": true,
+    "genuineLineDisplayed": false,
+    "bodyHead": "Skip to Gurbani | NITNEM / JAPJI SAHIB | Sources & review ↗ |  | YOUR NEXT LESSON · PAURI 02 |  | Japji Sahib | ਜਪੁਜੀ ਸਾਹਿਬ |  | Guru Nanak Dev Ji · Sri Guru Granth Sahib Ji, Ang 1 |  | Read | ਪਾਠ | Understand | ਸਰਲ ਅਰਥ | Study | ਵਿਸਥਾਰ | Aa Appearance | A− | ",
+    "page_errors": []
+   }
+  }
+ }
+}

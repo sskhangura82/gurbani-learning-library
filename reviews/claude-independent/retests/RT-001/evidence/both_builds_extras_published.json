@@ -1,0 +1,69 @@
+{
+ "label": "baseline",
+ "base": "http://127.0.0.1:8080/gurbani-learning-library/",
+ "1_nitnem_damaged_offline_copy": {
+  "action": "damaged",
+  "first_open": {
+   "readerOpen": false,
+   "lines": 0,
+   "said": [
+    "This bani could not load: Source SHA-256 verification failed: data/sohila.json. Please try again."
+   ],
+   "tryAgainControl": []
+  },
+  "second_try_same_tab": 0,
+  "after_reload_online": {
+   "readerOpen": false,
+   "lines": 0,
+   "said": [
+    "This bani could not load: Source SHA-256 verification failed: data/sohila.json. Please try again."
+   ],
+   "tryAgainControl": []
+  },
+  "another_bani_opens_lines": 782,
+  "backup_control_reachable_from_another_bani": [
+   "Export my learning"
+  ]
+ },
+ "2_japji_wording": {
+  "unreadable_record_note_screen_says": "ction | × |  | ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ |  | Mool Mantar · line 1 |  | Unterminated string in JSON at position 44 (line 1 column 45) |  | Export learning",
+  "restore_backup_with_note_on_unknown_line_says": "Invalid line reflection.",
+  "note_anywhere_in_saved_record": false
+ },
+ "3_sukhmani_warning_visibility": {
+  "cut_off_json": {
+   "on_open": [
+    {
+     "where": "p#storage-warning",
+     "visibleToSighted": true,
+     "text": "Saved learning could not be read. Its original record has been preserved; download a backup for recovery."
+    }
+   ],
+   "after_scrolling": [
+    {
+     "where": "p#storage-warning",
+     "visibleToSighted": false,
+     "text": "Saved learning could not be read. Its original record has been preserved; download a backup for recovery."
+    }
+   ],
+   "record_untouched": true
+  },
+  "note_on_unknown_line": {
+   "on_open": [
+    {
+     "where": "p#storage-warning",
+     "visibleToSighted": true,
+     "text": "Saved learning refers to a line outside this reading pack. The original record has been preserved."
+    }
+   ],
+   "after_scrolling": [
+    {
+     "where": "p#storage-warning",
+     "visibleToSighted": false,
+     "text": "Saved learning refers to a line outside this reading pack. The original record has been preserved."
+    }
+   ],
+   "record_untouched": true
+  }
+ }
+}

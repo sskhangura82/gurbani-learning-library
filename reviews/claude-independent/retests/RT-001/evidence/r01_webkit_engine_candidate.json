@@ -1,0 +1,98 @@
+{
+ "engine": "WebKitGTK 2.52.6 (Linux, virtual display)",
+ "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/60.5 Safari/605.1.15",
+ "A_one_word_changed_page_tags_as_published": {
+  "japji": {
+   "check": "failed",
+   "lines": 0,
+   "targetLine": null,
+   "message": "The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved le",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": false,
+   "alteredTextDisplayed": false
+  },
+  "sukhmani": {
+   "check": "failed",
+   "lines": 0,
+   "targetLine": null,
+   "message": "The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved le",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": false,
+   "alteredTextDisplayed": false
+  }
+ },
+ "B_one_word_changed_and_page_tags_changed_to_match": {
+  "japji": {
+   "check": "failed",
+   "lines": 0,
+   "targetLine": null,
+   "message": "The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved le",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": false,
+   "alteredTextDisplayed": false
+  },
+  "sukhmani": {
+   "check": "failed",
+   "lines": 0,
+   "targetLine": null,
+   "message": "The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved le",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": false,
+   "alteredTextDisplayed": false
+  }
+ },
+ "C_genuine_files_online": {
+  "japji": {
+   "check": "verified",
+   "lines": 385,
+   "targetLine": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+   "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": false,
+   "alteredTextDisplayed": false
+  },
+  "sukhmani": {
+   "check": "verified",
+   "lines": 2027,
+   "targetLine": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+   "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": false,
+   "alteredTextDisplayed": false
+  }
+ },
+ "D_offline_copy_files": 57,
+ "D_worker_state": {
+  "registered": true,
+  "active": "activated",
+  "inControl": true
+ },
+ "D_server_answers_not_found_for_everything": {
+  "japji": {
+   "check": "verified",
+   "lines": 385,
+   "targetLine": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+   "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": true,
+   "alteredTextDisplayed": false
+  },
+  "sukhmani": {
+   "check": "verified",
+   "lines": 2027,
+   "targetLine": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+   "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ",
+   "secureContext": true,
+   "webCrypto": true,
+   "offlineWorkerInControl": true,
+   "alteredTextDisplayed": false
+  }
+ }
+}

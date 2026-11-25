@@ -1,0 +1,430 @@
+{
+ "counts": {
+  "total": 31,
+  "exact": 29,
+  "exact_except_pause_marks": 0,
+  "differs": 2,
+  "not_found_on_stated_page": 0
+ },
+ "rows": [
+  {
+   "where": "js/content.js scripture.lines[0]",
+   "shownIn": "older Pauri 2 lesson page",
+   "statedAng": 1,
+   "appText": "ਹੁਕਮੀ ਹੋਵਨਿ ਆਕਾਰ ਹੁਕਮੁ ਨ ਕਹਿਆ ਜਾਈ ॥",
+   "storedHashMatchesText": true,
+   "status": "exact",
+   "referenceId": "60LK",
+   "referencePage": 1,
+   "referenceText": "ਹੁਕਮੀ ਹੋਵਨਿ ਆਕਾਰ ਹੁਕਮੁ ਨ ਕਹਿਆ ਜਾਈ ॥"
+  },
+  {
+   "where": "js/content.js scripture.lines[1]",
+   "shownIn": "older Pauri 2 lesson page",
+   "statedAng": 1,
+   "appText": "ਹੁਕਮੀ ਹੋਵਨਿ ਜੀਅ ਹੁਕਮਿ ਮਿਲੈ ਵਡਿਆਈ ॥",
+   "storedHashMatchesText": true,
+   "status": "exact",
+   "referenceId": "UVSL",
+   "referencePage": 1,
+   "referenceText": "ਹੁਕਮੀ ਹੋਵਨਿ ਜੀਅ ਹੁਕਮਿ ਮਿਲੈ ਵਡਿਆਈ ॥"
+  },
+  {
+   "where": "js/content.js scripture.lines[2]",
+   "shownIn": "older Pauri 2 lesson page",
+   "statedAng": 1,
+   "appText": "ਹੁਕਮੀ ਉਤਮੁ ਨੀਚੁ ਹੁਕਮਿ ਲਿਖਿ ਦੁਖ ਸੁਖ ਪਾਈਅਹਿ ॥",
+   "storedHashMatchesText": true,
+   "status": "exact",
+   "referenceId": "GLXS",
+   "referencePage": 1,
+   "referenceText": "ਹੁਕਮੀ ਉਤਮੁ ਨੀਚੁ ਹੁਕਮਿ ਲਿਖਿ ਦੁਖ ਸੁਖ ਪਾਈਅਹਿ ॥"
+  },
+  {
+   "where": "js/content.js scripture.lines[3]",
+   "shownIn": "older Pauri 2 lesson page",
+   "statedAng": 1,
+   "appText": "ਇਕਨਾ ਹੁਕਮੀ ਬਖਸੀਸ ਇਕਿ ਹੁਕਮੀ ਸਦਾ ਭਵਾਈਅਹਿ ॥",
+   "storedHashMatchesText": true,
+   "status": "exact",
+   "referenceId": "P2VG",
+   "referencePage": 1,
+   "referenceText": "ਇਕਨਾ ਹੁਕਮੀ ਬਖਸੀਸ ਇਕਿ ਹੁਕਮੀ ਸਦਾ ਭਵਾਈਅਹਿ ॥"
+  },
+  {
+   "where": "js/content.js scripture.lines[4]",
+   "shownIn": "older Pauri 2 lesson page",
+   "statedAng": 1,
+   "appText": "ਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ ਬਾਹਰਿ ਹੁਕਮ ਨ ਕੋਇ ॥",
+   "storedHashMatchesText": true,
+   "status": "exact",
+   "referenceId": "MX4P",
+   "referencePage": 1,
+   "referenceText": "ਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ ਬਾਹਰਿ ਹੁਕਮ ਨ ਕੋਇ ॥"
+  },
+  {
+   "where": "js/content.js scripture.lines[5]",
+   "shownIn": "older Pauri 2 lesson page",
+   "statedAng": 1,
+   "appText": "ਨਾਨਕ ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ ॥੨॥",
+   "storedHashMatchesText": true,
+   "status": "exact",
+   "referenceId": "FKUU",
+   "referencePage": 1,
+   "referenceText": "ਨਾਨਕ ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ ॥੨॥"
+  },
+  {
+   "where": "js/content.js related[0].excerpt",
+   "shownIn": "Japji reader > Explore > Related teachings (card); older lesson page",
+   "statedAng": 466,
+   "appText": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "8D52",
+   "referencePage": 466,
+   "referenceText": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[0]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਮਹਲਾ ੨ ॥",
+   "status": "exact",
+   "referenceId": "R5UM",
+   "referencePage": 466,
+   "referenceText": "ਮਹਲਾ ੨ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[1]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "D3LL",
+   "referencePage": 466,
+   "referenceText": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[2]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "CCL9",
+   "referencePage": 466,
+   "referenceText": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[3]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+   "status": "exact",
+   "referenceId": "NZXQ",
+   "referencePage": 466,
+   "referenceText": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[4]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "6CB0",
+   "referencePage": 466,
+   "referenceText": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[5]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "8D52",
+   "referencePage": 466,
+   "referenceText": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[6]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "LW9D",
+   "referencePage": 466,
+   "referenceText": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[0].context[7]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 466,
+   "appText": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+   "status": "exact",
+   "referenceId": "DKDD",
+   "referencePage": 466,
+   "referenceText": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥"
+  },
+  {
+   "where": "js/content.js related[1].excerpt",
+   "shownIn": "Japji reader > Explore > Related teachings (card); older lesson page",
+   "statedAng": 472,
+   "appText": "ਜੰਮਣੁ ਮਰਣਾ ਹੁਕਮੁ ਹੈ ਭਾਣੈ ਆਵੈ ਜਾਇ ॥",
+   "status": "exact",
+   "referenceId": "FEL9",
+   "referencePage": 472,
+   "referenceText": "ਜੰਮਣੁ ਮਰਣਾ ਹੁਕਮੁ ਹੈ ਭਾਣੈ ਆਵੈ ਜਾਇ ॥"
+  },
+  {
+   "where": "js/content.js related[1].context[0]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 472,
+   "appText": "ਮਃ ੧ ॥",
+   "status": "exact",
+   "referenceId": "ZKCV",
+   "referencePage": 472,
+   "referenceText": "ਮਃ ੧ ॥"
+  },
+  {
+   "where": "js/content.js related[1].context[1]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 472,
+   "appText": "ਸਭੋ ਸੂਤਕੁ ਭਰਮੁ ਹੈ ਦੂਜੈ ਲਗੈ ਜਾਇ ॥",
+   "status": "exact",
+   "referenceId": "8ZNE",
+   "referencePage": 472,
+   "referenceText": "ਸਭੋ ਸੂਤਕੁ ਭਰਮੁ ਹੈ ਦੂਜੈ ਲਗੈ ਜਾਇ ॥"
+  },
+  {
+   "where": "js/content.js related[1].context[2]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 472,
+   "appText": "ਜੰਮਣੁ ਮਰਣਾ ਹੁਕਮੁ ਹੈ ਭਾਣੈ ਆਵੈ ਜਾਇ ॥",
+   "status": "exact",
+   "referenceId": "FEL9",
+   "referencePage": 472,
+   "referenceText": "ਜੰਮਣੁ ਮਰਣਾ ਹੁਕਮੁ ਹੈ ਭਾਣੈ ਆਵੈ ਜਾਇ ॥"
+  },
+  {
+   "where": "js/content.js related[1].context[3]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 472,
+   "appText": "ਖਾਣਾ ਪੀਣਾ ਪਵਿਤ੍ਰੁ ਹੈ ਦਿਤੋਨੁ ਰਿਜਕੁ ਸੰਬਾਹਿ ॥",
+   "status": "exact",
+   "referenceId": "G1HH",
+   "referencePage": 472,
+   "referenceText": "ਖਾਣਾ ਪੀਣਾ ਪਵਿਤ੍ਰੁ ਹੈ ਦਿਤੋਨੁ ਰਿਜਕੁ ਸੰਬਾਹਿ ॥"
+  },
+  {
+   "where": "js/content.js related[1].context[4]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 472,
+   "appText": "ਨਾਨਕ ਜਿਨ੍ਹ੍ਹੀ ਗੁਰਮੁਖਿ ਬੁਝਿਆ ਤਿਨ੍ਹ੍ਹਾ ਸੂਤਕੁ ਨਾਹਿ ॥੩॥",
+   "status": "differs",
+   "referenceId": "PWYA",
+   "referencePage": 472,
+   "referenceText": "ਨਾਨਕ ਜਿਨੑੀ ਗੁਰਮੁਖਿ ਬੁਝਿਆ ਤਿਨੑਾ ਸੂਤਕੁ ਨਾਹਿ ॥੩॥",
+   "differences": [
+    {
+     "app": "ਜਿਨ੍ਹ੍ਹੀ",
+     "reference": "ਜਿਨੑੀ",
+     "kind": "letters_or_word"
+    },
+    {
+     "app": "ਤਿਨ੍ਹ੍ਹਾ",
+     "reference": "ਤਿਨੑਾ",
+     "kind": "letters_or_word"
+    }
+   ]
+  },
+  {
+   "where": "js/content.js related[2].excerpt",
+   "shownIn": "Japji reader > Explore > Related teachings (card); older lesson page",
+   "statedAng": 394,
+   "appText": "ਤੇਰਾ ਕੀਆ ਮੀਠਾ ਲਾਗੈ ॥",
+   "status": "exact",
+   "referenceId": "2GYN",
+   "referencePage": 394,
+   "referenceText": "ਤੇਰਾ ਕੀਆ ਮੀਠਾ ਲਾਗੈ ॥"
+  },
+  {
+   "where": "js/content.js related[2].context[0]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਆਸਾ ਘਰੁ ੭ ਮਹਲਾ ੫ ॥",
+   "status": "exact",
+   "referenceId": "ZSLW",
+   "referencePage": 394,
+   "referenceText": "ਆਸਾ ਘਰੁ ੭ ਮਹਲਾ ੫ ॥"
+  },
+  {
+   "where": "js/content.js related[2].context[1]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਹਰਿ ਕਾ ਨਾਮੁ ਰਿਦੈ ਨਿਤ ਧਿਆਈ ॥",
+   "status": "exact",
+   "referenceId": "L7HP",
+   "referencePage": 394,
+   "referenceText": "ਹਰਿ ਕਾ ਨਾਮੁ ਰਿਦੈ ਨਿਤ ਧਿਆਈ ॥"
+  },
+  {
+   "where": "js/content.js related[2].context[2]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਸੰਗੀ ਸਾਥੀ ਸਗਲ ਤਰਾਂਈ ॥੧॥",
+   "status": "exact",
+   "referenceId": "B5BZ",
+   "referencePage": 394,
+   "referenceText": "ਸੰਗੀ ਸਾਥੀ ਸਗਲ ਤਰਾਂਈ ॥੧॥"
+  },
+  {
+   "where": "js/content.js related[2].context[3]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਗੁਰੁ ਮੇਰੈ ਸੰਗਿ ਸਦਾ ਹੈ ਨਾਲੇ ॥",
+   "status": "exact",
+   "referenceId": "EHEH",
+   "referencePage": 394,
+   "referenceText": "ਗੁਰੁ ਮੇਰੈ ਸੰਗਿ ਸਦਾ ਹੈ ਨਾਲੇ ॥"
+  },
+  {
+   "where": "js/content.js related[2].context[4]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਸਿਮਰਿ ਸਿਮਰਿ ਤਿਸੁ ਸਦਾ ਸਮ੍ਹ੍ਹਾਲੇ ॥੧॥ ਰਹਾਉ ॥",
+   "status": "differs",
+   "referenceId": "4ZD2",
+   "referencePage": 394,
+   "referenceText": "ਸਿਮਰਿ ਸਿਮਰਿ ਤਿਸੁ ਸਦਾ ਸਮੑਾਲੇ ॥੧॥ ਰਹਾਉ ॥",
+   "differences": [
+    {
+     "app": "ਸਮ੍ਹ੍ਹਾਲੇ",
+     "reference": "ਸਮੑਾਲੇ",
+     "kind": "letters_or_word"
+    }
+   ]
+  },
+  {
+   "where": "js/content.js related[2].context[5]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਤੇਰਾ ਕੀਆ ਮੀਠਾ ਲਾਗੈ ॥",
+   "status": "exact",
+   "referenceId": "2GYN",
+   "referencePage": 394,
+   "referenceText": "ਤੇਰਾ ਕੀਆ ਮੀਠਾ ਲਾਗੈ ॥"
+  },
+  {
+   "where": "js/content.js related[2].context[6]",
+   "shownIn": "Japji reader > Related teachings > Read the complete context; older lesson page",
+   "statedAng": 394,
+   "appText": "ਹਰਿ ਨਾਮੁ ਪਦਾਰਥੁ ਨਾਨਕੁ ਮਾਂਗੈ ॥੨॥੪੨॥੯੩॥",
+   "status": "exact",
+   "referenceId": "AAB6",
+   "referencePage": 394,
+   "referenceText": "ਹਰਿ ਨਾਮੁ ਪਦਾਰਥੁ ਨਾਨਕੁ ਮਾਂਗੈ ॥੨॥੪੨॥੯੩॥"
+  },
+  {
+   "where": "js/content.js raagExample.heading",
+   "shownIn": "Japji reader > Explore > Raag & meaning",
+   "statedAng": 917,
+   "appText": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ",
+   "status": "exact (app quotes part of one reference line)",
+   "referenceId": "LTKA",
+   "referencePage": 917,
+   "referenceText": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ ॥"
+  },
+  {
+   "where": "simran.html p.gurbani-line",
+   "shownIn": "Simran Room page",
+   "statedAng": 2,
+   "appText": "ਅੰਮ੍ਰਿਤ ਵੇਲਾ ਸਚੁ ਨਾਉ ਵਡਿਆਈ ਵੀਚਾਰੁ ॥",
+   "status": "exact",
+   "referenceId": "Y0C8",
+   "referencePage": 2,
+   "referenceText": "ਅੰਮ੍ਰਿਤ ਵੇਲਾ ਸਚੁ ਨਾਉ ਵਡਿਆਈ ਵੀਚਾਰੁ ॥"
+  }
+ ],
+ "sameAsReaderCopy": {
+  "pauri2_six_lines_identical_to_reader_copy": true,
+  "simran_line_identical_to_reader_copy": true
+ },
+ "wordGlosses": {
+  "total": 12,
+  "headwordOccursInItsLine": 12,
+  "notInLine": [],
+  "all": [
+   {
+    "line": "sggs.japji.pauri02.line01",
+    "headword": "ਹੁਕਮੀ",
+    "occursInItsLine": true,
+    "gloss": "Within / through Hukam"
+   },
+   {
+    "line": "sggs.japji.pauri02.line01",
+    "headword": "ਆਕਾਰ",
+    "occursInItsLine": true,
+    "gloss": "Forms; embodied shapes"
+   },
+   {
+    "line": "sggs.japji.pauri02.line02",
+    "headword": "ਜੀਅ",
+    "occursInItsLine": true,
+    "gloss": "Living beings"
+   },
+   {
+    "line": "sggs.japji.pauri02.line02",
+    "headword": "ਵਡਿਆਈ",
+    "occursInItsLine": true,
+    "gloss": "Honour; greatness"
+   },
+   {
+    "line": "sggs.japji.pauri02.line03",
+    "headword": "ਉਤਮੁ ਨੀਚੁ",
+    "occursInItsLine": true,
+    "gloss": "High / low; a phrase requiring interpretive care"
+   },
+   {
+    "line": "sggs.japji.pauri02.line03",
+    "headword": "ਲਿਖਿ",
+    "occursInItsLine": true,
+    "gloss": "Having written; according to what is inscribed"
+   },
+   {
+    "line": "sggs.japji.pauri02.line04",
+    "headword": "ਬਖਸੀਸ",
+    "occursInItsLine": true,
+    "gloss": "Gift; grace"
+   },
+   {
+    "line": "sggs.japji.pauri02.line04",
+    "headword": "ਭਵਾਈਅਹਿ",
+    "occursInItsLine": true,
+    "gloss": "Are made to wander; here read with birth and death"
+   },
+   {
+    "line": "sggs.japji.pauri02.line05",
+    "headword": "ਸਭੁ ਕੋ",
+    "occursInItsLine": true,
+    "gloss": "Everyone"
+   },
+   {
+    "line": "sggs.japji.pauri02.line05",
+    "headword": "ਬਾਹਰਿ",
+    "occursInItsLine": true,
+    "gloss": "Outside"
+   },
+   {
+    "line": "sggs.japji.pauri02.line06",
+    "headword": "ਬੁਝੈ",
+    "occursInItsLine": true,
+    "gloss": "Understands; comes to recognize"
+   },
+   {
+    "line": "sggs.japji.pauri02.line06",
+    "headword": "ਹਉਮੈ",
+    "occursInItsLine": true,
+    "gloss": "Haumai; self-centred I-ness"
+   }
+  ]
+ },
+ "reference": "Shabad OS Database v5.0.0-next.0, asset SSA2 (one digital reference; not print)"
+}
