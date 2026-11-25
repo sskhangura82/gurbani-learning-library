@@ -2,7 +2,7 @@
 
 Date: 2026-11-23 (Pacific)
 
-Historical first-six checkpoint, frozen at commit `28337270a1f149b96882acf420cf7dcd5c8910ce`. The current continuation reaches Ashtpadi 18; see [first-eighteen scope and evidence](SUKHMANI_FIRST_EIGHTEEN.md). Counts below describe the original first-six checkpoint.
+Historical first-six checkpoint, frozen at commit `28337270a1f149b96882acf420cf7dcd5c8910ce`. The current continuation completes Ashtpadi 24; see [complete scope and evidence](SUKHMANI_COMPLETE.md). Counts below describe the original first-six checkpoint.
 
 ## What this change delivers
 

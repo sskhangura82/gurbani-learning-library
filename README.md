@@ -4,11 +4,11 @@
 
 [Open the existing family site](https://sskhangura82.github.io/gurbani-learning-library/) · [Read Japji Sahib](https://sskhangura82.github.io/gurbani-learning-library/full-japji.html) · [Read Sukhmani Sahib](https://sskhangura82.github.io/gurbani-learning-library/sukhmani.html)
 
-## Sukhmani Sahib: first-eighteen public preview
+## Sukhmani Sahib: all 24 Ashtpadis
 
-The existing `sukhmani.html` reader continues through Ashtpadis 1–18 of 24, all eighteen introductory Saloks, 144 pauris and the Rahau, across Ang 262–288. Its 1,523 original source occurrences (including headings) are compared with a second digital source. English/Punjabi line explanations, 163 passage studies and approximate transliteration remain clearly labeled drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
+The existing `sukhmani.html` reader now contains the complete Sukhmani Sahib: all 24 introductory Saloks, 192 pauris and the Rahau, across Ang 262–296. Its 2,027 original source occurrences (including headings) are compared with a second digital transcription. English/Punjabi line explanations, 217 passage studies and approximate transliteration remain clearly labeled educational drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
 
-See [scope, sources and review status](docs/SUKHMANI_FIRST_EIGHTEEN.md). The first-twelve preview was published through PR #34; this continuation follows the user's request to keep the app usable and shareable as content grows. Ashtpadis 19–24 and qualified human review remain outstanding. All previously published Sukhmani source objects, meanings and studies are preserved, as are the existing Japji source and learning.
+See [complete scope, sources and review status](docs/SUKHMANI_COMPLETE.md). The preceding first-eighteen preview was published through PR #35. This continuation completes Sukhmani text coverage under the user's request for a usable, shareable app. Qualified human review and physical-device acceptance remain outstanding. Every published first-eighteen source object, meaning and study is preserved, as are the existing Japji runtime and learning.
 
 ## What is included in Revision 7
 

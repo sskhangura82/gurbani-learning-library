@@ -25,7 +25,7 @@ jobs:
         run: node tests/r6-contract.mjs
       - name: Revision 7 home, pace and rooms contracts
         run: node tests/r7-contract.mjs
-      - name: Sukhmani source, published-content preservation and first-eighteen teaching coverage
+      - name: Sukhmani source, published-content preservation and complete Sukhmani teaching coverage
         run: node tests/sukhmani-content.mjs
       - name: Sukhmani saved learning, import and preservation
         run: node tests/sukhmani-reader-core.mjs

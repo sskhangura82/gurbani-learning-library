@@ -1,5 +1,7 @@
 # Sukhmani Sahib — Ashtpadis 1–18
 
+> Historical milestone: this first-eighteen preview was published through [PR #35](https://github.com/sskhangura82/gurbani-learning-library/pull/35), commit `a4d40ba51750cd01cda16efce0f389863815d899`, with successful Pages deployment and exact public-file verification. The current continuation completes the composition; see [SUKHMANI_COMPLETE.md](SUKHMANI_COMPLETE.md).
+
 Prepared: 2026-11-24 (Pacific)
 
 ## Scope of this continuation
