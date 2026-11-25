@@ -1,0 +1,154 @@
+{
+ "what": "Verification of the change that lets screen readers read Nitnem meanings (independent-review finding CI-A-01).",
+ "how": "Headless Chromium 390x664 phone emulation with axe-core 4.14.1; baseline a3476ac served, then this branch served at the same address so the update path is exercised. One synthetic note. Not Safari, not an iPhone, not VoiceOver.",
+ "checkedAt": "2026-11-25",
+ "result": {
+  "before": {
+   "sw": {
+    "active": "activated",
+    "waiting": false,
+    "caches": {
+     "0.14-nitnem-complete-preview-20261125-1": 56
+    }
+   },
+   "meaning": {
+    "buttons": 56,
+    "withAriaLabel": 56,
+    "firstText": "Source heading: this is Sohila, in Raag Gauree Deepakee, attributed to Guru Nanak Sahib (Mahala 1). ਇਹ ਬਾਣੀ ਦਾ ਸਿਰਲੇਖ ਹੈ: ਸੋਹਿਲਾ, ਰਾਗ ਗਉੜੀ ਦੀਪਕੀ, ਮਹਲਾ ਪਹਿਲਾ — ਗ",
+    "firstAriaLabel": "Meaning for this line. Tap to explore.",
+    "langs": [
+     "en",
+     "pa",
+     "-"
+    ]
+   },
+   "axe": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 62,
+     "targets": [
+      "button[data-meaning-line=\"sohila01.line01\"]",
+      "button[data-meaning-line=\"sohila01.line02\"]",
+      "button[data-meaning-line=\"sohila01.line03\"]"
+     ]
+    }
+   ],
+   "roleNameMatches": 0
+  },
+  "update_waiting": {
+   "sw": {
+    "active": "activated",
+    "waiting": true,
+    "caches": {
+     "0.14-nitnem-complete-preview-20261125-1": 56,
+     "0.14.1-nitnem-meanings-readable-20261125-1": 56
+    }
+   },
+   "status": "An app update is ready. Load it when you are ready.",
+   "applyVisible": true,
+   "stillOldCode": true
+  },
+  "after": {
+   "sw": {
+    "active": "activated",
+    "waiting": false,
+    "caches": {
+     "0.14.1-nitnem-meanings-readable-20261125-1": 56
+    }
+   },
+   "meaning": {
+    "buttons": 56,
+    "withAriaLabel": 0,
+    "firstText": "Source heading: this is Sohila, in Raag Gauree Deepakee, attributed to Guru Nanak Sahib (Mahala 1). ਇਹ ਬਾਣੀ ਦਾ ਸਿਰਲੇਖ ਹੈ: ਸੋਹਿਲਾ, ਰਾਗ ਗਉੜੀ ਦੀਪਕੀ, ਮਹਲਾ ਪਹਿਲਾ — ਗ",
+    "firstAriaLabel": null,
+    "langs": [
+     "en",
+     "pa",
+     "-"
+    ]
+   },
+   "axe": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 6,
+     "targets": [
+      "button[data-detail-unit=\"sohila01\"]",
+      "button[data-detail-unit=\"sohila02\"]",
+      "button[data-detail-unit=\"sohila03\"]"
+     ]
+    }
+   ],
+   "allAxe": [
+    [
+     "label-content-name-mismatch",
+     6
+    ]
+   ],
+   "roleNameMatches": 1,
+   "study_axe": [
+    [
+     "label-content-name-mismatch",
+     1,
+     [
+      "#jump"
+     ]
+    ]
+   ],
+   "note": "W1A-SYNTHETIC-NOTE",
+   "savedList": ""
+  },
+  "gurmukhi_and_meanings": {
+   "jaap": {
+    "rows": 808,
+    "equalsBaselineRegister": true,
+    "meaningButtons": 782,
+    "withAriaLabel": 0
+   },
+   "savaiye": {
+    "rows": 43,
+    "equalsBaselineRegister": true,
+    "meaningButtons": 40,
+    "withAriaLabel": 0
+   },
+   "chaupai": {
+    "rows": 121,
+    "equalsBaselineRegister": true,
+    "meaningButtons": 116,
+    "withAriaLabel": 0
+   },
+   "anand": {
+    "rows": 210,
+    "equalsBaselineRegister": true,
+    "meaningButtons": 208,
+    "withAriaLabel": 0
+   },
+   "rehras": {
+    "rows": 159,
+    "equalsBaselineRegister": true,
+    "meaningButtons": 159,
+    "withAriaLabel": 0
+   },
+   "sohila": {
+    "rows": 56,
+    "equalsBaselineRegister": true,
+    "meaningButtons": 56,
+    "withAriaLabel": 0
+   }
+  },
+  "offline_new_version": {
+   "jaap": {
+    "lines": 782,
+    "meanings": 782
+   },
+   "sohila": {
+    "lines": 56,
+    "meanings": 56
+   },
+   "full-japji.html": 385,
+   "sukhmani.html": 2027
+  },
+  "page_errors": []
+ }
+}
