@@ -1,0 +1,94 @@
+{
+ "per_part": {
+  "japji": {
+   "n": 385,
+   "en_strong": 0,
+   "en_weak_only": 4,
+   "en_either": 4,
+   "pa_marker": 4
+  },
+  "sukhmani": {
+   "n": 2027,
+   "en_strong": 0,
+   "en_weak_only": 4,
+   "en_either": 4,
+   "pa_marker": 3
+  },
+  "anand": {
+   "n": 208,
+   "en_strong": 6,
+   "en_weak_only": 17,
+   "en_either": 23,
+   "pa_marker": 29
+  },
+  "sohila": {
+   "n": 56,
+   "en_strong": 4,
+   "en_weak_only": 2,
+   "en_either": 6,
+   "pa_marker": 6
+  },
+  "jaap": {
+   "n": 782,
+   "en_strong": 6,
+   "en_weak_only": 4,
+   "en_either": 10,
+   "pa_marker": 7
+  },
+  "savaiye": {
+   "n": 40,
+   "en_strong": 4,
+   "en_weak_only": 6,
+   "en_either": 10,
+   "pa_marker": 10
+  },
+  "chaupai": {
+   "n": 116,
+   "en_strong": 25,
+   "en_weak_only": 21,
+   "en_either": 46,
+   "pa_marker": 49
+  },
+  "rehras:sggs-nine": {
+   "n": 23,
+   "en_strong": 8,
+   "en_weak_only": 3,
+   "en_either": 11,
+   "pa_marker": 9
+  },
+  "rehras:chaupai": {
+   "n": 100,
+   "en_strong": 16,
+   "en_weak_only": 16,
+   "en_either": 32,
+   "pa_marker": 34
+  },
+  "rehras:savaiya-dohira": {
+   "n": 2,
+   "en_strong": 1,
+   "en_weak_only": 0,
+   "en_either": 1,
+   "pa_marker": 2
+  },
+  "rehras:anand": {
+   "n": 32,
+   "en_strong": 3,
+   "en_weak_only": 6,
+   "en_either": 9,
+   "pa_marker": 8
+  },
+  "rehras:mundawani-slok": {
+   "n": 2,
+   "en_strong": 0,
+   "en_weak_only": 1,
+   "en_either": 1,
+   "pa_marker": 1
+  }
+ },
+ "total": {
+  "n": 3773,
+  "e": 157,
+  "p": 162,
+  "s": 73
+ }
+}

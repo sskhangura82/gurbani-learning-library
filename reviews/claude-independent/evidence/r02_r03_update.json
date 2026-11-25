@@ -1,0 +1,106 @@
+{
+ "v1_installed": {
+  "state": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "caches": {
+    "0.14-nitnem-complete-preview-20261125-1": 56
+   },
+   "controlled": true
+  },
+  "offline_message": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+  "marker": "V1"
+ },
+ "offline_v1": {
+  "index.html": 1,
+  "nitnem/index.html": 1,
+  "full-japji.html": 385,
+  "sukhmani.html": 2027,
+  "simran.html": 1,
+  "gurdwaras.html": 1,
+  "gurdwara.html": 1,
+  "pauri-2-lesson.html": 1,
+  "nitnem:jaap": {
+   "lines": 782,
+   "meanings": 782
+  },
+  "nitnem:savaiye": {
+   "lines": 40,
+   "meanings": 40
+  },
+  "nitnem:chaupai": {
+   "lines": 116,
+   "meanings": 116
+  },
+  "nitnem:anand": {
+   "lines": 208,
+   "meanings": 208
+  },
+  "nitnem:rehras": {
+   "lines": 159,
+   "meanings": 159
+  },
+  "nitnem:sohila": {
+   "lines": 56,
+   "meanings": 56
+  }
+ },
+ "v2_waiting": {
+  "state": {
+   "active": "activated",
+   "waiting": true,
+   "installing": false,
+   "caches": {
+    "0.14-nitnem-complete-preview-20261125-1": 56,
+    "0.15-review-test-v2": 56
+   },
+   "controlled": true
+  },
+  "page_still_shows": "V1",
+  "offline_status": "An app update is ready. Load it when you are ready.",
+  "apply_button_visible": true,
+  "after_plain_reload_page_shows": "V1"
+ },
+ "v2_apply_with_unsaved_text": {
+  "offline_status": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+  "marker": "V2",
+  "note_field": ""
+ },
+ "v2_applied": {
+  "state": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "caches": {
+    "0.15-review-test-v2": 56
+   },
+   "controlled": true
+  },
+  "marker": "V2",
+  "learning_note_present": true,
+  "bookmarks_kept": [
+   "sohila01.line01"
+  ]
+ },
+ "v3_broken": {
+  "state": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "caches": {
+    "0.15-review-test-v2": 56
+   },
+   "controlled": true
+  },
+  "offline_status": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+  "marker": "V2",
+  "apply_button_visible": false,
+  "offline_after_failed_update": {
+   "marker": "V2",
+   "jaap_lines": 782
+  },
+  "learning_note_present": true
+ },
+ "page_errors": []
+}

@@ -1,0 +1,107 @@
+{
+ "meaning_entries": 3773,
+ "with_a_published_translation_to_compare": 3748,
+ "originality": {
+  "similarity_ratio_histogram": {
+   "0.0-0.2": 35,
+   "0.2-0.4": 961,
+   "0.4-0.6": 1794,
+   "0.6-0.7": 593,
+   "0.7-0.8": 261,
+   "0.8-0.9": 86,
+   "0.9-1.0": 18
+  },
+  "entries_with_ratio_at_least_0_80": 104,
+  "entries_sharing_a_run_of_6_or_more_words": 49,
+  "entries_sharing_a_run_of_8_or_more_words": 4
+ },
+ "shift_screen": {
+  "rule": "own-line overlap < 0.10 and a neighbouring line overlap >= 0.30",
+  "flagged": [
+   {
+    "id": "sukhmani.a08.p07.l07",
+    "own": 0.0,
+    "neighbour": 0.6,
+    "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਕੀ ਮਿਤਿ ਕਉਨੁ ਬਖਾਨੈ ॥",
+    "app_en": "Who can state the measure of the Brahm Gyani?"
+   },
+   {
+    "id": "jaap092.line01",
+    "own": 0.0,
+    "neighbour": 0.75,
+    "gurmukhi": "ਮੁਨਿ ਗਨ ਪ੍ਰਨਾਮ ॥",
+    "app_en": "Assemblies of sages bow before You."
+   }
+  ]
+ },
+ "content_overlap_own_histogram": {
+  "0.0-0.1": 883,
+  "0.1-0.1": 191,
+  "0.1-0.2": 888,
+  "0.2-0.3": 774,
+  "0.3-0.5": 670,
+  "0.5-1.0": 342
+ },
+ "by_part": {
+  "anand": {
+   "n": 208,
+   "mean_overlap": 0.245,
+   "zero_overlap": 5
+  },
+  "chaupai": {
+   "n": 100,
+   "mean_overlap": 0.115,
+   "zero_overlap": 37
+  },
+  "jaap": {
+   "n": 782,
+   "mean_overlap": 0.058,
+   "zero_overlap": 563
+  },
+  "japji": {
+   "n": 385,
+   "mean_overlap": 0.223,
+   "zero_overlap": 51
+  },
+  "rehras:anand": {
+   "n": 32,
+   "mean_overlap": 0.222,
+   "zero_overlap": 3
+  },
+  "rehras:chaupai": {
+   "n": 91,
+   "mean_overlap": 0.114,
+   "zero_overlap": 34
+  },
+  "rehras:mundawani-slok": {
+   "n": 2,
+   "mean_overlap": 0.125,
+   "zero_overlap": 0
+  },
+  "rehras:savaiya-dohira": {
+   "n": 2,
+   "mean_overlap": 0.065,
+   "zero_overlap": 0
+  },
+  "rehras:sggs-nine": {
+   "n": 23,
+   "mean_overlap": 0.099,
+   "zero_overlap": 0
+  },
+  "savaiye": {
+   "n": 40,
+   "mean_overlap": 0.119,
+   "zero_overlap": 5
+  },
+  "sohila": {
+   "n": 56,
+   "mean_overlap": 0.225,
+   "zero_overlap": 2
+  },
+  "sukhmani": {
+   "n": 2027,
+   "mean_overlap": 0.271,
+   "zero_overlap": 178
+  }
+ }
+}

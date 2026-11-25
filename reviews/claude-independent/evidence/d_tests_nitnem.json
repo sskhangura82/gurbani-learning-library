@@ -1,0 +1,198 @@
+{
+ "D-01": {
+  "save_status": "Reflection saved on this device.",
+  "bookmark_button_after": "★ Remove saved line",
+  "record_key": "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125",
+  "record": {
+   "schema": 1,
+   "compositionId": "sohila",
+   "editionId": "sohila-srigranth-digitally-collated-20261125",
+   "rev": 2,
+   "savedAt": "2026-11-25T18:06:50.109Z",
+   "payload": {
+    "notes": {
+     "sohila01.line01": "SYNTHETIC-NOTE-A ਸਿੰਥੈਟਿਕ ਨੋਟ <b>bold?</b>"
+    },
+    "bookmarks": [
+     "sohila01.line01"
+    ],
+    "lineId": "sohila01.line01",
+    "size": 30,
+    "theme": "day",
+    "pace": 70,
+    "mode": "read",
+    "view": "continuous"
+   }
+  },
+  "survives_reload": true,
+  "survives_navigation": true,
+  "saved_list_text": "Shabad 1 · Gauree Deepakee · Guru Nanak Sahib · line 1\nਸੋਹਿਲਾ ਰਾਗੁ ਗਉੜੀ ਦੀਪਕੀ ਮਹਲਾ ੧",
+  "note_rendered_as_html": false
+ },
+ "D-07": {
+  "filename": "nitnem-sohila-learning.json",
+  "bytes": 474,
+  "export": {
+   "project": "GLP-001-NITNEM",
+   "schema": 1,
+   "compositionId": "sohila",
+   "editionId": "sohila-srigranth-digitally-collated-20261125",
+   "exportedAt": "2026-11-25T18:06:55.910Z",
+   "state": {
+    "notes": {
+     "sohila01.line01": "SYNTHETIC-NOTE-A ਸਿੰਥੈਟਿਕ ਨੋਟ <b>bold?</b>"
+    },
+    "bookmarks": [
+     "sohila01.line01"
+    ],
+    "lineId": "sohila01.line01",
+    "size": 30,
+    "theme": "day",
+    "pace": 70,
+    "mode": "read",
+    "view": "continuous"
+   }
+  },
+  "import_status": [
+   "The library is saved for offline reading on this device. Keep a separate learning backup.",
+   "5 passage studies · 56 English / Punjabi meaning pairs",
+   "Bookmarks and reflections merged. Your current reading place and settings were kept.",
+   "The library is saved for offline reading on this device. Keep a separate learning backup."
+  ],
+  "lossless_notes_bookmarks": true,
+  "position_restored": true
+ },
+ "D-04": {
+  "note_after_two_imports": "SYNTHETIC-NOTE-A ਸਿੰਥੈਟਿਕ ਨੋਟ <b>bold?</b>\n\n— Imported reflection —\nSYNTHETIC-NOTE-B different text",
+  "both_kept": true,
+  "duplicated": false
+ },
+ "D-03": {
+  "not_json": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: The selected file is not valid JSON. Nothing changed."
+   ]
+  },
+  "wrong_bani": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: Choose a backup for this bani and one of its documented source editions."
+   ]
+  },
+  "script_note": {
+   "data_changed": true,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Bookmarks and reflections merged. Your current reading place and settings were kept."
+   ]
+  },
+  "proto_key": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: Saved learning contains fields this reader does not understand. Its original record is preserved."
+   ]
+  },
+  "unknown_field": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: Saved learning contains fields this reader does not understand. Its original record is preserved."
+   ]
+  },
+  "bad_line_id": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: A reflection is invalid or outside this edition. The original record is preserved."
+   ]
+  },
+  "wrong_types": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: Saved text size or reading pace is invalid. The original record is preserved."
+   ]
+  },
+  "huge": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: Invalid or oversized learning file"
+   ]
+  },
+  "too_long_note": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: A reflection is invalid or outside this edition. The original record is preserved."
+   ]
+  },
+  "array_root": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: Choose a backup for this bani and one of its documented source editions."
+   ]
+  },
+  "empty_file": {
+   "data_changed": false,
+   "page_errors": [],
+   "xss_flag": null,
+   "polluted": null,
+   "message": [
+    "The library is saved for offline reading on this device. Keep a separate learning backup.",
+    "5 passage studies · 56 English / Punjabi meaning pairs",
+    "Import refused: The selected file is not valid JSON. Nothing changed."
+   ]
+  },
+  "_after_script_note": {
+   "xss_flag": null,
+   "img_or_script_elements_in_tools": 0,
+   "saved_list": "Shabad 1 · Gauree Deepakee · Guru Nanak Sahib · line 1\nਸੋਹਿਲਾ ਰਾਗੁ ਗਉੜੀ ਦੀਪਕੀ ਮਹਲਾ ੧"
+  }
+ }
+}

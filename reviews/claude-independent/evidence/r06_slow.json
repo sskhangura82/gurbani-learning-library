@@ -1,0 +1,42 @@
+{
+ "nitnem-jaap": {
+  "slow_400kbps": {
+   "secondsToFirstScriptureLine": 16.9,
+   "requestsSoFar": 12
+  },
+  "typical_4g_9mbps": {
+   "secondsToFirstScriptureLine": 3.0,
+   "requestsSoFar": 12
+  }
+ },
+ "nitnem-rehras": {
+  "slow_400kbps": {
+   "secondsToFirstScriptureLine": 8.9,
+   "requestsSoFar": 12
+  },
+  "typical_4g_9mbps": {
+   "secondsToFirstScriptureLine": 4.7,
+   "requestsSoFar": 12
+  }
+ },
+ "japji": {
+  "slow_400kbps": {
+   "secondsToFirstScriptureLine": 15.6,
+   "requestsSoFar": 11
+  },
+  "typical_4g_9mbps": {
+   "secondsToFirstScriptureLine": 2.9,
+   "requestsSoFar": 11
+  }
+ },
+ "sukhmani": {
+  "slow_400kbps": {
+   "secondsToFirstScriptureLine": 65.7,
+   "requestsSoFar": 8
+  },
+  "typical_4g_9mbps": {
+   "secondsToFirstScriptureLine": 5.1,
+   "requestsSoFar": 8
+  }
+ }
+}

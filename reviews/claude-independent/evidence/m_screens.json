@@ -1,0 +1,932 @@
+{
+ "M-01": {
+  "source_line_records": 3773,
+  "meaning_entries": 3773,
+  "lines_without_meaning": [],
+  "n_lines_without_meaning": 0,
+  "meanings_without_line": [],
+  "n_meanings_without_line": 0,
+  "duplicate_bindings": [],
+  "empty_english": [],
+  "empty_punjabi": [],
+  "meanings_carrying_a_source_hash": 3388,
+  "meaning_source_hash_stale": []
+ },
+ "M-03": {
+  "punjabi_field_contains_latin_words": 0,
+  "punjabi_latin_samples": [],
+  "english_field_contains_gurmukhi": 1,
+  "english_gurmukhi_samples": [
+   [
+    "pauri01.line01",
+    "Outward cleansing does not bring inner purity, even if repeated countless times. Study notes discuss another reading of ਸੋਚੈ as thinking."
+   ]
+  ],
+  "hindi_looking_forms_in_punjabi": 13,
+  "hindi_samples": [
+   [
+    "sukhmani.a08.p08.l01",
+    [
+     "ਕਰਤਾ ਹੈ"
+    ],
+    "ਬ੍ਰਹਮ ਗਿਆਨੀ ਸਾਰੀ ਸ੍ਰਿਸ਼ਟੀ ਦਾ ਕਰਤਾ ਹੈ।"
+   ],
+   [
+    "sukhmani.a09.p08.l08",
+    [
+     "ਕਰਤਾ ਹੈ"
+    ],
+    "ਪਾਰਬ੍ਰਹਮ ਨਾਸ-ਰਹਿਤ ਕਰਤਾ ਹੈ।"
+   ],
+   [
+    "jaap029.line01",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਦੇਹ ਜਾਂ ਦਿੱਸਦੇ ਆਕਾਰ ਵਿੱਚ ਸੀਮਤ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap030.line02",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਇੱਕ ਪਹਿਰਾਵੇ ਜਾਂ ਬਾਹਰਲੇ ਧਾਰਮਿਕ ਭੇਖ ਵਿੱਚ ਸੀਮਤ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap030.line04",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਨਿੱਜੀ ਚਾਹ ਜਾਂ ਲਾਲਸਾ ਦੇ ਵੱਸ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap082.line03",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੇਰੇ ਮਾਤਾ-ਪਿਤਾ ਜਾਂ ਕੁਲ ਨਹੀਂ; ਤੂੰ ਜਨਮ ਅਤੇ ਮਰਨ ਦੇ ਅਧੀਨ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap099.line02",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਖ਼ਾਸ ਮਿੱਤਰ ਦੇ ਪੱਖ ਤੱਕ ਸੀਮਤ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap099.line03",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਭਰਮ ਵਿੱਚ ਫਸਿਆ ਹੋਇਆ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap100.line01",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਆਮ ਕਰਮ ਅਤੇ ਉਸ ਦੇ ਫਲ ਦੇ ਬੰਧਨ ਵਿੱਚ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap100.line02",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਸਰੀਰ ਦੇ ਢਾਂਚੇ ਵਿੱਚ ਕੈਦ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap101.line02",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਖ਼ਾਸ ਮਿੱਤਰ ਦੇ ਪੱਖ ਤੱਕ ਸੀਮਤ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap133.line03",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਇੱਕ ਪਹਿਰਾਵੇ ਜਾਂ ਬਾਹਰਲੇ ਧਾਰਮਿਕ ਭੇਖ ਵਿੱਚ ਸੀਮਤ ਨਹੀਂ ਹੈਂ।"
+   ],
+   [
+    "jaap139.line02",
+    [
+     "ਨਹੀਂ ਹੈਂ"
+    ],
+    "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਕਿਸੇ ਇੱਕ ਪਹਿਰਾਵੇ ਜਾਂ ਬਾਹਰਲੇ ਧਾਰਮਿਕ ਭੇਖ ਵਿੱਚ ਸੀਮਤ ਨਹੀਂ ਹੈਂ।"
+   ]
+  ],
+  "editorial_notes_leaking_into_reader_text": {
+   "count": 7,
+   "by_place": {
+    "study:jaap": 3,
+    "meaning-extra:anand": 1,
+    "meaning-extra:rehras": 1,
+    "meaning-extra:jaap": 1,
+    "study:anand": 1
+   },
+   "items": [
+    [
+     "meaning-extra",
+     "anand",
+     "anand05.line05",
+     "interpretiveCaution",
+     "Anhad is spiritual/musical metaphor and does not verify an audible frequency, noise hallucination or recording."
+    ],
+    [
+     "meaning-extra",
+     "rehras",
+     "rehras.anand05.line05",
+     "interpretiveCaution",
+     "Anhad is spiritual/musical metaphor and does not verify an audible frequency, noise hallucination or recording."
+    ],
+    [
+     "meaning-extra",
+     "jaap",
+     "jaap033.line04",
+     "interpretiveCaution",
+     "ਅਜਾਦਿ is read through freedom or independence, following Neki and the Bhai Vir Singh-derived account. Sant Sewa Singh instead reads the One as the source even of Brahma, the traditional creator figure"
+    ],
+    [
+     "study",
+     "jaap",
+     "jaap001",
+     "study.words[3].workingGloss",
+     "Self-existent or beyond ordinary apprehension; verify grammar"
+    ],
+    [
+     "study",
+     "anand",
+     "anand25",
+     "study.interpretationCare",
+     "No physical gem, financial investment or magical gem power is being promised by this imagery. Exact morphology of the jeweled phrase needs review."
+    ],
+    [
+     "study",
+     "jaap",
+     "jaap074",
+     "study.closeReading",
+     "The heading names ਚਰਪਟ ਛੰਦ and invokes grace through ਤ੍ਵ ਪ੍ਰਸਾਦਿ. Four short descriptions follow, without a new ਨਮੋ before each one. Their sound pairs invite comparison: ਕਰਮੇ with ਧਰਮੇ, and ਜੋਗੇ with ਭੋਗੇ. Yet sound alon"
+    ],
+    [
+     "study",
+     "jaap",
+     "jaap189",
+     "study.closeReading",
+     "After the long paired salutations, the language contracts sharply. Each line is a brief Divine epithet, but the four are not interchangeable. ਅਜੈ concerns defeat, ਅਲੈ dissolution, ਅਭੈ fear, and ਅਬੈ death. Their shared ne"
+    ]
+   ]
+  },
+  "punjabi_spelling_pairs": {
+   "ਵਿਚ / ਵਿੱਚ": [
+    58,
+    2051
+   ],
+   "ਇਕ / ਇੱਕ": [
+    21,
+    519
+   ],
+   "ਉਤੇ / ਉੱਤੇ": [
+    0,
+    272
+   ],
+   "ਸਚ / ਸੱਚ": [
+    5,
+    65
+   ],
+   "ਇਥੇ / ਇੱਥੇ": [
+    55,
+    151
+   ],
+   "ਇਸੇ / ਇੱਸੇ": [
+    20,
+    0
+   ],
+   "ਵਿਚੋਂ / ਵਿੱਚੋਂ": [
+    1,
+    39
+   ],
+   "ਕੁਝ / ਕੁੱਝ": [
+    69,
+    0
+   ],
+   "ਰਬ / ਰੱਬ": [
+    0,
+    10
+   ],
+   "ਸਭ / ਸੱਭ": [
+    486,
+    0
+   ],
+   "ਹੁਕਮ / ਹੁਕਮੁ": [
+    95,
+    0
+   ]
+  }
+ },
+ "M-04": {
+  "distinct_english_meanings": 3503,
+  "entries_sharing_english_with_another_entry": 471,
+  "of_which_same_gurmukhi_repeated_line": 390,
+  "groups_where_identical_english_covers_different_gurmukhi": 35,
+  "entries_in_those_groups": 81,
+  "samples": [
+   {
+    "english": "such listening breaks the hold of suffering and wrongdoing.",
+    "n": 4,
+    "distinct_gurmukhi": 4,
+    "ids": [
+     "pauri08.line06",
+     "pauri09.line06",
+     "pauri10.line06",
+     "pauri11.line06"
+    ],
+    "gurmukhi": [
+     "ਸੁਣਿਐ ਦੂਖ ਪਾਪ ਕਾ ਨਾਸੁ ॥੮॥",
+     "ਸੁਣਿਐ ਦੂਖ ਪਾਪ ਕਾ ਨਾਸੁ ॥੯॥",
+     "ਸੁਣਿਐ ਦੂਖ ਪਾਪ ਕਾ ਨਾਸੁ ॥੧੦॥",
+     "ਸੁਣਿਐ ਦੂਖ ਪਾਪ ਕਾ ਨਾਸੁ ॥੧੧॥"
+    ]
+   },
+   {
+    "english": "one comes to know this by accepting it inwardly, in one's own mind.",
+    "n": 4,
+    "distinct_gurmukhi": 4,
+    "ids": [
+     "pauri12.line06",
+     "pauri13.line06",
+     "pauri14.line06",
+     "pauri15.line06"
+    ],
+    "gurmukhi": [
+     "ਜੇ ਕੋ ਮੰਨਿ ਜਾਣੈ ਮਨਿ ਕੋਇ ॥੧੨॥",
+     "ਜੇ ਕੋ ਮੰਨਿ ਜਾਣੈ ਮਨਿ ਕੋਇ ॥੧੩॥",
+     "ਜੇ ਕੋ ਮੰਨਿ ਜਾਣੈ ਮਨਿ ਕੋਇ ॥੧੪॥",
+     "ਜੇ ਕੋ ਮੰਨਿ ਜਾਣੈ ਮਨਿ ਕੋਇ ॥੧੫॥"
+    ]
+   },
+   {
+    "english": "o formless one, you remain ever unshaken.",
+    "n": 4,
+    "distinct_gurmukhi": 4,
+    "ids": [
+     "pauri16.line24",
+     "pauri17.line12",
+     "pauri18.line12",
+     "pauri19.line15"
+    ],
+    "gurmukhi": [
+     "ਤੂ ਸਦਾ ਸਲਾਮਤਿ ਨਿਰੰਕਾਰ ॥੧੬॥",
+     "ਤੂ ਸਦਾ ਸਲਾਮਤਿ ਨਿਰੰਕਾਰ ॥੧੭॥",
+     "ਤੂ ਸਦਾ ਸਲਾਮਤਿ ਨਿਰੰਕਾਰ ॥੧੮॥",
+     "ਤੂ ਸਦਾ ਸਲਾਮਤਿ ਨਿਰੰਕਾਰ ॥੧੯॥"
+    ]
+   },
+   {
+    "english": "the source of all is unstained, beginningless, undying and unchanged through ages.",
+    "n": 4,
+    "distinct_gurmukhi": 4,
+    "ids": [
+     "pauri28.line05",
+     "pauri29.line05",
+     "pauri30.line06",
+     "pauri31.line06"
+    ],
+    "gurmukhi": [
+     "ਆਦਿ ਅਨੀਲੁ ਅਨਾਦਿ ਅਨਾਹਤਿ ਜੁਗੁ ਜੁਗੁ ਏਕੋ ਵੇਸੁ ॥੨੮॥",
+     "ਆਦਿ ਅਨੀਲੁ ਅਨਾਦਿ ਅਨਾਹਤਿ ਜੁਗੁ ਜੁਗੁ ਏਕੋ ਵੇਸੁ ॥੨੯॥",
+     "ਆਦਿ ਅਨੀਲੁ ਅਨਾਦਿ ਅਨਾਹਤਿ ਜੁਗੁ ਜੁਗੁ ਏਕੋ ਵੇਸੁ ॥੩੦॥",
+     "ਆਦਿ ਅਨੀਲੁ ਅਨਾਦਿ ਅਨਾਹਤਿ ਜੁਗੁ ਜੁਗੁ ਏਕੋ ਵੇਸੁ ॥੩੧॥"
+    ]
+   },
+   {
+    "english": "you cannot be fully captured by an account, calculation or written description.",
+    "n": 3,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap030.line01",
+     "jaap133.line04",
+     "jaap139.line01"
+    ],
+    "gurmukhi": [
+     "ਅਲੇਖ ਹੈਂ ॥",
+     "ਅਲੇਖ ਹੈਂ ॥੧੩੩॥",
+     "ਅਲੇਖ ਹੈਂ ॥"
+    ]
+   },
+   {
+    "english": "your existence has no beginning.",
+    "n": 3,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap033.line02",
+     "jaap134.line03",
+     "jaap140.line04"
+    ],
+    "gurmukhi": [
+     "ਅਨਾਦਿ ਹੈਂ ॥",
+     "ਅਨਾਦਿ ਹੈਂ ॥",
+     "ਅਨਾਦਿ ਹੈਂ ॥੧੪੦॥"
+    ]
+   },
+   {
+    "english": "you are present through every outward form.",
+    "n": 3,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap112.line02",
+     "jaap114.line02",
+     "jaap117.line04"
+    ],
+    "gurmukhi": [
+     "ਕਿ ਸਰਬੱਤ੍ਰ ਭੇਸੈ ॥",
+     "ਕਿ ਸਰਬੱਤ੍ਰ ਭੇਸੈ ॥",
+     "ਕਿ ਸਰਬੱਤ੍ਰ ਭੇਸੈ ॥੧੧੭॥"
+    ]
+   },
+   {
+    "english": "there is one giver for every being; may i not forget that one.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "pauri05.line11",
+     "pauri06.line05"
+    ],
+    "gurmukhi": [
+     "ਸਭਨਾ ਜੀਆ ਕਾ ਇਕੁ ਦਾਤਾ ਸੋ ਮੈ ਵਿਸਰਿ ਨ ਜਾਈ ॥੫॥",
+     "ਸਭਨਾ ਜੀਆ ਕਾ ਇਕੁ ਦਾਤਾ ਸੋ ਮੈ ਵਿਸਰਿ ਨ ਜਾਈ ॥੬॥"
+    ]
+   },
+   {
+    "english": "the divine alone enacts this play.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "sukhmani.a13.p08.l07",
+     "sukhmani.a14.p06.l02"
+    ],
+    "gurmukhi": [
+     "ਅਪਨਾ ਖੇਲੁ ਆਪਿ ਕਰਨੈਹਾਰੁ ॥",
+     "ਆਪਨ ਚਲਿਤੁ ਆਪ ਹੀ ਕਰੈ ॥"
+    ]
+   },
+   {
+    "english": "i bow to you, who nourish and sustain all.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap020.line04",
+     "jaap027.line02"
+    ],
+    "gurmukhi": [
+     "ਨਮੋ ਸਰਬ ਪਾਲੇ ॥੨੦॥",
+     "ਨਮੋ ਸਰਬ ਪੋਖੰ ॥"
+    ]
+   },
+   {
+    "english": "your full mystery cannot be fathomed.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap031.line02",
+     "jaap062.line05"
+    ],
+    "gurmukhi": [
+     "ਅਭੇ ਹੈਂ ॥",
+     "ਅਭੇ ਹੈਂ ॥੬੨॥"
+    ]
+   },
+   {
+    "english": "you are free from fear of any other power.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap031.line04",
+     "jaap062.line04"
+    ],
+    "gurmukhi": [
+     "ਅਭੀਤ ਹੈਂ ॥੩੧॥",
+     "ਅਭੀਤ ਹੈਂ ॥"
+    ]
+   },
+   {
+    "english": "you are free in your being, subject to no other power.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap033.line04",
+     "jaap141.line04"
+    ],
+    "gurmukhi": [
+     "ਅਜਾਦਿ ਹੈਂ ॥੩੩॥",
+     "ਅਜਾਦਿ ਹੈਂ ॥੧੪੧॥"
+    ]
+   },
+   {
+    "english": "your depth is beyond measure.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap036.line01",
+     "jaap149.line02"
+    ],
+    "gurmukhi": [
+     "ਅਮੀਕ ਹੈਂ ॥",
+     "ਅਮਿਤੋ ਅਮੀਕ ਹੈਂ ॥"
+    ]
+   },
+   {
+    "english": "no bond can hold you captive.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap036.line04",
+     "jaap136.line04"
+    ],
+    "gurmukhi": [
+     "ਅਬੰਧ ਹੈਂ ॥੩੬॥",
+     "ਅਬੰਧ ਹੈਂ ॥੧੩੬॥"
+    ]
+   },
+   {
+    "english": "you are uncreated; no other being brings you into existence.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap039.line04",
+     "jaap140.line01"
+    ],
+    "gurmukhi": [
+     "ਅਸੰਭ ਹੈਂ ॥੩੯॥",
+     "ਅਸੰਭ ਹੈਂ ॥"
+    ]
+   },
+   {
+    "english": "you are free from delusion and the confusion it brings.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap041.line04",
+     "jaap134.line01"
+    ],
+    "gurmukhi": [
+     "ਅਭਰਮ ਹੈਂ ॥੪੧॥",
+     "ਅਭਰਮ ਹੈਂ ॥"
+    ]
+   },
+   {
+    "english": "your depth cannot be fully fathomed or measured.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap042.line04",
+     "jaap139.line04"
+    ],
+    "gurmukhi": [
+     "ਅਗਾਹ ਹੈਂ ॥੪੨॥",
+     "ਅਗਾਹ ਹੈਂ ॥੧੩੯॥"
+    ]
+   },
+   {
+    "english": "you are the source and treasury of all abundance.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap044.line02",
+     "jaap064.line04"
+    ],
+    "gurmukhi": [
+     "ਸਮਸਤੀ ਨਿਧਾਨੇ ॥",
+     "ਸਮਸਤੀ ਨਿਧਾਨੇ ॥੬੪॥"
+    ]
+   },
+   {
+    "english": "i bow to you, the honour of all who are honoured.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap046.line04",
+     "jaap056.line02"
+    ],
+    "gurmukhi": [
+     "ਨਮੋ ਮਾਨ ਮਾਨੇ ॥੪੬॥",
+     "ਨਮੋ ਮਾਨ ਮਾਨੇ ॥"
+    ]
+   },
+   {
+    "english": "you know all that exists.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap076.line02",
+     "jaap142.line04"
+    ],
+    "gurmukhi": [
+     "ਸਰਬੰ ਗਿਆਤਾ ॥",
+     "ਸਰਬੰ ਗਿਆਤਾ ॥੧੪੨॥"
+    ]
+   },
+   {
+    "english": "you are the refuge and protection of all.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap077.line02",
+     "jaap143.line04"
+    ],
+    "gurmukhi": [
+     "ਸਰਬੰ ਤ੍ਰਾਣੰ ॥",
+     "ਸਰਬੰ ਤ੍ਰਾਣੰ ॥੧੪੩॥"
+    ]
+   },
+   {
+    "english": "you are joined with all and present throughout everything.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap077.line04",
+     "jaap144.line03"
+    ],
+    "gurmukhi": [
+     "ਸਰਬੰ ਜੁਗਤਾ ॥੭੭॥",
+     "ਸਰਬੰ ਜੁਗਤਾ ॥"
+    ]
+   },
+   {
+    "english": "your abundant virtues are generous and uplifting.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap087.line01",
+     "jaap091.line04"
+    ],
+    "gurmukhi": [
+     "ਗੁਨ ਗਨ ਉਦਾਰ ॥",
+     "ਗੁਨ ਗਨ ਉਦਾਰ ॥੯੧॥"
+    ]
+   },
+   {
+    "english": "you sustain all with mercy.",
+    "n": 2,
+    "distinct_gurmukhi": 2,
+    "ids": [
+     "jaap110.line01",
+     "jaap151.line04"
+    ],
+    "gurmukhi": [
+     "ਕਿ ਰਾਜ਼ਕ ਰਹੀਮ ਹੈਂ ॥",
+     "ਕਿ ਰਾਜ਼ਕ ਰਹੀਮ ਹੈਂ ॥੧੫੧॥"
+    ]
+   }
+  ]
+ },
+ "length_profile": {
+  "japji": {
+   "n": 385,
+   "avg_gurmukhi_tokens": 6.6,
+   "avg_english_words": 9.9,
+   "avg_punjabi_words": 10.9
+  },
+  "sukhmani": {
+   "n": 2027,
+   "avg_gurmukhi_tokens": 6.1,
+   "avg_english_words": 8.7,
+   "avg_punjabi_words": 9.2
+  },
+  "jaap": {
+   "n": 782,
+   "avg_gurmukhi_tokens": 3.9,
+   "avg_english_words": 8.7,
+   "avg_punjabi_words": 10.4
+  },
+  "savaiye": {
+   "n": 40,
+   "avg_gurmukhi_tokens": 11.4,
+   "avg_english_words": 16.4,
+   "avg_punjabi_words": 15.9
+  },
+  "chaupai": {
+   "n": 116,
+   "avg_gurmukhi_tokens": 5.9,
+   "avg_english_words": 11.2,
+   "avg_punjabi_words": 10.9
+  },
+  "anand": {
+   "n": 208,
+   "avg_gurmukhi_tokens": 9.5,
+   "avg_english_words": 13.7,
+   "avg_punjabi_words": 13.6
+  },
+  "sohila": {
+   "n": 56,
+   "avg_gurmukhi_tokens": 8.6,
+   "avg_english_words": 15.1,
+   "avg_punjabi_words": 14.9
+  },
+  "rehras": {
+   "n": 159,
+   "avg_gurmukhi_tokens": 13.7,
+   "avg_english_words": 14.3,
+   "avg_punjabi_words": 13.9
+  }
+ },
+ "studies": {
+  "japji:unit": {
+   "n": 42,
+   "with_any_punjabi_prose": 42,
+   "avg_english_chars": 2703,
+   "avg_punjabi_chars": 582,
+   "fields": {
+    "passageIds[]": 385,
+    "sourceAnchors[].passageId": 385,
+    "sourceAnchors[].sha256": 385,
+    "vocabulary[].gurmukhi": 139,
+    "vocabulary[].note": 139,
+    "sources[].url": 98,
+    "sources[].label": 98,
+    "sources[].role": 85,
+    "reviewNeeds[]": 54,
+    "sources[].anchor": 43,
+    "id": 42,
+    "meaningEn": 42,
+    "meaningPa": 42,
+    "directSense": 42,
+    "directSensePa": 42,
+    "context": 42,
+    "pronunciation": 42,
+    "interpretations": 42,
+    "reflection": 42,
+    "reflectionPa": 42,
+    "teachBack": 42,
+    "teachBackPa": 42,
+    "status": 42,
+    "unitId": 42,
+    "researchStatus": 42,
+    "titleEn": 18,
+    "titlePa": 18,
+    "reviewStatus": 18,
+    "researchScope": 18,
+    "editorialCoverage": 18,
+    "commentaryNotes[].source": 12,
+    "commentaryNotes[].note": 12
+   }
+  },
+  "sukhmani:ashtpadi_overview": {
+   "n": 24,
+   "with_any_punjabi_prose": 24,
+   "avg_english_chars": 1998,
+   "avg_punjabi_chars": 1373,
+   "fields": {
+    "vocabulary[].gurmukhi": 219,
+    "vocabulary[].roman": 219,
+    "vocabulary[].en": 219,
+    "vocabulary[].pa": 219,
+    "sources[].label": 59,
+    "sources[].url": 59,
+    "sources[].use": 59,
+    "title.en": 24,
+    "title.pa": 24,
+    "overview.en": 24,
+    "overview.pa": 24,
+    "teachBack.en": 24,
+    "teachBack.pa": 24,
+    "caution.en": 24,
+    "caution.pa": 24,
+    "status": 24,
+    "interpretiveNote.en": 6,
+    "interpretiveNote.pa": 6
+   }
+  },
+  "sukhmani:salok": {
+   "n": 24,
+   "with_any_punjabi_prose": 24,
+   "avg_english_chars": 814,
+   "avg_punjabi_chars": 508,
+   "fields": {
+    "sourceIds[]": 80,
+    "sources[].label": 30,
+    "sources[].url": 30,
+    "sources[].use": 30,
+    "status": 24,
+    "title.en": 24,
+    "title.pa": 24,
+    "explanation.en": 24,
+    "explanation.pa": 24,
+    "reflection.en": 24,
+    "reflection.pa": 24,
+    "id": 12,
+    "commentaryNotes[].author": 1,
+    "commentaryNotes[].work": 1,
+    "commentaryNotes[].url": 1,
+    "commentaryNotes[].note.en": 1,
+    "commentaryNotes[].note.pa": 1
+   }
+  },
+  "sukhmani:rahau": {
+   "n": 1,
+   "with_any_punjabi_prose": 1,
+   "avg_english_chars": 775,
+   "avg_punjabi_chars": 510,
+   "fields": {
+    "sourceIds[]": 2,
+    "id": 1,
+    "status": 1,
+    "title.en": 1,
+    "title.pa": 1,
+    "explanation.en": 1,
+    "explanation.pa": 1,
+    "reflection.en": 1,
+    "reflection.pa": 1,
+    "sources[].label": 1,
+    "sources[].url": 1,
+    "sources[].use": 1
+   }
+  },
+  "sukhmani:pauri": {
+   "n": 192,
+   "with_any_punjabi_prose": 192,
+   "avg_english_chars": 1043,
+   "avg_punjabi_chars": 550,
+   "fields": {
+    "sourceIds[]": 1944,
+    "sources[].label": 296,
+    "sources[].url": 296,
+    "sources[].use": 296,
+    "status": 192,
+    "title.en": 192,
+    "title.pa": 192,
+    "explanation.en": 192,
+    "explanation.pa": 192,
+    "reflection.en": 192,
+    "reflection.pa": 192,
+    "id": 96,
+    "commentaryNotes[].author": 31,
+    "commentaryNotes[].work": 31,
+    "commentaryNotes[].url": 31,
+    "commentaryNotes[].note.en": 31,
+    "commentaryNotes[].note.pa": 31
+   }
+  },
+  "sohila:unit": {
+   "n": 5,
+   "with_any_punjabi_prose": 5,
+   "avg_english_chars": 816,
+   "avg_punjabi_chars": 115,
+   "fields": {
+    "study.words[].gurmukhi": 15,
+    "study.words[].workingGloss": 15,
+    "study.words[].status": 15,
+    "unitId": 5,
+    "sourceAnchor.id": 5,
+    "sourceAnchor.sha256": 5,
+    "status": 5,
+    "type": 5,
+    "simple.en": 5,
+    "simple.pa": 5,
+    "study.focus": 5,
+    "study.closeReading": 5,
+    "study.interpretationCare": 5,
+    "study.reflection": 5,
+    "study.teachBack": 5
+   }
+  },
+  "savaiye:unit": {
+   "n": 10,
+   "with_any_punjabi_prose": 10,
+   "avg_english_chars": 608,
+   "avg_punjabi_chars": 89,
+   "fields": {
+    "study.words[].gurmukhi": 26,
+    "study.words[].workingGloss": 26,
+    "study.words[].status": 26,
+    "unitId": 10,
+    "sourceAnchor.id": 10,
+    "sourceAnchor.sha256": 10,
+    "status": 10,
+    "type": 10,
+    "simple.en": 10,
+    "simple.pa": 10,
+    "study.focus": 10,
+    "study.closeReading": 10,
+    "study.interpretationCare": 10,
+    "study.reflection": 10,
+    "study.teachBack": 10
+   }
+  },
+  "jaap:unit": {
+   "n": 199,
+   "with_any_punjabi_prose": 199,
+   "avg_english_chars": 1373,
+   "avg_punjabi_chars": 452,
+   "fields": {
+    "study.words[].gurmukhi": 790,
+    "study.words[].workingGloss": 790,
+    "study.words[].status": 790,
+    "study.words[].workingGlossPa": 281,
+    "sourceKeys[]": 208,
+    "unitId": 199,
+    "sourceAnchor.id": 199,
+    "sourceAnchor.sha256": 199,
+    "status": 199,
+    "type": 199,
+    "simple.en": 199,
+    "simple.pa": 199,
+    "study.focus": 199,
+    "study.closeReading": 199,
+    "study.interpretationCare": 199,
+    "study.reflection": 199,
+    "study.teachBack": 199,
+    "sourceAnchors[].id": 156,
+    "sourceAnchors[].sha256": 156,
+    "referenceKeys[]": 117,
+    "study.focusPa": 79,
+    "study.closeReadingPa": 79,
+    "study.interpretationCarePa": 79,
+    "study.reflectionPa": 79,
+    "study.teachBackPa": 79
+   }
+  },
+  "chaupai:unit": {
+   "n": 29,
+   "with_any_punjabi_prose": 29,
+   "avg_english_chars": 721,
+   "avg_punjabi_chars": 83,
+   "fields": {
+    "study.words[].gurmukhi": 63,
+    "study.words[].workingGloss": 63,
+    "study.words[].status": 63,
+    "unitId": 29,
+    "sourceAnchor.id": 29,
+    "sourceAnchor.sha256": 29,
+    "status": 29,
+    "type": 29,
+    "simple.en": 29,
+    "simple.pa": 29,
+    "study.focus": 29,
+    "study.closeReading": 29,
+    "study.interpretationCare": 29,
+    "study.reflection": 29,
+    "study.teachBack": 29
+   }
+  },
+  "anand:unit": {
+   "n": 40,
+   "with_any_punjabi_prose": 40,
+   "avg_english_chars": 873,
+   "avg_punjabi_chars": 132,
+   "fields": {
+    "study.words[].gurmukhi": 92,
+    "study.words[].workingGloss": 92,
+    "study.words[].status": 92,
+    "unitId": 40,
+    "sourceAnchor.id": 40,
+    "sourceAnchor.sha256": 40,
+    "status": 40,
+    "type": 40,
+    "simple.en": 40,
+    "simple.pa": 40,
+    "study.focus": 40,
+    "study.closeReading": 40,
+    "study.interpretationCare": 40,
+    "study.reflection": 40,
+    "study.teachBack": 40,
+    "study.words[].workingGlossPa": 6,
+    "sourceKeys[]": 2,
+    "study.focusPa": 1,
+    "study.closeReadingPa": 1,
+    "study.interpretationCarePa": 1,
+    "study.reflectionPa": 1,
+    "study.teachBackPa": 1
+   }
+  },
+  "rehras:unit": {
+   "n": 44,
+   "with_any_punjabi_prose": 44,
+   "avg_english_chars": 895,
+   "avg_punjabi_chars": 85,
+   "fields": {
+    "study.words[].gurmukhi": 105,
+    "study.words[].workingGloss": 105,
+    "study.words[].status": 105,
+    "unitId": 44,
+    "sourceAnchor.id": 44,
+    "sourceAnchor.sha256": 44,
+    "status": 44,
+    "type": 44,
+    "simple.en": 44,
+    "simple.pa": 44,
+    "study.focus": 44,
+    "study.closeReading": 44,
+    "study.interpretationCare": 44,
+    "study.reflection": 44,
+    "study.teachBack": 44,
+    "sourceContext": 28,
+    "provenance.method": 28,
+    "provenance.bani": 28,
+    "provenance.id": 28,
+    "provenance.sourceSha256": 28,
+    "provenance.teachingCourse": 28
+   }
+  }
+ }
+}

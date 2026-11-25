@@ -1,0 +1,77 @@
+{
+ "sukhmani_ang_label_320": {
+  "text": "Ang 262",
+  "left": -16.5,
+  "right": 27.5,
+  "fontPx": "10px",
+  "clippedPx": 16.5
+ },
+ "U09_visible_save_controls_while_reading": {
+  "nitnem-jaap": {
+   "visibleControls": 10,
+   "mentionSaveOrBookmark": [
+    "Expand reading controls and saved learning"
+   ]
+  },
+  "japji": {
+   "visibleControls": 7,
+   "mentionSaveOrBookmark": []
+  },
+  "sukhmani": {
+   "visibleControls": 14,
+   "mentionSaveOrBookmark": [
+    "ਅਸਟਪਦੀ ॥ Ashtpadi 1 · Pauri 1 · Ang 262. Open line details and saved l",
+    "Reading settings and saved learning"
+   ]
+  }
+ },
+ "U09_nitnem_tools_dialog": {
+  "bookmarkLabel": "☆ Save current line",
+  "currentLabel": "Jaap Sahib · Jaap Sahib · Chhand 1"
+ },
+ "U09_sukhmani_tap_line": {
+  "dialogOpen": true,
+  "dialogButtons": [
+   "Close and return to reading",
+   "Start here",
+   "Bookmark this line",
+   "Save reflection"
+  ]
+ },
+ "U09_japji_tap_line": {
+  "dialogOpen": false,
+  "dialogButtons": []
+ },
+ "U15_provenance": {
+  "nitnem-jaap": {
+   "element": {
+    "top": 392,
+    "height": 19,
+    "open": null,
+    "tag": "DIV"
+   },
+   "chars": 57,
+   "mentionsSourceName": [],
+   "explainsDraft": false,
+   "first300": "199 passage studies · 782 English / Punjabi meaning pairs"
+  },
+  "japji": {
+   "tapsFromReaderTop": 1,
+   "chars": 1535,
+   "mentionsSourceName": [],
+   "explainsDraft": true,
+   "first300": "SOURCE TEXT · DRAFT TEACHING  Sources & actual coverage ×  Read: all 385 frozen Gurmukhi occurrences, 38 Pauris, opening and closing passages, Angs 1–8, in one persistent reading document.  Understand: concise original English/Punjabi meaning drafts under every occurrence, including the composition "
+  },
+  "sukhmani": {
+   "tapsFromReaderTop": 1,
+   "chars": 1633,
+   "mentionsSourceName": [
+    "Open Granth",
+    "Shabad OS",
+    "SriGranth"
+   ],
+   "explainsDraft": true,
+   "first300": "ASHTPADIS 1–24 OF 24  Sources & review status ×  This pack contains 24 introductory Saloks and 192 pauris in their original order. All 24 Ashtpadis are included in this reading pack.  Original Gurmukhi  Source: Open Granth / Shabad OS.  2027 preserved source occurrences, including headings and Rahau"
+  }
+ }
+}
