@@ -1,0 +1,255 @@
+{
+  "schema": "glp.hukamnama.fixture.v1",
+  "status": "DEVELOPMENT_FIXTURE_NOT_RELEASE_APPROVED",
+  "canonical": {
+    "id": "sggs.gujri.m1.ang504.shabad04",
+    "edition": "opengranth-34d2a7c",
+    "identityStatus": "PROVISIONAL_LOCAL_ID",
+    "author": "Guru Nanak Dev Ji",
+    "raag": "Gujri",
+    "angStart": 504,
+    "angEnd": 505,
+    "sourceCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "sourceRepository": "opengranth/open-granth",
+    "sourceBlobs": [
+      {
+        "ang": 504,
+        "sha": "2475a1a3831a744ff5320d75f706d50664615fa4",
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0504.md"
+      },
+      {
+        "ang": 505,
+        "sha": "c13b5344b1580f806324fd185d2875781ecae3d0",
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0505.md"
+      }
+    ],
+    "comparison": {
+      "method": "Exact comparison of pinned digital corpus original Unicode to independently read indexed SGPC 2026 and 2025 Gurmukhi; SriGranth Ang 504–505 visually compared; no direct raw dated SGPC capture or qualified print collation",
+      "matches": 19,
+      "total": 19,
+      "qualifiedHumanApproved": false
+    },
+    "occurrences": [
+      {
+        "ang": 504,
+        "ordinal": 30,
+        "printedLine": 18,
+        "text": "ਗੂਜਰੀ ਮਹਲਾ ੧ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l00",
+        "kind": "heading",
+        "stanza": null
+      },
+      {
+        "ang": 504,
+        "ordinal": 31,
+        "printedLine": 18,
+        "text": "ਐ ਜੀ ਨਾ ਹਮ ਉਤਮ ਨੀਚ ਨ ਮਧਿਮ ਹਰਿ ਸਰਣਾਗਤਿ ਹਰਿ ਕੇ ਲੋਗ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l01",
+        "kind": "verse",
+        "stanza": 1
+      },
+      {
+        "ang": 504,
+        "ordinal": 32,
+        "printedLine": 19,
+        "text": "ਨਾਮ ਰਤੇ ਕੇਵਲ ਬੈਰਾਗੀ ਸੋਗ ਬਿਜੋਗ ਬਿਸਰਜਿਤ ਰੋਗ ॥੧॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l02",
+        "kind": "verse",
+        "stanza": 1
+      },
+      {
+        "ang": 504,
+        "ordinal": 33,
+        "printedLine": 19,
+        "text": "ਭਾਈ ਰੇ ਗੁਰ ਕਿਰਪਾ ਤੇ ਭਗਤਿ ਠਾਕੁਰ ਕੀ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l03",
+        "kind": "rahao",
+        "stanza": "rahao"
+      },
+      {
+        "ang": 505,
+        "ordinal": 1,
+        "printedLine": 1,
+        "text": "ਸਤਿਗੁਰ ਵਾਕਿ ਹਿਰਦੈ ਹਰਿ ਨਿਰਮਲੁ ਨਾ ਜਮ ਕਾਣਿ ਨ ਜਮ ਕੀ ਬਾਕੀ ॥੧॥ ਰਹਾਉ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l04",
+        "kind": "rahao",
+        "stanza": "rahao"
+      },
+      {
+        "ang": 505,
+        "ordinal": 2,
+        "printedLine": 2,
+        "text": "ਹਰਿ ਗੁਣ ਰਸਨ ਰਵਹਿ ਪ੍ਰਭ ਸੰਗੇ ਜੋ ਤਿਸੁ ਭਾਵੈ ਸਹਜਿ ਹਰੀ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l05",
+        "kind": "verse",
+        "stanza": 2
+      },
+      {
+        "ang": 505,
+        "ordinal": 3,
+        "printedLine": 2,
+        "text": "ਬਿਨੁ ਹਰਿ ਨਾਮ ਬ੍ਰਿਥਾ ਜਗਿ ਜੀਵਨੁ ਹਰਿ ਬਿਨੁ ਨਿਹਫਲ ਮੇਕ ਘਰੀ ॥੨॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l06",
+        "kind": "verse",
+        "stanza": 2
+      },
+      {
+        "ang": 505,
+        "ordinal": 4,
+        "printedLine": 3,
+        "text": "ਐ ਜੀ ਖੋਟੇ ਠਉਰ ਨਾਹੀ ਘਰਿ ਬਾਹਰਿ ਨਿੰਦਕ ਗਤਿ ਨਹੀ ਕਾਈ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l07",
+        "kind": "verse",
+        "stanza": 3
+      },
+      {
+        "ang": 505,
+        "ordinal": 5,
+        "printedLine": 4,
+        "text": "ਰੋਸੁ ਕਰੈ ਪ੍ਰਭੁ ਬਖਸ ਨ ਮੇਟੈ ਨਿਤ ਨਿਤ ਚੜੈ ਸਵਾਈ ॥੩॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l08",
+        "kind": "verse",
+        "stanza": 3
+      },
+      {
+        "ang": 505,
+        "ordinal": 6,
+        "printedLine": 4,
+        "text": "ਐ ਜੀ ਗੁਰ ਕੀ ਦਾਤਿ ਨ ਮੇਟੈ ਕੋਈ ਮੇਰੈ ਠਾਕੁਰਿ ਆਪਿ ਦਿਵਾਈ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l09",
+        "kind": "verse",
+        "stanza": 4
+      },
+      {
+        "ang": 505,
+        "ordinal": 7,
+        "printedLine": 5,
+        "text": "ਨਿੰਦਕ ਨਰ ਕਾਲੇ ਮੁਖ ਨਿੰਦਾ ਜਿਨੑ ਗੁਰ ਕੀ ਦਾਤਿ ਨ ਭਾਈ ॥੪॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l10",
+        "kind": "verse",
+        "stanza": 4
+      },
+      {
+        "ang": 505,
+        "ordinal": 8,
+        "printedLine": 5,
+        "text": "ਐ ਜੀ ਸਰਣਿ ਪਰੇ ਪ੍ਰਭੁ ਬਖਸਿ ਮਿਲਾਵੈ ਬਿਲਮ ਨ ਅਧੂਆ ਰਾਈ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l11",
+        "kind": "verse",
+        "stanza": 5
+      },
+      {
+        "ang": 505,
+        "ordinal": 9,
+        "printedLine": 6,
+        "text": "ਆਨਦ ਮੂਲੁ ਨਾਥੁ ਸਿਰਿ ਨਾਥਾ ਸਤਿਗੁਰੁ ਮੇਲਿ ਮਿਲਾਈ ॥੫॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l12",
+        "kind": "verse",
+        "stanza": 5
+      },
+      {
+        "ang": 505,
+        "ordinal": 10,
+        "printedLine": 7,
+        "text": "ਐ ਜੀ ਸਦਾ ਦਇਆਲੁ ਦਇਆ ਕਰਿ ਰਵਿਆ ਗੁਰਮਤਿ ਭ੍ਰਮਨਿ ਚੁਕਾਈ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l13",
+        "kind": "verse",
+        "stanza": 6
+      },
+      {
+        "ang": 505,
+        "ordinal": 11,
+        "printedLine": 7,
+        "text": "ਪਾਰਸੁ ਭੇਟਿ ਕੰਚਨੁ ਧਾਤੁ ਹੋਈ ਸਤਸੰਗਤਿ ਕੀ ਵਡਿਆਈ ॥੬॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l14",
+        "kind": "verse",
+        "stanza": 6
+      },
+      {
+        "ang": 505,
+        "ordinal": 12,
+        "printedLine": 8,
+        "text": "ਹਰਿ ਜਲੁ ਨਿਰਮਲੁ ਮਨੁ ਇਸਨਾਨੀ ਮਜਨੁ ਸਤਿਗੁਰੁ ਭਾਈ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l15",
+        "kind": "verse",
+        "stanza": 7
+      },
+      {
+        "ang": 505,
+        "ordinal": 13,
+        "printedLine": 8,
+        "text": "ਪੁਨਰਪਿ ਜਨਮੁ ਨਾਹੀ ਜਨ ਸੰਗਤਿ ਜੋਤੀ ਜੋਤਿ ਮਿਲਾਈ ॥੭॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l16",
+        "kind": "verse",
+        "stanza": 7
+      },
+      {
+        "ang": 505,
+        "ordinal": 14,
+        "printedLine": 9,
+        "text": "ਤੂੰ ਵਡ ਪੁਰਖੁ ਅਗੰਮ ਤਰੋਵਰੁ ਹਮ ਪੰਖੀ ਤੁਝ ਮਾਹੀ ॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l17",
+        "kind": "verse",
+        "stanza": 8
+      },
+      {
+        "ang": 505,
+        "ordinal": 15,
+        "printedLine": 10,
+        "text": "ਨਾਨਕ ਨਾਮੁ ਨਿਰੰਜਨ ਦੀਜੈ ਜੁਗਿ ਜੁਗਿ ਸਬਦਿ ਸਲਾਹੀ ॥੮॥੪॥",
+        "id": "sggs.gujri.m1.ang504.shabad04.l18",
+        "kind": "verse",
+        "stanza": 8
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "harmandir-morning.2025-10-14",
+      "date": "2025-10-14",
+      "calendar": "29 Assu · Samvat 557 Nanakshahi",
+      "shabadId": "sggs.gujri.m1.ang504.shabad04",
+      "edition": "opengranth-34d2a7c",
+      "status": "DIGITAL_MATCH_DRAFT",
+      "sourceUrl": "https://sgpc.net/14-oct-2025/",
+      "sourceEvidence": "Indexed dated SGPC article full selected text; 19/19 exact match; direct capture pending",
+      "rights": "original_only_no_modern_translation_or_audio"
+    },
+    {
+      "id": "harmandir-morning.2026-11-25",
+      "date": "2026-11-25",
+      "calendar": "10 Maghar · Samvat 558 Nanakshahi",
+      "shabadId": "sggs.gujri.m1.ang504.shabad04",
+      "edition": "opengranth-34d2a7c",
+      "status": "DIGITAL_MATCH_DRAFT",
+      "sourceUrl": "https://sgpc.net/25-nov-2026/",
+      "officialWitness": "https://hs.sgpc.net/index.php",
+      "secondary": "https://sikhnet.com/hukam/archive/2026-11-25",
+      "sourceEvidence": "Indexed dated SGPC entry and hs.sgpc.net full selection; SikhNet date/Ang/author/raag metadata; direct capture blocked/timed out",
+      "rights": "original_only_no_modern_translation_or_audio"
+    },
+    {
+      "id": "harmandir-morning.2017-11-25",
+      "date": "2017-11-25",
+      "calendar": "10 Maghar · Samvat 549 Nanakshahi",
+      "shabadId": "sggs.gujri.m1.ang504.shabad04",
+      "edition": "opengranth-34d2a7c",
+      "status": "HOLD_ENCODING_VARIANT",
+      "sourceUrl": "https://sgpc.net/mukhwak-25-11-2017/",
+      "sourceEvidence": "Archive body contains ਜਿਨ@ instead of ਜਿਨੑ; hold rather than silently normalize",
+      "conflict": {
+        "expected": "ਜਿਨੑ",
+        "observed": "ਜਿਨ@"
+      }
+    }
+  ],
+  "policy": {
+    "venue": "Sachkhand Sri Harmandir Sahib, Sri Amritsar",
+    "timezone": "Asia/Kolkata",
+    "ritual": "morning-mukhwak",
+    "dailyAdapterActive": false,
+    "lessonApproved": false,
+    "recordingPermission": false,
+    "publicationApproved": false
+  }
+}
