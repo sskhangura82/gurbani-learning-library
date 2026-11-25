@@ -1,0 +1,588 @@
+{
+  "schema": "glp.source-linked-lesson.v1",
+  "status": "AI_ASSISTED_DRAFT_NOT_QUALIFIED_HUMAN_REVIEWED",
+  "scope": "Single full-depth example. Source text remains in the existing Sukhmani reader; this file is editorial teaching, not another scripture transcription.",
+  "composition": {
+    "id": "sukhmani",
+    "title": "Sukhmani Sahib",
+    "gurmukhi": "ਸੁਖਮਨੀ ਸਾਹਿਬ",
+    "author": "Guru Arjan Dev Ji",
+    "raag": "Gauri",
+    "ashtpadi": 17,
+    "angs": [
+      285,
+      286
+    ],
+    "originalReader": "../sukhmani.html#ashtpadi-17"
+  },
+  "introduction": {
+    "title": "Truth, attention and the life of a devotee",
+    "short": "Begin with the eternal Sat of the Salok, then study what this means for discernment, service, trust, everyday remembrance and learning from spiritually mature people.",
+    "en": "Ashtpadi 17 begins with a Salok closely echoing the opening words of Japji Sahib. Eight pauris then move from the reality of the Divine to what it means to live in that reality. For a newcomer, the key is to follow the argument in its own Sikh vocabulary before comparing it with anything else. This lesson is an original study guide, not a substitute for the complete Gurbani or a qualified translation.",
+    "pa": "ਸਤਾਰ੍ਹਵੀਂ ਅਸਟਪਦੀ ਸਤਿ, ਸੇਵਾ, ਨਾਮ, ਹੁਕਮ ਅਤੇ ਸੱਚੇ ਜੀਵਨ ਬਾਰੇ ਚਿੰਤਨ ਕਰਾਉਂਦੀ ਹੈ। ਪਹਿਲਾਂ ਪੂਰੀ ਬਾਣੀ ਪੜ੍ਹੋ; ਫਿਰ ਹਰ ਪਉੜੀ ਦਾ ਸੰਦਰਭ, ਸ਼ਬਦ ਅਤੇ ਅਰਥ ਸਮਝੋ। ਹੋਰ ਧਰਮਾਂ ਜਾਂ ਮਨੋਵਿਗਿਆਨ ਨਾਲ ਤੁਲਨਾ ਬਾਅਦ ਵਿੱਚ ਅਤੇ ਸਪਸ਼ਟ ਹੱਦਾਂ ਨਾਲ ਕਰੋ।"
+  },
+  "terms": [
+    {
+      "word": "ਅੰਗ",
+      "roman": "Ang",
+      "en": "A numbered page in Sri Guru Granth Sahib Ji.",
+      "pa": "ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੇ ਪੰਨੇ ਦੀ ਗਿਣਤੀ।"
+    },
+    {
+      "word": "ਅਸਟਪਦੀ",
+      "roman": "Ashtpadi",
+      "en": "A section containing eight pauris; Sukhmani Sahib has twenty-four.",
+      "pa": "ਅੱਠ ਪਉੜੀਆਂ ਵਾਲਾ ਭਾਗ; ਸੁਖਮਨੀ ਸਾਹਿਬ ਵਿੱਚ ਚੌਵੀ ਅਸਟਪਦੀਆਂ ਹਨ।"
+    },
+    {
+      "word": "ਪਉੜੀ",
+      "roman": "Pauri",
+      "en": "A stanza or poetic section. Read all ten lines together in this Ashtpadi.",
+      "pa": "ਬਾਣੀ ਦਾ ਇੱਕ ਬੰਦ। ਇਸ ਅਸਟਪਦੀ ਵਿੱਚ ਹਰ ਪਉੜੀ ਦੀਆਂ ਦਸ ਲਾਈਨਾਂ ਨੂੰ ਇਕੱਠਿਆਂ ਪੜ੍ਹੋ।"
+    },
+    {
+      "word": "ਸਲੋਕ",
+      "roman": "Salok",
+      "en": "An introductory verse preceding each Ashtpadi of Sukhmani Sahib.",
+      "pa": "ਅਸਟਪਦੀ ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਆਉਣ ਵਾਲਾ ਸਲੋਕ।"
+    }
+  ],
+  "units": [
+    {
+      "id": "salok",
+      "label": "Opening Salok",
+      "pauri": null,
+      "ang": "285",
+      "title": "The Eternal Real",
+      "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+      "roman": "ād sach jugād sach",
+      "newcomer": "The opening announces that the Divine is not merely true at one moment: the Divine is true before time, through the ages, now and ahead. In Gurbani, Sat is more than a statement that something is factually correct; it points toward enduring reality and truthful living.",
+      "punjabi": "ਸਲੋਕ ਵਿੱਚ ਅਕਾਲ ਪੁਰਖ ਦੀ ਸਦੀਵੀ ਸਚਾਈ ਦਾ ਉਚਾਰਨ ਹੈ। ‘ਸਤਿ’ ਨੂੰ ਕੇਵਲ ਠੀਕ ਤੱਥ ਕਹਿਣ ਦੀ ਥਾਂ ਸਦੀਵੀ ਸੱਚ ਅਤੇ ਸੱਚੇ ਜੀਵਨ ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਸਮਝਣਾ ਜ਼ਰੂਰੀ ਹੈ।",
+      "deep": "Read the two lines together and notice the time sequence: beginning, ages, present and future. This is devotional theology, not a claim from experimental physics about the age of the universe. The very similar Japji opening uses ਭੀ where this Salok uses ਭਿ; a serious teaching resource shows the actual wording rather than silently making them identical. The Salok prepares the repeated ਸਤਿ of Pauri 1.",
+      "vocabulary": [
+        {
+          "g": "ਆਦਿ",
+          "roman": "ād",
+          "en": "beginning or origin",
+          "pa": "ਆਰੰਭ"
+        },
+        {
+          "g": "ਜੁਗਾਦਿ",
+          "roman": "jugād",
+          "en": "through the ages, from the beginning of epochs",
+          "pa": "ਜੁਗਾਂ ਦੇ ਆਰੰਭ ਤੋਂ"
+        },
+        {
+          "g": "ਸਤਿ",
+          "roman": "sat",
+          "en": "real, true, enduring; context matters",
+          "pa": "ਸੱਚ, ਅਟੱਲ ਹਕੀਕਤ"
+        }
+      ],
+      "caution": "Similarity of the word Sat across Indian traditions is not proof of identical metaphysical teaching. The Sri Chand authorship/encounter story is a later, contested tradition, not a statement in this Salok.",
+      "prompt": "What changes when 'truth' means a way of living as well as a proposition?",
+      "compare": [
+        "gita-sat"
+      ],
+      "tags": [
+        "truth",
+        "sat",
+        "eternal",
+        "reality",
+        "time",
+        "japji",
+        "ਆਦਿ",
+        "ਸਚੁ"
+      ]
+    },
+    {
+      "id": "pauri-1",
+      "label": "Pauri 1",
+      "pauri": 1,
+      "ang": "285",
+      "title": "Truth lived in devotion",
+      "cue": "ਚਰਨ ਸਤਿ ਸਤਿ ਪਰਸਨਹਾਰ ॥",
+      "roman": "charan sat sat parsanhār",
+      "newcomer": "The pauri repeats Sat alongside feet, worship, service, darshan, Naam, Shabad and awareness. The picture is relational: truth is not only described; it shapes the life of the person who serves, remembers and listens.",
+      "punjabi": "ਇਸ ਪਉੜੀ ਵਿੱਚ ‘ਸਤਿ’ ਸ਼ਬਦ ਵਾਰ-ਵਾਰ ਆਉਂਦਾ ਹੈ। ਚਰਨ, ਸੇਵਾ, ਦਰਸਨ, ਨਾਮ, ਸ਼ਬਦ ਅਤੇ ਸੁਰਤਿ ਰਾਹੀਂ ਸੱਚ ਨਾਲ ਜੁੜੇ ਜੀਵਨ ਦੀ ਗੱਲ ਹੁੰਦੀ ਹੈ।",
+      "deep": "Notice the poetic parallelism: a Divine term is followed by an attentive human response. 'Feet' is reverential devotional language, not a claim that the formless Divine has biological feet. 'Surat' connects with hearing and understanding, not merely passively receiving words. A study must distinguish a literal gloss from a contextual theological reading, particularly because respected commentators interpret the repeated Sat in nuanced ways. The pauri's final understanding lines help interpret its repeated opening pattern.",
+      "vocabulary": [
+        {
+          "g": "ਚਰਨ",
+          "roman": "charan",
+          "en": "feet; in this context a devotional image of humility or refuge",
+          "pa": "ਚਰਨ; ਭਗਤੀ ਅਤੇ ਨਿਮਰਤਾ ਦਾ ਚਿੱਤਰ"
+        },
+        {
+          "g": "ਦਰਸਨੁ",
+          "roman": "darsan",
+          "en": "sight, encounter or apprehension of the Divine",
+          "pa": "ਦਰਸ਼ਨ, ਮਿਲਾਪ ਜਾਂ ਪਛਾਣ"
+        },
+        {
+          "g": "ਸੁਰਤਿ",
+          "roman": "surat",
+          "en": "attentive awareness",
+          "pa": "ਧਿਆਨ-ਭਰੀ ਚੇਤਨਾ"
+        }
+      ],
+      "caution": "The language must not be used to demand unquestioning submission to a living person.",
+      "prompt": "What would it mean to listen to a teaching so carefully that your conduct changes?",
+      "compare": [
+        "buddhist-ethics"
+      ],
+      "tags": [
+        "sat",
+        "seva",
+        "devotion",
+        "attention",
+        "surat",
+        "darshan",
+        "service"
+      ]
+    },
+    {
+      "id": "pauri-2",
+      "label": "Pauri 2",
+      "pauri": 2,
+      "ang": "285",
+      "title": "Discernment, trust and union",
+      "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+      "roman": "sat sarūp ridai jin māniā",
+      "newcomer": "The pauri turns toward a person who recognizes the Divine as the reality at the root of action. Faith and understanding are not presented as mere slogans; they reshape fear, discernment and the sense of separation.",
+      "punjabi": "ਇੱਥੇ ਹਿਰਦੇ ਵਿੱਚ ਸਤਿ ਦੀ ਪਛਾਣ, ਭਰੋਸੇ ਅਤੇ ਬਿਬੇਕ ਦੀ ਗੱਲ ਹੈ। ਭਾਵ ਸਿਰਫ਼ ਸ਼ਬਦ ਮੰਨਣਾ ਨਹੀਂ, ਸਗੋਂ ਜੀਵਨ ਦੀ ਸੋਚ ਤੇ ਚਾਲ-ਚਲਣ ਵਿੱਚ ਪਰਿਵਰਤਨ ਲਿਆਉਣਾ ਹੈ।",
+      "deep": "The image of one substance merging into another is not a laboratory description. Within this pauri it expresses spiritual union and the limits of ordinary separation-language. The term Bibek calls for careful discrimination, not blind credulity. Some traditions also use the cognate Sanskrit viveka for discernment, but its philosophical setting and account of self need to be taught independently. Read Pauri 2 beside Pauri 3: recognition of reality leads directly into the conduct of the sevak.",
+      "vocabulary": [
+        {
+          "g": "ਰਿਦੈ",
+          "roman": "ridai",
+          "en": "in the heart, inwardly",
+          "pa": "ਹਿਰਦੇ ਵਿੱਚ"
+        },
+        {
+          "g": "ਬਿਬੇਕ",
+          "roman": "bibek",
+          "en": "discernment, discriminating insight",
+          "pa": "ਸਹੀ-ਗਲਤ ਦੀ ਸੂਝ, ਵਿਚਾਰਸ਼ੀਲ ਪਛਾਣ"
+        },
+        {
+          "g": "ਨਿਰਭਉ",
+          "roman": "nirbhau",
+          "en": "without fear",
+          "pa": "ਡਰ ਤੋਂ ਰਹਿਤ"
+        }
+      ],
+      "caution": "Do not equate spiritual union with a specific Hindu school’s account of Atman and Brahman without a separate source-based argument.",
+      "prompt": "How can discernment and faith be mutually responsible instead of opposing each other?",
+      "compare": [
+        "gita-sat"
+      ],
+      "tags": [
+        "bibek",
+        "discernment",
+        "fear",
+        "nirbhau",
+        "faith",
+        "union",
+        "trust"
+      ]
+    },
+    {
+      "id": "pauri-3",
+      "label": "Pauri 3",
+      "pauri": 3,
+      "ang": "285",
+      "title": "A devotee's way of living",
+      "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+      "roman": "thākur kā sevak āgiākārī",
+      "newcomer": "The servant of the Divine is recognized by a way of life: trust, integrity, a clear manner of living, remembrance and an awareness of Divine presence. Devotion is practical, not merely verbal.",
+      "punjabi": "ਸੇਵਕ ਦੀ ਪਛਾਣ ਉਸ ਦੇ ਕਰਮ, ਭਰੋਸੇ ਅਤੇ ਨਿਰਮਲ ਰਹਿਣੀ ਵਿੱਚ ਦਿਖਦੀ ਹੈ। ਸੇਵਾ ਕੇਵਲ ਮੂੰਹ ਨਾਲ ਉਚਾਰੇ ਸ਼ਬਦਾਂ ਤੱਕ ਸੀਮਿਤ ਨਹੀਂ।",
+      "deep": "The phrase 'nirmal reet' provides a bridge between devotion and ethics. The closing couplet connects service with grace and remembrance in every breath, so the learner should not invert it into a self-improvement formula that guarantees enlightenment through enough repetition. Ask how a person behaves toward others when nobody is watching. Compare ethical cultivation in early Buddhist texts without claiming that the Sikh theological relation to the Divine is the same as Buddhist liberation.",
+      "vocabulary": [
+        {
+          "g": "ਸੇਵਕੁ",
+          "roman": "sevak",
+          "en": "one who serves, a devotee",
+          "pa": "ਸੇਵਾ ਕਰਨ ਵਾਲਾ"
+        },
+        {
+          "g": "ਨਿਰਮਲ ਰੀਤਿ",
+          "roman": "nirmal rīt",
+          "en": "an unpolluted or upright way of conduct",
+          "pa": "ਸੁੱਚੀ ਰਹਿਣੀ"
+        },
+        {
+          "g": "ਸਾਸਿ ਸਾਸਿ",
+          "roman": "sās sās",
+          "en": "with every breath, continually",
+          "pa": "ਹਰ ਸਾਹ ਨਾਲ"
+        }
+      ],
+      "caution": "Grace, effort and moral integrity are related in the poetry; they must not be reduced to a reward algorithm.",
+      "prompt": "Name one act of honest service that would make this teaching visible today.",
+      "compare": [
+        "buddhist-ethics"
+      ],
+      "tags": [
+        "seva",
+        "ethics",
+        "virtue",
+        "service",
+        "grace",
+        "conduct",
+        "buddhism"
+      ]
+    },
+    {
+      "id": "pauri-4",
+      "label": "Pauri 4",
+      "pauri": 4,
+      "ang": "285",
+      "title": "Grace, dignity and protection",
+      "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+      "roman": "apune jan kā pardā dhākai",
+      "newcomer": "The poetry presents Divine care for a devoted person through images of covering, protecting dignity and raising them up. The focus is a relation of trust and grace.",
+      "punjabi": "ਪ੍ਰਭੂ ਦੀ ਮਿਹਰ ਅਤੇ ਸੇਵਕ ਦੀ ਇੱਜ਼ਤ ਦੀ ਰਾਖੀ ਨੂੰ ਕਾਵਿਕ ਰੂਪ ਵਿੱਚ ਸਮਝਾਇਆ ਗਿਆ ਹੈ। ਇਸ ਨੂੰ ਹਰ ਮੁਸ਼ਕਲ ਤੋਂ ਬਚਣ ਦੀ ਭੌਤਿਕ ਗਾਰੰਟੀ ਨਹੀਂ ਬਣਾਉਣਾ ਚਾਹੀਦਾ।",
+      "deep": "The recurring imagery of honor, care and renown is easy to misread as a promise that believers will never experience harm. The literary language belongs to an account of spiritual relation and grace; it is not a clinical, legal or safety guarantee. Pair the pauri with the preceding attention to conduct and the following reflection on the limits of human power. Neither this passage nor the language of devotion authorizes a leader to conceal abuse or override accountability.",
+      "vocabulary": [
+        {
+          "g": "ਪਰਦਾ ਢਾਕੈ",
+          "roman": "pardā dhākai",
+          "en": "covers the veil; figurative language of protection",
+          "pa": "ਪਰਦਾ ਰੱਖਣਾ; ਰੱਖਿਆ ਦਾ ਚਿੱਤਰ"
+        },
+        {
+          "g": "ਪਤਿ",
+          "roman": "pat",
+          "en": "honor, dignity",
+          "pa": "ਇੱਜ਼ਤ, ਆਬਰੂ"
+        },
+        {
+          "g": "ਦਇਆ",
+          "roman": "dayā",
+          "en": "compassion, mercy, grace",
+          "pa": "ਮਿਹਰ, ਦਇਆ"
+        }
+      ],
+      "caution": "No guaranteed material outcomes, immunity from illness, or exemption from safeguarding and accountability.",
+      "prompt": "How can compassion protect someone's dignity without hiding wrongdoing?",
+      "compare": [],
+      "tags": [
+        "grace",
+        "dignity",
+        "honor",
+        "care",
+        "protection",
+        "compassion"
+      ]
+    },
+    {
+      "id": "pauri-5",
+      "label": "Pauri 5",
+      "pauri": 5,
+      "ang": "285–286",
+      "title": "The limits of human control",
+      "cue": "ਨੀਕੀ ਕੀਰੀ ਮਹਿ ਕਲ ਰਾਖੈ ॥",
+      "roman": "nīkī kīrī mahi kal rākhai",
+      "newcomer": "The dramatic image of a tiny ant and vast armies challenges assumptions about who is powerful. The pauri ends by questioning anxious calculation and directing attention toward the wondrous Divine.",
+      "punjabi": "ਛੋਟੀ ਕੀੜੀ ਅਤੇ ਵੱਡੀ ਫੌਜ ਦਾ ਵਿਰੋਧੀ ਚਿੱਤਰ ਮਨੁੱਖੀ ਤਾਕਤ ਦੇ ਅਹੰਕਾਰ ਉੱਤੇ ਸਵਾਲ ਕਰਦਾ ਹੈ। ਇਸ ਤੋਂ ਬਾਅਦ ਅਲਖ ਪ੍ਰਭੂ ਦੇ ਸਿਮਰਨ ਵੱਲ ਧਿਆਨ ਜਾਂਦਾ ਹੈ।",
+      "deep": "This is devotional poetry about Divine agency and human limitation, not empirical advice to abandon effort or medical care. The pauri crosses the Ang 285–286 boundary, so a faithful reader shows that page transition. A modern psychological comparison can discuss the distinction between what one can influence and what one cannot; that comparison explains a coping framework, not Hukam or providence. The next Pauri turns from anxious mastery to the habitual practice of Naam.",
+      "vocabulary": [
+        {
+          "g": "ਕੀਰੀ",
+          "roman": "kīrī",
+          "en": "ant, tiny creature",
+          "pa": "ਕੀੜੀ"
+        },
+        {
+          "g": "ਕਲ",
+          "roman": "kal",
+          "en": "power, capacity (contextual)",
+          "pa": "ਤਾਕਤ, ਸਮਰੱਥਾ"
+        },
+        {
+          "g": "ਅਲਖ",
+          "roman": "alakh",
+          "en": "beyond ordinary sight or grasp",
+          "pa": "ਜਿਸ ਨੂੰ ਆਮ ਨਜ਼ਰ ਨਾਲ ਨਾ ਵੇਖ ਸਕੀਏ"
+        }
+      ],
+      "caution": "This cannot be presented as proof against human agency or as treatment for anxiety; psychological tools are separate.",
+      "prompt": "Distinguish one useful action you can take from an outcome you cannot guarantee.",
+      "compare": [
+        "act-flexibility"
+      ],
+      "tags": [
+        "control",
+        "fear",
+        "uncertainty",
+        "worry",
+        "psychology",
+        "acceptance",
+        "agency",
+        "hukam"
+      ]
+    },
+    {
+      "id": "pauri-6",
+      "label": "Pauri 6",
+      "pauri": 6,
+      "ang": "286",
+      "title": "Naam in the ordinary day",
+      "cue": "ਬਾਰੰ ਬਾਰ ਬਾਰ ਪ੍ਰਭੁ ਜਪੀਐ ॥",
+      "roman": "bāraṅ bār bār prabh japīai",
+      "newcomer": "The repetition 'again and again' shifts the focus to steady remembrance of Naam. The pauri speaks of a person whose sense of wealth, beauty, satisfaction and work is reoriented by Naam.",
+      "punjabi": "‘ਬਾਰੰ ਬਾਰ’ ਦੀ ਦੁਹਰਾਈ ਲਗਾਤਾਰ ਨਾਮ ਸਿਮਰਨ ਵੱਲ ਧਿਆਨ ਦਿੰਦੀ ਹੈ। ਇੱਥੇ ਨਾਮ ਨੂੰ ਸਿਰਫ਼ ਉਚਾਰਨ ਨਹੀਂ, ਸਗੋਂ ਜੀਵਨ ਦੀ ਦਿਸ਼ਾ ਸਮਝਣ ਦੀ ਲੋੜ ਹੈ।",
+      "deep": "Naam can be flattened into a generic concentration technique if a translation skips the theological setting. Here the images of jewel, wealth, form and color place remembrance at the center of what feels valuable. The closing 'standing, sitting, sleeping' places the teaching in everyday life rather than only a meditation session. Cognitive research can study attention and habit, but it cannot establish the scriptural claims made about the Divine. Ask how remembrance affects speech and conduct rather than treating it as a countable performance.",
+      "vocabulary": [
+        {
+          "g": "ਬਾਰੰ ਬਾਰ",
+          "roman": "bāraṅ bār",
+          "en": "repeatedly, again and again",
+          "pa": "ਵਾਰ-ਵਾਰ"
+        },
+        {
+          "g": "ਨਾਮੁ",
+          "roman": "nām",
+          "en": "Naam; a central Sikh theological term, broader than a label or sound",
+          "pa": "ਨਾਮ; ਸਿੱਖ ਧਰਮ ਦੀ ਡੂੰਘੀ ਧਾਰਨਾ"
+        },
+        {
+          "g": "ਤ੍ਰਿਪਤਾਨੇ",
+          "roman": "tripṭāne",
+          "en": "become satisfied, fulfilled",
+          "pa": "ਤ੍ਰਿਪਤ ਹੋਏ"
+        }
+      ],
+      "caution": "A secular attention exercise is not interchangeable with Naam Simran.",
+      "prompt": "What is the difference between remembering a word and living what it calls you toward?",
+      "compare": [
+        "act-flexibility"
+      ],
+      "tags": [
+        "naam",
+        "simran",
+        "remembrance",
+        "attention",
+        "mindfulness",
+        "habit",
+        "psychology"
+      ]
+    },
+    {
+      "id": "pauri-7",
+      "label": "Pauri 7",
+      "pauri": 7,
+      "ang": "286",
+      "title": "Recognition of Hukam",
+      "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+      "roman": "bolahu jas jihbā din rāt",
+      "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person recognizes Hukam in what occurs and lives in awareness of the Divine's presence.",
+      "punjabi": "ਇਸ ਪਉੜੀ ਵਿੱਚ ਭਗਤੀ, ਪ੍ਰੇਮ ਅਤੇ ਹੁਕਮ ਦੀ ਪਛਾਣ ਦਾ ਸੰਦਰਭ ਹੈ। ਹੁਕਮ ਨੂੰ ਅਨਿਆਇ ਜਾਂ ਹਾਨੀ ਅੱਗੇ ਨਿਸ਼ਕ੍ਰਿਆ ਹੋ ਜਾਣ ਦੇ ਬਰਾਬਰ ਨਹੀਂ ਮੰਨਣਾ ਚਾਹੀਦਾ।",
+      "deep": "The pauri's description of accepting what has happened must be read within Sikh teachings on truthful action and responsibility. 'Hukam' is a theological concept, not merely fate or a technique for emotion regulation. A psychological parallel with acceptance and committed action may help explain why accepting a present fact need not mean endorsing it or refusing to respond. Do not use this comparison to promise reduced symptoms or to replace professional help.",
+      "vocabulary": [
+        {
+          "g": "ਹੁਕਮੁ",
+          "roman": "hukam",
+          "en": "Divine order, command or reality according to context",
+          "pa": "ਰੱਬੀ ਹੁਕਮ, ਕ੍ਰਮ"
+        },
+        {
+          "g": "ਹਜੂਰੇ",
+          "roman": "hajūre",
+          "en": "in the presence of, before",
+          "pa": "ਹਾਜ਼ਰੀ ਵਿੱਚ"
+        },
+        {
+          "g": "ਆਠ ਪਹਰ",
+          "roman": "āṭh pahar",
+          "en": "through the entire day and night",
+          "pa": "ਦਿਨ-ਰਾਤ, ਹਰ ਵੇਲੇ"
+        }
+      ],
+      "caution": "Hukam does not excuse injustice, neglect or passivity.",
+      "prompt": "Can you accept that something happened while still deciding to act responsibly next?",
+      "compare": [
+        "act-flexibility"
+      ],
+      "tags": [
+        "hukam",
+        "acceptance",
+        "responsibility",
+        "devotion",
+        "presence",
+        "psychology"
+      ]
+    },
+    {
+      "id": "pauri-8",
+      "label": "Pauri 8",
+      "pauri": 8,
+      "ang": "286",
+      "title": "Learn through the lives of the devoted",
+      "cue": "ਮਨ ਮੇਰੇ ਤਿਨ ਕੀ ਓਟ ਲੇਹਿ ॥",
+      "roman": "man mere tin kī oṭ lehi",
+      "newcomer": "The concluding pauri asks the mind to seek support from spiritually mature people and to learn from their example. In context, that is a path toward truthful living and liberation—not a licence to follow anyone uncritically.",
+      "punjabi": "ਆਖ਼ਰੀ ਪਉੜੀ ਵਿੱਚ ਸੱਚੇ ਭਗਤਾਂ ਦੇ ਜੀਵਨ ਤੋਂ ਸਿੱਖਣ ਅਤੇ ਉਨ੍ਹਾਂ ਦੀ ਸੰਗਤ ਦੀ ਗੱਲ ਆਉਂਦੀ ਹੈ। ਨਿਮਰਤਾ ਨਾਲ ਸਿੱਖਣਾ ਅੰਨ੍ਹੀ ਆਗਿਆਕਾਰੀ ਨਹੀਂ ਹੁੰਦੀ।",
+      "deep": "The language of refuge, support, surrender and worship of the devoted person's feet is devotional and culturally textured. Read it beside Ashtpadi 7 on Saadh Sangat and Ashtpadi 13 on Sant Ninda, without interpreting criticism of harmful behavior as forbidden. Ethical mentoring requires discernment and accountability. The pauri closes with the theme of liberation from coming and going, a specifically religious claim that should be presented as the teaching of Gurbani, not a clinically or scientifically established result.",
+      "vocabulary": [
+        {
+          "g": "ਓਟ",
+          "roman": "oṭ",
+          "en": "refuge, support, shelter",
+          "pa": "ਆਸਰਾ, ਸਹਾਰਾ"
+        },
+        {
+          "g": "ਸਰਨਿ",
+          "roman": "saran",
+          "en": "refuge, protection, seeking support",
+          "pa": "ਸ਼ਰਨ, ਆਸਰਾ"
+        },
+        {
+          "g": "ਆਵਨੁ ਜਾਨੁ",
+          "roman": "āvan jān",
+          "en": "coming and going; often understood within the theology of birth and death",
+          "pa": "ਆਉਣਾ-ਜਾਣਾ; ਜਨਮ-ਮਰਨ ਦੇ ਸੰਦਰਭ ਵਿੱਚ"
+        }
+      ],
+      "caution": "Never use the language of spiritual company to silence questioning, safeguarding concerns or independent judgment.",
+      "prompt": "What qualities make someone worth learning from—and what boundaries keep mentorship healthy?",
+      "compare": [
+        "buddhist-ethics"
+      ],
+      "tags": [
+        "saadh",
+        "sant",
+        "sangat",
+        "mentor",
+        "community",
+        "ethics",
+        "saint",
+        "liberation",
+        "buddhism"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "gita-sat",
+      "name": "Bhagavad Gita 2.16 · sat/asat",
+      "kind": "Hindu philosophy",
+      "relevantTo": [
+        "salok",
+        "pauri-2"
+      ],
+      "similarity": "Both raise a question about what is lasting or ultimately real rather than merely transient.",
+      "difference": "The Gita verse is often read through discussions of Atman and what does not perish. Sukhmani's Salok is an affirmation of the Divine in Sikh theology. A shared Sanskrit/Punjabi-root word is not a licence to equate the doctrinal claims.",
+      "question": "What does each scripture identify as the enduring reality, and who is speaking?",
+      "source": {
+        "title": "Bhagavad Gita 2.16, text and commentaries (IIT Kanpur)",
+        "url": "https://heritage.iitk.ac.in/SBG/2.16"
+      }
+    },
+    {
+      "id": "buddhist-ethics",
+      "name": "Dhammapada 183 · ethical cultivation",
+      "kind": "Early Buddhist text",
+      "relevantTo": [
+        "pauri-1",
+        "pauri-3",
+        "pauri-8"
+      ],
+      "similarity": "Attention to conduct and deliberate cultivation of wholesome behavior creates a useful ethical comparison.",
+      "difference": "The Dhammapada verse frames the Buddha's instruction in terms of wrongdoing, good and purification of mind. Sukhmani places remembrance and service in relationship to the Divine and the Guru. Ethics alone does not erase differences in theology and liberation.",
+      "question": "Which kinds of actions are emphasized, and what is their spiritual purpose in each tradition?",
+      "source": {
+        "title": "Dhammapada 183, SuttaCentral English edition",
+        "url": "https://www.dhammatalks.net/suttacentral/sc2016/sc/en/dhp.html"
+      }
+    },
+    {
+      "id": "act-flexibility",
+      "name": "Acceptance and Commitment Therapy · psychological flexibility",
+      "kind": "Modern psychology",
+      "relevantTo": [
+        "pauri-5",
+        "pauri-6",
+        "pauri-7"
+      ],
+      "similarity": "A modern vocabulary of present-moment awareness, acceptance and values-guided action can help a learner reflect on uncertainty without becoming passive.",
+      "difference": "ACT is an evidence-studied psychological approach, not an explanation of Naam or Hukam. Its clinical outcomes cannot validate or invalidate Gurbani's theology, and this study guide does not provide treatment.",
+      "question": "Can I distinguish acknowledging reality, choosing a responsible action, and making a theological claim?",
+      "source": {
+        "title": "Systematic review of ACT mechanisms, PubMed 2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38615492/"
+      }
+    }
+  ],
+  "contextualNotes": [
+    {
+      "title": "The Salok and Baba Sri Chand Ji",
+      "status": "CONTESTED_HISTORY_NOT_SCRIPTURE",
+      "text": "Later sakhis associate the seventeenth Ashtpadi Salok with an encounter between Guru Arjan Dev Ji and Baba Sri Chand Ji. Accounts differ, arise in later sources and are questioned by modern scholarship. The original Salok itself does not name Sri Chand as its author. Place the account in a documented historical note, never in the scripture layer.",
+      "source": {
+        "title": "The Sikh View on Happiness: Guru Arjan's Sukhmani, Nayar and Sandhu (historical-source analysis)",
+        "url": "https://dokumen.pub/the-sikh-view-on-happiness-guru-arjans-sukhmani-9781350139879-9781350139909-9781350139886.html"
+      }
+    },
+    {
+      "title": "Do not silently harmonize the Japji and Sukhmani Saloks",
+      "status": "TEXTUAL_NOTE",
+      "text": "The introductory Sukhmani Salok uses ਭਿ, where the closely related Japji opening uses ਭੀ in the cited digital texts. Show the precise source reading and its Ang; don't rewrite one to look like the other.",
+      "source": {
+        "title": "SriGranth, SGGS Ang 285",
+        "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+      }
+    }
+  ],
+  "bibliography": [
+    {
+      "title": "Original Gurbani — Sri Guru Granth Sahib Ji, Ang 285",
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0",
+      "role": "Primary Gurmukhi source witness; digital"
+    },
+    {
+      "title": "Original Gurbani — Sri Guru Granth Sahib Ji, Ang 286",
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=286&g=1&h=0&k=0&p=0&r=0&t=0",
+      "role": "Primary Gurmukhi source witness; digital"
+    },
+    {
+      "title": "SikhRI Guru Granth Sahib Project — translation methodology",
+      "url": "https://gurugranthsahib.io/info/english/methodology",
+      "role": "Method for vocabulary, historical setting and reader context"
+    },
+    {
+      "title": "Rawel Singh, SGGS pp. 285–286, Sukhmani Astpadi 17",
+      "url": "https://www.sadhsangat.com/sggs-pp-285-286-gauri-sukhmani-m-5-astpadi-17/",
+      "role": "One interpretive reading; not exclusive doctrinal authority"
+    },
+    {
+      "title": "Bhagavad Gita 2.16 — IIT Kanpur",
+      "url": "https://heritage.iitk.ac.in/SBG/2.16",
+      "role": "Hindu comparison"
+    },
+    {
+      "title": "Dhammapada 183 — SuttaCentral edition",
+      "url": "https://www.dhammatalks.net/suttacentral/sc2016/sc/en/dhp.html",
+      "role": "Buddhist comparison"
+    },
+    {
+      "title": "ACT psychological flexibility mechanisms — systematic review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+      "role": "Modern psychological comparison"
+    },
+    {
+      "title": "The Sikh View on Happiness — Nayar and Sandhu",
+      "url": "https://dokumen.pub/the-sikh-view-on-happiness-guru-arjans-sukhmani-9781350139879-9781350139909-9781350139886.html",
+      "role": "Historical interpretation of Sri Chand tradition; copyright text is not reproduced"
+    }
+  ],
+  "quality": {
+    "humanScriptureCollationApproved": false,
+    "humanMeaningReviewApproved": false,
+    "comparisonReviewedByQualifiedScholars": false,
+    "physicalIPhoneAccepted": false,
+    "noBackendOrLiveAi": true,
+    "sourceDuplication": "Only short location cues; complete Gurbani shown by existing reader"
+  }
+}
