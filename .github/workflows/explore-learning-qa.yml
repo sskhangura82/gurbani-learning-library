@@ -1,0 +1,54 @@
+name: GLP Explore Learning Pilot QA
+
+on:
+  pull_request:
+    paths:
+      - "explore/**"
+      - "tests/explore-*.mjs"
+      - "docs/GLP_LEARNING_PLATFORM_EXPANSION_V1_20261125.md"
+      - ".github/workflows/explore-learning-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-and-source-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out exact candidate
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check new application syntax
+        run: node --check explore/app.js
+      - name: Verify 9-unit source-linked educational contract
+        run: node tests/explore-learning.mjs
+
+  responsive-browser:
+    needs: editorial-and-source-contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out exact candidate
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned Chromium harness
+        run: |
+          npm install --no-save --no-package-lock playwright@1.62.1
+          npx playwright install --with-deps chromium
+      - name: Verify source-first reading and search on phone, iPad and desktop viewports
+        run: node tests/explore-browser.mjs
+      - name: Retain screenshots and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: explore-responsive-device-viewport-evidence
+          path: evidence/explore-browser/
+          retention-days: 90
