@@ -1,0 +1,65 @@
+{
+  "status": "DIGITAL_COMPARISON_ONLY",
+  "humanCollationApproved": false,
+  "sourceCounts": [
+    504,
+    504
+  ],
+  "comparisonSourcesIndependentEditionsProven": false,
+  "comparisonNote": "Separate website/digital transcription; underlying shared sources cannot be excluded. HTML-generated extra spaces only are collapsed in comparison copy; source scripture is not changed.",
+  "exactMatches": 504,
+  "differentAngs": [],
+  "differences": [],
+  "sources": [
+    {
+      "ang": 279,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=279&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "3e4f2c0516ef4ba521eb9305d241d8765cec672a8b829fa13e98c00852c7db47"
+    },
+    {
+      "ang": 280,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=280&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "9b3cbf5577b09b05df52a149c659870cb235f2fd204db322a307dabdb390714b"
+    },
+    {
+      "ang": 281,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=281&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "b4e45955a79945965462349fe4e285822de58604b71eed4f5232701e0b7b96d7"
+    },
+    {
+      "ang": 282,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=282&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "edd21972342e8e37ced3fa1a0ea97d2c134fad6f88c56525b05f876e1295dde2"
+    },
+    {
+      "ang": 283,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=283&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "4edecddb47e09bbd3bf064366b794cd1aa97b0c1cf02cc0a168539e97db95299"
+    },
+    {
+      "ang": 284,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=284&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "78785bbbb46fe111dd67b767ad756266c36e755b202075b0c0d875374c312976"
+    },
+    {
+      "ang": 285,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "501fd847797b36f390ab0cd6b96b94f70ffcd98753ed00896d8a73704aeb2a5d"
+    },
+    {
+      "ang": 286,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=286&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "d302277c01d2c968d9f25fe89b8e7405c4cf50451b12276d66adde465575233f"
+    },
+    {
+      "ang": 287,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=287&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "61ef68a2c53c40cf12039569f001b7a06725676f4ce247004bdec09a291fa0f7"
+    },
+    {
+      "ang": 288,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=288&g=1&h=0&k=0&p=0&r=0&t=0",
+      "htmlSha256": "6e344fde69dcc170bd88009949ed36979bdfbbe84b14991322c71b8e4c59e483"
+    }
+  ]
+}

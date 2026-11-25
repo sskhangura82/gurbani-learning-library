@@ -71,7 +71,7 @@
   $('sk-coverage').textContent='Guru Arjan Dev Ji · Raag Gauri · '+coverageLabel;$('sk-scope').textContent=scopeNote;
   $('sukhmani-text').setAttribute('aria-label','Sukhmani Sahib, Ashtpadis '+firstAshtpadi+' to '+lastAshtpadi);
   $('sk-end-title').textContent='End of Ashtpadi '+lastAshtpadi;$('sk-end-scope').textContent=lastAshtpadi<totalAshtpadis?'This is the end of this reading pack. Sukhmani Sahib continues through Ashtpadi '+totalAshtpadis+'.':'End of Sukhmani Sahib.';
-  $('sk-version').textContent='GLP-001 · Sukhmani '+ashtpadiRange+' · Development preview';
+  $('sk-version').textContent='GLP-001 · Sukhmani '+ashtpadiRange+' · Public preview';
   const fragment=document.createDocumentFragment();$('ashtpadi-nav').replaceChildren();
   for(const a of pack.ashtpadis){
    const link=el('a',String(a.number));link.href='#ashtpadi-'+a.number;link.setAttribute('aria-label','Read Ashtpadi '+a.number);link.addEventListener('click',e=>{e.preventDefault();jump(a.lines[0].id);});$('ashtpadi-nav').append(link);

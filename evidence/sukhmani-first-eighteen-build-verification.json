@@ -1,0 +1,159 @@
+{
+  "status": "PORTABLE_CHECKS_PASS_BROWSER_CI_REQUIRED",
+  "recordedAt": "2026-11-25T01:43:52.066818+00:00",
+  "ashtpadisIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "basePublishedCommit": "39e2c410f0ef942bd611ba4de1a2d3b2d9ad1355",
+  "branch": "feature/sukhmani-13-18-20261124",
+  "sourceOccurrences": 1523,
+  "newSourceOccurrences": 504,
+  "bilingualMeaningPairs": 1523,
+  "passageStudies": 163,
+  "vocabularyEntries": 160,
+  "qualifiedHumanReviewed": 0,
+  "sourceSequenceSha256": "159f53f611e550b1996305d2f2a87e610e5375bfc5eca254dbd12dbfd7b7cda8",
+  "portableChecks": {
+    "passed": 88,
+    "failed": 0,
+    "commands": [
+      {
+        "command": "node tests/verify.mjs",
+        "checks": 27,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/service-worker.mjs",
+        "checks": 8,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/shared-learning.mjs",
+        "checks": 12,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/r6-contract.mjs",
+        "checks": 7,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/r7-contract.mjs",
+        "checks": 12,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/sukhmani-content.mjs",
+        "checks": 10,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/sukhmani-reader-core.mjs",
+        "checks": 12,
+        "status": "PASS"
+      }
+    ]
+  },
+  "upstreamVerification": {
+    "command": "python3 tools/sukhmani/verify-upstream.py --cache ../sukhmani-combined-upstream",
+    "matchedOccurrences": 1523,
+    "pinnedCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "status": "PASS"
+  },
+  "preservation": {
+    "firstSixSourceMeaningsStudies": "PASS exact canonical hash checks",
+    "publishedFirstTwelveSourceMeaningsStudies": "PASS exact canonical hash checks",
+    "storageKey": "glp001.sukhmani.v1",
+    "recordVersion": 2,
+    "japjiRuntimeUnchanged": true
+  },
+  "runtimeFiles": [
+    {
+      "path": "index.html",
+      "sha256": "e528a43f9d00e926e7007706b0614106c513dde22fe39ccc413eb5d2dfc43bc6",
+      "bytes": 4473
+    },
+    {
+      "path": "sukhmani.html",
+      "sha256": "e0931ad656b109bd6d86d28b133dad67fe46254fe727897255b9320fc3ba44cf",
+      "bytes": 4510
+    },
+    {
+      "path": "css/sukhmani.css",
+      "sha256": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f",
+      "bytes": 7820
+    },
+    {
+      "path": "js/sukhmani-data.js",
+      "sha256": "35822a8c37e71046e6ef5fa17fe1024289946c027b883f23870f21937a028404",
+      "bytes": 934070
+    },
+    {
+      "path": "js/sukhmani-teaching.js",
+      "sha256": "cd2e6366c45b7a3e626888eeb090ecac7f17f20faa844ec9fa7da06e1cd1b8c5",
+      "bytes": 1381129
+    },
+    {
+      "path": "js/sukhmani-reader.js",
+      "sha256": "73e702524ce7d00ead7fecba978fe0efeefb0cb0490145e11ffda8e17be798c5",
+      "bytes": 29511
+    },
+    {
+      "path": "js/sukhmani-learning.js",
+      "sha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4",
+      "bytes": 4617
+    },
+    {
+      "path": "sw.js",
+      "sha256": "e390efa97d8ab8ee82afd9f58e954a4fc3a0b7d6fbfc825c1f9fafd7b3f581ff",
+      "bytes": 5016
+    }
+  ],
+  "serviceWorker": {
+    "version": "0.12-sukhmani-a1-18-preview-20261124-1",
+    "hashPinnedAssets": 38,
+    "explicitUpdateRequired": true
+  },
+  "browserVerification": {
+    "status": "CI_PENDING_AT_THIS_CHECKPOINT",
+    "command": "node tests/sukhmani-browser.mjs",
+    "expectedChecks": 33,
+    "artifact": "sukhmani-browser-evidence",
+    "note": "The exact commit outcome and screenshots are retained in GitHub Actions and linked from the continuation pull request. Do not treat this pending field or a test file as a passing browser result.",
+    "localLimitation": "Local browser launch was unavailable: the installed Playwright browser was missing and the system Chromium launcher targeted a missing executable."
+  },
+  "editorialReview": {
+    "newBilingualMeaningPairsRead": 504,
+    "newBilingualPassageStudiesRead": 54,
+    "ashtpadiOverviews": 6,
+    "kind": "Independent AI review with scoped evidence; not qualified human review",
+    "reports": [
+      "evidence/sukhmani-editorial-review-13-15.json",
+      "evidence/sukhmani-editorial-review-16-18.json",
+      "evidence/sukhmani-editorial-review-ashtpadi15-overview.json"
+    ]
+  },
+  "openAcceptance": [
+    "Qualified human Gurbani/Punjabi review",
+    "Independent human letter-by-letter collation",
+    "Physical iPhone Safari, VoiceOver, Home Screen and actual airplane-mode acceptance",
+    "Ashtpadis19–24 not yet included"
+  ]
+}

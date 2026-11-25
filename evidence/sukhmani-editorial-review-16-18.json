@@ -1,0 +1,569 @@
+{
+  "schema": "glp001.ai-editorial-review.v1",
+  "reviewDatePacific": "2026-11-24",
+  "reviewType": "Independent AI close-reading and editorial review",
+  "status": "completed_with_refinements_applied_and_rechecked",
+  "humanReviewApproved": false,
+  "qualifiedGurbaniReviewApproved": false,
+  "qualifiedPunjabiReviewApproved": false,
+  "reviewerIndependence": "Reviewer extracted/collated the source and did not author this teaching part. A separate author supplied drafts; recommendations were sent to the author and then independently rechecked in the final file.",
+  "input": {
+    "file": "sukhmani-teaching-16-18.json",
+    "sha256": "93a367d1f277edac579a590bf1911a5d17c786d72a6025ed2939a6c793018354",
+    "sourceScriptureCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "sourceFiles": [
+      {
+        "file": "ashtpadi-16.json",
+        "sha256": "2cb98db240e780dac455deeeab3f2a7993d01f4194944e59f416420820ab5e2a"
+      },
+      {
+        "file": "ashtpadi-17.json",
+        "sha256": "8093080a18ea0c1b87889659fa8dcbe6618516764eb50fcf48c318c666252717"
+      },
+      {
+        "file": "ashtpadi-18.json",
+        "sha256": "561a1d4463957325ab7cc5f810c6b300e01c200194a06c2680ffc9a569deb93e"
+      }
+    ]
+  },
+  "scope": {
+    "ashtpadis": [
+      16,
+      17,
+      18
+    ],
+    "meaningPairsRead": 252,
+    "englishMeaningsRead": 252,
+    "punjabiMeaningsRead": 252,
+    "bilingualPassageStudiesRead": 27,
+    "salokStudiesRead": 3,
+    "pauriStudiesRead": 24,
+    "bilingualOverviewsRead": 3,
+    "vocabularyEntriesRead": 29,
+    "bilingualTeachBackPromptsRead": 3,
+    "bilingualCautionsRead": 3,
+    "bilingualHistoricalNotesRead": 1,
+    "allSourceIdsAndPrimaryAngLinksVerified": true
+  },
+  "passagesReviewed": [
+    {
+      "id": "sukhmani.a16.salok",
+      "angs": [
+        283
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p01",
+      "angs": [
+        283,
+        284
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p02",
+      "angs": [
+        284
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p03",
+      "angs": [
+        284
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p04",
+      "angs": [
+        284
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p05",
+      "angs": [
+        284
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p06",
+      "angs": [
+        284
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p07",
+      "angs": [
+        284,
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a16.p08",
+      "angs": [
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.salok",
+      "angs": [
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p01",
+      "angs": [
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p02",
+      "angs": [
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p03",
+      "angs": [
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p04",
+      "angs": [
+        285
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p05",
+      "angs": [
+        285,
+        286
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p06",
+      "angs": [
+        286
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p07",
+      "angs": [
+        286
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a17.p08",
+      "angs": [
+        286
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.salok",
+      "angs": [
+        286
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p01",
+      "angs": [
+        286
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p02",
+      "angs": [
+        286,
+        287
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p03",
+      "angs": [
+        287
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p04",
+      "angs": [
+        287
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p05",
+      "angs": [
+        287
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p06",
+      "angs": [
+        287
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p07",
+      "angs": [
+        287
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a18.p08",
+      "angs": [
+        287,
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    }
+  ],
+  "method": [
+    "Read every English and Punjabi meaning alongside its exact immutable Gurmukhi occurrence.",
+    "Read all bilingual overviews, Salok/pauri studies, reflections, vocabulary, teach-back prompts, cautions and the historical note.",
+    "Independently retrieved Sahib Singh commentary for lexical and grammatical checks; modern commentary remains scratch-only and is not copied into the source pack.",
+    "Read the official Punjabi University encyclopedia entry directly to verify the bounded historical-tradition note.",
+    "Compared final meanings to the reviewed snapshot and re-read changed study fields; checked source groups and Ang links mechanically."
+  ],
+  "consultedSources": [
+    {
+      "url": "https://www.gurugranthdarpan.net/0283.html",
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 283,
+      "rawHtmlSha256": "371ae4aab51b875f33eed8d4dfdddf4c60638350aa34a9557c99016b9ca005d1"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/0284.html",
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 284,
+      "rawHtmlSha256": "3635c78023a7f9cdfcc41f1b811f6ac68ccb606b44f73843c061ee772dc6d705"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/0285.html",
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 285,
+      "rawHtmlSha256": "2db711b4d4a8b3c43881054932dff84cbc5bce3b20a3c6c0e7914d80b490fe9f"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/0286.html",
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 286,
+      "rawHtmlSha256": "7284d3c73f581b22c9c88f3221d51bfb4994e714e4ade0b7b2a728237a22ee39"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/0287.html",
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 287,
+      "rawHtmlSha256": "57613d65df6182a08ef0969e50ac441ab7263b5d346f3c5cb11f3d68d80678f8"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/0288.html",
+      "author": "Professor Sahib Singh",
+      "work": "Sri Guru Granth Darpan",
+      "ang": 288,
+      "rawHtmlSha256": "5917dbe7b2f7e28c5cdd7d319b0c2a4e98b1d902e17ab864eb200b8d7d58c09a"
+    },
+    {
+      "url": "https://eos.learnpunjabi.org/SUKHMANI.html",
+      "author": "Gurbachan Singh Talib",
+      "work": "Encyclopaedia of Sikhism, Punjabi University",
+      "use": "The brief Sri Chand account is presented by this later encyclopedia as a tradition. It is not contemporary evidence or a statement in the Gurbani passage."
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1&g=1&h=0&k=0&p=0&r=0&t=0",
+      "use": "Checked the opening Japji Salok for the distinct written form ਭੀ; the final study focuses on the preserved ਭਿ form at Ang285."
+    }
+  ],
+  "lexicalAndContextualChecks": [
+    {
+      "passage": "sukhmani.a16.p02",
+      "check": "ਕਰਿ ਪਾਇਆ is treated as Divine ordaining; no bodily account of Divine creation is invented."
+    },
+    {
+      "passage": "sukhmani.a16.p05",
+      "check": "Naam as Divine sustaining reality and the fourth state beyond the three qualities are retained."
+    },
+    {
+      "passage": "sukhmani.a16.p06",
+      "check": "ਕਰਮੁ as grace; contextual range of ਸਤਿ includes enduring, real and complete; ਬਾਣੀ carries into the following line."
+    },
+    {
+      "passage": "sukhmani.a16.p07",
+      "check": "ਨਿਰਤਿ is read as devotion/love following the cited commentary."
+    },
+    {
+      "passage": "sukhmani.a17.p01",
+      "check": "The strong sat refrain and the reality of creation are retained."
+    },
+    {
+      "passage": "sukhmani.a17.p02",
+      "check": "Divine union is not reduced to mere comfort; the source’s strong unity language is preserved."
+    },
+    {
+      "passage": "sukhmani.a17.p03",
+      "check": "The servant remembers in the last line; the grammatical subject is not reversed."
+    },
+    {
+      "passage": "sukhmani.a17.p04",
+      "check": "Divine mercy/covering faults is distinguished from a human instruction to conceal harmful conduct."
+    },
+    {
+      "passage": "sukhmani.a17.p05",
+      "check": "The ant/armies image retains extraordinary Divine-power language with a bounded devotional interpretation."
+    },
+    {
+      "passage": "sukhmani.a17.p07",
+      "check": "Understanding events is read together with recognizing Hukam; eight watches includes day and night."
+    },
+    {
+      "passage": "sukhmani.a18.p03",
+      "check": "The first-line reading follows Sahib Singh’s explanation about the Guru’s confidence; the attribution makes the interpretive choice visible."
+    },
+    {
+      "passage": "sukhmani.a18.p04",
+      "check": "ਅਖੵਓ describes enduring teaching; the grace-gaze clause retains its transformative meaning."
+    },
+    {
+      "passage": "sukhmani.a18.p05",
+      "check": "ਨਿਰਾਹਾਰ describes the Divine, without need for food."
+    },
+    {
+      "passage": "sukhmani.a18.p06",
+      "check": "ਗੁਨਤਾਸ explicitly denotes the Divine, treasury of virtues; deathlessness retains its liberation frame."
+    },
+    {
+      "passage": "sukhmani.a18.p07",
+      "check": "ਬਿਆਧਿ retains disease/affliction; ਜਪਿ and ਸੁਨਿ are read as participial clauses connected to the attained steadiness."
+    },
+    {
+      "passage": "sukhmani.a18.p08",
+      "check": "Nirgun and sargun describe the same One, and the warp/weft image retains immanence."
+    }
+  ],
+  "refinementsVerified": [
+    {
+      "ids": [
+        "sukhmani.a17.p07.l09"
+      ],
+      "change": "Clarified all eight watches of day and night in both languages."
+    },
+    {
+      "ids": [
+        "sukhmani.a18.p06.l04"
+      ],
+      "change": "English identifies Guntas explicitly as the Divine, treasury of virtues."
+    },
+    {
+      "ids": [
+        "sukhmani.a18.p07.l08",
+        "sukhmani.a18.p07.l10"
+      ],
+      "change": "Both languages now use through remembering/hearing clauses consistent with the passage context."
+    },
+    {
+      "ids": [
+        "sukhmani.a18.p04.l01"
+      ],
+      "change": "Clarified beholding the Guru rather than using an impersonal pronoun for presence."
+    },
+    {
+      "field": "ashtpadi16.caution.pa",
+      "change": "Whole-section pointer says Ashtpadi rather than pauri."
+    },
+    {
+      "field": "ashtpadi17.salok.explanation",
+      "change": "Removed app implementation commentary; the lesson now explains the passage and its written ਭਿ form directly."
+    },
+    {
+      "field": "ashtpadi17.pauri6.explanation",
+      "change": "Removed the app-prescribed-drink wording and explained Naam’s nectar image directly."
+    },
+    {
+      "field": "ashtpadi17.interpretiveNote",
+      "change": "Briefly states the attributed Sri Chand traditional account and preserves the limits of the later evidence; no meeting or coauthorship claim is placed in the scripture."
+    },
+    {
+      "fields": [
+        "ashtpadi17.pauri2.explanation.pa",
+        "ashtpadi17.pauri5.explanation.pa",
+        "ashtpadi18.overview.pa",
+        "ashtpadi18.pauri1.reflection.pa"
+      ],
+      "change": "Refined Punjabi idiom and grammar; all final replacements were re-read."
+    },
+    {
+      "field": "ashtpadi18.pauri3.explanation.en",
+      "change": "Removed an inaccurate next-line pointer to the Guru definition, which follows the opening couplet."
+    }
+  ],
+  "unresolvedFindings": [],
+  "limitations": [
+    "This is AI editorial review, not qualified human Punjabi/Gurbani approval.",
+    "Commentary consultation was selective; the report does not claim a survey of all Sikh interpretive traditions.",
+    "Digital source agreement does not prove independent physical-edition lineage.",
+    "This review covers teaching content and source attachment; it makes no claim about physical-device testing or runtime behaviour."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Structural authoring validation, not independent editorial or human approval",
+  "meaningPairs": 252,
+  "passageStudies": 27,
+  "overviews": 3,
+  "vocabularyEntries": 29,
+  "checks": [
+    "252 unique IDs exactly cover source occurrences",
+    "Every occurrence has nonempty English and Punjabi draft",
+    "All 27 studies enclose exact complete source units including headings",
+    "Every passage has exact Ang primary-source links",
+    "All study fields bilingual; eight or more vocabulary entries per Ashtpadi",
+    "Human review status remains false"
+  ],
+  "fileSha256": "93a367d1f277edac579a590bf1911a5d17c786d72a6025ed2939a6c793018354",
+  "created": "2026-11-24",
+  "humanReviewed": false
+}

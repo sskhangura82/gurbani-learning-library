@@ -25,17 +25,17 @@ const checks = [];
 function test(name, fn) { fn(); checks.push(name); }
 const bilingual = x => x && typeof x.en === 'string' && x.en.trim().length > 0 && typeof x.pa === 'string' && /[\u0a00-\u0a7f]/u.test(x.pa);
 
-test('Exactly Ashtpadis 1–12, without claiming the complete composition', () => {
-  assert.deepEqual(source.ashtpadis.map(a => a.number), [1,2,3,4,5,6,7,8,9,10,11,12]);
+test('Exactly Ashtpadis 1–18, without claiming the complete composition', () => {
+  assert.deepEqual(source.ashtpadis.map(a => a.number), Array.from({length:18},(_,i)=>i+1));
   assert.equal(source.completeComposition, false);
-  assert.equal(lines.length, 1019);
-  assert.equal(source.lineCount, 1019);
-  assert.equal(new Set(lines.map(l => l.id)).size, 1019);
-  assert.deepEqual(source.ashtpadis.map(a=>a.lines.length), [90,84,84,84,84,84,86,85,86,84,84,84]);
+  assert.equal(lines.length, 1523);
+  assert.equal(source.lineCount, 1523);
+  assert.equal(new Set(lines.map(l => l.id)).size, 1523);
+  assert.deepEqual(source.ashtpadis.map(a=>a.lines.length), [90,84,84,84,84,84,86,85,86,84,84,84,84,84,84,84,84,84]);
 });
-test('All original Unicode bytes match the frozen first-twelve sequence', () => {
+test('All original Unicode bytes match the frozen first-eighteen sequence', () => {
   const actual = hash(lines.map(l => l.gurmukhi).join('\n'));
-  assert.equal(actual, '5e4a556a4cf30520b7ebc76e228429dfb9c098527626f72f5c00e2215e935481');
+  assert.equal(actual, '159f53f611e550b1996305d2f2a87e610e5375bfc5eca254dbd12dbfd7b7cda8');
   assert.equal(source.textSequenceSha256, actual);
   for (const [i,l] of lines.entries()) {
     assert.equal(l.sha256, hash(l.gurmukhi), l.id);
@@ -54,30 +54,41 @@ test('The first-six source records, IDs, meanings and studies remain exactly pre
   assert.equal(hash(canonical(Object.fromEntries(originalLines.map(l=>[l.id,teaching.meanings[l.id]])))),frozen.meaningsSha256);
   assert.equal(hash(canonical(Object.fromEntries(firstSix.map(a=>[a.number,teaching.ashtpadis[a.number]])))),frozen.studyAshtpadisSha256);
 });
+test('The published first-twelve source objects, meanings and studies remain exactly preserved', () => {
+  const frozen=json('evidence/sukhmani-first-twelve-baseline.json');
+  assert.equal(frozen.frozenCommit, '39e2c410f0ef942bd611ba4de1a2d3b2d9ad1355');
+  const firstTwelve=source.ashtpadis.filter(a=>a.number<=12);
+  const originalLines=firstTwelve.flatMap(a=>a.lines);
+  assert.equal(originalLines.length,1019);
+  assert.equal(hash(originalLines.map(l=>l.gurmukhi).join('\n')),frozen.textSequenceSha256);
+  assert.equal(hash(canonical(firstTwelve)),frozen.sourceAshtpadisSha256);
+  assert.equal(hash(canonical(Object.fromEntries(originalLines.map(l=>[l.id,teaching.meanings[l.id]])))),frozen.meaningsSha256);
+  assert.equal(hash(canonical(Object.fromEntries(firstTwelve.map(a=>[a.number,teaching.ashtpadis[a.number]])))),frozen.studyAshtpadisSha256);
+});
 test('A separately retrieved transcription agrees in exact order, text and Ang', () => {
   const comparison = json('evidence/sukhmani-srigranth-gurmukhi.json');
   assert.deepEqual(lines.map(l => ({ang:l.ang, gurmukhi:l.gurmukhi})), comparison.lines);
   const report = json('evidence/sukhmani-source-collation.json');
-  assert.equal(report.exactMatches, 1019);
+  assert.equal(report.exactMatches, 1523);
   assert.deepEqual(report.differences, []);
   assert.deepEqual(report.differentAngs, []);
   assert.equal(report.humanCollationApproved, false);
   assert.equal(report.comparisonSourcesIndependentEditionsProven, false);
 });
-test('Twelve complete Saloks, 96 ten-line pauris, both Rahau lines and all headings survive', () => {
+test('Eighteen complete Saloks, 144 ten-line pauris, both Rahau lines and all headings survive', () => {
   const count = kind => lines.filter(l => l.kind === kind).length;
-  assert.equal(count('pauri'), 960);
-  assert.equal(count('salok'), 31);
+  assert.equal(count('pauri'), 1440);
+  assert.equal(count('salok'), 43);
   assert.equal(count('rahau'), 2);
-  assert.equal(count('heading'), 26);
-  const salokVerseCounts=[4,2,2,2,2,2,4,3,4,2,2,2];
+  assert.equal(count('heading'), 38);
+  const salokVerseCounts=[4,2,2,2,2,2,4,3,4,2,2,2,2,2,2,2,2,2];
   for (const a of source.ashtpadis) {
     assert.equal(a.lines.filter(l=>l.kind==='salok').length, salokVerseCounts[a.number-1]);
     for (let p=1;p<=8;p++) assert.equal(a.lines.filter(l=>l.kind==='pauri' && l.pauri===p).length, 10);
   }
   assert.equal(lines[0].gurmukhi, 'ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥');
-  assert.equal(lines.at(-1).gurmukhi, 'ਨਾਮੁ ਜਪੈ ਨਾਨਕ ਮਨਿ ਪ੍ਰੀਤਿ ॥੮॥੧੨॥');
-  assert.deepEqual([...new Set(lines.map(l=>l.ang))], Array.from({length:18},(_,i)=>262+i));
+  assert.equal(lines.at(-1).gurmukhi, 'ਅਨਿਕ ਬਾਰ ਨਾਨਕ ਬਲਿਹਾਰੀ ॥੮॥੧੮॥');
+  assert.deepEqual([...new Set(lines.map(l=>l.ang))], Array.from({length:27},(_,i)=>262+i));
 });
 test('Every source occurrence has its own bilingual draft and optional reading aid', () => {
   assert.deepEqual(Object.keys(teaching.meanings).sort(), [...byId.keys()].sort());
@@ -92,7 +103,7 @@ test('Every source occurrence has its own bilingual draft and optional reading a
   assert.equal(teaching.meta.status, 'draft');
   assert.equal(teaching.meta.humanReviewed, false);
 });
-test('Twelve introductions and all 109 passage studies have exact contextual anchors', () => {
+test('Eighteen introductions and all 163 passage studies have exact contextual anchors', () => {
   let total=0;
   for (const a of source.ashtpadis) {
     const t=teaching.ashtpadis[a.number];
@@ -121,7 +132,7 @@ test('Twelve introductions and all 109 passage studies have exact contextual anc
       assert.ok(g.sources?.some(s=>s.url?.startsWith('https://www.srigranth.org/')), 'Passage source links are available in-app');
     }
   }
-  assert.equal(total, 109);
+  assert.equal(total, 163);
 });
 test('Source and editorial content remain separate and source attribution is retained', () => {
   assert.ok(lines.every(l=>!('en' in l) && !('translation' in l) && !('meaning' in l)));
@@ -132,13 +143,13 @@ test('Source and editorial content remain separate and source attribution is ret
 });
 test('Existing library entry and offline shell include the functional reader', () => {
   assert.ok(read('index.html').includes('href="sukhmani.html"'));
-  assert.ok(read('index.html').includes('Ashtpadis 1–12 of 24'));
+  assert.ok(read('index.html').includes('Ashtpadis 1–18 of 24'));
   const sw = read('sw.js');
   for (const name of ['sukhmani.html','css/sukhmani.css','js/sukhmani-reader.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js']) {
     assert.ok(sw.includes('"./'+name+'"'), name);
   }
 });
 
-const report={status:'PASS', total:checks.length, checks, sourceOccurrences:lines.length, newSourceOccurrences:509, firstSixPreserved:true, pauriVerseLines:960, salokVerseLines:31, rahauLines:2, headings:26, meaningDrafts:Object.keys(teaching.meanings).length, passageStudyDrafts:109, humanReviewed:0};
+const report={status:'PASS', total:checks.length, checks, sourceOccurrences:lines.length, newSourceOccurrences:504, firstSixPreserved:true, firstTwelvePreserved:true, pauriVerseLines:1440, salokVerseLines:43, rahauLines:2, headings:38, meaningDrafts:Object.keys(teaching.meanings).length, passageStudyDrafts:163, humanReviewed:0};
 fs.writeFileSync(new URL('evidence/sukhmani-content-verification.json',root),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report));

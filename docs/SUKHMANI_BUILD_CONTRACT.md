@@ -1,6 +1,6 @@
 # Sukhmani Sahib expansion — build contract (draft)
 Date: 2026-11-23
-Status: First-twelve implementation in development. See `SUKHMANI_FIRST_TWELVE.md` for actual scope, source comparison, tests and remaining review. This is not a claim of a complete 24-Ashtpadi release or qualified human approval.
+Status updated 2026-11-24 (Pacific): The first-twelve public preview was published through PR #34. The continuation reaches Ashtpadi 18; see `SUKHMANI_FIRST_EIGHTEEN.md` for scope, source comparison, tests and remaining review. This is not a claim of a complete 24-Ashtpadi release or qualified human approval.
 
 ## Goal
 Add Sukhmani Sahib to the **existing** Gurbani Learning Library alongside Japji Sahib, never as a second separate app. Do not modify production content merely to announce completion.
@@ -35,6 +35,8 @@ Add Sukhmani Sahib to the **existing** Gurbani Learning Library alongside Japji 
 5. Test on physical iPhone Safari and explain limits; no deployment/merge without explicit release review.
 
 ## Existing release context
-The older R7 candidate document was superseded by `docs/R7_RELEASE_AND_ROLLBACK.md`: R7 was published on 2026-10-23. The public main head checked for this work is `254f3871b785b756208379138dcc17472a3733ff`. This development branch now includes the first twelve Ashtpadis; it does not replace or publish over the live reader. Later Nitnem development branches remain intact.
+The older R7 candidate document was superseded by `docs/R7_RELEASE_AND_ROLLBACK.md`: R7 was published on 2026-10-23. The subsequent first-twelve Sukhmani preview was published on 2026-11-24 at `39e2c410f0ef942bd611ba4de1a2d3b2d9ad1355`, with successful GitHub Pages deployment.
+
+The owner explicitly requested a usable, fully set-up, shareable application while material is still being added. That authorization led to the first-twelve preview release review in PR #34 and carries forward to this continuation. Partial content and AI-assisted teaching remain labeled; final acceptance goals above, especially qualified human collation and physical-device review, are not marked complete. Each preview increment requires an evidence-based technical release review before publishing to the same app. Other Nitnem development branches remain intact.
 
 References: README.md; docs/TEACHING_EXPANSION_ARCHITECTURE.md; docs/R7_RELEASE_CANDIDATE.md.
