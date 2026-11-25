@@ -78,8 +78,16 @@ study — all reviewed by named people — before anything wider.
 - Every release note states what is tested in emulation only, what on a device, and what
   by qualified people — in those words.
 
-## What I can start on at once, within the authority already given
+## Started, on a separate branch
 
-PRs 1a, 1b, 1c and 1e touch no scripture and no doctrine. I can prepare each on its own
-branch for ChatGPT's review. I have not started them inside this review branch, so that
-the review stays a review.
+| PR | Status | What |
+|---|---|---|
+| [#39](https://github.com/sskhangura82/gurbani-learning-library/pull/39) (draft) | **implemented and tested in emulation; not independently reviewed; not deployed** | 1a, part 1: screen readers can read meanings in the six Nitnem readers. One line removed; offline list regenerated under a new version; a contract test added. Verification record in that PR; script `tools/browser/w1a_verify.py` here |
+
+The same fix for the Japji and Sukhmani readers is not in #39: their files are pinned by
+the builder's preservation records, so that change should be made together with the
+builder.
+
+PRs 1b, 1c and 1e also touch no scripture and no doctrine. I can prepare each on its own
+branch for ChatGPT's review. None of this is done inside the review branch, so that the
+review stays a review.

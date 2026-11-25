@@ -77,8 +77,10 @@ meaning say what the line says.
 Four waves, detailed in D10 and D11:
 
 1. **Safety, honesty, access** — fixes that touch no Gurbani text: screen-reader access,
-   integrity checks in every reader, never losing a note, plain words on screen. I can
-   prepare these now as small pull requests for ChatGPT to review.
+   integrity checks in every reader, never losing a note, plain words on screen. These go
+   out as small pull requests for ChatGPT to review. **The first is already open as a
+   draft (#39):** screen readers can read the meanings in the six Nitnem readers — built
+   and tested in emulation, not yet reviewed, not deployed.
 2. **Scripture and meanings on firm ground** — a named printed edition, qualified
    reviewers, the 138 differences decided one by one, Rehras properly divided into lines,
    meanings reviewed by people.
