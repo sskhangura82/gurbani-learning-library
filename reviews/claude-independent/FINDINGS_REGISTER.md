@@ -344,7 +344,7 @@ S0 candidates: 6
 
 - **Severity:** S2
 - **Area:** Meanings · **Found:** independent · **Status:** OPEN
-- **Exact location:** nitnem/learning/course.complete.json (jaap001 vocabulary "…; verify grammar"; anand25 "Exact morphology of the jeweled phrase needs review."; Jaap 7.1, 9.3, 11.4 "…gloss remains provisional"); js/japji-lessons.js (38 of 42 studies mention the draft or the app)
+- **Exact location:** nitnem/learning/course.complete.json (jaap001 vocabulary "…; verify grammar"; anand25 "Exact morphology of the jeweled phrase needs review."; Jaap 7.1, 9.3, 11.4 "…gloss remains provisional"); js/japji-lessons.js (34 of 42 studies mention "this draft" or "the app")
 - **Composition / verse:** Jaap 1, 7, 9, 11; Anand 25; Japji studies
 - **Evidence:** Counted by script; e.g. a Japji teach-back question asks why "the app" counts 42 display units. In jaap001 the word ਅਨਭਉ is glossed "Self-existent", which is not its sense.
 - **Why it matters:** Readers should meet the teaching, not the production process.
