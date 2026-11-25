@@ -1,0 +1,68 @@
+{
+  "schema": "glp001.nitnem-proposed-source-manifest.v1",
+  "createdAtUtc": "2026-11-25T13:14:04.098178+00:00",
+  "files": [
+    {
+      "compositionId": "jaap",
+      "path": "/workspace/scratch/848c7bc44421/nitnem-source-audit/proposed-packs/jaap.json",
+      "sha256": "ddd7f5788c9112a7fcb0bea007e04d96bb4a4121df936f4b49e186cb2b7a67cf",
+      "editionId": "jaap-banidb-direct-20261125",
+      "unitCount": 199,
+      "sourceRecordCount": 782,
+      "textSequenceSha256": "27684a9524fcbb249fdecee0bc4355b6f18b63c7554ed543f3f16e16bd795d0a"
+    },
+    {
+      "compositionId": "savaiye",
+      "path": "/workspace/scratch/848c7bc44421/nitnem-source-audit/proposed-packs/savaiye.json",
+      "sha256": "96cea03347f558c060c2886af36afa08311cef27ef5aead770f6f8b67b0e9bd7",
+      "editionId": "savaiye-discover-narrow-repairs-20261125",
+      "unitCount": 10,
+      "sourceRecordCount": 40,
+      "textSequenceSha256": "76ad2b8546c25348077aa9352cfaeb8721b012867cfe9e93a0048c9ded873204"
+    },
+    {
+      "compositionId": "chaupai",
+      "path": "/workspace/scratch/848c7bc44421/nitnem-source-audit/proposed-packs/chaupai.json",
+      "sha256": "a64759bba8e6c9d2d2d8a2f7299a7a571168b672be00c8796c973022455dc35a",
+      "editionId": "chaupai-expanded29-narrow-repairs-20261125",
+      "unitCount": 29,
+      "sourceRecordCount": 116,
+      "textSequenceSha256": "de00ce3a1954ab4556bca0e842e63f35ec930b1cc98b0e8cb0929bf078906234"
+    },
+    {
+      "compositionId": "anand",
+      "path": "/workspace/scratch/848c7bc44421/nitnem-source-audit/proposed-packs/anand.json",
+      "sha256": "089c99f32d93e7414e0a93d775e43c7412c05e0228ace64512cbd4e2c7b5ebb6",
+      "editionId": "anand-opengranth-pinned-20261125",
+      "unitCount": 40,
+      "sourceRecordCount": 208,
+      "textSequenceSha256": "7c4ab28a3223dd53114317438bdd560aaf43e93c5f014cd47e1df586578545b8"
+    },
+    {
+      "compositionId": "rehras",
+      "path": "/workspace/scratch/848c7bc44421/nitnem-source-audit/proposed-packs/rehras.json",
+      "sha256": "735dd7c3dddec856bc77b0165b2b1fbba4775f37a5ab98e7a6839f0d6d7daab8",
+      "editionId": "rehras-sgpc-selection-narrow-repairs-20261125",
+      "unitCount": 44,
+      "sourceRecordCount": 159,
+      "textSequenceSha256": "35b3f17cc5f84f5e76715af831695bcae380c4abed524cb40d013736f4a2a110"
+    },
+    {
+      "compositionId": "sohila",
+      "path": "/workspace/scratch/848c7bc44421/nitnem-source-audit/proposed-packs/sohila.json",
+      "sha256": "03982aef989784561f2543ab287ad7781c8196d200b0a9b10bf99c0d6c424791",
+      "editionId": "sohila-srigranth-digitally-collated-20261125",
+      "unitCount": 5,
+      "sourceRecordCount": 56,
+      "textSequenceSha256": "fc0e84c97908945aa98694e174384b031a347e00281f3766cad8fdabaaf7d918"
+    }
+  ],
+  "allSixLegacySourceIdsPreserved": true,
+  "totalSourceRecords": 1361,
+  "sourceReadingAmendments": 12,
+  "separateDisplayTitleRemoval": "Jaap duplicated website title removed from preface; still present as titleGurmukhi. This does not change any source-line ID.",
+  "jaap62HeaderOrderNote": "Unit62 now has sourceDisplayOrder requiring tera jor at62.line01 BEFORE the Chachari metre heading, followed by62.line02 onward. Renderer must honor this exceptional order; all legacy line IDs remain.",
+  "humanCollationApproved": false,
+  "modernTranslationsImported": false,
+  "frozenAtUtc": "2026-11-25T13:17:58.675274+00:00"
+}

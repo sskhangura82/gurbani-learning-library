@@ -1,0 +1,14 @@
+{
+  "commit": "41194b8d135e511d6d3af499e7906562437a55e2",
+  "purpose": "Immutable published Japji and complete Sukhmani runtime baseline before full Nitnem integration; collected from git objects, not current edits.",
+  "files": {
+    "full-japji.html": "1add0c3f283453ac7cc6b5e22a21e092b72fef74319672b73f444bf6d40f7ae1",
+    "js/japji-full.js": "3ec2dc3917704956741d3ea91add143167bd5b884d2996059e79537aa4c7c218",
+    "sukhmani.html": "423e46da7e8d7fcc760304e256e0add5fe91fe8edf157f11181e039b3e1c939a",
+    "js/sukhmani-data.js": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+    "js/sukhmani-teaching.js": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6",
+    "js/sukhmani-reader.js": "73e702524ce7d00ead7fecba978fe0efeefb0cb0490145e11ffda8e17be798c5",
+    "js/sukhmani-learning.js": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4",
+    "css/sukhmani.css": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f"
+  }
+}

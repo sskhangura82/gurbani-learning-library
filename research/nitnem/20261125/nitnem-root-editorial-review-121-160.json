@@ -1,0 +1,38 @@
+{
+  "schema": "glp.nitnem.independent-editorial-review.v1",
+  "reviewer": "Independent root AI reviewer, separate from author",
+  "reviewedAt": "2026-11-25T13:31:20.060909+00:00",
+  "artifact": "nitnem-teaching-121-160.json",
+  "artifactSHA256": "c27a5671e3081a1390586bb3d540ae504f940a6c38269223a7a4c65b4b2634a3",
+  "sourceSubsetSHA256": "8caba58a0705771c3838e81d78da0d7d56c061c44d45be5e1ccc8a6569a5f884",
+  "qualifiedHumanReviewed": 0,
+  "readScope": {
+    "bilingualMeaningPairs": 160,
+    "bilingualStudyUnits": 40,
+    "bilingualVocabularyEntries": 120,
+    "headingNotes": 4,
+    "sourceCheckRecords": 19
+  },
+  "coverage": "All meanings, both languages of every new study field, all vocabulary and metrical-heading explanations read. Reused meanings compared with source and contextual cautions; conceptual extensions remain labeled as commentary or reflection.",
+  "findings": [
+    "Requested evidence for8 compressed/ambiguous forms; inspected cited derivative commentary directly and kept attributed alternatives.",
+    "Removed unsupported afflictions gloss in129.1.",
+    "121 ruju two-direction interpretation now disclosed.",
+    "130 unnecessary comparative prose removed.",
+    "152 rahind release interpretation directly checked in cited footnote.",
+    "155 sahib-qiran historical-image explanation checked and kept distinct from astrological instruction.",
+    "158 imaan reference directly checked against Mahan Kosh dictionary entry explicitly citing the Jaap phrase.",
+    "Both anitt and su-nitt preserved and explained together; no textual harmonization.",
+    "No further required correction after final40-study reading."
+  ],
+  "directlyConsultedURLs": [
+    "https://www.sikhtranslations.com/chh-2/",
+    "https://www.sikhtranslations.com/chh-3/",
+    "https://www.sikhtranslations.com/chh-4/",
+    "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਇਮਾਨ"
+  ],
+  "limitations": [
+    "AI editorial reading is not qualified Sikh scholarly, santhiya or full printed-edition approval.",
+    "Original printed Bhai Vir Singh edition was not inspected; the derivative online commentary is identified as such."
+  ]
+}

@@ -1,0 +1,289 @@
+[
+  {
+    "compositionId": "jaap",
+    "id": "jaap177.line04",
+    "reason": "Exact direct BaniDB snapshot reading selected; a tippi is present in the provider source. This is a documented edition reading, not an assertion that all witnesses agree.",
+    "banidbVerseId": 1220,
+    "banidbUpdated": "2026-11-17 03:25:36",
+    "oldText": "ਅਮ੍ਰਿਤਾ ਮ੍ਰਿਤ ਹੈਂ ॥੧੭੭॥",
+    "oldSha256": "9838b67efedadc3baef4983b9a30bda238db987f20f9c3953d8a17b7c42f5b5b",
+    "newText": "ਅੰਮ੍ਰਿਤਾ ਮ੍ਰਿਤ ਹੈਂ ॥੧੭੭॥",
+    "newSha256": "7c3175fec453334a1b9c8656939a7d9a3923102183593967da31f6abb63e8c42"
+  },
+  {
+    "compositionId": "savaiye",
+    "id": "savaiye08.line03",
+    "oldText": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਿਤ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸਿ ਪਰੈਂਗੇ ॥",
+    "oldSha256": "3b5257a0688b5dc6964a4174c4c33db693d7ac387f24af0e08acadf771fa097d",
+    "newText": "ਬ੍ਰਹਮ ਮਹੇਸਰ ਬਿਸਨ ਸਚੀਪਤਿ ਅੰਤ ਫਸੇ ਜਮ ਫਾਸਿ ਪਰੈਂਗੇ ॥",
+    "newSha256": "71e2dd232b29114f6efb49005e9e06899ccc569bee096806ea52c1d95132c9cd",
+    "reason": "Repair the internal vowel position in the name Sachipati, supported by the printed source and direct BaniDB; retain the existing remainder and counter.",
+    "witnesses": [
+      {
+        "id": "sahib-singh-printed-savaiye",
+        "url": "https://gurbani-audios-c4abhzghhnccd5gj.z01.azurefd.net/database/vidhia.com/Professor%20Sahib%20Singh/Prof-Sahib-Singh-Sri-Jaap-Sahib-Steek.pdf",
+        "title": "ਜਾਪੁ ਸਾਹਿਬ, ਸਵੱਯੇ, ਚੌਪਈ ਸਟੀਕ — Professor Sahib Singh; Singh Book Stall, Amritsar",
+        "sha256": "1284a06232d35ed25b0a9c2ce4e745fcc81b86dcd256f4099604ccb070a764a3",
+        "verification": "AI visual spot checks of source words on PDF pages131 and133 (printed130 and132); not full printed-edition collation.",
+        "pdfPage": 131
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/6",
+        "sha256": "7ab0a62c09efb028eb9b71ca8bfa39fd4f401ad6108eeccef916b750226215cd",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "savaiye",
+    "id": "savaiye10.line04",
+    "oldText": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਿਝਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥੧੦॥",
+    "oldSha256": "de8bc9d640117d50d97b971704e9d3e7d3d58d4e9e3596cd18483f1e7a39be1f",
+    "newText": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਝਿਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥੧੦॥",
+    "newSha256": "15ad7a05fa0b6996c00992b0fd87135eeee36ab45d8e14f73719aa96e0ac48af",
+    "reason": "Repair the internal vowel position in the printed verb reading, supported by the printed source and direct BaniDB; retain the existing remainder and counter.",
+    "witnesses": [
+      {
+        "id": "sahib-singh-printed-savaiye",
+        "url": "https://gurbani-audios-c4abhzghhnccd5gj.z01.azurefd.net/database/vidhia.com/Professor%20Sahib%20Singh/Prof-Sahib-Singh-Sri-Jaap-Sahib-Steek.pdf",
+        "title": "ਜਾਪੁ ਸਾਹਿਬ, ਸਵੱਯੇ, ਚੌਪਈ ਸਟੀਕ — Professor Sahib Singh; Singh Book Stall, Amritsar",
+        "sha256": "1284a06232d35ed25b0a9c2ce4e745fcc81b86dcd256f4099604ccb070a764a3",
+        "verification": "AI visual spot checks of source words on PDF pages131 and133 (printed130 and132); not full printed-edition collation.",
+        "pdfPage": 133
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/6",
+        "sha256": "7ab0a62c09efb028eb9b71ca8bfa39fd4f401ad6108eeccef916b750226215cd",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "chaupai",
+    "id": "chaupai-rehras05.line02",
+    "oldText": "ਮਰਨ ਕਾਲ ਤ੍ਰਾਸ ਨਿਵਰਿਯੈ ॥",
+    "oldSha256": "a292ba84a7c9aa67146893717028d598d219b0f3e869f25e7fd0a60b8af8a06b",
+    "newText": "ਮਰਨ ਕਾਲ ਕਾ ਤ੍ਰਾਸ ਨਿਵਰਿਯੈ ॥",
+    "newSha256": "1c6c20280c5cdd0c9f418be41ff1a9080ad78f37683a33eb48d3e2a87ffb8492",
+    "reason": "Restore the particle ਕਾ, present in the visually checked printed source and direct provider.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 4
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "chaupai",
+    "id": "chaupai-rehras10.line03",
+    "oldText": "ਸਿਵਕਨ ਕੋ ਸਵਗੁਨ ਸੁਖ ਦੀਯੋ ॥",
+    "oldSha256": "28830933604f6cce33fab53ef95a4d7abeae44832fd37a4c465cbf765c9be2cb",
+    "newText": "ਸਿਵਕਨ ਕੋ ਸਿਵਗੁਨ ਸੁਖ ਦੀਯੋ ॥",
+    "newSha256": "d1cad0536ed54ae32e6cfa61d7a15989ca756a47760ecfb178db40f0cc506f35",
+    "reason": "Restore the missing sihari in the word sivgun, supported by the printed source and direct provider.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 7
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "chaupai",
+    "id": "chaupai-rehras20.line02",
+    "oldText": "ਸਿੱਖਯ ਉਬਾਰਿ ਅਸਿੱਖਯ ਸੱਘਰੋ ॥",
+    "oldSha256": "18933d8de59d7e02ac9f260ad4a531a687990c495d31081c72aa8827fda059ed",
+    "newText": "ਸਿੱਖਯ ਉਬਾਰਿ ਅਸਿੱਖਯ ਸੰਘਰੋ ॥",
+    "newSha256": "3c2a51ec0807f744113c96060fed6d4d5df6753efd0f27f80190930b8bb4728e",
+    "reason": "Use the printed/provider sangharo reading, replacing the anomalous addak with tippi.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 12
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "chaupai",
+    "id": "chaupai-rehras23.line01",
+    "oldText": "ਕ੍ਰਿਪਾ ਦ੍ਰਿਸਾਟਿ ਤਨ ਜਾਹਿ ਨਿਹਰਿਹੋ ॥",
+    "oldSha256": "fe1feebf7740aef63659533ccdce307c73f2af99ea0f3b4ecf7c07579ed93c44",
+    "newText": "ਕ੍ਰਿਪਾ ਦ੍ਰਿਸਟਿ ਤਨ ਜਾਹਿ ਨਿਹਰਿਹੋ ॥",
+    "newSha256": "164321e4a75de2f1f5c963e3a0d00ee178a3f7540ac29d86cad0729a99c62f5f",
+    "reason": "Remove the anomalous kanna in dristi, supported by the printed source and direct provider.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 14
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "anand",
+    "id": "anand24.line03",
+    "oldText": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚੀ ਆਖਿ ਵਖਾਣੀ ॥",
+    "oldSha256": "4c2a9d0b7bd9ce131840ad1430580160a2a77df03606d1281b44087aab14af50",
+    "newText": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚਂੀ ਆਖਿ ਵਖਾਣੀ ॥",
+    "newSha256": "afc775a4bdd3a1e45ac64fb748605048d56ecb2a70d021dd9886e8a49a897673",
+    "reason": "Replace a font-specific U+F03D private-use character by the exact spelling and combining-mark order of an explicitly selected pinned Open Granth digital source. This is not a universal normalization or a claim that all witnesses agree.",
+    "witnesses": [
+      {
+        "id": "opengranth-pinned",
+        "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0920.md",
+        "sha256": "15b863ee2b3abd7ce1f9e0e44e190b2f4ef06f58ef82c0de0df2699d255512a8"
+      },
+      {
+        "sourceUrl": "https://api.banidb.com/v2/banis/10",
+        "snapshotSha256": "87651ea747b625bef0e477364d879f7691ee57bc0be761fc6f1c084aac919dc2",
+        "verseId": 1907,
+        "pageNo": 920,
+        "lineNo": 8,
+        "unicode": "ਕਹਦੇ ਕਚੇ ਸੁਣਦੇ ਕਚੇ ਕਚਂੀ ਆਖਿ ਵਖਾਣੀ ॥",
+        "sameExactUnicodeAsSelectedSource": true,
+        "lineageIndependence": "Not established"
+      }
+    ]
+  },
+  {
+    "compositionId": "rehras",
+    "id": "rehras.chaupai-rehras05.line02",
+    "oldText": "ਮਰਨ ਕਾਲ ਤ੍ਰਾਸ ਨਿਵਰਿਯੈ ॥",
+    "oldSha256": "a292ba84a7c9aa67146893717028d598d219b0f3e869f25e7fd0a60b8af8a06b",
+    "newText": "ਮਰਨ ਕਾਲ ਕਾ ਤ੍ਰਾਸ ਨਿਵਰਿਯੈ ॥",
+    "newSha256": "1c6c20280c5cdd0c9f418be41ff1a9080ad78f37683a33eb48d3e2a87ffb8492",
+    "reason": "Restore the particle ਕਾ, present in the visually checked printed source and direct provider.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 4
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "rehras",
+    "id": "rehras.chaupai-rehras10.line03",
+    "oldText": "ਸਿਵਕਨ ਕੋ ਸਵਗੁਨ ਸੁਖ ਦੀਯੋ ॥",
+    "oldSha256": "28830933604f6cce33fab53ef95a4d7abeae44832fd37a4c465cbf765c9be2cb",
+    "newText": "ਸਿਵਕਨ ਕੋ ਸਿਵਗੁਨ ਸੁਖ ਦੀਯੋ ॥",
+    "newSha256": "d1cad0536ed54ae32e6cfa61d7a15989ca756a47760ecfb178db40f0cc506f35",
+    "reason": "Restore the missing sihari in the word sivgun, supported by the printed source and direct provider.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 7
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "rehras",
+    "id": "rehras.chaupai-rehras20.line02",
+    "oldText": "ਸਿੱਖਯ ਉਬਾਰਿ ਅਸਿੱਖਯ ਸੱਘਰੋ ॥",
+    "oldSha256": "18933d8de59d7e02ac9f260ad4a531a687990c495d31081c72aa8827fda059ed",
+    "newText": "ਸਿੱਖਯ ਉਬਾਰਿ ਅਸਿੱਖਯ ਸੰਘਰੋ ॥",
+    "newSha256": "3c2a51ec0807f744113c96060fed6d4d5df6753efd0f27f80190930b8bb4728e",
+    "reason": "Use the printed/provider sangharo reading, replacing the anomalous addak with tippi.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 12
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  },
+  {
+    "compositionId": "rehras",
+    "id": "rehras.chaupai-rehras23.line01",
+    "oldText": "ਕ੍ਰਿਪਾ ਦ੍ਰਿਸਾਟਿ ਤਨ ਜਾਹਿ ਨਿਹਰਿਹੋ ॥",
+    "oldSha256": "fe1feebf7740aef63659533ccdce307c73f2af99ea0f3b4ecf7c07579ed93c44",
+    "newText": "ਕ੍ਰਿਪਾ ਦ੍ਰਿਸਟਿ ਤਨ ਜਾਹਿ ਨਿਹਰਿਹੋ ॥",
+    "newSha256": "164321e4a75de2f1f5c963e3a0d00ee178a3f7540ac29d86cad0729a99c62f5f",
+    "reason": "Remove the anomalous kanna in dristi, supported by the printed source and direct provider.",
+    "witnesses": [
+      {
+        "id": "sikhnet-benti-printed",
+        "url": "https://sikhnet.com/files/ereader/5%20-%20Benti%20Choupai%20%5BRoman%20%26%20Gurmukhi%5D.pdf",
+        "title": "Benti Choupai — SikhNet Gurmukhi and romanized text",
+        "sha256": "9869413b76b4924bcf07cc6f04bb880c5087d685a9196c00b7ee919b5d6e77b8",
+        "verification": "AI visual spot checks of the original Gurmukhi on PDF pages4,7,12,14; no modern translation imported.",
+        "pdfPage": 14
+      },
+      {
+        "id": "banidb-direct",
+        "url": "https://api.banidb.com/v2/banis/9",
+        "sha256": "08be5ae2a27ba9dbb6b0d27626aff3e48786bf81153b761a729775d51f3189a9",
+        "scope": "The amended word/phrase matches the direct provider; remaining orthography and counters are retained from the base edition."
+      }
+    ]
+  }
+]

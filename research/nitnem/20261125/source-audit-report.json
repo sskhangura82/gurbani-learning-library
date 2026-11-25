@@ -1,0 +1,89 @@
+{
+  "schema": "glp001.nitnem-source-audit.v1",
+  "frozenAtUtc": "2026-11-25T13:17:58.675274+00:00",
+  "status": "SOURCE_EDITION_SELECTED_AND_NARROW_REPAIRS_RECORDED",
+  "qualifiedHumanReviewCount": 0,
+  "sourceManifest": "proposed-source-manifest.json",
+  "sourceAmendments": "source-amendments.json",
+  "unitBoundaryManifest": "unit-boundaries.json",
+  "teachingImpactReview": "teaching-rebinding-review.json",
+  "summary": {
+    "banis": 6,
+    "sourceUnits": 327,
+    "sourceRecords": 1361,
+    "allLegacyUnitAndLineIdsPreserved": true,
+    "changedSourceOccurrences": 12,
+    "duplicatedTitleRemoved": 1,
+    "heldSourceRecordsRemaining": 0
+  },
+  "verification": {
+    "jaap": "808 full source occurrences agree exactly with direct BaniDB when explicit62 reading order is honored; this includes782 line-ID occurrences and26 preface/metre rows. Only177.4 differs from the old line text.",
+    "savaiye": "40 ordered source occurrences aligned with BaniDB. Two printed-supported lexical transcription repairs; other orthography/counter variants retained.",
+    "chaupai": "116 ordered source occurrences aligned with provider groups377–405. Four narrow printed/provider-supported repairs; remaining variants retained. The29-group reading is explicitly labeled expanded.",
+    "anand": "All208 pauri lines form an exact consecutive subsequence of pinned Open Granth after24.3 repair; full1–40 ending included. Direct BaniDB confirms the repaired encoding.",
+    "rehras": "Nine opening SGGS hymns match the entire consecutive source range, not isolated lines. All57 SGGS aggregate IDs have exact Ang/range mapping.100 Chaupai lines equal the selected25 core groups from the corrected Chaupai pack. Savaiya/Dohira remain distinct.",
+    "sohila": "All56 source records form the exact consecutive five-shabad sequence in fresh SriGranth when whitespace is ignored. Heading-final danda and the source row split on Ang12/13 are documented; no words altered."
+  },
+  "institutionalBoundaryReference": {
+    "url": "https://sgpc.net/wp-content/uploads/2025/06/Sikh-Rehat-Maryada-English-n.pdf",
+    "snapshotSha256": "aa9645db5b828549bd31eebe33dd84e9af3221d2327b4c36b2a08dbe63b618fc",
+    "pdfPage": 21,
+    "printedPage": 21,
+    "visualCheck": "AI visually read the original page; OCR was only a navigation aid.",
+    "rehrasComponents": [
+      "nine SGGS hymns after Japji, Sodar through saran pare ki rakho sarma",
+      "Benti Chaupai from hamri karo hath dai rachha through dusht dokh te leho bachai",
+      "Pae Gahe Savaiya",
+      "Sagal Duar Dohira",
+      "Anand first5 andlast40",
+      "Mundawani and Salok Mahalla5 TeraKita"
+    ],
+    "morningQualification": "Printed p20 lists Japji, Jaap and tenSavaiye in its daily morning clause. This clause does not itself establish a five-bani morning29-group Chaupai limit. The app’s selected expanded29-group morning reading is labeled by edition, not presented as a universally adjudicated Maryada boundary."
+  },
+  "variantEvidence": [
+    "jaap-direct-banidb-comparison.json",
+    "jaap-historical-variant-analysis.json",
+    "savaiye-direct-provider-comparison.json",
+    "chaupai-direct-provider-comparison.json",
+    "sggs-source-comparison.json",
+    "rehras-sggs-ang-mapping.json"
+  ],
+  "materialIntegrationRequirements": [
+    {
+      "id": "jaap062-order",
+      "requirement": "Honor unit62.sourceDisplayOrder: tera jor before the Chachari heading. This is a real source-order issue, not an optional typography preference."
+    },
+    {
+      "id": "source-and-teaching-rebinding",
+      "requirement": "Apply the12 recorded source occurrences and rebind only after reading source-amendments/teaching-rebinding-review. All10 previously authored affected meanings must use new hashes; Chaupai23 and matching Rehras23 unit anchors also change. Update Rehras exact-source reuse provenance."
+    },
+    {
+      "id": "source-claim-scope",
+      "requirement": "Do not label the material human reviewed, universally authoritative, or fully collated against all printed editions. Educational preview may be complete in coverage while qualified review remains pending."
+    }
+  ],
+  "limitations": [
+    "Digital source lineages are not established as independent, even where text agrees.",
+    "Only the specifically named printed words and institutional boundary pages were visually inspected; no full printed collation of all six banis is claimed.",
+    "Sohila02.line08 remains Ang13 per SriGranth; pinned Open Granth instead merges the line into anAng12 record.",
+    "Raw API/source snapshots in scratch may contain publisher commentary/translations; only original Gurmukhi and our own audit notes belong in app source files.",
+    "No external message, repo edit, branch mutation, browser, or physical-device test performed by this source audit."
+  ],
+  "witnessRetrievalManifests": [
+    "fresh/sggs-retrieval-manifest.json",
+    "fresh/additional-witness-retrieval-manifest.json",
+    "fresh/banidb-jaap-4-retrieval.json",
+    "fresh/sikhnet-benti-chaupai-retrieval.json"
+  ],
+  "artifactHashScope": {
+    "prototypeManifest": "proposed-source-manifest.json",
+    "prototypeManifestSha256": "7e0defa75fa40e08319d91f2a4229e5ec234c73acfd2e51d3e07d1583f6375d0",
+    "definition": "Manifest hashes refer to exact frozen prototype pack files, not the subsequent runtime JSON bytes after top-level publication metadata integration.",
+    "runtimeReceipt": "runtime-source-receipt.json",
+    "runtimeReceiptSha256": "3585d9a5d8c79c6675f692aac4dd29a8a53adce55999a4c84c0938b01febaf48",
+    "runtimeSnapshotVerifiedAtUtc": "2026-11-25T13:32:47.275053+00:00",
+    "preservedPayload": "All six source packs retain their full source units, exact lines and hashes, locations, preface, headings and sourceDisplayOrder. Only the six metadata fields identified in the receipt differ.",
+    "runtimeHashAuthority": "The runtime library.json manifest and runtime-source-receipt.json record runtime file hashes separately. Recompute the receipt if runtime pack bytes change."
+  },
+  "artifactHashScopeUpdatedAtUtc": "2026-11-25T13:32:47.275053+00:00"
+}
