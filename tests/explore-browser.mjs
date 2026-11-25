@@ -44,6 +44,22 @@ try{
    assert.ok(requests.every(x=>x.startsWith(origin)),"No third-party requests allowed");
    await page.screenshot({path:path.join(snapshots,"explore-"+dims.label+".png"),fullPage:true,animations:"disabled"});
   });
+  if(dims.label==="phone")await check("Source link opens the actual original Sukhmani Ashtpadi 17, not just the home of the reader",async()=>{
+   const full=await context.newPage();
+   try{
+    const link=await page.locator("#original-link").getAttribute("href");
+    const uri=new URL(link,page.url()).href;
+    const res=await full.goto(uri);
+    assert.equal(res.status(),200);
+    const section=full.locator("#ashtpadi-17");
+    await section.waitFor({state:"attached"});
+    assert.equal(await section.locator("h2").first().innerText(),"Ashtpadi 17");
+    await full.waitForTimeout(400);
+    const top=await section.evaluate(n=>Math.round(n.getBoundingClientRect().top));
+    const height=await full.evaluate(()=>window.innerHeight);
+    assert.ok(top>=-110&&top<height-120,"Fragment did not bring Ashtpadi 17 into view, top="+top+" viewport="+height);
+   }finally{await full.close();}
+  });
   await check(dims.label+" selects Pauri 5 with source and interpretive caution",async()=>{
    await page.getByRole("button",{name:"Pauri 5",exact:true}).click();
    assert.match(await page.locator("#lesson-heading").innerText(),/limits of human control/i);
