@@ -23,28 +23,28 @@ def f(id, sev, area, title, where, verse, evidence, why, fix, test, status='OPEN
 
 
 # ───────────────────────────── Scripture ─────────────────────────────
-f('CI-S-01', 'S1', 'Scripture', 'Jaap Sahib chhand 62: an invocation is shown as a verse line and the heading order is reversed',
-  'nitnem/data/jaap.json → unit jaap062 (heading01 "ਚਾਚਰੀ ਛੰਦ ॥", line01 "ਤੇਰਾ ਜੋਰੁ ॥")', 'Jaap Sahib, chhand 62',
-  'Reference database line KUAA (Dasam Granth p. 4, line 7) is one heading: "ਤੇਰਾ ਜੋਰੁ ॥ ਚਾਚਰੀ ਛੰਦ ॥". The app shows "ਚਾਚਰੀ ਛੰਦ ॥" as heading, then "ਤੇਰਾ ਜੋਰੁ ॥" as verse "Line 1 of 5" with its own meaning. ' + E + 's05_differences.json (jaap062). The builder\'s own note in the data file says its source marks the phrase as a heading.',
-  'Order and status of a line of Gurbani differ from the reference. A reader reciting from the app says the words in a different order from the Granth, and a heading is taught as a verse.',
-  'After checking a named printed edition: show "ਤੇਰਾ ਜੋਰੁ ॥ ਚਾਚਰੀ ਛੰਦ ॥" as the heading in that order; chhand 62 then has four verse lines; rebind or retire the meaning written for "line 1".',
-  'jaap062 renders one heading in print order and four verse lines; Jaap verse-line count drops from 782 to 781 with the heading count adjusted; the collation script reports no order difference at chhand 62; scholar sign-off recorded.',
-  'OPEN-NEEDS-SCHOLAR', s0c=True)
+f('CI-S-01', 'S3', 'Scripture', 'Jaap Sahib chhand 62: the invocation "ਤੇਰਾ ਜੋਰੁ ॥" is counted and taught as a verse line (reviewer\'s first claim of a reversed order is withdrawn)',
+  'nitnem/data/jaap.json → unit jaap062 (line01 "ਤੇਰਾ ਜੋਰੁ ॥", metricalHeadings[0] "ਚਾਚਰੀ ਛੰਦ ॥", sourceDisplayOrder)', 'Jaap Sahib, chhand 62',
+  'CORRECTED 2026-11-25 during comparison. On screen the reader draws "ਤੇਰਾ ਜੋਰੁ ॥" and then "ਚਾਚਰੀ ਛੰਦ ॥", which is the reference order (database line KUAA, Dasam Granth p. 4: "ਤੇਰਾ ਜੋਰੁ ॥ ਚਾਚਰੀ ਛੰਦ ॥") — ' + E + 's09_jaap62_order.json, ' + E + 's11c_rendered_order.json. My first register listed headings before lines inside each unit and so reported a reversed order; that was my extraction script\'s mistake, not the app\'s. The builder\'s release note and tests already described and checked this order. What remains: the phrase is stored as verse "Line 1 of 5" with its own meaning, where the reference has it inside the heading line, so chhand 62 shows five lines against the Granth\'s four.',
+  'Small: a learner is told chhand 62 has five lines. The builder kept the line ID on purpose so that saved bookmarks would survive.',
+  'When line IDs are next migrated (see CI-R-03), type the phrase as an invocation/heading and keep its saved-learning link.',
+  'Chhand 62 is labelled with four verse lines; a bookmark saved on the old ID still opens.',
+  'OPEN')
 f('CI-S-02', 'S1', 'Scripture', 'Jaap Sahib: the same word is stored in two different encodings, one of them ill-formed',
   'nitnem/data/jaap.json → jaap096.line01–04, jaap098.line04 ("ਚੱਤ੍ਰੁ") and jaap097.line01–04, jaap098.line01–03 ("ਚੱਤੁ੍ਰ")', 'Jaap Sahib, chhands 96–98',
-  E + 's04_shaping.json, ' + E + 's05_differences.json, screenshot ' + E + 'screenshots/21_jaap096_098_chatr.png. In "ਚੱਤੁ੍ਰ" the vowel sign is stored before the joining mark, which is not a valid order; the two spellings draw differently on screen. The reference reads "ਚੱਤ੍ਰ" in all eleven places.',
+  E + 's04_shaping.json, ' + E + 's05_differences.json, screenshot ' + E + 'screenshots/21_jaap096_098_chatr.png. In "ਚੱਤੁ੍ਰ" the vowel sign is stored before the joining mark, which is not a valid order; the two spellings draw differently on screen. The reference reads "ਚੱਤ੍ਰ" in all eleven places. The builder reports [R] that its Jaap text equals a BaniDB snapshot exactly, so this inconsistency probably comes from that source and should be reported to it once print is checked.',
   'Visibly inconsistent Gurbani within three adjacent chhands; how it draws depends on the phone\'s text engine (not tested on an iPhone).',
   'Choose one reading from a named printed edition and store it in valid mark order in all eleven places.',
   'All eleven occurrences are byte-identical for this word; a scan for "vowel sign before virama" over the whole corpus returns 0; rendering checked on a physical iPhone.',
   'OPEN-NEEDS-SCHOLAR', s0c=True)
 f('CI-S-03', 'S1', 'Scripture', 'Jaap Sahib: four places where the text contradicts its own pattern',
   'nitnem/data/jaap.json → jaap108.line04, jaap122.line04, jaap198.line04 (vs jaap198.line02), jaap179.line04', 'Jaap Sahib 108.4, 122.4, 198.4, 179.4',
-  '108.4 "ਕਿ ਗੈਬੁਲ ਗ਼ੈਬ ਹੈਂ" (the dot under ਗ is on the second word only; reference ਗ਼ੈਬੁਲ ਗ਼ੈਬ). 122.4 "ਜ਼ਮੀਨਲ ਜ਼ਮਾਨੈਂ" (every neighbouring word of this form ends -ੁਲ; reference ਜ਼ਮੀਨੁਲ). 198.4 "ਕਰੀਮਲੁ ਰਹੀਮੇ" while 198.2 in the same chhand has "ਕਰੀਮੁਲ" (reference ਕਰੀਮੁਲ in both). 179.4 "ਹੈਂ॥੧੭੯॥" has no space before the verse number, unlike the other 198 chhands. ' + E + 's05_differences.json.',
+  '108.4 "ਕਿ ਗੈਬੁਲ ਗ਼ੈਬ ਹੈਂ" (the dot under ਗ is on the second word only; reference ਗ਼ੈਬੁਲ ਗ਼ੈਬ). 122.4 "ਜ਼ਮੀਨਲ ਜ਼ਮਾਨੈਂ" (every neighbouring word of this form ends -ੁਲ; reference ਜ਼ਮੀਨੁਲ). 198.4 "ਕਰੀਮਲੁ ਰਹੀਮੇ" while 198.2 in the same chhand has "ਕਰੀਮੁਲ" (reference ਕਰੀਮੁਲ in both). 179.4 "ਹੈਂ॥੧੭੯॥" has no space before the verse number, unlike the other 198 chhands. ' + E + 's05_differences.json. The builder reports [R] exact equality with a BaniDB snapshot, so these are probably that source\'s slips, accepted because "equal to the provider" was the pass condition.',
   'These read as transcription slips carried in from the source, in a bani recited daily.',
   'Correct after print confirmation; keep the previous reading and the supporting edition in the change record.',
   'The four lines match the confirmed edition; a pattern scan for words ending -ਲੁ where the chhand\'s other words end -ੁਲ returns 0; spacing before every verse number is uniform.',
   'OPEN-NEEDS-SCHOLAR', s0c=True)
-f('CI-S-04', 'S2', 'Scripture', 'Jaap Sahib: 36 of 808 occurrences differ from the reference at letter level',
+f('CI-S-04', 'S2', 'Scripture', 'Jaap Sahib: 34 of 808 occurrences differ from the reference at letter level',
   'nitnem/data/jaap.json (full list in the register)', 'Jaap Sahib (e.g. 1.2 ਸਕਤਿ/ਸਕਤ, 79.4 ਰਿਸਾਲ/ਰਸਾਲ, 81.4 ਖੇਲਿ/ਖੇਲ, 86.3 ਨੇਤਿ/ਨੇਤ, 92.2 ਨ੍ਰਿਕਾਮ/ਨਿਕਾਮ, 125.2 ਬਿਭੂਤਿ/ਬਿਭੂਤ, 128.2 ਸਰੂਪੇ/ਸਰੂਪੈ, 141.4 ਅਜਾਦਿ/ਅਜਾਦ, 148.1 ਪੁਤ੍ਰੈ/ਪੁੱਤ੍ਰੈ, 179.1 ਅਮਿਤੇਸ੍ਵਰ/ਅਮ੍ਰਿਤੇਸ੍ਵਰ, 197.1 ਪ੍ਰਨਾਮੇ/ਪ੍ਰਣਾਮੇ)',
   E + 's05_register.csv (status = letter_level_difference, part = jaap) and ' + E + 's05_differences.json. For 1.2 two further web witnesses were seen and they disagree with each other, which shows digital copies of Dasam Bani cannot settle this.',
   'Neither side is proven right. Without a named printed edition nobody can say which reading the app intends to publish.',
@@ -141,9 +141,9 @@ f('CI-M-06', 'S2', 'Meanings', 'Core Sikh terms are often replaced by a single E
   'Adopt a term sheet: keep the Gurmukhi-origin word, gloss it once, link to a concept note.', 'Term screen shows each core term kept in at least 95% of its occurrences.', 'OPEN')
 f('CI-M-07', 'S2', 'Meanings', 'Modern legal- and medical-style disclaimers are attached to hundreds of lines',
   'nitnem/learning/course.complete.json → interpretiveCaution (shown under "Interpretation and context", nitnem/learning/learning-ui.js:84); studies in all three data sets', '309 of 1,361 Nitnem line notes (148 distinct texts) and 154 of 610 studies',
-  'Examples shown to readers: "…not clinical efficacy data, and should not be used to dissuade anyone from medical treatment."; "…not a psychiatric treatment guarantee."; "…not a medical anatomy guide, yoga instruction or objective experimental map." Jaap chhand 1 brings in a present-day caste-injustice frame. Counted by script in this review.',
+  'Examples shown to readers: "…not clinical efficacy data, and should not be used to dissuade anyone from medical treatment."; "…not a psychiatric treatment guarantee."; "…not a medical anatomy guide, yoga instruction or objective experimental map." Jaap chhand 1 brings in a present-day caste-injustice frame. Counted by script in this review. Root cause found in comparison: the builder\'s own test (tests/nitnem-content.mjs:219) fails unless every one of the 1,361 line notes has a caution, so a caution was written even where there was nothing to caution about.',
   'A reader opening the meaning of a line of Gurbani meets risk-management language written for a different purpose. Modern ideas are mixed into the explanation without being labelled as the editor\'s reflection.',
-  'Remove these from line notes. Put one short, respectful general note in About ("Gurbani is not medical advice…"). Keep genuine interpretive notes (alternative readings, grammar) only.',
+  'Make the caution field optional and drop the test rule that requires one on every line. Remove these from line notes. Put one short, respectful general note in About. Keep genuine interpretive notes (alternative readings, grammar) only.',
   'Disclaimer screen returns 0 on line notes; one general note exists; reviewers approve remaining notes.', 'OPEN-OWNER-DECISION')
 f('CI-M-08', 'S2', 'Meanings', 'Editor\'s working notes and talk about "the app" and "this draft" appear in what readers see',
   'nitnem/learning/course.complete.json (jaap001 vocabulary "…; verify grammar"; anand25 "Exact morphology of the jeweled phrase needs review."; Jaap 7.1, 9.3, 11.4 "…gloss remains provisional"); js/japji-lessons.js (38 of 42 studies mention the draft or the app)', 'Jaap 1, 7, 9, 11; Anand 25; Japji studies',
@@ -265,7 +265,22 @@ f('CI-X-01', 'S2', 'Process', 'Not yet verified: that the public website serves 
   'A small gap between "tested" and "what families open".', 'Anyone with a normal connection can run the supplied hash check against the live site.', 'Live files match evidence/baseline-sha256.txt.', 'OPEN')
 f('CI-X-02', 'S1', 'Process', 'No qualified human has reviewed any Gurbani text or any meaning',
   'nitnem/learning/course.complete.json → coverage.reviewedUnitLessons = 0, reviewedSourceMeaningLines = 0; README.md', 'whole library', 'The app says so itself; this review confirms the files say 0.', 'Every digital check in this review, however complete, is a check of copying — not of correctness.',
-  'Recruit two or three qualified reviewers; give them the focused packet in deliverable 2 (the 140 differing Dasam occurrences first).', 'Signed review records exist for each composition.', 'OPEN-OWNER-DECISION')
+  'Recruit two or three qualified reviewers; give them the focused packet in deliverable 2 (the 138 differing Dasam occurrences first).', 'Signed review records exist for each composition.', 'OPEN-OWNER-DECISION')
+
+f('CI-U-10', 'S2', 'Use', 'The Nitnem reader keeps a permanent header, against the design decision already accepted for this project',
+  'nitnem/index.html, nitnem/reader.css; docs/CLAUDE_REVIEW_DECISIONS_20261023.md (decision 2: "One quiet dock, no persistent header")', 'All six Nitnem readers',
+  'A 71 px header stays on screen in the Nitnem reader; the Japji and Sukhmani readers have none. In landscape, header plus dock leave about 61% of the height for Gurbani (' + E + 'screenshots/62_landscape_nitnem-jaap.png, ' + E + 'ua_remaining.json). The same ledger asked for a design review before each promotion; no such review of the Nitnem release is recorded in the repository.',
+  'The newest and largest part of the app departs from the reading design the owner approved, and was published without the agreed check.',
+  'Bring the Nitnem reader to the single-dock design (best done by unifying the readers, CI-U-01).', 'No fixed header in any reader; the dock is the only persistent control.', 'OPEN', origin='COMPARISON')
+f('CI-X-03', 'S2', 'Process', 'Five of the six source-comparison files the builder\'s audit cites are not in the repository, and the "printed source" it relied on is not named',
+  'research/nitnem/20261125/source-audit-report.json → variantEvidence; research/nitnem/20261125/proposed-source-manifest.json; docs/NITNEM_COMPLETE.md', 'Jaap, Savaiye, Chaupai, Anand, Sohila, Rehras',
+  'Cited but absent: jaap-direct-banidb-comparison.json, jaap-historical-variant-analysis.json, savaiye-direct-provider-comparison.json, chaupai-direct-provider-comparison.json, sggs-source-comparison.json. Present: rehras-sggs-ang-mapping.json. The words "printed", "gutka" and "pdf" do not occur in the source manifest, although six corrections are described as supported by "the visually checked printed source".',
+  'Claims such as "808 occurrences agree exactly with direct BaniDB" and "printed-supported" cannot be checked by anyone else. Evidence that is cited should be kept.',
+  'Commit the five files (or regenerate them) and name the printed edition, publisher, year and pages.', 'Every file named in an audit exists at the cited path; the printed edition is named.', 'OPEN', origin='COMPARISON')
+f('CI-X-04', 'PASS', 'Process', 'Where the builder\'s own records and this review agree',
+  'README.md, docs/NITNEM_COMPLETE.md, evidence/nitnem-content-verification.json, evidence/sukhmani-source-collation.json', 'whole library',
+  'Counts (385; 2,027; 1,361 lines; 42 + 217 + 327 studies) agree. Sukhmani: the builder found 2,027 exact matches against SriGranth, this review 2,027 against Shabad OS; both say digital agreement is not print confirmation. Japji Pauri 13 line 1, which the builder has carried as an open comparison since October, matches the reference exactly here. Both say: zero qualified human review; no iPhone, Safari or VoiceOver testing; studies are chiefly English.',
+  'The builder has been honest about limits; the differences in this review are mostly things its tests never looked at, not things it hid.', '—', '—', 'PASS-NOTE', origin='COMPARISON')
 
 
 def render(findings):

@@ -47,20 +47,31 @@ def main(root, out):
             occ.append(dict(comp=cid, unit='preface', id=f'{cid}.preface{k:02d}', kind='preface', text=p['text'],
                             ang=None, source_line=None, seq=seq, declared_sha256=p.get('sha256')))
         for u in d['units']:
+            heads = []
             for k, h in enumerate(u.get('metricalHeadings', []), 1):
-                seq += 1
                 text = h['text'] if isinstance(h, dict) else h
-                occ.append(dict(comp=cid, unit=u['id'], id=f"{u['id']}.heading{k:02d}", kind='heading', text=text,
-                                ang=None, source_line=None, seq=seq,
-                                declared_sha256=(h.get('sha256') if isinstance(h, dict) else None),
-                                heading_raw=h if isinstance(h, dict) else None))
+                heads.append(dict(comp=cid, unit=u['id'], id=f"{u['id']}.heading{k:02d}", kind='heading', text=text,
+                                  ang=None, source_line=None,
+                                  declared_sha256=(h.get('sha256') if isinstance(h, dict) else None),
+                                  heading_raw=h if isinstance(h, dict) else None))
+            lines = {}
             for ln in u['lines']:
-                seq += 1
                 loc = ln.get('location') or {}
-                occ.append(dict(comp=cid, unit=u['id'], id=ln['id'], kind='line', text=ln['text'],
-                                ang=loc.get('ang') or loc.get('page'), source_line=loc.get('line'), seq=seq,
-                                declared_sha256=ln.get('sha256'), location=loc, held=ln.get('held'),
-                                family=ln.get('family')))
+                lines[ln['id']] = dict(comp=cid, unit=u['id'], id=ln['id'], kind='line', text=ln['text'],
+                                       ang=loc.get('ang') or loc.get('page'), source_line=loc.get('line'),
+                                       declared_sha256=ln.get('sha256'), location=loc, held=ln.get('held'),
+                                       family=ln.get('family'))
+            # Correction 2026-11-25 (comparison step): the reader draws a unit in `sourceDisplayOrder` when the
+            # unit has one (Jaap chhand 62). The first version of this script always put headings first, which
+            # produced a false "order reversed" finding. The register must follow the order on screen.
+            if u.get('sourceDisplayOrder'):
+                ordered = [lines[e['id']] if e['kind'] == 'line' else heads[e['index']] for e in u['sourceDisplayOrder']]
+            else:
+                ordered = heads + list(lines.values())
+            for o in ordered:
+                seq += 1
+                o['seq'] = seq
+                occ.append(o)
     pathlib.Path(out).write_text(json.dumps(occ, ensure_ascii=False, indent=1), encoding='utf-8')
     from collections import Counter
     c = Counter((o['comp'], o['kind']) for o in occ)

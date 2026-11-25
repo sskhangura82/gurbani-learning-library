@@ -1,0 +1,57 @@
+{
+ "jaap": {
+  "on_screen": 808,
+  "in_collation": 808,
+  "same_sequence": false,
+  "positions_that_differ": [
+   238,
+   239
+  ],
+  "first_difference": {
+   "index": 238,
+   "screen": "ਤੇਰਾ ਜੋਰੁ ॥",
+   "collation_order": "ਚਾਚਰੀ ਛੰਦ ॥"
+  },
+  "same_multiset": true
+ },
+ "savaiye": {
+  "on_screen": 43,
+  "in_collation": 43,
+  "same_sequence": true,
+  "positions_that_differ": [],
+  "first_difference": null,
+  "same_multiset": true
+ },
+ "chaupai": {
+  "on_screen": 121,
+  "in_collation": 121,
+  "same_sequence": true,
+  "positions_that_differ": [],
+  "first_difference": null,
+  "same_multiset": true
+ },
+ "anand": {
+  "on_screen": 210,
+  "in_collation": 210,
+  "same_sequence": true,
+  "positions_that_differ": [],
+  "first_difference": null,
+  "same_multiset": true
+ },
+ "rehras": {
+  "on_screen": 159,
+  "in_collation": 159,
+  "same_sequence": true,
+  "positions_that_differ": [],
+  "first_difference": null,
+  "same_multiset": true
+ },
+ "sohila": {
+  "on_screen": 56,
+  "in_collation": 56,
+  "same_sequence": true,
+  "positions_that_differ": [],
+  "first_difference": null,
+  "same_multiset": true
+ }
+}

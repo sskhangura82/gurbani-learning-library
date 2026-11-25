@@ -77,3 +77,25 @@ All under `reviews/claude-independent/evidence/`; scripts under `…/tools/`.
 
 Not committed, on purpose: the working file that sets the app's meanings beside four
 published translations (it contains other people's copyrighted text).
+
+---
+
+## Correction appended 2026-11-25, during the comparison step
+
+This page is left as first written. One thing in it was wrong, and I found that out only
+when I compared my findings with the builder's records:
+
+- I reported that Jaap Sahib chhand 62 showed its heading and invocation in reversed order
+  (then CI-S-01, "would be critical if confirmed"). **That was my mistake.** My extraction
+  script listed headings before lines inside every unit; the reader draws chhand 62 in the
+  order the data file asks for, which is the reference order. Checked on screen:
+  `evidence/s09_jaap62_order.json`, `evidence/s11c_rendered_order.json`. I then verified
+  that on-screen order equals collation order at every other position in all six Nitnem
+  banis.
+- Corrected totals: letter-level differences are **138** (not 140) of 3,809; Dasam Bani
+  **138 of 1,074 (12.8%)**; Jaap Sahib **34 of 808** (not 36). `evidence/s05_*.{csv,json}`
+  now hold the corrected run; the first run is in the previous commit.
+- CI-S-01 is kept under the same ID with its severity lowered from high to low and its text
+  rewritten; S0 candidates are now 6, not 7.
+
+Details: `02_COMPARISON_WITH_BUILDER_TESTS.md`.

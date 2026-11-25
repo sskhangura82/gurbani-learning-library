@@ -3,8 +3,8 @@
  "overall_status": {
   "exact": 3566,
   "verse_mark_or_numbering_only": 47,
-  "line_division_only": 35,
-  "letter_level_difference": 140,
+  "line_division_only": 37,
+  "letter_level_difference": 138,
   "spacing_only": 21
  },
  "by_part": {
@@ -47,10 +47,10 @@
    "reference": "DGDG, Jaap bani list",
    "app_occurrences": 808,
    "status": {
-    "letter_level_difference": 36,
+    "letter_level_difference": 34,
     "exact": 750,
     "verse_mark_or_numbering_only": 5,
-    "line_division_only": 6,
+    "line_division_only": 8,
     "spacing_only": 11
    },
    "reference_lines_inside_span_without_app_counterpart": []
@@ -1006,11 +1006,10 @@
   }
  },
  "difference_types": {
-  "verse_mark_or_numbering": 79,
-  "app_has_extra_word": 3,
+  "verse_mark_or_numbering": 77,
+  "app_has_extra_word": 2,
   "vowel_sign": 62,
   "spacing": 30,
-  "reference_has_extra_word": 1,
   "mark_order": 3,
   "addak": 10,
   "letters_or_word": 43,
@@ -1028,11 +1027,10 @@
    "verse_mark_or_numbering": 1
   },
   "jaap": {
-   "app_has_extra_word": 2,
-   "verse_mark_or_numbering": 8,
+   "app_has_extra_word": 1,
+   "verse_mark_or_numbering": 6,
    "vowel_sign": 20,
    "spacing": 11,
-   "reference_has_extra_word": 1,
    "mark_order": 3,
    "addak": 2,
    "letters_or_word": 3,
