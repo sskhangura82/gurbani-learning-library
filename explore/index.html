@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f8f5ec">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Explore Gurbani · Guided learning pilot</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="apple-touch-icon" href="../icons/icon-180.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to learning</a>
+<header class="topbar"><a class="brand" href="../index.html" aria-label="Return to Gurbani Learning Library">GURBANI <span>LEARNING LIBRARY</span></a><span class="topbar-caption">EXPLORE · LEARN</span></header>
+<main id="main">
+<section class="hero" aria-labelledby="page-title">
+ <p class="eyebrow">A SOURCE-LINKED EDUCATIONAL PILOT</p>
+ <h1 id="page-title">Start anywhere. <em>Understand in context.</em></h1>
+ <p class="lead">New to Gurbani or reading it all your life? Choose a passage, ask about a concept, or discover a teaching. Begin with the original; go deeper only when you wish.</p>
+ <div class="method-note" role="note"><strong>Original Gurbani comes first.</strong> This learning guide is an AI-assisted draft. Comparisons with Buddhism, Hindu philosophies and psychology are optional and never presented as what Guru Sahib literally said. Qualified scholarly review is still pending.</div>
+</section>
+<section class="finder" aria-labelledby="finder-heading">
+ <h2 id="finder-heading">What would you like to explore?</h2>
+ <form id="find-form" class="find-form" role="search">
+  <label for="find-query">Passage, concept or question</label>
+  <div class="find-controls"><input id="find-query" type="search" autocomplete="off" spellcheck="false" placeholder="Try: Sukhmani 17, Hukam, Bibek, uncertainty…" aria-describedby="find-help"><button type="submit">Find teaching</button></div>
+  <p id="find-help" class="subtle">This preview searches written lessons only. It does not improvise an AI answer, send your question anywhere, or search the full Guru Granth Sahib Ji yet.</p>
+ </form>
+ <div class="starter-options" role="group" aria-label="Suggested learning prompts">
+  <button type="button" data-query="Sukhmani Ashtpadi 17">Sukhmani Ashtpadi 17</button>
+  <button type="button" data-query="Hukam">What is Hukam?</button>
+  <button type="button" data-query="Buddhism">Connect with Buddhism</button>
+  <button type="button" id="surprise">Teach me something</button>
+ </div>
+ <div id="search-feedback" class="feedback" role="status" aria-live="polite"></div>
+</section>
+<section class="passage-picker" aria-labelledby="picker-heading">
+ <div class="picker-copy"><h2 id="picker-heading">Go straight to a passage</h2><p>The complete Sukhmani Sahib is already in our original reader. Ashtpadi 17 is the first expanded learning example; the other sections remain available for paath and existing meaning drafts.</p></div>
+ <div class="picker-controls"><label for="ashtpadi-select">Sukhmani Sahib · Ashtpadi</label><div class="picker-row"><select id="ashtpadi-select" aria-label="Select Sukhmani Ashtpadi"></select><button type="button" id="ashtpadi-open">Open</button></div></div>
+</section>
+<section class="study" id="study" aria-labelledby="study-heading">
+ <header class="study-head">
+  <div><p class="eyebrow">SUKHMANI SAHIB · ANG 285–286</p><h2 id="study-heading">Ashtpadi 17: <span>Truth, devotion and discernment</span></h2><p class="study-intro" id="study-intro"></p></div>
+  <a id="original-link" class="read-link" href="../sukhmani.html#ashtpadi-17">Read the complete original <span aria-hidden="true">↗</span></a>
+ </header>
+ <div class="content-grid">
+  <nav class="lesson-nav" aria-label="Choose a Salok or Pauri"><p class="nav-caption">This Ashtpadi</p><div class="nav-buttons" id="lesson-nav"></div></nav>
+  <article class="lesson" id="lesson" aria-labelledby="lesson-heading" tabindex="-1">
+   <div class="lesson-heading-row"><p class="eyebrow" id="lesson-location"></p><p id="lesson-status" class="draft-label">EDUCATIONAL DRAFT</p></div>
+   <h3 id="lesson-heading"></h3>
+   <figure class="source-cue"><blockquote lang="pa" id="source-cue"></blockquote><figcaption>Opening words for finding the passage · not the complete original. <a href="../sukhmani.html#ashtpadi-17">Read the full Gurbani in the existing reader</a>.</figcaption></figure>
+   <section aria-labelledby="beginner-heading"><h4 id="beginner-heading">First understanding</h4><p id="beginner-text"></p><p id="beginner-pa" lang="pa" class="punjabi-copy"></p></section>
+   <details id="advanced" class="advanced" open><summary>Read more deeply</summary><div class="advanced-body">
+    <section aria-labelledby="depth-heading"><h4 id="depth-heading">What the passage is doing</h4><p id="deep-text"></p></section>
+    <section aria-labelledby="words-heading"><h4 id="words-heading">Words to understand</h4><dl id="word-list"></dl><p class="subtle">Roman forms are approximate reading aids, not certified santhiya.</p></section>
+    <section aria-labelledby="limits-heading"><h4 id="limits-heading">Interpretation boundary</h4><p id="boundary-text"></p></section>
+   </div></details>
+   <section class="reflection" aria-labelledby="reflect-heading"><h4 id="reflect-heading">Think and explain</h4><p id="reflection-text"></p><p class="subtle">This is a reflection prompt, not a translation, diagnosis or clinical advice.</p></section>
+   <nav class="lesson-step" aria-label="Move between passages"><button id="previous" type="button">← Previous</button><button id="next" type="button">Next →</button></nav>
+  </article>
+  <aside class="connections" aria-label="Optional connections and references">
+   <h3>Connections, not equivalences</h3>
+   <p class="subtle">Open these after studying Gurbani. We show both what resembles a concept elsewhere and where the traditions differ.</p>
+   <div id="comparison-list"></div>
+   <details id="history-notes" class="extra-notes"><summary>Historical and textual notes</summary><div id="context-notes"></div></details>
+   <details id="source-list" class="extra-notes"><summary>Sources and research method</summary><ul id="bibliography"></ul></details>
+  </aside>
+ </div>
+</section>
+<section class="next-stage" aria-labelledby="next-heading"><p class="eyebrow">THE LONG-TERM LIBRARY</p><h2 id="next-heading">From one Ashtpadi to the entire Sri Guru Granth Sahib Ji</h2><p>This is the first complete source-linked teaching example, not a claim of a finished scripture search. The eventual index will navigate by Ang, raag, author, composition, shabad, line, and question; every result will cite its enclosing context and editorial review level. Original reading remains usable even before its detailed lessons are completed.</p></section>
+</main>
+<footer><p>Free, account-free learning. Your question is processed on this device. No analytics, streaks, scores or outbound search. This preview has not passed physical iPhone/iPad/desktop-browser acceptance or qualified Sikh scholarship review.</p><a href="../index.html">Return to the existing Gurbani Learning Library</a></footer>
+<script src="./app.js" defer></script>
+</body></html>
