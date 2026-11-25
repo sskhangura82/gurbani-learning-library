@@ -1,0 +1,51 @@
+{
+  "schema": "glp001.ai-code-review.v1",
+  "status": "read_only_review_completed",
+  "reviewedAtUTC": "2026-11-25T03:19:14.002877+00:00",
+  "reviewType": "Independent AI review of full-composition UI, tests, scope document and preservation baseline",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "7ad1b17e8562d7f005e5c6e5b6f183b182d8ce25c78f6b29ee57a8ba37f7cc5f"
+    },
+    {
+      "path": "sukhmani.html",
+      "sha256": "423e46da7e8d7fcc760304e256e0add5fe91fe8edf157f11181e039b3e1c939a"
+    },
+    {
+      "path": "tests/sukhmani-content.mjs",
+      "sha256": "5143dd36982090372b9607c000b81b53b1ec9294bd127ed33383bb8d5693cc47"
+    },
+    {
+      "path": "tests/sukhmani-browser.mjs",
+      "sha256": "649dea006d3da977713a29433f440b0733d2bb1518ebd86551fd81d425b0bb73"
+    },
+    {
+      "path": "tools/sukhmani/verify-upstream.py",
+      "sha256": "356c88e38a72c5ba7097451806ed94a6fb1ab6c0237221b9169ffac15afb9396"
+    },
+    {
+      "path": "docs/SUKHMANI_COMPLETE.md",
+      "sha256": "c6b1b76bdd97de199cbf5ba2a1f9b43c72bc461b1604b046f5790955c715a150"
+    },
+    {
+      "path": "evidence/sukhmani-first-eighteen-baseline.json",
+      "sha256": "d7f7e72ea4bf9eb895437a5b27520c32427bc907e78ddc88e1e823c94f5ee580"
+    }
+  ],
+  "findings": [],
+  "observedChecks": [
+    "Static and dynamic labels cover all 24 Ashtpadis and identify the final composition boundary.",
+    "Test fixture validates 2,027 source occurrences,55 Salok verse lines,1,920 pauri verse lines,2 Rahau verse lines and50 headings.",
+    "Dynamic navigation is data-driven and browser gate exercises all 24 links at existing viewports.",
+    "Legacy 1–6,1–12 and1–18 saved states are independently specified; import checks retain new Ashtpadi 24 learning.",
+    "Compared all first 18 source, meaning and study objects directly with published Git commit a4d40ba51750cd01cda16efce0f389863815d899; exact equality verified.",
+    "Recomputed baseline canonical hashes directly from published commit; all matched.",
+    "Scope document differentiates source completeness from qualified human review and physical-device acceptance."
+  ],
+  "limitations": [
+    "No full content test or browser run was executed by this reviewer in this review; teaching integration was still in progress.",
+    "File hashes identify the inspected snapshot, not a future release.",
+    "No physical-device, accessibility-assistive-technology or human scholarly approval is claimed."
+  ]
+}

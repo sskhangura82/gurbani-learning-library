@@ -148,6 +148,51 @@
       "sha256": "6907afe259e1dc849003b5ec16ca4b9c02c59890b0f4bede5e6d80297f9e7cc6"
     },
     {
+      "path": "corpus/ang-0289.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0289.md",
+      "sha256": "b8ce48f62c448ee4191c5fee584867d759ac0b0397641862354d1fa7fe348d72"
+    },
+    {
+      "path": "corpus/ang-0290.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0290.md",
+      "sha256": "b29852caa3a84270b4fd0a979262c35a0ffce0662f8869c0aeed77b2a007f497"
+    },
+    {
+      "path": "corpus/ang-0291.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0291.md",
+      "sha256": "1ebae39ff24fb632e96eda289c9e8abf683c0c5af73197774659b0ab7efc1ad2"
+    },
+    {
+      "path": "corpus/ang-0292.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0292.md",
+      "sha256": "6fdad55ca63013d10c6933a55a16440e8e8b0de517592d359727fd477ac15d00"
+    },
+    {
+      "path": "corpus/ang-0293.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0293.md",
+      "sha256": "a382e9ec6fdabc2491c2a8ce598d977bed92f8ad466f64eda7a551394c6af50f"
+    },
+    {
+      "path": "corpus/ang-0294.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0294.md",
+      "sha256": "b3684b86c985d3abfced2ef7199658da9e24ea99b9c9cdfcb38f66257c5e456f"
+    },
+    {
+      "path": "corpus/ang-0295.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0295.md",
+      "sha256": "d1f0d177b17e4216c196ed084441b7b5c86db6d3c4704cc020094c3d1933e2ae"
+    },
+    {
+      "path": "corpus/ang-0296.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0296.md",
+      "sha256": "66c6a7079e23bcc692e4efa5609c10fec53cdcb79439828ecc30391d81b0138b"
+    },
+    {
+      "path": "corpus/ang-0297.md",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0297.md",
+      "sha256": "084001b99db29551051686d753ac920436b93e92d1ecd353d7cb165b1230293e"
+    },
+    {
       "path": "docs/provenance.md",
       "sha256": "0e1f1c0b267b0c86bd4ac7b1a882b68f19aa3e3929059662fca47b69c098132e",
       "bytes": 2125
@@ -158,5 +203,5 @@
       "bytes": 6247
     }
   ],
-  "scope": "Original Gurmukhi Ashtpadis 1–18, Ang 262–288; modern translations in upstream files are not imported."
+  "scope": "Original Gurmukhi Ashtpadis 1–24, Ang 262–296; modern translations in upstream files are not imported."
 }

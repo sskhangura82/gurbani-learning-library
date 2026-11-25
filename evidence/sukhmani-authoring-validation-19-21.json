@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "part": "sukhmani-teaching-19-21.json",
+  "sha256": "39f138fdf972f696301d9fafb5bb1c4d3c2a3185ec0605bf257bc46d3f451947",
+  "ashtpadis": [
+    19,
+    20,
+    21
+  ],
+  "meaningPairs": 252,
+  "passageStudies": 27,
+  "vocabularyEntries": 30,
+  "checks": {
+    "exactSourceCoverage": true,
+    "exactSourceHashesAndAngs": true,
+    "completeStudyGroupCoverage": true,
+    "allMeaningStudyOverviewVocabularyAndPromptFieldsPresent": true,
+    "allEntriesDraft": true,
+    "qualifiedHumanReviewClaimed": false
+  },
+  "reviewScope": "Author self-review throughout authoring. Separate parent-agent review of all 252 bilingual meanings, all 27 bilingual passage studies, all 3 overview/vocabulary/prompt sets completed; its exact observations and final hash confirmation belong to the separate project review record. No qualified human review is claimed.",
+  "sourceFiles": [
+    {
+      "file": "ashtpadi-19.json",
+      "sha256": "2689de50642aa158c5539b49376f8702fa79e48dd2691682f061942b926aed7b",
+      "occurrences": 84
+    },
+    {
+      "file": "ashtpadi-20.json",
+      "sha256": "e81e5fb5bb8ff3d6c3bd86be43205ac46a4248ec9b779a7a067504f22dcf0ccf",
+      "occurrences": 84
+    },
+    {
+      "file": "ashtpadi-21.json",
+      "sha256": "c7f2a3bb81b5df8f61ad30669ab4252a62db4a36c77ac6e1cffe2493f8b3be8b",
+      "occurrences": 84
+    }
+  ],
+  "adoptedSeparateReviewRefinements": [
+    "A19 pauri 4 line 1: direct, idiomatic English description of reflecting on the Divine.",
+    "A20 pauri 7 line 10: clear Nanak-prays address in both languages.",
+    "A19 pauri 4 study: direct explanation of coming and going as birth and death.",
+    "A20 pauri 1 study: positive description of the prayer’s aim.",
+    "Readable word/number spacing in prose, preserving source IDs."
+  ]
+}

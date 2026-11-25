@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Structural authoring validation; independent editorial review recorded separately.",
+  "created": "2026-11-24",
+  "meaningPairs": 252,
+  "passageStudies": 27,
+  "overviews": 3,
+  "vocabularyEntries": 29,
+  "fileSha256": "31b8594264f05a2334775c5d413b2cae9171f674448aeab08c65b465f8cfc167",
+  "checks": [
+    "252 exact source IDs covered without extras",
+    "All source-occurrence meanings have English and Punjabi",
+    "All 27 studies enclose complete exact source units and correct Ang links",
+    "All study fields bilingual; at least eight vocabulary entries per Ashtpadi",
+    "Ends with the verified final Sukhmani line; no next-composition text added",
+    "Interpretations remain drafts with qualified human review pending"
+  ],
+  "humanReviewed": false
+}

@@ -2,7 +2,7 @@
 
 Date: 2026-11-23 (Pacific)
 
-**Historical checkpoint.** This first-twelve preview was subsequently published on 2026-11-24 through [PR #34](https://github.com/sskhangura82/gurbani-learning-library/pull/34), at main commit `39e2c410f0ef942bd611ba4de1a2d3b2d9ad1355`. Its [Pages deployment succeeded](https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45401847408). This publication supersedes the development-only release status recorded below. The current continuation is documented in [SUKHMANI_FIRST_EIGHTEEN.md](SUKHMANI_FIRST_EIGHTEEN.md); the counts and verification in this historical document describe 1–12 only.
+**Historical checkpoint.** This first-twelve preview was subsequently published on 2026-11-24 through [PR #34](https://github.com/sskhangura82/gurbani-learning-library/pull/34), at main commit `39e2c410f0ef942bd611ba4de1a2d3b2d9ad1355`. Its [Pages deployment succeeded](https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45401847408). This publication supersedes the development-only release status recorded below. The complete-composition continuation is documented in [SUKHMANI_COMPLETE.md](SUKHMANI_COMPLETE.md); the counts and verification in this historical document describe 1–12 only.
 
 ## Current scope
 

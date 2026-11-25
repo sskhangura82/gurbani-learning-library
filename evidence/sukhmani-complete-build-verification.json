@@ -1,0 +1,168 @@
+{
+  "status": "PORTABLE_CHECKS_PASS_BROWSER_CI_REQUIRED",
+  "recordedAt": "2026-11-25T03:31:55.763712+00:00",
+  "ashtpadisIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "completeComposition": true,
+  "basePublishedCommit": "a4d40ba51750cd01cda16efce0f389863815d899",
+  "branch": "feature/sukhmani-complete-20261124",
+  "sourceOccurrences": 2027,
+  "newSourceOccurrences": 504,
+  "bilingualMeaningPairs": 2027,
+  "passageStudies": 217,
+  "vocabularyEntries": 219,
+  "qualifiedHumanReviewed": 0,
+  "sourceSequenceSha256": "bcfceeff3d9baf79bdf9db8466ccaee8d7bcad109ab4e3af9d94f425074768fa",
+  "portableChecks": {
+    "passed": 89,
+    "failed": 0,
+    "commands": [
+      {
+        "command": "node tests/verify.mjs",
+        "checks": 27,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/service-worker.mjs",
+        "checks": 8,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/shared-learning.mjs",
+        "checks": 12,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/r6-contract.mjs",
+        "checks": 7,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/r7-contract.mjs",
+        "checks": 12,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/sukhmani-content.mjs",
+        "checks": 11,
+        "status": "PASS"
+      },
+      {
+        "command": "node tests/sukhmani-reader-core.mjs",
+        "checks": 12,
+        "status": "PASS"
+      }
+    ]
+  },
+  "upstreamVerification": {
+    "command": "python tools/sukhmani/verify-upstream.py --cache /workspace/scratch/848c7bc44421/sukhmani-combined-upstream",
+    "status": "PASS",
+    "matchedSourceOccurrences": 2027,
+    "pinnedCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "networkUsed": false
+  },
+  "syntaxAndWhitespaceChecks": "PASS",
+  "preservation": {
+    "firstSixSourceMeaningsStudies": "PASS exact canonical hash checks",
+    "publishedFirstTwelveSourceMeaningsStudies": "PASS exact canonical hash checks",
+    "publishedFirstEighteenSourceMeaningsStudies": "PASS exact canonical hash checks",
+    "storageKey": "glp001.sukhmani.v1",
+    "recordVersion": 2,
+    "japjiRuntimeUnchanged": true
+  },
+  "runtimeFiles": [
+    {
+      "path": "index.html",
+      "sha256": "7ad1b17e8562d7f005e5c6e5b6f183b182d8ce25c78f6b29ee57a8ba37f7cc5f",
+      "bytes": 4402
+    },
+    {
+      "path": "sukhmani.html",
+      "sha256": "423e46da7e8d7fcc760304e256e0add5fe91fe8edf157f11181e039b3e1c939a",
+      "bytes": 4417
+    },
+    {
+      "path": "css/sukhmani.css",
+      "sha256": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f",
+      "bytes": 7820
+    },
+    {
+      "path": "js/sukhmani-data.js",
+      "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+      "bytes": 1241749
+    },
+    {
+      "path": "js/sukhmani-teaching.js",
+      "sha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6",
+      "bytes": 1841631
+    },
+    {
+      "path": "js/sukhmani-reader.js",
+      "sha256": "73e702524ce7d00ead7fecba978fe0efeefb0cb0490145e11ffda8e17be798c5",
+      "bytes": 29511
+    },
+    {
+      "path": "js/sukhmani-learning.js",
+      "sha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4",
+      "bytes": 4617
+    },
+    {
+      "path": "sw.js",
+      "sha256": "337358e811e501eab66773e926b876794e6d184c26fcc99226bcd724e2a8e029",
+      "bytes": 5019
+    }
+  ],
+  "serviceWorker": {
+    "version": "0.13-sukhmani-complete-preview-20261124-1",
+    "hashPinnedAssets": 38,
+    "explicitUpdateRequired": true
+  },
+  "browserVerification": {
+    "status": "CI_PENDING_AT_THIS_CHECKPOINT",
+    "command": "node tests/sukhmani-browser.mjs",
+    "expectedChecks": 35,
+    "artifact": "sukhmani-browser-evidence",
+    "note": "Exact-commit browser CI outcome and screenshot review are recorded in the continuation pull request and retained Actions artifact. This dated pre-CI checkpoint is not a browser pass."
+  },
+  "editorialReview": {
+    "newBilingualMeaningPairsRead": 504,
+    "newBilingualPassageStudiesRead": 54,
+    "ashtpadiOverviews": 6,
+    "newVocabularyEntries": 59,
+    "kind": "Independent AI review with final authoring hashes; not qualified human review",
+    "reports": [
+      "evidence/sukhmani-editorial-review-19-21.json",
+      "evidence/sukhmani-editorial-review-22-24.json"
+    ]
+  },
+  "codeReview": "evidence/sukhmani-complete-ui-readonly-review.json",
+  "openAcceptance": [
+    "Qualified human Gurbani/Punjabi review",
+    "Independent human letter-by-letter collation",
+    "Physical iPhone Safari, VoiceOver, Home Screen and actual airplane-mode acceptance"
+  ]
+}

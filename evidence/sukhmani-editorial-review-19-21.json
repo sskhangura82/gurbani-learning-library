@@ -1,0 +1,406 @@
+{
+  "schema": "glp001.ai-editorial-review.v1",
+  "reviewDatePacific": "2026-11-24",
+  "completedAtUTC": "2026-11-25T03:30:47.604805+00:00",
+  "reviewType": "Independent AI close-reading and editorial review",
+  "status": "completed_with_refinements_applied_and_rechecked",
+  "humanReviewApproved": false,
+  "qualifiedGurbaniReviewApproved": false,
+  "qualifiedPunjabiReviewApproved": false,
+  "reviewerIndependence": "Root assistant reviewed original drafts written by a separate author. The reviewer did not author the initial meaning/study/overview pack.",
+  "input": {
+    "file": "sukhmani-teaching-19-21.json",
+    "sha256": "39f138fdf972f696301d9fafb5bb1c4d3c2a3185ec0605bf257bc46d3f451947",
+    "sourceScriptureCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4"
+  },
+  "scope": {
+    "ashtpadis": [
+      19,
+      20,
+      21
+    ],
+    "meaningPairsRead": 252,
+    "englishMeaningsRead": 252,
+    "punjabiMeaningsRead": 252,
+    "headingExplanationPairsIncluded": 6,
+    "bilingualPassageStudiesRead": 27,
+    "salokStudiesRead": 3,
+    "pauriStudiesRead": 24,
+    "bilingualOverviewsRead": 3,
+    "bilingualInterpretiveNotesRead": 3,
+    "vocabularyEntriesRead": 30,
+    "bilingualTeachBackPromptsRead": 3,
+    "bilingualCautionsRead": 3,
+    "allSourceIdsAndPrimaryAngLinksVerified": true
+  },
+  "passagesReviewed": [
+    {
+      "id": "sukhmani.a19.salok",
+      "angs": [
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p01",
+      "angs": [
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p02",
+      "angs": [
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p03",
+      "angs": [
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p04",
+      "angs": [
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p05",
+      "angs": [
+        288
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p06",
+      "angs": [
+        288,
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p07",
+      "angs": [
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a19.p08",
+      "angs": [
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.salok",
+      "angs": [
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p01",
+      "angs": [
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p02",
+      "angs": [
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p03",
+      "angs": [
+        289
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p04",
+      "angs": [
+        289,
+        290
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p05",
+      "angs": [
+        290
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p06",
+      "angs": [
+        290
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p07",
+      "angs": [
+        290
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a20.p08",
+      "angs": [
+        290
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.salok",
+      "angs": [
+        290
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p01",
+      "angs": [
+        290,
+        291
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p02",
+      "angs": [
+        291
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p03",
+      "angs": [
+        291
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p04",
+      "angs": [
+        291
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p05",
+      "angs": [
+        291
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p06",
+      "angs": [
+        291
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p07",
+      "angs": [
+        291,
+        292
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    },
+    {
+      "id": "sukhmani.a21.p08",
+      "angs": [
+        292
+      ],
+      "languagesRead": [
+        "en",
+        "pa"
+      ],
+      "sourceIdsVerified": true,
+      "primaryAngLinksVerified": true
+    }
+  ],
+  "method": [
+    "Read every English/Punjabi meaning against its exact immutable Gurmukhi.",
+    "Read all 27 bilingual passage studies and reflections in staggered drafts, then all overview, vocabulary, interpretive-note, teach-back and caution fields.",
+    "Checked the attributed heart-home, medicine, fire/poison and final Divine/devotee readings against selected Sahib Singh commentary; scripture remained separate and exact.",
+    "Compared frozen final file with the reviewed meaning, study and overview snapshots. Read every resulting change and verified the requested refinements.",
+    "Mechanically verified complete exact source groups, individual source hashes and primary Ang links in the final file."
+  ],
+  "adoptedRefinements": [
+    {
+      "passage": "sukhmani.a19.p04.l01",
+      "change": "Made the English reflection-on-the-Divine wording idiomatic."
+    },
+    {
+      "passage": "sukhmani.a20.p07.l10",
+      "change": "Clarified Nanak’s prayer voice and the Divine addressee in both languages."
+    },
+    {
+      "passage": "sukhmani.a19.p04",
+      "change": "Replaced editorial instruction with direct explanation of coming and going as birth and death."
+    },
+    {
+      "passage": "sukhmani.a20.p01",
+      "change": "Replaced an unnecessary alternative about possession/control with the prayer’s positive aim of humility, reverence and remembrance."
+    },
+    {
+      "passage": "source-use prose and A21 vocabulary",
+      "change": "Added missing spaces before passage numbers without changing source IDs."
+    }
+  ],
+  "contextualChecks": [
+    "A19 retains liberation from birth and death, hearing/speaking/lived conduct, and the source’s medicine imagery in the context of ego.",
+    "A20 preserves prayer and the devotees’ grammatical subject, attributes Guru/darshan identification, explains the ash image and paired abundance comparisons.",
+    "A21 attributes its Salok and final pauri interpretations, retains Shiv/Shakti with the contextual commentary reading, distinguishes nirgun from nirguniyaar, and keeps moral distinctions within manifested creation."
+  ],
+  "unresolvedFindings": [],
+  "limitations": [
+    "AI editorial review is not qualified human Gurbani/Punjabi approval.",
+    "Traditional interpretive readings are attributed; they do not establish a uniquely authoritative English translation.",
+    "Source fidelity, teaching review, browser verification and physical-device acceptance are separate evidence categories."
+  ]
+}

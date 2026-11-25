@@ -1,6 +1,6 @@
 # Sukhmani Sahib expansion — build contract (draft)
 Date: 2026-11-23
-Status updated 2026-11-24 (Pacific): The first-twelve public preview was published through PR #34. The continuation reaches Ashtpadi 18; see `SUKHMANI_FIRST_EIGHTEEN.md` for scope, source comparison, tests and remaining review. This is not a claim of a complete 24-Ashtpadi release or qualified human approval.
+Status updated 2026-11-24 (Pacific): The first-eighteen public preview was published through PR #35. This continuation completes Ashtpadis 1–24; see `SUKHMANI_COMPLETE.md` for source coverage, comparison, technical verification and remaining qualified-human/device acceptance. Complete text coverage is separate from qualified scholarly approval.
 
 ## Goal
 Add Sukhmani Sahib to the **existing** Gurbani Learning Library alongside Japji Sahib, never as a second separate app. Do not modify production content merely to announce completion.

@@ -34,6 +34,10 @@ const firstSixExport={projectId:'GLP-001',format:'glp-sukhmani-learning',version
 const firstTwelveState={version:2,read:'sukhmani.a12.p08.l10',guide:'sukhmani.a11.p04.l03',hasGuided:true,mode:'study',theme:'amrit',size:38,pace:90,pronunciation:true,bookmarks:['sukhmani.a08.p02.l04','sukhmani.a12.p08.l10'],notes:{'sukhmani.a07.p03.l05':'SYNTHETIC published first-twelve reflection.','sukhmani.a12.p08.l10':'SYNTHETIC published-pack final-place reflection.'}};
 const firstTwelveExport={projectId:'GLP-001',format:'glp-sukhmani-learning',version:1,composition:'sukhmani',createdAt:'2026-11-24T00:00:00.000Z',state:{...structuredClone(firstTwelveState),bookmarks:[...firstTwelveState.bookmarks,'sukhmani.a10.p04.l03'],notes:{...firstTwelveState.notes,'sukhmani.a10.p04.l03':'SYNTHETIC reflection imported from a first-twelve backup.'}}};
 report.coverage.firstTwelve={sourceOccurrences:lines.filter(line=>line.ashtpadi<=12).length,studyUnits:sourceStudyUnits.filter(line=>line.ashtpadi<=12).length,overviews:data.ashtpadis.filter(a=>a.number<=12).length};
+// Published first-eighteen saved state and backup, independently specified.
+const firstEighteenState={version:2,read:'sukhmani.a18.p08.l10',guide:'sukhmani.a17.p04.l03',hasGuided:true,mode:'study',theme:'amrit',size:36,pace:95,pronunciation:true,bookmarks:['sukhmani.a13.p02.l04','sukhmani.a18.p08.l10'],notes:{'sukhmani.a15.p03.l05':'SYNTHETIC published first-eighteen reflection.','sukhmani.a18.p08.l10':'SYNTHETIC former end-of-pack reflection.'}};
+const firstEighteenExport={projectId:'GLP-001',format:'glp-sukhmani-learning',version:1,composition:'sukhmani',createdAt:'2026-11-24T02:00:00.000Z',state:{...structuredClone(firstEighteenState),bookmarks:[...firstEighteenState.bookmarks,'sukhmani.a16.p04.l03'],notes:{...firstEighteenState.notes,'sukhmani.a16.p04.l03':'SYNTHETIC reflection imported from a first-eighteen backup.'}}};
+report.coverage.firstEighteen={sourceOccurrences:lines.filter(line=>line.ashtpadi<=18).length,studyUnits:sourceStudyUnits.filter(line=>line.ashtpadi<=18).length,overviews:data.ashtpadis.filter(a=>a.number<=18).length};
 const lineSelector=id=>`.sk-line[data-line-id="${id}"]`;
 const sourceRows=lines.map(l=>({id:l.id,text:l.gurmukhi,ang:String(l.ang)}));
 const sourceSnapshot=page=>page.locator('#sukhmani-text .sk-line').evaluateAll(rows=>rows.map(r=>({id:r.dataset.lineId,text:r.querySelector('p.tuk').textContent,ang:r.dataset.ang})));
@@ -84,7 +88,7 @@ async function importFile(page,value){await page.locator('#sk-import').setInputF
 try{
  await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve);});origin='http://127.0.0.1:'+server.address().port;
  browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});report.browserVersion=browser.version();
- await check('The expanded reading pack covers Ashtpadis 1–18',()=>assert.deepEqual(data.ashtpadis.map(a=>a.number),Array.from({length:18},(_,i)=>i+1)));
+ await check('The complete reading pack covers all 24 Ashtpadis',()=>{assert.deepEqual(data.ashtpadis.map(a=>a.number),Array.from({length:24},(_,i)=>i+1));assert.equal(data.completeComposition,true);assert.equal(lines.at(-1).gurmukhi,'ਨਾਨਕ ਇਹ ਗੁਣਿ ਨਾਮੁ ਸੁਖਮਨੀ ॥੮॥੨੪॥');});
 
  // The real source pack is compared with actual rendered text, not a reimplementation.
  for(const viewport of [{width:390,height:844},{width:320,height:740},{width:1280,height:900}]){
@@ -111,8 +115,8 @@ try{
     const navigation=page.locator('#ashtpadi-nav a');assert.equal(await navigation.count(),data.ashtpadis.length);
     assert.ok(await navigation.evaluateAll(links=>links.every(link=>{const r=link.getBoundingClientRect();return r.width>=44&&r.height>=44&&r.left>=0&&r.right<=innerWidth;})),'Navigation touch targets must fit the viewport');
     for(const a of data.ashtpadis){await navigation.filter({hasText:new RegExp('^'+a.number+'$')}).click();await page.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,a.lines[0].id);assert.equal(await page.locator('.sk-line').count(),lines.length);assert.ok(Math.abs(await page.locator(lineSelector(a.lines[0].id)).evaluate(n=>n.getBoundingClientRect().top))<65);}
-    assert.equal(await page.locator('#sk-end-title').textContent(),'End of Ashtpadi '+lastAshtpadi);assert.match(await page.locator('#sk-coverage').textContent(),/Ashtpadis 1–18 of 24/);
-    assert.match(await page.locator('.end-note').innerText(),/continues through Ashtpadi 24/);
+    assert.equal(await page.locator('#sk-end-title').textContent(),'End of Ashtpadi '+lastAshtpadi);assert.match(await page.locator('#sk-coverage').textContent(),/Ashtpadis 1–24 of 24/);
+    assert.equal(await page.locator('#sk-end-scope').textContent(),'End of Sukhmani Sahib.');assert.match(await page.locator('#sk-scope').textContent(),/All 24 Ashtpadis are included/);
    },{width:viewport.width});
    await check('Mode changes preserve original nodes and the reading anchor',async()=>{
     const target=lines.find(l=>l.ashtpadi===3&&l.pauri===3&&l.kind==='pauri').id;
@@ -162,7 +166,7 @@ try{
      assert.equal(await page.locator('#ashtpadi-nav a').filter({hasText:/^1$/}).getAttribute('aria-current'),'true');
      await screenshot(page,name);
     }
-    for(const [number,pauri]of [[13,8],[17,0]]){
+    for(const [number,pauri]of [[23,1],[24,8]]){
      const lastLine=lines.filter(line=>line.ashtpadi===number&&(pauri?line.pauri===pauri:line.kind==='salok')).at(-1);assert.ok(lastLine);
      await page.locator('#sk-position').click();await page.locator('#sk-dialog .sk-options').nth(data.ashtpadis.findIndex(a=>a.number===number)).getByRole('button',{name:pauri?new RegExp('^Pauri '+pauri+'\\b'):/^Salok\b/}).click();
      await page.waitForFunction(n=>!document.getElementById('sk-dialog').open&&document.getElementById('sk-position').textContent.includes('Ashtpadi '+n),number);
@@ -221,8 +225,8 @@ try{
   });
  }catch(e){checks.push({name:'Learning scenario setup or execution',status:'failed',error:e.stack||String(e)});await diagnostic(page,'failure-setup-learning');}finally{await context?.close();}
 
- // Existing first-six and published first-twelve records retain their original schema.
- for(const [legacyLabel,legacyState,legacyExport]of [['first-six',firstSixState,firstSixExport],['published first-twelve',firstTwelveState,firstTwelveExport]]){
+ // First-six, first-twelve and first-eighteen published records retain their original schema.
+ for(const [legacyLabel,legacyState,legacyExport]of [['first-six',firstSixState,firstSixExport],['published first-twelve',firstTwelveState,firstTwelveExport],['published first-eighteen',firstEighteenState,firstEighteenExport]]){
  let legacyContext,legacyPage;try{
   ({context:legacyContext,page:legacyPage}=await fresh({width:390,height:844},{initial:JSON.stringify(legacyState)}));
   await check('An existing '+legacyLabel+' record resumes with its notes, bookmarks and preferences intact',async()=>{
