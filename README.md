@@ -2,13 +2,13 @@
 
 **An account-free family reading and learning project.** Its main focus is continuous Japji Sahib with three teaching depths: original Gurmukhi, concise English and Punjabi explanation, and deeper researched Study drafts.
 
-[Open the existing family site](https://sskhangura82.github.io/gurbani-learning-library/) · [Read Japji Sahib directly](https://sskhangura82.github.io/gurbani-learning-library/full-japji.html)
+[Open the existing family site](https://sskhangura82.github.io/gurbani-learning-library/) · [Read Japji Sahib](https://sskhangura82.github.io/gurbani-learning-library/full-japji.html) · [Read Sukhmani Sahib](https://sskhangura82.github.io/gurbani-learning-library/sukhmani.html)
 
-## Sukhmani Sahib: first-twelve development preview
+## Sukhmani Sahib: first-eighteen public preview
 
-This branch adds `sukhmani.html` to the existing library: Ashtpadis 1–12 of 24, all twelve Saloks, 96 pauris and the Rahau, across Ang 262–279. Its 1,019 original source occurrences (including headings) are compared with a second digital source. English/Punjabi line explanations, passage studies and approximate transliteration remain clearly labeled drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
+The existing `sukhmani.html` reader continues through Ashtpadis 1–18 of 24, all eighteen introductory Saloks, 144 pauris and the Rahau, across Ang 262–288. Its 1,523 original source occurrences (including headings) are compared with a second digital source. English/Punjabi line explanations, 163 passage studies and approximate transliteration remain clearly labeled drafts. Read, Meaning and Study share the same continuous Gurmukhi, with separate browser-local Sukhmani bookmarks, reflections and backups.
 
-See [scope, sources and review status](docs/SUKHMANI_FIRST_TWELVE.md). This preview does not claim a complete Sukhmani Sahib, qualified human review or publication to the family site. Existing Japji source and learning are preserved.
+See [scope, sources and review status](docs/SUKHMANI_FIRST_EIGHTEEN.md). The first-twelve preview was published through PR #34; this continuation follows the user's request to keep the app usable and shareable as content grows. Ashtpadis 19–24 and qualified human review remain outstanding. All previously published Sukhmani source objects, meanings and studies are preserved, as are the existing Japji source and learning.
 
 ## What is included in Revision 7
 

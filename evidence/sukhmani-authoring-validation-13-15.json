@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "part": "sukhmani-teaching-13-15.json",
+  "sha256": "d273edee7f139470b6a81aa5eaff52e9d2e73499d325c7509fba6f06960cf930",
+  "ashtpadis": [
+    13,
+    14,
+    15
+  ],
+  "meaningPairs": 252,
+  "passageStudies": 27,
+  "vocabularyEntries": 30,
+  "checks": {
+    "allSourceIdsPresentExactlyOnce": true,
+    "sourceHashesAndAngsMatch": true,
+    "everyPassageStudyEnclosesFullOriginalGroup": true,
+    "allMeaningStudyOverviewAndPromptFieldsBilingual": true,
+    "allStatusValuesDraft": true,
+    "qualifiedHumanReviewClaimed": false
+  },
+  "reviewScope": "Author self-review of all meaning pairs and studies; separate AI review by the parent agent reported separately. No qualified human review or physical-device test claimed.",
+  "sourceFiles": [
+    {
+      "file": "ashtpadi-13.json",
+      "sha256": "6c349fcf5676fe4a9d413ebaa3d989eec15e45d463a17b54ba2f074393bb763b",
+      "occurrences": 84
+    },
+    {
+      "file": "ashtpadi-14.json",
+      "sha256": "88365eae1d158a59f7aa4b100e46e0f1336ab834289ad4318984b2be491b3bd0",
+      "occurrences": 84
+    },
+    {
+      "file": "ashtpadi-15.json",
+      "sha256": "4d96236a606e72246f2c768166e6b0cc69b5f46828f915adcf5938840c2945b2",
+      "occurrences": 84
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "reviewType": "separate-ai-editorial-review",
+  "reviewerRole": "teaching_13_15",
+  "authorRole": "root",
+  "inputFile": "sukhmani-study-15.json",
+  "reviewedFinalFileSha256": "f6e0ff350228c7fc663ae4399592d2d5a1485f489ffc9bc0fbd64e593ef4adac",
+  "reviewedFields": [
+    "status",
+    "title",
+    "overview",
+    "vocabulary",
+    "teachBack",
+    "caution",
+    "sources"
+  ],
+  "scope": "All English and Punjabi overview, title, ten vocabulary entries, teach-back, caution and source labels; parent-authored passage studies are excluded from this review and are not imported into the final teaching part.",
+  "sourceScope": "Ashtpadi 15, all84 Gurmukhi source occurrences, Ang282–283; selected lexical comparison with Professor Sahib Singh, Sri Guru Granth Darpan282–283.",
+  "findings": [
+    {
+      "issue": "Overview called all four comparisons comparisons of Shabad, while the source specifies Shabad, Guru feet/darshan and holy company across the pairings.",
+      "resolution": "Clarified the umbrella as the Guru’s support and named the distinct referents in both languages."
+    },
+    {
+      "issue": "Vocabulary offered futility as one contextual meaning of birthaa in Pauri1; the immediate line is about not going empty from the Sustainer.",
+      "resolution": "Narrowed Pauri1 sense to empty-handed/disappointed, keeping pain/distress for the Salok in both languages."
+    }
+  ],
+  "outcome": "Suitable as an original educational draft after the two adopted refinements; no other substantive source-fidelity issue found in the reviewed fields.",
+  "qualifiedHumanReview": false,
+  "bibliography": [
+    "https://www.gurugranthdarpan.net/0282.html",
+    "https://www.gurugranthdarpan.net/0283.html"
+  ]
+}

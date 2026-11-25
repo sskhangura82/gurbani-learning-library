@@ -1,0 +1,97 @@
+{
+  "status": "automated-source-verification-passed",
+  "humanReviewApproved": false,
+  "expertPunjabiReviewApproved": false,
+  "combinedSourceSha256": "7ea570c83a248eda9737c49d1181c78dd7b22a485e1e5046bda635c910c15e43",
+  "baseSourceSha256": "387ed3d53ce08b1e003627188fa08a3c9ccbaccc52a3f6192ad683af26e4fb11",
+  "newSourceSha256": "09abda59e36bce6511e8cb8a5edb67c656299f6148b60c8056d1d85ff467af79",
+  "collationReportSha256": "80ac62961d1e81c8645ba7782b433c1b4a0d56784e58c10fab1895db32b7673e",
+  "existingFirstTwelveObjectsPreservedExactly": true,
+  "newSourceRowsVerifiedAgainstPinnedAngAndRecord": 504,
+  "newSourceIndividualHashesVerified": 504,
+  "newOccurrences": 504,
+  "combinedOccurrences": 1523,
+  "newKinds": {
+    "heading": 12,
+    "salok": 12,
+    "pauri": 480
+  },
+  "newAshtpadis": [
+    {
+      "number": 13,
+      "angs": [
+        279,
+        280,
+        281
+      ],
+      "lineCount": 84,
+      "salokVerseCount": 2,
+      "pauriVerseLines": 80,
+      "fileSha256": "6c349fcf5676fe4a9d413ebaa3d989eec15e45d463a17b54ba2f074393bb763b"
+    },
+    {
+      "number": 14,
+      "angs": [
+        281,
+        282
+      ],
+      "lineCount": 84,
+      "salokVerseCount": 2,
+      "pauriVerseLines": 80,
+      "fileSha256": "88365eae1d158a59f7aa4b100e46e0f1336ab834289ad4318984b2be491b3bd0"
+    },
+    {
+      "number": 15,
+      "angs": [
+        282,
+        283
+      ],
+      "lineCount": 84,
+      "salokVerseCount": 2,
+      "pauriVerseLines": 80,
+      "fileSha256": "4d96236a606e72246f2c768166e6b0cc69b5f46828f915adcf5938840c2945b2"
+    },
+    {
+      "number": 16,
+      "angs": [
+        283,
+        284,
+        285
+      ],
+      "lineCount": 84,
+      "salokVerseCount": 2,
+      "pauriVerseLines": 80,
+      "fileSha256": "2cb98db240e780dac455deeeab3f2a7993d01f4194944e59f416420820ab5e2a"
+    },
+    {
+      "number": 17,
+      "angs": [
+        285,
+        286
+      ],
+      "lineCount": 84,
+      "salokVerseCount": 2,
+      "pauriVerseLines": 80,
+      "fileSha256": "8093080a18ea0c1b87889659fa8dcbe6618516764eb50fcf48c318c666252717"
+    },
+    {
+      "number": 18,
+      "angs": [
+        286,
+        287,
+        288
+      ],
+      "lineCount": 84,
+      "salokVerseCount": 2,
+      "pauriVerseLines": 80,
+      "fileSha256": "561a1d4463957325ab7cc5f810c6b300e01c200194a06c2680ffc9a569deb93e"
+    }
+  ],
+  "digitalComparisonExactGurmukhiMatches": 504,
+  "digitalComparisonExactAngMatches": 504,
+  "physicalEditionIndependenceProven": false,
+  "textNormalizationAppliedToSource": false,
+  "boundaryStart": "sukhmani.a13.salok.l01",
+  "boundaryEnd": "sukhmani.a18.p08.l10",
+  "publicationNote": "Publish only extracted ancient Gurmukhi with attribution; raw upstream Markdown includes a modern English translation and remains scratch-only."
+}

@@ -1,0 +1,89 @@
+{
+  "kind": "Independent AI editorial review; not qualified human approval",
+  "status": "reviewed_with_refinements",
+  "authoringFile": "sukhmani-teaching-13-15.json",
+  "authoringFileSha256": "d273edee7f139470b6a81aa5eaff52e9d2e73499d325c7509fba6f06960cf930",
+  "reviewedBy": "Integration agent, separate from the 13–15 meaning and passage-study author",
+  "sourceBasis": "Exact pinned Gurmukhi occurrences, with selected lexical/contextual consultation of Sri Guru Granth Darpan Ang279–283",
+  "scope": {
+    "ashtpadis": [
+      13,
+      14,
+      15
+    ],
+    "bilingualMeaningPairs": 252,
+    "bilingualPassageStudies": 27,
+    "bilingualOverviewsIndependentlyRead": [
+      13,
+      14
+    ],
+    "vocabularyEntriesIndependentlyRead": 20,
+    "bilingualTeachBacksAndCautionsIndependentlyRead": [
+      13,
+      14
+    ],
+    "ashtpadi15OverviewNote": "Authored by integration agent; independently reviewed by the teaching author. See separate overview review receipt. Its source-field precision and contextual birthaa definition were refined after that review."
+  },
+  "findings": [
+    {
+      "sourceIds": [
+        "sukhmani.a13.p07.l08"
+      ],
+      "change": "Use the inner-disposition reading rather than adding the Divine as an unstated grammatical subject; explicitly attribute selected reading to Sahib Singh in study.",
+      "status": "adopted_and_rechecked"
+    },
+    {
+      "sourceIds": [
+        "sukhmani.a13.p07.l04"
+      ],
+      "change": "Keep neither living nor dying as the stated idiom; remove added claim about release after death.",
+      "status": "adopted_and_rechecked"
+    },
+    {
+      "sourceIds": [
+        "sukhmani.a13.p03.l04"
+      ],
+      "change": "Align English condemnation wording with the Punjabi explanation.",
+      "status": "adopted_and_rechecked"
+    },
+    {
+      "sourceIds": [
+        "sukhmani.a13.p08.l07",
+        "sukhmani.a14.p06.l02"
+      ],
+      "change": "Correct unnatural English this own play wording.",
+      "status": "adopted_and_rechecked"
+    },
+    {
+      "sourceIds": [
+        "sukhmani.a14.p03.l09"
+      ],
+      "change": "Clarify that the mind is won over by Naam.",
+      "status": "adopted_and_rechecked"
+    },
+    {
+      "units": [
+        "sukhmani.a15.salok",
+        "sukhmani.a15.p06"
+      ],
+      "change": "Keep study prose on devotional self-offering, humility, service and Naam; remove unnecessary self-injury speculation and app implementation commentary. Retain attributed Naam-water reading.",
+      "status": "adopted_and_rechecked"
+    }
+  ],
+  "reviewNotes": [
+    "Read all 252 English and Punjabi meanings against the source, all 27 bilingual passage explanations and reflections, and all A13/A14 overview fields.",
+    "Confirmed Darpan282 supports the A15.2 opening self-pride reading and true-Giver imperative; retained religious hereafter context in A15.4.",
+    "A13 retains rebirth, judgment and grace; accountability distinction is labeled an interpretive application, not a newly inserted scriptural line.",
+    "A14.6 openly identifies its abiding-Reality frame as interpretation and reads nonbirth with the following creation/removal lines.",
+    "All previously published 1–12 teaching is retained unchanged, with separate canonical preservation checks."
+  ],
+  "consultedUrls": [
+    "https://www.gurugranthdarpan.net/0279.html",
+    "https://www.gurugranthdarpan.net/0280.html",
+    "https://www.gurugranthdarpan.net/0281.html",
+    "https://www.gurugranthdarpan.net/0282.html",
+    "https://www.gurugranthdarpan.net/0283.html"
+  ],
+  "unresolvedFindings": [],
+  "qualifiedHumanApproval": false
+}

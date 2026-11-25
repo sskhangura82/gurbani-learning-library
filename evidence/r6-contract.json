@@ -2,11 +2,15 @@
   "environment": "Node portable contracts",
   "checks": [
     {
-      "name": "Root and full reader entrypoints use the same accepted interface",
+      "name": "Library home is distinct and complete Japji reader remains intact",
       "status": "PASS"
     },
     {
-      "name": "Every frozen scripture, bilingual draft, Study draft, directory and learning-coordination file is byte-identical to R5",
+      "name": "Frozen scripture, bilingual drafts, Study drafts and sharing module remain byte-identical to R5",
+      "status": "PASS"
+    },
+    {
+      "name": "Pace accepts 150, 155, 160 and preserves legacy 140",
       "status": "PASS"
     },
     {
@@ -26,5 +30,5 @@
       "status": "PASS"
     }
   ],
-  "total": 6
+  "total": 7
 }
