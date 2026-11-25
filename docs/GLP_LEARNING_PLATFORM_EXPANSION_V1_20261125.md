@@ -111,6 +111,6 @@ Support an iPhone-width primary layout (390 CSS px, and smaller 320/375 px), iPa
 - [Bhagavad Gita 2.16](https://heritage.iitk.ac.in/SBG/2.16) for the sat/asat comparison; not a Sikh scripture source.
 - [Dhammapada 183](https://www.dhammatalks.net/suttacentral/sc2016/sc/en/dhp.html) for Buddhist ethical cultivation; not a Sikh scripture source.
 - [Psychological flexibility systematic review, PubMed 38615492](https://pubmed.ncbi.nlm.nih.gov/38615492/) for the ACT comparison; not clinical treatment advice.
-- Kamala E. Nayar and Jaswinder Singh Sandhu, *The Sikh View on Happiness: Guru Arjan's Sukhmani*, for critical discussion of historical Sri Chand traditions. Do not reproduce modern book translations or analyses without rights clearance.
+- [Kamala E. Nayar and Jaswinder Singh Sandhu, *The Sikh View on Happiness: Guru Arjan's Sukhmani* (Bloomsbury Academic)](https://www.bloomsbury.com/us/sikh-view-on-happiness-9781350139879/), for critical discussion of historical Sri Chand traditions. Do not reproduce modern book translations or analyses without rights clearance.
 
 **No claim of qualified Sikh scholarship review, literal translation accuracy, clinical benefit, full SGGS search or physical-device acceptance is made by this first pilot.**
