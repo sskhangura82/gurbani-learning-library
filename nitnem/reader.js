@@ -445,7 +445,7 @@ async function chooseBani(name){
   $('collection').hidden=true;$('reader').hidden=false;$('dock').hidden=false;$('library-back').hidden=false;
   $('bani-title-en').textContent=pack.title;$('bani-title-pa').textContent=pack.titleGurmukhi;
   $('bani-subtitle').textContent=pack.unitCount+' passages · Read, Meaning and Study';
-  $('bani-variant').textContent=pack.reference+' · '+pack.caveat;
+  $('bani-variant').textContent=pack.reference+' · '+pack.caveat+(['savaiye','chaupai'].includes(name)?' The Gurmukhi text is awaiting comparison with a named printed edition.':name==='rehras'?' The Chaupai, Swaiya and Dohra sections are awaiting comparison with a named printed edition.':'');
   const url=new URL(location.href),requested=url.searchParams.get('bani')===name?url.searchParams.get('unit'):null;
   const fromURL=requested===null?null:Number(requested);
   const selected=fromURL!==null&&Number.isInteger(fromURL)&&fromURL>=1&&fromURL<=pack.unitCount?fromURL-1:null;

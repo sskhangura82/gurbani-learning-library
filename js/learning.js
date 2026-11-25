@@ -33,6 +33,7 @@
     if(s.version!=null&&s.version!==2)throw Error('This backup needs a newer reader.');
     if(s.notes!=null&&(!plain(s.notes)||Object.entries(s.notes).some(([id,n])=>!continuous.model.byId.has(id)||typeof n!=='string'||n.length>12000)))throw Error('Invalid line reflection.');
     if(s.bookmarks!=null&&(!Array.isArray(s.bookmarks)||s.bookmarks.some(id=>!continuous.model.byId.has(id))))throw Error('Unknown saved line.');
+    continuousState(s); // Validate retained learning before an import can write any key.
    }else if(key===FULL){
     if(s.schemaVersion!=null&&![1,2].includes(s.schemaVersion))throw Error('This backup needs a newer reader.');
     if(s.notes!=null&&(!plain(s.notes)||Object.entries(s.notes).some(([id,n])=>!ids.includes(id)||typeof n!=='string'||n.length>12000)))throw Error('Invalid reflection record.');
@@ -45,7 +46,7 @@
  function mergeRecord(key,current,incoming){
   const a=current?JSON.parse(current):{},b=JSON.parse(incoming);
   if(!plain(a)||!plain(b))throw Error('A current record needs recovery first.');
-  if(key===CONT){if(a.version!=null&&a.version!==2)throw Error('Current learning needs a newer reader.');const x=continuousState(b),y=continuousState(a);if(current){x.bookmarks=[...new Set([...y.bookmarks,...x.bookmarks])];for(const id of new Set([...Object.keys(y.notes),...Object.keys(x.notes)]))x.notes[id]=mergeText(y.notes[id],x.notes[id]);}return JSON.stringify(x);}
+  if(key===CONT){if(a.version!=null&&a.version!==2)throw Error('Current learning needs a newer reader.');const x=continuousState(b),y=continuousState(a);if(current){x.bookmarks=[...new Set([...y.bookmarks,...x.bookmarks])];for(const id of new Set([...Object.keys(y.notes),...Object.keys(x.notes)]))x.notes[id]=mergeText(y.notes[id],x.notes[id]);x.keptAside=continuous.C.mergeKeptAside(y.keptAside,x.keptAside);}return JSON.stringify(x);}
   if(key===FULL){const x=normalize(b),y=normalize(a);if(current){x.bookmarks=[...new Set([...y.bookmarks,...x.bookmarks])];for(const id of ids)x.notes[id]=mergeText(y.notes[id],x.notes[id]);}return JSON.stringify(x);}
   const x={...b,...a};x.note=mergeText(a.note,b.note);x.bookmarks=[...new Set([...(a.bookmarks||[]),...(b.bookmarks||[])])];return JSON.stringify(x);
  }
