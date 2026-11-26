@@ -200,3 +200,17 @@ checks a–d under R2-X-04 in the RT-002 criteria file, frozen before this candi
 | Sukhmani place on repeated reopening | 6 reopenings × 3 versions | One line on the first reopening, then stable — identical on the published version, so not the CI-R-11 drift |
 | Builder's tests, run by this reviewer after my verdicts were committed | The new 9-scenario passage-visit suite; 5 Node suites | Pass |
 
+### Re-test of candidate PR #48 at `94f004a` (the knowledge-registry repair)
+
+Record: [`round3b/README.md`](round3b/README.md). Criteria: the round 3 criteria, frozen before PR #45 was opened.
+Chromium emulation plus direct queries against the reference database. Device: none.
+
+| Finding | Examined | Verdict |
+|---|---|---|
+| R3-01 | Asa Ki Vaar walked in the reference with the Pauri numbers read from the text; each of the three names checked against where the passage actually stands; every Salok name in the Vaar tested for repeats (374) | **Fixed** |
+| R3-02 | Logical line identities; 19 old occurrence names through the crosswalk with their texts; 19 fingerprints recomputed | **Fixed** |
+| R3-03 | 30 mutations with the edited file's own digest regenerated (15 scripture, 11 teaching, 2 pin, of which 2 must be allowed); plus the 35 round 3 edits through the page's data check | **Fixed** — 29 of 30 refused; round 3's 14 of 35 is now 30 of 30 applicable, Gurbani 11 of 11 |
+| R3-04 (titles) | The passage heading, the editorial label in both languages, language tags, and whether the editorial title is still findable | **Fixed**, with RB-01 open |
+| Regression | 19 lines against the reference; boundaries 9/8/2; the 582 search cases re-judged through the crosswalk | Pass — identical to round 3 group for group |
+| Builder's tests, run by this reviewer after my verdicts were committed | 4 suites; committed evidence compared field for field | Pass |
+

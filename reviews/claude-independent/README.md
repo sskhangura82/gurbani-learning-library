@@ -60,7 +60,10 @@ CI-U-11) · [`retests/RT-002_FROZEN_CRITERIA…`](retests/RT-002_FROZEN_CRITERIA
 (**the second re-test, PR #40 at `1470477`: three repairs fixed, two partly, two not attempted;
 nothing broken; fit to stage for the phone check once the test banner is off the reader**) ·
 [`retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md`](retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md) (**PR #47: R2-X-04
-fixed — a linked passage is now a visit that writes nothing**).
+fixed — a linked passage is now a visit that writes nothing**) ·
+[`round3b/README.md`](round3b/README.md) (**PR #48: R3-01, R3-02, R3-03 and the titles part of R3-04 all
+fixed; Gurbani and teaching now hold separate files, separate pins, and bindings that go stale when either
+side moves**).
 
 ## Reading the evidence labels
 
