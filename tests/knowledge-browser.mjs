@@ -37,5 +37,18 @@ for(const damaged of [false,true]){
   else{await pg.getByText(/Development pack verified/).waitFor();assert.match(await pg.locator("#content").innerText(),/SYNTHETIC editorial revision/);}
  });await cx.close();
 }
+// A renewed editorial digest alone must not admit an attribution leak.
+for(const field of ["title","pa"]){
+ const cx=await b.newContext({viewport:{width:390,height:844}}),pg=await cx.newPage(),e=JSON.parse(editorial);
+ e.passageDescriptions[0][field]="ਸਲੋਕੁ ਮਃ ੧ ॥";
+ const raw=Buffer.from(JSON.stringify(e)),pin=await sha256(raw);
+ await pg.route("**/knowledge/pilot.json",r=>r.fulfill({status:200,contentType:"application/json",body:raw}));
+ await pg.route("**/knowledge/app.mjs",async r=>{const a=await r.fetch();await r.fulfill({response:a,body:(await a.text()).replace(/PACK_SHA256="[a-f0-9]{64}"/,'PACK_SHA256="'+pin+'"')});});
+ await check("Re-sealed scripture heading in "+field+" refuses the actual page",async()=>{
+  await pg.goto(url);await pg.getByText(/Knowledge pack could not be verified/).waitFor();
+  assert.equal(await pg.locator(".pankti").count(),0);assert.equal(await pg.locator("#content").innerText(),"");
+  assert.ok(await pg.locator("#search-button").isDisabled());
+ });await cx.close();
+}
 assert.deepEqual(report.errors,[]);
 }catch(e){report.status="FAIL";report.failure=e.stack||String(e);process.exitCode=1;}finally{if(b)await b.close();await new Promise(r=>server.close(r));await fs.writeFile(path.join(out,"report.json"),JSON.stringify(report,null,2));console.log(JSON.stringify({status:report.status,checks:report.checks.length,failure:report.failure||null}));}

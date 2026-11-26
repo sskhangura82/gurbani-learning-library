@@ -51,6 +51,21 @@ export async function verifyScripture(bytes){
  for(const id of Object.values(s.legacyPassageIds))need(passages.has(id),"Unknown legacy passage target");
  return s;
 }
+// Comparison only: never normalize or rewrite the canonical Gurbani bytes.
+function titleSignature(value){
+ return value.normalize("NFKC").replace(/\p{Cf}/gu,"").replace(/[੦-੯]/gu,c=>String(c.codePointAt(0)-0x0a66)).replace(/[\p{P}\p{Z}\s]/gu,"");
+}
+function validateEditorialTitle(value,sourceSignatures){
+ need(typeof value==="string"&&value.trim().length>0,"INVALID_EDITORIAL_TITLE: expected nonempty text");
+ const key=titleSignature(value);
+ need(key.length>0,"INVALID_EDITORIAL_TITLE: expected visible text");
+ // Reserve the source's literal lines and common structural heading forms.
+ // This is a syntactic attribution guard, not a general theological or
+ // semantic classification of editorial language.
+ const heading=/^(?:ੴ|ਸਲੋਕ(?:ੁ|ਾ)?(?:ਮਹਲਾ|ਮਃ|ਮ)[0-9]+|(?:ਮਹਲਾ|ਮਃ|ਮ)[0-9]+|ਪਉੜੀ[0-9]+|ਰਹਾਉ[0-9]+)/u;
+ const bare=/^(?:ਸਲੋਕ(?:ੁ|ਾ)?|ਪਉੜੀ|ਰਹਾਉ)$/u;
+ need(!sourceSignatures.has(key)&&!heading.test(key)&&!bare.test(key),"EDITORIAL_TITLE_ATTRIBUTION: original text or scripture heading in editorial title");
+}
 export async function loadKnowledge(sourceBytes,teachingBytes,teachingPin){
  const s=await verifyScripture(sourceBytes);
  need(await sha256(teachingBytes)===teachingPin,"Editorial digest mismatch");
@@ -58,7 +73,13 @@ export async function loadKnowledge(sourceBytes,teachingBytes,teachingPin){
  need(e.schema==="glp.knowledge.editorial.v2"&&e.status==="NONPUBLISHING_DRAFT"&&!Object.hasOwn(e,"occurrences"),"Invalid editorial pack");
  const passages=unique(s.passages),lines=unique(s.occurrences);
  need(e.nodes.every(n=>["concept","word","study","lesson","course"].includes(n.type)),"Editorial pack attempts to define scripture or its attribution");
- const descriptions=new Map();for(const d of e.passageDescriptions){need(passages.has(d.passageId)&&!descriptions.has(d.passageId)&&Object.keys(d).every(k=>["passageId","title","pa","aliases"].includes(k)),"Invalid editorial passage description");descriptions.set(d.passageId,d);}
+ const sourceSignatures=new Set(s.occurrences.map(o=>titleSignature(o.text)));
+ const descriptions=new Map();for(const d of e.passageDescriptions){
+  need(passages.has(d.passageId)&&!descriptions.has(d.passageId)&&Object.keys(d).every(k=>["passageId","title","pa","aliases"].includes(k)),"Invalid editorial passage description");
+  validateEditorialTitle(d.title,sourceSignatures);
+  validateEditorialTitle(d.pa,sourceSignatures);
+  descriptions.set(d.passageId,d);
+ }
  need(descriptions.size===passages.size,"Missing passage description");
  for(const n of e.nodes){
   if(n.type==="lesson")exactBindings(n.sourceBindings,n.sourcePassageIds,passages,"passageSha256");
