@@ -4,7 +4,17 @@ vm.runInNewContext(fs.readFileSync(new URL('js/japji-full-data.js',root),'utf8')
 async function test(name,f){await f();checks.push({name,status:'PASS'});}
 await test('Library home is distinct and complete Japji reader remains intact',()=>{const home=fs.readFileSync(new URL('index.html',root),'utf8'),reader=fs.readFileSync(new URL('full-japji.html',root),'utf8');assert.ok(home.includes('Nitnem')&&home.includes('Simran Room')&&home.includes('Gurdwaras'));assert.ok(reader.includes('continuous-reader')&&reader.includes('pace-shortcut'));assert.notEqual(home,reader);});
 const hashes=JSON.parse(fs.readFileSync(new URL('fixtures/r5-preserved-sha256.json',import.meta.url)));
-await test('Frozen scripture, bilingual drafts, Study drafts and sharing module remain byte-identical to R5',()=>{for(const [file,sha] of Object.entries(hashes))if(!['js/continuous-core.js','js/learning.js'].includes(file))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL(file,root))).digest('hex'),sha,file);});
+await test('Frozen scripture and teaching remain byte-identical to R5; the one sharing-module amendment is explicitly chained',()=>{
+ const sha256=file=>crypto.createHash('sha256').update(fs.readFileSync(new URL(file,root))).digest('hex');
+ const receipt=JSON.parse(fs.readFileSync(new URL('evidence/claude-review-passage-visit-amendments.json',root)));
+ const amendment=receipt.amendments['js/shared-learning.js'];
+ assert.equal(receipt.changeBaseline,'1470477b5a27a8f975f1efce74443a0e136aa94e');
+ assert.equal(receipt.priorLedgerSHA256,sha256('evidence/claude-review-runtime-followup-amendments.json'));
+ assert.equal(amendment.before,hashes['js/shared-learning.js']);
+ assert.equal(amendment.before,sha256('tests/fixtures/rt1-published/shared-learning.js'));
+ assert.deepEqual(amendment.findings,['R2-X-04']);
+ for(const [file,sha] of Object.entries(hashes))if(!['js/continuous-core.js','js/learning.js'].includes(file))assert.equal(sha256(file),file==='js/shared-learning.js'?amendment.after:sha,file);
+});
 await test('Pace accepts 150, 155, 160 and preserves legacy 140',()=>{for(const v of [50,70,100,140,150,155,160])assert.equal(norm({pace:v}).pace,v);for(const bad of [-1,0,47,147,165,Infinity,'160'])assert.equal(norm({pace:bad}).pace,70);});
 await test('Persistent-control preference defaults safely, validates boolean and survives export/import',()=>{assert.equal(norm({}).persistentControls,false);assert.equal(norm({persistentControls:'true'}).persistentControls,false);const s=new Map(),storage={getItem:k=>s.get(k)||null,setItem:(k,v)=>s.set(k,v),removeItem:k=>s.delete(k)};storage.setItem(L.CONT,JSON.stringify(norm({persistentControls:true,notes:{'pauri02.line01':'QA · ਪੰਜਾਬੀ'},bookmarks:['pauri02.line01']})));const backup=L.parse(L.exportAll(storage));const t=new Map(),dest={getItem:k=>t.get(k)||null,setItem:(k,v)=>t.set(k,v),removeItem:k=>t.delete(k)};L.importAll(dest,backup);const result=JSON.parse(dest.getItem(L.CONT));assert.equal(result.persistentControls,true);assert.equal(result.notes['pauri02.line01'],'QA · ਪੰਜਾਬੀ');assert.deepEqual(result.bookmarks,['pauri02.line01']);});
 await test('A stale tab cannot overwrite the persistent-control preference or saved notes',async()=>{let saved=null;const storage={getItem:()=>saved,setItem:(k,v)=>saved=v};const locks={request:async(n,o,f)=>typeof o==='function'?o():f({})},a=S.create({storage,locks,key:L.CONT,normalise:norm,seed:norm({})}),seed=norm({});await a.save(seed,{preferences:{persistentControls:true},notes:{'pauri02.line01':'QA retained'}});await a.save(seed);assert.equal(a.read().persistentControls,true);assert.equal(a.read().notes['pauri02.line01'],'QA retained');});
