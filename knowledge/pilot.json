@@ -1,0 +1,956 @@
+{
+  "schema": "glp.knowledge.v1",
+  "status": "NONPUBLISHING_DRAFT",
+  "sourcePolicy": "Exact Gurmukhi from pinned digital corpus; no third-party modern translations; qualified review and source rights pending",
+  "nodes": [
+    {
+      "id": "collection.sggs",
+      "type": "collection",
+      "title": "Sri Guru Granth Sahib Ji",
+      "pa": "ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ",
+      "status": "PRIMARY_SCRIPTURE"
+    },
+    {
+      "id": "collection.dasam",
+      "type": "collection",
+      "title": "Dasam Bani",
+      "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+    },
+    {
+      "id": "collection.bhai-gurdas",
+      "type": "collection",
+      "title": "Vaaran Bhai Gurdas Ji",
+      "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+    },
+    {
+      "id": "collection.bhai-nand-lal",
+      "type": "collection",
+      "title": "Bhai Nand Lal Ji",
+      "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+    },
+    {
+      "id": "edition.sggs.opengranth-34d2a7c",
+      "type": "edition",
+      "collectionId": "collection.sggs",
+      "sourceRepo": "opengranth/open-granth",
+      "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+      "rights": "Original Gurmukhi only; upstream data/metadata redistribution terms require verification before release",
+      "humanCollated": false
+    },
+    {
+      "id": "author.guru-nanak",
+      "type": "author",
+      "title": "Guru Nanak Dev Ji",
+      "pa": "ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
+      "aliases": [
+        "nanak",
+        "guru nanak"
+      ]
+    },
+    {
+      "id": "author.guru-angad",
+      "type": "author",
+      "title": "Guru Angad Dev Ji",
+      "pa": "ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+      "aliases": [
+        "angad",
+        "guru angad"
+      ]
+    },
+    {
+      "id": "author.bhagat-kabir",
+      "type": "author",
+      "title": "Bhagat Kabir Ji",
+      "pa": "ਭਗਤ ਕਬੀਰ ਜੀ",
+      "aliases": [
+        "kabir",
+        "kabeer"
+      ]
+    },
+    {
+      "id": "raag.asa",
+      "type": "raag",
+      "title": "Raag Asa",
+      "pa": "ਆਸਾ",
+      "aliases": [
+        "asa",
+        "aasa"
+      ]
+    },
+    {
+      "id": "composition.asa-di-vaar",
+      "type": "composition",
+      "title": "Asa Di Vaar",
+      "pa": "ਆਸਾ ਦੀ ਵਾਰ",
+      "collectionId": "collection.sggs",
+      "aliases": [
+        "asa di var",
+        "asa di vaar"
+      ]
+    },
+    {
+      "id": "composition.kabir-saloks",
+      "type": "composition",
+      "title": "Salok Bhagat Kabir Ji",
+      "pa": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ",
+      "collectionId": "collection.sggs",
+      "aliases": [
+        "kabir saloks"
+      ]
+    },
+    {
+      "id": "sggs.asa.470.m1.salok01",
+      "type": "passage",
+      "title": "Humility beyond appearances",
+      "pa": "ਅਸਲੀ ਨਿਮਰਤਾ",
+      "collectionId": "collection.sggs",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "angStart": 470,
+      "angEnd": 470,
+      "kind": "salok",
+      "number": 1,
+      "authorId": "author.guru-nanak",
+      "compositionId": "composition.asa-di-vaar",
+      "raagId": "raag.asa",
+      "occurrenceIds": [
+        "sggs.opengranth-34d2a7c.ang470.row29",
+        "sggs.opengranth-34d2a7c.ang470.row30",
+        "sggs.opengranth-34d2a7c.ang470.row31",
+        "sggs.opengranth-34d2a7c.ang470.row32",
+        "sggs.opengranth-34d2a7c.ang470.row33",
+        "sggs.opengranth-34d2a7c.ang470.row34",
+        "sggs.opengranth-34d2a7c.ang470.row35",
+        "sggs.opengranth-34d2a7c.ang470.row36",
+        "sggs.opengranth-34d2a7c.ang470.row37"
+      ],
+      "focusId": "sggs.opengranth-34d2a7c.ang470.row33",
+      "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0470.md",
+      "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=470&g=1&h=0&k=0&p=0&r=0&t=0",
+      "comparison": "All nine rows visually compared with SriGranth Ang 470; whitespace presentation only. Digital witnesses may share lineage.",
+      "review": "DIGITAL_SOURCE_DRAFT",
+      "aliases": [
+        "ang 470"
+      ]
+    },
+    {
+      "id": "sggs.asa.466.m2.salok02",
+      "type": "passage",
+      "title": "Understanding Haumai and grace",
+      "pa": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+      "collectionId": "collection.sggs",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "angStart": 466,
+      "angEnd": 466,
+      "kind": "salok",
+      "number": 2,
+      "authorId": "author.guru-angad",
+      "compositionId": "composition.asa-di-vaar",
+      "raagId": "raag.asa",
+      "occurrenceIds": [
+        "sggs.opengranth-34d2a7c.ang466.row40",
+        "sggs.opengranth-34d2a7c.ang466.row41",
+        "sggs.opengranth-34d2a7c.ang466.row42",
+        "sggs.opengranth-34d2a7c.ang466.row43",
+        "sggs.opengranth-34d2a7c.ang466.row44",
+        "sggs.opengranth-34d2a7c.ang466.row45",
+        "sggs.opengranth-34d2a7c.ang466.row46",
+        "sggs.opengranth-34d2a7c.ang466.row47"
+      ],
+      "focusId": "sggs.opengranth-34d2a7c.ang466.row45",
+      "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0466.md",
+      "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=466&g=1&h=0&k=0&p=0&r=0&t=0",
+      "comparison": "All eight rows visually compared with SriGranth Ang 466; whitespace presentation only. Digital witnesses may share lineage.",
+      "review": "DIGITAL_SOURCE_DRAFT",
+      "aliases": [
+        "ang 466"
+      ]
+    },
+    {
+      "id": "sggs.kabir.salok007",
+      "type": "passage",
+      "title": "Turning criticism inward",
+      "pa": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+      "collectionId": "collection.sggs",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "angStart": 1364,
+      "angEnd": 1364,
+      "kind": "salok",
+      "number": 7,
+      "authorId": "author.bhagat-kabir",
+      "compositionId": "composition.kabir-saloks",
+      "raagId": null,
+      "occurrenceIds": [
+        "sggs.opengranth-34d2a7c.ang1364.row33",
+        "sggs.opengranth-34d2a7c.ang1364.row34"
+      ],
+      "focusId": "sggs.opengranth-34d2a7c.ang1364.row33",
+      "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1364.md",
+      "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1364&g=1&h=0&k=0&p=0&r=0&t=0",
+      "comparison": "First verse corroborated by SriGranth indexed search; complete two-line unit from pinned corpus. Second-witness full collation pending.",
+      "review": "DIGITAL_SOURCE_DRAFT",
+      "aliases": [
+        "ang 1364"
+      ]
+    },
+    {
+      "id": "concept.humility",
+      "type": "concept",
+      "title": "Humility",
+      "pa": "ਨਿਮਰਤਾ",
+      "aliases": [
+        "nimarta",
+        "nimrata",
+        "humble",
+        "humility",
+        "ਨਿਮਰਤਾ",
+        "ਨੀਵੀ",
+        "ਨਿਮ੍ਰਤਾ"
+      ],
+      "simple": {
+        "en": "Gurmat humility means letting go of self-importance while remaining truthful, responsible and open to the Guru's wisdom. It is not self-hatred or accepting injustice.",
+        "pa": "ਨਿਮਰਤਾ ਦਾ ਭਾਵ ਆਪਣੇ ਆਪ ਨੂੰ ਵੱਡਾ ਸਮਝਣ ਦਾ ਅਹੰਕਾਰ ਛੱਡਣਾ ਅਤੇ ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ ਨੂੰ ਸੱਚੇ ਮਨ ਨਾਲ ਅਪਣਾਉਣਾ ਹੈ। ਇਹ ਆਪਣੇ ਆਪ ਨੂੰ ਹੀਣ ਸਮਝਣਾ ਨਹੀਂ।"
+      },
+      "detailed": {
+        "en": "Ang 470 contrasts impressive outward appearance with inward sincerity; Kabir's Salok 7 turns attention toward one's own shortcomings. Read these with Guru Angad's account of Haumai, grace and living the Shabad. Humility is not just politeness or an absence of confidence.",
+        "pa": "ਅੰਗ ੪੭੦ ਦੇ ਸਲੋਕ ਵਿੱਚ ਬਾਹਰਲੇ ਦਿਖਾਵੇ ਅਤੇ ਅੰਦਰਲੀ ਸੱਚਾਈ ਦਾ ਫ਼ਰਕ ਹੈ। ਕਬੀਰ ਜੀ ਦਾ ਸਲੋਕ ਆਪਣੇ ਅੰਦਰ ਝਾਤ ਮਾਰਨ ਲਈ ਪ੍ਰੇਰਦਾ ਹੈ। ਹਉਮੈ ਦੀ ਸਮਝ ਅਤੇ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਨੂੰ ਜੀਵਨ ਵਿੱਚ ਅਪਣਾਉਣਾ ਇਸ ਵਿਚਾਰ ਨਾਲ ਜੁੜਦੇ ਹਨ।"
+      },
+      "deep": {
+        "en": "Study the difference between inward orientation and outward gestures. The hunter bows to deceive; therefore lowering oneself physically is insufficient. Compare self-examination with intellectual humility, and the Buddhist examination of rank-based conceit, while retaining the distinct Sikh relationship to Guru, grace and Divine remembrance. Ask how truthful accountability can coexist with compassion.",
+        "pa": "ਸਿਰ ਨਿਵਾਉਣ ਨਾਲ ਹੀ ਨਿਮਰਤਾ ਸਾਬਤ ਨਹੀਂ ਹੁੰਦੀ। ਮਨ ਦੀ ਨੀਅਤ ਅਤੇ ਕਰਮ ਵੀ ਮਹੱਤਵਪੂਰਨ ਹਨ। ਦੂਜੇ ਦਰਸ਼ਨਾਂ ਨਾਲ ਤੁਲਨਾ ਕਰਦੇ ਸਮੇਂ ਗੁਰਮਤਿ ਵਿੱਚ ਗੁਰੂ, ਕਿਰਪਾ ਅਤੇ ਨਾਮ ਦੇ ਸੰਦਰਭ ਨੂੰ ਵੱਖਰਾ ਰੱਖੋ।"
+      },
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "concept.haumai",
+      "type": "concept",
+      "title": "Haumai",
+      "pa": "ਹਉਮੈ",
+      "aliases": [
+        "haumai",
+        "haume",
+        "haumay",
+        "ego",
+        "self-centeredness",
+        "ਹਉਮੈ",
+        "ਅਹੰਕਾਰ"
+      ],
+      "simple": {
+        "en": "Haumai is a self-centred spiritual orientation, not simply healthy individuality or the ability to say ‘I’. Guru Angad links its release with grace and living the Guru's Shabad.",
+        "pa": "ਹਉਮੈ ਆਪਣੇ ਆਪ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਆਤਮਕ ਅਵਸਥਾ ਹੈ। ਇਹ ਸਿਰਫ਼ ਆਮ ਸਵੈ-ਪਛਾਣ ਨਹੀਂ। ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ ਇਸ ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕਿਰਪਾ ਅਤੇ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਦੀ ਕਮਾਈ ਦੱਸਦੇ ਹਨ।"
+      },
+      "detailed": {
+        "en": "The Ang 466 Salok asks how Haumai arises and what discipline releases it. Its answer places Haumai within Hukam, describes bondage and rebirth, and uses the metaphor of a persistent illness. The next lines identify grace and practice of the Shabad rather than mere self-help.",
+        "pa": "ਸਲੋਕ ਵਿੱਚ ਹਉਮੈ ਦੇ ਉਤਪੰਨ ਹੋਣ ਅਤੇ ਦੂਰ ਹੋਣ ਦਾ ਪ੍ਰਸ਼ਨ ਹੈ। ਹੁਕਮ, ਬੰਧਨ, ਜਨਮ ਅਤੇ ਰੋਗ ਦੇ ਰੂਪਕ ਤੋਂ ਬਾਅਦ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਦੀ ਕਮਾਈ ਅਤੇ ਕਿਰਪਾ ਵੱਲ ਧਿਆਨ ਜਾਂਦਾ ਹੈ।"
+      },
+      "deep": {
+        "en": "Distinguish the spiritual account from a modern theory of identity or bias. Research on intellectual humility may illuminate willingness to acknowledge limitations, but it does not explain Naam, Hukam or liberation. The illness metaphor is not a medical diagnosis. Consider how self-examination, humility, truthful action and grace relate without reducing spiritual liberation to a behavioural outcome.",
+        "pa": "ਮਨੋਵਿਗਿਆਨਕ ਸਵੈ-ਪਛਾਣ ਅਤੇ ਗੁਰਬਾਣੀ ਦੀ ਹਉਮੈ ਨੂੰ ਇਕੋ ਅਰਥ ਨਾ ਦਿਓ। ਰੋਗ ਦਾ ਰੂਪਕ ਡਾਕਟਰੀ ਨਿਦਾਨ ਨਹੀਂ। ਨਾਮ, ਹੁਕਮ ਅਤੇ ਮੁਕਤੀ ਦੇ ਆਤਮਕ ਸੰਦਰਭ ਨੂੰ ਸੰਭਾਲ ਕੇ ਸਮਝੋ।"
+      },
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "concept.hukam",
+      "type": "concept",
+      "title": "Hukam",
+      "pa": "ਹੁਕਮ",
+      "aliases": [
+        "Hukam",
+        "ਹੁਕਮ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON"
+    },
+    {
+      "id": "concept.kirpa",
+      "type": "concept",
+      "title": "Kirpa",
+      "pa": "ਕਿਰਪਾ",
+      "aliases": [
+        "Kirpa",
+        "ਕਿਰਪਾ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON"
+    },
+    {
+      "id": "concept.shabad",
+      "type": "concept",
+      "title": "Shabad",
+      "pa": "ਸ਼ਬਦ",
+      "aliases": [
+        "Shabad",
+        "ਸ਼ਬਦ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON"
+    },
+    {
+      "id": "concept.seva",
+      "type": "concept",
+      "title": "Seva",
+      "pa": "ਸੇਵਾ",
+      "aliases": [
+        "Seva",
+        "ਸੇਵਾ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON"
+    },
+    {
+      "id": "word.nivi",
+      "type": "word",
+      "title": "Nivi",
+      "pa": "ਨੀਵੀ",
+      "aliases": [
+        "Nivi",
+        "ਨੀਵੀ",
+        "ਨੀਵੀ"
+      ],
+      "senses": [
+        {
+          "form": "ਨੀਵੀ",
+          "passageId": "sggs.asa.470.m1.salok01",
+          "occurrenceIds": [
+            "sggs.opengranth-34d2a7c.ang470.row33"
+          ],
+          "en": "Lowness/humility in the comparison of virtues; exact grammatical analysis pending.",
+          "pa": "ਨੀਵਾਂ ਰਹਿਣਾ; ਇਸ ਸੰਦਰਭ ਵਿੱਚ ਨਿਮਰਤਾ।",
+          "review": "AI_ASSISTED_DRAFT"
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "word.mithat",
+      "type": "word",
+      "title": "Mithat",
+      "pa": "ਮਿਠਤੁ",
+      "aliases": [
+        "Mithat",
+        "ਮਿਠਤੁ",
+        "ਮਿਠਤੁ"
+      ],
+      "senses": [
+        {
+          "form": "ਮਿਠਤੁ",
+          "passageId": "sggs.asa.470.m1.salok01",
+          "occurrenceIds": [
+            "sggs.opengranth-34d2a7c.ang470.row33"
+          ],
+          "en": "Sweetness or gentleness in conduct, in this Salok.",
+          "pa": "ਮਿਠਾਸ; ਚੰਗੇ ਵਿਹਾਰ ਦੀ ਮਿਠਾਸ।",
+          "review": "AI_ASSISTED_DRAFT"
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "word.haumai",
+      "type": "word",
+      "title": "Haumai",
+      "pa": "ਹਉਮੈ",
+      "aliases": [
+        "Haumai",
+        "ਹਉਮੈ",
+        "ਹਉਮੈ"
+      ],
+      "senses": [
+        {
+          "form": "ਹਉਮੈ",
+          "passageId": "sggs.asa.466.m2.salok02",
+          "occurrenceIds": [
+            "sggs.opengranth-34d2a7c.ang466.row41",
+            "sggs.opengranth-34d2a7c.ang466.row42",
+            "sggs.opengranth-34d2a7c.ang466.row43",
+            "sggs.opengranth-34d2a7c.ang466.row44",
+            "sggs.opengranth-34d2a7c.ang466.row45"
+          ],
+          "en": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego.",
+          "pa": "ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ।",
+          "review": "AI_ASSISTED_DRAFT"
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "word.hukam",
+      "type": "word",
+      "title": "Hukam",
+      "pa": "ਹੁਕਮ",
+      "aliases": [
+        "Hukam",
+        "ਹੁਕਮ",
+        "ਹੁਕਮੁ"
+      ],
+      "senses": [
+        {
+          "form": "ਹੁਕਮੁ",
+          "passageId": "sggs.asa.466.m2.salok02",
+          "occurrenceIds": [
+            "sggs.opengranth-34d2a7c.ang466.row44"
+          ],
+          "en": "The exact form ਹੁਕਮੁ in this passage refers to Divine order/command; full grammar review pending.",
+          "pa": "ਇਸ ਪੰਕਤੀ ਵਿੱਚ ਰੱਬੀ ਹੁਕਮ।",
+          "review": "AI_ASSISTED_DRAFT"
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "word.kirpa",
+      "type": "word",
+      "title": "Kirpa",
+      "pa": "ਕਿਰਪਾ",
+      "aliases": [
+        "Kirpa",
+        "ਕਿਰਪਾ",
+        "ਕਿਰਪਾ"
+      ],
+      "senses": [
+        {
+          "form": "ਕਿਰਪਾ",
+          "passageId": "sggs.asa.466.m2.salok02",
+          "occurrenceIds": [
+            "sggs.opengranth-34d2a7c.ang466.row46"
+          ],
+          "en": "Grace or mercy in relation to practising the Guru's Shabad.",
+          "pa": "ਮਿਹਰ ਜਾਂ ਕਿਰਪਾ।",
+          "review": "AI_ASSISTED_DRAFT"
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "word.bhalo",
+      "type": "word",
+      "title": "Bhalo",
+      "pa": "ਭਲੋ",
+      "aliases": [
+        "Bhalo",
+        "ਭਲੋ",
+        "ਭਲੋ"
+      ],
+      "senses": [
+        {
+          "form": "ਭਲੋ",
+          "passageId": "sggs.kabir.salok007",
+          "occurrenceIds": [
+            "sggs.opengranth-34d2a7c.ang1364.row33"
+          ],
+          "en": "Good, in the speaker's contrast with his own shortcomings.",
+          "pa": "ਚੰਗਾ; ਆਪਣੇ ਆਪ ਨਾਲ ਕੀਤੀ ਤੁਲਨਾ ਵਿੱਚ।",
+          "review": "AI_ASSISTED_DRAFT"
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT"
+    },
+    {
+      "id": "study.intellectual-humility",
+      "type": "study",
+      "title": "Intellectual humility",
+      "pa": "ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ",
+      "aliases": [
+        "intellectual humility",
+        "psychology",
+        "self awareness"
+      ],
+      "discipline": "psychology",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/34569872/",
+      "citation": "Porter et al., Clarifying the Content of Intellectual Humility, J Pers Assess 2022",
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "study.buddhist-conceit",
+      "type": "study",
+      "title": "Buddhist reflection on conceit",
+      "pa": "ਬੁੱਧ ਧਰਮ ਵਿੱਚ ਮਾਨ ਦਾ ਵਿਚਾਰ",
+      "aliases": [
+        "buddhism",
+        "buddhist",
+        "conceit"
+      ],
+      "discipline": "comparative religion",
+      "reference": "https://suttacentral.net/sn22.49/en/bodhi",
+      "citation": "Saṃyutta Nikāya 22.49, Soṇa",
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "course.human-mind",
+      "type": "course",
+      "title": "Understanding the human mind",
+      "pa": "ਮਨ ਦੀ ਸਮਝ",
+      "orderedLessonIds": [
+        "concept.haumai",
+        "concept.humility"
+      ],
+      "review": "DRAFT_PATHWAY_NOT_APPROVED"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.1",
+      "from": "sggs.asa.470.m1.salok01",
+      "to": "author.guru-nanak",
+      "type": "written_by",
+      "evidence": "Enclosing heading and corpus context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.2",
+      "from": "composition.asa-di-vaar",
+      "to": "sggs.asa.470.m1.salok01",
+      "type": "contains",
+      "evidence": "Pinned corpus boundaries",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.3",
+      "from": "sggs.asa.470.m1.salok01",
+      "to": "raag.asa",
+      "type": "in_raag",
+      "evidence": "Asa Di Vaar context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.4",
+      "from": "sggs.asa.466.m2.salok02",
+      "to": "author.guru-angad",
+      "type": "written_by",
+      "evidence": "Enclosing heading and corpus context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.5",
+      "from": "composition.asa-di-vaar",
+      "to": "sggs.asa.466.m2.salok02",
+      "type": "contains",
+      "evidence": "Pinned corpus boundaries",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.6",
+      "from": "sggs.asa.466.m2.salok02",
+      "to": "raag.asa",
+      "type": "in_raag",
+      "evidence": "Asa Di Vaar context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.7",
+      "from": "sggs.kabir.salok007",
+      "to": "author.bhagat-kabir",
+      "type": "written_by",
+      "evidence": "Enclosing heading and corpus context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.8",
+      "from": "composition.kabir-saloks",
+      "to": "sggs.kabir.salok007",
+      "type": "contains",
+      "evidence": "Pinned corpus boundaries",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.9",
+      "from": "sggs.asa.470.m1.salok01",
+      "to": "concept.humility",
+      "type": "discusses",
+      "reason": "The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+      "refs": [
+        "sggs.asa.470.m1.salok01"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.10",
+      "from": "sggs.kabir.salok007",
+      "to": "concept.humility",
+      "type": "discusses",
+      "reason": "The speaker reverses the impulse to rank oneself above others; read as spiritual self-examination, not self-abuse.",
+      "refs": [
+        "sggs.kabir.salok007"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.11",
+      "from": "sggs.asa.466.m2.salok02",
+      "to": "concept.haumai",
+      "type": "discusses",
+      "reason": "Explicit questions about the origin and release of Haumai.",
+      "refs": [
+        "sggs.asa.466.m2.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.12",
+      "from": "sggs.asa.466.m2.salok02",
+      "to": "concept.hukam",
+      "type": "discusses",
+      "reason": "Hukam explicitly appears in the account of Haumai.",
+      "refs": [
+        "sggs.asa.466.m2.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.13",
+      "from": "sggs.asa.466.m2.salok02",
+      "to": "concept.kirpa",
+      "type": "discusses",
+      "reason": "Grace is connected to living the Guru's teaching.",
+      "refs": [
+        "sggs.asa.466.m2.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.14",
+      "from": "concept.humility",
+      "to": "concept.haumai",
+      "type": "related_concept",
+      "reason": "Self-importance and inward humility are connected, not antonyms in every context.",
+      "refs": [
+        "sggs.asa.470.m1.salok01",
+        "sggs.asa.466.m2.salok02",
+        "sggs.kabir.salok007"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.15",
+      "from": "concept.haumai",
+      "to": "concept.shabad",
+      "type": "related_concept",
+      "reason": "The Salok connects grace with practising the Guru's Shabad.",
+      "refs": [
+        "sggs.asa.466.m2.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.16",
+      "from": "concept.haumai",
+      "to": "concept.hukam",
+      "type": "related_concept",
+      "reason": "The same Salok situates Haumai within Hukam.",
+      "refs": [
+        "sggs.asa.466.m2.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT"
+    },
+    {
+      "id": "edge.17",
+      "from": "word.nivi",
+      "to": "sggs.asa.470.m1.salok01",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.opengranth-34d2a7c.ang470.row33"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.18",
+      "from": "word.mithat",
+      "to": "sggs.asa.470.m1.salok01",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.opengranth-34d2a7c.ang470.row33"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.19",
+      "from": "word.haumai",
+      "to": "sggs.asa.466.m2.salok02",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.opengranth-34d2a7c.ang466.row41",
+        "sggs.opengranth-34d2a7c.ang466.row42",
+        "sggs.opengranth-34d2a7c.ang466.row43",
+        "sggs.opengranth-34d2a7c.ang466.row44",
+        "sggs.opengranth-34d2a7c.ang466.row45"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.20",
+      "from": "word.hukam",
+      "to": "sggs.asa.466.m2.salok02",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.opengranth-34d2a7c.ang466.row44"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.21",
+      "from": "word.kirpa",
+      "to": "sggs.asa.466.m2.salok02",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.opengranth-34d2a7c.ang466.row46"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.22",
+      "from": "word.bhalo",
+      "to": "sggs.kabir.salok007",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.opengranth-34d2a7c.ang1364.row33"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.23",
+      "from": "concept.humility",
+      "to": "study.intellectual-humility",
+      "type": "psychological_parallel",
+      "reason": "Acknowledge limits of one's knowledge and remain open to correction.",
+      "refs": [
+        "sggs.asa.470.m1.salok01"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "similarity": "Both support examining self-importance and being open to correction.",
+      "difference": "The psychological construct concerns knowledge and belief; Gurmat humility has a devotional, ethical and spiritual context."
+    },
+    {
+      "id": "edge.24",
+      "from": "concept.haumai",
+      "to": "study.buddhist-conceit",
+      "type": "philosophical_comparison",
+      "reason": "SN 22.49 examines ranking oneself through impermanent aggregates.",
+      "refs": [
+        "sggs.asa.466.m2.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "similarity": "Both investigate the self-centred stance and attachment to rank.",
+      "difference": "The Buddhist analysis of aggregates and non-self is not equivalent to Gurbani's account of Hukam, grace and the Guru's Shabad."
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row29",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 29,
+      "printedLine": 12,
+      "text": "ਸਲੋਕੁ ਮਃ ੧ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row30",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 30,
+      "printedLine": 12,
+      "text": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row31",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 31,
+      "printedLine": 12,
+      "text": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row32",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 32,
+      "printedLine": 13,
+      "text": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row33",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 33,
+      "printedLine": 13,
+      "text": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row34",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 34,
+      "printedLine": 14,
+      "text": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row35",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 35,
+      "printedLine": 14,
+      "text": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row36",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 36,
+      "printedLine": 15,
+      "text": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang470.row37",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.470.m1.salok01",
+      "ang": 470,
+      "ordinal": 37,
+      "printedLine": 15,
+      "text": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ ॥੧॥",
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row40",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 40,
+      "printedLine": 16,
+      "text": "ਮਹਲਾ ੨ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row41",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 41,
+      "printedLine": 16,
+      "text": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row42",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 42,
+      "printedLine": 17,
+      "text": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row43",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 43,
+      "printedLine": 17,
+      "text": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row44",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 44,
+      "printedLine": 17,
+      "text": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row45",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 45,
+      "printedLine": 18,
+      "text": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row46",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 46,
+      "printedLine": 18,
+      "text": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang466.row47",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.asa.466.m2.salok02",
+      "ang": 466,
+      "ordinal": 47,
+      "printedLine": 19,
+      "text": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang1364.row33",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.kabir.salok007",
+      "ang": 1364,
+      "ordinal": 33,
+      "printedLine": 16,
+      "text": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+      "sourceBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+      "sourcePath": "corpus/ang-1364.md"
+    },
+    {
+      "id": "sggs.opengranth-34d2a7c.ang1364.row34",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "passageId": "sggs.kabir.salok007",
+      "ang": 1364,
+      "ordinal": 34,
+      "printedLine": 17,
+      "text": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ ॥੭॥",
+      "sourceBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+      "sourcePath": "corpus/ang-1364.md"
+    }
+  ],
+  "coverage": {
+    "angCount": 3,
+    "passageCount": 3,
+    "originalOccurrences": 19,
+    "fullSecondaryCollationOccurrences": 17,
+    "partialSecondaryCollationOccurrences": 1,
+    "qualifiedApproved": 0
+  },
+  "integration": {
+    "legacyIdMigration": "pending; never rewrite existing reader IDs or learning keys",
+    "dailyHukamnama": "PR43 distinct event references; identity crosswalk pending",
+    "existingReaderRoutes": "No full Ang reader live; this slice must use its own full Salok view until verified deep links exist",
+    "productZero": "advisory evidence only; no production authority"
+  }
+}
