@@ -60,9 +60,6 @@ export function buildIndex(g){
  require(g.coverage.qualifiedApproved===0&&g.coverage.originalOccurrences===occ.size&&g.coverage.passageCount===passages.length,"Coverage mismatch");
  return {graph:g,nodes,occ,passages};
 }
-const norm=s=>String(s??"").normalize("NFC").toLowerCase().trim().replace(/\s+/gu," ");
-const digits=s=>s.replace(/[੦-੯]/gu,c=>String("੦੧੨੩੪੫੬੭੮੯".indexOf(c)));
-const names=n=>[n.title,n.pa,n.editorialTitle,n.editorialPa,...(n.aliases||[])].filter(nonempty);
 export function connected(index,id){
  id=resolveIdentity(index,id);if(!id)return [];
  return index.graph.edges.filter(e=>e.from===id||e.to===id).map(e=>({edge:e,node:index.nodes.get(e.from===id?e.to:e.from)}));
@@ -79,36 +76,4 @@ export function passageLines(index,id){
 export function wordAt(index,occurrenceId,form){
  return index.graph.nodes.filter(n=>n.type==="word").flatMap(n=>n.senses.filter(s=>s.form===form&&s.occurrenceIds.includes(resolveIdentity(index,occurrenceId))).map(s=>({word:n,sense:s})));
 }
-export function search(index,query,{mode="auto",author="",type="",collection=""}={}){
- const q=norm(query);if(!q||q.length>240)return [];
- const dq=digits(q),ang=dq.match(/^(?:ang\s*|ਅੰਗ\s*)?(\d{1,4})$/u);
- const matches=new Map();
- const add=(n,score,reason)=>{if(!n)return;const prev=matches.get(n.id);if(!prev||score>prev.score)matches.set(n.id,{id:n.id,type:n.type,title:n.title,score,reason});};
- const words=q.split(" ").filter(w=>w.length>=3&&!["the","what","does","why","how","about","please","teach","sikh","gurbani"].includes(w));
- for(const n of index.graph.nodes){
-  if(mode==="first-letter"||mode==="phrase"||ang)continue;
-  for(const label of names(n)){const t=norm(label);if(t===q)add(n,100,"Exact title or curated alias");else if(t.length>=3&&q.includes(t))add(n,80,"Curated alias in query");else if(words.some(w=>t===w))add(n,70,"Exact indexed term");}
- }
- for(const p of index.passages){
-  if(ang){const x=Number(ang[1]);if(x>=p.angStart&&x<=p.angEnd)add(p,100,"Ang match");continue;}
-  const lines=passageLines(index,p.id);
-  if(mode==="first-letter"){
-   for(const o of lines){const initials=o.text.split(/\s+/u).filter(x=>/^[\u0a00-\u0a7f]/u.test(x)).map(x=>[...x][0]).join("");if(initials.startsWith(q.replace(/\s/g,"")))add(p,100,"First letters of a source row");}
-  }else if(mode==="phrase"||/[\u0a00-\u0a7f]/u.test(q)){if(lines.some(o=>norm(o.text).includes(q)))add(p,95,"Exact original text substring (search normalization only)");}
- }
- if(mode==="auto"&&!ang){
-  for(const m of [...matches.values()]){
-   const n=index.nodes.get(m.id);
-   for(const {edge,node} of connected(index,m.id)){
-    if(node.type==="passage"&&["discusses","written_by","contains","attested_in","in_raag"].includes(edge.type))add(node,Math.max(35,m.score-20),edge.type+" · "+n.title);
-   }
-  }
- }
- return [...matches.values()].filter(r=>{
-  const n=index.nodes.get(r.id);
-  if(type&&n.type!==type)return false;
-  if(author&&(n.type!=="passage"||n.authorId!==author))return false;
-  if(collection&&(n.type!=="passage"||n.collectionId!==collection))return false;
-  return true;
- }).sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
-}
+export {search} from "./search.mjs";

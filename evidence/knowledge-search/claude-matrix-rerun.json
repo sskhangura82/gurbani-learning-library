@@ -1,0 +1,146 @@
+{
+  "reviewEvidenceSha256": "dabb2b6b64238c419a10a6b5863b5210f64465e25322bafd16fd952c985f2b22",
+  "cases": 582,
+  "passed": 575,
+  "groups": {
+    "KQ-01 whole row · phrase": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-01 row without closing marks · phrase": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-01 two-word phrase · phrase": {
+      "cases": 18,
+      "pass": 18
+    },
+    "KQ-01 whole row · auto": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-01 row without closing marks · auto": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-01 two-word phrase · auto": {
+      "cases": 18,
+      "pass": 18
+    },
+    "KQ-01b not a phrase · phrase": {
+      "cases": 7,
+      "pass": 7
+    },
+    "KQ-01b not a phrase · auto": {
+      "cases": 7,
+      "pass": 7
+    },
+    "KQ-02 first letters, as written": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-02 first letters typed without choosing the mode": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-02 first letters with spaces": {
+      "cases": 19,
+      "pass": 19
+    },
+    "KQ-02 first four letters": {
+      "cases": 17,
+      "pass": 17
+    },
+    "KQ-02 first letters, vowel-carrier convention": {
+      "cases": 11,
+      "pass": 11
+    },
+    "KQ-03 Ang": {
+      "cases": 23,
+      "pass": 23
+    },
+    "KQ-03 Ang in another mode": {
+      "cases": 2,
+      "pass": 2
+    },
+    "KQ-04 curated name finds its item": {
+      "cases": 239,
+      "pass": 239
+    },
+    "KQ-04b spellings a learner would try": {
+      "cases": 36,
+      "pass": 29
+    },
+    "KQ-05 author filter returns only that author": {
+      "cases": 15,
+      "pass": 15
+    },
+    "KQ-06 should find nothing": {
+      "cases": 55,
+      "pass": 55
+    },
+    "KQ-07 order and reasons": {
+      "cases": 1,
+      "pass": 1
+    }
+  },
+  "failed": [
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "egoism",
+      "expected": [
+        "concept.haumai"
+      ],
+      "got": []
+    },
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "pride",
+      "expected": [
+        "concept.haumai"
+      ],
+      "got": []
+    },
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "hankar",
+      "expected": [
+        "concept.haumai"
+      ],
+      "got": []
+    },
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "ahankar",
+      "expected": [
+        "concept.haumai"
+      ],
+      "got": []
+    },
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "simmal",
+      "expected": [
+        "sggs.asa-di-vaar.pauri014.salok01"
+      ],
+      "got": []
+    },
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "simmal tree",
+      "expected": [
+        "sggs.asa-di-vaar.pauri014.salok01"
+      ],
+      "got": []
+    },
+    {
+      "group": "KQ-04b spellings a learner would try",
+      "query": "grace",
+      "expected": [
+        "concept.kirpa"
+      ],
+      "got": []
+    }
+  ],
+  "limits": "Builder rerun of frozen Claude search examples; not independent re-review. Old expected identities resolve through the existing crosswalk. Remaining synonym/interpretation proposals require editorial decisions."
+}
