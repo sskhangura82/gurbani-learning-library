@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-26T21:39:41.731814+00:00",
+  "reviewer": "ChatGPT builder visual inspection",
+  "scope": [
+    "Phone-width index/cards and passage screenshots",
+    "All final PDF pages in the source-sheet and pagination overviews",
+    "Detailed Gurmukhi passage views: initial Haumai A4 and final Dubidha A4"
+  ],
+  "observations": [
+    "Current complete passages, citations and empty explanation slots remain together",
+    "No visible clipped text or overflow in inspected pages",
+    "Source register and review status remain visible on paper"
+  ],
+  "unresolved": [
+    "Cross-viewer PDF text extraction/copy fidelity",
+    "Qualified Punjabi/Gurbani glyph and source review",
+    "Physical printing and physical-device acceptance"
+  ],
+  "notAnIndependentVerdict": true,
+  "documents": [
+    {
+      "pdf": "evidence/articles/print/haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "pageCount": 2,
+      "marginFailures": 0,
+      "strictTextStatus": "FAIL"
+    },
+    {
+      "pdf": "evidence/articles/print/haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "pageCount": 2,
+      "marginFailures": 0,
+      "strictTextStatus": "FAIL"
+    },
+    {
+      "pdf": "evidence/articles/print/dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "pageCount": 2,
+      "marginFailures": 0,
+      "strictTextStatus": "FAIL"
+    },
+    {
+      "pdf": "evidence/articles/print/dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "pageCount": 2,
+      "marginFailures": 0,
+      "strictTextStatus": "FAIL"
+    },
+    {
+      "pdf": "evidence/articles/print/pagination-stress-a4.pdf",
+      "sha256": "6b97729e704d23a07ce86447025c12ad6bfbdec3066c64603d864591443fe65a",
+      "pageCount": 3,
+      "marginFailures": 0,
+      "strictTextStatus": "FAIL"
+    },
+    {
+      "pdf": "evidence/articles/print/pagination-stress-letter.pdf",
+      "sha256": "9d178adfc253e0d924bf754c68aa0f01aa0e744fdb9b628c46ccb8dc1153229b",
+      "pageCount": 3,
+      "marginFailures": 0,
+      "strictTextStatus": "FAIL"
+    }
+  ],
+  "formatCleanupPixelIdentity": {
+    "matched": true,
+    "basis": "All 14 regenerated page PNG hashes equal the already inspected pages; only code trailing whitespace and PDF generation timestamps differ."
+  }
+}

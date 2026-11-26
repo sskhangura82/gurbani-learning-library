@@ -84,7 +84,7 @@ await test('Reader pins, both pages script integrity and all69 offline assets ma
  for(const page of ['salok-kabir/index.html','salok-mahalla9/index.html']){
   const scripts=[...read(page).toString().matchAll(/<script src="([^"]+)" integrity="sha256-([^"]+)" crossorigin="anonymous"><\/script>/g)];assert.equal(scripts.length,6);
   for(const m of scripts)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL(m[1],new URL(page,root)))).digest('base64'),m[2]);}
- const cache=JSON.parse(read('sw.js').toString().match(/const EXPECTED=(\{[^\n]+\});/)[1]);assert.equal(Object.keys(cache).length,73);
+ const cache=JSON.parse(read('sw.js').toString().match(/const EXPECTED=(\{[^\n]+\});/)[1]);assert.equal(Object.keys(cache).length,81);
  for(const file of ['./salok-kabir/','./salok-kabir/index.html','./salok-kabir/data/library.json','./salok-kabir/data/salok-kabir.json','./salok-kabir/learning/course.complete.json'])assert.ok(cache[file]);
  for(const [name,digest]of Object.entries(cache))assert.equal(sha(read(name.endsWith('/')?name+'index.html':name)),digest,name);
 });

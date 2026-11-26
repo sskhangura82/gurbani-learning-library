@@ -33,7 +33,7 @@ try{
  await page.goto(origin+prefix);
  await page.waitForFunction(()=>navigator.serviceWorker.controller!==null);
  const cache=await page.evaluate(async()=>{const names=await caches.keys();const requests=await(await caches.open(names[0])).keys();return {names,paths:requests.map(r=>new URL(r.url).pathname)};});
- assert.equal(cache.names.length,1);assert.equal(cache.paths.length,73);
+ assert.equal(cache.names.length,1);assert.equal(cache.paths.length,81);
  for(const asset of ['breathing.html','css/breathing.css','js/breathing-core.js','js/breathing.js','simran.html','js/simran.js'])assert.ok(cache.paths.includes(prefix+asset));
  report.checks.push({name:'Home installs the complete hashed candidate shell including both separate practice pages',status:'PASS'});
  assert.equal(await page.locator('.personal-tools a[href="breathing.html"]').count(),1);
