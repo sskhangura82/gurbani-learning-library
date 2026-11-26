@@ -46,6 +46,9 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The Simran preservation/baseline check reads its frozen parent files.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

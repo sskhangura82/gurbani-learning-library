@@ -22,17 +22,21 @@ another person's notes.
 
 ## RT4-05: message repair on candidate, finding OPEN
 
-The error-message half is implemented and builder-tested. This does not close
-Claude's requested lower-cap strategy. The collection-derived JSON limit is still
-a bounded format/parser allowance, not a storage-capacity promise.
+The error-message repair is implemented and builder-tested. Claude's later
+RT-005 response withdrew the fixed lower-cap recommendation and accepted retaining
+the format ceiling with an atomic storage attempt and a clear quota refusal.
+That design agreement is not independent verification of this candidate.
+RT4-05 remains OPEN for retest. The collection-derived JSON limit is a bounded
+format/parser allowance, not a storage-capacity promise.
 
 A hard 5 MB or 10 MB UTF-8 file cap is not adopted here because the native browser
 test restored and re-exported an 11,682,786-byte Punjabi backup exactly. Its
 encoded file bytes differ from the storage representation. Conversely an
 11,756-byte valid import could not fit an already full origin. No fixed file cap
-can by itself represent available capacity. The independent reviewer and founder
-must resolve any change to the parser limit or storage architecture; the builder
-has not declared its preferred policy approved.
+can by itself represent available capacity. The independent reviewer accepted this distinction in
+RT-005 at review commit 1a4c525a3e0ec92e4fb9c022a5493f685340ba64.
+No extra founder decision is requested for this mechanism; neither that response
+nor these builder tests authorize release.
 
 The maximum valid synthetic file in the native test was 17,514,786 bytes.
 It was refused by actual browser storage and every existing record stayed

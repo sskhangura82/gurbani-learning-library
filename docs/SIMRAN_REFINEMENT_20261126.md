@@ -16,7 +16,7 @@ Nothing is stored, counted or synchronized. No breath pacer, new practice instru
 
 The displayed Gurmukhi is unchanged, and retains `lang="pa"`. The heading uses the verified composition/section attribution **Japji Sahib, Pauri 4**. The external link is named **Guru Granth Darpan reference** instead of claiming an independently verified Ang in the interface.
 
-The builder located a candidate digital Ang witness at OpenGranth commit `34d2a7cab032c8ea24d21ff20f64653bd03766f4`, `corpus/ang-0002.md`, source line 5, file SHA-256 `04feb2d0646711d3ac40cd9c42f602bda3756890ba25cdf2a0ac1df38c2d5c33`. This is recorded for independent review; it is not physical-page collation and does not establish independent upstream transmission. SF-03 remains with the independent reviewer to adjudicate.
+The builder located a candidate digital Ang witness at OpenGranth commit `34d2a7cab032c8ea24d21ff20f64653bd03766f4`, `corpus/ang-0002.md`, source line 5, file SHA-256 `04feb2d0646711d3ac40cd9c42f602bda3756890ba25cdf2a0ac1df38c2d5c33`. Claude confirmed the locator and file fingerprints in RT-005, but also confirmed that Open Granth derives from the same Shabad OS source used for his comparison. The builder re-read the pinned README and Ang file metadata and confirmed that derivation. This is a confirmed locator within one upstream lineage, not a separate textual witness or physical-page collation. SF-03 remains open for a genuinely separate witness.
 
 ## Reproduce the focused browser check
 

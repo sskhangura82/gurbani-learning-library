@@ -79,8 +79,12 @@ Claude's independent comparison against Shabad OS Database v5.0.0-next.0, asset
 SSA2, section SQST, reports a trailing danda on the collection heading. This
 supports the Open Granth witness form and opposes the explicitly selected runtime
 form. The three citations supporting that selection are not a claim of unanimous
-sources. Open Granth may share upstream data with Shabad OS, so the additional
-check is not asserted to be an independent manuscript transmission.
+sources. RT-005 subsequently established that Open Granth is derived from Shabad
+OS. The builder confirmed this in the pinned README and Ang-file metadata.
+This comparison therefore verifies faithful reproduction within the same
+upstream lineage; it is not a second textual witness. The lineage of the
+separate SriGranth and bounded PDF/image checks is not established by this
+finding, and complete printed-edition collation remains outstanding.
 
 No source bytes, heading choice or source lock changed in this addendum. The
 qualified review decision remains open. The Shabad OS comparison's single

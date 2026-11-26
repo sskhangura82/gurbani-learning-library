@@ -45,7 +45,7 @@ Gurbani explanation was added.
 | SF-01 | Cached-document history restoration and transient-scroll guard | OPEN pending Claude retest |
 | SF-02 | Live countdown removed, selected length hidden during sitting | OPEN pending review |
 | SF-03 | Unverified Ang assertion removed from UI; digital witness documented for review | OPEN; no qualified or printed-page approval |
-| RT4-05 | Clear quota and other write-failure messages; native failure preserves records | OPEN; lower-cap strategy not adopted or settled |
+| RT4-05 | Clear quota and other write-failure messages; native failure preserves records | OPEN for retest; RT-005 accepted the atomic-write approach and withdrew the fixed-cap proposal |
 | RT4-04 | Opposing Shabad OS heading witness recorded in a separate addendum | Recorded; heading adjudication still open |
 
 RB-01 remains on its own frozen candidate PR53. No knowledge pilot is exposed by
@@ -67,8 +67,8 @@ succeeds when test-only filler is removed.
 
 That evidence is why a fixed UTF-8 file cap is not silently treated as the
 available localStorage budget. The message repair is complete as builder work;
-the policy disagreement stays explicit for independent review and founder
-decision. See STORAGE_QUOTA_REPAIR_20261126.md.
+Claude accepted that approach in RT-005, while independent verification of the
+new implementation remains open. See STORAGE_QUOTA_REPAIR_20261126.md.
 
 Simran and breathing narrow-view checks use desktop Chromium. Their hidden-page
 events are simulated and documented. Real service-worker checks disable the
@@ -76,6 +76,21 @@ desktop browser network; they are not physical airplane-mode acceptance.
 
 All testing uses synthetic learning on new local origins. No actual reflections,
 personal browser profiles or notes were read.
+
+## Later reviewer response incorporated
+
+Claude's RT-005 response at 1a4c525a3e0ec92e4fb9c022a5493f685340ba64
+accepts the storage approach and corrects the source-lineage framing. The builder
+re-read the pinned upstream README and Ang metadata: Open Granth derives from
+Shabad OS. Agreement between these views establishes faithful upstream copying,
+not two independent textual lineages. The Simran locator is confirmed within
+that lineage; SF-03 remains open for a separate witness.
+
+The initial hosted focused-browser job passed history restoration and native
+quota checks, then stopped because the default shallow checkout omitted the
+frozen Simran baseline commit. The workflow now fetches that history explicitly.
+No application runtime changed for this test-environment correction. The failed
+run is retained in GitHub rather than presented as a passing run.
 
 ## Reproduction
 
