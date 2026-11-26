@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "environment": "Desktop Chrome, 390/320 CSS px; physical Safari and VoiceOver NOT TESTED",
+  "checks": [
+    {
+      "name": "Return anchor is tested well beyond the opening",
+      "status": "PASS"
+    },
+    {
+      "name": "Entering a room pauses the existing silent guide",
+      "status": "PASS"
+    },
+    {
+      "name": "Underlying reader becomes inert while the modal is open",
+      "status": "PASS"
+    },
+    {
+      "name": "Simran offers five independent accessible views",
+      "status": "PASS"
+    },
+    {
+      "name": "Breath attention is opt-in and initially hidden",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional cue appears only after a deliberate action",
+      "status": "PASS"
+    },
+    {
+      "name": "Optional cue can be turned off immediately",
+      "status": "PASS"
+    },
+    {
+      "name": "Naam Simran withholds unreviewed practice instructions",
+      "status": "PASS"
+    },
+    {
+      "name": "Stillness requires no completion or timer",
+      "status": "PASS"
+    },
+    {
+      "name": "Both Learn passages exactly match the mounted original source",
+      "status": "PASS"
+    },
+    {
+      "name": "Source and withheld interpretation remain distinct",
+      "status": "PASS"
+    },
+    {
+      "name": "390px Simran has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "390px Simran buttons meet 44px minimum",
+      "status": "PASS"
+    },
+    {
+      "name": "320px Simran has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "320px Simran buttons meet 44px minimum",
+      "status": "PASS"
+    },
+    {
+      "name": "Reader document and all 385 original texts survive return",
+      "status": "PASS"
+    },
+    {
+      "name": "Return restores exact scroll offset without resuming",
+      "status": "PASS",
+      "detail": {
+        "before": 6411,
+        "after": 6411
+      }
+    },
+    {
+      "name": "Return restores the opener and removes inert",
+      "status": "PASS"
+    },
+    {
+      "name": "harmandir: local clock visible without a live-status claim",
+      "status": "PASS"
+    },
+    {
+      "name": "harmandir: broadcaster is hidden before Enter or Skip",
+      "status": "PASS"
+    },
+    {
+      "name": "harmandir: Skip immediately reveals a deliberate outbound link",
+      "status": "PASS"
+    },
+    {
+      "name": "fremont: local clock visible without a live-status claim",
+      "status": "PASS"
+    },
+    {
+      "name": "fremont: broadcaster is hidden before Enter or Skip",
+      "status": "PASS"
+    },
+    {
+      "name": "fremont: Skip immediately reveals a deliberate outbound link",
+      "status": "PASS"
+    },
+    {
+      "name": "sanjose: local clock visible without a live-status claim",
+      "status": "PASS"
+    },
+    {
+      "name": "sanjose: broadcaster is hidden before Enter or Skip",
+      "status": "PASS"
+    },
+    {
+      "name": "sanjose: Skip immediately reveals a deliberate outbound link",
+      "status": "PASS"
+    },
+    {
+      "name": "There is no provider iframe, audio or video in either room",
+      "status": "PASS"
+    },
+    {
+      "name": "Fremont and San Jose uncleared Gurmukhi names are not invented",
+      "status": "PASS"
+    },
+    {
+      "name": "390px arrival has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "390px interactive targets meet 44px minimum",
+      "status": "PASS"
+    },
+    {
+      "name": "320px arrival has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "320px interactive targets meet 44px minimum",
+      "status": "PASS"
+    },
+    {
+      "name": "Arrival returns to the same existing reading document",
+      "status": "PASS"
+    }
+  ]
+}

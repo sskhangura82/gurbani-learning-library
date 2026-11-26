@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "environment": "Desktop Chrome, 390/320 CSS px; physical Safari and VoiceOver NOT TESTED",
+  "checks": [
+    {
+      "name": "Harness completion",
+      "status": "FAIL",
+      "detail": "Timed out waiting for ready state"
+    }
+  ]
+}

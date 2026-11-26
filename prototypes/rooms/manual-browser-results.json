@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "environment": "Desktop Chrome only",
+  "checks": [
+    {
+      "name": "Keyboard Enter opens Simran and selects Learn",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape closes room and restores reading",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard Enter opens Arrival and its place detail without media",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit Gurdwara label selects Fremont and San Jose",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": "docs/future-rooms/screenshots",
+  "physicalIPhone": "NOT TESTED"
+}

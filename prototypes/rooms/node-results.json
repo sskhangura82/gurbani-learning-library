@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "All 23 accepted reader runtime files remain byte-identical",
+      "status": "PASS"
+    },
+    {
+      "name": "Prototype script data exactly matches the source ledger JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "Both original passages retain exact source, Ang and SHA-256",
+      "status": "PASS"
+    },
+    {
+      "name": "All three requested places are present with distinct official routes",
+      "status": "PASS"
+    },
+    {
+      "name": "No uncleared photos, fabricated live status or claimed playback verification",
+      "status": "PASS"
+    },
+    {
+      "name": "Only the existing local reader is embedded, with no media element",
+      "status": "PASS"
+    },
+    {
+      "name": "Room adapter has no persistence, telemetry, synthesis or provider fetch API",
+      "status": "PASS"
+    },
+    {
+      "name": "No prototype is linked or cached in the production entrypoints",
+      "status": "PASS"
+    },
+    {
+      "name": "Local clocks handle California DST and India without a fixed offset",
+      "status": "PASS"
+    },
+    {
+      "name": "Reduced motion cancels the optional three-second arrival",
+      "status": "PASS"
+    }
+  ],
+  "readerCommit": "fa6e4fecd1a5c602b30ffd13ca23416ae911ea83",
+  "scope": "Source contracts and timezone behavior; browser interaction evidence is separate"
+}
