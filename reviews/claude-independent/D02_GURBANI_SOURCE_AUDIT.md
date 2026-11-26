@@ -15,6 +15,15 @@ that they differ, where, and how.
 > sentence "Sri Guru Granth Sahib text: no letter-level difference" holds for the readers,
 > not for the whole app.
 
+> **Correction added 26 November 2026.** Section 2 says Dasam Bani was compared with the
+> database's "Dasam Granth text". Precisely, it was the database's text named **"Das Granthi"**,
+> whose origin the database records as SGPC, Sri Amritsar, July 2014. Sri Guru Granth Sahib text
+> was compared with its "Shabadaarth" text (SGPC, 2009–2012, as the database records it). Both are
+> digital transcriptions; I have not seen the printed books. The comparison itself is unchanged.
+> Every exception is now listed with a disposition in
+> [`consolidated/SCRIPTURE_DISCREPANCY_REGISTER_20261126.md`](consolidated/SCRIPTURE_DISCREPANCY_REGISTER_20261126.md).
+> Finding CI-S-02 speaks of "eleven places" in Jaap Sahib 96–98; the register has twelve.
+
 ## 1. Coverage register
 
 Row-level register: [`evidence/s05_register.csv`](evidence/s05_register.csv) — one row per

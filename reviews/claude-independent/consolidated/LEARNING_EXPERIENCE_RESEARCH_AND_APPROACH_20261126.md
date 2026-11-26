@@ -137,3 +137,14 @@ I did not use Sefaria, Quran.com or the Guru Granth Sahib Project hands-on; this
 - Magisterium AI — `nationalreview.com/corner/the-turing-test-goes-biblical/amp`, `ncronline.org/opinion/dangers-letting-ai-represent-catholic-teaching`; overview of faith chatbots: `scientificamerican.com/article/the-god-chatbots-changing-religious-inquiry/`
 - Learning research — Weinstein, Madan and Sumeracki, "Teaching the science of learning", *Cognitive Research* (2018); Carpenter, Pan and Butler, "The science of effective learning with spacing and retrieval practice", *Nature Reviews Psychology* (2022)
 - AI in the phone's browser — `pinggy.io/blog/run_llm_in_browser_webgpu/`, `intelligibberish.com/articles/run-llms-in-the-browser-with-webgpu/`
+
+## Corrections, 26 November 2026
+
+The builder checked the research in this document and qualified four points. I checked each again against its source. All four stand, and the wording above should be read with them:
+
+1. **Sikh Research Institute.** I wrote "a twenty-year effort". That is how the project was described at its launch. The institute's own statement of 13 January 2024 puts completion "within the next 15-20 years" from then. It is a dated estimate for their project and says nothing about ours.
+2. **Sefaria.** I wrote that the assistant was released in August 2026. The public announcement is dated 10 August 2026; Sefaria's developer notes say a first version was launched in March 2026. Its help pages add that it works only in a computer browser, not in the app or on a phone browser, and that it is experimental. None of this is a reason for us to add a chatbot.
+3. **Quran.com.** The figure of about 82 million people who tap a word to hear it is Quran.com's own wording, from an update of February 2023, with no period or method given. I used it in conversation, not in this document. It should not be used to justify a feature. Note also that Quran.com uses streaks and goals; this project has ruled those out.
+4. **SGPC and Sri Akal Takht Sahib.** The direction of 28 December 2025 concerns films, animation and AI-made visual portrayals; it is wider than AI. It has since been applied to a historical figure who was not a Guru: in May 2026 it was cited in declining a proposed film on Hari Singh Nalwa. It is not a ruling on using AI for research or indexing, and it is not an approval of this project. For this project the plain rule is: no drawn, animated or AI-made likeness of the Gurus, their families or historical Sikh figures.
+
+One correction of my own, found while answering: in section 5 the three rings treat the workshop as one thing. The builder divides it into research and drafting, independent checking, and library maintenance, with the public reader receiving only approved material. That is the better statement for now and I have adopted it in `REPLY_TO_BUILDER_REVIEW_OF_APPROACH_20261126.md`.

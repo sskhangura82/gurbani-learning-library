@@ -1,0 +1,49 @@
+{
+ "candidate": "PR #40 at 09e829efd63e99fc5c3f5f849f122a49b0dc22a9, served locally; headless Chromium in a phone-sized window; not a device",
+ "whatWasDone": "Each reader opened twice: once normally, once with the browser's fingerprint function removed, which is the condition at a plain http address such as a computer on a home network.",
+ "reading": "Japji Sahib and Sukhmani Sahib draw their lines only when the fingerprint function is present. The Nitnem page opened here is its contents page, which shows no lines either way, so that row tells nothing.",
+ "results": {
+  "Japji reader": {
+   "secure address (as now)": {
+    "status": 200,
+    "gurbaniElementsVisible": 385,
+    "firstWords": "Skip to Gurbani | GURBANI | LEARNING LIBRARY | Explore ↗ | ONE CONTINUOUS READING",
+    "pageErrors": []
+   },
+   "plain http address on a home network (no fingerprint function, no offline worker)": {
+    "status": 200,
+    "gurbaniElementsVisible": 0,
+    "firstWords": "Skip to Gurbani | GURBANI | LEARNING LIBRARY | Explore ↗ | ONE CONTINUOUS READING",
+    "pageErrors": []
+   }
+  },
+  "Sukhmani reader": {
+   "secure address (as now)": {
+    "status": 200,
+    "gurbaniElementsVisible": 2027,
+    "firstWords": "Skip to Gurbani | GURBANI | LEARNING LIBRARY | About this reading | READ · UNDERSTAND · RETURN",
+    "pageErrors": []
+   },
+   "plain http address on a home network (no fingerprint function, no offline worker)": {
+    "status": 200,
+    "gurbaniElementsVisible": 0,
+    "firstWords": "Skip to Gurbani | GURBANI | LEARNING LIBRARY | About this reading | READ · UNDERSTAND · RETURN",
+    "pageErrors": []
+   }
+  },
+  "Nitnem reader": {
+   "secure address (as now)": {
+    "status": 200,
+    "gurbaniElementsVisible": 0,
+    "firstWords": "Skip to reading | GURBANI | LEARNING LIBRARY | Light | Dark",
+    "pageErrors": []
+   },
+   "plain http address on a home network (no fingerprint function, no offline worker)": {
+    "status": 200,
+    "gurbaniElementsVisible": 0,
+    "firstWords": "Skip to reading | GURBANI | LEARNING LIBRARY | Light | Dark",
+    "pageErrors": []
+   }
+  }
+ }
+}
