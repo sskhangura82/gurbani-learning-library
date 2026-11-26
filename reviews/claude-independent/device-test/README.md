@@ -10,7 +10,7 @@ longer blockers. The copy there has been checked against the candidate (`TEST_CO
 PR #40 at `09e829e` plus a label, nothing else. What remains before the formal phone check: the repaired commit, my
 re-test of it, and a build label on a banner that does not cover the reading line.
 
-**Update, 26 November 2026, 16:10 UTC.** The builder pushed the second repair candidate (PR #40 at `1470477`) and I
+**Update, 26 November 2026, 16:00 UTC.** The builder pushed the second repair candidate (PR #40 at `1470477`) and I
 have re-tested it: three of its five repairs fixed, two partly, nothing broken
 (`../retests/RT-002_PR40_SECOND_REPAIRS.md`). It is fit to be staged for the phone check on one condition: **the
 banner must come off the top of the reader first.** Staged with today's banner, the repaired notice is entirely
