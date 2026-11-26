@@ -110,9 +110,27 @@ to the chain in §2 and to #51 being reviewed first, since it is beneath three o
 them.
 
 **Requires repair** — #53 (RB-01 open; the merged state in §3 shows the gap
-persisting while the labelling improves). RT4-05 has no remedy implemented; the
-builder was right to reject my fixed-byte-cap suggestion and nothing has replaced
-it.
+persisting while the labelling improves).
+
+**Correction, 26 November, after the builder challenged this entry.** An earlier
+version of this section listed **RT4-05** under "requires repair," saying no
+remedy had been implemented. **That was wrong, and it contradicted my own
+verified finding.** `RT-006_PR54_FINDINGS.md` records RT4-05 as
+**FIX-VERIFIED-ON-CANDIDATE** on PR #54 `8917bea`, with six criteria all passing:
+the plain preservation message, notes and bookmarks and revision and reading
+position all surviving, no fixed lower cap, no clearing or probing or invented
+quota, no silent partial import, and the per-note limit unchanged.
+
+I conflated two different things: **my** proposed remedy — a fixed lower byte cap
+— was not implemented, and should not have been. The builder's remedy was: one
+write under the existing lock, a typed `LearningStorageError` with
+`LEARNING_STORAGE_FULL`, and preservation wording. That **was** implemented and I
+**did** verify it at runtime. RT4-05 is **closed**, not open.
+
+The candidate has not moved, so no retest is needed. The builder caught this, and
+they were right to. It is the more consequential kind of error: it downgraded
+verified work to "requires repair" in the document the founder is using to decide
+integration order.
 
 **Requires review before integration** — #51 and #49, and separately the **#49 +
 #53 merged state**, which no current process will prompt anyone to look at.

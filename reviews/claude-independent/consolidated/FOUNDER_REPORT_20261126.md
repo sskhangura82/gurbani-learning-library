@@ -55,8 +55,12 @@ lineage.
 - **RB-01 is not closed.** The guard is strong where it applies but does not cover
   a node's own Punjabi field, which still renders unlabelled. Narrower than I
   first described it, and still open.
-- **RT4-05** has no remedy. The builder correctly rejected my suggestion and
-  nothing has replaced it.
+- ~~**RT4-05** has no remedy.~~ **Corrected — this was my error.** RT4-05 is
+  **closed**. My own RT-006 record verified the fix on PR #54, with six criteria
+  passing. What was not implemented was *my* suggestion (a fixed byte cap), which
+  should not have been. The builder's remedy — one write under the existing lock,
+  a typed error, and preservation wording — was implemented and I verified it at
+  runtime. The builder caught this contradiction; **treat RT4-05 as done.**
 - **ART-P01 — copying Gurbani out of a saved PDF is corrupted in three of four
   viewers**, worst in Apple's own Preview and Quick Look, which produce null
   characters and transposed letters, destroying the very word a sheet is about.
@@ -103,7 +107,7 @@ Recommended order:
    be integrated until the merged state has been looked at.
 
 Safe to start now without any decision from the founder: review #51; repair
-RB-01; replace RT4-05; rename "witnesses"; split the search result kinds; settle
+RB-01; rename "witnesses"; split the search result kinds; settle
 the Hukamnama fail-closed design; define a history node type with mandatory
 citations; bind audio timing to a named recording in the data model.
 
