@@ -159,3 +159,55 @@ merely lacks a label.
 I record these because a reviewer who hides instrument errors is not a reviewer.
 Every one of them would have produced a wrong finding if the control had been
 left out.
+
+
+---
+
+## Addendum, later on 26 November — the blocking question is now largely answered
+
+**The builder read the two endpoints my proxy refused.** Their report: Pages
+`build_type: legacy`, source branch **`main`**, path `/`, status `built`; and
+`protected: false` on the main branches of both the source and the phone-test
+repositories.
+
+**What I verified myself, rather than taking on report:**
+
+| Claim | Status |
+|---|---|
+| `main` = `a3476ac4b9be90dde350fb35dd13ce0b672c120d` | **confirmed by me**, exactly |
+| `protected: false` on `main` | **confirmed by me** — the branch object carries it |
+| Pages serves `main` at `/` | **their read; still blocked to me** |
+
+Two of three confirmed independently, and the third matches the inference I had
+already drawn from the workflows. So, operationally:
+
+> **Updating `main` publishes the family application, and nothing prevents it.**
+
+**Your decision is no longer "find out." It is "what gate do you want."** My
+recommendation, unchanged in substance: treat the integration chain in section 4
+as a **release**, not a merge — so it needs your release authority, not just a
+review pass. The cheapest protection available is a branch protection rule on
+`main` requiring a pull request, which would make an accidental publish
+impossible rather than merely unlikely. That is yours to set; I cannot and will
+not.
+
+**This also raises the severity of a finding from the PR #56 review.** The
+primary Nitnem reader page, `nitnem/index.html`, carries **no subresource
+integrity attribute on any of its six scripts** — including `reader.js`, the file
+that holds every integrity pin in the project. It is pre-existing, present on
+`main` and every branch I checked, and **it is live in the published application
+today.** The two newer Salok pages pin all six correctly. Recorded as **SRI-01**
+for the builder; it is not a defect of the new candidate.
+
+**A correction to section 3 of this report.** The RT4-05 entry was wrong and the
+builder caught it. RT4-05 is **closed** — my own RT-006 verified the fix. What was
+never implemented was *my* suggestion, which should not have been. The entry above
+is struck through and corrected.
+
+**One further candidate reviewed since this report:** PR #56, Unified Library v1,
+`389e79b` — **PASS**. Every pin in `reader.js` byte-identical, no scripture
+changed, every existing storage key unchanged so no saved notes can be orphaned,
+the new entrances fail closed on damaged scripture, and six future capabilities
+ship as honestly unavailable with a reason each. It adds four new entrances and a
+larger-text layout, which makes the outstanding physical-device acceptance matter
+more here than on any previous candidate.
