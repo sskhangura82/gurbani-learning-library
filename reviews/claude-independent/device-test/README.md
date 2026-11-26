@@ -10,7 +10,13 @@ longer blockers. The copy there has been checked against the candidate (`TEST_CO
 PR #40 at `09e829e` plus a label, nothing else. What remains before the formal phone check: the repaired commit, my
 re-test of it, and a build label on a banner that does not cover the reading line.
 
-**Update, 26 November 2026, 16:00 UTC.** The builder pushed the second repair candidate (PR #40 at `1470477`) and I
+**Update, 26 November 2026, 17:00 UTC. The ten-minute check is ready to run.** The builder has staged the repaired
+candidate (`1470477`) at the test address as build `c1ab503`, with TC-01, TC-02 and TC-03 all corrected: the banner
+scrolls away instead of covering the reader, every page shows "Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2",
+and the two licence files are copied. I have checked that the copy is that commit and nothing else, and that it
+behaves as the candidate I verified. See `TEST_COPY_VERIFICATION_20261126.md`, second half.
+
+**Earlier update, 26 November 2026, 16:00 UTC.** The builder pushed the second repair candidate (PR #40 at `1470477`) and I
 have re-tested it: three of its five repairs fixed, two partly, nothing broken
 (`../retests/RT-002_PR40_SECOND_REPAIRS.md`). It is fit to be staged for the phone check on one condition: **the
 banner must come off the top of the reader first.** Staged with today's banner, the repaired notice is entirely

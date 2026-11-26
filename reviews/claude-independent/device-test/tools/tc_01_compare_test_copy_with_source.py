@@ -31,7 +31,7 @@ pages = [p for p in b if p.endswith('.html')]
 text = {p: git(DST, 'show', f'{DST_REV}:{p}') for p in b if p.rsplit('.', 1)[-1] in ('html', 'js', 'json', 'css', 'md', 'txt', 'webmanifest')}
 R = {
  'source': dict(commit=git(SRC, 'rev-parse', SRC_REV).strip(), files=len(a)), 'testCopy': dict(commit=git(DST, 'rev-parse', DST_REV).strip(), files=len(b), commitsInRepository=int(git(DST, 'rev-list', '--count', DST_REV).strip())),
- 'byteIdentical': dict(count=len(same), byType=dict(collections.Counter(p.rsplit('.', 1)[-1] for p in same)), everyScriptIdentical=all(p in same for p in b if p.endswith('.js') and p != 'sw.js'), everyDataFileIdentical=all(p in same for p in b if p.endswith('.json'))),
+ 'byteIdentical': dict(count=len(same), byType=dict(collections.Counter(p.rsplit('.', 1)[-1] for p in same)), everyScriptIdentical=all(p in same for p in b if p.endswith('.js') and p != 'sw.js'), everyDataFileIdentical=all(p in same for p in b if p.endswith('.json') and p in a), dataFilesOnlyInTheTestCopy=[p for p in extra if p.endswith('.json')]),
  'changed': {p: lines_changed(p) for p in changed}, 'onlyInTestCopy': extra,
  'notCopied': dict(count=len(missing), byTopFolder=dict(collections.Counter(p.split('/')[0] for p in missing)), licenceAndNoticeFilesNotCopied=[p for p in missing if p.startswith('vendor/')]),
  'offlineList': dict(entries=len(expected), fingerprintMatchesFile=ok, problems=bad, version=re.search(r'const VERSION="([^"]+)"', sw).group(1)),

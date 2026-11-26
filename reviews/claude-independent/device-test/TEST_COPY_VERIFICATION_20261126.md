@@ -94,3 +94,56 @@ python3 tools/dt_03_test_copy_banner.py <local address of the copy, ending in />
 ```
 
 The first shows that the copy is the named commit and nothing else. The second shows the label is not in the way.
+
+---
+
+# Second build, checked the same day (16:26 UTC)
+
+| | |
+|---|---|
+| Test repository | `glp001-iphone-qa/glp001-iphone-test`, commit `c1ab503` |
+| Says it was built from | PR #40 at `1470477` — the **second** repair candidate, which I re-tested in `../retests/RT-002_PR40_SECOND_REPAIRS.md` |
+| Checked | 26 November 2026, after the builder corrected TC-01, TC-02 and TC-03 |
+
+## All three corrections are done
+
+| | |
+|---|---|
+| **TC-01 — the banner covered the reader** | **Fixed.** The banner is no longer fixed to the top; it scrolls away with the page. At three phone widths, in 9 of 9 jumps, what is on top at the reading line is **the line itself**. The Nitnem reader's own top bar is reachable again. |
+| **TC-02 — no build label** | **Fixed.** On 8 of 8 pages: "Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2". A `qa-build.json` also records the source commit, the previous QA commit, and that physical-iPhone acceptance is NOT_RECORDED. |
+| **TC-03 — licence files missing** | **Fixed.** `vendor/opengranth/LICENSE` and `NOTICE` are both copied. |
+
+## It is the commit it names
+
+| Checked | Result |
+|---|---|
+| Byte-identical to `1470477` | 49 files — **all 27 scripts, all 8 Gurbani and teaching files**, all 8 style sheets, and the two licence files |
+| Changed | 13, all label or packaging: the 8 pages, the app name, `robots.txt`, the read-me, the offline list, and the offline-list builder |
+| Added | 3 — `qa-banner.css`, `qa-build.json`, `qa-verification.json` |
+| Offline list | 61 entries, **61 of 61** fingerprints match |
+| Anything personal | None |
+| Behaves like the candidate I verified | Yes: the reading place holds in 4 of 4 ways of reopening, and a note on an unsaved line is listed — the CI-R-11 and CI-U-11 repairs are both present and working |
+
+Evidence: `evidence/tc_01_test_copy_compared_with_source_build2.json`,
+`evidence/dt_03_test_copy_banner_build2.json`, `evidence/dt_01_saved_place_on_reopen_build2.json`,
+`evidence/dt_02_journey_rehearsal_build2.json`.
+
+## One observation, not a blocker
+
+**TC-04 (low).** Now that the banner scrolls away, nothing on screen says "test copy" once the reader has scrolled
+into Japji Sahib. The page's title still says it, but a Home Screen app shows no title; the icon is named "GLP QA".
+This is a fair trade — the previous banner covered the Gurbani, which was worse — but a reader deep in the text has
+no reminder that notes typed here are throw-away. A thin coloured strip, under 14 pixels, fixed at the top would
+give both. The ten-minute script already says made-up notes only.
+
+## A correction to my own helper
+
+My comparison tool reported "every data file identical: false" on this build. That was the tool counting the two
+new QA files, which exist only in the test copy, as changed data files. Every Gurbani and teaching file that exists
+in both is byte-identical. The tool has been corrected to say so, and it now lists test-copy-only data files
+separately.
+
+## The script can now be run
+
+Nothing further is needed from the builder before the ten-minute check: the address exists, the copy is the
+repaired candidate and nothing else, the banner is out of the way, and the build label can be read on the page.

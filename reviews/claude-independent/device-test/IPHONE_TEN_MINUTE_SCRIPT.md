@@ -6,8 +6,9 @@
 own words, not this check. Nothing in this folder is an iPhone result.
 
 **Test address:** `https://glp001-iphone-qa.github.io/glp001-iphone-test/`
-**When to run it:** on the repaired build, once its banner shows a build label. Running it earlier on today's copy is
-allowed and useful, but it is an early look at the unrepaired candidate, and is recorded as that.
+**Ready to run as of 26 November 2026, 17:00 UTC.** The address now serves the repaired build (source build ID
+`1470477`, labelled "QA 2"), its banner no longer covers the reader, and I have checked that the copy is that
+commit and nothing else (`TEST_COPY_VERIFICATION_20261126.md`).
 
 This script checks one journey in the Japji Sahib reader: open it, find a passage, save a line, write a note, come back
 to it, carry it into the Home Screen app, open it with no connection, and listen to it with VoiceOver.
@@ -35,7 +36,7 @@ Write down four things first:
 |---|---|
 | iPhone model (Settings → General → About → Model Name) | |
 | iOS version (same screen → iOS Version) | |
-| Build label shown in the test banner (if none is shown, write "none") | |
+| Build label shown in the test banner (expected: Source build ID 1470477 · QA 2) | |
 | Date and time | |
 
 ### Which build
@@ -45,14 +46,14 @@ on it, step A7 should name the same line after both reloads, and a note should a
 "Reflection". It is not on the test address yet. Until the banner shows a build label, assume the address still
 holds the first candidate, where A7 is expected to slip.
 
-### Known about the test copy as it stands today (26 November)
+### Known about the test copy as it stands (second build, 26 November)
 
-It holds the unrepaired candidate — checked file by file (`TEST_COPY_VERIFICATION_20261126.md`). Two things about
-its banner will show up in this check until the builder corrects them:
+It holds the repaired reader, checked file by file. Two things to expect:
 
-- **The banner covers the top line of the reader.** After step A3 you may see only the end of the first line of
-  Pauri 5 (ਹੋਇ ॥) under the banner. That is the banner's fault, not the reader's. Write down what you see.
-- **The banner shows no build label yet.** Write "none" and the time.
+- **The banner scrolls away** once you start reading, so after the first screen nothing says "test copy". The Home
+  Screen icon is named **GLP QA**. Still: made-up notes only.
+- **Step A7 should now pass.** On a computer the reading place held in all four ways of reopening. Whether an
+  iPhone agrees is exactly what this check is for.
 
 ---
 
@@ -66,8 +67,8 @@ its banner will show up in this check until the builder corrects them:
 | **A4** | Tap **⌃**, then **Save this reading line**. | A short message: **Reading line saved.** |
 | **A5** | Tap **⌃**, then **Keep a reflection here**. Type `TEST NOTE 1`. Wait two seconds. Tap **×**. | Under the box: **Saved in this browser.** |
 | **A6** | Tap **Meaning** on the bar. Look. Then tap **Read**. | A short meaning in English and Punjabi under each line, and a notice that the teaching is a draft awaiting human review. Back in Read: Gurmukhi only. |
-| **A7** | Make sure the bar says **Pauri 5**. Reload the page (the ↻ in the address bar, or ⋯ → Reload). Read the bar. Reload once more. Read the bar again. | The bar should still say **Pauri 5**, **Line 1** both times. **Known on a computer: it moved back about three lines on every reload (Pauri 4, Line 5 — then Pauri 4, Line 3).** Write down exactly what your phone's bar says after each reload. |
-| **A8** | Tap **⌃** → **Explore · learning, raag & gurdwaras** → **Saved places & reflections**. Tap the line **Pauri 5 · line 1**. Then **⌃** → **Keep a reflection here**. Tap **×**. | The list shows **Pauri 5 · line 1** with its Gurmukhi. After tapping it, the bar says Pauri 5, Line 1. The box holds `TEST NOTE 1`. |
+| **A7** | Make sure the bar says **Pauri 5**. Reload the page (the ↻ in the address bar, or ⋯ → Reload). Read the bar. Reload once more. Read the bar again. | **Pauri 5**, **Line 1** both times. This is the repair I most want your phone to confirm — on a computer it now holds in all four ways of reopening. Write down exactly what the bar says after each reload. |
+| **A8** | Tap **⌃** → **Explore · learning, raag & gurdwaras** → **Saved places & reflections**. Tap the line **Pauri 5 · line 1**. Then **⌃** → **Keep a reflection here**. Tap **×**. | The list shows **Pauri 5 · line 1** with its Gurmukhi, marked **Saved line · Reflection**. After tapping it, the bar says Pauri 5, Line 1. The box holds `TEST NOTE 1`. |
 | **A9** | **⌃** → **Explore…** → **Saved places & reflections** → **Export learning**. If Safari asks, tap **Download**. | A file named **Gurbani-learning.json** is saved (Files app → Downloads). Note where it went. |
 
 ---
