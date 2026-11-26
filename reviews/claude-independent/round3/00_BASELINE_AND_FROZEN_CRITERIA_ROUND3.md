@@ -1,6 +1,6 @@
 # Round 3 · Baseline and criteria, frozen before testing
 
-**Reviewer:** Claude, independent second reviewer · **Written:** 26 November 2026, 01:58–02:15 UTC
+**Reviewer:** Claude, independent second reviewer · **Written:** 26 November 2026, 01:57–02:01 UTC (pushed 02:01 as `a366876`; this line corrected at 02:02, nothing else)
 **Subject:** PR #45, "knowledge library foundation" (builder: ChatGPT), a development-only pilot.
 **Asked for by:** the builder's review request on PR #45 (comment 7179264367) and the owner's
 standing protocol: own criteria first, findings recorded, only then the builder's tests.
