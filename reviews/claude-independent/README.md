@@ -58,7 +58,9 @@ the test copy checked against its source; two findings from the rehearsal, CI-R-
 CI-U-11) · [`retests/RT-002_FROZEN_CRITERIA…`](retests/RT-002_FROZEN_CRITERIA_BEFORE_SECOND_REPAIRS.md)
 (criteria for the second re-test of PR #40) · [`retests/RT-002_PR40_SECOND_REPAIRS.md`](retests/RT-002_PR40_SECOND_REPAIRS.md)
 (**the second re-test, PR #40 at `1470477`: three repairs fixed, two partly, two not attempted;
-nothing broken; fit to stage for the phone check once the test banner is off the reader**).
+nothing broken; fit to stage for the phone check once the test banner is off the reader**) ·
+[`retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md`](retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md) (**PR #47: R2-X-04
+fixed — a linked passage is now a visit that writes nothing**).
 
 ## Reading the evidence labels
 

@@ -77,4 +77,36 @@ Both are in `RT-003/candidate_findings.json`. Neither holds the verdict.
 
 ## 6. Comparison with the builder's tests
 
-*To be added after sections 1 to 5 are committed.*
+Added after sections 1 to 5 were committed and pushed (`fa3e3df`, 17:18 UTC). Only then did I open
+`docs/PR40_SUKHMANI_PASSAGE_VISIT_REPAIR_20261126.md`, the new test file and the evidence.
+
+| Run by me on the candidate | Result |
+|---|---|
+| `tests/sukhmani-passage-visit-browser.mjs` (the new suite, 9 scenarios) | 9 of 9 pass; no runtime errors — the same as the committed evidence |
+| `verify.mjs`, `sukhmani-reader-core.mjs`, `shared-learning.mjs`, `japji-retained-learning.mjs`, `service-worker.mjs` | All pass. `shared-learning` has grown from 12 checks to 13 |
+
+**We agree on every verdict.** The repair note claims nothing I did not find, and it is careful where it should be:
+it says a hidden-document signal is simulated rather than tested on a device, and that the change invents no new
+identity scheme.
+
+**What each side covered that the other did not**
+
+| Subject | The builder | This re-test |
+|---|---|---|
+| Offline: a cached reader opening a linked passage | Tested | Not tested |
+| A hidden document (the phone's screen going off) | Simulated | Not tested |
+| Encoded and out-of-range fragments | Tested | A plain non-existent fragment only |
+| Links to a line and a unit, and Back across same-document changes | Tested | Tested — we agree |
+| Another tab holding a newer place | Tested, with edits and export | Tested, two live tabs |
+| The notice at 320 / 375 / 390 pixels, buttons measured and tap-tested | One geometry check | Three widths |
+| The page's own skip link | Not covered | Correctly not a visit |
+| What a screen reader is given | Not covered | Region, status and two buttons, by name |
+| The 21 scripture alterations, after this change to the Sukhmani reader | Not re-run in this suite | 21 of 21 refused in each reader |
+
+**One place where we looked at the same thing and concluded differently.** The builder's scenario "A first-time
+visitor does not create a durable record until choosing a reading place" passes, and as a question about storage it
+is right — nothing is written. My RT3-01 is about what that reader is *told*: the notice names a saved place
+("Ashtpadi 1 · Opening · Ang 262") that does not exist, and the reader is never offered the chance to keep what
+they have read. Both can be true at once; the storage behaviour is correct and the wording is not.
+
+**No verdict in sections 1 to 5 changed after reading the builder's tests.**

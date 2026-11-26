@@ -36,3 +36,11 @@
 - **Work order item E** — trials of the daily source, the controlled publisher and its cache, the plan for covering all 1,430 Angs. I wrote the exit tests and risks for these (`03`), not the things themselves.
 - **Three SGPC article pages** named in the Hukamnama data were not opened. My tool needs the owner's approval on screen to open an address that neither the owner nor a search supplied, and nobody was there to give it.
 - No device, no Safari, no screen reader, no qualified human review of any text. As before.
+
+---
+
+**Later outcome, 26 November 2026.** R2-X-04 was repaired in candidate PR #47 (`d8202ca`, stacked on PR #40) and
+re-tested: **fixed** — arriving by a link is now a temporary visit that writes nothing to storage until the reader
+chooses. Record: [`../retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md`](../retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md).
+The repair is on an unmerged candidate; the published app still replaces the saved place.
+

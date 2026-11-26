@@ -187,3 +187,16 @@ existed; it was committed about ninety seconds after — before I knew of the ca
 now says so. And one measurement in my notice script was confounded by my own scrolling; it was removed and the
 question measured properly (0 of 12 overlaps).
 
+### Re-test of candidate PR #47 at `d8202ca` (the linked-passage repair)
+
+Record: [`retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md`](retests/RT-003_PR47_LINKED_PASSAGE_VISIT.md). Criteria:
+checks a–d under R2-X-04 in the RT-002 criteria file, frozen before this candidate existed. Emulation only
+(Chromium). Device: none.
+
+| Finding | Examined | Verdict |
+|---|---|---|
+| R2-X-04 | The four frozen checks; a note written during a visit; both exit buttons; reload, browser Back, in-page link then Back; links to a line, a unit, and one that does not exist; the page's own skip link; two live tabs; the notice at three widths with buttons measured and tap-tested; the names a screen reader is given; links into Japji | **Fixed.** No storage write at all during a visit |
+| Regression | 21 alterations × 2 readers; 2,027 lines verified; note and saved line across a reload; data and teaching files; offline list 57 / 57; storage names; the gate | Pass |
+| Sukhmani place on repeated reopening | 6 reopenings × 3 versions | One line on the first reopening, then stable — identical on the published version, so not the CI-R-11 drift |
+| Builder's tests, run by this reviewer after my verdicts were committed | The new 9-scenario passage-visit suite; 5 Node suites | Pass |
+
