@@ -1,0 +1,280 @@
+TAP version 13
+# Subtest: research intake passes while leaving all runtime and human approval gates closed
+ok 1 - research intake passes while leaving all runtime and human approval gates closed
+  ---
+  duration_ms: 1.74875
+  type: 'test'
+  ...
+# Subtest: reject root runtime promotion
+ok 2 - reject root runtime promotion
+  ---
+  duration_ms: 0.296542
+  type: 'test'
+  ...
+# Subtest: reject root publication promotion
+ok 3 - reject root publication promotion
+  ---
+  duration_ms: 0.193041
+  type: 'test'
+  ...
+# Subtest: reject candidate runtime promotion
+ok 4 - reject candidate runtime promotion
+  ---
+  duration_ms: 0.176459
+  type: 'test'
+  ...
+# Subtest: reject candidate publication promotion
+ok 5 - reject candidate publication promotion
+  ---
+  duration_ms: 0.20325
+  type: 'test'
+  ...
+# Subtest: reject fabricated qualified scholar review
+ok 6 - reject fabricated qualified scholar review
+  ---
+  duration_ms: 0.267875
+  type: 'test'
+  ...
+# Subtest: reject elevating a digital witness to authenticated scripture
+ok 7 - reject elevating a digital witness to authenticated scripture
+  ---
+  duration_ms: 0.142583
+  type: 'test'
+  ...
+# Subtest: reject claiming an adjudicated canonical Ang
+ok 8 - reject claiming an adjudicated canonical Ang
+  ---
+  duration_ms: 0.1435
+  type: 'test'
+  ...
+# Subtest: reject assigning a proposed ID as canonical
+ok 9 - reject assigning a proposed ID as canonical
+  ---
+  duration_ms: 0.302208
+  type: 'test'
+  ...
+# Subtest: reject a source commit change
+ok 10 - reject a source commit change
+  ---
+  duration_ms: 0.357208
+  type: 'test'
+  ...
+# Subtest: reject repinning a raw source file in the manifest
+ok 11 - reject repinning a raw source file in the manifest
+  ---
+  duration_ms: 0.179792
+  type: 'test'
+  ...
+# Subtest: reject a verse alteration
+ok 12 - reject a verse alteration
+  ---
+  duration_ms: 0.163333
+  type: 'test'
+  ...
+# Subtest: reject a verse alteration even after renewing its local hashes
+ok 13 - reject a verse alteration even after renewing its local hashes
+  ---
+  duration_ms: 0.177166
+  type: 'test'
+  ...
+# Subtest: reject reordered verse occurrences
+ok 14 - reject reordered verse occurrences
+  ---
+  duration_ms: 0.329
+  type: 'test'
+  ...
+# Subtest: reject reordered verses with rewritten ordinals and locators
+ok 15 - reject reordered verses with rewritten ordinals and locators
+  ---
+  duration_ms: 0.213958
+  type: 'test'
+  ...
+# Subtest: reject a range that clips the attribution heading
+ok 16 - reject a range that clips the attribution heading
+  ---
+  duration_ms: 0.175083
+  type: 'test'
+  ...
+# Subtest: reject an occurrence count that disguises a missing verse
+ok 17 - reject an occurrence count that disguises a missing verse
+  ---
+  duration_ms: 0.144875
+  type: 'test'
+  ...
+# Subtest: reject removal of the attribution evidence
+ok 18 - reject removal of the attribution evidence
+  ---
+  duration_ms: 0.1235
+  type: 'test'
+  ...
+# Subtest: reject whole-page author inheritance in inventory
+ok 19 - reject whole-page author inheritance in inventory
+  ---
+  duration_ms: 0.114459
+  type: 'test'
+  ...
+# Subtest: reject whole-page frontmatter as canonical author
+ok 20 - reject whole-page frontmatter as canonical author
+  ---
+  duration_ms: 0.118583
+  type: 'test'
+  ...
+# Subtest: reject replacing observed page author with a convenient attribution
+ok 21 - reject replacing observed page author with a convenient attribution
+  ---
+  duration_ms: 0.122542
+  type: 'test'
+  ...
+# Subtest: reject author inference from a signature word
+ok 22 - reject author inference from a signature word
+  ---
+  duration_ms: 0.117875
+  type: 'test'
+  ...
+# Subtest: reject an injected canonical author field
+ok 23 - reject an injected canonical author field
+  ---
+  duration_ms: 0.132458
+  type: 'test'
+  ...
+# Subtest: reject turning text-entry counts into a composition count
+ok 24 - reject turning text-entry counts into a composition count
+  ---
+  duration_ms: 0.118083
+  type: 'test'
+  ...
+# Subtest: reject omission of a shared boundary Ang from the inventory
+ok 25 - reject omission of a shared boundary Ang from the inventory
+  ---
+  duration_ms: 0.144042
+  type: 'test'
+  ...
+# Subtest: reject dropping a quarantined discrepancy
+ok 26 - reject dropping a quarantined discrepancy
+  ---
+  duration_ms: 0.218791
+  type: 'test'
+  ...
+# Subtest: reject marking a discrepancy resolved without a new review record
+ok 27 - reject marking a discrepancy resolved without a new review record
+  ---
+  duration_ms: 0.315125
+  type: 'test'
+  ...
+# Subtest: reject automatic author promotion of a disputed occurrence
+ok 28 - reject automatic author promotion of a disputed occurrence
+  ---
+  duration_ms: 0.202833
+  type: 'test'
+  ...
+# Subtest: reject assigning a canonical author to a quarantined occurrence
+ok 29 - reject assigning a canonical author to a quarantined occurrence
+  ---
+  duration_ms: 0.287709
+  type: 'test'
+  ...
+# Subtest: reject silently fixing the disputed source Ang1377 to1378
+ok 30 - reject silently fixing the disputed source Ang1377 to1378
+  ---
+  duration_ms: 0.270708
+  type: 'test'
+  ...
+# Subtest: reject silently fixing the disputed source Ang324 to323
+ok 31 - reject silently fixing the disputed source Ang324 to323
+  ---
+  duration_ms: 0.323542
+  type: 'test'
+  ...
+# Subtest: reject replacing a conflicting second-witness locator with the primary one
+ok 32 - reject replacing a conflicting second-witness locator with the primary one
+  ---
+  duration_ms: 0.258417
+  type: 'test'
+  ...
+# Subtest: reject dropping adjacent boundary evidence
+ok 33 - reject dropping adjacent boundary evidence
+  ---
+  duration_ms: 0.222292
+  type: 'test'
+  ...
+# Subtest: reject imported translation assets
+ok 34 - reject imported translation assets
+  ---
+  duration_ms: 0.316458
+  type: 'test'
+  ...
+# Subtest: reject imported audio assets
+ok 35 - reject imported audio assets
+  ---
+  duration_ms: 0.173167
+  type: 'test'
+  ...
+# Subtest: reject an automatic normalization policy
+ok 36 - reject an automatic normalization policy
+  ---
+  duration_ms: 0.247542
+  type: 'test'
+  ...
+# Subtest: reject weakening the existing-source preservation gate
+ok 37 - reject weakening the existing-source preservation gate
+  ---
+  duration_ms: 0.602958
+  type: 'test'
+  ...
+# Subtest: reject claiming full machine collation that was not performed
+ok 38 - reject claiming full machine collation that was not performed
+  ---
+  duration_ms: 0.168416
+  type: 'test'
+  ...
+# Subtest: reject missing runtime bytes instead of checking only the manifest
+ok 39 - reject missing runtime bytes instead of checking only the manifest
+  ---
+  duration_ms: 0.030416
+  type: 'test'
+  ...
+# Subtest: reject any change to the current runtime scripture even after updating its pin
+ok 40 - reject any change to the current runtime scripture even after updating its pin
+  ---
+  duration_ms: 0.071167
+  type: 'test'
+  ...
+# Subtest: reject a runtime source-lock change while scripture bytes remain intact
+ok 41 - reject a runtime source-lock change while scripture bytes remain intact
+  ---
+  duration_ms: 0.040667
+  type: 'test'
+  ...
+# Subtest: reject an incomplete witness directory rather than treating it as full verification
+ok 42 - reject an incomplete witness directory rather than treating it as full verification
+  ---
+  duration_ms: 0.314417
+  type: 'test'
+  ...
+# Subtest: reject non-original witness bytes
+ok 43 - reject non-original witness bytes
+  ---
+  duration_ms: 0.2165
+  type: 'test'
+  ...
+# Subtest: verify all four original source files and their parsed selected rows
+ok 44 - verify all four original source files and their parsed selected rows
+  ---
+  duration_ms: 0.621583
+  type: 'test'
+  ...
+# Subtest: detect one-byte mutation of an original witness file
+ok 45 - detect one-byte mutation of an original witness file
+  ---
+  duration_ms: 0.303458
+  type: 'test'
+  ...
+1..45
+# tests 45
+# suites 0
+# pass 45
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 21.525416

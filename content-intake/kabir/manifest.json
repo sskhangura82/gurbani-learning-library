@@ -1,0 +1,652 @@
+{
+  "schema": "glp.content-intake.v1",
+  "id": "glp-kabir-intake-001",
+  "status": "PLANNING_INVENTORY",
+  "runtimeEligible": false,
+  "publicReady": false,
+  "scope": "Source inventory and review queue for Bhagat Kabir Ji Bani; does not alter the existing three-Salok scripture pack.",
+  "preparedDate": "2026-11-26",
+  "source": {
+    "repository": "opengranth/open-granth",
+    "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "editionStatus": "PINNED_DIGITAL_WITNESS_NOT_AUTHENTICATED_SAROOP",
+    "metadataWitness": {
+      "path": "metadata/authors.json",
+      "gitBlob": "ad723a5d2cdd29e8d74ec336111e95ab387f5b2e",
+      "sha256": "30087956844b72d15f7ffd50f27d68e6f19eaa13fd69d5464c7de348c4d88503",
+      "bytes": 49201,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json"
+    },
+    "textWitnesses": [
+      {
+        "path": "corpus/ang-0323.md",
+        "gitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+        "sha256": "444f2ff55b16b4f71392cafb1f99ee49fcc76743bd0f981eab8dc24592b7cd69",
+        "bytes": 10442,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0323.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0323.md"
+      },
+      {
+        "path": "corpus/ang-0324.md",
+        "gitBlob": "1d5fb8624c9ddfdfef5a0801081a6cd469dcd540",
+        "sha256": "f2e1be82dae745532602c109e2cc581a865e0ab4fe31887ab18310e2f4091bfe",
+        "bytes": 10808,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0324.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0324.md"
+      },
+      {
+        "path": "corpus/ang-1377.md",
+        "gitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sha256": "47c2e2d5d609bc726f5813bdae03caea25accf843bd32b259fbb1f1a96598262",
+        "bytes": 10042,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md"
+      }
+    ],
+    "reportedUpstream": {
+      "package": "@shabados/database",
+      "version": "5.0.0-next.0",
+      "sourceId": "SGGS",
+      "primaryAsset": "SSA2",
+      "provenanceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/docs/provenance.md"
+    }
+  },
+  "inventory": {
+    "label": "Bhagat Kabir Ji candidate inventory",
+    "upstreamAuthorName": "Bhagat Kabeer Ji",
+    "candidateAngs": [
+      91,
+      92,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      524,
+      555,
+      654,
+      655,
+      656,
+      691,
+      692,
+      727,
+      792,
+      793,
+      855,
+      856,
+      857,
+      870,
+      871,
+      872,
+      873,
+      947,
+      948,
+      965,
+      968,
+      969,
+      970,
+      971,
+      972,
+      1102,
+      1103,
+      1104,
+      1105,
+      1106,
+      1123,
+      1124,
+      1157,
+      1158,
+      1159,
+      1160,
+      1162,
+      1163,
+      1193,
+      1194,
+      1195,
+      1196,
+      1251,
+      1252,
+      1253,
+      1349,
+      1350,
+      1364,
+      1365,
+      1366,
+      1367,
+      1368,
+      1369,
+      1370,
+      1371,
+      1372,
+      1373,
+      1374,
+      1375,
+      1376,
+      1377
+    ],
+    "candidateAngCount": 96,
+    "upstreamTextEntryCount": 3057,
+    "upstreamCountField": "verse_count",
+    "countMeaning": "Upstream text-entry count; not a count of complete Shabads, padas, or Saloks.",
+    "completeCompositionCount": null,
+    "reviewedCompositionCount": 0,
+    "canonicalAuthorAssignmentStatus": "PENDING_PASSAGE_REVIEW",
+    "wholePageAuthorAssignmentPermitted": false,
+    "signatureWordAuthorAssignmentPermitted": false
+  },
+  "candidatePassages": [
+    {
+      "candidateId": "kabir-gauri-guareri-chaupade14-001",
+      "proposedCanonicalId": "sggs.gauri.guareri.kabir.chaupade14.shabad001",
+      "canonicalIdStatus": "PROPOSED_NOT_ASSIGNED",
+      "kindProposal": "shabad",
+      "status": "SOURCE_CANDIDATE_PENDING_REVIEW",
+      "runtimeEligible": false,
+      "publicReady": false,
+      "authorClaim": {
+        "label": "Bhagat Kabir Ji",
+        "status": "HEADING_OBSERVED_ATTRIBUTION_PENDING_REVIEW",
+        "evidenceOccurrence": {
+          "sourceAng": 323,
+          "sourceOrdinal": 30,
+          "textSha256": "ead4b50c7b65fe426c1dd00394ed819674cbec95cc0fc779d78e8439f066d2ce"
+        },
+        "pageFrontmatterAuthor": "Guru Arjan",
+        "pageFrontmatterIsCanonicalAttribution": false
+      },
+      "locationClaim": {
+        "sourceAngs": [
+          323
+        ],
+        "canonicalAngs": null,
+        "status": "DIGITAL_LOCATOR_OBSERVED_PENDING_REVIEW"
+      },
+      "sourceRanges": [
+        {
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceFileSha256": "444f2ff55b16b4f71392cafb1f99ee49fcc76743bd0f981eab8dc24592b7cd69",
+          "sourceAng": 323,
+          "firstOrdinal": 30,
+          "lastOrdinal": 40,
+          "expectedOccurrenceCount": 11
+        }
+      ],
+      "expectedCounts": {
+        "allOccurrences": 11,
+        "headings": 1,
+        "verseOccurrences": 10
+      },
+      "occurrences": [
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 30,
+          "sourcePrintedLine": 13,
+          "sourceWithinLine": 1,
+          "text": "ਗਉੜੀ ਗੁਆਰੇਰੀ ਸ੍ਰੀ ਕਬੀਰ ਜੀਉ ਕੇ ਚਉਪਦੇ ੧੪ ॥",
+          "textSha256": "ead4b50c7b65fe426c1dd00394ed819674cbec95cc0fc779d78e8439f066d2ce",
+          "role": "heading"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 31,
+          "sourcePrintedLine": 13,
+          "sourceWithinLine": 2,
+          "text": "ਅਬ ਮੋਹਿ ਜਲਤ ਰਾਮ ਜਲੁ ਪਾਇਆ ॥",
+          "textSha256": "04c23c17c6efd5fb2db4e36c0fff630fdb85a7deb9f284dedf5ee5f94f0542a0",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 32,
+          "sourcePrintedLine": 13,
+          "sourceWithinLine": 3,
+          "text": "ਰਾਮ ਉਦਕਿ ਤਨੁ ਜਲਤ ਬੁਝਾਇਆ ॥੧॥ ਰਹਾਉ ॥",
+          "textSha256": "92a0f6e7477a54123307c27bd48ec62e41be624998539f112997aeb77ac9c7f6",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 33,
+          "sourcePrintedLine": 14,
+          "sourceWithinLine": 1,
+          "text": "ਮਨੁ ਮਾਰਣ ਕਾਰਣਿ ਬਨ ਜਾਈਐ ॥",
+          "textSha256": "926ff5cb92f7b8471472c019418fd15b3cb6055ebde8b210cc035a5241db846e",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 34,
+          "sourcePrintedLine": 14,
+          "sourceWithinLine": 2,
+          "text": "ਸੋ ਜਲੁ ਬਿਨੁ ਭਗਵੰਤ ਨ ਪਾਈਐ ॥੧॥",
+          "textSha256": "240b04d6db63d8fa2b29f10bf775735296420b0f0eb28b0d9339a702aeca7485",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 35,
+          "sourcePrintedLine": 15,
+          "sourceWithinLine": 1,
+          "text": "ਜਿਹ ਪਾਵਕ ਸੁਰਿ ਨਰ ਹੈ ਜਾਰੇ ॥",
+          "textSha256": "d656f234e2c99f3c52ab96fa212e3e74a15a8308bfc0689c257608453b6bd4ed",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 36,
+          "sourcePrintedLine": 15,
+          "sourceWithinLine": 2,
+          "text": "ਰਾਮ ਉਦਕਿ ਜਨ ਜਲਤ ਉਬਾਰੇ ॥੨॥",
+          "textSha256": "51bb0dc783c53394ce8e03d6d7b5721620057b9809182defe276e15112b208e6",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 37,
+          "sourcePrintedLine": 15,
+          "sourceWithinLine": 3,
+          "text": "ਭਵ ਸਾਗਰ ਸੁਖ ਸਾਗਰ ਮਾਹੀ ॥",
+          "textSha256": "770c5e17401eb428bf0f9ae0a625c2d2c2c3eee3f10c536f14336435bcf5073c",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 38,
+          "sourcePrintedLine": 16,
+          "sourceWithinLine": 1,
+          "text": "ਪੀਵਿ ਰਹੇ ਜਲ ਨਿਖੁਟਤ ਨਾਹੀ ॥੩॥",
+          "textSha256": "523c26af226e405f17284cfa43efd2bf4ddfe97045eca9050b807ef5ed7a641e",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 39,
+          "sourcePrintedLine": 16,
+          "sourceWithinLine": 2,
+          "text": "ਕਹਿ ਕਬੀਰ ਭਜੁ ਸਾਰਿੰਗਪਾਨੀ ॥",
+          "textSha256": "0e21e3de7df6936db1ebee28694167fc61d6d20e5a7e83e8bc5f7afddfd92d1a",
+          "role": "verse"
+        },
+        {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 40,
+          "sourcePrintedLine": 16,
+          "sourceWithinLine": 3,
+          "text": "ਰਾਮ ਉਦਕਿ ਮੇਰੀ ਤਿਖਾ ਬੁਝਾਨੀ ॥੪॥੧॥",
+          "textSha256": "8ed4dc8d09d79fe4b011439ef739f1ee145413fde55c0165228830bf3e92885d",
+          "role": "verse"
+        }
+      ],
+      "selectedTextDigest": {
+        "algorithm": "sha256",
+        "serialization": "UTF-8 of occurrence text values joined by LF in source order, without final LF; includes heading; no normalization",
+        "value": "24097fef481ae89a43ce1de30db725ba401320783c712360e4a8300ef0f4e66b"
+      },
+      "boundaryEvidence": {
+        "precedingSourceOccurrence": {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 29,
+          "sourcePrintedLine": 12,
+          "sourceWithinLine": 2,
+          "text": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+          "textSha256": "9e397b19c98b4d9d9b705ba4bda4eac958efc44634ace0670369811bf04de633"
+        },
+        "firstSourceOccurrence": {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 30,
+          "sourcePrintedLine": 13,
+          "sourceWithinLine": 1,
+          "text": "ਗਉੜੀ ਗੁਆਰੇਰੀ ਸ੍ਰੀ ਕਬੀਰ ਜੀਉ ਕੇ ਚਉਪਦੇ ੧੪ ॥",
+          "textSha256": "ead4b50c7b65fe426c1dd00394ed819674cbec95cc0fc779d78e8439f066d2ce",
+          "role": "heading"
+        },
+        "lastSourceOccurrence": {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 40,
+          "sourcePrintedLine": 16,
+          "sourceWithinLine": 3,
+          "text": "ਰਾਮ ਉਦਕਿ ਮੇਰੀ ਤਿਖਾ ਬੁਝਾਨੀ ॥੪॥੧॥",
+          "textSha256": "8ed4dc8d09d79fe4b011439ef739f1ee145413fde55c0165228830bf3e92885d",
+          "role": "verse"
+        },
+        "nextSourceOccurrence": {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 41,
+          "sourcePrintedLine": 17,
+          "sourceWithinLine": 1,
+          "text": "ਗਉੜੀ ਕਬੀਰ ਜੀ ॥",
+          "textSha256": "d2fbf55e923f147cd694b485881560a888f314f83445b2aaff8d99e14fe0c227"
+        },
+        "expectedTerminalMarker": "॥੪॥੧॥",
+        "broaderSectionContext": [
+          {
+            "sourceAng": 323,
+            "sourcePath": "corpus/ang-0323.md",
+            "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+            "sourceOrdinal": 28,
+            "sourcePrintedLine": 12,
+            "sourceWithinLine": 1,
+            "text": "ਰਾਗੁ ਗਉੜੀ ਭਗਤਾਂ ਕੀ ਬਾਣੀ ॥",
+            "textSha256": "752c3656cb317212639d76595cad72bdeb949353a58abdedb7fa7cbd52a8b0d1"
+          },
+          {
+            "sourceAng": 323,
+            "sourcePath": "corpus/ang-0323.md",
+            "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+            "sourceOrdinal": 29,
+            "sourcePrintedLine": 12,
+            "sourceWithinLine": 2,
+            "text": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+            "textSha256": "9e397b19c98b4d9d9b705ba4bda4eac958efc44634ace0670369811bf04de633"
+          }
+        ],
+        "sharedContextDuplicationPolicy": "PENDING_REVIEW"
+      },
+      "structureProposal": {
+        "status": "DERIVED_FROM_VISIBLE_MARKERS_PENDING_REVIEW",
+        "rahauSourceOrdinals": [
+          31,
+          32
+        ],
+        "numberedStanzaSourceOrdinals": [
+          [
+            33,
+            34
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            37,
+            38
+          ],
+          [
+            39,
+            40
+          ]
+        ],
+        "sequenceNumberWithinHeadingGroup": 1,
+        "headingGroupVisibleCount": 14
+      },
+      "secondaryWitness": {
+        "provider": "SriGranth",
+        "urls": [
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=323"
+        ],
+        "retrievalDate": "2026-11-26",
+        "observationMethod": "Web text inspected; text and boundary context observed. Not a print collation and not an independent scholar review.",
+        "allOccurrenceMachineCollation": "NOT_PERFORMED",
+        "boundaryContext": [
+          {
+            "witnessAng": 323,
+            "text": "ਗਉੜੀ ਗੁਆਰੇਰੀ ਸ੍ਰੀ ਕਬੀਰ ਜੀਉ ਕੇ ਚਉਪਦੇ ੧੪ ॥",
+            "textSha256": "ead4b50c7b65fe426c1dd00394ed819674cbec95cc0fc779d78e8439f066d2ce",
+            "pageContext": "Section heading before opening occurrence"
+          },
+          {
+            "witnessAng": 323,
+            "text": "ਅਬ ਮੋਹਿ ਜਲਤ ਰਾਮ ਜਲੁ ਪਾਇਆ ॥",
+            "textSha256": "04c23c17c6efd5fb2db4e36c0fff630fdb85a7deb9f284dedf5ee5f94f0542a0",
+            "pageContext": "Opening occurrence immediately after heading"
+          },
+          {
+            "witnessAng": 323,
+            "text": "ਰਾਮ ਉਦਕਿ ਮੇਰੀ ਤਿਖਾ ਬੁਝਾਨੀ ॥੪॥੧॥",
+            "textSha256": "8ed4dc8d09d79fe4b011439ef739f1ee145413fde55c0165228830bf3e92885d",
+            "pageContext": "Closing occurrence before next Gauri Kabir heading"
+          },
+          {
+            "witnessAng": 323,
+            "text": "ਗਉੜੀ ਕਬੀਰ ਜੀ ॥",
+            "textSha256": "d2fbf55e923f147cd694b485881560a888f314f83445b2aaff8d99e14fe0c227",
+            "pageContext": "Next composition heading"
+          }
+        ]
+      },
+      "reviews": {
+        "gurbaniScholar": null,
+        "punjabiReader": null,
+        "sourceLocationAdjudication": null,
+        "rightsReview": null
+      },
+      "translationAssets": [],
+      "audioAssets": []
+    }
+  ],
+  "quarantinedDiscrepancies": [
+    {
+      "id": "og-location-1377-row002",
+      "status": "OPEN_QUARANTINED",
+      "type": "SOURCE_LOCATION_AND_SEQUENCE_CONFLICT",
+      "runtimeEligible": false,
+      "automaticAuthorInclusion": false,
+      "sourceOccurrence": {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+        "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0"
+      },
+      "sourceContext": {
+        "previous": {
+          "sourceAng": 1377,
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+          "sourceOrdinal": 1,
+          "sourcePrintedLine": 1,
+          "sourceWithinLine": 1,
+          "text": "ਮੁਕਤਿ ਪਦਾਰਥੁ ਪਾਈਐ ਠਾਕ ਨ ਅਵਘਟ ਘਾਟ ॥੨੩੧॥",
+          "textSha256": "1e4a9e3a774c6e37e1e9f8cec49a71896a4f4380c29494fd2c8f21b2b4bb8d94"
+        },
+        "next": {
+          "sourceAng": 1377,
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+          "sourceOrdinal": 3,
+          "sourcePrintedLine": 2,
+          "sourceWithinLine": 1,
+          "text": "ਕਬੀਰ ਏਕ ਘੜੀ ਆਧੀ ਘਰੀ ਆਧੀ ਹੂੰ ਤੇ ਆਧ ॥",
+          "textSha256": "9146f1900d6f91fdb03212d8c8012ab22368d7256981f6594ff4beb0550ef271"
+        }
+      },
+      "primaryWitnessUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md",
+      "secondaryWitness": {
+        "provider": "SriGranth",
+        "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1378",
+        "witnessAng": 1378,
+        "observationMethod": "Web text observed, not source-saroop adjudication",
+        "context": [
+          {
+            "witnessAng": 1378,
+            "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+            "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0",
+            "pageContext": "First displayed Gurbani occurrence on Ang1378; closes Salok2"
+          },
+          {
+            "witnessAng": 1378,
+            "text": "ਕਿਝੁ ਨ ਬੁਝੈ ਕਿਝੁ ਨ ਸੁਝੈ ਦੁਨੀਆ ਗੁਝੀ ਭਾਹਿ ॥",
+            "textSha256": "89fccadbea295400e80ba21e4ede491e3ad5ffd63c9a1fab041a99b4ab0758f6",
+            "pageContext": "Next displayed Gurbani occurrence; begins following Salok"
+          }
+        ]
+      },
+      "canonicalAng": null,
+      "canonicalAuthorId": null,
+      "resolution": null,
+      "requiredAction": "Compare an authenticated saroop/page witness and source line-group metadata; retain both original locators. Do not silently move, delete, or attribute the disputed occurrence."
+    },
+    {
+      "id": "og-location-0324-row001",
+      "status": "OPEN_QUARANTINED",
+      "type": "CROSS_ANG_LOCATION_CONFLICT",
+      "runtimeEligible": false,
+      "automaticAuthorInclusion": false,
+      "sourceOccurrence": {
+        "sourceAng": 324,
+        "sourcePath": "corpus/ang-0324.md",
+        "sourceGitBlob": "1d5fb8624c9ddfdfef5a0801081a6cd469dcd540",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਤੂੰ ਸਤਿਗੁਰੁ ਹਉ ਨਉਤਨੁ ਚੇਲਾ ॥",
+        "textSha256": "23ca05b987c54ceac5e7994c2ca050503e0e2c419812a7de7eb4c130f5bf6dfd"
+      },
+      "sourceContext": {
+        "previousAcrossFiles": {
+          "sourceAng": 323,
+          "sourcePath": "corpus/ang-0323.md",
+          "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sourceOrdinal": 49,
+          "sourcePrintedLine": 19,
+          "sourceWithinLine": 3,
+          "text": "ਮੰਦਭਾਗੀ ਤੇਰੋ ਦਰਸਨੁ ਨਾਹਿ ॥੩॥",
+          "textSha256": "0ccb471e6567818854b4e4fc613a42daca69c9d6c34dd8d75cea96134ed36bdf"
+        },
+        "next": {
+          "sourceAng": 324,
+          "sourcePath": "corpus/ang-0324.md",
+          "sourceGitBlob": "1d5fb8624c9ddfdfef5a0801081a6cd469dcd540",
+          "sourceOrdinal": 2,
+          "sourcePrintedLine": 1,
+          "sourceWithinLine": 2,
+          "text": "ਕਹਿ ਕਬੀਰ ਮਿਲੁ ਅੰਤ ਕੀ ਬੇਲਾ ॥੪॥੨॥",
+          "textSha256": "0a50a9ab847bea319e87faa0ff2dee2ad72b8fb980b593bbc07f6c75a021794c"
+        }
+      },
+      "primaryWitnessUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0324.md",
+      "secondaryWitness": {
+        "provider": "SriGranth",
+        "urls": [
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=323",
+          "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=324"
+        ],
+        "witnessAng": 323,
+        "observationMethod": "Web text observed, not source-saroop adjudication",
+        "context": [
+          {
+            "witnessAng": 323,
+            "text": "ਮੰਦਭਾਗੀ ਤੇਰੋ ਦਰਸਨੁ ਨਾਹਿ ॥੩॥",
+            "textSha256": "0ccb471e6567818854b4e4fc613a42daca69c9d6c34dd8d75cea96134ed36bdf",
+            "pageContext": "Penultimate Gurbani occurrence shown on Ang323"
+          },
+          {
+            "witnessAng": 323,
+            "text": "ਤੂੰ ਸਤਿਗੁਰੁ ਹਉ ਨਉਤਨੁ ਚੇਲਾ ॥",
+            "textSha256": "23ca05b987c54ceac5e7994c2ca050503e0e2c419812a7de7eb4c130f5bf6dfd",
+            "pageContext": "Final Gurbani occurrence shown on Ang323"
+          },
+          {
+            "witnessAng": 324,
+            "text": "ਕਹਿ ਕਬੀਰ ਮਿਲੁ ਅੰਤ ਕੀ ਬੇਲਾ ॥੪॥੨॥",
+            "textSha256": "0a50a9ab847bea319e87faa0ff2dee2ad72b8fb980b593bbc07f6c75a021794c",
+            "pageContext": "First Gurbani occurrence shown on Ang324; closes Shabad2"
+          }
+        ]
+      },
+      "canonicalAng": null,
+      "canonicalAuthorId": null,
+      "resolution": null,
+      "requiredAction": "Confirm the cross-Ang boundary against an authenticated page witness. Do not use source file number as an adjudicated canonical locator."
+    }
+  ],
+  "rights": {
+    "status": "REVIEW_REQUIRED",
+    "codeLicenseIsContentLicense": false,
+    "translationsIncluded": false,
+    "audioIncluded": false,
+    "noticeUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/NOTICE",
+    "licenseUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/LICENSE",
+    "note": "OpenGranth MIT license explicitly covers code/tooling and excludes scripture and third-party translation content from that license. This inventory does not establish reuse permission for modern translation, commentary, audio, or images."
+  },
+  "validationGateInputs": {
+    "immutableSourceCommitRequired": true,
+    "sourceFileGitBlobAndSha256Required": true,
+    "perOccurrenceTextSha256Required": true,
+    "exactRangesAndCountsRequired": true,
+    "orderedSelectedTextDigestRequired": true,
+    "sourceTextNormalizationPermitted": false,
+    "pageAuthorInheritancePermitted": false,
+    "unresolvedLocationConflictBlocksRuntime": true,
+    "requiredHumanReviewsBeforeRuntime": [
+      "gurbaniScholar",
+      "punjabiReader",
+      "sourceLocationAdjudication",
+      "rightsReview"
+    ],
+    "initialRuntimeEligible": false,
+    "initialPublicReady": false,
+    "existingRuntimeScriptureOccurrenceCount": 19,
+    "existingRuntimeScripturePackMustRemainUnchanged": true
+  },
+  "limitations": [
+    "This is a draft intake inventory, not a publication manifest or completed Bhagat Kabir Ji collection.",
+    "All proposed identities, author assignments, segmentation, and canonical locators require review.",
+    "Two digital displays may share upstream data; agreement does not establish independent manuscript evidence.",
+    "Source hashes establish byte identity, not correct scriptural attribution, location, completeness, or interpretation.",
+    "The existing nineteen runtime scripture occurrences are outside this intake mutation scope."
+  ]
+}
