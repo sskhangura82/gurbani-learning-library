@@ -2,7 +2,12 @@
 
 **For:** the owner, on his own iPhone.
 **Prepared by:** Claude (independent second reviewer), 26 November 2026.
-**Status: not yet run.** No one has tested this app on a physical iPhone. Nothing in this folder is an iPhone result.
+**Status: not yet run.** The owner has opened the test address on his phone and seen it work — a first look, by his
+own words, not this check. Nothing in this folder is an iPhone result.
+
+**Test address:** `https://glp001-iphone-qa.github.io/glp001-iphone-test/`
+**When to run it:** on the repaired build, once its banner shows a build label. Running it earlier on today's copy is
+allowed and useful, but it is an early look at the unrepaired candidate, and is recorded as that.
 
 This script checks one journey in the Japji Sahib reader: open it, find a passage, save a line, write a note, come back
 to it, carry it into the Home Screen app, open it with no connection, and listen to it with VoiceOver.
@@ -15,7 +20,7 @@ phone does is the result.
 
 ## Before you start
 
-1. **Use the test address only.** The page must show a banner that says **"Test copy — not the library"**.
+1. **Use the test address only.** The page must show a banner that says **TEST COPY — NOT THE LIBRARY**.
    If there is no banner, stop — that is the real site, and test notes do not belong there.
 2. **Use made-up notes only.** Type exactly `TEST NOTE 1`. Do not type a real reflection during this check.
 3. Safari must **not** be in Private Browsing.
@@ -30,8 +35,17 @@ Write down four things first:
 |---|---|
 | iPhone model (Settings → General → About → Model Name) | |
 | iOS version (same screen → iOS Version) | |
-| Build label shown in the test banner | |
+| Build label shown in the test banner (if none is shown, write "none") | |
 | Date and time | |
+
+### Known about the test copy as it stands today (26 November)
+
+It holds the unrepaired candidate — checked file by file (`TEST_COPY_VERIFICATION_20261126.md`). Two things about
+its banner will show up in this check until the builder corrects them:
+
+- **The banner covers the top line of the reader.** After step A3 you may see only the end of the first line of
+  Pauri 5 (ਹੋਇ ॥) under the banner. That is the banner's fault, not the reader's. Write down what you see.
+- **The banner shows no build label yet.** Write "none" and the time.
 
 ---
 
@@ -39,9 +53,9 @@ Write down four things first:
 
 | Step | Do this | You should see |
 |---|---|---|
-| **A1** | Open the test address in Safari. | The banner "Test copy — not the library" with a build label. Home page of the library. |
+| **A1** | Open the test address in Safari. | The banner **TEST COPY — NOT THE LIBRARY**, with a build label once one has been added. Home page of the library. |
 | **A2** | Tap **Open Japji Sahib directly**. | Gurbani in Gurmukhi, beginning with the Mool Mantar. A bar at the bottom: **▶**, the passage name (**Mool Mantar**, and under it **Line 1**), **Read**, **Meaning**, **Study**, a number with the word **pace**, and **⌃**. |
-| **A3** | Tap the passage name on the bottom bar. In the list (**Jump within Japji Sahib**) tap **Pauri 5**. | The reader moves. The bar now says **Pauri 5**, **Line 1**. The first line on screen is ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ |
+| **A3** | Tap the passage name on the bottom bar. (On a small or zoomed screen the bar may show no passage name: tap **⌃** → **Jump to a passage** instead.) In the list (**Jump within Japji Sahib**) tap **Pauri 5**. | The reader moves. The bar now says **Pauri 5**, **Line 1**. The first line on screen is ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ |
 | **A4** | Tap **⌃**, then **Save this reading line**. | A short message: **Reading line saved.** |
 | **A5** | Tap **⌃**, then **Keep a reflection here**. Type `TEST NOTE 1`. Wait two seconds. Tap **×**. | Under the box: **Saved in this browser.** |
 | **A6** | Tap **Meaning** on the bar. Look. Then tap **Read**. | A short meaning in English and Punjabi under each line, and a notice that the teaching is a draft awaiting human review. Back in Read: Gurmukhi only. |
@@ -55,7 +69,7 @@ Write down four things first:
 
 | Step | Do this | You should see |
 |---|---|---|
-| **B1** | In Safari, on the test copy's home page: Share → **Add to Home Screen** → leave "Open as Web App" on if it is offered → **Add**. | A new icon on the Home Screen. Write down the name under it. |
+| **B1** | In Safari, on the test copy's home page: Share → **Add to Home Screen** → leave "Open as Web App" on if it is offered → **Add**. | A new icon on the Home Screen. Expected name: **GLP QA**. Write down the name you see. |
 | **B2** | Open the app from that icon. Tap **Open Japji Sahib directly**. | The library opens without Safari's address bar. The banner is still there. Japji Sahib opens. |
 | **B3** | **⌃** → **Explore…** → **Saved places & reflections**. | Either your saved line is listed, or the screen says **No saved lines yet.** Both are acceptable — iPhone normally keeps a Home Screen app's saved data apart from Safari's. **Write down which one you see.** |
 | **B4** | On that same screen tap **Import or merge learning from any GLP reader** and choose **Gurbani-learning.json**. When asked **Merge this learning backup?** tap **Merge learning**. Then tap **Pauri 5 · line 1**, then **⌃** → **Keep a reflection here**. Tap **×**. | Message: **Learning merged. Existing reflections were preserved.** The line **Pauri 5 · line 1** is listed. The box holds `TEST NOTE 1`. |

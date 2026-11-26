@@ -5,6 +5,13 @@
 **Repository as inspected:** 26 November 2026, 01:29 UTC. Published version `a3476ac`, unchanged. 36 open pull requests, 35 of them drafts.
 **Everything I have tested in a browser was desktop emulation.** No iPhone, iPad, Android device, Safari or screen reader.
 
+> **Status note, 26 November 2026 (later the same day).** Two blockers named in this document are closed and should
+> no longer be counted. The owner approved the separate iPhone test address directly, in chat (decision F1: yes), and
+> the address exists: `glp001-iphone-qa.github.io/glp001-iphone-test/`. I have checked that the copy there is PR #40 at
+> `09e829e` plus a label (`device-test/TEST_COPY_VERIFICATION_20261126.md`). The owner has also confirmed the order of
+> repairs, the four entrances, and R3-01 to R3-03 before a fourth Salok. What is settled, done and open now is in
+> `consolidated/RECONCILIATION_AFTER_OWNER_UPDATE_20261126.md`. The rest of this document is unchanged.
+
 ---
 
 ## The short answer

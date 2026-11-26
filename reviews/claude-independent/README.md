@@ -51,9 +51,12 @@ main register.
 
 Later work, each with its own index: [`round2/`](round2/README.md) (PRs #41–#43) ·
 [`round3/`](round3/README.md) (PR #45) · `consolidated/` (assessment and roadmap, scripture
-discrepancy register, replies to the builder) · [`device-test/`](device-test/README.md)
-(the iPhone script, prepared and **not yet run**; two findings from its rehearsal,
-CI-R-11 and CI-U-11).
+discrepancy register, replies to the builder, and — newest —
+[the reconciliation after the owner's update of 26 November](consolidated/RECONCILIATION_AFTER_OWNER_UPDATE_20261126.md))
+· [`device-test/`](device-test/README.md) (the iPhone script, prepared and **not yet run**;
+the test copy checked against its source; two findings from the rehearsal, CI-R-11 and
+CI-U-11) · [`retests/RT-002_FROZEN_CRITERIA…`](retests/RT-002_FROZEN_CRITERIA_BEFORE_SECOND_REPAIRS.md)
+(criteria for the next re-test of PR #40, frozen before the repaired commit exists).
 
 ## Reading the evidence labels
 

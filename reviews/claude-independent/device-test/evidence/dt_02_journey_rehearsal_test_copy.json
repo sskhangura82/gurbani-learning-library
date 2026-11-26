@@ -1,0 +1,89 @@
+{
+ "version": "test copy (glp001-iphone-test 9929720, served locally)",
+ "note": "emulation only (Chromium, 390 x 844); not an iPhone result",
+ "steps": [
+  {
+   "step": "A2a the home page offers \"Open Japji Sahib directly\"",
+   "asTheScriptExpects": true,
+   "seen": "link present"
+  },
+  {
+   "step": "A2b Japji Sahib opens with Gurbani; the bottom bar names the Mool Mantar",
+   "asTheScriptExpects": true,
+   "seen": "385 lines; bar: Mool Mantar · line 1; bar buttons: ▶ / Mool Mantar Line 1 / ● Read / ● Meaning / ● Study / 70 pace / ⌃"
+  },
+  {
+   "step": "A3 the passage name on the bar opens Contents; choosing Pauri 5 goes there",
+   "asTheScriptExpects": true,
+   "seen": "Pauri 5 · line 1"
+  },
+  {
+   "step": "A4 ⌃ → \"Save this reading line\"",
+   "asTheScriptExpects": true,
+   "seen": "message: Reading line saved."
+  },
+  {
+   "step": "A5 ⌃ → \"Keep a reflection here\"; after typing, the panel says the note is saved",
+   "asTheScriptExpects": true,
+   "seen": "PERSONAL NOTES | Your reflection | × | ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ | Pauri 5 · line 1 | Saved in this browser. Close this reflection to edit in another tab. | Export learning"
+  },
+  {
+   "step": "A6 Meaning shows a short meaning under each line and a notice that the teaching is a draft",
+   "asTheScriptExpects": true,
+   "seen": "385 meanings on the page; notice: Original English/Punjabi meanings throughout. All teaching is an AI-assisted educational draft awaiting qualified human review; scripture, meaning, interpretation and application remain separate."
+  },
+  {
+   "step": "A7 after a reload the bar names the same line; after a second reload, still the same",
+   "asTheScriptExpects": false,
+   "seen": "before: Pauri 5 · line 1 | after one reload: Pauri 4 · line 5 | after two: Pauri 4 · line 3"
+  },
+  {
+   "step": "A7b after closing the tab and opening the reader afresh, the bar names the same line",
+   "asTheScriptExpects": true,
+   "seen": "before: Pauri 5 · line 1 | after: Pauri 5 · line 1"
+  },
+  {
+   "step": "A8a ⌃ → Explore → \"Saved places & reflections\" lists the saved line",
+   "asTheScriptExpects": true,
+   "seen": "BOOKMARKS · NOTES · BACKUP | Saved learning | × | Saved in this browser. One tab at a time can edit reflections; other tabs may keep reading. Close old reader tabs after updating. Separate devices do not synchronize automatically. Other people using this browser profile can see its notes. Export before changing address or Home Screen context. | Pauri 5 · line 1 | ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ | Write a reflection here | Export learning | Import or merge learning from any GLP reader | Your previous Pauri 2 notebook has not been changed. It is still available in the original detailed lesson. | Original Pauri 2 notebook ↗"
+  },
+  {
+   "step": "A8b tapping the saved line goes to it, and \"Keep a reflection here\" shows the note",
+   "asTheScriptExpects": true,
+   "seen": "bar: Pauri 5 · line 1 | note box holds: TEST NOTE 1"
+  },
+  {
+   "step": "A9 \"Export learning\" gives one file, Gurbani-learning.json, holding the note and the saved line",
+   "asTheScriptExpects": true,
+   "seen": "Gurbani-learning.json, 619 characters"
+  },
+  {
+   "step": "B3 with empty storage (stand-in for the Home Screen app) the screen says \"No saved lines yet.\"",
+   "asTheScriptExpects": true,
+   "seen": "No saved lines yet. | Write a reflection here | Export learning | Import or merge learning from any GLP reader | Your previous Pauri 2 notebook has not been changed. It is still available in the original detailed lesson. | Original Pauri 2 notebook ↗"
+  },
+  {
+   "step": "B4a choosing the file asks before merging",
+   "asTheScriptExpects": true,
+   "seen": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. | Merge learningCancel"
+  },
+  {
+   "step": "B4b after \"Merge learning\" the saved line is listed again and its note is back",
+   "asTheScriptExpects": true,
+   "seen": "message: Learning merged. Existing reflections were preserved. | line listed: True | note box holds: TEST NOTE 1"
+  }
+ ],
+ "aNoteOnALineThatWasNotSaved": {
+  "whereWritten": "Pauri 7 · line 1",
+  "savedLearningScreenListsIt": false,
+  "noteIsInTheExportFile": true,
+  "noteReappearsWhenTheReaderGoesBackToThatLine": true,
+  "screenText": "BOOKMARKS · NOTES · BACKUP | Saved learning | × | Saved in this browser. One tab at a time can edit reflections; other tabs may keep reading. Close old reader tabs after updating. Separate devices do not synchronize automatically. Other people using this browser profile can see its notes. Export before changing address or Home Screen context. | Pauri 5 · line 1 | ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ | Write a reflection here | Export learning | Import or merge learning from any GLP reader | Your previous Pauri 2 notebook has not been changed. It is still available in the original detailed lesson. | Original Pauri 2 notebook ↗"
+ },
+ "aNoteAndNoSavedLines": {
+  "screenSaysNoSavedLinesYet": true,
+  "noteIsMentionedAnywhereOnTheScreen": false
+ },
+ "iPhoneAndOfflineHelpPanel": "INSTALL · BACKUP · UPDATE | iPhone & offline help | × | Open this page in Safari, then Share → Add to Home Screen. Keep “Open as Web App” enabled if offered. | Export learning from Explore → Saved learning before changing addresses or switching between Safari and Home Screen. Import the file in the destination if notes are absent. | Keep this page open for the first offline-shell installation. Device storage can be cleared; exported files are the durable backup. | Switching away pauses the silent guide. Tap Resume when you return. | Physical iPhone/Safari, VoiceOver and Home Screen verification remain pending; desktop checks do not establish those results. | Offline caching is not available in this browser. | Check for a reader update",
+ "asTheScriptExpects": "13 of 14"
+}

@@ -2,19 +2,28 @@
 
 Prepared 26 November 2026 (UTC) by Claude, independent second reviewer, at the builder's request on PR #40.
 
-**Status: prepared, not run.** There is no physical-device result for this project. The separate test address the
-script needs does not exist yet.
+**Status: prepared, not run.** There is no physical-device result for this project.
+
+**Update, 26 November 2026, later the same day.** The owner approved the separate test address directly, in chat,
+and it exists: `glp001-iphone-qa.github.io/glp001-iphone-test/`. The missing address and the missing approval are no
+longer blockers. The copy there has been checked against the candidate (`TEST_COPY_VERIFICATION_20261126.md`): it is
+PR #40 at `09e829e` plus a label, nothing else. What remains before the formal phone check: the repaired commit, my
+re-test of it, and a build label on a banner that does not cover the reading line.
 
 ## What is here
 
 | File | What it is |
 |---|---|
 | `IPHONE_TEN_MINUTE_SCRIPT.md` | The check for the owner's iPhone: Safari, Home Screen app, no connection, VoiceOver, saved place, export and import with a made-up note. Ends with an answer sheet to copy into the chat. |
+| `TEST_COPY_VERIFICATION_20261126.md` | The test copy compared file by file with the candidate it names: 47 of 60 files identical, including every script and data file; 58 of 58 offline fingerprints match. Three corrections asked for on the label (TC-01 to TC-03). |
 | `LONGER_FOLLOW_UPS.md` | Eleven checks that do not fit in ten minutes. Three of them wait for repairs on PR #40. |
 | `results/` | Where device results will go. Empty. |
 | `tools/`, `evidence/` | Two rehearsals on a computer pretending to be a phone, so that every button name and expected result in the script is one that was actually seen. Emulation only. |
 
-## What the test copy must have before the script can be run
+## What the test copy must have before the formal check is run
+
+Where it stands on 26 November: 1 done · 2 banner done, build label missing (TC-02), and the banner covers the
+reading line (TC-01) · 3 done · 4 source commit recorded, first copy so nothing earlier to keep.
 
 1. Its own secure address on a hostname different from the published site's, so that test notes and real notes can
    never share storage. (A home-network address will not do: the readers show nothing without a secure connection —
