@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "salok-mahalla9-editorial-ai-01-29-independent",
+  "reviewedAtUtc": "2026-11-26T17:28:28.684585+00:00",
+  "reviewer": {
+    "agent": "/root/salok_source_audit",
+    "kind": "AI_EDITORIAL_REVIEW",
+    "independentOfTeachingAuthor": true,
+    "qualifiedHumanReviews": 0,
+    "publicationApproval": false
+  },
+  "inputs": {
+    "teaching": {
+      "path": "/workspace/scratch/c4badbece609/salok-build/teaching-01-29.json",
+      "sha256": "21c0ac4687f2e9bfdc1e8e66ca500fe90e3ffc33b9dd735b981feeceae0e1521",
+      "ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "source": {
+      "path": "/workspace/scratch/c4badbece609/salok-build/source-selected.json",
+      "sha256": "e70448f2682b2f19132f15384a11bd51538a3e3d007ef98706a8ffac01ca179c",
+      "totalSelectedSourceOccurrences": 117,
+      "teachingSourceOccurrencesReviewed": 58
+    }
+  },
+  "outcome": "REVISIONS_RECOMMENDED_QUALIFIED_REVIEW_PENDING",
+  "actualScope": {
+    "entriesReadInFull": 29,
+    "lineMeaningPairsRead": 58,
+    "englishOnlyLineContextNotesRead": 58,
+    "bilingualSummaryPairsRead": 29,
+    "bilingualStudySectionsRead": 29,
+    "bilingualGlossPairsRead": 58,
+    "fieldsRead": [
+      "lines[].simpleEn",
+      "lines[].simplePa",
+      "lines[].interpretiveCaution",
+      "simple.en",
+      "simple.pa",
+      "study.focus",
+      "study.focusPa",
+      "study.closeReading",
+      "study.closeReadingPa",
+      "study.words[].gurmukhi",
+      "study.words[].workingGloss",
+      "study.words[].workingGlossPa",
+      "study.words[].status",
+      "study.interpretationCare",
+      "study.interpretationCarePa",
+      "study.reflection",
+      "study.reflectionPa",
+      "study.teachBack",
+      "study.teachBackPa",
+      "sources[]"
+    ],
+    "method": "Read each complete English and Punjabi entry against the corresponding two selected Gurmukhi lines; examined its neighboring Saloks for contextual claims. Opened cited original-text pages and Darpan commentary for the identified grammar and interpretation questions. Directly opened the final added SriGranth English-rendering URL for Salok 11. Assessed semantic correspondence, devotional meaning, attribution, boundaries between interpretation and application, and relevance of cautionary prose.",
+    "notPerformed": [
+      "No qualified Sikh scholar, Punjabi reader, historian or Santhiya teacher review.",
+      "No audio, pronunciation or physical-device review.",
+      "No claim that selected digital text is a facsimile or that its Unicode ancestry is independent.",
+      "No publication, source or theological approval.",
+      "No exhaustive comparison against every translation, commentary, manuscript or school.",
+      "No assertion that absence of a finding guarantees correctness."
+    ],
+    "sourceCollationReference": "source-audit-independent.json; earlier separate comparison covered all 117 source occurrences. This teaching review covers Saloks 1–29 only.",
+    "authorFileModified": false,
+    "sidecarExcluded": "The planned bilingual line-context amendment sidecar was not included in this input hash or review."
+  },
+  "sourcesInspected": [
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0",
+      "scope": "Original source and sequence for Saloks 1–9; separately collated exact extracted Unicode.",
+      "retrievalRef": "turn174152209view0"
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=0",
+      "scope": "Original source and sequence for Saloks 10–28 and first line of 29.",
+      "retrievalRef": "turn255973816view0"
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1428&g=1&h=0&k=0&p=0&r=0&t=0",
+      "scope": "Second line of Salok 29 and next boundary.",
+      "retrievalRef": "turn523190665view0"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/1426.html",
+      "scope": "Sahib Singh commentary; checked prohibitive grammar of Salok 5.",
+      "retrievalRef": "turn211598183view0"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/1427.html",
+      "scope": "Sahib Singh commentary; direct referent, vocabulary and interpretation checks including Saloks 11 and 17.",
+      "retrievalRef": "turn802274973view0"
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/1428.html",
+      "scope": "Adjacent commentary and continuity for Salok 29.",
+      "retrievalRef": "turn211598183view2"
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=1",
+      "scope": "Directly verified the separately cited English rendering relates Salok 11 return to the One.",
+      "retrievalRef": "turn993633732view0"
+    }
+  ],
+  "findings": [
+    {
+      "id": "ED01-BILINGUAL-LINE-CONTEXT",
+      "severity": "medium",
+      "category": "Punjabi parity",
+      "ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "fields": [
+        "lines[0].interpretiveCaution",
+        "lines[1].interpretiveCaution"
+      ],
+      "evidence": {
+        "lineContextsPresentEn": 58,
+        "matchingPaContextsPresent": 0
+      },
+      "problem": "Every line context note is English-only in the reviewed file. Several contain interpretation information rather than generic warning text, including Salok 5 grammar, Salok 11 referent choice and Salok 17 garment imagery. A Punjabi-only reader does not receive all the same information at line level.",
+      "recommendation": "Retain useful lexical and interpretive notes with paired Punjabi. Remove irrelevant warnings before translating them. If moving a note to Study, ensure both languages carry it there and that line readers can reach it. Apply and separately review the planned sidecar.",
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1428&g=1&h=0&k=0&p=0&r=0&t=0"
+      ],
+      "status": "OPEN_IN_REVIEWED_INPUT"
+    },
+    {
+      "id": "ED02-SALOK17-GARB",
+      "severity": "medium",
+      "category": "Interpretation and attributed commentary",
+      "ordinals": [
+        17
+      ],
+      "fields": [
+        "simple.en",
+        "simple.pa",
+        "study.focus",
+        "study.focusPa",
+        "study.closeReading",
+        "study.closeReadingPa",
+        "study.interpretationCare",
+        "study.interpretationCarePa",
+        "sources[1].scope"
+      ],
+      "evidence": {
+        "summaryEn": "The inner change gives the outward form its significance.",
+        "focusEn": "Read the two actions in order: relinquishing, then taking up the garb of detachment.",
+        "careEn": "Sahib Singh emphasizes the inward relinquishment as what makes the garb genuine."
+      },
+      "problem": "The draft preserves ਭੇਖ, which is good, but overcommits to two successive actions and a separate outward form. Its account of Sahib Singh is consequently imprecise. His explanation identifies relinquishing the whole range of Maya’s vices with adopting the true garb of detachment; it does not require a second physical change of costume. Lexical order alone does not establish chronological sequence.",
+      "recommendation": "Keep the garment image and explain the two joined expressions without imposing a temporal sequence. Attribute Sahib Singh’s reading as genuine relinquishment itself being the true garb of detachment. A literal outward-garb reading can be identified as another reading if appropriately sourced, rather than blended into the attribution. Update both languages, focus, summary, care and source scope together.",
+      "suggestedDirection": {
+        "en": "The Salok joins relinquishing worldly entanglement with the image of wearing detachment. Sahib Singh reads genuine inward relinquishment itself as the true garb; the image does not establish a required change of clothing.",
+        "pa": "ਸਲੋਕ ਬਿਖਿਆ ਤਿਆਗਣ ਨੂੰ ਵੈਰਾਗ ਦਾ ਭੇਖ ਧਾਰਨ ਕਰਨ ਦੇ ਚਿੱਤਰ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਸਾਹਿਬ ਸਿੰਘ ਅੰਦਰੋਂ ਮਾਇਆ ਦੇ ਵਿਕਾਰ ਤਿਆਗਣ ਨੂੰ ਹੀ ਵੈਰਾਗ ਦਾ ਸੱਚਾ ਭੇਖ ਸਮਝਾਉਂਦੇ ਹਨ।"
+      },
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.gurugranthdarpan.net/1427.html"
+      ],
+      "status": "OPEN_IN_REVIEWED_INPUT"
+    },
+    {
+      "id": "ED03-UNNECESSARY-CLINICAL-WARNINGS",
+      "severity": "medium",
+      "category": "Editorial focus and proportion",
+      "ordinals": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        26,
+        27
+      ],
+      "fields": [
+        "lines[].interpretiveCaution",
+        "study.interpretationCare",
+        "study.interpretationCarePa",
+        "study.closeReading",
+        "study.closeReadingPa"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "field": "lines[1].interpretiveCaution",
+          "excerpt": "not a breathing exercise"
+        },
+        {
+          "ordinal": 2,
+          "field": "lines[0].interpretiveCaution",
+          "excerpt": "not clinical depression or sadness"
+        },
+        {
+          "ordinal": 4,
+          "field": "study.interpretationCare",
+          "excerpt": "Do not apply the vocabulary of bewilderment to dementia, disability or psychiatric illness."
+        },
+        {
+          "ordinal": 7,
+          "field": "lines[1].interpretiveCaution",
+          "excerpt": "not a clinical explanation of anxiety or hardship"
+        },
+        {
+          "ordinal": 26,
+          "field": "study.interpretationCare",
+          "excerpt": "It does not diagnose addiction, blindness or a clinical condition."
+        },
+        {
+          "ordinal": 27,
+          "field": "study.interpretationCare",
+          "excerpt": "without judging health, productivity or disability"
+        }
+      ],
+      "problem": "These drafts introduce no breathwork, diagnosis or clinical comparison needing the repeated warnings. The warnings occupy scarce explanatory space, introduce ideas absent from the teaching, and make the reading experience defensive. This occurs in bilingual Study prose as well as in the English-only line contexts, so a line-note amendment alone does not resolve it.",
+      "recommendation": "Replace warnings with short, positive explanations of the actual image or vocabulary. For 1 explain fish-water dependence and love; for 2 explain ਉਦਾਸੁ as release from binding attraction; for 4 explain the contrast between bodily ageing and spiritual understanding; for 26 explain Maya’s intoxication and obscured spiritual attention; for 27 explain the rare opportunity of human life. Preserve a directly relevant distinction only once where it materially prevents misreading.",
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=0"
+      ],
+      "status": "OPEN_IN_REVIEWED_INPUT"
+    },
+    {
+      "id": "ED04-INTERNAL-POLICY-IN-TEACHING",
+      "severity": "low",
+      "category": "Reader-facing editorial content",
+      "ordinals": [
+        12,
+        14,
+        19,
+        20,
+        21
+      ],
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa",
+        "lines[].interpretiveCaution"
+      ],
+      "evidence": [
+        {
+          "ordinal": 12,
+          "field": "study.interpretationCare",
+          "excerpt": "The text does not tell the app to designate a living person as an infallible Sant."
+        },
+        {
+          "ordinal": 14,
+          "field": "lines[1].interpretiveCaution",
+          "excerpt": "not a psychological score the app can assign"
+        },
+        {
+          "ordinal": 19,
+          "field": "lines[1].interpretiveCaution",
+          "excerpt": "not a badge the app can award"
+        },
+        {
+          "ordinal": 20,
+          "field": "lines[1].interpretiveCaution",
+          "excerpt": "not an app guarantee"
+        },
+        {
+          "ordinal": 21,
+          "field": "study.interpretationCare",
+          "excerpt": "Keep accessible reading and listening options available."
+        }
+      ],
+      "problem": "These are instructions for product builders or editorial policy, not explanations of the selected verse. Related cautions about leaders and authority also recur in 6, 13, 22 and 29 even though no living leader is introduced.",
+      "recommendation": "Keep product and review policy in the editorial framework. Replace these reader-facing notes with the theological or lexical distinction actually at issue: 12 the saints proclaim Hari’s presence in every heart; 14 and 19 the stated qualities of liberation; 20 the spiritual context of fulfillment; 21 the pairing of utterance, listening and attention. Preserve the strong Divine language in 13 and 29 while removing repetitive hypothetical authority warnings.",
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1428&g=1&h=0&k=0&p=0&r=0&t=0"
+      ],
+      "status": "OPEN_IN_REVIEWED_INPUT"
+    },
+    {
+      "id": "ED05-SALOK09-SUKH-SCOPE",
+      "severity": "low",
+      "category": "Interpretive precision",
+      "ordinals": [
+        9
+      ],
+      "fields": [
+        "simple.en",
+        "simple.pa",
+        "study.focus",
+        "study.focusPa"
+      ],
+      "evidence": {
+        "simpleEn": "The giver of worldly comfort is also the source of spiritual liberation.",
+        "simplePa": "ਦੁਨੀਆਵੀ ਸੁਖਾਂ ਦਾ ਦਾਤਾ ਹੀ ਆਤਮਕ ਮੁਕਤੀ ਦਾ ਆਸਰਾ ਹੈ।"
+      },
+      "problem": "The first line says ਸਭ ਸੁਖ and does not restrict sukh to worldly comfort. The line meaning is broader and sound, but the summary creates an unnecessarily sharp worldly-versus-spiritual contrast.",
+      "recommendation": "Use “The giver of all comfort and peace is also the source of liberation” and a matching Punjabi statement with ਸਾਰੇ ਸੁਖ. Explain that the second line makes the movement toward ਗਤਿ explicit without exhausting the first line’s sense.",
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0"
+      ],
+      "status": "OPEN_IN_REVIEWED_INPUT"
+    },
+    {
+      "id": "ED06-SALOK05-SUMMARY-PRECISION",
+      "severity": "low",
+      "category": "Punjabi parity and interpretation/application boundary",
+      "ordinals": [
+        5
+      ],
+      "fields": [
+        "simple.en",
+        "simple.pa"
+      ],
+      "evidence": {
+        "simpleEn": "It calls for truthful attachment to what endures.",
+        "simplePa": "ਇਹ ਟਿਕਾਊ ਆਸਰੇ ਦੀ ਸੱਚੀ ਪਛਾਣ ਵੱਲ ਬੁਲਾਉਂਦਾ ਹੈ।"
+      },
+      "problem": "The English introduces “truthful attachment,” while the Punjabi speaks of recognizing a lasting refuge. The phrase is vague beside a Salok questioning possessiveness, and the lasting Divine companion is explicitly developed in the next Salok rather than named in this one.",
+      "recommendation": "Align both summaries around the limits of permanent possession and worldly companionship. Keep the fruitful connection to Salok 6 in the already explicit contextual Study paragraph. Suggested ending: “It asks us to recognize the limits of possessiveness and worldly companionship.” / “ਇਹ ਮਲਕੀਅਤ ਦੇ ਭਰਮ ਅਤੇ ਦੁਨੀਆਵੀ ਸਾਥ ਦੀ ਹੱਦ ਪਛਾਣਨ ਲਈ ਆਖਦਾ ਹੈ।”",
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.gurugranthdarpan.net/1426.html"
+      ],
+      "status": "OPEN_IN_REVIEWED_INPUT"
+    }
+  ],
+  "targetedChecks": [
+    {
+      "ordinal": 5,
+      "topic": "Prohibitive ਜਿਨਿ ... ਮਾਨਿ",
+      "result": "The draft follows the cited Sahib Singh prohibitive reading, preserves ਦਾਰਾ as wife, and distinguishes wider relationship application. No grammar reversal identified. Add Punjabi access to the grammar note."
+    },
+    {
+      "ordinal": 11,
+      "topic": "Elements and Creator-directed readings",
+      "result": "Final input explicitly follows Sahib Singh’s elements referent and identifies the distinct Creator-directed English rendering in paired Study notes. The newly cited t=1 source was directly opened and supports that distinction. No further referent correction requested; qualified interpretation review remains pending."
+    },
+    {
+      "ordinal": 17,
+      "topic": "ਭੇਖ",
+      "result": "Original image retained, but attribution and asserted sequence require ED02 correction."
+    },
+    {
+      "ordinal": 25,
+      "topic": "Bubble analogy",
+      "result": "Both arising and passing retained in both languages. No scientific or nihilist claim is made. This Salok does not itself explicitly state the no-difference proposition of 29; do not add that as literal translation."
+    },
+    {
+      "ordinal": 29,
+      "topic": "Devotee–Divine union and Ang boundary",
+      "result": "Both languages preserve the strong ਰੂਪ ਰਾਮ / no-separation meaning. Ang 1427–1428 continuity is correctly described. No replacement with mere ethical improvement; simplify repeated hypothetical leader warnings per ED04."
+    }
+  ],
+  "generalObservations": [
+    "The main English and Punjabi explanations cover the same substantive ideas throughout the 29 reviewed entries. This is not a professional Punjabi fluency approval.",
+    "Hari, Gobind, Ram, Bhagvan, Naam, Jam, liberation and Divine union generally remain visible; no widespread reduction of theology to mood management was found.",
+    "Practical reflection prompts are generally distinguishable from line meanings. Several close readings expressly identify their everyday examples as applications.",
+    "No invented historical incident, quotation from a Guru, empirical clinical effect, neuroscience result or cross-religious claim was identified in this reviewed slice.",
+    "Source statuses and working-gloss labels do not claim qualified review. The added Salok 11 source is appropriately scoped as a comparison, although fuller translator metadata could improve the permanent source registry.",
+    "Reader-facing prose frequently explains what the verse does not say. Replace repetitive hypothetical alternatives with affirmative close reading while retaining genuine interpretation distinctions."
+  ],
+  "summaryCounts": {
+    "findings": 6,
+    "high": 0,
+    "medium": 3,
+    "low": 3,
+    "qualifiedHumanReviews": 0
+  },
+  "requiredNextReview": "Review exact changed fields and the 58-note bilingual sidecar after amendments. Do not silently carry this report forward to a changed teaching hash.",
+  "suggestedPairedReplacements": [
+    {
+      "ordinal": 5,
+      "fields": {
+        "simple.en": "The Salok challenges the belief that relationships and possessions can be held forever. It asks us to recognize the limits of possessiveness and worldly companionship.",
+        "simple.pa": "ਸਲੋਕ ਇਸ ਭਰਮ ਨੂੰ ਚੁਣੌਤੀ ਦਿੰਦਾ ਹੈ ਕਿ ਰਿਸ਼ਤੇ ਅਤੇ ਜਾਇਦਾਦ ਸਦਾ ਆਪਣੇ ਕਬਜ਼ੇ ਵਿੱਚ ਰਹਿਣਗੇ। ਇਹ ਮਲਕੀਅਤ ਦੇ ਭਰਮ ਅਤੇ ਦੁਨੀਆਵੀ ਸਾਥ ਦੀ ਹੱਦ ਪਛਾਣਨ ਲਈ ਆਖਦਾ ਹੈ।"
+      },
+      "addresses": [
+        "ED06-SALOK05-SUMMARY-PRECISION"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "fields": {
+        "simple.en": "Ram, the giver of all comfort and peace, is also the source of liberation. Remembrance joins the two lines.",
+        "simple.pa": "ਸਾਰੇ ਸੁਖਾਂ ਦਾ ਦਾਤਾ ਰਾਮ ਹੀ ਆਤਮਕ ਮੁਕਤੀ ਦਾ ਆਸਰਾ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਨੂੰ ਸਿਮਰਨ ਜੋੜਦਾ ਹੈ।",
+        "study.focus": "The first line names the giver of all sukh; the second makes the path of remembrance toward gat explicit.",
+        "study.focusPa": "ਪਹਿਲੀ ਤੁਕ ਸਾਰੇ ਸੁਖਾਂ ਦੇ ਦਾਤੇ ਦੀ ਗੱਲ ਕਰਦੀ ਹੈ; ਦੂਜੀ ਸਿਮਰਨ ਰਾਹੀਂ ਗਤਿ ਮਿਲਣ ਦੀ ਦਿਸ਼ਾ ਸਪਸ਼ਟ ਕਰਦੀ ਹੈ।"
+      },
+      "addresses": [
+        "ED05-SALOK09-SUKH-SCOPE"
+      ]
+    }
+  ],
+  "studyFieldsToUnclutter": [
+    {
+      "ordinal": 2,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Replace emotional-numbness / physical-death-formula warnings with a short explanation connecting binding sense-attachment, ਉਦਾਸੁ and Hari’s remembrance."
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "study.closeReading",
+        "study.closeReadingPa",
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Remove the reverse-age/calculating-remaining-life aside and moral-failure warning. Keep the difference between time already passed and the present invitation to remember."
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "study.closeReading",
+        "study.closeReadingPa",
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Remove hypothetical condemnation-of-older-people and standalone-threat framing. Replace the clinical diagnostic disclaimer with the contrast between bodily ageing, spiritual understanding and the call to Bhagvan."
+    },
+    {
+      "ordinal": 6,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Replace hypothetical shaming and discouraging-help warning with the relation between Hari’s three descriptions and constant presence."
+    },
+    {
+      "ordinal": 7,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Replace poverty/illness inference warning with the actual distinction between receiving a gift and loving its Giver."
+    },
+    {
+      "ordinal": 9,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Replace illness/loss/difficult-emotion warning with an explanation that ਗਤਿ names spiritual liberation, extending the verse’s account of the Divine giver."
+    },
+    {
+      "ordinal": 12,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Remove the app-designation / infallible-Sant policy instruction. Explain that the saints proclaim the presence of Hari, and the mind is directed toward that same One."
+    },
+    {
+      "ordinal": 21,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Move accessible-options implementation instruction out of the teaching. Explain the joined tongue, ears and inward attention. Preserve accessibility in the interface itself."
+    },
+    {
+      "ordinal": 26,
+      "fields": [
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Replace addiction, blindness and clinical-condition diagnostic warning with the spiritual meaning of intoxication, inattention and Jam’s snares."
+    },
+    {
+      "ordinal": 27,
+      "fields": [
+        "study.closeReading",
+        "study.closeReadingPa",
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Remove the aside about an unspecified exact number of births / timetable and the health-productivity-disability warning. Center the body’s impermanence alongside the rare opportunity to take Divine refuge."
+    },
+    {
+      "ordinal": 29,
+      "fields": [
+        "study.closeReading",
+        "study.closeReadingPa",
+        "study.interpretationCare",
+        "study.interpretationCarePa"
+      ],
+      "action": "Remove repeated hypothetical leader-obedience / scrutiny warnings, while preserving the strong no-separation assertion and two-Ang continuity."
+    }
+  ],
+  "optionalBroaderStylePass": {
+    "scope": "Remaining repetitive hypothetical cautions; lower priority than the named corrections. Do not erase meaningful distinctions such as 11’s explicitly attributed referents, 18’s link to universal presence in 12, or 19’s theological scope of haumai.",
+    "ordinals": [
+      1,
+      8,
+      10,
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      28
+    ],
+    "instruction": "Prefer one affirmative vocabulary/context note to multiple warnings; retain actual source and application distinctions."
+  },
+  "suggestedStudyCareReplacements": [
+    {
+      "ordinal": 2,
+      "en": "ਉਦਾਸੁ describes loosening the mind’s binding attraction to sense pleasures. Hari’s remembrance gives the second line its direction toward freedom from Jam’s noose.",
+      "pa": "ਉਦਾਸੁ ਇੱਥੇ ਵਿਸ਼ਿਆਂ ਦੀ ਬੰਨ੍ਹਣ ਵਾਲੀ ਖਿੱਚ ਤੋਂ ਮਨ ਦੇ ਉਪਰਾਮ ਹੋਣ ਦਾ ਭਾਵ ਦਿੰਦਾ ਹੈ। ਦੂਜੀ ਤੁਕ ਵਿੱਚ ਹਰਿ ਦਾ ਭਜਨ ਜਮ ਦੀ ਫਾਹੀ ਤੋਂ ਮੁਕਤੀ ਦੀ ਦਿਸ਼ਾ ਹੈ।"
+    },
+    {
+      "ordinal": 3,
+      "en": "Youth has passed in the first line, while the call to remember Hari remains present in the second. The change of tense gives the Salok its urgency.",
+      "pa": "ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਜੁਆਨੀ ਲੰਘ ਚੁੱਕੀ ਹੈ; ਦੂਜੀ ਵਿੱਚ ਹਰਿ ਦਾ ਭਜਨ ਕਰਨ ਦਾ ਸੱਦਾ ਹੁਣ ਵੀ ਹੈ। ਲੰਘੇ ਸਮੇਂ ਅਤੇ ਹੁਣ ਦੇ ਸੱਦੇ ਦਾ ਜੋੜ ਸਲੋਕ ਦੀ ਤਾਕੀਦ ਖੋਲ੍ਹਦਾ ਹੈ।"
+    },
+    {
+      "ordinal": 4,
+      "en": "ਸੂਝੈ concerns spiritual understanding in this context. Bodily ageing has occurred, yet the call to recognize mortality and remember Bhagvan remains unanswered.",
+      "pa": "ਸੂਝੈ ਇਸ ਪ੍ਰਸੰਗ ਵਿੱਚ ਆਤਮਕ ਸਮਝ ਵੱਲ ਸੰਕੇਤ ਕਰਦਾ ਹੈ। ਸਰੀਰ ਦੀ ਉਮਰ ਵਧ ਗਈ ਹੈ, ਪਰ ਮੌਤ ਦੀ ਹੱਦ ਪਛਾਣ ਕੇ ਭਗਵਾਨ ਨੂੰ ਯਾਦ ਕਰਨ ਦਾ ਸੱਦਾ ਅਜੇ ਅਣਸੁਣਿਆ ਹੈ।"
+    },
+    {
+      "ordinal": 6,
+      "en": "The three descriptions of Hari—uplifting, removing fear and supporting the unsupported—prepare the assurance that this Divine presence is always with the listener.",
+      "pa": "ਹਰਿ ਦੇ ਤਿੰਨ ਗੁਣ—ਡਿੱਗਿਆਂ ਨੂੰ ਉਠਾਉਣਾ, ਡਰ ਦੂਰ ਕਰਨਾ ਅਤੇ ਬੇਆਸਰਿਆਂ ਦਾ ਆਸਰਾ ਹੋਣਾ—ਉਸ ਪ੍ਰਭੂ ਦੇ ਸਦਾ ਨਾਲ ਵੱਸਣ ਦੀ ਗੱਲ ਵੱਲ ਲੈ ਜਾਂਦੇ ਹਨ।"
+    },
+    {
+      "ordinal": 7,
+      "en": "ਨੇਹੁ names love. The neglected response is a relationship with the Giver, beyond awareness that a gift has been received.",
+      "pa": "ਨੇਹੁ ਦਾ ਭਾਵ ਪਿਆਰ ਹੈ। ਘਾਟ ਦਾਤ ਮਿਲਣ ਦੀ ਜਾਣਕਾਰੀ ਦੀ ਨਹੀਂ, ਦਾਤੇ ਨਾਲ ਪਿਆਰ ਦਾ ਸੰਬੰਧ ਜੋੜਨ ਦੀ ਹੈ।"
+    },
+    {
+      "ordinal": 9,
+      "en": "ਗਤਿ names spiritual liberation or fulfillment. The second line connects this to remembrance of the same Ram named as the giver of all sukh.",
+      "pa": "ਗਤਿ ਆਤਮਕ ਮੁਕਤੀ ਜਾਂ ਉੱਚੀ ਆਤਮਕ ਅਵਸਥਾ ਦਾ ਭਾਵ ਦਿੰਦੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਇਸ ਨੂੰ ਉਸੇ ਰਾਮ ਦੇ ਸਿਮਰਨ ਨਾਲ ਜੋੜਦੀ ਹੈ ਜੋ ਸਾਰੇ ਸੁਖਾਂ ਦਾ ਦਾਤਾ ਹੈ।"
+    },
+    {
+      "ordinal": 12,
+      "en": "The saints proclaim Hari’s presence in every heart. The second line directs the mind toward that same One, joining universal presence and personal remembrance.",
+      "pa": "ਸੰਤ ਹਰ ਹਿਰਦੇ ਵਿੱਚ ਹਰਿ ਦੀ ਹਾਜ਼ਰੀ ਦੀ ਪੁਕਾਰ ਕਰਦੇ ਹਨ। ਦੂਜੀ ਤੁਕ ਮਨ ਨੂੰ ਉਸੇ ਪ੍ਰਭੂ ਦਾ ਭਜਨ ਕਰਨ ਵੱਲ ਮੋੜਦੀ ਹੈ; ਹਰ ਥਾਂ ਹਾਜ਼ਰੀ ਅਤੇ ਆਪਣੇ ਸਿਮਰਨ ਦੀ ਗੱਲ ਇਕੱਠੀ ਹੈ।"
+    },
+    {
+      "ordinal": 21,
+      "en": "The tongue praises, the ears listen, and the mind is addressed. Keeping these together shows remembrance as an attentive relationship with Hari.",
+      "pa": "ਜੀਭ ਗੁਣ ਗਾਉਂਦੀ ਹੈ, ਕੰਨ ਸੁਣਦੇ ਹਨ ਅਤੇ ਮਨ ਨੂੰ ਸੰਬੋਧਨ ਕੀਤਾ ਗਿਆ ਹੈ। ਤਿੰਨਾਂ ਨੂੰ ਇਕੱਠਾ ਪੜ੍ਹਿਆਂ ਹਰਿ ਨਾਲ ਧਿਆਨ ਜੋੜ ਕੇ ਭਜਨ ਕਰਨ ਦੀ ਗੱਲ ਖੁੱਲ੍ਹਦੀ ਹੈ।"
+    },
+    {
+      "ordinal": 26,
+      "en": "Maya’s intoxication describes attention so absorbed that spiritual understanding is obscured. Jam’s snares express the bondage from which the verse directs the mind toward Hari’s remembrance.",
+      "pa": "ਮਾਇਆ ਦਾ ਨਸ਼ਾ ਅਜਿਹੀ ਖਿੱਚ ਦਾ ਚਿੱਤਰ ਹੈ ਜਿਸ ਵਿੱਚ ਆਤਮਕ ਸਮਝ ਓਹਲੀ ਹੋ ਜਾਂਦੀ ਹੈ। ਜਮ ਦੇ ਫਾਹੇ ਬੰਧਨ ਦਾ ਭਾਵ ਦਿੰਦੇ ਹਨ; ਸਲੋਕ ਇਸ ਤੋਂ ਮੁਕਤੀ ਲਈ ਮਨ ਨੂੰ ਹਰਿ ਦੇ ਭਜਨ ਵੱਲ ਮੋੜਦਾ ਹੈ।"
+    },
+    {
+      "ordinal": 27,
+      "en": "ਦੁਰਲਭ means difficult to obtain. The verse values human embodiment as the present opportunity to seek lasting peace in Ram’s refuge.",
+      "pa": "ਦੁਰਲਭ ਦਾ ਭਾਵ ਔਖਾ ਮਿਲਣ ਵਾਲਾ ਹੈ। ਸਲੋਕ ਮਨੁੱਖਾ ਦੇਹ ਨੂੰ ਰਾਮ ਦੀ ਸਰਨ ਵਿੱਚ ਟਿਕ ਕੇ ਸਦਾ ਦਾ ਸੁਖ ਲੱਭਣ ਦਾ ਹੁਣ ਮਿਲਿਆ ਮੌਕਾ ਦੱਸਦਾ ਹੈ।"
+    },
+    {
+      "ordinal": 29,
+      "en": "ਰੂਪ ਰਾਮ and ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ belong together: the second line affirms the unity introduced in the first. The change of Ang leaves the Salok uninterrupted.",
+      "pa": "ਰੂਪ ਰਾਮ ਅਤੇ ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਇਕੱਠੇ ਪੜ੍ਹਣੇ ਹਨ: ਦੂਜੀ ਤੁਕ ਪਹਿਲੀ ਵਿੱਚ ਆਈ ਇਕਤਾ ਦੀ ਗੱਲ ਪੱਕੀ ਕਰਦੀ ਹੈ। ਅੰਗ ਬਦਲਣ ਨਾਲ ਸਲੋਕ ਨਹੀਂ ਟੁੱਟਦਾ।"
+    }
+  ]
+}

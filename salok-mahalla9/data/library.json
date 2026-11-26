@@ -1,0 +1,23 @@
+{
+  "schema": "GLP-NITNEM-LIBRARY-V2",
+  "sourceCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+  "sourceFamilySite": "gurbani-learning-library",
+  "releaseStatus": "DEVELOPMENT_REVIEW",
+  "canonicalJapji": "../full-japji.html",
+  "audioSynced": false,
+  "entries": {
+    "salok-mahalla9": {
+      "path": "data/salok-mahalla9.json",
+      "sha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
+      "units": 57,
+      "lines": 114,
+      "sourceOccurrences": 117,
+      "title": "Salok Mahalla 9",
+      "titleGurmukhi": "ਸਲੋਕ ਮਹਲਾ ੯",
+      "editionId": "salok-mahalla9-opengranth-34d2a7c-20261126",
+      "daypart": "Additional Bani"
+    }
+  },
+  "releaseId": "salok-mahalla9-complete-draft-20261126",
+  "qualifiedHumanReviewed": false
+}

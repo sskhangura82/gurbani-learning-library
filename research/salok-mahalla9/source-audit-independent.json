@@ -1,0 +1,1681 @@
+{
+  "schemaVersion": 1,
+  "reviewKind": "Independent AI-assisted digital source comparison",
+  "reviewer": "ChatGPT source-audit agent; not a qualified human reviewer",
+  "reviewedAtUTC": "2026-11-26T17:01:10.856Z",
+  "selectedSource": {
+    "file": "source-selected.json",
+    "fileSha256": "e70448f2682b2f19132f15384a11bd51538a3e3d007ef98706a8ffac01ca179c",
+    "upstreamCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "upstreamFiles": [
+      "corpus/ang-1426.md",
+      "corpus/ang-1427.md",
+      "corpus/ang-1428.md",
+      "corpus/ang-1429.md"
+    ],
+    "upstreamRawByteVerificationPerformedByThisReview": false,
+    "providedWitnessMetadata": [
+      {
+        "ang": 1426,
+        "bytes": 9295,
+        "sha256": "ab59d45cdc229f3660618c312b9c284d698fad4204b017c03ce2e1613a1ebbf9",
+        "gitBlob": "4727b988f326e4872093d0539ef077d7af2075bd"
+      },
+      {
+        "ang": 1427,
+        "bytes": 10533,
+        "sha256": "a69d55ea200c816e4004d55f0c64f630ce6d7076bbae2e8815322f7ee1a7f364",
+        "gitBlob": "8b111a1d1bbe269671d52832678e5ad2d11dea71"
+      },
+      {
+        "ang": 1428,
+        "bytes": 10287,
+        "sha256": "4a83880fde56e290bb5a61ede6d13b78984c0ac88d5d714b32a1d83ae04b3158",
+        "gitBlob": "9f394291b1f3fee875a70dcab51cbad169df980a"
+      },
+      {
+        "ang": 1429,
+        "bytes": 9145,
+        "sha256": "c8622d67a77a9a9024a9fa614efb66b9c95d4c8fb62e21d8f90434dbea31cbce",
+        "gitBlob": "d4ac162bb9e5a6098ba372a79d3b6e24ad14be97"
+      }
+    ]
+  },
+  "method": [
+    "Independently opened SriGranth Gurmukhi-only pages for Ang1426,1427,1428,1429 through web retrieval.",
+    "Parsed every displayed L-numbered text occurrence from complete retrieved page excerpts.",
+    "Removed only retrieval link wrappers (e.g. bracketed link-ID plus word). Did not normalize Unicode, whitespace, matras, digit forms or punctuation.",
+    "Compared selected rows by Ang and contiguous source-row order against independently retrieved text using exact string equality.",
+    "Compared adjacent preceding/following source occurrences separately; neither is included in the117-row collection.",
+    "Checked contiguous terminal numbers1–57, heading placement and Salok29 across the Ang boundary."
+  ],
+  "actualScope": {
+    "selectedOccurrences": 117,
+    "verses": 114,
+    "headingsAndInvocation": 3,
+    "numberedSaloks": 57,
+    "angs": [
+      1426,
+      1427,
+      1428,
+      1429
+    ],
+    "perAng": {
+      "1426": 20,
+      "1427": 39,
+      "1428": 37,
+      "1429": 21
+    },
+    "secondaryCollationScope": "all117 source occurrences as exposed by web textual extraction; not page-image or raw-HTML byte comparison"
+  },
+  "result": {
+    "matchedOccurrences": 117,
+    "mismatchedOccurrences": 0,
+    "allSelectedOccurrencesMatched": true,
+    "boundariesMatched": true,
+    "qualifiedHumanReview": false,
+    "publicationApproval": false,
+    "sourceSequenceLfSha256": "16649b80d412b71d628eab27e372208bb74a5c9289702a0f581967ce91604e28",
+    "secondarySequenceLfSha256": "16649b80d412b71d628eab27e372208bb74a5c9289702a0f581967ce91604e28",
+    "sequenceHashDefinition": "UTF-8 occurrence texts joined with U+000A; no trailing U+000A."
+  },
+  "secondarySources": [
+    {
+      "ang": 1426,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1426&g=1&h=0&k=0&p=0&r=0&t=0",
+      "retrievalRef": "turn174152209view0",
+      "selectedExtractionLines": [
+        26,
+        45
+      ],
+      "extraction": "Retrieved textual page lines; removed web tool link annotation wrappers only."
+    },
+    {
+      "ang": 1427,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1427&g=1&h=0&k=0&p=0&r=0&t=0",
+      "retrievalRef": "turn255973816view0",
+      "selectedExtractionLines": [
+        11,
+        49
+      ],
+      "extraction": "Retrieved textual page lines; removed web tool link annotation wrappers only."
+    },
+    {
+      "ang": 1428,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1428&g=1&h=0&k=0&p=0&r=0&t=0",
+      "retrievalRef": "turn523190665view0",
+      "selectedExtractionLines": [
+        11,
+        47
+      ],
+      "extraction": "Retrieved textual page lines; removed web tool link annotation wrappers only."
+    },
+    {
+      "ang": 1429,
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=0",
+      "retrievalRef": "turn878775809view0",
+      "selectedExtractionLines": [
+        11,
+        31
+      ],
+      "extraction": "Retrieved textual page lines; removed web tool link annotation wrappers only."
+    }
+  ],
+  "boundaries": {
+    "preceding": {
+      "ang": 1426,
+      "sourceRow": 15,
+      "sourceAngLine": 8,
+      "text": "ਜਿਸੁ ਪਾਸਿ ਬਹਿਠਿਆ ਸੋਹੀਐ ਸਭਨਾਂ ਦਾ ਵੇਸਾਹੁ ॥੨੨॥",
+      "secondaryExtractionLine": 25,
+      "secondaryText": "ਜਿਸੁ ਪਾਸਿ ਬਹਿਠਿਆ ਸੋਹੀਐ ਸਭਨਾਂ ਦਾ ਵੇਸਾਹੁ ॥੨੨॥",
+      "exactExtractedUnicodeMatch": true,
+      "excludedFromCollection": true
+    },
+    "following": {
+      "ang": 1429,
+      "sourceRow": 22,
+      "sourceAngLine": 11,
+      "text": "ਮੁੰਦਾਵਣੀ ਮਹਲਾ ੫ ॥",
+      "secondaryExtractionLine": 32,
+      "secondaryText": "ਮੁੰਦਾਵਣੀ ਮਹਲਾ ੫ ॥",
+      "exactExtractedUnicodeMatch": true,
+      "excludedFromCollection": true
+    }
+  },
+  "checks": [
+    {
+      "occurrence": 1,
+      "ang": 1426,
+      "sourceRow": 16,
+      "secondaryExtractionLine": 26,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "secondaryText": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥"
+    },
+    {
+      "occurrence": 2,
+      "ang": 1426,
+      "sourceRow": 17,
+      "secondaryExtractionLine": 27,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸਲੋਕ ਮਹਲਾ ੯ ॥",
+      "secondaryText": "ਸਲੋਕ ਮਹਲਾ ੯ ॥"
+    },
+    {
+      "occurrence": 3,
+      "ang": 1426,
+      "sourceRow": 18,
+      "secondaryExtractionLine": 28,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਗੁਨ ਗੋਬਿੰਦ ਗਾਇਓ ਨਹੀ ਜਨਮੁ ਅਕਾਰਥ ਕੀਨੁ ॥",
+      "secondaryText": "ਗੁਨ ਗੋਬਿੰਦ ਗਾਇਓ ਨਹੀ ਜਨਮੁ ਅਕਾਰਥ ਕੀਨੁ ॥"
+    },
+    {
+      "occurrence": 4,
+      "ang": 1426,
+      "sourceRow": 19,
+      "secondaryExtractionLine": 29,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਜਿਹ ਬਿਧਿ ਜਲ ਕਉ ਮੀਨੁ ॥੧॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਜਿਹ ਬਿਧਿ ਜਲ ਕਉ ਮੀਨੁ ॥੧॥"
+    },
+    {
+      "occurrence": 5,
+      "ang": 1426,
+      "sourceRow": 20,
+      "secondaryExtractionLine": 30,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਬਿਖਿਅਨ ਸਿਉ ਕਾਹੇ ਰਚਿਓ ਨਿਮਖ ਨ ਹੋਹਿ ਉਦਾਸੁ ॥",
+      "secondaryText": "ਬਿਖਿਅਨ ਸਿਉ ਕਾਹੇ ਰਚਿਓ ਨਿਮਖ ਨ ਹੋਹਿ ਉਦਾਸੁ ॥"
+    },
+    {
+      "occurrence": 6,
+      "ang": 1426,
+      "sourceRow": 21,
+      "secondaryExtractionLine": 31,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਭਜੁ ਹਰਿ ਮਨਾ ਪਰੈ ਨ ਜਮ ਕੀ ਫਾਸ ॥੨॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਭਜੁ ਹਰਿ ਮਨਾ ਪਰੈ ਨ ਜਮ ਕੀ ਫਾਸ ॥੨॥"
+    },
+    {
+      "occurrence": 7,
+      "ang": 1426,
+      "sourceRow": 22,
+      "secondaryExtractionLine": 32,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਤਰਨਾਪੋ ਇਉ ਹੀ ਗਇਓ ਲੀਓ ਜਰਾ ਤਨੁ ਜੀਤਿ ॥",
+      "secondaryText": "ਤਰਨਾਪੋ ਇਉ ਹੀ ਗਇਓ ਲੀਓ ਜਰਾ ਤਨੁ ਜੀਤਿ ॥"
+    },
+    {
+      "occurrence": 8,
+      "ang": 1426,
+      "sourceRow": 23,
+      "secondaryExtractionLine": 33,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਭਜੁ ਹਰਿ ਮਨਾ ਅਉਧ ਜਾਤੁ ਹੈ ਬੀਤਿ ॥੩॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਭਜੁ ਹਰਿ ਮਨਾ ਅਉਧ ਜਾਤੁ ਹੈ ਬੀਤਿ ॥੩॥"
+    },
+    {
+      "occurrence": 9,
+      "ang": 1426,
+      "sourceRow": 24,
+      "secondaryExtractionLine": 34,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਬਿਰਧਿ ਭਇਓ ਸੂਝੈ ਨਹੀ ਕਾਲੁ ਪਹੂਚਿਓ ਆਨਿ ॥",
+      "secondaryText": "ਬਿਰਧਿ ਭਇਓ ਸੂਝੈ ਨਹੀ ਕਾਲੁ ਪਹੂਚਿਓ ਆਨਿ ॥"
+    },
+    {
+      "occurrence": 10,
+      "ang": 1426,
+      "sourceRow": 25,
+      "secondaryExtractionLine": 35,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਨਰ ਬਾਵਰੇ ਕਿਉ ਨ ਭਜੈ ਭਗਵਾਨੁ ॥੪॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਨਰ ਬਾਵਰੇ ਕਿਉ ਨ ਭਜੈ ਭਗਵਾਨੁ ॥੪॥"
+    },
+    {
+      "occurrence": 11,
+      "ang": 1426,
+      "sourceRow": 26,
+      "secondaryExtractionLine": 36,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਧਨੁ ਦਾਰਾ ਸੰਪਤਿ ਸਗਲ ਜਿਨਿ ਅਪੁਨੀ ਕਰਿ ਮਾਨਿ ॥",
+      "secondaryText": "ਧਨੁ ਦਾਰਾ ਸੰਪਤਿ ਸਗਲ ਜਿਨਿ ਅਪੁਨੀ ਕਰਿ ਮਾਨਿ ॥"
+    },
+    {
+      "occurrence": 12,
+      "ang": 1426,
+      "sourceRow": 27,
+      "secondaryExtractionLine": 37,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਇਨ ਮੈ ਕਛੁ ਸੰਗੀ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਜਾਨਿ ॥੫॥",
+      "secondaryText": "ਇਨ ਮੈ ਕਛੁ ਸੰਗੀ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਜਾਨਿ ॥੫॥"
+    },
+    {
+      "occurrence": 13,
+      "ang": 1426,
+      "sourceRow": 28,
+      "secondaryExtractionLine": 38,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਪਤਿਤ ਉਧਾਰਨ ਭੈ ਹਰਨ ਹਰਿ ਅਨਾਥ ਕੇ ਨਾਥ ॥",
+      "secondaryText": "ਪਤਿਤ ਉਧਾਰਨ ਭੈ ਹਰਨ ਹਰਿ ਅਨਾਥ ਕੇ ਨਾਥ ॥"
+    },
+    {
+      "occurrence": 14,
+      "ang": 1426,
+      "sourceRow": 29,
+      "secondaryExtractionLine": 39,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਤਿਹ ਜਾਨੀਐ ਸਦਾ ਬਸਤੁ ਤੁਮ ਸਾਥਿ ॥੬॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਤਿਹ ਜਾਨੀਐ ਸਦਾ ਬਸਤੁ ਤੁਮ ਸਾਥਿ ॥੬॥"
+    },
+    {
+      "occurrence": 15,
+      "ang": 1426,
+      "sourceRow": 30,
+      "secondaryExtractionLine": 40,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਤਨੁ ਧਨੁ ਜਿਹ ਤੋ ਕਉ ਦੀਓ ਤਾਂ ਸਿਉ ਨੇਹੁ ਨ ਕੀਨ ॥",
+      "secondaryText": "ਤਨੁ ਧਨੁ ਜਿਹ ਤੋ ਕਉ ਦੀਓ ਤਾਂ ਸਿਉ ਨੇਹੁ ਨ ਕੀਨ ॥"
+    },
+    {
+      "occurrence": 16,
+      "ang": 1426,
+      "sourceRow": 31,
+      "secondaryExtractionLine": 41,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਨਰ ਬਾਵਰੇ ਅਬ ਕਿਉ ਡੋਲਤ ਦੀਨ ॥੭॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਨਰ ਬਾਵਰੇ ਅਬ ਕਿਉ ਡੋਲਤ ਦੀਨ ॥੭॥"
+    },
+    {
+      "occurrence": 17,
+      "ang": 1426,
+      "sourceRow": 32,
+      "secondaryExtractionLine": 42,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਤਨੁ ਧਨੁ ਸੰਪੈ ਸੁਖ ਦੀਓ ਅਰੁ ਜਿਹ ਨੀਕੇ ਧਾਮ ॥",
+      "secondaryText": "ਤਨੁ ਧਨੁ ਸੰਪੈ ਸੁਖ ਦੀਓ ਅਰੁ ਜਿਹ ਨੀਕੇ ਧਾਮ ॥"
+    },
+    {
+      "occurrence": 18,
+      "ang": 1426,
+      "sourceRow": 33,
+      "secondaryExtractionLine": 43,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਸਿਮਰਤ ਕਾਹਿ ਨ ਰਾਮੁ ॥੮॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਸਿਮਰਤ ਕਾਹਿ ਨ ਰਾਮੁ ॥੮॥"
+    },
+    {
+      "occurrence": 19,
+      "ang": 1426,
+      "sourceRow": 34,
+      "secondaryExtractionLine": 44,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸਭ ਸੁਖ ਦਾਤਾ ਰਾਮੁ ਹੈ ਦੂਸਰ ਨਾਹਿਨ ਕੋਇ ॥",
+      "secondaryText": "ਸਭ ਸੁਖ ਦਾਤਾ ਰਾਮੁ ਹੈ ਦੂਸਰ ਨਾਹਿਨ ਕੋਇ ॥"
+    },
+    {
+      "occurrence": 20,
+      "ang": 1426,
+      "sourceRow": 35,
+      "secondaryExtractionLine": 45,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਤਿਹ ਸਿਮਰਤ ਗਤਿ ਹੋਇ ॥੯॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਤਿਹ ਸਿਮਰਤ ਗਤਿ ਹੋਇ ॥੯॥"
+    },
+    {
+      "occurrence": 21,
+      "ang": 1427,
+      "sourceRow": 1,
+      "secondaryExtractionLine": 11,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹ ਸਿਮਰਤ ਗਤਿ ਪਾਈਐ ਤਿਹ ਭਜੁ ਰੇ ਤੈ ਮੀਤ ॥",
+      "secondaryText": "ਜਿਹ ਸਿਮਰਤ ਗਤਿ ਪਾਈਐ ਤਿਹ ਭਜੁ ਰੇ ਤੈ ਮੀਤ ॥"
+    },
+    {
+      "occurrence": 22,
+      "ang": 1427,
+      "sourceRow": 2,
+      "secondaryExtractionLine": 12,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਅਉਧ ਘਟਤ ਹੈ ਨੀਤ ॥੧੦॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਅਉਧ ਘਟਤ ਹੈ ਨੀਤ ॥੧੦॥"
+    },
+    {
+      "occurrence": 23,
+      "ang": 1427,
+      "sourceRow": 3,
+      "secondaryExtractionLine": 13,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਪਾਂਚ ਤਤ ਕੋ ਤਨੁ ਰਚਿਓ ਜਾਨਹੁ ਚਤੁਰ ਸੁਜਾਨ ॥",
+      "secondaryText": "ਪਾਂਚ ਤਤ ਕੋ ਤਨੁ ਰਚਿਓ ਜਾਨਹੁ ਚਤੁਰ ਸੁਜਾਨ ॥"
+    },
+    {
+      "occurrence": 24,
+      "ang": 1427,
+      "sourceRow": 4,
+      "secondaryExtractionLine": 14,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹ ਤੇ ਉਪਜਿਓ ਨਾਨਕਾ ਲੀਨ ਤਾਹਿ ਮੈ ਮਾਨੁ ॥੧੧॥",
+      "secondaryText": "ਜਿਹ ਤੇ ਉਪਜਿਓ ਨਾਨਕਾ ਲੀਨ ਤਾਹਿ ਮੈ ਮਾਨੁ ॥੧੧॥"
+    },
+    {
+      "occurrence": 25,
+      "ang": 1427,
+      "sourceRow": 5,
+      "secondaryExtractionLine": 15,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਘਟ ਘਟ ਮੈ ਹਰਿ ਜੂ ਬਸੈ ਸੰਤਨ ਕਹਿਓ ਪੁਕਾਰਿ ॥",
+      "secondaryText": "ਘਟ ਘਟ ਮੈ ਹਰਿ ਜੂ ਬਸੈ ਸੰਤਨ ਕਹਿਓ ਪੁਕਾਰਿ ॥"
+    },
+    {
+      "occurrence": 26,
+      "ang": 1427,
+      "sourceRow": 6,
+      "secondaryExtractionLine": 16,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਤਿਹ ਭਜੁ ਮਨਾ ਭਉ ਨਿਧਿ ਉਤਰਹਿ ਪਾਰਿ ॥੧੨॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਤਿਹ ਭਜੁ ਮਨਾ ਭਉ ਨਿਧਿ ਉਤਰਹਿ ਪਾਰਿ ॥੧੨॥"
+    },
+    {
+      "occurrence": 27,
+      "ang": 1427,
+      "sourceRow": 7,
+      "secondaryExtractionLine": 17,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸੁਖੁ ਦੁਖੁ ਜਿਹ ਪਰਸੈ ਨਹੀ ਲੋਭੁ ਮੋਹੁ ਅਭਿਮਾਨੁ ॥",
+      "secondaryText": "ਸੁਖੁ ਦੁਖੁ ਜਿਹ ਪਰਸੈ ਨਹੀ ਲੋਭੁ ਮੋਹੁ ਅਭਿਮਾਨੁ ॥"
+    },
+    {
+      "occurrence": 28,
+      "ang": 1427,
+      "sourceRow": 8,
+      "secondaryExtractionLine": 18,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਸੋ ਮੂਰਤਿ ਭਗਵਾਨ ॥੧੩॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਸੋ ਮੂਰਤਿ ਭਗਵਾਨ ॥੧੩॥"
+    },
+    {
+      "occurrence": 29,
+      "ang": 1427,
+      "sourceRow": 9,
+      "secondaryExtractionLine": 19,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਉਸਤਤਿ ਨਿੰਦਿਆ ਨਾਹਿ ਜਿਹਿ ਕੰਚਨ ਲੋਹ ਸਮਾਨਿ ॥",
+      "secondaryText": "ਉਸਤਤਿ ਨਿੰਦਿਆ ਨਾਹਿ ਜਿਹਿ ਕੰਚਨ ਲੋਹ ਸਮਾਨਿ ॥"
+    },
+    {
+      "occurrence": 30,
+      "ang": 1427,
+      "sourceRow": 10,
+      "secondaryExtractionLine": 20,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੪॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੪॥"
+    },
+    {
+      "occurrence": 31,
+      "ang": 1427,
+      "sourceRow": 11,
+      "secondaryExtractionLine": 21,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਹਰਖੁ ਸੋਗੁ ਜਾ ਕੈ ਨਹੀ ਬੈਰੀ ਮੀਤ ਸਮਾਨਿ ॥",
+      "secondaryText": "ਹਰਖੁ ਸੋਗੁ ਜਾ ਕੈ ਨਹੀ ਬੈਰੀ ਮੀਤ ਸਮਾਨਿ ॥"
+    },
+    {
+      "occurrence": 32,
+      "ang": 1427,
+      "sourceRow": 12,
+      "secondaryExtractionLine": 22,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੫॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੫॥"
+    },
+    {
+      "occurrence": 33,
+      "ang": 1427,
+      "sourceRow": 13,
+      "secondaryExtractionLine": 23,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ ॥",
+      "secondaryText": "ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ ॥"
+    },
+    {
+      "occurrence": 34,
+      "ang": 1427,
+      "sourceRow": 14,
+      "secondaryExtractionLine": 24,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਗਿਆਨੀ ਤਾਹਿ ਬਖਾਨਿ ॥੧੬॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਗਿਆਨੀ ਤਾਹਿ ਬਖਾਨਿ ॥੧੬॥"
+    },
+    {
+      "occurrence": 35,
+      "ang": 1427,
+      "sourceRow": 15,
+      "secondaryExtractionLine": 25,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹਿ ਬਿਖਿਆ ਸਗਲੀ ਤਜੀ ਲੀਓ ਭੇਖ ਬੈਰਾਗ ॥",
+      "secondaryText": "ਜਿਹਿ ਬਿਖਿਆ ਸਗਲੀ ਤਜੀ ਲੀਓ ਭੇਖ ਬੈਰਾਗ ॥"
+    },
+    {
+      "occurrence": 36,
+      "ang": 1427,
+      "sourceRow": 16,
+      "secondaryExtractionLine": 26,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਤਿਹ ਨਰ ਮਾਥੈ ਭਾਗੁ ॥੧੭॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਤਿਹ ਨਰ ਮਾਥੈ ਭਾਗੁ ॥੧੭॥"
+    },
+    {
+      "occurrence": 37,
+      "ang": 1427,
+      "sourceRow": 17,
+      "secondaryExtractionLine": 27,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹਿ ਮਾਇਆ ਮਮਤਾ ਤਜੀ ਸਭ ਤੇ ਭਇਓ ਉਦਾਸੁ ॥",
+      "secondaryText": "ਜਿਹਿ ਮਾਇਆ ਮਮਤਾ ਤਜੀ ਸਭ ਤੇ ਭਇਓ ਉਦਾਸੁ ॥"
+    },
+    {
+      "occurrence": 38,
+      "ang": 1427,
+      "sourceRow": 18,
+      "secondaryExtractionLine": 28,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਤਿਹ ਘਟਿ ਬ੍ਰਹਮ ਨਿਵਾਸੁ ॥੧੮॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਤਿਹ ਘਟਿ ਬ੍ਰਹਮ ਨਿਵਾਸੁ ॥੧੮॥"
+    },
+    {
+      "occurrence": 39,
+      "ang": 1427,
+      "sourceRow": 19,
+      "secondaryExtractionLine": 29,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+      "secondaryText": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥"
+    },
+    {
+      "occurrence": 40,
+      "ang": 1427,
+      "sourceRow": 20,
+      "secondaryExtractionLine": 30,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥"
+    },
+    {
+      "occurrence": 41,
+      "ang": 1427,
+      "sourceRow": 21,
+      "secondaryExtractionLine": 31,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਭੈ ਨਾਸਨ ਦੁਰਮਤਿ ਹਰਨ ਕਲਿ ਮੈ ਹਰਿ ਕੋ ਨਾਮੁ ॥",
+      "secondaryText": "ਭੈ ਨਾਸਨ ਦੁਰਮਤਿ ਹਰਨ ਕਲਿ ਮੈ ਹਰਿ ਕੋ ਨਾਮੁ ॥"
+    },
+    {
+      "occurrence": 42,
+      "ang": 1427,
+      "sourceRow": 22,
+      "secondaryExtractionLine": 32,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਿਸਿ ਦਿਨੁ ਜੋ ਨਾਨਕ ਭਜੈ ਸਫਲ ਹੋਹਿ ਤਿਹ ਕਾਮ ॥੨੦॥",
+      "secondaryText": "ਨਿਸਿ ਦਿਨੁ ਜੋ ਨਾਨਕ ਭਜੈ ਸਫਲ ਹੋਹਿ ਤਿਹ ਕਾਮ ॥੨੦॥"
+    },
+    {
+      "occurrence": 43,
+      "ang": 1427,
+      "sourceRow": 23,
+      "secondaryExtractionLine": 33,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹਬਾ ਗੁਨ ਗੋਬਿੰਦ ਭਜਹੁ ਕਰਨ ਸੁਨਹੁ ਹਰਿ ਨਾਮੁ ॥",
+      "secondaryText": "ਜਿਹਬਾ ਗੁਨ ਗੋਬਿੰਦ ਭਜਹੁ ਕਰਨ ਸੁਨਹੁ ਹਰਿ ਨਾਮੁ ॥"
+    },
+    {
+      "occurrence": 44,
+      "ang": 1427,
+      "sourceRow": 24,
+      "secondaryExtractionLine": 34,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਪਰਹਿ ਨ ਜਮ ਕੈ ਧਾਮ ॥੨੧॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਪਰਹਿ ਨ ਜਮ ਕੈ ਧਾਮ ॥੨੧॥"
+    },
+    {
+      "occurrence": 45,
+      "ang": 1427,
+      "sourceRow": 25,
+      "secondaryExtractionLine": 35,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜੋ ਪ੍ਰਾਨੀ ਮਮਤਾ ਤਜੈ ਲੋਭ ਮੋਹ ਅਹੰਕਾਰ ॥",
+      "secondaryText": "ਜੋ ਪ੍ਰਾਨੀ ਮਮਤਾ ਤਜੈ ਲੋਭ ਮੋਹ ਅਹੰਕਾਰ ॥"
+    },
+    {
+      "occurrence": 46,
+      "ang": 1427,
+      "sourceRow": 26,
+      "secondaryExtractionLine": 36,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਆਪਨ ਤਰੈ ਅਉਰਨ ਲੇਤ ਉਧਾਰ ॥੨੨॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਆਪਨ ਤਰੈ ਅਉਰਨ ਲੇਤ ਉਧਾਰ ॥੨੨॥"
+    },
+    {
+      "occurrence": 47,
+      "ang": 1427,
+      "sourceRow": 27,
+      "secondaryExtractionLine": 37,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਉ ਸੁਪਨਾ ਅਰੁ ਪੇਖਨਾ ਐਸੇ ਜਗ ਕਉ ਜਾਨਿ ॥",
+      "secondaryText": "ਜਿਉ ਸੁਪਨਾ ਅਰੁ ਪੇਖਨਾ ਐਸੇ ਜਗ ਕਉ ਜਾਨਿ ॥"
+    },
+    {
+      "occurrence": 48,
+      "ang": 1427,
+      "sourceRow": 28,
+      "secondaryExtractionLine": 38,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਇਨ ਮੈ ਕਛੁ ਸਾਚੋ ਨਹੀ ਨਾਨਕ ਬਿਨੁ ਭਗਵਾਨ ॥੨੩॥",
+      "secondaryText": "ਇਨ ਮੈ ਕਛੁ ਸਾਚੋ ਨਹੀ ਨਾਨਕ ਬਿਨੁ ਭਗਵਾਨ ॥੨੩॥"
+    },
+    {
+      "occurrence": 49,
+      "ang": 1427,
+      "sourceRow": 29,
+      "secondaryExtractionLine": 39,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਿਸਿ ਦਿਨੁ ਮਾਇਆ ਕਾਰਨੇ ਪ੍ਰਾਨੀ ਡੋਲਤ ਨੀਤ ॥",
+      "secondaryText": "ਨਿਸਿ ਦਿਨੁ ਮਾਇਆ ਕਾਰਨੇ ਪ੍ਰਾਨੀ ਡੋਲਤ ਨੀਤ ॥"
+    },
+    {
+      "occurrence": 50,
+      "ang": 1427,
+      "sourceRow": 30,
+      "secondaryExtractionLine": 40,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕੋਟਨ ਮੈ ਨਾਨਕ ਕੋਊ ਨਾਰਾਇਨੁ ਜਿਹ ਚੀਤਿ ॥੨੪॥",
+      "secondaryText": "ਕੋਟਨ ਮੈ ਨਾਨਕ ਕੋਊ ਨਾਰਾਇਨੁ ਜਿਹ ਚੀਤਿ ॥੨੪॥"
+    },
+    {
+      "occurrence": 51,
+      "ang": 1427,
+      "sourceRow": 31,
+      "secondaryExtractionLine": 41,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜੈਸੇ ਜਲ ਤੇ ਬੁਦਬੁਦਾ ਉਪਜੈ ਬਿਨਸੈ ਨੀਤ ॥",
+      "secondaryText": "ਜੈਸੇ ਜਲ ਤੇ ਬੁਦਬੁਦਾ ਉਪਜੈ ਬਿਨਸੈ ਨੀਤ ॥"
+    },
+    {
+      "occurrence": 52,
+      "ang": 1427,
+      "sourceRow": 32,
+      "secondaryExtractionLine": 42,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਗ ਰਚਨਾ ਤੈਸੇ ਰਚੀ ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਮੀਤ ॥੨੫॥",
+      "secondaryText": "ਜਗ ਰਚਨਾ ਤੈਸੇ ਰਚੀ ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਮੀਤ ॥੨੫॥"
+    },
+    {
+      "occurrence": 53,
+      "ang": 1427,
+      "sourceRow": 33,
+      "secondaryExtractionLine": 43,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਪ੍ਰਾਨੀ ਕਛੂ ਨ ਚੇਤਈ ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥",
+      "secondaryText": "ਪ੍ਰਾਨੀ ਕਛੂ ਨ ਚੇਤਈ ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥"
+    },
+    {
+      "occurrence": 54,
+      "ang": 1427,
+      "sourceRow": 34,
+      "secondaryExtractionLine": 44,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੨੬॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੨੬॥"
+    },
+    {
+      "occurrence": 55,
+      "ang": 1427,
+      "sourceRow": 35,
+      "secondaryExtractionLine": 45,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਉ ਸੁਖ ਕਉ ਚਾਹੈ ਸਦਾ ਸਰਨਿ ਰਾਮ ਕੀ ਲੇਹ ॥",
+      "secondaryText": "ਜਉ ਸੁਖ ਕਉ ਚਾਹੈ ਸਦਾ ਸਰਨਿ ਰਾਮ ਕੀ ਲੇਹ ॥"
+    },
+    {
+      "occurrence": 56,
+      "ang": 1427,
+      "sourceRow": 36,
+      "secondaryExtractionLine": 46,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਦੁਰਲਭ ਮਾਨੁਖ ਦੇਹ ॥੨੭॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਦੁਰਲਭ ਮਾਨੁਖ ਦੇਹ ॥੨੭॥"
+    },
+    {
+      "occurrence": 57,
+      "ang": 1427,
+      "sourceRow": 37,
+      "secondaryExtractionLine": 47,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਮਾਇਆ ਕਾਰਨਿ ਧਾਵਹੀ ਮੂਰਖ ਲੋਗ ਅਜਾਨ ॥",
+      "secondaryText": "ਮਾਇਆ ਕਾਰਨਿ ਧਾਵਹੀ ਮੂਰਖ ਲੋਗ ਅਜਾਨ ॥"
+    },
+    {
+      "occurrence": 58,
+      "ang": 1427,
+      "sourceRow": 38,
+      "secondaryExtractionLine": 48,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਬਿਰਥਾ ਜਨਮੁ ਸਿਰਾਨ ॥੨੮॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਬਿਰਥਾ ਜਨਮੁ ਸਿਰਾਨ ॥੨੮॥"
+    },
+    {
+      "occurrence": 59,
+      "ang": 1427,
+      "sourceRow": 39,
+      "secondaryExtractionLine": 49,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜੋ ਪ੍ਰਾਨੀ ਨਿਸਿ ਦਿਨੁ ਭਜੈ ਰੂਪ ਰਾਮ ਤਿਹ ਜਾਨੁ ॥",
+      "secondaryText": "ਜੋ ਪ੍ਰਾਨੀ ਨਿਸਿ ਦਿਨੁ ਭਜੈ ਰੂਪ ਰਾਮ ਤਿਹ ਜਾਨੁ ॥"
+    },
+    {
+      "occurrence": 60,
+      "ang": 1428,
+      "sourceRow": 1,
+      "secondaryExtractionLine": 11,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਮਾਨੁ ॥੨੯॥",
+      "secondaryText": "ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਮਾਨੁ ॥੨੯॥"
+    },
+    {
+      "occurrence": 61,
+      "ang": 1428,
+      "sourceRow": 2,
+      "secondaryExtractionLine": 12,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਮਨੁ ਮਾਇਆ ਮੈ ਫਧਿ ਰਹਿਓ ਬਿਸਰਿਓ ਗੋਬਿੰਦ ਨਾਮੁ ॥",
+      "secondaryText": "ਮਨੁ ਮਾਇਆ ਮੈ ਫਧਿ ਰਹਿਓ ਬਿਸਰਿਓ ਗੋਬਿੰਦ ਨਾਮੁ ॥"
+    },
+    {
+      "occurrence": 62,
+      "ang": 1428,
+      "sourceRow": 3,
+      "secondaryExtractionLine": 13,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਜੀਵਨ ਕਉਨੇ ਕਾਮ ॥੩੦॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਜੀਵਨ ਕਉਨੇ ਕਾਮ ॥੩੦॥"
+    },
+    {
+      "occurrence": 63,
+      "ang": 1428,
+      "sourceRow": 4,
+      "secondaryExtractionLine": 14,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਪ੍ਰਾਨੀ ਰਾਮੁ ਨ ਚੇਤਈ ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥",
+      "secondaryText": "ਪ੍ਰਾਨੀ ਰਾਮੁ ਨ ਚੇਤਈ ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥"
+    },
+    {
+      "occurrence": 64,
+      "ang": 1428,
+      "sourceRow": 5,
+      "secondaryExtractionLine": 15,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜਨ ਬਿਨੁ ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੩੧॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜਨ ਬਿਨੁ ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੩੧॥"
+    },
+    {
+      "occurrence": 65,
+      "ang": 1428,
+      "sourceRow": 6,
+      "secondaryExtractionLine": 16,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸੁਖ ਮੈ ਬਹੁ ਸੰਗੀ ਭਏ ਦੁਖ ਮੈ ਸੰਗਿ ਨ ਕੋਇ ॥",
+      "secondaryText": "ਸੁਖ ਮੈ ਬਹੁ ਸੰਗੀ ਭਏ ਦੁਖ ਮੈ ਸੰਗਿ ਨ ਕੋਇ ॥"
+    },
+    {
+      "occurrence": 66,
+      "ang": 1428,
+      "sourceRow": 7,
+      "secondaryExtractionLine": 17,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਅੰਤਿ ਸਹਾਈ ਹੋਇ ॥੩੨॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਅੰਤਿ ਸਹਾਈ ਹੋਇ ॥੩੨॥"
+    },
+    {
+      "occurrence": 67,
+      "ang": 1428,
+      "sourceRow": 8,
+      "secondaryExtractionLine": 18,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਨਮ ਜਨਮ ਭਰਮਤ ਫਿਰਿਓ ਮਿਟਿਓ ਨ ਜਮ ਕੋ ਤ੍ਰਾਸੁ ॥",
+      "secondaryText": "ਜਨਮ ਜਨਮ ਭਰਮਤ ਫਿਰਿਓ ਮਿਟਿਓ ਨ ਜਮ ਕੋ ਤ੍ਰਾਸੁ ॥"
+    },
+    {
+      "occurrence": 68,
+      "ang": 1428,
+      "sourceRow": 9,
+      "secondaryExtractionLine": 19,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਨਿਰਭੈ ਪਾਵਹਿ ਬਾਸੁ ॥੩੩॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਨਿਰਭੈ ਪਾਵਹਿ ਬਾਸੁ ॥੩੩॥"
+    },
+    {
+      "occurrence": 69,
+      "ang": 1428,
+      "sourceRow": 10,
+      "secondaryExtractionLine": 20,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਤਨ ਬਹੁਤੁ ਮੈ ਕਰਿ ਰਹਿਓ ਮਿਟਿਓ ਨ ਮਨ ਕੋ ਮਾਨੁ ॥",
+      "secondaryText": "ਜਤਨ ਬਹੁਤੁ ਮੈ ਕਰਿ ਰਹਿਓ ਮਿਟਿਓ ਨ ਮਨ ਕੋ ਮਾਨੁ ॥"
+    },
+    {
+      "occurrence": 70,
+      "ang": 1428,
+      "sourceRow": 11,
+      "secondaryExtractionLine": 21,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਦੁਰਮਤਿ ਸਿਉ ਨਾਨਕ ਫਧਿਓ ਰਾਖਿ ਲੇਹੁ ਭਗਵਾਨ ॥੩੪॥",
+      "secondaryText": "ਦੁਰਮਤਿ ਸਿਉ ਨਾਨਕ ਫਧਿਓ ਰਾਖਿ ਲੇਹੁ ਭਗਵਾਨ ॥੩੪॥"
+    },
+    {
+      "occurrence": 71,
+      "ang": 1428,
+      "sourceRow": 12,
+      "secondaryExtractionLine": 22,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਬਾਲ ਜੁਆਨੀ ਅਰੁ ਬਿਰਧਿ ਫੁਨਿ ਤੀਨਿ ਅਵਸਥਾ ਜਾਨਿ ॥",
+      "secondaryText": "ਬਾਲ ਜੁਆਨੀ ਅਰੁ ਬਿਰਧਿ ਫੁਨਿ ਤੀਨਿ ਅਵਸਥਾ ਜਾਨਿ ॥"
+    },
+    {
+      "occurrence": 72,
+      "ang": 1428,
+      "sourceRow": 13,
+      "secondaryExtractionLine": 23,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜਨ ਬਿਨੁ ਬਿਰਥਾ ਸਭ ਹੀ ਮਾਨੁ ॥੩੫॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜਨ ਬਿਨੁ ਬਿਰਥਾ ਸਭ ਹੀ ਮਾਨੁ ॥੩੫॥"
+    },
+    {
+      "occurrence": 73,
+      "ang": 1428,
+      "sourceRow": 14,
+      "secondaryExtractionLine": 24,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਰਣੋ ਹੁਤੋ ਸੁ ਨਾ ਕੀਓ ਪਰਿਓ ਲੋਭ ਕੈ ਫੰਧ ॥",
+      "secondaryText": "ਕਰਣੋ ਹੁਤੋ ਸੁ ਨਾ ਕੀਓ ਪਰਿਓ ਲੋਭ ਕੈ ਫੰਧ ॥"
+    },
+    {
+      "occurrence": 74,
+      "ang": 1428,
+      "sourceRow": 15,
+      "secondaryExtractionLine": 25,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਸਮਿਓ ਰਮਿ ਗਇਓ ਅਬ ਕਿਉ ਰੋਵਤ ਅੰਧ ॥੩੬॥",
+      "secondaryText": "ਨਾਨਕ ਸਮਿਓ ਰਮਿ ਗਇਓ ਅਬ ਕਿਉ ਰੋਵਤ ਅੰਧ ॥੩੬॥"
+    },
+    {
+      "occurrence": 75,
+      "ang": 1428,
+      "sourceRow": 16,
+      "secondaryExtractionLine": 26,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਮਨੁ ਮਾਇਆ ਮੈ ਰਮਿ ਰਹਿਓ ਨਿਕਸਤ ਨਾਹਿਨ ਮੀਤ ॥",
+      "secondaryText": "ਮਨੁ ਮਾਇਆ ਮੈ ਰਮਿ ਰਹਿਓ ਨਿਕਸਤ ਨਾਹਿਨ ਮੀਤ ॥"
+    },
+    {
+      "occurrence": 76,
+      "ang": 1428,
+      "sourceRow": 17,
+      "secondaryExtractionLine": 27,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਮੂਰਤਿ ਚਿਤ੍ਰ ਜਿਉ ਛਾਡਿਤ ਨਾਹਿਨ ਭੀਤਿ ॥੩੭॥",
+      "secondaryText": "ਨਾਨਕ ਮੂਰਤਿ ਚਿਤ੍ਰ ਜਿਉ ਛਾਡਿਤ ਨਾਹਿਨ ਭੀਤਿ ॥੩੭॥"
+    },
+    {
+      "occurrence": 77,
+      "ang": 1428,
+      "sourceRow": 18,
+      "secondaryExtractionLine": 28,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਰ ਚਾਹਤ ਕਛੁ ਅਉਰ ਅਉਰੈ ਕੀ ਅਉਰੈ ਭਈ ॥",
+      "secondaryText": "ਨਰ ਚਾਹਤ ਕਛੁ ਅਉਰ ਅਉਰੈ ਕੀ ਅਉਰੈ ਭਈ ॥"
+    },
+    {
+      "occurrence": 78,
+      "ang": 1428,
+      "sourceRow": 19,
+      "secondaryExtractionLine": 29,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਚਿਤਵਤ ਰਹਿਓ ਠਗਉਰ ਨਾਨਕ ਫਾਸੀ ਗਲਿ ਪਰੀ ॥੩੮॥",
+      "secondaryText": "ਚਿਤਵਤ ਰਹਿਓ ਠਗਉਰ ਨਾਨਕ ਫਾਸੀ ਗਲਿ ਪਰੀ ॥੩੮॥"
+    },
+    {
+      "occurrence": 79,
+      "ang": 1428,
+      "sourceRow": 20,
+      "secondaryExtractionLine": 30,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਤਨ ਬਹੁਤ ਸੁਖ ਕੇ ਕੀਏ ਦੁਖ ਕੋ ਕੀਓ ਨ ਕੋਇ ॥",
+      "secondaryText": "ਜਤਨ ਬਹੁਤ ਸੁਖ ਕੇ ਕੀਏ ਦੁਖ ਕੋ ਕੀਓ ਨ ਕੋਇ ॥"
+    },
+    {
+      "occurrence": 80,
+      "ang": 1428,
+      "sourceRow": 21,
+      "secondaryExtractionLine": 31,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਹਰਿ ਭਾਵੈ ਸੋ ਹੋਇ ॥੩੯॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਹਰਿ ਭਾਵੈ ਸੋ ਹੋਇ ॥੩੯॥"
+    },
+    {
+      "occurrence": 81,
+      "ang": 1428,
+      "sourceRow": 22,
+      "secondaryExtractionLine": 32,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਗਤੁ ਭਿਖਾਰੀ ਫਿਰਤੁ ਹੈ ਸਭ ਕੋ ਦਾਤਾ ਰਾਮੁ ॥",
+      "secondaryText": "ਜਗਤੁ ਭਿਖਾਰੀ ਫਿਰਤੁ ਹੈ ਸਭ ਕੋ ਦਾਤਾ ਰਾਮੁ ॥"
+    },
+    {
+      "occurrence": 82,
+      "ang": 1428,
+      "sourceRow": 23,
+      "secondaryExtractionLine": 33,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਮਨ ਸਿਮਰੁ ਤਿਹ ਪੂਰਨ ਹੋਵਹਿ ਕਾਮ ॥੪੦॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਮਨ ਸਿਮਰੁ ਤਿਹ ਪੂਰਨ ਹੋਵਹਿ ਕਾਮ ॥੪੦॥"
+    },
+    {
+      "occurrence": 83,
+      "ang": 1428,
+      "sourceRow": 24,
+      "secondaryExtractionLine": 34,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਝੂਠੈ ਮਾਨੁ ਕਹਾ ਕਰੈ ਜਗੁ ਸੁਪਨੇ ਜਿਉ ਜਾਨੁ ॥",
+      "secondaryText": "ਝੂਠੈ ਮਾਨੁ ਕਹਾ ਕਰੈ ਜਗੁ ਸੁਪਨੇ ਜਿਉ ਜਾਨੁ ॥"
+    },
+    {
+      "occurrence": 84,
+      "ang": 1428,
+      "sourceRow": 25,
+      "secondaryExtractionLine": 35,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਇਨ ਮੈ ਕਛੁ ਤੇਰੋ ਨਹੀ ਨਾਨਕ ਕਹਿਓ ਬਖਾਨਿ ॥੪੧॥",
+      "secondaryText": "ਇਨ ਮੈ ਕਛੁ ਤੇਰੋ ਨਹੀ ਨਾਨਕ ਕਹਿਓ ਬਖਾਨਿ ॥੪੧॥"
+    },
+    {
+      "occurrence": 85,
+      "ang": 1428,
+      "sourceRow": 26,
+      "secondaryExtractionLine": 36,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਗਰਬੁ ਕਰਤੁ ਹੈ ਦੇਹ ਕੋ ਬਿਨਸੈ ਛਿਨ ਮੈ ਮੀਤ ॥",
+      "secondaryText": "ਗਰਬੁ ਕਰਤੁ ਹੈ ਦੇਹ ਕੋ ਬਿਨਸੈ ਛਿਨ ਮੈ ਮੀਤ ॥"
+    },
+    {
+      "occurrence": 86,
+      "ang": 1428,
+      "sourceRow": 27,
+      "secondaryExtractionLine": 37,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਰਿ ਜਸੁ ਕਹਿਓ ਨਾਨਕ ਤਿਹਿ ਜਗੁ ਜੀਤਿ ॥੪੨॥",
+      "secondaryText": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਰਿ ਜਸੁ ਕਹਿਓ ਨਾਨਕ ਤਿਹਿ ਜਗੁ ਜੀਤਿ ॥੪੨॥"
+    },
+    {
+      "occurrence": 87,
+      "ang": 1428,
+      "sourceRow": 28,
+      "secondaryExtractionLine": 38,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹ ਘਟਿ ਸਿਮਰਨੁ ਰਾਮ ਕੋ ਸੋ ਨਰੁ ਮੁਕਤਾ ਜਾਨੁ ॥",
+      "secondaryText": "ਜਿਹ ਘਟਿ ਸਿਮਰਨੁ ਰਾਮ ਕੋ ਸੋ ਨਰੁ ਮੁਕਤਾ ਜਾਨੁ ॥"
+    },
+    {
+      "occurrence": 88,
+      "ang": 1428,
+      "sourceRow": 29,
+      "secondaryExtractionLine": 39,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਤਿਹਿ ਨਰ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਮਾਨੁ ॥੪੩॥",
+      "secondaryText": "ਤਿਹਿ ਨਰ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਮਾਨੁ ॥੪੩॥"
+    },
+    {
+      "occurrence": 89,
+      "ang": 1428,
+      "sourceRow": 30,
+      "secondaryExtractionLine": 40,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਏਕ ਭਗਤਿ ਭਗਵਾਨ ਜਿਹ ਪ੍ਰਾਨੀ ਕੈ ਨਾਹਿ ਮਨਿ ॥",
+      "secondaryText": "ਏਕ ਭਗਤਿ ਭਗਵਾਨ ਜਿਹ ਪ੍ਰਾਨੀ ਕੈ ਨਾਹਿ ਮਨਿ ॥"
+    },
+    {
+      "occurrence": 90,
+      "ang": 1428,
+      "sourceRow": 31,
+      "secondaryExtractionLine": 41,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜੈਸੇ ਸੂਕਰ ਸੁਆਨ ਨਾਨਕ ਮਾਨੋ ਤਾਹਿ ਤਨੁ ॥੪੪॥",
+      "secondaryText": "ਜੈਸੇ ਸੂਕਰ ਸੁਆਨ ਨਾਨਕ ਮਾਨੋ ਤਾਹਿ ਤਨੁ ॥੪੪॥"
+    },
+    {
+      "occurrence": 91,
+      "ang": 1428,
+      "sourceRow": 32,
+      "secondaryExtractionLine": 42,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸੁਆਮੀ ਕੋ ਗ੍ਰਿਹੁ ਜਿਉ ਸਦਾ ਸੁਆਨ ਤਜਤ ਨਹੀ ਨਿਤ ॥",
+      "secondaryText": "ਸੁਆਮੀ ਕੋ ਗ੍ਰਿਹੁ ਜਿਉ ਸਦਾ ਸੁਆਨ ਤਜਤ ਨਹੀ ਨਿਤ ॥"
+    },
+    {
+      "occurrence": 92,
+      "ang": 1428,
+      "sourceRow": 33,
+      "secondaryExtractionLine": 43,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਇਹ ਬਿਧਿ ਹਰਿ ਭਜਉ ਇਕ ਮਨਿ ਹੁਇ ਇਕ ਚਿਤਿ ॥੪੫॥",
+      "secondaryText": "ਨਾਨਕ ਇਹ ਬਿਧਿ ਹਰਿ ਭਜਉ ਇਕ ਮਨਿ ਹੁਇ ਇਕ ਚਿਤਿ ॥੪੫॥"
+    },
+    {
+      "occurrence": 93,
+      "ang": 1428,
+      "sourceRow": 34,
+      "secondaryExtractionLine": 44,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਤੀਰਥ ਬਰਤ ਅਰੁ ਦਾਨ ਕਰਿ ਮਨ ਮੈ ਧਰੈ ਗੁਮਾਨੁ ॥",
+      "secondaryText": "ਤੀਰਥ ਬਰਤ ਅਰੁ ਦਾਨ ਕਰਿ ਮਨ ਮੈ ਧਰੈ ਗੁਮਾਨੁ ॥"
+    },
+    {
+      "occurrence": 94,
+      "ang": 1428,
+      "sourceRow": 35,
+      "secondaryExtractionLine": 45,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਨਿਹਫਲ ਜਾਤ ਤਿਹ ਜਿਉ ਕੁੰਚਰ ਇਸਨਾਨੁ ॥੪੬॥",
+      "secondaryText": "ਨਾਨਕ ਨਿਹਫਲ ਜਾਤ ਤਿਹ ਜਿਉ ਕੁੰਚਰ ਇਸਨਾਨੁ ॥੪੬॥"
+    },
+    {
+      "occurrence": 95,
+      "ang": 1428,
+      "sourceRow": 36,
+      "secondaryExtractionLine": 46,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸਿਰੁ ਕੰਪਿਓ ਪਗ ਡਗਮਗੇ ਨੈਨ ਜੋਤਿ ਤੇ ਹੀਨ ॥",
+      "secondaryText": "ਸਿਰੁ ਕੰਪਿਓ ਪਗ ਡਗਮਗੇ ਨੈਨ ਜੋਤਿ ਤੇ ਹੀਨ ॥"
+    },
+    {
+      "occurrence": 96,
+      "ang": 1428,
+      "sourceRow": 37,
+      "secondaryExtractionLine": 47,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਇਹ ਬਿਧਿ ਭਈ ਤਊ ਨ ਹਰਿ ਰਸਿ ਲੀਨ ॥੪੭॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਇਹ ਬਿਧਿ ਭਈ ਤਊ ਨ ਹਰਿ ਰਸਿ ਲੀਨ ॥੪੭॥"
+    },
+    {
+      "occurrence": 97,
+      "ang": 1429,
+      "sourceRow": 1,
+      "secondaryExtractionLine": 11,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਿਜ ਕਰਿ ਦੇਖਿਓ ਜਗਤੁ ਮੈ ਕੋ ਕਾਹੂ ਕੋ ਨਾਹਿ ॥",
+      "secondaryText": "ਨਿਜ ਕਰਿ ਦੇਖਿਓ ਜਗਤੁ ਮੈ ਕੋ ਕਾਹੂ ਕੋ ਨਾਹਿ ॥"
+    },
+    {
+      "occurrence": 98,
+      "ang": 1429,
+      "sourceRow": 2,
+      "secondaryExtractionLine": 12,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਥਿਰੁ ਹਰਿ ਭਗਤਿ ਹੈ ਤਿਹ ਰਾਖੋ ਮਨ ਮਾਹਿ ॥੪੮॥",
+      "secondaryText": "ਨਾਨਕ ਥਿਰੁ ਹਰਿ ਭਗਤਿ ਹੈ ਤਿਹ ਰਾਖੋ ਮਨ ਮਾਹਿ ॥੪੮॥"
+    },
+    {
+      "occurrence": 99,
+      "ang": 1429,
+      "sourceRow": 3,
+      "secondaryExtractionLine": 13,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥",
+      "secondaryText": "ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥"
+    },
+    {
+      "occurrence": 100,
+      "ang": 1429,
+      "sourceRow": 4,
+      "secondaryExtractionLine": 14,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹਿ ਨਾਨਕ ਥਿਰੁ ਨਾ ਰਹੈ ਜਿਉ ਬਾਲੂ ਕੀ ਭੀਤਿ ॥੪੯॥",
+      "secondaryText": "ਕਹਿ ਨਾਨਕ ਥਿਰੁ ਨਾ ਰਹੈ ਜਿਉ ਬਾਲੂ ਕੀ ਭੀਤਿ ॥੪੯॥"
+    },
+    {
+      "occurrence": 101,
+      "ang": 1429,
+      "sourceRow": 5,
+      "secondaryExtractionLine": 15,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਰਾਮੁ ਗਇਓ ਰਾਵਨੁ ਗਇਓ ਜਾ ਕਉ ਬਹੁ ਪਰਵਾਰੁ ॥",
+      "secondaryText": "ਰਾਮੁ ਗਇਓ ਰਾਵਨੁ ਗਇਓ ਜਾ ਕਉ ਬਹੁ ਪਰਵਾਰੁ ॥"
+    },
+    {
+      "occurrence": 102,
+      "ang": 1429,
+      "sourceRow": 6,
+      "secondaryExtractionLine": 16,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਥਿਰੁ ਕਛੁ ਨਹੀ ਸੁਪਨੇ ਜਿਉ ਸੰਸਾਰੁ ॥੫੦॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਥਿਰੁ ਕਛੁ ਨਹੀ ਸੁਪਨੇ ਜਿਉ ਸੰਸਾਰੁ ॥੫੦॥"
+    },
+    {
+      "occurrence": 103,
+      "ang": 1429,
+      "sourceRow": 7,
+      "secondaryExtractionLine": 17,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਚਿੰਤਾ ਤਾ ਕੀ ਕੀਜੀਐ ਜੋ ਅਨਹੋਨੀ ਹੋਇ ॥",
+      "secondaryText": "ਚਿੰਤਾ ਤਾ ਕੀ ਕੀਜੀਐ ਜੋ ਅਨਹੋਨੀ ਹੋਇ ॥"
+    },
+    {
+      "occurrence": 104,
+      "ang": 1429,
+      "sourceRow": 8,
+      "secondaryExtractionLine": 18,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਇਹੁ ਮਾਰਗੁ ਸੰਸਾਰ ਕੋ ਨਾਨਕ ਥਿਰੁ ਨਹੀ ਕੋਇ ॥੫੧॥",
+      "secondaryText": "ਇਹੁ ਮਾਰਗੁ ਸੰਸਾਰ ਕੋ ਨਾਨਕ ਥਿਰੁ ਨਹੀ ਕੋਇ ॥੫੧॥"
+    },
+    {
+      "occurrence": 105,
+      "ang": 1429,
+      "sourceRow": 9,
+      "secondaryExtractionLine": 19,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜੋ ਉਪਜਿਓ ਸੋ ਬਿਨਸਿ ਹੈ ਪਰੋ ਆਜੁ ਕੈ ਕਾਲਿ ॥",
+      "secondaryText": "ਜੋ ਉਪਜਿਓ ਸੋ ਬਿਨਸਿ ਹੈ ਪਰੋ ਆਜੁ ਕੈ ਕਾਲਿ ॥"
+    },
+    {
+      "occurrence": 106,
+      "ang": 1429,
+      "sourceRow": 10,
+      "secondaryExtractionLine": 20,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਹਰਿ ਗੁਨ ਗਾਇ ਲੇ ਛਾਡਿ ਸਗਲ ਜੰਜਾਲ ॥੫੨॥",
+      "secondaryText": "ਨਾਨਕ ਹਰਿ ਗੁਨ ਗਾਇ ਲੇ ਛਾਡਿ ਸਗਲ ਜੰਜਾਲ ॥੫੨॥"
+    },
+    {
+      "occurrence": 107,
+      "ang": 1429,
+      "sourceRow": 11,
+      "secondaryExtractionLine": 21,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਦੋਹਰਾ ॥",
+      "secondaryText": "ਦੋਹਰਾ ॥"
+    },
+    {
+      "occurrence": 108,
+      "ang": 1429,
+      "sourceRow": 12,
+      "secondaryExtractionLine": 22,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਬਲੁ ਛੁਟਕਿਓ ਬੰਧਨ ਪਰੇ ਕਛੂ ਨ ਹੋਤ ਉਪਾਇ ॥",
+      "secondaryText": "ਬਲੁ ਛੁਟਕਿਓ ਬੰਧਨ ਪਰੇ ਕਛੂ ਨ ਹੋਤ ਉਪਾਇ ॥"
+    },
+    {
+      "occurrence": 109,
+      "ang": 1429,
+      "sourceRow": 13,
+      "secondaryExtractionLine": 23,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਅਬ ਓਟ ਹਰਿ ਗਜ ਜਿਉ ਹੋਹੁ ਸਹਾਇ ॥੫੩॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਅਬ ਓਟ ਹਰਿ ਗਜ ਜਿਉ ਹੋਹੁ ਸਹਾਇ ॥੫੩॥"
+    },
+    {
+      "occurrence": 110,
+      "ang": 1429,
+      "sourceRow": 14,
+      "secondaryExtractionLine": 24,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਬਲੁ ਹੋਆ ਬੰਧਨ ਛੁਟੇ ਸਭੁ ਕਿਛੁ ਹੋਤ ਉਪਾਇ ॥",
+      "secondaryText": "ਬਲੁ ਹੋਆ ਬੰਧਨ ਛੁਟੇ ਸਭੁ ਕਿਛੁ ਹੋਤ ਉਪਾਇ ॥"
+    },
+    {
+      "occurrence": 111,
+      "ang": 1429,
+      "sourceRow": 15,
+      "secondaryExtractionLine": 25,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਨਕ ਸਭੁ ਕਿਛੁ ਤੁਮਰੈ ਹਾਥ ਮੈ ਤੁਮ ਹੀ ਹੋਤ ਸਹਾਇ ॥੫੪॥",
+      "secondaryText": "ਨਾਨਕ ਸਭੁ ਕਿਛੁ ਤੁਮਰੈ ਹਾਥ ਮੈ ਤੁਮ ਹੀ ਹੋਤ ਸਹਾਇ ॥੫੪॥"
+    },
+    {
+      "occurrence": 112,
+      "ang": 1429,
+      "sourceRow": 16,
+      "secondaryExtractionLine": 26,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਸੰਗ ਸਖਾ ਸਭਿ ਤਜਿ ਗਏ ਕੋਊ ਨ ਨਿਬਹਿਓ ਸਾਥਿ ॥",
+      "secondaryText": "ਸੰਗ ਸਖਾ ਸਭਿ ਤਜਿ ਗਏ ਕੋਊ ਨ ਨਿਬਹਿਓ ਸਾਥਿ ॥"
+    },
+    {
+      "occurrence": 113,
+      "ang": 1429,
+      "sourceRow": 17,
+      "secondaryExtractionLine": 27,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਇਹ ਬਿਪਤਿ ਮੈ ਟੇਕ ਏਕ ਰਘੁਨਾਥ ॥੫੫॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਇਹ ਬਿਪਤਿ ਮੈ ਟੇਕ ਏਕ ਰਘੁਨਾਥ ॥੫੫॥"
+    },
+    {
+      "occurrence": 114,
+      "ang": 1429,
+      "sourceRow": 18,
+      "secondaryExtractionLine": 28,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਨਾਮੁ ਰਹਿਓ ਸਾਧੂ ਰਹਿਓ ਰਹਿਓ ਗੁਰੁ ਗੋਬਿੰਦੁ ॥",
+      "secondaryText": "ਨਾਮੁ ਰਹਿਓ ਸਾਧੂ ਰਹਿਓ ਰਹਿਓ ਗੁਰੁ ਗੋਬਿੰਦੁ ॥"
+    },
+    {
+      "occurrence": 115,
+      "ang": 1429,
+      "sourceRow": 19,
+      "secondaryExtractionLine": 29,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਕਹੁ ਨਾਨਕ ਇਹ ਜਗਤ ਮੈ ਕਿਨ ਜਪਿਓ ਗੁਰ ਮੰਤੁ ॥੫੬॥",
+      "secondaryText": "ਕਹੁ ਨਾਨਕ ਇਹ ਜਗਤ ਮੈ ਕਿਨ ਜਪਿਓ ਗੁਰ ਮੰਤੁ ॥੫੬॥"
+    },
+    {
+      "occurrence": 116,
+      "ang": 1429,
+      "sourceRow": 20,
+      "secondaryExtractionLine": 30,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਰਾਮ ਨਾਮੁ ਉਰ ਮੈ ਗਹਿਓ ਜਾ ਕੈ ਸਮ ਨਹੀ ਕੋਇ ॥",
+      "secondaryText": "ਰਾਮ ਨਾਮੁ ਉਰ ਮੈ ਗਹਿਓ ਜਾ ਕੈ ਸਮ ਨਹੀ ਕੋਇ ॥"
+    },
+    {
+      "occurrence": 117,
+      "ang": 1429,
+      "sourceRow": 21,
+      "secondaryExtractionLine": 31,
+      "exactExtractedUnicodeMatch": true,
+      "sourceText": "ਜਿਹ ਸਿਮਰਤ ਸੰਕਟ ਮਿਟੈ ਦਰਸੁ ਤੁਹਾਰੋ ਹੋਇ ॥੫੭॥੧॥",
+      "secondaryText": "ਜਿਹ ਸਿਮਰਤ ਸੰਕਟ ਮਿਟੈ ਦਰਸੁ ਤੁਹਾਰੋ ਹੋਇ ॥੫੭॥੧॥"
+    }
+  ],
+  "mismatches": [],
+  "specialChecks": {
+    "invocationFirst": true,
+    "mahalla9HeadingSecond": true,
+    "dohraHeadingBefore53": true,
+    "salok29Crosses1427to1428": true,
+    "endingPreserves57AndCollection1": true,
+    "followingIsMundavaniMahalla5": true,
+    "salok54Line2MatchesSelectedWitness": true,
+    "contiguousNumbers1to57": true,
+    "everySalokHasTwoVerses": true
+  },
+  "limitations": [
+    "This review compares the selected file with text exposed by a second digital website; common underlying source ancestry has not been excluded.",
+    "Web extraction may normalize HTML layout whitespace before this review receives it. Exact equality here applies to extracted strings, not raw HTML bytes or printed page layout.",
+    "No independent SGPC printed-saroop/manuscript image collation was performed.",
+    "The selected source's upstream file hashes/blob IDs are supplied metadata in this review, not independently refetched and reverified here.",
+    "Printed Ang-line numbers in sourceAngLine were not independently checked against page images.",
+    "No translation, interpretation, Punjabi parity, recitation, Santhiya, licensing or release approval is provided.",
+    "Historical manuscript attribution discussions concerning Salok54 are outside this text-conformance result; no M10 heading was inserted or inferred.",
+    "A variant encountered on another website is not a conflict between the selected pinned source and SriGranth; all117 occurrences were compared directly."
+  ],
+  "numbering": [
+    {
+      "number": 1,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 2,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 3,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 4,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 5,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 6,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 7,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 8,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 9,
+      "verseCount": 2,
+      "angs": [
+        1426,
+        1426
+      ]
+    },
+    {
+      "number": 10,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 11,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 12,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 13,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 14,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 15,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 16,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 17,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 18,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 19,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 20,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 21,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 22,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 23,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 24,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 25,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 26,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 27,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 28,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1427
+      ]
+    },
+    {
+      "number": 29,
+      "verseCount": 2,
+      "angs": [
+        1427,
+        1428
+      ]
+    },
+    {
+      "number": 30,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 31,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 32,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 33,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 34,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 35,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 36,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 37,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 38,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 39,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 40,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 41,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 42,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 43,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 44,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 45,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 46,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 47,
+      "verseCount": 2,
+      "angs": [
+        1428,
+        1428
+      ]
+    },
+    {
+      "number": 48,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 49,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 50,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 51,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 52,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 53,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 54,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 55,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 56,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    },
+    {
+      "number": 57,
+      "verseCount": 2,
+      "angs": [
+        1429,
+        1429
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Gurbani Learning Library — GLP-001
 
-**An account-free family reading and learning project.** Read all seven Nitnem banis and all 24 Ashtpadis of Sukhmani Sahib, with original Gurmukhi, English and Punjabi meanings, and passage Study drafts.
+**An account-free family reading and learning project.** Read Nitnem and Sukhmani Sahib, with a complete Salok Mahalla 9 development candidate on this branch. Original Gurmukhi, English and Punjabi meanings, and passage Study drafts keep separate source and review records.
 
 [Open the library](https://sskhangura82.github.io/gurbani-learning-library/) · [Open Nitnem](https://sskhangura82.github.io/gurbani-learning-library/nitnem/index.html) · [Read Japji Sahib](https://sskhangura82.github.io/gurbani-learning-library/full-japji.html) · [Read Sukhmani Sahib](https://sskhangura82.github.io/gurbani-learning-library/sukhmani.html)
 
@@ -11,6 +11,14 @@ The collection joins the existing complete Japji reader with Jaap Sahib (199 chh
 Read, Meaning and Study use the same Gurmukhi. The reader has continuous and passage layouts, a silent visual guide, Light/Dark appearance, adjustable text size, saved positions, bookmarks, reflections and backup import/export. Imports merge learning; old documented edition backups remain compatible. Unknown or damaged saved records are preserved for recovery. The root service worker saves the whole library for offline reading and waits for an explicit action before applying an update.
 
 The line meanings and passage summaries are bilingual. Earlier detailed studies are chiefly in English; the newly completed Jaap 121–199 and Anand Pauri 24 studies also have extended Punjabi fields. Qualified human collation, scholarly teaching review, santhiya and physical iPhone acceptance are still pending. See [Nitnem scope, sources and operation](docs/NITNEM_COMPLETE.md).
+
+## Salok Mahalla 9: complete development candidate
+
+This branch adds all **57 numbered Saloks**, **114 verse occurrences** and **three original headings/invocation occurrences**, Ang 1426–1429. It includes 114 original English/Punjabi line-meaning drafts, 57 bilingual passage-study drafts and three heading explanations. The following Mundavani Mahalla 5 is outside this composition. Salok 29 keeps its two Ang references; Dohra remains before Salok 53.
+
+The additional Bani uses the existing shared composition reader, its navigation, Read/Meaning/Study, appearance settings and browser-local learning. Its source manifest, teaching pack and storage identity are separate from Nitnem. Existing Nitnem source/teaching files and Japji/Sukhmani learning remain unchanged. The original text agrees exactly with a second digital transcription across all 117 occurrences; qualified collation and teaching review remain pending.
+
+This is a **draft review branch**, not a published update or a completed scholarly edition. The phone QA site still tests the separately frozen PR #40 repairs. See [Salok Mahalla 9 scope and review record](docs/SALOK_MAHALLA9_COMPLETE_DRAFT.md).
 
 ## Sukhmani Sahib: all 24 Ashtpadis
 
@@ -59,6 +67,6 @@ After changing a cached static asset, regenerate the exact offline hashes with `
 
 ## Project direction
 
-Salok Mahalla 9 is next, following the user's requested sequence after completing Nitnem. Qualified review and further Punjabi study expansion remain ongoing work. See [Teaching architecture](docs/TEACHING_EXPANSION_ARCHITECTURE.md), [R7 scope/source register](docs/R7_HOME_SPEED_AND_SPACES.md) and [release candidate evidence](docs/R7_RELEASE_CANDIDATE.md).
+The complete Salok Mahalla 9 reader is now a development candidate. The next content sequence is Bhagat Kabir Ji’s Saloks and remaining Bani, then Bhagat Farid Ji and the wider Sri Guru Granth Sahib Ji library. Qualified review, deeper teaching, authentic audio and Punjabi review remain separate workstreams. See [Teaching architecture](docs/TEACHING_EXPANSION_ARCHITECTURE.md), [R7 scope/source register](docs/R7_HOME_SPEED_AND_SPACES.md) and [release candidate evidence](docs/R7_RELEASE_CANDIDATE.md).
 
 **The unmerged concept PR #4 remains a separate design/research lane.** No unauthorized photograph, media extraction, synthetic recitation, credentials, advertising or personal learning data belongs in this repository.

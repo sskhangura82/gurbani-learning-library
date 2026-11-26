@@ -1,0 +1,955 @@
+{
+  "schema": "glp001.salok-mahalla9-legacy-crosswalk.v1",
+  "sourceBranchCommit": "d0dc1f29666fa2615234d4b62899873179bde024",
+  "sourcePath": "study/sources/salok-mahala9-shabados-487-candidate.json",
+  "legacyStatus": "Archived source-only intake, never integrated into this reader",
+  "selectedEditionId": "salok-mahalla9-opengranth-34d2a7c-20261126",
+  "mappingScope": "Source identity crosswalk only; no automatic saved-learning migration or silent modification of the archived witness",
+  "rows": [
+    {
+      "legacySourceId": "43WC",
+      "legacySourceTextSha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013",
+      "logicalId": "sggs.salok-mahalla9.invocation01",
+      "selectedSourceTextSha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013",
+      "comparison": "EXACT",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "B2R1",
+      "legacySourceTextSha256": "60c3afa39eea34268d45ab18e398fb1e0f59a96f898d20d37a4ee9af4d68ca63",
+      "logicalId": "sggs.salok-mahalla9.heading01",
+      "selectedSourceTextSha256": "60c3afa39eea34268d45ab18e398fb1e0f59a96f898d20d37a4ee9af4d68ca63",
+      "comparison": "EXACT",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "CVCZ",
+      "legacySourceTextSha256": "3426e03cd2f665f4c066dc02ef02233b28f85dca832128b9bc92b21e39dcf929",
+      "logicalId": "sggs.salok-mahalla9.salok001.line01",
+      "selectedSourceTextSha256": "08e55f75bf4333448d5f4171bd0912a38d6af7646f7f4e446fb616165beb7e16",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "5P84",
+      "legacySourceTextSha256": "81ed79f7c824e61da7821d038920dfb5f41b779a7a75043e20b91989eda960ff",
+      "logicalId": "sggs.salok-mahalla9.salok001.line02",
+      "selectedSourceTextSha256": "9b49b2390530255febcb5b4f527e7f2f8cfe48eb8106b6f19988195d8b968667",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "8G8U",
+      "legacySourceTextSha256": "d6a39fcaaa6991916c9d0cf309450863a0c05b6c2568b100bd34569f1082cd3a",
+      "logicalId": "sggs.salok-mahalla9.salok002.line01",
+      "selectedSourceTextSha256": "8f0bff9322a305429a11b8a288f746bd78769cb608b10de90425e16db8028e64",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "PSYM",
+      "legacySourceTextSha256": "d96ea429db693ec05a479f8ae21a79ec9f5e7c7638278adf91d70cb9e175e18b",
+      "logicalId": "sggs.salok-mahalla9.salok002.line02",
+      "selectedSourceTextSha256": "78c07716b20d90c5657e2acbbec2d649f8c3ea064c45c3038991ade6966e2806",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "HCV5",
+      "legacySourceTextSha256": "e1fb50e35f49011254913a2c2ee16fa3fc4679e4d40bd1e1daf37628eac7ad30",
+      "logicalId": "sggs.salok-mahalla9.salok003.line01",
+      "selectedSourceTextSha256": "b996ce055791995837b5213ce054849879512de56764902841b927ad69f90ce5",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "6GPB",
+      "legacySourceTextSha256": "1eb763227381486eef8032a27435db97ba92ec9f307862f39bd963d25c142400",
+      "logicalId": "sggs.salok-mahalla9.salok003.line02",
+      "selectedSourceTextSha256": "75a9f5f1ee0b0733230e6394f87fa95afc21ea072364a1ce5fb9870b4760c8e3",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "X6MU",
+      "legacySourceTextSha256": "4fcdf7d7b2fa173c5b5147be7c42ab490e6d6289855f906dda1bcf612691e2c3",
+      "logicalId": "sggs.salok-mahalla9.salok004.line01",
+      "selectedSourceTextSha256": "fd93649631532d663cdf07c162c07254c596049e05aa81d7a209f2db806c968c",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "66AX",
+      "legacySourceTextSha256": "e8cc03e5979a2728f6e0f3fdf346d704e6298edf0ddda66f957bc5cdee8cb2d2",
+      "logicalId": "sggs.salok-mahalla9.salok004.line02",
+      "selectedSourceTextSha256": "703d7d65da37c8034549106dc693932a82dad2668aef1fc385cc782d7ac6fe2c",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "1GQF",
+      "legacySourceTextSha256": "ba542e5ce8c46f3e88193609b1e8f901bed5cd53df67502be4c115c829c98be0",
+      "logicalId": "sggs.salok-mahalla9.salok005.line01",
+      "selectedSourceTextSha256": "55444f01689ba3ad079ea0393487d4a6a2bee4236a421f73a17ca01c536872fd",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "QEL8",
+      "legacySourceTextSha256": "db260910ceb0be71c8684d43b98be50e354330fe5ac2b50c49ca5bb44b0e854f",
+      "logicalId": "sggs.salok-mahalla9.salok005.line02",
+      "selectedSourceTextSha256": "b21286acee58ca1b7be3a359aaaea660d4f79895786fbead87bfa40d4dfa8a07",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "2BH7",
+      "legacySourceTextSha256": "ec0fc99930fcc211b4c80758a83d2c1c81476dadd4494429cca9c31fa0747e2a",
+      "logicalId": "sggs.salok-mahalla9.salok006.line01",
+      "selectedSourceTextSha256": "26e0322b5822b30ed98a894d07141364a8f4d968ee5ba12ab6d9d4236708867b",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "C042",
+      "legacySourceTextSha256": "f256d6ac9b10a65870b268cd89eca991ca0ef05a0d4e944f91c6db61c3405f89",
+      "logicalId": "sggs.salok-mahalla9.salok006.line02",
+      "selectedSourceTextSha256": "bdbba8682aecce6900e3e2bdf6f16bb6eca44e1f1a87a641177371ff3a74d87d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "BDU3",
+      "legacySourceTextSha256": "e991c3eb3a74937b830affbb8e0ca67414f103c54745cbe8c6e45a3aaa212a6a",
+      "logicalId": "sggs.salok-mahalla9.salok007.line01",
+      "selectedSourceTextSha256": "b5603b46e91c7f5ef31b001e0a6174cee2db27e4c56bbd0ea3969ad9e0bc96c6",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "M3YB",
+      "legacySourceTextSha256": "34206f15d2ec6649e43227d2a099c4d5c8cf3c64973d6160beb4662a08104619",
+      "logicalId": "sggs.salok-mahalla9.salok007.line02",
+      "selectedSourceTextSha256": "d422635089dcae809b2c99b11ece9b52c548d709fe17137b8a226542faff7544",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "695N",
+      "legacySourceTextSha256": "58d16ab9b177c13a9a80d273c9e687cbb7e9f4eb3b5ed098a34f956bb69411c0",
+      "logicalId": "sggs.salok-mahalla9.salok008.line01",
+      "selectedSourceTextSha256": "018db4594f99221801ea5a663b016b617983d767bb2b07a879452640e1ee809d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "25VM",
+      "legacySourceTextSha256": "763613539b3edb7e4f9f1925b2a50ffa1e2d0061ab2b97865b3c2b9c8e6b4130",
+      "logicalId": "sggs.salok-mahalla9.salok008.line02",
+      "selectedSourceTextSha256": "e9f1e100c14e639af109e21fd331b464115055fb8b92cfa84e39c1a5b52875cd",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "DX06",
+      "legacySourceTextSha256": "319eba2ec4c88a929add92b81e1fb1730ee6f03e7f609b013e13d02fd743328f",
+      "logicalId": "sggs.salok-mahalla9.salok009.line01",
+      "selectedSourceTextSha256": "ff81897364b83851573f9b6cbc0be70fe1eccf899455cc9fc18f463efe0a9a5b",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "ZSH9",
+      "legacySourceTextSha256": "b8505cefbf72e1505b5e0cc23a4411cc01ab77aeb1985c1442885d9632c745b6",
+      "logicalId": "sggs.salok-mahalla9.salok009.line02",
+      "selectedSourceTextSha256": "c61983fb428e105a40e3a6b9e8d79c1dfa8881b74cb5968c64a956d62ddb14b1",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "3DMV",
+      "legacySourceTextSha256": "1dfb56086c882b9a456436938c403669fdc48a39560fdb08c850e675f416be02",
+      "logicalId": "sggs.salok-mahalla9.salok010.line01",
+      "selectedSourceTextSha256": "765638a37364697eb22848eaac727b130674445708b36a78b2bff8dd09e1bab1",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "0RWM",
+      "legacySourceTextSha256": "dc042ce0ba1fbaf68b91d4390fccc0c9c574320305796513315deb07ad2d11d6",
+      "logicalId": "sggs.salok-mahalla9.salok010.line02",
+      "selectedSourceTextSha256": "d9953d0ce1325a57f5fc6628f90bf31c1d8180223945e38c9a21f939797ee2c8",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "MXRP",
+      "legacySourceTextSha256": "668823645c393145b9c6e4a11578355217190b0dc7415c5a04288b213e163afe",
+      "logicalId": "sggs.salok-mahalla9.salok011.line01",
+      "selectedSourceTextSha256": "dbfbe8654d71b89be8a68670a0f9299d28acc81fc6a88dc6d5976589f65d769f",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "D2JK",
+      "legacySourceTextSha256": "9f44459d01ecf5b3cad014efec90e46a63ee5fddebc00224af68a9ad236f49f5",
+      "logicalId": "sggs.salok-mahalla9.salok011.line02",
+      "selectedSourceTextSha256": "c6bfa161e5c5cf34b921dc1d6b17cd2b69890ae6b189fa4162eaa16d9cce4815",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "38UE",
+      "legacySourceTextSha256": "cb91da63bf0789ebb7d8d8b03a731dc04c168ce46d0b36d8fbca93bf5552d60f",
+      "logicalId": "sggs.salok-mahalla9.salok012.line01",
+      "selectedSourceTextSha256": "48807c3b5efd5bf5e271b7c84efdccd566e0d794f6e6153e3863d647ad8cd4a2",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "NY49",
+      "legacySourceTextSha256": "d0b205cbcde513e6dd9413e9b6a44c98296c283f26b615ea4ab437bb698aeeed",
+      "logicalId": "sggs.salok-mahalla9.salok012.line02",
+      "selectedSourceTextSha256": "0265fcd5c0fc465a392f2fe4b9f901305e42cef01d08654d76b06e380329548b",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "MFZW",
+      "legacySourceTextSha256": "434f0d8405bde93cabc7f6e7a2733fb3cf03146180548684ba509814a4ce950d",
+      "logicalId": "sggs.salok-mahalla9.salok013.line01",
+      "selectedSourceTextSha256": "0bcbf11068ce686304a6dc5da0838e6c7f46ecb4649ff77a26ed20e98ed516d8",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "2H36",
+      "legacySourceTextSha256": "9dab9e3ac498d12773ed8759d73d8990e1ca0c50a600f20f98e8ba388c38ad82",
+      "logicalId": "sggs.salok-mahalla9.salok013.line02",
+      "selectedSourceTextSha256": "95174a5b4fcd5a5a6f53517dc0dc02c37d621e477bb528d76c18b508fe4a8378",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "R074",
+      "legacySourceTextSha256": "a57201f5a2bd6147523dc8a6e1f7b38e24e63d397d3c2b713c76dc1295b276d6",
+      "logicalId": "sggs.salok-mahalla9.salok014.line01",
+      "selectedSourceTextSha256": "1e305e4d0f3c7ef7964328a33be714dc856de5ae491454940f7810e6d086e29e",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "D6BL",
+      "legacySourceTextSha256": "4cba5e18159e7f7393c8730c20ff99088086c05bb9ec02b9454d56c384e896aa",
+      "logicalId": "sggs.salok-mahalla9.salok014.line02",
+      "selectedSourceTextSha256": "1199d3ad922e87c534470a4f2e3f9ff577beec5d92508842d562c1e9282c6cb7",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "9YAA",
+      "legacySourceTextSha256": "211efca351e08678c6afc2b07ce5e156f25a220a47381fbe64e7c69d48fe7312",
+      "logicalId": "sggs.salok-mahalla9.salok015.line01",
+      "selectedSourceTextSha256": "b6f24b615af4f0bc58914c0a7bce7364e74e2f128c8ac472e48e4d974b3755bb",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "XP4Z",
+      "legacySourceTextSha256": "d47326da6a4b4d45d0d66df040d5ce4f678168f0a40dc820b2f89421d853d9f2",
+      "logicalId": "sggs.salok-mahalla9.salok015.line02",
+      "selectedSourceTextSha256": "d569bd8fe184bf3589ee8b4f15e2a454f40884ec1133cc8d0921cf4b3bab0b76",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "NB48",
+      "legacySourceTextSha256": "070b87df1b59f9303a53392246df272ee580ded8e97f744497030f8c1699a0e4",
+      "logicalId": "sggs.salok-mahalla9.salok016.line01",
+      "selectedSourceTextSha256": "55a44f640676fa0578779ffeddb13c449750f81a6bfb31f19dda4ac7b0e57fb0",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "5GVA",
+      "legacySourceTextSha256": "5945bd2cfae272b383619771118cf2a473125328e8f47c739bd5f18334fa5a12",
+      "logicalId": "sggs.salok-mahalla9.salok016.line02",
+      "selectedSourceTextSha256": "290f9546abaa12bfac92cfedb18c7b3fa9b9e574945f5e7b8aa837769ba56824",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "9GBG",
+      "legacySourceTextSha256": "0852f2d14fe952a3f1db9498a6f9b78ede6d9c55b41d5a49b8e0627194a28593",
+      "logicalId": "sggs.salok-mahalla9.salok017.line01",
+      "selectedSourceTextSha256": "4d62bdf029b2f83003604a236c8e8e2287e66d4c778b65169c4478d32ad47189",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "M1K9",
+      "legacySourceTextSha256": "fa510b6c8b15ec48c5f6cd503e1b38ec1e38f87c55cff2dbf80365c19c565ba4",
+      "logicalId": "sggs.salok-mahalla9.salok017.line02",
+      "selectedSourceTextSha256": "a97d176cd328719b74cc871d233da64819381484730198034a4ad1d46ff91dae",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "DFPD",
+      "legacySourceTextSha256": "72534d092994a850b9ea6038eb335e7827c82caa7af10ca7e320cd1ee683d50f",
+      "logicalId": "sggs.salok-mahalla9.salok018.line01",
+      "selectedSourceTextSha256": "94e3df76277f37648a4b56775de5e3e982780ff7c914d273ef70f8474deb9b7a",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "MHEJ",
+      "legacySourceTextSha256": "07d73557caf85613aa282c496e136e6123c6ebc680994c8b28a1d605566d9df9",
+      "logicalId": "sggs.salok-mahalla9.salok018.line02",
+      "selectedSourceTextSha256": "78947796026bfcc9c8ae32e78926dc839fc66b7ae70cea475f29177a3fe5f2b1",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "3AVA",
+      "legacySourceTextSha256": "64d707d2a9abbfa85c13800ef37f9534b58a299355ae537aa33313bf1bf66605",
+      "logicalId": "sggs.salok-mahalla9.salok019.line01",
+      "selectedSourceTextSha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "Q6YC",
+      "legacySourceTextSha256": "672100f11a4edbb12ac89294fb0d1f6e2f9c4da65fc2b9bd3f69a860cb3aac78",
+      "logicalId": "sggs.salok-mahalla9.salok019.line02",
+      "selectedSourceTextSha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "NZN1",
+      "legacySourceTextSha256": "b58a4f213480de25ab07af36dc41d07abf8eff792f1f69e3325cbb59f9230163",
+      "logicalId": "sggs.salok-mahalla9.salok020.line01",
+      "selectedSourceTextSha256": "71b0faf15fd86d4423a1953410a9430b6dcf043ce8d9fd0600ec7e20bdb23223",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "N87E",
+      "legacySourceTextSha256": "edc398a6d1e365cf0d9c600280725a10feb5670ea262169c94923a6d2781a8c3",
+      "logicalId": "sggs.salok-mahalla9.salok020.line02",
+      "selectedSourceTextSha256": "952144810dbdfcbb6b0f64a6f3e4ce2a4c4a6748e116449fb4430af17453f2ed",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "6CJL",
+      "legacySourceTextSha256": "3ff614c896b8ffd73cdfe9a7460d7eccd55cb80c170b1dd93b8020f09b7215c9",
+      "logicalId": "sggs.salok-mahalla9.salok021.line01",
+      "selectedSourceTextSha256": "3f4640ac644713689bbfd96e5c3ca60b52b1c0fdb08ce55eabb4c1ad40547143",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "LXHQ",
+      "legacySourceTextSha256": "7db6b6b6983a9d7ee430baa7292f70936a96c16c39f1b5cdd3e788f82839d7ed",
+      "logicalId": "sggs.salok-mahalla9.salok021.line02",
+      "selectedSourceTextSha256": "3085dbbed52340fedc71bfe4da399a4a69869d1890e404b8e445fb02426e507f",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "UMC6",
+      "legacySourceTextSha256": "59f0c22fdff1a74c24158ec5db44fbff86361dbbddf2b217da326f3a32b2cd61",
+      "logicalId": "sggs.salok-mahalla9.salok022.line01",
+      "selectedSourceTextSha256": "fa5ce013b6669ec5e6bd6417c36c972f191d4e5eded5623e009429039481f9a0",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "2GC1",
+      "legacySourceTextSha256": "5a2e4df2a95c66e1aa97feb691d27f065a57038814b2e36dfbb07dcf73b6ca3a",
+      "logicalId": "sggs.salok-mahalla9.salok022.line02",
+      "selectedSourceTextSha256": "f0fe83facdc47ca41971dfe94017bd4caa2a0f05b8f171ae22cdb9050f07707e",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "V0DJ",
+      "legacySourceTextSha256": "2b44d788d962999accc9feb3919e981e5c2ca66961855248e7390c98b814685a",
+      "logicalId": "sggs.salok-mahalla9.salok023.line01",
+      "selectedSourceTextSha256": "38bebb7ce4e2557a9eb6c81d8c888c54308f9377a3a27f8d47db19940e0ab153",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "JTHD",
+      "legacySourceTextSha256": "5b9eab6da2565763ed4a4e1244468ef01177811dc133a73ed0a895aead5c832d",
+      "logicalId": "sggs.salok-mahalla9.salok023.line02",
+      "selectedSourceTextSha256": "f6fd6ed3d341c2cefca952efdee7c8e8f72cd78aac2affa0eda68261b861d529",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "CKXJ",
+      "legacySourceTextSha256": "b8405c63ce44eb5e04873f7121641785f9d6bba2c36973ccce96042ea740a5d2",
+      "logicalId": "sggs.salok-mahalla9.salok024.line01",
+      "selectedSourceTextSha256": "aeef30f4849018aeef463d2ee5ace4748ea3f5d08d75cf731558c5104b749eaa",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "SVSB",
+      "legacySourceTextSha256": "f55d82c554df5599ddddbcc88f88a0836eec659dd29b89276a2d714887f8a175",
+      "logicalId": "sggs.salok-mahalla9.salok024.line02",
+      "selectedSourceTextSha256": "34a90c770f685f871574b99aa7822b4dd112cd29a7058aa4ab04e9b4c9508323",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "Q1DK",
+      "legacySourceTextSha256": "45ae21f40c76fdc4712cf1e590b2052e611df4401d3fd529101908a005463dc2",
+      "logicalId": "sggs.salok-mahalla9.salok025.line01",
+      "selectedSourceTextSha256": "9f856a780a17ed177a18087b356fa87d5b595dad4f4dc6da8f9adb69d9a6c85d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "LS4E",
+      "legacySourceTextSha256": "0576c6aa05cdee31abecf3601804d7451e74f037618b5707286ce308b9eff989",
+      "logicalId": "sggs.salok-mahalla9.salok025.line02",
+      "selectedSourceTextSha256": "28665f0d3387f77c155db8e1b2acd6ebf98759e9eb4c75f095c4ac8b34f2f830",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "MLRL",
+      "legacySourceTextSha256": "448e5a059757ee2e1e54719a34122ea6b7ad99200de16f809025d27104ea47fd",
+      "logicalId": "sggs.salok-mahalla9.salok026.line01",
+      "selectedSourceTextSha256": "c6ee8b4a82beee48e294b16758a49aeab8b3b2ea2e19e993f7a59d29ee60caff",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "UQ4N",
+      "legacySourceTextSha256": "26910785497102dbdf935f722c08a248b66142e5a0e65418817104dade9df1d3",
+      "logicalId": "sggs.salok-mahalla9.salok026.line02",
+      "selectedSourceTextSha256": "75208a3f5023ca4f388904a13a094f554781a64919ba15db942fdeb8b12866fc",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "Q6AC",
+      "legacySourceTextSha256": "58451476208d058bffcfb432953f0837b630de9aaf56931f42dd600fd6deb3e0",
+      "logicalId": "sggs.salok-mahalla9.salok027.line01",
+      "selectedSourceTextSha256": "820dd004ad1de56259fdff6ff0521d94e18a298b295693caaabee6f2525ea04f",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "DXGR",
+      "legacySourceTextSha256": "8e9b5d6b75349e3856af55905b676dd7f48eb445f3b2c9b725a2648dac160968",
+      "logicalId": "sggs.salok-mahalla9.salok027.line02",
+      "selectedSourceTextSha256": "89ca9768f241e588f21fcf3f5c02680214012c15a93d6a9c4704dd278f8cee07",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "48JC",
+      "legacySourceTextSha256": "6393a26027a40f4ddcf315c8fa2ea5dee17095baf045ef33f592c0b415e01ef1",
+      "logicalId": "sggs.salok-mahalla9.salok028.line01",
+      "selectedSourceTextSha256": "cd2155ec327f0b41c22d326f3288f6b5a35ece9834f7ecea62293e1a19f5cbc1",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "JBCJ",
+      "legacySourceTextSha256": "bb329cafc4eab548ec3a9a0e59c80400cb6549bd3022733318b1025a1bc7731d",
+      "logicalId": "sggs.salok-mahalla9.salok028.line02",
+      "selectedSourceTextSha256": "269f947f0145e3fe2b25c18e01573232f0dd282250e9856012fb8e4cd5900a73",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "320R",
+      "legacySourceTextSha256": "05430d96960754a23370eff5c94693fe2388be0f69a3a00a938ba897bb1fa31a",
+      "logicalId": "sggs.salok-mahalla9.salok029.line01",
+      "selectedSourceTextSha256": "902be3f629d13ed3e9ba9cac1074a5bd12517e3f0050f5c7f918f6dce1ab0e6c",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "A1T0",
+      "legacySourceTextSha256": "8afdc2897b05e4253f7b88d93b05142003de9070237550d67d3a53f180e6824d",
+      "logicalId": "sggs.salok-mahalla9.salok029.line02",
+      "selectedSourceTextSha256": "5d0c3251fcc2ef7d2d35f6af203439fbc1a4d16125ff0d67d0482e0c9bd763e2",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "WZY5",
+      "legacySourceTextSha256": "ac374407fe50f797026278ab6c650f96a941fac60ef23d72ec6b26b5bd762eb0",
+      "logicalId": "sggs.salok-mahalla9.salok030.line01",
+      "selectedSourceTextSha256": "39b7ff5ba49e849d333684441b0f3b54fc000593544a6f6b4aea0ee411ab0991",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "8UJJ",
+      "legacySourceTextSha256": "90d11fd48c558450e4a186ff98f1990a1f00bc43340a478ca7a4ea099fcc29ad",
+      "logicalId": "sggs.salok-mahalla9.salok030.line02",
+      "selectedSourceTextSha256": "ed4fd1902849660befebb3ca86e6e476aabc83438052f09e72c93ae3d39e5c39",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "392V",
+      "legacySourceTextSha256": "94e55265c431b234819b22bf4d97685b12f4eaa87681912830d6a1b58de87856",
+      "logicalId": "sggs.salok-mahalla9.salok031.line01",
+      "selectedSourceTextSha256": "eb21a1abe44c494b96d9dfba90177a4d1876de8eda9310cad7936a6386a09133",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "2UU0",
+      "legacySourceTextSha256": "d209d53ad518e11632b92d256a084da4b9800fb16023b98825f32632f0614977",
+      "logicalId": "sggs.salok-mahalla9.salok031.line02",
+      "selectedSourceTextSha256": "6119d87bbdb640119ec2972d0695581dc6c2a225aa4554379f26efa10aee6450",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "GP1L",
+      "legacySourceTextSha256": "fcb3f4c429605822af36b6e3688e6c9d9f060c35a556d1b05d9fb42e9cca9101",
+      "logicalId": "sggs.salok-mahalla9.salok032.line01",
+      "selectedSourceTextSha256": "302e39a9ca76df0892c8634e800fa5a67ed2b993eaa871d5aad5bd8b8a2a2da3",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "4GEC",
+      "legacySourceTextSha256": "3bb70c1101fa90662fd13150658fa390018e031b67e30f38bd5a4b0e84da7b9e",
+      "logicalId": "sggs.salok-mahalla9.salok032.line02",
+      "selectedSourceTextSha256": "00193e56e3a4ed5d90bab7d6b95f8fc08c6f8be2dd043b3253f9bccb6761e375",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "EPRD",
+      "legacySourceTextSha256": "f86e247fb4caf0a22d45de3678dac35baa64a9e12a7bcec5e61e5909bb052cb7",
+      "logicalId": "sggs.salok-mahalla9.salok033.line01",
+      "selectedSourceTextSha256": "424e8c036556c1d2d1f94f0c4b210d054d21bc9fd999d9eeb3a17df2dc3cd3f8",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "FGBT",
+      "legacySourceTextSha256": "233264bb6f9b6524345a881cd5f90f2f5a986f693b1c30ce98d612ef8dedc4a7",
+      "logicalId": "sggs.salok-mahalla9.salok033.line02",
+      "selectedSourceTextSha256": "9214aa194c7f3ac72e52a736cba54923203267c65f18b7a6744450ef754c3a79",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "09RX",
+      "legacySourceTextSha256": "4fd9878ee8cd9c1a9eff84037cb628aa121ec3fcd721b759da28ec8d98ead2e3",
+      "logicalId": "sggs.salok-mahalla9.salok034.line01",
+      "selectedSourceTextSha256": "5f965c520ab32b8c20871f8a286fdbacfdcd89706defc8b32deb0bf1c15350a1",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "81YR",
+      "legacySourceTextSha256": "353abe54fe259b40fbb0dfc17664bf6c7ab12488fbc921d02aa4a59c363de490",
+      "logicalId": "sggs.salok-mahalla9.salok034.line02",
+      "selectedSourceTextSha256": "1cfbbb2b25e0330b85410876f9a70f7b2dffac47e1e0709c325a8353adc1104e",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "CCE4",
+      "legacySourceTextSha256": "b37149510ddc3a59e29a484ad672dac857a54badec121074acba3dd108186b62",
+      "logicalId": "sggs.salok-mahalla9.salok035.line01",
+      "selectedSourceTextSha256": "4413c0da048e971cba999f9faf41c24972667d7af6421e8482ff7050f156419d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "KWV5",
+      "legacySourceTextSha256": "37887432907ce8e9add6749f888a33babff9488e1d1f5a6f21b833acad21f5a0",
+      "logicalId": "sggs.salok-mahalla9.salok035.line02",
+      "selectedSourceTextSha256": "bc97458cfd66518b7758981decb9fad21367f79d1161a10a07ab403441f11f58",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "4XF6",
+      "legacySourceTextSha256": "6d8de840da178af93573bf6cc26caf40048d4fdcc3be3bec95b619b6c5fb5b63",
+      "logicalId": "sggs.salok-mahalla9.salok036.line01",
+      "selectedSourceTextSha256": "68fa501eea57ad55650c1e52eba8496c12f83b4d12877a6ffa55073f034ab4b2",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "C987",
+      "legacySourceTextSha256": "0f5fdb0b249e77b2fbef0a76121fddcb8a3b20d84e7ac1b1fd0f171ab81d92e9",
+      "logicalId": "sggs.salok-mahalla9.salok036.line02",
+      "selectedSourceTextSha256": "dda8ce12045025a5f3576f6123e9ab2655580d6c9095c23028554730f9bda765",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "3X2Q",
+      "legacySourceTextSha256": "3150170fcf62561fad796ca6d421d4dc377568920b812de4fad9c72ca6b52e24",
+      "logicalId": "sggs.salok-mahalla9.salok037.line01",
+      "selectedSourceTextSha256": "bd6790a599a1ff4ebe99262ae37bb11d61b09e48512e2dcffc528ed173a8a5ff",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "YQ3X",
+      "legacySourceTextSha256": "e43def9e527d22378af1b44c376fb1627bae3fcf1eac2d6b3572c178cfe7bb42",
+      "logicalId": "sggs.salok-mahalla9.salok037.line02",
+      "selectedSourceTextSha256": "ce42d3c88c1907bd0e7fb4bcba551429bff13aca0b3ae320c73b2e7800b1f1ff",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "08CU",
+      "legacySourceTextSha256": "a5ad3f599f30337fae2b17b265586ef4435e9a7447aceac93ca40755f4e12cd3",
+      "logicalId": "sggs.salok-mahalla9.salok038.line01",
+      "selectedSourceTextSha256": "3dd502da44fc67c77d70eaea4eb215b2cd49b273a66ad6dbeeaf5691336fe38a",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "RZPN",
+      "legacySourceTextSha256": "44aa0ff98346996ddc80fe65b08bee45674ec2e4fdd942278ed016c3de465aec",
+      "logicalId": "sggs.salok-mahalla9.salok038.line02",
+      "selectedSourceTextSha256": "0ff7a9263830810c6a29ffba7ea0c605958476d1f4a80d9fcf38fe4c8805acce",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "MDUA",
+      "legacySourceTextSha256": "ac16c1ca3b3ba4e166e7818c52062b613d9403d4be715834049aff803ff0b02e",
+      "logicalId": "sggs.salok-mahalla9.salok039.line01",
+      "selectedSourceTextSha256": "d2daa4c7b5ca1f63a1874b39ed9e95ab888fe07bb2ae56c88cc18ba404730246",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "CBAN",
+      "legacySourceTextSha256": "0eb0cf0388460afe92aeac657d5ee016e60170347a1c38fde0be76ddbf559927",
+      "logicalId": "sggs.salok-mahalla9.salok039.line02",
+      "selectedSourceTextSha256": "1ce75ab78dc93f36e2758430db91c354c4ca1ebc844304e718ec535a3eed4e3e",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "NHPV",
+      "legacySourceTextSha256": "9655d8884822ab90b949e139bd748fe64b7ebf1ac629c8e0954ad2ce3e81199e",
+      "logicalId": "sggs.salok-mahalla9.salok040.line01",
+      "selectedSourceTextSha256": "b1d5dfe3cc31e29d58320f74659a2179a5e3f1a7d80f66ab6610eb3270cf128b",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "ATWR",
+      "legacySourceTextSha256": "9b1e5eef3886cbeadf7234ab2a8ee8b96790bb7949ed725fd691d9c3e1874add",
+      "logicalId": "sggs.salok-mahalla9.salok040.line02",
+      "selectedSourceTextSha256": "d7d7eabac0211884899cba3f0008d8c5dd58a0101365b0088019a49d42f9d6f1",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "R5K9",
+      "legacySourceTextSha256": "44cb628e8b357887a63b409f4581f41ae4ef1bf318ebd44c36e6ed87b098c285",
+      "logicalId": "sggs.salok-mahalla9.salok041.line01",
+      "selectedSourceTextSha256": "c69ab99f8062188546eb74f9f191db8e13f11df04ecff85f8f8b07691224e412",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "R2PA",
+      "legacySourceTextSha256": "d8d1b62bf9dae0ea3c411b35c9be3d82af5bf1876eacc45c8817a9b2b97ad5f0",
+      "logicalId": "sggs.salok-mahalla9.salok041.line02",
+      "selectedSourceTextSha256": "20737cbba561fc6e09ed88e0c608c34eeedd7b721dd2c189acdf9e6487ce80f0",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "NJ31",
+      "legacySourceTextSha256": "feeccbecd457f83677e0cc858327cd19b0a896c9714ebd3da90aff782d2b6af4",
+      "logicalId": "sggs.salok-mahalla9.salok042.line01",
+      "selectedSourceTextSha256": "1a50bd1ed148a1a57ec45a2247fc826d2015317bd087019e0b3a6b457bb75afe",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "X9DF",
+      "legacySourceTextSha256": "d3f6f2095ec106f3c546cb313670bd677eaa3dd99c4af8c85fb895df338810d8",
+      "logicalId": "sggs.salok-mahalla9.salok042.line02",
+      "selectedSourceTextSha256": "2ad86bf6d62e1a999fc44ad53574498d9efd2780131a01c908e73d76cd2019eb",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "3GKJ",
+      "legacySourceTextSha256": "b2d6dceeadfaf08bd18e7a7c43d77f5e6368fb946c3ca67c553b7978b430aefc",
+      "logicalId": "sggs.salok-mahalla9.salok043.line01",
+      "selectedSourceTextSha256": "25d433276475026312a8cc3c4a6ef3763185072e12d9c6374674cddaa5994539",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "11UU",
+      "legacySourceTextSha256": "144e4b41850a6ebb0ae51769950ed6603971bf9270cd63a206709e417133b6c3",
+      "logicalId": "sggs.salok-mahalla9.salok043.line02",
+      "selectedSourceTextSha256": "b0601b1038d41150463f79c036c570b5ed676614c67a98ef6b774c0ce909949d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "RV93",
+      "legacySourceTextSha256": "353065bf232ab1d10ca3b961fd62423ce45a75647d77645c681dddfa858dc0f2",
+      "logicalId": "sggs.salok-mahalla9.salok044.line01",
+      "selectedSourceTextSha256": "df7cd9cad537de137a056c8172039dc6b7b5e979368b1b0b266b1f2f0bd6983c",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "U4R6",
+      "legacySourceTextSha256": "4501ca7a03155c4b0871cba892d32cdb1dffd9d27569d16db0dd508fdd1e9c0f",
+      "logicalId": "sggs.salok-mahalla9.salok044.line02",
+      "selectedSourceTextSha256": "270cf17fa8d28eef8cab1cb6560ba6d57a7f0837e8ba40af80097739f3647a7f",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "VH7H",
+      "legacySourceTextSha256": "90b849f7197a47a809ae0ae4e04cd4af62bc0aab62fa1d3cc6f863d01f9c6a43",
+      "logicalId": "sggs.salok-mahalla9.salok045.line01",
+      "selectedSourceTextSha256": "2066c06eda0ca6ef71968101476a8a79cce11d7273a864c167b5a965e1e6a099",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "UT9M",
+      "legacySourceTextSha256": "4253997744543df94e691417140eb3a5bb4e5af9d7ea5e324db74e1b79cdd796",
+      "logicalId": "sggs.salok-mahalla9.salok045.line02",
+      "selectedSourceTextSha256": "6e614ad7d75d82dafb39d4395325e85de4a772ea5e290ef75867a27cd2f98f87",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "5FBT",
+      "legacySourceTextSha256": "3a67ac35ff9336e0134aff0ff99246396f0683beb151a22a120a823ea529cb78",
+      "logicalId": "sggs.salok-mahalla9.salok046.line01",
+      "selectedSourceTextSha256": "5a17027198e7705e849b78105ff58bb33034e0b7cf2cdc45e7bdd8bc66aba1fd",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "P9CD",
+      "legacySourceTextSha256": "26919fe00007684456f2b5f6a36eba2196cd044ef0f6f2f5de9cd0113c245230",
+      "logicalId": "sggs.salok-mahalla9.salok046.line02",
+      "selectedSourceTextSha256": "6c2072798c8e0afaa3ba873d1c7a59f6fc26606369009faa962168673a3269b5",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "NH6N",
+      "legacySourceTextSha256": "4c40ddd8e1b6612c53d24efa06703f55bf4d69cf61553817d478c03c4b3c6c75",
+      "logicalId": "sggs.salok-mahalla9.salok047.line01",
+      "selectedSourceTextSha256": "6fa1be204111b620f442572dd7270a3b1b17f3294a3d4d4a02d6d853b9af50a3",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "PGFM",
+      "legacySourceTextSha256": "2d5c6e29593aaf775a7c62cd8c47ab94346e605715d049dfe6a7835987adda30",
+      "logicalId": "sggs.salok-mahalla9.salok047.line02",
+      "selectedSourceTextSha256": "35e77c9bfe34bbf3ca1ffa63b91fd8b19d6a8f9cd09b72cad63c27a7d91dbec8",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "UEBN",
+      "legacySourceTextSha256": "a4bced4dde62f9a7ff77f59c419787f3c929334d79a7e7b9b98f1dd26481cc54",
+      "logicalId": "sggs.salok-mahalla9.salok048.line01",
+      "selectedSourceTextSha256": "5d788f20b0e6858c4750c6528612f3280c48dfa4c64dd23c70cb7585931ace7a",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "7YTR",
+      "legacySourceTextSha256": "5be026b829247dc94ac3acbeb64a5333af76e07bbe4c4148a306584c68a35013",
+      "logicalId": "sggs.salok-mahalla9.salok048.line02",
+      "selectedSourceTextSha256": "b82ed9f60a559a994d287b66a7a027de8d320985c8225609cddc0c5a2f52d017",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "BS92",
+      "legacySourceTextSha256": "2db975f36350f36d0cf9228616e2778d88135551d211fda7ea6763f56c193906",
+      "logicalId": "sggs.salok-mahalla9.salok049.line01",
+      "selectedSourceTextSha256": "82b925e6f3d46cadfc15e8661ec6757b434d1ca3a598f636e70ba0f160e1e694",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "CHVQ",
+      "legacySourceTextSha256": "29638f4e2e0b70acc2d4b651b2c4d20a832128128fb035ec2efb3fc52da9fb0c",
+      "logicalId": "sggs.salok-mahalla9.salok049.line02",
+      "selectedSourceTextSha256": "24a00b7d710eaa54b50905ad762c3300423c2586fc177fb535e954c0049ffabe",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "2G6B",
+      "legacySourceTextSha256": "0d88aa9bdb0ff0167d41b543ca045b2681974ba88e2b1537e726a8d2f84642ab",
+      "logicalId": "sggs.salok-mahalla9.salok050.line01",
+      "selectedSourceTextSha256": "f045fd1596d8561f90540025e4dabc78a406e4daf77718b1c14a3f5d36ef2a48",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "MSFT",
+      "legacySourceTextSha256": "e4b14e7e4d0c17fae5cd5bce4eefaf3f3acb230eac5f429a02e09a663878386e",
+      "logicalId": "sggs.salok-mahalla9.salok050.line02",
+      "selectedSourceTextSha256": "46bc049209dfdd8f3b2bec38a789c1e9bb75370ef1b6bef1d55b45bf300d67ea",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "KYJQ",
+      "legacySourceTextSha256": "a382101b53391eb4ea0b9eceb725a16186d5d7e210799bc34190ca1879260b03",
+      "logicalId": "sggs.salok-mahalla9.salok051.line01",
+      "selectedSourceTextSha256": "e5796a3f54a964a205eafc3915ef84d12472038f3414dabdecd2651e696bd25f",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "FKND",
+      "legacySourceTextSha256": "7b06fbdc528b605a74ee5ce9653fde778d1c31ec3f795fd99f5077c68ad458a6",
+      "logicalId": "sggs.salok-mahalla9.salok051.line02",
+      "selectedSourceTextSha256": "07de8c2f56e401e350f711671f621887ce10148f59ca4730dce8d13f7bf5eb46",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "7C65",
+      "legacySourceTextSha256": "63ab08b01d40611d8c0521b44329e372e55c95f254f64aea2eaeab2507c3c348",
+      "logicalId": "sggs.salok-mahalla9.salok052.line01",
+      "selectedSourceTextSha256": "bbb434f1ad7e532fa6310376940754f72215f622a9e381d18f80119a9091f75d",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "AAV4",
+      "legacySourceTextSha256": "a903c985688914e293a24ac4e2682fd53c57810e533556b7ed94da17688354b0",
+      "logicalId": "sggs.salok-mahalla9.salok052.line02",
+      "selectedSourceTextSha256": "a13995315897bba42703c94d0f0e5b64eb182d98cd0210336d1ef6436eb3af05",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "94ME",
+      "legacySourceTextSha256": "485f674c9a1425fae04bcea542b9aba686fbb872a7607c2a2e0ca9134dd4d696",
+      "logicalId": "sggs.salok-mahalla9.dohra.heading01",
+      "selectedSourceTextSha256": "485f674c9a1425fae04bcea542b9aba686fbb872a7607c2a2e0ca9134dd4d696",
+      "comparison": "EXACT",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "31ZA",
+      "legacySourceTextSha256": "aa88a3d60e27a17737c9e4b3b5b9fc6a70be1f8361a676385fe378358e2a7e69",
+      "logicalId": "sggs.salok-mahalla9.salok053.line01",
+      "selectedSourceTextSha256": "07f7682a1654c678a4664490479f40a81f4b1e3b2c372e1faa27070423086b21",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "PG76",
+      "legacySourceTextSha256": "63cf2b2a736e13f8d64567e431ffdd8be8a7b8e21c428a263e13277a3240942e",
+      "logicalId": "sggs.salok-mahalla9.salok053.line02",
+      "selectedSourceTextSha256": "ee77f1405bea3bb995c7921d707112e6df3002309c1a2505bcb72cadd81f9b8b",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "V024",
+      "legacySourceTextSha256": "e1ae1b8ad5b6ddecb251c47dcf2083b0a3b03c27cbb09135f2a769699ba0b67e",
+      "logicalId": "sggs.salok-mahalla9.salok054.line01",
+      "selectedSourceTextSha256": "1b0861959d38975a97dc2811fd90c10ce5ef8eb60b926e1e19967f6d1ad4da40",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "6HHQ",
+      "legacySourceTextSha256": "0b71c1fa2abe27faeadc6e1cf84e74041dbc681f015ce8fd463059edb42a1c7d",
+      "logicalId": "sggs.salok-mahalla9.salok054.line02",
+      "selectedSourceTextSha256": "dd2a0f745cabc5f4034dd190a2df03df07873a466fb0aefa269eab4ea4e2fb55",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "01LW",
+      "legacySourceTextSha256": "582939654ce37235d6bc091237ff69c868d0fcde7f783174f5ccf13da854c1fd",
+      "logicalId": "sggs.salok-mahalla9.salok055.line01",
+      "selectedSourceTextSha256": "9629dc56f083e893df2981b80dd48a031d43a82f7fec74d50dc4c9b91fb76a96",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "60ZF",
+      "legacySourceTextSha256": "cce105835f9ca040be74dcc50e6096a01b604a9261871e75352deb1bd61dd1e7",
+      "logicalId": "sggs.salok-mahalla9.salok055.line02",
+      "selectedSourceTextSha256": "30915fc2c3f94c6d50dd0013f0341c55d2edfdb61148753e0e8b58d15ef3b01a",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "L63U",
+      "legacySourceTextSha256": "b64d32349a00c8859e9a20c0901237979f0234bbbd5aa9a2e218354deac30e9d",
+      "logicalId": "sggs.salok-mahalla9.salok056.line01",
+      "selectedSourceTextSha256": "f7197ea526f2d7a49f2f2d09ddd6325ea951d1e7abc993eabe2dbf05d528fd98",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "52FC",
+      "legacySourceTextSha256": "951f327061cc3203e4a267e34edb74081f0cbfcfaeec5846ae77833cba88f7ad",
+      "logicalId": "sggs.salok-mahalla9.salok056.line02",
+      "selectedSourceTextSha256": "3b092d3276fe924c51eb1c506918b416de4c4306b0f76f908dc20afaded9fe3c",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "1RTH",
+      "legacySourceTextSha256": "e351bd1a1754895f7b53464fc0306a2b811affbe0d18cb1747b4a88778f02e67",
+      "logicalId": "sggs.salok-mahalla9.salok057.line01",
+      "selectedSourceTextSha256": "41a69cd737c1e962017364e09fd4c32efcc29fd946f8260a3d43cec5630f524a",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    },
+    {
+      "legacySourceId": "ATZ1",
+      "legacySourceTextSha256": "f58b53f60216e80f69fc699e70f4695939c41d985c286051eeef5708169029c3",
+      "logicalId": "sggs.salok-mahalla9.salok057.line02",
+      "selectedSourceTextSha256": "0d83a0e4ba6e26c3404d20616bc74857df76c5758cbcfd970686e30e4d91e96e",
+      "comparison": "EDITORIAL_PAUSE_MARKS_ONLY",
+      "angUnchanged": true
+    }
+  ],
+  "summary": {
+    "entries": 117,
+    "exact": 3,
+    "pauseMarksOnly": 114,
+    "otherTextDifferences": 0
+  },
+  "otherDifferences": [],
+  "comparisonMethod": "Comparison copy removes only ASCII full stop, comma and semicolon from the archived witness; selected scripture is not transformed.",
+  "legacySourceFileSha256": "b022e177e1726e04d905b3c985dd8328b951ac12e609a39e6e4de61dfdbcfc6e"
+}
