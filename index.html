@@ -1,81 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-library-state="loading">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; font-src 'self'; media-src 'none'; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; font-src 'self'; media-src 'none'; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="theme-color" content="#f7f2e7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Gurbani Learning Library · A place to return</title>
-<link rel="stylesheet" href="css/home.css"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png">
+<title>Today · Gurbani Learning Library</title>
+<link rel="stylesheet" href="css/home.css"><link rel="stylesheet" href="library/library.css">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png">
 </head>
-<body data-theme="day">
-<a class="skip" href="#destinations">Skip to library</a>
+<body class="library-home" data-theme="day">
+<a class="skip" href="#library-main">Skip to library</a>
 <div class="page-shell">
-<header class="home-header"><a class="wordmark" href="./" aria-current="page">GURBANI <span>LEARNING LIBRARY</span></a><button id="home-theme" aria-label="Switch to Amrit Vela appearance" aria-pressed="false">☾ Amrit Vela</button></header>
-<main>
-<section class="home-hero" aria-labelledby="home-title">
- <p class="opening" lang="pa">ੴ</p>
- <p class="smallline">A QUIET PLACE TO RETURN</p>
- <h1 id="home-title">A moment with <em>Gurbani.</em></h1>
- <p class="hero-copy">Read the original words. Understand their meaning. Carry a teaching with you.</p>
- <div class="hero-rule" aria-hidden="true"></div>
+<header class="home-header"><a class="wordmark" href="index.html?view=today">GURBANI <span>LEARNING LIBRARY</span></a><button id="home-theme" aria-label="Switch to Amrit Vela appearance" aria-pressed="false">☾ Amrit Vela</button></header>
+<nav class="library-nav" aria-label="Library">
+<a data-view="today" href="index.html?view=today" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4L19 5"/></svg><span>Today</span></a>
+<a data-view="read" href="index.html?view=read"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1zm0 0v15"/></svg><span>Read</span></a>
+<a data-view="explore" href="index.html?view=explore"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg><span>Explore</span></a>
+<a data-view="saved" href="index.html?view=saved"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span>Saved</span></a>
+</nav>
+<main id="library-main" tabindex="-1">
+<div id="library-loading" class="library-notice" role="status">Opening your library… <a href="full-japji.html">Open Japji Sahib directly</a></div>
+<div id="library-error" class="library-notice" role="alert" hidden></div>
+<p class="library-review-note"><span class="status-dot" aria-hidden="true"></span>Development preview · Explanations await qualified review</p>
+
+<section data-view-panel="today" hidden aria-labelledby="today-title">
+<div class="today-hero">
+<p class="opening" lang="pa">ੴ</p>
+<p class="smallline">A QUIET PLACE TO RETURN</p>
+<h1 id="today-title" data-view-heading>A moment with <em>Gurbani.</em></h1>
+<p>Choose a reading. Explore a source. Return to your own reflections.</p>
+</div>
+<div class="today-primary">
+<div>
+<p class="section-kicker">RETURN TO READING</p>
+<h2>Pick up a Bani</h2>
+<p>Each reader keeps its own reading place, bookmarks and reflections on this device.</p>
+<a class="primary-link" href="index.html?view=read">Browse the readings <span aria-hidden="true">→</span></a>
+</div>
+<div class="today-shortcuts" aria-label="Reading shortcuts">
+<a id="japji-action" data-open-reader="japji" href="full-japji.html">Open Japji Sahib <span aria-hidden="true">↗</span></a>
+<a data-open-reader="sukhmani" href="sukhmani.html">Open Sukhmani Sahib <span aria-hidden="true">↗</span></a>
+<a href="nitnem/index.html">Open Daily Nitnem <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+<div class="today-secondary">
+<a class="hub-card" href="index.html?view=explore"><span class="section-kicker">EXPLORE</span><h2>Stay with a passage</h2><p>Open a complete Salok in the source reading sheets. Their explanations are awaiting qualified review.</p><span class="card-action">Explore the available sheets <span aria-hidden="true">→</span></span></a>
+<a class="hub-card" href="index.html?view=saved"><span class="section-kicker">YOUR LEARNING</span><h2>Return to a reflection</h2><p>Choose a Bani to open its saved lines and notes in the reader.</p><span class="card-action">Open Saved <span aria-hidden="true">→</span></span></a>
+</div>
+<section class="today-quiet" aria-labelledby="quiet-title">
+<div class="section-heading"><p class="section-kicker">AN OPTIONAL QUIET MOMENT</p><h2 id="quiet-title">Make some room</h2></div>
+<div id="today-tools" class="tools-grid"></div>
 </section>
-<section id="destinations" aria-label="Choose your space">
- <a class="nitnem-card" href="nitnem/index.html" aria-label="Open all seven Nitnem banis">
-  <div class="nitnem-text">
-   <span class="section-kicker" lang="pa">ਨਿਤਨੇਮ · NITNEM</span>
-   <h2>Daily Nitnem <span lang="pa">ਨਿਤਨੇਮ</span></h2>
-   <p>All seven banis, from morning to night. Read the Gurmukhi, explore English and Punjabi meanings, and return to your saved place.</p>
-   <span class="feature-link">Open Nitnem <span aria-hidden="true">↗</span></span>
-   <span class="card-foot">Seven banis · Continuous reading · Meaning and Study</span>
-  </div>
-  <span class="card-mark" aria-hidden="true">ੴ</span>
- </a>
- <a class="sukhmani-home-link" href="sukhmani.html">
-  <span class="section-kicker">READ &amp; LEARN · ਸੁਖਮਨੀ ਸਾਹਿਬ</span>
-  <h2>Sukhmani Sahib <span aria-hidden="true">↗</span></h2>
-  <p>All 24 Ashtpadis · Original Gurmukhi, Punjabi and English meanings, and deeper study.</p>
-  <span class="card-foot">Complete Sukhmani Sahib · Teaching drafts awaiting qualified review</span>
- </a>
- <a class="sukhmani-home-link" href="salok-mahalla9/index.html?bani=salok-mahalla9">
-  <span class="section-kicker">ADDITIONAL BANI · <span lang="pa">ਸਲੋਕ ਮਹਲਾ ੯</span></span>
-  <h2>Salok Mahalla 9 <span aria-hidden="true">↗</span></h2>
-  <p>All 57 Saloks · Guru Tegh Bahadur Ji · English and Punjabi meanings and passage study.</p>
-  <span class="card-foot">Development preview · Qualified source and teaching review pending</span>
- </a>
- <a class="sukhmani-home-link" href="salok-kabir/index.html?bani=salok-kabir">
-  <span class="section-kicker">ADDITIONAL BANI · <span lang="pa">ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀਉ ਕੇ</span></span>
-  <h2>Salok Bhagat Kabir Ji <span aria-hidden="true">↗</span></h2>
-  <p>All 243 Saloks · Original Gurmukhi · English and Punjabi meanings and passage study.</p>
-  <span class="card-foot">Development preview · Qualified source and teaching review pending</span>
- </a>
- <a class="sukhmani-home-link" href="articles/index.html">
-  <span class="section-kicker">EXPLORE · SOURCE READING SHEETS</span>
-  <h2>Study by topic <span aria-hidden="true">↗</span></h2>
-  <p>Read a complete Salok and print a source sheet for study. Two word-matched examples keep space for a reviewed explanation.</p>
-  <span class="card-foot">Development preview · Explanations awaiting qualified review</span>
- </a>
- <div class="destination-grid">
-  <a class="destination gurdwara-card" href="gurdwaras.html"><span class="destination-kicker">VISIT · ਸੁਣਨਾ</span><span class="destination-symbol" aria-hidden="true">✧</span><h2>Gurdwaras</h2><p>Arrive somewhere meaningful. Learn its story and choose an official broadcast.</p><span class="destination-link">Explore places ↗</span></a>
-  <a class="destination simran-card" href="simran.html"><span class="destination-kicker">STILLNESS · ਸਿਮਰਨ</span><span class="destination-symbol" aria-hidden="true">◌</span><h2>Simran Room</h2><p>A quieter space for stillness. Guided Sikh practice is being developed with care.</p><span class="destination-link">Enter quiet space ↗</span></a>
- </div>
+<aside class="availability-note" aria-labelledby="hukamnama-status-title"><span class="availability-label">NOT CONNECTED YET</span><h2 id="hukamnama-status-title">Daily Hukamnama</h2><p>The official reading for its date will appear here once verified daily delivery is connected.</p></aside>
 </section>
-<section class="personal-tools" aria-labelledby="personal-tools-title">
- <p class="smallline" id="personal-tools-title">OPTIONAL PERSONAL TOOLS</p>
- <a class="personal-tool-link" href="breathing.html">
-  <span class="section-kicker">PHYSIOLOGICAL EXERCISE</span>
-  <h2>Breathing tool <span aria-hidden="true">↗</span></h2>
-  <p>A silent visual guide for comfortable breathing. Start and stop whenever you choose.</p>
-  <span class="card-foot">Development preview · No saved activity</span>
- </a>
+
+<section data-view-panel="read" hidden aria-labelledby="read-title">
+<header class="view-heading"><p class="section-kicker">THE READING LIBRARY</p><h1 id="read-title" data-view-heading>Choose a reading</h1><p>One place to find the available Banis and collections. Open any reader to return to its own saved place.</p></header>
+<form id="library-search-form" class="directory-controls" role="search" action="index.html" method="get">
+<input type="hidden" name="view" value="read">
+<div class="search-field"><label for="library-search">Find a Bani or collection</label><div class="search-input-row"><input id="library-search" name="q" type="search" autocomplete="off" maxlength="120" placeholder="Try Japji, Sukhmani or Salok"><button id="clear-library-search" type="button" hidden>Clear</button></div></div>
+<div class="filter-field"><label for="read-filter">Show</label><select id="read-filter" name="collection"><option value="all">All readings</option><option value="nitnem">Daily Nitnem</option><option value="additional">Other readings</option></select></div>
+</form>
+<p class="directory-help">Search matches reading names and their listed spellings. Search within the full Gurbani text is still being developed.</p>
+<p id="read-count" class="directory-count" role="status" aria-live="polite"></p>
+<div id="reader-list" class="reader-grid"></div>
+<div id="read-empty" class="library-empty" hidden><h2>No matching reading</h2><p>Try a complete name or word, such as Japji, Sukhmani or Salok.</p><button id="reset-library-search" type="button">Show all readings</button></div>
+<details class="library-details"><summary>About these collections</summary><p>Daily Nitnem groups seven reading destinations. The directory also contains Sukhmani Sahib and the two Salok collections. Some Nitnem readings come from Dasam Bani, and Rehras is a composite reading; the directory is not a measure of complete Guru Granth Sahib coverage.</p><p>Each reader retains its own source edition, documented differences and review status. Repeated passages within different compositions keep their existing place.</p></details>
 </section>
-<section class="library-future" aria-label="Growing the library">
- <p class="smallline">ONE GROWING LIBRARY</p><h2>From Nitnem to the wider Guru Granth Sahib Ji.</h2>
- <p>Read Nitnem, Sukhmani Sahib and the Salok collections of Guru Tegh Bahadur Ji and Bhagat Kabir Ji. Each composition keeps its own source and review status.</p>
- <p class="coming">The Salok readers are development previews. Wider Bani coverage and independent review continue.</p><p><a id="japji-action" href="full-japji.html">Open Japji Sahib directly</a></p>
+
+<section data-view-panel="explore" hidden aria-labelledby="explore-title">
+<header class="view-heading"><p class="section-kicker">FOLLOW A QUESTION</p><h1 id="explore-title" data-view-heading>Explore the library</h1><p>Begin with the source reading sheets and places already available. Topic matches and qualified explanations have separate review states.</p></header>
+<div id="explore-list" class="explore-grid"></div>
+<section class="planned-section" aria-labelledby="planned-title"><div class="section-heading"><p class="section-kicker">STILL IN DEVELOPMENT</p><h2 id="planned-title">Growing with care</h2></div><div id="planned-list" class="planned-grid"></div></section>
 </section>
+
+<section data-view-panel="saved" hidden aria-labelledby="saved-title">
+<header class="view-heading"><p class="section-kicker">PRIVATE TO THIS DEVICE</p><h1 id="saved-title" data-view-heading>Your saved learning</h1><p>Choose where you were reading. Each link opens that reader’s existing bookmarks and reflections.</p></header>
+<div class="saved-explanation"><h2>Keep your learning close</h2><p>Notes stay with their Bani. This page does not move, combine or copy them. A reader with no saved learning will show its own empty state.</p><p>Backups are currently made from each reader. Export the learning for each Bani you want to keep before moving to another device.</p></div>
+<div id="saved-list" class="saved-grid"></div>
+<p class="directory-help">If a saved record needs recovery, its reader shows the recovery message instead of treating it as empty.</p>
+</section>
+
+<noscript><section class="library-notice"><h1>Open a reader</h1><p>The four library entrances need JavaScript. These direct links remain available:</p><ul><li><a href="full-japji.html">Japji Sahib</a></li><li><a href="sukhmani.html">Sukhmani Sahib</a></li><li><a href="nitnem/index.html">Daily Nitnem</a></li><li><a href="salok-mahalla9/index.html?bani=salok-mahalla9">Salok Mahalla 9</a></li><li><a href="salok-kabir/index.html?bani=salok-kabir">Kabir Salok collection</a></li><li><a href="articles/index.html">Source reading sheets</a></li></ul></section></noscript>
 </main>
-<footer class="footer"><p>Original Gurbani at the center. Explanations are educational drafts pending qualified review.</p><details><summary>On your iPhone</summary><p>Open in Safari, tap Share and choose Add to Home Screen. Your bookmarks and reflections remain in your browser until exported. No ChatGPT sign-in is needed.</p></details><p class="small">A family learning project · no ads, streaks or scores.</p></footer>
+<footer class="footer library-footer">
+<p>Original Gurbani stays in its source reader. Meanings and study material remain educational drafts awaiting qualified review.</p>
+<details id="library-offline-help"><summary>On your phone · updates and backups</summary><p>Open in Safari, then use Share → Add to Home Screen if you want a Home Screen shortcut. Physical-device acceptance is still pending.</p><p>Export learning from its reader for a separate backup. Do not clear website data to update.</p><p id="offline-status" role="status" aria-live="polite">Checking the offline reading shell…</p><div class="update-actions"><button id="check-update" type="button">Check for an update</button><button id="apply-update" type="button" hidden>Load available update</button></div></details>
+<p class="small">A family learning project · no accounts, advertising, streaks or scores.</p>
+</footer>
 </div>
 <script src="js/home.js"></script>
+<script src="js/pwa.js"></script>
+<script type="module" src="library/app.mjs"></script>
 </body></html>

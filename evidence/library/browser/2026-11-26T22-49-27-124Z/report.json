@@ -1,0 +1,262 @@
+{
+  "schema": "glp.library-browser.v1",
+  "startedAtUtc": "2026-11-26T22:49:27.124Z",
+  "runId": "2026-11-26T22-49-27-124Z",
+  "scope": "Builder desktop browser verification of the unified library shell",
+  "checks": [
+    {
+      "name": "All four entrances load directly with matching title, heading and current navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard entrance navigation and browser Back preserve the selected view",
+      "status": "PASS"
+    },
+    {
+      "name": "Directory search matches whole tokens and filters seven Nitnem plus three additional readers",
+      "status": "PASS"
+    },
+    {
+      "name": "Read and Saved link to the same ten native readers with separate saved-entry intent",
+      "status": "FAIL",
+      "error": "page.waitForFunction: Timeout 20000ms exceeded.\n    at /private/tmp/glp001-iphoneqa-20261126/unified-library/tests/library-browser.mjs:256:14\n    at async check (/private/tmp/glp001-iphoneqa-20261126/unified-library/tests/library-browser.mjs:53:16)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/unified-library/tests/library-browser.mjs:247:2"
+    },
+    {
+      "name": "Explore exposes existing source sheets and places without publishing the blocked knowledge pilot",
+      "status": "PASS"
+    },
+    {
+      "name": "Library keeps source scripture out of its directory and carries qualified-review limits",
+      "status": "PASS"
+    },
+    {
+      "name": "Every entrance fits narrow, tablet and desktop widths, enlarged root text and dark appearance",
+      "status": "PASS"
+    },
+    {
+      "name": "Library visits and theme changes preserve synthetic reader data and create no learning or tracking store",
+      "status": "PASS",
+      "detail": {
+        "readerRecordPreserved": true,
+        "allowedWrittenKey": "glp001.home.theme",
+        "themeWrites": 4
+      }
+    },
+    {
+      "name": "Offline manifest integration",
+      "status": "NOT_RUN",
+      "reason": "Run with --offline after the root regenerates the service worker; no offline result is claimed."
+    },
+    {
+      "name": "All examined library behavior produced no external requests or uncaught runtime errors",
+      "status": "PASS"
+    }
+  ],
+  "layouts": [
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "today",
+      "kind": "root-font-size-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "read",
+      "kind": "root-font-size-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "explore",
+      "kind": "root-font-size-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "saved",
+      "kind": "root-font-size-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    }
+  ],
+  "screenshots": [
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/today-390.png",
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/read-390.png",
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/explore-390.png",
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/saved-390.png",
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/failure-4.png",
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/read-root-text-200.png",
+    "evidence/library/browser/2026-11-26T22-49-27-124Z/read-dark-390.png"
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "serverErrors": [],
+  "offlineRequested": false,
+  "limitations": [
+    "No physical iPhone, iPad, Safari, Home Screen, VoiceOver, TalkBack or real-user acceptance is claimed.",
+    "Narrow desktop viewports and root font-size enlargement are browser simulations.",
+    "Offline checks, when requested, disable browser networking; this is not physical airplane-mode acceptance.",
+    "Only fresh nonpersistent browser contexts and synthetic saved records are used.",
+    "This is builder evidence, not independent Claude review or qualified Gurbani review.",
+    "Source labels and native links do not establish theological interpretation, printed-source collation or rights clearance."
+  ],
+  "browser": "158.0.8127.37",
+  "finishedAtUtc": "2026-11-26T22:49:50.797Z",
+  "result": "FAIL",
+  "offlineResult": "NOT_RUN"
+}

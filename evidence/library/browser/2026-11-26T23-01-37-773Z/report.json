@@ -1,0 +1,1034 @@
+{
+  "schema": "glp.library-browser.v1",
+  "startedAtUtc": "2026-11-26T23:01:37.773Z",
+  "runId": "2026-11-26T23-01-37-773Z",
+  "scope": "Builder desktop browser verification of the unified library shell",
+  "checks": [
+    {
+      "name": "All four entrances load directly with matching title, heading and current navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard entrance navigation and browser Back preserve the selected view",
+      "status": "PASS"
+    },
+    {
+      "name": "Directory search matches whole tokens and filters seven Nitnem plus three additional readers",
+      "status": "PASS"
+    },
+    {
+      "name": "Read and Saved link to the same ten native readers with separate saved-entry intent",
+      "status": "PASS"
+    },
+    {
+      "name": "Explore exposes existing source sheets and places without publishing the blocked knowledge pilot",
+      "status": "PASS"
+    },
+    {
+      "name": "Library keeps source scripture out of its directory and carries qualified-review limits",
+      "status": "PASS"
+    },
+    {
+      "name": "Every entrance fits all widths and actual 200 percent text, with actions clear of fixed navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Library visits and theme changes preserve synthetic reader data and create no learning or tracking store",
+      "status": "PASS",
+      "detail": {
+        "readerRecordPreserved": true,
+        "allowedWrittenKey": "glp001.home.theme",
+        "themeWrites": 4
+      }
+    },
+    {
+      "name": "The actual hashed worker serves every entrance and directory state without browser networking",
+      "status": "PASS",
+      "detail": {
+        "cacheNames": [
+          "glp-static:http://127.0.0.1:50476/library-review/:0.19-unified-library-v1-20261126-1"
+        ],
+        "network": "Browser network disabled; no physical-device claim"
+      }
+    },
+    {
+      "name": "All examined library behavior produced no external requests or uncaught runtime errors",
+      "status": "PASS"
+    }
+  ],
+  "layouts": [
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "today",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "today",
+      "kind": "normal-mobile",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "today",
+      "width": 320,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 607.40625,
+          "bottom": 790.078125,
+          "height": 182.671875
+        },
+        "cue": {
+          "top": 607.40625,
+          "bottom": 790.078125,
+          "height": 182.671875
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "today",
+      "kind": "measured-text-200-percent",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "today",
+      "width": 320,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": 188.265625,
+          "bottom": 680.25,
+          "height": 491.984375
+        },
+        "cue": {
+          "top": 188.265625,
+          "bottom": 680.25,
+          "height": 491.984375
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "today",
+      "kind": "normal-mobile",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "today",
+      "width": 390,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 631.015625,
+          "bottom": 790.296875,
+          "height": 159.28125
+        },
+        "cue": {
+          "top": 631.015625,
+          "bottom": 790.296875,
+          "height": 159.28125
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "today",
+      "kind": "measured-text-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "today",
+      "width": 390,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": 281.640625,
+          "bottom": 680.03125,
+          "height": 398.390625
+        },
+        "cue": {
+          "top": 281.640625,
+          "bottom": 680.03125,
+          "height": 398.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "read",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "read",
+      "kind": "normal-mobile",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "width": 320,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 457.03125,
+          "bottom": 789.609375,
+          "height": 332.578125
+        },
+        "cue": {
+          "top": 747.21875,
+          "bottom": 767.609375,
+          "height": 20.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "read",
+      "kind": "measured-text-200-percent",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "read",
+      "width": 320,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": -183.234375,
+          "bottom": 680.265625,
+          "height": 863.5
+        },
+        "cue": {
+          "top": 617.46875,
+          "bottom": 658.265625,
+          "height": 40.796875
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "read",
+      "kind": "normal-mobile",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "read",
+      "width": 390,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 492.265625,
+          "bottom": 790.296875,
+          "height": 298.03125
+        },
+        "cue": {
+          "top": 747.90625,
+          "bottom": 768.296875,
+          "height": 20.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "read",
+      "kind": "measured-text-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "read",
+      "width": 390,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": -101.203125,
+          "bottom": 680.203125,
+          "height": 781.40625
+        },
+        "cue": {
+          "top": 617.40625,
+          "bottom": 658.203125,
+          "height": 40.796875
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "explore",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "explore",
+      "kind": "normal-mobile",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "width": 320,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 554.109375,
+          "bottom": 790.140625,
+          "height": 236.03125
+        },
+        "cue": {
+          "top": 747.75,
+          "bottom": 768.140625,
+          "height": 20.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "explore",
+      "kind": "measured-text-200-percent",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "explore",
+      "width": 320,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": 104.703125,
+          "bottom": 680.09375,
+          "height": 575.390625
+        },
+        "cue": {
+          "top": 617.296875,
+          "bottom": 658.09375,
+          "height": 40.796875
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "explore",
+      "kind": "normal-mobile",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "explore",
+      "width": 390,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 553.828125,
+          "bottom": 789.859375,
+          "height": 236.03125
+        },
+        "cue": {
+          "top": 747.46875,
+          "bottom": 767.859375,
+          "height": 20.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "explore",
+      "kind": "measured-text-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "explore",
+      "width": 390,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": 221.84375,
+          "bottom": 680.03125,
+          "height": 458.1875
+        },
+        "cue": {
+          "top": 617.234375,
+          "bottom": 658.03125,
+          "height": 40.796875
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 820,
+      "documentWidth": 820,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "saved",
+      "kind": "normal",
+      "width": 1440,
+      "documentWidth": 1440,
+      "panelVisible": true,
+      "navPosition": "static",
+      "navHeight": 60
+    },
+    {
+      "view": "saved",
+      "kind": "normal-mobile",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "width": 320,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 653.0625,
+          "bottom": 790.34375,
+          "height": 137.28125
+        },
+        "cue": {
+          "top": 748.953125,
+          "bottom": 769.34375,
+          "height": 20.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "saved",
+      "kind": "measured-text-200-percent",
+      "width": 320,
+      "documentWidth": 320,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "saved",
+      "width": 320,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": 307.90625,
+          "bottom": 680.09375,
+          "height": 372.1875
+        },
+        "cue": {
+          "top": 577.5,
+          "bottom": 659.09375,
+          "height": 81.59375
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "saved",
+      "kind": "normal-mobile",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 67
+    },
+    {
+      "view": "saved",
+      "width": 390,
+      "kind": "normal-mobile",
+      "finalAction": {
+        "action": {
+          "top": 653.109375,
+          "bottom": 790.390625,
+          "height": 137.28125
+        },
+        "cue": {
+          "top": 749,
+          "bottom": 769.390625,
+          "height": 20.390625
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 833,
+          "bottom": 900,
+          "height": 67
+        },
+        "overlap": false
+      }
+    },
+    {
+      "view": "saved",
+      "kind": "measured-text-200-percent",
+      "width": 390,
+      "documentWidth": 390,
+      "panelVisible": true,
+      "navPosition": "fixed",
+      "navHeight": 131
+    },
+    {
+      "view": "saved",
+      "width": 390,
+      "kind": "measured-text-200-percent",
+      "finalAction": {
+        "action": {
+          "top": 348.578125,
+          "bottom": 679.96875,
+          "height": 331.390625
+        },
+        "cue": {
+          "top": 618.171875,
+          "bottom": 658.96875,
+          "height": 40.796875
+        },
+        "viewport": 900,
+        "nav": {
+          "top": 769,
+          "bottom": 900,
+          "height": 131
+        },
+        "overlap": false
+      }
+    }
+  ],
+  "screenshots": [
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/today-390.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/read-390.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/explore-390.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/saved-390.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/today-text-200-320.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/today-text-200-390.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/read-text-200-320.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/read-text-200-390.png",
+    "evidence/library/browser/2026-11-26T23-01-37-773Z/read-dark-390.png"
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "serverErrors": [],
+  "offlineRequested": true,
+  "limitations": [
+    "No physical iPhone, iPad, Safari, Home Screen, VoiceOver, TalkBack or real-user acceptance is claimed.",
+    "Narrow desktop viewports and measured text enlargement are browser simulations.",
+    "Offline checks, when requested, disable browser networking; this is not physical airplane-mode acceptance.",
+    "Only fresh nonpersistent browser contexts and synthetic saved records are used.",
+    "This is builder evidence, not independent Claude review or qualified Gurbani review.",
+    "Source labels and native links do not establish theological interpretation, printed-source collation or rights clearance."
+  ],
+  "browser": "158.0.8127.37",
+  "fontScaling": [
+    {
+      "view": "today",
+      "width": 320,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"today\"] [data-view-heading]",
+          "beforePx": 38,
+          "afterPx": 76,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"today\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": ".today-primary p:not(.section-kicker)",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "appearance control",
+          "selector": "#home-theme",
+          "beforePx": 12,
+          "afterPx": 24,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "today",
+      "width": 390,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"today\"] [data-view-heading]",
+          "beforePx": 38,
+          "afterPx": 76,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"today\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": ".today-primary p:not(.section-kicker)",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "appearance control",
+          "selector": "#home-theme",
+          "beforePx": 12,
+          "afterPx": 24,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "read",
+      "width": 320,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"read\"] [data-view-heading]",
+          "beforePx": 36,
+          "afterPx": 72,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"read\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": "#reader-list p",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "directory input",
+          "selector": "#library-search",
+          "beforePx": 16,
+          "afterPx": 32,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "read",
+      "width": 390,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"read\"] [data-view-heading]",
+          "beforePx": 36,
+          "afterPx": 72,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"read\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": "#reader-list p",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "directory input",
+          "selector": "#library-search",
+          "beforePx": 16,
+          "afterPx": 32,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "explore",
+      "width": 320,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"explore\"] [data-view-heading]",
+          "beforePx": 36,
+          "afterPx": 72,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"explore\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": "#explore-list p",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "appearance control",
+          "selector": "#home-theme",
+          "beforePx": 12,
+          "afterPx": 24,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "explore",
+      "width": 390,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"explore\"] [data-view-heading]",
+          "beforePx": 36,
+          "afterPx": 72,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"explore\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": "#explore-list p",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "appearance control",
+          "selector": "#home-theme",
+          "beforePx": 12,
+          "afterPx": 24,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "saved",
+      "width": 320,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"saved\"] [data-view-heading]",
+          "beforePx": 36,
+          "afterPx": 72,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"saved\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": ".saved-explanation p",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "appearance control",
+          "selector": "#home-theme",
+          "beforePx": 12,
+          "afterPx": 24,
+          "ratio": 2
+        }
+      ]
+    },
+    {
+      "view": "saved",
+      "width": 390,
+      "comparisons": [
+        {
+          "label": "active heading",
+          "selector": "[data-view-panel=\"saved\"] [data-view-heading]",
+          "beforePx": 36,
+          "afterPx": 72,
+          "ratio": 2
+        },
+        {
+          "label": "current navigation label",
+          "selector": ".library-nav a[data-view=\"saved\"] span",
+          "beforePx": 11,
+          "afterPx": 22,
+          "ratio": 2
+        },
+        {
+          "label": "active content paragraph",
+          "selector": ".saved-explanation p",
+          "beforePx": 13,
+          "afterPx": 26,
+          "ratio": 2
+        },
+        {
+          "label": "appearance control",
+          "selector": "#home-theme",
+          "beforePx": 12,
+          "afterPx": 24,
+          "ratio": 2
+        }
+      ]
+    }
+  ],
+  "finishedAtUtc": "2026-11-26T23:01:43.514Z",
+  "result": "PASS_ON_RUN_CHECKS",
+  "offlineResult": "PASS"
+}
