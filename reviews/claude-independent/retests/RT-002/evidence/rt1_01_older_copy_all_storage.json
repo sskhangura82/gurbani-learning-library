@@ -1,0 +1,605 @@
+{
+ "note": "emulation only (Chromium, iPhone 14 profile); made-up notes only",
+ "candidate": "0.14.2-claude-review-repairs-20261126-2",
+ "runs": {
+  "older copy = the published reader (a3476ac)": {
+   "rollback": {
+    "1_on_the_candidate": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ]
+    },
+    "2_after_rolling_back_and_reading_a_little": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "olderCopyServed": "0.14-nitnem-complete-preview-20261125-1"
+    },
+    "3_after_rolling_forward": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 0
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "allThreeInStorage": true,
+     "allThreeShown": true
+    },
+    "4_export": {
+     "characters": 25988,
+     "holdsUnknownNote": true,
+     "holdsLongNoteComplete": true,
+     "holdsUnknownSavedLine": true,
+     "recordsInFile": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2",
+      "glp001.fullJapji.v1",
+      "glp001.reader.v1"
+     ]
+    },
+    "5_browser_emptied": {
+     "keysStored": [
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [],
+     "longNoteCompleteIn": [],
+     "unknownSavedLineIn": []
+    },
+    "6_after_import_into_the_empty_browser": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 0
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "whatTheImportSaidBeforeMerging": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. Merge learningCancel",
+     "saysHowManyKeptAside": false,
+     "allThreeInStorage": true,
+     "allThreeShown": true
+    },
+    "7_same_backup_three_times_then_three_rounds": {
+     "keptAsideCountsAfterEachStep": [
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      }
+     ],
+     "countNeverGrew": true,
+     "allThreeStillInStorage": true
+    }
+   },
+   "old_tab_left_open": {
+    "1_after_restoring_a_backup_in_the_new_tab": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ]
+    },
+    "2_after_reading_on_in_the_old_tab": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "ordinaryNoteWrittenInTheOldTabStillThere": true,
+     "anyMessageInTheOldTab": ""
+    },
+    "3_back_in_the_new_tab_without_reloading": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 301
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "allThreeInStorage": true,
+     "allThreeShown": true
+    },
+    "4_new_reader_reopened_after_the_old_tab_is_closed": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 0
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "allThreeInStorage": true,
+     "allThreeShown": true,
+     "ordinaryNoteWrittenInTheOldTabStillThere": true
+    }
+   }
+  },
+  "older copy = the first candidate (09e829e)": {
+   "rollback": {
+    "1_on_the_candidate": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ]
+    },
+    "2_after_rolling_back_and_reading_a_little": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "olderCopyServed": "0.14.1-claude-review-repairs-20261125-1"
+    },
+    "3_after_rolling_forward": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 0
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "allThreeInStorage": true,
+     "allThreeShown": true
+    },
+    "4_export": {
+     "characters": 25988,
+     "holdsUnknownNote": true,
+     "holdsLongNoteComplete": true,
+     "holdsUnknownSavedLine": true,
+     "recordsInFile": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2",
+      "glp001.fullJapji.v1",
+      "glp001.reader.v1"
+     ]
+    },
+    "5_browser_emptied": {
+     "keysStored": [
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [],
+     "longNoteCompleteIn": [],
+     "unknownSavedLineIn": []
+    },
+    "6_after_import_into_the_empty_browser": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 0
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "whatTheImportSaidBeforeMerging": "Merge this learning backup? Existing bookmarks are kept and conflicting reflections are retained together. Merge learningCancel",
+     "saysHowManyKeptAside": false,
+     "allThreeInStorage": true,
+     "allThreeShown": true
+    },
+    "7_same_backup_three_times_then_three_rounds": {
+     "keptAsideCountsAfterEachStep": [
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      },
+      {
+       "glp001.continuous.retained.v1": {
+        "notes": 2,
+        "savedLines": 1
+       },
+       "glp001.continuous.v2": {
+        "notes": 2,
+        "savedLines": 1
+       }
+      }
+     ],
+     "countNeverGrew": true,
+     "allThreeStillInStorage": true
+    }
+   },
+   "old_tab_left_open": {
+    "1_after_restoring_a_backup_in_the_new_tab": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ]
+    },
+    "2_after_reading_on_in_the_old_tab": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "ordinaryNoteWrittenInTheOldTabStillThere": true,
+     "anyMessageInTheOldTab": ""
+    },
+    "3_back_in_the_new_tab_without_reloading": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 301
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "allThreeInStorage": true,
+     "allThreeShown": true
+    },
+    "4_new_reader_reopened_after_the_old_tab_is_closed": {
+     "keysStored": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownNoteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "longNoteCompleteIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "unknownSavedLineIn": [
+      "glp001.continuous.retained.v1",
+      "glp001.continuous.v2"
+     ],
+     "noticeOnScreen": {
+      "text": "3 saved items were kept aside. View or export them. View saved learning",
+      "width": 342,
+      "height": 81,
+      "top": 0
+     },
+     "savedLearningScreenListsKeptAside": true,
+     "unknownNoteShown": true,
+     "longNoteShownComplete": true,
+     "unknownSavedLineShown": true,
+     "listText": "Learning kept aside You can select or copy these notes. They are also included in your learning export. Saved reflection · nope.line99 Saved reflection · pauri01.line06 Bookmarks from another edition nope.line98",
+     "allThreeInStorage": true,
+     "allThreeShown": true,
+     "ordinaryNoteWrittenInTheOldTabStillThere": true
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "rollback": {
+  "on_repair_candidate": {
+   "reader": "repair candidate",
+   "recordVersionNumber": 2,
+   "keptAsideNotes": [
+    [
+     "nope.line99",
+     "unknown_line",
+     7
+    ],
+    [
+     "pauri01.line06",
+     "long_reflection",
+     12500
+    ]
+   ],
+   "keptAsideBookmarks": [
+    "nope.line98"
+   ]
+  },
+  "after_roll_back_on_open": {
+   "reader": "published baseline",
+   "keptAsideStillInRecord": false,
+   "unknownNoteTextAnywhere": false,
+   "longNoteCompleteAnywhere": false
+  },
+  "after_roll_back_and_a_little_reading": {
+   "keptAsideStillInRecord": false,
+   "unknownNoteTextAnywhere": false,
+   "longNoteCompleteAnywhere": false,
+   "unknownBookmarkAnywhere": false,
+   "anyMessage": []
+  },
+  "after_rolling_forward_again": {
+   "reader": "repair candidate",
+   "unknownNoteTextAnywhere": true,
+   "longNoteCompleteAnywhere": true,
+   "keptAside": {
+    "notes": 2,
+    "bookmarks": 1
+   }
+  }
+ },
+ "old_tab_left_open": {
+  "old_tab": "published baseline",
+  "new_tab": "repair candidate",
+  "after_restore_in_new_tab": {
+   "keptAsideNotes": 1,
+   "unknownNoteTextAnywhere": true
+  },
+  "after_reading_on_in_the_old_tab": {
+   "keptAsideStillInRecord": false,
+   "unknownNoteTextAnywhere": false,
+   "unknownBookmarkAnywhere": false,
+   "ordinaryNoteStillThere": true,
+   "anyMessageInOldTab": ""
+  },
+  "new_tab_afterwards": {
+   "noticeText": "2 saved items were kept aside. View or export them. View saved learning",
+   "unknownNoteTextAnywhere": false
+  }
+ }
+}

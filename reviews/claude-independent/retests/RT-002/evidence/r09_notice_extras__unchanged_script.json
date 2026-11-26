@@ -1,0 +1,120 @@
+{
+ "label": "second candidate 1470477",
+ "base": "http://127.0.0.1:8089/gurbani-learning-library/",
+ "reader_who_left_at_the_very_top": {
+  "savedReadingPlace": {
+   "id": "mool.line01",
+   "offset": 324.78125
+  },
+  "on_open": {
+   "immersive": false,
+   "noticePresent": true,
+   "noticeVisibleToSighted": true,
+   "statusLineText": "",
+   "statusLineVisibleToSighted": false,
+   "anyVisibleWarningText": [
+    "1 saved item was kept aside. View or export them."
+   ]
+  },
+  "after_scrolling_down_a_little": {
+   "immersive": true,
+   "noticePresent": true,
+   "noticeVisibleToSighted": true,
+   "statusLineText": "",
+   "statusLineVisibleToSighted": false,
+   "anyVisibleWarningText": [
+    "1 saved item was kept aside. View or export them."
+   ]
+  },
+  "back_at_the_very_top": {
+   "immersive": true,
+   "noticePresent": true,
+   "noticeVisibleToSighted": true,
+   "statusLineText": "",
+   "statusLineVisibleToSighted": false,
+   "anyVisibleWarningText": [
+    "1 saved item was kept aside. View or export them."
+   ]
+  }
+ },
+ "unreadable_record": {
+  "cut_off_json": {
+   "on_open": {
+    "immersive": false,
+    "noticePresent": true,
+    "noticeVisibleToSighted": true,
+    "statusLineText": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+    "statusLineVisibleToSighted": false,
+    "anyVisibleWarningText": [
+     "Saved learning needs recovery. Export the original backup."
+    ]
+   },
+   "while_reading_after_a_scroll": {
+    "immersive": true,
+    "noticePresent": true,
+    "noticeVisibleToSighted": true,
+    "statusLineText": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+    "statusLineVisibleToSighted": false,
+    "anyVisibleWarningText": [
+     "Saved learning needs recovery. Export the original backup."
+    ]
+   },
+   "recordUntouched": true,
+   "startFreshControls": [
+    "meaning:In this way, sorrow is set aside and pea"
+   ]
+  },
+  "newer_version": {
+   "on_open": {
+    "immersive": true,
+    "noticePresent": true,
+    "noticeVisibleToSighted": true,
+    "statusLineText": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+    "statusLineVisibleToSighted": false,
+    "anyVisibleWarningText": [
+     "Saved learning needs recovery. Export the original backup."
+    ]
+   },
+   "while_reading_after_a_scroll": {
+    "immersive": true,
+    "noticePresent": true,
+    "noticeVisibleToSighted": true,
+    "statusLineText": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+    "statusLineVisibleToSighted": false,
+    "anyVisibleWarningText": [
+     "Saved learning needs recovery. Export the original backup."
+    ]
+   },
+   "recordUntouched": true,
+   "startFreshControls": [
+    "meaning:In this way, sorrow is set aside and pea"
+   ]
+  },
+  "a_note_is_a_number": {
+   "on_open": {
+    "immersive": true,
+    "noticePresent": true,
+    "noticeVisibleToSighted": true,
+    "statusLineText": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+    "statusLineVisibleToSighted": false,
+    "anyVisibleWarningText": [
+     "Saved learning needs recovery. Export the original backup."
+    ]
+   },
+   "while_reading_after_a_scroll": {
+    "immersive": true,
+    "noticePresent": true,
+    "noticeVisibleToSighted": true,
+    "statusLineText": "Saved learning needs recovery and has not been overwritten. Export a backup.",
+    "statusLineVisibleToSighted": false,
+    "anyVisibleWarningText": [
+     "Saved learning needs recovery. Export the original backup."
+    ]
+   },
+   "recordUntouched": true,
+   "startFreshControls": [
+    "meaning:In this way, sorrow is set aside and pea"
+   ]
+  }
+ }
+}

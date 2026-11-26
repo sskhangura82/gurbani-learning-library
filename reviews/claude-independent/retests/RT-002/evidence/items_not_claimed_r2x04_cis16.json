@@ -1,0 +1,37 @@
+{
+ "note": "emulation only (Chromium)",
+ "R2-X-04": {
+  "placeBefore": "Ashtpadi 3\nPauri 1",
+  "savedBefore": {
+   "glp001.sukhmani.v1": {
+    "read": "sukhmani.a03.p01.l04"
+   }
+  },
+  "placeOnArrivalByLink": "Ashtpadi 17\nSalok · opening",
+  "savedOnArrivalByLink": {
+   "glp001.sukhmani.v1": {
+    "read": "sukhmani.a17.salok.l01"
+   }
+  },
+  "savedPlaceKeptOnArrival": false,
+  "wayBackOffered": [
+   "Return to the beginning"
+  ],
+  "placeWhenOpenedTheOrdinaryWayAfterwards": "Ashtpadi 17\nSalok · opening",
+  "savedAfterwards": {
+   "glp001.sukhmani.v1": {
+    "read": "sukhmani.a17.salok.l01"
+   }
+  }
+ },
+ "CI-S-16": {
+  "filesHoldingTheLinesOutsideTheReaders": [
+   "js/content.js",
+   "pauri-2-lesson.html",
+   "simran.html",
+   "js/japji-lessons.js"
+  ],
+  "changedBetweenTheTwoCandidates": [],
+  "verdict": "not attempted in this candidate: the files are unchanged, so the two lines differ from the reference exactly as before"
+ }
+}
