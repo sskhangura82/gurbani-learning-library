@@ -1,0 +1,15 @@
+{
+  "schema": "glp.intake-validation.v1",
+  "result": "PASS",
+  "validationScope": "PLANNING_INVENTORY_ONLY",
+  "runtimeEligible": false,
+  "publicReady": false,
+  "existingRuntimeScriptureSha256": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+  "existingRuntimeOccurrences": 19,
+  "candidatePassages": 1,
+  "candidateOccurrences": 11,
+  "candidateAngs": 96,
+  "quarantinedDiscrepancies": 2,
+  "witnessFilesVerified": 4,
+  "qualifiedHumanReview": "NOT_PERFORMED"
+}
