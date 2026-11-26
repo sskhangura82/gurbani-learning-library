@@ -127,4 +127,45 @@ DRAFT" still sits directly above a line of Gurbani, and the status still reads "
 
 ## 7. Comparison with the builder's tests
 
-*To be added after sections 1 to 6 are committed.*
+Added after sections 1 to 6 were committed and pushed (`e17ab63`). Only then did I open the tests, the evidence
+files and `docs/GLP_KNOWLEDGE_SOURCE_REGISTRY_REPAIR_20261126.md`.
+
+| Run by me on the candidate | Result |
+|---|---|
+| `tests/knowledge-contract.mjs` | Pass |
+| `tests/knowledge-source-registry.mjs` (new) | Pass — 29 checks, 15 source mutations, 8 stale-editorial mutations |
+| `tests/knowledge-source-witness.mjs` (new) | Pass — 4 pinned files, 19 matched occurrences, 3 passages |
+| `tests/knowledge-browser.mjs` | Pass — 15 checks |
+| The committed evidence against my own runs | Identical, field for field |
+
+The gate now runs the two new suites and keeps their evidence for 90 days.
+
+**The repair note is the most careful document the builder has written on this project.** It states its own limit
+in plain words: separated custody and corruption detection, *not* authentication against someone who controls the
+whole release. That is exactly what my mutations showed — every honest mistake I could invent was caught; a party
+who replaced the verifier, both pins and all the fingerprints together would not be. It also says the registry is
+provisional for three passages and not an approved global canon, and that reader storage keys are untouched.
+
+**What each side covered that the other did not**
+
+| Subject | The builder | This re-test |
+|---|---|---|
+| Mutations of the source with digests regenerated | 15 | 15, chosen independently |
+| Stale editorial bindings | 8 | 11 teaching mutations, including two that must be allowed |
+| The structure of the Vaar checked against a reference | Verified against the pinned corpus (Open Granth) | Verified against a **different** reference — Shabad OS 5.0.0-next.0 — reading the Pauri numbers from the text |
+| Every Salok name in the Vaar tested for repeats | Not covered | 374 names, none repeated |
+| The 582 round 3 search cases | Not covered | Rerun, mapped through the crosswalk, identical to round 3 |
+| On-screen appearance of the editorial title | A browser suite of 15 checks | Headings, labels, language tags and the search route to the editorial title |
+| An editorial title written as a Gurbani heading | Not covered | **RB-01 — the one edit of 30 that was accepted** |
+
+**No verdict in sections 1 to 6 changed after reading the builder's tests.**
+
+## 8. What I would ask for next
+
+1. RB-01 — refuse an editorial title that reads as a scripture heading.
+2. RB-02 — list every passage in the crosswalk, or say that unchanged names are left out.
+3. R3-11's wording: "PASSAGE · DEVELOPMENT DRAFT" still sits directly above a line of Gurbani, and the page still
+   says "Development pack verified". Neither is in this candidate's scope, and both are still worth correcting
+   before anyone outside sees the pilot.
+4. Then R3-05 to R3-09 (search accidents, first-letter search, the Haumai lesson's missing half-line, the Punjabi
+   carrying less than the English, and no address for an item).

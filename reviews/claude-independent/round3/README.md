@@ -38,3 +38,11 @@ for privacy, and for honesty about being a draft.
 - The pilot's "second digital witness" and its two reference links were not opened.
 - The repair candidate (#40) has not changed since re-test RT-001; there was nothing to re-test. Its conditions stand.
 - My own drafts (#44, #46) have not yet been cross-reviewed by the builder.
+
+---
+
+**Later outcome, 26 November 2026.** R3-01, R3-02, R3-03 and the titles part of R3-04 were repaired in candidate
+PR #48 (`94f004a`, stacked on PR #45) and re-tested: **all four fixed**. Record:
+[`../round3b/README.md`](../round3b/README.md). R3-05 to R3-09 and the lower findings remain open. The repairs are
+on an unmerged candidate.
+
