@@ -1,0 +1,567 @@
+{
+ "note": "emulation only (Chromium, 390 x 844 window); not an iPhone result; WebKit not installed here, so Safari behaviour is unknown",
+ "runs": [
+  {
+   "version": "published (main a3476ac)",
+   "condition": "as shipped",
+   "wayOfReopening": "reload",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 19 · line 12",
+     "storedPlace": "pauri19.line12",
+     "pixelsDownThePage": 15979
+    },
+    {
+     "barSays": "Pauri 19 · line 9",
+     "storedPlace": "pauri19.line09",
+     "pixelsDownThePage": 15678
+    },
+    {
+     "barSays": "Pauri 19 · line 5",
+     "storedPlace": "pauri19.line05",
+     "pixelsDownThePage": 15377
+    }
+   ],
+   "movedBackEachTimePixels": [
+    301,
+    301,
+    301
+   ],
+   "sameLineEveryTime": false
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "as shipped",
+   "wayOfReopening": "close the tab and open a new one",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "as shipped",
+   "wayOfReopening": "go to the home page and tap back in",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "as shipped",
+   "wayOfReopening": "go to the home page and press the browser's Back",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 19 · line 12",
+     "storedPlace": "pauri19.line12",
+     "pixelsDownThePage": 15979
+    },
+    {
+     "barSays": "Pauri 19 · line 9",
+     "storedPlace": "pauri19.line09",
+     "pixelsDownThePage": 15678
+    },
+    {
+     "barSays": "Pauri 19 · line 5",
+     "storedPlace": "pauri19.line05",
+     "pixelsDownThePage": 15377
+    }
+   ],
+   "movedBackEachTimePixels": [
+    301,
+    301,
+    301
+   ],
+   "sameLineEveryTime": false
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "reload",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "close the tab and open a new one",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "go to the home page and tap back in",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "published (main a3476ac)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "go to the home page and press the browser's Back",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "as shipped",
+   "wayOfReopening": "reload",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 19 · line 12",
+     "storedPlace": "pauri19.line12",
+     "pixelsDownThePage": 15979
+    },
+    {
+     "barSays": "Pauri 19 · line 9",
+     "storedPlace": "pauri19.line09",
+     "pixelsDownThePage": 15678
+    },
+    {
+     "barSays": "Pauri 19 · line 5",
+     "storedPlace": "pauri19.line05",
+     "pixelsDownThePage": 15377
+    }
+   ],
+   "movedBackEachTimePixels": [
+    301,
+    301,
+    301
+   ],
+   "sameLineEveryTime": false
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "as shipped",
+   "wayOfReopening": "close the tab and open a new one",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "as shipped",
+   "wayOfReopening": "go to the home page and tap back in",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "as shipped",
+   "wayOfReopening": "go to the home page and press the browser's Back",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 19 · line 12",
+     "storedPlace": "pauri19.line12",
+     "pixelsDownThePage": 15979
+    },
+    {
+     "barSays": "Pauri 19 · line 9",
+     "storedPlace": "pauri19.line09",
+     "pixelsDownThePage": 15678
+    },
+    {
+     "barSays": "Pauri 19 · line 5",
+     "storedPlace": "pauri19.line05",
+     "pixelsDownThePage": 15377
+    }
+   ],
+   "movedBackEachTimePixels": [
+    301,
+    301,
+    301
+   ],
+   "sameLineEveryTime": false
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "reload",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "close the tab and open a new one",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "go to the home page and tap back in",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "condition": "browser told not to restore the scroll position itself",
+   "wayOfReopening": "go to the home page and press the browser's Back",
+   "start": {
+    "barSays": "Pauri 20 · line 1",
+    "storedPlace": "pauri20.line01",
+    "pixelsDownThePage": 16280
+   },
+   "afterEachReopening": [
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    },
+    {
+     "barSays": "Pauri 20 · line 1",
+     "storedPlace": "pauri20.line01",
+     "pixelsDownThePage": 16280
+    }
+   ],
+   "movedBackEachTimePixels": [
+    0,
+    0,
+    0
+   ],
+   "sameLineEveryTime": true
+  }
+ ],
+ "summary": [
+  "published (main a3476ac) | as shipped | reload: moves back 301/301/301 pixels; ends at Pauri 19 · line 5",
+  "published (main a3476ac) | as shipped | close the tab and open a new one: same line every time",
+  "published (main a3476ac) | as shipped | go to the home page and tap back in: same line every time",
+  "published (main a3476ac) | as shipped | go to the home page and press the browser's Back: moves back 301/301/301 pixels; ends at Pauri 19 · line 5",
+  "published (main a3476ac) | browser told not to restore the scroll position itself | reload: same line every time",
+  "published (main a3476ac) | browser told not to restore the scroll position itself | close the tab and open a new one: same line every time",
+  "published (main a3476ac) | browser told not to restore the scroll position itself | go to the home page and tap back in: same line every time",
+  "published (main a3476ac) | browser told not to restore the scroll position itself | go to the home page and press the browser's Back: same line every time",
+  "repair candidate (PR #40 09e829e) | as shipped | reload: moves back 301/301/301 pixels; ends at Pauri 19 · line 5",
+  "repair candidate (PR #40 09e829e) | as shipped | close the tab and open a new one: same line every time",
+  "repair candidate (PR #40 09e829e) | as shipped | go to the home page and tap back in: same line every time",
+  "repair candidate (PR #40 09e829e) | as shipped | go to the home page and press the browser's Back: moves back 301/301/301 pixels; ends at Pauri 19 · line 5",
+  "repair candidate (PR #40 09e829e) | browser told not to restore the scroll position itself | reload: same line every time",
+  "repair candidate (PR #40 09e829e) | browser told not to restore the scroll position itself | close the tab and open a new one: same line every time",
+  "repair candidate (PR #40 09e829e) | browser told not to restore the scroll position itself | go to the home page and tap back in: same line every time",
+  "repair candidate (PR #40 09e829e) | browser told not to restore the scroll position itself | go to the home page and press the browser's Back: same line every time"
+ ],
+ "pageHeightLostWhenTheHeadingHides": [
+  {
+   "version": "published (main a3476ac)",
+   "scrolledByHand": 900,
+   "endedAtPixelsDownThePage": 599,
+   "difference": 301,
+   "headingHiddenNow": true
+  },
+  {
+   "version": "repair candidate (PR #40 09e829e)",
+   "scrolledByHand": 900,
+   "endedAtPixelsDownThePage": 599,
+   "difference": 301,
+   "headingHiddenNow": true
+  }
+ ]
+}

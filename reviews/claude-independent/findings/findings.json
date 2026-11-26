@@ -567,7 +567,8 @@
   "proposed_correction": "Auto-hide furniture in landscape; exact resume everywhere; name the source on screen.",
   "acceptance_test": "Covered by the unified reader tests.",
   "status": "OPEN",
-  "origin": "INDEPENDENT"
+  "origin": "INDEPENDENT",
+  "retest": "Device-test preparation, 2026-11-26 (a later note, not a re-test). The Japji sentence of this entry — \"reopens about three lines early\" — is now registered separately as CI-R-11 (medium): it was found to happen on every reload or Back, and to be saved, so the place keeps moving back. The rest of this entry is unchanged."
  },
  {
   "id": "CI-U-09",
@@ -961,5 +962,35 @@
   "acceptance_test": "The headword script reports no unlabelled exception.",
   "status": "OPEN",
   "origin": "RETEST"
+ },
+ {
+  "id": "CI-R-11",
+  "severity": "S2",
+  "s0_candidate": false,
+  "area": "Reliability",
+  "title": "Japji reader: after a reload or the Back button the reading place comes back about three lines early, and that wrong place is then saved — so it moves further back each time",
+  "location": "js/japji-full.js → start-up line \"if(raw)restoreAnchor(state.read);rememberVisible();\", setQuiet(), and the scroll listener that calls rememberVisible(). Nothing in any reader sets history.scrollRestoration.",
+  "composition_or_verse": "Japji Sahib reader, any passage (measured from Pauri 5 and Pauri 20). Published version (main a3476ac) and candidate PR #40 (09e829e) behave the same.",
+  "evidence": "Chromium, 390 × 844 window. From Pauri 20 · line 1, three reloads without touching the page give Pauri 19 · line 12, then line 9, then line 5: 301 pixels back each time, and the stored place is rewritten each time. The same after going to the home page and pressing the browser's Back. Closing the tab and opening the reader afresh, or going to the home page and tapping back in, is exact. With the browser told not to restore the scroll position itself (history.scrollRestoration = \"manual\", set before the page's scripts run) the place is exact in all four ways, on both versions — so the cause is established for Chromium: the browser puts the freshly loaded page back at its old scroll offset, which was measured while the page heading was hidden; the heading is showing again, the page is 301 pixels taller above the text (measured: a 900-pixel scroll from the top ends at 599 once the heading hides), and the reader's scroll listener records the line it now finds as the place. This entry replaces the Japji sentence in CI-U-08 (\"reopens about three lines early\"), which had not noticed that the error repeats and is saved. NOT TESTED: Safari or any WebKit engine (none is installed in this workspace); a physical iPhone. reviews/claude-independent/device-test/evidence/dt_01_saved_place_on_reopen.json; reviews/claude-independent/device-test/evidence/dt_02_journey_rehearsal_candidate.json and dt_02_journey_rehearsal_published.json (step A7).",
+  "why_it_matters": "Coming back to the line where one stopped is the thing a daily reader relies on without thinking. Here the reader is put a few lines earlier with nothing said, and every further reload — including a phone reloading a tab it had put to sleep, if iPhone Safari behaves as Chromium does — moves the place back again. Workaround: save the line. Rated medium, not high: no note or saved line is lost.",
+  "proposed_correction": "At the top of the reader, tell the browser to leave scroll position alone (history.scrollRestoration = \"manual\"), so that the reader's own stored place is the only thing that positions the page; and do not record a new place until the reader's own restore has finished. Check the other two readers the same way.",
+  "acceptance_test": "device-test/tools/dt_01_saved_place_on_reopen.py reports \"same line every time\" for all four ways of reopening, in Chromium and in a WebKit engine; and on a physical iPhone, step A7 of device-test/IPHONE_TEN_MINUTE_SCRIPT.md names the same line after two reloads.",
+  "status": "OPEN",
+  "origin": "PREPARATION"
+ },
+ {
+  "id": "CI-U-11",
+  "severity": "S2",
+  "s0_candidate": false,
+  "area": "Use",
+  "title": "Japji reader: a written reflection is listed nowhere — the Saved learning screen shows saved lines only",
+  "location": "js/japji-full.js → learning() builds its list from state.bookmarks alone. js/sukhmani-reader.js → openSaved() and nitnem/reader.js → savedLines() add every line that carries a note (read in the code; not exercised in this pass).",
+  "composition_or_verse": "Japji Sahib reader. Published version (main a3476ac) and candidate PR #40 (09e829e) behave the same.",
+  "evidence": "A made-up note written on Pauri 7 · line 1 without saving the line: the screen headed \"BOOKMARKS · NOTES · BACKUP — Saved learning\" does not list it. With one note and no saved line the screen says \"No saved lines yet.\" and mentions no note. Nothing is lost: the note is in the stored record, it is in the export file, and it reappears when the reader goes back to that exact line and opens \"Keep a reflection here\". reviews/claude-independent/device-test/evidence/dt_02_journey_rehearsal_candidate.json and dt_02_journey_rehearsal_published.json (aNoteOnALineThatWasNotSaved, aNoteAndNoSavedLines). Emulation only.",
+  "why_it_matters": "A person who writes reflections over weeks cannot read them back, or even see that they exist, unless they remember each line. The screen's own heading promises notes. It is also one more way the three readers differ (CI-U-01).",
+  "proposed_correction": "List every line that carries a note, with the first words of the note, beside the saved lines — as the other two readers already do. Say \"No saved lines or reflections yet.\" only when both are empty.",
+  "acceptance_test": "After a note is written on a line that is not saved, the Saved learning screen lists that line and tapping it opens the note; the rehearsal reports savedLearningScreenListsIt: true.",
+  "status": "OPEN",
+  "origin": "PREPARATION"
  }
 ]

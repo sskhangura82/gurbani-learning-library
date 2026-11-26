@@ -13,6 +13,7 @@ Severity scale is the one frozen in 00_BASELINE_AND_FROZEN_CRITERIA.md section 5
                · PARTLY-FIXED-ON-CANDIDATE (as above, with named criteria still open)
 `origin`: INDEPENDENT (found before the builder's tests and documents were opened), COMPARISON (found while comparing),
           or RETEST (found during a re-test; true of the published version unless the entry says otherwise).
+          or PREPARATION (found while preparing the device test, 2026-11-26; true of the published version and of candidate PR #40).
 A re-test never rewrites a finding: `retest(...)` adds a dated note and may change the status, nothing else.
 """
 import json, pathlib, sys
@@ -353,6 +354,34 @@ f('CI-M-13', 'S3', 'Meanings and teaching', 'Ten vocabulary headwords are not th
   'The headword script reports no unlabelled exception.', origin='RETEST')
 
 
+# ───────────────────────────── Found while preparing the device test (2026-11-26) ─────────────────────────────
+DT = 'reviews/claude-independent/device-test/evidence/'
+f('CI-R-11', 'S2', 'Reliability', 'Japji reader: after a reload or the Back button the reading place comes back about three lines early, and that wrong place is then saved — so it moves further back each time',
+  'js/japji-full.js → start-up line "if(raw)restoreAnchor(state.read);rememberVisible();", setQuiet(), and the scroll listener that calls rememberVisible(). Nothing in any reader sets history.scrollRestoration.',
+  'Japji Sahib reader, any passage (measured from Pauri 5 and Pauri 20). Published version (main a3476ac) and candidate PR #40 (09e829e) behave the same.',
+  'Chromium, 390 × 844 window. From Pauri 20 · line 1, three reloads without touching the page give Pauri 19 · line 12, then line 9, then line 5: 301 pixels back each time, and the stored place is rewritten each time. '
+  'The same after going to the home page and pressing the browser\'s Back. Closing the tab and opening the reader afresh, or going to the home page and tapping back in, is exact. '
+  'With the browser told not to restore the scroll position itself (history.scrollRestoration = "manual", set before the page\'s scripts run) the place is exact in all four ways, on both versions — so the cause is established for Chromium: '
+  'the browser puts the freshly loaded page back at its old scroll offset, which was measured while the page heading was hidden; the heading is showing again, the page is 301 pixels taller above the text '
+  '(measured: a 900-pixel scroll from the top ends at 599 once the heading hides), and the reader\'s scroll listener records the line it now finds as the place. '
+  'This entry replaces the Japji sentence in CI-U-08 ("reopens about three lines early"), which had not noticed that the error repeats and is saved. '
+  'NOT TESTED: Safari or any WebKit engine (none is installed in this workspace); a physical iPhone. ' + DT + 'dt_01_saved_place_on_reopen.json; ' + DT + 'dt_02_journey_rehearsal_candidate.json and dt_02_journey_rehearsal_published.json (step A7).',
+  'Coming back to the line where one stopped is the thing a daily reader relies on without thinking. Here the reader is put a few lines earlier with nothing said, and every further reload — including a phone reloading a tab it had put to sleep, if iPhone Safari behaves as Chromium does — moves the place back again. Workaround: save the line. Rated medium, not high: no note or saved line is lost.',
+  'At the top of the reader, tell the browser to leave scroll position alone (history.scrollRestoration = "manual"), so that the reader\'s own stored place is the only thing that positions the page; and do not record a new place until the reader\'s own restore has finished. Check the other two readers the same way.',
+  'device-test/tools/dt_01_saved_place_on_reopen.py reports "same line every time" for all four ways of reopening, in Chromium and in a WebKit engine; and on a physical iPhone, step A7 of device-test/IPHONE_TEN_MINUTE_SCRIPT.md names the same line after two reloads.',
+  origin='PREPARATION')
+
+f('CI-U-11', 'S2', 'Use', 'Japji reader: a written reflection is listed nowhere — the Saved learning screen shows saved lines only',
+  'js/japji-full.js → learning() builds its list from state.bookmarks alone. js/sukhmani-reader.js → openSaved() and nitnem/reader.js → savedLines() add every line that carries a note (read in the code; not exercised in this pass).',
+  'Japji Sahib reader. Published version (main a3476ac) and candidate PR #40 (09e829e) behave the same.',
+  'A made-up note written on Pauri 7 · line 1 without saving the line: the screen headed "BOOKMARKS · NOTES · BACKUP — Saved learning" does not list it. With one note and no saved line the screen says "No saved lines yet." and mentions no note. '
+  'Nothing is lost: the note is in the stored record, it is in the export file, and it reappears when the reader goes back to that exact line and opens "Keep a reflection here". ' + DT + 'dt_02_journey_rehearsal_candidate.json and dt_02_journey_rehearsal_published.json (aNoteOnALineThatWasNotSaved, aNoteAndNoSavedLines). Emulation only.',
+  'A person who writes reflections over weeks cannot read them back, or even see that they exist, unless they remember each line. The screen\'s own heading promises notes. It is also one more way the three readers differ (CI-U-01).',
+  'List every line that carries a note, with the first words of the note, beside the saved lines — as the other two readers already do. Say "No saved lines or reflections yet." only when both are empty.',
+  'After a note is written on a line that is not saved, the Saved learning screen lists that line and tapping it opens the note; the rehearsal reports savedLearningScreenListsIt: true.',
+  origin='PREPARATION')
+
+
 # ───────────────────────────── Re-test outcomes (status and a dated note only) ─────────────────────────────
 def retest(fid, status, note):
     x = next(x for x in F if x['id'] == fid); x['status'] = status; x['retest'] = note
@@ -368,12 +397,17 @@ retest('CI-A-01', 'FIX-VERIFIED-ON-CANDIDATE', RT1 + 'FIXED IN THE BROWSER; ONE 
        'The original scan falls from 62, 387 and 2,028 failing elements to 6, 2 and 1, none of them a meaning. Remaining, from this finding\'s own acceptance test: VoiceOver on a physical iPhone, which no one has run. Sukhmani\'s 2,027 line-buttons (CI-A-02) are unchanged. Record: retests/RT-001_PR40_FIRST_REPAIRS.md.')
 
 
+retest('CI-U-08', 'OPEN', 'Device-test preparation, 2026-11-26 (a later note, not a re-test). The Japji sentence of this entry — "reopens about three lines early" — is now registered separately as CI-R-11 (medium): '
+       'it was found to happen on every reload or Back, and to be saved, so the place keeps moving back. The rest of this entry is unchanged.')
+
+
 def render(findings):
     order = {'S0': 0, 'S1': 1, 'S2': 2, 'S3': 3, 'PASS': 4}
     out = ['# Findings register', '',
            'Generated by `tools/build_findings.py` — edit that file, not this one. Severity scale: see `00_BASELINE_AND_FROZEN_CRITERIA.md` §5.',
            '"S0 candidate" means: becomes Critical if a qualified collation against print confirms the app\'s reading is wrong. No S0 is confirmed today, because no printed edition has been consulted by anyone.',
-           'Entries CI-S-16, CI-R-07 to CI-R-10 and CI-M-13 were found during re-test RT-001 (2026-11-25). A "Re-test" line under a finding is a dated addition; the finding above it is unchanged. Defects that exist only in an unmerged candidate are not listed here: see `retests/`.', '']
+           'Entries CI-S-16, CI-R-07 to CI-R-10 and CI-M-13 were found during re-test RT-001 (2026-11-25). A "Re-test" line under a finding is a dated addition; the finding above it is unchanged. Defects that exist only in an unmerged candidate are not listed here: see `retests/`.',
+           'Entries CI-R-11 and CI-U-11 were found on 2026-11-26 while preparing the iPhone script (`device-test/`), in emulation; they are true of the published version and of candidate PR #40.', '']
     counts = {}
     for x in findings: counts[x['severity']] = counts.get(x['severity'], 0) + 1
     out += ['| Severity | Count |', '|---|---|'] + [f'| {k} | {counts[k]} |' for k in sorted(counts, key=lambda k: order[k])]

@@ -39,8 +39,8 @@ dated notes.
 11. [Implementation plan](D11_IMPLEMENTATION_PLAN.md)
 12. [Final reviewer verdict](D12_FINAL_REVIEWER_VERDICT.md)
 
-Registers: [findings](FINDINGS_REGISTER.md) (64 entries: 58 from the review, 6 found in
-re-test RT-001) · [coverage](COVERAGE_REGISTER.md) · scripture row by row
+Registers: [findings](FINDINGS_REGISTER.md) (66 entries: 58 from the review, 6 found in
+re-test RT-001, 2 found on 26 November 2026 while preparing the device test) · [coverage](COVERAGE_REGISTER.md) · scripture row by row
 `evidence/s05_register.csv` (3,809 rows inside the readers) and `evidence/sA1_register.csv`
 (31 rows outside them) · meanings read by hand `evidence/m05_manual_reading.json`.
 
@@ -48,6 +48,12 @@ Re-tests: [`retests/RT-001_PR40_FIRST_REPAIRS.md`](retests/RT-001_PR40_FIRST_REP
 verdicts on CI-R-01, CI-R-02 and CI-A-01 for candidate PR #40. Defects that exist only in
 an unmerged candidate are kept there (`retests/RT-001/candidate_findings.json`), not in the
 main register.
+
+Later work, each with its own index: [`round2/`](round2/README.md) (PRs #41–#43) ·
+[`round3/`](round3/README.md) (PR #45) · `consolidated/` (assessment and roadmap, scripture
+discrepancy register, replies to the builder) · [`device-test/`](device-test/README.md)
+(the iPhone script, prepared and **not yet run**; two findings from its rehearsal,
+CI-R-11 and CI-U-11).
 
 ## Reading the evidence labels
 

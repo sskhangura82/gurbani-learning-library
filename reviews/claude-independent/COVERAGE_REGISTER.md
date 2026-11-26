@@ -80,7 +80,7 @@ U-01 … U-17: 17 / 17 run. 6 pass, 10 partial, 1 fail. Table in D06 §2. Real p
 | R-04 | 8 + 3 + 2 tamper variants across 3 readers | Fail in 2 of 3 readers (CI-R-01) |
 | R-05 | every flow run | Pass (one ignored-policy console error) |
 | R-06 | 4 pages, 2 lab profiles | Reported (CI-U-09); local server uncompressed |
-| D-01 | 2 / 3 readers for notes (Nitnem, Japji); reading place in all 3 | Pass where tested |
+| D-01 | 2 / 3 readers for notes (Nitnem, Japji); reading place in all 3 | Pass where tested — **except the Japji reading place, corrected 2026-11-26: see the last section (CI-R-11)** |
 | D-02 | 1 / 3 readers (Nitnem) | Pass for Nitnem; others not tested by me |
 | D-03 | 11 hostile files (Nitnem); damaged records (Japji, Sukhmani) | Pass |
 | D-04 | Nitnem | Pass |
@@ -144,3 +144,22 @@ A check on one of my own earlier statements: the first review listed "messages s
 a helper that could not tell drawn text from text clipped to one pixel. No finding rested
 on it. Re-measured by size on screen: the Nitnem and Sukhmani warnings are real banners;
 the Japji reader's are not visible (CI-R-09).
+
+### Device-test preparation, 26 November 2026
+
+Record: [`device-test/README.md`](device-test/README.md). All in emulation (Chromium,
+phone-sized window). Device: none. WebKit engine: not available in this session.
+
+| Examined | How much | Verdict |
+|---|---|---|
+| The Safari part of the iPhone script, rehearsed step by step | 14 / 14 steps, on the published version and on candidate PR #40 | 13 as written on both; step A7 differs (CI-R-11) |
+| Japji reading place after reopening | 4 ways of reopening × 3 times each × 2 versions, as shipped and with the browser told not to restore scroll | Exact when opened afresh; moves back 301 pixels on every reload or Back, and is saved (CI-R-11). Exact in all four ways once the browser's own scroll restoring is off |
+| Where a written note can be found again (Japji) | 1 note on an unsaved line; 1 note with no saved lines; export; return to the line — 2 versions | Not listed anywhere; kept, exported and shown at its line (CI-U-11) |
+
+A correction to one of my own earlier verdicts. D-01 ("saved learning survives reload,
+navigation between readers, and browser restart") was recorded as "pass where tested",
+with the Japji reader's reading place included. Round 1 had seen the reader reopen about
+three lines early and filed it as polish (CI-U-08); it did not reload a second time, and so
+did not see that the wrong place is saved and the error repeats. For the Japji reading
+place the D-01 verdict is withdrawn and replaced by CI-R-11. Notes and saved lines were
+re-checked in this pass and do survive.

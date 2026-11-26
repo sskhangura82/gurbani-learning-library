@@ -96,6 +96,9 @@ sc += [f'| **Total** | 100% | | | | **{now:.0f} of 100** | Ceiling without human
        '- The score above describes the **published** version and has not moved: nothing has been merged or deployed since the review.',
        '- On candidate PR #40 the fixes for CI-R-01 and CI-A-01 were reproduced and verified in emulation, and CI-R-02 was partly fixed. If that candidate is corrected as the re-test record asks, merged and deployed, the reliability and accessibility rows lose a high-severity item each; reliability still holds CI-R-03.',
        '- Six entries were added to the register (one high: CI-S-16). None changes a category score: scripture was already held at 1 by open high-severity items.', '',
+       '## After the device-test preparation (2026-11-26)', '',
+       '- Two medium entries were added (CI-R-11, CI-U-11), found in emulation on the published version and on candidate PR #40. Neither changes a category score: reliability is already held at 1 by open high-severity items, and ease of use at 2 by medium ones.',
+       '- No device result exists yet, so the ceiling of 3 per category stands.', '',
        '## What moves the number', '',
        '| If… | Total |', '|---|---|',
        f'| Today | {now:.0f} |',
@@ -114,7 +117,9 @@ WAVE = {'CI-R-01': 1, 'CI-R-02': 1, 'CI-A-01': 1, 'CI-M-09': 1, 'CI-M-08': 1, 'C
         'CI-U-01': 3, 'CI-U-02': 3, 'CI-U-04': 3, 'CI-U-05': 3, 'CI-U-06': 3, 'CI-U-07': 3, 'CI-U-08': 3, 'CI-U-09': 3, 'CI-U-10': 3, 'CI-A-02': 3, 'CI-A-03': 3, 'CI-R-04': 3, 'CI-R-05': 3, 'CI-P-02': 3,
         'CI-M-06': 4, 'CI-M-10': 4, 'CI-M-11': 4, 'CI-E-01': 4, 'CI-E-02': 4, 'CI-S-15': 4,
         # found during re-test RT-001
-        'CI-R-07': 1, 'CI-R-08': 1, 'CI-R-09': 1, 'CI-R-10': 1, 'CI-S-16': 2, 'CI-M-13': 4}
+        'CI-R-07': 1, 'CI-R-08': 1, 'CI-R-09': 1, 'CI-R-10': 1, 'CI-S-16': 2, 'CI-M-13': 4,
+        # found while preparing the device test (2026-11-26)
+        'CI-R-11': 1, 'CI-U-11': 3}
 STATUS_WORDS = {'OPEN': 'Open', 'OPEN-NEEDS-SCHOLAR': 'Open — needs a qualified reviewer', 'OPEN-OWNER-DECISION': 'Open — owner decision', 'UPSTREAM': 'Report upstream',
                 'FIX-VERIFIED-ON-CANDIDATE': 'Fix verified on candidate PR #40 in emulation — not yet public', 'PARTLY-FIXED-ON-CANDIDATE': 'Partly fixed on candidate PR #40 — not yet public'}
 WHO = {1: 'Claude proposes, ChatGPT reviews (no scripture text touched)', 2: 'Owner decides edition and reviewers; scholars collate; then builder applies with before/after records',
@@ -124,6 +129,7 @@ TITLE = {1: 'Wave 1 — Safety, honesty and access (can start now; no Gurbani te
 order = {'S1': 0, 'S2': 1, 'S3': 2}
 bl = ['# D10 · Prioritized improvement backlog', '', 'Generated from `findings/findings.json`. Each row links to its full entry (location, evidence, correction, acceptance test) in `FINDINGS_REGISTER.md`.',
       'Updated after re-test RT-001 (2026-11-25): six items added (CI-R-07 to CI-R-10, CI-S-16, CI-M-13) and a "Where it stands" column. "Fix verified on candidate" means the second reviewer saw the fix work on an unmerged candidate in emulation; the public app is unchanged until it is merged and deployed.',
+      'Updated 2026-11-26 while preparing the device test: two items added (CI-R-11 in wave 1, CI-U-11 in wave 3).',
       'Order inside a wave is by severity. "S0 cand." = critical if print collation confirms it.', '']
 open_items = [x for x in F if x['severity'] != 'PASS']
 missing = [x['id'] for x in open_items if x['id'] not in WAVE]

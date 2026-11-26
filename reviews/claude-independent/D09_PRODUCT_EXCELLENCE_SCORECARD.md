@@ -36,6 +36,11 @@ It says nothing about being better or worse than any other app.
 - On candidate PR #40 the fixes for CI-R-01 and CI-A-01 were reproduced and verified in emulation, and CI-R-02 was partly fixed. If that candidate is corrected as the re-test record asks, merged and deployed, the reliability and accessibility rows lose a high-severity item each; reliability still holds CI-R-03.
 - Six entries were added to the register (one high: CI-S-16). None changes a category score: scripture was already held at 1 by open high-severity items.
 
+## After the device-test preparation (2026-11-26)
+
+- Two medium entries were added (CI-R-11, CI-U-11), found in emulation on the published version and on candidate PR #40. Neither changes a category score: reliability is already held at 1 by open high-severity items, and ease of use at 2 by medium ones.
+- No device result exists yet, so the ceiling of 3 per category stands.
+
 ## What moves the number
 
 | If… | Total |
@@ -47,4 +52,4 @@ It says nothing about being better or worse than any other app.
 
 ## Findings behind the scores
 
-64 register entries: 17 high, 31 medium, 10 low, 6 passed notes. Full list: `FINDINGS_REGISTER.md`.
+66 register entries: 17 high, 33 medium, 10 low, 6 passed notes. Full list: `FINDINGS_REGISTER.md`.
