@@ -202,4 +202,8 @@
  window.addEventListener('storage',e=>{if(e.key!==L.KEY||!writable)return;try{const latest=L.read(m,storage);state.notes=latest.notes;state.bookmarks=latest.bookmarks;syncMarks();}catch(e){writable=false;warn(e.message);}});
  window.addEventListener('pagehide',()=>{pause();});
  window.GLP_BEFORE_UPDATE=async()=>{await releaseEditor();return await save();};
+ // The library enters the existing Saved list; it does not select a line.
+ // This is intentionally after the source-refusal return and reader setup.
+ const learningEntry=new URL(location.href).searchParams.getAll('learning');
+ if(learningEntry.length===1&&learningEntry[0]==='saved'&&!loadError)await openSaved();
 })();

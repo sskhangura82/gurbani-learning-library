@@ -1,0 +1,151 @@
+{
+  "startedAt": "2026-11-26T22:50:18.190Z",
+  "scope": "Builder desktop browser checks with synthetic records only",
+  "checks": [
+    {
+      "name": "japji: Saved opens directly, lists note without bookmark, preserves reading place and other store",
+      "status": "PASS"
+    },
+    {
+      "name": "japji: empty learning opens honest empty Saved state",
+      "status": "PASS"
+    },
+    {
+      "name": "japji: damaged saved record is preserved and recovery warning stays visible",
+      "status": "PASS"
+    },
+    {
+      "name": "japji: source failure cannot open Saved or overwrite original learning",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: Saved opens directly, lists note without bookmark, preserves reading place and other store",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: empty learning opens honest empty Saved state",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: damaged saved record is preserved and recovery warning stays visible",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: source failure cannot open Saved or overwrite original learning",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: Saved opens directly, lists note without bookmark, preserves reading place and other store",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: empty learning opens honest empty Saved state",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: damaged saved record is preserved and recovery warning stays visible",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: source failure cannot open Saved or overwrite original learning",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-mahalla9: Saved opens directly, lists note without bookmark, preserves reading place and other store",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-mahalla9: empty learning opens honest empty Saved state",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-mahalla9: damaged saved record is preserved and recovery warning stays visible",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-mahalla9: source failure cannot open Saved or overwrite original learning",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-kabir: Saved opens directly, lists note without bookmark, preserves reading place and other store",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-kabir: empty learning opens honest empty Saved state",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-kabir: damaged saved record is preserved and recovery warning stays visible",
+      "status": "PASS"
+    },
+    {
+      "name": "salok-kabir: source failure cannot open Saved or overwrite original learning",
+      "status": "PASS"
+    },
+    {
+      "name": "japji: ignores nonexact/duplicate query learning=other",
+      "status": "PASS"
+    },
+    {
+      "name": "japji: ignores nonexact/duplicate query learning=Saved",
+      "status": "PASS"
+    },
+    {
+      "name": "japji: ignores nonexact/duplicate query learning=saved&learning=saved",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: ignores nonexact/duplicate query learning=other",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: ignores nonexact/duplicate query learning=Saved",
+      "status": "PASS"
+    },
+    {
+      "name": "sukhmani: ignores nonexact/duplicate query learning=saved&learning=saved",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: ignores nonexact/duplicate query learning=other",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: ignores nonexact/duplicate query learning=Saved",
+      "status": "PASS"
+    },
+    {
+      "name": "sohila: ignores nonexact/duplicate query learning=saved&learning=saved",
+      "status": "PASS"
+    },
+    {
+      "name": "Nitnem Saved entry ignores unrelated unit and preserves selected occurrence",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing/unknown/ambiguous composition never auto-opens Saved: nitnem/index.html?learning=saved",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing/unknown/ambiguous composition never auto-opens Saved: nitnem/index.html?bani=missing&learning=saved",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing/unknown/ambiguous composition never auto-opens Saved: nitnem/index.html?bani=sohila&bani=anand&learning=saved",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser Back returns to the library Saved URL",
+      "status": "PASS"
+    }
+  ],
+  "runtimeErrors": [],
+  "limitations": [
+    "Not physical iPhone, Safari, Home Screen, VoiceOver or airplane-mode acceptance.",
+    "No production or personal browser profile is used.",
+    "Independent Claude review is separate."
+  ],
+  "browser": "158.0.8127.37",
+  "finishedAt": "2026-11-26T22:50:25.273Z",
+  "result": "PASS"
+}

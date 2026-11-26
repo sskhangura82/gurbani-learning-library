@@ -490,7 +490,7 @@ function toggleGuide(){
  state.timeout=setTimeout(pulse,Math.round(60000/state.pace));
  announce('Silent visual word guide started. This is not synchronized audio.');
 }
-async function chooseBani(name){
+async function chooseBani(name,{savedEntry=false}={}){
  if(!collectionNames.includes(name))throw Error('Unknown bani');
  const request=++selection;pause();
  if(state.toolsSession&&!await closeTools())return null;
@@ -512,7 +512,7 @@ async function chooseBani(name){
   $('bani-title-en').textContent=pack.title;$('bani-title-pa').textContent=pack.titleGurmukhi;
   $('bani-subtitle').textContent=pack.unitCount+((salokCollection||kabirCollection)?' Saloks':' passages')+' · Read, Meaning and Study';
   $('bani-variant').textContent=pack.reference+' · '+(kabirCollection?'Original headings retained. Documented source differences; qualified collation pending.':pack.caveat)+(['savaiye','chaupai'].includes(name)?' The Gurmukhi text is awaiting comparison with a named printed edition.':name==='rehras'?' The Chaupai, Swaiya and Dohra sections are awaiting comparison with a named printed edition.':'');
-  const url=new URL(location.href),requested=url.searchParams.get('bani')===name?url.searchParams.get('unit'):null;
+  const url=new URL(location.href),requested=!savedEntry&&url.searchParams.get('bani')===name?url.searchParams.get('unit'):null;
   const fromURL=requested===null?null:Number(requested);
   const selected=fromURL!==null&&Number.isInteger(fromURL)&&fromURL>=1&&fromURL<=pack.unitCount?fromURL-1:null;
   applyStyle();state.sourceVerified=true;toggleMode(state.mode,false);
@@ -835,7 +835,17 @@ window.NITNEM_INTERNAL_QA=Object.freeze({
   offlineScope:new URL('../',location.href).pathname,lastLineHeld:!!currentLine()?.held}),
  step:()=>guideStep(),library:()=>library()
 });
-const initial=new URL(location.href).searchParams.get('bani');
-if(initial&&collectionNames.includes(initial))chooseBani(initial).catch(()=>{});
+const entryQuery=new URL(location.href).searchParams,initial=entryQuery.get('bani');
+const learningEntry=entryQuery.getAll('learning');
+const openSavedEntry=learningEntry.length===1&&learningEntry[0]==='saved'&&entryQuery.getAll('bani').length===1;
+if(initial&&collectionNames.includes(initial))chooseBani(initial,{savedEntry:openSavedEntry}).then(async pack=>{
+ // A source failure never reaches the tools. The initial Saved link does not
+ // change the selected occurrence, even if an unrelated unit parameter exists.
+ if(!pack||!openSavedEntry||!state.sourceVerified||state.savingBlocked)return;
+ await openTools();
+ if(!toolsCurrent(state.toolsSession))return;
+ const list=$('saved-lines'),summary=list.querySelector('summary');
+ list.open=true;summary.focus({preventScroll:true});list.scrollIntoView({block:'nearest',behavior:'instant'});
+}).catch(()=>{});
 else library().catch(e=>$('collection-status').textContent='Reading collection unavailable: '+e.message);
 })();
