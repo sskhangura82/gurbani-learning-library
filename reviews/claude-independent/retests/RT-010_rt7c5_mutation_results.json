@@ -1,0 +1,347 @@
+[
+  {
+    "case": "C0 control",
+    "mutation": "control, nothing altered",
+    "forgeryLevel": 1,
+    "resealNotes": [],
+    "observed": {
+      "sourceState": "ready",
+      "errorVisible": false,
+      "contentHidden": false,
+      "passagesChildren": 1,
+      "printDisabled": false,
+      "renderedLines": [
+        "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+        "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥"
+      ],
+      "lineCount": 2,
+      "gurmukhiAnywhereInDom": true,
+      "gurmukhiInVisibleText": true,
+      "explanationText": "Explanation · Awaiting qualified reviewNo explanation has been written. This space remains empty until qualified content is available.",
+      "engineProbe": {
+        "accepted": true,
+        "code": null,
+        "message": null
+      }
+    }
+  },
+  {
+    "case": "M1 char, stale digests",
+    "mutation": "one Gurmukhi character changed in the cited Salok (line 2, token untouched)",
+    "forgeryLevel": 1,
+    "resealNotes": [],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SOURCE_DIGEST",
+        "name": "ArticleSourceError",
+        "message": "The complete original source package does not match the pinned edition."
+      }
+    }
+  },
+  {
+    "case": "M2 char, in-file resealed",
+    "mutation": "one Gurmukhi character changed in the cited Salok (line 2, token untouched)",
+    "forgeryLevel": 2,
+    "resealNotes": [
+      "in-file digests regenerated"
+    ],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SOURCE_DIGEST",
+        "name": "ArticleSourceError",
+        "message": "The complete original source package does not match the pinned edition."
+      }
+    }
+  },
+  {
+    "case": "M3 char, +file pin",
+    "mutation": "one Gurmukhi character changed in the cited Salok (line 2, token untouched)",
+    "forgeryLevel": 3,
+    "resealNotes": [
+      "in-file digests regenerated",
+      "package file pin repinned"
+    ],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SOURCE_SEQUENCE",
+        "name": "ArticleSourceError",
+        "message": "The complete original source sequence changed."
+      }
+    }
+  },
+  {
+    "case": "M4 char, +sequence pin",
+    "mutation": "one Gurmukhi character changed in the cited Salok (line 2, token untouched)",
+    "forgeryLevel": 4,
+    "resealNotes": [
+      "in-file digests regenerated",
+      "package file pin repinned",
+      "sequence pin repinned"
+    ],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_REFERENCE",
+        "name": "ArticleSourceError",
+        "message": "The explicit source edition or complete Salok binding could not be resolved."
+      }
+    }
+  },
+  {
+    "case": "M5 char, FULL forgery",
+    "mutation": "one Gurmukhi character changed in the cited Salok (line 2, token untouched)",
+    "forgeryLevel": 5,
+    "resealNotes": [
+      "in-file digests regenerated",
+      "package file pin repinned",
+      "sequence pin repinned",
+      "reference unit+line pins repinned"
+    ],
+    "observed": {
+      "sourceState": "ready",
+      "errorVisible": false,
+      "contentHidden": false,
+      "passagesChildren": 1,
+      "printDisabled": false,
+      "renderedLines": [
+        "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+        "ਕਹੁ ਮਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥"
+      ],
+      "lineCount": 2,
+      "gurmukhiAnywhereInDom": true,
+      "gurmukhiInVisibleText": true,
+      "explanationText": "Explanation · Awaiting qualified reviewNo explanation has been written. This space remains empty until qualified content is available.",
+      "engineProbe": {
+        "accepted": true,
+        "code": null,
+        "message": null
+      }
+    }
+  },
+  {
+    "case": "M6 token altered, FULL forgery",
+    "mutation": "the selection token itself altered in the cited Salok",
+    "forgeryLevel": 5,
+    "resealNotes": [
+      "in-file digests regenerated",
+      "package file pin repinned",
+      "sequence pin repinned",
+      "reference unit+line pins repinned"
+    ],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SELECTION",
+        "name": "ArticleSourceError",
+        "message": "The literal selection token does not occur in the linked Salok."
+      }
+    }
+  },
+  {
+    "case": "M7 line deleted, FULL forgery",
+    "mutation": "one verse line deleted from the cited Salok",
+    "forgeryLevel": 5,
+    "resealNotes": [
+      "in-file digests regenerated",
+      "package file pin repinned",
+      "sequence pin repinned",
+      "reference unit+line pins repinned"
+    ],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SOURCE_IDENTITY",
+        "name": "ArticleSourceError",
+        "message": "A Salok identity, order or complete unit has changed."
+      }
+    }
+  },
+  {
+    "case": "M8 collation approved flipped",
+    "mutation": "humanCollationApproved flipped to true in the source package",
+    "forgeryLevel": 5,
+    "resealNotes": [
+      "in-file digests regenerated",
+      "package file pin repinned",
+      "sequence pin repinned",
+      "reference unit+line pins repinned"
+    ],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SOURCE_REVIEW",
+        "name": "ArticleSourceError",
+        "message": "The original package review gate has changed."
+      }
+    }
+  },
+  {
+    "case": "M9 explanation injected",
+    "mutation": "an explanation sentence injected into the catalog",
+    "forgeryLevel": 1,
+    "resealNotes": [],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_EXPOSITION",
+        "name": "ArticleSourceError",
+        "message": "Explanation and claim content is not enabled in this review candidate."
+      }
+    }
+  },
+  {
+    "case": "M10 claim injected",
+    "mutation": "a teaching claim injected into the catalog claims array",
+    "forgeryLevel": 1,
+    "resealNotes": [],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_EXPOSITION",
+        "name": "ArticleSourceError",
+        "message": "Explanation and claim content is not enabled in this review candidate."
+      }
+    }
+  },
+  {
+    "case": "M11 reviewStatus raised",
+    "mutation": "catalog reviewStatus raised to QUALIFIED_REVIEW_COMPLETE",
+    "forgeryLevel": 1,
+    "resealNotes": [],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_LAYER",
+        "name": "ArticleSourceError",
+        "message": "Unapproved article content, rights or review status."
+      }
+    }
+  },
+  {
+    "case": "M12 semanticReviewed flipped",
+    "mutation": "catalog selection.semanticReviewed flipped to true",
+    "forgeryLevel": 1,
+    "resealNotes": [],
+    "observed": {
+      "sourceState": "unavailable",
+      "errorVisible": true,
+      "contentHidden": true,
+      "passagesChildren": null,
+      "printDisabled": true,
+      "renderedLines": [],
+      "lineCount": 0,
+      "gurmukhiAnywhereInDom": false,
+      "gurmukhiInVisibleText": false,
+      "explanationText": "",
+      "engineProbe": {
+        "accepted": false,
+        "code": "ARTICLE_SELECTION",
+        "name": "ArticleSourceError",
+        "message": "The term-selection basis has changed."
+      }
+    }
+  }
+]
