@@ -1,0 +1,77 @@
+[
+  {
+    "command": "node --test tests/article-source.mjs",
+    "exitCode": 0,
+    "output": "te types fail closed\nok 46 - Malformed JSON, oversized files and invalid byte types fail closed\n  ---\n  duration_ms: 0.568458\n  type: 'test'\n  ...\n# Subtest: Fixed source and reference contracts are deeply frozen and contain no source verse copies\nok 47 - Fixed source and reference contracts are deeply frozen and contain no source verse copies\n  ---\n  duration_ms: 0.065292\n  type: 'test'\n  ...\n1..47\n# tests 47\n# suites 0\n# pass 47\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 170.46\n"
+  },
+  {
+    "command": "node tests/verify.mjs",
+    "exitCode": 0,
+    "output": "{\"total\":27,\"status\":\"PASS\"}\n"
+  },
+  {
+    "command": "node tests/shared-learning.mjs",
+    "exitCode": 0,
+    "output": "{\"total\":12,\"status\":\"PASS\"}\n"
+  },
+  {
+    "command": "node tests/japji-retained-learning.mjs",
+    "exitCode": 0,
+    "output": "{\"status\":\"PASS\",\"total\":20}\n"
+  },
+  {
+    "command": "node --test tests/source-integrity.mjs",
+    "exitCode": 0,
+    "output": " to bless altered data\n  ---\n  duration_ms: 0.04875\n  type: 'test'\n  ...\n# Subtest: Unavailable WebCrypto fails closed\nok 45 - Unavailable WebCrypto fails closed\n  ---\n  duration_ms: 1.414125\n  type: 'test'\n  ...\n# Subtest: Unsupported composition has no automatic trust fallback\nok 46 - Unsupported composition has no automatic trust fallback\n  ---\n  duration_ms: 0.035375\n  type: 'test'\n  ...\n1..46\n# tests 46\n# suites 0\n# pass 46\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 614.7095\n"
+  },
+  {
+    "command": "node tests/r7-contract.mjs",
+    "exitCode": 0,
+    "output": "ld and new pace preferences remain compatible\",\"Reader exposes one-tap numeric pace control and no media\",\"Pace logic enters existing synchronized preference-merging mechanism\",\"The frozen scripture and editorial layers remain separate\",\"Three gurdwara sources are official HTTPS and not media embeds\",\"Simran preview is silent and does not persist meditation metrics\",\"External place links use explicit new-tab protections\",\"New routes and scripts are included in offline release\"],\"status\":\"PASS\"}\n"
+  },
+  {
+    "command": "node tests/nitnem-content.mjs",
+    "exitCode": 0,
+    "output": "{\"status\":\"PASS\",\"total\":18,\"sourceRecords\":1361,\"studyDrafts\":327,\"courseSHA256\":\"5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c\"}\n"
+  },
+  {
+    "command": "node tests/nitnem-learning.mjs",
+    "exitCode": 0,
+    "output": "{\"total\":9,\"status\":\"PASS\"}\n"
+  },
+  {
+    "command": "node tests/nitnem-backup-capacity.mjs",
+    "exitCode": 0,
+    "output": "he same byte bound, including multibyte input\nok 5 - Both file and text guards enforce the same byte bound, including multibyte input\n  ---\n  duration_ms: 1.114375\n  type: 'test'\n  ...\n# Subtest: Larger total capacity does not relax per-note or foreign-ID validation\nok 6 - Larger total capacity does not relax per-note or foreign-ID validation\n  ---\n  duration_ms: 0.543042\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 407.509917\n"
+  },
+  {
+    "command": "node tests/nitnem-storage-quota.mjs",
+    "exitCode": 0,
+    "output": "orage access failures receive a preservation message without falsely claiming full storage\n  ---\n  duration_ms: 0.16525\n  type: 'test'\n  ...\n# Subtest: The same import can be retried successfully after capacity is available, without a stuck lock\nok 8 - The same import can be retried successfully after capacity is available, without a stuck lock\n  ---\n  duration_ms: 0.181375\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 8.140917\n"
+  },
+  {
+    "command": "node tests/nitnem-ui-lifecycle.mjs",
+    "exitCode": 0,
+    "output": "{\"total\":21,\"status\":\"PASS\",\"readerSHA256\":\"9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6\"}\n"
+  },
+  {
+    "command": "node tests/salok-mahalla9-content.mjs",
+    "exitCode": 0,
+    "output": "{\"status\":\"PASS\",\"checks\":11,\"numberedSaloks\":57,\"sourceOccurrences\":117,\"meaningDrafts\":114,\"studyDrafts\":57}\n"
+  },
+  {
+    "command": "node tests/salok-kabir-content.mjs",
+    "exitCode": 0,
+    "output": "{\"status\":\"PASS\",\"checks\":12,\"Saloks\":243,\"sourceOccurrences\":494,\"meanings\":486,\"studies\":243}\n"
+  },
+  {
+    "command": "node tests/salok-kabir-bindings.mjs",
+    "exitCode": 0,
+    "output": "gs cannot misattach meanings\nok 11 - Swapped map values and first-line-only study bindings cannot misattach meanings\n  ---\n  duration_ms: 78.877916\n  type: 'test'\n  ...\n# Subtest: A correct heading hash still needs the exact enclosing Salok and draft status\nok 12 - A correct heading hash still needs the exact enclosing Salok and draft status\n  ---\n  duration_ms: 44.382125\n  type: 'test'\n  ...\n1..12\n# tests 12\n# suites 0\n# pass 12\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1107.04\n"
+  },
+  {
+    "command": "node tests/service-worker.mjs",
+    "exitCode": 0,
+    "output": "{\"total\":8,\"status\":\"PASS\"}\n"
+  }
+]

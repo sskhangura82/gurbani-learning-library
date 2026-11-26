@@ -1,0 +1,120 @@
+{
+  "pypdfium2": "5.15.2",
+  "pdfium": "159.0.8149.0@sourcebuild-toolchained",
+  "checks": [
+    {
+      "pdf": "gurmukhi-mn-haumai-source-sheet.pdf",
+      "checks": [
+        {
+          "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "exact": false
+        },
+        {
+          "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "exact": false
+        }
+      ],
+      "extractedGurmukhi": [
+        "Haumai ਹਉਮੈ",
+        "The exact source word ਹਉਮੈ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਜਿ ਹਿ ਪ੍ਰਾ ਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾ ਮੁ ਪਛਾ ਨਿ ॥",
+        "ਕਹੁ ਨਾ ਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾ ਚੀ ਮਾ ਨੁ ॥੧੯॥"
+      ]
+    },
+    {
+      "pdf": "gurmukhi-mn-dubidha-source-sheet.pdf",
+      "checks": [
+        {
+          "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+          "exact": false
+        },
+        {
+          "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+          "exact": false
+        }
+      ],
+      "extractedGurmukhi": [
+        "Dubidha ਦੁਬਿ ਧਾ",
+        "The exact source word ਦੁਬਿ ਧਾ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਕਬੀ ਰ ਪ੍ਰੀ ਤਿ ਇਕ ਸਿ ਉ ਕੀ ਏ ਆਨ ਦੁਬਿ ਧਾ ਜਾਇ ॥",
+        "ਭਾ ਵੈ ਲਾਂ ਬੇ ਕੇਸ ਕਰੁ ਭਾ ਵੈ ਘਰਰਿ ਮੁਡਾ ਇ ॥੨੫॥"
+      ]
+    },
+    {
+      "pdf": "mukta-mahee-haumai-source-sheet.pdf",
+      "checks": [
+        {
+          "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "exact": false
+        },
+        {
+          "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "exact": false
+        }
+      ],
+      "extractedGurmukhi": [
+        "Haumai ਹਉਮੈ",
+        "The exact source word ਹਉਮੈ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਜਿ ਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾ ਮੁ ਪਛਾ ਨਿ ॥",
+        "ਕਹੁ ਨਾ ਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾ ਚੀ ਮਾ ਨੁ ॥੧੯॥"
+      ]
+    },
+    {
+      "pdf": "mukta-mahee-dubidha-source-sheet.pdf",
+      "checks": [
+        {
+          "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+          "exact": false
+        },
+        {
+          "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+          "exact": false
+        }
+      ],
+      "extractedGurmukhi": [
+        "Dubidha ਦੁਬਿ ਧਾ",
+        "The exact source word ਦੁਬਿ ਧਾ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਕਬੀ ਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿ ਉ ਕੀ ਏ ਆਨ ਦੁਬਿ ਧਾ ਜਾ ਇ ॥",
+        "ਭਾ ਵੈ ਲਾਂ ਬੇ ਕੇਸ ਕਰੁ ਭਾ ਵੈ ਘਰਰਿ ਮੁਡਾ ਇ ॥੨੫॥"
+      ]
+    },
+    {
+      "pdf": "gurmukhi-sangam-mn-haumai-source-sheet.pdf",
+      "checks": [
+        {
+          "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "exact": false
+        },
+        {
+          "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "exact": false
+        }
+      ],
+      "extractedGurmukhi": [
+        "Haumai ਹਉਮੈ",
+        "The exact source word ਹਉਮੈ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਜਿ ਹਿ ਪ੍ਰਾ ਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾ ਮੁ ਪਛਾ ਨਿ ॥",
+        "ਕਹੁ ਨਾ ਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾ ਚੀ ਮਾ ਨੁ ॥੧੯॥"
+      ]
+    },
+    {
+      "pdf": "gurmukhi-sangam-mn-dubidha-source-sheet.pdf",
+      "checks": [
+        {
+          "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+          "exact": false
+        },
+        {
+          "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+          "exact": false
+        }
+      ],
+      "extractedGurmukhi": [
+        "Dubidha ਦੁਬਿ ਧਾ",
+        "The exact source word ਦੁਬਿ ਧਾ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਕਬੀ ਰ ਪ੍ਰੀ ਤਿ ਇਕ ਸਿ ਉ ਕੀ ਏ ਆਨ ਦੁਬਿ ਧਾ ਜਾ ਇ ॥",
+        "ਭਾ ਵੈ ਲਾਂ ਬੇ ਕੇਸ ਕਰੁ ਭਾ ਵੈ ਘਰਰਿ ਮੁਡਾ ਇ ॥੨੫॥"
+      ]
+    }
+  ]
+}

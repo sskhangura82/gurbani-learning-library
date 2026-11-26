@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-content-layer="editorial-source-index">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; media-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#fdfcfa">
+<link rel="stylesheet" href="articles.css">
+<title>Source reading sheets · Gurbani Learning Library</title>
+</head>
+<body data-page="index">
+<a class="skip" href="#main">Skip to reading sheets</a>
+<div class="sheet">
+<header class="bar"><a class="wordmark" href="../index.html">Gurbani Learning Library</a><span>Development preview</span></header>
+<nav class="navigation" aria-label="Library"><a href="../index.html">← Back to library</a></nav>
+<main id="main" tabindex="-1">
+<p class="eyebrow">EXPLORE · SOURCE READING SHEETS</p>
+<h1>A passage to study.<br><em>Space to understand.</em></h1>
+<p class="intro">Find a source passage by a word it contains, read the complete Salok, and print a sheet for study.</p>
+<div class="notice" id="review-notice"><strong>Explanations are awaiting qualified review.</strong> These two reading sheets demonstrate the format. Their word matches have not been approved as topic lessons.</div>
+<div id="article-loading" class="load-state" role="status">Checking source references…</div>
+<div id="article-error" class="error-panel" role="alert" hidden>
+<h2>Reading sheets are unavailable</h2><p id="error-message">The source references could not be checked. No passage has been displayed.</p>
+<div class="error-actions"><button id="retry-load" type="button">Try again</button><a href="../index.html">Return to library</a></div>
+</div>
+<section id="index-content" hidden aria-labelledby="browse-title">
+<h2 id="browse-title" class="section-title">Browse the two source sheets</h2>
+<form id="topic-search-form" class="topic-search" action="index.html" method="get" role="search">
+<label for="article-search">Find a topic or source word</label>
+<div class="search-row"><input type="search" name="q" id="article-search" maxlength="100" autocomplete="off" spellcheck="false" placeholder="Haumai or duality" aria-describedby="search-help"><button type="submit">Search</button></div>
+<p id="search-help" class="small">Matches complete words in these topic names and their listed aliases.</p>
+</form>
+<p id="search-status" class="small" role="status" aria-live="polite"></p>
+<div id="topic-list" class="topic-list"></div>
+<p id="no-results" class="empty-state" hidden>No matching sheet is available. Try Haumai or duality.</p>
+<section class="index-method" aria-labelledby="method-title"><h2 id="method-title" class="section-title">What is here</h2><p>One full Salok from Salok Mahalla 9 and one from Salok Bhagat Kabir Ji. Each sheet keeps its source, its selection basis and its review status visible on screen and paper.</p><p>These are selected examples. They are not a search of the whole Sri Guru Granth Sahib Ji or a complete collection of teachings on these topics.</p></section>
+</section>
+<noscript><p class="error-panel">JavaScript is needed to check the original source before showing a passage. No source reading sheet has been loaded.</p></noscript>
+</main>
+<footer class="footer"><p>A family learning project. No account, tracking or saved reading activity on these sheets.</p></footer>
+</div>
+<script type="module" src="app.mjs"></script>
+</body>
+</html>
