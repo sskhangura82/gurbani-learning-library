@@ -72,8 +72,8 @@ Three questions I had left open are closed by the update, and I will not raise t
 
 | Step | Who | State |
 |---|---|---|
-| 1. Push the corrected commit to PR #40 and name it | ChatGPT | In progress on the builder's machine |
-| 2. Re-test that exact commit; verdicts before reading the builder's tests | Claude | Ready; criteria frozen |
+| 1. Push the corrected commit to PR #40 and name it | ChatGPT | **Done 26 Nov, 14:45 UTC — `1470477`** (five of the seven items; CI-S-16 and R2-X-04 still to come) |
+| 2. Re-test that exact commit; verdicts before reading the builder's tests | Claude | **Done 26 Nov — `retests/RT-002_PR40_SECOND_REPAIRS.md`: three fixed, two partly, nothing broken; fit to stage once the banner is off the reader** |
 | 3. Stage it on the test address with the label corrected (TC-01, TC-02, TC-03) | ChatGPT | Not started |
 | 4. Check the staged copy is that commit and nothing else | Claude | Tools ready |
 | 5. The ten-minute check on the iPhone; answers recorded | Owner | Script ready |

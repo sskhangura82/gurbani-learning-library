@@ -190,4 +190,50 @@ corrected and rerun before any figure here was taken.
 
 ## 7. Comparison with the builder's tests
 
-*To be added after sections 1 to 6 are committed.*
+Added after sections 1 to 6 were committed and pushed (commit `a0455e2`, 15:58 UTC). Only then did I open the
+builder's hand-off note (`docs/PR40_SECOND_REPAIR_CANDIDATE_20261126.md`), the tests and the evidence files.
+
+**Run by me on the candidate**
+
+| The builder's suite | Result when I ran it |
+|---|---|
+| 12 non-browser suites named in the quality gate | 12 of 12 pass |
+| `tests/review-repairs-browser.mjs` | 18 of 18 scenarios pass; no runtime errors |
+| `tests/source-integrity-browser.mjs` | 18 of 18 scenarios pass; no runtime errors |
+| Sukhmani and Nitnem browser suites | Not run by me; the automated checks on `1470477` are green, 4 of 4 |
+
+I ran the browser suites with test driver 1.63.0; the builder pins 1.62.1, which is not installed here.
+
+**Where we agree.** On every item the candidate claims, the builder's results and mine point the same way. The
+hand-off note is accurate about its own limits: it says the offline-copy recovery is not done, that CI-S-16 and
+R2-X-04 remain, that the archive is not a backup against clearing site data, and that nothing here is an iPhone
+result. I found nothing in it that overstates.
+
+**What each side tested that the other did not**
+
+| Subject | The builder | This re-test |
+|---|---|---|
+| Older copy of the reader | The published reader's own storage modules, loaded into a second tab. In the gate | The whole published reader, and the whole first candidate, swapped in at the same address: rollback and old tab. Not in the gate |
+| The notice | Four return situations at one width | 36 combinations of width, mode, text size and guide; dismissal; under the test banner |
+| Reading place | Three reloads and Back from one passage | Four ways of reopening; three passages, three modes, two widths, two text sizes; with the notice showing; the other two readers |
+| Notes in the list | Listed, and exact in the backup | One note alone, both marks, order, what a tap does, 200 notes, emptying, where notes go |
+| Refusal screen | Export, **and restoring that file through a working reader** | Export in three situations per reader; storage untouched; 20 damaged records |
+| Refused writes, removal, import counts | — | Tested (RT2-01, RT2-02, RT2-04) |
+
+One thing the builder tested and I did not: restoring a backup taken from the refusal screen. It passes in the
+builder's suite as I ran it.
+
+**Criterion j — both tests in the quality gate.** Half met. The old-copy test is in the gate, at the level of the
+published reader's storage modules. A whole-version rollback is not. The mechanism is the same, so I do not hold
+RT1-01 open for it; adding the whole-version test would make the gate match the fault as it was found.
+
+**No verdict in sections 1 to 6 changed after reading the builder's tests.**
+
+## 8. What I would ask for next
+
+1. Take the banner off the top of the reader before staging this commit (section 3), and put a build label on it.
+2. Stage `1470477` on the test address, so the phone check can begin.
+3. CI-S-16 — the source-backed correction of the two lines, recorded as a correction.
+4. The recovery half of CI-R-08 — a way back that does not depend on waiting for the next release.
+5. R2-X-04.
+6. RT2-01 — let the notice be put away, and let a kept-aside note be removed.

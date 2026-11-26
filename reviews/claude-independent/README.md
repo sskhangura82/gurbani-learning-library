@@ -56,7 +56,9 @@ discrepancy register, replies to the builder, and — newest —
 · [`device-test/`](device-test/README.md) (the iPhone script, prepared and **not yet run**;
 the test copy checked against its source; two findings from the rehearsal, CI-R-11 and
 CI-U-11) · [`retests/RT-002_FROZEN_CRITERIA…`](retests/RT-002_FROZEN_CRITERIA_BEFORE_SECOND_REPAIRS.md)
-(criteria for the next re-test of PR #40, frozen before the repaired commit exists).
+(criteria for the second re-test of PR #40) · [`retests/RT-002_PR40_SECOND_REPAIRS.md`](retests/RT-002_PR40_SECOND_REPAIRS.md)
+(**the second re-test, PR #40 at `1470477`: three repairs fixed, two partly, two not attempted;
+nothing broken; fit to stage for the phone check once the test banner is off the reader**).
 
 ## Reading the evidence labels
 

@@ -689,9 +689,9 @@
   "why_it_matters": "Private reflections are the one thing the app cannot recreate. Today this needs an unusual record; it becomes ordinary the day any line ID changes.",
   "proposed_correction": "Never drop: move unknown items to a \"kept aside\" list the reader can see and export.",
   "acceptance_test": "The same test shows the note preserved and visible; no silent truncation.",
-  "status": "PARTLY-FIXED-ON-CANDIDATE",
+  "status": "FIX-VERIFIED-ON-CANDIDATE",
   "origin": "INDEPENDENT",
-  "retest": "Re-test RT-001, 2026-11-25, candidate PR #40 at 09e829e (unmerged; the public app is unchanged). PARTLY FIXED. Fixed: opening a record no longer drops or cuts anything — notes and bookmarks on unknown lines, notes over 12,000 characters and colliding notes are kept whole, shown on the Saved-learning screen, included in the backup, and survive wipe-and-restore (restoring twice changes nothing). Remaining: (1) RT1-01 — kept-aside items are destroyed without a word when an older copy of the reader opens the same record: a rollback to the published version, or a tab left open from before the update. (2) CI-R-09 — the notice is not on screen for a returning reader in 3 of 4 situations. Record: retests/RT-001_PR40_FIRST_REPAIRS.md."
+  "retest": "Re-test RT-001, 2026-11-25, candidate PR #40 at 09e829e (unmerged; the public app is unchanged). PARTLY FIXED. Fixed: opening a record no longer drops or cuts anything — notes and bookmarks on unknown lines, notes over 12,000 characters and colliding notes are kept whole, shown on the Saved-learning screen, included in the backup, and survive wipe-and-restore (restoring twice changes nothing). Remaining: (1) RT1-01 — kept-aside items are destroyed without a word when an older copy of the reader opens the same record: a rollback to the published version, or a tab left open from before the update. (2) CI-R-09 — the notice is not on screen for a returning reader in 3 of 4 situations. Record: retests/RT-001_PR40_FIRST_REPAIRS.md. ‖ Re-test RT-002, 2026-11-26, candidate PR #40 at 1470477 (unmerged; the public app is unchanged; emulation only, no device). BOTH REMAINING PARTS FIXED. RT1-01: the three made-up kept-aside items survive a rollback and an old tab, with the published reader and with the first candidate as the older copy, and come back through export, an emptied browser and import; the count does not grow when the same backup is imported three times. CI-R-09: see that entry. Record: retests/RT-002_PR40_SECOND_REPAIRS.md."
  },
  {
   "id": "CI-R-03",
@@ -915,8 +915,9 @@
   "why_it_matters": "Refusing is right. Leaving a person with no reading, no backup and advice that cannot work is not. Damage to an offline copy is rare, but this is the moment the app most needs to be trusted.",
   "proposed_correction": "On a failed check, fetch that file again past the offline copy, check it, and replace the bad copy if the fresh one passes. Offer \"Download again\". Keep \"Export learning\" working on the failure screen. Say what failed, that notes are safe, and what to press.",
   "acceptance_test": "With a damaged offline copy and the network on, the reader recovers by itself or with one press and saved learning is untouched; with the network off, the screen still offers export and says to reconnect.",
-  "status": "OPEN",
-  "origin": "RETEST"
+  "status": "PARTLY-FIXED-ON-CANDIDATE",
+  "origin": "RETEST",
+  "retest": "Re-test RT-002, 2026-11-26, candidate PR #40 at 1470477 (unmerged; the public app is unchanged; emulation only, no device). PARTLY FIXED. Backup: on the refusal screen of both readers, online, reloaded and offline, \"Export original learning\" produces a file holding the saved records exactly, 6 of 6; with 20 kinds of damaged record export never hung. Recovery: not fixed — with a damaged offline copy and the network on, the reader still fails when reopened, reloaded and after the update check; only a later release repairs it."
  },
  {
   "id": "CI-R-09",
@@ -930,8 +931,9 @@
   "why_it_matters": "A person whose notes have been kept aside, or whose saving has stopped, is not told unless they use a screen reader or happen to open Saved learning.",
   "proposed_correction": "Show the notice where immersive reading does not hide it — for example a small marker on the bottom bar that opens Saved learning — and announce it once. Do not reuse a style that is hidden on purpose.",
   "acceptance_test": "In each return situation (at the top, resumed mid-text, after scrolling, during guided reading) a measurement of the notice's size on screen, not its mere presence in the page, shows it visible and its button tappable.",
-  "status": "OPEN",
-  "origin": "RETEST"
+  "status": "FIX-VERIFIED-ON-CANDIDATE",
+  "origin": "RETEST",
+  "retest": "Re-test RT-002, 2026-11-26, candidate PR #40 at 1470477 (unmerged; the public app is unchanged; emulation only, no device). FIXED. The notice is visible and its button tappable in 9 of 9 moments of the original script (RT-001: 0 of 9) and in 36 of 36 combinations of three widths, three modes, two text sizes and guide off or running. It cannot be dismissed (candidate remark RT2-01), and under the present test-copy banner it is entirely covered (device-test TC-01)."
  },
  {
   "id": "CI-R-10",
@@ -975,8 +977,9 @@
   "why_it_matters": "Coming back to the line where one stopped is the thing a daily reader relies on without thinking. Here the reader is put a few lines earlier with nothing said, and every further reload — including a phone reloading a tab it had put to sleep, if iPhone Safari behaves as Chromium does — moves the place back again. Workaround: save the line. Rated medium, not high: no note or saved line is lost.",
   "proposed_correction": "At the top of the reader, tell the browser to leave scroll position alone (history.scrollRestoration = \"manual\"), so that the reader's own stored place is the only thing that positions the page; and do not record a new place until the reader's own restore has finished. Check the other two readers the same way.",
   "acceptance_test": "device-test/tools/dt_01_saved_place_on_reopen.py reports \"same line every time\" for all four ways of reopening, in Chromium and in a WebKit engine; and on a physical iPhone, step A7 of device-test/IPHONE_TEN_MINUTE_SCRIPT.md names the same line after two reloads.",
-  "status": "OPEN",
-  "origin": "PREPARATION"
+  "status": "FIX-VERIFIED-ON-CANDIDATE",
+  "origin": "PREPARATION",
+  "retest": "Re-test RT-002, 2026-11-26, candidate PR #40 at 1470477 (unmerged; the public app is unchanged; emulation only, no device). FIXED. Same line and same stored place in 4 of 4 ways of reopening, and in 36 of 36 further combinations of passage, mode, width and text size; 12 of 12 with the notice showing. Not tested: a WebKit engine (none available), an iPhone."
  },
  {
   "id": "CI-U-11",
@@ -990,7 +993,8 @@
   "why_it_matters": "A person who writes reflections over weeks cannot read them back, or even see that they exist, unless they remember each line. The screen's own heading promises notes. It is also one more way the three readers differ (CI-U-01).",
   "proposed_correction": "List every line that carries a note, with the first words of the note, beside the saved lines — as the other two readers already do. Say \"No saved lines or reflections yet.\" only when both are empty.",
   "acceptance_test": "After a note is written on a line that is not saved, the Saved learning screen lists that line and tapping it opens the note; the rehearsal reports savedLearningScreenListsIt: true.",
-  "status": "OPEN",
-  "origin": "PREPARATION"
+  "status": "PARTLY-FIXED-ON-CANDIDATE",
+  "origin": "PREPARATION",
+  "retest": "Re-test RT-002, 2026-11-26, candidate PR #40 at 1470477 (unmerged; the public app is unchanged; emulation only, no device). PARTLY FIXED. Every line that carries a note is listed, marked \"Reflection\"; one note with no saved line no longer shows the empty message; 200 notes list and scroll. Not met from the acceptance test: tapping a listed line goes to the line and does not open the note; the list does not show the note's first words (candidate remark RT2-03)."
  }
 ]

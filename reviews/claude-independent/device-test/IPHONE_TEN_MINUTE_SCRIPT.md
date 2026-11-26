@@ -38,6 +38,13 @@ Write down four things first:
 | Build label shown in the test banner (if none is shown, write "none") | |
 | Date and time | |
 
+### Which build
+
+The repaired build is PR #40 at `1470477`. I have re-tested it on a computer (`retests/RT-002_PR40_SECOND_REPAIRS.md`):
+on it, step A7 should name the same line after both reloads, and a note should appear in the Saved list marked
+"Reflection". It is not on the test address yet. Until the banner shows a build label, assume the address still
+holds the first candidate, where A7 is expected to slip.
+
 ### Known about the test copy as it stands today (26 November)
 
 It holds the unrepaired candidate — checked file by file (`TEST_COPY_VERIFICATION_20261126.md`). Two things about
@@ -71,7 +78,7 @@ its banner will show up in this check until the builder corrects them:
 |---|---|---|
 | **B1** | In Safari, on the test copy's home page: Share → **Add to Home Screen** → leave "Open as Web App" on if it is offered → **Add**. | A new icon on the Home Screen. Expected name: **GLP QA**. Write down the name you see. |
 | **B2** | Open the app from that icon. Tap **Open Japji Sahib directly**. | The library opens without Safari's address bar. The banner is still there. Japji Sahib opens. |
-| **B3** | **⌃** → **Explore…** → **Saved places & reflections**. | Either your saved line is listed, or the screen says **No saved lines yet.** Both are acceptable — iPhone normally keeps a Home Screen app's saved data apart from Safari's. **Write down which one you see.** |
+| **B3** | **⌃** → **Explore…** → **Saved places & reflections**. | Either your saved line is listed, or the screen says **No saved lines yet.** (on the repaired build: **No saved lines or reflections yet.**) Both are acceptable — iPhone normally keeps a Home Screen app's saved data apart from Safari's. **Write down which one you see.** |
 | **B4** | On that same screen tap **Import or merge learning from any GLP reader** and choose **Gurbani-learning.json**. When asked **Merge this learning backup?** tap **Merge learning**. Then tap **Pauri 5 · line 1**, then **⌃** → **Keep a reflection here**. Tap **×**. | Message: **Learning merged. Existing reflections were preserved.** The line **Pauri 5 · line 1** is listed. The box holds `TEST NOTE 1`. |
 | **B5a** | **⌃** → **Explore…** → **iPhone & offline help**. Read the last line above the button **Check for a reader update**. | One of these four sentences — write down which: "Offline shell is installed. Export learning to keep a durable backup." · "Offline shell is installing; keep the page open until ready." · "Offline cache could not install. Online reading still works." · "Offline caching is not available in this browser." If it says *installing*, wait half a minute and open the panel again. |
 | **B5b** | Close the app completely (swipe it away in the app switcher). Turn on **Airplane Mode** and check **Wi-Fi is off** too. Open the app from its icon. Tap **Open Japji Sahib directly**. | The library opens. Japji Sahib opens with Gurbani. The bar names **Pauri 5**. **⌃** → **Keep a reflection here** still holds `TEST NOTE 1`. |
@@ -121,7 +128,7 @@ A9 file saved, where:
 
 B1 icon name:
 B2 opened without address bar (yes/no):
-B3 saved line there, or "No saved lines yet.":
+B3 saved line there, or "No saved lines (or reflections) yet.":
 B4 merged, line listed, note back (yes/no, what differed):
 B5a offline sentence shown:
 B5b offline: library opened / Japji opened / bar said / note there:

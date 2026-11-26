@@ -163,3 +163,27 @@ three lines early and filed it as polish (CI-U-08); it did not reload a second t
 did not see that the wrong place is saved and the error repeats. For the Japji reading
 place the D-01 verdict is withdrawn and replaced by CI-R-11. Notes and saved lines were
 re-checked in this pass and do survive.
+
+### Re-test of candidate PR #40 at `1470477`
+
+Record: [`retests/RT-002_PR40_SECOND_REPAIRS.md`](retests/RT-002_PR40_SECOND_REPAIRS.md). Criteria:
+[`retests/RT-002_FROZEN_CRITERIA_BEFORE_SECOND_REPAIRS.md`](retests/RT-002_FROZEN_CRITERIA_BEFORE_SECOND_REPAIRS.md).
+All in emulation (Chromium). Device: none. WebKit engine: not available in this session.
+
+| Finding | Examined | Verdict |
+|---|---|---|
+| RT1-01 | Rollback and old tab × 2 older versions (published, first candidate); all storage and what is shown; export, emptied browser, import; same backup × 3 and 3 more rounds; second record unreadable in 10 ways; writes refused in 3 situations | Fixed |
+| CI-R-09 | Original scripts (9 moments, timeline, late tap); 36 combinations of width, mode, text size, guide; dismissal; accessibility tree; under the test banner at 3 widths | Fixed. Covered by the test banner 3 of 3 (staging, TC-01) |
+| CI-R-11 | 4 ways of reopening × 3; 36 combinations of passage, mode, width, text size; 12 with the notice showing; storage writes in the first 3 seconds; the other two readers on both versions | Fixed. WebKit and iPhone not done |
+| CI-U-11 | Original rehearsal; one note alone; both marks; order; tap; 200 notes; emptied note; network log | Partly fixed (tap does not open the note) |
+| CI-R-08 | Damaged offline copy in 2 readers × 3 situations: refusal screen, export, storage; 10 + 10 damaged records; 21 alterations × 2 readers | Partly fixed (backup yes; recovery no) |
+| CI-S-16 | Files holding the 31 lines: changed or not | Not attempted in this candidate |
+| R2-X-04 | The round 2 steps, link opened directly | Not attempted; still reproduces |
+| Regression | Data and teaching files; 3,809 / 3,809 rows on screen; 21 / 21 alterations × 2; 3,773 / 3,773 meaning names; update, offline, broken release, later release; RT-001 saved-learning set; network; storage names; offline list 57 / 57 | Pass |
+| Builder's tests, run by this reviewer after my verdicts were committed | 12 / 12 non-browser suites; 2 / 2 repair browser suites (36 scenarios) | Pass |
+
+Two corrections to my own work in this pass. The criteria file first said it was frozen before the candidate
+existed; it was committed about ninety seconds after — before I knew of the candidate or had seen it — and the file
+now says so. And one measurement in my notice script was confounded by my own scrolling; it was removed and the
+question measured properly (0 of 12 overlaps).
+
