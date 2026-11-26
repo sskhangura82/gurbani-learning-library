@@ -1,0 +1,26 @@
+{
+  "schema": "glp.runtime-amendments-followup.v1",
+  "changeBaseline": "09e829efd63e99fc5c3f5f849f122a49b0dc22a9",
+  "priorLedgerSHA256": "d0ba2af3b1200b4cc7ccca9c487aca29a702139e4474b2d640920aa43fea6833",
+  "purpose": "Explicit second-pass reader runtime changes. No original scripture or educational content amendment. Builder evidence only; independent review pending.",
+  "amendments": {
+    "js/japji-full.js": {
+      "before": "594c2304542a4b77a57ad1a8c7acce5d52a1e7ad76eefe30f0d09a1e2b492407",
+      "after": "f1f5a0efc84115a9c8889c6e4d4e104f8be38a50f2e5607c055d3ef8662a32a1",
+      "findings": [
+        "RT1-01",
+        "CI-R-09",
+        "CI-R-08",
+        "CI-R-11",
+        "CI-U-11"
+      ]
+    },
+    "js/sukhmani-reader.js": {
+      "before": "7dc7a963dbbb810aae2cdf35fe008719626d3fad8a87acd7c84f6ed58582643d",
+      "after": "ae5c29fb572df5af868d166e81239bd18030ae8c6e1da75a8b157704caaaf2cd",
+      "findings": [
+        "CI-R-08"
+      ]
+    }
+  }
+}

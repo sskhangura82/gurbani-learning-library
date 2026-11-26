@@ -362,11 +362,26 @@ test('The manifest, complete course, reader pins and offline assets agree byte f
   assert.ok(fs.existsSync(japji),'Seventh bani resolves to the preserved Japji reader');
 });
 
-test('Published Japji and complete Sukhmani source, teaching and reading files remain byte-identical', () => {
+test('Published source and teaching are unchanged; explicitly recorded runtime amendments form a continuous chain', () => {
   const frozen=json('evidence/nitnem-prior-runtime-baseline.json');
+  assert.equal(sha(read('evidence/nitnem-prior-runtime-baseline.json')),'aa94396a6b6c773661c5ab261e537c580e2fd68385b4fc3324cc5991aabdb1fb','The original baseline itself is immutable');
   assert.equal(frozen.commit,'41194b8d135e511d6d3af499e7906562437a55e2');
-  assert.ok(Object.keys(frozen.files).length>=7);
-  for (const [path,digest] of Object.entries(frozen.files)) assert.equal(sha(read(path)),digest,path+' prior runtime preservation');
+  const ledger=json('evidence/claude-review-runtime-amendments.json');
+  assert.equal(ledger.sourceBaseline,frozen.commit);
+  assert.equal(ledger.changeBaseline,'a3476ac4b9be90dde350fb35dd13ce0b672c120d');
+  assert.equal(ledger.claudeReviewCommit,'ffd3d179a16c9c656905dcedce34a080ffee54ff');
+  assert.deepEqual(Object.keys(ledger.amendments).sort(),['full-japji.html','js/japji-full.js','js/sukhmani-reader.js','sukhmani.html']);
+  const followup=json('evidence/claude-review-runtime-followup-amendments.json');
+  assert.equal(followup.changeBaseline,'09e829efd63e99fc5c3f5f849f122a49b0dc22a9');
+  assert.equal(followup.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-amendments.json')));
+  assert.deepEqual(Object.keys(followup.amendments).sort(),['js/japji-full.js','js/sukhmani-reader.js']);
+  for (const [path,digest] of Object.entries(frozen.files)) {
+    const amendment=ledger.amendments[path],next=followup.amendments[path];
+    if(amendment){assert.equal(amendment.before,digest,path+' immutable prior hash');assert.ok(amendment.findings.includes('CI-R-01'));}
+    const previous=amendment?.after||digest;
+    if(next){assert.equal(next.before,previous,path+' exact prior runtime hash');assert.ok(next.findings.includes('CI-R-08'));}
+    assert.equal(sha(read(path)),next?.after||previous,path+' documented runtime or source preservation');
+  }
 });
 
 const report={status:'PASS',environment:'Node content/preservation verification; not visual or qualified scholarly approval',total:checks.length,checks,sourceRecords:sourceLines.size,sourceUnits:sourceUnits.size,meaningDrafts:Object.keys(course.closeTextNotes).length,studyDrafts:Object.keys(course.unitLessons).length,additionalMeanings:322,additionalStudies:80,documentedSourceAmendments:amendments.length,documentedEditorialAmendments:editorial.length,priorMeaningEntries:1039,priorStudyEntries:247,sourceIDsAndOrderPreserved:true,jaap62SourceDisplayOrderVerified:true,qualifiedHumanReviewed:0,courseSHA256:sha(read('nitnem/learning/course.complete.json')),manifestSHA256:sha(read('nitnem/data/library.json'))};

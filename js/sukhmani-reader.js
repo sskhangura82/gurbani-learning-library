@@ -1,11 +1,36 @@
 /* Source nodes stay mounted. Teaching and browser-owned learning are separate. */
-(()=>{
+(async()=>{
  'use strict';
  const $=id=>document.getElementById(id),L=window.GLP_SUKHMANI_LEARNING,pack=window.GLP_SUKHMANI,teaching=window.GLP_SUKHMANI_TEACHING||{};
  const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e;};
  const button=(text,fn,attrs={})=>{const b=el('button',text);b.type='button';for(const [k,v]of Object.entries(attrs))b.setAttribute(k,v);b.addEventListener('click',fn);return b;};
  const announce=text=>{$('status').textContent=text;};
- let m;try{m=L.model(pack);}catch(e){$('sukhmani-text').replaceChildren(el('p','This reading pack could not load. Reload while online.','coverage-note'));for(const b of document.querySelectorAll('button'))b.disabled=true;return;}
+ const sourceRoot=$('sukhmani-text'),sourceControls=[...document.querySelectorAll('button,input,select')].map(node=>[node,node.disabled]),sourceFooter=document.querySelector('.end-note');
+ sourceRoot.dataset.sourceIntegrity='checking';sourceRoot.setAttribute('aria-busy','true');sourceRoot.textContent='Checking original scripture…';sourceControls.forEach(([node])=>{node.disabled=true;});if(sourceFooter)sourceFooter.hidden=true;
+ let m;try{
+  if(!L||!window.GLPSourceIntegrity)throw Error('The verification module is unavailable.');
+  window.GLP_SOURCE_INTEGRITY_RECEIPT=await window.GLPSourceIntegrity.verify('sukhmani',pack);
+  m=L.model(pack);
+ }catch(error){
+  sourceRoot.dataset.sourceIntegrity='failed';sourceRoot.setAttribute('aria-busy','false');sourceRoot.setAttribute('role','alert');sourceRoot.replaceChildren(el('p','The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed.','coverage-note'));
+  const recovery=el('section',null,'coverage-note'),result=el('p');result.setAttribute('role','status');
+  const backup=button('Export original learning',()=>{
+   try{
+    const key='glp001.sukhmani.v1',raw=localStorage.getItem(key);
+    if(raw===null){result.textContent='No saved Sukhmani learning found in this browser.';return;}
+    // Preserve the exact raw string in either envelope. Valid v2 state can be
+    // imported by the normal reader once its source has verified.
+    let state;try{state=JSON.parse(raw);}catch{}
+    const valid=state&&typeof state==='object'&&!Array.isArray(state)&&state.version===2;
+    const envelope=valid?{projectId:'GLP-001',format:'glp-sukhmani-learning',version:1,composition:'sukhmani',createdAt:new Date().toISOString(),state,raw}:{projectId:'GLP-001',format:'glp-sukhmani-raw-recovery',version:1,key,createdAt:new Date().toISOString(),raw};
+    download(valid?'sukhmani-learning.json':'sukhmani-original-record.json',JSON.stringify(envelope,null,2));
+    result.textContent='Backup download requested. Keep the file and check it before removing any site data.';
+   }catch(_){result.textContent='Backup unavailable. Do not clear site data.';}
+  },{id:'source-failure-export'});
+  recovery.append(el('p','Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup.'),backup,result);
+  sourceRoot.append(recovery);announce('Scripture verification failed. Original learning export remains available.');return;
+ }
+ sourceRoot.dataset.sourceIntegrity='verified';sourceRoot.setAttribute('aria-busy','false');sourceRoot.textContent='';sourceControls.forEach(([node,disabled])=>{node.disabled=disabled;});if(sourceFooter)sourceFooter.hidden=false;
  const firstAshtpadi=pack.ashtpadis[0].number,lastAshtpadi=pack.ashtpadis[pack.ashtpadis.length-1].number,totalAshtpadis=24;
  const ashtpadiRange=firstAshtpadi===lastAshtpadi?String(firstAshtpadi):firstAshtpadi+'–'+lastAshtpadi,coverageLabel='Ashtpadis '+ashtpadiRange+' of '+totalAshtpadis;
  const salokCount=pack.ashtpadis.filter(a=>a.lines.some(l=>l.kind==='salok')).length,pauriCount=new Set(m.lines.filter(l=>l.pauri).map(l=>l.ashtpadi+'.'+l.pauri)).size;
@@ -86,7 +111,7 @@
     unitLines.get(unit).push(line);
     const row=el('div',null,'sk-line');row.id=line.id;row.dataset.lineId=line.id;row.dataset.unit=unit;row.dataset.ang=String(line.ang);row.dataset.kind=line.kind;
     const text=el('p',line.gurmukhi,'tuk');text.lang='pa';text.tabIndex=0;text.setAttribute('role','button');text.setAttribute('aria-label',line.gurmukhi+' '+sourceNotes(line)+'. Open line details and saved learning.');text.addEventListener('click',()=>openLine(line));text.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLine(line);}});row.append(text);
-    const meaning=meanings[line.id];if(meaning){const text=el('button',null,'simple-meaning');text.type='button';text.setAttribute('aria-label','Study this passage: '+sourceNotes(line));if(meaning.en)text.append(el('span',meaning.en,'english'));if(meaning.pa){const p=el('span',meaning.pa,'punjabi');p.lang='pa';text.append(p);}text.addEventListener('click',()=>{pause();setMode('study');const unit=units.get(groupId(line));const study=unit?.querySelector('.sk-study');if(study){study.tabIndex=-1;study.focus({preventScroll:true});study.scrollIntoView({block:'center',behavior:'auto'});}});row.append(text);
+    const meaning=meanings[line.id];if(meaning){const text=el('button',null,'simple-meaning');text.type='button';text.title='Open study for '+sourceNotes(line);if(meaning.en)text.append(el('span',meaning.en,'english'));if(meaning.pa){const p=el('span',meaning.pa,'punjabi');p.lang='pa';text.append(p);}text.addEventListener('click',()=>{pause();setMode('study');const unit=units.get(groupId(line));const study=unit?.querySelector('.sk-study');if(study){study.tabIndex=-1;study.focus({preventScroll:true});study.scrollIntoView({block:'center',behavior:'auto'});}});row.append(text);
      if(meaning.transliteration)row.append(el('p',meaning.transliteration,'transliteration'));
     }
     const meta=el('p',null,'line-meta');meta.append(el('span','Ang '+line.ang,'ang-label'));const saved=el('span','','line-saved');saved.setAttribute('aria-label','Saved bookmark');meta.append(saved);row.append(meta);unitEl.append(row);nodes.set(line.id,row);

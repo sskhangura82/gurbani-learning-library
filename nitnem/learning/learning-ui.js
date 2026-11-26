@@ -72,7 +72,7 @@ function lineNote(course,bani,line){
  const entry=course?.closeTextNotes?.[bani+'|'+line.id];if(!entry||entry.sourceSha256!==line.sha256||line.held)return null;
  const aggregate=entry.kind==='AGGREGATED_SOURCE_RECORD_EDUCATIONAL_CONTEXT_NOT_LITERAL_TRANSLATION';
  const button=elt('button','simple-meaning');button.type='button';button.dataset.meaningLine=line.id;
- button.setAttribute('aria-label',aggregate?'Passage context. Tap to explore.':'Meaning for this line. Tap to explore.');
+ // The visible English and Punjabi meaning supplies the accessible name.
  const en=elt('span','english',entry.simpleEn),pa=elt('span','punjabi',entry.simplePa);en.lang='en';pa.lang='pa';
  button.append(en,pa,elt('span','expand-hint',(aggregate?'Passage context':entry.kind==='HEADING_OR_INVOCATION_CONTEXT'?'Heading / invocation':'Draft meaning')+' · tap to explore'));return button;
 }

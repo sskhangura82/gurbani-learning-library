@@ -1,0 +1,29 @@
+{
+  "schema": "glp.source-integrity-baseline.v1",
+  "publishedCommit": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+  "canonicalization": "Recursive JSON object keys sorted by JavaScript UTF-16 code-unit order; array order preserved; JSON.stringify scalar encoding; exact UTF-8; no whitespace or Unicode normalization. All source object keys are ASCII, and baseline numeric values are integers, so this independently generated Python JSON encoding is identical. All own enumerable data properties are covered, including metadata and stored line hashes.",
+  "sources": {
+    "japji": {
+      "sourceFile": "js/japji-full-data.js",
+      "sourceFileSha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "sourceFileIntegrity": "sha384-3hnUzcWx/ddEEuVHebSyjwiVDrAf7uzSB2LRCr81zIjX7y/HrqRyIspnOI+m24JA",
+      "objectSha256": "299b420e289b985a17869e43566aed6b909196f24041350959d033ec58dd9346",
+      "unitCount": 42,
+      "lineCount": 385,
+      "angStart": 1,
+      "angEnd": 8
+    },
+    "sukhmani": {
+      "sourceFile": "js/sukhmani-data.js",
+      "sourceFileSha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+      "sourceFileIntegrity": "sha384-abNkrv6ILVMVvPLWbGaOmM8DVWSAAbfhNsGBhGg+8n6w/Wi92BwM1UB7bFyWqRNo",
+      "objectSha256": "adaf34aa6ebf8eea70e0e2f6f67df3dccbce6c352805fca7e0a9c82f2e8f54f6",
+      "unitCount": 24,
+      "lineCount": 2027,
+      "angStart": 262,
+      "angEnd": 296
+    }
+  },
+  "lineHashesIndependentlyChecked": 2412,
+  "qualifiedHumanSourceReviewClaimed": false
+}
