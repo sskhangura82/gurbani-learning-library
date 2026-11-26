@@ -24,6 +24,108 @@ on the strength of passing tests.
 
 ---
 
+## 0a. ADDENDUM — corrections and new evidence, added after this was written
+
+Read this before §6 and §8. Three of these correct errors of mine.
+
+### A. A Simran Room already exists. Do not build a second one.
+
+`simran.html` is already built and staged on 1470477, and it already does most
+of §6 correctly: no audio element at all, silence as the default, and the
+explicit statement "Nothing is played or recorded. No breath holds, prescribed
+technique, scores or streaks." It carries the qualified-review-pending banner
+and anchors on the same Japji Pauri 4 line verified in §5.4. It states that the
+fuller Naam Simran experience is still being developed with specialist review
+ahead, and that the anchor passage deserves "careful study, not a quick
+meditation-app slogan."
+
+**My error.** I wrote §6 without checking the staged build first, and §8 item 3
+originally told you to construct a room that substantially exists. That breaches
+the rule against duplicate parallel artifacts on the same active subject. §8
+item 3 is corrected. The two designs converge closely, which is reassuring about
+the direction but does not excuse designing without looking.
+
+Two gaps between the existing room and §6, both small:
+
+- **SF-02, low, design question for the founder.** Choosing a length before
+  starting is right. The room then shows a live countdown, which puts the clock
+  back at the centre of the practice — the Calm pattern the founder explicitly
+  rejected. Recommend the chosen length becomes invisible once sitting begins,
+  with a single soft end signal.
+- **SF-03, low, verification.** The room labels the anchor "Ang 2" and offers a
+  "See source Ang 2" link. The Gurmukhi line and the Pauri 4 attribution are
+  independently verified; the **Ang number is not**, because the reference used
+  carries no Ang numbers (§7.6). It needs a second independently verified source
+  before being shown as fact.
+
+One thing checked and **not** a defect: the room renders the line without the
+semicolon the reference inserts. That semicolon is the reference's editorial
+pause mark, not Gurbani, so the room's rendering is arguably the more faithful
+one. Recorded because a naive text diff would flag it as an alteration.
+
+### B. SF-01 — a real defect in the Japji reader, and a correction of my own
+
+Safari 26.6 on macOS, driven by safaridriver on 26 Nov: the reading place
+restores exactly 3 of 3 on reload, 3 of 3 on same-URL navigation and 3 of 3 on a
+cache-busted URL — but is **lost 3 of 3** when going to the library and pressing
+Back. Isolation run identifies the cause: with `scrollRestoration` as shipped
+Back lands at 0; with only that value forced to `auto` it lands at the saved
+position. The stored place survives intact either way, so it is **not applied**
+rather than lost. Why reload restores and Back does not is an open question for
+you; I did not read that code path and will not guess.
+
+Back is the most-used navigation on a phone, and this is invisible to
+reload-style desktop testing.
+
+**My error, corrected.** I first told you this probably affected the new Kabir
+reader too, because it loads the same shared scripts. That was wrong and
+unchecked. `history.scrollRestoration='manual'` is set in exactly one file in
+the build, `js/japji-full.js`, and nowhere in `nitnem/reader.js`,
+`nitnem/continuous-core.js`, any other shared script or the Kabir reader's page.
+**SF-01 is confined to the Japji full reader.**
+
+Full detail: `reviews/claude-independent/device-test/results/SAFARI_MACOS_20261126.md`
+
+### C. PR #52 reviewed — scripture PASS, and one new finding
+
+Independent verification against Shabad OS asset SSA2: 243 numbered Saloks with
+no gaps or duplicates, 486 verse plus 8 structural occurrences equalling the
+reference's 494 lines exactly, and **493 of 494 lines byte-identical in content
+and sequence** once the reference's own comma, semicolon and full-stop phrasing
+marks are normalised. The integrity chain reproduces in full. All 737 teaching
+entries carry `DRAFT_AI_UNREVIEWED`. One of 494 scripture lines appears in the
+teaching file and it is the collection title used as a label, so there is no
+second copy of Gurbani.
+
+**RT4-05, medium, OPEN.** The backup repair is correct and the bug it fixed was
+real — the old flat cap of 2,500,000 would have refused a rule-legal maximal
+backup needing 5,832,000 units of notes. But the new collection-scaled allowance
+is about **35 MB for this collection, while browser localStorage holds roughly
+5 to 10 MB.** At the maximum rule-legal backup of 17.5 MB the size guard accepts
+and the browser then refuses on quota. Data is safe — a failed import leaves
+existing notes, bookmarks, revision and reading position untouched, verified
+directly — but the learner sees a raw browser quota string, the only refusal in
+that importer that does not end by saying their record is preserved, and it is
+the path someone restoring onto a fresh device would hit. Cap the allowance at
+the lesser of the two budgets and wrap the message.
+
+Also: **Shabad OS carries the collection heading with the trailing danda**, so it
+is a fourth independent witness disagreeing with the heading selection. Not a
+defect; please add it to the witness list on the opposing side so the qualified
+reviewer does not read three cited bases as unanimity.
+
+Full detail: `reviews/claude-independent/retests/RT-004_PR52_KABIR_SALOK_VERDICT.md`
+
+### D. A pattern in my own tooling, stated so you can discount for it
+
+Twice in one day my comparison instruments treated the reference's editorial
+phrasing marks as scripture and produced apparent discrepancies that were mine,
+not yours. The first nearly reported a verified Sukhmani line as unverified; the
+second reported 47 differing blocks and 442 of 494 lines matching, when every
+block was a comma and the true figure is 493 of 494. Any comparison tool on
+either side must normalise comma, semicolon and full stop before reporting a
+scripture discrepancy.
+
 ## 1. The vision
 
 **Read · Listen · Understand · Reflect.**
@@ -555,11 +657,16 @@ reader expects an Ang. Do not fill it by inference from any other field.
    theology, no rights. Evidence-backed lesson text, six breaths per minute, no
    retention, the not-treatment line, hard separation from Simran in the data
    model as well as the UI.
-3. **Room A skeleton, with no content** — the silent space, the user-set pacer,
-   the pre-set end bell, the on-device note. Ship it with Waheguru only, or with
-   nothing, until a reviewer approves a line subset.
+3. **Room A — reconcile with the Simran Room you have already built. Do not
+   rebuild it.** See the addendum, item A: `simran.html` already exists on
+   1470477 and already does most of this correctly. The work is the gap between
+   it and §6.2: remove the live countdown so the chosen length is invisible once
+   sitting begins, and settle the unverified Ang claim. Nothing else in that room
+   needs touching.
 4. **Room B, Amrit Vela** — the hour setting and the readiness state. The Japji
-   Pauri 4 line is verified and may be displayed with its reference.
+   Pauri 4 line is verified and may be displayed with its reference. Note that
+   the existing Simran Room already displays this line, so this may largely be
+   done too — check before building.
 5. **The article engine, content-free** — topic index, verse-to-topic map, the
    print format from §7.5, and the source-resolution check that refuses to
    render an unsourced claim. All of this is buildable with zero exposition.

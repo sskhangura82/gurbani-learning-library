@@ -144,3 +144,58 @@ request is actually granted by a custodian, by founder act.
 
 Open question for the founder: nothing blocking. The ten-minute iPhone check
 remains the single founder act outstanding.
+
+---
+
+## 8. RECONCILIATION — a Simran Room already existed when this was written
+
+Added 26 Nov after inspecting the staged build in Safari.
+
+**This design was written without first checking the staged build, and that was
+an error.** `simran.html` already exists on build 1470477. The standing rule is
+one active author seat per subject and no duplicate parallel artifacts, and I
+broke it by designing in parallel with a built artifact.
+
+**The existing room is the baseline. This document is now the gap list, not the
+design.**
+
+What the built room already does, read from the live page:
+
+- "ਸਿਮਰਨ · A SILENT SPACE", "Come into stillness."
+- **No audio element at all** — matching §6 of this document, for the same
+  reason.
+- States plainly: "Nothing is played or recorded. No breath holds, prescribed
+  technique, scores or streaks." So §4's no-retention rule and the no-streaks
+  rule are already implemented.
+- Carries "TEST COPY — NOT THE LIBRARY" and "Use made-up notes only · Qualified
+  review pending".
+- Anchors on `ਅੰਮ੍ਰਿਤ ਵੇਲਾ ਸਚੁ ਨਾਉ ਵਡਿਆਈ ਵੀਚਾਰੁ ॥`, attributed to Japji Sahib
+  Pauri 4 — the same line verified independently in §2 of this document, on the
+  same day, by a different route. Genuine convergence.
+- Says the fuller experience "is being developed from Gurbani and Sikh sources,
+  with specialist review still ahead", and that the passage deserves "careful
+  study, not a quick meditation-app slogan" — the §1 position, already in the
+  product's own words.
+- Sitting lengths 3 / 5 / 10 / 15 min chosen before starting, with a "Begin
+  quiet sitting" button and an "End" button.
+
+### The remaining gap, which is small
+
+1. **The live countdown.** Choosing a length before starting matches §A of this
+   design. Displaying a running `05:00` does not: it restores the timer as the
+   unit of practice, which is the pattern §1 identifies as the reason Calm and
+   Headspace cannot carry Simran. Recommend the chosen length becomes invisible
+   once sitting begins, with one soft end signal. Founder design question.
+2. **The unverified Ang.** The room labels the anchor "Ang 2". The line and the
+   Pauri are verified; the Ang is not, because the reference carries no Ang
+   numbers (§2 method note). Needs a second independently verified source.
+3. **Rooms B, C and D of §4** — the Amrit Vela hour, the physiology-only
+   breathing room, and Sangat mode — appear not to exist yet. Those remain to
+   build, and §4 stands for them.
+
+### What this reconciliation does not change
+
+Everything in §3 (the three traditions and the metronome rule), §5 (the barred
+"science confirms the Guru" claim), §6 (silence until recitation is
+rights-cleared) and §7 (what needs qualified review before building) stands
+unchanged. The built room is consistent with all of it.
