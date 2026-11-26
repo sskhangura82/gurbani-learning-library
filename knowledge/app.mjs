@@ -1,5 +1,6 @@
+import {loadKnowledge} from "./registry.mjs";
 import {buildIndex,search,connected,passageLines,wordAt} from "./core.mjs";
-export const PACK_SHA256="b7ec8b038fa44c10a3d9cf318049100f924620e706f518d287ccd89d89b8f86a";
+export const PACK_SHA256="c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf";
 const $=id=>document.getElementById(id);
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 const section=$("content"),status=$("status"),results=$("results"),wordDialog=$("word-dialog");
@@ -14,7 +15,7 @@ function open(id,remember=true){
  section.focus({preventScroll:true});section.scrollIntoView({block:"start",behavior:"auto"});
 }
 function navigateBack(){const x=historyStack.pop();if(!x)return;current=x.id;depth=x.depth;render();section.focus({preventScroll:true});scrollTo(0,x.scroll);}
-function row(n,detail){const b=control((n.title||n.id)+(n.pa?" · "+n.pa:""),()=>open(n.id));b.className="result";const div=el("div");div.append(b);if(detail)div.append(note(detail));return div;}
+function row(n,detail){const b=control((n.title||n.id)+(n.pa?" · "+n.pa:""),()=>open(n.id));b.className="result";if(n.type==="passage")b.lang="pa";const div=el("div");div.append(b);if(n.type==="passage"){div.append(note("Ang "+n.angStart+" · "+index.nodes.get(n.authorId).title));if(n.editorialTitle)div.append(note("Library topic: "+n.editorialTitle));}if(detail)div.append(note(detail));return div;}
 function showWord(occ,form,button){
  const list=wordAt(index,occ,form);if(!list.length)return;
  $("word-title").textContent=form;$("word-body").replaceChildren();
@@ -26,7 +27,9 @@ $("close-word").addEventListener("click",()=>wordDialog.close());
 function render(){
  const n=index.nodes.get(current);section.replaceChildren();if(!n)return;
  const back=control("← Previous learning page",navigateBack);back.disabled=!historyStack.length;section.append(back);
- section.append(el("p",n.type.toUpperCase()+" · DEVELOPMENT DRAFT","kicker"),el("h2",n.title||n.id));
+ section.append(el("p",n.type.toUpperCase()+" · DEVELOPMENT DRAFT","kicker"));
+ const heading=el("h2",n.title||n.id);if(n.type==="passage")heading.lang="pa";section.append(heading);
+ if(n.type==="passage"&&n.editorialTitle){section.append(note("Library topic (editorial): "+n.editorialTitle));if(n.editorialPa){const d=note("ਲਾਇਬ੍ਰੇਰੀ ਦਾ ਵਿਸ਼ਾ: "+n.editorialPa);d.lang="pa";section.append(d);}}
  if(n.pa){const p=el("p",n.pa,"pa");p.lang="pa";section.append(p);}
  if(n.type==="concept"){
   const l=n.lessonId&&index.nodes.get(n.lessonId);
@@ -62,9 +65,8 @@ function find(){
  for(const hit of matches)results.append(row(index.nodes.get(hit.id),hit.type+" · "+hit.reason));
 }
 async function start(){try{
- const r=await fetch("./pilot.json",{credentials:"same-origin",cache:"no-store"});if(!r.ok)throw Error("Data unavailable");const raw=await r.arrayBuffer();if(!crypto?.subtle)throw Error("Source digest unavailable");
- const h=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",raw)),x=>x.toString(16).padStart(2,"0")).join("");if(h!==PACK_SHA256)throw Error("Pack digest mismatch");
- index=buildIndex(JSON.parse(new TextDecoder("utf-8",{fatal:true}).decode(raw)));for(const n of index.graph.nodes.filter(x=>x.type==="author")){const opt=el("option",n.title);opt.value=n.id;$("author").append(opt);}
+ const [original,teaching]=await Promise.all([fetch("./scripture.json",{credentials:"same-origin",cache:"no-store"}),fetch("./pilot.json",{credentials:"same-origin",cache:"no-store"})]);if(!original.ok||!teaching.ok||!crypto?.subtle)throw Error("Knowledge data unavailable");
+ index=buildIndex(await loadKnowledge(await original.arrayBuffer(),await teaching.arrayBuffer(),PACK_SHA256));for(const n of index.graph.nodes.filter(x=>x.type==="author")){const opt=el("option",n.title);opt.value=n.id;$("author").append(opt);}
  $("search-form").addEventListener("submit",e=>{e.preventDefault();find();});$("browse").replaceChildren(...["concept.humility","concept.haumai","word.haumai","course.human-mind"].map(id=>row(index.nodes.get(id))));
  $("search-button").disabled=false;status.textContent="Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library.";current="concept.humility";render();
  }catch(e){status.textContent="Knowledge pack could not be verified. Nothing is displayed.";results.replaceChildren();section.replaceChildren();}}

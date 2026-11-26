@@ -62,15 +62,22 @@ export function buildIndex(g){
 }
 const norm=s=>String(s??"").normalize("NFC").toLowerCase().trim().replace(/\s+/gu," ");
 const digits=s=>s.replace(/[੦-੯]/gu,c=>String("੦੧੨੩੪੫੬੭੮੯".indexOf(c)));
-const names=n=>[n.title,n.pa,...(n.aliases||[])].filter(nonempty);
+const names=n=>[n.title,n.pa,n.editorialTitle,n.editorialPa,...(n.aliases||[])].filter(nonempty);
 export function connected(index,id){
+ id=resolveIdentity(index,id);if(!id)return [];
  return index.graph.edges.filter(e=>e.from===id||e.to===id).map(e=>({edge:e,node:index.nodes.get(e.from===id?e.to:e.from)}));
 }
+export function resolveIdentity(index,id){
+ if(typeof id!=="string")return null;
+ const aliases=index.graph.legacyPassageIds||{},occAliases=index.graph.legacyOccurrenceIds||{};
+ const resolved=Object.hasOwn(aliases,id)?aliases[id]:Object.hasOwn(occAliases,id)?occAliases[id]:id;
+ return index.nodes.has(resolved)||index.occ.has(resolved)?resolved:null;
+}
 export function passageLines(index,id){
- const p=index.nodes.get(id);return p?.type==="passage"?p.occurrenceIds.map(x=>index.occ.get(x)):[];
+ const p=index.nodes.get(resolveIdentity(index,id));return p?.type==="passage"?p.occurrenceIds.map(x=>index.occ.get(x)):[];
 }
 export function wordAt(index,occurrenceId,form){
- return index.graph.nodes.filter(n=>n.type==="word").flatMap(n=>n.senses.filter(s=>s.form===form&&s.occurrenceIds.includes(occurrenceId)).map(s=>({word:n,sense:s})));
+ return index.graph.nodes.filter(n=>n.type==="word").flatMap(n=>n.senses.filter(s=>s.form===form&&s.occurrenceIds.includes(resolveIdentity(index,occurrenceId))).map(s=>({word:n,sense:s})));
 }
 export function search(index,query,{mode="auto",author="",type="",collection=""}={}){
  const q=norm(query);if(!q||q.length>240)return [];

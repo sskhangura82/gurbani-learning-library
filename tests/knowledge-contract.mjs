@@ -2,12 +2,15 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import {createHash} from "node:crypto";
 import {buildIndex,search,connected,passageLines,wordAt} from "../knowledge/core.mjs";
-const bytes=fs.readFileSync(new URL("../knowledge/pilot.json",import.meta.url)),graph=JSON.parse(bytes);
+import {loadKnowledge,sha256} from "../knowledge/registry.mjs";
+import {SCRIPTURE_SHA256} from "../knowledge/source-lock.mjs";
+const bytes=fs.readFileSync(new URL("../knowledge/pilot.json",import.meta.url)),sourceBytes=fs.readFileSync(new URL("../knowledge/scripture.json",import.meta.url));
 const app=fs.readFileSync(new URL("../knowledge/app.mjs",import.meta.url),"utf8");
+const graph=await loadKnowledge(sourceBytes,bytes,app.match(/PACK_SHA256="([a-f0-9]{64})"/)[1]);
 const checks=[];function test(name,fn){fn();checks.push(name);}
 const index=buildIndex(graph),ids=(q,opts)=>search(index,q,opts).map(x=>x.id);
-const nanak="sggs.asa.470.m1.salok01",angad="sggs.asa.466.m2.salok02",kabir="sggs.kabir.salok007";
-test("Exact pinned pack SHA-256, with separate original occurrences",()=>{assert.equal(createHash("sha256").update(bytes).digest("hex"),app.match(/PACK_SHA256="([a-f0-9]{64})"/)[1]);assert.equal(index.occ.size,19);assert.equal(index.passages.length,3);});
+const nanak="sggs.asa-di-vaar.pauri014.salok01",angad="sggs.asa-di-vaar.pauri007.salok02",kabir="sggs.kabir.salok007";
+test("Exact independent scripture and editorial pack pins",()=>{assert.equal(createHash("sha256").update(sourceBytes).digest("hex"),SCRIPTURE_SHA256);assert.equal(createHash("sha256").update(bytes).digest("hex"),app.match(/PACK_SHA256="([a-f0-9]{64})"/)[1]);assert.equal(index.occ.size,19);assert.equal(index.passages.length,3);});
 test("Complete Salok boundaries and selected original lines",()=>{
  const p=passageLines(index,nanak),a=passageLines(index,angad),k=passageLines(index,kabir);
  assert.equal(p.length,9);assert.equal(a.length,8);assert.equal(k.length,2);
@@ -38,5 +41,5 @@ test("Schema rejects wrong author, duplicate and reordered occurrence, wrong edi
   x=>x.coverage.qualifiedApproved=1
  ];for(const mutate of variants){const copy=structuredClone(graph);mutate(copy);assert.throws(()=>buildIndex(copy));}
 });
-test("No production reader integration, provider requests, live AI or personal query storage in pilot runtime",()=>{assert.match(app,/fetch\("\.\/pilot\.json"/);assert.doesNotMatch(app,/innerHTML|localStorage|sessionStorage|sendBeacon|WebSocket|fetch\(["']https?:/);assert.match(graph.integration.productZero,/advisory evidence only/);});
+test("No production reader integration, provider requests, live AI or personal query storage in pilot runtime",()=>{assert.match(app,/fetch\("\.\/pilot\.json"/);assert.match(app,/fetch\("\.\/scripture\.json"/);assert.doesNotMatch(app,/innerHTML|localStorage|sessionStorage|sendBeacon|WebSocket|fetch\(["']https?:/);assert.match(graph.integration.productZero,/advisory evidence only/);});
 console.log(JSON.stringify({status:"PASS",checks:checks.length,coverage:graph.coverage,limitations:"Node contracts only, not scholarly approval or real-device verification"},null,2));

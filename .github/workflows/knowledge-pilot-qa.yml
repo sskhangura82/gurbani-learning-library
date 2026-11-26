@@ -16,7 +16,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check knowledge/core.mjs && node --check knowledge/app.mjs && node tests/knowledge-contract.mjs
+      - run: |
+          node --check knowledge/core.mjs
+          node --check knowledge/registry.mjs
+          node --check knowledge/app.mjs
+          node tests/knowledge-contract.mjs
+          node tests/knowledge-source-registry.mjs
+          node tests/knowledge-source-witness.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: knowledge-source-registry-evidence
+          path: evidence/knowledge-registry/
+          retention-days: 90
   browser:
     needs: contracts
     runs-on: ubuntu-latest
