@@ -2,7 +2,7 @@
   "environment": "Node service-worker simulation; not a physical offline test",
   "checks": [
     {
-      "name": "69 static responses hash-verified before install, including Nitnem, Sukhmani, both Salok collections and source licence notices",
+      "name": "73 static responses hash-verified before install, including Nitnem, Sukhmani, both Salok collections, the separate breathing tool and source licence notices",
       "status": "PASS"
     },
     {

@@ -69,3 +69,25 @@ source-secondary-v1.json SHA-256: `787466e2c14f61c8f9d9de374c0f4dd92f3710c6ac002
 source-audit.json SHA-256: `d6c278185132c70f624f90b72109477df38623e0dea37f41224f18bad956bfec`
 
 Ordered original text SHA-256: `0b313346222ccc4363ae8feb37a06e01387c5fe8b928de7d9e8c5eb69ae14c6d` (UTF-8 strings joined with LF; no final LF).
+
+## Later reference evidence: heading disagreement remains visible
+
+The original extraction and comparison above remain frozen. A separately recorded
+review addendum is in review-witness-addendum-20261126.json.
+
+Claude's independent comparison against Shabad OS Database v5.0.0-next.0, asset
+SSA2, section SQST, reports a trailing danda on the collection heading. This
+supports the Open Granth witness form and opposes the explicitly selected runtime
+form. The three citations supporting that selection are not a claim of unanimous
+sources. RT-005 subsequently established that Open Granth is derived from Shabad
+OS. The builder confirmed this in the pinned README and Ang-file metadata.
+This comparison therefore verifies faithful reproduction within the same
+upstream lineage; it is not a second textual witness. The lineage of the
+separate SriGranth and bounded PDF/image checks is not established by this
+finding, and complete printed-edition collation remains outstanding.
+
+No source bytes, heading choice or source lock changed in this addendum. The
+qualified review decision remains open. The Shabad OS comparison's single
+remaining difference is the heading; the separately recorded SriGranth comparison's
+single remaining difference is the nasal-mark encoding in Salok 177. These
+different comparisons happen to have the same match count.

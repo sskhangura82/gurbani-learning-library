@@ -49,7 +49,7 @@ function loadLearning(){
 try{if(navigator.locks?.request)await navigator.locks.request(KEY+':write',loadLearning);else loadLearning();}
 catch(_){storageOK=false;storageDamaged=true;state=state||C.normalise(null,model,units);}
 let playing=false,following=true,started=false,finished=false,raf=0,deadline=0,persistTimer=0;
-let quietMode=false,roomySpacing=false;
+let quietMode=false,roomySpacing=false,pageSuspended=false,returnFrame=0;
 let afterModalClose=null,modalReturn=null,dialogFocus=null,paintedIndex=-1,paintedTokens=[],scrollTimer=0,importCandidate=null,programmaticUntil=0;
 const shared=window.GLP_SHARED_LEARNING.create({storage:protectedStorage,locks:navigator.locks,key:KEY,normalise:s=>C.normalise(s,model,units),seed:state});
 let pendingNotes={},pendingBookmarks={},pendingPreferences={},saveChain=Promise.resolve(),notePermit=null,noteGeneration=0;
@@ -151,7 +151,7 @@ function anchor(){
  return {id:lines[lo].id,offset:rows[lo].getBoundingClientRect().top-top};
 }
 function restoreAnchor(point){const idx=model.byId.get(point.id);if(idx===undefined)return;programmaticUntil=performance.now()+150;for(let pass=0;pass<2;pass++){const top=readingTop();const delta=rows[idx].getBoundingClientRect().top-top-point.offset;window.scrollTo({top:Math.max(0,scrollY+delta),behavior:'instant'});}}
-function rememberVisible(){state.read=anchor();updateDock();persist();}
+function rememberVisible(){if(pageSuspended)return;state.read=anchor();updateDock();persist();}
 function applyAppearance(){document.documentElement.dataset.theme=state.theme;const themeMeta=document.querySelector('meta[name="theme-color"]');if(themeMeta)themeMeta.content=state.theme==='amrit'?'#111929':'#faf6ec';document.documentElement.dataset.radiance=String(state.radiance);document.documentElement.style.setProperty('--gurmukhi-size',state.size+'px');}
 function applyMode(){document.body.dataset.depth=state.mode;document.querySelectorAll('.modes [data-depth]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.depth===state.mode)));$('mode-description').textContent={read:'Gurmukhi only. One continuous reading.',understand:'Short meanings below the words. Tap for more.',study:'Full learning: words, meaning, context and reflection.'}[state.mode];$('coverage-note').hidden=state.mode==='read';updateBarHeight();}
 function updateDock(){
@@ -261,7 +261,7 @@ $('dialog-body').addEventListener('change',async e=>{
 window.addEventListener('wheel',()=>{detach();},{passive:true});
 let touchY=null;document.addEventListener('touchstart',e=>{touchY=e.touches[0]?.clientY??null;},{passive:true});document.addEventListener('touchmove',e=>{if(!$('reader-dialog').open&&touchY!==null&&Math.abs((e.touches[0]?.clientY??touchY)-touchY)>5)detach();},{passive:true});
 document.addEventListener('keydown',e=>{if(!$('reader-dialog').open&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName||'')&&['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(e.key))detach();});
-window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(!$('reader-dialog').open){if(!state.persistentControls&&!quietMode&&scrollY>320&&!document.querySelector('.page-header').contains(document.activeElement))setQuiet(true);rememberVisible();}},120);},{passive:true});
+window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);if(pageSuspended)return;scrollTimer=setTimeout(()=>{if(!pageSuspended&&!$('reader-dialog').open){if(!state.persistentControls&&!quietMode&&scrollY>320&&!document.querySelector('.page-header').contains(document.activeElement))setQuiet(true);rememberVisible();}},120);},{passive:true});
 // A fixed dock must never cover a keyboard-focused meaning or Study action.
 document.addEventListener('focusin',e=>{
  const target=e.target;if(!target.closest('main')||target.closest('#retained-learning')||!target.matches('button,a,input,select,textarea,summary'))return;
@@ -271,8 +271,21 @@ document.addEventListener('focusin',e=>{
 });
 window.addEventListener('resize',()=>{updateBarHeight();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)pause('Visual guide paused while the reading page is hidden.');});
-window.addEventListener('pagehide',()=>{if(!$('reader-dialog').open)state.read=anchor();pause();persist(true);cancelAnimationFrame(raf);});
-window.addEventListener('pageshow',()=>pause());
+// A cached document does not rerun initial rendering. Safari returns it at the
+// top while manual restoration is selected, so restore the occurrence on return.
+// Do not let transient history scroll events overwrite that saved occurrence.
+window.addEventListener('pagehide',()=>{
+ clearTimeout(scrollTimer);cancelAnimationFrame(returnFrame);returnFrame=0;
+ if(!pageSuspended&&!$('reader-dialog').open)state.read=anchor();
+ pageSuspended=true;pause();persist(true);cancelAnimationFrame(raf);
+});
+window.addEventListener('pageshow',()=>{
+ pause();if(!pageSuspended)return;
+ const point={...state.read};restoreAnchor(point);
+ returnFrame=requestAnimationFrame(()=>{
+  restoreAnchor(point);state.read=point;pageSuspended=false;returnFrame=0;updateDock();
+ });
+});
 window.addEventListener('storage',e=>{if(e.key!==KEY&&e.key!==L.RETAINED)return;try{refreshLearning(shared.read());}catch(err){storageOK=false;storageDamaged=true;updateRecoveryNotice();status(err.message);}});
 window.addEventListener('beforeunload',e=>{if(Object.keys(pendingNotes).length){e.preventDefault();e.returnValue='';}});
 window.GLP_BEFORE_UPDATE=async()=>{pause();await persist(true);return storageOK&&!storageDamaged;};

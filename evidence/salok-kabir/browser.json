@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-11-26T19:37:28.504Z",
+  "startedAt": "2026-11-26T20:32:09.284Z",
   "engine": "Chromium",
   "browserVersion": "158.0.8127.37",
   "fixture": "Ephemeral localhost under /gurbani-learning-library/; nonpersistent browser contexts and synthetic learning only.",
@@ -14,7 +14,7 @@
       1280
     ],
     "maxGurmukhiSize": 60,
-    "verifiedOfflineAssetCount": 69
+    "verifiedOfflineAssetCount": 73
   },
   "checks": [
     {
@@ -229,14 +229,14 @@
     "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
     "salok-kabir/learning/course.complete.json": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
     "salok-kabir/data/library.json": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
-    "salok-kabir/index.html": "f4f7f50414bb7eb38dbdf4cce9bdf1f7b83130877bbe63ee9ed89bb59cdc9357",
+    "salok-kabir/index.html": "3aa8eccec9a3ba207526068835b7a61a7f290d7a7cc1bcb103c7130616120122",
     "nitnem/reader.js": "9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6",
     "nitnem/reader.css": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57",
     "nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
-    "sw.js": "ea79bf0e0276932da9f38e2d62950a6f7f09b94dfae856187a581dec889bda5e",
-    "tests/salok-kabir-browser.mjs": "776c87ca64ef5a0819b782c315e8add2e6c4e00f505dac6402921215393b12fc"
+    "sw.js": "d92308fcde4b32982160825080421ef702ed74f2288b31b3000b38fff4bea610",
+    "tests/salok-kabir-browser.mjs": "b37eab4a8247aa6ceb450fc6743af2e32381162a6c6b6f0857d3c7c0b8df91a0"
   },
-  "completedAt": "2026-11-26T19:38:40.651Z",
+  "completedAt": "2026-11-26T20:33:21.824Z",
   "passed": 40,
   "failed": 0,
   "status": "passed"

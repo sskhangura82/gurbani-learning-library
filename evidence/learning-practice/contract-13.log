@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: All494 real originals and complete independently sealed synthetic teaching pass
+ok 1 - All494 real originals and complete independently sealed synthetic teaching pass
+  ---
+  duration_ms: 29.626666
+  type: 'test'
+  ...
+# Subtest: An editorial-only reseal cannot change the source seal
+ok 2 - An editorial-only reseal cannot change the source seal
+  ---
+  duration_ms: 30.55525
+  type: 'test'
+  ...
+# Subtest: Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing
+ok 3 - Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing
+  ---
+  duration_ms: 255.313375
+  type: 'test'
+  ...
+# Subtest: Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals
+ok 4 - Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals
+  ---
+  duration_ms: 25.866375
+  type: 'test'
+  ...
+# Subtest: The retained nasal Unicode mark cannot be silently replaced by a private-use character
+ok 5 - The retained nasal Unicode mark cannot be silently replaced by a private-use character
+  ---
+  duration_ms: 14.278083
+  type: 'test'
+  ...
+# Subtest: All ten split digital-Ang units reject collapse onto either Ang after resealing
+ok 6 - All ten split digital-Ang units reject collapse onto either Ang after resealing
+  ---
+  duration_ms: 280.06975
+  type: 'test'
+  ...
+# Subtest: Printed extents cannot replace the recorded digital locator or be promoted to full collation
+ok 7 - Printed extents cannot replace the recorded digital locator or be promoted to full collation
+  ---
+  duration_ms: 29.592792
+  type: 'test'
+  ...
+# Subtest: A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse
+ok 8 - A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse
+  ---
+  duration_ms: 42.262666
+  type: 'test'
+  ...
+# Subtest: Source and teaching cannot be promoted to publication or human-reviewed authority by resealing
+ok 9 - Source and teaching cannot be promoted to publication or human-reviewed authority by resealing
+  ---
+  duration_ms: 87.409375
+  type: 'test'
+  ...
+# Subtest: Missing or extra studies, meanings and heading contexts fail complete coverage
+ok 10 - Missing or extra studies, meanings and heading contexts fail complete coverage
+  ---
+  duration_ms: 113.234333
+  type: 'test'
+  ...
+# Subtest: Swapped map values and first-line-only study bindings cannot misattach meanings
+ok 11 - Swapped map values and first-line-only study bindings cannot misattach meanings
+  ---
+  duration_ms: 72.74625
+  type: 'test'
+  ...
+# Subtest: A correct heading hash still needs the exact enclosing Salok and draft status
+ok 12 - A correct heading hash still needs the exact enclosing Salok and draft status
+  ---
+  duration_ms: 38.347459
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1021.684

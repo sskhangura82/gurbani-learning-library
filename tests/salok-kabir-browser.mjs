@@ -346,7 +346,7 @@ try{
  await check('The actual root worker verifies and caches all declared assets, including the new reader',async()=>{
   await offline.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:60000});
   const actual=await offline.evaluate(async()=>{const prefix='glp-static:'+location.origin+'/gurbani-learning-library/:',names=(await caches.keys()).filter(name=>name.startsWith(prefix));return{names,scope:new URL((await navigator.serviceWorker.getRegistration()).scope).pathname,assets:await Promise.all(names.map(async name=>(await(await caches.open(name)).keys()).map(request=>new URL(request.url).pathname)))};});
-  assert.equal(actual.scope,PREFIX);assert.equal(actual.names.length,1);const expectedPaths=Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort();assert.deepEqual(actual.assets[0].sort(),expectedPaths);assert.equal(expectedPaths.length,69);
+  assert.equal(actual.scope,PREFIX);assert.equal(actual.names.length,1);const expectedPaths=Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort();assert.deepEqual(actual.assets[0].sort(),expectedPaths);assert.equal(expectedPaths.length,73);
   for(const relative of [SOURCE,TEACHING,'salok-kabir/index.html'])assert.ok(actual.assets[0].includes(PREFIX+relative),'Missing offline asset '+relative);
   report.coverage.verifiedOfflineAssetCount=expectedPaths.length;
  });

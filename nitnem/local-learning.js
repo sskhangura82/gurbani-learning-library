@@ -62,7 +62,20 @@
    return {payload:normalise(r.payload),rev:r.rev,originKey:found.key};
   }
   function exclusive(fn){if(!supported)return Promise.reject(Error('Safe saving is unavailable in this browser. Reading and backup export remain available.'));return locks.request(key+':write',fn);}
-  function write(payload,rev){const valid=normalise(payload),record={schema:1,compositionId:pack.compositionId,editionId:pack.editionId,rev:rev+1,savedAt:new Date().toISOString(),payload:valid};storage.setItem(key,JSON.stringify(record));return record;}
+  function write(payload,rev){
+   const valid=normalise(payload),record={schema:1,compositionId:pack.compositionId,editionId:pack.editionId,rev:rev+1,savedAt:new Date().toISOString(),payload:valid};
+   // A file's format limit is not a promise of available browser storage.
+   // Write once, under the existing lock. Never remove an old record to make room.
+   try{storage.setItem(key,JSON.stringify(record));}
+   catch(cause){
+    const quota=cause?.name==='QuotaExceededError'||cause?.name==='NS_ERROR_DOM_QUOTA_REACHED'||cause?.code===22||cause?.code===1014;
+    const error=Error((quota?'There is not enough space in this browser to save this change. ':'This browser could not save this change. ')+
+     'Your existing saved learning is preserved. Keep your backup file, and export any unsaved reflection before leaving.'+
+     (quota?' You can try restoring in a browser or device with more available space.':''));
+    error.name='LearningStorageError';error.code=quota?'LEARNING_STORAGE_FULL':'LEARNING_STORAGE_UNAVAILABLE';throw error;
+   }
+   return record;
+  }
   function save(position,edits={}){return exclusive(()=>{
    const latest=read(),next=normalise({...latest.payload,...edits.preferences,...(position?{lineId:position}:{})});
    if(edits.notes)next.notes={...next.notes,...edits.notes};

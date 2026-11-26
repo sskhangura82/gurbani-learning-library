@@ -1,0 +1,572 @@
+{
+  "schema": "glp.japji-history.v1",
+  "startedAtUtc": "2026-11-26T20:22:27.760Z",
+  "engine": "safari",
+  "variant": "baseline",
+  "scriptSha256": "f1f5a0efc84115a9c8889c6e4d4e104f8be38a50f2e5607c055d3ef8662a32a1",
+  "checks": [
+    {
+      "name": "Read with persistent heading: initial saved occurrence and offset",
+      "status": "PASS",
+      "detail": {
+        "scrollY": 12331,
+        "bookmarks": [
+          "pauri02.line02"
+        ],
+        "stored": {
+          "guide": {
+            "index": 0,
+            "token": 0
+          },
+          "theme": "day",
+          "pace": 70,
+          "version": 2,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "keptAside": {
+            "notes": [],
+            "bookmarks": []
+          },
+          "size": 30,
+          "notes": {
+            "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+          },
+          "mode": "read",
+          "hasGuided": false,
+          "persistentControls": true,
+          "emphasis": "word",
+          "radiance": true,
+          "bookmarks": [
+            "pauri02.line02"
+          ]
+        },
+        "visible": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "notes": {
+          "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+        },
+        "timeOrigin": 1795724548413,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "mode": "read",
+        "playing": false,
+        "targetOffset": -9,
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with persistent heading: three reloads do not drift",
+      "status": "PASS",
+      "detail": [
+        {
+          "y": 12331,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12331,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12331,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        }
+      ]
+    },
+    {
+      "name": "Read with persistent heading: library Back preserves actual geometry and notes",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:60:82\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:58:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "targetOffset": 341,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "pageshow": [
+          {
+            "y": 0,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read with persistent heading: Forward then Back preserves the occurrence",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:62:152\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:62:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "targetOffset": 341,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "pageshow": [
+          {
+            "y": 0,
+            "persisted": true
+          },
+          {
+            "y": 0,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read with persistent heading: reload after Back does not save a transient top position",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:63:148\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:63:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "targetOffset": 341,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with persistent heading: a running guide returns paused at its departure place",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: {\"expectedOffset\":133,\"actualOffset\":341,\"y\":0}\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:101)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:66:82\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:64:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "targetOffset": 341,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 341
+        },
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with default receding heading: initial saved occurrence and offset",
+      "status": "PASS",
+      "detail": {
+        "scrollY": 12014,
+        "bookmarks": [
+          "pauri02.line02"
+        ],
+        "stored": {
+          "guide": {
+            "index": 0,
+            "token": 0
+          },
+          "theme": "day",
+          "pace": 70,
+          "version": 2,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "keptAside": {
+            "notes": [],
+            "bookmarks": []
+          },
+          "size": 30,
+          "notes": {
+            "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+          },
+          "mode": "read",
+          "hasGuided": false,
+          "persistentControls": false,
+          "emphasis": "word",
+          "radiance": true,
+          "bookmarks": [
+            "pauri02.line02"
+          ]
+        },
+        "visible": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "notes": {
+          "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+        },
+        "timeOrigin": 1795724555122,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "mode": "read",
+        "playing": false,
+        "targetOffset": -9,
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with default receding heading: three reloads do not drift",
+      "status": "PASS",
+      "detail": [
+        {
+          "y": 12014,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12014,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12014,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        }
+      ]
+    },
+    {
+      "name": "Read with default receding heading: library Back preserves actual geometry and notes",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:60:82\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:58:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "targetOffset": 24,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "pageshow": [
+          {
+            "y": 0,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read with default receding heading: Forward then Back preserves the occurrence",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:62:152\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:62:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "targetOffset": 24,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "pageshow": [
+          {
+            "y": 0,
+            "persisted": true
+          },
+          {
+            "y": 0,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read with default receding heading: reload after Back does not save a transient top position",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:63:148\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:63:3",
+      "observed": {
+        "scrollY": 317,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "targetOffset": 24,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with default receding heading: a running guide returns paused at its departure place",
+      "status": "PASS",
+      "detail": {
+        "departure": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "returned": {
+          "id": "mool.line01",
+          "offset": 24
+        },
+        "playing": false
+      }
+    },
+    {
+      "name": "Meaning: initial saved occurrence and offset",
+      "status": "PASS",
+      "detail": {
+        "scrollY": 25348,
+        "bookmarks": [
+          "pauri02.line02"
+        ],
+        "stored": {
+          "guide": {
+            "index": 0,
+            "token": 0
+          },
+          "theme": "day",
+          "pace": 70,
+          "version": 2,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "keptAside": {
+            "notes": [],
+            "bookmarks": []
+          },
+          "size": 30,
+          "notes": {
+            "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+          },
+          "mode": "understand",
+          "hasGuided": false,
+          "persistentControls": true,
+          "emphasis": "word",
+          "radiance": true,
+          "bookmarks": [
+            "pauri02.line02"
+          ]
+        },
+        "visible": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "notes": {
+          "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+        },
+        "timeOrigin": 1795724561855,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "mode": "understand",
+        "playing": false,
+        "targetOffset": -9,
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Meaning: three reloads do not drift",
+      "status": "PASS",
+      "detail": [
+        {
+          "y": 25348,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 25348,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 25348,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        }
+      ]
+    },
+    {
+      "name": "Meaning: library Back preserves actual geometry and notes",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:60:82\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:58:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "targetOffset": 405,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "pageshow": [
+          {
+            "y": 0,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Meaning: Forward then Back preserves the occurrence",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:62:152\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:62:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "targetOffset": 405,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "pageshow": [
+          {
+            "y": 0,
+            "persisted": true
+          },
+          {
+            "y": 0,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Meaning: reload after Back does not save a transient top position",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mool.line01'\n- 'pauri20.line01'\n\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:44)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:63:148\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:63:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "targetOffset": 405,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Meaning: a running guide returns paused at its departure place",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: {\"expectedOffset\":133,\"actualOffset\":405,\"y\":0}\n    at samePlace (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:48:101)\n    at file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:66:82\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async run (file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:49:46)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/learning-practice/tests/japji-history-browser.mjs:64:3",
+      "observed": {
+        "scrollY": 0,
+        "visible": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "read": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "targetOffset": 405,
+        "storedRead": {
+          "id": "mool.line01",
+          "offset": 405
+        },
+        "pageshow": []
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic notes and bookmarks only, on a newly allocated localhost origin.",
+    "Desktop Safari or Chromium geometry is not physical iPhone, Home Screen, VoiceOver, or airplane-mode acceptance.",
+    "Builder evidence; independent reviewer verification remains required."
+  ],
+  "browserVersion": "26.6",
+  "platform": "macOS",
+  "completedAtUtc": "2026-11-26T20:22:48.970Z",
+  "status": "FAIL"
+}
