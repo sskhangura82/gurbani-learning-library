@@ -8,7 +8,7 @@
 | Compared with | The published version (`a3476ac`) and the first candidate (`09e829e`). |
 | Scope | The seven items the owner listed on 26 November: RT1-01, CI-R-09, CI-R-08, CI-S-16, R2-X-04, CI-R-11, CI-U-11 — plus everything that passed before, plus the test copy. |
 
-## Correction on timing — added 26 November 2026, 14:53 UTC
+## Correction on timing — added 26 November 2026, 14:50 UTC
 
 The table above says these criteria were frozen before any corrected commit had been pushed, and that the head was
 still `09e829e`. **That was true to my knowledge and false in fact.** The exact order was:
