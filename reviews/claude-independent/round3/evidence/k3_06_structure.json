@@ -1,0 +1,278 @@
+{
+ "counts": {
+  "items": 31,
+  "connections": 26,
+  "rows": 19,
+  "dictionaryEntries": 6,
+  "senses": 6,
+  "concepts": 6,
+  "conceptsWithLesson": 2,
+  "lessons": 2,
+  "studies": 2,
+  "courses": 1,
+  "authors": 3,
+  "collections": 4
+ },
+ "connections": {
+  "endsMissing": [],
+  "selfConnections": [],
+  "duplicates": [],
+  "reversedPairs": [],
+  "types": {
+   "written_by": 3,
+   "contains": 3,
+   "in_raag": 2,
+   "discusses": 5,
+   "related_concept": 3,
+   "attested_in": 6,
+   "psychological_parallel": 1,
+   "philosophical_comparison": 1,
+   "has_lesson": 2
+  },
+  "evidenceKinds": {
+   "str": 8,
+   "list": 6
+  },
+  "withReason": 12,
+  "withEvidence": 14
+ },
+ "itemsNothingPointsTo": [
+  {
+   "id": "collection.dasam",
+   "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+  },
+  {
+   "id": "collection.bhai-gurdas",
+   "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+  },
+  {
+   "id": "collection.bhai-nand-lal",
+   "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+  },
+  {
+   "id": "concept.seva",
+   "status": "INDEX_ONLY_NO_LESSON"
+  },
+  {
+   "id": "course.human-mind",
+   "status": "DRAFT_PATHWAY_NOT_APPROVED"
+  }
+ ],
+ "namesSharedByTwoItems": {
+  "ਨੀਵੀ": [
+   "concept.humility",
+   "word.nivi"
+  ],
+  "ਨਿਮਰਤਾ": [
+   "concept.humility",
+   "lesson.humility.r1"
+  ],
+  "haumai": [
+   "concept.haumai",
+   "word.haumai"
+  ],
+  "ਹਉਮੈ": [
+   "concept.haumai",
+   "lesson.haumai.r1",
+   "word.haumai"
+  ],
+  "ਹੁਕਮ": [
+   "concept.hukam",
+   "word.hukam"
+  ],
+  "hukam": [
+   "concept.hukam",
+   "word.hukam"
+  ],
+  "kirpa": [
+   "concept.kirpa",
+   "word.kirpa"
+  ],
+  "ਕਿਰਪਾ": [
+   "concept.kirpa",
+   "word.kirpa"
+  ]
+ },
+ "sameLabelOnScreen": {
+  "Haumai · ਹਉਮੈ": [
+   "concept.haumai",
+   "word.haumai"
+  ],
+  "Hukam · ਹੁਕਮ": [
+   "concept.hukam",
+   "word.hukam"
+  ],
+  "Kirpa · ਕਿਰਪਾ": [
+   "concept.kirpa",
+   "word.kirpa"
+  ]
+ },
+ "saloksThatWouldShareAnIdentity": [
+  {
+   "ang": 466,
+   "author": "Guru Nanak",
+   "salokNumber": 1,
+   "howMany": 2,
+   "bothWhollyOnThisAng": false,
+   "each": [
+    {
+     "lines": 15,
+     "startsOnAng": 465,
+     "endsOnAng": 466,
+     "first": "ਮੁਸਲਮਾਨਾ. ਸਿਫਤਿ ਸਰੀਅਤਿ; ਪੜਿ ਪੜਿ ਕਰਹਿ ਬੀਚਾਰੁ ॥"
+    },
+    {
+     "lines": 19,
+     "startsOnAng": 466,
+     "endsOnAng": 466,
+     "first": "ਹਉ ਵਿਚਿ ਆਇਆ; ਹਉ ਵਿਚਿ ਗਇਆ ॥"
+    }
+   ]
+  },
+  {
+   "ang": 470,
+   "author": "Guru Nanak",
+   "salokNumber": 1,
+   "howMany": 2,
+   "bothWhollyOnThisAng": true,
+   "each": [
+    {
+     "lines": 7,
+     "startsOnAng": 470,
+     "endsOnAng": 470,
+     "first": "ਨਾਨਕ. ਮੇਰੁ ਸਰੀਰ ਕਾ; ਇਕੁ ਰਥੁ ਇਕੁ ਰਥਵਾਹੁ ॥"
+    },
+    {
+     "lines": 9,
+     "startsOnAng": 470,
+     "endsOnAng": 470,
+     "first": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ; ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥"
+    }
+   ]
+  },
+  {
+   "ang": 470,
+   "author": "Guru Nanak",
+   "salokNumber": 2,
+   "howMany": 2,
+   "bothWhollyOnThisAng": true,
+   "each": [
+    {
+     "lines": 15,
+     "startsOnAng": 470,
+     "endsOnAng": 470,
+     "first": "ਸਾਮ ਕਹੈ ਸੇਤੰਬਰੁ ਸੁਆਮੀ; ਸਚ ਮਹਿ ਆਛੈ. ਸਾਚਿ ਰਹੇ ॥"
+    },
+    {
+     "lines": 11,
+     "startsOnAng": 470,
+     "endsOnAng": 470,
+     "first": "ਪੜਿ ਪੁਸਤਕ; ਸੰਧਿਆ ਬਾਦੰ ॥"
+    }
+   ]
+  }
+ ],
+ "passageNames": [
+  {
+   "id": "sggs.asa.470.m1.salok01",
+   "libraryTitle": "Humility beyond appearances",
+   "libraryTitlePunjabi": "ਅਸਲੀ ਨਿਮਰਤਾ",
+   "firstLineOfGurbani": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+   "headingRowMarked": false,
+   "pauriRecorded": false
+  },
+  {
+   "id": "sggs.asa.466.m2.salok02",
+   "libraryTitle": "Understanding Haumai and grace",
+   "libraryTitlePunjabi": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "firstLineOfGurbani": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "headingRowMarked": false,
+   "pauriRecorded": false
+  },
+  {
+   "id": "sggs.kabir.salok007",
+   "libraryTitle": "Turning criticism inward",
+   "libraryTitlePunjabi": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+   "firstLineOfGurbani": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+   "headingRowMarked": false,
+   "pauriRecorded": false
+  }
+ ],
+ "lessons": [
+  {
+   "id": "lesson.humility.r1",
+   "depth": "simple",
+   "englishWords": 24,
+   "punjabiWords": 28,
+   "englishSentences": 2,
+   "punjabiSentences": 2,
+   "gurmukhiQuotedInEnglish": [],
+   "mentionsRemedyWithin": false
+  },
+  {
+   "id": "lesson.humility.r1",
+   "depth": "detailed",
+   "englishWords": 41,
+   "punjabiWords": 40,
+   "englishSentences": 3,
+   "punjabiSentences": 3,
+   "gurmukhiQuotedInEnglish": [],
+   "mentionsRemedyWithin": false
+  },
+  {
+   "id": "lesson.humility.r1",
+   "depth": "deep",
+   "englishWords": 52,
+   "punjabiWords": 33,
+   "englishSentences": 4,
+   "punjabiSentences": 3,
+   "gurmukhiQuotedInEnglish": [],
+   "mentionsRemedyWithin": false
+  },
+  {
+   "id": "lesson.haumai.r1",
+   "depth": "simple",
+   "englishWords": 28,
+   "punjabiWords": 32,
+   "englishSentences": 2,
+   "punjabiSentences": 3,
+   "gurmukhiQuotedInEnglish": [],
+   "mentionsRemedyWithin": false
+  },
+  {
+   "id": "lesson.haumai.r1",
+   "depth": "detailed",
+   "englishWords": 45,
+   "punjabiWords": 32,
+   "englishSentences": 3,
+   "punjabiSentences": 2,
+   "gurmukhiQuotedInEnglish": [],
+   "mentionsRemedyWithin": false
+  },
+  {
+   "id": "lesson.haumai.r1",
+   "depth": "deep",
+   "englishWords": 56,
+   "punjabiWords": 28,
+   "englishSentences": 4,
+   "punjabiSentences": 3,
+   "gurmukhiQuotedInEnglish": [],
+   "mentionsRemedyWithin": false
+  }
+ ],
+ "reviewStates": {
+  "collection: PRIMARY_SCRIPTURE": 1,
+  "collection: DISTINCT_COLLECTION_NO_SOURCE_IMPORTED": 3,
+  "edition: None": 1,
+  "author: None": 3,
+  "raag: None": 1,
+  "composition: None": 2,
+  "passage: DIGITAL_SOURCE_DRAFT": 3,
+  "concept: AI_ASSISTED_DRAFT": 2,
+  "concept: INDEX_ONLY_NO_LESSON": 4,
+  "word: AI_ASSISTED_DRAFT": 6,
+  "study: EDITORIAL_DRAFT": 2,
+  "course: DRAFT_PATHWAY_NOT_APPROVED": 1,
+  "lesson: AI_ASSISTED_DRAFT": 2
+ }
+}

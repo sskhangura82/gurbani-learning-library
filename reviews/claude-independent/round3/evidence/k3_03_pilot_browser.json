@@ -1,0 +1,2760 @@
+{
+ "candidate": "PR #45 at 8fa9206d9b4d6e90835972575458853b5d08247a",
+ "base": "http://127.0.0.1:8085/gurbani-learning-library/",
+ "A_first_load": {
+  "state": {
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library.",
+   "kicker": "CONCEPT · DEVELOPMENT DRAFT",
+   "heading": "Humility",
+   "lines": [],
+   "contentChildren": 13,
+   "results": [],
+   "browse": 4,
+   "searchEnabled": true,
+   "notes": [
+    "AI-assisted educational draft, not a translation or scholar-approved lesson.",
+    "discusses",
+    "The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+    "discusses",
+    "The speaker reverses the impulse to rank oneself above others; read as spiritual self-examination, not self-abuse.",
+    "related concept",
+    "Self-importance and inward humility are connected, not antonyms in every context.",
+    "psychological parallel",
+    "Acknowledge limits of one's knowledge and remain open to correction.",
+    "Editorial comparison awaiting independent and qualified review."
+   ],
+   "related": [
+    "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ | discusses | The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+    "Turning criticism inward · ਆਪਣੇ ਅੰਦਰ ਝਾਤ | discusses | The speaker reverses the impulse to rank oneself above others; read as spiritual self-examination, not self-abuse.",
+    "Haumai · ਹਉਮੈ | related concept | Self-importance and inward humility are connected, not antonyms in every context.",
+    "Intellectual humility · ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ | psychological parallel | Acknowledge limits of one's knowledge and remain open to correction. | Similarity: Both support examining self-importance and being open to correction. | Difference: The psychological construct concerns knowledge and belief; Gurmat humility has a devotional, ethical and spiritual context. | Editorial comparison awaiting independent and qualified review."
+   ],
+   "active": "BODY:Gurbani Learning LibraryDEVELOPMENT PILO",
+   "scrollY": 0
+  },
+  "console": [],
+  "requested": [
+   "/gurbani-learning-library/knowledge/app.mjs",
+   "/gurbani-learning-library/knowledge/core.mjs",
+   "/gurbani-learning-library/knowledge/index.html",
+   "/gurbani-learning-library/knowledge/pilot.json",
+   "/gurbani-learning-library/knowledge/style.css"
+  ],
+  "hosts": [
+   "127.0.0.1:8085"
+  ],
+  "stored": {
+   "localStorage": [],
+   "sessionStorage": [],
+   "cookies": "",
+   "databases": [],
+   "caches": [],
+   "workers": 0
+  },
+  "firstScreenText": [
+   "Gurbani Learning Library",
+   "DEVELOPMENT PILOT",
+   "One source, many pathways",
+   "",
+   "Read · Understand · Explore · Reflect",
+   "",
+   "Source-linked pilot only. Original digital text, lessons and comparisons await qualified review. No live AI, recordings or full scripture search.",
+   "",
+   "Search English, Gurmukhi, Roman Punjabi or Ang",
+   "Search mode",
+   "Indexed concepts and text",
+   "Original phrase",
+   "Gurmukhi first letters",
+   "Author (passages only)"
+  ],
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; object-src 'none'; media-src 'none'; base-uri 'none'; form-action 'none'",
+  "robots": "noindex,nofollow"
+ },
+ "B_passages": [
+  {
+   "passage": "sggs.asa.470.m1.salok01",
+   "heading": "Humility beyond appearances",
+   "kicker": "PASSAGE · DEVELOPMENT DRAFT",
+   "metaLine": "Guru Nanak Dev Ji · Asa Di Vaar · Ang 470 · Raag Asa",
+   "linesDrawn": 9,
+   "linesWanted": 9,
+   "equalInOrder": true,
+   "focusRowInData": "sggs.opengranth-34d2a7c.ang470.row33",
+   "anyRowMarkedOnScreen": false,
+   "langs": {
+    "scripture": "pa",
+    "heading": "en"
+   },
+   "notes": [
+    "Guru Nanak Dev Ji · Asa Di Vaar · Ang 470 · Raag Asa",
+    "Tap underlined words with authored contextual senses. All other words stay in the original line. This is the full selected Salok, not the full Ang.",
+    "All nine rows visually compared with SriGranth Ang 470; whitespace presentation only. Digital witnesses may share lineage.",
+    "No recording is rights-cleared for this pilot. Complete reader deep-link integration is pending; return to this learning page using Previous.",
+    "written by",
+    "contains",
+    "in raag",
+    "discusses",
+    "The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+    "attested in",
+    "attested in"
+   ],
+   "related": [
+    "Guru Nanak Dev Ji · ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ | written by",
+    "Asa Di Vaar · ਆਸਾ ਦੀ ਵਾਰ | contains",
+    "Raag Asa · ਆਸਾ | in raag",
+    "Humility · ਨਿਮਰਤਾ | discusses | The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+    "Nivi · ਨੀਵੀ | attested in",
+    "Mithat · ਮਿਠਤੁ | attested in"
+   ],
+   "links": [
+    "Pinned source -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0470.md",
+    "Second digital witness -> https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=470&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "wordsWithEntries": 2,
+   "textRunsWithoutEntries": 70
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "heading": "Understanding Haumai and grace",
+   "kicker": "PASSAGE · DEVELOPMENT DRAFT",
+   "metaLine": "Guru Angad Dev Ji · Asa Di Vaar · Ang 466 · Raag Asa",
+   "linesDrawn": 8,
+   "linesWanted": 8,
+   "equalInOrder": true,
+   "focusRowInData": "sggs.opengranth-34d2a7c.ang466.row45",
+   "anyRowMarkedOnScreen": false,
+   "langs": {
+    "scripture": "pa",
+    "heading": "en"
+   },
+   "notes": [
+    "Guru Angad Dev Ji · Asa Di Vaar · Ang 466 · Raag Asa",
+    "Tap underlined words with authored contextual senses. All other words stay in the original line. This is the full selected Salok, not the full Ang.",
+    "All eight rows visually compared with SriGranth Ang 466; whitespace presentation only. Digital witnesses may share lineage.",
+    "No recording is rights-cleared for this pilot. Complete reader deep-link integration is pending; return to this learning page using Previous.",
+    "written by",
+    "contains",
+    "in raag",
+    "discusses",
+    "Explicit questions about the origin and release of Haumai.",
+    "discusses",
+    "Hukam explicitly appears in the account of Haumai.",
+    "discusses",
+    "Grace is connected to living the Guru's teaching.",
+    "attested in",
+    "attested in",
+    "attested in"
+   ],
+   "related": [
+    "Guru Angad Dev Ji · ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ | written by",
+    "Asa Di Vaar · ਆਸਾ ਦੀ ਵਾਰ | contains",
+    "Raag Asa · ਆਸਾ | in raag",
+    "Haumai · ਹਉਮੈ | discusses | Explicit questions about the origin and release of Haumai.",
+    "Hukam · ਹੁਕਮ | discusses | Hukam explicitly appears in the account of Haumai.",
+    "Kirpa · ਕਿਰਪਾ | discusses | Grace is connected to living the Guru's teaching.",
+    "Haumai · ਹਉਮੈ | attested in",
+    "Hukam · ਹੁਕਮ | attested in",
+    "Kirpa · ਕਿਰਪਾ | attested in"
+   ],
+   "links": [
+    "Pinned source -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0466.md",
+    "Second digital witness -> https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=466&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "wordsWithEntries": 8,
+   "textRunsWithoutEntries": 55
+  },
+  {
+   "passage": "sggs.kabir.salok007",
+   "heading": "Turning criticism inward",
+   "kicker": "PASSAGE · DEVELOPMENT DRAFT",
+   "metaLine": "Bhagat Kabir Ji · Salok Bhagat Kabir Ji · Ang 1364 · No Raag assigned to this unit",
+   "linesDrawn": 2,
+   "linesWanted": 2,
+   "equalInOrder": true,
+   "focusRowInData": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "anyRowMarkedOnScreen": false,
+   "langs": {
+    "scripture": "pa",
+    "heading": "en"
+   },
+   "notes": [
+    "Bhagat Kabir Ji · Salok Bhagat Kabir Ji · Ang 1364 · No Raag assigned to this unit",
+    "Tap underlined words with authored contextual senses. All other words stay in the original line. This is the full selected Salok, not the full Ang.",
+    "Both verses visually compared with SriGranth indexed results, Ang 1364 lines 16–17. Full two-line Salok from pinned corpus. Digital witnesses may share lineage.",
+    "No recording is rights-cleared for this pilot. Complete reader deep-link integration is pending; return to this learning page using Previous.",
+    "written by",
+    "contains",
+    "discusses",
+    "The speaker reverses the impulse to rank oneself above others; read as spiritual self-examination, not self-abuse.",
+    "attested in"
+   ],
+   "related": [
+    "Bhagat Kabir Ji · ਭਗਤ ਕਬੀਰ ਜੀ | written by",
+    "Salok Bhagat Kabir Ji · ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ | contains",
+    "Humility · ਨਿਮਰਤਾ | discusses | The speaker reverses the impulse to rank oneself above others; read as spiritual self-examination, not self-abuse.",
+    "Bhalo · ਭਲੋ | attested in"
+   ],
+   "links": [
+    "Pinned source -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1364.md",
+    "Second digital witness -> https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1364&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "wordsWithEntries": 1,
+   "textRunsWithoutEntries": 18
+  }
+ ],
+ "C_words": [
+  {
+   "passage": "sggs.asa.470.m1.salok01",
+   "i": 0,
+   "form": "ਮਿਠਤੁ",
+   "row": "sggs.opengranth-34d2a7c.ang470.row33",
+   "w": 51,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਮਿਠਤੁ",
+    "body": "Sweetness or gentleness in conduct, in this Salok. | ਮਿਠਾਸ; ਚੰਗੇ ਵਿਹਾਰ ਦੀ ਮਿਠਾਸ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.470.m1.salok01",
+   "i": 1,
+   "form": "ਨੀਵੀ",
+   "row": "sggs.opengranth-34d2a7c.ang470.row33",
+   "w": 44,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਨੀਵੀ",
+    "body": "Lowness/humility in the comparison of virtues; exact grammatical analysis pending. | ਨੀਵਾਂ ਰਹਿਣਾ; ਇਸ ਸੰਦਰਭ ਵਿੱਚ ਨਿਮਰਤਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 0,
+   "form": "ਹਉਮੈ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row41",
+   "w": 46,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹਉਮੈ",
+    "body": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego. | ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 1,
+   "form": "ਹਉਮੈ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row41",
+   "w": 46,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹਉਮੈ",
+    "body": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego. | ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 2,
+   "form": "ਹਉਮੈ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row42",
+   "w": 46,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹਉਮੈ",
+    "body": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego. | ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 3,
+   "form": "ਹਉਮੈ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row43",
+   "w": 46,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹਉਮੈ",
+    "body": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego. | ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 4,
+   "form": "ਹਉਮੈ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row44",
+   "w": 46,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹਉਮੈ",
+    "body": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego. | ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 5,
+   "form": "ਹੁਕਮੁ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row44",
+   "w": 45,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹੁਕਮੁ",
+    "body": "The exact form ਹੁਕਮੁ in this passage refers to Divine order/command; full grammar review pending. | ਇਸ ਪੰਕਤੀ ਵਿੱਚ ਰੱਬੀ ਹੁਕਮ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 6,
+   "form": "ਹਉਮੈ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row45",
+   "w": 46,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਹਉਮੈ",
+    "body": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego. | ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.asa.466.m2.salok02",
+   "i": 7,
+   "form": "ਕਿਰਪਾ",
+   "row": "sggs.opengranth-34d2a7c.ang466.row46",
+   "w": 57,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਕਿਰਪਾ",
+    "body": "Grace or mercy in relation to practising the Guru's Shabad. | ਮਿਹਰ ਜਾਂ ਕਿਰਪਾ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  },
+  {
+   "passage": "sggs.kabir.salok007",
+   "i": 0,
+   "form": "ਭਲੋ",
+   "row": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "w": 32,
+   "h": 48,
+   "dialog": {
+    "open": true,
+    "title": "ਭਲੋ",
+    "body": "Good, in the speaker's contrast with his own shortcomings. | ਚੰਗਾ; ਆਪਣੇ ਆਪ ਨਾਲ ਕੀਤੀ ਤੁਲਨਾ ਵਿੱਚ। | Context-specific vocabulary draft. Grammar and pronunciation review pending. | Open dictionary entry",
+    "focusIn": true,
+    "focusOn": "Open dictionary entry"
+   },
+   "afterEscape": {
+    "closed": true,
+    "focusBackOnSameWord": true
+   }
+  }
+ ],
+ "C_dictionary_entry_and_back": {
+  "entryHeading": "Mithat",
+  "entryKicker": "WORD · DEVELOPMENT DRAFT",
+  "entryText": [
+   "← Previous learning page",
+   "",
+   "WORD · DEVELOPMENT DRAFT",
+   "",
+   "Mithat",
+   "",
+   "ਮਿਠਤੁ",
+   "",
+   "ਮਿਠਤੁ",
+   "",
+   "Sweetness or gentleness in conduct, in this Salok.",
+   "",
+   "ਮਿਠਾਸ; ਚੰਗੇ ਵਿਹਾਰ ਦੀ ਮਿਠਾਸ।",
+   "",
+   "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ",
+   "",
+   "Exact word occurrence in this passage"
+  ],
+  "backHeading": "Humility beyond appearances",
+  "scrollBefore": 1574,
+  "scrollAfterBack": 1574,
+  "backToSamePlace": true,
+  "focusAfterBack": "content"
+ },
+ "D_lessons": [
+  {
+   "concept": "concept.humility",
+   "depth": "simple",
+   "englishShown": true,
+   "punjabiShown": true,
+   "punjabiMarkedPa": true,
+   "draftNoteEnglish": [
+    "CONCEPT · DEVELOPMENT DRAFT",
+    "AI-assisted educational draft, not a translation or scholar-approved lesson."
+   ],
+   "draftNoteInPunjabi": false,
+   "versionShown": false,
+   "pressed": [
+    "simple=true",
+    "detailed=false",
+    "deep=false"
+   ],
+   "scrollBefore": 1300,
+   "scrollAfter": 1300,
+   "focusAfter": "simple",
+   "wordsEn": 24,
+   "wordsPa": 28
+  },
+  {
+   "concept": "concept.humility",
+   "depth": "detailed",
+   "englishShown": true,
+   "punjabiShown": true,
+   "punjabiMarkedPa": true,
+   "draftNoteEnglish": [
+    "CONCEPT · DEVELOPMENT DRAFT",
+    "AI-assisted educational draft, not a translation or scholar-approved lesson."
+   ],
+   "draftNoteInPunjabi": false,
+   "versionShown": false,
+   "pressed": [
+    "simple=false",
+    "detailed=true",
+    "deep=false"
+   ],
+   "scrollBefore": 1300,
+   "scrollAfter": 1300,
+   "focusAfter": "detailed",
+   "wordsEn": 41,
+   "wordsPa": 40
+  },
+  {
+   "concept": "concept.humility",
+   "depth": "deep",
+   "englishShown": true,
+   "punjabiShown": true,
+   "punjabiMarkedPa": true,
+   "draftNoteEnglish": [
+    "CONCEPT · DEVELOPMENT DRAFT",
+    "AI-assisted educational draft, not a translation or scholar-approved lesson."
+   ],
+   "draftNoteInPunjabi": false,
+   "versionShown": false,
+   "pressed": [
+    "simple=false",
+    "detailed=false",
+    "deep=true"
+   ],
+   "scrollBefore": 1300,
+   "scrollAfter": 1300,
+   "focusAfter": "deep",
+   "wordsEn": 52,
+   "wordsPa": 33
+  },
+  {
+   "concept": "concept.haumai",
+   "depth": "simple",
+   "englishShown": true,
+   "punjabiShown": true,
+   "punjabiMarkedPa": true,
+   "draftNoteEnglish": [
+    "CONCEPT · DEVELOPMENT DRAFT",
+    "AI-assisted educational draft, not a translation or scholar-approved lesson."
+   ],
+   "draftNoteInPunjabi": false,
+   "versionShown": false,
+   "pressed": [
+    "simple=true",
+    "detailed=false",
+    "deep=false"
+   ],
+   "scrollBefore": 1300,
+   "scrollAfter": 1300,
+   "focusAfter": "simple",
+   "wordsEn": 28,
+   "wordsPa": 32
+  },
+  {
+   "concept": "concept.haumai",
+   "depth": "detailed",
+   "englishShown": true,
+   "punjabiShown": true,
+   "punjabiMarkedPa": true,
+   "draftNoteEnglish": [
+    "CONCEPT · DEVELOPMENT DRAFT",
+    "AI-assisted educational draft, not a translation or scholar-approved lesson."
+   ],
+   "draftNoteInPunjabi": false,
+   "versionShown": false,
+   "pressed": [
+    "simple=false",
+    "detailed=true",
+    "deep=false"
+   ],
+   "scrollBefore": 1300,
+   "scrollAfter": 1300,
+   "focusAfter": "detailed",
+   "wordsEn": 45,
+   "wordsPa": 32
+  },
+  {
+   "concept": "concept.haumai",
+   "depth": "deep",
+   "englishShown": true,
+   "punjabiShown": true,
+   "punjabiMarkedPa": true,
+   "draftNoteEnglish": [
+    "CONCEPT · DEVELOPMENT DRAFT",
+    "AI-assisted educational draft, not a translation or scholar-approved lesson."
+   ],
+   "draftNoteInPunjabi": false,
+   "versionShown": false,
+   "pressed": [
+    "simple=false",
+    "detailed=false",
+    "deep=true"
+   ],
+   "scrollBefore": 1300,
+   "scrollAfter": 1300,
+   "focusAfter": "deep",
+   "wordsEn": 56,
+   "wordsPa": 28
+  }
+ ],
+ "D_depth_kept_after_going_and_coming_back": [
+  "simple=false",
+  "detailed=false",
+  "deep=true"
+ ],
+ "D_results_for_haumai_in_gurmukhi": [
+  "Haumai · ਹਉਮੈ | concept · Exact title or curated alias",
+  "Haumai · guided study · ਹਉਮੈ | lesson · Exact title or curated alias",
+  "Haumai · ਹਉਮੈ | word · Exact title or curated alias",
+  "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ | passage · Exact original text substring (search normalization only)"
+ ],
+ "D_other_pages": {
+  "Hukam": [
+   "← Previous learning page",
+   "",
+   "CONCEPT · DEVELOPMENT DRAFT",
+   "",
+   "Hukam",
+   "",
+   "ਹੁਕਮ",
+   "",
+   "Indexed concept only; teaching has not been written.",
+   "",
+   "Related knowledge",
+   "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "",
+   "discusses",
+   "",
+   "Hukam explicitly appears in the account of Haumai.",
+   "",
+   "Haumai · ਹਉਮੈ",
+   "",
+   "related concept",
+   "",
+   "The same Salok situates Haumai within Hukam."
+  ],
+  "Seva": [
+   "← Previous learning page",
+   "",
+   "CONCEPT · DEVELOPMENT DRAFT",
+   "",
+   "Seva",
+   "",
+   "ਸੇਵਾ",
+   "",
+   "Indexed concept only; teaching has not been written."
+  ],
+  "Shabad": [
+   "← Previous learning page",
+   "",
+   "CONCEPT · DEVELOPMENT DRAFT",
+   "",
+   "Shabad",
+   "",
+   "ਸ਼ਬਦ",
+   "",
+   "Indexed concept only; teaching has not been written.",
+   "",
+   "Related knowledge",
+   "Haumai · ਹਉਮੈ",
+   "",
+   "related concept",
+   "",
+   "The Salok connects grace with practising the Guru's Shabad."
+  ],
+  "Kirpa": [
+   "← Previous learning page",
+   "",
+   "CONCEPT · DEVELOPMENT DRAFT",
+   "",
+   "Kirpa",
+   "",
+   "ਕਿਰਪਾ",
+   "",
+   "Indexed concept only; teaching has not been written.",
+   "",
+   "Related knowledge",
+   "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "",
+   "discusses",
+   "",
+   "Grace is connected to living the Guru's teaching."
+  ],
+  "Intellectual humility": [
+   "← Previous learning page",
+   "",
+   "STUDY · DEVELOPMENT DRAFT",
+   "",
+   "Intellectual humility",
+   "",
+   "ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ",
+   "",
+   "Comparative study — not a literal Gurbani interpretation",
+   "",
+   "Porter et al., Clarifying the Content of Intellectual Humility, J Pers Assess 2022",
+   "Related knowledge",
+   "Humility · ਨਿਮਰਤਾ",
+   "",
+   "psychological parallel",
+   "",
+   "Acknowledge limits of one's knowledge and remain open to correction.",
+   "",
+   "Similarity: Both support examining self-importance and being open to correction.",
+   "",
+   "Difference: The psychological construct concerns knowledge and belief; Gurmat humility has a devotional, ethical and spiritual context.",
+   "",
+   "Editorial comparison awaiting independent and qualified review."
+  ],
+  "Buddhist reflection on conceit": [
+   "← Previous learning page",
+   "",
+   "STUDY · DEVELOPMENT DRAFT",
+   "",
+   "Buddhist reflection on conceit",
+   "",
+   "ਬੁੱਧ ਧਰਮ ਵਿੱਚ ਮਾਨ ਦਾ ਵਿਚਾਰ",
+   "",
+   "Comparative study — not a literal Gurbani interpretation",
+   "",
+   "Saṃyutta Nikāya 22.49, Soṇa",
+   "Related knowledge",
+   "Haumai · ਹਉਮੈ",
+   "",
+   "philosophical comparison",
+   "",
+   "SN 22.49 examines ranking oneself through impermanent aggregates.",
+   "",
+   "Similarity: Both investigate the self-centred stance and attachment to rank.",
+   "",
+   "Difference: The Buddhist analysis of aggregates and non-self is not equivalent to Gurbani's account of Hukam, grace and the Guru's Shabad.",
+   "",
+   "Editorial comparison awaiting independent and qualified review."
+  ],
+  "course": [
+   "← Previous learning page",
+   "",
+   "COURSE · DEVELOPMENT DRAFT",
+   "",
+   "Understanding the human mind",
+   "",
+   "ਮਨ ਦੀ ਸਮਝ",
+   "",
+   "Draft pathway composed from existing lesson revisions, not duplicated scripture.",
+   "",
+   "Haumai · ਹਉਮੈ",
+   "",
+   "Lesson revision 1",
+   "",
+   "Humility · ਨਿਮਰਤਾ",
+   "",
+   "Lesson revision 1"
+  ]
+ },
+ "E_search_on_page": {
+  "empty": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "blank spaces": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "unrelated word: category": {
+   "status": "2 indexed results in this pilot",
+   "results": [
+    "Haumai · ਹਉਮੈ | concept · Curated alias in query",
+    "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ | passage · discusses · Haumai"
+   ],
+   "injected": 0
+  },
+  "unrelated word: NASA": {
+   "status": "3 indexed results in this pilot",
+   "results": [
+    "Raag Asa · ਆਸਾ | raag · Curated alias in query",
+    "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ | passage · in_raag · Raag Asa",
+    "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ | passage · in_raag · Raag Asa"
+   ],
+   "injected": 0
+  },
+  "one Gurmukhi letter": {
+   "status": "3 indexed results in this pilot",
+   "results": [
+    "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ | passage · Exact original text substring (search normalization only)",
+    "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ | passage · Exact original text substring (search normalization only)",
+    "Turning criticism inward · ਆਪਣੇ ਅੰਦਰ ਝਾਤ | passage · Exact original text substring (search normalization only)"
+   ],
+   "injected": 0
+  },
+  "first letters without choosing the mode": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "first letters, mode chosen": {
+   "status": "1 indexed result in this pilot",
+   "results": [
+    "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ | passage · First letters of a source row"
+   ],
+   "injected": 0
+  },
+  "first letters by the vowel-carrier convention": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "a line that is not in the pilot": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "Ang outside the pilot": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "Ang beyond 1430": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "markup": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "5,000 characters": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "humility": {
+   "status": "3 indexed results in this pilot",
+   "results": [
+    "Humility · ਨਿਮਰਤਾ | concept · Exact title or curated alias",
+    "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ | passage · discusses · Humility",
+    "Turning criticism inward · ਆਪਣੇ ਅੰਦਰ ਝਾਤ | passage · discusses · Humility"
+   ],
+   "injected": 0
+  },
+  "Ang 466 in Gurmukhi": {
+   "status": "1 indexed result in this pilot",
+   "results": [
+    "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ | passage · Ang match"
+   ],
+   "injected": 0
+  },
+  "page 466": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "Mahalla 2": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  },
+  "grace": {
+   "status": "No authored result in this pilot. A full scripture search is not installed.",
+   "results": [],
+   "injected": 0
+  }
+ },
+ "E_alerts_raised": [],
+ "E_enter_key_searches": [
+  "Bhagat Kabir Ji · ਭਗਤ ਕਬੀਰ ਜੀ | author · Exact title or curated alias",
+  "Turning criticism inward · ਆਪਣੇ ਅੰਦਰ ਝਾਤ | passage · written_by · Bhagat Kabir Ji"
+ ],
+ "F_browser_back": {
+  "historyEntriesBefore": 3,
+  "historyEntriesAfterThreeMoves": 3,
+  "addressAfterMoves": "http://127.0.0.1:8085/gurbani-learning-library/knowledge/index.html",
+  "addressAfterBrowserBack": "http://127.0.0.1:8085/gurbani-learning-library/index.html",
+  "leftThePilot": true
+ },
+ "F_address_for_an_item": {
+  "#concept.haumai": {
+   "heading": "Humility",
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  },
+  "#sggs.asa.466.m2.salok02": {
+   "heading": "Humility",
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  },
+  "?id=concept.haumai": {
+   "heading": "Humility",
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  },
+  "#%": {
+   "heading": "Humility",
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  },
+  "#xxxxxxxxxxx…(3,000)": {
+   "heading": "Humility",
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  },
+  "?q=haumai": {
+   "heading": "Humility",
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  }
+ },
+ "F_after_reload_on_a_passage": "Humility",
+ "F_previous_button": {
+  "forward": [
+   "Humility",
+   "Humility beyond appearances",
+   "Nivi",
+   "Bhagat Kabir Ji"
+  ],
+  "back": [
+   "Nivi",
+   "Humility beyond appearances",
+   "Humility",
+   "(Previous is disabled)"
+  ],
+  "retracesExactly": true
+ },
+ "G_layout": [
+  {
+   "width": 320,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 320,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 320,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 320,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 320,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 320,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    }
+   ],
+   "under44": 2,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 320,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 320,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    }
+   ],
+   "under44": 2,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 375,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 375,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 375,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 375,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 375,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 375,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 375,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 375,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 390,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 390,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 390,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 390,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 390,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 390,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 390,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 390,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 430,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 430,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 430,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 430,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 430,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 430,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 430,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 430,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 768,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 768,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 768,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 768,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 768,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 768,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 768,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 768,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 820,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 820,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 820,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 820,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 820,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 820,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 820,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 820,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 1280,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 1280,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 1280,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 1280,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 1280,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 1280,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 1280,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 1280,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 1440,
+   "state": "lesson",
+   "sidewaysScroll": false,
+   "pageWidth": 1440,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 17,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 14
+  },
+  {
+   "width": 1440,
+   "state": "results",
+   "sidewaysScroll": false,
+   "pageWidth": 1440,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 20,
+   "under24": [],
+   "under44": 1,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "CONCEPT · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  },
+  {
+   "width": 1440,
+   "state": "passage",
+   "sidewaysScroll": false,
+   "pageWidth": 1440,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 21,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 16
+  },
+  {
+   "width": 1440,
+   "state": "word dialog",
+   "sidewaysScroll": false,
+   "pageWidth": 1440,
+   "pastTheEdge": [],
+   "clippedGurmukhi": 0,
+   "targets": 23,
+   "under24": [
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "under44": 3,
+   "under44examples": [
+    {
+     "what": "a",
+     "text": "Gurbani Learning Library",
+     "w": 188,
+     "h": 26
+    },
+    {
+     "what": "a",
+     "text": "Pinned source",
+     "w": 108,
+     "h": 20
+    },
+    {
+     "what": "a",
+     "text": "Second digital witness",
+     "w": 170,
+     "h": 20
+    }
+   ],
+   "smallestTextPx": 11,
+   "under12": [
+    {
+     "px": 11,
+     "el": "p.kicker",
+     "t": "PASSAGE · DEVELOPMENT DRAFT"
+    }
+   ],
+   "under14count": 17
+  }
+ ],
+ "G_reader_text_size_setting": {
+  "bodyTextPxAtDefault": 11,
+  "bodyTextPxWhenReaderDoublesDefault": 11,
+  "follows": false
+ },
+ "G_zoom_200_of_1280": {
+  "sidewaysScroll": false,
+  "clippedGurmukhi": 0
+ },
+ "H_axe": [
+  {
+   "scheme": "light",
+   "width": 390,
+   "state": "lesson",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 390,
+   "state": "results",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 390,
+   "state": "passage",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 390,
+   "state": "word dialog",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 1280,
+   "state": "lesson",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 1280,
+   "state": "results",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 1280,
+   "state": "passage",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "light",
+   "width": 1280,
+   "state": "word dialog",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 390,
+   "state": "lesson",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 390,
+   "state": "results",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 390,
+   "state": "passage",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 390,
+   "state": "word dialog",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 1280,
+   "state": "lesson",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 1280,
+   "state": "results",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 1280,
+   "state": "passage",
+   "violations": [],
+   "needsHumanCheck": []
+  },
+  {
+   "scheme": "dark",
+   "width": 1280,
+   "state": "word dialog",
+   "violations": [],
+   "needsHumanCheck": []
+  }
+ ],
+ "H_language_marking": {
+  "gurmukhiNotMarkedCount": 11,
+  "examples": [
+   "button.result: Humility · ਨਿਮਰਤਾ",
+   "button.result: Haumai · ਹਉਮੈ",
+   "button.result: Haumai · ਹਉਮੈ",
+   "button.result: Understanding the human mind · ਮਨ ਦੀ ਸਮਝ",
+   "button.result: Haumai · ਹਉਮੈ",
+   "button.result: Haumai · ਹਉਮੈ"
+  ],
+  "englishInsidePunjabi": []
+ },
+ "H_keyboard_path": [
+  "a «Gurbani Learning Library» outline=solid",
+  "query «» outline=solid",
+  "mode «Indexed concepts and textOri» outline=solid",
+  "author «All authorsGuru Nanak Dev Ji» outline=solid",
+  "search-button «Find teaching» outline=solid",
+  "button «Humility · ਨਿਮਰਤਾ» outline=solid",
+  "typed 466 + Enter → 1 indexed result in this pilot",
+  "button «Understanding Haumai and gra» outline=solid",
+  "Enter on the result → focus on content «← Previous learning pagePASS» outline=solid · heading Understanding Haumai and grace",
+  "button «ਹਉਮੈ» outline=solid",
+  "Enter on the word → dialog open True · focus button «Open dictionary entry» outline=solid",
+  "close-word «Return to passage» outline=solid",
+  "body «Gurbani Learning LibraryDEVE» outline=none",
+  "third Tab (should stay inside the dialog) → button «Open dictionary entry» outline=solid inside=True",
+  "Escape → dialog open False · focus button «ਹਉਮੈ» outline=solid"
+ ],
+ "J_damaged_data": [
+  {
+   "case": "one letter of Gurbani changed",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "a line removed",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "two lines swapped",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "the last line of a Salok removed",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "an item removed",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "a Salok re-attributed to another author",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "lesson wording reversed",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "draft label changed to approved",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "Ang changed",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "same content, re-saved with different spacing",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "same content with Windows line endings",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "a byte-order mark added",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "one space added at the end",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "cut short",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "empty",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "not valid",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "a web page instead of data",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "browseButtons": 0,
+   "refused": true
+  },
+  {
+   "case": "file missing (404)",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "refused": true
+  },
+  {
+   "case": "server error (500)",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "refused": true
+  },
+  {
+   "case": "no connection for the data file",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "refused": true
+  },
+  {
+   "case": "browser cannot compute the fingerprint",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "gurbaniLinesShown": 0,
+   "anythingInContent": 0,
+   "searchEnabled": false,
+   "refused": true
+  }
+ ],
+ "J_refused": "21 of 21",
+ "J_while_checking": {
+  "statusWhileWaiting": "Checking development pack…",
+  "linesWhileWaiting": 0,
+  "contentWhileWaiting": 0,
+  "searchEnabledWhileWaiting": false,
+  "statusAfter": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+ },
+ "J_data_reachable_from_page_after_check": {
+  "exports": [
+   "PACK_SHA256"
+  ]
+ },
+ "K_offline_worker": {
+  "workerControlsPilotPage": true,
+  "readersCacheBefore": {
+   "glp-static:http://127.0.0.1:8085/gurbani-learning-library/:0.14-nitnem-complete-preview-20261125-1": 56
+  },
+  "afterVisitingPilot": {
+   "caches": {
+    "glp-static:http://127.0.0.1:8085/gurbani-learning-library/:0.14-nitnem-complete-preview-20261125-1": 56
+   },
+   "pilotFilesInside": 0
+  },
+  "pilotOnlineWithWorker": {
+   "status": "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library.",
+   "heading": "Humility"
+  },
+  "pilotFilesServed": [
+   [
+    "index.html",
+    true,
+    200
+   ],
+   [
+    "style.css",
+    true,
+    200
+   ],
+   [
+    "app.mjs",
+    true,
+    200
+   ],
+   [
+    "core.mjs",
+    true,
+    200
+   ],
+   [
+    "pilot.json",
+    true,
+    200
+   ],
+   [
+    "index.html",
+    true,
+    200
+   ],
+   [
+    "style.css",
+    true,
+    200
+   ],
+   [
+    "app.mjs",
+    true,
+    200
+   ],
+   [
+    "core.mjs",
+    true,
+    200
+   ]
+  ],
+  "pilotOffline": {
+   "title": "Gurbani Knowledge Library · Development pilot",
+   "status": "Knowledge pack could not be verified. Nothing is displayed.",
+   "lines": 0,
+   "bodyStart": "Gurbani Learning Library\nDEVELOPMENT PILOT\nOne source, many pathways\n\nRead · Understand · Explore · Reflect\n\nSource-linked pilot only. Original digital text, le"
+  },
+  "homeOfflineStillOpens": "Gurbani Learning Library · A place to return"
+ },
+ "L_print_passage": {
+  "text": [
+   "One source, many pathways",
+   "Read · Understand · Explore · Reflect",
+   "Source-linked pilot only. Original digital text, lessons and comparisons await qualified review. No live AI, recordings or full scripture search.",
+   "1 indexed result in this pilot",
+   "PASSAGE · DEVELOPMENT DRAFT",
+   "Humility beyond appearances",
+   "ਅਸਲੀ ਨਿਮਰਤਾ",
+   "Guru Nanak Dev Ji · Asa Di Vaar · Ang 470 · Raag Asa",
+   "ਸਲੋਕੁ",
+   "ਮਃ",
+   "੧",
+   "॥",
+   "ਸਿੰਮਲ",
+   "ਰੁਖੁ",
+   "ਸਰਾਇਰਾ",
+   "ਅਤਿ",
+   "ਦੀਰਘ",
+   "ਅਤਿ",
+   "ਮੁਚੁ",
+   "॥",
+   "ਓਇ",
+   "ਜਿ",
+   "ਆਵਹਿ",
+   "ਆਸ",
+   "ਕਰਿ",
+   "ਜਾਹਿ",
+   "ਨਿਰਾਸੇ",
+   "ਕਿਤੁ",
+   "॥",
+   "ਫਲ",
+   "ਫਿਕੇ",
+   "ਫੁਲ",
+   "ਬਕਬਕੇ",
+   "ਕੰਮਿ",
+   "ਨ",
+   "ਆਵਹਿ",
+   "ਪਤ",
+   "॥",
+   "ਮਿਠਤੁ",
+   "ਨੀਵੀ",
+   "ਨਾਨਕਾ",
+   "ਗੁਣ",
+   "ਚੰਗਿਆਈਆ",
+   "ਤਤੁ",
+   "॥",
+   "ਸਭੁ",
+   "ਕੋ",
+   "ਨਿਵੈ",
+   "ਆਪ",
+   "ਕਉ",
+   "ਪਰ",
+   "ਕਉ",
+   "ਨਿਵੈ",
+   "ਨ",
+   "ਕੋਇ",
+   "॥",
+   "ਧਰਿ",
+   "ਤਾਰਾਜੂ",
+   "ਤੋਲੀਐ",
+   "ਨਿਵੈ",
+   "ਸੁ",
+   "ਗਉਰਾ",
+   "ਹੋਇ",
+   "॥",
+   "ਅਪਰਾਧੀ",
+   "ਦੂਣਾ",
+   "ਨਿਵੈ",
+   "ਜੋ",
+   "ਹੰਤਾ",
+   "ਮਿਰਗਾਹਿ",
+   "॥",
+   "ਸੀਸਿ",
+   "ਨਿਵਾਇਐ",
+   "ਕਿਆ",
+   "ਥੀਐ",
+   "ਜਾ",
+   "ਰਿਦੈ",
+   "ਕੁਸੁਧੇ",
+   "ਜਾਹਿ",
+   "॥੧॥",
+   "Tap underlined words with authored contextual senses. All other words stay in the original line. This is the full selected Salok, not the full Ang.",
+   "All nine rows visually compared with SriGranth Ang 470; whitespace presentation only. Digital witnesses may share lineage.",
+   "Pinned source",
+   "·",
+   "Second digital witness",
+   "No recording is rights-cleared for this pilot. Complete reader deep-link integration is pending; return to this learning page using Previous.",
+   "Related knowledge",
+   "Guru Nanak Dev Ji · ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
+   "written by",
+   "Asa Di Vaar · ਆਸਾ ਦੀ ਵਾਰ",
+   "contains",
+   "Raag Asa · ਆਸਾ",
+   "in raag",
+   "Humility · ਨਿਮਰਤਾ",
+   "discusses",
+   "The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+   "Nivi · ਨੀਵੀ",
+   "attested in",
+   "Mithat · ਮਿਠਤੁ",
+   "attested in"
+  ],
+  "gurbaniLines": 9,
+  "linkAddressesPrinted": false,
+  "draftLabelPrinted": true,
+  "sourceNamed": true
+ },
+ "M_workshop_words_on_screen": {
+  "occurrence": [
+   "Exact word occurrence in this passage"
+  ],
+  "pack": [
+   "Development pack verified · three complete Saloks · two topic lessons. Not the full 1,430-Ang library."
+  ],
+  "indexed": [
+   "1 indexed result in this pilot",
+   "2 indexed results in this pilot",
+   "3 indexed results in this pilot"
+  ],
+  "attested": [
+   "attested in"
+  ],
+  "written_by": [
+   "passage · written_by · Bhagat Kabir Ji"
+  ],
+  "in_raag": [
+   "passage · in_raag · Raag Asa"
+  ],
+  "CONCEPT": [
+   "CONCEPT · DEVELOPMENT DRAFT"
+  ],
+  "PASSAGE": [
+   "PASSAGE · DEVELOPMENT DRAFT"
+  ],
+  "WORD": [
+   "WORD · DEVELOPMENT DRAFT"
+  ],
+  "STUDY": [
+   "STUDY · DEVELOPMENT DRAFT"
+  ],
+  "AUTHOR": [
+   "AUTHOR · DEVELOPMENT DRAFT"
+  ],
+  "RAAG": [
+   "RAAG · DEVELOPMENT DRAFT"
+  ],
+  "deep-link": [
+   "No recording is rights-cleared for this pilot. Complete reader deep-link integration is pending; return to thi"
+  ],
+  "curated alias": [
+   "author · Exact title or curated alias",
+   "concept · Exact title or curated alias",
+   "raag · Exact title or curated alias"
+  ],
+  "authored": [
+   "Tap underlined words with authored contextual senses. All other words stay in the original line. This is the f"
+  ],
+  "retrieval": [
+   "Local retrieval only · No tracking or stored questions · No live deployment"
+  ]
+ }
+}

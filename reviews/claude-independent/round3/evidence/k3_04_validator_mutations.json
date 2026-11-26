@@ -1,0 +1,241 @@
+{
+ "baselinePasses": true,
+ "cases": [
+  {
+   "group": "Gurbani",
+   "name": "one nasal sign dropped from a word that has no dictionary entry (ਸਿੰਮਲ → ਸਿਮਲ)",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "one sign dropped from a word that has a dictionary entry (ਮਿਠਤੁ → ਮਿਠਤ)",
+   "noticed": true,
+   "message": "Word sense does not match exact occurrence"
+  },
+  {
+   "group": "Gurbani",
+   "name": "the text of two rows exchanged (order of the Salok changed)",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "a middle row removed everywhere, counts adjusted",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "the last row of a Salok removed everywhere, counts adjusted",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "the heading row removed everywhere, counts adjusted",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "the closing number changed (॥੧॥ → ॥੨॥)",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "a word repeated",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "a row from the neighbouring Salok appended to Kabir Ji's Salok 7",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "an invisible character inserted in a word",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Gurbani",
+   "name": "pause marks added (; and .)",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Attribution",
+   "name": "the Mahalla 2 Salok attributed to Guru Nanak Dev Ji (field and connection both changed)",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Attribution",
+   "name": "the Mahalla 2 Salok attributed to Guru Nanak Dev Ji (field only)",
+   "noticed": true,
+   "message": "Author edge disagrees with source metadata"
+  },
+  {
+   "group": "Attribution",
+   "name": "Ang changed from 470 to 471 throughout",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Attribution",
+   "name": "Kabir Ji's Salok given a Raag",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Attribution",
+   "name": "Salok number changed (7 → 8)",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Attribution",
+   "name": "source file fingerprint replaced by another 40 characters",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Status",
+   "name": "lesson marked approved",
+   "noticed": true,
+   "message": "Invalid lesson review/revision"
+  },
+  {
+   "group": "Status",
+   "name": "passage marked reviewed",
+   "noticed": true,
+   "message": "Unbound passage"
+  },
+  {
+   "group": "Status",
+   "name": "qualified approvals counted as 3",
+   "noticed": true,
+   "message": "Coverage mismatch"
+  },
+  {
+   "group": "Status",
+   "name": "edition marked as collated by a person",
+   "noticed": true,
+   "message": "No qualified collation asserted in this pilot"
+  },
+  {
+   "group": "Status",
+   "name": "file status changed to published",
+   "noticed": true,
+   "message": "Not a development knowledge pack"
+  },
+  {
+   "group": "Status",
+   "name": "concept marked reviewed",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Teaching",
+   "name": "a lesson's meaning reversed (\"It is not self-hatred\" → \"It is self-hatred\")",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Teaching",
+   "name": "Punjabi of one depth blanked",
+   "noticed": true,
+   "message": "Missing bilingual teaching layer"
+  },
+  {
+   "group": "Teaching",
+   "name": "a dictionary sense tied to a row where the word does not occur",
+   "noticed": true,
+   "message": "Word sense does not match exact occurrence"
+  },
+  {
+   "group": "Teaching",
+   "name": "a dictionary meaning swapped for another word's",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Teaching",
+   "name": "the \"difference\" removed from the Buddhist comparison",
+   "noticed": true,
+   "message": "Comparison requires similarity, difference and reference"
+  },
+  {
+   "group": "Teaching",
+   "name": "the comparison's reference changed to an insecure address",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Structure",
+   "name": "a connection pointed at an item that does not exist",
+   "noticed": true,
+   "message": "Invalid relationship endpoints"
+  },
+  {
+   "group": "Structure",
+   "name": "a connection duplicated under a new id",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Structure",
+   "name": "a connection reversed (concept → passage for \"discusses\")",
+   "noticed": true,
+   "message": "Invalid relationship endpoints"
+  },
+  {
+   "group": "Structure",
+   "name": "two items given the same id",
+   "noticed": true,
+   "message": "Duplicate/missing node ID"
+  },
+  {
+   "group": "Structure",
+   "name": "an item connected to itself",
+   "noticed": false,
+   "message": null
+  },
+  {
+   "group": "Structure",
+   "name": "course pointing at a lesson that does not exist",
+   "noticed": true,
+   "message": "Broken lesson reference: lesson.none"
+  }
+ ],
+ "summary": {
+  "Gurbani": {
+   "cases": 11,
+   "noticed": 1
+  },
+  "Attribution": {
+   "cases": 6,
+   "noticed": 1
+  },
+  "Status": {
+   "cases": 6,
+   "noticed": 5
+  },
+  "Teaching": {
+   "cases": 6,
+   "noticed": 3
+  },
+  "Structure": {
+   "cases": 6,
+   "noticed": 4
+  }
+ },
+ "total": {
+  "cases": 35,
+  "noticed": 14
+ }
+}
