@@ -52,19 +52,57 @@ export async function verifyScripture(bytes){
  return s;
 }
 // Comparison only: never normalize or rewrite the canonical Gurbani bytes.
-function titleSignature(value){
- return value.normalize("NFKC").replace(/\p{Cf}/gu,"").replace(/[੦-੯]/gu,c=>String(c.codePointAt(0)-0x0a66)).replace(/[\p{P}\p{Z}\s]/gu,"");
+function editorialComparable(value){
+ return value.normalize("NFKC").replace(/[\p{Cf}\p{Default_Ignorable_Code_Point}]/gu,"")
+  .replace(/[੦-੯]/gu,c=>String(c.codePointAt(0)-0x0a66));
 }
-function validateEditorialTitle(value,sourceSignatures){
- need(typeof value==="string"&&value.trim().length>0,"INVALID_EDITORIAL_TITLE: expected nonempty text");
- const key=titleSignature(value);
- need(key.length>0,"INVALID_EDITORIAL_TITLE: expected visible text");
- // Reserve the source's literal lines and common structural heading forms.
- // This is a syntactic attribution guard, not a general theological or
- // semantic classification of editorial language.
- const heading=/^(?:ੴ|ਸਲੋਕ(?:ੁ|ਾ)?(?:ਮਹਲਾ|ਮਃ|ਮ)[0-9]+|(?:ਮਹਲਾ|ਮਃ|ਮ)[0-9]+|ਪਉੜੀ[0-9]+|ਰਹਾਉ[0-9]+)/u;
+function titleSignature(value){
+ return editorialComparable(value).replace(/[\p{P}\p{Z}\s]/gu,"");
+}
+function validateEditorialText(value,sourceSignatures,field,{wordForm=false}={}){
+ need(typeof value==="string"&&value.trim().length>0,"INVALID_EDITORIAL_TITLE: expected nonempty text in "+field);
+ const text=editorialComparable(value),key=titleSignature(value);
+ need(key.length>0,"INVALID_EDITORIAL_TITLE: expected visible text in "+field);
+ // Reserve recognizable structural syntax wherever it occurs, including after
+ // a topic prefix. The single-letter abbreviation requires a token boundary:
+ // ordinary words ending in ਮ followed by a number are not headings.
+ const heading=/(?:ੴ|(?:ਸਲੋਕ(?:ੁ|ਾ)?[\p{P}\p{Z}\s]*)?(?:ਮਹਲਾ|ਮਃ)[\p{P}\p{Z}\s]*[0-9]+|(?<![\p{L}\p{M}\p{N}])ਮ[\p{P}\p{Z}\s]*[0-9]+|(?:ਪਉੜੀ|ਰਹਾਉ)[\p{P}\p{Z}\s]*[0-9]+|(?:ਸਲੋਕ(?:ੁ|ਾ)?|ਪਉੜੀ|ਰਹਾਉ)[\p{Z}\s]*[।॥])/u;
  const bare=/^(?:ਸਲੋਕ(?:ੁ|ਾ)?|ਪਉੜੀ|ਰਹਾਉ)$/u;
- need(!sourceSignatures.has(key)&&!heading.test(key)&&!bare.test(key),"EDITORIAL_TITLE_ATTRIBUTION: original text or scripture heading in editorial title");
+ const numberedUnit=/[।॥][\p{P}\p{Z}\s]*[0-9]+[\p{P}\p{Z}\s]*[।॥]/u;
+ // Full source lines may not be smuggled into editorial copy with a prefix.
+ // Individual attested dictionary words remain allowed. This is a syntactic
+ // boundary, not a claim to classify theological meaning or every paraphrase.
+ const copiedLine=[...sourceSignatures].some(line=>key.includes(line));
+ need(!copiedLine&&!heading.test(text)&&!numberedUnit.test(text)&&(!bare.test(key)||wordForm),
+  "EDITORIAL_TITLE_ATTRIBUTION: original text or scripture heading in "+field);
+}
+function validateAliases(aliases,sourceSignatures,field,forms=new Set()){
+ if(aliases===undefined)return;
+ need(Array.isArray(aliases),"INVALID_EDITORIAL_TITLE: aliases must be an array in "+field);
+ for(const value of aliases)validateEditorialText(value,sourceSignatures,field,{wordForm:forms.has(value)});
+}
+function validateNodeText(n,sourceSignatures,lines){
+ need(!["editorialTitle","editorialPa","editorialAliases"].some(key=>Object.hasOwn(n,key)),"Editorial node attempts to define joined passage metadata");
+ const forms=new Set();
+ if(n.type==="word"){
+  need(Array.isArray(n.senses),"Invalid vocabulary senses");
+  for(const sense of n.senses){
+   // The displayed form is a bound source token, not another editorial text
+   // slot or an arbitrary source quote. Keep exact bytes; do not normalize it.
+   need(typeof sense.form==="string"&&Array.isArray(sense.occurrenceIds)&&sense.occurrenceIds.length>0&&
+    sense.occurrenceIds.every(id=>lines.get(id)?.text.split(/\s+/u).includes(sense.form)),
+    "Unbound dictionary form");
+   forms.add(sense.form);
+   for(const language of ["en","pa"])validateEditorialText(sense[language],sourceSignatures,n.id+".senses."+language);
+  }
+ }
+ validateEditorialText(n.title,sourceSignatures,n.id+".title",{wordForm:forms.has(n.title)});
+ if(n.pa!==undefined)validateEditorialText(n.pa,sourceSignatures,n.id+".pa",{wordForm:forms.has(n.pa)});
+ validateAliases(n.aliases,sourceSignatures,n.id+".aliases",forms);
+ if(n.type==="lesson")for(const depth of ["simple","detailed","deep"]){
+  for(const language of ["en","pa"])validateEditorialText(n[depth]?.[language],sourceSignatures,n.id+"."+depth+"."+language);
+ }
+ for(const field of ["citation","discipline"])if(n[field]!==undefined)validateEditorialText(n[field],sourceSignatures,n.id+"."+field);
 }
 export async function loadKnowledge(sourceBytes,teachingBytes,teachingPin){
  const s=await verifyScripture(sourceBytes);
@@ -76,17 +114,22 @@ export async function loadKnowledge(sourceBytes,teachingBytes,teachingPin){
  const sourceSignatures=new Set(s.occurrences.map(o=>titleSignature(o.text)));
  const descriptions=new Map();for(const d of e.passageDescriptions){
   need(passages.has(d.passageId)&&!descriptions.has(d.passageId)&&Object.keys(d).every(k=>["passageId","title","pa","aliases"].includes(k)),"Invalid editorial passage description");
-  validateEditorialTitle(d.title,sourceSignatures);
-  validateEditorialTitle(d.pa,sourceSignatures);
+  validateEditorialText(d.title,sourceSignatures,d.passageId+".title");
+  validateEditorialText(d.pa,sourceSignatures,d.passageId+".pa");
+  validateAliases(d.aliases,sourceSignatures,d.passageId+".aliases");
   descriptions.set(d.passageId,d);
  }
  need(descriptions.size===passages.size,"Missing passage description");
  for(const n of e.nodes){
+  validateNodeText(n,sourceSignatures,lines);
   if(n.type==="lesson")exactBindings(n.sourceBindings,n.sourcePassageIds,passages,"passageSha256");
   if(n.type==="word")for(const sense of n.senses)exactBindings(sense.sourceBindings,sense.occurrenceIds,lines,"textSha256");
  }
- for(const edge of e.edges)if(edge.refs)exactBindings(edge.sourceBindings,edge.refs,passages,"passageSha256");
- const sourceNodes=s.passages.map(p=>{const d=descriptions.get(p.id);return {...p,title:lines.get(p.incipitId).text,editorialTitle:d.title,editorialPa:d.pa,aliases:d.aliases};});
+ for(const edge of e.edges){
+  for(const field of ["reason","similarity","difference"])if(edge[field]!==undefined)validateEditorialText(edge[field],sourceSignatures,edge.id+"."+field);
+  if(edge.refs)exactBindings(edge.sourceBindings,edge.refs,passages,"passageSha256");
+ }
+ const sourceNodes=s.passages.map(p=>{const d=descriptions.get(p.id);return {...p,title:lines.get(p.incipitId).text,editorialTitle:d.title,editorialPa:d.pa,editorialAliases:d.aliases||[]};});
  const {passageDescriptions,...rest}=e;
  return {...rest,schema:"glp.knowledge.v1",nodes:[...e.nodes,...s.sourceNodes,s.edition,...sourceNodes],occurrences:s.occurrences,legacyPassageIds:s.legacyPassageIds,legacyOccurrenceIds:s.legacyOccurrenceIds};
 }

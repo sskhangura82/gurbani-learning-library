@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -23,12 +25,16 @@ jobs:
           node tests/knowledge-contract.mjs
           node tests/knowledge-source-registry.mjs
           node tests/knowledge-editorial-title.mjs
+          node tests/knowledge-editorial-boundary.mjs
+          git diff --exit-code 83acf3f9e4c69c346f2be16d02f407838a137cf9 -- knowledge/scripture.json knowledge/pilot.json knowledge/source-lock.mjs
           node tests/knowledge-source-witness.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: knowledge-source-registry-evidence
-          path: evidence/knowledge-registry/
+          path: |
+            evidence/knowledge-registry/
+            evidence/knowledge-editorial-boundary/
           retention-days: 90
   browser:
     needs: contracts
@@ -43,10 +49,14 @@ jobs:
           npm install --no-save --package-lock=false playwright@1.62.1
           npx playwright install --with-deps chromium
           sudo apt-get install -y fonts-noto-core
-      - run: node tests/knowledge-browser.mjs
+      - run: |
+          node tests/knowledge-browser.mjs
+          node tests/knowledge-editorial-boundary-browser.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: knowledge-pilot-viewport-evidence
-          path: evidence/knowledge-pilot/
+          path: |
+            evidence/knowledge-pilot/
+            evidence/knowledge-editorial-boundary/
           retention-days: 90

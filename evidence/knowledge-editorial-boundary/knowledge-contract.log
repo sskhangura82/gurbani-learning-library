@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "coverage": {
+    "angCount": 3,
+    "passageCount": 3,
+    "originalOccurrences": 19,
+    "fullSecondaryCollationOccurrences": 19,
+    "qualifiedApproved": 0
+  },
+  "limitations": "Node contracts only, not scholarly approval or real-device verification"
+}

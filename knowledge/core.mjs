@@ -62,7 +62,15 @@ export function buildIndex(g){
 }
 const norm=s=>String(s??"").normalize("NFC").toLowerCase().trim().replace(/\s+/gu," ");
 const digits=s=>s.replace(/[੦-੯]/gu,c=>String("੦੧੨੩੪੫੬੭੮੯".indexOf(c)));
-const names=n=>[n.title,n.pa,n.editorialTitle,n.editorialPa,...(n.aliases||[])].filter(nonempty);
+const editorialNodeTypes=new Set(["concept","word","study","lesson","course"]);
+export const contentKind=n=>n.type==="passage"?"scripture":editorialNodeTypes.has(n.type)?"editorial":"source-index";
+function names(n){
+ const origin=contentKind(n)==="editorial"?"editorial":"source";
+ return [
+  ...[n.title,n.pa,...(n.aliases||[])].map(text=>({text,origin})),
+  ...[n.editorialTitle,n.editorialPa,...(n.editorialAliases||[])].map(text=>({text,origin:"editorial"}))
+ ].filter(x=>nonempty(x.text));
+}
 export function connected(index,id){
  id=resolveIdentity(index,id);if(!id)return [];
  return index.graph.edges.filter(e=>e.from===id||e.to===id).map(e=>({edge:e,node:index.nodes.get(e.from===id?e.to:e.from)}));
@@ -83,11 +91,11 @@ export function search(index,query,{mode="auto",author="",type="",collection=""}
  const q=norm(query);if(!q||q.length>240)return [];
  const dq=digits(q),ang=dq.match(/^(?:ang\s*|ਅੰਗ\s*)?(\d{1,4})$/u);
  const matches=new Map();
- const add=(n,score,reason)=>{if(!n)return;const prev=matches.get(n.id);if(!prev||score>prev.score)matches.set(n.id,{id:n.id,type:n.type,title:n.title,score,reason});};
+ const add=(n,score,reason,matchOrigin="source")=>{if(!n)return;const prev=matches.get(n.id);if(!prev||score>prev.score)matches.set(n.id,{id:n.id,type:n.type,title:n.title,kind:contentKind(n),matchOrigin,score,reason});};
  const words=q.split(" ").filter(w=>w.length>=3&&!["the","what","does","why","how","about","please","teach","sikh","gurbani"].includes(w));
  for(const n of index.graph.nodes){
   if(mode==="first-letter"||mode==="phrase"||ang)continue;
-  for(const label of names(n)){const t=norm(label);if(t===q)add(n,100,"Exact title or curated alias");else if(t.length>=3&&q.includes(t))add(n,80,"Curated alias in query");else if(words.some(w=>t===w))add(n,70,"Exact indexed term");}
+  for(const {text,origin} of names(n)){const t=norm(text),label=origin==="editorial"?"Editorial title or alias":"Source title or alias";if(t===q)add(n,100,label+" · exact match",origin);else if(t.length>=3&&q.includes(t))add(n,80,label+" · query match",origin);else if(words.some(w=>t===w))add(n,70,label+" · indexed term",origin);}
  }
  for(const p of index.passages){
   if(ang){const x=Number(ang[1]);if(x>=p.angStart&&x<=p.angEnd)add(p,100,"Ang match");continue;}
@@ -100,7 +108,7 @@ export function search(index,query,{mode="auto",author="",type="",collection=""}
   for(const m of [...matches.values()]){
    const n=index.nodes.get(m.id);
    for(const {edge,node} of connected(index,m.id)){
-    if(node.type==="passage"&&["discusses","written_by","contains","attested_in","in_raag"].includes(edge.type))add(node,Math.max(35,m.score-20),edge.type+" · "+n.title);
+    if(node.type==="passage"&&["discusses","written_by","contains","attested_in","in_raag"].includes(edge.type))add(node,Math.max(35,m.score-20),(contentKind(n)==="editorial"?"Editorial association":"Source relationship")+" · "+edge.type+" · "+n.title,contentKind(n)==="editorial"?"editorial":"source");
    }
   }
  }
