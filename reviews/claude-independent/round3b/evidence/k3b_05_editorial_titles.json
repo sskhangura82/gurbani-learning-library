@@ -1,0 +1,125 @@
+{
+ "editorialNamesTried": [
+  {
+   "query": "Humility beyond appearances",
+   "found": [
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "concept.humility",
+    "sggs.kabir.salok007"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "ਅਸਲੀ ਨਿਮਰਤਾ",
+   "found": [
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.kabir.salok007"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "ang 470",
+   "found": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "Understanding Haumai and grace",
+   "found": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "concept.haumai",
+    "word.haumai"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "found": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "concept.haumai",
+    "concept.kirpa",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "word.kirpa"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "ang 466",
+   "found": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "Turning criticism inward",
+   "found": [
+    "sggs.kabir.salok007"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+   "found": [
+    "sggs.kabir.salok007"
+   ],
+   "findsItsPassage": true
+  },
+  {
+   "query": "ang 1364",
+   "found": [
+    "sggs.kabir.salok007"
+   ],
+   "findsItsPassage": true
+  }
+ ],
+ "nineMissingCases": {
+  "curatedNamesInPR45": 81,
+  "curatedNamesNow": 78,
+  "namesGone": [
+   "Humility beyond appearances",
+   "ਅਸਲੀ ਨਿਮਰਤਾ",
+   "Understanding Haumai and grace",
+   "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "Turning criticism inward",
+   "ਆਪਣੇ ਅੰਦਰ ਝਾਤ"
+  ],
+  "namesAdded": [
+   "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+   "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥"
+  ]
+ },
+ "passageNodesNow": [
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01",
+   "titleOnScreen": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+   "editorialTitle": "Humility beyond appearances",
+   "editorialPa": "ਅਸਲੀ ਨਿਮਰਤਾ",
+   "aliases": [
+    "ang 470"
+   ]
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02",
+   "titleOnScreen": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "editorialTitle": "Understanding Haumai and grace",
+   "editorialPa": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "aliases": [
+    "ang 466"
+   ]
+  },
+  {
+   "id": "sggs.kabir.salok007",
+   "titleOnScreen": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+   "editorialTitle": "Turning criticism inward",
+   "editorialPa": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+   "aliases": [
+    "ang 1364"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1090 @@
+{
+ "note": "The round 3 cases, re-judged with my old passage names mapped through the candidate crosswalk. Only the expectation name is translated.",
+ "crosswalkUsed": {
+  "sggs.asa.470.m1.salok01": "sggs.asa-di-vaar.pauri014.salok01",
+  "sggs.asa.466.m2.salok02": "sggs.asa-di-vaar.pauri007.salok02"
+ },
+ "casesRound3": 582,
+ "casesRound3b": 573,
+ "totalRound3": 499,
+ "totalRound3b": 490,
+ "casesThatOnlyFailedBecauseOfTheRename": 15,
+ "stillNotMet": 83,
+ "byGroup": {
+  "KQ-01 row without closing marks · auto": {
+   "round3": [
+    19,
+    19
+   ],
+   "round3b": [
+    19,
+    19
+   ]
+  },
+  "KQ-01 row without closing marks · phrase": {
+   "round3": [
+    19,
+    19
+   ],
+   "round3b": [
+    19,
+    19
+   ]
+  },
+  "KQ-01 two-word phrase · auto": {
+   "round3": [
+    18,
+    18
+   ],
+   "round3b": [
+    18,
+    18
+   ]
+  },
+  "KQ-01 two-word phrase · phrase": {
+   "round3": [
+    18,
+    18
+   ],
+   "round3b": [
+    18,
+    18
+   ]
+  },
+  "KQ-01 whole row · auto": {
+   "round3": [
+    19,
+    19
+   ],
+   "round3b": [
+    19,
+    19
+   ]
+  },
+  "KQ-01 whole row · phrase": {
+   "round3": [
+    19,
+    19
+   ],
+   "round3b": [
+    19,
+    19
+   ]
+  },
+  "KQ-01b not a phrase · auto": {
+   "round3": [
+    7,
+    1
+   ],
+   "round3b": [
+    7,
+    1
+   ]
+  },
+  "KQ-01b not a phrase · phrase": {
+   "round3": [
+    7,
+    1
+   ],
+   "round3b": [
+    7,
+    1
+   ]
+  },
+  "KQ-02 first four letters": {
+   "round3": [
+    17,
+    17
+   ],
+   "round3b": [
+    17,
+    17
+   ]
+  },
+  "KQ-02 first letters typed without choosing the mode": {
+   "round3": [
+    19,
+    0
+   ],
+   "round3b": [
+    19,
+    0
+   ]
+  },
+  "KQ-02 first letters with spaces": {
+   "round3": [
+    19,
+    19
+   ],
+   "round3b": [
+    19,
+    19
+   ]
+  },
+  "KQ-02 first letters, as written": {
+   "round3": [
+    19,
+    19
+   ],
+   "round3b": [
+    19,
+    19
+   ]
+  },
+  "KQ-02 first letters, vowel-carrier convention": {
+   "round3": [
+    11,
+    0
+   ],
+   "round3b": [
+    11,
+    0
+   ]
+  },
+  "KQ-03 Ang": {
+   "round3": [
+    23,
+    19
+   ],
+   "round3b": [
+    23,
+    19
+   ]
+  },
+  "KQ-03 Ang in another mode": {
+   "round3": [
+    2,
+    2
+   ],
+   "round3b": [
+    2,
+    2
+   ]
+  },
+  "KQ-04 curated name finds its item": {
+   "round3": [
+    239,
+    239
+   ],
+   "round3b": [
+    230,
+    230
+   ]
+  },
+  "KQ-04b spellings a learner would try": {
+   "round3": [
+    36,
+    16
+   ],
+   "round3b": [
+    36,
+    16
+   ]
+  },
+  "KQ-05 author filter returns only that author": {
+   "round3": [
+    15,
+    15
+   ],
+   "round3b": [
+    15,
+    15
+   ]
+  },
+  "KQ-06 should find nothing": {
+   "round3": [
+    55,
+    38
+   ],
+   "round3b": [
+    55,
+    38
+   ]
+  },
+  "KQ-07 order and reasons": {
+   "round3": [
+    1,
+    1
+   ],
+   "round3b": [
+    1,
+    1
+   ]
+  }
+ },
+ "stillNotMetCases": [
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "query": "ਹ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "sggs.kabir.salok007"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "query": "ਹ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "sggs.kabir.salok007"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "query": "ਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "sggs.kabir.salok007"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "query": "ਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "sggs.kabir.salok007"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "query": "ਉਮ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "query": "ਉਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "query": "ਰੋਗੁ ਦੀਰਘ ਹਉਮੈ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "query": "ਮੈ ਦੀ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "query": "ਮੈ ਦੀ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "query": "॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01",
+    "sggs.kabir.salok007"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "query": "॥੧॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ]
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "query": "॥੧॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ]
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਸਮ੧",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਸਰਸਅਦਅਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ੳਜਅਅਕਜਨਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਓਜਆਆਕਜਨਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਫਫਫਬਕਨਅਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਫਫਫਬਕਨਆਪ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਮਨਨਗਚਤ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਸਕਨਅਕਪਕਨਨਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਸਕਨਆਕਪਕਨਨਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਧਤਤਨਸਗਹ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਅਦਨਜਹਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਸਨਕਥਜਰਕਜ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਮ੨",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਹੲਜਹਹਕਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਹਏਜਹਹਕਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਹੲਬਫਫਜਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਹਏਬਫਫਜਪ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਹਕੳਕਸੲਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਹਕਊਕਸਇਜ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਹੲਹਹਪਕਫ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਹਏਹਹਪਕਫ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਹਦਰਹਦਭੲਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਹਦਰਹਦਭਇਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਕਕਜਅਤਗਕਸਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਕਕਜਆਤਗਕਸਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਨਕਸਜੲਸਦਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਨਕਸਜਇਸਦਜ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਕਸਤਹਬਹਤਭਸਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "query": "ਜਅਕਬਮਹਸ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "query": "ਜਐਕਬਮਹਸ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-03 Ang",
+   "query": "page 466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-03 Ang",
+   "query": "p. 470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-03 Ang",
+   "query": "Ank 470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-03 Ang",
+   "query": "ਪੰਨਾ ੪੭੦",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "nimrta",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "Nimratā",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "houmai",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "pride",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "hankar",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "ahankar",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "Asa Ki Vaar",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ]
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "Mahalla 2",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "Mehl 1",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "M2",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "ਮਹਲਾ ੨",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ]
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "ਕਬੀਰ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ]
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "ਗੁਰੂ ਨਾਨਕ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "ਨਾਨਕ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02",
+    "sggs.asa-di-vaar.pauri014.salok01"
+   ]
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "simmal",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "simmal tree",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "grace",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "sewa",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "sabad",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": []
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "query": "ਸਬਦੁ",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "sggs.asa-di-vaar.pauri007.salok02"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "category",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (discusses · Haumai)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "Oregon",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (discusses · Haumai)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "San Diego",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (discusses · Haumai)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "negotiation",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (discusses · Haumai)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "basal",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (in_raag · Raag Asa)",
+    "sggs.asa-di-vaar.pauri014.salok01 (in_raag · Raag Asa)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "Pasadena",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (in_raag · Raag Asa)",
+    "sggs.asa-di-vaar.pauri014.salok01 (in_raag · Raag Asa)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "NASA",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (in_raag · Raag Asa)",
+    "sggs.asa-di-vaar.pauri014.salok01 (in_raag · Raag Asa)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "casa",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (in_raag · Raag Asa)",
+    "sggs.asa-di-vaar.pauri014.salok01 (in_raag · Raag Asa)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "Kasauli",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (in_raag · Raag Asa)",
+    "sggs.asa-di-vaar.pauri014.salok01 (in_raag · Raag Asa)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "conceited",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.buddhist-conceit (Curated alias in query)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "kabira",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "author.bhagat-kabir (Curated alias in query)",
+    "sggs.kabir.salok007 (written_by · Bhagat Kabir Ji)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "nanakshahi calendar",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "author.guru-nanak (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri014.salok01 (written_by · Guru Nanak Dev Ji)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "sevadar",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.seva (Curated alias in query)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "angadi",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "author.guru-angad (Curated alias in query)",
+    "sggs.asa-di-vaar.pauri007.salok02 (written_by · Guru Angad Dev Ji)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "psychology of colour",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.intellectual-humility (Curated alias in query)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "buddhist monastery in Tibet",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.buddhist-conceit (Curated alias in query)"
+   ]
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "query": "self awareness app",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.intellectual-humility (Curated alias in query)"
+   ]
+  }
+ ]
+}

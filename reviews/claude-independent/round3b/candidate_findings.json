@@ -1,0 +1,34 @@
+{
+ "candidate": "94f004a842eb1bdf2da879074c2f4c701d54030e",
+ "note": "Remarks that exist only in the unmerged candidate PR #48. Kept out of the main findings register.",
+ "findings": [
+  {
+   "id": "RB-01",
+   "severity": "S2",
+   "applies_to": "candidate PR #48 at 94f004a only",
+   "area": "Identity / presentation",
+   "title": "An editorial title may still be written as a line of Gurmukhi that reads like a scripture heading",
+   "location": "knowledge/registry.mjs, loadKnowledge(): a passage description is checked for its passageId and its field names, but the title itself is any string.",
+   "evidence": "Of 30 mutations made against the two-file design this was the only one accepted: setting passageDescriptions[0].title to \"ਸਲੋਕੁ ਮਃ ੧ ॥\" passes every check. On screen it is drawn after \"Library topic (editorial): \". reviews/claude-independent/round3b/evidence/k3b_02_separation_mutations.json; reviews/claude-independent/round3b/evidence/k3b_06_on_screen.json.",
+   "why_it_matters": "R3-04 asked that an editorial title never appear to be the name of the Gurbani. The structure now separates them and the label helps, but nothing stops the editorial string itself from being a scripture heading.",
+   "proposed_correction": "Refuse an editorial title that matches a heading form, or require editorial titles to be marked in the data as editorial text rather than free strings.",
+   "acceptance_test": "A passage description whose title is a Gurmukhi heading is refused by the loader with a named reason.",
+   "status": "OPEN",
+   "origin": "round 3b"
+  },
+  {
+   "id": "RB-02",
+   "severity": "S3",
+   "applies_to": "candidate PR #48 at 94f004a only",
+   "area": "Identity",
+   "title": "The crosswalk cannot be told apart from an omission for a name that did not change",
+   "location": "knowledge/scripture.json, legacyPassageIds: two of three passages are listed.",
+   "evidence": "sggs.kabir.salok007 has no entry because its name is the same in PR #45 and PR #48. All 19 occurrence names are listed and every one resolves. reviews/claude-independent/round3b/evidence/k3b_01_structural_identity.json.",
+   "why_it_matters": "A reader of the crosswalk alone cannot tell \"this name did not change\" from \"this name was forgotten\"; the loader checks only that listed targets exist.",
+   "proposed_correction": "List every passage, mapping an unchanged name to itself, or state in the file that unchanged names are omitted.",
+   "acceptance_test": "Every passage appears in the crosswalk, or the file says plainly that unchanged names are left out.",
+   "status": "OPEN",
+   "origin": "round 3b"
+  }
+ ]
+}
