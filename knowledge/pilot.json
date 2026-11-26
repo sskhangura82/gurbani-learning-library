@@ -186,10 +186,14 @@
       "focusId": "sggs.opengranth-34d2a7c.ang1364.row33",
       "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1364.md",
       "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1364&g=1&h=0&k=0&p=0&r=0&t=0",
-      "comparison": "First verse corroborated by SriGranth indexed search; complete two-line unit from pinned corpus. Second-witness full collation pending.",
+      "comparison": "Both verses visually compared with SriGranth indexed results, Ang 1364 lines 16–17. Full two-line Salok from pinned corpus. Digital witnesses may share lineage.",
       "review": "DIGITAL_SOURCE_DRAFT",
       "aliases": [
         "ang 1364"
+      ],
+      "secondaryEvidenceUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Search&Param=punjabi&SearchData=%E0%A8%B8%E0%A8%A4&Tier=4",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Search&Param=punjabi&SearchData=%E0%A8%90&Tier=1"
       ]
     },
     {
@@ -993,15 +997,19 @@
     "angCount": 3,
     "passageCount": 3,
     "originalOccurrences": 19,
-    "fullSecondaryCollationOccurrences": 17,
-    "qualifiedApproved": 0,
-    "additionalFirstLineCorroborated": 1,
-    "uncheckedSecondWitnessOccurrences": 1
+    "fullSecondaryCollationOccurrences": 19,
+    "qualifiedApproved": 0
   },
   "integration": {
     "legacyIdMigration": "pending; never rewrite existing reader IDs or learning keys",
     "dailyHukamnama": "PR43 distinct event references; identity crosswalk pending",
     "existingReaderRoutes": "No full Ang reader live; this slice must use its own full Salok view until verified deep links exist",
     "productZero": "advisory evidence only; no production authority"
+  },
+  "identityPolicy": {
+    "status": "PROVISIONAL_LOCAL_IDENTITY_NOT_FINAL_CROSS_CORPUS_CANON",
+    "logicalIds": "Passage and concept identities are distinct from edition-bound occurrences. Existing IDs must not be changed without an explicit crosswalk.",
+    "search": "Normalize copies for retrieval only, never modify original text",
+    "sourceMetadata": "Digital witness comparison is not independent print collation or qualified scholarly approval"
   }
 }
