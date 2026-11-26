@@ -1,0 +1,35 @@
+{
+ "what": "Every attempt I made to check the dated Hukamnama events and the source terms myself, with its outcome. Retrieval window: 26 November 2026, 00:07 to 00:22 UTC (05:37 to 05:52 in Amritsar on 26 November).",
+ "limits": [
+  "My page-reading tool returns a short answer about a page, not the page's bytes. It will confirm a date, a heading, an Ang, a single line or a single word, but it declined to hand back the complete Gurmukhi passage. So no outside page was compared with the data letter for letter across all 19 lines.",
+  "The tool only opens addresses that the owner supplied or that a web search returned. The three dated SGPC article addresses stored in the data (sgpc.net/25-nov-2026/, sgpc.net/14-oct-2025/, sgpc.net/mukhwak-25-11-2017/) were neither, so opening them needed the owner's approval on screen. Nobody was there to answer, so they were not opened. A search for the exact address returned nothing either.",
+  "A search-engine snapshot is not treated as proof of anything here. It is listed only where it led to a page that was then opened."
+ ],
+ "attempts": [
+  {"n": 1, "address": "https://sgpc.net/25-nov-2026/", "listedInDataAs": "sourceUrl of the 25 Nov 2026 event", "outcome": "NOT OPENED: needs owner approval; unanswered"},
+  {"n": 2, "address": "https://sgpc.net/14-oct-2025/", "listedInDataAs": "sourceUrl of the 14 Oct 2025 event", "outcome": "NOT OPENED: needs owner approval; unanswered"},
+  {"n": 3, "address": "https://sgpc.net/mukhwak-25-11-2017/", "listedInDataAs": "sourceUrl of the held 25 Nov 2017 event", "outcome": "NOT OPENED: needs owner approval; unanswered"},
+  {"n": 4, "address": "https://hs.sgpc.net/", "listedInDataAs": "officialWitness (as https://hs.sgpc.net/index.php)", "outcome": "OPENED twice",
+   "found": {"dateStamp": "25-11-2026 05:30 AM", "place": "Sachkhand Sri Harmandir Sahib, Sri Amritsar; Mukhwak", "heading": "ਗੂਜਰੀ ਮਹਲਾ ੧ ॥", "ang": 504, "calendarLine": "Wednesday, 10 Maghar, Samvat 558 Nanakshahi",
+    "firstLine": "ਐ ਜੀ ਨਾ ਹਮ ਉਤਮ ਨੀਚ ਨ ਮਧਿਮ ਹਰਿ ਸਰਣਾਗਤਿ ਹਰਿ ਕੇ ਲੋਗ ॥", "rahaoFirstLine": "ਭਾਈ ਰੇ ਗੁਰ ਕਿਰਪਾ ਤੇ ਭਗਤਿ ਠਾਕੁਰ ਕੀ ॥", "rahaoSecondLineEnding": "ਨਾ ਜਮ ਕਾਣਿ ਨ ਜਮ ਕੀ ਬਾਕੀ ॥੧॥ ਰਹਾਉ ॥",
+    "wordInStanza4": "ਜਿਨੑ, written with the single half-ha sign, as in the data", "stanzaEndings": 8, "lastMarker": "॥੮॥੪॥", "completeShabad": true,
+    "alsoOnThePage": "a Punjabi explanation, an English translation, links to dated audio files for the Hukamnama and the Katha, and the notice '© SGPC' with no terms of use"},
+   "agreesWithData": "date, place, heading, Ang, calendar line, first line, both Rahao lines, the half-ha word, eight stanzas, the last marker, completeness",
+   "notCompared": "the other lines, letter for letter",
+   "rolloverObservation": "Opened at about 05:40 Amritsar time on 26 November. The official page still showed 25 November's Mukhwak. For the first hours of each Amritsar day there is no reading for 'today'."},
+  {"n": 5, "address": "https://hs.sgpc.net/index.php and https://hs.sgpc.net/archiveView.php", "outcome": "NOT OPENED: the site's rules for automated access could not be read at that moment (a temporary failure on the site's side)"},
+  {"n": 6, "address": "https://sgpc.net/mukhwak-archives/", "outcome": "OPENED", "found": "The archive itself sits in an embedded frame from old.sgpc.net and was not readable. The banner at the top of the page gave Gujri Mahalla 1, 10 Maghar Samvat 558, 25 November 2026, Ang 504."},
+  {"n": 7, "address": "https://sgpc.net/daily-mukhwak-pdf/", "outcome": "OPENED", "found": "This is SGPC's Daily Mukhwak page (audio, Katha, PDF). Same banner as above. Its address has a hyphen after 'daily'. The address in the reader, https://sgpc.net/daily.mukhwak-pdf/, has a full stop there instead."},
+  {"n": 8, "address": "https://sikhnet.com/hukam", "listedInDataAs": "secondary (as /hukam/archive/2026-11-25)", "outcome": "OPENED", "found": "25 November 2026; 10 Maghar Samvat 558 (written in an older font encoding); Ang 504; Guru Nanak Dev Ji; Raag Gujri. The Gurmukhi text is not in the page content my tool receives. Footer: 'Copyright © 2026 SikhNet, Inc., All Rights Reserved'."},
+  {"n": 9, "address": "https://sikhnet.com/hukam/archive/2026-11-25", "outcome": "NOT OPENED: needs owner approval; unanswered"},
+  {"n": 10, "address": "https://sikhizm.com/hukamnama-pdf/", "outcome": "OPENED", "found": "A third-party site that reposts SGPC's daily PDF. It lists this Shabad ('Ai Ji Na Hum Uttam') and its file carries an upload time of 14 October 2025, 00:34 UTC (06:04 in Amritsar). A search snapshot of the same page listed it under 'Hukamnama 14-October-2025'. This is the only support I could obtain for the 14 October 2025 event, and it is second-hand."},
+  {"n": 11, "address": "https://dailyhukamnama.in/daily-hukamnama-november-25-2017/", "outcome": "OPENED", "found": "A third-party page for 25 November 2017 exists. The reading is shown only as two pictures, which my tool cannot read. Nothing learned about the 2017 text."},
+  {"n": 12, "address": "https://hukamnamasahib.com/ (search snapshot only)", "outcome": "SNAPSHOT", "found": "A third-party site giving the morning Hukamnama of 25-11-2026 as Ang 504 with the same opening line. Not opened; not relied on."},
+  {"n": 13, "address": "https://github.com/KhalisFoundation/BaniDB-API", "outcome": "OPENED", "found": "The code repository carries an MIT licence. The page states no terms for using the hosted service or the Gurbani data, and says the project takes a controlled approach to its data. Permission for our use is therefore not established."}
+ ],
+ "gradeOfEvidencePerEvent": {
+  "2026-11-25": "Official SGPC page opened by me and agrees on every point I could put to it; two SGPC banners and SikhNet agree on date and Ang. The dated SGPC article named in the data was not opened. The full passage was not compared letter for letter with any SGPC page.",
+  "2025-10-14": "Second-hand only: a third-party repost and its upload time. The dated SGPC article named in the data was not opened by me, and the data itself says 'direct capture pending'.",
+  "2017-11-25": "Not verified. The SGPC page was not opened; the third-party page is pictures. The builder holds this event and shows no Gurbani for it, which is the right handling. For what it is worth, SGPC's current page writes the word in question as ਜਿਨੑ."
+ }
+}

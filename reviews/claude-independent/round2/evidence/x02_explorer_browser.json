@@ -1,0 +1,1484 @@
+{
+ "candidate": "PR #41 at dc66da9f1e41e51408e47b7321ab5a414c44012b",
+ "base": "http://127.0.0.1:8084/gurbani-learning-library/",
+ "A_drawn_equals_file": {
+  "units": 9,
+  "allFieldsEqual": 9,
+  "rows": [
+   {
+    "unit": "salok",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Bhagavad Gita 2.16 · sat/asat"
+    ],
+    "location": "OPENING SALOK · ANG 285",
+    "hash": "#salok"
+   },
+   {
+    "unit": "pauri-1",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Dhammapada 183 · ethical cultivation"
+    ],
+    "location": "PAURI 1 · ANG 285",
+    "hash": "#pauri-1"
+   },
+   {
+    "unit": "pauri-2",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Bhagavad Gita 2.16 · sat/asat"
+    ],
+    "location": "PAURI 2 · ANG 285",
+    "hash": "#pauri-2"
+   },
+   {
+    "unit": "pauri-3",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Dhammapada 183 · ethical cultivation"
+    ],
+    "location": "PAURI 3 · ANG 285",
+    "hash": "#pauri-3"
+   },
+   {
+    "unit": "pauri-4",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [],
+    "location": "PAURI 4 · ANG 285",
+    "hash": "#pauri-4"
+   },
+   {
+    "unit": "pauri-5",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Acceptance and Commitment Therapy · psychological flexibility"
+    ],
+    "location": "PAURI 5 · ANG 285–286",
+    "hash": "#pauri-5"
+   },
+   {
+    "unit": "pauri-6",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Acceptance and Commitment Therapy · psychological flexibility"
+    ],
+    "location": "PAURI 6 · ANG 286",
+    "hash": "#pauri-6"
+   },
+   {
+    "unit": "pauri-7",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Acceptance and Commitment Therapy · psychological flexibility"
+    ],
+    "location": "PAURI 7 · ANG 286",
+    "hash": "#pauri-7"
+   },
+   {
+    "unit": "pauri-8",
+    "cue": true,
+    "newcomer": true,
+    "punjabi": true,
+    "deep": true,
+    "caution": true,
+    "prompt": true,
+    "words": true,
+    "comparisons": [
+     "Dhammapada 183 · ethical cultivation"
+    ],
+    "location": "PAURI 8 · ANG 286",
+    "hash": "#pauri-8"
+   }
+  ]
+ },
+ "A_languageMarks": {
+  "cue": "pa",
+  "punjabiPara": "pa",
+  "html": "en",
+  "introHasPunjabi": false,
+  "punjabiIntroShownAnywhere": false,
+  "termsShownAnywhere": false,
+  "draftWordsOnScreen": [
+   "Original Gurbani comes first. This learning guide is an AI-assisted draft. Comparisons with Buddhism, Hindu philosophies and psychology are optional and never p",
+   "EDUCATIONAL DRAFT",
+   "Free, account-free learning. Your question is processed on this device. No analytics, streaks, scores or outbound search. This preview has not passed physical i"
+  ],
+  "smallestText": [
+   [
+    9,
+    "EXPLORE · LEARN"
+   ],
+   [
+    10,
+    "EDUCATIONAL DRAFT"
+   ],
+   [
+    10,
+    "Early Buddhist text"
+   ],
+   [
+    11,
+    "A SOURCE-LINKED EDUCATIONAL PILOT"
+   ],
+   [
+    11,
+    "SUKHMANI SAHIB · ANG 285–286"
+   ],
+   [
+    11,
+    "This Ashtpadi"
+   ],
+   [
+    11,
+    "PAURI 8 · ANG 286"
+   ],
+   [
+    11,
+    "Read the full Gurbani in the existing reader"
+   ]
+  ]
+ },
+ "B_finding": [
+  {
+   "query": "",
+   "shows": "Opening Salok",
+   "says": "Enter a passage, concept or question, or choose one of the examples.",
+   "injected": false
+  },
+  {
+   "query": "   ",
+   "shows": "Opening Salok",
+   "says": "Enter a passage, concept or question, or choose one of the examples.",
+   "injected": false
+  },
+  {
+   "query": "Sukhmani 17",
+   "shows": "Opening Salok",
+   "says": "Opening Sukhmani Ashtpadi 17 at its Salok. Choose any of its eight Pauris.",
+   "injected": false
+  },
+  {
+   "query": "Sukhmani Ashtpadi 17",
+   "shows": "Opening Salok",
+   "says": "Opening Sukhmani Ashtpadi 17 at its Salok. Choose any of its eight Pauris.",
+   "injected": false
+  },
+  {
+   "query": "ashtpadi 5",
+   "shows": "Opening Salok",
+   "says": "Ashtpadi 5 is in the complete original Sukhmani reader. This pilot has not authored an expanded lesson for it yet.\n\nOpen Ashtpadi 5 in the original reader",
+   "injected": false
+  },
+  {
+   "query": "Ashtpadi 24",
+   "shows": "Opening Salok",
+   "says": "Ashtpadi 24 is in the complete original Sukhmani reader. This pilot has not authored an expanded lesson for it yet.\n\nOpen Ashtpadi 24 in the original reader",
+   "injected": false
+  },
+  {
+   "query": "ashtpadi 25",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "ashtpadi 0",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "ਅਸਟਪਦੀ ੧੭",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "ਅਸਟਪਦੀ 3",
+   "shows": "Opening Salok",
+   "says": "Ashtpadi 3 is in the complete original Sukhmani reader. This pilot has not authored an expanded lesson for it yet.\n\nOpen Ashtpadi 3 in the original reader",
+   "injected": false
+  },
+  {
+   "query": "pauri 3",
+   "shows": "Pauri 3",
+   "says": "Showing pauri 3 of Sukhmani Ashtpadi 17. Full original text remains one tap away.",
+   "injected": false
+  },
+  {
+   "query": "pauri 9",
+   "shows": "Pauri 1",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "pauri 0",
+   "shows": "Pauri 1",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "Pauri 12",
+   "shows": "Pauri 1",
+   "says": "Showing pauri 1 of Sukhmani Ashtpadi 17. Full original text remains one tap away.",
+   "injected": false
+  },
+  {
+   "query": "Hukam",
+   "shows": "Pauri 7",
+   "says": "Showing the Hukam-related passage in Ashtpadi 17. It is one source-linked example, not a full account of Hukam across the scripture.",
+   "injected": false
+  },
+  {
+   "query": "ਹੁਕਮ",
+   "shows": "Pauri 7",
+   "says": "Showing the Hukam-related passage in Ashtpadi 17. It is one source-linked example, not a full account of Hukam across the scripture.",
+   "injected": false
+  },
+  {
+   "query": "What is Hukam?",
+   "shows": "Pauri 7",
+   "says": "Showing the Hukam-related passage in Ashtpadi 17. It is one source-linked example, not a full account of Hukam across the scripture.",
+   "injected": false
+  },
+  {
+   "query": "Naam",
+   "shows": "Pauri 6",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "ਨਾਮ",
+   "shows": "Pauri 6",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "bibek",
+   "shows": "Pauri 2",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "ਬਿਬੇਕ",
+   "shows": "Pauri 2",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "Sat",
+   "shows": "Opening Salok",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "truth",
+   "shows": "Opening Salok",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "seva",
+   "shows": "Pauri 3",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "Buddhism",
+   "shows": "Pauri 3",
+   "says": "A source-labeled comparison with Dhammapada 183 is available under Connections. This is not a claim that the two traditions teach the same doctrine.",
+   "injected": false
+  },
+  {
+   "query": "buddha",
+   "shows": "Pauri 3",
+   "says": "A source-labeled comparison with Dhammapada 183 is available under Connections. This is not a claim that the two traditions teach the same doctrine.",
+   "injected": false
+  },
+  {
+   "query": "psychology",
+   "shows": "Pauri 5",
+   "says": "A related, not identical, comparison with psychological flexibility appears under Connections.",
+   "injected": false
+  },
+  {
+   "query": "anxiety",
+   "shows": "Pauri 5",
+   "says": "A related, not identical, comparison with psychological flexibility appears under Connections.",
+   "injected": false
+  },
+  {
+   "query": "uncertainty",
+   "shows": "Pauri 5",
+   "says": "A related, not identical, comparison with psychological flexibility appears under Connections.",
+   "injected": false
+  },
+  {
+   "query": "I feel anxiety and cannot sleep",
+   "shows": "Pauri 5",
+   "says": "A related, not identical, comparison with psychological flexibility appears under Connections.",
+   "injected": false
+  },
+  {
+   "query": "I want to die",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "I am thinking of killing myself",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "I am depressed",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "help me",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "Japji Sahib",
+   "shows": "Opening Salok",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "Anand Sahib",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "Guru Nanak",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "What is the weather today",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "who won the cricket",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "car",
+   "shows": "Pauri 4",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "war",
+   "shows": "Pauri 1",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "art",
+   "shows": "Pauri 2",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "man",
+   "shows": "Pauri 5",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "age",
+   "shows": "Pauri 5",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "her",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "ant",
+   "shows": "Pauri 8",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "god",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "God",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "Waheguru",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "Islam",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "Christianity",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "karma",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "reincarnation",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "meditation",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "mindfulness",
+   "shows": "Pauri 6",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "<img src=x onerror=alert(1)>",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "\"><script>alert(1)</script>",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "%%%",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "????",
+   "shows": "Opening Salok",
+   "says": "Enter a passage, concept or question, or choose one of the examples.",
+   "injected": false
+  },
+  {
+   "query": "17",
+   "shows": "Opening Salok",
+   "says": "Opening Sukhmani Ashtpadi 17 at its Salok. Choose any of its eight Pauris.",
+   "injected": false
+  },
+  {
+   "query": "1",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "a",
+   "shows": "Opening Salok",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "xxxxxxxxxxxxxxxxxxxx… (5000 characters)",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "ਸਤਿ",
+   "shows": "Opening Salok",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "ਚਰਨ",
+   "shows": "Pauri 1",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ",
+   "shows": "Opening Salok",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "aad sach jugaad sach",
+   "shows": "Pauri 8",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "saadh sangat",
+   "shows": "Pauri 8",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "sant",
+   "shows": "Pauri 8",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "grace",
+   "shows": "Pauri 4",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "fear",
+   "shows": "Pauri 2",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "death",
+   "shows": "Pauri 8",
+   "says": "Found a related written passage in Ashtpadi 17. Verify its full meaning in context; this pilot does not generate a custom answer.",
+   "injected": false
+  },
+  {
+   "query": "money",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "sex",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "abuse",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  },
+  {
+   "query": "my guru told me to obey him",
+   "shows": "Opening Salok",
+   "says": "We have not authored a checked lesson for that question in this pilot. Your question stays on this device; this page will not invent an answer. Read the original and return to another written topic.",
+   "injected": false
+  }
+ ],
+ "B_question_kept_or_sent": {
+  "url": "http://127.0.0.1:8084/gurbani-learning-library/explore/index.html#salok",
+  "local": [],
+  "session": [],
+  "cookies": ""
+ },
+ "C_privacy": {
+  "otherReadersSavedLearningUnchanged": true,
+  "hostsContacted": [
+   "127.0.0.1:8084"
+  ],
+  "externalLinks": [
+   "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+   "https://www.bloomsbury.com/us/sikh-view-on-happiness-9781350139879/",
+   "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0",
+   "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0",
+   "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=286&g=1&h=0&k=0&p=0&r=0&t=0",
+   "https://gurugranthsahib.io/info/english/methodology",
+   "https://www.sadhsangat.com/sggs-pp-285-286-gauri-sukhmani-m-5-astpadi-17/",
+   "https://heritage.iitk.ac.in/SBG/2.16",
+   "https://www.dhammatalks.net/suttacentral/sc2016/sc/en/dhp.html",
+   "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+   "https://dokumen.pub/the-sikh-view-on-happiness-guru-arjans-sukhmani-9781350139879-9781350139909-9781350139886.html"
+  ]
+ },
+ "D_teach_me_something": {
+  "presses": 300,
+  "unitsReached": 9,
+  "spread": {
+   "Pauri 2": 31,
+   "Pauri 6": 26,
+   "Pauri 4": 31,
+   "Pauri 3": 39,
+   "Opening Salok": 39,
+   "Pauri 8": 30,
+   "Pauri 1": 29,
+   "Pauri 5": 34,
+   "Pauri 7": 41
+  },
+  "sameTwiceRunning": 0,
+  "lastMessage": "A selected teaching from Sukhmani Ashtpadi 17: Pauri 7. This is a curated lesson, not randomly generated scripture."
+ },
+ "E_fragment": {
+  "valid unit": {
+   "address": "#pauri-5",
+   "studyShown": true,
+   "shows": "Pauri 5",
+   "says": ""
+  },
+  "unknown": {
+   "address": "#nothing",
+   "studyShown": true,
+   "shows": "Opening Salok",
+   "says": ""
+  },
+  "malformed percent": {
+   "address": "#%",
+   "studyShown": false,
+   "shows": null,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib"
+  },
+  "malformed percent 2": {
+   "address": "#%E0%A4%A",
+   "studyShown": false,
+   "shows": null,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib"
+  },
+  "markup": {
+   "address": "#<img src=x onerror=1>",
+   "studyShown": true,
+   "shows": "Opening Salok",
+   "says": ""
+  },
+  "unit in capitals": {
+   "address": "#PAURI-5",
+   "studyShown": true,
+   "shows": "Opening Salok",
+   "says": ""
+  }
+ },
+ "F_lesson_file_altered": {
+  "one sign removed from the Salok cue": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "Pauri 3 given the opening line of Pauri 5": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਨੀਕੀ ਕੀਰੀ ਮਹਿ ਕਲ ਰਾਖੈ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "the first-understanding text of Pauri 7 replaced": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "This pauri teaches that you must obey your leader without question.",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "the Ang of Pauri 2 changed to 999": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 999",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "status changed to APPROVED_BY_SCHOLARS": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "a source link repointed": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "last unit removed": {
+   "lessonShown": false,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib",
+   "draftLabel": null,
+   "sample": {},
+   "links": null,
+   "buttonsStillEnabled": [
+    "Find teaching",
+    "Sukhmani Ashtpadi 17",
+    "What is Hukam?",
+    "Connect with Buddhism"
+   ]
+  },
+  "two units swapped": {
+   "lessonShown": false,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib",
+   "draftLabel": null,
+   "sample": {},
+   "links": null,
+   "buttonsStillEnabled": [
+    "Find teaching",
+    "Sukhmani Ashtpadi 17",
+    "What is Hukam?",
+    "Connect with Buddhism"
+   ]
+  },
+  "a headword of Pauri 4 respelled": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਕੀੜੀ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=285&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "a source link made a script address": {
+   "lessonShown": true,
+   "says": "",
+   "draftLabel": "EDUCATIONAL DRAFT",
+   "sample": {
+    "salok": {
+     "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+     "location": "OPENING SALOK · ANG 285",
+     "newcomer": "The opening announces that the Divine is not merely true at one moment",
+     "firstWord": [
+      "ਆਦਿ · ād"
+     ]
+    },
+    "pauri-2": {
+     "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+     "location": "PAURI 2 · ANG 285",
+     "newcomer": "The pauri turns toward a person who recognizes the Divine as the reali",
+     "firstWord": [
+      "ਰਿਦੈ · ridai"
+     ]
+    },
+    "pauri-3": {
+     "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+     "location": "PAURI 3 · ANG 285",
+     "newcomer": "The servant of the Divine is recognized by a way of life: trust, integ",
+     "firstWord": [
+      "ਸੇਵਕੁ · sevak"
+     ]
+    },
+    "pauri-4": {
+     "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+     "location": "PAURI 4 · ANG 285",
+     "newcomer": "The poetry presents Divine care for a devoted person through images of",
+     "firstWord": [
+      "ਪਰਦਾ ਢਾਕੈ · pardā dhākai"
+     ]
+    },
+    "pauri-7": {
+     "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+     "location": "PAURI 7 · ANG 286",
+     "newcomer": "Devotion becomes joyful and continuous; the spiritually attuned person",
+     "firstWord": [
+      "ਹੁਕਮੁ · hukam"
+     ]
+    }
+   },
+   "links": [
+    "https://pubmed.ncbi.nlm.nih.gov/38615492/",
+    "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=286&g=1&h=0&k=0&p=0&r=0&t=0"
+   ],
+   "buttonsStillEnabled": null
+  },
+  "file cut in half": {
+   "lessonShown": false,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib",
+   "draftLabel": null,
+   "sample": {},
+   "links": null,
+   "buttonsStillEnabled": [
+    "Find teaching",
+    "Sukhmani Ashtpadi 17",
+    "What is Hukam?",
+    "Connect with Buddhism"
+   ]
+  },
+  "file empty": {
+   "lessonShown": false,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib",
+   "draftLabel": null,
+   "sample": {},
+   "links": null,
+   "buttonsStillEnabled": [
+    "Find teaching",
+    "Sukhmani Ashtpadi 17",
+    "What is Hukam?",
+    "Connect with Buddhism"
+   ]
+  },
+  "file missing": {
+   "lessonShown": false,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib",
+   "draftLabel": null,
+   "sample": {},
+   "links": null,
+   "buttonsStillEnabled": [
+    "Find teaching",
+    "Sukhmani Ashtpadi 17",
+    "What is Hukam?",
+    "Connect with Buddhism"
+   ]
+  },
+  "file is a web page": {
+   "lessonShown": false,
+   "says": "The teaching file did not load. The original Sukhmani reader is still available.\n\nOpen original Sukhmani Sahib",
+   "draftLabel": null,
+   "sample": {},
+   "links": null,
+   "buttonsStillEnabled": [
+    "Find teaching",
+    "Sukhmani Ashtpadi 17",
+    "What is Hukam?",
+    "Connect with Buddhism"
+   ]
+  }
+ },
+ "G_link_to_original_reader": {
+  "first visit": {
+   "url": "/gurbani-learning-library/sukhmani.html#ashtpadi-17",
+   "scrollY": 144818,
+   "sectionAtTopOfScreen": "ashtpadi-17",
+   "ashtpadi17Exists": true,
+   "ashtpadi17DistanceFromTop": 32,
+   "positionLabel": "Ashtpadi 17\nSalok · opening"
+  },
+  "reader with a saved place in Ashtpadi 3": {
+   "url": "/gurbani-learning-library/sukhmani.html#ashtpadi-17",
+   "scrollY": 144955,
+   "sectionAtTopOfScreen": "ashtpadi-17",
+   "ashtpadi17Exists": true,
+   "ashtpadi17DistanceFromTop": 32,
+   "positionLabel": "Ashtpadi 17\nSalok · opening"
+  }
+ },
+ "G2_saved_place_after_following_the_link": {
+  "placeBefore": "Ashtpadi 3\nPauri 1",
+  "savedBefore": {
+   "glp001.sukhmani.v1": {
+    "read": "sukhmani.a03.p01.l04",
+    "keys": [
+     "version",
+     "read",
+     "guide",
+     "hasGuided",
+     "mode",
+     "theme",
+     "size",
+     "pace",
+     "pronunciation",
+     "bookmarks",
+     "notes"
+    ]
+   }
+  },
+  "savedAfter": {
+   "glp001.sukhmani.v1": {
+    "read": "sukhmani.a17.salok.l01",
+    "keys": [
+     "version",
+     "read",
+     "guide",
+     "hasGuided",
+     "mode",
+     "theme",
+     "size",
+     "pace",
+     "pronunciation",
+     "bookmarks",
+     "notes"
+    ]
+   }
+  },
+  "placeLabelAfter": "Ashtpadi 17\nSalok · opening"
+ },
+ "H_axe": {
+  "lesson open · light": [],
+  "after a search · light": [],
+  "all notes and comparisons open · light": [],
+  "nothing found · light": [],
+  "Ashtpadi without a lesson · light": [],
+  "lesson file missing · light": [],
+  "lesson open · dark": [],
+  "after a search · dark": [],
+  "all notes and comparisons open · dark": [],
+  "nothing found · dark": [],
+  "Ashtpadi without a lesson · dark": [],
+  "lesson file missing · dark": []
+ },
+ "H_axe_summary": {
+  "states": 12,
+  "statesWithViolations": 0,
+  "violationIds": []
+ },
+ "I_structure": {
+  "headings": [
+   "H1 Start anywhere. Understand in context.",
+   "H2 What would you like to explore?",
+   "H2 Go straight to a passage",
+   "H2 Ashtpadi 17: Truth, devotion and discern",
+   "H3 The Eternal Real",
+   "H4 First understanding",
+   "H4 What the passage is doing",
+   "H4 Words to understand",
+   "H4 Interpretation boundary",
+   "H4 Think and explain",
+   "H3 Connections, not equivalences",
+   "H4 The Salok and Baba Sri Chand Ji",
+   "H4 Do not silently harmonize the Japji and ",
+   "H2 From one Ashtpadi to the entire Sri Guru"
+  ],
+  "landmarks": [
+   "header",
+   "main",
+   "div[note]",
+   "form[search]",
+   "div[group] \"Suggested learning prompts\"",
+   "div[status]",
+   "header",
+   "nav \"Choose a Salok or Pauri\"",
+   "nav \"Move between passages\"",
+   "aside \"Optional connections and references\"",
+   "footer"
+  ],
+  "liveRegions": [
+   "search-feedback:polite"
+  ],
+  "smallTargets": [
+   "Read the full Gurbani in the e 221x14",
+   "Return to the existing Gurbani 265x15"
+  ]
+ },
+ "I_keyboard": {
+  "stops": 27,
+  "withoutVisibleFocus": [],
+  "first": [
+   "a Skip to learning",
+   "a GURBANI LEARNING LIBRARY",
+   "input#find-query ",
+   "button Find teaching",
+   "button Sukhmani Ashtpadi 17",
+   "button What is Hukam?",
+   "button Connect with Buddhism",
+   "button#surprise Teach me something"
+  ]
+ },
+ "I_focus_after_choosing_a_unit": {
+  "focusOn": "article#lesson",
+  "ringShown": false,
+  "statusText": ""
+ },
+ "J_layout": {
+  "320": {
+   "sidewaysScroll": false,
+   "pageWidth": 320,
+   "unitButtonsStripScrolls": true,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 4,
+   "cueFontPx": 25.6,
+   "cueLines": 2,
+   "elementsPastRightEdge": []
+  },
+  "390": {
+   "sidewaysScroll": false,
+   "pageWidth": 390,
+   "unitButtonsStripScrolls": true,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 5,
+   "cueFontPx": 25.6,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  },
+  "507": {
+   "sidewaysScroll": false,
+   "pageWidth": 507,
+   "unitButtonsStripScrolls": true,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 5,
+   "cueFontPx": 25.6,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  },
+  "768": {
+   "sidewaysScroll": false,
+   "pageWidth": 768,
+   "unitButtonsStripScrolls": false,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 9,
+   "cueFontPx": 25.6,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  },
+  "820": {
+   "sidewaysScroll": false,
+   "pageWidth": 820,
+   "unitButtonsStripScrolls": false,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 9,
+   "cueFontPx": 25.6,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  },
+  "1024": {
+   "sidewaysScroll": false,
+   "pageWidth": 1024,
+   "unitButtonsStripScrolls": false,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 9,
+   "cueFontPx": 30.72,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  },
+  "1280": {
+   "sidewaysScroll": false,
+   "pageWidth": 1280,
+   "unitButtonsStripScrolls": false,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 9,
+   "cueFontPx": 37.6,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  },
+  "1440": {
+   "sidewaysScroll": false,
+   "pageWidth": 1440,
+   "unitButtonsStripScrolls": false,
+   "unitButtonsInStrip": 9,
+   "unitButtonsFullyVisible": 9,
+   "cueFontPx": 37.6,
+   "cueLines": 1,
+   "elementsPastRightEdge": []
+  }
+ },
+ "J_zoom_200_percent": {
+  "320 wide at 200% zoom": {
+   "sidewaysScroll": true,
+   "pageWidth": 283,
+   "viewport": 160
+  },
+  "390 wide at 200% zoom": {
+   "sidewaysScroll": true,
+   "pageWidth": 283,
+   "viewport": 195
+  },
+  "768 wide at 200% zoom": {
+   "sidewaysScroll": false,
+   "pageWidth": 384,
+   "viewport": 384
+  },
+  "1280 wide at 200% zoom": {
+   "sidewaysScroll": false,
+   "pageWidth": 640,
+   "viewport": 640
+  }
+ },
+ "J_print": {
+  "draftNoticePrinted": true,
+  "draftLabelPrinted": true,
+  "cuePrinted": true,
+  "teachingPrinted": true,
+  "deeperPrinted": true,
+  "boundaryPrinted": true,
+  "comparisonsPrinted": false,
+  "sourcesPrinted": false,
+  "controlsPrinted": false
+ },
+ "J_reduced_motion": {
+  "reduce": "auto",
+  "noPreference": "smooth"
+ },
+ "consoleErrors": [
+  "Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+ ],
+ "hostsContactedOverall": [
+  "127.0.0.1:8084"
+ ]
+}

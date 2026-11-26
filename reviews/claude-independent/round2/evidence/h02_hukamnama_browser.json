@@ -1,0 +1,1011 @@
+{
+ "candidate": "PR #43 at fb49ef41bd890db879d7f93a861585915ef81622",
+ "base": "http://127.0.0.1:8083/gurbani-learning-library/",
+ "HD-01_02_rollover": [
+  {
+   "deviceZone": "America/Los_Angeles",
+   "instant": "2026-11-25T18:29:59Z",
+   "what": "one second before Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-25",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505"
+   }
+  },
+  {
+   "deviceZone": "America/Los_Angeles",
+   "instant": "2026-11-25T18:30:00Z",
+   "what": "Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "America/Los_Angeles",
+   "instant": "2026-11-25T23:30:00Z",
+   "what": "next Amritsar morning 05:00",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "UTC",
+   "instant": "2026-11-25T18:29:59Z",
+   "what": "one second before Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-25",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505"
+   }
+  },
+  {
+   "deviceZone": "UTC",
+   "instant": "2026-11-25T18:30:00Z",
+   "what": "Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "UTC",
+   "instant": "2026-11-25T23:30:00Z",
+   "what": "next Amritsar morning 05:00",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "Asia/Kolkata",
+   "instant": "2026-11-25T18:29:59Z",
+   "what": "one second before Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-25",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505"
+   }
+  },
+  {
+   "deviceZone": "Asia/Kolkata",
+   "instant": "2026-11-25T18:30:00Z",
+   "what": "Amritsar midnight",
+   "deviceLocalDate": "2026-11-26",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "Asia/Kolkata",
+   "instant": "2026-11-25T23:30:00Z",
+   "what": "next Amritsar morning 05:00",
+   "deviceLocalDate": "2026-11-26",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "Pacific/Kiritimati",
+   "instant": "2026-11-25T18:29:59Z",
+   "what": "one second before Amritsar midnight",
+   "deviceLocalDate": "2026-11-26",
+   "amritsarDateShown": "Amritsar date: 2026-11-25",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505"
+   }
+  },
+  {
+   "deviceZone": "Pacific/Kiritimati",
+   "instant": "2026-11-25T18:30:00Z",
+   "what": "Amritsar midnight",
+   "deviceLocalDate": "2026-11-26",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "Pacific/Kiritimati",
+   "instant": "2026-11-25T23:30:00Z",
+   "what": "next Amritsar morning 05:00",
+   "deviceLocalDate": "2026-11-26",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "Pacific/Pago_Pago",
+   "instant": "2026-11-25T18:29:59Z",
+   "what": "one second before Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-25",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505"
+   }
+  },
+  {
+   "deviceZone": "Pacific/Pago_Pago",
+   "instant": "2026-11-25T18:30:00Z",
+   "what": "Amritsar midnight",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  {
+   "deviceZone": "Pacific/Pago_Pago",
+   "instant": "2026-11-25T23:30:00Z",
+   "what": "next Amritsar morning 05:00",
+   "deviceLocalDate": "2026-11-25",
+   "amritsarDateShown": "Amritsar date: 2026-11-26",
+   "amritsarDateCorrect": true,
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "heading": "Dated development example",
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2026-11-26",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  }
+ ],
+ "HD-03_dates_through_the_page": {
+  "a day with no reading": {
+   "asked": "2026-11-24",
+   "dateBox": "2026-11-24",
+   "status": "This date is not in our verified development examples. No reading is substituted.",
+   "lines": 0,
+   "meta": null,
+   "sourceLinks": []
+  },
+  "tomorrow": {
+   "asked": "2026-11-26",
+   "dateBox": "2026-11-26",
+   "status": "This date has not yet arrived in Amritsar.",
+   "lines": 0,
+   "meta": null,
+   "sourceLinks": []
+  },
+  "far future": {
+   "asked": "2099-01-01",
+   "dateBox": "2099-01-01",
+   "status": "This date has not yet arrived in Amritsar.",
+   "lines": 0,
+   "meta": null,
+   "sourceLinks": []
+  },
+  "held 2017": {
+   "asked": "2017-11-25",
+   "dateBox": "2017-11-25",
+   "status": "Historical event held: a legacy encoding difference must be reviewed. No Scripture is rendered from this event.",
+   "lines": 0,
+   "meta": null,
+   "sourceLinks": [
+    "2017-11-25 -> https://sgpc.net/mukhwak-25-11-2017/"
+   ]
+  },
+  "the other real date": {
+   "asked": "2025-10-14",
+   "dateBox": "2025-10-14",
+   "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+   "lines": 19,
+   "meta": "2025-10-14 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+   "sourceLinks": [
+    "2025-10-14 -> https://sgpc.net/14-oct-2025/",
+    "Ang 504 -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0504.md",
+    "Ang 505 -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0505.md"
+   ]
+  },
+  "leap day": {
+   "asked": "2024-02-29",
+   "dateBox": "2024-02-29",
+   "status": "This date is not in our verified development examples. No reading is substituted.",
+   "lines": 0,
+   "meta": null,
+   "sourceLinks": []
+  },
+  "very old": {
+   "asked": "0001-01-01",
+   "dateBox": "0001-01-01",
+   "status": "This date is not in our verified development examples. No reading is substituted.",
+   "lines": 0,
+   "meta": null,
+   "sourceLinks": []
+  },
+  "30 February": {
+   "asked": "2026-02-30",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "month 13": {
+   "asked": "2026-13-01",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "29 Feb, not a leap year": {
+   "asked": "2026-02-29",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "letters": {
+   "asked": "abc",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "empty": {
+   "asked": "",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "day first": {
+   "asked": "25/11/2026",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "markup": {
+   "asked": "<img src=x onerror=1>",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "one-digit month": {
+   "asked": "2026-1-5",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  },
+  "with a time": {
+   "asked": "2026-11-25T00:00",
+   "dateBoxAfterBrowserFilter": "",
+   "status": "Choose a valid Gregorian date.",
+   "lines": 0
+  }
+ },
+ "HD-03_date_functions_directly": [
+  [
+   "\"2026-02-30\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"2026-13-01\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"2026-02-29\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"2024-02-29\"",
+   true,
+   "DATE_UNAVAILABLE"
+  ],
+  [
+   "\"abc\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"0001-01-01\"",
+   true,
+   "DATE_UNAVAILABLE"
+  ],
+  [
+   "\"0000-01-01\"",
+   true,
+   "DATE_UNAVAILABLE"
+  ],
+  [
+   "\"9999-12-31\"",
+   true,
+   "FUTURE_DATE"
+  ],
+  [
+   "\"2026-1-5\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"25/11/2026\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"<img>\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\" 2026-11-25\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"2026-11-25 \"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"2026-11-25T00:00\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"２０２６-11-25\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "\"2026-11-25\\n\"",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "null",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "undefined",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "20261125",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "[object Object]",
+   false,
+   "INVALID_DATE"
+  ],
+  [
+   "2026-11-25",
+   false,
+   "INVALID_DATE"
+  ]
+ ],
+ "HD-05_published_reading_refuses_drafts": [
+  [
+   "2026-11-25",
+   "REVIEW_PENDING"
+  ],
+  [
+   "2025-10-14",
+   "REVIEW_PENDING"
+  ],
+  [
+   "2017-11-25",
+   "SOURCE_CONFLICT_HOLD"
+  ],
+  [
+   "2026-11-24",
+   "DATE_UNAVAILABLE"
+  ]
+ ],
+ "HD-05_wrong_device_clock": {
+  "clock says 25 Nov 2017": {
+   "amritsarDateShown": "Amritsar date: 2017-11-25",
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 0,
+    "meta": null,
+    "status": "This date has not yet arrived in Amritsar."
+   },
+   "afterToday": {
+    "dateBox": "2017-11-25",
+    "lines": 0,
+    "status": "Historical event held: a legacy encoding difference must be reviewed. No Scripture is rendered from this event.",
+    "meta": null
+   }
+  },
+  "clock says 14 Oct 2025": {
+   "amritsarDateShown": "Amritsar date: 2025-10-14",
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 0,
+    "meta": null,
+    "status": "This date has not yet arrived in Amritsar."
+   },
+   "afterToday": {
+    "dateBox": "2025-10-14",
+    "lines": 19,
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+    "meta": "2025-10-14 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505"
+   }
+  },
+  "clock says 2031": {
+   "amritsarDateShown": "Amritsar date: 2031-03-01",
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 19,
+    "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+    "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+   },
+   "afterToday": {
+    "dateBox": "2031-03-01",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  },
+  "clock says 1999": {
+   "amritsarDateShown": "Amritsar date: 1999-01-01",
+   "onOpen": {
+    "dateBox": "2026-11-25",
+    "lines": 0,
+    "meta": null,
+    "status": "This date has not yet arrived in Amritsar."
+   },
+   "afterToday": {
+    "dateBox": "1999-01-01",
+    "lines": 0,
+    "status": "Today's official selection is not available in this development build. No earlier or random Shabad is substituted.",
+    "meta": null
+   }
+  }
+ },
+ "HS-08_on_screen_text": {
+  "2026-11-25": {
+   "rows": 19,
+   "identicalInOrder": true,
+   "idsInOrder": true,
+   "rahaoMarkedRows": [
+    "l03",
+    "l04"
+   ],
+   "angLabels": [
+    "Ang 504",
+    "Ang 505",
+    "Rahao · Ang 504",
+    "Rahao · Ang 505"
+   ],
+   "englishLabelLanguage": "(inherits pa)",
+   "meta": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+   "identity": "One source record for both matched dates: sggs.gujri.m1.ang504.shabad04"
+  },
+  "2025-10-14": {
+   "rows": 19,
+   "identicalInOrder": true,
+   "idsInOrder": true,
+   "rahaoMarkedRows": [
+    "l03",
+    "l04"
+   ],
+   "angLabels": [
+    "Ang 504",
+    "Ang 505",
+    "Rahao · Ang 504",
+    "Rahao · Ang 505"
+   ],
+   "englishLabelLanguage": "(inherits pa)",
+   "meta": "2025-10-14 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+   "identity": "One source record for both matched dates: sggs.gujri.m1.ang504.shabad04"
+  }
+ },
+ "HI-01_02_altered_data": {
+  "one word changed": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "a line removed": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "two lines swapped": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "both Rahao lines removed": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "last stanza removed": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "an Ang changed": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "a date changed": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "held entry marked as matched": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "an event pointed at another Shabad": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "a date duplicated": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "a line duplicated": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "a new date added for this Shabad": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "marked as approved for publication": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "a lesson marked approved": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "source link changed to another site": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "markup put in a line": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "file cut in half": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "file empty": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "not valid data": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "one space added at the end": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "Windows line endings": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "byte-order mark added": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "same data, re-saved by a tool (spacing changed)": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0,
+   "scriptRan": null
+  },
+  "file missing": {
+   "lines": 0,
+   "readingShown": false,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0
+  },
+  "one word changed AND the program file changed to expect it": {
+   "lines": 19,
+   "readingShown": true,
+   "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+   "alteredWordOnScreen": true
+  }
+ },
+ "HI-03_check_pending_or_impossible": {
+  "whilePending": {
+   "lines": 0,
+   "status": "Checking source fixture integrity…",
+   "buttonsEnabled": 0
+  },
+  "afterRelease": {
+   "lines": 19,
+   "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+  },
+  "noWebCrypto": {
+   "lines": 0,
+   "status": "The pinned source fixture could not be verified. No reading will be shown. Please reload while online.",
+   "buttonsEnabled": 0
+  }
+ },
+ "HL_saved_learning": {
+  "anythingToSaveOffered": false,
+  "otherReadersRecordsUnchanged": true,
+  "storageKeysWrittenByThisPage": [],
+  "textSizeRemembered": false
+ },
+ "HR_page_facts": {
+  "title": "Daily Hukamnama · Development preview",
+  "robots": "noindex,nofollow",
+  "audioOrVideoElements": 0,
+  "externalLinks": [
+   "2026-11-25 -> https://sgpc.net/25-nov-2026/",
+   "Ang 504 -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0504.md",
+   "Ang 505 -> https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0505.md",
+   "Official SGPC listening page -> https://sgpc.net/daily.mukhwak-pdf/"
+  ],
+  "serviceWorkerRegistered": false,
+  "lessonText": "Understanding the Shabad The Simple, Detailed and Deep Study lessons will share this exact Shabad edition. This fixture deliberately does not publish unapproved teaching. Simple · pending Detailed · pending Deep study · pending"
+ },
+ "HA-01_scan": {
+  "reading:light": [],
+  "pending:light": [],
+  "held:light": [],
+  "future:light": [],
+  "empty:light": [],
+  "refused:light": [],
+  "reading:dark": [],
+  "pending:dark": [],
+  "held:dark": [],
+  "future:dark": [],
+  "empty:dark": [],
+  "refused:dark": []
+ },
+ "HA-02_structure": {
+  "lang": "en",
+  "headings": [
+   "H1:ਰੋਜ਼ਾਨਾ ਹੁਕਮਨਾਮਾ [pa]",
+   "H2:Daily Hukamnama",
+   "H2:Choose a date",
+   "H2:Dated development example",
+   "H2:Understanding the Shabad",
+   "H2:About these examples"
+  ],
+  "liveRegions": [
+   "clock:/polite",
+   "status:status/polite"
+  ],
+  "controls": [
+   "a:#main = \"Skip to reading\"",
+   "a:../index.html = \"Gurbani Learning Library\"",
+   "input:date = \"Amritsar calendar date\"",
+   "button:open = \"Open date\"",
+   "button:today = \"Today in Amritsar\"",
+   "button:2025-10-14 = \"14 Oct 2025\"",
+   "button:2026-11-25 = \"25 Nov 2026\"",
+   "button:2017-11-25 = \"25 Nov 2017 · held\"",
+   "input:font-size = \"Gurmukhi size\"",
+   "a:https://sgpc.net/25-nov-20 = \"2026-11-25\"",
+   "a:https://github.com/opengra = \"Ang 504\"",
+   "a:https://github.com/opengra = \"Ang 505\"",
+   "a:https://sgpc.net/daily.muk = \"Official SGPC listening page\""
+  ],
+  "scriptureLang": "pa",
+  "targetSizesUnder44": [
+   "Skip to reading 114x27",
+   "Gurbani Learning Lib 188x27"
+  ]
+ },
+ "HA-02_keyboard_order": [
+  "Skip to reading",
+  "Gurbani Learning Libra",
+  "date",
+  "date",
+  "date",
+  "date [no visible focus]",
+  "open",
+  "today",
+  "2025-10-14",
+  "2026-11-25",
+  "2017-11-25",
+  "font-size",
+  "2026-11-25",
+  "Ang 504"
+ ],
+ "HA-02_enter_in_date_box_opens_date": false,
+ "HA-03_layout": {
+  "320": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": true,
+   "gurmukhiPx": "52px"
+  },
+  "390": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": true,
+   "gurmukhiPx": "52px"
+  },
+  "507": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": false,
+   "gurmukhiPx": "52px"
+  },
+  "768": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": false,
+   "gurmukhiPx": "52px"
+  },
+  "820": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": false,
+   "gurmukhiPx": "52px"
+  },
+  "1024": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": false,
+   "gurmukhiPx": "52px"
+  },
+  "1280": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": false,
+   "gurmukhiPx": "52px"
+  },
+  "1440": {
+   "sidewaysScroll": false,
+   "atLargestGurmukhi": false,
+   "withAllTextDoubled": false,
+   "gurmukhiPx": "52px"
+  }
+ },
+ "HA-03_print": {
+  "scriptureLines": 19,
+  "dateAndSourceLine": "2026-11-25 · Guru Nanak Dev Ji · Raag Gujri · Ang 504–505",
+  "statusLine": "Dated development example only · digital source match, not a released or scholar-approved daily reading.",
+  "titleShown": true,
+  "controlsHidden": true,
+  "sourceLinksHidden": true,
+  "aboutHidden": true,
+  "pdfBytes": 57824
+ },
+ "HA-03_motion": {
+  "animationsOrTransitionsInStyles": 0
+ },
+ "HR-01_every_address_contacted": [
+  "127.0.0.1:8083"
+ ]
+}

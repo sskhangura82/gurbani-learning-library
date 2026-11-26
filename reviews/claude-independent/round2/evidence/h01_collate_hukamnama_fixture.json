@@ -1,0 +1,314 @@
+{
+ "reference": "Shabad OS Database v5.0.0-next.0, asset SSA2",
+ "referenceGroupId": "8A5",
+ "referenceLinesInThisShabad": 19,
+ "fixtureOccurrences": 19,
+ "lineBeforeShabad": "ਨਾਨਕ ਨਾਮੁ ਪਦਾਰਥੁ ਦੀਜੈ ਹਿਰਦੈ ਕੰਠਿ ਬਣਾਈ ॥੮॥੩॥",
+ "lineAfterShabad": "ਗੂਜਰੀ ਮਹਲਾ ੧ ਘਰੁ ੪ ॥",
+ "author": [
+  [
+   "NANK",
+   "{\"Guru\":\"ਗੁਰੂ ਨਾਨਕ\",\"Latn\":\"Guru Nanak\"}",
+   "[{\"Latn\":\"Baba Nanak\"}]"
+  ]
+ ],
+ "section": [
+  "1VME",
+  "{\"Latn\":\"Raag Gujri\"}",
+  "{\"en\":\"If there is a perfect simile for Raag Gujari, it would be that of a person isolated in the desert, who has their hands cupped, holding water. However, it is only when the water begins to slowly seep through their joined hands that the person comes to realise the real value and importance of the water. Similarly Raag Gujari leads the listener to realise and become aware of passing time and in this way comes to value the precious nature of time itself. The revelation brings the listener to an awareness and admission of their own death and mortality, making them utilise their remaining ‘life time' more wisely.\"}"
+ ],
+ "exact": 19,
+ "pairs": [
+  {
+   "n": 0,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l00",
+   "kind": "heading",
+   "same": true,
+   "fixture": "ਗੂਜਰੀ ਮਹਲਾ ੧ ॥",
+   "reference": "ਗੂਜਰੀ ਮਹਲਾ ੧ ॥",
+   "fixtureAng": 504,
+   "fixturePrintedLine": 18,
+   "refAng": 504,
+   "refPrintedLine": 18
+  },
+  {
+   "n": 1,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l01",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਐ ਜੀ ਨਾ ਹਮ ਉਤਮ ਨੀਚ ਨ ਮਧਿਮ ਹਰਿ ਸਰਣਾਗਤਿ ਹਰਿ ਕੇ ਲੋਗ ॥",
+   "reference": "ਐ ਜੀ ਨਾ ਹਮ ਉਤਮ ਨੀਚ ਨ ਮਧਿਮ ਹਰਿ ਸਰਣਾਗਤਿ ਹਰਿ ਕੇ ਲੋਗ ॥",
+   "fixtureAng": 504,
+   "fixturePrintedLine": 18,
+   "refAng": 504,
+   "refPrintedLine": 18
+  },
+  {
+   "n": 2,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l02",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਨਾਮ ਰਤੇ ਕੇਵਲ ਬੈਰਾਗੀ ਸੋਗ ਬਿਜੋਗ ਬਿਸਰਜਿਤ ਰੋਗ ॥੧॥",
+   "reference": "ਨਾਮ ਰਤੇ ਕੇਵਲ ਬੈਰਾਗੀ ਸੋਗ ਬਿਜੋਗ ਬਿਸਰਜਿਤ ਰੋਗ ॥੧॥",
+   "fixtureAng": 504,
+   "fixturePrintedLine": 19,
+   "refAng": 504,
+   "refPrintedLine": 19
+  },
+  {
+   "n": 3,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l03",
+   "kind": "rahao",
+   "same": true,
+   "fixture": "ਭਾਈ ਰੇ ਗੁਰ ਕਿਰਪਾ ਤੇ ਭਗਤਿ ਠਾਕੁਰ ਕੀ ॥",
+   "reference": "ਭਾਈ ਰੇ ਗੁਰ ਕਿਰਪਾ ਤੇ ਭਗਤਿ ਠਾਕੁਰ ਕੀ ॥",
+   "fixtureAng": 504,
+   "fixturePrintedLine": 19,
+   "refAng": 504,
+   "refPrintedLine": 19
+  },
+  {
+   "n": 4,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l04",
+   "kind": "rahao",
+   "same": true,
+   "fixture": "ਸਤਿਗੁਰ ਵਾਕਿ ਹਿਰਦੈ ਹਰਿ ਨਿਰਮਲੁ ਨਾ ਜਮ ਕਾਣਿ ਨ ਜਮ ਕੀ ਬਾਕੀ ॥੧॥ ਰਹਾਉ ॥",
+   "reference": "ਸਤਿਗੁਰ ਵਾਕਿ ਹਿਰਦੈ ਹਰਿ ਨਿਰਮਲੁ ਨਾ ਜਮ ਕਾਣਿ ਨ ਜਮ ਕੀ ਬਾਕੀ ॥੧॥ ਰਹਾਉ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 1,
+   "refAng": 505,
+   "refPrintedLine": 1
+  },
+  {
+   "n": 5,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l05",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਹਰਿ ਗੁਣ ਰਸਨ ਰਵਹਿ ਪ੍ਰਭ ਸੰਗੇ ਜੋ ਤਿਸੁ ਭਾਵੈ ਸਹਜਿ ਹਰੀ ॥",
+   "reference": "ਹਰਿ ਗੁਣ ਰਸਨ ਰਵਹਿ ਪ੍ਰਭ ਸੰਗੇ ਜੋ ਤਿਸੁ ਭਾਵੈ ਸਹਜਿ ਹਰੀ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 2,
+   "refAng": 505,
+   "refPrintedLine": 2
+  },
+  {
+   "n": 6,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l06",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਬਿਨੁ ਹਰਿ ਨਾਮ ਬ੍ਰਿਥਾ ਜਗਿ ਜੀਵਨੁ ਹਰਿ ਬਿਨੁ ਨਿਹਫਲ ਮੇਕ ਘਰੀ ॥੨॥",
+   "reference": "ਬਿਨੁ ਹਰਿ ਨਾਮ ਬ੍ਰਿਥਾ ਜਗਿ ਜੀਵਨੁ ਹਰਿ ਬਿਨੁ ਨਿਹਫਲ ਮੇਕ ਘਰੀ ॥੨॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 2,
+   "refAng": 505,
+   "refPrintedLine": 2
+  },
+  {
+   "n": 7,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l07",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਐ ਜੀ ਖੋਟੇ ਠਉਰ ਨਾਹੀ ਘਰਿ ਬਾਹਰਿ ਨਿੰਦਕ ਗਤਿ ਨਹੀ ਕਾਈ ॥",
+   "reference": "ਐ ਜੀ ਖੋਟੇ ਠਉਰ ਨਾਹੀ ਘਰਿ ਬਾਹਰਿ ਨਿੰਦਕ ਗਤਿ ਨਹੀ ਕਾਈ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 3,
+   "refAng": 505,
+   "refPrintedLine": 3
+  },
+  {
+   "n": 8,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l08",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਰੋਸੁ ਕਰੈ ਪ੍ਰਭੁ ਬਖਸ ਨ ਮੇਟੈ ਨਿਤ ਨਿਤ ਚੜੈ ਸਵਾਈ ॥੩॥",
+   "reference": "ਰੋਸੁ ਕਰੈ ਪ੍ਰਭੁ ਬਖਸ ਨ ਮੇਟੈ ਨਿਤ ਨਿਤ ਚੜੈ ਸਵਾਈ ॥੩॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 4,
+   "refAng": 505,
+   "refPrintedLine": 4
+  },
+  {
+   "n": 9,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l09",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਐ ਜੀ ਗੁਰ ਕੀ ਦਾਤਿ ਨ ਮੇਟੈ ਕੋਈ ਮੇਰੈ ਠਾਕੁਰਿ ਆਪਿ ਦਿਵਾਈ ॥",
+   "reference": "ਐ ਜੀ ਗੁਰ ਕੀ ਦਾਤਿ ਨ ਮੇਟੈ ਕੋਈ ਮੇਰੈ ਠਾਕੁਰਿ ਆਪਿ ਦਿਵਾਈ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 4,
+   "refAng": 505,
+   "refPrintedLine": 4
+  },
+  {
+   "n": 10,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l10",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਨਿੰਦਕ ਨਰ ਕਾਲੇ ਮੁਖ ਨਿੰਦਾ ਜਿਨੑ ਗੁਰ ਕੀ ਦਾਤਿ ਨ ਭਾਈ ॥੪॥",
+   "reference": "ਨਿੰਦਕ ਨਰ ਕਾਲੇ ਮੁਖ ਨਿੰਦਾ ਜਿਨੑ ਗੁਰ ਕੀ ਦਾਤਿ ਨ ਭਾਈ ॥੪॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 5,
+   "refAng": 505,
+   "refPrintedLine": 5
+  },
+  {
+   "n": 11,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l11",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਐ ਜੀ ਸਰਣਿ ਪਰੇ ਪ੍ਰਭੁ ਬਖਸਿ ਮਿਲਾਵੈ ਬਿਲਮ ਨ ਅਧੂਆ ਰਾਈ ॥",
+   "reference": "ਐ ਜੀ ਸਰਣਿ ਪਰੇ ਪ੍ਰਭੁ ਬਖਸਿ ਮਿਲਾਵੈ ਬਿਲਮ ਨ ਅਧੂਆ ਰਾਈ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 5,
+   "refAng": 505,
+   "refPrintedLine": 5
+  },
+  {
+   "n": 12,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l12",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਆਨਦ ਮੂਲੁ ਨਾਥੁ ਸਿਰਿ ਨਾਥਾ ਸਤਿਗੁਰੁ ਮੇਲਿ ਮਿਲਾਈ ॥੫॥",
+   "reference": "ਆਨਦ ਮੂਲੁ ਨਾਥੁ ਸਿਰਿ ਨਾਥਾ ਸਤਿਗੁਰੁ ਮੇਲਿ ਮਿਲਾਈ ॥੫॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 6,
+   "refAng": 505,
+   "refPrintedLine": 6
+  },
+  {
+   "n": 13,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l13",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਐ ਜੀ ਸਦਾ ਦਇਆਲੁ ਦਇਆ ਕਰਿ ਰਵਿਆ ਗੁਰਮਤਿ ਭ੍ਰਮਨਿ ਚੁਕਾਈ ॥",
+   "reference": "ਐ ਜੀ ਸਦਾ ਦਇਆਲੁ ਦਇਆ ਕਰਿ ਰਵਿਆ ਗੁਰਮਤਿ ਭ੍ਰਮਨਿ ਚੁਕਾਈ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 7,
+   "refAng": 505,
+   "refPrintedLine": 7
+  },
+  {
+   "n": 14,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l14",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਪਾਰਸੁ ਭੇਟਿ ਕੰਚਨੁ ਧਾਤੁ ਹੋਈ ਸਤਸੰਗਤਿ ਕੀ ਵਡਿਆਈ ॥੬॥",
+   "reference": "ਪਾਰਸੁ ਭੇਟਿ ਕੰਚਨੁ ਧਾਤੁ ਹੋਈ ਸਤਸੰਗਤਿ ਕੀ ਵਡਿਆਈ ॥੬॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 7,
+   "refAng": 505,
+   "refPrintedLine": 7
+  },
+  {
+   "n": 15,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l15",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਹਰਿ ਜਲੁ ਨਿਰਮਲੁ ਮਨੁ ਇਸਨਾਨੀ ਮਜਨੁ ਸਤਿਗੁਰੁ ਭਾਈ ॥",
+   "reference": "ਹਰਿ ਜਲੁ ਨਿਰਮਲੁ ਮਨੁ ਇਸਨਾਨੀ ਮਜਨੁ ਸਤਿਗੁਰੁ ਭਾਈ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 8,
+   "refAng": 505,
+   "refPrintedLine": 8
+  },
+  {
+   "n": 16,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l16",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਪੁਨਰਪਿ ਜਨਮੁ ਨਾਹੀ ਜਨ ਸੰਗਤਿ ਜੋਤੀ ਜੋਤਿ ਮਿਲਾਈ ॥੭॥",
+   "reference": "ਪੁਨਰਪਿ ਜਨਮੁ ਨਾਹੀ ਜਨ ਸੰਗਤਿ ਜੋਤੀ ਜੋਤਿ ਮਿਲਾਈ ॥੭॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 8,
+   "refAng": 505,
+   "refPrintedLine": 8
+  },
+  {
+   "n": 17,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l17",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਤੂੰ ਵਡ ਪੁਰਖੁ ਅਗੰਮ ਤਰੋਵਰੁ ਹਮ ਪੰਖੀ ਤੁਝ ਮਾਹੀ ॥",
+   "reference": "ਤੂੰ ਵਡ ਪੁਰਖੁ ਅਗੰਮ ਤਰੋਵਰੁ ਹਮ ਪੰਖੀ ਤੁਝ ਮਾਹੀ ॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 9,
+   "refAng": 505,
+   "refPrintedLine": 9
+  },
+  {
+   "n": 18,
+   "fixtureId": "sggs.gujri.m1.ang504.shabad04.l18",
+   "kind": "verse",
+   "same": true,
+   "fixture": "ਨਾਨਕ ਨਾਮੁ ਨਿਰੰਜਨ ਦੀਜੈ ਜੁਗਿ ਜੁਗਿ ਸਬਦਿ ਸਲਾਹੀ ॥੮॥੪॥",
+   "reference": "ਨਾਨਕ ਨਾਮੁ ਨਿਰੰਜਨ ਦੀਜੈ ਜੁਗਿ ਜੁਗਿ ਸਬਦਿ ਸਲਾਹੀ ॥੮॥੪॥",
+   "fixtureAng": 505,
+   "fixturePrintedLine": 10,
+   "refAng": 505,
+   "refPrintedLine": 10
+  }
+ ],
+ "hygiene": {
+  "nfcStable": true,
+  "nfdRoundTrip": true,
+  "nonGurmukhiChars": [],
+  "usesUdaat": 1,
+  "doubledHalfHa": 0,
+  "leadingOrTrailingSpace": [],
+  "doubleSpaces": []
+ },
+ "ids": {
+  "unique": true,
+  "ordinalsInOrderWithinAng": true
+ },
+ "rahao": {
+  "fixtureRahaoKinds": [
+   "l03",
+   "l04"
+  ],
+  "linesContainingRahaoWord": [
+   "l04"
+  ]
+ },
+ "stanzaNumbersInText": [
+  [],
+  [],
+  [
+   "੧"
+  ],
+  [],
+  [
+   "੧"
+  ],
+  [],
+  [
+   "੨"
+  ],
+  [],
+  [
+   "੩"
+  ],
+  [],
+  [
+   "੪"
+  ],
+  [],
+  [
+   "੫"
+  ],
+  [],
+  [
+   "੬"
+  ],
+  [],
+  [
+   "੭"
+  ],
+  [],
+  [
+   "੮"
+  ]
+ ],
+ "angAgree": 19,
+ "printedLineAgree": 19
+}

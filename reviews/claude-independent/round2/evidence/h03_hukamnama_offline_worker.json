@@ -1,0 +1,18 @@
+{
+ "candidate": "PR #43 at fb49ef41bd890db879d7f93a861585915ef81622",
+ "workerControlsHome": true,
+ "cachedPathsMentioningHukamnama": [],
+ "cacheEntryCount": 56,
+ "homeLinksToHukamnama": 0,
+ "online_withWorker": {
+  "controlled": true,
+  "lines": 19,
+  "status": "Dated development example only · digital source match, not a released or scholar-approved daily reading."
+ },
+ "cachedAfterVisit": [],
+ "offline_reload": {
+  "loaded": false,
+  "error": "Page.reload: net::ERR_FAILED"
+ },
+ "reading": "The offline worker does not hold any Hukamnama file. With the worker in control the page still loads from the network and checks its data; with no connection the page does not open at all (browser error page). No stale or cached reading can be shown. The page is not linked from the home page."
+}
