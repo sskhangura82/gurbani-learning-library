@@ -40,6 +40,79 @@
  const nodes=new Map(),units=new Map(),unitLines=new Map(),meanings=teaching.meanings||{},lessons=teaching.ashtpadis||{},dialog=$('sk-dialog'),body=$('sk-dialog-body');
  try{storage=window.localStorage;originalRaw=storage.getItem(L.KEY);state=L.read(m,storage);shared=window.GLP_SHARED_LEARNING.create({storage,locks:navigator.locks,key:L.KEY,normalise:s=>L.normalise(m,s),seed:L.seed(m)});writable=shared.supported;if(!writable)loadError='Safe saving is unavailable in this browser. You can read and download Sukhmani learning for this session.';}catch(e){loadError=e.message;}
  const initialRead=state.read;
+ // A URL fragment is a visit, not consent to replace persistent learning.
+ // The skip link is ordinary in-page accessibility navigation.
+ let linkedVisit=Boolean(location.hash&&location.hash!=='#sukhmani-text'),visitProblem='';
+ let savedPosition={read:state.read,guide:state.guide,hasGuided:state.hasGuided};
+ const visitNotice=el('section',null,'resume-notice sk-link-visit'),visitMessage=el('p');
+ visitNotice.id='sk-link-visit';visitNotice.hidden=true;
+ visitNotice.setAttribute('aria-label','Linked passage visit');
+ visitMessage.id='sk-link-visit-message';visitMessage.setAttribute('role','status');
+ const visitActions=el('div',null,'sk-visit-actions');
+ const returnButton=button('Return to saved place',()=>finishVisit(false),{id:'sk-visit-return'});
+ const keepButton=button('Use this as my reading place',()=>finishVisit(true),{id:'sk-visit-keep'});
+ visitActions.append(returnButton,keepButton);visitNotice.append(visitMessage,visitActions);
+ $('sukhmani-text').before(visitNotice);
+ function updateSavedPosition(s){savedPosition={read:s.read,guide:s.guide,hasGuided:s.hasGuided};}
+ function readLatestPosition(){
+  // If the original record cannot be read, keep the last known position
+  // in memory. Do not try to fix or overwrite the original record here.
+  try{if(storage)updateSavedPosition(L.read(m,storage));return true;}catch(_){return false;}
+ }
+ function updateVisitNotice(){
+  visitNotice.hidden=!linkedVisit;document.body.classList.toggle('sk-visiting',linkedVisit);
+  if(!linkedVisit)return;
+  const message=(visitProblem||'Visiting a linked passage.')+' Saved place: '+sourceNotes(m.byId.get(savedPosition.read))+'. It will stay unchanged unless you choose to use this as your reading place.';
+  if(visitMessage.textContent!==message)visitMessage.textContent=message;
+  keepButton.disabled=!writable||Boolean(visitProblem);
+  document.documentElement.style.setProperty('--sk-visit-height',visitNotice.getBoundingClientRect().height+'px');
+ }
+ function visitAnchorTop(){return linkedVisit&&!visitNotice.hidden?visitNotice.getBoundingClientRect().height:0;}
+ function alignLine(id,focus=false){
+  const row=nodes.get(id);if(!row)return;
+  clearTimeout(scrollTimer);internalScroll=true;
+  row.scrollIntoView({block:'start',behavior:'instant'});
+  if(focus)row.querySelector('.tuk').focus({preventScroll:true});
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{internalScroll=false;}));
+ }
+ function linkedTarget(hash){
+  if(!hash||hash==='#sukhmani-text')return null;
+  let name;try{name=decodeURIComponent(hash.slice(1));}catch(_){return null;}
+  if(m.byId.has(name))return name;
+  const section=/^ashtpadi-([1-9][0-9]?)$/.exec(name);
+  if(section)return pack.ashtpadis.find(a=>a.number===Number(section[1]))?.lines[0]?.id||null;
+  if(name.startsWith('unit-'))return unitLines.get(name.slice(5))?.[0]?.id||null;
+  return null;
+ }
+ function showLinkedPassage(){
+  if(!location.hash||location.hash==='#sukhmani-text'){
+   if(linkedVisit)finishVisit(false,false);
+   return;
+  }
+  pause();clearTimeout(scrollTimer);linkedVisit=true;readLatestPosition();
+  const id=linkedTarget(location.hash);
+  visitProblem=id?'':'This passage link was not found in this reading pack.';
+  $('resume-notice').hidden=true;updateVisitNotice();
+  if(id){current(id);state.guide=id;alignLine(id,true);}
+  else{current(savedPosition.read);state.guide=savedPosition.guide;alignLine(savedPosition.read,false);}
+ }
+ async function finishVisit(adopt,clearHash=true){
+  if(!linkedVisit||adopt&&(!writable||visitProblem))return;
+  pause();clearTimeout(scrollTimer);
+  if(adopt){
+   // Commit the explicitly chosen visible place, under the existing write lock.
+   const point=capture();if(point)current(point.id);state.guide=state.read;
+   // Do not leave visit mode if the save fails.
+   if(!await save({},false))return;
+  }else{
+   readLatestPosition();Object.assign(state,savedPosition);current(savedPosition.read);
+  }
+  linkedVisit=false;visitProblem='';
+  if(clearHash&&location.hash&&location.hash!=='#sukhmani-text')history.replaceState(history.state,'',location.pathname+location.search);
+  updateVisitNotice();document.documentElement.style.removeProperty('--sk-visit-height');
+  alignLine(state.read,true);announce(adopt?'Reading place saved.':'Returned to your saved reading place.');
+ }
+
  function warn(text){$('storage-warning').hidden=false;$('storage-warning').textContent=text;}
  if(loadError)warn(loadError);
  function locationLabel(line){return 'Ashtpadi '+line.ashtpadi+' · '+(line.unitId?.endsWith('.salok')||line.kind==='salok'?'Salok':line.pauri?'Pauri '+line.pauri:line.kind==='rahau'?'Rahau':'Opening');}
@@ -124,12 +197,18 @@
  function appearance(){document.documentElement.dataset.theme=state.theme;document.documentElement.style.setProperty('--gurmukhi-size',state.size+'px');document.body.dataset.depth=state.mode;document.body.dataset.pronunciation=String(state.pronunciation);$('teaching-note').hidden=state.mode==='read';document.querySelector('meta[name="theme-color"]').content=state.theme==='amrit'?'#111929':'#faf6ec';for(const b of document.querySelectorAll('.modes button'))b.setAttribute('aria-pressed',String(b.dataset.depth===state.mode));}
  function syncMarks(){for(const [id,row]of nodes){const saved=state.bookmarks.includes(id);row.dataset.bookmarked=String(saved);row.querySelector('.line-saved').textContent=saved?'Saved':'';}}
  function current(id){if(!m.byId.has(id))return;if(lastActive)nodes.get(lastActive)?.removeAttribute('data-current');lastActive=id;nodes.get(id)?.setAttribute('data-current','true');state.read=id;const line=m.byId.get(id);$('sk-position').replaceChildren(document.createTextNode('Ashtpadi '+line.ashtpadi),el('small',line.pauri?'Pauri '+line.pauri:line.kind==='rahau'?'Rahau':'Salok · opening'));for(const a of $('ashtpadi-nav').children)a.setAttribute('aria-current',String(a.textContent===String(line.ashtpadi)));}
- function save(edits={}){
+ function save(edits={},preservePosition=linkedVisit){
   if(!writable)return Promise.resolve(false);
+  // No storage write at all for passive viewing, scrolling, guide ticks or
+  // visibility changes during a visit. Intentional learning edits still merge.
+  if(preservePosition&&!Object.values(edits).some(v=>v&&Object.keys(v).length))return pending;
   const snapshot={...state};
-  pending=pending.then(async()=>{try{const s=await shared.save(snapshot,edits);state.notes=s.notes;state.bookmarks=s.bookmarks;syncMarks();return true;}catch(e){writable=false;warn(e.message+' Download Sukhmani learning to keep your current session.');return false;}});return pending;
+  pending=pending.then(async()=>{try{
+   const s=await shared.save(snapshot,edits,{preservePosition});
+   updateSavedPosition(s);state.notes=s.notes;state.bookmarks=s.bookmarks;syncMarks();updateVisitNotice();return true;
+  }catch(e){writable=false;updateVisitNotice();warn(e.message+' Download Sukhmani learning to keep your current session.');return false;}});return pending;
  }
- function capture(){let best=nodes.get(state.read);let distance=Infinity;for(const row of nodes.values()){const r=row.getBoundingClientRect();if(r.bottom<12)continue;const d=Math.abs(r.top-28);if(d<distance){best=row;distance=d;}if(r.top>window.innerHeight)break;}return best?{id:best.id,top:best.getBoundingClientRect().top}:null;}
+ function capture(){let best=nodes.get(state.read);let distance=Infinity;for(const row of nodes.values()){const r=row.getBoundingClientRect();if(r.bottom<12+visitAnchorTop())continue;const d=Math.abs(r.top-28-visitAnchorTop());if(d<distance){best=row;distance=d;}if(r.top>window.innerHeight)break;}return best?{id:best.id,top:best.getBoundingClientRect().top}:null;}
  function maintainAnchor(fn){const anchor=capture();fn();if(anchor&&nodes.has(anchor.id)){internalScroll=true;window.scrollBy({top:nodes.get(anchor.id).getBoundingClientRect().top-anchor.top,behavior:'instant'});requestAnimationFrame(()=>{internalScroll=false;});}}
  function setMode(mode){if(!['read','understand','study'].includes(mode))return;if(mode==='study')pause();maintainAnchor(()=>{state.mode=mode;appearance();});save({preferences:{mode}});announce(mode==='read'?'Gurmukhi reading.':mode==='understand'?'English and Punjabi explanation drafts.':'Study drafts are now shown after each passage.');}
  function jump(id,focus=false){if(!nodes.has(id))return;pause();current(id);state.guide=id;internalScroll=true;nodes.get(id).scrollIntoView({block:'start',behavior:'auto'});if(focus)nodes.get(id).querySelector('.tuk').focus({preventScroll:true});requestAnimationFrame(()=>{internalScroll=false;});save();$('resume-notice').hidden=true;}
@@ -162,7 +241,13 @@
  async function openJump(){await openDialog('Choose a passage','ASHTPADIS '+ashtpadiRange);for(const a of pack.ashtpadis){body.append(el('h3','Ashtpadi '+a.number,'sk-section-title'));const grid=el('div',null,'sk-options');for(const [unit,lines]of unitLines){if(lines[0].ashtpadi!==a.number||unit.endsWith('.intro'))continue;const first=lines[0];const b=button(first.pauri?'Pauri '+first.pauri:unit.endsWith('.rahau')?'Rahau':'Salok',async()=>{await closeDialog();jump(first.id,true);});b.append(el('small','Ang '+first.ang));grid.append(b);}body.append(grid);}}
  function row(label,control){const r=el('div',null,'sk-control-row'),l=el('label',label);l.htmlFor=control.id;r.append(l,control);return r;}
  function download(filename,text){const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);}
- async function exportLearning(){await releaseEditor();await pending;download('sukhmani-learning.json',L.exportState(m,state));announce('Sukhmani learning exported. Japji learning has its own export.');}
+ async function exportLearning(){await releaseEditor();await pending;
+  if(linkedVisit){
+   if(!readLatestPosition()){warn('The saved reading record needs recovery. Download the original saved record instead.');return;}
+   download('sukhmani-learning.json',L.exportState(m,{...state,...savedPosition}));
+  }else download('sukhmani-learning.json',L.exportState(m,state));
+  announce('Sukhmani learning exported. Japji learning has its own export.');
+ }
  function rawBackup(){let raw=originalRaw;try{raw=storage?.getItem(L.KEY)??raw;}catch{}if(raw===null){announce('There is no saved Sukhmani record in this browser.');return;}download('sukhmani-original-record.json',JSON.stringify({projectId:'GLP-001',format:'glp-sukhmani-raw-recovery',version:1,key:L.KEY,createdAt:new Date().toISOString(),raw},null,2));announce('Original saved record downloaded without changes.');}
  async function openSaved(){await openDialog('Saved learning','SUKHMANI ONLY');const ids=[...new Set([...state.bookmarks,...Object.keys(state.notes).filter(id=>state.notes[id])])];if(!ids.length)body.append(plainNote('No bookmarks or reflections yet. Tap a Gurbani line to save it.'));else{const list=el('div',null,'sk-saved-list');for(const id of ids){const line=m.byId.get(id);if(!line)continue;const b=button(sourceNotes(line),()=>openLine(line));const p=el('p',line.gurmukhi,'excerpt');p.lang='pa';b.append(p);if(state.notes[id])b.append(el('small','Reflection saved'));list.append(b);}body.append(list);}}
  async function openTools(){
@@ -191,15 +276,19 @@
   body.append(el('h3','Your privacy','sk-section-title'),plainNote('Bookmarks, reading place and reflections stay in this browser. No account or analytics is used. Sukhmani exports contain only Sukhmani learning; the existing Japji record is not changed.'),el('h3','Silent visual guide','sk-section-title'),plainNote('The guide advances at an illustrative pace. It has no audio and is not synchronized to any recitation. It pauses when this page is hidden or you begin scrolling manually.'));
  }
  render();appearance();current(state.read);syncMarks();
- if(initialRead!==m.lines[0].id){$('resume-notice').hidden=false;$('resume-label').textContent='Saved place: '+sourceNotes(m.byId.get(initialRead));}
+ if(!linkedVisit&&initialRead!==m.lines[0].id){$('resume-notice').hidden=false;$('resume-label').textContent='Saved place: '+sourceNotes(m.byId.get(initialRead));}
  $('resume-reading').addEventListener('click',()=>jump(initialRead,true));$('dismiss-resume').addEventListener('click',()=>{$('resume-notice').hidden=true;});
  $('sk-play').addEventListener('click',toggleGuide);$('sk-position').addEventListener('click',openJump);$('sk-tools').addEventListener('click',openTools);$('sources-open').addEventListener('click',openSources);$('sources-footer').addEventListener('click',openSources);$('back-start').addEventListener('click',()=>jump(m.lines[0].id,true));$('sk-dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('cancel',e=>{e.preventDefault();closeDialog();});
  for(const b of document.querySelectorAll('.modes button'))b.addEventListener('click',()=>setMode(b.dataset.depth));
- window.addEventListener('scroll',()=>{if(internalScroll||dialog.open)return;clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{const a=capture();if(a){current(a.id);save();}},200);},{passive:true});
+ window.addEventListener('scroll',()=>{if(internalScroll||dialog.open)return;clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(internalScroll||dialog.open)return;const a=capture();if(a){current(a.id);save();}},200);},{passive:true});
  window.addEventListener('wheel',()=>{if(playing)pause();},{passive:true});window.addEventListener('touchstart',e=>{if(playing&&!e.target.closest('.reading-dock'))pause();},{passive:true});
  document.addEventListener('keydown',e=>{if(playing&&['PageDown','PageUp','Home','End','ArrowDown','ArrowUp',' '].includes(e.key)&&!e.target.closest('button,a,input,textarea,select,dialog,[role="button"]'))pause();});
  document.addEventListener('visibilitychange',()=>{if(document.hidden){pause();save();}});
- window.addEventListener('storage',e=>{if(e.key!==L.KEY||!writable)return;try{const latest=L.read(m,storage);state.notes=latest.notes;state.bookmarks=latest.bookmarks;syncMarks();}catch(e){writable=false;warn(e.message);}});
+ window.addEventListener('storage',e=>{if(e.key!==L.KEY||!writable)return;try{const latest=L.read(m,storage);updateSavedPosition(latest);state.notes=latest.notes;state.bookmarks=latest.bookmarks;syncMarks();updateVisitNotice();}catch(e){writable=false;updateVisitNotice();warn(e.message);}});
  window.addEventListener('pagehide',()=>{pause();});
  window.GLP_BEFORE_UPDATE=async()=>{await releaseEditor();return await save();};
+ window.addEventListener('hashchange',showLinkedPassage);
+ window.addEventListener('resize',updateVisitNotice);
+ if(typeof ResizeObserver==='function')new ResizeObserver(()=>{if(linkedVisit)updateVisitNotice();}).observe(visitNotice);
+ if(linkedVisit)showLinkedPassage();
 })();

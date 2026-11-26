@@ -1,0 +1,29 @@
+{
+  "schema": "glp.runtime-amendments-passage-visit.v1",
+  "changeBaseline": "1470477b5a27a8f975f1efce74443a0e136aa94e",
+  "priorLedgerSHA256": "160e3a6e1d64e6b94558c30ccebae2fe1f82bb52c14a4791c6722cbfb5429829",
+  "purpose": "Bounded passage-visit position protection; source and teaching unchanged. Builder result only.",
+  "amendments": {
+    "js/sukhmani-reader.js": {
+      "before": "ae5c29fb572df5af868d166e81239bd18030ae8c6e1da75a8b157704caaaf2cd",
+      "after": "df5b84106f9a4437775b21beaa1480708ce968f091814852cd47f29dfae6a82e",
+      "findings": [
+        "R2-X-04"
+      ]
+    },
+    "css/sukhmani.css": {
+      "before": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f",
+      "after": "27ce74d8f1eca69c3a7ca8473937e306acad4cae85e72f25a220fc18e69b9efd",
+      "findings": [
+        "R2-X-04"
+      ]
+    },
+    "js/shared-learning.js": {
+      "before": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "after": "20bf52ba9718c7e37bb1711866f1f3e801e4b37c482267b2e9f0d3914cd3aea7",
+      "findings": [
+        "R2-X-04"
+      ]
+    }
+  }
+}

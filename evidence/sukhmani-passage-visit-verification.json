@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-26T14:50:24.131Z",
+  "scope": "R2-X-04 temporary passage visit; desktop Chromium only; synthetic records only",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Opening Ashtpadi 17 reaches the actual verified text and leaves the complete saved record unchanged",
+      "status": "passed",
+      "target": "sukhmani.a17.salok.l01",
+      "noticeGeometry": {
+        "top": 0,
+        "bottom": 161.96875,
+        "h": 161.96875,
+        "viewport": 844,
+        "hit": true
+      }
+    },
+    {
+      "name": "Visit remains nonpersistent after scroll, guide, visibility change and reload",
+      "status": "passed"
+    },
+    {
+      "name": "Return to saved place preserves its existing guide and notes",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit adoption saves only the deliberately chosen passage",
+      "status": "passed"
+    },
+    {
+      "name": "Intentional edits during a visit do not overwrite a newer reading position from another tab",
+      "status": "passed"
+    },
+    {
+      "name": "Exact line and unit links work across same-document hash changes and Back",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid encoded or out-of-range fragments show an honest notice and preserve saved data",
+      "status": "passed"
+    },
+    {
+      "name": "A first-time visitor does not create a durable record until choosing a reading place",
+      "status": "passed"
+    },
+    {
+      "name": "A cached reader opens an offline linked passage without rewriting its saved place",
+      "status": "passed",
+      "cachedAssets": 57,
+      "desktopNetworkDisabled": true
+    }
+  ],
+  "runtimeErrors": []
+}

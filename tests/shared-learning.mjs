@@ -18,4 +18,16 @@ await test('Future and damaged records are never overwritten by background persi
 await test('Quota error preserves stored data and rejects save',async()=>{const before=storage.getItem(key),broken=create({storage:{...storage,setItem(){throw Error('quota');}}});await assert.rejects(()=>broken.save(seed,{notes:{[first]:'unsaved'}}),/quota/);assert.equal(storage.getItem(key),before);});
 await test('No Web Locks means no unsafe writes or editor permission',async()=>{const old=create({locks:null}),before=storage.getItem(key);await assert.rejects(()=>old.save(seed),/Safe saving/);assert.equal((await old.lease()).available,false);assert.equal(storage.getItem(key),before);});
 await test('Existing three-record export/import format still includes merged saved learning',async()=>{await a.save(seed,{notes:{[first]:'portable'}});const parsed=L.parse(L.exportAll(storage));assert.equal(JSON.parse(parsed[key]).notes[first],'portable');});
+await test('A passage visitor merges edits but preserves the latest durable position and guide',async()=>{
+ const prior=norm({read:{id:first,offset:17},guide:{index:10,token:1},hasGuided:true});
+ storage.setItem(key,JSON.stringify(prior));
+ const visiting=norm({read:{id:second,offset:0},guide:{index:15,token:0},hasGuided:false});
+ const advanced=norm({read:{id:'pauri04.line01',offset:29},guide:{index:16,token:1},hasGuided:true});
+ await a.save(advanced);
+ const expected=a.read();
+ await b.save(visiting,{notes:{[second]:'Synthetic visit note'},bookmarks:{[second]:true},preferences:{theme:'amrit',read:visiting.read,guide:visiting.guide,hasGuided:false}},{preservePosition:true});
+ const actual=a.read();
+ assert.deepEqual(actual.read,expected.read);assert.deepEqual(actual.guide,expected.guide);assert.equal(actual.hasGuided,expected.hasGuided);
+ assert.equal(actual.notes[second],'Synthetic visit note');assert.ok(actual.bookmarks.includes(second));assert.equal(actual.theme,'amrit');
+});
 fs.writeFileSync(new URL('evidence/shared-learning-verification.json',root),JSON.stringify({checkedAt:new Date().toISOString(),environment:'Node deterministic Web Locks simulation; browser tests recorded separately',checks,total:checks.length},null,2));console.log(JSON.stringify({total:checks.length,status:'PASS'}));

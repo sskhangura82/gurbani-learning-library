@@ -375,12 +375,20 @@ test('Published source and teaching are unchanged; explicitly recorded runtime a
   assert.equal(followup.changeBaseline,'09e829efd63e99fc5c3f5f849f122a49b0dc22a9');
   assert.equal(followup.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-amendments.json')));
   assert.deepEqual(Object.keys(followup.amendments).sort(),['js/japji-full.js','js/sukhmani-reader.js']);
+  const visit=json('evidence/claude-review-passage-visit-amendments.json');
+  assert.equal(visit.changeBaseline,'1470477b5a27a8f975f1efce74443a0e136aa94e');
+  assert.equal(visit.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-followup-amendments.json')));
+  assert.deepEqual(Object.keys(visit.amendments).sort(),['css/sukhmani.css','js/shared-learning.js','js/sukhmani-reader.js']);
+  assert.equal(visit.amendments['js/shared-learning.js'].before,sha(read('tests/fixtures/rt1-published/shared-learning.js')));
+  assert.equal(visit.amendments['js/shared-learning.js'].after,sha(read('js/shared-learning.js')));
   for (const [path,digest] of Object.entries(frozen.files)) {
-    const amendment=ledger.amendments[path],next=followup.amendments[path];
+    const amendment=ledger.amendments[path],next=followup.amendments[path],passage=visit.amendments[path];
     if(amendment){assert.equal(amendment.before,digest,path+' immutable prior hash');assert.ok(amendment.findings.includes('CI-R-01'));}
     const previous=amendment?.after||digest;
     if(next){assert.equal(next.before,previous,path+' exact prior runtime hash');assert.ok(next.findings.includes('CI-R-08'));}
-    assert.equal(sha(read(path)),next?.after||previous,path+' documented runtime or source preservation');
+    const previousRuntime=next?.after||previous;
+    if(passage){assert.equal(passage.before,previousRuntime,path+' exact second repair runtime hash');assert.deepEqual(passage.findings,['R2-X-04']);}
+    assert.equal(sha(read(path)),passage?.after||previousRuntime,path+' documented runtime or source preservation');
   }
 });
 

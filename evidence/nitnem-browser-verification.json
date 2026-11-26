@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-11-26T14:44:03.026Z",
+  "startedAt": "2026-11-26T14:49:26.134Z",
   "engine": "chromium",
   "browserVersion": "158.0.8127.37",
   "fixture": "Ephemeral trusted localhost under /gurbani-learning-library/; fresh nonpersistent browser contexts and synthetic learning only",
@@ -334,7 +334,7 @@
     "Offline navigation uses Chromium network emulation and the real root service worker.",
     "The update check changes only the served worker version in this isolated server; it does not publish or alter repository assets."
   ],
-  "completedAt": "2026-11-26T14:44:24.324Z",
+  "completedAt": "2026-11-26T14:49:49.412Z",
   "passed": 64,
   "failed": 0,
   "status": "passed"

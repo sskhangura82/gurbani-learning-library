@@ -65,6 +65,8 @@ jobs:
           sudo apt-get install -y fonts-noto-core
       - name: Test reading, local learning and offline preview with synthetic data
         run: node tests/sukhmani-browser.mjs
+      - name: Check temporary passage visits with synthetic saved learning
+        run: node tests/sukhmani-passage-visit-browser.mjs
       - name: Retain browser evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -72,6 +74,7 @@ jobs:
           name: sukhmani-browser-evidence
           path: |
             evidence/sukhmani-browser-verification.json
+            evidence/sukhmani-passage-visit-verification.json
             evidence/screenshots/sukhmani/
           if-no-files-found: warn
   verify-nitnem-browser:
