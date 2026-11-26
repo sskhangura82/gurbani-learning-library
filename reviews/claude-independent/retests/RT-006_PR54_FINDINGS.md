@@ -165,3 +165,69 @@ against these findings is the next step and belongs after this file is committed
 
 **No verdict of acceptance is offered and none was requested. I do not approve
 and I do not merge. The candidate stays a draft.**
+
+---
+
+# Comparison with the builder's own evidence
+
+Added after the findings above were committed and pushed, which is the order the
+protocol requires. Nothing above was changed as a result.
+
+## Where we overlap, we agree on every point
+
+### Japji reading place — Safari
+
+They ran real Safari on both the baseline and the candidate, with synthetic
+notes, and measured by **occurrence id and offset** rather than raw scroll
+position.
+
+| Their check | Baseline | Candidate | My independent result |
+|---|---|---|---|
+| library Back preserves actual geometry | **FAIL** ×3 modes | **PASS** ×3 modes | 0 of 3 before, 3 of 3 after. **Agree** |
+| reload after Back does not save a transient top position | **FAIL** ×3 modes | **PASS** ×3 modes | no zero-ish offset stored. **Agree** |
+| a running guide returns paused at its departure place | FAIL in 2 of 3 modes | **PASS** ×3 | `pause()` runs first on `pageshow`. **Agree** |
+| three reloads do not drift | PASS | **PASS** | reload 3 of 3 both builds. **Agree** |
+
+Their totals: baseline **11 FAIL of 18**, candidate **18 PASS of 18**. My four
+measured paths and their eighteen checks reach the same conclusion by different
+routes, and the disagreement surface is empty.
+
+### Storage refusal — Chromium
+
+| Their check | My independent result |
+|---|---|
+| maximum valid backup on a fresh collection reaches native quota with a clear message | same, quota reached, typed message. **Agree** |
+| maximum nonconflicting restore preserves the existing note, bookmarks, position | same, byte-intact, revision not advanced. **Agree** |
+
+Worth noting: they and I independently arrived at the same test design — placing
+the incoming notes on **non-conflicting** ids so the merge guard cannot mask the
+storage path. Neither of us saw the other's method first.
+
+## Their instrument is better than mine in five respects
+
+Recorded because it changes how I should test next time, not as a courtesy.
+
+1. **Occurrence id and offset instead of scrollY.** Mine was layout-dependent;
+   theirs is semantic and survives reflow. Strictly better, and I should adopt it.
+2. **Three reading modes** — persistent heading, receding heading and Meaning.
+   I tested only the default. Their baseline results differ **by mode**: the
+   running-guide check failed in two modes and passed in the third. The defect's
+   expression was mode-dependent and **I would have missed that entirely.**
+3. **Forward-then-Back.** I did not test it at all.
+4. **A small valid backup into an already-full origin**, refusing atomically.
+   I did not test the nearly-full case, which is the one the builder had
+   specifically asked to be covered.
+5. **Recovery after the condition clears** — a second import succeeding once the
+   filler is removed. I did not test that either.
+
+Two of those five are cases the builder themselves named as needing coverage in
+their cross-check, and they covered them while I did not.
+
+## What the comparison does not change
+
+Agreement between my checks and theirs is agreement between two desktop
+instruments on one codebase. It is not qualified Gurbani review, and it is not
+physical device acceptance. Both remain exactly where they were.
+
+The verdict above stands unaltered: four repairs verified, no approval, no
+merge, draft stays a draft.
