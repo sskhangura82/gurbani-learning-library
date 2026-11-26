@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Duality — article format proof</title>
+<title>Duality — article format proof v2</title>
 <style>
 :root{
   --ink:#1a1a18; --ink-soft:#55534d; --ink-faint:#8a8780;
@@ -22,32 +22,29 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
 h1{font-size:2rem;line-height:1.15;margin:0 0 .3rem;font-weight:500}
 h1 .gur{font-family:var(--gurmukhi);font-weight:400}
 .sub{font-family:var(--ui);font-size:13px;color:var(--ink-soft);margin:0 0 2rem}
-.notice{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:0;
-  padding:.85rem 1rem;font-family:var(--ui);font-size:13.5px;line-height:1.5;
-  color:var(--warn-ink);margin:0 0 2.25rem}
-.notice b{font-weight:600}
+.notice{background:var(--warn-bg);border:1px solid var(--warn-rule);padding:.85rem 1rem;
+  font-family:var(--ui);font-size:13.5px;line-height:1.5;color:var(--warn-ink);margin:0 0 2.25rem}
 h2{font-family:var(--ui);font-size:12px;letter-spacing:.09em;text-transform:uppercase;
   color:var(--ink-faint);font-weight:600;margin:2.75rem 0 1rem;
   border-bottom:1px solid var(--rule);padding-bottom:.4rem}
 p{margin:0 0 1.1rem}
-.verse{margin:0 0 1.9rem;break-inside:avoid;page-break-inside:avoid}
+/* A verse and its explanation are ONE unit for pagination. */
+.pair{break-inside:avoid;page-break-inside:avoid;margin:0 0 2rem}
 .verse .gur{font-family:var(--gurmukhi);font-size:1.45rem;line-height:1.95;margin:0 0 .45rem}
-.cite{font-family:var(--ui);font-size:12.5px;color:var(--ink-soft);letter-spacing:.01em}
-.cite .ok{color:#0f6e56}
-.slot{border:1px dashed #c4beb2;padding:1rem 1.1rem;margin:0 0 1.9rem;
-  font-family:var(--ui);font-size:13.5px;line-height:1.55;color:var(--ink-soft);
-  break-inside:avoid;page-break-inside:avoid}
+.cite{font-family:var(--ui);font-size:12.5px;color:var(--ink-soft);margin:0 0 .5rem}
+.basis{font-family:var(--ui);font-size:11.5px;color:var(--ink-faint);margin:0 0 .6rem;line-height:1.45}
+.slot{border:1px dashed #c4beb2;padding:.9rem 1rem;font-family:var(--ui);
+  font-size:13.5px;line-height:1.55;color:var(--ink-soft)}
 .slot .who{display:block;color:var(--ink-faint);font-size:11.5px;letter-spacing:.07em;
   text-transform:uppercase;margin-bottom:.35rem}
 .counts{font-family:var(--ui);font-size:14px;border-collapse:collapse;width:100%}
 .counts th,.counts td{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--rule)}
 .counts th{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
-.counts td:last-child,.counts th:last-child,.counts td:nth-child(2),.counts th:nth-child(2){text-align:right;font-variant-numeric:tabular-nums}
+.counts td+td,.counts th+th{text-align:right;font-variant-numeric:tabular-nums}
 .reg{font-family:var(--ui);font-size:13px;color:var(--ink-soft);line-height:1.6}
 .reg dt{font-weight:600;color:var(--ink);margin-top:.8rem}
 .reg dd{margin:.1rem 0 0}
-.tools{position:sticky;bottom:0;background:var(--paper);border-top:1px solid var(--rule);
-  padding:.75rem 0;margin-top:3rem;font-family:var(--ui);font-size:14px}
+.tools{border-top:1px solid var(--rule);padding:.75rem 0;margin-top:3rem;font-family:var(--ui);font-size:14px}
 button{font:inherit;padding:.5rem .9rem;border:1px solid var(--ink-soft);background:transparent;
   color:var(--ink);cursor:pointer;border-radius:4px}
 button:hover{background:#f0ede6}
@@ -58,7 +55,6 @@ button:hover{background:#f0ede6}
   .tools{display:none}
   .notice{background:#fff;border:1pt solid #999;color:#000}
   .bar{color:#444}
-  a{color:#000;text-decoration:none}
   h2{page-break-after:avoid}
 }
 </style>
@@ -66,76 +62,96 @@ button:hover{background:#f0ede6}
 <body>
 <div class="sheet">
 
-<div class="bar"><span>Gurbani Learning Library</span><span>Format proof · 26 Nov 2026</span></div>
+<div class="bar"><span>Gurbani Learning Library</span><span>Format proof v2 · 26 Nov 2026</span></div>
 
-<h1>Duality <span class="gur">ਦੁਬਿਧਾ</span></h1>
+<h1>Duality <span class="gur" lang="pa">ਦੁਬਿਧਾ</span></h1>
 <p class="sub">Topic article — format demonstration</p>
 
 <div class="notice">
 <b>No exposition has been written.</b> Every Gurmukhi line below is verified against a
-published digital reference. The explanation slots are deliberately empty: this page shows
-the format and the governance, not a teaching. No AI-written interpretation appears here,
-and none will. A qualified human reviewer writes the exposition, or it stays empty.
+digital source. The explanation slots are deliberately empty: this page shows the format
+and the governance, not a teaching. No AI-written interpretation appears here, and none
+will. A qualified human reviewer writes the exposition, or it stays empty.
 </div>
 
-<h2>What the Granth contains on this topic</h2>
-<p>Lines matching the terms for duality, counted directly in the reference database rather
-than estimated. Crude text matching — a reviewer would prune these before any are used.</p>
+<h2>What the source contains on this topic</h2>
+<p>Counted directly in the reference database rather than estimated. These are
+<b>term matches</b>, not reviewed thematic coverage, and the right-hand columns count
+<b>sections</b> of the source, which include non-raag forms such as Jap, Svaiyay, Phunhay
+and the Salok collections. They are not a count of the thirty-one principal raags.</p>
 <table class="counts">
-<thead><tr><th>Topic</th><th>Lines</th><th>Raags</th></tr></thead>
+<thead><tr><th>Topic</th><th>Lines</th><th>Sections</th><th>Raag-named</th><th>Other forms</th></tr></thead>
 <tbody>
-<tr><td>Duality</td><td>748</td><td>34</td></tr>
-<tr><td>Ego — Haumai</td><td>630</td><td>29</td></tr>
-<tr><td>Love</td><td>1,146</td><td>41</td></tr>
-<tr><td>Maya</td><td>988</td><td>40</td></tr>
-<tr><td>Household life</td><td>128</td><td>28</td></tr>
+<tr><td>Love</td><td>1,146</td><td>41</td><td>28</td><td>13</td></tr>
+<tr><td>Maya</td><td>988</td><td>40</td><td>31</td><td>9</td></tr>
+<tr><td>Duality</td><td>748</td><td>34</td><td>26</td><td>8</td></tr>
+<tr><td>Ego — Haumai</td><td>630</td><td>29</td><td>23</td><td>6</td></tr>
+<tr><td>Household life</td><td>128</td><td>28</td><td>23</td><td>5</td></tr>
 </tbody>
 </table>
 
 <h2>Verses</h2>
 
-<div class="verse">
-  <p class="gur">ਸਤਿਗੁਰੁ ਮਿਲੈ; ਤ ਦੁਬਿਧਾ ਭਾਗੈ ॥</p>
-  <p class="cite">Guru Nanak · Raag Gauree · <span class="ok">verified</span></p>
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਸਤਿਗੁਰੁ ਮਿਲੈ ਤ ਦੁਬਿਧਾ ਭਾਗੈ ॥</p></div>
+  <p class="cite">Guru Nanak · Raag Gauree · Ang 153</p>
+  <p class="basis">Locator basis: single digital lineage. Open Granth pinned 34d2a7c,
+  corpus/ang-0153.md, unique match, file digest confirmed. Open Granth states its own
+  source is the Shabad OS Database, so this is <b>not</b> an independent second witness
+  and <b>not</b> printed collation.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design. Whoever writes here is named on the page, and every claim they make
+  must carry a line reference the application checks.</div>
 </div>
-<div class="slot"><span class="who">Explanation — awaiting qualified review</span>
-Empty by design. Whoever writes here is named on the page, and every claim they make
-must carry a line reference that the application checks.</div>
 
-<div class="verse">
-  <p class="gur">ਅੰਤਰ ਕੀ ਦੁਬਿਧਾ; ਅੰਤਰਿ ਮਰੈ ॥੧॥</p>
-  <p class="cite">Guru Nanak · Raag Dhanaasree · <span class="ok">verified</span></p>
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਅੰਤਰ ਕੀ ਦੁਬਿਧਾ ਅੰਤਰਿ ਮਰੈ ॥੧॥</p></div>
+  <p class="cite">Guru Nanak · Raag Dhanaasree · Ang 661</p>
+  <p class="basis">Open Granth pinned 34d2a7c, corpus/ang-0661.md, unique match, file
+  digest confirmed. Same single lineage caveat as above.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design.</div>
 </div>
-<div class="slot"><span class="who">Explanation — awaiting qualified review</span>
-Empty by design.</div>
 
-<div class="verse">
-  <p class="gur">ਇਹੁ ਮਨੁ ਜਾਗੈ; ਇਸੁ ਮਨ ਕੀ ਦੁਬਿਧਾ ਮਰੈ ॥੪॥</p>
-  <p class="cite">Guru Amardas · Raag Bhairao · <span class="ok">verified</span></p>
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਇਹੁ ਮਨੁ ਜਾਗੈ ਇਸੁ ਮਨ ਕੀ ਦੁਬਿਧਾ ਮਰੈ ॥੪॥</p></div>
+  <p class="cite">Guru Amardas · Raag Bhairao · Ang 1129</p>
+  <p class="basis">Open Granth pinned 34d2a7c, corpus/ang-1129.md, unique match, file
+  digest confirmed. Same single lineage caveat as above.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design.</div>
 </div>
-<div class="slot"><span class="who">Explanation — awaiting qualified review</span>
-Empty by design.</div>
 
-<div class="verse">
-  <p class="gur">ਛੋਡਹੁ ਵੇਸੁ ਭੇਖ ਚਤੁਰਾਈ; ਦੁਬਿਧਾ ਇਹੁ ਫਲੁ. ਨਾਹੀ ਜੀਉ ॥੧॥</p>
-  <p class="cite">Guru Nanak · Raag Sorath · <span class="ok">verified</span></p>
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਛੋਡਹੁ ਵੇਸੁ ਭੇਖ ਚਤੁਰਾਈ ਦੁਬਿਧਾ ਇਹੁ ਫਲੁ ਨਾਹੀ ਜੀਉ ॥੧॥</p></div>
+  <p class="cite">Guru Nanak · Raag Sorath · Ang 598</p>
+  <p class="basis">Open Granth pinned 34d2a7c, corpus/ang-0598.md, unique match, file
+  digest confirmed. Same single lineage caveat as above.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design.</div>
 </div>
-<div class="slot"><span class="who">Explanation — awaiting qualified review</span>
-Empty by design.</div>
 
 <h2>Source register</h2>
 <dl class="reg">
-<dt>Scripture text</dt>
-<dd>Shabad OS Database v5.0.0-next.0, asset SSA2. Each line above matched in that reference
-on 26 Nov 2026.</dd>
-<dt>What this reference cannot supply</dt>
-<dd>It carries no Ang (page) numbers. Any Ang shown in a finished article must come from a
-second source and be verified separately. Until then, citations give author and raag only.</dd>
+<dt>Gurmukhi text</dt>
+<dd>Shabad OS Database v5.0.0-next.0, asset SSA2. Each line matched there on 26 Nov 2026.
+The lines are shown as the source carries them, without the editorial comma and semicolon
+phrasing marks that the Shabad OS records add. Those marks are not Gurbani.</dd>
+<dt>Ang locators, and their real strength</dt>
+<dd>Each Ang above was verified by this reviewer against Open Granth at pinned commit
+34d2a7c: unique match in the named file, with the file digest confirmed. But all 1,430
+files in that corpus declare <b>source: Shabad OS Database</b>, and its README states the
+corpus is built from it. So the Ang number and the Gurmukhi share one textual lineage.
+Two views of one database is not corroboration.</dd>
+<dt>What would make an Ang authoritative</dt>
+<dd>Collation against a printed Sri Guru Granth Sahib Ji. Not done. No amount of digital
+checking substitutes for it, and an Ang number is never sufficient authentication on its
+own.</dd>
 <dt>Exposition</dt>
 <dd>None. Not written, not generated, not borrowed.</dd>
 <dt>Printing</dt>
-<dd>This page is laid out for paper as well as screen. Verses and their explanation slots
-never split across a page break.</dd>
+<dd>Each verse, its citation, its basis note and its explanation slot form one block that
+is never split across a printed page.</dd>
 </dl>
 
 <div class="tools"><button onclick="window.print()">Print this article</button></div>
