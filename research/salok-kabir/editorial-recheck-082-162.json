@@ -1,0 +1,92 @@
+{
+  "schema": "glp001.salok-kabir.editorial-recheck.v1",
+  "reviewerType": "INDEPENDENT_AI_RECHECK_NOT_HUMAN_APPROVAL",
+  "qualifiedHumanReviewed": false,
+  "publicationApproved": false,
+  "reviewedAt": "2026-11-26T19:35:19.003696+00:00",
+  "scope": "Bounded verification of the exact 50 approved amendments and full bilingual internal coherence of the six changed entries; no new source adjudication or publication approval.",
+  "inputs": [
+    {
+      "role": "author",
+      "file": "teaching-082-162.json",
+      "sha256": "51871614d9dfb1997b1682d28e1959d74e4c5d0767de18498cd4766b81b77d8e"
+    },
+    {
+      "role": "review",
+      "file": "editorial-review-082-162.json",
+      "sha256": "8eb2da332256c745aa144951a88eb480dee6bc545b9e1e7e8519169f0d560248"
+    },
+    {
+      "role": "reviewed",
+      "file": "teaching-reviewed-082-162.json",
+      "sha256": "9a311e66fb02cf621d966b071532e5b94c725a6573088b04ec2b355dab7cac1f"
+    },
+    {
+      "role": "ledger",
+      "file": "repo/research/salok-kabir/editorial-amendments-082-162.json",
+      "sha256": "0d964d8caf78cd51c37e6649ceaadd09cf3bb34e47607ebed388f80ec6ad8997"
+    },
+    {
+      "role": "source",
+      "file": "source-selected.json",
+      "sha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05"
+    }
+  ],
+  "results": {
+    "status": "PASS",
+    "frozenAuthorHashMatches": true,
+    "frozenReviewHashMatches": true,
+    "frozenSourceHashMatches": true,
+    "ledgerMetadataHashesMatch": true,
+    "ledgerContainsExactlyAll50ReviewedAmendments": true,
+    "ledgerDecisionsRemainNonHumanApproval": true,
+    "reviewReplayExactlyMatchesReviewedArray": true,
+    "ledgerReplayExactlyMatchesReviewedArray": true,
+    "noUnlistedChanges": true,
+    "unchangedEntries": 75,
+    "changedEntries": 6,
+    "changedOrdinals": [
+      103,
+      106,
+      109,
+      127,
+      141,
+      144
+    ],
+    "all81OrdinalsRetained": true,
+    "sourceTextChanged": false
+  },
+  "internalBilingualCoherence": [
+    {
+      "ordinal": 103,
+      "status": "PASS",
+      "detail": "The literal instrument/players wording, neutral summary and question remain compatible with both qualified metaphor readings. The reflection applies the attachment reading without changing the source meaning claim; English and Punjabi align."
+    },
+    {
+      "ordinal": 106,
+      "status": "PASS",
+      "detail": "The brothers/kin clause now links to household care. The summary, family-focused heading, reflection and teach-back consistently retain remembrance as the criterion; the contextual ending is attributed in both languages."
+    },
+    {
+      "ordinal": 109,
+      "status": "PASS",
+      "detail": "The stake now explains the demanding practice of remembrance throughout the summary, close reading, reflection and question. The unchanged literal line remains compatible, and the interpretation is attributed in both languages."
+    },
+    {
+      "ordinal": 127,
+      "status": "PASS",
+      "detail": "The direct weeping wording is explicitly distinguished from the idiomatic alternative. The summary, grave image, reflection and question continue to concern spiritual awakening in both languages."
+    },
+    {
+      "ordinal": 141,
+      "status": "PASS",
+      "detail": "The simple lines retain the poet-reference reading, now expressly identified as provisional. The close reading and care note explain the Divine-reference alternative. Summary and questions remain compatible with the selected draft reading in both languages."
+    },
+    {
+      "ordinal": 144,
+      "status": "PASS",
+      "detail": "The simple line, heading, vocabulary and close reading consistently use the loincloth image. The care note identifies the money-belt alternative; the shared loss-of-possession meaning and questions remain coherent in both languages."
+    }
+  ],
+  "remainingBlockers": []
+}

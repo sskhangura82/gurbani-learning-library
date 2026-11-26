@@ -1,0 +1,56 @@
+{
+  "schema": "glp001.salok-kabir.editorial-recheck.v1",
+  "reviewerType": "INDEPENDENT_AI_RECHECK_NOT_HUMAN_APPROVAL",
+  "qualifiedHumanReviewed": false,
+  "publicationApproved": false,
+  "status": "BOUNDED_RECHECK_PASSED",
+  "files": {
+    "frozenReview": {
+      "file": "kabir-build/editorial-review-001-081.json",
+      "sha256": "9b6c8ef8f9a156e0c8cd730d12df4937b563e6f4a3e6d6eb0b0a53f01f9d4b87"
+    },
+    "appliedLedger": {
+      "file": "kabir-build/repo/research/salok-kabir/editorial-amendments-001-081.json",
+      "sha256": "c7bc425804600a5df0d7669a7f0ad4ad53c6c650bcf474a0a27297d0be4bbec9"
+    },
+    "reviewedTeaching": {
+      "file": "kabir-build/teaching-reviewed-001-081.json",
+      "sha256": "8da9098486797a373aacc78e54a33df44180c757677502d7f77eec8c5a57b0ed"
+    },
+    "originalTeaching": {
+      "file": "kabir-build/teaching-001-081.json",
+      "sha256": "5adf6379cf2d8c137de3c59c71880084ad069a6c05b70913d0695ec60aed8044"
+    },
+    "frozenSource": {
+      "file": "kabir-build/source-selected.json",
+      "sha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05"
+    }
+  },
+  "reviewedOrdinals": [
+    6,
+    15,
+    26,
+    28,
+    29,
+    35,
+    40,
+    44,
+    47,
+    72
+  ],
+  "amendmentCount": 23,
+  "allAmendmentsAppliedExactly": true,
+  "pathNormalization": "Bracketed numeric indices in the frozen review are equivalent to dotted numeric indices in the applied ledger; literal before/after, reasons and source bases match.",
+  "reviewedTeachingEqualsExactReplay": true,
+  "unlistedTeachingEdits": false,
+  "originalTeachingChanged": false,
+  "sourceTextChanged": false,
+  "bilingualInternalCoherenceRechecked": true,
+  "coherenceNotes": [
+    "All fields of the ten changed entries were reread together. The amendments introduce no concrete new contradiction between their line explanations, summaries, study notes, vocabulary or learning prompts.",
+    "Salok 28 retains the original alternatives in its direct explanation; its study note explicitly allows the two devotional practices to belong together.",
+    "Salok 72 retains dying and weeping in both languages, distinguishes the draft grief reading from the attributed Sahib Singh interpretation, and keeps the unresolved grammar explicit. Its unchanged summary, reflection and teach-back concern virtue without asserting that either disputed reading is final."
+  ],
+  "remainingBlockers": [],
+  "scopeLimit": "Checks only the application and internal coherence of the 23 recorded amendments. Existing qualified-review concerns remain; this does not grant human, scholarly or publication approval."
+}

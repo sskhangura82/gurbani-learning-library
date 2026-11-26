@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-26T14:42:10.451Z",
+  "checkedAt": "2026-11-26T19:38:02.657Z",
   "environment": "Node VM running actual nitnem/reader.js and actual local-learning.js; synthetic DOM, records, and controlled write/editor locks",
   "browserAcceptance": false,
-  "readerSHA256": "9a4aef6ba744057c646ce7c2759cd6d6778d2425a43db52d5917aa7d26f2fe10",
-  "storageSHA256": "157b2814e743acd32df4a1b05e9239899080644af64f2bc51f81a714be57867c",
+  "readerSHA256": "9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6",
+  "storageSHA256": "84a05d64bf85d3496dba1d33df6fecbb146ffb7bdb998b3ceccf0fd0aec3e674",
   "scope": "Async dialog lifetimes, captured-bani persistence, draft preservation, editor leases, import/export/update, and real-versus-programmatic scroll intent",
   "dataPolicy": "Only invented SYNTHETIC learning data; no user browser or saved learning accessed",
   "checks": [

@@ -35,7 +35,9 @@ function overview(node,course,bani,mode){
  }
  intro.append(elt('p','learn-coverage',coverageText(course,bani)));
  if(bani==='rehras')intro.append(note('Some stored Rehras passages contain several verse lines. Their meanings are labeled “Passage context.” Recurring Chaupai and Anand passages retain their own place within Rehras.'));
- intro.append(note(bani==='salok-mahalla9'
+ intro.append(note(bani==='salok-kabir'
+  ?'All 243 Saloks have English and Punjabi line explanations and passage-study drafts. The original Mahalla headings and named voices are preserved. Qualified Gurbani and Punjabi review is pending. Pronunciation teaching and recordings are planned separately.'
+  :bani==='salok-mahalla9'
   ?'All 57 Saloks have English and Punjabi line explanations and passage-study drafts. Qualified Gurbani and Punjabi review is pending. Pronunciation teaching and recordings are planned separately.'
   :'Meanings and study are original educational paraphrases. Earlier detailed studies are chiefly in English, with bilingual line meanings and passage summaries. These notes do not provide pronunciation instruction or recorded paath.'));
  const sources=elt('details','lesson-sources');sources.append(elt('summary','','Reference list'),references(course,r.sourceKeys));intro.append(sources);details.append(intro);node.append(details);

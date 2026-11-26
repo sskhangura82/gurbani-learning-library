@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "GLP-001_EDITORIAL_RECHECK_1",
+  "reviewerType": "BOUNDED_AI_RECHECK_NOT_HUMAN_APPROVAL",
+  "qualifiedHumanReviewed": false,
+  "qualifiedHumanReviewCount": 0,
+  "publicationApproved": false,
+  "result": "PASSED_BOUNDED_REPLAY_AND_BILINGUAL_COHERENCE_RECHECK",
+  "scope": "Exact application of the frozen 38-finding review to the frozen 163–243 draft, integrity of the repository amendment ledger and source copies, and internal English-Punjabi coherence of all fields in the six changed entries. This recheck does not add canonical, scholarly or publication approval and does not expand the original review scope.",
+  "files": {
+    "frozenInput": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/teaching-163-243.json",
+      "sha256": "2e67d8f4b83d93fd5e7023c483f051bcfbca60a06574c044637cac8f8cc331ab",
+      "bytes": 415628
+    },
+    "frozenIndependentReview": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/editorial-review-163-243.json",
+      "sha256": "6304ae9c81b98d598e57d4e707e39e4ee1df293101e145bd401ce681f5a4f07b",
+      "bytes": 77777
+    },
+    "reviewedTeaching": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/teaching-reviewed-163-243.json",
+      "sha256": "52074dd5f71a37da2b73ab834bb969281dd87a4926f59e61ac214da27825745f",
+      "bytes": 418542
+    },
+    "appliedAmendments": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/repo/research/salok-kabir/editorial-amendments-163-243.json",
+      "sha256": "519757fe72476e3467513bbdd9c01441a126769f2389c3dc8f7b9ba6664eadef",
+      "bytes": 75259
+    },
+    "frozenSource": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+      "sha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05",
+      "bytes": 436850
+    },
+    "repositorySource": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/repo/research/salok-kabir/source-selected.json",
+      "sha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05",
+      "bytes": 436850
+    },
+    "repositoryFrozenInput": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/repo/research/salok-kabir/teaching-163-243.json",
+      "sha256": "2e67d8f4b83d93fd5e7023c483f051bcfbca60a06574c044637cac8f8cc331ab",
+      "bytes": 415628
+    },
+    "repositoryFrozenReview": {
+      "path": "/workspace/scratch/c4badbece609/kabir-build/repo/research/salok-kabir/editorial-review-163-243.json",
+      "sha256": "6304ae9c81b98d598e57d4e707e39e4ee1df293101e145bd401ce681f5a4f07b",
+      "bytes": 77777
+    }
+  },
+  "checks": {
+    "reviewedTeachingEqualsExactFrozenReviewReplay": true,
+    "findingCount": 38,
+    "amendmentCount": 38,
+    "amendmentsMatchEveryFrozenFindingField": true,
+    "onlyAddedAmendmentField": "decision",
+    "amendmentMetadataHashesMatchActualFiles": true,
+    "changedOrdinals": [
+      176,
+      179,
+      188,
+      198,
+      204,
+      233
+    ],
+    "unchangedEntryCount": 75,
+    "unlistedContentChanges": [],
+    "duplicateOrMissingAmendmentFields": [],
+    "repositoryFrozenCopiesByteIdentical": true,
+    "frozenSourceSha256Unchanged": true,
+    "allChangedEntriesReadInBothLanguages": true,
+    "changedCloseReadingEnglishWordCounts": {
+      "176": 88,
+      "179": 86,
+      "188": 83,
+      "198": 85,
+      "204": 83,
+      "233": 87
+    },
+    "chunksSourceRuntimeModifiedByThisRecheck": false
+  },
+  "coherenceRecheck": [
+    {
+      "ordinal": 176,
+      "result": "NO_INTERNAL_CONTRADICTION_FOUND",
+      "checkedUnaffectedFields": [
+        "simple.en",
+        "simple.pa",
+        "lines.1",
+        "study.focus",
+        "study.focusPa",
+        "study.words",
+        "study.interpretationCare",
+        "study.interpretationCarePa",
+        "study.reflection",
+        "study.reflectionPa",
+        "study.teachBack",
+        "study.teachBackPa"
+      ],
+      "finding": "The unchanged summary is broader than the clarified contextual referent but remains compatible: both languages link the servant’s knowing to Divine presence. The close reading and line caution identify the consuming force from 175 as an attributed contextual reading. No field still claims that this is merely general inability to comprehend creation."
+    },
+    {
+      "ordinal": 179,
+      "result": "NO_INTERNAL_CONTRADICTION_FOUND",
+      "checkedUnaffectedFields": [
+        "simple.en",
+        "simple.pa",
+        "lines.1",
+        "study.focus",
+        "study.focusPa",
+        "study.words",
+        "study.reflection",
+        "study.reflectionPa",
+        "study.teachBack",
+        "study.teachBackPa"
+      ],
+      "finding": "The purpose construction appears in both line explanations and both close readings. The retained light-in-the-body focus is consistent with inward sun/moon imagery; it does not restate the removed external-illumination claim. The summary and questions retain embodied opportunity, Guru-Gobind meeting and the connection with 178. Warmth/tenderness and coolness remain a named spiritual interpretation."
+    },
+    {
+      "ordinal": 188,
+      "result": "NO_INTERNAL_CONTRADICTION_FOUND",
+      "checkedUnaffectedFields": [
+        "lines.0",
+        "lines.1.simpleEn",
+        "lines.1.simplePa",
+        "simple.en",
+        "simple.pa",
+        "study.focus",
+        "study.focusPa",
+        "study.words",
+        "study.reflection",
+        "study.reflectionPa",
+        "study.teachBack",
+        "study.teachBackPa"
+      ],
+      "finding": "The retained simple line selects the eater’s-own-throat reading in both languages. Its immediately accompanying cautions and the close readings identify that selection and separately name Sahib Singh’s animal-slaughter reading. The unchanged summary and reflection fit the selected reading without silently resolving the difference. Sources distinguish the two named readings."
+    },
+    {
+      "ordinal": 198,
+      "result": "NO_INTERNAL_CONTRADICTION_FOUND",
+      "checkedUnaffectedFields": [
+        "lines.0",
+        "simple.en",
+        "simple.pa",
+        "study.focus",
+        "study.focusPa",
+        "study.closeReading",
+        "study.closeReadingPa",
+        "study.words.0",
+        "study.reflection",
+        "study.reflectionPa",
+        "study.teachBack",
+        "study.teachBackPa"
+      ],
+      "finding": "The unchanged close readings, summaries and questions refer to an unanswered inward/Divine encounter and the speaker’s own fault; none reintroduces a separate third-person human guide. The line explanation, contextual Pir gloss and care note consistently use the selected vocative reading. The poetic pilgrimage remains distinct from authenticated travel history."
+    },
+    {
+      "ordinal": 204,
+      "result": "NO_INTERNAL_CONTRADICTION_FOUND",
+      "checkedUnaffectedFields": [
+        "lines.0.simplePa",
+        "lines.0.interpretiveCaution",
+        "lines.0.interpretiveCautionPa",
+        "lines.1",
+        "simple.en",
+        "simple.pa",
+        "study"
+      ],
+      "finding": "The corrected English union wording matches Punjabi ਲੀਨ ਹੋ ਗਿਆ. The remaining fields consistently connect union, diminished self-assertion and seeing the Divine beyond the self-other division; they do not treat union as self-exaltation."
+    },
+    {
+      "ordinal": 233,
+      "result": "NO_INTERNAL_CONTRADICTION_FOUND",
+      "checkedUnaffectedFields": [
+        "lines.0",
+        "simple.en",
+        "simple.pa",
+        "study.focus",
+        "study.focusPa",
+        "study.words",
+        "study.interpretationCare",
+        "study.interpretationCarePa",
+        "study.reflection",
+        "study.reflectionPa",
+        "study.teachBack",
+        "study.teachBackPa"
+      ],
+      "finding": "Bhang, fish and wine remain explicit in both languages. The corrected line and close readings preserve the religious consequence of rasatal/hell. The unchanged summary, care note and questions still reject ritual compensation without expanding the passage into an exhaustive dietary code."
+    }
+  ],
+  "remainingBlockers": [],
+  "qualificationBoundary": "No further blocker was found within this bounded application/coherence check. The named interpretive alternatives and qualified-review limits already recorded in the frozen independent review remain in force; they were not adjudicated by this recheck."
+}

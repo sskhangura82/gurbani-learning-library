@@ -62,7 +62,7 @@ function fixture({changeSource,changeTeaching}={}){
  const urls=new Map([['data/library.json',libraryBytes],[library.entries[BANI].path,packBytes],['learning/course.complete.json',teachingBytes]]);
  const requests=[];
  const context={TextEncoder,TextDecoder,codec:new TextDecoder('utf-8',{fatal:true}),crypto:webcrypto,Uint8Array,
-  state:{library:null},coursePromise:null,salokCollection:true,collectionNames:[BANI],
+  state:{library:null},coursePromise:null,salokCollection:true,kabirCollection:false,collectionNames:[BANI],
   collectionManifest:libraryHash,collectionTeaching:teachingHash,
   collectionCommit:pack.sourceRepositoryCommit,collectionRelease:pack.releaseId,
   fetch:async url=>{requests.push(url);const bytes=urls.get(url);assert.ok(bytes,'Unexpected loader URL '+url);
