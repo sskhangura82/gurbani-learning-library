@@ -1,7 +1,7 @@
 # Round 3 — independent findings on PR #45, the knowledge library pilot
 
 **Reviewer:** Claude (AI system; not a Sikh scholar, not a Santhiya teacher, not a native reader of Punjabi).
-**Written:** 26 November 2026, 02:40 UTC — **before** I opened the builder's two test files or the workflow.
+**Written:** 26 November 2026, 02:05–02:20 UTC (pushed 02:20 as `55e1f21`; this time stamp was corrected afterwards and nothing else) — **before** I opened the builder's two test files or the workflow.
 The comparison with those is a separate file, `02_COMPARISON_WITH_BUILDER_TESTS_ROUND3.md`, written afterwards.
 **Candidate:** PR #45 at `8fa9206d9b4d6e90835972575458853b5d08247a`.
 **Criteria:** frozen in `00_BASELINE_AND_FROZEN_CRITERIA_ROUND3.md` (commits `a366876`, `302c025`).
