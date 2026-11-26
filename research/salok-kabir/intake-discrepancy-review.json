@@ -1,0 +1,750 @@
+{
+  "schema": "glp001.kabir-intake-discrepancy-review.v1",
+  "id": "glp-kabir-intake-001-discrepancy-review-2026-11-26",
+  "preparedDate": "2026-11-26",
+  "status": "EVIDENCE_BACKED_BOUNDED_SELECTION_REVIEW_NOT_CANONICAL_ADJUDICATION",
+  "scope": "Two source-location discrepancies from frozen Kabir intake PR50. This sidecar supplies an explicit new collection-selection decision and preserves all original claims. It does not amend PR50, change a source text, adjudicate a canonical edition, or authorize publication.",
+  "runtimeEligible": false,
+  "publicReady": false,
+  "qualifiedHumanReviewCount": 0,
+  "reviews": {
+    "gurbaniScholar": null,
+    "punjabiReader": null,
+    "sourceLocationAdjudicator": null,
+    "rightsReviewer": null
+  },
+  "frozenIntake": {
+    "pullRequest": 50,
+    "headCommit": "3af5ba739cd8bf5ab2d358d12704ad9e48452b1e",
+    "manifestPath": "content-intake/kabir/manifest.json",
+    "manifestSha256": "fd82b3f37c33437d02b3ae76f60f13a3b8241a58d10fe686b61c35a3ac49258a",
+    "manifestUnchanged": true,
+    "quarantineStatusUnchanged": true,
+    "canonicalAngFieldsRemainNull": true,
+    "canonicalAuthorFieldsRemainNull": true,
+    "pinnedSource": {
+      "repository": "opengranth/open-granth",
+      "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+      "editionStatus": "PINNED_DIGITAL_WITNESS_NOT_AUTHENTICATED_SAROOP",
+      "metadataWitness": {
+        "path": "metadata/authors.json",
+        "gitBlob": "ad723a5d2cdd29e8d74ec336111e95ab387f5b2e",
+        "sha256": "30087956844b72d15f7ffd50f27d68e6f19eaa13fd69d5464c7de348c4d88503",
+        "bytes": 49201,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json"
+      },
+      "textWitnesses": [
+        {
+          "path": "corpus/ang-0323.md",
+          "gitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+          "sha256": "444f2ff55b16b4f71392cafb1f99ee49fcc76743bd0f981eab8dc24592b7cd69",
+          "bytes": 10442,
+          "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0323.md",
+          "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0323.md"
+        },
+        {
+          "path": "corpus/ang-0324.md",
+          "gitBlob": "1d5fb8624c9ddfdfef5a0801081a6cd469dcd540",
+          "sha256": "f2e1be82dae745532602c109e2cc581a865e0ab4fe31887ab18310e2f4091bfe",
+          "bytes": 10808,
+          "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0324.md",
+          "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0324.md"
+        },
+        {
+          "path": "corpus/ang-1377.md",
+          "gitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+          "sha256": "47c2e2d5d609bc726f5813bdae03caea25accf843bd32b259fbb1f1a96598262",
+          "bytes": 10042,
+          "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md",
+          "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md"
+        }
+      ],
+      "reportedUpstream": {
+        "package": "@shabados/database",
+        "version": "5.0.0-next.0",
+        "sourceId": "SGGS",
+        "primaryAsset": "SSA2",
+        "provenanceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/docs/provenance.md"
+      }
+    }
+  },
+  "evidenceMethod": {
+    "digitalText": "Read exact frozen source occurrences and surrounding records. Independently inspected SriGranth web displays. Do not infer independence merely from different website names.",
+    "pageImages": "Rendered and visually inspected SikhNet PDF at zero-based indexes323,324,1377,1378, whose visible Ang labels are323,324,1377,1378. Also downloaded and visually inspected Commons image renderings of photographed/scanned SGPC-labelled Saenchi pages. PDF sequence number and visible Ang number are recorded separately.",
+    "upstreamDatabase": "Fetched @shabados/database version5.0.0-next.0 from the npm tarball specified in registry metadata, verified its published SHA1 and SHA512 integrity, extracted master.sqlite, opened it in SQLite read-only mode, and retained exact source line-group/asset rows.",
+    "textIdentity": "Frozen OpenGranth strings and hashes are preserved without normalization. Upstream SSA2 strings include ASCII punctuation; their exact raw values are separately preserved. Applying the pinned importer normalization to these two SSA2 strings reproduces the frozen OpenGranth strings exactly. This is a provenance check, not a new scripture edit.",
+    "independenceLimit": "OpenGranth and the inspected ShabadOS database are the same source lineage. SriGranth, SikhNet and SGPC scans have not been demonstrated to have independent textual ancestry. Website agreement is not a vote or manuscript authentication.",
+    "authenticationLimit": "The covers visibly name SGPC. Commons uploader metadata supplies the scan provenance; no authoritative chain of custody, printing date, or SGPC authentication was established. These are visually inspected printed-page witnesses, not authenticated saroop or qualified human collation."
+  },
+  "evidenceSources": {
+    "upstreamDatabase": {
+      "package": "@shabados/database",
+      "version": "5.0.0-next.0",
+      "registryUrl": "https://registry.npmjs.org/@shabados%2Fdatabase/5.0.0-next.0",
+      "tarballUrl": "https://registry.npmjs.org/@shabados/database/-/database-5.0.0-next.0.tgz",
+      "tarballBytes": 47643787,
+      "tarballSha256": "839fa79860804550ca7e654f9ccdef3889451a7a95626e6c99466c6fc1b902b2",
+      "publishedSha1": "cb6a889ebf9875a6ee4b7bf48e4beeb6033e851e",
+      "publishedIntegrity": "sha512-+kURhYFREghaksJ9lsGXmYStV8KkcU/5C4A+gHWoBD2RaDIYL2NsqP0N6YrRg6MuBaIzgnrtOiJUOC5lbP26YA==",
+      "sha1AndSha512Verified": true,
+      "sqlite": {
+        "path": "discrepancy-witnesses/shabados-5.0.0-next.0-master.sqlite",
+        "bytes": 151965696,
+        "sha256": "517890c7e7c2f3dcef7f21b51d074a581b8eded4ebe14c504b84ea075ff16aeb",
+        "evidenceOnlyDoNotBundleInReader": true
+      },
+      "metadata": {
+        "path": "discrepancy-witnesses/shabados-package-metadata.json",
+        "bytes": 2911,
+        "sha256": "de6e5148d295dc2fe51eb830ade42bda47798306663baf9837c7cc47d035514c"
+      },
+      "extractedLineGroups": {
+        "path": "discrepancy-witnesses/upstream-line-groups.json",
+        "bytes": 8897,
+        "sha256": "8dc5ecd318f131ad8278a3ca3f73bb1f279bbe0aa75973b333193faf275bf80a"
+      },
+      "assetReferenceAsReported": {
+        "id": "SSA2",
+        "name": "{\"en\":\"Shabadaarth\",\"pa\":\"ਸ਼ਬਦਾਰਥ\"}",
+        "reference": "{\"title\":\"Shabadaarth\",\"url\":\"www.archive.org/details/ShabdaarthSriGuruGranthSahibJi-Part1\",\"accessed\":\"2019-01-22\",\"authors\":[{\"first\":\"SGPC\",\"last\":\"Committee\"}],\"publisher\":{\"name\":\"SGPC\",\"city\":\"Sri Amritsar\"},\"publication\":{\"date\":\"2009-2012\"},\"volume\":{\"total\":4}}"
+      }
+    },
+    "pinnedImporter": {
+      "path": "discrepancy-witnesses/scripts-import_shabados.py",
+      "bytes": 8947,
+      "sha256": "c5eeb52ac2cfe336f746323f9db1433a5dabd7dfee2561a79dd38a7fe66b2612",
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/scripts/import_shabados.py",
+      "relevantLines": "24–62 select page from primary asset metadata;84–95 sort by physical line first;109–151 preserve group fields internally then output verse fields."
+    },
+    "pinnedNormalization": {
+      "path": "discrepancy-witnesses/scripts-transliteration.py",
+      "bytes": 6247,
+      "sha256": "91759b770825b44044eb04bc1b76d5f1f004fd72361851c20cca835b81e03b89",
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/scripts/transliteration.py",
+      "relevantLines": "98–108 normalize_gurmukhi_text removes source ASCII pause punctuation and normalizes whitespace."
+    },
+    "pinnedProvenance": {
+      "path": "discrepancy-witnesses/docs-provenance.md",
+      "bytes": 2125,
+      "sha256": "0e1f1c0b267b0c86bd4ac7b1a882b68f19aa3e3929059662fca47b69c098132e",
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/docs/provenance.md"
+    },
+    "sikhnet": {
+      "url": "https://www.sikhnet.com/files/ereader/SGGS%20%5BGurmukhi%5D.pdf",
+      "format": "Digitally typeset Gurmukhi PDF,1431 PDF pages including cover",
+      "file": {
+        "path": "discrepancy-witnesses/sikhnet-sggs-gurmukhi.pdf",
+        "bytes": 4114612,
+        "sha256": "4de014de3ae915f31556e6f590efddf209195321bead217514936393d7d1cc8d",
+        "evidenceOnlyDoNotBundleInReader": true
+      },
+      "renderedPages": [
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-323.png",
+          "bytes": 190068,
+          "sha256": "5d9da9017af9140eec30b785df6111708e386b4fabea1242ec70ab5605e2197e",
+          "zeroBasedPdfPageIndex": 323,
+          "visibleAng": 323,
+          "visualInspectionPerformed": true
+        },
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-324.png",
+          "bytes": 186175,
+          "sha256": "c01f82706d3987234c2f5c7b0f60b20d821b93dd224e99c104d27424b016df68",
+          "zeroBasedPdfPageIndex": 324,
+          "visibleAng": 324,
+          "visualInspectionPerformed": true
+        },
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-1364.png",
+          "bytes": 189202,
+          "sha256": "d40dfeb04a658492365273f4cf2955b64eea232ec796ace0e4f6fd113e32d508",
+          "zeroBasedPdfPageIndex": 1364,
+          "visibleAng": 1364,
+          "visualInspectionPerformed": true
+        },
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-1373.png",
+          "bytes": 190318,
+          "sha256": "92ce471a2e06d565ded74f117b339ec578a7abc1a7158e946de1cde8ca98401b",
+          "zeroBasedPdfPageIndex": 1373,
+          "visibleAng": 1373,
+          "visualInspectionPerformed": true
+        },
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-1374.png",
+          "bytes": 190594,
+          "sha256": "6105e53d47122669c31b750006225aeb2c6d4011b541ed2f9341d39be263fe1d",
+          "zeroBasedPdfPageIndex": 1374,
+          "visibleAng": 1374,
+          "visualInspectionPerformed": true
+        },
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-1377.png",
+          "bytes": 191326,
+          "sha256": "30eb151c1a52be96953de1a73c1c2f56732b4f306ab40640753b9035827720ac",
+          "zeroBasedPdfPageIndex": 1377,
+          "visibleAng": 1377,
+          "visualInspectionPerformed": true
+        },
+        {
+          "path": "discrepancy-witnesses/sikhnet-pdf-index-1378.png",
+          "bytes": 199815,
+          "sha256": "7146ea489af4e4c6106b51a47d6bb64a2de44a827c91b29855d37cb24ebe2f45",
+          "zeroBasedPdfPageIndex": 1378,
+          "visibleAng": 1378,
+          "visualInspectionPerformed": true
+        }
+      ],
+      "observations": "Visible Ang324 starts the disputed Gauri line. Visible Ang1378 starts disputed Farid line. Visible Ang1377 has Kabir231→232 uninterrupted and Farid heading after243. Supplemental1364 title has no terminal double danda;177 line1 crosses physical1373→1374."
+    },
+    "commonsPrintedScan": {
+      "filePages": [
+        "https://commons.wikimedia.org/wiki/File:Guru_Granth_Sahib_Part_One.pdf",
+        "https://commons.wikimedia.org/wiki/File:Guru_Granth_Sahib_Part_Two.pdf"
+      ],
+      "format": "Scanned/photographed printed Saenchi, not a modern synthetic image",
+      "publisherVisibleOnCovers": "ਸ਼੍ਰੋਮਣੀ ਗੁਰਦੁਆਰਾ ਪ੍ਰਬੰਧਕ ਕਮੇਟੀ, ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ",
+      "publisherAsReportedByCommons": "SGPC",
+      "printerAsReportedByCommons": "ਗੋਲਡਨ ਆਫਸੈਟ ਪ੍ਰੈਸ, ਗੁਰਦੁਆਰਾ ਰਾਮਸਰ ਸਾਹਿਬ",
+      "uploaderAsReportedByCommons": "Wikilover (WIR)",
+      "uploadDateAsReportedByCommons": "2019-10-02",
+      "publicationDateEstablished": null,
+      "authenticatedBySGPC": false,
+      "pages": [
+        {
+          "path": "discrepancy-witnesses/commons-page1",
+          "bytes": 512708,
+          "sha256": "1291bb89f78b9c405cb8758947d5079e355b290eb053dfce9bd79c408206a6ed",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Guru_Granth_Sahib_Part_One.pdf/page1-1280px-Guru_Granth_Sahib_Part_One.pdf.jpg",
+          "pdfPageOneBased": 1,
+          "visibleAng": null,
+          "visualInspectionPerformed": true,
+          "observation": "Cover visibly names SGPC, Sri Amritsar, and first Saenchi."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-one-page-331.jpg",
+          "bytes": 445851,
+          "sha256": "f07f495db4341fded61cf18d6f61498257216d2d053e63722ee40dcde2e2b798",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Guru_Granth_Sahib_Part_One.pdf/page331-1280px-Guru_Granth_Sahib_Part_One.pdf.jpg",
+          "pdfPageOneBased": 331,
+          "visibleAng": 323,
+          "visualInspectionPerformed": true,
+          "observation": "Printed Ang 323 ends with ਮੰਦਭਾਗੀ ਤੇਰੋ ਦਰਸਨੁ ਨਾਹਿ ॥੩॥. The disputed ਤੂੰ ਸਤਿਗੁਰੁ line is absent from this printed page."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-one-page-332.jpg",
+          "bytes": 465543,
+          "sha256": "76b4eed4f4ce60350ddaf5c29461503b424c5a4cfbf953b3d6fa92fd91c76bed",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Guru_Granth_Sahib_Part_One.pdf/page332-1280px-Guru_Granth_Sahib_Part_One.pdf.jpg",
+          "pdfPageOneBased": 332,
+          "visibleAng": 324,
+          "visualInspectionPerformed": true,
+          "observation": "Printed Ang 324 begins with ਤੂੰ ਸਤਿਗੁਰੁ ਹਉ ਨਉਤਨੁ ਚੇਲਾ ॥, immediately followed by ਕਹਿ ਕਬੀਰ ਮਿਲੁ ਅੰਤ ਕੀ ਬੇਲਾ ॥੪॥੨॥."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-two-page-1.jpg",
+          "bytes": 255921,
+          "sha256": "5de72db521546f347bb5bb3c983d5b0d4478f0245c325cb32f8b70203b4a9074",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page1-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+          "pdfPageOneBased": 1,
+          "visibleAng": null,
+          "visualInspectionPerformed": true,
+          "observation": "Cover visibly names SGPC, Sri Amritsar, and second Saenchi."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-two-page-663.jpg",
+          "bytes": 485519,
+          "sha256": "76490c3336e4302a033a5d6310f87837f100e19af96871339a30af249ff2f8af",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page663-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+          "pdfPageOneBased": 663,
+          "visibleAng": 1377,
+          "visualInspectionPerformed": true,
+          "observation": "Printed Ang 1377 contains Salok 231 then 232 without the disputed Farid line between them. After Salok 243 comes ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ, invocation, Farid Salok 1, and the opening line of Farid Salok 2 at the page end."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-two-page-664.jpg",
+          "bytes": 490078,
+          "sha256": "fa37cf0ee87abc5ba5f59c81cde0efae439602080b506786f0fbeec917e93950",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page664-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+          "pdfPageOneBased": 664,
+          "visibleAng": 1378,
+          "visualInspectionPerformed": true,
+          "observation": "Printed Ang 1378 begins with the disputed ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥, completing Farid Salok 2; the next Salok follows."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-two-page-650.jpg",
+          "bytes": 474843,
+          "sha256": "cbb55cbd5f4d49907b3187943936a91b129ea2b44ea77370668d35f7a071e0fa",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page650-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+          "pdfPageOneBased": 650,
+          "visibleAng": 1364,
+          "visualInspectionPerformed": true,
+          "observation": "Supplemental: collection title visibly ends ਕੇ with no terminal double danda. Invocation is a separate heading. This supports a heading punctuation difference from the pinned OpenGranth string."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-two-page-659.jpg",
+          "bytes": 503212,
+          "sha256": "0920178cbf468efa3982f0e0322c7f33d74c8ce5f4c11a4ce2ae8487e91baaac",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page659-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+          "pdfPageOneBased": 659,
+          "visibleAng": 1373,
+          "visualInspectionPerformed": true,
+          "observation": "Supplemental: physical page ends partway through Salok 177 line 1, at ਕਬੀਰ ਭਲੀ ਭਈ ਜੋ ਭਉ."
+        },
+        {
+          "path": "discrepancy-witnesses/commons-part-two-page-660.jpg",
+          "bytes": 493173,
+          "sha256": "718ec50183e69a073bfda076947bbe77aedc1ce36705d67a34d7ed7c40eea7ac",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page660-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+          "pdfPageOneBased": 660,
+          "visibleAng": 1374,
+          "visualInspectionPerformed": true,
+          "observation": "Supplemental: printed Ang1374 begins with the remainder of Salok177 line1. A nasal mark is visible on ਗਈ, but an image cannot establish its Unicode code point. No new vowel spelling difference is claimed."
+        }
+      ]
+    },
+    "sriGranth": {
+      "format": "Web text display",
+      "observations": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "observation": "Kabir231 closing occurrence immediately followed by232 opening;Farid heading after243;Farid2 opening at page end."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1378",
+          "observation": "Disputed Farid2 ending is first Gurbani occurrence."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=323",
+          "observation": "Disputed Gauri line is final Gurbani occurrence after ਮੰਦਭਾਗੀ...॥੩॥."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=324&g=1&h=0&k=0&p=0&r=0&t=0",
+          "observation": "Closing ਕਹਿ ਕਬੀਰ...॥੪॥੨॥ is first Gurbani occurrence; disputed preceding line is not shown on this web page."
+        }
+      ]
+    }
+  },
+  "discrepancies": [
+    {
+      "id": "og-location-1377-row002",
+      "frozenClaim": {
+        "id": "og-location-1377-row002",
+        "status": "OPEN_QUARANTINED",
+        "type": "SOURCE_LOCATION_AND_SEQUENCE_CONFLICT",
+        "runtimeEligible": false,
+        "automaticAuthorInclusion": false,
+        "sourceOccurrence": {
+          "sourceAng": 1377,
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+          "sourceOrdinal": 2,
+          "sourcePrintedLine": 1,
+          "sourceWithinLine": 2,
+          "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+          "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0"
+        },
+        "sourceContext": {
+          "previous": {
+            "sourceAng": 1377,
+            "sourcePath": "corpus/ang-1377.md",
+            "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+            "sourceOrdinal": 1,
+            "sourcePrintedLine": 1,
+            "sourceWithinLine": 1,
+            "text": "ਮੁਕਤਿ ਪਦਾਰਥੁ ਪਾਈਐ ਠਾਕ ਨ ਅਵਘਟ ਘਾਟ ॥੨੩੧॥",
+            "textSha256": "1e4a9e3a774c6e37e1e9f8cec49a71896a4f4380c29494fd2c8f21b2b4bb8d94"
+          },
+          "next": {
+            "sourceAng": 1377,
+            "sourcePath": "corpus/ang-1377.md",
+            "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+            "sourceOrdinal": 3,
+            "sourcePrintedLine": 2,
+            "sourceWithinLine": 1,
+            "text": "ਕਬੀਰ ਏਕ ਘੜੀ ਆਧੀ ਘਰੀ ਆਧੀ ਹੂੰ ਤੇ ਆਧ ॥",
+            "textSha256": "9146f1900d6f91fdb03212d8c8012ab22368d7256981f6594ff4beb0550ef271"
+          }
+        },
+        "primaryWitnessUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md",
+        "secondaryWitness": {
+          "provider": "SriGranth",
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1378",
+          "witnessAng": 1378,
+          "observationMethod": "Web text observed, not source-saroop adjudication",
+          "context": [
+            {
+              "witnessAng": 1378,
+              "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+              "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0",
+              "pageContext": "First displayed Gurbani occurrence on Ang1378; closes Salok2"
+            },
+            {
+              "witnessAng": 1378,
+              "text": "ਕਿਝੁ ਨ ਬੁਝੈ ਕਿਝੁ ਨ ਸੁਝੈ ਦੁਨੀਆ ਗੁਝੀ ਭਾਹਿ ॥",
+              "textSha256": "89fccadbea295400e80ba21e4ede491e3ad5ffd63c9a1fab041a99b4ab0758f6",
+              "pageContext": "Next displayed Gurbani occurrence; begins following Salok"
+            }
+          ]
+        },
+        "canonicalAng": null,
+        "canonicalAuthorId": null,
+        "resolution": null,
+        "requiredAction": "Compare an authenticated saroop/page witness and source line-group metadata; retain both original locators. Do not silently move, delete, or attribute the disputed occurrence."
+      },
+      "reviewStatus": "RESOLVED_FOR_KABIR_COLLECTION_SELECTION_ONLY",
+      "canonicalStatus": "PENDING_AUTHENTICATED_PAGE_AND_QUALIFIED_ADJUDICATION",
+      "canonicalAng": null,
+      "canonicalAuthorId": null,
+      "newEvidence": {
+        "upstreamExactRecord": {
+          "line_id": "V41B",
+          "line_group_id": "G4W",
+          "line_group_order": 2,
+          "author_id": "FRID",
+          "section_id": "X63C",
+          "section_order": 2,
+          "source_id": "SGGS",
+          "source_order": 41,
+          "section_name": "{\"Latn\":\"Salok Fareed Jee\"}",
+          "author_name": "{\"Guru\":\"ਸੇਖ ਫਰੀਦ\",\"Latn\":\"Sheikh Farid\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ; ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+          "additional": "{\"type\":\"primary\",\"page\":1377,\"line\":1}",
+          "priority": 1
+        },
+        "upstreamSameGroupPredecessor": {
+          "line_id": "9RH3",
+          "line_group_id": "G4W",
+          "line_group_order": 1,
+          "author_id": "FRID",
+          "section_id": "X63C",
+          "section_order": 2,
+          "source_id": "SGGS",
+          "source_order": 41,
+          "section_name": "{\"Latn\":\"Salok Fareed Jee\"}",
+          "author_name": "{\"Guru\":\"ਸੇਖ ਫਰੀਦ\",\"Latn\":\"Sheikh Farid\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਫਰੀਦਾ. ਦਰ ਦਰਵੇਸੀ ਗਾਖੜੀ; ਚਲਾਂ ਦੁਨੀਆਂ ਭਤਿ ॥",
+          "additional": "{\"type\":\"primary\",\"page\":1377,\"line\":19}",
+          "priority": 1
+        },
+        "sourceGroupAttribution": "Upstream groupG4W has authorFRID/Sheikh Farid, sectionX63C/Salok Fareed Jee, section_order2. This is source-attributed metadata, not a newly granted canonical author assignment.",
+        "pageWitnesses": [
+          {
+            "source": "commonsPrintedScan",
+            "pdfPart": "Two",
+            "pdfPageOneBased": 663,
+            "visibleAng": 1377
+          },
+          {
+            "source": "commonsPrintedScan",
+            "pdfPart": "Two",
+            "pdfPageOneBased": 664,
+            "visibleAng": 1378
+          },
+          {
+            "source": "sikhnet",
+            "zeroBasedPdfPageIndex": 1378,
+            "visibleAng": 1378
+          }
+        ]
+      },
+      "finding": "This is the closing line of Farid Salok2 in the inspected group sequence and page witnesses. It is not an additional line between Kabir Saloks231 and232. The SSA2 primary row itself has page1377,line1 even though its group predecessor is page1377,line19; the pinned importer sorts by physical line, reproducing its misplaced position in the OpenGranth1377 file.",
+      "causeStatus": "OBSERVED_UPSTREAM_PAGE_METADATA_AND_IMPORTER_SORT_PATH; original data-entry cause unknown",
+      "sourceSelectionDecision": {
+        "action": "EXCLUDE_EXACT_PINNED_OCCURRENCE_FROM_SALOK_KABIR_SELECTION",
+        "sourceCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "requiredTextSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0",
+        "reason": "Outside collection membership according to explicit Farid group/heading and sequence evidence. This removes no Kabir Salok and alters no source text.",
+        "retention": "Preserve original occurrence and locator in frozen intake and this sidecar; do not relocate or delete it in the frozen corpus.",
+        "proposedFutureLocation": {
+          "label": "Farid Salok2,line2",
+          "angObservedInPageWitnesses": 1378,
+          "upstreamReportedAng": 1377,
+          "upstreamLineId": "V41B",
+          "upstreamGroupId": "G4W",
+          "status": "PROPOSED_FROM_WITNESSES_NOT_CANONICALLY_ASSIGNED"
+        },
+        "requiredNewSelectionCountEffect": {
+          "rawBoundedOccurrences": 495,
+          "explicitlyExcludedOccurrences": 1,
+          "selectedOccurrences": 494,
+          "verseOccurrences": 486,
+          "numberedSaloks": 243,
+          "headingsAndInvocation": 8
+        }
+      },
+      "remainingWork": [
+        "Qualified Punjabi/Gurbani reviewer to confirm selected page images and passage identity.",
+        "Authenticate edition provenance and adjudicate canonical1378 locator before modifying future canonical registry.",
+        "If reporting upstream, include exact package version,lineV41B,groupG4W,raw metadata,printed page evidence and retained original locator; no upstream report was sent."
+      ]
+    },
+    {
+      "id": "og-location-0324-row001",
+      "frozenClaim": {
+        "id": "og-location-0324-row001",
+        "status": "OPEN_QUARANTINED",
+        "type": "CROSS_ANG_LOCATION_CONFLICT",
+        "runtimeEligible": false,
+        "automaticAuthorInclusion": false,
+        "sourceOccurrence": {
+          "sourceAng": 324,
+          "sourcePath": "corpus/ang-0324.md",
+          "sourceGitBlob": "1d5fb8624c9ddfdfef5a0801081a6cd469dcd540",
+          "sourceOrdinal": 1,
+          "sourcePrintedLine": 1,
+          "sourceWithinLine": 1,
+          "text": "ਤੂੰ ਸਤਿਗੁਰੁ ਹਉ ਨਉਤਨੁ ਚੇਲਾ ॥",
+          "textSha256": "23ca05b987c54ceac5e7994c2ca050503e0e2c419812a7de7eb4c130f5bf6dfd"
+        },
+        "sourceContext": {
+          "previousAcrossFiles": {
+            "sourceAng": 323,
+            "sourcePath": "corpus/ang-0323.md",
+            "sourceGitBlob": "8913904f9d203b0f7c82036af9f143fd5c06a8a1",
+            "sourceOrdinal": 49,
+            "sourcePrintedLine": 19,
+            "sourceWithinLine": 3,
+            "text": "ਮੰਦਭਾਗੀ ਤੇਰੋ ਦਰਸਨੁ ਨਾਹਿ ॥੩॥",
+            "textSha256": "0ccb471e6567818854b4e4fc613a42daca69c9d6c34dd8d75cea96134ed36bdf"
+          },
+          "next": {
+            "sourceAng": 324,
+            "sourcePath": "corpus/ang-0324.md",
+            "sourceGitBlob": "1d5fb8624c9ddfdfef5a0801081a6cd469dcd540",
+            "sourceOrdinal": 2,
+            "sourcePrintedLine": 1,
+            "sourceWithinLine": 2,
+            "text": "ਕਹਿ ਕਬੀਰ ਮਿਲੁ ਅੰਤ ਕੀ ਬੇਲਾ ॥੪॥੨॥",
+            "textSha256": "0a50a9ab847bea319e87faa0ff2dee2ad72b8fb980b593bbc07f6c75a021794c"
+          }
+        },
+        "primaryWitnessUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0324.md",
+        "secondaryWitness": {
+          "provider": "SriGranth",
+          "urls": [
+            "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=323",
+            "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=324"
+          ],
+          "witnessAng": 323,
+          "observationMethod": "Web text observed, not source-saroop adjudication",
+          "context": [
+            {
+              "witnessAng": 323,
+              "text": "ਮੰਦਭਾਗੀ ਤੇਰੋ ਦਰਸਨੁ ਨਾਹਿ ॥੩॥",
+              "textSha256": "0ccb471e6567818854b4e4fc613a42daca69c9d6c34dd8d75cea96134ed36bdf",
+              "pageContext": "Penultimate Gurbani occurrence shown on Ang323"
+            },
+            {
+              "witnessAng": 323,
+              "text": "ਤੂੰ ਸਤਿਗੁਰੁ ਹਉ ਨਉਤਨੁ ਚੇਲਾ ॥",
+              "textSha256": "23ca05b987c54ceac5e7994c2ca050503e0e2c419812a7de7eb4c130f5bf6dfd",
+              "pageContext": "Final Gurbani occurrence shown on Ang323"
+            },
+            {
+              "witnessAng": 324,
+              "text": "ਕਹਿ ਕਬੀਰ ਮਿਲੁ ਅੰਤ ਕੀ ਬੇਲਾ ॥੪॥੨॥",
+              "textSha256": "0a50a9ab847bea319e87faa0ff2dee2ad72b8fb980b593bbc07f6c75a021794c",
+              "pageContext": "First Gurbani occurrence shown on Ang324; closes Shabad2"
+            }
+          ]
+        },
+        "canonicalAng": null,
+        "canonicalAuthorId": null,
+        "resolution": null,
+        "requiredAction": "Confirm the cross-Ang boundary against an authenticated page witness. Do not use source file number as an adjudicated canonical locator."
+      },
+      "reviewStatus": "SOURCE_LOCATOR_SUPPORTED_BY_PRINTED_WITNESS_PENDING_CANONICAL_REVIEW",
+      "canonicalStatus": "PENDING_AUTHENTICATED_PAGE_AND_QUALIFIED_ADJUDICATION",
+      "canonicalAng": null,
+      "canonicalAuthorId": null,
+      "newEvidence": {
+        "upstreamExactRecord": {
+          "line_id": "NQXL",
+          "line_group_id": "CM2",
+          "line_group_order": 10,
+          "author_id": "KABI",
+          "section_id": "F6EB",
+          "section_order": 835,
+          "source_id": "SGGS",
+          "source_order": 7,
+          "section_name": "{\"Latn\":\"Raag Gauree\"}",
+          "author_name": "{\"Guru\":\"ਭਗਤ ਕਬੀਰ\",\"Latn\":\"Bhagat Kabir\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਤੂੰ ਸਤਿਗੁਰੁ; ਹਉ ਨਉਤਨੁ ਚੇਲਾ ॥",
+          "additional": "{\"type\":\"primary\",\"page\":324,\"line\":1}",
+          "priority": 1
+        },
+        "upstreamSameGroupPredecessor": {
+          "line_id": "8DCD",
+          "line_group_id": "CM2",
+          "line_group_order": 9,
+          "author_id": "KABI",
+          "section_id": "F6EB",
+          "section_order": 835,
+          "source_id": "SGGS",
+          "source_order": 7,
+          "section_name": "{\"Latn\":\"Raag Gauree\"}",
+          "author_name": "{\"Guru\":\"ਭਗਤ ਕਬੀਰ\",\"Latn\":\"Bhagat Kabir\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਮੰਦਭਾਗੀ; ਤੇਰੋ ਦਰਸਨੁ ਨਾਹਿ ॥੩॥",
+          "additional": "{\"type\":\"primary\",\"page\":323,\"line\":19}",
+          "priority": 1
+        },
+        "upstreamSameGroupSuccessor": {
+          "line_id": "34ZA",
+          "line_group_id": "CM2",
+          "line_group_order": 11,
+          "author_id": "KABI",
+          "section_id": "F6EB",
+          "section_order": 835,
+          "source_id": "SGGS",
+          "source_order": 7,
+          "section_name": "{\"Latn\":\"Raag Gauree\"}",
+          "author_name": "{\"Guru\":\"ਭਗਤ ਕਬੀਰ\",\"Latn\":\"Bhagat Kabir\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਕਹਿ ਕਬੀਰ ਮਿਲੁ; ਅੰਤ ਕੀ ਬੇਲਾ ॥੪॥੨॥",
+          "additional": "{\"type\":\"primary\",\"page\":324,\"line\":1}",
+          "priority": 1
+        },
+        "sourceGroupAttribution": "Upstream groupCM2 is authorKABI in Raag Gauree,sectionF6EB,section_order835. HeadingXY7Y explicitly names Kabir. Keep attribution as source-backed until qualified review.",
+        "pageWitnesses": [
+          {
+            "source": "commonsPrintedScan",
+            "pdfPart": "One",
+            "pdfPageOneBased": 331,
+            "visibleAng": 323
+          },
+          {
+            "source": "commonsPrintedScan",
+            "pdfPart": "One",
+            "pdfPageOneBased": 332,
+            "visibleAng": 324
+          },
+          {
+            "source": "sikhnet",
+            "zeroBasedPdfPageIndex": 324,
+            "visibleAng": 324
+          }
+        ]
+      },
+      "finding": "The exact upstream recordNQXL is order10 in groupCM2,page324,line1; the following line34ZA is order11,page324,line1. The inspected printed Ang324 and SikhNet typeset Ang324 begin with NQXL. SriGranth instead displays NQXL as the last occurrence on323. All inspected sequences preserve the same surrounding order; the disagreement concerns page assignment, not an omitted or substituted verse.",
+      "causeStatus": "PAGE_DISPLAY_DISAGREEMENT_CONFIRMED; SriGranth data or pagination mechanism not established",
+      "sourceSelectionDecision": {
+        "action": "NO_ACTION_IN_SALOK_KABIR1364_TO1377_SELECTION",
+        "reason": "This Gauri passage is outside the current collection. Preserve PR50 quarantine and both locator claims.",
+        "candidateLocatorForFutureReviewedRegistry": 324,
+        "candidateLocatorBasis": "SSA2metadata plus visually inspected printed Ang324 and SikhNet PDF. This is a candidate source choice, not formal canonical adjudication.",
+        "doNotDo": [
+          "Do not move the frozen OpenGranth occurrence to323 based only on SriGranth.",
+          "Do not silently rewrite SriGranth evidence or describe this as corrected Gurbani text."
+        ]
+      },
+      "remainingWork": [
+        "Qualified reviewer to authenticate the printed witness and confirm canonical page assignment for future Gauri reader.",
+        "Retain the alternate SriGranth323 locator and investigation history even if324 is later approved."
+      ]
+    }
+  ],
+  "supplementalObservations": [
+    {
+      "id": "kabir-heading-terminal-danda",
+      "sourcePath": "corpus/ang-1364.md",
+      "finding": "Pinned OpenGranth collection heading has terminal॥; visually inspected SGPC-labelled scan and SikhNet title do not. Do not claim an exact all-witness match. Preserve the frozen OpenGranth string and record any reader choice of the alternate heading in a separate explicit overlay.",
+      "canonicalCorrectionApplied": false
+    },
+    {
+      "id": "kabir-salok177-mark-and-page-break",
+      "finding": "The two inspected page-image witnesses place part of Salok177 line1 on1373 and the remainder,including ਗਈ with a nasal mark,on1374. The source catalog reports OpenGranth U+0A01 versus SriGranth private-use U+F03D. Raster images cannot adjudicate Unicode encoding. Retain exact selected source and separately record the web representation difference; do not substitute a PUA character into runtime text.",
+      "canonicalCorrectionApplied": false,
+      "sourceOccurrence": {
+        "sourceAng": 1373,
+        "sourcePath": "corpus/ang-1373.md",
+        "sourceGitBlob": "53b2d665ec68672b7e8d313a20d151d6a7d33df1",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਕਬੀਰ ਭਲੀ ਭਈ ਜੋ ਭਉ ਪਰਿਆ ਦਿਸਾ ਗਈਁ ਸਭ ਭੂਲਿ ॥",
+        "textSha256": "f192222230024d7cec964a648b9e2c0c447cb17618be78ba0dc7150c0712bf5d",
+        "id": "sggs.salok-kabir.salok177.line01",
+        "role": "verse"
+      },
+      "printedAngRangeObserved": [
+        1373,
+        1374
+      ],
+      "codePointEquivalenceAdjudicated": false,
+      "vowelVariantClaimed": false
+    },
+    {
+      "id": "page-start231-additional-difference",
+      "finding": "Both inspected page-image witnesses begin Ang1377 with the first line of Salok231,whereas the pinned OpenGranth1377 file begins with its second line. This bounded review does not validate every Ang/line locator in the full Kabir collection.",
+      "canonicalCorrectionApplied": false
+    },
+    {
+      "id": "embedded-author-voices",
+      "finding": "No author reassignment is inferred from the Namdev/Ravidas signatures in Saloks241/242. This discrepancy review does not adjudicate those attributions; parent/catalog retain collection title and embedded headings with separate attribution review."
+    }
+  ],
+  "limitations": [
+    "No scripture text was changed.",
+    "Frozen PR50 and its null canonical fields were not modified.",
+    "No full-source printed collation was performed.",
+    "No qualified human or scholarly review has occurred.",
+    "Hash agreement proves byte identity only.",
+    "No modern translation,audio or image redistribution rights were approved.",
+    "This review makes a bounded,explicit source-selection decision; it does not satisfy a publication gate requiring qualified review."
+  ],
+  "recordedParentBuildDecision": {
+    "status": "EXPLICIT_PROPOSED_READER_OVERLAY_RECORDED_NOT_APPLIED_BY_THIS_REVIEW",
+    "sourceOfDecision": "Parent build agent instructions during26November2026 workstream",
+    "originalIntakeAndExtractionRemainUnchanged": true,
+    "heading": {
+      "id": "sggs.salok-kabir.heading01",
+      "sourceOccurrence": {
+        "sourceAng": 1364,
+        "sourcePath": "corpus/ang-1364.md",
+        "sourceGitBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀਉ ਕੇ ॥",
+        "textSha256": "f650dfbb6ec01c6d674e546975c43a4c82ed2bbf16db7283ca84fbe7595a57f5",
+        "id": "sggs.salok-kabir.heading01",
+        "role": "collection-heading"
+      },
+      "candidateText": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀਉ ਕੇ",
+      "candidateTextSha256": "2335819e76cfad6e36082135f651b46c20d579f57232d18cd18d0016e7d8870b",
+      "basis": [
+        "SriGranth exact heading reported by source-catalog audit",
+        "Visually inspected printed Ang1364,Commons PartTwo PDFpage650",
+        "Visually inspected SikhNet PDF visibleAng1364"
+      ],
+      "changeDescription": "Choose alternate exact witness heading without terminal space and double danda. No general whitespace normalization.",
+      "qualifiedReviewApproved": false
+    },
+    "salok177Line1": {
+      "id": "sggs.salok-kabir.salok177.line01",
+      "decision": "Retain exact pinned OpenGranth U+0A01 string; code/glyph equivalence unresolved.",
+      "originalSourceReportedAng": 1373,
+      "printedAngRangeObserved": [
+        1373,
+        1374
+      ]
+    },
+    "publicationApproved": false
+  }
+}
