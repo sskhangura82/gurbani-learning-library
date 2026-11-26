@@ -21,7 +21,7 @@
 | #40 First repairs | Unchanged since RT-001; its four asks stand; one more for the same reader (R2-X-04) | — |
 | Salok Mahalla 9 draft | Recovered; one S1 problem before any use | R2-K-01 |
 
-24 findings: S1 1 · S2 14 · S3 8 · 1 observation in the builder's favour.
+24 findings: S1 1 · S2 13 · S3 9 · 1 observation in the builder's favour.
 
 ## Drafts I wrote in this round — for the builder to cross-review, not for me to approve
 
