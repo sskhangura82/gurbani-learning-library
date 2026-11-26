@@ -12,7 +12,23 @@
   window.GLP_SOURCE_INTEGRITY_RECEIPT=await window.GLPSourceIntegrity.verify('sukhmani',pack);
   m=L.model(pack);
  }catch(error){
-  sourceRoot.dataset.sourceIntegrity='failed';sourceRoot.setAttribute('aria-busy','false');sourceRoot.setAttribute('role','alert');sourceRoot.replaceChildren(el('p','The original scripture could not be verified, so it has not been displayed. Reload while online. Your saved learning has not been changed.','coverage-note'));announce('Scripture verification failed. Reload while online.');return;
+  sourceRoot.dataset.sourceIntegrity='failed';sourceRoot.setAttribute('aria-busy','false');sourceRoot.setAttribute('role','alert');sourceRoot.replaceChildren(el('p','The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed.','coverage-note'));
+  const recovery=el('section',null,'coverage-note'),result=el('p');result.setAttribute('role','status');
+  const backup=button('Export original learning',()=>{
+   try{
+    const key='glp001.sukhmani.v1',raw=localStorage.getItem(key);
+    if(raw===null){result.textContent='No saved Sukhmani learning found in this browser.';return;}
+    // Preserve the exact raw string in either envelope. Valid v2 state can be
+    // imported by the normal reader once its source has verified.
+    let state;try{state=JSON.parse(raw);}catch{}
+    const valid=state&&typeof state==='object'&&!Array.isArray(state)&&state.version===2;
+    const envelope=valid?{projectId:'GLP-001',format:'glp-sukhmani-learning',version:1,composition:'sukhmani',createdAt:new Date().toISOString(),state,raw}:{projectId:'GLP-001',format:'glp-sukhmani-raw-recovery',version:1,key,createdAt:new Date().toISOString(),raw};
+    download(valid?'sukhmani-learning.json':'sukhmani-original-record.json',JSON.stringify(envelope,null,2));
+    result.textContent='Backup download requested. Keep the file and check it before removing any site data.';
+   }catch(_){result.textContent='Backup unavailable. Do not clear site data.';}
+  },{id:'source-failure-export'});
+  recovery.append(el('p','Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup.'),backup,result);
+  sourceRoot.append(recovery);announce('Scripture verification failed. Original learning export remains available.');return;
  }
  sourceRoot.dataset.sourceIntegrity='verified';sourceRoot.setAttribute('aria-busy','false');sourceRoot.textContent='';sourceControls.forEach(([node,disabled])=>{node.disabled=disabled;});if(sourceFooter)sourceFooter.hidden=false;
  const firstAshtpadi=pack.ashtpadis[0].number,lastAshtpadi=pack.ashtpadis[pack.ashtpadis.length-1].number,totalAshtpadis=24;

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "total": 11,
-  "scope": "Japji unknown/oversize/colliding saved-learning preservation, real normalizer and storage; synthetic records only",
+  "total": 20,
+  "scope": "Japji retained-learning preservation, published old-writer fixture, backup and failure behavior; synthetic records only",
   "checks": [
     {
       "name": "An unknown saved note is kept in full with its original identifier",
@@ -45,6 +45,42 @@
     },
     {
       "name": "Invalid non-text notes refuse normalization rather than silently disappearing",
+      "status": "PASS"
+    },
+    {
+      "name": "New write archives retained items before an old tab can replace the v2 record",
+      "status": "PASS"
+    },
+    {
+      "name": "Archive is persisted even when a previously unseen unknown note is opened before any main write",
+      "status": "PASS"
+    },
+    {
+      "name": "Export after an old overwrite carries the independent archive and restores it to a new browser",
+      "status": "PASS"
+    },
+    {
+      "name": "Restoring a retained archive alone keeps current notes and merges the retained records",
+      "status": "PASS"
+    },
+    {
+      "name": "If writing the separate archive fails, the original primary record is not replaced",
+      "status": "PASS"
+    },
+    {
+      "name": "Damaged archive refuses new writes and is exported byte for byte",
+      "status": "PASS"
+    },
+    {
+      "name": "Failed primary write during import rolls back the archive without losing earlier retained items",
+      "status": "PASS"
+    },
+    {
+      "name": "An ordinary reader without retained items does not create an archive",
+      "status": "PASS"
+    },
+    {
+      "name": "The actual published normalizer and shared writer cannot erase the new separate archive",
       "status": "PASS"
     }
   ]

@@ -81,6 +81,66 @@ try{
    return {rawRecordPreserved:true,exportPreserved:true,readingContinues:true};
   },raw);
  }
+ // Real viewport geometry, not Playwright's permissive visibility predicate.
+ async function noticeOnScreen(page){
+  const r=await page.locator('#retained-learning').evaluate(n=>{
+   const b=n.getBoundingClientRect(),button=n.querySelector('button'),q=button.getBoundingClientRect();
+   const hit=document.elementFromPoint(q.left+q.width/2,q.top+q.height/2);
+   return {width:b.width,height:b.height,top:b.top,bottom:b.bottom,viewport:innerHeight,buttonHeight:q.height,buttonVisible:button.contains(hit),role:n.querySelector('p').getAttribute('role')};
+  });
+  assert.ok(r.width>=100&&r.height>=44&&r.top>=-1&&r.bottom<=r.viewport&&r.buttonHeight>=44&&r.buttonVisible&&r.role==='status',JSON.stringify(r));return r;
+ }
+ for(const [name,read] of [['no prior place',undefined],['Pauri 2',{id:'pauri02.line01',offset:0}],['Pauri 20',{id:'pauri20.line01',offset:0}],['at the top',{id:'mool.line01',offset:0}]]){
+  await scenario('Recovery notice remains on screen: '+name,async(page)=>{
+   await go(page,'full-japji.html');await japjiReady(page);await page.waitForTimeout(900);
+   const onOpen=await noticeOnScreen(page);
+   await page.evaluate(()=>window.scrollBy({top:900,behavior:'instant'}));await page.waitForTimeout(600);
+   const afterScroll=await noticeOnScreen(page);
+   await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.waitForTimeout(600);
+   const backAtTop=await noticeOnScreen(page);
+   await page.locator('#retained-learning button').click();await page.locator('#retained-learning-items').waitFor();
+   return {onOpen,afterScroll,backAtTop,actualButtonHitTest:true};
+  },JSON.stringify({...seedState,read}));
+ }
+ await scenario('Actual published old writer in a second browser tab leaves archive intact and new tab recovers it',async(page,context)=>{
+  const oldPage=await context.newPage();await go(oldPage,'index.html');
+  await oldPage.addScriptTag({url:origin+prefix+'tests/fixtures/rt1-published/continuous-core.js'});
+  await oldPage.addScriptTag({url:origin+prefix+'tests/fixtures/rt1-published/shared-learning.js'});
+  await oldPage.addScriptTag({url:origin+prefix+'js/japji-full-data.js'});
+  await go(page,'full-japji.html');await japjiReady(page);
+  const archiveKey='glp001.continuous.retained.v1';
+  const before=await page.evaluate(k=>localStorage.getItem(k),archiveKey);assert.ok(before);
+  const oldResult=await oldPage.evaluate(async({key,archiveKey})=>{
+   const C=window.GLPContinuousCore,units=window.GLP_FULL_JAPJI.units,model=C.flatten(units),norm=s=>C.normalise(s,model,units);
+   const writer=window.GLP_SHARED_LEARNING.create({storage:localStorage,locks:navigator.locks,key,normalise:norm,seed:norm({})});
+   await writer.save(norm({}),{preferences:{theme:'amrit'}});
+   return {lostInline:!('keptAside' in JSON.parse(localStorage.getItem(key))),archive:localStorage.getItem(archiveKey)};
+  },{key:KEY,archiveKey});
+  assert.equal(oldResult.lostInline,true);assert.equal(oldResult.archive,before);
+  await oldPage.close();await page.reload();await japjiReady(page);
+  const reread=await page.evaluate(()=>window.GLP_CONTINUOUS_DEBUG.getState());retainedAssertions(reread);
+  await noticeOnScreen(page);await page.locator('#retained-learning button').click();
+  const backup=await exportJapji(page);assert.equal(backup.records[archiveKey],before);
+  return {actualPublishedModules:true,inlineDroppedByOldWriter:true,archiveUnchanged:true,retainedItemsRestored:3,archiveIncludedInDownload:true};
+ },JSON.stringify(seedState));
+ await scenario('Reflection without a bookmark appears in Saved learning and exact backup',async(page)=>{
+  await go(page,'full-japji.html');await japjiReady(page);
+  await page.locator('#explore').click();await page.locator('#dialog-body button[data-action="learning"]').click();
+  const item=page.locator('#dialog-body button[data-action="jump"]').filter({hasText:'Reflection'});
+  assert.equal(await item.count(),1);assert.match(await item.innerText(),/Reflection/);
+  assert.equal(await page.evaluate(()=>window.GLP_CONTINUOUS_DEBUG.getState().bookmarks.length),0);
+  const backup=await exportJapji(page);assert.equal(JSON.parse(backup.records[KEY]).notes['pauri02.line01'],knownText);
+  return {reflectionOnlyListed:true,exactBackup:true};
+ },JSON.stringify({...seedState,bookmarks:[],notes:{'pauri02.line01':knownText}}));
+ await scenario('Saved occurrence remains exact through three reloads',async(page)=>{
+  await go(page,'full-japji.html');await japjiReady(page);await page.waitForTimeout(850);
+  const read=async()=>page.evaluate(()=>window.GLP_CONTINUOUS_DEBUG.getState().read.id);
+  assert.equal(await read(),'pauri20.line01');
+  for(let i=0;i<3;i++){await page.reload();await japjiReady(page);await page.waitForTimeout(850);assert.equal(await read(),'pauri20.line01');}
+  await go(page,'index.html');await page.goBack();await japjiReady(page);await page.waitForTimeout(850);
+  assert.equal(await read(),'pauri20.line01');
+  return {reloads:3,browserBack:true,exactOccurrence:await read()};
+ },JSON.stringify({...seedState,bookmarks:[],notes:{},read:{id:'pauri20.line01',offset:0}}));
  await scenario('Japji all visible EN/PA meanings are in native accessible names',async(page,context)=>{await go(page,'full-japji.html');await japjiReady(page);await page.locator('.modes button[data-depth="understand"]').click();return await nativeNames(page,context,'Japji',385);});
  await scenario('Sukhmani all visible EN/PA meanings are in native accessible names',async(page,context)=>{await go(page,'sukhmani.html');await page.waitForFunction(()=>document.querySelectorAll('#sukhmani-text .sk-line').length===2027);await page.locator('.modes button[data-depth="understand"]').click();return await nativeNames(page,context,'Sukhmani',2027);});
  for(const name of names)await scenario('Nitnem '+name+': all visible EN/PA meanings are in native accessible names',async(page,context)=>{

@@ -32,7 +32,11 @@ async function ready(page,k){await page.locator(k.root+'[data-source-integrity="
 async function seed(context){await context.addInitScript(({keys,sentinel})=>{for(const key of keys)localStorage.setItem(key,sentinel);},{keys:storageKeys,sentinel});}
 async function blocked(page,k){
  await page.locator(k.root+'[data-source-integrity="failed"]').waitFor();assert.equal(await page.locator(k.root+' '+k.rows).count(),0);assert.match(await page.locator(k.root).innerText(),/has not been displayed/);
- assert.ok(await page.locator('button').evaluateAll(nodes=>nodes.every(n=>n.disabled)));assert.ok(await page.locator('.end-note').evaluate(n=>n.hidden));
+ assert.ok(await page.locator('button').evaluateAll(nodes=>nodes.every(n=>n.id==='source-failure-export'?!n.disabled:n.disabled)));assert.ok(await page.locator('.end-note').evaluate(n=>n.hidden));
+ const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#source-failure-export').click()]);
+ const backup=JSON.parse(await fs.readFile(await download.path(),'utf8'));
+ if(k.global==='GLP_FULL_JAPJI')assert.equal(backup.records[storageKeys[0]],sentinel);
+ else assert.equal(backup.raw,sentinel);
  assert.deepEqual(await page.evaluate(keys=>keys.map(k=>localStorage.getItem(k)),storageKeys),storageKeys.map(()=>sentinel));
  assert.equal(await page.evaluate(()=>window.GLP_SOURCE_INTEGRITY_RECEIPT),undefined);
 }
@@ -47,6 +51,37 @@ try{
   });
   await run(kind,'Browser SRI rejects a changed source JavaScript byte stream',async(page,context,k)=>{await seed(context);await page.route('**/'+k.data,async route=>{const raw=await fs.readFile(path.join(root,k.data),'utf8');await route.fulfill({status:200,contentType:'text/javascript; charset=utf-8',body:raw+'\n/* Deliberate SRI mismatch fixture. */\n'});});await go(page,k);await blocked(page,k);assert.equal(await page.evaluate(name=>typeof window[name],k.global),'undefined');});
   await run(kind,'Missing verification module fails closed',async(page,context,k)=>{await seed(context);await page.route('**/js/source-integrity.js',route=>route.abort('failed'));await go(page,k);await blocked(page,k);});
+  await run(kind,'Valid synthetic learning exported from refused reader can be restored by the verified reader',async(page,context,k)=>{
+   const japji=kind==='japji',key=storageKeys[japji?0:1],id=japji?'pauri02.line01':'sukhmani.a04.p02.l03',note='SYNTHETIC exact recovery · ਪੰਜਾਬੀ';
+   const retainedKey='glp001.continuous.retained.v1',kept={notes:[{id:'synthetic.future.line',text:'SYNTHETIC retained',reason:'unknown_line'}],bookmarks:['synthetic.future.line']};
+   const fixture=japji?{version:2,read:{id,offset:0},guide:{index:0,token:0},bookmarks:[id],notes:{[id]:note},keptAside:kept}:{version:2,read:id,guide:id,bookmarks:[id],notes:{[id]:note}};
+   const raw=JSON.stringify(fixture),archive=JSON.stringify({version:1,keptAside:kept});
+   await page.goto(origin+prefix+'index.html');
+   await page.evaluate(({key,raw,japji,retainedKey,archive})=>{localStorage.setItem(key,raw);if(japji)localStorage.setItem(retainedKey,archive);},{key,raw,japji,retainedKey,archive});
+   await page.route('**/js/source-integrity.js',route=>route.abort('failed'));await go(page,k);
+   await page.locator(k.root+'[data-source-integrity="failed"]').waitFor();
+   assert.equal(await page.locator(k.root+' '+k.rows).count(),0);
+   const [dl]=await Promise.all([page.waitForEvent('download'),page.locator('#source-failure-export').click()]);
+   const file=await fs.readFile(await dl.path(),'utf8'),exported=JSON.parse(file);
+   assert.equal(japji?exported.records[key]:exported.raw,raw);
+   if(japji)assert.equal(exported.records[retainedKey],archive);
+   assert.equal(await page.evaluate(key=>localStorage.getItem(key),key),raw);
+   // A fresh context would also start empty. Clear ONLY this synthetic
+   // localhost fixture, then reopen with the real verifier and import.
+   await page.unroute('**/js/source-integrity.js');
+   await page.evaluate(({key,retainedKey})=>{localStorage.removeItem(key);localStorage.removeItem(retainedKey);},{key,retainedKey});
+   await go(page,k);await ready(page,k);
+   if(japji){
+    await page.waitForFunction(()=>!!window.GLP_CONTINUOUS_DEBUG);
+    await page.locator('#explore').click();await page.locator('#dialog-body button[data-action="learning"]').click();
+    await page.locator('#import-file').setInputFiles({name:'recovery.json',mimeType:'application/json',buffer:Buffer.from(file)});
+    await page.locator('[data-action="apply-import"]').click();
+   }else{
+    await page.locator('#sk-tools').click();await page.locator('#sk-import').setInputFiles({name:'recovery.json',mimeType:'application/json',buffer:Buffer.from(file)});
+   }
+   await page.waitForFunction(({key,id,note})=>{const r=JSON.parse(localStorage.getItem(key)||'{}');return r.notes?.[id]===note&&r.bookmarks?.includes(id);},{key,id,note});
+   if(japji){const restored=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),retainedKey);assert.deepEqual(restored.keptAside,kept);}
+  });
   const object='window.'+kinds[kind].global,unit=object+'.'+kinds[kind].field+'[4]',line=unit+'.lines[1]',changed='ਬਦਲਿਆ ਹੋਇਆ ਪਾਠ ॥',changedHash=createHash('sha256').update(changed).digest('hex');
   const cases=[
    ['Changed text with matching stored hash is caught after legitimate SRI',line+'.'+kinds[kind].text+'='+JSON.stringify(changed)+';'+line+'.sha256='+JSON.stringify(changedHash)+';'],

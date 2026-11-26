@@ -121,3 +121,9 @@ body.roomy-spacing .passage{padding:0;margin-top:40px}body.roomy-spacing .script
  .reading-dock .modes{flex:0 0 132px}
  .reading-dock #pace-shortcut{flex:0 0 45px;width:45px;min-width:45px}
 }
+
+/* Saved-learning recovery must remain visible even during immersive reading. */
+.recovery-notice{position:sticky;top:0;z-index:25;max-width:760px;margin:0 auto 8px;display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--surface);border:1px solid var(--accent);border-radius:8px;color:var(--ink);font-size:14px;line-height:1.5}
+.recovery-notice p{flex:1;margin:0;min-width:0;overflow-wrap:anywhere}
+.recovery-notice button{flex:0 0 auto;min-height:44px;max-width:45%;padding:6px 9px;font-size:13px;white-space:normal}
+@media print{.recovery-notice{display:none!important}}

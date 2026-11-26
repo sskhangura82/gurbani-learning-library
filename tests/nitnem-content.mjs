@@ -362,7 +362,7 @@ test('The manifest, complete course, reader pins and offline assets agree byte f
   assert.ok(fs.existsSync(japji),'Seventh bani resolves to the preserved Japji reader');
 });
 
-test('Published source and teaching are unchanged; only four explicitly recorded runtime repairs amend the old reading files', () => {
+test('Published source and teaching are unchanged; explicitly recorded runtime amendments form a continuous chain', () => {
   const frozen=json('evidence/nitnem-prior-runtime-baseline.json');
   assert.equal(sha(read('evidence/nitnem-prior-runtime-baseline.json')),'aa94396a6b6c773661c5ab261e537c580e2fd68385b4fc3324cc5991aabdb1fb','The original baseline itself is immutable');
   assert.equal(frozen.commit,'41194b8d135e511d6d3af499e7906562437a55e2');
@@ -371,10 +371,16 @@ test('Published source and teaching are unchanged; only four explicitly recorded
   assert.equal(ledger.changeBaseline,'a3476ac4b9be90dde350fb35dd13ce0b672c120d');
   assert.equal(ledger.claudeReviewCommit,'ffd3d179a16c9c656905dcedce34a080ffee54ff');
   assert.deepEqual(Object.keys(ledger.amendments).sort(),['full-japji.html','js/japji-full.js','js/sukhmani-reader.js','sukhmani.html']);
+  const followup=json('evidence/claude-review-runtime-followup-amendments.json');
+  assert.equal(followup.changeBaseline,'09e829efd63e99fc5c3f5f849f122a49b0dc22a9');
+  assert.equal(followup.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-amendments.json')));
+  assert.deepEqual(Object.keys(followup.amendments).sort(),['js/japji-full.js','js/sukhmani-reader.js']);
   for (const [path,digest] of Object.entries(frozen.files)) {
-    const amendment=ledger.amendments[path];
+    const amendment=ledger.amendments[path],next=followup.amendments[path];
     if(amendment){assert.equal(amendment.before,digest,path+' immutable prior hash');assert.ok(amendment.findings.includes('CI-R-01'));}
-    assert.equal(sha(read(path)),amendment?.after||digest,path+' documented runtime or source preservation');
+    const previous=amendment?.after||digest;
+    if(next){assert.equal(next.before,previous,path+' exact prior runtime hash');assert.ok(next.findings.includes('CI-R-08'));}
+    assert.equal(sha(read(path)),next?.after||previous,path+' documented runtime or source preservation');
   }
 });
 
