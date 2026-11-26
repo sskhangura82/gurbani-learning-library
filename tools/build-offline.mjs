@@ -8,10 +8,12 @@ const file=path.join(root,'sw.js'),source=fs.readFileSync(file,'utf8');
 const previous=JSON.parse(source.match(/const EXPECTED=(\{[^\n]+\});/)[1]);
 const additions=['./nitnem/','./nitnem/index.html','./nitnem/reader.js','./nitnem/reader.css','./nitnem/continuous-core.js','./nitnem/appearance.js','./nitnem/appearance.css','./nitnem/local-learning.js','./nitnem/offline.js','./nitnem/learning/learning-ui.js','./nitnem/learning/course.complete.json','./nitnem/data/library.json',...['jaap','savaiye','chaupai','anand','rehras','sohila'].map(name=>'./nitnem/data/'+name+'.json')];
 additions.push('./js/source-integrity.js');
+additions.push('./salok-mahalla9/','./salok-mahalla9/index.html','./salok-mahalla9/data/library.json','./salok-mahalla9/data/salok-mahalla9.json','./salok-mahalla9/learning/course.complete.json');
+additions.push('./vendor/opengranth/LICENSE','./vendor/opengranth/NOTICE');
 const expected={};
 for(const name of new Set([...Object.keys(previous),...additions])){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.14.2-claude-review-repairs-20261126-2";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.15-salok-mahalla9-review-20261126-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

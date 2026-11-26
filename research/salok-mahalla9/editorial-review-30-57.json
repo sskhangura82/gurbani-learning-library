@@ -1,0 +1,908 @@
+{
+  "meta": {
+    "artifact": "GLP-001 Salok Mahalla 9 independent editorial review, Saloks 30–57",
+    "reviewType": "INDEPENDENT_AI_EDITORIAL_REVIEW",
+    "status": "CHANGES_REQUESTED_FOR_DRAFT_INTEGRATION",
+    "createdAtUtc": "2026-11-26T17:47:00.508769+00:00",
+    "reviewer": "/root/salok_teaching_01_29",
+    "author": "/root/salok_teaching_30_57",
+    "input": {
+      "path": "/workspace/scratch/c4badbece609/salok-build/teaching-30-57.json",
+      "sha256": "f73596d130b8946182613b808ed01eb683a2704d0f3b7bcf0d7e837f6c70c54c",
+      "bytes": 169767,
+      "frozen": true
+    },
+    "source": {
+      "path": "/workspace/scratch/c4badbece609/salok-build/source-selected.json",
+      "sha256": "e70448f2682b2f19132f15384a11bd51538a3e3d007ef98706a8ffac01ca179c",
+      "openGranthCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+      "sourceUnchanged": true,
+      "scope": "The exact two-line occurrences for numbered Saloks 30–57 in the frozen selection; heading and adjacent composition boundaries retained."
+    },
+    "qualifiedHumanReviewCount": 0,
+    "scholarApproved": false,
+    "publicationApproved": false,
+    "authorFileModified": false,
+    "applicationInstruction": "Check the exact input and source hashes, then apply only the paired field replacements and source append in this sidecar. The author file is frozen evidence, not the mutation target. Recompute output provenance after assembling the draft."
+  },
+  "coverage": {
+    "saloksReviewed": 28,
+    "salokRange": [
+      30,
+      57
+    ],
+    "sourceLinesReviewed": 56,
+    "englishLineMeaningsReviewed": 56,
+    "punjabiLineMeaningsReviewed": 56,
+    "pairedLineContextsReviewed": 56,
+    "pairedSummariesReviewed": 28,
+    "pairedStudiesReviewed": 28,
+    "exactVocabularyEntriesChecked": 56,
+    "reviewedFields": [
+      "lines[0..1].simpleEn",
+      "lines[0..1].simplePa",
+      "lines[0..1].interpretiveCaution",
+      "lines[0..1].interpretiveCautionPa",
+      "simple.en",
+      "simple.pa",
+      "study.focus",
+      "study.focusPa",
+      "study.closeReading",
+      "study.closeReadingPa",
+      "study.words[*].gurmukhi",
+      "study.words[*].workingGloss",
+      "study.words[*].workingGlossPa",
+      "study.words[*].status",
+      "study.interpretationCare",
+      "study.interpretationCarePa",
+      "study.reflection",
+      "study.reflectionPa",
+      "study.teachBack",
+      "study.teachBackPa",
+      "sources[*].url",
+      "sources[*].title",
+      "sources[*].scope"
+    ],
+    "allFieldsReviewedIncludes": "All values within the listed fields, including interpretation, reflection, teach-back and source-scope statements; no sample-only review."
+  },
+  "sourceChecks": [
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1428&g=1&h=0&k=0&p=0&r=0&t=0",
+      "scope": "Public-domain original text on Ang 1428, especially exact line anchors, similes and vocabulary."
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=0",
+      "scope": "Public-domain original text on Ang 1429, including Dohra and the boundary after Salok 57."
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/1428.html",
+      "scope": "Limited check of the explicit elephant-bathing explanatory note for Salok 46."
+    },
+    {
+      "url": "https://www.gurugranthdarpan.net/1429.html",
+      "scope": "Limited verification of the existing spiritual-strength/bonds attribution at 53 and the existing lexical/conditional attribution at 56."
+    },
+    {
+      "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=1",
+      "scope": "Limited verification that the cited English rendering of 56 emphasizes rarity of remembrance."
+    }
+  ],
+  "findings": [
+    {
+      "id": "SM9-43-STUDY-PRODUCT-POLICY",
+      "ordinal": 43,
+      "severity": "medium",
+      "category": "reader_facing_editorial_content",
+      "finding": "The close reading interrupts the passage with the app’s authority policy and a hypothetical mood comparison. The Divine, liberation and union meanings are otherwise preserved. Replace that interruption with direct analysis of the two source lines.",
+      "evidenceUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1428&g=1&h=0&k=0&p=0&r=0&t=0"
+      ],
+      "corrections": [
+        {
+          "kind": "replace_paired_fields",
+          "ordinal": 43,
+          "englishPath": "study.closeReading",
+          "punjabiPath": "study.closeReadingPa",
+          "beforeEn": "The first line locates the decisive matter within the heart: Ram’s simran abides there. It then names the person as mukta, liberated. The second line strengthens the claim through the language of no separation from Hari and asks the hearer to accept it as true. This is more than saying that remembrance improves a mood. The Salok speaks about spiritual freedom and the relationship between the devotee and the Divine. Its confidence should remain visible, while personal claims to spiritual status remain outside the app’s judgement. The reader can attend to the direction of the teaching without using it to announce their own attainment.",
+          "beforePa": "ਪਹਿਲੀ ਤੁਕ ਮੁੱਖ ਗੱਲ ਹਿਰਦੇ ਵਿੱਚ ਰੱਖਦੀ ਹੈ: ਉੱਥੇ ਰਾਮ ਦਾ ਸਿਮਰਨ ਟਿਕਿਆ ਹੈ। ਫਿਰ ਉਸ ਮਨੁੱਖ ਨੂੰ ਮੁਕਤਾ, ਅਰਥਾਤ ਮੁਕਤ, ਆਖਦੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਹਰਿ ਨਾਲ ਵਿੱਥ ਨਾ ਰਹਿਣ ਦੇ ਬੋਲਾਂ ਰਾਹੀਂ ਗੱਲ ਹੋਰ ਡੂੰਘੀ ਕਰਦੀ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਸੱਚੀ ਮੰਨਣ ਲਈ ਕਹਿੰਦੀ ਹੈ। ਇਹ ਕੇਵਲ ਮਨ ਦਾ ਮੂਡ ਚੰਗਾ ਹੋਣ ਦੀ ਗੱਲ ਨਹੀਂ। ਸਲੋਕ ਆਤਮਕ ਛੁਟਕਾਰੇ ਅਤੇ ਭਗਤ ਦੇ ਪ੍ਰਭੂ ਨਾਲ ਸੰਬੰਧ ਬਾਰੇ ਹੈ। ਇਸ ਦੇ ਭਰੋਸੇ ਵਾਲੇ ਬੋਲ ਕਾਇਮ ਰਹਿਣੇ ਚਾਹੀਦੇ ਹਨ, ਪਰ ਕਿਸੇ ਵਿਅਕਤੀ ਦੇ ਆਤਮਕ ਦਰਜੇ ਦਾ ਫ਼ੈਸਲਾ ਐਪ ਨਹੀਂ ਕਰਦੀ। ਪਾਠਕ ਸਿੱਖਿਆ ਦੀ ਦਿਸ਼ਾ ਵੱਲ ਧਿਆਨ ਦੇ ਸਕਦਾ ਹੈ, ਬਿਨਾ ਇਸ ਨੂੰ ਆਪਣੀ ਪ੍ਰਾਪਤੀ ਦਾ ਐਲਾਨ ਬਣਾਏ।",
+          "afterEn": "The first line places Ram’s simran within the heart and names the person who holds this remembrance as mukta, liberated. The second line develops that teaching through the language of no separation from Hari, then asks the hearer to accept it as true. The movement is from inward remembrance to freedom and union with the Divine. These claims belong together: the Salok connects liberation with a devotional relationship. Its final appeal gives the teaching a firm, assuring voice. Keeping both lines together helps us attend to remembrance, liberation and the absence of separation as connected parts of the same statement.",
+          "afterPa": "ਪਹਿਲੀ ਤੁਕ ਰਾਮ ਦੇ ਸਿਮਰਨ ਨੂੰ ਹਿਰਦੇ ਅੰਦਰ ਰੱਖਦੀ ਹੈ ਅਤੇ ਇਸ ਸਿਮਰਨ ਵਾਲੇ ਮਨੁੱਖ ਨੂੰ ਮੁਕਤਾ, ਅਰਥਾਤ ਮੁਕਤ, ਆਖਦੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਹਰਿ ਨਾਲ ਵਿੱਥ ਨਾ ਰਹਿਣ ਦੇ ਬੋਲਾਂ ਰਾਹੀਂ ਸਿੱਖਿਆ ਅੱਗੇ ਵਧਾਉਂਦੀ ਹੈ ਅਤੇ ਸੁਣਨ ਵਾਲੇ ਨੂੰ ਇਹ ਗੱਲ ਸੱਚੀ ਮੰਨਣ ਲਈ ਕਹਿੰਦੀ ਹੈ। ਗੱਲ ਹਿਰਦੇ ਦੇ ਸਿਮਰਨ ਤੋਂ ਆਤਮਕ ਛੁਟਕਾਰੇ ਅਤੇ ਪ੍ਰਭੂ ਨਾਲ ਮਿਲਾਪ ਵੱਲ ਜਾਂਦੀ ਹੈ। ਇਹ ਗੱਲਾਂ ਇਕੱਠੀਆਂ ਹਨ: ਸਲੋਕ ਮੁਕਤੀ ਨੂੰ ਭਗਤੀ ਦੇ ਸੰਬੰਧ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਅੰਤਲੇ ਬੋਲ ਸਿੱਖਿਆ ਨੂੰ ਪੱਕੇ ਭਰੋਸੇ ਦੀ ਆਵਾਜ਼ ਦਿੰਦੇ ਹਨ। ਦੋਵੇਂ ਤੁਕਾਂ ਇਕੱਠੀਆਂ ਪੜ੍ਹ ਕੇ ਅਸੀਂ ਸਿਮਰਨ, ਮੁਕਤੀ ਅਤੇ ਵਿੱਥ ਨਾ ਰਹਿਣ ਨੂੰ ਉਸੇ ਸਿੱਖਿਆ ਦੇ ਜੁੜੇ ਹੋਏ ਹਿੱਸਿਆਂ ਵਜੋਂ ਵੇਖ ਸਕਦੇ ਹਾਂ।"
+        }
+      ],
+      "sourceOrMeaningChange": false
+    },
+    {
+      "id": "SM9-46-SIMILE-PROVENANCE",
+      "ordinal": 46,
+      "severity": "medium",
+      "category": "source_scope",
+      "finding": "The line-context note explains how the elephant-bathing image works, but the listed source supplies only the original verse. Darpan’s explicit note supports this limited traditional explanation; add its provenance. No meaning correction is requested.",
+      "evidenceUrls": [
+        "https://www.gurugranthdarpan.net/1428.html"
+      ],
+      "corrections": [
+        {
+          "kind": "append_source",
+          "ordinal": 46,
+          "path": "sources",
+          "source": {
+            "url": "https://www.gurugranthdarpan.net/1428.html",
+            "title": "Professor Sahib Singh, Sri Guru Granth Darpan, Ang 1428, Salok 46",
+            "scope": "Limited provenance check for the elephant-bathing simile: the explanatory note describes the elephant covering itself with dust after bathing. No modern commentary paragraph is copied."
+          }
+        }
+      ],
+      "sourceOrMeaningChange": false
+    },
+    {
+      "id": "SM9-56-SELECTED-READING-CONSISTENCY",
+      "ordinal": 56,
+      "severity": "medium",
+      "category": "interpretive_consistency",
+      "finding": "The simple line, summary and close reading count Guru and Gobind separately, although the interpretation note gives Sahib Singh’s grouping of ਸਾਧੂ as Guru and ਗੁਰੁ ਗੋਬਿੰਦੁ as the Timeless One. The conditional reading of ਕਿਨ is already selected. Make that selected lexical reading equally explicit and consistent in the simple and study layers; preserve the stated alternative and all original Gurbani. This is a declared interpretation choice, not a claim that alternatives are settled.",
+      "authorCoordination": "The author acknowledged this ambiguity and agreed to a consistent, explicitly selected Sahib Singh reading while leaving the frozen input unchanged.",
+      "evidenceUrls": [
+        "https://www.gurugranthdarpan.net/1429.html",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1429&g=1&h=0&k=0&p=0&r=0&t=1"
+      ],
+      "corrections": [
+        {
+          "kind": "replace_paired_fields",
+          "ordinal": 56,
+          "englishPath": "lines.0.simpleEn",
+          "punjabiPath": "lines.0.simplePa",
+          "beforeEn": "Naam remains; the holy guide remains; the Guru and Gobind remain.",
+          "beforePa": "ਨਾਮ ਰਹਿੰਦਾ ਹੈ; ਸਾਧੂ, ਪਵਿੱਤਰ ਮਾਰਗ-ਦਰਸ਼ਕ, ਰਹਿੰਦਾ ਹੈ; ਗੁਰੂ ਅਤੇ ਗੋਬਿੰਦ ਰਹਿੰਦੇ ਹਨ।",
+          "afterEn": "Naam remains; the Guru remains; Gobind, the Timeless One, remains.",
+          "afterPa": "ਨਾਮ ਸਾਥ ਰਹਿੰਦਾ ਹੈ; ਗੁਰੂ ਸਾਥ ਰਹਿੰਦਾ ਹੈ; ਗੋਬਿੰਦ, ਅਕਾਲ ਪੁਰਖ, ਸਾਥ ਰਹਿੰਦਾ ਹੈ।"
+        },
+        {
+          "kind": "replace_paired_fields",
+          "ordinal": 56,
+          "englishPath": "lines.0.interpretiveCaution",
+          "punjabiPath": "lines.0.interpretiveCautionPa",
+          "beforeEn": "This is a working reading of a compact list. The nuances of sadhu and guru-gobind are explained in Study; Gobind is not identified here as Guru Gobind Singh Ji.",
+          "beforePa": "ਇਹ ਸੰਖੇਪ ਨਾਮ-ਲੜੀ ਦੀ ਮੁੱਢਲੀ ਪੜ੍ਹਤ ਹੈ। ਸਾਧੂ ਅਤੇ ਗੁਰੁ ਗੋਬਿੰਦੁ ਦੇ ਭਾਵ ਅਧਿਐਨ ਵਿੱਚ ਖੋਲ੍ਹੇ ਹਨ; ਇੱਥੇ ਗੋਬਿੰਦ ਨੂੰ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦਾ ਨਾਮ ਨਹੀਂ ਮੰਨਿਆ।",
+          "afterEn": "This draft follows Sahib Singh’s reading: ਸਾਧੂ refers to the Guru, and ਗੁਰੁ ਗੋਬਿੰਦੁ to the Timeless One. These are interpretive choices.",
+          "afterPa": "ਇਸ ਮੁੱਢਲੀ ਵਿਆਖਿਆ ਵਿੱਚ ਸਾਹਿਬ ਸਿੰਘ ਦੀ ਪੜ੍ਹਤ ਲਈ ਹੈ: ਸਾਧੂ ਤੋਂ ਗੁਰੂ ਅਤੇ ਗੁਰੁ ਗੋਬਿੰਦੁ ਤੋਂ ਅਕਾਲ ਪੁਰਖ ਦਾ ਭਾਵ ਹੈ। ਇਹ ਵਿਆਖਿਆ ਦੀਆਂ ਚੋਣਾਂ ਹਨ।"
+        },
+        {
+          "kind": "replace_paired_fields",
+          "ordinal": 56,
+          "englishPath": "simple.en",
+          "punjabiPath": "simple.pa",
+          "beforeEn": "After repeated accounts of what passes away, the Salok asks us to attend to Naam, the holy guide, Guru and Gobind as enduring spiritual companions.",
+          "beforePa": "ਵਾਰ ਵਾਰ ਛੁੱਟ ਜਾਣ ਵਾਲੀਆਂ ਗੱਲਾਂ ਤੋਂ ਬਾਅਦ ਸਲੋਕ ਨਾਮ, ਸਾਧੂ, ਗੁਰੂ ਅਤੇ ਗੋਬਿੰਦ ਦੇ ਰਹਿਣ ਵਾਲੇ ਆਤਮਕ ਸਾਥ ਵੱਲ ਧਿਆਨ ਦਿਵਾਉਂਦਾ ਹੈ।",
+          "afterEn": "The selected reading finds enduring support in Naam, the Guru and the Timeless One, through remembrance of the Guru’s instruction.",
+          "afterPa": "ਚੁਣੀ ਪੜ੍ਹਤ ਵਿੱਚ ਗੁਰੂ ਦੇ ਉਪਦੇਸ਼ ਨੂੰ ਯਾਦ ਕਰਨ ਵਾਲੇ ਲਈ ਨਾਮ, ਗੁਰੂ ਅਤੇ ਅਕਾਲ ਪੁਰਖ ਦਾ ਸਾਥ ਰਹਿੰਦਾ ਹੈ।"
+        },
+        {
+          "kind": "replace_paired_fields",
+          "ordinal": 56,
+          "englishPath": "study.closeReading",
+          "punjabiPath": "study.closeReadingPa",
+          "beforeEn": "Three repetitions of rahio give the first line its force. Following Salok 55, where companions depart, these repeated words answer the question of what remains. The line names Naam, sādhu, Guru and Gobind in a compact formulation that needs careful interpretation. The second line connects this enduring support with gur mant, the Guru’s instruction held in remembrance. Its choice of kin has received different readings, explained below. Across the two lines, the vocabulary moves from what abides to the act of remembering. The lesson therefore concerns a lived devotional relationship, not simply possessing religious words or expecting a human teacher’s body to remain forever.",
+          "beforePa": "ਰਹਿਓ ਦਾ ਤਿੰਨ ਵਾਰ ਆਉਣਾ ਪਹਿਲੀ ਤੁਕ ਨੂੰ ਤਾਕਤ ਦਿੰਦਾ ਹੈ। ਪਿਛਲੇ ਸਲੋਕ 55 ਵਿੱਚ ਸਾਥੀ ਛੱਡ ਗਏ ਸਨ; ਇੱਥੇ ਦੁਹਰਾਏ ਬੋਲ ਦੱਸਦੇ ਹਨ ਕਿ ਕੀ ਰਹਿੰਦਾ ਹੈ। ਨਾਮ, ਸਾਧੂ, ਗੁਰੂ ਅਤੇ ਗੋਬਿੰਦ ਸੰਖੇਪ ਬੋਲਾਂ ਵਿੱਚ ਆਉਂਦੇ ਹਨ, ਜਿਨ੍ਹਾਂ ਨੂੰ ਧਿਆਨ ਨਾਲ ਸਮਝਣਾ ਲੋੜੀਂਦਾ ਹੈ। ਦੂਜੀ ਤੁਕ ਇਸ ਸਾਥ ਨੂੰ ਗੁਰ ਮੰਤੁ, ਗੁਰੂ ਦੇ ਉਪਦੇਸ਼ ਦੀ ਯਾਦ ਨਾਲ ਜੋੜਦੀ ਹੈ। ਕਿਨ ਦੀਆਂ ਵੱਖਰੀਆਂ ਪੜ੍ਹਤਾਂ ਹੇਠਾਂ ਦੱਸੀਆਂ ਹਨ। ਦੋਵੇਂ ਤੁਕਾਂ ਵਿੱਚ ਗੱਲ ਰਹਿਣ ਵਾਲੇ ਆਸਰੇ ਤੋਂ ਯਾਦ ਕਰਨ ਦੇ ਕਰਮ ਵੱਲ ਜਾਂਦੀ ਹੈ। ਇਸ ਲਈ ਸਿੱਖਿਆ ਜੀਵੇ ਜਾਂਦੇ ਭਗਤੀ ਦੇ ਸੰਬੰਧ ਦੀ ਹੈ, ਕੇਵਲ ਧਾਰਮਿਕ ਸ਼ਬਦ ਰੱਖਣ ਜਾਂ ਕਿਸੇ ਮਨੁੱਖੀ ਅਧਿਆਪਕ ਦੇ ਸਰੀਰ ਦੇ ਸਦਾ ਰਹਿਣ ਦੀ ਉਮੀਦ ਦੀ ਨਹੀਂ।",
+          "afterEn": "Three repetitions of ਰਹਿਓ give the first line its force. Following Salok 55, where companions depart, these repeated words answer the question of what remains. In the selected reading, the three supports are Naam, the Guru and the Timeless One. The second line connects this enduring support with ਗੁਰ ਮੰਤੁ, the Guru’s instruction held in remembrance. Here ਕਿਨ is read conditionally: whoever remembers. The choice and an alternative are explained below. Across both lines, what abides is joined to the act of remembrance, so the teaching concerns a devotional relationship carried through the Guru’s instruction.",
+          "afterPa": "ਰਹਿਓ ਦਾ ਤਿੰਨ ਵਾਰ ਆਉਣਾ ਪਹਿਲੀ ਤੁਕ ਨੂੰ ਤਾਕਤ ਦਿੰਦਾ ਹੈ। ਪਿਛਲੇ ਸਲੋਕ 55 ਵਿੱਚ ਸਾਥੀ ਛੱਡ ਗਏ ਸਨ; ਇੱਥੇ ਦੁਹਰਾਏ ਬੋਲ ਦੱਸਦੇ ਹਨ ਕਿ ਕੀ ਰਹਿੰਦਾ ਹੈ। ਚੁਣੀ ਹੋਈ ਪੜ੍ਹਤ ਵਿੱਚ ਤਿੰਨ ਆਸਰੇ ਨਾਮ, ਗੁਰੂ ਅਤੇ ਅਕਾਲ ਪੁਰਖ ਹਨ। ਦੂਜੀ ਤੁਕ ਇਸ ਰਹਿਣ ਵਾਲੇ ਸਾਥ ਨੂੰ ਗੁਰ ਮੰਤੁ, ਗੁਰੂ ਦੇ ਉਪਦੇਸ਼ ਦੀ ਯਾਦ ਨਾਲ ਜੋੜਦੀ ਹੈ। ਇੱਥੇ ਕਿਨ ਨੂੰ ਸ਼ਰਤੀ ਭਾਵ ਵਿੱਚ ਲਿਆ ਹੈ: ਜਿਸ ਕਿਸੇ ਨੇ ਯਾਦ ਕੀਤਾ। ਇਹ ਚੋਣ ਅਤੇ ਇੱਕ ਹੋਰ ਪੜ੍ਹਤ ਹੇਠਾਂ ਦੱਸੀਆਂ ਹਨ। ਦੋਵੇਂ ਤੁਕਾਂ ਵਿੱਚ ਰਹਿਣ ਵਾਲਾ ਆਸਰਾ ਯਾਦ ਕਰਨ ਦੇ ਕਰਮ ਨਾਲ ਜੁੜਦਾ ਹੈ। ਇਸ ਲਈ ਸਿੱਖਿਆ ਗੁਰੂ ਦੇ ਉਪਦੇਸ਼ ਰਾਹੀਂ ਜੀਵੇ ਜਾਂਦੇ ਭਗਤੀ ਦੇ ਸੰਬੰਧ ਬਾਰੇ ਹੈ।"
+        }
+      ],
+      "sourceOrMeaningChange": true,
+      "changeBoundary": "Working explanatory grouping is made consistent. No original source, attribution heading, ordinal, conditional reading of ਕਿਨ, or stated translation alternative changes."
+    }
+  ],
+  "perSalokReview": [
+    {
+      "ordinal": 30,
+      "sourceRowArrayIndices": [
+        60,
+        61
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "8320417df5d3345b211400ff1c5e79a754e94a1a66fe765696ab01f6833e40aa",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਫਧਿ ਰਹਿਓ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਭਜਨ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Maya entanglement and forgotten Naam remain central."
+    },
+    {
+      "ordinal": 31,
+      "sourceRowArrayIndices": [
+        62,
+        63
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "c8ce4ed1cb326b85b12cb9610efa81654e9c815af062d8dadc4c36fe84f973be",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਮਦਿ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਜਮ ਫੰਧ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Maya intoxication and Jam’s bonds are retained."
+    },
+    {
+      "ordinal": 32,
+      "sourceRowArrayIndices": [
+        64,
+        65
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "bf86478353130229e3797c67eaf93ef68402a8660d2082d6245f82f06eb08bb3",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਸੰਗੀ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਅੰਤਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Hari as final helper is retained without erasing the relational contrast."
+    },
+    {
+      "ordinal": 33,
+      "sourceRowArrayIndices": [
+        66,
+        67
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "1104ba6722edbb6be22abc36f9fd6e5286d7194bb8f06743abe56214e38c2a6a",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਤ੍ਰਾਸੁ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਨਿਰਭੈ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Repeated births, Jam’s fear and the fearless dwelling are explicit."
+    },
+    {
+      "ordinal": 34,
+      "sourceRowArrayIndices": [
+        68,
+        69
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "52e51bcfc7e30d6d2b809a652290a3ceb0af38421caa0da73c1b617ead51ce98",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਮਾਨੁ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਦੁਰਮਤਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "First-person unsuccessful effort turns into a direct plea to Bhagvan."
+    },
+    {
+      "ordinal": 35,
+      "sourceRowArrayIndices": [
+        70,
+        71
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "835425db9c3467caf9f3524da8b1d234ab31d48bb1f8f5b26120b7a6efb49298",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਅਵਸਥਾ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਬਿਰਥਾ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "All three life stages remain connected to bhajan."
+    },
+    {
+      "ordinal": 36,
+      "sourceRowArrayIndices": [
+        72,
+        73
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "52fbfc1e9f54d9635b14ebb2edee47bfe8366870383de55e60d4dae0f6af61cd",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਲੋਭ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਸਮਿਓ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Greed, neglected purpose and elapsed time are retained."
+    },
+    {
+      "ordinal": 37,
+      "sourceRowArrayIndices": [
+        74,
+        75
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "8926100ded5b7bfd0540e0fae36b96f464c101ba13bd8f9f4b2cf7bb6d0235a9",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਮੂਰਤਿ ਚਿਤ੍ਰ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਭੀਤਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The painted figure and wall are explained as the source image of fixed attachment."
+    },
+    {
+      "ordinal": 38,
+      "sourceRowArrayIndices": [
+        76,
+        77
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "f8e1326990d938f58e9b3e0d68960d16b36dc0e50a5fe56b0a5eff3a8f7958b2",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਠਗਉਰ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਗਲਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "ਠਗਉਰ retains deceptive scheming; no prison narrative is invented."
+    },
+    {
+      "ordinal": 39,
+      "sourceRowArrayIndices": [
+        78,
+        79
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "38ae5775b50cd0ac587a5142e0d2fc127f52b879c4d9141e8782408907b75ac4",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਜਤਨ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਹਰਿ ਭਾਵੈ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Human efforts and what pleases Hari are held together."
+    },
+    {
+      "ordinal": 40,
+      "sourceRowArrayIndices": [
+        80,
+        81
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "4e4a9ee245b43b129c5e1d91d7df0873e706380889f2f20edcdb244ae5bafd85",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਭਿਖਾਰੀ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਦਾਤਾ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The universal Giver and remembrance remain explicit."
+    },
+    {
+      "ordinal": 41,
+      "sourceRowArrayIndices": [
+        82,
+        83
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "b07668375f5b2d1fe17b269d53c3fb8479b05e3b50f2b781b465788085e7dbe0",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਮਾਨੁ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਸੁਪਨੇ ਜਿਉ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Dream and possession imagery are read within transience."
+    },
+    {
+      "ordinal": 42,
+      "sourceRowArrayIndices": [
+        84,
+        85
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "9199516b1d938705fa91f60276979380ce86360a3526196d5fd58e41e8c32238",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਗਰਬੁ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਜਸੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Bodily pride and praise of Hari remain the contrasting movements."
+    },
+    {
+      "ordinal": 43,
+      "sourceRowArrayIndices": [
+        86,
+        87
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "96999bf3780baa2dc811fbbc5aaaf3b54987eafad9c3777e9ac6db4930dda472",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਮੁਕਤਾ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਅੰਤਰੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [
+        "SM9-43-STUDY-PRODUCT-POLICY"
+      ],
+      "reviewNote": "Meanings retain liberation and no separation; revise the study’s product-policy interruption."
+    },
+    {
+      "ordinal": 44,
+      "sourceRowArrayIndices": [
+        88,
+        89
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "1045a350aaec66d7f4921cb892314bb5c90965ba5548cc022038d4ee4daf0113",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਸੂਕਰ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਸੁਆਨ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The difficult animal imagery is retained and distinguished from the adjacent positive dog simile."
+    },
+    {
+      "ordinal": 45,
+      "sourceRowArrayIndices": [
+        90,
+        91
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "ddbc9253b6a01e95c0c55d75eb8037bc69bd8015d2155c3d8576916e2ee4f152",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਗ੍ਰਿਹੁ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਇਕ ਚਿਤਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Loyalty to the master’s home and one-minded devotion remain explicit."
+    },
+    {
+      "ordinal": 46,
+      "sourceRowArrayIndices": [
+        92,
+        93
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "a141562acd61b95cebd2959f2cb1e8169ac009c8f84548f5cb922ceb08e0fdd1",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਗੁਮਾਨੁ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਕੁੰਚਰ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [
+        "SM9-46-SIMILE-PROVENANCE"
+      ],
+      "reviewNote": "Pride remains the condition governing ritual acts; add the traditional simile’s bounded provenance."
+    },
+    {
+      "ordinal": 47,
+      "sourceRowArrayIndices": [
+        94,
+        95
+      ],
+      "angs": [
+        1428
+      ],
+      "sourcePairSha256": "888a15716e4c5d4c92cf52f09388ffec1461e5829175e96d746d7a7a376d1947",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਪਗ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਹਰਿ ਰਸਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Bodily decline is distinguished from the continued call to delight in Hari."
+    },
+    {
+      "ordinal": 48,
+      "sourceRowArrayIndices": [
+        96,
+        97
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "8f657834fb790884ba953912b744109bfa3ba76604f89b2c87e47593d0eb8984",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਨਿਜ ਕਰਿ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਥਿਰੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Human possession is contrasted with enduring devotion to Hari."
+    },
+    {
+      "ordinal": 49,
+      "sourceRowArrayIndices": [
+        98,
+        99
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "b22960b79fceedbcc27e66c3ab980bf307be2f7abfa10dec3652dc32659b4d0b",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਬਾਲੂ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਭੀਤਿ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The sand-wall image governs the impermanence explanation."
+    },
+    {
+      "ordinal": 50,
+      "sourceRowArrayIndices": [
+        100,
+        101
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "acb53b76feb6bd700769814cdec9bc7456f0a4ae35b8a2de3459ac65b85de10b",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਗਇਓ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਪਰਵਾਰੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The Ram–Ravan contrast is identified in its epic context without equating every use of Ram."
+    },
+    {
+      "ordinal": 51,
+      "sourceRowArrayIndices": [
+        102,
+        103
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "b89e011c3b93b8183819a509df1fa4492500bedc7d5abc39eafda8f7c77506b7",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਅਨਹੋਨੀ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਮਾਰਗੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The rhetorical contrast concerns the common mortal path; the lexical interpretation is disclosed."
+    },
+    {
+      "ordinal": 52,
+      "sourceRowArrayIndices": [
+        104,
+        105
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "b839f7aa4b1474c73ddf9f9094a05f62f2906c2495a15f5460d7837209c3da7f",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਉਪਜਿਓ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਜੰਜਾਲ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Perishing is joined to singing Hari’s virtues and relinquishing entanglements."
+    },
+    {
+      "ordinal": 53,
+      "sourceRowArrayIndices": [
+        107,
+        108
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "90137502f0d1cae8e292d1b8b1a3168c65b08fe547b265cca9004dd14d852b96",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਓਟ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਗਜ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Direct prayer, refuge in Hari and the elephant allusion are preserved; no historical letter is invented."
+    },
+    {
+      "ordinal": 54,
+      "sourceRowArrayIndices": [
+        109,
+        110
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "edc43d1c67bf094f3b4a3707bc58b996f070daa04f85f65cb7964d7fa76d56a3",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਬੰਧਨ ਛੁਟੇ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਸਹਾਇ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "The reversal of strength and bonds leads to reliance on the Divine hands; no M10 attribution is added."
+    },
+    {
+      "ordinal": 55,
+      "sourceRowArrayIndices": [
+        111,
+        112
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "9ac10f3df9319817bc7ed187036481ce31727411f2138167fc9b81901c4c7fb6",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਬਿਪਤਿ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਟੇਕ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Departing companions lead to reliance on Raghunath; the distress and devotional context remain."
+    },
+    {
+      "ordinal": 56,
+      "sourceRowArrayIndices": [
+        113,
+        114
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "dd3db2b7a23abfed5883141248e691f1f1aca3de362dc338dc14732cb851f591",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਰਹਿਓ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਗੁਰ ਮੰਤੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [
+        "SM9-56-SELECTED-READING-CONSISTENCY"
+      ],
+      "reviewNote": "Lexical attribution and the conditional/rarity distinction are accurate; align all layers with the selected grouping."
+    },
+    {
+      "ordinal": 57,
+      "sourceRowArrayIndices": [
+        115,
+        116
+      ],
+      "angs": [
+        1429
+      ],
+      "sourcePairSha256": "5a99e041aa85d9989b29b8299da286a7dd26316e739743e9a8998d629879cc2f",
+      "allListedFieldsManuallyReviewed": true,
+      "pairedLanguageFieldsPresent": true,
+      "vocabulary": [
+        {
+          "gurmukhi": "ਉਰ",
+          "exactSourceOccurrence": true
+        },
+        {
+          "gurmukhi": "ਦਰਸੁ",
+          "exactSourceOccurrence": true
+        }
+      ],
+      "findingIds": [],
+      "reviewNote": "Naam in the heart and direct address for Divine darshan remain; the following composition is kept separate."
+    }
+  ],
+  "remainingLimits": [
+    "This is independent AI editorial checking, not a qualified Sikh scholar’s, Punjabi reader’s or Santhiya teacher’s approval.",
+    "The proposed adjustments preserve original Gurbani and do not authenticate a historical setting or correspondence.",
+    "After these changes, interpretation, idiomatic Punjabi and pedagogical suitability remain drafts awaiting qualified human review."
+  ]
+}

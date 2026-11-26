@@ -1,0 +1,1378 @@
+{
+  "schema": "glp001.salok-mahalla9-editorial-amendments.v1",
+  "status": "APPLIED_AI_EDITORIAL_REVISIONS_QUALIFIED_REVIEW_PENDING",
+  "inputFile": "teaching-01-29.json",
+  "inputSha256": "21c0ac4687f2e9bfdc1e8e66ca500fe90e3ffc33b9dd735b981feeceae0e1521",
+  "independentReviewSha256": "2a617d34378c695cf5c39ce498825cebc175b28819f97481eab531c4873eb50d",
+  "lineContextSidecarSha256": "54654e89c4e5fbd293a3daf52b8165b8026aab90efaa7bf7411e38ade4b61bd7",
+  "sourceTextChanged": false,
+  "qualifiedHumanReviewed": false,
+  "amendments": [
+    {
+      "ordinal": 1,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The line gives a forceful spiritual assessment of life without Divine praise; it is not a judgement of someone’s human worth.",
+      "after": "ਅਕਾਰਥ assesses the life’s spiritual purpose. The next line identifies remembrance of the Divine as the response.",
+      "reason": "ED01/ED03: paired source-context note; Replace a hypothetical judgement of human worth with the actual relation between the two lines; add equivalent Punjabi."
+    },
+    {
+      "ordinal": 1,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਅਕਾਰਥ ਜੀਵਨ ਦੇ ਆਤਮਕ ਮਕਸਦ ਬਾਰੇ ਆਖਿਆ ਹੈ। ਅਗਲੀ ਤੁਕ ਇਸ ਦੇ ਜਵਾਬ ਵਜੋਂ ਪ੍ਰਭੂ ਦਾ ਭਜਨ ਦੱਸਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace a hypothetical judgement of human worth with the actual relation between the two lines; add equivalent Punjabi."
+    },
+    {
+      "ordinal": 1,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The fish and water are the verse’s image for dependence on the Divine, not a breathing exercise.",
+      "after": "The fish depends upon water for its life. That image gives the call to remember Hari the depth of love and dependence.",
+      "reason": "ED01/ED03: paired source-context note; Remove the unrelated breathing-exercise disclaimer; explain the fish-and-water image in both languages."
+    },
+    {
+      "ordinal": 1,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮੱਛੀ ਦਾ ਜੀਵਨ ਪਾਣੀ ਦੇ ਆਸਰੇ ਹੈ। ਇਹ ਚਿੱਤਰ ਹਰਿ ਦੇ ਭਜਨ ਦੇ ਸੱਦੇ ਵਿੱਚ ਪਿਆਰ ਅਤੇ ਆਸਰੇ ਦੀ ਡੂੰਘਾਈ ਲਿਆਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Remove the unrelated breathing-exercise disclaimer; explain the fish-and-water image in both languages."
+    },
+    {
+      "ordinal": 2,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਉਦਾਸੁ here concerns detachment, not clinical depression or sadness.",
+      "after": "ਉਦਾਸੁ means becoming detached from the pleasures that absorb the mind. ਨਿਮਖ emphasizes even a brief instant.",
+      "reason": "ED01/ED03: paired source-context note; Replace the clinical comparison with contextual word senses and Punjabi parity."
+    },
+    {
+      "ordinal": 2,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਉਦਾਸੁ ਦਾ ਭਾਵ ਮਨ ਨੂੰ ਰਚਾ ਲੈਣ ਵਾਲੇ ਵਿਸ਼ਿਆਂ ਤੋਂ ਉਪਰਾਮ ਹੋਣਾ ਹੈ। ਨਿਮਖ ਇੱਕ ਬਹੁਤ ਛੋਟੇ ਪਲ ਉੱਤੇ ਵੀ ਜ਼ੋਰ ਦਿੰਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace the clinical comparison with contextual word senses and Punjabi parity."
+    },
+    {
+      "ordinal": 2,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Jam and its noose belong to the passage’s spiritual language of death and bondage; do not erase that meaning or make a medical promise.",
+      "after": "Jam’s noose is an image of bondage in relation to death. The line names Hari’s remembrance as the way of release.",
+      "reason": "ED01/ED03: paired source-context note; Retain the spiritual significance of Jam while removing an extraneous medical-promise warning; add Punjabi."
+    },
+    {
+      "ordinal": 2,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਜਮ ਦੀ ਫਾਹੀ ਮੌਤ ਨਾਲ ਜੁੜੇ ਬੰਧਨ ਦਾ ਚਿੱਤਰ ਹੈ। ਤੁਕ ਹਰਿ ਦੇ ਭਜਨ ਨੂੰ ਇਸ ਤੋਂ ਛੁਟਕਾਰੇ ਦਾ ਰਾਹ ਦੱਸਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the spiritual significance of Jam while removing an extraneous medical-promise warning; add Punjabi."
+    },
+    {
+      "ordinal": 3,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The life-stage imagery is an admonition about passing time, not a claim that older people have less spiritual capacity.",
+      "after": "The contrast is between youth already gone and old age now affecting the body. It makes unnoticed passing time visible.",
+      "reason": "ED01/ED03: paired source-context note; Focus the note on the actual life-stage contrast rather than a hypothetical judgement of older people; add Punjabi."
+    },
+    {
+      "ordinal": 3,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਫ਼ਰਕ ਲੰਘ ਚੁੱਕੀ ਜੁਆਨੀ ਅਤੇ ਹੁਣ ਸਰੀਰ ਉੱਤੇ ਅਸਰ ਪਾ ਰਹੇ ਬੁਢੇਪੇ ਦਾ ਹੈ। ਇਹ ਚਿੱਤਰ ਬੇਧਿਆਨੀ ਵਿੱਚ ਲੰਘਦਾ ਸਮਾਂ ਸਾਹਮਣੇ ਲਿਆਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Focus the note on the actual life-stage contrast rather than a hypothetical judgement of older people; add Punjabi."
+    },
+    {
+      "ordinal": 3,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The call remains available now; the passage does not say that remembrance is too late.",
+      "after": "ਅਉਧ is the span of life. The command ਭਜੁ turns awareness of passing time toward remembrance in the present.",
+      "reason": "ED01/ED03: paired source-context note; Explain the word and imperative that support the existing present-time interpretation; add Punjabi."
+    },
+    {
+      "ordinal": 3,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਅਉਧ ਜੀਵਨ ਦੀ ਉਮਰ ਹੈ। ਭਜੁ ਦਾ ਸੱਦਾ ਲੰਘਦੇ ਸਮੇਂ ਦੀ ਸੂਝ ਨੂੰ ਹੁਣ ਪ੍ਰਭੂ ਦਾ ਸਿਮਰਨ ਕਰਨ ਵੱਲ ਮੋੜਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain the word and imperative that support the existing present-time interpretation; add Punjabi."
+    },
+    {
+      "ordinal": 4,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਸੂਝੈ ਨਹੀ is read as lack of spiritual understanding in this context, not as a diagnosis of eyesight or memory.",
+      "after": "ਸੂਝੈ ਨਹੀ is read here as a failure of spiritual understanding: ageing has occurred, but awareness of mortality has not followed.",
+      "reason": "ED01/ED03: paired source-context note; Remove eyesight and memory diagnoses; retain and translate the existing contextual reading."
+    },
+    {
+      "ordinal": 4,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸੂਝੈ ਨਹੀ ਦਾ ਭਾਵ ਇੱਥੇ ਆਤਮਕ ਸਮਝ ਦੀ ਘਾਟ ਲਿਆ ਹੈ: ਉਮਰ ਵਧ ਗਈ, ਪਰ ਮੌਤ ਦੀ ਸੂਝ ਨਾਲ ਨਹੀਂ ਜਾਗੀ।",
+      "reason": "ED01/ED03: paired source-context note; Remove eyesight and memory diagnoses; retain and translate the existing contextual reading."
+    },
+    {
+      "ordinal": 4,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The direct rebuke is retained, but ਬਾਵਰੇ is not a clinical mental-health label.",
+      "after": "ਬਾਵਰੇ is the direct rebuke in the address. Its question concerns the listener’s continued neglect of Bhagvan’s remembrance.",
+      "reason": "ED01/ED03: paired source-context note; Replace a clinical-label disclaimer with an explanation of the rebuke’s function; add Punjabi."
+    },
+    {
+      "ordinal": 4,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਬਾਵਰੇ ਸੰਬੋਧਨ ਦਾ ਸਿੱਧਾ ਉਲਾਹਮਾ ਹੈ। ਇਸ ਦਾ ਸਵਾਲ ਸੁਣਨ ਵਾਲੇ ਵੱਲੋਂ ਭਗਵਾਨ ਦਾ ਭਜਨ ਅਜੇ ਵੀ ਭੁਲਾਏ ਰੱਖਣ ਬਾਰੇ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace a clinical-label disclaimer with an explanation of the rebuke’s function; add Punjabi."
+    },
+    {
+      "ordinal": 5,
+      "field": "lines.0.interpretiveCaution",
+      "before": "This follows Sahib Singh’s prohibitive reading of ਜਿਨਿ ... ਮਾਨਿ. ਦਾਰਾ specifically names wife; the broader application to relationships is editorial.",
+      "after": "This follows Sahib Singh’s prohibitive reading of ਜਿਨਿ ... ਮਾਨਿ: do not regard these as permanently yours. ਦਾਰਾ specifically names wife.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the attributed grammatical choice and the specific relational noun; provide equivalent Punjabi."
+    },
+    {
+      "ordinal": 5,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਇਹ ਸਾਹਿਬ ਸਿੰਘ ਦੀ ਜਿਨਿ ... ਮਾਨਿ ਵਾਲੀ ਮਨਾਹੀ ਦੀ ਵਿਆਖਿਆ ਅਨੁਸਾਰ ਹੈ: ਇਨ੍ਹਾਂ ਨੂੰ ਸਦਾ ਲਈ ਆਪਣਾ ਨਾ ਮੰਨ। ਦਾਰਾ ਖ਼ਾਸ ਤੌਰ ਉੱਤੇ ਪਤਨੀ ਲਈ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the attributed grammatical choice and the specific relational noun; provide equivalent Punjabi."
+    },
+    {
+      "ordinal": 5,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The mortality context explains the limit of companionship; it does not deny love or everyday support.",
+      "after": "ਸੰਗੀ means companion. The preceding Saloks about mortality supply the context for explaining the limit of that companionship at the end of life.",
+      "reason": "ED01/ED03: paired source-context note; Make the existing mortality-based explanatory addition explicit without introducing another scenario; add Punjabi."
+    },
+    {
+      "ordinal": 5,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸੰਗੀ ਦਾ ਅਰਥ ਸਾਥੀ ਹੈ। ਪਿਛਲੇ ਸਲੋਕਾਂ ਵਿੱਚ ਮੌਤ ਦਾ ਪ੍ਰਸੰਗ ਜੀਵਨ ਦੇ ਅੰਤ ਵੇਲੇ ਇਸ ਸਾਥ ਦੀ ਹੱਦ ਸਮਝਾਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Make the existing mortality-based explanatory addition explicit without introducing another scenario; add Punjabi."
+    },
+    {
+      "ordinal": 6,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਪਤਿਤ names a fallen moral or spiritual condition, not an inferior caste or an unchangeable identity.",
+      "after": "ਪਤਿਤ describes a fallen moral or spiritual condition, and ਉਧਾਰਨ names being lifted out of it. The line also names Hari as the support of the unsupported.",
+      "reason": "ED01/ED03: paired source-context note; Keep the meaningful contextual sense of fallen and uplifting while removing hypothetical caste attribution; add Punjabi."
+    },
+    {
+      "ordinal": 6,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਪਤਿਤ ਵਿਕਾਰ ਵਿੱਚ ਡਿੱਗੀ ਹਾਲਤ ਦੱਸਦਾ ਹੈ ਅਤੇ ਉਧਾਰਨ ਉਸ ਵਿੱਚੋਂ ਉਠਾਉਣ ਦਾ ਭਾਵ ਹੈ। ਤੁਕ ਹਰਿ ਨੂੰ ਬੇਆਸਰਿਆਂ ਦਾ ਆਸਰਾ ਵੀ ਆਖਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the meaningful contextual sense of fallen and uplifting while removing hypothetical caste attribution; add Punjabi."
+    },
+    {
+      "ordinal": 6,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The line asserts Divine nearness; it does not identify a particular human intermediary as that presence.",
+      "after": "ਤਿਹ refers back to Hari described in the first line. ਸਦਾ ਬਸਤੁ ਤੁਮ ਸਾਥਿ brings those Divine qualities into the assurance of continual companionship.",
+      "reason": "ED01/ED03: paired source-context note; Explain the pronoun and link between lines instead of introducing a human intermediary; add Punjabi."
+    },
+    {
+      "ordinal": 6,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਤਿਹ ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਦੱਸੇ ਹਰਿ ਵੱਲ ਮੁੜਦਾ ਹੈ। ਸਦਾ ਬਸਤੁ ਤੁਮ ਸਾਥਿ ਉਹਨਾਂ ਪ੍ਰਭੂ-ਗੁਣਾਂ ਨੂੰ ਲਗਾਤਾਰ ਸਾਥ ਦੇ ਭਰੋਸੇ ਨਾਲ ਜੋੜਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain the pronoun and link between lines instead of introducing a human intermediary; add Punjabi."
+    },
+    {
+      "ordinal": 7,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The line distinguishes gifts from their Giver; it does not claim every person receives equal material wealth.",
+      "after": "The line distinguishes the gifts, body and wealth, from the Giver. ਨੇਹੁ names the love that has not been cultivated toward that Giver.",
+      "reason": "ED01/ED03: paired source-context note; Replace an unrelated equality-of-wealth warning with the gift/Giver distinction already used in the meaning; add Punjabi."
+    },
+    {
+      "ordinal": 7,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਤੁਕ ਸਰੀਰ ਅਤੇ ਧਨ ਦੀਆਂ ਦਾਤਾਂ ਨੂੰ ਦਾਤੇ ਤੋਂ ਵੱਖਰਾ ਰੱਖਦੀ ਹੈ। ਨੇਹੁ ਉਸ ਪਿਆਰ ਦਾ ਨਾਂ ਹੈ ਜੋ ਦਾਤੇ ਨਾਲ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ।",
+      "reason": "ED01/ED03: paired source-context note; Replace an unrelated equality-of-wealth warning with the gift/Giver distinction already used in the meaning; add Punjabi."
+    },
+    {
+      "ordinal": 7,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The rebuke concerns a forgotten spiritual relationship, not a clinical explanation of anxiety or hardship.",
+      "after": "ਡੋਲਤ describes wavering or restless wandering; ਦੀਨ gives the address a sense of helplessness. The question follows the neglected love named in the first line.",
+      "reason": "ED01/ED03: paired source-context note; Replace a clinical-anxiety disclaimer with word senses and the connection to the first line; add Punjabi."
+    },
+    {
+      "ordinal": 7,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਡੋਲਤ ਡੋਲਣ ਜਾਂ ਬੇਚੈਨ ਭਟਕਣ ਨੂੰ ਦੱਸਦਾ ਹੈ; ਦੀਨ ਵਿੱਚ ਬੇਬਸੀ ਦਾ ਭਾਵ ਹੈ। ਇਹ ਸਵਾਲ ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਦੱਸੇ ਦਾਤੇ ਨਾਲ ਪਿਆਰ ਦੀ ਘਾਟ ਤੋਂ ਬਾਅਦ ਆਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace a clinical-anxiety disclaimer with word senses and the connection to the first line; add Punjabi."
+    },
+    {
+      "ordinal": 8,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The verse lists gifts within its address; it is not a claim that all households possess these things.",
+      "after": "ਸੰਪੈ names wealth or resources, and ਧਾਮ names homes. The sequence of gifts prepares the question about remembering their Giver.",
+      "reason": "ED01/ED03: paired source-context note; Explain the listed gifts instead of discussing households outside the verse’s address; add Punjabi."
+    },
+    {
+      "ordinal": 8,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸੰਪੈ ਧਨ ਜਾਂ ਸਾਧਨਾਂ ਲਈ ਅਤੇ ਧਾਮ ਘਰਾਂ ਲਈ ਹੈ। ਦਾਤਾਂ ਦਾ ਇਹ ਕ੍ਰਮ ਉਨ੍ਹਾਂ ਦੇ ਦਾਤੇ ਨੂੰ ਯਾਦ ਕਰਨ ਵਾਲੇ ਸਵਾਲ ਦੀ ਤਿਆਰੀ ਕਰਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain the listed gifts instead of discussing households outside the verse’s address; add Punjabi."
+    },
+    {
+      "ordinal": 8,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Ram here is addressed as the Divine Giver; this draft does not insert an epic narrative into the verse.",
+      "after": "ਰਾਮੁ refers here to the Divine Giver described in the first line. The question shifts attention from receiving gifts to remembering their source.",
+      "reason": "ED01/ED03: paired source-context note; Retain the contextual Divine-name explanation and remove the unintroduced epic-narrative contrast; add Punjabi."
+    },
+    {
+      "ordinal": 8,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਰਾਮੁ ਇੱਥੇ ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਦੱਸੇ ਪ੍ਰਭੂ-ਦਾਤੇ ਲਈ ਹੈ। ਸਵਾਲ ਧਿਆਨ ਨੂੰ ਦਾਤਾਂ ਮਿਲਣ ਤੋਂ ਉਨ੍ਹਾਂ ਦੇ ਦੇਣ ਵਾਲੇ ਨੂੰ ਯਾਦ ਕਰਨ ਵੱਲ ਮੋੜਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the contextual Divine-name explanation and remove the unintroduced epic-narrative contrast; add Punjabi."
+    },
+    {
+      "ordinal": 9,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The Divine claim should be retained; this is not merely advice to cultivate a pleasant attitude.",
+      "after": "ਰਾਮੁ is named as the unique Divine Giver. ਦੂਸਰ ਨਾਹਿਨ ਕੋਇ emphasizes that uniqueness within this affirmation.",
+      "reason": "ED01/ED03: paired source-context note; State the theological claim directly rather than contrasting it with a hypothetical mood lesson; add Punjabi."
+    },
+    {
+      "ordinal": 9,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਰਾਮੁ ਨੂੰ ਇਕੋ-ਇਕ ਪ੍ਰਭੂ-ਦਾਤਾ ਆਖਿਆ ਹੈ। ਦੂਸਰ ਨਾਹਿਨ ਕੋਇ ਇਸ ਕਥਨ ਵਿੱਚ ਉਸ ਦੀ ਬੇਮਿਸਾਲਤਾ ਉੱਤੇ ਜ਼ੋਰ ਦਿੰਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; State the theological claim directly rather than contrasting it with a hypothetical mood lesson; add Punjabi."
+    },
+    {
+      "ordinal": 9,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਗਤਿ has a spiritual range including liberation and an elevated spiritual condition; the English gloss is not exhaustive.",
+      "after": "ਗਤਿ can denote liberation or a fulfilled spiritual state. This draft uses spiritual liberation while retaining remembrance of the One as its setting.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the useful lexical range and make the draft’s chosen gloss explicit in Punjabi as well."
+    },
+    {
+      "ordinal": 9,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਗਤਿ ਦਾ ਭਾਵ ਮੁਕਤੀ ਜਾਂ ਉੱਚੀ ਆਤਮਕ ਅਵਸਥਾ ਹੋ ਸਕਦਾ ਹੈ। ਇਹ ਖਰੜਾ ਆਤਮਕ ਮੁਕਤੀ ਦਾ ਭਾਵ ਲੈਂਦਾ ਹੈ ਅਤੇ ਉਸ ਨੂੰ ਇਕ ਪ੍ਰਭੂ ਦੇ ਸਿਮਰਨ ਨਾਲ ਜੋੜ ਕੇ ਰੱਖਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the useful lexical range and make the draft’s chosen gloss explicit in Punjabi as well."
+    },
+    {
+      "ordinal": 10,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਗਤਿ is spiritual attainment or liberation here, not material advancement.",
+      "after": "ਗਤਿ continues the spiritual attainment described in Salok 9. ਮੀਤ turns that teaching into a direct invitation to a friend.",
+      "reason": "ED01/ED03: paired source-context note; Replace the material-advancement contrast with the immediate textual connection and address; add Punjabi."
+    },
+    {
+      "ordinal": 10,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਗਤਿ ਪਿਛਲੇ ਸਲੋਕ ਦੀ ਆਤਮਕ ਪ੍ਰਾਪਤੀ ਦੀ ਗੱਲ ਅੱਗੇ ਲੈ ਜਾਂਦੀ ਹੈ। ਮੀਤ ਉਸ ਸਿੱਖਿਆ ਨੂੰ ਮਿੱਤਰ ਲਈ ਸਿੱਧਾ ਸੱਦਾ ਬਣਾਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace the material-advancement contrast with the immediate textual connection and address; add Punjabi."
+    },
+    {
+      "ordinal": 10,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The verse supplies urgency, not a prediction of anyone’s date of death.",
+      "after": "ਨੀਤ emphasizes the continual shortening of the remaining span of life. That awareness gives urgency to the first line’s invitation.",
+      "reason": "ED01/ED03: paired source-context note; Explain urgency from the source wording instead of discussing predicted dates of death; add Punjabi."
+    },
+    {
+      "ordinal": 10,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਨੀਤ ਜੀਵਨ ਦੀ ਬਚੀ ਉਮਰ ਦੇ ਲਗਾਤਾਰ ਘਟਣ ਉੱਤੇ ਜ਼ੋਰ ਦਿੰਦਾ ਹੈ। ਇਹ ਸੂਝ ਪਹਿਲੀ ਤੁਕ ਦੇ ਸੱਦੇ ਨੂੰ ਤੁਰੰਤ ਅਹਿਮ ਬਣਾਉਂਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain urgency from the source wording instead of discussing predicted dates of death; add Punjabi."
+    },
+    {
+      "ordinal": 11,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The five elements belong to the traditional framework used in the verse, not a statement of modern chemical composition.",
+      "after": "ਪਾਂਚ ਤਤ invokes the traditional five-element account of the body. The following line asks the listener to accept its return to its source.",
+      "reason": "ED01/ED03: paired source-context note; Keep the traditional-framework qualification and replace the chemistry comparison with the two-line movement; add Punjabi."
+    },
+    {
+      "ordinal": 11,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਪਾਂਚ ਤਤ ਸਰੀਰ ਦੀ ਪੰਜ ਤੱਤਾਂ ਵਾਲੀ ਪਰੰਪਰਾਗਤ ਸਮਝ ਨੂੰ ਲਿਆਉਂਦਾ ਹੈ। ਅਗਲੀ ਤੁਕ ਉਸ ਦੇ ਆਪਣੇ ਮੂਲ ਵਿੱਚ ਮੁੜ ਮਿਲਣ ਨੂੰ ਮੰਨਣ ਲਈ ਆਖਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the traditional-framework qualification and replace the chemistry comparison with the two-line movement; add Punjabi."
+    },
+    {
+      "ordinal": 11,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Sahib Singh takes the referent as the bodily elements. A Creator-directed reading of the return is also found; qualified review should preserve this distinction.",
+      "after": "Sahib Singh takes the return as the body merging into its elements. SriGranth’s English rendering relates it to the One. This draft keeps the elements reading and records the distinction for review.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the documented interpretive difference using the same two already-cited sources; give Punjabi the same specificity."
+    },
+    {
+      "ordinal": 11,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਵਾਪਸੀ ਨੂੰ ਸਰੀਰ ਦਾ ਆਪਣੇ ਤੱਤਾਂ ਵਿੱਚ ਮਿਲਣਾ ਲੈਂਦੇ ਹਨ। ਸ੍ਰੀਗ੍ਰੰਥ ਦੀ ਅੰਗਰੇਜ਼ੀ ਵਿਆਖਿਆ ਇਸ ਨੂੰ ਇਕ ਪ੍ਰਭੂ ਨਾਲ ਜੋੜਦੀ ਹੈ। ਇਹ ਖਰੜਾ ਤੱਤਾਂ ਵਾਲੀ ਸਮਝ ਰੱਖਦਾ ਹੈ ਅਤੇ ਸਮੀਖਿਆ ਲਈ ਫ਼ਰਕ ਦਰਜ ਕਰਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the documented interpretive difference using the same two already-cited sources; give Punjabi the same specificity."
+    },
+    {
+      "ordinal": 12,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਘਟ ਘਟ evokes every body or heart. ਸੰਤਨ is plural and does not name or certify any modern individual.",
+      "after": "ਘਟ ਘਟ extends Divine presence to every body or heart. ਸੰਤਨ is the plural subject proclaiming that presence; Hari remains the focus of the proclamation.",
+      "reason": "ED01/ED03: paired source-context note; Retain useful grammar and the Divine-presence distinction while removing an unintroduced certification scenario; add Punjabi."
+    },
+    {
+      "ordinal": 12,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਘਟ ਘਟ ਪ੍ਰਭੂ ਦੀ ਹਾਜ਼ਰੀ ਨੂੰ ਹਰ ਸਰੀਰ ਜਾਂ ਹਿਰਦੇ ਤੱਕ ਫੈਲਾਉਂਦਾ ਹੈ। ਸੰਤਨ ਇਹ ਪੁਕਾਰ ਕਰਨ ਵਾਲਿਆਂ ਦਾ ਬਹੁਵਚਨ ਹੈ; ਪੁਕਾਰ ਦਾ ਕੇਂਦਰ ਹਰਿ ਹੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain useful grammar and the Divine-presence distinction while removing an unintroduced certification scenario; add Punjabi."
+    },
+    {
+      "ordinal": 12,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The ocean is the verse’s spiritual image of worldly existence and bondage, not a geographical journey.",
+      "after": "ਭਉ ਨਿਧਿ is the ocean of worldly existence. Crossing it is the verse’s image for spiritual release through remembering the One present in every heart.",
+      "reason": "ED01/ED03: paired source-context note; Explain the ocean metaphor and its antecedent rather than contrast it with geography; add Punjabi."
+    },
+    {
+      "ordinal": 12,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਭਉ ਨਿਧਿ ਸੰਸਾਰ-ਸਮੁੰਦਰ ਹੈ। ਉਸ ਤੋਂ ਪਾਰ ਹੋਣਾ ਹਰ ਹਿਰਦੇ ਵਿੱਚ ਵੱਸਦੇ ਪ੍ਰਭੂ ਦੇ ਭਜਨ ਰਾਹੀਂ ਆਤਮਕ ਛੁਟਕਾਰੇ ਦਾ ਚਿੱਤਰ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain the ocean metaphor and its antecedent rather than contrast it with geography; add Punjabi."
+    },
+    {
+      "ordinal": 13,
+      "field": "lines.0.interpretiveCaution",
+      "before": "“Do not sway” explains the spiritual steadiness intended here; it should not be made a demand to suppress all feelings.",
+      "after": "The draft explains ਪਰਸੈ ਨਹੀ as not being spiritually swayed. Pleasure and pain appear alongside greed, attachment and pride, defining the steadiness being described.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the explicit explanatory choice and anchor it in the full list rather than a psychological hypothetical; add Punjabi."
+    },
+    {
+      "ordinal": 13,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਇਹ ਖਰੜਾ ਪਰਸੈ ਨਹੀ ਨੂੰ ਆਤਮਕ ਤੌਰ ਉੱਤੇ ਨਾ ਡੋਲਣ ਵਜੋਂ ਸਮਝਾਉਂਦਾ ਹੈ। ਸੁਖ-ਦੁੱਖ ਦੇ ਨਾਲ ਲੋਭ, ਮੋਹ ਅਤੇ ਅਭਿਮਾਨ ਆਉਂਦੇ ਹਨ, ਜੋ ਦੱਸੀ ਅਡੋਲਤਾ ਦਾ ਪ੍ਰਸੰਗ ਖੋਲ੍ਹਦੇ ਹਨ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the explicit explanatory choice and anchor it in the full list rather than a psychological hypothetical; add Punjabi."
+    },
+    {
+      "ordinal": 13,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਮੂਰਤਿ ਭਗਵਾਨ is strong theological language; do not weaken it to mere social admiration or use it to certify an individual.",
+      "after": "ਮੂਰਤਿ ਭਗਵਾਨ is the strong theological description of the person portrayed in the first line. Its meaning belongs with those preceding qualities.",
+      "reason": "ED01/ED03: paired source-context note; Retain the strength and contextual condition of the theological statement without an unrelated certification scenario; add Punjabi."
+    },
+    {
+      "ordinal": 13,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮੂਰਤਿ ਭਗਵਾਨ ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਦੱਸੇ ਮਨੁੱਖ ਲਈ ਡੂੰਘਾ ਧਾਰਮਿਕ ਕਥਨ ਹੈ। ਇਸ ਦਾ ਅਰਥ ਉਹਨਾਂ ਪਹਿਲਾਂ ਦੱਸੇ ਗੁਣਾਂ ਦੇ ਨਾਲ ਰਹਿੰਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the strength and contextual condition of the theological statement without an unrelated certification scenario; add Punjabi."
+    },
+    {
+      "ordinal": 14,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The comparison concerns freedom from greed and status, not identical market prices or physical properties.",
+      "after": "Praise and blame concern reputation; gold and iron concern worldly value. The paired images describe freedom from being governed by either.",
+      "reason": "ED01/ED03: paired source-context note; Replace market-price and physical-property hypotheticals with an explanation of the paired images; add Punjabi."
+    },
+    {
+      "ordinal": 14,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਵਡਿਆਈ ਅਤੇ ਨਿੰਦਾ ਨਾਮਣੇ ਨਾਲ ਜੁੜੇ ਹਨ; ਸੋਨਾ ਅਤੇ ਲੋਹਾ ਦੁਨੀਆਵੀ ਕੀਮਤ ਨਾਲ। ਇਹ ਦੋ ਜੋੜ ਦੋਵਾਂ ਦੇ ਵੱਸ ਵਿੱਚ ਨਾ ਚੱਲਣ ਦੀ ਆਜ਼ਾਦੀ ਦੱਸਦੇ ਹਨ।",
+      "reason": "ED01/ED03: paired source-context note; Replace market-price and physical-property hypotheticals with an explanation of the paired images; add Punjabi."
+    },
+    {
+      "ordinal": 14,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Liberation is the spiritual conclusion of the portrait, not a psychological score the app can assign.",
+      "after": "ਮੁਕਤਿ is the spiritual conclusion drawn from the first line’s portrait. The instruction ਜਾਨਿ asks the mind to recognize that freedom.",
+      "reason": "ED01/ED03: paired source-context note; Remove app-scoring language from the reading panel; explain the theological conclusion and command in both languages."
+    },
+    {
+      "ordinal": 14,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮੁਕਤਿ ਪਹਿਲੀ ਤੁਕ ਦੇ ਚਿੱਤਰ ਤੋਂ ਆਉਂਦਾ ਆਤਮਕ ਨਤੀਜਾ ਹੈ। ਜਾਨਿ ਦਾ ਸੱਦਾ ਮਨ ਨੂੰ ਉਸ ਖ਼ਲਾਸੀ ਦੀ ਪਛਾਣ ਲਈ ਆਖਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Remove app-scoring language from the reading panel; explain the theological conclusion and command in both languages."
+    },
+    {
+      "ordinal": 15,
+      "field": "lines.0.interpretiveCaution",
+      "before": "This working explanation concerns spiritual steadiness, not absence of grief or equal practical trust in everyone.",
+      "after": "The draft reads the line as spiritual steadiness. The pair of emotions, elation and sorrow, is followed by the pair of relationships, enemy and friend.",
+      "reason": "ED01/ED03: paired source-context note; Keep the working interpretation but replace practical-trust and grief hypotheticals with the actual structure of the line; add Punjabi."
+    },
+    {
+      "ordinal": 15,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਇਹ ਖਰੜਾ ਤੁਕ ਨੂੰ ਆਤਮਕ ਅਡੋਲਤਾ ਵਜੋਂ ਪੜ੍ਹਦਾ ਹੈ। ਖੁਸ਼ੀ ਅਤੇ ਸੋਗ ਦੇ ਭਾਵਨਾਤਮਕ ਜੋੜ ਤੋਂ ਬਾਅਦ ਵੈਰੀ ਅਤੇ ਮਿੱਤਰ ਦੇ ਰਿਸ਼ਤਿਆਂ ਦਾ ਜੋੜ ਆਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the working interpretation but replace practical-trust and grief hypotheticals with the actual structure of the line; add Punjabi."
+    },
+    {
+      "ordinal": 15,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The conclusion belongs to the whole spiritual portrait, not to a single observed calm reaction.",
+      "after": "The repeated conclusion about liberation continues Salok 14. Here it follows steadiness in emotion and an even regard toward enemy and friend.",
+      "reason": "ED01/ED03: paired source-context note; Explain the repeated closing in its neighboring context and provide Punjabi parity."
+    },
+    {
+      "ordinal": 15,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮੁਕਤੀ ਵਾਲਾ ਦੁਹਰਾਇਆ ਨਤੀਜਾ ਚੌਦ੍ਹਵੇਂ ਸਲੋਕ ਨੂੰ ਅੱਗੇ ਲੈ ਜਾਂਦਾ ਹੈ। ਇੱਥੇ ਇਹ ਭਾਵਨਾਤਮਕ ਅਡੋਲਤਾ ਅਤੇ ਵੈਰੀ-ਮਿੱਤਰ ਵੱਲ ਸਮਾਨ ਭਾਵ ਤੋਂ ਬਾਅਦ ਆਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain the repeated closing in its neighboring context and provide Punjabi parity."
+    },
+    {
+      "ordinal": 16,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The two directions of fear concern conduct toward others and resistance to intimidation; the verse is not a test of involuntary fear responses.",
+      "after": "The line has two directions: not giving fear to anyone and not accepting the intimidation of others. Both belong to the description.",
+      "reason": "ED01/ED03: paired source-context note; Retain the important two-sided meaning and remove the involuntary-fear-response hypothetical; add Punjabi."
+    },
+    {
+      "ordinal": 16,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਤੁਕ ਦੇ ਦੋ ਪਾਸੇ ਹਨ: ਕਿਸੇ ਨੂੰ ਡਰਾਵਾ ਨਾ ਦੇਣਾ ਅਤੇ ਹੋਰਨਾਂ ਦੇ ਡਰਾਵਿਆਂ ਅੱਗੇ ਨਾ ਝੁਕਣਾ। ਦੋਵੇਂ ਵਰਣਨ ਦਾ ਹਿੱਸਾ ਹਨ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the important two-sided meaning and remove the involuntary-fear-response hypothetical; add Punjabi."
+    },
+    {
+      "ordinal": 16,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਗਿਆਨੀ here is explained by the preceding conduct, not by possession of a formal title.",
+      "after": "ਗਿਆਨੀ is explained through the preceding way of meeting fear and power. ਬਖਾਨਿ asks that such a person be called spiritually discerning.",
+      "reason": "ED01/ED03: paired source-context note; Keep the conduct-based explanation and provide Punjabi without introducing formal-title comparisons."
+    },
+    {
+      "ordinal": 16,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਗਿਆਨੀ ਦੀ ਸਮਝ ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਡਰ ਅਤੇ ਤਾਕਤ ਦੇ ਸਾਹਮਣੇ ਜੀਉਣ ਦੇ ਢੰਗ ਤੋਂ ਆਉਂਦੀ ਹੈ। ਬਖਾਨਿ ਅਜਿਹੇ ਮਨੁੱਖ ਨੂੰ ਆਤਮਕ ਸੂਝ ਵਾਲਾ ਆਖਣ ਲਈ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the conduct-based explanation and provide Punjabi without introducing formal-title comparisons."
+    },
+    {
+      "ordinal": 17,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The source explicitly uses ਭੇਖ, garb or outward form. Its relation to inward detachment must be explained, not deleted.",
+      "after": "Sahib Singh reads relinquishing Maya itself as taking up the true garb of detachment. ਭੇਖ remains the source image in that contextual reading; a separate change of physical costume is not required by his explanation.",
+      "reason": "ED01/ED03: paired source-context note; Correct the prior attribution: Sahib Singh identifies relinquishment with true garb rather than requiring two sequential acts or physical costume. Preserve the source image and provide equivalent Punjabi; the root will separately revise the original study."
+    },
+    {
+      "ordinal": 17,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਮਾਇਆ ਤਿਆਗਣ ਨੂੰ ਹੀ ਵੈਰਾਗ ਦਾ ਸੱਚਾ ਭੇਖ ਧਾਰਨਾ ਸਮਝਾਉਂਦੇ ਹਨ। ਇਸ ਪ੍ਰਸੰਗਕ ਪੜ੍ਹਤ ਵਿੱਚ ਭੇਖ ਮੂਲ ਚਿੱਤਰ ਰਹਿੰਦਾ ਹੈ; ਉਨ੍ਹਾਂ ਦੀ ਵਿਆਖਿਆ ਵੱਖਰੇ ਤੌਰ ਉੱਤੇ ਸਰੀਰਕ ਪਹਿਰਾਵਾ ਬਦਲਣਾ ਲਾਜ਼ਮੀ ਨਹੀਂ ਕਰਦੀ।",
+      "reason": "ED01/ED03: paired source-context note; Correct the prior attribution: Sahib Singh identifies relinquishment with true garb rather than requiring two sequential acts or physical costume. Preserve the source image and provide equivalent Punjabi; the root will separately revise the original study."
+    },
+    {
+      "ordinal": 17,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The blessing is attached to the whole description, not simply to a particular style of clothing.",
+      "after": "ਮਾਥੈ ਭਾਗੁ expresses blessed fortune. It refers back to the whole first-line portrait of relinquishment and detachment.",
+      "reason": "ED01/ED03: paired source-context note; Keep the blessing tied to the complete description and replace the clothing-style hypothetical with the actual phrase; add Punjabi."
+    },
+    {
+      "ordinal": 17,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮਾਥੈ ਭਾਗੁ ਚੰਗੇ ਭਾਗਾਂ ਦਾ ਭਾਵ ਦਿੰਦਾ ਹੈ। ਇਹ ਪਹਿਲੀ ਤੁਕ ਦੇ ਤਿਆਗ ਅਤੇ ਵੈਰਾਗ ਵਾਲੇ ਪੂਰੇ ਚਿੱਤਰ ਵੱਲ ਮੁੜਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the blessing tied to the complete description and replace the clothing-style hypothetical with the actual phrase; add Punjabi."
+    },
+    {
+      "ordinal": 18,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਉਦਾਸੁ is detachment in this context; ਮਮਤਾ is possessive attachment, not every form of affection.",
+      "after": "ਮਮਤਾ is possessive attachment, the hold of mine. ਉਦਾਸੁ describes becoming detached from the attractions named in this context.",
+      "reason": "ED01/ED03: paired source-context note; Retain both contextual lexical choices and provide Punjabi without broad comparisons to affection."
+    },
+    {
+      "ordinal": 18,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮਮਤਾ ਅਪਣੱਤ ਜਾਂ ਮੇਰਾ ਹੋਣ ਦੀ ਪਕੜ ਹੈ। ਉਦਾਸੁ ਇਸ ਪ੍ਰਸੰਗ ਵਿੱਚ ਦੱਸੀਆਂ ਖਿੱਚਾਂ ਤੋਂ ਉਪਰਾਮ ਹੋਣ ਨੂੰ ਦੱਸਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain both contextual lexical choices and provide Punjabi without broad comparisons to affection."
+    },
+    {
+      "ordinal": 18,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Read alongside Salok 12’s Divine presence in every heart; this is not a claim that God is absent from everyone else.",
+      "after": "Read this portrait beside Salok 12, where Hari dwells in every heart. Here the heart is specifically described as released from possessiveness.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the necessary cross-Salok interpretation while stating the relationship positively in both languages."
+    },
+    {
+      "ordinal": 18,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਇਸ ਚਿੱਤਰ ਨੂੰ ਬਾਰ੍ਹਵੇਂ ਸਲੋਕ ਨਾਲ ਪੜ੍ਹੋ, ਜਿੱਥੇ ਹਰਿ ਹਰ ਹਿਰਦੇ ਵਿੱਚ ਵੱਸਦਾ ਹੈ। ਇੱਥੇ ਹਿਰਦੇ ਦੀ ਖ਼ਾਸ ਪਛਾਣ ਮਮਤਾ ਤੋਂ ਛੁੱਟਿਆ ਹੋਣਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the necessary cross-Salok interpretation while stating the relationship positively in both languages."
+    },
+    {
+      "ordinal": 19,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਹਉਮੈ has a theological depth beyond ordinary confidence or self-esteem; the clause connects release with recognizing the Creator.",
+      "after": "ਪਛਾਨਿ connects relinquishing ਹਉਮੈ with recognizing Ram as Creator. This draft keeps that Divine relationship within the explanation of the self-centered I.",
+      "reason": "ED01/ED03: paired source-context note; Replace confidence and self-esteem comparisons with the actual grammar and Creator relationship; add Punjabi."
+    },
+    {
+      "ordinal": 19,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਪਛਾਨਿ ਹਉਮੈ ਛੱਡਣ ਨੂੰ ਰਾਮ ਕਰਤਾਰ ਦੀ ਪਛਾਣ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਇਹ ਖਰੜਾ ਮੈਂ-ਕੇਂਦਰਤ ਪਕੜ ਸਮਝਾਉਂਦਿਆਂ ਪ੍ਰਭੂ ਨਾਲ ਉਹ ਸੰਬੰਧ ਨਾਲ ਰੱਖਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace confidence and self-esteem comparisons with the actual grammar and Creator relationship; add Punjabi."
+    },
+    {
+      "ordinal": 19,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The declared liberation follows the complete first-line description; it is not a badge the app can award.",
+      "after": "The declaration of liberation follows both recognizing the Creator and relinquishing haumai. ਸਾਚੀ ਮਾਨੁ emphasizes accepting that teaching as true.",
+      "reason": "ED01/ED03: paired source-context note; Remove app-award language; preserve the complete first-line condition and explain the closing command in Punjabi too."
+    },
+    {
+      "ordinal": 19,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮੁਕਤੀ ਦਾ ਕਥਨ ਕਰਤਾਰ ਦੀ ਪਛਾਣ ਅਤੇ ਹਉਮੈ ਤਿਆਗਣ ਦੋਵਾਂ ਤੋਂ ਬਾਅਦ ਆਉਂਦਾ ਹੈ। ਸਾਚੀ ਮਾਨੁ ਉਸ ਸਿੱਖਿਆ ਨੂੰ ਸੱਚਾ ਮੰਨਣ ਉੱਤੇ ਜ਼ੋਰ ਦਿੰਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Remove app-award language; preserve the complete first-line condition and explain the closing command in Punjabi too."
+    },
+    {
+      "ordinal": 20,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਕਲਿ is retained as the age of conflict or Kaliyug; this gloss does not establish a historical calendar for the ages.",
+      "after": "ਕਲਿ names the age of conflict, or Kaliyug. The two actions attributed to Naam are dispelling fear and removing ਦੁਰਮਤਿ, misguided understanding.",
+      "reason": "ED01/ED03: paired source-context note; Retain the age terminology while replacing calendar speculation with the two source actions; add Punjabi."
+    },
+    {
+      "ordinal": 20,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਕਲਿ ਕਲੇਸ਼ਾਂ ਦੇ ਯੁੱਗ ਜਾਂ ਕਲਿਯੁਗ ਲਈ ਹੈ। ਨਾਮ ਦੇ ਦੋ ਕੰਮ ਦੱਸੇ ਹਨ: ਡਰ ਦੂਰ ਕਰਨਾ ਅਤੇ ਦੁਰਮਤਿ, ਖੋਟੀ ਮਤਿ, ਹਟਾਉਣਾ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the age terminology while replacing calendar speculation with the two source actions; add Punjabi."
+    },
+    {
+      "ordinal": 20,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The line is a spiritual affirmation of fulfillment, not an app guarantee that every material wish will be granted.",
+      "after": "ਸਫਲ speaks of fulfillment within the night-and-day remembrance described here. Read it alongside the surrounding Saloks about liberation and releasing haumai.",
+      "reason": "ED01/ED03: paired source-context note; Remove product-guarantee language and anchor the existing spiritual-context reading in the neighboring text; add Punjabi."
+    },
+    {
+      "ordinal": 20,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸਫਲ ਦੀ ਗੱਲ ਇੱਥੇ ਦੱਸੇ ਰਾਤ-ਦਿਨ ਦੇ ਭਜਨ ਅੰਦਰ ਆਉਂਦੀ ਹੈ। ਇਸ ਨੂੰ ਆਲੇ-ਦੁਆਲੇ ਦੇ ਮੁਕਤੀ ਅਤੇ ਹਉਮੈ ਛੱਡਣ ਵਾਲੇ ਸਲੋਕਾਂ ਨਾਲ ਪੜ੍ਹੋ।",
+      "reason": "ED01/ED03: paired source-context note; Remove product-guarantee language and anchor the existing spiritual-context reading in the neighboring text; add Punjabi."
+    },
+    {
+      "ordinal": 21,
+      "field": "lines.0.interpretiveCaution",
+      "before": "Tongue and ears name utterance and listening. The line should not be used to exclude people whose hearing or speech differs.",
+      "after": "ਜਿਹਬਾ and ਕਰਨ name tongue and ears. Praising with one and listening with the other are paired before the next line addresses the mind.",
+      "reason": "ED01/ED03: paired source-context note; Explain the source’s paired faculties instead of introducing an exclusion scenario; add Punjabi."
+    },
+    {
+      "ordinal": 21,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਜਿਹਬਾ ਅਤੇ ਕਰਨ ਜੀਭ ਅਤੇ ਕੰਨਾਂ ਲਈ ਹਨ। ਇੱਕ ਨਾਲ ਸਿਫ਼ਤਿ ਅਤੇ ਦੂਜੇ ਨਾਲ ਸੁਣਨਾ ਜੋੜੇ ਹਨ; ਅਗਲੀ ਤੁਕ ਫਿਰ ਮਨ ਨੂੰ ਸੰਬੋਧਨ ਕਰਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Explain the source’s paired faculties instead of introducing an exclusion scenario; add Punjabi."
+    },
+    {
+      "ordinal": 21,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Jam’s abode or dominion is spiritual language of death’s bondage, not a claim that the body will never die.",
+      "after": "ਜਮ ਕੈ ਧਾਮ is Jam’s abode or dominion. The draft explains it as death’s bondage, keeping the verse’s spiritual promise connected to praise and listening.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the interpretive choice without an unnecessary physical-immortality comparison; add Punjabi."
+    },
+    {
+      "ordinal": 21,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਜਮ ਕੈ ਧਾਮ ਜਮ ਦਾ ਘਰ ਜਾਂ ਵੱਸ ਹੈ। ਖਰੜਾ ਇਸ ਨੂੰ ਮੌਤ ਦੇ ਬੰਧਨ ਵਜੋਂ ਸਮਝਾਉਂਦਾ ਹੈ ਅਤੇ ਆਤਮਕ ਛੁਟਕਾਰੇ ਦੀ ਗੱਲ ਸਿਫ਼ਤਿ ਤੇ ਸੁਣਨ ਨਾਲ ਜੋੜਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the interpretive choice without an unnecessary physical-immortality comparison; add Punjabi."
+    },
+    {
+      "ordinal": 22,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The named attachments are not equivalent to all affection, ambition or ordinary personal responsibility.",
+      "after": "The line groups possessiveness, greed, binding attachment and arrogance. These are the forms of grasping the person relinquishes.",
+      "reason": "ED01/ED03: paired source-context note; Replace broad comparisons to ambition and responsibility with the actual grouped terms; add Punjabi."
+    },
+    {
+      "ordinal": 22,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਤੁਕ ਮਮਤਾ, ਲੋਭ, ਬੰਨ੍ਹਣ ਵਾਲੇ ਮੋਹ ਅਤੇ ਅਹੰਕਾਰ ਨੂੰ ਇਕੱਠਾ ਰੱਖਦੀ ਹੈ। ਇਹ ਉਹ ਪਕੜਾਂ ਹਨ ਜੋ ਮਨੁੱਖ ਛੱਡਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace broad comparisons to ambition and responsibility with the actual grouped terms; add Punjabi."
+    },
+    {
+      "ordinal": 22,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The verse asserts help in spiritual deliverance; it does not grant unchecked authority over others.",
+      "after": "ਆਪਨ ਤਰੈ concerns the person’s own crossing; ਅਉਰਨ ਲੇਤ ਉਧਾਰ extends deliverance to others. The release described is therefore not confined to the individual.",
+      "reason": "ED01/ED03: paired source-context note; Retain the strong deliverance claim and explain the self/others movement rather than introduce an authority scenario; add Punjabi."
+    },
+    {
+      "ordinal": 22,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਆਪਨ ਤਰੈ ਮਨੁੱਖ ਦੇ ਆਪਣੇ ਪਾਰ ਹੋਣ ਲਈ ਹੈ; ਅਉਰਨ ਲੇਤ ਉਧਾਰ ਉਧਾਰ ਦੀ ਗੱਲ ਹੋਰਨਾਂ ਤੱਕ ਲੈ ਜਾਂਦਾ ਹੈ। ਇਸ ਲਈ ਦੱਸੀ ਖ਼ਲਾਸੀ ਇਕੱਲੇ ਵਿਅਕਤੀ ਤੱਕ ਸੀਮਤ ਨਹੀਂ ਰਹਿੰਦੀ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the strong deliverance claim and explain the self/others movement rather than introduce an authority scenario; add Punjabi."
+    },
+    {
+      "ordinal": 23,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The dream and spectacle are images for the world’s character; they should not be turned into a claim that suffering has no reality or consequence.",
+      "after": "Dream and spectacle are the two images offered for regarding the world. The next line supplies their contrast with abiding Divine truth.",
+      "reason": "ED01/ED03: paired source-context note; Replace an unintroduced suffering-denial scenario with the image and its second-line contrast; add Punjabi."
+    },
+    {
+      "ordinal": 23,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸੁਪਨਾ ਅਤੇ ਲੰਘਦਾ ਦ੍ਰਿਸ਼ ਜਗਤ ਨੂੰ ਵੇਖਣ ਲਈ ਦਿੱਤੇ ਦੋ ਚਿੱਤਰ ਹਨ। ਅਗਲੀ ਤੁਕ ਉਨ੍ਹਾਂ ਦਾ ਸਦਾ-ਥਿਰ ਪ੍ਰਭੂ ਦੇ ਸੱਚ ਨਾਲ ਫ਼ਰਕ ਖੋਲ੍ਹਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace an unintroduced suffering-denial scenario with the image and its second-line contrast; add Punjabi."
+    },
+    {
+      "ordinal": 23,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਸਾਚੋ carries a theological claim of abiding truth here. “Endures” makes that contrast explicit without treating every temporary thing as morally false.",
+      "after": "ਸਾਚੋ carries the contrast of abiding truth here. The draft uses “endures” to explain how the changing appearances are distinguished from Bhagvan.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the stated interpretive choice about abiding truth and provide equivalent Punjabi."
+    },
+    {
+      "ordinal": 23,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸਾਚੋ ਇੱਥੇ ਸਦਾ-ਥਿਰ ਸੱਚ ਦਾ ਫ਼ਰਕ ਦੱਸਦਾ ਹੈ। ਖਰੜਾ ਟਿਕੇ ਰਹਿਣ ਦਾ ਭਾਵ ਵਰਤ ਕੇ ਬਦਲਦੇ ਰੂਪਾਂ ਅਤੇ ਭਗਵਾਨ ਵਿੱਚ ਅੰਤਰ ਸਮਝਾਉਂਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the stated interpretive choice about abiding truth and provide equivalent Punjabi."
+    },
+    {
+      "ordinal": 24,
+      "field": "lines.0.interpretiveCaution",
+      "before": "Maya here concerns the consuming orientation toward worldly acquisition, not a blanket rejection of necessary work.",
+      "after": "ਨਿਸਿ ਦਿਨੁ gives Maya’s pursuit the same continual span used for remembrance in Salok 20. The contrast concerns what directs attention throughout life.",
+      "reason": "ED01/ED03: paired source-context note; Replace the necessary-work hypothetical with the actual repeated time phrase and its contextual contrast; add Punjabi."
+    },
+    {
+      "ordinal": 24,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਨਿਸਿ ਦਿਨੁ ਮਾਇਆ ਦੀ ਦੌੜ ਨੂੰ ਉਹੀ ਲਗਾਤਾਰ ਫੈਲਾਅ ਦਿੰਦਾ ਹੈ ਜੋ ਵੀਹਵੇਂ ਸਲੋਕ ਵਿੱਚ ਭਜਨ ਲਈ ਸੀ। ਫ਼ਰਕ ਜੀਵਨ ਭਰ ਧਿਆਨ ਨੂੰ ਦਿਸ਼ਾ ਦੇਣ ਵਾਲੀ ਗੱਲ ਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace the necessary-work hypothetical with the actual repeated time phrase and its contextual contrast; add Punjabi."
+    },
+    {
+      "ordinal": 24,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਕੋਟਨ expresses rarity rhetorically; it is not a statistical claim about a measured population.",
+      "after": "ਕੋਟਨ ਮੈ ... ਕੋਊ emphasizes rarity. The point of the contrast is Narayan being held in the heart amid widespread restless pursuit.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the rhetorical reading of rarity without introducing population measurement; add Punjabi."
+    },
+    {
+      "ordinal": 24,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਕੋਟਨ ਮੈ ... ਕੋਊ ਵਿਰਲਤਾ ਉੱਤੇ ਜ਼ੋਰ ਦਿੰਦਾ ਹੈ। ਫ਼ਰਕ ਆਮ ਬੇਚੈਨ ਦੌੜ ਵਿੱਚ ਵੀ ਚਿੱਤ ਅੰਦਰ ਨਾਰਾਇਣ ਦੀ ਯਾਦ ਟਿਕਣ ਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the rhetorical reading of rarity without introducing population measurement; add Punjabi."
+    },
+    {
+      "ordinal": 25,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The verse describes a recurring visible process, not a scientific theory of cosmic origins.",
+      "after": "The bubble image includes both ਉਪਜੈ, arising, and ਬਿਨਸੈ, passing away. The repeated process is the feature carried into the next line.",
+      "reason": "ED01/ED03: paired source-context note; Remove the scientific-origins disclaimer and identify exactly what the analogy carries; add Punjabi."
+    },
+    {
+      "ordinal": 25,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਬੁਲਬੁਲੇ ਦੇ ਚਿੱਤਰ ਵਿੱਚ ਉਪਜੈ, ਬਣਨਾ, ਅਤੇ ਬਿਨਸੈ, ਮਿਟਣਾ, ਦੋਵੇਂ ਹਨ। ਇਹ ਮੁੜ-ਮੁੜ ਹੋਣ ਵਾਲੀ ਗਤੀ ਅਗਲੀ ਤੁਕ ਵਿੱਚ ਲਿਆਂਦੀ ਜਾਂਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Remove the scientific-origins disclaimer and identify exactly what the analogy carries; add Punjabi."
+    },
+    {
+      "ordinal": 25,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The analogy concerns arising and passing; do not extend every property of a bubble into doctrine.",
+      "after": "ਤੈਸੇ links the world’s creation to the bubble’s arising and passing. The draft confines the analogy to that explicitly presented movement.",
+      "reason": "ED01/ED03: paired source-context note; State the useful limit of the analogy through its linking word; add Punjabi."
+    },
+    {
+      "ordinal": 25,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਤੈਸੇ ਜਗਤ ਦੀ ਰਚਨਾ ਨੂੰ ਬੁਲਬੁਲੇ ਦੇ ਬਣਨ-ਮਿਟਣ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਖਰੜਾ ਮਿਸਾਲ ਨੂੰ ਇਸੇ ਸਪਸ਼ਟ ਦੱਸੀ ਗਤੀ ਤੱਕ ਰੱਖਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; State the useful limit of the analogy through its linking word; add Punjabi."
+    },
+    {
+      "ordinal": 26,
+      "field": "lines.0.interpretiveCaution",
+      "before": "Blindness is a metaphor for spiritual inattention here, not a judgement about people with impaired sight.",
+      "after": "ਮਦਿ ਮਾਇਆ ਕੈ describes intoxication with Maya. ਅੰਧੁ is read as the spiritual inattention through which the person fails to recognize what the preceding Salok showed.",
+      "reason": "ED01/ED03: paired source-context note; Keep the metaphorical interpretation and remove reference to visual disability; add Punjabi."
+    },
+    {
+      "ordinal": 26,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਮਦਿ ਮਾਇਆ ਕੈ ਮਾਇਆ ਦੇ ਨਸ਼ੇ ਨੂੰ ਦੱਸਦਾ ਹੈ। ਅੰਧੁ ਨੂੰ ਇੱਥੇ ਉਹ ਆਤਮਕ ਬੇਧਿਆਨੀ ਲਿਆ ਹੈ ਜਿਸ ਕਰਕੇ ਮਨੁੱਖ ਪਿਛਲੇ ਸਲੋਕ ਦੀ ਦਿਖਾਈ ਗੱਲ ਨਹੀਂ ਪਛਾਣਦਾ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the metaphorical interpretation and remove reference to visual disability; add Punjabi."
+    },
+    {
+      "ordinal": 26,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The snares retain the verse’s spiritual language of death and bondage; avoid converting it into a threat aimed at a child or an outsider.",
+      "after": "ਜਮ ਫੰਧ returns to the snare image of death’s bondage. It follows the first line’s spiritual inattention and names Hari’s remembrance as the missing relationship.",
+      "reason": "ED01/ED03: paired source-context note; Retain the theological image while removing an unintroduced child-or-outsider threat scenario; add Punjabi."
+    },
+    {
+      "ordinal": 26,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਜਮ ਫੰਧ ਮੌਤ ਦੇ ਬੰਧਨ ਵਾਲੇ ਫਾਹੇ ਦਾ ਚਿੱਤਰ ਮੁੜ ਲਿਆਉਂਦਾ ਹੈ। ਇਹ ਪਹਿਲੀ ਤੁਕ ਦੀ ਆਤਮਕ ਬੇਧਿਆਨੀ ਤੋਂ ਬਾਅਦ ਆਉਂਦਾ ਹੈ ਅਤੇ ਹਰਿ ਦੇ ਭਜਨ ਨਾਲ ਟੁੱਟਿਆ ਸੰਬੰਧ ਦੱਸਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the theological image while removing an unintroduced child-or-outsider threat scenario; add Punjabi."
+    },
+    {
+      "ordinal": 27,
+      "field": "lines.0.interpretiveCaution",
+      "before": "Lasting peace here is a spiritual orientation toward the Divine, not a promise that every difficult circumstance will end.",
+      "after": "The lasting ਸੁਖ sought in the opening is joined to ਸਰਨਿ, refuge in Ram. The draft keeps peace within that Divine relationship.",
+      "reason": "ED01/ED03: paired source-context note; Keep the spiritual-refuge interpretation and replace the hypothetical disappearance of every difficulty; add Punjabi."
+    },
+    {
+      "ordinal": 27,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਸ਼ੁਰੂ ਵਿੱਚ ਚਾਹਿਆ ਸਦਾ ਦਾ ਸੁਖ ਰਾਮ ਦੀ ਸਰਨਿ ਨਾਲ ਜੋੜਿਆ ਹੈ। ਖਰੜਾ ਸੁਖ ਨੂੰ ਪ੍ਰਭੂ ਨਾਲ ਇਸ ਸੰਬੰਧ ਵਿੱਚ ਰੱਖਦਾ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the spiritual-refuge interpretation and replace the hypothetical disappearance of every difficulty; add Punjabi."
+    },
+    {
+      "ordinal": 27,
+      "field": "lines.1.interpretiveCaution",
+      "before": "“Opportunity” explains the teaching context of ਦੁਰਲਭ; it does not rank the worth of bodies by health or ability.",
+      "after": "ਦੁਰਲਭ describes the human body as rare to obtain. “Opportunity” is the draft’s contextual explanation of why the invitation to take refuge matters now.",
+      "reason": "ED01/ED03: paired source-context note; Preserve and translate the explicit editorial addition of opportunity, removing unrelated comparisons of health or ability."
+    },
+    {
+      "ordinal": 27,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਦੁਰਲਭ ਮਨੁੱਖਾ ਦੇਹ ਨੂੰ ਔਖਾ ਮਿਲਣ ਵਾਲੀ ਆਖਦਾ ਹੈ। ਮੌਕਾ ਖਰੜੇ ਦੀ ਪ੍ਰਸੰਗਕ ਸਮਝ ਹੈ ਕਿ ਸਰਨ ਲੈਣ ਦਾ ਸੱਦਾ ਹੁਣ ਕਿਉਂ ਅਹਿਮ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve and translate the explicit editorial addition of opportunity, removing unrelated comparisons of health or ability."
+    },
+    {
+      "ordinal": 28,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The admonition challenges a consuming aim; it should not be used to mock people working for basic needs.",
+      "after": "ਧਾਵਹੀ describes continual running, and ਮਾਇਆ ਕਾਰਨਿ names its aim. The admonition concerns a life directed by that pursuit.",
+      "reason": "ED01/ED03: paired source-context note; Replace a hypothetical judgement of workers with the action and purpose actually named; add Punjabi."
+    },
+    {
+      "ordinal": 28,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਧਾਵਹੀ ਲਗਾਤਾਰ ਦੌੜਨ ਨੂੰ ਦੱਸਦਾ ਹੈ ਅਤੇ ਮਾਇਆ ਕਾਰਨਿ ਉਸ ਦਾ ਮਕਸਦ ਨਾਮ ਕਰਦਾ ਹੈ। ਉਲਾਹਮਾ ਉਸ ਦੌੜ ਦੇ ਪਿੱਛੇ ਲੱਗੇ ਜੀਵਨ ਬਾਰੇ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Replace a hypothetical judgement of workers with the action and purpose actually named; add Punjabi."
+    },
+    {
+      "ordinal": 28,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਬਿਰਥਾ is a strong spiritual judgement about life’s direction, not permission to call another person worthless.",
+      "after": "ਬਿਰਥਾ assesses life in relation to its spiritual purpose. Read after Salok 27, the warning concerns a precious opportunity passing without Hari’s remembrance.",
+      "reason": "ED01/ED03: paired source-context note; Keep the strong spiritual judgement anchored in the neighboring precious-life verse instead of an insult scenario; add Punjabi."
+    },
+    {
+      "ordinal": 28,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਬਿਰਥਾ ਜੀਵਨ ਨੂੰ ਉਸ ਦੇ ਆਤਮਕ ਮਕਸਦ ਦੇ ਸੰਬੰਧ ਵਿੱਚ ਵੇਖਦਾ ਹੈ। ਸਤਾਈਵੇਂ ਸਲੋਕ ਤੋਂ ਬਾਅਦ ਇਹ ਚੇਤਾਵਨੀ ਕੀਮਤੀ ਮੌਕੇ ਦੇ ਹਰਿ ਦੇ ਭਜਨ ਬਿਨਾ ਲੰਘਣ ਬਾਰੇ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Keep the strong spiritual judgement anchored in the neighboring precious-life verse instead of an insult scenario; add Punjabi."
+    },
+    {
+      "ordinal": 29,
+      "field": "lines.0.interpretiveCaution",
+      "before": "ਰੂਪ ਰਾਮ is a theological affirmation tied to continuous devotion, not a certification of a named living person.",
+      "after": "ਰੂਪ ਰਾਮ is the theological affirmation attached to the person described as remembering night and day. Keep the description and affirmation together.",
+      "reason": "ED01/ED03: paired source-context note; Preserve the Divine-form affirmation and its source condition while removing a hypothetical living-person certification; add Punjabi."
+    },
+    {
+      "ordinal": 29,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": null,
+      "after": "ਰੂਪ ਰਾਮ ਉਸ ਮਨੁੱਖ ਨਾਲ ਜੁੜਿਆ ਧਾਰਮਿਕ ਕਥਨ ਹੈ ਜਿਸ ਨੂੰ ਰਾਤ-ਦਿਨ ਭਜਨ ਕਰਨ ਵਾਲਾ ਦੱਸਿਆ ਹੈ। ਵਰਣਨ ਅਤੇ ਕਥਨ ਦੋਵੇਂ ਇਕੱਠੇ ਰਹਿਣ।",
+      "reason": "ED01/ED03: paired source-context note; Preserve the Divine-form affirmation and its source condition while removing a hypothetical living-person certification; add Punjabi."
+    },
+    {
+      "ordinal": 29,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The language of no separation should be preserved without inventing a complete metaphysical system or granting human infallibility.",
+      "after": "ਅੰਤਰੁ ਨਹੀ affirms no separation between Hari’s devotee and Hari. This second line completes the first across the Ang 1427–1428 boundary.",
+      "reason": "ED01/ED03: paired source-context note; Retain the strong unity claim and add the concrete cross-Ang reading context, replacing unrelated authority-system warnings; add Punjabi."
+    },
+    {
+      "ordinal": 29,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": null,
+      "after": "ਅੰਤਰੁ ਨਹੀ ਹਰਿ ਦੇ ਭਗਤ ਅਤੇ ਹਰਿ ਵਿੱਚ ਵਿੱਥ ਨਾ ਹੋਣ ਦਾ ਕਥਨ ਹੈ। ਇਹ ਦੂਜੀ ਤੁਕ ਅੰਗ 1427–1428 ਦੀ ਹੱਦ ਪਾਰ ਕਰਕੇ ਪਹਿਲੀ ਨੂੰ ਪੂਰਾ ਕਰਦੀ ਹੈ।",
+      "reason": "ED01/ED03: paired source-context note; Retain the strong unity claim and add the concrete cross-Ang reading context, replacing unrelated authority-system warnings; add Punjabi."
+    },
+    {
+      "ordinal": 5,
+      "field": "simple.en",
+      "before": "The Salok challenges the belief that relationships and possessions can be held forever. It calls for truthful attachment to what endures.",
+      "after": "The Salok challenges the belief that relationships and possessions can be held forever. It asks us to recognize the limits of possessiveness and worldly companionship.",
+      "reason": "ED06-SALOK05-SUMMARY-PRECISION"
+    },
+    {
+      "ordinal": 5,
+      "field": "simple.pa",
+      "before": "ਸਲੋਕ ਇਸ ਭਰਮ ਨੂੰ ਚੁਣੌਤੀ ਦਿੰਦਾ ਹੈ ਕਿ ਰਿਸ਼ਤੇ ਅਤੇ ਜਾਇਦਾਦ ਸਦਾ ਆਪਣੇ ਕਬਜ਼ੇ ਵਿੱਚ ਰਹਿਣਗੇ। ਇਹ ਟਿਕਾਊ ਆਸਰੇ ਦੀ ਸੱਚੀ ਪਛਾਣ ਵੱਲ ਬੁਲਾਉਂਦਾ ਹੈ।",
+      "after": "ਸਲੋਕ ਇਸ ਭਰਮ ਨੂੰ ਚੁਣੌਤੀ ਦਿੰਦਾ ਹੈ ਕਿ ਰਿਸ਼ਤੇ ਅਤੇ ਜਾਇਦਾਦ ਸਦਾ ਆਪਣੇ ਕਬਜ਼ੇ ਵਿੱਚ ਰਹਿਣਗੇ। ਇਹ ਮਲਕੀਅਤ ਦੇ ਭਰਮ ਅਤੇ ਦੁਨੀਆਵੀ ਸਾਥ ਦੀ ਹੱਦ ਪਛਾਣਨ ਲਈ ਆਖਦਾ ਹੈ।",
+      "reason": "ED06-SALOK05-SUMMARY-PRECISION"
+    },
+    {
+      "ordinal": 9,
+      "field": "simple.en",
+      "before": "The giver of worldly comfort is also the source of spiritual liberation. Remembrance joins these two lines.",
+      "after": "Ram, the giver of all comfort and peace, is also the source of liberation. Remembrance joins the two lines.",
+      "reason": "ED05-SALOK09-SUKH-SCOPE"
+    },
+    {
+      "ordinal": 9,
+      "field": "simple.pa",
+      "before": "ਦੁਨੀਆਵੀ ਸੁਖਾਂ ਦਾ ਦਾਤਾ ਹੀ ਆਤਮਕ ਮੁਕਤੀ ਦਾ ਆਸਰਾ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਨੂੰ ਸਿਮਰਨ ਜੋੜਦਾ ਹੈ।",
+      "after": "ਸਾਰੇ ਸੁਖਾਂ ਦਾ ਦਾਤਾ ਰਾਮ ਹੀ ਆਤਮਕ ਮੁਕਤੀ ਦਾ ਆਸਰਾ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਨੂੰ ਸਿਮਰਨ ਜੋੜਦਾ ਹੈ।",
+      "reason": "ED05-SALOK09-SUKH-SCOPE"
+    },
+    {
+      "ordinal": 9,
+      "field": "study.focus",
+      "before": "The movement from sukh to gat shifts attention from received comfort to spiritual destiny.",
+      "after": "The first line names the giver of all sukh; the second makes the path of remembrance toward gat explicit.",
+      "reason": "ED05-SALOK09-SUKH-SCOPE"
+    },
+    {
+      "ordinal": 9,
+      "field": "study.focusPa",
+      "before": "ਸੁਖ ਤੋਂ ਗਤਿ ਵੱਲ ਜਾਣ ਨਾਲ ਧਿਆਨ ਮਿਲੀਆਂ ਸਹੂਲਤਾਂ ਤੋਂ ਆਤਮਕ ਮੰਜ਼ਿਲ ਵੱਲ ਜਾਂਦਾ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਸਾਰੇ ਸੁਖਾਂ ਦੇ ਦਾਤੇ ਦੀ ਗੱਲ ਕਰਦੀ ਹੈ; ਦੂਜੀ ਸਿਮਰਨ ਰਾਹੀਂ ਗਤਿ ਮਿਲਣ ਦੀ ਦਿਸ਼ਾ ਸਪਸ਼ਟ ਕਰਦੀ ਹੈ।",
+      "reason": "ED05-SALOK09-SUKH-SCOPE"
+    },
+    {
+      "ordinal": 2,
+      "field": "study.interpretationCare",
+      "before": "Detachment should not be confused with emotional numbness. The verse also does not give a formula for avoiding physical death.",
+      "after": "ਉਦਾਸੁ describes loosening the mind’s binding attraction to sense pleasures. Hari’s remembrance gives the second line its direction toward freedom from Jam’s noose.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 2,
+      "field": "study.interpretationCarePa",
+      "before": "ਉਪਰਾਮਤਾ ਨੂੰ ਸੁੰਨੀਆਂ ਭਾਵਨਾਵਾਂ ਨਾਲ ਨਾ ਮਿਲਾਓ। ਇਹ ਤੁਕ ਸਰੀਰਕ ਮੌਤ ਤੋਂ ਬਚਣ ਦਾ ਕੋਈ ਨੁਸਖ਼ਾ ਵੀ ਨਹੀਂ ਦਿੰਦੀ।",
+      "after": "ਉਦਾਸੁ ਇੱਥੇ ਵਿਸ਼ਿਆਂ ਦੀ ਬੰਨ੍ਹਣ ਵਾਲੀ ਖਿੱਚ ਤੋਂ ਮਨ ਦੇ ਉਪਰਾਮ ਹੋਣ ਦਾ ਭਾਵ ਦਿੰਦਾ ਹੈ। ਦੂਜੀ ਤੁਕ ਵਿੱਚ ਹਰਿ ਦਾ ਭਜਨ ਜਮ ਦੀ ਫਾਹੀ ਤੋਂ ਮੁਕਤੀ ਦੀ ਦਿਸ਼ਾ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 3,
+      "field": "study.interpretationCare",
+      "before": "Avoid treating old age as moral failure. The contrast concerns unattended time and spiritual attention.",
+      "after": "Youth has passed in the first line, while the call to remember Hari remains present in the second. The change of tense gives the Salok its urgency.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 3,
+      "field": "study.interpretationCarePa",
+      "before": "ਬੁਢੇਪੇ ਨੂੰ ਨੈਤਿਕ ਅਸਫਲਤਾ ਨਾ ਮੰਨੋ। ਗੱਲ ਬਿਨਾ ਧਿਆਨ ਲੰਘਦੇ ਸਮੇਂ ਅਤੇ ਆਤਮਕ ਜਾਗਰੂਕਤਾ ਦੀ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਜੁਆਨੀ ਲੰਘ ਚੁੱਕੀ ਹੈ; ਦੂਜੀ ਵਿੱਚ ਹਰਿ ਦਾ ਭਜਨ ਕਰਨ ਦਾ ਸੱਦਾ ਹੁਣ ਵੀ ਹੈ। ਲੰਘੇ ਸਮੇਂ ਅਤੇ ਹੁਣ ਦੇ ਸੱਦੇ ਦਾ ਜੋੜ ਸਲੋਕ ਦੀ ਤਾਕੀਦ ਖੋਲ੍ਹਦਾ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 4,
+      "field": "study.interpretationCare",
+      "before": "Do not apply the vocabulary of bewilderment to dementia, disability or psychiatric illness. Those are not what this verse diagnoses.",
+      "after": "ਸੂਝੈ concerns spiritual understanding in this context. Bodily ageing has occurred, yet the call to recognize mortality and remember Bhagvan remains unanswered.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 4,
+      "field": "study.interpretationCarePa",
+      "before": "ਭੁੱਲੇ ਹੋਣ ਦੀ ਇਸ ਬੋਲੀ ਨੂੰ ਭੁੱਲਣ ਦੀ ਬਿਮਾਰੀ, ਅਪਾਹਜਤਾ ਜਾਂ ਮਾਨਸਿਕ ਰੋਗ ਦਾ ਨਾਂ ਨਾ ਬਣਾਓ। ਤੁਕ ਇਨ੍ਹਾਂ ਦਾ ਨਿਦਾਨ ਨਹੀਂ ਕਰਦੀ।",
+      "after": "ਸੂਝੈ ਇਸ ਪ੍ਰਸੰਗ ਵਿੱਚ ਆਤਮਕ ਸਮਝ ਵੱਲ ਸੰਕੇਤ ਕਰਦਾ ਹੈ। ਸਰੀਰ ਦੀ ਉਮਰ ਵਧ ਗਈ ਹੈ, ਪਰ ਮੌਤ ਦੀ ਹੱਦ ਪਛਾਣ ਕੇ ਭਗਵਾਨ ਨੂੰ ਯਾਦ ਕਰਨ ਦਾ ਸੱਦਾ ਅਜੇ ਅਣਸੁਣਿਆ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 6,
+      "field": "study.interpretationCare",
+      "before": "Divine support should not be used to shame someone who still experiences fear or to discourage help from others.",
+      "after": "The three descriptions of Hari—uplifting, removing fear and supporting the unsupported—prepare the assurance that this Divine presence is always with the listener.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 6,
+      "field": "study.interpretationCarePa",
+      "before": "ਪ੍ਰਭੂ ਦੇ ਆਸਰੇ ਦੀ ਗੱਲ ਕਿਸੇ ਡਰੇ ਹੋਏ ਮਨੁੱਖ ਨੂੰ ਸ਼ਰਮਿੰਦਾ ਕਰਨ ਜਾਂ ਹੋਰਨਾਂ ਦੀ ਮਦਦ ਲੈਣ ਤੋਂ ਰੋਕਣ ਲਈ ਨਾ ਵਰਤੋ।",
+      "after": "ਹਰਿ ਦੇ ਤਿੰਨ ਗੁਣ—ਡਿੱਗਿਆਂ ਨੂੰ ਉਠਾਉਣਾ, ਡਰ ਦੂਰ ਕਰਨਾ ਅਤੇ ਬੇਆਸਰਿਆਂ ਦਾ ਆਸਰਾ ਹੋਣਾ—ਉਸ ਪ੍ਰਭੂ ਦੇ ਸਦਾ ਨਾਲ ਵੱਸਣ ਦੀ ਗੱਲ ਵੱਲ ਲੈ ਜਾਂਦੇ ਹਨ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 7,
+      "field": "study.interpretationCare",
+      "before": "Do not infer that poverty, distress or illness proves a failure to love God. The text addresses the listener’s spiritual orientation.",
+      "after": "ਨੇਹੁ names love. The neglected response is a relationship with the Giver, beyond awareness that a gift has been received.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 7,
+      "field": "study.interpretationCarePa",
+      "before": "ਗਰੀਬੀ, ਦੁੱਖ ਜਾਂ ਬਿਮਾਰੀ ਨੂੰ ਪ੍ਰਭੂ ਨਾਲ ਪਿਆਰ ਦੀ ਘਾਟ ਦਾ ਸਬੂਤ ਨਾ ਮੰਨੋ। ਗੱਲ ਸੁਣਨ ਵਾਲੇ ਦੀ ਆਤਮਕ ਦਿਸ਼ਾ ਦੀ ਹੈ।",
+      "after": "ਨੇਹੁ ਦਾ ਭਾਵ ਪਿਆਰ ਹੈ। ਘਾਟ ਦਾਤ ਮਿਲਣ ਦੀ ਜਾਣਕਾਰੀ ਦੀ ਨਹੀਂ, ਦਾਤੇ ਨਾਲ ਪਿਆਰ ਦਾ ਸੰਬੰਧ ਜੋੜਨ ਦੀ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 9,
+      "field": "study.interpretationCare",
+      "before": "Spiritual liberation is not the same claim as freedom from every illness, loss or difficult emotion.",
+      "after": "ਗਤਿ names spiritual liberation or fulfillment. The second line connects this to remembrance of the same Ram named as the giver of all sukh.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 9,
+      "field": "study.interpretationCarePa",
+      "before": "ਆਤਮਕ ਮੁਕਤੀ ਦੀ ਗੱਲ ਹਰ ਬਿਮਾਰੀ, ਨੁਕਸਾਨ ਜਾਂ ਔਖੀ ਭਾਵਨਾ ਤੋਂ ਛੁੱਟੀ ਦੇ ਵਾਅਦੇ ਵਰਗੀ ਨਹੀਂ।",
+      "after": "ਗਤਿ ਆਤਮਕ ਮੁਕਤੀ ਜਾਂ ਉੱਚੀ ਆਤਮਕ ਅਵਸਥਾ ਦਾ ਭਾਵ ਦਿੰਦੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਇਸ ਨੂੰ ਉਸੇ ਰਾਮ ਦੇ ਸਿਮਰਨ ਨਾਲ ਜੋੜਦੀ ਹੈ ਜੋ ਸਾਰੇ ਸੁਖਾਂ ਦਾ ਦਾਤਾ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 12,
+      "field": "study.interpretationCare",
+      "before": "The text does not tell the app to designate a living person as an infallible Sant. The proclamation directs the mind to Hari.",
+      "after": "The saints proclaim Hari’s presence in every heart. The second line directs the mind toward that same One, joining universal presence and personal remembrance.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 12,
+      "field": "study.interpretationCarePa",
+      "before": "ਇਹ ਪਾਠ ਐਪ ਨੂੰ ਕਿਸੇ ਜੀਊਂਦੇ ਮਨੁੱਖ ਨੂੰ ਅਚੂਕ ਸੰਤ ਘੋਸ਼ਿਤ ਕਰਨ ਲਈ ਨਹੀਂ ਕਹਿੰਦਾ। ਪੁਕਾਰ ਮਨ ਨੂੰ ਹਰਿ ਵੱਲ ਲੈ ਜਾਂਦੀ ਹੈ।",
+      "after": "ਸੰਤ ਹਰ ਹਿਰਦੇ ਵਿੱਚ ਹਰਿ ਦੀ ਹਾਜ਼ਰੀ ਦੀ ਪੁਕਾਰ ਕਰਦੇ ਹਨ। ਦੂਜੀ ਤੁਕ ਮਨ ਨੂੰ ਉਸੇ ਪ੍ਰਭੂ ਦਾ ਭਜਨ ਕਰਨ ਵੱਲ ਮੋੜਦੀ ਹੈ; ਹਰ ਥਾਂ ਹਾਜ਼ਰੀ ਅਤੇ ਆਪਣੇ ਸਿਮਰਨ ਦੀ ਗੱਲ ਇਕੱਠੀ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 21,
+      "field": "study.interpretationCare",
+      "before": "These bodily images are not a test of eligibility for spiritual life. Keep accessible reading and listening options available.",
+      "after": "The tongue praises, the ears listen, and the mind is addressed. Keeping these together shows remembrance as an attentive relationship with Hari.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 21,
+      "field": "study.interpretationCarePa",
+      "before": "ਇਹ ਸਰੀਰਕ ਚਿੱਤਰ ਆਤਮਕ ਜੀਵਨ ਦੀ ਯੋਗਤਾ ਦੀ ਪਰਖ ਨਹੀਂ ਹਨ। ਪੜ੍ਹਨ ਅਤੇ ਸੁਣਨ ਦੇ ਸਹੂਲਤਯੋਗ ਰਾਹ ਸਭ ਲਈ ਖੁੱਲ੍ਹੇ ਰਹਿਣ।",
+      "after": "ਜੀਭ ਗੁਣ ਗਾਉਂਦੀ ਹੈ, ਕੰਨ ਸੁਣਦੇ ਹਨ ਅਤੇ ਮਨ ਨੂੰ ਸੰਬੋਧਨ ਕੀਤਾ ਗਿਆ ਹੈ। ਤਿੰਨਾਂ ਨੂੰ ਇਕੱਠਾ ਪੜ੍ਹਿਆਂ ਹਰਿ ਨਾਲ ਧਿਆਨ ਜੋੜ ਕੇ ਭਜਨ ਕਰਨ ਦੀ ਗੱਲ ਖੁੱਲ੍ਹਦੀ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 26,
+      "field": "study.interpretationCare",
+      "before": "The imagery is spiritual admonition. It does not diagnose addiction, blindness or a clinical condition.",
+      "after": "Maya’s intoxication describes attention so absorbed that spiritual understanding is obscured. Jam’s snares express the bondage from which the verse directs the mind toward Hari’s remembrance.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 26,
+      "field": "study.interpretationCarePa",
+      "before": "ਇਹ ਆਤਮਕ ਚੇਤਾਵਨੀ ਦੇ ਚਿੱਤਰ ਹਨ। ਇਨ੍ਹਾਂ ਨਾਲ ਨਸ਼ੇ ਦੀ ਬਿਮਾਰੀ, ਨਜ਼ਰ ਦੀ ਅਸਮਰੱਥਤਾ ਜਾਂ ਕਿਸੇ ਹੋਰ ਰੋਗ ਦਾ ਨਿਦਾਨ ਨਹੀਂ ਹੁੰਦਾ।",
+      "after": "ਮਾਇਆ ਦਾ ਨਸ਼ਾ ਅਜਿਹੀ ਖਿੱਚ ਦਾ ਚਿੱਤਰ ਹੈ ਜਿਸ ਵਿੱਚ ਆਤਮਕ ਸਮਝ ਓਹਲੀ ਹੋ ਜਾਂਦੀ ਹੈ। ਜਮ ਦੇ ਫਾਹੇ ਬੰਧਨ ਦਾ ਭਾਵ ਦਿੰਦੇ ਹਨ; ਸਲੋਕ ਇਸ ਤੋਂ ਮੁਕਤੀ ਲਈ ਮਨ ਨੂੰ ਹਰਿ ਦੇ ਭਜਨ ਵੱਲ ਮੋੜਦਾ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 27,
+      "field": "study.interpretationCare",
+      "before": "The preciousness of human life applies without judging health, productivity or disability.",
+      "after": "ਦੁਰਲਭ means difficult to obtain. The verse values human embodiment as the present opportunity to seek lasting peace in Ram’s refuge.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 27,
+      "field": "study.interpretationCarePa",
+      "before": "ਮਨੁੱਖਾ ਜੀਵਨ ਦੀ ਕੀਮਤ ਸਿਹਤ, ਕੰਮ ਦੀ ਮਾਤਰਾ ਜਾਂ ਅਪਾਹਜਤਾ ਦਾ ਦਰਜਾ ਲਾਏ ਬਿਨਾ ਹੈ।",
+      "after": "ਦੁਰਲਭ ਦਾ ਭਾਵ ਔਖਾ ਮਿਲਣ ਵਾਲਾ ਹੈ। ਸਲੋਕ ਮਨੁੱਖਾ ਦੇਹ ਨੂੰ ਰਾਮ ਦੀ ਸਰਨ ਵਿੱਚ ਟਿਕ ਕੇ ਸਦਾ ਦਾ ਸੁਖ ਲੱਭਣ ਦਾ ਹੁਣ ਮਿਲਿਆ ਮੌਕਾ ਦੱਸਦਾ ਹੈ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 29,
+      "field": "study.interpretationCare",
+      "before": "Spiritual union is not an authorization to treat any leader as beyond scrutiny. The source does not name such a leader.",
+      "after": "ਰੂਪ ਰਾਮ and ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ belong together: the second line affirms the unity introduced in the first. The change of Ang leaves the Salok uninterrupted.",
+      "reason": "ED03/ED04: source-specific interpretation context"
+    },
+    {
+      "ordinal": 29,
+      "field": "study.interpretationCarePa",
+      "before": "ਆਤਮਕ ਇਕਤਾ ਕਿਸੇ ਆਗੂ ਨੂੰ ਪੜਤਾਲ ਤੋਂ ਉੱਪਰ ਮੰਨਣ ਦੀ ਆਗਿਆ ਨਹੀਂ। ਮੂਲ ਪਾਠ ਅਜਿਹੇ ਕਿਸੇ ਆਗੂ ਦਾ ਨਾਂ ਨਹੀਂ ਦਿੰਦਾ।",
+      "after": "ਰੂਪ ਰਾਮ ਅਤੇ ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਇਕੱਠੇ ਪੜ੍ਹਣੇ ਹਨ: ਦੂਜੀ ਤੁਕ ਪਹਿਲੀ ਵਿੱਚ ਆਈ ਇਕਤਾ ਦੀ ਗੱਲ ਪੱਕੀ ਕਰਦੀ ਹੈ। ਅੰਗ ਬਦਲਣ ਨਾਲ ਸਲੋਕ ਨਹੀਂ ਟੁੱਟਦਾ।",
+      "reason": "ED03/ED04: equivalent Punjabi context"
+    },
+    {
+      "ordinal": 1,
+      "field": "study.interpretationCare",
+      "before": "Apply the admonition to one’s own orientation toward the Divine. Do not turn it into a verdict that another person’s life is worthless.",
+      "after": "The first line assesses a life without Divine praise; the second gives its response through the fish’s dependence on water. Read the admonition and invitation together.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 1,
+      "field": "study.interpretationCarePa",
+      "before": "ਇਹ ਚੇਤਾਵਨੀ ਆਪਣੇ ਪ੍ਰਭੂ ਨਾਲ ਸੰਬੰਧ ਦੀ ਪੜਤਾਲ ਲਈ ਹੈ। ਇਸ ਤੋਂ ਕਿਸੇ ਹੋਰ ਮਨੁੱਖ ਦੀ ਜ਼ਿੰਦਗੀ ਬੇਮੁੱਲ ਹੋਣ ਦਾ ਫ਼ੈਸਲਾ ਨਾ ਬਣਾਓ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਪ੍ਰਭੂ ਦੀ ਸਿਫ਼ਤਿ ਤੋਂ ਖਾਲੀ ਜੀਵਨ ਨੂੰ ਪਰਖਦੀ ਹੈ; ਦੂਜੀ ਮੱਛੀ ਦੇ ਪਾਣੀ ਉੱਤੇ ਆਸਰੇ ਰਾਹੀਂ ਉਸ ਦਾ ਜਵਾਬ ਦਿੰਦੀ ਹੈ। ਚੇਤਾਵਨੀ ਅਤੇ ਸੱਦਾ ਇਕੱਠੇ ਪੜ੍ਹੋ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 5,
+      "field": "study.interpretationCare",
+      "before": "The passage does not authorize neglecting a spouse or treating people as disposable. Its challenge is to permanent ownership.",
+      "after": "ਦਾਰਾ names the wife, alongside wealth and possessions. The second line places all these relationships within the limit of mortality.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 5,
+      "field": "study.interpretationCarePa",
+      "before": "ਇਹ ਸਲੋਕ ਜੀਵਨ-ਸਾਥੀ ਦੀ ਅਣਦੇਖੀ ਕਰਨ ਜਾਂ ਲੋਕਾਂ ਨੂੰ ਛੱਡਣਯੋਗ ਮੰਨਣ ਦੀ ਆਗਿਆ ਨਹੀਂ ਦਿੰਦਾ। ਸਵਾਲ ਸਦਾ ਦੀ ਮਲਕੀਅਤ ਦੇ ਭਰਮ ਦਾ ਹੈ।",
+      "after": "ਦਾਰਾ ਦਾ ਭਾਵ ਪਤਨੀ ਹੈ; ਧਨ ਅਤੇ ਸੰਪਤਿ ਨਾਲ ਇਹ ਰਿਸ਼ਤਾ ਵੀ ਆਉਂਦਾ ਹੈ। ਦੂਜੀ ਤੁਕ ਇਨ੍ਹਾਂ ਸਭ ਦੇ ਸਾਥ ਨੂੰ ਮੌਤ ਦੀ ਹੱਦ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ ਰੱਖਦੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 8,
+      "field": "study.interpretationCare",
+      "before": "Gratitude is an application of this verse, not a measure for ranking people by their possessions or circumstances.",
+      "after": "The repeated giving in the first line prepares the question in the second: why has the Giver been forgotten? Gratitude is one practical response to that question.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 8,
+      "field": "study.interpretationCarePa",
+      "before": "ਸ਼ੁਕਰਾਨਾ ਇਸ ਤੁਕ ਤੋਂ ਅਮਲ ਲਈ ਲਿਆ ਵਿਚਾਰ ਹੈ; ਲੋਕਾਂ ਦਾ ਦਰਜਾ ਉਨ੍ਹਾਂ ਦੀ ਜਾਇਦਾਦ ਜਾਂ ਹਾਲਾਤ ਨਾਲ ਲਾਉਣ ਦਾ ਮਾਪ ਨਹੀਂ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਮਿਲੀਆਂ ਦਾਤਾਂ ਦੂਜੀ ਦੇ ਸਵਾਲ ਵੱਲ ਲੈ ਜਾਂਦੀਆਂ ਹਨ: ਦਾਤਾ ਕਿਉਂ ਭੁੱਲ ਗਿਆ ਹੈ? ਸ਼ੁਕਰਾਨਾ ਉਸ ਸਵਾਲ ਦਾ ਇੱਕ ਅਮਲੀ ਜਵਾਬ ਹੋ ਸਕਦਾ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 10,
+      "field": "study.interpretationCare",
+      "before": "The finite span of life invites attention, not pressure to measure or compete in spiritual practice.",
+      "after": "ਮੀਤ and ਮਨਾ bring an intimate tone to the reminder of passing time. The purpose is remembrance of the One through whom liberation is found.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 10,
+      "field": "study.interpretationCarePa",
+      "before": "ਜੀਵਨ ਦੀ ਸੀਮਾ ਧਿਆਨ ਦਾ ਸੱਦਾ ਹੈ, ਆਤਮਕ ਅਭਿਆਸ ਨੂੰ ਗਿਣਤੀ ਜਾਂ ਮੁਕਾਬਲਾ ਬਣਾਉਣ ਦਾ ਦਬਾਅ ਨਹੀਂ।",
+      "after": "ਮੀਤ ਅਤੇ ਮਨਾ ਦੇ ਸੰਬੋਧਨ ਲੰਘਦੇ ਸਮੇਂ ਦੀ ਯਾਦ ਨੂੰ ਨੇੜਤਾ ਦਿੰਦੇ ਹਨ। ਦਿਸ਼ਾ ਉਸ ਪ੍ਰਭੂ ਦਾ ਭਜਨ ਹੈ ਜਿਸ ਦੇ ਸਿਮਰਨ ਨਾਲ ਗਤਿ ਮਿਲਦੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 13,
+      "field": "study.interpretationCare",
+      "before": "Steadiness is not emotional suppression. The Divine-form language also does not exempt anyone from accountability.",
+      "after": "The first line joins pleasure and pain with greed, attachment and pride. The second names the person free of their sway as the form of Bhagvan; the theological affirmation belongs with that whole description.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 13,
+      "field": "study.interpretationCarePa",
+      "before": "ਅਡੋਲਤਾ ਭਾਵਨਾਵਾਂ ਨੂੰ ਦਬਾਉਣਾ ਨਹੀਂ। ਭਗਵਾਨ ਦੇ ਸਰੂਪ ਵਾਲੀ ਬੋਲੀ ਕਿਸੇ ਨੂੰ ਜਵਾਬਦੇਹੀ ਤੋਂ ਬਾਹਰ ਵੀ ਨਹੀਂ ਕਰਦੀ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਸੁਖ ਦੁਖ ਦੇ ਨਾਲ ਲੋਭ, ਮੋਹ ਅਤੇ ਅਭਿਮਾਨ ਰੱਖਦੀ ਹੈ। ਦੂਜੀ ਉਨ੍ਹਾਂ ਦੇ ਪ੍ਰਭਾਵ ਤੋਂ ਮੁਕਤ ਮਨੁੱਖ ਨੂੰ ਭਗਵਾਨ ਦਾ ਸਰੂਪ ਆਖਦੀ ਹੈ; ਇਸ ਆਤਮਕ ਗੱਲ ਨੂੰ ਪੂਰੇ ਵਰਣਨ ਨਾਲ ਪੜ੍ਹੋ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 14,
+      "field": "study.interpretationCare",
+      "before": "Receiving correction and resisting unjust slander remain possible. Equanimity is not a command to disregard truth.",
+      "after": "Praise and blame, gold and iron form two paired contrasts. Together they describe freedom from being governed by reputation and greed; the second line names this liberation.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 14,
+      "field": "study.interpretationCarePa",
+      "before": "ਸੁਧਾਰ ਸੁਣਨਾ ਅਤੇ ਝੂਠੀ ਨਿੰਦਾ ਦਾ ਜਵਾਬ ਦੇਣਾ ਫਿਰ ਵੀ ਸੰਭਵ ਹਨ। ਅਡੋਲਤਾ ਸੱਚ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰਨ ਦਾ ਹੁਕਮ ਨਹੀਂ।",
+      "after": "ਉਸਤਤਿ ਅਤੇ ਨਿੰਦਿਆ, ਕੰਚਨ ਅਤੇ ਲੋਹ ਦੋ ਜੋੜੇ ਹਨ। ਇਹ ਮਾਣ-ਵਡਿਆਈ ਅਤੇ ਲਾਲਚ ਦੇ ਵੱਸ ਤੋਂ ਛੁਟਕਾਰੇ ਦਾ ਚਿੱਤਰ ਬਣਾਉਂਦੇ ਹਨ; ਦੂਜੀ ਤੁਕ ਇਸ ਨੂੰ ਮੁਕਤੀ ਆਖਦੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 15,
+      "field": "study.interpretationCare",
+      "before": "Grief is not proof of spiritual failure. Equal regard does not require remaining in danger or entrusting everyone with the same access.",
+      "after": "Joy and sorrow are placed beside enemy and friend. The Salok describes an inward freedom that changes both one’s response to circumstances and one’s regard for people.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 15,
+      "field": "study.interpretationCarePa",
+      "before": "ਸੋਗ ਆਉਣਾ ਆਤਮਕ ਅਸਫਲਤਾ ਦਾ ਸਬੂਤ ਨਹੀਂ। ਸਮਾਨ ਭਾਵ ਲਈ ਖ਼ਤਰੇ ਵਿੱਚ ਰਹਿਣਾ ਜਾਂ ਸਭ ਨੂੰ ਇਕੋ ਜਿਹਾ ਭਰੋਸਾ ਦੇਣਾ ਲਾਜ਼ਮੀ ਨਹੀਂ।",
+      "after": "ਹਰਖ ਅਤੇ ਸੋਗ ਦੇ ਨਾਲ ਵੈਰੀ ਅਤੇ ਮਿੱਤਰ ਰੱਖੇ ਹਨ। ਸਲੋਕ ਅਜਿਹੀ ਅੰਦਰਲੀ ਮੁਕਤੀ ਦੱਸਦਾ ਹੈ ਜੋ ਹਾਲਾਤ ਪ੍ਰਤੀ ਜਵਾਬ ਅਤੇ ਲੋਕਾਂ ਵੱਲ ਨਜ਼ਰ ਦੋਵਾਂ ਨੂੰ ਬਦਲਦੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 16,
+      "field": "study.interpretationCare",
+      "before": "Fearlessness does not mean taking unnecessary risks. Seeking protection against violence is compatible with refusing domination.",
+      "after": "The two halves of the first line belong together: causing fear and accepting another’s intimidation are both relinquished. This paired freedom gives ਗਿਆਨੀ its practical content here.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 16,
+      "field": "study.interpretationCarePa",
+      "before": "ਨਿਰਭੈਤਾ ਦਾ ਅਰਥ ਬੇਲੋੜੇ ਖ਼ਤਰੇ ਲੈਣਾ ਨਹੀਂ। ਹਿੰਸਾ ਤੋਂ ਸੁਰੱਖਿਆ ਲੱਭਣਾ ਦਬਦਬੇ ਨੂੰ ਨਾ ਮੰਨਣ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਦੇ ਦੋਵੇਂ ਹਿੱਸੇ ਇਕੱਠੇ ਹਨ: ਕਿਸੇ ਨੂੰ ਡਰਾਉਣਾ ਅਤੇ ਕਿਸੇ ਹੋਰ ਦੇ ਡਰਾਵੇ ਵਿੱਚ ਆਉਣਾ, ਦੋਵੇਂ ਛੱਡੇ ਹਨ। ਇਹ ਜੋੜ ਇੱਥੇ ਗਿਆਨੀ ਦੇ ਜੀਵਨ ਦਾ ਅਮਲੀ ਰੂਪ ਦੱਸਦਾ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 18,
+      "field": "study.interpretationCare",
+      "before": "Nonattachment need not mean withdrawing care. The universal-presence statement in Salok 12 should remain beside this portrait.",
+      "after": "Read the indwelling Brahm named here beside Hari’s presence in every heart in Salok 12. This Salok focuses on relinquishing possessive attachment and becoming receptive to that presence.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 18,
+      "field": "study.interpretationCarePa",
+      "before": "ਉਪਰਾਮਤਾ ਦਾ ਮਤਲਬ ਸੰਭਾਲ ਤੋਂ ਹਟ ਜਾਣਾ ਲਾਜ਼ਮੀ ਨਹੀਂ। ਬਾਰ੍ਹਵੇਂ ਸਲੋਕ ਦੀ ਹਰ ਹਿਰਦੇ ਵਿੱਚ ਹਾਜ਼ਰੀ ਵਾਲੀ ਗੱਲ ਇਸ ਚਿੱਤਰ ਦੇ ਨਾਲ ਰਹੇ।",
+      "after": "ਇੱਥੇ ਹਿਰਦੇ ਵਿੱਚ ਬ੍ਰਹਮ ਦੇ ਨਿਵਾਸ ਨੂੰ ਸਲੋਕ ੧੨ ਦੀ ਹਰ ਹਿਰਦੇ ਵਿੱਚ ਹਰਿ ਦੀ ਹਾਜ਼ਰੀ ਵਾਲੀ ਗੱਲ ਨਾਲ ਪੜ੍ਹੋ। ਇਸ ਸਲੋਕ ਦਾ ਧਿਆਨ ਮਮਤਾ ਛੱਡਣ ਅਤੇ ਉਸ ਹਾਜ਼ਰੀ ਵੱਲ ਖੁੱਲ੍ਹਣ ਉੱਤੇ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 19,
+      "field": "study.interpretationCare",
+      "before": "Do not equate haumai with every form of self-respect, personal identity or necessary boundary. The verse concerns the self in relation to the Creator.",
+      "after": "Recognizing the Creator and relinquishing haumai are joined in the first line. The second calls this person liberated, keeping the account of the self within its relationship to Ram, the Creator.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 19,
+      "field": "study.interpretationCarePa",
+      "before": "ਹਉਮੈ ਨੂੰ ਹਰ ਸਵੈਮਾਣ, ਨਿੱਜੀ ਪਛਾਣ ਜਾਂ ਲੋੜੀਂਦੀ ਹੱਦ ਨਾਲ ਇਕੋ ਨਾ ਮੰਨੋ। ਗੱਲ ਕਰਤਾਰ ਨਾਲ ਸੰਬੰਧ ਵਿੱਚ ਮੈਂ ਦੀ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਕਰਤਾ ਰਾਮ ਨੂੰ ਪਛਾਣਨਾ ਅਤੇ ਹਉਮੈ ਤਿਆਗਣਾ ਜੁੜੇ ਹਨ। ਦੂਜੀ ਉਸ ਮਨੁੱਖ ਨੂੰ ਮੁਕਤ ਆਖਦੀ ਹੈ; ਇੱਥੇ ਮੈਂ ਦੀ ਗੱਲ ਕਰਤਾਰ ਨਾਲ ਸੰਬੰਧ ਵਿੱਚ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 20,
+      "field": "study.interpretationCare",
+      "before": "Do not turn the verse into a contract for wealth or immunity from hardship. Its own context concerns Naam and spiritual transformation.",
+      "after": "Naam is described through what it transforms: fear and distorted understanding. Read the fulfillment of one’s affairs in the second line within that devotional and spiritual context.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 20,
+      "field": "study.interpretationCarePa",
+      "before": "ਤੁਕ ਨੂੰ ਧਨ ਮਿਲਣ ਜਾਂ ਔਖ ਤੋਂ ਬਚਣ ਦਾ ਕਰਾਰ ਨਾ ਬਣਾਓ। ਇਸ ਦਾ ਆਪਣਾ ਪ੍ਰਸੰਗ ਨਾਮ ਅਤੇ ਆਤਮਕ ਬਦਲਾਅ ਹੈ।",
+      "after": "ਨਾਮ ਨੂੰ ਡਰ ਅਤੇ ਦੁਰਮਤਿ ਦੂਰ ਕਰਨ ਵਾਲਾ ਆਖਿਆ ਹੈ। ਦੂਜੀ ਤੁਕ ਵਿੱਚ ਕੰਮ ਸਫਲ ਹੋਣ ਦੀ ਗੱਲ ਨੂੰ ਇਸੇ ਭਗਤੀ ਅਤੇ ਆਤਮਕ ਬਦਲਾਅ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ ਪੜ੍ਹੋ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 22,
+      "field": "study.interpretationCare",
+      "before": "Helping others is not ownership of their conscience. The absence of arrogance remains part of the portrait.",
+      "after": "The movement is from relinquishing possessiveness, greed, attachment and pride to crossing over and helping others cross. The help described grows from that transformed way of living.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 22,
+      "field": "study.interpretationCarePa",
+      "before": "ਹੋਰਨਾਂ ਦੀ ਮਦਦ ਉਨ੍ਹਾਂ ਦੀ ਅੰਤਰਆਤਮਾ ਦੀ ਮਲਕੀਅਤ ਨਹੀਂ। ਅਹੰਕਾਰ ਤੋਂ ਖ਼ਲਾਸੀ ਇਸ ਚਿੱਤਰ ਦਾ ਹਿੱਸਾ ਰਹਿੰਦੀ ਹੈ।",
+      "after": "ਗੱਲ ਮਮਤਾ, ਲੋਭ, ਮੋਹ ਅਤੇ ਅਹੰਕਾਰ ਛੱਡਣ ਤੋਂ ਆਪ ਤਰਨ ਅਤੇ ਹੋਰਨਾਂ ਨੂੰ ਤਾਰਨ ਵੱਲ ਜਾਂਦੀ ਹੈ। ਦੱਸੀ ਮਦਦ ਜੀਵਨ ਦੇ ਇਸ ਬਦਲੇ ਰੂਪ ਨਾਲ ਜੁੜੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 23,
+      "field": "study.interpretationCare",
+      "before": "Do not use impermanence to dismiss suffering, excuse injustice or avoid responsibilities. Those conclusions are not stated in the couplet.",
+      "after": "The dream and spectacle images describe the world’s passing character. ਬਿਨੁ ਭਗਵਾਨ supplies the contrast: the enduring Divine is the reference by which this impermanence is understood.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 23,
+      "field": "study.interpretationCarePa",
+      "before": "ਨਾਸਵੰਤਤਾ ਨਾਲ ਦੁੱਖ ਨੂੰ ਰੱਦ ਕਰਨਾ, ਬੇਇਨਸਾਫ਼ੀ ਨੂੰ ਮਾਫ਼ ਕਰਨਾ ਜਾਂ ਜ਼ਿੰਮੇਵਾਰੀ ਤੋਂ ਭੱਜਣਾ ਠੀਕ ਨਹੀਂ; ਇਹ ਨਤੀਜੇ ਸਲੋਕ ਵਿੱਚ ਨਹੀਂ ਦਿੱਤੇ।",
+      "after": "ਸੁਪਨੇ ਅਤੇ ਪੇਖਨੇ ਦੇ ਚਿੱਤਰ ਜਗਤ ਦੇ ਲੰਘ ਜਾਣ ਵਾਲੇ ਸੁਭਾਉ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ। ਬਿਨੁ ਭਗਵਾਨ ਫ਼ਰਕ ਸਪਸ਼ਟ ਕਰਦਾ ਹੈ: ਟਿਕਾਊ ਪ੍ਰਭੂ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ ਇਹ ਨਾਸਵੰਤਤਾ ਸਮਝੀ ਜਾਂਦੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 24,
+      "field": "study.interpretationCare",
+      "before": "The language of rarity should not become spiritual elitism or a numerical ranking of people.",
+      "after": "The verse contrasts continual pursuit of Maya with the rare person whose attention rests on Narayan. Its emphasis is the direction of the mind.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 24,
+      "field": "study.interpretationCarePa",
+      "before": "ਵਿਰਲਤਾ ਦੀ ਬੋਲੀ ਨੂੰ ਆਤਮਕ ਉੱਚ-ਨੀਚ ਜਾਂ ਲੋਕਾਂ ਦੀ ਗਿਣਤੀ ਵਾਲੇ ਦਰਜੇ ਵਿੱਚ ਨਾ ਬਦਲੋ।",
+      "after": "ਤੁਕ ਮਾਇਆ ਲਈ ਨਿੱਤ ਭਟਕਣ ਦੇ ਸਾਹਮਣੇ ਉਹ ਵਿਰਲਾ ਮਨੁੱਖ ਰੱਖਦੀ ਹੈ ਜਿਸ ਦੇ ਚਿੱਤ ਵਿੱਚ ਨਾਰਾਇਨ ਹੈ। ਜ਼ੋਰ ਮਨ ਦੀ ਦਿਸ਼ਾ ਉੱਤੇ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 25,
+      "field": "study.interpretationCare",
+      "before": "An analogy has a scope. This one should not be used to deny a person’s pain or value.",
+      "after": "The bubble both arises from water and passes away. Those two movements, rather than the bubble’s size or beauty, explain the comparison with the world’s formation.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 25,
+      "field": "study.interpretationCarePa",
+      "before": "ਮਿਸਾਲ ਦੀ ਇਕ ਹੱਦ ਹੁੰਦੀ ਹੈ। ਇਸ ਨੂੰ ਕਿਸੇ ਦੇ ਦੁੱਖ ਜਾਂ ਕਦਰ ਨੂੰ ਰੱਦ ਕਰਨ ਲਈ ਨਾ ਵਰਤੋ।",
+      "after": "ਬੁਲਬੁਲਾ ਪਾਣੀ ਤੋਂ ਬਣਦਾ ਵੀ ਹੈ ਅਤੇ ਨਾਸ ਵੀ ਹੁੰਦਾ ਹੈ। ਜਗਤ ਦੀ ਬਣਤਰ ਨਾਲ ਤੁਲਨਾ ਲਈ ਇਹ ਦੋਵੇਂ ਗੱਲਾਂ ਅਹਿਮ ਹਨ; ਇੱਥੇ ਬੁਲਬੁਲੇ ਦੇ ਆਕਾਰ ਜਾਂ ਸੁੰਦਰਤਾ ਦੀ ਗੱਲ ਨਹੀਂ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 28,
+      "field": "study.interpretationCare",
+      "before": "Keep the challenge directed toward one’s own priorities. Poverty or demanding work is not evidence of spiritual inferiority.",
+      "after": "ਧਾਵਹੀ presents restless pursuit, while ਸਿਰਾਨ names life’s passing. Hari’s remembrance is the missing orientation that connects the warning in both lines.",
+      "reason": "ED03/ED04 broader style: explain the actual source rather than hypothetical misuse"
+    },
+    {
+      "ordinal": 28,
+      "field": "study.interpretationCarePa",
+      "before": "ਇਸ ਸਵਾਲ ਨੂੰ ਆਪਣੀਆਂ ਤਰਜੀਹਾਂ ਵੱਲ ਰੱਖੋ। ਗਰੀਬੀ ਜਾਂ ਔਖਾ ਕੰਮ ਆਤਮਕ ਨੀਵਾਂ ਹੋਣ ਦਾ ਸਬੂਤ ਨਹੀਂ।",
+      "after": "ਧਾਵਹੀ ਵਿੱਚ ਭਟਕਦੀ ਦੌੜ ਅਤੇ ਸਿਰਾਨ ਵਿੱਚ ਜੀਵਨ ਲੰਘਣ ਦਾ ਭਾਵ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਦੀ ਚੇਤਾਵਨੀ ਨੂੰ ਹਰਿ ਦੇ ਭਜਨ ਦੀ ਭੁੱਲ ਜੋੜਦੀ ਹੈ।",
+      "reason": "ED03/ED04 broader style: equivalent source-focused Punjabi"
+    },
+    {
+      "ordinal": 3,
+      "field": "study.closeReading",
+      "before": "The first line compresses a lifetime into a change that seems to have happened unnoticed: youth has gone and age now governs the body. The second line does not remain in regret. It addresses the mind and calls it to Hari while life is still passing. This distinction matters. A lesson that only frightens the reader about ageing would miss the action the Salok actually names. It offers neither a way to reverse age nor a calculation of how much life remains. It asks that remembrance stop being indefinitely postponed. The invitation can be heard at any stage of life.",
+      "after": "The first line compresses a lifetime into a change that seems to have happened unnoticed: youth has gone and age now governs the body. The second turns directly to the mind and calls it to Hari while life is still passing. The movement from what has already happened to what can be attended to now gives the couplet its force. Remembrance is named as the response to passing time. A reader can hear that invitation at any stage of life, examining what has been postponed and giving the Divine a place within the present day.",
+      "reason": "ED02/ED03/ED04: faithful reader-facing close reading; remove unsupported sequence or hypothetical warnings"
+    },
+    {
+      "ordinal": 3,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਜੀਵਨ ਦੇ ਵੱਡੇ ਬਦਲਾਅ ਨੂੰ ਥੋੜ੍ਹੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਰੱਖਦੀ ਹੈ: ਜੁਆਨੀ ਲੰਘ ਗਈ ਅਤੇ ਸਰੀਰ ਉੱਤੇ ਬੁਢੇਪੇ ਦਾ ਅਸਰ ਹੈ। ਇਹ ਬਦਲਾਅ ਮਾਨੋ ਧਿਆਨ ਤੋਂ ਬਿਨਾ ਹੋ ਗਿਆ। ਦੂਜੀ ਤੁਕ ਪਛਤਾਵੇ ਉੱਤੇ ਨਹੀਂ ਰੁਕਦੀ; ਉਹ ਮਨ ਨੂੰ ਹਰਿ ਦਾ ਭਜਨ ਕਰਨ ਲਈ ਆਖਦੀ ਹੈ, ਜਦੋਂ ਕਿ ਉਮਰ ਅਜੇ ਲੰਘ ਰਹੀ ਹੈ। ਇਹ ਫ਼ਰਕ ਅਹਿਮ ਹੈ। ਜੇ ਵਿਆਖਿਆ ਸਿਰਫ਼ ਬੁਢੇਪੇ ਦਾ ਡਰ ਪੈਦਾ ਕਰੇ, ਤਾਂ ਸਲੋਕ ਦਾ ਦਿੱਤਾ ਰਾਹ ਰਹਿ ਜਾਂਦਾ ਹੈ। ਇੱਥੇ ਉਮਰ ਉਲਟਾਉਣ ਜਾਂ ਬਚਿਆ ਸਮਾਂ ਗਿਣਣ ਦੀ ਗੱਲ ਨਹੀਂ। ਸੱਦਾ ਇਹ ਹੈ ਕਿ ਪ੍ਰਭੂ ਦੀ ਯਾਦ ਨੂੰ ਅਣਮਿੱਥੇ ਭਵਿੱਖ ਉੱਤੇ ਨਾ ਛੱਡਿਆ ਜਾਵੇ। ਜੀਵਨ ਦੇ ਹਰ ਪੜਾਅ ਵਿੱਚ ਇਹ ਗੱਲ ਸੁਣੀ ਜਾ ਸਕਦੀ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਜੀਵਨ ਦੇ ਵੱਡੇ ਬਦਲਾਅ ਨੂੰ ਥੋੜ੍ਹੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਰੱਖਦੀ ਹੈ: ਜੁਆਨੀ ਲੰਘ ਗਈ ਅਤੇ ਸਰੀਰ ਉੱਤੇ ਬੁਢੇਪੇ ਦਾ ਅਸਰ ਹੈ। ਇਹ ਬਦਲਾਅ ਮਾਨੋ ਧਿਆਨ ਤੋਂ ਬਿਨਾ ਹੋ ਗਿਆ। ਦੂਜੀ ਤੁਕ ਸਿੱਧਾ ਮਨ ਨੂੰ ਹਰਿ ਦਾ ਭਜਨ ਕਰਨ ਲਈ ਆਖਦੀ ਹੈ, ਜਦੋਂ ਕਿ ਉਮਰ ਅਜੇ ਲੰਘ ਰਹੀ ਹੈ। ਜੋ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਜਿਸ ਵੱਲ ਹੁਣ ਧਿਆਨ ਦਿੱਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਉਨ੍ਹਾਂ ਦਾ ਜੋੜ ਸਲੋਕ ਦੀ ਤਾਕੀਦ ਬਣਾਉਂਦਾ ਹੈ। ਲੰਘਦੇ ਸਮੇਂ ਦਾ ਜਵਾਬ ਪ੍ਰਭੂ ਦੀ ਯਾਦ ਵਿੱਚ ਦਿੱਤਾ ਹੈ। ਹਰ ਉਮਰ ਦਾ ਪਾਠਕ ਇਹ ਸੱਦਾ ਸੁਣ ਕੇ ਵੇਖ ਸਕਦਾ ਹੈ ਕਿ ਕੀ ਟਾਲਿਆ ਜਾ ਰਿਹਾ ਹੈ ਅਤੇ ਅੱਜ ਦੇ ਦਿਨ ਵਿੱਚ ਪ੍ਰਭੂ ਦੀ ਯਾਦ ਨੂੰ ਥਾਂ ਕਿਵੇਂ ਮਿਲੇ।",
+      "reason": "Equivalent Punjabi close reading for the same corrected scope"
+    },
+    {
+      "ordinal": 4,
+      "field": "study.closeReading",
+      "before": "Salok 3 spoke of time passing. This Salok adds a sharper difficulty: the outward change has occurred, yet understanding has not followed. The question in the second line directs attention to a neglected relationship with Bhagvan. It is not an invitation to inspect and condemn older people. The address can be taken inward by any reader who assumes that wisdom will arrive automatically later. Death brings urgency to the question, but the named response is remembrance. Keeping both lines together prevents the warning from becoming a free-standing threat: its purpose is to awaken attention to the Divine.",
+      "after": "Salok 3 spoke of time passing. This Salok adds a sharper question: the body has grown old, yet spiritual understanding has not awakened. The second line turns that observation into a direct call to remember Bhagvan. Age and understanding are placed side by side so that the reader can examine the connection between the passing of years and the direction of the mind. The approach of death brings urgency, while remembrance gives that urgency a direction. Read the whole couplet as an address to oneself: what relationship with the Divine is still being left unattended?",
+      "reason": "ED02/ED03/ED04: faithful reader-facing close reading; remove unsupported sequence or hypothetical warnings"
+    },
+    {
+      "ordinal": 4,
+      "field": "study.closeReadingPa",
+      "before": "ਪਿਛਲੇ ਸਲੋਕ ਵਿੱਚ ਸਮਾਂ ਲੰਘਣ ਦੀ ਗੱਲ ਸੀ। ਇੱਥੇ ਹੋਰ ਤਿੱਖੀ ਗੱਲ ਸਾਹਮਣੇ ਆਉਂਦੀ ਹੈ: ਬਾਹਰਲਾ ਬਦਲਾਅ ਹੋ ਗਿਆ, ਪਰ ਨਾਲ ਸਮਝ ਨਹੀਂ ਜਾਗੀ। ਦੂਜੀ ਤੁਕ ਦਾ ਸਵਾਲ ਭਗਵਾਨ ਨਾਲ ਭੁੱਲੇ ਹੋਏ ਸੰਬੰਧ ਵੱਲ ਮੋੜਦਾ ਹੈ। ਇਸ ਨੂੰ ਬਜ਼ੁਰਗਾਂ ਦੀ ਪੜਤਾਲ ਜਾਂ ਨਿੰਦਾ ਦਾ ਸੱਦਾ ਨਾ ਬਣਾਇਆ ਜਾਵੇ। ਹਰ ਪਾਠਕ ਇਸ ਨੂੰ ਆਪਣੇ ਵੱਲ ਲੈ ਸਕਦਾ ਹੈ, ਖ਼ਾਸ ਕਰਕੇ ਜਦੋਂ ਇਹ ਮੰਨਿਆ ਜਾਵੇ ਕਿ ਸਿਆਣਪ ਬਾਅਦ ਵਿੱਚ ਆਪਣੇ ਆਪ ਆ ਜਾਵੇਗੀ। ਮੌਤ ਦੀ ਯਾਦ ਸਵਾਲ ਨੂੰ ਤੁਰੰਤ ਅਹਿਮ ਬਣਾਉਂਦੀ ਹੈ, ਪਰ ਦਿੱਤਾ ਰਾਹ ਭਜਨ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਇਕੱਠੀਆਂ ਰੱਖਿਆਂ ਚੇਤਾਵਨੀ ਕੇਵਲ ਧਮਕੀ ਨਹੀਂ ਬਣਦੀ; ਉਸ ਦੀ ਦਿਸ਼ਾ ਪ੍ਰਭੂ ਵੱਲ ਜਾਗਣ ਦੀ ਹੈ।",
+      "after": "ਪਿਛਲੇ ਸਲੋਕ ਵਿੱਚ ਸਮਾਂ ਲੰਘਣ ਦੀ ਗੱਲ ਸੀ। ਇੱਥੇ ਹੋਰ ਤਿੱਖਾ ਸਵਾਲ ਹੈ: ਸਰੀਰ ਬੁੱਢਾ ਹੋ ਗਿਆ ਹੈ ਪਰ ਆਤਮਕ ਸਮਝ ਨਹੀਂ ਜਾਗੀ। ਦੂਜੀ ਤੁਕ ਇਸ ਹਾਲਤ ਨੂੰ ਭਗਵਾਨ ਦਾ ਭਜਨ ਕਰਨ ਦੇ ਸਿੱਧੇ ਸੱਦੇ ਵਿੱਚ ਬਦਲਦੀ ਹੈ। ਉਮਰ ਅਤੇ ਸੂਝ ਇਕੱਠੀਆਂ ਰੱਖੀਆਂ ਹਨ ਤਾਂ ਜੋ ਪਾਠਕ ਲੰਘਦੇ ਸਾਲਾਂ ਅਤੇ ਮਨ ਦੀ ਦਿਸ਼ਾ ਦਾ ਸੰਬੰਧ ਵੇਖ ਸਕੇ। ਮੌਤ ਦੀ ਨੇੜਤਾ ਗੱਲ ਨੂੰ ਤੁਰੰਤ ਅਹਿਮ ਬਣਾਉਂਦੀ ਹੈ, ਅਤੇ ਭਜਨ ਉਸ ਤਾਕੀਦ ਨੂੰ ਦਿਸ਼ਾ ਦਿੰਦਾ ਹੈ। ਪੂਰਾ ਸਲੋਕ ਆਪਣੇ ਮਨ ਵੱਲ ਕੀਤਾ ਸੰਬੋਧਨ ਸਮਝ ਕੇ ਪੜ੍ਹੋ: ਪ੍ਰਭੂ ਨਾਲ ਕਿਹੜਾ ਸੰਬੰਧ ਅਜੇ ਧਿਆਨ ਤੋਂ ਬਿਨਾ ਰਹਿ ਗਿਆ ਹੈ?",
+      "reason": "Equivalent Punjabi close reading for the same corrected scope"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.closeReading",
+      "before": "Two actions are joined in the first line. Removing either one changes what is being described. A reading that praises clothing alone overlooks the relinquishment of bikhia; a reading that erases bhekh conceals the verse’s actual image. The second line places good fortune on the person whose whole life fits that description. In the following Saloks, attachment and haumai are named again, helping the reader keep the inward concern in view. For practical learning, the question is whether a claimed spiritual identity corresponds to what one has actually released. Appearance can then be examined through conduct, rather than treated as sufficient evidence by itself.",
+      "after": "Bikhia and bhekh stand together in the first line: worldly entanglement is relinquished, and detachment is expressed through the image of garb. The question is how these expressions belong together. Sahib Singh reads the genuine relinquishment itself as the true garb of detachment. The source’s garment image remains, while its spiritual significance comes into view through what has been released. The second line calls such a person fortunate. The following Saloks continue with possessive attachment and haumai, keeping attention on the mind’s orientation. A practical reflection is to examine how the detachment one speaks of appears in daily conduct.",
+      "reason": "ED02/ED03/ED04: faithful reader-facing close reading; remove unsupported sequence or hypothetical warnings"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਦੋ ਕੰਮ ਜੁੜੇ ਹਨ। ਕਿਸੇ ਇੱਕ ਨੂੰ ਹਟਾਉਣ ਨਾਲ ਦੱਸਿਆ ਚਿੱਤਰ ਬਦਲ ਜਾਂਦਾ ਹੈ। ਜੇ ਕੇਵਲ ਕੱਪੜੇ ਦੀ ਵਡਿਆਈ ਕੀਤੀ ਜਾਵੇ ਤਾਂ ਬਿਖਿਆ ਤਿਆਗਣ ਦੀ ਗੱਲ ਗੁੰਮ ਜਾਂਦੀ ਹੈ; ਜੇ ਭੇਖ ਸ਼ਬਦ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇ ਤਾਂ ਮੂਲ ਤੁਕ ਦਾ ਚਿੱਤਰ ਲੁਕ ਜਾਂਦਾ ਹੈ। ਦੂਜੀ ਤੁਕ ਚੰਗੇ ਭਾਗ ਉਸ ਮਨੁੱਖ ਲਈ ਆਖਦੀ ਹੈ ਜਿਸ ਉੱਤੇ ਪੂਰਾ ਵਰਣਨ ਢੁੱਕਦਾ ਹੈ। ਅਗਲੇ ਸਲੋਕ ਫਿਰ ਮਮਤਾ ਅਤੇ ਹਉਮੈ ਨੂੰ ਨਾਮ ਦਿੰਦੇ ਹਨ, ਇਸ ਲਈ ਅੰਦਰਲੀ ਗੱਲ ਨਜ਼ਰ ਵਿੱਚ ਰਹਿੰਦੀ ਹੈ। ਅਮਲ ਵਿੱਚ ਪੁੱਛਿਆ ਜਾ ਸਕਦਾ ਹੈ ਕਿ ਆਪਣੀ ਆਤਮਕ ਪਛਾਣ ਦਾ ਦਾਅਵਾ ਉਸ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ ਜੋ ਅਸੀਂ ਸੱਚਮੁੱਚ ਛੱਡਿਆ ਹੈ ਜਾਂ ਨਹੀਂ। ਇਸ ਤਰ੍ਹਾਂ ਦਿੱਖ ਨੂੰ ਵਰਤਾਰੇ ਨਾਲ ਪਰਖਿਆ ਜਾਂਦਾ ਹੈ, ਇਕੱਲੀ ਦਿੱਖ ਕਾਫ਼ੀ ਸਬੂਤ ਨਹੀਂ ਬਣਦੀ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਵਿੱਚ ਬਿਖਿਆ ਅਤੇ ਭੇਖ ਇਕੱਠੇ ਆਉਂਦੇ ਹਨ: ਬਿਖਿਆ ਛੱਡੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਵੈਰਾਗ ਨੂੰ ਭੇਖ ਦੇ ਚਿੱਤਰ ਰਾਹੀਂ ਦਰਸਾਇਆ ਗਿਆ ਹੈ। ਸਵਾਲ ਹੈ ਕਿ ਇਹ ਦੋਵੇਂ ਬੋਲ ਆਪਸ ਵਿੱਚ ਕਿਵੇਂ ਜੁੜਦੇ ਹਨ। ਸਾਹਿਬ ਸਿੰਘ ਸੱਚੇ ਤਿਆਗ ਨੂੰ ਹੀ ਵੈਰਾਗ ਦਾ ਸੱਚਾ ਭੇਖ ਸਮਝਾਉਂਦੇ ਹਨ। ਮੂਲ ਵੇਸ ਦਾ ਚਿੱਤਰ ਰਹਿੰਦਾ ਹੈ ਅਤੇ ਜੋ ਤਿਆਗਿਆ ਗਿਆ ਹੈ ਉਸ ਰਾਹੀਂ ਉਸ ਦਾ ਆਤਮਕ ਭਾਵ ਖੁੱਲ੍ਹਦਾ ਹੈ। ਦੂਜੀ ਤੁਕ ਅਜਿਹੇ ਮਨੁੱਖ ਨੂੰ ਭਾਗਾਂ ਵਾਲਾ ਆਖਦੀ ਹੈ। ਅਗਲੇ ਸਲੋਕ ਮਮਤਾ ਅਤੇ ਹਉਮੈ ਦੀ ਗੱਲ ਜਾਰੀ ਰੱਖਦੇ ਹਨ, ਇਸ ਲਈ ਧਿਆਨ ਮਨ ਦੀ ਦਿਸ਼ਾ ਵੱਲ ਰਹਿੰਦਾ ਹੈ। ਅਮਲ ਲਈ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ ਕਿ ਜਿਸ ਵੈਰਾਗ ਦੀ ਅਸੀਂ ਗੱਲ ਕਰਦੇ ਹਾਂ, ਉਹ ਰੋਜ਼ ਦੇ ਵਰਤਾਰੇ ਵਿੱਚ ਕਿਵੇਂ ਦਿਸਦਾ ਹੈ।",
+      "reason": "Equivalent Punjabi close reading for the same corrected scope"
+    },
+    {
+      "ordinal": 27,
+      "field": "study.closeReading",
+      "before": "The opening begins with a desire many readers recognize: peace that does not continually slip away. It names Ram’s refuge as the direction of response. The second line then places value on human embodiment. After several warnings about impermanence, this is significant: the body is temporary, yet the opportunity of human life is not dismissed. Read both lines together and the lesson becomes an invitation to use that opportunity in Divine relationship. The verse supplies no exact number of births or a timetable for attaining liberation. Its emphasis is the rarity of the present gift and the refuge available within it.",
+      "after": "The opening begins with a desire many readers recognize: peace that does not continually slip away. It names Ram’s refuge as the direction of response. The second line then places value on human embodiment. After several warnings about impermanence, this is significant: the body is temporary, yet human life offers a precious opening for remembrance and refuge. Reading the two lines together connects the desire for lasting peace with the opportunity already at hand. The word durlabh gives that opportunity weight. The invitation is to attend to the Divine within this life while the opportunity is present.",
+      "reason": "ED02/ED03/ED04: faithful reader-facing close reading; remove unsupported sequence or hypothetical warnings"
+    },
+    {
+      "ordinal": 27,
+      "field": "study.closeReadingPa",
+      "before": "ਸ਼ੁਰੂ ਵਿੱਚ ਉਹ ਚਾਹ ਆਉਂਦੀ ਹੈ ਜਿਸ ਨੂੰ ਬਹੁਤ ਲੋਕ ਪਛਾਣਦੇ ਹਨ: ਅਜਿਹਾ ਸੁਖ ਜੋ ਵਾਰ-ਵਾਰ ਖਿਸਕ ਨਾ ਜਾਵੇ। ਜਵਾਬ ਦੀ ਦਿਸ਼ਾ ਰਾਮ ਦੀ ਸਰਨ ਦੱਸੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਮਨੁੱਖਾ ਦੇਹ ਦੀ ਕਦਰ ਕਰਾਉਂਦੀ ਹੈ। ਨਾਸਵੰਤਤਾ ਦੀਆਂ ਕਈ ਚੇਤਾਵਨੀਆਂ ਤੋਂ ਬਾਅਦ ਇਹ ਗੱਲ ਖ਼ਾਸ ਹੈ: ਸਰੀਰ ਸਦਾ ਨਹੀਂ, ਪਰ ਮਨੁੱਖਾ ਜੀਵਨ ਦਾ ਮੌਕਾ ਰੱਦ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ। ਦੋਵੇਂ ਤੁਕਾਂ ਨਾਲ ਪੜ੍ਹਿਆਂ ਇਹ ਮੌਕਾ ਪ੍ਰਭੂ ਨਾਲ ਸੰਬੰਧ ਵਿੱਚ ਵਰਤਣ ਦਾ ਸੱਦਾ ਬਣਦਾ ਹੈ। ਤੁਕ ਜਨਮਾਂ ਦੀ ਕੋਈ ਖ਼ਾਸ ਗਿਣਤੀ ਜਾਂ ਮੁਕਤੀ ਦੀ ਸਮਾਂ-ਸਾਰਣੀ ਨਹੀਂ ਦਿੰਦੀ। ਜ਼ੋਰ ਹੁਣ ਮਿਲੀ ਦਾਤ ਦੀ ਦੁਰਲੱਭਤਾ ਅਤੇ ਉਸ ਵਿੱਚ ਖੁੱਲ੍ਹੇ ਆਸਰੇ ਉੱਤੇ ਹੈ।",
+      "after": "ਸ਼ੁਰੂ ਵਿੱਚ ਉਹ ਚਾਹ ਆਉਂਦੀ ਹੈ ਜਿਸ ਨੂੰ ਬਹੁਤ ਲੋਕ ਪਛਾਣਦੇ ਹਨ: ਅਜਿਹਾ ਸੁਖ ਜੋ ਵਾਰ-ਵਾਰ ਖਿਸਕ ਨਾ ਜਾਵੇ। ਜਵਾਬ ਦੀ ਦਿਸ਼ਾ ਰਾਮ ਦੀ ਸਰਨ ਦੱਸੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਮਨੁੱਖਾ ਦੇਹ ਦੀ ਕਦਰ ਕਰਾਉਂਦੀ ਹੈ। ਨਾਸਵੰਤਤਾ ਦੀਆਂ ਕਈ ਗੱਲਾਂ ਤੋਂ ਬਾਅਦ ਇਹ ਖ਼ਾਸ ਹੈ: ਸਰੀਰ ਸਦਾ ਨਹੀਂ ਰਹਿੰਦਾ, ਪਰ ਮਨੁੱਖਾ ਜੀਵਨ ਸਿਮਰਨ ਅਤੇ ਸਰਨ ਦਾ ਅਮੋਲਕ ਮੌਕਾ ਦਿੰਦਾ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਇਕੱਠੀਆਂ ਪੜ੍ਹਿਆਂ ਸਦਾ ਦੇ ਸੁਖ ਦੀ ਚਾਹ ਉਸ ਮੌਕੇ ਨਾਲ ਜੁੜਦੀ ਹੈ ਜੋ ਹੁਣ ਮਿਲਿਆ ਹੋਇਆ ਹੈ। ਦੁਰਲਭ ਸ਼ਬਦ ਇਸ ਮੌਕੇ ਦੀ ਮਹੱਤਤਾ ਖੋਲ੍ਹਦਾ ਹੈ। ਸੱਦਾ ਹੈ ਕਿ ਜਦੋਂ ਜੀਵਨ ਦਾ ਮੌਕਾ ਸਾਹਮਣੇ ਹੈ, ਇਸੇ ਵਿੱਚ ਪ੍ਰਭੂ ਵੱਲ ਧਿਆਨ ਜੋੜਿਆ ਜਾਵੇ।",
+      "reason": "Equivalent Punjabi close reading for the same corrected scope"
+    },
+    {
+      "ordinal": 29,
+      "field": "study.closeReading",
+      "before": "The first line describes the person through continual remembrance and calls that person Ram’s form. The second strengthens the affirmation: there is no separation between Hari’s servant and Hari. Preserve that strong language instead of reducing it to the claim that devotion improves manners. At the same time, the text does not identify an individual for the reader to obey without question. Its subject is the devotional relationship it describes. The first line ends Ang 1427 and the second begins Ang 1428; the Ang change must not break the meaning. Reading them together keeps the description and its theological conclusion intact.",
+      "after": "The first line describes a person through continual remembrance and names that person as Ram’s form. The second strengthens the affirmation: there is no difference between Hari’s devotee and Hari. The repeated Divine names and the language of form and unity give the couplet its theological depth. Its subject is the relationship of devotion just described, sustained night and day. The first line ends Ang 1427 and the second begins Ang 1428, yet the thought continues without a break. Reading both lines together allows the description of the devotee and the affirmation of unity to illuminate each other.",
+      "reason": "ED02/ED03/ED04: faithful reader-facing close reading; remove unsupported sequence or hypothetical warnings"
+    },
+    {
+      "ordinal": 29,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਲਗਾਤਾਰ ਭਜਨ ਕਰਨ ਵਾਲੇ ਮਨੁੱਖ ਨੂੰ ਰਾਮ ਦਾ ਸਰੂਪ ਆਖਦੀ ਹੈ। ਦੂਜੀ ਗੱਲ ਹੋਰ ਪੱਕੀ ਕਰਦੀ ਹੈ: ਹਰਿ ਦੇ ਭਗਤ ਅਤੇ ਹਰਿ ਵਿੱਚ ਵਿੱਥ ਨਹੀਂ। ਇਸ ਮਜ਼ਬੂਤ ਬੋਲੀ ਨੂੰ ਬਚਾਉਣਾ ਚਾਹੀਦਾ ਹੈ; ਇਸ ਨੂੰ ਕੇਵਲ ਚੰਗਾ ਵਰਤਾਰਾ ਬਣ ਜਾਣਾ ਆਖ ਕੇ ਘਟਾਉਣਾ ਨਹੀਂ। ਨਾਲ ਹੀ ਪਾਠ ਕਿਸੇ ਖ਼ਾਸ ਮਨੁੱਖ ਦੀ ਪਛਾਣ ਨਹੀਂ ਕਰਦਾ ਜਿਸ ਦੀ ਹਰ ਗੱਲ ਬਿਨਾ ਸਵਾਲ ਮੰਨੀ ਜਾਵੇ। ਵਿਸ਼ਾ ਉਹ ਭਗਤੀ ਵਾਲਾ ਸੰਬੰਧ ਹੈ ਜੋ ਤੁਕ ਦੱਸਦੀ ਹੈ। ਪਹਿਲੀ ਤੁਕ ਅੰਗ 1427 ਦੇ ਅੰਤ ਉੱਤੇ ਅਤੇ ਦੂਜੀ ਅੰਗ 1428 ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਹੈ; ਅੰਗ ਬਦਲਣ ਨਾਲ ਅਰਥ ਨਹੀਂ ਟੁੱਟਣਾ ਚਾਹੀਦਾ। ਦੋਵੇਂ ਇਕੱਠੀਆਂ ਪੜ੍ਹਿਆਂ ਵਰਣਨ ਅਤੇ ਉਸ ਦਾ ਧਾਰਮਿਕ ਨਤੀਜਾ ਪੂਰੇ ਰਹਿੰਦੇ ਹਨ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਨਿੱਤ ਭਜਨ ਕਰਨ ਵਾਲੇ ਮਨੁੱਖ ਨੂੰ ਰਾਮ ਦਾ ਸਰੂਪ ਆਖਦੀ ਹੈ। ਦੂਜੀ ਗੱਲ ਹੋਰ ਪੱਕੀ ਕਰਦੀ ਹੈ: ਹਰਿ ਦੇ ਭਗਤ ਅਤੇ ਹਰਿ ਵਿੱਚ ਫ਼ਰਕ ਨਹੀਂ। ਪ੍ਰਭੂ ਦੇ ਨਾਮਾਂ ਦੇ ਨਾਲ ਸਰੂਪ ਅਤੇ ਇਕਤਾ ਦੀ ਬੋਲੀ ਸਲੋਕ ਦੀ ਆਤਮਕ ਡੂੰਘਾਈ ਖੋਲ੍ਹਦੀ ਹੈ। ਵਿਸ਼ਾ ਉਹ ਭਗਤੀ ਦਾ ਸੰਬੰਧ ਹੈ ਜੋ ਰਾਤ ਦਿਨ ਬਣਿਆ ਰਹਿੰਦਾ ਹੈ। ਪਹਿਲੀ ਤੁਕ ਅੰਗ 1427 ਦੇ ਅੰਤ ਉੱਤੇ ਅਤੇ ਦੂਜੀ ਅੰਗ 1428 ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਆਉਂਦੀ ਹੈ, ਪਰ ਵਿਚਾਰ ਦੀ ਲੜੀ ਜਾਰੀ ਰਹਿੰਦੀ ਹੈ। ਦੋਵੇਂ ਤੁਕਾਂ ਇਕੱਠੀਆਂ ਪੜ੍ਹਿਆਂ ਭਗਤ ਦਾ ਵਰਣਨ ਅਤੇ ਇਕਤਾ ਦੀ ਗੱਲ ਇੱਕ ਦੂਜੇ ਨੂੰ ਖੋਲ੍ਹਦੇ ਹਨ।",
+      "reason": "Equivalent Punjabi close reading for the same corrected scope"
+    },
+    {
+      "ordinal": 17,
+      "field": "simple.en",
+      "before": "The Salok places relinquishing entanglement before the garb of detachment. The inner change gives the outward form its significance.",
+      "after": "The Salok joins relinquishing worldly entanglement with the image of wearing detachment. It calls the person described by this whole image fortunate.",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "simple.pa",
+      "before": "ਸਲੋਕ ਵੈਰਾਗ ਦੇ ਭੇਖ ਤੋਂ ਪਹਿਲਾਂ ਬਿਖਿਆ ਤਿਆਗਣ ਦੀ ਗੱਲ ਰੱਖਦਾ ਹੈ। ਅੰਦਰਲਾ ਬਦਲਾਅ ਬਾਹਰਲੇ ਰੂਪ ਨੂੰ ਅਰਥ ਦਿੰਦਾ ਹੈ।",
+      "after": "ਸਲੋਕ ਬਿਖਿਆ ਤਿਆਗਣ ਨੂੰ ਵੈਰਾਗ ਦਾ ਭੇਖ ਧਾਰਨ ਕਰਨ ਦੇ ਚਿੱਤਰ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਇਸ ਪੂਰੇ ਚਿੱਤਰ ਵਾਲੇ ਮਨੁੱਖ ਨੂੰ ਭਾਗਾਂ ਵਾਲਾ ਆਖਦਾ ਹੈ।",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.focus",
+      "before": "Read the two actions in order: relinquishing, then taking up the garb of detachment.",
+      "after": "Relinquishment and the image of garb belong together in this portrait of detachment.",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.focusPa",
+      "before": "ਦੋਵੇਂ ਕੰਮ ਕ੍ਰਮ ਨਾਲ ਪੜ੍ਹੋ: ਪਹਿਲਾਂ ਤਿਆਗਣਾ, ਫਿਰ ਵੈਰਾਗ ਦਾ ਭੇਖ ਲੈਣਾ।",
+      "after": "ਵੈਰਾਗ ਦੇ ਇਸ ਚਿੱਤਰ ਵਿੱਚ ਤਿਆਗ ਅਤੇ ਭੇਖ ਦੀ ਗੱਲ ਇਕੱਠੀ ਹੈ।",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.interpretationCare",
+      "before": "Sahib Singh emphasizes the inward relinquishment as what makes the garb genuine. This is an attributed contextual reading, not removal of ਭੇਖ from the text.",
+      "after": "This draft follows Sahib Singh’s reading of genuine relinquishment itself as the true garb of detachment. The original word ਭੇਖ keeps the garment image visible.",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.interpretationCarePa",
+      "before": "ਸਾਹਿਬ ਸਿੰਘ ਅੰਦਰਲਾ ਤਿਆਗ ਹੀ ਭੇਖ ਨੂੰ ਸੱਚਾ ਬਣਾਉਣ ਵਾਲਾ ਸਮਝਾਉਂਦੇ ਹਨ। ਇਹ ਦਰਜ ਕੀਤੀ ਪ੍ਰਸੰਗਕ ਵਿਆਖਿਆ ਹੈ, ਪਾਠ ਵਿੱਚੋਂ ਭੇਖ ਮਿਟਾਉਣਾ ਨਹੀਂ।",
+      "after": "ਇਹ ਮਸੌਦਾ ਸਾਹਿਬ ਸਿੰਘ ਦੀ ਉਸ ਵਿਆਖਿਆ ਨੂੰ ਲੈਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਸੱਚਾ ਤਿਆਗ ਹੀ ਵੈਰਾਗ ਦਾ ਸੱਚਾ ਭੇਖ ਹੈ। ਮੂਲ ਭੇਖ ਸ਼ਬਦ ਵੇਸ ਦਾ ਚਿੱਤਰ ਸਾਹਮਣੇ ਰੱਖਦਾ ਹੈ।",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.words.0.workingGloss",
+      "before": "garb, dress or adopted outward form",
+      "after": "garb or dress; the image used for detachment",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "study.words.0.workingGlossPa",
+      "before": "ਵੇਸ; ਧਾਰਿਆ ਹੋਇਆ ਬਾਹਰਲਾ ਰੂਪ",
+      "after": "ਭੇਖ ਜਾਂ ਵੇਸ; ਇੱਥੇ ਵੈਰਾਗ ਦਾ ਚਿੱਤਰ",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    },
+    {
+      "ordinal": 17,
+      "field": "sources.1.scope",
+      "before": "Limited interpretive comparison for Salok 17: inward relinquishment and the authenticity of the garb. No commentary prose copied.",
+      "after": "Limited attributed comparison: Sahib Singh identifies genuine relinquishment of Maya with adopting the true garb of detachment in Salok 17; no modern prose copied.",
+      "reason": "ED02-SALOK17-GARB: correct attributed interpretation without changing original Gurbani"
+    }
+  ],
+  "resultSha256": "f3c9eb0a847f7a09395c4bc0daa4dd200f9e59598534ec34ef6cc22e95a7dd3b"
+}

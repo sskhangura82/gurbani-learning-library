@@ -1,7 +1,7 @@
 name: GLP Reader Quality Gate
 on:
   pull_request:
-    branches: [main]
+    branches: [main, fix/claude-review-first-repairs-20261125]
   workflow_dispatch:
 permissions:
   contents: read

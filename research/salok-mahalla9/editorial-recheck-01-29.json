@@ -1,0 +1,116 @@
+{
+  "schema": "glp001.salok-mahalla9.editorial-recheck.v1",
+  "reviewedAtUtc": "2026-11-26T17:39:14.999479+00:00",
+  "reviewer": {
+    "agent": "/root/salok_source_audit",
+    "kind": "AI_EDITORIAL_RECHECK",
+    "qualifiedHumanReviewerCount": 0,
+    "publicationApproval": false
+  },
+  "status": "SIX_PRIOR_FINDINGS_RESOLVED_IN_AI_RECHECK_QUALIFIED_REVIEW_PENDING",
+  "inputs": [
+    {
+      "path": "/workspace/scratch/c4badbece609/salok-build/teaching-01-29.json",
+      "sha256": "21c0ac4687f2e9bfdc1e8e66ca500fe90e3ffc33b9dd735b981feeceae0e1521"
+    },
+    {
+      "path": "/workspace/scratch/c4badbece609/salok-build/teaching-final-01-29.json",
+      "sha256": "f3c9eb0a847f7a09395c4bc0daa4dd200f9e59598534ec34ef6cc22e95a7dd3b"
+    },
+    {
+      "path": "/workspace/scratch/c4badbece609/salok-build/editorial-amendments-01-29.json",
+      "sha256": "614e9b12c91d78132ff1c1f2f3b85a751e1a6f6d80abd2d90b4ec3e9ae3307e9"
+    },
+    {
+      "path": "/workspace/scratch/c4badbece609/salok-build/line-context-amendments-01-29.json",
+      "sha256": "54654e89c4e5fbd293a3daf52b8165b8026aab90efaa7bf7411e38ade4b61bd7"
+    },
+    {
+      "path": "/workspace/scratch/c4badbece609/salok-build/source-selected.json",
+      "sha256": "e70448f2682b2f19132f15384a11bd51538a3e3d007ef98706a8ffac01ca179c"
+    },
+    {
+      "path": "/workspace/scratch/c4badbece609/salok-build/editorial-review-01-29.json",
+      "sha256": "2a617d34378c695cf5c39ce498825cebc175b28819f97481eab531c4873eb50d"
+    }
+  ],
+  "actualScope": {
+    "saloks": [
+      1,
+      29
+    ],
+    "changedFieldAmendmentsReadAndChecked": 195,
+    "bilingualLineContextPairsRead": 58,
+    "bilingualStudyCarePairsRead": 29,
+    "revisedCloseReadingPairsRead": [
+      3,
+      4,
+      17,
+      27,
+      29
+    ],
+    "otherRevisedFieldsRead": [
+      "Salok 5 EN/PA summary",
+      "Salok 9 EN/PA summary and focus",
+      "Salok 17 EN/PA summary, focus, contextual notes, ਭੇਖ gloss and source scope"
+    ],
+    "method": "Read the final amended English and Punjabi contexts and all revised Study/summary/gloss fields. Compared them to the selected Gurmukhi, the earlier full 29-entry review and its inspected sources. Checked the corrected Salok 17 against the already retrieved Sahib Singh passage. Replayed every amendment, verifying each before-value and exact resulting object. Checked every sidecar note against final teaching. Unchanged fields retain the earlier review scope rather than constituting a new qualified review.",
+    "sourceReading": "No new manuscript, facsimile or physical recitation check; this recheck uses the frozen digital source and already inspected original/commentary pages.",
+    "authorFilesModified": false
+  },
+  "mechanicalChecks": {
+    "allInputHashesMatched": true,
+    "allLedgerHashBindingsMatched": true,
+    "amendmentLedgerReplayMatchedFinalTeaching": true,
+    "all195BeforeValuesMatched": true,
+    "sidecarNotesMatchedFinalTeaching": true,
+    "lineMeaningPairsUnchanged": 58,
+    "bilingualLineContextsPresent": 58,
+    "sourceSelectionBytesUnchangedFromPriorReview": true,
+    "actualSourcePackOccurrencesCompared": 117,
+    "actualSourcePackTextMismatches": 0,
+    "allActualSourcePackLineHashesMatched": true,
+    "sourceTextSequenceSha256": "16649b80d412b71d628eab27e372208bb74a5c9289702a0f581967ce91604e28",
+    "actualSourcePackSnapshotSha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+  },
+  "findingsRechecked": [
+    {
+      "id": "ED01-BILINGUAL-LINE-CONTEXT",
+      "status": "RESOLVED",
+      "evidence": "All 58 line notes now have Punjabi counterparts. Both languages preserve the substantive lexical, theological and contextual information; in particular 5’s prohibitive grammar, 11’s distinct referents and 17’s garb reading."
+    },
+    {
+      "id": "ED02-SALOK17-GARB",
+      "status": "RESOLVED",
+      "evidence": "The final summary, focus, Study and line note explain relinquishment itself as the true garb in Sahib Singh’s reading. They retain ਭੇਖ as the garment image without imposing a second physical costume change or a chronological two-step requirement. The paired Punjabi and source scope agree.",
+      "sourceUrl": "https://www.gurugranthdarpan.net/1427.html"
+    },
+    {
+      "id": "ED03-UNNECESSARY-CLINICAL-WARNINGS",
+      "status": "RESOLVED",
+      "evidence": "The identified clinical/breathwork warnings were replaced with explanations of the source imagery and vocabulary. Revised Study notes and the relevant close readings retain the devotional content."
+    },
+    {
+      "id": "ED04-INTERNAL-POLICY-IN-TEACHING",
+      "status": "RESOLVED",
+      "evidence": "The identified app-certification, scoring, badge, guarantee and accessible-options instructions have been removed from the final line contexts/Study notes. Their replacements explain the verses."
+    },
+    {
+      "id": "ED05-SALOK09-SUKH-SCOPE",
+      "status": "RESOLVED",
+      "evidence": "Both summary and focus now retain all sukh without narrowing it to worldly comfort. The connection to gat remains explicit."
+    },
+    {
+      "id": "ED06-SALOK05-SUMMARY-PRECISION",
+      "status": "RESOLVED",
+      "evidence": "The paired summary now centers the limits of possessiveness and worldly companionship. The vague English truthful-attachment phrase is removed; the contextual connection to 6 remains in Study."
+    }
+  ],
+  "remainingSubstantiveIssues": [],
+  "limits": [
+    "This resolves the six recorded AI-editorial findings for the exact final teaching hash above; it is not theological certification or publication approval.",
+    "Qualified Sikh scholar, Punjabi-language and Santhiya reviews remain outstanding; human reviewer count is 0.",
+    "No source scripture text was changed in the frozen selection or in the 117 compared source-pack occurrences. The amendment ledger changes teaching only.",
+    "Minor stylistic preferences are intentionally excluded from remaining substantive issues."
+  ]
+}
