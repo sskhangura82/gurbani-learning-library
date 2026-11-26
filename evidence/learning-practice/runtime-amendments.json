@@ -1,0 +1,20 @@
+{
+  "schema": "glp001.runtime-amendments.v1",
+  "status": "BUILDER_CANDIDATE_NOT_APPROVED",
+  "changeBaseline": "792afa209c98bb53f257a8dfd5500bef10bfc8e3",
+  "priorLedgerSHA256": "160e3a6e1d64e6b94558c30ccebae2fe1f82bb52c14a4791c6722cbfb5429829",
+  "independentReviewRequested": true,
+  "independentApproval": false,
+  "scriptureChanges": false,
+  "amendments": {
+    "js/japji-full.js": {
+      "before": "f1f5a0efc84115a9c8889c6e4d4e104f8be38a50f2e5607c055d3ef8662a32a1",
+      "after": "28fa6cdd457fb6252083c72132e350f804d6b70cbf7312321980e2ee31951a22",
+      "findings": [
+        "SF-01"
+      ],
+      "reason": "Restore the saved occurrence on cached-document return and suppress transient history scroll recording.",
+      "evidence": "docs/JAPJI_HISTORY_REPAIR_20261126.md"
+    }
+  }
+}

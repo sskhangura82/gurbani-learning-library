@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-11-26T19:38:26.046Z",
+  "startedAt": "2026-11-26T20:31:49.497Z",
   "engine": "chromium",
   "browserVersion": "158.0.8127.37",
   "fixture": "Ephemeral trusted localhost under /gurbani-learning-library/; fresh nonpersistent browser contexts and synthetic learning only",
@@ -295,7 +295,7 @@
       "status": "passed"
     },
     {
-      "name": "The real root worker verifies and caches all 69 assets, including Nitnem, Sukhmani and both Salok collections",
+      "name": "The real root worker verifies and caches all 73 assets, including Nitnem, Sukhmani and both Salok collections",
       "status": "passed"
     },
     {
@@ -334,7 +334,7 @@
     "Offline navigation uses Chromium network emulation and the real root service worker.",
     "The update check changes only the served worker version in this isolated server; it does not publish or alter repository assets."
   ],
-  "completedAt": "2026-11-26T19:38:49.184Z",
+  "completedAt": "2026-11-26T20:32:12.626Z",
   "passed": 64,
   "failed": 0,
   "status": "passed"

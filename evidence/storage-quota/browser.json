@@ -1,0 +1,42 @@
+{
+  "testedAt": "2026-11-26T20:24:53.624Z",
+  "engine": "Desktop Chromium",
+  "browserVersion": "158.0.8127.37",
+  "storageSHA256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+  "environment": "Ephemeral localhost origin, fresh browser contexts, native browser quota and synthetic records only",
+  "limitations": [
+    "Not Safari, iPhone, VoiceOver, or a promise of available capacity on another browser.",
+    "The JSON format allowance remains a parser bound; a valid backup is not a guarantee that localStorage can hold it."
+  ],
+  "checks": [
+    {
+      "name": "A valid Punjabi backup above ten million UTF-8 bytes imports and exports every note exactly",
+      "status": "PASS",
+      "backupBytes": 11682786,
+      "noteCount": 486
+    },
+    {
+      "name": "Maximum valid backup on a fresh collection reaches native quota with a clear preservation message",
+      "status": "PASS",
+      "backupBytes": 17514786,
+      "message": "Import refused: There is not enough space in this browser to save this change. Your existing saved learning is preserved. Keep your backup file, and export any unsaved reflection before leaving. You can try restoring in a browser or device with more available space."
+    },
+    {
+      "name": "Maximum nonconflicting restore preserves the existing note, bookmarks, preferences, position and revision",
+      "status": "PASS",
+      "backupBytes": 17478748,
+      "message": "Import refused: There is not enough space in this browser to save this change. Your existing saved learning is preserved. Keep your backup file, and export any unsaved reflection before leaving. You can try restoring in a browser or device with more available space."
+    },
+    {
+      "name": "A small valid backup into an already full origin refuses atomically too",
+      "status": "PASS",
+      "backupBytes": 11756,
+      "message": "Import refused: There is not enough space in this browser to save this change. Your existing saved learning is preserved. Keep your backup file, and export any unsaved reflection before leaving. You can try restoring in a browser or device with more available space."
+    },
+    {
+      "name": "A second file-picker import succeeds after test-only filler is removed; the product never removes records for space",
+      "status": "PASS",
+      "syntheticOccupiedUnits": 5239552
+    }
+  ]
+}

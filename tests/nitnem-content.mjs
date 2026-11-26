@@ -375,12 +375,20 @@ test('Published source and teaching are unchanged; explicitly recorded runtime a
   assert.equal(followup.changeBaseline,'09e829efd63e99fc5c3f5f849f122a49b0dc22a9');
   assert.equal(followup.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-amendments.json')));
   assert.deepEqual(Object.keys(followup.amendments).sort(),['js/japji-full.js','js/sukhmani-reader.js']);
+  const historyRepair=json('evidence/learning-practice/runtime-amendments.json');
+  assert.equal(historyRepair.changeBaseline,'792afa209c98bb53f257a8dfd5500bef10bfc8e3');
+  assert.equal(historyRepair.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-followup-amendments.json')));
+  assert.deepEqual(Object.keys(historyRepair.amendments),['js/japji-full.js']);
+  assert.equal(historyRepair.scriptureChanges,false);
+  assert.equal(historyRepair.independentApproval,false);
   for (const [path,digest] of Object.entries(frozen.files)) {
     const amendment=ledger.amendments[path],next=followup.amendments[path];
     if(amendment){assert.equal(amendment.before,digest,path+' immutable prior hash');assert.ok(amendment.findings.includes('CI-R-01'));}
     const previous=amendment?.after||digest;
     if(next){assert.equal(next.before,previous,path+' exact prior runtime hash');assert.ok(next.findings.includes('CI-R-08'));}
-    assert.equal(sha(read(path)),next?.after||previous,path+' documented runtime or source preservation');
+    const priorRuntime=next?.after||previous,history=historyRepair.amendments[path];
+    if(history){assert.equal(history.before,priorRuntime,path+' exact pre-history-repair hash');assert.deepEqual(history.findings,['SF-01']);}
+    assert.equal(sha(read(path)),history?.after||priorRuntime,path+' documented runtime or source preservation');
   }
 });
 

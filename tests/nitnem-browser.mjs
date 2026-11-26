@@ -226,10 +226,10 @@ try{
  });await tabsContext.close();contexts.delete(tabsContext);
 
  const offlineContext=await newContext({serviceWorkers:'allow',sentinels:false}),offlinePage=await newPage(offlineContext);activePage=offlinePage;
- await check('The real root worker verifies and caches all 69 assets, including Nitnem, Sukhmani and both Salok collections',async()=>{
+ await check('The real root worker verifies and caches all 73 assets, including Nitnem, Sukhmani and both Salok collections',async()=>{
   await offlinePage.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:60000});
   const actual=await offlinePage.evaluate(async()=>{const prefix='glp-static:'+location.origin+'/gurbani-learning-library/:',names=(await caches.keys()).filter(n=>n.startsWith(prefix));return {names,assets:await Promise.all(names.map(async name=>(await (await caches.open(name)).keys()).map(request=>new URL(request.url).pathname)))};});
-  assert.equal(actual.names.length,1);assert.deepEqual(actual.assets[0].sort(),Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort());assert.equal(actual.assets[0].length,69);
+  assert.equal(actual.names.length,1);assert.deepEqual(actual.assets[0].sort(),Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort());assert.equal(actual.assets[0].length,73);
   assert.equal(await offlinePage.evaluate(async()=>new URL((await navigator.serviceWorker.getRegistration()).scope).pathname),PREFIX);
  });
  await choose(offlinePage,'jaap');await jump(offlinePage,198);await openTools(offlinePage);await offlinePage.locator('#note').fill('SYNTHETIC offline final Jaap reflection');await offlinePage.locator('#save-note').click();await waitNote(offlinePage,'jaap','jaap199.line01','SYNTHETIC offline final Jaap reflection');await closeTools(offlinePage);await mode(offlinePage,'meaning');

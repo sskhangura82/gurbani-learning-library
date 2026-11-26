@@ -1,0 +1,468 @@
+{
+  "schema": "glp.japji-history.v1",
+  "startedAtUtc": "2026-11-26T20:21:38.382Z",
+  "engine": "safari",
+  "variant": "candidate",
+  "scriptSha256": "28fa6cdd457fb6252083c72132e350f804d6b70cbf7312321980e2ee31951a22",
+  "checks": [
+    {
+      "name": "Read with persistent heading: initial saved occurrence and offset",
+      "status": "PASS",
+      "detail": {
+        "scrollY": 12331,
+        "bookmarks": [
+          "pauri02.line02"
+        ],
+        "stored": {
+          "guide": {
+            "index": 0,
+            "token": 0
+          },
+          "theme": "day",
+          "pace": 70,
+          "version": 2,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "keptAside": {
+            "notes": [],
+            "bookmarks": []
+          },
+          "size": 30,
+          "notes": {
+            "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+          },
+          "mode": "read",
+          "hasGuided": false,
+          "persistentControls": true,
+          "emphasis": "word",
+          "radiance": true,
+          "bookmarks": [
+            "pauri02.line02"
+          ]
+        },
+        "visible": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "notes": {
+          "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+        },
+        "timeOrigin": 1795724499038,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "mode": "read",
+        "playing": false,
+        "targetOffset": -9,
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with persistent heading: three reloads do not drift",
+      "status": "PASS",
+      "detail": [
+        {
+          "y": 12331,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12331,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12331,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        }
+      ]
+    },
+    {
+      "name": "Read with persistent heading: library Back preserves actual geometry and notes",
+      "status": "PASS",
+      "detail": {
+        "beforeY": 12331,
+        "afterY": 12331,
+        "pageshow": [
+          {
+            "y": 12331,
+            "persisted": true
+          }
+        ],
+        "timeOriginBefore": 1795724501294.0002,
+        "timeOriginAfter": 1795724501294.0002
+      }
+    },
+    {
+      "name": "Read with persistent heading: Forward then Back preserves the occurrence",
+      "status": "PASS",
+      "detail": {
+        "y": 12331,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "targetOffset": -9,
+        "pageshow": [
+          {
+            "y": 12331,
+            "persisted": true
+          },
+          {
+            "y": 12331,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read with persistent heading: reload after Back does not save a transient top position",
+      "status": "PASS",
+      "detail": {
+        "y": 12331,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "targetOffset": -9
+      }
+    },
+    {
+      "name": "Read with persistent heading: a running guide returns paused at its departure place",
+      "status": "PASS",
+      "detail": {
+        "departure": {
+          "id": "pauri19.line14",
+          "offset": -28
+        },
+        "returned": {
+          "id": "pauri19.line14",
+          "offset": -28
+        },
+        "playing": false
+      }
+    },
+    {
+      "name": "Read with default receding heading: initial saved occurrence and offset",
+      "status": "PASS",
+      "detail": {
+        "scrollY": 12014,
+        "bookmarks": [
+          "pauri02.line02"
+        ],
+        "stored": {
+          "guide": {
+            "index": 0,
+            "token": 0
+          },
+          "theme": "day",
+          "pace": 70,
+          "version": 2,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "keptAside": {
+            "notes": [],
+            "bookmarks": []
+          },
+          "size": 30,
+          "notes": {
+            "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+          },
+          "mode": "read",
+          "hasGuided": false,
+          "persistentControls": false,
+          "emphasis": "word",
+          "radiance": true,
+          "bookmarks": [
+            "pauri02.line02"
+          ]
+        },
+        "visible": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "notes": {
+          "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+        },
+        "timeOrigin": 1795724505828,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "mode": "read",
+        "playing": false,
+        "targetOffset": -9,
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Read with default receding heading: three reloads do not drift",
+      "status": "PASS",
+      "detail": [
+        {
+          "y": 12014,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12014,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 12014,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        }
+      ]
+    },
+    {
+      "name": "Read with default receding heading: library Back preserves actual geometry and notes",
+      "status": "PASS",
+      "detail": {
+        "beforeY": 12014,
+        "afterY": 12014,
+        "pageshow": [
+          {
+            "y": 12014,
+            "persisted": true
+          }
+        ],
+        "timeOriginBefore": 1795724508153,
+        "timeOriginAfter": 1795724508153
+      }
+    },
+    {
+      "name": "Read with default receding heading: Forward then Back preserves the occurrence",
+      "status": "PASS",
+      "detail": {
+        "y": 12014,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "targetOffset": -9,
+        "pageshow": [
+          {
+            "y": 12014,
+            "persisted": true
+          },
+          {
+            "y": 12014,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read with default receding heading: reload after Back does not save a transient top position",
+      "status": "PASS",
+      "detail": {
+        "y": 12014,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "targetOffset": -9
+      }
+    },
+    {
+      "name": "Read with default receding heading: a running guide returns paused at its departure place",
+      "status": "PASS",
+      "detail": {
+        "departure": {
+          "id": "pauri19.line14",
+          "offset": -28
+        },
+        "returned": {
+          "id": "pauri19.line14",
+          "offset": -28
+        },
+        "playing": false
+      }
+    },
+    {
+      "name": "Meaning: initial saved occurrence and offset",
+      "status": "PASS",
+      "detail": {
+        "scrollY": 25348,
+        "bookmarks": [
+          "pauri02.line02"
+        ],
+        "stored": {
+          "guide": {
+            "index": 0,
+            "token": 0
+          },
+          "theme": "day",
+          "pace": 70,
+          "version": 2,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "keptAside": {
+            "notes": [],
+            "bookmarks": []
+          },
+          "size": 30,
+          "notes": {
+            "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+          },
+          "mode": "understand",
+          "hasGuided": false,
+          "persistentControls": true,
+          "emphasis": "word",
+          "radiance": true,
+          "bookmarks": [
+            "pauri02.line02"
+          ]
+        },
+        "visible": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "notes": {
+          "pauri02.line01": "SYNTHETIC reflection retained through navigation"
+        },
+        "timeOrigin": 1795724512625,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "mode": "understand",
+        "playing": false,
+        "targetOffset": -9,
+        "pageshow": []
+      }
+    },
+    {
+      "name": "Meaning: three reloads do not drift",
+      "status": "PASS",
+      "detail": [
+        {
+          "y": 25348,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 25348,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        },
+        {
+          "y": 25348,
+          "read": {
+            "id": "pauri20.line01",
+            "offset": -9
+          },
+          "targetOffset": -9
+        }
+      ]
+    },
+    {
+      "name": "Meaning: library Back preserves actual geometry and notes",
+      "status": "PASS",
+      "detail": {
+        "beforeY": 25348,
+        "afterY": 25348,
+        "pageshow": [
+          {
+            "y": 25348,
+            "persisted": true
+          }
+        ],
+        "timeOriginBefore": 1795724514847,
+        "timeOriginAfter": 1795724514847
+      }
+    },
+    {
+      "name": "Meaning: Forward then Back preserves the occurrence",
+      "status": "PASS",
+      "detail": {
+        "y": 25348,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "targetOffset": -9,
+        "pageshow": [
+          {
+            "y": 25348,
+            "persisted": true
+          },
+          {
+            "y": 25348,
+            "persisted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Meaning: reload after Back does not save a transient top position",
+      "status": "PASS",
+      "detail": {
+        "y": 25348,
+        "read": {
+          "id": "pauri20.line01",
+          "offset": -9
+        },
+        "targetOffset": -9
+      }
+    },
+    {
+      "name": "Meaning: a running guide returns paused at its departure place",
+      "status": "PASS",
+      "detail": {
+        "departure": {
+          "id": "pauri19.line15",
+          "offset": -25
+        },
+        "returned": {
+          "id": "pauri19.line15",
+          "offset": -25
+        },
+        "playing": false
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic notes and bookmarks only, on a newly allocated localhost origin.",
+    "Desktop Safari or Chromium geometry is not physical iPhone, Home Screen, VoiceOver, or airplane-mode acceptance.",
+    "Builder evidence; independent reviewer verification remains required."
+  ],
+  "browserVersion": "26.6",
+  "platform": "macOS",
+  "completedAtUtc": "2026-11-26T20:21:59.600Z",
+  "status": "PASS"
+}
