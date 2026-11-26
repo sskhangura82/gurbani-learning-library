@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-11-26T17:49:34.894Z",
+  "startedAt": "2026-11-26T19:37:23.821Z",
   "engine": "Chromium",
   "browserVersion": "158.0.8127.37",
   "fixture": "Ephemeral localhost under /gurbani-learning-library/; nonpersistent browser contexts and synthetic learning only.",
@@ -14,7 +14,7 @@
       1280
     ],
     "maxGurmukhiSize": 60,
-    "verifiedOfflineAssetCount": 64
+    "verifiedOfflineAssetCount": 69
   },
   "checks": [
     {
@@ -221,14 +221,14 @@
     "salok-mahalla9/data/salok-mahalla9.json": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
     "salok-mahalla9/learning/course.complete.json": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79",
     "salok-mahalla9/data/library.json": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e",
-    "salok-mahalla9/index.html": "2eeaa29b131889e56529c039eb94a2d0e44f16410337f0961010f2f4e9b570a6",
-    "nitnem/reader.js": "fbbdcfcf6b79ad43d160541056abe7f19836d4bcc3a5744c285319fbf1acdf53",
+    "salok-mahalla9/index.html": "b20460553eb4553981f300e1feaa520cd8e94a8bf78d5df6d18569be426854b5",
+    "nitnem/reader.js": "9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6",
     "nitnem/reader.css": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57",
-    "nitnem/learning/learning-ui.js": "25cda1799c47460d17d7f1c871bcc523db5a944faa4f89481b87b8e8656e5be0",
-    "sw.js": "e33cf48561fae1851daacf151fb8c20ff0ab5e7c6b39622ad78967b3767ca03a",
+    "nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+    "sw.js": "ea79bf0e0276932da9f38e2d62950a6f7f09b94dfae856187a581dec889bda5e",
     "tests/salok-mahalla9-browser.mjs": "bdcb52faacb4d1a3e59b8510af1914e23102ec4204e0312d99e6c7f71b2c692a"
   },
-  "completedAt": "2026-11-26T17:49:54.499Z",
+  "completedAt": "2026-11-26T19:37:43.320Z",
   "passed": 38,
   "failed": 0,
   "status": "passed"

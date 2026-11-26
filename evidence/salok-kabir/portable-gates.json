@@ -1,0 +1,209 @@
+{
+  "startedAt": "2026-11-26T19:38:01.060629+00:00",
+  "scope": "Portable repository quality gates against the assembled Kabir working tree; synthetic fixtures only.",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/verify.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.036,
+      "outputSha256": "92b86cf7da289f7d9912e11d84cc3703a12558d8fef5b91388031e3997d6b37d"
+    },
+    {
+      "command": [
+        "node",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.065,
+      "outputSha256": "6f917fdbf17eea42112d2dd38e710e3009d90d6dde8af84b1c64e631cc5f2a6d"
+    },
+    {
+      "command": [
+        "node",
+        "tests/shared-learning.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.026,
+      "outputSha256": "819ba6b3768505bd84d3ce1be66c912eb3750b34615919cdb8127cca12bcc539"
+    },
+    {
+      "command": [
+        "node",
+        "tests/japji-retained-learning.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.03,
+      "outputSha256": "2785b4744696666afe451cc11f0f50f6adcdc0cc066447f4b09f873367fba241"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/source-integrity.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.647,
+      "outputSha256": "ac73c42922c6b97d8d220c80a5559dad254443b8da59c15c7e3520e0e57823d9"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "js/japji-full.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.019,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r6-contract.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.03,
+      "outputSha256": "72dd6be43c5edcd73856a5f141cddb29da0d9fbbd002f771d17fd41e18223daa"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r7-contract.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.027,
+      "outputSha256": "7d20fcb837cf5d5d51a5409747a85c1de669a126b84dbdff29faa444ab43a1b2"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-content.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.086,
+      "outputSha256": "274bd35e9a8e879b269f1c8f2daa497b35d2ba0c5641cab6a228817d5d7f9e92"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-reader-core.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.024,
+      "outputSha256": "a9df4509401ea532aa7c17139c421bd3ca1fe9c789128fd1c2960c86534e7cef"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "js/sukhmani-reader.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.018,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "js/sukhmani-learning.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.019,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-content.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.066,
+      "outputSha256": "18c5f809a20524ff3a3d35e4dd330807d069ef39809d710d70f66168859f25be"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-learning.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.028,
+      "outputSha256": "b441a300e8f4b741b60177fe6d79d235d44dea7214520dfa95494fe1ca40c323"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-backup-capacity.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.438,
+      "outputSha256": "c208bfb0def74e8af8df075116dc2bd9dbbf37cace5d00424f8c11829b721b2d"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-ui-lifecycle.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.04,
+      "outputSha256": "87e2a6af30d7518dab71acb3b49d99704636da577c62e978f9774f21712af3d2"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/reader.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.017,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/local-learning.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.019,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/learning/learning-ui.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.016,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/offline.js"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.016,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "qualifiedHumanReviewed": false,
+  "physicalIPhoneTested": false,
+  "completedAt": "2026-11-26T19:38:02.730471+00:00",
+  "passed": 20,
+  "failed": 0,
+  "status": "PASS",
+  "inputSha256": {
+    "nitnem/reader.js": "9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6",
+    "nitnem/local-learning.js": "84a05d64bf85d3496dba1d33df6fecbb146ffb7bdb998b3ceccf0fd0aec3e674",
+    "nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+    "salok-kabir/data/library.json": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
+    "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+    "salok-kabir/learning/course.complete.json": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
+    "sw.js": "ea79bf0e0276932da9f38e2d62950a6f7f09b94dfae856187a581dec889bda5e"
+  }
+}

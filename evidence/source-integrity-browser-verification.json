@@ -1,6 +1,6 @@
 {
   "schema": "glp.source-integrity-browser.v1",
-  "startedAtUtc": "2026-11-26T14:43:54.078Z",
+  "startedAtUtc": "2026-11-26T19:39:09.866Z",
   "engine": "Chromium",
   "checks": [
     {
@@ -101,6 +101,6 @@
     "Digest-delay coverage waits on the real WebCrypto result; it does not substitute a passing digest."
   ],
   "browserVersion": "158.0.8127.37",
-  "completedAtUtc": "2026-11-26T14:43:58.039Z",
+  "completedAtUtc": "2026-11-26T19:39:13.706Z",
   "status": "PASS"
 }

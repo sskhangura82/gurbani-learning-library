@@ -1,6 +1,6 @@
 {
   "schema": "glp.review-repairs-browser.v1",
-  "startedAtUtc": "2026-11-26T14:44:38.930Z",
+  "startedAtUtc": "2026-11-26T19:39:13.873Z",
   "engine": "Chromium",
   "checks": [
     {
@@ -379,6 +379,6 @@
     "All learning fixtures and downloads are synthetic and use fresh nonpersistent browser contexts."
   ],
   "browserVersion": "158.0.8127.37",
-  "completedAtUtc": "2026-11-26T14:44:59.825Z",
+  "completedAtUtc": "2026-11-26T19:39:34.921Z",
   "status": "PASS"
 }

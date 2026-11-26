@@ -1,0 +1,76 @@
+{
+  "schema": "glp001.salok-kabir.runtime-selection.v1",
+  "status": "DEVELOPMENT_SELECTION_QUALIFIED_REVIEW_PENDING",
+  "preparedDate": "2026-11-26",
+  "frozenExtractionSha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05",
+  "discrepancyReviewSha256": "0ae4c378e3e8868565b44d389980fe3c572270cb8e164a1a7a9a2f8775dab20c",
+  "qualifiedHumanReviewCount": 0,
+  "publicationApproved": false,
+  "sourceTextNormalization": false,
+  "verseTextChanges": 0,
+  "headingSelections": [
+    {
+      "id": "sggs.salok-kabir.heading01",
+      "before": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀਉ ਕੇ ॥",
+      "beforeSha256": "f650dfbb6ec01c6d674e546975c43a4c82ed2bbf16db7283ca84fbe7595a57f5",
+      "after": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀਉ ਕੇ",
+      "afterSha256": "2335819e76cfad6e36082135f651b46c20d579f57232d18cd18d0016e7d8870b",
+      "action": "SELECT_EXACT_ALTERNATE_WITNESS_HEADING",
+      "basis": [
+        "SriGranth Ang1364 heading, independently retrieved",
+        "Commons SGPC-labelled scan PartTwo PDFpage650, visible Ang1364; publisher attribution is not independently authenticated",
+        "SikhNet typeset Gurmukhi PDF visible Ang1364"
+      ],
+      "sourceUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1364&g=1&h=0&k=0&p=0&r=0&t=0",
+        "https://commons.wikimedia.org/wiki/File:Guru_Granth_Sahib_Part_Two.pdf",
+        "https://www.sikhnet.com/files/ereader/SGGS%20%5BGurmukhi%5D.pdf"
+      ],
+      "qualifiedApproval": false
+    }
+  ],
+  "excludedFromKabir": [
+    {
+      "originalAng": 1377,
+      "originalRow": 2,
+      "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0",
+      "decision": "RESOLVED_FOR_KABIR_COLLECTION_SELECTION_ONLY",
+      "reason": "Upstream line V41B belongs to group G4W, section X63C SalokFareedJee, author FRID; inspected printed Ang1378 begins with this line. The preceding group line is on1377. Pinned importer sorting by page/line caused this interleaving.",
+      "canonicalRelocationApplied": false,
+      "frozenPR50Modified": false
+    }
+  ],
+  "retainedDifferences": [
+    {
+      "id": "sggs.salok-kabir.salok177.line01",
+      "selectedSha256": "f192222230024d7cec964a648b9e2c0c447cb17618be78ba0dc7150c0712bf5d",
+      "selectedCodePoint": "U+0A01",
+      "secondaryCodePoint": "U+F03D",
+      "codePointEquivalenceAdjudicated": false,
+      "action": "RETAIN_SELECTED_VALID_UNICODE_WITH_DIFFERENCE_RECORDED"
+    }
+  ],
+  "locatorPolicy": "Preserve source Ang as the digital witness locator. Bounded printed-page observations are recorded separately; no complete printed-edition collation is claimed.",
+  "printedExtentObservations": [
+    {
+      "id": "sggs.salok-kabir.salok177.line01",
+      "digitalSourceAng": 1373,
+      "printedAngRangeObserved": [
+        1373,
+        1374
+      ],
+      "status": "BOUNDED_IMAGE_OBSERVATION_NOT_FULL_COLLATION"
+    },
+    {
+      "id": "sggs.salok-kabir.salok231.line01",
+      "digitalSourceAng": 1376,
+      "printedAngRangeObserved": [
+        1376,
+        1377
+      ],
+      "status": "BOUNDED_IMAGE_OBSERVATION_NOT_FULL_COLLATION",
+      "evidence": "research/salok-kabir/intake-discrepancy-review-erratum-231.json"
+    }
+  ],
+  "printedExtentErratumSha256": "17cc3b5e6a6bdeb52c06f553e99f365416b166f609574d1d5711b88e8aeb3b15"
+}

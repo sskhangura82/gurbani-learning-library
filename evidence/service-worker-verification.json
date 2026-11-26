@@ -2,7 +2,7 @@
   "environment": "Node service-worker simulation; not a physical offline test",
   "checks": [
     {
-      "name": "57 static responses hash-verified before install, including the scripture integrity module and all Nitnem readers",
+      "name": "69 static responses hash-verified before install, including Nitnem, Sukhmani, both Salok collections and source licence notices",
       "status": "PASS"
     },
     {

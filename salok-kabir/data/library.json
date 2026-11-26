@@ -1,0 +1,23 @@
+{
+  "schema": "GLP-NITNEM-LIBRARY-V2",
+  "sourceCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+  "sourceFamilySite": "gurbani-learning-library",
+  "releaseStatus": "DEVELOPMENT_REVIEW",
+  "canonicalJapji": "../full-japji.html",
+  "audioSynced": false,
+  "entries": {
+    "salok-kabir": {
+      "path": "data/salok-kabir.json",
+      "sha256": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+      "units": 243,
+      "lines": 486,
+      "sourceOccurrences": 494,
+      "title": "Salok Bhagat Kabir Ji",
+      "titleGurmukhi": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀਉ ਕੇ",
+      "editionId": "salok-kabir-selected-witnesses-34d2a7c-20261126",
+      "daypart": "Additional Bani"
+    }
+  },
+  "releaseId": "salok-kabir-complete-draft-20261126",
+  "qualifiedHumanReviewed": false
+}

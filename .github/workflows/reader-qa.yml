@@ -1,7 +1,7 @@
 name: GLP Reader Quality Gate
 on:
   pull_request:
-    branches: [main, fix/claude-review-first-repairs-20261125]
+    branches: [main, fix/claude-review-first-repairs-20261125, feature/salok-mahalla9-reader-20261126]
   workflow_dispatch:
 permissions:
   contents: read
@@ -41,6 +41,8 @@ jobs:
         run: node tests/nitnem-content.mjs
       - name: Nitnem saved learning, edition migration and safe merging
         run: node tests/nitnem-learning.mjs
+      - name: Collection-sized backup limits and exact export/import round trips
+        run: node tests/nitnem-backup-capacity.mjs
       - name: Nitnem asynchronous reflection and reader lifecycle
         run: node tests/nitnem-ui-lifecycle.mjs
       - name: Nitnem code syntax

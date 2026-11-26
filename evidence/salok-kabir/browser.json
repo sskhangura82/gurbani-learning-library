@@ -1,0 +1,243 @@
+{
+  "startedAt": "2026-11-26T19:37:28.504Z",
+  "engine": "Chromium",
+  "browserVersion": "158.0.8127.37",
+  "fixture": "Ephemeral localhost under /gurbani-learning-library/; nonpersistent browser contexts and synthetic learning only.",
+  "coverage": {
+    "numberedSaloks": 243,
+    "verseOccurrences": 486,
+    "headingsAndInvocation": 8,
+    "sourceOccurrences": 494,
+    "navigationViewports": [
+      320,
+      390,
+      1280
+    ],
+    "maxGurmukhiSize": 60,
+    "verifiedOfflineAssetCount": 69
+  },
+  "checks": [
+    {
+      "name": "The reader bundle contains all 243 Saloks and the selected and documented 494-occurrence sequence",
+      "status": "passed"
+    },
+    {
+      "name": "The Salok Bhagat Kabir Ji address opens its complete reader with explicit pending-review status",
+      "status": "passed"
+    },
+    {
+      "name": "Every source occurrence and occurrence digest renders in selected source order",
+      "status": "passed"
+    },
+    {
+      "name": "Meaning mode displays all 486 English/Punjabi pairs and 243 summaries",
+      "status": "passed"
+    },
+    {
+      "name": "All 486 meaning controls expose their actual bilingual text in Chromium accessibility names",
+      "status": "passed"
+    },
+    {
+      "name": "Study mode renders every authored field in all 243 studies without changing Gurbani",
+      "status": "passed"
+    },
+    {
+      "name": "Every Study clearly identifies its unreviewed educational status and source references",
+      "status": "passed"
+    },
+    {
+      "name": "All ten digital Ang transitions stay intact in one-passage reading",
+      "status": "passed"
+    },
+    {
+      "name": "All six exact Guru headings render before their verses with separately labelled context",
+      "status": "passed"
+    },
+    {
+      "name": "Digital locator and printed-page observation remain distinct in Study",
+      "status": "passed"
+    },
+    {
+      "name": "The last Salok retains243 and ends before Farid; passage boundary controls work",
+      "status": "passed"
+    },
+    {
+      "name": "A fresh direct link opens Salok 29 without dropping either source line",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid passage numbers leave a fresh reader at a valid first Salok",
+      "status": "passed"
+    },
+    {
+      "name": "All 243 Jump destinations select their exact first line at 320px",
+      "status": "passed",
+      "width": 320,
+      "destinations": 243
+    },
+    {
+      "name": "60px Read, Meaning and Study fit with stable Dark/Light switching at 320px",
+      "status": "passed",
+      "width": 320,
+      "size": 60,
+      "modes": [
+        "read",
+        "meaning",
+        "study"
+      ]
+    },
+    {
+      "name": "All 243 Jump destinations select their exact first line at 390px",
+      "status": "passed",
+      "width": 390,
+      "destinations": 243
+    },
+    {
+      "name": "60px Read, Meaning and Study fit with stable Dark/Light switching at 390px",
+      "status": "passed",
+      "width": 390,
+      "size": 60,
+      "modes": [
+        "read",
+        "meaning",
+        "study"
+      ]
+    },
+    {
+      "name": "All 243 Jump destinations select their exact first line at 1280px",
+      "status": "passed",
+      "width": 1280,
+      "destinations": 243
+    },
+    {
+      "name": "60px Read, Meaning and Study fit with stable Dark/Light switching at 1280px",
+      "status": "passed",
+      "width": 1280,
+      "size": 60,
+      "modes": [
+        "read",
+        "meaning",
+        "study"
+      ]
+    },
+    {
+      "name": "A long meaning dialog scrolls at 320px while its close control stays reachable",
+      "status": "passed"
+    },
+    {
+      "name": "Escape returns focus to the same meaning; keyboard Jump reaches Salok 243",
+      "status": "passed"
+    },
+    {
+      "name": "A bookmarked second line stays exact through three consecutive reloads",
+      "status": "passed"
+    },
+    {
+      "name": "A reflection without a bookmark is listed and its actual text can be reopened",
+      "status": "passed"
+    },
+    {
+      "name": "Export includes the unbookmarked reflection and current learning",
+      "status": "passed"
+    },
+    {
+      "name": "Every existing reader and retained-learning sentinel survives navigation and edits",
+      "status": "passed"
+    },
+    {
+      "name": "A real exported file restores notes and bookmarks into a fresh context",
+      "status": "passed"
+    },
+    {
+      "name": "Reimport is idempotent and conflicting reflections are retained once",
+      "status": "passed"
+    },
+    {
+      "name": "Another bani’s backup is refused without changing either reader’s bytes",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed, unknown-edition and out-of-collection backups are rejected atomically",
+      "status": "passed"
+    },
+    {
+      "name": "A real Punjabi backup above 2.5MB survives file upload and re-export below the origin storage quota",
+      "status": "passed"
+    },
+    {
+      "name": "Damaged saved learning preserves its original bytes and remains exportable",
+      "status": "passed"
+    },
+    {
+      "name": "Changed source is blocked even after its local hash is renewed: verse-with-renewed-hash",
+      "status": "passed"
+    },
+    {
+      "name": "Changed source is blocked even after its local hash is renewed: mahalla-heading-with-renewed-hash",
+      "status": "passed"
+    },
+    {
+      "name": "Gurbani remains fully readable when teaching is unavailable: changed-teaching",
+      "status": "passed"
+    },
+    {
+      "name": "Gurbani remains fully readable when teaching is unavailable: missing-teaching",
+      "status": "passed"
+    },
+    {
+      "name": "The actual root worker verifies and caches all declared assets, including the new reader",
+      "status": "passed"
+    },
+    {
+      "name": "Offline reload retains all 494 source occurrences, 486 meanings and 243 studies",
+      "status": "passed"
+    },
+    {
+      "name": "Offline passage navigation and a fresh deep link work through the real cache",
+      "status": "passed"
+    },
+    {
+      "name": "Offline reflection export works and private notes never enter static caches",
+      "status": "passed"
+    },
+    {
+      "name": "There are no uncaught browser runtime errors",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "evidence/salok-kabir/reader-390.png",
+    "evidence/salok-kabir/salok243-320.png",
+    "evidence/salok-kabir/study-60px-320.png",
+    "evidence/salok-kabir/salok243-390.png",
+    "evidence/salok-kabir/study-60px-390.png",
+    "evidence/salok-kabir/salok243-1280.png",
+    "evidence/salok-kabir/study-60px-1280.png",
+    "evidence/salok-kabir/meaning-dialog-320.png",
+    "evidence/salok-kabir/saved-reflection-390.png",
+    "evidence/salok-kabir/study-offline-390.png"
+  ],
+  "runtimeErrors": [],
+  "limitations": [
+    "This is desktop Chromium, including narrow viewport emulation; it is not a physical iPhone, Safari, Home Screen or VoiceOver check.",
+    "Offline checks use Chromium network emulation and the actual repository root service worker.",
+    "Source agreement and UI checks are not qualified Gurbani, Punjabi, Santhiya or interpretation review.",
+    "The source-tamper checks renew the changed occurrence hash but intentionally leave the separately pinned source-pack digest unchanged.",
+    "Saved-note navigation is checked by opening the selected line through Reading tools; no direct note preview is claimed."
+  ],
+  "inputSha256": {
+    "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+    "salok-kabir/learning/course.complete.json": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
+    "salok-kabir/data/library.json": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
+    "salok-kabir/index.html": "f4f7f50414bb7eb38dbdf4cce9bdf1f7b83130877bbe63ee9ed89bb59cdc9357",
+    "nitnem/reader.js": "9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6",
+    "nitnem/reader.css": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57",
+    "nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+    "sw.js": "ea79bf0e0276932da9f38e2d62950a6f7f09b94dfae856187a581dec889bda5e",
+    "tests/salok-kabir-browser.mjs": "776c87ca64ef5a0819b782c315e8add2e6c4e00f505dac6402921215393b12fc"
+  },
+  "completedAt": "2026-11-26T19:38:40.651Z",
+  "passed": 40,
+  "failed": 0,
+  "status": "passed"
+}

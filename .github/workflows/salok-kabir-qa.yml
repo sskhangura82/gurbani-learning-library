@@ -1,0 +1,46 @@
+name: Salok Kabir source and reader checks
+on:
+  pull_request:
+    branches: [main, fix/claude-review-first-repairs-20261125, feature/salok-mahalla9-reader-20261126]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-salok-kabir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce all 243 Saloks from fourteen pinned witnesses and explicit selection
+        run: |
+          node tools/fetch-salok-kabir-witnesses.mjs --output "$RUNNER_TEMP/glp-kabir-witnesses"
+          node tools/build-salok-kabir-source.mjs --witness-dir "$RUNNER_TEMP/glp-kabir-witnesses"
+          git diff --exit-code -- salok-kabir/data/
+      - name: Reproduce separate bilingual drafts and cached reader assets
+        run: |
+          node tools/assemble-salok-kabir-teaching.mjs
+          node tools/refresh-salok-mahalla9-sri.mjs
+          node tools/refresh-salok-kabir-sri.mjs
+          node tools/build-offline.mjs
+          git diff --exit-code -- salok-kabir/ salok-mahalla9/index.html nitnem/reader.js sw.js
+      - name: Verify source identity, provenance, bilingual coverage and semantic counterexamples
+        run: |
+          node tests/salok-kabir-content.mjs
+          node tests/salok-kabir-bindings.mjs
+      - name: Install pinned browser tools and Gurmukhi fonts
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Exercise all 243 Saloks, learning, accessibility and offline reading
+        run: node tests/salok-kabir-browser.mjs
+      - name: Retain verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: salok-kabir-evidence
+          path: evidence/salok-kabir/
+          if-no-files-found: warn

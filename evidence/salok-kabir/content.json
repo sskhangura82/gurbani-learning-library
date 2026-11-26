@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "The source seal and all494 selected original strings reproduce the frozen explicit selection",
+      "status": "PASS"
+    },
+    {
+      "name": "All243 two-line Saloks have stable identities and original consecutive counters",
+      "status": "PASS"
+    },
+    {
+      "name": "The collection heading precedes invocation and all six exact Mahalla headings retain their scope",
+      "status": "PASS"
+    },
+    {
+      "name": "The Farid foreign row is quarantined outside the243 Saloks and both source boundaries survive",
+      "status": "PASS"
+    },
+    {
+      "name": "All digital Ang boundaries and separately observed printed extents are preserved without conflation",
+      "status": "PASS"
+    },
+    {
+      "name": "Digital comparison reports493 exact entries,485 exact verses and one unresolved encoding",
+      "status": "PASS"
+    },
+    {
+      "name": "All486 meaning pairs,243 studies and8 heading contexts bind to the whole selected source",
+      "status": "PASS"
+    },
+    {
+      "name": "Every learning field has English and Punjabi substance, source vocabulary and unique close reading",
+      "status": "PASS"
+    },
+    {
+      "name": "Source references retain distinct passage titles even when sharing an Ang URL",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft authority is explicit and old scripture and teaching stay frozen",
+      "status": "PASS"
+    },
+    {
+      "name": "Reader pins, both pages script integrity and all69 offline assets match exact files",
+      "status": "PASS"
+    },
+    {
+      "name": "Storage uses separate collection identity and rejects foreign learning atomically",
+      "status": "PASS"
+    }
+  ],
+  "numberedSaloks": 243,
+  "originalVerses": 486,
+  "sourceOccurrences": 494,
+  "bilingualMeaningDrafts": 486,
+  "bilingualStudyDrafts": 243,
+  "qualifiedHumanReviewed": 0,
+  "inputSha256": {
+    "salok-kabir/data/library.json": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
+    "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+    "salok-kabir/learning/course.complete.json": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
+    "nitnem/reader.js": "9404e7224de4994f2acf1061d7467bae7cd4e9be29110ae4362809053668abc6",
+    "sw.js": "ea79bf0e0276932da9f38e2d62950a6f7f09b94dfae856187a581dec889bda5e"
+  },
+  "limitations": [
+    "Technical contracts and AI editorial checks are not qualified Gurbani/Punjabi review.",
+    "No physical iPhone, Safari or VoiceOver claim."
+  ]
+}
