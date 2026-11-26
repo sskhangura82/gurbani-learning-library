@@ -4,6 +4,8 @@ on:
     paths:
       - "hukamnama/**"
       - "tests/hukamnama-*.mjs"
+      - "drafts/hukamnama-lessons/**"
+      - "tools/hukamnama/**"
       - ".github/workflows/hukamnama-foundation-qa.yml"
   workflow_dispatch:
 permissions:
@@ -16,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: node --check hukamnama/core.mjs && node --check hukamnama/reader.mjs && node tests/hukamnama-foundation.mjs
+      - run: node --check hukamnama/core.mjs && node --check hukamnama/reader.mjs && node tests/hukamnama-foundation.mjs && node tests/hukamnama-lesson-draft.mjs
   browser:
     needs: fixture-contracts
     runs-on: ubuntu-latest
