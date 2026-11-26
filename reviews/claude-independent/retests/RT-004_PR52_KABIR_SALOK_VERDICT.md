@@ -174,3 +174,121 @@ further.
 I do not approve and I do not merge. Both PRs are drafts and should stay drafts.
 Nothing here authorises promotion to the live family application, and automated
 and hosted checks passing is not a basis for merging.
+
+---
+
+# Addendum — RT4-C6 backup round trip now tested, and two corrections
+
+Added after the verdict above, on the same candidate (792afa2). The backup
+repair was the one claim in this PR I had flagged as unverified by me. It is now
+tested. Synthetic data only.
+
+## The bug they fixed was real
+
+The old guard was a flat cap: `text.length > 2500000`. For this collection a
+rule-legal maximal backup needs **486 lines × 12,000 units = 5,832,000 units**
+of notes alone. So the old fixed cap genuinely could refuse a learner's own
+valid backup, exactly as reported. The new guard scales with the collection:
+envelope + `ids.size × NOTE_LIMIT × 6`, which for Kabir is **35,035,195 bytes**.
+
+## RT4-C6: PASS on the repair, with a boundary finding
+
+Tested against the shipped code and the shipped data in a real browser.
+
+| Test | Result |
+|---|---|
+| Legitimate backup of 2,741,599 chars (10% over the old cap) | **parse ACCEPTED, import ACCEPTED** |
+| Round trip of that backup | **486 of 486 notes present and byte-intact, 50 bookmarks preserved** |
+| A note of 12,001 units | **refused** — per-note limit preserved as claimed |
+| A note of exactly 12,000 units | **accepted** — the limit is not off by one |
+| A file deliberately over the new budget | **refused** |
+| Page errors throughout | none |
+
+## FINDING RT4-05 (medium) — the new ceiling is above the real one
+
+At the **maximum** rule-legal backup — every one of the 486 lines noted at
+exactly the 12,000-unit limit, every line bookmarked:
+
+| | |
+|---|---|
+| Size | 5,875,177 chars / **17,539,177 UTF-8 bytes** |
+| Against the old cap | **2.35×** |
+| Against the new budget | within it, with 17.5 MB of headroom |
+| Size guard | **ACCEPTED** |
+| Actual import | **FAILED — localStorage quota exceeded** |
+
+The repair raised the importer's own limit to about 35 MB, but browser
+localStorage is typically 5–10 MB per origin. So there is now a window where the
+importer says yes and the browser says no. The guard is no longer the binding
+constraint; storage is, and nothing checks it.
+
+**The data is safe — see below — but the message is not.** On that path the
+learner sees the raw browser string:
+
+> Failed to execute 'setItem' on 'Storage': Setting the value of
+> 'glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-kabir…' exceeded the quota.
+
+Every other refusal in this importer ends with reassurance — "Nothing changed",
+"The original record is preserved", "Keep both backups; nothing changed". This
+one does not, and it is the only path that reaches the physical ceiling. A
+learner seeing it has no way to know their own reflections are intact.
+
+**Recommendation:** cap the allowance at the lesser of the rule-derived budget
+and a realistic storage budget, and wrap the quota failure in the same
+reassuring language as the others. Status OPEN.
+
+## Confirmed safe: a failed import does not destroy existing work
+
+The standing rule is "a failed update must not destroy a working previous
+version." Tested directly: seeded synthetic reflections, then attempted the
+maximal import.
+
+| | Before | After the failed import |
+|---|---|---|
+| Notes | 2 | **2, both byte-intact** |
+| Bookmarks | 1 | **1** |
+| Revision | 1 | **1 — not advanced** |
+| Reading position | preserved | **preserved** |
+| Export afterwards | — | **works, 2 notes** |
+
+**Verdict: PRESERVED.** The rule holds.
+
+Worth recording that the two failure paths differ. With an **empty** store the
+maximal import reaches the storage write and fails on quota with the raw message
+above. With **existing** notes it fails earlier and more gracefully, at the merge
+guard: "Combining these reflections would exceed the limit. Keep both backups;
+nothing changed." Both preserve data. Only the first is unhelpful, and it is the
+one a new learner restoring a backup on a fresh device would hit.
+
+## CORRECTION to my own PR comment — SF-01 does not affect this reader
+
+In the comment I posted on PR #52 I wrote that because the Kabir reader loads
+the same shared nitnem scripts it was "likely to share" the SF-01
+back-navigation defect.
+
+**That was wrong, and I had not checked before saying it.**
+`history.scrollRestoration='manual'` is set in exactly one file in the whole
+build, `js/japji-full.js`. It appears nowhere in `nitnem/reader.js`,
+`nitnem/continuous-core.js`, any other shared script, or the Kabir reader's own
+page. The Kabir reader and the Nitnem readers do not set it and do not inherit
+the defect. SF-01 is confined to the Japji full reader.
+
+I have posted the correction on the PR. Recorded here because a reviewer's
+unchecked guess sent to a builder is a defect in the review, not a note in it.
+
+## Revised state of the frozen criteria
+
+| Criterion | State |
+|---|---|
+| RT4-C1 scripture extent and numbering | PASS |
+| RT4-C2 embedded Mahalla Saloks | PASS |
+| RT4-C3 no authorship from a name alone | PASS |
+| RT4-C4 differences recorded openly | PASS (RT4-01 closed in their favour) |
+| RT4-C5 separation guard, live mutation | **still not run** |
+| RT4-C6 large-backup round trip | **PASS, with RT4-05 open** |
+| RT4-C7 on-screen labels at mobile width | **still not run** |
+| RT4-C8 no false device claims | PASS |
+
+Overall verdict unchanged: **INCOMPLETE**, now for two reasons rather than
+three, plus RT4-05 open. Qualified human review and physical device acceptance
+remain outside anything I can close. No approval. No merge. Drafts stay drafts.
