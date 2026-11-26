@@ -8,6 +8,28 @@
 | Compared with | The published version (`a3476ac`) and the first candidate (`09e829e`). |
 | Scope | The seven items the owner listed on 26 November: RT1-01, CI-R-09, CI-R-08, CI-S-16, R2-X-04, CI-R-11, CI-U-11 — plus everything that passed before, plus the test copy. |
 
+## Correction on timing — added 26 November 2026, 14:53 UTC
+
+The table above says these criteria were frozen before any corrected commit had been pushed, and that the head was
+still `09e829e`. **That was true to my knowledge and false in fact.** The exact order was:
+
+| Time (UTC) | What happened |
+|---|---|
+| 14:33 | I last looked at PR #40. Head `09e829e`. |
+| 14:45:22 | The builder pushed `1470477` to PR #40, and at 14:45:46 posted a note naming it. I did not know. |
+| 14:46:56 | I finished writing this file. |
+| 14:49:28 | I committed it (`fa552d3`) and pushed. A check made in the same step showed the new head — that is how I found out. |
+| after 14:49 | I read the builder's note. I had still not fetched or opened the new commit when this correction was written. |
+
+So: the criteria were written and committed **before I knew of the new commit and before I had seen any of it** —
+but about a minute and a half *after* it existed, not before. Not one word of the criteria has been changed by this
+correction. The same wrong statement is in the message of commit `fa552d3`, which I cannot rewrite; this note
+corrects it.
+
+The builder's note also changes the scope: this commit claims RT1-01, CI-R-09, the backup part of CI-R-08, CI-R-11
+and CI-U-11. It says CI-S-16 and R2-X-04 are still open. I will apply the criteria for those two anyway and record
+what I find, as "not attempted in this candidate" where that is the case.
+
 ## What I already know, said plainly
 
 From the owner's note of 26 November I know three things about the unpushed work: a separate storage record has been
