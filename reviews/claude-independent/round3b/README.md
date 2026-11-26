@@ -76,6 +76,10 @@ edited file's own digest regenerated to match**, so only a genuinely independent
 | Pin left alone (what the page actually ships) | 2 of 2 |
 | Ordinary teaching edits that **must** be allowed (a reworded lesson sentence, a new concept) | 2 of 2 correctly allowed |
 
+Stated as one sum, because it is easy to say loosely: of the 30 edits, **28 were unwanted and 27 of those were
+caught; 1 got through (RB-01); the other 2 were edits that had to be allowed, and both were allowed.** "29 of 30"
+would be wrong — it counts the two permitted edits as catches.
+
 Worth naming, because these are the ones that matter: a single nasal sign dropped with the line's own fingerprint
 recomputed is still caught by the **passage** fingerprint; recomputing the line fingerprint, the passage fingerprint
 and the file pin together is still caught, because the **lesson's stored binding** goes stale. A teaching pack that
