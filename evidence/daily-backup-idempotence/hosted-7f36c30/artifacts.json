@@ -1,0 +1,65 @@
+{
+  "total_count": 3,
+  "artifacts": [
+    {
+      "id": 15178223040,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE3ODIyMzA0MA==",
+      "name": "hukamnama-browser-evidence",
+      "size_in_bytes": 5110473,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15178223040",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15178223040/zip",
+      "expired": false,
+      "digest": "sha256:9994d13a9402447e6756f6df8f6d1289b006f1b20c6b79a169ef72111a0049ea",
+      "created_at": "2026-11-27T06:59:32Z",
+      "updated_at": "2026-11-27T06:59:32Z",
+      "expires_at": "2027-02-25T06:58:22Z",
+      "workflow_run": {
+        "id": 45955054300,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "fix/daily-backup-idempotence-20261126",
+        "head_sha": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+      }
+    },
+    {
+      "id": 15177629748,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE3NzYyOTc0OA==",
+      "name": "hukamnama-source-and-contract-evidence",
+      "size_in_bytes": 4209656,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15177629748",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15177629748/zip",
+      "expired": false,
+      "digest": "sha256:dcdccc166f652843ef164efc5cf0739363d75df8740af99a402ba1d231778ccd",
+      "created_at": "2026-11-27T06:56:20Z",
+      "updated_at": "2026-11-27T06:56:20Z",
+      "expires_at": "2027-02-25T06:56:02Z",
+      "workflow_run": {
+        "id": 45955054300,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "fix/daily-backup-idempotence-20261126",
+        "head_sha": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+      }
+    },
+    {
+      "id": 15177589981,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE3NzU4OTk4MQ==",
+      "name": "hukamnama-browser-evidence",
+      "size_in_bytes": 4156113,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15177589981",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15177589981/zip",
+      "expired": false,
+      "digest": "sha256:f2bf78a41b58de33be0e1fd2371a2fddbb37a924ffe9b1e96b73dcf4868e1850",
+      "created_at": "2026-11-27T06:56:55Z",
+      "updated_at": "2026-11-27T06:56:55Z",
+      "expires_at": "2027-02-25T06:56:02Z",
+      "workflow_run": {
+        "id": 45955054300,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "fix/daily-backup-idempotence-20261126",
+        "head_sha": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+      }
+    }
+  ]
+}

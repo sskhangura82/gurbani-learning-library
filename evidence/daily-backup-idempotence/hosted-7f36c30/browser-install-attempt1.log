@@ -1,0 +1,35 @@
+browser-learning-and-offline	Install the existing pinned browser test version	﻿2026-11-27T06:56:37.0459828Z ##[group]Run npm install --no-save --package-lock=false playwright@1.62.1
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:37.0460377Z ^[[36;1mnpm install --no-save --package-lock=false playwright@1.62.1^[[0m
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:37.0460786Z ^[[36;1mnpx playwright install --with-deps chromium^[[0m
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:37.0461108Z ^[[36;1msudo apt-get install -y fonts-noto-core^[[0m
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:37.2006469Z shell: /usr/bin/bash -e {0}
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:37.2006825Z ##[endgroup]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:39.8231774Z 
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:39.8237302Z added 2 packages in 3s
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.4392367Z Installing dependencies...
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.4466860Z Switching to root user to install dependencies...
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.5868221Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [152 B]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.6169003Z Err:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.6169909Z   403  Forbidden [IP: 13.107.213.40 443]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.7117324Z Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble InRelease
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.7245302Z Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.7710229Z Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.8107941Z Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.9038652Z Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1492 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.9489812Z Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [321 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.9658698Z Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1716 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:40.9954746Z Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [346 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.0085028Z Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1949 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.0448574Z Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [448 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.0622730Z Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1231 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.0893589Z Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/main Translation-en [243 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.1042901Z Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1233 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.1316925Z Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [249 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.1560940Z Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1842 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:41.1846830Z Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [429 kB]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:54.9978945Z Reading package lists...
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:55.0106068Z E: Failed to fetch https://packages.microsoft.com/ubuntu/24.04/prod/dists/noble/InRelease  403  Forbidden [IP: 13.107.213.40 443]
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:55.0107328Z E: The repository 'https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease' is no longer signed.
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:55.0123706Z Failed to install browsers
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:55.0124627Z Error: Installation process exited with code: 100
+browser-learning-and-offline	Install the existing pinned browser test version	2026-11-27T06:56:55.0281189Z ##[error]Process completed with exit code 1.
