@@ -95,7 +95,15 @@ try{
    const info=await p.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth,controls:[...document.querySelectorAll('#passage-search input,#passage-search select,#passage-search button:not([hidden])')].map(e=>({id:e.id,height:e.getBoundingClientRect().height,width:e.getBoundingClientRect().width}))}));
    assert.ok(info.documentWidth<=width+1,JSON.stringify(info));assert.ok(info.controls.every(c=>c.height>=44),JSON.stringify(info));report.layouts.push(info);await capture(p,'explore-'+width);
   }
-  await p.setViewportSize({width:390,height:844});await p.locator('#home-theme').click();assert.equal(await p.locator('body').getAttribute('data-theme'),'amrit');
+  await p.setViewportSize({width:390,height:844});
+  // The automatic initial appearance follows the local clock. Establish and
+  // verify Day before exercising the actual control's switch to Amrit Vela.
+  const initialTheme=await p.locator('body').getAttribute('data-theme');assert.ok(['day','amrit'].includes(initialTheme));
+  if(initialTheme==='amrit')await p.locator('#home-theme').click();
+  assert.equal(await p.locator('body').getAttribute('data-theme'),'day');
+  assert.equal(await p.locator('#home-theme').getAttribute('aria-pressed'),'false');
+  await p.locator('#home-theme').click();assert.equal(await p.locator('body').getAttribute('data-theme'),'amrit');
+  assert.equal(await p.locator('#home-theme').getAttribute('aria-pressed'),'true');
   await p.locator('#passage-search-title').scrollIntoViewIfNeeded();const colors=await p.locator('#passage-query').evaluate(e=>({color:getComputedStyle(e).color,background:getComputedStyle(e).backgroundColor}));assert.notEqual(colors.color,colors.background);assert.notEqual(colors.background,'rgb(255, 255, 255)');await capture(p,'explore-dark-390');
   await p.evaluate(()=>{document.documentElement.style.fontSize='200%';});await p.locator('#passage-results a').first().scrollIntoViewIfNeeded();
   const big=await p.evaluate(()=>({width:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert.ok(big.documentWidth<=big.width+1);report.layouts.push({enlarged:true,...big});await capture(p,'explore-enlarged-390');await close(p);
