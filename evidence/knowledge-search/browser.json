@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "390 unrelated searches are empty, meaningful result opens exact line",
+    "390 line link reload and browser Back/Forward retain identities",
+    "390 Back/Forward and reload retain depth and actual reading position",
+    "390 immediate reload flushes reading position before the debounce",
+    "390 manual hash entry has a distinct reading-position identity",
+    "390 new same-document line link scrolls and focuses its target",
+    "390 old occurrence identity resolves and invalid links remain explicit",
+    "390 Anywhere is explicit; Kabir author path reports limited coverage",
+    "390 retrieval stays local, input text stays out of URLs and storage",
+    "1440 unrelated searches are empty, meaningful result opens exact line",
+    "1440 line link reload and browser Back/Forward retain identities",
+    "1440 Back/Forward and reload retain depth and actual reading position",
+    "1440 immediate reload flushes reading position before the debounce",
+    "1440 manual hash entry has a distinct reading-position identity",
+    "1440 new same-document line link scrolls and focuses its target",
+    "1440 old occurrence identity resolves and invalid links remain explicit",
+    "1440 Anywhere is explicit; Kabir author path reports limited coverage",
+    "1440 retrieval stays local, input text stays out of URLs and storage"
+  ],
+  "errors": [],
+  "limits": [
+    "Desktop Chromium only, not iPhone Safari or VoiceOver.",
+    "Pilot only; no production deployment."
+  ]
+}
