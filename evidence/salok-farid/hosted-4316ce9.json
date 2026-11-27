@@ -1,0 +1,41 @@
+{
+  "head": "4316ce959b90d7395986842990ec1fa5d5452875",
+  "checks": [
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611434/job/140643894598",
+      "name": "browser-learning-and-offline",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611467/job/140643863518",
+      "name": "browser-enforcement-and-update-preservation",
+      "state": "FAILURE"
+    },
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611503/job/140643850364",
+      "name": "browser",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611503/job/140643694958",
+      "name": "contracts",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611467/job/140643694520",
+      "name": "frozen-inputs-and-delivery-contracts",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611434/job/140643694538",
+      "name": "original-source-and-learning-contracts",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46039611737/job/140643695236",
+      "name": "verify-candidate",
+      "state": "SUCCESS"
+    }
+  ],
+  "failureExplanation": "The strict existing offline fixture omitted the four declared Farid assets from its expected additions. Candidate source/reader and other hosted checks passed. The corrective commit names exactly those four paths and keeps complete set equality and all update-preservation assertions."
+}

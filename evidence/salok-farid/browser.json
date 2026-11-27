@@ -1,0 +1,122 @@
+{
+  "startedAt": "2026-11-27T17:06:10.643Z",
+  "browser": "158.0.8127.37",
+  "checks": [
+    {
+      "name": "Collection entrance labels its pending source review at 320 px",
+      "status": "PASS"
+    },
+    {
+      "name": "All 297 originals render in selected order at 320 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Complete long and final Saloks navigate without truncation at 320 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Meaning and study remain honestly empty at 320 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Large Gurmukhi wraps within 320 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Collection entrance labels its pending source review at 390 px",
+      "status": "PASS"
+    },
+    {
+      "name": "All 297 originals render in selected order at 390 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Complete long and final Saloks navigate without truncation at 390 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Meaning and study remain honestly empty at 390 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Large Gurmukhi wraps within 390 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Collection entrance labels its pending source review at 820 px",
+      "status": "PASS"
+    },
+    {
+      "name": "All 297 originals render in selected order at 820 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Complete long and final Saloks navigate without truncation at 820 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Meaning and study remain honestly empty at 820 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Large Gurmukhi wraps within 820 px",
+      "status": "PASS"
+    },
+    {
+      "name": "A bookmark and a separate private note save and export under Farid’s own edition",
+      "status": "PASS"
+    },
+    {
+      "name": "Reload keeps the private note without manufacturing teaching",
+      "status": "PASS"
+    },
+    {
+      "name": "The actual export imports into a fresh context without moving its reading place",
+      "status": "PASS"
+    },
+    {
+      "name": "A different collection backup is refused and existing bytes are preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "An missing original fails closed before any scripture is shown",
+      "status": "PASS"
+    },
+    {
+      "name": "An changed original fails closed before any scripture is shown",
+      "status": "PASS"
+    },
+    {
+      "name": "The real root service worker caches Farid’s pinned source-only reader",
+      "status": "PASS"
+    },
+    {
+      "name": "No Farid teaching request or uncaught browser error occurs",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "evidence/salok-farid/collection-390.png",
+    "evidence/salok-farid/reader-390.png",
+    "evidence/salok-farid/study-empty-390.png",
+    "evidence/salok-farid/offline-final-390.png"
+  ],
+  "errors": [],
+  "limitations": [
+    "Desktop Chromium only, including narrow viewports; no physical iPhone, Safari, Home Screen, Android or VoiceOver check.",
+    "No human language, source-selection, theology or printed-page approval.",
+    "Only synthetic notes in fresh nonpersistent contexts."
+  ],
+  "inputSha256": {
+    "salok-farid/data/salok-farid.json": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643",
+    "salok-farid/data/library.json": "f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c",
+    "salok-farid/index.html": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0",
+    "nitnem/reader.js": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301",
+    "sw.js": "98979819ec6c79b69578dd7653a0a1970fb1c5679ec0c2df6f1c6bb6740828b4",
+    "tests/salok-farid-browser.mjs": "2521a4ef8a394a4683f082a351216feded44d783dfb1fe6060014c76d9f8570f"
+  },
+  "completedAt": "2026-11-27T17:06:16.362Z",
+  "passed": 23,
+  "failed": 0,
+  "status": "PASS"
+}
