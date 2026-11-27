@@ -996,5 +996,35 @@
   "status": "PARTLY-FIXED-ON-CANDIDATE",
   "origin": "PREPARATION",
   "retest": "Re-test RT-002, 2026-11-26, candidate PR #40 at 1470477 (unmerged; the public app is unchanged; emulation only, no device). PARTLY FIXED. Every line that carries a note is listed, marked \"Reflection\"; one note with no saved line no longer shows the empty message; 200 notes list and scroll. Not met from the acceptance test: tapping a listed line goes to the line and does not open the note; the list does not show the note's first words (candidate remark RT2-03)."
+ },
+ {
+   "id": "ART-P01",
+   "severity": "S2",
+   "s0_candidate": false,
+   "area": "Print",
+   "title": "Print-inspection gate fails on correct PDFs: PyMuPDF 1.26.6 duplicates the vowel sign after a subjoined-ਰ cluster",
+   "location": ".github/workflows/article-source-print-qa.yml (pins PyMuPDF==1.26.6) against evidence/articles/print/*.pdf; reported in evidence/articles/print-inspection/*/inspection.json",
+   "composition_or_verse": "Salok Mahalla 9 salok 19 line01; Salok Kabir salok 25 line01",
+   "evidence": "Measured by me at composite head 7f36c3039ca95fac6e69ca28f631b9e3734c70e9 on the byte-identical artifacts CI inspected (haumai a4 sha256 6a5bc6b6..., matching the inspector's own output directory name haumai-source-sheet-a4-6a5bc6b6). PyMuPDF 1.26.6 extracts ਪ੍ਰਾਨੀ as ਪ੍ਰਾਾਨੀ (U+0A3E emitted twice) and ਪ੍ਰੀਤਿ as ਪ੍ਰੀੀਤਿ (U+0A40 twice). Same cluster shape both times: ਪ + U+0A4D + ਰ + matra. Across all six print artifacts (haumai/dubidha/pagination-stress x a4/letter) line01 exact=False and line02 exact=True, because only line01 contains a subjoined-ਰ cluster. The PDF is correct on three independent checks: (1) canonical text from salok-mahalla9/data and salok-kabir/data is digest-exact to the pins in articles/source-contracts.mjs under none/NFC/NFD; (2) the PDF's own /ActualText span for that cluster is hex FEFF0A2A0A4D0A300A3E = four codepoints, one matra; (3) Poppler pdftotext 24.02.0 extracts all twelve pinned lines exact, exactly once, both lines of each pair on one page (pagination-stress: pair complete on page 2 of 3). Builder evidence is consistent: print-compatibility/extraction.json records the same line01-false/line02-true signature, and poppler-initial-haumai.json records Poppler PASS. reviews/claude-independent/retests/RT-026_COMPOSITE_CI_ATTRIBUTION.md and RT-026_ADDENDUM_ENGINE_DEFECT_AND_CORRECTIONS.md.",
+   "why_it_matters": "The gate is load-bearing exactly where it misfires. Its declared normalization is 'NFC and collapsed whitespace only; no letter or punctuation removal'. That policy is correct and cannot absorb this defect, because the defect inserts a letter (a matra). Loosening the matcher to tolerate a duplicated matra would make the gate blind to a duplicated matra, which is precisely a silent Gurmukhi spelling corruption - the class 'never silently modernize Gurmukhi spelling' and 'a corrupted or incomplete scripture package must not silently render as a complete valid composition' exist to catch. Separately: because the workflow triggers on main, merging the reviewed composite puts this red check on main.",
+   "proposed_correction": "Builder decision, not mine. I do not repair builder code or CI and propose no patch. The constraint I record: any change that makes this pass by relaxing what counts as a match trades a false failure for a real blind spot in scripture integrity. The fix belongs in the extraction engine or in cross-checking two engines, not in the comparison.",
+   "acceptance_test": "All twelve pinned lines across the six print artifacts match exactly under whatever engine the gate uses, with no letter or punctuation removal in the matcher; and a deliberately duplicated matra injected into a test PDF still fails the gate.",
+   "status": "OPEN",
+   "origin": "INDEPENDENT"
+ },
+ {
+   "id": "CI-02",
+   "severity": "S2",
+   "s0_candidate": false,
+   "area": "Process",
+   "title": "Workflow branch filtering reports a failing check as absent on candidate PRs",
+   "location": ".github/workflows/article-source-print-qa.yml (on.pull_request.branches: [main, feature/learning-reliability-practice-20261126])",
+   "composition_or_verse": "n/a",
+   "evidence": "browser-and-print failed at #55's own head acfeb0a157fc2cf38ae7ccbaeb2c53d8e97d3bec and DID NOT RUN at #56, #59, #60, #61, whose bases are not in the trigger list. It surfaced again only when the builder ran the composite against main in validation-only #63 (head 7f36c3039ca95fac6e69ca28f631b9e3734c70e9, identical SHA to #62's reviewed head, zero differing paths). Second instance of this class; the first was the 85-vs-81 case attributed in RT-021. reviews/claude-independent/findings/CI-02_BRANCH_FILTERING_HIDES_RED_CHECKS.md.",
+   "why_it_matters": "main IS in the trigger list, so filtering does not prevent the failure landing - it only delays discovery until after a merge to main, when the cost is highest. A reviewer cannot distinguish 'did not run' from 'has nothing to say' without checking each workflow per candidate by hand. In this instance the hidden red was an instrument limitation (ART-P01); the same filtering would equally have hidden a genuine scripture or rendering defect for four candidates.",
+   "proposed_correction": "Repository-configuration decision, not mine. Worth the builder considering whether checks that gate main should run on every candidate intended to reach main. Related founder-reserved act still outstanding: the branch-protection rule on main.",
+   "acceptance_test": "Every check that triggers on main also reports on any PR whose eventual destination is main, so no gating check can be absent rather than red on a candidate.",
+   "status": "OPEN",
+   "origin": "INDEPENDENT"
  }
 ]

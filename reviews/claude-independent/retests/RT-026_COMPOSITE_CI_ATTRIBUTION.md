@@ -161,3 +161,24 @@ already made:
 - I did **not** guess the canonical form. I verified text against the contract digests and
   checked none/NFC/NFD explicitly before claiming a match.
   (Guards against errors 26 and 30 — normalization mistakes.)
+
+---
+
+## CORRECTION — appended 2026-11-27, after opening builder evidence
+
+Two statements above are corrected in
+`RT-026_ADDENDUM_ENGINE_DEFECT_AND_CORRECTIONS.md`. Read it with this file.
+
+1. **"Both reported failures are false against this artifact" is too strong.**
+   `found 0 after declared extraction normalization` is true of the inspector's own
+   extraction and false only as a claim about the document. `is not proven complete on one
+   page` claims non-proof, not disproof — that wording is accurate and I should not have
+   called it false.
+
+2. **The engine named in session was wrong.** I theorised a pdfium space-insertion
+   mechanism before checking the workflow. CI pins **PyMuPDF 1.26.6** (workflow line 60).
+   The real mechanism is a **duplicated matra after a subjoined-ਰ cluster**
+   (`ਪ੍ਰਾਨੀ` → `ਪ੍ਰਾਾਨੀ`), not whitespace. Instrument error 31.
+
+The conclusion that the documents are correct **stands and is strengthened**: all six print
+artifacts, both pairs, both page sizes now verified. Opened as finding **ART-P01**.
