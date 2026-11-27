@@ -1,0 +1,496 @@
+{
+  "attempt": 1,
+  "conclusion": "success",
+  "createdAt": "2026-11-27T05:35:22Z",
+  "headSha": "df2c62fb3fef3d85cab9b752772e3f3f201dd791",
+  "jobs": [
+    {
+      "completedAt": "2026-11-27T05:36:59Z",
+      "conclusion": "success",
+      "databaseId": 140332925197,
+      "name": "verify-review-repairs-browser",
+      "startedAt": "2026-11-27T05:35:25Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-27T05:35:28Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-27T05:35:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:33Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-11-27T05:35:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v4",
+          "number": 3,
+          "startedAt": "2026-11-27T05:35:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:40Z",
+          "conclusion": "success",
+          "name": "Install pinned browser test tools",
+          "number": 4,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:19Z",
+          "conclusion": "success",
+          "name": "Install Chromium and Gurmukhi fonts",
+          "number": 5,
+          "startedAt": "2026-11-27T05:35:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:31Z",
+          "conclusion": "success",
+          "name": "Test source integrity before rendering and browser-enforced SRI",
+          "number": 6,
+          "startedAt": "2026-11-27T05:36:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:54Z",
+          "conclusion": "success",
+          "name": "Test preserved learning and accessible meaning names",
+          "number": 7,
+          "startedAt": "2026-11-27T05:36:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:56Z",
+          "conclusion": "success",
+          "name": "Retain repair browser evidence",
+          "number": 8,
+          "startedAt": "2026-11-27T05:36:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:56Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@v4",
+          "number": 15,
+          "startedAt": "2026-11-27T05:36:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:56Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 16,
+          "startedAt": "2026-11-27T05:36:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:56Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-11-27T05:36:56Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925197"
+    },
+    {
+      "completedAt": "2026-11-27T05:35:40Z",
+      "conclusion": "success",
+      "databaseId": 140332925521,
+      "name": "verify-reader",
+      "startedAt": "2026-11-27T05:35:24Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-27T05:35:26Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-27T05:35:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:30Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-11-27T05:35:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:33Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v4",
+          "number": 3,
+          "startedAt": "2026-11-27T05:35:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:34Z",
+          "conclusion": "success",
+          "name": "Immutable Gurbani and learning contracts",
+          "number": 4,
+          "startedAt": "2026-11-27T05:35:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:34Z",
+          "conclusion": "success",
+          "name": "Service worker cache and upgrade contracts",
+          "number": 5,
+          "startedAt": "2026-11-27T05:35:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:34Z",
+          "conclusion": "success",
+          "name": "Multi-tab persistence and merge",
+          "number": 6,
+          "startedAt": "2026-11-27T05:35:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:34Z",
+          "conclusion": "success",
+          "name": "Preserve unmatched and long Japji learning",
+          "number": 7,
+          "startedAt": "2026-11-27T05:35:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:35Z",
+          "conclusion": "success",
+          "name": "Runtime original scripture integrity and tamper rejection",
+          "number": 8,
+          "startedAt": "2026-11-27T05:35:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:35Z",
+          "conclusion": "success",
+          "name": "Reader script integrity and fixed script inventory",
+          "number": 9,
+          "startedAt": "2026-11-27T05:35:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:35Z",
+          "conclusion": "success",
+          "name": "Reader code syntax",
+          "number": 10,
+          "startedAt": "2026-11-27T05:35:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:35Z",
+          "conclusion": "success",
+          "name": "Revision 6 preservation and preferences",
+          "number": 11,
+          "startedAt": "2026-11-27T05:35:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:35Z",
+          "conclusion": "success",
+          "name": "Revision 7 home, pace and rooms contracts",
+          "number": 12,
+          "startedAt": "2026-11-27T05:35:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Sukhmani source, published-content preservation and complete Sukhmani teaching coverage",
+          "number": 13,
+          "startedAt": "2026-11-27T05:35:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Sukhmani saved learning, import and preservation",
+          "number": 14,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Sukhmani code syntax",
+          "number": 15,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Complete Nitnem sources, teaching and preservation",
+          "number": 16,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Nitnem saved learning, edition migration and safe merging",
+          "number": 17,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:36Z",
+          "conclusion": "success",
+          "name": "Collection-sized backup limits and exact export/import round trips",
+          "number": 18,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:37Z",
+          "conclusion": "success",
+          "name": "Nitnem asynchronous reflection and reader lifecycle",
+          "number": 19,
+          "startedAt": "2026-11-27T05:35:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:37Z",
+          "conclusion": "success",
+          "name": "Nitnem code syntax",
+          "number": 20,
+          "startedAt": "2026-11-27T05:35:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:37Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@v4",
+          "number": 39,
+          "startedAt": "2026-11-27T05:35:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:37Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 40,
+          "startedAt": "2026-11-27T05:35:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:37Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 41,
+          "startedAt": "2026-11-27T05:35:37Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925521"
+    },
+    {
+      "completedAt": "2026-11-27T05:36:28Z",
+      "conclusion": "success",
+      "databaseId": 140332925585,
+      "name": "verify-nitnem-browser",
+      "startedAt": "2026-11-27T05:35:24Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-27T05:35:25Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-27T05:35:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:29Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-11-27T05:35:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:29Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v4",
+          "number": 3,
+          "startedAt": "2026-11-27T05:35:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:31Z",
+          "conclusion": "success",
+          "name": "Install pinned browser test tools",
+          "number": 4,
+          "startedAt": "2026-11-27T05:35:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:54Z",
+          "conclusion": "success",
+          "name": "Install Chromium and Gurmukhi fonts",
+          "number": 5,
+          "startedAt": "2026-11-27T05:35:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:25Z",
+          "conclusion": "success",
+          "name": "Test all Nitnem readers, local learning, layouts and offline access",
+          "number": 6,
+          "startedAt": "2026-11-27T05:35:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:26Z",
+          "conclusion": "success",
+          "name": "Retain Nitnem browser evidence",
+          "number": 7,
+          "startedAt": "2026-11-27T05:36:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:27Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@v4",
+          "number": 13,
+          "startedAt": "2026-11-27T05:36:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:27Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 14,
+          "startedAt": "2026-11-27T05:36:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:27Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "startedAt": "2026-11-27T05:36:27Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925585"
+    },
+    {
+      "completedAt": "2026-11-27T05:37:47Z",
+      "conclusion": "success",
+      "databaseId": 140332925593,
+      "name": "verify-sukhmani-browser",
+      "startedAt": "2026-11-27T05:35:24Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-27T05:35:27Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-27T05:35:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:34Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-11-27T05:35:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:37Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v4",
+          "number": 3,
+          "startedAt": "2026-11-27T05:35:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:35:41Z",
+          "conclusion": "success",
+          "name": "Install pinned browser test tools",
+          "number": 4,
+          "startedAt": "2026-11-27T05:35:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:25Z",
+          "conclusion": "success",
+          "name": "Install Chromium",
+          "number": 5,
+          "startedAt": "2026-11-27T05:35:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:36:28Z",
+          "conclusion": "success",
+          "name": "Identify installed full Chrome for retained-document history coverage",
+          "number": 6,
+          "startedAt": "2026-11-27T05:36:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:37:42Z",
+          "conclusion": "success",
+          "name": "Test settled resume, reading, local learning and offline preview with synthetic data",
+          "number": 7,
+          "startedAt": "2026-11-27T05:36:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:37:44Z",
+          "conclusion": "success",
+          "name": "Retain browser evidence",
+          "number": 8,
+          "startedAt": "2026-11-27T05:37:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:37:44Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@v4",
+          "number": 15,
+          "startedAt": "2026-11-27T05:37:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:37:45Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 16,
+          "startedAt": "2026-11-27T05:37:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-27T05:37:45Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-11-27T05:37:45Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925593"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-11-27T05:37:48Z",
+  "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419",
+  "workflowName": "GLP Reader Quality Gate"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702442/job/140334101843",
+    "name": "library-candidate",
+    "state": "SUCCESS",
+    "workflow": "Unified library and saved-entry checks"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702433/job/140333060569",
+    "name": "browser-learning-and-offline",
+    "state": "SUCCESS",
+    "workflow": "GLP Hukamnama Foundation QA"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702468/job/140333053725",
+    "name": "browser",
+    "state": "SUCCESS",
+    "workflow": "GLP Knowledge Pilot QA"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702463/job/140333001917",
+    "name": "browser-enforcement-and-update-preservation",
+    "state": "SUCCESS",
+    "workflow": "Complete library script integrity"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702468/job/140332925775",
+    "name": "contracts",
+    "state": "SUCCESS",
+    "workflow": "GLP Knowledge Pilot QA"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925197",
+    "name": "verify-review-repairs-browser",
+    "state": "SUCCESS",
+    "workflow": "GLP Reader Quality Gate"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702463/job/140332925618",
+    "name": "frozen-inputs-and-delivery-contracts",
+    "state": "SUCCESS",
+    "workflow": "Complete library script integrity"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702433/job/140332925264",
+    "name": "original-source-and-learning-contracts",
+    "state": "SUCCESS",
+    "workflow": "GLP Hukamnama Foundation QA"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925521",
+    "name": "verify-reader",
+    "state": "SUCCESS",
+    "workflow": "GLP Reader Quality Gate"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925593",
+    "name": "verify-sukhmani-browser",
+    "state": "SUCCESS",
+    "workflow": "GLP Reader Quality Gate"
+  },
+  {
+    "link": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45946702419/job/140332925585",
+    "name": "verify-nitnem-browser",
+    "state": "SUCCESS",
+    "workflow": "GLP Reader Quality Gate"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "checkedAtUtc": "2026-11-27T05:44:36.740045+00:00",
+  "candidate": {
+    "baseRefName": "fix/library-script-integrity-20261126",
+    "headRefOid": "df2c62fb3fef3d85cab9b752772e3f3f201dd791",
+    "isDraft": true,
+    "mergedAt": null,
+    "number": 61,
+    "state": "OPEN",
+    "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/61"
+  },
+  "sourceMain": {
+    "name": "main",
+    "protected": false,
+    "sha": "a3476ac4b9be90dde350fb35dd13ce0b672c120d"
+  },
+  "previewMain": {
+    "name": "main",
+    "protected": false,
+    "sha": "63780b0a15c56a974c9dafd41d3308c0b82c1bf7"
+  },
+  "previewLatestBuild": {
+    "commit": "63780b0a15c56a974c9dafd41d3308c0b82c1bf7",
+    "created_at": "2026-11-27T01:13:42Z",
+    "status": "built",
+    "updated_at": "2026-11-27T01:14:14Z"
+  }
+}

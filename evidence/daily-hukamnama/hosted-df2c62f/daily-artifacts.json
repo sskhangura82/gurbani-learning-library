@@ -1,0 +1,45 @@
+{
+  "total_count": 2,
+  "artifacts": [
+    {
+      "id": 15175057116,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE3NTA1NzExNg==",
+      "name": "hukamnama-source-and-contract-evidence",
+      "size_in_bytes": 3267579,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15175057116",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15175057116/zip",
+      "expired": false,
+      "digest": "sha256:d6e9fbebb098178678a3c61c8a9b74e89ff620805972ecaa0ae7ba3b25fdd97f",
+      "created_at": "2026-11-27T05:35:45Z",
+      "updated_at": "2026-11-27T05:35:45Z",
+      "expires_at": "2027-02-25T05:35:22Z",
+      "workflow_run": {
+        "id": 45946702433,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "feature/daily-hukamnama-learning-20261126",
+        "head_sha": "df2c62fb3fef3d85cab9b752772e3f3f201dd791"
+      }
+    },
+    {
+      "id": 15174029944,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE3NDAyOTk0NA==",
+      "name": "hukamnama-browser-evidence",
+      "size_in_bytes": 4168415,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15174029944",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15174029944/zip",
+      "expired": false,
+      "digest": "sha256:227ade3a86b447f1c7edec714928d765e55e6f3c15cb00b2f543bed57ff26027",
+      "created_at": "2026-11-27T05:36:49Z",
+      "updated_at": "2026-11-27T05:36:49Z",
+      "expires_at": "2027-02-25T05:35:22Z",
+      "workflow_run": {
+        "id": 45946702433,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "feature/daily-hukamnama-learning-20261126",
+        "head_sha": "df2c62fb3fef3d85cab9b752772e3f3f201dd791"
+      }
+    }
+  ]
+}

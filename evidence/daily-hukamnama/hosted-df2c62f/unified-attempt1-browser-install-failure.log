@@ -1,0 +1,35 @@
+library-candidate	Install pinned Chromium and Gurmukhi fonts	﻿2026-11-27T05:35:39.8032992Z ##[group]Run npm install --no-save --package-lock=false playwright@1.62.1
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:39.8033719Z ^[[36;1mnpm install --no-save --package-lock=false playwright@1.62.1^[[0m
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:39.8034337Z ^[[36;1mnpx playwright install --with-deps chromium^[[0m
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:39.8034813Z ^[[36;1msudo apt-get install -y fonts-noto-core^[[0m
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:39.8071556Z shell: /usr/bin/bash -e {0}
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:39.8071864Z ##[endgroup]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:41.4715997Z 
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:41.4716806Z added 2 packages in 2s
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.0031008Z Installing dependencies...
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.0081563Z Switching to root user to install dependencies...
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.2171528Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [152 B]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.2606779Z Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble InRelease
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.2608022Z Err:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.2608727Z   403  Forbidden [IP: 13.107.213.40 443]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.2732067Z Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.3216130Z Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.3658620Z Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.4437911Z Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1492 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.4899261Z Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [321 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.5071163Z Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1716 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.5371270Z Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [346 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.5516805Z Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1949 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.5819648Z Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [448 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.5989590Z Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1231 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.6245013Z Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/main Translation-en [243 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.6382024Z Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1233 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.6553833Z Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [249 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.6826595Z Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1842 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:42.7128342Z Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [429 kB]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:55.4787459Z Reading package lists...
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:55.4929690Z E: Failed to fetch https://packages.microsoft.com/ubuntu/24.04/prod/dists/noble/InRelease  403  Forbidden [IP: 13.107.213.40 443]
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:55.4930587Z E: The repository 'https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease' is no longer signed.
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:55.4946194Z Failed to install browsers
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:55.4946668Z Error: Installation process exited with code: 100
+library-candidate	Install pinned Chromium and Gurmukhi fonts	2026-11-27T05:35:55.5093215Z ##[error]Process completed with exit code 1.
