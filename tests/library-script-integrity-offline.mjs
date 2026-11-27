@@ -19,6 +19,8 @@ const out=path.join(root,'evidence/library-script-integrity/offline',stamp);
 const exec=promisify(execFile),sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 const additions=[
  './library/app.bundle.mjs','./articles/app.bundle.mjs',
+ './library/complete-passages.json','./library/passage-contracts.mjs','./library/passages.mjs',
+ './library/passage-ui.mjs','./library/search.mjs','./library/kinds.mjs',
  './knowledge/','./knowledge/index.html','./knowledge/style.css',
  './knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json',
  './hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs'

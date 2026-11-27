@@ -16,6 +16,7 @@ additions.push('./library/catalog.mjs','./library/core.mjs','./library/app.mjs',
 // Same-directory bundles contain the complete executable module graphs. Keep
 // source assets for documented inspection; runtime pages load only the bundles.
 additions.push('./library/app.bundle.mjs','./articles/app.bundle.mjs');
+additions.push('./library/complete-passages.json','./library/passage-contracts.mjs','./library/passages.mjs','./library/passage-ui.mjs','./library/search.mjs','./library/kinds.mjs');
 additions.push('./knowledge/','./knowledge/index.html','./knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json');
 // Dated events and content-addressed sources use their own verified-pair cache.
 // They must never enter the versioned application shell.
@@ -26,5 +27,5 @@ for(const name of new Set([...Object.keys(previous),...additions])){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.22-daily-hukamnama-20261126-2";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.24-explore-complete-passages-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

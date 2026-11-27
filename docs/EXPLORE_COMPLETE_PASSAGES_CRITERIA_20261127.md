@@ -12,3 +12,7 @@ Frozen before implementation, 27 November 2026. Audio remains on hold. This is a
 8. Integrate the new graph into the exact bundle/SRI/offline protections with scoped pinned changes, not relaxed global checks. Preserve all other original/teaching data and existing reader code. Test exact full-unit crosswalk reproduction, corruption/refusal, ambiguous/missing whole sequences, both first-letter forms, false English matches, deep links, browser navigation, narrow layout and unchanged synthetic private storage.
 
 Builder criteria and tests do not replace Claude's independent criteria or findings. Japji/Sukhmani legacy segmentation, Farid's still-pending ledger and full-corpus unit admission remain explicitly later work, not silently accepted by this increment.
+
+## Implementation clarification — navigation state
+
+The original no-query-history criterion means no application search-history store, analytics or transmitted search query. During UI implementation, Back restoration uses the current query and method in the page's URL fragment, updated with replaceState. The browser can retain that address in its ordinary history; the fragment is not sent in source requests or referrers. This behavior is disclosed here rather than claiming the browser retains nothing. Private reflections are never included in a URL.

@@ -16,6 +16,7 @@ const git=(...args)=>execFileSync('git',args,{cwd:root,maxBuffer:64*1024*1024});
 const read=name=>fs.readFile(path.join(root,name));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const NAVIGATION_BASE='44401e35690322fb3dbc29c443bff86d73279fcb';
+const EXPLORE_BASE='d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a';
 const names=git('ls-tree','-r','--name-only',INPUT_BASE).toString().trim().split('\n');
 const loaderPages=new Set(['index.html','gurdwara.html','pauri-2-lesson.html','simran.html','breathing.html','articles/index.html','articles/article.html','knowledge/index.html']);
 const nonApplication=/^(?:\.github|docs|evidence|tests|tools)\//;
@@ -68,17 +69,30 @@ async function navigationScope(){
  assert.deepEqual(record.files.map(f=>f.path),['index.html','library/catalog.mjs']);
  for(const item of record.files){
   assert.equal(hash(navigationComparable(item.path,git('show',NAVIGATION_BASE+':'+item.path))),item.beforeSha256,item.path+' navigation baseline');
-  assert.equal(hash(navigationComparable(item.path,await read(item.path))),item.afterSha256,item.path+' exact frozen Daily entrance change');
+  const dailyBytes=item.path==='index.html'?git('show',EXPLORE_BASE+':'+item.path):await read(item.path);
+  assert.equal(hash(navigationComparable(item.path,dailyBytes)),item.afterSha256,item.path+' exact frozen Daily entrance change');
  }
  return new Set(record.files.map(f=>f.path));
 }
 
-test('Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest',async()=>{
- const navigation=await navigationScope();
+async function exploreScope(){
+ const record=JSON.parse(await read('evidence/explore-complete-passages/inputs/navigation-scope.json'));
+ assert.equal(record.schema,'glp.explore.complete-passages.scope.v1');
+ assert.equal(record.base,EXPLORE_BASE);
+ assert.deepEqual(record.files.map(f=>f.path),['index.html','library/app.mjs','library/library.css']);
+ for(const item of record.files){
+  assert.equal(hash(git('show',EXPLORE_BASE+':'+item.path)),item.beforeSha256,item.path+' Explore baseline');
+  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact complete-passage UI change');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+test('Existing application bytes stay frozen outside exact Daily and Explore changes, loader pins and worker manifest',async()=>{
+ const navigation=await navigationScope(),explore=await exploreScope();
  const application=names.filter(name=>!nonApplication.test(name));
  assert.ok(application.length>90,'protection must cover the application, not a small selected sample');
  for(const name of application){
-  if(name==='sw.js'||navigation.has(name))continue;
+  if(name==='sw.js'||navigation.has(name)||explore.has(name))continue;
   const previous=git('show',INPUT_BASE+':'+name),current=await read(name);
   if(loaderPages.has(name)){
    assert.equal(loaderComparable(current.toString()),loaderComparable(previous.toString()),name+' changed beyond loader pins or bundle URL');
@@ -92,6 +106,7 @@ test('Reader loader contract and reviewed original module closures remain exact'
  const originalModules=['library/app.mjs','library/catalog.mjs','library/core.mjs','articles/app.mjs','articles/core.mjs','articles/source-contracts.mjs','knowledge/app.mjs','knowledge/registry.mjs','knowledge/source-lock.mjs','knowledge/core.mjs','knowledge/kinds.mjs','knowledge/search.mjs'];
  for(const name of originalModules){
   if(name==='library/catalog.mjs'){await navigationScope();continue;}
+  if(name==='library/app.mjs'){await exploreScope();continue;}
   assert.deepEqual(await read(name),git('show',INPUT_BASE+':'+name),name);
  }
  const priorFoundation='fb49ef41bd890db879d7f93a861585915ef81622';

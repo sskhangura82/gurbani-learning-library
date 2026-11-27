@@ -1,0 +1,48 @@
+{
+  "result": "PASS_ON_RUN_CHECKS",
+  "offlineResult": "PASS",
+  "browser": "158.0.8127.37",
+  "evidence": "evidence/library/browser/2026-11-27T17-12-18-704Z/report.json",
+  "checks": [
+    {
+      "name": "All four entrances load directly with matching title, heading and current navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard entrance navigation and browser Back preserve the selected view",
+      "status": "PASS"
+    },
+    {
+      "name": "Directory search matches whole tokens and filters seven Nitnem plus three additional readers",
+      "status": "PASS"
+    },
+    {
+      "name": "Read and Saved link to the same ten native readers with separate saved-entry intent",
+      "status": "PASS"
+    },
+    {
+      "name": "Explore exposes existing source sheets and places without publishing the blocked knowledge pilot",
+      "status": "PASS"
+    },
+    {
+      "name": "Library keeps source scripture out of its directory and carries qualified-review limits",
+      "status": "PASS"
+    },
+    {
+      "name": "Every entrance fits all widths and actual 200 percent text, with actions clear of fixed navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Library visits and theme changes preserve synthetic reader data and create no learning or tracking store",
+      "status": "PASS"
+    },
+    {
+      "name": "The actual hashed worker serves every entrance and directory state without browser networking",
+      "status": "PASS"
+    },
+    {
+      "name": "All examined library behavior produced no external requests or uncaught runtime errors",
+      "status": "PASS"
+    }
+  ]
+}
