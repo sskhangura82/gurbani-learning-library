@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Leading-zero six-digit PIN roundtrip preserves exact payload",
+      "status": "PASS"
+    },
+    {
+      "name": "PIN admission is exact, string-only and preserves zeros",
+      "status": "PASS"
+    },
+    {
+      "name": "A pre-PIN envelope still decodes with its exact old passphrase",
+      "status": "PASS"
+    },
+    {
+      "name": "New sealing refuses legacy passwords and malformed PINs",
+      "status": "PASS"
+    },
+    {
+      "name": "All titles, sources and passages stay inside encryption",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong six-digit PIN fails with a generic refusal",
+      "status": "PASS"
+    },
+    {
+      "name": "Ciphertext tamper produces the same generic refusal",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent encryptions use fresh salt and IV",
+      "status": "PASS"
+    },
+    {
+      "name": "Multi-megabyte full-book payload decodes without regex stack overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Link-only source accepts only the fixed no-import notice and marker",
+      "status": "PASS"
+    },
+    {
+      "name": "Lowered KDF, different cipher and extra envelope fields refuse",
+      "status": "PASS"
+    },
+    {
+      "name": "Psychology and Sikh corpora cannot be hidden in this restricted payload",
+      "status": "PASS"
+    },
+    {
+      "name": "Unbounded, duplicate, invalid-source and unrecorded-license payloads refuse",
+      "status": "PASS"
+    },
+    {
+      "name": "PIN-file pack operation preserves leading zeros and only writes encryption",
+      "status": "PASS"
+    },
+    {
+      "name": "CLI --pin-file succeeds without logging the PIN",
+      "status": "PASS"
+    },
+    {
+      "name": "Old file-option alias accepts only PINs and cannot enable new password sealing",
+      "status": "PASS"
+    },
+    {
+      "name": "PIN files reject whitespace and extra lines without rewriting their value",
+      "status": "PASS"
+    },
+    {
+      "name": "Packing refuses to overwrite an existing encrypted output",
+      "status": "PASS"
+    },
+    {
+      "name": "Loose PIN file permissions refuse",
+      "status": "PASS"
+    },
+    {
+      "name": "Regular repositories, worktrees and symlink targets are all excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "GIT_WORK_TREE environment override cannot disguise a repository input",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid private JSON does not appear in diagnostics",
+      "status": "PASS"
+    },
+    {
+      "name": "No PIN or password command-line value is admitted or echoed",
+      "status": "PASS"
+    },
+    {
+      "name": "HTML pins the sole closed runtime executable",
+      "status": "PASS"
+    }
+  ],
+  "limits": [
+    "Synthetic builder tests; not Claude review or real-device acceptance.",
+    "No real user data or real password is exercised."
+  ]
+}

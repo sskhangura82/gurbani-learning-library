@@ -2,6 +2,7 @@
 export const FORMAT = 'glp.private-library.encrypted.v1';
 export const PAYLOAD_SCHEMA = 'glp.private-collection.v1';
 export const ITERATIONS = 600000;
+export const PIN_LENGTH = 6;
 export const MAX_PLAINTEXT_BYTES = 12 * 1024 * 1024;
 export const MAX_ENVELOPE_BYTES = 18 * 1024 * 1024;
 export const IDLE_MILLISECONDS = 5 * 60 * 1000;
@@ -9,7 +10,7 @@ export const LINK_ONLY_NOTICE = "This entry opens the publisher's reading room. 
 export const LINK_ONLY_PERMISSION = 'NO_TEXT_IMPORTED_LINK_ONLY';
 const encoder = new TextEncoder();
 const decoder = new TextDecoder('utf-8', {fatal:true});
-const refusal = () => new Error('Unable to unlock this collection. Check your passphrase and collection file.');
+const refusal = () => new Error('Unable to unlock this collection. Check your PIN and collection file.');
 const object = v => !!v && typeof v === 'object' && !Array.isArray(v) && Object.getPrototypeOf(v) === Object.prototype;
 function keys(v, expected) {
   if (!object(v) || Object.keys(v).sort().join('|') !== [...expected].sort().join('|')) throw refusal();
@@ -37,11 +38,21 @@ function unb64(value, max) {
   if (decoded.length>max || b64(decoded)!==value) throw refusal();
   return decoded;
 }
+export function validatePin(value) {
+  if (typeof value !== 'string' || value.length !== PIN_LENGTH || !/^[0-9]{6}$/.test(value)) {
+    throw new Error('Enter your six-digit PIN using digits 0–9. Keep any leading zeros.');
+  }
+  return value;
+}
+// Decode compatibility only. New sealing and the product form accept PINs only.
 export function validatePassphrase(value) {
   if (typeof value !== 'string' || value.length<24 || value.length>256 || /[\u0000-\u001f\u007f]/u.test(value) || new Set(value).size<8) {
     throw new Error('Use a strong passphrase of 24 to 256 characters, with at least eight different characters.');
   }
   return value;
+}
+function validateUnlockCredential(value) {
+  try { return validatePin(value); } catch { return validatePassphrase(value); }
 }
 export function validateCollection(value) {
   keys(value,['schema','title','editionId','works']);
@@ -77,28 +88,28 @@ export function validateEnvelope(value) {
   if(salt.length!==16||iv.length!==12||ciphertext.length<17)throw refusal();
   return {salt,iv,ciphertext};
 }
-async function derive(passphrase,salt,usage) {
-  const bytes=encoder.encode(validatePassphrase(passphrase));
+async function derive(credential,salt,usage) {
+  const bytes=encoder.encode(usage==='encrypt'?validatePin(credential):validateUnlockCredential(credential));
   try{
     const material=await globalThis.crypto.subtle.importKey('raw',bytes,'PBKDF2',false,['deriveKey']);
     return await globalThis.crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:ITERATIONS,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,[usage]);
   }finally{bytes.fill(0);}
 }
 const aad = () => encoder.encode(FORMAT);
-export async function sealCollection(value,passphrase) {
-  validateCollection(value);validatePassphrase(passphrase);
+export async function sealCollection(value,pin) {
+  validateCollection(value);validatePin(pin);
   const salt=globalThis.crypto.getRandomValues(new Uint8Array(16)),iv=globalThis.crypto.getRandomValues(new Uint8Array(12));
   const bytes=encoder.encode(JSON.stringify(value));
   try{
-    const key=await derive(passphrase,salt,'encrypt');
+    const key=await derive(pin,salt,'encrypt');
     const encrypted=await globalThis.crypto.subtle.encrypt({name:'AES-GCM',iv,tagLength:128,additionalData:aad()},key,bytes);
     return {format:FORMAT,kdf:{name:'PBKDF2',hash:'SHA-256',iterations:ITERATIONS,salt:b64(salt)},cipher:{name:'AES-GCM',iv:b64(iv),tagLength:128},ciphertext:b64(new Uint8Array(encrypted))};
   }finally{bytes.fill(0);}
 }
-export async function unlockCollection(value,passphrase) {
+export async function unlockCollection(value,credential) {
   let plain;
   try{
-    const {salt,iv,ciphertext}=validateEnvelope(value),key=await derive(passphrase,salt,'decrypt');
+    const {salt,iv,ciphertext}=validateEnvelope(value),key=await derive(credential,salt,'decrypt');
     plain=new Uint8Array(await globalThis.crypto.subtle.decrypt({name:'AES-GCM',iv,tagLength:128,additionalData:aad()},key,ciphertext));
     if(plain.length>MAX_PLAINTEXT_BYTES)throw refusal();
     return validateCollection(JSON.parse(decoder.decode(plain)));
@@ -126,7 +137,7 @@ function startReader() {
     $('work-title').textContent='';$('edition').textContent='';$('source').replaceChildren();$('passages').replaceChildren();$('page-status').textContent='';
     $('reading').hidden=true;$('unlock-panel').hidden=false;$('unlock').disabled=false;$('lock').disabled=true;
   };
-  function lock(message='Private library locked. Enter your passphrase to read.') {
+  function lock(message='Private library locked. Enter your six-digit PIN to read.') {
     generation++;request?.abort();request=null;clear();state('locked');notice(message);
   }
   function renderWork(){
@@ -163,8 +174,8 @@ function startReader() {
   }
   $('unlock-form').addEventListener('submit',async event=>{
     event.preventDefault();
-    let passphrase=$('passphrase').value;$('passphrase').value='';
-    try{validatePassphrase(passphrase);}catch(error){notice(error.message);passphrase='';return;}
+    let pin=$('passphrase').value;$('passphrase').value='';
+    try{validatePin(pin);}catch(error){notice(error.message);pin='';return;}
     const attempt=++generation;
     $('unlock').disabled=true;state('unlocking');notice('Unlocking your private collection…');
     request=new AbortController();
@@ -173,7 +184,7 @@ function startReader() {
       const response=await fetch(target,{cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:request.signal});
       if(response.status===404){if(attempt===generation){lock('Your private collection is not configured yet. The reading area is ready for an encrypted collection.');state('setup-pending');}return;}
       const envelope=await boundedEnvelope(response);
-      const opened=await unlockCollection(envelope,passphrase);
+      const opened=await unlockCollection(envelope,pin);
       if(attempt!==generation||document.hidden)return;
       collection=opened;page=0;lastActivity=performance.now();
       $('collection-title').textContent=collection.title;
@@ -183,7 +194,7 @@ function startReader() {
       $('work-title').focus();
     }catch{
       if(attempt===generation){lock(refusal().message);state('refused');}
-    }finally{passphrase='';if(attempt===generation){$('unlock').disabled=false;request=null;}}
+    }finally{pin='';if(attempt===generation){$('unlock').disabled=false;request=null;}}
   });
   $('lock').addEventListener('click',()=>{lock();$('passphrase').focus();});
   $('work-select').addEventListener('change',()=>{page=0;renderWork();});
