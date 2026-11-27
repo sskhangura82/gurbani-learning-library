@@ -1,0 +1,57 @@
+{
+  "schema": "glp.history.source-retrieval.v1",
+  "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+  "url": "https://api.banidb.com/v2/shabads/40038",
+  "retrievedAt": "2026-11-27T17:05:24.809507+00:00",
+  "httpStatus": 200,
+  "responseSha256": "82e8363539a4c43dde157defa884dffe45b1c84af1286c79736667a1258e3b36",
+  "scope": "Only original Gurmukhi fields and provider metadata were examined; no modern translation or commentary was copied into the project.",
+  "shabadId": 40038,
+  "sourceIdFromProvider": "B",
+  "sourceTitleFromProvider": "Bhai Gurdas Ji Vaaran",
+  "writerFromProvider": "Bhai Gurdaas Ji",
+  "providerPageNo": 1,
+  "providerPageCaveat": "The page value belongs to the Vaaran source. It is not an Ang of Sri Guru Granth Sahib Ji.",
+  "headingVerseId": 200333,
+  "headingCaveat": "Provider editorial heading, not counted among the eight original verse lines.",
+  "originalLineWitnesses": [
+    {
+      "verseId": 200334,
+      "unicodeSha256": "3fa8de3c80667988a45f97e219f2b0f912499e29c4ad0c582d0b027dc43a0e17"
+    },
+    {
+      "verseId": 200335,
+      "unicodeSha256": "035cab6b6b8d3275925f273cf94adcba799e824ea1122cc55eb4347a03bcad42"
+    },
+    {
+      "verseId": 200336,
+      "unicodeSha256": "44fed2ccb057fb34428ec5f0f4e2cc25cf1685fb7e49da8e00b499c58bdefd63"
+    },
+    {
+      "verseId": 200337,
+      "unicodeSha256": "2ef51fca51b514b10017068bd91b96c01322c4b2a55fe9488f1e17dc72e50d27"
+    },
+    {
+      "verseId": 200338,
+      "unicodeSha256": "44e311405b3332552ea1bf701890583bdfa8c4a4c08472f21bfe0b65b66945b1"
+    },
+    {
+      "verseId": 200339,
+      "unicodeSha256": "7251fd5792435b4d198d97795b18887b8931cbb6ecfc5bdac4b85aa2225a570c"
+    },
+    {
+      "verseId": 200340,
+      "unicodeSha256": "c1dd900a784eb99383fa2fdb9422b304127fb405e7757d242864847628029c59"
+    },
+    {
+      "verseId": 200341,
+      "unicodeSha256": "fc867f9585519bde830b8f6fc489ff021fc32d41bca67c3e44db7fecebdcee17"
+    }
+  ],
+  "limits": [
+    "One digital witness only; manuscript and print edition not supplied by the response.",
+    "Digest is a retrieval binding, not historical or textual authentication.",
+    "English account of the original still needs qualified Punjabi and historical review."
+  ],
+  "publicationAuthorized": false
+}

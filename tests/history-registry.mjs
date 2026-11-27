@@ -33,10 +33,11 @@ function conflictingAccount(registry) {
   registry.claims.push(second);
 }
 
-test('real registry is empty research metadata with no approval or historical content', () => {
+test('real registry remains research-only with no admitted human chapter', () => {
   const registry = parseRegistry(readFileSync(new URL('../content-intake/history/registry.json', import.meta.url), 'utf8'));
   assert.equal(registry.schema, SCHEMA);
-  for (const field of ['entities', 'sources', 'claims', 'relations', 'chapters']) assert.deepEqual(registry[field], []);
+  assert.equal(registry.status, 'RESEARCH_ONLY');
+  assert.deepEqual(registry.chapters, []);
   assert.throws(() => prepareChapter(registry, CHAPTER), /UNKNOWN_CHAPTER/);
 });
 
@@ -243,8 +244,10 @@ test('empty chapter and missing human narrative permission remain visible blocke
   assert.throws(() => validateRegistry(other), /MISSING_NARRATIVE_PERMISSION/);
 });
 
-test('checked-in command has no side effects and reports zero real content', () => {
+test('checked-in command reports actual research counts without admitting a chapter', () => {
   const stdout = execFileSync(process.execPath, ['tools/history/check.mjs'], {cwd: new URL('..', import.meta.url), encoding: 'utf8'});
   const summary = JSON.parse(stdout);
-  assert.equal(summary.claims, 0); assert.equal(summary.chapters, 0); assert.equal(summary.publicationAuthorized, false);
+  const registry = parseRegistry(readFileSync(new URL('../content-intake/history/registry.json', import.meta.url), 'utf8'));
+  assert.equal(summary.claims, registry.claims.length); assert.equal(summary.sources, registry.sources.length);
+  assert.equal(summary.chapters, 0); assert.equal(summary.publicationAuthorized, false);
 });
