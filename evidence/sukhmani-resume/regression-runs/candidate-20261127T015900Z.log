@@ -1,0 +1,16 @@
+{"name":"Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (320px)","status":"passed"}
+{"name":"Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (390px)","status":"passed"}
+{"name":"UI-created note and bookmark survive direct reload without a delayed line shift","status":"passed"}
+{"name":"Later manual reading restores its exact occurrence on reload; subsequent non-wheel scrolling still saves","status":"passed"}
+{"name":"Cold Back and Forward restore the saved occurrence without a Resume banner","status":"passed"}
+{"name":"Saved-list entry opens its existing dialog without moving or rewriting the saved record","status":"passed"}
+{"name":"An explicit navigation cancels pending reload alignment","status":"passed"}
+{"name":"A genuine BFCache restoration retains the live document and its viewport","status":"failed","error":"page.goBack: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"http://127.0.0.1:54847/gurbani-learning-library/sukhmani.html\"\u001b[22m\n\n    at /private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:71:585\n    at async check (/private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:70:2"}
+{"name":"No runtime errors or external requests","status":"passed"}
+{
+  "status": "failed",
+  "report": "/tmp/glp001-iphoneqa-20261126/sukhmani-resume-investigation/regression-runs/2026-11-27T01-59-00-280Z/report.json",
+  "failed": [
+    "A genuine BFCache restoration retains the live document and its viewport"
+  ]
+}

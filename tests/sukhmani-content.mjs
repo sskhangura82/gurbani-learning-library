@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
+import {READERS} from '../library/catalog.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = path => fs.readFileSync(new URL(path, root), 'utf8');
@@ -162,7 +163,20 @@ test('Source and editorial content remain separate and source attribution is ret
 });
 test('Existing library entry and offline shell include the functional reader', () => {
   assert.ok(read('index.html').includes('href="sukhmani.html"'));
-  assert.ok(read('index.html').includes('All 24 Ashtpadis'));
+  const entries=READERS.filter(entry=>entry.id==='sukhmani');
+  assert.equal(entries.length,1,'One structured Sukhmani library entrance');
+  const entry=entries[0];
+  assert.equal(entry.href,'sukhmani.html');
+  assert.equal(entry.savedHref,'sukhmani.html?learning=saved');
+  assert.equal(entry.sourceFamily,'sggs');
+  assert.match(entry.summary,/complete reading/);
+  assert.match(entry.summary,/all 24 Ashtpadis/);
+  assert.deepEqual(entry.sourceBindings,[{path:'js/sukhmani-data.js',sha256:'0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6',compositionId:'sukhmani'}]);
+  const binding=entry.sourceBindings[0];
+  assert.equal(hash(read(binding.path)),binding.sha256,'Catalogue binds the frozen original source bytes');
+  assert.ok(read(entry.href).includes('src="'+binding.path+'"'),'Linked reader loads the bound source');
+  assert.equal(source.completeComposition,true);
+  assert.deepEqual(source.ashtpadis.map(a=>a.number),Array.from({length:24},(_,i)=>i+1));
   const sw = read('sw.js');
   for (const name of ['sukhmani.html','css/sukhmani.css','js/sukhmani-reader.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js']) {
     assert.ok(sw.includes('"./'+name+'"'), name);

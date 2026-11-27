@@ -1,7 +1,7 @@
 name: Unified library and saved-entry checks
 on:
   pull_request:
-    branches: [main, feature/article-source-print-20261126]
+    branches: [main, feature/article-source-print-20261126, feature/unified-library-v1-20261126]
   workflow_dispatch:
 permissions:
   contents: read

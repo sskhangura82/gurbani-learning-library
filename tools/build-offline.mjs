@@ -19,5 +19,5 @@ for(const name of new Set([...Object.keys(previous),...additions])){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.19-unified-library-v1-20261126-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.20-reader-reliability-20261126-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

@@ -8,7 +8,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 const root=path.resolve(fileURLToPath(new URL('../',import.meta.url))),prefix='/gurbani-learning-library/';
-const report={schema:'glp.source-integrity-browser.v1',startedAtUtc:new Date().toISOString(),engine:'Chromium',checks:[],runtimeErrors:[],limitations:['Ephemeral desktop Chromium on localhost; no physical iPhone or Safari verification.','Runtime corruption is deliberately injected immediately before the production reader executes, after the original data passes SRI.','Digest-delay coverage waits on the real WebCrypto result; it does not substitute a passing digest.']};
+const report={schema:'glp.source-integrity-browser.v1',startedAtUtc:new Date().toISOString(),engine:'Chromium',checks:[],runtimeErrors:[],limitations:['Ephemeral desktop Chromium on localhost; no physical iPhone or Safari verification.','A synthetic global-assignment interceptor mutates the source object after the browser accepts the original data script under SRI, before reader verification; served HTML and pinned reader bytes are unchanged.','Digest-delay coverage waits on the real WebCrypto result; it does not substitute a passing digest.']};
 const kinds={
  japji:{html:'full-japji.html',data:'js/japji-full-data.js',reader:'js/japji-full.js',global:'GLP_FULL_JAPJI',field:'units',text:'text',root:'#continuous-reader',rows:'.scripture-line',count:385},
  sukhmani:{html:'sukhmani.html',data:'js/sukhmani-data.js',reader:'js/sukhmani-reader.js',global:'GLP_SUKHMANI',field:'ashtpadis',text:'gurmukhi',root:'#sukhmani-text',rows:'.sk-line',count:2027}
@@ -40,7 +40,20 @@ async function blocked(page,k){
  assert.deepEqual(await page.evaluate(keys=>keys.map(k=>localStorage.getItem(k)),storageKeys),storageKeys.map(()=>sentinel));
  assert.equal(await page.evaluate(()=>window.GLP_SOURCE_INTEGRITY_RECEIPT),undefined);
 }
-async function injectBeforeReader(page,k,code){await page.route('**/'+k.reader,async route=>{const original=await fs.readFile(path.join(root,k.reader),'utf8');await route.fulfill({status:200,contentType:'text/javascript; charset=utf-8',body:code+'\n'+original});});}
+async function mutateSourceAssignment(page,k,mutation){
+ await page.addInitScript(({global,field,text,mutation})=>{
+  let stored;
+  Object.defineProperty(window,global,{configurable:true,enumerable:true,get:()=>stored,set(value){
+   const unit=value[field][4],line=unit.lines[1];
+   if(mutation.type==='text'){line[text]=mutation.text;line.sha256=mutation.sha256;}
+   else if(mutation.type==='missing-unit')value[field].splice(4,1);
+   else if(mutation.type==='ang')line.ang++;
+   else if(mutation.type==='reorder')[unit.lines[0],unit.lines[1]]=[unit.lines[1],unit.lines[0]];
+   else throw Error('Unknown synthetic source mutation');
+   stored=value;window.__GLP_SOURCE_MUTATION_APPLIED__=mutation.type;
+  }});
+ },{global:k.global,field:k.field,text:k.text,mutation});
+}
 try{
  browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});report.browserVersion=browser.version();
  for(const kind of Object.keys(kinds)){
@@ -82,14 +95,14 @@ try{
    await page.waitForFunction(({key,id,note})=>{const r=JSON.parse(localStorage.getItem(key)||'{}');return r.notes?.[id]===note&&r.bookmarks?.includes(id);},{key,id,note});
    if(japji){const restored=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),retainedKey);assert.deepEqual(restored.keptAside,kept);}
   });
-  const object='window.'+kinds[kind].global,unit=object+'.'+kinds[kind].field+'[4]',line=unit+'.lines[1]',changed='ਬਦਲਿਆ ਹੋਇਆ ਪਾਠ ॥',changedHash=createHash('sha256').update(changed).digest('hex');
+  const changed='ਬਦਲਿਆ ਹੋਇਆ ਪਾਠ ॥',changedHash=createHash('sha256').update(changed).digest('hex');
   const cases=[
-   ['Changed text with matching stored hash is caught after legitimate SRI',line+'.'+kinds[kind].text+'='+JSON.stringify(changed)+';'+line+'.sha256='+JSON.stringify(changedHash)+';'],
-   ['Missing source unit is caught before render',object+'.'+kinds[kind].field+'.splice(4,1);'],
-   ['Changed Ang metadata is caught before render',line+'.ang++;'],
-   ['Reordered lines are caught before render','{const u='+unit+';[u.lines[0],u.lines[1]]=[u.lines[1],u.lines[0]];}']
+   ['Changed text with matching stored hash is caught after legitimate SRI',{type:'text',text:changed,sha256:changedHash}],
+   ['Missing source unit is caught before render',{type:'missing-unit'}],
+   ['Changed Ang metadata is caught before render',{type:'ang'}],
+   ['Reordered lines are caught before render',{type:'reorder'}]
   ];
-  for(const [name,code] of cases)await run(kind,name,async(page,context,k)=>{await seed(context);await injectBeforeReader(page,k,code);await go(page,k);await blocked(page,k);});
+  for(const [name,mutation] of cases)await run(kind,name,async(page,context,k)=>{await seed(context);await mutateSourceAssignment(page,k,mutation);await go(page,k);assert.equal(await page.evaluate(()=>window.__GLP_SOURCE_MUTATION_APPLIED__),mutation.type);await blocked(page,k);});
  }
  if(report.runtimeErrors.length)report.checks.push({name:'No uncaught runtime errors',status:'failed',errors:report.runtimeErrors});
 }catch(e){report.setupError=e.stack||String(e);}finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));report.completedAtUtc=new Date().toISOString();report.status=report.setupError||report.checks.some(x=>x.status!=='passed')?'FAIL':'PASS';await fs.writeFile(path.join(root,'evidence/source-integrity-browser-verification.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({status:report.status,passed:report.checks.filter(x=>x.status==='passed').length,failed:report.checks.filter(x=>x.status!=='passed').length,setupError:report.setupError||null},null,2));if(report.status!=='PASS')process.exitCode=1;}

@@ -43,6 +43,17 @@ const sourceRows=lines.map(l=>({id:l.id,text:l.gurmukhi,ang:String(l.ang)}));
 const sourceSnapshot=page=>page.locator('#sukhmani-text .sk-line').evaluateAll(rows=>rows.map(r=>({id:r.dataset.lineId,text:r.querySelector('p.tuk').textContent,ang:r.dataset.ang})));
 const state=page=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)),KEY);
 const raw=page=>page.evaluate(key=>localStorage.getItem(key),KEY);
+async function expectRestored(page,id){
+ await page.waitForFunction(count=>document.querySelectorAll('#sukhmani-text .sk-line').length===count,lines.length);
+ await page.evaluate(()=>document.fonts.ready);
+ await page.waitForTimeout(450); // Observe after the reader's 200 ms scroll debounce.
+ assert.equal((await state(page)).read,id,'Settled saved occurrence');
+ assert.equal(await page.locator('.sk-line[data-current="true"]').getAttribute('id'),id);
+ const rect=await page.locator(lineSelector(id)).evaluate(n=>({top:n.getBoundingClientRect().top,bottom:n.getBoundingClientRect().bottom}));
+ assert.ok(rect.top>=-1&&rect.top<65&&rect.bottom>34,'Restored source occurrence must remain visible: '+JSON.stringify(rect));
+ assert.equal(await page.locator('#resume-notice').isVisible(),false,'Reload restores directly; fresh navigation offers Resume');
+}
+
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.webmanifest':'application/manifest+json','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml'};
 const server=http.createServer(async(req,res)=>{
  try{
@@ -194,7 +205,7 @@ try{
     assert.equal(await page.locator('#sk-bookmark').getAttribute('aria-pressed'),String(marked));
    }
    await closeDialog(page);
-   await page.reload();await page.locator('#resume-reading').waitFor();await page.locator('#resume-reading').click();
+   await page.reload();await expectRestored(page,firstStudyLine.id);
    const s=await state(page);assert.equal(s.notes[firstStudyLine.id],note);assert.ok(s.bookmarks.includes(firstStudyLine.id));assert.equal(s.read,firstStudyLine.id);assert.equal(await page.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
    await openLine(page,firstStudyLine.id);assert.equal(await page.locator('#sk-bookmark').textContent(),'Remove bookmark');assert.equal(await page.locator('#sk-bookmark').getAttribute('aria-pressed'),'true');await closeDialog(page);
   });
@@ -248,7 +259,7 @@ try{
    for(const id of legacyExport.state.bookmarks)assert.ok(after.bookmarks.includes(id));
    for(const key of ['version','guide','hasGuided','mode','theme','size','pace','pronunciation'])assert.equal(after[key],before[key]);
    assert.equal(await legacyPage.evaluate(key=>localStorage.getItem(key),JAPJI),sentinel);
-   await closeDialog(legacyPage);await legacyPage.reload();await legacyPage.locator('#resume-reading').click();await legacyPage.waitForFunction(id=>document.querySelector('.sk-line[data-current="true"]')?.id===id,target.id);assert.equal((await state(legacyPage)).notes[target.id],after.notes[target.id]);
+   await closeDialog(legacyPage);await legacyPage.reload();await expectRestored(legacyPage,target.id);assert.equal((await state(legacyPage)).notes[target.id],after.notes[target.id]);
   });
  }catch(e){checks.push({name:legacyLabel+' compatibility scenario setup or execution',status:'failed',error:e.stack||String(e)});await diagnostic(legacyPage,'failure-setup-'+legacyLabel.replaceAll(' ','-')+'-compatibility');}finally{await legacyContext?.close();}
 

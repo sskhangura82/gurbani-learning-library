@@ -1,0 +1,302 @@
+TAP version 13
+# Subtest: japji: unchanged published fixture passes every line and full-object check
+ok 1 - japji: unchanged published fixture passes every line and full-object check
+  ---
+  duration_ms: 14.373209
+  type: 'test'
+  ...
+# Subtest: japji: text and matching forged stored hash still fail the frozen object digest
+ok 2 - japji: text and matching forged stored hash still fail the frozen object digest
+  ---
+  duration_ms: 6.745042
+  type: 'test'
+  ...
+# Subtest: japji: altered text with the old stored hash fails the per-line digest
+ok 3 - japji: altered text with the old stored hash fails the per-line digest
+  ---
+  duration_ms: 7.958166
+  type: 'test'
+  ...
+# Subtest: japji: a stored hash cannot be changed independently
+ok 4 - japji: a stored hash cannot be changed independently
+  ---
+  duration_ms: 5.600834
+  type: 'test'
+  ...
+# Subtest: japji: deleting a line fails, even if declared counts are reduced
+ok 5 - japji: deleting a line fails, even if declared counts are reduced
+  ---
+  duration_ms: 1.915375
+  type: 'test'
+  ...
+# Subtest: japji: duplicate replacement preserves count but fails identity
+ok 6 - japji: duplicate replacement preserves count but fails identity
+  ---
+  duration_ms: 1.776125
+  type: 'test'
+  ...
+# Subtest: japji: reordered lines fail before rendering
+ok 7 - japji: reordered lines fail before rendering
+  ---
+  duration_ms: 1.411958
+  type: 'test'
+  ...
+# Subtest: japji: missing complete unit fails
+ok 8 - japji: missing complete unit fails
+  ---
+  duration_ms: 1.508667
+  type: 'test'
+  ...
+# Subtest: japji: reordered complete units fail
+ok 9 - japji: reordered complete units fail
+  ---
+  duration_ms: 1.333833
+  type: 'test'
+  ...
+# Subtest: japji: modified unit identifier fails
+ok 10 - japji: modified unit identifier fails
+  ---
+  duration_ms: 1.610792
+  type: 'test'
+  ...
+# Subtest: japji: exact per-line Ang is required
+ok 11 - japji: exact per-line Ang is required
+  ---
+  duration_ms: 1.179542
+  type: 'test'
+  ...
+# Subtest: japji: exact source-line location is required
+ok 12 - japji: exact source-line location is required
+  ---
+  duration_ms: 1.722542
+  type: 'test'
+  ...
+# Subtest: japji: exact unit Ang list is required
+ok 13 - japji: exact unit Ang list is required
+  ---
+  duration_ms: 1.119708
+  type: 'test'
+  ...
+# Subtest: japji: non-text metadata is included in the frozen object digest
+ok 14 - japji: non-text metadata is included in the frozen object digest
+  ---
+  duration_ms: 8.923875
+  type: 'test'
+  ...
+# Subtest: japji: adding metadata also fails the whole-object contract
+ok 15 - japji: adding metadata also fails the whole-object contract
+  ---
+  duration_ms: 7.78625
+  type: 'test'
+  ...
+# Subtest: japji: object key insertion order does not change the documented canonical digest
+ok 16 - japji: object key insertion order does not change the documented canonical digest
+  ---
+  duration_ms: 8.980583
+  type: 'test'
+  ...
+# Subtest: japji: data is frozen synchronously before WebCrypto yields
+ok 17 - japji: data is frozen synchronously before WebCrypto yields
+  ---
+  duration_ms: 5.438375
+  type: 'test'
+  ...
+# Subtest: japji: whole-file SRI pins both source and verifier before the reader script
+ok 18 - japji: whole-file SRI pins both source and verifier before the reader script
+  ---
+  duration_ms: 0.705333
+  type: 'test'
+  ...
+# Subtest: japji: actual reader blocks a forged source before model, DOM scripture or storage access
+ok 19 - japji: actual reader blocks a forged source before model, DOM scripture or storage access
+  ---
+  duration_ms: 7.583958
+  type: 'test'
+  ...
+# Subtest: sukhmani: unchanged published fixture passes every line and full-object check
+ok 20 - sukhmani: unchanged published fixture passes every line and full-object check
+  ---
+  duration_ms: 53.275666
+  type: 'test'
+  ...
+# Subtest: sukhmani: text and matching forged stored hash still fail the frozen object digest
+ok 21 - sukhmani: text and matching forged stored hash still fail the frozen object digest
+  ---
+  duration_ms: 42.416875
+  type: 'test'
+  ...
+# Subtest: sukhmani: altered text with the old stored hash fails the per-line digest
+ok 22 - sukhmani: altered text with the old stored hash fails the per-line digest
+  ---
+  duration_ms: 38.74875
+  type: 'test'
+  ...
+# Subtest: sukhmani: a stored hash cannot be changed independently
+ok 23 - sukhmani: a stored hash cannot be changed independently
+  ---
+  duration_ms: 47.725875
+  type: 'test'
+  ...
+# Subtest: sukhmani: deleting a line fails, even if declared counts are reduced
+ok 24 - sukhmani: deleting a line fails, even if declared counts are reduced
+  ---
+  duration_ms: 16.587208
+  type: 'test'
+  ...
+# Subtest: sukhmani: duplicate replacement preserves count but fails identity
+ok 25 - sukhmani: duplicate replacement preserves count but fails identity
+  ---
+  duration_ms: 15.63675
+  type: 'test'
+  ...
+# Subtest: sukhmani: reordered lines fail before rendering
+ok 26 - sukhmani: reordered lines fail before rendering
+  ---
+  duration_ms: 12.331
+  type: 'test'
+  ...
+# Subtest: sukhmani: missing complete unit fails
+ok 27 - sukhmani: missing complete unit fails
+  ---
+  duration_ms: 11.43425
+  type: 'test'
+  ...
+# Subtest: sukhmani: reordered complete units fail
+ok 28 - sukhmani: reordered complete units fail
+  ---
+  duration_ms: 13.198584
+  type: 'test'
+  ...
+# Subtest: sukhmani: modified unit identifier fails
+ok 29 - sukhmani: modified unit identifier fails
+  ---
+  duration_ms: 12.344958
+  type: 'test'
+  ...
+# Subtest: sukhmani: exact per-line Ang is required
+ok 30 - sukhmani: exact per-line Ang is required
+  ---
+  duration_ms: 12.030875
+  type: 'test'
+  ...
+# Subtest: sukhmani: exact source-line location is required
+ok 31 - sukhmani: exact source-line location is required
+  ---
+  duration_ms: 12.127875
+  type: 'test'
+  ...
+# Subtest: sukhmani: exact unit Ang list is required
+ok 32 - sukhmani: exact unit Ang list is required
+  ---
+  duration_ms: 13.254167
+  type: 'test'
+  ...
+# Subtest: sukhmani: non-text metadata is included in the frozen object digest
+ok 33 - sukhmani: non-text metadata is included in the frozen object digest
+  ---
+  duration_ms: 45.730375
+  type: 'test'
+  ...
+# Subtest: sukhmani: adding metadata also fails the whole-object contract
+ok 34 - sukhmani: adding metadata also fails the whole-object contract
+  ---
+  duration_ms: 37.852583
+  type: 'test'
+  ...
+# Subtest: sukhmani: object key insertion order does not change the documented canonical digest
+ok 35 - sukhmani: object key insertion order does not change the documented canonical digest
+  ---
+  duration_ms: 41.427209
+  type: 'test'
+  ...
+# Subtest: sukhmani: data is frozen synchronously before WebCrypto yields
+ok 36 - sukhmani: data is frozen synchronously before WebCrypto yields
+  ---
+  duration_ms: 44.324291
+  type: 'test'
+  ...
+# Subtest: sukhmani: whole-file SRI pins both source and verifier before the reader script
+ok 37 - sukhmani: whole-file SRI pins both source and verifier before the reader script
+  ---
+  duration_ms: 2.882291
+  type: 'test'
+  ...
+# Subtest: sukhmani: actual reader blocks a forged source before model, DOM scripture or storage access
+not ok 38 - sukhmani: actual reader blocks a forged source before model, DOM scripture or storage access
+  ---
+  duration_ms: 39.590875
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/source-integrity.mjs:83:2'
+  failureType: 'unhandledRejection'
+  error: 'window.addEventListener is not a function'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    evalmachine.<anonymous>:5:98
+    new Promise (<anonymous>)
+    evalmachine.<anonymous>:5:18
+    evalmachine.<anonymous>:248:3
+    Script.runInContext (node:vm:149:12)
+    Script.runInNewContext (node:vm:154:17)
+    Object.runInNewContext (node:vm:310:38)
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/source-integrity.mjs:90:60)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+  ...
+# Subtest: Sukhmani contiguous source sequence is required independently of line IDs
+ok 39 - Sukhmani contiguous source sequence is required independently of line IDs
+  ---
+  duration_ms: 15.3955
+  type: 'test'
+  ...
+# Subtest: Sukhmani source identifier alteration is included in the object digest
+ok 40 - Sukhmani source identifier alteration is included in the object digest
+  ---
+  duration_ms: 48.208542
+  type: 'test'
+  ...
+# Subtest: Sukhmani source approval metadata cannot change unnoticed
+ok 41 - Sukhmani source approval metadata cannot change unnoticed
+  ---
+  duration_ms: 37.249833
+  type: 'test'
+  ...
+# Subtest: Accessor source values are rejected without invoking their getters
+ok 42 - Accessor source values are rejected without invoking their getters
+  ---
+  duration_ms: 0.62175
+  type: 'test'
+  ...
+# Subtest: Sparse arrays, cycles and non-JSON values fail closed
+ok 43 - Sparse arrays, cycles and non-JSON values fail closed
+  ---
+  duration_ms: 1.171
+  type: 'test'
+  ...
+# Subtest: Frozen expected manifest cannot be overwritten to bless altered data
+ok 44 - Frozen expected manifest cannot be overwritten to bless altered data
+  ---
+  duration_ms: 0.064167
+  type: 'test'
+  ...
+# Subtest: Unavailable WebCrypto fails closed
+ok 45 - Unavailable WebCrypto fails closed
+  ---
+  duration_ms: 1.609042
+  type: 'test'
+  ...
+# Subtest: Unsupported composition has no automatic trust fallback
+ok 46 - Unsupported composition has no automatic trust fallback
+  ---
+  duration_ms: 0.056792
+  type: 'test'
+  ...
+1..46
+# tests 46
+# suites 0
+# pass 45
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 762.717167

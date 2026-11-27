@@ -1,0 +1,24 @@
+{
+  "startedAtUtc": "2026-11-27T01:41:20.181539+00:00",
+  "scope": "Reader-page script attributes only; no source or teaching bytes changed",
+  "runs": [
+    {
+      "mode": "--check",
+      "exit": 1,
+      "stdout": "{\"status\":\"NEEDS_REFRESH\",\"mode\":\"check\",\"pages\":5,\"scriptOccurrences\":36,\"changedPages\":[\"nitnem/index.html\",\"full-japji.html\",\"sukhmani.html\"],\"scope\":\"Five reader pages only; trusted HTML, worker and library module graph remain outside this check.\"}\n",
+      "stderr": ""
+    },
+    {
+      "mode": "--write",
+      "exit": 0,
+      "stdout": "{\"status\":\"PASS\",\"mode\":\"write\",\"pages\":5,\"scriptOccurrences\":36,\"changedPages\":[\"nitnem/index.html\",\"full-japji.html\",\"sukhmani.html\"],\"scope\":\"Five reader pages only; trusted HTML, worker and library module graph remain outside this check.\"}\n",
+      "stderr": ""
+    },
+    {
+      "mode": "--check",
+      "exit": 0,
+      "stdout": "{\"status\":\"PASS\",\"mode\":\"check\",\"pages\":5,\"scriptOccurrences\":36,\"changedPages\":[],\"scope\":\"Five reader pages only; trusted HTML, worker and library module graph remain outside this check.\"}\n",
+      "stderr": ""
+    }
+  ]
+}

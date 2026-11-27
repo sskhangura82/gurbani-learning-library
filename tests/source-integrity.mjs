@@ -84,9 +84,12 @@ for(const kind of Object.keys(fixed)){
   const d=source(kind),l=units(kind,d)[4].lines[1];l[textKey(kind)]='ਬਦਲਿਆ ਹੋਇਆ ਪਾਠ ॥';l.sha256=sha(l[textKey(kind)]);
   const nodes=new Map(),make=()=>({dataset:{},textContent:'',hidden:false,disabled:false,attributes:{},setAttribute(k,v){this.attributes[k]=v;},replaceChildren(...children){this.children=children;this.textContent=children.map(x=>x.textContent||'').join('');},append(...children){this.children=[...(this.children||[]),...children];},addEventListener(name,fn){(this.listeners??={})[name]=fn;}});
   const get=id=>{if(!nodes.has(id))nodes.set(id,make());return nodes.get(id);},controls=[make(),make()],footer=make();let modelCalls=0,storageCalls=0;
-  const window={[fixed[kind].global]:d,GLPSourceIntegrity:I,GLPContinuousCore:{flatten(){modelCalls++;throw Error('Model must not run');}},GLP_SUKHMANI_LEARNING:{model(){modelCalls++;throw Error('Model must not run');}}};
+  // The reader registers lifecycle listeners before asynchronous verification.
+  // A real EventTarget preserves once/listener semantics without running the model.
+  const lifecycle=new EventTarget();
+  const window={[fixed[kind].global]:d,GLPSourceIntegrity:I,GLPContinuousCore:{flatten(){modelCalls++;throw Error('Model must not run');}},GLP_SUKHMANI_LEARNING:{model(){modelCalls++;throw Error('Model must not run');}},addEventListener:lifecycle.addEventListener.bind(lifecycle),removeEventListener:lifecycle.removeEventListener.bind(lifecycle),dispatchEvent:lifecycle.dispatchEvent.bind(lifecycle)};
   Object.defineProperty(window,'localStorage',{get(){storageCalls++;throw Error('Storage must not be accessed');}});
-  const document={getElementById:get,querySelectorAll(){return controls;},querySelector(){return footer;},createElement(){return make();}};
+  const document={readyState:'loading',getElementById:get,querySelectorAll(){return controls;},querySelector(){return footer;},createElement(){return make();}};
   const history={scrollRestoration:'auto'};const result=vm.runInNewContext(read(fixed[kind].reader),{window,document,history,console});await result;
   assert.equal(get(fixed[kind].element).dataset.sourceIntegrity,'failed');assert.match(get(fixed[kind].element).textContent,/has not been displayed/);assert.equal(modelCalls,0);assert.equal(storageCalls,0);assert.ok(controls.every(x=>x.disabled));assert.ok(footer.hidden);const recover=get(fixed[kind].element).children.at(-1);const backup=recover.children.find(n=>n.id==='source-failure-export'||n.attributes.id==='source-failure-export');assert.ok(backup);assert.equal(backup.disabled,false);assert.equal(typeof backup.listeners.click,'function');assert.equal(window.GLP_SOURCE_INTEGRITY_RECEIPT,undefined);
  });

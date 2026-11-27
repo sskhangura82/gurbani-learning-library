@@ -1,0 +1,11 @@
+{
+  "name": "sri-static",
+  "command": [
+    "node",
+    "--test",
+    "tests/reader-sri.mjs"
+  ],
+  "exit": 0,
+  "stdout": "TAP version 13\n# Subtest: All 36 ordered classic reader script occurrences have exact file pins and anonymous CORS\nok 1 - All 36 ordered classic reader script occurrences have exact file pins and anonymous CORS\n  ---\n  duration_ms: 10.703333\n  type: 'test'\n  ...\n# Subtest: Pinning changes no reader markup, source wording or script order beyond integrity attributes\nok 2 - Pinning changes no reader markup, source wording or script order beyond integrity attributes\n  ---\n  duration_ms: 66.3895\n  type: 'test'\n  ...\n# Subtest: Check mode reproduces all pins without writing page bytes\nok 3 - Check mode reproduces all pins without writing page bytes\n  ---\n  duration_ms: 7.918\n  type: 'test'\n  ...\n# Subtest: The generator refuses missing, extra, inline, module and reordered script inventories\nok 4 - The generator refuses missing, extra, inline, module and reordered script inventories\n  ---\n  duration_ms: 0.880917\n  type: 'test'\n  ...\n# Subtest: The generator cannot refresh a changed frozen source or verifier into acceptance\nok 5 - The generator cannot refresh a changed frozen source or verifier into acceptance\n  ---\n  duration_ms: 1.689625\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 120.1865\n",
+  "stderr": ""
+}

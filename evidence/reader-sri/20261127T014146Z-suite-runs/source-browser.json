@@ -1,0 +1,10 @@
+{
+  "name": "source-browser",
+  "command": [
+    "node",
+    "tests/source-integrity-browser.mjs"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"passed\": 18,\n  \"failed\": 0,\n  \"setupError\": null\n}\n",
+  "stderr": ""
+}
