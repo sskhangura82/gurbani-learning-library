@@ -1,6 +1,8 @@
 /* Source nodes stay mounted. Teaching and browser-owned learning are separate. */
 (async()=>{
  'use strict';
+ // Register before asynchronous source verification so a fast pageshow is not missed.
+ const pageShown=new Promise(resolve=>{if(document.readyState==='complete')resolve();else window.addEventListener('pageshow',resolve,{once:true});});
  const $=id=>document.getElementById(id),L=window.GLP_SUKHMANI_LEARNING,pack=window.GLP_SUKHMANI,teaching=window.GLP_SUKHMANI_TEACHING||{};
  const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e;};
  const button=(text,fn,attrs={})=>{const b=el('button',text);b.type='button';for(const [k,v]of Object.entries(attrs))b.setAttribute(k,v);b.addEventListener('click',fn);return b;};
@@ -39,7 +41,27 @@
  let state=L.seed(m),storage=null,shared=null,writable=false,originalRaw=null,loadError='',pending=Promise.resolve(true),scrollTimer=null,guideTimer=null,playing=false,internalScroll=false,lastActive=null,editorLease=null,editor=null,returnFocus=null,dialogGeneration=0;
  const nodes=new Map(),units=new Map(),unitLines=new Map(),meanings=teaching.meanings||{},lessons=teaching.ashtpadis||{},dialog=$('sk-dialog'),body=$('sk-dialog-body');
  try{storage=window.localStorage;originalRaw=storage.getItem(L.KEY);state=L.read(m,storage);shared=window.GLP_SHARED_LEARNING.create({storage,locks:navigator.locks,key:L.KEY,normalise:s=>L.normalise(m,s),seed:L.seed(m)});writable=shared.supported;if(!writable)loadError='Safe saving is unavailable in this browser. You can read and download Sukhmani learning for this session.';}catch(e){loadError=e.message;}
- const initialRead=state.read;
+ const initialRead=state.read,learningEntry=new URL(location.href).searchParams.getAll('learning');
+ const savedEntry=learningEntry.length===1&&learningEntry[0]==='saved';
+ const navigationType=performance.getEntriesByType('navigation')[0]?.type;
+ // Fresh visits retain the optional Resume action. Reload and cold history
+ // traversal restore the saved occurrence after browser restoration and layout.
+ // Explicit passage links and the Saved-list intent retain their own behavior.
+ let initialRestorePending=originalRaw!==null&&!loadError&&!savedEntry&&!location.hash&&['reload','back_forward'].includes(navigationType),scrollGeneration=0;
+ function cancelInitialRestore(){initialRestorePending=false;}
+ function cancelCapture(){clearTimeout(scrollTimer);scrollTimer=null;}
+ function positionScroll(fn){
+  cancelCapture();const generation=++scrollGeneration;internalScroll=true;fn();
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{if(generation===scrollGeneration)internalScroll=false;}));
+ }
+ async function restoreInitialPlace(){
+  await pageShown;await document.fonts?.ready;
+  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  if(!initialRestorePending)return;
+  initialRestorePending=false;
+  // Alignment is not a reading action: it must not rewrite the saved record.
+  positionScroll(()=>nodes.get(initialRead).scrollIntoView({block:'start',behavior:'instant'}));
+ }
  function warn(text){$('storage-warning').hidden=false;$('storage-warning').textContent=text;}
  if(loadError)warn(loadError);
  function locationLabel(line){return 'Ashtpadi '+line.ashtpadi+' · '+(line.unitId?.endsWith('.salok')||line.kind==='salok'?'Salok':line.pauri?'Pauri '+line.pauri:line.kind==='rahau'?'Rahau':'Opening');}
@@ -130,18 +152,26 @@
   pending=pending.then(async()=>{try{const s=await shared.save(snapshot,edits);state.notes=s.notes;state.bookmarks=s.bookmarks;syncMarks();return true;}catch(e){writable=false;warn(e.message+' Download Sukhmani learning to keep your current session.');return false;}});return pending;
  }
  function capture(){let best=nodes.get(state.read);let distance=Infinity;for(const row of nodes.values()){const r=row.getBoundingClientRect();if(r.bottom<12)continue;const d=Math.abs(r.top-28);if(d<distance){best=row;distance=d;}if(r.top>window.innerHeight)break;}return best?{id:best.id,top:best.getBoundingClientRect().top}:null;}
- function maintainAnchor(fn){const anchor=capture();fn();if(anchor&&nodes.has(anchor.id)){internalScroll=true;window.scrollBy({top:nodes.get(anchor.id).getBoundingClientRect().top-anchor.top,behavior:'instant'});requestAnimationFrame(()=>{internalScroll=false;});}}
+ function maintainAnchor(fn){cancelInitialRestore();const anchor=capture();positionScroll(()=>{fn();if(anchor&&nodes.has(anchor.id))window.scrollBy({top:nodes.get(anchor.id).getBoundingClientRect().top-anchor.top,behavior:'instant'});});}
  function setMode(mode){if(!['read','understand','study'].includes(mode))return;if(mode==='study')pause();maintainAnchor(()=>{state.mode=mode;appearance();});save({preferences:{mode}});announce(mode==='read'?'Gurmukhi reading.':mode==='understand'?'English and Punjabi explanation drafts.':'Study drafts are now shown after each passage.');}
- function jump(id,focus=false){if(!nodes.has(id))return;pause();current(id);state.guide=id;internalScroll=true;nodes.get(id).scrollIntoView({block:'start',behavior:'auto'});if(focus)nodes.get(id).querySelector('.tuk').focus({preventScroll:true});requestAnimationFrame(()=>{internalScroll=false;});save();$('resume-notice').hidden=true;}
+ function jump(id,focus=false){
+  if(!nodes.has(id))return;cancelInitialRestore();pause();current(id);state.guide=id;
+  positionScroll(()=>{
+   // Removing this in-flow notice after aligning moves the chosen line offscreen.
+   $('resume-notice').hidden=true;
+   nodes.get(id).scrollIntoView({block:'start',behavior:'instant'});
+   if(focus)nodes.get(id).querySelector('.tuk').focus({preventScroll:true});
+  });save();
+ }
  function pause(){playing=false;clearTimeout(guideTimer);guideTimer=null;$('sk-play').textContent='▶';$('sk-play').setAttribute('aria-pressed','false');$('sk-play').setAttribute('aria-label','Start silent line guide');}
- function tick(){if(!playing)return;const index=m.lines.findIndex(l=>l.id===state.guide);if(index<0){pause();return;}const line=m.lines[index];current(line.id);state.hasGuided=true;internalScroll=true;nodes.get(line.id).scrollIntoView({block:'center',behavior:'auto'});requestAnimationFrame(()=>{internalScroll=false;});save();const delay=Math.max(1600,line.gurmukhi.split(/\s+/).length*60000/state.pace);guideTimer=setTimeout(()=>{if(!playing)return;if(index+1===m.lines.length){pause();announce('Reached the end of Ashtpadi '+lastAshtpadi+'. '+remainingScope);return;}state.guide=m.lines[index+1].id;tick();},delay);}
+ function tick(){if(!playing)return;const index=m.lines.findIndex(l=>l.id===state.guide);if(index<0){pause();return;}const line=m.lines[index];cancelInitialRestore();current(line.id);state.hasGuided=true;positionScroll(()=>nodes.get(line.id).scrollIntoView({block:'center',behavior:'instant'}));save();const delay=Math.max(1600,line.gurmukhi.split(/\s+/).length*60000/state.pace);guideTimer=setTimeout(()=>{if(!playing)return;if(index+1===m.lines.length){pause();announce('Reached the end of Ashtpadi '+lastAshtpadi+'. '+remainingScope);return;}state.guide=m.lines[index+1].id;tick();},delay);}
  function toggleGuide(){if(playing){pause();announce('Silent guide paused.');return;}if(state.mode==='study')setMode('read');state.guide=state.read;playing=true;$('sk-play').textContent='Ⅱ';$('sk-play').setAttribute('aria-pressed','true');$('sk-play').setAttribute('aria-label','Pause silent line guide');announce('Silent visual guide started. It is not synchronized to a recording.');tick();}
  async function releaseEditor(saveDraft=true){
   if(editor&&saveDraft&&editor.input.value!==editor.original){const value=editor.input.value;state.notes[editor.id]=value;await save({notes:{[editor.id]:value}});}
   editor=null;if(editorLease){editorLease.release();editorLease=null;}
  }
  async function openDialog(title,kicker='SUKHMANI SAHIB'){
-  pause();const generation=++dialogGeneration;await releaseEditor();returnFocus=document.activeElement;body.replaceChildren();$('sk-dialog-title').textContent=title;$('sk-dialog-kicker').textContent=kicker;if(!dialog.open)dialog.showModal();return generation;
+  cancelInitialRestore();cancelCapture();pause();const generation=++dialogGeneration;await releaseEditor();returnFocus=document.activeElement;body.replaceChildren();$('sk-dialog-title').textContent=title;$('sk-dialog-kicker').textContent=kicker;if(!dialog.open)dialog.showModal();return generation;
  }
  async function closeDialog(){++dialogGeneration;await releaseEditor();dialog.close();if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
  function plainNote(text){return el('p',text,'sk-reader-note');}
@@ -191,19 +221,31 @@
   body.append(el('h3','Your privacy','sk-section-title'),plainNote('Bookmarks, reading place and reflections stay in this browser. No account or analytics is used. Sukhmani exports contain only Sukhmani learning; the existing Japji record is not changed.'),el('h3','Silent visual guide','sk-section-title'),plainNote('The guide advances at an illustrative pace. It has no audio and is not synchronized to any recitation. It pauses when this page is hidden or you begin scrolling manually.'));
  }
  render();appearance();current(state.read);syncMarks();
- if(initialRead!==m.lines[0].id){$('resume-notice').hidden=false;$('resume-label').textContent='Saved place: '+sourceNotes(m.byId.get(initialRead));}
- $('resume-reading').addEventListener('click',()=>jump(initialRead,true));$('dismiss-resume').addEventListener('click',()=>{$('resume-notice').hidden=true;});
+ if(!initialRestorePending&&initialRead!==m.lines[0].id){$('resume-notice').hidden=false;$('resume-label').textContent='Saved place: '+sourceNotes(m.byId.get(initialRead));}
+ $('resume-reading').addEventListener('click',()=>jump(initialRead,true));$('dismiss-resume').addEventListener('click',()=>maintainAnchor(()=>{$('resume-notice').hidden=true;}));
  $('sk-play').addEventListener('click',toggleGuide);$('sk-position').addEventListener('click',openJump);$('sk-tools').addEventListener('click',openTools);$('sources-open').addEventListener('click',openSources);$('sources-footer').addEventListener('click',openSources);$('back-start').addEventListener('click',()=>jump(m.lines[0].id,true));$('sk-dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('cancel',e=>{e.preventDefault();closeDialog();});
  for(const b of document.querySelectorAll('.modes button'))b.addEventListener('click',()=>setMode(b.dataset.depth));
- window.addEventListener('scroll',()=>{if(internalScroll||dialog.open)return;clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{const a=capture();if(a){current(a.id);save();}},200);},{passive:true});
- window.addEventListener('wheel',()=>{if(playing)pause();},{passive:true});window.addEventListener('touchstart',e=>{if(playing&&!e.target.closest('.reading-dock'))pause();},{passive:true});
- document.addEventListener('keydown',e=>{if(playing&&['PageDown','PageUp','Home','End','ArrowDown','ArrowUp',' '].includes(e.key)&&!e.target.closest('button,a,input,textarea,select,dialog,[role="button"]'))pause();});
+ window.addEventListener('scroll',()=>{
+  if(initialRestorePending||internalScroll||dialog.open)return;
+  cancelCapture();const generation=scrollGeneration;
+  scrollTimer=setTimeout(()=>{
+   scrollTimer=null;
+   // A timer queued before a jump or dialog must not later replace its place.
+   if(initialRestorePending||internalScroll||dialog.open||generation!==scrollGeneration)return;
+   const a=capture();if(a){current(a.id);save();}
+  },200);
+ },{passive:true});
+ // A deliberate navigation during delayed layout wins over the initial restore.
+ // These only cancel initialization; all later scroll sources still persist.
+ window.addEventListener('wheel',()=>{cancelInitialRestore();if(playing)pause();},{passive:true});
+ window.addEventListener('touchstart',e=>{if(!e.target.closest('.reading-dock')){cancelInitialRestore();if(playing)pause();}},{passive:true});
+ document.addEventListener('keydown',e=>{if(['PageDown','PageUp','Home','End','ArrowDown','ArrowUp',' '].includes(e.key)&&!e.target.closest('button,a,input,textarea,select,dialog,[role="button"]')){cancelInitialRestore();if(playing)pause();}});
  document.addEventListener('visibilitychange',()=>{if(document.hidden){pause();save();}});
  window.addEventListener('storage',e=>{if(e.key!==L.KEY||!writable)return;try{const latest=L.read(m,storage);state.notes=latest.notes;state.bookmarks=latest.bookmarks;syncMarks();}catch(e){writable=false;warn(e.message);}});
- window.addEventListener('pagehide',()=>{pause();});
+ window.addEventListener('pagehide',()=>{cancelInitialRestore();pause();});
  window.GLP_BEFORE_UPDATE=async()=>{await releaseEditor();return await save();};
  // The library enters the existing Saved list; it does not select a line.
  // This is intentionally after the source-refusal return and reader setup.
- const learningEntry=new URL(location.href).searchParams.getAll('learning');
- if(learningEntry.length===1&&learningEntry[0]==='saved'&&!loadError)await openSaved();
+ if(savedEntry&&!loadError)await openSaved();
+ else if(initialRestorePending)restoreInitialPlace();
 })();

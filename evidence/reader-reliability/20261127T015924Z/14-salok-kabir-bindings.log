@@ -1,0 +1,454 @@
+TAP version 13
+# Subtest: Resolves two complete Saloks from the existing canonical files, with exact Unicode and whitespace
+ok 1 - Resolves two complete Saloks from the existing canonical files, with exact Unicode and whitespace
+  ---
+  duration_ms: 24.916125
+  type: 'test'
+  ...
+# Subtest: One fixed loader call per complete source package; no editorial URL or path reaches the loader
+ok 2 - One fixed loader call per complete source package; no editorial URL or path reaches the loader
+  ---
+  duration_ms: 17.823292
+  type: 'test'
+  ...
+# Subtest: No Ang inference, borrowed Raag, claimed Kabir authorship or rights approval enters the display view
+ok 3 - No Ang inference, borrowed Raag, claimed Kabir authorship or rights approval enters the display view
+  ---
+  duration_ms: 14.202167
+  type: 'test'
+  ...
+# Subtest: Refuses unknown article identity before rendering or source loading
+ok 4 - Refuses unknown article identity before rendering or source loading
+  ---
+  duration_ms: 0.256916
+  type: 'test'
+  ...
+# Subtest: Refuses duplicate article identity before rendering or source loading
+ok 5 - Refuses duplicate article identity before rendering or source loading
+  ---
+  duration_ms: 0.150208
+  type: 'test'
+  ...
+# Subtest: Refuses scripture heading as editorial title before rendering or source loading
+ok 6 - Refuses scripture heading as editorial title before rendering or source loading
+  ---
+  duration_ms: 0.0655
+  type: 'test'
+  ...
+# Subtest: Refuses invisible-mark heading title before rendering or source loading
+ok 7 - Refuses invisible-mark heading title before rendering or source loading
+  ---
+  duration_ms: 0.093417
+  type: 'test'
+  ...
+# Subtest: Refuses unsafe HTML title before rendering or source loading
+ok 8 - Refuses unsafe HTML title before rendering or source loading
+  ---
+  duration_ms: 0.086875
+  type: 'test'
+  ...
+# Subtest: Refuses scripture heading as topic label before rendering or source loading
+ok 9 - Refuses scripture heading as topic label before rendering or source loading
+  ---
+  duration_ms: 0.259834
+  type: 'test'
+  ...
+# Subtest: Refuses unknown topic alias before rendering or source loading
+ok 10 - Refuses unknown topic alias before rendering or source loading
+  ---
+  duration_ms: 0.295417
+  type: 'test'
+  ...
+# Subtest: Refuses swapped topic membership before rendering or source loading
+ok 11 - Refuses swapped topic membership before rendering or source loading
+  ---
+  duration_ms: 0.140584
+  type: 'test'
+  ...
+# Subtest: Refuses nonempty explanation with valid source before rendering or source loading
+ok 12 - Refuses nonempty explanation with valid source before rendering or source loading
+  ---
+  duration_ms: 0.104292
+  type: 'test'
+  ...
+# Subtest: Refuses empty string passed as explanation before rendering or source loading
+ok 13 - Refuses empty string passed as explanation before rendering or source loading
+  ---
+  duration_ms: 0.086667
+  type: 'test'
+  ...
+# Subtest: Refuses sourced claim content before rendering or source loading
+ok 14 - Refuses sourced claim content before rendering or source loading
+  ---
+  duration_ms: 0.05175
+  type: 'test'
+  ...
+# Subtest: Refuses hidden body content before rendering or source loading
+ok 15 - Refuses hidden body content before rendering or source loading
+  ---
+  duration_ms: 0.047334
+  type: 'test'
+  ...
+# Subtest: Refuses unknown external content layer before rendering or source loading
+ok 16 - Refuses unknown external content layer before rendering or source loading
+  ---
+  duration_ms: 0.0385
+  type: 'test'
+  ...
+# Subtest: Refuses unknown article layer before rendering or source loading
+ok 17 - Refuses unknown article layer before rendering or source loading
+  ---
+  duration_ms: 0.040208
+  type: 'test'
+  ...
+# Subtest: Refuses claimed qualified approval before rendering or source loading
+ok 18 - Refuses claimed qualified approval before rendering or source loading
+  ---
+  duration_ms: 0.054458
+  type: 'test'
+  ...
+# Subtest: Refuses claimed licensed outside text before rendering or source loading
+ok 19 - Refuses claimed licensed outside text before rendering or source loading
+  ---
+  duration_ms: 0.03725
+  type: 'test'
+  ...
+# Subtest: Refuses claimed semantic selection before rendering or source loading
+ok 20 - Refuses claimed semantic selection before rendering or source loading
+  ---
+  duration_ms: 0.037959
+  type: 'test'
+  ...
+# Subtest: Refuses substring term selection before rendering or source loading
+ok 21 - Refuses substring term selection before rendering or source loading
+  ---
+  duration_ms: 0.037667
+  type: 'test'
+  ...
+# Subtest: Refuses first-line selection fallback before rendering or source loading
+ok 22 - Refuses first-line selection fallback before rendering or source loading
+  ---
+  duration_ms: 0.040791
+  type: 'test'
+  ...
+# Subtest: Refuses unknown reference ID before rendering or source loading
+ok 23 - Refuses unknown reference ID before rendering or source loading
+  ---
+  duration_ms: 0.114417
+  type: 'test'
+  ...
+# Subtest: Refuses stale legacy reference ID before rendering or source loading
+ok 24 - Refuses stale legacy reference ID before rendering or source loading
+  ---
+  duration_ms: 0.039959
+  type: 'test'
+  ...
+# Subtest: Refuses swapped valid reference before rendering or source loading
+ok 25 - Refuses swapped valid reference before rendering or source loading
+  ---
+  duration_ms: 0.039708
+  type: 'test'
+  ...
+# Subtest: Refuses duplicated source reference before rendering or source loading
+ok 26 - Refuses duplicated source reference before rendering or source loading
+  ---
+  duration_ms: 0.039208
+  type: 'test'
+  ...
+# Subtest: Refuses source URL injection before rendering or source loading
+ok 27 - Refuses source URL injection before rendering or source loading
+  ---
+  duration_ms: 0.039917
+  type: 'test'
+  ...
+# Subtest: Refuses source path injection before rendering or source loading
+ok 28 - Refuses source path injection before rendering or source loading
+  ---
+  duration_ms: 0.038875
+  type: 'test'
+  ...
+# Subtest: Refuses row fallback injection before rendering or source loading
+ok 29 - Refuses row fallback injection before rendering or source loading
+  ---
+  duration_ms: 0.038667
+  type: 'test'
+  ...
+# Subtest: Refuses Ang fallback injection before rendering or source loading
+ok 30 - Refuses Ang fallback injection before rendering or source loading
+  ---
+  duration_ms: 0.04375
+  type: 'test'
+  ...
+# Subtest: Refuses unsafe HTML attribute before rendering or source loading
+ok 31 - Refuses unsafe HTML attribute before rendering or source loading
+  ---
+  duration_ms: 0.038542
+  type: 'test'
+  ...
+# Subtest: Refuses unknown catalog script field before rendering or source loading
+ok 32 - Refuses unknown catalog script field before rendering or source loading
+  ---
+  duration_ms: 0.037375
+  type: 'test'
+  ...
+# Subtest: Refuses missing topic before rendering or source loading
+ok 33 - Refuses missing topic before rendering or source loading
+  ---
+  duration_ms: 0.03325
+  type: 'test'
+  ...
+# Subtest: Refuses missing article before rendering or source loading
+ok 34 - Refuses missing article before rendering or source loading
+  ---
+  duration_ms: 0.069333
+  type: 'test'
+  ...
+# Subtest: Rejects changed selected text even when all attacker-owned inner seals are recomputed
+ok 35 - Rejects changed selected text even when all attacker-owned inner seals are recomputed
+  ---
+  duration_ms: 4.019
+  type: 'test'
+  ...
+# Subtest: Rejects changed unselected text in the complete package
+ok 36 - Rejects changed unselected text in the complete package
+  ---
+  duration_ms: 5.008375
+  type: 'test'
+  ...
+# Subtest: Rejects missing unselected Salok even after declared counts are lowered
+ok 37 - Rejects missing unselected Salok even after declared counts are lowered
+  ---
+  duration_ms: 4.022875
+  type: 'test'
+  ...
+# Subtest: Rejects duplicate occurrence IDs, even outside the displayed Salok
+ok 38 - Rejects duplicate occurrence IDs, even outside the displayed Salok
+  ---
+  duration_ms: 1.200667
+  type: 'test'
+  ...
+# Subtest: Rejects reassigned authorship, even when original text is unchanged
+ok 39 - Rejects reassigned authorship, even when original text is unchanged
+  ---
+  duration_ms: 5.749875
+  type: 'test'
+  ...
+# Subtest: Rejects new source-edition identity without an explicit reviewed crosswalk
+ok 40 - Rejects new source-edition identity without an explicit reviewed crosswalk
+  ---
+  duration_ms: 0.906042
+  type: 'test'
+  ...
+# Subtest: Rejects removed danda; comparison normalization never rewrites source
+ok 41 - Rejects removed danda; comparison normalization never rewrites source
+  ---
+  duration_ms: 4.85125
+  type: 'test'
+  ...
+# Subtest: Rejects structural heading changes even when selected verse text is intact
+ok 42 - Rejects structural heading changes even when selected verse text is intact
+  ---
+  duration_ms: 6.348042
+  type: 'test'
+  ...
+# Subtest: Rejects a source wrapper claiming qualified approval
+ok 43 - Rejects a source wrapper claiming qualified approval
+  ---
+  duration_ms: 0.863875
+  type: 'test'
+  ...
+# Subtest: Rejects substituted complete package bytes under another package ID
+ok 44 - Rejects substituted complete package bytes under another package ID
+  ---
+  duration_ms: 1.658792
+  type: 'test'
+  ...
+# Subtest: Refuses the whole catalog if one package is missing, with a bounded user-safe error
+ok 45 - Refuses the whole catalog if one package is missing, with a bounded user-safe error
+  ---
+  duration_ms: 0.100375
+  type: 'test'
+  ...
+# Subtest: Malformed JSON, oversized files and invalid byte types fail closed
+ok 46 - Malformed JSON, oversized files and invalid byte types fail closed
+  ---
+  duration_ms: 0.496917
+  type: 'test'
+  ...
+# Subtest: Fixed source and reference contracts are deeply frozen and contain no source verse copies
+ok 47 - Fixed source and reference contracts are deeply frozen and contain no source verse copies
+  ---
+  duration_ms: 0.0645
+  type: 'test'
+  ...
+# Subtest: the directory names ten distinct existing readers and does not duplicate Japji
+ok 48 - the directory names ten distinct existing readers and does not duplicate Japji
+  ---
+  duration_ms: 0.711917
+  type: 'test'
+  ...
+# Subtest: every reader route exists and Saved entry preserves its exact reading route
+ok 49 - every reader route exists and Saved entry preserves its exact reading route
+  ---
+  duration_ms: 1.486333
+  type: 'test'
+  ...
+# Subtest: each source binding matches exact file bytes and declared identity
+ok 50 - each source binding matches exact file bytes and declared identity
+  ---
+  duration_ms: 16.546416
+  type: 'test'
+  ...
+# Subtest: source package metadata and existing manifests agree with the directory bindings
+ok 51 - source package metadata and existing manifests agree with the directory bindings
+  ---
+  duration_ms: 0.408
+  type: 'test'
+  ...
+# Subtest: Nitnem preserves its mixed source families instead of relabelling everything SGGS
+ok 52 - Nitnem preserves its mixed source families instead of relabelling everything SGGS
+  ---
+  duration_ms: 0.118958
+  type: 'test'
+  ...
+# Subtest: directory records contain navigation metadata, not verse copies or authority claims
+ok 53 - directory records contain navigation metadata, not verse copies or authority claims
+  ---
+  duration_ms: 0.424167
+  type: 'test'
+  ...
+# Subtest: all catalog arrays, records and nested aliases/bindings are immutable
+ok 54 - all catalog arrays, records and nested aliases/bindings are immutable
+  ---
+  duration_ms: 0.070542
+  type: 'test'
+  ...
+# Subtest: whole-token directory search rejects substring traps and unrelated metadata
+ok 55 - whole-token directory search rejects substring traps and unrelated metadata
+  ---
+  duration_ms: 2.893541
+  type: 'test'
+  ...
+# Subtest: explicit Punjabi and transliterated title aliases resolve without searching descriptions
+ok 56 - explicit Punjabi and transliterated title aliases resolve without searching descriptions
+  ---
+  duration_ms: 0.586792
+  type: 'test'
+  ...
+# Subtest: empty search shows readers, punctuation-only and invalid input do not
+ok 57 - empty search shows readers, punctuation-only and invalid input do not
+  ---
+  duration_ms: 0.279
+  type: 'test'
+  ...
+# Subtest: only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+ok 58 - only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+  ---
+  duration_ms: 0.151291
+  type: 'test'
+  ...
+# Subtest: Explore only links existing destinations and preserves literal-topic status
+ok 59 - Explore only links existing destinations and preserves literal-topic status
+  ---
+  duration_ms: 0.318584
+  type: 'test'
+  ...
+# Subtest: Simran and physiology remain distinct navigation categories
+ok 60 - Simran and physiology remain distinct navigation categories
+  ---
+  duration_ms: 0.100916
+  type: 'test'
+  ...
+# Subtest: planned modules are unavailable metadata rather than functioning links or substitutes
+ok 61 - planned modules are unavailable metadata rather than functioning links or substitutes
+  ---
+  duration_ms: 0.05275
+  type: 'test'
+  ...
+# Subtest: lookup helpers only return the declared catalogue entry
+ok 62 - lookup helpers only return the declared catalogue entry
+  ---
+  duration_ms: 0.056167
+  type: 'test'
+  ...
+# Subtest: All494 real originals and complete independently sealed synthetic teaching pass
+ok 63 - All494 real originals and complete independently sealed synthetic teaching pass
+  ---
+  duration_ms: 37.812167
+  type: 'test'
+  ...
+# Subtest: An editorial-only reseal cannot change the source seal
+ok 64 - An editorial-only reseal cannot change the source seal
+  ---
+  duration_ms: 34.978375
+  type: 'test'
+  ...
+# Subtest: Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing
+ok 65 - Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing
+  ---
+  duration_ms: 338.76
+  type: 'test'
+  ...
+# Subtest: Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals
+ok 66 - Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals
+  ---
+  duration_ms: 37.5805
+  type: 'test'
+  ...
+# Subtest: The retained nasal Unicode mark cannot be silently replaced by a private-use character
+ok 67 - The retained nasal Unicode mark cannot be silently replaced by a private-use character
+  ---
+  duration_ms: 17.314333
+  type: 'test'
+  ...
+# Subtest: All ten split digital-Ang units reject collapse onto either Ang after resealing
+ok 68 - All ten split digital-Ang units reject collapse onto either Ang after resealing
+  ---
+  duration_ms: 371.106292
+  type: 'test'
+  ...
+# Subtest: Printed extents cannot replace the recorded digital locator or be promoted to full collation
+ok 69 - Printed extents cannot replace the recorded digital locator or be promoted to full collation
+  ---
+  duration_ms: 36.936042
+  type: 'test'
+  ...
+# Subtest: A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse
+ok 70 - A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse
+  ---
+  duration_ms: 58.04275
+  type: 'test'
+  ...
+# Subtest: Source and teaching cannot be promoted to publication or human-reviewed authority by resealing
+ok 71 - Source and teaching cannot be promoted to publication or human-reviewed authority by resealing
+  ---
+  duration_ms: 118.13775
+  type: 'test'
+  ...
+# Subtest: Missing or extra studies, meanings and heading contexts fail complete coverage
+ok 72 - Missing or extra studies, meanings and heading contexts fail complete coverage
+  ---
+  duration_ms: 148.959917
+  type: 'test'
+  ...
+# Subtest: Swapped map values and first-line-only study bindings cannot misattach meanings
+ok 73 - Swapped map values and first-line-only study bindings cannot misattach meanings
+  ---
+  duration_ms: 98.077792
+  type: 'test'
+  ...
+# Subtest: A correct heading hash still needs the exact enclosing Salok and draft status
+ok 74 - A correct heading hash still needs the exact enclosing Salok and draft status
+  ---
+  duration_ms: 46.932458
+  type: 'test'
+  ...
+1..74
+# tests 74
+# suites 0
+# pass 74
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1390.032917

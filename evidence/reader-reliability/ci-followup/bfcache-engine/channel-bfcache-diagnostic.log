@@ -1,0 +1,9 @@
+{"name":"A genuine BFCache restoration retains the live document and its viewport","status":"failed","error":"cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set.\n    at /private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-bfcache-diagnostic.mjs:93:410\n    at async check (/private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-bfcache-diagnostic.mjs:47:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-bfcache-diagnostic.mjs:92:2"}
+{"name":"No runtime errors or external requests","status":"passed"}
+{
+  "status": "failed",
+  "report": "/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-diagnostic/2026-11-27T02-16-24-516Z/report.json",
+  "failed": [
+    "A genuine BFCache restoration retains the live document and its viewport"
+  ]
+}

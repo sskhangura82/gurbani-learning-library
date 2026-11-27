@@ -19,6 +19,38 @@ const course=await readJSON('nitnem/learning/course.complete.json');
 const workerSource=await fs.readFile(path.join(root,'sw.js'),'utf8');
 const expectedAssets=JSON.parse(workerSource.match(/const EXPECTED=(\{[^\n]+\});/)[1]);
 const workerVersion=JSON.parse(workerSource.match(/const VERSION=("[^"]+");/)[1]);
+// This retained inventory is independent of the worker's generated manifest.
+// Exact cache equality alone would miss an essential file omitted from both.
+const requiredOfflineAssets=[
+ './','./index.html','./library/catalog.mjs','./library/core.mjs','./library/app.mjs','./library/library.css',
+ './js/source-integrity.js','./js/pwa.js','./js/shared-learning.js',
+ './full-japji.html','./js/japji-full-data.js','./js/japji-full.js','./js/continuous-core.js','./js/learning.js','./js/japji-lessons.js','./js/line-meanings.js',
+ './sukhmani.html','./js/sukhmani-data.js','./js/sukhmani-reader.js','./js/sukhmani-learning.js','./js/sukhmani-teaching.js',
+ './nitnem/','./nitnem/index.html','./nitnem/data/library.json','./nitnem/reader.js','./nitnem/continuous-core.js','./nitnem/appearance.js','./nitnem/local-learning.js','./nitnem/offline.js','./nitnem/learning/learning-ui.js','./nitnem/learning/course.complete.json',
+ ...NAMES.map(name=>'./nitnem/data/'+name+'.json'),
+ ...['salok-mahalla9','salok-kabir'].flatMap(name=>['./'+name+'/','./'+name+'/index.html','./'+name+'/data/library.json','./'+name+'/data/'+name+'.json','./'+name+'/learning/course.complete.json']),
+ './articles/','./articles/index.html','./articles/article.html','./articles/app.mjs','./articles/core.mjs','./articles/source-contracts.mjs','./articles/catalog.json','./articles/articles.css',
+ './vendor/opengranth/LICENSE','./vendor/opengranth/NOTICE'
+];
+function expectedOfflineManifest(workerURL,manifest=expectedAssets){
+ for(const asset of requiredOfflineAssets)assert.ok(Object.hasOwn(manifest,asset),'Required source or library asset retained: '+asset);
+ const scope=new URL('./',workerURL),entries=Object.entries(manifest).map(([asset,sha256])=>{
+  assert.ok(asset.startsWith('./'),'Manifest asset is relative: '+asset);
+  const url=new URL(asset,workerURL);
+  assert.equal(url.origin,scope.origin);assert.ok(url.pathname.startsWith(scope.pathname),'Manifest asset stays inside the library scope');
+  assert.equal(url.search,'');assert.equal(url.hash,'');assert.match(sha256,/^[a-f0-9]{64}$/);
+  // The declared install contract versions the cache key, not just the cache name.
+  // Construct this key from VERSION; never strip or learn queries from the cache.
+  url.searchParams.set('glp_release',workerVersion);
+  return {url:url.href,sha256};
+ }).sort((a,b)=>a.url.localeCompare(b.url));
+ assert.equal(new Set(entries.map(entry=>entry.url)).size,entries.length,'Manifest URLs are unique');
+ return entries;
+}
+function assertOfflineCache(actual,expected){
+ assert.deepEqual(actual.map(entry=>entry.url),expected.map(entry=>entry.url),'The cache URL set exactly matches the declared manifest and release keys, without missing or extra entries');
+ assert.deepEqual(actual,expected,'Every cached response retains its independently declared SHA-256');
+}
 const loadGlobal=async(file,name)=>{const context={window:{}};vm.runInNewContext(await fs.readFile(path.join(root,file),'utf8'),context,{timeout:5000});return JSON.parse(JSON.stringify(context.window[name]));};
 const japji=await loadGlobal('js/japji-full-data.js','GLP_FULL_JAPJI');
 const sukhmani=await loadGlobal('js/sukhmani-data.js','GLP_SUKHMANI');
@@ -226,11 +258,38 @@ try{
  });await tabsContext.close();contexts.delete(tabsContext);
 
  const offlineContext=await newContext({serviceWorkers:'allow',sentinels:false}),offlinePage=await newPage(offlineContext);activePage=offlinePage;
- await check('The real root worker verifies and caches all 81 assets, including Nitnem, Sukhmani and both Salok collections',async()=>{
+ await check('The real root worker caches the exact declared URL set and hashes, retaining all required source and library assets',async()=>{
+  const expected=expectedOfflineManifest(new URL('sw.js',origin+PREFIX));
   await offlinePage.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:60000});
-  const actual=await offlinePage.evaluate(async()=>{const prefix='glp-static:'+location.origin+'/gurbani-learning-library/:',names=(await caches.keys()).filter(n=>n.startsWith(prefix));return {names,assets:await Promise.all(names.map(async name=>(await (await caches.open(name)).keys()).map(request=>new URL(request.url).pathname)))};});
-  assert.equal(actual.names.length,1);assert.deepEqual(actual.assets[0].sort(),Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort());assert.equal(actual.assets[0].length,81);
+  const actual=await offlinePage.evaluate(async()=>{
+   const prefix='glp-static:'+location.origin+'/gurbani-learning-library/:',names=(await caches.keys()).filter(n=>n.startsWith(prefix)),assets=[];
+   for(const name of names){
+    const cache=await caches.open(name),entries=[];
+    for(const request of await cache.keys()){
+     const response=await cache.match(request);if(!response)throw Error('Cache entry disappeared: '+request.url);
+     const digest=await crypto.subtle.digest('SHA-256',await response.arrayBuffer());
+     entries.push({url:request.url,sha256:Array.from(new Uint8Array(digest),byte=>byte.toString(16).padStart(2,'0')).join('')});
+    }
+    assets.push(entries.sort((a,b)=>a.url.localeCompare(b.url)));
+   }
+   return {names,assets};
+  });
+  assert.equal(actual.names.length,1);
+  assertOfflineCache(actual.assets[0],expected);
+  // A path-only comparison would accept these corrupted release keys. Keep the
+  // actual cache intact and challenge the same comparison with synthetic copies.
+  const badReleaseKeys=[
+   ['wrong',u=>u.searchParams.set('glp_release',workerVersion+'-wrong')],
+   ['missing',u=>u.searchParams.delete('glp_release')],
+   ['duplicate',u=>u.searchParams.append('glp_release',workerVersion)],
+   ['extra',u=>u.searchParams.set('unexpected','1')]
+  ];
+  for(const [name,mutate] of badReleaseKeys){
+   const altered=actual.assets[0].map(entry=>({...entry})),url=new URL(altered[0].url);mutate(url);altered[0].url=url.href;
+   assert.throws(()=>assertOfflineCache(altered,expected),/declared manifest and release keys/,name+' release key must be refused');
+  }
   assert.equal(await offlinePage.evaluate(async()=>new URL((await navigator.serviceWorker.getRegistration()).scope).pathname),PREFIX);
+  report.offlineCacheManifest={declaredAssets:expected.length,cachedAssets:actual.assets[0].length,requiredAssets:requiredOfflineAssets.length,releaseKey:workerVersion,urls:expected.map(entry=>entry.url),cachedBytesVerified:true,invalidReleaseKeysRefused:badReleaseKeys.map(([name])=>name)};
  });
  await choose(offlinePage,'jaap');await jump(offlinePage,198);await openTools(offlinePage);await offlinePage.locator('#note').fill('SYNTHETIC offline final Jaap reflection');await offlinePage.locator('#save-note').click();await waitNote(offlinePage,'jaap','jaap199.line01','SYNTHETIC offline final Jaap reflection');await closeTools(offlinePage);await mode(offlinePage,'meaning');
  await offlineContext.setOffline(true);

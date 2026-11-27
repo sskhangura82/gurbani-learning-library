@@ -1,0 +1,65 @@
+{
+  "total_count": 3,
+  "artifacts": [
+    {
+      "id": 15167235091,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE2NzIzNTA5MQ==",
+      "name": "nitnem-browser-evidence",
+      "size_in_bytes": 775836,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15167235091",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15167235091/zip",
+      "expired": false,
+      "digest": "sha256:7b638112a944d8588ffb3a07cd6cdf5c52de3917b46875be4e28597ddcbcc7b8",
+      "created_at": "2026-11-27T02:11:18Z",
+      "updated_at": "2026-11-27T02:11:18Z",
+      "expires_at": "2027-02-25T02:10:14Z",
+      "workflow_run": {
+        "id": 45926739987,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "fix/reader-load-resume-20261126",
+        "head_sha": "b69d6b31941adc025a1159ab0826d39a3fb58bc3"
+      }
+    },
+    {
+      "id": 15167180357,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE2NzE4MDM1Nw==",
+      "name": "review-repairs-browser-evidence",
+      "size_in_bytes": 31204,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15167180357",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15167180357/zip",
+      "expired": false,
+      "digest": "sha256:ae9fea68c03c7fbfdb89a1b26209982f348937a60b9584c85d35621e2c8efde5",
+      "created_at": "2026-11-27T02:10:43Z",
+      "updated_at": "2026-11-27T02:10:43Z",
+      "expires_at": "2027-02-25T02:10:14Z",
+      "workflow_run": {
+        "id": 45926739987,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "fix/reader-load-resume-20261126",
+        "head_sha": "b69d6b31941adc025a1159ab0826d39a3fb58bc3"
+      }
+    },
+    {
+      "id": 15166741779,
+      "node_id": "MDg6QXJ0aWZhY3QxNTE2Njc0MTc3OQ==",
+      "name": "sukhmani-browser-evidence",
+      "size_in_bytes": 725000,
+      "url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15166741779",
+      "archive_download_url": "https://api.github.com/repos/sskhangura82/gurbani-learning-library/actions/artifacts/15166741779/zip",
+      "expired": false,
+      "digest": "sha256:039f6d4f3bce559ab684884ebd0feaec4e0ed3d5887bc237325aa7fe384e4ca8",
+      "created_at": "2026-11-27T02:11:01Z",
+      "updated_at": "2026-11-27T02:11:01Z",
+      "expires_at": "2027-02-25T02:10:14Z",
+      "workflow_run": {
+        "id": 45926739987,
+        "repository_id": 1431230252,
+        "head_repository_id": 1431230252,
+        "head_branch": "fix/reader-load-resume-20261126",
+        "head_sha": "b69d6b31941adc025a1159ab0826d39a3fb58bc3"
+      }
+    }
+  ]
+}

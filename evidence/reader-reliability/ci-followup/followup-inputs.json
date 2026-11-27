@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-11-27T02:28:55.269985+00:00",
+  "unchangedApplicationBaseline": "b69d6b31941adc025a1159ab0826d39a3fb58bc3",
+  "inputs": {
+    "js/sukhmani-reader.js": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+    "full-japji.html": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2",
+    "sukhmani.html": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8",
+    "nitnem/index.html": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c",
+    "sw.js": "b684a3fe401a22075ff3cb7f17411bfbf9c6e932c62f3627b7cce6a246adc30a",
+    "tests/nitnem-browser.mjs": "130358e3d89f42a7de49fc1348191b18fe816d2913527cf13cbe1c13f9eef33d",
+    "tests/sukhmani-resume-browser.mjs": "04abe183f1230f3dc0d5a490aecf8f8c0bab61ca5db8e13cc0435c70921e86ce",
+    ".github/workflows/reader-qa.yml": "a69793ada54b9b6fc7718a2c9a2c2eaab447f7ce700d78dac2f92a6834dd13ed",
+    ".github/workflows/unified-library-qa.yml": "99852fa471d300924c1be1db8b94f60bd9b66f959c80a1f399586376c7f9effe"
+  },
+  "changedTrackedFiles": [
+    ".github/workflows/reader-qa.yml",
+    ".github/workflows/unified-library-qa.yml",
+    "evidence/nitnem-browser-verification.json",
+    "evidence/reader-reliability/BUILDER_REPORT.md",
+    "tests/nitnem-browser.mjs",
+    "tests/sukhmani-resume-browser.mjs"
+  ]
+}

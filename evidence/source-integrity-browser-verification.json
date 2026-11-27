@@ -1,6 +1,6 @@
 {
   "schema": "glp.source-integrity-browser.v1",
-  "startedAtUtc": "2026-11-26T20:32:12.810Z",
+  "startedAtUtc": "2026-11-27T02:08:14.793Z",
   "engine": "Chromium",
   "checks": [
     {
@@ -97,10 +97,10 @@
   "runtimeErrors": [],
   "limitations": [
     "Ephemeral desktop Chromium on localhost; no physical iPhone or Safari verification.",
-    "Runtime corruption is deliberately injected immediately before the production reader executes, after the original data passes SRI.",
+    "A synthetic global-assignment interceptor mutates the source object after the browser accepts the original data script under SRI, before reader verification; served HTML and pinned reader bytes are unchanged.",
     "Digest-delay coverage waits on the real WebCrypto result; it does not substitute a passing digest."
   ],
   "browserVersion": "158.0.8127.37",
-  "completedAtUtc": "2026-11-26T20:32:16.589Z",
+  "completedAtUtc": "2026-11-27T02:08:18.443Z",
   "status": "PASS"
 }

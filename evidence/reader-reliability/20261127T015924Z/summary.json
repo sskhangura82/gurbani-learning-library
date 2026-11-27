@@ -1,0 +1,124 @@
+{
+  "createdAt": "2026-11-27T01:59:27.509102+00:00",
+  "base": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "kind": "builder-local-contracts",
+  "node": "v22.15.0",
+  "results": [
+    {
+      "command": [
+        "node",
+        "tests/verify.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/01-verify.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/02-service-worker.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/shared-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/03-shared-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/japji-retained-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/04-japji-retained-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/source-integrity.mjs"
+      ],
+      "exitCode": 1,
+      "log": "evidence/reader-reliability/20261127T015924Z/05-source-integrity.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r6-contract.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/06-r6-contract.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r7-contract.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/07-r7-contract.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-content.mjs"
+      ],
+      "exitCode": 1,
+      "log": "evidence/reader-reliability/20261127T015924Z/08-sukhmani-content.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-reader-core.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/09-sukhmani-reader-core.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-content.mjs"
+      ],
+      "exitCode": 1,
+      "log": "evidence/reader-reliability/20261127T015924Z/10-nitnem-content.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/11-nitnem-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-backup-capacity.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/12-nitnem-backup-capacity.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-ui-lifecycle.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/13-nitnem-ui-lifecycle.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/library-catalog.mjs",
+        "tests/article-source.mjs",
+        "tests/salok-kabir-bindings.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T015924Z/14-salok-kabir-bindings.log"
+    }
+  ]
+}

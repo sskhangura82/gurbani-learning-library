@@ -1,0 +1,83 @@
+{
+  "startedAt": "2026-11-27T01:57:25.867Z",
+  "source": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "checks": [
+    {
+      "name": "Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (320px)",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'sukhmani.a01.p01.l03'\n- 'sukhmani.a01.p01.l02'\n                      ^\n\n    at settled (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:44:108)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:53:281\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:52:31"
+    },
+    {
+      "name": "Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (390px)",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'sukhmani.a01.p01.l03'\n- 'sukhmani.a01.p01.l02'\n                      ^\n\n    at settled (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:44:108)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:53:281\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:52:31"
+    },
+    {
+      "name": "UI-created note and bookmark survive direct reload without a delayed line shift",
+      "status": "failed",
+      "error": "page.waitForFunction: TypeError: Cannot read properties of null (reading 'notes')\n    at eval (eval at predicate (eval at evaluate (:311:30)), <anonymous>:1:59)\n    at predicate (eval at evaluate (:311:30), <anonymous>:7:27)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:311:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:56:237\n    at async check (/private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:55:2"
+    },
+    {
+      "name": "Later manual reading restores its exact occurrence on reload; subsequent non-wheel scrolling still saves",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Chosen occurrence must start in the reading viewport; top=-103.015625\n    at settled (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:44:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:59:109\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:58:2"
+    },
+    {
+      "name": "Cold Back and Forward restore the saved occurrence without a Resume banner",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Chosen occurrence must start in the reading viewport; top=-103.015625\n    at settled (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:44:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:62:109\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:61:2"
+    },
+    {
+      "name": "Saved-list entry opens its existing dialog without moving or rewriting the saved record",
+      "evidence": {
+        "title": "Saved learning",
+        "state": {
+          "version": 2,
+          "read": "sukhmani.a06.p02.l07",
+          "guide": "sukhmani.a02.p01.l02",
+          "hasGuided": true,
+          "mode": "read",
+          "theme": "day",
+          "size": 30,
+          "pace": 70,
+          "pronunciation": false,
+          "bookmarks": [
+            "sukhmani.a06.p02.l07"
+          ],
+          "notes": {
+            "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+          }
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "An explicit navigation cancels pending reload alignment",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Chosen occurrence must start in the reading viewport; top=-103.015625\n    at settled (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:44:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:68:109\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:67:2"
+    },
+    {
+      "name": "A genuine BFCache restoration retains the live document and its viewport",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Chosen occurrence must start in the reading viewport; top=-103.015625\n    at settled (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:44:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:71:287\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:70:2"
+    },
+    {
+      "name": "No runtime errors or external requests",
+      "evidence": {
+        "runtimeErrors": [],
+        "externalRequests": []
+      },
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Fresh desktop Chrome emulation only; no physical iPhone, Safari, VoiceOver or airplane-mode acceptance.",
+    "PR47 linked-visit behavior is deliberately outside this repair.",
+    "Waits exceed the existing 200 ms scroll debounce; assertions cover both logical occurrence and actual geometry."
+  ],
+  "browser": "158.0.8127.37",
+  "completedAt": "2026-11-27T01:57:32.428Z",
+  "status": "failed"
+}

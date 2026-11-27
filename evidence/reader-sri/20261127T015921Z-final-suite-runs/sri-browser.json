@@ -1,0 +1,10 @@
+{
+  "name": "sri-browser",
+  "command": [
+    "node",
+    "tests/reader-sri-browser.mjs"
+  ],
+  "exit": 0,
+  "stdout": "{\"status\":\"PASS\",\"mode\":\"candidate\",\"checks\":42,\"failed\":[],\"setupError\":null,\"evidence\":\"evidence/reader-sri/2026-11-27T01-59-21-686Z-candidate\"}\n",
+  "stderr": ""
+}

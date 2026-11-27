@@ -1,0 +1,21 @@
+{
+  "startedAtUtc": "2026-11-27T01:59:21.475036+00:00",
+  "node": "v22.15.0",
+  "baseHead": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "inputSha256": {
+    "full-japji.html": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2",
+    "sukhmani.html": "9f67d011472b8762652312d33bb876b35ef7be241c0d46dd2405226609d178a2",
+    "nitnem/index.html": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c",
+    "salok-mahalla9/index.html": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+    "salok-kabir/index.html": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+    "js/sukhmani-reader.js": "73ba28e8a4c5d4d3c592a255bebc51404fd80b817d61a92d2da38d7062de0716",
+    "js/japji-full.js": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f",
+    "nitnem/reader.js": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+    "sw.js": "4c6f0574ce26c86ee1276ad656b438e905d3f7b2394be36c155cdd741e155f55",
+    "tools/refresh-reader-sri.mjs": "e2a2a102597fb8a20cc38a28690698c2e31e3266d16d635d3dc87915d17e5ce4",
+    "tests/reader-sri.mjs": "cfd9c926963da05d55028f86b36d0c60019b1144b08ed5369e2fe51506267c30",
+    "tests/reader-sri-browser.mjs": "8ccc8d0cdbd4da65f38aa3a672b1c243de9f976c6b1454a0c90103b016a09679",
+    "tests/source-integrity-browser.mjs": "13265facb5b96c7421c15871dbe7727e86ca5b4a5c74b8ba3fe5d7d5f98dc7d7"
+  },
+  "scope": "Final desktop Chromium and Node checks; synthetic local contexts only. No device or qualified-content acceptance."
+}

@@ -1,0 +1,387 @@
+{
+  "startedAt": "2026-11-27T01:59:00.280Z",
+  "source": "working-tree",
+  "checks": [
+    {
+      "name": "Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (320px)",
+      "evidence": {
+        "stored": {
+          "version": 2,
+          "read": "sukhmani.a01.p01.l02",
+          "guide": "sukhmani.a01.p01.l02",
+          "hasGuided": true,
+          "mode": "read",
+          "theme": "day",
+          "size": 30,
+          "pace": 70,
+          "pronunciation": false,
+          "bookmarks": [
+            "sukhmani.a01.p01.l02"
+          ],
+          "notes": {
+            "sukhmani.a01.p01.l02": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+          }
+        },
+        "current": "sukhmani.a01.p01.l02",
+        "top": 34.484375,
+        "bottom": 148.484375,
+        "scrollY": 1243,
+        "noticeHidden": true,
+        "navigation": "navigate",
+        "events": [
+          {
+            "event": "pageshow",
+            "persisted": false,
+            "t": 131.19999992847443
+          }
+        ],
+        "writes": [
+          {
+            "t": 221.79999995231628,
+            "value": "{\"version\":2,\"read\":\"sukhmani.a01.p01.l02\",\"guide\":\"sukhmani.a01.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a01.p01.l02\"],\"notes\":{\"sukhmani.a01.p01.l02\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+          }
+        ]
+      },
+      "status": "passed"
+    },
+    {
+      "name": "Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (390px)",
+      "evidence": {
+        "stored": {
+          "version": 2,
+          "read": "sukhmani.a01.p01.l02",
+          "guide": "sukhmani.a01.p01.l02",
+          "hasGuided": true,
+          "mode": "read",
+          "theme": "day",
+          "size": 30,
+          "pace": 70,
+          "pronunciation": false,
+          "bookmarks": [
+            "sukhmani.a01.p01.l02"
+          ],
+          "notes": {
+            "sukhmani.a01.p01.l02": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+          }
+        },
+        "current": "sukhmani.a01.p01.l02",
+        "top": 34.296875,
+        "bottom": 148.296875,
+        "scrollY": 1253,
+        "noticeHidden": true,
+        "navigation": "navigate",
+        "events": [
+          {
+            "event": "pageshow",
+            "persisted": false,
+            "t": 118.29999995231628
+          }
+        ],
+        "writes": [
+          {
+            "t": 212,
+            "value": "{\"version\":2,\"read\":\"sukhmani.a01.p01.l02\",\"guide\":\"sukhmani.a01.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a01.p01.l02\"],\"notes\":{\"sukhmani.a01.p01.l02\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+          }
+        ]
+      },
+      "status": "passed"
+    },
+    {
+      "name": "UI-created note and bookmark survive direct reload without a delayed line shift",
+      "evidence": {
+        "before": {
+          "version": 2,
+          "read": "sukhmani.a01.p01.l02",
+          "guide": "sukhmani.intro.l01",
+          "hasGuided": false,
+          "mode": "read",
+          "theme": "day",
+          "size": 30,
+          "pace": 70,
+          "pronunciation": false,
+          "bookmarks": [
+            "sukhmani.a01.p01.l02"
+          ],
+          "notes": {
+            "sukhmani.a01.p01.l02": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+          }
+        },
+        "after": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a01.p01.l02",
+            "guide": "sukhmani.intro.l01",
+            "hasGuided": false,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a01.p01.l02"
+            ],
+            "notes": {
+              "sukhmani.a01.p01.l02": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a01.p01.l02",
+          "top": 34.296875,
+          "bottom": 148.296875,
+          "scrollY": 1253,
+          "noticeHidden": true,
+          "navigation": "reload",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 91.30000007152557
+            }
+          ],
+          "writes": []
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "Later manual reading restores its exact occurrence on reload; subsequent non-wheel scrolling still saves",
+      "evidence": {
+        "restored": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a06.p02.l07",
+            "guide": "sukhmani.a02.p01.l02",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a06.p02.l07",
+          "top": 33.984375,
+          "bottom": 90.984375,
+          "scrollY": 39836,
+          "noticeHidden": true,
+          "navigation": "reload",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 121.5
+            }
+          ],
+          "writes": []
+        },
+        "moved": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a07.p01.l02",
+            "guide": "sukhmani.a02.p01.l02",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a07.p01.l02",
+          "top": 33.921875,
+          "bottom": 90.921875,
+          "scrollY": 46054,
+          "noticeHidden": true,
+          "navigation": "reload",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 121.5
+            }
+          ],
+          "writes": [
+            {
+              "t": 802,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a07.p01.l02\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            }
+          ]
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "Cold Back and Forward restore the saved occurrence without a Resume banner",
+      "evidence": {
+        "back": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a06.p02.l07",
+            "guide": "sukhmani.a02.p01.l02",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a06.p02.l07",
+          "top": 33.984375,
+          "bottom": 90.984375,
+          "scrollY": 39836,
+          "noticeHidden": true,
+          "navigation": "back_forward",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 76.5
+            }
+          ],
+          "writes": []
+        },
+        "again": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a06.p02.l07",
+            "guide": "sukhmani.a02.p01.l02",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a06.p02.l07",
+          "top": 33.984375,
+          "bottom": 90.984375,
+          "scrollY": 39836,
+          "noticeHidden": true,
+          "navigation": "back_forward",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 63.89999997615814
+            }
+          ],
+          "writes": []
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "Saved-list entry opens its existing dialog without moving or rewriting the saved record",
+      "evidence": {
+        "title": "Saved learning",
+        "state": {
+          "version": 2,
+          "read": "sukhmani.a06.p02.l07",
+          "guide": "sukhmani.a02.p01.l02",
+          "hasGuided": true,
+          "mode": "read",
+          "theme": "day",
+          "size": 30,
+          "pace": 70,
+          "pronunciation": false,
+          "bookmarks": [
+            "sukhmani.a06.p02.l07"
+          ],
+          "notes": {
+            "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+          }
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "An explicit navigation cancels pending reload alignment",
+      "evidence": {
+        "controlledCondition": "Font-readiness promise delayed only in this disposable fixture; explicit Ashtpadi action before release",
+        "result": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a08.salok.l01",
+            "guide": "sukhmani.a08.salok.l01",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a08.salok.l01",
+          "top": 33.859375,
+          "bottom": 90.859375,
+          "scrollY": 52077,
+          "noticeHidden": true,
+          "navigation": "reload",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 115.30000007152557
+            }
+          ],
+          "writes": [
+            {
+              "t": 188.30000007152557,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a08.salok.l01\",\"guide\":\"sukhmani.a08.salok.l01\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            }
+          ]
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "A genuine BFCache restoration retains the live document and its viewport",
+      "status": "failed",
+      "error": "page.goBack: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n\u001b[2m    - navigated to \"http://127.0.0.1:54847/gurbani-learning-library/sukhmani.html\"\u001b[22m\n\n    at /private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:71:585\n    at async check (/private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:83)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:70:2"
+    },
+    {
+      "name": "No runtime errors or external requests",
+      "evidence": {
+        "runtimeErrors": [],
+        "externalRequests": []
+      },
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Fresh desktop Chrome emulation only; no physical iPhone, Safari, VoiceOver or airplane-mode acceptance.",
+    "PR47 linked-visit behavior is deliberately outside this repair.",
+    "Waits exceed the existing 200 ms scroll debounce; assertions cover both logical occurrence and actual geometry."
+  ],
+  "browser": "158.0.8127.37",
+  "completedAt": "2026-11-27T01:59:21.298Z",
+  "status": "failed"
+}

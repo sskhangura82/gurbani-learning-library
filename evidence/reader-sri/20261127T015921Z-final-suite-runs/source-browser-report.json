@@ -1,0 +1,106 @@
+{
+  "schema": "glp.source-integrity-browser.v1",
+  "startedAtUtc": "2026-11-27T01:59:21.686Z",
+  "engine": "Chromium",
+  "checks": [
+    {
+      "kind": "japji",
+      "name": "Unchanged published source passes SRI, every line hash and complete-object verification",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Pending real WebCrypto leaves scripture unrendered and controls disabled",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Browser SRI rejects a changed source JavaScript byte stream",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Missing verification module fails closed",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Valid synthetic learning exported from refused reader can be restored by the verified reader",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Changed text with matching stored hash is caught after legitimate SRI",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Missing source unit is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Changed Ang metadata is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Reordered lines are caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Unchanged published source passes SRI, every line hash and complete-object verification",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Pending real WebCrypto leaves scripture unrendered and controls disabled",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Browser SRI rejects a changed source JavaScript byte stream",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Missing verification module fails closed",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Valid synthetic learning exported from refused reader can be restored by the verified reader",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Changed text with matching stored hash is caught after legitimate SRI",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Missing source unit is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Changed Ang metadata is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Reordered lines are caught before render",
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "limitations": [
+    "Ephemeral desktop Chromium on localhost; no physical iPhone or Safari verification.",
+    "A synthetic global-assignment interceptor mutates the source object after the browser accepts the original data script under SRI, before reader verification; served HTML and pinned reader bytes are unchanged.",
+    "Digest-delay coverage waits on the real WebCrypto result; it does not substitute a passing digest."
+  ],
+  "browserVersion": "158.0.8127.37",
+  "completedAtUtc": "2026-11-27T01:59:25.851Z",
+  "status": "PASS"
+}
