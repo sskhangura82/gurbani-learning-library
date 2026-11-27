@@ -1,7 +1,7 @@
 name: Unified library and saved-entry checks
 on:
   pull_request:
-    branches: [main, feature/article-source-print-20261126, feature/unified-library-v1-20261126]
+    branches: [main, feature/article-source-print-20261126, feature/unified-library-v1-20261126, fix/reader-load-resume-20261126]
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,17 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Keep scripture, teaching, article contracts and learning stores at the frozen parent
-        run: |
-          git diff --exit-code acfeb0a157fc2cf38ae7ccbaeb2c53d8e97d3bec -- \
-            js/japji-full-data.js js/content.js js/japji-lessons.js js/line-meanings.js \
-            js/sukhmani-data.js js/sukhmani-teaching.js \
-            js/source-integrity.js js/continuous-core.js js/learning.js js/shared-learning.js \
-            js/sukhmani-learning.js nitnem/data nitnem/learning nitnem/local-learning.js \
-            nitnem/continuous-core.js salok-mahalla9/data salok-mahalla9/learning \
-            salok-kabir/data salok-kabir/learning articles research \
-            simran.html js/simran.js css/simran.css \
-            breathing.html js/breathing.js js/breathing-core.js css/breathing.css
+      - name: Preserve the complete reviewed application and reader inputs
+        run: node --test tests/library-script-integrity-inputs.mjs
       - name: Catalogue identities, source resolution and retained local learning
         run: |
           node --test tests/library-catalog.mjs tests/article-source.mjs tests/source-integrity.mjs tests/salok-kabir-bindings.mjs

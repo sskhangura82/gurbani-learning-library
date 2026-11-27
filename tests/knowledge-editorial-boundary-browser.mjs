@@ -4,7 +4,7 @@ import http from "node:http";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {chromium} from "playwright";
-import {sha256} from "../knowledge/registry.mjs";
+import {installKnowledgeFixture,assertKnowledgeFixtureRuntime} from "./helpers/module-fixture.mjs";
 
 const root=fileURLToPath(new URL("../",import.meta.url));
 const source=JSON.parse(await fs.readFile(path.join(root,"knowledge/scripture.json"),"utf8"));
@@ -18,7 +18,7 @@ const server=http.createServer(async(req,res)=>{try{
 }catch{res.writeHead(404);res.end();}});
 await new Promise(r=>server.listen(0,"127.0.0.1",r));
 const origin="http://127.0.0.1:"+server.address().port,url=origin+"/knowledge/index.html";
-const out=path.join(root,"evidence/knowledge-editorial-boundary");await fs.mkdir(out,{recursive:true});
+const out=path.join(root,"evidence/library-script-integrity/browser",new Date().toISOString().replace(/[:.]/g,"-")+"-knowledge-editorial-boundary");await fs.mkdir(out,{recursive:true});
 const report={status:"PASS",checks:[],errors:[],limits:[
  "Fresh synthetic desktop-browser contexts, with emulated viewport dimensions.",
  "No physical iPhone, Safari, VoiceOver, participant testing, qualified content review, staging or deployment."
@@ -29,9 +29,8 @@ async function context(width=390,mutate){
  page.on("pageerror",e=>report.errors.push(e.message));
  page.on("request",r=>{if(!r.url().startsWith(origin))report.errors.push("Unexpected external request");});
  if(mutate){
-  const e=structuredClone(teaching);mutate(e);const bytes=Buffer.from(JSON.stringify(e)),pin=await sha256(bytes);
-  await page.route("**/knowledge/pilot.json",r=>r.fulfill({status:200,contentType:"application/json",body:bytes}));
-  await page.route("**/knowledge/app.mjs",async r=>{const original=await r.fetch();await r.fulfill({response:original,body:(await original.text()).replace(/PACK_SHA256="[a-f0-9]{64}"/,'PACK_SHA256="'+pin+'"')});});
+  const e=structuredClone(teaching);mutate(e);const bytes=Buffer.from(JSON.stringify(e));
+  await installKnowledgeFixture(page,{directory:root,teachingBytes:bytes});
  }
  return {ctx,page};
 }
@@ -39,7 +38,7 @@ async function query(page,text){await page.locator("#query").fill(text);await pa
 try{
  const executablePath=process.env.CHROMIUM_PATH||(process.platform==="darwin"?"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome":undefined);
  browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
- report.environment={platform:process.platform,node:process.version,browser:browser.version()};
+ report.environment={platform:process.platform,node:process.version,browser:browser.version(),executablePath:executablePath||chromium.executablePath()};
  for(const width of [390,820,1440]){
   const {ctx,page}=await context(width);
   await page.goto(url);await page.getByText(/Source files checked/).waitFor();
@@ -83,6 +82,7 @@ try{
   assert.equal(await page.locator("#browse").innerText(),"");
   assert.equal(await page.locator("#results").innerText(),"");
   assert.ok(await page.locator("#search-button").isDisabled());
+  assertKnowledgeFixtureRuntime(page);
   report.checks.push("Re-pinned "+name+" refused in the actual page");
   await ctx.close();
  }
@@ -106,6 +106,7 @@ try{
   assert.equal(await page.locator("#content .editorial-note").first().textContent(),"Library topic (editorial): "+literal);
   assert.equal(await page.locator("#content strong").count(),0);
   assert.deepEqual(await page.locator("#content .pankti").allTextContents(),first.occurrenceIds.map(id=>source.occurrences.find(o=>o.id===id).text));
+  assertKnowledgeFixtureRuntime(page);
   report.checks.push("Permitted names stay editorial; valid passage alias identifies editorial matching; markup remains literal text");
   await page.screenshot({path:path.join(out,"literal-editorial-label-390.png"),fullPage:true});
   await ctx.close();
@@ -126,6 +127,7 @@ try{
   assert.deepEqual(await page.locator("#content .pankti").allTextContents(),first.occurrenceIds.map(id=>source.occurrences.find(o=>o.id===id).text));
   assert.equal(await page.locator(".scripture .editorial-pa,.scripture .editorial-copy,.scripture [data-content-kind=editorial]").count(),0);
   assert.equal((await page.locator(".scripture").innerText()).includes(marked),false);
+  assertKnowledgeFixtureRuntime(page);
   report.checks.push("A syntactically unrecognized imitation remains labelled editorial in page and search and never enters original scripture");
   await page.screenshot({path:path.join(out,"unrecognized-editorial-390.png"),fullPage:true});
   await ctx.close();
@@ -145,6 +147,7 @@ try{
   assert.equal(await page.locator("#content .source-token").innerText(),"ਸਲੋਕੁ");
   assert.equal(await page.locator("#content .scripture").count(),0);
   assert.match(await page.locator("#content").innerText(),/Source word · contextual explanation below is an editorial draft/);
+  assertKnowledgeFixtureRuntime(page);
   report.checks.push("An attested dictionary word remains usable with source-token identity and separately labelled editorial explanation");
   await ctx.close();
  }

@@ -65,6 +65,38 @@ async function noOverflow(page,width){
  const layout=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
  assert.ok(layout.scroll<=layout.width+1,JSON.stringify(layout));
 }
+async function verifiedReleaseCache(page){
+ const worker=await fs.readFile(path.join(root,'sw.js'),'utf8');
+ const expected=JSON.parse(worker.match(/const EXPECTED=(\{[^\n]+\});/)[1]);
+ const version=worker.match(/const VERSION="([^"]+)";/)[1];
+ // Required new graph and complete Nitnem sources must not disappear merely
+ // because a regenerated manifest omits them. Existing surface-specific checks remain below.
+ for(const asset of [
+  './library/app.bundle.mjs','./articles/app.bundle.mjs','./knowledge/','./knowledge/index.html',
+  './knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json',
+  ...['jaap','savaiye','chaupai','anand','rehras','sohila'].map(name=>'./nitnem/data/'+name+'.json')
+ ])assert.ok(Object.hasOwn(expected,asset),'Required offline asset: '+asset);
+ const rows=[];
+ for(const [asset,digest]of Object.entries(expected)){
+  const filename=path.join(root,asset.endsWith('/')?asset+'index.html':asset);
+  assert.equal(createHash('sha256').update(await fs.readFile(filename)).digest('hex'),digest,'Manifest must match actual release bytes: '+asset);
+  const url=new URL(asset,origin+prefix+'sw.js');url.searchParams.set('glp_release',version);
+  rows.push({url:url.href,sha256:digest});
+ }
+ rows.sort((a,b)=>a.url.localeCompare(b.url));
+ const cache=await page.evaluate(async()=>{
+  const names=await caches.keys(),cache=await caches.open(names[0]),keys=await cache.keys();
+  const rows=await Promise.all(keys.map(async request=>{
+   const response=await cache.match(request),digest=await crypto.subtle.digest('SHA-256',await response.arrayBuffer());
+   return {url:request.url,sha256:Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,'0')).join('')};
+  }));
+  return {names,paths:keys.map(request=>new URL(request.url).pathname),rows:rows.sort((a,b)=>a.url.localeCompare(b.url))};
+ });
+ assert.deepEqual(cache.names,['glp-static:'+origin+prefix+':'+version]);
+ assert.deepEqual(cache.rows,rows,'Every cache URL, release query and response body must match the current release');
+ return cache;
+}
+
 async function mutationPage(modify,target='articles/catalog.json',html=false){
  return fresh({route:async route=>{
   const pathname=new URL(route.request().url()).pathname;
@@ -229,12 +261,15 @@ try{
  await check('The real worker serves both complete source sheets with the network unavailable',async()=>{
   const page=await fresh({offline:true});
   await page.goto(origin+prefix);await page.waitForFunction(()=>navigator.serviceWorker.controller!==null);
-  const cache=await page.evaluate(async()=>{const names=await caches.keys();const requests=await(await caches.open(names[0])).keys();return {names,paths:requests.map(req=>new URL(req.url).pathname)};});
+  const cache=await verifiedReleaseCache(page);
   for(const asset of ['articles/','articles/index.html','articles/article.html','articles/articles.css','articles/app.mjs','articles/core.mjs','articles/source-contracts.mjs','articles/catalog.json']){
    assert.ok(cache.paths.includes(prefix+asset),'Missing offline asset '+asset);
   }
-  assert.equal(cache.paths.length,81);
+  // Exact release URLs and response bytes were checked above; no stale flat asset count.
   await page.context().setOffline(true);
+  await page.waitForFunction(()=>document.documentElement.dataset.libraryState==='ready');
+  await page.locator('.library-nav a[data-view="explore"]').click();
+  await page.waitForFunction(()=>document.documentElement.dataset.libraryState==='ready'&&document.documentElement.dataset.libraryView==='explore');
   await page.locator('a[href="articles/index.html"]').click();await page.waitForFunction(()=>document.documentElement.dataset.sourceState==='ready');
   for(const c of cases){
    const response=page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'articles/article.html');

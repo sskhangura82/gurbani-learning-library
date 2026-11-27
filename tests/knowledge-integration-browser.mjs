@@ -5,10 +5,11 @@ import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {execFileSync} from "node:child_process";
 import {chromium} from "playwright";
+import {installKnowledgeFixture,assertKnowledgeFixtureRuntime} from "./helpers/module-fixture.mjs";
 import {sha256} from "../knowledge/registry.mjs";
 
 const root=path.resolve(fileURLToPath(new URL("../",import.meta.url))),base="f720099b6181919d597e249f9ad42b9f00cabe68";
-const stamp=new Date().toISOString().replace(/[:.]/g,"-"),out=path.join(root,"evidence","knowledge-integration",stamp+"-browser");
+const stamp=new Date().toISOString().replace(/[:.]/g,"-"),out=path.join(root,"evidence","library-script-integrity","browser",stamp+"-knowledge-integration");
 await fs.mkdir(out,{recursive:true});
 const sourceBytes=await fs.readFile(path.join(root,"knowledge/scripture.json")),teachingBytes=await fs.readFile(path.join(root,"knowledge/pilot.json"));
 const source=JSON.parse(sourceBytes),teaching=JSON.parse(teachingBytes);
@@ -31,13 +32,8 @@ async function open({mutateTeaching,corruptSource}={}){
  page.on("pageerror",e=>report.pageErrors.push(e.message));
  page.on("request",r=>requests.push(r.url()));
  if(mutateTeaching){
-  const e=structuredClone(teaching);mutateTeaching(e);const bytes=Buffer.from(JSON.stringify(e)),pin=await sha256(bytes);
-  await page.route("**/knowledge/pilot.json",r=>r.fulfill({status:200,contentType:"application/json",body:bytes}));
-  await page.route("**/knowledge/app.mjs",async r=>{
-   const response=await r.fetch(),body=await response.text();
-   assert.equal((body.match(/PACK_SHA256="[a-f0-9]{64}"/g)||[]).length,1,"One teaching pin to reseal");
-   await r.fulfill({response,body:body.replace(/PACK_SHA256="[a-f0-9]{64}"/,'PACK_SHA256="'+pin+'"')});
-  });
+  const e=structuredClone(teaching);mutateTeaching(e);const bytes=Buffer.from(JSON.stringify(e));
+  await installKnowledgeFixture(page,{directory:root,teachingBytes:bytes});
  }
  if(corruptSource){
   const s=structuredClone(source);s.occurrences.find(o=>o.kind==="verse").text+=" ਮ";
@@ -54,7 +50,7 @@ async function scripture(page,id){
 }
 async function check(name,options,fn){
  const {ctx,page,requests}=await open(options);
- try{await fn(page,requests);assert.ok(requests.every(u=>u.startsWith(origin)),"All page requests remain local");report.checks.push({name,status:"PASS"});}
+ try{await fn(page,requests);if(options.mutateTeaching)assertKnowledgeFixtureRuntime(page,{teaching:!options.corruptSource});assert.ok(requests.every(u=>u.startsWith(origin)),"All page requests remain local");report.checks.push({name,status:"PASS"});}
  catch(e){report.status="FAIL";const failure={name,status:"FAIL",error:e.stack||String(e)};report.checks.push(failure);report.failures.push(failure);await page.screenshot({path:path.join(out,"failure-"+report.checks.length+".png"),fullPage:true}).catch(()=>{});}
  finally{await ctx.close();}
 }
@@ -62,7 +58,7 @@ try{
  const preflight=await fetch(url);assert.equal(preflight.status,200,"Local harness must serve the control page");
  const executablePath=process.env.CHROMIUM_PATH||(process.platform==="darwin"?"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome":undefined);
  browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
- report.environment={node:process.version,platform:process.platform,browser:browser.version()};
+ report.environment={node:process.version,platform:process.platform,browser:browser.version(),executablePath:executablePath||chromium.executablePath()};
  report.files={};
  for(const p of ["knowledge/app.mjs","knowledge/core.mjs","knowledge/search.mjs","knowledge/kinds.mjs","knowledge/scripture.json","knowledge/pilot.json","knowledge/registry.mjs","knowledge/source-lock.mjs"])report.files[p]=await sha256(await fs.readFile(path.join(root,p)));
  await check("Search/navigation integration retains exact lines, separate kinds, Back/Forward, reload and deep-link refusal",{},async page=>{

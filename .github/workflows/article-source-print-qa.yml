@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   source-contracts:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -33,22 +33,16 @@ jobs:
           node tests/salok-kabir-content.mjs
           node tests/salok-kabir-bindings.mjs
           node tests/service-worker.mjs
-      - name: Existing source, teaching, readers and practice tools stay at the frozen parent
+      - name: Existing application inputs stay at the reviewed combined baseline
         run: |
-          git diff --exit-code 8917beaab7acc5770cb5a8fee682c9702a0689cb -- \
-            js/japji-full-data.js js/sukhmani-data.js js/source-integrity.js \
-            js/japji-full.js nitnem/data nitnem/learning nitnem/reader.js \
-            nitnem/local-learning.js salok-mahalla9/data salok-mahalla9/learning \
-            salok-kabir/data salok-kabir/learning research \
-            simran.html js/simran.js css/simran.css \
-            breathing.html js/breathing.js js/breathing-core.js css/breathing.css
+          node --test tests/library-script-integrity-inputs.mjs
           node tools/build-offline.mjs
           git diff --exit-code -- sw.js
           node --check articles/core.mjs
           node --check articles/source-contracts.mjs
           node --check articles/app.mjs
   browser-and-print:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4

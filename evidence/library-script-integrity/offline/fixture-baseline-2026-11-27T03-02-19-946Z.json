@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-27T03:02:19.535Z",
+  "baseline": "e0a6cff22771d42ce3a2fe91ad96863daae214ed",
+  "browser": "158.0.8127.37",
+  "checks": [
+    {
+      "fixedMime": false,
+      "errors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element.",
+        "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec."
+      ],
+      "dom": {
+        "state": "loading",
+        "oldPersonalTools": 0,
+        "oldHero": 0,
+        "newTools": 0,
+        "newHero": 1,
+        "newOptionalSection": 1
+      }
+    },
+    {
+      "fixedMime": true,
+      "errors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+      ],
+      "dom": {
+        "state": "ready",
+        "oldPersonalTools": 0,
+        "oldHero": 0,
+        "newTools": 2,
+        "newHero": 1,
+        "newOptionalSection": 1
+      }
+    }
+  ],
+  "limits": [
+    "Synthetic localhost contexts, service workers blocked; fixture MIME and current-baseline DOM check only."
+  ]
+}

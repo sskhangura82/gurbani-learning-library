@@ -4,13 +4,19 @@ on:
     paths:
       - 'knowledge/**'
       - 'tests/knowledge-*.mjs'
+      - 'tests/helpers/module-fixture.mjs'
+      - 'tools/build-app-bundles.mjs'
+      - 'tools/refresh-app-sri.mjs'
+      - 'tools/script-integrity/**'
+      - 'tests/library-script-integrity*.mjs'
+      - 'sw.js'
       - '.github/workflows/knowledge-pilot-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   contracts:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,10 +47,11 @@ jobs:
             evidence/knowledge-editorial-boundary/
             evidence/knowledge-search/
             evidence/knowledge-integration/
+            evidence/library-script-integrity/browser/
           retention-days: 90
   browser:
     needs: contracts
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -54,6 +61,9 @@ jobs:
         with:
           node-version: '22'
       - run: |
+          npm ci --prefix tools/script-integrity --ignore-scripts --no-audit --no-fund
+          node tools/build-app-bundles.mjs --check
+          node tools/refresh-app-sri.mjs --check
           npm install --no-save --package-lock=false playwright@1.62.1
           npx playwright install --with-deps chromium
           sudo apt-get install -y fonts-noto-core
@@ -71,4 +81,5 @@ jobs:
             evidence/knowledge-editorial-boundary/
             evidence/knowledge-search/
             evidence/knowledge-integration/
+            evidence/library-script-integrity/browser/
           retention-days: 90

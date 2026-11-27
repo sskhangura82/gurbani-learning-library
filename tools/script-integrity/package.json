@@ -1,0 +1,9 @@
+{
+  "name": "glp-script-integrity-tooling",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pinned development-only compiler and parser; never loaded by the application",
+  "engines": { "node": ">=22" },
+  "dependencies": { "acorn": "8.19.0", "esbuild": "0.28.2" }
+}

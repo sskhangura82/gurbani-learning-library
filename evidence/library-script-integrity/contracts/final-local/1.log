@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+ok 1 - Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+  ---
+  duration_ms: 1884.614333
+  type: 'test'
+  ...
+# Subtest: All existing application bytes stay frozen except the listed loader tags and worker manifest
+ok 2 - All existing application bytes stay frozen except the listed loader tags and worker manifest
+  ---
+  duration_ms: 1512.388083
+  type: 'test'
+  ...
+# Subtest: Reader loader contract and reviewed original module closures remain exact
+ok 3 - Reader loader contract and reviewed original module closures remain exact
+  ---
+  duration_ms: 180.702584
+  type: 'test'
+  ...
+# Subtest: All 14 production pages carry exactly 51 independently inventoried script pins
+ok 4 - All 14 production pages carry exactly 51 independently inventoried script pins
+  ---
+  duration_ms: 176.237167
+  type: 'test'
+  ...
+# Subtest: Generated modules reproduce exactly and contain no executable import or export-from edges
+ok 5 - Generated modules reproduce exactly and contain no executable import or export-from edges
+  ---
+  duration_ms: 100.557458
+  type: 'test'
+  ...
+# Subtest: Ordinary check mode writes neither bundles nor HTML
+ok 6 - Ordinary check mode writes neither bundles nor HTML
+  ---
+  duration_ms: 67.437792
+  type: 'test'
+  ...
+# Subtest: Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+ok 7 - Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+  ---
+  duration_ms: 4.87975
+  type: 'test'
+  ...
+# Subtest: Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+ok 8 - Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+  ---
+  duration_ms: 5.545084
+  type: 'test'
+  ...
+# Subtest: Extra HTML and stale source cannot silently pass default checks
+ok 9 - Extra HTML and stale source cannot silently pass default checks
+  ---
+  duration_ms: 205.989959
+  type: 'test'
+  ...
+# Subtest: A pinned bundle cannot retain secondary imports or recover an inline execution path
+ok 10 - A pinned bundle cannot retain secondary imports or recover an inline execution path
+  ---
+  duration_ms: 10.285083
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3626.775

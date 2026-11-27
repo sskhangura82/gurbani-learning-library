@@ -9,7 +9,7 @@ import {chromium} from 'playwright';
 const root=fileURLToPath(new URL('../',import.meta.url)),prefix='/glp-review/';
 const out=path.join(root,'evidence/learning-practice');
 const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8',
- '.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.webmanifest':'application/manifest+json'};
+ '.mjs':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.webmanifest':'application/manifest+json'};
 const report={checkedAt:new Date().toISOString(),engine:'Desktop Chromium',checks:[],
  limitations:['Network emulation, not physical airplane-mode acceptance. No iPhone or VoiceOver testing.']};
 const server=http.createServer(async(req,res)=>{
@@ -25,19 +25,50 @@ const server=http.createServer(async(req,res)=>{
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const origin='http://127.0.0.1:'+server.address().port;
 let browser,context;
+async function verifiedReleaseCache(page){
+ const worker=await fs.readFile(path.join(root,'sw.js'),'utf8');
+ const expected=JSON.parse(worker.match(/const EXPECTED=(\{[^\n]+\});/)[1]);
+ const version=worker.match(/const VERSION="([^"]+)";/)[1];
+ // Required new graph and complete Nitnem sources must not disappear merely
+ // because a regenerated manifest omits them. Existing surface-specific checks remain below.
+ for(const asset of [
+  './library/app.bundle.mjs','./articles/app.bundle.mjs','./knowledge/','./knowledge/index.html',
+  './knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json',
+  ...['jaap','savaiye','chaupai','anand','rehras','sohila'].map(name=>'./nitnem/data/'+name+'.json')
+ ])assert.ok(Object.hasOwn(expected,asset),'Required offline asset: '+asset);
+ const rows=[];
+ for(const [asset,digest]of Object.entries(expected)){
+  const filename=path.join(root,asset.endsWith('/')?asset+'index.html':asset);
+  assert.equal(createHash('sha256').update(await fs.readFile(filename)).digest('hex'),digest,'Manifest must match actual release bytes: '+asset);
+  const url=new URL(asset,origin+prefix+'sw.js');url.searchParams.set('glp_release',version);
+  rows.push({url:url.href,sha256:digest});
+ }
+ rows.sort((a,b)=>a.url.localeCompare(b.url));
+ const cache=await page.evaluate(async()=>{
+  const names=await caches.keys(),cache=await caches.open(names[0]),keys=await cache.keys();
+  const rows=await Promise.all(keys.map(async request=>{
+   const response=await cache.match(request),digest=await crypto.subtle.digest('SHA-256',await response.arrayBuffer());
+   return {url:request.url,sha256:Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,'0')).join('')};
+  }));
+  return {names,paths:keys.map(request=>new URL(request.url).pathname),rows:rows.sort((a,b)=>a.url.localeCompare(b.url))};
+ });
+ assert.deepEqual(cache.names,['glp-static:'+origin+prefix+':'+version]);
+ assert.deepEqual(cache.rows,rows,'Every cache URL, release query and response body must match the current release');
+ return cache;
+}
+
 try{
  browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
  report.browserVersion=browser.version();
  context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'allow'});
  const page=await context.newPage();page.setDefaultTimeout(20000);
  await page.goto(origin+prefix);
- await page.waitForFunction(()=>navigator.serviceWorker.controller!==null);
- const cache=await page.evaluate(async()=>{const names=await caches.keys();const requests=await(await caches.open(names[0])).keys();return {names,paths:requests.map(r=>new URL(r.url).pathname)};});
- assert.equal(cache.names.length,1);assert.equal(cache.paths.length,81);
+ await page.waitForFunction(()=>navigator.serviceWorker.controller!==null&&document.documentElement.dataset.libraryState==='ready');
+ const cache=await verifiedReleaseCache(page);
  for(const asset of ['breathing.html','css/breathing.css','js/breathing-core.js','js/breathing.js','simran.html','js/simran.js'])assert.ok(cache.paths.includes(prefix+asset));
  report.checks.push({name:'Home installs the complete hashed candidate shell including both separate practice pages',status:'PASS'});
- assert.equal(await page.locator('.personal-tools a[href="breathing.html"]').count(),1);
- assert.equal(await page.locator('#destinations a[href="breathing.html"]').count(),0);
+ assert.equal(await page.locator('.today-quiet a[href="breathing.html"]').count(),1);
+ assert.equal(await page.locator('#reader-list a[href="breathing.html"]').count(),0);
  for(const width of [320,390,820,1440]){
   await page.setViewportSize({width,height:844});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
@@ -51,12 +82,12 @@ try{
  try{
   const visual=await visualContext.newPage();await visual.goto(origin+prefix);
   await visual.evaluate(()=>document.fonts.ready);
-  const counts={header:await visual.locator('.home-header').count(),hero:await visual.locator('.home-hero').count(),tools:await visual.locator('.personal-tools').count()};
+  const counts={header:await visual.locator('.home-header').count(),hero:await visual.locator('.today-hero').count(),tools:await visual.locator('.today-quiet').count()};
   assert.deepEqual(counts,{header:1,hero:1,tools:1});
   await visual.screenshot({path:path.join(out,'home-390.png'),fullPage:false});
-  await visual.locator('.personal-tools').evaluate(node=>node.scrollIntoView({block:'center',behavior:'instant'}));
+  await visual.locator('.today-quiet').evaluate(node=>node.scrollIntoView({block:'center',behavior:'instant'}));
   await visual.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
-  const position=await visual.locator('.personal-tools').evaluate(node=>{const r=node.getBoundingClientRect();return {scrollY,top:r.top,bottom:r.bottom,viewport:innerHeight};});
+  const position=await visual.locator('.today-quiet').evaluate(node=>{const r=node.getBoundingClientRect();return {scrollY,top:r.top,bottom:r.bottom,viewport:innerHeight};});
   assert.ok(position.scrollY>0&&position.top>=0&&position.bottom<=position.viewport,'The actual optional tool section is visible after scrolling');
   await visual.screenshot({path:path.join(out,'home-tools-390.png'),fullPage:false});
   report.homeVisuals={capture:'Fresh fixed-width desktop context; viewport captures before and after actual scrolling',counts,toolsPosition:position,files:['home-390.png','home-tools-390.png']};
@@ -65,7 +96,7 @@ try{
  const priorStorage=await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).map(k=>[k,localStorage.getItem(k)])));
  await context.setOffline(true);
  const response=page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'breathing.html');
- await page.locator('.personal-tools a[href="breathing.html"]').click();
+ await page.locator('.today-quiet a[href="breathing.html"]').click();
  assert.equal((await response).fromServiceWorker(),true);
  await page.locator('#breathing-start').click();
  assert.equal(await page.locator('#pacer-stage').getAttribute('data-state'),'running');
