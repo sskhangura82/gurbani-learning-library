@@ -112,3 +112,48 @@ once tends to get quoted. The measurement was accidental both times — sixty-on
 pushes for unrelated reasons — which is worth noting as method: if a flake rate is
 wanted deliberately, run the same commit N times and count, rather than inferring
 from however many pushes happened to occur.
+
+
+---
+
+## Second correction, 2026-11-27 — it is deterministically reproducible, and my "not an off-by-one" claim was wrong
+
+Established while reviewing PR #47 (RT-019). Full evidence there; the correction
+belongs here because this is the document that will be quoted.
+
+**It reproduces on demand.** Seed a saved place, open the reader, click
+"Continue reading", then dispatch a single scroll event. The stored place moves
+forward. Four seeded positions, four drifts, with the scroll offset **identical
+before and after** — the page does not move at all:
+
+| Seeded | After one scroll event | scrollY |
+|---|---|---|
+| `a03.p01.l01` | `a03.p01.l03` | 21071 → 21071 |
+| `a03.p01.l02` | `a03.p01.l03` | 21137 → 21137 |
+| `a05.p02.l04` | `a05.p02.l06` | 40356 → 40356 |
+| `a12.p01.l01` | `a12.p01.l03` | 102185 → 102185 |
+
+The second row is this finding's original CI failure exactly. Controls: the click
+alone does not move it, and a scroll event alone does not move it. It needs both.
+
+**The mechanism.** `capture()` picks the row whose top is nearest **+28px**.
+After the restore, the restored line's top measures **−103px**, so the row
+nearest +28px is two rows on. `jump()` clears its `internalScroll` guard after a
+single animation frame and never clears the pending scroll timer, so one scroll
+event is enough to save that wrong line.
+
+**What I got wrong above.** I wrote that this is a race "which is precisely why
+an off-by-one hunt would not have found it." That was my worst steer on this
+finding. There is a deterministic off-by-N inside the race — a fixed
+disagreement between the restore alignment and the capture anchor — and comparing
+those two numbers would have found it. Only the *trigger* is random.
+
+**And the cost estimate I attached was wrong in the expensive direction.** I said
+a fix attempt passing twenty runs "has demonstrated very little" and implied
+about sixty runs per expected failure. That no longer holds: the defect is now a
+deterministic test. Anyone verifying a fix should assert on the controlled
+reproduction, not run the suite sixty times.
+
+The defect itself is unchanged, and still matters for the same reason: a person
+occasionally resumes Sukhmani Sahib past where they stopped. **It is still open,
+and PR #47 does not address it.**
