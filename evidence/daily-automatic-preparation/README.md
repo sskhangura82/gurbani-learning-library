@@ -27,3 +27,15 @@ That failure remains open. No extractor, expected scripture or print gate was al
 ## Not performed
 
 No schedule enabled, publisher configured, signed event replaced, merge, deployment, permission contact, physical iPhone/Safari/VoiceOver acceptance, or qualified content review.
+
+## Subsequent hosted test-clock findings
+
+Initial hosted runs on the Daily and Haumai branches exposed a test helper reinstalling Playwright’s context-wide clock for a second page. An isolated reproduction confirmed that it rewound the first tab before the saved note’s creation time. The reader correctly refused the edit and preserved both stored and unsaved text. The same canonical test-only correction was applied to all three new candidates. The original failed reports and logs are retained in `hosted-initial-failures/`; diagnostic evidence is separately retained on `evidence/daily-browser-clock-20261127`.
+
+A subsequent Daily run reached the later historical-import edit scenario and exposed the corresponding cross-context clock assumption: the fresh test browser could begin before the exported note’s creation time. The test fixture now uses a validated current time after every imported timestamp, with imported note bytes and the application’s clock guard left intact. Its deterministic before/after evidence is retained in `imported-note-clock/`. Final hosted results are recorded separately.
+
+Local source/preparation tests ran with the Mac’s installed Node 26.0.0. Hosted workflows use Node 22. No physical-device claim follows from either.
+
+## Final hosted status
+
+All applicable hosted workflows completed successfully on the exact final heads of draft PRs 64, 65 and 66 recorded in `hosted-final-runs.json`. The earlier failed runs remain retained. This does not close the separate article print finding on the earlier composite, prove physical-device behavior, or confer independent/qualified approval. The three new branches have not been assembled into another tested main-branch composite; their common changed test file is byte-identical as recorded in `branch-overlap.json`.

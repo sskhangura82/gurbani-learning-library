@@ -12,7 +12,7 @@ Next: independent review, then a separately reviewed installation/publication pa
 
 The existing Knowledge passage is Guru Angad Dev Ji's complete Asa Di Vaar Salok, stable identity `sggs.asa-di-vaar.pauri007.salok02`. The source includes `ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ`; the current draft explanation still omits that part. Qualified correction is outstanding. No new AI exposition is to fill it.
 
-The current candidate in `feature/haumai-learning-journey-20261127` extends that same Knowledge page with source-bound personal questions/reflections, earlier/later notes, user-chosen return dates, backups and optional clearly separated comparison. Explanation and Gurbani-derived practice remain pending qualified review. The printable Haumai source sheet is a different passage (Salok Mahalla 9, Salok 19); never attach one passage's explanation to the other by a shared topic name.
+PR 66, in `feature/haumai-learning-journey-20261127`, extends that same Knowledge page with source-bound personal questions/reflections, earlier/later notes, user-chosen return dates, backups and optional clearly separated comparison. Explanation and Gurbani-derived practice remain pending qualified review. The printable Haumai source sheet is a different passage (Salok Mahalla 9, Salok 19); never attach one passage's explanation to the other by a shared topic name.
 
 Next: independently review the mechanics and preserve the content gap visibly. A working notebook around a passage is not a finished qualified lesson.
 
@@ -24,7 +24,7 @@ Next: an original-only derived index with source-occurrence identities, existing
 
 ## 4. Bhagat Farid Ji
 
-The source-only candidate preserves the observed numbered collection span exactly, including its known missing Salok 2 ending. The displaced ending remains separately quarantined at its upstream locator; the collection-heading punctuation disagreement remains open. Explicit Mahalla headings are retained without automatic author reassignment.
+PR 65 preserves the observed numbered collection span exactly, including its known missing Salok 2 ending. The displaced ending remains separately quarantined at its upstream locator; the collection-heading punctuation disagreement remains open. Explicit Mahalla headings are retained without automatic author reassignment.
 
 Next: a separately reviewed selection ledger resolving the displaced occurrence and heading selection before admitting a complete collection to the existing reader. Farid's numbered Salok collection and author-wide Raag Bani are distinct scopes. Do not advertise a complete collection from an incomplete raw forward slice.
 
@@ -55,3 +55,11 @@ Next safe engineering increment: a content-free historical source/claim model wi
 ## Shared release state
 
 The earlier integrated reader/Daily candidate passed its reader, Knowledge, integrity, backup and Daily checks. Its print-fidelity failure remains open. No feature in this register is a family-site release. No physical-device acceptance or qualified scholarship is claimed. The founder does not need to repeat the standing instruction to continue branch-only implementation.
+
+## Review links
+
+- Daily preparation: https://github.com/sskhangura82/gurbani-learning-library/pull/64
+- Farid and corpus intake: https://github.com/sskhangura82/gurbani-learning-library/pull/65
+- Haumai learning mechanics: https://github.com/sskhangura82/gurbani-learning-library/pull/66
+
+All are draft branches on the same reviewed base. Their one shared changed file is the same browser-test clock correction; there is no competing application edit between these three. That byte comparison is not a whole-composite test or release approval.

@@ -1,0 +1,44 @@
+{
+  "schema": "glp.daily-import-clock-repair.v1",
+  "baseCommit": "34a413bf8e76ff374de654094c8aaf9510fff23d",
+  "failedHostedRun": 46006668072,
+  "failedHostedRunUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46006668072",
+  "baselineTestSha256": "3f627ea51b3940ba99c948f30623eaaa6701b712729323dc4837a4c95bd2617b",
+  "diagnosticCopySha256": "c44f958ece12a56434e729981b1773212562e3de892085ff587c31ce380a2f6e",
+  "fixedTestSha256": "0aeb76ee377c4f87d9ac29daf8db466cb2a6c739b41587ac69308242a94d02a7",
+  "cause": "New synthetic context reset to base time, earlier than an imported note created by a different context. Product correctly refuses INVALID_CLOCK.",
+  "reproduction": {
+    "attemptClock": "2026-11-27T12:00:00.231Z",
+    "createdAt": "2026-11-27T12:00:05.174Z",
+    "updatedAt": "2026-11-27T12:00:05.174Z",
+    "visibleRefusal": "The device clock predates this note. Your existing record has been preserved.",
+    "storedAndUnsavedTextRetained": true
+  },
+  "repair": "Validate every imported createdAt/updatedAt and initialize the new context one millisecond after their maximum and the baseline clock, without modifying imported notes. Require the staged Amritsar date.",
+  "fullFreshBrowserResult": "PASS",
+  "scenarioCount": 32,
+  "historicalNoteClock": {
+    "initialTime": "2026-11-27T12:00:00.232Z",
+    "latestImportedTime": "2026-11-27T12:00:00.231Z",
+    "beforeSave": "2026-11-27T12:00:00.414Z",
+    "fixtureTimestampsUnchanged": true
+  },
+  "twoTabClock": {
+    "beforeSecondClock": 1795780806017,
+    "afterSecondClock": 1795780806057,
+    "existingCreatedAt": "2026-11-27T12:00:00.231Z",
+    "conflictingInitialTimeRefused": true
+  },
+  "applicationBytesUnchanged": true,
+  "productDigests": {
+    "hukamnama/reader.mjs": "d73a43a1f73626561d547c9b361dc4549b82c4d8f23c254fa3482900162a3b17",
+    "hukamnama/learning.mjs": "b27aa14332dcb07f589faecf4616a31f90414afcdd628ab6d66399328d203d54",
+    "hukamnama/reader.bundle.mjs": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+    "hukamnama/core.mjs": "b93d06e8d3347e39dba5524b04c36c629a762f001e571822f662d0f3cd7bab6d"
+  },
+  "timeoutMillisecondsUnchanged": 12000,
+  "limits": [
+    "Desktop Chromium with fresh synthetic browser contexts only.",
+    "The completed hosted failure had no DOM snapshot; the same concrete refusal is demonstrated in the isolated controlled reproduction."
+  ]
+}

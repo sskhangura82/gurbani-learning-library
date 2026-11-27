@@ -1,0 +1,45 @@
+--- tests/hukamnama-browser.mjs@34a413bf8e76ff374de654094c8aaf9510fff23d
++++ isolated-import-clock-diagnostic.mjs
+@@ -3,9 +3,9 @@
+ import path from "node:path";
+ import assert from "node:assert/strict";
+ import {fileURLToPath} from "node:url";
+-import {chromium} from "playwright";
+-
+-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
++import {chromium} from "/tmp/glp001-iphoneqa-20261126/source/node_modules/playwright/index.mjs";
++
++const root = "/tmp/glp001-iphoneqa-20261126/daily-automatic-preparation";
+ const prefix = "/gurbani-learning-library/";
+ const key = "glp001.hukamnama.learning.v1";
+ const latestDate = (await fs.readdir(path.join(root,"hukamnama/events"))).filter(name => /^\d{4}-\d\d-\d\d\.json$/.test(name)).sort().at(-1)?.slice(0,-5);
+@@ -35,7 +35,7 @@
+ const origin = "http://127.0.0.1:" + server.address().port;
+ const url = origin + prefix + "hukamnama/";
+ const run = new Date().toISOString().replace(/[:.]/g,"-");
+-const out = path.join(root,"evidence","daily-hukamnama","ui",run);
++const out = path.join("/tmp/glp001-daily-import-clock-diagnostics-20261127",run);
+ await fs.mkdir(out,{recursive:true});
+ const report = {status:"PASS",candidateDate:latestDate,scenarios:[],pageErrors:[],limits:["Fresh synthetic Chromium contexts only; no physical iPhone, iPad, Safari, VoiceOver or human acceptance claim.","One exact official dated development event; unavailable dates are never fabricated.","Current Simple/Detailed/Learning source-linked explanations remain pending; no interpretation generated."]};
+ let browser;
+@@ -82,7 +82,10 @@
+ async function storage(page) { return page.evaluate(key => localStorage.getItem(key),key); }
+ async function save(page, question, reflection) {
+  await panel(page,"learning"); await page.locator("#question").fill(question); await page.locator("#reflection").fill(reflection);
+- await page.locator("#save-note").click(); await page.waitForFunction(() => /saved on this device|Both versions/.test(document.getElementById("note-status").textContent));
++ report.lastSaveAttempt = await page.evaluate(key => ({now:new Date().toISOString(),hidden:document.hidden,reflection:document.getElementById("reflection").value,store:JSON.parse(localStorage.getItem(key))}),key);
++ await page.locator("#save-note").click();
++ try { await page.waitForFunction(() => /saved on this device|Both versions/.test(document.getElementById("note-status").textContent)); }
++ catch (error) { report.saveFailureDiagnostic = await page.evaluate(key => ({now:new Date().toISOString(),hidden:document.hidden,noteStatus:document.getElementById("note-status").textContent,saveDisabled:document.getElementById("save-note").disabled,reflection:document.getElementById("reflection").value,store:JSON.parse(localStorage.getItem(key))}),key);throw error; }
+ }
+ try {
+  browser = await chromium.launch({headless:true,...(process.env.GLP_CHROME_PATH ? {executablePath:process.env.GLP_CHROME_PATH} : {})});
+@@ -212,7 +215,7 @@
+  await check("Private question and reflection save under the exact event and line; export preserves Unicode",async () => {
+   await loaded(notePage); await panel(notePage,"learning");
+   const selected = source.occurrences.find(line => line.kind === "verse") || source.occurrences[0];
+-  await notePage.locator("#line-choice").selectOption(selected.id); await save(notePage,question,reflection);
++  await notePage.locator("#line-choice").selectOption(selected.id); await notePage.clock.runFor(5000); await save(notePage,question,reflection);
+   savedBytes = await storage(notePage); const record = JSON.parse(savedBytes).records[0];
+   assert.equal(record.question,question); assert.equal(record.reflection,reflection);
+   assert.equal(record.binding.eventId,event.id); assert.equal(record.binding.sourceSha256,event.source.sha256);

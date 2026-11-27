@@ -1,0 +1,39 @@
+{
+  "schema": "glp.priority-review-candidates.v1",
+  "base": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+  "candidates": [
+    {
+      "priority": "automatic-daily-preparation",
+      "pullRequest": 64,
+      "branch": "feature/daily-automatic-preparation-20261127",
+      "head": "062ae5aff9ca18b1706d6273efb43a9e806d666c"
+    },
+    {
+      "priority": "farid-and-corpus-source-intake",
+      "pullRequest": 65,
+      "branch": "feature/farid-source-intake-20261127",
+      "head": "4eee4f26bf7bad7ce52d4c958c06a94da1262ecb"
+    },
+    {
+      "priority": "haumai-learning-mechanics",
+      "pullRequest": 66,
+      "branch": "feature/haumai-learning-journey-20261127",
+      "head": "ebc190509759dcc2460f23005c81b217c5de40ee"
+    }
+  ],
+  "sharedTestCorrection": {
+    "canonicalCommit": "34a413bf8e76ff374de654094c8aaf9510fff23d",
+    "path": "tests/hukamnama-browser.mjs",
+    "applicationFilesChanged": false,
+    "evidenceBranch": "evidence/daily-browser-clock-20261127",
+    "additionalCanonicalCommit": "062ae5aff9ca18b1706d6273efb43a9e806d666c"
+  },
+  "merged": false,
+  "deployed": false,
+  "qualifiedApproved": false,
+  "earlierCandidateHeads": {
+    "64": "34a413bf8e76ff374de654094c8aaf9510fff23d",
+    "65": "66afc1c74ec06ff3a0eed04fdc56721047741faf",
+    "66": "fd7819b763f92db73116ceb44390de3e43924202"
+  }
+}
