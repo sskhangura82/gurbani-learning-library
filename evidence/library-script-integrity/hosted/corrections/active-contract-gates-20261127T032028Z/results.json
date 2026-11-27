@@ -1,0 +1,211 @@
+{
+  "commands": [
+    {
+      "command": [
+        "node",
+        "tests/verify.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/01-verify.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/02-service-worker.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/shared-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/03-shared-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/japji-retained-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/04-japji-retained-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/source-integrity.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/05-source-integrity.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/reader-sri.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/06-reader-sri.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "js/japji-full.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/07-japji-full.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r6-contract.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/08-r6-contract.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r7-contract.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/09-r7-contract.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/10-sukhmani-content.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-reader-core.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/11-sukhmani-reader-core.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "js/sukhmani-reader.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/12-sukhmani-reader.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "js/sukhmani-learning.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/13-sukhmani-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/14-nitnem-content.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/15-nitnem-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-backup-capacity.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/16-nitnem-backup-capacity.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-ui-lifecycle.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/17-nitnem-ui-lifecycle.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/reader.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/18-reader.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/local-learning.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/19-local-learning.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/learning/learning-ui.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/20-learning-ui.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "nitnem/offline.js"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/21-offline.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/library-script-integrity-inputs.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/22-library-script-integrity-inputs.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/library-catalog.mjs",
+        "tests/article-source.mjs",
+        "tests/source-integrity.mjs",
+        "tests/salok-kabir-bindings.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/23-salok-kabir-bindings.log"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "library/app.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/hosted/corrections/active-contract-gates-20261127T032028Z/24-app.log"
+    }
+  ],
+  "deliveryFilesUnchanged": 152
+}

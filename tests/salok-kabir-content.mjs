@@ -79,14 +79,29 @@ await test('Draft authority is explicit and old scripture and teaching stay froz
  assert.equal(course.meta.publicationAllowed,false);assert.equal(course.meta.reviewer,null);assert.equal(course.coverage.reviewedUnitLessons,0);assert.equal(course.coverage.reviewedSourceMeaningLines,0);
  for(const [file,expected]of Object.entries({'nitnem/data/library.json':'9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75','nitnem/learning/course.complete.json':'5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c','salok-mahalla9/data/library.json':'abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e','salok-mahalla9/data/salok-mahalla9.json':'f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75','salok-mahalla9/learning/course.complete.json':'e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79'}))assert.equal(sha(read(file)),expected,file);
 });
-await test('Reader pins, both pages script integrity and all69 offline assets match exact files',()=>{
+await test('Reader pins, both pages script integrity and the complete declared offline assets match exact files',()=>{
  const reader=read('nitnem/reader.js').toString();assert.ok(reader.includes("const KABIR_SOURCE_MANIFEST='"+sha(read('salok-kabir/data/library.json'))+"'"));assert.ok(reader.includes("const KABIR_TEACHING='"+sha(read('salok-kabir/learning/course.complete.json'))+"'"));
  for(const page of ['salok-kabir/index.html','salok-mahalla9/index.html']){
   const scripts=[...read(page).toString().matchAll(/<script src="([^"]+)" integrity="sha256-([^"]+)" crossorigin="anonymous"><\/script>/g)];assert.equal(scripts.length,6);
   for(const m of scripts)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL(m[1],new URL(page,root)))).digest('base64'),m[2]);}
- const cache=JSON.parse(read('sw.js').toString().match(/const EXPECTED=(\{[^\n]+\});/)[1]);assert.equal(Object.keys(cache).length,81);
- for(const file of ['./salok-kabir/','./salok-kabir/index.html','./salok-kabir/data/library.json','./salok-kabir/data/salok-kabir.json','./salok-kabir/learning/course.complete.json'])assert.ok(cache[file]);
- for(const [name,digest]of Object.entries(cache))assert.equal(sha(read(name.endsWith('/')?name+'index.html':name)),digest,name);
+ const cache=JSON.parse(read('sw.js').toString().match(/const EXPECTED=(\{[^\n]+\});/)[1]);
+ // This independent reader inventory prevents a matching but incomplete manifest
+ // from passing. Added collections may grow the release without weakening it.
+ const required=['./salok-kabir/','./salok-kabir/index.html','./salok-kabir/data/library.json',
+  './salok-kabir/data/salok-kabir.json','./salok-kabir/learning/course.complete.json',
+  './nitnem/reader.js','./nitnem/continuous-core.js','./nitnem/appearance.js',
+  './nitnem/local-learning.js','./nitnem/learning/learning-ui.js','./nitnem/offline.js',
+  './library/app.bundle.mjs','./articles/app.bundle.mjs','./knowledge/app.bundle.mjs'];
+ for(const file of required)assert.ok(Object.hasOwn(cache,file),'Required offline source or executable: '+file);
+ const urls=new Set();
+ for(const [name,digest] of Object.entries(cache)){
+  assert.ok(name.startsWith('./'),'Manifest paths are explicitly relative');
+  const url=new URL(name,root);
+  assert.equal(url.protocol,root.protocol);assert.ok(url.href.startsWith(root.href),'Manifest path stays in application');
+  assert.equal(url.search,'');assert.equal(url.hash,'');assert.match(digest,/^[a-f0-9]{64}$/);
+  assert.ok(!urls.has(url.href),'Manifest URLs are unique');urls.add(url.href);
+  assert.equal(sha(read(name.endsWith('/')?name+'index.html':name)),digest,name);
+ }
 });
 await test('Storage uses separate collection identity and rejects foreign learning atomically',async()=>{
  const context={window:{},structuredClone,TextEncoder,TextDecoder,crypto:crypto.webcrypto};vm.runInNewContext(read('nitnem/local-learning.js').toString(),context);

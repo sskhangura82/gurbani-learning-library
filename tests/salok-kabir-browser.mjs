@@ -345,10 +345,37 @@ try{
  const offlineContext=await newContext({serviceWorkers:'allow'}),offline=await newPage(offlineContext);await ready(offline);
  await check('The actual root worker verifies and caches all declared assets, including the new reader',async()=>{
   await offline.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:60000});
-  const actual=await offline.evaluate(async()=>{const prefix='glp-static:'+location.origin+'/gurbani-learning-library/:',names=(await caches.keys()).filter(name=>name.startsWith(prefix));return{names,scope:new URL((await navigator.serviceWorker.getRegistration()).scope).pathname,assets:await Promise.all(names.map(async name=>(await(await caches.open(name)).keys()).map(request=>new URL(request.url).pathname)))};});
-  assert.equal(actual.scope,PREFIX);assert.equal(actual.names.length,1);const expectedPaths=Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort();assert.deepEqual(actual.assets[0].sort(),expectedPaths);assert.equal(expectedPaths.length,81);
-  for(const relative of [SOURCE,TEACHING,'salok-kabir/index.html'])assert.ok(actual.assets[0].includes(PREFIX+relative),'Missing offline asset '+relative);
-  report.coverage.verifiedOfflineAssetCount=expectedPaths.length;
+  const version=JSON.parse(workerSource.match(/const VERSION=("[^"]+");/)[1]);
+  const required=[SOURCE,TEACHING,'salok-kabir/','salok-kabir/index.html','salok-kabir/data/library.json',
+   'nitnem/reader.js','nitnem/continuous-core.js','nitnem/appearance.js','nitnem/local-learning.js',
+   'nitnem/learning/learning-ui.js','nitnem/offline.js','library/app.bundle.mjs','articles/app.bundle.mjs','knowledge/app.bundle.mjs'];
+  for(const asset of required)assert.ok(Object.hasOwn(expectedAssets,'./'+asset),'Required source or executable in offline manifest: '+asset);
+  const expected=Object.entries(expectedAssets).map(([asset,digest])=>{
+   assert.ok(asset.startsWith('./'));const url=new URL(asset,origin+PREFIX+'sw.js');
+   assert.equal(url.origin,origin);assert.ok(url.pathname.startsWith(PREFIX));assert.equal(url.search,'');assert.equal(url.hash,'');assert.match(digest,/^[a-f0-9]{64}$/);
+   url.searchParams.set('glp_release',version);return{url:url.href,sha256:digest};
+  }).sort((a,b)=>a.url.localeCompare(b.url));
+  assert.equal(new Set(expected.map(entry=>entry.url)).size,expected.length,'Every declared release URL is unique');
+  const actual=await offline.evaluate(async()=>{
+   const prefix='glp-static:'+location.origin+'/gurbani-learning-library/:';
+   const names=(await caches.keys()).filter(name=>name.startsWith(prefix));
+   const assets=await Promise.all(names.map(async name=>{
+    const cache=await caches.open(name),entries=[];
+    for(const request of await cache.keys()){
+     const response=await cache.match(request);if(!response?.ok)throw Error('Missing or unsuccessful cached response');
+     const hash=await crypto.subtle.digest('SHA-256',await response.arrayBuffer());
+     entries.push({url:request.url,sha256:Array.from(new Uint8Array(hash),n=>n.toString(16).padStart(2,'0')).join('')});
+    }
+    return entries.sort((a,b)=>a.url.localeCompare(b.url));
+   }));
+   return{names,scope:new URL((await navigator.serviceWorker.getRegistration()).scope).pathname,assets};
+  });
+  assert.equal(actual.scope,PREFIX);
+  assert.deepEqual(actual.names,['glp-static:'+origin+PREFIX+':'+version]);
+  assert.deepEqual(actual.assets[0].map(entry=>entry.url),expected.map(entry=>entry.url),'The cache has exactly the declared versioned URLs');
+  assert.deepEqual(actual.assets[0],expected,'Every cached response has its independently declared digest');
+  for(const relative of required)assert.ok(actual.assets[0].some(entry=>new URL(entry.url).pathname===PREFIX+relative),'Missing offline asset '+relative);
+  report.coverage.verifiedOfflineAssetCount=expected.length;
  });
  await jump(offline,33);await selectLine(offline,NOTE_ID);await openTools(offline);await offline.locator('#note').fill(NOTE);await offline.locator('#save-note').click();await waitSavedNote(offline,NOTE_ID,NOTE);await closeTools(offline);await offlineContext.setOffline(true);
  await check('Offline reload retains all 494 source occurrences, 486 meanings and 243 studies',async()=>{

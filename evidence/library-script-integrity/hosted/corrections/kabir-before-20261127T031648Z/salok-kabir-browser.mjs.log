@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "passed": 39,
+  "failed": 1,
+  "browser": "158.0.8127.37",
+  "failures": [
+    {
+      "name": "The actual root worker verifies and caches all declared assets, including the new reader",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n93 !== 81\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-browser.mjs:349:249\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-browser.mjs:53:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-browser.mjs:346:2"
+    }
+  ]
+}

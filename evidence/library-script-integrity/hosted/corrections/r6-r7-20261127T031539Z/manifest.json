@@ -1,0 +1,46 @@
+{
+  "kind": "Builder test evidence provenance",
+  "commands": [
+    {
+      "command": "node tests/r6-contract.mjs",
+      "exitCode": 1,
+      "capturedLog": "r6-contract.mjs.log",
+      "generatedReports": []
+    },
+    {
+      "command": "node tests/r7-contract.mjs",
+      "exitCode": 0,
+      "capturedLog": "r7-contract.mjs.log",
+      "generatedReports": []
+    },
+    {
+      "command": "node tests/verify.mjs",
+      "exitCode": 0,
+      "capturedLog": "verify.mjs.log",
+      "generatedReports": [
+        "node-verification.json"
+      ]
+    }
+  ],
+  "wrapperProduced": [
+    "summary.json",
+    "manifest.json"
+  ],
+  "baselineInputCopies": [],
+  "removedUnchangedHistoricalVerdictCopies": [
+    "r6-contract.json"
+  ],
+  "fileSha256": {
+    "node-verification.json": "c83db104ae5973e4a8f9f9f44454fa43ab75919350e6c62289e50a8ba548ad9c",
+    "r6-contract.mjs.log": "a9f9deeec183e3928813ff6bcc4de82a6763df64a0f7d22afdc33ead0c282b36",
+    "r7-contract.mjs.log": "1b2f03205d2952ed1595a86662927e1720bdb6478d523b8a16c44b22c738a9c0",
+    "summary.json": "23ebfa1f222c67648dc5a03cad638f9ce47145c4e00cea36c55e920e44561d24",
+    "verify.mjs.log": "92b86cf7da289f7d9912e11d84cc3703a12558d8fef5b91388031e3997d6b37d"
+  },
+  "limits": [
+    "These are local correction checks, not a replacement hosted CI verdict.",
+    "The failed runs retain their logs and actual failing browser report.",
+    "Any browser checks used fresh synthetic desktop Chrome contexts; no physical iPhone, Safari or VoiceOver acceptance.",
+    "No original committed evidence was deleted or edited by this cleanup."
+  ]
+}

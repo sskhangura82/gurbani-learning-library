@@ -1,0 +1,85 @@
+{
+  "base": "/private/tmp/glp001-lock-portability-g7heev0y",
+  "repo": "/private/tmp/glp001-iphoneqa-20261126/library-script-integrity",
+  "node": "v22.15.0",
+  "npm": "10.9.2",
+  "beforeSHA256": "9eeb9d2ac0ee97c593af32b9470fa38bd4dea68a99bd57d530d3bc6b133242f5",
+  "packageSHA256": "b205c205a8aa03720c60c14ca0c1647333594a14e2a0e9ed34299aed46bb1103",
+  "registryEntriesUnchanged": 28,
+  "registryEntryFingerprint": "40801e0aa87d8fb8d80b9b6d4c751f893fca49c09f6c7fd4152c5fb7ec3e5126",
+  "afterSHA256": "fefe8375d708f3acc859ccaee351f492aad525006b9b0e41a2e41c6ab4e9f604",
+  "cleanSource": "/private/tmp/glp001-lock-portability-g7heev0y/clean-source",
+  "cleanCI": {
+    "command": [
+      "npm",
+      "ci",
+      "--prefix",
+      "tools/script-integrity",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund"
+    ],
+    "exitCode": 0,
+    "rootNodeModulesPresent": false
+  },
+  "cleanGenerationChecks": [
+    {
+      "command": [
+        "node",
+        "tools/build-app-bundles.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\"status\":\"PASS\",\"mode\":\"check\",\"applications\":3,\"changedFiles\":[],\"sourceInputs\":12}\n"
+    },
+    {
+      "command": [
+        "node",
+        "tools/refresh-app-sri.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\"status\":\"PASS\",\"mode\":\"check\",\"pages\":14,\"scriptOccurrences\":51,\"moduleOccurrences\":4,\"changedPages\":[],\"scope\":\"Subresource protection under trusted HTML; HTML and worker authenticity remain outside this check.\"}\n"
+    },
+    {
+      "command": [
+        "node",
+        "tools/refresh-reader-sri.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\"status\":\"PASS\",\"mode\":\"check\",\"pages\":5,\"scriptOccurrences\":36,\"changedPages\":[],\"scope\":\"Five reader pages only; trusted HTML, worker and library module graph remain outside this check.\"}\n"
+    }
+  ],
+  "prefixExperiments": [
+    {
+      "mode": "physical-prefix",
+      "cwd": "/private/tmp/glp001-lock-portability-g7heev0y",
+      "prefix": "/private/tmp/glp001-lock-portability-g7heev0y/physical-prefix",
+      "exitCode": 0,
+      "rootVersion": "1.0.0",
+      "canonicalKeys": true,
+      "firstPackageKey": "node_modules/@esbuild/aix-ppc64"
+    },
+    {
+      "mode": "logical-prefix",
+      "cwd": "/private/tmp/glp001-lock-portability-g7heev0y",
+      "prefix": "/tmp/glp001-lock-portability-g7heev0y/logical-prefix",
+      "exitCode": 0,
+      "rootVersion": "file:../../../private/tmp/glp001-lock-portability-g7heev0y/logical-prefix",
+      "canonicalKeys": false,
+      "firstPackageKey": "../../../private/tmp/glp001-lock-portability-g7heev0y/logical-prefix/node_modules/@esbuild/aix-ppc64"
+    }
+  ],
+  "runtimeFingerprint": {
+    "files": 152,
+    "allMatch": true,
+    "manifestSHA256": "6762b0df78de83236dda41039501563e4f11d98c4cf8390fdcc674f52a219296"
+  },
+  "preinstallGate": {
+    "source": "/private/tmp/glp001-lock-portability-g7heev0y/preinstall-gate",
+    "exitCode": 0,
+    "installedDependencies": false
+  },
+  "diagnosis": "npm 10.9.2 using --prefix through the macOS /tmp symlink reproduced machine-specific package-lock keys and a file: root version in a clean directory. The same manifest and install flags with a physical /private/tmp prefix produced a portable lock. Shared root node_modules was absent in both experiments. The repaired lock changes only root version and dependency keys; all 28 registry records remain exact."
+}

@@ -1,0 +1,28 @@
+{
+  "head": "69e24fe4adfccbd535de2b5f8ac0bab5ed720d94",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "macOS"
+  },
+  "results": [
+    {
+      "test": "tests/r6-contract.mjs",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:122\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: pauri-2-lesson.html\n+ actual - expected\n\n+ 'fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea'\n- '3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/r6-contract.mjs:21:231\n    at test (file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/r6-contract.mjs:5:35)\n    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/r6-contract.mjs:21:7 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 'fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea',\n  expected: '3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875',\n  operator: 'strictEqual'\n}\n\nNode.js v22.15.0"
+    },
+    {
+      "test": "tests/r7-contract.mjs",
+      "returncode": 0,
+      "stdout": "{\"total\":12,\"checks\":[\"Entry points are distinct home and unchanged continuous Japji\",\"Home has four library entrances and retains its reading, places and Simran destinations without login\",\"PWA Home Screen starts at root with unchanged app id\",\"Guide pace normalizer accepts every five step up to 160\",\"Old and new pace preferences remain compatible\",\"Reader exposes one-tap numeric pace control and no media\",\"Pace logic enters existing synchronized preference-merging mechanism\",\"The frozen scripture and editorial layers remain separate\",\"Three gurdwara sources are official HTTPS and not media embeds\",\"Simran preview is silent and does not persist meditation metrics\",\"External place links use explicit new-tab protections\",\"New routes and scripts are included in offline release\"],\"status\":\"PASS\"}",
+      "stderr": ""
+    },
+    {
+      "test": "tests/verify.mjs",
+      "returncode": 0,
+      "stdout": "{\"total\":27,\"status\":\"PASS\"}",
+      "stderr": ""
+    }
+  ],
+  "priorEvidenceRestored": true
+}
