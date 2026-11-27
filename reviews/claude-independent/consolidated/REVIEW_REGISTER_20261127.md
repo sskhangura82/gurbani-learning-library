@@ -204,3 +204,69 @@ not independently verified them.
 
 Now **thirty**, including two vacuous results in RT-024 I nearly reported as
 findings, and a Unicode test in RT-025 that used the escape for the letter `x`.
+
+---
+
+## Fourth update — the composite CI run, and the print gate
+
+### Candidate added
+
+| PR | head | review | verdict |
+|---|---|---|---|
+| #63 | `7f36c303` | RT-026 | **No new code.** Validation-only draft; identical SHA to #62's reviewed head, zero differing paths. RT-025 applies unchanged |
+
+#63 is the composite CI run I named as the open limit in CHAIN-02 and said was the
+builder's to arrange. They arranged it. It found something.
+
+### What it found
+
+One check failed: `browser-and-print`. **Pre-existing, not a composite regression.**
+Failing at #55's own head (`acfeb0a157fc`); did not run at #56, #59, #60 or #61, whose
+bases fall outside the workflow's `branches:` list. Invisible for four candidates.
+
+### Findings
+
+| ID | State |
+|---|---|
+| **ART-P01** | **OPENED.** The print gate fails on correct PDFs. `PyMuPDF==1.26.6` (the engine the workflow pins) duplicates the dependent vowel sign after a subjoined-ਰ cluster: `ਪ੍ਰਾਨੀ` → `ਪ੍ਰਾਾਨੀ` (U+0A3E twice), `ਪ੍ਰੀਤਿ` → `ਪ੍ਰੀੀਤਿ` (U+0A40 twice). Signature across all six print artifacts, both page sizes: line01 exact=False, line02 exact=True, because only line01 holds such a cluster |
+| **CI-02** | **OPENED.** Branch filtering reports a failing check as absent on candidate PRs. Second instance of the class (first: the 85-vs-81 case in RT-021). `main` *is* in the trigger list, so filtering delays discovery until after a merge rather than preventing the failure |
+| CHAIN-02's stated limit | **CLOSED as far as review can close it.** The composite has now been exercised by CI as a merge into `main`. One red check, attributed |
+
+### The documents are correct — three independent checks
+
+1. Canonical text from `salok-mahalla9/data/` and `salok-kabir/data/` is **digest-exact**
+   to the pins in `articles/source-contracts.mjs`, under none/NFC/NFD alike.
+2. The PDF's own `/ActualText` span for the affected cluster is four codepoints with
+   **one** matra. The duplication does not exist in the document.
+3. Poppler `pdftotext` 24.02.0 extracts **all twelve** pinned lines exact, exactly once,
+   both lines of each pair on one page. Pagination-stress: complete on page 2 of 3.
+
+Artifact identity held: the haumai A4 I measured is sha256 `6a5bc6b6…`, and the inspector's
+own output directory is named `haumai-source-sheet-a4-6a5bc6b6`.
+
+### The constraint I recorded against ART-P01
+
+The gate's declared normalization — NFC plus whitespace collapsing, **no letter or
+punctuation removal** — is correct and cannot absorb this defect, because the defect
+inserts a letter. Loosening the matcher to pass would make the gate blind to a duplicated
+matra, which is a silent Gurmukhi spelling corruption. The gate is load-bearing exactly
+where it misfires. The fix belongs in the engine, and it is the builder's to choose.
+
+### Still open by design
+
+`"visualReview": "NOT_PERFORMED_BY_SCRIPT"` — no script closes it; I have not performed it.
+
+### Error count
+
+Now **thirty-two**. Error 31: I built and verified a pdfium space-insertion mechanism
+before checking which engine the workflow pins — right measurement, wrong instrument.
+Error 32: a guessed filename produced a silent 0-byte download that, unchecked, would have
+reported zero Gurmukhi and corroborated the CI failure for the wrong reason. Both disclosed
+in the thread; RT-026 carries an appended correction rather than a silent edit.
+
+### Bearing on the founder's decision
+
+Merging the reviewed composite puts a red `browser-and-print` check on `main`. It is
+pre-existing from #55 and, on all six documents I verified, a measurement limitation rather
+than broken scripture or a broken PDF. Not a reason to withhold the merge; not something to
+merge unknowingly. Not mine to decide.
