@@ -1,0 +1,95 @@
+TAP version 13
+# Subtest: Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+ok 1 - Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+  ---
+  duration_ms: 1973.943958
+  type: 'test'
+  ...
+# Subtest: Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest
+ok 2 - Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest
+  ---
+  duration_ms: 1563.746333
+  type: 'test'
+  ...
+# Subtest: Reader loader contract and reviewed original module closures remain exact
+ok 3 - Reader loader contract and reviewed original module closures remain exact
+  ---
+  duration_ms: 224.754791
+  type: 'test'
+  ...
+# Subtest: All 15 production pages carry exactly 52 independently inventoried script pins
+ok 4 - All 15 production pages carry exactly 52 independently inventoried script pins
+  ---
+  duration_ms: 186.972959
+  type: 'test'
+  ...
+# Subtest: Generated modules reproduce exactly and contain no executable import or export-from edges
+ok 5 - Generated modules reproduce exactly and contain no executable import or export-from edges
+  ---
+  duration_ms: 135.873917
+  type: 'test'
+  ...
+# Subtest: Ordinary check mode writes neither bundles nor HTML
+ok 6 - Ordinary check mode writes neither bundles nor HTML
+  ---
+  duration_ms: 85.329083
+  type: 'test'
+  ...
+# Subtest: Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+ok 7 - Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+  ---
+  duration_ms: 6.231917
+  type: 'test'
+  ...
+# Subtest: Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+ok 8 - Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+  ---
+  duration_ms: 4.497792
+  type: 'test'
+  ...
+# Subtest: Extra HTML and stale source cannot silently pass default checks
+ok 9 - Extra HTML and stale source cannot silently pass default checks
+  ---
+  duration_ms: 249.37225
+  type: 'test'
+  ...
+# Subtest: A pinned bundle cannot retain secondary imports or recover an inline execution path
+ok 10 - A pinned bundle cannot retain secondary imports or recover an inline execution path
+  ---
+  duration_ms: 10.001542
+  type: 'test'
+  ...
+# Subtest: Private toolchain lock is portable, complete, and preserves every registry pin
+ok 11 - Private toolchain lock is portable, complete, and preserves every registry pin
+  ---
+  duration_ms: 1.533958
+  type: 'test'
+  ...
+# Subtest: The observed logical-/tmp prefix lock corruption is refused before install
+ok 12 - The observed logical-/tmp prefix lock corruption is refused before install
+  ---
+  duration_ms: 0.774375
+  type: 'test'
+  ...
+# Subtest: Missing platform packages and changed package integrity cannot pass the lock gate
+ok 13 - Missing platform packages and changed package integrity cannot pass the lock gate
+  ---
+  duration_ms: 0.8205
+  type: 'test'
+  ...
+# {"total":8,"status":"PASS"}
+# Subtest: tests/service-worker.mjs
+ok 4 - tests/service-worker.mjs
+  ---
+  duration_ms: 142.427875
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3871.750459

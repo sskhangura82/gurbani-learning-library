@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "backend": "PyMuPDF",
+  "backendVersion": "1.26.6",
+  "status": "FAIL",
+  "extractionNormalization": "Unicode NFC and collapsed whitespace only; no punctuation or letter removal",
+  "expectationFile": {
+    "path": "evidence/articles/print/haumai-source-sheet-pairs.json",
+    "sha256": "e05af2e21294700323e9beec536dc2b60bb6e244dc7e9403a3725da505e83ceb"
+  },
+  "pairCoverage": "Configured pairs only",
+  "visualReview": "NOT_PERFORMED_BY_SCRIPT",
+  "limits": "PDF geometry and extracted text checks only. Resolving or matching a reference does not prove its meaning, authenticity, rights, or qualified approval. PNGs require human visual review of glyphs and layout. These results are not physical printing, printed scripture collation, phone, Safari, or VoiceOver acceptance.",
+  "documents": [
+    {
+      "pdf": "evidence/articles/print/haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "status": "FAIL",
+      "minimumMarginMm": 10.0,
+      "marginTolerancePt": 1.0,
+      "pages": [
+        {
+          "number": 1,
+          "format": "A4",
+          "widthPt": 595.9199829101562,
+          "heightPt": 842.8800048828125,
+          "nonemptyTextBounds": 182,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/haumai/haumai-source-sheet-a4-6a5bc6b6/page-01.png"
+        },
+        {
+          "number": 2,
+          "format": "A4",
+          "widthPt": 595.9199829101562,
+          "heightPt": 842.8800048828125,
+          "nonemptyTextBounds": 191,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/haumai/haumai-source-sheet-a4-6a5bc6b6/page-02.png"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "glp.article-ref.salok-mahalla9.019",
+          "allOnOnePage": false,
+          "page": null,
+          "checks": [
+            {
+              "kind": "marker",
+              "expected": "Guru Tegh Bahadur Ji - attribution from the collection heading",
+              "expectedUTF8Sha256": "612890e6aee1cc8d31ff444e490d29f3cb2b518d557bac4009829bd45afc0e96",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "marker",
+              "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+              "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+              "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+              "occurrences": [],
+              "exactlyOnce": false
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+              "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            }
+          ]
+        }
+      ],
+      "failures": [
+        "Pair glp.article-ref.salok-mahalla9.019: gurmukhi expected once, found 0 after declared extraction normalization",
+        "Pair glp.article-ref.salok-mahalla9.019 is not proven complete on one page"
+      ]
+    },
+    {
+      "pdf": "evidence/articles/print/haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "status": "FAIL",
+      "minimumMarginMm": 10.0,
+      "marginTolerancePt": 1.0,
+      "pages": [
+        {
+          "number": 1,
+          "format": "Letter",
+          "widthPt": 612.0,
+          "heightPt": 792.0,
+          "nonemptyTextBounds": 179,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/haumai/haumai-source-sheet-letter-a9035a92/page-01.png"
+        },
+        {
+          "number": 2,
+          "format": "Letter",
+          "widthPt": 612.0,
+          "heightPt": 792.0,
+          "nonemptyTextBounds": 194,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/haumai/haumai-source-sheet-letter-a9035a92/page-02.png"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "glp.article-ref.salok-mahalla9.019",
+          "allOnOnePage": false,
+          "page": null,
+          "checks": [
+            {
+              "kind": "marker",
+              "expected": "Guru Tegh Bahadur Ji - attribution from the collection heading",
+              "expectedUTF8Sha256": "612890e6aee1cc8d31ff444e490d29f3cb2b518d557bac4009829bd45afc0e96",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "marker",
+              "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+              "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+              "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+              "occurrences": [],
+              "exactlyOnce": false
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+              "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            }
+          ]
+        }
+      ],
+      "failures": [
+        "Pair glp.article-ref.salok-mahalla9.019: gurmukhi expected once, found 0 after declared extraction normalization",
+        "Pair glp.article-ref.salok-mahalla9.019 is not proven complete on one page"
+      ]
+    }
+  ]
+}

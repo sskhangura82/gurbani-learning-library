@@ -1,0 +1,41 @@
+{
+  "schema": "glp.runtime-amendments.v1",
+  "sourceBaseline": "41194b8d135e511d6d3af499e7906562437a55e2",
+  "changeBaseline": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+  "claudeReviewCommit": "ffd3d179a16c9c656905dcedce34a080ffee54ff",
+  "purpose": "Explicit runtime repairs only. The original preservation baseline and all scripture/teaching assets remain unchanged. These hashes document intentional changes, not independent approval.",
+  "amendments": {
+    "full-japji.html": {
+      "before": "1add0c3f283453ac7cc6b5e22a21e092b72fef74319672b73f444bf6d40f7ae1",
+      "after": "fc2d52f276c582cbf7b3fd7a83744f269cf6cdc51f534a719a49c5080ecd3fc6",
+      "findings": [
+        "CI-R-01",
+        "AI-assisted draft disclosure"
+      ]
+    },
+    "sukhmani.html": {
+      "before": "423e46da7e8d7fcc760304e256e0add5fe91fe8edf157f11181e039b3e1c939a",
+      "after": "bd04103fb973e9d10a32a8836d7126c70ce7dee44916948fc66df41a47ee3a3b",
+      "findings": [
+        "CI-R-01"
+      ]
+    },
+    "js/japji-full.js": {
+      "before": "3ec2dc3917704956741d3ea91add143167bd5b884d2996059e79537aa4c7c218",
+      "after": "594c2304542a4b77a57ad1a8c7acce5d52a1e7ad76eefe30f0d09a1e2b492407",
+      "findings": [
+        "CI-R-01",
+        "CI-R-02",
+        "CI-A-01"
+      ]
+    },
+    "js/sukhmani-reader.js": {
+      "before": "73e702524ce7d00ead7fecba978fe0efeefb0cb0490145e11ffda8e17be798c5",
+      "after": "7dc7a963dbbb810aae2cdf35fe008719626d3fad8a87acd7c84f6ed58582643d",
+      "findings": [
+        "CI-R-01",
+        "CI-A-01"
+      ]
+    }
+  }
+}

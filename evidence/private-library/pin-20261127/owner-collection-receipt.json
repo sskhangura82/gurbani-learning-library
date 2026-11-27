@@ -1,0 +1,12 @@
+{
+  "schema": "glp.private-library.pin-reseal.v1",
+  "date": "2026-11-27",
+  "previousReceipt": "evidence/private-library/collection-receipt.json",
+  "credential": "owner-only six-digit PIN; never committed",
+  "privacyScope": "casual privacy on a public static host",
+  "ciphertextBytes": 6953017,
+  "ciphertextSha256": "dee685bf4fce060b9f3f8eb625ad18d18c56748afd7584f44ef5e15668e220b9",
+  "unchangedPayloadSha256": "d519dd3928b3e8d7e9f6f7a3b788bea84c5af066dc74210a75c61779e8f1bd76",
+  "exactRoundTrip": true,
+  "sourcePayloadChanged": false
+}

@@ -1,0 +1,100 @@
+{
+  "kind": "Builder test evidence provenance",
+  "commands": [
+    {
+      "command": "node tests/salok-kabir-content.mjs",
+      "exitCode": 1,
+      "capturedLog": "salok-kabir-content.mjs.log",
+      "generatedReports": []
+    },
+    {
+      "command": "node tests/salok-kabir-browser.mjs",
+      "exitCode": 1,
+      "capturedLog": "salok-kabir-browser.mjs.log",
+      "generatedReports": [
+        "artifacts/browser.json"
+      ],
+      "generatedScreenshots": [
+        {
+          "originalOutput": "evidence/salok-kabir/reader-390.png",
+          "archivedOutput": "artifacts/reader-390.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/salok243-320.png",
+          "archivedOutput": "artifacts/salok243-320.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/study-60px-320.png",
+          "archivedOutput": "artifacts/study-60px-320.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/salok243-390.png",
+          "archivedOutput": "artifacts/salok243-390.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/study-60px-390.png",
+          "archivedOutput": "artifacts/study-60px-390.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/salok243-1280.png",
+          "archivedOutput": "artifacts/salok243-1280.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/study-60px-1280.png",
+          "archivedOutput": "artifacts/study-60px-1280.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/meaning-dialog-320.png",
+          "archivedOutput": "artifacts/meaning-dialog-320.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/saved-reflection-390.png",
+          "archivedOutput": "artifacts/saved-reflection-390.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/failure-36.png",
+          "archivedOutput": "artifacts/failure-36.png"
+        },
+        {
+          "originalOutput": "evidence/salok-kabir/study-offline-390.png",
+          "archivedOutput": "artifacts/study-offline-390.png"
+        }
+      ],
+      "environmentOverride": {
+        "CHROMIUM_PATH": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+      }
+    }
+  ],
+  "wrapperProduced": [
+    "summary.json",
+    "manifest.json"
+  ],
+  "baselineInputCopies": [],
+  "removedUnchangedHistoricalVerdictCopies": [
+    "artifacts/content.json",
+    "artifacts/portable-gates.json"
+  ],
+  "fileSha256": {
+    "artifacts/browser.json": "f49e26ccaa7cdd35947cf59fc28aec609f3630d8377a90385e2c2d9051aba849",
+    "artifacts/failure-36.png": "e96cecf8aedf18ca3decdd2b13d5b5211df8f4dbcfa4e5930174e9891516eac8",
+    "artifacts/meaning-dialog-320.png": "de4885581e54d4231b18f00bee35a23529da7bff5bf1c8fda032f0591b7df1fd",
+    "artifacts/reader-390.png": "e96cecf8aedf18ca3decdd2b13d5b5211df8f4dbcfa4e5930174e9891516eac8",
+    "artifacts/salok243-1280.png": "c515ad8b084361c2b531d4871b8f14bd636a7b5510f826098349a97c296f970a",
+    "artifacts/salok243-320.png": "85a6eca1d7f104f577a3e438426f0d77e806da0092175e6dfa2067b8636646bc",
+    "artifacts/salok243-390.png": "aac02611d5d1f0a4ec81198cd9c721a406f3874fe3b7a9e111f84df0093d40cf",
+    "artifacts/saved-reflection-390.png": "02b6e2188fe319f3484c3bd7977a81d9a657f805bb6b2ceaa1547eee24779948",
+    "artifacts/study-60px-1280.png": "e67b9fdb8cf080d457eddc827904cd6db986afde17bf63c81191d8eb13851bf4",
+    "artifacts/study-60px-320.png": "86cd8aa93d984c8ccbb48a7fbb33dceca62524c018470fe3030222d78beaa93a",
+    "artifacts/study-60px-390.png": "34bd59bc392c66166a5180123d22644fabe5f54eca3ae3cba6992756bebb4cdb",
+    "artifacts/study-offline-390.png": "03ac92ab01853213e022ff3c4036a0cc2a64b33708a63d54d52c1b66f6935086",
+    "salok-kabir-browser.mjs.log": "07f66900266752130f55ca20442d39f5d95fdf27ea6324d645090440f1b41f94",
+    "salok-kabir-content.mjs.log": "1f0f07d904d7228b234b7ec2f2a423b57a5be213d24e038f4dfa165d0b9e71b3",
+    "summary.json": "854149fcdc1aae787138b8c37c1bbdd757867b4b51611afe8f92e8cad7c9a16f"
+  },
+  "limits": [
+    "These are local correction checks, not a replacement hosted CI verdict.",
+    "The failed runs retain their logs and actual failing browser report.",
+    "Any browser checks used fresh synthetic desktop Chrome contexts; no physical iPhone, Safari or VoiceOver acceptance.",
+    "No original committed evidence was deleted or edited by this cleanup."
+  ]
+}

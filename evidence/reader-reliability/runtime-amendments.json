@@ -1,0 +1,49 @@
+{
+  "schema": "glp001.reader-reliability-runtime-amendments.v1",
+  "status": "BUILDER_CANDIDATE_NOT_APPROVED",
+  "changeBaseline": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "priorLedgerPath": "evidence/reader-reliability/library-parent-amendments.json",
+  "priorLedgerSHA256": "550d79ed70ecec88b1434dc19fe37ab01e1c70a890b9888114f4fa02693a860a",
+  "purpose": "Record the explicit current reader-runtime changes within the unchanged published Japji/Sukhmani preservation baseline. Nitnem HTML script protection has its own reader-script-integrity checks.",
+  "scriptureChanges": false,
+  "teachingChanges": false,
+  "independentApproval": false,
+  "scope": "Only the eight inherited baseline files are covered by this runtime chain; this is an amendment receipt, not a behavioral or qualified-review verdict.",
+  "compatibilityNotes": [
+    "The homepage-copy assertion and missing PR56 runtime-ledger link both fail on frozen parent 389e79b; their original failure logs remain preserved.",
+    "The source-refusal VM fixture needs an EventTarget because the new runtime registers pageshow before asynchronous verification. Model, original-source rendering and storage must still remain untouched on refusal.",
+    "Original Unicode fixtures, source digests and all prior ledger bytes remain unchanged."
+  ],
+  "preservedFailureEvidence": [
+    "evidence/reader-reliability/20261127T015924Z/05-source-integrity.log",
+    "evidence/reader-reliability/20261127T015924Z/08-sukhmani-content.log",
+    "evidence/reader-reliability/20261127T015924Z/10-nitnem-content.log",
+    "evidence/reader-reliability/20261127T020132Z-frozen-parent-check/summary.json"
+  ],
+  "amendments": {
+    "full-japji.html": {
+      "before": "fc2d52f276c582cbf7b3fd7a83744f269cf6cdc51f534a719a49c5080ecd3fc6",
+      "after": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2",
+      "findings": [
+        "SRI-01"
+      ],
+      "reason": "Pin the existing executable script chain in the served reader HTML; no source or teaching change."
+    },
+    "js/sukhmani-reader.js": {
+      "before": "ac1c5551fe760a8315306c03586ddb2a13a11d79b510892335a7075f6c9bf86b",
+      "after": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+      "findings": [
+        "SK-01"
+      ],
+      "reason": "Remove the Resume notice before alignment; cancel stale capture; restore reload/cold-history position without saving, and cancel pending restoration on manual intent."
+    },
+    "sukhmani.html": {
+      "before": "bd04103fb973e9d10a32a8836d7126c70ce7dee44916948fc66df41a47ee3a3b",
+      "after": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8",
+      "findings": [
+        "SRI-01"
+      ],
+      "reason": "Pin the existing executable script chain in the served reader HTML; no source or teaching change."
+    }
+  }
+}

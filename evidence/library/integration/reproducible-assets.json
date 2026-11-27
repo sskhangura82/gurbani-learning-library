@@ -1,0 +1,40 @@
+{
+  "sourceBase": "acfeb0a157fc2cf38ae7ccbaeb2c53d8e97d3bec",
+  "before": {
+    "salok-mahalla9/index.html": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+    "salok-kabir/index.html": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+    "sw.js": "10c046061acda06035a751b501d6058f21168fcb7c994b7e0b32ce85c269f950"
+  },
+  "after": {
+    "salok-mahalla9/index.html": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+    "salok-kabir/index.html": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+    "sw.js": "10c046061acda06035a751b501d6058f21168fcb7c994b7e0b32ce85c269f950"
+  },
+  "unchanged": true,
+  "commands": [
+    {
+      "command": [
+        "node",
+        "tools/refresh-salok-mahalla9-sri.mjs"
+      ],
+      "exitCode": 0,
+      "output": "{\"status\":\"PASS\",\"scriptsPinned\":6}"
+    },
+    {
+      "command": [
+        "node",
+        "tools/refresh-salok-kabir-sri.mjs"
+      ],
+      "exitCode": 0,
+      "output": "{\"status\":\"PASS\",\"scriptsPinned\":6}"
+    },
+    {
+      "command": [
+        "node",
+        "tools/build-offline.mjs"
+      ],
+      "exitCode": 0,
+      "output": "{\"assets\":85,\"status\":\"hashes regenerated\"}"
+    }
+  ]
+}

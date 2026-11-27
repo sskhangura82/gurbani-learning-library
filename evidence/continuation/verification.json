@@ -1,0 +1,73 @@
+{
+  "schema": "glp.continuation.verification.v1",
+  "applicationCommit": "da9fe489921addc33591f25204a9bbf07d40ef6f",
+  "sourceReviewCommit": "c159cf6cdebe60948a9d53d622bac387df3777eb",
+  "runtimeBytesUnchangedSinceBrowserRun": true,
+  "nodeCombined": {
+    "passed": 109,
+    "failed": 0,
+    "skipped": 0,
+    "evidence": "evidence/continuation/combined-contracts.log"
+  },
+  "privateContracts": {
+    "passed": 19,
+    "evidence": "evidence/private-library/contract-results.json"
+  },
+  "importBoundaryChecks": {
+    "passed": 12,
+    "evidence": "evidence/private-source-boundaries/results.json"
+  },
+  "privateBrowser": {
+    "passed": 15,
+    "evidence": "evidence/private-library/browser/results.json"
+  },
+  "combinedBrowser": [
+    {
+      "name": "navigation",
+      "checksPassed": 10,
+      "result": "PASS",
+      "evidence": "evidence/continuation-navigation-smoke/results.json"
+    },
+    {
+      "name": "scriptTransport",
+      "checksPassed": 13,
+      "result": "PASS",
+      "evidence": "evidence/library-script-integrity/browser/2026-11-27T21-06-24-952Z-module-transport/report.json"
+    },
+    {
+      "name": "publicKnowledge",
+      "checksPassed": 10,
+      "result": "PASS",
+      "evidence": "evidence/library-script-integrity/browser/2026-11-27T21-06-27-610Z-knowledge-integration/report.json"
+    },
+    {
+      "name": "offlineUpdate",
+      "checksPassed": 6,
+      "result": "PASS",
+      "evidence": "evidence/library-script-integrity/offline/2026-11-27T21-06-30-736Z/report.json"
+    }
+  ],
+  "delivery": {
+    "closedBundles": 4,
+    "sourceInputs": 26,
+    "htmlPages": 19,
+    "scriptPins": 59,
+    "publicOfflineAssets": 112,
+    "privateFilesInPublicOfflineManifest": 0
+  },
+  "ownerSecretInRepository": false,
+  "mainUnchanged": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+  "history": {
+    "chatgptQualifiedClaims": 10,
+    "incompleteClaims": 0,
+    "actualClaudeSourceReviews": 0,
+    "status": "WITHHELD",
+    "blocker": "CLAUDE_AUTHENTICATION_REQUIRED"
+  },
+  "limits": [
+    "Suites overlap; counts are not a sum of independent requirements.",
+    "Synthetic private browser fixtures and fresh contexts only.",
+    "No physical iPhone, Safari or VoiceOver acceptance claimed.",
+    "No final Claude source review, merge or family deployment."
+  ]
+}

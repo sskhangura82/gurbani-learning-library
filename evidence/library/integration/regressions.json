@@ -1,0 +1,86 @@
+[
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/library-catalog.mjs",
+      "tests/article-source.mjs",
+      "tests/source-integrity.mjs",
+      "tests/salok-kabir-bindings.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/verify.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/shared-learning.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/japji-retained-learning.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/sukhmani-reader-core.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/nitnem-learning.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/nitnem-ui-lifecycle.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/r6-contract.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/r7-contract.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  },
+  {
+    "command": [
+      "node",
+      "tests/service-worker.mjs"
+    ],
+    "exitCode": 0,
+    "tail": null
+  }
+]

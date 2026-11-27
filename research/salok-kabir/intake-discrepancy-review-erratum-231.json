@@ -1,0 +1,78 @@
+{
+  "schema": "glp001.discrepancy-review-erratum.v1",
+  "date": "2026-11-26",
+  "id": "kabir231-printed-extent-erratum",
+  "correctsReviewSha256": "0ae4c378e3e8868565b44d389980fe3c572270cb8e164a1a7a9a2f8775dab20c",
+  "priorReviewUnchanged": true,
+  "sourceOccurrence": {
+    "sourceAng": 1376,
+    "sourcePath": "corpus/ang-1376.md",
+    "sourceGitBlob": "06282cb1351f10b901610c2d29547b6dc24bb6b0",
+    "sourceOrdinal": 39,
+    "sourcePrintedLine": 19,
+    "sourceWithinLine": 2,
+    "text": "ਕਬੀਰ ਸਾਧੂ ਸੰਗੁ ਪਰਾਪਤੀ ਲਿਖਿਆ ਹੋਇ ਲਿਲਾਟ ॥",
+    "textSha256": "ce25c02f5bade327ee7a0669c00312f8bb2d14a631a02b74e9554a507497aadb",
+    "id": "sggs.salok-kabir.salok231.line01",
+    "role": "verse"
+  },
+  "correction": "The earlier supplemental wording that page1377 begins with Salok231 first line was imprecise. It begins with the CONTINUATION of that source verse. Its first words ਕਬੀਰ ਸਾਧੂ are visibly at the bottom of1376. The first verse crosses1376–1377 in both inspected page-image witnesses.",
+  "sourceReportedAngUnchanged": 1376,
+  "printedAngRangeObserved": [
+    1376,
+    1377
+  ],
+  "printedStart": {
+    "ang": 1376,
+    "textFragment": "ਕਬੀਰ ਸਾਧੂ"
+  },
+  "printedContinuation": {
+    "ang": 1377,
+    "textFragment": "ਸੰਗੁ ਪਰਾਪਤੀ ਲਿਖਿਆ ਹੋਇ ਲਿਲਾਟ ॥"
+  },
+  "qualifiedHumanReviewCount": 0,
+  "canonicalLocationAdjudicated": false,
+  "unaffectedFinding": "The exact Farid occurrence1377/ordinal2 remains outside Kabir; printed1378 begins its text.",
+  "images": [
+    {
+      "path": "discrepancy-witnesses/commons-part-two-page-662.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page662-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+      "pdfPageIndex": 662,
+      "visibleAng": 1376,
+      "bytes": 493718,
+      "sha256": "550f1c03f03612a7818ad3310c89a793773b47f372ca174dfb07f5b2471d2540",
+      "visualInspectionPerformed": true,
+      "observation": "One-based PDFpage662. Bottom ends with ਕਬੀਰ ਸਾਧੂ after Salok230."
+    },
+    {
+      "path": "discrepancy-witnesses/commons-part-two-page-663.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guru_Granth_Sahib_Part_Two.pdf/page663-1280px-Guru_Granth_Sahib_Part_Two.pdf.jpg",
+      "pdfPageIndex": 663,
+      "visibleAng": 1377,
+      "bytes": 485519,
+      "sha256": "76490c3336e4302a033a5d6310f87837f100e19af96871339a30af249ff2f8af",
+      "visualInspectionPerformed": true,
+      "observation": "One-based PDFpage663. Top begins the continuation ਸੰਗੁ ਪਰਾਪਤੀ ਲਿਖਿਆ ਹੋਇ ਲਿਲਾਟ ॥, then the second verse."
+    },
+    {
+      "path": "discrepancy-witnesses/sikhnet-pdf-index-1376.png",
+      "url": "https://www.sikhnet.com/files/ereader/SGGS%20%5BGurmukhi%5D.pdf",
+      "pdfPageIndex": 1376,
+      "visibleAng": 1376,
+      "bytes": 189400,
+      "sha256": "0c30ed01bfa1f6e0148697563d11b96044fcdf69b62bb43f925bd86e9dcfc173",
+      "visualInspectionPerformed": true,
+      "observation": "Zero-based PDFindex1376. Bottom ends ਕਬੀਰ ਸਾਧੂ."
+    },
+    {
+      "path": "discrepancy-witnesses/sikhnet-pdf-index-1377.png",
+      "url": "https://www.sikhnet.com/files/ereader/SGGS%20%5BGurmukhi%5D.pdf",
+      "pdfPageIndex": 1377,
+      "visibleAng": 1377,
+      "bytes": 191326,
+      "sha256": "30eb151c1a52be96953de1a73c1c2f56732b4f306ab40640753b9035827720ac",
+      "visualInspectionPerformed": true,
+      "observation": "Zero-based PDFindex1377. Top begins ਸੰਗੁ ਪਰਾਪਤੀ ਲਿਖਿਆ ਹੋਇ ਲਿਲਾਟ ॥."
+    }
+  ]
+}

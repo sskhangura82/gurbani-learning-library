@@ -1,0 +1,79 @@
+{
+  "startedAt": "2026-11-26T20:23:24.873Z",
+  "browser": "158.0.8127.37",
+  "checks": [
+    {
+      "name": "The physiology contract has exactly two equal phases and no configurable holding phase",
+      "status": "passed"
+    },
+    {
+      "name": "The tool is explicitly physiological, starts idle and includes comfort and not-treatment instructions",
+      "status": "passed"
+    },
+    {
+      "name": "All three source links resolve to in-page references and no unsupported individual outcome is promised",
+      "status": "passed"
+    },
+    {
+      "name": "Layout fits at 320, 390, 820 and 1440 pixels with a usable Stop target",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard activation starts immediately with inhale, reaches exhale at five seconds and inhale at ten without a hold",
+      "status": "passed"
+    },
+    {
+      "name": "Stopping cancels the guide and restores keyboard focus without storing a session",
+      "status": "passed"
+    },
+    {
+      "name": "Motion can be turned off while the guide remains usable through words",
+      "status": "passed"
+    },
+    {
+      "name": "A hidden-page event stops the guide and returning does not restart it",
+      "status": "passed"
+    },
+    {
+      "name": "Page exit and a persisted return leave the guide stopped",
+      "status": "passed"
+    },
+    {
+      "name": "The guide never reads or writes web storage, fetches data or creates cookies",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced-motion preference disables animation initially and cannot be overridden accidentally",
+      "status": "passed"
+    },
+    {
+      "name": "A mismatched content layer cannot start the physiological controller",
+      "status": "passed"
+    },
+    {
+      "name": "No runtime JavaScript failures occurred",
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "screenshots": [
+    "evidence/breathing/ready-390.png",
+    "evidence/breathing/active-390.png",
+    "evidence/breathing/reduced-motion-390.png"
+  ],
+  "limitations": [
+    "Desktop Chromium with narrow viewport emulation only. No physical iPhone, Safari, VoiceOver or human usability acceptance.",
+    "Visibility suspension is tested with a synthetic hidden-state event; mobile background timing needs a real-device check.",
+    "Research copy awaits independent review; browser checks do not establish clinical efficacy or safety for an individual."
+  ],
+  "inputSha256": {
+    "breathing.html": "82313f11d91a9dcd44f8674d4484d1ecc7fe0014c0af5129fe9c347b06f5bb11",
+    "css/breathing.css": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f",
+    "js/breathing-core.js": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5",
+    "js/breathing.js": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38",
+    "tests/breathing-browser.mjs": "f54d1744c9de2e3e28cdc53400d94ad9adac6b3f8f8ecadfc57a16832b6b55c6"
+  },
+  "finishedAt": "2026-11-26T20:23:30.691Z",
+  "passed": 13,
+  "failed": 0
+}

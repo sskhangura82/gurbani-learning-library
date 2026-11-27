@@ -1,0 +1,21 @@
+{
+  "schema": "glp.farid-intake-validation.v1",
+  "result": "PASS",
+  "scope": "PINNED_SOURCE_RESEARCH_WITH_WITNESS_RECONSTRUCTION",
+  "runtimeEligible": false,
+  "publicReady": false,
+  "publicationReady": false,
+  "observedForwardOccurrences": 296,
+  "missingTerminalNumbers": [
+    2
+  ],
+  "displacedOccurrencesRetained": 1,
+  "explicitMahallaHeadings": 11,
+  "candidateAuthorAngs": 10,
+  "upstreamAuthorTextEntries": 326,
+  "completeCompositionsAdmitted": 0,
+  "fileInventoryAngs": 1430,
+  "fullCorpusOriginalLinesCollated": 0,
+  "witnessFilesVerified": 12,
+  "qualifiedHumanReview": "NOT_PERFORMED"
+}

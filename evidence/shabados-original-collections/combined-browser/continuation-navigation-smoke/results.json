@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Public offline manifest excludes the private reader and ciphertext",
+      "status": "PASS"
+    },
+    {
+      "name": "Read exposes the Dasam entrance and open/private navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Dasam exposes the full named edition and preserves its three existing readers",
+      "status": "PASS"
+    },
+    {
+      "name": "Dasam link opens verified jaap source",
+      "status": "PASS"
+    },
+    {
+      "name": "Dasam link opens verified savaiye source",
+      "status": "PASS"
+    },
+    {
+      "name": "Dasam link opens verified chaupai source",
+      "status": "PASS"
+    },
+    {
+      "name": "Explore exposes Psychology and password-protected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "Psychology opens directly without a password",
+      "status": "PASS"
+    },
+    {
+      "name": "Private entrance is locked and does not request its actual collection",
+      "status": "PASS"
+    },
+    {
+      "name": "No uncaught script failures or external requests during navigation",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "sourceHashes": {
+    "index.html": "c88edc331774c1f39f0e378fc550805ed3504cb554de300f7f48cee5e627c13c",
+    "css/home.css": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e",
+    "library/library.css": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5",
+    "js/home.js": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4",
+    "js/pwa.js": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+    "library/app.bundle.mjs": "0d8c75d839aa6923b9b7e84bed4d5a318fc36f764abd35f725bd8117db751c99",
+    "collections/dasam/index.html": "9268a7856ab37b350ad9255723fb1a15306cc437d93adfa1ee7012cf27b6f932",
+    "collections/collections.css": "e0235b8eea260b0adb85a8676188c34b71db9842cc75f8fd4edeae1b4d163b09",
+    "nitnem/index.html": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e",
+    "nitnem/appearance.js": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc",
+    "nitnem/reader.css": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57",
+    "nitnem/appearance.css": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377",
+    "nitnem/continuous-core.js": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+    "nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+    "nitnem/local-learning.js": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+    "nitnem/reader.js": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301",
+    "nitnem/data/library.json": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75",
+    "nitnem/offline.js": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690",
+    "nitnem/data/jaap.json": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+    "nitnem/learning/course.complete.json": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c",
+    "nitnem/data/savaiye.json": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+    "nitnem/data/chaupai.json": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+    "library/complete-passages.json": "da4c8240e181de975892ddaac9f9f20ef2426f75eebad5d01e6b440601cba964",
+    "salok-mahalla9/data/salok-mahalla9.json": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+    "psychology/index.html": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8",
+    "private-library/index.html": "28fe57401ca8b9f4cedabad9af10f87bf789500f2fe5eb27247efab6f16ae087",
+    "private-library/private-library.css": "bb12a11bd35a0d99c0f11bb229f259270da28240db7ce71364823bed2bd0eede",
+    "private-library/app.mjs": "1f553882551e6b6c6dc2a4c7a15f9fd5e13b5c41248fd69011d8c435605bd280"
+  },
+  "limits": [
+    "Fresh desktop Chromium context at320CSS pixels; not physical iPhone/Safari/VoiceOver.",
+    "Actual ciphertext route forcibly returns404 without reading its file. No passphrase is used.",
+    "Service workers are blocked for this navigation-only fixture; offline exclusion is checked in the manifest.",
+    "All reader-state changes are synthetic within this fresh temporary browser context."
+  ]
+}

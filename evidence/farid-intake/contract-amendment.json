@@ -1,0 +1,27 @@
+{
+  "schema": "glp.farid-intake-contract-amendment.v1",
+  "date": "2026-11-27",
+  "priorCandidateCommit": "33995b6e320be4fe37ebed0ab66b67e5c470c9d1",
+  "reason": "Parent review identified that perpetual pins of unrelated navigation and global script policy would incorrectly block concurrent authorized Haumai work. Dedicated global integrity checks already cover that policy. Narrow this source-only research contract to relevant existing scripture/source-lock and inherited research; preserve every source and admission gate.",
+  "beforeContractSha256": "3b95354b3124333c5651dad9f2ecc4882ab33c886173dfed73843458ee92c9a9",
+  "afterContractSha256": "ff8ebde2192ccd162b74145ec30bb0905fd5233929845a3740b9b083a05034de",
+  "removedUnrelatedRuntimePins": {
+    "library/catalog.mjs": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497",
+    "tools/script-integrity/policy.mjs": "52b2e32c6699d6af4f27a382e38f568a513a602d73f30f645e2c0662ab25b369"
+  },
+  "preservedRuntimePins": {
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
+    "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+    "salok-mahalla9/data/salok-mahalla9.json": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+  },
+  "manifestMetadataSha256Unchanged": "14a09f6a9a1473384abb8d7e3bbbfbf6bf3ea7ec51efd7ded25dfceb194bfcb3",
+  "spanCustodySha256Unchanged": "8a899775799e1c7c5ba8384a81521eeabb658ab73e82ef5e74476c7f8a170827",
+  "spanSequenceSha256Unchanged": "9ea17eeb3b5bfb0a30b6a701ac9d484bbc4438ab03adcd65367362968b4d939d",
+  "corpusInventorySha256Unchanged": "86ddecc99690a388eab0a93a495b986d18f463a4a80b7311f5aaf250ec02a7fc",
+  "sourceWitnessDescriptorsChanged": false,
+  "retainedEvidencePinsChanged": false,
+  "runtimeAdmissionChanged": false,
+  "qualifiedApprovalChanged": false,
+  "runtimeFilesEdited": false
+}

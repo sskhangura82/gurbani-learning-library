@@ -1,0 +1,32 @@
+{
+  "schema": "glp.farid.reader-scope.v1",
+  "base": "4eee4f26bf7bad7ce52d4c958c06a94da1262ecb",
+  "purpose": "Bounded source-only Farid allowlist, independent manifest/sequence/custody checks and empty explanation state. Existing reader markup changes only SRI. No existing scripture or teaching bytes change.",
+  "files": [
+    {
+      "path": "nitnem/reader.js",
+      "beforeSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "afterSha256": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301"
+    },
+    {
+      "path": "tools/refresh-reader-sri.mjs",
+      "beforeSha256": "e2a2a102597fb8a20cc38a28690698c2e31e3266d16d635d3dc87915d17e5ce4",
+      "afterSha256": "3d8e6376f7db09df8f55b84ec02f535bb8b5a26851568afb49b9676a42aa3df6"
+    },
+    {
+      "path": "nitnem/index.html",
+      "beforeSha256": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c",
+      "afterSha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "path": "salok-mahalla9/index.html",
+      "beforeSha256": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+      "afterSha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "path": "salok-kabir/index.html",
+      "beforeSha256": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+      "afterSha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    }
+  ]
+}

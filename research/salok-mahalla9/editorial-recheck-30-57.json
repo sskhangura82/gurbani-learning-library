@@ -1,0 +1,61 @@
+{
+  "schema": "glp001.salok-mahalla9-editorial-recheck.v1",
+  "status": "EXACT_AMENDMENT_REPLAY_PASSED",
+  "createdAtUtc": "2026-11-26T17:48:25.781928+00:00",
+  "reviewer": "/root/salok_teaching_01_29",
+  "scope": "Bounded confirmation of the previously proposed five paired replacements and one source append; no new substantive review or source searching.",
+  "files": [
+    {
+      "file": "editorial-review-30-57.json",
+      "sha256": "5dd3600191a1ebc24ec3988c4b94837aa8aa44b0dce0791947d4c99e4f0ff8d2"
+    },
+    {
+      "file": "editorial-amendments-30-57.json",
+      "sha256": "2017b11bf0aee34701b7848e674ead266c15257a045b427cf12bc0eadfba266d"
+    },
+    {
+      "file": "teaching-30-57.json",
+      "sha256": "f73596d130b8946182613b808ed01eb683a2704d0f3b7bcf0d7e837f6c70c54c"
+    },
+    {
+      "file": "teaching-final-30-57.json",
+      "sha256": "a278355a3333608e8d710f714faf58b8f7d2d61b2447bbcee989a94c1bafb33d"
+    },
+    {
+      "file": "source-selected.json",
+      "sha256": "e70448f2682b2f19132f15384a11bd51538a3e3d007ef98706a8ffac01ca179c"
+    }
+  ],
+  "checks": {
+    "all11FieldAmendmentsMatchIndependentReviewExactly": true,
+    "allBeforeValuesMatchFrozenInput": true,
+    "allAfterValuesMatchFinal": true,
+    "completeReplayEqualsFinalJson": true,
+    "completeReplayEqualsFinalBytes": true,
+    "noAdditionalChangesInFinal": true,
+    "frozenAuthorInputUnchanged": true,
+    "frozenSourceSelectionUnchanged": true,
+    "qualifiedHumanReviewFlagRemainsFalse": true
+  },
+  "resolvedFindings": [
+    {
+      "id": "SM9-43-STUDY-PRODUCT-POLICY",
+      "ordinal": 43,
+      "status": "RESOLVED_AS_PROPOSED"
+    },
+    {
+      "id": "SM9-46-SIMILE-PROVENANCE",
+      "ordinal": 46,
+      "status": "RESOLVED_AS_PROPOSED"
+    },
+    {
+      "id": "SM9-56-SELECTED-READING-CONSISTENCY",
+      "ordinal": 56,
+      "status": "RESOLVED_AS_PROPOSED"
+    }
+  ],
+  "qualifiedHumanReviewCount": 0,
+  "scholarApproved": false,
+  "publicationApproved": false,
+  "remainingLimit": "Editorial revisions are applied exactly; these explanations remain drafts pending qualified human review."
+}

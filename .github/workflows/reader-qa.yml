@@ -1,15 +1,16 @@
 name: GLP Reader Quality Gate
 on:
   pull_request:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify-reader:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -19,6 +20,14 @@ jobs:
         run: node tests/service-worker.mjs
       - name: Multi-tab persistence and merge
         run: node tests/shared-learning.mjs
+      - name: Preserve unmatched and long Japji learning
+        run: node tests/japji-retained-learning.mjs
+      - name: Runtime original scripture integrity and tamper rejection
+        run: node --test tests/source-integrity.mjs
+      - name: Reader script integrity and fixed script inventory
+        run: |
+          node tools/refresh-reader-sri.mjs --check
+          node tests/reader-sri.mjs
       - name: Reader code syntax
         run: node --check js/japji-full.js
       - name: Revision 6 preservation and preferences
@@ -37,6 +46,8 @@ jobs:
         run: node tests/nitnem-content.mjs
       - name: Nitnem saved learning, edition migration and safe merging
         run: node tests/nitnem-learning.mjs
+      - name: Collection-sized backup limits and exact export/import round trips
+        run: node tests/nitnem-backup-capacity.mjs
       - name: Nitnem asynchronous reflection and reader lifecycle
         run: node tests/nitnem-ui-lifecycle.mjs
       - name: Nitnem code syntax
@@ -46,10 +57,12 @@ jobs:
           node --check nitnem/learning/learning-ui.js
           node --check nitnem/offline.js
   verify-sukhmani-browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -59,8 +72,12 @@ jobs:
         run: |
           npx playwright install --with-deps chromium
           sudo apt-get install -y fonts-noto-core
-      - name: Test reading, local learning and offline preview with synthetic data
-        run: node tests/sukhmani-browser.mjs
+      - name: Identify installed full Chrome for retained-document history coverage
+        run: google-chrome --version
+      - name: Test settled resume, reading, local learning and offline preview with synthetic data
+        run: |
+          node tests/sukhmani-resume-browser.mjs
+          node tests/sukhmani-browser.mjs
       - name: Retain browser evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -68,13 +85,16 @@ jobs:
           name: sukhmani-browser-evidence
           path: |
             evidence/sukhmani-browser-verification.json
+            evidence/sukhmani-resume/
             evidence/screenshots/sukhmani/
           if-no-files-found: warn
   verify-nitnem-browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -94,4 +114,37 @@ jobs:
           path: |
             evidence/nitnem-browser-verification.json
             evidence/screenshots/nitnem/
+          if-no-files-found: warn
+  verify-review-repairs-browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser test tools
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Install Chromium and Gurmukhi fonts
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Test source integrity before rendering and browser-enforced SRI
+        run: |
+          node tests/reader-sri-browser.mjs
+          node tests/source-integrity-browser.mjs
+      - name: Test preserved learning and accessible meaning names
+        run: node tests/review-repairs-browser.mjs
+      - name: Retain repair browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-repairs-browser-evidence
+          path: |
+            evidence/source-integrity-browser-verification.json
+            evidence/reader-sri/
+            evidence/review-repairs-browser-verification.json
+            evidence/screenshots/review-repairs/
           if-no-files-found: warn

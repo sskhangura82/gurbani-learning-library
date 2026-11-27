@@ -1,0 +1,9 @@
+# Browser harness correction — retained failure
+
+The first browser report, `2026-11-27T01-10-43-879Z-browser/report.json`, records eight failures. All happened at initial navigation, before application code loaded. The test server computed its root with a trailing slash and then appended another slash for its containment check, so every legitimate file path was rejected with HTTP 404.
+
+This is a builder test instrument error, not a finding about the candidate. The correction applies path.resolve to the test root and adds an HTTP 200 control-page preflight before running browser interactions. No acceptance assertion or application code changed. The failed report and screenshots remain intact. A fresh timestamped run follows.
+
+A second run, `2026-11-27T01-11-30-278Z-browser`, exposed another server error before a report could be written: headers were emitted before the awaited file read. A missing request therefore attempted to emit a second status header and terminated Node. Its exact terminal error is preserved as `harness-crash.txt` in that run directory. The correction awaits the file bytes before issuing a success header; no application or acceptance assertion changed. Both unsuccessful runs remain preserved.
+
+The third run, `2026-11-27T01-12-18-959Z-browser/report.json`, reached the application: source-before-teaching refusal, all three repinned UI mutants, and lexical-gap routing checks passed. Three search checks failed because my locator measured only the clickable result button. The result reason is a visible sibling within the same result row; the runtime correctly rendered it. Corrected the measurement to the enclosing row, retaining the exact provenance wording assertions. Also made control-page readiness use the enabled Search button, because same-document routing can leave the current search-status text in place. No product code or acceptance criterion changed. The complete failed report remains retained.

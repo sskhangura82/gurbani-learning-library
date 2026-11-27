@@ -1,0 +1,64 @@
+{
+  "kind": "Builder test evidence provenance",
+  "commands": [
+    {
+      "command": "node tests/r6-contract.mjs",
+      "exitCode": 0,
+      "capturedLog": "r6-contract.mjs.log",
+      "generatedReports": [
+        "r6-contract.json"
+      ]
+    },
+    {
+      "command": "node tests/r7-contract.mjs",
+      "exitCode": 0,
+      "capturedLog": "r7-contract.mjs.log",
+      "generatedReports": []
+    },
+    {
+      "command": "node tests/verify.mjs",
+      "exitCode": 0,
+      "capturedLog": "verify.mjs.log",
+      "generatedReports": [
+        "node-verification.json"
+      ]
+    },
+    {
+      "command": "node tests/salok-kabir-content.mjs",
+      "exitCode": 0,
+      "capturedLog": "salok-kabir-content.mjs.log",
+      "generatedReports": [
+        "content.json"
+      ]
+    },
+    {
+      "command": "node --check tests/nitnem-browser.mjs",
+      "exitCode": 0,
+      "capturedLog": "nitnem-fixture-syntax.log",
+      "generatedReports": []
+    }
+  ],
+  "wrapperProduced": [
+    "summary.json",
+    "manifest.json"
+  ],
+  "baselineInputCopies": [],
+  "removedUnchangedHistoricalVerdictCopies": [],
+  "fileSha256": {
+    "content.json": "182311809741cb6a3d0665ba8015c70da7c3def6659aa46f92b95f568d2dc8b7",
+    "nitnem-fixture-syntax.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "node-verification.json": "2eeb1e077f0103997a23fb75eba8c757a755d4ad09508cb61f26c3422e0f87d0",
+    "r6-contract.json": "f0d0247c236fd4d1af4475076a53d94b1be312b9d6fadb34ed5297de60c80624",
+    "r6-contract.mjs.log": "72dd6be43c5edcd73856a5f141cddb29da0d9fbbd002f771d17fd41e18223daa",
+    "r7-contract.mjs.log": "1b2f03205d2952ed1595a86662927e1720bdb6478d523b8a16c44b22c738a9c0",
+    "salok-kabir-content.mjs.log": "0ad9065be49c104d7faabf242f7d24f9fe40121efc843eb4221700273f5bb20c",
+    "summary.json": "57dab00bc37060108c0ffaefd32792608cb0b53ed61c13e845799af59715e602",
+    "verify.mjs.log": "92b86cf7da289f7d9912e11d84cc3703a12558d8fef5b91388031e3997d6b37d"
+  },
+  "limits": [
+    "These are local correction checks, not a replacement hosted CI verdict.",
+    "The failed runs retain their logs and actual failing browser report.",
+    "Any browser checks used fresh synthetic desktop Chrome contexts; no physical iPhone, Safari or VoiceOver acceptance.",
+    "No original committed evidence was deleted or edited by this cleanup."
+  ]
+}

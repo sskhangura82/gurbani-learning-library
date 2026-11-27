@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: Quota failure QuotaExceededError is explained and preserves every existing record
+ok 1 - Quota failure QuotaExceededError is explained and preserves every existing record
+  ---
+  duration_ms: 2.10025
+  type: 'test'
+  ...
+# Subtest: Quota failure NS_ERROR_DOM_QUOTA_REACHED is explained and preserves every existing record
+ok 2 - Quota failure NS_ERROR_DOM_QUOTA_REACHED is explained and preserves every existing record
+  ---
+  duration_ms: 0.254042
+  type: 'test'
+  ...
+# Subtest: Quota failure DOMException is explained and preserves every existing record
+ok 3 - Quota failure DOMException is explained and preserves every existing record
+  ---
+  duration_ms: 0.186083
+  type: 'test'
+  ...
+# Subtest: First restore into an empty collection leaves it empty on quota refusal
+ok 4 - First restore into an empty collection leaves it empty on quota refusal
+  ---
+  duration_ms: 0.183584
+  type: 'test'
+  ...
+# Subtest: Quota refusal during edition migration preserves the earlier edition byte for byte
+ok 5 - Quota refusal during edition migration preserves the earlier edition byte for byte
+  ---
+  duration_ms: 0.234583
+  type: 'test'
+  ...
+# Subtest: A failed note edit neither advances revision nor alters existing notes or preferences
+ok 6 - A failed note edit neither advances revision nor alters existing notes or preferences
+  ---
+  duration_ms: 0.136125
+  type: 'test'
+  ...
+# Subtest: Storage access failures receive a preservation message without falsely claiming full storage
+ok 7 - Storage access failures receive a preservation message without falsely claiming full storage
+  ---
+  duration_ms: 0.169291
+  type: 'test'
+  ...
+# Subtest: The same import can be retried successfully after capacity is available, without a stuck lock
+ok 8 - The same import can be retried successfully after capacity is available, without a stuck lock
+  ---
+  duration_ms: 0.184375
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7.647542

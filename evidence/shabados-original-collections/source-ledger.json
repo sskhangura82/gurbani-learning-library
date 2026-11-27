@@ -1,0 +1,128 @@
+{
+  "schema": "glp.shabados-original-source-ledger.v1",
+  "verifiedOn": "2026-11-27",
+  "publisher": "Shabad OS Organization and Contributors",
+  "release": {
+    "packageName": "@shabados/database",
+    "packageVersion": "5.0.0-next.0",
+    "registryMetadataUrl": "https://registry.npmjs.org/@shabados%2fdatabase/5.0.0-next.0",
+    "registryMetadataSha256": "de6e5148d295dc2fe51eb830ade42bda47798306663baf9837c7cc47d035514c",
+    "archiveUrl": "https://registry.npmjs.org/@shabados/database/-/database-5.0.0-next.0.tgz",
+    "archiveBytes": 47643787,
+    "archiveSha256": "839fa79860804550ca7e654f9ccdef3889451a7a95626e6c99466c6fc1b902b2",
+    "publishedSha1": "cb6a889ebf9875a6ee4b7bf48e4beeb6033e851e",
+    "publishedIntegrity": "sha512-+kURhYFREghaksJ9lsGXmYStV8KkcU/5C4A+gHWoBD2RaDIYL2NsqP0N6YrRg6MuBaIzgnrtOiJUOC5lbP26YA==",
+    "publishedSha1AndSha512Matched": true,
+    "registrySignatureCryptographicallyVerified": false,
+    "databaseMember": "package/dist/master.sqlite",
+    "databaseBytes": 151965696,
+    "databaseSha256": "517890c7e7c2f3dcef7f21b51d074a581b8eded4ebe14c504b84ea075ff16aeb",
+    "reportedGitHead": "693f879e2d00d192abaa77f53d61328e47cdbb2d",
+    "reportedGitHeadStatus": "REGISTRY_REPORTED_GITHUB_OBJECT_NOT_RESOLVED",
+    "gitHeadProbe": {
+      "url": "https://raw.githubusercontent.com/shabados/database/693f879e2d00d192abaa77f53d61328e47cdbb2d/README.md",
+      "httpStatus": 404
+    }
+  },
+  "rights": {
+    "basis": "PUBLISHER_ORIGINAL_TEXT_PUBLIC_DOMAIN_NOTICE",
+    "scope": "Exact primary original-text records; provider punctuation and headings preserved.",
+    "noticeMember": "package/README.md",
+    "noticeBytes": 15116,
+    "noticeSha256": "cacf8c7e24899b1202170b6fceedd4547fe4b09c78711f016cc7c4ee8613f795",
+    "noticeSection": "Gurbani and Panthic Compositions",
+    "readableReference": "https://www.shabados.com/docs/database/sources/",
+    "softwareLicense": "MIT",
+    "softwareLicenseMember": "package/LICENSE.md",
+    "softwareLicenseSha256": "d12d527335d29ef5b8a40d16801b50e1630091a1c165a1ea4c7e99a61445957c",
+    "softwareLicenseUsedAsContentPermission": false,
+    "excluded": [
+      "modern translation",
+      "commentary",
+      "transliteration",
+      "audio",
+      "English section description",
+      "scan",
+      "book layout"
+    ],
+    "sourceNoticeDocument": "docs/SHABADOS_ORIGINAL_SOURCE_NOTICE_20261127.md"
+  },
+  "sourceCollections": [
+    {
+      "collectionId": "sggs",
+      "sourceId": "SGGS",
+      "asset": {
+        "id": "SSA2",
+        "name": {
+          "en": "Shabadaarth",
+          "pa": "ਸ਼ਬਦਾਰਥ"
+        },
+        "reference": {
+          "title": "Shabadaarth",
+          "url": "www.archive.org/details/ShabdaarthSriGuruGranthSahibJi-Part1",
+          "accessed": "2019-01-22",
+          "authors": [
+            {
+              "first": "SGPC",
+              "last": "Committee"
+            }
+          ],
+          "publisher": {
+            "name": "SGPC",
+            "city": "Sri Amritsar"
+          },
+          "publication": {
+            "date": "2009-2012"
+          },
+          "volume": {
+            "total": 4
+          }
+        }
+      },
+      "editionScope": "Complete original asset in this pinned digital edition; 51 sections, 5549 source groups and 60555 original rows.",
+      "bibliography": "Shabadaarth, volumes 1-4, SGPC, Sri Amritsar, 2009-2012.",
+      "authorshipQualification": "All 35 names are source-reported metadata. Author identity and canonical attribution are not independently adjudicated. The upstream ALAM field for FD3 is not silently promoted to a canonical claim.",
+      "locationQualification": "All 1430 reported page labels are represented. Exact source page/line values remain reported locators; known Farid source metadata discrepancies are not repaired or hidden."
+    },
+    {
+      "collectionId": "dasam",
+      "sourceId": "SDGR",
+      "asset": {
+        "id": "DGDG",
+        "name": {
+          "en": "Das Granthi",
+          "pa": "ਦਸ ਗ੍ਰੰਥੀ"
+        },
+        "reference": {
+          "title": "Das Granthi",
+          "publisher": {
+            "name": "SGPC",
+            "city": "Sri Amritsar"
+          },
+          "publication": {
+            "date": "2014-07"
+          }
+        }
+      },
+      "editionScope": "Complete original asset in this pinned digital edition; all 17 sections through Charitropakhyan, Zafarnama and Hikayat; 5470 source groups and 67758 original rows.",
+      "bibliographyQualification": "The DGDG asset label alone is insufficient. The release README describes multiple composition-specific printed sources; see the source notice document. This is not asserted to be one uniform SGPC print edition.",
+      "authorshipQualification": "All 5470 groups carry upstream GGSN attribution. This is preserved as the provider report, not independent adjudication of historical authorship for every composition.",
+      "locationQualification": "All 1428 reported page labels are represented. Printed-line labels exist only for the 801 Jaap records; 66957 missing printed-line values remain null."
+    }
+  ],
+  "boundaryBasis": "section.source_order, line_group.section_order, line.line_group_order; complete source groups are never split at a page or chunk boundary.",
+  "independentPrintedCollationPerformed": false,
+  "textNormalizationPerformed": false,
+  "existingReaderSourcesModified": false,
+  "researchPacketFlagsChanged": false,
+  "reviewScope": "Builder extraction and source-notice inspection only. No actual Claude review was invoked or claimed.",
+  "locatorObservations": {
+    "path": "evidence/shabados-original-collections/locator-anomalies.json",
+    "sggsWithinGroupPageLabelDecreases": 0,
+    "sggsWithinSamePagePrintedLineLabelDecreases": 1,
+    "dasamWithinGroupPageLabelDecreases": 14,
+    "dasamAffectedGroup": "9QK",
+    "locatorsRepaired": false,
+    "sortingByPageProhibited": true
+  }
+}

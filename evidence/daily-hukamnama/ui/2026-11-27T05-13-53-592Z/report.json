@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "candidateDate": "2026-11-27",
+  "scenarios": [
+    {
+      "name": "Direct Daily URL installs the shell and reopens its same verified date offline",
+      "status": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "limits": [
+    "Fresh synthetic Chromium contexts only; no physical iPhone, iPad, Safari, VoiceOver or human acceptance claim.",
+    "One exact official dated development event; unavailable dates are never fabricated.",
+    "Current Simple/Detailed/Learning source-linked explanations remain pending; no interpretation generated."
+  ]
+}

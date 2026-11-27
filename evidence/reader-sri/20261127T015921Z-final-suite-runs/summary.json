@@ -1,0 +1,34 @@
+{
+  "completedAtUtc": "2026-11-27T01:59:27.858515+00:00",
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "sri-static",
+      "exit": 0
+    },
+    {
+      "name": "source-browser",
+      "exit": 0
+    },
+    {
+      "name": "sri-browser",
+      "exit": 0
+    }
+  ],
+  "frozenInputsUnchanged": {
+    "full-japji.html": true,
+    "sukhmani.html": true,
+    "nitnem/index.html": true,
+    "salok-mahalla9/index.html": true,
+    "salok-kabir/index.html": true,
+    "js/sukhmani-reader.js": true,
+    "js/japji-full.js": true,
+    "nitnem/reader.js": true,
+    "sw.js": true,
+    "tools/refresh-reader-sri.mjs": true,
+    "tests/reader-sri.mjs": true,
+    "tests/reader-sri-browser.mjs": true,
+    "tests/source-integrity-browser.mjs": true
+  },
+  "evidence": "evidence/reader-sri/20261127T015921Z-final-suite-runs"
+}

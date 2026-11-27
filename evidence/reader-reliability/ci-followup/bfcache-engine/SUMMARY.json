@@ -1,0 +1,45 @@
+{
+  "createdAt": "2026-11-27T02:24:37.896413+00:00",
+  "status": "BUILDER_MIXED_ENGINE_SMOKE_PASS",
+  "runtimeUnchangedFrom": "b69d6b31941adc025a1159ab0826d39a3fb58bc3",
+  "runtimeSha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+  "testSha256": "04abe183f1230f3dc0d5a490aecf8f8c0bab61ca5db8e13cc0435c70921e86ce",
+  "ordinaryLaunchUnchanged": true,
+  "bfcacheAcceptanceAssertionsUnchanged": true,
+  "finalReport": "final-mixed-engine/2026-11-27T02-23-27-035Z/report.json",
+  "browserLanes": {
+    "ordinary": {
+      "requestedChannel": null,
+      "requestedExecutable": null,
+      "selection": "Playwright default bundled headless shell",
+      "backForwardCacheDisabledByHarness": true,
+      "browserVersion": "151.0.7922.34",
+      "product": "HeadlessChrome/151.0.7922.34",
+      "revision": "@782af9cb30a53f54487e5d2e44738645a8ec457c",
+      "actualExecutable": "/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/browsers/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+      "platform": "darwin",
+      "headless": true
+    },
+    "bfcache": {
+      "requestedChannel": "chrome",
+      "requestedExecutable": null,
+      "selection": "Installed full Chrome via channel:chrome",
+      "backForwardCacheDisabledByHarness": false,
+      "browserVersion": "158.0.8127.37",
+      "product": "Chrome/158.0.8127.37",
+      "revision": "@b8c2be851f62f6a394ec57955d7f31335d7cb6d4",
+      "actualExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "platform": "darwin",
+      "headless": true,
+      "observation": {
+        "retainedMarker": "SYNTHETIC BFCache document marker",
+        "persisted": true,
+        "notRestoredReasons": null
+      }
+    }
+  },
+  "pinnedFull151ApplicationBFCache": "INCOMPLETE: cold return on candidate and frozen389; unisolated JavaScriptExecution; failures retained",
+  "pollingCausation": "NOT ESTABLISHED; event-based wait also failed on full151",
+  "hostedFollowup": "NOT RUN by this agent",
+  "physicalDeviceAcceptance": "NOT PERFORMED"
+}

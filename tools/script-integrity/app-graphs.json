@@ -1,0 +1,400 @@
+{
+  "schema": "glp.app-script-graphs.v1",
+  "baseline": "44401e35690322fb3dbc29c443bff86d73279fcb",
+  "tools": {
+    "esbuild": "0.28.2",
+    "acorn": "8.19.0"
+  },
+  "options": {
+    "bundle": true,
+    "format": "esm",
+    "platform": "browser",
+    "target": "es2022",
+    "splitting": false,
+    "minify": false,
+    "treeShaking": false,
+    "sourcemap": false,
+    "charset": "utf8",
+    "legalComments": "inline",
+    "keepNames": false
+  },
+  "apps": [
+    {
+      "appId": "library",
+      "entry": "library/app.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "library/app.mjs",
+          "bytes": 7289,
+          "sha256": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/catalog.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "library/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "library/passage-ui.mjs"
+            }
+          ]
+        },
+        {
+          "path": "library/catalog.mjs",
+          "bytes": 11806,
+          "sha256": "7218f9222fb072b50b79741862f0c184afce0a23cbad3b161157a42191ed5900",
+          "imports": []
+        },
+        {
+          "path": "library/core.mjs",
+          "bytes": 1840,
+          "sha256": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/catalog.mjs"
+            }
+          ]
+        },
+        {
+          "path": "library/kinds.mjs",
+          "bytes": 263,
+          "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+          "imports": []
+        },
+        {
+          "path": "library/passage-contracts.mjs",
+          "bytes": 1853,
+          "sha256": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd",
+          "imports": []
+        },
+        {
+          "path": "library/passage-ui.mjs",
+          "bytes": 6631,
+          "sha256": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/passages.mjs"
+            }
+          ]
+        },
+        {
+          "path": "library/passages.mjs",
+          "bytes": 9289,
+          "sha256": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/passage-contracts.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "library/search.mjs"
+            }
+          ]
+        },
+        {
+          "path": "library/search.mjs",
+          "bytes": 9304,
+          "sha256": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/kinds.mjs"
+            }
+          ]
+        }
+      ],
+      "output": {
+        "path": "library/app.bundle.mjs",
+        "bytes": 50428,
+        "sha256": "0d8c75d839aa6923b9b7e84bed4d5a318fc36f764abd35f725bd8117db751c99",
+        "integrity": "sha384-L9jEqmGCiQD94vREO78U7SwS17loRraL33oew4n8trfTQZ/uXF+SXkdDG37zhfPj",
+        "imports": []
+      }
+    },
+    {
+      "appId": "articles",
+      "entry": "articles/app.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "articles/app.mjs",
+          "bytes": 9081,
+          "sha256": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8",
+          "imports": [
+            {
+              "kind": "dynamic-import",
+              "path": "articles/core.mjs"
+            },
+            {
+              "kind": "dynamic-import",
+              "path": "articles/source-contracts.mjs"
+            }
+          ]
+        },
+        {
+          "path": "articles/core.mjs",
+          "bytes": 10887,
+          "sha256": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "articles/source-contracts.mjs"
+            }
+          ]
+        },
+        {
+          "path": "articles/source-contracts.mjs",
+          "bytes": 3812,
+          "sha256": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0",
+          "imports": []
+        }
+      ],
+      "output": {
+        "path": "articles/app.bundle.mjs",
+        "bytes": 26345,
+        "sha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1",
+        "integrity": "sha384-sf73i5xINqqNhxEW80ktNBW0PN7yZjo7CL8mIufIjyIlFicSGKLluj6cZR3jBIZ8",
+        "imports": []
+      }
+    },
+    {
+      "appId": "knowledge",
+      "entry": "knowledge/app.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "knowledge/app.mjs",
+          "bytes": 16537,
+          "sha256": "f96665029c95b391869d2c21f13cf22e8286573d09aa35c2e527e247627dba1c",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/registry.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "knowledge/journey.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "knowledge/core.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/core.mjs",
+          "bytes": 6289,
+          "sha256": "a9133a7e438314406076605e374d58cd0f60d8c310abd3799644a67553812c07",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/kinds.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "knowledge/search.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/journey.mjs",
+          "bytes": 12824,
+          "sha256": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/learning.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/json.mjs",
+          "bytes": 3867,
+          "sha256": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5",
+          "imports": []
+        },
+        {
+          "path": "knowledge/kinds.mjs",
+          "bytes": 263,
+          "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+          "imports": []
+        },
+        {
+          "path": "knowledge/learning.mjs",
+          "bytes": 12751,
+          "sha256": "376b8a2ca3de67934dd14e8bf18a2689ce191c0249905e0e276c24a6d24f6268",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/json.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/registry.mjs",
+          "bytes": 12893,
+          "sha256": "1a3920965d00fbe3a7911a6fd2d688a96e41c2007985ac08f3e4abe747dd7170",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/source-lock.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/search.mjs",
+          "bytes": 9304,
+          "sha256": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/kinds.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/source-lock.mjs",
+          "bytes": 211,
+          "sha256": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
+          "imports": []
+        }
+      ],
+      "output": {
+        "path": "knowledge/app.bundle.mjs",
+        "bytes": 80438,
+        "sha256": "190127810890d9abe264a9b511d139edf92933673b6b771de09e2bc45ed158f3",
+        "integrity": "sha384-2mtoOYpwaUdoXy54QPIZ6ei/F9GPiRv16kZMaWiDbkOmu9EW0xRtSfF+MRKhMwFv",
+        "imports": []
+      }
+    },
+    {
+      "appId": "hukamnama",
+      "entry": "hukamnama/reader.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "hukamnama/core.mjs",
+          "bytes": 4498,
+          "sha256": "b93d06e8d3347e39dba5524b04c36c629a762f001e571822f662d0f3cd7bab6d",
+          "imports": []
+        },
+        {
+          "path": "hukamnama/delivery.mjs",
+          "bytes": 18168,
+          "sha256": "c6edc3356a656a668f05f8efc9519f7a5798749f3e6c14d8bea66e76d25c509e",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/publication-key.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/json.mjs"
+            }
+          ]
+        },
+        {
+          "path": "hukamnama/json.mjs",
+          "bytes": 3867,
+          "sha256": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5",
+          "imports": []
+        },
+        {
+          "path": "hukamnama/learning.mjs",
+          "bytes": 12043,
+          "sha256": "b27aa14332dcb07f589faecf4616a31f90414afcdd628ab6d66399328d203d54",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/core.mjs"
+            }
+          ]
+        },
+        {
+          "path": "hukamnama/publication-key.mjs",
+          "bytes": 440,
+          "sha256": "e4c830924caa89fb6d64a0b2770b47340e1be0b8e10536e2684398adce2481c3",
+          "imports": []
+        },
+        {
+          "path": "hukamnama/reader.mjs",
+          "bytes": 23581,
+          "sha256": "d73a43a1f73626561d547c9b361dc4549b82c4d8f23c254fa3482900162a3b17",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/delivery.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/learning.mjs"
+            }
+          ]
+        }
+      ],
+      "output": {
+        "path": "hukamnama/reader.bundle.mjs",
+        "bytes": 64712,
+        "sha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+        "integrity": "sha384-nHoB9dEOO1r/cbKpqj+ZHjy616Pwiv2BD0wlh1gj6PmRz5PftGKzM5Fvnd48F2Y+",
+        "imports": []
+      }
+    },
+    {
+      "appId": "source-reader",
+      "entry": "collections/source-reader/reader.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "collections/source-reader/core.mjs",
+          "bytes": 16350,
+          "sha256": "97a2ec588071d317033c5da5842b8ab2402b7149f4b19f9cbcb85d112dbdc33c",
+          "imports": []
+        },
+        {
+          "path": "collections/source-reader/reader.mjs",
+          "bytes": 13418,
+          "sha256": "fddc5f2cd6a564a74689bd4377d1aee2be8a76e5fc1f44d35ea40a112e919a4d",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/source-lock.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/core.mjs"
+            }
+          ]
+        },
+        {
+          "path": "collections/source-reader/source-lock.mjs",
+          "bytes": 775,
+          "sha256": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807",
+          "imports": []
+        }
+      ],
+      "output": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "bytes": 30029,
+        "sha256": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
+        "integrity": "sha384-mbsKG/ldpgpQb9R2jDaHkm9KmeskuVKH/WIpwU2gGyEA5BtvFgWdd7eY4cevOni7",
+        "imports": []
+      }
+    }
+  ]
+}

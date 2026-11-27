@@ -1,0 +1,37 @@
+{
+  "passed": 16,
+  "verifiedCollections": [
+    {
+      "collectionId": "sggs",
+      "units": 5549,
+      "lines": 60555,
+      "pages": 1430,
+      "chunks": 75
+    },
+    {
+      "collectionId": "dasam",
+      "units": 5470,
+      "lines": 67758,
+      "pages": 1428,
+      "chunks": 80
+    }
+  ],
+  "tests": [
+    "Manifest and chunk require separately trusted exact byte lengths and digests",
+    "Duplicate JSON keys, escaped duplicate aliases, BOM and invalid UTF-8 refuse even with a renewed fixture pin",
+    "Closed source schema refuses teaching fields, translations, wrong selected asset and verified-commit claims",
+    "Manifest coverage rejects dropped or duplicated units, false counts, page gaps, reordered groups and unsafe paths",
+    "Independent whole-unit hash refuses text, punctuation, metadata or order changes after a chunk repin",
+    "Renewed pins cannot admit clipped groups, duplicate lines, false page sets, missing null locators or extra fields",
+    "Cross-chunk line collisions refuse on verification without granting a partial verified unit",
+    "Page lookup returns complete ordered owning descriptors and verified text remains byte-exact and immutable",
+    "Stable routes round-trip while malformed, foreign, duplicated and unowned destinations refuse explicitly",
+    "A route line must belong to both its verified unit and the selected reported page",
+    "Progress is separately source-bound and resume requires a verified actual line and page",
+    "Malformed, newer or foreign saved records refuse unchanged, without reading or writing any storage",
+    "Every sggs chunk and whole unit verifies, with exact total coverage and globally unique lines",
+    "Every dasam chunk and whole unit verifies, with exact total coverage and globally unique lines",
+    "Real SGGS page boundaries retain all source-declared lines, stable line links and the reported Raagmala attribution",
+    "Real Dasam preserves the largest complete unit, null printed lines, and reported-page regressions without inventing corrections"
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "snapshot.bhai-gurdas-vaar1-pauri38-mac-20261127",
+    "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+    "metadataSha256": "d52b4be2d330851042ef8bb152092b33b195a5ec757e2dd236784606ca76611b",
+    "snapshotSha256": "f39b45fb7786fe8d8b610ab6d8691009a2c3d60dfce55b197111558bce7c733b",
+    "snapshotReference": "Isolated public-source research snapshot bhai-gurdas-vaar1-pauri38.txt; raw response SHA-256 82e8363539a4c43dde157defa884dffe45b1c84af1286c79736667a1258e3b36; no protected source body committed.",
+    "retrievalReference": "https://api.banidb.com/v2/shabads/40038 | HTTP 200 | 2026-11-27T21:00:09.153Z",
+    "inspectedAt": "2026-11-27T21:00:09.153Z",
+    "inspectionStatus": "INSPECTED"
+  },
+  {
+    "id": "snapshot.eos-bhai-gurdas-mac-20261127",
+    "sourceId": "source.eos-bhai-gurdas",
+    "metadataSha256": "976093d4000a3e51699b44ddb2104ad2b6a42f548b73e6e951212ce6b7d4f3a8",
+    "snapshotSha256": "17b6e17edb214e67ce57e20056eb3e14ee9f0d99be003975b7899dfc4f515bbb",
+    "snapshotReference": "Isolated public-source research snapshot eos-bhai-gurdas.txt; raw response SHA-256 a0bc9615bbba8ca97dc77e6f42413d4f42a9f6727f0372189bf981deb804d5ee; no protected source body committed.",
+    "retrievalReference": "https://eos.learnpunjabi.org/GURDAS%20BHAI%20%281551-1636%29.html | HTTP 200 | 2026-11-27T21:00:23.471Z",
+    "inspectedAt": "2026-11-27T21:00:23.471Z",
+    "inspectionStatus": "INSPECTED"
+  },
+  {
+    "id": "snapshot.eos-kartarpur-mac-20261127",
+    "sourceId": "source.eos-kartarpur",
+    "metadataSha256": "3e3120b81413f44e1c5ed58888e3d202cfc4185d27e5f647a2d2353d6521707b",
+    "snapshotSha256": "7c6e6ed3e7058dd7df1e92f37bd61c9222ab0b58622f53de65a075aac3793ac8",
+    "snapshotReference": "Isolated public-source research snapshot eos-kartarpur.txt; raw response SHA-256 a89dfd8c0d77a9bb2ea0c1749afdcf9f697cec1afeb19da75f7557e0ea62130a; no protected source body committed.",
+    "retrievalReference": "https://eos.learnpunjabi.org/KARTARPUR.html | HTTP 200 | 2026-11-27T21:00:22.521Z",
+    "inspectedAt": "2026-11-27T21:00:22.521Z",
+    "inspectionStatus": "INSPECTED"
+  },
+  {
+    "id": "snapshot.macauliffe-1909-vol1-mac-20261127",
+    "sourceId": "source.macauliffe-1909-vol1",
+    "metadataSha256": "152909665b361606847dcb05335460c71ebfdfef623b1135e3474fa582b06eb5",
+    "snapshotSha256": "bd9a10fd1a4d5127c980fdf40cc54529959c412263d49724b5fe1b9ac87628d8",
+    "snapshotReference": "Isolated public-source research snapshot macauliffe-1909-vol1.txt; raw response SHA-256 92287fc1d8c6f540d4d514f6214ccda093608fef03027ef7930c2818091f9123; no protected source body committed.",
+    "retrievalReference": "https://sacred-texts.com/book/the-sikh-religion-volume-1/life-of-guru-nanak-chapter-xv | HTTP 200 | 2026-11-27T21:00:09.026Z",
+    "inspectedAt": "2026-11-27T21:00:09.026Z",
+    "inspectionStatus": "INSPECTED"
+  },
+  {
+    "id": "snapshot.sikhri-kartarpur-2019-mac-20261127",
+    "sourceId": "source.sikhri-kartarpur-2019",
+    "metadataSha256": "ae99a3e4c0eeec03c81de0d507fb00cf55ac88cac6cbeb1a1f33ed171a902591",
+    "snapshotSha256": "aafe15dc6c3970c848ca604a1cd78d3976392a4ff2951bf69377f0960ae3dede",
+    "snapshotReference": "Isolated public-source research snapshot sikhri-kartarpur-2019.txt; raw response SHA-256 f7d62f4edaa5735d3a290cb962054476ed8b409a0e997044f63025ee0d6d86c2; no protected source body committed.",
+    "retrievalReference": "https://sikhri.org/articles/what-happened-at-kartarpur-sahib | HTTP 200 | 2026-11-27T21:00:08.966Z",
+    "inspectedAt": "2026-11-27T21:00:08.966Z",
+    "inspectionStatus": "INSPECTED"
+  }
+]

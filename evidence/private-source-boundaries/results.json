@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Outside path, including future nested destination, is admitted",
+      "status": "PASS"
+    },
+    {
+      "name": "Regular Git repository destination refuses",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancestor Git marker refuses deeply nested destination",
+      "status": "PASS"
+    },
+    {
+      "name": "Injected Git overrides cannot disguise an in-repository destination",
+      "status": "PASS"
+    },
+    {
+      "name": "Injected Git overrides do not contaminate outside-path classification",
+      "status": "PASS"
+    },
+    {
+      "name": "Bare repository destination refuses",
+      "status": "PASS"
+    },
+    {
+      "name": "Worktree .git file refuses even when its target is unavailable",
+      "status": "PASS"
+    },
+    {
+      "name": "Symlink ancestor into a repository refuses before destination creation",
+      "status": "PASS"
+    },
+    {
+      "name": "Dangling .git symlink is not mistaken for absence",
+      "status": "PASS"
+    },
+    {
+      "name": "Symlink file input inside a repository refuses",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown Git exit-128 failure refuses instead of claiming outside",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing Git executable fails closed",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Synthetic directory and environment checks only. No actual payload, password or private-access file inspected."
+}

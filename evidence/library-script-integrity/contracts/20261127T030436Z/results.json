@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/library-script-integrity-inputs.mjs",
+      "tests/library-script-integrity.mjs"
+    ],
+    "exitCode": 0,
+    "log": "evidence/library-script-integrity/contracts/20261127T030436Z/1.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/build-app-bundles.mjs",
+      "--check"
+    ],
+    "exitCode": 0,
+    "log": "evidence/library-script-integrity/contracts/20261127T030436Z/2.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/refresh-app-sri.mjs",
+      "--check"
+    ],
+    "exitCode": 0,
+    "log": "evidence/library-script-integrity/contracts/20261127T030436Z/3.log"
+  }
+]

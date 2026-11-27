@@ -1,0 +1,59 @@
+[
+  {
+    "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+    "url": "https://api.banidb.com/v2/shabads/40038",
+    "httpStatus": 200,
+    "bytes": 17259,
+    "rawResponseSha256": "82e8363539a4c43dde157defa884dffe45b1c84af1286c79736667a1258e3b36",
+    "observedAt": "2026-11-27T21:00:09.153Z",
+    "snapshotFile": "bhai-gurdas-vaar1-pauri38.txt",
+    "snapshotSha256": "f39b45fb7786fe8d8b610ab6d8691009a2c3d60dfce55b197111558bce7c733b",
+    "status": "FETCHED"
+  },
+  {
+    "sourceId": "source.eos-kartarpur",
+    "url": "https://eos.learnpunjabi.org/KARTARPUR.html",
+    "httpStatus": 200,
+    "bytes": 6056,
+    "rawResponseSha256": "a89dfd8c0d77a9bb2ea0c1749afdcf9f697cec1afeb19da75f7557e0ea62130a",
+    "observedAt": "2026-11-27T21:00:22.521Z",
+    "snapshotFile": "eos-kartarpur.txt",
+    "snapshotSha256": "7c6e6ed3e7058dd7df1e92f37bd61c9222ab0b58622f53de65a075aac3793ac8",
+    "status": "FETCHED",
+    "encoding": "utf-16"
+  },
+  {
+    "sourceId": "source.eos-bhai-gurdas",
+    "url": "https://eos.learnpunjabi.org/GURDAS%20BHAI%20%281551-1636%29.html",
+    "httpStatus": 200,
+    "bytes": 12968,
+    "rawResponseSha256": "a0bc9615bbba8ca97dc77e6f42413d4f42a9f6727f0372189bf981deb804d5ee",
+    "observedAt": "2026-11-27T21:00:23.471Z",
+    "snapshotFile": "eos-bhai-gurdas.txt",
+    "snapshotSha256": "17b6e17edb214e67ce57e20056eb3e14ee9f0d99be003975b7899dfc4f515bbb",
+    "status": "FETCHED",
+    "encoding": "utf-16"
+  },
+  {
+    "sourceId": "source.macauliffe-1909-vol1",
+    "url": "https://sacred-texts.com/book/the-sikh-religion-volume-1/life-of-guru-nanak-chapter-xv",
+    "httpStatus": 200,
+    "bytes": 326660,
+    "rawResponseSha256": "92287fc1d8c6f540d4d514f6214ccda093608fef03027ef7930c2818091f9123",
+    "observedAt": "2026-11-27T21:00:09.026Z",
+    "snapshotFile": "macauliffe-1909-vol1.txt",
+    "snapshotSha256": "bd9a10fd1a4d5127c980fdf40cc54529959c412263d49724b5fe1b9ac87628d8",
+    "status": "FETCHED"
+  },
+  {
+    "sourceId": "source.sikhri-kartarpur-2019",
+    "url": "https://sikhri.org/articles/what-happened-at-kartarpur-sahib",
+    "httpStatus": 200,
+    "bytes": 68788,
+    "rawResponseSha256": "f7d62f4edaa5735d3a290cb962054476ed8b409a0e997044f63025ee0d6d86c2",
+    "observedAt": "2026-11-27T21:00:08.966Z",
+    "snapshotFile": "sikhri-kartarpur-2019.txt",
+    "snapshotSha256": "aafe15dc6c3970c848ca604a1cd78d3976392a4ff2951bf69377f0960ae3dede",
+    "status": "FETCHED"
+  }
+]

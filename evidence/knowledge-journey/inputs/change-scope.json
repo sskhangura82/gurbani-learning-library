@@ -1,0 +1,21 @@
+{
+  "schema": "glp.knowledge.journey-change-scope.v1",
+  "base": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+  "files": [
+    {
+      "path": "knowledge/app.mjs",
+      "beforeSha256": "cda94c987caec463905d8b75cc36be9e72ee44639b2a86edd2d6c2de0eca09d9",
+      "afterSha256": "4646ce7b02a411cade85832a0be31400cf52b1e908a64931c750dc7acd3ca128"
+    },
+    {
+      "path": "knowledge/index.html",
+      "beforeSha256": "418d98ee446ffd4df7f88907eb62c22bc62702b23acf79e42d44cc60c557a6f2",
+      "afterSha256": "9193c47b38657a1648c853675adaa834a970c17cff1e0104c748d3c337aa677f"
+    },
+    {
+      "path": "knowledge/style.css",
+      "beforeSha256": "1ebbdb302a92dd8f68a7573f93a061c1075f816c1f61516a7330c64e0dda6c7d",
+      "afterSha256": "2eb99db36fd1b5103851b91cee54208e300555eacea38de7cc3158721f8b96e3"
+    }
+  ]
+}

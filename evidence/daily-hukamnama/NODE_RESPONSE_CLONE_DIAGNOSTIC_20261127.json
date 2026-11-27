@@ -1,0 +1,236 @@
+{
+  "purpose": "Isolate native Response.clone lifetime behavior in the installed Node runtime; not a service-worker product verdict.",
+  "runtime": {
+    "node": "v22.15.0",
+    "undici": "6.21.2",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "expectedBodySha256": "d3ef7b9ba3d77b9fb4a9a32749e81ff08639249997bc77e6ba95c96fdb8317ea",
+  "bodyBytes": 24576,
+  "trials": [
+    {
+      "round": 1,
+      "count": 1,
+      "retainClones": false,
+      "retainedCloneCount": 0,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 1,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 0,
+      "originalReadFailures": 1,
+      "firstFailure": {
+        "index": 0,
+        "ok": false,
+        "name": "TypeError",
+        "message": "Body is unusable: Body has already been read",
+        "bodyUsed": true
+      },
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 1,
+      "count": 1,
+      "retainClones": true,
+      "retainedCloneCount": 1,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 0,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 1,
+      "originalReadFailures": 0,
+      "firstFailure": null,
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 1,
+      "count": 85,
+      "retainClones": false,
+      "retainedCloneCount": 0,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 85,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 0,
+      "originalReadFailures": 85,
+      "firstFailure": {
+        "index": 0,
+        "ok": false,
+        "name": "TypeError",
+        "message": "Body is unusable: Body has already been read",
+        "bodyUsed": true
+      },
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 1,
+      "count": 85,
+      "retainClones": true,
+      "retainedCloneCount": 85,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 0,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 85,
+      "originalReadFailures": 0,
+      "firstFailure": null,
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 1,
+      "count": 97,
+      "retainClones": false,
+      "retainedCloneCount": 0,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 97,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 0,
+      "originalReadFailures": 97,
+      "firstFailure": {
+        "index": 0,
+        "ok": false,
+        "name": "TypeError",
+        "message": "Body is unusable: Body has already been read",
+        "bodyUsed": true
+      },
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 1,
+      "count": 97,
+      "retainClones": true,
+      "retainedCloneCount": 97,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 0,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 97,
+      "originalReadFailures": 0,
+      "firstFailure": null,
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 2,
+      "count": 1,
+      "retainClones": false,
+      "retainedCloneCount": 0,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 1,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 0,
+      "originalReadFailures": 1,
+      "firstFailure": {
+        "index": 0,
+        "ok": false,
+        "name": "TypeError",
+        "message": "Body is unusable: Body has already been read",
+        "bodyUsed": true
+      },
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 2,
+      "count": 1,
+      "retainClones": true,
+      "retainedCloneCount": 1,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 0,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 1,
+      "originalReadFailures": 0,
+      "firstFailure": null,
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 2,
+      "count": 85,
+      "retainClones": false,
+      "retainedCloneCount": 0,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 85,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 0,
+      "originalReadFailures": 85,
+      "firstFailure": {
+        "index": 0,
+        "ok": false,
+        "name": "TypeError",
+        "message": "Body is unusable: Body has already been read",
+        "bodyUsed": true
+      },
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 2,
+      "count": 85,
+      "retainClones": true,
+      "retainedCloneCount": 85,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 0,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 85,
+      "originalReadFailures": 0,
+      "firstFailure": null,
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 2,
+      "count": 97,
+      "retainClones": false,
+      "retainedCloneCount": 0,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 97,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 0,
+      "originalReadFailures": 97,
+      "firstFailure": {
+        "index": 0,
+        "ok": false,
+        "name": "TypeError",
+        "message": "Body is unusable: Body has already been read",
+        "bodyUsed": true
+      },
+      "retainedClonesConsumed": true
+    },
+    {
+      "round": 2,
+      "count": 97,
+      "retainClones": true,
+      "retainedCloneCount": 97,
+      "beforeGcOriginalBodyUsed": 0,
+      "afterGcOriginalBodyUsed": 0,
+      "cloneHashMismatches": 0,
+      "originalHashMismatches": 0,
+      "originalReadSuccesses": 97,
+      "originalReadFailures": 0,
+      "firstFailure": null,
+      "retainedClonesConsumed": true
+    }
+  ],
+  "runtimeImplementationEvidence": [
+    {
+      "needle": "streamRegistry = new FinalizationRegistry",
+      "offset": 314073,
+      "excerpt": "streamRegistry = new FinalizationRegistry((weakRef) => {\n        const stream = weakRef.deref();\n        if (stream && !stream.locked && !isDisturbed(stream) && !isErrored(stream)) {\n          stream.cancel(\"Response object has been garbage collected\").catch(noop);\n        }\n      });\n    }\n    function extractBody(object, keepalive = false) {\n    "
+    },
+    {
+      "needle": "function cloneBody",
+      "offset": 319733,
+      "excerpt": "function cloneBody(instance, body) {\n      const [out1, out2] = body.stream.tee();\n      if (hasFinalizationRegistry) {\n        streamRegistry.register(instance, new WeakRef(out1));\n      }\n      body.stream = out1;\n      return {\n        stream: out2,\n        length: body.length,\n        source: body.source\n      };\n    }\n    __name(cloneBody, \"cloneBody\");\n    function throwIfAborted(state) {\n      if (state.aborted) {\n        throw new DOMExce"
+    },
+    {
+      "needle": "function cloneResponse",
+      "offset": 447523,
+      "excerpt": "function cloneResponse(response) {\n      if (response.internalResponse) {\n        return filterResponse(\n          cloneResponse(response.internalResponse),\n          response.type\n        );\n      }\n      const newResponse = makeResponse({ ...response, body: null });\n      if (response.body != null) {\n        newResponse.body = cloneBody(newResponse, response.body);\n      }\n      return newResponse;\n    }\n"
+    }
+  ],
+  "conclusion": "Reproduced: after explicit GC, discarding consumed native clones makes their still-live original Responses unreadable; strongly retaining those same clones preserves every original byte.",
+  "scope": "Synthetic native Response diagnostic only. It does not replace real Chromium service-worker checks, CI checks on another Node build, or physical-device acceptance."
+}

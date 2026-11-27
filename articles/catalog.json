@@ -1,0 +1,67 @@
+{
+  "schema": "glp.articles.catalog.v1",
+  "releaseStatus": "REVIEW_CANDIDATE",
+  "contentLayer": "SOURCE_READING_SHEET",
+  "topics": [
+    {
+      "id": "haumai",
+      "label": "Haumai",
+      "searchTerms": [
+        "haumai",
+        "ego"
+      ],
+      "articleIds": [
+        "haumai-source-sheet"
+      ]
+    },
+    {
+      "id": "dubidha",
+      "label": "Dubidha",
+      "searchTerms": [
+        "dubidha",
+        "duality"
+      ],
+      "articleIds": [
+        "dubidha-source-sheet"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "haumai-source-sheet",
+      "topicId": "haumai",
+      "title": "Haumai - source reading sheet",
+      "kind": "SOURCE_READING_SHEET",
+      "rights": "ORIGINAL_SCRIPTURE_ONLY",
+      "reviewStatus": "AWAITING_QUALIFIED_REVIEW",
+      "selection": {
+        "kind": "LITERAL_TOKEN",
+        "token": "ਹਉਮੈ",
+        "semanticReviewed": false
+      },
+      "referenceIds": [
+        "glp.article-ref.salok-mahalla9.019"
+      ],
+      "explanation": null,
+      "claims": []
+    },
+    {
+      "id": "dubidha-source-sheet",
+      "topicId": "dubidha",
+      "title": "Dubidha - source reading sheet",
+      "kind": "SOURCE_READING_SHEET",
+      "rights": "ORIGINAL_SCRIPTURE_ONLY",
+      "reviewStatus": "AWAITING_QUALIFIED_REVIEW",
+      "selection": {
+        "kind": "LITERAL_TOKEN",
+        "token": "ਦੁਬਿਧਾ",
+        "semanticReviewed": false
+      },
+      "referenceIds": [
+        "glp.article-ref.salok-kabir.025"
+      ],
+      "explanation": null,
+      "claims": []
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+name: Complete library script integrity
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  frozen-inputs-and-delivery-contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check quality workflows cover stacked candidate bases
+        run: node --test tests/qa-workflow-coverage.mjs
+      - name: Install the locked build-only toolchain
+        run: |
+          node --test tests/library-script-toolchain-lock.mjs
+          npm ci --prefix tools/script-integrity --ignore-scripts --no-audit --no-fund
+      - name: Reproduce closed bundles, ordered pins and offline hashes
+        run: |
+          git rev-parse HEAD
+          node tools/build-app-bundles.mjs --check
+          node tools/refresh-app-sri.mjs --check
+          node tools/refresh-reader-sri.mjs --check
+          node tools/build-offline.mjs
+          git diff --exit-code -- sw.js
+      - name: Preserve original inputs and exercise deliberate integrity mutations
+        run: |
+          node --test tests/library-script-integrity-inputs.mjs tests/library-script-integrity.mjs
+          node tests/reader-sri.mjs
+      - name: Save builder contract evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: library-script-integrity-contracts
+          path: evidence/library-script-integrity/
+          if-no-files-found: error
+  browser-enforcement-and-update-preservation:
+    needs: frozen-inputs-and-delivery-contracts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install locked builder and browser tools
+        run: |
+          node --test tests/library-script-toolchain-lock.mjs
+          npm ci --prefix tools/script-integrity --ignore-scripts --no-audit --no-fund
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Check transitive code protection on the actual bundled delivery path
+        run: node tests/library-script-integrity-browser.mjs
+      - name: Check failed updates and complete offline bundles with synthetic learning
+        run: node tests/library-script-integrity-offline.mjs
+      - name: Keep existing article and practice offline behavior
+        run: |
+          node tests/articles-browser.mjs
+          node tests/learning-practice-offline.mjs
+      - name: Preserve builder evidence including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: library-script-integrity-browser
+          path: |
+            evidence/library-script-integrity/
+            evidence/articles/
+            evidence/learning-practice/
+          if-no-files-found: error

@@ -1,0 +1,73 @@
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	﻿2026-11-27T02:10:32.1919698Z ##[group]Run npx playwright install --with-deps chromium
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.1920164Z ^[[36;1mnpx playwright install --with-deps chromium^[[0m
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.1920495Z ^[[36;1msudo apt-get install -y fonts-noto-core^[[0m
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.1938889Z shell: /usr/bin/bash -e {0}
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.1939549Z ##[endgroup]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.8303992Z Installing dependencies...
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.8374443Z Switching to root user to install dependencies...
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.9461273Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [152 B]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.9654636Z Err:2 https://packages.microsoft.com/ubuntu/26.04/prod resolute InRelease
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:32.9655633Z   403  Forbidden [IP: 13.107.213.40 443]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.1094493Z Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute InRelease
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.1262082Z Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.1971118Z Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.2268987Z Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.2694039Z Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/main amd64v3 Packages [918 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.3196824Z Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [203 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.3383473Z Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/universe amd64v3 Packages [398 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.3576580Z Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [126 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.3730369Z Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/restricted amd64v3 Packages [640 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.3915791Z Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [132 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.4062372Z Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/main amd64v3 Packages [765 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.4254038Z Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/main Translation-en [165 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.4439261Z Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/universe amd64v3 Packages [229 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.4604233Z Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/universe Translation-en [74.4 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.4891077Z Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/restricted amd64v3 Packages [618 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:33.5080267Z Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/restricted Translation-en [128 kB]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:42.7321001Z Reading package lists...
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:42.7412296Z E: Failed to fetch https://packages.microsoft.com/ubuntu/26.04/prod/dists/resolute/InRelease  403  Forbidden [IP: 13.107.213.40 443]
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:42.7413096Z E: The repository 'https://packages.microsoft.com/ubuntu/26.04/prod resolute InRelease' is no longer signed.
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:42.7430238Z Failed to install browsers
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:42.7430928Z Error: Installation process exited with code: 100
+verify-review-repairs-browser	Install Chromium and Gurmukhi fonts	2026-11-27T02:10:42.7586894Z ##[error]Process completed with exit code 1.
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	﻿2026-11-27T02:10:42.3475963Z ##[group]Run node tests/nitnem-browser.mjs
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:10:42.3476339Z ^[[36;1mnode tests/nitnem-browser.mjs^[[0m
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:10:42.3509170Z shell: /usr/bin/bash -e {0}
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:10:42.3509429Z ##[endgroup]
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4514373Z {
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4514873Z   "status": "failed",
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4515326Z   "passed": 63,
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4515701Z   "failed": 1,
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4516008Z   "browser": "151.0.7922.34",
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4516445Z   "failures": [
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4516946Z     {
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4517905Z       "name": "The real root worker verifies and caches all 81 assets, including Nitnem, Sukhmani and both Salok collections",
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4519027Z       "status": "failed",
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4522680Z       "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n85 !== 81\n\n    at file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/nitnem-browser.mjs:232:181\n    at async check (file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/nitnem-browser.mjs:48:6)\n    at async file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/nitnem-browser.mjs:229:2"
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4527191Z     }
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4527599Z   ]
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4527829Z }
+verify-nitnem-browser	Test all Nitnem readers, local learning, layouts and offline access	2026-11-27T02:11:17.4761328Z ##[error]Process completed with exit code 1.
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	﻿2026-11-27T02:10:43.8851923Z ##[group]Run node tests/sukhmani-resume-browser.mjs
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:43.8852273Z ^[[36;1mnode tests/sukhmani-resume-browser.mjs^[[0m
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:43.8852539Z ^[[36;1mnode tests/sukhmani-browser.mjs^[[0m
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:43.8881802Z shell: /usr/bin/bash -e {0}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:43.8882024Z ##[endgroup]
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:45.4531994Z {"name":"Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (320px)","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:46.3549768Z {"name":"Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (390px)","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:47.9692152Z {"name":"UI-created note and bookmark survive direct reload without a delayed line shift","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:50.3282109Z {"name":"Later manual reading restores its exact occurrence on reload; subsequent non-wheel scrolling still saves","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:52.6437419Z {"name":"Cold Back and Forward restore the saved occurrence without a Resume banner","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:54.3528785Z {"name":"Saved-list entry opens its existing dialog without moving or rewriting the saved record","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:56.0357374Z {"name":"An explicit navigation cancels pending reload alignment","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:10:58.1452333Z {"name":"A real wheel action during delayed reload layout wins over automatic restoration","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3252953Z {"name":"A genuine BFCache restoration retains the live document and its viewport","status":"failed","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 'SYNTHETIC BFCache document marker'\n\n    at file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/sukhmani-resume-browser.mjs:92:883\n    at async check (file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/sukhmani-resume-browser.mjs:46:166)\n    at async file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/sukhmani-resume-browser.mjs:91:2"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3256137Z {"name":"No runtime errors or external requests","status":"passed"}
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3415350Z {
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3415676Z   "status": "failed",
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3416523Z   "report": "/home/runner/work/gurbani-learning-library/gurbani-learning-library/evidence/sukhmani-resume/2026-11-27T02-10-44-225Z/report.json",
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3417237Z   "failed": [
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3417672Z     "A genuine BFCache restoration retains the live document and its viewport"
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3418137Z   ]
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3418345Z }
+verify-sukhmani-browser	Test settled resume, reading, local learning and offline preview with synthetic data	2026-11-27T02:11:00.3584770Z ##[error]Process completed with exit code 1.

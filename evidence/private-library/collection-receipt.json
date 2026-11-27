@@ -1,0 +1,40 @@
+{
+  "schema": "glp.private-collection.receipt.v1",
+  "date": "2026-11-27",
+  "encryption": "AES-256-GCM with PBKDF2-HMAC-SHA-256 at 600000 iterations",
+  "ciphertextBytes": 6953017,
+  "ciphertextSha256": "e5556d44fd65f25ef6d19bf3cd4283d8361646d72c6e795208423fde263715b6",
+  "works": 84,
+  "paragraphs": 1433,
+  "exactRoundTrip": true,
+  "repositorySecretScan": "PASS",
+  "sources": [
+    {
+      "publisher": "eBible",
+      "url": "https://ebible.org/scriptures/eng-web_readaloud.zip",
+      "edition": "World English Bible Classic ecumenical read-aloud edition",
+      "rights": "public-domain",
+      "bookCount": 81,
+      "chapterCount": 1402,
+      "archiveSha256": "8f5928dc165ba84ff17099b28e04b7f7e6ea8b180e6f027e0ef6d52f6911367c",
+      "sourceLimit": "The publisher format excludes verse numbers, footnotes, and introductions. All supplied chapter text is preserved."
+    },
+    {
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "retrievedFrom": "https://gutenberg.pglaf.org/cache/epub/2017/pg2017.txt",
+      "edition": "The Dhammapada, translated by F. Max Müller",
+      "rights": "Public domain source with complete Project Gutenberg notice/license retained",
+      "chapterCount": 26,
+      "verseNumbersVerified": 423,
+      "sourceSha256": "f2d09ebf28af0bf87ae7be7635d485b142e6526cb2cc164ba01c74586ff547bb",
+      "sourceLimit": "The provided Gutenberg text omits the original introduction, notes, and index; this is explicitly disclosed."
+    },
+    {
+      "publisher": "84000",
+      "url": "https://84000.co/",
+      "import": "link-only; no Tibetan translation imported"
+    }
+  ],
+  "privateMaterial": "Source payload, complete per-file receipt, and passphrase remain outside every Git working tree; only encrypted collection committed."
+}

@@ -1,0 +1,63 @@
+{
+  "pdfSha256": "7eae213cde45fce1579c253127dfbe145dcebd3f0012fdc231350be1df784f35",
+  "canonicalPackageSha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
+  "normalization": "Unicode NFC and collapsed whitespace only; no letter or punctuation removal",
+  "popplerVersion": "pdftotext version 25.03.0",
+  "results": [
+    {
+      "mode": "plain",
+      "exitCode": 0,
+      "stderr": "",
+      "textSha256": "d6e717d0d7c29b8032b336e61e2f1d3614e8164ed13d540eb137503d91663135",
+      "checks": [
+        {
+          "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+          "count": 1,
+          "pass": true
+        },
+        {
+          "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+          "count": 1,
+          "pass": true
+        }
+      ],
+      "gurmukhiTextLines": [
+        "Haumai ਹਉਮੈ",
+        "The exact source word ਹਉਮੈ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+        "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥"
+      ],
+      "status": "PASS"
+    },
+    {
+      "mode": "layout",
+      "exitCode": 0,
+      "stderr": "",
+      "textSha256": "9a036ead4cb415528cbd410239fc9f9138f98f8b1ae7b04e5903ae5768e6fc58",
+      "checks": [
+        {
+          "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+          "count": 1,
+          "pass": true
+        },
+        {
+          "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+          "count": 1,
+          "pass": true
+        }
+      ],
+      "gurmukhiTextLines": [
+        "Haumai ਹਉਮੈ",
+        "The exact source word ਹਉਮੈ occurs in the Salok below. The full Salok is included. The topic selection",
+        "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+        "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "limits": "Diagnostic of this unchanged PDF in Poppler; does not repair cross-viewer PDF interoperability or establish visual/physical-device/qualified approval."
+}

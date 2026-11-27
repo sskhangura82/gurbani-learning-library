@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-private-state="loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Private library · Gurbani Learning Library</title>
+  <link rel="stylesheet" href="./private-library.css">
+</head>
+<body>
+  <header><a href="../index.html?view=explore">← Gurbani Learning Library</a><p class="eyebrow">For your own reading</p><h1>Private library</h1><p class="intro">A quiet place for comparative religious reading. Psychology remains available in the open library.</p></header>
+  <main>
+    <p id="status" role="status" aria-live="polite">Preparing secure reading…</p>
+    <section id="unlock-panel" aria-labelledby="unlock-title">
+      <h2 id="unlock-title">Enter your PIN</h2><p>Use your six-digit PIN to open the collection on this device.</p>
+      <form id="unlock-form" autocomplete="off">
+        <label for="passphrase">Six-digit PIN</label>
+        <input type="password" id="passphrase" name="private-pin" inputmode="numeric" enterkeyhint="go" pattern="[0-9]{6}" minlength="6" maxlength="6" autocomplete="off" autocapitalize="off" spellcheck="false" required aria-describedby="passphrase-help">
+        <p id="passphrase-help" class="quiet">Enter all six digits, including any zeros at the start.</p>
+        <button id="unlock" type="submit">Unlock collection</button>
+      </form>
+    </section>
+    <section id="reading" hidden aria-labelledby="collection-title">
+      <div class="reading-header"><h2 id="collection-title"></h2><button type="button" id="lock" disabled>Lock library</button></div>
+      <label for="work-filter">Find a text</label><input type="search" id="work-filter" maxlength="200" placeholder="Title or tradition" autocomplete="off" spellcheck="false">
+      <label for="work-select">Choose a text</label><select id="work-select"></select><p id="work-count" class="quiet" aria-live="polite"></p>
+      <article><h3 id="work-title" tabindex="-1"></h3><p id="edition" class="quiet"></p><div id="passages"></div></article>
+      <nav class="pages" aria-label="Text pages"><button type="button" id="previous">Previous</button><span id="page-status" aria-live="polite"></span><button type="button" id="next">Next</button></nav>
+      <details><summary>Edition and source</summary><div id="source"></div></details>
+    </section>
+    <p class="quiet privacy-note">This reading view locks when you leave the tab. It does not save your PIN or reading history.</p>
+    <p class="quiet privacy-note">A six-digit PIN provides casual privacy. On a public website, someone can download the encrypted collection and try every PIN. Anyone who unlocks it can copy what they read.</p>
+    <noscript><p>JavaScript is needed to unlock the encrypted collection on your device.</p></noscript>
+  </main>
+  <p class="print-note">Private content is excluded from printing. Return to the library to unlock it again.</p>
+  <script type="module" src="./app.mjs" integrity="sha384-Jh+8TwmitiLxZa8E7HQvFDgNbBep1hus6rxAiwSLEyHjOFZr6hmPFDnraiWXMACl" crossorigin="anonymous"></script>
+</body>
+</html>

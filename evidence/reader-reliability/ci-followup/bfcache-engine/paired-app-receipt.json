@@ -1,0 +1,17 @@
+{
+  "runtimeSha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+  "testSha256": "3efbb5472c691362fe4e0f57516087008bc6eb274755f27252ec16e558811dcb",
+  "fullExecutable": "/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/browsers/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "cases": [
+    {
+      "name": "bundled-headless-shell",
+      "returncode": 1,
+      "log": "bundled-headless-shell.log"
+    },
+    {
+      "name": "bundled-full-chrome",
+      "returncode": 1,
+      "log": "bundled-full-chrome.log"
+    }
+  ]
+}

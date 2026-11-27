@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Locked page contains no private titles or plaintext",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing collection reports setup pending",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong passphrase reveals no content",
+      "status": "PASS"
+    },
+    {
+      "name": "Altered ciphertext reveals no content",
+      "status": "PASS"
+    },
+    {
+      "name": "Correct key renders inert text, clears password and paginates",
+      "status": "PASS"
+    },
+    {
+      "name": "No private storage, outbound request or URL parameters",
+      "status": "PASS"
+    },
+    {
+      "name": "Local text filter shows link-only source and clears unmatched content",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual lock removes all plaintext, filters and source metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Hiding the page clears the private view",
+      "status": "PASS"
+    },
+    {
+      "name": "Printing locks the view and CSS excludes private content",
+      "status": "PASS"
+    },
+    {
+      "name": "Reload and Back restore a locked view",
+      "status": "PASS"
+    },
+    {
+      "name": "Lock during an in-flight decrypt cannot reopen content",
+      "status": "PASS"
+    },
+    {
+      "name": "Five-minute inactivity locks",
+      "status": "PASS"
+    },
+    {
+      "name": "320-pixel layout has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Changed script under unchanged SRI does not execute",
+      "status": "PASS"
+    }
+  ],
+  "network": [
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/away.html",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs",
+    "/preview/private-library/collection.enc.json",
+    "/preview/private-library/index.html",
+    "/preview/private-library/private-library.css",
+    "/preview/private-library/app.mjs"
+  ],
+  "errors": [],
+  "limits": [
+    "Synthetic desktop Chromium at mobile CSS dimensions, not physical iPhone/Safari acceptance.",
+    "Test server substitutes a generated synthetic ciphertext; no real collection or password read.",
+    "No claim of physical erasure or resistance to a compromised hosting origin."
+  ]
+}

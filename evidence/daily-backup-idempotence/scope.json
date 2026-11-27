@@ -1,0 +1,31 @@
+{
+  "checkedAtUtc": "2026-11-27T06:54:40.740785+00:00",
+  "base": "df2c62fb3fef3d85cab9b752772e3f3f201dd791",
+  "trackedChangedPaths": [
+    ".github/workflows/hukamnama-foundation-qa.yml",
+    "docs/DAILY_BACKUP_REPAIR_CRITERIA_20261126.md",
+    "hukamnama/index.html",
+    "hukamnama/learning.mjs",
+    "hukamnama/reader.bundle.mjs",
+    "sw.js",
+    "tests/hukamnama-browser.mjs",
+    "tools/build-offline.mjs",
+    "tools/script-integrity/app-graphs.json",
+    "tools/script-integrity/policy.mjs"
+  ],
+  "runtimeChangedPaths": [
+    "hukamnama/index.html",
+    "hukamnama/learning.mjs",
+    "hukamnama/reader.bundle.mjs",
+    "sw.js"
+  ],
+  "workerAlgorithmUnchanged": true,
+  "offlineAssets": 97,
+  "changedOfflineAssets": [
+    "./hukamnama/",
+    "./hukamnama/index.html",
+    "./hukamnama/reader.bundle.mjs"
+  ],
+  "htmlOnlyIntegrityChanged": true,
+  "originalSourceAndOtherReaderPathsChanged": false
+}

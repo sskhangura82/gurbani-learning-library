@@ -1,0 +1,23 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "Public offline manifest excludes the private reader and ciphertext",
+      "status": "PASS"
+    },
+    {
+      "name": "Read exposes the Dasam entrance and open/private navigation",
+      "status": "FAIL",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:56707/glp-combined-test/index.html?view=read\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:56707/glp-combined-test/index.html?view=read\", waiting until \"load\"\u001b[22m\n"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "sourceHashes": {},
+  "limits": [
+    "Fresh desktop Chromium context at320CSS pixels; not physical iPhone/Safari/VoiceOver.",
+    "Actual ciphertext route forcibly returns404 without reading its file. No passphrase is used.",
+    "Service workers are blocked for this navigation-only fixture; offline exclusion is checked in the manifest.",
+    "All reader-state changes are synthetic within this fresh temporary browser context."
+  ]
+}

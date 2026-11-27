@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": [
+    "390 source pack opens, no page overflow",
+    "390 Humility deep study and source-linked complete passage",
+    "390 contextual word lookup returns to same original passage",
+    "390 local search, author filter, and unknown result",
+    "820 source pack opens, no page overflow",
+    "820 Humility deep study and source-linked complete passage",
+    "820 contextual word lookup returns to same original passage",
+    "820 local search, author filter, and unknown result",
+    "1440 source pack opens, no page overflow",
+    "1440 Humility deep study and source-linked complete passage",
+    "1440 contextual word lookup returns to same original passage",
+    "1440 local search, author filter, and unknown result",
+    "Changed teaching fixture refuses all knowledge rendering",
+    "Editorial-only revision works with unchanged independent scripture pin",
+    "Renewing editorial pin cannot admit changed scripture",
+    "Re-sealed scripture heading in title refuses the actual page",
+    "Re-sealed scripture heading in pa refuses the actual page"
+  ],
+  "errors": [],
+  "limits": [
+    "Chromium viewports; no physical devices, actual Safari or assistive-technology acceptance.",
+    "No public integration, production offline support or full SGGS index."
+  ],
+  "environment": {
+    "platform": "darwin",
+    "node": "v26.0.0",
+    "browser": "158.0.8127.37",
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  }
+}

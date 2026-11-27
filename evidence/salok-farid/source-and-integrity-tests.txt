@@ -1,0 +1,45 @@
+✔ Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input (2408.469834ms)
+✔ Existing application bytes stay frozen outside exact Daily and Farid scopes, loader pins and worker manifest (1918.480542ms)
+✔ Reader loader contract and reviewed original module closures remain exact (315.842833ms)
+✔ All 16 application pages carry exactly 58 independently inventoried script pins (243.242209ms)
+✔ Generated modules reproduce exactly and contain no executable import or export-from edges (130.554083ms)
+✔ Ordinary check mode writes neither bundles nor HTML (103.348916ms)
+✔ Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts (6.935125ms)
+✔ Bundling rejects unexpected dependencies and unresolved dynamic executable loading (5.607416ms)
+✔ Extra HTML and stale source cannot silently pass default checks (287.542833ms)
+✔ A pinned bundle cannot retain secondary imports or recover an inline execution path (11.459458ms)
+✔ All 42 ordered classic reader script occurrences have exact file pins and anonymous CORS (13.26625ms)
+✔ Pinning changes no reader markup, source wording or script order beyond integrity attributes (79.530375ms)
+✔ Check mode reproduces all pins without writing page bytes (10.462041ms)
+✔ The generator refuses missing, extra, inline, module and reordered script inventories (0.873833ms)
+✔ The generator cannot refresh a changed frozen source or verifier into acceptance (1.925208ms)
+✔ The frozen intake, quarantine, prior sources and teaching bytes are unchanged (709.370041ms)
+✔ Every original is retained exactly once, with one explicitly located closing line inserted (1.102334ms)
+✔ The complete 130-unit sequence preserves variable lengths, every ending and all eleven Mahalla headings (2.478333ms)
+✔ Fresh full secondary display exposes six unresolved differences and makes no independent-lineage claim (0.30325ms)
+✔ Source-only output and separate seals reproduce exactly without any teaching or translation file (5.585458ms)
+✔ Actual reader loads the complete source and never fetches an explanation asset (31.141542ms)
+✔ Missing, duplicated and reordered originals fail despite renewed outer and line seals (73.356875ms)
+✔ Editorial heading substitutions and every Mahalla relocation, omission or abbreviation change fail after resealing (344.338709ms)
+✔ A locator repair, inferred author, hidden discrepancy or claimed approval cannot be silently resealed (96.656459ms)
+✔ Secondary private-use nasal glyphs cannot overwrite selected original Unicode (48.961625ms)
+✔ All494 real originals and complete independently sealed synthetic teaching pass (35.356ms)
+✔ An editorial-only reseal cannot change the source seal (31.18225ms)
+✔ Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing (312.893709ms)
+✔ Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals (34.475208ms)
+✔ The retained nasal Unicode mark cannot be silently replaced by a private-use character (20.501292ms)
+✔ All ten split digital-Ang units reject collapse onto either Ang after resealing (365.713792ms)
+✔ Printed extents cannot replace the recorded digital locator or be promoted to full collation (38.260916ms)
+✔ A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse (56.186417ms)
+✔ Source and teaching cannot be promoted to publication or human-reviewed authority by resealing (110.72275ms)
+✔ Missing or extra studies, meanings and heading contexts fail complete coverage (142.400333ms)
+✔ Swapped map values and first-line-only study bindings cannot misattach meanings (91.7115ms)
+✔ A correct heading hash still needs the exact enclosing Salok and draft status (53.552375ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4751.831084

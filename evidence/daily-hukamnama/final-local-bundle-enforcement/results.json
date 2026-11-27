@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-27T05:20:04.710433+00:00",
+  "stage": "precommit working tree; see app graph byte pins",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/library-script-integrity-browser.mjs"
+      ],
+      "exitCode": 0
+    }
+  ]
+}

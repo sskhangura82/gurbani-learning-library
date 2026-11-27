@@ -1,0 +1,3234 @@
+{
+  "schema": "GLP-NITNEM-SOURCE-V2",
+  "compositionId": "salok-mahalla9",
+  "originalCompositionId": "salok-mahalla9",
+  "title": "Salok Mahalla 9",
+  "titleGurmukhi": "ਸਲੋਕ ਮਹਲਾ ੯",
+  "daypart": "Additional Bani",
+  "sourceFamily": "sggs",
+  "reference": "Sri Guru Granth Sahib Ji · Ang 1426–1429 · Guru Tegh Bahadur Ji",
+  "caveat": "Complete numbered sequence 1–57. Text checked against two digital sources; qualified collation is pending. The following Mundavani Mahalla 5 is a separate composition.",
+  "sourceTextSequenceSha256": "16649b80d412b71d628eab27e372208bb74a5c9289702a0f581967ce91604e28",
+  "sourceRepositoryCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+  "editionId": "salok-mahalla9-opengranth-34d2a7c-20261126",
+  "sourceStatus": "DIGITAL_SOURCE_COMPARED_QUALIFIED_REVIEW_PENDING",
+  "humanCollationApproved": false,
+  "translationApproved": false,
+  "sections": [],
+  "preface": [
+    {
+      "id": "sggs.salok-mahalla9.invocation01",
+      "kind": "invocation",
+      "text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "sha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013",
+      "family": "sggs",
+      "location": {
+        "system": "ang",
+        "ang": 1426
+      },
+      "held": false,
+      "source": {
+        "repository": "opengranth/open-granth",
+        "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+        "path": "corpus/ang-1426.md",
+        "row": 16,
+        "printedLine": 9
+      }
+    },
+    {
+      "id": "sggs.salok-mahalla9.heading01",
+      "kind": "heading",
+      "text": "ਸਲੋਕ ਮਹਲਾ ੯ ॥",
+      "sha256": "60c3afa39eea34268d45ab18e398fb1e0f59a96f898d20d37a4ee9af4d68ca63",
+      "family": "sggs",
+      "location": {
+        "system": "ang",
+        "ang": 1426
+      },
+      "held": false,
+      "source": {
+        "repository": "opengranth/open-granth",
+        "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+        "path": "corpus/ang-1426.md",
+        "row": 17,
+        "printedLine": 10
+      }
+    }
+  ],
+  "unitCount": 57,
+  "originalLineCount": 114,
+  "sourceOccurrenceCount": 117,
+  "units": [
+    {
+      "id": "sggs.salok-mahalla9.salok001",
+      "ordinal": 1,
+      "title": "Salok 1",
+      "titleGurmukhi": "ਸਲੋਕ ੧",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok001.line01",
+          "kind": "verse",
+          "text": "ਗੁਨ ਗੋਬਿੰਦ ਗਾਇਓ ਨਹੀ ਜਨਮੁ ਅਕਾਰਥ ਕੀਨੁ ॥",
+          "sha256": "08e55f75bf4333448d5f4171bd0912a38d6af7646f7f4e446fb616165beb7e16",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 18,
+            "printedLine": 10
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok001.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਜਿਹ ਬਿਧਿ ਜਲ ਕਉ ਮੀਨੁ ॥੧॥",
+          "sha256": "9b49b2390530255febcb5b4f527e7f2f8cfe48eb8106b6f19988195d8b968667",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 19,
+            "printedLine": 10
+          }
+        }
+      ],
+      "sourceDigest": "403e52816658dd027c39980eb7bfc3c98ec4beecba81fe9375d91e7ce6a5465a"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok002",
+      "ordinal": 2,
+      "title": "Salok 2",
+      "titleGurmukhi": "ਸਲੋਕ ੨",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok002.line01",
+          "kind": "verse",
+          "text": "ਬਿਖਿਅਨ ਸਿਉ ਕਾਹੇ ਰਚਿਓ ਨਿਮਖ ਨ ਹੋਹਿ ਉਦਾਸੁ ॥",
+          "sha256": "8f0bff9322a305429a11b8a288f746bd78769cb608b10de90425e16db8028e64",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 20,
+            "printedLine": 11
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok002.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਭਜੁ ਹਰਿ ਮਨਾ ਪਰੈ ਨ ਜਮ ਕੀ ਫਾਸ ॥੨॥",
+          "sha256": "78c07716b20d90c5657e2acbbec2d649f8c3ea064c45c3038991ade6966e2806",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 21,
+            "printedLine": 11
+          }
+        }
+      ],
+      "sourceDigest": "561ad438a14bf7838911ef5ba02afbc6746cde5d4be729c10f79f369bcb8118e"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok003",
+      "ordinal": 3,
+      "title": "Salok 3",
+      "titleGurmukhi": "ਸਲੋਕ ੩",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok003.line01",
+          "kind": "verse",
+          "text": "ਤਰਨਾਪੋ ਇਉ ਹੀ ਗਇਓ ਲੀਓ ਜਰਾ ਤਨੁ ਜੀਤਿ ॥",
+          "sha256": "b996ce055791995837b5213ce054849879512de56764902841b927ad69f90ce5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 22,
+            "printedLine": 12
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok003.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਭਜੁ ਹਰਿ ਮਨਾ ਅਉਧ ਜਾਤੁ ਹੈ ਬੀਤਿ ॥੩॥",
+          "sha256": "75a9f5f1ee0b0733230e6394f87fa95afc21ea072364a1ce5fb9870b4760c8e3",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 23,
+            "printedLine": 12
+          }
+        }
+      ],
+      "sourceDigest": "a3ee552c156e4d48427c4bfe10e57bd44f3b820bf2c5d67992c54fcbd39fd396"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok004",
+      "ordinal": 4,
+      "title": "Salok 4",
+      "titleGurmukhi": "ਸਲੋਕ ੪",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok004.line01",
+          "kind": "verse",
+          "text": "ਬਿਰਧਿ ਭਇਓ ਸੂਝੈ ਨਹੀ ਕਾਲੁ ਪਹੂਚਿਓ ਆਨਿ ॥",
+          "sha256": "fd93649631532d663cdf07c162c07254c596049e05aa81d7a209f2db806c968c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 24,
+            "printedLine": 13
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok004.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਨਰ ਬਾਵਰੇ ਕਿਉ ਨ ਭਜੈ ਭਗਵਾਨੁ ॥੪॥",
+          "sha256": "703d7d65da37c8034549106dc693932a82dad2668aef1fc385cc782d7ac6fe2c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 25,
+            "printedLine": 13
+          }
+        }
+      ],
+      "sourceDigest": "2e2eee6b2527dd3c2e2ef968d8b42a3b424255994834319d099adf6aa6684efb"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok005",
+      "ordinal": 5,
+      "title": "Salok 5",
+      "titleGurmukhi": "ਸਲੋਕ ੫",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok005.line01",
+          "kind": "verse",
+          "text": "ਧਨੁ ਦਾਰਾ ਸੰਪਤਿ ਸਗਲ ਜਿਨਿ ਅਪੁਨੀ ਕਰਿ ਮਾਨਿ ॥",
+          "sha256": "55444f01689ba3ad079ea0393487d4a6a2bee4236a421f73a17ca01c536872fd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 26,
+            "printedLine": 14
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok005.line02",
+          "kind": "verse",
+          "text": "ਇਨ ਮੈ ਕਛੁ ਸੰਗੀ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਜਾਨਿ ॥੫॥",
+          "sha256": "b21286acee58ca1b7be3a359aaaea660d4f79895786fbead87bfa40d4dfa8a07",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 27,
+            "printedLine": 14
+          }
+        }
+      ],
+      "sourceDigest": "cd2d17560558aa5600a33e22c71f9a44d58a81812bb05a0b8786020f65f4d1de"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok006",
+      "ordinal": 6,
+      "title": "Salok 6",
+      "titleGurmukhi": "ਸਲੋਕ ੬",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok006.line01",
+          "kind": "verse",
+          "text": "ਪਤਿਤ ਉਧਾਰਨ ਭੈ ਹਰਨ ਹਰਿ ਅਨਾਥ ਕੇ ਨਾਥ ॥",
+          "sha256": "26e0322b5822b30ed98a894d07141364a8f4d968ee5ba12ab6d9d4236708867b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 28,
+            "printedLine": 15
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok006.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਤਿਹ ਜਾਨੀਐ ਸਦਾ ਬਸਤੁ ਤੁਮ ਸਾਥਿ ॥੬॥",
+          "sha256": "bdbba8682aecce6900e3e2bdf6f16bb6eca44e1f1a87a641177371ff3a74d87d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 29,
+            "printedLine": 15
+          }
+        }
+      ],
+      "sourceDigest": "179e10cf17001b6137927ffe6c988dcc916f2d4a4ceee077c008daaf48d27130"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok007",
+      "ordinal": 7,
+      "title": "Salok 7",
+      "titleGurmukhi": "ਸਲੋਕ ੭",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok007.line01",
+          "kind": "verse",
+          "text": "ਤਨੁ ਧਨੁ ਜਿਹ ਤੋ ਕਉ ਦੀਓ ਤਾਂ ਸਿਉ ਨੇਹੁ ਨ ਕੀਨ ॥",
+          "sha256": "b5603b46e91c7f5ef31b001e0a6174cee2db27e4c56bbd0ea3969ad9e0bc96c6",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 30,
+            "printedLine": 16
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok007.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਨਰ ਬਾਵਰੇ ਅਬ ਕਿਉ ਡੋਲਤ ਦੀਨ ॥੭॥",
+          "sha256": "d422635089dcae809b2c99b11ece9b52c548d709fe17137b8a226542faff7544",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 31,
+            "printedLine": 16
+          }
+        }
+      ],
+      "sourceDigest": "d172f1f1ade2db6296eb396432c2cafaa04c17fd9ec7e08abd7a1a1cb86b63c5"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok008",
+      "ordinal": 8,
+      "title": "Salok 8",
+      "titleGurmukhi": "ਸਲੋਕ ੮",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok008.line01",
+          "kind": "verse",
+          "text": "ਤਨੁ ਧਨੁ ਸੰਪੈ ਸੁਖ ਦੀਓ ਅਰੁ ਜਿਹ ਨੀਕੇ ਧਾਮ ॥",
+          "sha256": "018db4594f99221801ea5a663b016b617983d767bb2b07a879452640e1ee809d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 32,
+            "printedLine": 17
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok008.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਸਿਮਰਤ ਕਾਹਿ ਨ ਰਾਮੁ ॥੮॥",
+          "sha256": "e9f1e100c14e639af109e21fd331b464115055fb8b92cfa84e39c1a5b52875cd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 33,
+            "printedLine": 17
+          }
+        }
+      ],
+      "sourceDigest": "0859b620c8ac572b0cc90e4e9b66fa43e7574c155e98901596526a546754d68c"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok009",
+      "ordinal": 9,
+      "title": "Salok 9",
+      "titleGurmukhi": "ਸਲੋਕ ੯",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1426,
+      "angEnd": 1426,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok009.line01",
+          "kind": "verse",
+          "text": "ਸਭ ਸੁਖ ਦਾਤਾ ਰਾਮੁ ਹੈ ਦੂਸਰ ਨਾਹਿਨ ਕੋਇ ॥",
+          "sha256": "ff81897364b83851573f9b6cbc0be70fe1eccf899455cc9fc18f463efe0a9a5b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 34,
+            "printedLine": 18
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok009.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਤਿਹ ਸਿਮਰਤ ਗਤਿ ਹੋਇ ॥੯॥",
+          "sha256": "c61983fb428e105a40e3a6b9e8d79c1dfa8881b74cb5968c64a956d62ddb14b1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1426
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1426.md",
+            "row": 35,
+            "printedLine": 18
+          }
+        }
+      ],
+      "sourceDigest": "6c97c4322a850d6a3e5d28e4290a2ce440b07ab565a0621e3e1cbd164093cdb0"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok010",
+      "ordinal": 10,
+      "title": "Salok 10",
+      "titleGurmukhi": "ਸਲੋਕ ੧੦",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok010.line01",
+          "kind": "verse",
+          "text": "ਜਿਹ ਸਿਮਰਤ ਗਤਿ ਪਾਈਐ ਤਿਹ ਭਜੁ ਰੇ ਤੈ ਮੀਤ ॥",
+          "sha256": "765638a37364697eb22848eaac727b130674445708b36a78b2bff8dd09e1bab1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 1,
+            "printedLine": 1
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok010.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਅਉਧ ਘਟਤ ਹੈ ਨੀਤ ॥੧੦॥",
+          "sha256": "d9953d0ce1325a57f5fc6628f90bf31c1d8180223945e38c9a21f939797ee2c8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 2,
+            "printedLine": 1
+          }
+        }
+      ],
+      "sourceDigest": "2f0087ef98eacb2dd40b07b41ea740e83503e6e3b2c5a9b2bb930672cdbed56c"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok011",
+      "ordinal": 11,
+      "title": "Salok 11",
+      "titleGurmukhi": "ਸਲੋਕ ੧੧",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok011.line01",
+          "kind": "verse",
+          "text": "ਪਾਂਚ ਤਤ ਕੋ ਤਨੁ ਰਚਿਓ ਜਾਨਹੁ ਚਤੁਰ ਸੁਜਾਨ ॥",
+          "sha256": "dbfbe8654d71b89be8a68670a0f9299d28acc81fc6a88dc6d5976589f65d769f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 3,
+            "printedLine": 2
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok011.line02",
+          "kind": "verse",
+          "text": "ਜਿਹ ਤੇ ਉਪਜਿਓ ਨਾਨਕਾ ਲੀਨ ਤਾਹਿ ਮੈ ਮਾਨੁ ॥੧੧॥",
+          "sha256": "c6bfa161e5c5cf34b921dc1d6b17cd2b69890ae6b189fa4162eaa16d9cce4815",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 4,
+            "printedLine": 2
+          }
+        }
+      ],
+      "sourceDigest": "d4cb62e8f3d028f78e5d91cf4d41531e889cb92c4c30aad1f0d2c7e3769d8fe7"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok012",
+      "ordinal": 12,
+      "title": "Salok 12",
+      "titleGurmukhi": "ਸਲੋਕ ੧੨",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok012.line01",
+          "kind": "verse",
+          "text": "ਘਟ ਘਟ ਮੈ ਹਰਿ ਜੂ ਬਸੈ ਸੰਤਨ ਕਹਿਓ ਪੁਕਾਰਿ ॥",
+          "sha256": "48807c3b5efd5bf5e271b7c84efdccd566e0d794f6e6153e3863d647ad8cd4a2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 5,
+            "printedLine": 3
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok012.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਤਿਹ ਭਜੁ ਮਨਾ ਭਉ ਨਿਧਿ ਉਤਰਹਿ ਪਾਰਿ ॥੧੨॥",
+          "sha256": "0265fcd5c0fc465a392f2fe4b9f901305e42cef01d08654d76b06e380329548b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 6,
+            "printedLine": 3
+          }
+        }
+      ],
+      "sourceDigest": "e79ffe0453bc67cd4fd5dba3e41e418c472db832b0b17518ee82f6d91dd4a1bd"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok013",
+      "ordinal": 13,
+      "title": "Salok 13",
+      "titleGurmukhi": "ਸਲੋਕ ੧੩",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok013.line01",
+          "kind": "verse",
+          "text": "ਸੁਖੁ ਦੁਖੁ ਜਿਹ ਪਰਸੈ ਨਹੀ ਲੋਭੁ ਮੋਹੁ ਅਭਿਮਾਨੁ ॥",
+          "sha256": "0bcbf11068ce686304a6dc5da0838e6c7f46ecb4649ff77a26ed20e98ed516d8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 7,
+            "printedLine": 4
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok013.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਸੋ ਮੂਰਤਿ ਭਗਵਾਨ ॥੧੩॥",
+          "sha256": "95174a5b4fcd5a5a6f53517dc0dc02c37d621e477bb528d76c18b508fe4a8378",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 8,
+            "printedLine": 4
+          }
+        }
+      ],
+      "sourceDigest": "4da3e088e2e58db5ae93b3003cb9f87b0bdba5beb9494ed190d2bdb2f28742b7"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok014",
+      "ordinal": 14,
+      "title": "Salok 14",
+      "titleGurmukhi": "ਸਲੋਕ ੧੪",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok014.line01",
+          "kind": "verse",
+          "text": "ਉਸਤਤਿ ਨਿੰਦਿਆ ਨਾਹਿ ਜਿਹਿ ਕੰਚਨ ਲੋਹ ਸਮਾਨਿ ॥",
+          "sha256": "1e305e4d0f3c7ef7964328a33be714dc856de5ae491454940f7810e6d086e29e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 9,
+            "printedLine": 5
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok014.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੪॥",
+          "sha256": "1199d3ad922e87c534470a4f2e3f9ff577beec5d92508842d562c1e9282c6cb7",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 10,
+            "printedLine": 5
+          }
+        }
+      ],
+      "sourceDigest": "98d46421427b150787211e350bb8ffb5f29c258106c9625a7f4affefd1df14f3"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok015",
+      "ordinal": 15,
+      "title": "Salok 15",
+      "titleGurmukhi": "ਸਲੋਕ ੧੫",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok015.line01",
+          "kind": "verse",
+          "text": "ਹਰਖੁ ਸੋਗੁ ਜਾ ਕੈ ਨਹੀ ਬੈਰੀ ਮੀਤ ਸਮਾਨਿ ॥",
+          "sha256": "b6f24b615af4f0bc58914c0a7bce7364e74e2f128c8ac472e48e4d974b3755bb",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 11,
+            "printedLine": 6
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok015.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਮੁਕਤਿ ਤਾਹਿ ਤੈ ਜਾਨਿ ॥੧੫॥",
+          "sha256": "d569bd8fe184bf3589ee8b4f15e2a454f40884ec1133cc8d0921cf4b3bab0b76",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 12,
+            "printedLine": 6
+          }
+        }
+      ],
+      "sourceDigest": "99ce15602ba48a34b995d2c082e0932250b0eb78de4c3c6955422b699e52f956"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok016",
+      "ordinal": 16,
+      "title": "Salok 16",
+      "titleGurmukhi": "ਸਲੋਕ ੧੬",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok016.line01",
+          "kind": "verse",
+          "text": "ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ ॥",
+          "sha256": "55a44f640676fa0578779ffeddb13c449750f81a6bfb31f19dda4ac7b0e57fb0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 13,
+            "printedLine": 7
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok016.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਗਿਆਨੀ ਤਾਹਿ ਬਖਾਨਿ ॥੧੬॥",
+          "sha256": "290f9546abaa12bfac92cfedb18c7b3fa9b9e574945f5e7b8aa837769ba56824",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 14,
+            "printedLine": 7
+          }
+        }
+      ],
+      "sourceDigest": "92483365d7d29d25cef04b63a2c68f6c9940a1d8fd736a51a089c79b9fe8db67"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok017",
+      "ordinal": 17,
+      "title": "Salok 17",
+      "titleGurmukhi": "ਸਲੋਕ ੧੭",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok017.line01",
+          "kind": "verse",
+          "text": "ਜਿਹਿ ਬਿਖਿਆ ਸਗਲੀ ਤਜੀ ਲੀਓ ਭੇਖ ਬੈਰਾਗ ॥",
+          "sha256": "4d62bdf029b2f83003604a236c8e8e2287e66d4c778b65169c4478d32ad47189",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 15,
+            "printedLine": 8
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok017.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਤਿਹ ਨਰ ਮਾਥੈ ਭਾਗੁ ॥੧੭॥",
+          "sha256": "a97d176cd328719b74cc871d233da64819381484730198034a4ad1d46ff91dae",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 16,
+            "printedLine": 8
+          }
+        }
+      ],
+      "sourceDigest": "86be1b7ac222c63e4ba54bb6e3db4618c5b6cf524de51c6065b3777fc76be4dd"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok018",
+      "ordinal": 18,
+      "title": "Salok 18",
+      "titleGurmukhi": "ਸਲੋਕ ੧੮",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok018.line01",
+          "kind": "verse",
+          "text": "ਜਿਹਿ ਮਾਇਆ ਮਮਤਾ ਤਜੀ ਸਭ ਤੇ ਭਇਓ ਉਦਾਸੁ ॥",
+          "sha256": "94e3df76277f37648a4b56775de5e3e982780ff7c914d273ef70f8474deb9b7a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 17,
+            "printedLine": 9
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok018.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨੁ ਰੇ ਮਨਾ ਤਿਹ ਘਟਿ ਬ੍ਰਹਮ ਨਿਵਾਸੁ ॥੧੮॥",
+          "sha256": "78947796026bfcc9c8ae32e78926dc839fc66b7ae70cea475f29177a3fe5f2b1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 18,
+            "printedLine": 9
+          }
+        }
+      ],
+      "sourceDigest": "f73ce4a41fa3981bb70cc8c050eeb06761fd0d5be95453879b07ff5ed340ffe5"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok019",
+      "ordinal": 19,
+      "title": "Salok 19",
+      "titleGurmukhi": "ਸਲੋਕ ੧੯",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok019.line01",
+          "kind": "verse",
+          "text": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+          "sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 19,
+            "printedLine": 10
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok019.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+          "sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 20,
+            "printedLine": 10
+          }
+        }
+      ],
+      "sourceDigest": "b6ca3f8ab083a6c1a064ea84aa49921b829b5a066900f397dc7ec68708afeba3"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok020",
+      "ordinal": 20,
+      "title": "Salok 20",
+      "titleGurmukhi": "ਸਲੋਕ ੨੦",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok020.line01",
+          "kind": "verse",
+          "text": "ਭੈ ਨਾਸਨ ਦੁਰਮਤਿ ਹਰਨ ਕਲਿ ਮੈ ਹਰਿ ਕੋ ਨਾਮੁ ॥",
+          "sha256": "71b0faf15fd86d4423a1953410a9430b6dcf043ce8d9fd0600ec7e20bdb23223",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 21,
+            "printedLine": 11
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok020.line02",
+          "kind": "verse",
+          "text": "ਨਿਸਿ ਦਿਨੁ ਜੋ ਨਾਨਕ ਭਜੈ ਸਫਲ ਹੋਹਿ ਤਿਹ ਕਾਮ ॥੨੦॥",
+          "sha256": "952144810dbdfcbb6b0f64a6f3e4ce2a4c4a6748e116449fb4430af17453f2ed",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 22,
+            "printedLine": 11
+          }
+        }
+      ],
+      "sourceDigest": "1b498aadfe0bf8facf224599db7bca3e6f60584fcb651191d96aa0e36c5664d2"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok021",
+      "ordinal": 21,
+      "title": "Salok 21",
+      "titleGurmukhi": "ਸਲੋਕ ੨੧",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok021.line01",
+          "kind": "verse",
+          "text": "ਜਿਹਬਾ ਗੁਨ ਗੋਬਿੰਦ ਭਜਹੁ ਕਰਨ ਸੁਨਹੁ ਹਰਿ ਨਾਮੁ ॥",
+          "sha256": "3f4640ac644713689bbfd96e5c3ca60b52b1c0fdb08ce55eabb4c1ad40547143",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 23,
+            "printedLine": 12
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok021.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਪਰਹਿ ਨ ਜਮ ਕੈ ਧਾਮ ॥੨੧॥",
+          "sha256": "3085dbbed52340fedc71bfe4da399a4a69869d1890e404b8e445fb02426e507f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 24,
+            "printedLine": 12
+          }
+        }
+      ],
+      "sourceDigest": "ee4f9abf3325d5ef2b036f1fe4bdf257ae6b3c79ea7d85607aeea23720f54edc"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok022",
+      "ordinal": 22,
+      "title": "Salok 22",
+      "titleGurmukhi": "ਸਲੋਕ ੨੨",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok022.line01",
+          "kind": "verse",
+          "text": "ਜੋ ਪ੍ਰਾਨੀ ਮਮਤਾ ਤਜੈ ਲੋਭ ਮੋਹ ਅਹੰਕਾਰ ॥",
+          "sha256": "fa5ce013b6669ec5e6bd6417c36c972f191d4e5eded5623e009429039481f9a0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 25,
+            "printedLine": 13
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok022.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਆਪਨ ਤਰੈ ਅਉਰਨ ਲੇਤ ਉਧਾਰ ॥੨੨॥",
+          "sha256": "f0fe83facdc47ca41971dfe94017bd4caa2a0f05b8f171ae22cdb9050f07707e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 26,
+            "printedLine": 13
+          }
+        }
+      ],
+      "sourceDigest": "6dce63f5d3f063099191bb66e4e730b99142f3966afded72f0e77e7c713ff7ca"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok023",
+      "ordinal": 23,
+      "title": "Salok 23",
+      "titleGurmukhi": "ਸਲੋਕ ੨੩",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok023.line01",
+          "kind": "verse",
+          "text": "ਜਿਉ ਸੁਪਨਾ ਅਰੁ ਪੇਖਨਾ ਐਸੇ ਜਗ ਕਉ ਜਾਨਿ ॥",
+          "sha256": "38bebb7ce4e2557a9eb6c81d8c888c54308f9377a3a27f8d47db19940e0ab153",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 27,
+            "printedLine": 14
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok023.line02",
+          "kind": "verse",
+          "text": "ਇਨ ਮੈ ਕਛੁ ਸਾਚੋ ਨਹੀ ਨਾਨਕ ਬਿਨੁ ਭਗਵਾਨ ॥੨੩॥",
+          "sha256": "f6fd6ed3d341c2cefca952efdee7c8e8f72cd78aac2affa0eda68261b861d529",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 28,
+            "printedLine": 14
+          }
+        }
+      ],
+      "sourceDigest": "3a9f3b72ca7bc4f4d1da1462a0e1eee2a735b5b35eb091bd789e0861c167a1a9"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok024",
+      "ordinal": 24,
+      "title": "Salok 24",
+      "titleGurmukhi": "ਸਲੋਕ ੨੪",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok024.line01",
+          "kind": "verse",
+          "text": "ਨਿਸਿ ਦਿਨੁ ਮਾਇਆ ਕਾਰਨੇ ਪ੍ਰਾਨੀ ਡੋਲਤ ਨੀਤ ॥",
+          "sha256": "aeef30f4849018aeef463d2ee5ace4748ea3f5d08d75cf731558c5104b749eaa",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 29,
+            "printedLine": 15
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok024.line02",
+          "kind": "verse",
+          "text": "ਕੋਟਨ ਮੈ ਨਾਨਕ ਕੋਊ ਨਾਰਾਇਨੁ ਜਿਹ ਚੀਤਿ ॥੨੪॥",
+          "sha256": "34a90c770f685f871574b99aa7822b4dd112cd29a7058aa4ab04e9b4c9508323",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 30,
+            "printedLine": 15
+          }
+        }
+      ],
+      "sourceDigest": "c913c6c9ae0f1b45a52958c03d1c8f76a393520e995370ae4c0e1e978e6a994a"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok025",
+      "ordinal": 25,
+      "title": "Salok 25",
+      "titleGurmukhi": "ਸਲੋਕ ੨੫",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok025.line01",
+          "kind": "verse",
+          "text": "ਜੈਸੇ ਜਲ ਤੇ ਬੁਦਬੁਦਾ ਉਪਜੈ ਬਿਨਸੈ ਨੀਤ ॥",
+          "sha256": "9f856a780a17ed177a18087b356fa87d5b595dad4f4dc6da8f9adb69d9a6c85d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 31,
+            "printedLine": 16
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok025.line02",
+          "kind": "verse",
+          "text": "ਜਗ ਰਚਨਾ ਤੈਸੇ ਰਚੀ ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਮੀਤ ॥੨੫॥",
+          "sha256": "28665f0d3387f77c155db8e1b2acd6ebf98759e9eb4c75f095c4ac8b34f2f830",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 32,
+            "printedLine": 16
+          }
+        }
+      ],
+      "sourceDigest": "0d5e5fd965980296c4b91c9627e20bfffa97ace23b5ba208f4901e6926c5270d"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok026",
+      "ordinal": 26,
+      "title": "Salok 26",
+      "titleGurmukhi": "ਸਲੋਕ ੨੬",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok026.line01",
+          "kind": "verse",
+          "text": "ਪ੍ਰਾਨੀ ਕਛੂ ਨ ਚੇਤਈ ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥",
+          "sha256": "c6ee8b4a82beee48e294b16758a49aeab8b3b2ea2e19e993f7a59d29ee60caff",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 33,
+            "printedLine": 16
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok026.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੨੬॥",
+          "sha256": "75208a3f5023ca4f388904a13a094f554781a64919ba15db942fdeb8b12866fc",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 34,
+            "printedLine": 17
+          }
+        }
+      ],
+      "sourceDigest": "8347f572ec6ea9f3290eea4d0a61c1f06d0aec764caccaf2003e15cbabb970df"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok027",
+      "ordinal": 27,
+      "title": "Salok 27",
+      "titleGurmukhi": "ਸਲੋਕ ੨੭",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok027.line01",
+          "kind": "verse",
+          "text": "ਜਉ ਸੁਖ ਕਉ ਚਾਹੈ ਸਦਾ ਸਰਨਿ ਰਾਮ ਕੀ ਲੇਹ ॥",
+          "sha256": "820dd004ad1de56259fdff6ff0521d94e18a298b295693caaabee6f2525ea04f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 35,
+            "printedLine": 17
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok027.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਦੁਰਲਭ ਮਾਨੁਖ ਦੇਹ ॥੨੭॥",
+          "sha256": "89ca9768f241e588f21fcf3f5c02680214012c15a93d6a9c4704dd278f8cee07",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 36,
+            "printedLine": 18
+          }
+        }
+      ],
+      "sourceDigest": "701b59dcb85348efad228f562bca19d364da02016907128aa369847825ebe836"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok028",
+      "ordinal": 28,
+      "title": "Salok 28",
+      "titleGurmukhi": "ਸਲੋਕ ੨੮",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1427,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok028.line01",
+          "kind": "verse",
+          "text": "ਮਾਇਆ ਕਾਰਨਿ ਧਾਵਹੀ ਮੂਰਖ ਲੋਗ ਅਜਾਨ ॥",
+          "sha256": "cd2155ec327f0b41c22d326f3288f6b5a35ece9834f7ecea62293e1a19f5cbc1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 37,
+            "printedLine": 18
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok028.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਬਿਰਥਾ ਜਨਮੁ ਸਿਰਾਨ ॥੨੮॥",
+          "sha256": "269f947f0145e3fe2b25c18e01573232f0dd282250e9856012fb8e4cd5900a73",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 38,
+            "printedLine": 19
+          }
+        }
+      ],
+      "sourceDigest": "aedbbb1ee02ac373daba4e50f028a89a03e742adf1b1a7764390959ca2bdf2b2"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok029",
+      "ordinal": 29,
+      "title": "Salok 29",
+      "titleGurmukhi": "ਸਲੋਕ ੨੯",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1427,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok029.line01",
+          "kind": "verse",
+          "text": "ਜੋ ਪ੍ਰਾਨੀ ਨਿਸਿ ਦਿਨੁ ਭਜੈ ਰੂਪ ਰਾਮ ਤਿਹ ਜਾਨੁ ॥",
+          "sha256": "902be3f629d13ed3e9ba9cac1074a5bd12517e3f0050f5c7f918f6dce1ab0e6c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1427
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1427.md",
+            "row": 39,
+            "printedLine": 19
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok029.line02",
+          "kind": "verse",
+          "text": "ਹਰਿ ਜਨ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਮਾਨੁ ॥੨੯॥",
+          "sha256": "5d0c3251fcc2ef7d2d35f6af203439fbc1a4d16125ff0d67d0482e0c9bd763e2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 1,
+            "printedLine": 1
+          }
+        }
+      ],
+      "sourceDigest": "a40cdad85e91ca3c7adde638748f059440030b2550a259cf92aa1c4dbde86c6c"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok030",
+      "ordinal": 30,
+      "title": "Salok 30",
+      "titleGurmukhi": "ਸਲੋਕ ੩੦",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok030.line01",
+          "kind": "verse",
+          "text": "ਮਨੁ ਮਾਇਆ ਮੈ ਫਧਿ ਰਹਿਓ ਬਿਸਰਿਓ ਗੋਬਿੰਦ ਨਾਮੁ ॥",
+          "sha256": "39b7ff5ba49e849d333684441b0f3b54fc000593544a6f6b4aea0ee411ab0991",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 2,
+            "printedLine": 1
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok030.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਬਿਨੁ ਹਰਿ ਭਜਨ ਜੀਵਨ ਕਉਨੇ ਕਾਮ ॥੩੦॥",
+          "sha256": "ed4fd1902849660befebb3ca86e6e476aabc83438052f09e72c93ae3d39e5c39",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 3,
+            "printedLine": 2
+          }
+        }
+      ],
+      "sourceDigest": "4701f0c88646ad6db845cd28d3318d1bc4a339e3712035043273c37b66d03562"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok031",
+      "ordinal": 31,
+      "title": "Salok 31",
+      "titleGurmukhi": "ਸਲੋਕ ੩੧",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok031.line01",
+          "kind": "verse",
+          "text": "ਪ੍ਰਾਨੀ ਰਾਮੁ ਨ ਚੇਤਈ ਮਦਿ ਮਾਇਆ ਕੈ ਅੰਧੁ ॥",
+          "sha256": "eb21a1abe44c494b96d9dfba90177a4d1876de8eda9310cad7936a6386a09133",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 4,
+            "printedLine": 2
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok031.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜਨ ਬਿਨੁ ਪਰਤ ਤਾਹਿ ਜਮ ਫੰਧ ॥੩੧॥",
+          "sha256": "6119d87bbdb640119ec2972d0695581dc6c2a225aa4554379f26efa10aee6450",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 5,
+            "printedLine": 3
+          }
+        }
+      ],
+      "sourceDigest": "3684c266234a10326961f3511b0b56e2e0815091d63ae4955f7c43a33f5e9671"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok032",
+      "ordinal": 32,
+      "title": "Salok 32",
+      "titleGurmukhi": "ਸਲੋਕ ੩੨",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok032.line01",
+          "kind": "verse",
+          "text": "ਸੁਖ ਮੈ ਬਹੁ ਸੰਗੀ ਭਏ ਦੁਖ ਮੈ ਸੰਗਿ ਨ ਕੋਇ ॥",
+          "sha256": "302e39a9ca76df0892c8634e800fa5a67ed2b993eaa871d5aad5bd8b8a2a2da3",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 6,
+            "printedLine": 3
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok032.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਅੰਤਿ ਸਹਾਈ ਹੋਇ ॥੩੨॥",
+          "sha256": "00193e56e3a4ed5d90bab7d6b95f8fc08c6f8be2dd043b3253f9bccb6761e375",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 7,
+            "printedLine": 4
+          }
+        }
+      ],
+      "sourceDigest": "c2543b9ce7cf0aa3fde2104a3ba4b3ea02a24e4e64019557019c1ba4b4c0357c"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok033",
+      "ordinal": 33,
+      "title": "Salok 33",
+      "titleGurmukhi": "ਸਲੋਕ ੩੩",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok033.line01",
+          "kind": "verse",
+          "text": "ਜਨਮ ਜਨਮ ਭਰਮਤ ਫਿਰਿਓ ਮਿਟਿਓ ਨ ਜਮ ਕੋ ਤ੍ਰਾਸੁ ॥",
+          "sha256": "424e8c036556c1d2d1f94f0c4b210d054d21bc9fd999d9eeb3a17df2dc3cd3f8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 8,
+            "printedLine": 4
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok033.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜੁ ਮਨਾ ਨਿਰਭੈ ਪਾਵਹਿ ਬਾਸੁ ॥੩੩॥",
+          "sha256": "9214aa194c7f3ac72e52a736cba54923203267c65f18b7a6744450ef754c3a79",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 9,
+            "printedLine": 5
+          }
+        }
+      ],
+      "sourceDigest": "42a6286056338f340589c8aeb628e5f67d0fa17875b00ac73908014a74a8fb2d"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok034",
+      "ordinal": 34,
+      "title": "Salok 34",
+      "titleGurmukhi": "ਸਲੋਕ ੩੪",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok034.line01",
+          "kind": "verse",
+          "text": "ਜਤਨ ਬਹੁਤੁ ਮੈ ਕਰਿ ਰਹਿਓ ਮਿਟਿਓ ਨ ਮਨ ਕੋ ਮਾਨੁ ॥",
+          "sha256": "5f965c520ab32b8c20871f8a286fdbacfdcd89706defc8b32deb0bf1c15350a1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 10,
+            "printedLine": 5
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok034.line02",
+          "kind": "verse",
+          "text": "ਦੁਰਮਤਿ ਸਿਉ ਨਾਨਕ ਫਧਿਓ ਰਾਖਿ ਲੇਹੁ ਭਗਵਾਨ ॥੩੪॥",
+          "sha256": "1cfbbb2b25e0330b85410876f9a70f7b2dffac47e1e0709c325a8353adc1104e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 11,
+            "printedLine": 6
+          }
+        }
+      ],
+      "sourceDigest": "d0b84a95228b4fcb85a8cb8bc0781deeb5ad932b4ea6f767d0944acca4356e84"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok035",
+      "ordinal": 35,
+      "title": "Salok 35",
+      "titleGurmukhi": "ਸਲੋਕ ੩੫",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok035.line01",
+          "kind": "verse",
+          "text": "ਬਾਲ ਜੁਆਨੀ ਅਰੁ ਬਿਰਧਿ ਫੁਨਿ ਤੀਨਿ ਅਵਸਥਾ ਜਾਨਿ ॥",
+          "sha256": "4413c0da048e971cba999f9faf41c24972667d7af6421e8482ff7050f156419d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 12,
+            "printedLine": 7
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok035.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਹਰਿ ਭਜਨ ਬਿਨੁ ਬਿਰਥਾ ਸਭ ਹੀ ਮਾਨੁ ॥੩੫॥",
+          "sha256": "bc97458cfd66518b7758981decb9fad21367f79d1161a10a07ab403441f11f58",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 13,
+            "printedLine": 7
+          }
+        }
+      ],
+      "sourceDigest": "a9cbae67f1bf252db223c4c1b1b5c698c5f866e2a1f57aec96861d27a58aaba7"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok036",
+      "ordinal": 36,
+      "title": "Salok 36",
+      "titleGurmukhi": "ਸਲੋਕ ੩੬",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok036.line01",
+          "kind": "verse",
+          "text": "ਕਰਣੋ ਹੁਤੋ ਸੁ ਨਾ ਕੀਓ ਪਰਿਓ ਲੋਭ ਕੈ ਫੰਧ ॥",
+          "sha256": "68fa501eea57ad55650c1e52eba8496c12f83b4d12877a6ffa55073f034ab4b2",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 14,
+            "printedLine": 8
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok036.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਸਮਿਓ ਰਮਿ ਗਇਓ ਅਬ ਕਿਉ ਰੋਵਤ ਅੰਧ ॥੩੬॥",
+          "sha256": "dda8ce12045025a5f3576f6123e9ab2655580d6c9095c23028554730f9bda765",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 15,
+            "printedLine": 8
+          }
+        }
+      ],
+      "sourceDigest": "7d46bae1ffe328519f0034ce232894fd0e1e63b0234b28f39fc20548a32e4a50"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok037",
+      "ordinal": 37,
+      "title": "Salok 37",
+      "titleGurmukhi": "ਸਲੋਕ ੩੭",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok037.line01",
+          "kind": "verse",
+          "text": "ਮਨੁ ਮਾਇਆ ਮੈ ਰਮਿ ਰਹਿਓ ਨਿਕਸਤ ਨਾਹਿਨ ਮੀਤ ॥",
+          "sha256": "bd6790a599a1ff4ebe99262ae37bb11d61b09e48512e2dcffc528ed173a8a5ff",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 16,
+            "printedLine": 9
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok037.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਮੂਰਤਿ ਚਿਤ੍ਰ ਜਿਉ ਛਾਡਿਤ ਨਾਹਿਨ ਭੀਤਿ ॥੩੭॥",
+          "sha256": "ce42d3c88c1907bd0e7fb4bcba551429bff13aca0b3ae320c73b2e7800b1f1ff",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 17,
+            "printedLine": 9
+          }
+        }
+      ],
+      "sourceDigest": "db8edf2795307d40cd28754a4109d7f7e81a0e07eadc0208f49fa14d0bff896a"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok038",
+      "ordinal": 38,
+      "title": "Salok 38",
+      "titleGurmukhi": "ਸਲੋਕ ੩੮",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok038.line01",
+          "kind": "verse",
+          "text": "ਨਰ ਚਾਹਤ ਕਛੁ ਅਉਰ ਅਉਰੈ ਕੀ ਅਉਰੈ ਭਈ ॥",
+          "sha256": "3dd502da44fc67c77d70eaea4eb215b2cd49b273a66ad6dbeeaf5691336fe38a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 18,
+            "printedLine": 10
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok038.line02",
+          "kind": "verse",
+          "text": "ਚਿਤਵਤ ਰਹਿਓ ਠਗਉਰ ਨਾਨਕ ਫਾਸੀ ਗਲਿ ਪਰੀ ॥੩੮॥",
+          "sha256": "0ff7a9263830810c6a29ffba7ea0c605958476d1f4a80d9fcf38fe4c8805acce",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 19,
+            "printedLine": 10
+          }
+        }
+      ],
+      "sourceDigest": "aeba7dba63835aa536227bf15c8297fa090a3a03645a7d03de76db7cdb76e370"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok039",
+      "ordinal": 39,
+      "title": "Salok 39",
+      "titleGurmukhi": "ਸਲੋਕ ੩੯",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok039.line01",
+          "kind": "verse",
+          "text": "ਜਤਨ ਬਹੁਤ ਸੁਖ ਕੇ ਕੀਏ ਦੁਖ ਕੋ ਕੀਓ ਨ ਕੋਇ ॥",
+          "sha256": "d2daa4c7b5ca1f63a1874b39ed9e95ab888fe07bb2ae56c88cc18ba404730246",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 20,
+            "printedLine": 11
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok039.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਸੁਨਿ ਰੇ ਮਨਾ ਹਰਿ ਭਾਵੈ ਸੋ ਹੋਇ ॥੩੯॥",
+          "sha256": "1ce75ab78dc93f36e2758430db91c354c4ca1ebc844304e718ec535a3eed4e3e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 21,
+            "printedLine": 11
+          }
+        }
+      ],
+      "sourceDigest": "6541cc4cf94fc2927433725ee766540d6a4bb14ad54254c94728d8d78d372206"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok040",
+      "ordinal": 40,
+      "title": "Salok 40",
+      "titleGurmukhi": "ਸਲੋਕ ੪੦",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok040.line01",
+          "kind": "verse",
+          "text": "ਜਗਤੁ ਭਿਖਾਰੀ ਫਿਰਤੁ ਹੈ ਸਭ ਕੋ ਦਾਤਾ ਰਾਮੁ ॥",
+          "sha256": "b1d5dfe3cc31e29d58320f74659a2179a5e3f1a7d80f66ab6610eb3270cf128b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 22,
+            "printedLine": 12
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok040.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਮਨ ਸਿਮਰੁ ਤਿਹ ਪੂਰਨ ਹੋਵਹਿ ਕਾਮ ॥੪੦॥",
+          "sha256": "d7d7eabac0211884899cba3f0008d8c5dd58a0101365b0088019a49d42f9d6f1",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 23,
+            "printedLine": 12
+          }
+        }
+      ],
+      "sourceDigest": "e135f00bbc1f6ef14e647bb6b5f7e2b1f4abaf413efaac70adc1714c8f00a57d"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok041",
+      "ordinal": 41,
+      "title": "Salok 41",
+      "titleGurmukhi": "ਸਲੋਕ ੪੧",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok041.line01",
+          "kind": "verse",
+          "text": "ਝੂਠੈ ਮਾਨੁ ਕਹਾ ਕਰੈ ਜਗੁ ਸੁਪਨੇ ਜਿਉ ਜਾਨੁ ॥",
+          "sha256": "c69ab99f8062188546eb74f9f191db8e13f11df04ecff85f8f8b07691224e412",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 24,
+            "printedLine": 13
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok041.line02",
+          "kind": "verse",
+          "text": "ਇਨ ਮੈ ਕਛੁ ਤੇਰੋ ਨਹੀ ਨਾਨਕ ਕਹਿਓ ਬਖਾਨਿ ॥੪੧॥",
+          "sha256": "20737cbba561fc6e09ed88e0c608c34eeedd7b721dd2c189acdf9e6487ce80f0",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 25,
+            "printedLine": 13
+          }
+        }
+      ],
+      "sourceDigest": "bbac26747e7deb6aa8973b94886f43517963d576c0a4b1b79e15269258bf2da0"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok042",
+      "ordinal": 42,
+      "title": "Salok 42",
+      "titleGurmukhi": "ਸਲੋਕ ੪੨",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok042.line01",
+          "kind": "verse",
+          "text": "ਗਰਬੁ ਕਰਤੁ ਹੈ ਦੇਹ ਕੋ ਬਿਨਸੈ ਛਿਨ ਮੈ ਮੀਤ ॥",
+          "sha256": "1a50bd1ed148a1a57ec45a2247fc826d2015317bd087019e0b3a6b457bb75afe",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 26,
+            "printedLine": 13
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok042.line02",
+          "kind": "verse",
+          "text": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਰਿ ਜਸੁ ਕਹਿਓ ਨਾਨਕ ਤਿਹਿ ਜਗੁ ਜੀਤਿ ॥੪੨॥",
+          "sha256": "2ad86bf6d62e1a999fc44ad53574498d9efd2780131a01c908e73d76cd2019eb",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 27,
+            "printedLine": 14
+          }
+        }
+      ],
+      "sourceDigest": "3b0788e6381563f39f3c97b63a36e15f128d0950fa5f7ba99431a26a5754176a"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok043",
+      "ordinal": 43,
+      "title": "Salok 43",
+      "titleGurmukhi": "ਸਲੋਕ ੪੩",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok043.line01",
+          "kind": "verse",
+          "text": "ਜਿਹ ਘਟਿ ਸਿਮਰਨੁ ਰਾਮ ਕੋ ਸੋ ਨਰੁ ਮੁਕਤਾ ਜਾਨੁ ॥",
+          "sha256": "25d433276475026312a8cc3c4a6ef3763185072e12d9c6374674cddaa5994539",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 28,
+            "printedLine": 14
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok043.line02",
+          "kind": "verse",
+          "text": "ਤਿਹਿ ਨਰ ਹਰਿ ਅੰਤਰੁ ਨਹੀ ਨਾਨਕ ਸਾਚੀ ਮਾਨੁ ॥੪੩॥",
+          "sha256": "b0601b1038d41150463f79c036c570b5ed676614c67a98ef6b774c0ce909949d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 29,
+            "printedLine": 15
+          }
+        }
+      ],
+      "sourceDigest": "e197de419284072636ef2ef7814fa9fdd5da438220c1212288a3a3c5f5861f1f"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok044",
+      "ordinal": 44,
+      "title": "Salok 44",
+      "titleGurmukhi": "ਸਲੋਕ ੪੪",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok044.line01",
+          "kind": "verse",
+          "text": "ਏਕ ਭਗਤਿ ਭਗਵਾਨ ਜਿਹ ਪ੍ਰਾਨੀ ਕੈ ਨਾਹਿ ਮਨਿ ॥",
+          "sha256": "df7cd9cad537de137a056c8172039dc6b7b5e979368b1b0b266b1f2f0bd6983c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 30,
+            "printedLine": 15
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok044.line02",
+          "kind": "verse",
+          "text": "ਜੈਸੇ ਸੂਕਰ ਸੁਆਨ ਨਾਨਕ ਮਾਨੋ ਤਾਹਿ ਤਨੁ ॥੪੪॥",
+          "sha256": "270cf17fa8d28eef8cab1cb6560ba6d57a7f0837e8ba40af80097739f3647a7f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 31,
+            "printedLine": 16
+          }
+        }
+      ],
+      "sourceDigest": "fa2f8809ae12ec9fbb24c196649b385f7ee49d75f4493ea7fa6c217104fe1a1b"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok045",
+      "ordinal": 45,
+      "title": "Salok 45",
+      "titleGurmukhi": "ਸਲੋਕ ੪੫",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok045.line01",
+          "kind": "verse",
+          "text": "ਸੁਆਮੀ ਕੋ ਗ੍ਰਿਹੁ ਜਿਉ ਸਦਾ ਸੁਆਨ ਤਜਤ ਨਹੀ ਨਿਤ ॥",
+          "sha256": "2066c06eda0ca6ef71968101476a8a79cce11d7273a864c167b5a965e1e6a099",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 32,
+            "printedLine": 16
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok045.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਇਹ ਬਿਧਿ ਹਰਿ ਭਜਉ ਇਕ ਮਨਿ ਹੁਇ ਇਕ ਚਿਤਿ ॥੪੫॥",
+          "sha256": "6e614ad7d75d82dafb39d4395325e85de4a772ea5e290ef75867a27cd2f98f87",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 33,
+            "printedLine": 17
+          }
+        }
+      ],
+      "sourceDigest": "83ad69f87f40d97605701d328755e39adba8b898a51574c7d845f045bf5627a9"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok046",
+      "ordinal": 46,
+      "title": "Salok 46",
+      "titleGurmukhi": "ਸਲੋਕ ੪੬",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok046.line01",
+          "kind": "verse",
+          "text": "ਤੀਰਥ ਬਰਤ ਅਰੁ ਦਾਨ ਕਰਿ ਮਨ ਮੈ ਧਰੈ ਗੁਮਾਨੁ ॥",
+          "sha256": "5a17027198e7705e849b78105ff58bb33034e0b7cf2cdc45e7bdd8bc66aba1fd",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 34,
+            "printedLine": 18
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok046.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਨਿਹਫਲ ਜਾਤ ਤਿਹ ਜਿਉ ਕੁੰਚਰ ਇਸਨਾਨੁ ॥੪੬॥",
+          "sha256": "6c2072798c8e0afaa3ba873d1c7a59f6fc26606369009faa962168673a3269b5",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 35,
+            "printedLine": 18
+          }
+        }
+      ],
+      "sourceDigest": "985d5ffaa8abe7ec66794677bb8df90a33359f6dee3c18f21ddf8bbd0a5422d6"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok047",
+      "ordinal": 47,
+      "title": "Salok 47",
+      "titleGurmukhi": "ਸਲੋਕ ੪੭",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1428,
+      "angEnd": 1428,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok047.line01",
+          "kind": "verse",
+          "text": "ਸਿਰੁ ਕੰਪਿਓ ਪਗ ਡਗਮਗੇ ਨੈਨ ਜੋਤਿ ਤੇ ਹੀਨ ॥",
+          "sha256": "6fa1be204111b620f442572dd7270a3b1b17f3294a3d4d4a02d6d853b9af50a3",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 36,
+            "printedLine": 18
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok047.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਇਹ ਬਿਧਿ ਭਈ ਤਊ ਨ ਹਰਿ ਰਸਿ ਲੀਨ ॥੪੭॥",
+          "sha256": "35e77c9bfe34bbf3ca1ffa63b91fd8b19d6a8f9cd09b72cad63c27a7d91dbec8",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1428
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1428.md",
+            "row": 37,
+            "printedLine": 18
+          }
+        }
+      ],
+      "sourceDigest": "c409640b45f32c9bb428d89f3a101d170cbc6c28dc0797ebb0e222bce1775715"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok048",
+      "ordinal": 48,
+      "title": "Salok 48",
+      "titleGurmukhi": "ਸਲੋਕ ੪੮",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok048.line01",
+          "kind": "verse",
+          "text": "ਨਿਜ ਕਰਿ ਦੇਖਿਓ ਜਗਤੁ ਮੈ ਕੋ ਕਾਹੂ ਕੋ ਨਾਹਿ ॥",
+          "sha256": "5d788f20b0e6858c4750c6528612f3280c48dfa4c64dd23c70cb7585931ace7a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 1,
+            "printedLine": 1
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok048.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਥਿਰੁ ਹਰਿ ਭਗਤਿ ਹੈ ਤਿਹ ਰਾਖੋ ਮਨ ਮਾਹਿ ॥੪੮॥",
+          "sha256": "b82ed9f60a559a994d287b66a7a027de8d320985c8225609cddc0c5a2f52d017",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 2,
+            "printedLine": 1
+          }
+        }
+      ],
+      "sourceDigest": "caa170456d3b1a3ae92c7aa9508c41b081a685b01e47e404b55e07d7edce7d83"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok049",
+      "ordinal": 49,
+      "title": "Salok 49",
+      "titleGurmukhi": "ਸਲੋਕ ੪੯",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok049.line01",
+          "kind": "verse",
+          "text": "ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥",
+          "sha256": "82b925e6f3d46cadfc15e8661ec6757b434d1ca3a598f636e70ba0f160e1e694",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 3,
+            "printedLine": 2
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok049.line02",
+          "kind": "verse",
+          "text": "ਕਹਿ ਨਾਨਕ ਥਿਰੁ ਨਾ ਰਹੈ ਜਿਉ ਬਾਲੂ ਕੀ ਭੀਤਿ ॥੪੯॥",
+          "sha256": "24a00b7d710eaa54b50905ad762c3300423c2586fc177fb535e954c0049ffabe",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 4,
+            "printedLine": 2
+          }
+        }
+      ],
+      "sourceDigest": "2bf8a9fc84c69be92ce444c8cb54cfce569ae32292505fc93560eef1be9c59f2"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok050",
+      "ordinal": 50,
+      "title": "Salok 50",
+      "titleGurmukhi": "ਸਲੋਕ ੫੦",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok050.line01",
+          "kind": "verse",
+          "text": "ਰਾਮੁ ਗਇਓ ਰਾਵਨੁ ਗਇਓ ਜਾ ਕਉ ਬਹੁ ਪਰਵਾਰੁ ॥",
+          "sha256": "f045fd1596d8561f90540025e4dabc78a406e4daf77718b1c14a3f5d36ef2a48",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 5,
+            "printedLine": 3
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok050.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਥਿਰੁ ਕਛੁ ਨਹੀ ਸੁਪਨੇ ਜਿਉ ਸੰਸਾਰੁ ॥੫੦॥",
+          "sha256": "46bc049209dfdd8f3b2bec38a789c1e9bb75370ef1b6bef1d55b45bf300d67ea",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 6,
+            "printedLine": 3
+          }
+        }
+      ],
+      "sourceDigest": "afd772b4c764f768bdff8fb006e62fb7e5933373f20ef89b9cfc3391498099cd"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok051",
+      "ordinal": 51,
+      "title": "Salok 51",
+      "titleGurmukhi": "ਸਲੋਕ ੫੧",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok051.line01",
+          "kind": "verse",
+          "text": "ਚਿੰਤਾ ਤਾ ਕੀ ਕੀਜੀਐ ਜੋ ਅਨਹੋਨੀ ਹੋਇ ॥",
+          "sha256": "e5796a3f54a964a205eafc3915ef84d12472038f3414dabdecd2651e696bd25f",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 7,
+            "printedLine": 4
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok051.line02",
+          "kind": "verse",
+          "text": "ਇਹੁ ਮਾਰਗੁ ਸੰਸਾਰ ਕੋ ਨਾਨਕ ਥਿਰੁ ਨਹੀ ਕੋਇ ॥੫੧॥",
+          "sha256": "07de8c2f56e401e350f711671f621887ce10148f59ca4730dce8d13f7bf5eb46",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 8,
+            "printedLine": 4
+          }
+        }
+      ],
+      "sourceDigest": "b4f2890239078b65cdd2b4127319c21586d61f842976bff327dc3dcd3a7f7dd7"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok052",
+      "ordinal": 52,
+      "title": "Salok 52",
+      "titleGurmukhi": "ਸਲੋਕ ੫੨",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok052.line01",
+          "kind": "verse",
+          "text": "ਜੋ ਉਪਜਿਓ ਸੋ ਬਿਨਸਿ ਹੈ ਪਰੋ ਆਜੁ ਕੈ ਕਾਲਿ ॥",
+          "sha256": "bbb434f1ad7e532fa6310376940754f72215f622a9e381d18f80119a9091f75d",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 9,
+            "printedLine": 4
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok052.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਹਰਿ ਗੁਨ ਗਾਇ ਲੇ ਛਾਡਿ ਸਗਲ ਜੰਜਾਲ ॥੫੨॥",
+          "sha256": "a13995315897bba42703c94d0f0e5b64eb182d98cd0210336d1ef6436eb3af05",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 10,
+            "printedLine": 5
+          }
+        }
+      ],
+      "sourceDigest": "beaf44a02779b6ad94158e9704bf3c6b39a251989be36477210e3c66ebd704a5"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok053",
+      "ordinal": 53,
+      "title": "Salok 53",
+      "titleGurmukhi": "ਸਲੋਕ ੫੩",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [
+        {
+          "id": "sggs.salok-mahalla9.dohra.heading01",
+          "kind": "heading",
+          "text": "ਦੋਹਰਾ ॥",
+          "sha256": "485f674c9a1425fae04bcea542b9aba686fbb872a7607c2a2e0ca9134dd4d696",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 11,
+            "printedLine": 5
+          }
+        }
+      ],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok053.line01",
+          "kind": "verse",
+          "text": "ਬਲੁ ਛੁਟਕਿਓ ਬੰਧਨ ਪਰੇ ਕਛੂ ਨ ਹੋਤ ਉਪਾਇ ॥",
+          "sha256": "07f7682a1654c678a4664490479f40a81f4b1e3b2c372e1faa27070423086b21",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 12,
+            "printedLine": 6
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok053.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਅਬ ਓਟ ਹਰਿ ਗਜ ਜਿਉ ਹੋਹੁ ਸਹਾਇ ॥੫੩॥",
+          "sha256": "ee77f1405bea3bb995c7921d707112e6df3002309c1a2505bcb72cadd81f9b8b",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 13,
+            "printedLine": 6
+          }
+        }
+      ],
+      "sourceDigest": "6f38fe45b0966c6b25e6e66fa83d00f394c28c17eb66322425ae3beff946f88e"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok054",
+      "ordinal": 54,
+      "title": "Salok 54",
+      "titleGurmukhi": "ਸਲੋਕ ੫੪",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok054.line01",
+          "kind": "verse",
+          "text": "ਬਲੁ ਹੋਆ ਬੰਧਨ ਛੁਟੇ ਸਭੁ ਕਿਛੁ ਹੋਤ ਉਪਾਇ ॥",
+          "sha256": "1b0861959d38975a97dc2811fd90c10ce5ef8eb60b926e1e19967f6d1ad4da40",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 14,
+            "printedLine": 7
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok054.line02",
+          "kind": "verse",
+          "text": "ਨਾਨਕ ਸਭੁ ਕਿਛੁ ਤੁਮਰੈ ਹਾਥ ਮੈ ਤੁਮ ਹੀ ਹੋਤ ਸਹਾਇ ॥੫੪॥",
+          "sha256": "dd2a0f745cabc5f4034dd190a2df03df07873a466fb0aefa269eab4ea4e2fb55",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 15,
+            "printedLine": 7
+          }
+        }
+      ],
+      "sourceDigest": "a2c9251708bfd312a259b5cc00d6f02f164b8663c2d16317e12ac4d040ead6ee"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok055",
+      "ordinal": 55,
+      "title": "Salok 55",
+      "titleGurmukhi": "ਸਲੋਕ ੫੫",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok055.line01",
+          "kind": "verse",
+          "text": "ਸੰਗ ਸਖਾ ਸਭਿ ਤਜਿ ਗਏ ਕੋਊ ਨ ਨਿਬਹਿਓ ਸਾਥਿ ॥",
+          "sha256": "9629dc56f083e893df2981b80dd48a031d43a82f7fec74d50dc4c9b91fb76a96",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 16,
+            "printedLine": 8
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok055.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਇਹ ਬਿਪਤਿ ਮੈ ਟੇਕ ਏਕ ਰਘੁਨਾਥ ॥੫੫॥",
+          "sha256": "30915fc2c3f94c6d50dd0013f0341c55d2edfdb61148753e0e8b58d15ef3b01a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 17,
+            "printedLine": 8
+          }
+        }
+      ],
+      "sourceDigest": "25a04b5aea24a07f59b575b643b615b7e5dc10c74606cb8583630e7fda054d10"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok056",
+      "ordinal": 56,
+      "title": "Salok 56",
+      "titleGurmukhi": "ਸਲੋਕ ੫੬",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok056.line01",
+          "kind": "verse",
+          "text": "ਨਾਮੁ ਰਹਿਓ ਸਾਧੂ ਰਹਿਓ ਰਹਿਓ ਗੁਰੁ ਗੋਬਿੰਦੁ ॥",
+          "sha256": "f7197ea526f2d7a49f2f2d09ddd6325ea951d1e7abc993eabe2dbf05d528fd98",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 18,
+            "printedLine": 9
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok056.line02",
+          "kind": "verse",
+          "text": "ਕਹੁ ਨਾਨਕ ਇਹ ਜਗਤ ਮੈ ਕਿਨ ਜਪਿਓ ਗੁਰ ਮੰਤੁ ॥੫੬॥",
+          "sha256": "3b092d3276fe924c51eb1c506918b416de4c4306b0f76f908dc20afaded9fe3c",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 19,
+            "printedLine": 9
+          }
+        }
+      ],
+      "sourceDigest": "82d680ccf213a8cc567e849afb4414821be5a4ee49951bf0d0700e2a0de4bf77"
+    },
+    {
+      "id": "sggs.salok-mahalla9.salok057",
+      "ordinal": 57,
+      "title": "Salok 57",
+      "titleGurmukhi": "ਸਲੋਕ ੫੭",
+      "sourceFamily": "sggs",
+      "authorId": "guru-tegh-bahadur",
+      "authorBasis": "Collection heading ਸਲੋਕ ਮਹਲਾ ੯; no per-Salok historical attribution adjudication",
+      "angStart": 1429,
+      "angEnd": 1429,
+      "sourceHeadingIncluded": false,
+      "metricalHeadings": [],
+      "lines": [
+        {
+          "id": "sggs.salok-mahalla9.salok057.line01",
+          "kind": "verse",
+          "text": "ਰਾਮ ਨਾਮੁ ਉਰ ਮੈ ਗਹਿਓ ਜਾ ਕੈ ਸਮ ਨਹੀ ਕੋਇ ॥",
+          "sha256": "41a69cd737c1e962017364e09fd4c32efcc29fd946f8260a3d43cec5630f524a",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 20,
+            "printedLine": 10
+          }
+        },
+        {
+          "id": "sggs.salok-mahalla9.salok057.line02",
+          "kind": "verse",
+          "text": "ਜਿਹ ਸਿਮਰਤ ਸੰਕਟ ਮਿਟੈ ਦਰਸੁ ਤੁਹਾਰੋ ਹੋਇ ॥੫੭॥੧॥",
+          "sha256": "0d83a0e4ba6e26c3404d20616bc74857df76c5758cbcfd970686e30e4d91e96e",
+          "family": "sggs",
+          "location": {
+            "system": "ang",
+            "ang": 1429
+          },
+          "held": false,
+          "source": {
+            "repository": "opengranth/open-granth",
+            "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+            "path": "corpus/ang-1429.md",
+            "row": 21,
+            "printedLine": 10
+          }
+        }
+      ],
+      "sourceDigest": "17522b452f2f2076e34a63d2f58d0acc3e87eabadca4b1e9f7ae75919528688d"
+    }
+  ],
+  "sourceAudit": {
+    "schema": "glp001.salok-mahalla9-source-audit.v1",
+    "selectedDigitalWitness": "Pinned Open Granth Gurmukhi records",
+    "repository": "opengranth/open-granth",
+    "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "witnesses": [
+      {
+        "ang": 1426,
+        "bytes": 9295,
+        "sha256": "ab59d45cdc229f3660618c312b9c284d698fad4204b017c03ce2e1613a1ebbf9",
+        "gitBlob": "4727b988f326e4872093d0539ef077d7af2075bd",
+        "path": "corpus/ang-1426.md",
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1426.md"
+      },
+      {
+        "ang": 1427,
+        "bytes": 10533,
+        "sha256": "a69d55ea200c816e4004d55f0c64f630ce6d7076bbae2e8815322f7ee1a7f364",
+        "gitBlob": "8b111a1d1bbe269671d52832678e5ad2d11dea71",
+        "path": "corpus/ang-1427.md",
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1427.md"
+      },
+      {
+        "ang": 1428,
+        "bytes": 10287,
+        "sha256": "4a83880fde56e290bb5a61ede6d13b78984c0ac88d5d714b32a1d83ae04b3158",
+        "gitBlob": "9f394291b1f3fee875a70dcab51cbad169df980a",
+        "path": "corpus/ang-1428.md",
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1428.md"
+      },
+      {
+        "ang": 1429,
+        "bytes": 9145,
+        "sha256": "c8622d67a77a9a9024a9fa614efb66b9c95d4c8fb62e21d8f90434dbea31cbce",
+        "gitBlob": "d4ac162bb9e5a6098ba372a79d3b6e24ad14be97",
+        "path": "corpus/ang-1429.md",
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1429.md"
+      }
+    ],
+    "exactTextSequenceSha256": "16649b80d412b71d628eab27e372208bb74a5c9289702a0f581967ce91604e28",
+    "sequenceDefinition": "UTF-8 occurrence texts in source order joined with LF; no final LF",
+    "secondarySource": "SriGranth, Angs 1426–1429; independently retrieved web-extracted Unicode strings",
+    "secondaryComparisonEvidence": "research/salok-mahalla9/source-audit-independent.json",
+    "secondaryExactMatches": 117,
+    "secondaryMismatches": 0,
+    "qualifiedHumanReviewCount": 0,
+    "modernTranslationsImported": false,
+    "printedEditionReviewed": false,
+    "sourceHeadingIsMusicalRaag": false,
+    "boundaries": {
+      "preceding": {
+        "ang": 1426,
+        "sourceRow": 15,
+        "sourceAngLine": 8,
+        "text": "ਜਿਸੁ ਪਾਸਿ ਬਹਿਠਿਆ ਸੋਹੀਐ ਸਭਨਾਂ ਦਾ ਵੇਸਾਹੁ ॥੨੨॥"
+      },
+      "following": {
+        "ang": 1429,
+        "sourceRow": 22,
+        "sourceAngLine": 11,
+        "text": "ਮੁੰਦਾਵਣੀ ਮਹਲਾ ੫ ॥"
+      }
+    },
+    "limitations": [
+      "Digital agreement does not authenticate a printed saroop or establish independent textual lineage.",
+      "Historical discussions concerning Salok 54 are not resolved by this extraction.",
+      "The archived 2022 candidate has editorial pause marks; it is retained separately and is not silently rewritten."
+    ]
+  },
+  "releaseId": "salok-mahalla9-complete-draft-20261126",
+  "publicationStatus": "EDUCATIONAL_DRAFT",
+  "releaseChannel": "DEVELOPMENT_REVIEW",
+  "previousEditionIds": []
+}

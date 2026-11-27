@@ -1,0 +1,21 @@
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: pauri-2-lesson.html
++ actual - expected
+
++ 'fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea'
+- '3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875'
+
+    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/r6-contract.mjs:21:231
+    at test (file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/r6-contract.mjs:5:35)
+    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/r6-contract.mjs:21:7 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea',
+  expected: '3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875',
+  operator: 'strictEqual'
+}
+
+Node.js v22.15.0

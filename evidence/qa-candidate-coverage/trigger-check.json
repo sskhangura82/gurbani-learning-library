@@ -1,0 +1,129 @@
+{
+  "schema": "glp.qa-candidate-coverage.evidence.v1",
+  "baseCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+  "recordedAtUtc": "2026-11-27T14:00:18.137Z",
+  "runtime": "v22.15.0",
+  "scope": "Static supported trigger shape plus exact workflow delta; not a reimplementation of GitHub event evaluation",
+  "negativeControls": [
+    {
+      "path": ".github/workflows/article-source-print-qa.yml",
+      "beforeSha256": "3b6f29c7ebde3e7b1383c827a9b77d19ed746987ec4edfff8beee1aa25dfc8be",
+      "afterSha256": "3b33d6c92d07e1637224dce63d1ea4fdcd3919745356ec1aaed635663d4a9f30",
+      "beforeRefusal": "Pull-request base branches are filtered.",
+      "after": {
+        "allBaseBranches": true,
+        "pathFilters": []
+      },
+      "onlyBranchFilterRemoved": true
+    },
+    {
+      "path": ".github/workflows/learning-practice-qa.yml",
+      "beforeSha256": "fcef67e8f5284c3a00456add2b70c4b19433451a147d979cdbf121f75a119457",
+      "afterSha256": "43eee61776e890413fd8b4592876321f3449032baa661da68279d70c3a810e2b",
+      "beforeRefusal": "Pull-request base branches are filtered.",
+      "after": {
+        "allBaseBranches": true,
+        "pathFilters": []
+      },
+      "onlyBranchFilterRemoved": true
+    },
+    {
+      "path": ".github/workflows/reader-qa.yml",
+      "beforeSha256": "68b6b005c4e311e83042fcc0d75fe354285bc62fc9f534f1e32af148f9d279b2",
+      "afterSha256": "f0bb635f944a7fc92883b49e37e98634c89d81f7877912a5700cd030b5a26c36",
+      "beforeRefusal": "Pull-request base branches are filtered.",
+      "after": {
+        "allBaseBranches": true,
+        "pathFilters": []
+      },
+      "onlyBranchFilterRemoved": true
+    },
+    {
+      "path": ".github/workflows/salok-kabir-qa.yml",
+      "beforeSha256": "992e8d79eb72c05220f330f88ca2e8fb6f5ec0cf768a3a21b090e74e529ddbc9",
+      "afterSha256": "c416ce19d22509d69cee021ebeb7f13eed37cb387744a71ff43a52cde84f75af",
+      "beforeRefusal": "Pull-request base branches are filtered.",
+      "after": {
+        "allBaseBranches": true,
+        "pathFilters": []
+      },
+      "onlyBranchFilterRemoved": true
+    },
+    {
+      "path": ".github/workflows/salok-mahalla9-qa.yml",
+      "beforeSha256": "e70980793ccc8be0e5927c307231cebc9b636c4cf9a1a2fe1516556889b5d874",
+      "afterSha256": "e094835c1bd819726a6325b541b2ff4048a09405f2f647aac265aa628991ca18",
+      "beforeRefusal": "Pull-request base branches are filtered.",
+      "after": {
+        "allBaseBranches": true,
+        "pathFilters": []
+      },
+      "onlyBranchFilterRemoved": true
+    },
+    {
+      "path": ".github/workflows/unified-library-qa.yml",
+      "beforeSha256": "2d0bbec1780dd03f72f9e8a9bed3b2f766e9064a7a355fb3482643140fe198ec",
+      "afterSha256": "9ffb736181274470f40f170c282f8e9e175bab16aa4dcec48dd781f54034f134",
+      "beforeRefusal": "Pull-request base branches are filtered.",
+      "after": {
+        "allBaseBranches": true,
+        "pathFilters": []
+      },
+      "onlyBranchFilterRemoved": true
+    }
+  ],
+  "qualityWorkflows": [
+    {
+      "path": ".github/workflows/article-source-print-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/hukamnama-foundation-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/knowledge-pilot-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": [
+        "paths"
+      ]
+    },
+    {
+      "path": ".github/workflows/learning-practice-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/library-script-integrity-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/reader-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/salok-kabir-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/salok-mahalla9-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    },
+    {
+      "path": ".github/workflows/unified-library-qa.yml",
+      "allBaseBranches": true,
+      "pathFilters": []
+    }
+  ],
+  "allExistingWorkflowStepsUnchangedExceptNewCoverageCheck": true,
+  "preparationWorkflowUnchanged": true,
+  "trackedApplicationPathsChanged": [],
+  "printGateWaived": false,
+  "physicalDeviceTested": false
+}

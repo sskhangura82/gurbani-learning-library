@@ -1,0 +1,163 @@
+{
+  "startedAt": "2026-11-27T02:20:03.097Z",
+  "source": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "caseFilter": "BFCache|No runtime",
+  "checks": [
+    {
+      "name": "A genuine BFCache restoration retains the live document and its viewport",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 'SYNTHETIC BFCache document marker'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/commit-full-diagnostic.mjs:93:1463\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/commit-full-diagnostic.mjs:47:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/commit-full-diagnostic.mjs:92:2"
+    },
+    {
+      "name": "No runtime errors or external requests",
+      "evidence": {
+        "runtimeErrors": [],
+        "externalRequests": []
+      },
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Fresh desktop Chrome emulation only; no physical iPhone, Safari, VoiceOver or airplane-mode acceptance.",
+    "PR47 linked-visit behavior is deliberately outside this repair.",
+    "Waits exceed the existing 200 ms scroll debounce; assertions cover both logical occurrence and actual geometry.",
+    "Inherited rapid scrolling followed by leaving within 200 ms is outside this bounded repair; navigation cases settle for 450 ms first."
+  ],
+  "runtimeSha256": "ac1c5551fe760a8315306c03586ddb2a13a11d79b510892335a7075f6c9bf86b",
+  "testSha256": "7ebfdff67a4ffbe73b5d43935babac8afc6b7b6de4bcae19e380503e8c38fbc8",
+  "browser": "151.0.7922.34",
+  "actualBrowser": {
+    "version": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/151.0.7922.34",
+      "revision": "@782af9cb30a53f54487e5d2e44738645a8ec457c",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+      "jsVersion": "15.1.206.8"
+    },
+    "channel": "chromium",
+    "resolvedExecutable": "/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/browsers/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    "command": {
+      "unavailable": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set."
+    }
+  },
+  "notRestored": [
+    {
+      "loaderId": "964E63A27AE58E0E4C87FC2016B8318E",
+      "frameId": "C360A040063D64DCA50319474A0F66D0",
+      "notRestoredExplanations": [
+        {
+          "type": "Circumstantial",
+          "reason": "JavaScriptExecution"
+        }
+      ],
+      "notRestoredExplanationsTree": {
+        "url": "http://127.0.0.1:55973/gurbani-learning-library/sukhmani.html",
+        "explanations": [
+          {
+            "type": "Circumstantial",
+            "reason": "JavaScriptExecution"
+          }
+        ],
+        "children": []
+      }
+    }
+  ],
+  "observedRestoration": {
+    "before": {
+      "stored": {
+        "version": 2,
+        "read": "sukhmani.a06.p02.l07",
+        "guide": "sukhmani.a02.p01.l02",
+        "hasGuided": true,
+        "mode": "read",
+        "theme": "day",
+        "size": 30,
+        "pace": 70,
+        "pronunciation": false,
+        "bookmarks": [
+          "sukhmani.a06.p02.l07"
+        ],
+        "notes": {
+          "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+        }
+      },
+      "current": "sukhmani.a06.p02.l07",
+      "top": 12.984375,
+      "bottom": 69.984375,
+      "scrollY": 39857,
+      "noticeHidden": true,
+      "navigation": "navigate",
+      "events": [
+        {
+          "event": "pageshow",
+          "persisted": false,
+          "t": 228.70000004768372
+        }
+      ],
+      "writes": [
+        {
+          "t": 507.7000000476837,
+          "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+        },
+        {
+          "t": 977.8999999761581,
+          "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+        }
+      ]
+    },
+    "after": {
+      "stored": {
+        "version": 2,
+        "read": "sukhmani.a06.p02.l05",
+        "guide": "sukhmani.a02.p01.l02",
+        "hasGuided": true,
+        "mode": "read",
+        "theme": "day",
+        "size": 30,
+        "pace": 70,
+        "pronunciation": false,
+        "bookmarks": [
+          "sukhmani.a06.p02.l07"
+        ],
+        "notes": {
+          "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+        }
+      },
+      "current": "sukhmani.a06.p02.l05",
+      "top": 149.984375,
+      "bottom": 206.984375,
+      "scrollY": 39857,
+      "noticeHidden": false,
+      "navigation": "back_forward",
+      "events": [
+        {
+          "event": "pageshow",
+          "persisted": false,
+          "t": 75.30000007152557
+        }
+      ],
+      "writes": [
+        {
+          "t": 314.8000000715256,
+          "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l05\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+        }
+      ]
+    },
+    "notRestoredReasons": {
+      "src": null,
+      "id": null,
+      "url": "http://127.0.0.1:55973/gurbani-learning-library/sukhmani.html",
+      "name": null,
+      "reasons": [
+        {
+          "reason": "masked"
+        }
+      ],
+      "children": []
+    }
+  },
+  "completedAt": "2026-11-27T02:20:05.351Z",
+  "status": "failed"
+}

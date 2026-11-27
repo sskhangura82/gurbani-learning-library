@@ -1,0 +1,99 @@
+{
+  "schema": "glp.public-knowledge-access.builder-verification.v1",
+  "status": "PASS_WITH_DECLARED_UNRUN_INTEGRATION_CHECKS",
+  "recordedAt": "2026-11-27T21:03:22.917577+00:00",
+  "base": "a123b39e61c5fba94acc38ea77ab7c81e664f61d",
+  "tests": [
+    {
+      "command": "node --test tests/knowledge-public-access.mjs tests/knowledge-learning.mjs tests/library-script-integrity-inputs.mjs",
+      "passed": 32,
+      "failed": 0,
+      "skipped": 0,
+      "parts": {
+        "publicAccess": 9,
+        "savedLearning": 19,
+        "historicalScopes": 4
+      }
+    },
+    {
+      "command": "node tests/knowledge-contract.mjs",
+      "passed": 14
+    },
+    {
+      "command": "node tests/knowledge-integration.mjs",
+      "passed": 11,
+      "report": "evidence/knowledge-integration/2026-11-27T21-01-00-581Z-contracts/report.json"
+    },
+    {
+      "command": "node tests/knowledge-source-registry.mjs",
+      "passed": 29,
+      "sourceMutations": 15,
+      "staleEditorialMutations": 8
+    },
+    {
+      "command": "node tests/knowledge-editorial-title.mjs",
+      "denied": 72,
+      "allowed": 8,
+      "unchangedSourceOccurrences": 19
+    },
+    {
+      "command": "node tests/knowledge-editorial-boundary.mjs",
+      "denied": 335,
+      "allowed": 157,
+      "fieldClasses": 31,
+      "checks": 6
+    },
+    {
+      "command": "node tests/knowledge-search.mjs",
+      "passed": 29,
+      "verseInitialFixtures": 17,
+      "headingFixtures": 2
+    },
+    {
+      "command": "node --test --test-name-pattern='^(All 16|Generated modules|Loader policy|Bundling rejects|A pinned bundle)' tests/library-script-integrity.mjs",
+      "selectedTestsPassed": 5,
+      "scope": "Existing 16-page and 58-pin policy; full added-page inventory remains with root."
+    },
+    {
+      "command": "node tools/build-app-bundles.mjs --check",
+      "applications": 4,
+      "sourceInputs": 26,
+      "changedFiles": []
+    },
+    {
+      "command": "node --check for each changed/new .mjs",
+      "passed": 12,
+      "report": "evidence/public-knowledge-access/syntax-checks.json"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "runtimeDigests": {
+    "knowledge/pilot.json": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556",
+    "knowledge/app.mjs": "f96665029c95b391869d2c21f13cf22e8286573d09aa35c2e527e247627dba1c",
+    "knowledge/registry.mjs": "1a3920965d00fbe3a7911a6fd2d688a96e41c2007985ac08f3e4abe747dd7170",
+    "knowledge/app.bundle.mjs": "190127810890d9abe264a9b511d139edf92933673b6b771de09e2bc45ed158f3",
+    "knowledge/index.html": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b",
+    "tools/script-integrity/app-graphs.json": "384d78ace941e6aaf633ec4e247dcc3a4b795716e808ba1c813c8277ab3c2f4c"
+  },
+  "unchangedFiles": {
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
+    "knowledge/learning.mjs": "376b8a2ca3de67934dd14e8bf18a2689ce191c0249905e0e276c24a6d24f6268",
+    "knowledge/journey.mjs": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",
+    "knowledge/json.mjs": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5",
+    "sw.js": "1977e8bba6005a1696821790935cf2d53695cb13f547b418e908bef7c83e8de9",
+    "index.html": "86799464a0f91870d937c312c439894ce6a591980710eae6cc6cda1a989e4577",
+    "library/catalog.mjs": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497",
+    "library/app.mjs": "a3574ea4e259cfac913ce18e5c6cd9cc32e5e7fa753ef3ee021a679a62457cc8"
+  },
+  "limits": [
+    "No new browser test execution. /usr/bin/chromium wrapper exists but /usr/lib/chromium/chromium binary is absent.",
+    "Root integrates the three added public/private pages and verifies the 19-page/59-pin inventory.",
+    "No sw.js change in this branch; root regenerates and verifies the combined offline shell.",
+    "Bounded public record admission is not a semantic classifier or independent Claude/source approval.",
+    "Historical public Git objects and older evidence remain available; no history erase is claimed."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "WITHHELD",
+  "policy": "OWNER_CHATGPT_CLAUDE_SOURCE_REVIEW_20261127",
+  "editorialReview": "PENDING_OR_INCOMPLETE",
+  "humanReview": "NOT_PERFORMED",
+  "releaseAuthorization": "NOT_GRANTED_BY_THIS_TOOL",
+  "packetSha256": "0d663e0b8f772c8a35aeb4c6bfbfc64d54ce57a2225257df14cc695397d4680e",
+  "reasons": [
+    "MISSING_CLAUDE_CHECKER_SOURCE_REVIEW"
+  ],
+  "reviews": [
+    {
+      "id": "review.kartarpur-chatgpt-20261127",
+      "provider": "OpenAI",
+      "product": "ChatGPT",
+      "role": "CHATGPT_AUTHOR",
+      "recordReference": "content-intake/history/reviews/kartarpur-chatgpt-20261127.json",
+      "validForCurrentPacket": true,
+      "reasons": []
+    }
+  ],
+  "inspection": {
+    "qualifiedClaims": 10,
+    "incompleteClaims": 0,
+    "actualClaudeSourceReviews": 0
+  },
+  "claudeAttempt": {
+    "status": "AUTHENTICATION_REQUIRED",
+    "exitCode": 1,
+    "semanticReviewPerformed": false,
+    "currentPacket": true,
+    "providerMessage": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  "verificationScope": "Record structure, exact content bindings and caller-supplied producer/artifact provenance only; not historical truth, provider authentication or proof of source inspection."
+}

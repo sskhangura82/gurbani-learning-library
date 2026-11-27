@@ -1,0 +1,47 @@
+{
+  "schema": "glp001.salok-kabir.witness-addendum.v1",
+  "preparedDate": "2026-11-26",
+  "status": "RECORDED_FOR_INDEPENDENT_AND_QUALIFIED_REVIEW",
+  "qualifiedHumanApproval": false,
+  "runtimeSourceChanged": false,
+  "frozenSelectionChanged": false,
+  "finding": "RT4-04",
+  "occurrenceId": "sggs.salok-kabir.heading01",
+  "reviewWitness": {
+    "name": "Shabad OS Database",
+    "version": "v5.0.0-next.0",
+    "database": "dist/master.sqlite",
+    "asset": "SSA2",
+    "section": "SQST",
+    "headingHasTrailingDanda": true,
+    "supports": "The Open Granth witness form with the trailing danda, opposing the selected runtime heading.",
+    "observedBy": "Claude independent review seat",
+    "reportRepository": "sskhangura82/gurbani-learning-library",
+    "reportCommit": "291b77f43bb4717d29c7debdb580350d60daf645",
+    "reportPath": "reviews/claude-independent/retests/RT-004_PR52_KABIR_SALOK_VERDICT.md",
+    "reportSection": "FINDING RT4-04",
+    "builderIndependentlyReranDatabaseComparison": false,
+    "transmissionIndependence": "KNOWN_SHARED_UPSTREAM: pinned Open Granth README and Ang metadata declare Shabad OS as source. This comparison checks faithful reproduction of the same upstream, not a second textual lineage."
+  },
+  "selectedRuntimeHeading": "runtime-selection.json headingSelections[0].after",
+  "opposingHeading": "runtime-selection.json headingSelections[0].before",
+  "interpretation": "The three selected-form citations do not imply witness unanimity or a majority-vote authentication.",
+  "comparisonScope": [
+    "Claude Shabad OS comparison: 493 of 494 after reference-specific editorial comma, semicolon and full-stop normalization; the remaining difference is the collection heading.",
+    "Builder SriGranth comparison: 493 of 494 selected runtime occurrences; the remaining difference is the Salok177 first-line nasal-mark encoding.",
+    "These are different comparisons with different remaining differences. Their identical totals must not be combined into a single authentication claim."
+  ],
+  "normalizationBoundary": "Comparison-only removal of documented reference editorial marks. No runtime Gurbani characters are changed.",
+  "nextDecision": "Qualified reviewer adjudicates the heading; no change is authorized by this addendum.",
+  "lineageCorrection": {
+    "reviewCommit": "1a4c525a3e0ec92e4fb9c022a5493f685340ba64",
+    "reviewPath": "reviews/claude-independent/retests/RT-005_BUILDER_CROSSCHECK_RESPONSE_20261126.md",
+    "builderRecheckedPinnedMetadata": true,
+    "upstreamRepository": "opengranth/open-granth",
+    "upstreamCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "readmeSHA256": "c48002a4681fd2fcfb903d9226c768c8341de68ea947f589a12f951a42a02537",
+    "ang0002SHA256": "04feb2d0646711d3ac40cd9c42f602bda3756890ba25cdf2a0ac1df38c2d5c33",
+    "frontmatterSource": "Shabad OS Database",
+    "scope": "This establishes the Open Granth/Shabad OS derivation. It does not establish the lineage of SriGranth or the separately inspected PDF/page-image witnesses, nor does it turn bounded image observations into complete printed collation."
+  }
+}

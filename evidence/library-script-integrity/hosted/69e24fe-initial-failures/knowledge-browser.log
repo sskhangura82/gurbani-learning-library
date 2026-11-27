@@ -1,0 +1,329 @@
+﻿2026-11-27T03:11:27.6808729Z Current runner version: '2.338.2'
+2026-11-27T03:11:27.6843984Z ##[group]Runner Image Provisioner
+2026-11-27T03:11:27.6845318Z Hosted Compute Agent
+2026-11-27T03:11:27.6846228Z Version: 20261111.635
+2026-11-27T03:11:27.6847580Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-27T03:11:27.6848897Z Build Date: 2026-11-11T01:49:01Z
+2026-11-27T03:11:27.6850142Z Worker ID: {b2ac62bd-97a7-4efd-8206-e6ce39bdc237}
+2026-11-27T03:11:27.6851601Z Region: eastus
+2026-11-27T03:11:27.6852474Z Cloud: Azure
+2026-11-27T03:11:27.6853484Z ##[endgroup]
+2026-11-27T03:11:27.6855865Z ##[group]Operating System
+2026-11-27T03:11:27.6856962Z Ubuntu
+2026-11-27T03:11:27.6857865Z 24.04.5
+2026-11-27T03:11:27.6858713Z LTS
+2026-11-27T03:11:27.6859699Z ##[endgroup]
+2026-11-27T03:11:27.6860563Z ##[group]Runner Image
+2026-11-27T03:11:27.6862001Z Image: ubuntu-24.04
+2026-11-27T03:11:27.6862974Z Version: 20261122.23.1
+2026-11-27T03:11:27.6865220Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261122.23/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-27T03:11:27.6867930Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261122.23
+2026-11-27T03:11:27.6869785Z ##[endgroup]
+2026-11-27T03:11:27.6871784Z ##[group]GITHUB_TOKEN Permissions
+2026-11-27T03:11:27.6874629Z Contents: read
+2026-11-27T03:11:27.6875581Z Metadata: read
+2026-11-27T03:11:27.6876644Z ##[endgroup]
+2026-11-27T03:11:27.6880187Z Secret source: Actions
+2026-11-27T03:11:27.6882156Z Cache mode: write
+2026-11-27T03:11:27.6883642Z Prepare workflow directory
+2026-11-27T03:11:27.7368639Z Prepare all required actions
+2026-11-27T03:11:27.7440046Z Getting action download info
+2026-11-27T03:11:27.9445310Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-27T03:11:28.1846710Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-11-27T03:11:28.3200067Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-27T03:11:28.5362742Z Complete job name: browser
+2026-11-27T03:11:28.6263191Z ##[group]Run actions/checkout@v4
+2026-11-27T03:11:28.6264094Z with:
+2026-11-27T03:11:28.6264540Z   fetch-depth: 0
+2026-11-27T03:11:28.6265079Z   repository: sskhangura82/gurbani-learning-library
+2026-11-27T03:11:28.6268914Z   token: ***
+2026-11-27T03:11:28.6269371Z   ssh-strict: true
+2026-11-27T03:11:28.6269827Z   ssh-user: git
+2026-11-27T03:11:28.6270279Z   persist-credentials: true
+2026-11-27T03:11:28.6270936Z   clean: true
+2026-11-27T03:11:28.6271413Z   sparse-checkout-cone-mode: true
+2026-11-27T03:11:28.6271953Z   fetch-tags: false
+2026-11-27T03:11:28.6272398Z   show-progress: true
+2026-11-27T03:11:28.6272851Z   lfs: false
+2026-11-27T03:11:28.6273272Z   submodules: false
+2026-11-27T03:11:28.6273745Z   set-safe-directory: true
+2026-11-27T03:11:28.6274268Z   allow-unsafe-pr-checkout: false
+2026-11-27T03:11:28.6275055Z ##[endgroup]
+2026-11-27T03:11:28.9162572Z Syncing repository: sskhangura82/gurbani-learning-library
+2026-11-27T03:11:28.9165565Z ##[group]Getting Git version info
+2026-11-27T03:11:28.9166743Z Working directory is '/home/runner/work/gurbani-learning-library/gurbani-learning-library'
+2026-11-27T03:11:28.9168283Z [command]/usr/bin/git version
+2026-11-27T03:11:28.9268295Z git version 2.56.1
+2026-11-27T03:11:28.9302164Z ##[endgroup]
+2026-11-27T03:11:28.9313938Z Temporarily overriding HOME='/home/runner/work/_temp/2e3a5306-3395-4b3c-9b1f-1a241dc3aae0' before making global git config changes
+2026-11-27T03:11:28.9319618Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T03:11:28.9321805Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gurbani-learning-library/gurbani-learning-library
+2026-11-27T03:11:28.9379750Z Deleting the contents of '/home/runner/work/gurbani-learning-library/gurbani-learning-library'
+2026-11-27T03:11:28.9391999Z ##[group]Initializing the repository
+2026-11-27T03:11:28.9403076Z [command]/usr/bin/git init /home/runner/work/gurbani-learning-library/gurbani-learning-library
+2026-11-27T03:11:28.9515354Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-27T03:11:28.9517209Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-27T03:11:28.9518896Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-27T03:11:28.9520298Z hint: call:
+2026-11-27T03:11:28.9521278Z hint:
+2026-11-27T03:11:28.9522244Z hint: 	git config --global init.defaultBranch <name>
+2026-11-27T03:11:28.9523329Z hint:
+2026-11-27T03:11:28.9524335Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-27T03:11:28.9525950Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-27T03:11:28.9527235Z hint:
+2026-11-27T03:11:28.9527964Z hint: 	git branch -m <name>
+2026-11-27T03:11:28.9528794Z hint:
+2026-11-27T03:11:28.9530184Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-27T03:11:28.9533358Z Initialized empty Git repository in /home/runner/work/gurbani-learning-library/gurbani-learning-library/.git/
+2026-11-27T03:11:28.9549563Z [command]/usr/bin/git remote add origin https://github.com/sskhangura82/gurbani-learning-library
+2026-11-27T03:11:28.9607053Z ##[endgroup]
+2026-11-27T03:11:28.9608447Z ##[group]Disabling automatic garbage collection
+2026-11-27T03:11:28.9611024Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-27T03:11:28.9650700Z ##[endgroup]
+2026-11-27T03:11:28.9652566Z ##[group]Setting up auth
+2026-11-27T03:11:28.9660005Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T03:11:28.9704885Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T03:11:29.0178885Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T03:11:29.0228140Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T03:11:29.0477795Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T03:11:29.0523291Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T03:11:29.0767725Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-27T03:11:29.0821215Z ##[endgroup]
+2026-11-27T03:11:29.0822251Z ##[group]Fetching the repository
+2026-11-27T03:11:29.0835424Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +0a6b039e706275de1492282627c9c68a772cf2a5:refs/remotes/pull/60/merge
+2026-11-27T03:11:30.3338014Z From https://github.com/sskhangura82/gurbani-learning-library
+2026-11-27T03:11:30.3340264Z  * [new branch]      concept/glp-simran-arrival-20261023      -> origin/concept/glp-simran-arrival-20261023
+2026-11-27T03:11:30.3342407Z  * [new branch]      docs/glp-claude-review-reconciliation-20261024 -> origin/docs/glp-claude-review-reconciliation-20261024
+2026-11-27T03:11:30.3344331Z  * [new branch]      docs/glp-claude-room-blueprints-20261024 -> origin/docs/glp-claude-room-blueprints-20261024
+2026-11-27T03:11:30.3345905Z  * [new branch]      docs/glp-r7-release-receipt-20261023     -> origin/docs/glp-r7-release-receipt-20261023
+2026-11-27T03:11:30.3347906Z  * [new branch]      draft/claude-audio-provenance-register-20261126 -> origin/draft/claude-audio-provenance-register-20261126
+2026-11-27T03:11:30.3350207Z  * [new branch]      draft/claude-hukamnama-lesson-ang504-20261126 -> origin/draft/claude-hukamnama-lesson-ang504-20261126
+2026-11-27T03:11:30.3352583Z  * [new branch]      feature/article-source-print-20261126    -> origin/feature/article-source-print-20261126
+2026-11-27T03:11:30.3355156Z  * [new branch]      feature/glp-anand-pa21-30-bilingual-20261027 -> origin/feature/glp-anand-pa21-30-bilingual-20261027
+2026-11-27T03:11:30.3357089Z  * [new branch]      feature/glp-anand-pa31-40-bilingual-20261027 -> origin/feature/glp-anand-pa31-40-bilingual-20261027
+2026-11-27T03:11:30.3359171Z  * [new branch]      feature/glp-anand-pa8-20-bilingual-20261027 -> origin/feature/glp-anand-pa8-20-bilingual-20261027
+2026-11-27T03:11:30.3360470Z  * [new branch]      feature/glp-chaupai-116-lines-29-lessons-20261027 -> origin/feature/glp-chaupai-116-lines-29-lessons-20261027
+2026-11-27T03:11:30.3362508Z  * [new branch]      feature/glp-cross-accessibility-20261024 -> origin/feature/glp-cross-accessibility-20261024
+2026-11-27T03:11:30.3364422Z  * [new branch]      feature/glp-darbar-reader-r5-20261023    -> origin/feature/glp-darbar-reader-r5-20261023
+2026-11-27T03:11:30.3366171Z  * [new branch]      feature/glp-darbar-reader-r6-20261023    -> origin/feature/glp-darbar-reader-r6-20261023
+2026-11-27T03:11:30.3368130Z  * [new branch]      feature/glp-full-nitnem-n1-sohila-source-20261025 -> origin/feature/glp-full-nitnem-n1-sohila-source-20261025
+2026-11-27T03:11:30.3370146Z  * [new branch]      feature/glp-generic-composition-parity-20261024 -> origin/feature/glp-generic-composition-parity-20261024
+2026-11-27T03:11:30.3372142Z  * [new branch]      feature/glp-gur-place-data-20261024      -> origin/feature/glp-gur-place-data-20261024
+2026-11-27T03:11:30.3373592Z  * [new branch]      feature/glp-home-r7-20261023             -> origin/feature/glp-home-r7-20261023
+2026-11-27T03:11:30.3375316Z  * [new branch]      feature/glp-internal-nitnem-reader-review-20261025 -> origin/feature/glp-internal-nitnem-reader-review-20261025
+2026-11-27T03:11:30.3377027Z  * [new branch]      feature/glp-jaap-106-120-20261028        -> origin/feature/glp-jaap-106-120-20261028
+2026-11-27T03:11:30.3378670Z  * [new branch]      feature/glp-jaap-16-30-20261028          -> origin/feature/glp-jaap-16-30-20261028
+2026-11-27T03:11:30.3379990Z  * [new branch]      feature/glp-jaap-31-45-theme-20261028    -> origin/feature/glp-jaap-31-45-theme-20261028
+2026-11-27T03:11:30.3381117Z  * [new branch]      feature/glp-jaap-46-60-20261028          -> origin/feature/glp-jaap-46-60-20261028
+2026-11-27T03:11:30.3381945Z  * [new branch]      feature/glp-jaap-61-75-20261028          -> origin/feature/glp-jaap-61-75-20261028
+2026-11-27T03:11:30.3382788Z  * [new branch]      feature/glp-jaap-76-90-20261028          -> origin/feature/glp-jaap-76-90-20261028
+2026-11-27T03:11:30.3383696Z  * [new branch]      feature/glp-jaap-91-105-candidate-20261028 -> origin/feature/glp-jaap-91-105-candidate-20261028
+2026-11-27T03:11:30.3384810Z  * [new branch]      feature/glp-jaap-early-15-chhands-learning-20261027 -> origin/feature/glp-jaap-early-15-chhands-learning-20261027
+2026-11-27T03:11:30.3385994Z  * [new branch]      feature/glp-japji-format-parity-pace-200-20261025 -> origin/feature/glp-japji-format-parity-pace-200-20261025
+2026-11-27T03:11:30.3387199Z  * [new branch]      feature/glp-m0-reader-excellence-20261024 -> origin/feature/glp-m0-reader-excellence-20261024
+2026-11-27T03:11:30.3388291Z  * [new branch]      feature/glp-m1-timing-bench-20261024     -> origin/feature/glp-m1-timing-bench-20261024
+2026-11-27T03:11:30.3389202Z  * [new branch]      feature/glp-m2-depth-pilot-20261024      -> origin/feature/glp-m2-depth-pilot-20261024
+2026-11-27T03:11:30.3391182Z  * [new branch]      feature/glp-mind-content-envelope-20261024 -> origin/feature/glp-mind-content-envelope-20261024
+2026-11-27T03:11:30.3393159Z  * [new branch]      feature/glp-mind-gurbani-first-preview-20261024 -> origin/feature/glp-mind-gurbani-first-preview-20261024
+2026-11-27T03:11:30.3395011Z  * [new branch]      feature/glp-nitnem-continuation-20261028 -> origin/feature/glp-nitnem-continuation-20261028
+2026-11-27T03:11:30.3396799Z  * [new branch]      feature/glp-nitnem-meaning-study-drafts-20261025 -> origin/feature/glp-nitnem-meaning-study-drafts-20261025
+2026-11-27T03:11:30.3399228Z  * [new branch]      feature/glp-nitnem-psychology-foundations-20261024 -> origin/feature/glp-nitnem-psychology-foundations-20261024
+2026-11-27T03:11:30.3401236Z  * [new branch]      feature/glp-nitnem-today-hub-20261025    -> origin/feature/glp-nitnem-today-hub-20261025
+2026-11-27T03:11:30.3402769Z  * [new branch]      feature/glp-r8-listen-menu-20261023      -> origin/feature/glp-r8-listen-menu-20261023
+2026-11-27T03:11:30.3404386Z  * [new branch]      feature/glp-reader-serenity-review-20261024 -> origin/feature/glp-reader-serenity-review-20261024
+2026-11-27T03:11:30.3405545Z  * [new branch]      feature/glp-rehras-exact-origin-learning-20261027 -> origin/feature/glp-rehras-exact-origin-learning-20261027
+2026-11-27T03:11:30.3406692Z  * [new branch]      feature/glp-savaiye-40-line-meanings-20261027 -> origin/feature/glp-savaiye-40-line-meanings-20261027
+2026-11-27T03:11:30.3407759Z  * [new branch]      feature/glp-sohila-56-line-meanings-20261025 -> origin/feature/glp-sohila-56-line-meanings-20261025
+2026-11-27T03:11:30.3408948Z  * [new branch]      feature/glp-sukhmani-salok9-source-intake-20261027 -> origin/feature/glp-sukhmani-salok9-source-intake-20261027
+2026-11-27T03:11:30.3410091Z  * [new branch]      feature/glp-trust-practice-now-20261025  -> origin/feature/glp-trust-practice-now-20261025
+2026-11-27T03:11:30.3411388Z  * [new branch]      feature/glp-v15-private-release-20261028 -> origin/feature/glp-v15-private-release-20261028
+2026-11-27T03:11:30.3412388Z  * [new branch]      feature/hukamnama-foundation-20261125    -> origin/feature/hukamnama-foundation-20261125
+2026-11-27T03:11:30.3413354Z  * [new branch]      feature/kabir-salok-reader-20261126      -> origin/feature/kabir-salok-reader-20261126
+2026-11-27T03:11:30.3414304Z  * [new branch]      feature/kabir-source-intake-20261126     -> origin/feature/kabir-source-intake-20261126
+2026-11-27T03:11:30.3415339Z  * [new branch]      feature/knowledge-integrated-search-20261126 -> origin/feature/knowledge-integrated-search-20261126
+2026-11-27T03:11:30.3416665Z  * [new branch]      feature/knowledge-library-foundation-20261125 -> origin/feature/knowledge-library-foundation-20261125
+2026-11-27T03:11:30.3417890Z  * [new branch]      feature/learning-explorer-ashtpadi17-20261125 -> origin/feature/learning-explorer-ashtpadi17-20261125
+2026-11-27T03:11:30.3419031Z  * [new branch]      feature/learning-reliability-practice-20261126 -> origin/feature/learning-reliability-practice-20261126
+2026-11-27T03:11:30.3420083Z  * [new branch]      feature/nitnem-complete-20261125         -> origin/feature/nitnem-complete-20261125
+2026-11-27T03:11:30.3421287Z  * [new branch]      feature/salok-mahalla9-reader-20261126   -> origin/feature/salok-mahalla9-reader-20261126
+2026-11-27T03:11:30.3422235Z  * [new branch]      feature/sukhmani-13-18-20261124          -> origin/feature/sukhmani-13-18-20261124
+2026-11-27T03:11:30.3423144Z  * [new branch]      feature/sukhmani-complete-20261124       -> origin/feature/sukhmani-complete-20261124
+2026-11-27T03:11:30.3424171Z  * [new branch]      feature/sukhmani-reader-foundation-20261123 -> origin/feature/sukhmani-reader-foundation-20261123
+2026-11-27T03:11:30.3425171Z  * [new branch]      feature/unified-library-v1-20261126      -> origin/feature/unified-library-v1-20261126
+2026-11-27T03:11:30.3426153Z  * [new branch]      fix/claude-review-first-repairs-20261125 -> origin/fix/claude-review-first-repairs-20261125
+2026-11-27T03:11:30.3523607Z  * [new branch]      fix/knowledge-editorial-boundary-20261126 -> origin/fix/knowledge-editorial-boundary-20261126
+2026-11-27T03:11:30.3525643Z  * [new branch]      fix/knowledge-editorial-title-20261126   -> origin/fix/knowledge-editorial-title-20261126
+2026-11-27T03:11:30.3527345Z  * [new branch]      fix/knowledge-search-and-reading-20261126 -> origin/fix/knowledge-search-and-reading-20261126
+2026-11-27T03:11:30.3529157Z  * [new branch]      fix/knowledge-source-identity-20261126   -> origin/fix/knowledge-source-identity-20261126
+2026-11-27T03:11:30.3531566Z  * [new branch]      fix/library-script-integrity-20261126    -> origin/fix/library-script-integrity-20261126
+2026-11-27T03:11:30.3533440Z  * [new branch]      fix/pr40-sukhmani-passage-visit-20261126 -> origin/fix/pr40-sukhmani-passage-visit-20261126
+2026-11-27T03:11:30.3535206Z  * [new branch]      fix/reader-load-resume-20261126          -> origin/fix/reader-load-resume-20261126
+2026-11-27T03:11:30.3537032Z  * [new branch]      improve/claude-wave1a-nitnem-meanings-readable -> origin/improve/claude-wave1a-nitnem-meanings-readable
+2026-11-27T03:11:30.3538591Z  * [new branch]      main                                     -> origin/main
+2026-11-27T03:11:30.3540218Z  * [new branch]      plan/daily-hukamnama-authentic-audio-20261125 -> origin/plan/daily-hukamnama-authentic-audio-20261125
+2026-11-27T03:11:30.3542021Z  * [new branch]      qa/glp-r6-upgrade-20261023               -> origin/qa/glp-r6-upgrade-20261023
+2026-11-27T03:11:30.3542965Z  * [new branch]      review/claude-independent-20261125       -> origin/review/claude-independent-20261125
+2026-11-27T03:11:30.3544007Z  * [new branch]      rollback/knowledge-boundary-base-20261126 -> origin/rollback/knowledge-boundary-base-20261126
+2026-11-27T03:11:30.3545097Z  * [new branch]      rollback/knowledge-integration-base-20261126 -> origin/rollback/knowledge-integration-base-20261126
+2026-11-27T03:11:30.3546238Z  * [new branch]      rollback/library-script-integrity-base-20261126 -> origin/rollback/library-script-integrity-base-20261126
+2026-11-27T03:11:30.3547320Z  * [new branch]      rollback/reader-reliability-base-20261126 -> origin/rollback/reader-reliability-base-20261126
+2026-11-27T03:11:30.3548394Z  * [new branch]      rollback/unified-library-base-20261126   -> origin/rollback/unified-library-base-20261126
+2026-11-27T03:11:30.3549243Z  * [new tag]         baseline-0.8-continuous1                 -> baseline-0.8-continuous1
+2026-11-27T03:11:30.3549917Z  * [new tag]         japji-v1-0.9-r3                          -> japji-v1-0.9-r3
+2026-11-27T03:11:30.3550734Z  * [new tag]         japji-v1-0.9-r4                          -> japji-v1-0.9-r4
+2026-11-27T03:11:30.3551691Z  * [new tag]         japji-v1-0.9-r5                          -> japji-v1-0.9-r5
+2026-11-27T03:11:30.3552313Z  * [new tag]         japji-v1-0.9-r6                          -> japji-v1-0.9-r6
+2026-11-27T03:11:30.3552913Z  * [new tag]         japji-v1-0.9-r7                          -> japji-v1-0.9-r7
+2026-11-27T03:11:30.3553544Z  * [new ref]         0a6b039e706275de1492282627c9c68a772cf2a5 -> pull/60/merge
+2026-11-27T03:11:30.3555001Z ##[endgroup]
+2026-11-27T03:11:30.3555530Z ##[group]Determining the checkout info
+2026-11-27T03:11:30.3556096Z ##[endgroup]
+2026-11-27T03:11:30.3556444Z [command]/usr/bin/git sparse-checkout disable
+2026-11-27T03:11:30.3557509Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-27T03:11:30.3558651Z ##[group]Checking out the ref
+2026-11-27T03:11:30.3559176Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/60/merge
+2026-11-27T03:11:30.5476532Z Note: switching to 'refs/remotes/pull/60/merge'.
+2026-11-27T03:11:30.5477231Z 
+2026-11-27T03:11:30.5477585Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-27T03:11:30.5478171Z changes and commit them, and you can discard any commits you make in this
+2026-11-27T03:11:30.5478716Z state without impacting any branches by switching back to a branch.
+2026-11-27T03:11:30.5479025Z 
+2026-11-27T03:11:30.5479262Z If you want to create a new branch to retain commits you create, you may
+2026-11-27T03:11:30.5479775Z do so (now or later) by using -c with the switch command. Example:
+2026-11-27T03:11:30.5480063Z 
+2026-11-27T03:11:30.5480208Z   git switch -c <new-branch-name>
+2026-11-27T03:11:30.5480421Z 
+2026-11-27T03:11:30.5480564Z Or undo this operation with:
+2026-11-27T03:11:30.5480748Z 
+2026-11-27T03:11:30.5481114Z   git switch -
+2026-11-27T03:11:30.5481271Z 
+2026-11-27T03:11:30.5481554Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-27T03:11:30.5482142Z 
+2026-11-27T03:11:30.5482581Z HEAD is now at 0a6b039 Merge 69e24fe4adfccbd535de2b5f8ac0bab5ed720d94 into e0a6cff22771d42ce3a2fe91ad96863daae214ed
+2026-11-27T03:11:30.5506715Z ##[endgroup]
+2026-11-27T03:11:30.5564367Z [command]/usr/bin/git log -1 --format=%H
+2026-11-27T03:11:30.5599390Z 0a6b039e706275de1492282627c9c68a772cf2a5
+2026-11-27T03:11:30.5882362Z ##[group]Run actions/setup-node@v4
+2026-11-27T03:11:30.5882725Z with:
+2026-11-27T03:11:30.5882977Z   node-version: 22
+2026-11-27T03:11:30.5883247Z   always-auth: false
+2026-11-27T03:11:30.5883515Z   check-latest: false
+2026-11-27T03:11:30.5886140Z   token: ***
+2026-11-27T03:11:30.5886392Z ##[endgroup]
+2026-11-27T03:11:30.7383031Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+2026-11-27T03:11:30.7387654Z (node:2292) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T03:11:30.7388731Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T03:11:30.7390057Z ##[group]Environment details
+2026-11-27T03:11:31.1607093Z node: v22.23.5
+2026-11-27T03:11:31.1607507Z npm: 10.9.9
+2026-11-27T03:11:31.1607814Z yarn: 1.22.22
+2026-11-27T03:11:31.1608622Z ##[endgroup]
+2026-11-27T03:11:31.1754065Z ##[group]Run npm ci --prefix tools/script-integrity --ignore-scripts --no-audit --no-fund
+2026-11-27T03:11:31.1754789Z [36;1mnpm ci --prefix tools/script-integrity --ignore-scripts --no-audit --no-fund[0m
+2026-11-27T03:11:31.1755277Z [36;1mnode tools/build-app-bundles.mjs --check[0m
+2026-11-27T03:11:31.1755618Z [36;1mnode tools/refresh-app-sri.mjs --check[0m
+2026-11-27T03:11:31.1756006Z [36;1mnpm install --no-save --package-lock=false playwright@1.62.1[0m
+2026-11-27T03:11:31.1756412Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-11-27T03:11:31.1756748Z [36;1msudo apt-get install -y fonts-noto-core[0m
+2026-11-27T03:11:31.1810975Z shell: /usr/bin/bash -e {0}
+2026-11-27T03:11:31.1811256Z ##[endgroup]
+2026-11-27T03:11:33.4064168Z npm error code EUSAGE
+2026-11-27T03:11:33.4064906Z npm error
+2026-11-27T03:11:33.4066922Z npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+2026-11-27T03:11:33.4068486Z npm error
+2026-11-27T03:11:33.4069025Z npm error Missing: acorn@8.19.0 from lock file
+2026-11-27T03:11:33.4069758Z npm error Missing: esbuild@0.28.2 from lock file
+2026-11-27T03:11:33.4070575Z npm error Missing: @esbuild/aix-ppc64@0.28.2 from lock file
+2026-11-27T03:11:33.4071703Z npm error Missing: @esbuild/android-arm@0.28.2 from lock file
+2026-11-27T03:11:33.4072606Z npm error Missing: @esbuild/android-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4073511Z npm error Missing: @esbuild/android-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4074392Z npm error Missing: @esbuild/darwin-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4075250Z npm error Missing: @esbuild/darwin-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4076143Z npm error Missing: @esbuild/freebsd-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4077017Z npm error Missing: @esbuild/freebsd-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4077891Z npm error Missing: @esbuild/linux-arm@0.28.2 from lock file
+2026-11-27T03:11:33.4078748Z npm error Missing: @esbuild/linux-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4079597Z npm error Missing: @esbuild/linux-ia32@0.28.2 from lock file
+2026-11-27T03:11:33.4080467Z npm error Missing: @esbuild/linux-loong64@0.28.2 from lock file
+2026-11-27T03:11:33.4081563Z npm error Missing: @esbuild/linux-mips64el@0.28.2 from lock file
+2026-11-27T03:11:33.4082459Z npm error Missing: @esbuild/linux-ppc64@0.28.2 from lock file
+2026-11-27T03:11:33.4083356Z npm error Missing: @esbuild/linux-riscv64@0.28.2 from lock file
+2026-11-27T03:11:33.4084236Z npm error Missing: @esbuild/linux-s390x@0.28.2 from lock file
+2026-11-27T03:11:33.4085102Z npm error Missing: @esbuild/linux-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4086318Z npm error Missing: @esbuild/netbsd-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4087184Z npm error Missing: @esbuild/netbsd-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4088071Z npm error Missing: @esbuild/openbsd-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4089081Z npm error Missing: @esbuild/openbsd-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4090003Z npm error Missing: @esbuild/openharmony-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4091120Z npm error Missing: @esbuild/sunos-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4092006Z npm error Missing: @esbuild/win32-arm64@0.28.2 from lock file
+2026-11-27T03:11:33.4092850Z npm error Missing: @esbuild/win32-ia32@0.28.2 from lock file
+2026-11-27T03:11:33.4093693Z npm error Missing: @esbuild/win32-x64@0.28.2 from lock file
+2026-11-27T03:11:33.4094271Z npm error
+2026-11-27T03:11:33.4094720Z npm error Clean install a project
+2026-11-27T03:11:33.4095173Z npm error
+2026-11-27T03:11:33.4095511Z npm error Usage:
+2026-11-27T03:11:33.4095875Z npm error npm ci
+2026-11-27T03:11:33.4096230Z npm error
+2026-11-27T03:11:33.4096587Z npm error Options:
+2026-11-27T03:11:33.4097425Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2026-11-27T03:11:33.4098932Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2026-11-27T03:11:33.4100222Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-11-27T03:11:33.4101694Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-11-27T03:11:33.4102665Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-11-27T03:11:33.4103651Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-11-27T03:11:33.4104765Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-11-27T03:11:33.4105471Z npm error
+2026-11-27T03:11:33.4106141Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-11-27T03:11:33.4106768Z npm error
+2026-11-27T03:11:33.4107254Z npm error Run "npm help ci" for more info
+2026-11-27T03:11:33.4108439Z npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-11-27T03_11_31_239Z-debug-0.log
+2026-11-27T03:11:33.4485057Z ##[error]Process completed with exit code 1.
+2026-11-27T03:11:33.4581004Z ##[group]Run actions/upload-artifact@v4
+2026-11-27T03:11:33.4581308Z with:
+2026-11-27T03:11:33.4581533Z   name: knowledge-pilot-viewport-evidence
+2026-11-27T03:11:33.4582331Z   path: evidence/knowledge-pilot/
+evidence/knowledge-editorial-boundary/
+evidence/knowledge-search/
+evidence/knowledge-integration/
+evidence/library-script-integrity/browser/
+
+2026-11-27T03:11:33.4583236Z   retention-days: 90
+2026-11-27T03:11:33.4583449Z   if-no-files-found: warn
+2026-11-27T03:11:33.4583668Z   compression-level: 6
+2026-11-27T03:11:33.4583870Z   overwrite: false
+2026-11-27T03:11:33.4584073Z   include-hidden-files: false
+2026-11-27T03:11:33.4584305Z ##[endgroup]
+2026-11-27T03:11:33.6316248Z (node:2337) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T03:11:33.6317837Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T03:11:33.6698466Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-27T03:11:33.6701569Z The least common ancestor is /home/runner/work/gurbani-learning-library/gurbani-learning-library/evidence. This will be the root directory of the artifact
+2026-11-27T03:11:33.6702999Z With the provided path, there will be 76 files uploaded
+2026-11-27T03:11:33.6703822Z Artifact name is valid!
+2026-11-27T03:11:33.6704264Z Root directory input is valid!
+2026-11-27T03:11:33.8806475Z Beginning upload of artifact content to blob storage
+2026-11-27T03:11:34.2375673Z (node:2337) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-27T03:11:34.5227643Z Uploaded bytes 8388608
+2026-11-27T03:11:34.5590159Z Uploaded bytes 9503177
+2026-11-27T03:11:34.5761724Z Finished uploading artifact content to blob storage!
+2026-11-27T03:11:34.5763749Z SHA256 digest of uploaded artifact zip is 43b0123f2ffc5da39ae22ac2e43c235959ebfbe36d69c12f58f3b3190af9607e
+2026-11-27T03:11:34.5765076Z Finalizing artifact upload
+2026-11-27T03:11:34.9129102Z Artifact knowledge-pilot-viewport-evidence.zip successfully finalized. Artifact ID 15168914442
+2026-11-27T03:11:34.9130461Z Artifact knowledge-pilot-viewport-evidence has been successfully uploaded! Final size is 9503177 bytes. Artifact ID is 15168914442
+2026-11-27T03:11:34.9135508Z Artifact download URL: https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667580/artifacts/15168914442
+2026-11-27T03:11:34.9394963Z Post job cleanup.
+2026-11-27T03:11:35.0268379Z [command]/usr/bin/git version
+2026-11-27T03:11:35.0339956Z git version 2.56.1
+2026-11-27T03:11:35.0357126Z Temporarily overriding HOME='/home/runner/work/_temp/fcbb7cd4-f933-4f0e-888e-fd4a5bcdd7ee' before making global git config changes
+2026-11-27T03:11:35.0358812Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T03:11:35.0364211Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gurbani-learning-library/gurbani-learning-library
+2026-11-27T03:11:35.0408367Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T03:11:35.0448092Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T03:11:35.0736362Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T03:11:35.0765636Z http.https://github.com/.extraheader
+2026-11-27T03:11:35.0794840Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-27T03:11:35.0834303Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T03:11:35.1110658Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T03:11:35.1200545Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T03:11:35.1670112Z Cleaning up orphan processes
+2026-11-27T03:11:35.2053591Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

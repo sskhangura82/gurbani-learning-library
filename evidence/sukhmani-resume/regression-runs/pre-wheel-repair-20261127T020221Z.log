@@ -1,0 +1,9 @@
+{"name":"A real wheel action during delayed reload layout wins over automatic restoration","status":"failed","error":"AssertionError [ERR_ASSERTION]: The wheel action must be saved before readiness completes\n    at file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:80:11\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:70:2"}
+{"name":"No runtime errors or external requests","status":"passed"}
+{
+  "status": "failed",
+  "report": "/tmp/glp001-iphoneqa-20261126/sukhmani-resume-investigation/regression-runs/2026-11-27T02-02-21-604Z/report.json",
+  "failed": [
+    "A real wheel action during delayed reload layout wins over automatic restoration"
+  ]
+}

@@ -1,0 +1,664 @@
+{
+  "inputFile": "teaching-082-162.json",
+  "inputSha256": "51871614d9dfb1997b1682d28e1959d74e4c5d0767de18498cd4766b81b77d8e",
+  "reviewerType": "INDEPENDENT_AI_REVIEW_NOT_HUMAN_APPROVAL",
+  "qualifiedHumanReviewed": false,
+  "reviewedOrdinals": [
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162
+  ],
+  "reviewScope": [
+    "Every original Gurmukhi line against its English and Punjabi simple explanation",
+    "Whole-Salok linkage and close-reading specificity",
+    "Punjabi parity across line, study, reflection and teach-back fields",
+    "Metaphor versus literal account and named interpretive alternatives",
+    "Exact-source vocabulary and actual-Ang citation coverage"
+  ],
+  "findings": [
+    {
+      "ordinal": 103,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The instrument gives mortality an audible, tangible form.",
+      "after": "The silent instrument can be read through mortality or through the ending of bodily attachment; the image itself does not name death.",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": "ਸਾਜ਼ ਮੌਤ ਦੀ ਗੱਲ ਨੂੰ ਸੁਣਨ ਅਤੇ ਛੂਹਣ ਵਾਲਾ ਰੂਪ ਦਿੰਦਾ ਹੈ।",
+      "after": "ਚੁੱਪ ਸਾਜ਼ ਨੂੰ ਮੌਤ ਜਾਂ ਦੇਹ-ਮੋਹ ਦੇ ਮੁੱਕਣ ਨਾਲ ਪੜ੍ਹਿਆ ਜਾ ਸਕਦਾ ਹੈ; ਚਿੱਤਰ ਆਪ ਮੌਤ ਦਾ ਨਾਮ ਨਹੀਂ ਲੈਂਦਾ।",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "simple.en",
+      "before": "The silent instrument reveals the body's dependence on the life that animates it.",
+      "after": "The instrument falls silent when its strings and players no longer sustain it. What this loss represents needs to be distinguished from the literal image.",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "simple.pa",
+      "before": "ਚੁੱਪ ਸਾਜ਼ ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਸਰੀਰ ਉਸ ਨੂੰ ਚਲਾਉਣ ਵਾਲੀ ਜਿੰਦ ਉੱਤੇ ਨਿਰਭਰ ਹੈ।",
+      "after": "ਤਾਰਾਂ ਟੁੱਟਣ ਅਤੇ ਵਜਾਉਣ ਵਾਲਿਆਂ ਦੇ ਚਲੇ ਜਾਣ ਨਾਲ ਸਾਜ਼ ਚੁੱਪ ਹੋ ਜਾਂਦਾ ਹੈ। ਇਹ ਘਾਟ ਕਿਸ ਦਾ ਸੰਕੇਤ ਹੈ, ਉਸ ਨੂੰ ਦਿੱਤੇ ਚਿੱਤਰ ਤੋਂ ਵੱਖ ਕਰ ਕੇ ਪੜ੍ਹਨਾ ਹੈ।",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "study.closeReading",
+      "before": "The instrument once sounded because strings and player worked together. Now both conditions are withdrawn: its strings are broken and its players have gone. The second line refuses to treat the remaining object as self-sufficient. Read in the surrounding reflections on body, loss and remembrance, the instrument offers a way to attend to mortality without pretending the body commands its own continuance. The image does not specify an anatomical counterpart for every string. Its force lies in the silence after animation has ceased.",
+      "after": "The two lines remove both the strings and the players that once made the instrument sound. The remaining instrument cannot continue by itself. This image can prompt reflection on mortality, but that application is not the only reading. Another interpretation takes the instrument as bodily attachment and its silence as release from that attachment. The surrounding call to remain absorbed in Ram makes this possibility relevant. Keep the image intact while asking whether its ending describes the loss of life or the ending of an attachment within life.",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "study.closeReadingPa",
+      "before": "ਸਾਜ਼ ਪਹਿਲਾਂ ਇਸ ਲਈ ਵੱਜਦਾ ਸੀ ਕਿ ਤਾਰਾਂ ਅਤੇ ਵਜਾਉਣ ਵਾਲਾ ਇਕੱਠੇ ਸਨ। ਹੁਣ ਦੋਵੇਂ ਆਸਰੇ ਹਟ ਗਏ: ਤਾਰਾਂ ਟੁੱਟੀਆਂ ਅਤੇ ਵਜਾਉਣ ਵਾਲੇ ਚਲੇ ਗਏ। ਦੂਜੀ ਤੁਕ ਬਚੇ ਪਦਾਰਥ ਨੂੰ ਆਪਣੇ ਆਪ ਪੂਰਾ ਨਹੀਂ ਮੰਨਦੀ। ਤਨ, ਘਾਟੇ ਅਤੇ ਚੇਤੇ ਦੇ ਨੇੜਲੇ ਵਿਚਾਰਾਂ ਨਾਲ ਸਾਜ਼ ਮੌਤ ਵੱਲ ਧਿਆਨ ਕਰਨ ਦਾ ਰਾਹ ਦਿੰਦਾ ਹੈ; ਸਰੀਰ ਆਪਣੇ ਬਣੇ ਰਹਿਣ ਦਾ ਮਾਲਕ ਨਹੀਂ। ਚਿੱਤਰ ਹਰ ਤਾਰ ਲਈ ਕੋਈ ਸਰੀਰਕ ਅੰਗ ਨਹੀਂ ਦੱਸਦਾ। ਇਸ ਦਾ ਜ਼ੋਰ ਉਸ ਚੁੱਪ ਵਿੱਚ ਹੈ ਜੋ ਚਲਾਉਣ ਵਾਲੀ ਜਿੰਦ ਦੇ ਹਟਣ ਤੋਂ ਬਾਅਦ ਆਉਂਦੀ ਹੈ।",
+      "after": "ਦੋ ਤੁਕਾਂ ਸਾਜ਼ ਨੂੰ ਵਜਾਉਣ ਵਾਲੇ ਦੋਵੇਂ ਆਸਰੇ ਹਟਾ ਦਿੰਦੀਆਂ ਹਨ: ਤਾਰਾਂ ਟੁੱਟੀਆਂ ਅਤੇ ਵਜਾਉਣ ਵਾਲੇ ਚਲੇ ਗਏ। ਬਚਿਆ ਸਾਜ਼ ਆਪਣੇ ਆਪ ਨਹੀਂ ਵੱਜ ਸਕਦਾ। ਇਸ ਚਿੱਤਰ ਨਾਲ ਮੌਤ ਦਾ ਵਿਚਾਰ ਹੋ ਸਕਦਾ ਹੈ, ਪਰ ਇਹੋ ਇਕ ਪੜ੍ਹਤ ਨਹੀਂ। ਹੋਰ ਭਾਵਾਰਥ ਸਾਜ਼ ਨੂੰ ਦੇਹ-ਮੋਹ ਅਤੇ ਉਸ ਦੀ ਚੁੱਪ ਨੂੰ ਉਸ ਮੋਹ ਤੋਂ ਛੁਟਕਾਰਾ ਮੰਨਦਾ ਹੈ। ਨੇੜਲਾ ਰਾਮ ਵਿੱਚ ਲੀਨ ਰਹਿਣ ਦਾ ਸੱਦਾ ਇਸ ਪੜ੍ਹਤ ਨੂੰ ਪ੍ਰਸੰਗ ਦਿੰਦਾ ਹੈ। ਚਿੱਤਰ ਕਾਇਮ ਰੱਖ ਕੇ ਪੁੱਛੋ ਕਿ ਮੁੱਕਣਾ ਜੀਵਨ ਦਾ ਹੈ ਜਾਂ ਜੀਊਂਦਿਆਂ ਕਿਸੇ ਮੋਹ ਦਾ।",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "study.interpretationCare",
+      "before": "The body–instrument reading is figurative; do not invent a detailed physiological map of the strings.",
+      "after": "Sahib Singh reads the instrument as bodily attachment. The mortality reading is another application of the image; neither should be presented as a settled literal account.",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "study.interpretationCarePa",
+      "before": "ਤਨ-ਸਾਜ਼ ਦੀ ਪੜ੍ਹਤ ਰੂਪਕ ਹੈ; ਤਾਰਾਂ ਦਾ ਵਿਸਥਾਰਕ ਸਰੀਰਕ ਨਕਸ਼ਾ ਨਾ ਘੜੋ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਸਾਜ਼ ਨੂੰ ਦੇਹ-ਮੋਹ ਪੜ੍ਹਦੇ ਹਨ। ਮੌਤ ਵਾਲੀ ਪੜ੍ਹਤ ਚਿੱਤਰ ਦਾ ਹੋਰ ਭਾਵਾਰਥ ਹੈ; ਕਿਸੇ ਨੂੰ ਵੀ ਪੱਕੀ ਸ਼ਬਦੀ ਘਟਨਾ ਨਾ ਮੰਨੋ।",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "study.reflection",
+      "before": "What becomes clearer when I regard bodily ability as entrusted rather than guaranteed?",
+      "after": "Which attachment keeps asking to be played again, and what might it mean for that demand to fall silent?",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "study.reflectionPa",
+      "before": "ਸਰੀਰਕ ਸਮਰੱਥਾ ਨੂੰ ਪੱਕਾ ਹੱਕ ਨਹੀਂ, ਮਿਲਿਆ ਆਸਰਾ ਮੰਨਿਆਂ ਕੀ ਸਪਸ਼ਟ ਹੁੰਦਾ ਹੈ?",
+      "after": "ਕਿਹੜਾ ਮੋਹ ਮੁੜ ਆਪਣਾ ਰਾਗ ਵਜਾਉਣ ਦੀ ਮੰਗ ਕਰਦਾ ਹੈ, ਅਤੇ ਉਸ ਮੰਗ ਦਾ ਚੁੱਪ ਹੋਣਾ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 103,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1369&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 103, Ang 1369",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 103; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1369&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 103, Ang 1369",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 103; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1369.html",
+          "title": "Professor Sahib Singh, Sri Guru Granth Darpan — contextual check for Salok 103",
+          "scope": "Limited lexical comparison for the instrument as bodily attachment; records an interpretive alternative without importing commentary prose."
+        }
+      ],
+      "reason": "The draft treats physical mortality as the settled meaning of an instrument metaphor. Preserve the literal scene while distinguishing this application from the documented reading about the ending of bodily attachment.",
+      "sourceBasis": "Salok 103, Ang 1369: broken strings and departed players are explicit; the body and physical death are not named. Sahib Singh, Darpan 1369, glosses the instrument as bodily attachment. https://www.gurugranthdarpan.net/1369.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "lines.0.simpleEn",
+      "before": "Kabir, leaving Hari's remembrance, you maintained a large household.",
+      "after": "Kabir, leaving Hari's remembrance, you devoted yourself to maintaining the household.",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "lines.0.simplePa",
+      "before": "ਕਬੀਰ, ਹਰਿ ਦਾ ਸਿਮਰਨ ਛੱਡ ਕੇ ਤੂੰ ਵੱਡਾ ਕੁਟੰਬ ਪਾਲਿਆ।",
+      "after": "ਕਬੀਰ, ਹਰਿ ਦਾ ਸਿਮਰਨ ਛੱਡ ਕੇ ਤੂੰ ਕੁਟੰਬ ਪਾਲਣ ਵਿੱਚ ਹੀ ਲੱਗਾ ਰਿਹਾ।",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "lines.1.simpleEn",
+      "before": "You remained occupied in its affairs, brother, but no lasting bond remained.",
+      "after": "Absorbed in worldly affairs, one is left without lasting help from brothers or kin.",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "lines.1.simplePa",
+      "before": "ਭਾਈ, ਤੂੰ ਧੰਧਿਆਂ ਵਿੱਚ ਹੀ ਰਿਹਾ, ਪਰ ਟਿਕਣ ਵਾਲਾ ਬੰਧਨ ਨਾ ਰਿਹਾ।",
+      "after": "ਧੰਧਿਆਂ ਵਿੱਚ ਫਸੇ ਮਨੁੱਖ ਲਈ ਭਾਈ-ਬੰਧ ਦਾ ਟਿਕਣ ਵਾਲਾ ਸਹਾਰਾ ਵੀ ਨਹੀਂ ਰਹਿੰਦਾ।",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "lines.1.interpretiveCaution",
+      "before": "ਬੰਧੁ can carry the sense of bond or securing support; the exact nuance needs review.",
+      "after": "ਭਾਈ and ਬੰਧੁ can be read together as brothers and relatives. The ending concerns the limits of their help, not merely an abstract bond.",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": "ਬੰਧੁ ਵਿੱਚ ਨਾਤੇ ਜਾਂ ਟਿਕਾਊ ਸਹਾਰੇ ਦਾ ਭਾਵ ਹੋ ਸਕਦਾ ਹੈ; ਠੀਕ ਛਾਂ ਸਮੀਖਿਆ ਮੰਗਦੀ ਹੈ।",
+      "after": "ਭਾਈ ਅਤੇ ਬੰਧੁ ਨੂੰ ਇਕੱਠੇ ਭਰਾਵਾਂ ਅਤੇ ਰਿਸ਼ਤੇਦਾਰਾਂ ਵਜੋਂ ਪੜ੍ਹਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਅੰਤ ਉਹਨਾਂ ਦੇ ਸਹਾਰੇ ਦੀ ਹੱਦ ਦੱਸਦਾ ਹੈ, ਕੇਵਲ ਕਿਸੇ ਅਮੂਰਤ ਬੰਧਨ ਦੀ ਨਹੀਂ।",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "study.closeReading",
+      "before": "The decisive words are leaving remembrance. They distinguish this warning from a general rejection of family life. The speaker may devote great energy to maintaining a household and still fail to secure what endures. The intimate address brother brings the warning close rather than presenting a remote example. The final bond or support cannot simply be assumed from the size of the family. The Salok asks what accompanies the work of caring, and what is lost when Hari disappears from its centre.",
+      "after": "The decisive opening is leaving Hari's remembrance. It distinguishes the warning from a rejection of caring for a family. The household may receive all one's attention, yet brothers and kin cannot supply the enduring support that has been neglected. This family reading gives the final words a direct connection with the opening household. The exact force of being left in one's affairs remains interpretive. What is clear is the imbalance: care has become absorbing occupation while remembrance, which should accompany it, has been abandoned.",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "study.closeReadingPa",
+      "before": "ਨਿਰਣਾਇਕ ਬੋਲ ਹਨ ਸਿਮਰਨ ਛੱਡ ਕੇ। ਇਹ ਚੇਤਾਵਨੀ ਨੂੰ ਘਰ-ਗ੍ਰਿਹਸਤੀ ਦੇ ਆਮ ਇਨਕਾਰ ਤੋਂ ਵੱਖ ਕਰਦੇ ਹਨ। ਮਨੁੱਖ ਕੁਟੰਬ ਪਾਲਣ ਵਿੱਚ ਬਹੁਤ ਸ਼ਕਤੀ ਲਾ ਸਕਦਾ ਹੈ, ਫਿਰ ਵੀ ਟਿਕਣ ਵਾਲਾ ਆਸਰਾ ਨਾ ਬਣੇ। ਭਾਈ ਦਾ ਨੇੜਲਾ ਸੰਬੋਧਨ ਦੂਰ ਦੀ ਮਿਸਾਲ ਦੀ ਥਾਂ ਗੱਲ ਆਪਣੇ ਕੋਲ ਲਿਆਉਂਦਾ ਹੈ। ਅੰਤਲਾ ਬੰਧਨ ਜਾਂ ਸਹਾਰਾ ਕੇਵਲ ਪਰਿਵਾਰ ਦੇ ਵੱਡੇ ਹੋਣ ਨਾਲ ਮੰਨਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਸਲੋਕ ਪੁੱਛਦਾ ਹੈ ਕਿ ਸੰਭਾਲ ਦੇ ਕੰਮ ਨਾਲ ਕੀ ਨਾਲ ਚੱਲਦਾ ਹੈ ਅਤੇ ਕੇਂਦਰ ਵਿੱਚੋਂ ਹਰਿ ਹਟਣ ਨਾਲ ਕੀ ਗੁਆਚਦਾ ਹੈ।",
+      "after": "ਨਿਰਣਾਇਕ ਸ਼ੁਰੂਆਤ ਹਰਿ ਦਾ ਸਿਮਰਨ ਛੱਡਣਾ ਹੈ। ਇਸ ਨਾਲ ਚੇਤਾਵਨੀ ਪਰਿਵਾਰ ਦੀ ਸੰਭਾਲ ਦੇ ਇਨਕਾਰ ਤੋਂ ਵੱਖ ਹੁੰਦੀ ਹੈ। ਸਾਰਾ ਧਿਆਨ ਕੁਟੰਬ ਉੱਤੇ ਲੱਗ ਸਕਦਾ ਹੈ, ਪਰ ਭਾਈ-ਬੰਧ ਉਸ ਟਿਕਾਊ ਆਸਰੇ ਦੀ ਥਾਂ ਨਹੀਂ ਲੈ ਸਕਦੇ ਜਿਸ ਨੂੰ ਭੁਲਾ ਦਿੱਤਾ। ਰਿਸ਼ਤੇਦਾਰਾਂ ਵਾਲੀ ਪੜ੍ਹਤ ਅੰਤਲੇ ਬੋਲਾਂ ਨੂੰ ਪਹਿਲੀ ਤੁਕ ਦੇ ਕੁਟੰਬ ਨਾਲ ਸਿੱਧਾ ਜੋੜਦੀ ਹੈ। ਧੰਧਿਆਂ ਵਿੱਚ ਰਹਿ ਜਾਣ ਦੀ ਠੀਕ ਅੰਤਲੀ ਹਾਲਤ ਹਾਲੇ ਭਾਵਾਰਥ ਮੰਗਦੀ ਹੈ। ਸਪਸ਼ਟ ਗੱਲ ਅਸੰਤੁਲਨ ਹੈ: ਸੰਭਾਲ ਪੂਰੀ ਤਰ੍ਹਾਂ ਰੁਝੇਵਿਆਂ ਵਿੱਚ ਡੁੱਬਣਾ ਬਣੀ ਅਤੇ ਨਾਲ ਚੱਲਣ ਵਾਲਾ ਸਿਮਰਨ ਛੱਡਿਆ ਗਿਆ।",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "study.interpretationCare",
+      "before": "The last word's exact sense is provisional; retain the clear contrast between abandoning remembrance and absorbed household effort.",
+      "after": "Sahib Singh reads the ending as spiritual death from which relatives cannot rescue the person. This is a named contextual reading; the verse does not reject family responsibilities.",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "study.interpretationCarePa",
+      "before": "ਅੰਤਲੇ ਸ਼ਬਦ ਦਾ ਠੀਕ ਅਰਥ ਅਜੇ ਪ੍ਰਸਤਾਵਿਤ ਹੈ; ਸਿਮਰਨ ਛੱਡਣ ਅਤੇ ਧੰਧਿਆਂ ਵਿੱਚ ਡੁੱਬਣ ਦਾ ਸਪਸ਼ਟ ਫ਼ਰਕ ਰੱਖੋ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਅੰਤ ਨੂੰ ਆਤਮਕ ਮੌਤ ਪੜ੍ਹਦੇ ਹਨ ਜਿਸ ਤੋਂ ਰਿਸ਼ਤੇਦਾਰ ਬਚਾ ਨਹੀਂ ਸਕਦੇ। ਇਹ ਨਾਮਿਤ ਪ੍ਰਸੰਗਕ ਪੜ੍ਹਤ ਹੈ; ਤੁਕ ਘਰੇਲੂ ਜ਼ਿੰਮੇਵਾਰੀਆਂ ਨਹੀਂ ਰੱਦ ਕਰਦੀ।",
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 106,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1370&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 106, Ang 1370",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 106; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1370&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 106, Ang 1370",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 106; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1370.html",
+          "title": "Professor Sahib Singh, Sri Guru Granth Darpan — contextual check for Salok 106",
+          "scope": "Limited grammar/context check for ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ and the limits of family support; no commentary narrative reproduced."
+        }
+      ],
+      "reason": "The draft fixes ਭਾਈ as direct address and ਬੰਧੁ as an abstract bond, losing the natural brothers-and-kin reading. The revision preserves household work and remembrance while making the family-support clause explicit and keeping the final-state nuance qualified.",
+      "sourceBasis": "Salok 106, Ang 1370: ਭਾਈ ਰਹਿਆ ਨ ਬੰਧੁ follows absorption in household affairs. Sahib Singh, Darpan 1370, reads relatives as unable to rescue the spiritually depleted person. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The stake is an image of precarious risk.",
+      "after": "The stake can depict the demanding path of remembrance named in line 1, rather than a separate worldly activity.",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": "ਸੂਲੀ ਬੜੀ ਖ਼ਤਰਨਾਕ ਅਸਥਿਰਤਾ ਦਾ ਚਿੱਤਰ ਹੈ।",
+      "after": "ਸੂਲੀ ਪਹਿਲੀ ਤੁਕ ਦੇ ਸਿਮਰਨ ਦੀ ਔਖੀ ਨਿਭਾਈ ਦਾ ਚਿੱਤਰ ਹੋ ਸਕਦੀ ਹੈ, ਵੱਖਰੀ ਸੰਸਾਰੀ ਚਲਾਕੀ ਦਾ ਨਹੀਂ।",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "simple.en",
+      "before": "Heartfelt remembrance is contrasted with cleverness that leaves life dangerously exposed.",
+      "after": "Remembering Hari in the heart is the highest wisdom. The stake image expresses its demanding seriousness and the lack of refuge in falling away.",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "simple.pa",
+      "before": "ਹਿਰਦੇ ਦਾ ਸਿਮਰਨ ਉਸ ਚਲਾਕੀ ਦੇ ਸਾਹਮਣੇ ਹੈ ਜੋ ਜੀਵਨ ਨੂੰ ਖ਼ਤਰੇ ਵਿੱਚ ਛੱਡੇ।",
+      "after": "ਹਿਰਦੇ ਵਿੱਚ ਹਰਿ ਜਪਣਾ ਸਭ ਤੋਂ ਵੱਡੀ ਸਿਆਣਪ ਹੈ। ਸੂਲੀ ਦਾ ਚਿੱਤਰ ਉਸ ਦੀ ਔਖੀ ਨਿਭਾਈ ਅਤੇ ਉਸ ਤੋਂ ਡਿੱਗ ਕੇ ਹੋਰ ਆਸਰਾ ਨਾ ਰਹਿਣ ਨੂੰ ਖੋਲ੍ਹਦਾ ਹੈ।",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "study.closeReading",
+      "before": "The first line gives wisdom a centre: Hari remembered in the heart. The second supplies a striking contrast, someone playing where a fall has no safe landing. Skill alone cannot remove the danger created by that position. Read after the warnings about substitute rites, the image questions reliance upon clever arrangements that leave the deeper problem untouched. Remembrance is not presented as one more trick among them. It changes the basis on which the seeker stands and the meaning of being wise.",
+      "after": "The first line calls remembrance of Hari the highest wisdom. The next image does not make that wisdom effortless: playing upon a stake is demanding, and falling offers no secure resting place. Read together, the lines join a clear spiritual aim with the seriousness of remaining faithful to it. This is the relation emphasized in Sahib Singh's interpretation. The draft should therefore avoid assigning the stake confidently to worldly cleverness. The disturbing image belongs to the passage's account of remembrance, not to a physical practice to perform.",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਸਿਆਣਪ ਦਾ ਕੇਂਦਰ ਹਿਰਦੇ ਦੇ ਹਰਿ-ਚੇਤੇ ਵਿੱਚ ਰੱਖਦੀ ਹੈ। ਦੂਜੀ ਉਸ ਦੇ ਸਾਹਮਣੇ ਤਿੱਖਾ ਚਿੱਤਰ ਲਿਆਉਂਦੀ ਹੈ: ਅਜਿਹੀ ਥਾਂ ਖੇਡਣਾ ਜਿੱਥੇ ਡਿੱਗਿਆਂ ਸਹਾਰਾ ਨਹੀਂ। ਹੁਨਰ ਇਕੱਲਾ ਉਸ ਥਾਂ ਦੇ ਖ਼ਤਰੇ ਨੂੰ ਨਹੀਂ ਮਿਟਾਉਂਦਾ। ਪਹਿਲੇ ਕਰਮਕਾਂਡ ਵਾਲੇ ਸਲੋਕਾਂ ਨਾਲ ਪੜ੍ਹਿਆਂ ਇਹ ਚਲਾਕ ਪ੍ਰਬੰਧਾਂ ਦੇ ਭਰੋਸੇ ਨੂੰ ਪੁੱਛਦਾ ਹੈ ਜੋ ਡੂੰਘਾ ਮਸਲਾ ਅਣਛੁਹਿਆ ਛੱਡਦੇ ਹਨ। ਸਿਮਰਨ ਉਹਨਾਂ ਵਿੱਚ ਇਕ ਹੋਰ ਚਾਲ ਨਹੀਂ। ਉਹ ਖੋਜੀ ਦੇ ਖੜ੍ਹਨ ਦੀ ਬੁਨਿਆਦ ਅਤੇ ਸਿਆਣਾ ਹੋਣ ਦਾ ਅਰਥ ਬਦਲਦਾ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਹਰਿ ਦਾ ਸਿਮਰਨ ਸਭ ਤੋਂ ਵੱਡੀ ਸਿਆਣਪ ਆਖਦੀ ਹੈ। ਅਗਲਾ ਚਿੱਤਰ ਇਸ ਸਿਆਣਪ ਨੂੰ ਸੌਖੀ ਕਰਨੀ ਨਹੀਂ ਬਣਾਉਂਦਾ: ਸੂਲੀ ਉੱਤੇ ਖੇਡਣਾ ਔਖਾ ਹੈ ਅਤੇ ਡਿੱਗਿਆਂ ਟਿਕਣ ਦਾ ਪੱਕਾ ਆਸਰਾ ਨਹੀਂ। ਇਕੱਠੇ ਪੜ੍ਹਿਆਂ ਤੁਕਾਂ ਸਪਸ਼ਟ ਆਤਮਕ ਮਕਸਦ ਨਾਲ ਉਸ ਉੱਤੇ ਨਿਭਣ ਦੀ ਗੰਭੀਰਤਾ ਜੋੜਦੀਆਂ ਹਨ। ਸਾਹਿਬ ਸਿੰਘ ਦੀ ਪੜ੍ਹਤ ਇਸੇ ਨਾਤੇ ਉੱਤੇ ਜ਼ੋਰ ਦਿੰਦੀ ਹੈ। ਇਸ ਲਈ ਸੂਲੀ ਨੂੰ ਪੱਕੇ ਤੌਰ ਤੇ ਸੰਸਾਰੀ ਚਲਾਕੀ ਦਾ ਚਿੱਤਰ ਨਹੀਂ ਆਖਣਾ। ਤਿੱਖਾ ਦ੍ਰਿਸ਼ ਸਿਮਰਨ ਦੀ ਵਿਆਖਿਆ ਦਾ ਹੈ, ਅਮਲ ਕਰਨ ਵਾਲਾ ਸਰੀਰਕ ਕਰਮ ਨਹੀਂ।",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "study.interpretationCare",
+      "before": "The pointed stake is the stated image; replacing it with a comfortable balancing exercise would weaken the warning.",
+      "after": "Sahib Singh connects the stake to remembrance itself. Keep that attribution visible; the compressed comparison needs qualified review rather than reversal into a different activity.",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "study.interpretationCarePa",
+      "before": "ਦਿੱਤਾ ਚਿੱਤਰ ਸੂਲੀ ਦਾ ਹੈ; ਇਸ ਨੂੰ ਸੌਖੀ ਸੰਤੁਲਨ ਕਸਰਤ ਬਣਾਉਣ ਨਾਲ ਚੇਤਾਵਨੀ ਕਮਜ਼ੋਰ ਹੋਵੇਗੀ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਸੂਲੀ ਨੂੰ ਸਿਮਰਨ ਨਾਲ ਹੀ ਜੋੜਦੇ ਹਨ। ਇਹ ਨਾਮਿਤ ਪੜ੍ਹਤ ਸਪਸ਼ਟ ਰੱਖੋ; ਸੰਖੇਪ ਤੁਲਨਾ ਯੋਗ ਸਮੀਖਿਆ ਮੰਗਦੀ ਹੈ, ਉਸ ਨੂੰ ਹੋਰ ਕਰਨੀ ਵੱਲ ਉਲਟਣਾ ਨਹੀਂ।",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "study.reflection",
+      "before": "Which clever arrangement in my life leaves the real need for Divine reliance unanswered?",
+      "after": "What makes it difficult for me to remain faithful to remembrance even when I recognize its worth?",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "study.reflectionPa",
+      "before": "ਮੇਰੇ ਜੀਵਨ ਦੀ ਕਿਹੜੀ ਚਤੁਰ ਯੋਜਨਾ ਪ੍ਰਭੂ ਦੇ ਆਸਰੇ ਦੀ ਅਸਲੀ ਲੋੜ ਨੂੰ ਅਣਡਿੱਠਾ ਛੱਡਦੀ ਹੈ?",
+      "after": "ਸਿਮਰਨ ਦਾ ਮੁੱਲ ਪਛਾਣਦਿਆਂ ਵੀ ਉਸ ਉੱਤੇ ਨਿਭਣਾ ਮੇਰੇ ਲਈ ਕਿਹੜੀ ਗੱਲ ਔਖੀ ਕਰਦੀ ਹੈ?",
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 109,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1370&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 109, Ang 1370",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 109; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1370&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 109, Ang 1370",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 109; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1370.html",
+          "title": "Professor Sahib Singh, Sri Guru Granth Darpan — contextual check for Salok 109",
+          "scope": "Limited check of how the stake comparison relates to the preceding call to remembrance; no commentary paragraph imported."
+        }
+      ],
+      "reason": "The draft makes the stake a contrast representing worldly cleverness. This reverses the explanatory relation preserved in the traditional reading: the dangerous image conveys the demanding practice of remembrance itself. The revised explanation keeps this as an identified reading and preserves the explicit warning.",
+      "sourceBasis": "Salok 109, Ang 1370: the praise of remembering Hari is immediately followed by the stake image. Sahib Singh, Darpan 1370, interprets the stake as the difficulty of remaining in remembrance, with no alternative refuge when it is abandoned. https://www.gurugranthdarpan.net/1370.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "lines.0.interpretiveCaution",
+      "before": "Sleep is spiritual inattention in this address.",
+      "after": "Sleep pictures spiritual inattention. The force of ਰੋਇ ਭੈ ਦੁਖ is disputed: alongside weeping, Sahib Singh reads an idiom of leaving fear and sorrow behind.",
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": "ਇਸ ਸੰਬੋਧਨ ਵਿੱਚ ਨੀਂਦ ਆਤਮਕ ਬੇਸੁਰਤੀ ਦਾ ਚਿੱਤਰ ਹੈ।",
+      "after": "ਨੀਂਦ ਆਤਮਕ ਬੇਸੁਰਤੀ ਦਾ ਚਿੱਤਰ ਹੈ। ਰੋਇ ਭੈ ਦੁਖ ਦੀ ਪੜ੍ਹਤ ਖੁੱਲ੍ਹੀ ਹੈ: ਰੋਣ ਦੇ ਸ਼ਬਦੀ ਭਾਵ ਨਾਲ ਸਾਹਿਬ ਸਿੰਘ ਡਰ ਤੇ ਦੁੱਖ ਛੱਡਣ ਦਾ ਮੁਹਾਵਰਾ ਲੈਂਦੇ ਹਨ।",
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "study.closeReading",
+      "before": "The opening question challenges a sleep in which spiritual urgency has disappeared. The grave in the second line supplies the reason this comfort is misplaced. Kabir is not describing a distant exception that happens only to others; the coming dwelling belongs to the person addressed. Fear and grief therefore enter the poem as an interruption of complacency. The Salok's force lies in waking before the end, while response is still possible. The following verses give that wakefulness a direction through remembrance and renewed union.",
+      "after": "The grave answers the opening question: a person whose life will end cannot take unawareness as lasting security. The call to awaken is clear, while the phrase about weeping, fear and suffering is compressed. It may be heard as grief interrupting complacency, or read idiomatically as leaving worldly fears and sorrows behind. Neither application should obscure the movement toward wakefulness. The following Saloks make its direction clearer through remembering Murari and returning to the One from whom the person has become separated.",
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲਾ ਸਵਾਲ ਉਸ ਨੀਂਦ ਨੂੰ ਟੋਕਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਆਤਮਕ ਲੋੜ ਦੀ ਤੁਰੰਤਤਾ ਭੁੱਲ ਗਈ ਹੈ। ਦੂਜੀ ਤੁਕ ਦੀ ਕਬਰ ਦੱਸਦੀ ਹੈ ਕਿ ਇਹ ਬੇਫ਼ਿਕਰੀ ਕਿਉਂ ਬੇਥਾਂ ਹੈ। ਕਬੀਰ ਕੋਈ ਦੂਰਲਾ ਵਾਕਿਆ ਨਹੀਂ ਦੱਸਦਾ ਜੋ ਸਿਰਫ਼ ਹੋਰਾਂ ਨਾਲ ਹੋਵੇ; ਅੱਗੇਲਾ ਵਾਸਾ ਸੰਬੋਧਿਤ ਬੰਦੇ ਦਾ ਆਪਣਾ ਹੈ। ਡਰ ਅਤੇ ਦੁੱਖ ਇਸ ਲਈ ਬੇਸੁਰਤੀ ਤੋੜਣ ਵਾਂਗ ਆਉਂਦੇ ਹਨ। ਜ਼ੋਰ ਅੰਤ ਤੋਂ ਪਹਿਲਾਂ ਜਾਗਣ ਉੱਤੇ ਹੈ ਜਦੋਂ ਜਵਾਬ ਦੇਣਾ ਹਾਲੇ ਸੰਭਵ ਹੈ। ਅਗਲੇ ਸਲੋਕ ਸਿਮਰਨ ਅਤੇ ਮੁੜ ਮਿਲਾਪ ਰਾਹੀਂ ਇਸ ਜਾਗ ਨੂੰ ਦਿਸ਼ਾ ਦਿੰਦੇ ਹਨ।",
+      "after": "ਕਬਰ ਪਹਿਲੇ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦਿੰਦੀ ਹੈ: ਜਿਸ ਦਾ ਜੀਵਨ ਮੁੱਕਣਾ ਹੈ ਉਹ ਬੇਸੁਰਤੀ ਨੂੰ ਸਦੀਵੀ ਬਚਾਅ ਨਹੀਂ ਮੰਨ ਸਕਦਾ। ਜਾਗਣ ਦਾ ਸੱਦਾ ਸਪਸ਼ਟ ਹੈ, ਪਰ ਰੋਣ, ਡਰ ਅਤੇ ਦੁੱਖ ਵਾਲੀ ਗੱਲ ਸੰਖੇਪ ਹੈ। ਇਕ ਪੜ੍ਹਤ ਵਿੱਚ ਦੁੱਖ ਬੇਫ਼ਿਕਰੀ ਤੋੜਦਾ ਹੈ; ਮੁਹਾਵਰੇ ਵਾਲੀ ਪੜ੍ਹਤ ਸੰਸਾਰੀ ਡਰ ਅਤੇ ਦੁੱਖ ਛੱਡਣ ਦੀ ਹੈ। ਕਿਸੇ ਭਾਵਾਰਥ ਨਾਲ ਵੀ ਜਾਗ ਵੱਲ ਦੀ ਚਾਲ ਨਹੀਂ ਗੁੰਮਣੀ ਚਾਹੀਦੀ। ਅਗਲੇ ਸਲੋਕ ਮੁਰਾਰਿ ਦੇ ਸਿਮਰਨ ਅਤੇ ਜਿਸ ਤੋਂ ਵਿਛੋੜਾ ਹੋਇਆ ਉਸੇ ਨਾਲ ਮੁੜ ਜੁੜਨ ਰਾਹੀਂ ਇਸ ਦੀ ਦਿਸ਼ਾ ਹੋਰ ਸਪਸ਼ਟ ਕਰਦੇ ਹਨ।",
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "study.interpretationCare",
+      "before": "Read the sleep metaphor with128–129, where wakefulness turns toward Murari and reunion.",
+      "after": "Sahib Singh reads ਰੋਇ ਭੈ ਦੁਖ idiomatically as relinquishing fear and sorrow. Retain this alternative beside the literal weeping wording and read 127–129 together.",
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "study.interpretationCarePa",
+      "before": "ਨੀਂਦ ਦਾ ਰੂਪਕ ੧੨੮–੧੨੯ ਨਾਲ ਪੜ੍ਹੋ, ਜਿੱਥੇ ਜਾਗ ਮੁਰਾਰਿ ਅਤੇ ਮਿਲਾਪ ਵੱਲ ਜਾਂਦੀ ਹੈ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਰੋਇ ਭੈ ਦੁਖ ਨੂੰ ਡਰ ਅਤੇ ਦੁੱਖ ਛੱਡਣ ਦਾ ਮੁਹਾਵਰਾ ਪੜ੍ਹਦੇ ਹਨ। ਸ਼ਬਦੀ ਰੋਣ ਵਾਲੀ ਪੜ੍ਹਤ ਨਾਲ ਇਹ ਵਿਕਲਪ ਵੀ ਰੱਖੋ ਅਤੇ ੧੨੭–੧੨੯ ਇਕੱਠੇ ਪੜ੍ਹੋ।",
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 127,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1371&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 127, Ang 1371",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 127; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1371&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 127, Ang 1371",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 127; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1371.html",
+          "title": "Professor Sahib Singh, Sri Guru Granth Darpan — contextual check for Salok 127",
+          "scope": "Limited idiom check for ਰੋਇ ਭੈ ਦੁਖ and its comparison with Salok72; no commentary prose reproduced."
+        }
+      ],
+      "reason": "The draft settles ਰੋਇ ਭੈ ਦੁਖ as cultivating grief over fear and suffering. A named idiomatic reading takes it as relinquishing fear and suffering. Preserve the literal wording while preventing the whole explanation from treating emotional distress as the settled aim.",
+      "sourceBasis": "Salok 127, Ang 1371: the imperative ਜਾਗੁ and grave image make awakening explicit; the force of ਰੋਇ ਭੈ ਦੁਖ is compressed. Sahib Singh, Darpan 1371, refers to Salok72 and reads the phrase idiomatically as releasing worldly fear and sorrow. https://www.gurugranthdarpan.net/1371.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "lines.0.interpretiveCaution",
+      "before": "This is a fragrance-and-attraction image, not a literal bodily transformation.",
+      "after": "This follows the poet-reference reading of ਕਬੀਰੁ. Sahib Singh instead takes the word in its Great-One/Divine sense; the fragrance image is figurative in either reading.",
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": "ਇਹ ਸੁਗੰਧ ਅਤੇ ਖਿੱਚ ਦਾ ਚਿੱਤਰ ਹੈ, ਤਨ ਦਾ ਅਸਲੀ ਬਦਲਾਅ ਨਹੀਂ।",
+      "after": "ਇਹ ਕਬੀਰੁ ਨੂੰ ਕਵੀ ਦਾ ਸੰਕੇਤ ਮੰਨਦੀ ਪੜ੍ਹਤ ਹੈ। ਸਾਹਿਬ ਸਿੰਘ ਇਸ ਨੂੰ ਮਹਾਨ ਪ੍ਰਭੂ ਦੇ ਭਾਵ ਵਿੱਚ ਲੈਂਦੇ ਹਨ; ਦੋਵੇਂ ਪੜ੍ਹਤਾਂ ਵਿੱਚ ਸੁਗੰਧ ਦਾ ਚਿੱਤਰ ਰੂਪਕ ਹੈ।",
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "study.closeReading",
+      "before": "Musk and bees give the first line a language of attraction. The second explains what matters within that attraction: devotion and Ram's abiding. The speaker is not simply celebrating a larger following. The fragrance image makes influence arise from what has inwardly developed, while the final name prevents the attention from ending with the admired devotee. Read beside earlier criticism of gathering disciples without befriending Keso, this Salok distinguishes attraction rooted in devotion from influence that replaces devotion with its own importance.",
+      "after": "Musk and bees provide an image of fragrance and attraction. The second line links that attraction with devotion and Ram's abiding. If Kabir names the poet here, the image describes a devotee's influence grounded in devotion. If the name carries the Great-One sense, the Divine is the fragrance drawing the devotees. These readings differ, but both keep devotion and Divine abiding at the centre. The simple lines above follow the poet-reference reading provisionally; the alternative should remain visible until the grammar and theology receive qualified review.",
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "study.closeReadingPa",
+      "before": "ਕਸਤੂਰੀ ਅਤੇ ਭੌਰੇ ਪਹਿਲੀ ਤੁਕ ਨੂੰ ਖਿੱਚ ਦੀ ਬੋਲੀ ਦਿੰਦੇ ਹਨ। ਦੂਜੀ ਦੱਸਦੀ ਹੈ ਕਿ ਇਸ ਖਿੱਚ ਦੇ ਅੰਦਰ ਮੁੱਖ ਕੀ ਹੈ: ਭਗਤੀ ਅਤੇ ਰਾਮ ਦਾ ਨਿਵਾਸ। ਗੱਲ ਕੇਵਲ ਚੇਲੇ ਵਧਣ ਦੀ ਖ਼ੁਸ਼ੀ ਨਹੀਂ। ਸੁਗੰਧ ਦਾ ਚਿੱਤਰ ਅਸਰ ਨੂੰ ਅੰਦਰ ਉੱਗੇ ਗੁਣ ਨਾਲ ਜੋੜਦਾ ਹੈ ਅਤੇ ਅੰਤਲਾ ਨਾਮ ਧਿਆਨ ਨੂੰ ਸਲਾਹੇ ਭਗਤ ਉੱਤੇ ਹੀ ਨਹੀਂ ਰੁਕਣ ਦਿੰਦਾ। ਪਹਿਲਾਂ ਕੇਸੋ ਦੀ ਮਿੱਤਰਤਾ ਤੋਂ ਬਿਨਾ ਚੇਲੇ ਇਕੱਠੇ ਕਰਨ ਵਾਲੀ ਟੋਕ ਨਾਲ ਇਹ ਫ਼ਰਕ ਖੁੱਲ੍ਹਦਾ ਹੈ: ਇਕ ਖਿੱਚ ਭਗਤੀ ਤੋਂ ਹੈ, ਦੂਜੀ ਭਗਤੀ ਦੀ ਥਾਂ ਆਪਣਾ ਵੱਡੇਪਣ ਰੱਖ ਸਕਦੀ ਹੈ।",
+      "after": "ਕਸਤੂਰੀ ਅਤੇ ਭੌਰੇ ਸੁਗੰਧ ਅਤੇ ਖਿੱਚ ਦਾ ਚਿੱਤਰ ਦਿੰਦੇ ਹਨ। ਦੂਜੀ ਤੁਕ ਇਸ ਨੂੰ ਭਗਤੀ ਅਤੇ ਰਾਮ ਦੇ ਨਿਵਾਸ ਨਾਲ ਜੋੜਦੀ ਹੈ। ਕਬੀਰ ਨੂੰ ਕਵੀ ਦਾ ਨਾਮ ਲੈਣ ਨਾਲ ਚਿੱਤਰ ਭਗਤੀ ਵਿੱਚ ਟਿਕੇ ਭਗਤ ਦੇ ਅਸਰ ਦਾ ਬਣਦਾ ਹੈ। ਮਹਾਨ ਪ੍ਰਭੂ ਵਾਲਾ ਭਾਵ ਲੈਣ ਨਾਲ ਪ੍ਰਭੂ ਦੀ ਸੁਗੰਧ ਭਗਤਾਂ ਨੂੰ ਖਿੱਚਦੀ ਹੈ। ਇਹ ਪੜ੍ਹਤਾਂ ਵੱਖ ਹਨ, ਪਰ ਦੋਵੇਂ ਭਗਤੀ ਅਤੇ ਪ੍ਰਭੂ ਦੇ ਨਿਵਾਸ ਨੂੰ ਕੇਂਦਰ ਵਿੱਚ ਰੱਖਦੀਆਂ ਹਨ। ਉੱਪਰਲੇ ਸਰਲ ਅਰਥ ਅਜੇ ਕਵੀ ਵਾਲੀ ਪੜ੍ਹਤ ਲੈਂਦੇ ਹਨ; ਵਿਆਕਰਨ ਅਤੇ ਧਾਰਮਿਕ ਭਾਵ ਦੀ ਯੋਗ ਸਮੀਖਿਆ ਤੱਕ ਦੂਜਾ ਵਿਕਲਪ ਵੀ ਸਪਸ਼ਟ ਰਹੇ।",
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "study.interpretationCare",
+      "before": "The increasing language is devotional relation, not a numerical formula for acquiring Divine favour.",
+      "after": "Sahib Singh reads both Kabir expressions in the Divine sense. The poet-reference reading used in the simple draft remains provisional; neither turns increasing devotion into a numerical formula.",
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "study.interpretationCarePa",
+      "before": "ਵਧਣ ਦੀ ਬੋਲੀ ਭਗਤੀ ਦੇ ਨਾਤੇ ਦੀ ਹੈ, ਪ੍ਰਭੂ ਦੀ ਮਿਹਰ ਖ਼ਰੀਦਣ ਦਾ ਗਿਣਤੀ ਵਾਲਾ ਫ਼ਾਰਮੂਲਾ ਨਹੀਂ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਕਬੀਰ ਵਾਲੇ ਦੋਵੇਂ ਵਰਤਾਰੇ ਪ੍ਰਭੂ ਦੇ ਭਾਵ ਵਿੱਚ ਪੜ੍ਹਦੇ ਹਨ। ਸਰਲ ਖਰੜੇ ਦੀ ਕਵੀ ਵਾਲੀ ਪੜ੍ਹਤ ਅਜੇ ਪ੍ਰਸਤਾਵਿਤ ਹੈ; ਕੋਈ ਪੜ੍ਹਤ ਵਧਦੀ ਭਗਤੀ ਨੂੰ ਗਿਣਤੀ ਦਾ ਫ਼ਾਰਮੂਲਾ ਨਹੀਂ ਬਣਾਉਂਦੀ।",
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 141,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1371&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 141, Ang 1371",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 141; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1372&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 141, Ang 1372",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 141; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1371&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 141, Ang 1371",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 141; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1372&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 141, Ang 1372",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 141; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1372.html",
+          "title": "Professor Sahib Singh, Sri Guru Granth Darpan — contextual check for Salok 141",
+          "scope": "Limited alternative-reading check for ਕਬੀਰੁ and ਕਬੀਰ ਕੀ; no modern translation paragraph imported."
+        }
+      ],
+      "reason": "The draft treats ਕਬੀਰੁ and ਕਬੀਰ ਕੀ as unambiguously referring to the poet and his following. A substantial named reading takes Kabir here in the Great-One/Divine sense. Make the selected reading and its alternative explicit rather than presenting a theological choice as fixed grammar.",
+      "sourceBasis": "Salok 141 spans Ang1371–1372. Sahib Singh, Darpan1372, reads ਕਬੀਰੁ as the Divine and ਕਬੀਰ ਕੀ ਭਗਤਿ as devotion to the Divine. The poet-reference remains a possible reading, but is not the sole attested one. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 144,
+      "field": "study.interpretationCare",
+      "before": "The final garment belongs to the poetic death scene; do not invent a particular funeral event.",
+      "after": "The simple draft takes ਲੰਗੋਟੀ as a loincloth. Sahib Singh instead reads a money-belt image. Both stress dispossession; neither establishes a specific funeral incident.",
+      "reason": "The final garment is treated as an uncontested death-scene detail. A named alternative understands ਲੰਗੋਟੀ through a money belt. Keep the direct loincloth wording but disclose the alternative and avoid turning either into a historical funeral practice.",
+      "sourceBasis": "Salok144, Ang1372: accumulation, departure and ਲਈ ਲੰਗੋਟੀ ਤੋਰਿ are explicit. Sahib Singh, Darpan1372, discusses a money belt rather than literal removal of a dead person’s loincloth. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 144,
+      "field": "study.interpretationCarePa",
+      "before": "ਅੰਤਲਾ ਕੱਪੜਾ ਕਾਵਿਕ ਮੌਤ-ਦ੍ਰਿਸ਼ ਦਾ ਹੈ; ਕੋਈ ਖ਼ਾਸ ਅੰਤਿਮ ਸੰਸਕਾਰ ਨਾ ਘੜੋ।",
+      "after": "ਸਰਲ ਖਰੜਾ ਲੰਗੋਟੀ ਨੂੰ ਤੇੜ ਦਾ ਕੱਪੜਾ ਲੈਂਦਾ ਹੈ। ਸਾਹਿਬ ਸਿੰਘ ਇਸ ਦੀ ਥਾਂ ਧਨ ਬੰਨ੍ਹਣ ਵਾਲੀ ਥੈਲੀ ਦਾ ਚਿੱਤਰ ਪੜ੍ਹਦੇ ਹਨ। ਦੋਵੇਂ ਖੋਹ ਦਾ ਭਾਵ ਦਿੰਦੇ ਹਨ; ਕੋਈ ਖ਼ਾਸ ਅੰਤਿਮ ਸੰਸਕਾਰ ਸਾਬਤ ਨਹੀਂ ਹੁੰਦਾ।",
+      "reason": "The final garment is treated as an uncontested death-scene detail. A named alternative understands ਲੰਗੋਟੀ through a money belt. Keep the direct loincloth wording but disclose the alternative and avoid turning either into a historical funeral practice.",
+      "sourceBasis": "Salok144, Ang1372: accumulation, departure and ਲਈ ਲੰਗੋਟੀ ਤੋਰਿ are explicit. Sahib Singh, Darpan1372, discusses a money belt rather than literal removal of a dead person’s loincloth. https://www.gurugranthdarpan.net/1372.html"
+    },
+    {
+      "ordinal": 144,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1372&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 144, Ang 1372",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 144; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1372&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji — Salok Bhagat Kabir Ji 144, Ang 1372",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 144; English and Punjabi teaching text is an original unreviewed draft, not an imported translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1372.html",
+          "title": "Professor Sahib Singh, Sri Guru Granth Darpan — contextual check for Salok 144",
+          "scope": "Limited comparison of ਲੰਗੋਟੀ as loincloth and the attributed money-belt interpretation; no historical funeral claim made."
+        }
+      ],
+      "reason": "The final garment is treated as an uncontested death-scene detail. A named alternative understands ਲੰਗੋਟੀ through a money belt. Keep the direct loincloth wording but disclose the alternative and avoid turning either into a historical funeral practice.",
+      "sourceBasis": "Salok144, Ang1372: accumulation, departure and ਲਈ ਲੰਗੋਟੀ ਤੋਰਿ are explicit. Sahib Singh, Darpan1372, discusses a money belt rather than literal removal of a dead person’s loincloth. https://www.gurugranthdarpan.net/1372.html"
+    }
+  ],
+  "remainingQualifiedReviewConcerns": [
+    {
+      "ordinal": 85,
+      "concern": "Sensitive sati image and address; draft distinguishes depiction from instruction."
+    },
+    {
+      "ordinal": 91,
+      "concern": "Numeric riddle has no settled explicit referent list; retain attributed provisional status."
+    },
+    {
+      "ordinal": 104,
+      "concern": "Severe idiom and criticism of failed religious teaching require contextual review."
+    },
+    {
+      "ordinal": 107,
+      "concern": "Identification of the night rite is attributed rather than treated as explicit wording."
+    },
+    {
+      "ordinal": 115,
+      "concern": "Biographical Kamal versus inward interpretation remains unresolved."
+    },
+    {
+      "ordinal": 118,
+      "concern": "Compressed death, tense and gesture scene remains attributed and provisional."
+    },
+    {
+      "ordinal": 124,
+      "concern": "Rain and chatrik may carry richer devotional mapping than the image-first draft supplies."
+    },
+    {
+      "ordinal": 126,
+      "concern": "Already-separated conch addressed to remain in the ocean has compressed temporal force."
+    },
+    {
+      "ordinal": 152,
+      "concern": "River symbolism and sahaj sunn require qualified theological interpretation."
+    },
+    {
+      "ordinal": 153,
+      "concern": "Unstated referent/tenderness reading is explicitly attributed, not canonical wording."
+    },
+    {
+      "ordinal": 158,
+      "concern": "Bamboo mechanism remains unspecified; draft does not invent knots or flute details."
+    }
+  ],
+  "mechanicalVerification": {
+    "entries": 81,
+    "allRequestedOrdinalsPresent": true,
+    "allEntriesTwoLines": true,
+    "allVocabularyFoundInOriginalSalok": true,
+    "primaryReferenceAngCoverageMatchesSource": true,
+    "sourceAndAuthorFilesModified": false
+  }
+}

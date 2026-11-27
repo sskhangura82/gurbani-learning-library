@@ -1,0 +1,22 @@
+{
+  "createdAt": "2026-11-27T02:08:18.448551+00:00",
+  "runtimeSha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+  "results": [
+    {
+      "command": [
+        "node",
+        "tests/reader-sri-browser.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020808Z-final-script-browser/reader-sri-browser.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/source-integrity-browser.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020808Z-final-script-browser/source-integrity-browser.log"
+    }
+  ]
+}

@@ -42,3 +42,13 @@ button,a,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,
 .sukhmani-home-link{display:block;margin-top:16px;padding:24px 28px;border:1px solid var(--line);border-radius:19px;background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow)}
 .sukhmani-home-link:hover{border-color:var(--gold)}.sukhmani-home-link h2{font:clamp(27px,4vw,36px)/1.3 Georgia,serif;margin:9px 0}.sukhmani-home-link h2 span{float:right;color:var(--gold);font-size:26px}.sukhmani-home-link p{font-size:14px;color:var(--muted);margin:8px 0}.sukhmani-home-link .card-foot{margin-top:12px}
 @media(max-width:620px){.sukhmani-home-link{padding:20px;margin-top:12px}.sukhmani-home-link p{font-size:13px}.sukhmani-home-link .section-kicker{font-size:10px}}
+
+/* A separate optional tool, outside the scripture and Simran destinations. */
+.personal-tools{max-width:860px;margin:38px auto 0;padding-top:20px;border-top:1px solid var(--line)}
+.personal-tool-link{display:block;padding:23px 28px;border:1px solid var(--line);border-radius:19px;background:var(--surface);color:var(--ink);text-decoration:none}
+.personal-tool-link:hover{border-color:var(--gold)}
+.personal-tool-link h2{font:clamp(26px,4vw,34px)/1.3 Georgia,serif;margin:9px 0}
+.personal-tool-link h2 span{float:right;color:var(--gold)}
+.personal-tool-link p{font-size:14px;color:var(--muted);margin:8px 0}
+.personal-tool-link .card-foot{margin-top:12px}
+@media(max-width:620px){.personal-tools{margin-top:28px}.personal-tool-link{padding:20px}.personal-tool-link p{font-size:13px}}

@@ -1,0 +1,108 @@
+name: Learning reliability and separate practice tools
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Scripture, retained learning and storage boundaries
+        run: |
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/japji-retained-learning.mjs
+          node --test tests/source-integrity.mjs
+          node tests/r7-contract.mjs
+          node tests/nitnem-content.mjs
+          node tests/nitnem-learning.mjs
+          node tests/nitnem-backup-capacity.mjs
+          node tests/nitnem-storage-quota.mjs
+          node tests/nitnem-ui-lifecycle.mjs
+          node tests/salok-mahalla9-content.mjs
+          node tests/salok-kabir-content.mjs
+          node tests/salok-kabir-bindings.mjs
+          node tests/service-worker.mjs
+      - name: Verify reproducible shared-script pins and complete offline shell
+        run: |
+          node tools/refresh-salok-mahalla9-sri.mjs
+          node tools/refresh-salok-kabir-sri.mjs
+          node tools/build-offline.mjs
+          git diff --exit-code -- salok-mahalla9/index.html salok-kabir/index.html sw.js
+          node --check js/japji-full.js
+          node --check js/simran.js
+          node --check js/breathing-core.js
+          node --check js/breathing.js
+          node --check nitnem/local-learning.js
+  focused-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The Simran preservation/baseline check reads its frozen parent files.
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Chromium and Gurmukhi fonts
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Reader return, native quota, silent sitting, physiology tool and offline navigation
+        run: |
+          ENGINE=chromium node tests/japji-history-browser.mjs
+          node tests/nitnem-storage-quota-browser.mjs
+          node tests/simran-session-browser.mjs
+          node tests/breathing-browser.mjs
+          node tests/learning-practice-offline.mjs
+      - name: Retain focused evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-practice-focused-evidence
+          path: |
+            evidence/japji-history/
+            evidence/storage-quota/
+            evidence/simran-session/
+            evidence/breathing/
+            evidence/learning-practice/
+          if-no-files-found: warn
+  shared-readers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Chromium and Gurmukhi fonts
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Existing Nitnem and Salok readers retain reading, source checks and learning
+        run: |
+          node tests/nitnem-browser.mjs
+          node tests/salok-mahalla9-browser.mjs
+          node tests/salok-kabir-browser.mjs
+          node tests/source-integrity-browser.mjs
+      - name: Retain shared-reader evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-practice-shared-reader-evidence
+          path: |
+            evidence/nitnem-browser-verification.json
+            evidence/screenshots/nitnem/
+            evidence/salok-mahalla9/
+            evidence/salok-kabir/
+            evidence/source-integrity-browser-verification.json
+          if-no-files-found: warn

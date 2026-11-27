@@ -1,0 +1,47 @@
+{
+  "applicationHead": "da9fe489921addc33591f25204a9bbf07d40ef6f",
+  "checkedAtUtc": "2026-11-27T21:08:24.871913+00:00",
+  "fixtureChange": "One-line default-root path normalization after initial fixture404; application bytes unchanged",
+  "fixtureSha256": "36bc3e036d33f397a4f466e4597815f11d9889460fde7c710c7417d7a4502b52",
+  "nodeVersion": "v22.15.0",
+  "chromeVersion": "Google Chrome 158.0.8127.37",
+  "playwrightVersion": "1.62.1",
+  "profile": "Fresh temporary headless context for every suite",
+  "privateInputs": "No actual password; actual ciphertext URL refused by navigationfixture before file read",
+  "run1": {
+    "head": "da9fe489921addc33591f25204a9bbf07d40ef6f",
+    "results": [
+      {
+        "test": "tests/private-library-navigation-smoke.mjs",
+        "exitCode": 1,
+        "seconds": 0.97,
+        "log": "/tmp/glp-final-browser-y5b4ko9n/run-1/private-library-navigation-smoke.log"
+      },
+      {
+        "test": "tests/library-script-integrity-browser.mjs",
+        "exitCode": 0,
+        "seconds": 2.66,
+        "log": "/tmp/glp-final-browser-y5b4ko9n/run-1/library-script-integrity-browser.log"
+      },
+      {
+        "test": "tests/knowledge-integration-browser.mjs",
+        "exitCode": 0,
+        "seconds": 3.14,
+        "log": "/tmp/glp-final-browser-y5b4ko9n/run-1/knowledge-integration-browser.log"
+      },
+      {
+        "test": "tests/library-script-integrity-offline.mjs",
+        "exitCode": 0,
+        "seconds": 4.88,
+        "log": "/tmp/glp-final-browser-y5b4ko9n/run-1/library-script-integrity-offline.log"
+      }
+    ]
+  },
+  "navigationRerun": {
+    "test": "tests/private-library-navigation-smoke.mjs",
+    "exitCode": 0,
+    "seconds": 1.47,
+    "applicationHead": "da9fe489921addc33591f25204a9bbf07d40ef6f",
+    "fixtureChange": "Normalize default root path; one line only"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "utc": "2026-11-27T05:21:13.320359+00:00",
+  "stage": "precommit working tree; see app graph byte pins",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/hukamnama-foundation-preserved.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "tests/hukamnama-ingest.py"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/hukamnama-json.mjs",
+        "tests/hukamnama-stage-contract.mjs",
+        "tests/hukamnama-delivery.mjs",
+        "tests/hukamnama-learning.mjs",
+        "tests/hukamnama-signing.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/library-script-toolchain-lock.mjs",
+        "tests/library-script-integrity-inputs.mjs",
+        "tests/library-script-integrity.mjs",
+        "tests/library-catalog.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "tools/build-app-bundles.mjs",
+        "--check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "tools/refresh-app-sri.mjs",
+        "--check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 1
+    }
+  ]
+}

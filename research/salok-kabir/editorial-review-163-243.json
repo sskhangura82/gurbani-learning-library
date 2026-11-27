@@ -1,0 +1,1216 @@
+{
+  "schemaVersion": "GLP-001_EDITORIAL_REVIEW_1",
+  "inputFile": "/workspace/scratch/c4badbece609/kabir-build/teaching-163-243.json",
+  "inputSha256": "2e67d8f4b83d93fd5e7023c483f051bcfbca60a06574c044637cac8f8cc331ab",
+  "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+  "sourceSha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05",
+  "reviewerType": "INDEPENDENT_AI_REVIEW_NOT_HUMAN_APPROVAL",
+  "qualifiedHumanReviewed": false,
+  "qualifiedHumanReviewCount": 0,
+  "reviewedOrdinals": [
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243
+  ],
+  "fieldPathConvention": "Ordinal selects the input entry. field uses dot-separated object keys and zero-based array indices within that entry. jsonPointer is supplementary and relative to this frozen 81-entry input array.",
+  "scope": "Independent AI editorial review of all 81 draft entries against the frozen selected Gurmukhi, including Punjabi-English substantive agreement, metaphor, attribution, context and limited named lexical/grammatical checks. Not a theological certification, canonical text authentication, pronunciation assessment or publication approval.",
+  "findings": [
+    {
+      "ordinal": 176,
+      "field": "lines.0.simpleEn",
+      "before": "Kabir: not everyone understands the Creator’s own making.",
+      "after": "Kabir: not everyone recognizes that this, too, is the Creator’s making.",
+      "reason": "The selected commentary reading concerns recognizing that the preceding consuming force is also made by the Creator; general inability to comprehend creation loses that connection.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1373&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 176,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok176",
+          "readWithOrdinal": 175
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1373.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check: the contextual referent of ਸਾਰੀ and the direct assertion of the Creator as its maker."
+        },
+        "decision": "Retain the attributed contextual reading, making its referent explicit rather than changing the claim into general comprehension of creation."
+      },
+      "jsonPointer": "/13/lines/0/simpleEn",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 176,
+      "field": "lines.0.simplePa",
+      "before": "ਕਬੀਰ ਜੀ ਆਖਦੇ ਹਨ: ਸਿਰਜਣਹਾਰ ਦੀ ਬਣਾਈ ਹੋਈ ਇਸ ਖੇਡ ਨੂੰ ਹਰ ਕੋਈ ਨਹੀਂ ਸਮਝਦਾ।",
+      "after": "ਕਬੀਰ ਜੀ ਆਖਦੇ ਹਨ: ਇਹ ਵੀ ਸਿਰਜਣਹਾਰ ਦੀ ਬਣਾਈ ਹੋਈ ਹੈ—ਇਸ ਗੱਲ ਨੂੰ ਹਰ ਕੋਈ ਨਹੀਂ ਜਾਣਦਾ।",
+      "reason": "Punjabi counterpart to the clarified contextual referent.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1373&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 176,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok176",
+          "readWithOrdinal": 175
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1373.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check: the contextual referent of ਸਾਰੀ and the direct assertion of the Creator as its maker."
+        },
+        "decision": "Retain the attributed contextual reading, making its referent explicit rather than changing the claim into general comprehension of creation."
+      },
+      "jsonPointer": "/13/lines/0/simplePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 176,
+      "field": "lines.0.interpretiveCaution",
+      "before": "The object of ਸਾਰੀ is compressed and needs contextual reading.",
+      "after": "In Sahib Singh’s contextual reading, this refers to the consuming fire of Maya described in 175; the referent is supplied from that preceding verse.",
+      "reason": "Identify the selected interpretive referent and distinguish it from an explicitly repeated noun in the verse.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1373&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 176,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok176",
+          "readWithOrdinal": 175
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1373.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check: the contextual referent of ਸਾਰੀ and the direct assertion of the Creator as its maker."
+        },
+        "decision": "Retain the attributed contextual reading, making its referent explicit rather than changing the claim into general comprehension of creation."
+      },
+      "jsonPointer": "/13/lines/0/interpretiveCaution",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 176,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": "ਸਾਰੀ ਨਾਲ ਜੁੜੀ ਗੱਲ ਸੰਖੇਪ ਹੈ; ਪ੍ਰਸੰਗ ਨਾਲ ਪੜ੍ਹਨੀ ਲੋੜੀਂਦੀ ਹੈ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਦੀ ਪ੍ਰਸੰਗਕ ਪੜ੍ਹਤ ਵਿੱਚ ਇਹ ੧੭੫ ਦੀ ਮਾਇਆ ਦੀ ਸਾੜਦੀ ਅੱਗ ਵੱਲ ਸੰਕੇਤ ਹੈ; ਇਹ ਪਾਤਰ ਪਿਛਲੀ ਤੁਕ ਤੋਂ ਲਿਆ ਗਿਆ ਹੈ।",
+      "reason": "Carry the same attributed contextual explanation into Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1373&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 176,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok176",
+          "readWithOrdinal": 175
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1373.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check: the contextual referent of ਸਾਰੀ and the direct assertion of the Creator as its maker."
+        },
+        "decision": "Retain the attributed contextual reading, making its referent explicit rather than changing the claim into general comprehension of creation."
+      },
+      "jsonPointer": "/13/lines/0/interpretiveCautionPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 176,
+      "field": "study.closeReading",
+      "before": "The first line places a limit upon ordinary claims to know the Creator’s making. The second does not answer with a more impressive human title. It names the Master and the servant in the Master’s presence. Knowledge here is relational: the servant remains a servant while receiving understanding. In the preceding verses, coolness and the fire that consumes the world have been central. That context helps the reader hear this brief statement as wonder before the Creator’s working, while its compressed wording still deserves careful grammatical review.",
+      "after": "The first line asks the reader to recognize something about the Creator’s making. In the contextual reading used here, its unstated subject is the consuming fire described in 175: that force, too, belongs to creation. The second line names the Master and the servant who remains in the Master’s presence. The servant’s knowing therefore grows from a relationship of devotion, not from becoming an independent master of creation. This connection with the preceding verse should remain attributed, since the short opening does not repeat the word for fire.",
+      "reason": "Explain the selected reading without making the omitted referent look explicit or merely discussing incomprehensible creation.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1373&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 176,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok176",
+          "readWithOrdinal": 175
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1373.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check: the contextual referent of ਸਾਰੀ and the direct assertion of the Creator as its maker."
+        },
+        "decision": "Retain the attributed contextual reading, making its referent explicit rather than changing the claim into general comprehension of creation."
+      },
+      "jsonPointer": "/13/study/closeReading",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 176,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਸਿਰਜਣਹਾਰ ਦੀ ਰਚਨਾ ਨੂੰ ਜਾਣ ਲੈਣ ਦੇ ਆਮ ਮਨੁੱਖੀ ਦਾਅਵੇ ਦੀ ਹੱਦ ਦੱਸਦੀ ਹੈ। ਦੂਜੀ ਤੁਕ ਹੋਰ ਵੱਡੀ ਮਨੁੱਖੀ ਉਪਾਧੀ ਦੇ ਕੇ ਜਵਾਬ ਨਹੀਂ ਦਿੰਦੀ। ਮਾਲਕ ਅਤੇ ਉਸ ਦੀ ਹਜ਼ੂਰੀ ਦੇ ਦਾਸ ਦਾ ਜ਼ਿਕਰ ਕਰਦੀ ਹੈ। ਇੱਥੇ ਸੂਝ ਸੰਬੰਧ ਰਾਹੀਂ ਮਿਲਦੀ ਹੈ: ਜਾਣਨ ਦੇ ਬਾਵਜੂਦ ਦਾਸ ਦਾਸ ਹੀ ਰਹਿੰਦਾ ਹੈ। ਪਿਛਲੇ ਸਲੋਕਾਂ ਵਿੱਚ ਠੰਢਕ ਅਤੇ ਜਗਤ ਨੂੰ ਸਾੜਦੀ ਅੱਗ ਦੀ ਗੱਲ ਸੀ। ਉਹ ਪ੍ਰਸੰਗ ਇਸ ਸੰਖੇਪ ਉਚਾਰਨ ਨੂੰ ਸਿਰਜਣਹਾਰ ਦੇ ਵਰਤਾਰੇ ਸਾਹਮਣੇ ਅਚਰਜ ਵਜੋਂ ਸੁਣਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਸੰਖੇਪ ਵਿਆਕਰਨ ਦੀ ਧਿਆਨ ਨਾਲ ਸਮੀਖਿਆ ਵੀ ਲੋੜੀਂਦੀ ਰਹਿੰਦੀ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਸਿਰਜਣਹਾਰ ਦੀ ਬਣਾਈ ਗੱਲ ਨੂੰ ਪਛਾਣਨ ਵੱਲ ਤੋਰਦੀ ਹੈ। ਇੱਥੇ ਲਈ ਪ੍ਰਸੰਗਕ ਪੜ੍ਹਤ ਵਿੱਚ ਅਣਕਿਹਾ ਪਾਤਰ ੧੭੫ ਦੀ ਸਾੜਦੀ ਅੱਗ ਹੈ: ਉਹ ਸ਼ਕਤੀ ਵੀ ਸਿਰਜਣਹਾਰ ਦੀ ਰਚਨਾ ਵਿੱਚ ਹੈ। ਦੂਜੀ ਤੁਕ ਮਾਲਕ ਅਤੇ ਉਸ ਦੀ ਹਜ਼ੂਰੀ ਵਿੱਚ ਰਹਿੰਦੇ ਦਾਸ ਨੂੰ ਜਾਣਨ ਵਾਲੇ ਦੱਸਦੀ ਹੈ। ਇਸ ਲਈ ਦਾਸ ਦੀ ਸੂਝ ਭਗਤੀ ਦੇ ਸੰਬੰਧ ਵਿੱਚੋਂ ਆਉਂਦੀ ਹੈ, ਰਚਨਾ ਦਾ ਅਲੱਗ ਮਾਲਕ ਬਣਨ ਤੋਂ ਨਹੀਂ। ਪਿਛਲੇ ਸਲੋਕ ਨਾਲ ਇਹ ਜੋੜ ਵਿਆਖਿਆ ਵਜੋਂ ਪਛਾਣਿਆ ਰਹੇ। ਸੰਖੇਪ ਪਹਿਲੀ ਤੁਕ ਅੱਗ ਦਾ ਸ਼ਬਦ ਆਪ ਮੁੜ ਨਹੀਂ ਆਖਦੀ, ਇਸ ਲਈ ਪੜ੍ਹਤ ਅਤੇ ਮੂਲ ਬੋਲ ਦਾ ਫ਼ਰਕ ਸੰਭਾਲਣਾ ਹੈ।",
+      "reason": "Provide Punjabi substance equivalent to the corrected contextual close reading.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1373&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 176,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok176",
+          "readWithOrdinal": 175
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1373.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check: the contextual referent of ਸਾਰੀ and the direct assertion of the Creator as its maker."
+        },
+        "decision": "Retain the attributed contextual reading, making its referent explicit rather than changing the claim into general comprehension of creation."
+      },
+      "jsonPointer": "/13/study/closeReadingPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "lines.0.simpleEn",
+      "before": "Kabir: the rising sun and moon bring their light throughout the body.",
+      "after": "Kabir: this body has been formed so that sun and moon may rise within it.",
+      "reason": "The cited reading makes the body’s formation serve the arising of sun and moon within; the draft instead asserted ordinary rising luminaries bringing light throughout the body.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/lines/0/simpleEn",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "lines.0.simplePa",
+      "before": "ਕਬੀਰ ਜੀ ਆਖਦੇ ਹਨ: ਸੂਰਜ ਅਤੇ ਚੰਦ ਦੇ ਉਗਣ ਨਾਲ ਸਾਰੀ ਦੇਹ ਵਿੱਚ ਚਾਨਣ ਹੁੰਦਾ ਹੈ।",
+      "after": "ਕਬੀਰ ਜੀ ਆਖਦੇ ਹਨ: ਇਹ ਦੇਹ ਇਸ ਲਈ ਬਣੀ ਹੈ ਕਿ ਇਸ ਵਿੱਚ ਸੂਰਜ ਅਤੇ ਚੰਦ ਦਾ ਉਦੈ ਹੋਵੇ।",
+      "reason": "Match the selected purpose construction in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/lines/0/simplePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "lines.0.interpretiveCaution",
+      "before": "This draft retains an illumination image; the compressed grammar needs review.",
+      "after": "This follows Sahib Singh’s purpose reading of ਕੈ ਉਦੈ. Sun and moon are inward images; the compressed grammar remains for qualified review.",
+      "reason": "Expose the actual grammatical choice immediately beside the line.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/lines/0/interpretiveCaution",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "lines.0.interpretiveCautionPa",
+      "before": "ਇਸ ਖਰੜੇ ਵਿੱਚ ਚਾਨਣ ਦਾ ਚਿੱਤਰ ਲਿਆ ਹੈ; ਸੰਖੇਪ ਵਿਆਕਰਨ ਦੀ ਸਮੀਖਿਆ ਲੋੜੀਂਦੀ ਹੈ।",
+      "after": "ਇਹ ਕੈ ਉਦੈ ਦੀ ਸਾਹਿਬ ਸਿੰਘ ਵਾਲੀ ਮਕਸਦ-ਅਰਥ ਪੜ੍ਹਤ ਹੈ। ਸੂਰਜ ਅਤੇ ਚੰਦ ਅੰਦਰਲੇ ਚਿੱਤਰ ਹਨ; ਸੰਖੇਪ ਵਿਆਕਰਨ ਦੀ ਵਿਦਵਾਨੀ ਪਰਖ ਬਾਕੀ ਹੈ।",
+      "reason": "Make the same selected grammar and review limit visible in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/lines/0/interpretiveCautionPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "study.closeReading",
+      "before": "Sun and moon enter the verse before its return to dust. Their light gives the body an image of possibility, while the second line names the encounter that matters: Guru and Gobind. The ending deliberately recalls Salok 178, so the two should be read together. Bodily appearance and brightness cannot secure permanence, but the short life is still a place for spiritual meeting. The precise force of the opening’s compressed syntax needs scholarly attention. The draft therefore keeps the light image without turning it into an account of anatomy or cosmic origins.",
+      "after": "The opening links the body’s formation with the rising of sun and moon, rather than simply describing daylight falling upon it. In the attributed reading used here, their warmth and coolness picture qualities fulfilled through meeting Guru and Gobind. The return to dust deliberately echoes Salok 178: a brief embodied life can be spent without realizing that purpose. The verse does not make devotion a promise of physical immortality. Its compressed opening still requires grammatical review, with the selected reading kept separate from the source itself.",
+      "reason": "Explain the corrected grammatical relationship while retaining the mortality context and interpretive status.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/study/closeReading",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "study.closeReadingPa",
+      "before": "ਤੁਕ ਮਿੱਟੀ ਵੱਲ ਮੁੜਨ ਤੋਂ ਪਹਿਲਾਂ ਸੂਰਜ ਅਤੇ ਚੰਦ ਨੂੰ ਸਾਹਮਣੇ ਲਿਆਉਂਦੀ ਹੈ। ਉਨ੍ਹਾਂ ਦਾ ਚਾਨਣ ਦੇਹ ਦੀ ਸੰਭਾਵਨਾ ਦਾ ਚਿੱਤਰ ਬਣਦਾ ਹੈ; ਦੂਜੀ ਤੁਕ ਲੋੜੀਂਦਾ ਮਿਲਾਪ ਗੁਰ-ਗੋਬਿੰਦ ਨਾਲ ਜੋੜਦੀ ਹੈ। ਅੰਤ ੧੭੮ ਦੀ ਖੇਹ ਨੂੰ ਮੁੜ ਯਾਦ ਕਰਾਉਂਦਾ ਹੈ, ਇਸ ਲਈ ਦੋਵੇਂ ਇਕੱਠੇ ਪੜ੍ਹਨੇ ਚਾਹੀਦੇ ਹਨ। ਸਰੀਰ ਦੀ ਦਿੱਖ ਅਤੇ ਚਮਕ ਸਦਾ ਦਾ ਟਿਕਾਅ ਨਹੀਂ ਦਿੰਦੀਆਂ, ਪਰ ਛੋਟਾ ਜੀਵਨ ਆਤਮਕ ਮਿਲਾਪ ਦਾ ਥਾਂ ਬਣ ਸਕਦਾ ਹੈ। ਪਹਿਲੀ ਤੁਕ ਦੀ ਸੰਖੇਪ ਵਿਆਕਰਨ ਵਿਦਵਾਨੀ ਧਿਆਨ ਮੰਗਦੀ ਹੈ। ਖਰੜਾ ਚਾਨਣ ਦਾ ਚਿੱਤਰ ਰੱਖਦਾ ਹੈ, ਸਰੀਰ-ਵਿਗਿਆਨ ਜਾਂ ਸ੍ਰਿਸ਼ਟੀ ਦੀ ਬਣਤਰ ਦਾ ਬਿਆਨ ਨਹੀਂ ਬਣਾਉਂਦਾ।",
+      "after": "ਸ਼ੁਰੂਆਤ ਦੇਹ ਦੇ ਬਣਨ ਨੂੰ ਉਸ ਅੰਦਰ ਸੂਰਜ ਅਤੇ ਚੰਦ ਦੇ ਉੱਗਣ ਨਾਲ ਜੋੜਦੀ ਹੈ; ਕੇਵਲ ਬਾਹਰਲੀ ਧੁੱਪ ਪੈਣ ਦਾ ਦ੍ਰਿਸ਼ ਨਹੀਂ ਦਿੰਦੀ। ਇੱਥੇ ਲਈ ਨਾਮਿਤ ਵਿਆਖਿਆ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦਾ ਨਿੱਘ ਅਤੇ ਠੰਢਕ ਉਹ ਅੰਦਰਲੇ ਗੁਣ ਹਨ ਜੋ ਗੁਰ-ਗੋਬਿੰਦ ਦੇ ਮਿਲਾਪ ਨਾਲ ਫਲਦੇ ਹਨ। ਮੁੜ ਖੇਹ ਹੋਣਾ ੧੭੮ ਯਾਦ ਕਰਾਉਂਦਾ ਹੈ: ਇਹ ਛੋਟਾ ਸਰੀਰਕ ਜੀਵਨ ਆਪਣਾ ਮਕਸਦ ਪਾਏ ਬਿਨਾ ਵੀ ਲੰਘ ਸਕਦਾ ਹੈ। ਭਗਤੀ ਸਰੀਰ ਦੀ ਅਮਰਤਾ ਦਾ ਵਾਅਦਾ ਨਹੀਂ ਬਣਦੀ। ਪਹਿਲੀ ਤੁਕ ਦੀ ਸੰਖੇਪ ਵਿਆਕਰਨ ਦੀ ਪਰਖ ਬਾਕੀ ਹੈ; ਚੁਣੀ ਪੜ੍ਹਤ ਨੂੰ ਮੂਲ ਬੋਲ ਤੋਂ ਵੱਖ ਪਛਾਣਨਾ ਹੈ।",
+      "reason": "Supply the full Punjabi counterpart of the corrected close reading.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/study/closeReadingPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "study.interpretationCare",
+      "before": "Sahib Singh treats sun and moon as illumination and coolness; that interpretative reading remains attributed.",
+      "after": "Sahib Singh’s interpretation connects the sun and moon with inward tenderness and coolness; this is an attributed spiritual reading, not a physical account of the body.",
+      "reason": "Specify the cited interpretation accurately without turning it into anatomy.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/study/interpretationCare",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 179,
+      "field": "study.interpretationCarePa",
+      "before": "ਸਾਹਿਬ ਸਿੰਘ ਸੂਰਜ-ਚੰਦ ਨੂੰ ਚਾਨਣ ਅਤੇ ਠੰਢਕ ਦੇ ਭਾਵ ਵਿੱਚ ਲੈਂਦੇ ਹਨ; ਇਹ ਉਨ੍ਹਾਂ ਦੀ ਵਿਆਖਿਆ ਵਜੋਂ ਹੀ ਹੈ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਦੀ ਵਿਆਖਿਆ ਸੂਰਜ ਅਤੇ ਚੰਦ ਨੂੰ ਅੰਦਰਲੀ ਨਰਮਾਈ ਅਤੇ ਸੀਤਲਤਾ ਨਾਲ ਜੋੜਦੀ ਹੈ; ਇਹ ਨਾਮਿਤ ਆਤਮਕ ਪੜ੍ਹਤ ਹੈ, ਸਰੀਰ ਦੀ ਭੌਤਿਕ ਬਣਤਰ ਦਾ ਬਿਆਨ ਨਹੀਂ।",
+      "reason": "Keep Punjabi attribution and substance aligned.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 179,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok179",
+          "readWithOrdinal": 178
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammar check of ਕੈ ਉਦੈ as purpose and the inward sun/moon image."
+        },
+        "decision": "Correct the draft to its already selected, attributed purpose reading; do not present that reading as adjudicating all alternatives."
+      },
+      "jsonPointer": "/16/study/interpretationCarePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "lines.1.interpretiveCaution",
+      "before": "Read the severe cost beside the preceding account of injustice.",
+      "after": "This uses the eater’s-own-throat reading displayed under Dr. Sant Singh Khalsa. Sahib Singh instead understands the cutting of an animal’s throat; the difference remains for review.",
+      "reason": "The draft’s own-throat reading and Sahib Singh’s animal-slaughter reading have different grammatical referents. The existing source note only discussed ਹੇਰਾ and concealed that difference.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/lines/1/interpretiveCaution",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": "ਤਿੱਖੀ ਕੀਮਤ ਨੂੰ ਪਿਛਲੇ ਜ਼ੁਲਮ ਅਤੇ ਲੇਖੇ ਦੇ ਪ੍ਰਸੰਗ ਨਾਲ ਪੜ੍ਹੋ।",
+      "after": "ਇੱਥੇ ਖਾਣ ਵਾਲੇ ਦੇ ਆਪਣੇ ਗਲੇ ਵਾਲੀ ਪੜ੍ਹਤ ਹੈ, ਜੋ ਡਾ. ਸੰਤ ਸਿੰਘ ਖ਼ਾਲਸਾ ਦੇ ਅਨੁਵਾਦ ਵਿੱਚ ਦਿੱਸਦੀ ਹੈ। ਸਾਹਿਬ ਸਿੰਘ ਪਸ਼ੂ ਦਾ ਗਲਾ ਕੱਟਣਾ ਲੈਂਦੇ ਹਨ; ਫ਼ਰਕ ਦੀ ਪਰਖ ਬਾਕੀ ਹੈ।",
+      "reason": "State both readings and the unadjudicated difference in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/lines/1/interpretiveCautionPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "study.closeReading",
+      "before": "The first line praises an ordinary meal so warmly that even its salt is nectar. The second asks what price someone would pay for a more desired food. The violent throat image is deliberately severe, especially after Salok 187’s demand for an account of oppression. Together the lines ask the reader to compare nourishment with the moral cost of obtaining pleasure. The Salok’s concrete food words should remain visible; replacing them with a vague lesson about moderation would soften the specific challenge.",
+      "after": "Khichri and nectar-like salt make modest food attractive before the second line introduces a throat and the wish for meat with bread. The throat’s referent is not explicit. This draft follows the eater’s-own-throat reading displayed under Dr. Sant Singh Khalsa, heard beside 187’s Divine accounting. Sahib Singh instead reads a refusal to slaughter an animal for one’s own meal. Both keep appetite and harm in view; they do not supply the same grammatical subject. The difference needs qualified review and should remain visible.",
+      "reason": "Replace an unexplained referent choice with a bounded, named comparison while retaining the concrete food and accountability imagery.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/study/closeReading",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਸਾਦੇ ਖਾਣੇ ਦੀ ਇੰਨੀ ਕਦਰ ਕਰਦੀ ਹੈ ਕਿ ਉਸ ਦਾ ਲੂਣ ਵੀ ਅੰਮ੍ਰਿਤ ਹੈ। ਦੂਜੀ ਪੁੱਛਦੀ ਹੈ ਕਿ ਹੋਰ ਚਾਹੇ ਭੋਜਨ ਲਈ ਮਨੁੱਖ ਕਿੰਨੀ ਕੀਮਤ ਦੇਵੇਗਾ। ਗਲਾ ਕਟਣ ਦਾ ਚਿੱਤਰ ਜਾਣ-ਬੁੱਝ ਕੇ ਤਿੱਖਾ ਹੈ, ਖ਼ਾਸ ਕਰਕੇ ੧੮੭ ਦੇ ਜ਼ੁਲਮ ਵਾਲੇ ਲੇਖੇ ਤੋਂ ਬਾਅਦ। ਦੋਵੇਂ ਤੁਕਾਂ ਪੇਟ ਦੀ ਲੋੜ ਦੇ ਨਾਲ ਸੁਆਦ ਹਾਸਲ ਕਰਨ ਦੀ ਨੈਤਿਕ ਕੀਮਤ ਰੱਖਦੀਆਂ ਹਨ। ਭੋਜਨ ਦੇ ਅਸਲ ਨਾਂ ਕਾਇਮ ਰਹਿਣੇ ਚਾਹੀਦੇ ਹਨ। ਉਨ੍ਹਾਂ ਨੂੰ ਕੇਵਲ ਸੰਜਮ ਦੀ ਧੁੰਦਲੀ ਸਿੱਖਿਆ ਬਣਾਉਣ ਨਾਲ ਖ਼ਾਸ ਚੁਣੌਤੀ ਹੌਲੀ ਪੈ ਜਾਵੇਗੀ।",
+      "after": "ਖਿਚੜੀ ਅਤੇ ਅੰਮ੍ਰਿਤ ਵਰਗਾ ਲੂਣ ਪਹਿਲਾਂ ਸਾਦੇ ਭੋਜਨ ਦੀ ਕਦਰ ਦਿੰਦੇ ਹਨ। ਫਿਰ ਗਲਾ ਅਤੇ ਮਾਸ-ਰੋਟੀ ਦੀ ਚਾਹ ਆਉਂਦੇ ਹਨ। ਗਲਾ ਕਿਸ ਦਾ ਹੈ, ਇਹ ਮੂਲ ਤੁਕ ਸਿੱਧਾ ਨਹੀਂ ਦੱਸਦੀ। ਖਰੜਾ ਡਾ. ਸੰਤ ਸਿੰਘ ਖ਼ਾਲਸਾ ਦੇ ਅਨੁਵਾਦ ਵਿੱਚ ਦਿੱਸਦੀ ਆਪਣੇ ਗਲੇ ਵਾਲੀ ਪੜ੍ਹਤ ਲੈਂਦਾ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ੧੮੭ ਦੇ ਰੱਬੀ ਲੇਖੇ ਨਾਲ ਪੜ੍ਹਦਾ ਹੈ। ਸਾਹਿਬ ਸਿੰਘ ਆਪਣੇ ਭੋਜਨ ਲਈ ਪਸ਼ੂ ਜ਼ਬਹ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਲੈਂਦੇ ਹਨ। ਦੋਵੇਂ ਚਾਹ ਅਤੇ ਹਾਨੀ ਨੂੰ ਸਾਹਮਣੇ ਰੱਖਦੇ ਹਨ, ਪਰ ਇੱਕੋ ਵਿਆਕਰਨਕ ਪਾਤਰ ਨਹੀਂ ਦਿੰਦੇ। ਇਹ ਫ਼ਰਕ ਦਿੱਖ ਵਿੱਚ ਰਹੇ ਅਤੇ ਵਿਦਵਾਨੀ ਪਰਖ ਲਈ ਰੱਖਿਆ ਜਾਵੇ।",
+      "reason": "Preserve the same substantive competing-reading explanation in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/study/closeReadingPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "study.interpretationCare",
+      "before": "Sahib Singh glosses ਹੇਰਾ as meat; the throat image needs its accountability context.",
+      "after": "Whose throat is meant remains a substantive interpretation question. The two named readings must not be silently combined into one claimed translation.",
+      "reason": "Make the actual unresolved issue explicit rather than referring only to the meat gloss.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/study/interpretationCare",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "study.interpretationCarePa",
+      "before": "ਸਾਹਿਬ ਸਿੰਘ ਹੇਰਾ ਦਾ ਭਾਵ ਮਾਸ ਲੈਂਦੇ ਹਨ; ਗਲੇ ਦਾ ਚਿੱਤਰ ਜਵਾਬਦੇਹੀ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ ਪੜ੍ਹੋ।",
+      "after": "ਗਲਾ ਕਿਸ ਦਾ ਹੈ, ਇਹ ਅਸਲ ਵਿਆਖਿਆਕ ਸਵਾਲ ਹੈ। ਦੋਵੇਂ ਨਾਮਿਤ ਪੜ੍ਹਤਾਂ ਨੂੰ ਚੁੱਪਚਾਪ ਮਿਲਾ ਕੇ ਇੱਕੋ ਪੱਕਾ ਅਰਥ ਨਾ ਦੱਸੋ।",
+      "reason": "Align Punjabi care note with the unresolved referent.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/study/interpretationCarePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 188,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji, Kabir Salok collection, Salok 188, Ang 1374",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 188; source text, not a modern translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "title": "Sahib Singh, Darpan, Salok 188: ਹੇਰਾ",
+          "scope": "Limited lexical consultation on ਹੇਰਾ; no modern translation reproduced."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji, Kabir Salok collection, Salok 188, Ang 1374",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 188; source text, not a modern translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1374.html",
+          "title": "Sahib Singh, Darpan, Salok 188: ਹੇਰਾ and the throat referent",
+          "scope": "Limited lexical and grammatical comparison; this commentary reads the slaughtered animal as the throat referent."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+          "title": "Dr. Sant Singh Khalsa, English translation displayed by SriGranth, Salok 188",
+          "scope": "Limited identification of the eater’s-own-throat reading; no modern translation imported as the lesson."
+        }
+      ],
+      "reason": "Attribute the two actually differing readings separately; the clean t=0 primary text citation remains.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 188,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok188",
+          "readWithOrdinal": 187
+        },
+        "commentary": [
+          {
+            "url": "https://www.gurugranthdarpan.net/1374.html",
+            "author": "Professor Sahib Singh",
+            "scope": "Limited comparison of the omitted throat referent in the final clause."
+          },
+          {
+            "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1374&g=1&h=0&k=0&p=0&r=0&t=1",
+            "author": "Dr. Sant Singh Khalsa",
+            "scope": "The t=1 selector was inspected and identifies this translator; only Salok 188’s throat referent was compared."
+          }
+        ],
+        "decision": "Keep the current eater’s-own-throat working reading but identify it and the competing animal-slaughter reading. Do not silently attribute one to the other."
+      },
+      "jsonPointer": "/25/sources",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "lines.1.simpleEn",
+      "before": "Master, what fault is in me that the guide does not speak?",
+      "after": "O Master, O Pir, what fault is in me that You do not speak to me?",
+      "reason": "The direct Divine address was changed into a third-person guide. The selected vocative reading addresses Sai/Pir rather than introducing another participant.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/lines/1/simpleEn",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "lines.1.simplePa",
+      "before": "ਹੇ ਸਾਂਈ, ਮੇਰੇ ਵਿੱਚ ਕੀ ਖ਼ਤਾ ਹੈ ਕਿ ਪੀਰ ਬੋਲਦਾ ਨਹੀਂ?",
+      "after": "ਹੇ ਸਾਂਈ, ਹੇ ਪੀਰ, ਮੇਰੇ ਵਿੱਚ ਕੀ ਖ਼ਤਾ ਹੈ ਕਿ ਤੂੰ ਮੇਰੇ ਨਾਲ ਬੋਲਦਾ ਨਹੀਂ?",
+      "reason": "Retain the same direct address in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/lines/1/simplePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The relationship of the addresses needs careful reading.",
+      "after": "Following Sahib Singh, Sai and Pir are read as two addresses to the Divine; the verse does not thereby introduce a separate human guide.",
+      "reason": "Name the grammatical choice instead of suggesting an unspecified relation between different participants.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/lines/1/interpretiveCaution",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": "ਸੰਬੋਧਨਾਂ ਦਾ ਆਪਸੀ ਸੰਬੰਧ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹਨਾ ਚਾਹੀਦਾ ਹੈ।",
+      "after": "ਸਾਹਿਬ ਸਿੰਘ ਅਨੁਸਾਰ ਸਾਂਈ ਅਤੇ ਪੀਰ ਦੋਵੇਂ ਪ੍ਰਭੂ ਲਈ ਸੰਬੋਧਨ ਲਏ ਹਨ; ਇਸ ਪੜ੍ਹਤ ਵਿੱਚ ਵੱਖਰਾ ਮਨੁੱਖੀ ਰਹਿਨੁਮਾ ਨਹੀਂ ਆਉਂਦਾ।",
+      "reason": "Give the Punjabi reader the same attribution and participant distinction.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/lines/1/interpretiveCautionPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "study.words.1.workingGloss",
+      "before": "spiritual guide; reverent address",
+      "after": "Pir; guide or master, used here as an address to the Divine",
+      "reason": "Mark the contextual vocative use without erasing the word’s broader guide/master sense.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/study/words/1/workingGloss",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "study.words.1.workingGlossPa",
+      "before": "ਪੀਰ; ਆਤਮਕ ਰਹਿਨੁਮਾ",
+      "after": "ਪੀਰ; ਰਹਿਨੁਮਾ ਜਾਂ ਮਾਲਕ, ਇੱਥੇ ਪ੍ਰਭੂ ਲਈ ਸੰਬੋਧਨ",
+      "reason": "Match the contextual gloss in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/study/words/1/workingGlossPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "study.interpretationCare",
+      "before": "The precise relation of ਸਾਂਈ and ਪੀਰ remains a grammar-review point; retain the unanswered address.",
+      "after": "The draft follows Sahib Singh’s vocative reading of Sai and Pir. It preserves an unanswered Divine address without treating the scene as authenticated biography.",
+      "reason": "State the chosen interpretation and the existing historical limit clearly.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/study/interpretationCare",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "study.interpretationCarePa",
+      "before": "ਸਾਂਈ ਅਤੇ ਪੀਰ ਦਾ ਵਿਆਕਰਨਕ ਸੰਬੰਧ ਸਮੀਖਿਆ ਦਾ ਵਿਸ਼ਾ ਹੈ; ਬੇਜਵਾਬ ਸੰਬੋਧਨ ਕਾਇਮ ਰੱਖੋ।",
+      "after": "ਖਰੜਾ ਸਾਂਈ ਅਤੇ ਪੀਰ ਦੀ ਸਾਹਿਬ ਸਿੰਘ ਵਾਲੀ ਸੰਬੋਧਨ-ਪੜ੍ਹਤ ਲੈਂਦਾ ਹੈ। ਬੇਜਵਾਬ ਰੱਬੀ ਪੁਕਾਰ ਰੱਖੀ ਹੈ, ਪਰ ਦ੍ਰਿਸ਼ ਨੂੰ ਪ੍ਰਮਾਣਿਤ ਜੀਵਨੀ ਨਹੀਂ ਬਣਾਇਆ।",
+      "reason": "Provide equivalent Punjabi context.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/study/interpretationCarePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 198,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji, Kabir Salok collection, Salok 198, Ang 1375",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 198; source text, not a modern translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji, Kabir Salok collection, Salok 198, Ang 1375",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 198; source text, not a modern translation."
+        },
+        {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "title": "Sahib Singh, Darpan, Salok 198: ਸਾਂਈ and ਪੀਰ as addresses",
+          "scope": "Limited grammar consultation on the addressee; original lesson writing, with no historical pilgrimage inferred."
+        }
+      ],
+      "reason": "Add the named source for the clarified grammatical choice while retaining the clean primary citation.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 198,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok198"
+        },
+        "commentary": {
+          "url": "https://www.gurugranthdarpan.net/1375.html",
+          "author": "Professor Sahib Singh",
+          "scope": "Limited grammatical check: ਸਾਂਈ and ਪੀਰ are treated as addresses to the same Divine hearer."
+        },
+        "decision": "Use the explicit, attributed vocative reading; do not invent a separate silent human guide."
+      },
+      "jsonPointer": "/35/sources",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 204,
+      "field": "lines.0.simpleEn",
+      "before": "Kabir: in continually saying You, I became Yours; the insistence on I no longer remained in me.",
+      "after": "Kabir: continually saying You, You, I became one with You; no I remained within me.",
+      "reason": "Became Yours weakens ਤੂ ਹੂਆ to possession, while the Punjabi and existing context express devotional union and the disappearance of self-assertion.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1375&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 204,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok204",
+          "phrase": "ਤੂੰ ਤੂੰ ਕਰਤਾ ਤੂ ਹੂਆ ਮੁਝ ਮਹਿ ਰਹਾ ਨ ਹੂੰ"
+        },
+        "decision": "Align the English line with the union already expressed in the Punjabi draft and both study paragraphs."
+      },
+      "jsonPointer": "/41/lines/0/simpleEn",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "lines.1.simpleEn",
+      "before": "though they undertake pilgrimages, fasts and observances, they go down to the depths.",
+      "after": "Even after pilgrimages, fasts and observances, they go to hell, rasatal.",
+      "reason": "Depths alone did not make the verse’s severe religious consequence clear to an English reader.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/lines/1/simpleEn",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "lines.1.simplePa",
+      "before": "ਤੀਰਥ, ਵਰਤ ਅਤੇ ਨੇਮ ਕਰਕੇ ਵੀ ਉਹ ਰਸਾਤਲ ਵੱਲ ਜਾਂਦੇ ਹਨ।",
+      "after": "ਤੀਰਥ, ਵਰਤ ਅਤੇ ਨੇਮ ਕਰਨ ਦੇ ਬਾਵਜੂਦ ਉਹ ਰਸਾਤਲ, ਭਾਵ ਨਰਕ ਵਿੱਚ, ਜਾਂਦੇ ਹਨ।",
+      "reason": "Clarify the same consequence in accessible Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/lines/1/simplePa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "lines.1.interpretiveCaution",
+      "before": "The warning refuses ritual acts as a cancelling account.",
+      "after": "ਰਸਾਤਲਿ is the verse’s severe religious image of hell; the listed observances do not cancel the conduct named in the first line.",
+      "reason": "Explain the actual religious term and its relation to the two lists.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/lines/1/interpretiveCaution",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "lines.1.interpretiveCautionPa",
+      "before": "ਚੇਤਾਵਨੀ ਰਸਮਾਂ ਨੂੰ ਕਰਮਾਂ ਦਾ ਹਿਸਾਬ ਮਿਟਾਉਣ ਵਾਲਾ ਜ਼ਰੀਆ ਨਹੀਂ ਮੰਨਦੀ।",
+      "after": "ਰਸਾਤਲਿ ਨਰਕ ਦਾ ਤਿੱਖਾ ਧਾਰਮਿਕ ਚਿੱਤਰ ਹੈ; ਦੱਸੀਆਂ ਰਸਮਾਂ ਪਹਿਲੀ ਤੁਕ ਦੇ ਕਰਮ ਨਹੀਂ ਮਿਟਾਉਂਦੀਆਂ।",
+      "reason": "Keep the Punjabi explanation equivalent.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/lines/1/interpretiveCautionPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "study.closeReading",
+      "before": "The first line is concrete: bhang, fish and drinking wine are named. The second is equally concrete about the proposed religious counterweight: pilgrimage, fasting and regular observances. The warning says that these practices do not reverse the downward spiritual outcome. Both lists must remain visible for the challenge to retain its force. The verse is not a general statement that any preferred ritual can compensate for any conduct. It specifically refuses that exchange here, placing the direction of lived practice ahead of claims based on religious performance.",
+      "after": "The first line names bhang, fish and drinking wine. The second names the proposed religious counterweight: pilgrimage, fasting and regular observances. Yet its stated consequence is rasatal, the nether realm of punishment. Both lists and that severe consequence must remain visible. The verse refuses to let these observances cancel the named conduct; it does not merely say that the practices feel disappointing. Its question reaches the direction of lived devotion. The specific warning should remain intact without being expanded into a complete dietary code for every situation.",
+      "reason": "Preserve the explicit religious consequence alongside the already accurate substances list without manufacturing a comprehensive food rule.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/study/closeReading",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "study.closeReadingPa",
+      "before": "ਪਹਿਲੀ ਤੁਕ ਠੋਸ ਹੈ: ਭਾਂਗ, ਮੱਛੀ ਅਤੇ ਸ਼ਰਾਬ ਪੀਣ ਦੇ ਨਾਂ ਹਨ। ਦੂਜੀ ਵਿੱਚ ਵੀ ਤੀਰਥ, ਵਰਤ ਅਤੇ ਨੇਮ ਸਪਸ਼ਟ ਹਨ, ਜੋ ਭਰਪਾਈ ਵਜੋਂ ਅੱਗੇ ਰੱਖੇ ਜਾਂਦੇ ਹਨ। ਚੇਤਾਵਨੀ ਆਖਦੀ ਹੈ ਕਿ ਇਹ ਰਸਮਾਂ ਹੇਠਾਂ ਲੈ ਜਾਂਦੇ ਆਤਮਕ ਫਲ ਨੂੰ ਨਹੀਂ ਮੋੜਦੀਆਂ। ਦੋਵੇਂ ਸੂਚੀਆਂ ਦਿੱਖ ਵਿੱਚ ਰਹਿਣ ਤਾਂ ਹੀ ਪਰਖ ਦੀ ਤਾਕਤ ਕਾਇਮ ਰਹਿੰਦੀ ਹੈ। ਗੱਲ ਇਹ ਨਹੀਂ ਕਿ ਮਨਪਸੰਦ ਰਸਮ ਕਿਸੇ ਵੀ ਕਰਮ ਦੀ ਭਰਪਾਈ ਕਰ ਸਕਦੀ ਹੈ। ਇੱਥੇ ਉਹ ਸੌਦਾ ਖ਼ਾਸ ਤੌਰ ਉੱਤੇ ਰੱਦ ਹੈ। ਜੀਵੀ ਜਾਂਦੀ ਦਿਸ਼ਾ ਧਾਰਮਿਕ ਕਾਰਵਾਈ ਦੇ ਦਾਅਵੇ ਤੋਂ ਅੱਗੇ ਰੱਖੀ ਹੈ।",
+      "after": "ਪਹਿਲੀ ਤੁਕ ਭਾਂਗ, ਮੱਛੀ ਅਤੇ ਸ਼ਰਾਬ ਦੇ ਨਾਂ ਲੈਂਦੀ ਹੈ। ਦੂਜੀ ਵਿੱਚ ਤੀਰਥ, ਵਰਤ ਅਤੇ ਨੇਮ ਹਨ, ਜੋ ਭਰਪਾਈ ਵਜੋਂ ਅੱਗੇ ਰੱਖੇ ਜਾਂਦੇ ਹਨ। ਫਿਰ ਵੀ ਦੱਸਿਆ ਫਲ ਰਸਾਤਲ, ਨਰਕ ਦਾ ਲੋਕ, ਹੈ। ਦੋਵੇਂ ਸੂਚੀਆਂ ਅਤੇ ਇਹ ਤਿੱਖਾ ਫਲ ਦਿੱਖ ਵਿੱਚ ਰਹਿਣੇ ਚਾਹੀਦੇ ਹਨ। ਤੁਕ ਇਨ੍ਹਾਂ ਰਸਮਾਂ ਨੂੰ ਨਾਮ ਲਏ ਕਰਮ ਮਿਟਾਉਣ ਨਹੀਂ ਦਿੰਦੀ; ਕੇਵਲ ਨਿਰਾਸ਼ ਹੋਣ ਦੀ ਗੱਲ ਨਹੀਂ ਆਖਦੀ। ਪਰਖ ਜੀਵੀ ਜਾਂਦੀ ਭਗਤੀ ਦੀ ਦਿਸ਼ਾ ਤੱਕ ਜਾਂਦੀ ਹੈ। ਖ਼ਾਸ ਚੇਤਾਵਨੀ ਸੰਭਾਲੀ ਰਹੇ, ਪਰ ਇਸ ਤੋਂ ਹਰ ਹਾਲਤ ਲਈ ਭੋਜਨ ਦਾ ਪੂਰਾ ਕਾਨੂੰਨ ਨਾ ਘੜਿਆ ਜਾਵੇ।",
+      "reason": "Match the corrected religious consequence and scope in Punjabi.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/study/closeReadingPa",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    },
+    {
+      "ordinal": 233,
+      "field": "sources",
+      "before": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji, Kabir Salok collection, Salok 233, Ang 1377",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 233; source text, not a modern translation."
+        }
+      ],
+      "after": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "title": "Sri Guru Granth Sahib Ji, Kabir Salok collection, Salok 233, Ang 1377",
+          "scope": "Original Gurmukhi and surrounding sequence for Salok 233; source text, not a modern translation."
+        },
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "title": "SriGranth dictionary and Mahan Kosh entries: ਰਸਾਤਲਿ, consulted for Salok 233",
+          "scope": "Limited lexical check of the hell/nether-world image; no translation imported as the lesson."
+        }
+      ],
+      "reason": "Cite the narrow lexical check supporting the clarified English and Punjabi explanation.",
+      "sourceBasis": {
+        "primary": {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377&g=1&h=0&k=0&p=0&r=0&t=0",
+          "ordinal": 233,
+          "sourceFile": "/workspace/scratch/c4badbece609/kabir-build/source-selected.json",
+          "sourceUnitId": "sggs.salok-kabir.salok233",
+          "phrase": "ਤੇ ਸਭੈ ਰਸਾਤਲਿ ਜਾਂਹਿ"
+        },
+        "lexicalWitness": {
+          "url": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%B0%E0%A8%B8%E0%A8%BE%E0%A8%A4%E0%A8%B2%E0%A8%BF",
+          "scope": "The displayed Gurbani dictionary and Mahan Kosh entries identify ਰਸਾਤਲਿ with hell or the nether world."
+        },
+        "decision": "Retain the exact bhang, fish and wine list and make its stated religious consequence intelligible rather than only calling it a downward spiritual outcome."
+      },
+      "jsonPointer": "/70/sources",
+      "proposalStatus": "AI_EDITORIAL_CORRECTION_REQUIRES_QUALIFIED_REVIEW"
+    }
+  ],
+  "retainedAndUnresolvedNotes": [
+    {
+      "ordinals": [
+        170
+      ],
+      "status": "EXISTING_ATTRIBUTED_READING_RETAINED",
+      "note": "The bank-full lake reading is supported by the cited lexical explanation of ਪਾਲਿ ਸਮੁਹਾ. It remains a working reading, not a human-approved interpretation.",
+      "source": "https://www.gurugranthdarpan.net/1373.html"
+    },
+    {
+      "ordinals": [
+        176,
+        179,
+        188,
+        198
+      ],
+      "status": "CORRECTIONS_PROPOSED",
+      "note": "The ledger distinguishes contextual referents, selected grammatical readings and competing interpretations."
+    },
+    {
+      "ordinals": [
+        177
+      ],
+      "status": "SOURCE_GLYPH_AND_EXTENT_UNCHANGED",
+      "note": "The frozen source U+0A01 in ਗਈਁ remains unchanged. The teaching preserves the distinction between devotional ਭਉ here and fear in 180. No new textual or pagination adjudication is made."
+    },
+    {
+      "ordinals": [
+        190,
+        191
+      ],
+      "status": "EXISTING_ATTRIBUTED_READING_RETAINED",
+      "note": "The performer and all-pervading-versus-particular readings match the cited commentary’s selected grammar. The existing competing-reading and qualified-review limits remain.",
+      "source": "https://www.gurugranthdarpan.net/1374.html"
+    },
+    {
+      "ordinals": [
+        202
+      ],
+      "status": "EXISTING_ATTRIBUTED_READING_RETAINED",
+      "note": "The vocative duality reading is explicitly attributed. The identity of the six darshans should not be silently expanded into an unreviewed fixed list.",
+      "source": "https://www.gurugranthdarpan.net/1375.html"
+    },
+    {
+      "ordinals": [
+        210
+      ],
+      "status": "EXISTING_ATTRIBUTED_READING_RETAINED",
+      "note": "The gain reading of ਲਾਹੂ ਲਾਹਿ matches the selected commentary, and the draft visibly leaves the competing grammar for qualified review.",
+      "source": "https://www.gurugranthdarpan.net/1375.html"
+    },
+    {
+      "ordinals": [
+        209,
+        210,
+        211,
+        214,
+        220,
+        221
+      ],
+      "status": "EXPLICIT_HEADINGS_CHECKED",
+      "note": "The draft recognizes observed Mahalla 5 at 209–211, 214 and 221, and Mahalla 3 at 220. It does not automatically transfer these headings to the next unheaded Salok. This is a check against the selected source, not independent human authentication of an edition."
+    },
+    {
+      "ordinals": [
+        212,
+        213,
+        241,
+        242
+      ],
+      "status": "NAMED_VOICES_DISTINGUISHED_FROM_AUTHOR_ASSIGNMENT",
+      "note": "The draft preserves Nama, Trilochan and Ravidas as named textual voices; the Kabir-citing-them interpretation is attributed to Sahib Singh and does not become an automatic canonicalAuthorId assignment."
+    },
+    {
+      "ordinals": [
+        224
+      ],
+      "status": "NO_AUTOMATIC_BOTANICAL_SUBSTITUTION",
+      "note": "The dense-forest wording is defensible under Sahib Singh’s Kajali-forest reading. It was not silently replaced with a banana-tree interpretation.",
+      "source": "https://www.gurugranthdarpan.net/1376.html"
+    },
+    {
+      "ordinals": [
+        233
+      ],
+      "status": "EXPLICIT_SUBSTANCES_PRESERVED",
+      "note": "Bhang, fish and wine are all present. Proposed changes clarify rasatal; they do not weaken the named conduct or claim a complete dietary rule."
+    },
+    {
+      "ordinals": [
+        239
+      ],
+      "status": "METAPHOR_CONTEXT_CHECKED",
+      "note": "The head-as-ball image is preserved and immediately identified as devotional self-surrender, not a physical act. No historical episode is fabricated."
+    },
+    {
+      "ordinals": [
+        243
+      ],
+      "status": "COLLECTION_BOUNDARY_DISTINGUISHED",
+      "note": "The final numbered Salok closes this collection; the draft does not claim to complete Kabir’s Bani elsewhere in Sri Guru Granth Sahib Ji."
+    }
+  ],
+  "mechanicalChecks": {
+    "inputCount": 81,
+    "ordinalSequence": "163 through 243, without gaps or duplicates",
+    "lineExplanations": 162,
+    "exactSourceVocabularyEntries": 162,
+    "primaryT0PageLinksCoverEverySourceLineAng": true,
+    "originalCloseReadingEnglishWordRange": [
+      80,
+      92
+    ],
+    "everyBeforeValueVerifiedAgainstFrozenInput": true,
+    "sourceAndInputFilesUnmodified": true,
+    "qualifications": "These checks establish structural and source-reference consistency only; they do not establish interpretive accuracy or qualified approval."
+  },
+  "publicationStatus": "DRAFT_REVIEW_ONLY_NO_AUTOMATIC_PUBLICATION_APPROVAL"
+}

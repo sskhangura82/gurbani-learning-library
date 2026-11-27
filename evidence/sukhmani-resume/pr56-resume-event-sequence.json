@@ -1,0 +1,1208 @@
+{
+  "sourceReport": "/tmp/glp001-iphoneqa-20261126/sukhmani-resume-investigation/runs/2026-11-27T01-37-28-660Z/report.json",
+  "case": "original-CI-bookmark-reflection-resume-sequence",
+  "observations": [
+    {
+      "label": "CI-before-reload",
+      "t": 539.2999999523163,
+      "scrollY": 959,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 262.296875,
+          "bottom": 319.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 328.296875,
+          "bottom": 442.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 451.296875,
+          "bottom": 508.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 517.296875,
+          "bottom": 574.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 583.296875,
+          "bottom": 640.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "CI-before-resume",
+      "t": 152.39999997615814,
+      "scrollY": 959,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": -359.640625
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 399.296875,
+          "bottom": 456.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 465.296875,
+          "bottom": 579.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 588.296875,
+          "bottom": 645.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 654.296875,
+          "bottom": 711.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 720.296875,
+          "bottom": 777.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "CI-immediate-assertion-point",
+      "t": 177.09999990463257,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "CI-settled",
+      "t": 629.5999999046326,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l03",
+      "storedRead": "sukhmani.a01.p01.l03",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    }
+  ],
+  "afterReloadTrace": [
+    {
+      "label": "current-mutation",
+      "t": 118.09999990463257,
+      "scrollY": 959,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": -359.640625
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 399.296875,
+          "bottom": 456.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 465.296875,
+          "bottom": 579.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 588.296875,
+          "bottom": 645.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 654.296875,
+          "bottom": 711.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 720.296875,
+          "bottom": 777.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l02",
+        "value": "true"
+      }
+    },
+    {
+      "label": "resume-notice-mutation",
+      "t": 118.29999995231628,
+      "scrollY": 959,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": -359.640625
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 399.296875,
+          "bottom": 456.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 465.296875,
+          "bottom": 579.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 588.296875,
+          "bottom": 645.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 654.296875,
+          "bottom": 711.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 720.296875,
+          "bottom": 777.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "scroll-event",
+      "t": 118.29999995231628,
+      "scrollY": 959,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": -359.640625
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 399.296875,
+          "bottom": 456.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 465.296875,
+          "bottom": 579.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 588.296875,
+          "bottom": 645.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 654.296875,
+          "bottom": 711.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 720.296875,
+          "bottom": 777.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "resume-click-capture",
+      "t": 172.5,
+      "scrollY": 246,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": 353.359375
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 1112.296875,
+          "bottom": 1169.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 1178.296875,
+          "bottom": 1292.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 1301.296875,
+          "bottom": 1358.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 1367.296875,
+          "bottom": 1424.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 1433.296875,
+          "bottom": 1490.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "scrollIntoView-before",
+      "t": 172.89999997615814,
+      "scrollY": 246,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": 353.359375
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": 1112.296875,
+          "bottom": 1169.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 1178.296875,
+          "bottom": 1292.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 1301.296875,
+          "bottom": 1358.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 1367.296875,
+          "bottom": 1424.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 1433.296875,
+          "bottom": 1490.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l02",
+        "options": {
+          "block": "start",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "label": "scrollIntoView-after",
+      "t": 173,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": false,
+        "height": 117,
+        "top": -790.640625
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -31.703125,
+          "bottom": 25.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": 34.296875,
+          "bottom": 148.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 157.296875,
+          "bottom": 214.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 223.296875,
+          "bottom": 280.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 289.296875,
+          "bottom": 346.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l02",
+        "options": {
+          "block": "start",
+          "behavior": "auto"
+        }
+      }
+    },
+    {
+      "label": "current-mutation",
+      "t": 173.09999990463257,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l02",
+        "value": "true"
+      }
+    },
+    {
+      "label": "current-mutation",
+      "t": 173.09999990463257,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l02",
+        "value": "true"
+      }
+    },
+    {
+      "label": "resume-notice-mutation",
+      "t": 173.09999990463257,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "scroll-event",
+      "t": 182.89999997615814,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "resume-frame-1",
+      "t": 183,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.intro.l01",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "storage-write",
+      "t": 183.89999997615814,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "read": "sukhmani.a01.p01.l02",
+        "guide": "sukhmani.a01.p01.l02",
+        "stack": [
+          "    at Storage.setItem (<anonymous>:17:203)",
+          "    at http://127.0.0.1:54253/pr56-frozen/js/shared-learning.js:11:12"
+        ]
+      }
+    },
+    {
+      "label": "resume-frame-2",
+      "t": 197.29999995231628,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "resume-frame-3",
+      "t": 216.79999995231628,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "resume-frame-4",
+      "t": 232.19999992847443,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l02",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "label": "current-mutation",
+      "t": 321.2999999523163,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l03",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l02",
+        "value": null
+      }
+    },
+    {
+      "label": "current-mutation",
+      "t": 321.39999997615814,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l03",
+      "storedRead": "sukhmani.a01.p01.l02",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "id": "sukhmani.a01.p01.l03",
+        "value": "true"
+      }
+    },
+    {
+      "label": "storage-write",
+      "t": 325.59999990463257,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l03",
+      "storedRead": "sukhmani.a01.p01.l03",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ],
+      "detail": {
+        "read": "sukhmani.a01.p01.l03",
+        "guide": "sukhmani.a01.p01.l02",
+        "stack": [
+          "    at Storage.setItem (<anonymous>:17:203)",
+          "    at http://127.0.0.1:54253/pr56-frozen/js/shared-learning.js:11:12"
+        ]
+      }
+    },
+    {
+      "label": "resume-after-250ms",
+      "t": 425.7999999523163,
+      "scrollY": 1390,
+      "viewport": 844,
+      "current": "sukhmani.a01.p01.l03",
+      "storedRead": "sukhmani.a01.p01.l03",
+      "storedGuide": "sukhmani.a01.p01.l02",
+      "mode": "read",
+      "source": "verified",
+      "notice": {
+        "hidden": true,
+        "height": 0,
+        "top": 0
+      },
+      "rootScrollPadding": "14px",
+      "targetScrollMargin": "20px",
+      "near": [
+        {
+          "id": "sukhmani.a01.p01.l01",
+          "top": -168.703125,
+          "bottom": -111.703125,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l02",
+          "top": -102.703125,
+          "bottom": 11.296875,
+          "height": 114
+        },
+        {
+          "id": "sukhmani.a01.p01.l03",
+          "top": 20.296875,
+          "bottom": 77.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l04",
+          "top": 86.296875,
+          "bottom": 143.296875,
+          "height": 57
+        },
+        {
+          "id": "sukhmani.a01.p01.l05",
+          "top": 152.296875,
+          "bottom": 209.296875,
+          "height": 57
+        }
+      ]
+    }
+  ]
+}

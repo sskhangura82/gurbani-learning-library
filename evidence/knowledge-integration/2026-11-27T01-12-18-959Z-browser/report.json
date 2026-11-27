@@ -1,0 +1,81 @@
+{
+  "status": "FAIL",
+  "started": "2026-11-27T01:12:18.960Z",
+  "base": "f720099b6181919d597e249f9ad42b9f00cabe68",
+  "criteria": "2026-11-27T010603Z-criteria.md",
+  "checks": [
+    {
+      "name": "Search/navigation integration retains exact lines, separate kinds, Back/Forward, reload and deep-link refusal",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /source indexing/. Input:\n\n'Original Gurbani · digital source\\nਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:74:85\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:57:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:68:2"
+    },
+    {
+      "name": "Editorial author aliases stay labelled while real source hits select exact occurrences",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Matched through editorial indexing · Editorial author lookup/. Input:\n\n'Source index\\nGuru Nanak Dev Ji\\nਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:97:44\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:57:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:93:2"
+    },
+    {
+      "name": "Corrupt source fails before any teaching request and leaves no scripture or editorial content",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned attribution mutant refuses the combined UI: prefixed heading",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned attribution mutant refuses the combined UI: source line in word label",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned attribution mutant refuses the combined UI: source line in passage alias",
+      "status": "PASS"
+    },
+    {
+      "name": "Accepted lexical gap remains editorial through result clicks, Back, reload and deep links",
+      "status": "PASS"
+    },
+    {
+      "name": "A permitted editorial passage alias opens unmodified source with explicit editorial match reason",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Matched through editorial indexing · Editorial title or alias/. Input:\n\n'Original Gurbani · digital source\\nਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:149:10\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:57:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:145:2"
+    }
+  ],
+  "failures": [
+    {
+      "name": "Search/navigation integration retains exact lines, separate kinds, Back/Forward, reload and deep-link refusal",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /source indexing/. Input:\n\n'Original Gurbani · digital source\\nਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:74:85\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:57:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:68:2"
+    },
+    {
+      "name": "Editorial author aliases stay labelled while real source hits select exact occurrences",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Matched through editorial indexing · Editorial author lookup/. Input:\n\n'Source index\\nGuru Nanak Dev Ji\\nਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:97:44\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:57:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:93:2"
+    },
+    {
+      "name": "A permitted editorial passage alias opens unmodified source with explicit editorial match reason",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Matched through editorial indexing · Editorial title or alias/. Input:\n\n'Original Gurbani · digital source\\nਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥'\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:149:10\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:57:6)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/knowledge-integrated/tests/knowledge-integration-browser.mjs:145:2"
+    }
+  ],
+  "pageErrors": [],
+  "limits": [
+    "Builder interaction verification in fresh synthetic desktop Chrome contexts at 390px.",
+    "Not Claude independent review, physical iPhone/Safari/VoiceOver, qualified review or release approval."
+  ],
+  "environment": {
+    "node": "v26.0.0",
+    "platform": "darwin",
+    "browser": "158.0.8127.37"
+  },
+  "files": {
+    "knowledge/app.mjs": "cda94c987caec463905d8b75cc36be9e72ee44639b2a86edd2d6c2de0eca09d9",
+    "knowledge/core.mjs": "a9133a7e438314406076605e374d58cd0f60d8c310abd3799644a67553812c07",
+    "knowledge/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+    "knowledge/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "knowledge/pilot.json": "c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf",
+    "knowledge/registry.mjs": "316c7c0777a0438936679e5f07d71dd3639bbb61580f418a9a1546caff6986cd",
+    "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6"
+  },
+  "finished": "2026-11-27T01:12:20.984Z"
+}

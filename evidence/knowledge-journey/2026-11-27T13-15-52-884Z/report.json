@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checks": [
+    "complete unchanged original with empty qualified slots and labelled optional drafts",
+    "first reflection saved; earlier words protected; chosen past return visible on reload",
+    "unsaved later reflection survives Saved and Back navigation without becoming an activity log",
+    "chosen week intention and clear option are explicit; no automatic notification or session record",
+    "stale two-tab edit preserves both later versions",
+    "real export/import controls restore notes and repeated imports do not duplicate them",
+    "Saved and editor private content excluded from print, while original stays visible",
+    "layout fits phone, tablet and desktop viewport widths",
+    "quota refusal preserves the original store and editable unsaved later words",
+    "unavailable historical binding stays readable/exportable and cannot be opened on current source",
+    "source rejection still permits recovery of private Saved records",
+    "a delayed save cannot erase a newer draft after leaving and reopening the same note",
+    "missing Web Locks refuses save and keeps unsaved text",
+    "corrupted private record is preserved and not reset on opening or import",
+    "private text never sent over the network or put in a URL"
+  ],
+  "errors": [],
+  "limits": [
+    "Synthetic notes in fresh desktop Chromium contexts only; no physical phone, Safari, VoiceOver or qualified content approval.",
+    "Qualified explanation and Gurmat practice remain empty; existing draft omission remains visible."
+  ],
+  "environment": {
+    "platform": "darwin",
+    "node": "v26.0.0",
+    "browser": "158.0.8127.37",
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "exportFixtureBytes": 1509
+}

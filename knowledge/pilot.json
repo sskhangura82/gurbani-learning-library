@@ -1,0 +1,827 @@
+{
+  "schema": "glp.knowledge.editorial.v3",
+  "status": "NONPUBLISHING_DRAFT",
+  "sourcePolicy": "Exact Gurmukhi from pinned digital corpus; no third-party modern translations; qualified review and source rights pending",
+  "nodes": [
+    {
+      "id": "concept.humility",
+      "type": "concept",
+      "title": "Humility",
+      "pa": "ਨਿਮਰਤਾ",
+      "aliases": [
+        "nimarta",
+        "nimrata",
+        "humble",
+        "humility",
+        "ਨਿਮਰਤਾ",
+        "ਨੀਵੀ",
+        "ਨਿਮ੍ਰਤਾ"
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "lessonId": "lesson.humility.r1",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "concept.haumai",
+      "type": "concept",
+      "title": "Haumai",
+      "pa": "ਹਉਮੈ",
+      "aliases": [
+        "haumai",
+        "haume",
+        "haumay",
+        "ego",
+        "self-centeredness",
+        "ਹਉਮੈ",
+        "ਅਹੰਕਾਰ"
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "lessonId": "lesson.haumai.r1",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "concept.hukam",
+      "type": "concept",
+      "title": "Hukam",
+      "pa": "ਹੁਕਮ",
+      "aliases": [
+        "Hukam",
+        "ਹੁਕਮ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "concept.kirpa",
+      "type": "concept",
+      "title": "Kirpa",
+      "pa": "ਕਿਰਪਾ",
+      "aliases": [
+        "Kirpa",
+        "ਕਿਰਪਾ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "concept.shabad",
+      "type": "concept",
+      "title": "Shabad",
+      "pa": "ਸ਼ਬਦ",
+      "aliases": [
+        "Shabad",
+        "ਸ਼ਬਦ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "concept.seva",
+      "type": "concept",
+      "title": "Seva",
+      "pa": "ਸੇਵਾ",
+      "aliases": [
+        "Seva",
+        "ਸੇਵਾ"
+      ],
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "word.nivi",
+      "type": "word",
+      "title": "Nivi",
+      "pa": "ਨੀਵੀ",
+      "aliases": [
+        "Nivi",
+        "ਨੀਵੀ",
+        "ਨੀਵੀ"
+      ],
+      "senses": [
+        {
+          "form": "ਨੀਵੀ",
+          "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+          "occurrenceIds": [
+            "sggs.asa-di-vaar.pauri014.salok01.line04"
+          ],
+          "en": "Lowness/humility in the comparison of virtues; exact grammatical analysis pending.",
+          "pa": "ਨੀਵਾਂ ਰਹਿਣਾ; ਇਸ ਸੰਦਰਭ ਵਿੱਚ ਨਿਮਰਤਾ।",
+          "review": "AI_ASSISTED_DRAFT",
+          "sourceBindings": [
+            {
+              "id": "sggs.asa-di-vaar.pauri014.salok01.line04",
+              "sha256": "81bd2d546e0710478991e0355535da210948f911aa239784ef11d8712dc60110"
+            }
+          ]
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "word.mithat",
+      "type": "word",
+      "title": "Mithat",
+      "pa": "ਮਿਠਤੁ",
+      "aliases": [
+        "Mithat",
+        "ਮਿਠਤੁ",
+        "ਮਿਠਤੁ"
+      ],
+      "senses": [
+        {
+          "form": "ਮਿਠਤੁ",
+          "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+          "occurrenceIds": [
+            "sggs.asa-di-vaar.pauri014.salok01.line04"
+          ],
+          "en": "Sweetness or gentleness in conduct, in this Salok.",
+          "pa": "ਮਿਠਾਸ; ਚੰਗੇ ਵਿਹਾਰ ਦੀ ਮਿਠਾਸ।",
+          "review": "AI_ASSISTED_DRAFT",
+          "sourceBindings": [
+            {
+              "id": "sggs.asa-di-vaar.pauri014.salok01.line04",
+              "sha256": "81bd2d546e0710478991e0355535da210948f911aa239784ef11d8712dc60110"
+            }
+          ]
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "word.haumai",
+      "type": "word",
+      "title": "Haumai",
+      "pa": "ਹਉਮੈ",
+      "aliases": [
+        "Haumai",
+        "ਹਉਮੈ",
+        "ਹਉਮੈ"
+      ],
+      "senses": [
+        {
+          "form": "ਹਉਮੈ",
+          "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+          "occurrenceIds": [
+            "sggs.asa-di-vaar.pauri007.salok02.line01",
+            "sggs.asa-di-vaar.pauri007.salok02.line02",
+            "sggs.asa-di-vaar.pauri007.salok02.line03",
+            "sggs.asa-di-vaar.pauri007.salok02.line04",
+            "sggs.asa-di-vaar.pauri007.salok02.line05"
+          ],
+          "en": "Self-centred orientation as discussed in this Salok; not a universal lexical equivalence to ego.",
+          "pa": "ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ।",
+          "review": "AI_ASSISTED_DRAFT",
+          "sourceBindings": [
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line01",
+              "sha256": "cd027e5b507f13185c3bd65a832ed5c172012afba19c81ce7c46f5686173902f"
+            },
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line02",
+              "sha256": "156e618cfded18d00999cb1e6a76da2e9918f2e0ba46d609581df7a8aea8de27"
+            },
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line03",
+              "sha256": "f130b5946d387fdcf2704ee52df4853358af1091042f69d5e449864d6e88f34c"
+            },
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line04",
+              "sha256": "42be81ae229251e3b2ca6e46179e7221a9e990790f7c06ef29250e69e9e795f5"
+            },
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line05",
+              "sha256": "0c509888865797ef284c3901ac5e378a9fbf791374bf5bc66c85b35759013465"
+            }
+          ]
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "word.hukam",
+      "type": "word",
+      "title": "Hukam",
+      "pa": "ਹੁਕਮ",
+      "aliases": [
+        "Hukam",
+        "ਹੁਕਮ",
+        "ਹੁਕਮੁ"
+      ],
+      "senses": [
+        {
+          "form": "ਹੁਕਮੁ",
+          "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+          "occurrenceIds": [
+            "sggs.asa-di-vaar.pauri007.salok02.line04"
+          ],
+          "en": "The exact form ਹੁਕਮੁ in this passage refers to Divine order/command; full grammar review pending.",
+          "pa": "ਇਸ ਪੰਕਤੀ ਵਿੱਚ ਰੱਬੀ ਹੁਕਮ।",
+          "review": "AI_ASSISTED_DRAFT",
+          "sourceBindings": [
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line04",
+              "sha256": "42be81ae229251e3b2ca6e46179e7221a9e990790f7c06ef29250e69e9e795f5"
+            }
+          ]
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "word.kirpa",
+      "type": "word",
+      "title": "Kirpa",
+      "pa": "ਕਿਰਪਾ",
+      "aliases": [
+        "Kirpa",
+        "ਕਿਰਪਾ",
+        "ਕਿਰਪਾ"
+      ],
+      "senses": [
+        {
+          "form": "ਕਿਰਪਾ",
+          "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+          "occurrenceIds": [
+            "sggs.asa-di-vaar.pauri007.salok02.line06"
+          ],
+          "en": "Grace or mercy in relation to practising the Guru's Shabad.",
+          "pa": "ਮਿਹਰ ਜਾਂ ਕਿਰਪਾ।",
+          "review": "AI_ASSISTED_DRAFT",
+          "sourceBindings": [
+            {
+              "id": "sggs.asa-di-vaar.pauri007.salok02.line06",
+              "sha256": "0943d976f77b081b3c4794daaebc3d48a95207223f3ff1c014ffe577f5c38cb9"
+            }
+          ]
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "word.bhalo",
+      "type": "word",
+      "title": "Bhalo",
+      "pa": "ਭਲੋ",
+      "aliases": [
+        "Bhalo",
+        "ਭਲੋ",
+        "ਭਲੋ"
+      ],
+      "senses": [
+        {
+          "form": "ਭਲੋ",
+          "passageId": "sggs.kabir.salok007",
+          "occurrenceIds": [
+            "sggs.kabir.salok007.line01"
+          ],
+          "en": "Good, in the speaker's contrast with his own shortcomings.",
+          "pa": "ਚੰਗਾ; ਆਪਣੇ ਆਪ ਨਾਲ ਕੀਤੀ ਤੁਲਨਾ ਵਿੱਚ।",
+          "review": "AI_ASSISTED_DRAFT",
+          "sourceBindings": [
+            {
+              "id": "sggs.kabir.salok007.line01",
+              "sha256": "8ba0a6d453d062901d3bb8fe59d073c5598a02374432f65622c55e435ff3262f"
+            }
+          ]
+        }
+      ],
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "study.intellectual-humility",
+      "type": "study",
+      "title": "Intellectual humility",
+      "pa": "ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ",
+      "aliases": [
+        "intellectual humility",
+        "psychology",
+        "self awareness"
+      ],
+      "discipline": "psychology",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/34569872/",
+      "citation": "Porter et al., Clarifying the Content of Intellectual Humility, J Pers Assess 2022",
+      "review": "EDITORIAL_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "PSYCHOLOGY"
+      }
+    },
+    {
+      "id": "course.human-mind",
+      "type": "course",
+      "title": "Understanding the human mind",
+      "pa": "ਮਨ ਦੀ ਸਮਝ",
+      "orderedLessonIds": [
+        "lesson.haumai.r1",
+        "lesson.humility.r1"
+      ],
+      "review": "DRAFT_PATHWAY_NOT_APPROVED",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "lesson.humility.r1",
+      "type": "lesson",
+      "title": "Humility · guided study",
+      "pa": "ਨਿਮਰਤਾ",
+      "subjectId": "concept.humility",
+      "revision": 2,
+      "review": "AI_ASSISTED_DRAFT",
+      "simple": {
+        "en": "Gurmat humility means letting go of self-importance while remaining truthful, responsible and open to the Guru's wisdom. It is not self-hatred or accepting injustice.",
+        "pa": "ਨਿਮਰਤਾ ਦਾ ਭਾਵ ਆਪਣੇ ਆਪ ਨੂੰ ਵੱਡਾ ਸਮਝਣ ਦਾ ਅਹੰਕਾਰ ਛੱਡਣਾ ਅਤੇ ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ ਨੂੰ ਸੱਚੇ ਮਨ ਨਾਲ ਅਪਣਾਉਣਾ ਹੈ। ਇਹ ਆਪਣੇ ਆਪ ਨੂੰ ਹੀਣ ਸਮਝਣਾ ਨਹੀਂ।"
+      },
+      "detailed": {
+        "en": "Ang 470 contrasts impressive outward appearance with inward sincerity; Kabir's Salok 7 turns attention toward one's own shortcomings. Read these with Guru Angad's account of Haumai, grace and living the Shabad. Humility is not just politeness or an absence of confidence.",
+        "pa": "ਅੰਗ ੪੭੦ ਦੇ ਸਲੋਕ ਵਿੱਚ ਬਾਹਰਲੇ ਦਿਖਾਵੇ ਅਤੇ ਅੰਦਰਲੀ ਸੱਚਾਈ ਦਾ ਫ਼ਰਕ ਹੈ। ਕਬੀਰ ਜੀ ਦਾ ਸਲੋਕ ਆਪਣੇ ਅੰਦਰ ਝਾਤ ਮਾਰਨ ਲਈ ਪ੍ਰੇਰਦਾ ਹੈ। ਹਉਮੈ ਦੀ ਸਮਝ ਅਤੇ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਨੂੰ ਜੀਵਨ ਵਿੱਚ ਅਪਣਾਉਣਾ ਇਸ ਵਿਚਾਰ ਨਾਲ ਜੁੜਦੇ ਹਨ।"
+      },
+      "deep": {
+        "en": "Study the difference between inward orientation and outward gestures. The hunter bows to deceive; therefore lowering oneself physically is insufficient. Compare self-examination with intellectual humility while retaining the distinct Sikh relationship to Guru, grace and Divine remembrance. Ask how truthful accountability can coexist with compassion.",
+        "pa": "ਸਿਰ ਨਿਵਾਉਣ ਨਾਲ ਹੀ ਨਿਮਰਤਾ ਸਾਬਤ ਨਹੀਂ ਹੁੰਦੀ। ਮਨ ਦੀ ਨੀਅਤ ਅਤੇ ਕਰਮ ਵੀ ਮਹੱਤਵਪੂਰਨ ਹਨ। ਮਨੋਵਿਗਿਆਨਕ ਵਿਚਾਰਾਂ ਨਾਲ ਤੁਲਨਾ ਕਰਦੇ ਸਮੇਂ ਗੁਰਮਤਿ ਵਿੱਚ ਗੁਰੂ, ਕਿਰਪਾ ਅਤੇ ਨਾਮ ਦੇ ਸੰਦਰਭ ਨੂੰ ਵੱਖਰਾ ਰੱਖੋ।"
+      },
+      "sourcePassageIds": [
+        "sggs.asa-di-vaar.pauri014.salok01",
+        "sggs.kabir.salok007"
+      ],
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri014.salok01",
+          "sha256": "7a8e97c9a0e4a7bf29bb38b33bf310d904b1da0f87a46718e2fec83ee08ea260"
+        },
+        {
+          "id": "sggs.kabir.salok007",
+          "sha256": "54733d0c1af2e54e39188ec7aee2cdf9f2d97b75cc269aa9528843a9cfdd2153"
+        }
+      ],
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    },
+    {
+      "id": "lesson.haumai.r1",
+      "type": "lesson",
+      "title": "Haumai · guided study",
+      "pa": "ਹਉਮੈ",
+      "subjectId": "concept.haumai",
+      "revision": 1,
+      "review": "AI_ASSISTED_DRAFT",
+      "simple": {
+        "en": "Haumai is a self-centred spiritual orientation, not simply healthy individuality or the ability to say ‘I’. Guru Angad links its release with grace and living the Guru's Shabad.",
+        "pa": "ਹਉਮੈ ਆਪਣੇ ਆਪ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਆਤਮਕ ਅਵਸਥਾ ਹੈ। ਇਹ ਸਿਰਫ਼ ਆਮ ਸਵੈ-ਪਛਾਣ ਨਹੀਂ। ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ ਇਸ ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕਿਰਪਾ ਅਤੇ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਦੀ ਕਮਾਈ ਦੱਸਦੇ ਹਨ।"
+      },
+      "detailed": {
+        "en": "The Ang 466 Salok asks how Haumai arises and what discipline releases it. Its answer places Haumai within Hukam, describes bondage and rebirth, and uses the metaphor of a persistent illness. The next lines identify grace and practice of the Shabad rather than mere self-help.",
+        "pa": "ਸਲੋਕ ਵਿੱਚ ਹਉਮੈ ਦੇ ਉਤਪੰਨ ਹੋਣ ਅਤੇ ਦੂਰ ਹੋਣ ਦਾ ਪ੍ਰਸ਼ਨ ਹੈ। ਹੁਕਮ, ਬੰਧਨ, ਜਨਮ ਅਤੇ ਰੋਗ ਦੇ ਰੂਪਕ ਤੋਂ ਬਾਅਦ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਦੀ ਕਮਾਈ ਅਤੇ ਕਿਰਪਾ ਵੱਲ ਧਿਆਨ ਜਾਂਦਾ ਹੈ।"
+      },
+      "deep": {
+        "en": "Distinguish the spiritual account from a modern theory of identity or bias. Research on intellectual humility may illuminate willingness to acknowledge limitations, but it does not explain Naam, Hukam or liberation. The illness metaphor is not a medical diagnosis. Consider how self-examination, humility, truthful action and grace relate without reducing spiritual liberation to a behavioural outcome.",
+        "pa": "ਮਨੋਵਿਗਿਆਨਕ ਸਵੈ-ਪਛਾਣ ਅਤੇ ਗੁਰਬਾਣੀ ਦੀ ਹਉਮੈ ਨੂੰ ਇਕੋ ਅਰਥ ਨਾ ਦਿਓ। ਰੋਗ ਦਾ ਰੂਪਕ ਡਾਕਟਰੀ ਨਿਦਾਨ ਨਹੀਂ। ਨਾਮ, ਹੁਕਮ ਅਤੇ ਮੁਕਤੀ ਦੇ ਆਤਮਕ ਸੰਦਰਭ ਨੂੰ ਸੰਭਾਲ ਕੇ ਸਮਝੋ।"
+      },
+      "sourcePassageIds": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ],
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.1",
+      "from": "sggs.asa-di-vaar.pauri014.salok01",
+      "to": "author.guru-nanak",
+      "type": "written_by",
+      "evidence": "Enclosing heading and corpus context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.2",
+      "from": "composition.asa-di-vaar",
+      "to": "sggs.asa-di-vaar.pauri014.salok01",
+      "type": "contains",
+      "evidence": "Pinned corpus boundaries",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.3",
+      "from": "sggs.asa-di-vaar.pauri014.salok01",
+      "to": "raag.asa",
+      "type": "in_raag",
+      "evidence": "Asa Di Vaar context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.4",
+      "from": "sggs.asa-di-vaar.pauri007.salok02",
+      "to": "author.guru-angad",
+      "type": "written_by",
+      "evidence": "Enclosing heading and corpus context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.5",
+      "from": "composition.asa-di-vaar",
+      "to": "sggs.asa-di-vaar.pauri007.salok02",
+      "type": "contains",
+      "evidence": "Pinned corpus boundaries",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.6",
+      "from": "sggs.asa-di-vaar.pauri007.salok02",
+      "to": "raag.asa",
+      "type": "in_raag",
+      "evidence": "Asa Di Vaar context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.7",
+      "from": "sggs.kabir.salok007",
+      "to": "author.bhagat-kabir",
+      "type": "written_by",
+      "evidence": "Enclosing heading and corpus context",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.8",
+      "from": "composition.kabir-saloks",
+      "to": "sggs.kabir.salok007",
+      "type": "contains",
+      "evidence": "Pinned corpus boundaries",
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.9",
+      "from": "sggs.asa-di-vaar.pauri014.salok01",
+      "to": "concept.humility",
+      "type": "discusses",
+      "reason": "The simmal tree and deceptive bowing distinguish outward posture from inner virtue.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri014.salok01"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri014.salok01",
+          "sha256": "7a8e97c9a0e4a7bf29bb38b33bf310d904b1da0f87a46718e2fec83ee08ea260"
+        }
+      ]
+    },
+    {
+      "id": "edge.10",
+      "from": "sggs.kabir.salok007",
+      "to": "concept.humility",
+      "type": "discusses",
+      "reason": "The speaker reverses the impulse to rank oneself above others; read as spiritual self-examination, not self-abuse.",
+      "refs": [
+        "sggs.kabir.salok007"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.kabir.salok007",
+          "sha256": "54733d0c1af2e54e39188ec7aee2cdf9f2d97b75cc269aa9528843a9cfdd2153"
+        }
+      ]
+    },
+    {
+      "id": "edge.11",
+      "from": "sggs.asa-di-vaar.pauri007.salok02",
+      "to": "concept.haumai",
+      "type": "discusses",
+      "reason": "Explicit questions about the origin and release of Haumai.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ]
+    },
+    {
+      "id": "edge.12",
+      "from": "sggs.asa-di-vaar.pauri007.salok02",
+      "to": "concept.hukam",
+      "type": "discusses",
+      "reason": "Hukam explicitly appears in the account of Haumai.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ]
+    },
+    {
+      "id": "edge.13",
+      "from": "sggs.asa-di-vaar.pauri007.salok02",
+      "to": "concept.kirpa",
+      "type": "discusses",
+      "reason": "Grace is connected to living the Guru's teaching.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ]
+    },
+    {
+      "id": "edge.14",
+      "from": "concept.humility",
+      "to": "concept.haumai",
+      "type": "related_concept",
+      "reason": "Self-importance and inward humility are connected, not antonyms in every context.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri014.salok01",
+        "sggs.asa-di-vaar.pauri007.salok02",
+        "sggs.kabir.salok007"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri014.salok01",
+          "sha256": "7a8e97c9a0e4a7bf29bb38b33bf310d904b1da0f87a46718e2fec83ee08ea260"
+        },
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        },
+        {
+          "id": "sggs.kabir.salok007",
+          "sha256": "54733d0c1af2e54e39188ec7aee2cdf9f2d97b75cc269aa9528843a9cfdd2153"
+        }
+      ]
+    },
+    {
+      "id": "edge.15",
+      "from": "concept.haumai",
+      "to": "concept.shabad",
+      "type": "related_concept",
+      "reason": "The Salok connects grace with practising the Guru's Shabad.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ]
+    },
+    {
+      "id": "edge.16",
+      "from": "concept.haumai",
+      "to": "concept.hukam",
+      "type": "related_concept",
+      "reason": "The same Salok situates Haumai within Hukam.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ]
+    },
+    {
+      "id": "edge.17",
+      "from": "word.nivi",
+      "to": "sggs.asa-di-vaar.pauri014.salok01",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.asa-di-vaar.pauri014.salok01.line04"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.18",
+      "from": "word.mithat",
+      "to": "sggs.asa-di-vaar.pauri014.salok01",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.asa-di-vaar.pauri014.salok01.line04"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.19",
+      "from": "word.haumai",
+      "to": "sggs.asa-di-vaar.pauri007.salok02",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.asa-di-vaar.pauri007.salok02.line01",
+        "sggs.asa-di-vaar.pauri007.salok02.line02",
+        "sggs.asa-di-vaar.pauri007.salok02.line03",
+        "sggs.asa-di-vaar.pauri007.salok02.line04",
+        "sggs.asa-di-vaar.pauri007.salok02.line05"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.20",
+      "from": "word.hukam",
+      "to": "sggs.asa-di-vaar.pauri007.salok02",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.asa-di-vaar.pauri007.salok02.line04"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.21",
+      "from": "word.kirpa",
+      "to": "sggs.asa-di-vaar.pauri007.salok02",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.asa-di-vaar.pauri007.salok02.line06"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.22",
+      "from": "word.bhalo",
+      "to": "sggs.kabir.salok007",
+      "type": "attested_in",
+      "evidence": [
+        "sggs.kabir.salok007.line01"
+      ],
+      "review": "SOURCE_DRAFT"
+    },
+    {
+      "id": "edge.23",
+      "from": "concept.humility",
+      "to": "study.intellectual-humility",
+      "type": "psychological_parallel",
+      "reason": "Acknowledge limits of one's knowledge and remain open to correction.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri014.salok01"
+      ],
+      "review": "EDITORIAL_DRAFT",
+      "similarity": "Both support examining self-importance and being open to correction.",
+      "difference": "The psychological construct concerns knowledge and belief; Gurmat humility has a devotional, ethical and spiritual context.",
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri014.salok01",
+          "sha256": "7a8e97c9a0e4a7bf29bb38b33bf310d904b1da0f87a46718e2fec83ee08ea260"
+        }
+      ]
+    },
+    {
+      "id": "edge.25",
+      "from": "concept.humility",
+      "to": "lesson.humility.r1",
+      "type": "has_lesson",
+      "review": "EDITORIAL_DRAFT",
+      "reason": "Versioned educational material belongs to this topic, separate from the original scripture.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri014.salok01",
+        "sggs.kabir.salok007"
+      ],
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri014.salok01",
+          "sha256": "7a8e97c9a0e4a7bf29bb38b33bf310d904b1da0f87a46718e2fec83ee08ea260"
+        },
+        {
+          "id": "sggs.kabir.salok007",
+          "sha256": "54733d0c1af2e54e39188ec7aee2cdf9f2d97b75cc269aa9528843a9cfdd2153"
+        }
+      ]
+    },
+    {
+      "id": "edge.26",
+      "from": "concept.haumai",
+      "to": "lesson.haumai.r1",
+      "type": "has_lesson",
+      "review": "EDITORIAL_DRAFT",
+      "reason": "Versioned educational material belongs to this topic, separate from the original scripture.",
+      "refs": [
+        "sggs.asa-di-vaar.pauri007.salok02"
+      ],
+      "sourceBindings": [
+        {
+          "id": "sggs.asa-di-vaar.pauri007.salok02",
+          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "angCount": 3,
+    "passageCount": 3,
+    "originalOccurrences": 19,
+    "fullSecondaryCollationOccurrences": 19,
+    "qualifiedApproved": 0,
+    "psychologyStudies": 1,
+    "comparativeReligionStudies": 0
+  },
+  "integration": {
+    "legacyIdMigration": "pending; never rewrite existing reader IDs or learning keys",
+    "dailyHukamnama": "PR43 distinct event references; identity crosswalk pending",
+    "existingReaderRoutes": "No full Ang reader live; this slice must use its own full Salok view until verified deep links exist",
+    "productZero": "advisory evidence only; no production authority"
+  },
+  "identityPolicy": {
+    "status": "STRUCTURAL_PILOT_IDS_PENDING_CROSS_CORPUS_REVIEW",
+    "logicalIds": "Stable structural passage and verse IDs; heading IDs distinct; edition locators separate; legacy aliases retained. No existing reader storage changes.",
+    "search": "Normalize copies for retrieval only, never modify original text",
+    "sourceMetadata": "Digital witness comparison is not independent print collation or qualified scholarly approval"
+  },
+  "passageDescriptions": [
+    {
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "title": "Humility beyond appearances",
+      "pa": "ਅਸਲੀ ਨਿਮਰਤਾ",
+      "aliases": [
+        "ang 470"
+      ]
+    },
+    {
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "title": "Understanding Haumai and grace",
+      "pa": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+      "aliases": [
+        "ang 466"
+      ]
+    },
+    {
+      "passageId": "sggs.kabir.salok007",
+      "title": "Turning criticism inward",
+      "pa": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+      "aliases": [
+        "ang 1364"
+      ]
+    }
+  ],
+  "accessPolicy": {
+    "schema": "glp.knowledge.public-access.v1",
+    "audience": "PUBLIC",
+    "psychology": "PUBLIC",
+    "comparativeReligion": "PRIVATE_ONLY"
+  }
+}
