@@ -1,0 +1,40 @@
+2026-11-27T02:20:05.483Z pw:browser <launching> /tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/browsers/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/hk/7t90scbj1wbd5q1wh0ztvxz80000gn/T/playwright_chromiumdev_profile-FW624t --remote-debugging-pipe --no-startup-window
+2026-11-27T02:20:05.485Z pw:browser <launched> pid=81774
+2026-11-27T02:20:05.776Z pw:browser [pid=81774] <gracefully close start>
+2026-11-27T02:20:05.803Z pw:browser [pid=81774] <process did exit: exitCode=0, signal=null>
+2026-11-27T02:20:05.803Z pw:browser [pid=81774] starting temporary directories cleanup
+2026-11-27T02:20:05.818Z pw:browser [pid=81774] finished temporary directories cleanup
+2026-11-27T02:20:05.818Z pw:browser [pid=81774] <gracefully close end>
+{
+  "startedAt": "2026-11-27T02:20:05.475Z",
+  "engine": "Pinned full Chromium channel; no application code",
+  "cases": [
+    {
+      "method": "commit-event",
+      "notRestored": [],
+      "observed": {
+        "marker": "synthetic retained document",
+        "events": [
+          {
+            "persisted": false,
+            "type": "pageshow"
+          },
+          {
+            "persisted": true,
+            "type": "pagehide"
+          },
+          {
+            "persisted": true,
+            "type": "pageshow"
+          }
+        ],
+        "scrollY": 700,
+        "url": "/a"
+      },
+      "status": "passed"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "resolvedExecutable": "/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/browsers/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "completedAt": "2026-11-27T02:20:05.818Z"
+}

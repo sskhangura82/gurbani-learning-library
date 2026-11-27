@@ -72,3 +72,7 @@ Earlier SRI baseline and candidate reports remain under `../reader-sri/`; final 
 - The latest independent review register at `319266054b0c805c8862af3067866007b5ce7c26` was read after these workstreams were already underway. It separately confirms that PR #47 is not SK-01 and reports a deterministic SK-01 mechanism. This candidate still requires its own independent criteria and findings.
 
 The source main branch and phone-preview main branch remain unchanged. This report requests independent verification of a frozen candidate, not a merge or deployment.
+
+## Hosted follow-up after the first committed candidate
+
+The first hosted reader run on `b69d6b31941adc025a1159ab0826d39a3fb58bc3` failed; the separate library run passed. The application remains frozen. `ci-followup/README.md` and `ci-followup/FOLLOWUP.md` distinguish the installation failure, inherited asset-count mismatch, the additional cache-key instrument correction, and the explicitly scoped full-browser lane. The failed runs remain retained. They must not be replaced with the earlier local PASS or described as application changes. Hosted verification of the tooling follow-up is recorded against its eventual committed head in GitHub Actions.

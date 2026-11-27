@@ -1,0 +1,57 @@
+{
+  "startedAt": "2026-11-27T02:18:24.906Z",
+  "engine": "Pinned full Chromium channel; no application code",
+  "cases": [
+    {
+      "method": "javascript-poll",
+      "notRestored": [],
+      "observed": {
+        "marker": "synthetic retained document",
+        "events": [
+          {
+            "persisted": false,
+            "type": "pageshow"
+          },
+          {
+            "persisted": true,
+            "type": "pagehide"
+          },
+          {
+            "persisted": true,
+            "type": "pageshow"
+          }
+        ],
+        "scrollY": 700,
+        "url": "/a"
+      },
+      "status": "passed"
+    },
+    {
+      "method": "commit-event",
+      "notRestored": [],
+      "observed": {
+        "marker": "synthetic retained document",
+        "events": [
+          {
+            "persisted": false,
+            "type": "pageshow"
+          },
+          {
+            "persisted": true,
+            "type": "pagehide"
+          },
+          {
+            "persisted": true,
+            "type": "pageshow"
+          }
+        ],
+        "scrollY": 700,
+        "url": "/a"
+      },
+      "status": "passed"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "resolvedExecutable": "/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/browsers/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "completedAt": "2026-11-27T02:18:25.581Z"
+}
