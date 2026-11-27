@@ -1,0 +1,44 @@
+{
+  "checkedAtUtc": "2026-11-27T01:38:02.313892+00:00",
+  "reportedCiCommit": "8975171aef5d45cf544ab6bc71ea9c99181879f6",
+  "publishedBase": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+  "files": [
+    {
+      "path": "js/sukhmani-reader.js",
+      "reportedReviewCommitBlob": "9471444afd7317593e734913f295e49f48a837d3",
+      "publishedBaseBlob": "9471444afd7317593e734913f295e49f48a837d3",
+      "identical": true
+    },
+    {
+      "path": "js/sukhmani-learning.js",
+      "reportedReviewCommitBlob": "2bfa456fa456b04b3ad121d19fafcfacf146cc1b",
+      "publishedBaseBlob": "2bfa456fa456b04b3ad121d19fafcfacf146cc1b",
+      "identical": true
+    },
+    {
+      "path": "js/shared-learning.js",
+      "reportedReviewCommitBlob": "1c65f498ce4b1fbdb7cd524e195b8c909f4ff20d",
+      "publishedBaseBlob": "1c65f498ce4b1fbdb7cd524e195b8c909f4ff20d",
+      "identical": true
+    },
+    {
+      "path": "css/sukhmani.css",
+      "reportedReviewCommitBlob": "757301798d0a9675ab928ead77960692ec60b704",
+      "publishedBaseBlob": "757301798d0a9675ab928ead77960692ec60b704",
+      "identical": true
+    },
+    {
+      "path": "css/japji-full.css",
+      "reportedReviewCommitBlob": "5e1bb88df6b53d329722c55e1302d90e5c84df83",
+      "publishedBaseBlob": "5e1bb88df6b53d329722c55e1302d90e5c84df83",
+      "identical": true
+    },
+    {
+      "path": "tests/sukhmani-browser.mjs",
+      "reportedReviewCommitBlob": "e13216091bc99430ad8e2cd3922858981cdf1630",
+      "publishedBaseBlob": "e13216091bc99430ad8e2cd3922858981cdf1630",
+      "identical": true
+    }
+  ],
+  "allIdentical": true
+}

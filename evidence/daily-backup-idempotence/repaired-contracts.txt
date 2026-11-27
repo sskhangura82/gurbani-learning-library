@@ -1,0 +1,103 @@
+TAP version 13
+# Subtest: Retrying the original conflicting backup leaves bytes, revision, count and identity allocation unchanged
+ok 1 - Retrying the original conflicting backup leaves bytes, revision, count and identity allocation unchanged
+  ---
+  duration_ms: 3.055625
+  type: 'test'
+  ...
+# Subtest: JSON key order does not turn an exact note or a preserved version into a new edit
+ok 2 - JSON key order does not turn an exact note or a preserved version into a new edit
+  ---
+  duration_ms: 0.813708
+  type: 'test'
+  ...
+# Subtest: Unrelated explicit identities with identical content remain independent notes
+ok 3 - Unrelated explicit identities with identical content remain independent notes
+  ---
+  duration_ms: 0.276875
+  type: 'test'
+  ...
+# Subtest: Every distinct exact text, timestamp and source binding remains a separate preserved version
+ok 4 - Every distinct exact text, timestamp and source binding remains a separate preserved version
+  ---
+  duration_ms: 3.748625
+  type: 'test'
+  ...
+# Subtest: A backup already containing its conflict copy adds no manufactured duplicate in either input order
+ok 5 - A backup already containing its conflict copy adds no manufactured duplicate in either input order
+  ---
+  duration_ms: 0.366375
+  type: 'test'
+  ...
+# Subtest: Generated copies cannot occupy an explicit incoming identity
+ok 6 - Generated copies cannot occupy an explicit incoming identity
+  ---
+  duration_ms: 0.24425
+  type: 'test'
+  ...
+# Subtest: Nested conflict versions and their exports restore without repeated growth
+ok 7 - Nested conflict versions and their exports restore without repeated growth
+  ---
+  duration_ms: 0.465042
+  type: 'test'
+  ...
+# Subtest: Existing accidental duplicates are retained but not multiplied
+ok 8 - Existing accidental duplicates are retained but not multiplied
+  ---
+  duration_ms: 0.12375
+  type: 'test'
+  ...
+# Subtest: Mixed imports add only new identities and new versions with one revision and write
+ok 9 - Mixed imports add only new identities and new versions with one revision and write
+  ---
+  duration_ms: 0.350667
+  type: 'test'
+  ...
+# Subtest: Concurrent retries reread under the lock and preserve a single incoming version
+ok 10 - Concurrent retries reread under the lock and preserve a single incoming version
+  ---
+  duration_ms: 0.224083
+  type: 'test'
+  ...
+# Subtest: At the record limit, an already represented restore is unchanged and genuinely new content refuses atomically
+ok 11 - At the record limit, an already represented restore is unchanged and genuinely new content refuses atomically
+  ---
+  duration_ms: 8.808959
+  type: 'test'
+  ...
+# Subtest: Quota failure preserves the entire old store and unchanged restores do not attempt a write
+ok 12 - Quota failure preserves the entire old store and unchanged restores do not attempt a write
+  ---
+  duration_ms: 0.267208
+  type: 'test'
+  ...
+# PASS empty store is read without writing and immutable snapshots cannot mutate it
+# PASS source-bound question and Unicode reflection round-trip without trimming or normalization
+# PASS same-revision edit updates only intended record and keeps creation identity
+# PASS two tabs reread inside exclusive lock and preserve conflicting edits
+# PASS concurrent new notes both survive and one key is written per transaction
+# PASS existing historical note remains editable under its unavailable source binding
+# PASS note cannot be silently rebound onto a different date, source, or line
+# PASS malformed and unknown existing stores are preserved on save/import/export
+# PASS malformed, wrong-version, duplicate-id and oversized imports change nothing
+# PASS merge retains old notes and conflicting imported copies, repeated exact import is a no-op
+# PASS quota errors preserve previous note bytes for both save and full restore
+# PASS record and total-size limits refuse whole transaction without shortening text
+# PASS missing Web Locks refuses writes/import while read and export remain available
+# PASS exact line identity round-trips and duplicate/wrong identities are rejected
+# Private learning synthetic checks: 14 passed; 0 failed.
+# Subtest: tests/hukamnama-learning.mjs
+ok 2 - tests/hukamnama-learning.mjs
+  ---
+  duration_ms: 67.389625
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 88.795667

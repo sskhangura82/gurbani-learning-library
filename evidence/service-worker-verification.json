@@ -2,7 +2,7 @@
   "environment": "Node service-worker simulation; not a physical offline test",
   "checks": [
     {
-      "name": "56 static responses hash-verified before install, including all six additional Nitnem readers",
+      "name": "Exact prior 85-asset inventory plus eight bundled-library/Knowledge entries and four Daily shell entries; every on-disk and cached body hash and release URL checked",
       "status": "PASS"
     },
     {
@@ -30,7 +30,7 @@
       "status": "PASS"
     },
     {
-      "name": "Corrupted release fails installation and preserves prior active worker",
+      "name": "Corrupted installation rejects, deletes only the candidate cache and never activates; actual prior-worker preservation is separately browser-tested",
       "status": "PASS"
     }
   ]

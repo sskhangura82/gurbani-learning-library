@@ -1,0 +1,125 @@
+{
+  "schema": "glp.reader-sri-browser.v1",
+  "startedAtUtc": "2026-11-27T01:38:51.556Z",
+  "mode": "frozen-parent",
+  "base": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "checks": [
+    {
+      "name": "Unmodified nitnem/index.html renders its complete source",
+      "status": "PASS",
+      "sourceRows": 56,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified full-japji.html renders its complete source",
+      "status": "PASS",
+      "sourceRows": 385,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified sukhmani.html renders its complete source",
+      "status": "PASS",
+      "sourceRows": 2027,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified salok-mahalla9/index.html renders its complete source",
+      "status": "PASS",
+      "sourceRows": 114,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified salok-kabir/index.html renders its complete source",
+      "status": "PASS",
+      "sourceRows": 486,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Frozen parent altered-script probe: nitnem/index.html",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": true,
+      "markerExecuted": true,
+      "integrityRefused": false,
+      "repinHTML": false,
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "Frozen parent altered-script probe: full-japji.html",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/japji-full.js",
+      "expectedExecution": true,
+      "markerExecuted": true,
+      "integrityRefused": false,
+      "repinHTML": false,
+      "originalSha256": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f",
+      "alteredSha256": "70f35aa1f45d94f6ce1893b5acfc4d7ba52aec74deb26570bfa5136464ff9db8",
+      "consoleErrors": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "Frozen parent altered-script probe: sukhmani.html",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/sukhmani-reader.js",
+      "expectedExecution": true,
+      "markerExecuted": true,
+      "integrityRefused": false,
+      "repinHTML": false,
+      "originalSha256": "ac1c5551fe760a8315306c03586ddb2a13a11d79b510892335a7075f6c9bf86b",
+      "alteredSha256": "0292d3986d43c5a93bc1e5f55c50e658fdfad8782bfe867390851bdcf5b4b2f5",
+      "consoleErrors": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "Frozen parent altered-script probe: salok-mahalla9/index.html",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54308/gurbani-learning-library/nitnem/reader.js' with computed SHA-256 integrity 'zBjE4HBb7En/AWYO8Df0ULprSx7eo4KArAc2t2C1QjY='. The resource has been blocked."
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "name": "Frozen parent altered-script probe: salok-kabir/index.html",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54308/gurbani-learning-library/nitnem/reader.js' with computed SHA-256 integrity 'zBjE4HBb7En/AWYO8Df0ULprSx7eo4KArAc2t2C1QjY='. The resource has been blocked."
+      ],
+      "runtimeErrors": []
+    }
+  ],
+  "limits": [
+    "Fresh nonpersistent desktop Chromium contexts on localhost; no real iPhone, Safari or VoiceOver acceptance.",
+    "Service workers are blocked to isolate browser subresource enforcement from worker caching.",
+    "A matching integrity attribute checks subresource bytes relative to the served HTML. It does not authenticate compromised HTML, the service worker, or the root library module graph.",
+    "No content or qualified-review approval follows from these checks."
+  ],
+  "environment": {
+    "platform": "darwin",
+    "node": "v22.15.0",
+    "browser": "158.0.8127.37"
+  },
+  "completedAtUtc": "2026-11-27T01:38:53.715Z",
+  "status": "PASS"
+}

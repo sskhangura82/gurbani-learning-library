@@ -1,0 +1,15 @@
+PASS Independent Node hash equals pinned fixture and browser-style digest accepts exact bytes
+PASS Exact heading, first verse, Rahao and terminal boundary, with four rows on Ang 504 and fifteen on Ang 505
+PASS Eight numbered stanzas with the Rahao between 1 and 2
+PASS Amritsar midnight rollover at 18:30 UTC, independent of browser locale
+PASS Date syntax, leap years, and impossible dates
+PASS Two actual dated selections reference exactly one canonical Shabad object
+PASS Legacy archive encoding discrepancy holds without displaying substituted scripture
+PASS After midnight, a missing new reading stays pending; yesterday is not relabelled
+PASS Unknown past date, invalid date and future date never yield a Shabad
+PASS A same-date development fixture still cannot be promoted to today's approved reading
+PASS Tampered source bytes are rejected before parsing
+PASS Missing Rahao, reordered source, changed Ang, bad event binding, duplicate date, permission promotion and live-adapter promotion are rejected
+PASS Reader makes no live provider/API request and cannot play media; pending teaching not passed as approved
+13 fixture-only contracts passed. No live retrieval, media rights, scholarly approval, or physical-device acceptance established.
+Historical foundation preserved. Current connected-reader behavior is checked by the new delivery, learning, browser and integrity suites.

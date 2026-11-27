@@ -1,0 +1,178 @@
+TAP version 13
+# Subtest: the directory names ten distinct existing readers and does not duplicate Japji
+ok 1 - the directory names ten distinct existing readers and does not duplicate Japji
+  ---
+  duration_ms: 0.632
+  type: 'test'
+  ...
+# Subtest: every reader route exists and Saved entry preserves its exact reading route
+ok 2 - every reader route exists and Saved entry preserves its exact reading route
+  ---
+  duration_ms: 1.329833
+  type: 'test'
+  ...
+# Subtest: each source binding matches exact file bytes and declared identity
+ok 3 - each source binding matches exact file bytes and declared identity
+  ---
+  duration_ms: 17.518416
+  type: 'test'
+  ...
+# Subtest: source package metadata and existing manifests agree with the directory bindings
+ok 4 - source package metadata and existing manifests agree with the directory bindings
+  ---
+  duration_ms: 0.578584
+  type: 'test'
+  ...
+# Subtest: Nitnem preserves its mixed source families instead of relabelling everything SGGS
+ok 5 - Nitnem preserves its mixed source families instead of relabelling everything SGGS
+  ---
+  duration_ms: 0.114834
+  type: 'test'
+  ...
+# Subtest: directory records contain navigation metadata, not verse copies or authority claims
+ok 6 - directory records contain navigation metadata, not verse copies or authority claims
+  ---
+  duration_ms: 0.36625
+  type: 'test'
+  ...
+# Subtest: all catalog arrays, records and nested aliases/bindings are immutable
+ok 7 - all catalog arrays, records and nested aliases/bindings are immutable
+  ---
+  duration_ms: 0.068167
+  type: 'test'
+  ...
+# Subtest: whole-token directory search rejects substring traps and unrelated metadata
+ok 8 - whole-token directory search rejects substring traps and unrelated metadata
+  ---
+  duration_ms: 2.385375
+  type: 'test'
+  ...
+# Subtest: explicit Punjabi and transliterated title aliases resolve without searching descriptions
+ok 9 - explicit Punjabi and transliterated title aliases resolve without searching descriptions
+  ---
+  duration_ms: 0.480875
+  type: 'test'
+  ...
+# Subtest: empty search shows readers, punctuation-only and invalid input do not
+ok 10 - empty search shows readers, punctuation-only and invalid input do not
+  ---
+  duration_ms: 0.263417
+  type: 'test'
+  ...
+# Subtest: only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+ok 11 - only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+  ---
+  duration_ms: 0.143334
+  type: 'test'
+  ...
+# Subtest: Explore only links existing destinations and preserves literal-topic status
+ok 12 - Explore only links existing destinations and preserves literal-topic status
+  ---
+  duration_ms: 0.476583
+  type: 'test'
+  ...
+# Subtest: Simran and physiology remain distinct navigation categories
+ok 13 - Simran and physiology remain distinct navigation categories
+  ---
+  duration_ms: 0.108833
+  type: 'test'
+  ...
+# Subtest: planned modules are unavailable metadata rather than functioning links or substitutes
+ok 14 - planned modules are unavailable metadata rather than functioning links or substitutes
+  ---
+  duration_ms: 0.078542
+  type: 'test'
+  ...
+# Subtest: lookup helpers only return the declared catalogue entry
+ok 15 - lookup helpers only return the declared catalogue entry
+  ---
+  duration_ms: 0.055708
+  type: 'test'
+  ...
+# Subtest: Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+ok 16 - Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+  ---
+  duration_ms: 1984.566958
+  type: 'test'
+  ...
+# Subtest: Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest
+ok 17 - Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest
+  ---
+  duration_ms: 1553.755667
+  type: 'test'
+  ...
+# Subtest: Reader loader contract and reviewed original module closures remain exact
+ok 18 - Reader loader contract and reviewed original module closures remain exact
+  ---
+  duration_ms: 221.503041
+  type: 'test'
+  ...
+# Subtest: All 15 production pages carry exactly 52 independently inventoried script pins
+ok 19 - All 15 production pages carry exactly 52 independently inventoried script pins
+  ---
+  duration_ms: 186.265792
+  type: 'test'
+  ...
+# Subtest: Generated modules reproduce exactly and contain no executable import or export-from edges
+ok 20 - Generated modules reproduce exactly and contain no executable import or export-from edges
+  ---
+  duration_ms: 154.921625
+  type: 'test'
+  ...
+# Subtest: Ordinary check mode writes neither bundles nor HTML
+ok 21 - Ordinary check mode writes neither bundles nor HTML
+  ---
+  duration_ms: 90.785583
+  type: 'test'
+  ...
+# Subtest: Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+ok 22 - Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+  ---
+  duration_ms: 6.313083
+  type: 'test'
+  ...
+# Subtest: Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+ok 23 - Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+  ---
+  duration_ms: 5.631209
+  type: 'test'
+  ...
+# Subtest: Extra HTML and stale source cannot silently pass default checks
+ok 24 - Extra HTML and stale source cannot silently pass default checks
+  ---
+  duration_ms: 258.861459
+  type: 'test'
+  ...
+# Subtest: A pinned bundle cannot retain secondary imports or recover an inline execution path
+ok 25 - A pinned bundle cannot retain secondary imports or recover an inline execution path
+  ---
+  duration_ms: 9.820167
+  type: 'test'
+  ...
+# Subtest: Private toolchain lock is portable, complete, and preserves every registry pin
+ok 26 - Private toolchain lock is portable, complete, and preserves every registry pin
+  ---
+  duration_ms: 1.293334
+  type: 'test'
+  ...
+# Subtest: The observed logical-/tmp prefix lock corruption is refused before install
+ok 27 - The observed logical-/tmp prefix lock corruption is refused before install
+  ---
+  duration_ms: 0.593583
+  type: 'test'
+  ...
+# Subtest: Missing platform packages and changed package integrity cannot pass the lock gate
+ok 28 - Missing platform packages and changed package integrity cannot pass the lock gate
+  ---
+  duration_ms: 1.018959
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3829.612583

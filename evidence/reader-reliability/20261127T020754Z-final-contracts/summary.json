@@ -1,0 +1,88 @@
+{
+  "createdAt": "2026-11-27T02:07:55.585938+00:00",
+  "base": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "kind": "builder-final-contracts",
+  "node": "v22.15.0",
+  "results": [
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/source-integrity.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/01.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/sukhmani-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/02.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/03.log"
+    },
+    {
+      "command": [
+        "node",
+        "tools/refresh-reader-sri.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/04.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/reader-sri.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/05.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/06.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "evidence/reader-reliability/20261127T020754Z-final-contracts/07.log"
+    }
+  ],
+  "inputs": {
+    "full-japji.html": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2",
+    "nitnem/index.html": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c",
+    "sukhmani.html": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8",
+    "salok-mahalla9/index.html": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+    "salok-kabir/index.html": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+    "js/sukhmani-reader.js": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+    "sw.js": "b684a3fe401a22075ff3cb7f17411bfbf9c6e932c62f3627b7cce6a246adc30a",
+    "tools/refresh-reader-sri.mjs": "e2a2a102597fb8a20cc38a28690698c2e31e3266d16d635d3dc87915d17e5ce4",
+    "tools/build-offline.mjs": "1a3e20eb135b62009563bed77cb69fea7ec3bc243b0deb27bd62db3190597f55",
+    "tests/reader-sri.mjs": "cfd9c926963da05d55028f86b36d0c60019b1144b08ed5369e2fe51506267c30",
+    "tests/reader-sri-browser.mjs": "8ccc8d0cdbd4da65f38aa3a672b1c243de9f976c6b1454a0c90103b016a09679",
+    "tests/sukhmani-resume-browser.mjs": "3efbb5472c691362fe4e0f57516087008bc6eb274755f27252ec16e558811dcb",
+    "tests/source-integrity.mjs": "46a68922e0618b19da25bbd418591083cbce04002b3ea82e0662db023854df58",
+    "tests/source-integrity-browser.mjs": "13265facb5b96c7421c15871dbe7727e86ca5b4a5c74b8ba3fe5d7d5f98dc7d7",
+    "tests/sukhmani-browser.mjs": "8076aada2b4e7856731741cc93eb21872982a67684c70dfe9b3e8e630ba95892",
+    "tests/sukhmani-content.mjs": "c75e9c602ccf0e5243fccfb121fdd3802a5575bfdb6ef27d5757a1fd80ea8d54",
+    "tests/nitnem-content.mjs": "6b3ee11e6e97a8306dee1c4d0578c9fe2b28fcb158ba347d77fc447587733f12",
+    ".github/workflows/reader-qa.yml": "ee1e9ba322bbef94622876905daea7afd4f1db2e166423ca0dcd85144abb4ce3",
+    ".github/workflows/unified-library-qa.yml": "b55263b360d2e34930aa23c61c8522aa598d64f2096b8105aa302e87987479f6"
+  }
+}

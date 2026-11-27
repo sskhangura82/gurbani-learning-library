@@ -1,0 +1,95 @@
+{
+  "headRefOid": "69e24fe4adfccbd535de2b5f8ac0bab5ed720d94",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:11:27Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667704/job/140288623318",
+      "name": "frozen-inputs-and-delivery-contracts",
+      "startedAt": "2026-11-27T03:11:10Z",
+      "status": "COMPLETED",
+      "workflowName": "Complete library script integrity"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:11:27Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667567/job/140288623131",
+      "name": "verify-reader",
+      "startedAt": "2026-11-27T03:11:10Z",
+      "status": "COMPLETED",
+      "workflowName": "GLP Reader Quality Gate"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:11:29Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667654/job/140288623004",
+      "name": "library-candidate",
+      "startedAt": "2026-11-27T03:11:09Z",
+      "status": "COMPLETED",
+      "workflowName": "Unified library and saved-entry checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:11:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667580/job/140288622905",
+      "name": "contracts",
+      "startedAt": "2026-11-27T03:11:09Z",
+      "status": "COMPLETED",
+      "workflowName": "GLP Knowledge Pilot QA"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:11:36Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667580/job/140288716120",
+      "name": "browser",
+      "startedAt": "2026-11-27T03:11:26Z",
+      "status": "COMPLETED",
+      "workflowName": "GLP Knowledge Pilot QA"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:11:27Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667704/job/140288730113",
+      "name": "browser-enforcement-and-update-preservation",
+      "startedAt": "2026-11-27T03:11:28Z",
+      "status": "COMPLETED",
+      "workflowName": "Complete library script integrity"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:12:56Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667567/job/140288623193",
+      "name": "verify-sukhmani-browser",
+      "startedAt": "2026-11-27T03:11:09Z",
+      "status": "COMPLETED",
+      "workflowName": "GLP Reader Quality Gate"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:12:19Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667567/job/140288622974",
+      "name": "verify-nitnem-browser",
+      "startedAt": "2026-11-27T03:11:09Z",
+      "status": "COMPLETED",
+      "workflowName": "GLP Reader Quality Gate"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-27T03:12:53Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667567/job/140288623172",
+      "name": "verify-review-repairs-browser",
+      "startedAt": "2026-11-27T03:11:10Z",
+      "status": "COMPLETED",
+      "workflowName": "GLP Reader Quality Gate"
+    }
+  ]
+}

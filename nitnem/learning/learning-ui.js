@@ -35,7 +35,11 @@ function overview(node,course,bani,mode){
  }
  intro.append(elt('p','learn-coverage',coverageText(course,bani)));
  if(bani==='rehras')intro.append(note('Some stored Rehras passages contain several verse lines. Their meanings are labeled “Passage context.” Recurring Chaupai and Anand passages retain their own place within Rehras.'));
- intro.append(note('Meanings and study are original educational paraphrases. Earlier detailed studies are chiefly in English, with bilingual line meanings and passage summaries. These notes do not provide pronunciation instruction or recorded paath.'));
+ intro.append(note(bani==='salok-kabir'
+  ?'All 243 Saloks have English and Punjabi line explanations and passage-study drafts. The original Mahalla headings and named voices are preserved. Qualified Gurbani and Punjabi review is pending. Pronunciation teaching and recordings are planned separately.'
+  :bani==='salok-mahalla9'
+  ?'All 57 Saloks have English and Punjabi line explanations and passage-study drafts. Qualified Gurbani and Punjabi review is pending. Pronunciation teaching and recordings are planned separately.'
+  :'Meanings and study are original educational paraphrases. Earlier detailed studies are chiefly in English, with bilingual line meanings and passage summaries. These notes do not provide pronunciation instruction or recorded paath.'));
  const sources=elt('details','lesson-sources');sources.append(elt('summary','','Reference list'),references(course,r.sourceKeys));intro.append(sources);details.append(intro);node.append(details);
 }
 function vocabList(study){
@@ -72,7 +76,7 @@ function lineNote(course,bani,line){
  const entry=course?.closeTextNotes?.[bani+'|'+line.id];if(!entry||entry.sourceSha256!==line.sha256||line.held)return null;
  const aggregate=entry.kind==='AGGREGATED_SOURCE_RECORD_EDUCATIONAL_CONTEXT_NOT_LITERAL_TRANSLATION';
  const button=elt('button','simple-meaning');button.type='button';button.dataset.meaningLine=line.id;
- button.setAttribute('aria-label',aggregate?'Passage context. Tap to explore.':'Meaning for this line. Tap to explore.');
+ // The visible English and Punjabi meaning supplies the accessible name.
  const en=elt('span','english',entry.simpleEn),pa=elt('span','punjabi',entry.simplePa);en.lang='en';pa.lang='pa';
  button.append(en,pa,elt('span','expand-hint',(aggregate?'Passage context':entry.kind==='HEADING_OR_INVOCATION_CONTEXT'?'Heading / invocation':'Draft meaning')+' · tap to explore'));return button;
 }
@@ -88,7 +92,7 @@ function headingNote(course,bani,unit,heading){
  const entries=Object.values(course?.headingNotes||{});
  const entry=entries.find(e=>e.unitId===unit.id&&(e.headingSha256||e.sourceSha256||e.sourceAnchor?.sha256)===heading.sha256);
  if(!entry)return null;
- const box=elt('aside','heading-note');box.append(elt('p','meaning-label','Metre heading · educational context'));
+ const box=elt('aside','heading-note');box.append(elt('p','meaning-label',entry.label||'Metre heading · educational context'));
  const en=entry.simpleEn||entry.simple?.en,pa=entry.simplePa||entry.simple?.pa;if(en)box.append(paragraph(en,'en'));if(pa)box.append(paragraph(pa,'pa'));return box;
 }
 function nextIndex(course,bani,units,current){for(let i=current+1;i<units.length;i++)if(course?.unitLessons?.[bani+'|'+units[i].id])return i;return -1;}

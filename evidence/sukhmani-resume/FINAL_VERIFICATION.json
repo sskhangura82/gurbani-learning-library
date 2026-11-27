@@ -1,0 +1,31 @@
+{
+  "createdAt": "2026-11-27T02:05:57.258149+00:00",
+  "status": "BUILDER_CHECKS_PASS",
+  "independentReview": "pending",
+  "sourceBase": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "runtimeSha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+  "files": {
+    "js/sukhmani-reader.js": {
+      "sha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+      "syntax": "PASS"
+    },
+    "tests/sukhmani-resume-browser.mjs": {
+      "sha256": "3efbb5472c691362fe4e0f57516087008bc6eb274755f27252ec16e558811dcb",
+      "syntax": "PASS"
+    },
+    "tests/sukhmani-browser.mjs": {
+      "sha256": "8076aada2b4e7856731741cc93eb21872982a67684c70dfe9b3e8e630ba95892",
+      "syntax": "PASS"
+    }
+  },
+  "diffCheck": "PASS",
+  "focusedReport": "regression-runs/2026-11-27T02-04-17-684Z/report.json",
+  "focusedChecks": 10,
+  "existingReport": "existing-suite/20261127T020431Z/sukhmani-browser-verification.json",
+  "existingChecks": 35,
+  "physicalDeviceAcceptance": "NOT PERFORMED",
+  "linkedVisitPR47": "separate, not integrated",
+  "rapidScrollThenLeaveUnder200ms": "inherited, not established by these settled navigation tests",
+  "runtimeErrors": [],
+  "externalRequests": []
+}

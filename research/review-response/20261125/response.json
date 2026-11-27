@@ -1,0 +1,371 @@
+{
+  "schema": "glp.builder-response.v1",
+  "author": "ChatGPT builder; not the independent reviewer",
+  "claudeReviewCommit": "ffd3d179a16c9c656905dcedce34a080ffee54ff",
+  "reviewedAppBaseline": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+  "independentReReviewStatus": "PENDING",
+  "publicDeploymentStatus": "NOT_DEPLOYED",
+  "newCompositions": "Salok Mahalla9 held on a separate draft branch; excluded from this repair",
+  "findings": [
+    {
+      "id": "CI-S-01",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Jaap Sahib chhand 62: the invocation \"ਤੇਰਾ ਜੋਰੁ ॥\" is counted and taught as a verse line (reviewer's first claim of a reversed order is withdrawn)",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-02",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Jaap Sahib: the same word is stored in two different encodings, one of them ill-formed",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-03",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Jaap Sahib: four places where the text contradicts its own pattern",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-04",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Jaap Sahib: 34 of 808 occurrences differ from the reference at letter level",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-05",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Savaiye and Chaupai Sahib: opening lines are run together and split in the wrong places",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-06",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Chaupai Sahib: 50 of 121 occurrences differ from the reference at letter level, and the source is not named",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-07",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Tav-Prasad Savaiye: 12 of 43 occurrences differ from the reference at letter level, and the source is not named",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-08",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Verse numbers in Chaupai and Savaiye follow a different convention from the Granth and this is not stated",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-09",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Which Chaupai and which Rehras: tradition choices are made but not clearly explained to the reader",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-10",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Rehras Sahib: nine shabads are stored as 23 run-on blocks with headings merged into verse and 105 missing spaces after ॥",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-11",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Rehras Swaiya and Dohra differ from the reference at letter level",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-12",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "No composition names a printed edition, and agreement between related databases is being treated as confirmation",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-13",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Anand Sahib pauri 24: one word stores the nasal dot before the vowel sign; device rendering is unverified",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-14",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Small points for print check: two headings without ॥, extra dandas in Jaap 55–56, 26 lines that change if text is normalised",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-S-15",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Reference database issue found on the way: its ready-made Sukhmani list omits one line",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-01",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Many Nitnem meanings describe the verse from a distance instead of giving its meaning, and call Guru Sahib \"the poet\" or \"the speaker\"",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-02",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Chaupai and Savaiye: meanings soften or change what the line says",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-03",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Rehras Sahib: 27 blocks have a short summary only — no line-by-line meaning for the nine shabads, Swaiya, Dohra, Mundavani and Salok",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-04",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Sohila and Anand: individual meaning errors found in reading",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-05",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Jaap Sahib chhand 1 misreads two phrases; three words elsewhere are given doubtful or inconsistent senses",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-06",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Core Sikh terms are often replaced by a single English word, and the Divine is named inconsistently",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-07",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Modern legal- and medical-style disclaimers are attached to hundreds of lines",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-08",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Editor's working notes and talk about \"the app\" and \"this draft\" appear in what readers see",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-09",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "The screen says \"Meaning\" where the data itself says \"selective paraphrase, not literal translation\"",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-10",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Study material is mostly in English; Punjabi study text is missing for most Nitnem passages",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-11",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Punjabi spelling is not uniform; Sukhmani transliteration is mechanical",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-M-12",
+      "severityAsReviewed": "PASS",
+      "titleAsReviewed": "Checks that passed: every line has its own English and Punjabi entry; no sign of copying from published translations; cited page numbers are right",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-E-01",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Against the six-level learning standard, three levels are thin or absent",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-E-02",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Nothing brings a learner back to what they saved",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-E-03",
+      "severityAsReviewed": "PASS",
+      "titleAsReviewed": "No streaks, scores, badges or nudges were found",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-01",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Three readers that look and behave differently",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-02",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Nitnem reader: a screen of headings and counts before the first line; switching to Study shows no change where you are reading",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-03",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Engineering words on family-facing screens",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-04",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Dark mode has to be switched on in four places",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-05",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Small print that cannot be enlarged, and text that ignores the reader's own font-size setting",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-06",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Finding a place: one long flat list, no search",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-07",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Saving a line works three different ways and is hidden in two readers",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-08",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Other use notes",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-09",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Sukhmani Sahib is one very heavy page",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-A-01",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Screen-reader users cannot hear the meanings",
+      "builderState": "IMPLEMENTED_AWAITING_INDEPENDENT_RETEST",
+      "testFiles": [
+        "tests/review-repairs-browser.mjs"
+      ],
+      "remainingCriterion": "Physical VoiceOver still untested; Chromium accessible-name checks do not close that part of the original gate."
+    },
+    {
+      "id": "CI-A-02",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Sukhmani: 2,027 lines of Gurbani are each a button and a keyboard stop",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-A-03",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Minor contrast and touch-target shortfalls",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-A-04",
+      "severityAsReviewed": "PASS",
+      "titleAsReviewed": "Checks that passed in emulation",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-A-05",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Not tested by anyone on this review: a real iPhone, Safari, VoiceOver, TalkBack",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-R-01",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Two of the three readers will display altered or incomplete Gurbani with no warning",
+      "builderState": "IMPLEMENTED_AWAITING_INDEPENDENT_RETEST",
+      "testFiles": [
+        "tests/source-integrity.mjs",
+        "tests/source-integrity-browser.mjs"
+      ]
+    },
+    {
+      "id": "CI-R-02",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Japji reader silently deletes a saved note or bookmark it cannot place",
+      "builderState": "IMPLEMENTED_AWAITING_INDEPENDENT_RETEST",
+      "testFiles": [
+        "tests/japji-retained-learning.mjs",
+        "tests/review-repairs-browser.mjs"
+      ]
+    },
+    {
+      "id": "CI-R-03",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "Nitnem reader: a note on a line that no longer exists stops all saving, and notes under an older edition name disappear from view",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-R-04",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Backups are eight separate files, with no single \"back up everything\" and no reminder",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-R-05",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Maintenance risks",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-R-06",
+      "severityAsReviewed": "PASS",
+      "titleAsReviewed": "Checks that passed in emulation: offline, updates, failed update, Nitnem saved learning",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-P-01",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "The project has no licence, and two of its text sources have no formal notice",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-P-02",
+      "severityAsReviewed": "S3",
+      "titleAsReviewed": "Small security and housekeeping points",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-P-03",
+      "severityAsReviewed": "PASS",
+      "titleAsReviewed": "Checks that passed: nothing leaves the device",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-X-01",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Not yet verified: that the public website serves exactly the reviewed files",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-X-02",
+      "severityAsReviewed": "S1",
+      "titleAsReviewed": "No qualified human has reviewed any Gurbani text or any meaning",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-U-10",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "The Nitnem reader keeps a permanent header, against the design decision already accepted for this project",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-X-03",
+      "severityAsReviewed": "S2",
+      "titleAsReviewed": "Five of the six source-comparison files the builder's audit cites are not in the repository, and the \"printed source\" it relied on is not named",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    },
+    {
+      "id": "CI-X-04",
+      "severityAsReviewed": "PASS",
+      "titleAsReviewed": "Where the builder's own records and this review agree",
+      "builderState": "UNCHANGED_FROM_REVIEW"
+    }
+  ]
+}

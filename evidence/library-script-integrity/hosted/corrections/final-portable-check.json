@@ -1,0 +1,29 @@
+[
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/library-script-toolchain-lock.mjs"
+    ],
+    "exitCode": 0,
+    "output": "TAP version 13\n# Subtest: Private toolchain lock is portable, complete, and preserves every registry pin\nok 1 - Private toolchain lock is portable, complete, and preserves every registry pin\n  ---\n  duration_ms: 1.11925\n  type: 'test'\n  ...\n# Subtest: The observed logical-/tmp prefix lock corruption is refused before install\nok 2 - The observed logical-/tmp prefix lock corruption is refused before install\n  ---\n  duration_ms: 0.522166\n  type: 'test'\n  ...\n# Subtest: Missing platform packages and changed package integrity cannot pass the lock gate\nok 3 - Missing platform packages and changed package integrity cannot pass the lock gate\n  ---\n  duration_ms: 0.893542\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 32.298959\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/build-app-bundles.mjs",
+      "--check"
+    ],
+    "exitCode": 0,
+    "output": "{\"status\":\"PASS\",\"mode\":\"check\",\"applications\":3,\"changedFiles\":[],\"sourceInputs\":12}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/refresh-app-sri.mjs",
+      "--check"
+    ],
+    "exitCode": 0,
+    "output": "{\"status\":\"PASS\",\"mode\":\"check\",\"pages\":14,\"scriptOccurrences\":51,\"moduleOccurrences\":4,\"changedPages\":[],\"scope\":\"Subresource protection under trusted HTML; HTML and worker authenticity remain outside this check.\"}\n"
+  }
+]

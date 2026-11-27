@@ -1,0 +1,122 @@
+{
+  "checkedAtUtc": "2026-11-27T05:03:07Z",
+  "limitations": [
+    "Digital full-text comparison is not qualified scholarly or printed-page approval.",
+    "The portal and its archive are one publisher, not independent historical witnesses.",
+    "Open Granth derives its original text from Shabad OS SSA2, attributed upstream to SGPC Shabadaarth.",
+    "Open Granth MIT covers code/tooling, expressly not its corpus. The pinned upstream notice identifies original Gurbani/Panthic text as public domain; modern translations/commentary are excluded from this import.",
+    "The upstream rights notice is pinned to the archived repository commit, not asserted to be the notice bundled with npm 5.0.0-next.0; that registry gitHead returned 404 during research.",
+    "The archive endpoint is observed official implementation, not a documented external API contract.",
+    "No publisher time-zone offset is invented for the displayed time."
+  ],
+  "observations": [
+    {
+      "kind": "portal",
+      "original": {
+        "ang": "719",
+        "date": "2026-11-27",
+        "gfooter1": "ਸ਼ੁੱਕਰਵਾਰ, ੧੨ ਮੱਘਰ (ਸੰਮਤ ੫੫੮ ਨਾਨਕਸ਼ਾਹੀ)",
+        "gfooter2": "(ਅੰਗ: ੭੧੯)",
+        "gheading1": "ਬੈਰਾੜੀ ਮਹਲਾ ੪ ॥",
+        "gheading2": "",
+        "ghukamnama": "ਹਰਿ ਜਨੁ ਰਾਮ ਨਾਮ ਗੁਨ ਗਾਵੈ ॥ ਜੇ ਕੋਈ ਨਿੰਦ ਕਰੇ ਹਰਿ ਜਨ ਕੀ ਅਪੁਨਾ ਗੁਨੁ ਨ ਗਵਾਵੈ ॥੧॥ ਰਹਾਉ ॥ ਜੋ ਕਿਛੁ ਕਰੇ ਸੁ ਆਪੇ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਕਾਰ ਕਮਾਵੈ ॥ ਹਰਿ ਆਪੇ ਹੀ ਮਤਿ ਦੇਵੈ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਬੋਲਿ ਬੁਲਾਵੈ ॥੧॥ ਹਰਿ ਆਪੇ ਪੰਚ ਤਤੁ ਬਿਸਥਾਰਾ ਵਿਚਿ ਧਾਤੂ ਪੰਚ ਆਪਿ ਪਾਵੈ ॥ ਜਨ ਨਾਨਕ ਸਤਿਗੁਰੁ ਮੇਲੇ ਆਪੇ ਹਰਿ ਆਪੇ ਝਗਰੁ ਚੁਕਾਵੈ ॥੨॥੩॥",
+        "hukamnama_time": "05:30:00"
+      },
+      "retrievedAtUtc": "2026-11-27T05:03:07Z",
+      "transport": {
+        "Content-Security-Policy": "frame-ancestors 'self'",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Fri, 27 Nov 2026 05:03:06 GMT",
+        "X-Frame-Options": "SAMEORIGIN"
+      },
+      "url": "https://hs.sgpc.net/",
+      "verification": "VISIBLE_AND_STRUCTURED_ORIGINAL_EQUAL"
+    },
+    {
+      "kind": "archive",
+      "method": "POST",
+      "original": {
+        "ang": "719",
+        "date": "2026-11-27",
+        "gfooter1": "ਸ਼ੁੱਕਰਵਾਰ, ੧੨ ਮੱਘਰ (ਸੰਮਤ ੫੫੮ ਨਾਨਕਸ਼ਾਹੀ)",
+        "gfooter2": "(ਅੰਗ: ੭੧੯)",
+        "gheading1": "ਬੈਰਾੜੀ ਮਹਲਾ ੪ ॥",
+        "gheading2": "",
+        "ghukamnama": "ਹਰਿ ਜਨੁ ਰਾਮ ਨਾਮ ਗੁਨ ਗਾਵੈ ॥ ਜੇ ਕੋਈ ਨਿੰਦ ਕਰੇ ਹਰਿ ਜਨ ਕੀ ਅਪੁਨਾ ਗੁਨੁ ਨ ਗਵਾਵੈ ॥੧॥ ਰਹਾਉ ॥ ਜੋ ਕਿਛੁ ਕਰੇ ਸੁ ਆਪੇ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਕਾਰ ਕਮਾਵੈ ॥ ਹਰਿ ਆਪੇ ਹੀ ਮਤਿ ਦੇਵੈ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਬੋਲਿ ਬੁਲਾਵੈ ॥੧॥ ਹਰਿ ਆਪੇ ਪੰਚ ਤਤੁ ਬਿਸਥਾਰਾ ਵਿਚਿ ਧਾਤੂ ਪੰਚ ਆਪਿ ਪਾਵੈ ॥ ਜਨ ਨਾਨਕ ਸਤਿਗੁਰੁ ਮੇਲੇ ਆਪੇ ਹਰਿ ਆਪੇ ਝਗਰੁ ਚੁਕਾਵੈ ॥੨॥੩॥"
+      },
+      "requestedDate": "2026-11-27",
+      "retrievedAtUtc": "2026-11-27T05:03:07Z",
+      "transport": {
+        "Content-Security-Policy": "frame-ancestors 'self'",
+        "Content-Type": "application/json",
+        "Date": "Fri, 27 Nov 2026 05:03:07 GMT",
+        "X-Frame-Options": "SAMEORIGIN"
+      },
+      "url": "https://hs.sgpc.net/hssearchhukmanamaTestCalender.php",
+      "verification": "EXPLICIT_DATED_COMPLETE_ORIGINAL"
+    }
+  ],
+  "officialOriginalSha256": "c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+  "original": {
+    "ang": "719",
+    "date": "2026-11-27",
+    "gfooter1": "ਸ਼ੁੱਕਰਵਾਰ, ੧੨ ਮੱਘਰ (ਸੰਮਤ ੫੫੮ ਨਾਨਕਸ਼ਾਹੀ)",
+    "gfooter2": "(ਅੰਗ: ੭੧੯)",
+    "gheading1": "ਬੈਰਾੜੀ ਮਹਲਾ ੪ ॥",
+    "gheading2": "",
+    "ghukamnama": "ਹਰਿ ਜਨੁ ਰਾਮ ਨਾਮ ਗੁਨ ਗਾਵੈ ॥ ਜੇ ਕੋਈ ਨਿੰਦ ਕਰੇ ਹਰਿ ਜਨ ਕੀ ਅਪੁਨਾ ਗੁਨੁ ਨ ਗਵਾਵੈ ॥੧॥ ਰਹਾਉ ॥ ਜੋ ਕਿਛੁ ਕਰੇ ਸੁ ਆਪੇ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਕਾਰ ਕਮਾਵੈ ॥ ਹਰਿ ਆਪੇ ਹੀ ਮਤਿ ਦੇਵੈ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਬੋਲਿ ਬੁਲਾਵੈ ॥੧॥ ਹਰਿ ਆਪੇ ਪੰਚ ਤਤੁ ਬਿਸਥਾਰਾ ਵਿਚਿ ਧਾਤੂ ਪੰਚ ਆਪਿ ਪਾਵੈ ॥ ਜਨ ਨਾਨਕ ਸਤਿਗੁਰੁ ਮੇਲੇ ਆਪੇ ਹਰਿ ਆਪੇ ਝਗਰੁ ਚੁਕਾਵੈ ॥੨॥੩॥",
+    "hukamnama_time": "05:30:00"
+  },
+  "policyPins": [
+    {
+      "name": "opengranth-code-license",
+      "sha256": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/LICENSE"
+    },
+    {
+      "name": "opengranth-notice",
+      "sha256": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/NOTICE"
+    },
+    {
+      "name": "opengranth-provenance",
+      "sha256": "0e1f1c0b267b0c86bd4ac7b1a882b68f19aa3e3929059662fca47b69c098132e",
+      "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/docs/provenance.md"
+    },
+    {
+      "name": "upstream-original-text-notice",
+      "sha256": "e06d574b19e31a876c987555329ef5959eb6735b081495a2a64136973d7456da",
+      "url": "https://raw.githubusercontent.com/shabados/database/918c1d42d02e385e7ed48ef44994c75a2cb50293/README.md"
+    }
+  ],
+  "requestedDate": "2026-11-27",
+  "schema": "glp.hukamnama.receipt.v1",
+  "timezone": "Asia/Kolkata",
+  "witness": {
+    "followingOriginal": "ਬੈਰਾੜੀ ਮਹਲਾ ੪ ॥",
+    "headingEntries": 1,
+    "normalization": "NONE; original witness entries joined by one ASCII space",
+    "originalEntries": 7,
+    "precedingOriginal": "ਜਨ ਨਾਨਕ ਕਉ ਹਰਿ ਭੇਟੇ ਸੁਆਮੀ ਦੁਖੁ ਹਉਮੈ ਰੋਗੁ ਗਵਾਇਓ ॥੨॥੨॥",
+    "provenance": {
+      "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+      "comparison": "COMPLETE_ORDERED_TEXT_EQUALITY",
+      "comparisonScope": "Unique full ordered sequence among entries beginning at the official starting Ang; adjacent pages establish continuation and boundaries. Global corpus uniqueness is not asserted.",
+      "followingSha256": "8d490af637e8f55801426a06c437c07a5733346eb651c512dd8a26ad59970198",
+      "pages": [
+        {
+          "ang": 719,
+          "sha256": "0965594906991c08308c0643b7373abb7b1c67070650e616561afe2423e382ea",
+          "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0719.md"
+        },
+        {
+          "ang": 720,
+          "sha256": "821b2ace549526a0827470a83cb37115d8c9349de11e30960b7cdc2ae6cc5254",
+          "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0720.md"
+        }
+      ],
+      "precedingSha256": "cdca142dd28def612df105bc8158cde2f25e88e382f9855ef3b94b6f108054ae",
+      "repository": "opengranth/open-granth"
+    }
+  }
+}

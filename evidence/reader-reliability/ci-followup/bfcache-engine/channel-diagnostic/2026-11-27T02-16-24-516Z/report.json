@@ -1,0 +1,33 @@
+{
+  "startedAt": "2026-11-27T02:16:24.516Z",
+  "source": "working-tree",
+  "caseFilter": "BFCache|No runtime",
+  "checks": [
+    {
+      "name": "A genuine BFCache restoration retains the live document and its viewport",
+      "status": "failed",
+      "error": "cdpSession.send: Protocol error (Browser.getBrowserCommandLine): Command line not returned because --enable-automation not set.\n    at /private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-bfcache-diagnostic.mjs:93:410\n    at async check (/private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-bfcache-diagnostic.mjs:47:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/pr59-ci/bfcache-engine-investigation/channel-bfcache-diagnostic.mjs:92:2"
+    },
+    {
+      "name": "No runtime errors or external requests",
+      "evidence": {
+        "runtimeErrors": [],
+        "externalRequests": []
+      },
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Fresh desktop Chrome emulation only; no physical iPhone, Safari, VoiceOver or airplane-mode acceptance.",
+    "PR47 linked-visit behavior is deliberately outside this repair.",
+    "Waits exceed the existing 200 ms scroll debounce; assertions cover both logical occurrence and actual geometry.",
+    "Inherited rapid scrolling followed by leaving within 200 ms is outside this bounded repair; navigation cases settle for 450 ms first."
+  ],
+  "runtimeSha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+  "testSha256": "43e65e43fc84641b08b6bb8e19e176aa6e89490d076359c41605c4ded239d5fc",
+  "browser": "151.0.7922.34",
+  "completedAt": "2026-11-27T02:16:25.195Z",
+  "status": "failed"
+}

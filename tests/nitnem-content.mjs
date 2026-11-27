@@ -362,11 +362,69 @@ test('The manifest, complete course, reader pins and offline assets agree byte f
   assert.ok(fs.existsSync(japji),'Seventh bani resolves to the preserved Japji reader');
 });
 
-test('Published Japji and complete Sukhmani source, teaching and reading files remain byte-identical', () => {
+test('Published source and teaching are unchanged; explicitly recorded runtime amendments form a continuous chain', () => {
   const frozen=json('evidence/nitnem-prior-runtime-baseline.json');
+  assert.equal(sha(read('evidence/nitnem-prior-runtime-baseline.json')),'aa94396a6b6c773661c5ab261e537c580e2fd68385b4fc3324cc5991aabdb1fb','The original baseline itself is immutable');
   assert.equal(frozen.commit,'41194b8d135e511d6d3af499e7906562437a55e2');
-  assert.ok(Object.keys(frozen.files).length>=7);
-  for (const [path,digest] of Object.entries(frozen.files)) assert.equal(sha(read(path)),digest,path+' prior runtime preservation');
+  const ledger=json('evidence/claude-review-runtime-amendments.json');
+  assert.equal(sha(read('evidence/claude-review-runtime-amendments.json')),'d0ba2af3b1200b4cc7ccca9c487aca29a702139e4474b2d640920aa43fea6833','The first runtime ledger is immutable');
+  assert.equal(ledger.sourceBaseline,frozen.commit);
+  assert.equal(ledger.changeBaseline,'a3476ac4b9be90dde350fb35dd13ce0b672c120d');
+  assert.equal(ledger.claudeReviewCommit,'ffd3d179a16c9c656905dcedce34a080ffee54ff');
+  assert.deepEqual(Object.keys(ledger.amendments).sort(),['full-japji.html','js/japji-full.js','js/sukhmani-reader.js','sukhmani.html']);
+  const followup=json('evidence/claude-review-runtime-followup-amendments.json');
+  assert.equal(sha(read('evidence/claude-review-runtime-followup-amendments.json')),'160e3a6e1d64e6b94558c30ccebae2fe1f82bb52c14a4791c6722cbfb5429829','The follow-up runtime ledger is immutable');
+  assert.equal(followup.changeBaseline,'09e829efd63e99fc5c3f5f849f122a49b0dc22a9');
+  assert.equal(followup.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-amendments.json')));
+  assert.deepEqual(Object.keys(followup.amendments).sort(),['js/japji-full.js','js/sukhmani-reader.js']);
+  const historyRepair=json('evidence/learning-practice/runtime-amendments.json');
+  assert.equal(sha(read('evidence/learning-practice/runtime-amendments.json')),'6e85863ac1bef301e7c7c2428018ea493b07c4b44bd48f73f333abffef47aa75','The history-repair ledger is immutable');
+  assert.equal(historyRepair.changeBaseline,'792afa209c98bb53f257a8dfd5500bef10bfc8e3');
+  assert.equal(historyRepair.priorLedgerSHA256,sha(read('evidence/claude-review-runtime-followup-amendments.json')));
+  assert.deepEqual(Object.keys(historyRepair.amendments),['js/japji-full.js']);
+  assert.equal(historyRepair.scriptureChanges,false);
+  assert.equal(historyRepair.independentApproval,false);
+  // PR56 already changed Saved-entry handling. Append its frozen receipt instead
+  // of rewriting a prior ledger or charging those changes to this repair.
+  const parentPath='evidence/reader-reliability/library-parent-amendments.json';
+  assert.equal(sha(read(parentPath)),'550d79ed70ecec88b1434dc19fe37ab01e1c70a890b9888114f4fa02693a860a','The retrospective frozen-parent receipt is immutable');
+  const libraryParent=json(parentPath);
+  assert.equal(libraryParent.schema,'glp001.runtime-parent-amendments.v1');
+  assert.equal(libraryParent.status,'RETROSPECTIVE_BUILDER_RECORD_NOT_APPROVAL');
+  assert.equal(libraryParent.changeBaseline,'8917beaab7acc5770cb5a8fee682c9702a0689cb');
+  assert.equal(libraryParent.frozenParentCommit,'389e79baff4016a2ff61d1851908de0bd66beb8f');
+  assert.equal(libraryParent.priorLedgerPath,'evidence/learning-practice/runtime-amendments.json');
+  assert.equal(libraryParent.priorLedgerSHA256,sha(read(libraryParent.priorLedgerPath)));
+  assert.equal(libraryParent.retrospective,true);
+  assert.deepEqual(Object.keys(libraryParent.amendments).sort(),['js/japji-full.js','js/sukhmani-reader.js']);
+  const repairPath='evidence/reader-reliability/runtime-amendments.json';
+  assert.equal(sha(read(repairPath)),'0fbe1a31d3e27c458e8d84a9b42f869ff48d6ddddc7f703cce92f3346f8d4607','The reader-reliability candidate receipt is pinned');
+  const reliability=json(repairPath);
+  assert.equal(reliability.schema,'glp001.reader-reliability-runtime-amendments.v1');
+  assert.equal(reliability.status,'BUILDER_CANDIDATE_NOT_APPROVED');
+  assert.equal(reliability.changeBaseline,libraryParent.frozenParentCommit);
+  assert.equal(reliability.priorLedgerPath,parentPath);
+  assert.equal(reliability.priorLedgerSHA256,sha(read(parentPath)));
+  assert.deepEqual(Object.keys(reliability.amendments).sort(),['full-japji.html','js/sukhmani-reader.js','sukhmani.html']);
+  for(const record of [libraryParent,reliability]){
+    assert.equal(record.scriptureChanges,false);assert.equal(record.teachingChanges,false);assert.equal(record.independentApproval,false);
+  }
+  for (const [path,digest] of Object.entries(frozen.files)) {
+    const amendment=ledger.amendments[path],next=followup.amendments[path];
+    if(amendment){assert.equal(amendment.before,digest,path+' immutable prior hash');assert.ok(amendment.findings.includes('CI-R-01'));}
+    const previous=amendment?.after||digest;
+    if(next){assert.equal(next.before,previous,path+' exact prior runtime hash');assert.ok(next.findings.includes('CI-R-08'));}
+    const priorRuntime=next?.after||previous,history=historyRepair.amendments[path];
+    if(history){assert.equal(history.before,priorRuntime,path+' exact pre-history-repair hash');assert.deepEqual(history.findings,['SF-01']);}
+    const historyRuntime=history?.after||priorRuntime,parent=libraryParent.amendments[path];
+    if(parent)assert.equal(parent.before,historyRuntime,path+' exact pre-library runtime hash');
+    const parentRuntime=parent?.after||historyRuntime,repair=reliability.amendments[path];
+    if(repair){
+      assert.equal(repair.before,parentRuntime,path+' exact frozen PR56 runtime hash');
+      assert.deepEqual(repair.findings,path==='js/sukhmani-reader.js'?['SK-01']:['SRI-01']);
+    }
+    assert.equal(sha(read(path)),repair?.after||parentRuntime,path+' documented runtime or source preservation');
+  }
 });
 
 const report={status:'PASS',environment:'Node content/preservation verification; not visual or qualified scholarly approval',total:checks.length,checks,sourceRecords:sourceLines.size,sourceUnits:sourceUnits.size,meaningDrafts:Object.keys(course.closeTextNotes).length,studyDrafts:Object.keys(course.unitLessons).length,additionalMeanings:322,additionalStudies:80,documentedSourceAmendments:amendments.length,documentedEditorialAmendments:editorial.length,priorMeaningEntries:1039,priorStudyEntries:247,sourceIDsAndOrderPreserved:true,jaap62SourceDisplayOrderVerified:true,qualifiedHumanReviewed:0,courseSHA256:sha(read('nitnem/learning/course.complete.json')),manifestSHA256:sha(read('nitnem/data/library.json'))};

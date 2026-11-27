@@ -1,0 +1,51 @@
+{
+  "checkedAtUtc": "2026-11-27T06:52:34.489639+00:00",
+  "base": "df2c62fb3fef3d85cab9b752772e3f3f201dd791",
+  "workingTree": true,
+  "commands": [
+    {
+      "command": [
+        "/opt/homebrew/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "tests/hukamnama-import-idempotence.mjs",
+        "tests/hukamnama-learning.mjs",
+        "tests/hukamnama-delivery.mjs",
+        "tests/hukamnama-json.mjs"
+      ],
+      "exitCode": 0,
+      "log": "final-local-1.txt"
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "tests/library-script-integrity-inputs.mjs",
+        "tests/library-script-integrity.mjs",
+        "tests/library-script-toolchain-lock.mjs",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 0,
+      "log": "final-local-2.txt"
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/node",
+        "tools/build-app-bundles.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "final-local-3.txt"
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/node",
+        "tools/refresh-app-sri.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "final-local-4.txt"
+    }
+  ]
+}

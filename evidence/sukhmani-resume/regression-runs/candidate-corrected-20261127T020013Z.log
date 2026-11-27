@@ -1,0 +1,14 @@
+{"name":"Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (320px)","status":"passed"}
+{"name":"Fresh entry offers Resume and keeps the selected occurrence visible after pending capture (390px)","status":"passed"}
+{"name":"UI-created note and bookmark survive direct reload without a delayed line shift","status":"passed"}
+{"name":"Later manual reading restores its exact occurrence on reload; subsequent non-wheel scrolling still saves","status":"passed"}
+{"name":"Cold Back and Forward restore the saved occurrence without a Resume banner","status":"passed"}
+{"name":"Saved-list entry opens its existing dialog without moving or rewriting the saved record","status":"passed"}
+{"name":"An explicit navigation cancels pending reload alignment","status":"passed"}
+{"name":"A genuine BFCache restoration retains the live document and its viewport","status":"passed"}
+{"name":"No runtime errors or external requests","status":"passed"}
+{
+  "status": "passed",
+  "report": "/tmp/glp001-iphoneqa-20261126/sukhmani-resume-investigation/regression-runs/2026-11-27T02-00-13-250Z/report.json",
+  "failed": []
+}

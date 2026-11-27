@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "backend": "PyMuPDF",
+  "backendVersion": "1.26.6",
+  "status": "FAIL",
+  "extractionNormalization": "Unicode NFC and collapsed whitespace only; no punctuation or letter removal",
+  "expectationFile": {
+    "path": "evidence/articles/print/dubidha-source-sheet-pairs.json",
+    "sha256": "35641ebbba6524106b7ea1ef3589448c2fdd2da2e8ca366ac4968e829856841a"
+  },
+  "pairCoverage": "Configured pairs only",
+  "visualReview": "NOT_PERFORMED_BY_SCRIPT",
+  "limits": "PDF geometry and extracted text checks only. Resolving or matching a reference does not prove its meaning, authenticity, rights, or qualified approval. PNGs require human visual review of glyphs and layout. These results are not physical printing, printed scripture collation, phone, Safari, or VoiceOver acceptance.",
+  "documents": [
+    {
+      "pdf": "evidence/articles/print/dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "status": "FAIL",
+      "minimumMarginMm": 10.0,
+      "marginTolerancePt": 1.0,
+      "pages": [
+        {
+          "number": 1,
+          "format": "A4",
+          "widthPt": 595.9199829101562,
+          "heightPt": 842.8800048828125,
+          "nonemptyTextBounds": 185,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/dubidha/dubidha-source-sheet-a4-ca89a453/page-01.png"
+        },
+        {
+          "number": 2,
+          "format": "A4",
+          "widthPt": 595.9199829101562,
+          "heightPt": 842.8800048828125,
+          "nonemptyTextBounds": 191,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/dubidha/dubidha-source-sheet-a4-ca89a453/page-02.png"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "glp.article-ref.salok-kabir.025",
+          "allOnOnePage": false,
+          "page": null,
+          "checks": [
+            {
+              "kind": "marker",
+              "expected": "Collection attribution: Salok Bhagat Kabir Ji; individual attribution review pending",
+              "expectedUTF8Sha256": "e3a60305f9729b439c2e4b916c4c25b3764102930c9047d908855e1bd529a443",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "marker",
+              "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+              "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+              "expectedUTF8Sha256": "7d899f1634772b592177f7c2e78b5e96884b5490ea18b86e8d6b213c366db1eb",
+              "occurrences": [],
+              "exactlyOnce": false
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+              "expectedUTF8Sha256": "157be362ae307621ec83bcc11bc184c63e6627a25c660e52f8dffe0d715cddd3",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            }
+          ]
+        }
+      ],
+      "failures": [
+        "Pair glp.article-ref.salok-kabir.025: gurmukhi expected once, found 0 after declared extraction normalization",
+        "Pair glp.article-ref.salok-kabir.025 is not proven complete on one page"
+      ]
+    },
+    {
+      "pdf": "evidence/articles/print/dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "status": "FAIL",
+      "minimumMarginMm": 10.0,
+      "marginTolerancePt": 1.0,
+      "pages": [
+        {
+          "number": 1,
+          "format": "Letter",
+          "widthPt": 612.0,
+          "heightPt": 792.0,
+          "nonemptyTextBounds": 182,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/dubidha/dubidha-source-sheet-letter-a1d3e147/page-01.png"
+        },
+        {
+          "number": 2,
+          "format": "Letter",
+          "widthPt": 612.0,
+          "heightPt": 792.0,
+          "nonemptyTextBounds": 194,
+          "outsideMinimumMargin": [],
+          "renderedPNG": "evidence/articles/print-inspection/dubidha/dubidha-source-sheet-letter-a1d3e147/page-02.png"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "glp.article-ref.salok-kabir.025",
+          "allOnOnePage": false,
+          "page": null,
+          "checks": [
+            {
+              "kind": "marker",
+              "expected": "Collection attribution: Salok Bhagat Kabir Ji; individual attribution review pending",
+              "expectedUTF8Sha256": "e3a60305f9729b439c2e4b916c4c25b3764102930c9047d908855e1bd529a443",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "marker",
+              "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+              "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+              "expectedUTF8Sha256": "7d899f1634772b592177f7c2e78b5e96884b5490ea18b86e8d6b213c366db1eb",
+              "occurrences": [],
+              "exactlyOnce": false
+            },
+            {
+              "kind": "gurmukhi",
+              "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+              "expectedUTF8Sha256": "157be362ae307621ec83bcc11bc184c63e6627a25c660e52f8dffe0d715cddd3",
+              "occurrences": [
+                {
+                  "page": 1,
+                  "count": 1
+                }
+              ],
+              "exactlyOnce": true
+            }
+          ]
+        }
+      ],
+      "failures": [
+        "Pair glp.article-ref.salok-kabir.025: gurmukhi expected once, found 0 after declared extraction normalization",
+        "Pair glp.article-ref.salok-kabir.025 is not proven complete on one page"
+      ]
+    }
+  ]
+}

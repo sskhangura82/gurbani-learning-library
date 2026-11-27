@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+  "sourceFiles": [
+    {
+      "ang": 466,
+      "sha256": "94dd426601a9fa50f02f02b9e7799bd63d1e75d9e17270729032e372021d5bf6",
+      "gitBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourceRows": 49
+    },
+    {
+      "ang": 467,
+      "sha256": "c42abae7dc4b2bbaa85cd47e182e7dcbfc6017da20197c4b41c54889944b6ca7",
+      "gitBlob": "8e8e66a8367a17d8135d3206adfdac91c686bcfd",
+      "sourceRows": 48
+    },
+    {
+      "ang": 470,
+      "sha256": "7fb9655ac6418e866f0966eb462b72a35775e5cd930ec2642b014656ce0a9c95",
+      "gitBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourceRows": 52
+    },
+    {
+      "ang": 1364,
+      "sha256": "1d87aeef5f33ab071d32c2a0cbecd4b969466b09ad48fb945b0fa2bdb574a8ef",
+      "gitBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+      "sourceRows": 39
+    }
+  ],
+  "passages": [
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02",
+      "ang": 466,
+      "first": 40,
+      "last": 47,
+      "pauri": 7,
+      "closing": "॥੨॥"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01",
+      "ang": 470,
+      "first": 29,
+      "last": 37,
+      "pauri": 14,
+      "closing": "॥੧॥"
+    },
+    {
+      "id": "sggs.kabir.salok007",
+      "ang": 1364,
+      "first": 33,
+      "last": 34,
+      "pauri": null,
+      "closing": "॥੭॥"
+    }
+  ],
+  "matchedOccurrences": 19,
+  "limitations": "Pinned digital witness only, not print collation or independent scholarly review. Only hashes and original selected scripture are retained."
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "node",
+      "tests/knowledge-editorial-title.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tests/knowledge-contract.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tests/knowledge-source-registry.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tests/knowledge-editorial-boundary.mjs"
+    ],
+    "exitCode": 0
+  }
+]

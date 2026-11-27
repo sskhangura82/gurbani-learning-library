@@ -1,0 +1,129 @@
+{
+  "startedAt": "2026-11-27T02:00:10.584Z",
+  "source": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "caseFilter": "BFCache|No runtime",
+  "checks": [
+    {
+      "name": "A genuine BFCache restoration retains the live document and its viewport",
+      "evidence": {
+        "before": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a06.p02.l07",
+            "guide": "sukhmani.a02.p01.l02",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a06.p02.l07",
+          "top": 12.984375,
+          "bottom": 69.984375,
+          "scrollY": 39857,
+          "noticeHidden": true,
+          "navigation": "navigate",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 241.19999992847443
+            }
+          ],
+          "writes": [
+            {
+              "t": 536.6999999284744,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            },
+            {
+              "t": 998.5,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            }
+          ]
+        },
+        "after": {
+          "stored": {
+            "version": 2,
+            "read": "sukhmani.a06.p02.l07",
+            "guide": "sukhmani.a02.p01.l02",
+            "hasGuided": true,
+            "mode": "read",
+            "theme": "day",
+            "size": 30,
+            "pace": 70,
+            "pronunciation": false,
+            "bookmarks": [
+              "sukhmani.a06.p02.l07"
+            ],
+            "notes": {
+              "sukhmani.a06.p02.l07": "SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only"
+            }
+          },
+          "current": "sukhmani.a06.p02.l07",
+          "top": 12.984375,
+          "bottom": 69.984375,
+          "scrollY": 39857,
+          "noticeHidden": true,
+          "navigation": "navigate",
+          "events": [
+            {
+              "event": "pageshow",
+              "persisted": false,
+              "t": 241.19999992847443
+            },
+            {
+              "event": "pagehide",
+              "persisted": true,
+              "t": 1281.5
+            },
+            {
+              "event": "pageshow",
+              "persisted": true,
+              "t": 1331.8999999761581
+            }
+          ],
+          "writes": [
+            {
+              "t": 536.6999999284744,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            },
+            {
+              "t": 998.5,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            },
+            {
+              "t": 1332.1999999284744,
+              "value": "{\"version\":2,\"read\":\"sukhmani.a06.p02.l07\",\"guide\":\"sukhmani.a02.p01.l02\",\"hasGuided\":true,\"mode\":\"read\",\"theme\":\"day\",\"size\":30,\"pace\":70,\"pronunciation\":false,\"bookmarks\":[\"sukhmani.a06.p02.l07\"],\"notes\":{\"sukhmani.a06.p02.l07\":\"SYNTHETIC ਸਿੱਖਣ ਦਾ ਨੋਟ — resume regression only\"}}"
+            }
+          ]
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "name": "No runtime errors or external requests",
+      "evidence": {
+        "runtimeErrors": [],
+        "externalRequests": []
+      },
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Fresh desktop Chrome emulation only; no physical iPhone, Safari, VoiceOver or airplane-mode acceptance.",
+    "PR47 linked-visit behavior is deliberately outside this repair.",
+    "Waits exceed the existing 200 ms scroll debounce; assertions cover both logical occurrence and actual geometry."
+  ],
+  "browser": "158.0.8127.37",
+  "completedAt": "2026-11-27T02:00:13.084Z",
+  "status": "passed"
+}

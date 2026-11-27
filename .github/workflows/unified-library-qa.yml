@@ -1,0 +1,66 @@
+name: Unified library and saved-entry checks
+on:
+  pull_request:
+    branches: [main, feature/article-source-print-20261126, feature/unified-library-v1-20261126, fix/reader-load-resume-20261126, fix/library-script-integrity-20261126]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  library-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preserve the complete reviewed application and reader inputs
+        run: node --test tests/library-script-integrity-inputs.mjs
+      - name: Catalogue identities, source resolution and retained local learning
+        run: |
+          node --test tests/library-catalog.mjs tests/article-source.mjs tests/source-integrity.mjs tests/salok-kabir-bindings.mjs
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/japji-retained-learning.mjs
+          node tests/sukhmani-reader-core.mjs
+          node tests/nitnem-learning.mjs
+          node tests/nitnem-ui-lifecycle.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+          node tests/service-worker.mjs
+      - name: Reproduce reader integrity attributes and the complete offline shell
+        run: |
+          node tools/refresh-salok-mahalla9-sri.mjs
+          node tools/refresh-salok-kabir-sri.mjs
+          node tools/build-offline.mjs
+          git diff --exit-code -- salok-mahalla9/index.html salok-kabir/index.html sw.js
+          node --check library/app.mjs
+          node --check js/japji-full.js
+          node --check js/sukhmani-reader.js
+          node --check nitnem/reader.js
+      - name: Install pinned Chromium and Gurmukhi fonts
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Four entrances, readable text, private saved entries and real offline assets
+        run: |
+          node tests/library-browser.mjs --offline
+          node tests/library-saved-entry-browser.mjs
+      - name: Retain builder evidence, including failed checks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unified-library-evidence
+          path: |
+            evidence/library/
+            evidence/library-saved-entry/
+            evidence/node-verification.json
+            evidence/shared-learning-verification.json
+            evidence/nitnem-ui-lifecycle-verification.json
+            evidence/service-worker-verification.json
+            evidence/r6-contract.json
+            evidence/r7-contract.json
+          if-no-files-found: error

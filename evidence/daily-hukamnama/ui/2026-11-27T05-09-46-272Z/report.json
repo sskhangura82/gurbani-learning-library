@@ -1,0 +1,12 @@
+{
+  "status": "FAIL",
+  "candidateDate": "2026-11-27",
+  "scenarios": [],
+  "pageErrors": [],
+  "limits": [
+    "Fresh synthetic Chromium contexts only; no physical iPhone, iPad, Safari, VoiceOver or human acceptance claim.",
+    "One exact official dated development event; unavailable dates are never fabricated.",
+    "Current Simple/Detailed/Learning source-linked explanations remain pending; no interpretation generated."
+  ],
+  "failure": "browserType.launch: Executable doesn't exist at /Users/stevekhangura/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at /private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-browser.mjs:66:27"
+}

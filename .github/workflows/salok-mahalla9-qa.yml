@@ -1,0 +1,45 @@
+name: Salok Mahalla 9 source and reader checks
+on:
+  pull_request:
+    branches: [main, fix/claude-review-first-repairs-20261125, feature/salok-mahalla9-reader-20261126]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-salok-mahalla9:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce the complete source from four pinned witnesses
+        run: |
+          node tools/fetch-salok-mahalla9-witnesses.mjs --output "$RUNNER_TEMP/glp-m9-witnesses"
+          node tools/build-salok-mahalla9-source.mjs --witness-dir "$RUNNER_TEMP/glp-m9-witnesses"
+          git diff --exit-code -- salok-mahalla9/data/
+      - name: Reproduce the separate teaching draft and cached reader assets
+        run: |
+          node tools/assemble-salok-mahalla9-teaching.mjs
+          node tools/refresh-salok-mahalla9-sri.mjs
+          node tools/build-offline.mjs
+          git diff --exit-code -- salok-mahalla9/ nitnem/reader.js sw.js
+      - name: Verify source, bilingual draft coverage, preservation and semantic bindings
+        run: |
+          node tests/salok-mahalla9-content.mjs
+          node tests/salok-mahalla9-bindings.mjs
+      - name: Install pinned browser tools and Gurmukhi fonts
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Exercise all 57 Saloks, learning, accessibility, corruption and offline reading
+        run: node tests/salok-mahalla9-browser.mjs
+      - name: Retain verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: salok-mahalla9-evidence
+          path: evidence/salok-mahalla9/
+          if-no-files-found: warn

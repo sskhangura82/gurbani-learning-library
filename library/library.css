@@ -1,0 +1,139 @@
+/* The shared library shell; source readers retain their own layout and controls. */
+.library-home{--library-accent:#315745}
+.library-home .wordmark{font-size:.75rem}
+.library-home .wordmark span{font-size:.5625rem}
+.library-home #home-theme{font-size:.75rem}
+.library-home .section-kicker{font-size:.6875rem}
+.library-home .smallline{font-size:.625rem}
+.library-home .footer p,.library-home .footer summary{font-size:.75rem}
+.library-home .footer .small{font-size:.625rem}
+.library-home[data-theme=amrit]{--library-accent:#b6d6c1}
+.library-home .page-shell{max-width:1180px}
+.library-home .home-header{padding-top:25px;padding-bottom:20px;flex-wrap:wrap}
+.library-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:6px;border:1px solid var(--line);border-radius:16px;background:var(--surface);max-width:660px;margin:0 auto 25px}
+.library-nav a{display:flex;justify-content:center;align-items:center;gap:8px;min-height:46px;border-radius:11px;color:var(--muted);text-decoration:none;font-size:0.875rem;font-weight:650}
+.library-nav a[aria-current=page]{background:var(--hue);color:var(--ink)}
+.library-nav a:hover{color:var(--ink)}
+.library-nav svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round;flex:none}
+.library-home main{scroll-margin-top:15px;overflow-wrap:anywhere}
+.library-home [hidden]{display:none!important}
+.library-review-note{text-align:center;font-size:0.6875rem;line-height:1.7;color:var(--muted);margin:0 0 24px}
+.status-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--gold);vertical-align:middle;margin-right:5px}
+.today-hero{text-align:center;max-width:700px;margin:0 auto 30px}
+.today-hero .opening{font-size:2.9375rem;margin:4px 0 12px}
+.today-hero h1{font:clamp(2.25rem,5.5vw,3.75rem)/1.12 Georgia,serif;font-weight:400;letter-spacing:-.03em;margin:13px auto 15px;color:var(--herotext)}
+.today-hero h1 em{color:var(--gold);font-weight:400}
+.today-hero>p:last-child{font-size:0.9375rem;line-height:1.8;color:var(--muted);max-width:420px;margin:auto}
+.today-primary{display:grid;grid-template-columns:1.2fr 1fr;gap:25px;border:1px solid var(--line);border-radius:22px;padding:30px;background:linear-gradient(120deg,var(--surface),var(--surface) 58%,var(--hue));box-shadow:var(--shadow)}
+.today-primary h2,.hub-card h2,.section-heading h2{font:1.9375rem/1.25 Georgia,serif;font-weight:400;letter-spacing:-.02em;margin:9px 0 12px}
+.today-primary p:not(.section-kicker),.hub-card p{font-size:0.875rem;color:var(--muted);line-height:1.8}
+.primary-link{display:inline-flex;align-items:center;gap:22px;color:var(--surface);background:var(--library-accent);padding:11px 17px;min-height:46px;border-radius:10px;text-decoration:none;font-size:0.875rem;font-weight:650;margin-top:8px}
+body[data-theme=amrit] .primary-link{color:#15271d}
+.today-shortcuts{display:flex;flex-direction:column;justify-content:center;gap:8px}
+.today-shortcuts a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:50px;padding:12px 15px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:0.875rem;font-weight:600}
+.today-shortcuts a:hover{border-color:var(--gold)}
+.today-shortcuts a span{font-size:1.25rem;color:var(--gold)}
+.today-secondary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
+.hub-card{display:flex;flex-direction:column;padding:25px;border:1px solid var(--line);background:var(--surface);border-radius:18px;text-decoration:none;color:var(--ink)}
+.hub-card h2{font-size:1.6875rem;margin:12px 0 0}
+.hub-card .card-action{font-size:0.8125rem;font-weight:650;color:var(--library-accent);margin-top:auto;padding-top:12px}
+.hub-card:hover,.directory-card:hover,.saved-card:hover{border-color:var(--gold)}
+.today-quiet{margin:36px 0 24px}
+.section-heading .section-kicker{margin-bottom:5px}
+.section-heading h2{margin-top:4px;margin-bottom:18px}
+.tools-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tool-card{display:flex;flex-direction:column;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:23px}
+.tool-card h3{font:1.5625rem/1.3 Georgia,serif;margin:9px 0;font-weight:400}
+.tool-card p{font-size:0.8125rem;color:var(--muted);margin:0;line-height:1.8}
+.tool-card .entry-kind{font-size:0.625rem;line-height:1.6;letter-spacing:.1em;color:var(--gold);font-weight:650}
+.tool-card[data-tool-id=simran]{background:#17353b;border-color:#3a5860;color:#f6ead5}
+.tool-card[data-tool-id=simran] p{color:#cbded8}
+.tool-card[data-tool-id=simran] .entry-kind{color:#bfd7c4}
+.availability-note{margin:28px 0;padding:20px 24px;border:1px dashed var(--line);border-radius:14px}
+.availability-label{display:block;font-size:0.625rem;letter-spacing:.13em;font-weight:700;color:var(--muted)}
+.availability-note h2{font:1.5rem/1.3 Georgia,serif;margin:9px 0;font-weight:400}
+.availability-note p{margin:0;font-size:0.8125rem;color:var(--muted);line-height:1.8}
+.view-heading{max-width:690px;margin:25px 0 28px}
+.view-heading h1{font:clamp(2.125rem,5.4vw,3.0625rem)/1.15 Georgia,serif;letter-spacing:-.03em;font-weight:400;margin:10px 0 14px}
+.view-heading>p:last-child{font-size:0.9375rem;line-height:1.8;color:var(--muted);max-width:600px}
+.directory-controls{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:16px;padding:20px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}
+.directory-controls label{display:block;font-size:0.75rem;font-weight:650;margin:0 0 6px}
+.search-input-row{display:flex;gap:7px}
+.directory-controls input,.directory-controls select{min-width:0;width:100%;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;color:var(--ink);background:var(--paper);font:1rem/1.5 system-ui,-apple-system,sans-serif}
+.library-home button:not(#home-theme){min-height:44px;padding:9px 13px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font:600 0.8125rem/1.5 system-ui;cursor:pointer}
+.library-home input:focus-visible,.library-home select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.directory-help{font-size:0.75rem;line-height:1.8;color:var(--muted);margin:13px 0 20px}
+.directory-count{font-size:0.75rem;font-weight:650;color:var(--muted);margin:24px 0 12px;min-height:1.7em}
+.reader-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.directory-card{display:flex;flex-direction:column;min-width:0;padding:23px;border:1px solid var(--line);border-radius:17px;background:var(--surface);color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.directory-card .card-group{display:block;font-size:0.625rem;font-weight:650;letter-spacing:.1em;color:var(--gold);text-transform:uppercase}
+.directory-card h2{font:1.6875rem/1.28 Georgia,serif;font-weight:400;margin:9px 0 5px}
+.directory-card .title-pa{display:block;font:1.25rem/1.75 'Gurmukhi MN','Mukta Mahee','Noto Sans Gurmukhi',sans-serif;color:var(--library-accent);margin-bottom:9px}
+.directory-card .card-summary{font-size:0.8125rem;line-height:1.85;color:var(--muted);margin:6px 0 10px}
+.directory-card .card-review{font-size:0.625rem;line-height:1.8;color:var(--muted);padding-top:9px;border-top:1px solid var(--line);margin-top:auto}
+.directory-card .card-action{font-size:0.75rem;font-weight:650;color:var(--library-accent);margin-top:14px}
+.library-empty{padding:32px 20px;text-align:center;border:1px dashed var(--line);border-radius:15px}
+.library-empty h2{font:1.625rem Georgia,serif;font-weight:400}
+.library-empty p{font-size:0.875rem;color:var(--muted)}
+.library-details{margin:28px 0;padding:15px 20px;border:1px solid var(--line);border-radius:12px;font-size:0.8125rem;color:var(--muted)}
+.library-details summary{min-height:44px;display:list-item;align-content:center;cursor:pointer;font-weight:650;color:var(--ink)}
+.library-details p{line-height:1.9}
+.explore-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.explore-card .card-group{line-height:1.7}
+.planned-section{margin:38px 0 10px}
+.planned-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.planned-item{padding:18px 20px;border:1px dashed var(--line);border-radius:12px}
+.planned-item h3{font-size:0.9375rem;margin:0 0 6px;font-weight:650}
+.planned-item p{font-size:0.75rem;color:var(--muted);line-height:1.8;margin:0}
+.planned-item .availability-label{margin-top:8px;font-size:0.5625rem;letter-spacing:.08em}
+.saved-explanation{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:20px 23px;margin:0 0 22px}
+.saved-explanation h2{font:1.5625rem Georgia,serif;font-weight:400;margin:0 0 10px}
+.saved-explanation p{font-size:0.8125rem;line-height:1.9;color:var(--muted);margin:8px 0}
+.saved-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.saved-card{display:flex;flex-direction:column;align-items:flex-start;color:var(--ink);text-decoration:none;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0;overflow-wrap:anywhere}
+.saved-card h2{font-size:1.0625rem;line-height:1.5;margin:0 0 5px;font-weight:600}
+.saved-card .title-pa{font:1.125rem/1.8 'Gurmukhi MN','Mukta Mahee','Noto Sans Gurmukhi',sans-serif;color:var(--muted)}
+.saved-card .card-action{font-size:0.75rem;font-weight:650;color:var(--library-accent);margin-top:12px}
+.library-notice{padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:0.875rem;color:var(--ink)}
+.library-notice a{color:var(--library-accent)}
+.library-footer{margin-top:42px;max-width:none}
+.library-footer details{max-width:650px;margin:auto}
+.library-footer .update-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:14px 0 20px}
+.library-home a,.library-home button,.library-home input,.library-home select,.library-home summary{scroll-margin-bottom:6.875rem}
+@media(max-width:680px){
+ .library-home .page-shell{padding:0 18px calc(6.25rem + env(safe-area-inset-bottom))}
+ .library-home .home-header{padding:18px 0 15px}
+ .library-nav{grid-template-columns:repeat(auto-fit,minmax(min(100%,4.4rem),1fr));position:fixed;z-index:70;left:0;right:0;bottom:0;margin:0;max-width:none;border-radius:0;border:0;border-top:1px solid var(--line);padding:7px 8px calc(7px + env(safe-area-inset-bottom));gap:4px;background:var(--surface);box-shadow:0 -6px 22px #00000007}
+ .library-nav a{min-height:52px;flex-direction:column;gap:3px;font-size:0.6875rem;line-height:1.5}
+ .library-nav svg{width:20px;height:20px}
+ .library-review-note{font-size:0.625rem;margin:0 0 18px}
+ .today-hero{margin-bottom:24px}
+ .today-hero .opening{font-size:2.4375rem;margin:0 0 10px}
+ .today-hero h1{font-size:2.375rem;max-width:330px;margin-top:10px}
+ .today-hero>p:last-child{font-size:0.8125rem;max-width:310px}
+ .today-primary{grid-template-columns:1fr;gap:18px;padding:22px}
+ .today-primary h2{font-size:1.8125rem}
+ .today-primary p:not(.section-kicker){font-size:0.8125rem;margin:8px 0}
+ .primary-link{font-size:0.8125rem}
+ .today-shortcuts a{font-size:0.8125rem;padding:11px 12px;min-height:47px}
+ .today-secondary{grid-template-columns:1fr;gap:12px;margin-top:12px}
+ .hub-card{padding:22px}.hub-card h2{font-size:1.625rem}.hub-card p{font-size:0.8125rem}
+ .today-quiet{margin-top:28px}
+ .tools-grid{grid-template-columns:1fr;gap:12px}
+ .tool-card{padding:22px}
+ .availability-note{padding:18px 20px}
+ .view-heading{margin-top:22px;margin-bottom:24px}
+ .view-heading h1{font-size:2.25rem}.view-heading>p:last-child{font-size:0.875rem}
+ .directory-controls{grid-template-columns:1fr;padding:17px;gap:14px}
+ .directory-help{font-size:0.6875rem}
+ .reader-grid,.explore-grid,.saved-grid{grid-template-columns:1fr;gap:12px}
+ .directory-card{padding:21px}.directory-card h2{font-size:1.6875rem}
+ .planned-grid{grid-template-columns:1fr}
+ .section-heading h2{font-size:1.8125rem}
+}
+@media print{
+ .library-nav,.home-header,.directory-controls,.library-footer,.skip,.library-review-note{display:none!important}
+ .library-home .page-shell{padding:0;max-width:none}
+ .library-home{background:white!important;color:black!important}
+ .directory-card,.saved-card,.hub-card,.planned-item,.tool-card{break-inside:avoid;box-shadow:none}
+}

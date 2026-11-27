@@ -1,0 +1,40 @@
+PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+PASS rehashed truncated source cannot omit the continuation ending
+PASS wrong private key cannot seal against the selected public key
+PASS a signed event cannot verify against a different public key
+PASS non-null unreviewed explanation is refused before sealing
+PASS rehashed receipt starting Ang must agree with the full verified source span
+PASS rehashed receipt displayed time must agree with the dated event
+Signing checks: 7 passed; 4 failed. Keys existed only in memory.
+FAIL receipt and payload carry the same canonical UTC retrieval timestamp
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /retrieval time/. Input:
+
+'Error: Hukamnama staging contract: Receipt date, clock or source digest differs.'
+
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:54:3
+    at async check (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:33:9)
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:50:1
+FAIL raw receipt tampering cannot reuse the old receipt digest
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /receipt bytes/. Input:
+
+'Error: Hukamnama staging contract: An observed original/date field differs from the receipt.'
+
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:59:3
+    at async check (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:33:9)
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:56:1
+FAIL rehashed receipt with changed full original cannot reuse the selected source
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /complete source/. Input:
+
+'Error: Hukamnama staging contract: Receipt complete original differs from the source sequence.'
+
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:62:3
+    at async check (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:33:9)
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:61:1
+FAIL protected commentary field is excluded even from a rehashed original receipt
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /allowlist/. Input:
+
+'Error: Hukamnama staging contract: Receipt original contains missing or unapproved fields.'
+
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:88:3
+    at async check (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:33:9)
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:87:1

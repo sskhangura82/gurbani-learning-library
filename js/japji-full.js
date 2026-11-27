@@ -1,21 +1,59 @@
 /* GLP-001 0.8: one persistent scripture document; depth never owns the guide clock. */
-(() => {
+(async () => {
 'use strict';
+// The reader restores its own occurrence-relative anchor, not a browser
+// pixel offset from a possibly different heading layout.
+if('scrollRestoration' in history)history.scrollRestoration='manual';
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,data=window.GLP_FULL_JAPJI,old=window.GURBANI_CONTENT;
-if(!C||!data||data.units.length!==42){$('continuous-reader').textContent='The scripture package could not be verified.';return;}
+function downloadLearning(text,filename='Gurbani-learning.json'){
+ const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');
+ link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);
+}
+function exportOriginalLearning(){
+ // This path deliberately performs no normalization, writing or scripture access.
+ try{if(!window.GLP_LEARNING)throw Error('Backup module unavailable');downloadLearning(window.GLP_LEARNING.exportAll(window.localStorage));$('status').textContent='Original learning backup prepared.';return true;}
+ catch(_){$('status').textContent='Could not prepare a backup. Do not clear site data.';return false;}
+}
+const sourceRoot=$('continuous-reader'),sourceControls=[...document.querySelectorAll('button,input,select')].map(node=>[node,node.disabled]),sourceFooter=document.querySelector('.end-note');
+sourceRoot.dataset.sourceIntegrity='checking';sourceRoot.setAttribute('aria-busy','true');sourceRoot.textContent='Checking original scripture…';sourceControls.forEach(([node])=>{node.disabled=true;});if(sourceFooter)sourceFooter.hidden=true;
+try{
+ if(!C||!window.GLPSourceIntegrity)throw Error('The verification module is unavailable.');
+ window.GLP_SOURCE_INTEGRITY_RECEIPT=await window.GLPSourceIntegrity.verify('japji',data);
+}catch(error){
+ sourceRoot.dataset.sourceIntegrity='failed';sourceRoot.setAttribute('aria-busy','false');sourceRoot.setAttribute('role','alert');sourceRoot.textContent='The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed.';
+ const recovery=document.createElement('section'),advice=document.createElement('p'),backup=document.createElement('button'),result=document.createElement('p');
+ recovery.className='coverage-note';advice.textContent='Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup.';
+ backup.type='button';backup.id='source-failure-export';backup.textContent='Export original learning';result.setAttribute('role','status');
+ backup.addEventListener('click',()=>{result.textContent=exportOriginalLearning()?'Backup download requested. Keep the file and check it before removing any site data.':'Backup unavailable. Do not clear site data.';});
+ recovery.append(advice,backup,result);sourceRoot.append(recovery);$('status').textContent='Scripture verification failed. Original learning export remains available.';return;
+}
+sourceRoot.dataset.sourceIntegrity='verified';sourceRoot.setAttribute('aria-busy','false');sourceRoot.textContent='';sourceControls.forEach(([node,disabled])=>{node.disabled=disabled;});if(sourceFooter)sourceFooter.hidden=false;
 const units=data.units,model=C.flatten(units),lines=model.lines,KEY='glp001.continuous.v2',LEGACY='glp001.fullJapji.v1',L=window.GLP_LEARNING;
 L.configureContinuous(C,model,units);
 if(lines.length!==385){$('continuous-reader').textContent='The scripture package has an unexpected line count.';return;}
 const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl=u=>{try{const v=new URL(u);return v.protocol==='https:'?v.href:'#';}catch(_){return '#';}};
 const a=(u,label)=>'<a href="'+h(safeUrl(u))+'" target="_blank" rel="noopener noreferrer">'+h(label)+' ↗</a>';
-let raw=null,storageOK=true,storageDamaged=false;try{const saved=localStorage.getItem(KEY)||localStorage.getItem(LEGACY);raw=saved?JSON.parse(saved):null;if(saved&&(!raw||typeof raw!=='object'||Array.isArray(raw)||(raw.version!=null&&raw.version!==2)||(raw.schemaVersion!=null&&![1,2].includes(raw.schemaVersion))))throw Error('Newer schema');}catch(_){storageOK=false;storageDamaged=true;}
-let state=C.normalise(raw,model,units),playing=false,following=true,started=false,finished=false,raf=0,deadline=0,persistTimer=0;
-let quietMode=false,roomySpacing=false;
+let raw=null,storageOK=true,storageDamaged=false,state;
+const protectedStorage=L.protectRetained({
+ getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v),removeItem:k=>localStorage.removeItem(k)
+});
+function loadLearning(){
+ const saved=protectedStorage.getItem(KEY)||localStorage.getItem(LEGACY);
+ raw=saved?JSON.parse(saved):null;
+ if(saved&&(!raw||typeof raw!=='object'||Array.isArray(raw)||(raw.version!=null&&raw.version!==2)||(raw.schemaVersion!=null&&![1,2].includes(raw.schemaVersion))))throw Error('Newer schema');
+ state=C.normalise(raw,model,units);
+ // Archive retained items before the reader can write a normalized v2 state.
+ if(navigator.locks?.request)L.archiveRetained(localStorage,state.keptAside);
+}
+try{if(navigator.locks?.request)await navigator.locks.request(KEY+':write',loadLearning);else loadLearning();}
+catch(_){storageOK=false;storageDamaged=true;state=state||C.normalise(null,model,units);}
+let playing=false,following=true,started=false,finished=false,raf=0,deadline=0,persistTimer=0;
+let quietMode=false,roomySpacing=false,pageSuspended=false,returnFrame=0;
 let afterModalClose=null,modalReturn=null,dialogFocus=null,paintedIndex=-1,paintedTokens=[],scrollTimer=0,importCandidate=null,programmaticUntil=0;
-const shared=window.GLP_SHARED_LEARNING.create({storage:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},locks:navigator.locks,key:KEY,normalise:s=>C.normalise(s,model,units),seed:state});
+const shared=window.GLP_SHARED_LEARNING.create({storage:protectedStorage,locks:navigator.locks,key:KEY,normalise:s=>C.normalise(s,model,units),seed:state});
 let pendingNotes={},pendingBookmarks={},pendingPreferences={},saveChain=Promise.resolve(),notePermit=null,noteGeneration=0;
-function refreshLearning(saved){state.notes={...saved.notes,...pendingNotes};const marks=new Set(saved.bookmarks);for(const [id,on] of Object.entries(pendingBookmarks))on?marks.add(id):marks.delete(id);state.bookmarks=[...marks];updateDock();}
+function refreshLearning(saved){state.notes={...saved.notes,...pendingNotes};const marks=new Set(saved.bookmarks);for(const [id,on] of Object.entries(pendingBookmarks))on?marks.add(id):marks.delete(id);state.bookmarks=[...marks];state.keptAside=C.mergeKeptAside(saved.keptAside);updateDock();updateRecoveryNotice();}
 function releaseNote(){noteGeneration++;const permit=notePermit;if(permit)persist(true).then(()=>{if(notePermit===permit&&!Object.keys(pendingNotes).length){notePermit=null;permit.release();}});}
 started=state.hasGuided;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)'),explanations=new Map();
@@ -54,10 +92,27 @@ function lessonReflection(){const l=old.lesson;return '<div class="study-reflect
 $('continuous-reader').innerHTML=units.map((u,ui)=>{
  const hasTeaching=u.id==='pauri02';
  const body=u.lines.map((l,li)=>{const i=model.starts[ui]+li,line=lines[i],e=explanations.get(l.id);
- return '<article class="scripture-line" id="line-'+i+'" data-index="'+i+'" data-occurrence="'+h(l.id)+'"><p class="tuk'+(ui===0?' mool-mantar':'')+'" lang="pa" data-text-sha256="'+h(l.sha256)+'">'+tokensMarkup(line)+'</p>'+(e?'<button type="button" class="simple-meaning" data-action="meaning" data-index="'+i+'" aria-label="Read more about '+h(u.title)+' line '+(li+1)+'"><span class="english">'+h(e.english)+'</span><span class="punjabi" lang="pa">'+h(e.punjabi)+'</span><span class="expand-hint">Draft meaning · tap to explore</span></button>'+(e.study?deepMarkup(e):''):'')+'</article>';}).join('');
+ return '<article class="scripture-line" id="line-'+i+'" data-index="'+i+'" data-occurrence="'+h(l.id)+'"><p class="tuk'+(ui===0?' mool-mantar':'')+'" lang="pa" data-text-sha256="'+h(l.sha256)+'">'+tokensMarkup(line)+'</p>'+(e?'<button type="button" class="simple-meaning" data-action="meaning" data-index="'+i+'"><span class="english">'+h(e.english)+'</span><span class="punjabi" lang="pa">'+h(e.punjabi)+'</span><span class="expand-hint">Draft meaning · tap to explore</span></button>'+(e.study?deepMarkup(e):''):'')+'</article>';}).join('');
  return '<section class="passage" id="section-'+h(u.id)+'" data-unit="'+ui+'" aria-labelledby="caption-'+h(u.id)+'"><div class="section-caption"><h2 id="caption-'+h(u.id)+'">'+h(u.title)+'</h2></div>'+(hasTeaching?lessonIntro():'')+body+unitLesson(u)+(hasTeaching?lessonReflection():'')+'</section>';
 }).join('');
 const rows=[...document.querySelectorAll('.scripture-line')],tuks=rows.map(r=>r.querySelector('.tuk')),wordNodes=tuks.map(t=>[...t.querySelectorAll('.g-word')]);
+// Unmatched or oversized learning stays visible and exportable; normal reading can continue.
+const recoveryNotice=document.createElement('aside');recoveryNotice.id='retained-learning';recoveryNotice.className='recovery-notice';recoveryNotice.hidden=true;recoveryNotice.setAttribute('aria-label','Saved learning recovery');
+const recoveryMessage=document.createElement('p'),recoveryButton=document.createElement('button');recoveryMessage.setAttribute('role','status');recoveryMessage.setAttribute('aria-live','polite');recoveryButton.type='button';recoveryButton.textContent='View saved learning';recoveryButton.addEventListener('click',learning);
+recoveryNotice.append(recoveryMessage,recoveryButton);$('continuous-reader').before(recoveryNotice);
+function updateRecoveryNotice(){
+ const kept=state.keptAside||{notes:[],bookmarks:[]},count=kept.notes.length+kept.bookmarks.length;
+ recoveryNotice.hidden=!storageDamaged&&!count;
+ const message=storageDamaged?'Saved learning needs recovery. Export the original backup.':count+' saved item'+(count===1?' was':'s were')+' kept aside. View or export them.';
+ if(recoveryMessage.textContent!==message)recoveryMessage.textContent=message;
+ updateBarHeight();
+}
+function retainedMarkup(){
+ const kept=state.keptAside||{notes:[],bookmarks:[]};if(!kept.notes.length&&!kept.bookmarks.length)return '';
+ const reasons={unknown_line:'A note attached to a line outside this edition.',long_reflection:'A note longer than the current editing limit. The full text is kept.',migration_collision:'A second note for the same reading place. Both notes are kept.'};
+ return '<section id="retained-learning-items"><h3>Learning kept aside</h3><p>You can select or copy these notes. They are also included in your learning export.</p>'+kept.notes.map(item=>'<details><summary>Saved reflection · '+h(item.id)+'</summary><p>'+h(reasons[item.reason])+'</p><label>Complete retained reflection<textarea readonly rows="6">'+h(item.text)+'</textarea></label></details>').join('')+(kept.bookmarks.length?'<h4>Bookmarks from another edition</h4><ul>'+kept.bookmarks.map(id=>'<li>'+h(id)+'</li>').join('')+'</ul>':'')+'</section>';
+}
+updateRecoveryNotice();
 // Only peripheral headings recede. The complete dock is always visible.
 function setQuiet(on){
  if(quietMode===on)return;
@@ -87,7 +142,7 @@ function readingTools(){
  const i=model.byId.get(state.read.id)??0,saved=state.bookmarks.includes(lines[i].id);
  openDialog('Reading controls','<p class="plain-note">'+h($('mode-description').textContent)+'</p><p class="plain-note">'+h($('dock-position').getAttribute('title'))+' · '+h($('guide-caption').textContent)+'</p><div class="menu-list"><button data-action="reader-home">Library home</button><button data-action="reader-pace">Visual reading pace · <strong>'+state.pace+'</strong></button><button data-action="reader-settings">Text, radiance &amp; visual pace</button><button data-action="reader-jump">Jump to a passage</button><button data-action="reader-save">'+(saved?'Remove saved reading line':'Save this reading line')+'</button><button data-action="note" data-index="'+i+'">Keep a reflection here</button><button data-action="reader-start">Start scrolling from here</button>'+(!following&&started?'<button data-action="reader-follow">Return to glow</button>':'')+'<button data-action="reader-quiet">'+(quietMode?'Show page heading':'Enter immersive reading')+'</button><button data-action="reader-spacing">'+(roomySpacing?'Use closer spacing':'Use spacious spacing')+'</button><button data-action="reader-explore">Explore · learning, raag &amp; gurdwaras</button></div><p class="plain-note">The dock always stays visible. Expand it by touch or keyboard for every option. Escape closes a panel. No audio is played or synchronized.</p>','READING OPTIONS');
 }
-function readingTop(){return 14;}
+function readingTop(){return 14+(recoveryNotice.hidden?0:recoveryNotice.getBoundingClientRect().height);}
 function updateBarHeight(){document.documentElement.style.setProperty('--bar-height',readingTop()+'px');}
 function anchor(){
  const top=readingTop();
@@ -96,7 +151,7 @@ function anchor(){
  return {id:lines[lo].id,offset:rows[lo].getBoundingClientRect().top-top};
 }
 function restoreAnchor(point){const idx=model.byId.get(point.id);if(idx===undefined)return;programmaticUntil=performance.now()+150;for(let pass=0;pass<2;pass++){const top=readingTop();const delta=rows[idx].getBoundingClientRect().top-top-point.offset;window.scrollTo({top:Math.max(0,scrollY+delta),behavior:'instant'});}}
-function rememberVisible(){state.read=anchor();updateDock();persist();}
+function rememberVisible(){if(pageSuspended)return;state.read=anchor();updateDock();persist();}
 function applyAppearance(){document.documentElement.dataset.theme=state.theme;const themeMeta=document.querySelector('meta[name="theme-color"]');if(themeMeta)themeMeta.content=state.theme==='amrit'?'#111929':'#faf6ec';document.documentElement.dataset.radiance=String(state.radiance);document.documentElement.style.setProperty('--gurmukhi-size',state.size+'px');}
 function applyMode(){document.body.dataset.depth=state.mode;document.querySelectorAll('.modes [data-depth]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.depth===state.mode)));$('mode-description').textContent={read:'Gurmukhi only. One continuous reading.',understand:'Short meanings below the words. Tap for more.',study:'Full learning: words, meaning, context and reflection.'}[state.mode];$('coverage-note').hidden=state.mode==='read';updateBarHeight();}
 function updateDock(){
@@ -169,9 +224,17 @@ async function note(index){
   notePermit=permit;const saved=shared.read();refreshLearning(saved);$('reflection').value=state.notes[l.id]||'';$('reflection').disabled=false;$('note-status').textContent='Only this tab can edit reflections until you close this panel. Changes save in this browser.';
  }catch(err){releaseNote();if($('note-status'))$('note-status').textContent=err.message;}
 }
-function learning(){const saved=state.bookmarks;openDialog('Saved learning','<p class="plain-note">Saved in this browser. One tab at a time can edit reflections; other tabs may keep reading. Close old reader tabs after updating. Separate devices do not synchronize automatically. Other people using this browser profile can see its notes. Export before changing address or Home Screen context.</p><div class="menu-list">'+saved.map(id=>{const i=model.byId.get(id),l=lines[i];return '<button data-action="jump" data-index="'+i+'">'+h(l.unitTitle)+' · line '+(l.lineIndex+1)+'<small lang="pa">'+h(l.text)+'</small></button>';}).join('')+(saved.length?'':'<p>No saved lines yet.</p>')+'</div><div class="line-actions"><button data-action="note" data-index="'+(model.byId.get(state.read.id)||0)+'">Write a reflection here</button><button data-action="export">Export learning</button></div><label class="file-import">Import or merge learning from any GLP reader<input type="file" id="import-file" accept="application/json,.json"></label><div id="import-preview"></div><p class="plain-note">Your previous Pauri 2 notebook has not been changed. It is still available in the original detailed lesson.</p><a href="pauri-2-lesson.html">Original Pauri 2 notebook ↗</a>','BOOKMARKS · NOTES · BACKUP');}
-async function exportLearning(){await persist(true);let exported;try{exported=L.exportAll(localStorage);}catch{exported=JSON.stringify({format:'glp-family-learning',version:1,projectId:'GLP-001',records:{[KEY]:JSON.stringify(state)}});}if(!storageOK&&!storageDamaged){const bundle=JSON.parse(exported);bundle.records[KEY]=JSON.stringify(state);exported=JSON.stringify(bundle,null,2);}const blob=new Blob([exported],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='Gurbani-learning.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),3000);status('Learning export prepared.');}
-async function action(kind,index){switch(kind){case'reader-home':closeDialog(()=>{persist(true).then(()=>{location.href='index.html';});});break;case'reader-pace':closeDialog(openPaceTray);break;case'reader-settings':settings();break;case'reader-jump':jumps();break;case'reader-save':closeDialog(savePlace);break;case'reader-start':closeDialog(()=>startHere(model.byId.get(anchor().id)??0));break;case'reader-follow':closeDialog(returnToGuide);break;case'reader-quiet':closeDialog(toggleQuiet);break;case'reader-spacing':closeDialog(toggleSpacing);break;case'reader-explore':explore();break;case'meaning':showMeaning(index);break;case'study-at':closeDialog(()=>{changeMode('study',{id:lines[index].id,offset:0});goTo(index);});break;case'pause':pause('Visual guide paused. External audio is unchanged.');break;case'note':note(index);break;case'jump':closeDialog(()=>goTo(index));break;case'related':related();break;case'context':context(index);break;case'raag':raag();break;case'gurdwaras':gurdwaras();break;case'place':place(index);break;case'coverage':coverage();break;case'learning':learning();break;case'export':exportLearning();break;case'install':installHelp();break;case'cancel-import':importCandidate=null;$('import-preview').textContent='Import cancelled. Nothing changed.';break;case'apply-import':if(importCandidate){pause();try{await persist(true);await shared.importWith(()=>L.importAll(localStorage,importCandidate));const incoming=JSON.parse(localStorage.getItem(KEY)||'null');importCandidate=null;closeDialog(()=>{state=C.normalise(incoming,model,units);storageOK=true;storageDamaged=false;started=state.hasGuided;finished=false;applyAppearance();applyMode();restoreAnchor(state.read);paint();persist(true);status('Learning merged. Existing reflections were preserved.');});}catch(err){$('import-preview').textContent=err.message;}}break;}}
+function learning(){const saved=[...new Set([...state.bookmarks,...Object.keys(state.notes).filter(id=>model.byId.has(id)&&state.notes[id])])].sort((a,b)=>model.byId.get(a)-model.byId.get(b));openDialog('Saved learning','<p class="plain-note">Saved in this browser. One tab at a time can edit reflections; other tabs may keep reading. Close old reader tabs after updating. Separate devices do not synchronize automatically. Other people using this browser profile can see its notes. Export before changing address or Home Screen context.</p><div class="menu-list">'+saved.map(id=>{const i=model.byId.get(id),l=lines[i];return '<button data-action="jump" data-index="'+i+'">'+h(l.unitTitle)+' · line '+(l.lineIndex+1)+'<small lang="pa">'+h(l.text)+'</small><small>'+ (state.bookmarks.includes(id)?'Saved line':'')+(state.bookmarks.includes(id)&&state.notes[id]?' · ':'')+(state.notes[id]?'Reflection':'')+'</small></button>';}).join('')+(saved.length?'':'<p>No saved lines or reflections yet.</p>')+'</div>'+retainedMarkup()+'<div class="line-actions"><button data-action="note" data-index="'+(model.byId.get(state.read.id)||0)+'">Write a reflection here</button><button data-action="export">Export learning</button></div><label class="file-import">Import or merge Japji learning, including earlier Japji notebooks<input type="file" id="import-file" accept="application/json,.json"></label><div id="import-preview"></div><p class="plain-note">Your previous Pauri 2 notebook has not been changed. It is still available in the original detailed lesson.</p><a href="pauri-2-lesson.html">Original Pauri 2 notebook ↗</a>','BOOKMARKS · NOTES · BACKUP');}
+async function exportLearning(){
+ // Damaged records must be exported raw, synchronously in the click handler.
+ if(storageDamaged){exportOriginalLearning();return;}
+ await persist(true);
+ let exported;
+ try{exported=L.exportAll(localStorage);}catch{exported=JSON.stringify({format:'glp-family-learning',version:1,projectId:'GLP-001',records:{[KEY]:JSON.stringify(state)}});}
+ if(!storageOK&&!storageDamaged){const bundle=JSON.parse(exported);bundle.records[KEY]=JSON.stringify(state);exported=JSON.stringify(bundle,null,2);}
+ try{downloadLearning(exported);status('Learning export prepared.');}catch(_){status('Could not prepare a backup. Keep this reader open and do not clear site data.');}
+}
+async function action(kind,index){switch(kind){case'reader-home':closeDialog(()=>{persist(true).then(()=>{location.href='index.html';});});break;case'reader-pace':closeDialog(openPaceTray);break;case'reader-settings':settings();break;case'reader-jump':jumps();break;case'reader-save':closeDialog(savePlace);break;case'reader-start':closeDialog(()=>startHere(model.byId.get(anchor().id)??0));break;case'reader-follow':closeDialog(returnToGuide);break;case'reader-quiet':closeDialog(toggleQuiet);break;case'reader-spacing':closeDialog(toggleSpacing);break;case'reader-explore':explore();break;case'meaning':showMeaning(index);break;case'study-at':closeDialog(()=>{changeMode('study',{id:lines[index].id,offset:0});goTo(index);});break;case'pause':pause('Visual guide paused. External audio is unchanged.');break;case'note':note(index);break;case'jump':closeDialog(()=>goTo(index));break;case'related':related();break;case'context':context(index);break;case'raag':raag();break;case'gurdwaras':gurdwaras();break;case'place':place(index);break;case'coverage':coverage();break;case'learning':learning();break;case'export':exportLearning();break;case'install':installHelp();break;case'cancel-import':importCandidate=null;$('import-preview').textContent='Import cancelled. Nothing changed.';break;case'apply-import':if(importCandidate){pause();try{await persist(true);await shared.importWith(()=>L.importAll(localStorage,importCandidate));const incoming=JSON.parse(protectedStorage.getItem(KEY)||'null');importCandidate=null;closeDialog(()=>{state=C.normalise(incoming,model,units);storageOK=true;storageDamaged=false;started=state.hasGuided;finished=false;applyAppearance();applyMode();restoreAnchor(state.read);paint();persist(true);status('Learning merged. Existing reflections were preserved.');});}catch(err){$('import-preview').textContent=err.message;}}break;}}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b)return;const idx=Number(b.dataset.index);action(b.dataset.action,Number.isInteger(idx)?idx:0);});
 document.querySelectorAll('.modes [data-depth]').forEach(b=>b.addEventListener('click',()=>changeMode(b.dataset.depth)));
 $('tools-open').addEventListener('click',readingTools);
@@ -198,21 +261,40 @@ $('dialog-body').addEventListener('change',async e=>{
 window.addEventListener('wheel',()=>{detach();},{passive:true});
 let touchY=null;document.addEventListener('touchstart',e=>{touchY=e.touches[0]?.clientY??null;},{passive:true});document.addEventListener('touchmove',e=>{if(!$('reader-dialog').open&&touchY!==null&&Math.abs((e.touches[0]?.clientY??touchY)-touchY)>5)detach();},{passive:true});
 document.addEventListener('keydown',e=>{if(!$('reader-dialog').open&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName||'')&&['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(e.key))detach();});
-window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(!$('reader-dialog').open){if(!state.persistentControls&&!quietMode&&scrollY>320&&!document.querySelector('.page-header').contains(document.activeElement))setQuiet(true);rememberVisible();}},120);},{passive:true});
+window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);if(pageSuspended)return;scrollTimer=setTimeout(()=>{if(!pageSuspended&&!$('reader-dialog').open){if(!state.persistentControls&&!quietMode&&scrollY>320&&!document.querySelector('.page-header').contains(document.activeElement))setQuiet(true);rememberVisible();}},120);},{passive:true});
 // A fixed dock must never cover a keyboard-focused meaning or Study action.
 document.addEventListener('focusin',e=>{
- const target=e.target;if(!target.closest('main')||!target.matches('button,a,input,select,textarea,summary'))return;
+ const target=e.target;if(!target.closest('main')||target.closest('#retained-learning')||!target.matches('button,a,input,select,textarea,summary'))return;
  const rect=target.getBoundingClientRect(),top=readingTop(),bottom=document.querySelector('.reading-dock').getBoundingClientRect().top-12;
  const delta=rect.height>bottom-top||rect.top<top?rect.top-top:rect.bottom>bottom?rect.bottom-bottom:0;
  if(delta){detach();programmaticUntil=performance.now()+150;window.scrollTo({top:Math.max(0,scrollY+delta),behavior:'instant'});}
 });
 window.addEventListener('resize',()=>{updateBarHeight();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)pause('Visual guide paused while the reading page is hidden.');});
-window.addEventListener('pagehide',()=>{if(!$('reader-dialog').open)state.read=anchor();pause();persist(true);cancelAnimationFrame(raf);});
-window.addEventListener('pageshow',()=>pause());
-window.addEventListener('storage',e=>{if(e.key!==KEY)return;try{refreshLearning(shared.read());}catch(err){storageOK=false;storageDamaged=true;status(err.message);}});
+// A cached document does not rerun initial rendering. Safari returns it at the
+// top while manual restoration is selected, so restore the occurrence on return.
+// Do not let transient history scroll events overwrite that saved occurrence.
+window.addEventListener('pagehide',()=>{
+ clearTimeout(scrollTimer);cancelAnimationFrame(returnFrame);returnFrame=0;
+ if(!pageSuspended&&!$('reader-dialog').open)state.read=anchor();
+ pageSuspended=true;pause();persist(true);cancelAnimationFrame(raf);
+});
+window.addEventListener('pageshow',()=>{
+ pause();if(!pageSuspended)return;
+ const point={...state.read};restoreAnchor(point);
+ returnFrame=requestAnimationFrame(()=>{
+  restoreAnchor(point);state.read=point;pageSuspended=false;returnFrame=0;updateDock();
+ });
+});
+window.addEventListener('storage',e=>{if(e.key!==KEY&&e.key!==L.RETAINED)return;try{refreshLearning(shared.read());}catch(err){storageOK=false;storageDamaged=true;updateRecoveryNotice();status(err.message);}});
 window.addEventListener('beforeunload',e=>{if(Object.keys(pendingNotes).length){e.preventDefault();e.returnValue='';}});
 window.GLP_BEFORE_UPDATE=async()=>{pause();await persist(true);return storageOK&&!storageDamaged;};
-applyAppearance();applyMode();paint();if(raw)restoreAnchor(state.read);rememberVisible();
+// A library Saved link opens the native list only after source verification.
+// Preserve the reader's stored occurrence instead of choosing a new visible line.
+const learningEntry=new URL(location.href).searchParams.getAll('learning');
+const openSavedEntry=learningEntry.length===1&&learningEntry[0]==='saved';
+applyAppearance();applyMode();paint();if(raw)restoreAnchor(state.read);
+if(openSavedEntry){updateDock();if(!storageDamaged){const point={...state.read};learning();modalReturn=point;}}
+else rememberVisible();
 window.GLP_CONTINUOUS_DEBUG=Object.freeze({version:'0.9-japji-v1-r7',lineCount:lines.length,units:units.length,explanationCount:explanations.size,getState:()=>JSON.parse(JSON.stringify(state)),isPlaying:()=>playing,isFollowing:()=>following});
 })();

@@ -1,0 +1,19 @@
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+93 !== 81
+
+    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-content.mjs:87:99
+    at test (file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-content.mjs:11:36)
+    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-content.mjs:82:7 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 93,
+  expected: 81,
+  operator: 'strictEqual'
+}
+
+Node.js v22.15.0

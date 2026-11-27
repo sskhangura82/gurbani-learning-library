@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": [
+    "390px: editorial and scripture rows, headings and Punjabi bodies remain distinct; canonical lines unchanged",
+    "820px: editorial and scripture rows, headings and Punjabi bodies remain distinct; canonical lines unchanged",
+    "1440px: editorial and scripture rows, headings and Punjabi bodies remain distinct; canonical lines unchanged",
+    "Re-pinned prefixed description title refused in the actual page",
+    "Re-pinned concept Punjabi heading refused in the actual page",
+    "Re-pinned word Punjabi source verse refused in the actual page",
+    "Re-pinned verse posed as dictionary form refused in the actual page",
+    "Re-pinned node alias heading refused in the actual page",
+    "Re-pinned passage description alias refused in the actual page",
+    "Re-pinned lesson copy source verse refused in the actual page",
+    "Re-pinned comparison heading refused in the actual page",
+    "Re-pinned unvalidated joined alias attempt refused in the actual page",
+    "Permitted names stay editorial; valid passage alias identifies editorial matching; markup remains literal text",
+    "A syntactically unrecognized imitation remains labelled editorial in page and search and never enters original scripture",
+    "An attested dictionary word remains usable with source-token identity and separately labelled editorial explanation"
+  ],
+  "errors": [],
+  "limits": [
+    "Fresh synthetic desktop-browser contexts, with emulated viewport dimensions.",
+    "No physical iPhone, Safari, VoiceOver, participant testing, qualified content review, staging or deployment."
+  ],
+  "environment": {
+    "platform": "darwin",
+    "node": "v22.15.0",
+    "browser": "158.0.8127.37"
+  }
+}

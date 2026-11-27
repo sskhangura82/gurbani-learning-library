@@ -1,0 +1,31 @@
+{
+  "startedAt": "2026-11-27T02:02:21.604Z",
+  "source": "working-tree",
+  "caseFilter": "real wheel|No runtime",
+  "checks": [
+    {
+      "name": "A real wheel action during delayed reload layout wins over automatic restoration",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: The wheel action must be saved before readiness completes\n    at file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:80:11\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:45:166)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/reader-reliability/tests/sukhmani-resume-browser.mjs:70:2"
+    },
+    {
+      "name": "No runtime errors or external requests",
+      "evidence": {
+        "runtimeErrors": [],
+        "externalRequests": []
+      },
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Fresh desktop Chrome emulation only; no physical iPhone, Safari, VoiceOver or airplane-mode acceptance.",
+    "PR47 linked-visit behavior is deliberately outside this repair.",
+    "Waits exceed the existing 200 ms scroll debounce; assertions cover both logical occurrence and actual geometry.",
+    "Inherited rapid scrolling followed by leaving within 200 ms is outside this bounded repair; navigation cases settle for 450 ms first."
+  ],
+  "browser": "158.0.8127.37",
+  "completedAt": "2026-11-27T02:02:23.789Z",
+  "status": "failed"
+}

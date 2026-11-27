@@ -1,0 +1,16 @@
+{
+  "base": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "runAt": "2026-11-27T02:00:14.404592+00:00",
+  "results": [
+    {
+      "test": "sukhmani-content",
+      "exitCode": 1,
+      "log": "evidence/reader-reliability/20261127T020132Z-frozen-parent-check/sukhmani-content.log"
+    },
+    {
+      "test": "nitnem-content",
+      "exitCode": 1,
+      "log": "evidence/reader-reliability/20261127T020132Z-frozen-parent-check/nitnem-content.log"
+    }
+  ]
+}

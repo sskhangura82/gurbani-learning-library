@@ -1,0 +1,118 @@
+{
+  "environment": "Node contracts, not physical browser acceptance",
+  "results": [
+    {
+      "command": [
+        "node",
+        "tests/verify.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-01.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/shared-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-02.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/japji-retained-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-03.log"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/source-integrity.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-04.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/r7-contract.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-05.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-06.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-learning.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-07.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-backup-capacity.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-08.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-storage-quota.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-09.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-ui-lifecycle.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-10.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/salok-mahalla9-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-11.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/salok-kabir-content.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-12.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/salok-kabir-bindings.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-13.log"
+    },
+    {
+      "command": [
+        "node",
+        "tests/service-worker.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/contract-14.log"
+    }
+  ]
+}

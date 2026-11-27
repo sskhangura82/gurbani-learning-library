@@ -1,0 +1,8 @@
+The second run exited before report.json could be written:
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot write headers after they are sent to the client
+    at ServerResponse.writeHead (node:_http_server:368:11)
+    at Server.<anonymous> (tests/knowledge-integration-browser.mjs:24:12)
+Node.js v26.0.0
+
+Instrument error: the server wrote a success header before awaiting the file read. Any missing request caused catch to write a second 404 header. Corrected by completing fs.readFile before writing the success header. This result cannot establish any candidate interaction verdict. No application code or acceptance assertion changed.

@@ -1,0 +1,17 @@
+{
+  "passed": 12,
+  "tests": [
+    "Missing state creates a valid Sukhmani-only state",
+    "Newer and unfamiliar states refuse normalization",
+    "Malformed original data is preserved without a write",
+    "Imported state rejects unknown lines and oversized reflections",
+    "Japji and foreign exports cannot replace Sukhmani state",
+    "Export round-trips Gurmukhi personal notes and bookmarks",
+    "Import preserves current reading preferences and both notes",
+    "Adding later Ashtpadis preserves existing records and accepts their original exports",
+    "Conflicting overlong import refuses before applying",
+    "Web Locks saving merges the latest other-tab learning and never writes Japji",
+    "Absent Web Locks refuses writes",
+    "A future-version record appearing during a write remains untouched"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-27T03:15:50.050714+00:00",
+  "beforeHostedFailure": "evidence/library-script-integrity/hosted/69e24fe-initial-failures/reader.log",
+  "testSha256": "92f803e75d104227a8d27deff88306bdce01bc7d7d4cf894b93a92cfad8061bd",
+  "workerSha256": "ac49a970d39eab5efc094d76fdfb9e7ecae8f76bfe5ba98c9bb700f775ec511d",
+  "nodeResult": "8 checks PASS",
+  "assetCountAudit": [
+    {
+      "file": "tests/sukhmani-content.mjs",
+      "line": 35,
+      "text": "  assert.deepEqual(source.ashtpadis.map(a=>a.lines.length), [90,84,84,84,84,84,86,85,86,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84]);"
+    },
+    {
+      "file": "tests/salok-kabir-browser.mjs",
+      "line": 349,
+      "text": "  assert.equal(actual.scope,PREFIX);assert.equal(actual.names.length,1);const expectedPaths=Object.keys(expectedAssets).map(asset=>new URL(asset,origin+PREFIX+'sw.js').pathname).sort();assert.deepEqual(actual.assets[0].sort(),expectedPaths);assert.equal(expectedPaths.length,81);"
+    },
+    {
+      "file": "tests/library-script-integrity-offline.mjs",
+      "line": 120,
+      "text": "  assert.equal(Object.keys(prior.expected).length,85,'Frozen prior reference contains the known 85-asset release');"
+    },
+    {
+      "file": "tests/salok-kabir-content.mjs",
+      "line": 87,
+      "text": " const cache=JSON.parse(read('sw.js').toString().match(/const EXPECTED=(\\{[^\\n]+\\});/)[1]);assert.equal(Object.keys(cache).length,81);"
+    }
+  ],
+  "localHarnessCorrection": "First expanded-byte-check attempt saw Response.clone Body has already been consumed on one run; diagnostic repeat did not reproduce. Cache simulation now stores response bytes at put and constructs a fresh response on match, matching CacheStorage semantics, so cached-body checking does not reuse a transport response stream. No worker/application code changed."
+}

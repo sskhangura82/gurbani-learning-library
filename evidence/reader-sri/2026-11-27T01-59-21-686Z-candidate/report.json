@@ -1,0 +1,765 @@
+{
+  "schema": "glp.reader-sri-browser.v1",
+  "startedAtUtc": "2026-11-27T01:59:21.687Z",
+  "mode": "candidate",
+  "base": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "checks": [
+    {
+      "name": "Unmodified nitnem/index.html renders its complete source without uncaught runtime errors",
+      "status": "PASS",
+      "sourceRows": 56,
+      "uncaughtRuntimeErrorsChecked": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified full-japji.html renders its complete source without uncaught runtime errors",
+      "status": "PASS",
+      "sourceRows": 385,
+      "uncaughtRuntimeErrorsChecked": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified sukhmani.html renders its complete source without uncaught runtime errors",
+      "status": "PASS",
+      "sourceRows": 2027,
+      "uncaughtRuntimeErrorsChecked": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified salok-mahalla9/index.html renders its complete source without uncaught runtime errors",
+      "status": "PASS",
+      "sourceRows": 114,
+      "uncaughtRuntimeErrorsChecked": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Unmodified salok-kabir/index.html renders its complete source without uncaught runtime errors",
+      "status": "PASS",
+      "sourceRows": 486,
+      "uncaughtRuntimeErrorsChecked": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: nitnem/index.html → nitnem/appearance.js",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/appearance.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc",
+      "alteredSha256": "b929126e055f5cc9bf07eee3ee96c794c10a3f261a204596e6d02a78853b3cff",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/appearance.js' with computed SHA-384 integrity '5ma8VwGbC6lG4lB5TGAfsOY5RIthNtPVZkEN1mT3e6Gnc3RhlTviVm8/CxKly0bl'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: nitnem/index.html → nitnem/continuous-core.js",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/continuous-core.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+      "alteredSha256": "81ec9dd65a5e9f011ed9589f4bee90bd2ea84505d503488d35023fbc9fe890ba",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/continuous-core.js' with computed SHA-384 integrity '8c6R7D84ZIcjD2i/ONmivzYCwXH2k2Oe9Hw9paErJ7aY+dcR0/Oqi5t/tl8SJf2o'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: nitnem/index.html → nitnem/learning/learning-ui.js",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/learning/learning-ui.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+      "alteredSha256": "f2b957d6d620108613d4eb7d03595b8d39eb8a096d408471d7aaf01d722d1f40",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/learning/learning-ui.js' with computed SHA-384 integrity 'JGQBSh715tPcB14jdFQxpPDSsVxeDacyowxpKU69LoseYMqObC0io2Jhm0Yt/Aav'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: nitnem/index.html → nitnem/local-learning.js",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/local-learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+      "alteredSha256": "7f68372c24861d9de7dc5d32678f91a808eb3a5345bcb3d8a0626f3ad54dc4ac",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/local-learning.js' with computed SHA-384 integrity 'MuT2hzNPOE0A8f6KmhyL4RfqcU5VpQTL+ab1y2Qzz6sUsefQy0v0Ej4yeDv66tRW'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: nitnem/index.html → nitnem/reader.js",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "refusedEntryState": {
+        "verifiedElements": 0,
+        "receipt": "undefined",
+        "nitnemVerified": false,
+        "scriptureRows": 0
+      },
+      "preservedLearningRecords": 5,
+      "preservedRecordDigests": {
+        "glp001.continuous.v2": "33c417e710e0755cf49a5bcf8a3e23faad2ce33991cfad1e68931545052fcb93",
+        "glp001.sukhmani.v1": "0e2901c3e401ebf30baa02391c62d25bcc6e2eab54fcebff1006376b0140a308",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": "90f03cd89cfa930584012cf5139caaf95753cf6833a52176fc14fe8b71058ac7",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-mahalla9.salok-mahalla9-opengranth-34d2a7c-20261126": "d7222cbafd3a26299681880cee4abb62516f707ead8fad04a93acefaee5d6873",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-kabir.salok-kabir-selected-witnesses-34d2a7c-20261126": "a89c37423f058e0695e3977427ffd7c2a488730548390f5350d5f3709fd2047a"
+      },
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/reader.js' with computed SHA-384 integrity 'I5LpAd2PRIeqJgbkdx+vUTijT89da+qaFScInexnKnuPg7C2ksUKvuhOpg1MnVlf'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: nitnem/index.html → nitnem/offline.js",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/offline.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690",
+      "alteredSha256": "9fe12bfdae13a4b1d28553ea0a1bad31a237048c8a2410c37138f48b2902b488",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/offline.js' with computed SHA-384 integrity 'z+CcVTXnnKCtVbmQzLQN9wJs9QqzLL8/Sz82Mql/LsQl1sCvnvh0LVGM9kQtIIBl'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/source-integrity.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/source-integrity.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757",
+      "alteredSha256": "327fdc8afa81adfe4f72709cae35f73a7ddcbf201876d80beea2bd787ad5cb1e",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/source-integrity.js' with computed SHA-384 integrity 'J0T1qhrNb5KrpptduLmAoxhPr5LUkTzlMQNYCmiwSCSHZm/C6oZSKpe929/zJaEO'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/japji-full-data.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/japji-full-data.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "alteredSha256": "d7effb393e032084f483ff0e0cb4c3e90a004b5511d2ca1ecabe662f18c5cfbb",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/japji-full-data.js' with computed SHA-384 integrity 'FVwkeYOqVttbbDj7qKnSHQwQ24xS6DCKTg1Rg5P0jZatW/s5VDUVsNLiBGOKMb8O'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/content.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/content.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62",
+      "alteredSha256": "a6936edb7ad03589776602fe8faf478ef491db3fe8b33851612d96639b4ffd40",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/content.js' with computed SHA-384 integrity 'yZwNDMszhMyqlamVvMOjCRgKLNVrf5Q/sKUhBIFxLitMsAQeX+jH7ZxO9kKH/e39'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": [
+        "Cannot read properties of undefined (reading 'lesson')"
+      ]
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/gurdwaras.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/gurdwaras.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2",
+      "alteredSha256": "d7fc60ed720ef52532f0d16415101619f5134698e62c24ac0ccada4e57407ea7",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/gurdwaras.js' with computed SHA-384 integrity 'imWeDzxUcICjCgcXZLcv6OkIeZYuEZVdJwLIWo2UIoXYV0GFIon0PDdYi2NfqSDX'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/continuous-core.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/continuous-core.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d",
+      "alteredSha256": "81f16b89be149780ba1ffde0923ffd248d424a763adaddc4850f16151165c4a3",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/continuous-core.js' with computed SHA-384 integrity 'mxWfFRZUHOp++bAjgWQ7c+3pL1CDk3UyFAQb/CBrk3LjjrjXCG/h4/0WB6YSf7hW'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/learning.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b",
+      "alteredSha256": "328a5ca6a92a437dbfb2938669e500a0174fdf9c38f76b5c39aa370d364d4d9c",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/learning.js' with computed SHA-384 integrity 'bJ+NBUWGtIPXH5iQsby3JInLajzuan+UB47kC7mH2M//2bZ/kYabU8AaYj6/5hhr'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": [
+        "Cannot read properties of undefined (reading 'configureContinuous')"
+      ]
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/shared-learning.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/shared-learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "alteredSha256": "1c1aa28a1ecb82a303d8be0394710d46a4cdacdb2f03a5a14c2456e2bfa422ba",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/shared-learning.js' with computed SHA-384 integrity 'wcdUWdMiyhj/1L8/KzofjVa0Qu/YX9UScjOQrxK+HVh+8pA/d/pbRoWKIlYXj9AR'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": [
+        "Cannot read properties of undefined (reading 'create')"
+      ]
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/japji-lessons.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/japji-lessons.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+      "alteredSha256": "243527fdc2e4f9a794e07c0b01fd13ca97defe069374fe7ad52f4eaa3940ae7b",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/japji-lessons.js' with computed SHA-384 integrity 'cH7aamVtcyy0IQF5bsBAU0tugNwBRiXnlvjKWGoHnDT3kylWzWGg6FxHn892lXWI'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": [
+        "Cannot read properties of undefined (reading 'lessons')"
+      ]
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/line-meanings.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/line-meanings.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+      "alteredSha256": "fd9bd0fe35f25a15f586ff9bdb3ac7bf2617ab1906fea9910d4689e898ac782c",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/line-meanings.js' with computed SHA-384 integrity '+K6DdCjDY1XYlZsSBzze+NcgI6A0PearXzIuvd2s1AHa5FH8epCzS842a5Nq70gS'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/japji-full.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/japji-full.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "refusedEntryState": {
+        "verifiedElements": 0,
+        "receipt": "undefined",
+        "nitnemVerified": false,
+        "scriptureRows": 0
+      },
+      "preservedLearningRecords": 5,
+      "preservedRecordDigests": {
+        "glp001.continuous.v2": "33c417e710e0755cf49a5bcf8a3e23faad2ce33991cfad1e68931545052fcb93",
+        "glp001.sukhmani.v1": "0e2901c3e401ebf30baa02391c62d25bcc6e2eab54fcebff1006376b0140a308",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": "90f03cd89cfa930584012cf5139caaf95753cf6833a52176fc14fe8b71058ac7",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-mahalla9.salok-mahalla9-opengranth-34d2a7c-20261126": "d7222cbafd3a26299681880cee4abb62516f707ead8fad04a93acefaee5d6873",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-kabir.salok-kabir-selected-witnesses-34d2a7c-20261126": "a89c37423f058e0695e3977427ffd7c2a488730548390f5350d5f3709fd2047a"
+      },
+      "originalSha256": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f",
+      "alteredSha256": "70f35aa1f45d94f6ce1893b5acfc4d7ba52aec74deb26570bfa5136464ff9db8",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/japji-full.js' with computed SHA-384 integrity 'Sx1e/l1HGi2pbHRPOaCxAPfq02VgFa0e00AMxG8zS9x32A5nwwj6CZHE2/bxxx2p'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: full-japji.html → js/pwa.js",
+      "status": "PASS",
+      "page": "full-japji.html",
+      "script": "js/pwa.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+      "alteredSha256": "c468e544533b0c860d4973bf234b901eb046a3d9faaa2bca22b9ab965f06f694",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/pwa.js' with computed SHA-384 integrity 'fc+GWv2W4TNW6Hr51xb+mXteOKoDjkMnz3XTkPmg+R0+ojUPfH7oWcl/bUwHe45S'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/source-integrity.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/source-integrity.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757",
+      "alteredSha256": "327fdc8afa81adfe4f72709cae35f73a7ddcbf201876d80beea2bd787ad5cb1e",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/source-integrity.js' with computed SHA-384 integrity 'J0T1qhrNb5KrpptduLmAoxhPr5LUkTzlMQNYCmiwSCSHZm/C6oZSKpe929/zJaEO'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/sukhmani-data.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/sukhmani-data.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+      "alteredSha256": "6611c49efc69493126f4f92577ab6e81c6498df25e3fa969ceda7ae0d2e00320",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/sukhmani-data.js' with computed SHA-384 integrity 'dMc5pWeORrrRLPi1mhh4rnaJpk9F09vbqTRv7mtdxYoo8j2XvdPp80kGd4OJfKYo'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/sukhmani-teaching.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/sukhmani-teaching.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6",
+      "alteredSha256": "0ab6b81f17b03a7cd07cc987b835a052682ef03df1ba520c47737940c5fde8ec",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/sukhmani-teaching.js' with computed SHA-384 integrity 'HzN3jIByyAxOO9d9KhRyB6V88DtbfQrZEY4NlyB2u9nz8jIZJK+ipkgjSOfhe5zZ'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/sukhmani-learning.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/sukhmani-learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4",
+      "alteredSha256": "f5c8a9d15bd8261046bc1fa97a94b3553ab1923de0c29b8f6454936febfafd8b",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/sukhmani-learning.js' with computed SHA-384 integrity 'qKueuMevDk+cD5zRwcLszWS826LcWJP1Gg0PsrYphmCS7im3l5cH9Il0OZ4+1T7J'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/shared-learning.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/shared-learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "alteredSha256": "1c1aa28a1ecb82a303d8be0394710d46a4cdacdb2f03a5a14c2456e2bfa422ba",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/shared-learning.js' with computed SHA-384 integrity 'wcdUWdMiyhj/1L8/KzofjVa0Qu/YX9UScjOQrxK+HVh+8pA/d/pbRoWKIlYXj9AR'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/sukhmani-reader.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/sukhmani-reader.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "refusedEntryState": {
+        "verifiedElements": 0,
+        "receipt": "undefined",
+        "nitnemVerified": false,
+        "scriptureRows": 0
+      },
+      "preservedLearningRecords": 5,
+      "preservedRecordDigests": {
+        "glp001.continuous.v2": "33c417e710e0755cf49a5bcf8a3e23faad2ce33991cfad1e68931545052fcb93",
+        "glp001.sukhmani.v1": "0e2901c3e401ebf30baa02391c62d25bcc6e2eab54fcebff1006376b0140a308",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": "90f03cd89cfa930584012cf5139caaf95753cf6833a52176fc14fe8b71058ac7",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-mahalla9.salok-mahalla9-opengranth-34d2a7c-20261126": "d7222cbafd3a26299681880cee4abb62516f707ead8fad04a93acefaee5d6873",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-kabir.salok-kabir-selected-witnesses-34d2a7c-20261126": "a89c37423f058e0695e3977427ffd7c2a488730548390f5350d5f3709fd2047a"
+      },
+      "originalSha256": "73ba28e8a4c5d4d3c592a255bebc51404fd80b817d61a92d2da38d7062de0716",
+      "alteredSha256": "6d4e9592e37eb7289c8333d2d24e9a803a1c81736602efdf7c8a14313aa5eb66",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/sukhmani-reader.js' with computed SHA-384 integrity 'XjXjJLijugBTPQ4dXSO/+vvv7pRfGkn2hdeQnJNilacFwhOyZExS1aXt3345Y7df'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: sukhmani.html → js/pwa.js",
+      "status": "PASS",
+      "page": "sukhmani.html",
+      "script": "js/pwa.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+      "alteredSha256": "c468e544533b0c860d4973bf234b901eb046a3d9faaa2bca22b9ab965f06f694",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/js/pwa.js' with computed SHA-384 integrity 'fc+GWv2W4TNW6Hr51xb+mXteOKoDjkMnz3XTkPmg+R0+ojUPfH7oWcl/bUwHe45S'. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-mahalla9/index.html → nitnem/appearance.js",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/appearance.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc",
+      "alteredSha256": "b929126e055f5cc9bf07eee3ee96c794c10a3f261a204596e6d02a78853b3cff",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/appearance.js' with computed SHA-256 integrity 'uSkSbgVfXMm/B+7j7pbHlMEKPyYaIEWW5tAqeIU7PP8='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-mahalla9/index.html → nitnem/continuous-core.js",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/continuous-core.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+      "alteredSha256": "81ec9dd65a5e9f011ed9589f4bee90bd2ea84505d503488d35023fbc9fe890ba",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/continuous-core.js' with computed SHA-256 integrity 'geyd1lpenwEe2VifS+6QvS6oRQXVA0iNNQI/vJ/okLo='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-mahalla9/index.html → nitnem/learning/learning-ui.js",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/learning/learning-ui.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+      "alteredSha256": "f2b957d6d620108613d4eb7d03595b8d39eb8a096d408471d7aaf01d722d1f40",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/learning/learning-ui.js' with computed SHA-256 integrity '8rlX1tYgEIYT1Ot9A1lbjTnrigltQIRx16rwHXItH0A='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": [
+        "Cannot read properties of null (reading 'units')"
+      ]
+    },
+    {
+      "name": "Changed subresource refuses: salok-mahalla9/index.html → nitnem/local-learning.js",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/local-learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+      "alteredSha256": "7f68372c24861d9de7dc5d32678f91a808eb3a5345bcb3d8a0626f3ad54dc4ac",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/local-learning.js' with computed SHA-256 integrity 'f2g3LCSGHZ3n3F0yZ4+RqAjrOlNFvLPYoGJvOtVNxKw='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-mahalla9/index.html → nitnem/reader.js",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "refusedEntryState": {
+        "verifiedElements": 0,
+        "receipt": "undefined",
+        "nitnemVerified": false,
+        "scriptureRows": 0
+      },
+      "preservedLearningRecords": 5,
+      "preservedRecordDigests": {
+        "glp001.continuous.v2": "33c417e710e0755cf49a5bcf8a3e23faad2ce33991cfad1e68931545052fcb93",
+        "glp001.sukhmani.v1": "0e2901c3e401ebf30baa02391c62d25bcc6e2eab54fcebff1006376b0140a308",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": "90f03cd89cfa930584012cf5139caaf95753cf6833a52176fc14fe8b71058ac7",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-mahalla9.salok-mahalla9-opengranth-34d2a7c-20261126": "d7222cbafd3a26299681880cee4abb62516f707ead8fad04a93acefaee5d6873",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-kabir.salok-kabir-selected-witnesses-34d2a7c-20261126": "a89c37423f058e0695e3977427ffd7c2a488730548390f5350d5f3709fd2047a"
+      },
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/reader.js' with computed SHA-256 integrity 'zBjE4HBb7En/AWYO8Df0ULprSx7eo4KArAc2t2C1QjY='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-mahalla9/index.html → nitnem/offline.js",
+      "status": "PASS",
+      "page": "salok-mahalla9/index.html",
+      "script": "nitnem/offline.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690",
+      "alteredSha256": "9fe12bfdae13a4b1d28553ea0a1bad31a237048c8a2410c37138f48b2902b488",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/offline.js' with computed SHA-256 integrity 'n+Er/a4TpLHShVPqChutMaI3BIyKJBDDcTj0iykCtIg='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-kabir/index.html → nitnem/appearance.js",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/appearance.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc",
+      "alteredSha256": "b929126e055f5cc9bf07eee3ee96c794c10a3f261a204596e6d02a78853b3cff",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/appearance.js' with computed SHA-256 integrity 'uSkSbgVfXMm/B+7j7pbHlMEKPyYaIEWW5tAqeIU7PP8='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-kabir/index.html → nitnem/continuous-core.js",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/continuous-core.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+      "alteredSha256": "81ec9dd65a5e9f011ed9589f4bee90bd2ea84505d503488d35023fbc9fe890ba",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/continuous-core.js' with computed SHA-256 integrity 'geyd1lpenwEe2VifS+6QvS6oRQXVA0iNNQI/vJ/okLo='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-kabir/index.html → nitnem/learning/learning-ui.js",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/learning/learning-ui.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+      "alteredSha256": "f2b957d6d620108613d4eb7d03595b8d39eb8a096d408471d7aaf01d722d1f40",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/learning/learning-ui.js' with computed SHA-256 integrity '8rlX1tYgEIYT1Ot9A1lbjTnrigltQIRx16rwHXItH0A='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-kabir/index.html → nitnem/local-learning.js",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/local-learning.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+      "alteredSha256": "7f68372c24861d9de7dc5d32678f91a808eb3a5345bcb3d8a0626f3ad54dc4ac",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/local-learning.js' with computed SHA-256 integrity 'f2g3LCSGHZ3n3F0yZ4+RqAjrOlNFvLPYoGJvOtVNxKw='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": [
+        "Cannot read properties of null (reading 'units')"
+      ]
+    },
+    {
+      "name": "Changed subresource refuses: salok-kabir/index.html → nitnem/reader.js",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "refusedEntryState": {
+        "verifiedElements": 0,
+        "receipt": "undefined",
+        "nitnemVerified": false,
+        "scriptureRows": 0
+      },
+      "preservedLearningRecords": 5,
+      "preservedRecordDigests": {
+        "glp001.continuous.v2": "33c417e710e0755cf49a5bcf8a3e23faad2ce33991cfad1e68931545052fcb93",
+        "glp001.sukhmani.v1": "0e2901c3e401ebf30baa02391c62d25bcc6e2eab54fcebff1006376b0140a308",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": "90f03cd89cfa930584012cf5139caaf95753cf6833a52176fc14fe8b71058ac7",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-mahalla9.salok-mahalla9-opengranth-34d2a7c-20261126": "d7222cbafd3a26299681880cee4abb62516f707ead8fad04a93acefaee5d6873",
+        "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.salok-kabir.salok-kabir-selected-witnesses-34d2a7c-20261126": "a89c37423f058e0695e3977427ffd7c2a488730548390f5350d5f3709fd2047a"
+      },
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/reader.js' with computed SHA-256 integrity 'zBjE4HBb7En/AWYO8Df0ULprSx7eo4KArAc2t2C1QjY='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Changed subresource refuses: salok-kabir/index.html → nitnem/offline.js",
+      "status": "PASS",
+      "page": "salok-kabir/index.html",
+      "script": "nitnem/offline.js",
+      "expectedExecution": false,
+      "markerExecuted": false,
+      "integrityRefused": true,
+      "repinHTML": false,
+      "originalSha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690",
+      "alteredSha256": "9fe12bfdae13a4b1d28553ea0a1bad31a237048c8a2410c37138f48b2902b488",
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:54922/gurbani-learning-library/nitnem/offline.js' with computed SHA-256 integrity 'n+Er/a4TpLHShVPqChutMaI3BIyKJBDDcTj0iykCtIg='. The resource has been blocked."
+      ],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    },
+    {
+      "name": "Explicit synthetic HTML repin permits changed script: HTML is the trust boundary",
+      "status": "PASS",
+      "page": "nitnem/index.html",
+      "script": "nitnem/reader.js",
+      "expectedExecution": true,
+      "markerExecuted": true,
+      "integrityRefused": false,
+      "repinHTML": true,
+      "originalSha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "alteredSha256": "cc18c4e0705bec49ff01660ef037f450ba6b4b1edea38280ac0736b760b54236",
+      "consoleErrors": [],
+      "uncaughtRuntimeErrorsChecked": false,
+      "runtimeErrors": []
+    }
+  ],
+  "limits": [
+    "Fresh nonpersistent desktop Chromium contexts on localhost; no real iPhone, Safari or VoiceOver acceptance.",
+    "Service workers are blocked to isolate browser subresource enforcement from worker caching.",
+    "A matching integrity attribute checks subresource bytes relative to the served HTML. It does not authenticate compromised HTML, the service worker, or the root library module graph.",
+    "No content or qualified-review approval follows from these checks."
+  ],
+  "environment": {
+    "platform": "darwin",
+    "node": "v22.15.0",
+    "browser": "158.0.8127.37"
+  },
+  "completedAtUtc": "2026-11-27T01:59:27.852Z",
+  "status": "PASS"
+}

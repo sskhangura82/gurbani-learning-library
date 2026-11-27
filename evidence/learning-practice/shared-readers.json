@@ -1,0 +1,41 @@
+{
+  "environment": "Desktop Chromium; synthetic local origins and records",
+  "results": [
+    {
+      "command": [
+        "node",
+        "tests/salok-mahalla9-browser.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/shared-salok-mahalla9-browser.log",
+      "tail": "{\n  \"status\": \"passed\",\n  \"passed\": 38,\n  \"failed\": 0,\n  \"browser\": \"158.0.8127.37\",\n  \"failures\": []\n}\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/nitnem-browser.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/shared-nitnem-browser.log",
+      "tail": "{\n  \"status\": \"passed\",\n  \"passed\": 64,\n  \"failed\": 0,\n  \"browser\": \"158.0.8127.37\",\n  \"failures\": []\n}\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/source-integrity-browser.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/shared-source-integrity-browser.log",
+      "tail": "{\n  \"status\": \"PASS\",\n  \"passed\": 18,\n  \"failed\": 0,\n  \"setupError\": null\n}\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/salok-kabir-browser.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/learning-practice/shared-salok-kabir-browser.log",
+      "tail": "{\n  \"status\": \"passed\",\n  \"passed\": 40,\n  \"failed\": 0,\n  \"browser\": \"158.0.8127.37\",\n  \"failures\": []\n}\n"
+    }
+  ]
+}

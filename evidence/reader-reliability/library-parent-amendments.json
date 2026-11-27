@@ -1,0 +1,28 @@
+{
+  "schema": "glp001.runtime-parent-amendments.v1",
+  "status": "RETROSPECTIVE_BUILDER_RECORD_NOT_APPROVAL",
+  "changeBaseline": "8917beaab7acc5770cb5a8fee682c9702a0689cb",
+  "frozenParentCommit": "389e79baff4016a2ff61d1851908de0bd66beb8f",
+  "priorLedgerPath": "evidence/learning-practice/runtime-amendments.json",
+  "priorLedgerSHA256": "6e85863ac1bef301e7c7c2428018ea493b07c4b44bd48f73f333abffef47aa75",
+  "purpose": "Append the two already-existing PR56 Saved-entry runtime changes to the unchanged historical preservation chain. Values come from frozen git objects, not the new repair.",
+  "retrospective": true,
+  "scriptureChanges": false,
+  "teachingChanges": false,
+  "independentApproval": false,
+  "failureEvidence": "evidence/reader-reliability/20261127T020132Z-frozen-parent-check/nitnem-content.log",
+  "amendments": {
+    "js/japji-full.js": {
+      "before": "28fa6cdd457fb6252083c72132e350f804d6b70cbf7312321980e2ee31951a22",
+      "after": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f",
+      "reason": "PR56 enters the existing Saved dialog only after verified reader setup without selecting a different occurrence.",
+      "evidence": "Frozen PR56 git object 389e79baff4016a2ff61d1851908de0bd66beb8f:js/japji-full.js"
+    },
+    "js/sukhmani-reader.js": {
+      "before": "ae5c29fb572df5af868d166e81239bd18030ae8c6e1da75a8b157704caaaf2cd",
+      "after": "ac1c5551fe760a8315306c03586ddb2a13a11d79b510892335a7075f6c9bf86b",
+      "reason": "PR56 enters the existing Saved dialog only after verified reader setup without selecting a different occurrence.",
+      "evidence": "Frozen PR56 git object 389e79baff4016a2ff61d1851908de0bd66beb8f:js/sukhmani-reader.js"
+    }
+  }
+}

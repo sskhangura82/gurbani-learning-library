@@ -1,0 +1,87 @@
+name: Source reading sheets and print evidence
+on:
+  pull_request:
+    branches: [main, feature/learning-reliability-practice-20261126]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Source resolution, preserved readers and local learning
+        run: |
+          node --test tests/article-source.mjs
+          node tests/verify.mjs
+          node tests/shared-learning.mjs
+          node tests/japji-retained-learning.mjs
+          node --test tests/source-integrity.mjs
+          node tests/r7-contract.mjs
+          node tests/nitnem-content.mjs
+          node tests/nitnem-learning.mjs
+          node tests/nitnem-backup-capacity.mjs
+          node tests/nitnem-storage-quota.mjs
+          node tests/nitnem-ui-lifecycle.mjs
+          node tests/salok-mahalla9-content.mjs
+          node tests/salok-kabir-content.mjs
+          node tests/salok-kabir-bindings.mjs
+          node tests/service-worker.mjs
+      - name: Existing application inputs stay at the reviewed combined baseline
+        run: |
+          node --test tests/library-script-integrity-inputs.mjs
+          node tools/build-offline.mjs
+          git diff --exit-code -- sw.js
+          node --check articles/core.mjs
+          node --check articles/source-contracts.mjs
+          node --check articles/app.mjs
+  browser-and-print:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned browser, extraction engine and Gurmukhi fonts
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+          python -m pip install PyMuPDF==1.26.6
+      - name: Real source resolution, navigation, search, privacy and offline behavior
+        run: node tests/articles-browser.mjs
+      - name: Inspect A4 and Letter text fidelity, grouped passages and page margins
+        run: |
+          python - <<'PY'
+          import subprocess, sys
+          failures = []
+          for stem, pair, group in [
+              ('haumai-source-sheet', 'haumai-source-sheet', 'haumai'),
+              ('dubidha-source-sheet', 'dubidha-source-sheet', 'dubidha'),
+              ('pagination-stress', 'haumai-source-sheet', 'pagination')]:
+              result = subprocess.run([
+                  sys.executable, 'tests/article-print-inspect.py',
+                  f'evidence/articles/print/{stem}-a4.pdf',
+                  f'evidence/articles/print/{stem}-letter.pdf',
+                  '--expect-pair', f'evidence/articles/print/{pair}-pairs.json',
+                  '--output-dir', f'evidence/articles/print-inspection/{group}'])
+              failures.append(result.returncode)
+          sys.exit(1 if any(failures) else 0)
+          PY
+      - name: Preserve source-sheet and print evidence, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: article-source-print-evidence
+          path: evidence/articles/
+          if-no-files-found: error

@@ -1,0 +1,32 @@
+{
+  "startedAt": "2026-11-26T20:21:10.592Z",
+  "engine": "Chromium",
+  "browserVersion": "158.0.8127.37",
+  "baseline": true,
+  "checks": [
+    {
+      "name": "Exact original Gurmukhi retained with Punjabi language; no unreviewed Ang assertion",
+      "status": "failed",
+      "error": "false == true"
+    },
+    {
+      "name": "Beginning by keyboard removes the chosen duration from view and accessible tree",
+      "status": "failed",
+      "error": "No live timer is present\n\n1 !== 0\n"
+    },
+    {
+      "name": "Pagehide pauses before Back/Forward cache restoration, with a working Resume button",
+      "status": "failed",
+      "error": "Expected values to be strictly equal:\n\n'Pause' !== 'Resume'\n"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Desktop Chromium with narrow viewports and a simulated clock; not a physical iPhone, iOS Safari or VoiceOver check.",
+    "Visibility and pagehide lifecycle events are simulated explicitly; this does not certify physical background timing.",
+    "No qualified interpretation or printed-page collation performed."
+  ],
+  "finishedAt": "2026-11-26T20:21:11.255Z",
+  "passed": 0,
+  "failed": 3
+}

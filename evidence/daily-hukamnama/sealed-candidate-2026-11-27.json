@@ -1,0 +1,22 @@
+{
+  "schema": "glp.hukamnama.sealed-candidate.v1",
+  "date": "2026-11-27",
+  "keyId": "development-a11f39dec6ddf5238bd0a338",
+  "mode": "DEVELOPMENT_PREVIEW",
+  "publicationApproved": false,
+  "sgpcSignature": false,
+  "files": [
+    {
+      "path": "sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json",
+      "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57"
+    },
+    {
+      "path": "events/2026-11-27.json",
+      "sha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd"
+    },
+    {
+      "path": "receipts/2026-11-27.original.json",
+      "sha256": "614206ae696e00a84a07233b38e6a4668ea61c70eacc23f6ce8e304557698240"
+    }
+  ]
+}
