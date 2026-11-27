@@ -1,0 +1,43 @@
+{
+  "fixture": "Synthetic fixture only; created with the pre-PIN sealer at 320537b0cc4aceb2e6007b32057a3c4a36c83520",
+  "credential": "SYNTHETIC-ONLY-legacy-passphrase-8261",
+  "payload": {
+    "schema": "glp.private-collection.v1",
+    "title": "Legacy synthetic compatibility fixture",
+    "editionId": "synthetic-legacy-v1",
+    "works": [
+      {
+        "id": "legacy-synthetic",
+        "tradition": "bible",
+        "title": "Synthetic legacy title",
+        "language": "English",
+        "edition": "Synthetic fixture, no religious text",
+        "source": {
+          "url": "https://example.invalid/legacy-synthetic",
+          "rights": "public-domain",
+          "attribution": "Entirely synthetic test data.",
+          "checkedOn": "2026-11-27",
+          "permissionRef": ""
+        },
+        "paragraphs": [
+          "SYNTHETIC LEGACY COMPATIBILITY SENTINEL"
+        ]
+      }
+    ]
+  },
+  "envelope": {
+    "format": "glp.private-library.encrypted.v1",
+    "kdf": {
+      "name": "PBKDF2",
+      "hash": "SHA-256",
+      "iterations": 600000,
+      "salt": "59l+w9AwViJhiw0Af9dITA=="
+    },
+    "cipher": {
+      "name": "AES-GCM",
+      "iv": "9k9tpHhho62OxjAe",
+      "tagLength": 128
+    },
+    "ciphertext": "sl6S9KH1uzrZGNyQmBp8wOdWh2FocZAKx16WxtG66JsrmqbL8M6q7MHE8Me86XAWHUUlUKcynnW6xkEzGVYPQjjlOvu5qedbmuC/YIH3E/IgTvUbuKSiOHoGpLGFEmhc1siXhSXAvI70fSQFrAXPg/Grb8wbxvdp2EkgWvnx0XiTgDpt7qW2GXmlb3symTl6838ki6FYPAwFR/bIHOuvHJs8ykbw9rVo7K3zOdk4Z5Wyz6AAE53gjk3VZ3Gi078ic5womD6ubjlTLas/y/TiX98ut5Kr/ZXUll6p5NBPCUMaE90HvvQ2BUE6uZKEh/DAe9gTQaokdiHevbYsMmy4rtAuSD7h1g0Z4pATekDRoZaEFtQp7Z13bN40Gy8ofz+L7er9e7Nmn7zi1YQqXV1EzqdywcZqD6cmK2mqLslnCJFxS96u3SfD+kub+Btb2KD3payfNmX+qxk8BsCVIVTlES8Ec2+miXesg4kyJqc7GRY0M8F+w5nXZuQ5UtJjoWl3bZo2ZIDqBosSYVk9MYoO+/uE53s6cxbzAFGi0yvsvK2DQFKDLrnCzSkjz2GJyzuIHyNzH7hBIY4EzFo+AkPHd1Tl4gWPSsesbWbQgCcXevaSO82DSQikkd/ffILvIqYW+Vbkl0BDgidfBcdQuP0PlREWIXTFMtVdN8dW1WwdbK1a/IJM2K3radRJKK1Z+JBf"
+  }
+}
