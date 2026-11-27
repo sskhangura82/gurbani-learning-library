@@ -1,0 +1,27 @@
+{
+  "schema": "glp.public-knowledge-access.change-scope.v1",
+  "base": "a123b39e61c5fba94acc38ea77ab7c81e664f61d",
+  "decision": "Psychology remains public; comparative religion requires restricted delivery. Exact current amendment preserves historical reviewed inputs.",
+  "files": [
+    {
+      "path": "knowledge/pilot.json",
+      "beforeSha256": "c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf",
+      "afterSha256": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556"
+    },
+    {
+      "path": "knowledge/app.mjs",
+      "beforeSha256": "4646ce7b02a411cade85832a0be31400cf52b1e908a64931c750dc7acd3ca128",
+      "afterSha256": "f96665029c95b391869d2c21f13cf22e8286573d09aa35c2e527e247627dba1c"
+    },
+    {
+      "path": "knowledge/registry.mjs",
+      "beforeSha256": "316c7c0777a0438936679e5f07d71dd3639bbb61580f418a9a1546caff6986cd",
+      "afterSha256": "1a3920965d00fbe3a7911a6fd2d688a96e41c2007985ac08f3e4abe747dd7170"
+    },
+    {
+      "path": "knowledge/index.html",
+      "beforeSha256": "9193c47b38657a1648c853675adaa834a970c17cff1e0104c748d3c337aa677f",
+      "afterSha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    }
+  ]
+}

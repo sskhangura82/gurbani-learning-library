@@ -1,0 +1,26 @@
+[
+  {
+    "test": "tests/knowledge-source-registry.mjs",
+    "exitCode": 0,
+    "stdout": "{\"status\":\"PASS\",\"checks\":29,\"sourceMutations\":15,\"staleEditorialMutations\":8}",
+    "stderr": ""
+  },
+  {
+    "test": "tests/knowledge-editorial-title.mjs",
+    "exitCode": 0,
+    "stdout": "{\"status\":\"PASS\",\"denied\":72,\"allowed\":8,\"unchangedSourceOccurrences\":19}",
+    "stderr": ""
+  },
+  {
+    "test": "tests/knowledge-editorial-boundary.mjs",
+    "exitCode": 0,
+    "stdout": "{\"status\":\"PASS\",\"denied\":335,\"allowed\":157,\"fieldClasses\":31,\"checks\":6}",
+    "stderr": ""
+  },
+  {
+    "test": "tests/knowledge-search.mjs",
+    "exitCode": 0,
+    "stdout": "{\"status\":\"PASS\",\"checks\":29,\"verseInitialFixtures\":17,\"headingFixtures\":2}",
+    "stderr": ""
+  }
+]

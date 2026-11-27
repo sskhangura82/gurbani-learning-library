@@ -103,10 +103,10 @@ const graphs={
     "entry": "knowledge/app.mjs",
     "output": "knowledge/app.bundle.mjs",
     "inputs": {
-      "knowledge/app.mjs": "4646ce7b02a411cade85832a0be31400cf52b1e908a64931c750dc7acd3ca128",
+      "knowledge/app.mjs": "f96665029c95b391869d2c21f13cf22e8286573d09aa35c2e527e247627dba1c",
       "knowledge/core.mjs": "a9133a7e438314406076605e374d58cd0f60d8c310abd3799644a67553812c07",
       "knowledge/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
-      "knowledge/registry.mjs": "316c7c0777a0438936679e5f07d71dd3639bbb61580f418a9a1546caff6986cd",
+      "knowledge/registry.mjs": "1a3920965d00fbe3a7911a6fd2d688a96e41c2007985ac08f3e4abe747dd7170",
       "knowledge/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
       "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
       "knowledge/journey.mjs": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",

@@ -1,5 +1,5 @@
 {
-  "schema": "glp.knowledge.editorial.v2",
+  "schema": "glp.knowledge.editorial.v3",
   "status": "NONPUBLISHING_DRAFT",
   "sourcePolicy": "Exact Gurmukhi from pinned digital corpus; no third-party modern translations; qualified review and source rights pending",
   "nodes": [
@@ -18,7 +18,11 @@
         "ਨਿਮ੍ਰਤਾ"
       ],
       "review": "AI_ASSISTED_DRAFT",
-      "lessonId": "lesson.humility.r1"
+      "lessonId": "lesson.humility.r1",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "concept.haumai",
@@ -35,7 +39,11 @@
         "ਅਹੰਕਾਰ"
       ],
       "review": "AI_ASSISTED_DRAFT",
-      "lessonId": "lesson.haumai.r1"
+      "lessonId": "lesson.haumai.r1",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "concept.hukam",
@@ -46,7 +54,11 @@
         "Hukam",
         "ਹੁਕਮ"
       ],
-      "review": "INDEX_ONLY_NO_LESSON"
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "concept.kirpa",
@@ -57,7 +69,11 @@
         "Kirpa",
         "ਕਿਰਪਾ"
       ],
-      "review": "INDEX_ONLY_NO_LESSON"
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "concept.shabad",
@@ -68,7 +84,11 @@
         "Shabad",
         "ਸ਼ਬਦ"
       ],
-      "review": "INDEX_ONLY_NO_LESSON"
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "concept.seva",
@@ -79,7 +99,11 @@
         "Seva",
         "ਸੇਵਾ"
       ],
-      "review": "INDEX_ONLY_NO_LESSON"
+      "review": "INDEX_ONLY_NO_LESSON",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "word.nivi",
@@ -109,7 +133,11 @@
           ]
         }
       ],
-      "review": "AI_ASSISTED_DRAFT"
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "word.mithat",
@@ -139,7 +167,11 @@
           ]
         }
       ],
-      "review": "AI_ASSISTED_DRAFT"
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "word.haumai",
@@ -189,7 +221,11 @@
           ]
         }
       ],
-      "review": "AI_ASSISTED_DRAFT"
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "word.hukam",
@@ -219,7 +255,11 @@
           ]
         }
       ],
-      "review": "AI_ASSISTED_DRAFT"
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "word.kirpa",
@@ -249,7 +289,11 @@
           ]
         }
       ],
-      "review": "AI_ASSISTED_DRAFT"
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "word.bhalo",
@@ -279,7 +323,11 @@
           ]
         }
       ],
-      "review": "AI_ASSISTED_DRAFT"
+      "review": "AI_ASSISTED_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "study.intellectual-humility",
@@ -294,22 +342,11 @@
       "discipline": "psychology",
       "reference": "https://pubmed.ncbi.nlm.nih.gov/34569872/",
       "citation": "Porter et al., Clarifying the Content of Intellectual Humility, J Pers Assess 2022",
-      "review": "EDITORIAL_DRAFT"
-    },
-    {
-      "id": "study.buddhist-conceit",
-      "type": "study",
-      "title": "Buddhist reflection on conceit",
-      "pa": "ਬੁੱਧ ਧਰਮ ਵਿੱਚ ਮਾਨ ਦਾ ਵਿਚਾਰ",
-      "aliases": [
-        "buddhism",
-        "buddhist",
-        "conceit"
-      ],
-      "discipline": "comparative religion",
-      "reference": "https://suttacentral.net/sn22.49/en/bodhi",
-      "citation": "Saṃyutta Nikāya 22.49, Soṇa",
-      "review": "EDITORIAL_DRAFT"
+      "review": "EDITORIAL_DRAFT",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "PSYCHOLOGY"
+      }
     },
     {
       "id": "course.human-mind",
@@ -320,7 +357,11 @@
         "lesson.haumai.r1",
         "lesson.humility.r1"
       ],
-      "review": "DRAFT_PATHWAY_NOT_APPROVED"
+      "review": "DRAFT_PATHWAY_NOT_APPROVED",
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "lesson.humility.r1",
@@ -328,7 +369,7 @@
       "title": "Humility · guided study",
       "pa": "ਨਿਮਰਤਾ",
       "subjectId": "concept.humility",
-      "revision": 1,
+      "revision": 2,
       "review": "AI_ASSISTED_DRAFT",
       "simple": {
         "en": "Gurmat humility means letting go of self-importance while remaining truthful, responsible and open to the Guru's wisdom. It is not self-hatred or accepting injustice.",
@@ -339,8 +380,8 @@
         "pa": "ਅੰਗ ੪੭੦ ਦੇ ਸਲੋਕ ਵਿੱਚ ਬਾਹਰਲੇ ਦਿਖਾਵੇ ਅਤੇ ਅੰਦਰਲੀ ਸੱਚਾਈ ਦਾ ਫ਼ਰਕ ਹੈ। ਕਬੀਰ ਜੀ ਦਾ ਸਲੋਕ ਆਪਣੇ ਅੰਦਰ ਝਾਤ ਮਾਰਨ ਲਈ ਪ੍ਰੇਰਦਾ ਹੈ। ਹਉਮੈ ਦੀ ਸਮਝ ਅਤੇ ਗੁਰੂ ਦੇ ਸ਼ਬਦ ਨੂੰ ਜੀਵਨ ਵਿੱਚ ਅਪਣਾਉਣਾ ਇਸ ਵਿਚਾਰ ਨਾਲ ਜੁੜਦੇ ਹਨ।"
       },
       "deep": {
-        "en": "Study the difference between inward orientation and outward gestures. The hunter bows to deceive; therefore lowering oneself physically is insufficient. Compare self-examination with intellectual humility, and the Buddhist examination of rank-based conceit, while retaining the distinct Sikh relationship to Guru, grace and Divine remembrance. Ask how truthful accountability can coexist with compassion.",
-        "pa": "ਸਿਰ ਨਿਵਾਉਣ ਨਾਲ ਹੀ ਨਿਮਰਤਾ ਸਾਬਤ ਨਹੀਂ ਹੁੰਦੀ। ਮਨ ਦੀ ਨੀਅਤ ਅਤੇ ਕਰਮ ਵੀ ਮਹੱਤਵਪੂਰਨ ਹਨ। ਦੂਜੇ ਦਰਸ਼ਨਾਂ ਨਾਲ ਤੁਲਨਾ ਕਰਦੇ ਸਮੇਂ ਗੁਰਮਤਿ ਵਿੱਚ ਗੁਰੂ, ਕਿਰਪਾ ਅਤੇ ਨਾਮ ਦੇ ਸੰਦਰਭ ਨੂੰ ਵੱਖਰਾ ਰੱਖੋ।"
+        "en": "Study the difference between inward orientation and outward gestures. The hunter bows to deceive; therefore lowering oneself physically is insufficient. Compare self-examination with intellectual humility while retaining the distinct Sikh relationship to Guru, grace and Divine remembrance. Ask how truthful accountability can coexist with compassion.",
+        "pa": "ਸਿਰ ਨਿਵਾਉਣ ਨਾਲ ਹੀ ਨਿਮਰਤਾ ਸਾਬਤ ਨਹੀਂ ਹੁੰਦੀ। ਮਨ ਦੀ ਨੀਅਤ ਅਤੇ ਕਰਮ ਵੀ ਮਹੱਤਵਪੂਰਨ ਹਨ। ਮਨੋਵਿਗਿਆਨਕ ਵਿਚਾਰਾਂ ਨਾਲ ਤੁਲਨਾ ਕਰਦੇ ਸਮੇਂ ਗੁਰਮਤਿ ਵਿੱਚ ਗੁਰੂ, ਕਿਰਪਾ ਅਤੇ ਨਾਮ ਦੇ ਸੰਦਰਭ ਨੂੰ ਵੱਖਰਾ ਰੱਖੋ।"
       },
       "sourcePassageIds": [
         "sggs.asa-di-vaar.pauri014.salok01",
@@ -355,7 +396,11 @@
           "id": "sggs.kabir.salok007",
           "sha256": "54733d0c1af2e54e39188ec7aee2cdf9f2d97b75cc269aa9528843a9cfdd2153"
         }
-      ]
+      ],
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     },
     {
       "id": "lesson.haumai.r1",
@@ -385,7 +430,11 @@
           "id": "sggs.asa-di-vaar.pauri007.salok02",
           "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
         }
-      ]
+      ],
+      "access": {
+        "audience": "PUBLIC",
+        "contentClass": "GURBANI_LEARNING"
+      }
     }
   ],
   "edges": [
@@ -683,25 +732,6 @@
       ]
     },
     {
-      "id": "edge.24",
-      "from": "concept.haumai",
-      "to": "study.buddhist-conceit",
-      "type": "philosophical_comparison",
-      "reason": "SN 22.49 examines ranking oneself through impermanent aggregates.",
-      "refs": [
-        "sggs.asa-di-vaar.pauri007.salok02"
-      ],
-      "review": "EDITORIAL_DRAFT",
-      "similarity": "Both investigate the self-centred stance and attachment to rank.",
-      "difference": "The Buddhist analysis of aggregates and non-self is not equivalent to Gurbani's account of Hukam, grace and the Guru's Shabad.",
-      "sourceBindings": [
-        {
-          "id": "sggs.asa-di-vaar.pauri007.salok02",
-          "sha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
-        }
-      ]
-    },
-    {
       "id": "edge.25",
       "from": "concept.humility",
       "to": "lesson.humility.r1",
@@ -746,7 +776,9 @@
     "passageCount": 3,
     "originalOccurrences": 19,
     "fullSecondaryCollationOccurrences": 19,
-    "qualifiedApproved": 0
+    "qualifiedApproved": 0,
+    "psychologyStudies": 1,
+    "comparativeReligionStudies": 0
   },
   "integration": {
     "legacyIdMigration": "pending; never rewrite existing reader IDs or learning keys",
@@ -785,5 +817,11 @@
         "ang 1364"
       ]
     }
-  ]
+  ],
+  "accessPolicy": {
+    "schema": "glp.knowledge.public-access.v1",
+    "audience": "PUBLIC",
+    "psychology": "PUBLIC",
+    "comparativeReligion": "PRIVATE_ONLY"
+  }
 }

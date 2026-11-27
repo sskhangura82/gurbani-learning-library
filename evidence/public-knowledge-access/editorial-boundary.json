@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "denied": 335,
+  "allowed": 157,
+  "fieldClasses": 31,
+  "checks": [
+    "Re-pinned attacks refused across all 31 displayed or indexed editorial field classes; independent source remains unchanged",
+    "English and Punjabi vocabulary, titles, names and teaching revisions remain ordinary editorial content; public study revisions require an explicit admission update",
+    "Unexpected joined-passage fields cannot create a second editorial search path",
+    "Malformed aliases fail before a registry reaches search",
+    "Editorial passage aliases remain searchable but carry editorial provenance and cannot replace source identity",
+    "An attested single dictionary word stays valid; a copied verse cannot masquerade as a bound form"
+  ],
+  "limitations": [
+    "Syntactic boundary for this frozen pilot, not theological review or a semantic classifier.",
+    "Source lines are compared without rewriting the independently sealed source; all 19 source occurrences unchanged.",
+    "No claim of qualified or physical-device approval."
+  ]
+}

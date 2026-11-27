@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "started": "2026-11-27T21:01:00.582Z",
+  "base": "f720099b6181919d597e249f9ad42b9f00cabe68",
+  "criteria": "2026-11-27T010603Z-criteria.md",
+  "checks": [
+    {
+      "name": "Frozen PR57 source, teaching, registry and lock inputs remain exact beneath the verified public-access amendment",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned control loads; all existing canonical occurrence identities and bytes survive the combined index",
+      "status": "PASS"
+    },
+    {
+      "name": "Unrelated words remain refused while both first-letter modes retain exact source identities",
+      "status": "PASS"
+    },
+    {
+      "name": "Editorial author lookup does not claim source occurrence or infer an inflected signature",
+      "status": "PASS"
+    },
+    {
+      "name": "A literal Kabir hit remains distinct from the author lookup and keeps exact occurrence provenance",
+      "status": "PASS"
+    },
+    {
+      "name": "An editorial passage alias leads to canonical source without becoming source evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned RB-01 mutant refused by attribution guard: prefixed heading",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned RB-01 mutant refused by attribution guard: full source line in word label",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned RB-01 mutant refused by attribution guard: source line in passage alias",
+      "status": "PASS"
+    },
+    {
+      "name": "Known accepted lexical gap stays editorial through retrieval without changing canonical source",
+      "status": "PASS"
+    },
+    {
+      "name": "Source and graph stay unchanged after retrieval and all in-memory editorial mutations",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux"
+  },
+  "limits": [
+    "Builder interaction checks, not Claude's independent review.",
+    "No qualified Gurbani, printed-page or physical-device acceptance. No deployment."
+  ],
+  "files": {
+    "knowledge/app.mjs": "f96665029c95b391869d2c21f13cf22e8286573d09aa35c2e527e247627dba1c",
+    "knowledge/core.mjs": "a9133a7e438314406076605e374d58cd0f60d8c310abd3799644a67553812c07",
+    "knowledge/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+    "knowledge/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "knowledge/pilot.json": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556",
+    "knowledge/registry.mjs": "1a3920965d00fbe3a7911a6fd2d688a96e41c2007985ac08f3e4abe747dd7170",
+    "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6"
+  },
+  "finished": "2026-11-27T21:01:00.770Z"
+}

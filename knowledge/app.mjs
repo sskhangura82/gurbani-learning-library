@@ -1,7 +1,7 @@
 import {loadKnowledge,verifyScripture} from "./registry.mjs";
 import {JOURNEY_ID,SAVED_ID,renderJourney,renderSaved} from "./journey.mjs";
 import {buildIndex,search,connected,passageLines,wordAt,resolveIdentity,contentKind} from "./core.mjs";
-export const PACK_SHA256="c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf";
+export const PACK_SHA256="2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556";
 const $=id=>document.getElementById(id);
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 const section=$("content"),status=$("status"),results=$("results"),wordDialog=$("word-dialog");

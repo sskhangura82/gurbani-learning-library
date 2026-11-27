@@ -5,6 +5,7 @@ import {fileURLToPath} from "node:url";
 import {execFileSync} from "node:child_process";
 import {buildIndex,search,resolveIdentity,contentKind} from "../knowledge/core.mjs";
 import {loadKnowledge,sha256} from "../knowledge/registry.mjs";
+import {readBeforePublicKnowledge} from "./helpers/public-knowledge-scope.mjs";
 
 const root=fileURLToPath(new URL("../",import.meta.url));
 const base="f720099b6181919d597e249f9ad42b9f00cabe68";
@@ -28,8 +29,8 @@ function occurrenceHits(hit){for(const id of hit.occurrenceIds){const o=sourceLi
 try{
  report.files={};
  for(const p of ["knowledge/app.mjs","knowledge/core.mjs","knowledge/search.mjs","knowledge/kinds.mjs",...frozen])report.files[p]=await sha256(await fs.readFile(path.join(root,p)));
- await check("Frozen source, teaching, registry and lock bytes are identical to PR57",async()=>{
-  for(const p of frozen){const prior=execFileSync("git",["show",base+":"+p],{cwd:root,maxBuffer:8*1024*1024});assert.deepEqual(bytes.get(p),prior,p);}
+ await check("Frozen PR57 source, teaching, registry and lock inputs remain exact beneath the verified public-access amendment",async()=>{
+  for(const p of frozen){const prior=execFileSync("git",["show",base+":"+p],{cwd:root,maxBuffer:8*1024*1024});assert.deepEqual(await readBeforePublicKnowledge(p),prior,p);}
  });
  await check("Pinned control loads; all existing canonical occurrence identities and bytes survive the combined index",async()=>{
   assert.ok(pin);assert.equal(await sha256(teachingBytes),pin);
