@@ -1,0 +1,18 @@
+{
+  "status": "FAIL",
+  "candidateDate": "2026-11-27",
+  "scenarios": [
+    {
+      "name": "Repeated conflicting Daily backup restores stay unchanged and distinct versions round-trip",
+      "status": "FAIL",
+      "failure": "TimeoutError: page.waitForFunction: Timeout 12000ms exceeded."
+    }
+  ],
+  "pageErrors": [],
+  "limits": [
+    "Fresh synthetic Chromium contexts only; no physical iPhone, iPad, Safari, VoiceOver or human acceptance claim.",
+    "One exact official dated development event; unavailable dates are never fabricated.",
+    "Current Simple/Detailed/Learning source-linked explanations remain pending; no interpretation generated."
+  ],
+  "failure": "page.waitForFunction: Timeout 12000ms exceeded.\n    at /private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-browser.mjs:258:14\n    at async check (/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-browser.mjs:43:125)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-browser.mjs:238:2"
+}

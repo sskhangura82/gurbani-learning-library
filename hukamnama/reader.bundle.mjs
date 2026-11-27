@@ -575,6 +575,12 @@ function loadLearning({ storage } = {}) {
 function stableBinding(binding) {
   return JSON.stringify(["eventId", "date", "sourceId", "edition", "sourceSha256", "textSha256", "lineId", "lineSha256"].map((key) => binding[key]));
 }
+function sameVersion(a, b) {
+  return stableBinding(a.binding) === stableBinding(b.binding) && a.question === b.question && a.reflection === b.reflection && a.createdAt === b.createdAt && a.updatedAt === b.updatedAt;
+}
+function sameRecord(a, b) {
+  return a.id === b.id && a.conflictOf === b.conflictOf && sameVersion(a, b);
+}
 function uniqueId(records, idFactory) {
   const existing = new Set(records.map((r) => r.id));
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -651,18 +657,22 @@ async function importLearning({ storage, locks, text: text2, idFactory } = {}) {
   return locked({ storage, locks }, (target) => {
     const loaded = loadLearning({ storage: target });
     if (!loaded.ok) return loaded;
-    const store = clone(loaded.store);
+    const store = clone(loaded.store), existingById = new Map(store.records.map((r) => [r.id, r])), pending = [];
     let conflicts = 0, added = 0;
     for (const item of incoming.records) {
-      const existing = store.records.find((r) => r.id === item.id);
-      if (existing && JSON.stringify(existing) === JSON.stringify(item)) continue;
+      const existing = existingById.get(item.id);
+      if (!existing) {
+        store.records.push(clone(item));
+        added++;
+      } else if (!sameRecord(existing, item)) pending.push(item);
+    }
+    for (const item of pending) {
+      if (store.records.some((r) => r.conflictOf === item.id && sameVersion(r, item))) continue;
       const saved = clone(item);
-      if (existing) {
-        saved.id = uniqueId(store.records, idFactory);
-        saved.conflictOf = existing.id;
-        conflicts++;
-      }
+      saved.id = uniqueId([...store.records, ...incoming.records], idFactory);
+      saved.conflictOf = item.id;
       store.records.push(saved);
+      conflicts++;
       added++;
     }
     if (added === 0) return result(store, { status: "UNCHANGED", conflictPreserved: false, imported: 0, message: "This backup is already present. Your saved notes have not changed." });

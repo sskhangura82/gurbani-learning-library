@@ -1,0 +1,326 @@
+TAP version 13
+# Subtest: Retrying the original conflicting backup leaves bytes, revision, count and identity allocation unchanged
+not ok 1 - Retrying the original conflicting backup leaves bytes, revision, count and identity allocation unchanged
+  ---
+  duration_ms: 3.37125
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:16:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'CONFLICT_PRESERVED'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'CONFLICT_PRESERVED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:22:9)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+  ...
+# Subtest: JSON key order does not turn an exact note or a preserved version into a new edit
+not ok 2 - JSON key order does not turn an exact note or a preserved version into a new edit
+  ---
+  duration_ms: 0.780375
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:25:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'CONFLICT_PRESERVED'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'CONFLICT_PRESERVED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:27:83)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Unrelated explicit identities with identical content remain independent notes
+ok 3 - Unrelated explicit identities with identical content remain independent notes
+  ---
+  duration_ms: 0.308292
+  type: 'test'
+  ...
+# Subtest: Every distinct exact text, timestamp and source binding remains a separate preserved version
+not ok 4 - Every distinct exact text, timestamp and source binding remains a separate preserved version
+  ---
+  duration_ms: 0.345375
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'CONFLICT_PRESERVED'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'CONFLICT_PRESERVED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:54:35)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: A backup already containing its conflict copy adds no manufactured duplicate in either input order
+not ok 5 - A backup already containing its conflict copy adds no manufactured duplicate in either input order
+  ---
+  duration_ms: 0.237125
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:59:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    2 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 2
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:63:39)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Generated copies cannot occupy an explicit incoming identity
+not ok 6 - Generated copies cannot occupy an explicit incoming identity
+  ---
+  duration_ms: 0.795333
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:68:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    ... Skipped lines
+    
+      {
+        binding: {
+          date: '2026-11-27',
+          edition: 'synthetic-edition',
+          eventId: 'harmandir-morning.2026-11-27',
+    ...
+        },
+    +   conflictOf: 'note-a',
+        createdAt: '2026-11-27T08:00:00.000Z',
+        id: 'incoming-b',
+        question: 'Synthetic question',
+    +   reflection: 'changed',
+    -   reflection: 'independent',
+        updatedAt: '2026-11-27T09:00:00.000Z'
+      }
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    id: 'incoming-b'
+    binding:
+      eventId: 'harmandir-morning.2026-11-27'
+      date: '2026-11-27'
+      sourceId: 'sggs.text.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+      edition: 'synthetic-edition'
+      sourceSha256: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'
+      textSha256: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+      lineId: ~
+      lineSha256: ~
+    question: 'Synthetic question'
+    reflection: 'independent'
+    createdAt: '2026-11-27T08:00:00.000Z'
+    updatedAt: '2026-11-27T09:00:00.000Z'
+  actual:
+    id: 'incoming-b'
+    binding:
+      eventId: 'harmandir-morning.2026-11-27'
+      date: '2026-11-27'
+      sourceId: 'sggs.text.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+      edition: 'synthetic-edition'
+      sourceSha256: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'
+      textSha256: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+      lineId: ~
+      lineSha256: ~
+    question: 'Synthetic question'
+    reflection: 'changed'
+    createdAt: '2026-11-27T08:00:00.000Z'
+    updatedAt: '2026-11-27T09:00:00.000Z'
+    conflictOf: 'note-a'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:71:64)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Nested conflict versions and their exports restore without repeated growth
+not ok 7 - Nested conflict versions and their exports restore without repeated growth
+  ---
+  duration_ms: 0.302083
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:76:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'CONFLICT_PRESERVED'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'CONFLICT_PRESERVED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:80:34)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Existing accidental duplicates are retained but not multiplied
+not ok 8 - Existing accidental duplicates are retained but not multiplied
+  ---
+  duration_ms: 0.194666
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:86:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'CONFLICT_PRESERVED'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'CONFLICT_PRESERVED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:89:9)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Mixed imports add only new identities and new versions with one revision and write
+not ok 9 - Mixed imports add only new identities and new versions with one revision and write
+  ---
+  duration_ms: 0.222958
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:92:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    3 !== 2
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 2
+  actual: 3
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:96:131)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Concurrent retries reread under the lock and preserve a single incoming version
+not ok 10 - Concurrent retries reread under the lock and preserve a single incoming version
+  ---
+  duration_ms: 0.319417
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:100:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        'CONFLICT_PRESERVED',
+    +   'CONFLICT_PRESERVED'
+    -   'UNCHANGED'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'CONFLICT_PRESERVED'
+    1: 'UNCHANGED'
+  actual:
+    0: 'CONFLICT_PRESERVED'
+    1: 'CONFLICT_PRESERVED'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:103:9)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: At the record limit, an already represented restore is unchanged and genuinely new content refuses atomically
+not ok 11 - At the record limit, an already represented restore is unchanged and genuinely new content refuses atomically
+  ---
+  duration_ms: 7.601125
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:106:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'SIZE_OR_FORMAT_LIMIT'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'SIZE_OR_FORMAT_LIMIT'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:109:9)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Quota failure preserves the entire old store and unchanged restores do not attempt a write
+not ok 12 - Quota failure preserves the entire old store and unchanged restores do not attempt a write
+  ---
+  duration_ms: 0.211541
+  type: 'test'
+  location: '/private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:113:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'QUOTA_EXCEEDED'
+    - 'UNCHANGED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'UNCHANGED'
+  actual: 'QUOTA_EXCEEDED'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:116:9)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 1
+# fail 11
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 81.118208

@@ -227,8 +227,8 @@
         },
         {
           "path": "hukamnama/learning.mjs",
-          "bytes": 11146,
-          "sha256": "e6d811489d52fc7d962dc9832c538f61749ea1888fa860f70d59752086971cd2",
+          "bytes": 12043,
+          "sha256": "b27aa14332dcb07f589faecf4616a31f90414afcdd628ab6d66399328d203d54",
           "imports": [
             {
               "kind": "import-statement",
@@ -264,9 +264,9 @@
       ],
       "output": {
         "path": "hukamnama/reader.bundle.mjs",
-        "bytes": 64141,
-        "sha256": "9225913a1d289717f3cc5d9c8899f81f42b7dde63e2438782cf977d57dd25f6b",
-        "integrity": "sha384-eAe8/fifymT42V40vCS7xG71DgHbp14vB592LgjfE7Zkkwa/OsPq2m+doT8dOB44",
+        "bytes": 64712,
+        "sha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+        "integrity": "sha384-nHoB9dEOO1r/cbKpqj+ZHjy616Pwiv2BD0wlh1gj6PmRz5PftGKzM5Fvnd48F2Y+",
         "imports": []
       }
     }
