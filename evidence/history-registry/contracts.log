@@ -1,0 +1,35 @@
+✔ real registry is empty research metadata with no approval or historical content (1.778459ms)
+✔ nonempty synthetic chapter is withheld without external human review (0.688875ms)
+✔ external content-bound synthetic review enables a draft object, never publication (1.108375ms)
+✔ content pack cannot supply its own trusted roster or approval boolean (0.100208ms)
+✔ unknown fields cannot carry copied excerpts, translations or images (0.201541ms)
+✔ strict parser refuses duplicate keys and does not silently discard a source claim (0.156125ms)
+✔ duplicate identities and cross-type identity reuse are refused (0.069625ms)
+✔ narrative paragraph cannot silently omit its historical claims (0.115333ms)
+✔ unknown source, entity, relation and claim IDs are refused (0.243334ms)
+✔ unrelated or reversed relation endpoints cannot manufacture a historical link (0.217291ms)
+✔ URL, title or blank string alone is not an exact citation locator (0.177709ms)
+✔ source date uncertainty, translation metadata and provenance are required (0.144958ms)
+✔ context and disagreement citations do not substitute for supporting evidence (0.7595ms)
+✔ unverified attribution stays withheld even with a synthetic pass receipt (0.192375ms)
+✔ two source records from the same transmission lineage are not corroboration (0.509959ms)
+✔ traditional account keeps its label and limitations after review (0.132208ms)
+✔ disputed claim must retain an actual competing account or citation (0.13025ms)
+✔ conflicting account absent from prose is still retained and reviewed (0.40625ms)
+✔ unresolved, one-sided and self-referential conflict links are refused (0.118541ms)
+✔ source metadata, claim, entity, narrative and permission edits invalidate review (0.997167ms)
+✔ irrelevant record additions and JSON key order do not revoke an unchanged chapter (0.350291ms)
+✔ untrusted reviewer cannot turn a structurally valid packet into approved content (0.111916ms)
+✔ qualified history role does not substitute for review of a scripture relationship (0.200125ms)
+✔ incomplete or revision-needed external evidence cannot be outvoted by a pass (0.141709ms)
+✔ receipt hash arrays, invalid dates, duplicate receipts and anonymous reviewers refuse (0.55775ms)
+✔ empty chapter and missing human narrative permission remain visible blockers (0.159334ms)
+✔ checked-in command has no side effects and reports zero real content (50.900709ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 129.714709

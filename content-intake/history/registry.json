@@ -1,0 +1,422 @@
+{
+  "schema": "glp.history.registry.v1",
+  "status": "RESEARCH_ONLY",
+  "entities": [
+    {
+      "id": "person.guru-nanak",
+      "kind": "PERSON",
+      "label": "Guru Nanak Dev Ji"
+    },
+    {
+      "id": "person.guru-angad",
+      "kind": "PERSON",
+      "label": "Guru Angad Dev Ji (Bhai Lahina Ji)"
+    },
+    {
+      "id": "person.bhai-gurdas",
+      "kind": "PERSON",
+      "label": "Bhai Gurdas Ji"
+    },
+    {
+      "id": "place.kartarpur-ravi",
+      "kind": "PLACE",
+      "label": "Kartarpur by the River Ravi"
+    },
+    {
+      "id": "event.kartarpur-succession",
+      "kind": "EVENT",
+      "label": "Guru Angad Dev Ji's succession, associated with Kartarpur"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source.bhai-gurdas-vaar1-pauri38",
+      "kind": "EARLY_ACCOUNT",
+      "title": "Vaaran Bhai Gurdas Ji, Vaar 1, Pauri 38",
+      "creator": "Bhai Gurdas Ji",
+      "edition": "BaniDB v2 digital witness, shabad 40038, inspected 27 November 2026; print edition and manuscript basis not supplied by this response",
+      "sourceDate": {
+        "label": "Composition date not established in this intake; early Sikh work associated with Bhai Gurdas Ji",
+        "certainty": "UNKNOWN"
+      },
+      "originalLanguage": "Punjabi in Gurmukhi",
+      "translation": null,
+      "provenance": {
+        "repository": "BaniDB / Khalis Foundation; SikhiToTheMax public reader",
+        "catalogueReference": "API shabadId 40038; original verseIds 200334–200341; provider heading 200333 is separate",
+        "witnessUrl": "https://api.banidb.com/v2/shabads/40038"
+      },
+      "lineageId": "lineage.bhai-gurdas-vaaran",
+      "reuse": "METADATA_ONLY_NO_TEXT_OR_IMAGES"
+    },
+    {
+      "id": "source.eos-kartarpur",
+      "kind": "SCHOLARSHIP",
+      "title": "Encyclopaedia of Sikhism: Kartarpur",
+      "creator": "Major Gurmukh Singh (Retd.)",
+      "edition": "Punjabi University online Encyclopaedia entry at learnpunjabi.org; web edition carries no entry publication date or printed page number",
+      "sourceDate": {
+        "label": "Online edition date not stated",
+        "certainty": "UNKNOWN"
+      },
+      "originalLanguage": "English",
+      "translation": null,
+      "provenance": {
+        "repository": "Punjabi University, Encyclopaedia of Sikhism / learnpunjabi.org",
+        "catalogueReference": "KARTARPUR.html; opening two paragraphs and author credit",
+        "witnessUrl": "https://eos.learnpunjabi.org/KARTARPUR.html"
+      },
+      "lineageId": null,
+      "reuse": "METADATA_ONLY_NO_TEXT_OR_IMAGES"
+    },
+    {
+      "id": "source.macauliffe-1909-vol1",
+      "kind": "SCHOLARSHIP",
+      "title": "The Sikh Religion: Its Gurus, Sacred Writings and Authors, Volume I",
+      "creator": "Max Arthur Macauliffe",
+      "edition": "Oxford University Press, 1909, Volume I, as identified by the online title-page transcription; Internet Sacred Text Archive, Life of Guru Nanak, chapter XV, printed markers 180–181",
+      "sourceDate": {
+        "label": "1909",
+        "certainty": "EXACT"
+      },
+      "originalLanguage": "English",
+      "translation": null,
+      "provenance": {
+        "repository": "Internet Sacred Text Archive",
+        "catalogueReference": "Volume I, title page; chapter XV, printed pages 180–181 as marked in the transcription; physical edition and scan not collated",
+        "witnessUrl": "https://sacred-texts.com/book/the-sikh-religion-volume-1/life-of-guru-nanak-chapter-xv"
+      },
+      "lineageId": null,
+      "reuse": "METADATA_ONLY_NO_TEXT_OR_IMAGES"
+    },
+    {
+      "id": "source.sikhri-kartarpur-2019",
+      "kind": "SCHOLARSHIP",
+      "title": "What happened at Kartarpur Sahib?",
+      "creator": "Harinder Singh",
+      "edition": "Sikh Research Institute web article, 16 April 2019",
+      "sourceDate": {
+        "label": "16 April 2019",
+        "certainty": "EXACT"
+      },
+      "originalLanguage": "English",
+      "translation": null,
+      "provenance": {
+        "repository": "Sikh Research Institute",
+        "catalogueReference": "Article heading; section Now, let's go back to the early 1500s; paragraph about farming and community hall/kitchen",
+        "witnessUrl": "https://sikhri.org/articles/what-happened-at-kartarpur-sahib"
+      },
+      "lineageId": null,
+      "reuse": "METADATA_ONLY_NO_TEXT_OR_IMAGES"
+    },
+    {
+      "id": "source.eos-bhai-gurdas",
+      "kind": "SCHOLARSHIP",
+      "title": "Encyclopaedia of Sikhism: Gurdas Bhai (1551–1636)",
+      "creator": "Rattan Singh Jaggi",
+      "edition": "Punjabi University online Encyclopaedia entry at learnpunjabi.org; web edition carries no entry publication date or printed page number",
+      "sourceDate": {
+        "label": "Online edition date not stated",
+        "certainty": "UNKNOWN"
+      },
+      "originalLanguage": "English",
+      "translation": null,
+      "provenance": {
+        "repository": "Punjabi University, Encyclopaedia of Sikhism / learnpunjabi.org",
+        "catalogueReference": "GURDAS BHAI (1551-1636).html; title, opening paragraph and author credit",
+        "witnessUrl": "https://eos.learnpunjabi.org/GURDAS%20BHAI%20%281551-1636%29.html"
+      },
+      "lineageId": null,
+      "reuse": "METADATA_ONLY_NO_TEXT_OR_IMAGES"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim.kartarpur-return-dress",
+      "statement": "Bhai Gurdas's Vaar 1, Pauri 38 describes Guru Nanak returning to Kartarpur, leaving udasi garb and wearing householder's clothes.",
+      "classification": "EARLY_ACCOUNT",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi",
+        "person.bhai-gurdas"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Vaar 1, Pauri 38, original verse lines 1–2; BaniDB verseIds 200334–200335"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "This is the early account's description, not a dated eyewitness observation.",
+      "limitations": "The digital witness's underlying manuscript/print edition has not been established. English historical description remains subject to Punjabi and historical review.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-ravi-place",
+      "statement": "The Encyclopaedia identifies Guru Nanak's Kartarpur beside the Ravi, distinct from Kartarpur in the Jalandhar region.",
+      "classification": "UNVERIFIED_ATTRIBUTION",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.eos-kartarpur",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Opening paragraph, place identification"
+          },
+          "relationship": "SUPPORTS"
+        },
+        {
+          "sourceId": "source.macauliffe-1909-vol1",
+          "locator": {
+            "kind": "PAGE_RANGE",
+            "reference": "Volume I, chapter XV, printed page 180, paragraph beginning the arrival at Kartarpur"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "Named secondary-source attribution is documented; historical geography has not been checked against an early map or manuscript.",
+      "limitations": "The Encyclopaedia's administrative and access statements are dated and are not used as current travel information. The registry has no separate secondary-account classification, so this is conservatively unverified.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-family-home",
+      "statement": "The Encyclopaedia places Guru Nanak's family household at Kartarpur after his travels.",
+      "classification": "UNVERIFIED_ATTRIBUTION",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.eos-kartarpur",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Opening two paragraphs, settlement and household"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "Modern scholarly attribution; underlying historical witnesses need qualified collation.",
+      "limitations": "No precise founding year, duration of continuous residence or daily timetable is established by this intake.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-recitation",
+      "statement": "Vaar 1, Pauri 38 mentions recitation and discussion, names Sodar and Aarti, and then refers to Jap at Amrit Vela.",
+      "classification": "EARLY_ACCOUNT",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi",
+        "person.bhai-gurdas"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Vaar 1, Pauri 38, original verse lines 5–7; BaniDB verseIds 200338–200340"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "This records the terms appearing in the early account; no complete historical service order is inferred.",
+      "limitations": "No modern translation is copied. These references are not a theological explanation or instructions for present-day practice.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-farm-kitchen",
+      "statement": "Harinder Singh's 2019 Sikh Research Institute article describes Guru Nanak farming and a community hall and kitchen at Kartarpur.",
+      "classification": "UNVERIFIED_ATTRIBUTION",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.sikhri-kartarpur-2019",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Section Now, let's go back to the early 1500s; paragraph about the Guru farming and the community hall/kitchen"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "This is a named modern account, not an independently collated early witness.",
+      "limitations": "The Janamsakhi and other works cited elsewhere in that article have not been inspected in their cited editions. No menu, exact routine or dialogue is inferred.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-lahina",
+      "statement": "The Encyclopaedia places Bhai Lahina's instruction and his nomination as Guru Angad at Kartarpur.",
+      "classification": "UNVERIFIED_ATTRIBUTION",
+      "entityIds": [
+        "person.guru-nanak",
+        "person.guru-angad",
+        "place.kartarpur-ravi",
+        "event.kartarpur-succession"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.eos-kartarpur",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Second paragraph, instruction and succession"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "Modern institutional historical account; exact dates and narrative details are outside this draft.",
+      "limitations": "This intake has not inspected the underlying Janamsakhi editions. No quoted speech or selection scene is reconstructed.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-angad-in-vaar",
+      "statement": "Vaar 1, Pauri 38 names Guru Angad in its account following Guru Nanak's return.",
+      "classification": "EARLY_ACCOUNT",
+      "entityIds": [
+        "person.guru-nanak",
+        "person.guru-angad",
+        "place.kartarpur-ravi",
+        "person.bhai-gurdas",
+        "event.kartarpur-succession"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Vaar 1, Pauri 38, original verse line 3; BaniDB verseId 200336"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "The presence and place of the name in the text is checked; detailed succession narrative is not derived from one line.",
+      "limitations": "The draft does not translate the pauri's imagery into an invented event.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-source-generation",
+      "statement": "The Encyclopaedia dates Bhai Gurdas to 1551–1636 and Guru Nanak to 1469–1539; on that chronology Bhai Gurdas was not an eyewitness to Guru Nanak's Kartarpur years.",
+      "classification": "UNVERIFIED_ATTRIBUTION",
+      "entityIds": [
+        "person.guru-nanak",
+        "person.bhai-gurdas"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.eos-bhai-gurdas",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Entry title and opening paragraph, lifespan"
+          },
+          "relationship": "SUPPORTS"
+        },
+        {
+          "sourceId": "source.eos-kartarpur",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Opening paragraph, Guru Nanak's lifespan"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "The generation comparison is an inference explicitly conditional on the cited reference's chronology.",
+      "limitations": "Bhai Gurdas's birth date and this pauri's composition date have not been independently researched here. No specific manuscript date is asserted.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-macauliffe-recitation",
+      "statement": "Macauliffe's 1909 account describes arrival, hymns and conversation at Kartarpur, naming Sodar and Sohila in the evening and Japji in the morning.",
+      "classification": "TRADITIONAL_SAKHI",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.macauliffe-1909-vol1",
+          "locator": {
+            "kind": "PAGE_RANGE",
+            "reference": "Volume I, chapter XV, final paragraph on printed page 180 continuing at the top of page 181; footnote 1 on page 181"
+          },
+          "relationship": "SUPPORTS"
+        }
+      ],
+      "uncertainty": "A much later compilation of traditional material, not a contemporaneous diary or a demonstrated independent witness to Bhai Gurdas.",
+      "limitations": "The printed page markers were read in an online transcription, not collated against a physical volume. Macauliffe's interpretation of intention is not adopted; its colonial-period framing remains a review consideration.",
+      "conflicts": []
+    },
+    {
+      "id": "claim.kartarpur-source-wording",
+      "statement": "Bhai Gurdas names Aarti where Macauliffe's account names Sohila; both name Sodar and a morning Jap/Japji reference.",
+      "classification": "EARLY_ACCOUNT",
+      "entityIds": [
+        "person.guru-nanak",
+        "place.kartarpur-ravi",
+        "person.bhai-gurdas"
+      ],
+      "citations": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "locator": {
+            "kind": "SECTION",
+            "reference": "Vaar 1, Pauri 38, original verse line 7; BaniDB verseId 200340"
+          },
+          "relationship": "SUPPORTS"
+        },
+        {
+          "sourceId": "source.macauliffe-1909-vol1",
+          "locator": {
+            "kind": "PAGE_RANGE",
+            "reference": "Volume I, chapter XV, printed page 181, first paragraph"
+          },
+          "relationship": "CONTEXT"
+        }
+      ],
+      "uncertainty": "Observed wording difference, not proof that the accounts describe incompatible practices.",
+      "limitations": "Do not replace one title with another, equate the named compositions, or create a new historical daily sequence from the two accounts.",
+      "conflicts": []
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation.nanak-at-kartarpur",
+      "kind": "PERSON_AT_PLACE",
+      "fromEntityId": "person.guru-nanak",
+      "toEntityId": "place.kartarpur-ravi",
+      "claimIds": [
+        "claim.kartarpur-return-dress",
+        "claim.kartarpur-ravi-place",
+        "claim.kartarpur-family-home",
+        "claim.kartarpur-recitation",
+        "claim.kartarpur-farm-kitchen"
+      ]
+    },
+    {
+      "id": "relation.angad-at-kartarpur",
+      "kind": "PERSON_AT_PLACE",
+      "fromEntityId": "person.guru-angad",
+      "toEntityId": "place.kartarpur-ravi",
+      "claimIds": [
+        "claim.kartarpur-lahina"
+      ]
+    },
+    {
+      "id": "relation.succession-at-kartarpur",
+      "kind": "EVENT_AT_PLACE",
+      "fromEntityId": "event.kartarpur-succession",
+      "toEntityId": "place.kartarpur-ravi",
+      "claimIds": [
+        "claim.kartarpur-lahina",
+        "claim.kartarpur-angad-in-vaar"
+      ]
+    }
+  ],
+  "chapters": []
+}
