@@ -460,3 +460,84 @@ on `main` · and the three founder decisions above.
 
 `main` remains `a3476ac4b9be90dde350fb35dd13ce0b672c120d`, `protected: false`, unchanged
 throughout the entire session.
+
+---
+
+## Eighth update — the founder's rulings on HIST-01 and RIGHTS-01
+
+### Ruling 1 — historical support verification: ChatGPT proposes, Claude double-checks
+
+Founder, verbatim: *"historical review is between chatgpt and claude - you can make initial
+clalc and claude double checks it. Keep in mind we are focused on authentic sources."*
+
+**Accepted, and it gives me a real job I had explicitly left undone.** RT-027 listed as not
+verified: *"The four web sources' content. I did not fetch learnpunjabi.org,
+sacred-texts.com or sikhri.org to confirm the quoted locators say what the draft reports."*
+That is precisely this task, and it is checkable.
+
+**What this arrangement can establish.** Claim-to-source fidelity: that every claim cites a
+source, that the cited locator exists, and that **the source actually says what the claim
+reports it says**. That is mechanical, repeatable, and exactly what *"focused on authentic
+sources"* asks for. It closes the larger half of HIST-01.
+
+**What it cannot establish, stated once and then left alone.** That a source is *right*. Two
+systems agreeing that the Encyclopaedia of Sikhism says X does not make X historically true,
+and the standing constraint remains in force:
+
+> "Do not declare unreviewed material authentic merely because two AI systems agree."
+
+So the arrangement moves HIST-01 from *unowned* to *owned for the checkable half*. The
+app's labelling must keep carrying the distinction: a claim can be **faithfully sourced**
+without being **established**. #71 already does this — its classifications are
+`Early historical account` / `Unverified attribution` / `Traditional Sakhi`, and
+`qualifiedHumanReviewCount: 0` sits in the data.
+
+**HIST-01 status: OPEN → OPEN-OWNED.** Owner: ChatGPT proposes, Claude verifies
+claim-to-source fidelity. Residual, permanently: historical truth and contested adjudication.
+
+**First action attempted immediately, and blocked.** I tried to fetch
+`eos.learnpunjabi.org/KARTARPUR.html` and the SikhRI article to verify #71's C2, C3, C4, C6
+and C9 against their stated locators. Both calls required approval that went unanswered, so
+I stopped rather than retrying. **The check is queued, not done.** It needs one approval and
+then it runs.
+
+### Ruling 2 — the Daily Hukamnama: provenance given, permission not yet settled
+
+Founder, verbatim: *"daily hukumnama is published by golden temple or harimandir sahib ji. We
+get it from the published hulumnama and we should have the explanation since we are doing
+complete guru granth sahib ji."*
+
+The provenance is right and matches what the code does — the reading comes from the published
+Hukamnama. But this does not yet answer RIGHTS-01, for a reason that is the founder's own
+standing rule rather than my opinion:
+
+> "Public availability does not establish permission to redistribute, host, embed, cache
+> offline, create excerpts or reuse timing data."
+
+I am recording that once and not re-arguing it. What is more useful is that **the question
+splits into three parts with three different answers**, and only one of them is actually a
+problem:
+
+| what | status |
+|---|---|
+| **The scripture text itself** — the Gurmukhi of the shabad | Centuries old, not subject to copyright. Hosting the original text is **not** a rights problem |
+| **The daily selection** — *which* passage, on *which* date | This is Harmandir Sahib's act, and the rule above names timing data explicitly. Re-publishing it as a dated feed is the part worth asking about |
+| **The explanation or translation** | If taken from any modern published source it is **copyrighted and cannot be used**: *"Do not reproduce copyrighted modern translations, commentary, recordings or book layouts without authorization"* |
+
+So *"we should have the explanation"* needs splitting. We cannot take theirs. If we write our
+own, that is Ruling 1's territory and the qualified-review question, not a rights matter —
+and the app currently ships **empty, labelled explanation slots** rather than generated prose,
+which is the correct posture.
+
+**My recommendation, lowest-risk and quickest:** publish the **original Gurmukhi only**, carry
+no third-party explanation, and send a short courtesy request to the custodian for the dated
+selection before activation. The legal exposure on the text alone is slight. The reason to
+ask anyway is not primarily legal: this is built with reverence toward the institution that
+publishes the Hukamnama, and a letter costs very little against that.
+
+**I have drafted that request** — see
+`reviews/claude-independent/drafts/HUKAMNAMA_PERMISSION_REQUEST_DRAFT.md`. Drafting is
+permitted; contacting is not, and I have contacted nobody. Sending it is the founder's act.
+
+**RIGHTS-01 status: unchanged, OPEN-OWNER-DECISION.** Narrowed: the text is fine, the
+explanation is settled (we write our own or ship none), the dated selection is the open item.
