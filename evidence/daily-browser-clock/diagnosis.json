@@ -1,0 +1,26 @@
+{
+  "schema": "glp.daily-browser-clock-diagnosis.v1",
+  "candidateCommit": "eda7e64fc846a5112143910a98143e7069473fbf",
+  "failedHostedRun": 46004681381,
+  "failedHostedRunUrl": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46004681381",
+  "hostedFailure": "Timeout in save() while waiting for first-tab saved status in the two-tab scenario; no failure DOM snapshot was captured.",
+  "baselineTestSha256": "727386df142c157f414fe1196fb4b6b0b1e9f2b7dd1ecd46f94341eb47a9602f",
+  "diagnosticCopySha256": "a98c54b2b3f321a201f4022428007b71e012ff75bef7fa50a33fa528ad506bda",
+  "applicationFilesChanged": false,
+  "normalBaseline": "Passes but instrumentation observes the first tab clock move backwards on second-page creation.",
+  "forcedCanary": "Advance synthetic time five seconds before original note creation, then execute the unchanged second-page helper. Same first-tab save timeout; UI explicitly reports device clock predates note.",
+  "applicationBehavior": "Desired refusal preserves stored record and unsaved text. No product fix or longer timeout is warranted.",
+  "diagnosisLimit": "The hosted run lacked DOM/time snapshots; the exact failure mechanism is reproduced with identical application bytes and the original helper, not observed directly inside that already-completed runner.",
+  "playwrightSourceEvidence": {
+    "version": "1.62.1",
+    "bundle": "playwright-core/lib/coreBundle.js",
+    "pageClock": "Page constructor assigns this.clock = this._browserContext.clock",
+    "install": "Clock.install invokes BrowserContext.clockInstall, which evaluates controller.install(time) in all frames"
+  },
+  "productDigests": {
+    "hukamnama/reader.mjs": "d73a43a1f73626561d547c9b361dc4549b82c4d8f23c254fa3482900162a3b17",
+    "hukamnama/learning.mjs": "b27aa14332dcb07f589faecf4616a31f90414afcdd628ab6d66399328d203d54",
+    "hukamnama/reader.bundle.mjs": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+    "hukamnama/core.mjs": "b93d06e8d3347e39dba5524b04c36c629a762f001e571822f662d0f3cd7bab6d"
+  }
+}

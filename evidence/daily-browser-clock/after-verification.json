@@ -1,0 +1,27 @@
+{
+  "schema": "glp.daily-browser-clock-repair.v1",
+  "baseCommit": "eda7e64fc846a5112143910a98143e7069473fbf",
+  "changedCodePaths": [
+    "tests/hukamnama-browser.mjs"
+  ],
+  "candidateTestSha256": "3f627ea51b3940ba99c948f30623eaaa6701b712729323dc4837a4c95bd2617b",
+  "browser": "Installed desktop Chrome through fresh temporary Playwright contexts",
+  "applicationBytesUnchanged": true,
+  "saveTimeoutUnchangedMilliseconds": 12000,
+  "fullBrowserSuite": "PASS",
+  "scenarioCount": 32,
+  "pageErrors": [],
+  "clockCanary": {
+    "beforeSecondClock": 1795780806037,
+    "afterSecondClock": 1795780806074,
+    "existingCreatedAt": "2026-11-27T12:00:00.235Z",
+    "conflictingInitialTimeRefused": true
+  },
+  "fixedContextClockMeaning": "One context-wide install promise and immutable initial time per browser context. Rejected mismatched time before page creation.",
+  "sourceReportPath": "evidence/daily-hukamnama/ui/2026-11-27T13-20-01-527Z/report.json",
+  "sourceReportSha256": "6bfdb42b9c166e3e0bf6a8402c99253d218f9a69be44f9734095288daaf4b9be",
+  "limits": [
+    "Desktop Chromium only; no real phone or VoiceOver acceptance.",
+    "The past hosted runner had no failure DOM snapshot; its timeout is preserved separately from the reproduced concrete clock refusal."
+  ]
+}

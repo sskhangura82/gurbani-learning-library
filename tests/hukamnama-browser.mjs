@@ -44,9 +44,22 @@ const check = async (name, test) => { if (process.env.GLP_UI_CASE && !name.inclu
 async function context(options = {}) {
  const ctx = await browser.newContext({serviceWorkers:"block",...options}); contexts.push(ctx); return ctx;
 }
+// Playwright's page.clock belongs to the whole browser context. Reinstalling
+// it for a second page rewinds every open tab and can correctly trigger INVALID_CLOCK.
+const contextClocks = new WeakMap();
 async function pageFor(ctx, time = clock) {
+ const initialTime = +new Date(time);
+ assert.ok(Number.isFinite(initialTime), "A synthetic context clock needs a valid initial time.");
+ let installed = contextClocks.get(ctx);
+ if (installed) {
+  assert.equal(initialTime,installed.initialTime,"All pages in one context must request the same initial clock time.");
+ } else {
+  installed = {initialTime,ready:ctx.clock.install({time:new Date(initialTime)})};
+  contextClocks.set(ctx,installed);
+ }
+ await installed.ready;
  const page = await ctx.newPage(); page.setDefaultTimeout(12000);
- await page.clock.install({time}); page.on("pageerror",error => report.pageErrors.push(error.message)); return page;
+ page.on("pageerror",error => report.pageErrors.push(error.message)); return page;
 }
 async function loaded(page, suffix = "") {
  await page.goto(url + suffix); await page.waitForFunction(() => document.getElementById("reading").hidden === false);
@@ -285,7 +298,21 @@ try {
  });
  await check("Two tabs preserve conflicting note edits as separate versions",async () => {
   await notePage.locator("#saved-list button").first().click(); await notePage.locator("#question").waitFor({state:"visible"});
-  const second = await pageFor(noteContext); await loaded(second,"?learning=saved"); await second.locator("#saved-list button").first().click();
+  // Deliberately advance the shared clock: reopening the context clock at its
+  // original epoch must fail this canary even when a fast machine masks the save bug.
+  await notePage.clock.runFor(5000);
+  const beforeSecondClock = await notePage.evaluate(() => Date.now());
+  const existingCreatedAt = JSON.parse(await storage(notePage)).records[0].createdAt;
+  const second = await pageFor(noteContext);
+  const afterSecondClock = await notePage.evaluate(() => Date.now());
+  report.twoTabClock = {beforeSecondClock,afterSecondClock,existingCreatedAt};
+  assert.ok(afterSecondClock >= beforeSecondClock,"Opening a second tab must never rewind the first tab's clock.");
+  assert.ok(afterSecondClock >= Date.parse(existingCreatedAt),"The existing note must remain in the first tab's clock past.");
+  const pagesBeforeRejectedClock = noteContext.pages().length;
+  await assert.rejects(() => pageFor(noteContext,new Date(+clock + 1)),/same initial clock time/);
+  assert.equal(noteContext.pages().length,pagesBeforeRejectedClock,"A conflicting clock request must fail before opening a page.");
+  report.twoTabClock.conflictingInitialTimeRefused = true;
+  await loaded(second,"?learning=saved"); await second.locator("#saved-list button").first().click();
   await second.waitForFunction(() => !document.getElementById("reflection").disabled);
   await save(notePage,question,"SYNTHETIC FIRST TAB EDIT");
   await save(second,question,"SYNTHETIC SECOND TAB EDIT");
