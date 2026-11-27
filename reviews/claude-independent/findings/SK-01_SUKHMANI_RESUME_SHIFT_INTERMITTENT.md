@@ -176,15 +176,17 @@ not carry PR #59's repair. So this is the pre-existing defect appearing again,
 and it is useful as a live datapoint rather than a new problem — it confirms the
 defect is still present on `main` while a fix sits unmerged in a draft.
 
-## Three clean runs, 27 November — recorded so they are not misread
+## Four clean runs, 27 November — recorded so they are not misread
 
-`verify-sukhmani-browser` **passed** on three consecutive review-branch commits
-(`ccd5c28115aa`, `929a1016af0f`, `c98829cbacee`), with a fourth in progress. All four carry
-markdown only, under `reviews/claude-independent/`.
+`verify-sukhmani-browser` **passed** on four consecutive review-branch commits
+(`ccd5c28115aa`, `929a1016af0f`, `c98829cbacee`, `76f997e77e9f`). All four carry markdown
+only, under `reviews/claude-independent/`.
 
 **This is not evidence that the defect is gone, weakened, or fixed on `main`.** At the
-measured rate of roughly 1 in 16, three consecutive passes have probability
-(15/16)³ ≈ **0.82** — the single most likely outcome, and entirely unremarkable.
+measured rate of roughly 1 in 16, four consecutive passes have probability
+(15/16)⁴ ≈ **0.77** — the single most likely outcome, and entirely unremarkable. A run of
+passes this short cannot distinguish a 1-in-16 defect from no defect at all; it would take
+far more runs to move the estimate, and I have not performed them.
 
 It is recorded for two reasons:
 
