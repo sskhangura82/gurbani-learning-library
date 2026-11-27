@@ -1,0 +1,26 @@
+✔ Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input (712.528447ms)
+✔ Existing application bytes stay frozen outside exact Daily, Farid, Haumai and Explore scopes, loader pins and worker manifest (737.67454ms)
+✔ Reader loader contract and reviewed original module closures remain exact (120.386912ms)
+✔ All 16 application pages carry exactly 58 independently inventoried script pins (120.513075ms)
+✔ Generated modules reproduce exactly and contain no executable import or export-from edges (550.808623ms)
+✔ Ordinary check mode writes neither bundles nor HTML (361.759836ms)
+✔ Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts (19.833978ms)
+✔ Bundling rejects unexpected dependencies and unresolved dynamic executable loading (14.813425ms)
+✔ Extra HTML and stale source cannot silently pass default checks (562.973004ms)
+✔ A pinned bundle cannot retain secondary imports or recover an inline execution path (41.619236ms)
+✔ Private toolchain lock is portable, complete, and preserves every registry pin (4.551752ms)
+✔ The observed logical-/tmp prefix lock corruption is refused before install (3.01187ms)
+✔ Missing platform packages and changed package integrity cannot pass the lock gate (2.243091ms)
+✔ All 42 ordered classic reader script occurrences have exact file pins and anonymous CORS (70.337476ms)
+✔ Pinning changes no reader markup, source wording or script order beyond integrity attributes (29.433927ms)
+✔ Check mode reproduces all pins without writing page bytes (35.251075ms)
+✔ The generator refuses missing, extra, inline, module and reordered script inventories (1.941597ms)
+✔ The generator cannot refresh a changed frozen source or verifier into acceptance (9.748804ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1909.939789

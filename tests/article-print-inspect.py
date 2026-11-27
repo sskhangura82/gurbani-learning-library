@@ -86,6 +86,29 @@ def get_backend():
     raise RuntimeError("Install PyMuPDF, or provide pdfplumber and pdftoppm, in the test runtime. No packages were installed by this tool.")
 
 
+def poppler_text(path, page_number):
+    """Use one declared extractor for fidelity checks, independently of rendering.
+
+    PyMuPDF 1.26.6 duplicates dependent Gurmukhi vowel signs in some subjoined-ra
+    clusters in these PDFs despite correct /ActualText. It remains useful for
+    geometry/rendering; it is not the fidelity instrument. No matching-driven
+    fallback or character repair is performed here.
+    """
+    if not shutil.which("pdftotext"):
+        raise RuntimeError("Poppler pdftotext is required for canonical text checks; no alternate extractor is silently substituted.")
+    result = subprocess.run(
+        ["pdftotext", "-f", str(page_number), "-l", str(page_number),
+         "-enc", "UTF-8", "-nopgbrk", str(path), "-"],
+        check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return result.stdout.decode("utf-8", errors="strict")
+
+
+def poppler_version():
+    result = subprocess.run(["pdftotext", "-v"], check=True,
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return (result.stderr or result.stdout).decode("utf-8", errors="strict").splitlines()[0]
+
+
 def page_records(path, output, backend, module, dpi):
     records = []
     if backend == "PyMuPDF":
@@ -98,7 +121,7 @@ def page_records(path, output, backend, module, dpi):
                 page.get_pixmap(matrix=module.Matrix(dpi / 72, dpi / 72), alpha=False).save(image)
                 records.append({"number": number, "width": page.rect.width,
                                 "height": page.rect.height,
-                                "text": page.get_text("text", sort=True),
+                                "text": poppler_text(path, number),
                                 "boxes": [{"text": s["text"], "bbox": s["bbox"]} for s in spans],
                                 "image": str(image)})
     else:
@@ -107,7 +130,7 @@ def page_records(path, output, backend, module, dpi):
                 words = page.extract_words()
                 records.append({"number": number, "width": page.width,
                                 "height": page.height,
-                                "text": page.extract_text() or "",
+                                "text": poppler_text(path, number),
                                 "boxes": [{"text": w["text"], "bbox": [w["x0"], w["top"], w["x1"], w["bottom"]]} for w in words],
                                 "image": str(output / ("page-%02d.png" % number))})
         for record in records:
@@ -190,11 +213,14 @@ def main():
     try:
         pairs, expectation = load_pairs(args.expect_pair)
         backend, module = get_backend()
+        text_backend_version = poppler_version()
         args.output_dir.mkdir(parents=True, exist_ok=True)
         results = [inspect(path, pairs, args.output_dir, backend, module,
                            args.min_margin_mm, args.dpi) for path in args.pdf]
         report = {"schemaVersion": 1, "backend": backend,
                   "backendVersion": getattr(module, "VersionBind", getattr(module, "__version__", "unknown")),
+                  "geometryBackend": backend, "textBackend": "Poppler pdftotext",
+                  "textBackendVersion": text_backend_version,
                   "status": "FAIL" if any(item["status"] == "FAIL" for item in results) else "PASS",
                   "extractionNormalization": "Unicode NFC and collapsed whitespace only; no punctuation or letter removal",
                   "expectationFile": expectation,

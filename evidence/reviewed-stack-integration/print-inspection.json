@@ -1,0 +1,416 @@
+[
+  {
+    "group": "haumai",
+    "status": "PASS",
+    "textBackend": "Poppler pdftotext",
+    "textBackendVersion": "pdftotext version 25.03.0",
+    "geometryBackend": "PyMuPDF",
+    "documents": [
+      {
+        "pdf": "evidence/articles/print/haumai-source-sheet-a4.pdf",
+        "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+        "status": "PASS",
+        "pageCount": 2,
+        "pairs": [
+          {
+            "id": "glp.article-ref.salok-mahalla9.019",
+            "allOnOnePage": true,
+            "page": 1,
+            "checks": [
+              {
+                "kind": "marker",
+                "expected": "Guru Tegh Bahadur Ji - attribution from the collection heading",
+                "expectedUTF8Sha256": "612890e6aee1cc8d31ff444e490d29f3cb2b518d557bac4009829bd45afc0e96",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "marker",
+                "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+                "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+                "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+                "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              }
+            ]
+          }
+        ],
+        "failures": []
+      },
+      {
+        "pdf": "evidence/articles/print/haumai-source-sheet-letter.pdf",
+        "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+        "status": "PASS",
+        "pageCount": 2,
+        "pairs": [
+          {
+            "id": "glp.article-ref.salok-mahalla9.019",
+            "allOnOnePage": true,
+            "page": 1,
+            "checks": [
+              {
+                "kind": "marker",
+                "expected": "Guru Tegh Bahadur Ji - attribution from the collection heading",
+                "expectedUTF8Sha256": "612890e6aee1cc8d31ff444e490d29f3cb2b518d557bac4009829bd45afc0e96",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "marker",
+                "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+                "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+                "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+                "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              }
+            ]
+          }
+        ],
+        "failures": []
+      }
+    ],
+    "visualReview": "NOT_PERFORMED_BY_SCRIPT"
+  },
+  {
+    "group": "dubidha",
+    "status": "PASS",
+    "textBackend": "Poppler pdftotext",
+    "textBackendVersion": "pdftotext version 25.03.0",
+    "geometryBackend": "PyMuPDF",
+    "documents": [
+      {
+        "pdf": "evidence/articles/print/dubidha-source-sheet-a4.pdf",
+        "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+        "status": "PASS",
+        "pageCount": 2,
+        "pairs": [
+          {
+            "id": "glp.article-ref.salok-kabir.025",
+            "allOnOnePage": true,
+            "page": 1,
+            "checks": [
+              {
+                "kind": "marker",
+                "expected": "Collection attribution: Salok Bhagat Kabir Ji; individual attribution review pending",
+                "expectedUTF8Sha256": "e3a60305f9729b439c2e4b916c4c25b3764102930c9047d908855e1bd529a443",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "marker",
+                "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+                "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+                "expectedUTF8Sha256": "7d899f1634772b592177f7c2e78b5e96884b5490ea18b86e8d6b213c366db1eb",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+                "expectedUTF8Sha256": "157be362ae307621ec83bcc11bc184c63e6627a25c660e52f8dffe0d715cddd3",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              }
+            ]
+          }
+        ],
+        "failures": []
+      },
+      {
+        "pdf": "evidence/articles/print/dubidha-source-sheet-letter.pdf",
+        "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+        "status": "PASS",
+        "pageCount": 2,
+        "pairs": [
+          {
+            "id": "glp.article-ref.salok-kabir.025",
+            "allOnOnePage": true,
+            "page": 1,
+            "checks": [
+              {
+                "kind": "marker",
+                "expected": "Collection attribution: Salok Bhagat Kabir Ji; individual attribution review pending",
+                "expectedUTF8Sha256": "e3a60305f9729b439c2e4b916c4c25b3764102930c9047d908855e1bd529a443",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "marker",
+                "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+                "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਕਬੀਰ ਪ੍ਰੀਤਿ ਇਕ ਸਿਉ ਕੀਏ ਆਨ ਦੁਬਿਧਾ ਜਾਇ ॥",
+                "expectedUTF8Sha256": "7d899f1634772b592177f7c2e78b5e96884b5490ea18b86e8d6b213c366db1eb",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਭਾਵੈ ਲਾਂਬੇ ਕੇਸ ਕਰੁ ਭਾਵੈ ਘਰਰਿ ਮੁਡਾਇ ॥੨੫॥",
+                "expectedUTF8Sha256": "157be362ae307621ec83bcc11bc184c63e6627a25c660e52f8dffe0d715cddd3",
+                "occurrences": [
+                  {
+                    "page": 1,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              }
+            ]
+          }
+        ],
+        "failures": []
+      }
+    ],
+    "visualReview": "NOT_PERFORMED_BY_SCRIPT"
+  },
+  {
+    "group": "pagination",
+    "status": "PASS",
+    "textBackend": "Poppler pdftotext",
+    "textBackendVersion": "pdftotext version 25.03.0",
+    "geometryBackend": "PyMuPDF",
+    "documents": [
+      {
+        "pdf": "evidence/articles/print/pagination-stress-a4.pdf",
+        "sha256": "6b97729e704d23a07ce86447025c12ad6bfbdec3066c64603d864591443fe65a",
+        "status": "PASS",
+        "pageCount": 3,
+        "pairs": [
+          {
+            "id": "glp.article-ref.salok-mahalla9.019",
+            "allOnOnePage": true,
+            "page": 2,
+            "checks": [
+              {
+                "kind": "marker",
+                "expected": "Guru Tegh Bahadur Ji - attribution from the collection heading",
+                "expectedUTF8Sha256": "612890e6aee1cc8d31ff444e490d29f3cb2b518d557bac4009829bd45afc0e96",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "marker",
+                "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+                "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+                "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+                "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              }
+            ]
+          }
+        ],
+        "failures": []
+      },
+      {
+        "pdf": "evidence/articles/print/pagination-stress-letter.pdf",
+        "sha256": "9d178adfc253e0d924bf754c68aa0f01aa0e744fdb9b628c46ccb8dc1153229b",
+        "status": "PASS",
+        "pageCount": 3,
+        "pairs": [
+          {
+            "id": "glp.article-ref.salok-mahalla9.019",
+            "allOnOnePage": true,
+            "page": 2,
+            "checks": [
+              {
+                "kind": "marker",
+                "expected": "Guru Tegh Bahadur Ji - attribution from the collection heading",
+                "expectedUTF8Sha256": "612890e6aee1cc8d31ff444e490d29f3cb2b518d557bac4009829bd45afc0e96",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "marker",
+                "expected": "No explanation has been written. This space remains empty until qualified content is available.",
+                "expectedUTF8Sha256": "3f762627e3eb694acf81d90a38776153bc9a1825c4e54ecbb96c15c08a1cb809",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਜਿਹਿ ਪ੍ਰਾਨੀ ਹਉਮੈ ਤਜੀ ਕਰਤਾ ਰਾਮੁ ਪਛਾਨਿ ॥",
+                "expectedUTF8Sha256": "a7338568b2b32b7ed745bbb343d542ceb555ddaee75c74da986a4dd265f9f733",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              },
+              {
+                "kind": "gurmukhi",
+                "expected": "ਕਹੁ ਨਾਨਕ ਵਹੁ ਮੁਕਤਿ ਨਰੁ ਇਹ ਮਨ ਸਾਚੀ ਮਾਨੁ ॥੧੯॥",
+                "expectedUTF8Sha256": "28fc104485a73799e815d556cbcd3510284a6dd5f02a0fec3d4a91c01c135d5d",
+                "occurrences": [
+                  {
+                    "page": 2,
+                    "count": 1
+                  }
+                ],
+                "exactlyOnce": true
+              }
+            ]
+          }
+        ],
+        "failures": []
+      }
+    ],
+    "visualReview": "NOT_PERFORMED_BY_SCRIPT"
+  }
+]

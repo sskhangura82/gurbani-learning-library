@@ -1,0 +1,6 @@
+{"status": "PASS", "report": "/workspace/scratch/d7e763e55ff9/glp-integration-print/haumai/inspection.json", "documents": [{"pdf": "evidence/articles/print/haumai-source-sheet-a4.pdf", "pages": 2, "status": "PASS", "failures": []}, {"pdf": "evidence/articles/print/haumai-source-sheet-letter.pdf", "pages": 2, "status": "PASS", "failures": []}], "visualReview": "NOT_PERFORMED_BY_SCRIPT"}
+ 
+{"status": "PASS", "report": "/workspace/scratch/d7e763e55ff9/glp-integration-print/dubidha/inspection.json", "documents": [{"pdf": "evidence/articles/print/dubidha-source-sheet-a4.pdf", "pages": 2, "status": "PASS", "failures": []}, {"pdf": "evidence/articles/print/dubidha-source-sheet-letter.pdf", "pages": 2, "status": "PASS", "failures": []}], "visualReview": "NOT_PERFORMED_BY_SCRIPT"}
+ 
+{"status": "PASS", "report": "/workspace/scratch/d7e763e55ff9/glp-integration-print/pagination/inspection.json", "documents": [{"pdf": "evidence/articles/print/pagination-stress-a4.pdf", "pages": 3, "status": "PASS", "failures": []}, {"pdf": "evidence/articles/print/pagination-stress-letter.pdf", "pages": 3, "status": "PASS", "failures": []}], "visualReview": "NOT_PERFORMED_BY_SCRIPT"}
+ 
