@@ -3,36 +3,73 @@ on:
   workflow_dispatch:
     inputs:
       amritsar_date:
-        description: "Exact Amritsar date, YYYY-MM-DD; no date fallback"
-        required: true
+        description: "Optional exact Amritsar date, YYYY-MM-DD; blank means today, never a fallback"
+        required: false
         type: string
+  schedule:
+    # UTC: five bounded probes, 06:47 / 07:47 / 08:47 / 10:47 / 13:47 in Amritsar.
+    # These are checking times, not claims about the official publication hour.
+    - cron: '17 1,2,3,5,8 * * *'
 permissions:
   contents: read
+concurrency:
+  group: hukamnama-evidence-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   original-only-evidence:
+    # The schedule stays inert unless this explicit preparation-only gate is set
+    # after independent review and the founder's decision. No variable is set here.
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && vars.GLP_HUKAMNAMA_PREPARE_ENABLED == 'true')
     runs-on: ubuntu-24.04
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify importer refusal behavior
-        run: python3 tests/hukamnama-ingest.py
-      - name: Capture and compare the exact official daily selection
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source refusals and preparation safeguards
+        run: |
+          python3 tests/hukamnama-ingest.py
+          node --test tests/hukamnama-preparation.mjs
+      - name: Capture and compare one exact official daily selection
+        id: capture
         env:
           HUKAMNAMA_REQUEST_DATE: ${{ inputs.amritsar_date }}
+          HUKAMNAMA_SOURCE_COMMIT: ${{ github.sha }}
         run: |
-          python3 tools/ingest-hukamnama.py --date "$HUKAMNAMA_REQUEST_DATE" --out "$RUNNER_TEMP/hukamnama-unsigned"
-      - name: Preserve original-only unsigned artifacts for review
+          if [ -n "$HUKAMNAMA_REQUEST_DATE" ]; then
+            node tools/prepare-daily-hukamnama.mjs --date "$HUKAMNAMA_REQUEST_DATE" --output "$RUNNER_TEMP/hukamnama-preparation" --source-commit "$HUKAMNAMA_SOURCE_COMMIT"
+          else
+            node tools/prepare-daily-hukamnama.mjs --output "$RUNNER_TEMP/hukamnama-preparation" --source-commit "$HUKAMNAMA_SOURCE_COMMIT"
+          fi
+      - name: Preserve the bounded run report, including refusals
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: hukamnama-unsigned-review
-          path: ${{ runner.temp }}/hukamnama-unsigned/
+          name: hukamnama-preparation-run-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hukamnama-preparation/run.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Preserve only successfully checked original artifacts
+        if: steps.capture.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: hukamnama-unsigned-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/hukamnama-preparation/capture/manifest.json
+            ${{ runner.temp }}/hukamnama-preparation/capture/events/*.payload.json
+            ${{ runner.temp }}/hukamnama-preparation/capture/sources/*.json
+            ${{ runner.temp }}/hukamnama-preparation/capture/receipts/*.original.json
           if-no-files-found: error
           retention-days: 30
-# Deliberately no schedule, publisher credentials, write permissions, commit,
-# Pages deployment, signing or automatic activation. A workflow artifact is not
-# a published daily reading and does not satisfy independent or qualified review.
+# This is preparation, not delivery. No publisher credentials, secrets, write
+# permissions, signing, commits, deployment or automatic activation. A matching
+# repeat keeps admitted bytes unchanged. Reports and unsigned captures are not
+# independent/qualified review or permission to publish. Never upload a failed
+# capture directory: it may contain the unsupported bytes the validator refused.
