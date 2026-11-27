@@ -6,7 +6,7 @@ import http from 'node:http';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const {chromium}=await import(process.env.GLP_PLAYWRIGHT_MODULE||'playwright');
-const directory=fileURLToPath(new URL('../',import.meta.url));
+const directory=path.resolve(fileURLToPath(new URL('../',import.meta.url)));
 const root=process.env.GLP_TARGET_DIRECTORY?await fs.realpath(process.env.GLP_TARGET_DIRECTORY):directory;
 const out=process.env.GLP_SMOKE_OUTPUT?path.resolve(process.env.GLP_SMOKE_OUTPUT):path.join(directory,'evidence/continuation-navigation-smoke');
 await fs.mkdir(out,{recursive:true});

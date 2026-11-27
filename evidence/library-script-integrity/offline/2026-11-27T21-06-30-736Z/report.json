@@ -1,0 +1,3473 @@
+{
+  "schema": "glp.library-offline-update.v1",
+  "startedAtUtc": "2026-11-27T21:06:30.736Z",
+  "priorRef": "e0a6cff22771d42ce3a2fe91ad96863daae214ed",
+  "checks": [
+    {
+      "name": "Candidate inventory preserves the prior release, Knowledge/Daily shell and exact Farid source-only additions",
+      "status": "PASS",
+      "priorAssetCount": 85,
+      "candidateAssetCount": 112,
+      "requiredAdditions": [
+        "./library/app.bundle.mjs",
+        "./articles/app.bundle.mjs",
+        "./library/complete-passages.json",
+        "./library/passage-contracts.mjs",
+        "./library/passages.mjs",
+        "./library/passage-ui.mjs",
+        "./library/search.mjs",
+        "./library/kinds.mjs",
+        "./knowledge/",
+        "./knowledge/index.html",
+        "./knowledge/style.css",
+        "./knowledge/app.bundle.mjs",
+        "./knowledge/scripture.json",
+        "./knowledge/pilot.json",
+        "./hukamnama/",
+        "./hukamnama/index.html",
+        "./hukamnama/style.css",
+        "./hukamnama/reader.bundle.mjs",
+        "./salok-farid/",
+        "./salok-farid/index.html",
+        "./salok-farid/data/library.json",
+        "./salok-farid/data/salok-farid.json",
+        "./collections/dasam/",
+        "./collections/dasam/index.html",
+        "./collections/collections.css",
+        "./psychology/",
+        "./psychology/index.html"
+      ]
+    },
+    {
+      "name": "Prior git release installs and renders before any candidate update is attempted",
+      "status": "PASS",
+      "cache": "glp-static:http://127.0.0.1:56760/library-offline-review/:0.20-reader-reliability-20261126-1",
+      "cachedResponses": 85,
+      "syntheticLearningDigests": {
+        "glp001.sukhmani.v1": "770970bc95167d2445951550c393f211d13bbd530a9cac43f1cec1b2562baddb",
+        "glp001.fullJapji.v1": "98b657ad75a1eb4e51d611169d862481122ce1e890ab0a6b79101ecf1f7a7c42"
+      }
+    },
+    {
+      "name": "corrupt candidate bundle fails installation while prior worker, exact cache and learning survive",
+      "status": "PASS",
+      "newWorkerState": "redundant",
+      "activeUnchanged": true,
+      "controllerUnchanged": true,
+      "waiting": false,
+      "failedAsset": {
+        "phase": "corrupt",
+        "path": "knowledge/app.bundle.mjs",
+        "query": "?glp_release=0.27-trusted-library-20261127-1",
+        "status": 200,
+        "sha256": "e480ce55ff4521e93435d3351043c95b5ae7a9e4776312c9b7f00a73f87de833"
+      },
+      "priorCacheVerifiedResponses": 85,
+      "preservedLearningRecords": 2,
+      "priorReaderServedOffline": true
+    },
+    {
+      "name": "missing candidate bundle fails installation while prior worker, exact cache and learning survive",
+      "status": "PASS",
+      "newWorkerState": "redundant",
+      "activeUnchanged": true,
+      "controllerUnchanged": true,
+      "waiting": false,
+      "failedAsset": {
+        "phase": "missing",
+        "path": "knowledge/app.bundle.mjs",
+        "query": "?glp_release=0.27-trusted-library-20261127-1",
+        "status": 404
+      },
+      "priorCacheVerifiedResponses": 85,
+      "preservedLearningRecords": 2,
+      "priorReaderServedOffline": true
+    },
+    {
+      "name": "Valid candidate waits for explicit activation and then replaces only the prior shell",
+      "status": "PASS",
+      "waitingBeforeExplicitAction": true,
+      "activeCache": "glp-static:http://127.0.0.1:56760/library-offline-review/:0.27-trusted-library-20261127-1",
+      "cachedResponses": 112,
+      "preservedLearningRecords": 2
+    },
+    {
+      "name": "Library, complete source sheets and both Knowledge URLs render through the cached bundled graph offline",
+      "status": "PASS",
+      "served": [
+        {
+          "path": "/library-offline-review/",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/css/home.css",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/library/library.css",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/js/home.js",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/js/pwa.js",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/library/app.bundle.mjs",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/style.css",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/app.bundle.mjs",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/scripture.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/pilot.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/index.html",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/style.css",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/app.bundle.mjs",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/scripture.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/knowledge/pilot.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/article.html",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/articles.css",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/app.bundle.mjs",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/catalog.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/salok-mahalla9/data/salok-mahalla9.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/salok-kabir/data/salok-kabir.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/article.html",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/articles.css",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/app.bundle.mjs",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/articles/catalog.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/salok-mahalla9/data/salok-mahalla9.json",
+          "fromServiceWorker": true
+        },
+        {
+          "path": "/library-offline-review/salok-kabir/data/salok-kabir.json",
+          "fromServiceWorker": true
+        }
+      ],
+      "knowledgeCompleteOccurrences": 9,
+      "completeSourceSheets": 2,
+      "finalCacheVerifiedResponses": 112,
+      "preservedLearningRecords": 2
+    }
+  ],
+  "requests": [
+    {
+      "phase": "prior",
+      "path": "index.html",
+      "query": "",
+      "status": 200,
+      "sha256": "6c721db523bedb328dcdbd0246da9c0a711f13d1361c76395323536b7c160c8a"
+    },
+    {
+      "phase": "prior",
+      "path": "css/home.css",
+      "query": "",
+      "status": 200,
+      "sha256": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e"
+    },
+    {
+      "phase": "prior",
+      "path": "library/library.css",
+      "query": "",
+      "status": 200,
+      "sha256": "42f166b88440158c121cdbdb81f3fc41616bd84d699d5a4bb857b3a1af126978"
+    },
+    {
+      "phase": "prior",
+      "path": "js/home.js",
+      "query": "",
+      "status": 200,
+      "sha256": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4"
+    },
+    {
+      "phase": "prior",
+      "path": "js/pwa.js",
+      "query": "",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365"
+    },
+    {
+      "phase": "prior",
+      "path": "library/app.mjs",
+      "query": "",
+      "status": 200,
+      "sha256": "2c73e9578263bc1bdeb8161249c53673d6f4b4ba12a50b60767e4b34fd9d9e00"
+    },
+    {
+      "phase": "prior",
+      "path": "library/catalog.mjs",
+      "query": "",
+      "status": 200,
+      "sha256": "b21949fb8b7a9bfc3503a2be5be84aa7bcdd16bfb81ab587d98ce5924be167b4"
+    },
+    {
+      "phase": "prior",
+      "path": "library/core.mjs",
+      "query": "",
+      "status": 200,
+      "sha256": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40"
+    },
+    {
+      "phase": "prior",
+      "path": "sw.js",
+      "query": "",
+      "status": 200,
+      "sha256": "b684a3fe401a22075ff3cb7f17411bfbf9c6e932c62f3627b7cce6a246adc30a"
+    },
+    {
+      "phase": "prior",
+      "path": "index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "6c721db523bedb328dcdbd0246da9c0a711f13d1361c76395323536b7c160c8a"
+    },
+    {
+      "phase": "prior",
+      "path": "full-japji.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2"
+    },
+    {
+      "phase": "prior",
+      "path": "index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "6c721db523bedb328dcdbd0246da9c0a711f13d1361c76395323536b7c160c8a"
+    },
+    {
+      "phase": "prior",
+      "path": "gurdwaras.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e"
+    },
+    {
+      "phase": "prior",
+      "path": "gurdwara.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "ad399c868cfe51397c0f6f62f6df58aa9f405894c5734273ee61308fb6598fa7"
+    },
+    {
+      "phase": "prior",
+      "path": "simran.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "b89b3dda9327f9ca065ca732e0821605ba76b93175236c7b480021f096c22c26"
+    },
+    {
+      "phase": "prior",
+      "path": "pauri-2-lesson.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875"
+    },
+    {
+      "phase": "prior",
+      "path": "css/app.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434"
+    },
+    {
+      "phase": "prior",
+      "path": "css/japji-full.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "15ab6388144f65b31ab0a2d5d227c4bc4c060967f03da06e514138855053f13c"
+    },
+    {
+      "phase": "prior",
+      "path": "css/home.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e"
+    },
+    {
+      "phase": "prior",
+      "path": "css/arrivals.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801"
+    },
+    {
+      "phase": "prior",
+      "path": "css/simran.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "2eeff6264e09d2d6846d7a3a21cc6fb860453165a9ead5fa93f24f05dff4d67b"
+    },
+    {
+      "phase": "prior",
+      "path": "js/home.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4"
+    },
+    {
+      "phase": "prior",
+      "path": "js/arrivals.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118"
+    },
+    {
+      "phase": "prior",
+      "path": "js/simran.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "f0e55833f7a0df06a7d011fa1bf6162d102ed2deeb33d7e5a68949d4e68baced"
+    },
+    {
+      "phase": "prior",
+      "path": "js/app.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55"
+    },
+    {
+      "phase": "prior",
+      "path": "js/content.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62"
+    },
+    {
+      "phase": "prior",
+      "path": "js/core.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306"
+    },
+    {
+      "phase": "prior",
+      "path": "js/gurdwaras.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2"
+    },
+    {
+      "phase": "prior",
+      "path": "js/places.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef"
+    },
+    {
+      "phase": "prior",
+      "path": "js/continuous-core.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d"
+    },
+    {
+      "phase": "prior",
+      "path": "js/japji-full-data.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808"
+    },
+    {
+      "phase": "prior",
+      "path": "js/japji-full.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f"
+    },
+    {
+      "phase": "prior",
+      "path": "js/japji-lessons.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078"
+    },
+    {
+      "phase": "prior",
+      "path": "js/line-meanings.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a"
+    },
+    {
+      "phase": "prior",
+      "path": "js/learning.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b"
+    },
+    {
+      "phase": "prior",
+      "path": "js/shared-learning.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b"
+    },
+    {
+      "phase": "prior",
+      "path": "js/pwa.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365"
+    },
+    {
+      "phase": "prior",
+      "path": "icons/icon-180.png",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7"
+    },
+    {
+      "phase": "prior",
+      "path": "icons/icon-192.png",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739"
+    },
+    {
+      "phase": "prior",
+      "path": "icons/icon-512.png",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c"
+    },
+    {
+      "phase": "prior",
+      "path": "manifest.webmanifest",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "edecb90ce48c3a848453342cb3448e812ef809aca97368ecf17f89303b925f14"
+    },
+    {
+      "phase": "prior",
+      "path": "sukhmani.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8"
+    },
+    {
+      "phase": "prior",
+      "path": "css/sukhmani.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f"
+    },
+    {
+      "phase": "prior",
+      "path": "js/sukhmani-data.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6"
+    },
+    {
+      "phase": "prior",
+      "path": "js/sukhmani-teaching.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6"
+    },
+    {
+      "phase": "prior",
+      "path": "js/sukhmani-learning.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4"
+    },
+    {
+      "phase": "prior",
+      "path": "js/sukhmani-reader.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/reader.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/reader.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/continuous-core.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/appearance.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/appearance.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/local-learning.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/offline.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/learning/learning-ui.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/learning/course.complete.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/library.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/jaap.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/savaiye.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/chaupai.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/anand.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/rehras.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b"
+    },
+    {
+      "phase": "prior",
+      "path": "nitnem/data/sohila.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673"
+    },
+    {
+      "phase": "prior",
+      "path": "js/source-integrity.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-mahalla9/data/library.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-mahalla9/data/salok-mahalla9.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-mahalla9/learning/course.complete.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79"
+    },
+    {
+      "phase": "prior",
+      "path": "vendor/opengranth/LICENSE",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2"
+    },
+    {
+      "phase": "prior",
+      "path": "vendor/opengranth/NOTICE",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-kabir/data/library.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-kabir/data/salok-kabir.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2"
+    },
+    {
+      "phase": "prior",
+      "path": "salok-kabir/learning/course.complete.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9"
+    },
+    {
+      "phase": "prior",
+      "path": "breathing.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "82313f11d91a9dcd44f8674d4484d1ecc7fe0014c0af5129fe9c347b06f5bb11"
+    },
+    {
+      "phase": "prior",
+      "path": "css/breathing.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f"
+    },
+    {
+      "phase": "prior",
+      "path": "js/breathing-core.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5"
+    },
+    {
+      "phase": "prior",
+      "path": "js/breathing.js",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "ae9e2c69f49e2b37a8d75bd671c28693e4804456f43ab5bed6d8145fbb3096d9"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "ae9e2c69f49e2b37a8d75bd671c28693e4804456f43ab5bed6d8145fbb3096d9"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/article.html",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "0a3397ea42e65bee35e53ff343b76f1c63ae4fe68af0d97c7b9269dac76d4a58"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/articles.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/app.mjs",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/core.mjs",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/source-contracts.mjs",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0"
+    },
+    {
+      "phase": "prior",
+      "path": "articles/catalog.json",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f"
+    },
+    {
+      "phase": "prior",
+      "path": "library/catalog.mjs",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "b21949fb8b7a9bfc3503a2be5be84aa7bcdd16bfb81ab587d98ce5924be167b4"
+    },
+    {
+      "phase": "prior",
+      "path": "library/core.mjs",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40"
+    },
+    {
+      "phase": "prior",
+      "path": "library/app.mjs",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "2c73e9578263bc1bdeb8161249c53673d6f4b4ba12a50b60767e4b34fd9d9e00"
+    },
+    {
+      "phase": "prior",
+      "path": "library/library.css",
+      "query": "?glp_release=0.20-reader-reliability-20261126-1",
+      "status": 200,
+      "sha256": "42f166b88440158c121cdbdb81f3fc41616bd84d699d5a4bb857b3a1af126978"
+    },
+    {
+      "phase": "corrupt",
+      "path": "sw.js",
+      "query": "",
+      "status": 200,
+      "sha256": "e46971361f67846da9f50cc933f085541d45879ab17c533bba7f8b582895b676"
+    },
+    {
+      "phase": "corrupt",
+      "path": "index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107"
+    },
+    {
+      "phase": "corrupt",
+      "path": "full-japji.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2"
+    },
+    {
+      "phase": "corrupt",
+      "path": "index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107"
+    },
+    {
+      "phase": "corrupt",
+      "path": "gurdwaras.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e"
+    },
+    {
+      "phase": "corrupt",
+      "path": "gurdwara.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f4896a2767a8b60dad2cecd34faa4bee8a235ba12ee15980741d63b0ba0fd25c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "simran.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "495468796b4c31a1d238b3016f6e4a6861f0096efb91a035d525f6367b60dbfa"
+    },
+    {
+      "phase": "corrupt",
+      "path": "pauri-2-lesson.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/app.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/japji-full.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "15ab6388144f65b31ab0a2d5d227c4bc4c060967f03da06e514138855053f13c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/home.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/arrivals.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/simran.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2eeff6264e09d2d6846d7a3a21cc6fb860453165a9ead5fa93f24f05dff4d67b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/home.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/arrivals.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/simran.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f0e55833f7a0df06a7d011fa1bf6162d102ed2deeb33d7e5a68949d4e68baced"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/app.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/content.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/gurdwaras.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/places.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/continuous-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/japji-full-data.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/japji-full.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/japji-lessons.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/line-meanings.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/shared-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/pwa.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365"
+    },
+    {
+      "phase": "corrupt",
+      "path": "icons/icon-180.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7"
+    },
+    {
+      "phase": "corrupt",
+      "path": "icons/icon-192.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739"
+    },
+    {
+      "phase": "corrupt",
+      "path": "icons/icon-512.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "manifest.webmanifest",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "edecb90ce48c3a848453342cb3448e812ef809aca97368ecf17f89303b925f14"
+    },
+    {
+      "phase": "corrupt",
+      "path": "sukhmani.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/sukhmani.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/sukhmani-data.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/sukhmani-teaching.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/sukhmani-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/sukhmani-reader.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/reader.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/reader.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/continuous-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/appearance.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/appearance.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/local-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/offline.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/learning/learning-ui.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/jaap.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/savaiye.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/chaupai.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/anand.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/rehras.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "nitnem/data/sohila.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/source-integrity.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-mahalla9/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-mahalla9/data/salok-mahalla9.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-mahalla9/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79"
+    },
+    {
+      "phase": "corrupt",
+      "path": "vendor/opengranth/LICENSE",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2"
+    },
+    {
+      "phase": "corrupt",
+      "path": "vendor/opengranth/NOTICE",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-kabir/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-kabir/data/salok-kabir.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-kabir/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9"
+    },
+    {
+      "phase": "corrupt",
+      "path": "breathing.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "3eb16e943ebf7b265bdd68843f310e0f5bbc1150c65291006fec2e81b401aca2"
+    },
+    {
+      "phase": "corrupt",
+      "path": "css/breathing.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/breathing-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5"
+    },
+    {
+      "phase": "corrupt",
+      "path": "js/breathing.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/article.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c52ef9545250d1f48d1f0cc15881341cd10c2b1932bcd59484e971f6663d2db6"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/articles.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/app.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/core.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/source-contracts.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/catalog.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/catalog.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/core.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/app.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/library.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cb752afed536a8c205ecc4c3992fffcdb0df2368261d42222ab25a43d1e0b30b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "articles/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1"
+    },
+    {
+      "phase": "corrupt",
+      "path": "knowledge/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "knowledge/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "knowledge/style.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2eb99db36fd1b5103851b91cee54208e300555eacea38de7cc3158721f8b96e3"
+    },
+    {
+      "phase": "corrupt",
+      "path": "knowledge/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e480ce55ff4521e93435d3351043c95b5ae7a9e4776312c9b7f00a73f87de833"
+    },
+    {
+      "phase": "corrupt",
+      "path": "knowledge/scripture.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b"
+    },
+    {
+      "phase": "corrupt",
+      "path": "knowledge/pilot.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556"
+    },
+    {
+      "phase": "corrupt",
+      "path": "hukamnama/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138"
+    },
+    {
+      "phase": "corrupt",
+      "path": "hukamnama/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138"
+    },
+    {
+      "phase": "corrupt",
+      "path": "hukamnama/style.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c1eb0c1d3b8b25e1dfc1cfbf41b33fb48e9d860810fa54a1988606890da3dab4"
+    },
+    {
+      "phase": "corrupt",
+      "path": "hukamnama/reader.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-farid/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-farid/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-farid/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "salok-farid/data/salok-farid.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/complete-passages.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "da4c8240e181de975892ddaac9f9f20ef2426f75eebad5d01e6b440601cba964"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/passage-contracts.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/passage-ui.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900"
+    },
+    {
+      "phase": "corrupt",
+      "path": "collections/dasam/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61"
+    },
+    {
+      "phase": "corrupt",
+      "path": "collections/dasam/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/passages.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d"
+    },
+    {
+      "phase": "corrupt",
+      "path": "collections/collections.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e0235b8eea260b0adb85a8676188c34b71db9842cc75f8fd4edeae1b4d163b09"
+    },
+    {
+      "phase": "corrupt",
+      "path": "psychology/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    },
+    {
+      "phase": "corrupt",
+      "path": "psychology/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/search.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c"
+    },
+    {
+      "phase": "corrupt",
+      "path": "library/kinds.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297"
+    },
+    {
+      "phase": "missing",
+      "path": "sw.js",
+      "query": "",
+      "status": 200,
+      "sha256": "e46971361f67846da9f50cc933f085541d45879ab17c533bba7f8b582895b676"
+    },
+    {
+      "phase": "missing",
+      "path": "index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107"
+    },
+    {
+      "phase": "missing",
+      "path": "full-japji.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2"
+    },
+    {
+      "phase": "missing",
+      "path": "index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107"
+    },
+    {
+      "phase": "missing",
+      "path": "gurdwaras.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e"
+    },
+    {
+      "phase": "missing",
+      "path": "gurdwara.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f4896a2767a8b60dad2cecd34faa4bee8a235ba12ee15980741d63b0ba0fd25c"
+    },
+    {
+      "phase": "missing",
+      "path": "simran.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "495468796b4c31a1d238b3016f6e4a6861f0096efb91a035d525f6367b60dbfa"
+    },
+    {
+      "phase": "missing",
+      "path": "pauri-2-lesson.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea"
+    },
+    {
+      "phase": "missing",
+      "path": "css/app.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434"
+    },
+    {
+      "phase": "missing",
+      "path": "css/japji-full.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "15ab6388144f65b31ab0a2d5d227c4bc4c060967f03da06e514138855053f13c"
+    },
+    {
+      "phase": "missing",
+      "path": "css/home.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e"
+    },
+    {
+      "phase": "missing",
+      "path": "css/arrivals.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801"
+    },
+    {
+      "phase": "missing",
+      "path": "css/simran.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2eeff6264e09d2d6846d7a3a21cc6fb860453165a9ead5fa93f24f05dff4d67b"
+    },
+    {
+      "phase": "missing",
+      "path": "js/home.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4"
+    },
+    {
+      "phase": "missing",
+      "path": "js/arrivals.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118"
+    },
+    {
+      "phase": "missing",
+      "path": "js/simran.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f0e55833f7a0df06a7d011fa1bf6162d102ed2deeb33d7e5a68949d4e68baced"
+    },
+    {
+      "phase": "missing",
+      "path": "js/app.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55"
+    },
+    {
+      "phase": "missing",
+      "path": "js/content.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62"
+    },
+    {
+      "phase": "missing",
+      "path": "js/core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306"
+    },
+    {
+      "phase": "missing",
+      "path": "js/gurdwaras.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2"
+    },
+    {
+      "phase": "missing",
+      "path": "js/places.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef"
+    },
+    {
+      "phase": "missing",
+      "path": "js/continuous-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d"
+    },
+    {
+      "phase": "missing",
+      "path": "js/japji-full-data.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808"
+    },
+    {
+      "phase": "missing",
+      "path": "js/japji-full.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f"
+    },
+    {
+      "phase": "missing",
+      "path": "js/japji-lessons.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078"
+    },
+    {
+      "phase": "missing",
+      "path": "js/line-meanings.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a"
+    },
+    {
+      "phase": "missing",
+      "path": "js/learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b"
+    },
+    {
+      "phase": "missing",
+      "path": "js/shared-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b"
+    },
+    {
+      "phase": "missing",
+      "path": "js/pwa.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365"
+    },
+    {
+      "phase": "missing",
+      "path": "icons/icon-180.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7"
+    },
+    {
+      "phase": "missing",
+      "path": "icons/icon-192.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739"
+    },
+    {
+      "phase": "missing",
+      "path": "icons/icon-512.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c"
+    },
+    {
+      "phase": "missing",
+      "path": "manifest.webmanifest",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "edecb90ce48c3a848453342cb3448e812ef809aca97368ecf17f89303b925f14"
+    },
+    {
+      "phase": "missing",
+      "path": "sukhmani.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8"
+    },
+    {
+      "phase": "missing",
+      "path": "css/sukhmani.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f"
+    },
+    {
+      "phase": "missing",
+      "path": "js/sukhmani-data.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6"
+    },
+    {
+      "phase": "missing",
+      "path": "js/sukhmani-teaching.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6"
+    },
+    {
+      "phase": "missing",
+      "path": "js/sukhmani-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4"
+    },
+    {
+      "phase": "missing",
+      "path": "js/sukhmani-reader.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/reader.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/reader.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/continuous-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/appearance.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/appearance.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/local-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/offline.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/learning/learning-ui.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/jaap.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/savaiye.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/chaupai.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/anand.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/rehras.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b"
+    },
+    {
+      "phase": "missing",
+      "path": "nitnem/data/sohila.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673"
+    },
+    {
+      "phase": "missing",
+      "path": "js/source-integrity.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-mahalla9/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-mahalla9/data/salok-mahalla9.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-mahalla9/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79"
+    },
+    {
+      "phase": "missing",
+      "path": "vendor/opengranth/LICENSE",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2"
+    },
+    {
+      "phase": "missing",
+      "path": "vendor/opengranth/NOTICE",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-kabir/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-kabir/data/salok-kabir.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-kabir/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9"
+    },
+    {
+      "phase": "missing",
+      "path": "breathing.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "3eb16e943ebf7b265bdd68843f310e0f5bbc1150c65291006fec2e81b401aca2"
+    },
+    {
+      "phase": "missing",
+      "path": "css/breathing.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f"
+    },
+    {
+      "phase": "missing",
+      "path": "js/breathing-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5"
+    },
+    {
+      "phase": "missing",
+      "path": "js/breathing.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/article.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c52ef9545250d1f48d1f0cc15881341cd10c2b1932bcd59484e971f6663d2db6"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/articles.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/app.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/core.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/source-contracts.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/catalog.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f"
+    },
+    {
+      "phase": "missing",
+      "path": "library/catalog.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67"
+    },
+    {
+      "phase": "missing",
+      "path": "library/core.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40"
+    },
+    {
+      "phase": "missing",
+      "path": "library/app.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe"
+    },
+    {
+      "phase": "missing",
+      "path": "library/library.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5"
+    },
+    {
+      "phase": "missing",
+      "path": "library/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cb752afed536a8c205ecc4c3992fffcdb0df2368261d42222ab25a43d1e0b30b"
+    },
+    {
+      "phase": "missing",
+      "path": "articles/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1"
+    },
+    {
+      "phase": "missing",
+      "path": "knowledge/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    },
+    {
+      "phase": "missing",
+      "path": "knowledge/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    },
+    {
+      "phase": "missing",
+      "path": "knowledge/style.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2eb99db36fd1b5103851b91cee54208e300555eacea38de7cc3158721f8b96e3"
+    },
+    {
+      "phase": "missing",
+      "path": "knowledge/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 404
+    },
+    {
+      "phase": "missing",
+      "path": "knowledge/scripture.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b"
+    },
+    {
+      "phase": "missing",
+      "path": "knowledge/pilot.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556"
+    },
+    {
+      "phase": "missing",
+      "path": "hukamnama/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138"
+    },
+    {
+      "phase": "missing",
+      "path": "hukamnama/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138"
+    },
+    {
+      "phase": "missing",
+      "path": "hukamnama/style.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c1eb0c1d3b8b25e1dfc1cfbf41b33fb48e9d860810fa54a1988606890da3dab4"
+    },
+    {
+      "phase": "missing",
+      "path": "hukamnama/reader.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-farid/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-farid/data/salok-farid.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-farid/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0"
+    },
+    {
+      "phase": "missing",
+      "path": "salok-farid/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c"
+    },
+    {
+      "phase": "missing",
+      "path": "library/passage-ui.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900"
+    },
+    {
+      "phase": "missing",
+      "path": "library/complete-passages.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "da4c8240e181de975892ddaac9f9f20ef2426f75eebad5d01e6b440601cba964"
+    },
+    {
+      "phase": "missing",
+      "path": "library/passage-contracts.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd"
+    },
+    {
+      "phase": "missing",
+      "path": "library/passages.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d"
+    },
+    {
+      "phase": "missing",
+      "path": "collections/dasam/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61"
+    },
+    {
+      "phase": "missing",
+      "path": "collections/dasam/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61"
+    },
+    {
+      "phase": "missing",
+      "path": "library/search.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c"
+    },
+    {
+      "phase": "missing",
+      "path": "library/kinds.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297"
+    },
+    {
+      "phase": "missing",
+      "path": "psychology/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    },
+    {
+      "phase": "missing",
+      "path": "collections/collections.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e0235b8eea260b0adb85a8676188c34b71db9842cc75f8fd4edeae1b4d163b09"
+    },
+    {
+      "phase": "missing",
+      "path": "psychology/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    },
+    {
+      "phase": "candidate",
+      "path": "sw.js",
+      "query": "",
+      "status": 200,
+      "sha256": "e46971361f67846da9f50cc933f085541d45879ab17c533bba7f8b582895b676"
+    },
+    {
+      "phase": "candidate",
+      "path": "index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107"
+    },
+    {
+      "phase": "candidate",
+      "path": "full-japji.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2"
+    },
+    {
+      "phase": "candidate",
+      "path": "index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107"
+    },
+    {
+      "phase": "candidate",
+      "path": "gurdwaras.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e"
+    },
+    {
+      "phase": "candidate",
+      "path": "gurdwara.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f4896a2767a8b60dad2cecd34faa4bee8a235ba12ee15980741d63b0ba0fd25c"
+    },
+    {
+      "phase": "candidate",
+      "path": "simran.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "495468796b4c31a1d238b3016f6e4a6861f0096efb91a035d525f6367b60dbfa"
+    },
+    {
+      "phase": "candidate",
+      "path": "pauri-2-lesson.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/app.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/japji-full.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "15ab6388144f65b31ab0a2d5d227c4bc4c060967f03da06e514138855053f13c"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/home.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/arrivals.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/simran.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2eeff6264e09d2d6846d7a3a21cc6fb860453165a9ead5fa93f24f05dff4d67b"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/home.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/arrivals.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/simran.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f0e55833f7a0df06a7d011fa1bf6162d102ed2deeb33d7e5a68949d4e68baced"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/app.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/content.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/gurdwaras.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/places.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/continuous-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/japji-full-data.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/japji-full.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/japji-lessons.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/line-meanings.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/shared-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/pwa.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365"
+    },
+    {
+      "phase": "candidate",
+      "path": "icons/icon-180.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7"
+    },
+    {
+      "phase": "candidate",
+      "path": "icons/icon-192.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739"
+    },
+    {
+      "phase": "candidate",
+      "path": "icons/icon-512.png",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c"
+    },
+    {
+      "phase": "candidate",
+      "path": "manifest.webmanifest",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "edecb90ce48c3a848453342cb3448e812ef809aca97368ecf17f89303b925f14"
+    },
+    {
+      "phase": "candidate",
+      "path": "sukhmani.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/sukhmani.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/sukhmani-data.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/sukhmani-teaching.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/sukhmani-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/sukhmani-reader.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/reader.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/reader.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/continuous-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/appearance.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/appearance.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/local-learning.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/offline.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/learning/learning-ui.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/jaap.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/savaiye.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/chaupai.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/anand.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/rehras.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b"
+    },
+    {
+      "phase": "candidate",
+      "path": "nitnem/data/sohila.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/source-integrity.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-mahalla9/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-mahalla9/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-mahalla9/data/salok-mahalla9.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-mahalla9/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79"
+    },
+    {
+      "phase": "candidate",
+      "path": "vendor/opengranth/LICENSE",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2"
+    },
+    {
+      "phase": "candidate",
+      "path": "vendor/opengranth/NOTICE",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-kabir/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-kabir/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-kabir/data/salok-kabir.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-kabir/learning/course.complete.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9"
+    },
+    {
+      "phase": "candidate",
+      "path": "breathing.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "3eb16e943ebf7b265bdd68843f310e0f5bbc1150c65291006fec2e81b401aca2"
+    },
+    {
+      "phase": "candidate",
+      "path": "css/breathing.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/breathing-core.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5"
+    },
+    {
+      "phase": "candidate",
+      "path": "js/breathing.js",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/article.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c52ef9545250d1f48d1f0cc15881341cd10c2b1932bcd59484e971f6663d2db6"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/articles.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/app.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/core.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/source-contracts.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/catalog.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/catalog.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/core.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/app.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/library.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cb752afed536a8c205ecc4c3992fffcdb0df2368261d42222ab25a43d1e0b30b"
+    },
+    {
+      "phase": "candidate",
+      "path": "articles/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1"
+    },
+    {
+      "phase": "candidate",
+      "path": "knowledge/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    },
+    {
+      "phase": "candidate",
+      "path": "knowledge/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b"
+    },
+    {
+      "phase": "candidate",
+      "path": "knowledge/style.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2eb99db36fd1b5103851b91cee54208e300555eacea38de7cc3158721f8b96e3"
+    },
+    {
+      "phase": "candidate",
+      "path": "knowledge/app.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "190127810890d9abe264a9b511d139edf92933673b6b771de09e2bc45ed158f3"
+    },
+    {
+      "phase": "candidate",
+      "path": "knowledge/scripture.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b"
+    },
+    {
+      "phase": "candidate",
+      "path": "knowledge/pilot.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556"
+    },
+    {
+      "phase": "candidate",
+      "path": "hukamnama/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138"
+    },
+    {
+      "phase": "candidate",
+      "path": "hukamnama/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138"
+    },
+    {
+      "phase": "candidate",
+      "path": "hukamnama/style.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c1eb0c1d3b8b25e1dfc1cfbf41b33fb48e9d860810fa54a1988606890da3dab4"
+    },
+    {
+      "phase": "candidate",
+      "path": "hukamnama/reader.bundle.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-farid/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-farid/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-farid/data/library.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c"
+    },
+    {
+      "phase": "candidate",
+      "path": "salok-farid/data/salok-farid.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/complete-passages.json",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "da4c8240e181de975892ddaac9f9f20ef2426f75eebad5d01e6b440601cba964"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/passage-contracts.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/passages.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/passage-ui.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/search.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c"
+    },
+    {
+      "phase": "candidate",
+      "path": "library/kinds.mjs",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297"
+    },
+    {
+      "phase": "candidate",
+      "path": "collections/dasam/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61"
+    },
+    {
+      "phase": "candidate",
+      "path": "collections/dasam/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61"
+    },
+    {
+      "phase": "candidate",
+      "path": "collections/collections.css",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "e0235b8eea260b0adb85a8676188c34b71db9842cc75f8fd4edeae1b4d163b09"
+    },
+    {
+      "phase": "candidate",
+      "path": "psychology/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    },
+    {
+      "phase": "candidate",
+      "path": "psychology/index.html",
+      "query": "?glp_release=0.27-trusted-library-20261127-1",
+      "status": 200,
+      "sha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    }
+  ],
+  "limitations": [
+    "Actual desktop Chromium service workers and Cache Storage on localhost; offline is browser network emulation.",
+    "Fresh nonpersistent browser context and synthetic notes only. No real iPhone, Safari, iPad, VoiceOver or physical airplane-mode claim.",
+    "Tests missing and altered bundle installation plus explicit activation of the valid candidate; not storage exhaustion or every possible failed update.",
+    "A service-worker hash manifest is relative to trusted worker bytes. It does not authenticate rewritten HTML or a compromised worker."
+  ],
+  "prior": {
+    "version": "0.20-reader-reliability-20261126-1",
+    "expected": {
+      "./": "6c721db523bedb328dcdbd0246da9c0a711f13d1361c76395323536b7c160c8a",
+      "./full-japji.html": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2",
+      "./index.html": "6c721db523bedb328dcdbd0246da9c0a711f13d1361c76395323536b7c160c8a",
+      "./gurdwaras.html": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e",
+      "./gurdwara.html": "ad399c868cfe51397c0f6f62f6df58aa9f405894c5734273ee61308fb6598fa7",
+      "./simran.html": "b89b3dda9327f9ca065ca732e0821605ba76b93175236c7b480021f096c22c26",
+      "./pauri-2-lesson.html": "3fbf9fb59448896e6088b01dc1fdea7e12bb9eb6d69178d9a1c659835db57875",
+      "./css/app.css": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434",
+      "./css/japji-full.css": "15ab6388144f65b31ab0a2d5d227c4bc4c060967f03da06e514138855053f13c",
+      "./css/home.css": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e",
+      "./css/arrivals.css": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801",
+      "./css/simran.css": "2eeff6264e09d2d6846d7a3a21cc6fb860453165a9ead5fa93f24f05dff4d67b",
+      "./js/home.js": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4",
+      "./js/arrivals.js": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118",
+      "./js/simran.js": "f0e55833f7a0df06a7d011fa1bf6162d102ed2deeb33d7e5a68949d4e68baced",
+      "./js/app.js": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55",
+      "./js/content.js": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62",
+      "./js/core.js": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306",
+      "./js/gurdwaras.js": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2",
+      "./js/places.js": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef",
+      "./js/continuous-core.js": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d",
+      "./js/japji-full-data.js": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "./js/japji-full.js": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f",
+      "./js/japji-lessons.js": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+      "./js/line-meanings.js": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+      "./js/learning.js": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b",
+      "./js/shared-learning.js": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "./js/pwa.js": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+      "./icons/icon-180.png": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7",
+      "./icons/icon-192.png": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739",
+      "./icons/icon-512.png": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c",
+      "./manifest.webmanifest": "edecb90ce48c3a848453342cb3448e812ef809aca97368ecf17f89303b925f14",
+      "./sukhmani.html": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8",
+      "./css/sukhmani.css": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f",
+      "./js/sukhmani-data.js": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+      "./js/sukhmani-teaching.js": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6",
+      "./js/sukhmani-learning.js": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4",
+      "./js/sukhmani-reader.js": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+      "./nitnem/": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c",
+      "./nitnem/index.html": "4fe2a68409bb839e83764127a976c0697d62bb385e6cc917bde30115d15c6a5c",
+      "./nitnem/reader.js": "babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f",
+      "./nitnem/reader.css": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57",
+      "./nitnem/continuous-core.js": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+      "./nitnem/appearance.js": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc",
+      "./nitnem/appearance.css": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377",
+      "./nitnem/local-learning.js": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+      "./nitnem/offline.js": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690",
+      "./nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+      "./nitnem/learning/course.complete.json": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c",
+      "./nitnem/data/library.json": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75",
+      "./nitnem/data/jaap.json": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+      "./nitnem/data/savaiye.json": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+      "./nitnem/data/chaupai.json": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+      "./nitnem/data/anand.json": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+      "./nitnem/data/rehras.json": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+      "./nitnem/data/sohila.json": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+      "./js/source-integrity.js": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757",
+      "./salok-mahalla9/": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+      "./salok-mahalla9/index.html": "5e7850856bce88e6163ad1ff99a7f1907a1a5286b4df61de255b9ed3027ef5e5",
+      "./salok-mahalla9/data/library.json": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e",
+      "./salok-mahalla9/data/salok-mahalla9.json": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
+      "./salok-mahalla9/learning/course.complete.json": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79",
+      "./vendor/opengranth/LICENSE": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2",
+      "./vendor/opengranth/NOTICE": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf",
+      "./salok-kabir/": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+      "./salok-kabir/index.html": "d8ec8ecf028c2621f24b1b3272e1f9a6fcee074d9fdc7c2cd7b18dd3fff6ccf0",
+      "./salok-kabir/data/library.json": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
+      "./salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+      "./salok-kabir/learning/course.complete.json": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
+      "./breathing.html": "82313f11d91a9dcd44f8674d4484d1ecc7fe0014c0af5129fe9c347b06f5bb11",
+      "./css/breathing.css": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f",
+      "./js/breathing-core.js": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5",
+      "./js/breathing.js": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38",
+      "./articles/": "ae9e2c69f49e2b37a8d75bd671c28693e4804456f43ab5bed6d8145fbb3096d9",
+      "./articles/index.html": "ae9e2c69f49e2b37a8d75bd671c28693e4804456f43ab5bed6d8145fbb3096d9",
+      "./articles/article.html": "0a3397ea42e65bee35e53ff343b76f1c63ae4fe68af0d97c7b9269dac76d4a58",
+      "./articles/articles.css": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7",
+      "./articles/app.mjs": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8",
+      "./articles/core.mjs": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124",
+      "./articles/source-contracts.mjs": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0",
+      "./articles/catalog.json": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f",
+      "./library/catalog.mjs": "b21949fb8b7a9bfc3503a2be5be84aa7bcdd16bfb81ab587d98ce5924be167b4",
+      "./library/core.mjs": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40",
+      "./library/app.mjs": "2c73e9578263bc1bdeb8161249c53673d6f4b4ba12a50b60767e4b34fd9d9e00",
+      "./library/library.css": "42f166b88440158c121cdbdb81f3fc41616bd84d699d5a4bb857b3a1af126978"
+    },
+    "workerSha256": "b684a3fe401a22075ff3cb7f17411bfbf9c6e932c62f3627b7cce6a246adc30a"
+  },
+  "candidate": {
+    "version": "0.27-trusted-library-20261127-1",
+    "expected": {
+      "./": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107",
+      "./full-japji.html": "38606bd101be77b9586bbd9e42f0dfac0abac8694b1c864ef56b4342bff87bb2",
+      "./index.html": "351b291508ff0adbe8055e8bf290ec0f13873b90496e7bdf648bb7a187cc8107",
+      "./gurdwaras.html": "5fa302ee2564cbe7189f7cea594d6634cadd939dac8071c08844eadfb826159e",
+      "./gurdwara.html": "f4896a2767a8b60dad2cecd34faa4bee8a235ba12ee15980741d63b0ba0fd25c",
+      "./simran.html": "495468796b4c31a1d238b3016f6e4a6861f0096efb91a035d525f6367b60dbfa",
+      "./pauri-2-lesson.html": "fa66b2481a80646f2a01be1648f4bc3d14b1902c8b36257b2d092934d4254fea",
+      "./css/app.css": "b17abbb20661a9880792250b952008c84a03b2cd31cb3451b84685d67808d434",
+      "./css/japji-full.css": "15ab6388144f65b31ab0a2d5d227c4bc4c060967f03da06e514138855053f13c",
+      "./css/home.css": "d398a0799198d24fdd29e87d6a9e0fca881790874db4753adf3333aec0dca93e",
+      "./css/arrivals.css": "900579af694f620d544ed7375d5b3fa17ef7f010751f03451eb374f4b96a9801",
+      "./css/simran.css": "2eeff6264e09d2d6846d7a3a21cc6fb860453165a9ead5fa93f24f05dff4d67b",
+      "./js/home.js": "30e2072bbefa48b407c14582d82a21dec1281a375275ad4d0b9796dd97125cc4",
+      "./js/arrivals.js": "e820a555cd4fe98027938dc1a63439c8de595509f0b648fe7b01a1dd7e7a0118",
+      "./js/simran.js": "f0e55833f7a0df06a7d011fa1bf6162d102ed2deeb33d7e5a68949d4e68baced",
+      "./js/app.js": "fe18e2b5846dd329a0ab2d49fb3f30f7557bcc1ba9c676e70d649d1409aeae55",
+      "./js/content.js": "83d6541b9dde3c06d36a45fb4d4546e3d71a9fedda43108b49e94f2c829b5d62",
+      "./js/core.js": "7f010691a2279387694c5235eb2744ae7b2a08d3569cedd754b5e9a6c09e0306",
+      "./js/gurdwaras.js": "7540b5d637d65307a2d7112e5657ab6ffe06a07addaeddf5441e70f76f075ad2",
+      "./js/places.js": "fb3a5e82851455e84c6666178740002df99a2c4f8e18f74ceec8f054511520ef",
+      "./js/continuous-core.js": "4b67e25ae2ecda6754cd9b768d60a49b5d6f421f10ed12ebc90313c4ddd2576d",
+      "./js/japji-full-data.js": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "./js/japji-full.js": "1abf26b1aa39df4024605624a69aeb9a65021978d5e512b4fbe84562ba33e20f",
+      "./js/japji-lessons.js": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+      "./js/line-meanings.js": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+      "./js/learning.js": "ad40c7f08683e1955536266b692373ce454ec4638559ccd53a3af7299387e61b",
+      "./js/shared-learning.js": "8a35f16992769174163c9a3b0b6dacc767dac4cdf33e2f3e9e4c4d9f57eebe2b",
+      "./js/pwa.js": "7d940577bd74afc66b860ca7f7f13593c190c746a8e6a82f3d4edf00e10b4365",
+      "./icons/icon-180.png": "98ec275ff591dee5d3f9c62993e32d07121c0a5ba24c09a5220e37fe21f671a7",
+      "./icons/icon-192.png": "25f35d2932f58f6cb3cdf224b0d8cffee122a71452f3b00eb91b9b451054b739",
+      "./icons/icon-512.png": "6177c056e2e0fc5e6a1b3aafff4f1f8b7882efcfe6a9f3ed49a5ffdd37bfda0c",
+      "./manifest.webmanifest": "edecb90ce48c3a848453342cb3448e812ef809aca97368ecf17f89303b925f14",
+      "./sukhmani.html": "cda9aeac46232f3c6a72ac065eb9dafcb7480ebb71fb04a96cc7c0a6c10e65c8",
+      "./css/sukhmani.css": "3c3e81f9592d215809e52458f708314bd5624a0c1bd3eb13c22f2b8ab2c9cf3f",
+      "./js/sukhmani-data.js": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+      "./js/sukhmani-teaching.js": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6",
+      "./js/sukhmani-learning.js": "e781cf4decf30a7200def21c1a82c0031447d3cbc3d1662eb8971592c217d1a4",
+      "./js/sukhmani-reader.js": "2deaff782567dd7d57bd2d19d37fc47c0242c2faecdea5c0bd15fc4466f04fe9",
+      "./nitnem/": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e",
+      "./nitnem/index.html": "1bfc1fe6c3127ed659b88a7032b94f435405d713ad11ed9e3e0ae5fd0d5ad30e",
+      "./nitnem/reader.js": "9cbf4b32db3f3b107ca78347ded08b2fd20b1386cafb5deae6663419f6ce5301",
+      "./nitnem/reader.css": "73977e4d6e3cd78286807a0af8d8bc58e7008daf96e8b84f364811a6a5076d57",
+      "./nitnem/continuous-core.js": "9b48fa24327076bd35693dfdd5144cbbf004de488a9a6b962f3fa61d6174d78c",
+      "./nitnem/appearance.js": "38cbe64a0f2e2302ea48f74085ac437d01096d4fa89729415fb501b6f8ceb5cc",
+      "./nitnem/appearance.css": "01cef2268ca54a5ada570878f96a640090364bc1b82fda22a74e16bba05e7377",
+      "./nitnem/local-learning.js": "8002c72c164737265019795b32aa4aff4065dda86f0cce7132983657de2f4e29",
+      "./nitnem/offline.js": "0eb4401ec4c22b5a0490450f2760be792236156a7dae9d99c946ecbbc6e5f690",
+      "./nitnem/learning/learning-ui.js": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+      "./nitnem/learning/course.complete.json": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c",
+      "./nitnem/data/library.json": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75",
+      "./nitnem/data/jaap.json": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+      "./nitnem/data/savaiye.json": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+      "./nitnem/data/chaupai.json": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+      "./nitnem/data/anand.json": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+      "./nitnem/data/rehras.json": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+      "./nitnem/data/sohila.json": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+      "./js/source-integrity.js": "b23448db043545a14056cf5fbf226f0b8a65f749feddb61859b5fe5bcded0757",
+      "./salok-mahalla9/": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0",
+      "./salok-mahalla9/index.html": "0f552910175944ef21665fe2d3eee53af86b5ba7d9c018ba1b0aeeedaf12beb0",
+      "./salok-mahalla9/data/library.json": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e",
+      "./salok-mahalla9/data/salok-mahalla9.json": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
+      "./salok-mahalla9/learning/course.complete.json": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79",
+      "./vendor/opengranth/LICENSE": "7c8ad948da650fdec6bca1dc769a1a80f8cdf527f9248e1df56aed46e75c3dc2",
+      "./vendor/opengranth/NOTICE": "7b2776c739ed3baa5e424597ad2b304d729dd2dfb87b657deffe3ef06e8155bf",
+      "./salok-kabir/": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d",
+      "./salok-kabir/index.html": "6f6e65021a4fb78706e9154e2b41072921ce0eb431fc670e73820635abbf074d",
+      "./salok-kabir/data/library.json": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
+      "./salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+      "./salok-kabir/learning/course.complete.json": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
+      "./breathing.html": "3eb16e943ebf7b265bdd68843f310e0f5bbc1150c65291006fec2e81b401aca2",
+      "./css/breathing.css": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f",
+      "./js/breathing-core.js": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5",
+      "./js/breathing.js": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38",
+      "./articles/": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5",
+      "./articles/index.html": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5",
+      "./articles/article.html": "c52ef9545250d1f48d1f0cc15881341cd10c2b1932bcd59484e971f6663d2db6",
+      "./articles/articles.css": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7",
+      "./articles/app.mjs": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8",
+      "./articles/core.mjs": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124",
+      "./articles/source-contracts.mjs": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0",
+      "./articles/catalog.json": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f",
+      "./library/catalog.mjs": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67",
+      "./library/core.mjs": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40",
+      "./library/app.mjs": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe",
+      "./library/library.css": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5",
+      "./library/app.bundle.mjs": "cb752afed536a8c205ecc4c3992fffcdb0df2368261d42222ab25a43d1e0b30b",
+      "./articles/app.bundle.mjs": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1",
+      "./knowledge/": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b",
+      "./knowledge/index.html": "45ffa7579391434cab80661f5ad824aabccb98041a1148b13bf98537d569135b",
+      "./knowledge/style.css": "2eb99db36fd1b5103851b91cee54208e300555eacea38de7cc3158721f8b96e3",
+      "./knowledge/app.bundle.mjs": "190127810890d9abe264a9b511d139edf92933673b6b771de09e2bc45ed158f3",
+      "./knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+      "./knowledge/pilot.json": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556",
+      "./hukamnama/": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138",
+      "./hukamnama/index.html": "e5043bf222c647fb9b7e01d5d86e940efbb690199e913df94de46d653e25a138",
+      "./hukamnama/style.css": "c1eb0c1d3b8b25e1dfc1cfbf41b33fb48e9d860810fa54a1988606890da3dab4",
+      "./hukamnama/reader.bundle.mjs": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+      "./salok-farid/": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0",
+      "./salok-farid/index.html": "56444316dab86b271acf3d6487d114a5aa29dd868f4c13b089e2c19efc98adc0",
+      "./salok-farid/data/library.json": "f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c",
+      "./salok-farid/data/salok-farid.json": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643",
+      "./library/complete-passages.json": "da4c8240e181de975892ddaac9f9f20ef2426f75eebad5d01e6b440601cba964",
+      "./library/passage-contracts.mjs": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd",
+      "./library/passages.mjs": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d",
+      "./library/passage-ui.mjs": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900",
+      "./library/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+      "./library/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+      "./collections/dasam/": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61",
+      "./collections/dasam/index.html": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61",
+      "./collections/collections.css": "e0235b8eea260b0adb85a8676188c34b71db9842cc75f8fd4edeae1b4d163b09",
+      "./psychology/": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8",
+      "./psychology/index.html": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8"
+    },
+    "workerSha256": "e46971361f67846da9f50cc933f085541d45879ab17c533bba7f8b582895b676"
+  },
+  "testSha256": "735391d79bd538719d678841f90959bd565b6828fcba8f180be6b5e66488598c",
+  "environment": {
+    "engine": "Desktop Chromium",
+    "browserVersion": "158.0.8127.37",
+    "platform": "darwin",
+    "node": "v22.15.0"
+  },
+  "finishedAtUtc": "2026-11-27T21:06:35.404Z",
+  "status": "PASS"
+}

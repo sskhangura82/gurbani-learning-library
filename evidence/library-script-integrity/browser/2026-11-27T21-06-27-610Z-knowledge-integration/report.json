@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "started": "2026-11-27T21:06:27.611Z",
+  "base": "f720099b6181919d597e249f9ad42b9f00cabe68",
+  "criteria": "2026-11-27T010603Z-criteria.md",
+  "checks": [
+    {
+      "name": "Search/navigation integration retains exact lines, separate kinds, Back/Forward, reload and deep-link refusal",
+      "status": "PASS"
+    },
+    {
+      "name": "Public psychology opens with its reference; religious study search and old deep links are unavailable",
+      "status": "PASS"
+    },
+    {
+      "name": "A renewed pack pin cannot admit a study explicitly classified as comparative religion",
+      "status": "PASS"
+    },
+    {
+      "name": "Editorial author aliases stay labelled while real source hits select exact occurrences",
+      "status": "PASS"
+    },
+    {
+      "name": "Corrupt source fails before any teaching request and leaves no scripture or editorial content",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned attribution mutant refuses the combined UI: prefixed heading",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned attribution mutant refuses the combined UI: source line in word label",
+      "status": "PASS"
+    },
+    {
+      "name": "Re-pinned attribution mutant refuses the combined UI: source line in passage alias",
+      "status": "PASS"
+    },
+    {
+      "name": "Accepted lexical gap remains editorial through result clicks, Back, reload and deep links",
+      "status": "PASS"
+    },
+    {
+      "name": "A permitted editorial passage alias opens unmodified source with explicit editorial match reason",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "limits": [
+    "Builder interaction verification in fresh synthetic desktop Chrome contexts at 390px.",
+    "Not Claude independent review, physical iPhone/Safari/VoiceOver, qualified review or release approval."
+  ],
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "darwin",
+    "browser": "158.0.8127.37",
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "files": {
+    "knowledge/app.mjs": "f96665029c95b391869d2c21f13cf22e8286573d09aa35c2e527e247627dba1c",
+    "knowledge/core.mjs": "a9133a7e438314406076605e374d58cd0f60d8c310abd3799644a67553812c07",
+    "knowledge/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+    "knowledge/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "knowledge/pilot.json": "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556",
+    "knowledge/registry.mjs": "1a3920965d00fbe3a7911a6fd2d688a96e41c2007985ac08f3e4abe747dd7170",
+    "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6"
+  },
+  "finished": "2026-11-27T21:06:30.540Z"
+}
