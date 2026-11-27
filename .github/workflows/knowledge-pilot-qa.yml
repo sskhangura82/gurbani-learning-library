@@ -21,12 +21,16 @@ jobs:
       - run: |
           node --check knowledge/core.mjs
           node --check knowledge/registry.mjs
+          node --check knowledge/kinds.mjs
+          node --check knowledge/search.mjs
           node --check knowledge/app.mjs
           node tests/knowledge-contract.mjs
           node tests/knowledge-source-registry.mjs
           node tests/knowledge-editorial-title.mjs
           node tests/knowledge-editorial-boundary.mjs
-          git diff --exit-code 83acf3f9e4c69c346f2be16d02f407838a137cf9 -- knowledge/scripture.json knowledge/pilot.json knowledge/source-lock.mjs
+          node tests/knowledge-search.mjs
+          node tests/knowledge-integration.mjs
+          git diff --exit-code f720099b6181919d597e249f9ad42b9f00cabe68 -- knowledge/scripture.json knowledge/pilot.json knowledge/source-lock.mjs knowledge/registry.mjs
           node tests/knowledge-source-witness.mjs
       - uses: actions/upload-artifact@v4
         if: always()
@@ -35,6 +39,8 @@ jobs:
           path: |
             evidence/knowledge-registry/
             evidence/knowledge-editorial-boundary/
+            evidence/knowledge-search/
+            evidence/knowledge-integration/
           retention-days: 90
   browser:
     needs: contracts
@@ -42,6 +48,8 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -52,6 +60,8 @@ jobs:
       - run: |
           node tests/knowledge-browser.mjs
           node tests/knowledge-editorial-boundary-browser.mjs
+          node tests/knowledge-search-browser.mjs
+          node tests/knowledge-integration-browser.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -59,4 +69,6 @@ jobs:
           path: |
             evidence/knowledge-pilot/
             evidence/knowledge-editorial-boundary/
+            evidence/knowledge-search/
+            evidence/knowledge-integration/
           retention-days: 90

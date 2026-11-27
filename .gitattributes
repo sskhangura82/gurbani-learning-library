@@ -1,0 +1,4 @@
+
+# Canonical source and retrieval files use deterministic LF bytes.
+knowledge/*.json text eol=lf
+knowledge/*.mjs text eol=lf

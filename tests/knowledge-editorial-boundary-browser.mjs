@@ -35,14 +35,14 @@ async function context(width=390,mutate){
  }
  return {ctx,page};
 }
-async function query(page,text){await page.locator("#query").fill(text);await page.getByRole("button",{name:"Find teaching",exact:true}).click();}
+async function query(page,text){await page.locator("#query").fill(text);await page.getByRole("button",{name:"Search library",exact:true}).click();}
 try{
  const executablePath=process.env.CHROMIUM_PATH||(process.platform==="darwin"?"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome":undefined);
  browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
  report.environment={platform:process.platform,node:process.version,browser:browser.version()};
  for(const width of [390,820,1440]){
   const {ctx,page}=await context(width);
-  await page.goto(url);await page.getByText(/Development pack verified/).waitFor();
+  await page.goto(url);await page.getByText(/Source files checked/).waitFor();
   assert.equal(await page.locator("#content h2").getAttribute("data-content-kind"),"editorial");
   assert.equal(await page.locator("#content h2").getAttribute("class"),"editorial-title");
   assert.match(await page.locator("#content .kicker").innerText(),/Library topic · editorial draft/);
@@ -92,7 +92,7 @@ try{
    const n=e.nodes.find(n=>n.id==="concept.humility");n.title="Guru Arjan";n.pa="ਨਾਨਕ";
    e.passageDescriptions[0].title=literal;e.passageDescriptions[0].aliases=["Synthetic family reflection"];
   });
-  await page.goto(url);await page.getByText(/Development pack verified/).waitFor();
+  await page.goto(url);await page.getByText(/Source files checked/).waitFor();
   assert.equal(await page.locator("#content h2").innerText(),"Guru Arjan");
   assert.equal(await page.locator("#content h2").getAttribute("data-content-kind"),"editorial");
   assert.match(await page.locator("#content .kicker").innerText(),/editorial draft/);
@@ -113,7 +113,7 @@ try{
  {
   const marked="ਵਿਸ਼ਾ ਮ\u0300ਃ ੧ ॥";
   const {ctx,page}=await context(390,e=>{e.nodes.find(n=>n.id==="concept.humility").pa=marked;});
-  await page.goto(url);await page.getByText(/Development pack verified/).waitFor();
+  await page.goto(url);await page.getByText(/Source files checked/).waitFor();
   assert.equal(await page.locator("#content > .editorial-pa").innerText(),marked);
   assert.equal(await page.locator("#content > .editorial-pa").getAttribute("data-content-kind"),"editorial");
   assert.match(await page.locator("#content .kicker").innerText(),/Library topic · editorial draft/);
@@ -136,7 +136,7 @@ try{
    const word=e.nodes.find(n=>n.type==="word");word.title="ਸਲੋਕੁ";word.pa="ਸਲੋਕੁ";word.aliases=["ਸਲੋਕੁ"];
    Object.assign(word.senses[0],{form:"ਸਲੋਕੁ",passageId:heading.passageId,occurrenceIds:[heading.id],sourceBindings:[{id:heading.id,sha256:heading.textSha256}]});
   });
-  await page.goto(url);await page.getByText(/Development pack verified/).waitFor();
+  await page.goto(url);await page.getByText(/Source files checked/).waitFor();
   await query(page,"ਸਲੋਕੁ");
   const wordResult=page.locator("#results .result-editorial").filter({hasText:"Dictionary entry · editorial draft"});
   assert.equal(await wordResult.count(),1);await wordResult.click();
