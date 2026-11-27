@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/library-script-integrity-inputs.mjs",
+      "tests/library-script-integrity.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/build-app-bundles.mjs",
+      "--check"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/refresh-app-sri.mjs",
+      "--check"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/refresh-reader-sri.mjs",
+      "--check"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "node",
+      "tools/build-offline.mjs"
+    ],
+    "exitCode": 0
+  }
+]

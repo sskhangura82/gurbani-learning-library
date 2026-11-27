@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "test": "salok-kabir-content.mjs",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:122\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n93 !== 81\n\n    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-content.mjs:87:99\n    at test (file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-content.mjs:11:36)\n    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-content.mjs:82:7 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 93,\n  expected: 81,\n  operator: 'strictEqual'\n}\n\nNode.js v22.15.0\n"
+    },
+    {
+      "test": "salok-kabir-browser.mjs",
+      "returncode": 1,
+      "stdout": "{\n  \"status\": \"failed\",\n  \"passed\": 39,\n  \"failed\": 1,\n  \"browser\": \"158.0.8127.37\",\n  \"failures\": [\n    {\n      \"name\": \"The actual root worker verifies and caches all declared assets, including the new reader\",\n      \"status\": \"failed\",\n      \"error\": \"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\\n\\n93 !== 81\\n\\n    at file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-browser.mjs:349:249\\n    at async check (file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-browser.mjs:53:6)\\n    at async file:///private/tmp/glp001-iphoneqa-20261126/library-script-integrity/tests/salok-kabir-browser.mjs:346:2\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "priorEvidenceRestored": true
+}

@@ -1,0 +1,1090 @@
+﻿2026-11-27T03:11:10.1296643Z Current runner version: '2.338.2'
+2026-11-27T03:11:10.1322543Z ##[group]Runner Image Provisioner
+2026-11-27T03:11:10.1323562Z Hosted Compute Agent
+2026-11-27T03:11:10.1324123Z Version: 20261111.635
+2026-11-27T03:11:10.1324721Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-27T03:11:10.1325499Z Build Date: 2026-11-11T01:49:01Z
+2026-11-27T03:11:10.1326183Z Worker ID: {9721f698-13e5-4a0a-a3ab-c9d16e812b56}
+2026-11-27T03:11:10.1326893Z Region: us-east-1
+2026-11-27T03:11:10.1327438Z Cloud: AWS
+2026-11-27T03:11:10.1327936Z ##[endgroup]
+2026-11-27T03:11:10.1329421Z ##[group]Operating System
+2026-11-27T03:11:10.1330068Z Ubuntu
+2026-11-27T03:11:10.1330913Z 24.04.5
+2026-11-27T03:11:10.1331437Z LTS
+2026-11-27T03:11:10.1331927Z ##[endgroup]
+2026-11-27T03:11:10.1332489Z ##[group]Runner Image
+2026-11-27T03:11:10.1333068Z Image: ubuntu-24.04
+2026-11-27T03:11:10.1333708Z Version: 20261116.133.1
+2026-11-27T03:11:10.1334953Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-27T03:11:10.1336424Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+2026-11-27T03:11:10.1337352Z ##[endgroup]
+2026-11-27T03:11:10.1338447Z ##[group]GITHUB_TOKEN Permissions
+2026-11-27T03:11:10.1340935Z Contents: read
+2026-11-27T03:11:10.1341481Z Metadata: read
+2026-11-27T03:11:10.1341877Z ##[endgroup]
+2026-11-27T03:11:10.1343742Z Secret source: Actions
+2026-11-27T03:11:10.1344381Z Cache mode: write
+2026-11-27T03:11:10.1345033Z Prepare workflow directory
+2026-11-27T03:11:10.1575695Z Prepare all required actions
+2026-11-27T03:11:10.1613128Z Getting action download info
+2026-11-27T03:11:10.3008175Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-27T03:11:12.0938911Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-11-27T03:11:12.2378576Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-27T03:11:12.5959306Z Complete job name: library-candidate
+2026-11-27T03:11:12.6586240Z ##[group]Run actions/checkout@v4
+2026-11-27T03:11:12.6586917Z with:
+2026-11-27T03:11:12.6587233Z   fetch-depth: 0
+2026-11-27T03:11:12.6587540Z   repository: sskhangura82/gurbani-learning-library
+2026-11-27T03:11:12.6589570Z   token: ***
+2026-11-27T03:11:12.6589822Z   ssh-strict: true
+2026-11-27T03:11:12.6590088Z   ssh-user: git
+2026-11-27T03:11:12.6590382Z   persist-credentials: true
+2026-11-27T03:11:12.6590959Z   clean: true
+2026-11-27T03:11:12.6591239Z   sparse-checkout-cone-mode: true
+2026-11-27T03:11:12.6591544Z   fetch-tags: false
+2026-11-27T03:11:12.6591829Z   show-progress: true
+2026-11-27T03:11:12.6592114Z   lfs: false
+2026-11-27T03:11:12.6592394Z   submodules: false
+2026-11-27T03:11:12.6592713Z   set-safe-directory: true
+2026-11-27T03:11:12.6593011Z   allow-unsafe-pr-checkout: false
+2026-11-27T03:11:12.6593508Z ##[endgroup]
+2026-11-27T03:11:15.6728375Z Syncing repository: sskhangura82/gurbani-learning-library
+2026-11-27T03:11:15.6729931Z ##[group]Getting Git version info
+2026-11-27T03:11:15.6730843Z Working directory is '/home/runner/work/gurbani-learning-library/gurbani-learning-library'
+2026-11-27T03:11:15.6731654Z [command]/usr/bin/git version
+2026-11-27T03:11:15.9855018Z git version 2.56.1
+2026-11-27T03:11:15.9869325Z ##[endgroup]
+2026-11-27T03:11:15.9882993Z Temporarily overriding HOME='/home/runner/work/_temp/fb16f5b7-2bc7-4494-8e69-f2826ae0bfbc' before making global git config changes
+2026-11-27T03:11:15.9883991Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T03:11:15.9887400Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gurbani-learning-library/gurbani-learning-library
+2026-11-27T03:11:16.0264210Z Deleting the contents of '/home/runner/work/gurbani-learning-library/gurbani-learning-library'
+2026-11-27T03:11:16.0270140Z ##[group]Initializing the repository
+2026-11-27T03:11:16.0275548Z [command]/usr/bin/git init /home/runner/work/gurbani-learning-library/gurbani-learning-library
+2026-11-27T03:11:16.0988585Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-27T03:11:16.0989243Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-27T03:11:16.0989847Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-27T03:11:16.0990296Z hint: call:
+2026-11-27T03:11:16.0990722Z hint:
+2026-11-27T03:11:16.0991156Z hint: 	git config --global init.defaultBranch <name>
+2026-11-27T03:11:16.0991619Z hint:
+2026-11-27T03:11:16.0991994Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-27T03:11:16.0992456Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-27T03:11:16.0992993Z hint:
+2026-11-27T03:11:16.0993280Z hint: 	git branch -m <name>
+2026-11-27T03:11:16.0993639Z hint:
+2026-11-27T03:11:16.0994098Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-27T03:11:16.0995108Z Initialized empty Git repository in /home/runner/work/gurbani-learning-library/gurbani-learning-library/.git/
+2026-11-27T03:11:16.1006274Z [command]/usr/bin/git remote add origin https://github.com/sskhangura82/gurbani-learning-library
+2026-11-27T03:11:16.1061038Z ##[endgroup]
+2026-11-27T03:11:16.1061551Z ##[group]Disabling automatic garbage collection
+2026-11-27T03:11:16.1062004Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-27T03:11:16.1085107Z ##[endgroup]
+2026-11-27T03:11:16.1085568Z ##[group]Setting up auth
+2026-11-27T03:11:16.1090856Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T03:11:16.1118966Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T03:11:16.4513280Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T03:11:16.4540309Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T03:11:16.4694160Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T03:11:16.4722730Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T03:11:16.4870814Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-27T03:11:16.4898589Z ##[endgroup]
+2026-11-27T03:11:16.4899097Z ##[group]Fetching the repository
+2026-11-27T03:11:16.4910772Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +0a6b039e706275de1492282627c9c68a772cf2a5:refs/remotes/pull/60/merge
+2026-11-27T03:11:17.7732909Z From https://github.com/sskhangura82/gurbani-learning-library
+2026-11-27T03:11:17.7733967Z  * [new branch]      concept/glp-simran-arrival-20261023      -> origin/concept/glp-simran-arrival-20261023
+2026-11-27T03:11:17.7734801Z  * [new branch]      docs/glp-claude-review-reconciliation-20261024 -> origin/docs/glp-claude-review-reconciliation-20261024
+2026-11-27T03:11:17.7735574Z  * [new branch]      docs/glp-claude-room-blueprints-20261024 -> origin/docs/glp-claude-room-blueprints-20261024
+2026-11-27T03:11:17.7736468Z  * [new branch]      docs/glp-r7-release-receipt-20261023     -> origin/docs/glp-r7-release-receipt-20261023
+2026-11-27T03:11:17.7737316Z  * [new branch]      draft/claude-audio-provenance-register-20261126 -> origin/draft/claude-audio-provenance-register-20261126
+2026-11-27T03:11:17.7738256Z  * [new branch]      draft/claude-hukamnama-lesson-ang504-20261126 -> origin/draft/claude-hukamnama-lesson-ang504-20261126
+2026-11-27T03:11:17.7739117Z  * [new branch]      feature/article-source-print-20261126    -> origin/feature/article-source-print-20261126
+2026-11-27T03:11:17.7740173Z  * [new branch]      feature/glp-anand-pa21-30-bilingual-20261027 -> origin/feature/glp-anand-pa21-30-bilingual-20261027
+2026-11-27T03:11:17.7741495Z  * [new branch]      feature/glp-anand-pa31-40-bilingual-20261027 -> origin/feature/glp-anand-pa31-40-bilingual-20261027
+2026-11-27T03:11:17.7742780Z  * [new branch]      feature/glp-anand-pa8-20-bilingual-20261027 -> origin/feature/glp-anand-pa8-20-bilingual-20261027
+2026-11-27T03:11:17.7743606Z  * [new branch]      feature/glp-chaupai-116-lines-29-lessons-20261027 -> origin/feature/glp-chaupai-116-lines-29-lessons-20261027
+2026-11-27T03:11:17.7744423Z  * [new branch]      feature/glp-cross-accessibility-20261024 -> origin/feature/glp-cross-accessibility-20261024
+2026-11-27T03:11:17.7745243Z  * [new branch]      feature/glp-darbar-reader-r5-20261023    -> origin/feature/glp-darbar-reader-r5-20261023
+2026-11-27T03:11:17.7746082Z  * [new branch]      feature/glp-darbar-reader-r6-20261023    -> origin/feature/glp-darbar-reader-r6-20261023
+2026-11-27T03:11:17.7746938Z  * [new branch]      feature/glp-full-nitnem-n1-sohila-source-20261025 -> origin/feature/glp-full-nitnem-n1-sohila-source-20261025
+2026-11-27T03:11:17.7747829Z  * [new branch]      feature/glp-generic-composition-parity-20261024 -> origin/feature/glp-generic-composition-parity-20261024
+2026-11-27T03:11:17.7748557Z  * [new branch]      feature/glp-gur-place-data-20261024      -> origin/feature/glp-gur-place-data-20261024
+2026-11-27T03:11:17.7749257Z  * [new branch]      feature/glp-home-r7-20261023             -> origin/feature/glp-home-r7-20261023
+2026-11-27T03:11:17.7750123Z  * [new branch]      feature/glp-internal-nitnem-reader-review-20261025 -> origin/feature/glp-internal-nitnem-reader-review-20261025
+2026-11-27T03:11:17.7751320Z  * [new branch]      feature/glp-jaap-106-120-20261028        -> origin/feature/glp-jaap-106-120-20261028
+2026-11-27T03:11:17.7752085Z  * [new branch]      feature/glp-jaap-16-30-20261028          -> origin/feature/glp-jaap-16-30-20261028
+2026-11-27T03:11:17.7753041Z  * [new branch]      feature/glp-jaap-31-45-theme-20261028    -> origin/feature/glp-jaap-31-45-theme-20261028
+2026-11-27T03:11:17.7753614Z  * [new branch]      feature/glp-jaap-46-60-20261028          -> origin/feature/glp-jaap-46-60-20261028
+2026-11-27T03:11:17.7754130Z  * [new branch]      feature/glp-jaap-61-75-20261028          -> origin/feature/glp-jaap-61-75-20261028
+2026-11-27T03:11:17.7754624Z  * [new branch]      feature/glp-jaap-76-90-20261028          -> origin/feature/glp-jaap-76-90-20261028
+2026-11-27T03:11:17.7755851Z  * [new branch]      feature/glp-jaap-91-105-candidate-20261028 -> origin/feature/glp-jaap-91-105-candidate-20261028
+2026-11-27T03:11:17.7756543Z  * [new branch]      feature/glp-jaap-early-15-chhands-learning-20261027 -> origin/feature/glp-jaap-early-15-chhands-learning-20261027
+2026-11-27T03:11:17.7757262Z  * [new branch]      feature/glp-japji-format-parity-pace-200-20261025 -> origin/feature/glp-japji-format-parity-pace-200-20261025
+2026-11-27T03:11:17.7757995Z  * [new branch]      feature/glp-m0-reader-excellence-20261024 -> origin/feature/glp-m0-reader-excellence-20261024
+2026-11-27T03:11:17.7758571Z  * [new branch]      feature/glp-m1-timing-bench-20261024     -> origin/feature/glp-m1-timing-bench-20261024
+2026-11-27T03:11:17.7759189Z  * [new branch]      feature/glp-m2-depth-pilot-20261024      -> origin/feature/glp-m2-depth-pilot-20261024
+2026-11-27T03:11:17.7759984Z  * [new branch]      feature/glp-mind-content-envelope-20261024 -> origin/feature/glp-mind-content-envelope-20261024
+2026-11-27T03:11:17.7761486Z  * [new branch]      feature/glp-mind-gurbani-first-preview-20261024 -> origin/feature/glp-mind-gurbani-first-preview-20261024
+2026-11-27T03:11:17.7762667Z  * [new branch]      feature/glp-nitnem-continuation-20261028 -> origin/feature/glp-nitnem-continuation-20261028
+2026-11-27T03:11:17.7763525Z  * [new branch]      feature/glp-nitnem-meaning-study-drafts-20261025 -> origin/feature/glp-nitnem-meaning-study-drafts-20261025
+2026-11-27T03:11:17.7764609Z  * [new branch]      feature/glp-nitnem-psychology-foundations-20261024 -> origin/feature/glp-nitnem-psychology-foundations-20261024
+2026-11-27T03:11:17.7765498Z  * [new branch]      feature/glp-nitnem-today-hub-20261025    -> origin/feature/glp-nitnem-today-hub-20261025
+2026-11-27T03:11:17.7766227Z  * [new branch]      feature/glp-r8-listen-menu-20261023      -> origin/feature/glp-r8-listen-menu-20261023
+2026-11-27T03:11:17.7767038Z  * [new branch]      feature/glp-reader-serenity-review-20261024 -> origin/feature/glp-reader-serenity-review-20261024
+2026-11-27T03:11:17.7767893Z  * [new branch]      feature/glp-rehras-exact-origin-learning-20261027 -> origin/feature/glp-rehras-exact-origin-learning-20261027
+2026-11-27T03:11:17.7768793Z  * [new branch]      feature/glp-savaiye-40-line-meanings-20261027 -> origin/feature/glp-savaiye-40-line-meanings-20261027
+2026-11-27T03:11:17.7769617Z  * [new branch]      feature/glp-sohila-56-line-meanings-20261025 -> origin/feature/glp-sohila-56-line-meanings-20261025
+2026-11-27T03:11:17.7770440Z  * [new branch]      feature/glp-sukhmani-salok9-source-intake-20261027 -> origin/feature/glp-sukhmani-salok9-source-intake-20261027
+2026-11-27T03:11:17.7771360Z  * [new branch]      feature/glp-trust-practice-now-20261025  -> origin/feature/glp-trust-practice-now-20261025
+2026-11-27T03:11:17.7771950Z  * [new branch]      feature/glp-v15-private-release-20261028 -> origin/feature/glp-v15-private-release-20261028
+2026-11-27T03:11:17.7772535Z  * [new branch]      feature/hukamnama-foundation-20261125    -> origin/feature/hukamnama-foundation-20261125
+2026-11-27T03:11:17.7773109Z  * [new branch]      feature/kabir-salok-reader-20261126      -> origin/feature/kabir-salok-reader-20261126
+2026-11-27T03:11:17.7773675Z  * [new branch]      feature/kabir-source-intake-20261126     -> origin/feature/kabir-source-intake-20261126
+2026-11-27T03:11:17.7774287Z  * [new branch]      feature/knowledge-integrated-search-20261126 -> origin/feature/knowledge-integrated-search-20261126
+2026-11-27T03:11:17.7775031Z  * [new branch]      feature/knowledge-library-foundation-20261125 -> origin/feature/knowledge-library-foundation-20261125
+2026-11-27T03:11:17.7775709Z  * [new branch]      feature/learning-explorer-ashtpadi17-20261125 -> origin/feature/learning-explorer-ashtpadi17-20261125
+2026-11-27T03:11:17.7776393Z  * [new branch]      feature/learning-reliability-practice-20261126 -> origin/feature/learning-reliability-practice-20261126
+2026-11-27T03:11:17.7776992Z  * [new branch]      feature/nitnem-complete-20261125         -> origin/feature/nitnem-complete-20261125
+2026-11-27T03:11:17.7777568Z  * [new branch]      feature/salok-mahalla9-reader-20261126   -> origin/feature/salok-mahalla9-reader-20261126
+2026-11-27T03:11:17.7778099Z  * [new branch]      feature/sukhmani-13-18-20261124          -> origin/feature/sukhmani-13-18-20261124
+2026-11-27T03:11:17.7778624Z  * [new branch]      feature/sukhmani-complete-20261124       -> origin/feature/sukhmani-complete-20261124
+2026-11-27T03:11:17.7779212Z  * [new branch]      feature/sukhmani-reader-foundation-20261123 -> origin/feature/sukhmani-reader-foundation-20261123
+2026-11-27T03:11:17.7779777Z  * [new branch]      feature/unified-library-v1-20261126      -> origin/feature/unified-library-v1-20261126
+2026-11-27T03:11:17.7780356Z  * [new branch]      fix/claude-review-first-repairs-20261125 -> origin/fix/claude-review-first-repairs-20261125
+2026-11-27T03:11:17.7781142Z  * [new branch]      fix/knowledge-editorial-boundary-20261126 -> origin/fix/knowledge-editorial-boundary-20261126
+2026-11-27T03:11:17.7781758Z  * [new branch]      fix/knowledge-editorial-title-20261126   -> origin/fix/knowledge-editorial-title-20261126
+2026-11-27T03:11:17.7782346Z  * [new branch]      fix/knowledge-search-and-reading-20261126 -> origin/fix/knowledge-search-and-reading-20261126
+2026-11-27T03:11:17.7782926Z  * [new branch]      fix/knowledge-source-identity-20261126   -> origin/fix/knowledge-source-identity-20261126
+2026-11-27T03:11:17.7783568Z  * [new branch]      fix/library-script-integrity-20261126    -> origin/fix/library-script-integrity-20261126
+2026-11-27T03:11:17.7784161Z  * [new branch]      fix/pr40-sukhmani-passage-visit-20261126 -> origin/fix/pr40-sukhmani-passage-visit-20261126
+2026-11-27T03:11:17.7784736Z  * [new branch]      fix/reader-load-resume-20261126          -> origin/fix/reader-load-resume-20261126
+2026-11-27T03:11:17.7785325Z  * [new branch]      improve/claude-wave1a-nitnem-meanings-readable -> origin/improve/claude-wave1a-nitnem-meanings-readable
+2026-11-27T03:11:17.7785844Z  * [new branch]      main                                     -> origin/main
+2026-11-27T03:11:17.7786366Z  * [new branch]      plan/daily-hukamnama-authentic-audio-20261125 -> origin/plan/daily-hukamnama-authentic-audio-20261125
+2026-11-27T03:11:17.7786997Z  * [new branch]      qa/glp-r6-upgrade-20261023               -> origin/qa/glp-r6-upgrade-20261023
+2026-11-27T03:11:17.7787503Z  * [new branch]      review/claude-independent-20261125       -> origin/review/claude-independent-20261125
+2026-11-27T03:11:17.7788153Z  * [new branch]      rollback/knowledge-boundary-base-20261126 -> origin/rollback/knowledge-boundary-base-20261126
+2026-11-27T03:11:17.7788775Z  * [new branch]      rollback/knowledge-integration-base-20261126 -> origin/rollback/knowledge-integration-base-20261126
+2026-11-27T03:11:17.7789465Z  * [new branch]      rollback/library-script-integrity-base-20261126 -> origin/rollback/library-script-integrity-base-20261126
+2026-11-27T03:11:17.7790127Z  * [new branch]      rollback/reader-reliability-base-20261126 -> origin/rollback/reader-reliability-base-20261126
+2026-11-27T03:11:17.7790834Z  * [new branch]      rollback/unified-library-base-20261126   -> origin/rollback/unified-library-base-20261126
+2026-11-27T03:11:17.7791391Z  * [new tag]         baseline-0.8-continuous1                 -> baseline-0.8-continuous1
+2026-11-27T03:11:17.7791828Z  * [new tag]         japji-v1-0.9-r3                          -> japji-v1-0.9-r3
+2026-11-27T03:11:17.7792330Z  * [new tag]         japji-v1-0.9-r4                          -> japji-v1-0.9-r4
+2026-11-27T03:11:17.7792740Z  * [new tag]         japji-v1-0.9-r5                          -> japji-v1-0.9-r5
+2026-11-27T03:11:17.7793120Z  * [new tag]         japji-v1-0.9-r6                          -> japji-v1-0.9-r6
+2026-11-27T03:11:17.7793531Z  * [new tag]         japji-v1-0.9-r7                          -> japji-v1-0.9-r7
+2026-11-27T03:11:17.7793935Z  * [new ref]         0a6b039e706275de1492282627c9c68a772cf2a5 -> pull/60/merge
+2026-11-27T03:11:17.7795240Z ##[endgroup]
+2026-11-27T03:11:17.7795714Z ##[group]Determining the checkout info
+2026-11-27T03:11:17.7796133Z ##[endgroup]
+2026-11-27T03:11:17.7796476Z [command]/usr/bin/git sparse-checkout disable
+2026-11-27T03:11:17.7822541Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-27T03:11:17.7844876Z ##[group]Checking out the ref
+2026-11-27T03:11:17.7848168Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/60/merge
+2026-11-27T03:11:17.9611065Z Note: switching to 'refs/remotes/pull/60/merge'.
+2026-11-27T03:11:17.9611409Z 
+2026-11-27T03:11:17.9611594Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-27T03:11:17.9612251Z changes and commit them, and you can discard any commits you make in this
+2026-11-27T03:11:17.9612671Z state without impacting any branches by switching back to a branch.
+2026-11-27T03:11:17.9612913Z 
+2026-11-27T03:11:17.9613093Z If you want to create a new branch to retain commits you create, you may
+2026-11-27T03:11:17.9613537Z do so (now or later) by using -c with the switch command. Example:
+2026-11-27T03:11:17.9613741Z 
+2026-11-27T03:11:17.9613880Z   git switch -c <new-branch-name>
+2026-11-27T03:11:17.9614050Z 
+2026-11-27T03:11:17.9614168Z Or undo this operation with:
+2026-11-27T03:11:17.9614348Z 
+2026-11-27T03:11:17.9614437Z   git switch -
+2026-11-27T03:11:17.9614577Z 
+2026-11-27T03:11:17.9614755Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-27T03:11:17.9615312Z 
+2026-11-27T03:11:17.9615650Z HEAD is now at 0a6b039 Merge 69e24fe4adfccbd535de2b5f8ac0bab5ed720d94 into e0a6cff22771d42ce3a2fe91ad96863daae214ed
+2026-11-27T03:11:17.9626910Z ##[endgroup]
+2026-11-27T03:11:17.9668835Z [command]/usr/bin/git log -1 --format=%H
+2026-11-27T03:11:17.9688652Z 0a6b039e706275de1492282627c9c68a772cf2a5
+2026-11-27T03:11:17.9893064Z ##[group]Run actions/setup-node@v4
+2026-11-27T03:11:17.9893358Z with:
+2026-11-27T03:11:17.9893575Z   node-version: 22
+2026-11-27T03:11:17.9893812Z   always-auth: false
+2026-11-27T03:11:17.9894055Z   check-latest: false
+2026-11-27T03:11:17.9895966Z   token: ***
+2026-11-27T03:11:17.9896193Z ##[endgroup]
+2026-11-27T03:11:18.2028385Z (node:2246) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T03:11:18.2029372Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T03:11:18.2030999Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+2026-11-27T03:11:18.2031830Z ##[group]Environment details
+2026-11-27T03:11:22.9598675Z node: v22.23.5
+2026-11-27T03:11:22.9599237Z npm: 10.9.9
+2026-11-27T03:11:22.9599514Z yarn: 1.22.22
+2026-11-27T03:11:22.9600983Z ##[endgroup]
+2026-11-27T03:11:22.9707056Z ##[group]Run node --test tests/library-script-integrity-inputs.mjs
+2026-11-27T03:11:22.9707562Z [36;1mnode --test tests/library-script-integrity-inputs.mjs[0m
+2026-11-27T03:11:23.2414052Z shell: /usr/bin/bash -e {0}
+2026-11-27T03:11:23.2414375Z ##[endgroup]
+2026-11-27T03:11:23.3685428Z TAP version 13
+2026-11-27T03:11:23.7928179Z # Subtest: Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+2026-11-27T03:11:23.7935531Z ok 1 - Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+2026-11-27T03:11:23.7936302Z   ---
+2026-11-27T03:11:23.7936735Z   duration_ms: 389.068766
+2026-11-27T03:11:23.7937191Z   type: 'test'
+2026-11-27T03:11:23.7937592Z   ...
+2026-11-27T03:11:24.4570021Z # Subtest: All existing application bytes stay frozen except the listed loader tags and worker manifest
+2026-11-27T03:11:24.4572627Z ok 2 - All existing application bytes stay frozen except the listed loader tags and worker manifest
+2026-11-27T03:11:24.4573454Z   ---
+2026-11-27T03:11:24.4573809Z   duration_ms: 667.226642
+2026-11-27T03:11:24.4574154Z   type: 'test'
+2026-11-27T03:11:24.4574471Z   ...
+2026-11-27T03:11:24.4978347Z # Subtest: Reader loader contract and reviewed original module closures remain exact
+2026-11-27T03:11:24.4979371Z ok 3 - Reader loader contract and reviewed original module closures remain exact
+2026-11-27T03:11:24.4979951Z   ---
+2026-11-27T03:11:24.4980269Z   duration_ms: 40.903501
+2026-11-27T03:11:24.4980944Z   type: 'test'
+2026-11-27T03:11:24.4981307Z   ...
+2026-11-27T03:11:24.5061649Z 1..3
+2026-11-27T03:11:24.5062052Z # tests 3
+2026-11-27T03:11:24.5062333Z # suites 0
+2026-11-27T03:11:24.5062719Z # pass 3
+2026-11-27T03:11:24.5063007Z # fail 0
+2026-11-27T03:11:24.5063329Z # cancelled 0
+2026-11-27T03:11:24.5063634Z # skipped 0
+2026-11-27T03:11:24.5064009Z # todo 0
+2026-11-27T03:11:24.5064374Z # duration_ms 1232.77829
+2026-11-27T03:11:24.5133465Z ##[group]Run node --test tests/library-catalog.mjs tests/article-source.mjs tests/source-integrity.mjs tests/salok-kabir-bindings.mjs
+2026-11-27T03:11:24.5134277Z [36;1mnode --test tests/library-catalog.mjs tests/article-source.mjs tests/source-integrity.mjs tests/salok-kabir-bindings.mjs[0m
+2026-11-27T03:11:24.5134785Z [36;1mnode tests/verify.mjs[0m
+2026-11-27T03:11:24.5135105Z [36;1mnode tests/shared-learning.mjs[0m
+2026-11-27T03:11:24.5135401Z [36;1mnode tests/japji-retained-learning.mjs[0m
+2026-11-27T03:11:24.5135697Z [36;1mnode tests/sukhmani-reader-core.mjs[0m
+2026-11-27T03:11:24.5136009Z [36;1mnode tests/nitnem-learning.mjs[0m
+2026-11-27T03:11:24.5136312Z [36;1mnode tests/nitnem-ui-lifecycle.mjs[0m
+2026-11-27T03:11:24.5136606Z [36;1mnode tests/r6-contract.mjs[0m
+2026-11-27T03:11:24.5136892Z [36;1mnode tests/r7-contract.mjs[0m
+2026-11-27T03:11:24.5137246Z [36;1mnode tests/service-worker.mjs[0m
+2026-11-27T03:11:24.5163649Z shell: /usr/bin/bash -e {0}
+2026-11-27T03:11:24.5164102Z ##[endgroup]
+2026-11-27T03:11:24.5577579Z TAP version 13
+2026-11-27T03:11:24.6755211Z # Subtest: Resolves two complete Saloks from the existing canonical files, with exact Unicode and whitespace
+2026-11-27T03:11:24.6758325Z ok 1 - Resolves two complete Saloks from the existing canonical files, with exact Unicode and whitespace
+2026-11-27T03:11:24.6759697Z   ---
+2026-11-27T03:11:24.6760787Z   duration_ms: 76.03656
+2026-11-27T03:11:24.6761370Z   type: 'test'
+2026-11-27T03:11:24.6761797Z   ...
+2026-11-27T03:11:24.7199774Z # Subtest: One fixed loader call per complete source package; no editorial URL or path reaches the loader
+2026-11-27T03:11:24.7213986Z ok 2 - One fixed loader call per complete source package; no editorial URL or path reaches the loader
+2026-11-27T03:11:24.7221369Z   ---
+2026-11-27T03:11:24.7224815Z   duration_ms: 42.429168
+2026-11-27T03:11:24.7225204Z   type: 'test'
+2026-11-27T03:11:24.7225568Z   ...
+2026-11-27T03:11:24.8017736Z # Subtest: No Ang inference, borrowed Raag, claimed Kabir authorship or rights approval enters the display view
+2026-11-27T03:11:24.8019111Z ok 3 - No Ang inference, borrowed Raag, claimed Kabir authorship or rights approval enters the display view
+2026-11-27T03:11:24.8019791Z   ---
+2026-11-27T03:11:24.8020128Z   duration_ms: 63.813711
+2026-11-27T03:11:24.8020843Z   type: 'test'
+2026-11-27T03:11:24.8021226Z   ...
+2026-11-27T03:11:24.8021813Z # Subtest: Refuses unknown article identity before rendering or source loading
+2026-11-27T03:11:24.8022659Z ok 4 - Refuses unknown article identity before rendering or source loading
+2026-11-27T03:11:24.8023176Z   ---
+2026-11-27T03:11:24.8023550Z   duration_ms: 1.121978
+2026-11-27T03:11:24.8023948Z   type: 'test'
+2026-11-27T03:11:24.8024333Z   ...
+2026-11-27T03:11:24.8024921Z # Subtest: Refuses duplicate article identity before rendering or source loading
+2026-11-27T03:11:24.8025729Z ok 5 - Refuses duplicate article identity before rendering or source loading
+2026-11-27T03:11:24.8026699Z   ---
+2026-11-27T03:11:24.8027112Z   duration_ms: 0.350094
+2026-11-27T03:11:24.8027727Z   type: 'test'
+2026-11-27T03:11:24.8028135Z   ...
+2026-11-27T03:11:24.8028835Z # Subtest: Refuses scripture heading as editorial title before rendering or source loading
+2026-11-27T03:11:24.8029980Z ok 6 - Refuses scripture heading as editorial title before rendering or source loading
+2026-11-27T03:11:24.8030758Z   ---
+2026-11-27T03:11:24.8031259Z   duration_ms: 0.216328
+2026-11-27T03:11:24.8031766Z   type: 'test'
+2026-11-27T03:11:24.8032166Z   ...
+2026-11-27T03:11:24.8032921Z # Subtest: Refuses invisible-mark heading title before rendering or source loading
+2026-11-27T03:11:24.8033980Z ok 7 - Refuses invisible-mark heading title before rendering or source loading
+2026-11-27T03:11:24.8034553Z   ---
+2026-11-27T03:11:24.8034890Z   duration_ms: 0.254272
+2026-11-27T03:11:24.8035367Z   type: 'test'
+2026-11-27T03:11:24.8035838Z   ...
+2026-11-27T03:11:24.8040138Z # Subtest: Refuses unsafe HTML title before rendering or source loading
+2026-11-27T03:11:24.8041811Z ok 8 - Refuses unsafe HTML title before rendering or source loading
+2026-11-27T03:11:24.8042362Z   ---
+2026-11-27T03:11:24.8042814Z   duration_ms: 0.292555
+2026-11-27T03:11:24.8043380Z   type: 'test'
+2026-11-27T03:11:24.8043761Z   ...
+2026-11-27T03:11:24.8044378Z # Subtest: Refuses scripture heading as topic label before rendering or source loading
+2026-11-27T03:11:24.8045209Z ok 9 - Refuses scripture heading as topic label before rendering or source loading
+2026-11-27T03:11:24.8045805Z   ---
+2026-11-27T03:11:24.8046122Z   duration_ms: 0.42304
+2026-11-27T03:11:24.8046577Z   type: 'test'
+2026-11-27T03:11:24.8046918Z   ...
+2026-11-27T03:11:24.8047527Z # Subtest: Refuses unknown topic alias before rendering or source loading
+2026-11-27T03:11:24.8048302Z ok 10 - Refuses unknown topic alias before rendering or source loading
+2026-11-27T03:11:24.8048899Z   ---
+2026-11-27T03:11:24.8049451Z   duration_ms: 0.564409
+2026-11-27T03:11:24.8049963Z   type: 'test'
+2026-11-27T03:11:24.8050289Z   ...
+2026-11-27T03:11:24.8051038Z # Subtest: Refuses swapped topic membership before rendering or source loading
+2026-11-27T03:11:24.8051760Z ok 11 - Refuses swapped topic membership before rendering or source loading
+2026-11-27T03:11:24.8052293Z   ---
+2026-11-27T03:11:24.8052598Z   duration_ms: 0.89048
+2026-11-27T03:11:24.8053037Z   type: 'test'
+2026-11-27T03:11:24.8053717Z   ...
+2026-11-27T03:11:24.8054441Z # Subtest: Refuses nonempty explanation with valid source before rendering or source loading
+2026-11-27T03:11:24.8055420Z ok 12 - Refuses nonempty explanation with valid source before rendering or source loading
+2026-11-27T03:11:24.8056145Z   ---
+2026-11-27T03:11:24.8056568Z   duration_ms: 0.339361
+2026-11-27T03:11:24.8056986Z   type: 'test'
+2026-11-27T03:11:24.8057463Z   ...
+2026-11-27T03:11:24.8058158Z # Subtest: Refuses empty string passed as explanation before rendering or source loading
+2026-11-27T03:11:24.8059150Z ok 13 - Refuses empty string passed as explanation before rendering or source loading
+2026-11-27T03:11:24.8063827Z   ---
+2026-11-27T03:11:24.8064396Z   duration_ms: 3.455869
+2026-11-27T03:11:24.8064917Z   type: 'test'
+2026-11-27T03:11:24.8065382Z   ...
+2026-11-27T03:11:24.8066102Z # Subtest: Refuses sourced claim content before rendering or source loading
+2026-11-27T03:11:24.8067123Z ok 14 - Refuses sourced claim content before rendering or source loading
+2026-11-27T03:11:24.8067732Z   ---
+2026-11-27T03:11:24.8068225Z   duration_ms: 0.272828
+2026-11-27T03:11:24.8068716Z   type: 'test'
+2026-11-27T03:11:24.8069186Z   ...
+2026-11-27T03:11:24.8069858Z # Subtest: Refuses hidden body content before rendering or source loading
+2026-11-27T03:11:24.8071010Z ok 15 - Refuses hidden body content before rendering or source loading
+2026-11-27T03:11:24.8071680Z   ---
+2026-11-27T03:11:24.8072216Z   duration_ms: 0.177486
+2026-11-27T03:11:24.8072717Z   type: 'test'
+2026-11-27T03:11:24.8073134Z   ...
+2026-11-27T03:11:24.8073901Z # Subtest: Refuses unknown external content layer before rendering or source loading
+2026-11-27T03:11:24.8075095Z ok 16 - Refuses unknown external content layer before rendering or source loading
+2026-11-27T03:11:24.8075699Z   ---
+2026-11-27T03:11:24.8076200Z   duration_ms: 0.12095
+2026-11-27T03:11:24.8076800Z   type: 'test'
+2026-11-27T03:11:24.8077171Z   ...
+2026-11-27T03:11:24.8078098Z # Subtest: Refuses unknown article layer before rendering or source loading
+2026-11-27T03:11:24.8079048Z ok 17 - Refuses unknown article layer before rendering or source loading
+2026-11-27T03:11:24.8079662Z   ---
+2026-11-27T03:11:24.8080087Z   duration_ms: 0.112133
+2026-11-27T03:11:24.8080473Z   type: 'test'
+2026-11-27T03:11:24.8081027Z   ...
+2026-11-27T03:11:24.8081758Z # Subtest: Refuses claimed qualified approval before rendering or source loading
+2026-11-27T03:11:24.8082681Z ok 18 - Refuses claimed qualified approval before rendering or source loading
+2026-11-27T03:11:24.8083334Z   ---
+2026-11-27T03:11:24.8083827Z   duration_ms: 0.142415
+2026-11-27T03:11:24.8084277Z   type: 'test'
+2026-11-27T03:11:24.8084690Z   ...
+2026-11-27T03:11:24.8085600Z # Subtest: Refuses claimed licensed outside text before rendering or source loading
+2026-11-27T03:11:24.8086487Z ok 19 - Refuses claimed licensed outside text before rendering or source loading
+2026-11-27T03:11:24.8087231Z   ---
+2026-11-27T03:11:24.8087629Z   duration_ms: 0.109952
+2026-11-27T03:11:24.8088083Z   type: 'test'
+2026-11-27T03:11:24.8088519Z   ...
+2026-11-27T03:11:24.8089151Z # Subtest: Refuses claimed semantic selection before rendering or source loading
+2026-11-27T03:11:24.8090075Z ok 20 - Refuses claimed semantic selection before rendering or source loading
+2026-11-27T03:11:24.8090939Z   ---
+2026-11-27T03:11:24.8091384Z   duration_ms: 0.12552
+2026-11-27T03:11:24.8091855Z   type: 'test'
+2026-11-27T03:11:24.8092301Z   ...
+2026-11-27T03:11:24.8093007Z # Subtest: Refuses substring term selection before rendering or source loading
+2026-11-27T03:11:24.8094032Z ok 21 - Refuses substring term selection before rendering or source loading
+2026-11-27T03:11:24.8094706Z   ---
+2026-11-27T03:11:24.8095124Z   duration_ms: 0.137442
+2026-11-27T03:11:24.8095605Z   type: 'test'
+2026-11-27T03:11:24.8096032Z   ...
+2026-11-27T03:11:24.8096717Z # Subtest: Refuses first-line selection fallback before rendering or source loading
+2026-11-27T03:11:24.8097670Z ok 22 - Refuses first-line selection fallback before rendering or source loading
+2026-11-27T03:11:24.8098329Z   ---
+2026-11-27T03:11:24.8098733Z   duration_ms: 0.127307
+2026-11-27T03:11:24.8099179Z   type: 'test'
+2026-11-27T03:11:24.8099580Z   ...
+2026-11-27T03:11:24.8100243Z # Subtest: Refuses unknown reference ID before rendering or source loading
+2026-11-27T03:11:24.8127755Z ok 23 - Refuses unknown reference ID before rendering or source loading
+2026-11-27T03:11:24.8129558Z   ---
+2026-11-27T03:11:24.8130060Z   duration_ms: 0.118261
+2026-11-27T03:11:24.8130503Z   type: 'test'
+2026-11-27T03:11:24.8131262Z   ...
+2026-11-27T03:11:24.8131949Z # Subtest: Refuses stale legacy reference ID before rendering or source loading
+2026-11-27T03:11:24.8132808Z ok 24 - Refuses stale legacy reference ID before rendering or source loading
+2026-11-27T03:11:24.8133437Z   ---
+2026-11-27T03:11:24.8133839Z   duration_ms: 0.130575
+2026-11-27T03:11:24.8134322Z   type: 'test'
+2026-11-27T03:11:24.8134719Z   ...
+2026-11-27T03:11:24.8135347Z # Subtest: Refuses swapped valid reference before rendering or source loading
+2026-11-27T03:11:24.8136226Z ok 25 - Refuses swapped valid reference before rendering or source loading
+2026-11-27T03:11:24.8136801Z   ---
+2026-11-27T03:11:24.8137243Z   duration_ms: 0.164217
+2026-11-27T03:11:24.8137618Z   type: 'test'
+2026-11-27T03:11:24.8138059Z   ...
+2026-11-27T03:11:24.8138694Z # Subtest: Refuses duplicated source reference before rendering or source loading
+2026-11-27T03:11:24.8139533Z ok 26 - Refuses duplicated source reference before rendering or source loading
+2026-11-27T03:11:24.8140192Z   ---
+2026-11-27T03:11:24.8140792Z   duration_ms: 0.129466
+2026-11-27T03:11:24.8141318Z   type: 'test'
+2026-11-27T03:11:24.8141715Z   ...
+2026-11-27T03:11:24.8142377Z # Subtest: Refuses source URL injection before rendering or source loading
+2026-11-27T03:11:24.8143194Z ok 27 - Refuses source URL injection before rendering or source loading
+2026-11-27T03:11:24.8143761Z   ---
+2026-11-27T03:11:24.8144203Z   duration_ms: 0.468032
+2026-11-27T03:11:24.8144633Z   type: 'test'
+2026-11-27T03:11:24.8145048Z   ...
+2026-11-27T03:11:24.8145550Z # Subtest: Refuses source path injection before rendering or source loading
+2026-11-27T03:11:24.8150901Z ok 28 - Refuses source path injection before rendering or source loading
+2026-11-27T03:11:24.8151560Z   ---
+2026-11-27T03:11:24.8152016Z   duration_ms: 0.145578
+2026-11-27T03:11:24.8152489Z   type: 'test'
+2026-11-27T03:11:24.8152962Z   ...
+2026-11-27T03:11:24.8153636Z # Subtest: Refuses row fallback injection before rendering or source loading
+2026-11-27T03:11:24.8154474Z ok 29 - Refuses row fallback injection before rendering or source loading
+2026-11-27T03:11:24.8155119Z   ---
+2026-11-27T03:11:24.8155835Z   duration_ms: 0.159749
+2026-11-27T03:11:24.8156377Z   type: 'test'
+2026-11-27T03:11:24.8156802Z   ...
+2026-11-27T03:11:24.8157431Z # Subtest: Refuses Ang fallback injection before rendering or source loading
+2026-11-27T03:11:24.8158127Z ok 30 - Refuses Ang fallback injection before rendering or source loading
+2026-11-27T03:11:24.8158605Z   ---
+2026-11-27T03:11:24.8159122Z   duration_ms: 0.246641
+2026-11-27T03:11:24.8159560Z   type: 'test'
+2026-11-27T03:11:24.8160008Z   ...
+2026-11-27T03:11:24.8160851Z # Subtest: Refuses unsafe HTML attribute before rendering or source loading
+2026-11-27T03:11:24.8161536Z ok 31 - Refuses unsafe HTML attribute before rendering or source loading
+2026-11-27T03:11:24.8161897Z   ---
+2026-11-27T03:11:24.8162106Z   duration_ms: 0.283
+2026-11-27T03:11:24.8162369Z   type: 'test'
+2026-11-27T03:11:24.8162576Z   ...
+2026-11-27T03:11:24.8162932Z # Subtest: Refuses unknown catalog script field before rendering or source loading
+2026-11-27T03:11:24.8163634Z ok 32 - Refuses unknown catalog script field before rendering or source loading
+2026-11-27T03:11:24.8163951Z   ---
+2026-11-27T03:11:24.8164174Z   duration_ms: 0.188931
+2026-11-27T03:11:24.8164403Z   type: 'test'
+2026-11-27T03:11:24.8164609Z   ...
+2026-11-27T03:11:24.8164952Z # Subtest: Refuses missing topic before rendering or source loading
+2026-11-27T03:11:24.8165440Z ok 33 - Refuses missing topic before rendering or source loading
+2026-11-27T03:11:24.8165766Z   ---
+2026-11-27T03:11:24.8166007Z   duration_ms: 0.255512
+2026-11-27T03:11:24.8166261Z   type: 'test'
+2026-11-27T03:11:24.8166471Z   ...
+2026-11-27T03:11:24.8166774Z # Subtest: Refuses missing article before rendering or source loading
+2026-11-27T03:11:24.8167221Z ok 34 - Refuses missing article before rendering or source loading
+2026-11-27T03:11:24.8167524Z   ---
+2026-11-27T03:11:24.8167784Z   duration_ms: 0.645801
+2026-11-27T03:11:24.8168010Z   type: 'test'
+2026-11-27T03:11:24.8168213Z   ...
+2026-11-27T03:11:24.8257261Z # Subtest: Rejects changed selected text even when all attacker-owned inner seals are recomputed
+2026-11-27T03:11:24.8298561Z ok 35 - Rejects changed selected text even when all attacker-owned inner seals are recomputed
+2026-11-27T03:11:24.8301534Z   ---
+2026-11-27T03:11:24.8301975Z   duration_ms: 21.512803
+2026-11-27T03:11:24.8302403Z   type: 'test'
+2026-11-27T03:11:24.8302831Z   ...
+2026-11-27T03:11:24.8453831Z # Subtest: Rejects changed unselected text in the complete package
+2026-11-27T03:11:24.8454891Z ok 36 - Rejects changed unselected text in the complete package
+2026-11-27T03:11:24.8455468Z   ---
+2026-11-27T03:11:24.8455944Z   duration_ms: 22.720256
+2026-11-27T03:11:24.8456473Z   type: 'test'
+2026-11-27T03:11:24.8456939Z   ...
+2026-11-27T03:11:24.8500395Z # Subtest: Rejects missing unselected Salok even after declared counts are lowered
+2026-11-27T03:11:24.8501560Z ok 37 - Rejects missing unselected Salok even after declared counts are lowered
+2026-11-27T03:11:24.8502036Z   ---
+2026-11-27T03:11:24.8502352Z   duration_ms: 9.828167
+2026-11-27T03:11:24.8502621Z   type: 'test'
+2026-11-27T03:11:24.8502885Z   ...
+2026-11-27T03:11:24.8616267Z # Subtest: Rejects duplicate occurrence IDs, even outside the displayed Salok
+2026-11-27T03:11:24.8621781Z ok 38 - Rejects duplicate occurrence IDs, even outside the displayed Salok
+2026-11-27T03:11:24.8622303Z   ---
+2026-11-27T03:11:24.8622629Z   duration_ms: 2.971985
+2026-11-27T03:11:24.8623011Z   type: 'test'
+2026-11-27T03:11:24.8623296Z   ...
+2026-11-27T03:11:24.8658171Z # Subtest: Rejects reassigned authorship, even when original text is unchanged
+2026-11-27T03:11:24.8659091Z ok 39 - Rejects reassigned authorship, even when original text is unchanged
+2026-11-27T03:11:24.8659720Z   ---
+2026-11-27T03:11:24.8660220Z   duration_ms: 13.430349
+2026-11-27T03:11:24.8660851Z   type: 'test'
+2026-11-27T03:11:24.8661323Z   ...
+2026-11-27T03:11:24.8825581Z # Subtest: Rejects new source-edition identity without an explicit reviewed crosswalk
+2026-11-27T03:11:24.8828630Z ok 40 - Rejects new source-edition identity without an explicit reviewed crosswalk
+2026-11-27T03:11:24.8829607Z   ---
+2026-11-27T03:11:24.8830024Z   duration_ms: 4.26607
+2026-11-27T03:11:24.8830373Z   type: 'test'
+2026-11-27T03:11:24.8831205Z   ...
+2026-11-27T03:11:24.8954431Z # Subtest: Rejects removed danda; comparison normalization never rewrites source
+2026-11-27T03:11:24.8957689Z ok 41 - Rejects removed danda; comparison normalization never rewrites source
+2026-11-27T03:11:24.8958488Z   ---
+2026-11-27T03:11:24.8958843Z   duration_ms: 17.800747
+2026-11-27T03:11:24.8959341Z   type: 'test'
+2026-11-27T03:11:24.8973606Z   ...
+2026-11-27T03:11:24.9021912Z # Subtest: Rejects structural heading changes even when selected verse text is intact
+2026-11-27T03:11:24.9035444Z ok 42 - Rejects structural heading changes even when selected verse text is intact
+2026-11-27T03:11:24.9035866Z   ---
+2026-11-27T03:11:24.9036189Z   duration_ms: 14.471284
+2026-11-27T03:11:24.9036828Z   type: 'test'
+2026-11-27T03:11:24.9037062Z   ...
+2026-11-27T03:11:24.9064169Z # Subtest: Rejects a source wrapper claiming qualified approval
+2026-11-27T03:11:24.9064903Z ok 43 - Rejects a source wrapper claiming qualified approval
+2026-11-27T03:11:24.9065553Z   ---
+2026-11-27T03:11:24.9066667Z   duration_ms: 4.427306
+2026-11-27T03:11:24.9067135Z   type: 'test'
+2026-11-27T03:11:24.9067523Z   ...
+2026-11-27T03:11:24.9132304Z # Subtest: Rejects substituted complete package bytes under another package ID
+2026-11-27T03:11:24.9143004Z ok 44 - Rejects substituted complete package bytes under another package ID
+2026-11-27T03:11:24.9143687Z   ---
+2026-11-27T03:11:24.9144138Z   duration_ms: 4.656438
+2026-11-27T03:11:24.9144669Z   type: 'test'
+2026-11-27T03:11:24.9145053Z   ...
+2026-11-27T03:11:24.9145808Z # Subtest: Refuses the whole catalog if one package is missing, with a bounded user-safe error
+2026-11-27T03:11:24.9146721Z ok 45 - Refuses the whole catalog if one package is missing, with a bounded user-safe error
+2026-11-27T03:11:24.9147370Z   ---
+2026-11-27T03:11:24.9147785Z   duration_ms: 0.294582
+2026-11-27T03:11:24.9148205Z   type: 'test'
+2026-11-27T03:11:24.9148637Z   ...
+2026-11-27T03:11:24.9149247Z # Subtest: Malformed JSON, oversized files and invalid byte types fail closed
+2026-11-27T03:11:24.9150477Z ok 46 - Malformed JSON, oversized files and invalid byte types fail closed
+2026-11-27T03:11:24.9151370Z   ---
+2026-11-27T03:11:24.9151782Z   duration_ms: 2.280473
+2026-11-27T03:11:24.9152387Z   type: 'test'
+2026-11-27T03:11:24.9152804Z   ...
+2026-11-27T03:11:24.9153558Z # Subtest: Fixed source and reference contracts are deeply frozen and contain no source verse copies
+2026-11-27T03:11:24.9154680Z ok 47 - Fixed source and reference contracts are deeply frozen and contain no source verse copies
+2026-11-27T03:11:24.9155475Z   ---
+2026-11-27T03:11:24.9155904Z   duration_ms: 0.15188
+2026-11-27T03:11:24.9156312Z   type: 'test'
+2026-11-27T03:11:24.9156703Z   ...
+2026-11-27T03:11:25.1395256Z # Subtest: the directory names ten distinct existing readers and does not duplicate Japji
+2026-11-27T03:11:25.1396612Z ok 48 - the directory names ten distinct existing readers and does not duplicate Japji
+2026-11-27T03:11:25.1397412Z   ---
+2026-11-27T03:11:25.1398806Z   duration_ms: 1.20944
+2026-11-27T03:11:25.1399539Z   type: 'test'
+2026-11-27T03:11:25.1400090Z   ...
+2026-11-27T03:11:25.1401125Z # Subtest: every reader route exists and Saved entry preserves its exact reading route
+2026-11-27T03:11:25.1402543Z ok 49 - every reader route exists and Saved entry preserves its exact reading route
+2026-11-27T03:11:25.1403622Z   ---
+2026-11-27T03:11:25.1404402Z   duration_ms: 2.220293
+2026-11-27T03:11:25.1405216Z   type: 'test'
+2026-11-27T03:11:25.1406004Z   ...
+2026-11-27T03:11:25.1407358Z # Subtest: each source binding matches exact file bytes and declared identity
+2026-11-27T03:11:25.1408711Z ok 50 - each source binding matches exact file bytes and declared identity
+2026-11-27T03:11:25.1409557Z   ---
+2026-11-27T03:11:25.1409929Z   duration_ms: 28.646254
+2026-11-27T03:11:25.1410321Z   type: 'test'
+2026-11-27T03:11:25.1411735Z   ...
+2026-11-27T03:11:25.1413129Z # Subtest: source package metadata and existing manifests agree with the directory bindings
+2026-11-27T03:11:25.1414129Z ok 51 - source package metadata and existing manifests agree with the directory bindings
+2026-11-27T03:11:25.1414726Z   ---
+2026-11-27T03:11:25.1415000Z   duration_ms: 0.553023
+2026-11-27T03:11:25.1415342Z   type: 'test'
+2026-11-27T03:11:25.1415615Z   ...
+2026-11-27T03:11:25.1416154Z # Subtest: Nitnem preserves its mixed source families instead of relabelling everything SGGS
+2026-11-27T03:11:25.1416983Z ok 52 - Nitnem preserves its mixed source families instead of relabelling everything SGGS
+2026-11-27T03:11:25.1417458Z   ---
+2026-11-27T03:11:25.1417762Z   duration_ms: 0.268657
+2026-11-27T03:11:25.1418069Z   type: 'test'
+2026-11-27T03:11:25.1418422Z   ...
+2026-11-27T03:11:25.1419026Z # Subtest: directory records contain navigation metadata, not verse copies or authority claims
+2026-11-27T03:11:25.1420002Z ok 53 - directory records contain navigation metadata, not verse copies or authority claims
+2026-11-27T03:11:25.1420421Z   ---
+2026-11-27T03:11:25.1420925Z   duration_ms: 0.689716
+2026-11-27T03:11:25.1421409Z   type: 'test'
+2026-11-27T03:11:25.1421729Z   ...
+2026-11-27T03:11:25.1422243Z # Subtest: all catalog arrays, records and nested aliases/bindings are immutable
+2026-11-27T03:11:25.1422944Z ok 54 - all catalog arrays, records and nested aliases/bindings are immutable
+2026-11-27T03:11:25.1423405Z   ---
+2026-11-27T03:11:25.1424048Z   duration_ms: 0.199133
+2026-11-27T03:11:25.1424379Z   type: 'test'
+2026-11-27T03:11:25.1424654Z   ...
+2026-11-27T03:11:25.1425189Z # Subtest: whole-token directory search rejects substring traps and unrelated metadata
+2026-11-27T03:11:25.1425933Z ok 55 - whole-token directory search rejects substring traps and unrelated metadata
+2026-11-27T03:11:25.1426426Z   ---
+2026-11-27T03:11:25.1426721Z   duration_ms: 48.322404
+2026-11-27T03:11:25.1427075Z   type: 'test'
+2026-11-27T03:11:25.1427383Z   ...
+2026-11-27T03:11:25.1428000Z # Subtest: explicit Punjabi and transliterated title aliases resolve without searching descriptions
+2026-11-27T03:11:25.1428880Z ok 56 - explicit Punjabi and transliterated title aliases resolve without searching descriptions
+2026-11-27T03:11:25.1429419Z   ---
+2026-11-27T03:11:25.1429721Z   duration_ms: 0.719753
+2026-11-27T03:11:25.1430068Z   type: 'test'
+2026-11-27T03:11:25.1430354Z   ...
+2026-11-27T03:11:25.1431459Z # Subtest: empty search shows readers, punctuation-only and invalid input do not
+2026-11-27T03:11:25.1432180Z ok 57 - empty search shows readers, punctuation-only and invalid input do not
+2026-11-27T03:11:25.1432646Z   ---
+2026-11-27T03:11:25.1432979Z   duration_ms: 0.313554
+2026-11-27T03:11:25.1433293Z   type: 'test'
+2026-11-27T03:11:25.1433604Z   ...
+2026-11-27T03:11:25.1434219Z # Subtest: only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+2026-11-27T03:11:25.1435227Z ok 58 - only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+2026-11-27T03:11:25.1435852Z   ---
+2026-11-27T03:11:25.1436159Z   duration_ms: 0.223314
+2026-11-27T03:11:25.1436523Z   type: 'test'
+2026-11-27T03:11:25.1436826Z   ...
+2026-11-27T03:11:25.1437370Z # Subtest: Explore only links existing destinations and preserves literal-topic status
+2026-11-27T03:11:25.1438174Z ok 59 - Explore only links existing destinations and preserves literal-topic status
+2026-11-27T03:11:25.1438728Z   ---
+2026-11-27T03:11:25.1439008Z   duration_ms: 0.808147
+2026-11-27T03:11:25.1439337Z   type: 'test'
+2026-11-27T03:11:25.1439629Z   ...
+2026-11-27T03:11:25.1440115Z # Subtest: Simran and physiology remain distinct navigation categories
+2026-11-27T03:11:25.1440869Z ok 60 - Simran and physiology remain distinct navigation categories
+2026-11-27T03:11:25.1441382Z   ---
+2026-11-27T03:11:25.1441683Z   duration_ms: 0.279389
+2026-11-27T03:11:25.1442006Z   type: 'test'
+2026-11-27T03:11:25.1442322Z   ...
+2026-11-27T03:11:25.1442930Z # Subtest: planned modules are unavailable metadata rather than functioning links or substitutes
+2026-11-27T03:11:25.1444044Z ok 61 - planned modules are unavailable metadata rather than functioning links or substitutes
+2026-11-27T03:11:25.1444594Z   ---
+2026-11-27T03:11:25.1444869Z   duration_ms: 0.119731
+2026-11-27T03:11:25.1445202Z   type: 'test'
+2026-11-27T03:11:25.1445499Z   ...
+2026-11-27T03:11:25.1445918Z # Subtest: lookup helpers only return the declared catalogue entry
+2026-11-27T03:11:25.1446583Z ok 62 - lookup helpers only return the declared catalogue entry
+2026-11-27T03:11:25.1446997Z   ---
+2026-11-27T03:11:25.1447290Z   duration_ms: 0.112248
+2026-11-27T03:11:25.1447617Z   type: 'test'
+2026-11-27T03:11:25.1447874Z   ...
+2026-11-27T03:11:25.4678215Z # Subtest: All494 real originals and complete independently sealed synthetic teaching pass
+2026-11-27T03:11:25.4698844Z ok 63 - All494 real originals and complete independently sealed synthetic teaching pass
+2026-11-27T03:11:25.4700113Z   ---
+2026-11-27T03:11:25.4700438Z   duration_ms: 90.628779
+2026-11-27T03:11:25.4701032Z   type: 'test'
+2026-11-27T03:11:25.4701379Z   ...
+2026-11-27T03:11:25.4701834Z # Subtest: An editorial-only reseal cannot change the source seal
+2026-11-27T03:11:25.4702494Z ok 64 - An editorial-only reseal cannot change the source seal
+2026-11-27T03:11:25.4702923Z   ---
+2026-11-27T03:11:25.4703242Z   duration_ms: 95.417351
+2026-11-27T03:11:25.4703581Z   type: 'test'
+2026-11-27T03:11:25.4703869Z   ...
+2026-11-27T03:11:25.4704611Z # Subtest: Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing
+2026-11-27T03:11:25.4705647Z ok 65 - Every Mahalla heading is protected against relocation, abbreviation substitution and omission after resealing
+2026-11-27T03:11:25.4706259Z   ---
+2026-11-27T03:11:25.4706558Z   duration_ms: 666.589887
+2026-11-27T03:11:25.4706881Z   type: 'test'
+2026-11-27T03:11:25.4707224Z   ...
+2026-11-27T03:11:25.5141667Z # Subtest: Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals
+2026-11-27T03:11:25.5144654Z ok 66 - Heading/invocation reversal and re-insertion of the excluded Farid occurrence fail despite renewed seals
+2026-11-27T03:11:25.5145456Z   ---
+2026-11-27T03:11:25.5145768Z   duration_ms: 51.750911
+2026-11-27T03:11:25.5146200Z   type: 'test'
+2026-11-27T03:11:25.5146511Z   ...
+2026-11-27T03:11:25.5480929Z # Subtest: The retained nasal Unicode mark cannot be silently replaced by a private-use character
+2026-11-27T03:11:25.5503039Z ok 67 - The retained nasal Unicode mark cannot be silently replaced by a private-use character
+2026-11-27T03:11:25.5504622Z   ---
+2026-11-27T03:11:25.5518190Z   duration_ms: 24.990538
+2026-11-27T03:11:25.5521684Z   type: 'test'
+2026-11-27T03:11:25.5523945Z   ...
+2026-11-27T03:11:26.1421530Z # Subtest: All ten split digital-Ang units reject collapse onto either Ang after resealing
+2026-11-27T03:11:26.1422283Z ok 68 - All ten split digital-Ang units reject collapse onto either Ang after resealing
+2026-11-27T03:11:26.1422712Z   ---
+2026-11-27T03:11:26.1422945Z   duration_ms: 603.691497
+2026-11-27T03:11:26.1423215Z   type: 'test'
+2026-11-27T03:11:26.1423464Z   ...
+2026-11-27T03:11:26.2058061Z # Subtest: Printed extents cannot replace the recorded digital locator or be promoted to full collation
+2026-11-27T03:11:26.2058824Z ok 69 - Printed extents cannot replace the recorded digital locator or be promoted to full collation
+2026-11-27T03:11:26.2061110Z   ---
+2026-11-27T03:11:26.2061470Z   duration_ms: 63.116094
+2026-11-27T03:11:26.2061799Z   type: 'test'
+2026-11-27T03:11:26.2062140Z   ...
+2026-11-27T03:11:26.3085817Z # Subtest: A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse
+2026-11-27T03:11:26.3086987Z ok 70 - A Guru heading cannot be inherited by an unheaded Salok or inferred from a name in a verse
+2026-11-27T03:11:26.3087949Z   ---
+2026-11-27T03:11:26.3088359Z   duration_ms: 99.978679
+2026-11-27T03:11:26.3088837Z   type: 'test'
+2026-11-27T03:11:26.3089193Z   ...
+2026-11-27T03:11:26.5038145Z # Subtest: Source and teaching cannot be promoted to publication or human-reviewed authority by resealing
+2026-11-27T03:11:26.5039065Z ok 71 - Source and teaching cannot be promoted to publication or human-reviewed authority by resealing
+2026-11-27T03:11:26.5039826Z   ---
+2026-11-27T03:11:26.5040077Z   duration_ms: 197.483644
+2026-11-27T03:11:26.5040341Z   type: 'test'
+2026-11-27T03:11:26.5040834Z   ...
+2026-11-27T03:11:26.7691300Z # Subtest: Missing or extra studies, meanings and heading contexts fail complete coverage
+2026-11-27T03:11:26.7692153Z ok 72 - Missing or extra studies, meanings and heading contexts fail complete coverage
+2026-11-27T03:11:26.7692534Z   ---
+2026-11-27T03:11:26.7692847Z   duration_ms: 265.508333
+2026-11-27T03:11:26.7693169Z   type: 'test'
+2026-11-27T03:11:26.7693457Z   ...
+2026-11-27T03:11:26.9116398Z # Subtest: Swapped map values and first-line-only study bindings cannot misattach meanings
+2026-11-27T03:11:26.9117679Z ok 73 - Swapped map values and first-line-only study bindings cannot misattach meanings
+2026-11-27T03:11:26.9118196Z   ---
+2026-11-27T03:11:26.9118492Z   duration_ms: 142.877015
+2026-11-27T03:11:26.9118875Z   type: 'test'
+2026-11-27T03:11:26.9119150Z   ...
+2026-11-27T03:11:26.9845945Z # Subtest: A correct heading hash still needs the exact enclosing Salok and draft status
+2026-11-27T03:11:26.9846879Z ok 74 - A correct heading hash still needs the exact enclosing Salok and draft status
+2026-11-27T03:11:26.9847457Z   ---
+2026-11-27T03:11:26.9847893Z   duration_ms: 80.678126
+2026-11-27T03:11:26.9848260Z   type: 'test'
+2026-11-27T03:11:26.9848584Z   ...
+2026-11-27T03:11:26.9970958Z # Subtest: japji: unchanged published fixture passes every line and full-object check
+2026-11-27T03:11:26.9971736Z ok 75 - japji: unchanged published fixture passes every line and full-object check
+2026-11-27T03:11:26.9985375Z   ---
+2026-11-27T03:11:27.0002299Z   duration_ms: 36.972128
+2026-11-27T03:11:27.0002831Z   type: 'test'
+2026-11-27T03:11:27.0003119Z   ...
+2026-11-27T03:11:27.0003706Z # Subtest: japji: text and matching forged stored hash still fail the frozen object digest
+2026-11-27T03:11:27.0005062Z ok 76 - japji: text and matching forged stored hash still fail the frozen object digest
+2026-11-27T03:11:27.0005499Z   ---
+2026-11-27T03:11:27.0005803Z   duration_ms: 18.724684
+2026-11-27T03:11:27.0006106Z   type: 'test'
+2026-11-27T03:11:27.0006380Z   ...
+2026-11-27T03:11:27.0006777Z # Subtest: japji: altered text with the old stored hash fails the per-line digest
+2026-11-27T03:11:27.0007267Z ok 77 - japji: altered text with the old stored hash fails the per-line digest
+2026-11-27T03:11:27.0007611Z   ---
+2026-11-27T03:11:27.0007829Z   duration_ms: 21.57866
+2026-11-27T03:11:27.0008087Z   type: 'test'
+2026-11-27T03:11:27.0008310Z   ...
+2026-11-27T03:11:27.0008622Z # Subtest: japji: a stored hash cannot be changed independently
+2026-11-27T03:11:27.0009062Z ok 78 - japji: a stored hash cannot be changed independently
+2026-11-27T03:11:27.0009357Z   ---
+2026-11-27T03:11:27.0009588Z   duration_ms: 14.871639
+2026-11-27T03:11:27.0009832Z   type: 'test'
+2026-11-27T03:11:27.0010121Z   ...
+2026-11-27T03:11:27.0010734Z # Subtest: japji: deleting a line fails, even if declared counts are reduced
+2026-11-27T03:11:27.0011240Z ok 79 - japji: deleting a line fails, even if declared counts are reduced
+2026-11-27T03:11:27.0011590Z   ---
+2026-11-27T03:11:27.0011811Z   duration_ms: 4.919394
+2026-11-27T03:11:27.0012350Z   type: 'test'
+2026-11-27T03:11:27.0012590Z   ...
+2026-11-27T03:11:27.0013006Z # Subtest: japji: duplicate replacement preserves count but fails identity
+2026-11-27T03:11:27.0013486Z ok 80 - japji: duplicate replacement preserves count but fails identity
+2026-11-27T03:11:27.0013801Z   ---
+2026-11-27T03:11:27.0014005Z   duration_ms: 4.211645
+2026-11-27T03:11:27.0014252Z   type: 'test'
+2026-11-27T03:11:27.0014480Z   ...
+2026-11-27T03:11:27.0014803Z # Subtest: japji: reordered lines fail before rendering
+2026-11-27T03:11:27.0015168Z ok 81 - japji: reordered lines fail before rendering
+2026-11-27T03:11:27.0015432Z   ---
+2026-11-27T03:11:27.0015659Z   duration_ms: 3.886011
+2026-11-27T03:11:27.0016195Z   type: 'test'
+2026-11-27T03:11:27.0016450Z   ...
+2026-11-27T03:11:27.0016715Z # Subtest: japji: missing complete unit fails
+2026-11-27T03:11:27.0017032Z ok 82 - japji: missing complete unit fails
+2026-11-27T03:11:27.0017310Z   ---
+2026-11-27T03:11:27.0017543Z   duration_ms: 4.991772
+2026-11-27T03:11:27.0017770Z   type: 'test'
+2026-11-27T03:11:27.0018014Z   ...
+2026-11-27T03:11:27.0018266Z # Subtest: japji: reordered complete units fail
+2026-11-27T03:11:27.0018614Z ok 83 - japji: reordered complete units fail
+2026-11-27T03:11:27.0018897Z   ---
+2026-11-27T03:11:27.0019149Z   duration_ms: 3.526829
+2026-11-27T03:11:27.0019382Z   type: 'test'
+2026-11-27T03:11:27.0019602Z   ...
+2026-11-27T03:11:27.0019912Z # Subtest: japji: modified unit identifier fails
+2026-11-27T03:11:27.0020333Z ok 84 - japji: modified unit identifier fails
+2026-11-27T03:11:27.0021018Z   ---
+2026-11-27T03:11:27.0021292Z   duration_ms: 4.488737
+2026-11-27T03:11:27.0021577Z   type: 'test'
+2026-11-27T03:11:27.0021917Z   ...
+2026-11-27T03:11:27.0022263Z # Subtest: japji: exact per-line Ang is required
+2026-11-27T03:11:27.0022705Z ok 85 - japji: exact per-line Ang is required
+2026-11-27T03:11:27.0023046Z   ---
+2026-11-27T03:11:27.0023306Z   duration_ms: 3.420317
+2026-11-27T03:11:27.0023634Z   type: 'test'
+2026-11-27T03:11:27.0023944Z   ...
+2026-11-27T03:11:27.0024318Z # Subtest: japji: exact source-line location is required
+2026-11-27T03:11:27.0024851Z ok 86 - japji: exact source-line location is required
+2026-11-27T03:11:27.0025240Z   ---
+2026-11-27T03:11:27.0025535Z   duration_ms: 3.674668
+2026-11-27T03:11:27.0025810Z   type: 'test'
+2026-11-27T03:11:27.0026098Z   ...
+2026-11-27T03:11:27.0026441Z # Subtest: japji: exact unit Ang list is required
+2026-11-27T03:11:27.0026849Z ok 87 - japji: exact unit Ang list is required
+2026-11-27T03:11:27.0027203Z   ---
+2026-11-27T03:11:27.0027460Z   duration_ms: 3.781976
+2026-11-27T03:11:27.0027724Z   type: 'test'
+2026-11-27T03:11:27.0028029Z   ...
+2026-11-27T03:11:27.0028467Z # Subtest: japji: non-text metadata is included in the frozen object digest
+2026-11-27T03:11:27.0029133Z ok 88 - japji: non-text metadata is included in the frozen object digest
+2026-11-27T03:11:27.0029594Z   ---
+2026-11-27T03:11:27.0029846Z   duration_ms: 24.792234
+2026-11-27T03:11:27.0030201Z   type: 'test'
+2026-11-27T03:11:27.0030488Z   ...
+2026-11-27T03:11:27.0031346Z # Subtest: japji: adding metadata also fails the whole-object contract
+2026-11-27T03:11:27.0031915Z ok 89 - japji: adding metadata also fails the whole-object contract
+2026-11-27T03:11:27.0032323Z   ---
+2026-11-27T03:11:27.0032604Z   duration_ms: 19.035248
+2026-11-27T03:11:27.0032942Z   type: 'test'
+2026-11-27T03:11:27.0033233Z   ...
+2026-11-27T03:11:27.0033744Z # Subtest: japji: object key insertion order does not change the documented canonical digest
+2026-11-27T03:11:27.0034472Z ok 90 - japji: object key insertion order does not change the documented canonical digest
+2026-11-27T03:11:27.0035092Z   ---
+2026-11-27T03:11:27.0035409Z   duration_ms: 33.962129
+2026-11-27T03:11:27.0035740Z   type: 'test'
+2026-11-27T03:11:27.0036013Z   ...
+2026-11-27T03:11:27.0036447Z # Subtest: japji: data is frozen synchronously before WebCrypto yields
+2026-11-27T03:11:27.0036998Z ok 91 - japji: data is frozen synchronously before WebCrypto yields
+2026-11-27T03:11:27.0037414Z   ---
+2026-11-27T03:11:27.0037720Z   duration_ms: 17.884773
+2026-11-27T03:11:27.0038017Z   type: 'test'
+2026-11-27T03:11:27.0038301Z   ...
+2026-11-27T03:11:27.0038792Z # Subtest: japji: whole-file SRI pins both source and verifier before the reader script
+2026-11-27T03:11:27.0039478Z ok 92 - japji: whole-file SRI pins both source and verifier before the reader script
+2026-11-27T03:11:27.0039922Z   ---
+2026-11-27T03:11:27.0040211Z   duration_ms: 1.522051
+2026-11-27T03:11:27.0040703Z   type: 'test'
+2026-11-27T03:11:27.0040977Z   ...
+2026-11-27T03:11:27.0041489Z # Subtest: japji: actual reader blocks a forged source before model, DOM scripture or storage access
+2026-11-27T03:11:27.0042488Z ok 93 - japji: actual reader blocks a forged source before model, DOM scripture or storage access
+2026-11-27T03:11:27.0042984Z   ---
+2026-11-27T03:11:27.0043244Z   duration_ms: 23.518493
+2026-11-27T03:11:27.0043520Z   type: 'test'
+2026-11-27T03:11:27.0043733Z   ...
+2026-11-27T03:11:27.0044124Z # Subtest: sukhmani: unchanged published fixture passes every line and full-object check
+2026-11-27T03:11:27.0044648Z ok 94 - sukhmani: unchanged published fixture passes every line and full-object check
+2026-11-27T03:11:27.0045032Z   ---
+2026-11-27T03:11:27.0045267Z   duration_ms: 108.459423
+2026-11-27T03:11:27.0045504Z   type: 'test'
+2026-11-27T03:11:27.0045720Z   ...
+2026-11-27T03:11:27.0046110Z # Subtest: sukhmani: text and matching forged stored hash still fail the frozen object digest
+2026-11-27T03:11:27.0046684Z ok 95 - sukhmani: text and matching forged stored hash still fail the frozen object digest
+2026-11-27T03:11:27.0047136Z   ---
+2026-11-27T03:11:27.0047347Z   duration_ms: 77.243491
+2026-11-27T03:11:27.0047593Z   type: 'test'
+2026-11-27T03:11:27.0047794Z   ...
+2026-11-27T03:11:27.0048139Z # Subtest: sukhmani: altered text with the old stored hash fails the per-line digest
+2026-11-27T03:11:27.0048694Z ok 96 - sukhmani: altered text with the old stored hash fails the per-line digest
+2026-11-27T03:11:27.0049024Z   ---
+2026-11-27T03:11:27.0049246Z   duration_ms: 72.41637
+2026-11-27T03:11:27.0049473Z   type: 'test'
+2026-11-27T03:11:27.0049663Z   ...
+2026-11-27T03:11:27.0050021Z # Subtest: sukhmani: a stored hash cannot be changed independently
+2026-11-27T03:11:27.0050460Z ok 97 - sukhmani: a stored hash cannot be changed independently
+2026-11-27T03:11:27.0051003Z   ---
+2026-11-27T03:11:27.0051212Z   duration_ms: 91.877486
+2026-11-27T03:11:27.0051436Z   type: 'test'
+2026-11-27T03:11:27.0051685Z   ...
+2026-11-27T03:11:27.0052060Z # Subtest: sukhmani: deleting a line fails, even if declared counts are reduced
+2026-11-27T03:11:27.0052550Z ok 98 - sukhmani: deleting a line fails, even if declared counts are reduced
+2026-11-27T03:11:27.0052884Z   ---
+2026-11-27T03:11:27.0053080Z   duration_ms: 28.569667
+2026-11-27T03:11:27.0053353Z   type: 'test'
+2026-11-27T03:11:27.0053560Z   ...
+2026-11-27T03:11:27.0053941Z # Subtest: sukhmani: duplicate replacement preserves count but fails identity
+2026-11-27T03:11:27.0054413Z ok 99 - sukhmani: duplicate replacement preserves count but fails identity
+2026-11-27T03:11:27.0054742Z   ---
+2026-11-27T03:11:27.0054971Z   duration_ms: 22.833485
+2026-11-27T03:11:27.0055198Z   type: 'test'
+2026-11-27T03:11:27.0055405Z   ...
+2026-11-27T03:11:27.0055727Z # Subtest: sukhmani: reordered lines fail before rendering
+2026-11-27T03:11:27.0056103Z ok 100 - sukhmani: reordered lines fail before rendering
+2026-11-27T03:11:27.0056411Z   ---
+2026-11-27T03:11:27.0056622Z   duration_ms: 24.178905
+2026-11-27T03:11:27.0056852Z   type: 'test'
+2026-11-27T03:11:27.0057096Z   ...
+2026-11-27T03:11:27.0057372Z # Subtest: sukhmani: missing complete unit fails
+2026-11-27T03:11:27.0057732Z ok 101 - sukhmani: missing complete unit fails
+2026-11-27T03:11:27.0058005Z   ---
+2026-11-27T03:11:27.0058209Z   duration_ms: 24.742109
+2026-11-27T03:11:27.0058440Z   type: 'test'
+2026-11-27T03:11:27.0058681Z   ...
+2026-11-27T03:11:27.0058971Z # Subtest: sukhmani: reordered complete units fail
+2026-11-27T03:11:27.0059310Z ok 102 - sukhmani: reordered complete units fail
+2026-11-27T03:11:27.0059583Z   ---
+2026-11-27T03:11:27.0059802Z   duration_ms: 24.167161
+2026-11-27T03:11:27.0060049Z   type: 'test'
+2026-11-27T03:11:27.0060295Z   ...
+2026-11-27T03:11:27.0060775Z # Subtest: sukhmani: modified unit identifier fails
+2026-11-27T03:11:27.0061144Z ok 103 - sukhmani: modified unit identifier fails
+2026-11-27T03:11:27.0061422Z   ---
+2026-11-27T03:11:27.0061642Z   duration_ms: 25.035223
+2026-11-27T03:11:27.0061878Z   type: 'test'
+2026-11-27T03:11:27.0062115Z   ...
+2026-11-27T03:11:27.0062382Z # Subtest: sukhmani: exact per-line Ang is required
+2026-11-27T03:11:27.0062746Z ok 104 - sukhmani: exact per-line Ang is required
+2026-11-27T03:11:27.0063037Z   ---
+2026-11-27T03:11:27.0063348Z   duration_ms: 21.646821
+2026-11-27T03:11:27.0063580Z   type: 'test'
+2026-11-27T03:11:27.0063814Z   ...
+2026-11-27T03:11:27.0064130Z # Subtest: sukhmani: exact source-line location is required
+2026-11-27T03:11:27.0064516Z ok 105 - sukhmani: exact source-line location is required
+2026-11-27T03:11:27.0064808Z   ---
+2026-11-27T03:11:27.0065009Z   duration_ms: 23.039252
+2026-11-27T03:11:27.0065224Z   type: 'test'
+2026-11-27T03:11:27.0065505Z   ...
+2026-11-27T03:11:27.0065777Z # Subtest: sukhmani: exact unit Ang list is required
+2026-11-27T03:11:27.0066131Z ok 106 - sukhmani: exact unit Ang list is required
+2026-11-27T03:11:27.0066394Z   ---
+2026-11-27T03:11:27.0066657Z   duration_ms: 29.468184
+2026-11-27T03:11:27.0066951Z   type: 'test'
+2026-11-27T03:11:27.0067160Z   ...
+2026-11-27T03:11:27.0067513Z # Subtest: sukhmani: non-text metadata is included in the frozen object digest
+2026-11-27T03:11:27.0068034Z ok 107 - sukhmani: non-text metadata is included in the frozen object digest
+2026-11-27T03:11:27.0068350Z   ---
+2026-11-27T03:11:27.0068594Z   duration_ms: 63.077814
+2026-11-27T03:11:27.0068844Z   type: 'test'
+2026-11-27T03:11:27.0069057Z   ...
+2026-11-27T03:11:27.0069388Z # Subtest: sukhmani: adding metadata also fails the whole-object contract
+2026-11-27T03:11:27.0069837Z ok 108 - sukhmani: adding metadata also fails the whole-object contract
+2026-11-27T03:11:27.0070189Z   ---
+2026-11-27T03:11:27.0070394Z   duration_ms: 66.241431
+2026-11-27T03:11:27.0070832Z   type: 'test'
+2026-11-27T03:11:27.0071089Z   ...
+2026-11-27T03:11:27.0071500Z # Subtest: sukhmani: object key insertion order does not change the documented canonical digest
+2026-11-27T03:11:27.0072090Z ok 109 - sukhmani: object key insertion order does not change the documented canonical digest
+2026-11-27T03:11:27.0072459Z   ---
+2026-11-27T03:11:27.0072706Z   duration_ms: 63.913518
+2026-11-27T03:11:27.0072936Z   type: 'test'
+2026-11-27T03:11:27.0073148Z   ...
+2026-11-27T03:11:27.0073505Z # Subtest: sukhmani: data is frozen synchronously before WebCrypto yields
+2026-11-27T03:11:27.0073951Z ok 110 - sukhmani: data is frozen synchronously before WebCrypto yields
+2026-11-27T03:11:27.0074259Z   ---
+2026-11-27T03:11:27.0074497Z   duration_ms: 73.85883
+2026-11-27T03:11:27.0074727Z   type: 'test'
+2026-11-27T03:11:27.0075043Z   ...
+2026-11-27T03:11:27.0075456Z # Subtest: sukhmani: whole-file SRI pins both source and verifier before the reader script
+2026-11-27T03:11:27.0076003Z ok 111 - sukhmani: whole-file SRI pins both source and verifier before the reader script
+2026-11-27T03:11:27.0076407Z   ---
+2026-11-27T03:11:27.0076630Z   duration_ms: 7.704105
+2026-11-27T03:11:27.0076888Z   type: 'test'
+2026-11-27T03:11:27.0077104Z   ...
+2026-11-27T03:11:27.0077522Z # Subtest: sukhmani: actual reader blocks a forged source before model, DOM scripture or storage access
+2026-11-27T03:11:27.0078131Z ok 112 - sukhmani: actual reader blocks a forged source before model, DOM scripture or storage access
+2026-11-27T03:11:27.0078558Z   ---
+2026-11-27T03:11:27.0078792Z   duration_ms: 89.245191
+2026-11-27T03:11:27.0079029Z   type: 'test'
+2026-11-27T03:11:27.0079244Z   ...
+2026-11-27T03:11:27.0079619Z # Subtest: Sukhmani contiguous source sequence is required independently of line IDs
+2026-11-27T03:11:27.0080162Z ok 113 - Sukhmani contiguous source sequence is required independently of line IDs
+2026-11-27T03:11:27.0080707Z   ---
+2026-11-27T03:11:27.0080946Z   duration_ms: 40.304102
+2026-11-27T03:11:27.0081194Z   type: 'test'
+2026-11-27T03:11:27.0081420Z   ...
+2026-11-27T03:11:27.0081825Z # Subtest: Sukhmani source identifier alteration is included in the object digest
+2026-11-27T03:11:27.0082397Z ok 114 - Sukhmani source identifier alteration is included in the object digest
+2026-11-27T03:11:27.0082738Z   ---
+2026-11-27T03:11:27.0082945Z   duration_ms: 60.770395
+2026-11-27T03:11:27.0083205Z   type: 'test'
+2026-11-27T03:11:27.0083424Z   ...
+2026-11-27T03:11:27.0083760Z # Subtest: Sukhmani source approval metadata cannot change unnoticed
+2026-11-27T03:11:27.0084321Z ok 115 - Sukhmani source approval metadata cannot change unnoticed
+2026-11-27T03:11:27.0084634Z   ---
+2026-11-27T03:11:27.0084876Z   duration_ms: 69.340985
+2026-11-27T03:11:27.0085105Z   type: 'test'
+2026-11-27T03:11:27.0085438Z   ...
+2026-11-27T03:11:27.0085808Z # Subtest: Accessor source values are rejected without invoking their getters
+2026-11-27T03:11:27.0086311Z ok 116 - Accessor source values are rejected without invoking their getters
+2026-11-27T03:11:27.0086636Z   ---
+2026-11-27T03:11:27.0086833Z   duration_ms: 1.115266
+2026-11-27T03:11:27.0087085Z   type: 'test'
+2026-11-27T03:11:27.0087300Z   ...
+2026-11-27T03:11:27.0087662Z # Subtest: Sparse arrays, cycles and non-JSON values fail closed
+2026-11-27T03:11:27.0088077Z ok 117 - Sparse arrays, cycles and non-JSON values fail closed
+2026-11-27T03:11:27.0088365Z   ---
+2026-11-27T03:11:27.0088614Z   duration_ms: 1.995003
+2026-11-27T03:11:27.0088950Z   type: 'test'
+2026-11-27T03:11:27.0089220Z   ...
+2026-11-27T03:11:27.0089710Z # Subtest: Frozen expected manifest cannot be overwritten to bless altered data
+2026-11-27T03:11:27.0090201Z ok 118 - Frozen expected manifest cannot be overwritten to bless altered data
+2026-11-27T03:11:27.0090755Z   ---
+2026-11-27T03:11:27.0090986Z   duration_ms: 0.135601
+2026-11-27T03:11:27.0091252Z   type: 'test'
+2026-11-27T03:11:27.0091502Z   ...
+2026-11-27T03:11:27.0091759Z # Subtest: Unavailable WebCrypto fails closed
+2026-11-27T03:11:27.0092114Z ok 119 - Unavailable WebCrypto fails closed
+2026-11-27T03:11:27.0092389Z   ---
+2026-11-27T03:11:27.0092622Z   duration_ms: 2.663598
+2026-11-27T03:11:27.0092859Z   type: 'test'
+2026-11-27T03:11:27.0093090Z   ...
+2026-11-27T03:11:27.0093435Z # Subtest: Unsupported composition has no automatic trust fallback
+2026-11-27T03:11:27.0093864Z ok 120 - Unsupported composition has no automatic trust fallback
+2026-11-27T03:11:27.0094187Z   ---
+2026-11-27T03:11:27.0094415Z   duration_ms: 0.106496
+2026-11-27T03:11:27.0094646Z   type: 'test'
+2026-11-27T03:11:27.0094896Z   ...
+2026-11-27T03:11:27.0095124Z 1..120
+2026-11-27T03:11:27.0095345Z # tests 120
+2026-11-27T03:11:27.0095580Z # suites 0
+2026-11-27T03:11:27.0095789Z # pass 120
+2026-11-27T03:11:27.0096001Z # fail 0
+2026-11-27T03:11:27.0096247Z # cancelled 0
+2026-11-27T03:11:27.0096458Z # skipped 0
+2026-11-27T03:11:27.0096669Z # todo 0
+2026-11-27T03:11:27.0096892Z # duration_ms 2452.911328
+2026-11-27T03:11:27.0459307Z {"total":27,"status":"PASS"}
+2026-11-27T03:11:27.0793645Z {"total":12,"status":"PASS"}
+2026-11-27T03:11:27.1172195Z {"status":"PASS","total":20}
+2026-11-27T03:11:27.1424944Z {
+2026-11-27T03:11:27.1425286Z   "passed": 12,
+2026-11-27T03:11:27.1425528Z   "tests": [
+2026-11-27T03:11:27.1425867Z     "Missing state creates a valid Sukhmani-only state",
+2026-11-27T03:11:27.1426255Z     "Newer and unfamiliar states refuse normalization",
+2026-11-27T03:11:27.1426666Z     "Malformed original data is preserved without a write",
+2026-11-27T03:11:27.1427093Z     "Imported state rejects unknown lines and oversized reflections",
+2026-11-27T03:11:27.1427502Z     "Japji and foreign exports cannot replace Sukhmani state",
+2026-11-27T03:11:27.1427912Z     "Export round-trips Gurmukhi personal notes and bookmarks",
+2026-11-27T03:11:27.1428327Z     "Import preserves current reading preferences and both notes",
+2026-11-27T03:11:27.1428873Z     "Adding later Ashtpadis preserves existing records and accepts their original exports",
+2026-11-27T03:11:27.1429319Z     "Conflicting overlong import refuses before applying",
+2026-11-27T03:11:27.1429732Z     "Web Locks saving merges the latest other-tab learning and never writes Japji",
+2026-11-27T03:11:27.1430140Z     "Absent Web Locks refuses writes",
+2026-11-27T03:11:27.1430680Z     "A future-version record appearing during a write remains untouched"
+2026-11-27T03:11:27.1431039Z   ]
+2026-11-27T03:11:27.1431241Z }
+2026-11-27T03:11:27.1712310Z {"total":9,"status":"PASS"}
+2026-11-27T03:11:27.2314634Z {"total":21,"status":"PASS","readerSHA256":"babdbd8a88e42ec86121d0d14ede3fc09692e67eae2d87541a98205befbb9e1f"}
+2026-11-27T03:11:27.2736753Z node:internal/modules/run_main:123
+2026-11-27T03:11:27.2737303Z     triggerUncaughtException(
+2026-11-27T03:11:27.2737683Z     ^
+2026-11-27T03:11:27.2737846Z 
+2026-11-27T03:11:27.2738223Z AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+2026-11-27T03:11:27.2738565Z 
+2026-11-27T03:11:27.2739204Z   assert.ok(home.includes('Nitnem')&&home.includes('src="library/app.mjs"')&&home.includes('id="today-tools"')&&home.includes('id="explore-list"'))
+2026-11-27T03:11:27.2742731Z 
+2026-11-27T03:11:27.2743887Z     at file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/r6-contract.mjs:6:217
+2026-11-27T03:11:27.2744642Z     at test (file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/r6-contract.mjs:5:35)
+2026-11-27T03:11:27.2745355Z     at file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/r6-contract.mjs:6:7
+2026-11-27T03:11:27.2746093Z     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-11-27T03:11:27.2746573Z     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)
+2026-11-27T03:11:27.2747121Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+2026-11-27T03:11:27.2747502Z   generatedMessage: true,
+2026-11-27T03:11:27.2747771Z   code: 'ERR_ASSERTION',
+2026-11-27T03:11:27.2748046Z   actual: false,
+2026-11-27T03:11:27.2748278Z   expected: true,
+2026-11-27T03:11:27.2748506Z   operator: '==',
+2026-11-27T03:11:27.2748780Z   diff: 'simple'
+2026-11-27T03:11:27.2748988Z }
+2026-11-27T03:11:27.2749104Z 
+2026-11-27T03:11:27.2749225Z Node.js v22.23.5
+2026-11-27T03:11:27.2768268Z ##[error]Process completed with exit code 1.
+2026-11-27T03:11:27.2846885Z ##[group]Run actions/upload-artifact@v4
+2026-11-27T03:11:27.2847169Z with:
+2026-11-27T03:11:27.2847426Z   name: unified-library-evidence
+2026-11-27T03:11:27.2848336Z   path: evidence/library/
+evidence/library-saved-entry/
+evidence/node-verification.json
+evidence/shared-learning-verification.json
+evidence/nitnem-ui-lifecycle-verification.json
+evidence/service-worker-verification.json
+evidence/r6-contract.json
+evidence/r7-contract.json
+
+2026-11-27T03:11:27.2849199Z   if-no-files-found: error
+2026-11-27T03:11:27.2849476Z   compression-level: 6
+2026-11-27T03:11:27.2849702Z   overwrite: false
+2026-11-27T03:11:27.2849938Z   include-hidden-files: false
+2026-11-27T03:11:27.2850177Z ##[endgroup]
+2026-11-27T03:11:27.4073778Z (node:2811) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-27T03:11:27.4074543Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-27T03:11:27.4228637Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-27T03:11:27.4231424Z The least common ancestor is /home/runner/work/gurbani-learning-library/gurbani-learning-library/evidence. This will be the root directory of the artifact
+2026-11-27T03:11:27.4232327Z With the provided path, there will be 69 files uploaded
+2026-11-27T03:11:27.4235224Z Artifact name is valid!
+2026-11-27T03:11:27.4235946Z Root directory input is valid!
+2026-11-27T03:11:27.7553094Z Beginning upload of artifact content to blob storage
+2026-11-27T03:11:27.9414728Z (node:2811) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-27T03:11:28.0888700Z Uploaded bytes 2468904
+2026-11-27T03:11:28.1071435Z Finished uploading artifact content to blob storage!
+2026-11-27T03:11:28.1073456Z SHA256 digest of uploaded artifact zip is a2a5e68fba5b5114e22006d374e26dcc76d745a9f944f5369e430352752dc0c1
+2026-11-27T03:11:28.1074366Z Finalizing artifact upload
+2026-11-27T03:11:28.4299302Z Artifact unified-library-evidence.zip successfully finalized. Artifact ID 15168194720
+2026-11-27T03:11:28.4300152Z Artifact unified-library-evidence has been successfully uploaded! Final size is 2468904 bytes. Artifact ID is 15168194720
+2026-11-27T03:11:28.4305150Z Artifact download URL: https://github.com/sskhangura82/gurbani-learning-library/actions/runs/45932667654/artifacts/15168194720
+2026-11-27T03:11:28.4472115Z Post job cleanup.
+2026-11-27T03:11:28.5117063Z [command]/usr/bin/git version
+2026-11-27T03:11:28.5147401Z git version 2.56.1
+2026-11-27T03:11:28.5172785Z Temporarily overriding HOME='/home/runner/work/_temp/7b5e5524-0146-4ae9-a8cc-521830e2e1ff' before making global git config changes
+2026-11-27T03:11:28.5173828Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T03:11:28.5176824Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gurbani-learning-library/gurbani-learning-library
+2026-11-27T03:11:28.5492739Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T03:11:28.5522116Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T03:11:28.5697802Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T03:11:28.5721414Z http.https://github.com/.extraheader
+2026-11-27T03:11:28.5729330Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-27T03:11:28.5753780Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T03:11:28.5921750Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T03:11:28.5945381Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T03:11:28.6211485Z Cleaning up orphan processes
+2026-11-27T03:11:28.6497309Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

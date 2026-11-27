@@ -1,0 +1,70 @@
+{
+  "scope": "Original source module regressions on combined branch; browser delivery checked separately",
+  "results": [
+    {
+      "command": [
+        "node",
+        "tests/knowledge-contract.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/01-knowledge-contract.log",
+      "logSha256": "588e92835444bae37f09976c74a4222a52dcbcf21258e9bcca249822529549be"
+    },
+    {
+      "command": [
+        "node",
+        "tests/knowledge-source-registry.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/02-knowledge-source-registry.log",
+      "logSha256": "6e58fac8748ff02cd39260602f57e9522e75912caa0525f29ec4d07399f038f4"
+    },
+    {
+      "command": [
+        "node",
+        "tests/knowledge-editorial-title.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/03-knowledge-editorial-title.log",
+      "logSha256": "d07eb6fbaf322a5ff2eea4b3d20eee749365bd1c6cdbf39ee58ca036013bfbd4"
+    },
+    {
+      "command": [
+        "node",
+        "tests/knowledge-editorial-boundary.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/04-knowledge-editorial-boundary.log",
+      "logSha256": "0bcf4b6403569f06d7d278161801f2c63b3c5bac411f318e600e592523f20853"
+    },
+    {
+      "command": [
+        "node",
+        "tests/knowledge-search.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/05-knowledge-search.log",
+      "logSha256": "fba3769331eed62b3ae6909636b3656261eba987f4d5e84dac0828ff783cc5a9"
+    },
+    {
+      "command": [
+        "node",
+        "tests/knowledge-integration.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/06-knowledge-integration.log",
+      "logSha256": "55d2a69960e6b929fd76055a119d6d2159137feb15a4efa94eff354e52421856"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/library-catalog.mjs",
+        "tests/article-source.mjs"
+      ],
+      "exitCode": 0,
+      "log": "evidence/library-script-integrity/contracts/20261127T030155Z/07-article-source.log",
+      "logSha256": "178120c84eea2ba234528d385f602685914d89f3ab3ff7b09abad229fbd1ef9a"
+    }
+  ]
+}

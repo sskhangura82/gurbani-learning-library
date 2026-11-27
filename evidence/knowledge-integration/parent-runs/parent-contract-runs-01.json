@@ -1,0 +1,32 @@
+[
+  {
+    "test": "knowledge-contract.mjs",
+    "exit": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": 14,\n  \"coverage\": {\n    \"angCount\": 3,\n    \"passageCount\": 3,\n    \"originalOccurrences\": 19,\n    \"fullSecondaryCollationOccurrences\": 19,\n    \"qualifiedApproved\": 0\n  },\n  \"limitations\": \"Node contracts only, not scholarly approval or real-device verification\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "test": "knowledge-source-registry.mjs",
+    "exit": 0,
+    "stdout": "{\"status\":\"PASS\",\"checks\":29,\"sourceMutations\":15,\"staleEditorialMutations\":8}\n",
+    "stderr": ""
+  },
+  {
+    "test": "knowledge-editorial-title.mjs",
+    "exit": 0,
+    "stdout": "{\"status\":\"PASS\",\"denied\":72,\"allowed\":8,\"unchangedSourceOccurrences\":19}\n",
+    "stderr": ""
+  },
+  {
+    "test": "knowledge-editorial-boundary.mjs",
+    "exit": 0,
+    "stdout": "{\"status\":\"PASS\",\"denied\":305,\"allowed\":187,\"fieldClasses\":31,\"checks\":6}\n",
+    "stderr": ""
+  },
+  {
+    "test": "knowledge-search.mjs",
+    "exit": 0,
+    "stdout": "{\"status\":\"PASS\",\"checks\":29,\"verseInitialFixtures\":17,\"headingFixtures\":2}\n",
+    "stderr": ""
+  }
+]

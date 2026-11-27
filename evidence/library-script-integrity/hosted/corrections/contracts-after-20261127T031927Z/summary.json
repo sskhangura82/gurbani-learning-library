@@ -1,0 +1,38 @@
+{
+  "head": "69e24fe4adfccbd535de2b5f8ac0bab5ed720d94",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "macOS"
+  },
+  "results": [
+    {
+      "test": "tests/r6-contract.mjs",
+      "returncode": 0,
+      "stdout": "{\"total\":7,\"status\":\"PASS\"}",
+      "stderr": ""
+    },
+    {
+      "test": "tests/r7-contract.mjs",
+      "returncode": 0,
+      "stdout": "{\"total\":12,\"checks\":[\"Entry points are distinct home and unchanged continuous Japji\",\"Home has four library entrances and retains its reading, places and Simran destinations without login\",\"PWA Home Screen starts at root with unchanged app id\",\"Guide pace normalizer accepts every five step up to 160\",\"Old and new pace preferences remain compatible\",\"Reader exposes one-tap numeric pace control and no media\",\"Pace logic enters existing synchronized preference-merging mechanism\",\"The frozen scripture and editorial layers remain separate\",\"Three gurdwara sources are official HTTPS and not media embeds\",\"Simran preview is silent and does not persist meditation metrics\",\"External place links use explicit new-tab protections\",\"New routes and scripts are included in offline release\"],\"status\":\"PASS\"}",
+      "stderr": ""
+    },
+    {
+      "test": "tests/verify.mjs",
+      "returncode": 0,
+      "stdout": "{\"total\":27,\"status\":\"PASS\"}",
+      "stderr": ""
+    },
+    {
+      "test": "tests/salok-kabir-content.mjs",
+      "returncode": 0,
+      "stdout": "{\"status\":\"PASS\",\"checks\":12,\"Saloks\":243,\"sourceOccurrences\":494,\"meanings\":486,\"studies\":243}",
+      "stderr": ""
+    },
+    {
+      "test": "node --check tests/nitnem-browser.mjs",
+      "returncode": 0
+    }
+  ],
+  "priorEvidenceRestored": true
+}

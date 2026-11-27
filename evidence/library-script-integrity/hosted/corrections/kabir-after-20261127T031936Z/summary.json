@@ -1,0 +1,8 @@
+{
+  "test": "tests/salok-kabir-browser.mjs",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"passed\": 40,\n  \"failed\": 0,\n  \"browser\": \"158.0.8127.37\",\n  \"failures\": []\n}\n",
+  "stderr": "",
+  "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "priorEvidenceRestored": true
+}

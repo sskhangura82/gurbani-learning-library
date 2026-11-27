@@ -1,0 +1,516 @@
+{
+  "schema": "glp.scripture.pilot.v1",
+  "status": "DIGITAL_SOURCE_DRAFT",
+  "edition": {
+    "id": "edition.sggs.opengranth-34d2a7c",
+    "type": "edition",
+    "collectionId": "collection.sggs",
+    "sourceRepo": "opengranth/open-granth",
+    "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "rights": "Original Gurmukhi only; upstream data/metadata redistribution terms require verification before release",
+    "humanCollated": false
+  },
+  "passages": [
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01",
+      "type": "passage",
+      "collectionId": "collection.sggs",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "angStart": 470,
+      "angEnd": 470,
+      "kind": "salok",
+      "number": 1,
+      "authorId": "author.guru-nanak",
+      "compositionId": "composition.asa-di-vaar",
+      "raagId": "raag.asa",
+      "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0470.md",
+      "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=470&g=1&h=0&k=0&p=0&r=0&t=0",
+      "comparison": "All nine rows visually compared with SriGranth Ang 470; whitespace presentation only. Digital witnesses may share lineage.",
+      "review": "DIGITAL_SOURCE_DRAFT",
+      "pauriNumber": 14,
+      "salokPosition": 1,
+      "occurrenceIds": [
+        "sggs.asa-di-vaar.pauri014.salok01.heading01",
+        "sggs.asa-di-vaar.pauri014.salok01.line01",
+        "sggs.asa-di-vaar.pauri014.salok01.line02",
+        "sggs.asa-di-vaar.pauri014.salok01.line03",
+        "sggs.asa-di-vaar.pauri014.salok01.line04",
+        "sggs.asa-di-vaar.pauri014.salok01.line05",
+        "sggs.asa-di-vaar.pauri014.salok01.line06",
+        "sggs.asa-di-vaar.pauri014.salok01.line07",
+        "sggs.asa-di-vaar.pauri014.salok01.line08"
+      ],
+      "focusId": "sggs.asa-di-vaar.pauri014.salok01.line04",
+      "expectedOccurrenceCount": 9,
+      "incipitId": "sggs.asa-di-vaar.pauri014.salok01.line01",
+      "passageSha256": "7a8e97c9a0e4a7bf29bb38b33bf310d904b1da0f87a46718e2fec83ee08ea260"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02",
+      "type": "passage",
+      "collectionId": "collection.sggs",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "angStart": 466,
+      "angEnd": 466,
+      "kind": "salok",
+      "number": 2,
+      "authorId": "author.guru-angad",
+      "compositionId": "composition.asa-di-vaar",
+      "raagId": "raag.asa",
+      "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0466.md",
+      "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=466&g=1&h=0&k=0&p=0&r=0&t=0",
+      "comparison": "All eight rows visually compared with SriGranth Ang 466; whitespace presentation only. Digital witnesses may share lineage.",
+      "review": "DIGITAL_SOURCE_DRAFT",
+      "pauriNumber": 7,
+      "salokPosition": 2,
+      "occurrenceIds": [
+        "sggs.asa-di-vaar.pauri007.salok02.heading01",
+        "sggs.asa-di-vaar.pauri007.salok02.line01",
+        "sggs.asa-di-vaar.pauri007.salok02.line02",
+        "sggs.asa-di-vaar.pauri007.salok02.line03",
+        "sggs.asa-di-vaar.pauri007.salok02.line04",
+        "sggs.asa-di-vaar.pauri007.salok02.line05",
+        "sggs.asa-di-vaar.pauri007.salok02.line06",
+        "sggs.asa-di-vaar.pauri007.salok02.line07"
+      ],
+      "focusId": "sggs.asa-di-vaar.pauri007.salok02.line05",
+      "expectedOccurrenceCount": 8,
+      "incipitId": "sggs.asa-di-vaar.pauri007.salok02.line01",
+      "passageSha256": "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306"
+    },
+    {
+      "id": "sggs.kabir.salok007",
+      "type": "passage",
+      "collectionId": "collection.sggs",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "angStart": 1364,
+      "angEnd": 1364,
+      "kind": "salok",
+      "number": 7,
+      "authorId": "author.bhagat-kabir",
+      "compositionId": "composition.kabir-saloks",
+      "raagId": null,
+      "sourceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1364.md",
+      "secondaryUrl": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1364&g=1&h=0&k=0&p=0&r=0&t=0",
+      "comparison": "Both verses visually compared with SriGranth indexed results, Ang 1364 lines 16–17. Full two-line Salok from pinned corpus. Digital witnesses may share lineage.",
+      "review": "DIGITAL_SOURCE_DRAFT",
+      "secondaryEvidenceUrls": [
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Search&Param=punjabi&SearchData=%E0%A8%B8%E0%A8%A4&Tier=4",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Search&Param=punjabi&SearchData=%E0%A8%90&Tier=1"
+      ],
+      "pauriNumber": null,
+      "salokPosition": 7,
+      "occurrenceIds": [
+        "sggs.kabir.salok007.line01",
+        "sggs.kabir.salok007.line02"
+      ],
+      "focusId": "sggs.kabir.salok007.line01",
+      "expectedOccurrenceCount": 2,
+      "incipitId": "sggs.kabir.salok007.line01",
+      "passageSha256": "54733d0c1af2e54e39188ec7aee2cdf9f2d97b75cc269aa9528843a9cfdd2153"
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.heading01",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "heading",
+      "verseNumber": null,
+      "text": "ਸਲੋਕੁ ਮਃ ੧ ॥",
+      "textSha256": "6e968c5a21a65d7744fcd250441115c09f2b3fe684dc49ea55eb291fb1033b6c",
+      "ang": 470,
+      "ordinal": 29,
+      "printedLine": 12,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line01",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 1,
+      "text": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+      "textSha256": "0d6a6dae8b853848c826460d76c4642a6537ce047c8deeb56d668c7ea258a8dd",
+      "ang": 470,
+      "ordinal": 30,
+      "printedLine": 12,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line02",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 2,
+      "text": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+      "textSha256": "5d97d37972c5c1ba0dba24bf178a0adc22678e850470430b258fce1e1b526782",
+      "ang": 470,
+      "ordinal": 31,
+      "printedLine": 12,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line03",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 3,
+      "text": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ ॥",
+      "textSha256": "e3a2713764f4e1511821a98dfdfeb595ea3f4eefac5f0ffd82d219857ea70cae",
+      "ang": 470,
+      "ordinal": 32,
+      "printedLine": 13,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line04",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 4,
+      "text": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ ॥",
+      "textSha256": "81bd2d546e0710478991e0355535da210948f911aa239784ef11d8712dc60110",
+      "ang": 470,
+      "ordinal": 33,
+      "printedLine": 13,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line05",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 5,
+      "text": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ ॥",
+      "textSha256": "c8f4d940b37a04f9bd218966ff636b2236bc324e243eef86129fcafa0221c18d",
+      "ang": 470,
+      "ordinal": 34,
+      "printedLine": 14,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line06",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 6,
+      "text": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+      "textSha256": "001d6c14286fa99d3d218af7381960ad4d4f42bc8fbecfc7c2c80503de7836f1",
+      "ang": 470,
+      "ordinal": 35,
+      "printedLine": 14,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line07",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 7,
+      "text": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥",
+      "textSha256": "81db1a207062dc1a5a4ce2c769f59a433c8366c9a4a5b187392a21b4e6acc4d7",
+      "ang": 470,
+      "ordinal": 36,
+      "printedLine": 15,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri014.salok01.line08",
+      "passageId": "sggs.asa-di-vaar.pauri014.salok01",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 8,
+      "text": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ ॥੧॥",
+      "textSha256": "6fe904f500dad07f5a35b488edcca62f92502e9ed5f8f4c2ee1f091c1a33311a",
+      "ang": 470,
+      "ordinal": 37,
+      "printedLine": 15,
+      "sourceBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sourcePath": "corpus/ang-0470.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.heading01",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "heading",
+      "verseNumber": null,
+      "text": "ਮਹਲਾ ੨ ॥",
+      "textSha256": "bbefd1192b67d467c834fa58e804ee9eed84be079f8d7d08e33f99d0231791ff",
+      "ang": 466,
+      "ordinal": 40,
+      "printedLine": 16,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line01",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 1,
+      "text": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+      "textSha256": "cd027e5b507f13185c3bd65a832ed5c172012afba19c81ce7c46f5686173902f",
+      "ang": 466,
+      "ordinal": 41,
+      "printedLine": 16,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line02",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 2,
+      "text": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+      "textSha256": "156e618cfded18d00999cb1e6a76da2e9918f2e0ba46d609581df7a8aea8de27",
+      "ang": 466,
+      "ordinal": 42,
+      "printedLine": 17,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line03",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 3,
+      "text": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+      "textSha256": "f130b5946d387fdcf2704ee52df4853358af1091042f69d5e449864d6e88f34c",
+      "ang": 466,
+      "ordinal": 43,
+      "printedLine": 17,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line04",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 4,
+      "text": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+      "textSha256": "42be81ae229251e3b2ca6e46179e7221a9e990790f7c06ef29250e69e9e795f5",
+      "ang": 466,
+      "ordinal": 44,
+      "printedLine": 17,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line05",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 5,
+      "text": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+      "textSha256": "0c509888865797ef284c3901ac5e378a9fbf791374bf5bc66c85b35759013465",
+      "ang": 466,
+      "ordinal": 45,
+      "printedLine": 18,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line06",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 6,
+      "text": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+      "textSha256": "0943d976f77b081b3c4794daaebc3d48a95207223f3ff1c014ffe577f5c38cb9",
+      "ang": 466,
+      "ordinal": 46,
+      "printedLine": 18,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.asa-di-vaar.pauri007.salok02.line07",
+      "passageId": "sggs.asa-di-vaar.pauri007.salok02",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 7,
+      "text": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+      "textSha256": "ad50399eff2a4a182f6211e8ef0db40a8b7cd86fc2179daa7ba576430e3e98c5",
+      "ang": 466,
+      "ordinal": 47,
+      "printedLine": 19,
+      "sourceBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sourcePath": "corpus/ang-0466.md"
+    },
+    {
+      "id": "sggs.kabir.salok007.line01",
+      "passageId": "sggs.kabir.salok007",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 1,
+      "text": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+      "textSha256": "8ba0a6d453d062901d3bb8fe59d073c5598a02374432f65622c55e435ff3262f",
+      "ang": 1364,
+      "ordinal": 33,
+      "printedLine": 16,
+      "sourceBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+      "sourcePath": "corpus/ang-1364.md"
+    },
+    {
+      "id": "sggs.kabir.salok007.line02",
+      "passageId": "sggs.kabir.salok007",
+      "editionId": "edition.sggs.opengranth-34d2a7c",
+      "kind": "verse",
+      "verseNumber": 2,
+      "text": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ ॥੭॥",
+      "textSha256": "a47294939805babef2cd4b4360c85e2a16f96403951be0a300e7c068dd76ad87",
+      "ang": 1364,
+      "ordinal": 34,
+      "printedLine": 17,
+      "sourceBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+      "sourcePath": "corpus/ang-1364.md"
+    }
+  ],
+  "legacyPassageIds": {
+    "sggs.asa.470.m1.salok01": "sggs.asa-di-vaar.pauri014.salok01",
+    "sggs.asa.466.m2.salok02": "sggs.asa-di-vaar.pauri007.salok02"
+  },
+  "legacyOccurrenceIds": {
+    "sggs.opengranth-34d2a7c.ang470.row29": "sggs.asa-di-vaar.pauri014.salok01.heading01",
+    "sggs.opengranth-34d2a7c.ang470.row30": "sggs.asa-di-vaar.pauri014.salok01.line01",
+    "sggs.opengranth-34d2a7c.ang470.row31": "sggs.asa-di-vaar.pauri014.salok01.line02",
+    "sggs.opengranth-34d2a7c.ang470.row32": "sggs.asa-di-vaar.pauri014.salok01.line03",
+    "sggs.opengranth-34d2a7c.ang470.row33": "sggs.asa-di-vaar.pauri014.salok01.line04",
+    "sggs.opengranth-34d2a7c.ang470.row34": "sggs.asa-di-vaar.pauri014.salok01.line05",
+    "sggs.opengranth-34d2a7c.ang470.row35": "sggs.asa-di-vaar.pauri014.salok01.line06",
+    "sggs.opengranth-34d2a7c.ang470.row36": "sggs.asa-di-vaar.pauri014.salok01.line07",
+    "sggs.opengranth-34d2a7c.ang470.row37": "sggs.asa-di-vaar.pauri014.salok01.line08",
+    "sggs.opengranth-34d2a7c.ang466.row40": "sggs.asa-di-vaar.pauri007.salok02.heading01",
+    "sggs.opengranth-34d2a7c.ang466.row41": "sggs.asa-di-vaar.pauri007.salok02.line01",
+    "sggs.opengranth-34d2a7c.ang466.row42": "sggs.asa-di-vaar.pauri007.salok02.line02",
+    "sggs.opengranth-34d2a7c.ang466.row43": "sggs.asa-di-vaar.pauri007.salok02.line03",
+    "sggs.opengranth-34d2a7c.ang466.row44": "sggs.asa-di-vaar.pauri007.salok02.line04",
+    "sggs.opengranth-34d2a7c.ang466.row45": "sggs.asa-di-vaar.pauri007.salok02.line05",
+    "sggs.opengranth-34d2a7c.ang466.row46": "sggs.asa-di-vaar.pauri007.salok02.line06",
+    "sggs.opengranth-34d2a7c.ang466.row47": "sggs.asa-di-vaar.pauri007.salok02.line07",
+    "sggs.opengranth-34d2a7c.ang1364.row33": "sggs.kabir.salok007.line01",
+    "sggs.opengranth-34d2a7c.ang1364.row34": "sggs.kabir.salok007.line02"
+  },
+  "sourceWitnesses": {
+    "466": {
+      "path": "corpus/ang-0466.md",
+      "gitBlob": "28bc6a29e9e69341aec0590ee31329d70bdedb21",
+      "sha256": "94dd426601a9fa50f02f02b9e7799bd63d1e75d9e17270729032e372021d5bf6"
+    },
+    "467": {
+      "path": "corpus/ang-0467.md",
+      "gitBlob": "8e8e66a8367a17d8135d3206adfdac91c686bcfd",
+      "sha256": "c42abae7dc4b2bbaa85cd47e182e7dcbfc6017da20197c4b41c54889944b6ca7"
+    },
+    "470": {
+      "path": "corpus/ang-0470.md",
+      "gitBlob": "be5797afa1105edd5a30d78297dc415dac4c0f7b",
+      "sha256": "7fb9655ac6418e866f0966eb462b72a35775e5cd930ec2642b014656ce0a9c95"
+    },
+    "1364": {
+      "path": "corpus/ang-1364.md",
+      "gitBlob": "9e5f1d8215e1a817adc9465a861bdb4b75b9d153",
+      "sha256": "1d87aeef5f33ab071d32c2a0cbecd4b969466b09ad48fb945b0fa2bdb574a8ef"
+    }
+  },
+  "sourceNodes": [
+    {
+      "id": "collection.sggs",
+      "type": "collection",
+      "title": "Sri Guru Granth Sahib Ji",
+      "pa": "ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ",
+      "status": "PRIMARY_SCRIPTURE"
+    },
+    {
+      "id": "collection.dasam",
+      "type": "collection",
+      "title": "Dasam Bani",
+      "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+    },
+    {
+      "id": "collection.bhai-gurdas",
+      "type": "collection",
+      "title": "Vaaran Bhai Gurdas Ji",
+      "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+    },
+    {
+      "id": "collection.bhai-nand-lal",
+      "type": "collection",
+      "title": "Bhai Nand Lal Ji",
+      "status": "DISTINCT_COLLECTION_NO_SOURCE_IMPORTED"
+    },
+    {
+      "id": "author.guru-nanak",
+      "type": "author",
+      "title": "Guru Nanak Dev Ji",
+      "pa": "ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
+      "aliases": [
+        "nanak",
+        "guru nanak"
+      ]
+    },
+    {
+      "id": "author.guru-angad",
+      "type": "author",
+      "title": "Guru Angad Dev Ji",
+      "pa": "ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+      "aliases": [
+        "angad",
+        "guru angad"
+      ]
+    },
+    {
+      "id": "author.bhagat-kabir",
+      "type": "author",
+      "title": "Bhagat Kabir Ji",
+      "pa": "ਭਗਤ ਕਬੀਰ ਜੀ",
+      "aliases": [
+        "kabir",
+        "kabeer"
+      ]
+    },
+    {
+      "id": "raag.asa",
+      "type": "raag",
+      "title": "Raag Asa",
+      "pa": "ਆਸਾ",
+      "aliases": [
+        "asa",
+        "aasa"
+      ]
+    },
+    {
+      "id": "composition.asa-di-vaar",
+      "type": "composition",
+      "title": "Asa Di Vaar",
+      "pa": "ਆਸਾ ਦੀ ਵਾਰ",
+      "collectionId": "collection.sggs",
+      "aliases": [
+        "asa di var",
+        "asa di vaar"
+      ]
+    },
+    {
+      "id": "composition.kabir-saloks",
+      "type": "composition",
+      "title": "Salok Bhagat Kabir Ji",
+      "pa": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ",
+      "collectionId": "collection.sggs",
+      "aliases": [
+        "kabir saloks"
+      ]
+    }
+  ]
+}
