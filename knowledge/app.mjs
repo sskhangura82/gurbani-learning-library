@@ -1,4 +1,5 @@
 import {loadKnowledge,verifyScripture} from "./registry.mjs";
+import {JOURNEY_ID,SAVED_ID,renderJourney,renderSaved} from "./journey.mjs";
 import {buildIndex,search,connected,passageLines,wordAt,resolveIdentity,contentKind} from "./core.mjs";
 export const PACK_SHA256="c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf";
 const $=id=>document.getElementById(id);
@@ -12,11 +13,16 @@ const kindLabel=n=>contentKind(n)==="scripture"?"Original Gurbani · digital sou
 const editorialNote=text=>{const p=note(text);p.classList.add("editorial-note");p.dataset.contentKind="editorial";return p;};
 const addText=(parent,x)=>{if(!x)return;const copy=el("div",undefined,"editorial-copy");copy.dataset.contentKind="editorial";copy.setAttribute("aria-label","Editorial explanation draft");copy.append(el("p","Editorial explanation · awaiting qualified review","editorial-label"),el("p",x.en));const pa=el("p",x.pa,"editorial-pa");pa.lang="pa";copy.append(pa);parent.append(copy);};
 const routeParams=()=>new URLSearchParams(location.hash.slice(1));
-let selectedLine=null,navToken=history.state?.glpKnowledgeToken || crypto.randomUUID(),renderedHash=null,scrollTimer;
+let selectedLine=null,selectedNote=null,navToken=history.state?.glpKnowledgeToken || crypto.randomUUID(),renderedHash=null,scrollTimer;
 const scrollPositions=new Map();
 function readRoute(){
  if(!location.hash)return {id:"concept.humility",depth:"simple",line:null};
  const p=routeParams();let raw=p.get("item");if(!raw){try{raw=decodeURIComponent(location.hash.slice(1));}catch{return null;}}
+ if([JOURNEY_ID,SAVED_ID].includes(raw)){
+  const notes=p.getAll("note");if(notes.length>1||notes.length&&(!/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,159}$/.test(notes[0])||raw!==JOURNEY_ID))return null;
+  return {id:raw,depth:"simple",line:null,note:notes[0]||null};
+ }
+ if(!index)return null;
  const id=resolveIdentity(index,raw),occ=index.occ.get(id),node=index.nodes.get(occ?.passageId || id);if(!node)return null;
  const requested=p.get("line"),line=requested?resolveIdentity(index,requested):occ?.id || null;
  if(p.has("line") && !line || line && index.occ.get(line)?.passageId!==node.id)return null;
@@ -24,18 +30,18 @@ function readRoute(){
  return {id:node.id,depth:d,line};
 }
 function routeHash(route){
- const p=new URLSearchParams({item:route.id});if(route.line)p.set("line",route.line);if(route.depth!=="simple")p.set("depth",route.depth);return "#"+p;
+ const p=new URLSearchParams({item:route.id});if(route.line)p.set("line",route.line);if(route.note)p.set("note",route.note);if(route.depth&&route.depth!=="simple")p.set("depth",route.depth);return "#"+p;
 }
 function recordScroll(){
  if(history.state?.glpKnowledgeToken===navToken){scrollPositions.set(history.state.entryKey,scrollY);history.replaceState({...history.state,scroll:scrollY},"");}
 }
 function displayRoute(route,{restoreScroll=null,focus=false}={}){
- current=route?.id || null;depth=route?.depth || "simple";selectedLine=route?.line || null;renderedHash=location.hash;render();
- const target=selectedLine?section.querySelector('[data-occurrence="'+selectedLine+'"]'):section;
+ current=route?.id || null;depth=route?.depth || "simple";selectedLine=route?.line || null;selectedNote=route?.note || null;renderedHash=location.hash;render();
+ const target=selectedLine?section.querySelector('[data-occurrence="'+selectedLine+'"]'):selectedNote&&selectedNote!=="new"?(section.querySelector(".journey-editor")||section):section;
  if(focus){target.tabIndex=-1;target.focus({preventScroll:true});}
  requestAnimationFrame(()=>{
   if(restoreScroll!==null)scrollTo(0,restoreScroll);
-  else if(focus)(selectedLine?section.querySelector('[data-occurrence="'+selectedLine+'"]'):section)?.scrollIntoView({block:"start",behavior:"auto"});
+  else if(focus)target?.scrollIntoView({block:"start",behavior:"auto"});
  });
 }
 function visit(route){
@@ -53,8 +59,8 @@ function followHistory(){
  if(!own)history.replaceState({glpKnowledgeToken:navToken,entryKey:crypto.randomUUID(),step:0,scroll:0},"");
  displayRoute(route,{restoreScroll:position,focus:true});
 }
-window.addEventListener("popstate",()=>{if(index)followHistory();});
-window.addEventListener("hashchange",()=>{if(index && renderedHash!==location.hash)followHistory();});
+window.addEventListener("popstate",()=>{if(index||[JOURNEY_ID,SAVED_ID].includes(readRoute()?.id))followHistory();});
+window.addEventListener("hashchange",()=>{if((index||[JOURNEY_ID,SAVED_ID].includes(readRoute()?.id)) && renderedHash!==location.hash)followHistory();});
 window.addEventListener("scroll",()=>{
  if(!index || history.state?.glpKnowledgeToken!==navToken)return;
  scrollPositions.set(history.state.entryKey,scrollY);clearTimeout(scrollTimer);
@@ -85,7 +91,12 @@ function showWord(occ,form,button){
 wordDialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});});
 $("close-word").addEventListener("click",()=>wordDialog.close());
 function render(){
- const n=index.nodes.get(current);section.replaceChildren();if(!n){section.append(el("h2","This learning link is unavailable"),note("This link does not identify an item or line in the current pilot."),control("Start exploring",()=>open("concept.humility")));return;}
+ section.replaceChildren();
+ if(current===JOURNEY_ID||current===SAVED_ID){
+  const back=control("← Previous learning page",navigateBack);back.disabled=history.state?.glpKnowledgeToken!==navToken||history.state.step<=0;section.append(back);
+  if(current===JOURNEY_ID)renderJourney({parent:section,index,noteId:selectedNote,navigate:visit});else renderSaved({parent:section,index,navigate:visit});return;
+ }
+ const n=index?.nodes.get(current);if(!n){section.append(el("h2","This learning link is unavailable"),note("This link does not identify an item or line in the current pilot."),control("Start exploring",()=>open("concept.humility")));return;}
  const back=control("← Previous learning page",navigateBack);back.disabled=history.state?.glpKnowledgeToken!==navToken || history.state.step<=0;section.append(back);
  const kind=contentKind(n);
  section.append(el("p",kindLabel(n)+" · DEVELOPMENT DRAFT","kicker"));
@@ -128,6 +139,8 @@ function find(){
  status.textContent=matches.length?matches.length+" indexed result"+(matches.length===1?"":"s")+" in this pilot":"No indexed result in this pilot. Try an exact topic or author, complete Gurmukhi words, first letters, or an Ang. The full scripture is not indexed here yet.";
  for(const hit of matches)results.append(row(index.nodes.get(hit.id),(hit.matchOrigin==="editorial"?"Matched through editorial indexing":"Matched through source indexing")+" · "+hit.reason,hit));
 }
+$("journey-open").addEventListener("click",()=>visit({id:JOURNEY_ID}));
+$("journey-saved").addEventListener("click",()=>visit({id:SAVED_ID}));
 async function start(){try{
  if(!crypto?.subtle)throw Error("Knowledge data unavailable");
  const original=await fetch("./scripture.json",{credentials:"same-origin",cache:"no-store"});if(!original.ok)throw Error("Knowledge source unavailable");
@@ -136,6 +149,6 @@ async function start(){try{
  index=buildIndex(await loadKnowledge(sourceBytes,await teaching.arrayBuffer(),PACK_SHA256));for(const n of index.graph.nodes.filter(x=>x.type==="author")){const opt=el("option",n.title);opt.value=n.id;$("author").append(opt);}
  $("search-form").addEventListener("submit",e=>{e.preventDefault();find();});$("browse").replaceChildren(...["concept.humility","concept.haumai","author.bhagat-kabir","word.haumai","course.human-mind"].map(id=>row(index.nodes.get(id))));
  $("search-button").disabled=false;status.textContent="Source files checked · three selected Saloks · two topic lessons. Qualified review pending; not the full 1,430-Ang library.";
- const route=readRoute();const previous=history.state;history.scrollRestoration="manual";history.replaceState({glpKnowledgeToken:navToken,entryKey:previous?.entryKey || crypto.randomUUID(),step:previous?.glpKnowledgeToken===navToken?previous.step:0,scroll:previous?.scroll || 0},"",route?routeHash(route):location.href);displayRoute(route,{restoreScroll:previous?.glpKnowledgeToken===navToken && Number.isFinite(previous.scroll)?previous.scroll:null,focus:!!route?.line});
- }catch(e){status.textContent="Knowledge pack could not be verified. Nothing is displayed.";results.replaceChildren();section.replaceChildren();}}
+ const route=readRoute();const previous=history.state;history.scrollRestoration="manual";history.replaceState({glpKnowledgeToken:navToken,entryKey:previous?.entryKey || crypto.randomUUID(),step:previous?.glpKnowledgeToken===navToken?previous.step:0,scroll:previous?.scroll || 0},"",route?routeHash(route):location.href);displayRoute(route,{restoreScroll:previous?.glpKnowledgeToken===navToken && Number.isFinite(previous.scroll)?previous.scroll:null,focus:!!route?.line||[JOURNEY_ID,SAVED_ID].includes(route?.id)});
+ }catch(e){status.textContent="Knowledge pack could not be verified. Source and teaching are unavailable.";results.replaceChildren();section.replaceChildren();if([JOURNEY_ID,SAVED_ID].includes(readRoute()?.id))displayRoute(readRoute());}}
 start();

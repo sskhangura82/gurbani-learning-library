@@ -73,12 +73,24 @@ async function navigationScope(){
  return new Set(record.files.map(f=>f.path));
 }
 
-test('Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest',async()=>{
- const navigation=await navigationScope();
+async function journeyScope(){
+ const record=JSON.parse(await read('evidence/knowledge-journey/inputs/change-scope.json'));
+ assert.equal(record.schema,'glp.knowledge.journey-change-scope.v1');
+ assert.equal(record.base,'7f36c3039ca95fac6e69ca28f631b9e3734c70e9');
+ assert.deepEqual(record.files.map(f=>f.path),['knowledge/app.mjs','knowledge/index.html','knowledge/style.css']);
+ for(const item of record.files){
+  assert.equal(hash(git('show',record.base+':'+item.path)),item.beforeSha256,item.path+' exact pre-journey input');
+  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact journey input');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+test('Existing application bytes stay frozen outside exact Daily navigation and Haumai mechanics scopes, loader pins and worker manifest',async()=>{
+ const navigation=await navigationScope(),journey=await journeyScope();
  const application=names.filter(name=>!nonApplication.test(name));
  assert.ok(application.length>90,'protection must cover the application, not a small selected sample');
  for(const name of application){
-  if(name==='sw.js'||navigation.has(name))continue;
+  if(name==='sw.js'||navigation.has(name)||journey.has(name))continue;
   const previous=git('show',INPUT_BASE+':'+name),current=await read(name);
   if(loaderPages.has(name)){
    assert.equal(loaderComparable(current.toString()),loaderComparable(previous.toString()),name+' changed beyond loader pins or bundle URL');
@@ -92,6 +104,7 @@ test('Reader loader contract and reviewed original module closures remain exact'
  const originalModules=['library/app.mjs','library/catalog.mjs','library/core.mjs','articles/app.mjs','articles/core.mjs','articles/source-contracts.mjs','knowledge/app.mjs','knowledge/registry.mjs','knowledge/source-lock.mjs','knowledge/core.mjs','knowledge/kinds.mjs','knowledge/search.mjs'];
  for(const name of originalModules){
   if(name==='library/catalog.mjs'){await navigationScope();continue;}
+  if(name==='knowledge/app.mjs'){await journeyScope();continue;}
   assert.deepEqual(await read(name),git('show',INPUT_BASE+':'+name),name);
  }
  const priorFoundation='fb49ef41bd890db879d7f93a861585915ef81622';

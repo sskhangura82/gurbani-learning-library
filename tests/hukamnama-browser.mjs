@@ -44,9 +44,22 @@ const check = async (name, test) => { if (process.env.GLP_UI_CASE && !name.inclu
 async function context(options = {}) {
  const ctx = await browser.newContext({serviceWorkers:"block",...options}); contexts.push(ctx); return ctx;
 }
+// Playwright's page.clock belongs to the whole browser context. Reinstalling
+// it for a second page rewinds every open tab and can correctly trigger INVALID_CLOCK.
+const contextClocks = new WeakMap();
 async function pageFor(ctx, time = clock) {
+ const initialTime = +new Date(time);
+ assert.ok(Number.isFinite(initialTime), "A synthetic context clock needs a valid initial time.");
+ let installed = contextClocks.get(ctx);
+ if (installed) {
+  assert.equal(initialTime,installed.initialTime,"All pages in one context must request the same initial clock time.");
+ } else {
+  installed = {initialTime,ready:ctx.clock.install({time:new Date(initialTime)})};
+  contextClocks.set(ctx,installed);
+ }
+ await installed.ready;
  const page = await ctx.newPage(); page.setDefaultTimeout(12000);
- await page.clock.install({time}); page.on("pageerror",error => report.pageErrors.push(error.message)); return page;
+ page.on("pageerror",error => report.pageErrors.push(error.message)); return page;
 }
 async function loaded(page, suffix = "") {
  await page.goto(url + suffix); await page.waitForFunction(() => document.getElementById("reading").hidden === false);
@@ -65,6 +78,24 @@ async function chooseDate(page, value) {
 }
 async function chooseToday(page) {
  await openDateControls(page); await page.locator("#today").click();
+}
+// Imported notes retain the exporting context's timestamps. A new context must
+// start after all of them; changing the note data would conceal a fixture error.
+function clockAfterImportedNotes(backup) {
+ assert.ok(Array.isArray(backup?.records) && backup.records.length > 0,"The imported-note fixture must have a nonempty records array.");
+ let latest = +clock;
+ for (const record of backup.records) {
+  const times = ["createdAt","updatedAt"].map(field => {
+   const value = record?.[field], time = Date.parse(value);
+   assert.ok(typeof value === "string" && Number.isFinite(time) && new Date(time).toISOString() === value,"The imported-note fixture needs valid canonical timestamps.");
+   return time;
+  });
+  assert.ok(times[0] <= times[1],"An imported-note fixture cannot be updated before it was created.");
+  latest = Math.max(latest,...times);
+ }
+ const after = new Date(latest + 1);
+ assert.equal(new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Kolkata",year:"numeric",month:"2-digit",day:"2-digit"}).format(after),latestDate,"The imported-note fixture clock must stay on the staged Amritsar date.");
+ return after;
 }
 async function storage(page) { return page.evaluate(key => localStorage.getItem(key),key); }
 async function save(page, question, reflection) {
@@ -285,7 +316,21 @@ try {
  });
  await check("Two tabs preserve conflicting note edits as separate versions",async () => {
   await notePage.locator("#saved-list button").first().click(); await notePage.locator("#question").waitFor({state:"visible"});
-  const second = await pageFor(noteContext); await loaded(second,"?learning=saved"); await second.locator("#saved-list button").first().click();
+  // Deliberately advance the shared clock: reopening the context clock at its
+  // original epoch must fail this canary even when a fast machine masks the save bug.
+  await notePage.clock.runFor(5000);
+  const beforeSecondClock = await notePage.evaluate(() => Date.now());
+  const existingCreatedAt = JSON.parse(await storage(notePage)).records[0].createdAt;
+  const second = await pageFor(noteContext);
+  const afterSecondClock = await notePage.evaluate(() => Date.now());
+  report.twoTabClock = {beforeSecondClock,afterSecondClock,existingCreatedAt};
+  assert.ok(afterSecondClock >= beforeSecondClock,"Opening a second tab must never rewind the first tab's clock.");
+  assert.ok(afterSecondClock >= Date.parse(existingCreatedAt),"The existing note must remain in the first tab's clock past.");
+  const pagesBeforeRejectedClock = noteContext.pages().length;
+  await assert.rejects(() => pageFor(noteContext,new Date(+clock + 1)),/same initial clock time/);
+  assert.equal(noteContext.pages().length,pagesBeforeRejectedClock,"A conflicting clock request must fail before opening a page.");
+  report.twoTabClock.conflictingInitialTimeRefused = true;
+  await loaded(second,"?learning=saved"); await second.locator("#saved-list button").first().click();
   await second.waitForFunction(() => !document.getElementById("reflection").disabled);
   await save(notePage,question,"SYNTHETIC FIRST TAB EDIT");
   await save(second,question,"SYNTHETIC SECOND TAB EDIT");
@@ -323,14 +368,30 @@ try {
 
  await check("A saved historical note stays editable when its exact original is unavailable",async () => {
   const historical = JSON.parse(backupText); historical.records[0].binding.date = absentDate; historical.records[0].binding.eventId = "harmandir-morning." + absentDate;
-  const ctx = await context(), page = await pageFor(ctx); await loaded(page,"?learning=saved");
+  const unchangedFixture = JSON.stringify(historical), initialTime = clockAfterImportedNotes(historical);
+  const latestImportedTime = Math.max(...historical.records.flatMap(record => [Date.parse(record.createdAt),Date.parse(record.updatedAt)]));
+  assert.ok(+initialTime > latestImportedTime,"The new context must begin strictly after every imported note timestamp.");
+  assert.equal(JSON.stringify(historical),unchangedFixture,"Choosing the clock must not change imported notes.");
+  assert.throws(() => clockAfterImportedNotes({records:[]}),/nonempty records/);
+  assert.throws(() => clockAfterImportedNotes({records:[{createdAt:"invalid",updatedAt:"invalid"}]}),/valid canonical timestamps/);
+  const fixtureTimes = [new Date(+clock + 1000).toISOString(),new Date(+clock + 3000).toISOString(),new Date(+clock + 9000).toISOString()];
+  assert.ok(+clockAfterImportedNotes({records:[{createdAt:fixtureTimes[0],updatedAt:fixtureTimes[1]},{createdAt:fixtureTimes[1],updatedAt:fixtureTimes[2]}]}) > Date.parse(fixtureTimes[2]),"Both timestamps of every fixture record must be considered.");
+  const ctx = await context(), page = await pageFor(ctx,initialTime); await loaded(page,"?learning=saved");
   await page.locator("#import-file").setInputFiles({name:"Hukamnama-learning.json",mimeType:"application/json",buffer:Buffer.from(JSON.stringify(historical))});
   await page.locator("#saved-list button").first().waitFor(); await page.locator("#saved-list button").first().click();
   await page.waitForFunction(() => document.getElementById("status").textContent.includes("not available here"));
   assert.equal(await page.locator(".original-text").count(),0); assert.ok(await page.locator("#reflection").isEnabled());
   assert.match(await page.locator("#editor-source").innerText(),/has not been attached to another reading/);
+  const beforeSave = await page.evaluate(() => Date.now());
+  report.historicalNoteClock = {initialTime:initialTime.toISOString(),latestImportedTime:new Date(latestImportedTime).toISOString(),beforeSave:new Date(beforeSave).toISOString(),fixtureTimestampsUnchanged:true};
+  assert.ok(beforeSave > latestImportedTime,"The historical edit must not be attempted with a clock before its imported note.");
   await save(page,question,"SYNTHETIC HISTORICAL NOTE EDIT");
-  assert.equal(JSON.parse(await storage(page)).records[0].binding.date,absentDate); await ctx.close();
+  const savedHistorical = JSON.parse(await storage(page)).records[0];
+  assert.equal(savedHistorical.binding.date,absentDate);
+  assert.equal(savedHistorical.createdAt,historical.records[0].createdAt);
+  assert.equal(savedHistorical.reflection,"SYNTHETIC HISTORICAL NOTE EDIT");
+  assert.ok(Date.parse(savedHistorical.updatedAt) > latestImportedTime);
+  await ctx.close();
  });
 
  await check("A late unavailable source cannot reset text typed into an existing saved note",async () => {
