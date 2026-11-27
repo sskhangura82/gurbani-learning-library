@@ -1,0 +1,22 @@
+{
+  "schema": "glp.original-javascript-hash-check.v1",
+  "scope": "Actual generated payloads checked using Node JSON.stringify and SHA-256; original source semantics are not assessed by this check.",
+  "collections": [
+    {
+      "collection": "sggs",
+      "manifestSha256": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+      "units": 5549,
+      "lines": 60555,
+      "chunks": 75,
+      "status": "PASS"
+    },
+    {
+      "collection": "dasam",
+      "manifestSha256": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+      "units": 5470,
+      "lines": 67758,
+      "chunks": 80,
+      "status": "PASS"
+    }
+  ]
+}

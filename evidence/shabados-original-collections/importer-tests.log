@@ -1,0 +1,16 @@
+test_chunk_boundary_keeps_cross_page_group_whole (__main__.SourceImportTests.test_chunk_boundary_keeps_cross_page_group_whole) ... ok
+test_duplicate_primary_row_refuses (__main__.SourceImportTests.test_duplicate_primary_row_refuses) ... ok
+test_exact_source_text_group_order_and_protected_layer_exclusion (__main__.SourceImportTests.test_exact_source_text_group_order_and_protected_layer_exclusion) ... ok
+test_injected_git_environment_cannot_hide_an_ancestor_marker (__main__.SourceImportTests.test_injected_git_environment_cannot_hide_an_ancestor_marker) ... ok
+test_missing_or_duplicate_group_order_refuses (__main__.SourceImportTests.test_missing_or_duplicate_group_order_refuses) ... ok
+test_missing_or_duplicate_line_order_refuses (__main__.SourceImportTests.test_missing_or_duplicate_line_order_refuses) ... ok
+test_missing_primary_row_refuses_instead_of_silently_skipping (__main__.SourceImportTests.test_missing_primary_row_refuses_instead_of_silently_skipping) ... ok
+test_oversized_group_refuses_instead_of_splitting (__main__.SourceImportTests.test_oversized_group_refuses_instead_of_splitting) ... ok
+test_source_page_label_decrease_does_not_reorder_or_repair_text (__main__.SourceImportTests.test_source_page_label_decrease_does_not_reorder_or_repair_text) ... ok
+test_source_pin_failure_prevents_any_output (__main__.SourceImportTests.test_source_pin_failure_prevents_any_output) ... ok
+test_unknown_primary_metadata_cannot_smuggle_a_reading_aid (__main__.SourceImportTests.test_unknown_primary_metadata_cannot_smuggle_a_reading_aid) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.049s
+
+OK

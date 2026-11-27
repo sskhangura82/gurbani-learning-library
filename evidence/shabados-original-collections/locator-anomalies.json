@@ -1,0 +1,126 @@
+{
+  "schema": "glp.source-locator-observations.v1",
+  "scope": "Observed numeric label decreases inside source groups; not an exhaustive collation or an adjudication that each label is wrong.",
+  "collections": {
+    "sggs": {
+      "withinGroupPageLabelDecreases": [],
+      "withinSamePagePrintedLineLabelDecreases": [
+        {
+          "unitId": "G4W",
+          "previousLineId": "9RH3",
+          "lineId": "V41B",
+          "page": 1377,
+          "previousPrintedLine": 19,
+          "printedLine": 1
+        }
+      ],
+      "sourceOrderPreserved": true,
+      "locatorsRepaired": false
+    },
+    "dasam": {
+      "withinGroupPageLabelDecreases": [
+        {
+          "unitId": "9QK",
+          "previousLineId": "3NZ6",
+          "lineId": "TT76",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "UAG8",
+          "lineId": "8HKP",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "6411",
+          "lineId": "8N2Q",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "0S6D",
+          "lineId": "H6KG",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "66QM",
+          "lineId": "PFGT",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "QBJE",
+          "lineId": "UN48",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "GNSB",
+          "lineId": "224Z",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "TVX6",
+          "lineId": "LXZU",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "CF9U",
+          "lineId": "4F8G",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "3MLW",
+          "lineId": "ABLK",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "36RZ",
+          "lineId": "X8ZN",
+          "previousPage": 158,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "AUCX",
+          "lineId": "5RHQ",
+          "previousPage": 159,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "SW20",
+          "lineId": "H7U2",
+          "previousPage": 159,
+          "page": 155
+        },
+        {
+          "unitId": "9QK",
+          "previousLineId": "PSAS",
+          "lineId": "AH5M",
+          "previousPage": 159,
+          "page": 155
+        }
+      ],
+      "withinSamePagePrintedLineLabelDecreases": [],
+      "sourceOrderPreserved": true,
+      "locatorsRepaired": false
+    }
+  }
+}
