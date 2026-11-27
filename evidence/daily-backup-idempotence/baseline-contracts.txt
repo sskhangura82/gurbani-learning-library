@@ -1,0 +1,244 @@
+✖ Retrying the original conflicting backup leaves bytes, revision, count and identity allocation unchanged (3.196792ms)
+✖ JSON key order does not turn an exact note or a preserved version into a new edit (0.475833ms)
+✔ Unrelated explicit identities with identical content remain independent notes (0.279833ms)
+✖ Every distinct exact text, timestamp and source binding remains a separate preserved version (0.301ms)
+✖ A backup already containing its conflict copy adds no manufactured duplicate in either input order (0.185625ms)
+✖ Generated copies cannot occupy an explicit incoming identity (0.759208ms)
+✖ Nested conflict versions and their exports restore without repeated growth (0.314083ms)
+✖ Existing accidental duplicates are retained but not multiplied (0.168334ms)
+✖ Mixed imports add only new identities and new versions with one revision and write (0.200875ms)
+✖ Concurrent retries reread under the lock and preserve a single incoming version (0.304417ms)
+✖ At the record limit, an already represented restore is unchanged and genuinely new content refuses atomically (4.870959ms)
+✖ Quota failure preserves the entire old store and unchanged restores do not attempt a write (0.170083ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 1
+ℹ fail 11
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 76.185917
+
+✖ failing tests:
+
+test at tests/hukamnama-import-idempotence.mjs:16:1
+✖ Retrying the original conflicting backup leaves bytes, revision, count and identity allocation unchanged (3.196792ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:22:9)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:25:1
+✖ JSON key order does not turn an exact note or a preserved version into a new edit (0.475833ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:27:83)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:41:1
+✖ Every distinct exact text, timestamp and source binding remains a separate preserved version (0.301ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:54:35)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:59:1
+✖ A backup already containing its conflict copy adds no manufactured duplicate in either input order (0.185625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:63:10)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:68:1
+✖ Generated copies cannot occupy an explicit incoming identity (0.759208ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      binding: {
+        date: '2026-11-27',
+        edition: 'synthetic-edition',
+        eventId: 'harmandir-morning.2026-11-27',
+  ...
+      },
+  +   conflictOf: 'note-a',
+      createdAt: '2026-11-27T08:00:00.000Z',
+      id: 'incoming-b',
+      question: 'Synthetic question',
+  +   reflection: 'changed',
+  -   reflection: 'independent',
+      updatedAt: '2026-11-27T09:00:00.000Z'
+    }
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:71:64)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { id: 'incoming-b', binding: { eventId: 'harmandir-morning.2026-11-27', date: '2026-11-27', sourceId: 'sggs.text.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', edition: 'synthetic-edition', sourceSha256: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', textSha256: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', lineId: null, lineSha256: null }, question: 'Synthetic question', reflection: 'changed', createdAt: '2026-11-27T08:00:00.000Z', updatedAt: '2026-11-27T09:00:00.000Z', conflictOf: 'note-a' },
+    expected: { id: 'incoming-b', binding: { eventId: 'harmandir-morning.2026-11-27', date: '2026-11-27', sourceId: 'sggs.text.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', edition: 'synthetic-edition', sourceSha256: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', textSha256: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', lineId: null, lineSha256: null }, question: 'Synthetic question', reflection: 'independent', createdAt: '2026-11-27T08:00:00.000Z', updatedAt: '2026-11-27T09:00:00.000Z' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:76:1
+✖ Nested conflict versions and their exports restore without repeated growth (0.314083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:80:34)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:86:1
+✖ Existing accidental duplicates are retained but not multiplied (0.168334ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:89:9)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:92:1
+✖ Mixed imports add only new identities and new versions with one revision and write (0.200875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:96:100)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:100:1
+✖ Concurrent retries reread under the lock and preserve a single incoming version (0.304417ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'CONFLICT_PRESERVED',
+  +   'LOCK_UNAVAILABLE'
+  -   'UNCHANGED'
+    ]
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:103:9)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'CONFLICT_PRESERVED', 'LOCK_UNAVAILABLE' ],
+    expected: [ 'CONFLICT_PRESERVED', 'UNCHANGED' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:106:1
+✖ At the record limit, an already represented restore is unchanged and genuinely new content refuses atomically (4.870959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:109:9)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/hukamnama-import-idempotence.mjs:113:1
+✖ Quota failure preserves the entire old store and unchanged restores do not attempt a write (0.170083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'LOCK_UNAVAILABLE'
+  - 'UNCHANGED'
+  
+      at TestContext.<anonymous> (file:///private/tmp/glp001-iphoneqa-20261126/daily-backup-idempotence/tests/hukamnama-import-idempotence.mjs:116:9)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'LOCK_UNAVAILABLE',
+    expected: 'UNCHANGED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

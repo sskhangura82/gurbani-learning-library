@@ -121,7 +121,7 @@ const graphs={
       "hukamnama/reader.mjs": "d73a43a1f73626561d547c9b361dc4549b82c4d8f23c254fa3482900162a3b17",
       "hukamnama/core.mjs": "b93d06e8d3347e39dba5524b04c36c629a762f001e571822f662d0f3cd7bab6d",
       "hukamnama/delivery.mjs": "c6edc3356a656a668f05f8efc9519f7a5798749f3e6c14d8bea66e76d25c509e",
-      "hukamnama/learning.mjs": "e6d811489d52fc7d962dc9832c538f61749ea1888fa860f70d59752086971cd2",
+      "hukamnama/learning.mjs": "b27aa14332dcb07f589faecf4616a31f90414afcdd628ab6d66399328d203d54",
       "hukamnama/publication-key.mjs": "e4c830924caa89fb6d64a0b2770b47340e1be0b8e10536e2684398adce2481c3",
       "hukamnama/json.mjs": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5"
     },

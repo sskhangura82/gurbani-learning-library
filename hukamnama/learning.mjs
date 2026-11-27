@@ -56,6 +56,10 @@ export function loadLearning({storage}={}){
  catch{return refusal("MALFORMED_STORE","The existing Daily learning record needs recovery. It has been preserved without alteration; no notes were replaced.");}
 }
 function stableBinding(binding){return JSON.stringify(["eventId","date","sourceId","edition","sourceSha256","textSha256","lineId","lineSha256"].map(key=>binding[key]));}
+// Compare the fixed schema, not object-key order. Exact user text and source
+// bindings stay untouched; identical text on an unrelated note is not a match.
+function sameVersion(a,b){return stableBinding(a.binding)===stableBinding(b.binding)&&a.question===b.question&&a.reflection===b.reflection&&a.createdAt===b.createdAt&&a.updatedAt===b.updatedAt;}
+function sameRecord(a,b){return a.id===b.id&&a.conflictOf===b.conflictOf&&sameVersion(a,b);}
 function uniqueId(records,idFactory){
  const existing=new Set(records.map(r=>r.id));
  for(let attempt=0;attempt<5;attempt++){const id=idFactory?idFactory():globalThis.crypto?.randomUUID?.();if(typeof id==="string"&&ID.test(id)&&!existing.has(id))return id;}
@@ -105,13 +109,20 @@ export async function importLearning({storage,locks,text,idFactory}={}){
  catch{return refusal("INVALID_IMPORT","This file is not a complete supported Daily Hukamnama learning backup. Your existing record has been preserved; nothing was imported.");}
  return locked({storage,locks},target=>{
   const loaded=loadLearning({storage:target});if(!loaded.ok)return loaded;
-  const store=clone(loaded.store);let conflicts=0,added=0;
+  const store=clone(loaded.store),existingById=new Map(store.records.map(r=>[r.id,r])),pending=[];let conflicts=0,added=0;
+  // Preserve every explicit incoming identity before making conflict copies.
+  // An exported copy can then represent its original in either input order.
   for(const item of incoming.records){
-   const existing=store.records.find(r=>r.id===item.id);
-   if(existing&&JSON.stringify(existing)===JSON.stringify(item))continue;
+   const existing=existingById.get(item.id);
+   if(!existing){store.records.push(clone(item));added++;}
+   else if(!sameRecord(existing,item))pending.push(item);
+  }
+  for(const item of pending){
+   if(store.records.some(r=>r.conflictOf===item.id&&sameVersion(r,item)))continue;
    const saved=clone(item);
-   if(existing){saved.id=uniqueId(store.records,idFactory);saved.conflictOf=existing.id;conflicts++;}
-   store.records.push(saved);added++;
+   // Reserve incoming identities too; a generated copy must never take one.
+   saved.id=uniqueId([...store.records,...incoming.records],idFactory);
+   saved.conflictOf=item.id;store.records.push(saved);conflicts++;added++;
   }
   if(added===0)return result(store,{status:"UNCHANGED",conflictPreserved:false,imported:0,message:"This backup is already present. Your saved notes have not changed."});
   store.revision++;
