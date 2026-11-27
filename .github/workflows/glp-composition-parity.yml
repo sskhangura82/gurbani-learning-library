@@ -1,0 +1,34 @@
+name: GLP Generic Composition Parity
+on:
+  pull_request:
+    paths:
+      - 'tools/compositions/**'
+      - 'tests/composition-parity.mjs'
+      - 'docs/research/GENERIC_BANI_READER_PARITY_V01.md'
+      - 'docs/research/COMPOSITION_PARITY_TEST_RECEIPT.json'
+      - '.github/workflows/glp-composition-parity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-fixture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Existing Japji immutable-source and saved-learning protection
+        run: |
+          node tests/verify.mjs
+          node tests/service-worker.mjs
+          node tests/shared-learning.mjs
+          node tests/r6-contract.mjs
+          node tests/r7-contract.mjs
+      - name: One generic source model, real Japji and synthetic nonreligious shabads
+        run: node tests/composition-parity.mjs
+      - name: No imported unreviewed second bani or personal audio
+        run: |
+          test ! -e composition/kirtan-sohila
+          test ! -e recordings
+          test ! -e media/private
