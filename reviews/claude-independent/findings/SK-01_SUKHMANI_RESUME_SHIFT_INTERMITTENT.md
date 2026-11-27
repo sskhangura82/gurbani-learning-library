@@ -198,3 +198,22 @@ It is recorded for two reasons:
 
 The status is unchanged: **OPEN-FIX-AWAITING-MERGE.** The repair is verified on the
 candidate; `main` is still affected; only a merge changes that, and that is not my act.
+
+### What sample this file represents — stated once, so no rate is computed from it
+
+Because I have now used a probability argument above, this file invites someone working out
+a failure rate from its entries. It cannot support that, and here is why.
+
+I log **failures** on review-only commits as they occur, because each one is evidence the
+defect is still live on `main`. I do **not** log every pass — doing so would make this file a
+transcript of green checks and would still not produce a usable rate, since runs on my branch
+are not a controlled sample: they fire on whatever commits I happen to push, at whatever
+frequency I happen to work.
+
+So the entries here are **failure-biased by construction, and knowingly so.** The "roughly 1
+in 16" figure is the builder's CI measurement, not something derived from this file, and it
+remains the only rate I will quote. A fifth clean run on `a112aca1f565` is noted here and not
+written up separately, for the same reason.
+
+If a rate ever needs establishing properly, it needs a fixed number of runs on unchanged
+code, declared in advance. I have not done that and am not claiming it.
