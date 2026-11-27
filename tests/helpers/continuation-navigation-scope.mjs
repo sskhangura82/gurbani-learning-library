@@ -5,6 +5,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import {readBeforeSourceReaderNavigation} from './source-reader-navigation-scope.mjs';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
 const BASE='a123b39e61c5fba94acc38ea77ab7c81e664f61d';
@@ -24,7 +25,7 @@ export async function continuationNavigationScope(){
   for(const item of record.files){
     assert.equal(item.hashMode,item.path==='index.html'?'script-loader-normalized':'raw-bytes');
     assert.equal(hash(comparable(item.path,prior(record.base,item.path))),item.beforeSha256,item.path+' exact earlier navigation input');
-    assert.equal(hash(comparable(item.path,await read(item.path))),item.afterSha256,item.path+' exact continuation navigation amendment');
+    assert.equal(hash(comparable(item.path,await readBeforeSourceReaderNavigation(item.path,read))),item.afterSha256,item.path+' exact continuation navigation amendment');
   }
   return new Set(files);
 }

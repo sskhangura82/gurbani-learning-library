@@ -23,6 +23,8 @@ jobs:
           node tests/private-library-contract.mjs
           node tools/private-library/pin-sri.mjs
           python3 tests/private-source-import-boundaries.py
+          python3 tests/shabados-original-importer.py
+          node --test tests/sikh-source-reader-core.mjs
       - name: Preserve checks of historical review provenance
         run: |
           node --test tests/history-registry.mjs tests/history-draft.mjs tests/history-editorial.mjs
@@ -47,6 +49,7 @@ jobs:
         run: |
           node tests/private-library-browser.mjs
           node tests/private-library-navigation-smoke.mjs
+          node tests/source-reader-browser.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -54,4 +57,5 @@ jobs:
           path: |
             evidence/private-library/browser/
             evidence/continuation-navigation-smoke/
+            evidence/source-readers/browser/
           if-no-files-found: error

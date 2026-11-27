@@ -45,8 +45,8 @@
         },
         {
           "path": "library/catalog.mjs",
-          "bytes": 11374,
-          "sha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67",
+          "bytes": 11795,
+          "sha256": "11f096b7e5434faeb67f0e79686c4ff800f2bc234f5c4023b7d9ddd4e875e01b",
           "imports": []
         },
         {
@@ -112,9 +112,9 @@
       ],
       "output": {
         "path": "library/app.bundle.mjs",
-        "bytes": 49984,
-        "sha256": "cb752afed536a8c205ecc4c3992fffcdb0df2368261d42222ab25a43d1e0b30b",
-        "integrity": "sha384-ukr2jI7cl9naS3fwd4KVpf+3j6MCvronTRdZ8M6lwAMDz4n4E6puszrDd8CRuUVf",
+        "bytes": 50417,
+        "sha256": "34edd0a582f9a52ce9951bef76a6dec0ccac0b6597a4da1586d995eab9f0d82e",
+        "integrity": "sha384-0fkU+8dbPSZUWW5LKueNzer1lPztLeCQzy5FAHLNgU/RBS+TfMyoRrPCsYCghSmX",
         "imports": []
       }
     },
@@ -352,6 +352,47 @@
         "bytes": 64712,
         "sha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
         "integrity": "sha384-nHoB9dEOO1r/cbKpqj+ZHjy616Pwiv2BD0wlh1gj6PmRz5PftGKzM5Fvnd48F2Y+",
+        "imports": []
+      }
+    },
+    {
+      "appId": "source-reader",
+      "entry": "collections/source-reader/reader.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "collections/source-reader/core.mjs",
+          "bytes": 16350,
+          "sha256": "97a2ec588071d317033c5da5842b8ab2402b7149f4b19f9cbcb85d112dbdc33c",
+          "imports": []
+        },
+        {
+          "path": "collections/source-reader/reader.mjs",
+          "bytes": 13227,
+          "sha256": "ff653d1b41e8cfc0f593881a693e0f614b95ecb8cea05feee81f9ac66ab4fce0",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/source-lock.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/core.mjs"
+            }
+          ]
+        },
+        {
+          "path": "collections/source-reader/source-lock.mjs",
+          "bytes": 775,
+          "sha256": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807",
+          "imports": []
+        }
+      ],
+      "output": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "bytes": 29848,
+        "sha256": "c791803da961840b3c33b9bef3866ef8bd2c855ba59ea823f8fa422377e76951",
+        "integrity": "sha384-vDO9juu5wdk4//Nw6dP1oFwX505UK5UL1Lcm6KCRTBRRW56pL31dMgRrr724WHah",
         "imports": []
       }
     }

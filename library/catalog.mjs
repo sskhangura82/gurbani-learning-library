@@ -112,8 +112,14 @@ export const COLLECTIONS = freeze([
     id: 'dasam-collection', title: 'Sri Dasam Granth', titlePa: 'ਸ੍ਰੀ ਦਸਮ ਗ੍ਰੰਥ',
     href: 'collections/dasam/index.html',
     readerIds: ['jaap', 'savaiye', 'chaupai'],
-    summary: 'Three selected readings are available; the complete collection is still being prepared.',
+    summary: 'All 17 sections of the named original-text digital edition, plus the existing Bani readers.',
     aliases: ['dasam', 'dasam granth', 'sri dasam granth', 'ਦਸਮ ਗ੍ਰੰਥ']
+  },
+  {
+    id: 'sggs-collection', title: 'Sri Guru Granth Sahib Ji', titlePa: 'ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ',
+    href: 'collections/sggs/index.html', readerIds: [],
+    summary: 'Read the named original-text digital edition by Ang, with complete source groups and a separate saved place.',
+    aliases: ['guru granth sahib', 'sggs', 'ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ']
   }
 ]);
 
@@ -121,15 +127,15 @@ export const EXPLORE = freeze([
   {
     id: 'psychology', kind: 'psychology-index', title: 'Psychology',
     href: 'psychology/index.html',
-    summary: 'Research references and reflection tools, available without the private reading password.',
+    summary: 'Research references and reflection tools, open without a PIN.',
     reviewLabel: 'Open learning · research and Gurbani retain their own context',
     aliases: ['psychology', 'intellectual humility']
   },
   {
     id: 'private-reading', kind: 'private-reading', title: 'Private reading',
     href: 'private-library/index.html',
-    summary: 'Comparative religious texts for your trusted circle. A passphrase is required to read the collection.',
-    reviewLabel: 'Password protected · separate from public psychology',
+    summary: 'Your personal comparative religious collection, opened with a six-digit PIN.',
+    reviewLabel: 'PIN protected · personal reading',
     aliases: ['private reading', 'private library']
   },
   {
@@ -182,8 +188,8 @@ export const TOOLS = freeze([
 ]);
 
 export const PLANNED = freeze([
-  {id: 'full-dasam-granth', title: 'Complete Sri Dasam Granth', available: false, summary: 'The open Dasam entrance currently links three existing readings. Additional compositions need their own source and edition records.'},
-  {id: 'full-guru-granth-sahib', title: 'Full Sri Guru Granth Sahib Ji', available: false, summary: 'Complete sequential reading is a future library expansion.'},
+  {id: 'dasam-explanations', title: 'Dasam Granth explanations', available: false, summary: 'The named original-text edition is available. Source-grounded explanations and editorial review are the next layer.'},
+  {id: 'sggs-explanations', title: 'Guru Granth Sahib Ji explanations', available: false, summary: 'The named original-text edition can be read by Ang. Complete explanations and broader search are being developed separately.'},
   {id: 'knowledge-explorer', title: 'Knowledge Explorer', available: false, summary: 'The separate pilot is awaiting integration and outstanding review.'},
   {id: 'dictionary', title: 'Gurbani dictionary', available: false, summary: 'A source-linked vocabulary library remains to be built and reviewed.'},
   {id: 'history', title: 'Sikh History & Living Heritage', available: false, summary: 'Historical narratives and their source records remain to be developed and reviewed.'},

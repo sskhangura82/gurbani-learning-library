@@ -1,0 +1,24 @@
+{
+  "schema": "glp.sikh-source-reader.navigation-scope.v1",
+  "base": "320537b0cc4aceb2e6007b32057a3c4a36c83520",
+  "files": [
+    {
+      "path": "index.html",
+      "hashMode": "script-loader-normalized",
+      "beforeSha256": "7c4cd2495a1e7d8d61a7bb9f15babbe3ac677bc0b79d06bde5c45994aa069f95",
+      "afterSha256": "252f18dd50b8a7e1d746171a36d28e23884c7502930e678fa816557c8fbe7184"
+    },
+    {
+      "path": "library/catalog.mjs",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67",
+      "afterSha256": "11f096b7e5434faeb67f0e79686c4ff800f2bc234f5c4023b7d9ddd4e875e01b"
+    },
+    {
+      "path": "collections/dasam/index.html",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "f26da13523b01ad976cac98b8cfe856489bcb5499dfcdb38ab26e1358bc92f61",
+      "afterSha256": "9268a7856ab37b350ad9255723fb1a15306cc437d93adfa1ee7012cf27b6f932"
+    }
+  ]
+}

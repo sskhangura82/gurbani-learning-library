@@ -8,6 +8,7 @@ import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {publicKnowledgeScope,readBeforePublicKnowledge} from './helpers/public-knowledge-scope.mjs';
 import {continuationNavigationScope,readBeforeContinuationNavigation} from './helpers/continuation-navigation-scope.mjs';
+import {sourceReaderNavigationScope} from './helpers/source-reader-navigation-scope.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export const INPUT_BASE='bf744d1ac5b845d63c3324ed1f231c3fec31e40e';
@@ -123,6 +124,10 @@ test('The current public Knowledge amendment has exactly its declared before/aft
 
 test('Continuation navigation has exact before/after bytes independently of loader pins',async()=>{
  assert.deepEqual([...await continuationNavigationScope()],['index.html','library/app.mjs','library/catalog.mjs']);
+});
+
+test('Named-edition reader navigation has exact bytes and preserves earlier review scopes',async()=>{
+ assert.deepEqual([...await sourceReaderNavigationScope()],['index.html','library/catalog.mjs','collections/dasam/index.html']);
 });
 
 test('Existing application bytes stay frozen through the exact public Knowledge amendment and prior Daily, Farid, Haumai and Explore scopes',async()=>{

@@ -27,6 +27,8 @@ const expected={
  'articles/article.html':['app.bundle.mjs'],
  'knowledge/index.html':['app.bundle.mjs'],
  'collections/dasam/index.html':[],
+ 'collections/dasam/read.html':['../source-reader/reader.bundle.mjs'],
+ 'collections/sggs/index.html':['../source-reader/reader.bundle.mjs'],
  'psychology/index.html':[],
  'private-library/index.html':['./app.mjs'],
  'hukamnama/index.html':['./reader.bundle.mjs'],
@@ -41,13 +43,13 @@ const tags=html=>[...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi)].ma
 const attr=(tag,name)=>tag.match(new RegExp('\\b'+name+'="([^"]*)"'))?.[1];
 function walk(node,visit){if(!node||typeof node!=='object')return;visit(node);for(const value of Object.values(node))if(Array.isArray(value))value.forEach(x=>walk(x,visit));else if(value&&typeof value==='object')walk(value,visit);}
 
-test('All 19 application pages carry exactly 59 independently inventoried script pins',async()=>{
+test('All 21 application pages carry exactly 61 independently inventoried script pins',async()=>{
  assert.deepEqual(APP_SCRIPT_POLICY.map(p=>p.page).sort(),Object.keys(expected).sort());
  let total=0,baselineUnpinned=0;
  for(const [page,ordered] of Object.entries(expected)){
   const html=(await read(page)).toString(),list=tags(html);
   assert.deepEqual(list.map(tag=>attr(tag,'src')),ordered,page);
-  if(!['hukamnama/index.html','salok-farid/index.html','collections/dasam/index.html','psychology/index.html','private-library/index.html'].includes(page)){
+  if(!['hukamnama/index.html','salok-farid/index.html','collections/dasam/index.html','collections/dasam/read.html','collections/sggs/index.html','psychology/index.html','private-library/index.html'].includes(page)){
    const previous=execFileSync('git',['show',baseline+':'+page],{cwd:root,encoding:'utf8'});
    baselineUnpinned+=tags(previous).filter(tag=>!attr(tag,'integrity')).length;
   }
@@ -61,14 +63,14 @@ test('All 19 application pages carry exactly 59 independently inventoried script
    total++;
   }
  }
- assert.equal(total,59);
+ assert.equal(total,61);
  assert.equal(baselineUnpinned,15,'negative baseline confirms this extends the existing 36 reader pins');
 });
 
 test('Generated modules reproduce exactly and contain no executable import or export-from edges',async()=>{
- for(const name of ['library','articles','knowledge','hukamnama']){
+ for(const name of ['library','articles','knowledge','hukamnama','source-reader']){
   const first=await buildAppBundle(name),second=await buildAppBundle(name);
-  assert.equal(first.outputPath,name+(name==='hukamnama'?'/reader.bundle.mjs':'/app.bundle.mjs'));
+  assert.equal(first.outputPath,name==='source-reader'?'collections/source-reader/reader.bundle.mjs':name+(name==='hukamnama'?'/reader.bundle.mjs':'/app.bundle.mjs'));
   assert.equal(first.code,second.code,name+' deterministic output');
   assert.equal(first.code,(await read(first.outputPath)).toString(),name+' committed bundle');
   const ast=parse(first.code,{ecmaVersion:'latest',sourceType:'module'});
@@ -82,7 +84,7 @@ test('Generated modules reproduce exactly and contain no executable import or ex
 });
 
 test('Ordinary check mode writes neither bundles nor HTML',async()=>{
- const files=[...Object.keys(expected),...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),'hukamnama/reader.bundle.mjs'];
+ const files=[...Object.keys(expected),...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),'hukamnama/reader.bundle.mjs','collections/source-reader/reader.bundle.mjs'];
  const before=await Promise.all(files.map(read));
  assert.equal((await buildAppBundles({write:false})).status,'PASS');
  assert.equal((await refreshAppSRI({write:false})).status,'PASS');
@@ -91,7 +93,7 @@ test('Ordinary check mode writes neither bundles nor HTML',async()=>{
 });
 
 test('Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts',async()=>{
- for(const name of ['index.html','breathing.html','articles/index.html','knowledge/index.html','hukamnama/index.html','private-library/index.html']){
+ for(const name of ['index.html','breathing.html','articles/index.html','knowledge/index.html','hukamnama/index.html','private-library/index.html','collections/sggs/index.html','collections/dasam/read.html']){
   const policy=APP_SCRIPT_POLICY.find(p=>p.page===name),html=(await read(name)).toString(),list=tags(html);
   const first=list[0];
   const mutations=[
@@ -123,7 +125,7 @@ test('Extra HTML and stale source cannot silently pass default checks',async()=>
  const fixture=await fs.mkdtemp(path.join(os.tmpdir(),'glp-script-contract-'));
  try{
   const files=execFileSync('git',['ls-tree','-r','--name-only',baseline],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(n=>!n.startsWith('evidence/'));
-  for(const name of [...files,...['passage-ui.mjs','passages.mjs','passage-contracts.mjs','search.mjs','kinds.mjs','complete-passages.json'].map(n=>'library/'+n),'salok-farid/index.html','knowledge/journey.mjs','knowledge/learning.mjs','knowledge/json.mjs','tools/script-integrity/app-graphs.json','collections/dasam/index.html','psychology/index.html','private-library/index.html','private-library/app.mjs',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
+  for(const name of [...files,...['passage-ui.mjs','passages.mjs','passage-contracts.mjs','search.mjs','kinds.mjs','complete-passages.json'].map(n=>'library/'+n),'salok-farid/index.html','knowledge/journey.mjs','knowledge/learning.mjs','knowledge/json.mjs','tools/script-integrity/app-graphs.json','collections/dasam/index.html','psychology/index.html','private-library/index.html','private-library/app.mjs','collections/dasam/read.html','collections/sggs/index.html',...['reader.mjs','core.mjs','source-lock.mjs','reader.bundle.mjs'].map(n=>'collections/source-reader/'+n),...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
    let bytes;try{bytes=await read(name);}catch(error){if(error.code==='ENOENT')continue;throw error;}
    const destination=path.join(fixture,name);await fs.mkdir(path.dirname(destination),{recursive:true});await fs.writeFile(destination,bytes);
   }

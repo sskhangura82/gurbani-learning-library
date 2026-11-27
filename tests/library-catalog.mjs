@@ -48,7 +48,7 @@ test('the directory names ten distinct existing readers and does not duplicate J
   assert.deepEqual(ids(READERS), ['japji', 'jaap', 'savaiye', 'chaupai', 'anand', 'rehras', 'sohila', 'sukhmani', 'salok-mahalla9', 'salok-kabir']);
   assert.equal(new Set(ids(READERS)).size, 10);
   assert.equal(READERS.filter(entry => entry.id === 'japji').length, 1);
-  assert.equal(COLLECTIONS.length, 2);
+  assert.equal(COLLECTIONS.length, 3);
   assert.deepEqual(COLLECTIONS[0].readerIds, ids(READERS.filter(entry => entry.group === 'nitnem')));
   assert.equal(new Set(COLLECTIONS[0].readerIds).size, 7);
   assert.ok(COLLECTIONS[0].readerIds.includes('japji'));
@@ -57,6 +57,9 @@ test('the directory names ten distinct existing readers and does not duplicate J
   assert.deepEqual(dasam.readerIds, ['jaap', 'savaiye', 'chaupai']);
   assert.ok(dasam.readerIds.every(id => getReader(id).sourceFamily === 'dasam'));
   relativeRoute(dasam.href);
+  const sggs = COLLECTIONS.find(entry => entry.id === 'sggs-collection');
+  assert.deepEqual(sggs.readerIds, [], 'The full edition does not replace the ten existing readers or their saved learning');
+  relativeRoute(sggs.href);
 });
 
 test('every reader route exists and Saved entry preserves its exact reading route', () => {
@@ -209,7 +212,9 @@ test('planned modules are unavailable metadata rather than functioning links or 
   assert.ok(!PLANNED.some(entry => entry.id === 'daily-hukamnama'));
   relativeRoute('hukamnama/index.html');
   relativeRoute('hukamnama/index.html?learning=saved');
-  assert.ok(PLANNED.some(entry => entry.id === 'full-guru-granth-sahib'));
+  assert.ok(PLANNED.some(entry => entry.id === 'sggs-explanations'));
+  assert.ok(PLANNED.some(entry => entry.id === 'dasam-explanations'));
+  assert.ok(!PLANNED.some(entry => ['full-guru-granth-sahib', 'full-dasam-granth'].includes(entry.id)));
   for (const entry of PLANNED) {
     assert.equal(entry.available, false);
     assert.ok(!Object.hasOwn(entry, 'href'));
