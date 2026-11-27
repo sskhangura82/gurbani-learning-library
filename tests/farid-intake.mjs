@@ -1,5 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {mkdtemp,mkdir,writeFile,readFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {loadFaridInputs,validateFaridIntake,sha256,FaridIntakeError} from '../tools/validate-farid-intake.mjs';
 const {manifest,corpus,options}=await loadFaridInputs({witnessDir:process.env.GLP_FARID_WITNESS_DIR});
 const staticOptions={...options,witnessFiles:null};
@@ -51,3 +55,19 @@ test('Changing an existing runtime original is refused',()=>{const files=new Map
 test('Missing original witness files refuse reconstruction',()=>assert.throws(()=>validate(manifest,corpus,{...options,witnessFiles:new Map()}),e=>e.code==='WITNESS_INPUT'));
 test('All12 pinned files reconstruct the entire observed span and its boundaries',{skip:!options.witnessFiles},()=>{const report=validate(manifest,corpus,options);assert.equal(report.witnessFilesVerified,12);assert.equal(report.scope,'PINNED_SOURCE_RESEARCH_WITH_WITNESS_RECONSTRUCTION');assert.deepEqual(report.missingTerminalNumbers,[2]);});
 test('A one-byte raw witness change is refused before extraction',{skip:!options.witnessFiles},()=>{const files=new Map(options.witnessFiles),path='corpus/ang-1378.md',bytes=Buffer.from(files.get(path));bytes[bytes.length-2]^=1;files.set(path,bytes);assert.throws(()=>validate(manifest,corpus,{...options,witnessFiles:files}),e=>e.code==='WITNESS_BYTES');});
+
+test('Unrelated navigation and global-policy changes do not freeze the quarantined research intake',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'glp-farid-preservation-'));
+ try{
+  const contract=JSON.parse(options.contractBytes);
+  assert.equal(Object.hasOwn(contract.runtimePins,'library/catalog.mjs'),false);
+  assert.equal(Object.hasOwn(contract.runtimePins,'tools/script-integrity/policy.mjs'),false);
+  const project=fileURLToPath(new URL('../',import.meta.url));
+  const paths=['content-intake/farid/contract.json','content-intake/farid/manifest.json','content-intake/sggs/file-inventory.json',...Object.keys(contract.runtimePins),...contract.retainedEvidence.map(r=>r.path)];
+  for(const path of paths){await mkdir(dirname(join(root,path)),{recursive:true});await writeFile(join(root,path),await readFile(join(project,path)));}
+  for(const path of ['library/catalog.mjs','tools/script-integrity/policy.mjs']){await mkdir(dirname(join(root,path)),{recursive:true});await writeFile(join(root,path),'// Synthetic unrelated application change; never executed.\n');}
+  const input=await loadFaridInputs({root});
+  const report=validateFaridIntake(input.manifest,input.corpus,input.options);
+  assert.equal(report.result,'PASS');assert.equal(report.runtimeEligible,false);assert.deepEqual(report.missingTerminalNumbers,[2]);
+ }finally{await rm(root,{recursive:true,force:true});}
+});

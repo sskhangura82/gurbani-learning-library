@@ -16,3 +16,9 @@ Base: 7f36c3039ca95fac6e69ca28f631b9e3734c70e9. Research branch only; no reader,
 10. Existing runtime originals, reader scripts, saved learning, script policy and source locks remain unchanged. No files under reviews/claude-independent are modified. Commit locally for parent inspection; no push, pull request, merge or deployment.
 
 Reuse reference: separate PR 50, 3af5ba739cd8bf5ab2d358d12704ad9e48452b1e, content-intake/kabir/manifest.json and bounded validator/fetcher approach. Its runtime and authority gates remain distinct from this new source-only research record.
+
+## Additive scope clarification after parent candidate review
+
+27 November 2026. The original criteria and implementation commits remain intact. Criterion10 requires this Farid branch to leave existing application files unchanged; it does not require this research validator to freeze unrelated navigation and global script policy forever. The initial contract additionally pinned `library/catalog.mjs` and `tools/script-integrity/policy.mjs`. Parent review identified that those unrelated pins would incorrectly reject concurrent authorized Haumai changes on a future combined branch.
+
+Remove those two new intake-only pins. Preserve the original scripture-pack/source-lock pins, inherited research pins, witness fingerprints, source-order/gap checks and all authority/admission gates. The dedicated application integrity checks continue to govern the global script policy. Record this candidate's changed paths in the handoff evidence and review its source-only diff rather than imposing a perpetual navigation freeze. The transparent before/after contract fingerprints are recorded in `evidence/farid-intake/contract-amendment.json`. No original criterion or prior evidence is erased.

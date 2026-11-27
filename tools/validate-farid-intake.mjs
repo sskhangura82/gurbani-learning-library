@@ -7,7 +7,7 @@ import {basename,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {isDeepStrictEqual} from 'node:util';
 const ROOT=resolve(dirname(fileURLToPath(import.meta.url)),'..');
-const CONTRACT_SHA256='3b95354b3124333c5651dad9f2ecc4882ab33c886173dfed73843458ee92c9a9';
+const CONTRACT_SHA256='ff8ebde2192ccd162b74145ec30bb0905fd5233929845a3740b9b083a05034de';
 const COMMIT='34d2a7cab032c8ea24d21ff20f64653bd03766f4';
 const ANGS=[488,794,1377,1378,1379,1380,1381,1382,1383,1384];
 const decode=new TextDecoder('utf-8',{fatal:true});

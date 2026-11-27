@@ -58,3 +58,9 @@ The proposed CI workflow is read-only and uploads results only. It was written l
 ## Next concrete step
 
 Independent review should verify the research scope and refusal behavior. Then a separately reviewed selection ledger can address the displaced line and heading evidence without rewriting the frozen witness. Only after the unresolved source/admission requirements are met should an original-only Farid reader reuse the existing collection reader. The future full-corpus index also needs stable occurrence crosswalks and documented locator discrepancies; a 1,430-file inventory is only its source inventory foundation.
+
+## Additive parent-review amendment: preservation scope
+
+The initial candidate also froze the unrelated library navigation catalogue and global script policy in this new research validator. That would have made authorized concurrent Haumai development fail the future combined Farid check despite leaving all source research intact. Parent review therefore narrowed the new preservation contract to the relevant existing scripture packs, their source lock and the inherited evidence. Existing global integrity tests continue to protect the script policy.
+
+The two removed intake-only pins, original and revised contract fingerprints, and unchanged source fingerprints are preserved in `evidence/farid-intake/contract-amendment.json`. This source-only branch's changed paths are recorded separately in `evidence/farid-intake/changed-paths.json`. No runtime application file was edited. All original-source, quarantine, admission and authority gates remain unchanged, and the scripture-mutation test remains mandatory. This is a scoped correction to the new research candidate, not a change to the application's source policy.
