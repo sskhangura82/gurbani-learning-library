@@ -7,6 +7,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {publicKnowledgeScope,readBeforePublicKnowledge} from './helpers/public-knowledge-scope.mjs';
+import {continuationNavigationScope,readBeforeContinuationNavigation} from './helpers/continuation-navigation-scope.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export const INPUT_BASE='bf744d1ac5b845d63c3324ed1f231c3fec31e40e';
@@ -15,6 +16,7 @@ const KNOWLEDGE_BASE='a3476ac4b9be90dde350fb35dd13ce0b672c120d';
 const KNOWLEDGE_TIP='b68e080043bb0b4e5cb3d17977e65c8cd62c15b3';
 const git=(...args)=>execFileSync('git',args,{cwd:root,maxBuffer:64*1024*1024});
 const read=name=>fs.readFile(path.join(root,name));
+const readBeforeContinuation=name=>readBeforeContinuationNavigation(name,readBeforePublicKnowledge);
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const NAVIGATION_BASE='44401e35690322fb3dbc29c443bff86d73279fcb';
 const EXPLORE_BASE='d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a';
@@ -70,7 +72,7 @@ async function navigationScope(){
  assert.deepEqual(record.files.map(f=>f.path),['index.html','library/catalog.mjs']);
  for(const item of record.files){
   assert.equal(hash(navigationComparable(item.path,git('show',NAVIGATION_BASE+':'+item.path))),item.beforeSha256,item.path+' navigation baseline');
-  const dailyBytes=item.path==='index.html'?git('show',EXPLORE_BASE+':'+item.path):await read(item.path);
+  const dailyBytes=item.path==='index.html'?git('show',EXPLORE_BASE+':'+item.path):await readBeforeContinuation(item.path);
   assert.equal(hash(navigationComparable(item.path,dailyBytes)),item.afterSha256,item.path+' exact frozen Daily entrance change');
  }
  return new Set(record.files.map(f=>f.path));
@@ -110,7 +112,7 @@ async function exploreScope(){
  assert.deepEqual(record.files.map(f=>f.path),['index.html','library/app.mjs','library/library.css']);
  for(const item of record.files){
   assert.equal(hash(git('show',EXPLORE_BASE+':'+item.path)),item.beforeSha256,item.path+' Explore baseline');
-  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact complete-passage UI change');
+  assert.equal(hash(await readBeforeContinuation(item.path)),item.afterSha256,item.path+' exact complete-passage UI change before verified continuation navigation');
  }
  return new Set(record.files.map(f=>f.path));
 }
@@ -119,13 +121,17 @@ test('The current public Knowledge amendment has exactly its declared before/aft
  assert.deepEqual([...await publicKnowledgeScope()],['knowledge/pilot.json','knowledge/app.mjs','knowledge/registry.mjs','knowledge/index.html']);
 });
 
+test('Continuation navigation has exact before/after bytes independently of loader pins',async()=>{
+ assert.deepEqual([...await continuationNavigationScope()],['index.html','library/app.mjs','library/catalog.mjs']);
+});
+
 test('Existing application bytes stay frozen through the exact public Knowledge amendment and prior Daily, Farid, Haumai and Explore scopes',async()=>{
  const navigation=await navigationScope(),farid=await faridReaderScope(),journey=await journeyScope(),explore=await exploreScope();
  const application=names.filter(name=>!nonApplication.test(name));
  assert.ok(application.length>90,'protection must cover the application, not a small selected sample');
  for(const name of application){
   if(name==='sw.js'||navigation.has(name)||farid.has(name)||journey.has(name)||explore.has(name))continue;
-  const previous=git('show',INPUT_BASE+':'+name),current=await readBeforePublicKnowledge(name);
+  const previous=git('show',INPUT_BASE+':'+name),current=await readBeforeContinuation(name);
   if(loaderPages.has(name)){
    assert.equal(loaderComparable(current.toString()),loaderComparable(previous.toString()),name+' changed beyond loader pins or bundle URL');
   }else assert.deepEqual(current,previous,name+' must stay byte-identical');
@@ -141,7 +147,7 @@ test('Reader loader contract and reviewed original module closures remain exact'
   if(name==='library/catalog.mjs'){await navigationScope();continue;}
   if(name==='knowledge/app.mjs'){await journeyScope();continue;}
   if(name==='library/app.mjs'){await exploreScope();continue;}
-  assert.deepEqual(await readBeforePublicKnowledge(name),git('show',INPUT_BASE+':'+name),name+' original bytes before the verified public-access amendment');
+  assert.deepEqual(await readBeforeContinuation(name),git('show',INPUT_BASE+':'+name),name+' original bytes before the verified continuation amendments');
  }
  const priorFoundation='fb49ef41bd890db879d7f93a861585915ef81622';
  for(const name of ['hukamnama/core.mjs','hukamnama/fixture.json','tests/hukamnama-foundation.mjs'])
