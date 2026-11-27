@@ -1,0 +1,79 @@
+name: Deliver checked Daily original to isolated test site
+on:
+  workflow_dispatch:
+    inputs:
+      amritsar_date:
+        description: 'Optional explicit date; blank means today in Amritsar'
+        required: false
+        type: string
+  schedule:
+    - cron: '23 1,2,3,5,8 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: isolated-daily-publisher
+  cancel-in-progress: false
+jobs:
+  isolated-dated-original:
+    # Installing this file in the source repo cannot publish anything. No gate or
+    # secret is created by this change. Review and founder activation precede use.
+    if: github.repository == 'glp001-iphone-qa/glp001-iphone-test' && github.ref == 'refs/heads/main' && vars.GLP_DAILY_TEST_PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+          # The same-repository token is used only after the tool verifies both
+          # effective remote URLs and an exact-base lease on this isolated repo.
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare temporary isolated development key
+        env:
+          GLP_DAILY_KEY_PEM: ${{ secrets.GLP_DAILY_TEST_SIGNING_KEY_PEM }}
+        run: |
+          python3 - <<'PY'
+          import os, pathlib
+          p = pathlib.Path(os.environ['RUNNER_TEMP']) / 'glp-daily-test-key.pem'
+          with p.open('x', opener=lambda name, flags: os.open(name, flags, 0o600)) as f:
+              f.write(os.environ.get('GLP_DAILY_KEY_PEM', ''))
+          PY
+      - name: Check, install with exact-base lease, request Pages and verify served bytes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GLP_DAILY_TEST_PUBLISH_ENABLED: ${{ vars.GLP_DAILY_TEST_PUBLISH_ENABLED }}
+          GLP_REQUEST_DATE: ${{ inputs.amritsar_date }}
+          GLP_BASE_COMMIT: ${{ github.sha }}
+        run: |
+          if [ -n "$GLP_REQUEST_DATE" ]; then
+            node tools/publish-daily-test.mjs --repository "$GITHUB_WORKSPACE" --base "$GLP_BASE_COMMIT" --ref refs/remotes/origin/main --output "$RUNNER_TEMP/glp-daily-test-run" --key "$RUNNER_TEMP/glp-daily-test-key.pem" --date "$GLP_REQUEST_DATE" --publish-to-isolated-test
+          else
+            node tools/publish-daily-test.mjs --repository "$GITHUB_WORKSPACE" --base "$GLP_BASE_COMMIT" --ref refs/remotes/origin/main --output "$RUNNER_TEMP/glp-daily-test-run" --key "$RUNNER_TEMP/glp-daily-test-key.pem" --publish-to-isolated-test
+          fi
+      - name: Remove temporary signing material
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import os, pathlib
+          (pathlib.Path(os.environ['RUNNER_TEMP']) / 'glp-daily-test-key.pem').unlink(missing_ok=True)
+          PY
+      - name: Preserve bounded status only, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-daily-status-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/glp-daily-test-run/publisher.json
+          if-no-files-found: warn
+          retention-days: 30
+# No synthetic recitation, explanation generation, notifications or private-note
+# handling. A failed source check leaves a visible unavailable date. A push or
+# queued Pages request alone never counts as verified end-user delivery.

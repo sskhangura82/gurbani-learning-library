@@ -1,0 +1,14 @@
+# Isolated Daily publisher — builder criteria frozen before implementation
+
+The founder requested the Daily installation connection and a usable isolated preview on 27 November 2026. Finish the code path from the existing official capture/sealer/proposal into the isolated Git repository and Pages build. This does not waive independent review or activate the new publisher while it is under review. The live family repository and website are excluded.
+
+1. Only glp001-iphone-qa/glp001-iphone-test on refs/heads/main is a permissible network write target. Verify effective fetch and push URLs and the current expected commit. No cross-repository token or arbitrary target option.
+2. Reuse existing original acquisition, stage validation, signature and exact-base proposal. A candidate contains no explanatory content. Matching current dates retain exact old bytes. Corrections, missing or corrupt originals and stale bases refuse. Never substitute another day.
+3. Create a commit from the replay-verified tree with the recorded exact base as its sole parent. Do not modify the working tree, real index or local refs. Remote update must compare against that exact base; a concurrent update cannot be overwritten. Capture durable intent before attempting the network write. An ambiguous push result is reported honestly and reconciled by read-only exact-head observation.
+4. Git transport is HTTPS-only and targets the validated isolated repository. No remote-rewrite ambiguity, credential values, arbitrary command output or signing keys enter a run record.
+5. An Actions-token push does not itself trigger a Pages build. Explicitly request the existing Pages build endpoint after an installed or already-admitted record. A repeat can recover a previous push whose build was interrupted. A successful API request is not claimed as a visible reading.
+6. Verify the exact served event and source bytes after the build request before reporting delivery. Bound retries/timeouts; preserve explicit build-pending, unavailable and uncertain states. Midnight after a write remains the original dated reading, never today's substitute.
+7. Add a separately gated test-repository-only scheduled/manual workflow. It remains off unless independently reviewed, installed on the isolated repository and explicitly enabled. No activation, secret creation or unreviewed deployment occurs in this implementation round.
+8. Synthetic temporary Git repositories and ephemeral keys exercise new installation, repeat/no-op, concurrent remote change, wrong target, stale local base, capture failure, push ambiguity, build failure and served-byte mismatch. No actual private reflection or browser profile is read.
+
+The independent review protocol remains. Exact source and qualified review labels are descriptive, not manufactured authority. No audio work.
