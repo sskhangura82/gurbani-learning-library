@@ -26,3 +26,7 @@ One earlier Kabir cache regression ran while I changed the new page's review-pen
 There is no physical iPhone, iPad, Android, Safari, Home Screen or VoiceOver result. Source-selection review, complete printed-edition collation, qualified Gurbani/Punjabi/Santhiya review and permission to release remain outstanding. This does not add Farid Ji's other raag compositions, commentary or audio.
 
 No merge or deployment was performed.
+
+## Hosted corrective check
+
+On initial candidate `4316ce9`, all source reconstruction, reader/browser and Daily hosted jobs passed except the existing offline-update fixture. Its strict expected-inventory list had not been extended for the four new Farid assets. The correction adds exactly the directory alias, page and two source data files; it retains full set equality, digest checks, failed-update preservation, explicit activation and synthetic private-data checks. The corrected local offline suite passed all six cases. No application, scripture, teaching, worker logic or timeouts changed in this correction. The initial hosted result is retained in `hosted-4316ce9.json` and the complete corrected local report in `offline-update-preservation.json`.
