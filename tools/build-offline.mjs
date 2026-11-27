@@ -23,10 +23,19 @@ additions.push('./knowledge/','./knowledge/index.html','./knowledge/style.css','
 // They must never enter the versioned application shell.
 additions.push('./hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs');
 additions.push('./vendor/opengranth/LICENSE','./vendor/opengranth/NOTICE');
+additions.push('./collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html');
+// The encrypted reading room is fetched on demand with no-store. It is not a
+// public offline/search asset, and decrypted content never enters this manifest.
 const expected={};
-for(const name of new Set([...Object.keys(previous),...additions])){
+const inventory=new Set([...Object.keys(previous),...additions]);
+for(const name of inventory){
+ const pathname=decodeURIComponent(new URL(name,'https://offline.invalid/').pathname);
+ if(pathname==='/private-library'||pathname.startsWith('/private-library/'))
+  throw Error('Private-library assets must not enter the public offline manifest.');
+}
+for(const name of inventory){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.26-reviewed-integration-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.27-trusted-library-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

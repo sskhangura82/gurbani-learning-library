@@ -26,8 +26,8 @@
       "inputs": [
         {
           "path": "library/app.mjs",
-          "bytes": 7172,
-          "sha256": "a3574ea4e259cfac913ce18e5c6cd9cc32e5e7fa753ef3ee021a679a62457cc8",
+          "bytes": 7289,
+          "sha256": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe",
           "imports": [
             {
               "kind": "import-statement",
@@ -45,8 +45,8 @@
         },
         {
           "path": "library/catalog.mjs",
-          "bytes": 10025,
-          "sha256": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497",
+          "bytes": 11374,
+          "sha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67",
           "imports": []
         },
         {
@@ -112,9 +112,9 @@
       ],
       "output": {
         "path": "library/app.bundle.mjs",
-        "bytes": 48480,
-        "sha256": "aea5146a7944293993c0ca1b7dcc0c09b5dbd51d17a2f51a45edb864058a20e5",
-        "integrity": "sha384-CEuiNZEaBvofZ4/SMl4Ci6lamLHGwvTvFmZM1gFOpzssHbIaGv8My4QDj21mTTHy",
+        "bytes": 49984,
+        "sha256": "cb752afed536a8c205ecc4c3992fffcdb0df2368261d42222ab25a43d1e0b30b",
+        "integrity": "sha384-ukr2jI7cl9naS3fwd4KVpf+3j6MCvronTRdZ8M6lwAMDz4n4E6puszrDd8CRuUVf",
         "imports": []
       }
     },

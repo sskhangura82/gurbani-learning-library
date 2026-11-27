@@ -1,0 +1,57 @@
+name: Open collections and private reading
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-access-boundaries:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify public catalog, encrypted format, and private file boundaries
+        run: |
+          node --test tests/library-catalog.mjs tests/private-offline-boundary.mjs
+          node tests/private-library-contract.mjs
+          node tools/private-library/pin-sri.mjs
+          python3 tests/private-source-import-boundaries.py
+      - name: Preserve checks of historical review provenance
+        run: |
+          node --test tests/history-registry.mjs tests/history-draft.mjs tests/history-editorial.mjs
+          node tools/history/editorial-check.mjs
+  isolated-browser:
+    needs: source-and-access-boundaries
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated browser test tools
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+      - name: Exercise synthetic private reading and open collection navigation
+        run: |
+          node tests/private-library-browser.mjs
+          node tests/private-library-navigation-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trusted-library-synthetic-browser
+          path: |
+            evidence/private-library/browser/
+            evidence/continuation-navigation-smoke/
+          if-no-files-found: error

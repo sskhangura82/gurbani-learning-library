@@ -2,7 +2,7 @@
   "environment": "Node service-worker simulation; not a physical offline test",
   "checks": [
     {
-      "name": "Exact prior 85-asset inventory plus eight bundled-library/Knowledge entries and four Daily shell entries; every on-disk and cached body hash and release URL checked",
+      "name": "Exact prior 85-asset inventory plus bundled library, Knowledge, Daily, Farid, Explore, and five open collection entries; every on-disk and cached body hash and release URL checked",
       "status": "PASS"
     },
     {
@@ -27,6 +27,10 @@
     },
     {
       "name": "Cross-origin requests untouched",
+      "status": "PASS"
+    },
+    {
+      "name": "Private requests bypass public cache, including encoded paths",
       "status": "PASS"
     },
     {

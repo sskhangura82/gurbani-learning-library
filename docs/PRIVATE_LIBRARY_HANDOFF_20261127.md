@@ -4,7 +4,7 @@
 
 This adds an encrypted reading room at `private-library/index.html`. Other religious texts belong here; psychology remains open and Dasam Granth belongs to the separately identified Sikh collection. Root navigation and catalog changes are integration work outside this commit.
 
-The default tree contains no real encrypted collection and no owner passphrase. Without a configured `private-library/collection.enc.json`, an attempted unlock shows setup pending. The owner can supply the first rights-checked collection using the packing tool. Source licensing and textual accuracy remain source-specific editorial work; encryption alone does not establish permission.
+The continuation now includes `private-library/collection.enc.json`: an authenticated encrypted collection with 84 entries, including 81 World English Bible Classic books (1,402 chapters), the publisher notices, the complete supplied Project Gutenberg Dhammapada by F. Max Müller (26 chapters, verse numbers 1–423), and an 84000 reading-room link with no Tibetan translation imported. Every supplied chapter character was preserved; edition omissions are disclosed in the source metadata. The complete source-to-payload and encrypt/decrypt round trips passed. A safe receipt is in `evidence/private-library/collection-receipt.json`. The owner passphrase and source payload remain outside every Git working tree. Source licensing and textual accuracy remain source-specific editorial work; encryption alone does not establish permission.
 
 ## Pack format
 

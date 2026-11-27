@@ -24,7 +24,8 @@ const additions=[
  './knowledge/','./knowledge/index.html','./knowledge/style.css',
  './knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json',
  './hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs',
- './salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json'
+ './salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json',
+ './collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html'
 ];
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8',
  '.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8',

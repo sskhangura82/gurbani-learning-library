@@ -92,11 +92,14 @@ const priorAssets=[
 ];
 const additions=['./library/app.bundle.mjs','./articles/app.bundle.mjs','./knowledge/','./knowledge/index.html','./knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json'];
 const dailyShell=['./hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs'];
-const requiredAssets=[...priorAssets,...additions,...dailyShell];
+const reviewedAdditions=['./salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json','./library/complete-passages.json','./library/passage-contracts.mjs','./library/passages.mjs','./library/passage-ui.mjs','./library/search.mjs','./library/kinds.mjs'];
+const openCollections=['./collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html'];
+const requiredAssets=[...priorAssets,...additions,...dailyShell,...reviewedAdditions,...openCollections];
 const expected=JSON.parse(source.match(/const EXPECTED=(\{[^\n]+\});/)[1]),version=source.match(/const VERSION="([^"]+)";/)[1];
 assert.equal(new Set(requiredAssets).size,requiredAssets.length,'Release inventory contains no duplicate URLs');
 assert.deepEqual(Object.keys(expected).sort(),[...requiredAssets].sort(),'The complete prior release, bundled Knowledge and Daily shell must remain present');
 assert.ok(!Object.keys(expected).some(name=>/^\.\/hukamnama\/(events|sources|receipts)\//.test(name)),'Dynamic Daily records must never be frozen into the shell');
+assert.ok(!Object.keys(expected).some(name=>/^\.\/private-library(?:\/|$)/.test(name)),'Private reader and encrypted collection must not enter the public cache');
 const digest=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 for(const asset of requiredAssets){
  const file=new URL(asset.endsWith('/')?asset+'index.html':asset,root);
@@ -122,5 +125,10 @@ h.events.activate({waitUntil:p=>pending=p});await pending;assert.deepEqual(h.cal
 h.events.message({data:{type:'IGNORE'}});assert.ok(!h.calls.includes('skip'));h.events.message({data:{type:'ACTIVATE_GLP_UPDATE'}});assert.ok(h.calls.includes('skip'));
 let response;h.events.fetch({request:new Request(scope+'full-japji.html'),respondWith:p=>response=p});assert.equal(await(await response).text(),fs.readFileSync(new URL('full-japji.html',root),'utf8'));
 let intercepted=false;h.events.fetch({request:new Request('https://outside.test/'),respondWith:()=>intercepted=true});assert.equal(intercepted,false);
+for(const relative of ['private-library','private-library/','private-library/index.html','private-library/collection.enc.json','%70rivate-library/collection.enc.json','private-library%2Fcollection.enc.json']){
+ let privateIntercepted=false;
+ h.events.fetch({request:new Request(scope+relative+'?synthetic=1'),respondWith:()=>privateIntercepted=true});
+ assert.equal(privateIntercepted,false,'Private request must bypass even a stale public cache: '+relative);
+}
 let bad=harness(true);bad.events.install({waitUntil:p=>pending=p});await assert.rejects(pending,/hash mismatch/);assert.deepEqual(bad.calls.filter(x=>x.deleted),[{deleted:'glp-static:'+scope+':'+version}],'A failed install requests deletion only of its candidate cache, never the previous release');assert.ok(!bad.calls.includes('skip'));assert.ok(!bad.calls.includes('claim'));
-const result={environment:'Node service-worker simulation; not a physical offline test',checks:['Exact prior 85-asset inventory plus eight bundled-library/Knowledge entries and four Daily shell entries; every on-disk and cached body hash and release URL checked','Every installation fetch bypasses stale HTTP cache','No automatic skipWaiting on install','Activation removes only this app scope caches','Only explicit update message activates','Reader serves exact cached bytes','Cross-origin requests untouched','Corrupted installation rejects, deletes only the candidate cache and never activates; actual prior-worker preservation is separately browser-tested'].map(name=>({name,status:'PASS'}))};fs.writeFileSync(new URL('evidence/service-worker-verification.json',root),JSON.stringify(result,null,2));console.log(JSON.stringify({total:result.checks.length,status:'PASS'}));
+const result={environment:'Node service-worker simulation; not a physical offline test',checks:['Exact prior 85-asset inventory plus bundled library, Knowledge, Daily, Farid, Explore, and five open collection entries; every on-disk and cached body hash and release URL checked','Every installation fetch bypasses stale HTTP cache','No automatic skipWaiting on install','Activation removes only this app scope caches','Only explicit update message activates','Reader serves exact cached bytes','Cross-origin requests untouched','Private requests bypass public cache, including encoded paths','Corrupted installation rejects, deletes only the candidate cache and never activates; actual prior-worker preservation is separately browser-tested'].map(name=>({name,status:'PASS'}))};fs.writeFileSync(new URL('evidence/service-worker-verification.json',root),JSON.stringify(result,null,2));console.log(JSON.stringify({total:result.checks.length,status:'PASS'}));

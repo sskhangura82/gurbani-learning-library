@@ -1,0 +1,25 @@
+{
+  "schema": "glp.continuation.navigation-scope.v1",
+  "base": "a123b39e61c5fba94acc38ea77ab7c81e664f61d",
+  "purpose": "Reach distinct Dasam collection, open psychology, private comparative reading, and existing Farid source reader; preserve older strict navigation scopes. Script loaders independently verified.",
+  "files": [
+    {
+      "path": "index.html",
+      "hashMode": "script-loader-normalized",
+      "beforeSha256": "b94fce60d6ee96616b56691f8c112f55d1471740e6ad4667f8c2975d52c36088",
+      "afterSha256": "7c4cd2495a1e7d8d61a7bb9f15babbe3ac677bc0b79d06bde5c45994aa069f95"
+    },
+    {
+      "path": "library/app.mjs",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "a3574ea4e259cfac913ce18e5c6cd9cc32e5e7fa753ef3ee021a679a62457cc8",
+      "afterSha256": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe"
+    },
+    {
+      "path": "library/catalog.mjs",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497",
+      "afterSha256": "2a803a438cc586582fa74df9b1dbd8f1607de31841c5151bed3871d750c0db67"
+    }
+  ]
+}
