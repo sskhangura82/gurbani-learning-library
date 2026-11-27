@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-private-state="loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Private library · Gurbani Learning Library</title>
+  <link rel="stylesheet" href="./private-library.css">
+</head>
+<body>
+  <header><a href="../index.html?view=explore">← Gurbani Learning Library</a><p class="eyebrow">For your trusted circle</p><h1>Private library</h1><p class="intro">A quiet place for comparative religious reading. Psychology remains available in the open library.</p></header>
+  <main>
+    <p id="status" role="status" aria-live="polite">Preparing secure reading…</p>
+    <section id="unlock-panel" aria-labelledby="unlock-title">
+      <h2 id="unlock-title">Enter your passphrase</h2><p>Your passphrase unlocks the collection on this device. Share it only with people you trust.</p>
+      <form id="unlock-form" autocomplete="off">
+        <label for="passphrase">Private library passphrase</label>
+        <input type="password" id="passphrase" name="private-passphrase" minlength="24" maxlength="256" autocomplete="off" autocapitalize="off" spellcheck="false" required aria-describedby="passphrase-help">
+        <p id="passphrase-help" class="quiet">Use the long passphrase supplied by the library owner.</p>
+        <button id="unlock" type="submit">Unlock collection</button>
+      </form>
+    </section>
+    <section id="reading" hidden aria-labelledby="collection-title">
+      <div class="reading-header"><h2 id="collection-title"></h2><button type="button" id="lock" disabled>Lock library</button></div>
+      <label for="work-select">Choose a text</label><select id="work-select"></select>
+      <article><h3 id="work-title" tabindex="-1"></h3><p id="edition" class="quiet"></p><div id="passages"></div></article>
+      <nav class="pages" aria-label="Text pages"><button type="button" id="previous">Previous</button><span id="page-status" aria-live="polite"></span><button type="button" id="next">Next</button></nav>
+      <details><summary>Edition and source</summary><div id="source"></div></details>
+    </section>
+    <p class="quiet privacy-note">This reading view locks when you leave the tab. It does not save your passphrase or reading history. People you trust can still copy what they read.</p>
+    <noscript><p>JavaScript is needed to unlock the encrypted collection on your device.</p></noscript>
+  </main>
+  <p class="print-note">Private content is excluded from printing. Return to the library to unlock it again.</p>
+  <script type="module" src="./app.mjs" integrity="sha384-vIycR/yLlmNWIYvUp0NN2m+KAONrJCg/3PAC1k1y8+hiN2H841xHsogoQSYVd1pI" crossorigin="anonymous"></script>
+</body>
+</html>
