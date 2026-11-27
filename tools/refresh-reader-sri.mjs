@@ -12,7 +12,8 @@ export const READER_SCRIPT_POLICY=Object.freeze([
  {page:'full-japji.html',algorithm:'sha384',scripts:['js/source-integrity.js','js/japji-full-data.js','js/content.js','js/gurdwaras.js','js/continuous-core.js','js/learning.js','js/shared-learning.js','js/japji-lessons.js','js/line-meanings.js','js/japji-full.js','js/pwa.js']},
  {page:'sukhmani.html',algorithm:'sha384',scripts:['js/source-integrity.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js','js/shared-learning.js','js/sukhmani-reader.js','js/pwa.js']},
  {page:'salok-mahalla9/index.html',algorithm:'sha256',scripts:nitnem.map(s=>'../nitnem/'+s)},
- {page:'salok-kabir/index.html',algorithm:'sha256',scripts:nitnem.map(s=>'../nitnem/'+s)}
+ {page:'salok-kabir/index.html',algorithm:'sha256',scripts:nitnem.map(s=>'../nitnem/'+s)},
+ {page:'salok-farid/index.html',algorithm:'sha256',scripts:nitnem.map(s=>'../nitnem/'+s)}
 ].map(p=>Object.freeze({...p,scripts:Object.freeze([...p.scripts])})));
 // Existing frozen verifier/source pins are checked, never regenerated to bless changed content.
 const fixedSourcePins=Object.freeze({
@@ -48,7 +49,7 @@ export async function refreshReaderSRI({directory=root,write=false}={}){
  // Validate every page and frozen source pin before writing any page.
  const changed=plans.filter(p=>p.before!==p.after);
  if(write)for(const p of changed)await fs.writeFile(p.file,p.after);
- return {status:write||!changed.length?'PASS':'NEEDS_REFRESH',mode:write?'write':'check',pages:plans.length,scriptOccurrences:READER_SCRIPT_POLICY.reduce((n,p)=>n+p.scripts.length,0),changedPages:changed.map(p=>p.page),scope:'Five reader pages only; trusted HTML, worker and library module graph remain outside this check.'};
+ return {status:write||!changed.length?'PASS':'NEEDS_REFRESH',mode:write?'write':'check',pages:plans.length,scriptOccurrences:READER_SCRIPT_POLICY.reduce((n,p)=>n+p.scripts.length,0),changedPages:changed.map(p=>p.page),scope:'Six reader pages only; trusted HTML, worker and library module graph remain outside this check.'};
 }
 if(process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href===import.meta.url){
  try{

@@ -1,0 +1,23 @@
+{
+  "schema": "GLP-NITNEM-LIBRARY-V2",
+  "sourceCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+  "sourceFamilySite": "gurbani-learning-library",
+  "releaseStatus": "DEVELOPMENT_REVIEW",
+  "canonicalJapji": "../full-japji.html",
+  "audioSynced": false,
+  "entries": {
+    "salok-farid": {
+      "path": "data/salok-farid.json",
+      "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643",
+      "units": 130,
+      "lines": 284,
+      "sourceOccurrences": 297,
+      "title": "Salok Sheikh Farid Ji",
+      "titleGurmukhi": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ ॥",
+      "editionId": "salok-farid-selected-witness-34d2a7c-20261127",
+      "daypart": "Additional Bani"
+    }
+  },
+  "releaseId": "salok-farid-source-only-20261127",
+  "qualifiedHumanReviewed": false
+}

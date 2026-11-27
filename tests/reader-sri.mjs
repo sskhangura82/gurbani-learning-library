@@ -16,12 +16,13 @@ const expected={
  'sukhmani.html':['js/source-integrity.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js','js/shared-learning.js','js/sukhmani-reader.js','js/pwa.js'],
  'full-japji.html':['js/source-integrity.js','js/japji-full-data.js','js/content.js','js/gurdwaras.js','js/continuous-core.js','js/learning.js','js/shared-learning.js','js/japji-lessons.js','js/line-meanings.js','js/japji-full.js','js/pwa.js'],
  'salok-mahalla9/index.html':common.map(p=>'../nitnem/'+p),
- 'salok-kabir/index.html':common.map(p=>'../nitnem/'+p)
+ 'salok-kabir/index.html':common.map(p=>'../nitnem/'+p),
+ 'salok-farid/index.html':common.map(p=>'../nitnem/'+p)
 };
 const scripts=html=>[...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi)].map(m=>m[0]);
 const attr=(tag,name)=>tag.match(new RegExp('\\b'+name+'="([^"]*)"'))?.[1];
 const stripPins=html=>html.replace(/ integrity="[^"]*"/g,'').replace(/ crossorigin="anonymous"/g,'');
-test('All 36 ordered classic reader script occurrences have exact file pins and anonymous CORS',async()=>{
+test('All 42 ordered classic reader script occurrences have exact file pins and anonymous CORS',async()=>{
  let total=0;
  for(const [page,ordered] of Object.entries(expected)){
   const html=(await read(page)).toString(),tags=scripts(html);
@@ -35,10 +36,10 @@ test('All 36 ordered classic reader script occurrences have exact file pins and 
    assert.equal(attr(tag,'type'),undefined,'This contract covers classic scripts only');total++;
   }
  }
- assert.equal(total,36);
+ assert.equal(total,42);
 });
 test('Pinning changes no reader markup, source wording or script order beyond integrity attributes',async()=>{
- for(const page of Object.keys(expected)){
+ for(const page of Object.keys(expected).filter(p=>p!=='salok-farid/index.html')){
   const original=execFileSync('git',['show',base+':'+page],{cwd:root,encoding:'utf8'});
   assert.equal(stripPins((await read(page)).toString()),stripPins(original),page);
  }
@@ -46,7 +47,7 @@ test('Pinning changes no reader markup, source wording or script order beyond in
 test('Check mode reproduces all pins without writing page bytes',async()=>{
  const before=await Promise.all(Object.keys(expected).map(read));
  const report=await refreshReaderSRI({directory:root,write:false});
- assert.equal(report.status,'PASS');assert.equal(report.pages,5);assert.equal(report.scriptOccurrences,36);assert.deepEqual(report.changedPages,[]);
+ assert.equal(report.status,'PASS');assert.equal(report.pages,6);assert.equal(report.scriptOccurrences,42);assert.deepEqual(report.changedPages,[]);
  const after=await Promise.all(Object.keys(expected).map(read));assert.deepEqual(after,before);
 });
 test('The generator refuses missing, extra, inline, module and reordered script inventories',async()=>{

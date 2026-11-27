@@ -73,12 +73,27 @@ async function navigationScope(){
  return new Set(record.files.map(f=>f.path));
 }
 
-test('Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest',async()=>{
- const navigation=await navigationScope();
+// New source-only collection needs a bounded shared reader extension. This records
+// exact before/after files, while all older source/teaching and module closures stay frozen.
+async function faridReaderScope(){
+ const record=JSON.parse(await read('evidence/salok-farid/inputs/reader-scope.json'));
+ assert.equal(record.schema,'glp.farid.reader-scope.v1');
+ assert.equal(record.base,'4eee4f26bf7bad7ce52d4c958c06a94da1262ecb');
+ assert.deepEqual(record.files.map(f=>f.path),['nitnem/reader.js','tools/refresh-reader-sri.mjs','nitnem/index.html','salok-mahalla9/index.html','salok-kabir/index.html']);
+ for(const item of record.files){
+  assert.equal(hash(git('show',record.base+':'+item.path)),item.beforeSha256,item.path+' Farid baseline');
+  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact Farid extension');
+  if(item.path.endsWith('.html'))assert.equal(loaderComparable((await read(item.path)).toString()),loaderComparable(git('show',record.base+':'+item.path).toString()),item.path+' existing markup unchanged');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+test('Existing application bytes stay frozen outside exact Daily and Farid scopes, loader pins and worker manifest',async()=>{
+ const navigation=await navigationScope(),farid=await faridReaderScope();
  const application=names.filter(name=>!nonApplication.test(name));
  assert.ok(application.length>90,'protection must cover the application, not a small selected sample');
  for(const name of application){
-  if(name==='sw.js'||navigation.has(name))continue;
+  if(name==='sw.js'||navigation.has(name)||farid.has(name))continue;
   const previous=git('show',INPUT_BASE+':'+name),current=await read(name);
   if(loaderPages.has(name)){
    assert.equal(loaderComparable(current.toString()),loaderComparable(previous.toString()),name+' changed beyond loader pins or bundle URL');
@@ -88,7 +103,8 @@ test('Existing application bytes stay frozen outside the exact Daily navigation 
 
 test('Reader loader contract and reviewed original module closures remain exact',async()=>{
  const readerFiles=['full-japji.html','sukhmani.html','nitnem/index.html','salok-mahalla9/index.html','salok-kabir/index.html','tools/refresh-reader-sri.mjs'];
- for(const name of readerFiles)assert.deepEqual(await read(name),git('show',READER_BASE+':'+name),name);
+ const farid=await faridReaderScope();
+ for(const name of readerFiles)if(!farid.has(name))assert.deepEqual(await read(name),git('show',READER_BASE+':'+name),name);
  const originalModules=['library/app.mjs','library/catalog.mjs','library/core.mjs','articles/app.mjs','articles/core.mjs','articles/source-contracts.mjs','knowledge/app.mjs','knowledge/registry.mjs','knowledge/source-lock.mjs','knowledge/core.mjs','knowledge/kinds.mjs','knowledge/search.mjs'];
  for(const name of originalModules){
   if(name==='library/catalog.mjs'){await navigationScope();continue;}
