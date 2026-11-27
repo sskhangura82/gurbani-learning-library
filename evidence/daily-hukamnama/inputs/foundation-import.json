@@ -1,0 +1,51 @@
+{
+  "base": "44401e35690322fb3dbc29c443bff86d73279fcb",
+  "foundation": "fb49ef41bd890db879d7f93a861585915ef81622",
+  "files": [
+    {
+      "path": "hukamnama/core.mjs",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "b93d06e8d3347e39dba5524b04c36c629a762f001e571822f662d0f3cd7bab6d"
+    },
+    {
+      "path": "hukamnama/fixture.json",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "f9c7b46f2ec39e88569557a81d8a456db7e1099a10448123f9f64bda7a73ffd1"
+    },
+    {
+      "path": "hukamnama/index.html",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "31a182b789593fafa5bbf37db8170509ad56605c27c64ddac5131ad705fa09e4"
+    },
+    {
+      "path": "hukamnama/reader.mjs",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "5eb4f4b14e00642227c49d83e60411de0e1961d2afd104c66067987e2b412f66"
+    },
+    {
+      "path": "hukamnama/style.css",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "7b50223581045ab83318fdd797c04b77b806299209b56ce2153826a8410d4af7"
+    },
+    {
+      "path": "tests/hukamnama-foundation.mjs",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "6a4ea9eba4ef2a9085333025143fbf639cad4d7c75aaa8a7d917d6dc1f2d2272"
+    },
+    {
+      "path": "tests/hukamnama-browser.mjs",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "52cae569d3d8fe7ed7d2cbf68f2865066dcff7ea6917d146fde1e814783df281"
+    },
+    {
+      "path": ".github/workflows/hukamnama-foundation-qa.yml",
+      "sourceCommit": "fb49ef41bd890db879d7f93a861585915ef81622",
+      "sha256": "f398f4f816b548a46ffc641b9a08434ba88e7d901bb1171212c002b71208a2f9"
+    },
+    {
+      "path": "docs/GLP_DAILY_HUKAMNAMA_AUDIO_BUILD_ORDER_20261125.md",
+      "sourceCommit": "16a48464e4d433dd12d685825c01395c90d64f7a",
+      "sha256": "6b79e5db374b33f4390260eccc962c5b2b27d491314d65c75e2da9b01776a2a3"
+    }
+  ]
+}

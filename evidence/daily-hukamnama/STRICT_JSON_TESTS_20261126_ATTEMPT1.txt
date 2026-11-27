@@ -1,0 +1,17 @@
+PASS ordinary JSON whitespace, key order, arrays, numbers and primitives retain native meaning
+PASS string escapes and quoted delimiters are not scanned as structures
+PASS nested objects may reuse keys only in distinct objects
+PASS duplicates at root, nested objects and array objects are rejected
+PASS escaped-equivalent keys are duplicates regardless of spelling order
+PASS Unicode canonical equivalence is not silently imposed on distinct keys
+PASS a discarded duplicate value cannot hide protected content
+PASS prototype-like keys remain ordinary own data properties
+PASS malformed objects, arrays, literals and numbers are rejected
+PASS malformed string escapes and unterminated strings are rejected
+PASS raw control characters inside strings are rejected
+PASS trailing text, comments, extra values and non-JSON whitespace are rejected
+PASS forty nested containers are allowed and forty-one are refused
+PASS large strings containing braces do not increase structural depth
+PASS text bound supports a large cached pair and refuses larger input before parsing
+PASS non-string input is never implicitly converted
+Strict JSON checks: 16 passed; 0 failed.

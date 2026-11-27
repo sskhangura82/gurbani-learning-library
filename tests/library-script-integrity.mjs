@@ -26,6 +26,7 @@ const expected={
  'articles/index.html':['app.bundle.mjs'],
  'articles/article.html':['app.bundle.mjs'],
  'knowledge/index.html':['app.bundle.mjs'],
+ 'hukamnama/index.html':['./reader.bundle.mjs'],
  'full-japji.html':['js/source-integrity.js','js/japji-full-data.js','js/content.js','js/gurdwaras.js','js/continuous-core.js','js/learning.js','js/shared-learning.js','js/japji-lessons.js','js/line-meanings.js','js/japji-full.js','js/pwa.js'],
  'sukhmani.html':['js/source-integrity.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js','js/shared-learning.js','js/sukhmani-reader.js','js/pwa.js'],
  'nitnem/index.html':['appearance.js','continuous-core.js','learning/learning-ui.js','local-learning.js','reader.js','offline.js'],
@@ -36,14 +37,16 @@ const tags=html=>[...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi)].ma
 const attr=(tag,name)=>tag.match(new RegExp('\\b'+name+'="([^"]*)"'))?.[1];
 function walk(node,visit){if(!node||typeof node!=='object')return;visit(node);for(const value of Object.values(node))if(Array.isArray(value))value.forEach(x=>walk(x,visit));else if(value&&typeof value==='object')walk(value,visit);}
 
-test('All 14 production pages carry exactly 51 independently inventoried script pins',async()=>{
+test('All 15 production pages carry exactly 52 independently inventoried script pins',async()=>{
  assert.deepEqual(APP_SCRIPT_POLICY.map(p=>p.page).sort(),Object.keys(expected).sort());
  let total=0,baselineUnpinned=0;
  for(const [page,ordered] of Object.entries(expected)){
   const html=(await read(page)).toString(),list=tags(html);
   assert.deepEqual(list.map(tag=>attr(tag,'src')),ordered,page);
-  const previous=execFileSync('git',['show',baseline+':'+page],{cwd:root,encoding:'utf8'});
-  baselineUnpinned+=tags(previous).filter(tag=>!attr(tag,'integrity')).length;
+  if(page!=='hukamnama/index.html'){
+   const previous=execFileSync('git',['show',baseline+':'+page],{cwd:root,encoding:'utf8'});
+   baselineUnpinned+=tags(previous).filter(tag=>!attr(tag,'integrity')).length;
+  }
   for(const tag of list){
    const src=attr(tag,'src'),algorithm=page.startsWith('salok-')?'sha256':'sha384';
    const bytes=await read(path.posix.normalize(path.posix.join(path.posix.dirname(page),src)));
@@ -54,14 +57,14 @@ test('All 14 production pages carry exactly 51 independently inventoried script 
    total++;
   }
  }
- assert.equal(total,51);
+ assert.equal(total,52);
  assert.equal(baselineUnpinned,15,'negative baseline confirms this extends the existing 36 reader pins');
 });
 
 test('Generated modules reproduce exactly and contain no executable import or export-from edges',async()=>{
- for(const name of ['library','articles','knowledge']){
+ for(const name of ['library','articles','knowledge','hukamnama']){
   const first=await buildAppBundle(name),second=await buildAppBundle(name);
-  assert.equal(first.outputPath,name+'/app.bundle.mjs');
+  assert.equal(first.outputPath,name+(name==='hukamnama'?'/reader.bundle.mjs':'/app.bundle.mjs'));
   assert.equal(first.code,second.code,name+' deterministic output');
   assert.equal(first.code,(await read(first.outputPath)).toString(),name+' committed bundle');
   const ast=parse(first.code,{ecmaVersion:'latest',sourceType:'module'});
@@ -75,7 +78,7 @@ test('Generated modules reproduce exactly and contain no executable import or ex
 });
 
 test('Ordinary check mode writes neither bundles nor HTML',async()=>{
- const files=[...Object.keys(expected),...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs')];
+ const files=[...Object.keys(expected),...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),'hukamnama/reader.bundle.mjs'];
  const before=await Promise.all(files.map(read));
  assert.equal((await buildAppBundles({write:false})).status,'PASS');
  assert.equal((await refreshAppSRI({write:false})).status,'PASS');
@@ -84,7 +87,7 @@ test('Ordinary check mode writes neither bundles nor HTML',async()=>{
 });
 
 test('Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts',async()=>{
- for(const name of ['index.html','breathing.html','articles/index.html','knowledge/index.html']){
+ for(const name of ['index.html','breathing.html','articles/index.html','knowledge/index.html','hukamnama/index.html']){
   const policy=APP_SCRIPT_POLICY.find(p=>p.page===name),html=(await read(name)).toString(),list=tags(html);
   const first=list[0];
   const mutations=[
@@ -116,7 +119,7 @@ test('Extra HTML and stale source cannot silently pass default checks',async()=>
  const fixture=await fs.mkdtemp(path.join(os.tmpdir(),'glp-script-contract-'));
  try{
   const files=execFileSync('git',['ls-tree','-r','--name-only',baseline],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(n=>!n.startsWith('evidence/'));
-  for(const name of [...files,'tools/script-integrity/app-graphs.json',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs')]){
+  for(const name of [...files,'tools/script-integrity/app-graphs.json',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
    let bytes;try{bytes=await read(name);}catch(error){if(error.code==='ENOENT')continue;throw error;}
    const destination=path.join(fixture,name);await fs.mkdir(path.dirname(destination),{recursive:true});await fs.writeFile(destination,bytes);
   }

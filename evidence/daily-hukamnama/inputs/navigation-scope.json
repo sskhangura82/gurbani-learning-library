@@ -1,0 +1,24 @@
+{
+  "schema": "glp.hukamnama.navigation-scope.v1",
+  "base": "44401e35690322fb3dbc29c443bff86d73279fcb",
+  "scope": "Builder-frozen navigation edits only; not independent approval.",
+  "files": [
+    {
+      "path": "index.html",
+      "comparison": "replace-script-elements",
+      "beforeSha256": "da839e12d915faa9b8b7bb415a4ae3ef96152618d7080925a85c2bd36bfd75f3",
+      "afterSha256": "f0d52c7e974fe7b4969ecdce8359c7b0bfea96046e88b180d9234a7d03774ac4"
+    },
+    {
+      "path": "library/catalog.mjs",
+      "comparison": "exact-bytes",
+      "beforeSha256": "b21949fb8b7a9bfc3503a2be5be84aa7bcdd16bfb81ab587d98ce5924be167b4",
+      "afterSha256": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497"
+    }
+  ],
+  "intendedChanges": [
+    "Replace inert Today Daily Hukamnama placeholder with dated reader and official-source links.",
+    "Add a distinct Saved destination and static no-script links for Daily learning.",
+    "Remove Daily Hukamnama from the unavailable planned catalogue; fixed Bani readers are unchanged."
+  ]
+}

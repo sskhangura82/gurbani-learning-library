@@ -1,6 +1,6 @@
 {
   "schema": "glp.app-script-graphs.v1",
-  "baseline": "bf744d1ac5b845d63c3324ed1f231c3fec31e40e",
+  "baseline": "44401e35690322fb3dbc29c443bff86d73279fcb",
   "tools": {
     "esbuild": "0.28.2",
     "acorn": "8.19.0"
@@ -41,8 +41,8 @@
         },
         {
           "path": "library/catalog.mjs",
-          "bytes": 10175,
-          "sha256": "b21949fb8b7a9bfc3503a2be5be84aa7bcdd16bfb81ab587d98ce5924be167b4",
+          "bytes": 10025,
+          "sha256": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497",
           "imports": []
         },
         {
@@ -59,9 +59,9 @@
       ],
       "output": {
         "path": "library/app.bundle.mjs",
-        "bytes": 19131,
-        "sha256": "41d30d94429a3102c881da3b2603599beaf4a492a357077dc1dea3c1055cc963",
-        "integrity": "sha384-KsEVbHxSCBkrlGPtSur2vKAjVBAZz1QzFSDiFZpu2kAvE0PVInwL7iDm9RgdzeFN",
+        "bytes": 18979,
+        "sha256": "34f0b67b9bbeac9d9bb1e7b385bf59d3e0f5122c94b648d728dae8278f94fb90",
+        "integrity": "sha384-zE+FuvkuhjDQ6nDezRvgnsIhT+HK2F6EBdVxUavj1P2EUUMgFOkDbEUwrHvG4+u7",
         "imports": []
       }
     },
@@ -186,6 +186,87 @@
         "bytes": 44898,
         "sha256": "b02e5ad471047b02e7f3192c5441752ee4bd9e3ba59ec3c8a774e93d708d2a2e",
         "integrity": "sha384-Z4lwp4Um7ePZMDemf+So/TUNH6xhUXGmIfa8swoOARwBvoEwpNDssApI5cBgp686",
+        "imports": []
+      }
+    },
+    {
+      "appId": "hukamnama",
+      "entry": "hukamnama/reader.mjs",
+      "mode": "production",
+      "inputs": [
+        {
+          "path": "hukamnama/core.mjs",
+          "bytes": 4498,
+          "sha256": "b93d06e8d3347e39dba5524b04c36c629a762f001e571822f662d0f3cd7bab6d",
+          "imports": []
+        },
+        {
+          "path": "hukamnama/delivery.mjs",
+          "bytes": 18168,
+          "sha256": "c6edc3356a656a668f05f8efc9519f7a5798749f3e6c14d8bea66e76d25c509e",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/publication-key.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/json.mjs"
+            }
+          ]
+        },
+        {
+          "path": "hukamnama/json.mjs",
+          "bytes": 3867,
+          "sha256": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5",
+          "imports": []
+        },
+        {
+          "path": "hukamnama/learning.mjs",
+          "bytes": 11146,
+          "sha256": "e6d811489d52fc7d962dc9832c538f61749ea1888fa860f70d59752086971cd2",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/core.mjs"
+            }
+          ]
+        },
+        {
+          "path": "hukamnama/publication-key.mjs",
+          "bytes": 440,
+          "sha256": "e4c830924caa89fb6d64a0b2770b47340e1be0b8e10536e2684398adce2481c3",
+          "imports": []
+        },
+        {
+          "path": "hukamnama/reader.mjs",
+          "bytes": 23581,
+          "sha256": "d73a43a1f73626561d547c9b361dc4549b82c4d8f23c254fa3482900162a3b17",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/delivery.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "hukamnama/learning.mjs"
+            }
+          ]
+        }
+      ],
+      "output": {
+        "path": "hukamnama/reader.bundle.mjs",
+        "bytes": 64141,
+        "sha256": "9225913a1d289717f3cc5d9c8899f81f42b7dde63e2438782cf977d57dd25f6b",
+        "integrity": "sha384-eAe8/fifymT42V40vCS7xG71DgHbp14vB592LgjfE7Zkkwa/OsPq2m+doT8dOB44",
         "imports": []
       }
     }

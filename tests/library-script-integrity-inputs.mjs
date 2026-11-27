@@ -15,6 +15,7 @@ const KNOWLEDGE_TIP='b68e080043bb0b4e5cb3d17977e65c8cd62c15b3';
 const git=(...args)=>execFileSync('git',args,{cwd:root,maxBuffer:64*1024*1024});
 const read=name=>fs.readFile(path.join(root,name));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+const NAVIGATION_BASE='44401e35690322fb3dbc29c443bff86d73279fcb';
 const names=git('ls-tree','-r','--name-only',INPUT_BASE).toString().trim().split('\n');
 const loaderPages=new Set(['index.html','gurdwara.html','pauri-2-lesson.html','simran.html','breathing.html','articles/index.html','articles/article.html','knowledge/index.html']);
 const nonApplication=/^(?:\.github|docs|evidence|tests|tools)\//;
@@ -57,11 +58,27 @@ test('Complete Knowledge unit has exact provenance; no partial chain or overwrit
  }
 });
 
-test('All existing application bytes stay frozen except the listed loader tags and worker manifest',async()=>{
+function navigationComparable(name,bytes){
+ return name==='index.html'?Buffer.from(bytes.toString().replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi,'<APPROVED_SCRIPT_LOADER>')):bytes;
+}
+async function navigationScope(){
+ const record=JSON.parse(await read('evidence/daily-hukamnama/inputs/navigation-scope.json'));
+ assert.equal(record.schema,'glp.hukamnama.navigation-scope.v1');
+ assert.equal(record.base,NAVIGATION_BASE);
+ assert.deepEqual(record.files.map(f=>f.path),['index.html','library/catalog.mjs']);
+ for(const item of record.files){
+  assert.equal(hash(navigationComparable(item.path,git('show',NAVIGATION_BASE+':'+item.path))),item.beforeSha256,item.path+' navigation baseline');
+  assert.equal(hash(navigationComparable(item.path,await read(item.path))),item.afterSha256,item.path+' exact frozen Daily entrance change');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+test('Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest',async()=>{
+ const navigation=await navigationScope();
  const application=names.filter(name=>!nonApplication.test(name));
  assert.ok(application.length>90,'protection must cover the application, not a small selected sample');
  for(const name of application){
-  if(name==='sw.js')continue;
+  if(name==='sw.js'||navigation.has(name))continue;
   const previous=git('show',INPUT_BASE+':'+name),current=await read(name);
   if(loaderPages.has(name)){
    assert.equal(loaderComparable(current.toString()),loaderComparable(previous.toString()),name+' changed beyond loader pins or bundle URL');
@@ -73,5 +90,11 @@ test('Reader loader contract and reviewed original module closures remain exact'
  const readerFiles=['full-japji.html','sukhmani.html','nitnem/index.html','salok-mahalla9/index.html','salok-kabir/index.html','tools/refresh-reader-sri.mjs'];
  for(const name of readerFiles)assert.deepEqual(await read(name),git('show',READER_BASE+':'+name),name);
  const originalModules=['library/app.mjs','library/catalog.mjs','library/core.mjs','articles/app.mjs','articles/core.mjs','articles/source-contracts.mjs','knowledge/app.mjs','knowledge/registry.mjs','knowledge/source-lock.mjs','knowledge/core.mjs','knowledge/kinds.mjs','knowledge/search.mjs'];
- for(const name of originalModules)assert.deepEqual(await read(name),git('show',INPUT_BASE+':'+name),name);
+ for(const name of originalModules){
+  if(name==='library/catalog.mjs'){await navigationScope();continue;}
+  assert.deepEqual(await read(name),git('show',INPUT_BASE+':'+name),name);
+ }
+ const priorFoundation='fb49ef41bd890db879d7f93a861585915ef81622';
+ for(const name of ['hukamnama/core.mjs','hukamnama/fixture.json','tests/hukamnama-foundation.mjs'])
+  assert.deepEqual(await read(name),git('show',priorFoundation+':'+name),name+' historical foundation remains unchanged');
 });

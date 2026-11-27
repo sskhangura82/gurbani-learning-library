@@ -1,0 +1,31 @@
+{
+  "status": "FAIL",
+  "candidateDate": "2026-11-27",
+  "scenarios": [
+    {
+      "name": "Direct Daily URL installs the shell and reopens its same verified date offline",
+      "status": "FAIL",
+      "failure": "TimeoutError: page.waitForFunction: Timeout 30000ms exceeded."
+    }
+  ],
+  "pageErrors": [],
+  "limits": [
+    "Fresh synthetic Chromium contexts only; no physical iPhone, iPad, Safari, VoiceOver or human acceptance claim.",
+    "One exact official dated development event; unavailable dates are never fabricated.",
+    "Current Simple/Detailed/Learning source-linked explanations remain pending; no interpretation generated."
+  ],
+  "offlineDiagnostics": {
+    "console": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "failedRequests": [],
+    "state": {
+      "status": "Downloading the reader pages for offline use…",
+      "registrations": [],
+      "cacheNames": [
+        "glp001.hukamnama.records.v1"
+      ]
+    }
+  },
+  "failure": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-browser.mjs:263:20\n    at async check (/private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-browser.mjs:43:125)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-browser.mjs:257:2"
+}

@@ -17,11 +17,14 @@ additions.push('./library/catalog.mjs','./library/core.mjs','./library/app.mjs',
 // source assets for documented inspection; runtime pages load only the bundles.
 additions.push('./library/app.bundle.mjs','./articles/app.bundle.mjs');
 additions.push('./knowledge/','./knowledge/index.html','./knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json');
+// Dated events and content-addressed sources use their own verified-pair cache.
+// They must never enter the versioned application shell.
+additions.push('./hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs');
 additions.push('./vendor/opengranth/LICENSE','./vendor/opengranth/NOTICE');
 const expected={};
 for(const name of new Set([...Object.keys(previous),...additions])){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.21-library-script-integrity-20261126-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.22-daily-hukamnama-20261126-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

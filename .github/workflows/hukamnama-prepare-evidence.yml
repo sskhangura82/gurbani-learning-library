@@ -1,0 +1,38 @@
+name: Prepare official Hukamnama evidence (artifact only)
+on:
+  workflow_dispatch:
+    inputs:
+      amritsar_date:
+        description: "Exact Amritsar date, YYYY-MM-DD; no date fallback"
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  original-only-evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify importer refusal behavior
+        run: python3 tests/hukamnama-ingest.py
+      - name: Capture and compare the exact official daily selection
+        env:
+          HUKAMNAMA_REQUEST_DATE: ${{ inputs.amritsar_date }}
+        run: |
+          python3 tools/ingest-hukamnama.py --date "$HUKAMNAMA_REQUEST_DATE" --out "$RUNNER_TEMP/hukamnama-unsigned"
+      - name: Preserve original-only unsigned artifacts for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: hukamnama-unsigned-review
+          path: ${{ runner.temp }}/hukamnama-unsigned/
+          if-no-files-found: error
+          retention-days: 30
+# Deliberately no schedule, publisher credentials, write permissions, commit,
+# Pages deployment, signing or automatic activation. A workflow artifact is not
+# a published daily reading and does not satisfy independent or qualified review.

@@ -1,0 +1,14 @@
+node:internal/deps/undici/undici:5712
+        throw new TypeError("Body is unusable: Body has already been read");
+              ^
+
+TypeError: Body is unusable: Body has already been read
+    at consumeBody (node:internal/deps/undici/undici:5712:15)
+    at _Response.arrayBuffer (node:internal/deps/undici/undici:5657:18)
+    at Object.put (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/service-worker.mjs:108:88)
+    at evalmachine.<anonymous>:14:11
+    at async Promise.all (index 1)
+    at async evalmachine.<anonymous>:7:6
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/service-worker.mjs:112:68
+
+Node.js v22.15.0

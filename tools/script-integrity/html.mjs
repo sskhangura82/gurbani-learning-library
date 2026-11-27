@@ -158,7 +158,7 @@ export async function pinAppHTML(html,policyOrFixture,readScript){
   if(policyOrFixture?.appId){
     const {appId,code,directory=DEFAULT_DIRECTORY}=policyOrFixture;
     if(!own(APP_GRAPHS,appId)||typeof code!=='string')throw Error('Invalid fixture application/code');
-    const page=policyOrFixture.page??({knowledge:'knowledge/index.html',library:'index.html',articles:'articles/article.html'})[appId];
+    const page=policyOrFixture.page??({knowledge:'knowledge/index.html',library:'index.html',articles:'articles/article.html',hukamnama:'hukamnama/index.html'})[appId];
     const policy=APP_SCRIPT_POLICY.find(p=>p.page===page);
     if(!policy||!policy.scripts.some(s=>s.appId===appId))throw Error('Fixture page/application mismatch');
     return pinPolicyHTML(html,policy,relative=>relative===APP_GRAPHS[appId].output?code:fs.readFile(path.join(directory,relative)));

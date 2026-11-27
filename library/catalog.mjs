@@ -161,7 +161,6 @@ export const TOOLS = freeze([
 ]);
 
 export const PLANNED = freeze([
-  {id: 'daily-hukamnama', title: 'Daily Hukamnama', available: false, summary: 'The verified daily selection is not connected to this library yet.'},
   {id: 'full-guru-granth-sahib', title: 'Full Sri Guru Granth Sahib Ji', available: false, summary: 'Complete sequential reading is a future library expansion.'},
   {id: 'knowledge-explorer', title: 'Knowledge Explorer', available: false, summary: 'The separate pilot is awaiting integration and outstanding review.'},
   {id: 'dictionary', title: 'Gurbani dictionary', available: false, summary: 'A source-linked vocabulary library remains to be built and reviewed.'},

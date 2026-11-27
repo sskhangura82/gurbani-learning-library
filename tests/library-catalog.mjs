@@ -202,7 +202,9 @@ test('Simran and physiology remain distinct navigation categories', () => {
 });
 
 test('planned modules are unavailable metadata rather than functioning links or substitutes', () => {
-  assert.ok(PLANNED.some(entry => entry.id === 'daily-hukamnama'));
+  assert.ok(!PLANNED.some(entry => entry.id === 'daily-hukamnama'));
+  relativeRoute('hukamnama/index.html');
+  relativeRoute('hukamnama/index.html?learning=saved');
   assert.ok(PLANNED.some(entry => entry.id === 'full-guru-granth-sahib'));
   for (const entry of PLANNED) {
     assert.equal(entry.available, false);
@@ -217,7 +219,7 @@ test('lookup helpers only return the declared catalogue entry', () => {
   assert.equal(getReader('japji'), READERS[0]);
   assert.equal(getReader('simran'), undefined);
   assert.equal(getEntry('simran'), TOOLS[0]);
-  assert.equal(getEntry('daily-hukamnama').available, false);
+  assert.equal(getEntry('daily-hukamnama'), undefined, 'Daily dated reader is separate from the fixed Bani catalogue');
   assert.equal(getReader('__proto__'), undefined);
   assert.equal(getEntry('constructor'), undefined);
   assert.equal(getEntry('../full-japji.html'), undefined);
