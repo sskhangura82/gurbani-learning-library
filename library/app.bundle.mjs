@@ -254,7 +254,7 @@ var PLANNED = freeze([
   { id: "sggs-explanations", title: "Guru Granth Sahib Ji explanations", available: false, summary: "The named original-text edition can be read by Ang. Complete explanations and broader search are being developed separately." },
   { id: "knowledge-explorer", title: "Knowledge Explorer", available: false, summary: "The separate pilot is awaiting integration and outstanding review." },
   { id: "dictionary", title: "Gurbani dictionary", available: false, summary: "A source-linked vocabulary library remains to be built and reviewed." },
-  { id: "history", title: "Sikh History & Living Heritage", available: false, summary: "Historical narratives and their source records remain to be developed and reviewed." },
+  { id: "history", title: "Sikh History & Living Heritage", available: false, summary: "The Kartarpur draft and source records are prepared. The independent second review is pending." },
   { id: "audio", title: "Gurbani audio library", available: false, summary: "Recordings require permission and verified mapping before they can be included." }
 ]);
 

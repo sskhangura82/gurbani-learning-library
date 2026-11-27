@@ -529,13 +529,15 @@ save.addEventListener("click", () => {
 });
 resume.addEventListener("click", async () => {
   if (!savedRecord || !manifest) return;
-  const record = savedRecord, navigationAtStart = sequence;
+  const record = savedRecord, navigationAtStart = sequence, progressAtStart = progressSequence;
+  const stillCurrent = () => navigationAtStart === sequence && progressAtStart === progressSequence && savedRecord === record;
   try {
     const unit = await unitFor(progressUnit(record, manifest));
     validateProgress(record, manifest, unit);
-    if (navigationAtStart !== sequence) return;
+    if (!stillCurrent()) return;
     await navigate(formatRoute({ page: record.page, unitId: record.unitId, lineId: record.lineId }));
   } catch {
+    if (!stillCurrent()) return;
     savedRecord = null;
     resume.disabled = true;
     progressStatus.textContent = "This saved source line is unavailable. The stored record has been kept unchanged.";

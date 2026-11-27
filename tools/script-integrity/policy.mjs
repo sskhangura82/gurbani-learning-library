@@ -15,7 +15,7 @@ const graphs={
     "output": "library/app.bundle.mjs",
     "inputs": {
       "library/app.mjs": "268ecf18678b38b423f4caf69d4979d06f19aa354bb4f43e86fa39743dd32abe",
-      "library/catalog.mjs": "11f096b7e5434faeb67f0e79686c4ff800f2bc234f5c4023b7d9ddd4e875e01b",
+      "library/catalog.mjs": "7218f9222fb072b50b79741862f0c184afce0a23cbad3b161157a42191ed5900",
       "library/core.mjs": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40",
       "library/passage-ui.mjs": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900",
       "library/passages.mjs": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d",
@@ -222,7 +222,7 @@ const graphs={
     "entry": "collections/source-reader/reader.mjs",
     "output": "collections/source-reader/reader.bundle.mjs",
     "inputs": {
-      "collections/source-reader/reader.mjs": "ff653d1b41e8cfc0f593881a693e0f614b95ecb8cea05feee81f9ac66ab4fce0",
+      "collections/source-reader/reader.mjs": "fddc5f2cd6a564a74689bd4377d1aee2be8a76e5fc1f44d35ea40a112e919a4d",
       "collections/source-reader/core.mjs": "97a2ec588071d317033c5da5842b8ab2402b7149f4b19f9cbcb85d112dbdc33c",
       "collections/source-reader/source-lock.mjs": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807"
     },

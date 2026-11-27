@@ -45,8 +45,8 @@
         },
         {
           "path": "library/catalog.mjs",
-          "bytes": 11795,
-          "sha256": "11f096b7e5434faeb67f0e79686c4ff800f2bc234f5c4023b7d9ddd4e875e01b",
+          "bytes": 11806,
+          "sha256": "7218f9222fb072b50b79741862f0c184afce0a23cbad3b161157a42191ed5900",
           "imports": []
         },
         {
@@ -112,9 +112,9 @@
       ],
       "output": {
         "path": "library/app.bundle.mjs",
-        "bytes": 50417,
-        "sha256": "34edd0a582f9a52ce9951bef76a6dec0ccac0b6597a4da1586d995eab9f0d82e",
-        "integrity": "sha384-0fkU+8dbPSZUWW5LKueNzer1lPztLeCQzy5FAHLNgU/RBS+TfMyoRrPCsYCghSmX",
+        "bytes": 50428,
+        "sha256": "0d8c75d839aa6923b9b7e84bed4d5a318fc36f764abd35f725bd8117db751c99",
+        "integrity": "sha384-L9jEqmGCiQD94vREO78U7SwS17loRraL33oew4n8trfTQZ/uXF+SXkdDG37zhfPj",
         "imports": []
       }
     },
@@ -368,8 +368,8 @@
         },
         {
           "path": "collections/source-reader/reader.mjs",
-          "bytes": 13227,
-          "sha256": "ff653d1b41e8cfc0f593881a693e0f614b95ecb8cea05feee81f9ac66ab4fce0",
+          "bytes": 13418,
+          "sha256": "fddc5f2cd6a564a74689bd4377d1aee2be8a76e5fc1f44d35ea40a112e919a4d",
           "imports": [
             {
               "kind": "import-statement",
@@ -390,9 +390,9 @@
       ],
       "output": {
         "path": "collections/source-reader/reader.bundle.mjs",
-        "bytes": 29848,
-        "sha256": "c791803da961840b3c33b9bef3866ef8bd2c855ba59ea823f8fa422377e76951",
-        "integrity": "sha384-vDO9juu5wdk4//Nw6dP1oFwX505UK5UL1Lcm6KCRTBRRW56pL31dMgRrr724WHah",
+        "bytes": 30029,
+        "sha256": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
+        "integrity": "sha384-mbsKG/ldpgpQb9R2jDaHkm9KmeskuVKH/WIpwU2gGyEA5BtvFgWdd7eY4cevOni7",
         "imports": []
       }
     }
