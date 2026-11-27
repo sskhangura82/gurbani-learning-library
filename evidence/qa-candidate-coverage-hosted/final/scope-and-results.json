@@ -1,0 +1,31 @@
+{
+  "candidate": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+  "base": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+  "sharedDailyTestBytesMatchPR64": true,
+  "dailyTestSha256": "0aeb76ee377c4f87d9ac29daf8db466cb2a6c739b41587ac69308242a94d02a7",
+  "changedPaths": [
+    ".github/workflows/article-source-print-qa.yml",
+    ".github/workflows/learning-practice-qa.yml",
+    ".github/workflows/library-script-integrity-qa.yml",
+    ".github/workflows/reader-qa.yml",
+    ".github/workflows/salok-kabir-qa.yml",
+    ".github/workflows/salok-mahalla9-qa.yml",
+    ".github/workflows/unified-library-qa.yml",
+    "docs/QA_CANDIDATE_COVERAGE_CRITERIA_20261127.md",
+    "docs/QA_CANDIDATE_COVERAGE_HANDOFF_20261127.md",
+    "evidence/qa-candidate-coverage/local-contract.tap",
+    "evidence/qa-candidate-coverage/trigger-check.json",
+    "tests/hukamnama-browser.mjs",
+    "tests/qa-workflow-coverage.mjs",
+    "tools/qa-workflow-coverage.mjs"
+  ],
+  "applicationPathsChanged": [],
+  "allHostedRunsCompleted": true,
+  "passedWorkflows": 7,
+  "failedWorkflows": 1,
+  "failedRun": 46012632372,
+  "failure": "Existing ART-P01 strict print extraction/completeness; no waiver",
+  "knowledgeWorkflow": "Not triggered: unchanged path filter, no matching files",
+  "preparationWorkflow": "Unchanged, not dispatched",
+  "mergeOrDeployPerformed": false
+}
