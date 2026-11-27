@@ -33,9 +33,11 @@ The runtime accepts a strict `glp.private-collection.v1` object:
 }
 ```
 
-The example above is a schema illustration, not scripture or a rights claim. Allowed traditions are `bible`, `early-buddhist`, `tibetan-buddhist`, `other-religious`. Psychology, SGGS and Dasam are deliberately excluded from this restricted payload. Allowed rights values are `public-domain`, `cc0`, `permission-recorded`, `licensed-unmodified`; the last two require a nonempty permission reference. All those fields are encrypted, including titles and source URLs.
+The example above is a schema illustration, not scripture or a rights claim. Allowed traditions are `bible`, `early-buddhist`, `tibetan-buddhist`, `other-religious`. Psychology, SGGS and Dasam are deliberately excluded from this restricted payload. Allowed rights values are `public-domain`, `cc0`, `permission-recorded`, `licensed-unmodified`, `link-only`; permission-recorded and licensed-unmodified require a nonempty permission reference. All those fields are encrypted, including titles and source URLs.
 
-Limits: 12 MiB plaintext UTF-8, 18 MiB outer envelope, 200 works, 10,000 paragraphs per work, 100,000 paragraphs total, and 100,000 characters per paragraph. The reader renders 50 paragraphs at a time. The UI does not create private notes or change existing reflection/backup formats.
+For a publisher reading-room reference with no imported text, set `rights` to `link-only`, `permissionRef` to the exact marker `NO_TEXT_IMPORTED_LINK_ONLY`, and `paragraphs` to a single string exactly: `This entry opens the publisher's reading room. No text or translation has been imported into this library.` Additional paragraphs or a substituted passage refuse validation. The reader shows a visible external-source link. This records a link-only reference; it does not claim permission to import translations.
+
+Limits: 12 MiB plaintext UTF-8, 18 MiB outer envelope, 200 works, 10,000 paragraphs per work, 100,000 paragraphs total, and 100,000 characters per paragraph. The reader renders 50 paragraphs at a time. A local title/tradition filter helps navigate large collections; it clears when locked and never enters URLs or storage. The UI does not create private notes or change existing reflection/backup formats.
 
 ## Preparing a collection
 
@@ -66,9 +68,9 @@ Locking clears the DOM and collection references, invalidates in-flight unlocks 
 
 ## Verification
 
-`node tests/private-library-contract.mjs` runs 17 meaningful encryption, schema, file-boundary, diagnostic-redaction and script-pin checks. Synthetic fixtures only.
+`node tests/private-library-contract.mjs` runs 19 meaningful encryption, schema, file-boundary, diagnostic-redaction and script-pin checks, including an actual multi-megabyte encryption/decryption and strict link-only admission. Synthetic fixtures only.
 
-`node tests/private-library-browser.mjs` contains fourteen planned browser checks, including ciphertext tampering, inert script-shaped text, lock races, URL/storage/network leakage, reload/back/print/hidden locks, inactivity, mobile overflow and a real changed-script SRI refusal. It accepts `GLP_PLAYWRIGHT_MODULE` and `GLP_CHROMIUM_EXECUTABLE` for a separately installed test runtime. These environment variables contain executable paths, never passwords. No browser result is claimed unless `evidence/private-library/browser/results.json` exists with a successful complete run. This environment currently has no working Chromium binary; the wrapper points to an absent executable. Browser acceptance remains pending.
+`node tests/private-library-browser.mjs` contains fifteen planned browser checks, including ciphertext tampering, inert script-shaped text, filtering and external references, lock races, URL/storage/network leakage, reload/back/print/hidden locks, inactivity, mobile overflow and a real changed-script SRI refusal. It accepts `GLP_PLAYWRIGHT_MODULE` and `GLP_CHROMIUM_EXECUTABLE` for a separately installed test runtime. These environment variables contain executable paths, never passwords. No browser result is claimed unless `evidence/private-library/browser/results.json` exists with a successful complete run. This environment currently has no working Chromium binary; the wrapper points to an absent executable. Browser acceptance remains pending.
 
 Primary implementation references checked 2026-11-27:
 

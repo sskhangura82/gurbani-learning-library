@@ -24,7 +24,8 @@
     </section>
     <section id="reading" hidden aria-labelledby="collection-title">
       <div class="reading-header"><h2 id="collection-title"></h2><button type="button" id="lock" disabled>Lock library</button></div>
-      <label for="work-select">Choose a text</label><select id="work-select"></select>
+      <label for="work-filter">Find a text</label><input type="search" id="work-filter" maxlength="200" placeholder="Title or tradition" autocomplete="off" spellcheck="false">
+      <label for="work-select">Choose a text</label><select id="work-select"></select><p id="work-count" class="quiet" aria-live="polite"></p>
       <article><h3 id="work-title" tabindex="-1"></h3><p id="edition" class="quiet"></p><div id="passages"></div></article>
       <nav class="pages" aria-label="Text pages"><button type="button" id="previous">Previous</button><span id="page-status" aria-live="polite"></span><button type="button" id="next">Next</button></nav>
       <details><summary>Edition and source</summary><div id="source"></div></details>
@@ -33,6 +34,6 @@
     <noscript><p>JavaScript is needed to unlock the encrypted collection on your device.</p></noscript>
   </main>
   <p class="print-note">Private content is excluded from printing. Return to the library to unlock it again.</p>
-  <script type="module" src="./app.mjs" integrity="sha384-vIycR/yLlmNWIYvUp0NN2m+KAONrJCg/3PAC1k1y8+hiN2H841xHsogoQSYVd1pI" crossorigin="anonymous"></script>
+  <script type="module" src="./app.mjs" integrity="sha384-lVoPcCmSfhpbr+ZxOSunZD3PBDr7bs65SZu/M4YHnHbkCVa9MhtAQBiVLVD7QmFF" crossorigin="anonymous"></script>
 </body>
 </html>

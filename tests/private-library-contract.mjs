@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {execFileSync,spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {sealCollection,unlockCollection,validateCollection,validatePassphrase,validateEnvelope,ITERATIONS} from '../private-library/app.mjs';
+import {sealCollection,unlockCollection,validateCollection,validatePassphrase,validateEnvelope,ITERATIONS,LINK_ONLY_NOTICE,LINK_ONLY_PERMISSION} from '../private-library/app.mjs';
 import {sealFile,assertOutsideGit} from '../tools/private-library/seal.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const password='SYNTHETIC-ONLY-testing-passphrase-8261';
@@ -20,6 +20,8 @@ try{
   await test('Wrong-key access fails with a generic refusal',async()=>{try{await unlockCollection(envelope,other);}catch(error){wrong=error.message;}assert.match(wrong,/Unable to unlock/);});
   await test('Ciphertext tamper produces the same generic refusal',async()=>{const changed=structuredClone(envelope);const raw=Buffer.from(changed.ciphertext,'base64');raw[20]^=1;changed.ciphertext=raw.toString('base64');await assert.rejects(unlockCollection(changed,password),error=>error.message===wrong);});
   await test('Independent encryptions use fresh salt and IV',async()=>{const again=await sealCollection(source,password);assert.notEqual(again.kdf.salt,envelope.kdf.salt);assert.notEqual(again.cipher.iv,envelope.cipher.iv);assert.notEqual(again.ciphertext,envelope.ciphertext);});
+  await test('Multi-megabyte full-book payload decodes without regex stack overflow',async()=>{const large=structuredClone(source);large.works[0].paragraphs=Array.from({length:75},(_,index)=>`${index}:`+'SYNTHETIC '.repeat(9999));const sealed=await sealCollection(large,password);assert.ok(sealed.ciphertext.length>7*1024*1024);assert.deepEqual(await unlockCollection(sealed,password),large);});
+  await test('Link-only source accepts only the fixed no-import notice and marker',async()=>{const p=structuredClone(source);p.works[0].tradition='tibetan-buddhist';p.works[0].source.rights='link-only';p.works[0].source.permissionRef=LINK_ONLY_PERMISSION;p.works[0].paragraphs=[LINK_ONLY_NOTICE];assert.equal(validateCollection(p),p);for(const mutate of [x=>x.works[0].paragraphs.push('Imported text'),x=>x.works[0].paragraphs=['Imported text'],x=>x.works[0].source.permissionRef='']){const x=structuredClone(p);mutate(x);assert.throws(()=>validateCollection(x));}});
   await test('Lowered KDF, different cipher and extra envelope fields refuse',async()=>{for(const mutate of [e=>e.kdf.iterations=1,e=>e.cipher.name='AES-CBC',e=>e.title='leaked',e=>e.kdf.hash='SHA-1',e=>e.cipher.iv='AAAAAAAAAAAAAAAAAAAAAA==',e=>e.ciphertext+='A']){const e=structuredClone(envelope);mutate(e);assert.throws(()=>validateEnvelope(e));}assert.equal(envelope.kdf.iterations,ITERATIONS);});
   await test('Short PIN and trivial repetitive passwords refuse',async()=>{for(const value of ['1234','a'.repeat(32),'passwordpasswordpassword'])assert.throws(()=>validatePassphrase(value));});
   await test('Psychology and Sikh corpora cannot be hidden in this restricted payload',async()=>{for(const tradition of ['psychology','sggs','dasam-granth']){const p=structuredClone(source);p.works[0].tradition=tradition;assert.throws(()=>validateCollection(p));}});
