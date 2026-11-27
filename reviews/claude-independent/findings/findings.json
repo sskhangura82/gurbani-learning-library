@@ -1176,5 +1176,20 @@
    "acceptance_test": "The superseded chain is closed, not merged, and knowledge/index.html on main retains the #60 bundled pinned entry point.",
    "status": "OPEN-ADVISORY",
    "origin": "INDEPENDENT"
+ },
+ {
+   "id": "INT-01",
+   "severity": "S3",
+   "s0_candidate": false,
+   "area": "Integration",
+   "title": "Every parallel candidate collides in the same four files; the generator conflict has a verified recipe, the integrity-harness conflict does not",
+   "location": "sw.js, tools/build-offline.mjs, tests/library-script-integrity.mjs, tests/library-script-integrity-inputs.mjs",
+   "composition_or_verse": "n/a",
+   "evidence": "Trial merge into main in a throwaway worktree, never pushed. composite #62, daily #73 and farid #72 merge clean; haumai #66 conflicts in 4 files; qa-visibility #67 and history #71 then merge clean; explore #74 conflicts in the same 4 files. tools/build-offline.mjs hardcodes the candidate release label inside the generator, so any two candidates edit the same line and conflict by construction, while the additions.push lines union automatically. Conflicts are additive in character: Farid adds salok-farid/index.html and faridReaderScope, Haumai adds knowledge/journey.mjs, knowledge/learning.mjs, knowledge/json.mjs and journeyScope, with 15 list entries common and navigationScope retained by both. VERIFIED recipe for the generator: keep both additions.push lines, choose one VERSION, re-run node tools/build-offline.mjs - produced 107 EXPECTED entries with 4 of 4 Farid and 6 of 6 Explore files present. NOT verified for the harnesses: my automated union produced invalid JavaScript (node --check fails, two unbalanced braces) while each candidate's own copy parses. reviews/claude-independent/findings/INT-01_STACK_MERGE_CONVERGES_ON_FOUR_FILES.md.",
+   "why_it_matters": "Hand-resolving sw.js toward either side drops the other candidate's files from EXPECTED, giving an incomplete offline package. That hazard is ALREADY CAUGHT: nine workflows run the generator then assert git diff --exit-code -- sw.js, and several of those carry no branch filter. I had hypothesised CI would mask a bad committed manifest; the evidence refutes it. Hence S3, a guarded merge chore rather than silent corruption. The consequence that does matter is for sequencing: the merge object has grown by eleven candidates across five lines since #63, #63's composite validation covers only up to #62, and there is no composite validation of the current stack.",
+   "proposed_correction": "Builder's to author and sequence; I propose no patch and do not repair builder code. Recorded constraints: sw.js must be regenerated, never hand-merged; the integrity-harness union needs hand authoring and node --check before it is believed; and the hardcoded VERSION literal inside the generator is what makes every candidate pair conflict, which is a design choice they may wish to revisit.",
+   "acceptance_test": "A composite of the current stack merges into main, node --check passes on both integrity harnesses, node tools/build-offline.mjs leaves sw.js byte-identical, and both candidates' integrity scopes still assert.",
+   "status": "OPEN",
+   "origin": "INDEPENDENT"
  }
 ]

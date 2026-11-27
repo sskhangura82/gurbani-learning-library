@@ -330,3 +330,54 @@ These are not scholarly-review items and remain genuinely outstanding on their o
   judgement call — a missing second witness. Both the builder and I have now stated it.
 - **Physical iPhone/iPad/VoiceOver/airplane-mode acceptance**, and **audio rights**. Not
   closable by review, and I will not claim either.
+
+---
+
+## Sixth update — eleven new candidates, and what merging now actually requires
+
+### The queue grew
+
+#64–#74 arrived, stacking on #62 in **five parallel lines**: Daily (#64→#69→#73), Farid
+(#65→#72), Explore (#65→#70→#74), Haumai (#66), QA visibility (#67), History (#68→#71).
+`main` unchanged at `a3476ac4b9be`, still unprotected.
+
+**These candidates are not yet reviewed.** What follows is integration analysis only.
+
+### INT-01 opened
+
+A sequential trial merge into `main` is clean for the #62 composite, Daily and Farid, then
+conflicts at Haumai and again at Explore — **both times in the same four files**: `sw.js`,
+`tools/build-offline.mjs`, and the two `library-script-integrity` harnesses. Systemic, not
+incidental: the generator hardcodes each candidate's release label on one shared line, so any
+two candidates conflict there by construction.
+
+Generator resolution **verified** (union the additions, pick one VERSION, regenerate →
+107 manifest entries, both candidates' files present). Harness resolution **not verified** —
+my automated union produced invalid JavaScript.
+
+### What I got wrong, and what the evidence refuted
+
+- I hypothesised CI would **mask** a bad committed `sw.js`. It would not: nine workflows run
+  the generator then `git diff --exit-code -- sw.js`. Severity dropped accordingly.
+- Error **33**: asserted a PR base/ancestry discrepancy from a misread of my own listing.
+- Error **34**: called a merge resolved on zero conflict markers when the file does not
+  parse. `node --check` is the instrument; no markers is not valid code.
+
+Count now **34**.
+
+### Credit where due
+
+**#67 runs 16 checks and surfaces the failing `browser-and-print`**, which every other new
+candidate hides by running only 4–7. That is the builder answering **CI-02** directly, and
+the newer workflows carry no branch filter. CI-02 stays open for the older filtered ones,
+and `main` still carries exactly **one** workflow against the newest candidate's thirteen.
+
+The report that *"applicable automated checks for all four new candidates completed
+successfully"* is true but materially narrower than it sounds.
+
+### Correction to this morning's advice to the founder
+
+I told him one clean merge delivers everything. **That is no longer true.** The object has
+grown by eleven candidates, #63's validation covers only up to #62, and no composite
+validation of the current stack exists. Sequencing is the builder's to propose and his to
+decide.
