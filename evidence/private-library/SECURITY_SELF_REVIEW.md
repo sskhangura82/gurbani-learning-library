@@ -19,6 +19,6 @@ The decoder now uses a bounded linear character scan with constant stack space, 
 - Packing inputs are checked outside Git, including realpath symlink targets and worktree `.git` files, before reading them. Password-file permissions and no-overwrite behavior are enforced.
 - Link-only references accept one fixed no-import notice and marker. They cannot admit arbitrary body paragraphs under that mode. Metadata source selection and accuracy still require editorial verification.
 
-## Remaining verification
+## Browser verification and remaining limits
 
-The planned browser checks are still unexecuted because a working browser is unavailable in this environment. The concurrency, history, visibility, print and mobile observations must be established by that fixture on the review candidate. Physical iPhone/Safari and independent Claude review remain separate.
+The 15 browser checks subsequently passed on the authorized Mac using a fresh temporary headless Chrome profile, exact transferred candidate bytes and synthetic data only. These checks established the concurrency, history, visibility, print, source-filter and mobile-layout observations described in `browser/results.json`. The environment receipt binds the four tested source files by SHA-256. Physical iPhone/Safari and independent Claude review remain separate.
