@@ -120,7 +120,7 @@ test('Extra HTML and stale source cannot silently pass default checks',async()=>
  const fixture=await fs.mkdtemp(path.join(os.tmpdir(),'glp-script-contract-'));
  try{
   const files=execFileSync('git',['ls-tree','-r','--name-only',baseline],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(n=>!n.startsWith('evidence/'));
-  for(const name of [...files,'salok-farid/index.html','tools/script-integrity/app-graphs.json',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
+  for(const name of [...files,'salok-farid/index.html','knowledge/journey.mjs','knowledge/learning.mjs','knowledge/json.mjs','tools/script-integrity/app-graphs.json',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
    let bytes;try{bytes=await read(name);}catch(error){if(error.code==='ENOENT')continue;throw error;}
    const destination=path.join(fixture,name);await fs.mkdir(path.dirname(destination),{recursive:true});await fs.writeFile(destination,bytes);
   }

@@ -1,0 +1,389 @@
+{
+  "status": "PASS",
+  "started": "2026-11-27T13:11:48.495Z",
+  "sourceCommit": "7f62b07568682ef8c1fe7674164c5c1c97e3b815",
+  "mount": "/preview/",
+  "checks": [
+    {
+      "name": "hukamnama · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/hukamnama/index.html",
+        "/preview/hukamnama/style.css",
+        "/preview/hukamnama/reader.bundle.mjs",
+        "/preview/hukamnama/events/2026-11-27.json",
+        "/preview/hukamnama/sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 73.140625,
+          "y": 96.109375,
+          "width": 220.59375,
+          "height": 31.6875,
+          "top": 96.109375,
+          "right": 293.734375,
+          "bottom": 127.796875,
+          "left": 73.140625
+        }
+      },
+      "screenshot": "hukamnama-390.png"
+    },
+    {
+      "name": "library · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/index.html",
+        "/preview/css/home.css",
+        "/preview/library/library.css",
+        "/preview/js/home.js",
+        "/preview/js/pwa.js",
+        "/preview/library/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+      ],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 18,
+          "y": 145.6875,
+          "width": 354,
+          "height": 41.390625,
+          "top": 145.6875,
+          "right": 372,
+          "bottom": 187.078125,
+          "left": 18
+        }
+      },
+      "screenshot": "library-390.png"
+    },
+    {
+      "name": "articles-index · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/index.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs",
+        "/preview/articles/catalog.json",
+        "/preview/salok-mahalla9/data/salok-mahalla9.json",
+        "/preview/salok-kabir/data/salok-kabir.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 24,
+          "y": 210.671875,
+          "width": 342,
+          "height": 74.875,
+          "top": 210.671875,
+          "right": 366,
+          "bottom": 285.546875,
+          "left": 24
+        }
+      },
+      "screenshot": "articles-index-390.png"
+    },
+    {
+      "name": "articles-sheet · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/article.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs",
+        "/preview/articles/catalog.json",
+        "/preview/salok-mahalla9/data/salok-mahalla9.json",
+        "/preview/salok-kabir/data/salok-kabir.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 24,
+          "y": 210.671875,
+          "width": 342,
+          "height": 38.4375,
+          "top": 210.671875,
+          "right": 366,
+          "bottom": 249.109375,
+          "left": 24
+        }
+      },
+      "screenshot": "articles-sheet-390.png"
+    },
+    {
+      "name": "knowledge · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/knowledge/index.html",
+        "/preview/knowledge/style.css",
+        "/preview/knowledge/app.bundle.mjs",
+        "/preview/knowledge/scripture.json",
+        "/preview/knowledge/pilot.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 12,
+          "y": 92.828125,
+          "width": 366,
+          "height": 83.1875,
+          "top": 92.828125,
+          "right": 378,
+          "bottom": 176.015625,
+          "left": 12
+        }
+      },
+      "screenshot": "knowledge-390.png"
+    },
+    {
+      "name": "hukamnama · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/hukamnama/index.html",
+        "/preview/hukamnama/style.css",
+        "/preview/hukamnama/reader.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:49282/preview/hukamnama/reader.bundle.mjs' with computed SHA-384 integrity 'IiMXXLsjFe5m17/5EO6CGS7mnnfVf1whazv3XbfULmdgsqpXYfHvz8Cp6+9YE9YX'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "hukamnama/core.mjs",
+        "baselineSha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+        "servedSha256": "04799da49f605484e659f0cef773543fdd51cb97f5b64a2f8b0cf9f93151f17f"
+      }
+    },
+    {
+      "name": "hukamnama · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/hukamnama/index.html",
+        "/preview/hukamnama/style.css",
+        "/preview/hukamnama/reader.bundle.mjs",
+        "/preview/hukamnama/events/2026-11-27.json",
+        "/preview/hukamnama/sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "hukamnama/core.mjs",
+        "baselineSha256": "c093c6968be05cec60a13991849ffc9f9a4cf28e7dbd2d7a2dde84837a5f1159",
+        "servedSha256": "04799da49f605484e659f0cef773543fdd51cb97f5b64a2f8b0cf9f93151f17f"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 73.140625,
+          "y": 96.109375,
+          "width": 220.59375,
+          "height": 31.6875,
+          "top": 96.109375,
+          "right": 293.734375,
+          "bottom": 127.796875,
+          "left": 73.140625
+        }
+      }
+    },
+    {
+      "name": "library · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/index.html",
+        "/preview/css/home.css",
+        "/preview/library/library.css",
+        "/preview/js/home.js",
+        "/preview/js/pwa.js",
+        "/preview/library/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element.",
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:49282/preview/library/app.bundle.mjs' with computed SHA-384 integrity 'lo4PahhoUwRaONRYmW/2e1BHS+Ept1HMn3kAD7ghqq3wAtIBvBVXyc8ugmULmWxl'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "library/catalog.mjs",
+        "baselineSha256": "34f0b67b9bbeac9d9bb1e7b385bf59d3e0f5122c94b648d728dae8278f94fb90",
+        "servedSha256": "24bef6eede61a9de8744d7b541d121e920ef847900949da5e84b0ea5e1335646"
+      }
+    },
+    {
+      "name": "library · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/index.html",
+        "/preview/css/home.css",
+        "/preview/library/library.css",
+        "/preview/js/home.js",
+        "/preview/js/pwa.js",
+        "/preview/library/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "library/catalog.mjs",
+        "baselineSha256": "34f0b67b9bbeac9d9bb1e7b385bf59d3e0f5122c94b648d728dae8278f94fb90",
+        "servedSha256": "24bef6eede61a9de8744d7b541d121e920ef847900949da5e84b0ea5e1335646"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 18,
+          "y": 145.6875,
+          "width": 354,
+          "height": 41.390625,
+          "top": 145.6875,
+          "right": 372,
+          "bottom": 187.078125,
+          "left": 18
+        }
+      }
+    },
+    {
+      "name": "articles-sheet · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/article.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:49282/preview/articles/app.bundle.mjs' with computed SHA-384 integrity 'dKPGMbvgCUm4rHj6Zml+8zOnMvdEGPZh+8L7sHbUr386gjUHJl+PEJxgrNQ+Mabp'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "articles/core.mjs",
+        "baselineSha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1",
+        "servedSha256": "60221954668e11a0b5ef80c6061d188f55690ace9231bef3289941431f1e3bed"
+      }
+    },
+    {
+      "name": "articles-sheet · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/article.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs",
+        "/preview/articles/catalog.json",
+        "/preview/salok-mahalla9/data/salok-mahalla9.json",
+        "/preview/salok-kabir/data/salok-kabir.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "articles/core.mjs",
+        "baselineSha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1",
+        "servedSha256": "60221954668e11a0b5ef80c6061d188f55690ace9231bef3289941431f1e3bed"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 24,
+          "y": 210.671875,
+          "width": 342,
+          "height": 38.4375,
+          "top": 210.671875,
+          "right": 366,
+          "bottom": 249.109375,
+          "left": 24
+        }
+      }
+    },
+    {
+      "name": "knowledge · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/knowledge/index.html",
+        "/preview/knowledge/style.css",
+        "/preview/knowledge/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:49282/preview/knowledge/app.bundle.mjs' with computed SHA-384 integrity 'Bn2c26hhJcSYTGhydiSrwkjBjbeOKfq+gah0iYWp9sDEHsGcqiPwErNYnekaOJZL'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "knowledge/kinds.mjs",
+        "baselineSha256": "fc2cf096626ff83f230ec9bdc4c1849c6a9c4266baa6b4e5350b7f62cc1b2764",
+        "servedSha256": "bf020550341b02bc310f169f2fed312d26b7114f09d979db504f2fcdfbd81df2"
+      }
+    },
+    {
+      "name": "knowledge · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/knowledge/index.html",
+        "/preview/knowledge/style.css",
+        "/preview/knowledge/app.bundle.mjs",
+        "/preview/knowledge/scripture.json",
+        "/preview/knowledge/pilot.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "knowledge/kinds.mjs",
+        "baselineSha256": "fc2cf096626ff83f230ec9bdc4c1849c6a9c4266baa6b4e5350b7f62cc1b2764",
+        "servedSha256": "bf020550341b02bc310f169f2fed312d26b7114f09d979db504f2fcdfbd81df2"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 12,
+          "y": 92.828125,
+          "width": 366,
+          "height": 83.1875,
+          "top": 92.828125,
+          "right": 378,
+          "bottom": 176.015625,
+          "left": 12
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Builder verification in fresh synthetic desktop Chrome contexts at a 390 by 844 CSS-pixel viewport.",
+    "Original module URLs deliberately denied; service workers blocked to isolate network/SRI behavior.",
+    "No physical iPhone, Safari, VoiceOver, user records, offline-worker acceptance, qualified content review or release approval.",
+    "Transport mutation changes a real dependency source in memory, rebuilds the complete bundle and retains unchanged HTML SRI; its explicit re-pinned control proves the altered code can execute."
+  ],
+  "environment": {
+    "node": "v26.0.0",
+    "platform": "darwin",
+    "browser": "158.0.8127.37",
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "finished": "2026-11-27T13:11:50.722Z",
+  "deniedAtServer": []
+}

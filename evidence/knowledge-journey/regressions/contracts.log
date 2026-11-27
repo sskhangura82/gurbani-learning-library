@@ -1,0 +1,36 @@
+✔ complete exact source and lesson binding; different source/revision unavailable (0.718958ms)
+✔ create, exact source binding and first reflection protected when saving later words (1.938125ms)
+✔ question immutable; empty first note and later words without first save refused (0.237833ms)
+✔ stale edits preserve both later versions with identical earlier reflection (0.930833ms)
+✔ no-change save does not write or create another conflict copy (0.312417ms)
+✔ unknown source or lesson revision refuses save, preserves imported historical record (0.505875ms)
+✔ an existing note cannot be rebound to the current passage (0.207041ms)
+✔ quota refusal leaves all bytes intact and preserves meaningful recovery message (0.157584ms)
+✔ missing locks preserves data while read and export still work (0.154833ms)
+✔ corrupt existing record never reset by save or import (0.203042ms)
+✔ oversized, unknown-field, duplicate-key and duplicate-identity imports refuse atomically (0.245833ms)
+✔ export roundtrip and repeated import are idempotent, with field order irrelevant (0.281958ms)
+✔ repeated conflicting backup keeps one imported version, without deleting independent notes (0.341666ms)
+✔ incoming explicit conflict copies recognized before parent conflicts, in either order (0.347542ms)
+✔ generated conflict ID cannot take a reserved incoming ID (0.159958ms)
+✔ record-count and aggregate limit refusal does not trim any prior notes (4.2595ms)
+✔ local-date intent and week addition survive month/year/leap/DST boundaries without scheduling (0.117542ms)
+✔ reversed device clock refuses editing rather than rewriting note chronology (0.110583ms)
+✔ Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input (1938.927917ms)
+✔ Existing application bytes stay frozen outside exact Daily navigation and Haumai mechanics scopes, loader pins and worker manifest (1530.705666ms)
+✔ Reader loader contract and reviewed original module closures remain exact (244.976375ms)
+✔ All 15 production pages carry exactly 52 independently inventoried script pins (181.92025ms)
+✔ Generated modules reproduce exactly and contain no executable import or export-from edges (130.632708ms)
+✔ Ordinary check mode writes neither bundles nor HTML (98.532959ms)
+✔ Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts (5.753834ms)
+✔ Bundling rejects unexpected dependencies and unresolved dynamic executable loading (4.822917ms)
+✔ Extra HTML and stale source cannot silently pass default checks (259.917583ms)
+✔ A pinned bundle cannot retain secondary imports or recover an inline execution path (15.623167ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3803.0755

@@ -118,12 +118,16 @@
       "inputs": [
         {
           "path": "knowledge/app.mjs",
-          "bytes": 15304,
-          "sha256": "cda94c987caec463905d8b75cc36be9e72ee44639b2a86edd2d6c2de0eca09d9",
+          "bytes": 16537,
+          "sha256": "4646ce7b02a411cade85832a0be31400cf52b1e908a64931c750dc7acd3ca128",
           "imports": [
             {
               "kind": "import-statement",
               "path": "knowledge/registry.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "knowledge/journey.mjs"
             },
             {
               "kind": "import-statement",
@@ -147,10 +151,38 @@
           ]
         },
         {
+          "path": "knowledge/journey.mjs",
+          "bytes": 12824,
+          "sha256": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/learning.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/json.mjs",
+          "bytes": 3867,
+          "sha256": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5",
+          "imports": []
+        },
+        {
           "path": "knowledge/kinds.mjs",
           "bytes": 263,
           "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
           "imports": []
+        },
+        {
+          "path": "knowledge/learning.mjs",
+          "bytes": 12751,
+          "sha256": "376b8a2ca3de67934dd14e8bf18a2689ce191c0249905e0e276c24a6d24f6268",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/json.mjs"
+            }
+          ]
         },
         {
           "path": "knowledge/registry.mjs",
@@ -183,9 +215,9 @@
       ],
       "output": {
         "path": "knowledge/app.bundle.mjs",
-        "bytes": 44898,
-        "sha256": "b02e5ad471047b02e7f3192c5441752ee4bd9e3ba59ec3c8a774e93d708d2a2e",
-        "integrity": "sha384-Z4lwp4Um7ePZMDemf+So/TUNH6xhUXGmIfa8swoOARwBvoEwpNDssApI5cBgp686",
+        "bytes": 77790,
+        "sha256": "0962f8c8d7e21f20db0b387899713e7b20c04bc9a2cb112c0bb21763bddfbe05",
+        "integrity": "sha384-dUtraaSwZUyGisIE4ogJfy8frHYWC2s2A68euw9bsk8yefJOtbxiGKsXSp04PC8y",
         "imports": []
       }
     },
