@@ -1,0 +1,672 @@
+{
+  "schema": "glp.shabados-original-preparation.v1",
+  "package": "@shabados/database",
+  "version": "5.0.0-next.0",
+  "archiveSha256": "839fa79860804550ca7e654f9ccdef3889451a7a95626e6c99466c6fc1b902b2",
+  "databaseSha256": "517890c7e7c2f3dcef7f21b51d074a581b8eded4ebe14c504b84ea075ff16aeb",
+  "noticeSha256": "cacf8c7e24899b1202170b6fceedd4547fe4b09c78711f016cc7c4ee8613f795",
+  "reportedGitHead": "693f879e2d00d192abaa77f53d61328e47cdbb2d",
+  "gitHeadResolution": "REGISTRY_REPORTED_GITHUB_OBJECT_NOT_RESOLVED",
+  "modernTranslationsImported": false,
+  "commentaryImported": false,
+  "transliterationsImported": false,
+  "audioImported": false,
+  "textNormalizationPerformed": false,
+  "sourceAuthorshipAdjudicated": false,
+  "independentPrintedCollationPerformed": false,
+  "runtimeAdmissionGrantedByImporter": false,
+  "collections": [
+    {
+      "collectionId": "sggs",
+      "editionId": "shabados-5.0.0-next.0-SGGS-SSA2",
+      "manifestSha256": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+      "manifestBytes": 1116397,
+      "chunkCount": 75,
+      "chunkBytes": 9614294,
+      "originalSequenceSha256": "294121f4732035d2cb5a5ccc0ac91ba6f44a4d66508c4fed6b58bba4a1b29f27",
+      "exactOriginalFieldsAndOrderReproduced": true,
+      "sections": [
+        {
+          "id": "1DSA",
+          "order": 1,
+          "name": {
+            "Latn": "Jap"
+          },
+          "units": 39,
+          "lines": 385
+        },
+        {
+          "id": "C47D",
+          "order": 2,
+          "name": {
+            "Latn": "So Dar"
+          },
+          "units": 5,
+          "lines": 84
+        },
+        {
+          "id": "3V9J",
+          "order": 3,
+          "name": {
+            "Latn": "So Purakh"
+          },
+          "units": 4,
+          "lines": 64
+        },
+        {
+          "id": "7DC2",
+          "order": 4,
+          "name": {
+            "Latn": "Sohila"
+          },
+          "units": 5,
+          "lines": 54
+        },
+        {
+          "id": "Y3BC",
+          "order": 5,
+          "name": {
+            "Latn": "Siree Raag"
+          },
+          "units": 215,
+          "lines": 3161
+        },
+        {
+          "id": "2QFW",
+          "order": 6,
+          "name": {
+            "Latn": "Raag Maajh"
+          },
+          "units": 194,
+          "lines": 2517
+        },
+        {
+          "id": "F6EB",
+          "order": 7,
+          "name": {
+            "Latn": "Raag Gauree"
+          },
+          "units": 916,
+          "lines": 9604
+        },
+        {
+          "id": "GAS9",
+          "order": 8,
+          "name": {
+            "Latn": "Raag Aasaa"
+          },
+          "units": 450,
+          "lines": 6185
+        },
+        {
+          "id": "1VME",
+          "order": 9,
+          "name": {
+            "Latn": "Raag Gujri"
+          },
+          "units": 194,
+          "lines": 1467
+        },
+        {
+          "id": "MYCZ",
+          "order": 10,
+          "name": {
+            "Latn": "Raag Dayv Gandhaaree"
+          },
+          "units": 47,
+          "lines": 344
+        },
+        {
+          "id": "PQ1V",
+          "order": 11,
+          "name": {
+            "Latn": "Raag Bihaagraa"
+          },
+          "units": 80,
+          "lines": 710
+        },
+        {
+          "id": "U7BW",
+          "order": 12,
+          "name": {
+            "Latn": "Raag Vadhans"
+          },
+          "units": 123,
+          "lines": 1424
+        },
+        {
+          "id": "BU0I",
+          "order": 13,
+          "name": {
+            "Latn": "Raag Sorath"
+          },
+          "units": 259,
+          "lines": 2642
+        },
+        {
+          "id": "VIUN",
+          "order": 14,
+          "name": {
+            "Latn": "Raag Dhanaasree"
+          },
+          "units": 118,
+          "lines": 1413
+        },
+        {
+          "id": "SEPI",
+          "order": 15,
+          "name": {
+            "Latn": "Raag Jaithsree"
+          },
+          "units": 79,
+          "lines": 590
+        },
+        {
+          "id": "IKRS",
+          "order": 16,
+          "name": {
+            "Latn": "Raag Todee"
+          },
+          "units": 34,
+          "lines": 282
+        },
+        {
+          "id": "MB7D",
+          "order": 17,
+          "name": {
+            "Latn": "Raag Bairaaree"
+          },
+          "units": 7,
+          "lines": 51
+        },
+        {
+          "id": "F09B",
+          "order": 18,
+          "name": {
+            "Latn": "Raag Tilang"
+          },
+          "units": 20,
+          "lines": 273
+        },
+        {
+          "id": "N3AJ",
+          "order": 19,
+          "name": {
+            "Latn": "Raag Soohee"
+          },
+          "units": 207,
+          "lines": 2655
+        },
+        {
+          "id": "8SXN",
+          "order": 20,
+          "name": {
+            "Latn": "Raag Bilaaval"
+          },
+          "units": 230,
+          "lines": 2608
+        },
+        {
+          "id": "WZX8",
+          "order": 21,
+          "name": {
+            "Latn": "Raag Gond"
+          },
+          "units": 50,
+          "lines": 831
+        },
+        {
+          "id": "87DX",
+          "order": 22,
+          "name": {
+            "Latn": "Raag Raamkalee"
+          },
+          "units": 336,
+          "lines": 4464
+        },
+        {
+          "id": "EJ4J",
+          "order": 23,
+          "name": {
+            "Latn": "Raag Nat Naaraayan"
+          },
+          "units": 25,
+          "lines": 289
+        },
+        {
+          "id": "TC84",
+          "order": 24,
+          "name": {
+            "Latn": "Raag Maalee Gauraa"
+          },
+          "units": 17,
+          "lines": 200
+        },
+        {
+          "id": "GFUO",
+          "order": 25,
+          "name": {
+            "Latn": "Raag Maaroo"
+          },
+          "units": 322,
+          "lines": 5182
+        },
+        {
+          "id": "C3PR",
+          "order": 26,
+          "name": {
+            "Latn": "Raag Tukhaari"
+          },
+          "units": 27,
+          "lines": 380
+        },
+        {
+          "id": "6CVK",
+          "order": 27,
+          "name": {
+            "Latn": "Raag Kaydaaraa"
+          },
+          "units": 25,
+          "lines": 226
+        },
+        {
+          "id": "4DCZ",
+          "order": 28,
+          "name": {
+            "Latn": "Raag Bhairao"
+          },
+          "units": 132,
+          "lines": 2131
+        },
+        {
+          "id": "HNXX",
+          "order": 29,
+          "name": {
+            "Latn": "Raag Basant"
+          },
+          "units": 90,
+          "lines": 1443
+        },
+        {
+          "id": "EA7W",
+          "order": 30,
+          "name": {
+            "Latn": "Raag Saarang"
+          },
+          "units": 286,
+          "lines": 2205
+        },
+        {
+          "id": "8SJ1",
+          "order": 31,
+          "name": {
+            "Latn": "Raag Malaar"
+          },
+          "units": 161,
+          "lines": 1631
+        },
+        {
+          "id": "YJZG",
+          "order": 32,
+          "name": {
+            "Latn": "Raag Kaanraa"
+          },
+          "units": 115,
+          "lines": 904
+        },
+        {
+          "id": "MW48",
+          "order": 33,
+          "name": {
+            "Latn": "Raag Kalyaan"
+          },
+          "units": 22,
+          "lines": 258
+        },
+        {
+          "id": "RGAJ",
+          "order": 34,
+          "name": {
+            "Latn": "Raag Prabhaatee"
+          },
+          "units": 67,
+          "lines": 1072
+        },
+        {
+          "id": "R5TE",
+          "order": 35,
+          "name": {
+            "Latn": "Raag Jaijaavantee"
+          },
+          "units": 4,
+          "lines": 33
+        },
+        {
+          "id": "VF9S",
+          "order": 36,
+          "name": {
+            "Latn": "Salok Sehshkritee"
+          },
+          "units": 63,
+          "lines": 259
+        },
+        {
+          "id": "LYER",
+          "order": 37,
+          "name": {
+            "Latn": "Gaathaa Fifth Mehl"
+          },
+          "units": 1,
+          "lines": 55
+        },
+        {
+          "id": "L9BG",
+          "order": 38,
+          "name": {
+            "Latn": "Phunhay Fifth Mehl"
+          },
+          "units": 1,
+          "lines": 94
+        },
+        {
+          "id": "CZHO",
+          "order": 39,
+          "name": {
+            "Latn": "Chaubolas Fifth Mehl"
+          },
+          "units": 1,
+          "lines": 24
+        },
+        {
+          "id": "SQST",
+          "order": 40,
+          "name": {
+            "Latn": "Salok Kabeer Jee"
+          },
+          "units": 242,
+          "lines": 494
+        },
+        {
+          "id": "X63C",
+          "order": 41,
+          "name": {
+            "Latn": "Salok Fareed Jee"
+          },
+          "units": 128,
+          "lines": 297
+        },
+        {
+          "id": "QVE4",
+          "order": 42,
+          "name": {
+            "Latn": "Svaiyay Sri Mukhbak Mehl 5"
+          },
+          "units": 20,
+          "lines": 125
+        },
+        {
+          "id": "59E0",
+          "order": 43,
+          "name": {
+            "Latn": "Svaiyay First Mehl"
+          },
+          "units": 9,
+          "lines": 52
+        },
+        {
+          "id": "BSCY",
+          "order": 44,
+          "name": {
+            "Latn": "Svaiyay Second Mehl"
+          },
+          "units": 10,
+          "lines": 52
+        },
+        {
+          "id": "N5P1",
+          "order": 45,
+          "name": {
+            "Latn": "Svaiyay Third Mehl"
+          },
+          "units": 22,
+          "lines": 124
+        },
+        {
+          "id": "SMWM",
+          "order": 46,
+          "name": {
+            "Latn": "Svaiyay Fourth Mehl"
+          },
+          "units": 60,
+          "lines": 322
+        },
+        {
+          "id": "Z1AF",
+          "order": 47,
+          "name": {
+            "Latn": "Svaiyay Fifth Mehl"
+          },
+          "units": 21,
+          "lines": 105
+        },
+        {
+          "id": "2XNR",
+          "order": 48,
+          "name": {
+            "Latn": "Salok Vaaran Thay Vadheek"
+          },
+          "units": 6,
+          "lines": 600
+        },
+        {
+          "id": "SO3P",
+          "order": 49,
+          "name": {
+            "Latn": "Salok Ninth Mehl"
+          },
+          "units": 57,
+          "lines": 117
+        },
+        {
+          "id": "NTFA",
+          "order": 50,
+          "name": {
+            "Latn": "Mundhaavanee Fifth Mehl"
+          },
+          "units": 2,
+          "lines": 11
+        },
+        {
+          "id": "6EZX",
+          "order": 51,
+          "name": {
+            "Latn": "Raagmala"
+          },
+          "units": 1,
+          "lines": 62
+        }
+      ],
+      "units": 5549,
+      "lines": 60555,
+      "pages": 1430,
+      "authors": 35,
+      "missingPrintedLineLabels": 0,
+      "crossPageUnits": 1120,
+      "maxUnitLines": 399,
+      "maxUnitBytes": 58015
+    },
+    {
+      "collectionId": "dasam",
+      "editionId": "shabados-5.0.0-next.0-SDGR-DGDG",
+      "manifestSha256": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+      "manifestBytes": 1101376,
+      "chunkCount": 80,
+      "chunkBytes": 10174590,
+      "originalSequenceSha256": "4915082ac98193518e184ffef2fd01ce9eebb4e307dcb9c6e249fd69e6a2707a",
+      "exactOriginalFieldsAndOrderReproduced": true,
+      "sections": [
+        {
+          "id": "3HWM",
+          "order": 1,
+          "name": {
+            "Latn": "Jaap"
+          },
+          "units": 22,
+          "lines": 801
+        },
+        {
+          "id": "VN4R",
+          "order": 2,
+          "name": {
+            "Latn": "Akal Ustat"
+          },
+          "units": 26,
+          "lines": 1101
+        },
+        {
+          "id": "9HTU",
+          "order": 3,
+          "name": {
+            "Latn": "Bachittar Natak"
+          },
+          "units": 123,
+          "lines": 1960
+        },
+        {
+          "id": "OVYN",
+          "order": 4,
+          "name": {
+            "Latn": "Chandi Charittar Ukat Bilas"
+          },
+          "units": 108,
+          "lines": 879
+        },
+        {
+          "id": "FRUQ",
+          "order": 5,
+          "name": {
+            "Latn": "Chandi Charittar"
+          },
+          "units": 65,
+          "lines": 1102
+        },
+        {
+          "id": "VJB5",
+          "order": 6,
+          "name": {
+            "Latn": "Vaar Sri Bhagauti Ji Ki"
+          },
+          "units": 55,
+          "lines": 389
+        },
+        {
+          "id": "5FEA",
+          "order": 7,
+          "name": {
+            "Latn": "Gyan Prabodh"
+          },
+          "units": 43,
+          "lines": 1417
+        },
+        {
+          "id": "QUTV",
+          "order": 8,
+          "name": {
+            "Latn": "Chaubees Avtaar"
+          },
+          "units": 1498,
+          "lines": 18690
+        },
+        {
+          "id": "AZRZ",
+          "order": 9,
+          "name": {
+            "Latn": "Brahma Avtaar"
+          },
+          "units": 42,
+          "lines": 1448
+        },
+        {
+          "id": "D5I2",
+          "order": 10,
+          "name": {
+            "Latn": "Rudra Avtaar"
+          },
+          "units": 141,
+          "lines": 3871
+        },
+        {
+          "id": "RVGZ",
+          "order": 11,
+          "name": {
+            "Latn": "Shabad Hazare"
+          },
+          "units": 10,
+          "lines": 87
+        },
+        {
+          "id": "XGON",
+          "order": 12,
+          "name": {
+            "Latn": "33 Svaiyay"
+          },
+          "units": 1,
+          "lines": 136
+        },
+        {
+          "id": "P593",
+          "order": 13,
+          "name": {
+            "Latn": "Khalsa Mahima"
+          },
+          "units": 4,
+          "lines": 19
+        },
+        {
+          "id": "MFTS",
+          "order": 14,
+          "name": {
+            "Latn": "Shastar Naam Mala"
+          },
+          "units": 185,
+          "lines": 4044
+        },
+        {
+          "id": "07NX",
+          "order": 15,
+          "name": {
+            "Latn": "Charitropakhyan"
+          },
+          "units": 3134,
+          "lines": 30062
+        },
+        {
+          "id": "546R",
+          "order": 16,
+          "name": {
+            "Latn": "Zafarnama"
+          },
+          "units": 2,
+          "lines": 226
+        },
+        {
+          "id": "1MZM",
+          "order": 17,
+          "name": {
+            "Latn": "Hikayat"
+          },
+          "units": 11,
+          "lines": 1526
+        }
+      ],
+      "units": 5470,
+      "lines": 67758,
+      "pages": 1428,
+      "authors": 1,
+      "missingPrintedLineLabels": 66957,
+      "crossPageUnits": 1132,
+      "maxUnitLines": 426,
+      "maxUnitBytes": 73203
+    }
+  ]
+}
