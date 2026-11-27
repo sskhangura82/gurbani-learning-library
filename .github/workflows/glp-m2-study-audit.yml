@@ -1,0 +1,28 @@
+name: GLP M2 Editorial Source Integrity
+on:
+  pull_request:
+    paths:
+      - 'docs/research/M2_*'
+      - 'tests/m2-*'
+      - '.github/workflows/glp-m2-study-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  study-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit 42 existing Study seeds, 385 original occurrences and meanings
+        run: node tests/m2-editorial-audit.mjs
+      - name: Pin 12 exemplar lines to frozen scripture and verify manuscript structure
+        run: node tests/m2-exemplar-integrity.mjs
+      - name: Verify every exact Gurbani quote and nine teaching dimensions per pauri
+        run: node tests/m2-quote-fidelity.mjs
+      - name: Verify research documents contain no privately collected audio
+        run: |
+          test ! -e recordings
+          test ! -e media/private
