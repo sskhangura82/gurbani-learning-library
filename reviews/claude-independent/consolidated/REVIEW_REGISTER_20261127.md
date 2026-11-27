@@ -87,3 +87,56 @@ Unchanged, and still only these two:
 
 Neither is urgent tonight. Nothing else requires him, and I have not approved,
 merged, deployed or pushed to `main`.
+
+
+---
+
+## Update, later the same evening — appended, not rewritten
+
+Three entries above changed after I wrote them. Appending rather than editing, so
+nothing already read changes meaning.
+
+### Candidate added
+
+| PR | head | review | verdict |
+|---|---|---|---|
+| #59 | `e0a6cff2` (app bytes identical to `b69d6b31`) | RT-021 | **PASS**, 25 of 26 criteria; C24 untested by me |
+
+PR #59 repairs the reader-page subset of SRI-01 and the ordinary resume/reload
+portion of SK-01. It is based on #56 and remains unmerged.
+
+### Findings that moved
+
+| ID | Was | Now |
+|---|---|---|
+| **PREV-01** | low, open | **WITHDRAWN.** My instrument was unfit for the question; the builder's raw bytes and rendered DOM stand. No defect asserted |
+| **SK-01** | open, diagnosed | **open, with a verified fix awaiting merge.** The repair in #59 is independently confirmed: four zero-movement controls preserved, no input whitelist across three input paths, reload leaves the record byte-identical |
+| **SRI-01** | pre-existing, open | **reader-page subset addressed in #59** — 36 of 36 pins valid, altered scripts refused, no scripture rendered when blocked, learning preserved. **Still open** for the library module graph, the served HTML document itself, and every page on `main`, which has 43 script tags and 0 pins |
+
+### New
+
+| ID | Severity | State |
+|---|---|---|
+| **CI-56-01** | low | PR #56, the build deployed as Preview 4, carries a stale test assertion — the manifest holds 85 assets, the test asserts 81 — which its own CI never ran because the workflows are path-filtered. Established four ways, and the builder reached it independently. Not a scripture or reader defect; the concern is that an unexplained red check is how a real regression gets dismissed later. Addressed in #59's follow-up commit |
+
+### Unchanged
+
+Open for the builder: RB-02, ANG-01, EXP-01, ART-P01, SIG-01's recall half (open
+**by design**), CHAIN-01.
+
+Not closable by review: printed-source collation against a genuinely second
+textual lineage, physical iPhone / iPad / VoiceOver / airplane-mode acceptance,
+and audio rights.
+
+Founder acts: still only the branch-protection rule on `main` and closing the
+housekeeping PRs. Neither urgent.
+
+### My corrections and error count, updated
+
+The six corrections above become seven, with PREV-01's withdrawal the most
+consequential of the session because it reached the founder and concerned the
+build he was about to open. Instrument errors now stand at **twenty-three**, of
+which two in RT-021 were **repeats of errors I had already written down** — a
+crude regex reading a denial as a claim, and measuring the Nitnem landing page.
+Writing an error down has not been sufficient to stop me repeating it, which is
+the honest summary of my own reliability tonight.
