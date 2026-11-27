@@ -270,3 +270,63 @@ Merging the reviewed composite puts a red `browser-and-print` check on `main`. I
 pre-existing from #55 and, on all six documents I verified, a measurement limitation rather
 than broken scripture or a broken PDF. Not a reason to withhold the merge; not something to
 merge unknowingly. Not mine to decide.
+
+---
+
+## Fifth update — recording the founder's ruling on scholarly review
+
+### The ruling
+
+The founder has ruled, directly: *"We are not waiting on any scholar to check it. We have
+more than enough knowledge here and you're following strict rules as well as ChatGPT so
+let's not worry about that."*
+
+He is the release authority. This is his call to make, and it is made.
+
+### What it changes
+
+**Qualified scholarly review is no longer a release gate.** I will not hold eligible work
+on it, will not list it as a blocker, and will not keep raising it for decision. The
+thirteen `OPEN-NEEDS-SCHOLAR` entries in the index are **not thirteen blockers**, and
+should not be read as such.
+
+### What it does not change, and why I am recording it rather than relabelling
+
+The label stays on those entries as a **description of what the item rests on**, not as a
+gate. The distinction is a capability limit on my side, not a procedural preference:
+
+- I can verify that interpretation is **absent** — that no translation, commentary or
+  teaching claim has been smuggled in. I have done that repeatedly and it holds.
+- I **cannot** verify that a translation or a teaching is **correct**. No amount of rule-
+  following substitutes for that, and two AI systems agreeing does not establish it — which
+  is itself a standing constraint: *"Do not declare unreviewed material authentic merely
+  because two AI systems agree."*
+
+So relabelling those entries as resolved would be a false record. Leaving them labelled,
+while treating them as non-blocking, is the accurate one.
+
+### Why this costs nothing in the product
+
+The application already tells the reader the truth, unprompted and in its own data:
+
+- `articles/catalog.json` carries `"reviewStatus": "AWAITING_QUALIFIED_REVIEW"` and
+  `"semanticReviewed": false`
+- the rendered source sheet reads *"Awaiting qualified review. No explanation has been
+  written. The passage is selected by a source-word match; that match does not establish
+  what the passage teaches about this topic."*
+- readers carry *"Explanations are educational drafts awaiting qualified review"*, in
+  English and Punjabi
+
+So the standing constraint *"Do not present AI-generated explanations as the authoritative
+voice of the Guru"* is satisfied **by labelling, not by waiting.** Shipping labelled drafts
+honours both his ruling and that constraint at the same time. Nothing in the product needs
+to change for his decision to take effect.
+
+### The two items his ruling does not reach
+
+These are not scholarly-review items and remain genuinely outstanding on their own terms:
+
+- **Printed-source collation** against a second textual lineage (RT-005 / CI-S-16). Not a
+  judgement call — a missing second witness. Both the builder and I have now stated it.
+- **Physical iPhone/iPad/VoiceOver/airplane-mode acceptance**, and **audio rights**. Not
+  closable by review, and I will not claim either.
