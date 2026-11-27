@@ -1,0 +1,24 @@
+{
+  "schema": "glp.builder.files.v1",
+  "files": [
+    {
+      "path": "tools/publish-daily-test.mjs",
+      "sha256": "5f1b5aee0b1cd6220b9a1cb127e40b12ca6ecdbcddc940027b87cd3e2055a8b6"
+    },
+    {
+      "path": "tests/hukamnama-test-publisher.mjs",
+      "sha256": "31d9806b7c06c7ec70d3d3cc7b62e37d356e087466601a1353bcb41438cd16aa"
+    },
+    {
+      "path": ".github/workflows/hukamnama-test-publish.yml",
+      "sha256": "531288ca9d87ea61ee404b312f2533d85f1c05697b44d53b871ef554db4a0a0e"
+    },
+    {
+      "path": ".github/workflows/hukamnama-foundation-qa.yml",
+      "sha256": "23d4970f2622d8be2762a1693cd2f99e282021641feabdf5dca2cdb3879cfe29"
+    }
+  ],
+  "independentReview": false,
+  "publisherActivated": false,
+  "physicalDeviceTest": false
+}
