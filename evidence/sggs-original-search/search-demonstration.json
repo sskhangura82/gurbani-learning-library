@@ -1,0 +1,266 @@
+{
+  "schema": "glp.original-search-builder-evidence.v1",
+  "recordedAt": "2026-11-27T14:05:02.564Z",
+  "environment": {
+    "node": "v26.0.0",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "scope": "ACTUAL_PINNED_CORPUS_RESEARCH_NO_DEVICE_OR_QUALIFIED_REVIEW",
+  "sourceFiles": 1430,
+  "originalOccurrences": 60555,
+  "repeatedTextDigestGroups": 559,
+  "uniqueOccurrenceIds": 60555,
+  "queries": [
+    {
+      "query": "ਸਾਸਿ ਸਾਸਿ",
+      "mode": "phrase",
+      "querySupported": true,
+      "totalHits": 68,
+      "returnedHits": 3,
+      "truncated": true,
+      "sample": [
+        {
+          "id": "witness-og-e2f4bccabf38d0f0afe4b468509ce929593534defc7b75b479fc06eb5b22295b",
+          "textSha256": "402e87c95cce283b49621385d7bf427e1ee516c8d6be8e93368ce36004d8fd1b",
+          "sourcePath": "corpus/ang-0101.md",
+          "sourceByteStart": 7904,
+          "sourceByteEnd": 8074,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-397332864f64345c781bac47853693d800da13e9ac0671f3af1d07ad24d559fd",
+          "textSha256": "d6b2579675805c6505d9f8a10f24237e457d3d7251ada1ccaf62e3e6da57b92c",
+          "sourcePath": "corpus/ang-0104.md",
+          "sourceByteStart": 3675,
+          "sourceByteEnd": 3752,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-ea0c7305f34bdd4dcd5988778a356a9a1b0b296c33756e1ce590752c4cde1ecb",
+          "textSha256": "db2c35810a4d6fce2a4cf5798b9dc5fe6d2195941e0e413a0cf4154e936022da",
+          "sourcePath": "corpus/ang-0104.md",
+          "sourceByteStart": 7182,
+          "sourceByteEnd": 7246,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "ਸਾਸ ਸਾਸ",
+      "mode": "phrase",
+      "querySupported": true,
+      "totalHits": 4,
+      "returnedHits": 3,
+      "truncated": true,
+      "sample": [
+        {
+          "id": "witness-og-779d239d9657f3380880f7721d6b6c96d1b5aa9ab05c3b7d2db674b9660bdba4",
+          "textSha256": "053de426048de5f3fe4b23ef2ab4111a5ed4381171d1363d07939b51361ffc71",
+          "sourcePath": "corpus/ang-0100.md",
+          "sourceByteStart": 3473,
+          "sourceByteEnd": 3609,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-53fa30a9f75ff3a3f3e898800f06952f49b699bfe7a78bab1f9c18f8ed076f3b",
+          "textSha256": "c730bc49f9cb989c419f04a2933587814a99064635d94264acc1c1ad762cc887",
+          "sourcePath": "corpus/ang-0980.md",
+          "sourceByteStart": 8544,
+          "sourceByteEnd": 8655,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-74b0d398537cb8d8aea4970fdefdc42ad583111fb8d5e7436fff1f4a2a9ab2bb",
+          "textSha256": "d53996a4f93d56e7f598fbcee459007ddfc0525e42b3e80759da48cbeb6c6a58",
+          "sourcePath": "corpus/ang-1179.md",
+          "sourceByteStart": 203,
+          "sourceByteEnd": 325,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "ਹਉਮੈ",
+      "mode": "phrase",
+      "querySupported": true,
+      "totalHits": 621,
+      "returnedHits": 3,
+      "truncated": true,
+      "sample": [
+        {
+          "id": "witness-og-d66f1114fb41777b80d4e706e673dc22d7c3a88af56a4a61ec0947044bd9361c",
+          "textSha256": "135ba3f6a5997077616ce884c747ea2d0decbb679f17e7540cab49d8fdfef665",
+          "sourcePath": "corpus/ang-0001.md",
+          "sourceByteStart": 4027,
+          "sourceByteEnd": 4126,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-fbea9fe5214269f99f39c52c642ad5e4ef2b9acd805ed463f26e093464af37a1",
+          "textSha256": "fab839f0ff5f98b395999110cb490a066cb1c92d4980beda7690a623a39da0a3",
+          "sourcePath": "corpus/ang-0013.md",
+          "sourceByteStart": 5224,
+          "sourceByteEnd": 5349,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-ef56c9ab6f911e272e4505411919d0d9a4e031b6a85c9493eb9d8dd6e2d254b9",
+          "textSha256": "618b06a803da2561f32ff07b6138e4786aac275096f80defd00a405a8cdc9142",
+          "sourcePath": "corpus/ang-0018.md",
+          "sourceByteStart": 1854,
+          "sourceByteEnd": 1936,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "ਸਸਸਗ",
+      "mode": "first-letter",
+      "querySupported": true,
+      "totalHits": 21,
+      "returnedHits": 3,
+      "truncated": true,
+      "sample": [
+        {
+          "id": "witness-og-32a8841276c2aa80d1009a214e2eec11da89cd9f60ce8d273cd347f79fc206cc",
+          "textSha256": "13dcdafd0ace7de0c890bf43ad7597d4f8346519b862e50a401c5c43d2a962f1",
+          "sourcePath": "corpus/ang-0003.md",
+          "sourceByteStart": 361,
+          "sourceByteEnd": 425,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-0ee077129b574c27fae2f33161a0169f8e2c45a90ad79ce6b73fb9233359083a",
+          "textSha256": "28910b7dbf5345ef0ef0e2a9b9b648fcac731e10538b8d46cf4b0f0e3cb04077",
+          "sourcePath": "corpus/ang-0005.md",
+          "sourceByteStart": 2685,
+          "sourceByteEnd": 2785,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-8c573170d760ba738a560b88c3aaf6e35c6399a642cae4e30c51416a10fa1fcd",
+          "textSha256": "ebc16ed63235424a9dfaea0d979379ef90677a3a3384bfb1c72c70bad508fcb5",
+          "sourcePath": "corpus/ang-0017.md",
+          "sourceByteStart": 9618,
+          "sourceByteEnd": 9712,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "ਸ ਸ ਸ ਗ",
+      "mode": "first-letter",
+      "querySupported": true,
+      "totalHits": 21,
+      "returnedHits": 3,
+      "truncated": true,
+      "sample": [
+        {
+          "id": "witness-og-32a8841276c2aa80d1009a214e2eec11da89cd9f60ce8d273cd347f79fc206cc",
+          "textSha256": "13dcdafd0ace7de0c890bf43ad7597d4f8346519b862e50a401c5c43d2a962f1",
+          "sourcePath": "corpus/ang-0003.md",
+          "sourceByteStart": 361,
+          "sourceByteEnd": 425,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-0ee077129b574c27fae2f33161a0169f8e2c45a90ad79ce6b73fb9233359083a",
+          "textSha256": "28910b7dbf5345ef0ef0e2a9b9b648fcac731e10538b8d46cf4b0f0e3cb04077",
+          "sourcePath": "corpus/ang-0005.md",
+          "sourceByteStart": 2685,
+          "sourceByteEnd": 2785,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        },
+        {
+          "id": "witness-og-8c573170d760ba738a560b88c3aaf6e35c6399a642cae4e30c51416a10fa1fcd",
+          "textSha256": "ebc16ed63235424a9dfaea0d979379ef90677a3a3384bfb1c72c70bad508fcb5",
+          "sourcePath": "corpus/ang-0017.md",
+          "sourceByteStart": 9618,
+          "sourceByteEnd": 9712,
+          "discrepancyIds": [],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ",
+      "mode": "phrase",
+      "querySupported": true,
+      "totalHits": 1,
+      "returnedHits": 1,
+      "truncated": false,
+      "sample": [
+        {
+          "id": "witness-og-003aa42b9b8277240a47a856e7972f09e452d86a1eb481cc217c11a642b67af4",
+          "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0",
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceByteStart": 493,
+          "sourceByteEnd": 583,
+          "discrepancyIds": [
+            "og-location-1377-row002"
+          ],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ",
+      "mode": "phrase",
+      "querySupported": true,
+      "totalHits": 1,
+      "returnedHits": 1,
+      "truncated": false,
+      "sample": [
+        {
+          "id": "witness-og-1bb2dcc61b119cae6086f230321ad4357a486179b249fe7b60e4c9359c1607f9",
+          "textSha256": "91d90022bf844f693cb06d761e91db53a45fb1c2009e532803a77e1cccfe970e",
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceByteStart": 7490,
+          "sourceByteEnd": 7536,
+          "discrepancyIds": [
+            "farid-heading-terminal-danda"
+          ],
+          "sourceLocatorStatus": "SOURCE_FILE_LABEL_NOT_INDEPENDENT_ANG_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "query": "NASA",
+      "mode": "phrase",
+      "querySupported": false,
+      "totalHits": 0,
+      "returnedHits": 0,
+      "truncated": false,
+      "sample": []
+    },
+    {
+      "query": "category",
+      "mode": "phrase",
+      "querySupported": false,
+      "totalHits": 0,
+      "returnedHits": 0,
+      "truncated": false,
+      "sample": []
+    }
+  ],
+  "runtimeEligible": false,
+  "publicationReady": false,
+  "independentlyCollatedOccurrences": 0,
+  "completeCompositionsAdmitted": 0,
+  "qualifiedHumanReviewCount": 0
+}

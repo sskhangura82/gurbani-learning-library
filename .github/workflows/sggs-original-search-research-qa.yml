@@ -1,0 +1,47 @@
+name: Original corpus research search checks
+on:
+  pull_request:
+    paths:
+      - 'content-intake/sggs/**'
+      - 'tools/sggs-original-research.mjs'
+      - 'tools/fetch-sggs-research-witnesses.mjs'
+      - 'tools/build-sggs-research-index.mjs'
+      - 'tools/search-sggs-research-index.mjs'
+      - 'knowledge/search.mjs'
+      - 'knowledge/kinds.mjs'
+      - 'tests/sggs-original-research.mjs'
+      - '.github/workflows/sggs-original-search-research-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch exact witnesses outside the repository
+        run: node tools/fetch-sggs-research-witnesses.mjs --output "$RUNNER_TEMP/glp-sggs-witnesses"
+      - name: Reconstruct the original-only research packet
+        run: node tools/build-sggs-research-index.mjs --witness-dir "$RUNNER_TEMP/glp-sggs-witnesses" --output "$RUNNER_TEMP/glp-sggs-index" > "$RUNNER_TEMP/glp-sggs-build-receipt.json"
+      - name: Exercise complete source, refusal and retrieval paths
+        env:
+          GLP_SGGS_WITNESS_DIR: ${{ runner.temp }}/glp-sggs-witnesses
+          GLP_SGGS_INDEX: ${{ runner.temp }}/glp-sggs-index/index.json
+        run: |
+          node --test --test-reporter=tap tests/sggs-original-research.mjs > "$RUNNER_TEMP/glp-sggs-tests.tap"
+          git diff --exit-code
+      - name: Retain receipts and test results only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-corpus-research-results
+          path: |
+            ${{ runner.temp }}/glp-sggs-build-receipt.json
+            ${{ runner.temp }}/glp-sggs-tests.tap
+          if-no-files-found: warn
