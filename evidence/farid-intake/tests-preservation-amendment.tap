@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: Valid research is incomplete, unadmitted and unchanged by validation
+ok 1 - Valid research is incomplete, unadmitted and unchanged by validation
+  ---
+  duration_ms: 4.839709
+  type: 'test'
+  ...
+# Subtest: Runtime promotion is refused
+ok 2 - Runtime promotion is refused
+  ---
+  duration_ms: 1.576416
+  type: 'test'
+  ...
+# Subtest: Public-ready promotion is refused
+ok 3 - Public-ready promotion is refused
+  ---
+  duration_ms: 1.215584
+  type: 'test'
+  ...
+# Subtest: Publication-ready promotion is refused
+ok 4 - Publication-ready promotion is refused
+  ---
+  duration_ms: 1.205459
+  type: 'test'
+  ...
+# Subtest: Invented scholar approval is refused
+ok 5 - Invented scholar approval is refused
+  ---
+  duration_ms: 1.476166
+  type: 'test'
+  ...
+# Subtest: 326 text entries cannot become 326 complete compositions
+ok 6 - 326 text entries cannot become 326 complete compositions
+  ---
+  duration_ms: 1.251041
+  type: 'test'
+  ...
+# Subtest: Whole-page author inheritance is refused
+ok 7 - Whole-page author inheritance is refused
+  ---
+  duration_ms: 1.16375
+  type: 'test'
+  ...
+# Subtest: Signature-word author inheritance is refused
+ok 8 - Signature-word author inheritance is refused
+  ---
+  duration_ms: 1.215375
+  type: 'test'
+  ...
+# Subtest: Shared source Ang1377 cannot disappear from the author inventory
+ok 9 - Shared source Ang1377 cannot disappear from the author inventory
+  ---
+  duration_ms: 1.241583
+  type: 'test'
+  ...
+# Subtest: Forward span cannot claim completeness
+ok 10 - Forward span cannot claim completeness
+  ---
+  duration_ms: 1.28325
+  type: 'test'
+  ...
+# Subtest: Missing terminal2 cannot be hidden
+ok 11 - Missing terminal2 cannot be hidden
+  ---
+  duration_ms: 2.223833
+  type: 'test'
+  ...
+# Subtest: A lost middle occurrence fails even with locally renewed count and hashes
+ok 12 - A lost middle occurrence fails even with locally renewed count and hashes
+  ---
+  duration_ms: 1.645916
+  type: 'test'
+  ...
+# Subtest: Substituting an original line and renewing all local hashes is refused
+ok 13 - Substituting an original line and renewing all local hashes is refused
+  ---
+  duration_ms: 2.090416
+  type: 'test'
+  ...
+# Subtest: Reordering same-sized original lines and renewing local hashes is refused
+ok 14 - Reordering same-sized original lines and renewing local hashes is refused
+  ---
+  duration_ms: 1.905292
+  type: 'test'
+  ...
+# Subtest: Silently reinserting the displaced line to create297 is refused
+ok 15 - Silently reinserting the displaced line to create297 is refused
+  ---
+  duration_ms: 1.819875
+  type: 'test'
+  ...
+# Subtest: Silent relocation from source1377 to printed1378 is refused
+ok 16 - Silent relocation from source1377 to printed1378 is refused
+  ---
+  duration_ms: 1.844542
+  type: 'test'
+  ...
+# Subtest: Canonical author assignment for displaced line is refused
+ok 17 - Canonical author assignment for displaced line is refused
+  ---
+  duration_ms: 1.830125
+  type: 'test'
+  ...
+# Subtest: Automatic inclusion of displaced line is refused
+ok 18 - Automatic inclusion of displaced line is refused
+  ---
+  duration_ms: 2.073625
+  type: 'test'
+  ...
+# Subtest: Quarantine cannot be removed
+ok 19 - Quarantine cannot be removed
+  ---
+  duration_ms: 1.849875
+  type: 'test'
+  ...
+# Subtest: Heading danda cannot be normalized away and resealed
+ok 20 - Heading danda cannot be normalized away and resealed
+  ---
+  duration_ms: 1.859625
+  type: 'test'
+  ...
+# Subtest: Selecting the alternate heading as runtime text is refused
+ok 21 - Selecting the alternate heading as runtime text is refused
+  ---
+  duration_ms: 1.834375
+  type: 'test'
+  ...
+# Subtest: One omitted Mahalla-heading record is refused
+ok 22 - One omitted Mahalla-heading record is refused
+  ---
+  duration_ms: 2.036167
+  type: 'test'
+  ...
+# Subtest: A convenient per-heading author assignment is refused
+ok 23 - A convenient per-heading author assignment is refused
+  ---
+  duration_ms: 1.845375
+  type: 'test'
+  ...
+# Subtest: Canonical Ang assertion is refused
+ok 24 - Canonical Ang assertion is refused
+  ---
+  duration_ms: 1.1435
+  type: 'test'
+  ...
+# Subtest: Modern translation asset insertion is refused
+ok 25 - Modern translation asset insertion is refused
+  ---
+  duration_ms: 1.113959
+  type: 'test'
+  ...
+# Subtest: Audio asset insertion is refused
+ok 26 - Audio asset insertion is refused
+  ---
+  duration_ms: 1.348167
+  type: 'test'
+  ...
+# Subtest: Invented explanatory field is refused by the closed research schema
+ok 27 - Invented explanatory field is refused by the closed research schema
+  ---
+  duration_ms: 1.9375
+  type: 'test'
+  ...
+# Subtest: Inherited evidence cannot be relabelled as newly independently verified
+ok 28 - Inherited evidence cannot be relabelled as newly independently verified
+  ---
+  duration_ms: 1.869584
+  type: 'test'
+  ...
+# Subtest: New source commit is refused
+ok 29 - New source commit is refused
+  ---
+  duration_ms: 1.136625
+  type: 'test'
+  ...
+# Subtest: Raw witness repinning in a manifest is refused
+ok 30 - Raw witness repinning in a manifest is refused
+  ---
+  duration_ms: 1.24375
+  type: 'test'
+  ...
+# Subtest: 1430-file inventory cannot claim1430 authenticated Angs
+ok 31 - 1430-file inventory cannot claim1430 authenticated Angs
+  ---
+  duration_ms: 1.847083
+  type: 'test'
+  ...
+# Subtest: A missing Ang cannot be disguised by a duplicate descriptor
+ok 32 - A missing Ang cannot be disguised by a duplicate descriptor
+  ---
+  duration_ms: 2.122833
+  type: 'test'
+  ...
+# Subtest: A changed Git blob cannot be hidden by renewing descriptor digest
+ok 33 - A changed Git blob cannot be hidden by renewing descriptor digest
+  ---
+  duration_ms: 2.927875
+  type: 'test'
+  ...
+# Subtest: Unknown complete-corpus authentication field is refused
+ok 34 - Unknown complete-corpus authentication field is refused
+  ---
+  duration_ms: 2.387416
+  type: 'test'
+  ...
+# Subtest: Independent contract must remain pinned even if manifest hashes are renewed
+ok 35 - Independent contract must remain pinned even if manifest hashes are renewed
+  ---
+  duration_ms: 0.122125
+  type: 'test'
+  ...
+# Subtest: Changing an existing runtime original is refused
+ok 36 - Changing an existing runtime original is refused
+  ---
+  duration_ms: 0.076666
+  type: 'test'
+  ...
+# Subtest: Missing original witness files refuse reconstruction
+ok 37 - Missing original witness files refuse reconstruction
+  ---
+  duration_ms: 2.056917
+  type: 'test'
+  ...
+# Subtest: All12 pinned files reconstruct the entire observed span and its boundaries
+ok 38 - All12 pinned files reconstruct the entire observed span and its boundaries
+  ---
+  duration_ms: 3.008666
+  type: 'test'
+  ...
+# Subtest: A one-byte raw witness change is refused before extraction
+ok 39 - A one-byte raw witness change is refused before extraction
+  ---
+  duration_ms: 2.054792
+  type: 'test'
+  ...
+# Subtest: Unrelated navigation and global-policy changes do not freeze the quarantined research intake
+ok 40 - Unrelated navigation and global-policy changes do not freeze the quarantined research intake
+  ---
+  duration_ms: 15.769875
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 151.01075

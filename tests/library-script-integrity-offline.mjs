@@ -21,7 +21,8 @@ const additions=[
  './library/app.bundle.mjs','./articles/app.bundle.mjs',
  './knowledge/','./knowledge/index.html','./knowledge/style.css',
  './knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json',
- './hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs'
+ './hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs',
+ './salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json'
 ];
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8',
  '.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8',
@@ -115,7 +116,7 @@ try{
  prior=workerSpec(await read('prior','sw.js'));candidate=workerSpec(await read('candidate','sw.js'));
  report.prior=prior;report.candidate=candidate;
  report.testSha256=sha(await fs.readFile(fileURLToPath(import.meta.url)));
- await check('Candidate inventory preserves the prior release, complete Knowledge graph and Daily reader shell',async()=>{
+ await check('Candidate inventory preserves the prior release, Knowledge/Daily shell and exact Farid source-only additions',async()=>{
   assert.notEqual(candidate.version,prior.version,'A changed release needs a distinct cache version');
   assert.notEqual(candidate.workerSha256,prior.workerSha256);
   assert.equal(Object.keys(prior.expected).length,85,'Frozen prior reference contains the known 85-asset release');

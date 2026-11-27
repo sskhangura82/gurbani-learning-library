@@ -1,0 +1,47 @@
+✔ Valid research is incomplete, unadmitted and unchanged by validation (4.608792ms)
+✔ Runtime promotion is refused (1.487167ms)
+✔ Public-ready promotion is refused (1.205541ms)
+✔ Publication-ready promotion is refused (1.2095ms)
+✔ Invented scholar approval is refused (1.442958ms)
+✔ 326 text entries cannot become 326 complete compositions (1.207667ms)
+✔ Whole-page author inheritance is refused (1.153958ms)
+✔ Signature-word author inheritance is refused (1.204625ms)
+✔ Shared source Ang1377 cannot disappear from the author inventory (1.224584ms)
+✔ Forward span cannot claim completeness (1.281959ms)
+✔ Missing terminal2 cannot be hidden (2.133083ms)
+✔ A lost middle occurrence fails even with locally renewed count and hashes (1.6765ms)
+✔ Substituting an original line and renewing all local hashes is refused (2.123583ms)
+✔ Reordering same-sized original lines and renewing local hashes is refused (1.854333ms)
+✔ Silently reinserting the displaced line to create297 is refused (1.522958ms)
+✔ Silent relocation from source1377 to printed1378 is refused (2.116ms)
+✔ Canonical author assignment for displaced line is refused (1.822292ms)
+✔ Automatic inclusion of displaced line is refused (1.817167ms)
+✔ Quarantine cannot be removed (2.169ms)
+✔ Heading danda cannot be normalized away and resealed (2.01325ms)
+✔ Selecting the alternate heading as runtime text is refused (1.847917ms)
+✔ One omitted Mahalla-heading record is refused (2.040417ms)
+✔ A convenient per-heading author assignment is refused (1.904292ms)
+✔ Canonical Ang assertion is refused (1.1675ms)
+✔ Modern translation asset insertion is refused (1.131375ms)
+✔ Audio asset insertion is refused (1.16375ms)
+✔ Invented explanatory field is refused by the closed research schema (2.003125ms)
+✔ Inherited evidence cannot be relabelled as newly independently verified (1.839416ms)
+✔ New source commit is refused (1.092375ms)
+✔ Raw witness repinning in a manifest is refused (1.0925ms)
+✔ 1430-file inventory cannot claim1430 authenticated Angs (1.969167ms)
+✔ A missing Ang cannot be disguised by a duplicate descriptor (2.514417ms)
+✔ A changed Git blob cannot be hidden by renewing descriptor digest (2.930083ms)
+✔ Unknown complete-corpus authentication field is refused (2.458041ms)
+✔ Independent contract must remain pinned even if manifest hashes are renewed (0.127333ms)
+✔ Changing an existing runtime original is refused (0.081375ms)
+✔ Missing original witness files refuse reconstruction (1.953625ms)
+✔ All12 pinned files reconstruct the entire observed span and its boundaries (3.206042ms)
+✔ A one-byte raw witness change is refused before extraction (2.075959ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 72.358875

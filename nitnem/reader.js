@@ -14,18 +14,20 @@ const NAMES=['jaap','savaiye','chaupai','anand','rehras','sohila'];
 const collectionId=document.documentElement.dataset.readerCollection||'nitnem';
 const salokCollection=collectionId==='salok-mahalla9';
 const kabirCollection=collectionId==='salok-kabir';
-if(!['nitnem','salok-mahalla9','salok-kabir'].includes(collectionId)){
+const faridCollection=collectionId==='salok-farid';
+if(!['nitnem','salok-mahalla9','salok-kabir','salok-farid'].includes(collectionId)){
  document.getElementById('collection-status').textContent='This reading collection is not recognised.';return;
 }
 const SALOK_SOURCE_MANIFEST='abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e';
 const SALOK_TEACHING='e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79';
 const KABIR_SOURCE_MANIFEST='eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d';
 const KABIR_TEACHING='909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9';
-const collectionManifest=salokCollection?SALOK_SOURCE_MANIFEST:kabirCollection?KABIR_SOURCE_MANIFEST:EXPECTED_LIBRARY;
-const collectionTeaching=salokCollection?SALOK_TEACHING:kabirCollection?KABIR_TEACHING:EXPECTED_LEARNING;
-const collectionCommit=(salokCollection||kabirCollection)?'34d2a7cab032c8ea24d21ff20f64653bd03766f4':EXPECTED_SOURCE_COMMIT;
-const collectionRelease=salokCollection?'salok-mahalla9-complete-draft-20261126':kabirCollection?'salok-kabir-complete-draft-20261126':RELEASE;
-const collectionNames=salokCollection?['salok-mahalla9']:kabirCollection?['salok-kabir']:NAMES;
+const FARID_SOURCE_MANIFEST='f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c';
+const collectionManifest=salokCollection?SALOK_SOURCE_MANIFEST:kabirCollection?KABIR_SOURCE_MANIFEST:faridCollection?FARID_SOURCE_MANIFEST:EXPECTED_LIBRARY;
+const collectionTeaching=salokCollection?SALOK_TEACHING:kabirCollection?KABIR_TEACHING:faridCollection?null:EXPECTED_LEARNING;
+const collectionCommit=(salokCollection||kabirCollection||faridCollection)?'34d2a7cab032c8ea24d21ff20f64653bd03766f4':EXPECTED_SOURCE_COMMIT;
+const collectionRelease=salokCollection?'salok-mahalla9-complete-draft-20261126':kabirCollection?'salok-kabir-complete-draft-20261126':faridCollection?'salok-farid-source-only-20261127':RELEASE;
+const collectionNames=salokCollection?['salok-mahalla9']:kabirCollection?['salok-kabir']:faridCollection?['salok-farid']:NAMES;
 const $=id=>document.getElementById(id),C=window.GLPContinuousCore,L=window.GLP_NitnemLearning;
 const codec=new TextDecoder('utf-8',{fatal:true});
 const state={library:null,pack:null,model:null,units:[],bani:null,unit:0,index:0,token:0,playing:false,timeout:0,mode:'read',
@@ -116,9 +118,23 @@ async function verifyPack(x,entry,name){
     'sourceDisplayOrder' in u||u.sourceDigest!==await digest([...u.metricalHeadings,...u.lines].map(l=>l.id+'\t'+l.sha256).join('\n')))throw Error('Kabir identity or whole-passage binding changed');
   }
  }
+ if(name==='salok-farid'){
+  const original=[...x.preface,...x.units.flatMap(u=>[...u.metricalHeadings,...u.lines])];
+  if(x.unitCount!==130||x.originalLineCount!==284||original.length!==297||x.sourceOccurrenceCount!==297||
+   new Set(original.map(l=>l.id)).size!==297||x.releaseChannel!=='DEVELOPMENT_REVIEW'||x.translationApproved!==false||
+   await digest(original.map(l=>l.text).join('\n'))!=='1f76efa45d938db1623bc1f88ab3b3367305be19d59051ee2dab45e57ac8e60e')throw Error('Farid source sequence or review status changed');
+  if(await digest(JSON.stringify([x.preface,x.units,x.sourceAudit]))!=='79088bc12a6ec32ad4cb7f1be502500ca7c259f5947fb21bc70f82a1f4153449')throw Error('Farid source structure, attribution or selection record changed');
+  for(const [index,u]of x.units.entries()){
+   const id='sggs.salok-farid.salok'+String(index+1).padStart(3,'0');
+   if(u.id!==id||u.ordinal!==index+1||u.authorId!==null||u.lines.some((l,i)=>l.id!==id+'.line'+String(i+1).padStart(2,'0'))||
+    'sourceDisplayOrder' in u||u.sourceDigest!==await digest([...u.metricalHeadings,...u.lines].map(l=>l.id+'\t'+l.sha256).join('\n')))throw Error('Farid complete-passage binding changed');
+  }
+ }
  return x;
 }
 async function teachingCourse(pack){
+ if(pack.compositionId==='salok-farid')return null; // This source-only edition has no explanation asset.
+
  if(!coursePromise)coursePromise=jsonBytes('learning/course.complete.json',collectionTeaching).catch(error=>{coursePromise=null;throw error;});
  const course=await coursePromise;
  if(course?.meta?.schema!=='GLP-NITNEM-TEACHING-DRAFT-V2'||course.meta.releaseId!==collectionRelease||
@@ -206,9 +222,11 @@ function toggleMode(mode,persist=true){
   :mode==='study'
    ?'Study the passage, explore its words and context, and reflect on its teaching. Explanations are educational drafts.'
    :'';
+ if(faridCollection&&mode!=='read')pane.textContent='No explanation or passage study has been supplied for this collection yet. The original Gurbani remains available.';
  if(mode==='study'&&state.playing)pause();
  if(state.sourceVerified){
-  L.overview($('learning-overview'),state.learning,state.bani,mode);
+  if(faridCollection){$('learning-overview').replaceChildren();$('learning-overview').hidden=true;}
+  else L.overview($('learning-overview'),state.learning,state.bani,mode);
   renderUnit();scrollToCurrent(false);
  }
  if(persist)save({preferences:{mode}});
@@ -341,7 +359,7 @@ function passage(index){
   for(const line of u.lines)section.append(createLine(line));
  }
  if(state.mode!=='read'){
-  const authored=L.unitLesson(state.learning,state.bani,u,state.mode,state.view);
+  const authored=faridCollection?null:L.unitLesson(state.learning,state.bani,u,state.mode,state.view);
   if(authored)section.append(authored);
   if(state.mode==='study'&&state.view==='passage')section.append(detail(u.lines[0]));
  }
@@ -510,7 +528,7 @@ async function chooseBani(name,{savedEntry=false}={}){
   loadSaved(pack);
   $('collection').hidden=true;$('reader').hidden=false;$('dock').hidden=false;$('library-back').hidden=false;
   $('bani-title-en').textContent=pack.title;$('bani-title-pa').textContent=pack.titleGurmukhi;
-  $('bani-subtitle').textContent=pack.unitCount+((salokCollection||kabirCollection)?' Saloks':' passages')+' · Read, Meaning and Study';
+  $('bani-subtitle').textContent=pack.unitCount+((salokCollection||kabirCollection||faridCollection)?' Saloks':' passages')+(faridCollection?' · Original Gurmukhi · explanations pending':' · Read, Meaning and Study');
   $('bani-variant').textContent=pack.reference+' · '+(kabirCollection?'Original headings retained. Documented source differences; qualified collation pending.':pack.caveat)+(['savaiye','chaupai'].includes(name)?' The Gurmukhi text is awaiting comparison with a named printed edition.':name==='rehras'?' The Chaupai, Swaiya and Dohra sections are awaiting comparison with a named printed edition.':'');
   const url=new URL(location.href),requested=!savedEntry&&url.searchParams.get('bani')===name?url.searchParams.get('unit'):null;
   const fromURL=requested===null?null:Number(requested);
@@ -519,7 +537,7 @@ async function chooseBani(name,{savedEntry=false}={}){
   if(selected!==null&&selected!==state.unit)goUnit(selected);
   else if(state.index>0)scrollToCurrent(false);
   else{programmaticUntil=performance.now()+1100;$('reader').scrollIntoView({behavior:'instant',block:'start'});}
-  status(state.learning?L.coverageText(state.learning,name):'Meanings could not load. Gurbani remains readable. '+state.learningError);
+  status(faridCollection?'Original Gurmukhi · documented source selection. Explanations are not yet supplied.':state.learning?L.coverageText(state.learning,name):'Meanings could not load. Gurbani remains readable. '+state.learningError);
   const query=new URL(location.href);query.searchParams.set('bani',name);query.searchParams.set('unit',String(state.unit+1));
   history.replaceState({bani:name},'',query.pathname+query.search);return pack;
  }catch(e){
@@ -827,7 +845,7 @@ window.NITNEM_INTERNAL_QA=Object.freeze({
   unitCount:state.units.length,lineCount:state.model?.lines.length||0,unit:state.unit,
   index:state.index,token:state.token,playing:state.playing,mode:state.mode,pace:state.pace,
   notes:Object.keys(state.notes).length,bookmarks:state.bookmarks.length,view:state.view,
-  sourceApproved:false,translationApproved:false,releaseAuthorized:!(salokCollection||kabirCollection),savingBlocked:state.savingBlocked,
+  sourceApproved:false,translationApproved:false,releaseAuthorized:!(salokCollection||kabirCollection||faridCollection),savingBlocked:state.savingBlocked,
   teachingAvailable:!!state.learning,
   authoredLessons:state.learning?.coverage?.byBani?.[state.bani]?.draftLessons||0,
   sourceUnitCount:state.pack?.unitCount||0,
