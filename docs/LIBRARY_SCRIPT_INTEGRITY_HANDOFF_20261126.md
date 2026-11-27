@@ -28,7 +28,7 @@ The offline release adds the generated bundles and complete Knowledge surface. T
 
 ## Exclusions and unresolved items
 
-This protects subresources under trusted HTML. It does not authenticate rewritten HTML, a replacement worker, hosting accounts, a build dependency supply chain, or arbitrary hostile JavaScript. PR50's separate Explorer and EXP-01 are outside this combined tree. No physical-device, Safari, VoiceOver, universal update-failure, storage-exhaustion, qualified Gurbani, rights or print-copy acceptance is implied.
+This protects subresources under trusted HTML. It does not authenticate rewritten HTML, a replacement worker, hosting accounts, a build dependency supply chain, or arbitrary hostile JavaScript. PR41's separate Explorer and EXP-01 are outside this combined tree. No physical-device, Safari, VoiceOver, universal update-failure, storage-exhaustion, qualified Gurbani, rights or print-copy acceptance is implied.
 
 RB-02, ANG-01, EXP-01, ART-P01 and SIG-01's recall limitation retain their existing scope. PREV-01 is withdrawn and receives no patch. No source wording, teaching text, explanation, interpretation, source contract or private learning schema is changed.
 
@@ -59,3 +59,7 @@ node tools/build-offline.mjs
 ```
 
 The first two tools check by default. Their write options do not override frozen source hashes or expand permitted dependency graphs. The existing offline generator writes a reproducible manifest; verify the resulting worker diff. Synthetic in-memory overrides are available only through the build API for deliberate tests and are marked as fixtures in their returned graph; the production CLI accepts no override option.
+
+## Reference correction — added 26 November 2026
+
+The separate Explorer carrying EXP-01 is PR41 (`dc66da9f1e41e51408e47b7321ab5a414c44012b`), with `explore/app.js`. PR50 (`3af5ba739cd8bf5ab2d358d12704ad9e48452b1e`) is the Kabir source-intake work. Earlier builder references calling PR50 the Explorer were mistaken. The excluded artifact and technical scope are unchanged. This was checked against both pull requests on the server; it does not revise the frozen source baseline or imply either finding is closed.

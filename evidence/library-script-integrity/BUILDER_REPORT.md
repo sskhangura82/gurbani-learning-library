@@ -49,6 +49,10 @@ Newly copied old print/visual verdicts were removed from this run's evidence; it
 
 ## Limits and release state
 
-Trusted HTML remains the root of the SRI claim. Worker authenticity, rewritten HTML, hosting-account compromise, arbitrary malicious JavaScript, all possible storage/update failures and build-tool supply-chain compromise are not closed by this patch. PR50 Explorer is not in this candidate. The missing qualified reviewers, physical-device acceptance, source collation and rights decisions remain. No scripture, teaching, private learning schema or original module was altered.
+Trusted HTML remains the root of the SRI claim. Worker authenticity, rewritten HTML, hosting-account compromise, arbitrary malicious JavaScript, all possible storage/update failures and build-tool supply-chain compromise are not closed by this patch. PR41 Explorer is not in this candidate. The missing qualified reviewers, physical-device acceptance, source collation and rights decisions remain. No scripture, teaching, private learning schema or original module was altered.
 
 Nothing in these results authorizes merging or staging. Source main and QA main remain unchanged. Independent review follows fresh frozen criteria, then the founder decides.
+
+## Reference correction — added 26 November 2026
+
+The separate Explorer carrying EXP-01 is PR41 (`dc66da9f1e41e51408e47b7321ab5a414c44012b`), with `explore/app.js`. PR50 (`3af5ba739cd8bf5ab2d358d12704ad9e48452b1e`) is the Kabir source-intake work. Earlier builder references calling PR50 the Explorer were mistaken. The excluded artifact and technical scope are unchanged. This was checked against both pull requests on the server; it does not revise the frozen source baseline or imply either finding is closed.

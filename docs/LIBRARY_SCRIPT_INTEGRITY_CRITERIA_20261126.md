@@ -26,3 +26,7 @@ Protect all production script occurrences in this combined candidate, including 
 ## Pre-existing findings kept separate
 
 RB-02 split-fragment editorial residual; ANG-01 adjacent digital-source qualifier; EXP-01 separate Explorer cue verification; ART-P01 PDF copy fidelity; SIG-01 recall limitation; source collation, qualified review and physical phone checks. PREV-01 is withdrawn. This candidate must not claim these are repaired merely because scripts are pinned.
+
+## Reference correction — added 26 November 2026
+
+The separate Explorer carrying EXP-01 is PR41 (`dc66da9f1e41e51408e47b7321ab5a414c44012b`), with `explore/app.js`. PR50 (`3af5ba739cd8bf5ab2d358d12704ad9e48452b1e`) is the Kabir source-intake work. Earlier builder references calling PR50 the Explorer were mistaken. The excluded artifact and technical scope are unchanged. This was checked against both pull requests on the server; it does not revise the frozen source baseline or imply either finding is closed.
