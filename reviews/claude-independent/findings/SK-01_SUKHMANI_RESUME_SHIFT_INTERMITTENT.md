@@ -74,3 +74,41 @@ Also outstanding and unrelated to this: the Sukhmani reader has **no subresource
 integrity** on its scripts, same as `nitnem/index.html` — see SRI-01.
 
 **No approval. No merge. No application code touched.**
+
+
+---
+
+## Correction, same evening — the rate is 1 in 60, not 1 in 16
+
+I published 1-in-16 after sixteen runs. Continuing to push review documents kept
+the experiment running on byte-identical application code, and the count is now:
+
+| | |
+|---|---|
+| Runs of `verify-sukhmani-browser` | **61** |
+| Passed | **60** |
+| Failed | **1** |
+| Non-review files differing between those commits | **0** |
+
+**So the failure rate is roughly 1 in 60, not 1 in 16.** The single failure is
+unchanged; the denominator grew.
+
+This cuts two ways and both matter:
+
+- **Harder to reproduce deliberately.** Anyone trying to catch this race will need
+  roughly sixty runs per expected failure, not sixteen. A fix attempt that passes
+  twenty runs has demonstrated very little.
+- **More likely to be dismissed.** A 1-in-60 failure looks far more like
+  infrastructure noise than a 1-in-16 one does. The earlier number made the case
+  for investigating; this number makes the case for *recording the rate* so that
+  when it next appears, nobody has to re-derive whether it matters.
+
+The defect itself is unchanged: a real reader occasionally resumes Sukhmani Sahib
+one line past where they stopped, and it is a race in the reload-and-resume path
+rather than a fixed off-by-one.
+
+Correcting it here because I published the worse-looking figure, and a rate stated
+once tends to get quoted. The measurement was accidental both times — sixty-one
+pushes for unrelated reasons — which is worth noting as method: if a flake rate is
+wanted deliberately, run the same commit N times and count, rather than inferring
+from however many pushes happened to occur.
