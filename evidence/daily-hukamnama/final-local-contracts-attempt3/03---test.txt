@@ -1,0 +1,124 @@
+TAP version 13
+# PASS signed event, full cross-page source, repeated-line occurrence identities freeze
+# PASS payload signature is checked before malformed payload JSON is parsed
+# PASS unsigned, wrong-key, noncanonical base64 and wrong-length signature refuse
+# PASS wrong date, official date, venue, public approval and arbitrary source paths refuse even signed
+# PASS invalid and future dates do not make a request
+# PASS raw source mutation, truncation and source-resealed missing continuation refuse
+# PASS resealed per-line text, occurrence ID, ordering and witness changes refuse
+# PASS fresh success requests same-origin exact paths and caches one complete public pair
+# PASS offline re-verifies exact saved pair and never substitutes for another date
+# PASS tampered network response does not hide behind an older saved record
+# PASS incomplete or corrupted saved pair refuses without deleting the record
+# PASS redirect responses refuse and no off-origin fetch is attempted
+# PASS cache quota failure keeps complete online original visible
+# PASS aborted and midnight-rollover requests expose no late source
+# PASS pending layers never hide original and no unscheduled lesson is admitted
+# PASS signed exact lesson admits only matching layer/language/source/review/rights/resolved claims
+# PASS oversized unlabelled network stream is cancelled at the byte limit
+# PASS older authenticated revision and conflicting same revision preserve saved newer pair
+# PASS comparison kinds, external metadata and absent display/print/offline rights are refused
+# PASS every declared lesson is checked before a complete pair can enter public cache
+# PASS unknown fields cannot enter a signed event or immutable source cache
+# PASS duplicate JSON keys cannot hide content inside signed payload bytes
+# Delivery synthetic checks: 22 passed; 0 failed.
+# Subtest: tests/hukamnama-delivery.mjs
+ok 1 - tests/hukamnama-delivery.mjs
+  ---
+  duration_ms: 75.014833
+  type: 'test'
+  ...
+# PASS ordinary JSON whitespace, key order, arrays, numbers and primitives retain native meaning
+# PASS string escapes and quoted delimiters are not scanned as structures
+# PASS nested objects may reuse keys only in distinct objects
+# PASS duplicates at root, nested objects and array objects are rejected
+# PASS escaped-equivalent keys are duplicates regardless of spelling order
+# PASS Unicode canonical equivalence is not silently imposed on distinct keys
+# PASS a discarded duplicate value cannot hide protected content
+# PASS prototype-like keys remain ordinary own data properties
+# PASS malformed objects, arrays, literals and numbers are rejected
+# PASS malformed string escapes and unterminated strings are rejected
+# PASS raw control characters inside strings are rejected
+# PASS trailing text, comments, extra values and non-JSON whitespace are rejected
+# PASS forty nested containers are allowed and forty-one are refused
+# PASS large strings containing braces do not increase structural depth
+# PASS text bound supports a large cached pair and refuses larger input before parsing
+# PASS non-string input is never implicitly converted
+# Strict JSON checks: 16 passed; 0 failed.
+# Subtest: tests/hukamnama-json.mjs
+ok 2 - tests/hukamnama-json.mjs
+  ---
+  duration_ms: 38.554542
+  type: 'test'
+  ...
+# PASS empty store is read without writing and immutable snapshots cannot mutate it
+# PASS source-bound question and Unicode reflection round-trip without trimming or normalization
+# PASS same-revision edit updates only intended record and keeps creation identity
+# PASS two tabs reread inside exclusive lock and preserve conflicting edits
+# PASS concurrent new notes both survive and one key is written per transaction
+# PASS existing historical note remains editable under its unavailable source binding
+# PASS note cannot be silently rebound onto a different date, source, or line
+# PASS malformed and unknown existing stores are preserved on save/import/export
+# PASS malformed, wrong-version, duplicate-id and oversized imports change nothing
+# PASS merge retains old notes and conflicting imported copies, repeated exact import is a no-op
+# PASS quota errors preserve previous note bytes for both save and full restore
+# PASS record and total-size limits refuse whole transaction without shortening text
+# PASS missing Web Locks refuses writes/import while read and export remain available
+# PASS exact line identity round-trips and duplicate/wrong identities are rejected
+# Private learning synthetic checks: 14 passed; 0 failed.
+# Subtest: tests/hukamnama-learning.mjs
+ok 3 - tests/hukamnama-learning.mjs
+  ---
+  duration_ms: 34.145667
+  type: 'test'
+  ...
+# PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+# PASS receipt and payload carry the same canonical UTC retrieval timestamp
+# PASS raw receipt tampering cannot reuse the old receipt digest
+# PASS rehashed receipt with changed full original cannot reuse the selected source
+# PASS rehashed truncated source cannot omit the continuation ending
+# PASS wrong private key cannot seal against the selected public key
+# PASS a signed event cannot verify against a different public key
+# PASS non-null unreviewed explanation is refused before sealing
+# PASS protected commentary field is excluded even from a rehashed original receipt
+# PASS rehashed receipt starting Ang must agree with the full verified source span
+# PASS rehashed receipt displayed time must agree with the dated event
+# PASS duplicate payload field cannot hide a discarded value before sealing
+# PASS escaped-equivalent duplicate original field cannot hide in rehashed source bytes
+# PASS nested duplicate original field cannot hide in a rehashed receipt
+# PASS reader rejects duplicate envelope fields even when the remaining payload signature is valid
+# PASS reader rejects duplicate decoded payload fields even with a valid ephemeral signature
+# Signing checks: 16 passed; 0 failed. Keys existed only in memory.
+# Subtest: tests/hukamnama-signing.mjs
+ok 4 - tests/hukamnama-signing.mjs
+  ---
+  duration_ms: 49.163
+  type: 'test'
+  ...
+# PASS unchanged original-only 27 November capture passes the parsed-stage contract
+# PASS unknown content fields refuse at every event/source/receipt nesting boundary
+# PASS contradictory observation date refuses even when the top-level date stays valid
+# PASS every captured original field must agree across observations
+# PASS receipt official Ang, Ang footer, publication time and source span agree
+# PASS observation sources, methods, clocks and complete required observation set are checked
+# PASS archive-only schema preserves absent provider time without inventing one
+# PASS receipt and source witness provenance/counts/boundary text cannot disagree
+# PASS source identity, complete sequence, occurrence digest and page provenance remain pinned
+# PASS all required original-text rights/provenance notice pins and limitations are retained
+# PASS stage publisher refuses explanations and any release-approval promotion
+# Stage contract checks: 11 passed; 0 failed. No provider requests or output publication.
+# Subtest: tests/hukamnama-stage-contract.mjs
+ok 5 - tests/hukamnama-stage-contract.mjs
+  ---
+  duration_ms: 32.577375
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 78.55225

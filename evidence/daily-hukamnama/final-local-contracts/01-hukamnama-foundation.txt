@@ -1,0 +1,283 @@
+PASS Independent Node hash equals pinned fixture and browser-style digest accepts exact bytes
+PASS Exact heading, first verse, Rahao and terminal boundary, with four rows on Ang 504 and fifteen on Ang 505
+PASS Eight numbered stanzas with the Rahao between 1 and 2
+PASS Amritsar midnight rollover at 18:30 UTC, independent of browser locale
+PASS Date syntax, leap years, and impossible dates
+PASS Two actual dated selections reference exactly one canonical Shabad object
+PASS Legacy archive encoding discrepancy holds without displaying substituted scripture
+PASS After midnight, a missing new reading stays pending; yesterday is not relabelled
+PASS Unknown past date, invalid date and future date never yield a Shabad
+PASS A same-date development fixture still cannot be promoted to today's approved reading
+PASS Tampered source bytes are rejected before parsing
+PASS Missing Rahao, reordered source, changed Ang, bad event binding, duplicate date, permission promotion and live-adapter promotion are rejected
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Simple · pending/. Input:
+
+'<!doctype html>\n' +
+  '<html lang="en">\n' +
+  '<head>\n' +
+  '  <meta charset="utf-8">\n' +
+  '  <meta name="viewport" content="width=device-width,initial-scale=1">\n' +
+  '  <meta name="robots" content="noindex,nofollow">\n' +
+  '  <meta name="color-scheme" content="light dark">\n' +
+  `  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">\n` +
+  '  <title>Daily Hukamnama · Gurbani Learning Library</title>\n' +
+  '  <link rel="stylesheet" href="style.css">\n' +
+  '</head>\n' +
+  '<body>\n' +
+  '<a class="skip" href="#main">Skip to reading</a>\n' +
+  '<header class="site-header">\n' +
+  '  <a href="../index.html">← Gurbani Learning Library</a>\n' +
+  '  <span class="preview-label">DEVELOPMENT PREVIEW · NOT RELEASED</span>\n' +
+  '</header>\n' +
+  '<main id="main">\n' +
+  '  <section class="intro" aria-labelledby="page-title">\n' +
+  '    <p lang="pa" class="symbol">ੴ</p>\n' +
+  '    <p class="eyebrow">READ · UNDERSTAND · REFLECT</p>\n' +
+  '    <h1 id="page-title">Daily Hukamnama</h1>\n' +
+  '    <p lang="pa" class="punjabi-title">ਰੋਜ਼ਾਨਾ ਹੁਕਮਨਾਮਾ</p>\n' +
+  '    <p>Sri Harmandir Sahib, Sri Amritsar</p>\n' +
+  '  </section>\n' +
+  '\n' +
+  '  <aside class="official-card" aria-labelledby="official-title">\n' +
+  '    <div><h2 id="official-title">The official publication</h2>\n' +
+  '      <p>SGPC publishes the Hukamnama and its own explanation on the official site. This link works independently of our reader.</p>\n' +
+  '    </div>\n' +
+  '    <a id="official-link" class="button-link" href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">Open official SGPC site ↗</a>\n' +
+  '  </aside>\n' +
+  '  <p class="candidate-note">This isolated preview checks the complete original text against a digital reference. Independent and qualified review remain separate. Daily automatic publication is not yet enabled.</p>\n' +
+  '  <noscript><p class="notice">JavaScript is needed for this reader. You can still open the official SGPC site using the link above.</p></noscript>\n' +
+  '\n' +
+  '  <section class="controls no-print" aria-labelledby="date-title">\n' +
+  '    <div class="section-heading"><h2 id="date-title">Choose your reading</h2><p id="clock">Dates follow Amritsar, India.</p></div>\n' +
+  '    <label for="date">Amritsar calendar date</label>\n' +
+  '    <div class="dates">\n' +
+  '      <input type="date" id="date" aria-describedby="date-help">\n' +
+  '      <button id="open" type="button" disabled>Open date</button>\n' +
+  '      <button id="today" type="button" class="secondary" disabled>Today in Amritsar</button>\n' +
+  '    </div>\n' +
+  '    <p id="date-help" class="small">Only a verified selection for the exact date can appear. An unavailable date stays unavailable.</p>\n' +
+  '    <p id="rollover" class="notice" hidden></p>\n' +
+  '  </section>\n' +
+  '\n' +
+  '  <p id="status" role="status" aria-live="polite">Opening the dated reading… If it cannot open, use the official SGPC link above.</p>\n' +
+  '  <nav class="destinations no-print" aria-label="Reading and learning">\n' +
+  '    <a href="#original" data-panel="original" aria-current="page">Original</a>\n' +
+  '    <a href="#simple" data-panel="simple">Simple explanation</a>\n' +
+  '    <a href="#detailed" data-panel="detailed">Detailed explanation</a>\n' +
+  '    <a href="#learning" data-panel="learning">Learning</a>\n' +
+  '  </nav>\n' +
+  '\n' +
+  '  <section id="original-panel" class="panel" aria-labelledby="original-title">\n' +
+  '    <h2 id="original-title">Original Gurbani</h2>\n' +
+  '    <div id="reading-empty" class="empty-state"><p>The complete dated reading will appear here after its source checks succeed.</p><p>You can always read the publication on <a href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">SGPC’s official site ↗</a>.</p></div>\n' +
+  '    <div id="reading" hidden>\n' +
+  '      <div class="read-head"><h3 id="reading-title"></h3><p id="meta"></p><p id="checked"></p>\n' +
+  '        <div class="font-tools no-print"><label for="font-size">Gurmukhi text size</label><input type="range" id="font-size" min="24" max="52" step="2" value="32"><output id="font-value" for="font-size">32 px</output><button id="print" class="secondary" type="button">Print original</button></div>\n' +
+  '      </div>\n' +
+  '      <article id="scripture" lang="pa" aria-label="Complete original dated reading"></article>\n' +
+  '      <p class="source-caption">The original is shown as one complete selection, with Rahao and closing lines retained. Explanations are reviewed separately.</p>\n' +
+  '      <details id="sources" class="source-details"><summary>Source and checking details</summary><div id="source-details"></div></details>\n' +
+  '    </div>\n' +
+  '  </section>\n' +
+  '\n' +
+  '  <section id="simple-panel" class="panel explanation-panel" aria-labelledby="simple-title" hidden>\n' +
+  '    <p class="eyebrow">UNDERSTAND</p><h2 id="simple-title">Simple explanation</h2>\n' +
+  '    <p class="layer-intro">A short, source-linked explanation of this exact reading.</p>\n' +
+  '    <div id="simple-content" class="lesson-content"></div>\n' +
+  '    <div id="simple-pending" class="empty-state"><span class="state-label">AWAITING QUALIFIED REVIEW</span><p>A reviewed simple explanation is not available for this selection. This space stays empty until it is ready.</p></div>\n' +
+  '    <p class="external-explanation"><a href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">Read SGPC’s own explanation on its official site ↗</a><br><span class="small">External publisher’s explanation. Check the date there; its current publication may differ from the date selected here.</span></p>\n' +
+  '    <a href="#original" data-panel="original">Return to the complete original</a>\n' +
+  '  </section>\n' +
+  '\n' +
+  '  <section id="detailed-panel" class="panel explanation-panel" aria-labelledby="detailed-title" hidden>\n' +
+  '    <p class="eyebrow">STUDY</p><h2 id="detailed-title">Detailed explanation</h2>\n' +
+  '    <p class="layer-intro">A fuller explanation, with references and a named qualified reviewer.</p>\n' +
+  '    <div id="detailed-content" class="lesson-content"></div>\n' +
+  '    <div id="detailed-pending" class="empty-state"><span class="state-label">AWAITING QUALIFIED REVIEW</span><p>A reviewed detailed explanation is not available for this selection. No explanation from another date or source is substituted.</p></div>\n' +
+  '    <p class="external-explanation"><a href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">Read SGPC’s own explanation on its official site ↗</a><br><span class="small">External publisher’s explanation. Check its date before using it with the reading selected here.</span></p>\n' +
+  '    <a href="#original" data-panel="original">Return to the complete original</a>\n' +
+  '  </section>\n' +
+  '\n' +
+  '  <section id="learning-panel" class="panel private-learning" aria-labelledby="learning-title" hidden>\n' +
+  '    <p class="eyebrow">READ · NOTICE · ASK</p><h2 id="learning-title">Learning</h2>\n' +
+  '    <div id="learning-content" class="lesson-content"></div>\n' +
+  '    <div id="learning-pending" class="empty-state compact"><span class="state-label">SOURCE-LINKED LESSON AWAITING QUALIFIED REVIEW</span><p>The tools below help you keep your own questions. They do not explain what the Gurbani means.</p></div>\n' +
+  '    <ol class="reading-prompts">\n' +
+  '      <li>Read the complete original, including Rahao and the closing lines.</li>\n' +
+  '      <li>Choose a line you want to understand more fully.</li>\n' +
+  '      <li>Write your question for a knowledgeable reader, and keep your own reflection separately.</li>\n' +
+  '    </ol>\n' +
+  '\n' +
+  '    <section class="note-editor" aria-labelledby="note-title">\n' +
+  '      <div class="section-heading"><h3 id="note-title">Your private question and reflection</h3><a id="saved-link" href="?learning=saved#learning">Saved Daily notes</a></div>\n' +
+  '      <p class="small">Saved only in this browser on this device. Daily Hukamnama has its own backup; other readers’ backups do not include these notes.</p>\n' +
+  '      <p id="editor-source" class="notice">Open a verified dated reading to start a new note, or open a saved note below.</p>\n' +
+  '      <label for="line-choice">Attach to the complete reading or one exact line</label>\n' +
+  '      <select id="line-choice" disabled><option value="">Complete reading</option></select>\n' +
+  '      <blockquote id="selected-line" lang="pa" hidden></blockquote>\n' +
+  '      <form id="note-form">\n' +
+  '        <label for="question">My question</label>\n' +
+  '        <p id="question-help" class="small">For example: Which word or line would I like help understanding?</p>\n' +
+  '        <textarea id="question" rows="3" aria-describedby="question-help" disabled></textarea>\n' +
+  '        <label for="reflection">My reflection</label>\n' +
+  '        <p id="reflection-help" class="small">Your own thoughts, kept apart from the original and from reviewed explanations.</p>\n' +
+  '        <textarea id="reflection" rows="5" aria-describedby="reflection-help" disabled></textarea>\n' +
+  '        <div class="editor-actions"><button id="save-note" type="submit" disabled>Save on this device</button><button id="new-note" type="button" class="secondary" disabled>New note</button><button id="export-draft" type="button" class="secondary" disabled>Download unsaved text</button></div>\n' +
+  '      </form>\n' +
+  '      <p id="note-status" role="status" aria-live="polite">No note has been saved by opening this page.</p>\n' +
+  '      <p class="small">Printing the original does not print your private notes.</p>\n' +
+  '    </section>\n' +
+  '\n' +
+  '    <section id="saved-notes" class="saved-notes" aria-labelledby="saved-title">\n' +
+  '      <h3 id="saved-title">Saved Daily Hukamnama notes</h3>\n' +
+  '      <p id="saved-status" role="status" aria-live="polite"></p>\n' +
+  '      <ul id="saved-list"></ul>\n' +
+  '      <div class="backup-actions"><button id="export-learning" type="button" class="secondary">Export Daily backup</button><button id="import-learning" type="button" class="secondary">Import Daily backup</button><input id="import-file" type="file" accept=".json,application/json" hidden></div>\n' +
+  '      <p class="small">The backup contains saved Daily questions and reflections. Download unsaved text separately if a save has not succeeded. Import merges records; it does not replace other readers’ learning.</p>\n' +
+  '      <p id="backup-status" role="status" aria-live="polite"></p>\n' +
+  '    </section>\n' +
+  '  </section>\n' +
+  '</main>\n' +
+  '<footer>No account, tracking or automatic sharing. Original readings may be fetched from this site; your questions and reflections stay on this de'... 251 more characters
+
+    at file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-foundation.mjs:22:333
+    at test (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-foundation.mjs:7:34)
+    at file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-foundation.mjs:22:7 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '<!doctype html>\n' +
+    '<html lang="en">\n' +
+    '<head>\n' +
+    '  <meta charset="utf-8">\n' +
+    '  <meta name="viewport" content="width=device-width,initial-scale=1">\n' +
+    '  <meta name="robots" content="noindex,nofollow">\n' +
+    '  <meta name="color-scheme" content="light dark">\n' +
+    `  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">\n` +
+    '  <title>Daily Hukamnama · Gurbani Learning Library</title>\n' +
+    '  <link rel="stylesheet" href="style.css">\n' +
+    '</head>\n' +
+    '<body>\n' +
+    '<a class="skip" href="#main">Skip to reading</a>\n' +
+    '<header class="site-header">\n' +
+    '  <a href="../index.html">← Gurbani Learning Library</a>\n' +
+    '  <span class="preview-label">DEVELOPMENT PREVIEW · NOT RELEASED</span>\n' +
+    '</header>\n' +
+    '<main id="main">\n' +
+    '  <section class="intro" aria-labelledby="page-title">\n' +
+    '    <p lang="pa" class="symbol">ੴ</p>\n' +
+    '    <p class="eyebrow">READ · UNDERSTAND · REFLECT</p>\n' +
+    '    <h1 id="page-title">Daily Hukamnama</h1>\n' +
+    '    <p lang="pa" class="punjabi-title">ਰੋਜ਼ਾਨਾ ਹੁਕਮਨਾਮਾ</p>\n' +
+    '    <p>Sri Harmandir Sahib, Sri Amritsar</p>\n' +
+    '  </section>\n' +
+    '\n' +
+    '  <aside class="official-card" aria-labelledby="official-title">\n' +
+    '    <div><h2 id="official-title">The official publication</h2>\n' +
+    '      <p>SGPC publishes the Hukamnama and its own explanation on the official site. This link works independently of our reader.</p>\n' +
+    '    </div>\n' +
+    '    <a id="official-link" class="button-link" href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">Open official SGPC site ↗</a>\n' +
+    '  </aside>\n' +
+    '  <p class="candidate-note">This isolated preview checks the complete original text against a digital reference. Independent and qualified review remain separate. Daily automatic publication is not yet enabled.</p>\n' +
+    '  <noscript><p class="notice">JavaScript is needed for this reader. You can still open the official SGPC site using the link above.</p></noscript>\n' +
+    '\n' +
+    '  <section class="controls no-print" aria-labelledby="date-title">\n' +
+    '    <div class="section-heading"><h2 id="date-title">Choose your reading</h2><p id="clock">Dates follow Amritsar, India.</p></div>\n' +
+    '    <label for="date">Amritsar calendar date</label>\n' +
+    '    <div class="dates">\n' +
+    '      <input type="date" id="date" aria-describedby="date-help">\n' +
+    '      <button id="open" type="button" disabled>Open date</button>\n' +
+    '      <button id="today" type="button" class="secondary" disabled>Today in Amritsar</button>\n' +
+    '    </div>\n' +
+    '    <p id="date-help" class="small">Only a verified selection for the exact date can appear. An unavailable date stays unavailable.</p>\n' +
+    '    <p id="rollover" class="notice" hidden></p>\n' +
+    '  </section>\n' +
+    '\n' +
+    '  <p id="status" role="status" aria-live="polite">Opening the dated reading… If it cannot open, use the official SGPC link above.</p>\n' +
+    '  <nav class="destinations no-print" aria-label="Reading and learning">\n' +
+    '    <a href="#original" data-panel="original" aria-current="page">Original</a>\n' +
+    '    <a href="#simple" data-panel="simple">Simple explanation</a>\n' +
+    '    <a href="#detailed" data-panel="detailed">Detailed explanation</a>\n' +
+    '    <a href="#learning" data-panel="learning">Learning</a>\n' +
+    '  </nav>\n' +
+    '\n' +
+    '  <section id="original-panel" class="panel" aria-labelledby="original-title">\n' +
+    '    <h2 id="original-title">Original Gurbani</h2>\n' +
+    '    <div id="reading-empty" class="empty-state"><p>The complete dated reading will appear here after its source checks succeed.</p><p>You can always read the publication on <a href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">SGPC’s official site ↗</a>.</p></div>\n' +
+    '    <div id="reading" hidden>\n' +
+    '      <div class="read-head"><h3 id="reading-title"></h3><p id="meta"></p><p id="checked"></p>\n' +
+    '        <div class="font-tools no-print"><label for="font-size">Gurmukhi text size</label><input type="range" id="font-size" min="24" max="52" step="2" value="32"><output id="font-value" for="font-size">32 px</output><button id="print" class="secondary" type="button">Print original</button></div>\n' +
+    '      </div>\n' +
+    '      <article id="scripture" lang="pa" aria-label="Complete original dated reading"></article>\n' +
+    '      <p class="source-caption">The original is shown as one complete selection, with Rahao and closing lines retained. Explanations are reviewed separately.</p>\n' +
+    '      <details id="sources" class="source-details"><summary>Source and checking details</summary><div id="source-details"></div></details>\n' +
+    '    </div>\n' +
+    '  </section>\n' +
+    '\n' +
+    '  <section id="simple-panel" class="panel explanation-panel" aria-labelledby="simple-title" hidden>\n' +
+    '    <p class="eyebrow">UNDERSTAND</p><h2 id="simple-title">Simple explanation</h2>\n' +
+    '    <p class="layer-intro">A short, source-linked explanation of this exact reading.</p>\n' +
+    '    <div id="simple-content" class="lesson-content"></div>\n' +
+    '    <div id="simple-pending" class="empty-state"><span class="state-label">AWAITING QUALIFIED REVIEW</span><p>A reviewed simple explanation is not available for this selection. This space stays empty until it is ready.</p></div>\n' +
+    '    <p class="external-explanation"><a href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">Read SGPC’s own explanation on its official site ↗</a><br><span class="small">External publisher’s explanation. Check the date there; its current publication may differ from the date selected here.</span></p>\n' +
+    '    <a href="#original" data-panel="original">Return to the complete original</a>\n' +
+    '  </section>\n' +
+    '\n' +
+    '  <section id="detailed-panel" class="panel explanation-panel" aria-labelledby="detailed-title" hidden>\n' +
+    '    <p class="eyebrow">STUDY</p><h2 id="detailed-title">Detailed explanation</h2>\n' +
+    '    <p class="layer-intro">A fuller explanation, with references and a named qualified reviewer.</p>\n' +
+    '    <div id="detailed-content" class="lesson-content"></div>\n' +
+    '    <div id="detailed-pending" class="empty-state"><span class="state-label">AWAITING QUALIFIED REVIEW</span><p>A reviewed detailed explanation is not available for this selection. No explanation from another date or source is substituted.</p></div>\n' +
+    '    <p class="external-explanation"><a href="https://hs.sgpc.net/" target="_blank" rel="noopener noreferrer">Read SGPC’s own explanation on its official site ↗</a><br><span class="small">External publisher’s explanation. Check its date before using it with the reading selected here.</span></p>\n' +
+    '    <a href="#original" data-panel="original">Return to the complete original</a>\n' +
+    '  </section>\n' +
+    '\n' +
+    '  <section id="learning-panel" class="panel private-learning" aria-labelledby="learning-title" hidden>\n' +
+    '    <p class="eyebrow">READ · NOTICE · ASK</p><h2 id="learning-title">Learning</h2>\n' +
+    '    <div id="learning-content" class="lesson-content"></div>\n' +
+    '    <div id="learning-pending" class="empty-state compact"><span class="state-label">SOURCE-LINKED LESSON AWAITING QUALIFIED REVIEW</span><p>The tools below help you keep your own questions. They do not explain what the Gurbani means.</p></div>\n' +
+    '    <ol class="reading-prompts">\n' +
+    '      <li>Read the complete original, including Rahao and the closing lines.</li>\n' +
+    '      <li>Choose a line you want to understand more fully.</li>\n' +
+    '      <li>Write your question for a knowledgeable reader, and keep your own reflection separately.</li>\n' +
+    '    </ol>\n' +
+    '\n' +
+    '    <section class="note-editor" aria-labelledby="note-title">\n' +
+    '      <div class="section-heading"><h3 id="note-title">Your private question and reflection</h3><a id="saved-link" href="?learning=saved#learning">Saved Daily notes</a></div>\n' +
+    '      <p class="small">Saved only in this browser on this device. Daily Hukamnama has its own backup; other readers’ backups do not include these notes.</p>\n' +
+    '      <p id="editor-source" class="notice">Open a verified dated reading to start a new note, or open a saved note below.</p>\n' +
+    '      <label for="line-choice">Attach to the complete reading or one exact line</label>\n' +
+    '      <select id="line-choice" disabled><option value="">Complete reading</option></select>\n' +
+    '      <blockquote id="selected-line" lang="pa" hidden></blockquote>\n' +
+    '      <form id="note-form">\n' +
+    '        <label for="question">My question</label>\n' +
+    '        <p id="question-help" class="small">For example: Which word or line would I like help understanding?</p>\n' +
+    '        <textarea id="question" rows="3" aria-describedby="question-help" disabled></textarea>\n' +
+    '        <label for="reflection">My reflection</label>\n' +
+    '        <p id="reflection-help" class="small">Your own thoughts, kept apart from the original and from reviewed explanations.</p>\n' +
+    '        <textarea id="reflection" rows="5" aria-describedby="reflection-help" disabled></textarea>\n' +
+    '        <div class="editor-actions"><button id="save-note" type="submit" disabled>Save on this device</button><button id="new-note" type="button" class="secondary" disabled>New note</button><button id="export-draft" type="button" class="secondary" disabled>Download unsaved text</button></div>\n' +
+    '      </form>\n' +
+    '      <p id="note-status" role="status" aria-live="polite">No note has been saved by opening this page.</p>\n' +
+    '      <p class="small">Printing the original does not print your private notes.</p>\n' +
+    '    </section>\n' +
+    '\n' +
+    '    <section id="saved-notes" class="saved-notes" aria-labelledby="saved-title">\n' +
+    '      <h3 id="saved-title">Saved Daily Hukamnama notes</h3>\n' +
+    '      <p id="saved-status" role="status" aria-live="polite"></p>\n' +
+    '      <ul id="saved-list"></ul>\n' +
+    '      <div class="backup-actions"><button id="export-learning" type="button" class="secondary">Export Daily backup</button><button id="import-learning" type="button" class="secondary">Import Daily backup</button><input id="import-file" type="file" accept=".json,application/json" hidden></div>\n' +
+    '      <p class="small">The backup contains saved Daily questions and reflections. Download unsaved text separately if a save has not succeeded. Import merges records; it does not replace other readers’ learning.</p>\n' +
+    '      <p id="backup-status" role="status" aria-live="polite"></p>\n' +
+    '    </section>\n' +
+    '  </section>\n' +
+    '</main>\n' +
+    '<footer>No account, tracking or automatic sharing. Original readings may be fetched from this site; your questions and reflections stay on this de'... 251 more characters,
+  expected: /Simple · pending/,
+  operator: 'match'
+}
+
+Node.js v22.15.0

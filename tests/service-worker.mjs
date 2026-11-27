@@ -91,20 +91,26 @@ const priorAssets=[
  "./library/library.css"
 ];
 const additions=['./library/app.bundle.mjs','./articles/app.bundle.mjs','./knowledge/','./knowledge/index.html','./knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json'];
-const requiredAssets=[...priorAssets,...additions];
+const dailyShell=['./hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs'];
+const requiredAssets=[...priorAssets,...additions,...dailyShell];
 const expected=JSON.parse(source.match(/const EXPECTED=(\{[^\n]+\});/)[1]),version=source.match(/const VERSION="([^"]+)";/)[1];
 assert.equal(new Set(requiredAssets).size,requiredAssets.length,'Release inventory contains no duplicate URLs');
-assert.deepEqual(Object.keys(expected).sort(),[...requiredAssets].sort(),'The complete prior release plus every required bundle/Knowledge asset must remain present');
+assert.deepEqual(Object.keys(expected).sort(),[...requiredAssets].sort(),'The complete prior release, bundled Knowledge and Daily shell must remain present');
+assert.ok(!Object.keys(expected).some(name=>/^\.\/hukamnama\/(events|sources|receipts)\//.test(name)),'Dynamic Daily records must never be frozen into the shell');
 const digest=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 for(const asset of requiredAssets){
  const file=new URL(asset.endsWith('/')?asset+'index.html':asset,root);
  assert.equal(digest(fs.readFileSync(file)),expected[asset],'Release manifest matches actual file bytes: '+asset);
 }
-function harness(corrupt=false){const events={},calls=[],saved=new Map();const previous='glp-static:'+scope+':old',other='glp-static:https://example.test/other/:old';
+function harness(corrupt=false){const events={},calls=[],saved=new Map(),retainedNativeClones=[];const previous='glp-static:'+scope+':old',other='glp-static:https://example.test/other/:old';
  const self={registration:{scope},location:{href:scope+'sw.js',origin:'https://example.test'},clients:{claim:async()=>calls.push('claim')},skipWaiting:()=>calls.push('skip'),addEventListener:(name,fn)=>events[name]=fn};
  // Cache Storage retains response bytes, not an already-read transport stream.
- const caches={open:async key=>({put:async(req,res)=>{const body=Buffer.from(await res.arrayBuffer());saved.set(req.url,{body,status:res.status,headers:[...res.headers]});},match:async req=>{for(const [u,res] of saved)if(new URL(u).pathname===new URL(req.url).pathname)return new Response(res.body,{status:res.status,headers:res.headers});}}),keys:async()=>[previous,other,'unrelated-app'],delete:async key=>calls.push({deleted:key})};
- const fetch=async req=>{assert.equal(req.cache,'reload');assert.ok(new URL(req.url).searchParams.get('glp_release'));let path=new URL(req.url).pathname.slice(new URL(scope).pathname.length)||'index.html';if(path.endsWith('/'))path+='index.html';return new Response(corrupt&&path==='full-japji.html'?'corrupt':fs.readFileSync(new URL(''+path,root)));};
+ const caches={open:async key=>({put:async(req,res)=>{const body=Buffer.from(await res.arrayBuffer());saved.set(req.url,{body,status:res.status,headers:[...res.headers]});},match:async req=>{for(const [u,res] of saved)if(new URL(u).pathname===new URL(req.url).pathname)return new Response(res.body,{status:res.status,headers:res.headers});}}),keys:async()=>[previous,other,'unrelated-app','glp001.hukamnama.records.v1'],delete:async key=>calls.push({deleted:key})};
+ // Node 22.15 / Undici 6.21.2 can finalize a consumed temporary clone and cancel
+ // the still-live original stream. Keep native clones alive for this harness only.
+ // Native clone/read/hash behavior is unchanged; the real browser worker is tested separately.
+ // Deterministic 1/85/97-response evidence: daily-hukamnama/NODE_RESPONSE_CLONE_DIAGNOSTIC_20261127.json.
+ const fetch=async req=>{assert.equal(req.cache,'reload');assert.ok(new URL(req.url).searchParams.get('glp_release'));let path=new URL(req.url).pathname.slice(new URL(scope).pathname.length)||'index.html';if(path.endsWith('/'))path+='index.html';const response=new Response(corrupt&&path==='full-japji.html'?'corrupt':fs.readFileSync(new URL(''+path,root)));const clone=response.clone.bind(response);response.clone=()=>{const nativeCopy=clone();retainedNativeClones.push(nativeCopy);return nativeCopy;};return response;};
  vm.runInNewContext(source,{self,caches,URL,Request,crypto:crypto.webcrypto,Uint8Array,fetch});return{events,calls,saved,previous};
 }
 let h=harness(),pending;h.events.install({waitUntil:p=>pending=p});await pending;assert.ok(!h.calls.includes('skip'));
@@ -117,4 +123,4 @@ h.events.message({data:{type:'IGNORE'}});assert.ok(!h.calls.includes('skip'));h.
 let response;h.events.fetch({request:new Request(scope+'full-japji.html'),respondWith:p=>response=p});assert.equal(await(await response).text(),fs.readFileSync(new URL('full-japji.html',root),'utf8'));
 let intercepted=false;h.events.fetch({request:new Request('https://outside.test/'),respondWith:()=>intercepted=true});assert.equal(intercepted,false);
 let bad=harness(true);bad.events.install({waitUntil:p=>pending=p});await assert.rejects(pending,/hash mismatch/);assert.deepEqual(bad.calls.filter(x=>x.deleted),[{deleted:'glp-static:'+scope+':'+version}],'A failed install requests deletion only of its candidate cache, never the previous release');assert.ok(!bad.calls.includes('skip'));assert.ok(!bad.calls.includes('claim'));
-const result={environment:'Node service-worker simulation; not a physical offline test',checks:['Exact prior 85-asset inventory plus eight required bundled-library/Knowledge entries; every on-disk and cached body hash and release URL checked','Every installation fetch bypasses stale HTTP cache','No automatic skipWaiting on install','Activation removes only this app scope caches','Only explicit update message activates','Reader serves exact cached bytes','Cross-origin requests untouched','Corrupted installation rejects, deletes only the candidate cache and never activates; actual prior-worker preservation is separately browser-tested'].map(name=>({name,status:'PASS'}))};fs.writeFileSync(new URL('evidence/service-worker-verification.json',root),JSON.stringify(result,null,2));console.log(JSON.stringify({total:result.checks.length,status:'PASS'}));
+const result={environment:'Node service-worker simulation; not a physical offline test',checks:['Exact prior 85-asset inventory plus eight bundled-library/Knowledge entries and four Daily shell entries; every on-disk and cached body hash and release URL checked','Every installation fetch bypasses stale HTTP cache','No automatic skipWaiting on install','Activation removes only this app scope caches','Only explicit update message activates','Reader serves exact cached bytes','Cross-origin requests untouched','Corrupted installation rejects, deletes only the candidate cache and never activates; actual prior-worker preservation is separately browser-tested'].map(name=>({name,status:'PASS'}))};fs.writeFileSync(new URL('evidence/service-worker-verification.json',root),JSON.stringify(result,null,2));console.log(JSON.stringify({total:result.checks.length,status:'PASS'}));

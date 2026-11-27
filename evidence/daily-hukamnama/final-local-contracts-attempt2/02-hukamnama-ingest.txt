@@ -1,0 +1,27 @@
+test_changed_final_line_is_refused_even_when_first_line_and_ang_match (__main__.ImporterTests.test_changed_final_line_is_refused_even_when_first_line_and_ang_match) ... ok
+test_complete_cross_ang_selection_is_preserved_with_protected_layers_absent (__main__.ImporterTests.test_complete_cross_ang_selection_is_preserved_with_protected_layers_absent) ... ok
+test_duplicate_complete_witness_sequence_is_refused (__main__.ImporterTests.test_duplicate_complete_witness_sequence_is_refused) ... ok
+test_duplicate_json_key_is_refused (__main__.ImporterTests.test_duplicate_json_key_is_refused) ... ok
+test_existing_destination_is_preserved_without_network (__main__.ImporterTests.test_existing_destination_is_preserved_without_network) ... ok
+test_explicit_history_is_retained_as_history_without_portal_substitution (__main__.ImporterTests.test_explicit_history_is_retained_as_history_without_portal_substitution) ... ok
+test_future_request_is_refused_before_fetching (__main__.ImporterTests.test_future_request_is_refused_before_fetching) ... ok
+test_http_200_missing_reading_does_not_make_an_event (__main__.ImporterTests.test_http_200_missing_reading_does_not_make_an_event) ... ok
+test_invalid_utf8_is_not_decoded_with_replacement (__main__.ImporterTests.test_invalid_utf8_is_not_decoded_with_replacement) ... ok
+test_json_surrogate_escape_is_refused_as_invalid_original_unicode (__main__.ImporterTests.test_json_surrogate_escape_is_refused_as_invalid_original_unicode) ... ok
+test_matching_starting_ang_only_is_a_truncated_unit (__main__.ImporterTests.test_matching_starting_ang_only_is_a_truncated_unit) ... ok
+test_missing_final_verse_does_not_pass_a_first_line_match (__main__.ImporterTests.test_missing_final_verse_does_not_pass_a_first_line_match) ... ok
+test_official_portal_archive_disagreement_refuses_both (__main__.ImporterTests.test_official_portal_archive_disagreement_refuses_both) ... ok
+test_partial_staging_io_failure_is_cleaned_without_final_directory (__main__.ImporterTests.test_partial_staging_io_failure_is_cleaned_without_final_directory) ... ok
+test_pinned_policy_change_refuses_import (__main__.ImporterTests.test_pinned_policy_change_refuses_import) ... ok
+test_punctuation_difference_is_not_silently_normalized (__main__.ImporterTests.test_punctuation_difference_is_not_silently_normalized) ... ok
+test_source_bytes_are_independent_of_retrieval_timestamp (__main__.ImporterTests.test_source_bytes_are_independent_of_retrieval_timestamp) ... ok
+test_source_request_failure_creates_no_promotable_artifact (__main__.ImporterTests.test_source_request_failure_creates_no_promotable_artifact) ... ok
+test_stale_official_selection_is_not_relabelled_as_today (__main__.ImporterTests.test_stale_official_selection_is_not_relabelled_as_today) ... ok
+test_truncated_witness_page_cannot_validate_a_selection (__main__.ImporterTests.test_truncated_witness_page_cannot_validate_a_selection) ... ok
+test_unicode_canonical_equivalence_is_not_silent_source_repair (__main__.ImporterTests.test_unicode_canonical_equivalence_is_not_silent_source_repair) ... ok
+test_visible_original_cannot_disagree_with_structured_original (__main__.ImporterTests.test_visible_original_cannot_disagree_with_structured_original) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.012s
+
+OK

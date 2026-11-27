@@ -1,0 +1,20 @@
+PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+PASS receipt and payload carry the same canonical UTC retrieval timestamp
+PASS raw receipt tampering cannot reuse the old receipt digest
+PASS rehashed receipt with changed full original cannot reuse the selected source
+PASS rehashed truncated source cannot omit the continuation ending
+PASS wrong private key cannot seal against the selected public key
+PASS a signed event cannot verify against a different public key
+PASS non-null unreviewed explanation is refused before sealing
+PASS protected commentary field is excluded even from a rehashed original receipt
+Signing checks: 9 passed; 2 failed. Keys existed only in memory.
+FAIL rehashed receipt starting Ang must agree with the full verified source span
+AssertionError [ERR_ASSERTION]: Missing expected rejection.
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:91:3
+    at async check (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:33:9)
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:90:1
+FAIL rehashed receipt displayed time must agree with the dated event
+AssertionError [ERR_ASSERTION]: Missing expected rejection.
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:94:3
+    at async check (file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:33:9)
+    at async file:///private/tmp/glp001-iphoneqa-20261126/daily-hukamnama-learning/tests/hukamnama-signing.mjs:93:1

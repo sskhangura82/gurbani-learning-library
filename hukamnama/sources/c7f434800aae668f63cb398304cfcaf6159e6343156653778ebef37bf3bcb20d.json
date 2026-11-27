@@ -1,0 +1,79 @@
+{
+  "angEnd": 720,
+  "angStart": 719,
+  "edition": "opengranth-34d2a7c",
+  "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+  "occurrences": [
+    {
+      "ang": 719,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.8d490af637e8f55801426a06c437c07a5733346eb651c512dd8a26ad59970198.1",
+      "kind": "heading",
+      "sha256": "8d490af637e8f55801426a06c437c07a5733346eb651c512dd8a26ad59970198",
+      "text": "ਬੈਰਾੜੀ ਮਹਲਾ ੪ ॥"
+    },
+    {
+      "ang": 719,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.5926f8cd1380ee6b8249526e365661798880fbe77787f1d7e20db67894260fcd.1",
+      "kind": "verse",
+      "sha256": "5926f8cd1380ee6b8249526e365661798880fbe77787f1d7e20db67894260fcd",
+      "text": "ਹਰਿ ਜਨੁ ਰਾਮ ਨਾਮ ਗੁਨ ਗਾਵੈ ॥"
+    },
+    {
+      "ang": 719,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.5f1ae4e71b214f20c112b4632b20b8f1509f7486aee8274e25b76a506a12073e.1",
+      "kind": "rahao",
+      "sha256": "5f1ae4e71b214f20c112b4632b20b8f1509f7486aee8274e25b76a506a12073e",
+      "text": "ਜੇ ਕੋਈ ਨਿੰਦ ਕਰੇ ਹਰਿ ਜਨ ਕੀ ਅਪੁਨਾ ਗੁਨੁ ਨ ਗਵਾਵੈ ॥੧॥ ਰਹਾਉ ॥"
+    },
+    {
+      "ang": 719,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.ad7f803b4d6f63bb276bf22cb577b9f12fbbc8c0fa84b4a53285774e62d206d0.1",
+      "kind": "verse",
+      "sha256": "ad7f803b4d6f63bb276bf22cb577b9f12fbbc8c0fa84b4a53285774e62d206d0",
+      "text": "ਜੋ ਕਿਛੁ ਕਰੇ ਸੁ ਆਪੇ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਕਾਰ ਕਮਾਵੈ ॥"
+    },
+    {
+      "ang": 719,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.460f3c2beb15e5a14769ec55bcbc4d0bfcff73b80de786478c8e6bf0d6ceabe0.1",
+      "kind": "verse",
+      "sha256": "460f3c2beb15e5a14769ec55bcbc4d0bfcff73b80de786478c8e6bf0d6ceabe0",
+      "text": "ਹਰਿ ਆਪੇ ਹੀ ਮਤਿ ਦੇਵੈ ਸੁਆਮੀ ਹਰਿ ਆਪੇ ਬੋਲਿ ਬੁਲਾਵੈ ॥੧॥"
+    },
+    {
+      "ang": 720,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.bc68f349f950c92352e6ecbd58386d340bb3864bc1747132eed63842d009e095.1",
+      "kind": "verse",
+      "sha256": "bc68f349f950c92352e6ecbd58386d340bb3864bc1747132eed63842d009e095",
+      "text": "ਹਰਿ ਆਪੇ ਪੰਚ ਤਤੁ ਬਿਸਥਾਰਾ ਵਿਚਿ ਧਾਤੂ ਪੰਚ ਆਪਿ ਪਾਵੈ ॥"
+    },
+    {
+      "ang": 720,
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.line.8f388ec3d8ffe67fb6a15453f1f424afe5f372afe4dcd38c7f826d12d73e6e8c.1",
+      "kind": "verse",
+      "sha256": "8f388ec3d8ffe67fb6a15453f1f424afe5f372afe4dcd38c7f826d12d73e6e8c",
+      "text": "ਜਨ ਨਾਨਕ ਸਤਿਗੁਰੁ ਮੇਲੇ ਆਪੇ ਹਰਿ ਆਪੇ ਝਗਰੁ ਚੁਕਾਵੈ ॥੨॥੩॥"
+    }
+  ],
+  "provenance": {
+    "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "comparison": "COMPLETE_ORDERED_TEXT_EQUALITY",
+    "comparisonScope": "Unique full ordered sequence among entries beginning at the official starting Ang; adjacent pages establish continuation and boundaries. Global corpus uniqueness is not asserted.",
+    "followingSha256": "8d490af637e8f55801426a06c437c07a5733346eb651c512dd8a26ad59970198",
+    "pages": [
+      {
+        "ang": 719,
+        "sha256": "0965594906991c08308c0643b7373abb7b1c67070650e616561afe2423e382ea",
+        "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0719.md"
+      },
+      {
+        "ang": 720,
+        "sha256": "821b2ace549526a0827470a83cb37115d8c9349de11e30960b7cdc2ae6cc5254",
+        "url": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0720.md"
+      }
+    ],
+    "precedingSha256": "cdca142dd28def612df105bc8158cde2f25e88e382f9855ef3b94b6f108054ae",
+    "repository": "opengranth/open-granth"
+  },
+  "schema": "glp.hukamnama.source.v1",
+  "textSha256": "c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d"
+}

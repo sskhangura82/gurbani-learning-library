@@ -57,3 +57,13 @@ Extend the existing hukamnama/index.html/reader.mjs/style.css rather than add a 
 ## Publishing boundary
 
 The importer emits unsigned source/event/receipt into a staging directory; a separate signer seals the exact verified payload. Candidate events may be read in the development reader with a visible development/update status. An enabled daily publisher remains a reviewed release decision; build its artifact-only workflow, never an auto-deploy. Stable dated data and source packages permit future approved updates without replacing the app shell.
+
+## Implementation clarifications recorded after the initial freeze
+
+The original source provenance also carries an exact `comparisonScope` statement. It describes bounded digital uniqueness and does not claim global corpus uniqueness. The browser and signer reject unsupported extra fields at each original-data level.
+
+JSON parsing rejects duplicate decoded object keys before ordinary parsing can discard an earlier value. This includes escaped-equivalent keys. Raw byte limits and the existing file/source digests remain separate checks.
+
+The private note binding fixes the venue and ritual through its strict `harmandir-morning.YYYY-MM-DD` event identity and dedicated reader schema; it does not allow a generic venue/ritual override.
+
+The imported historical test suite includes twelve source/date assertions and one assertion about its old fixture-only UI. The original test file, source core and fixture remain byte-identical. `tests/hukamnama-foundation-preserved.mjs` executes that frozen suite against its historical HTML/reader from the pinned Git object. Current daily UI and delivery behavior is tested separately; the old fixture-only UI assertion is not presented as a current connected-reader check.

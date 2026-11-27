@@ -1,0 +1,12 @@
+PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+PASS receipt and payload carry the same canonical UTC retrieval timestamp
+PASS raw receipt tampering cannot reuse the old receipt digest
+PASS rehashed receipt with changed full original cannot reuse the selected source
+PASS rehashed truncated source cannot omit the continuation ending
+PASS wrong private key cannot seal against the selected public key
+PASS a signed event cannot verify against a different public key
+PASS non-null unreviewed explanation is refused before sealing
+PASS protected commentary field is excluded even from a rehashed original receipt
+PASS rehashed receipt starting Ang must agree with the full verified source span
+PASS rehashed receipt displayed time must agree with the dated event
+Signing checks: 11 passed; 0 failed. Keys existed only in memory.

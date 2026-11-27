@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-27T05:19:57.262928+00:00",
+  "stage": "precommit working tree; see app graph byte pins",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/hukamnama-foundation.mjs"
+      ],
+      "exitCode": 1
+    }
+  ]
+}

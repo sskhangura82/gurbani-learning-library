@@ -1,0 +1,17 @@
+PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+PASS receipt and payload carry the same canonical UTC retrieval timestamp
+PASS raw receipt tampering cannot reuse the old receipt digest
+PASS rehashed receipt with changed full original cannot reuse the selected source
+PASS rehashed truncated source cannot omit the continuation ending
+PASS wrong private key cannot seal against the selected public key
+PASS a signed event cannot verify against a different public key
+PASS non-null unreviewed explanation is refused before sealing
+PASS protected commentary field is excluded even from a rehashed original receipt
+PASS rehashed receipt starting Ang must agree with the full verified source span
+PASS rehashed receipt displayed time must agree with the dated event
+PASS duplicate payload field cannot hide a discarded value before sealing
+PASS escaped-equivalent duplicate original field cannot hide in rehashed source bytes
+PASS nested duplicate original field cannot hide in a rehashed receipt
+PASS reader rejects duplicate envelope fields even when the remaining payload signature is valid
+PASS reader rejects duplicate decoded payload fields even with a valid ephemeral signature
+Signing checks: 16 passed; 0 failed. Keys existed only in memory.

@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: All 36 ordered classic reader script occurrences have exact file pins and anonymous CORS
+ok 1 - All 36 ordered classic reader script occurrences have exact file pins and anonymous CORS
+  ---
+  duration_ms: 9.527625
+  type: 'test'
+  ...
+# Subtest: Pinning changes no reader markup, source wording or script order beyond integrity attributes
+ok 2 - Pinning changes no reader markup, source wording or script order beyond integrity attributes
+  ---
+  duration_ms: 56.109042
+  type: 'test'
+  ...
+# Subtest: Check mode reproduces all pins without writing page bytes
+ok 3 - Check mode reproduces all pins without writing page bytes
+  ---
+  duration_ms: 8.294042
+  type: 'test'
+  ...
+# Subtest: The generator refuses missing, extra, inline, module and reordered script inventories
+ok 4 - The generator refuses missing, extra, inline, module and reordered script inventories
+  ---
+  duration_ms: 0.862
+  type: 'test'
+  ...
+# Subtest: The generator cannot refresh a changed frozen source or verifier into acceptance
+ok 5 - The generator cannot refresh a changed frozen source or verifier into acceptance
+  ---
+  duration_ms: 1.518125
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 78.106

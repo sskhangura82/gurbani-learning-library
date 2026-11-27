@@ -14,9 +14,9 @@ const stamp = new Date().toISOString().replace(/[:.]/g, "-");
 const out = path.join(root, "evidence/library-script-integrity/browser", stamp + "-module-transport");
 await fs.mkdir(out, {recursive:true});
 const sha256 = bytes => createHash("sha256").update(bytes).digest("hex");
-const bundledModules = new Set(["library/app.bundle.mjs","articles/app.bundle.mjs","knowledge/app.bundle.mjs"]);
+const bundledModules = new Set(["library/app.bundle.mjs","articles/app.bundle.mjs","knowledge/app.bundle.mjs","hukamnama/reader.bundle.mjs"]);
 const isUnbundledModule = relative =>
-  /^(library|articles|knowledge)\//.test(relative) && /\.(mjs|js)$/.test(relative) && !bundledModules.has(relative);
+  /^(library|articles|knowledge|hukamnama)\//.test(relative) && /\.(mjs|js)$/.test(relative) && !bundledModules.has(relative);
 const mime = {".html":"text/html; charset=utf-8", ".mjs":"text/javascript; charset=utf-8",
   ".js":"text/javascript; charset=utf-8", ".json":"application/json; charset=utf-8",
   ".css":"text/css; charset=utf-8", ".webmanifest":"application/manifest+json",
@@ -55,7 +55,17 @@ const report = {
     "Transport mutation changes a real dependency source in memory, rebuilds the complete bundle and retains unchanged HTML SRI; its explicit re-pinned control proves the altered code can execute."
   ]
 };
+const dailyDate=(await fs.readdir(path.join(root,"hukamnama/events"))).filter(n=>/^\d{4}-\d\d-\d\d\.json$/.test(n)).sort().at(-1).slice(0,-5);
+const dailyEnvelope=JSON.parse(await fs.readFile(path.join(root,"hukamnama/events",dailyDate+".json"),"utf8"));
+const dailyEvent=JSON.parse(Buffer.from(dailyEnvelope.payload,"base64").toString());
+const dailySource=JSON.parse(await fs.readFile(path.join(root,"hukamnama",dailyEvent.source.path),"utf8"));
+const dailyClock=new Date(Math.max(Date.parse(dailyEvent.checkedAtUtc)+1000,Date.parse(dailyDate+"T12:00:00Z")));
 const specs = [
+  {name:"hukamnama", appId:"hukamnama", page:"hukamnama/index.html", html:"hukamnama/index.html", dependency:"hukamnama/core.mjs", output:"hukamnama/reader.bundle.mjs", ready:"#reading:not([hidden])", clock:dailyClock, verify:async page=>{
+    assert.deepEqual(await page.locator(".original-text").allTextContents(),dailySource.occurrences.map(line=>line.text));
+    assert.equal(await page.locator("#official-link").getAttribute("href"),"https://hs.sgpc.net/");
+    assert.match(await page.locator("#status").innerText(),/Development preview/);
+  }},
   {name:"library", appId:"library", page:"index.html?view=read", html:"index.html", dependency:"library/catalog.mjs", ready:'html[data-library-state="ready"]', verify:async page=>{
     assert.equal(await page.locator("#reader-list .directory-card").count(),10);
     await page.locator("#library-search").fill("salok");
@@ -89,6 +99,7 @@ async function run(spec, mode="normal", mutation=null) {
   const ctx = await browser.newContext({viewport:{width:390,height:844},serviceWorkers:"block"});
   const page = await ctx.newPage();
   page.setDefaultTimeout(8000);
+  if(spec.clock)await page.clock.install({time:spec.clock});
   page.on("request",request=>{
     const url=new URL(request.url());check.requests.push(url.pathname);
     if (isUnbundledModule(url.pathname.slice("/preview/".length))) check.deniedSourceRequests.push(url.pathname);
@@ -118,6 +129,10 @@ async function run(spec, mode="normal", mutation=null) {
         assert.equal(await page.locator("#passages .source-line").count(),0);
         assert.ok(await page.locator("#print-article").isDisabled());
         assert.equal(check.requests.filter(url=>url.endsWith("/articles/catalog.json")).length,0);
+      } else if(spec.appId==="hukamnama") {
+        assert.equal(await page.locator(".original-text").count(),0);
+        assert.ok(await page.locator("#official-link").isVisible());
+        assert.equal(check.requests.filter(url=>url.includes("/hukamnama/events/")).length,0);
       } else {
         assert.equal(await page.locator("#content").innerText(),"");
         assert.ok(await page.locator("#search-button").isDisabled());
@@ -139,7 +154,7 @@ async function run(spec, mode="normal", mutation=null) {
       check.geometry=geometry;
     }
     assert.deepEqual(check.deniedSourceRequests,[],"Application never requests its unavailable original modules");
-    assert.ok(check.requests.includes("/preview/"+spec.appId+"/app.bundle.mjs"),"The bundle URL is requested below the deployment prefix");
+    assert.ok(check.requests.includes("/preview/"+(spec.output||spec.appId+"/app.bundle.mjs")),"The bundle URL is requested below the deployment prefix");
     assert.deepEqual(check.pageErrors,[]);
     if(mode==="normal") {
       check.screenshot=spec.name+"-390.png";
