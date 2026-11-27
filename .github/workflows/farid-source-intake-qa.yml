@@ -1,0 +1,40 @@
+name: Farid source intake research checks
+on:
+  pull_request:
+    paths:
+      - 'content-intake/farid/**'
+      - 'content-intake/sggs/file-inventory.json'
+      - 'tools/validate-farid-intake.mjs'
+      - 'tools/fetch-farid-witnesses.mjs'
+      - 'tests/farid-intake.mjs'
+      - '.github/workflows/farid-source-intake-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch fixed temporary witnesses outside the repository
+        run: node tools/fetch-farid-witnesses.mjs --output "$RUNNER_TEMP/glp-farid-witnesses"
+      - name: Reconstruct the incomplete source span and exercise refusal cases
+        env:
+          GLP_FARID_WITNESS_DIR: ${{ runner.temp }}/glp-farid-witnesses
+        run: |
+          node --test --test-reporter=tap tests/farid-intake.mjs > evidence/farid-intake/hosted-tests.tap
+          node tools/validate-farid-intake.mjs --witness-dir "$GLP_FARID_WITNESS_DIR" --report evidence/farid-intake/hosted-validation.json
+          git diff --exit-code
+      - name: Retain research results only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: farid-source-intake-results
+          path: |
+            evidence/farid-intake/hosted-tests.tap
+            evidence/farid-intake/hosted-validation.json
+          if-no-files-found: warn

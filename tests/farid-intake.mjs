@@ -1,0 +1,73 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,mkdir,writeFile,readFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {loadFaridInputs,validateFaridIntake,sha256,FaridIntakeError} from '../tools/validate-farid-intake.mjs';
+const {manifest,corpus,options}=await loadFaridInputs({witnessDir:process.env.GLP_FARID_WITNESS_DIR});
+const staticOptions={...options,witnessFiles:null};
+const validate=(m=manifest,c=corpus,o=staticOptions)=>validateFaridIntake(m,c,o);
+function reject(name,mutate,code){test(name,()=>{const m=structuredClone(manifest),c=structuredClone(corpus);mutate(m,c);assert.throws(()=>validate(m,c),e=>e instanceof FaridIntakeError&&(!code||e.code===code));});}
+function resealSpan(m){const s=m.observedForwardSpan;s.occurrenceCount=s.occurrences.length;for(const r of s.occurrences)r.textSha256=sha256(r.text);s.custodySha256=sha256(JSON.stringify(s.occurrences));s.textSequenceSha256=sha256(s.occurrences.map(r=>r.text).join('\n'));}
+test('Valid research is incomplete, unadmitted and unchanged by validation',()=>{
+ const before=JSON.stringify([manifest,corpus]);const report=validate();
+ assert.equal(report.result,'PASS');assert.equal(report.scope,'STATIC_RESEARCH_CONTRACT_ONLY');
+ assert.equal(report.runtimeEligible,false);assert.equal(report.publicReady,false);assert.equal(report.publicationReady,false);
+ assert.deepEqual(report.missingTerminalNumbers,[2]);assert.equal(report.completeCompositionsAdmitted,0);assert.equal(report.fullCorpusOriginalLinesCollated,0);
+ assert.equal(JSON.stringify([manifest,corpus]),before);
+});
+reject('Runtime promotion is refused',m=>m.runtimeEligible=true,'AUTHORITY_PROMOTION');
+reject('Public-ready promotion is refused',m=>m.publicReady=true,'AUTHORITY_PROMOTION');
+reject('Publication-ready promotion is refused',m=>m.publicationReady=true,'AUTHORITY_PROMOTION');
+reject('Invented scholar approval is refused',m=>m.reviews.gurbaniScholar={name:'Synthetic reviewer',approved:true},'AUTHORITY_PROMOTION');
+reject('326 text entries cannot become 326 complete compositions',m=>m.inventory.completeCompositionCount=326,'AUTHORITY_PROMOTION');
+reject('Whole-page author inheritance is refused',m=>m.inventory.wholePageAuthorAssignmentPermitted=true,'ATTRIBUTION_CHANGED');
+reject('Signature-word author inheritance is refused',m=>m.inventory.signatureWordAuthorAssignmentPermitted=true,'ATTRIBUTION_CHANGED');
+reject('Shared source Ang1377 cannot disappear from the author inventory',m=>m.inventory.candidateAngs=m.inventory.candidateAngs.filter(n=>n!==1377),'INVENTORY_CHANGED');
+reject('Forward span cannot claim completeness',m=>m.observedForwardSpan.completeComposition=true,'AUTHORITY_PROMOTION');
+reject('Missing terminal2 cannot be hidden',m=>m.observedForwardSpan.missingTerminalNumbers=[],'MISSING_LINE_HIDDEN');
+reject('A lost middle occurrence fails even with locally renewed count and hashes',m=>{m.observedForwardSpan.occurrences.splice(70,1);resealSpan(m);},'SOURCE_COUNT');
+reject('Substituting an original line and renewing all local hashes is refused',m=>{m.observedForwardSpan.occurrences[70].text+=' ਬਦਲ';resealSpan(m);},'SOURCE_ORDER');
+reject('Reordering same-sized original lines and renewing local hashes is refused',m=>{const r=m.observedForwardSpan.occurrences;[r[70],r[71]]=[r[71],r[70]];resealSpan(m);},'SOURCE_ORDER');
+reject('Silently reinserting the displaced line to create297 is refused',m=>{m.observedForwardSpan.occurrences.splice(11,0,m.quarantinedDiscrepancies[0].sourceOccurrence);resealSpan(m);},'SOURCE_COUNT');
+reject('Silent relocation from source1377 to printed1378 is refused',m=>m.quarantinedDiscrepancies[0].sourceOccurrence.sourceAng=1378,'QUARANTINE_RELOCATED');
+reject('Canonical author assignment for displaced line is refused',m=>m.quarantinedDiscrepancies[0].canonicalAuthorId='FRID','QUARANTINE_PROMOTION');
+reject('Automatic inclusion of displaced line is refused',m=>m.quarantinedDiscrepancies[0].automaticAuthorInclusion=true,'QUARANTINE_PROMOTION');
+reject('Quarantine cannot be removed',m=>m.quarantinedDiscrepancies.shift(),'QUARANTINE_PROMOTION');
+reject('Heading danda cannot be normalized away and resealed',m=>{m.observedForwardSpan.occurrences[0].text='ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ';resealSpan(m);},'SOURCE_ORDER');
+reject('Selecting the alternate heading as runtime text is refused',m=>m.quarantinedDiscrepancies[1].selectedRuntimeText='ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ','QUARANTINE_PROMOTION');
+reject('One omitted Mahalla-heading record is refused',m=>m.observedForwardSpan.explicitMahallaHeadings.pop(),'ATTRIBUTION_CHANGED');
+reject('A convenient per-heading author assignment is refused',m=>m.observedForwardSpan.explicitMahallaHeadings[0].authorId='FRID','ATTRIBUTION_CHANGED');
+reject('Canonical Ang assertion is refused',m=>m.observedForwardSpan.canonicalAngs=[1377,1378],'AUTHORITY_PROMOTION');
+reject('Modern translation asset insertion is refused',m=>m.translationAssets.push({text:'Synthetic translation'}),'ASSET_IMPORT');
+reject('Audio asset insertion is refused',m=>m.audioAssets.push({url:'https://example.invalid/unlicensed'}),'ASSET_IMPORT');
+reject('Invented explanatory field is refused by the closed research schema',m=>m.explanation='Synthetic invented explanation','RESEARCH_METADATA_CHANGED');
+reject('Inherited evidence cannot be relabelled as newly independently verified',m=>m.quarantinedDiscrepancies[0].secondaryObservation.status='VERIFIED_THIS_INTAKE','RESEARCH_METADATA_CHANGED');
+reject('New source commit is refused',m=>m.source.commit='0'.repeat(40),'SOURCE_CHANGED');
+reject('Raw witness repinning in a manifest is refused',m=>m.source.textWitnesses[0].sha256='0'.repeat(64),'SOURCE_CHANGED');
+reject('1430-file inventory cannot claim1430 authenticated Angs',(_,c)=>c.originalLinesCollated=60555,'CORPUS_AUTHORITY_PROMOTION');
+reject('A missing Ang cannot be disguised by a duplicate descriptor',(_,c)=>c.files[99]=c.files[100],'CORPUS_FILE_SET');
+reject('A changed Git blob cannot be hidden by renewing descriptor digest',(_,c)=>{c.files[99].gitBlob='0'.repeat(40);c.descriptorSha256=sha256(JSON.stringify(c.files));},'CORPUS_DESCRIPTOR_CHANGED');
+reject('Unknown complete-corpus authentication field is refused',(_,c)=>c.allAngsAuthenticated=true,'CORPUS_DESCRIPTOR_CHANGED');
+test('Independent contract must remain pinned even if manifest hashes are renewed',()=>{const changed=Buffer.concat([options.contractBytes,Buffer.from('\n')]);assert.throws(()=>validate(manifest,corpus,{...staticOptions,contractBytes:changed}),e=>e.code==='CONTRACT_CHANGED');});
+test('Changing an existing runtime original is refused',()=>{const files=new Map(options.runtimeFiles),path='knowledge/scripture.json';files.set(path,Buffer.concat([files.get(path),Buffer.from('\n')]));assert.throws(()=>validate(manifest,corpus,{...staticOptions,runtimeFiles:files}),e=>e.code==='PRESERVATION_CHANGED');});
+test('Missing original witness files refuse reconstruction',()=>assert.throws(()=>validate(manifest,corpus,{...options,witnessFiles:new Map()}),e=>e.code==='WITNESS_INPUT'));
+test('All12 pinned files reconstruct the entire observed span and its boundaries',{skip:!options.witnessFiles},()=>{const report=validate(manifest,corpus,options);assert.equal(report.witnessFilesVerified,12);assert.equal(report.scope,'PINNED_SOURCE_RESEARCH_WITH_WITNESS_RECONSTRUCTION');assert.deepEqual(report.missingTerminalNumbers,[2]);});
+test('A one-byte raw witness change is refused before extraction',{skip:!options.witnessFiles},()=>{const files=new Map(options.witnessFiles),path='corpus/ang-1378.md',bytes=Buffer.from(files.get(path));bytes[bytes.length-2]^=1;files.set(path,bytes);assert.throws(()=>validate(manifest,corpus,{...options,witnessFiles:files}),e=>e.code==='WITNESS_BYTES');});
+
+test('Unrelated navigation and global-policy changes do not freeze the quarantined research intake',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'glp-farid-preservation-'));
+ try{
+  const contract=JSON.parse(options.contractBytes);
+  assert.equal(Object.hasOwn(contract.runtimePins,'library/catalog.mjs'),false);
+  assert.equal(Object.hasOwn(contract.runtimePins,'tools/script-integrity/policy.mjs'),false);
+  const project=fileURLToPath(new URL('../',import.meta.url));
+  const paths=['content-intake/farid/contract.json','content-intake/farid/manifest.json','content-intake/sggs/file-inventory.json',...Object.keys(contract.runtimePins),...contract.retainedEvidence.map(r=>r.path)];
+  for(const path of paths){await mkdir(dirname(join(root,path)),{recursive:true});await writeFile(join(root,path),await readFile(join(project,path)));}
+  for(const path of ['library/catalog.mjs','tools/script-integrity/policy.mjs']){await mkdir(dirname(join(root,path)),{recursive:true});await writeFile(join(root,path),'// Synthetic unrelated application change; never executed.\n');}
+  const input=await loadFaridInputs({root});
+  const report=validateFaridIntake(input.manifest,input.corpus,input.options);
+  assert.equal(report.result,'PASS');assert.equal(report.runtimeEligible,false);assert.deepEqual(report.missingTerminalNumbers,[2]);
+ }finally{await rm(root,{recursive:true,force:true});}
+});
