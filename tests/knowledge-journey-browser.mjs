@@ -42,7 +42,7 @@ try{
   assert.deepEqual(await page.locator("[data-review-slot]").evaluateAll(ns=>ns.map(n=>n.dataset.reviewStatus)),["AWAITING_QUALIFIED_REVIEW","AWAITING_QUALIFIED_REVIEW"]);
   assert.match(await page.locator(".journey-review").innerText(),/Awaiting qualified review/);
   await page.locator(".journey-review summary").click();assert.match(await page.locator(".journey-review").innerText(),/unresolved omission/);await page.locator(".journey-review summary").click();
-  assert.equal(await page.locator("[data-content-kind=comparison]").count(),1);assert.equal(await page.locator("[data-review-slot] [data-content-kind=comparison]").count(),0);
+  assert.equal(await page.locator("[data-content-kind=comparison]").count(),0,"restricted religious comparison is absent from the public journey");assert.equal(await page.locator("[data-review-slot] [data-content-kind=comparison]").count(),0);
  });
  await check("first reflection saved; earlier words protected; chosen past return visible on reload",async()=>{
   await first(page);assert.ok(await page.locator("#journey-initialReflection").evaluate(e=>e.readOnly));assert.ok(await page.locator("#journey-question").evaluate(e=>e.readOnly));assert.match(await page.locator(".journey-editor").innerText(),/return date has arrived/);

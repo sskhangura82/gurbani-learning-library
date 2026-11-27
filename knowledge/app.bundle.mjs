@@ -115,11 +115,56 @@ function validateNodeText(n, sourceSignatures, lines) {
   }
   for (const field of ["citation", "discipline"]) if (n[field] !== void 0) validateEditorialText(n[field], sourceSignatures, n.id + "." + field);
 }
+var PUBLIC_STUDY_ADMISSIONS = Object.freeze({
+  "study.intellectual-humility": Object.freeze({
+    contentClass: "PSYCHOLOGY",
+    discipline: "psychology",
+    contentSha256: "2a2a32961a51e233f34898b76f82b98358646735064500830bf73c668c115eaa"
+  })
+});
+var publicStudyFields = Object.freeze(["id", "type", "title", "pa", "aliases", "discipline", "reference", "citation", "review"]);
+function exactKeys(value, keys) {
+  return value && typeof value === "object" && !Array.isArray(value) && JSON.stringify(Object.keys(value).sort()) === JSON.stringify([...keys].sort());
+}
+async function verifyPublicEditorialAccess(e) {
+  const p = e.accessPolicy;
+  need(
+    exactKeys(p, ["schema", "audience", "psychology", "comparativeReligion"]) && p.schema === "glp.knowledge.public-access.v1" && p.audience === "PUBLIC" && p.psychology === "PUBLIC" && p.comparativeReligion === "PRIVATE_ONLY",
+    "PUBLIC_ACCESS_POLICY: this loader accepts the explicit public projection only"
+  );
+  let studies = 0;
+  for (const n of e.nodes) {
+    const expected = n.type === "study" ? "PSYCHOLOGY" : "GURBANI_LEARNING";
+    need(exactKeys(n.access, ["audience", "contentClass"]) && n.access.audience === "PUBLIC" && n.access.contentClass === expected, "PUBLIC_ACCESS_LABEL: missing or restricted record classification: " + n.id);
+    if (n.type !== "study") continue;
+    studies++;
+    const admitted = Object.hasOwn(PUBLIC_STUDY_ADMISSIONS, n.id) ? PUBLIC_STUDY_ADMISSIONS[n.id] : null;
+    need(
+      admitted && n.discipline === admitted.discipline && n.access.contentClass === admitted.contentClass,
+      "PUBLIC_STUDY_NOT_ADMITTED: comparative religion and undeclared studies require restricted delivery"
+    );
+    need(
+      exactKeys(n, [...publicStudyFields, "access"]) && await sha256(JSON.stringify(publicStudyFields.map((field) => n[field]))) === admitted.contentSha256,
+      "PUBLIC_STUDY_METADATA: study content differs from its separately admitted public record"
+    );
+  }
+  need(
+    studies === 1 && e.coverage.psychologyStudies === studies && e.coverage.comparativeReligionStudies === 0,
+    "PUBLIC_STUDY_COVERAGE: public psychology coverage is incomplete or overstated"
+  );
+  need(
+    e.edges.every((edge) => edge.type !== "philosophical_comparison"),
+    "PUBLIC_COMPARISON_RESTRICTED: religious/philosophical comparative edges are not public admissions"
+  );
+  for (const edge of e.edges.filter((edge2) => edge2.type === "psychological_parallel")) {
+    need(Object.hasOwn(PUBLIC_STUDY_ADMISSIONS, edge.to), "PUBLIC_COMPARISON_RESTRICTED: comparison target is not publicly admitted psychology");
+  }
+}
 async function loadKnowledge(sourceBytes, teachingBytes, teachingPin) {
   const s = await verifyScripture(sourceBytes);
   need(await sha256(teachingBytes) === teachingPin, "Editorial digest mismatch");
   const e = JSON.parse(decode.decode(teachingBytes));
-  need(e.schema === "glp.knowledge.editorial.v2" && e.status === "NONPUBLISHING_DRAFT" && !Object.hasOwn(e, "occurrences"), "Invalid editorial pack");
+  need(e.schema === "glp.knowledge.editorial.v3" && e.status === "NONPUBLISHING_DRAFT" && !Object.hasOwn(e, "occurrences"), "Invalid editorial pack");
   const passages = unique(s.passages), lines = unique(s.occurrences);
   need(e.nodes.every((n) => ["concept", "word", "study", "lesson", "course"].includes(n.type)), "Editorial pack attempts to define scripture or its attribution");
   const sourceSignatures = new Set(s.occurrences.map((o) => titleSignature(o.text)));
@@ -141,6 +186,7 @@ async function loadKnowledge(sourceBytes, teachingBytes, teachingPin) {
     for (const field of ["reason", "similarity", "difference"]) if (edge[field] !== void 0) validateEditorialText(edge[field], sourceSignatures, edge.id + "." + field);
     if (edge.refs) exactBindings(edge.sourceBindings, edge.refs, passages, "passageSha256");
   }
+  await verifyPublicEditorialAccess(e);
   const sourceNodes = s.passages.map((p) => {
     const d = descriptions.get(p.id);
     return { ...p, title: lines.get(p.incipitId).text, editorialTitle: d.title, editorialPa: d.pa, editorialAliases: d.aliases || [] };
@@ -1028,7 +1074,7 @@ function wordAt(index2, occurrenceId, form) {
 }
 
 // knowledge/app.mjs
-var PACK_SHA256 = "c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf";
+var PACK_SHA256 = "2c22c28e47094af8ae84ec47d1d021c356b725ebeb2726b5f2b694a54af34556";
 var $ = (id) => document.getElementById(id);
 var el2 = (tag, text, cls) => {
   const n = document.createElement(tag);

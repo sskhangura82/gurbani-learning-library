@@ -48,10 +48,14 @@ for(const field of fields){
 checks.push("Re-pinned attacks refused across all 31 displayed or indexed editorial field classes; independent source remains unchanged");
 for(const field of fields){
  for(const value of ["A reflection on humility","ਸਲੋਕ ਬਾਰੇ ਵਿਚਾਰ","ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ","ਮਿਹਨਤ ੧","ਨਾਨਕ","Guru Arjan"]){
+  if(field.name.startsWith("study.")){
+   await assert.rejects(()=>altered(e=>field.set(e,value)),/PUBLIC_STUDY_(?:METADATA|NOT_ADMITTED)/);
+   denied++;continue;
+  }
   buildIndex(await altered(e=>field.set(e,value)));allowed++;
  }
 }
-checks.push("English and Punjabi vocabulary, titles, names and teaching revisions remain ordinary editorial content");
+checks.push("English and Punjabi vocabulary, titles, names and teaching revisions remain ordinary editorial content; public study revisions require an explicit admission update");
 for(const type of ["concept","word","study","lesson","course"]){
  for(const key of ["editorialTitle","editorialPa","editorialAliases"]){
   await assert.rejects(()=>altered(e=>{e.nodes.find(n=>n.type===type)[key]=key==="editorialAliases"?[verse]:verse;}),/joined passage metadata/);

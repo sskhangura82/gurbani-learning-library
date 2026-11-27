@@ -7,6 +7,7 @@ import {execFileSync} from "node:child_process";
 import {chromium} from "playwright";
 import {installKnowledgeFixture,assertKnowledgeFixtureRuntime} from "./helpers/module-fixture.mjs";
 import {sha256} from "../knowledge/registry.mjs";
+import {readBeforePublicKnowledge} from "./helpers/public-knowledge-scope.mjs";
 
 const root=path.resolve(fileURLToPath(new URL("../",import.meta.url))),base="f720099b6181919d597e249f9ad42b9f00cabe68";
 const stamp=new Date().toISOString().replace(/[:.]/g,"-"),out=path.join(root,"evidence","library-script-integrity","browser",stamp+"-knowledge-integration");
@@ -86,6 +87,23 @@ try{
   await page.getByRole("heading",{name:"This learning link is unavailable",exact:true}).waitFor();assert.equal(await page.locator(".pankti").count(),0);
   assert.deepEqual(await page.evaluate(()=>({local:localStorage.length,session:sessionStorage.length})),{local:0,session:0});
  });
+ await check("Public psychology opens with its reference; religious study search and old deep links are unavailable",{},async page=>{
+  await loaded(page);await query(page,"psychology");
+  const study=teaching.nodes.find(n=>n.id==="study.intellectual-humility");
+  await page.locator('#results [data-result-id="'+study.id+'"]').click();
+  await page.getByRole("heading",{name:study.title,exact:true}).waitFor();
+  assert.equal(await page.locator('#content a[href="'+study.reference+'"]').count(),1);
+  for(const term of ["buddhism","buddhist","Tibetan","Bible"]){await query(page,term);assert.equal(await page.locator("#results button").count(),0,term);}
+  await loaded(page,url+"#"+new URLSearchParams({item:"study.buddhist-conceit"}));
+  await page.getByRole("heading",{name:"This learning link is unavailable",exact:true}).waitFor();
+  assert.equal(await page.locator("[data-content-kind=comparison]").count(),0);
+ });
+ await check("A renewed pack pin cannot admit a study explicitly classified as comparative religion",{mutateTeaching:e=>{
+  const study=structuredClone(e.nodes.find(n=>n.type==="study"));study.id="study.synthetic-restricted";study.access.contentClass="COMPARATIVE_RELIGION";e.nodes.push(study);
+ }},async page=>{
+  await page.goto(url);await page.getByText(/Knowledge pack could not be verified/).waitFor();
+  assert.equal(await page.locator("#content").innerText(),"");assert.equal(await page.locator("#results").innerText(),"");assert.ok(await page.locator("#search-button").isDisabled());
+ });
  await check("Editorial author aliases stay labelled while real source hits select exact occurrences",{},async page=>{
   await loaded(page);await query(page,"ਨਾਨਕ");
   const author=page.locator('#results [data-result-id="author.guru-nanak"]'),passage=page.locator('#results [data-result-id="'+N+'"]');
@@ -147,8 +165,8 @@ try{
   await row.click();await scripture(page,N);assert.equal(await page.locator(".selected-line").count(),0);
  });
  for(const p of ["knowledge/scripture.json","knowledge/pilot.json","knowledge/registry.mjs","knowledge/source-lock.mjs"]){
-  const current=await fs.readFile(path.join(root,p)),prior=execFileSync("git",["show",base+":"+p],{cwd:root,maxBuffer:8*1024*1024});
-  assert.deepEqual(current,prior,p+" unchanged from PR57");
+  const original=await readBeforePublicKnowledge(p),prior=execFileSync("git",["show",base+":"+p],{cwd:root,maxBuffer:8*1024*1024});
+  assert.deepEqual(original,prior,p+" PR57 input preserved beneath the verified public-access amendment");
  }
  assert.deepEqual(report.pageErrors,[]);
 }catch(e){report.status="FAIL";report.failures.push({name:"Harness/setup or final invariants",error:e.stack||String(e)});}

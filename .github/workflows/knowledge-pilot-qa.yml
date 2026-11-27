@@ -5,6 +5,8 @@ on:
       - 'knowledge/**'
       - 'tests/knowledge-*.mjs'
       - 'tests/helpers/module-fixture.mjs'
+      - 'tests/helpers/public-knowledge-scope.mjs'
+      - 'evidence/public-knowledge-access/change-scope.json'
       - 'tools/build-app-bundles.mjs'
       - 'tools/refresh-app-sri.mjs'
       - 'tools/script-integrity/**'
@@ -32,13 +34,15 @@ jobs:
           node --check knowledge/search.mjs
           node --check knowledge/app.mjs
           node --test tests/knowledge-learning.mjs
+          node --test tests/knowledge-public-access.mjs tests/library-script-integrity-inputs.mjs
           node tests/knowledge-contract.mjs
           node tests/knowledge-source-registry.mjs
           node tests/knowledge-editorial-title.mjs
           node tests/knowledge-editorial-boundary.mjs
           node tests/knowledge-search.mjs
           node tests/knowledge-integration.mjs
-          git diff --exit-code f720099b6181919d597e249f9ad42b9f00cabe68 -- knowledge/scripture.json knowledge/pilot.json knowledge/source-lock.mjs knowledge/registry.mjs
+          # Teaching/registry retain PR57 checks through the exact public-access scope above.
+          git diff --exit-code f720099b6181919d597e249f9ad42b9f00cabe68 -- knowledge/scripture.json knowledge/source-lock.mjs
           node tests/knowledge-source-witness.mjs
       - uses: actions/upload-artifact@v4
         if: always()

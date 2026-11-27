@@ -1,0 +1,62 @@
+[
+  {
+    "path": "knowledge/app.bundle.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "knowledge/app.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "knowledge/registry.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/helpers/public-knowledge-scope.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/knowledge-contract.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/knowledge-editorial-boundary.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/knowledge-integration-browser.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/knowledge-integration.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/knowledge-journey-browser.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/knowledge-public-access.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tests/library-script-integrity-inputs.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "tools/script-integrity/policy.mjs",
+    "exitCode": 0,
+    "output": ""
+  }
+]
