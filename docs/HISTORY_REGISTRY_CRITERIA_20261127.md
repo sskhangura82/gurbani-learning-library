@@ -1,5 +1,7 @@
 # Sikh History claim registry — frozen builder criteria
 
+> Policy update: mandatory human authorship/review statements in this earlier record are superseded by the owner decision in [TWO_REVIEWER_POLICY_20261127.md](history/TWO_REVIEWER_POLICY_20261127.md). The earlier work remains evidence of its original scope.
+
 2026-11-27. Builder criteria, not independent review or release authorization.
 Base: reviewed reader/Daily candidate 7f36c3039ca95fac6e69ca28f631b9e3734c70e9.
 

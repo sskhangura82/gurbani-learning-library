@@ -1,0 +1,292 @@
+{
+  "schema": "glp.history.semantic-review.v1",
+  "id": "review.kartarpur-chatgpt-20261127",
+  "draftId": "draft.kartarpur-after-journeys",
+  "reviewerId": "reviewer.chatgpt-history-20261127",
+  "provider": "OpenAI",
+  "product": "ChatGPT",
+  "role": "CHATGPT_AUTHOR",
+  "kind": "SEMANTIC_SOURCE_INSPECTION",
+  "packetSha256": "e3752f5b6dbf0bcde24a58ef015a949cac62a83df8fbf20eeeb0645943f9e349",
+  "reviewedAt": "2026-11-27T20:49:58.999Z",
+  "recordReference": "content-intake/history/reviews/kartarpur-chatgpt-20261127.json",
+  "producerReference": "ChatGPT session 2026-11-27, agent /root/source_policy_research; actual web retrieval references are recorded with each source snapshot.",
+  "claimAssessments": [
+    {
+      "claimId": "claim.kartarpur-angad-in-vaar",
+      "claimSha256": "b1ca031a78e81f5a16a3dfe112c2b5e2bcacdcc3cfda7e1a9732a52fe4e746e3",
+      "verdict": "INCOMPLETE",
+      "note": "INCOMPLETE: exact original Gurmukhi witness unavailable in this session; author attribution alone is insufficient.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "citationSha256": "13e5f242231d2d7587cd6838fb07e3717c52f68cf2316e249944f10402864dd9",
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
+          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
+          "support": "INCOMPLETE",
+          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-family-home",
+      "claimSha256": "4069d2275912dc394560f79b7928ccc2b1c43d6836f78ec686fbc0edfb775c12",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: the Encyclopaedia opening two paragraphs describe residence with family after the travels. No exact settlement year or continuous duration is adopted.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.eos-kartarpur",
+          "citationSha256": "494a2d2b65e59524d5dd8ce500daf70ad841e080144260c5817248e8b0669b3d",
+          "snapshotId": "snapshot.eos-kartarpur-20261127",
+          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-farm-kitchen",
+      "claimSha256": "075ab94ec1ed54e5a8ae432259ff21ed40eef2d84fff8b373585763677bf0a6c",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: the SikhRI paragraph following the early-1500s heading directly describes farming and the hall/kitchen. Its underlying early texts were not independently collated.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.sikhri-kartarpur-2019",
+          "citationSha256": "f07f017333f05f17111689943b361eb900fb22268cb96a74ff2b25b9c7009122",
+          "snapshotId": "snapshot.sikhri-kartarpur-2019-20261127",
+          "snapshotSha256": "d7f967940a279c4d3c64c4ef128284b80eb81f771515def3416d7f4b91571c50",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-lahina",
+      "claimSha256": "876af3fa56a42c4b48f003389df787c18f2b1885bea07dc0396c9736c8444805",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: the Encyclopaedia second paragraph describes instruction and nomination there. No reconstructed scene, dialogue or exact date is warranted.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.eos-kartarpur",
+          "citationSha256": "f15019a2a71ce8c3ef950634f4a9eacc0509210f6d144c01d0c1949ac864b6c7",
+          "snapshotId": "snapshot.eos-kartarpur-20261127",
+          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-macauliffe-recitation",
+      "claimSha256": "46764e03a5cfb74c91e2c182113ac5f82b100cbe9dab3c8da6466fa18ff2ccde",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: the transcription at printed pages 180–181 names the two evening compositions and the morning reading. It is a later traditional account, not independent eyewitness evidence.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.macauliffe-1909-vol1",
+          "citationSha256": "d38c517b65f2b43dcf51f23bd39b3202a01d7d30cd79c8e81402db15e9e09b8c",
+          "snapshotId": "snapshot.macauliffe-1909-vol1-20261127",
+          "snapshotSha256": "f5c16e1423e90fa0957d673ae61020d99500cc480c2937d3293c22d9d94532c9",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-ravi-place",
+      "claimSha256": "dff6ba50f872efeeb890ed02e29617edcef9b75f75efebad415c2dec5e18c730",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: the Encyclopaedia opening distinguishes Ravi-side Kartarpur from its Jalandhar namesake; Macauliffe page 180 corroborates the river setting. This checks attributed source wording, not present-day administrative geography.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.eos-kartarpur",
+          "citationSha256": "106e42136bbde25f0abd3c83e302ab37dac38b7cc2e529757515f2f5a35d34bb",
+          "snapshotId": "snapshot.eos-kartarpur-20261127",
+          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        },
+        {
+          "sourceId": "source.macauliffe-1909-vol1",
+          "citationSha256": "feff1703cc8d81c1f4f667c1737965a8ee850d076a22d9b2d6e6f4c2ff448eff",
+          "snapshotId": "snapshot.macauliffe-1909-vol1-20261127",
+          "snapshotSha256": "f5c16e1423e90fa0957d673ae61020d99500cc480c2937d3293c22d9d94532c9",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-recitation",
+      "claimSha256": "a4c96b7e6fe97561ce2b8fae50f6050567c85e11147a6ec1d74bfe23bb156af6",
+      "verdict": "INCOMPLETE",
+      "note": "INCOMPLETE: exact original Gurmukhi witness unavailable in this session. Do not infer source support from a previous builder report.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "citationSha256": "76157393ed24b0fae2113642bfc9ad2b03e99abb8d9717803ef512df88e80d1a",
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
+          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
+          "support": "INCOMPLETE",
+          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-return-dress",
+      "claimSha256": "d8f936ed4e1d2769fcd165bc2146a91be57765c790f5945d20dec42555ddfe39",
+      "verdict": "INCOMPLETE",
+      "note": "INCOMPLETE: this session could not open the exact BaniDB witness. The earlier builder receipt is not a new semantic source check.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "citationSha256": "17b6d2fce5a446d7d59b6600c8fd702a438a37cef008f0a274d8cf4f4ccf82e4",
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
+          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
+          "support": "INCOMPLETE",
+          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-source-generation",
+      "claimSha256": "7337e62c3f68b0d3018add2a04afee630ffc48dd0b93fd8918fa43681b83300f",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: the two Encyclopaedia entries give the stated lifespans. The later-generation conclusion is conditional on those dates; it does not date the pauri.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.eos-bhai-gurdas",
+          "citationSha256": "7e49dc12d8ff93ca13dc7fa549c992f107098739360cb9d3e2ac1c8507040357",
+          "snapshotId": "snapshot.eos-bhai-gurdas-20261127",
+          "snapshotSha256": "f7387aff6e7891b56ca420fd1e5eb37db073f391c9892727f8793eb987e7c8d2",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        },
+        {
+          "sourceId": "source.eos-kartarpur",
+          "citationSha256": "9b9361768db00f995242b37159c27a66181a6e13bfcd2843beb6833f9610cf3e",
+          "snapshotId": "snapshot.eos-kartarpur-20261127",
+          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "support": "SUPPORTS",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    },
+    {
+      "claimId": "claim.kartarpur-source-wording",
+      "claimSha256": "89b1717bbd00aed5839293f8e63b0593900a81015205d85a3cda5996094e770e",
+      "verdict": "INCOMPLETE",
+      "note": "INCOMPLETE: Macauliffe wording inspected, but exact BaniDB original unavailable. Preserve the reported distinction pending direct original-source inspection.",
+      "sourceChecks": [
+        {
+          "sourceId": "source.bhai-gurdas-vaar1-pauri38",
+          "citationSha256": "9fc5888bf416d2747ea22069ca69cbd8ff7062b0c48998f90a366faf23660080",
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
+          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
+          "support": "INCOMPLETE",
+          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+        },
+        {
+          "sourceId": "source.macauliffe-1909-vol1",
+          "citationSha256": "169f14ef703398cdf227441bfe616b0c1fff93079c33b17891b316d9e8af9a79",
+          "snapshotId": "snapshot.macauliffe-1909-vol1-20261127",
+          "snapshotSha256": "f5c16e1423e90fa0957d673ae61020d99500cc480c2937d3293c22d9d94532c9",
+          "support": "CONTEXT",
+          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+        }
+      ]
+    }
+  ],
+  "paragraphAssessments": [
+    {
+      "blockId": "block.story-clothes",
+      "blockSha256": "2cdbecaecb6cb5a0f3f2c2afb6ac31042039fccba4b05f75371930adca61b428",
+      "claimIds": [
+        "claim.kartarpur-return-dress"
+      ],
+      "verdict": "INCOMPLETE",
+      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+    },
+    {
+      "blockId": "block.story-place",
+      "blockSha256": "802b1eb62e44b8b7e0421bd20d61be222229de98f495468ed8354338890907c8",
+      "claimIds": [
+        "claim.kartarpur-ravi-place",
+        "claim.kartarpur-family-home"
+      ],
+      "verdict": "QUALIFIED",
+      "note": "Prose stays attributed to the inspected sources and introduces no additional historical scene."
+    },
+    {
+      "blockId": "block.story-gathering",
+      "blockSha256": "84247b3ce6138f76c5357e178f63a9bbe612e025e68d26345823109a0e0f6d16",
+      "claimIds": [
+        "claim.kartarpur-return-dress",
+        "claim.kartarpur-recitation"
+      ],
+      "verdict": "INCOMPLETE",
+      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+    },
+    {
+      "blockId": "block.story-work",
+      "blockSha256": "f5388f9fd369c8f381bb00563005f47346174343186591a7e51a7744fd607dbe",
+      "claimIds": [
+        "claim.kartarpur-farm-kitchen"
+      ],
+      "verdict": "QUALIFIED",
+      "note": "Prose stays attributed to the inspected sources and introduces no additional historical scene."
+    },
+    {
+      "blockId": "block.story-continuity",
+      "blockSha256": "fe0e87b362988eb08b89d5f06f3111db4425a8989aef4a6dc42e3dea564d499d",
+      "claimIds": [
+        "claim.kartarpur-lahina",
+        "claim.kartarpur-angad-in-vaar"
+      ],
+      "verdict": "INCOMPLETE",
+      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+    },
+    {
+      "blockId": "block.study-generation",
+      "blockSha256": "ae75f89f68f735b974b3282dbfc2224eae4f70d00ce35481d157dec5bb516616",
+      "claimIds": [
+        "claim.kartarpur-source-generation",
+        "claim.kartarpur-return-dress"
+      ],
+      "verdict": "INCOMPLETE",
+      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+    },
+    {
+      "blockId": "block.study-wording",
+      "blockSha256": "92b9c0560f02927925f8edce7722cb8230bf1e3fd506763bdd82a29016e2beea",
+      "claimIds": [
+        "claim.kartarpur-macauliffe-recitation",
+        "claim.kartarpur-source-wording",
+        "claim.kartarpur-return-dress"
+      ],
+      "verdict": "INCOMPLETE",
+      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+    },
+    {
+      "blockId": "block.question-source",
+      "blockSha256": "f5e6ad1907edeba6573d8f5aec292a793f47cdb7a9f191b5f1ebef95c144c80e",
+      "claimIds": [],
+      "verdict": "EDITORIAL_ONLY",
+      "note": "Question is marked as editorial and asserts no additional historical event."
+    },
+    {
+      "blockId": "block.question-community",
+      "blockSha256": "88c7eb0f5f6c9809c3e295b449e2b5d443391d8ce93741ba228796bce6f7c2b3",
+      "claimIds": [],
+      "verdict": "EDITORIAL_ONLY",
+      "note": "Question is marked as editorial and asserts no additional historical event."
+    },
+    {
+      "blockId": "block.question-precision",
+      "blockSha256": "f58d13677e6f62ca7c80efde41275b414c6e26ea385c5e2b400c5f239836ddb8",
+      "claimIds": [],
+      "verdict": "EDITORIAL_ONLY",
+      "note": "Question is marked as editorial and asserts no additional historical event."
+    }
+  ]
+}

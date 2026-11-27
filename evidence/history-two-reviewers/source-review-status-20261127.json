@@ -1,0 +1,37 @@
+{
+  "status": "WITHHELD",
+  "policy": "OWNER_CHATGPT_CLAUDE_SOURCE_REVIEW_20261127",
+  "editorialReview": "PENDING_OR_INCOMPLETE",
+  "humanReview": "NOT_PERFORMED",
+  "releaseAuthorization": "NOT_GRANTED_BY_THIS_TOOL",
+  "packetSha256": "e3752f5b6dbf0bcde24a58ef015a949cac62a83df8fbf20eeeb0645943f9e349",
+  "reasons": [
+    "CLAIM_REVIEW_UNRESOLVED",
+    "MISSING_CHATGPT_AUTHOR_SOURCE_REVIEW",
+    "MISSING_CLAUDE_CHECKER_SOURCE_REVIEW",
+    "PARAGRAPH_REVIEW_UNRESOLVED",
+    "SOURCE_INSPECTION_INCOMPLETE",
+    "SOURCE_SUPPORT_INCOMPLETE"
+  ],
+  "reviews": [
+    {
+      "id": "review.kartarpur-chatgpt-20261127",
+      "provider": "OpenAI",
+      "product": "ChatGPT",
+      "role": "CHATGPT_AUTHOR",
+      "recordReference": "content-intake/history/reviews/kartarpur-chatgpt-20261127.json",
+      "validForCurrentPacket": false,
+      "reasons": [
+        "CLAIM_REVIEW_UNRESOLVED",
+        "PARAGRAPH_REVIEW_UNRESOLVED",
+        "SOURCE_SUPPORT_INCOMPLETE"
+      ]
+    }
+  ],
+  "inspection": {
+    "qualifiedClaims": 6,
+    "incompleteClaims": 4,
+    "actualClaudeSourceReviews": 0
+  },
+  "verificationScope": "Record structure, exact content bindings and caller-supplied producer/artifact provenance only; not historical truth, provider authentication or proof of source inspection."
+}

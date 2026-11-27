@@ -6,6 +6,8 @@ on:
       - 'content-intake/history/**'
       - 'tests/history-registry.mjs'
       - 'tests/history-draft.mjs'
+      - 'tests/history-editorial.mjs'
+      - 'docs/history/**'
       - 'docs/history/KARTARPUR_DRAFT_20261127.md'
       - 'tests/fixtures/history/**'
       - 'hukamnama/json.mjs'
@@ -27,8 +29,9 @@ jobs:
           node-version: '22'
       - name: Verify draft linkage and review boundaries
         run: |
-          node --test tests/history-registry.mjs tests/history-draft.mjs
+          node --test tests/history-registry.mjs tests/history-draft.mjs tests/history-editorial.mjs
           node tools/history/check.mjs
           node tools/history/draft-check.mjs
+          node tools/history/editorial-check.mjs
 # Research metadata and a withheld AI-assisted manuscript only. No human qualification, historical truth, deployment,
 # publication, audio, external contact or actual-device acceptance is asserted.

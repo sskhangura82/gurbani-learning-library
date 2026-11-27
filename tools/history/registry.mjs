@@ -242,6 +242,8 @@ function externalReviews(reviewers, receipts) {
   return roster;
 }
 
+// Legacy optional human-attestation path. This is not a prerequisite for the
+// owner-authorized ChatGPT + Claude workflow in draft.mjs / editorial.mjs.
 export function prepareChapter(registry, chapterId, {reviewers = [], receipts = []} = {}) {
   const packet = reviewPacket(registry, chapterId), digest = chapterDigest(registry, chapterId);
   const roster = externalReviews(reviewers, receipts), reasons = new Set();

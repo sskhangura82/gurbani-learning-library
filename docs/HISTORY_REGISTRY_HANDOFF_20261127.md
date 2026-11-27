@@ -1,5 +1,7 @@
 # Sikh History evidence registry — builder handoff
 
+> Policy update: mandatory human authorship/review statements in this earlier record are superseded by the owner decision in [TWO_REVIEWER_POLICY_20261127.md](history/TWO_REVIEWER_POLICY_20261127.md). The earlier work remains evidence of its original scope.
+
 2026-11-27. Research tooling only. No historical chapter or application route is
 being published by this change. The builder criteria were committed first in
 `docs/HISTORY_REGISTRY_CRITERIA_20261127.md`.

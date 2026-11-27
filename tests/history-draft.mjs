@@ -26,7 +26,7 @@ function fixture() {
   return {registry, draft};
 }
 
-test('a resolving AI draft stays withheld and outside human chapter admission', () => {
+test('a resolving AI draft awaits actual source-review records', () => {
   const {registry, draft} = fixture();
   const result = prepareResearchDraft(registry, draft);
   assert.equal(result.status, 'WITHHELD');
@@ -132,7 +132,7 @@ test('real manuscript review copy is current, sourced, honest and not admitted',
   assert.throws(() => prepareChapter(registry, draft.id), /UNKNOWN_CHAPTER/);
   const rendered = renderDraftMarkdown(registry, draft);
   assert.match(rendered, /AI-assisted historical draft/);
-  assert.match(rendered, /awaiting qualified historical and Punjabi review/);
+  assert.match(rendered, /awaiting ChatGPT and Claude source checks/);
   assert.match(rendered, /Bhai Gurdas/);
   assert.match(rendered, /Printed|printed/);
   assert.equal(readFileSync(new URL('../docs/history/KARTARPUR_DRAFT_20261127.md', import.meta.url), 'utf8'), rendered);
