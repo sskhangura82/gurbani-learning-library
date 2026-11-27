@@ -27,7 +27,7 @@ jobs:
         run: |
           node tests/hukamnama-foundation-preserved.mjs
           python3 tests/hukamnama-ingest.py
-          node --test tests/hukamnama-json.mjs tests/hukamnama-stage-contract.mjs tests/hukamnama-delivery.mjs tests/hukamnama-learning.mjs tests/hukamnama-import-idempotence.mjs tests/hukamnama-signing.mjs tests/hukamnama-preparation.mjs
+          node --test tests/hukamnama-json.mjs tests/hukamnama-stage-contract.mjs tests/hukamnama-delivery.mjs tests/hukamnama-learning.mjs tests/hukamnama-import-idempotence.mjs tests/hukamnama-signing.mjs tests/hukamnama-preparation.mjs tests/hukamnama-install-proposal.mjs
       - name: Reproduce the complete pinned application
         run: |
           node tools/build-app-bundles.mjs --check
