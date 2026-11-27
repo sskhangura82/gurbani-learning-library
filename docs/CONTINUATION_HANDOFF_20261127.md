@@ -9,7 +9,8 @@ single draft PR against `main`; it is not a family-site deployment.
 The application bytes exercised in the final combined Mac browser run are
 commit `da9fe489921addc33591f25204a9bbf07d40ef6f`. Subsequent changes complete
 historical source-review receipts, correct the navigation fixture's own path
-normalization, and record evidence and this handoff. Those changes do not alter
+normalization and Explore test's clock assumption, and record evidence and this
+handoff. Those changes do not alter
 the browser-tested runtime. The final runtime digest inventory records that
 relationship explicitly.
 
@@ -130,8 +131,12 @@ acceptance.
 
 Evidence preserves initial failures: unavailable local Chromium, the multi-MiB
 Base64 decoder defect, the importer environment-override loophole, and a trailing
-slash error in the navigation test's own fixture. Each resolved issue has an
-actual successful rerun; Claude authentication remains explicitly unresolved.
+slash error in the navigation test's own fixture. The first GitHub run also
+found an Explore test that assumed a daytime initial theme. Its corrected
+transition explicitly establishes and verifies Day before switching to Amrit
+Vela; the source, layout, and saved-state assertions are retained. Final GitHub
+results belong to the PR's exact head. Claude authentication remains explicitly
+unresolved.
 
 ## Branch and review state
 
