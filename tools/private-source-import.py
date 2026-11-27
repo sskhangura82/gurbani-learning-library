@@ -182,17 +182,30 @@ def dhammapada(path, checked_on):
 
 
 def outside_git(path):
-    # Git itself honors mount boundaries and distinguishes real worktrees from
-    # inert filesystem markers. No repository or Git configuration is changed.
-    existing = path
+    # Resolve symlink ancestors before testing even a not-yet-created output.
+    # Reject markers ourselves: Git can otherwise be redirected by environment
+    # variables, stopped at a mount boundary, or fail because a marker is broken.
+    existing = Path(path).resolve()
     while not existing.exists():
         existing = existing.parent
-    result = subprocess.run(["git", "-C", str(existing), "rev-parse", "--is-inside-work-tree"],
-                            capture_output=True, text=True, check=False)
-    if result.returncode == 0 and result.stdout.strip() == "true":
-        raise ValueError("Refusing to write plaintext source payload inside a Git worktree")
-    if result.returncode not in (0, 128):
-        raise ValueError("Could not verify output is outside Git")
+    if not existing.is_dir():
+        existing = existing.parent
+    for ancestor in (existing, *existing.parents):
+        marker = ancestor / ".git"
+        if marker.exists() or marker.is_symlink():
+            raise ValueError("Private source files must remain outside every Git worktree")
+    environment = {key: value for key, value in os.environ.items() if not key.startswith("GIT_")}
+    environment["LC_ALL"] = "C"
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(existing), "rev-parse", "--is-inside-work-tree", "--is-bare-repository"],
+            capture_output=True, text=True, check=False, env=environment)
+    except OSError as error:
+        raise ValueError("Git location checks are unavailable; refusing private source processing") from error
+    if result.returncode == 0:
+        raise ValueError("Private source files must remain outside every Git repository, including bare repositories")
+    if result.returncode != 128 or "not a git repository" not in result.stderr:
+        raise ValueError("Could not establish that private source files are outside Git")
 
 
 def private_write(path, data):
@@ -217,6 +230,7 @@ def main():
     if date.fromisoformat(args.checked_on).isoformat() != args.checked_on:
         raise ValueError("Use an exact YYYY-MM-DD checked-on date")
     for path, expected in ((args.bible_zip, args.bible_sha256), (args.dhammapada_text, args.dhammapada_sha256)):
+        outside_git(path)
         if not re.fullmatch(r"[a-f0-9]{64}", expected) or sha(path.read_bytes()) != expected:
             raise ValueError(f"Pinned input digest mismatch: {path.name}")
     output = args.output_dir.resolve()
@@ -252,6 +266,7 @@ def main():
                "privacy": "Plaintext build input only, outside Git, not published or encrypted. No password created.",
                "omissions": "No canonical text omitted from either selected source. No Bible audio/maps imported. The selected publisher editions already omit the ancillary material disclosed in their notices."}
     if args.dhammapada_retrieval_receipt:
+        outside_git(args.dhammapada_retrieval_receipt)
         retrieval = json.loads(args.dhammapada_retrieval_receipt.read_bytes())
         if retrieval.get("sha256") != args.dhammapada_sha256:
             raise ValueError("Retrieval receipt does not match the pinned Dhammapada file")
