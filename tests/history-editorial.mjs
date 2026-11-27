@@ -133,12 +133,27 @@ test('no obsolete human authorship gate is imposed on the real Kartarpur packet'
   assert.equal(r.packet.claims.length, 10);
 });
 
-test('checked-in first-stage source record reports six qualified claims and no Claude inspection', async () => {
+test('checked-in author source record covers ten qualified claims and awaits only actual Claude inspection', async () => {
   const {execFileSync} = await import('node:child_process');
   const result = JSON.parse(execFileSync(process.execPath, [new URL('../tools/history/editorial-check.mjs', import.meta.url).pathname], {encoding: 'utf8'}));
   assert.equal(result.status, 'WITHHELD');
-  assert.deepEqual(result.inspection, {qualifiedClaims: 6, incompleteClaims: 4, actualClaudeSourceReviews: 0});
-  assert(result.reasons.includes('MISSING_CLAUDE_CHECKER_SOURCE_REVIEW'));
+  assert.deepEqual(result.inspection, {qualifiedClaims: 10, incompleteClaims: 0, actualClaudeSourceReviews: 0});
+  assert.deepEqual(result.reasons, ['MISSING_CLAUDE_CHECKER_SOURCE_REVIEW']);
   assert(!result.reasons.includes('REVIEW_ARTIFACT_NOT_VERIFIED'));
   assert.equal(result.humanReview, 'NOT_PERFORMED');
+  assert.equal(result.claudeAttempt.status, 'AUTHENTICATION_REQUIRED');
+  assert.equal(result.claudeAttempt.semanticReviewPerformed, false);
+  assert.equal(result.claudeAttempt.currentPacket, true);
+});
+
+test('an actual Claude authentication failure cannot substitute for a semantic source review', () => {
+  const attempt = JSON.parse(readFileSync(new URL('../evidence/history-two-reviewers/claude-authentication-attempt-20261127.json', import.meta.url)));
+  assert.equal(attempt.provider, 'Anthropic');
+  assert.equal(attempt.exitCode, 1);
+  assert.equal(attempt.semanticReviewPerformed, false);
+  assert.equal(attempt.reviewRecordCreated, false);
+  assert.equal(attempt.inputTokens + attempt.outputTokens, 0);
+  assert.match(attempt.providerMessage, /OAuth session expired/);
+  const f = fixture(); f.evidence.records[1] = attempt;
+  assert.throws(() => evaluate(f), /INVALID_SEMANTIC_REVIEW/);
 });

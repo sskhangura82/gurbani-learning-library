@@ -4,9 +4,11 @@ Owner policy: ChatGPT prepares supported claims; actual Claude independently che
 
 Draft binding: `bd4169a62517d75951d95a1da7be5234fa55bddb9a06a7ea0ccd46df260febe6`.
 
-Editorial packet with inspected source snapshots: `e3752f5b6dbf0bcde24a58ef015a949cac62a83df8fbf20eeeb0645943f9e349`.
+Editorial packet with inspected source snapshots: `0d663e0b8f772c8a35aeb4c6bfbfc64d54ce57a2225257df14cc695397d4680e`.
 
-Current ChatGPT inspection: six qualified attributed claims checked; four claims remain incomplete because the exact BaniDB witness could not be retrieved. No Claude source review exists. These are checks of source wording, not independent proof of the historical events.
+Current ChatGPT inspection: all five source witnesses inspected, ten qualified attributed claims checked, zero incomplete claims. All seven narrative paragraphs retain their qualifications; three further-study questions remain editorial. These are checks of exact source wording and claim support, not independent proof of the historical events.
+
+The actual Claude Code invocation used this packet in an isolated temporary directory and failed before model execution: its OAuth session had expired and could not be refreshed. Zero Claude semantic source reviews exist. The sanitized attempt receipt is `evidence/history-two-reviewers/claude-authentication-attempt-20261127.json`. Renew the existing Claude sign-in, then perform the independent review below; the failure receipt is not a review record.
 
 ## Exact claims and source locators
 
@@ -14,7 +16,7 @@ Current ChatGPT inspection: six qualified attributed claims checked; four claims
 
 Vaar 1, Pauri 38 names Guru Angad in its account following Guru Nanak's return.
 
-INCOMPLETE: exact original Gurmukhi witness unavailable in this session; author attribution alone is insufficient.
+QUALIFIED: directly read original Unicode verseId 200336. Guru Angad is named in the third original line, after the return/clothing lines. No reconstructed succession event or dialogue is derived from its imagery.
 
 - [Vaaran Bhai Gurdas Ji, Vaar 1, Pauri 38](https://api.banidb.com/v2/shabads/40038) — Vaar 1, Pauri 38, original verse line 3; BaniDB verseId 200336; supports.
 
@@ -63,7 +65,7 @@ QUALIFIED: the Encyclopaedia opening distinguishes Ravi-side Kartarpur from its 
 
 Vaar 1, Pauri 38 mentions recitation and discussion, names Sodar and Aarti, and then refers to Jap at Amrit Vela.
 
-INCOMPLETE: exact original Gurmukhi witness unavailable in this session. Do not infer source support from a previous builder report.
+QUALIFIED: directly read original Unicode verseIds 200338–200340. The recitation/discussion terms and the named Sodar, Aarti and Amrit Vela Jap references occur in those lines. No complete historical service order is inferred.
 
 - [Vaaran Bhai Gurdas Ji, Vaar 1, Pauri 38](https://api.banidb.com/v2/shabads/40038) — Vaar 1, Pauri 38, original verse lines 5–7; BaniDB verseIds 200338–200340; supports.
 
@@ -71,7 +73,7 @@ INCOMPLETE: exact original Gurmukhi witness unavailable in this session. Do not 
 
 Bhai Gurdas's Vaar 1, Pauri 38 describes Guru Nanak returning to Kartarpur, leaving udasi garb and wearing householder's clothes.
 
-INCOMPLETE: this session could not open the exact BaniDB witness. The earlier builder receipt is not a new semantic source check.
+QUALIFIED: directly read original Unicode verseIds 200334–200335. The text names the return to Kartarpur and change from udasi to worldly/householder clothing. This is an English historical description of the early account, not a dated eyewitness observation or a critical translation.
 
 - [Vaaran Bhai Gurdas Ji, Vaar 1, Pauri 38](https://api.banidb.com/v2/shabads/40038) — Vaar 1, Pauri 38, original verse lines 1–2; BaniDB verseIds 200334–200335; supports.
 
@@ -88,7 +90,7 @@ QUALIFIED: the two Encyclopaedia entries give the stated lifespans. The later-ge
 
 Bhai Gurdas names Aarti where Macauliffe's account names Sohila; both name Sodar and a morning Jap/Japji reference.
 
-INCOMPLETE: Macauliffe wording inspected, but exact BaniDB original unavailable. Preserve the reported distinction pending direct original-source inspection.
+QUALIFIED: directly compared original Unicode verseId 200340 with Macauliffe printed page181 in the transcription. The named compositions differ as stated. This is a wording comparison, not proof of incompatible practices or independent historical transmission.
 
 - [Vaaran Bhai Gurdas Ji, Vaar 1, Pauri 38](https://api.banidb.com/v2/shabads/40038) — Vaar 1, Pauri 38, original verse line 7; BaniDB verseId 200340; supports.
 - [The Sikh Religion: Its Gurus, Sacred Writings and Authors, Volume I](https://sacred-texts.com/book/the-sikh-religion-volume-1/life-of-guru-nanak-chapter-xv) — Volume I, chapter XV, printed page 181, first paragraph; context.

@@ -4,14 +4,9 @@
   "editorialReview": "PENDING_OR_INCOMPLETE",
   "humanReview": "NOT_PERFORMED",
   "releaseAuthorization": "NOT_GRANTED_BY_THIS_TOOL",
-  "packetSha256": "e3752f5b6dbf0bcde24a58ef015a949cac62a83df8fbf20eeeb0645943f9e349",
+  "packetSha256": "0d663e0b8f772c8a35aeb4c6bfbfc64d54ce57a2225257df14cc695397d4680e",
   "reasons": [
-    "CLAIM_REVIEW_UNRESOLVED",
-    "MISSING_CHATGPT_AUTHOR_SOURCE_REVIEW",
-    "MISSING_CLAUDE_CHECKER_SOURCE_REVIEW",
-    "PARAGRAPH_REVIEW_UNRESOLVED",
-    "SOURCE_INSPECTION_INCOMPLETE",
-    "SOURCE_SUPPORT_INCOMPLETE"
+    "MISSING_CLAUDE_CHECKER_SOURCE_REVIEW"
   ],
   "reviews": [
     {
@@ -20,18 +15,21 @@
       "product": "ChatGPT",
       "role": "CHATGPT_AUTHOR",
       "recordReference": "content-intake/history/reviews/kartarpur-chatgpt-20261127.json",
-      "validForCurrentPacket": false,
-      "reasons": [
-        "CLAIM_REVIEW_UNRESOLVED",
-        "PARAGRAPH_REVIEW_UNRESOLVED",
-        "SOURCE_SUPPORT_INCOMPLETE"
-      ]
+      "validForCurrentPacket": true,
+      "reasons": []
     }
   ],
   "inspection": {
-    "qualifiedClaims": 6,
-    "incompleteClaims": 4,
+    "qualifiedClaims": 10,
+    "incompleteClaims": 0,
     "actualClaudeSourceReviews": 0
+  },
+  "claudeAttempt": {
+    "status": "AUTHENTICATION_REQUIRED",
+    "exitCode": 1,
+    "semanticReviewPerformed": false,
+    "currentPacket": true,
+    "providerMessage": "Failed to authenticate: OAuth session expired and could not be refreshed"
   },
   "verificationScope": "Record structure, exact content bindings and caller-supplied producer/artifact provenance only; not historical truth, provider authentication or proof of source inspection."
 }

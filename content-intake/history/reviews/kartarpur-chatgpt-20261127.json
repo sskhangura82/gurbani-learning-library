@@ -7,24 +7,24 @@
   "product": "ChatGPT",
   "role": "CHATGPT_AUTHOR",
   "kind": "SEMANTIC_SOURCE_INSPECTION",
-  "packetSha256": "e3752f5b6dbf0bcde24a58ef015a949cac62a83df8fbf20eeeb0645943f9e349",
-  "reviewedAt": "2026-11-27T20:49:58.999Z",
+  "packetSha256": "0d663e0b8f772c8a35aeb4c6bfbfc64d54ce57a2225257df14cc695397d4680e",
+  "reviewedAt": "2026-11-27T21:04:13.388Z",
   "recordReference": "content-intake/history/reviews/kartarpur-chatgpt-20261127.json",
   "producerReference": "ChatGPT session 2026-11-27, agent /root/source_policy_research; actual web retrieval references are recorded with each source snapshot.",
   "claimAssessments": [
     {
       "claimId": "claim.kartarpur-angad-in-vaar",
       "claimSha256": "b1ca031a78e81f5a16a3dfe112c2b5e2bcacdcc3cfda7e1a9732a52fe4e746e3",
-      "verdict": "INCOMPLETE",
-      "note": "INCOMPLETE: exact original Gurmukhi witness unavailable in this session; author attribution alone is insufficient.",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: directly read original Unicode verseId 200336. Guru Angad is named in the third original line, after the return/clothing lines. No reconstructed succession event or dialogue is derived from its imagery.",
       "sourceChecks": [
         {
           "sourceId": "source.bhai-gurdas-vaar1-pauri38",
           "citationSha256": "13e5f242231d2d7587cd6838fb07e3717c52f68cf2316e249944f10402864dd9",
-          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
-          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
-          "support": "INCOMPLETE",
-          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-mac-20261127",
+          "snapshotSha256": "f39b45fb7786fe8d8b610ab6d8691009a2c3d60dfce55b197111558bce7c733b",
+          "support": "SUPPORTS",
+          "note": "Inspected original Unicode at the exact cited verseIds in the new HTTP200 response. Provider heading200333 excluded; no modern translation used."
         }
       ]
     },
@@ -37,10 +37,10 @@
         {
           "sourceId": "source.eos-kartarpur",
           "citationSha256": "494a2d2b65e59524d5dd8ce500daf70ad841e080144260c5817248e8b0669b3d",
-          "snapshotId": "snapshot.eos-kartarpur-20261127",
-          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "snapshotId": "snapshot.eos-kartarpur-mac-20261127",
+          "snapshotSha256": "7c6e6ed3e7058dd7df1e92f37bd61c9222ab0b58622f53de65a075aac3793ac8",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     },
@@ -53,10 +53,10 @@
         {
           "sourceId": "source.sikhri-kartarpur-2019",
           "citationSha256": "f07f017333f05f17111689943b361eb900fb22268cb96a74ff2b25b9c7009122",
-          "snapshotId": "snapshot.sikhri-kartarpur-2019-20261127",
-          "snapshotSha256": "d7f967940a279c4d3c64c4ef128284b80eb81f771515def3416d7f4b91571c50",
+          "snapshotId": "snapshot.sikhri-kartarpur-2019-mac-20261127",
+          "snapshotSha256": "aafe15dc6c3970c848ca604a1cd78d3976392a4ff2951bf69377f0960ae3dede",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     },
@@ -69,10 +69,10 @@
         {
           "sourceId": "source.eos-kartarpur",
           "citationSha256": "f15019a2a71ce8c3ef950634f4a9eacc0509210f6d144c01d0c1949ac864b6c7",
-          "snapshotId": "snapshot.eos-kartarpur-20261127",
-          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "snapshotId": "snapshot.eos-kartarpur-mac-20261127",
+          "snapshotSha256": "7c6e6ed3e7058dd7df1e92f37bd61c9222ab0b58622f53de65a075aac3793ac8",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     },
@@ -85,10 +85,10 @@
         {
           "sourceId": "source.macauliffe-1909-vol1",
           "citationSha256": "d38c517b65f2b43dcf51f23bd39b3202a01d7d30cd79c8e81402db15e9e09b8c",
-          "snapshotId": "snapshot.macauliffe-1909-vol1-20261127",
-          "snapshotSha256": "f5c16e1423e90fa0957d673ae61020d99500cc480c2937d3293c22d9d94532c9",
+          "snapshotId": "snapshot.macauliffe-1909-vol1-mac-20261127",
+          "snapshotSha256": "bd9a10fd1a4d5127c980fdf40cc54529959c412263d49724b5fe1b9ac87628d8",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     },
@@ -101,50 +101,50 @@
         {
           "sourceId": "source.eos-kartarpur",
           "citationSha256": "106e42136bbde25f0abd3c83e302ab37dac38b7cc2e529757515f2f5a35d34bb",
-          "snapshotId": "snapshot.eos-kartarpur-20261127",
-          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "snapshotId": "snapshot.eos-kartarpur-mac-20261127",
+          "snapshotSha256": "7c6e6ed3e7058dd7df1e92f37bd61c9222ab0b58622f53de65a075aac3793ac8",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         },
         {
           "sourceId": "source.macauliffe-1909-vol1",
           "citationSha256": "feff1703cc8d81c1f4f667c1737965a8ee850d076a22d9b2d6e6f4c2ff448eff",
-          "snapshotId": "snapshot.macauliffe-1909-vol1-20261127",
-          "snapshotSha256": "f5c16e1423e90fa0957d673ae61020d99500cc480c2937d3293c22d9d94532c9",
+          "snapshotId": "snapshot.macauliffe-1909-vol1-mac-20261127",
+          "snapshotSha256": "bd9a10fd1a4d5127c980fdf40cc54529959c412263d49724b5fe1b9ac87628d8",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     },
     {
       "claimId": "claim.kartarpur-recitation",
       "claimSha256": "a4c96b7e6fe97561ce2b8fae50f6050567c85e11147a6ec1d74bfe23bb156af6",
-      "verdict": "INCOMPLETE",
-      "note": "INCOMPLETE: exact original Gurmukhi witness unavailable in this session. Do not infer source support from a previous builder report.",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: directly read original Unicode verseIds 200338–200340. The recitation/discussion terms and the named Sodar, Aarti and Amrit Vela Jap references occur in those lines. No complete historical service order is inferred.",
       "sourceChecks": [
         {
           "sourceId": "source.bhai-gurdas-vaar1-pauri38",
           "citationSha256": "76157393ed24b0fae2113642bfc9ad2b03e99abb8d9717803ef512df88e80d1a",
-          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
-          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
-          "support": "INCOMPLETE",
-          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-mac-20261127",
+          "snapshotSha256": "f39b45fb7786fe8d8b610ab6d8691009a2c3d60dfce55b197111558bce7c733b",
+          "support": "SUPPORTS",
+          "note": "Inspected original Unicode at the exact cited verseIds in the new HTTP200 response. Provider heading200333 excluded; no modern translation used."
         }
       ]
     },
     {
       "claimId": "claim.kartarpur-return-dress",
       "claimSha256": "d8f936ed4e1d2769fcd165bc2146a91be57765c790f5945d20dec42555ddfe39",
-      "verdict": "INCOMPLETE",
-      "note": "INCOMPLETE: this session could not open the exact BaniDB witness. The earlier builder receipt is not a new semantic source check.",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: directly read original Unicode verseIds 200334–200335. The text names the return to Kartarpur and change from udasi to worldly/householder clothing. This is an English historical description of the early account, not a dated eyewitness observation or a critical translation.",
       "sourceChecks": [
         {
           "sourceId": "source.bhai-gurdas-vaar1-pauri38",
           "citationSha256": "17b6d2fce5a446d7d59b6600c8fd702a438a37cef008f0a274d8cf4f4ccf82e4",
-          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
-          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
-          "support": "INCOMPLETE",
-          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-mac-20261127",
+          "snapshotSha256": "f39b45fb7786fe8d8b610ab6d8691009a2c3d60dfce55b197111558bce7c733b",
+          "support": "SUPPORTS",
+          "note": "Inspected original Unicode at the exact cited verseIds in the new HTTP200 response. Provider heading200333 excluded; no modern translation used."
         }
       ]
     },
@@ -157,42 +157,42 @@
         {
           "sourceId": "source.eos-bhai-gurdas",
           "citationSha256": "7e49dc12d8ff93ca13dc7fa549c992f107098739360cb9d3e2ac1c8507040357",
-          "snapshotId": "snapshot.eos-bhai-gurdas-20261127",
-          "snapshotSha256": "f7387aff6e7891b56ca420fd1e5eb37db073f391c9892727f8793eb987e7c8d2",
+          "snapshotId": "snapshot.eos-bhai-gurdas-mac-20261127",
+          "snapshotSha256": "17b6e17edb214e67ce57e20056eb3e14ee9f0d99be003975b7899dfc4f515bbb",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         },
         {
           "sourceId": "source.eos-kartarpur",
           "citationSha256": "9b9361768db00f995242b37159c27a66181a6e13bfcd2843beb6833f9610cf3e",
-          "snapshotId": "snapshot.eos-kartarpur-20261127",
-          "snapshotSha256": "f6a7ec516f4dab6ba137b47616020d48da3ba852159183bb0c74e2c9fe70c87b",
+          "snapshotId": "snapshot.eos-kartarpur-mac-20261127",
+          "snapshotSha256": "7c6e6ed3e7058dd7df1e92f37bd61c9222ab0b58622f53de65a075aac3793ac8",
           "support": "SUPPORTS",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     },
     {
       "claimId": "claim.kartarpur-source-wording",
       "claimSha256": "89b1717bbd00aed5839293f8e63b0593900a81015205d85a3cda5996094e770e",
-      "verdict": "INCOMPLETE",
-      "note": "INCOMPLETE: Macauliffe wording inspected, but exact BaniDB original unavailable. Preserve the reported distinction pending direct original-source inspection.",
+      "verdict": "QUALIFIED",
+      "note": "QUALIFIED: directly compared original Unicode verseId 200340 with Macauliffe printed page181 in the transcription. The named compositions differ as stated. This is a wording comparison, not proof of incompatible practices or independent historical transmission.",
       "sourceChecks": [
         {
           "sourceId": "source.bhai-gurdas-vaar1-pauri38",
           "citationSha256": "9fc5888bf416d2747ea22069ca69cbd8ff7062b0c48998f90a366faf23660080",
-          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-20261127",
-          "snapshotSha256": "c433662d6a98bed95a89172b5f703849d2eb634089a5de59047f6acd25aaec16",
-          "support": "INCOMPLETE",
-          "note": "Exact cited witness could not be fetched; no semantic check is attested."
+          "snapshotId": "snapshot.bhai-gurdas-vaar1-pauri38-mac-20261127",
+          "snapshotSha256": "f39b45fb7786fe8d8b610ab6d8691009a2c3d60dfce55b197111558bce7c733b",
+          "support": "SUPPORTS",
+          "note": "Inspected original Unicode at the exact cited verseIds in the new HTTP200 response. Provider heading200333 excluded; no modern translation used."
         },
         {
           "sourceId": "source.macauliffe-1909-vol1",
           "citationSha256": "169f14ef703398cdf227441bfe616b0c1fff93079c33b17891b316d9e8af9a79",
-          "snapshotId": "snapshot.macauliffe-1909-vol1-20261127",
-          "snapshotSha256": "f5c16e1423e90fa0957d673ae61020d99500cc480c2937d3293c22d9d94532c9",
+          "snapshotId": "snapshot.macauliffe-1909-vol1-mac-20261127",
+          "snapshotSha256": "bd9a10fd1a4d5127c980fdf40cc54529959c412263d49724b5fe1b9ac87628d8",
           "support": "CONTEXT",
-          "note": "Read exact cited section in the recorded retrieval. Assessment is limited to the attributed wording and retained qualifications."
+          "note": "Reopened the current source snapshot and inspected the exact cited section. The assessment is limited to attributed wording and retained qualifications."
         }
       ]
     }
@@ -204,8 +204,8 @@
       "claimIds": [
         "claim.kartarpur-return-dress"
       ],
-      "verdict": "INCOMPLETE",
-      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+      "verdict": "QUALIFIED",
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.story-place",
@@ -215,7 +215,7 @@
         "claim.kartarpur-family-home"
       ],
       "verdict": "QUALIFIED",
-      "note": "Prose stays attributed to the inspected sources and introduces no additional historical scene."
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.story-gathering",
@@ -224,8 +224,8 @@
         "claim.kartarpur-return-dress",
         "claim.kartarpur-recitation"
       ],
-      "verdict": "INCOMPLETE",
-      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+      "verdict": "QUALIFIED",
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.story-work",
@@ -234,7 +234,7 @@
         "claim.kartarpur-farm-kitchen"
       ],
       "verdict": "QUALIFIED",
-      "note": "Prose stays attributed to the inspected sources and introduces no additional historical scene."
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.story-continuity",
@@ -243,8 +243,8 @@
         "claim.kartarpur-lahina",
         "claim.kartarpur-angad-in-vaar"
       ],
-      "verdict": "INCOMPLETE",
-      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+      "verdict": "QUALIFIED",
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.study-generation",
@@ -253,8 +253,8 @@
         "claim.kartarpur-source-generation",
         "claim.kartarpur-return-dress"
       ],
-      "verdict": "INCOMPLETE",
-      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+      "verdict": "QUALIFIED",
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.study-wording",
@@ -264,29 +264,29 @@
         "claim.kartarpur-source-wording",
         "claim.kartarpur-return-dress"
       ],
-      "verdict": "INCOMPLETE",
-      "note": "At least one original-source claim remains unchecked in this session; paragraph is pending."
+      "verdict": "QUALIFIED",
+      "note": "Checked exact prose against all linked claims and their inspected sources. Attributions and limitations remain; no additional scene, dialogue, exact founding year or complete timetable is asserted."
     },
     {
       "blockId": "block.question-source",
       "blockSha256": "f5e6ad1907edeba6573d8f5aec292a793f47cdb7a9f191b5f1ebef95c144c80e",
       "claimIds": [],
       "verdict": "EDITORIAL_ONLY",
-      "note": "Question is marked as editorial and asserts no additional historical event."
+      "note": "Discussion question stays editorial; it asserts no additional historical event."
     },
     {
       "blockId": "block.question-community",
       "blockSha256": "88c7eb0f5f6c9809c3e295b449e2b5d443391d8ce93741ba228796bce6f7c2b3",
       "claimIds": [],
       "verdict": "EDITORIAL_ONLY",
-      "note": "Question is marked as editorial and asserts no additional historical event."
+      "note": "Discussion question stays editorial; it asserts no additional historical event."
     },
     {
       "blockId": "block.question-precision",
       "blockSha256": "f58d13677e6f62ca7c80efde41275b414c6e26ea385c5e2b400c5f239836ddb8",
       "claimIds": [],
       "verdict": "EDITORIAL_ONLY",
-      "note": "Question is marked as editorial and asserts no additional historical event."
+      "note": "Discussion question stays editorial; it asserts no additional historical event."
     }
   ]
 }
