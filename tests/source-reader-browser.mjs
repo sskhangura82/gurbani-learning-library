@@ -255,7 +255,8 @@ try{
     check.evictionPages=evictionPages;
     const beforeURL=page.url(),beforeLabel=await page.locator('#source-page-label').textContent();
     let release;const held=new Promise(resolve=>{release=resolve;});
-    await page.route(url=>url.pathname===prefix+raceChunk,async route=>{await held;if(completion==='failure')await route.abort('failed');else await route.continue();});
+    const raceRoute=url=>url.pathname===prefix+raceChunk;
+    await page.route(raceRoute,async route=>{await held;if(completion==='failure')await route.abort('failed');else await route.continue();});
     const requested=page.waitForRequest(request=>new URL(request.url()).pathname===prefix+raceChunk);
     await page.locator('#source-resume').click();await requested;
     try{
@@ -266,7 +267,7 @@ try{
       assert.equal(page.url(),beforeURL,'Old Resume cannot navigate after explicit Save');assert.equal(await page.locator('#source-page-label').textContent(),beforeLabel);
       assert.equal(await page.evaluate(key=>window.__sourceSnapshot()[key],raceFixture.key),newRaw);
       assert.ok(await page.locator('#source-resume').isEnabled());assert.match(await page.locator('#source-progress-status').textContent(),/Place saved at/);
-      await page.unroute(url=>url.pathname===prefix+raceChunk);
+      await page.unroute(raceRoute);
       await page.locator('#source-resume').click();await page.evaluate(()=>window.__sourceResumeTask);await exactPage(page,raceFixture,newRecord.page);
       const query=new URL(page.url()).searchParams;assert.equal(query.get('unit'),newRecord.unitId);assert.equal(query.get('line'),newRecord.lineId);
       const trace=await assertUnchanged(page,unrelated);assert.equal(trace.writes.length,1);assert.equal(trace.writes[0][0],raceFixture.key);
