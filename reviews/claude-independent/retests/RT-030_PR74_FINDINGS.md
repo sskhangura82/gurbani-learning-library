@@ -130,3 +130,18 @@ requires editing the module, which is total compromise and defeats every other c
 it is an architectural note, not a weakness.
 
 Running total: **35**.
+
+---
+
+## Instrument error 36 — appended 2026-11-27
+
+My commit `be94733` carried a message stating EXP-01 was "Now OPEN-CONDITIONAL" in the
+findings index. **It was not.** The script that was to make that edit aborted on a failed
+assertion — my anchor assumed two-space JSON indentation where the file uses three — so only
+this findings document was committed while the index still read `OPEN`.
+
+The commit message therefore asserted a change that had not happened. Corrected in the
+following commit, and recorded here rather than silently fixed, because a commit message that
+overstates what landed is exactly the kind of record that misleads a later reader.
+
+Running total: **36**.

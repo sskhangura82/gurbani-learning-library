@@ -1066,10 +1066,10 @@
    "location": "explore/app.js (PR #41)",
    "composition_or_verse": "nine incipits in the Explore lesson",
    "evidence": "explore/app.js contains no digest, integrity or verification call of any kind. Every other Gurmukhi surface verifies its source before rendering. The nine lines are currently correct - I checked. reviews/claude-independent/retests/RT-017_PR50_41_42_FINDINGS.md, reviews/claude-independent/findings/EXP-01_EXPLORER_RENDERS_GURBANI_UNVERIFIED.md. Builder corrected their own PR reference from #50 to #41; my RT-017 already had #41.",
-   "why_it_matters": "Nine incipits, not a scripture body, and currently correct. The exposure is that nothing would catch it if they stopped being correct. Easier to add the pattern now than to retrofit across many lessons once the Explorer grows.",
+   "why_it_matters": "CORRECTED 2026-11-27 in RT-030: explore/app.js does NOT exist at main, at the #62 composite, at #70 or at #74 - it exists only on PR #41's branch, an unmerged draft outside the composite chain. So this was never a defect in the shipping application, and my earlier OPEN status read as though it were. It applies only if #41 is merged. That condition matters: #41 targets main directly carrying an unverified Gurbani surface, which is the CHAIN-02 pattern, and it looks superseded by the index.html?view=explore surface whose per-line verification I tamper-tested in RT-030. Closing #41 rather than merging it is a sequencing decision for the builder to propose and the founder to make. ORIGINAL NOTE: Nine incipits, not a scripture body, and currently correct. The exposure is that nothing would catch it if they stopped being correct. Easier to add the pattern now than to retrofit across many lessons once the Explorer grows.",
    "proposed_correction": "Extend the existing verification pattern to explore/app.js. Builder's to implement.",
    "acceptance_test": "explore/app.js verifies its source digests before rendering, and a tampered cue line is refused.",
-   "status": "OPEN",
+   "status": "OPEN-CONDITIONAL",
    "origin": "INDEPENDENT"
  },
  {
