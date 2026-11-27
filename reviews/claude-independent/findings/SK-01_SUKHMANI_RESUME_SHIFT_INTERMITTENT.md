@@ -157,3 +157,21 @@ reproduction, not run the suite sixty times.
 The defect itself is unchanged, and still matters for the same reason: a person
 occasionally resumes Sukhmani Sahib past where they stopped. **It is still open,
 and PR #47 does not address it.**
+
+
+---
+
+## Another occurrence, 27 November — `verify-sukhmani-browser` failed again on review-only commits
+
+Check run 140270829092 failed on `3352b36063d4e42ea94da2e2ff1075a912bb25bd`, a
+commit on my review branch containing only the RT-021 frozen criteria document.
+
+Attribution is unchanged and establishable: this branch differs from `main` in
+**384 files, all under `reviews/claude-independent/`, zero outside it.** No
+application code, test code, workflow or data. The failure cannot come from
+anything I wrote.
+
+It is also on **unfixed** code: my review branch is based on `main`, which does
+not carry PR #59's repair. So this is the pre-existing defect appearing again,
+and it is useful as a live datapoint rather than a new problem — it confirms the
+defect is still present on `main` while a fix sits unmerged in a draft.

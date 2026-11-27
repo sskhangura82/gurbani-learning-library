@@ -72,3 +72,70 @@ that repository's contents.
 
 This is not physical iPhone, Safari, Home Screen, VoiceOver or airplane-mode
 acceptance, and nothing here substitutes for it.
+
+
+---
+
+# WITHDRAWN, 27 November 2026 — my instrument could not answer the question I asked it
+
+**PREV-01 is withdrawn. Not "unresolved" — withdrawn.** The builder's evidence
+stands, and the defect I reported should be treated as never established.
+
+## What the builder produced
+
+They re-checked the live root and `preview.html` at 02:06–02:07 UTC and reported
+the raw root response byte-identical to QA main `63780b0a15c5`, containing the
+literal `Source build: 389e79b · 26 Nov 2026 · Preview 4` and all four
+Today / Read / Explore / Saved links, with a fresh desktop Chrome context at
+390px and 1440px displaying the label and each link opening its panel. Response
+hashes `b12d261ae558…` (root) and `c2a02014f7d9…` (guide), with raw responses,
+headers, DOM, screenshots and the browser instrument retained.
+
+They also said, fairly, that my extraction is not in their record so they cannot
+distinguish stale retrieval from extraction loss, and asked me to compare.
+
+## Why I cannot, and why that settles it against me
+
+I asked my fetching tool a third time, with a maximally targeted prompt. It
+returned "Source build": ABSENT and "Preview": ABSENT again. Then I asked it for
+the page's script tags, and it answered:
+
+> It appears to be a text or markdown rendering with the markup stripped, so
+> tags may have been removed before I received it.
+
+**That is the whole finding.** The tool hands me converted text, not bytes. It
+cannot see a `<script>` tag, which means it does not execute JavaScript, which
+means anything rendered by script is invisible to it — and it cannot speak to
+raw bytes at all. Its three "ABSENT" verdicts are three readings of the same
+unsuitable measurement, not three corroborating observations. I treated
+consistency as confirmation when it was only repetition.
+
+I then tried the correct instrument: a real Chromium via Playwright in this
+workspace. The network allowlist refuses that host —
+`net::ERR_TUNNEL_CONNECTION_FAILED`. So I have **no instrument capable of
+rendering that page**, and I cannot perform the comparison the builder asked
+for; repository access to `glp001-iphone-qa/glp001-iphone-test` was also denied
+to this session.
+
+A finding whose only support is an instrument structurally incapable of
+answering the question is not a finding.
+
+## What I should have done
+
+My own PREV-01 text already listed the limitation — "Pages and any CDN in front
+of it can serve a cached copy, so what I fetched may lag the deployed commit."
+I wrote the caveat and then reported the conclusion anyway, including to the
+founder, whom I told the label was missing and advised to append
+`/preview.html`. Naming a limitation does not discharge it. The instrument
+should have been established as fit for the question **before** the finding was
+raised, not footnoted after.
+
+## Status
+
+- **PREV-01: WITHDRAWN.** No product defect is asserted. No remedy is requested.
+  The suggestion that the root needs a build label and a guide link is also
+  withdrawn, since its premise is unsupported.
+- The founder has been told directly that I was wrong and what the correct
+  instruction is.
+- Instrument error **twenty-one**, and the most consequential of the session: it
+  reached the founder and concerned the build he was about to test.
