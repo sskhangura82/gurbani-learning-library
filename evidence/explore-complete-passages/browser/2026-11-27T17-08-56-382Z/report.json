@@ -1,0 +1,1150 @@
+{
+  "schema": "glp.explore.complete-passages.browser.v1",
+  "startedAtUtc": "2026-11-27T17:08:56.403Z",
+  "checks": [
+    {
+      "name": "Source packages load only in Explore, and exact first letters open Kabir Salok 1 then restore with Back",
+      "status": "PASS",
+      "detail": {
+        "unit": "sggs.salok-kabir.salok001",
+        "backRestores": true,
+        "reloadRestores": true
+      }
+    },
+    {
+      "name": "Haumai renders all eight source rows including the remedy and opens its existing Knowledge passage",
+      "status": "PASS",
+      "detail": {
+        "completeRows": 8,
+        "existingKnowledgeRoute": true
+      }
+    },
+    {
+      "name": "English false positives stay empty; overlapping originals are grouped with both reader links",
+      "status": "PASS",
+      "detail": {
+        "overlapRoutes": 2,
+        "noApplicationSearchHistory": true
+      }
+    },
+    {
+      "name": "Complete results and controls fit narrow, tablet and desktop layouts, enlarged text and dark appearance",
+      "status": "PASS"
+    },
+    {
+      "name": "A damaged crosswalk or unavailable source withholds results while existing Read navigation remains usable",
+      "status": "PASS"
+    },
+    {
+      "name": "The installed exact offline shell serves search, complete passages and their existing Kabir reader",
+      "status": "FAIL",
+      "error": "page.waitForFunction: Timeout 20000ms exceeded.\n    at ready (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:30:93)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:112:85\n    at async check (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:22:49)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:107:2"
+    }
+  ],
+  "layouts": [
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "controls": [
+        {
+          "id": "passage-query",
+          "height": 54.78125,
+          "width": 250
+        },
+        {
+          "id": "passage-mode",
+          "height": 47.59375,
+          "width": 250
+        },
+        {
+          "id": "passage-submit",
+          "height": 44,
+          "width": 125.546875
+        },
+        {
+          "id": "passage-clear",
+          "height": 44,
+          "width": 61.40625
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "controls": [
+        {
+          "id": "passage-query",
+          "height": 54.78125,
+          "width": 320
+        },
+        {
+          "id": "passage-mode",
+          "height": 47.59375,
+          "width": 320
+        },
+        {
+          "id": "passage-submit",
+          "height": 44,
+          "width": 125.546875
+        },
+        {
+          "id": "passage-clear",
+          "height": 44,
+          "width": 61.40625
+        }
+      ]
+    },
+    {
+      "viewport": 820,
+      "documentWidth": 820,
+      "controls": [
+        {
+          "id": "passage-query",
+          "height": 54.78125,
+          "width": 695.03125
+        },
+        {
+          "id": "passage-mode",
+          "height": 47.59375,
+          "width": 695.03125
+        },
+        {
+          "id": "passage-submit",
+          "height": 44,
+          "width": 125.546875
+        },
+        {
+          "id": "passage-clear",
+          "height": 44,
+          "width": 61.40625
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "controls": [
+        {
+          "id": "passage-query",
+          "height": 54.78125,
+          "width": 768
+        },
+        {
+          "id": "passage-mode",
+          "height": 47.59375,
+          "width": 768
+        },
+        {
+          "id": "passage-submit",
+          "height": 44,
+          "width": 125.546875
+        },
+        {
+          "id": "passage-clear",
+          "height": 44,
+          "width": 61.40625
+        }
+      ]
+    },
+    {
+      "enlarged": true,
+      "width": 390,
+      "documentWidth": 390
+    }
+  ],
+  "screenshots": [
+    "haumai-390.png",
+    "haumai-complete-card.png",
+    "explore-320.png",
+    "explore-390.png",
+    "explore-820.png",
+    "explore-1440.png",
+    "explore-dark-390.png",
+    "explore-enlarged-390.png",
+    "failure-6.png"
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=today",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/index.html?view=explore",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/appearance.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/reader.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/appearance.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/continuous-core.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/learning/learning-ui.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/local-learning.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/reader.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/library.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/offline.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/learning/course.complete.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?bani=salok-kabir&unit=1"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/index.html?view=explore",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/index.html?view=explore",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=today"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/index.html",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/style.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/knowledge/index.html"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/knowledge/index.html"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/knowledge/index.html"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/pilot.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/knowledge/index.html"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/index.html?view=read",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/index.html?view=read",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/index.html?view=read"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/sw.js",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/full-japji.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/gurdwaras.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/gurdwara.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/simran.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/pauri-2-lesson.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/app.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/japji-full.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/arrivals.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/simran.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/arrivals.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/simran.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/app.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/content.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/core.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/gurdwaras.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/places.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/continuous-core.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/japji-full-data.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/japji-full.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/japji-lessons.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/line-meanings.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/learning.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/shared-learning.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/icons/icon-180.png?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/icons/icon-192.png?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/icons/icon-512.png?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/manifest.webmanifest?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/sukhmani.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/sukhmani.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/sukhmani-data.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/sukhmani-teaching.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/sukhmani-learning.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/sukhmani-reader.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/reader.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/reader.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/continuous-core.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/appearance.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/appearance.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/local-learning.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/offline.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/learning/learning-ui.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/learning/course.complete.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/library.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/jaap.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/savaiye.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/chaupai.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/anand.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/rehras.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/nitnem/data/sohila.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/source-integrity.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/library.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/learning/course.complete.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/vendor/opengranth/LICENSE?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/vendor/opengranth/NOTICE?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/library.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/learning/course.complete.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/breathing.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/breathing.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/breathing-core.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/breathing.js?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/article.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/articles.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/app.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/core.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/source-contracts.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/catalog.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/catalog.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/core.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/articles/app.bundle.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/style.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/app.bundle.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/pilot.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/hukamnama/?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/hukamnama/index.html?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/hukamnama/style.css?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/hukamnama/reader.bundle.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/passage-contracts.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/passages.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/passage-ui.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/search.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/kinds.mjs?glp_release=0.24-explore-complete-passages-20261127-1",
+      "referrer": "http://127.0.0.1:53302/explore-review/sw.js"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-mahalla9/data/salok-mahalla9.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/salok-kabir/data/salok-kabir.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/knowledge/scripture.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/?view=explore",
+      "referrer": null
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/css/home.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/library.css",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/home.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/js/pwa.js",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/app.bundle.mjs",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    },
+    {
+      "url": "http://127.0.0.1:53302/explore-review/library/complete-passages.json",
+      "referrer": "http://127.0.0.1:53302/explore-review/?view=explore"
+    }
+  ],
+  "runtimeErrors": [],
+  "limitations": [
+    "Desktop Chromium only; narrow viewports simulate phone layout. No physical iPhone, iPad, Safari, VoiceOver or Home Screen acceptance.",
+    "Offline means browser network emulation with an actual service worker, not physical airplane-mode testing.",
+    "Fresh nonpersistent profiles and synthetic storage only. This is builder evidence, not independent or qualified review.",
+    "Only the 302 connected complete passages are searchable. No whole-corpus admission or printed-Ang authentication is asserted."
+  ],
+  "browser": "158.0.8127.37",
+  "failure": "page.waitForFunction: Timeout 20000ms exceeded.\n    at ready (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:30:93)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:112:85\n    at async check (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:22:49)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:107:2",
+  "finishedAtUtc": "2026-11-27T17:09:19.268Z"
+}

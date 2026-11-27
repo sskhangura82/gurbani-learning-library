@@ -1,0 +1,19 @@
+{
+  "schema": "glp.explore.candidate-inputs.v1",
+  "base": "d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a",
+  "frozenCriteriaCommit": "6238a63",
+  "files": {
+    "index.html": "86799464a0f91870d937c312c439894ce6a591980710eae6cc6cda1a989e4577",
+    "library/app.bundle.mjs": "aea5146a7944293993c0ca1b7dcc0c09b5dbd51d17a2f51a45edb864058a20e5",
+    "library/library.css": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5",
+    "library/complete-passages.json": "da4c8240e181de975892ddaac9f9f20ef2426f75eebad5d01e6b440601cba964",
+    "library/passage-contracts.mjs": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd",
+    "library/passages.mjs": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d",
+    "library/passage-ui.mjs": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900",
+    "sw.js": "7b7da86f6ca91698cb7fc55091b3f16f4e97f0262bc73374ff89f41e64c30961"
+  },
+  "status": "BUILDER_ONLY_NOT_APPROVED",
+  "runtimeConnectedCompletePassages": 302,
+  "runtimeOwningUnits": 303,
+  "fullResearchPacketDelivered": false
+}

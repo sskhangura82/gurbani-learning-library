@@ -62,7 +62,7 @@
 <div class="search-field"><label for="library-search">Find a Bani or collection</label><div class="search-input-row"><input id="library-search" name="q" type="search" autocomplete="off" maxlength="120" placeholder="Try Japji, Sukhmani or Salok"><button id="clear-library-search" type="button" hidden>Clear</button></div></div>
 <div class="filter-field"><label for="read-filter">Show</label><select id="read-filter" name="collection"><option value="all">All readings</option><option value="nitnem">Daily Nitnem</option><option value="additional">Other readings</option></select></div>
 </form>
-<p class="directory-help">Search matches reading names and their listed spellings. Search within the full Gurbani text is still being developed.</p>
+<p class="directory-help">Search matches reading names and their listed spellings. Search the connected complete source passages in Explore. Full sequential coverage is still being developed.</p>
 <p id="read-count" class="directory-count" role="status" aria-live="polite"></p>
 <div id="reader-list" class="reader-grid"></div>
 <div id="read-empty" class="library-empty" hidden><h2>No matching reading</h2><p>Try a complete name or word, such as Japji, Sukhmani or Salok.</p><button id="reset-library-search" type="button">Show all readings</button></div>
@@ -71,6 +71,20 @@
 
 <section data-view-panel="explore" hidden aria-labelledby="explore-title">
 <header class="view-heading"><p class="section-kicker">FOLLOW A QUESTION</p><h1 id="explore-title" data-view-heading>Explore the library</h1><p>Begin with the source reading sheets and places already available. Topic matches and qualified explanations have separate review states.</p></header>
+<section id="passage-search" class="passage-search" aria-labelledby="passage-search-title">
+<h2 id="passage-search-title">Search original Gurbani</h2>
+<p>Find a complete passage, then open it in its existing reader.</p>
+<form id="passage-search-form" role="search">
+<label for="passage-query">Original Gurmukhi words or first letters</label>
+<input id="passage-query" type="search" maxlength="240" autocomplete="off" spellcheck="false" placeholder="ਹਉਮੈ or ਕਮਸਰਊਰ">
+<label for="passage-mode">Search method</label>
+<select id="passage-mode"><option value="phrase">Complete words</option><option value="first-letter">First letters at the start of a line</option><option value="first-letter-anywhere">First letters anywhere in a line</option></select>
+<div class="passage-actions"><button id="passage-submit" type="submit" disabled>Search Gurbani</button><button id="passage-clear" type="button">Clear</button></div>
+</form>
+<p id="passage-search-status" role="status" aria-live="polite">Open Explore to check the connected sources.</p>
+<details class="library-details"><summary>Which passages can I search?</summary><p>Salok Mahalla 9, the 243-Salok Bhagat Kabir Ji collection, and the two Asa Di Vaar Saloks already in Knowledge. An overlapping Kabir Salok has links to both of its existing views.</p><p id="passage-source-status"></p><p>Each complete unit is tied to one exact sequence in the full digital source. This is not full sequential Guru Granth Sahib coverage or independent printed-Ang authentication. Japji Sahib, Sukhmani Sahib, Farid Ji and the remaining passages are still being connected.</p><p>The source readers retain their selected editions and documented differences, including the Kabir collection heading. No words are changed by search. Explanations and qualified source review remain separate.</p><p>Search runs on this device. No application search history or query analytics are collected.</p></details>
+<div id="passage-results"></div><button id="passage-more" type="button" hidden>Show 20 more passages</button>
+</section>
 <div id="explore-list" class="explore-grid"></div>
 <section class="planned-section" aria-labelledby="planned-title"><div class="section-heading"><p class="section-kicker">STILL IN DEVELOPMENT</p><h2 id="planned-title">Growing with care</h2></div><div id="planned-list" class="planned-grid"></div></section>
 </section>
@@ -93,5 +107,5 @@
 </div>
 <script src="js/home.js" integrity="sha384-0wzo7Vc26GO2cFybaGu2g+AI56eHEgwdM+4+p4o+Mjz+/ytW5Hkvzp2C0ifazGy9" crossorigin="anonymous"></script>
 <script src="js/pwa.js" integrity="sha384-UlvzbvZ5naE7J9vZtG73KahV4U9bKLnMAoRwE5pYEEI3eCMl+qEFaw9JkkERJ/Ly" crossorigin="anonymous"></script>
-<script type="module" src="library/app.bundle.mjs" integrity="sha384-zE+FuvkuhjDQ6nDezRvgnsIhT+HK2F6EBdVxUavj1P2EUUMgFOkDbEUwrHvG4+u7" crossorigin="anonymous"></script>
+<script type="module" src="library/app.bundle.mjs" integrity="sha384-CEuiNZEaBvofZ4/SMl4Ci6lamLHGwvTvFmZM1gFOpzssHbIaGv8My4QDj21mTTHy" crossorigin="anonymous"></script>
 </body></html>

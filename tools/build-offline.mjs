@@ -17,6 +17,7 @@ additions.push('./library/catalog.mjs','./library/core.mjs','./library/app.mjs',
 // Same-directory bundles contain the complete executable module graphs. Keep
 // source assets for documented inspection; runtime pages load only the bundles.
 additions.push('./library/app.bundle.mjs','./articles/app.bundle.mjs');
+additions.push('./library/complete-passages.json','./library/passage-contracts.mjs','./library/passages.mjs','./library/passage-ui.mjs','./library/search.mjs','./library/kinds.mjs');
 additions.push('./knowledge/','./knowledge/index.html','./knowledge/style.css','./knowledge/app.bundle.mjs','./knowledge/scripture.json','./knowledge/pilot.json');
 // Dated events and content-addressed sources use their own verified-pair cache.
 // They must never enter the versioned application shell.
