@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-27T03:30:40.034Z",
+  "engine": "Desktop Chromium",
+  "checks": [
+    {
+      "name": "Home installs the complete hashed candidate shell including both separate practice pages",
+      "status": "PASS"
+    },
+    {
+      "name": "The home link stays in a distinct optional personal-tools section at narrow and wide sizes",
+      "status": "PASS"
+    },
+    {
+      "name": "Breathing opens from its cached home link and starts/stops with the network unavailable",
+      "status": "PASS"
+    },
+    {
+      "name": "The refined Simran Room also opens and runs offline without a visible countdown",
+      "status": "PASS"
+    },
+    {
+      "name": "Neither offline tool creates practice records or changes existing local storage",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Network emulation, not physical airplane-mode acceptance. No iPhone or VoiceOver testing."
+  ],
+  "browserVersion": "151.0.7922.34",
+  "homeVisuals": {
+    "capture": "Fresh fixed-width desktop context; viewport captures before and after actual scrolling",
+    "counts": {
+      "header": 1,
+      "hero": 1,
+      "tools": 1
+    },
+    "toolsPosition": {
+      "scrollY": 1089,
+      "top": 217.40625,
+      "bottom": 625.90625,
+      "viewport": 844
+    },
+    "files": [
+      "home-390.png",
+      "home-tools-390.png"
+    ]
+  },
+  "workerSHA256": "ac49a970d39eab5efc094d76fdfb9e7ecae8f76bfe5ba98c9bb700f775ec511d"
+}

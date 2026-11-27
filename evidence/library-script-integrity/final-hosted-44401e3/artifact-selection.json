@@ -1,0 +1,51 @@
+{
+  "runId": 45934479479,
+  "candidate": "44401e35690322fb3dbc29c443bff86d73279fcb",
+  "meaning": "Only reports newly generated in this hosted run are selected; historical reports also uploaded by the workflow are excluded.",
+  "files": [
+    {
+      "artifactPath": "library-script-integrity/browser/2026-11-27T03-30-27-868Z-module-transport/report.json",
+      "savedAs": "module-transport.json",
+      "sha256": "4a6fdc363504fd65c7c8a6fda1887712bf69835ec85a5ab9c590f89e7bfbd0df",
+      "startedAt": "2026-11-27T03:30:27.875Z",
+      "environment": {
+        "node": "v22.23.5",
+        "platform": "linux",
+        "browser": "151.0.7922.34",
+        "executablePath": "/home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome"
+      }
+    },
+    {
+      "artifactPath": "library-script-integrity/offline/2026-11-27T03-30-30-628Z/report.json",
+      "savedAs": "offline-update.json",
+      "sha256": "4d5bbb7b16a96178b681562e1036a4baf296b9746f02456de59d1c69e5381687",
+      "startedAt": "2026-11-27T03:30:30.628Z",
+      "environment": {
+        "engine": "Desktop Chromium",
+        "browserVersion": "151.0.7922.34",
+        "platform": "linux",
+        "node": "v22.23.5"
+      }
+    },
+    {
+      "artifactPath": "articles/browser.json",
+      "savedAs": "article-browser.json",
+      "sha256": "c53ad7b80eb6c18fc7e58b46e44be7ffe15f2d8d70bf1bb1399fddec3c2eaa65",
+      "startedAt": "2026-11-27T03:30:34.845Z",
+      "environment": {
+        "browserVersion": "151.0.7922.34",
+        "engine": "Desktop Chromium"
+      }
+    },
+    {
+      "artifactPath": "learning-practice/offline.json",
+      "savedAs": "practice-offline.json",
+      "sha256": "2a21c58ae7d317779b9285c050f70ec67d56f473350db43afb27bd7234762fb6",
+      "startedAt": "2026-11-27T03:30:40.034Z",
+      "environment": {
+        "browserVersion": "151.0.7922.34",
+        "engine": "Desktop Chromium"
+      }
+    }
+  ]
+}

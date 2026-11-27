@@ -1,0 +1,308 @@
+{
+  "status": "PASS",
+  "started": "2026-11-27T03:30:27.875Z",
+  "sourceCommit": "44401e35690322fb3dbc29c443bff86d73279fcb",
+  "mount": "/preview/",
+  "checks": [
+    {
+      "name": "library · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/index.html",
+        "/preview/css/home.css",
+        "/preview/library/library.css",
+        "/preview/js/home.js",
+        "/preview/js/pwa.js",
+        "/preview/library/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+      ],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 18,
+          "y": 145.6875,
+          "width": 354,
+          "height": 41.390625,
+          "top": 145.6875,
+          "right": 372,
+          "bottom": 187.078125,
+          "left": 18
+        }
+      },
+      "screenshot": "library-390.png"
+    },
+    {
+      "name": "articles-index · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/index.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs",
+        "/preview/articles/catalog.json",
+        "/preview/salok-mahalla9/data/salok-mahalla9.json",
+        "/preview/salok-kabir/data/salok-kabir.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 24,
+          "y": 210.671875,
+          "width": 342,
+          "height": 74.875,
+          "top": 210.671875,
+          "right": 366,
+          "bottom": 285.546875,
+          "left": 24
+        }
+      },
+      "screenshot": "articles-index-390.png"
+    },
+    {
+      "name": "articles-sheet · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/article.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs",
+        "/preview/articles/catalog.json",
+        "/preview/salok-mahalla9/data/salok-mahalla9.json",
+        "/preview/salok-kabir/data/salok-kabir.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 24,
+          "y": 210.671875,
+          "width": 342,
+          "height": 40.4375,
+          "top": 210.671875,
+          "right": 366,
+          "bottom": 251.109375,
+          "left": 24
+        }
+      },
+      "screenshot": "articles-sheet-390.png"
+    },
+    {
+      "name": "knowledge · normal",
+      "status": "PASS",
+      "requests": [
+        "/preview/knowledge/index.html",
+        "/preview/knowledge/style.css",
+        "/preview/knowledge/app.bundle.mjs",
+        "/preview/knowledge/scripture.json",
+        "/preview/knowledge/pilot.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 12,
+          "y": 92.828125,
+          "width": 366,
+          "height": 83.1875,
+          "top": 92.828125,
+          "right": 378,
+          "bottom": 176.015625,
+          "left": 12
+        }
+      },
+      "screenshot": "knowledge-390.png"
+    },
+    {
+      "name": "library · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/index.html",
+        "/preview/css/home.css",
+        "/preview/library/library.css",
+        "/preview/js/home.js",
+        "/preview/js/pwa.js",
+        "/preview/library/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element.",
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:42011/preview/library/app.bundle.mjs' with computed SHA-384 integrity 'uengkAMqGpnftitkbhNUH2JopJwARTjMrQvCqfxbSNIUXLrpw7TG+/02aPTXLZGX'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "library/catalog.mjs",
+        "baselineSha256": "41d30d94429a3102c881da3b2603599beaf4a492a357077dc1dea3c1055cc963",
+        "servedSha256": "59d7bfbd3cee37ef8f92b6fa064ea63cba271538feb6ee2f852c2c3eb1314ac0"
+      }
+    },
+    {
+      "name": "library · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/index.html",
+        "/preview/css/home.css",
+        "/preview/library/library.css",
+        "/preview/js/home.js",
+        "/preview/js/pwa.js",
+        "/preview/library/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "library/catalog.mjs",
+        "baselineSha256": "41d30d94429a3102c881da3b2603599beaf4a492a357077dc1dea3c1055cc963",
+        "servedSha256": "59d7bfbd3cee37ef8f92b6fa064ea63cba271538feb6ee2f852c2c3eb1314ac0"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 18,
+          "y": 145.6875,
+          "width": 354,
+          "height": 41.390625,
+          "top": 145.6875,
+          "right": 372,
+          "bottom": 187.078125,
+          "left": 18
+        }
+      }
+    },
+    {
+      "name": "articles-sheet · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/article.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:42011/preview/articles/app.bundle.mjs' with computed SHA-384 integrity 'dKPGMbvgCUm4rHj6Zml+8zOnMvdEGPZh+8L7sHbUr386gjUHJl+PEJxgrNQ+Mabp'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "articles/core.mjs",
+        "baselineSha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1",
+        "servedSha256": "60221954668e11a0b5ef80c6061d188f55690ace9231bef3289941431f1e3bed"
+      }
+    },
+    {
+      "name": "articles-sheet · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/articles/article.html",
+        "/preview/articles/articles.css",
+        "/preview/articles/app.bundle.mjs",
+        "/preview/articles/catalog.json",
+        "/preview/salok-mahalla9/data/salok-mahalla9.json",
+        "/preview/salok-kabir/data/salok-kabir.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "articles/core.mjs",
+        "baselineSha256": "eedf42a8c35091dc814e4728d2f7daa7fcca9ec7db5c4aa7c92e967161c25ac1",
+        "servedSha256": "60221954668e11a0b5ef80c6061d188f55690ace9231bef3289941431f1e3bed"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 24,
+          "y": 210.671875,
+          "width": 342,
+          "height": 40.4375,
+          "top": 210.671875,
+          "right": 366,
+          "bottom": 251.109375,
+          "left": 24
+        }
+      }
+    },
+    {
+      "name": "knowledge · dependency-change-unchanged-pin",
+      "status": "PASS",
+      "requests": [
+        "/preview/knowledge/index.html",
+        "/preview/knowledge/style.css",
+        "/preview/knowledge/app.bundle.mjs"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:42011/preview/knowledge/app.bundle.mjs' with computed SHA-384 integrity '89xGbef8GBn3HfEV7m/lOmqeFis5FYv8Kcp26aJHfMyOhNC4yjRClX613tiVXure'. The resource has been blocked."
+      ],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "knowledge/kinds.mjs",
+        "baselineSha256": "b02e5ad471047b02e7f3192c5441752ee4bd9e3ba59ec3c8a774e93d708d2a2e",
+        "servedSha256": "ba255be7a868bbbf71af0916c5ffa55b0cb4dbea2b7a9dcfa6667d0032e29a7c"
+      }
+    },
+    {
+      "name": "knowledge · dependency-change-repinned-control",
+      "status": "PASS",
+      "requests": [
+        "/preview/knowledge/index.html",
+        "/preview/knowledge/style.css",
+        "/preview/knowledge/app.bundle.mjs",
+        "/preview/knowledge/scripture.json",
+        "/preview/knowledge/pilot.json"
+      ],
+      "deniedSourceRequests": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "mutation": {
+        "dependency": "knowledge/kinds.mjs",
+        "baselineSha256": "b02e5ad471047b02e7f3192c5441752ee4bd9e3ba59ec3c8a774e93d708d2a2e",
+        "servedSha256": "ba255be7a868bbbf71af0916c5ffa55b0cb4dbea2b7a9dcfa6667d0032e29a7c"
+      },
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "heading": {
+          "x": 12,
+          "y": 92.828125,
+          "width": 366,
+          "height": 83.1875,
+          "top": 92.828125,
+          "right": 378,
+          "bottom": 176.015625,
+          "left": 12
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Builder verification in fresh synthetic desktop Chrome contexts at a 390 by 844 CSS-pixel viewport.",
+    "Original module URLs deliberately denied; service workers blocked to isolate network/SRI behavior.",
+    "No physical iPhone, Safari, VoiceOver, user records, offline-worker acceptance, qualified content review or release approval.",
+    "Transport mutation changes a real dependency source in memory, rebuilds the complete bundle and retains unchanged HTML SRI; its explicit re-pinned control proves the altered code can execute."
+  ],
+  "environment": {
+    "node": "v22.23.5",
+    "platform": "linux",
+    "browser": "151.0.7922.34",
+    "executablePath": "/home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome"
+  },
+  "finished": "2026-11-27T03:30:30.164Z",
+  "deniedAtServer": []
+}

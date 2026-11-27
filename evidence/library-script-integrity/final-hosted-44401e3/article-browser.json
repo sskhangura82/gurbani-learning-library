@@ -1,0 +1,174 @@
+{
+  "startedAt": "2026-11-27T03:30:34.845Z",
+  "engine": "Desktop Chromium",
+  "checks": [
+    {
+      "name": "Index shows two source sheets only after complete source resolution",
+      "status": "PASS"
+    },
+    {
+      "name": "Search matches complete named words and Gurmukhi tokens without the old substring false matches",
+      "status": "PASS"
+    },
+    {
+      "name": "haumai-source-sheet: exact complete Salok, source identity and empty explanation appear together",
+      "status": "PASS"
+    },
+    {
+      "name": "haumai-source-sheet: fits narrow, tablet and desktop layouts including enlarged text",
+      "status": "PASS"
+    },
+    {
+      "name": "haumai-source-sheet: print begins only on explicit activation and produces A4 and Letter evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "haumai-source-sheet: reader link opens the referenced full Salok and Back returns to its sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "dubidha-source-sheet: exact complete Salok, source identity and empty explanation appear together",
+      "status": "PASS"
+    },
+    {
+      "name": "dubidha-source-sheet: fits narrow, tablet and desktop layouts including enlarged text",
+      "status": "PASS"
+    },
+    {
+      "name": "dubidha-source-sheet: print begins only on explicit activation and produces A4 and Letter evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "dubidha-source-sheet: reader link opens the referenced full Salok and Back returns to its sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "A boundary-stress PDF still keeps the complete passage, citation and empty slot together",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown article IDs fail closed without a random passage or print action",
+      "status": "PASS"
+    },
+    {
+      "name": "Inserted explanation blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "A claim with an otherwise resolving reference blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "Scripture-style editorial title blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown source reference blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported comparative content blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "A claimed approval inside content blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "A missing second sheet blocks the entire reading sheet",
+      "status": "PASS"
+    },
+    {
+      "name": "An unselected source line changed and internally resealed cannot pass a complete-package check",
+      "status": "PASS"
+    },
+    {
+      "name": "A missing complete source package blocks index and article instead of silently omitting it",
+      "status": "PASS"
+    },
+    {
+      "name": "A controller cannot render source sheets under the wrong content layer",
+      "status": "PASS"
+    },
+    {
+      "name": "Sheet-only visits never access private browser storage or request external assets",
+      "status": "PASS"
+    },
+    {
+      "name": "The real worker serves both complete source sheets with the network unavailable",
+      "status": "PASS"
+    },
+    {
+      "name": "No runtime script errors occurred",
+      "status": "PASS"
+    }
+  ],
+  "runtimeErrors": [],
+  "screenshots": [
+    "evidence/articles/index-390.png",
+    "evidence/articles/index-cards-390.png",
+    "evidence/articles/haumai-source-sheet-390.png",
+    "evidence/articles/haumai-source-sheet-passage-390.png",
+    "evidence/articles/dubidha-source-sheet-390.png",
+    "evidence/articles/dubidha-source-sheet-passage-390.png"
+  ],
+  "pdfs": [
+    {
+      "file": "evidence/articles/print/haumai-source-sheet-a4.pdf",
+      "expectations": "evidence/articles/print/haumai-source-sheet-pairs.json",
+      "kind": "actual source reading sheet",
+      "format": "A4"
+    },
+    {
+      "file": "evidence/articles/print/haumai-source-sheet-letter.pdf",
+      "expectations": "evidence/articles/print/haumai-source-sheet-pairs.json",
+      "kind": "actual source reading sheet",
+      "format": "Letter"
+    },
+    {
+      "file": "evidence/articles/print/dubidha-source-sheet-a4.pdf",
+      "expectations": "evidence/articles/print/dubidha-source-sheet-pairs.json",
+      "kind": "actual source reading sheet",
+      "format": "A4"
+    },
+    {
+      "file": "evidence/articles/print/dubidha-source-sheet-letter.pdf",
+      "expectations": "evidence/articles/print/dubidha-source-sheet-pairs.json",
+      "kind": "actual source reading sheet",
+      "format": "Letter"
+    },
+    {
+      "file": "evidence/articles/print/pagination-stress-a4.pdf",
+      "expectations": "evidence/articles/print/haumai-source-sheet-pairs.json",
+      "kind": "synthetic blank-space pagination fixture; source unchanged",
+      "format": "A4"
+    },
+    {
+      "file": "evidence/articles/print/pagination-stress-letter.pdf",
+      "expectations": "evidence/articles/print/haumai-source-sheet-pairs.json",
+      "kind": "synthetic blank-space pagination fixture; source unchanged",
+      "format": "Letter"
+    }
+  ],
+  "limitations": [
+    "Desktop Chromium at narrow and wide viewport sizes. No physical iPhone, Safari, iPad, VoiceOver, or actual-user acceptance is claimed.",
+    "Offline is browser network emulation, not a physical airplane-mode check.",
+    "Print PDFs require separate extraction, page grouping and visual glyph inspection. Browser layout checks alone do not establish print quality.",
+    "Source checks preserve a pinned digital edition; they do not establish theological meaning, independent textual lineage, thematic completeness or qualified review."
+  ],
+  "browserVersion": "151.0.7922.34",
+  "finishedAt": "2026-11-27T03:30:39.601Z",
+  "passed": 25,
+  "failed": 0,
+  "inputSha256": {
+    "articles/index.html": "08d05fd7caf18b1d9cb7f511629ede61a3ade0232798c55e956a7f1ba1c077b5",
+    "articles/article.html": "c52ef9545250d1f48d1f0cc15881341cd10c2b1932bcd59484e971f6663d2db6",
+    "articles/articles.css": "e17b935719ccc6058c5e4f8e87d273e587c885c185c615273ccd36c354906ac7",
+    "articles/app.mjs": "f0b3b240c70ed23388d24d83d06c1f770ced7856a4bab689357e06a4932174b8",
+    "articles/core.mjs": "c27144526ac32550fc4e9a03da181d7413db4c54929d04d72772c52bef351124",
+    "articles/source-contracts.mjs": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0",
+    "articles/catalog.json": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f",
+    "sw.js": "ac49a970d39eab5efc094d76fdfb9e7ecae8f76bfe5ba98c9bb700f775ec511d",
+    "tests/articles-browser.mjs": "7fb94cf973a9e2c404fa7a60918a147aed08394674742879a16975a38b70f4e8"
+  }
+}
