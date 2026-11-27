@@ -39,7 +39,7 @@ function savedCard(reader){
 }
 function exploreCard(entry){
  const a=node('a',null,'directory-card explore-card');a.href=checkedHref(entry.href);a.dataset.exploreId=entry.id;
- const label=entry.id==='gurdwaras'?'PLACES DIRECTORY':entry.id==='source-sheets'?'SOURCE READING SHEETS':'LIBRARY TOPIC · SOURCE WORD MATCH';
+ const label=entry.kind==='psychology-index'?'PSYCHOLOGY · OPEN ACCESS':entry.kind==='private-reading'?'FOR YOUR TRUSTED CIRCLE':entry.id==='gurdwaras'?'PLACES DIRECTORY':entry.id==='source-sheets'?'SOURCE READING SHEETS':'LIBRARY TOPIC · SOURCE WORD MATCH';
  appendText(a,'span',label,'card-group');
  appendText(a,'h2',entry.title);
  appendText(a,'p',entry.summary,'card-summary');

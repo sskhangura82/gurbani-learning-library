@@ -107,10 +107,31 @@ export const COLLECTIONS = freeze([
     readerIds: ['japji', 'jaap', 'savaiye', 'chaupai', 'anand', 'rehras', 'sohila'],
     summary: 'Seven existing reading destinations, from morning to night.',
     aliases: ['nitnem', 'daily nitnem', 'ਨਿਤਨੇਮ']
+  },
+  {
+    id: 'dasam-collection', title: 'Sri Dasam Granth', titlePa: 'ਸ੍ਰੀ ਦਸਮ ਗ੍ਰੰਥ',
+    href: 'collections/dasam/index.html',
+    readerIds: ['jaap', 'savaiye', 'chaupai'],
+    summary: 'Three selected readings are available; the complete collection is still being prepared.',
+    aliases: ['dasam', 'dasam granth', 'sri dasam granth', 'ਦਸਮ ਗ੍ਰੰਥ']
   }
 ]);
 
 export const EXPLORE = freeze([
+  {
+    id: 'psychology', kind: 'psychology-index', title: 'Psychology',
+    href: 'psychology/index.html',
+    summary: 'Research references and reflection tools, available without the private reading password.',
+    reviewLabel: 'Open learning · research and Gurbani retain their own context',
+    aliases: ['psychology', 'intellectual humility']
+  },
+  {
+    id: 'private-reading', kind: 'private-reading', title: 'Private reading',
+    href: 'private-library/index.html',
+    summary: 'Comparative religious texts for your trusted circle. A passphrase is required to read the collection.',
+    reviewLabel: 'Password protected · separate from public psychology',
+    aliases: ['private reading', 'private library']
+  },
   {
     id: 'source-sheets', kind: 'source-reading-index', title: 'Study by topic',
     href: 'articles/index.html',
@@ -161,6 +182,7 @@ export const TOOLS = freeze([
 ]);
 
 export const PLANNED = freeze([
+  {id: 'full-dasam-granth', title: 'Complete Sri Dasam Granth', available: false, summary: 'The open Dasam entrance currently links three existing readings. Additional compositions need their own source and edition records.'},
   {id: 'full-guru-granth-sahib', title: 'Full Sri Guru Granth Sahib Ji', available: false, summary: 'Complete sequential reading is a future library expansion.'},
   {id: 'knowledge-explorer', title: 'Knowledge Explorer', available: false, summary: 'The separate pilot is awaiting integration and outstanding review.'},
   {id: 'dictionary', title: 'Gurbani dictionary', available: false, summary: 'A source-linked vocabulary library remains to be built and reviewed.'},

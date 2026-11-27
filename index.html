@@ -57,6 +57,10 @@
 
 <section data-view-panel="read" hidden aria-labelledby="read-title">
 <header class="view-heading"><p class="section-kicker">THE READING LIBRARY</p><h1 id="read-title" data-view-heading>Choose a reading</h1><p>One place to find the available Banis and collections. Open any reader to return to its own saved place.</p></header>
+<nav class="today-secondary" aria-label="Additional collections" id="additional-collections">
+<a class="hub-card" data-collection="dasam" href="collections/dasam/index.html"><span class="section-kicker">SIKH COLLECTIONS · OPEN</span><h2>Sri Dasam Granth</h2><p>Begin with Jaap Sahib, Tav-Prasad Savaiye and Chaupai Sahib. The complete collection is still being prepared.</p><span class="card-action">Open the collection →</span></a>
+<a class="hub-card" data-collection="farid" href="salok-farid/index.html?bani=salok-farid"><span class="section-kicker">ADDITIONAL SOURCE READING</span><h2>Salok Sheikh Farid Ji</h2><p>Open the selected 130-Salok collection. Attribution differences are recorded; explanations remain pending.</p><span class="card-action">Open the source reader →</span></a>
+</nav>
 <form id="library-search-form" class="directory-controls" role="search" action="index.html" method="get">
 <input type="hidden" name="view" value="read">
 <div class="search-field"><label for="library-search">Find a Bani or collection</label><div class="search-input-row"><input id="library-search" name="q" type="search" autocomplete="off" maxlength="120" placeholder="Try Japji, Sukhmani or Salok"><button id="clear-library-search" type="button" hidden>Clear</button></div></div>
@@ -102,6 +106,7 @@
 <footer class="footer library-footer">
 <p>Original Gurbani stays in its source reader. Meanings and study material remain educational drafts awaiting qualified review.</p>
 <details id="library-offline-help"><summary>On your phone · updates and backups</summary><p>Open in Safari, then use Share → Add to Home Screen if you want a Home Screen shortcut. Physical-device acceptance is still pending.</p><p>Export learning from its reader for a separate backup. Do not clear website data to update.</p><p id="offline-status" role="status" aria-live="polite">Checking the offline reading shell…</p><div class="update-actions"><button id="check-update" type="button">Check for an update</button><button id="apply-update" type="button" hidden>Load available update</button></div></details>
+<nav class="links" aria-label="Learning collections"><a href="collections/dasam/index.html">Sri Dasam Granth</a> · <a href="psychology/index.html">Psychology</a> · <a href="private-library/index.html">Private reading</a></nav>
 <p class="small">A family learning project · no accounts, advertising, streaks or scores.</p>
 </footer>
 </div>

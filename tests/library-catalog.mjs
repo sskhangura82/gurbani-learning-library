@@ -48,11 +48,15 @@ test('the directory names ten distinct existing readers and does not duplicate J
   assert.deepEqual(ids(READERS), ['japji', 'jaap', 'savaiye', 'chaupai', 'anand', 'rehras', 'sohila', 'sukhmani', 'salok-mahalla9', 'salok-kabir']);
   assert.equal(new Set(ids(READERS)).size, 10);
   assert.equal(READERS.filter(entry => entry.id === 'japji').length, 1);
-  assert.equal(COLLECTIONS.length, 1);
+  assert.equal(COLLECTIONS.length, 2);
   assert.deepEqual(COLLECTIONS[0].readerIds, ids(READERS.filter(entry => entry.group === 'nitnem')));
   assert.equal(new Set(COLLECTIONS[0].readerIds).size, 7);
   assert.ok(COLLECTIONS[0].readerIds.includes('japji'));
   assert.ok(!ids(READERS).includes('nitnem'));
+  const dasam = COLLECTIONS.find(entry => entry.id === 'dasam-collection');
+  assert.deepEqual(dasam.readerIds, ['jaap', 'savaiye', 'chaupai']);
+  assert.ok(dasam.readerIds.every(id => getReader(id).sourceFamily === 'dasam'));
+  relativeRoute(dasam.href);
 });
 
 test('every reader route exists and Saved entry preserves its exact reading route', () => {
@@ -170,7 +174,7 @@ test('only one explicit valid view is accepted; ambiguous and malformed view sta
 });
 
 test('Explore only links existing destinations and preserves literal-topic status', () => {
-  assert.deepEqual(ids(EXPLORE), ['source-sheets', 'haumai-source-sheet', 'dubidha-source-sheet', 'gurdwaras']);
+  assert.deepEqual(ids(EXPLORE), ['psychology', 'private-reading', 'source-sheets', 'haumai-source-sheet', 'dubidha-source-sheet', 'gurdwaras']);
   const catalog = json('articles/catalog.json');
   for (const entry of EXPLORE) relativeRoute(entry.href);
   for (const entry of EXPLORE.filter(item => item.kind === 'source-reading-sheet')) {
