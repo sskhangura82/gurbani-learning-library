@@ -1,0 +1,21 @@
+✔ existing signer -> exact-base proposal -> existing reader preserves the complete dated original (498.747167ms)
+✔ an identical existing source is reused and only the new event enters the patch (375.933ms)
+✔ same-day repeated observation keeps existing envelope, revision and tree exactly (310.752041ms)
+✔ changed publication time is held for correction review rather than overwriting a date (286.865792ms)
+✔ a new date cannot silently begin at a correction revision (211.596083ms)
+✔ a conflicting blob already occupying the source digest path is never replaced (298.085625ms)
+✔ damaged admitted record and missing admitted source cannot be repaired by silent replacement (577.782792ms)
+✔ stale exact-base reference refuses while a moving reference also refuses final admission (463.735667ms)
+✔ explicit historical mode stays dated, while future or invalid requests refuse before a run (382.731375ms)
+✔ source bytes, receipt, signature, duplicate JSON and extra files fail before a ready proposal (732.399334ms)
+✔ input traversal, extra directories, symlinks and base symlink blobs refuse (502.464459ms)
+✔ publication-key mismatch refuses and cannot produce an unreadable target patch (238.298916ms)
+✔ exclusive output prevents repeats/concurrent writes and output cannot be inside the repository (380.202334ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5329.380375

@@ -1,0 +1,67 @@
+{
+  "schema": "glp.builder.daily-install-observation.v1",
+  "codeCommit": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+  "observedAtUtc": "2026-11-27T14:08:12.460Z",
+  "inputBasis": "Existing tracked signed event plus its exact tracked original source and original-only capture receipt; manifest re-containerized without signing or reading any key.",
+  "result": {
+    "schema": "glp.hukamnama.install-proposal.v1",
+    "mode": "DEVELOPMENT_PREVIEW",
+    "requestedDate": "2026-11-27",
+    "requestedAsToday": false,
+    "timezone": "Asia/Kolkata",
+    "startedAtUtc": "2026-11-27T14:08:12.179Z",
+    "finishedAtUtc": "2026-11-27T14:08:12.408Z",
+    "status": "ALREADY_ADMITTED",
+    "code": null,
+    "message": "The existing dated record is retained byte for byte. This observation creates no update.",
+    "proposalReady": false,
+    "publicationApproved": false,
+    "published": false,
+    "base": {
+      "commit": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+      "reference": "refs/heads/feature/daily-install-proposal-20261127",
+      "tree": "598fe7ffcb7291f729078fa4fb4f54bcc88d7992"
+    },
+    "proposedTree": "598fe7ffcb7291f729078fa4fb4f54bcc88d7992",
+    "existing": {
+      "eventSha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd",
+      "sourceSha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+      "revision": 1,
+      "decision": "KEEP_EXISTING_BYTES"
+    },
+    "source": {
+      "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+      "textSha256": "c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+      "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+      "occurrences": 7
+    },
+    "changes": [],
+    "patch": null,
+    "evidence": {
+      "sealedManifestSha256": "9d430d604fd340a6a0365cf184c723d829a1154c628b3ec4808211d489e22199",
+      "receipt": {
+        "path": "original-receipt.json",
+        "sha256": "614206ae696e00a84a07233b38e6a4668ea61c70eacc23f6ce8e304557698240"
+      }
+    }
+  },
+  "before": {
+    "head": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+    "ref": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+    "indexSha256": "b35aa8113b96731936f2d63afcbe15dca5de37f7047b63b1a82abec6c5928ce8",
+    "trackedStatus": "",
+    "eventSha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd"
+  },
+  "after": {
+    "head": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+    "ref": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+    "indexSha256": "b35aa8113b96731936f2d63afcbe15dca5de37f7047b63b1a82abec6c5928ce8",
+    "trackedStatus": "",
+    "eventSha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd"
+  },
+  "preserved": true,
+  "privateKeyRead": false,
+  "networkCapture": false,
+  "physicalDeviceTest": false,
+  "installed": false
+}

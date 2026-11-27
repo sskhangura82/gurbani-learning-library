@@ -1,0 +1,79 @@
+PASS signed event, full cross-page source, repeated-line occurrence identities freeze
+PASS payload signature is checked before malformed payload JSON is parsed
+PASS unsigned, wrong-key, noncanonical base64 and wrong-length signature refuse
+PASS wrong date, official date, venue, public approval and arbitrary source paths refuse even signed
+PASS invalid and future dates do not make a request
+PASS raw source mutation, truncation and source-resealed missing continuation refuse
+PASS resealed per-line text, occurrence ID, ordering and witness changes refuse
+PASS fresh success requests same-origin exact paths and caches one complete public pair
+PASS offline re-verifies exact saved pair and never substitutes for another date
+PASS tampered network response does not hide behind an older saved record
+PASS incomplete or corrupted saved pair refuses without deleting the record
+PASS redirect responses refuse and no off-origin fetch is attempted
+PASS cache quota failure keeps complete online original visible
+PASS aborted and midnight-rollover requests expose no late source
+PASS pending layers never hide original and no unscheduled lesson is admitted
+PASS signed exact lesson admits only matching layer/language/source/review/rights/resolved claims
+PASS oversized unlabelled network stream is cancelled at the byte limit
+PASS older authenticated revision and conflicting same revision preserve saved newer pair
+PASS comparison kinds, external metadata and absent display/print/offline rights are refused
+PASS every declared lesson is checked before a complete pair can enter public cache
+PASS unknown fields cannot enter a signed event or immutable source cache
+PASS duplicate JSON keys cannot hide content inside signed payload bytes
+Delivery synthetic checks: 22 passed; 0 failed.
+✔ tests/hukamnama-delivery.mjs (121.07825ms)
+✔ new exact-date original becomes an unsigned review candidate, never a publication (21.988375ms)
+✔ the requested day is Amritsar day, not UTC or the machine locale (1.28125ms)
+✔ invalid/future requests refuse before creating a run or requesting a source (0.848292ms)
+✔ network unavailability and stale official date record refusal without a substitute (2.608125ms)
+✔ source discrepancies never retry, normalize, or become an empty success (4.593375ms)
+✔ midnight rollover retains the captured date but cannot offer it as today (5.529ms)
+✔ explicit historical capture stays historical across midnight (4.753791ms)
+✔ a fresh same-day receipt keeps exact admitted envelope, source and revision (15.167959ms)
+✔ a genuine publication-time correction requires review and preserves admitted bytes (6.596833ms)
+✔ damaged existing signed record is not replaced by a new apparently valid capture (4.780292ms)
+✔ an existing event with its source missing is preserved and blocks automatic replacement (5.187958ms)
+✔ hash failure, forbidden commentary and an unexpected captured file cannot become a candidate (10.870959ms)
+✔ manifest traversal and symlinks are rejected before arbitrary files can be read (6.815708ms)
+✔ concurrent attempt cannot overwrite running report or fetch a second reading (4.162ms)
+✔ local failure emits a bounded report without arbitrary error text or partial candidate admission (1.198917ms)
+✔ an output inside the admitted source root is refused before networking (0.562625ms)
+PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+PASS receipt and payload carry the same canonical UTC retrieval timestamp
+PASS raw receipt tampering cannot reuse the old receipt digest
+PASS rehashed receipt with changed full original cannot reuse the selected source
+PASS rehashed truncated source cannot omit the continuation ending
+PASS wrong private key cannot seal against the selected public key
+PASS a signed event cannot verify against a different public key
+PASS non-null unreviewed explanation is refused before sealing
+PASS protected commentary field is excluded even from a rehashed original receipt
+PASS rehashed receipt starting Ang must agree with the full verified source span
+PASS rehashed receipt displayed time must agree with the dated event
+PASS duplicate payload field cannot hide a discarded value before sealing
+PASS escaped-equivalent duplicate original field cannot hide in rehashed source bytes
+PASS nested duplicate original field cannot hide in a rehashed receipt
+PASS reader rejects duplicate envelope fields even when the remaining payload signature is valid
+PASS reader rejects duplicate decoded payload fields even with a valid ephemeral signature
+Signing checks: 16 passed; 0 failed. Keys existed only in memory.
+✔ tests/hukamnama-signing.mjs (80.022417ms)
+PASS unchanged original-only 27 November capture passes the parsed-stage contract
+PASS unknown content fields refuse at every event/source/receipt nesting boundary
+PASS contradictory observation date refuses even when the top-level date stays valid
+PASS every captured original field must agree across observations
+PASS receipt official Ang, Ang footer, publication time and source span agree
+PASS observation sources, methods, clocks and complete required observation set are checked
+PASS archive-only schema preserves absent provider time without inventing one
+PASS receipt and source witness provenance/counts/boundary text cannot disagree
+PASS source identity, complete sequence, occurrence digest and page provenance remain pinned
+PASS all required original-text rights/provenance notice pins and limitations are retained
+PASS stage publisher refuses explanations and any release-approval promotion
+Stage contract checks: 11 passed; 0 failed. No provider requests or output publication.
+✔ tests/hukamnama-stage-contract.mjs (65.321583ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 170.482958

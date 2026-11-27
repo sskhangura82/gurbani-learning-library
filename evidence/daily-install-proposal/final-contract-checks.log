@@ -1,0 +1,24 @@
+✔ existing signer -> exact-base proposal -> existing reader preserves the complete dated original (565.534875ms)
+✔ an identical existing source is reused and only the new event enters the patch (455.013667ms)
+✔ same-day repeated observation keeps existing envelope, revision and tree exactly (353.102667ms)
+✔ changed publication time is held for correction review rather than overwriting a date (332.714917ms)
+✔ a new date cannot silently begin at a correction revision (260.594417ms)
+✔ a conflicting blob already occupying the source digest path is never replaced (346.010334ms)
+✔ damaged admitted record and missing admitted source cannot be repaired by silent replacement (662.724833ms)
+✔ stale exact-base reference refuses while a moving reference also refuses final admission (636.930584ms)
+✔ today-mode midnight rollover leaves the artifact explicitly refused (465.874583ms)
+✔ explicit historical mode stays dated, while future or invalid requests refuse before a run (459.792417ms)
+✔ source bytes, receipt, signature, duplicate JSON and extra files fail before a ready proposal (927.83525ms)
+✔ input traversal, extra directories, symlinks and base symlink blobs refuse (540.504791ms)
+✔ publication-key mismatch refuses and cannot produce an unreadable target patch (275.157792ms)
+✔ exclusive output prevents repeats/concurrent writes and output cannot be inside the repository (544.633667ms)
+✔ replace refs and local diff display settings cannot alter the pinned base or saved patch (566.927625ms)
+✔ repository subdirectories and common Git storage cannot bypass output isolation (164.842667ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7628.86025

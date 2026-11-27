@@ -1,65 +1,73 @@
-# Five development priorities — implementation boundaries, 27 November 2026
+# GLP-001 development priorities — current completion register
 
-This is a builder work register, not release authorization or a second product architecture. It applies the founder's latest priority order to existing work. Each workstream reuses its existing source, reader or review artifacts.
+Updated 27 November 2026 after the founder's instruction to pause audio and continue toward completion. This updates the existing work register; it is not another product architecture or release authorization. Earlier research and decisions remain in Git history.
 
-## 1. Automatic official Daily Hukamnama
+## Current founder direction
 
-The current reader consumes exact-date signed development records and keeps original text separate from explanation admission. PR 64 extends the existing importer/workflow with automatic-preparation machinery. The schedule is gated off; no publisher or deployment is activated. A fresh official 27 November observation matched the existing complete source and preserved its exact admitted bytes. The 26 November check refused a witness-heading discrepancy.
+Audio is on hold. The founder plans to supply a personalized recording for later upload. No audio research, custodian contact, permission-letter sending, synthetic recitation, player development or timing work is part of this development round. The existing audio register is retained as background; it is no longer the next engineering task or a dependency for current progress.
 
-Next: independent review, then a separately reviewed installation/publication path and founder-authorized isolated-site activation. Do not call prepared artifacts automatic phone delivery. Empty Simple/Detailed/qualified Learning states remain honest until admitted human content exists.
+Continue the agreed family learning application: Today, Read, Explore and Saved, with the original scripture kept separate from source-linked teaching, comparison and private reflection. The goal is a coherent usable application. Source coverage, functioning learning mechanics, editorial content, independent review, qualified review and release status remain separate measures.
 
-## 2. Haumai learning mechanics
+## 1. Official Daily Hukamnama
 
-The existing Knowledge passage is Guru Angad Dev Ji's complete Asa Di Vaar Salok, stable identity `sggs.asa-di-vaar.pauri007.salok02`. The source includes `ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ`; the current draft explanation still omits that part. Qualified correction is outstanding. No new AI exposition is to fill it.
+**Already built:** the dated reader, original-only official acquisition, development transport sealing, private learning and exact-source cache behavior.
 
-PR 66, in `feature/haumai-learning-journey-20261127`, extends that same Knowledge page with source-bound personal questions/reflections, earlier/later notes, user-chosen return dates, backups and optional clearly separated comparison. Explanation and Gurbani-derived practice remain pending qualified review. The printable Haumai source sheet is a different passage (Salok Mahalla 9, Salok 19); never attach one passage's explanation to the other by a shared topic name.
+**Preparation candidate:** PR 64 provides a bounded recurring-preparation workflow, gated off. Actual 27 November acquisition matched the already-admitted reading; 26 November remained refused for the recorded witness-heading discrepancy. No old or random reading substituted.
 
-Next: independently review the mechanics and preserve the content gap visibly. A working notebook around a passage is not a finished qualified lesson.
+**New installation proposal:** PR 69 builds on PR 64. It validates an existing sealed candidate and original receipt, compares the exact Git base and prepares a replay-verified patch for a new event/source pair. Repeated observations keep existing bytes. Corrections, damaged admitted records, mismatching source paths, stale references and date rollover refuse. The actual 27 November existing signed record was retained with no patch; synthetic temporary repositories demonstrated a new signed reading reaching the existing reader. No real key was read by this increment.
 
-## 3. Search toward all 1,430 Angs
+**Not yet complete:** unattended installation onto the isolated site. Neither preparation nor a ready patch means a phone received today's reading. No scheduler variable, signing configuration, branch, deployment or live website was activated. The later publisher must revalidate the exact base at installation time. Explanation slots remain empty where no admissible lesson exists.
 
-The source-intake work now records the exact pinned upstream file inventory: 1,430 Ang files and their Git blob identities and byte sizes. This is a file-presence inventory only. It is not a corpus search index, per-line collation or authentication of every Ang.
+## 2. Haumai learning journey
 
-Next: an original-only derived index with source-occurrence identities, existing-reader crosswalks and explicit locator discrepancies. Search normalization must remain separate from stored scripture. Page-level author metadata cannot establish every occurrence's author. The OpenGranth-to-Shabad OS chain is one lineage, not two independent witnesses.
+PR 66 extends the existing Knowledge page with complete-source reading, private questions, first and later reflection, a chosen return date, Saved and backup/restore. The source passage is Guru Angad Dev Ji's Asa Di Vaar Salok, `sggs.asa-di-vaar.pauri007.salok02`.
 
-## 4. Bhagat Farid Ji
+The complete original includes `ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ`. The older draft explanation still omits this clause; it remains disclosed and is not silently corrected with new generated exposition. Explanatory and Gurbani-derived-practice slots remain visibly pending. Comparison material is optional and structurally separate. The printed Haumai source sheet uses a different passage, Salok Mahalla 9, Salok 19, and cannot share this lesson merely because the topic matches.
 
-PR 65 preserves the observed numbered collection span exactly, including its known missing Salok 2 ending. The displaced ending remains separately quarantined at its upstream locator; the collection-heading punctuation disagreement remains open. Explicit Mahalla headings are retained without automatic author reassignment.
+**Next:** independent review and integration of the working mechanics, while tracking actual explanatory content separately. A notebook around a passage is not a completed explanation.
 
-Next: a separately reviewed selection ledger resolving the displaced occurrence and heading selection before admitting a complete collection to the existing reader. Farid's numbered Salok collection and author-wide Raag Bani are distinct scopes. Do not advertise a complete collection from an incomplete raw forward slice.
+## 3. Search toward the complete Guru Granth Sahib Ji
 
-## 5. Authentic audio, history and encyclopedia
+PR 65 established the pinned 1,430-file inventory. PR 70 now reconstructs all 1,430 exact source files and derives an original-only research search packet with 60,555 marked original occurrences. Raw file identities, sizes, exact extracted strings, byte locators, per-page projection digests and distinct identities for repeated text are checked. The actual hosted Node 22 reconstruction matches the local Node 26 packet digest.
 
-### Existing audio work checked
+The search adapter reuses the existing Knowledge engine for complete-word phrases and joined/spaced first-letter queries. Search normalization does not rewrite stored scripture. No English semantic aliases, inferred author/raag or canonical Ang claim is added. Known Farid locator disputes remain attached to matching results.
 
-Sources: PR 46 at `af78b41eaec3ea6166b0544643fc85264d685048`, and PR 10 at `860b7820c164154620a2a729be0729f3461feb00`.
+These are file/occurrence and retrieval results for one named digital witness, not 1,430 independently authenticated Angs, complete-composition admission or a finished reader route. Protected modern translations are not extracted or searched. Raw source files and the large research packet remain outside the application and Git; compact contracts and receipts are tracked.
 
-PR 46 contains a useful internal register of 12 recording candidates and three unsent permission drafts. All 12 lack established rights-holder/grant, complete listening/text coverage, exact audio bytes and verified timing maps. Two candidate catalogue pages were opened by its author; three are search-result evidence, six inherited leads and one unresolved founder-named identity. No actual recording was fetched during this builder cross-review.
+**Next:** a canonical occurrence crosswalk and complete-unit selection layer, then connection to existing Explore and reader routes. Preserve exact lineage, repeated occurrences and disputed locator labels; do not treat file labels as independently verified Angs.
 
-Builder corrections before the register becomes an admission contract:
+## 4. Bhagat Farid Ji and remaining collections
 
-1. `NOT_APPLICABLE_OFFICIAL_SOURCE` must not waive recording identity, coverage, rights, timing or appropriate pronunciation review. Separate these from official publisher provenance.
-2. Intended catalogue roles must not label unreviewed recordings authentic, exact or pronunciation-verified.
-3. The permission draft must promise removal of controlled distribution, not impossible instant recall of previously downloaded offline copies. Scope each requested use explicitly.
-4. The register test is a draft-honesty check, not the playback permissions/security boundary.
-5. A line-repeat proof needs verified start and end intervals and explicit treatment of repetitions, omissions and unmapped introductory material.
+The existing PR 65 intake preserves the forward numbered-collection span and the displaced Salok 2 ending at its upstream location. The heading punctuation difference remains open. Explicit Mahalla headings are retained without automatic reassignment of authorship.
 
-PR 10 already provides metadata alignment functions and a private rights-intake template; reuse them. The next safe engineering proof uses synthetic non-Gurbani audio to test actual-byte fingerprints, complete expected coverage, permitted playback and intervals. Do not generate synthetic Gurbani, use unlicensed recitations, or send the existing letters without authorization.
+Full-corpus search now makes the relevant original occurrences retrievable but does not settle those disputes. The next collection increment remains a reviewed selection ledger for the complete numbered collection, followed by admission through the existing reader contract. The numbered Salok collection and Farid Ji's author-wide Raag Bani are separate scopes.
 
-### History and encyclopedia
+## 5. Sikh history and the wider encyclopedia
 
-The integrated app still has an unavailable History entry. Existing architecture is a research plan, not a reviewed historical library. The three-passage scripture registry is not a historical claim registry.
+PR 68 adds a content-free historical claim registry and chapter preparation gate. Individual claims carry source editions and locators, evidence classification, uncertainty and supporting/disputing accounts. A chapter's exact review packet binds its wording to those records; changed source or claim information invalidates a stale review receipt. Machine structural checks, external human attestations and founder release authority remain distinct.
 
-Next safe engineering increment: a content-free historical source/claim model with people, places, events, precise source locators, traditional-versus-contemporary evidence, conflicting accounts, excerpt/image rights and named human review. Keep modern reflections structurally separate from historical claims. Reuse the planned Kartarpur/Guru Nanak Dev Ji reference chapter, with actual research and qualified review before publication; do not fill it with invented scenes or dialogue.
+The real registry contains no historical chapter, claim or reviewer record. All nonempty examples are explicitly synthetic test fixtures. No invented dialogue, travel route, encounter or historical scene has been written into the product. The existing History navigation entry is unchanged.
 
-## Shared release state
+**Next:** actual source research for the planned Guru Nanak Dev Ji / Kartarpur reference chapter, using this registry. Integrate its documented relationships with the existing scripture and concept registry; do not create a competing copy of scripture or pretend that a structural check establishes historical truth.
 
-The earlier integrated reader/Daily candidate passed its reader, Knowledge, integrity, backup and Daily checks. Its print-fidelity failure remains open. No feature in this register is a family-site release. No physical-device acceptance or qualified scholarship is claimed. The founder does not need to repeat the standing instruction to continue branch-only implementation.
+## Completion and review visibility
 
-## Review links
+Claude identified CI-02: restrictive base-branch filters hid applicable checks on stacked pull requests. PR 67 removes those filters while preserving the tests, job permissions, path rules and strict print gate. The formerly skipped checks now run against the stacked base. All final checks passed except the unchanged Gurmukhi PDF copying/extraction finding, which remains visibly failed. Its failure has not been hidden by changing an extractor or weakening the matcher.
 
-- Daily preparation: https://github.com/sskhangura82/gurbani-learning-library/pull/64
-- Farid and corpus intake: https://github.com/sskhangura82/gurbani-learning-library/pull/65
-- Haumai learning mechanics: https://github.com/sskhangura82/gurbani-learning-library/pull/66
+Physical phone, Safari/VoiceOver and airplane-mode acceptance remain distinct from automated browser checks. No physical-device success is claimed in this round. No new main-branch or isolated-site deployment occurred.
 
-All are draft branches on the same reviewed base. Their one shared changed file is the same browser-test clock correction; there is no competing application edit between these three. That byte comparison is not a whole-composite test or release approval.
+## Current candidate map
+
+| Candidate | Scope | Base |
+|---|---|---|
+| PR 64 | Automatic Daily preparation, inactive schedule | PR 62 |
+| PR 65 | Farid source intake and full file inventory | PR 62 |
+| PR 66 | Haumai private learning mechanics | PR 62 |
+| PR 67 | Applicable-check visibility repair | PR 62 |
+| PR 68 | Historical claim and review records | PR 62 |
+| PR 69 | Exact-base Daily installation proposal | PR 64 |
+| PR 70 | Original-only corpus research search | PR 65 |
+
+The shared Daily browser clock repair is identical across candidates carrying it. This table is not a whole-composite test. The older five-PR Knowledge chain remains already represented in the reader/Daily base and must not be merged again over its protected loader.
+
+The next delivery target is one reviewed, clearly labelled isolated preview. Branch development can continue without asking the founder to repeat existing permission. Independent review, a concrete authorized installation and honest content/status labels still matter; passing checks do not supply release authority.

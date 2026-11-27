@@ -1,0 +1,191 @@
+{
+  "schema": "glp.builder.current-priorities-evidence.v1",
+  "recordedAtUtc": "2026-11-27T14:12:12.656733+00:00",
+  "audioStatus": "ON_HOLD_FOUNDER_PERSONAL_RECORDING_LATER",
+  "candidates": [
+    {
+      "baseRefName": "fix/daily-backup-idempotence-20261126",
+      "headRefName": "fix/qa-candidate-coverage-20261127",
+      "headRefOid": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+      "isDraft": true,
+      "number": 67,
+      "state": "OPEN",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/67",
+      "runs": [
+        {
+          "conclusion": "success",
+          "databaseId": 46012631879,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012631879",
+          "workflowName": "Unified library and saved-entry checks"
+        },
+        {
+          "conclusion": "failure",
+          "databaseId": 46012632372,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012632372",
+          "workflowName": "Source reading sheets and print evidence"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012632348,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012632348",
+          "workflowName": "Complete library script integrity"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012631860,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012631860",
+          "workflowName": "GLP Reader Quality Gate"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012631918,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012631918",
+          "workflowName": "Learning reliability and separate practice tools"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012631834,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012631834",
+          "workflowName": "Salok Mahalla 9 source and reader checks"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012631776,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012631776",
+          "workflowName": "GLP Hukamnama Foundation QA"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012631748,
+          "headSha": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012631748",
+          "workflowName": "Salok Kabir source and reader checks"
+        }
+      ],
+      "selfApproval": false,
+      "deployed": false
+    },
+    {
+      "baseRefName": "fix/daily-backup-idempotence-20261126",
+      "headRefName": "feature/history-claim-registry-20261127",
+      "headRefOid": "7062c5ba2b5566c02a653cdc14b89468636dcb1e",
+      "isDraft": true,
+      "number": 68,
+      "state": "OPEN",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/68",
+      "runs": [
+        {
+          "conclusion": "success",
+          "databaseId": 46012482311,
+          "headSha": "7062c5ba2b5566c02a653cdc14b89468636dcb1e",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012482311",
+          "workflowName": "Historical claim registry research"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012482107,
+          "headSha": "7062c5ba2b5566c02a653cdc14b89468636dcb1e",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012482107",
+          "workflowName": "GLP Hukamnama Foundation QA"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46012482120,
+          "headSha": "7062c5ba2b5566c02a653cdc14b89468636dcb1e",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46012482120",
+          "workflowName": "Complete library script integrity"
+        }
+      ],
+      "selfApproval": false,
+      "deployed": false
+    },
+    {
+      "baseRefName": "feature/daily-automatic-preparation-20261127",
+      "headRefName": "feature/daily-install-proposal-20261127",
+      "headRefOid": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+      "isDraft": true,
+      "number": 69,
+      "state": "OPEN",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/69",
+      "runs": [
+        {
+          "conclusion": "success",
+          "databaseId": 46013147569,
+          "headSha": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46013147569",
+          "workflowName": "GLP Hukamnama Foundation QA"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46013147660,
+          "headSha": "a4ec6b0bf18f1a8ccdfc56bffe0a265f3c92f838",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46013147660",
+          "workflowName": "Complete library script integrity"
+        }
+      ],
+      "selfApproval": false,
+      "deployed": false
+    },
+    {
+      "baseRefName": "feature/farid-source-intake-20261127",
+      "headRefName": "feature/sggs-original-search-research-20261127",
+      "headRefOid": "d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a",
+      "isDraft": true,
+      "number": 70,
+      "state": "OPEN",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/70",
+      "runs": [
+        {
+          "conclusion": "success",
+          "databaseId": 46013180646,
+          "headSha": "d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46013180646",
+          "workflowName": "Original corpus research search checks"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46013181018,
+          "headSha": "d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46013181018",
+          "workflowName": "Complete library script integrity"
+        },
+        {
+          "conclusion": "success",
+          "databaseId": 46013180483,
+          "headSha": "d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a",
+          "status": "completed",
+          "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46013180483",
+          "workflowName": "GLP Hukamnama Foundation QA"
+        }
+      ],
+      "selfApproval": false,
+      "deployed": false
+    }
+  ],
+  "wholeCompositeTested": false,
+  "physicalDeviceTested": false,
+  "newDeployment": false,
+  "knownFailure": "PR67 Article print remains failed on unchanged ART-P01; raw evidence is on evidence/qa-candidate-coverage-20261127 at5eba8c0f696bd30791bdc9cae7aa920fd1161150."
+}

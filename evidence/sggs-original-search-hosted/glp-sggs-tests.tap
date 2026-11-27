@@ -1,0 +1,268 @@
+TAP version 13
+# Subtest: synthetic original fields retain exact spelling, punctuation, Unicode and source byte slices
+ok 1 - synthetic original fields retain exact spelling, punctuation, Unicode and source byte slices
+  ---
+  duration_ms: 2.794572
+  type: 'test'
+  ...
+# Subtest: identical text and printed-line labels still produce separate immutable witness identities
+ok 2 - identical text and printed-line labels still produce separate immutable witness identities
+  ---
+  duration_ms: 0.999338
+  type: 'test'
+  ...
+# Subtest: a byte change is rejected even at unchanged source path
+ok 3 - a byte change is rejected even at unchanged source path
+  ---
+  duration_ms: 0.465593
+  type: 'test'
+  ...
+# Subtest: source-file/page disagreement is rejected
+ok 4 - source-file/page disagreement is rejected
+  ---
+  duration_ms: 0.172207
+  type: 'test'
+  ...
+# Subtest: declared occurrence count cannot conceal omission
+ok 5 - declared occurrence count cannot conceal omission
+  ---
+  duration_ms: 0.327558
+  type: 'test'
+  ...
+# Subtest: unparsed and malformed source markers are rejected
+ok 6 - unparsed and malformed source markers are rejected
+  ---
+  duration_ms: 0.203834
+  type: 'test'
+  ...
+# Subtest: duplicate front-matter Ang assertions are rejected
+ok 7 - duplicate front-matter Ang assertions are rejected
+  ---
+  duration_ms: 0.36976
+  type: 'test'
+  ...
+# Subtest: invalid UTF-8 cannot be silently replaced
+ok 8 - invalid UTF-8 cannot be silently replaced
+  ---
+  duration_ms: 0.215572
+  type: 'test'
+  ...
+# Subtest: reading-aid text cannot be relabelled as an original field
+ok 9 - reading-aid text cannot be relabelled as an original field
+  ---
+  duration_ms: 0.387427
+  type: 'test'
+  ...
+# Subtest: whole-word search does not accept a substring
+ok 10 - whole-word search does not accept a substring
+  ---
+  duration_ms: 6.370493
+  type: 'test'
+  ...
+# Subtest: joined and spaced initial letters at the start agree
+ok 11 - joined and spaced initial letters at the start agree
+  ---
+  duration_ms: 0.715166
+  type: 'test'
+  ...
+# Subtest: initial letters within a line differ explicitly from start-only search
+ok 12 - initial letters within a line differ explicitly from start-only search
+  ---
+  duration_ms: 221.366353
+  type: 'test'
+  ...
+# Subtest: unsupported outside label cannot become scripture match: NASA
+ok 13 - unsupported outside label cannot become scripture match: NASA
+  ---
+  duration_ms: 0.434298
+  type: 'test'
+  ...
+# Subtest: unsupported outside label cannot become scripture match: category
+ok 14 - unsupported outside label cannot become scripture match: category
+  ---
+  duration_ms: 0.220298
+  type: 'test'
+  ...
+# Subtest: unsupported outside label cannot become scripture match: haumai
+ok 15 - unsupported outside label cannot become scripture match: haumai
+  ---
+  duration_ms: 0.196533
+  type: 'test'
+  ...
+# Subtest: unsupported outside label cannot become scripture match: Asa
+ok 16 - unsupported outside label cannot become scripture match: Asa
+  ---
+  duration_ms: 0.193829
+  type: 'test'
+  ...
+# Subtest: unsupported outside label cannot become scripture match: psychology
+ok 17 - unsupported outside label cannot become scripture match: psychology
+  ---
+  duration_ms: 0.148732
+  type: 'test'
+  ...
+# Subtest: bounded results report total hits and truncation without modifying original text
+ok 18 - bounded results report total hits and truncation without modifying original text
+  ---
+  duration_ms: 0.482169
+  type: 'test'
+  ...
+# Subtest: empty, oversized and unsupported search-mode inputs refuse
+ok 19 - empty, oversized and unsupported search-mode inputs refuse
+  ---
+  duration_ms: 1.237206
+  type: 'test'
+  ...
+# Subtest: an unverified object cannot enter the public packet search
+ok 20 - an unverified object cannot enter the public packet search
+  ---
+  duration_ms: 0.271545
+  type: 'test'
+  ...
+# Subtest: full actual pinned corpus reproduces the recorded projection
+ok 21 - full actual pinned corpus reproduces the recorded projection
+  ---
+  duration_ms: 1667.887015
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed text
+ok 22 - actual packet refuses changed text
+  ---
+  duration_ms: 274.633616
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed identity
+ok 23 - actual packet refuses changed identity
+  ---
+  duration_ms: 288.945913
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed order
+ok 24 - actual packet refuses changed order
+  ---
+  duration_ms: 287.484082
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed missing occurrence
+ok 25 - actual packet refuses changed missing occurrence
+  ---
+  duration_ms: 159.57001
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed duplicate occurrence
+ok 26 - actual packet refuses changed duplicate occurrence
+  ---
+  duration_ms: 118.767259
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed source locator
+ok 27 - actual packet refuses changed source locator
+  ---
+  duration_ms: 279.770167
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed unknown authority field
+ok 28 - actual packet refuses changed unknown authority field
+  ---
+  duration_ms: 133.451852
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed runtime promotion
+ok 29 - actual packet refuses changed runtime promotion
+  ---
+  duration_ms: 124.272395
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed review promotion
+ok 30 - actual packet refuses changed review promotion
+  ---
+  duration_ms: 142.599307
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed source commit
+ok 31 - actual packet refuses changed source commit
+  ---
+  duration_ms: 130.921478
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed page omission
+ok 32 - actual packet refuses changed page omission
+  ---
+  duration_ms: 130.710554
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed known discrepancy erased
+ok 33 - actual packet refuses changed known discrepancy erased
+  ---
+  duration_ms: 320.308728
+  type: 'test'
+  ...
+# Subtest: actual packet refuses changed source raw digest
+ok 34 - actual packet refuses changed source raw digest
+  ---
+  duration_ms: 135.309329
+  type: 'test'
+  ...
+# Subtest: full corpus search finds exact words and refuses substring/name guesses
+ok 35 - full corpus search finds exact words and refuses substring/name guesses
+  ---
+  duration_ms: 2211.216174
+  type: 'test'
+  ...
+# Subtest: known displaced Farid occurrence and heading remain in research search at unchanged source location
+ok 36 - known displaced Farid occurrence and heading remain in research search at unchanged source location
+  ---
+  duration_ms: 1868.06372
+  type: 'test'
+  ...
+# Subtest: actual repeated source texts retain distinct occurrence IDs
+ok 37 - actual repeated source texts retain distinct occurrence IDs
+  ---
+  duration_ms: 35.238096
+  type: 'test'
+  ...
+# Subtest: full initial-letter start and within-line searches preserve the complete exact phrase occurrence
+ok 38 - full initial-letter start and within-line searches preserve the complete exact phrase occurrence
+  ---
+  duration_ms: 1742.746269
+  type: 'test'
+  ...
+# Subtest: canonical packet encoding refuses duplicate JSON keys, even when JSON.parse would conceal them
+ok 39 - canonical packet encoding refuses duplicate JSON keys, even when JSON.parse would conceal them
+  ---
+  duration_ms: 560.253342
+  type: 'test'
+  ...
+# Subtest: missing, extra, symlink and changed witness files cannot produce a research packet
+ok 40 - missing, extra, symlink and changed witness files cannot produce a research packet
+  ---
+  duration_ms: 117.971867
+  type: 'test'
+  ...
+# Subtest: existing output is not overwritten by the builder
+ok 41 - existing output is not overwritten by the builder
+  ---
+  duration_ms: 1896.223646
+  type: 'test'
+  ...
+# Subtest: failed Git environment detection refuses before capture or output: tools/fetch-sggs-research-witnesses.mjs
+ok 42 - failed Git environment detection refuses before capture or output: tools/fetch-sggs-research-witnesses.mjs
+  ---
+  duration_ms: 51.337703
+  type: 'test'
+  ...
+# Subtest: failed Git environment detection refuses before capture or output: tools/build-sggs-research-index.mjs
+ok 43 - failed Git environment detection refuses before capture or output: tools/build-sggs-research-index.mjs
+  ---
+  duration_ms: 50.184977
+  type: 'test'
+  ...
+1..43
+# tests 43
+# suites 0
+# pass 43
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 14004.557722
