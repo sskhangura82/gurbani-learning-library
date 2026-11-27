@@ -17,3 +17,11 @@ Builder evidence is under `evidence/qa-candidate-coverage/`. `node --test tests/
 ART-P01 remains open. PyMuPDF 1.26.6 and the existing strict text comparison are unchanged. The new triggering may expose that red check on this draft even though no PDF or source text changed. That is the intended honest signal. A passing or failing check here is not permission to merge, deploy, or release.
 
 No application, scripture, teaching, private learning, publication key or generated bundle changed. No scheduler, deployment, branch protection or repository variable was enabled. Main and the isolated phone site remain unchanged.
+
+## Additive integration correction: shared browser-clock test repair
+
+The first hosted run of this CI-only candidate exposed two failures. The print failure is the unchanged ART-P01 result. The Daily browser check stopped in the two-tab scenario while using PR62's old test harness. Its raw failure log and report are retained in the separate evidence record.
+
+To keep this candidate on the same already-corrected harness as PR64, PR65 and PR66, the two canonical test-only commits were applied: `34a413bf8e76ff374de654094c8aaf9510fff23d` and `062ae5aff9ca18b1706d6273efb43a9e806d666c`. They install the synthetic clock once per browser context and ensure a fresh historical-note test clock starts after the imported timestamps. They do not alter application clock checks, backup identities, test expectations or timeouts.
+
+This expands the original file scope by the already-shared `tests/hukamnama-browser.mjs` dependency. It is disclosed rather than silently changing the frozen criteria. The first candidate was not all passing, and the final candidate still does not waive the print gate.
