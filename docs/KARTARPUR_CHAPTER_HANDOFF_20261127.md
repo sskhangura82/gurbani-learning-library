@@ -1,5 +1,7 @@
 # Kartarpur — first actual history manuscript
 
+> Policy update: mandatory human authorship/review statements in this earlier record are superseded by the owner decision in [TWO_REVIEWER_POLICY_20261127.md](history/TWO_REVIEWER_POLICY_20261127.md). The earlier work remains evidence of its original scope.
+
 27 November 2026. Built on PR68's history registry. Research draft only; nothing merged, deployed or approved.
 
 ## What is now useful

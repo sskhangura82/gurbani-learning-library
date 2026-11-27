@@ -1,7 +1,7 @@
 # Kartarpur — after the journeys
 
-**AI-assisted historical draft — awaiting qualified historical and Punjabi review.**
-Original English research manuscript prepared with ChatGPT. No human author or reviewer has approved it. This document is withheld from the application.
+**AI-assisted historical draft — awaiting ChatGPT and Claude source checks.**
+Original English research manuscript prepared with ChatGPT. No human approval is claimed. The owner has authorized ChatGPT source preparation and an independent check by actual Claude; review records determine readiness.
 
 ## Read the draft
 
@@ -33,7 +33,7 @@ Macauliffe's 1909 compilation also describes the return, hymns and conversation 
 
 ## Claim register
 
-These labels describe research status, not approval. Secondary-source assertions are conservatively marked unverified because the current registry has no separate secondary-account classification. Their attribution is recorded; their underlying historical evidence still needs qualified review.
+These labels describe research status, not approval. Secondary-source assertions are conservatively marked unverified because the current registry has no separate secondary-account classification. Their attribution is recorded; exact source support is checked under the owner-authorized two-model editorial policy. No scholarly approval is inferred.
 
 <a id="claim.kartarpur-angad-in-vaar"></a>
 
@@ -294,4 +294,4 @@ Bhai Gurdas names Aarti where Macauliffe's account names Sohila; both name Sodar
 
 Draft and linked evidence SHA-256: bd4169a62517d75951d95a1da7be5234fa55bddb9a06a7ea0ccd46df260febe6
 
-A digest can bind a review to the exact manuscript and records. It cannot establish truth, independence, rights or scholarly qualification. Historical interpretation, source collation and publication remain human decisions.
+A digest can bind a review to the exact manuscript and records. It cannot establish truth, independence, rights or scholarly qualification. ChatGPT prepares claim-by-claim source support and actual Claude checks it independently. Human authorship is not a prerequisite. Missing or stale records remain pending; this research tool does not publish.

@@ -1,8 +1,9 @@
-// AI-assisted research drafts only. This module cannot admit a chapter, approve
-// history, attest human authorship, or authorize publication.
+// AI-assisted research drafts use the owner-authorized ChatGPT + Claude source
+// review policy. This module cannot attest human authorship or authorize publication.
 import {createHash} from 'node:crypto';
 import {parseStrictJSON} from '../../hukamnama/json.mjs';
 import {validateRegistry, CLASSES} from './registry.mjs';
+import {assessEditorialRecords} from './editorial.mjs';
 
 export const DRAFT_SCHEMA = 'glp.history.ai-draft.v1';
 const ID = /^[a-z][a-z0-9.-]{1,119}$/;
@@ -36,7 +37,7 @@ export function validateDraft(registry, draft) {
   keys(draft, ['schema', 'id', 'title', 'status', 'authorship', 'rights', 'relationIds', 'sections'], 'INVALID_DRAFT_FIELDS');
   need(draft.schema === DRAFT_SCHEMA && typeof draft.id === 'string' && ID.test(draft.id), 'INVALID_DRAFT_ID');
   need(draft.status === 'AI_ASSISTED_UNREVIEWED_DRAFT', 'DRAFT_CANNOT_BE_APPROVED');
-  need(!index.chapters.has(draft.id), 'DRAFT_IN_HUMAN_CHAPTER_SLOT');
+  need(!index.chapters.has(draft.id), 'DRAFT_DUPLICATES_CHAPTER_ID');
   text(draft.title, 'INVALID_DRAFT_TITLE', 300);
   keys(draft.authorship, ['kind', 'tool', 'humanWriter'], 'INVALID_DRAFT_AUTHORSHIP');
   need(draft.authorship.kind === 'AI_ASSISTED_DRAFT' && draft.authorship.humanWriter === null, 'DRAFT_CANNOT_ATTEST_HUMAN_AUTHOR');
@@ -97,16 +98,16 @@ export function draftReviewPacket(registry, draft) {
 export function draftDigest(registry, draft) {
   return createHash('sha256').update(stable(draftReviewPacket(registry, draft)), 'utf8').digest('hex');
 }
-export function prepareResearchDraft(registry, draft) {
+export function prepareResearchDraft(registry, draft, evidence = {}) {
   const packet = draftReviewPacket(registry, draft);
+  const editorial = assessEditorialRecords(packet, evidence);
   return freeze({
-    status: 'WITHHELD',
-    humanReview: 'NOT_PERFORMED',
-    releaseAuthorization: 'NOT_GRANTED_BY_THIS_TOOL',
+    ...editorial,
     draftSha256: draftDigest(registry, draft),
-    reasons: ['AI_DRAFT_NOT_HUMAN_AUTHORED_CHAPTER', 'QUALIFIED_HISTORICAL_AND_PUNJABI_REVIEW_PENDING'],
     unverifiedClaimIds: packet.claims.filter(claim => claim.classification === 'UNVERIFIED_ATTRIBUTION').map(claim => claim.id),
-    chapter: null,
+    chapter: editorial.status === 'AI_SOURCE_REVIEWED_DRAFT' ? {
+      ...packet, publicationLabel: 'AI-assisted historical draft; source support checked by ChatGPT and Claude. Not scholarly or human approval.'
+    } : null,
     packet
   });
 }
@@ -118,8 +119,8 @@ export function renderDraftMarkdown(registry, draft) {
   const claimMap = new Map(packet.claims.map((claim, i) => [claim.id, {claim, label: 'C' + (i + 1)}]));
   const sourceMap = new Map(packet.sources.map((source, i) => [source.id, {source, label: 'S' + (i + 1)}]));
   const lines = ['# ' + draft.title, '',
-    '**AI-assisted historical draft — awaiting qualified historical and Punjabi review.**',
-    'Original English research manuscript prepared with ' + draft.authorship.tool + '. No human author or reviewer has approved it. This document is withheld from the application.', '',
+    '**AI-assisted historical draft — awaiting ChatGPT and Claude source checks.**',
+    'Original English research manuscript prepared with ' + draft.authorship.tool + '. No human approval is claimed. The owner has authorized ChatGPT source preparation and an independent check by actual Claude; review records determine readiness.', '',
     '## Read the draft', ''];
   for (const section of draft.sections) {
     lines.push('### ' + section.title, '');
@@ -131,7 +132,7 @@ export function renderDraftMarkdown(registry, draft) {
     }
   }
   lines.push('## Claim register', '',
-    'These labels describe research status, not approval. Secondary-source assertions are conservatively marked unverified because the current registry has no separate secondary-account classification. Their attribution is recorded; their underlying historical evidence still needs qualified review.', '');
+    'These labels describe research status, not approval. Secondary-source assertions are conservatively marked unverified because the current registry has no separate secondary-account classification. Their attribution is recorded; exact source support is checked under the owner-authorized two-model editorial policy. No scholarly approval is inferred.', '');
   for (const {claim, label} of claimMap.values()) {
     lines.push('<a id="' + claim.id + '"></a>', '', '### ' + label + ' · ' + claim.id, '',
       claim.statement, '', '**Classification:** ' + CLASSES[claim.classification], '',
@@ -154,6 +155,6 @@ export function renderDraftMarkdown(registry, draft) {
       '**Reuse:** metadata only; no source text, modern translation, scan or image is reproduced here.', '');
   }
   lines.push('## Review binding', '', 'Draft and linked evidence SHA-256: ' + draftSha256, '',
-    'A digest can bind a review to the exact manuscript and records. It cannot establish truth, independence, rights or scholarly qualification. Historical interpretation, source collation and publication remain human decisions.', '');
+    'A digest can bind a review to the exact manuscript and records. It cannot establish truth, independence, rights or scholarly qualification. ChatGPT prepares claim-by-claim source support and actual Claude checks it independently. Human authorship is not a prerequisite. Missing or stale records remain pending; this research tool does not publish.', '');
   return lines.join('\n');
 }
