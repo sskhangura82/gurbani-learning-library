@@ -1,5 +1,9 @@
 # Gurbani continuation — integrated candidate
 
+> Historical handoff for the first candidate. The founder subsequently selected
+> a six-digit PIN and the full named-edition original readers were built. Current
+> coverage, access and review status are in `PIN_SOURCE_READERS_HANDOFF_20261127.md`.
+
 ## Result
 
 This candidate combines the latest reviewed reader work and the founder's new

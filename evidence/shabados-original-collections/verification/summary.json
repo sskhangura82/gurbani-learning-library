@@ -1,0 +1,66 @@
+{
+  "schema": "glp.pin-source-readers.verification.v1",
+  "applicationCommit": "c3a4cc027b48c246027b545d9120dfb72d7ebe6f",
+  "sourceCore": {
+    "passed": 16,
+    "collections": 2,
+    "chunks": 155,
+    "groups": 11019,
+    "originalRecords": 128313,
+    "report": "source-core.json"
+  },
+  "integrationContracts": {
+    "passed": 59,
+    "failed": 0,
+    "skipped": 0,
+    "report": "integration-contracts.tap"
+  },
+  "importerContracts": {
+    "passed": 11,
+    "report": "../importer-tests.log"
+  },
+  "privatePinContracts": {
+    "passed": 24,
+    "report": "../../private-library/pin-20261127/contract-results.json"
+  },
+  "privatePinBrowser": {
+    "passed": 18,
+    "report": "../../private-library/browser/pin-20261127/results.json"
+  },
+  "sourceReaderBrowser": {
+    "passed": 35,
+    "failed": 0,
+    "runtimeFileHashesMatched": 29,
+    "report": "../../source-readers/browser/2026-11-27-c3a4cc0-run-2/report.json"
+  },
+  "combinedBrowser": {
+    "navigation": 10,
+    "scriptDelivery": 13,
+    "offlineUpdateAndSavedLearning": 6,
+    "reports": "../combined-browser/"
+  },
+  "delivery": {
+    "closedBundles": 5,
+    "sourceInputs": 29,
+    "htmlPages": 21,
+    "scriptPins": 61,
+    "publicOfflineAssets": 117,
+    "privateAssetsInPublicCache": 0
+  },
+  "ownerCollection": {
+    "exactRoundTrip": true,
+    "plaintextChanged": false,
+    "pinInRepository": false,
+    "ciphertextBytes": 6953017
+  },
+  "claudeReview": "QUEUED_NOT_PERFORMED",
+  "history": "WITHHELD_PENDING_ACTUAL_CLAUDE_SOURCE_CHECK",
+  "deployment": "NOT_RELEASED",
+  "productionMain": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+  "limits": [
+    "Suite counts overlap and are not unique requirements.",
+    "Fresh desktop Chrome, not physical iPhone/Safari/VoiceOver.",
+    "Digital-source coverage, not independent printed collation or completed explanations.",
+    "Exact-head GitHub CI is recorded in the PR check runs separately."
+  ]
+}
