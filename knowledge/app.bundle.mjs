@@ -8,8 +8,8 @@ var need = (ok, message) => {
 var utf8 = new TextEncoder(), decode = new TextDecoder("utf-8", { fatal: true });
 async function sha256(value) {
   const bytes = typeof value === "string" ? utf8.encode(value) : value;
-  const result = await crypto.subtle.digest("SHA-256", bytes);
-  return Array.from(new Uint8Array(result), (x) => x.toString(16).padStart(2, "0")).join("");
+  const result2 = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(result2), (x) => x.toString(16).padStart(2, "0")).join("");
 }
 var digestShape = (s) => typeof s === "string" && /^[a-f0-9]{64}$/.test(s);
 function unique(items) {
@@ -149,6 +149,614 @@ async function loadKnowledge(sourceBytes, teachingBytes, teachingPin) {
   return { ...rest, schema: "glp.knowledge.v1", nodes: [...e.nodes, ...s.sourceNodes, s.edition, ...sourceNodes], occurrences: s.occurrences, legacyPassageIds: s.legacyPassageIds, legacyOccurrenceIds: s.legacyOccurrenceIds };
 }
 
+// knowledge/json.mjs
+var MAX_TEXT_LENGTH = 2621440;
+var MAX_DEPTH = 40;
+var whitespace = (character) => character === " " || character === "	" || character === "\n" || character === "\r";
+function parseStrictJSON(text) {
+  if (typeof text !== "string") throw new TypeError("JSON input must be a string.");
+  if (text.length > MAX_TEXT_LENGTH) throw new RangeError("JSON input exceeds the text limit.");
+  let position = 0;
+  const syntax = (message) => {
+    throw new SyntaxError(message + " at character " + position + ".");
+  };
+  const skipWhitespace = () => {
+    while (whitespace(text[position])) position++;
+  };
+  function stringToken(decode2) {
+    if (text[position] !== '"') syntax("Expected a JSON string");
+    const start2 = position++;
+    while (position < text.length) {
+      const character = text[position++];
+      if (character === '"') {
+        if (!decode2) return;
+        try {
+          return JSON.parse(text.slice(start2, position));
+        } catch {
+          syntax("Malformed JSON string");
+        }
+      }
+      if (character.charCodeAt(0) < 32) syntax("Unescaped control character in JSON string");
+      if (character === "\\") {
+        if (position >= text.length) syntax("Unterminated JSON escape");
+        position++;
+      }
+    }
+    syntax("Unterminated JSON string");
+  }
+  function primitive() {
+    if (!"-0123456789tfn".includes(text[position] || "\0")) syntax("Expected a JSON value");
+    const start2 = position;
+    while (position < text.length && !whitespace(text[position]) && !",]}".includes(text[position])) position++;
+    const token = text.slice(start2, position);
+    if (token.includes("{") || token.includes("[") || token.includes('"')) syntax("Malformed JSON primitive");
+    try {
+      JSON.parse(token);
+    } catch {
+      syntax("Malformed JSON primitive");
+    }
+  }
+  function value(depth2) {
+    skipWhitespace();
+    const character = text[position];
+    if (character === '"') {
+      stringToken(false);
+      return;
+    }
+    if (character !== "{" && character !== "[") {
+      primitive();
+      return;
+    }
+    if (depth2 >= MAX_DEPTH) throw new RangeError("JSON nesting exceeds the depth limit.");
+    const object = character === "{", closing = object ? "}" : "]";
+    position++;
+    skipWhitespace();
+    if (text[position] === closing) {
+      position++;
+      return;
+    }
+    const keys = object ? /* @__PURE__ */ new Set() : null;
+    while (true) {
+      if (object) {
+        const key = stringToken(true);
+        if (keys.has(key)) syntax("Duplicate JSON object key");
+        keys.add(key);
+        skipWhitespace();
+        if (text[position] !== ":") syntax("Expected a colon after JSON object key");
+        position++;
+      }
+      value(depth2 + 1);
+      skipWhitespace();
+      if (text[position] === closing) {
+        position++;
+        return;
+      }
+      if (text[position] !== ",") syntax("Expected a JSON separator or closing delimiter");
+      position++;
+      skipWhitespace();
+    }
+  }
+  value(0);
+  skipWhitespace();
+  if (position !== text.length) syntax("Unexpected trailing JSON content");
+  try {
+    return JSON.parse(text);
+  } catch {
+    syntax("Malformed JSON");
+  }
+}
+
+// knowledge/learning.mjs
+var LEARNING_KEY = "glp001.knowledge.learning.v1";
+var EXPORT_FILENAME = "Knowledge-learning.json";
+var FORMAT = "glp-knowledge-learning";
+var LIMITS = Object.freeze({ records: 100, question: 4e3, reflection: 12e3, store: 5e5 });
+var JOURNEY_BINDING = Object.freeze({
+  journeyId: "journey.haumai.v1",
+  passageId: "sggs.asa-di-vaar.pauri007.salok02",
+  editionId: "edition.sggs.opengranth-34d2a7c",
+  passageSha256: "a4df72d9dc683a83f229048df86ef66a9ba2df9d63253b3b3de7a9748f51f306",
+  lessonId: "lesson.haumai.r1",
+  lessonRevision: 1
+});
+var fields = Object.keys(JOURNEY_BINDING), HEX = /^[a-f0-9]{64}$/, ID = /^[a-zA-Z0-9][a-zA-Z0-9._-]{0,159}$/;
+var plain = (x) => x !== null && typeof x === "object" && !Array.isArray(x);
+var exact = (x, required, optional = []) => plain(x) && required.every((k) => Object.hasOwn(x, k)) && Object.keys(x).every((k) => required.includes(k) || optional.includes(k));
+var require2 = (ok, message) => {
+  if (!ok) throw Error(message);
+};
+var clone = (x) => structuredClone(x);
+var freeze = (x) => {
+  if (x && typeof x === "object") {
+    Object.values(x).forEach(freeze);
+    Object.freeze(x);
+  }
+  return x;
+};
+var preserved = " Your existing record has been preserved.";
+var fail = (status2, message) => ({ ok: false, status: status2, message });
+var result = (store, extra = {}) => {
+  const snapshot = freeze(clone(store));
+  return { ok: true, store: snapshot, revision: snapshot.revision, records: snapshot.records, ...extra };
+};
+var empty = () => ({ format: FORMAT, version: 1, revision: 0, records: [] });
+var signature = (b) => JSON.stringify(fields.map((k) => b[k]));
+function sameBinding(a, b) {
+  return plain(a) && plain(b) && signature(a) === signature(b);
+}
+function validDate(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const d = /* @__PURE__ */ new Date(value + "T12:00:00.000Z");
+  return Number.isFinite(+d) && d.toISOString().slice(0, 10) === value;
+}
+function localDate(now = /* @__PURE__ */ new Date()) {
+  const d = new Date(now);
+  if (!Number.isFinite(+d)) throw Error("The device date is unavailable.");
+  return String(d.getFullYear()).padStart(4, "0") + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+function weekFrom(date = localDate()) {
+  require2(validDate(date), "The chosen date is invalid.");
+  const d = /* @__PURE__ */ new Date(date + "T12:00:00.000Z");
+  d.setUTCDate(d.getUTCDate() + 7);
+  return d.toISOString().slice(0, 10);
+}
+function returnReady(record, date = localDate()) {
+  return validDate(record.returnOn) && validDate(date) && record.returnOn <= date;
+}
+function validTime(value) {
+  return typeof value === "string" && /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString() === value;
+}
+function binding(value) {
+  require2(exact(value, fields), "The source binding is incomplete or unsupported.");
+  for (const name of ["journeyId", "passageId", "editionId", "lessonId"]) require2(typeof value[name] === "string" && ID.test(value[name]), "The source identity is invalid.");
+  require2(HEX.test(value.passageSha256) && Number.isSafeInteger(value.lessonRevision) && value.lessonRevision > 0, "The source or lesson revision is invalid.");
+  return value;
+}
+function textFields(record) {
+  require2(typeof record.question === "string" && record.question.length <= LIMITS.question, "The question is too long or unsupported.");
+  for (const k of ["initialReflection", "laterReflection"]) require2(typeof record[k] === "string" && record[k].length <= LIMITS.reflection, "The reflection is too long or unsupported.");
+  require2(record.returnOn === null || validDate(record.returnOn), "The return date is invalid.");
+}
+function recordValid(record) {
+  require2(exact(record, ["id", "binding", "question", "initialReflection", "laterReflection", "returnOn", "createdAt", "updatedAt"], ["conflictOf"]), "The saved note has an unsupported format.");
+  require2(typeof record.id === "string" && ID.test(record.id), "The note identity is invalid.");
+  if (Object.hasOwn(record, "conflictOf")) require2(typeof record.conflictOf === "string" && ID.test(record.conflictOf) && record.conflictOf !== record.id, "The conflict identity is invalid.");
+  binding(record.binding);
+  textFields(record);
+  require2(validTime(record.createdAt) && validTime(record.updatedAt) && record.createdAt <= record.updatedAt, "The saved note date is invalid.");
+}
+function validateLearning(store) {
+  require2(exact(store, ["format", "version", "revision", "records"]) && store.format === FORMAT && store.version === 1, "This is not a supported Knowledge learning backup.");
+  require2(Number.isSafeInteger(store.revision) && store.revision >= 0, "The revision is invalid.");
+  require2(Array.isArray(store.records) && store.records.length <= LIMITS.records, "There are too many saved notes.");
+  const ids = /* @__PURE__ */ new Set();
+  for (const record of store.records) {
+    recordValid(record);
+    require2(!ids.has(record.id), "The backup repeats a note identity.");
+    ids.add(record.id);
+  }
+  require2(JSON.stringify(store).length <= LIMITS.store, "The learning record is too large. Nothing was shortened.");
+  return store;
+}
+function storageOf(storage) {
+  try {
+    return storage ?? globalThis.localStorage;
+  } catch {
+    return null;
+  }
+}
+function locksOf(locks) {
+  try {
+    return locks ?? globalThis.navigator?.locks;
+  } catch {
+    return null;
+  }
+}
+function loadLearning({ storage } = {}) {
+  const target = storageOf(storage);
+  let raw;
+  try {
+    if (!target?.getItem) throw Error();
+    raw = target.getItem(LEARNING_KEY);
+  } catch {
+    return fail("STORAGE_UNAVAILABLE", "Private notes are unavailable in this browser." + preserved);
+  }
+  if (raw === null) return result(empty());
+  try {
+    require2(typeof raw === "string" && raw.length <= LIMITS.store, "oversize");
+    return result(validateLearning(parseStrictJSON(raw)));
+  } catch {
+    return fail("RECOVERY_REQUIRED", "The saved Knowledge learning record needs recovery. Keep the original backup; nothing has been reset." + preserved);
+  }
+}
+function nextId(records, factory = () => globalThis.crypto.randomUUID()) {
+  const used = new Set(records.map((r) => r.id));
+  for (let n = 0; n < 20; n++) {
+    const id = factory();
+    if (typeof id === "string" && ID.test(id) && !used.has(id)) return id;
+  }
+  throw Error("A fresh note identity could not be created.");
+}
+function commit(target, store, extra) {
+  let text;
+  try {
+    validateLearning(store);
+    text = JSON.stringify(store);
+  } catch (error) {
+    return fail("SIZE_OR_FORMAT_LIMIT", error.message + preserved);
+  }
+  try {
+    target.setItem(LEARNING_KEY, text);
+  } catch {
+    return fail("STORAGE_REFUSED", "The browser could not save this learning record. Keep or export your unsaved text before trying again." + preserved);
+  }
+  return result(store, extra);
+}
+async function locked({ storage, locks }, work) {
+  const target = storageOf(storage), manager = locksOf(locks);
+  if (!target?.getItem || !target?.setItem) return fail("STORAGE_UNAVAILABLE", "Private notes cannot be saved in this browser." + preserved);
+  if (!manager?.request) return fail("LOCK_UNAVAILABLE", "This browser cannot safely coordinate private note edits between tabs. Saving and importing are unavailable; existing notes remain readable and exportable." + preserved);
+  try {
+    return await manager.request(LEARNING_KEY, { mode: "exclusive" }, () => work(target));
+  } catch {
+    return fail("SAVE_UNAVAILABLE", "The private learning operation could not finish. Keep your unsaved text." + preserved);
+  }
+}
+function journeyAvailable(index2) {
+  const p = index2?.nodes?.get(JOURNEY_BINDING.passageId), l = index2?.nodes?.get(JOURNEY_BINDING.lessonId);
+  return Boolean(p?.type === "passage" && p.editionId === JOURNEY_BINDING.editionId && p.passageSha256 === JOURNEY_BINDING.passageSha256 && p.expectedOccurrenceCount === 8 && p.occurrenceIds?.length === 8 && p.occurrenceIds.every((id) => index2.occ.get(id)?.passageId === p.id) && l?.revision === JOURNEY_BINDING.lessonRevision && l.sourceBindings?.some((b) => b.id === p.id && b.sha256 === p.passageSha256));
+}
+async function saveLearning({ storage, locks, record, baseRevision, now = () => Date.now(), idFactory } = {}) {
+  try {
+    require2(exact(record, ["binding", "question", "initialReflection", "laterReflection", "returnOn"], ["id"]), "The new note has an unsupported format.");
+    binding(record.binding);
+    textFields(record);
+    require2(sameBinding(record.binding, JOURNEY_BINDING), "This note belongs to an unavailable source or lesson revision. It can still be read and exported.");
+    require2(Number.isSafeInteger(baseRevision) && baseRevision >= 0, "Reload the saved notes before editing.");
+    if (Object.hasOwn(record, "id")) require2(typeof record.id === "string" && ID.test(record.id), "The note identity is invalid.");
+  } catch (error) {
+    return fail("INVALID_NOTE", error.message + preserved);
+  }
+  return locked({ storage, locks }, (target) => {
+    const loaded = loadLearning({ storage: target });
+    if (!loaded.ok) return loaded;
+    const store = clone(loaded.store), existing = record.id ? store.records.find((r) => r.id === record.id) : null;
+    if (record.id && !existing) return fail("NOTE_NOT_FOUND", "The original saved note is unavailable. Keep this text before reopening Saved." + preserved);
+    if (existing && !sameBinding(existing.binding, record.binding)) return fail("SOURCE_MISMATCH", "A note cannot move to another source or lesson revision." + preserved);
+    if (existing && (existing.question !== record.question || existing.initialReflection !== record.initialReflection)) return fail("EARLIER_NOTE_PROTECTED", "Your earlier question and reflection stay as originally saved. Start another note for a new reflection." + preserved);
+    if (!existing && record.laterReflection !== "") return fail("INVALID_NOTE", "Save the first reflection before adding a later one." + preserved);
+    if (!record.question.trim() && !record.initialReflection.trim() && !record.laterReflection.trim()) return fail("EMPTY_NOTE", "Write a question or reflection before saving." + preserved);
+    if (existing && existing.laterReflection === record.laterReflection && existing.returnOn === record.returnOn) return result(store, { status: "UNCHANGED", savedRecord: freeze(clone(existing)), message: "This reflection is already saved." });
+    const date = new Date(typeof now === "function" ? now() : now).toISOString();
+    if (existing && date < existing.updatedAt) return fail("INVALID_CLOCK", "The device clock predates the saved note. Keep your unsaved text." + preserved);
+    const conflict = Boolean(existing && baseRevision !== store.revision);
+    const saved = { id: existing && !conflict ? existing.id : nextId(store.records, idFactory), binding: clone(record.binding), question: record.question, initialReflection: record.initialReflection, laterReflection: record.laterReflection, returnOn: record.returnOn, createdAt: existing?.createdAt || date, updatedAt: date };
+    if (conflict) saved.conflictOf = existing.id;
+    else if (existing?.conflictOf) saved.conflictOf = existing.conflictOf;
+    if (existing && !conflict) store.records[store.records.findIndex((r) => r.id === existing.id)] = saved;
+    else store.records.push(saved);
+    store.revision++;
+    return commit(target, store, { status: conflict ? "CONFLICT_PRESERVED" : "SAVED", savedRecord: freeze(clone(saved)), message: conflict ? "Another edit was saved first. Both versions have been kept as separate notes." : "Private reflection saved on this device." });
+  });
+}
+var sameVersion = (a, b) => sameBinding(a.binding, b.binding) && ["question", "initialReflection", "laterReflection", "returnOn", "createdAt", "updatedAt"].every((k) => a[k] === b[k]);
+var sameRecord = (a, b) => a.id === b.id && a.conflictOf === b.conflictOf && sameVersion(a, b);
+function exportLearning({ storage } = {}) {
+  const loaded = loadLearning({ storage });
+  if (!loaded.ok) return loaded;
+  return { ok: true, filename: EXPORT_FILENAME, text: JSON.stringify(loaded.store, null, 2) + "\n", revision: loaded.revision };
+}
+async function importLearning({ storage, locks, text, idFactory } = {}) {
+  let incoming;
+  try {
+    require2(typeof text === "string" && text.length <= LIMITS.store * 2, "oversize");
+    incoming = validateLearning(parseStrictJSON(text));
+  } catch {
+    return fail("INVALID_IMPORT", "This is not a complete supported Knowledge learning backup. Nothing was imported." + preserved);
+  }
+  return locked({ storage, locks }, (target) => {
+    const loaded = loadLearning({ storage: target });
+    if (!loaded.ok) return loaded;
+    const store = clone(loaded.store), byId = new Map(store.records.map((r) => [r.id, r])), pending = [];
+    let added = 0, conflicts = 0;
+    for (const record of incoming.records) {
+      const current2 = byId.get(record.id);
+      if (!current2) {
+        store.records.push(clone(record));
+        added++;
+      } else if (!sameRecord(current2, record)) pending.push(record);
+    }
+    for (const record of pending) {
+      if (store.records.some((r) => r.conflictOf === record.id && sameVersion(r, record))) continue;
+      const saved = clone(record);
+      saved.id = nextId([...store.records, ...incoming.records], idFactory);
+      saved.conflictOf = record.id;
+      store.records.push(saved);
+      added++;
+      conflicts++;
+    }
+    if (!added) return result(store, { status: "UNCHANGED", message: "This backup is already present. Your saved notes have not changed." });
+    store.revision++;
+    return commit(target, store, { status: conflicts ? "CONFLICT_PRESERVED" : "IMPORTED", message: conflicts ? "Backup restored. Conflicting versions were kept as separate notes." : "Knowledge learning backup restored. Existing notes were kept." });
+  });
+}
+
+// knowledge/journey.mjs
+var JOURNEY_ID = JOURNEY_BINDING.journeyId;
+var SAVED_ID = "knowledge.saved";
+var drafts = /* @__PURE__ */ new Map();
+var notice = "";
+function showNotice(parent) {
+  if (notice) {
+    const p = el("p", notice, "note");
+    p.setAttribute("role", "status");
+    parent.append(p);
+    notice = "";
+  }
+}
+var el = (tag, text, cls) => {
+  const n = document.createElement(tag);
+  if (text !== void 0) n.textContent = text;
+  if (cls) n.className = cls;
+  return n;
+};
+var button = (text, fn) => {
+  const b = el("button", text);
+  b.type = "button";
+  b.addEventListener("click", fn);
+  return b;
+};
+var paragraph = (text) => el("p", text, "note");
+function download(text, filename, type = "application/json") {
+  const url = URL.createObjectURL(new Blob([text], { type })), a = el("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1e3);
+}
+function backups(parent, onImported) {
+  const box = el("section", void 0, "private-learning backup-tools");
+  box.dataset.privateLearning = "true";
+  box.append(el("h3", "Your Knowledge learning backup"), paragraph("This file contains only your private Knowledge questions and reflections. Other readers have their own backups."));
+  const status2 = el("p", "", "note");
+  status2.setAttribute("role", "status");
+  const output = button("Export Knowledge learning", () => {
+    const r = exportLearning();
+    if (r.ok) {
+      download(r.text, r.filename);
+      status2.textContent = "Knowledge learning exported. Keep this private file somewhere safe.";
+    } else status2.textContent = r.message;
+  });
+  const label = el("label", "Import Knowledge learning"), input = el("input");
+  input.type = "file";
+  input.accept = ".json,application/json";
+  input.id = "journey-import";
+  label.htmlFor = input.id;
+  input.addEventListener("change", async () => {
+    const file = input.files?.[0];
+    if (!file) return;
+    input.disabled = true;
+    try {
+      if (file.size > LIMITS.store * 6) {
+        status2.textContent = "This backup is too large. Your existing record has been preserved.";
+        return;
+      }
+      const r = await importLearning({ text: await file.text() });
+      status2.textContent = r.message;
+      if (r.ok && box.isConnected) {
+        notice = r.message;
+        onImported?.(r);
+      }
+    } catch {
+      status2.textContent = "The backup could not be read. Your existing record has been preserved.";
+    } finally {
+      input.disabled = false;
+      input.value = "";
+    }
+  });
+  box.append(output, label, input, status2);
+  parent.append(box);
+  return status2;
+}
+function source(parent, index2) {
+  const p = index2.nodes.get(JOURNEY_BINDING.passageId), box = el("section", void 0, "journey-original");
+  box.dataset.contentKind = "scripture";
+  box.append(el("h3", "Read the complete source passage"), paragraph("Original Gurbani · pinned digital source · " + index2.nodes.get(p.authorId).title + " · " + index2.nodes.get(p.compositionId).title));
+  for (const id of p.occurrenceIds) {
+    const o = index2.occ.get(id), line = el("p", o.text, "pankti" + (o.kind === "heading" ? " source-heading" : ""));
+    line.lang = "pa";
+    line.dataset.occurrence = id;
+    box.append(line);
+  }
+  const a = el("a", "Open the pinned source");
+  a.href = p.sourceUrl;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  box.append(paragraph(p.comparison), a);
+  parent.append(box);
+}
+function learningSlots(parent, navigate) {
+  const box = el("section", void 0, "journey-review");
+  box.dataset.contentKind = "editorial";
+  for (const [id, title] of [["explanation", "Qualified explanation"], ["practice", "Gurbani practice guidance"]]) {
+    const slot = el("section", void 0, "review-slot");
+    slot.dataset.reviewSlot = id;
+    slot.dataset.reviewStatus = "AWAITING_QUALIFIED_REVIEW";
+    slot.append(el("h3", title), paragraph("Awaiting qualified review. No approved content is available here."));
+    box.append(slot);
+  }
+  const details = el("details");
+  details.append(el("summary", "Existing editorial drafts — optional, awaiting qualified review"), paragraph("The existing Haumai draft has an unresolved omission: it does not discuss the complete remedy clause in the source passage. It is not a finished or qualified explanation."), button("Open existing labelled draft", () => navigate({ id: "concept.haumai", depth: "simple" })));
+  box.append(details);
+  parent.append(box);
+}
+function comparison(parent, index2) {
+  const edge = index2.graph.edges.find((e) => e.id === "edge.24"), study = edge && index2.nodes.get(edge.to);
+  if (!edge || !study) return;
+  const details = el("details", void 0, "journey-comparison");
+  details.dataset.contentKind = "comparison";
+  details.setAttribute("aria-label", "Optional comparative study, separate from Gurbani explanation");
+  details.append(el("summary", "Optional comparison — editorial draft"), paragraph("This existing comparison is separate from the passage's explanation and practice guidance. Qualified review is pending."), el("h3", study.title), el("p", "Similarity: " + edge.similarity), el("p", "Difference: " + edge.difference));
+  const a = el("a", study.citation);
+  a.href = study.reference;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  details.append(a);
+  parent.append(details);
+}
+function noteFields(form, record, draft) {
+  const inputs = {};
+  for (const [key, title] of [["question", "Your question"], ["initialReflection", record ? "Your earlier reflection — kept as saved" : "Your first reflection"], ["laterReflection", "Your later reflection"]]) {
+    const label2 = el("label", title), input = el("textarea");
+    input.id = "journey-" + key;
+    input.rows = key === "question" ? 3 : 6;
+    input.maxLength = key === "question" ? LIMITS.question : LIMITS.reflection;
+    input.value = draft[key];
+    label2.htmlFor = input.id;
+    if (record && key !== "laterReflection") input.readOnly = true;
+    if (!record && key === "laterReflection") input.disabled = true;
+    inputs[key] = input;
+    form.append(label2, input);
+  }
+  const label = el("label", "Optional return date"), date = el("input");
+  date.type = "date";
+  date.id = "journey-return-date";
+  date.value = draft.returnOn || "";
+  label.htmlFor = date.id;
+  inputs.returnOn = date;
+  form.append(label, date, paragraph("Choose a date if you want to revisit your own note. This is a personal reading intention, with no notifications or practice tracking."));
+  return inputs;
+}
+function editor(parent, index2, record, loaded, navigate) {
+  const key = record?.id || "new", existing = drafts.get(key);
+  const original = { question: record?.question || "", initialReflection: record?.initialReflection || "", laterReflection: record?.laterReflection || "", returnOn: record?.returnOn || null };
+  const draft = existing || { ...original, baseRevision: loaded.revision };
+  const form = el("form", void 0, "private-learning journey-editor");
+  form.dataset.privateLearning = "true";
+  form.addEventListener("submit", (e) => e.preventDefault());
+  form.append(el("h3", record ? "Return to your own words" : "Your question and reflection"), paragraph("What would you like to understand about this passage? What would you like to remember when you return? Your words stay on this device unless you export them."));
+  if (record) {
+    if (record.conflictOf) form.append(paragraph("This is a preserved version from a conflicting edit or backup. Both versions remain in Saved."));
+    if (returnReady(record)) form.append(paragraph("Your chosen return date has arrived. Your earlier reflection is here whenever you want to revisit it."));
+    else if (record.returnOn) form.append(paragraph("Your chosen return date: " + record.returnOn + ". You can revisit this note at any time."));
+  }
+  const inputs = noteFields(form, record, draft), status2 = el("p", "", "note");
+  status2.id = "journey-note-status";
+  status2.setAttribute("role", "status");
+  const collect = () => ({ question: inputs.question.value, initialReflection: inputs.initialReflection.value, laterReflection: inputs.laterReflection.value, returnOn: inputs.returnOn.value || null });
+  const remember = () => {
+    const value = collect();
+    if (Object.keys(original).every((k) => value[k] === original[k])) drafts.delete(key);
+    else drafts.set(key, { ...value, baseRevision: draft.baseRevision });
+  };
+  Object.values(inputs).forEach((input) => input.addEventListener("input", remember));
+  const week = button("Return in a week", () => {
+    inputs.returnOn.value = weekFrom(localDate());
+    remember();
+  });
+  const clear = button("No return date", () => {
+    inputs.returnOn.value = "";
+    remember();
+  });
+  const save = button(record ? "Save later reflection" : "Save first reflection", async () => {
+    const value = collect();
+    remember();
+    status2.textContent = "Saving your reflection…";
+    save.disabled = true;
+    week.disabled = true;
+    clear.disabled = true;
+    Object.values(inputs).forEach((i) => i.disabled = true);
+    const r = await saveLearning({ record: { ...record ? { id: record.id } : {}, binding: JOURNEY_BINDING, ...value }, baseRevision: draft.baseRevision });
+    status2.textContent = r.message;
+    if (r.ok) {
+      drafts.delete(key);
+      if (form.isConnected) {
+        navigate({ id: JOURNEY_ID, note: r.savedRecord.id });
+        document.getElementById("journey-note-status").textContent = r.message;
+      }
+    } else {
+      save.disabled = false;
+      week.disabled = false;
+      clear.disabled = false;
+      for (const [k, i] of Object.entries(inputs)) i.disabled = !record && k === "laterReflection";
+    }
+  });
+  const keep = button("Download unsaved text", () => {
+    const v = collect();
+    download("Private Knowledge reflection\n\nQuestion\n" + v.question + "\n\nEarlier reflection\n" + v.initialReflection + "\n\nLater reflection\n" + v.laterReflection + "\n\nReturn date: " + (v.returnOn || "Not chosen") + "\n", "Knowledge-unsaved-reflection.txt", "text/plain");
+  });
+  const actions = el("div", void 0, "journey-actions");
+  actions.append(week, clear, save, keep);
+  form.append(actions, status2);
+  parent.append(form);
+}
+function renderJourney({ parent, index: index2, noteId, navigate }) {
+  showNotice(parent);
+  parent.append(el("p", "LEARNING MECHANICS · DEVELOPMENT CANDIDATE", "kicker"), el("h2", "Haumai — read, ask, reflect"), paragraph("A source-bound reading and private reflection space. Qualified explanation and practice guidance are still incomplete."));
+  const nav = el("div", void 0, "journey-actions");
+  nav.append(button("Saved Knowledge learning", () => navigate({ id: SAVED_ID })), button("Start another reflection", () => navigate({ id: JOURNEY_ID, note: "new" })));
+  parent.append(nav);
+  if (!journeyAvailable(index2)) {
+    parent.append(paragraph("This journey's exact source or lesson revision is unavailable. Saved questions and reflections remain readable and exportable."));
+    return;
+  }
+  source(parent, index2);
+  learningSlots(parent, navigate);
+  const loaded = loadLearning();
+  if (!loaded.ok) {
+    parent.append(paragraph(loaded.message));
+    backups(parent);
+    return;
+  }
+  const bound = loaded.records.filter((r) => sameBinding(r.binding, JOURNEY_BINDING));
+  let record = noteId && noteId !== "new" ? loaded.records.find((r) => r.id === noteId) : noteId === "new" ? null : bound.at(-1) || null;
+  if (noteId && noteId !== "new" && !record) {
+    parent.append(paragraph("This saved note is unavailable. Open Saved Knowledge learning to choose a record."));
+  } else if (record && !sameBinding(record.binding, JOURNEY_BINDING)) {
+    parent.append(paragraph("This saved note belongs to another source or lesson revision. Open Saved to read or export it; it cannot be moved onto this passage."));
+  } else editor(parent, index2, record, loaded, navigate);
+  comparison(parent, index2);
+  backups(parent, (r) => {
+    if (!drafts.size && parent.isConnected) navigate({ id: SAVED_ID });
+  });
+}
+function renderSaved({ parent, index: index2, navigate }) {
+  showNotice(parent);
+  parent.append(el("p", "PRIVATE LEARNING · ON THIS DEVICE", "kicker"), el("h2", "Saved Knowledge learning"), paragraph("Questions and reflections you chose to save. No practice sessions, scores, or reminders are recorded."), button("Open Haumai reading and reflection", () => navigate({ id: JOURNEY_ID })));
+  const loaded = loadLearning();
+  if (!loaded.ok) parent.append(paragraph(loaded.message));
+  else if (!loaded.records.length) parent.append(paragraph("No Knowledge reflections saved on this device yet."));
+  else {
+    const list = el("div", void 0, "private-learning");
+    list.dataset.privateLearning = "true";
+    for (const record of loaded.records) {
+      const card = el("section", void 0, "saved-reflection");
+      card.dataset.noteId = record.id;
+      card.append(el("h3", "Your saved reflection"), paragraph("Saved " + record.createdAt.slice(0, 10)));
+      if (record.conflictOf) card.append(paragraph("Preserved conflict version."));
+      if (record.returnOn) card.append(paragraph((returnReady(record) ? "Ready to revisit · " : "Chosen return date · ") + record.returnOn));
+      for (const [key, title] of [["question", "Your question"], ["initialReflection", "Your earlier reflection"], ["laterReflection", "Your later reflection"]]) {
+        card.append(el("h4", title));
+        const p = el("p", record[key] || "Nothing written here.", "private-copy");
+        card.append(p);
+      }
+      if (journeyAvailable(index2) && sameBinding(record.binding, JOURNEY_BINDING)) card.append(button("Open this reflection", () => navigate({ id: JOURNEY_ID, note: record.id })));
+      else card.append(paragraph("The source or lesson revision for this record is unavailable. Your words remain here and in your export; they have not been attached to a different passage."));
+      list.append(card);
+    }
+    parent.append(list);
+  }
+  backups(parent, (r) => {
+    if (parent.isConnected) navigate({ id: SAVED_ID });
+  });
+}
+if (typeof window !== "undefined") window.addEventListener("beforeunload", (event) => {
+  if (drafts.size) {
+    event.preventDefault();
+    event.returnValue = "";
+  }
+});
+
 // knowledge/kinds.mjs
 var editorialNodeTypes = /* @__PURE__ */ new Set(["concept", "word", "study", "lesson", "course"]);
 var contentKind = (n) => n.type === "passage" ? "scripture" : editorialNodeTypes.has(n.type) ? "editorial" : "source-index";
@@ -246,10 +854,10 @@ function search(index2, query, { mode = "auto", author = "", type = "", collecti
     for (const { node } of passages) if (value >= node.angStart && value <= node.angEnd) add(node, 120, "Ang " + value);
   } else {
     if (mode === "auto") {
-      const exact = labelWords(q), framed = aliasQuery(q);
+      const exact2 = labelWords(q), framed = aliasQuery(q);
       for (const { node, labels: labelsForNode } of labels) {
         for (const label of labelsForNode) {
-          const score = label.text === exact ? 100 : framed !== exact && label.text === framed ? 90 : 0;
+          const score = label.text === exact2 ? 100 : framed !== exact2 && label.text === framed ? 90 : 0;
           if (!score) continue;
           const reason = label.basis === "editorial-author-lookup" ? "Editorial author lookup" : label.basis === "editorial-lookup" ? "Editorial lookup alias" : label.origin === "editorial" ? "Editorial title or alias" : "Source title or alias";
           add(node, score, reason + (score === 100 ? " · exact indexed name" : " · indexed name in question"), [], label.origin, label.basis);
@@ -311,56 +919,56 @@ var relationships = {
   philosophical_comparison: ["concept", "study"],
   has_lesson: ["concept", "lesson"]
 };
-var require2 = (ok, message) => {
+var require3 = (ok, message) => {
   if (!ok) throw Error(message);
 };
 var nonempty = (s) => typeof s === "string" && !!s.trim();
 function unique2(items, what) {
   const map = /* @__PURE__ */ new Map();
   for (const x of items) {
-    require2(nonempty(x.id) && !map.has(x.id), "Duplicate/missing " + what + " ID");
+    require3(nonempty(x.id) && !map.has(x.id), "Duplicate/missing " + what + " ID");
     map.set(x.id, x);
   }
   return map;
 }
 function buildIndex(g) {
-  require2(g?.schema === "glp.knowledge.v1" && g.status === "NONPUBLISHING_DRAFT", "Not a development knowledge pack");
-  require2(Array.isArray(g.nodes) && Array.isArray(g.occurrences) && Array.isArray(g.edges), "Incomplete knowledge pack");
+  require3(g?.schema === "glp.knowledge.v1" && g.status === "NONPUBLISHING_DRAFT", "Not a development knowledge pack");
+  require3(Array.isArray(g.nodes) && Array.isArray(g.occurrences) && Array.isArray(g.edges), "Incomplete knowledge pack");
   const nodes = unique2(g.nodes, "node"), occ = unique2(g.occurrences, "occurrence");
   unique2(g.edges, "edge");
   const typed = (id, type) => nodes.get(id)?.type === type;
-  const ref = (id, type) => require2(typed(id, type), "Broken " + type + " reference: " + id);
+  const ref = (id, type) => require3(typed(id, type), "Broken " + type + " reference: " + id);
   const passages = g.nodes.filter((n) => n.type === "passage"), used = /* @__PURE__ */ new Set();
   for (const n of g.nodes) {
-    require2(types.has(n.type), "Unknown node type");
+    require3(types.has(n.type), "Unknown node type");
     if (n.type === "edition") {
       ref(n.collectionId, "collection");
-      require2(n.humanCollated === false, "No qualified collation asserted in this pilot");
+      require3(n.humanCollated === false, "No qualified collation asserted in this pilot");
     }
     if (n.type === "composition") ref(n.collectionId, "collection");
     if (n.type === "concept" && n.lessonId) {
       ref(n.lessonId, "lesson");
-      require2(nodes.get(n.lessonId).subjectId === n.id, "Wrong lesson subject");
+      require3(nodes.get(n.lessonId).subjectId === n.id, "Wrong lesson subject");
     }
     if (n.type === "lesson") {
       ref(n.subjectId, "concept");
-      require2(Number.isInteger(n.revision) && n.revision > 0 && n.review === "AI_ASSISTED_DRAFT", "Invalid lesson review/revision");
-      require2(Array.isArray(n.sourcePassageIds) && n.sourcePassageIds.length > 0, "Lesson lacks source passages");
+      require3(Number.isInteger(n.revision) && n.revision > 0 && n.review === "AI_ASSISTED_DRAFT", "Invalid lesson review/revision");
+      require3(Array.isArray(n.sourcePassageIds) && n.sourcePassageIds.length > 0, "Lesson lacks source passages");
       for (const id of n.sourcePassageIds) ref(id, "passage");
-      for (const k of ["simple", "detailed", "deep"]) require2(nonempty(n[k]?.en) && nonempty(n[k]?.pa), "Missing bilingual teaching layer");
+      for (const k of ["simple", "detailed", "deep"]) require3(nonempty(n[k]?.en) && nonempty(n[k]?.pa), "Missing bilingual teaching layer");
     }
     if (n.type === "course") {
-      require2(Array.isArray(n.orderedLessonIds) && n.orderedLessonIds.length > 0, "Course has no lessons");
+      require3(Array.isArray(n.orderedLessonIds) && n.orderedLessonIds.length > 0, "Course has no lessons");
       for (const id of n.orderedLessonIds) ref(id, "lesson");
     }
     if (n.type === "word") {
-      require2(n.senses?.length > 0, "Word without sense");
+      require3(n.senses?.length > 0, "Word without sense");
       for (const s of n.senses) {
         ref(s.passageId, "passage");
-        require2(s.review === "AI_ASSISTED_DRAFT" && nonempty(s.en) && nonempty(s.pa) && nonempty(s.form) && s.occurrenceIds?.length > 0, "Unbound vocabulary sense");
+        require3(s.review === "AI_ASSISTED_DRAFT" && nonempty(s.en) && nonempty(s.pa) && nonempty(s.form) && s.occurrenceIds?.length > 0, "Unbound vocabulary sense");
         for (const id of s.occurrenceIds) {
           const o = occ.get(id);
-          require2(o?.passageId === s.passageId && o.text.split(/\s+/u).includes(s.form), "Word sense does not match exact occurrence");
+          require3(o?.passageId === s.passageId && o.text.split(/\s+/u).includes(s.form), "Word sense does not match exact occurrence");
         }
       }
     }
@@ -371,32 +979,32 @@ function buildIndex(g) {
     ref(p.authorId, "author");
     ref(p.compositionId, "composition");
     if (p.raagId !== null) ref(p.raagId, "raag");
-    require2(nodes.get(p.editionId).collectionId === p.collectionId && nodes.get(p.compositionId).collectionId === p.collectionId, "Cross-collection mismatch");
-    require2(p.review === "DIGITAL_SOURCE_DRAFT" && p.occurrenceIds?.length > 0 && p.occurrenceIds.includes(p.focusId), "Unbound passage");
+    require3(nodes.get(p.editionId).collectionId === p.collectionId && nodes.get(p.compositionId).collectionId === p.collectionId, "Cross-collection mismatch");
+    require3(p.review === "DIGITAL_SOURCE_DRAFT" && p.occurrenceIds?.length > 0 && p.occurrenceIds.includes(p.focusId), "Unbound passage");
     let prior = null;
     for (const id of p.occurrenceIds) {
       const o = occ.get(id);
-      require2(o && o.passageId === p.id && o.editionId === p.editionId && o.ang >= p.angStart && o.ang <= p.angEnd && nonempty(o.text) && /^[a-f0-9]{40}$/.test(o.sourceBlob), "Invalid source occurrence");
-      require2(!used.has(id), "Duplicate source occurrence in passage membership");
+      require3(o && o.passageId === p.id && o.editionId === p.editionId && o.ang >= p.angStart && o.ang <= p.angEnd && nonempty(o.text) && /^[a-f0-9]{40}$/.test(o.sourceBlob), "Invalid source occurrence");
+      require3(!used.has(id), "Duplicate source occurrence in passage membership");
       used.add(id);
-      if (prior) require2(o.ang > prior.ang || o.ang === prior.ang && o.ordinal > prior.ordinal, "Source order mismatch");
+      if (prior) require3(o.ang > prior.ang || o.ang === prior.ang && o.ordinal > prior.ordinal, "Source order mismatch");
       prior = o;
     }
   }
-  require2(used.size === occ.size, "Orphan source occurrence");
+  require3(used.size === occ.size, "Orphan source occurrence");
   for (const e of g.edges) {
     const a = nodes.get(e.from), b = nodes.get(e.to), sig = relationships[e.type];
-    require2(a && b && sig && a.type === sig[0] && b.type === sig[1], "Invalid relationship endpoints");
+    require3(a && b && sig && a.type === sig[0] && b.type === sig[1], "Invalid relationship endpoints");
     if (editorial.has(e.type)) {
-      require2(e.review === "EDITORIAL_DRAFT" && nonempty(e.reason) && Array.isArray(e.refs) && e.refs.length > 0, "Unreviewed or unsupported editorial edge");
+      require3(e.review === "EDITORIAL_DRAFT" && nonempty(e.reason) && Array.isArray(e.refs) && e.refs.length > 0, "Unreviewed or unsupported editorial edge");
       for (const id of e.refs) ref(id, "passage");
-    } else require2(e.review === "SOURCE_DRAFT", "Source edge status mismatch");
-    if (e.type === "psychological_parallel" || e.type === "philosophical_comparison") require2(nonempty(e.similarity) && nonempty(e.difference) && nonempty(b.reference), "Comparison requires similarity, difference and reference");
-    if (e.type === "written_by") require2(a.authorId === b.id, "Author edge disagrees with source metadata");
-    if (e.type === "contains") require2(b.compositionId === a.id, "Composition edge disagrees with source metadata");
-    if (e.type === "in_raag") require2(a.raagId === b.id, "Raag edge disagrees with source metadata");
+    } else require3(e.review === "SOURCE_DRAFT", "Source edge status mismatch");
+    if (e.type === "psychological_parallel" || e.type === "philosophical_comparison") require3(nonempty(e.similarity) && nonempty(e.difference) && nonempty(b.reference), "Comparison requires similarity, difference and reference");
+    if (e.type === "written_by") require3(a.authorId === b.id, "Author edge disagrees with source metadata");
+    if (e.type === "contains") require3(b.compositionId === a.id, "Composition edge disagrees with source metadata");
+    if (e.type === "in_raag") require3(a.raagId === b.id, "Raag edge disagrees with source metadata");
   }
-  require2(g.coverage.qualifiedApproved === 0 && g.coverage.originalOccurrences === occ.size && g.coverage.passageCount === passages.length, "Coverage mismatch");
+  require3(g.coverage.qualifiedApproved === 0 && g.coverage.originalOccurrences === occ.size && g.coverage.passageCount === passages.length, "Coverage mismatch");
   return { graph: g, nodes, occ, passages };
 }
 function connected(index2, id) {
@@ -421,7 +1029,7 @@ function wordAt(index2, occurrenceId, form) {
 // knowledge/app.mjs
 var PACK_SHA256 = "c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf";
 var $ = (id) => document.getElementById(id);
-var el = (tag, text, cls) => {
+var el2 = (tag, text, cls) => {
   const n = document.createElement(tag);
   if (text !== void 0) n.textContent = text;
   if (cls) n.className = cls;
@@ -430,7 +1038,7 @@ var el = (tag, text, cls) => {
 var section = $("content"), status = $("status"), results = $("results"), wordDialog = $("word-dialog");
 var index, current = null, depth = "simple", returnFocus = null;
 var link = (text, url) => {
-  const a = el("a", text);
+  const a = el2("a", text);
   const u = new URL(url);
   if (u.protocol !== "https:" || u.username || u.password) throw Error("Unsafe source URL");
   a.href = u.href;
@@ -439,12 +1047,12 @@ var link = (text, url) => {
   return a;
 };
 var control = (text, fn) => {
-  const b = el("button", text);
+  const b = el2("button", text);
   b.type = "button";
   b.addEventListener("click", fn);
   return b;
 };
-var note = (text) => el("p", text, "note");
+var note = (text) => el2("p", text, "note");
 var kindLabel = (n) => contentKind(n) === "scripture" ? "Original Gurbani · digital source" : contentKind(n) === "source-index" ? "Source index" : n.type === "study" ? "Comparative study · editorial draft" : n.type === "word" ? "Dictionary entry · editorial draft" : n.type === "lesson" ? "Lesson · editorial draft" : n.type === "course" ? "Learning pathway · editorial draft" : "Library topic · editorial draft";
 var editorialNote = (text) => {
   const p = note(text);
@@ -454,17 +1062,17 @@ var editorialNote = (text) => {
 };
 var addText = (parent, x) => {
   if (!x) return;
-  const copy = el("div", void 0, "editorial-copy");
+  const copy = el2("div", void 0, "editorial-copy");
   copy.dataset.contentKind = "editorial";
   copy.setAttribute("aria-label", "Editorial explanation draft");
-  copy.append(el("p", "Editorial explanation · awaiting qualified review", "editorial-label"), el("p", x.en));
-  const pa = el("p", x.pa, "editorial-pa");
+  copy.append(el2("p", "Editorial explanation · awaiting qualified review", "editorial-label"), el2("p", x.en));
+  const pa = el2("p", x.pa, "editorial-pa");
   pa.lang = "pa";
   copy.append(pa);
   parent.append(copy);
 };
 var routeParams = () => new URLSearchParams(location.hash.slice(1));
-var selectedLine = null, navToken = history.state?.glpKnowledgeToken || crypto.randomUUID(), renderedHash = null, scrollTimer;
+var selectedLine = null, selectedNote = null, navToken = history.state?.glpKnowledgeToken || crypto.randomUUID(), renderedHash = null, scrollTimer;
 var scrollPositions = /* @__PURE__ */ new Map();
 function readRoute() {
   if (!location.hash) return { id: "concept.humility", depth: "simple", line: null };
@@ -477,6 +1085,12 @@ function readRoute() {
       return null;
     }
   }
+  if ([JOURNEY_ID, SAVED_ID].includes(raw)) {
+    const notes = p.getAll("note");
+    if (notes.length > 1 || notes.length && (!/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,159}$/.test(notes[0]) || raw !== JOURNEY_ID)) return null;
+    return { id: raw, depth: "simple", line: null, note: notes[0] || null };
+  }
+  if (!index) return null;
   const id = resolveIdentity(index, raw), occ = index.occ.get(id), node = index.nodes.get(occ?.passageId || id);
   if (!node) return null;
   const requested = p.get("line"), line = requested ? resolveIdentity(index, requested) : occ?.id || null;
@@ -488,7 +1102,8 @@ function readRoute() {
 function routeHash(route) {
   const p = new URLSearchParams({ item: route.id });
   if (route.line) p.set("line", route.line);
-  if (route.depth !== "simple") p.set("depth", route.depth);
+  if (route.note) p.set("note", route.note);
+  if (route.depth && route.depth !== "simple") p.set("depth", route.depth);
   return "#" + p;
 }
 function recordScroll() {
@@ -501,16 +1116,17 @@ function displayRoute(route, { restoreScroll = null, focus = false } = {}) {
   current = route?.id || null;
   depth = route?.depth || "simple";
   selectedLine = route?.line || null;
+  selectedNote = route?.note || null;
   renderedHash = location.hash;
   render();
-  const target = selectedLine ? section.querySelector('[data-occurrence="' + selectedLine + '"]') : section;
+  const target = selectedLine ? section.querySelector('[data-occurrence="' + selectedLine + '"]') : selectedNote && selectedNote !== "new" ? section.querySelector(".journey-editor") || section : section;
   if (focus) {
     target.tabIndex = -1;
     target.focus({ preventScroll: true });
   }
   requestAnimationFrame(() => {
     if (restoreScroll !== null) scrollTo(0, restoreScroll);
-    else if (focus) (selectedLine ? section.querySelector('[data-occurrence="' + selectedLine + '"]') : section)?.scrollIntoView({ block: "start", behavior: "auto" });
+    else if (focus) target?.scrollIntoView({ block: "start", behavior: "auto" });
   });
 }
 function visit(route) {
@@ -540,10 +1156,10 @@ function followHistory() {
   displayRoute(route, { restoreScroll: position, focus: true });
 }
 window.addEventListener("popstate", () => {
-  if (index) followHistory();
+  if (index || [JOURNEY_ID, SAVED_ID].includes(readRoute()?.id)) followHistory();
 });
 window.addEventListener("hashchange", () => {
-  if (index && renderedHash !== location.hash) followHistory();
+  if ((index || [JOURNEY_ID, SAVED_ID].includes(readRoute()?.id)) && renderedHash !== location.hash) followHistory();
 });
 window.addEventListener("scroll", () => {
   if (!index || history.state?.glpKnowledgeToken !== navToken) return;
@@ -566,15 +1182,15 @@ function row(n, detail, hit) {
     b.dataset.matchOrigin = hit.matchOrigin;
     b.dataset.matchBasis = hit.matchBasis;
   }
-  const title = el("span", n.title || n.id, "result-title " + (kind === "scripture" ? "scripture-title" : kind === "editorial" ? "editorial-title" : "source-index-title"));
+  const title = el2("span", n.title || n.id, "result-title " + (kind === "scripture" ? "scripture-title" : kind === "editorial" ? "editorial-title" : "source-index-title"));
   if (kind === "scripture") title.lang = "pa";
-  b.append(el("span", kindLabel(n), "result-kind"), title);
+  b.append(el2("span", kindLabel(n), "result-kind"), title);
   if (n.pa) {
-    const pa = el("span", n.pa, kind === "editorial" ? "editorial-pa" : "source-index-pa");
+    const pa = el2("span", n.pa, kind === "editorial" ? "editorial-pa" : "source-index-pa");
     pa.lang = "pa";
     b.append(pa);
   }
-  const div = el("div");
+  const div = el2("div");
   div.append(b);
   if (n.type === "passage") {
     div.append(note("Ang " + n.angStart + " · " + index.nodes.get(n.authorId).title));
@@ -589,7 +1205,7 @@ function row(n, detail, hit) {
     div.append(label);
   }
   if (hit?.occurrenceIds?.length) {
-    const occurrence = index.occ.get(hit.occurrenceIds[0]), quote = el("p", occurrence.text, "result-quote");
+    const occurrence = index.occ.get(hit.occurrenceIds[0]), quote = el2("p", occurrence.text, "result-quote");
     quote.lang = "pa";
     quote.dataset.contentKind = "scripture";
     quote.dataset.occurrence = occurrence.id;
@@ -598,7 +1214,7 @@ function row(n, detail, hit) {
   }
   return div;
 }
-function showWord(occ, form, button) {
+function showWord(occ, form, button2) {
   const list = wordAt(index, occ, form);
   if (!list.length) return;
   $("word-title").textContent = form;
@@ -610,7 +1226,7 @@ function showWord(occ, form, button) {
       open(word.id);
     }));
   }
-  returnFocus = button;
+  returnFocus = button2;
   wordDialog.showModal();
 }
 wordDialog.addEventListener("close", () => {
@@ -618,18 +1234,26 @@ wordDialog.addEventListener("close", () => {
 });
 $("close-word").addEventListener("click", () => wordDialog.close());
 function render() {
-  const n = index.nodes.get(current);
   section.replaceChildren();
+  if (current === JOURNEY_ID || current === SAVED_ID) {
+    const back2 = control("← Previous learning page", navigateBack);
+    back2.disabled = history.state?.glpKnowledgeToken !== navToken || history.state.step <= 0;
+    section.append(back2);
+    if (current === JOURNEY_ID) renderJourney({ parent: section, index, noteId: selectedNote, navigate: visit });
+    else renderSaved({ parent: section, index, navigate: visit });
+    return;
+  }
+  const n = index?.nodes.get(current);
   if (!n) {
-    section.append(el("h2", "This learning link is unavailable"), note("This link does not identify an item or line in the current pilot."), control("Start exploring", () => open("concept.humility")));
+    section.append(el2("h2", "This learning link is unavailable"), note("This link does not identify an item or line in the current pilot."), control("Start exploring", () => open("concept.humility")));
     return;
   }
   const back = control("← Previous learning page", navigateBack);
   back.disabled = history.state?.glpKnowledgeToken !== navToken || history.state.step <= 0;
   section.append(back);
   const kind = contentKind(n);
-  section.append(el("p", kindLabel(n) + " · DEVELOPMENT DRAFT", "kicker"));
-  const heading = el("h2", n.title || n.id, kind === "scripture" ? "scripture-title" : kind === "editorial" ? "editorial-title" : "source-index-title");
+  section.append(el2("p", kindLabel(n) + " · DEVELOPMENT DRAFT", "kicker"));
+  const heading = el2("h2", n.title || n.id, kind === "scripture" ? "scripture-title" : kind === "editorial" ? "editorial-title" : "source-index-title");
   heading.dataset.contentKind = kind;
   if (n.type === "passage") heading.lang = "pa";
   section.append(heading);
@@ -643,7 +1267,7 @@ function render() {
     }
   }
   if (n.pa) {
-    const p = el("p", n.pa, kind === "editorial" ? "editorial-pa" : "source-index-pa");
+    const p = el2("p", n.pa, kind === "editorial" ? "editorial-pa" : "source-index-pa");
     p.dataset.contentKind = kind;
     p.lang = "pa";
     section.append(p);
@@ -651,7 +1275,7 @@ function render() {
   if (n.type === "concept") {
     const l = n.lessonId && index.nodes.get(n.lessonId);
     if (l) {
-      const modes2 = el("div", void 0, "modes");
+      const modes2 = el2("div", void 0, "modes");
       for (const d of ["simple", "detailed", "deep"]) {
         const b = control({ simple: "Simple", detailed: "Detailed", deep: "Deep study" }[d], () => {
           visit({ id: current, depth: d, line: selectedLine });
@@ -667,17 +1291,17 @@ function render() {
     } else section.append(note("Indexed concept only; teaching has not been written."));
   } else if (n.type === "passage") {
     section.append(note(index.nodes.get(n.authorId).title + " · " + index.nodes.get(n.compositionId).title + " · Ang " + n.angStart + " · " + (n.raagId ? index.nodes.get(n.raagId).title : "No Raag assigned to this unit")));
-    const body = el("div", void 0, "scripture");
+    const body = el2("div", void 0, "scripture");
     body.dataset.contentKind = "scripture";
     body.setAttribute("aria-label", "Original Gurbani from the pinned digital source");
     body.lang = "pa";
     if (selectedLine) {
-      const label = el("p", "Selected line is highlighted below", "line-label");
+      const label = el2("p", "Selected line is highlighted below", "line-label");
       label.lang = "en";
       section.append(label);
     }
     for (const o of passageLines(index, n.id)) {
-      const line = el("p", void 0, "pankti");
+      const line = el2("p", void 0, "pankti");
       line.dataset.occurrence = o.id;
       if (o.kind === "heading") line.classList.add("source-heading");
       if (o.id === selectedLine) line.classList.add("selected-line");
@@ -700,7 +1324,7 @@ function render() {
     section.append(note(count + " selected passage" + (count === 1 ? "" : "s") + " in this pilot. This is not the complete Bani of this author."));
   } else if (n.type === "word") {
     for (const s of n.senses) {
-      section.append(note("Source word · contextual explanation below is an editorial draft"), el("h3", s.form, "source-token"));
+      section.append(note("Source word · contextual explanation below is an editorial draft"), el2("h3", s.form, "source-token"));
       addText(section, s);
       section.append(row(index.nodes.get(s.passageId), "Exact word occurrence in this passage"));
     }
@@ -719,17 +1343,17 @@ function render() {
   }
   const edges = connected(index, n.id).filter(({ node }) => node.type !== "lesson" && !(n.type === "word" && node.type === "passage"));
   if (edges.length) {
-    section.append(el("h3", "Related knowledge"));
+    section.append(el2("h3", "Related knowledge"));
     for (const { edge, node } of edges) {
-      const box = el("div", void 0, "connection");
+      const box = el2("div", void 0, "connection");
       box.append(row(node, edge.type.replaceAll("_", " ")));
       if (edge.reason) box.append(editorialNote("Editorial connection: " + edge.reason));
       if (edge.similarity) {
-        const comparison = el("div", void 0, "editorial-copy");
-        comparison.dataset.contentKind = "editorial";
-        comparison.setAttribute("aria-label", "Editorial comparison, not a Gurbani explanation");
-        comparison.append(el("p", "Comparative study · editorial draft", "editorial-label"), el("p", "Similarity: " + edge.similarity), el("p", "Difference: " + edge.difference), note("Editorial comparison awaiting independent and qualified review."));
-        box.append(comparison);
+        const comparison2 = el2("div", void 0, "editorial-copy");
+        comparison2.dataset.contentKind = "editorial";
+        comparison2.setAttribute("aria-label", "Editorial comparison, not a Gurbani explanation");
+        comparison2.append(el2("p", "Comparative study · editorial draft", "editorial-label"), el2("p", "Similarity: " + edge.similarity), el2("p", "Difference: " + edge.difference), note("Editorial comparison awaiting independent and qualified review."));
+        box.append(comparison2);
       }
       section.append(box);
     }
@@ -742,6 +1366,8 @@ function find() {
   status.textContent = matches.length ? matches.length + " indexed result" + (matches.length === 1 ? "" : "s") + " in this pilot" : "No indexed result in this pilot. Try an exact topic or author, complete Gurmukhi words, first letters, or an Ang. The full scripture is not indexed here yet.";
   for (const hit of matches) results.append(row(index.nodes.get(hit.id), (hit.matchOrigin === "editorial" ? "Matched through editorial indexing" : "Matched through source indexing") + " · " + hit.reason, hit));
 }
+$("journey-open").addEventListener("click", () => visit({ id: JOURNEY_ID }));
+$("journey-saved").addEventListener("click", () => visit({ id: SAVED_ID }));
 async function start() {
   try {
     if (!crypto?.subtle) throw Error("Knowledge data unavailable");
@@ -753,7 +1379,7 @@ async function start() {
     if (!teaching.ok) throw Error("Knowledge teaching unavailable");
     index = buildIndex(await loadKnowledge(sourceBytes, await teaching.arrayBuffer(), PACK_SHA256));
     for (const n of index.graph.nodes.filter((x) => x.type === "author")) {
-      const opt = el("option", n.title);
+      const opt = el2("option", n.title);
       opt.value = n.id;
       $("author").append(opt);
     }
@@ -768,11 +1394,12 @@ async function start() {
     const previous = history.state;
     history.scrollRestoration = "manual";
     history.replaceState({ glpKnowledgeToken: navToken, entryKey: previous?.entryKey || crypto.randomUUID(), step: previous?.glpKnowledgeToken === navToken ? previous.step : 0, scroll: previous?.scroll || 0 }, "", route ? routeHash(route) : location.href);
-    displayRoute(route, { restoreScroll: previous?.glpKnowledgeToken === navToken && Number.isFinite(previous.scroll) ? previous.scroll : null, focus: !!route?.line });
+    displayRoute(route, { restoreScroll: previous?.glpKnowledgeToken === navToken && Number.isFinite(previous.scroll) ? previous.scroll : null, focus: !!route?.line || [JOURNEY_ID, SAVED_ID].includes(route?.id) });
   } catch (e) {
-    status.textContent = "Knowledge pack could not be verified. Nothing is displayed.";
+    status.textContent = "Knowledge pack could not be verified. Source and teaching are unavailable.";
     results.replaceChildren();
     section.replaceChildren();
+    if ([JOURNEY_ID, SAVED_ID].includes(readRoute()?.id)) displayRoute(readRoute());
   }
 }
 start();
