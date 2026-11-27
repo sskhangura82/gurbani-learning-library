@@ -1206,5 +1206,20 @@
    "acceptance_test": "A block whose cited claim does not bear on its text is either refused, or is visibly marked as having unverified support, and no phrasing anywhere states or implies that mapping to a claim establishes support.",
    "status": "OPEN",
    "origin": "INDEPENDENT"
+ },
+ {
+   "id": "RIGHTS-01",
+   "severity": "S2",
+   "s0_candidate": false,
+   "area": "Rights",
+   "title": "Activating the Daily publisher would host custodian-sourced readings at a public URL five times a day, with no recorded permission",
+   "location": ".github/workflows/hukamnama-test-publish.yml (cron '23 1,2,3,5,8 * * *'); tools/publish-daily-test.mjs SITE https://glp001-iphone-qa.github.io/glp001-iphone-test/ (#73)",
+   "composition_or_verse": "the official daily Hukamnama reading",
+   "evidence": "The publish target is a GitHub Pages site and the schedule is five runs a day. What lands there is the official dated reading acquired from the custodian. The candidate is scrupulous adjacent to this - the fixture contract requires publicationApproved, lessonApproved, recordingPermission and dailyAdapterActive all false, and the run record carries mode DEVELOPMENT_PREVIEW with publicationApproved false - and it publishes nothing today, so RT-028's C7 passes as written. reviews/claude-independent/retests/RT-028_PR73_FINDINGS.md.",
+   "why_it_matters": "The standing constraint is explicit that public availability does not establish permission to redistribute, host, embed, cache offline, create excerpts or reuse timing data. A status of 'not approved' is not a permission, and an isolated test site is still a public URL: a github.io address is publicly reachable unless the repository is private with Pages access control, a paid feature. Activation is the moment the rights question becomes live, and it is founder-reserved by the rule that permission requests may be drafted but not acted on.",
+   "proposed_correction": "Founder decision before the activation variable is set to true, not after. I may draft a permission request; I may not contact a custodian and have not. Not a code defect and nothing for the builder to patch.",
+   "acceptance_test": "Either recorded permission covering hosting of the dated reading at the publish target exists before activation, or the target is made non-public, or activation is withheld.",
+   "status": "OPEN-OWNER-DECISION",
+   "origin": "INDEPENDENT"
  }
 ]
