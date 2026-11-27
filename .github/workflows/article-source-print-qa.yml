@@ -1,7 +1,6 @@
 name: Source reading sheets and print evidence
 on:
   pull_request:
-    branches: [main, feature/learning-reliability-practice-20261126]
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,7 +1,6 @@
 name: Salok Kabir source and reader checks
 on:
   pull_request:
-    branches: [main, fix/claude-review-first-repairs-20261125, feature/salok-mahalla9-reader-20261126]
   workflow_dispatch:
 permissions:
   contents: read
