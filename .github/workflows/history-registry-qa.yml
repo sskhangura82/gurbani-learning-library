@@ -1,0 +1,31 @@
+name: Historical claim registry research
+on:
+  pull_request:
+    paths:
+      - 'tools/history/**'
+      - 'content-intake/history/**'
+      - 'tests/history-registry.mjs'
+      - 'tests/fixtures/history/**'
+      - 'hukamnama/json.mjs'
+      - '.github/workflows/history-registry-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  metadata-and-review-boundaries:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source, review and publication boundaries using invented fixtures
+        run: |
+          node --test tests/history-registry.mjs
+          node tools/history/check.mjs
+# Research metadata only. No human qualification, historical truth, deployment,
+# publication, audio, external contact or actual-device acceptance is asserted.
