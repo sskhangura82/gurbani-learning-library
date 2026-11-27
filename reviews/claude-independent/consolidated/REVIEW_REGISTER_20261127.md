@@ -381,3 +381,82 @@ I told him one clean merge delivers everything. **That is no longer true.** The 
 grown by eleven candidates, #63's validation covers only up to #62, and no composite
 validation of the current stack exists. Sequencing is the builder's to propose and his to
 decide.
+
+---
+
+## Seventh update — the queue closes: all five candidates reviewed
+
+| PR | review | criteria frozen at | verdict |
+|---|---|---|---|
+| #71 Kartarpur | RT-027 | `c371460` | **PASS 14/14** |
+| #73 Daily publisher | RT-028 | `4d412c0` | **PASS 14/14** |
+| #72 Farid | RT-029 | `b605a81` | **PASS 12/12** |
+| #74 Explore | RT-030 | `1b3b54f` | **PASS 12/12** |
+| #66 Haumai | RT-031 | `a9ea8e0` | **PASS 13/13** |
+
+Every criteria set was committed before the candidate was opened, and findings were committed
+before builder tests or evidence were opened. Both orderings are in git rather than asserted.
+
+**Three falsifiers fired and I recorded them as such** rather than hunting for lesser
+findings: #71 sources every claim and invents nothing; #73 fails closed and activates nothing;
+#72's attribution and text are exact.
+
+### Findings opened
+
+| ID | State | Substance |
+|---|---|---|
+| **HIST-01** | OPEN | The history registry checks that a sentence *cites* a claim, not that the claim *supports* it. An invented dawn scene with invented speech passed every structural guard once the readable copy was regenerated. Not a defect in #71, which invents nothing; a gap in the mechanism the project will lean on as chapters accumulate |
+| **RIGHTS-01** | OPEN-OWNER-DECISION | Activating the Daily publisher hosts custodian-sourced readings at a public `github.io` URL five times a day. "Not approved" is a status we set; it is not a permission |
+
+### Finding corrected
+
+**EXP-01 → OPEN-CONDITIONAL.** `explore/app.js` does not exist at `main`, at the #62
+composite, at #70 or at #74 — only on unmerged #41. It was never a live defect in the
+shipping application, and my indexing it `OPEN` this morning read as though it were. It
+applies only if #41 is merged.
+
+### Two superseded branches that must be closed rather than merged
+
+This is now a pattern with three instances, and the hazard is identical each time: merging a
+superseded branch silently undoes what a later candidate fixed.
+
+- the **Knowledge chain** (CHAIN-02) — resolving `knowledge/index.html` toward #58 undoes MOD-01
+- **#41** (EXP-01) — targets `main` directly carrying an unverified Gurbani surface
+
+### What the builder got right, recorded because it is most of the story
+
+- #71 named the pauri's Ganga-flowing-backwards metaphor as a temptation and **refused to
+  literalise it**; flagged Macauliffe's colonial framing unprompted; preserved the
+  Aarti/Sohila divergence rather than reconciling it; under-claimed its own generational
+  inference relative to the arithmetic.
+- #73 found its own near-miss (local git config could widen a push), fixed it, and wrote a
+  regression that **enables** the dangerous configuration to prove the override holds.
+- #72 assigned authorship to **nobody** rather than to Farid, encoding SIG-01's lesson as
+  data, and flagged exactly the eleven Guru-authored saloks.
+- #74 made search structurally incapable of running on unverified data, and made the loader
+  **refuse a pack that claims approval**.
+- #66 closed the Web Locks dependency the right way — refusing the save while **keeping the
+  reader's unsaved text** — and covered a disclosure channel I had not specified (print).
+
+### Error count
+
+Now **36**. Three of today's are worth carrying forward as method:
+
+- **35** — a vacuous test through the wrong entry point nearly became "per-line verification
+  not reached". Fourth such result of the session, so the rule is now explicit: **when a test
+  returns the answer I expected, that is exactly when to check I measured the right thing.**
+  It then prevented a false accusation of spiritual scoring in RT-031.
+- **36** — a commit message of mine claimed a register correction that had silently failed.
+  Recorded rather than quietly fixed.
+- The **wrong-yardstick near-miss** in RT-029: I almost reported dropped joiners as an
+  undocumented difference, measuring against a provider the candidate never claimed to follow.
+
+### Outstanding, and not closable by review
+
+Physical iPhone/iPad/VoiceOver/airplane-mode acceptance · printed-source collation against a
+second textual lineage · audio rights · qualified content review (de-gated by founder ruling,
+but that ruling does not make my historical claims authoritative) · the branch-protection rule
+on `main` · and the three founder decisions above.
+
+`main` remains `a3476ac4b9be90dde350fb35dd13ce0b672c120d`, `protected: false`, unchanged
+throughout the entire session.
