@@ -1,0 +1,18 @@
+# Complete-passage Explore connection — builder criteria
+
+Frozen before implementation, 27 November 2026. Audio remains on hold. This is an unapproved development candidate, not release permission or qualified source review.
+
+1. Reuse the existing Explore page, existing Knowledge retrieval engine and existing source readers. Do not ship a second scripture corpus, another reader, meanings, new author assignments or the entire unadmitted research packet.
+2. Start with the already-carried complete units in the M9 and Kabir source packages and three Knowledge Saloks. Fetch those immutable packages by their independently pinned byte hashes. Existing source and teaching files remain byte-identical.
+3. Derive a metadata-only crosswalk from each complete unit's exact ordered original occurrences to all 60,555 occurrences in the fixed corpus research packet. Admission needs exactly one matching complete consecutive sequence. No Unicode/punctuation normalization, row/ordinal/Ang/first-line/fuzzy fallback, source-majority vote or inferred location is permitted. A missing or repeated sequence stays withheld. Preserve attached headings and known source-selection discrepancies.
+4. Every result represents a complete currently carried unit, with the original reader as owner. Source-only matching uses explicit phrase/first-letter modes. No English topic alias may be reported as a source-word match. Whole units open their existing route at the explicit pinned unit ID/ordinal; repeat text and overlapping owner views retain distinct source identities.
+5. Hash-check the entire crosswalk and every source package before returning original text or links. A corrupt, missing, extra or retargeted record fails closed. Links are derived from fixed source IDs and pinned identities, never arbitrary data URLs.
+6. Explore states clearly which collections are searchable, that full sequential SGGS coverage is incomplete, and that digital comparison does not establish independent printed Ang verification or qualified review. Do not present source-file locators as certified Angs. Empty and unavailable states stay honest; navigation to other readers still works if search is unavailable.
+7. Search runs on the device, stores no query or history, reads no private learning and sends no query to any server. Source fetches remain local and bounded. Use safe DOM text rendering and accessible controls/status. Existing Back/URL behavior remains predictable.
+8. Integrate the new graph into the exact bundle/SRI/offline protections with scoped pinned changes, not relaxed global checks. Preserve all other original/teaching data and existing reader code. Test exact full-unit crosswalk reproduction, corruption/refusal, ambiguous/missing whole sequences, both first-letter forms, false English matches, deep links, browser navigation, narrow layout and unchanged synthetic private storage.
+
+Builder criteria and tests do not replace Claude's independent criteria or findings. Japji/Sukhmani legacy segmentation, Farid's still-pending ledger and full-corpus unit admission remain explicitly later work, not silently accepted by this increment.
+
+## Implementation clarification — navigation state
+
+The original no-query-history criterion means no application search-history store, analytics or transmitted search query. During UI implementation, Back restoration uses the current query and method in the page's URL fragment, updated with replaceState. The browser can retain that address in its ordinary history; the fragment is not sent in source requests or referrers. This behavior is disclosed here rather than claiming the browser retains nothing. Private reflections are never included in a URL.

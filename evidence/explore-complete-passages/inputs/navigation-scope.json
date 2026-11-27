@@ -1,0 +1,22 @@
+{
+  "schema": "glp.explore.complete-passages.scope.v1",
+  "base": "d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a",
+  "purpose": "Add exact complete-passage retrieval inside the existing Explore entrance; frozen source and teaching packages remain unchanged.",
+  "files": [
+    {
+      "path": "index.html",
+      "beforeSha256": "aa4fb5c78d3d8be64093f162dc62a01c890368434c9cc8222175cdbf6e0a1ded",
+      "afterSha256": "86799464a0f91870d937c312c439894ce6a591980710eae6cc6cda1a989e4577"
+    },
+    {
+      "path": "library/app.mjs",
+      "beforeSha256": "2c73e9578263bc1bdeb8161249c53673d6f4b4ba12a50b60767e4b34fd9d9e00",
+      "afterSha256": "a3574ea4e259cfac913ce18e5c6cd9cc32e5e7fa753ef3ee021a679a62457cc8"
+    },
+    {
+      "path": "library/library.css",
+      "beforeSha256": "42f166b88440158c121cdbdb81f3fc41616bd84d699d5a4bb857b3a1af126978",
+      "afterSha256": "38bb9b0c203f17a961fb9a201799c7b06a68d3f722c82544ea6f526b6968c0b5"
+    }
+  ]
+}
