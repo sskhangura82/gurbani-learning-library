@@ -51,7 +51,7 @@ Synthetic data and fresh desktop Chrome contexts only. Current Mac runtime repor
 - Complete script-integrity contracts, source-preservation, browser transport and offline checks passed.
 
 Latest journey report and inspected phone-width screenshot:
-`evidence/knowledge-journey/2026-11-27T13-11-12-452Z/`.
+`evidence/knowledge-journey/2026-11-27T13-15-52-884Z/`.
 
 Raw combined unit/protection logs:
 `evidence/knowledge-journey/regressions/`.
@@ -69,3 +69,12 @@ Existing search/offline browser tests initially requested an absent Playwright b
 ## Still incomplete
 
 The existing Haumai explanation's remedy-clause omission and Punjabi coverage require qualified review. There is no approved Gurmat practice content. This is a usable learning-mechanics candidate, not a complete qualified learning journey. No main-branch change, push, PR, merge or deployment was performed by this workstream.
+
+## Corrective peer check before handoff
+
+Parent/peer engineering inspection found two concrete defects in the initial local candidate; neither finding is a qualified Gurbani review or the independent review seat's approval.
+
+1. A save waiting for the Web Lock could finish after the learner navigated away, reopened the same note and typed a newer draft. The old success callback unconditionally cleared that newer in-memory draft. It now captures the submitted draft object and clears only that same object. A fresh-browser regression deliberately held the Web Lock call, navigated/reopened/edited, then released the old save. It failed against the prior intact bundle and passed after the fix, including preservation of both versions when the newer draft was saved. The negative record is retained at `evidence/knowledge-journey/2026-11-27T13-15-28-050Z/`.
+2. The digest regex previously coerced a one-element array into a matching string while importing a historical binding. The validator now requires a string before testing the digest. Arrays, objects, null and numeric values are rejected with no write and byte-identical existing storage.
+
+The corrected journey browser, private-learning contracts, complete script/source preservation gates and offline gate were rerun. The fuller existing Knowledge regression suite above was run on the initial candidate before these two bounded repairs. All source and teaching bytes remain unchanged.

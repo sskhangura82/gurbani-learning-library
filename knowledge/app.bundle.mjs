@@ -309,7 +309,7 @@ function validTime(value) {
 function binding(value) {
   require2(exact(value, fields), "The source binding is incomplete or unsupported.");
   for (const name of ["journeyId", "passageId", "editionId", "lessonId"]) require2(typeof value[name] === "string" && ID.test(value[name]), "The source identity is invalid.");
-  require2(HEX.test(value.passageSha256) && Number.isSafeInteger(value.lessonRevision) && value.lessonRevision > 0, "The source or lesson revision is invalid.");
+  require2(typeof value.passageSha256 === "string" && HEX.test(value.passageSha256) && Number.isSafeInteger(value.lessonRevision) && value.lessonRevision > 0, "The source or lesson revision is invalid.");
   return value;
 }
 function textFields(record) {
@@ -661,6 +661,7 @@ function editor(parent, index2, record, loaded, navigate) {
   const save = button(record ? "Save later reflection" : "Save first reflection", async () => {
     const value = collect();
     remember();
+    const submittedDraft = drafts.get(key);
     status2.textContent = "Saving your reflection…";
     save.disabled = true;
     week.disabled = true;
@@ -669,7 +670,7 @@ function editor(parent, index2, record, loaded, navigate) {
     const r = await saveLearning({ record: { ...record ? { id: record.id } : {}, binding: JOURNEY_BINDING, ...value }, baseRevision: draft.baseRevision });
     status2.textContent = r.message;
     if (r.ok) {
-      drafts.delete(key);
+      if (drafts.get(key) === submittedDraft) drafts.delete(key);
       if (form.isConnected) {
         navigate({ id: JOURNEY_ID, note: r.savedRecord.id });
         document.getElementById("journey-note-status").textContent = r.message;

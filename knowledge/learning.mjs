@@ -38,7 +38,7 @@ function validTime(value){return typeof value==="string"&&/^\d{4}-\d\d-\d\dT\d\d
 function binding(value){
  require(exact(value,fields),"The source binding is incomplete or unsupported.");
  for(const name of ["journeyId","passageId","editionId","lessonId"])require(typeof value[name]==="string"&&ID.test(value[name]),"The source identity is invalid.");
- require(HEX.test(value.passageSha256)&&Number.isSafeInteger(value.lessonRevision)&&value.lessonRevision>0,"The source or lesson revision is invalid.");return value;
+ require(typeof value.passageSha256==="string"&&HEX.test(value.passageSha256)&&Number.isSafeInteger(value.lessonRevision)&&value.lessonRevision>0,"The source or lesson revision is invalid.");return value;
 }
 function textFields(record){
  require(typeof record.question==="string"&&record.question.length<=LIMITS.question,"The question is too long or unsupported.");

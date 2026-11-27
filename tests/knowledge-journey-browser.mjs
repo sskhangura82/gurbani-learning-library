@@ -95,6 +95,25 @@ try{
   await page.locator("#journey-open").click();assert.match(await page.locator("#content").innerText(),/exact source or lesson revision is unavailable/);await page.locator("#journey-saved").click();assert.equal(await page.locator(".saved-reflection").count(),3);
  });
  await context.close();
+ await check("a delayed save cannot erase a newer draft after leaving and reopening the same note",async()=>{
+  const other=await fresh();await ready(other.page);await first(other.page);const noteId=(await record(other.page)).records[0].id;
+  await other.page.evaluate(key=>{
+   const original=navigator.locks.request.bind(navigator.locks);let pending=true;
+   navigator.locks.request=(name,options,fn)=>{
+    if(pending&&name===key){pending=false;return new Promise((resolve,reject)=>{window.releaseKnowledgeSave=()=>original(name,options,fn).then(resolve,reject);});}
+    return original(name,options,fn);
+   };
+  },LEARNING_KEY);
+  await other.page.locator("#journey-laterReflection").fill("SYNTHETIC delayed earlier submission");await other.page.getByRole("button",{name:"Save later reflection",exact:true}).click();
+  await other.page.getByText("Saving your reflection…",{exact:true}).waitFor();await other.page.locator("#journey-saved").click();
+  await other.page.locator('[data-note-id="'+noteId+'"]').getByRole("button",{name:"Open this reflection",exact:true}).click();
+  await other.page.locator("#journey-laterReflection").fill("SYNTHETIC newer unsaved draft");await other.page.evaluate(()=>window.releaseKnowledgeSave());
+  await other.page.waitForFunction(key=>JSON.parse(localStorage.getItem(key)).records[0].laterReflection==="SYNTHETIC delayed earlier submission",LEARNING_KEY);
+  assert.equal(await other.page.locator("#journey-laterReflection").inputValue(),"SYNTHETIC newer unsaved draft");
+  await other.page.locator("#journey-saved").click();await other.page.locator('[data-note-id="'+noteId+'"]').getByRole("button",{name:"Open this reflection",exact:true}).click();
+  assert.equal(await other.page.locator("#journey-laterReflection").inputValue(),"SYNTHETIC newer unsaved draft");await saveLater(other.page,"SYNTHETIC newer unsaved draft");
+  const final=await record(other.page);assert.equal(final.records.length,2);assert.deepEqual(final.records.map(r=>r.laterReflection),["SYNTHETIC delayed earlier submission","SYNTHETIC newer unsaved draft"]);await other.context.close();
+ });
  await check("missing Web Locks refuses save and keeps unsaved text",async()=>{
   const other=await fresh();await other.context.addInitScript(()=>Object.defineProperty(navigator,"locks",{value:{},configurable:true}));await ready(other.page);await other.page.locator("#journey-question").fill("SYNTHETIC unsupported browser");await other.page.getByRole("button",{name:"Save first reflection",exact:true}).click();await other.page.getByText(/cannot safely coordinate private note edits/).waitFor();assert.equal(await other.page.locator("#journey-question").inputValue(),"SYNTHETIC unsupported browser");assert.equal(await other.page.evaluate(k=>localStorage.getItem(k),LEARNING_KEY),null);await other.context.close();
  });

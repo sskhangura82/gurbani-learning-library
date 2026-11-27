@@ -152,8 +152,8 @@
         },
         {
           "path": "knowledge/journey.mjs",
-          "bytes": 12751,
-          "sha256": "461fed61bd5b78fa3511906285c3af7c7303ef3ab7c1a73670306d5f879e7bb2",
+          "bytes": 12824,
+          "sha256": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",
           "imports": [
             {
               "kind": "import-statement",
@@ -175,8 +175,8 @@
         },
         {
           "path": "knowledge/learning.mjs",
-          "bytes": 12712,
-          "sha256": "39c43e3233621a6d907e93bb9e3fb4135b4c7477375db8809aed64923702c0f6",
+          "bytes": 12751,
+          "sha256": "376b8a2ca3de67934dd14e8bf18a2689ce191c0249905e0e276c24a6d24f6268",
           "imports": [
             {
               "kind": "import-statement",
@@ -215,9 +215,9 @@
       ],
       "output": {
         "path": "knowledge/app.bundle.mjs",
-        "bytes": 77663,
-        "sha256": "fc2cf096626ff83f230ec9bdc4c1849c6a9c4266baa6b4e5350b7f62cc1b2764",
-        "integrity": "sha384-R5WLp5KlxicgRLf1pHBKa9FgY2H8Ccvra72fYknKr3gMrAJbiL7LELbDxdf3Ynmg",
+        "bytes": 77790,
+        "sha256": "0962f8c8d7e21f20db0b387899713e7b20c04bc9a2cb112c0bb21763bddfbe05",
+        "integrity": "sha384-dUtraaSwZUyGisIE4ogJfy8frHYWC2s2A68euw9bsk8yefJOtbxiGKsXSp04PC8y",
         "imports": []
       }
     },

@@ -74,11 +74,11 @@ function editor(parent,index,record,loaded,navigate){
  const week=button("Return in a week",()=>{inputs.returnOn.value=weekFrom(localDate());remember();});
  const clear=button("No return date",()=>{inputs.returnOn.value="";remember();});
  const save=button(record?"Save later reflection":"Save first reflection",async()=>{
-  const value=collect();remember();status.textContent="Saving your reflection…";save.disabled=true;week.disabled=true;clear.disabled=true;
+  const value=collect();remember();const submittedDraft=drafts.get(key);status.textContent="Saving your reflection…";save.disabled=true;week.disabled=true;clear.disabled=true;
   Object.values(inputs).forEach(i=>i.disabled=true);
   const r=await saveLearning({record:{...(record?{id:record.id}:{}),binding:JOURNEY_BINDING,...value},baseRevision:draft.baseRevision});
   status.textContent=r.message;
-  if(r.ok){drafts.delete(key);if(form.isConnected){navigate({id:JOURNEY_ID,note:r.savedRecord.id});document.getElementById("journey-note-status").textContent=r.message;}}
+  if(r.ok){if(drafts.get(key)===submittedDraft)drafts.delete(key);if(form.isConnected){navigate({id:JOURNEY_ID,note:r.savedRecord.id});document.getElementById("journey-note-status").textContent=r.message;}}
   else{save.disabled=false;week.disabled=false;clear.disabled=false;for(const [k,i] of Object.entries(inputs))i.disabled=!record&&k==="laterReflection";}
  });
  const keep=button("Download unsaved text",()=>{const v=collect();download("Private Knowledge reflection\n\nQuestion\n"+v.question+"\n\nEarlier reflection\n"+v.initialReflection+"\n\nLater reflection\n"+v.laterReflection+"\n\nReturn date: "+(v.returnOn||"Not chosen")+"\n","Knowledge-unsaved-reflection.txt","text/plain");});

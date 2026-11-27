@@ -94,3 +94,12 @@ test("local-date intent and week addition survive month/year/leap/DST boundaries
 test("reversed device clock refuses editing rather than rewriting note chronology",async()=>{
  const f=fixture(),a=await save(f),before=f.data.get(LEARNING_KEY);const r=await save(f,input({id:a.savedRecord.id,laterReflection:"later"}),1,{now:()=>"2026-11-26T12:00:00.000Z"});assert.equal(r.status,"INVALID_CLOCK");assert.equal(f.data.get(LEARNING_KEY),before);
 });
+
+test("digest arrays or objects cannot enter historical records through regex coercion",async()=>{
+ const f=fixture(),a=await save(f),before=f.data.get(LEARNING_KEY),writes=f.writes();
+ for(const digest of [[JOURNEY_BINDING.passageSha256],{value:JOURNEY_BINDING.passageSha256},null,42]){
+  const bad={...a.savedRecord,id:"synthetic-invalid-digest",binding:{...JOURNEY_BINDING,passageSha256:digest}};
+  assert.equal((await importLearning({...f,text:backup([bad])})).status,"INVALID_IMPORT");
+  assert.equal(f.data.get(LEARNING_KEY),before);assert.equal(f.writes(),writes);
+ }
+});
