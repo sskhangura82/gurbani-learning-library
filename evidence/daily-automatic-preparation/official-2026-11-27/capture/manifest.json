@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-27",
+  "payload": {
+    "path": "events/2026-11-27.payload.json",
+    "sha256": "0eed8371748b81605be147b4995d68d7f856cdf7410397abc224b2e3fa672ba1"
+  },
+  "publicationApproved": false,
+  "receipt": {
+    "path": "receipts/2026-11-27.original.json",
+    "sha256": "8d259810f9c5690b8dac5545c3778ab1979b5c2ba2251cf4ac3a5178bb4b2168"
+  },
+  "schema": "glp.hukamnama.ingest-manifest.v1",
+  "source": {
+    "path": "sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json",
+    "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57"
+  }
+}

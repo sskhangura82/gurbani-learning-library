@@ -1,0 +1,20 @@
+{
+  "schema": "glp.hukamnama.preparation-run.v1",
+  "mode": "UNSIGNED_REVIEW_ONLY",
+  "sourceCommit": "eda7e64fc846a5112143910a98143e7069473fbf",
+  "requestedDate": "2026-11-26",
+  "requestedAsToday": false,
+  "timezone": "Asia/Kolkata",
+  "startedAtUtc": "2026-11-27T13:10:38.352Z",
+  "finishedAtUtc": "2026-11-27T13:10:39.471Z",
+  "endedAmritsarDate": "2026-11-27",
+  "status": "SOURCE_REVIEW_REQUIRED",
+  "code": "WITNESS_HEADING",
+  "message": "A source discrepancy or unsupported source contract needs review. No reading was replaced.",
+  "candidateReady": false,
+  "publicationApproved": false,
+  "published": false,
+  "source": null,
+  "capture": null,
+  "existing": null
+}

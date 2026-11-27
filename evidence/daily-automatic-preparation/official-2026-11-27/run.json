@@ -1,0 +1,36 @@
+{
+  "schema": "glp.hukamnama.preparation-run.v1",
+  "mode": "UNSIGNED_REVIEW_ONLY",
+  "sourceCommit": "eda7e64fc846a5112143910a98143e7069473fbf",
+  "requestedDate": "2026-11-27",
+  "requestedAsToday": true,
+  "timezone": "Asia/Kolkata",
+  "startedAtUtc": "2026-11-27T13:09:03.549Z",
+  "finishedAtUtc": "2026-11-27T13:09:06.232Z",
+  "endedAmritsarDate": "2026-11-27",
+  "status": "ALREADY_ADMITTED",
+  "code": null,
+  "message": "The observed original matches the existing dated record. Keep its exact envelope and source bytes; do not refresh its revision or receipt.",
+  "candidateReady": false,
+  "publicationApproved": false,
+  "published": false,
+  "source": {
+    "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+    "textSha256": "c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+    "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+    "occurrences": 7,
+    "angStart": 719,
+    "angEnd": 720
+  },
+  "capture": {
+    "manifestSha256": "6798a4f6a835844cac0a0fcadfe0d60a46250dba0a4eac6d2b939a048433d764",
+    "payloadSha256": "0eed8371748b81605be147b4995d68d7f856cdf7410397abc224b2e3fa672ba1",
+    "receiptSha256": "8d259810f9c5690b8dac5545c3778ab1979b5c2ba2251cf4ac3a5178bb4b2168"
+  },
+  "existing": {
+    "eventSha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd",
+    "sourceSha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+    "revision": 1,
+    "decision": "KEEP_EXISTING_BYTES"
+  }
+}

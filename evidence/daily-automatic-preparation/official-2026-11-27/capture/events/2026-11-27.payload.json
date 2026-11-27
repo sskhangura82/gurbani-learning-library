@@ -1,0 +1,31 @@
+{
+  "archiveUrl": "https://hs.sgpc.net/archiveView.php",
+  "checkedAtUtc": "2026-11-27T13:09:05Z",
+  "date": "2026-11-27",
+  "id": "harmandir-morning.2026-11-27",
+  "lessons": {
+    "detailed": null,
+    "learning": null,
+    "simple": null
+  },
+  "officialDisplayedTime": "05:30:00",
+  "officialOriginalSha256": "c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+  "officialPublishedDate": "2026-11-27",
+  "officialReceiptSha256": "8d259810f9c5690b8dac5545c3778ab1979b5c2ba2251cf4ac3a5178bb4b2168",
+  "publicationApproved": false,
+  "revision": 1,
+  "ritual": "morning-mukhwak",
+  "schema": "glp.hukamnama.event.v1",
+  "source": {
+    "edition": "opengranth-34d2a7c",
+    "id": "sggs.text.c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d",
+    "path": "./sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json",
+    "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+    "textSha256": "c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d"
+  },
+  "sourceUrl": "https://hs.sgpc.net/",
+  "status": "DIGITAL_TEXT_VERIFIED_PREVIEW",
+  "timezone": "Asia/Kolkata",
+  "venue": "sri-harmandir-sahib",
+  "verification": "COMPLETE_ORDERED_TEXT_EQUALITY"
+}
