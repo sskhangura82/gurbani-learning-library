@@ -72,7 +72,7 @@ const server=http.createServer(async(req,res)=>{
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const origin='http://127.0.0.1:'+server.address().port;
-let sourceCommit=null;try{sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();}catch{}
+let sourceCommit=null;try{sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','ignore']}).trim();}catch{}
 const report={status:'PASS',started:new Date().toISOString(),sourceCommit,checks:[],failures:[],sourceHashes,limits:[
   'Named digital-source group ownership and exact imported text, not a claim of independently resolved edition or authorship disputes.',
   'Fresh desktop Chrome contexts at 320 CSS pixels; not physical iPhone, Safari, VoiceOver or independent Claude review.',
@@ -251,6 +251,12 @@ try{
       await open(page,fixture,'?page=2');await exactPage(page,fixture,2);
       check.geometry=await page.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert.ok(check.geometry.documentWidth<=check.geometry.viewport);
       await page.screenshot({path:path.join(out,fixture.id+'-320.png'),fullPage:false});check.screenshot=fixture.id+'-320.png';
+      const line=page.locator('[data-source-line-id][data-source-page="2"]').first();
+      await line.evaluate(node=>node.scrollIntoView({block:'start'}));
+      await page.screenshot({path:path.join(out,fixture.id+'-reading-320.png'),fullPage:false});
+      await page.locator('#source-size').selectOption('largest');await line.evaluate(node=>node.scrollIntoView({block:'start'}));
+      check.largestGeometry=await page.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert.ok(check.largestGeometry.documentWidth<=check.largestGeometry.viewport,'Largest Gurmukhi size also stays inside the viewport');
+      await page.screenshot({path:path.join(out,fixture.id+'-largest-320.png'),fullPage:false});check.readingScreenshots=[fixture.id+'-reading-320.png',fixture.id+'-largest-320.png'];
       assert.equal(await page.locator('input[type="password"]').count(),0,'Public source reading is open');
     });
   }
