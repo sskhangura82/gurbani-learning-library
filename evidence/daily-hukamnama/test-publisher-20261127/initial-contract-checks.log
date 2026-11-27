@@ -1,0 +1,20 @@
+✔ complete synthetic capture/seal/propose/remote-update/build/served chain preserves checkout and index (967.361167ms)
+✔ prepare-only creates a reconstructable commit but never calls network transport (723.956ms)
+✔ an already-admitted date neither signs nor pushes but requests a build for interrupted prior delivery (270.693584ms)
+✔ wrong effective target and changed or dirty checkout refuse before acquisition (269.568959ms)
+✔ concurrent remote work is preserved and no push or build follows the refusal (790.244166ms)
+✔ lease refusal after observation preserves concurrent work (709.575125ms)
+✔ lost push acknowledgement is reconciled by exact remote head, never falsely rolled back (723.774166ms)
+✔ unknown push outcome retains durable intent and does not request a build or claim delivery (696.51725ms)
+✔ official unavailability is retained without signing, substituting or contacting publisher (201.365334ms)
+✔ build failure is reported after the Git update with no false served claim (707.331625ms)
+✔ an acknowledged build with wrong served bytes cannot count as delivered (705.18125ms)
+✔ official HTTP build request is fixed-target, credentialed, nonredirecting, with bounded original serving (17.644666ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6878.642291
