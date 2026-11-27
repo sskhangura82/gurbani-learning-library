@@ -100,7 +100,7 @@ async function exactPage(page,fixture,number){
 function savedRecord(fixture,unit,line){return {schema:'glp.sikh-reader.progress.v1',collectionId:fixture.id,editionId:fixture.spec.edition,unitId:unit.id,unitSha256:hash(JSON.stringify(unit)),lineId:line.id,page:line.page,updatedAt:'2026-11-27T12:00:00.000Z'};}
 const unrelated={'glp001.sukhmani.v1':'SYNTHETIC EXISTING READER RECORD','glp001.source-reader-old-edition':'SYNTHETIC STALE OTHER NAMESPACE','unrelated.synthetic.reflection':'SYNTHETIC NOT A PERSONAL REFLECTION'};
 async function scenario(name,fn,{seed={},mutations={},observeResume=false}={}){
-  const check={name,status:'PASS',requests:[],external:[],pageErrors:[],storage:null};report.checks.push(check);
+  const check={name,status:'PASS',requests:[],external:[],pageErrors:[],consoleErrors:[],storage:null};report.checks.push(check);
   const context=await browser.newContext({viewport:{width:320,height:740},serviceWorkers:'block',reducedMotion:'reduce'});
   await context.addInitScript(({seed,observeResume})=>{
     const get=Storage.prototype.getItem,set=Storage.prototype.setItem,remove=Storage.prototype.removeItem,clear=Storage.prototype.clear;
@@ -131,6 +131,7 @@ async function scenario(name,fn,{seed={},mutations={},observeResume=false}={}){
   const page=await context.newPage();page.setDefaultTimeout(15000);
   page.on('request',request=>check.requests.push(new URL(request.url()).pathname));
   page.on('pageerror',error=>check.pageErrors.push(error.message));
+  page.on('console',message=>{if(message.type()==='error')check.consoleErrors.push(message.text());});
   try{
     await fn(page,check,context);
     assert.deepEqual(check.pageErrors,[],'No uncaught reader errors');assert.deepEqual(check.external,[],'No external requests');
@@ -238,6 +239,14 @@ try{
       check.mutation={path:originalChunk.relative,before:hash(originalChunk.bytes),after:hash(changedChunk)};
       await page.goto(origin+prefix+fixture.spec.path);await page.waitForSelector('html[data-source-state="refused"]');await noSource(page);
     },{mutations:{[originalChunk.relative]:changedChunk}});
+    const bundlePath='collections/source-reader/reader.bundle.mjs',bundle=await readPublic(bundlePath),changedBundle=Buffer.concat([bundle,Buffer.from('\nglobalThis.__sourceReaderTamperExecuted=true;\n')]);
+    await scenario(`${fixture.id}: changed reader bundle is blocked by unchanged SRI before source requests`,async(page,check)=>{
+      check.mutation={path:bundlePath,before:hash(bundle),after:hash(changedBundle)};
+      await page.goto(origin+prefix+fixture.spec.path);assert.equal(await page.locator('html').getAttribute('data-source-state'),'loading');await noSource(page);
+      assert.equal(await page.evaluate(()=>globalThis.__sourceReaderTamperExecuted),undefined);
+      assert.ok(check.consoleErrors.some(message=>/integrity|valid digest/i.test(message)),'Browser reports integrity refusal');
+      assert.ok(check.requests.every(request=>!request.includes('/collections/source-data/')),'A blocked bundle requests no source manifest or chunk');
+    },{mutations:{[bundlePath]:changedBundle}});
     await scenario(`${fixture.id}: 320-pixel layout and qualified page labels`,async(page,check)=>{
       await open(page,fixture,'?page=2');await exactPage(page,fixture,2);
       check.geometry=await page.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert.ok(check.geometry.documentWidth<=check.geometry.viewport);
