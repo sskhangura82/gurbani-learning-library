@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check quality workflows cover stacked candidate bases
+        run: node --test tests/qa-workflow-coverage.mjs
       - name: Install the locked build-only toolchain
         run: |
           node --test tests/library-script-toolchain-lock.mjs
