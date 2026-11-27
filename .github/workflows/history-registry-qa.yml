@@ -5,6 +5,8 @@ on:
       - 'tools/history/**'
       - 'content-intake/history/**'
       - 'tests/history-registry.mjs'
+      - 'tests/history-draft.mjs'
+      - 'docs/history/KARTARPUR_DRAFT_20261127.md'
       - 'tests/fixtures/history/**'
       - 'hukamnama/json.mjs'
       - '.github/workflows/history-registry-qa.yml'
@@ -23,9 +25,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify source, review and publication boundaries using invented fixtures
+      - name: Verify draft linkage and review boundaries
         run: |
-          node --test tests/history-registry.mjs
+          node --test tests/history-registry.mjs tests/history-draft.mjs
           node tools/history/check.mjs
-# Research metadata only. No human qualification, historical truth, deployment,
+          node tools/history/draft-check.mjs
+# Research metadata and a withheld AI-assisted manuscript only. No human qualification, historical truth, deployment,
 # publication, audio, external contact or actual-device acceptance is asserted.
