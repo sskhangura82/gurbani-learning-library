@@ -1,0 +1,25 @@
+# Daily Hukamnama connection — builder criteria before implementation
+
+Date: 26 November 2026, America/Los_Angeles. The current official publication date in Amritsar is 27 November. Builder criteria do not replace independent review or qualified approval.
+
+## Baseline and existing work
+
+Base:44401e35690322fb3dbc29c443bff86d73279fcb, the protected Library candidate. Reuse the existing PR43 Hukamnama foundation fb49ef41bd890db879d7f93a861585915ef81622 and PR42 planning document16a48464e4d433dd12d685825c01395c90d64f7a. Exact imports are recorded under evidence/daily-hukamnama/inputs. The old historical fixture and its source-validation functions retain their existing meaning; they are never promoted into official daily events.
+
+The observed user problem is an inert Today placeholder and an unavailable catalogue entry. The new entrance must be a real link, open the daily reader and leave a normal official SGPC link usable even if JavaScript or source delivery fails.
+
+## Required behavior
+
+1. Default to today's date in Asia/Kolkata. Exact date paths, not query-only data identities. Never substitute an earlier, random, partial or merely similar Shabad. Distinguish present, pending, historical saved, invalid, future and source-refused states.
+2. Retrieve official source server-side/build-time from the observed hs.sgpc.net portal/archive implementation; no iframe, browser CORS proxy or unauthorized audio relay. Parse only an allowlist of original-text/date fields, verify visible/structured consistency for the portal, and keep modern explanations/translations/audio out of imported files.
+3. Verify the complete ordered official selection against the pinned original corpus, including continuation across Angs, headings, Rahao and end boundaries. Exact original Unicode; no spelling, punctuation or encoding repair. Starting Ang and first line are not sufficient. Record original-only receipts, source pins, lineage/rights limitations and date evidence.
+4. Separate immutable original source, dated event, lesson revisions and private learning. Date records bind exact source bytes and full text identity. Complete original text can display while explanation layers remain pending.
+5. Deliver signed, same-origin dated records with a pinned publication public key and content-addressed sources. This is the library's data-integrity signature, NOT an SGPC signature. The initial key is for the isolated development candidate; its private key stays outside git with restrictive permissions. A reviewed, enabled publisher/key is a later release decision. No daily full-app or service-worker rebuild is necessary for data updates.
+6. Provide Simple explanation, Detailed explanation and Learning sections. Publish no new generated exposition. Admit explanatory content only with exact source/language/layer binding, named qualified approval, citations and applicable rights. Keep unapproved slots visibly pending with an attributed official-source link. Learning may provide neutral reading tools and private questions, not claims about what the verse means.
+7. Private Daily notes use their own documented, namespaced reader store and explicit Daily export/import, consistent with existing per-reader backups. Do not pretend the Japji export is universal. Preserve Unicode exactly, concurrent edits/conflicts and old data on malformed imports or quota failures. Keep unavailable historical source bindings; never attach them to a replacement reading. Date navigation protects unsaved text.
+8. Cache only verified dated original records as a single complete pair, under a cache name outside the existing service-worker shell deletion prefix. No silent old-date substitution on rollover. Never cache private notes in that public-source cache. No outbound note/search/reading-history transmission.
+9. Extend the complete script-graph policy to the new reader. Preserve existing reader HTML/scripts, scripture, teaching and private-store schemas. Narrow Library changes are its real Daily entrance, removal of its obsolete planned placeholder, and a separate Saved link. Rebuild generated bundles/pins and shell once for this integration; dynamic dated data is outside the shell manifest.
+10. Test actual entry navigation, exact-source/date/signature refusals, truncated cross-Ang source, late asynchronous results, current-to-next-day rollover, offline saved reading, source/lesson mismatch, privacy, local note conflicts/import failures and narrow layouts in fresh synthetic browser contexts. Do not claim a physical iPhone or VoiceOver check.
+11. Keep a direct official link available immediately. Preserve the old fixture checks separately. Run hosted checks on the exact candidate; keep initial failures. Submit a draft review candidate and respect the independent criteria-before-code/results protocol.
+
+No merge, QA deployment, production publication, automatic publisher activation, custodian outreach or modern commentary/audio reuse is authorized by this branch work. The user's request authorizes the repair and complete reviewable implementation; existing release and rights gates remain.
