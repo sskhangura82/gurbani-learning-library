@@ -1,0 +1,1194 @@
+{
+  "status": "PASS",
+  "started": "2026-11-27T22:36:38.990Z",
+  "sourceCommit": "c3a4cc027b48c246027b545d9120dfb72d7ebe6f",
+  "checks": [
+    {
+      "name": "sggs ZKH: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "ZKH",
+        "lines": 14,
+        "pages": [
+          1,
+          2
+        ],
+        "sha256": "bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77"
+      }
+    },
+    {
+      "name": "sggs SKD: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0025.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0025.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "SKD",
+        "lines": 15,
+        "pages": [
+          465,
+          466
+        ],
+        "sha256": "3ed04a09de046a1a86456ff7c6049121c59378a445adde65c01a95a30d57855b"
+      }
+    },
+    {
+      "name": "sggs TNM: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0049.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0049.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "TNM",
+        "lines": 399,
+        "pages": [
+          929,
+          930,
+          931,
+          932,
+          933,
+          934,
+          935,
+          936,
+          937,
+          938
+        ],
+        "sha256": "94dc9ad828d63831bd90b859d1c5a430c5a66c7899770030d8d766fb365a663f"
+      }
+    },
+    {
+      "name": "sggs FD3: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0074.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "FD3",
+        "lines": 62,
+        "pages": [
+          1429,
+          1430
+        ],
+        "sha256": "77139375e425ddf80c44e41e2f13087f4da7ae93fa2aadf4bd6febf512fa4a72"
+      }
+    },
+    {
+      "name": "dasam KKH: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "KKH",
+        "lines": 10,
+        "pages": [
+          1
+        ],
+        "sha256": "8b27e6d5c13e2d2ed0b7d7fef49c741a29d3b3943d0baad0aad865d1fd763850"
+      }
+    },
+    {
+      "name": "dasam 4TJ: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0040.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0041.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0041.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "4TJ",
+        "lines": 426,
+        "pages": [
+          738,
+          739,
+          740,
+          741,
+          742,
+          743,
+          744,
+          745,
+          746,
+          747,
+          748
+        ],
+        "sha256": "9f57690ed71103740d89bfc9ec7a7fd06b6bc12e4f3a858d07c8a4ea24cbc7d0"
+      }
+    },
+    {
+      "name": "dasam BTE: complete owning group at both page boundaries",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "expected": {
+        "unit": "BTE",
+        "lines": 43,
+        "pages": [
+          1427,
+          1428
+        ],
+        "sha256": "911f6c1957c13d25c35576f47cd856835fd104e095669e980e7fe727a7ffce0f"
+      }
+    },
+    {
+      "name": "sggs: page entry, next/previous, reload and browser history",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: exact line deep link focuses its owner without filtering the page",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: invalid routes clear source and Go recovers",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0074.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "invalidRoutes": [
+        "?page=0",
+        "?page=1431",
+        "?page=01",
+        "?page=1&page=2",
+        "?page=1&unknown=1",
+        "?page=x",
+        "?line=unknown",
+        "?page=1&unit=unknown",
+        "?page=1&unit=FD3",
+        "?page=1429&unit=FD3&line=CUSP"
+      ]
+    },
+    {
+      "name": "sggs: saved places use only this edition's namespace and require explicit actions",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0074.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [
+          [
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2",
+            "{\"schema\":\"glp.sikh-reader.progress.v1\",\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"unitId\":\"FD3\",\"unitSha256\":\"77139375e425ddf80c44e41e2f13087f4da7ae93fa2aadf4bd6febf512fa4a72\",\"lineId\":\"J9XT\",\"page\":1429,\"updatedAt\":\"2026-11-27T22:36:41.730Z\"}"
+          ]
+        ],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: a valid synthetic saved place verifies before explicit Resume",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: corrupt saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: stale edition saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: stale unit digest saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: wrong line page saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "sggs: same-length manifest tampering refuses all source",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "mutation": {
+        "path": "collections/source-data/sggs/manifest.json",
+        "before": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+        "after": "37d39d1aaaca6b4bd5f5566ab8c132a0c372eb63836b85e9eae92feffe9d2dbc"
+      }
+    },
+    {
+      "name": "sggs: same-length original-line chunk tampering refuses all source",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "mutation": {
+        "path": "collections/source-data/sggs/chunks/c0001.json",
+        "before": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f",
+        "after": "fef737ee13b36c7dba78b603e857eba8b634ca3006054ba38873842cedff695d"
+      }
+    },
+    {
+      "name": "sggs: changed reader bundle is blocked by unchanged SRI before source requests",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:57722/source-reader-review/collections/source-reader/reader.bundle.mjs' with computed SHA-384 integrity 'Zo0qPG9Ta2YfmBYC5+dTUMwrgwJOlzLJltF91n6fpLIMyVYSeHFIVQ3XW6iQnWQ6'. The resource has been blocked."
+      ],
+      "storage": {
+        "reads": [],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "mutation": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "before": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
+        "after": "2c32ecaff7192784c23f41e2c31a1ed0539872b5158ddf5d142e59a55777b49e"
+      }
+    },
+    {
+      "name": "sggs: 320-pixel layout and qualified page labels",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "screenshot": "sggs-320.png",
+      "largestGeometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "readingScreenshots": [
+        "sggs-reading-320.png",
+        "sggs-largest-320.png"
+      ]
+    },
+    {
+      "name": "dasam: page entry, next/previous, reload and browser history",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: exact line deep link focuses its owner without filtering the page",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: invalid routes clear source and Go recovers",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "invalidRoutes": [
+        "?page=0",
+        "?page=1429",
+        "?page=01",
+        "?page=1&page=2",
+        "?page=1&unknown=1",
+        "?page=x",
+        "?line=unknown",
+        "?page=1&unit=unknown",
+        "?page=1&unit=BTE",
+        "?page=1427&unit=BTE&line=22HA"
+      ]
+    },
+    {
+      "name": "dasam: saved places use only this edition's namespace and require explicit actions",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [
+          [
+            "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG",
+            "{\"schema\":\"glp.sikh-reader.progress.v1\",\"collectionId\":\"dasam\",\"editionId\":\"shabados-5.0.0-next.0-SDGR-DGDG\",\"unitId\":\"BTE\",\"unitSha256\":\"911f6c1957c13d25c35576f47cd856835fd104e095669e980e7fe727a7ffce0f\",\"lineId\":\"NZXV\",\"page\":1427,\"updatedAt\":\"2026-11-27T22:36:44.297Z\"}"
+          ]
+        ],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: a valid synthetic saved place verifies before explicit Resume",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: corrupt saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: stale edition saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: stale unit digest saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: wrong line page saved record remains untouched",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0080.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      }
+    },
+    {
+      "name": "dasam: same-length manifest tampering refuses all source",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "mutation": {
+        "path": "collections/source-data/dasam/manifest.json",
+        "before": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+        "after": "34bbab235c12f796ad3137387b00fb80431914136797afaa0ecc6aca425d096f"
+      }
+    },
+    {
+      "name": "dasam: same-length original-line chunk tampering refuses all source",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "mutation": {
+        "path": "collections/source-data/dasam/chunks/c0001.json",
+        "before": "3585c5bd996f28297def529a5a38a347200f166e94cdc4855b546037dcf0f18e",
+        "after": "52a6f2e204f5bf2d1a29541c1caa0f21e20af346176a11dd897e5d1030909014"
+      }
+    },
+    {
+      "name": "dasam: changed reader bundle is blocked by unchanged SRI before source requests",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:57722/source-reader-review/collections/source-reader/reader.bundle.mjs' with computed SHA-384 integrity 'Zo0qPG9Ta2YfmBYC5+dTUMwrgwJOlzLJltF91n6fpLIMyVYSeHFIVQ3XW6iQnWQ6'. The resource has been blocked."
+      ],
+      "storage": {
+        "reads": [],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "mutation": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "before": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
+        "after": "2c32ecaff7192784c23f41e2c31a1ed0539872b5158ddf5d142e59a55777b49e"
+      }
+    },
+    {
+      "name": "dasam: 320-pixel layout and qualified page labels",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/dasam/read.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/dasam/manifest.json",
+        "/source-reader-review/collections/source-data/dasam/chunks/c0001.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": 0
+      },
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "screenshot": "dasam-320.png",
+      "largestGeometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "readingScreenshots": [
+        "dasam-reading-320.png",
+        "dasam-largest-320.png"
+      ]
+    },
+    {
+      "name": "A new explicit Save wins over a delayed Resume success",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0002.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0003.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0004.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0005.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0006.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0007.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0008.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0009.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0010.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0011.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0012.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0013.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0014.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0015.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [
+          [
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2",
+            "{\"schema\":\"glp.sikh-reader.progress.v1\",\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"unitId\":\"LWT\",\"unitSha256\":\"f698e5db23efcdb61746a1178ef3fb67a47ee7c43e72c084dbc311501dea690a\",\"lineId\":\"EV5Y\",\"page\":266,\"updatedAt\":\"2026-11-27T22:36:46.736Z\"}"
+          ]
+        ],
+        "removes": [],
+        "clears": 0
+      },
+      "evictionPages": [
+        20,
+        40,
+        59,
+        80,
+        100,
+        119,
+        139,
+        157,
+        176,
+        194,
+        212,
+        231,
+        250,
+        266
+      ]
+    },
+    {
+      "name": "A new explicit Save wins over a delayed Resume failure",
+      "status": "PASS",
+      "requests": [
+        "/source-reader-review/collections/sggs/index.html",
+        "/source-reader-review/collections/source-reader/reader.css",
+        "/source-reader-review/collections/source-reader/reader.bundle.mjs",
+        "/source-reader-review/collections/source-data/sggs/manifest.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0001.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0002.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0003.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0004.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0005.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0006.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0007.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0008.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0009.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0010.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0011.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0012.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0013.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0014.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0015.json",
+        "/source-reader-review/collections/source-data/sggs/chunks/c0075.json"
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "storage": {
+        "reads": [
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+        ],
+        "writes": [
+          [
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2",
+            "{\"schema\":\"glp.sikh-reader.progress.v1\",\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"unitId\":\"LWT\",\"unitSha256\":\"f698e5db23efcdb61746a1178ef3fb67a47ee7c43e72c084dbc311501dea690a\",\"lineId\":\"EV5Y\",\"page\":266,\"updatedAt\":\"2026-11-27T22:36:47.935Z\"}"
+          ]
+        ],
+        "removes": [],
+        "clears": 0
+      },
+      "evictionPages": [
+        20,
+        40,
+        59,
+        80,
+        100,
+        119,
+        139,
+        157,
+        176,
+        194,
+        212,
+        231,
+        250,
+        266
+      ]
+    }
+  ],
+  "failures": [],
+  "sourceHashes": {
+    "collections/source-data/sggs/manifest.json": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+    "collections/source-data/sggs/chunks/c0001.json": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f",
+    "collections/source-data/sggs/chunks/c0025.json": "783bcfe33db16776c21a74efc5783b52f013bc9356768e38b124327527669683",
+    "collections/source-data/sggs/chunks/c0049.json": "63a9624a4b5e5f8c11082df612680847abd73361e2de0a8ae451e4bca312af65",
+    "collections/source-data/sggs/chunks/c0075.json": "892489bc910d879d2300359d7e255cbd6d08270d77efe0254216fa10f4b6e0dd",
+    "collections/source-data/dasam/manifest.json": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+    "collections/source-data/dasam/chunks/c0001.json": "3585c5bd996f28297def529a5a38a347200f166e94cdc4855b546037dcf0f18e",
+    "collections/source-data/dasam/chunks/c0041.json": "94570526bd53d3fa7e1cf61f24920c46a7b1d6357a600612c5bc0502c8c63f34",
+    "collections/source-data/dasam/chunks/c0080.json": "66f2625ef0e15ae090f2edc6400e0a041419108fc355d3331010749462ca457a",
+    "collections/sggs/index.html": "eef3064427e11cac7083af08cf0aa81696b5095facfa82a9c9504b6b26506a7b",
+    "collections/source-reader/reader.css": "00267c6a5ad00651127a490aaeaafb90014275b8b633b2afd239e276b0fa792b",
+    "collections/source-reader/reader.bundle.mjs": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
+    "collections/source-data/sggs/chunks/c0074.json": "1d1f4f29d3c09b4c62055e7b65d9b87065483e43ca4c91c7083ab505360fecc3",
+    "collections/dasam/read.html": "eefb1aaa785557ed0ab6c9cfb091a341dc52e1620e01bca3e617dcb3f175ca3e",
+    "collections/source-data/dasam/chunks/c0040.json": "bc56ae81c80270ad4aab216fd754a07988d805bce40220ee5e61b69055e58807",
+    "collections/source-data/sggs/chunks/c0002.json": "140eaa6e9deda2b6829f0530e3e3d69ca3a2e83e4d93a1412f2d7c2a46679b08",
+    "collections/source-data/sggs/chunks/c0003.json": "4a2563f6d02dec92d3da2268b623d420dc9442e327ff452617b794566c6e0b58",
+    "collections/source-data/sggs/chunks/c0004.json": "552eb4b7a74a7e9881f70a3efa93d3fc8d28ee9efd1491da81fa4d951b1ad323",
+    "collections/source-data/sggs/chunks/c0005.json": "d704e29f71ffb3a8998e14e575711d7f0f062477bb676f6fa058c28c79f92818",
+    "collections/source-data/sggs/chunks/c0006.json": "b375260e8e9aef1d2775c0fff57f6d90d31033d4aa668d68be320f7980a4ea33",
+    "collections/source-data/sggs/chunks/c0007.json": "d53a5952f7e2c9d1cd1a02ec647c6507ae68ccc1595a4df2bd6ea0b9cee924f5",
+    "collections/source-data/sggs/chunks/c0008.json": "ee1eae26c77d6e44027b4b3a0d30b9b0996c2ee961c8f0adb213890f57dfc594",
+    "collections/source-data/sggs/chunks/c0009.json": "f51f8ef399d21164531b0b0d0fff12ba123bde954eff07d0d64b5cfb0b09e3c3",
+    "collections/source-data/sggs/chunks/c0010.json": "f68f504a265aa8e1ff0524d9a7afd9bf0847398efbdc9caef3ddd9028ae97be5",
+    "collections/source-data/sggs/chunks/c0011.json": "75facd17465ded565356edb33624c46cb9322cf740a4527c6a3554e6e627089d",
+    "collections/source-data/sggs/chunks/c0012.json": "0ccf78db07ea632bbe77f00e9ebcbdb1f9b60840a6d8a7c6b844f3ee17a9e444",
+    "collections/source-data/sggs/chunks/c0013.json": "22f366c719c8d9c7d39c080985d4531036d10810f06dc25a53f4ab19a634b192",
+    "collections/source-data/sggs/chunks/c0014.json": "c5cc8ba13d8bbeb40378038b53b0cb28cc9c5db36ead81077571e3e7de729163",
+    "collections/source-data/sggs/chunks/c0015.json": "804bd18982bf975f4df28e25ec39f65399edabecbbd6e73a577644714582c93a"
+  },
+  "limits": [
+    "Named digital-source group ownership and exact imported text, not a claim of independently resolved edition or authorship disputes.",
+    "Fresh desktop Chrome contexts at 320 CSS pixels; not physical iPhone, Safari, VoiceOver or independent Claude review.",
+    "Synthetic saved places only; no owner PIN, private collection, personal reflection or existing browser profile.",
+    "Service workers are blocked to isolate reader delivery, route handling and authenticated source data."
+  ],
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "darwin",
+    "browser": "158.0.8127.37"
+  },
+  "finished": "2026-11-27T22:36:48.007Z",
+  "fixtureSha256": "ada8590a2fb199054b7f3f946217f662275fbd3d31f998fd365cea9d7b5a0c04",
+  "sourceCommitVerification": "Exact public application files extracted from this Git commit; every served/read source hash matched transport-run-2-receipt.json."
+}
