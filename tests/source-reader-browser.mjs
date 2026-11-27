@@ -72,7 +72,7 @@ const server=http.createServer(async(req,res)=>{
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const origin='http://127.0.0.1:'+server.address().port;
-let sourceCommit=null;try{sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();}catch{}
+let sourceCommit=null;try{sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','ignore']}).trim();}catch{}
 const report={status:'PASS',started:new Date().toISOString(),sourceCommit,checks:[],failures:[],sourceHashes,limits:[
   'Named digital-source group ownership and exact imported text, not a claim of independently resolved edition or authorship disputes.',
   'Fresh desktop Chrome contexts at 320 CSS pixels; not physical iPhone, Safari, VoiceOver or independent Claude review.',
@@ -99,10 +99,10 @@ async function exactPage(page,fixture,number){
 }
 function savedRecord(fixture,unit,line){return {schema:'glp.sikh-reader.progress.v1',collectionId:fixture.id,editionId:fixture.spec.edition,unitId:unit.id,unitSha256:hash(JSON.stringify(unit)),lineId:line.id,page:line.page,updatedAt:'2026-11-27T12:00:00.000Z'};}
 const unrelated={'glp001.sukhmani.v1':'SYNTHETIC EXISTING READER RECORD','glp001.source-reader-old-edition':'SYNTHETIC STALE OTHER NAMESPACE','unrelated.synthetic.reflection':'SYNTHETIC NOT A PERSONAL REFLECTION'};
-async function scenario(name,fn,{seed={},mutations={}}={}){
-  const check={name,status:'PASS',requests:[],external:[],pageErrors:[],storage:null};report.checks.push(check);
+async function scenario(name,fn,{seed={},mutations={},observeResume=false}={}){
+  const check={name,status:'PASS',requests:[],external:[],pageErrors:[],consoleErrors:[],storage:null};report.checks.push(check);
   const context=await browser.newContext({viewport:{width:320,height:740},serviceWorkers:'block',reducedMotion:'reduce'});
-  await context.addInitScript(({seed})=>{
+  await context.addInitScript(({seed,observeResume})=>{
     const get=Storage.prototype.getItem,set=Storage.prototype.setItem,remove=Storage.prototype.removeItem,clear=Storage.prototype.clear;
     if(get.call(localStorage,'__synthetic_source_reader_fixture__')===null){for(const [key,value] of Object.entries(seed))set.call(localStorage,key,value);set.call(localStorage,'__synthetic_source_reader_fixture__','seeded');}
     window.__sourceStorage={reads:[],writes:[],removes:[],clears:0};
@@ -111,7 +111,16 @@ async function scenario(name,fn,{seed={},mutations={}}={}){
     Storage.prototype.removeItem=function(key){if(this===localStorage)window.__sourceStorage.removes.push(String(key));return remove.call(this,key);};
     Storage.prototype.clear=function(){if(this===localStorage)window.__sourceStorage.clears++;return clear.call(this);};
     window.__sourceSnapshot=()=>Object.fromEntries(Object.keys(localStorage).map(key=>[key,get.call(localStorage,key)]));
-  },{seed});
+    if(observeResume){
+      const add=EventTarget.prototype.addEventListener;
+      EventTarget.prototype.addEventListener=function(type,listener,options){
+        if(this.id==='source-resume'&&type==='click'&&typeof listener==='function'){
+          return add.call(this,type,function(event){const result=listener.call(this,event);window.__sourceResumeTask=Promise.resolve(result);return result;},options);
+        }
+        return add.call(this,type,listener,options);
+      };
+    }
+  },{seed,observeResume});
   await context.route('**/*',async route=>{
     const url=new URL(route.request().url());
     if(url.origin!==origin){check.external.push(route.request().url());await route.abort();return;}
@@ -122,8 +131,9 @@ async function scenario(name,fn,{seed={},mutations={}}={}){
   const page=await context.newPage();page.setDefaultTimeout(15000);
   page.on('request',request=>check.requests.push(new URL(request.url()).pathname));
   page.on('pageerror',error=>check.pageErrors.push(error.message));
+  page.on('console',message=>{if(message.type()==='error')check.consoleErrors.push(message.text());});
   try{
-    await fn(page,check);
+    await fn(page,check,context);
     assert.deepEqual(check.pageErrors,[],'No uncaught reader errors');assert.deepEqual(check.external,[],'No external requests');
     assert.ok(check.requests.every(request=>!unbundled.has(request.slice(prefix.length))),'Reader uses the closed bundle without secondary module requests');
     check.storage=await page.evaluate(()=>window.__sourceStorage||null);
@@ -229,13 +239,55 @@ try{
       check.mutation={path:originalChunk.relative,before:hash(originalChunk.bytes),after:hash(changedChunk)};
       await page.goto(origin+prefix+fixture.spec.path);await page.waitForSelector('html[data-source-state="refused"]');await noSource(page);
     },{mutations:{[originalChunk.relative]:changedChunk}});
+    const bundlePath='collections/source-reader/reader.bundle.mjs',bundle=await readPublic(bundlePath),changedBundle=Buffer.concat([bundle,Buffer.from('\nglobalThis.__sourceReaderTamperExecuted=true;\n')]);
+    await scenario(`${fixture.id}: changed reader bundle is blocked by unchanged SRI before source requests`,async(page,check)=>{
+      check.mutation={path:bundlePath,before:hash(bundle),after:hash(changedBundle)};
+      await page.goto(origin+prefix+fixture.spec.path);assert.equal(await page.locator('html').getAttribute('data-source-state'),'loading');await noSource(page);
+      assert.equal(await page.evaluate(()=>globalThis.__sourceReaderTamperExecuted),undefined);
+      assert.ok(check.consoleErrors.some(message=>/integrity|valid digest/i.test(message)),'Browser reports integrity refusal');
+      assert.ok(check.requests.every(request=>!request.includes('/collections/source-data/')),'A blocked bundle requests no source manifest or chunk');
+    },{mutations:{[bundlePath]:changedBundle}});
     await scenario(`${fixture.id}: 320-pixel layout and qualified page labels`,async(page,check)=>{
       await open(page,fixture,'?page=2');await exactPage(page,fixture,2);
       check.geometry=await page.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert.ok(check.geometry.documentWidth<=check.geometry.viewport);
       await page.screenshot({path:path.join(out,fixture.id+'-320.png'),fullPage:false});check.screenshot=fixture.id+'-320.png';
+      const line=page.locator('[data-source-line-id][data-source-page="2"]').first();
+      await line.evaluate(node=>node.scrollIntoView({block:'start'}));
+      await page.screenshot({path:path.join(out,fixture.id+'-reading-320.png'),fullPage:false});
+      await page.locator('#source-size').selectOption('largest');await line.evaluate(node=>node.scrollIntoView({block:'start'}));
+      check.largestGeometry=await page.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth}));assert.ok(check.largestGeometry.documentWidth<=check.largestGeometry.viewport,'Largest Gurmukhi size also stays inside the viewport');
+      await page.screenshot({path:path.join(out,fixture.id+'-largest-320.png'),fullPage:false});check.readingScreenshots=[fixture.id+'-reading-320.png',fixture.id+'-largest-320.png'];
       assert.equal(await page.locator('input[type="password"]').count(),0,'Public source reading is open');
     });
   }
+  const raceFixture=fixtures.sggs,raceUnit=await raceFixture.unitFor('FD3'),raceLine=raceUnit.lines.at(-1),raceRecord=savedRecord(raceFixture,raceUnit,raceLine);
+  const raceChunkId=raceFixture.manifest.units.find(unit=>unit.id==='FD3').chunkId;
+  const raceChunk=raceFixture.base+raceFixture.manifest.chunks.find(chunk=>chunk.id===raceChunkId).path;
+  const evictionPages=raceFixture.manifest.chunks.filter(chunk=>chunk.id!=='c0001'&&chunk.id!==raceChunkId).slice(0,14).map(chunk=>raceFixture.manifest.units.find(unit=>unit.id===chunk.unitIds[0]).pages[0]);
+  for(const completion of ['success','failure'])await scenario(`A new explicit Save wins over a delayed Resume ${completion}`,async(page,check)=>{
+    await open(page,raceFixture);await page.waitForFunction(()=>!document.getElementById('source-resume').disabled);
+    for(const number of evictionPages){await page.locator('#source-page').fill(String(number));await page.locator('#source-page-form button[type="submit"]').click();await exactPage(page,raceFixture,number);}
+    check.evictionPages=evictionPages;
+    const beforeURL=page.url(),beforeLabel=await page.locator('#source-page-label').textContent();
+    let release;const held=new Promise(resolve=>{release=resolve;});
+    const raceRoute=url=>url.pathname===prefix+raceChunk;
+    await page.route(raceRoute,async route=>{await held;if(completion==='failure')await route.abort('failed');else await route.continue();});
+    const requested=page.waitForRequest(request=>new URL(request.url()).pathname===prefix+raceChunk);
+    await page.locator('#source-resume').click();await requested;
+    try{
+      await page.locator('#source-save-place').click();
+      const newRaw=await page.evaluate(key=>window.__sourceSnapshot()[key],raceFixture.key),newRecord=JSON.parse(newRaw);
+      assert.notEqual(newRecord.unitId,raceRecord.unitId,'Save records the current place, not the old requested source');
+      release();await page.evaluate(()=>window.__sourceResumeTask);
+      assert.equal(page.url(),beforeURL,'Old Resume cannot navigate after explicit Save');assert.equal(await page.locator('#source-page-label').textContent(),beforeLabel);
+      assert.equal(await page.evaluate(key=>window.__sourceSnapshot()[key],raceFixture.key),newRaw);
+      assert.ok(await page.locator('#source-resume').isEnabled());assert.match(await page.locator('#source-progress-status').textContent(),/Place saved at/);
+      await page.unroute(raceRoute);
+      await page.locator('#source-resume').click();await page.evaluate(()=>window.__sourceResumeTask);await exactPage(page,raceFixture,newRecord.page);
+      const query=new URL(page.url()).searchParams;assert.equal(query.get('unit'),newRecord.unitId);assert.equal(query.get('line'),newRecord.lineId);
+      const trace=await assertUnchanged(page,unrelated);assert.equal(trace.writes.length,1);assert.equal(trace.writes[0][0],raceFixture.key);
+    }finally{release();}
+  },{seed:{...unrelated,[raceFixture.key]:JSON.stringify(raceRecord)},observeResume:true});
 }catch(error){report.status='FAIL';report.failures.push({name:'fixture preparation',error:error.message});}
 finally{
   report.finished=new Date().toISOString();report.fixtureSha256=hash(await fs.readFile(fileURLToPath(import.meta.url)));
