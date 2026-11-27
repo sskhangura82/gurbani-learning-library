@@ -26,6 +26,7 @@ const definitions={
     {id:'BTE',count:43,pages:[1427,1428],hash:'911f6c1957c13d25c35576f47cd856835fd104e095669e980e7fe727a7ffce0f'}]}
 };
 const sourceHashes={},fixtures={},prefix='/source-reader-review/';
+const unbundled=new Set(['collections/source-reader/reader.mjs','collections/source-reader/core.mjs','collections/source-reader/source-lock.mjs']);
 async function readPublic(relative){
   assert.ok(!relative.startsWith('private-library/'),'Private collection is outside this fixture');
   const filename=path.resolve(root,relative);
@@ -64,6 +65,7 @@ const server=http.createServer(async(req,res)=>{
     if(!pathname.startsWith(prefix))throw Error('Outside test mount');
     let relative=pathname.slice(prefix.length);if(!relative||relative.endsWith('/'))relative+='index.html';
     if(relative.startsWith('private-library/'))throw Error('Private paths are excluded');
+    if(unbundled.has(relative)){res.writeHead(403,{'cache-control':'no-store'});res.end('The fixture requires the closed reader bundle.');return;}
     const bytes=await readPublic(relative);
     res.writeHead(200,{'content-type':mime[path.extname(relative)]||'application/octet-stream','cache-control':'no-store','content-length':String(bytes.length)});res.end(bytes);
   }catch{res.writeHead(404,{'cache-control':'no-store'});res.end();}
@@ -123,6 +125,7 @@ async function scenario(name,fn,{seed={},mutations={}}={}){
   try{
     await fn(page,check);
     assert.deepEqual(check.pageErrors,[],'No uncaught reader errors');assert.deepEqual(check.external,[],'No external requests');
+    assert.ok(check.requests.every(request=>!unbundled.has(request.slice(prefix.length))),'Reader uses the closed bundle without secondary module requests');
     check.storage=await page.evaluate(()=>window.__sourceStorage||null);
   }catch(error){check.status='FAIL';check.error=error.message;report.failures.push({name,error:error.message});report.status='FAIL';}
   finally{await context.close();}
