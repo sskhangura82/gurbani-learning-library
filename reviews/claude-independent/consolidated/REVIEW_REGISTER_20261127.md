@@ -173,3 +173,34 @@ of mine.
 Unchanged at twenty-three. RT-022 and RT-023 added none — but their frozen
 criteria caught a real gap in mine: I had tested nothing under a non-root URL
 path, which is how the site is actually served. It passes, on their criterion.
+
+
+---
+
+## Third update — Daily Hukamnama and the backup retry repair
+
+### Candidates added
+
+| PR | head | review | verdict |
+|---|---|---|---|
+| #61 | `df2c62fb` | RT-024 | **PASS, 25 of 25.** Daily Hukamnama: refuses to substitute a reading, authenticity chain recomputed, no invented interpretation, digests-only rights posture |
+| #62 | `7f36c303` | RT-025 | **PASS, 20 of 20.** Backup retry idempotence; builder-disclosed defect against their own passing candidate |
+
+### Findings
+
+| ID | State |
+|---|---|
+| RT24-C17 | **CLOSED** — the committed receipt's raw sha256 matches `officialReceiptSha256`; zero translation or commentary keys |
+| lineage (RT-005 / CI-S-16) | **unchanged as a limit, now stated by both of us.** The builder's receipt records that the portal and its archive are one publisher, and traces Shabad OS SSA2 upstream to SGPC Shabadaarth. Printed-page collation remains the only route to an independent lineage |
+| Web Locks dependency | **new, for device acceptance only.** Saving and importing private notes need `navigator.locks` and fail closed without it. If iOS Safari lacks it on the target device, notes cannot be saved at all. Not a defect; a thing to check on the phone |
+
+### Untested by me, named rather than assumed
+
+Next-day rollover and late asynchronous results (#61), and browser-level
+import/export demonstration (#62). Their CI covers all three and passes; I have
+not independently verified them.
+
+### Error count
+
+Now **thirty**, including two vacuous results in RT-024 I nearly reported as
+findings, and a Unicode test in RT-025 that used the escape for the letter `x`.
