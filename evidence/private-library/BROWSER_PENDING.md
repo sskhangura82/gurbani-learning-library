@@ -1,6 +1,6 @@
 # Browser verification is pending
 
-The planned fourteen-case fixture parses, but did not launch a browser in this environment.
+The planned fifteen-case fixture parses, but did not launch a browser in this environment.
 
 - `/usr/bin/chromium` exists only as a wrapper; `/usr/lib/chromium/chromium` is absent.
 - The installed Playwright package has no downloaded browser.

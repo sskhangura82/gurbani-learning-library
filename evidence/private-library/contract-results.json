@@ -22,6 +22,14 @@
       "status": "PASS"
     },
     {
+      "name": "Multi-megabyte full-book payload decodes without regex stack overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Link-only source accepts only the fixed no-import notice and marker",
+      "status": "PASS"
+    },
+    {
       "name": "Lowered KDF, different cipher and extra envelope fields refuse",
       "status": "PASS"
     },

@@ -5,6 +5,8 @@ export const ITERATIONS = 600000;
 export const MAX_PLAINTEXT_BYTES = 12 * 1024 * 1024;
 export const MAX_ENVELOPE_BYTES = 18 * 1024 * 1024;
 export const IDLE_MILLISECONDS = 5 * 60 * 1000;
+export const LINK_ONLY_NOTICE = "This entry opens the publisher's reading room. No text or translation has been imported into this library.";
+export const LINK_ONLY_PERMISSION = 'NO_TEXT_IMPORTED_LINK_ONLY';
 const encoder = new TextEncoder();
 const decoder = new TextDecoder('utf-8', {fatal:true});
 const refusal = () => new Error('Unable to unlock this collection. Check your passphrase and collection file.');
@@ -23,7 +25,14 @@ function b64(bytes) {
   return btoa(value);
 }
 function unb64(value, max) {
-  if (typeof value !== 'string' || !value.length || value.length > Math.ceil(max/3)*4 || value.length%4 || !/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(value)) throw refusal();
+  if (typeof value !== 'string' || !value.length || value.length > Math.ceil(max/3)*4 || value.length%4) throw refusal();
+  // A grouped repeated regex can overflow the engine stack on an admitted full-book pack.
+  // Validate in constant stack space, then require a canonical decode/re-encode below.
+  const padding=value.endsWith('==')?2:value.endsWith('=')?1:0;
+  for(let i=0;i<value.length-padding;i++){
+    const c=value.charCodeAt(i);
+    if(!((c>=65&&c<=90)||(c>=97&&c<=122)||(c>=48&&c<=57)||c===43||c===47))throw refusal();
+  }
   const decoded=Uint8Array.from(atob(value), c=>c.charCodeAt(0));
   if (decoded.length>max || b64(decoded)!==value) throw refusal();
   return decoded;
@@ -48,11 +57,12 @@ export function validateCollection(value) {
     keys(work.source,['url','rights','attribution','checkedOn','permissionRef']);
     text(work.source.url,2048);const url=new URL(work.source.url);
     if(url.protocol!=='https:'||url.username||url.password)throw refusal();
-    if(!['public-domain','cc0','permission-recorded','licensed-unmodified'].includes(work.source.rights))throw refusal();
+    if(!['public-domain','cc0','permission-recorded','licensed-unmodified','link-only'].includes(work.source.rights))throw refusal();
     text(work.source.attribution,2000);text(work.source.permissionRef,2000,true);
     if(['permission-recorded','licensed-unmodified'].includes(work.source.rights)&&!work.source.permissionRef.trim())throw refusal();
     if(!/^\d{4}-\d{2}-\d{2}$/.test(work.source.checkedOn)||new Date(work.source.checkedOn).toISOString().slice(0,10)!==work.source.checkedOn)throw refusal();
     if(!Array.isArray(work.paragraphs)||!work.paragraphs.length||work.paragraphs.length>10000)throw refusal();
+    if(work.source.rights==='link-only'&&(work.source.permissionRef!==LINK_ONLY_PERMISSION||work.paragraphs.length!==1||work.paragraphs[0]!==LINK_ONLY_NOTICE))throw refusal();
     total+=work.paragraphs.length;if(total>100000)throw refusal();
     for(const paragraph of work.paragraphs)text(paragraph,100000);
   }
@@ -112,7 +122,7 @@ function startReader() {
   const state=value=>{document.documentElement.dataset.privateState=value;};
   const notice=(message)=>{$('status').textContent=message;};
   const clear=()=>{
-    collection=null;page=0;$('passphrase').value='';$('collection-title').textContent='';$('work-select').replaceChildren();
+    collection=null;page=0;$('passphrase').value='';$('collection-title').textContent='';$('work-select').replaceChildren();$('work-filter').value='';$('work-count').textContent='';
     $('work-title').textContent='';$('edition').textContent='';$('source').replaceChildren();$('passages').replaceChildren();$('page-status').textContent='';
     $('reading').hidden=true;$('unlock-panel').hidden=false;$('unlock').disabled=false;$('lock').disabled=true;
   };
@@ -121,6 +131,9 @@ function startReader() {
   }
   function renderWork(){
     if(!collection)return;
+    if(!/^\d+$/.test($('work-select').value)){
+      $('work-title').textContent='No matching text';$('edition').textContent='';$('source').replaceChildren();$('passages').replaceChildren();$('page-status').textContent='';$('previous').disabled=true;$('next').disabled=true;return;
+    }
     const work=collection.works[Number($('work-select').value)];if(!work)return;
     $('work-title').textContent=work.title;$('edition').textContent=`${work.edition} · ${work.language}`;
     const link=document.createElement('a');link.href=work.source.url;link.target='_blank';link.rel='noopener noreferrer';link.referrerPolicy='no-referrer';link.textContent='Original source';
@@ -129,9 +142,24 @@ function startReader() {
     $('source').replaceChildren(link,attribution,rights);
     const start=page*50,fragment=document.createDocumentFragment();
     for(const paragraph of work.paragraphs.slice(start,start+50)){const p=document.createElement('p');p.textContent=paragraph;fragment.append(p);}
+    if(work.source.rights==='link-only'){
+      const open=link.cloneNode(false);open.textContent="Open publisher's reading room";open.className='external-reading';fragment.append(open);
+    }
     $('passages').replaceChildren(fragment);
     $('previous').disabled=page===0;$('next').disabled=start+50>=work.paragraphs.length;
-    $('page-status').textContent=`Passages ${start+1}–${Math.min(start+50,work.paragraphs.length)} of ${work.paragraphs.length}`;
+    $('page-status').textContent=work.source.rights==='link-only'?'External reference':`Passages ${start+1}–${Math.min(start+50,work.paragraphs.length)} of ${work.paragraphs.length}`;
+  }
+  function filterWorks(){
+    if(!collection)return;
+    const before=$('work-select').value,query=$('work-filter').value.toLocaleLowerCase().trim();
+    $('work-select').replaceChildren();
+    collection.works.forEach((work,index)=>{
+      if(!`${work.title} ${work.tradition}`.toLocaleLowerCase().includes(query))return;
+      const option=document.createElement('option');option.value=String(index);option.textContent=work.title;$('work-select').append(option);
+    });
+    if([...$('work-select').options].some(option=>option.value===before))$('work-select').value=before;
+    $('work-count').textContent=`${$('work-select').options.length} of ${collection.works.length} texts`;
+    page=0;renderWork();
   }
   $('unlock-form').addEventListener('submit',async event=>{
     event.preventDefault();
@@ -149,7 +177,7 @@ function startReader() {
       if(attempt!==generation||document.hidden)return;
       collection=opened;page=0;lastActivity=performance.now();
       $('collection-title').textContent=collection.title;
-      collection.works.forEach((work,index)=>{const option=document.createElement('option');option.value=String(index);option.textContent=work.title;$('work-select').append(option);});
+      filterWorks();
       $('unlock-panel').hidden=true;$('reading').hidden=false;$('lock').disabled=false;
       renderWork();state('unlocked');notice('Unlocked for this visit. This view locks when you leave the tab or after five minutes without activity.');
       $('work-title').focus();
@@ -159,6 +187,7 @@ function startReader() {
   });
   $('lock').addEventListener('click',()=>{lock();$('passphrase').focus();});
   $('work-select').addEventListener('change',()=>{page=0;renderWork();});
+  $('work-filter').addEventListener('input',filterWorks);
   for(const [id,change] of [['previous',-1],['next',1]])$(id).addEventListener('click',()=>{page+=change;renderWork();$('work-title').focus();});
   for(const type of ['pointerdown','keydown','scroll','wheel'])document.addEventListener(type,()=>{if(collection)lastActivity=performance.now();},{passive:true});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)lock();});
