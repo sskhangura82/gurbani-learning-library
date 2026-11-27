@@ -62,5 +62,11 @@
     "Fresh desktop Chrome, not physical iPhone/Safari/VoiceOver.",
     "Digital-source coverage, not independent printed collation or completed explanations.",
     "Exact-head GitHub CI is recorded in the PR check runs separately."
-  ]
+  ],
+  "serviceWorkerSimulation": {
+    "passed": 9,
+    "failed": 0,
+    "report": "service-worker-simulation.log"
+  },
+  "initialGitHubInventoryCorrection": "ci-first-head.json"
 }

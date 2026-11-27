@@ -55,6 +55,15 @@ and content. The owner collection's exact resealing receipt contains no secret.
 
 ## Limits
 
+The first GitHub candidate head `76b5408` exposed one additional stale independent
+inventory in `tests/service-worker.mjs`; four jobs run that same simulation. The
+exact failure and job links are recorded in `ci-first-head.json`. The correction
+adds only the five declared new reader shell paths to its expected inventory,
+retains every prior asset and digest check, and explicitly excludes the on-demand
+source corpus. All nine simulation checks then pass. No application bytes,
+browser fixture expectation or source-scope restriction changed for this repair.
+The final exact-head CI result remains available in PR #75's Checks.
+
 All browser checks used fresh temporary desktop Chrome contexts on the authorized
 Mac. They did not open an existing profile or family reflections, and the owner
 PIN was never transferred. Narrow desktop viewport checks do not establish

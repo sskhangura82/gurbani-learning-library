@@ -94,12 +94,14 @@ const additions=['./library/app.bundle.mjs','./articles/app.bundle.mjs','./knowl
 const dailyShell=['./hukamnama/','./hukamnama/index.html','./hukamnama/style.css','./hukamnama/reader.bundle.mjs'];
 const reviewedAdditions=['./salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json','./library/complete-passages.json','./library/passage-contracts.mjs','./library/passages.mjs','./library/passage-ui.mjs','./library/search.mjs','./library/kinds.mjs'];
 const openCollections=['./collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html'];
-const requiredAssets=[...priorAssets,...additions,...dailyShell,...reviewedAdditions,...openCollections];
+const originalReaderShells=['./collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html','./collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs'];
+const requiredAssets=[...priorAssets,...additions,...dailyShell,...reviewedAdditions,...openCollections,...originalReaderShells];
 const expected=JSON.parse(source.match(/const EXPECTED=(\{[^\n]+\});/)[1]),version=source.match(/const VERSION="([^"]+)";/)[1];
 assert.equal(new Set(requiredAssets).size,requiredAssets.length,'Release inventory contains no duplicate URLs');
 assert.deepEqual(Object.keys(expected).sort(),[...requiredAssets].sort(),'The complete prior release, bundled Knowledge and Daily shell must remain present');
 assert.ok(!Object.keys(expected).some(name=>/^\.\/hukamnama\/(events|sources|receipts)\//.test(name)),'Dynamic Daily records must never be frozen into the shell');
 assert.ok(!Object.keys(expected).some(name=>/^\.\/private-library(?:\/|$)/.test(name)),'Private reader and encrypted collection must not enter the public cache');
+assert.ok(!Object.keys(expected).some(name=>/^\.\/collections\/source-data(?:\/|$)/.test(name)),'Full original corpora remain on demand rather than silently entering the shell');
 const digest=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 for(const asset of requiredAssets){
  const file=new URL(asset.endsWith('/')?asset+'index.html':asset,root);

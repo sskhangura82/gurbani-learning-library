@@ -102,6 +102,12 @@ The first integrated run omitted the required existing OpenGranth research-path
 environment variable and failed that fixture; its result is retained. Rerunning
 with the actual unchanged research packet passed. No source or gate was loosened.
 
+The first GitHub run also exposed a stale file list in the older service-worker
+simulation. Its bounded correction admits exactly the five new public reader
+shell files, retains every prior file and hash check, and explicitly excludes
+the on-demand full corpus. The nine simulation checks pass after that correction;
+application bytes and the successful actual-browser evidence remain unchanged.
+
 The PIN update passes 24 contract/CLI checks and 18 real Chrome checks using
 synthetic text and a public test PIN. Actual-owner resealing is checked separately
 without sending the PIN to browser tests or the Mac.
