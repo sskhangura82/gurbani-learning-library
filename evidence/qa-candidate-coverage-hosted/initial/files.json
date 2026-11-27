@@ -1,0 +1,26 @@
+{
+  "candidate": "e8c26f1d567699f4697432a7ebe83861f03a4923",
+  "replacementCandidate": "f4ac2cdfc3117f9def9ce90e478ff179af318d67",
+  "files": [
+    {
+      "path": "initial/article-failed-46012158489.log",
+      "sha256": "93dacee3b0ae9fe67ad49679d7945ac7d0410ea975f593ae1212932be35abead",
+      "bytes": 7182
+    },
+    {
+      "path": "initial/daily-browser-report.json",
+      "sha256": "5e20d843e2989b55ce62d8eeb6817368303b1f996fc75ecf22eaefd8c3d8deae",
+      "bytes": 4383
+    },
+    {
+      "path": "initial/daily-failed-46012158193.log",
+      "sha256": "e62f2139b4980cf1afd96a6daa867b27240135fcbd5ef0c05e065db9da0337c9",
+      "bytes": 1579
+    },
+    {
+      "path": "initial/runs.json",
+      "sha256": "ebaf8575d586ea39a91662af2cfbf72380607207e7c3189f97b0270624a20aba",
+      "bytes": 2712
+    }
+  ]
+}

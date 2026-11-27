@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: all current quality workflows cover any candidate base
+ok 1 - all current quality workflows cover any candidate base
+  ---
+  duration_ms: 4.794625
+  type: 'test'
+  ...
+# Subtest: path-only trigger remains allowed without pretending every path is covered
+ok 2 - path-only trigger remains allowed without pretending every path is covered
+  ---
+  duration_ms: 0.315458
+  type: 'test'
+  ...
+# Subtest: refuses base filtering via branches
+ok 3 - refuses base filtering via branches
+  ---
+  duration_ms: 0.150083
+  type: 'test'
+  ...
+# Subtest: refuses base filtering via branches-ignore
+ok 4 - refuses base filtering via branches-ignore
+  ---
+  duration_ms: 0.045417
+  type: 'test'
+  ...
+# Subtest: refuses base filtering via "branches"
+ok 5 - refuses base filtering via "branches"
+  ---
+  duration_ms: 0.082084
+  type: 'test'
+  ...
+# Subtest: refuses base filtering via 'branches-ignore'
+ok 6 - refuses base filtering via 'branches-ignore'
+  ---
+  duration_ms: 0.03525
+  type: 'test'
+  ...
+# Subtest: refuses unsupported or restricted trigger: "    branches:\\n      - main\\n"
+ok 7 - refuses unsupported or restricted trigger: "    branches:\\n      - main\\n"
+  ---
+  duration_ms: 0.079542
+  type: 'test'
+  ...
+# Subtest: refuses unsupported or restricted trigger: "   branches: [main]\\n"
+ok 8 - refuses unsupported or restricted trigger: "   branches: [main]\\n"
+  ---
+  duration_ms: 0.035708
+  type: 'test'
+  ...
+# Subtest: refuses unsupported or restricted trigger: "    <<: *trigger\\n"
+ok 9 - refuses unsupported or restricted trigger: "    <<: *trigger\\n"
+  ---
+  duration_ms: 0.181042
+  type: 'test'
+  ...
+# Subtest: refuses unsupported or restricted trigger: "    types: [opened]\\n"
+ok 10 - refuses unsupported or restricted trigger: "    types: [opened]\\n"
+  ---
+  duration_ms: 0.208167
+  type: 'test'
+  ...
+# Subtest: refuses unsupported or restricted trigger: "    paths:\\n"
+ok 11 - refuses unsupported or restricted trigger: "    paths:\\n"
+  ---
+  duration_ms: 0.069167
+  type: 'test'
+  ...
+# Subtest: refuses unsupported or restricted trigger: "    paths:\\n      - x\\n    paths:\\n      - y\\n"
+ok 12 - refuses unsupported or restricted trigger: "    paths:\\n      - x\\n    paths:\\n      - y\\n"
+  ---
+  duration_ms: 0.038958
+  type: 'test'
+  ...
+# Subtest: inline, missing, quoted and duplicate pull_request triggers fail closed
+ok 13 - inline, missing, quoted and duplicate pull_request triggers fail closed
+  ---
+  duration_ms: 0.089333
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 36.161333

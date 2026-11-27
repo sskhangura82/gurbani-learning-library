@@ -1,0 +1,122 @@
+{
+  "status": "FAIL",
+  "candidateDate": "2026-11-27",
+  "scenarios": [
+    {
+      "name": "narrow-phone: complete dated original and usable four destinations",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow-phone: missing date clears original and every lesson",
+      "status": "PASS"
+    },
+    {
+      "name": "phone: complete dated original and usable four destinations",
+      "status": "PASS"
+    },
+    {
+      "name": "phone: missing date clears original and every lesson",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: complete dated original and usable four destinations",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: missing date clears original and every lesson",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: complete dated original and usable four destinations",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: missing date clears original and every lesson",
+      "status": "PASS"
+    },
+    {
+      "name": "Official portal link survives disabled JavaScript and a blocked reader bundle",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid or duplicate URL date refuses without today substitution: ?date=",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid or duplicate URL date refuses without today substitution: ?date=not-a-date",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid or duplicate URL date refuses without today substitution: ?date=2026-02-30",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid or duplicate URL date refuses without today substitution: ?date=2026-11-27&date=2026-11-27",
+      "status": "PASS"
+    },
+    {
+      "name": "Date URL, saved destination and reload remain consistent when switching dates and Today",
+      "status": "PASS"
+    },
+    {
+      "name": "Late current-date response cannot replace a later unavailable-date choice",
+      "status": "PASS"
+    },
+    {
+      "name": "signature: refused original never falls back to another reading",
+      "status": "PASS"
+    },
+    {
+      "name": "source-truncation: refused original never falls back to another reading",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong-date: refused original never falls back to another reading",
+      "status": "PASS"
+    },
+    {
+      "name": "Amritsar midnight clears yesterday and leaves the new unavailable date pending",
+      "status": "PASS"
+    },
+    {
+      "name": "Private question and reflection save under the exact event and line; export preserves Unicode",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsaved text survives a cancelled date change; print excludes private notes",
+      "status": "PASS"
+    },
+    {
+      "name": "Saved destination reloads the local note and malformed import preserves all bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit Daily import restores notes on a fresh synthetic browser",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated conflicting Daily backup restores stay unchanged and distinct versions round-trip",
+      "status": "PASS"
+    },
+    {
+      "name": "Two tabs preserve conflicting note edits as separate versions",
+      "status": "FAIL",
+      "failure": "TimeoutError: page.waitForFunction: Timeout 12000ms exceeded."
+    }
+  ],
+  "pageErrors": [],
+  "limits": [
+    "Fresh synthetic Chromium contexts only; no physical iPhone, iPad, Safari, VoiceOver or human acceptance claim.",
+    "One exact official dated development event; unavailable dates are never fabricated.",
+    "Current Simple/Detailed/Learning source-linked explanations remain pending; no interpretation generated."
+  ],
+  "firstRead": {
+    "width": 390,
+    "height": 844,
+    "headingTop": 651.265625,
+    "headingBottom": 713.65625,
+    "firstVerseTop": 759.046875,
+    "officialLinkTop": 190.78125
+  },
+  "failure": "page.waitForFunction: Timeout 12000ms exceeded.\n    at save (/home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/hukamnama-browser.mjs:72:55)\n    at async file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/hukamnama-browser.mjs:290:3\n    at async check (/home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/hukamnama-browser.mjs:43:125)\n    at async file:///home/runner/work/gurbani-learning-library/gurbani-learning-library/tests/hukamnama-browser.mjs:286:2"
+}
