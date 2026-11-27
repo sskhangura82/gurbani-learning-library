@@ -1,0 +1,3713 @@
+{
+  "schema": "glp.content-intake.v1",
+  "id": "glp-farid-intake-001",
+  "status": "PLANNING_INVENTORY",
+  "runtimeEligible": false,
+  "publicReady": false,
+  "publicationReady": false,
+  "scope": "Original-only Farid source research. Observed incomplete forward span; no reordered collection, reader, teaching, audio or deployment.",
+  "preparedDate": "2026-11-27",
+  "reuseReference": {
+    "pullRequest": 50,
+    "headCommit": "3af5ba739cd8bf5ab2d358d12704ad9e48452b1e",
+    "manifestPath": "content-intake/kabir/manifest.json",
+    "relationship": "Reuses the bounded intake approach; does not import, modify or approve that separate candidate."
+  },
+  "source": {
+    "repository": "opengranth/open-granth",
+    "commit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+    "editionStatus": "PINNED_DIGITAL_WITNESS_NOT_AUTHENTICATED_SAROOP",
+    "metadataWitness": {
+      "path": "metadata/authors.json",
+      "gitBlob": "ad723a5d2cdd29e8d74ec336111e95ab387f5b2e",
+      "sha256": "30087956844b72d15f7ffd50f27d68e6f19eaa13fd69d5464c7de348c4d88503",
+      "bytes": 49201,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json"
+    },
+    "textWitnesses": [
+      {
+        "path": "corpus/ang-0488.md",
+        "gitBlob": "ccbabf6c4f2d2cbddad271c7a4151c707690fca7",
+        "sha256": "3680dba019881303b8e8abdf50412098f0d6d0cdd85b6184f62ff0feed06beb0",
+        "bytes": 10189,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0488.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0488.md"
+      },
+      {
+        "path": "corpus/ang-0794.md",
+        "gitBlob": "fbef9c1d8449253335d8db13987bfc4c323a5563",
+        "sha256": "883af1911717ef6e163fa8bd65ed7e5eea1c269dc2e270d13b10ca66fd832fbe",
+        "bytes": 9872,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0794.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0794.md"
+      },
+      {
+        "path": "corpus/ang-1377.md",
+        "gitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sha256": "47c2e2d5d609bc726f5813bdae03caea25accf843bd32b259fbb1f1a96598262",
+        "bytes": 10042,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md"
+      },
+      {
+        "path": "corpus/ang-1378.md",
+        "gitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sha256": "ad0de1705fa1dcdb21cfc2f7c49200b8eb22ae7f1da7db786eeb93987cb3ae8e",
+        "bytes": 10559,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1378.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1378.md"
+      },
+      {
+        "path": "corpus/ang-1379.md",
+        "gitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sha256": "85db471492c1d3272a8453574b185f69cd4316a0d6847d7b117a104c030def74",
+        "bytes": 10566,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1379.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1379.md"
+      },
+      {
+        "path": "corpus/ang-1380.md",
+        "gitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sha256": "43d3e086d3ad8a88cd4f71c4903e46d68b5bfc687f482bae4ea73863606b8312",
+        "bytes": 10735,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1380.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1380.md"
+      },
+      {
+        "path": "corpus/ang-1381.md",
+        "gitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sha256": "456f11948ef5921eb9ffddf198365c2d886d0e918622edb9f03634381986cc45",
+        "bytes": 10511,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1381.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1381.md"
+      },
+      {
+        "path": "corpus/ang-1382.md",
+        "gitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sha256": "31ee34db0156a51c919aeb41cd54c874e43244475d617f8cc07657e877146b8b",
+        "bytes": 10242,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1382.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1382.md"
+      },
+      {
+        "path": "corpus/ang-1383.md",
+        "gitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sha256": "8494480aac7383325e64d1fee2a853ee0e7fe09d28b3417613966949a5e7af22",
+        "bytes": 10332,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1383.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1383.md"
+      },
+      {
+        "path": "corpus/ang-1384.md",
+        "gitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sha256": "444a32d60175831968a7a4743fa04b0484ecd450ae99d7c0b2c53d09932d7bec",
+        "bytes": 10472,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1384.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1384.md"
+      },
+      {
+        "path": "corpus/ang-1385.md",
+        "gitBlob": "a8d167b187efce9308feac565bba528f15cc062a",
+        "sha256": "3285868310e681347bf0663a21993ecf9cf5968d3d48e16ccd7f69a415f0b0a5",
+        "bytes": 5937,
+        "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1385.md",
+        "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1385.md"
+      }
+    ],
+    "reportedUpstream": {
+      "package": "@shabados/database",
+      "version": "5.0.0-next.0",
+      "sourceId": "SGGS",
+      "primaryAsset": "SSA2",
+      "provenanceUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/docs/provenance.md",
+      "independentTextualWitness": false
+    }
+  },
+  "inventory": {
+    "label": "Bhagat Farid Ji candidate author inventory",
+    "upstreamAuthorName": "Bhagat Sheikh Fareed Ji",
+    "candidateAngs": [
+      488,
+      794,
+      1377,
+      1378,
+      1379,
+      1380,
+      1381,
+      1382,
+      1383,
+      1384
+    ],
+    "candidateAngCount": 10,
+    "upstreamTextEntryCount": 326,
+    "upstreamCountField": "verse_count",
+    "countMeaning": "Upstream text-entry count; not a count of complete Shabads, padas, or Saloks.",
+    "completeCompositionCount": null,
+    "reviewedCompositionCount": 0,
+    "canonicalAuthorAssignmentStatus": "PENDING_PASSAGE_REVIEW",
+    "wholePageAuthorAssignmentPermitted": false,
+    "signatureWordAuthorAssignmentPermitted": false
+  },
+  "scopeDistinction": {
+    "salokCollection": {
+      "sourceAngs": [
+        1377,
+        1378,
+        1379,
+        1380,
+        1381,
+        1382,
+        1383,
+        1384
+      ],
+      "status": "FORWARD_SPAN_INCOMPLETE_PENDING_SEQUENCE_ADJUDICATION",
+      "terminalNumberObserved": 130,
+      "completeCompositionCount": null,
+      "canonicalAuthorId": null
+    },
+    "raagBani": {
+      "candidateAngs": [
+        488,
+        794
+      ],
+      "status": "INVENTORY_ONLY_NO_PASSAGES_SELECTED",
+      "completeCompositionCount": null
+    },
+    "collectionTitleDoesNotAssignAllAuthors": true
+  },
+  "observedForwardSpan": {
+    "status": "INCOMPLETE_ORDERED_WITNESS",
+    "sourceRanges": [
+      {
+        "sourceAng": 1377,
+        "firstOrdinal": 27,
+        "lastOrdinal": 37,
+        "occurrences": 11
+      },
+      {
+        "sourceAng": 1378,
+        "firstOrdinal": 1,
+        "lastOrdinal": 41,
+        "occurrences": 41
+      },
+      {
+        "sourceAng": 1379,
+        "firstOrdinal": 1,
+        "lastOrdinal": 39,
+        "occurrences": 39
+      },
+      {
+        "sourceAng": 1380,
+        "firstOrdinal": 1,
+        "lastOrdinal": 40,
+        "occurrences": 40
+      },
+      {
+        "sourceAng": 1381,
+        "firstOrdinal": 1,
+        "lastOrdinal": 41,
+        "occurrences": 41
+      },
+      {
+        "sourceAng": 1382,
+        "firstOrdinal": 1,
+        "lastOrdinal": 40,
+        "occurrences": 40
+      },
+      {
+        "sourceAng": 1383,
+        "firstOrdinal": 1,
+        "lastOrdinal": 43,
+        "occurrences": 43
+      },
+      {
+        "sourceAng": 1384,
+        "firstOrdinal": 1,
+        "lastOrdinal": 41,
+        "occurrences": 41
+      }
+    ],
+    "occurrenceCount": 296,
+    "occurrences": [
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ ॥",
+        "textSha256": "91d90022bf844f693cb06d761e91db53a45fb1c2009e532803a77e1cccfe970e"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+        "textSha256": "d214cd5c454395ebcb0d63bbebe7e1a5e1adc57040027301abab3ff0ad232013"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਜਿਤੁ ਦਿਹਾੜੈ ਧਨ ਵਰੀ ਸਾਹੇ ਲਏ ਲਿਖਾਇ ॥",
+        "textSha256": "1e0e8921768883c5cb28b91e23d6c4af88eb0f1b2b570df52105b74ebc06603a"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਮਲਕੁ ਜਿ ਕੰਨੀ ਸੁਣੀਦਾ ਮੁਹੁ ਦੇਖਾਲੇ ਆਇ ॥",
+        "textSha256": "da2c0c71bb9619f2b8df9615ceb181af9523c877041a682d1a6fa02a200f957f"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 3,
+        "text": "ਜਿੰਦੁ ਨਿਮਾਣੀ ਕਢੀਐ ਹਡਾ ਕੂ ਕੜਕਾਇ ॥",
+        "textSha256": "4c9a3c5698439d1e9676874d1687a995668a9dec064e80967000703a457fa8d8"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਸਾਹੇ ਲਿਖੇ ਨ ਚਲਨੀ ਜਿੰਦੂ ਕੂੰ ਸਮਝਾਇ ॥",
+        "textSha256": "f2fed31a932f7a9462078d631b10b6c7e7e035fc5d79c740a4164f689aa1362d"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਜਿੰਦੁ ਵਹੁਟੀ ਮਰਣੁ ਵਰੁ ਲੈ ਜਾਸੀ ਪਰਣਾਇ ॥",
+        "textSha256": "377276fe070a186a3bb25a585a1cbb39ec62516b3dceb9c85e61cbc45340d424"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਆਪਣ ਹਥੀ ਜੋਲਿ ਕੈ ਕੈ ਗਲਿ ਲਗੈ ਧਾਇ ॥",
+        "textSha256": "ac84ef05ab0578cdd1d7737f969a45e7c32c3fe541d2264ef4e50badf376b5af"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਵਾਲਹੁ ਨਿਕੀ ਪੁਰਸਲਾਤ ਕੰਨੀ ਨ ਸੁਣੀ ਆਇ ॥",
+        "textSha256": "42715c193eb38cf8933ee56278fae05ab6c62b468842ecbfa873a8154f9b419e"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਕਿੜੀ ਪਵੰਦੀਈ ਖੜਾ ਨ ਆਪੁ ਮੁਹਾਇ ॥੧॥",
+        "textSha256": "a84c99a33d64c0f288d6df9e020377b3ee7d10be7db97f34b10bb6c4e265ba16"
+      },
+      {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦਰ ਦਰਵੇਸੀ ਗਾਖੜੀ ਚਲਾਂ ਦੁਨੀਆਂ ਭਤਿ ॥",
+        "textSha256": "c636c9b30f847d82dfe059978622a4f32534f8c17c2c160801817df6b5194eff"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਕਿਝੁ ਨ ਬੁਝੈ ਕਿਝੁ ਨ ਸੁਝੈ ਦੁਨੀਆ ਗੁਝੀ ਭਾਹਿ ॥",
+        "textSha256": "89fccadbea295400e80ba21e4ede491e3ad5ffd63c9a1fab041a99b4ab0758f6"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਸਾਂਈਂ ਮੇਰੈ ਚੰਗਾ ਕੀਤਾ ਨਾਹੀ ਤ ਹੰ ਭੀ ਦਝਾਂ ਆਹਿ ॥੩॥",
+        "textSha256": "d754edb1d5c4e29dd1f0d78ed2f444a16ebd1ba0849b5bd2c6221c0a5817252e"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜੇ ਜਾਣਾ ਤਿਲ ਥੋੜੜੇ ਸੰਮਲਿ ਬੁਕੁ ਭਰੀ ॥",
+        "textSha256": "f690a3fe80431ecf97678cb7327ff8220a58fb51aa07e0446e97a9382ffc6337"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਜੇ ਜਾਣਾ ਸਹੁ ਨੰਢੜਾ ਤਾਂ ਥੋੜਾ ਮਾਣੁ ਕਰੀ ॥੪॥",
+        "textSha256": "34e4fb9ca9fb341cb578a8838c56e358c3fd49b5363ad09dfcaa04341ac3bd8c"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਜੇ ਜਾਣਾ ਲੜੁ ਛਿਜਣਾ ਪੀਡੀ ਪਾਈਂ ਗੰਢਿ ॥",
+        "textSha256": "ef549444a4bf7aa96eec3b43684aa6c7dc3ddaddaaf85b7365c3e37a4aadceba"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 2,
+        "text": "ਤੈ ਜੇਵਡੁ ਮੈ ਨਾਹਿ ਕੋ ਸਭੁ ਜਗੁ ਡਿਠਾ ਹੰਢਿ ॥੫॥",
+        "textSha256": "8db9fd4b599a178d4147d53f31cba43e5b1ec2814b606b861ae62df8782fa890"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜੇ ਤੂ ਅਕਲਿ ਲਤੀਫੁ ਕਾਲੇ ਲਿਖੁ ਨ ਲੇਖ ॥",
+        "textSha256": "63c2926ad1f42452861d2b39f756d8dcb8e15787fa6f23e506d398f6a8575058"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਆਪਨੜੇ ਗਿਰੀਵਾਨ ਮਹਿ ਸਿਰੁ ਨਂੀਵਾਂ ਕਰਿ ਦੇਖੁ ॥੬॥",
+        "textSha256": "79cf0c6983dffffce187cbad5ba5f32c9537580e8bb491585dde7fb27b86bb75"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜੋ ਤੈ ਮਾਰਨਿ ਮੁਕੀਆਂ ਤਿਨੑਾ ਨ ਮਾਰੇ ਘੁੰਮਿ ॥",
+        "textSha256": "f6d386a608203e636ead2f14b9dec904a8d0782fab085f9082abb66c27e7f2f2"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਆਪਨੜੈ ਘਰਿ ਜਾਈਐ ਪੈਰ ਤਿਨੑਾ ਦੇ ਚੁੰਮਿ ॥੭॥",
+        "textSha256": "949e814802cd6473ca5a6ad079dcff11f626414a1236e33733ba215bc639788a"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜਾਂ ਤਉ ਖਟਣ ਵੇਲ ਤਾਂ ਤੂ ਰਤਾ ਦੁਨੀ ਸਿਉ ॥",
+        "textSha256": "936ba29cc9403f0a5234124791b0841f840115870a0e843858b88ecc3dbd53ec"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਮਰਗ ਸਵਾਈ ਨੀਹਿ ਜਾਂ ਭਰਿਆ ਤਾਂ ਲਦਿਆ ॥੮॥",
+        "textSha256": "4121dae50e405c2131e9ea4e3103d445d955235c7ac130874200f96e7056f74d"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਦੇਖੁ ਫਰੀਦਾ ਜੁ ਥੀਆ ਦਾੜੀ ਹੋਈ ਭੂਰ ॥",
+        "textSha256": "584530f688f18b52e25fa46dbe989ef0975cd66e1bc9e1b4a7799a39ec4afc68"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਅਗਹੁ ਨੇੜਾ ਆਇਆ ਪਿਛਾ ਰਹਿਆ ਦੂਰਿ ॥੯॥",
+        "textSha256": "46fce5f374f9315e2271c3fab40adf658f52fdc4bf8ab44418bfe7791d47fd9f"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਦੇਖੁ ਫਰੀਦਾ ਜਿ ਥੀਆ ਸਕਰ ਹੋਈ ਵਿਸੁ ॥",
+        "textSha256": "efb32afb061b3dd0645924777efc718f02b5d459551b80066629e5c69cdb588c"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਸਾਂਈ ਬਾਝਹੁ ਆਪਣੇ ਵੇਦਣ ਕਹੀਐ ਕਿਸੁ ॥੧੦॥",
+        "textSha256": "14c09339766450bfa88661ad53ea7cc2c149e6f4e174fe3d798a542b71cbe77e"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਅਖੀ ਦੇਖਿ ਪਤੀਣੀਆਂ ਸੁਣਿ ਸੁਣਿ ਰੀਣੇ ਕੰਨ ॥",
+        "textSha256": "8e537747f540650dda11d6da688344f35429711e0513af5dcd508c2a36de57eb"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਸਾਖ ਪਕੰਦੀ ਆਈਆ ਹੋਰ ਕਰੇਂਦੀ ਵੰਨ ॥੧੧॥",
+        "textSha256": "3f4c1c403ec4be22954e7236b46e75f53aa33ec833d752343a494188ce3de3a3"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਕਾਲਂੀ ਜਿਨੀ ਨ ਰਾਵਿਆ ਧਉਲੀ ਰਾਵੈ ਕੋਇ ॥",
+        "textSha256": "5cb33ad34b58762371983a6197b81a98e6613b8324f10809b1911ef305d73420"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਕਰਿ ਸਾਂਈ ਸਿਉ ਪਿਰਹੜੀ ਰੰਗੁ ਨਵੇਲਾ ਹੋਇ ॥੧੨॥",
+        "textSha256": "66a71bc9ed9273802d68233d94ac13b2ba3a2af6b2e5cf891de55b704fa1b07c"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੩ ॥",
+        "textSha256": "0f6258f8e0639b8a51f7d01a422ce900a40e1c465638f94dacc25273e9575905"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕਾਲੀ ਧਉਲੀ ਸਾਹਿਬੁ ਸਦਾ ਹੈ ਜੇ ਕੋ ਚਿਤਿ ਕਰੇ ॥",
+        "textSha256": "8be615f6d41ab1551b0b2ca2af3714d9fbb1a240dbd80e7f91a4d785f4adce23"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 3,
+        "text": "ਆਪਣਾ ਲਾਇਆ ਪਿਰਮੁ ਨ ਲਗਈ ਜੇ ਲੋਚੈ ਸਭੁ ਕੋਇ ॥",
+        "textSha256": "c2b8737d6701b096f76306c5b88f8ad8d9657b2b3c6fd59f91d075addd308d81"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਏਹੁ ਪਿਰਮੁ ਪਿਆਲਾ ਖਸਮ ਕਾ ਜੈ ਭਾਵੈ ਤੈ ਦੇਇ ॥੧੩॥",
+        "textSha256": "565de3e4e823cb35034a1861e749e2c5eefc5fcd020194754f3fa24145911492"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਜਿਨੑ ਲੋਇਣ ਜਗੁ ਮੋਹਿਆ ਸੇ ਲੋਇਣ ਮੈ ਡਿਠੁ ॥",
+        "textSha256": "16d423a25e183ec95b92c8d59cc6b87408c57962f06d1c0be2edb043d7a21f3f"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਕਜਲ ਰੇਖ ਨ ਸਹਦਿਆ ਸੇ ਪੰਖੀ ਸੂਇ ਬਹਿਠੁ ॥੧੪॥",
+        "textSha256": "517bdc9004aa23aa6360c4d0304aac2eba3beb4a100a6fb2bf99fc35fc51a0df"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕੂਕੇਦਿਆ ਚਾਂਗੇਦਿਆ ਮਤੀ ਦੇਦਿਆ ਨਿਤ ॥",
+        "textSha256": "05328e922a81d92489bd8ecc89263c813cf9c964c8372db33ccf2fc0bbf2dfb7"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਜੋ ਸੈਤਾਨਿ ਵੰਞਾਇਆ ਸੇ ਕਿਤ ਫੇਰਹਿ ਚਿਤ ॥੧੫॥",
+        "textSha256": "2ebb217c79b59e9dc11c2e56bb23c78264cbe896e7151be2769c98a44fe7956a"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਥੀਉ ਪਵਾਹੀ ਦਭੁ ॥",
+        "textSha256": "ed50cfff499bef09b5186339bc4d26217e265672a462cf565f576997941b6927"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 3,
+        "text": "ਜੇ ਸਾਂਈ ਲੋੜਹਿ ਸਭੁ ॥",
+        "textSha256": "ae06757d876952be8bac78603542722feae190ccb29d81432264db8e1e150310"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਇਕੁ ਛਿਜਹਿ ਬਿਆ ਲਤਾੜੀਅਹਿ ॥",
+        "textSha256": "8e8975ca0cc81f98ca788bb52952ace09b43af67c1e547adad3ca0a62ed4a980"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਤਾਂ ਸਾਈ ਦੈ ਦਰਿ ਵਾੜੀਅਹਿ ॥੧੬॥",
+        "textSha256": "7b5af1da1791fb31db98b4de4b0417fe271048b9886a25597eae0095fac438b2"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 3,
+        "text": "ਫਰੀਦਾ ਖਾਕੁ ਨ ਨਿੰਦੀਐ ਖਾਕੂ ਜੇਡੁ ਨ ਕੋਇ ॥",
+        "textSha256": "25a260c8c081f04fdccd5f8c8d13e2baf285d01f5b86f909f67a9fc8f000d7d3"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਜੀਵਦਿਆ ਪੈਰਾ ਤਲੈ ਮੁਇਆ ਉਪਰਿ ਹੋਇ ॥੧੭॥",
+        "textSha256": "e8d05af0be5b73484a95c498720f5c995317204a8c9dcd5448da8936420dd840"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਜਾ ਲਬੁ ਤਾ ਨੇਹੁ ਕਿਆ ਲਬੁ ਤ ਕੂੜਾ ਨੇਹੁ ॥",
+        "textSha256": "59934877dd767259079bfc736d410774a97c0b361a06945f43027dab27c0b394"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਕਿਚਰੁ ਝਤਿ ਲਘਾਈਐ ਛਪਰਿ ਤੁਟੈ ਮੇਹੁ ॥੧੮॥",
+        "textSha256": "960b49ffb1b94e3278b64828854eb2b8cf1f052f582936999c030213a32510bf"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਜੰਗਲੁ ਜੰਗਲੁ ਕਿਆ ਭਵਹਿ ਵਣਿ ਕੰਡਾ ਮੋੜੇਹਿ ॥",
+        "textSha256": "123fccd93d497bc334989ce8ba777f086aab0539c5d41d69c6b76db9d4ef65b8"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਵਸੀ ਰਬੁ ਹਿਆਲੀਐ ਜੰਗਲੁ ਕਿਆ ਢੂਢੇਹਿ ॥੧੯॥",
+        "textSha256": "d029a67f1d6f1b1fd0dcd0cc047b2d88801a435725b3bacd51f87276dcf32f19"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਇਨੀ ਨਿਕੀ ਜੰਘੀਐ ਥਲ ਡੂੰਗਰ ਭਵਿਓਮੑਿ ॥",
+        "textSha256": "15fde327427d32bd8a270bc29d997cb274b6dfa0ae7e075fe2eff378cbc6f94c"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 40,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਅਜੁ ਫਰੀਦੈ ਕੂਜੜਾ ਸੈ ਕੋਹਾਂ ਥੀਓਮਿ ॥੨੦॥",
+        "textSha256": "aabbedb8419e4e71025a94a7bcdd9ba85ed6143c811b7bb7e0893311ebba8e82"
+      },
+      {
+        "sourceAng": 1378,
+        "sourcePath": "corpus/ang-1378.md",
+        "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+        "sourceOrdinal": 41,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਰਾਤੀ ਵਡੀਆਂ ਧੁਖਿ ਧੁਖਿ ਉਠਨਿ ਪਾਸ ॥",
+        "textSha256": "049b83db260ae410c0cc1936bb011ebb5cc0575c64810f5d82799ba472bff2de"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਧਿਗੁ ਤਿਨੑਾ ਦਾ ਜੀਵਿਆ ਜਿਨਾ ਵਿਡਾਣੀ ਆਸ ॥੨੧॥",
+        "textSha256": "2e5a35e51d34cf92a01e8f42871a332e946420179f82919e48163f311aad07e4"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਜੇ ਮੈ ਹੋਦਾ ਵਾਰਿਆ ਮਿਤਾ ਆਇੜਿਆਂ ॥",
+        "textSha256": "e8d687fd5282a5011a8eb0493e2ad216ec3e372c3a84caf4eb7f92ef9a3c560a"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਹੇੜਾ ਜਲੈ ਮਜੀਠ ਜਿਉ ਉਪਰਿ ਅੰਗਾਰਾ ॥੨੨॥",
+        "textSha256": "d10df411f1f093152ff0eee9e5e508a4f01e5bbd2ab9a3c24d71312fe447b4bc"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਲੋੜੈ ਦਾਖ ਬਿਜਉਰੀਆਂ ਕਿਕਰਿ ਬੀਜੈ ਜਟੁ ॥",
+        "textSha256": "cf32f0b40389c81923c5fc811c75217ca7a1d3e23931c51ab8f40a1a81ced9a4"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਹੰਢੈ ਉਂਨ ਕਤਾਇਦਾ ਪੈਧਾ ਲੋੜੈ ਪਟੁ ॥੨੩॥",
+        "textSha256": "55b516dd820c65c9997f9d595fe78d4d5ae245a6b84de32fbc587f556db6a862"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਗਲੀਏ ਚਿਕੜੁ ਦੂਰਿ ਘਰੁ ਨਾਲਿ ਪਿਆਰੇ ਨੇਹੁ ॥",
+        "textSha256": "2653cf3e3ce78d0105f01b5d0aa5b90b656cb537f2e563e40e0751b8c46db963"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਚਲਾ ਤ ਭਿਜੈ ਕੰਬਲੀ ਰਹਾਂ ਤ ਤੁਟੈ ਨੇਹੁ ॥੨੪॥",
+        "textSha256": "c0988736c252cf4303135073eeabe4c990365ce490ba472a58f5d4f655af5890"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਭਿਜਉ ਸਿਜਉ ਕੰਬਲੀ ਅਲਹ ਵਰਸਉ ਮੇਹੁ ॥",
+        "textSha256": "f5c2209f36133ae797b68455c57c83c5d26660ccacf6f741e0d2736aff221f88"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 3,
+        "text": "ਜਾਇ ਮਿਲਾ ਤਿਨਾ ਸਜਣਾ ਤੁਟਉ ਨਾਹੀ ਨੇਹੁ ॥੨੫॥",
+        "textSha256": "0661e05ebc1fed7d1491782a6296f48a35f6d30faffeb91ccfd4e9ac35cc96a2"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਮੈ ਭੋਲਾਵਾ ਪਗ ਦਾ ਮਤੁ ਮੈਲੀ ਹੋਇ ਜਾਇ ॥",
+        "textSha256": "bba9592a48f802f58f0222d0ec10c2be014158f08ef300f0a872ca004b43e276"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਗਹਿਲਾ ਰੂਹੁ ਨ ਜਾਣਈ ਸਿਰੁ ਭੀ ਮਿਟੀ ਖਾਇ ॥੨੬॥",
+        "textSha256": "784d7d3b999f084d8336ec6d7a67093f630d7954aed5ecd844e3b9cd91b256f6"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਸਕਰ ਖੰਡੁ ਨਿਵਾਤ ਗੁੜੁ ਮਾਖਿਓੁ ਮਾਂਝਾ ਦੁਧੁ ॥",
+        "textSha256": "fcb343d728f777ad31fe9a665a240276f8d1a2b2812ff3302fc7374843ea0c60"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਸਭੇ ਵਸਤੂ ਮਿਠੀਆਂ ਰਬ ਨ ਪੁਜਨਿ ਤੁਧੁ ॥੨੭॥",
+        "textSha256": "fb69347ed58a17057c74f3c8f37746674238779d73da237c0d47fd25f79f791e"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਰੋਟੀ ਮੇਰੀ ਕਾਠ ਕੀ ਲਾਵਣੁ ਮੇਰੀ ਭੁਖ ॥",
+        "textSha256": "d0762655cf4b70c13bf709c0e96c841ab67c854a063c96dd826dd8963475725e"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਜਿਨਾ ਖਾਧੀ ਚੋਪੜੀ ਘਣੇ ਸਹਨਿਗੇ ਦੁਖ ॥੨੮॥",
+        "textSha256": "5cc07ff5aa0bbb91d511b915ebb19ec51225b3c484f67b0398a104c5bc9da0e3"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਰੁਖੀ ਸੁਖੀ ਖਾਇ ਕੈ ਠੰਢਾ ਪਾਣੀ ਪੀਉ ॥",
+        "textSha256": "60bd72964a42f2b0f24155f33147112ae7ed84bd8dd7741d935a3c5a89cbc80e"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦੇਖਿ ਪਰਾਈ ਚੋਪੜੀ ਨਾ ਤਰਸਾਏ ਜੀਉ ॥੨੯॥",
+        "textSha256": "ed26b60ec786e7b37202665456142ff88bfd66c8f9aeb952338f95aecbc50ca4"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਅਜੁ ਨ ਸੁਤੀ ਕੰਤ ਸਿਉ ਅੰਗੁ ਮੁੜੇ ਮੁੜਿ ਜਾਇ ॥",
+        "textSha256": "714dc8b4ab8801596399401c5f1ee5ce3aeaa741a02616da5114e0a923a83b56"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਜਾਇ ਪੁਛਹੁ ਡੋਹਾਗਣੀ ਤੁਮ ਕਿਉ ਰੈਣਿ ਵਿਹਾਇ ॥੩੦॥",
+        "textSha256": "e992b185b7349176a710c0d2f2d6393b6832044ee254c9a8c928cf43001430e6"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਸਾਹੁਰੈ ਢੋਈ ਨਾ ਲਹੈ ਪੇਈਐ ਨਾਹੀ ਥਾਉ ॥",
+        "textSha256": "4af8eb1d9b9d3a176047783a64dc9da7b8d60b01ec2b60c5ac27357812520907"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਪਿਰੁ ਵਾਤੜੀ ਨ ਪੁਛਈ ਧਨ ਸੋਹਾਗਣਿ ਨਾਉ ॥੩੧॥",
+        "textSha256": "ac2ebf25dd61ab9f91458ff4b3cff79d48e03b746d626198327f6b69c62727c7"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਸਾਹੁਰੈ ਪੇਈਐ ਕੰਤ ਕੀ ਕੰਤੁ ਅਗੰਮੁ ਅਥਾਹੁ ॥",
+        "textSha256": "d766513717ec68d22f22158b154c62f9a1496efb2c2143fe4520e69618a1e8dd"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਨਾਨਕ ਸੋ ਸੋਹਾਗਣੀ ਜੁ ਭਾਵੈ ਬੇਪਰਵਾਹ ॥੩੨॥",
+        "textSha256": "3ad622031ebc537e8417c6b2d9b1fc7654c44a11f35c07dad72e48da74a7dd22"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 3,
+        "text": "ਨਾਤੀ ਧੋਤੀ ਸੰਬਹੀ ਸੁਤੀ ਆਇ ਨਚਿੰਦੁ ॥",
+        "textSha256": "5fd66e974fd1f017b28757acbb3f1675dbefa4351b7fa453d88c0a52c27ba9ea"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਰਹੀ ਸੁ ਬੇੜੀ ਹਿੰਙੁ ਦੀ ਗਈ ਕਥੂਰੀ ਗੰਧੁ ॥੩੩॥",
+        "textSha256": "19f2cc0e40ee9aa5b1f055d039ef0ccd0a14e8ef5979a9c49f5c46c52eac49ca"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 2,
+        "text": "ਜੋਬਨ ਜਾਂਦੇ ਨਾ ਡਰਾਂ ਜੇ ਸਹ ਪ੍ਰੀਤਿ ਨ ਜਾਇ ॥",
+        "textSha256": "f0cc7f4b41303892daca2c09b9f8156632534bb74e4e53780d57d9c38e2ccc9e"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਕਿਤਂੀ ਜੋਬਨ ਪ੍ਰੀਤਿ ਬਿਨੁ ਸੁਕਿ ਗਏ ਕੁਮਲਾਇ ॥੩੪॥",
+        "textSha256": "55b92344f03b171cdf48f39c4ae87759dd67d8a58d7f995713e4105657c4f024"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਚਿੰਤ ਖਟੋਲਾ ਵਾਣੁ ਦੁਖੁ ਬਿਰਹਿ ਵਿਛਾਵਣ ਲੇਫੁ ॥",
+        "textSha256": "bfa5596014380934d4f5359f78fab7ad2858bfee4ffc6b22d5c00a6557fc7d8e"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਏਹੁ ਹਮਾਰਾ ਜੀਵਣਾ ਤੂ ਸਾਹਿਬ ਸਚੇ ਵੇਖੁ ॥੩੫॥",
+        "textSha256": "ee49d825631621c21c2cc7ef7a9431856b7d8177567f6243af39815cbb1d9743"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਬਿਰਹਾ ਬਿਰਹਾ ਆਖੀਐ ਬਿਰਹਾ ਤੂ ਸੁਲਤਾਨੁ ॥",
+        "textSha256": "b0177b9ac065879c834d5c97de902f1ab413ce9087a37716352f80b8c8d87698"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜਿਤੁ ਤਨਿ ਬਿਰਹੁ ਨ ਊਪਜੈ ਸੋ ਤਨੁ ਜਾਣੁ ਮਸਾਨੁ ॥੩੬॥",
+        "textSha256": "e9297246338a832211626b4029bb407053819b10cc819fb08fbf314315700d13"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਏ ਵਿਸੁ ਗੰਦਲਾ ਧਰੀਆਂ ਖੰਡੁ ਲਿਵਾੜਿ ॥",
+        "textSha256": "b7c479ff5e4ea2fa7347a0c9af73acffb90acbd946b239a89a2e7cf1fb0e705e"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਇਕਿ ਰਾਹੇਦੇ ਰਹਿ ਗਏ ਇਕਿ ਰਾਧੀ ਗਏ ਉਜਾੜਿ ॥੩੭॥",
+        "textSha256": "bd070f2b236f89307641201282d9f114f6f9bbfcd82eeb3d72d9cbcf3c3a14aa"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਚਾਰਿ ਗਵਾਇਆ ਹੰਢਿ ਕੈ ਚਾਰਿ ਗਵਾਇਆ ਸੰਮਿ ॥",
+        "textSha256": "ed679bc522449736b5d604920fc8793e59f1e0aad81df9ac88d3f9470250c49d"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਲੇਖਾ ਰਬੁ ਮੰਗੇਸੀਆ ਤੂ ਆਂਹੋ ਕੇਰ੍ਹੇ ਕੰਮਿ ॥੩੮॥",
+        "textSha256": "d77a89c7e437ae464ad227bb74b9471937a25d7597b016080d1475c77bd279e9"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦਰਿ ਦਰਵਾਜੈ ਜਾਇ ਕੈ ਕਿਉ ਡਿਠੋ ਘੜੀਆਲੁ ॥",
+        "textSha256": "591fb4adf773bf3676a30f819a6f683debd259af4936f76a40cb882fb2bd9653"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਏਹੁ ਨਿਦੋਸਾਂ ਮਾਰੀਐ ਹਮ ਦੋਸਾਂ ਦਾ ਕਿਆ ਹਾਲੁ ॥੩੯॥",
+        "textSha256": "a5f172d2c5c1393e8293d3cc9c7a5fc80a98c57aba584bced2d202bbeec82ae1"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਘੜੀਏ ਘੜੀਏ ਮਾਰੀਐ ਪਹਰੀ ਲਹੈ ਸਜਾਇ ॥",
+        "textSha256": "8ab389a413edbcf400aa257cd1c4c5ce05fde0fa266fdb729060c169315c3465"
+      },
+      {
+        "sourceAng": 1379,
+        "sourcePath": "corpus/ang-1379.md",
+        "sourceGitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਸੋ ਹੇੜਾ ਘੜੀਆਲ ਜਿਉ ਡੁਖੀ ਰੈਣਿ ਵਿਹਾਇ ॥੪੦॥",
+        "textSha256": "763ae5abd4617dba52fbef2320810e734e044e3f29803dff58b12d2579a0e6c6"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਬੁਢਾ ਹੋਆ ਸੇਖ ਫਰੀਦੁ ਕੰਬਣਿ ਲਗੀ ਦੇਹ ॥",
+        "textSha256": "4f22874cc5f89c9a402f53ccf06a50851b0f357636e9756584095b86f1694380"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਜੇ ਸਉ ਵਰੑਿਆ ਜੀਵਣਾ ਭੀ ਤਨੁ ਹੋਸੀ ਖੇਹ ॥੪੧॥",
+        "textSha256": "772f98f7b05ddebe51289797215c1623e757eded69a6f9509dae7115c3ead847"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 3,
+        "text": "ਫਰੀਦਾ ਬਾਰਿ ਪਰਾਇਐ ਬੈਸਣਾ ਸਾਂਈ ਮੁਝੈ ਨ ਦੇਹਿ ॥",
+        "textSha256": "d810631caa947523609917f2ae9c5a1844e22c8301bb07595e21b4b9d9a33036"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਜੇ ਤੂ ਏਵੈ ਰਖਸੀ ਜੀਉ ਸਰੀਰਹੁ ਲੇਹਿ ॥੪੨॥",
+        "textSha256": "21f7eab9d1bff2f2bc7e0ba2b9f260dd19a7fa21e33689d6263e86bfc3988ceb"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਕੰਧਿ ਕੁਹਾੜਾ ਸਿਰਿ ਘੜਾ ਵਣਿ ਕੈ ਸਰੁ ਲੋਹਾਰੁ ॥",
+        "textSha256": "d62a1e14f32283ccf7932525ba7b7b6c9e4d18ed50a5b872c4aa27b07c69a139"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਹਉ ਲੋੜੀ ਸਹੁ ਆਪਣਾ ਤੂ ਲੋੜਹਿ ਅੰਗਿਆਰ ॥੪੩॥",
+        "textSha256": "f6f4cbd62caef67ac1304b0fb8449ac6e33b65307a2dcd79c6e18325a3a7bc01"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਇਕਨਾ ਆਟਾ ਅਗਲਾ ਇਕਨਾ ਨਾਹੀ ਲੋਣੁ ॥",
+        "textSha256": "bd9919141b065b9eef9fe71e03dd50c65fc79c008b2209d107f9c1b9d604a4cc"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਅਗੈ ਗਏ ਸਿੰਞਾਪਸਨਿ ਚੋਟਾਂ ਖਾਸੀ ਕਉਣੁ ॥੪੪॥",
+        "textSha256": "d6e27dad4020ed6286b5c20399511af48cea4f238ee34b261bfdcc51478192cb"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਪਾਸਿ ਦਮਾਮੇ ਛਤੁ ਸਿਰਿ ਭੇਰੀ ਸਡੋ ਰਡ ॥",
+        "textSha256": "e451726a3ab653d7905fcedc4473803f1d3ab6e7cf3a6a90bdd3f4a1f7a51b6a"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਜਾਇ ਸੁਤੇ ਜੀਰਾਣ ਮਹਿ ਥੀਏ ਅਤੀਮਾ ਗਡ ॥੪੫॥",
+        "textSha256": "5fde3739dfa97febb6ff657601f2a8a5f63ff0262851705748672fbd58caf5df"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕੋਠੇ ਮੰਡਪ ਮਾੜੀਆ ਉਸਾਰੇਦੇ ਭੀ ਗਏ ॥",
+        "textSha256": "87aa24cdc33c7ea4e8cb30ddfe54ab09f71cc4976d8204cb709fc47b99f5cf82"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਕੂੜਾ ਸਉਦਾ ਕਰਿ ਗਏ ਗੋਰੀ ਆਇ ਪਏ ॥੪੬॥",
+        "textSha256": "eba87bf63c0ec6c9cf8da444e84f4a586349dadd984dd1302528771428e0738c"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਖਿੰਥੜਿ ਮੇਖਾ ਅਗਲੀਆ ਜਿੰਦੁ ਨ ਕਾਈ ਮੇਖ ॥",
+        "textSha256": "3d9d3c6f5897ee02b9dbc4b02e7075a1cf11222e4c63a10fccac0e356b932670"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਵਾਰੀ ਆਪੋ ਆਪਣੀ ਚਲੇ ਮਸਾਇਕ ਸੇਖ ॥੪੭॥",
+        "textSha256": "b9d7c40212d03d110cd4532321daa10d0f2261b563b185914087f1ac2eb6b0c3"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦੁਹੁ ਦੀਵੀ ਬਲੰਦਿਆ ਮਲਕੁ ਬਹਿਠਾ ਆਇ ॥",
+        "textSha256": "24699587b102db6007e54849564ff83eb6f71739acf4ea96937bb9a0e9ec01c7"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਗੜੁ ਲੀਤਾ ਘਟੁ ਲੁਟਿਆ ਦੀਵੜੇ ਗਇਆ ਬੁਝਾਇ ॥੪੮॥",
+        "textSha256": "74db564f754da9e90767eb616aab7dd360f24cf43dcdd1baa5bc4d7bcfb3c7a6"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਵੇਖੁ ਕਪਾਹੈ ਜਿ ਥੀਆ ਜਿ ਸਿਰਿ ਥੀਆ ਤਿਲਾਹ ॥",
+        "textSha256": "044c9520119dd66657bf01ddcad0eee2971def88c73c32596eb43defcf635d98"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਕਮਾਦੈ ਅਰੁ ਕਾਗਦੈ ਕੁੰਨੇ ਕੋਇਲਿਆਹ ॥",
+        "textSha256": "96479f9f41202266e90ac7427f6cec21f68f75103e854819d852bffe03ddfdf6"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਮੰਦੇ ਅਮਲ ਕਰੇਦਿਆ ਏਹ ਸਜਾਇ ਤਿਨਾਹ ॥੪੯॥",
+        "textSha256": "3df5e36c7ed285ffd45061dcde9bd367c506d0ba1bf5b070e0cd2afd5721ed68"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਕੰਨਿ ਮੁਸਲਾ ਸੂਫੁ ਗਲਿ ਦਿਲਿ ਕਾਤੀ ਗੁੜੁ ਵਾਤਿ ॥",
+        "textSha256": "8f6a87aca03ffb87112258942ee433fd93be65b4a1c69b0fbc3ed2ec6779bf32"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਬਾਹਰਿ ਦਿਸੈ ਚਾਨਣਾ ਦਿਲਿ ਅੰਧਿਆਰੀ ਰਾਤਿ ॥੫੦॥",
+        "textSha256": "f8962f85e9cf3b4fce8ae7cbb045c0188bc5bac2d1f616840afc48bf20e9fb90"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਰਤੀ ਰਤੁ ਨ ਨਿਕਲੈ ਜੇ ਤਨੁ ਚੀਰੈ ਕੋਇ ॥",
+        "textSha256": "5692703128b44a5c58b0f7d3028dfdcabdb09ffe033ca3bc5a59bd3e696c0726"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਜੋ ਤਨ ਰਤੇ ਰਬ ਸਿਉ ਤਿਨ ਤਨਿ ਰਤੁ ਨ ਹੋਇ ॥੫੧॥",
+        "textSha256": "537222860f1e4549a505681a645be4dac20ee0cfae1288d77c7ec3d03840dabf"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੩ ॥",
+        "textSha256": "0f6258f8e0639b8a51f7d01a422ce900a40e1c465638f94dacc25273e9575905"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 2,
+        "text": "ਇਹੁ ਤਨੁ ਸਭੋ ਰਤੁ ਹੈ ਰਤੁ ਬਿਨੁ ਤੰਨੁ ਨ ਹੋਇ ॥",
+        "textSha256": "ba799022ff536d54ff79e1b4d13d516cd63c69ecfd0bb77f10c16eb0c947f77c"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 3,
+        "text": "ਜੋ ਸਹ ਰਤੇ ਆਪਣੇ ਤਿਤੁ ਤਨਿ ਲੋਭੁ ਰਤੁ ਨ ਹੋਇ ॥",
+        "textSha256": "f37af3a68c0a19ae4708776753e46e8cb6dab1c9d608d444f76bbbbcff2761e5"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਭੈ ਪਇਐ ਤਨੁ ਖੀਣੁ ਹੋਇ ਲੋਭੁ ਰਤੁ ਵਿਚਹੁ ਜਾਇ ॥",
+        "textSha256": "f8050636b9f3174c2232909ed26392ceeb052ad37b751955146c827fa7196805"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਜਿਉ ਬੈਸੰਤਰਿ ਧਾਤੁ ਸੁਧੁ ਹੋਇ ਤਿਉ ਹਰਿ ਕਾ ਭਉ ਦੁਰਮਤਿ ਮੈਲੁ ਗਵਾਇ ॥",
+        "textSha256": "980563815944880578c99c27bfa51191133f34f255236ad90974d7ae17d7a180"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਨਾਨਕ ਤੇ ਜਨ ਸੋਹਣੇ ਜਿ ਰਤੇ ਹਰਿ ਰੰਗੁ ਲਾਇ ॥੫੨॥",
+        "textSha256": "bd5d98db184a8e61ae2726d5c97689e0bfb246475c68326ba518da67422850a1"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਸੋਈ ਸਰਵਰੁ ਢੂਢਿ ਲਹੁ ਜਿਥਹੁ ਲਭੀ ਵਥੁ ॥",
+        "textSha256": "bec695072d107fe73c77ff486ef065adb996c9f5c109dbe1c73a7cf395bbb4a7"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਛਪੜਿ ਢੂਢੈ ਕਿਆ ਹੋਵੈ ਚਿਕੜਿ ਡੁਬੈ ਹਥੁ ॥੫੩॥",
+        "textSha256": "88153e3a51d9facf7da2c9ece3eca951d2b6233caa6a0b7ec7c7bb55007a0b94"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਨੰਢੀ ਕੰਤੁ ਨ ਰਾਵਿਓ ਵਡੀ ਥੀ ਮੁਈਆਸੁ ॥",
+        "textSha256": "1d4bffb921500f0425fc0305f8c0a8a657a59c87d04d89b5c3bbd9342819dbfe"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਧਨ ਕੂਕੇਂਦੀ ਗੋਰ ਮੇਂ ਤੈ ਸਹ ਨਾ ਮਿਲੀਆਸੁ ॥੫੪॥",
+        "textSha256": "cbd17591b144d89765cabb03f84edcdc7bb13eadfdfdd3de4765e3027b1a23b9"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਸਿਰੁ ਪਲਿਆ ਦਾੜੀ ਪਲੀ ਮੁਛਾਂ ਭੀ ਪਲੀਆਂ ॥",
+        "textSha256": "bb06aca2fdbe3e16c6407cb972a04c10e527984f912df8004777fad1c09a7d18"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਰੇ ਮਨ ਗਹਿਲੇ ਬਾਵਲੇ ਮਾਣਹਿ ਕਿਆ ਰਲੀਆਂ ॥੫੫॥",
+        "textSha256": "b12cf62e48cce07e8a7da907681b33f80d89d59c4c9c1900383955af41b09770"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕੋਠੇ ਧੁਕਣੁ ਕੇਤੜਾ ਪਿਰ ਨੀਦੜੀ ਨਿਵਾਰਿ ॥",
+        "textSha256": "1208785f028027a2dab48eaeb211426b92b6884ae36c460703e24d4ee7c354ce"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਜੋ ਦਿਹ ਲਧੇ ਗਾਣਵੇ ਗਏ ਵਿਲਾੜਿ ਵਿਲਾੜਿ ॥੫੬॥",
+        "textSha256": "27b5abd58ef3842e7b3b43af79ec0c7d2ee5517e60bb3b185f267a6ad52e93da"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕੋਠੇ ਮੰਡਪ ਮਾੜੀਆ ਏਤੁ ਨ ਲਾਏ ਚਿਤੁ ॥",
+        "textSha256": "856d28ddb348477c8b700eb9ff4397775eaf247f8a208c79686ebb37656a131b"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਮਿਟੀ ਪਈ ਅਤੋਲਵੀ ਕੋਇ ਨ ਹੋਸੀ ਮਿਤੁ ॥੫੭॥",
+        "textSha256": "4ecfa18f7a4fe0e9fbc1205163c1c65c82e5ea47428729405affbb44d45c03fe"
+      },
+      {
+        "sourceAng": 1380,
+        "sourcePath": "corpus/ang-1380.md",
+        "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+        "sourceOrdinal": 40,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਮੰਡਪ ਮਾਲੁ ਨ ਲਾਇ ਮਰਗ ਸਤਾਣੀ ਚਿਤਿ ਧਰਿ ॥",
+        "textSha256": "bd32fad71de7416ba5278f6bf16bfb66aa773bd3b77b8f4afcb6d963135440cc"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਸਾਈ ਜਾਇ ਸਮੑਾਲਿ ਜਿਥੈ ਹੀ ਤਉ ਵੰਞਣਾ ॥੫੮॥",
+        "textSha256": "f0a3ff373856d5ef14240b70fbc120b5c42c98b50b8ec5ac2b2e787646c6d812"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਜਿਨੑੀ ਕੰਮੀ ਨਾਹਿ ਗੁਣ ਤੇ ਕੰਮੜੇ ਵਿਸਾਰਿ ॥",
+        "textSha256": "f5efbafa6d42e6ba73cd05e1689d70b2dfc6132037ed28330e531cceabce7cbf"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਮਤੁ ਸਰਮਿੰਦਾ ਥੀਵਹੀ ਸਾਂਈ ਦੈ ਦਰਬਾਰਿ ॥੫੯॥",
+        "textSha256": "936a4d3510b9b0725785ac8c8c11803c40974de4d09c27a4306643931b0f9530"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਸਾਹਿਬ ਦੀ ਕਰਿ ਚਾਕਰੀ ਦਿਲ ਦੀ ਲਾਹਿ ਭਰਾਂਦਿ ॥",
+        "textSha256": "70725bdd7ce4f9778b272a4b2e9572e65b46a17cf3d9e7bbbb9a81b52c090877"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਦਰਵੇਸਾਂ ਨੋ ਲੋੜੀਐ ਰੁਖਾਂ ਦੀ ਜੀਰਾਂਦਿ ॥੬੦॥",
+        "textSha256": "fe6cf846c431188674a04e2acd48b01e05459e726ff8defd0358328f0b5e8bd3"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕਾਲੇ ਮੈਡੇ ਕਪੜੇ ਕਾਲਾ ਮੈਡਾ ਵੇਸੁ ॥",
+        "textSha256": "7de4dd998fcb9c30b37ea11c5535ba37d258036ba0b79f9dbc1b51667e3335be"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਗੁਨਹੀ ਭਰਿਆ ਮੈ ਫਿਰਾ ਲੋਕੁ ਕਹੈ ਦਰਵੇਸੁ ॥੬੧॥",
+        "textSha256": "738b94e0a84fb2d0acf0db9a95c48206ea84fb0857454531516fe3923cca334e"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਤਤੀ ਤੋਇ ਨ ਪਲਵੈ ਜੇ ਜਲਿ ਟੁਬੀ ਦੇਇ ॥",
+        "textSha256": "865d3f18052f49b099950e2ac4e30920a850bdd2e0e8c0006dcadbde9f1adea1"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜੋ ਡੋਹਾਗਣਿ ਰਬ ਦੀ ਝੂਰੇਦੀ ਝੂਰੇਇ ॥੬੨॥",
+        "textSha256": "4a7fb6c8760744ac4ebd201256576be4a57447c7937e4f82bfd45db1b66b9731"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਜਾਂ ਕੁਆਰੀ ਤਾ ਚਾਉ ਵੀਵਾਹੀ ਤਾਂ ਮਾਮਲੇ ॥",
+        "textSha256": "3bd092352347bfcf439a189bd3fcd402cc625f253a0909e4172e9fea1fb29a98"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਏਹੋ ਪਛੋਤਾਉ ਵਤਿ ਕੁਆਰੀ ਨ ਥੀਐ ॥੬੩॥",
+        "textSha256": "3e9481a54340b04f5cf34d81b411f904228940ca6929e814ad3122a46603a8c6"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਕਲਰ ਕੇਰੀ ਛਪੜੀ ਆਇ ਉਲਥੇ ਹੰਝ ॥",
+        "textSha256": "c9b63d66015726bac75fab5f5907d6af14aba13962708151cd318eb0a5498be0"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 3,
+        "text": "ਚਿੰਜੂ ਬੋੜਨੑਿ ਨਾ ਪੀਵਹਿ ਉਡਣ ਸੰਦੀ ਡੰਝ ॥੬੪॥",
+        "textSha256": "db901a9fd13299457d70914a3f51cf4d841b0ca4a0cab75c9ced826912387c93"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਹੰਸੁ ਉਡਰਿ ਕੋਧ੍ਰੈ ਪਇਆ ਲੋਕੁ ਵਿਡਾਰਣਿ ਜਾਇ ॥",
+        "textSha256": "cdbca79b1971693129f174cfe1b0d8bf5ec5b5b3c6874cf42ab645e2a19e7d96"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਗਹਿਲਾ ਲੋਕੁ ਨ ਜਾਣਦਾ ਹੰਸੁ ਨ ਕੋਧ੍ਰਾ ਖਾਇ ॥੬੫॥",
+        "textSha256": "7226d179a93b9929b8790a0b97aae70e5403d4830c1c2c61ab9fb1e3e55cb734"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਚਲਿ ਚਲਿ ਗਈਆਂ ਪੰਖੀਆਂ ਜਿਨੑੀ ਵਸਾਏ ਤਲ ॥",
+        "textSha256": "bc6167134eaf121c8cb8ac559a4c18f538f6498fe407c47bd03a1ed4873f3612"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਸਰੁ ਭਰਿਆ ਭੀ ਚਲਸੀ ਥਕੇ ਕਵਲ ਇਕਲ ॥੬੬॥",
+        "textSha256": "b6c45b77e6130b5d121ec9f1be9dab36eeb5c3716c31dc05926f7b65726a8fc8"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਇਟ ਸਿਰਾਣੇ ਭੁਇ ਸਵਣੁ ਕੀੜਾ ਲੜਿਓ ਮਾਸਿ ॥",
+        "textSha256": "12af48596d627498fc0f44fc9f72e3880b2989e577640d5ace9b62382dc1edcb"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਕੇਤੜਿਆ ਜੁਗ ਵਾਪਰੇ ਇਕਤੁ ਪਇਆ ਪਾਸਿ ॥੬੭॥",
+        "textSha256": "c7abd58a6c684a7d5b40d74422cf06d84c8f5d3ab1a26ff7a4a590dd1968e1a0"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਭੰਨੀ ਘੜੀ ਸਵੰਨਵੀ ਟੁਟੀ ਨਾਗਰ ਲਜੁ ॥",
+        "textSha256": "340e6340c16f135ab78771c8d58ea40f44746ca7d8a25bddc83ee5bdec59f151"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਅਜਰਾਈਲੁ ਫਰੇਸਤਾ ਕੈ ਘਰਿ ਨਾਠੀ ਅਜੁ ॥੬੮॥",
+        "textSha256": "09c6e5d02477828e247784681c9ea3843ed47ff97e315039b8824e284c161981"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਭੰਨੀ ਘੜੀ ਸਵੰਨਵੀ ਟੂਟੀ ਨਾਗਰ ਲਜੁ ॥",
+        "textSha256": "cba8ca04e326c8a9c8ed01095cc9855c7d13f191a45c5b6412078b74bc8c4ebe"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਜੋ ਸਜਣ ਭੁਇ ਭਾਰੁ ਥੇ ਸੇ ਕਿਉ ਆਵਹਿ ਅਜੁ ॥੬੯॥",
+        "textSha256": "02ee91b015c458b131032a672fc6ab94567aa60ff662006c917f62819a406ff0"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਬੇ ਨਿਵਾਜਾ ਕੁਤਿਆ ਏਹ ਨ ਭਲੀ ਰੀਤਿ ॥",
+        "textSha256": "c83dbcc33576484a32afec6e092fa16df3f08b7eaa1cfe1324e50a2c53095533"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 2,
+        "text": "ਕਬਹੀ ਚਲਿ ਨ ਆਇਆ ਪੰਜੇ ਵਖਤ ਮਸੀਤਿ ॥੭੦॥",
+        "textSha256": "1bdfa20e3d8e9007c68ee1c1644c43557bd4cd86e817889745a7d45155eaf5ac"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਉਠੁ ਫਰੀਦਾ ਉਜੂ ਸਾਜਿ ਸੁਬਹ ਨਿਵਾਜ ਗੁਜਾਰਿ ॥",
+        "textSha256": "8f7a00ef31534b12e88454b66f3e660eebaa3b2d26d211bcfb03c5a63cf0b972"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਜੋ ਸਿਰੁ ਸਾਂਈ ਨਾ ਨਿਵੈ ਸੋ ਸਿਰੁ ਕਪਿ ਉਤਾਰਿ ॥੭੧॥",
+        "textSha256": "afc633329415a43e8daead2eb993096b41daa74c61d60661f027ecc47189aaa8"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਜੋ ਸਿਰੁ ਸਾਈ ਨਾ ਨਿਵੈ ਸੋ ਸਿਰੁ ਕੀਜੈ ਕਾਂਇ ॥",
+        "textSha256": "4cbd5fd085e76b9f46d4584486c85139ff41948e9b52f9474a0b319ac23e389d"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਕੁੰਨੇ ਹੇਠਿ ਜਲਾਈਐ ਬਾਲਣ ਸੰਦੈ ਥਾਇ ॥੭੨॥",
+        "textSha256": "256b271129870a965f1b50f96eea1cdd7d6f95a32a1f2333d93ad384ffeacdb0"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਕਿਥੈ ਤੈਡੇ ਮਾਪਿਆ ਜਿਨੑੀ ਤੂ ਜਣਿਓਹਿ ॥",
+        "textSha256": "11c79128170ef21857c350213f5ef617e990b72292a01df06c78b56951d6aba9"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਤੈ ਪਾਸਹੁ ਓਇ ਲਦਿ ਗਏ ਤੂੰ ਅਜੈ ਨ ਪਤੀਣੋਹਿ ॥੭੩॥",
+        "textSha256": "2af0df00eacf1541c6f51b3fac07fd731e57ab6fb37a9e0df9fac46f02dd8755"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਮਨੁ ਮੈਦਾਨੁ ਕਰਿ ਟੋਏ ਟਿਬੇ ਲਾਹਿ ॥",
+        "textSha256": "9fa77b214e1c3401d629bdd64dbe7d401bff163186b23c885247836040195b9c"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਅਗੈ ਮੂਲਿ ਨ ਆਵਸੀ ਦੋਜਕ ਸੰਦੀ ਭਾਹਿ ॥੭੪॥",
+        "textSha256": "9b4a1b06d64174e4a9e8d395d4342af2e95869091e9b323783319fcaf9f9cf30"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਮਹਲਾ ੫ ॥",
+        "textSha256": "b90ddc052e1b4657e2dcbb42f9ec26ad5a24afaea4cbf73bf9063383cbd3ea0c"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਖਾਲਕੁ ਖਲਕ ਮਹਿ ਖਲਕ ਵਸੈ ਰਬ ਮਾਹਿ ॥",
+        "textSha256": "397a0328f4d849cd247ac78a4225690d93de898a22cd73c038ba2e48f347c2b1"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 3,
+        "text": "ਮੰਦਾ ਕਿਸ ਨੋ ਆਖੀਐ ਜਾਂ ਤਿਸੁ ਬਿਨੁ ਕੋਈ ਨਾਹਿ ॥੭੫॥",
+        "textSha256": "53956df5328d19cc98f13d9ec7808abd05a376a309b2fa417b251590b7344e75"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜਿ ਦਿਹਿ ਨਾਲਾ ਕਪਿਆ ਜੇ ਗਲੁ ਕਪਹਿ ਚੁਖ ॥",
+        "textSha256": "90740852ae116efe4f8bcbd46ba5b525429ab544f258b9c816c7520ad0790ad4"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਪਵਨਿ ਨ ਇਤੀ ਮਾਮਲੇ ਸਹਾਂ ਨ ਇਤੀ ਦੁਖ ॥੭੬॥",
+        "textSha256": "e12aaf131fd508781467bb559756547b311127a5808ef406000b58ec64844042"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਚਬਣ ਚਲਣ ਰਤੰਨ ਸੇ ਸੁਣੀਅਰ ਬਹਿ ਗਏ ॥",
+        "textSha256": "6fc62258ac2f9c7739db92729c06965a6f380f29b1378805a5749e54cece7292"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 40,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਹੇੜੇ ਮੁਤੀ ਧਾਹ ਸੇ ਜਾਨੀ ਚਲਿ ਗਏ ॥੭੭॥",
+        "textSha256": "d22a881285876a33538b84b9dc630c2855d3398f9060681c5d6526486db80a41"
+      },
+      {
+        "sourceAng": 1381,
+        "sourcePath": "corpus/ang-1381.md",
+        "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+        "sourceOrdinal": 41,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 3,
+        "text": "ਫਰੀਦਾ ਬੁਰੇ ਦਾ ਭਲਾ ਕਰਿ ਗੁਸਾ ਮਨਿ ਨ ਹਢਾਇ ॥",
+        "textSha256": "81ce3d097a9e29bc07fd79979edfd4d86d322f2c4963a0cd960289a79f85da36"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਦੇਹੀ ਰੋਗੁ ਨ ਲਗਈ ਪਲੈ ਸਭੁ ਕਿਛੁ ਪਾਇ ॥੭੮॥",
+        "textSha256": "137945b1236e9d05f5689ad00577aa7974be4bf6991c836ea02b6db046ae7a32"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਪੰਖ ਪਰਾਹੁਣੀ ਦੁਨੀ ਸੁਹਾਵਾ ਬਾਗੁ ॥",
+        "textSha256": "dacd535324e297530dfc32d6458df768e5827d7f22321325d53f884f4ec88fdd"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਨਉਬਤਿ ਵਜੀ ਸੁਬਹ ਸਿਉ ਚਲਣ ਕਾ ਕਰਿ ਸਾਜੁ ॥੭੯॥",
+        "textSha256": "8aa927d53a928e1aa21459ff31599e6294ec6fa8c9d50d1a6fa90bcca9ce984b"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਰਾਤਿ ਕਥੂਰੀ ਵੰਡੀਐ ਸੁਤਿਆ ਮਿਲੈ ਨ ਭਾਉ ॥",
+        "textSha256": "64d5e34a7c78094269fbf98aaf6d0d0e40c7fc6782a9a85e0173e8a74f6fc2cf"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਜਿੰਨੑਾ ਨੈਣ ਨਂੀਦ੍ਰਾਵਲੇ ਤਿੰਨੑਾ ਮਿਲਣੁ ਕੁਆਉ ॥੮੦॥",
+        "textSha256": "f53f9ce2455f81b7d3714a0102e1d21b09d6d256ea949aa5a939cc09eccfdebe"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਮੈ ਜਾਨਿਆ ਦੁਖੁ ਮੁਝ ਕੂ ਦੁਖੁ ਸਬਾਇਐ ਜਗਿ ॥",
+        "textSha256": "d7fbdc442a25732fdd0d31b20b2a00641be37410920f5b783eb8d2b0afab183c"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਊਚੇ ਚੜਿ ਕੈ ਦੇਖਿਆ ਤਾਂ ਘਰਿ ਘਰਿ ਏਹਾ ਅਗਿ ॥੮੧॥",
+        "textSha256": "d64bfa345084b3f082404afb35a9253ad33c1b0f4d17e5d06c5aed7da8c50777"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਮਹਲਾ ੫ ॥",
+        "textSha256": "b90ddc052e1b4657e2dcbb42f9ec26ad5a24afaea4cbf73bf9063383cbd3ea0c"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਭੂਮਿ ਰੰਗਾਵਲੀ ਮੰਝਿ ਵਿਸੂਲਾ ਬਾਗ ॥",
+        "textSha256": "0b4fd5a768ff717334458c4e1d866145275ffe77a7bf874c537dc4a0136e0454"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਜੋ ਜਨ ਪੀਰਿ ਨਿਵਾਜਿਆ ਤਿੰਨੑਾ ਅੰਚ ਨ ਲਾਗ ॥੮੨॥",
+        "textSha256": "78b4933cedebde18fa50830496a1139fb249aab9a30720f2c6c54e79b5c9395e"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਮਹਲਾ ੫ ॥",
+        "textSha256": "b90ddc052e1b4657e2dcbb42f9ec26ad5a24afaea4cbf73bf9063383cbd3ea0c"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਉਮਰ ਸੁਹਾਵੜੀ ਸੰਗਿ ਸੁਵੰਨੜੀ ਦੇਹ ॥",
+        "textSha256": "dd2aaec3a350ed3d48a8222271f7876b262c88c4d2b16b1d5bcab241df4d79e4"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 3,
+        "text": "ਵਿਰਲੇ ਕੇਈ ਪਾਈਅਨਿ ਜਿੰਨੑਾ ਪਿਆਰੇ ਨੇਹ ॥੮੩॥",
+        "textSha256": "bb0565bbafc73913454bcc5d2b85bd9d4a00bf9a3a00145c450911f9c652da44"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਕੰਧੀ ਵਹਣ ਨ ਢਾਹਿ ਤਉ ਭੀ ਲੇਖਾ ਦੇਵਣਾ ॥",
+        "textSha256": "be3b4ecc99ac7112479d2a1aaf19e97ff99d6c8b100fcf14710cf55ac0505b68"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਜਿਧਰਿ ਰਬ ਰਜਾਇ ਵਹਣੁ ਤਿਦਾਊ ਗੰਉ ਕਰੇ ॥੮੪॥",
+        "textSha256": "eab88fc1e18ac5fc260efc7daad5f285ace176a145457c204ed9564bb90b23bc"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 3,
+        "text": "ਫਰੀਦਾ ਡੁਖਾ ਸੇਤੀ ਦਿਹੁ ਗਇਆ ਸੂਲਾਂ ਸੇਤੀ ਰਾਤਿ ॥",
+        "textSha256": "490530bd078816232a093c85cf2a176b52cd9454b588f22ed8903ef8a2ecb3df"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਖੜਾ ਪੁਕਾਰੇ ਪਾਤਣੀ ਬੇੜਾ ਕਪਰ ਵਾਤਿ ॥੮੫॥",
+        "textSha256": "fcacf06e86cb943c98620aca976c6b81016fe591e3c8edcdb60905d1855caba7"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਲੰਮੀ ਲੰਮੀ ਨਦੀ ਵਹੈ ਕੰਧੀ ਕੇਰੈ ਹੇਤਿ ॥",
+        "textSha256": "1bf0752c6061bd8c320f0e4295e8bba5420cce99783c2146795f531cc9d5a9ea"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਬੇੜੇ ਨੋ ਕਪਰੁ ਕਿਆ ਕਰੇ ਜੇ ਪਾਤਣ ਰਹੈ ਸੁਚੇਤਿ ॥੮੬॥",
+        "textSha256": "b2c655466925a9cf8c8affb615281aa22d13c50d715fbb62dc340097781d61d2"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਗਲਂੀ ਸੁ ਸਜਣ ਵੀਹ ਇਕੁ ਢੂੰਢੇਦੀ ਨ ਲਹਾਂ ॥",
+        "textSha256": "ef2f861b93908964e0b43f36860d3e4d7264de5500d058b0faba36d1016f76aa"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਧੁਖਾਂ ਜਿਉ ਮਾਂਲੀਹ ਕਾਰਣਿ ਤਿੰਨੑਾ ਮਾ ਪਿਰੀ ॥੮੭॥",
+        "textSha256": "06fc367c596d0f6fe236112867a4b857ca100c7b82dba5f32255b08cf5df4a54"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਇਹੁ ਤਨੁ ਭਉਕਣਾ ਨਿਤ ਨਿਤ ਦੁਖੀਐ ਕਉਣੁ ॥",
+        "textSha256": "ef7ecc24c62f29cb8979a5074f18ef75629aa8f36b30863de01e224a856f73a9"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਕੰਨੀ ਬੁਜੇ ਦੇ ਰਹਾਂ ਕਿਤੀ ਵਗੈ ਪਉਣੁ ॥੮੮॥",
+        "textSha256": "9c736c3349944b6d11f8972c3dc3ad1fee209cf09918afef4017f66f1f93f2fb"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਰਬ ਖਜੂਰੀ ਪਕੀਆਂ ਮਾਖਿਅ ਨਈ ਵਹੰਨੑਿ ॥",
+        "textSha256": "7eca958d770942168aeedcd101ccbde5f14fdace8564eaa8e198169d1f040461"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਜੋ ਜੋ ਵੰਞੈਂ ਡੀਹੜਾ ਸੋ ਉਮਰ ਹਥ ਪਵੰਨਿ ॥੮੯॥",
+        "textSha256": "092e351502c7d55b438ace58c7e5413aa1945659a0cf166605499f2d1c3a4c66"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਤਨੁ ਸੁਕਾ ਪਿੰਜਰੁ ਥੀਆ ਤਲੀਆਂ ਖੂੰਡਹਿ ਕਾਗ ॥",
+        "textSha256": "0ce05f60b7da5a51024630f4f75d0d71565e7de07861d483b942a701e1e195e3"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਅਜੈ ਸੁ ਰਬੁ ਨ ਬਾਹੁੜਿਓ ਦੇਖੁ ਬੰਦੇ ਕੇ ਭਾਗ ॥੯੦॥",
+        "textSha256": "5fe34279c87294a19fc99b21736f060ac38ce206d6fc23b9b6f8fb07c3942f7c"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਕਾਗਾ ਕਰੰਗ ਢੰਢੋਲਿਆ ਸਗਲਾ ਖਾਇਆ ਮਾਸੁ ॥",
+        "textSha256": "879c779d5acaaf2fd9bebea1c805ac94d3454acf8293cd3b01338cf019ca14c3"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਏ ਦੁਇ ਨੈਨਾ ਮਤਿ ਛੁਹਉ ਪਿਰ ਦੇਖਨ ਕੀ ਆਸ ॥੯੧॥",
+        "textSha256": "3ba177a648d338a25d77ece37ec780d0fb793139775102bc7881532b249e955a"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਕਾਗਾ ਚੂੰਡਿ ਨ ਪਿੰਜਰਾ ਬਸੈ ਤ ਉਡਰਿ ਜਾਹਿ ॥",
+        "textSha256": "87d9d3d7aba7145bac3cca85f75e9e81f29c4989078322bd9ff7562f5dd59d55"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਜਿਤੁ ਪਿੰਜਰੈ ਮੇਰਾ ਸਹੁ ਵਸੈ ਮਾਸੁ ਨ ਤਿਦੂ ਖਾਹਿ ॥੯੨॥",
+        "textSha256": "c889ffe50cbec396d37765f71d248ad19c44496825d1043687140b78c3d5040c"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਗੋਰ ਨਿਮਾਣੀ ਸਡੁ ਕਰੇ ਨਿਘਰਿਆ ਘਰਿ ਆਉ ॥",
+        "textSha256": "9d0e0399ebe255eab1b6b4ac8128a2bfaf1b64a36a3fda95586eaeb430b6c27c"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਸਰਪਰ ਮੈਥੈ ਆਵਣਾ ਮਰਣਹੁ ਨਾ ਡਰਿਆਹੁ ॥੯੩॥",
+        "textSha256": "0b28777a510535807d6f7a037207754895c24e3b021201a71f93b7e8db73d913"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਏਨੀ ਲੋਇਣੀ ਦੇਖਦਿਆ ਕੇਤੀ ਚਲਿ ਗਈ ॥",
+        "textSha256": "cde433e9ceff796e867d33ba6be880177b50a4024f6eee7aead20484daad83f0"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਲੋਕਾਂ ਆਪੋ ਆਪਣੀ ਮੈ ਆਪਣੀ ਪਈ ॥੯੪॥",
+        "textSha256": "299b0bb3010663add5197cc201a61de1734260991a0be55a0deed8ee60d49562"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਆਪੁ ਸਵਾਰਹਿ ਮੈ ਮਿਲਹਿ ਮੈ ਮਿਲਿਆ ਸੁਖੁ ਹੋਇ ॥",
+        "textSha256": "7517be20b53a4319d1bf388abb0e2a2517de0c2cb605d40a3f69299868930391"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਜੇ ਤੂ ਮੇਰਾ ਹੋਇ ਰਹਹਿ ਸਭੁ ਜਗੁ ਤੇਰਾ ਹੋਇ ॥੯੫॥",
+        "textSha256": "1e3ce51e6a21820409be8cae2e65c5e9e378bb72128139aa95ce694d7c539c8e"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਕੰਧੀ ਉਤੈ ਰੁਖੜਾ ਕਿਚਰਕੁ ਬੰਨੈ ਧੀਰੁ ॥",
+        "textSha256": "61d522a629f7eed098ad704ddbd93e1775a1c9ce5a620c375a2038457301bb42"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਕਚੈ ਭਾਂਡੈ ਰਖੀਐ ਕਿਚਰੁ ਤਾਈ ਨੀਰੁ ॥੯੬॥",
+        "textSha256": "49df84247b7927d9b052304b7533f47c4b622cda41ad9e8dfa0de617276358c2"
+      },
+      {
+        "sourceAng": 1382,
+        "sourcePath": "corpus/ang-1382.md",
+        "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+        "sourceOrdinal": 40,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਮਹਲ ਨਿਸਖਣ ਰਹਿ ਗਏ ਵਾਸਾ ਆਇਆ ਤਲਿ ॥",
+        "textSha256": "5345cb1cbcd508b84f9af89b6499ee5f8b24c09a58b9f91bec0b3ce38d5f81dd"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਗੋਰਾਂ ਸੇ ਨਿਮਾਣੀਆ ਬਹਸਨਿ ਰੂਹਾਂ ਮਲਿ ॥",
+        "textSha256": "d612345d1558eecefa9ed78f11faf5a16daf69f9e23218bebe91051c12df4f99"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਆਖੀਂ ਸੇਖਾ ਬੰਦਗੀ ਚਲਣੁ ਅਜੁ ਕਿ ਕਲਿ ॥੯੭॥",
+        "textSha256": "eb2635c8b9db283ddd273aa60c845060e3cd66aeff4511afb2d05f4ee42b178b"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਮਉਤੈ ਦਾ ਬੰਨਾ ਏਵੈ ਦਿਸੈ ਜਿਉ ਦਰੀਆਵੈ ਢਾਹਾ ॥",
+        "textSha256": "c1f7715aff55e2203b5c6a88f2c212c397dc52af9a601b31a1f51d7b8a2600a0"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਅਗੈ ਦੋਜਕੁ ਤਪਿਆ ਸੁਣੀਐ ਹੂਲ ਪਵੈ ਕਾਹਾਹਾ ॥",
+        "textSha256": "ebc1dc7705c3f1cbfcf502cfb10014a87b35a693d0ccfe458c6ac1f0b8153ac0"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਇਕਨਾ ਨੋ ਸਭ ਸੋਝੀ ਆਈ ਇਕਿ ਫਿਰਦੇ ਵੇਪਰਵਾਹਾ ॥",
+        "textSha256": "fb604957da3cc011c6c046c03473a821ebbe951b1a9d3dd5c111d3b31452d9af"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 2,
+        "text": "ਅਮਲ ਜਿ ਕੀਤਿਆ ਦੁਨੀ ਵਿਚਿ ਸੇ ਦਰਗਹ ਓਗਾਹਾ ॥੯੮॥",
+        "textSha256": "f7e8ad303107234dd92d34d77b92355876579c79e689bbe7d9363f6c85c5fa6a"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਦਰੀਆਵੈ ਕੰਨੑੈ ਬਗੁਲਾ ਬੈਠਾ ਕੇਲ ਕਰੇ ॥",
+        "textSha256": "82abe67e824aa095e03021f2974544cf8fbee284d06e88a8360f9b92dfe1280f"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਕੇਲ ਕਰੇਦੇ ਹੰਝ ਨੋ ਅਚਿੰਤੇ ਬਾਜ ਪਏ ॥",
+        "textSha256": "fd21e52e91ff8992c433e31740dcb8c7cbc95ed957d28635690a02dedf8370b2"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 3,
+        "text": "ਬਾਜ ਪਏ ਤਿਸੁ ਰਬ ਦੇ ਕੇਲਾਂ ਵਿਸਰੀਆਂ ॥",
+        "textSha256": "02f7dc55596152caf7450acd82ca766d3c6bc30c7e6be157877ab98b0797f896"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਜੋ ਮਨਿ ਚਿਤਿ ਨ ਚੇਤੇ ਸਨਿ ਸੋ ਗਾਲੀ ਰਬ ਕੀਆਂ ॥੯੯॥",
+        "textSha256": "6b220af66ad6f27bb388d8069db256c85d7af5578231ef6957bbfd10124ba07c"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਸਾਢੇ ਤ੍ਰੈ ਮਣ ਦੇਹੁਰੀ ਚਲੈ ਪਾਣੀ ਅੰਨਿ ॥",
+        "textSha256": "bc7d1decc56a6b150754f01775c9efa81b133488ef85fac7c7637cb18d51b8c1"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਆਇਓ ਬੰਦਾ ਦੁਨੀ ਵਿਚਿ ਵਤਿ ਆਸੂਣੀ ਬੰਨੑਿ ॥",
+        "textSha256": "ecc65a2d199ca18fbf6f9b026d3d03a34703569ae3e1b3628104d2a185c3b9fd"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਮਲਕਲ ਮਉਤ ਜਾਂ ਆਵਸੀ ਸਭ ਦਰਵਾਜੇ ਭੰਨਿ ॥",
+        "textSha256": "79864d0ffa4981103184ca3dc3b7c08d3da7c71f54f5747e90289f5a8f5d004a"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਤਿਨੑਾ ਪਿਆਰਿਆ ਭਾਈਆਂ ਅਗੈ ਦਿਤਾ ਬੰਨੑਿ ॥",
+        "textSha256": "84b7cd9a6509e688ce84b1a422d4c1b3fa163b801173ade99bab977187710111"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਵੇਖਹੁ ਬੰਦਾ ਚਲਿਆ ਚਹੁ ਜਣਿਆ ਦੈ ਕੰਨੑਿ ॥",
+        "textSha256": "f26979a074fb864786bbfa3bf9388b413607be3622e1ca59cac1ff929e5ecc0e"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਅਮਲ ਜਿ ਕੀਤੇ ਦੁਨੀ ਵਿਚਿ ਦਰਗਹ ਆਏ ਕੰਮਿ ॥੧੦੦॥",
+        "textSha256": "7aa8c7f42da3d23a782542fb13cb04ca5f02257e7fa767045c670efc177c22ee"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਹਉ ਬਲਿਹਾਰੀ ਤਿਨੑ ਪੰਖੀਆ ਜੰਗਲਿ ਜਿੰਨੑਾ ਵਾਸੁ ॥",
+        "textSha256": "19418e5d2969ac31788be3ab15251768dc2eecd849fab3ad39b5eaeaea6668e3"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਕਕਰੁ ਚੁਗਨਿ ਥਲਿ ਵਸਨਿ ਰਬ ਨ ਛੋਡਨਿ ਪਾਸੁ ॥੧੦੧॥",
+        "textSha256": "166cbc4899e03bc6d5a3fda9036a18a0d55f44fcc1d29b066314463dc1d343af"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਰੁਤਿ ਫਿਰੀ ਵਣੁ ਕੰਬਿਆ ਪਤ ਝੜੇ ਝੜਿ ਪਾਹਿ ॥",
+        "textSha256": "d06728f2dcea336a3ca99aa02a843efa4434f0564265bad7d0350ed4e80aa934"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਚਾਰੇ ਕੁੰਡਾ ਢੂੰਢੀਆਂ ਰਹਣੁ ਕਿਥਾਊ ਨਾਹਿ ॥੧੦੨॥",
+        "textSha256": "51394012af9a6eaf5a309774d0825faf69a67e91d881a1560564b40e252dfcde"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਪਾੜਿ ਪਟੋਲਾ ਧਜ ਕਰੀ ਕੰਬਲੜੀ ਪਹਿਰੇਉ ॥",
+        "textSha256": "716e8230caf764da2a61175374d4ec21eaf80638c0bb9e4b862579a32414c0c1"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਜਿਨੑੀ ਵੇਸੀ ਸਹੁ ਮਿਲੈ ਸੇਈ ਵੇਸ ਕਰੇਉ ॥੧੦੩॥",
+        "textSha256": "2ee56f202407600d8d227e66a7e02ac55e24ffbda2991b65e32807d8ec6e81fa"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਮਃ ੩ ॥",
+        "textSha256": "0f6258f8e0639b8a51f7d01a422ce900a40e1c465638f94dacc25273e9575905"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 3,
+        "text": "ਕਾਇ ਪਟੋਲਾ ਪਾੜਤੀ ਕੰਬਲੜੀ ਪਹਿਰੇਇ ॥",
+        "textSha256": "17a527d909ef22bd412684eff67d684ed22413bf6766538789552eef387f923c"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਨਾਨਕ ਘਰ ਹੀ ਬੈਠਿਆ ਸਹੁ ਮਿਲੈ ਜੇ ਨੀਅਤਿ ਰਾਸਿ ਕਰੇਇ ॥੧੦੪॥",
+        "textSha256": "c34197b7e3a31849a6a1a46c4e43c2845379acec62438d2ae86ac2bbb85713d9"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੫ ॥",
+        "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਗਰਬੁ ਜਿਨੑਾ ਵਡਿਆਈਆ ਧਨਿ ਜੋਬਨਿ ਆਗਾਹ ॥",
+        "textSha256": "0ff802c5a7ed5cacd75c5bedd1ab841c22db3ef922fd556394bd8b54fbc8e7b0"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 3,
+        "text": "ਖਾਲੀ ਚਲੇ ਧਣੀ ਸਿਉ ਟਿਬੇ ਜਿਉ ਮੀਹਾਹੁ ॥੧੦੫॥",
+        "textSha256": "b1ac1ec67aabe39b03161876aaeb65066f10797c7c93c53ead13cc70dc10932e"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਤਿਨਾ ਮੁਖ ਡਰਾਵਣੇ ਜਿਨਾ ਵਿਸਾਰਿਓਨੁ ਨਾਉ ॥",
+        "textSha256": "0c84992c97f1fd07f67df5a7d5112406cdbcd9839e8c7e387f74797e5f0c42b4"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਐਥੈ ਦੁਖ ਘਣੇਰਿਆ ਅਗੈ ਠਉਰ ਨ ਠਾਉ ॥੧੦੬॥",
+        "textSha256": "8f83fd9166785c49fde54ed560c33c2ea4f54ad261331769fbc3ddab7d3aceab"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਪਿਛਲ ਰਾਤਿ ਨ ਜਾਗਿਓਹਿ ਜੀਵਦੜੋ ਮੁਇਓਹਿ ॥",
+        "textSha256": "c087ceec10773f254ccc41ecf76a9b638fb62b751bb07f1ee7027d37b51b2f3c"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਜੇ ਤੈ ਰਬੁ ਵਿਸਾਰਿਆ ਤ ਰਬਿ ਨ ਵਿਸਰਿਓਹਿ ॥੧੦੭॥",
+        "textSha256": "adba7834a92774a74fe5774d08312431f51d46f1110fae9971a2bc2d119bebe5"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੫ ॥",
+        "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਕੰਤੁ ਰੰਗਾਵਲਾ ਵਡਾ ਵੇਮੁਹਤਾਜੁ ॥",
+        "textSha256": "323879243ba7f55ecdca35088bcae950c67e336ce4a3fc83f644f9970f4e72a2"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 3,
+        "text": "ਅਲਹ ਸੇਤੀ ਰਤਿਆ ਏਹੁ ਸਚਾਵਾਂ ਸਾਜੁ ॥੧੦੮॥",
+        "textSha256": "b7d50c40c9cb97d33a07ddd78af29ee497148264bba7ab2d4c759057a7af92f4"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੫ ॥",
+        "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦੁਖੁ ਸੁਖੁ ਇਕੁ ਕਰਿ ਦਿਲ ਤੇ ਲਾਹਿ ਵਿਕਾਰੁ ॥",
+        "textSha256": "701723011e39769e6e4be071ebe01d068384befe414bc8a4883cc276c61dbcbd"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 3,
+        "text": "ਅਲਹ ਭਾਵੈ ਸੋ ਭਲਾ ਤਾਂ ਲਭੀ ਦਰਬਾਰੁ ॥੧੦੯॥",
+        "textSha256": "54b9ba1183c589ba718b55aea367a83572965304b41d31059c883212528e0356"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੫ ॥",
+        "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 40,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦੁਨੀ ਵਜਾਈ ਵਜਦੀ ਤੂੰ ਭੀ ਵਜਹਿ ਨਾਲਿ ॥",
+        "textSha256": "9834ad0cad9af89eb3776fff63829508d5429051aeedc1ccc859017a39224b30"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 41,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 3,
+        "text": "ਸੋਈ ਜੀਉ ਨ ਵਜਦਾ ਜਿਸੁ ਅਲਹੁ ਕਰਦਾ ਸਾਰ ॥੧੧੦॥",
+        "textSha256": "d2f950c4623be7b57fa7ec0befe70b3c263303bd90de7f91626bc4baa291297e"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 42,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਮਃ ੫ ॥",
+        "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+      },
+      {
+        "sourceAng": 1383,
+        "sourcePath": "corpus/ang-1383.md",
+        "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+        "sourceOrdinal": 43,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 2,
+        "text": "ਫਰੀਦਾ ਦਿਲੁ ਰਤਾ ਇਸੁ ਦੁਨੀ ਸਿਉ ਦੁਨੀ ਨ ਕਿਤੈ ਕੰਮਿ ॥",
+        "textSha256": "dd9f2017a98e230cfcb1e92b94d7432a64cd13ef26e93cc0493a54e3d81b69c1"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 1,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 1,
+        "text": "ਮਿਸਲ ਫਕੀਰਾਂ ਗਾਖੜੀ ਸੁ ਪਾਈਐ ਪੂਰ ਕਰੰਮਿ ॥੧੧੧॥",
+        "textSha256": "98d4f3b3837494a874564862aa47139adbd75cee9da2c62043cad3faa4e047c6"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਪਹਿਲੈ ਪਹਰੈ ਫੁਲੜਾ ਫਲੁ ਭੀ ਪਛਾ ਰਾਤਿ ॥",
+        "textSha256": "5e1d839df90801c503975572d21ab9c8038a5b69ab920830180e6decc0d2144e"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 3,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 1,
+        "text": "ਜੋ ਜਾਗੰਨੑਿ ਲਹੰਨਿ ਸੇ ਸਾਈ ਕੰਨੋ ਦਾਤਿ ॥੧੧੨॥",
+        "textSha256": "9bc46fac3f2a5401f63c43275c9ca06e5224d299628c326abaa4b8962814f9a9"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 4,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 2,
+        "text": "ਦਾਤੀ ਸਾਹਿਬ ਸੰਦੀਆ ਕਿਆ ਚਲੈ ਤਿਸੁ ਨਾਲਿ ॥",
+        "textSha256": "a8e3048d724077ec3e13db14a320e93d68cc43a5613bc1a250af744c28d608c4"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 5,
+        "sourcePrintedLine": 2,
+        "sourceWithinLine": 3,
+        "text": "ਇਕਿ ਜਾਗੰਦੇ ਨਾ ਲਹਨੑਿ ਇਕਨੑਾ ਸੁਤਿਆ ਦੇਇ ਉਠਾਲਿ ॥੧੧੩॥",
+        "textSha256": "9992364459327160bbae84fad840aee9b88fa4976328eea4143385f1b09345bd"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 6,
+        "sourcePrintedLine": 3,
+        "sourceWithinLine": 1,
+        "text": "ਢੂਢੇਦੀਏ ਸੁਹਾਗ ਕੂ ਤਉ ਤਨਿ ਕਾਈ ਕੋਰ ॥",
+        "textSha256": "5c76afb35a3e56987f7b3700184c71df51f2055860d48201099c0d53d493cd00"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 7,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 1,
+        "text": "ਜਿਨੑਾ ਨਾਉ ਸੁਹਾਗਣੀ ਤਿਨੑਾ ਝਾਕ ਨ ਹੋਰ ॥੧੧੪॥",
+        "textSha256": "9c85ca609a1c6a587c8968da0499059bd5717e53b56b2bbee738da11177b673a"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 8,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 2,
+        "text": "ਸਬਰ ਮੰਝ ਕਮਾਣ ਏ ਸਬਰੁ ਕਾ ਨੀਹਣੋ ॥",
+        "textSha256": "7da2abb99d94a8c33b04f87f0a610687fd3aea91695c90761681ac5d121cab0f"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 9,
+        "sourcePrintedLine": 4,
+        "sourceWithinLine": 3,
+        "text": "ਸਬਰ ਸੰਦਾ ਬਾਣੁ ਖਾਲਕੁ ਖਤਾ ਨ ਕਰੀ ॥੧੧੫॥",
+        "textSha256": "8f1430ae5935e60036bac78096c288153f9fa1b440e1f01e6b995d5352e7a121"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 10,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 1,
+        "text": "ਸਬਰ ਅੰਦਰਿ ਸਾਬਰੀ ਤਨੁ ਏਵੈ ਜਾਲੇਨੑਿ ॥",
+        "textSha256": "f9ba118a5fd7ca70fefa1d63f32be02ac7d866a8ae12d448527d2186445b894c"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 11,
+        "sourcePrintedLine": 5,
+        "sourceWithinLine": 2,
+        "text": "ਹੋਨਿ ਨਜੀਕਿ ਖੁਦਾਇ ਦੈ ਭੇਤੁ ਨ ਕਿਸੈ ਦੇਨਿ ॥੧੧੬॥",
+        "textSha256": "e43ee85f1156c5dc150244adfa51849305f80133d02480b11656afd4e91c9aed"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 12,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 1,
+        "text": "ਸਬਰੁ ਏਹੁ ਸੁਆਉ ਜੇ ਤੂੰ ਬੰਦਾ ਦਿੜੁ ਕਰਹਿ ॥",
+        "textSha256": "136c569e45040c5066df969e55032ad2fa44963344f47557907c5cde7156fc81"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 13,
+        "sourcePrintedLine": 6,
+        "sourceWithinLine": 2,
+        "text": "ਵਧਿ ਥੀਵਹਿ ਦਰੀਆਉ ਟੁਟਿ ਨ ਥੀਵਹਿ ਵਾਹੜਾ ॥੧੧੭॥",
+        "textSha256": "c0dbed8dc6626adfaa8f7ed55db725b5c322eb2e201023087b48c96a12fa517e"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 14,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 1,
+        "text": "ਫਰੀਦਾ ਦਰਵੇਸੀ ਗਾਖੜੀ ਚੋਪੜੀ ਪਰੀਤਿ ॥",
+        "textSha256": "f4b817f56dcdca971ebdb64aaaf1d6d8c735cba999ee1cc24a3422ede5b0df52"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 15,
+        "sourcePrintedLine": 7,
+        "sourceWithinLine": 2,
+        "text": "ਇਕਨਿ ਕਿਨੈ ਚਾਲੀਐ ਦਰਵੇਸਾਵੀ ਰੀਤਿ ॥੧੧੮॥",
+        "textSha256": "79d4cf4c6f5a29e3c08be0b7c48cf5542896c695b6cf49a8452f00021a937585"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 16,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 1,
+        "text": "ਤਨੁ ਤਪੈ ਤਨੂਰ ਜਿਉ ਬਾਲਣੁ ਹਡ ਬਲੰਨੑਿ ॥",
+        "textSha256": "bae865e91deb52a728f37889980045acb115620ea4d939c4a4ee702a4cb139b4"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 17,
+        "sourcePrintedLine": 8,
+        "sourceWithinLine": 2,
+        "text": "ਪੈਰੀ ਥਕਾਂ ਸਿਰਿ ਜੁਲਾਂ ਜੇ ਮੂੰ ਪਿਰੀ ਮਿਲੰਨੑਿ ॥੧੧੯॥",
+        "textSha256": "95d1aa93ed39ccb048dfd1238d0317db9f8f9cc9267061b6d32dbd737941ae16"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 18,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 1,
+        "text": "ਤਨੁ ਨ ਤਪਾਇ ਤਨੂਰ ਜਿਉ ਬਾਲਣੁ ਹਡ ਨ ਬਾਲਿ ॥",
+        "textSha256": "88b57d7f7101de566bb626cfccd13d55652573a155388d4b2f83bb8c18c021d5"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 19,
+        "sourcePrintedLine": 9,
+        "sourceWithinLine": 2,
+        "text": "ਸਿਰਿ ਪੈਰੀ ਕਿਆ ਫੇੜਿਆ ਅੰਦਰਿ ਪਿਰੀ ਨਿਹਾਲਿ ॥੧੨੦॥",
+        "textSha256": "556b07e9d2eb2261117c171f90c5e5c31a060a36cf11d197d5e5432a69541af0"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 20,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 1,
+        "text": "ਹਉ ਢੂਢੇਦੀ ਸਜਣਾ ਸਜਣੁ ਮੈਡੇ ਨਾਲਿ ॥",
+        "textSha256": "7ac92cb2fb405e16ff971af05373bd9bf30ee10a393f4e2acc6da6b978df702f"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 21,
+        "sourcePrintedLine": 10,
+        "sourceWithinLine": 2,
+        "text": "ਨਾਨਕ ਅਲਖੁ ਨ ਲਖੀਐ ਗੁਰਮੁਖਿ ਦੇਇ ਦਿਖਾਲਿ ॥੧੨੧॥",
+        "textSha256": "7d209e5ac820fefb1e7d22620370673695b22d8003782fd513514564a667c0f7"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 22,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 1,
+        "text": "ਹੰਸਾ ਦੇਖਿ ਤਰੰਦਿਆ ਬਗਾ ਆਇਆ ਚਾਉ ॥",
+        "textSha256": "3f46087c399d0007ad4f7558bfddb1a9091ce7d4e76e58aed8c25ca9ee5baabf"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 23,
+        "sourcePrintedLine": 11,
+        "sourceWithinLine": 2,
+        "text": "ਡੁਬਿ ਮੁਏ ਬਗ ਬਪੁੜੇ ਸਿਰੁ ਤਲਿ ਉਪਰਿ ਪਾਉ ॥੧੨੨॥",
+        "textSha256": "78e77124adec89850370a564dee4ed022ba16a046dd851a839b399fd1218acea"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 24,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 1,
+        "text": "ਮੈ ਜਾਣਿਆ ਵਡ ਹੰਸੁ ਹੈ ਤਾਂ ਮੈ ਕੀਤਾ ਸੰਗੁ ॥",
+        "textSha256": "272e8e914a7f442948abfdaca1149301becce45bcd87188ba4fe80d0c152f601"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 25,
+        "sourcePrintedLine": 12,
+        "sourceWithinLine": 2,
+        "text": "ਜੇ ਜਾਣਾ ਬਗੁ ਬਪੁੜਾ ਜਨਮਿ ਨ ਭੇੜੀ ਅੰਗੁ ॥੧੨੩॥",
+        "textSha256": "c176988af3fac19963020e1c40587c382185fdefbc11a6e630d30667ef41051f"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 26,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 1,
+        "text": "ਕਿਆ ਹੰਸੁ ਕਿਆ ਬਗੁਲਾ ਜਾ ਕਉ ਨਦਰਿ ਧਰੇ ॥",
+        "textSha256": "81cc4de1bc56d934e70cea57755ccd35712288c11d41f860fbea78efed4ffa95"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 13,
+        "sourceWithinLine": 2,
+        "text": "ਜੇ ਤਿਸੁ ਭਾਵੈ ਨਾਨਕਾ ਕਾਗਹੁ ਹੰਸੁ ਕਰੇ ॥੧੨੪॥",
+        "textSha256": "d8b4f0a4979d5a1cc1af1d68675d6cae64588c7531f9557fbaf61f7719614e01"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 28,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 1,
+        "text": "ਸਰਵਰ ਪੰਖੀ ਹੇਕੜੋ ਫਾਹੀਵਾਲ ਪਚਾਸ ॥",
+        "textSha256": "587b71ce4e51f65db2dc67aa43687e46dc189e462c6f4d7b1c9e62da4d01f842"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 29,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 2,
+        "text": "ਇਹੁ ਤਨੁ ਲਹਰੀ ਗਡੁ ਥਿਆ ਸਚੇ ਤੇਰੀ ਆਸ ॥੧੨੫॥",
+        "textSha256": "8433119d222385f4ec37e24955a5795b41f9f5c4b2449fda2e23f6603819fda6"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 30,
+        "sourcePrintedLine": 14,
+        "sourceWithinLine": 3,
+        "text": "ਕਵਣੁ ਸੁ ਅਖਰੁ ਕਵਣੁ ਗੁਣੁ ਕਵਣੁ ਸੁ ਮਣੀਆ ਮੰਤੁ ॥",
+        "textSha256": "67c89a6c33bbaf414925de9103a3704774bf9716d31fb209f87d5851ea1e397a"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 31,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਕਵਣੁ ਸੁ ਵੇਸੋ ਹਉ ਕਰੀ ਜਿਤੁ ਵਸਿ ਆਵੈ ਕੰਤੁ ॥੧੨੬॥",
+        "textSha256": "db05284c79ce0ceba15fd78a281da37e2272d99146874cd6c910afda281724a1"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 32,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 2,
+        "text": "ਨਿਵਣੁ ਸੁ ਅਖਰੁ ਖਵਣੁ ਗੁਣੁ ਜਿਹਬਾ ਮਣੀਆ ਮੰਤੁ ॥",
+        "textSha256": "28a6b400537797299739df9221491a8d622d14ee202d03d837a670966e7e7903"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 33,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 1,
+        "text": "ਏ ਤ੍ਰੈ ਭੈਣੇ ਵੇਸ ਕਰਿ ਤਾਂ ਵਸਿ ਆਵੀ ਕੰਤੁ ॥੧੨੭॥",
+        "textSha256": "8eb260a03dc2686c851ae00eddf56cea28fb89ba52715a53b9a9ec292536bf3e"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 34,
+        "sourcePrintedLine": 16,
+        "sourceWithinLine": 2,
+        "text": "ਮਤਿ ਹੋਦੀ ਹੋਇ ਇਆਣਾ ॥",
+        "textSha256": "4960d75d2c7f3d62c90555538a90ee4e2cdb1cc63354839821dd7b06550ac6e0"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 35,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 1,
+        "text": "ਤਾਣ ਹੋਦੇ ਹੋਇ ਨਿਤਾਣਾ ॥",
+        "textSha256": "dbcf541fa5a0327d80e239dc1964e884e8eff32eae610980f9c8a4e69d2d60f7"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 36,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 2,
+        "text": "ਅਣਹੋਦੇ ਆਪੁ ਵੰਡਾਏ ॥",
+        "textSha256": "3ca8e70a56875f1cdd623edeb9aabbf74507c15aa3d1c030c42a925e18180b65"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 37,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 3,
+        "text": "ਕੋ ਐਸਾ ਭਗਤੁ ਸਦਾਏ ॥੧੨੮॥",
+        "textSha256": "3fe043aa0b9b7839eef8a83d5b7e6572c543ae7a9c66e012f35652b7fc6ec6ba"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 38,
+        "sourcePrintedLine": 17,
+        "sourceWithinLine": 4,
+        "text": "ਇਕੁ ਫਿਕਾ ਨ ਗਾਲਾਇ ਸਭਨਾ ਮੈ ਸਚਾ ਧਣੀ ॥",
+        "textSha256": "a9c751e84fcc54f2ae992b384895af1ed1033d1e1e9cc48de50f8b455cd0de1a"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 39,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 1,
+        "text": "ਹਿਆਉ ਨ ਕੈਹੀ ਠਾਹਿ ਮਾਣਕ ਸਭ ਅਮੋਲਵੇ ॥੧੨੯॥",
+        "textSha256": "805a1a4fab2de7e1d7f947bd8df46fd03b4e54beaef60628775ba383c1f805a3"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 40,
+        "sourcePrintedLine": 18,
+        "sourceWithinLine": 2,
+        "text": "ਸਭਨਾ ਮਨ ਮਾਣਿਕ ਠਾਹਣੁ ਮੂਲਿ ਮਚਾਂਗਵਾ ॥",
+        "textSha256": "35f5dbc4067499e5322860cdb9b0cb813e5fc9eeef760d3924c05e87956794e2"
+      },
+      {
+        "sourceAng": 1384,
+        "sourcePath": "corpus/ang-1384.md",
+        "sourceGitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+        "sourceOrdinal": 41,
+        "sourcePrintedLine": 19,
+        "sourceWithinLine": 1,
+        "text": "ਜੇ ਤਉ ਪਿਰੀਆ ਦੀ ਸਿਕ ਹਿਆਉ ਨ ਠਾਹੇ ਕਹੀ ਦਾ ॥੧੩੦॥",
+        "textSha256": "4d3feb0999f1bf01e370565a04d12ee200f5c1695f2fec555d7982a5d93e8560"
+      }
+    ],
+    "sequenceSerialization": "UTF-8 original text joined by LF in observed source order, without final LF; no normalization",
+    "textSequenceSha256": "9ea17eeb3b5bfb0a30b6a701ac9d484bbc4438ab03adcd65367362968b4d939d",
+    "custodySha256": "8a899775799e1c7c5ba8384a81521eeabb658ab73e82ef5e74476c7f8a170827",
+    "observedNumberedEndings": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130
+    ],
+    "missingTerminalNumbers": [
+      2
+    ],
+    "duplicateTerminalNumbers": [],
+    "completeComposition": false,
+    "precedingSourceOccurrence": {
+      "sourceAng": 1377,
+      "sourcePath": "corpus/ang-1377.md",
+      "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+      "sourceOrdinal": 26,
+      "sourcePrintedLine": 14,
+      "sourceWithinLine": 1,
+      "text": "ਬੈਰਾਗੀ ਬੰਧਨੁ ਕਰੈ ਤਾ ਕੋ ਬਡੋ ਅਭਾਗੁ ॥੨੪੩॥",
+      "textSha256": "f5725dd33e97e21fe67ea11cdfeabac969dd956c31375272fd12392d1fd112ed"
+    },
+    "followingSourceOccurrence": {
+      "sourceAng": 1385,
+      "sourcePath": "corpus/ang-1385.md",
+      "sourceGitBlob": "a8d167b187efce9308feac565bba528f15cc062a",
+      "sourceOrdinal": 1,
+      "sourcePrintedLine": 1,
+      "sourceWithinLine": 1,
+      "text": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "textSha256": "9c83d0b7995531208b087fc82e87ac477f04ca2119b77365dbcf58190998b9d4"
+    },
+    "explicitMahallaHeadings": [
+      {
+        "occurrence": {
+          "sourceAng": 1378,
+          "sourcePath": "corpus/ang-1378.md",
+          "sourceGitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+          "sourceOrdinal": 21,
+          "sourcePrintedLine": 11,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੩ ॥",
+          "textSha256": "0f6258f8e0639b8a51f7d01a422ce900a40e1c465638f94dacc25273e9575905"
+        },
+        "nextObservedTerminalNumber": 13,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1380,
+          "sourcePath": "corpus/ang-1380.md",
+          "sourceGitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+          "sourceOrdinal": 24,
+          "sourcePrintedLine": 12,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੩ ॥",
+          "textSha256": "0f6258f8e0639b8a51f7d01a422ce900a40e1c465638f94dacc25273e9575905"
+        },
+        "nextObservedTerminalNumber": 52,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1381,
+          "sourcePath": "corpus/ang-1381.md",
+          "sourceGitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+          "sourceOrdinal": 34,
+          "sourcePrintedLine": 17,
+          "sourceWithinLine": 1,
+          "text": "ਮਹਲਾ ੫ ॥",
+          "textSha256": "b90ddc052e1b4657e2dcbb42f9ec26ad5a24afaea4cbf73bf9063383cbd3ea0c"
+        },
+        "nextObservedTerminalNumber": 75,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1382,
+          "sourcePath": "corpus/ang-1382.md",
+          "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+          "sourceOrdinal": 8,
+          "sourcePrintedLine": 4,
+          "sourceWithinLine": 2,
+          "text": "ਮਹਲਾ ੫ ॥",
+          "textSha256": "b90ddc052e1b4657e2dcbb42f9ec26ad5a24afaea4cbf73bf9063383cbd3ea0c"
+        },
+        "nextObservedTerminalNumber": 82,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1382,
+          "sourcePath": "corpus/ang-1382.md",
+          "sourceGitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+          "sourceOrdinal": 11,
+          "sourcePrintedLine": 6,
+          "sourceWithinLine": 1,
+          "text": "ਮਹਲਾ ੫ ॥",
+          "textSha256": "b90ddc052e1b4657e2dcbb42f9ec26ad5a24afaea4cbf73bf9063383cbd3ea0c"
+        },
+        "nextObservedTerminalNumber": 83,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1383,
+          "sourcePath": "corpus/ang-1383.md",
+          "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+          "sourceOrdinal": 23,
+          "sourcePrintedLine": 11,
+          "sourceWithinLine": 2,
+          "text": "ਮਃ ੩ ॥",
+          "textSha256": "0f6258f8e0639b8a51f7d01a422ce900a40e1c465638f94dacc25273e9575905"
+        },
+        "nextObservedTerminalNumber": 104,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1383,
+          "sourcePath": "corpus/ang-1383.md",
+          "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+          "sourceOrdinal": 26,
+          "sourcePrintedLine": 13,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੫ ॥",
+          "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+        },
+        "nextObservedTerminalNumber": 105,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1383,
+          "sourcePath": "corpus/ang-1383.md",
+          "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+          "sourceOrdinal": 33,
+          "sourcePrintedLine": 16,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੫ ॥",
+          "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+        },
+        "nextObservedTerminalNumber": 108,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1383,
+          "sourcePath": "corpus/ang-1383.md",
+          "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+          "sourceOrdinal": 36,
+          "sourcePrintedLine": 17,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੫ ॥",
+          "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+        },
+        "nextObservedTerminalNumber": 109,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1383,
+          "sourcePath": "corpus/ang-1383.md",
+          "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+          "sourceOrdinal": 39,
+          "sourcePrintedLine": 18,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੫ ॥",
+          "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+        },
+        "nextObservedTerminalNumber": 110,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      },
+      {
+        "occurrence": {
+          "sourceAng": 1383,
+          "sourcePath": "corpus/ang-1383.md",
+          "sourceGitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+          "sourceOrdinal": 42,
+          "sourcePrintedLine": 19,
+          "sourceWithinLine": 1,
+          "text": "ਮਃ ੫ ॥",
+          "textSha256": "9d17e56bcee21741255e5e4ad50881fe00ceaa5dd452bd23478ddedd132ea160"
+        },
+        "nextObservedTerminalNumber": 111,
+        "authorId": null,
+        "attributionStatus": "EXPLICIT_HEADING_OBSERVED_SCOPE_PENDING_REVIEW"
+      }
+    ],
+    "pageAuthorIsCanonicalAttribution": false,
+    "canonicalAngs": null
+  },
+  "quarantinedDiscrepancies": [
+    {
+      "id": "og-location-1377-row002",
+      "status": "OPEN_QUARANTINED",
+      "type": "SOURCE_LOCATION_AND_SEQUENCE_CONFLICT",
+      "runtimeEligible": false,
+      "automaticAuthorInclusion": false,
+      "sourceOccurrence": {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 2,
+        "sourcePrintedLine": 1,
+        "sourceWithinLine": 2,
+        "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+        "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0"
+      },
+      "sourceContext": {
+        "previous": {
+          "sourceAng": 1377,
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+          "sourceOrdinal": 1,
+          "sourcePrintedLine": 1,
+          "sourceWithinLine": 1,
+          "text": "ਮੁਕਤਿ ਪਦਾਰਥੁ ਪਾਈਐ ਠਾਕ ਨ ਅਵਘਟ ਘਾਟ ॥੨੩੧॥",
+          "textSha256": "1e4a9e3a774c6e37e1e9f8cec49a71896a4f4380c29494fd2c8f21b2b4bb8d94"
+        },
+        "next": {
+          "sourceAng": 1377,
+          "sourcePath": "corpus/ang-1377.md",
+          "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+          "sourceOrdinal": 3,
+          "sourcePrintedLine": 2,
+          "sourceWithinLine": 1,
+          "text": "ਕਬੀਰ ਏਕ ਘੜੀ ਆਧੀ ਘਰੀ ਆਧੀ ਹੂੰ ਤੇ ਆਧ ॥",
+          "textSha256": "9146f1900d6f91fdb03212d8c8012ab22368d7256981f6594ff4beb0550ef271"
+        }
+      },
+      "upstreamGroupEvidence": {
+        "recordPath": "research/salok-kabir/upstream-line-groups.json",
+        "lineIds": [
+          "9RH3",
+          "V41B"
+        ],
+        "lineGroupId": "G4W",
+        "sectionId": "X63C",
+        "reportedAuthorId": "FRID",
+        "isCanonicalAuthorAssignment": false,
+        "rows": [
+          {
+            "line_id": "9RH3",
+            "line_group_id": "G4W",
+            "line_group_order": 1,
+            "author_id": "FRID",
+            "section_id": "X63C",
+            "section_order": 2,
+            "source_id": "SGGS",
+            "source_order": 41,
+            "section_name": "{\"Latn\":\"Salok Fareed Jee\"}",
+            "author_name": "{\"Guru\":\"ਸੇਖ ਫਰੀਦ\",\"Latn\":\"Sheikh Farid\"}",
+            "asset_id": "SSA2",
+            "type": "primary",
+            "data": "ਫਰੀਦਾ. ਦਰ ਦਰਵੇਸੀ ਗਾਖੜੀ; ਚਲਾਂ ਦੁਨੀਆਂ ਭਤਿ ॥",
+            "additional": "{\"type\":\"primary\",\"page\":1377,\"line\":19}",
+            "priority": 1
+          },
+          {
+            "line_id": "V41B",
+            "line_group_id": "G4W",
+            "line_group_order": 2,
+            "author_id": "FRID",
+            "section_id": "X63C",
+            "section_order": 2,
+            "source_id": "SGGS",
+            "source_order": 41,
+            "section_name": "{\"Latn\":\"Salok Fareed Jee\"}",
+            "author_name": "{\"Guru\":\"ਸੇਖ ਫਰੀਦ\",\"Latn\":\"Sheikh Farid\"}",
+            "asset_id": "SSA2",
+            "type": "primary",
+            "data": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ; ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+            "additional": "{\"type\":\"primary\",\"page\":1377,\"line\":1}",
+            "priority": 1
+          }
+        ]
+      },
+      "secondaryObservation": {
+        "status": "INHERITED_BOUNDED_RESEARCH_NOT_REPEATED_THIS_INTAKE",
+        "recordPath": "research/salok-kabir/intake-discrepancy-review.json",
+        "reportedPrintedAng": 1378,
+        "canonicalAng": null,
+        "qualification": "Existing research inspected web and page-image witnesses; it did not authenticate a printed edition or grant qualified collation."
+      },
+      "resolution": null,
+      "canonicalAng": null,
+      "canonicalAuthorId": null,
+      "requiredAction": "Review sequence and location using the preserved upstream group and independent page evidence before creating a separately versioned ordered selection. Do not rewrite source locators."
+    },
+    {
+      "id": "farid-heading-terminal-danda",
+      "status": "OPEN_QUARANTINED",
+      "type": "HEADING_PUNCTUATION_DIFFERENCE",
+      "runtimeEligible": false,
+      "sourceOccurrence": {
+        "sourceAng": 1377,
+        "sourcePath": "corpus/ang-1377.md",
+        "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+        "sourceOrdinal": 27,
+        "sourcePrintedLine": 15,
+        "sourceWithinLine": 1,
+        "text": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ ॥",
+        "textSha256": "91d90022bf844f693cb06d761e91db53a45fb1c2009e532803a77e1cccfe970e"
+      },
+      "secondaryObservation": {
+        "status": "INHERITED_RESEARCH_OBSERVATION_NOT_RETRIEVED_THIS_INTAKE",
+        "provider": "SriGranth",
+        "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1377",
+        "text": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ",
+        "textSha256": "eb70ddc6372c6ff7b648dd24ce23e7d9e7693a9d3658787b8c62a57d5dee7b8a",
+        "recordPath": "research/salok-kabir/source-catalog.md",
+        "section": "Comparison with a second digital display"
+      },
+      "resolution": null,
+      "selectedRuntimeText": null,
+      "requiredAction": "Retain both recorded forms and seek explicit source review; no automatic danda removal or provider vote."
+    }
+  ],
+  "retainedEvidence": [
+    {
+      "path": "research/salok-kabir/intake-discrepancy-review.json",
+      "sha256": "0ae4c378e3e8868565b44d389980fe3c572270cb8e164a1a7a9a2f8775dab20c",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    },
+    {
+      "path": "research/salok-kabir/upstream-line-groups.json",
+      "sha256": "8dc5ecd318f131ad8278a3ca3f73bb1f279bbe0aa75973b333193faf275bf80a",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    },
+    {
+      "path": "research/salok-kabir/source-selected.json",
+      "sha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    },
+    {
+      "path": "research/salok-kabir/source-catalog.md",
+      "sha256": "d1e4b7c87906b6ec27cbc0d1e8752f07e268d55212515ed008c3470d9c5f48e6",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    }
+  ],
+  "reviews": {
+    "gurbaniScholar": null,
+    "punjabiReader": null,
+    "sourceLocationAdjudication": null,
+    "rightsReview": null
+  },
+  "translationAssets": [],
+  "audioAssets": [],
+  "rights": {
+    "status": "RESEARCH_ONLY_REVIEW_REQUIRED",
+    "codeLicenseIsContentLicense": false,
+    "modernTranslationsIncluded": false,
+    "generatedTransliterationIncluded": false,
+    "noticeUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/NOTICE",
+    "licenseUrl": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/LICENSE",
+    "originalTextNotice": {
+      "url": "https://github.com/shabados/database/blob/918c1d42d02e385e7ed48ef44994c75a2cb50293/README.md",
+      "sha256": "e06d574b19e31a876c987555329ef5959eb6735b081495a2a64136973d7456da",
+      "claimScope": "Shabad OS describes original Gurbani/Panthic texts as public domain; this does not license modern translation, commentary, recordings or layouts."
+    }
+  },
+  "validationGateInputs": {
+    "immutableSourceCommitRequired": true,
+    "sourceFileGitBlobAndSha256Required": true,
+    "perOccurrenceTextSha256Required": true,
+    "exactRangesAndCountsRequired": true,
+    "sourceTextNormalizationPermitted": false,
+    "silentReorderingPermitted": false,
+    "unresolvedLocationConflictBlocksRuntime": true,
+    "pageAuthorInheritancePermitted": false,
+    "existingRuntimeScripturePackMustRemainUnchanged": true
+  },
+  "corpusFileInventoryPath": "content-intake/sggs/file-inventory.json",
+  "limitations": [
+    "This is an observed incomplete forward span, not a complete Farid composition or admitted reader package.",
+    "A 297-occurrence reordered selection is not built or approved by this intake.",
+    "No full comparison with a second digital text or physical saroop has been performed for this collection.",
+    "OpenGranth derives from Shabad OS; agreement between them does not establish independent textual lineage.",
+    "Ang, row and printed-line fields are source locators, not permanent canonical identities or authenticated printed boundaries.",
+    "No scholar, Punjabi, Santhiya, rights or physical-device review is claimed."
+  ]
+}

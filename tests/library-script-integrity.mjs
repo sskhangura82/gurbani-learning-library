@@ -31,19 +31,20 @@ const expected={
  'sukhmani.html':['js/source-integrity.js','js/sukhmani-data.js','js/sukhmani-teaching.js','js/sukhmani-learning.js','js/shared-learning.js','js/sukhmani-reader.js','js/pwa.js'],
  'nitnem/index.html':['appearance.js','continuous-core.js','learning/learning-ui.js','local-learning.js','reader.js','offline.js'],
  'salok-mahalla9/index.html':['appearance.js','continuous-core.js','learning/learning-ui.js','local-learning.js','reader.js','offline.js'].map(p=>'../nitnem/'+p),
- 'salok-kabir/index.html':['appearance.js','continuous-core.js','learning/learning-ui.js','local-learning.js','reader.js','offline.js'].map(p=>'../nitnem/'+p)
+ 'salok-kabir/index.html':['appearance.js','continuous-core.js','learning/learning-ui.js','local-learning.js','reader.js','offline.js'].map(p=>'../nitnem/'+p),
+ 'salok-farid/index.html':['appearance.js','continuous-core.js','learning/learning-ui.js','local-learning.js','reader.js','offline.js'].map(p=>'../nitnem/'+p)
 };
 const tags=html=>[...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi)].map(m=>m[0]);
 const attr=(tag,name)=>tag.match(new RegExp('\\b'+name+'="([^"]*)"'))?.[1];
 function walk(node,visit){if(!node||typeof node!=='object')return;visit(node);for(const value of Object.values(node))if(Array.isArray(value))value.forEach(x=>walk(x,visit));else if(value&&typeof value==='object')walk(value,visit);}
 
-test('All 15 production pages carry exactly 52 independently inventoried script pins',async()=>{
+test('All 16 application pages carry exactly 58 independently inventoried script pins',async()=>{
  assert.deepEqual(APP_SCRIPT_POLICY.map(p=>p.page).sort(),Object.keys(expected).sort());
  let total=0,baselineUnpinned=0;
  for(const [page,ordered] of Object.entries(expected)){
   const html=(await read(page)).toString(),list=tags(html);
   assert.deepEqual(list.map(tag=>attr(tag,'src')),ordered,page);
-  if(page!=='hukamnama/index.html'){
+  if(page!=='hukamnama/index.html'&&page!=='salok-farid/index.html'){
    const previous=execFileSync('git',['show',baseline+':'+page],{cwd:root,encoding:'utf8'});
    baselineUnpinned+=tags(previous).filter(tag=>!attr(tag,'integrity')).length;
   }
@@ -57,7 +58,7 @@ test('All 15 production pages carry exactly 52 independently inventoried script 
    total++;
   }
  }
- assert.equal(total,52);
+ assert.equal(total,58);
  assert.equal(baselineUnpinned,15,'negative baseline confirms this extends the existing 36 reader pins');
 });
 
@@ -119,7 +120,7 @@ test('Extra HTML and stale source cannot silently pass default checks',async()=>
  const fixture=await fs.mkdtemp(path.join(os.tmpdir(),'glp-script-contract-'));
  try{
   const files=execFileSync('git',['ls-tree','-r','--name-only',baseline],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(n=>!n.startsWith('evidence/'));
-  for(const name of [...files,'tools/script-integrity/app-graphs.json',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
+  for(const name of [...files,...['passage-ui.mjs','passages.mjs','passage-contracts.mjs','search.mjs','kinds.mjs','complete-passages.json'].map(n=>'library/'+n),'salok-farid/index.html','knowledge/journey.mjs','knowledge/learning.mjs','knowledge/json.mjs','tools/script-integrity/app-graphs.json',...['library','articles','knowledge'].map(n=>n+'/app.bundle.mjs'),...['index.html','reader.mjs','reader.bundle.mjs','core.mjs','delivery.mjs','learning.mjs','json.mjs','publication-key.mjs','style.css'].map(n=>'hukamnama/'+n)]){
    let bytes;try{bytes=await read(name);}catch(error){if(error.code==='ENOENT')continue;throw error;}
    const destination=path.join(fixture,name);await fs.mkdir(path.dirname(destination),{recursive:true});await fs.writeFile(destination,bytes);
   }

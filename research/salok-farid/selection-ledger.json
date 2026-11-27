@@ -1,0 +1,208 @@
+{
+  "schema": "glp.farid.selection-ledger.v1",
+  "status": "DEVELOPMENT_SELECTION_INDEPENDENT_REVIEW_PENDING",
+  "publicationApproved": false,
+  "qualifiedHumanReviewCount": 0,
+  "canonicalLocationAdjudicated": false,
+  "canonicalAuthorshipAdjudicated": false,
+  "frozenIntake": {
+    "path": "content-intake/farid/manifest.json",
+    "sha256": "acceebaf2dda6e41e40e309d16a0b247141008f5f80d33571c91eec8b840896d",
+    "contractSha256": "ff8ebde2192ccd162b74145ec30bb0905fd5233929845a3740b9b083a05034de",
+    "modified": false
+  },
+  "verseTextChanges": 0,
+  "headingTextChanges": 0,
+  "rawForwardOccurrences": 296,
+  "selectedOccurrences": 297,
+  "unitCount": 130,
+  "selectedSequenceSha256": "1f76efa45d938db1623bc1f88ab3b3367305be19d59051ee2dab45e57ac8e60e",
+  "sourceEdition": "salok-farid-selected-witness-34d2a7c-20261127",
+  "sourceLineage": "OpenGranth derives from Shabad OS SSA2; these are one textual lineage.",
+  "displacedSelection": {
+    "discrepancyId": "og-location-1377-row002",
+    "originalSourceOccurrence": {
+      "sourceAng": 1377,
+      "sourcePath": "corpus/ang-1377.md",
+      "sourceGitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+      "sourceOrdinal": 2,
+      "sourcePrintedLine": 1,
+      "sourceWithinLine": 2,
+      "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+      "textSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0"
+    },
+    "selectedOccurrenceId": "sggs.salok-farid.salok002.line02",
+    "selectedIndex": 11,
+    "previousOccurrenceId": "sggs.salok-farid.salok002.line01",
+    "upstreamEvidence": {
+      "recordPath": "research/salok-kabir/upstream-line-groups.json",
+      "lineIds": [
+        "9RH3",
+        "V41B"
+      ],
+      "lineGroupId": "G4W",
+      "sectionId": "X63C",
+      "reportedAuthorId": "FRID",
+      "isCanonicalAuthorAssignment": false,
+      "rows": [
+        {
+          "line_id": "9RH3",
+          "line_group_id": "G4W",
+          "line_group_order": 1,
+          "author_id": "FRID",
+          "section_id": "X63C",
+          "section_order": 2,
+          "source_id": "SGGS",
+          "source_order": 41,
+          "section_name": "{\"Latn\":\"Salok Fareed Jee\"}",
+          "author_name": "{\"Guru\":\"ਸੇਖ ਫਰੀਦ\",\"Latn\":\"Sheikh Farid\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਫਰੀਦਾ. ਦਰ ਦਰਵੇਸੀ ਗਾਖੜੀ; ਚਲਾਂ ਦੁਨੀਆਂ ਭਤਿ ॥",
+          "additional": "{\"type\":\"primary\",\"page\":1377,\"line\":19}",
+          "priority": 1
+        },
+        {
+          "line_id": "V41B",
+          "line_group_id": "G4W",
+          "line_group_order": 2,
+          "author_id": "FRID",
+          "section_id": "X63C",
+          "section_order": 2,
+          "source_id": "SGGS",
+          "source_order": 41,
+          "section_name": "{\"Latn\":\"Salok Fareed Jee\"}",
+          "author_name": "{\"Guru\":\"ਸੇਖ ਫਰੀਦ\",\"Latn\":\"Sheikh Farid\"}",
+          "asset_id": "SSA2",
+          "type": "primary",
+          "data": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ; ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥",
+          "additional": "{\"type\":\"primary\",\"page\":1377,\"line\":1}",
+          "priority": 1
+        }
+      ]
+    },
+    "secondaryObservation": {
+      "reportedAng": 1378,
+      "ordinal": 1,
+      "text": "ਬੰਨੑਿ ਉਠਾਈ ਪੋਟਲੀ ਕਿਥੈ ਵੰਞਾ ਘਤਿ ॥੨॥"
+    },
+    "canonicalAng": null,
+    "canonicalAuthorId": null,
+    "decision": "SOURCE_GROUP_AND_SECONDARY_SEQUENCE_SUPPORTED_DEVELOPMENT_SELECTION_ONLY"
+  },
+  "headingSelection": {
+    "action": "RETAIN_EXACT_PINNED_SOURCE_HEADING",
+    "selectedText": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ ॥",
+    "selectedSha256": "91d90022bf844f693cb06d761e91db53a45fb1c2009e532803a77e1cccfe970e",
+    "opposingText": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ",
+    "noProviderVote": true
+  },
+  "secondary": {
+    "path": "research/salok-farid/secondary-display.json",
+    "sha256": "6b9c4b1b27a38afd9658c4eebec3376d0f267086b47f1e74c6b1212d36ea77a5",
+    "completeOccurrences": 297,
+    "byteIdenticalOccurrences": 291,
+    "unresolvedDifferences": 6,
+    "independentTextualLineageEstablished": false,
+    "boundaries": {
+      "preceding": {
+        "reportedAng": 1377,
+        "ordinal": 25,
+        "text": "ਬੈਰਾਗੀ ਬੰਧਨੁ ਕਰੈ ਤਾ ਕੋ ਬਡੋ ਅਭਾਗੁ ॥੨੪੩॥"
+      },
+      "following": {
+        "reportedAng": 1385,
+        "ordinal": 1,
+        "text": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥"
+      }
+    }
+  },
+  "differences": [
+    {
+      "selectedIndex": 0,
+      "selectedText": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ ॥",
+      "selectedSha256": "91d90022bf844f693cb06d761e91db53a45fb1c2009e532803a77e1cccfe970e",
+      "secondaryText": "ਸਲੋਕ ਸੇਖ ਫਰੀਦ ਕੇ",
+      "secondarySha256": "eb70ddc6372c6ff7b648dd24ce23e7d9e7693a9d3658787b8c62a57d5dee7b8a",
+      "secondaryLocation": {
+        "reportedAng": 1377,
+        "ordinal": 26
+      },
+      "action": "RETAIN_PINNED_SOURCE_BYTES",
+      "equivalenceAdjudicated": false
+    },
+    {
+      "selectedIndex": 19,
+      "selectedText": "ਆਪਨੜੇ ਗਿਰੀਵਾਨ ਮਹਿ ਸਿਰੁ ਨਂੀਵਾਂ ਕਰਿ ਦੇਖੁ ॥੬॥",
+      "selectedSha256": "79cf0c6983dffffce187cbad5ba5f32c9537580e8bb491585dde7fb27b86bb75",
+      "secondaryText": "ਆਪਨੜੇ ਗਿਰੀਵਾਨ ਮਹਿ ਸਿਰੁ ਨੀਵਾਂ ਕਰਿ ਦੇਖੁ ॥੬॥",
+      "secondarySha256": "12f65c71aa00362218e3de2910e4843af954797dcb87c857b8f495888a91c573",
+      "secondaryLocation": {
+        "reportedAng": 1378,
+        "ordinal": 9
+      },
+      "action": "RETAIN_PINNED_SOURCE_BYTES",
+      "equivalenceAdjudicated": false
+    },
+    {
+      "selectedIndex": 30,
+      "selectedText": "ਫਰੀਦਾ ਕਾਲਂੀ ਜਿਨੀ ਨ ਰਾਵਿਆ ਧਉਲੀ ਰਾਵੈ ਕੋਇ ॥",
+      "selectedSha256": "5cb33ad34b58762371983a6197b81a98e6613b8324f10809b1911ef305d73420",
+      "secondaryText": "ਫਰੀਦਾ ਕਾਲੀ ਜਿਨੀ ਨ ਰਾਵਿਆ ਧਉਲੀ ਰਾਵੈ ਕੋਇ ॥",
+      "secondarySha256": "04a20f75abf575f7918f6b3354191a65c67b3710d7874599d9f68fb42ca568eb",
+      "secondaryLocation": {
+        "reportedAng": 1378,
+        "ordinal": 20
+      },
+      "action": "RETAIN_PINNED_SOURCE_BYTES",
+      "equivalenceAdjudicated": false
+    },
+    {
+      "selectedIndex": 79,
+      "selectedText": "ਫਰੀਦਾ ਕਿਤਂੀ ਜੋਬਨ ਪ੍ਰੀਤਿ ਬਿਨੁ ਸੁਕਿ ਗਏ ਕੁਮਲਾਇ ॥੩੪॥",
+      "selectedSha256": "55b92344f03b171cdf48f39c4ae87759dd67d8a58d7f995713e4105657c4f024",
+      "secondaryText": "ਫਰੀਦਾ ਕਿਤੀ ਜੋਬਨ ਪ੍ਰੀਤਿ ਬਿਨੁ ਸੁਕਿ ਗਏ ਕੁਮਲਾਇ ॥੩੪॥",
+      "secondarySha256": "3ed1a90e5b7740af4a5dc26dd645c18ef5faab67aa0b672eb7adaf7c11fd0699",
+      "secondaryLocation": {
+        "reportedAng": 1379,
+        "ordinal": 27
+      },
+      "action": "RETAIN_PINNED_SOURCE_BYTES",
+      "equivalenceAdjudicated": false
+    },
+    {
+      "selectedIndex": 177,
+      "selectedText": "ਜਿੰਨੑਾ ਨੈਣ ਨਂੀਦ੍ਰਾਵਲੇ ਤਿੰਨੑਾ ਮਿਲਣੁ ਕੁਆਉ ॥੮੦॥",
+      "selectedSha256": "f53f9ce2455f81b7d3714a0102e1d21b09d6d256ea949aa5a939cc09eccfdebe",
+      "secondaryText": "ਜਿੰਨੑਾ ਨੈਣ ਨੀਦ੍ਰਾਵਲੇ ਤਿੰਨੑਾ ਮਿਲਣੁ ਕੁਆਉ ॥੮੦॥",
+      "secondarySha256": "034210453cc887ba7fcf6ff78ca03fc61b72b657cbc1272fe1ab12cfcb28e7d3",
+      "secondaryLocation": {
+        "reportedAng": 1382,
+        "ordinal": 5
+      },
+      "action": "RETAIN_PINNED_SOURCE_BYTES",
+      "equivalenceAdjudicated": false
+    },
+    {
+      "selectedIndex": 192,
+      "selectedText": "ਫਰੀਦਾ ਗਲਂੀ ਸੁ ਸਜਣ ਵੀਹ ਇਕੁ ਢੂੰਢੇਦੀ ਨ ਲਹਾਂ ॥",
+      "selectedSha256": "ef2f861b93908964e0b43f36860d3e4d7264de5500d058b0faba36d1016f76aa",
+      "secondaryText": "ਫਰੀਦਾ ਗਲੀ ਸੁ ਸਜਣ ਵੀਹ ਇਕੁ ਢੂੰਢੇਦੀ ਨ ਲਹਾਂ ॥",
+      "secondarySha256": "f0d43aee58a0c20c3271a2e203c1b371320721f3afa76bcf6d6d861ed5b6ed3b",
+      "secondaryLocation": {
+        "reportedAng": 1382,
+        "ordinal": 20
+      },
+      "action": "RETAIN_PINNED_SOURCE_BYTES",
+      "equivalenceAdjudicated": false
+    }
+  ],
+  "limitations": [
+    "The frozen intake and its original quarantine fields remain unchanged.",
+    "Selection uses source group evidence and complete secondary sequence comparison; no independent transmission lineage or qualified collation is established.",
+    "Five nasal-mark display differences retain valid pinned source Unicode; no private-use glyph equivalence is adjudicated.",
+    "The selected heading retains its terminal danda; the opposing form remains documented.",
+    "Reported digital Ang locations are not independently authenticated printed Ang assignments.",
+    "No explanation, translation, audio or release approval is added."
+  ]
+}

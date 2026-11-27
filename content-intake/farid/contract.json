@@ -1,0 +1,133 @@
+{
+  "sourceCommit": "34d2a7cab032c8ea24d21ff20f64653bd03766f4",
+  "manifestMetadataSha256": "14a09f6a9a1473384abb8d7e3bbbfbf6bf3ea7ec51efd7ded25dfceb194bfcb3",
+  "spanCustodySha256": "8a899775799e1c7c5ba8384a81521eeabb658ab73e82ef5e74476c7f8a170827",
+  "spanSequenceSha256": "9ea17eeb3b5bfb0a30b6a701ac9d484bbc4438ab03adcd65367362968b4d939d",
+  "corpusInventorySha256": "86ddecc99690a388eab0a93a495b986d18f463a4a80b7311f5aaf250ec02a7fc",
+  "witnesses": [
+    {
+      "path": "metadata/authors.json",
+      "gitBlob": "ad723a5d2cdd29e8d74ec336111e95ab387f5b2e",
+      "sha256": "30087956844b72d15f7ffd50f27d68e6f19eaa13fd69d5464c7de348c4d88503",
+      "bytes": 49201,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/metadata/authors.json"
+    },
+    {
+      "path": "corpus/ang-0488.md",
+      "gitBlob": "ccbabf6c4f2d2cbddad271c7a4151c707690fca7",
+      "sha256": "3680dba019881303b8e8abdf50412098f0d6d0cdd85b6184f62ff0feed06beb0",
+      "bytes": 10189,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0488.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0488.md"
+    },
+    {
+      "path": "corpus/ang-0794.md",
+      "gitBlob": "fbef9c1d8449253335d8db13987bfc4c323a5563",
+      "sha256": "883af1911717ef6e163fa8bd65ed7e5eea1c269dc2e270d13b10ca66fd832fbe",
+      "bytes": 9872,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0794.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-0794.md"
+    },
+    {
+      "path": "corpus/ang-1377.md",
+      "gitBlob": "2517993def728500a63090f00e80e4746592fbfb",
+      "sha256": "47c2e2d5d609bc726f5813bdae03caea25accf843bd32b259fbb1f1a96598262",
+      "bytes": 10042,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1377.md"
+    },
+    {
+      "path": "corpus/ang-1378.md",
+      "gitBlob": "66625e82909053ad3b918bfada387dad958c593e",
+      "sha256": "ad0de1705fa1dcdb21cfc2f7c49200b8eb22ae7f1da7db786eeb93987cb3ae8e",
+      "bytes": 10559,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1378.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1378.md"
+    },
+    {
+      "path": "corpus/ang-1379.md",
+      "gitBlob": "31a3fd409bd3c8d38afcc23d56aae45b29cf459c",
+      "sha256": "85db471492c1d3272a8453574b185f69cd4316a0d6847d7b117a104c030def74",
+      "bytes": 10566,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1379.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1379.md"
+    },
+    {
+      "path": "corpus/ang-1380.md",
+      "gitBlob": "8b464138d1a2084c54ef68f3c11134e430d9046d",
+      "sha256": "43d3e086d3ad8a88cd4f71c4903e46d68b5bfc687f482bae4ea73863606b8312",
+      "bytes": 10735,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1380.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1380.md"
+    },
+    {
+      "path": "corpus/ang-1381.md",
+      "gitBlob": "9a67caa63cc81e41a50fa3030c6d6d742e4f5ec3",
+      "sha256": "456f11948ef5921eb9ffddf198365c2d886d0e918622edb9f03634381986cc45",
+      "bytes": 10511,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1381.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1381.md"
+    },
+    {
+      "path": "corpus/ang-1382.md",
+      "gitBlob": "f83290bb5e011e72b626e5e32ab1b2705ec278a4",
+      "sha256": "31ee34db0156a51c919aeb41cd54c874e43244475d617f8cc07657e877146b8b",
+      "bytes": 10242,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1382.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1382.md"
+    },
+    {
+      "path": "corpus/ang-1383.md",
+      "gitBlob": "258a0e5cd80e7bc4c52b4f5325f61c25bca98e0c",
+      "sha256": "8494480aac7383325e64d1fee2a853ee0e7fe09d28b3417613966949a5e7af22",
+      "bytes": 10332,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1383.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1383.md"
+    },
+    {
+      "path": "corpus/ang-1384.md",
+      "gitBlob": "964465829f8777d391a98a134e77d6fc3139705e",
+      "sha256": "444a32d60175831968a7a4743fa04b0484ecd450ae99d7c0b2c53d09932d7bec",
+      "bytes": 10472,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1384.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1384.md"
+    },
+    {
+      "path": "corpus/ang-1385.md",
+      "gitBlob": "a8d167b187efce9308feac565bba528f15cc062a",
+      "sha256": "3285868310e681347bf0663a21993ecf9cf5968d3d48e16ccd7f69a415f0b0a5",
+      "bytes": 5937,
+      "url": "https://github.com/opengranth/open-granth/blob/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1385.md",
+      "rawUrl": "https://raw.githubusercontent.com/opengranth/open-granth/34d2a7cab032c8ea24d21ff20f64653bd03766f4/corpus/ang-1385.md"
+    }
+  ],
+  "retainedEvidence": [
+    {
+      "path": "research/salok-kabir/intake-discrepancy-review.json",
+      "sha256": "0ae4c378e3e8868565b44d389980fe3c572270cb8e164a1a7a9a2f8775dab20c",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    },
+    {
+      "path": "research/salok-kabir/upstream-line-groups.json",
+      "sha256": "8dc5ecd318f131ad8278a3ca3f73bb1f279bbe0aa75973b333193faf275bf80a",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    },
+    {
+      "path": "research/salok-kabir/source-selected.json",
+      "sha256": "e4649489194a7842a7bfb4bd06d69308a15b8ab79c0dfc455740011717d5af05",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    },
+    {
+      "path": "research/salok-kabir/source-catalog.md",
+      "sha256": "d1e4b7c87906b6ec27cbc0d1e8752f07e268d55212515ed008c3470d9c5f48e6",
+      "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9"
+    }
+  ],
+  "runtimePins": {
+    "knowledge/scripture.json": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+    "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
+    "salok-kabir/data/salok-kabir.json": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+    "salok-mahalla9/data/salok-mahalla9.json": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75"
+  }
+}

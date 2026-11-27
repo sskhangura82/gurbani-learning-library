@@ -1,7 +1,6 @@
 name: Learning reliability and separate practice tools
 on:
   pull_request:
-    branches: [main, feature/kabir-salok-reader-20261126]
   workflow_dispatch:
 permissions:
   contents: read

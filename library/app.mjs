@@ -1,6 +1,8 @@
 /* Navigation metadata only. Scripture and private learning stay in their owning readers. */
 import {READERS,COLLECTIONS,EXPLORE,TOOLS,PLANNED} from './catalog.mjs';
 import {parseView,searchEntries,getReader} from './core.mjs';
+import {setupPassageSearch} from './passage-ui.mjs';
+let passageSearch;
 
 const $=id=>document.getElementById(id);
 const labels={today:'Today',read:'Read',explore:'Explore',saved:'Saved'};
@@ -91,6 +93,7 @@ function openView(){
  $('library-search').value=oneParam(params,'q');
  $('read-filter').value=['all','nitnem','additional'].includes(filter)?filter:'all';
  renderRead();
+ if(view==='explore')passageSearch?.activate();
 }
 try{
  if(READERS.length!==10||new Set(READERS.map(r=>r.id)).size!==READERS.length)throw Error('The reading directory is incomplete.');
@@ -104,6 +107,7 @@ try{
  $('explore-list').replaceChildren(...EXPLORE.map(exploreCard));
  $('today-tools').replaceChildren(...TOOLS.map(toolCard));
  $('planned-list').replaceChildren(...PLANNED.map(plannedItem));
+ passageSearch=setupPassageSearch();
  openView();
  $('library-search-form').addEventListener('submit',e=>{e.preventDefault();renderRead({writeUrl:true});});
  $('library-search').addEventListener('input',()=>renderRead({writeUrl:true}));

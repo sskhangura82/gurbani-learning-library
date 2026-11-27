@@ -1,0 +1,81 @@
+{
+  "schema": "glp.farid-source-only-diff.v1",
+  "baseCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+  "scope": "Changed-path inventory through the preservation-contract amendment, including this inventory file. All paths are added research, validation, evidence, workflow or handoff files.",
+  "existingRuntimeFilesChanged": false,
+  "allChangesAreAddedResearchPaths": true,
+  "paths": [
+    {
+      "status": "A",
+      "path": ".github/workflows/farid-source-intake-qa.yml"
+    },
+    {
+      "status": "A",
+      "path": "content-intake/farid/contract.json"
+    },
+    {
+      "status": "A",
+      "path": "content-intake/farid/manifest.json"
+    },
+    {
+      "status": "A",
+      "path": "content-intake/sggs/file-inventory.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/FARID_SOURCE_INTAKE_20261127.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/FARID_SOURCE_INTAKE_CRITERIA_20261127.md"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/changed-paths.json"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/contract-amendment.json"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/fresh-fetch.json"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/raw-output-boundary.json"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/tests-fresh-witnesses.txt"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/tests-initial.txt"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/tests-preservation-amendment.tap"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/validation-preservation-amendment.json"
+    },
+    {
+      "status": "A",
+      "path": "evidence/farid-intake/validation.json"
+    },
+    {
+      "status": "A",
+      "path": "tests/farid-intake.mjs"
+    },
+    {
+      "status": "A",
+      "path": "tools/fetch-farid-witnesses.mjs"
+    },
+    {
+      "status": "A",
+      "path": "tools/validate-farid-intake.mjs"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Pinned source files captured: 100/1430
+Pinned source files captured: 200/1430
+Pinned source files captured: 300/1430
+Pinned source files captured: 400/1430
+Pinned source files captured: 500/1430
+Pinned source files captured: 600/1430
+Pinned source files captured: 700/1430
+Pinned source files captured: 800/1430
+Pinned source files captured: 900/1430
+Pinned source files captured: 1000/1430
+Pinned source files captured: 1100/1430
+Pinned source files captured: 1200/1430
+file:///workspace/scratch/d7e763e55ff9/glp-integration/tools/fetch-sggs-research-witnesses.mjs:16
+ if(!response.ok||!response.body)throw Error('Source request failed: '+descriptor.path+' '+response.status);
+                                       ^
+
+Error: Source request failed: corpus/ang-1279.md 429
+    at fetchPage (file:///workspace/scratch/d7e763e55ff9/glp-integration/tools/fetch-sggs-research-witnesses.mjs:16:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///workspace/scratch/d7e763e55ff9/glp-integration/tools/fetch-sggs-research-witnesses.mjs:23:136
+    at async Promise.all (index 3)
+    at async file:///workspace/scratch/d7e763e55ff9/glp-integration/tools/fetch-sggs-research-witnesses.mjs:23:1
+
+Node.js v24.22.3

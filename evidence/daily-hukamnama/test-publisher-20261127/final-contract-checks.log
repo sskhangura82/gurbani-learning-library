@@ -1,0 +1,72 @@
+✔ existing signer -> exact-base proposal -> existing reader preserves the complete dated original (651.763625ms)
+✔ an identical existing source is reused and only the new event enters the patch (512.197583ms)
+✔ same-day repeated observation keeps existing envelope, revision and tree exactly (403.869041ms)
+✔ changed publication time is held for correction review rather than overwriting a date (382.745167ms)
+✔ a new date cannot silently begin at a correction revision (290.828417ms)
+✔ a conflicting blob already occupying the source digest path is never replaced (374.778542ms)
+✔ damaged admitted record and missing admitted source cannot be repaired by silent replacement (761.288959ms)
+✔ stale exact-base reference refuses while a moving reference also refuses final admission (705.13875ms)
+✔ today-mode midnight rollover leaves the artifact explicitly refused (497.734833ms)
+✔ explicit historical mode stays dated, while future or invalid requests refuse before a run (520.88325ms)
+✔ source bytes, receipt, signature, duplicate JSON and extra files fail before a ready proposal (1019.788458ms)
+✔ input traversal, extra directories, symlinks and base symlink blobs refuse (571.800666ms)
+✔ publication-key mismatch refuses and cannot produce an unreadable target patch (320.494292ms)
+✔ exclusive output prevents repeats/concurrent writes and output cannot be inside the repository (574.895875ms)
+✔ replace refs and local diff display settings cannot alter the pinned base or saved patch (568.316916ms)
+✔ repository subdirectories and common Git storage cannot bypass output isolation (177.367333ms)
+✔ new exact-date original becomes an unsigned review candidate, never a publication (23.550083ms)
+✔ the requested day is Amritsar day, not UTC or the machine locale (1.65275ms)
+✔ invalid/future requests refuse before creating a run or requesting a source (1.026875ms)
+✔ network unavailability and stale official date record refusal without a substitute (2.95775ms)
+✔ source discrepancies never retry, normalize, or become an empty success (4.973666ms)
+✔ midnight rollover retains the captured date but cannot offer it as today (6.02725ms)
+✔ explicit historical capture stays historical across midnight (5.087875ms)
+✔ a fresh same-day receipt keeps exact admitted envelope, source and revision (15.210708ms)
+✔ a genuine publication-time correction requires review and preserves admitted bytes (7.189208ms)
+✔ damaged existing signed record is not replaced by a new apparently valid capture (5.454625ms)
+✔ an existing event with its source missing is preserved and blocks automatic replacement (6.159542ms)
+✔ hash failure, forbidden commentary and an unexpected captured file cannot become a candidate (11.605625ms)
+✔ manifest traversal and symlinks are rejected before arbitrary files can be read (7.601541ms)
+✔ concurrent attempt cannot overwrite running report or fetch a second reading (4.718667ms)
+✔ local failure emits a bounded report without arbitrary error text or partial candidate admission (1.281792ms)
+✔ an output inside the admitted source root is refused before networking (0.625125ms)
+PASS actual full cross-Ang source seals and independently decodes with an ephemeral key
+PASS receipt and payload carry the same canonical UTC retrieval timestamp
+PASS raw receipt tampering cannot reuse the old receipt digest
+PASS rehashed receipt with changed full original cannot reuse the selected source
+PASS rehashed truncated source cannot omit the continuation ending
+PASS wrong private key cannot seal against the selected public key
+PASS a signed event cannot verify against a different public key
+PASS non-null unreviewed explanation is refused before sealing
+PASS protected commentary field is excluded even from a rehashed original receipt
+PASS rehashed receipt starting Ang must agree with the full verified source span
+PASS rehashed receipt displayed time must agree with the dated event
+PASS duplicate payload field cannot hide a discarded value before sealing
+PASS escaped-equivalent duplicate original field cannot hide in rehashed source bytes
+PASS nested duplicate original field cannot hide in a rehashed receipt
+PASS reader rejects duplicate envelope fields even when the remaining payload signature is valid
+PASS reader rejects duplicate decoded payload fields even with a valid ephemeral signature
+Signing checks: 16 passed; 0 failed. Keys existed only in memory.
+✔ tests/hukamnama-signing.mjs (81.936ms)
+✔ complete synthetic capture/seal/propose/remote-update/build/served chain preserves checkout and index (780.324625ms)
+✔ prepare-only creates a reconstructable commit but never calls network transport (690.922666ms)
+✔ an already-admitted date neither signs nor pushes but requests a build for interrupted prior delivery (272.397958ms)
+✔ wrong effective target and changed or dirty checkout refuse before acquisition (261.552792ms)
+✔ concurrent remote work is preserved and no push or build follows the refusal (659.166041ms)
+✔ lease refusal after observation preserves concurrent work (659.10775ms)
+✔ lost push acknowledgement is reconciled by exact remote head, never falsely rolled back (691.086625ms)
+✔ unknown push outcome retains durable intent and does not request a build or claim delivery (657.459125ms)
+✔ official unavailability is retained without signing, substituting or contacting publisher (184.005417ms)
+✔ build failure is reported after the Git update with no false served claim (663.504333ms)
+✔ an acknowledged build with wrong served bytes cannot count as delivered (675.227541ms)
+✔ official HTTP build request is fixed-target, credentialed, nonredirecting, with bounded original serving (18.104958ms)
+✔ transport push stays on one exact leased ref despite tag and submodule push configuration (724.45075ms)
+✔ CLI refuses wrong repository, wrong branch and disabled activation before Git or preparation (297.649333ms)
+ℹ tests 47
+ℹ suites 0
+ℹ pass 47
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8407.90325

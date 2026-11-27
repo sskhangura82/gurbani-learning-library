@@ -26,8 +26,8 @@
       "inputs": [
         {
           "path": "library/app.mjs",
-          "bytes": 7015,
-          "sha256": "2c73e9578263bc1bdeb8161249c53673d6f4b4ba12a50b60767e4b34fd9d9e00",
+          "bytes": 7172,
+          "sha256": "a3574ea4e259cfac913ce18e5c6cd9cc32e5e7fa753ef3ee021a679a62457cc8",
           "imports": [
             {
               "kind": "import-statement",
@@ -36,6 +36,10 @@
             {
               "kind": "import-statement",
               "path": "library/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "library/passage-ui.mjs"
             }
           ]
         },
@@ -55,13 +59,62 @@
               "path": "library/catalog.mjs"
             }
           ]
+        },
+        {
+          "path": "library/kinds.mjs",
+          "bytes": 263,
+          "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
+          "imports": []
+        },
+        {
+          "path": "library/passage-contracts.mjs",
+          "bytes": 1853,
+          "sha256": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd",
+          "imports": []
+        },
+        {
+          "path": "library/passage-ui.mjs",
+          "bytes": 6631,
+          "sha256": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/passages.mjs"
+            }
+          ]
+        },
+        {
+          "path": "library/passages.mjs",
+          "bytes": 9289,
+          "sha256": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/passage-contracts.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "library/search.mjs"
+            }
+          ]
+        },
+        {
+          "path": "library/search.mjs",
+          "bytes": 9304,
+          "sha256": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "library/kinds.mjs"
+            }
+          ]
         }
       ],
       "output": {
         "path": "library/app.bundle.mjs",
-        "bytes": 18979,
-        "sha256": "34f0b67b9bbeac9d9bb1e7b385bf59d3e0f5122c94b648d728dae8278f94fb90",
-        "integrity": "sha384-zE+FuvkuhjDQ6nDezRvgnsIhT+HK2F6EBdVxUavj1P2EUUMgFOkDbEUwrHvG4+u7",
+        "bytes": 48480,
+        "sha256": "aea5146a7944293993c0ca1b7dcc0c09b5dbd51d17a2f51a45edb864058a20e5",
+        "integrity": "sha384-CEuiNZEaBvofZ4/SMl4Ci6lamLHGwvTvFmZM1gFOpzssHbIaGv8My4QDj21mTTHy",
         "imports": []
       }
     },
@@ -118,12 +171,16 @@
       "inputs": [
         {
           "path": "knowledge/app.mjs",
-          "bytes": 15304,
-          "sha256": "cda94c987caec463905d8b75cc36be9e72ee44639b2a86edd2d6c2de0eca09d9",
+          "bytes": 16537,
+          "sha256": "4646ce7b02a411cade85832a0be31400cf52b1e908a64931c750dc7acd3ca128",
           "imports": [
             {
               "kind": "import-statement",
               "path": "knowledge/registry.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "knowledge/journey.mjs"
             },
             {
               "kind": "import-statement",
@@ -147,10 +204,38 @@
           ]
         },
         {
+          "path": "knowledge/journey.mjs",
+          "bytes": 12824,
+          "sha256": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/learning.mjs"
+            }
+          ]
+        },
+        {
+          "path": "knowledge/json.mjs",
+          "bytes": 3867,
+          "sha256": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5",
+          "imports": []
+        },
+        {
           "path": "knowledge/kinds.mjs",
           "bytes": 263,
           "sha256": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
           "imports": []
+        },
+        {
+          "path": "knowledge/learning.mjs",
+          "bytes": 12751,
+          "sha256": "376b8a2ca3de67934dd14e8bf18a2689ce191c0249905e0e276c24a6d24f6268",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "knowledge/json.mjs"
+            }
+          ]
         },
         {
           "path": "knowledge/registry.mjs",
@@ -183,9 +268,9 @@
       ],
       "output": {
         "path": "knowledge/app.bundle.mjs",
-        "bytes": 44898,
-        "sha256": "b02e5ad471047b02e7f3192c5441752ee4bd9e3ba59ec3c8a774e93d708d2a2e",
-        "integrity": "sha384-Z4lwp4Um7ePZMDemf+So/TUNH6xhUXGmIfa8swoOARwBvoEwpNDssApI5cBgp686",
+        "bytes": 77790,
+        "sha256": "0962f8c8d7e21f20db0b387899713e7b20c04bc9a2cb112c0bb21763bddfbe05",
+        "integrity": "sha384-dUtraaSwZUyGisIE4ogJfy8frHYWC2s2A68euw9bsk8yefJOtbxiGKsXSp04PC8y",
         "imports": []
       }
     },

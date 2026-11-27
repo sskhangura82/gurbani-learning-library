@@ -14,9 +14,14 @@ const graphs={
     "entry": "library/app.mjs",
     "output": "library/app.bundle.mjs",
     "inputs": {
-      "library/app.mjs": "2c73e9578263bc1bdeb8161249c53673d6f4b4ba12a50b60767e4b34fd9d9e00",
+      "library/app.mjs": "a3574ea4e259cfac913ce18e5c6cd9cc32e5e7fa753ef3ee021a679a62457cc8",
       "library/catalog.mjs": "98ff94e3d5102f960cd00300159bd749ff99175f3d060111c4943199c01ef497",
-      "library/core.mjs": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40"
+      "library/core.mjs": "99399db465730ed4b3e22bd0028c5fae830b739a8fab60749cf0e61762491c40",
+      "library/passage-ui.mjs": "7accf3d87d049e469701d13db06697ca4b8b953eb4300a1f3935b48477938900",
+      "library/passages.mjs": "58973fe1097e764b75cf9dff0315ef6a1b3455e2633bc585d1ba1a468cd01a7d",
+      "library/passage-contracts.mjs": "b056fd03b669540fea1b31e24633a6eda8d8645152946da4c9373b04d66e76cd",
+      "library/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
+      "library/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297"
     },
     "imports": {
       "library/app.mjs": [
@@ -27,6 +32,10 @@ const graphs={
         [
           "import-statement",
           "library/core.mjs"
+        ],
+        [
+          "import-statement",
+          "library/passage-ui.mjs"
         ]
       ],
       "library/catalog.mjs": [],
@@ -35,7 +44,31 @@ const graphs={
           "import-statement",
           "library/catalog.mjs"
         ]
-      ]
+      ],
+      "library/passage-ui.mjs": [
+        [
+          "import-statement",
+          "library/passages.mjs"
+        ]
+      ],
+      "library/passages.mjs": [
+        [
+          "import-statement",
+          "library/passage-contracts.mjs"
+        ],
+        [
+          "import-statement",
+          "library/search.mjs"
+        ]
+      ],
+      "library/passage-contracts.mjs": [],
+      "library/search.mjs": [
+        [
+          "import-statement",
+          "library/kinds.mjs"
+        ]
+      ],
+      "library/kinds.mjs": []
     }
   },
   "articles": {
@@ -70,18 +103,25 @@ const graphs={
     "entry": "knowledge/app.mjs",
     "output": "knowledge/app.bundle.mjs",
     "inputs": {
-      "knowledge/app.mjs": "cda94c987caec463905d8b75cc36be9e72ee44639b2a86edd2d6c2de0eca09d9",
+      "knowledge/app.mjs": "4646ce7b02a411cade85832a0be31400cf52b1e908a64931c750dc7acd3ca128",
       "knowledge/core.mjs": "a9133a7e438314406076605e374d58cd0f60d8c310abd3799644a67553812c07",
       "knowledge/kinds.mjs": "42bea1237464d25f99e7ad53dc00a1721b2cb391eed9e0f21baff6363ee55297",
       "knowledge/registry.mjs": "316c7c0777a0438936679e5f07d71dd3639bbb61580f418a9a1546caff6986cd",
       "knowledge/search.mjs": "2e8538c8fbe2a417cb6b414ff7cbe5aa9f11cb8743c97780f3ae67da5f26ef0c",
-      "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6"
+      "knowledge/source-lock.mjs": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
+      "knowledge/journey.mjs": "3cde739f749904e593ce41e4992e0f96054fc6ccbe6099c1906e06778fe42532",
+      "knowledge/learning.mjs": "376b8a2ca3de67934dd14e8bf18a2689ce191c0249905e0e276c24a6d24f6268",
+      "knowledge/json.mjs": "123efc807da6442e7d800863648ad4e196748f355bf1a00fc48a7b453174d5d5"
     },
     "imports": {
       "knowledge/app.mjs": [
         [
           "import-statement",
           "knowledge/registry.mjs"
+        ],
+        [
+          "import-statement",
+          "knowledge/journey.mjs"
         ],
         [
           "import-statement",
@@ -111,7 +151,20 @@ const graphs={
           "knowledge/kinds.mjs"
         ]
       ],
-      "knowledge/source-lock.mjs": []
+      "knowledge/source-lock.mjs": [],
+      "knowledge/journey.mjs": [
+        [
+          "import-statement",
+          "knowledge/learning.mjs"
+        ]
+      ],
+      "knowledge/learning.mjs": [
+        [
+          "import-statement",
+          "knowledge/json.mjs"
+        ]
+      ],
+      "knowledge/json.mjs": []
     }
   },
   "hukamnama": {

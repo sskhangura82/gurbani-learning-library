@@ -1,0 +1,29 @@
+{
+  "schema": "glp.explore.complete-passages.browser.v1",
+  "startedAtUtc": "2026-11-27T17:07:58.419Z",
+  "checks": [
+    {
+      "name": "Source packages load only in Explore, and exact first letters open Kabir Salok 1 then restore with Back",
+      "status": "FAIL",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:53229/explore-review/?view=today\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:53229/explore-review/?view=today\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at open (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:31:47)\n    at /private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:50:31\n    at async check (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:22:49)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:49:2"
+    }
+  ],
+  "layouts": [],
+  "screenshots": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:53229/explore-review/?view=today",
+      "referrer": null
+    }
+  ],
+  "runtimeErrors": [],
+  "limitations": [
+    "Desktop Chromium only; narrow viewports simulate phone layout. No physical iPhone, iPad, Safari, VoiceOver or Home Screen acceptance.",
+    "Offline means browser network emulation with an actual service worker, not physical airplane-mode testing.",
+    "Fresh nonpersistent profiles and synthetic storage only. This is builder evidence, not independent or qualified review.",
+    "Only the 302 connected complete passages are searchable. No whole-corpus admission or printed-Ang authentication is asserted."
+  ],
+  "browser": "158.0.8127.37",
+  "failure": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:53229/explore-review/?view=today\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:53229/explore-review/?view=today\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at open (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:31:47)\n    at /private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:50:31\n    at async check (/private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:22:49)\n    at async file:///private/tmp/glp001-iphoneqa-20261126/explore-complete-passages/tests/explore-complete-passages-browser.mjs:49:2",
+  "finishedAtUtc": "2026-11-27T17:07:58.824Z"
+}

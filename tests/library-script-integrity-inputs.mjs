@@ -16,6 +16,7 @@ const git=(...args)=>execFileSync('git',args,{cwd:root,maxBuffer:64*1024*1024});
 const read=name=>fs.readFile(path.join(root,name));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const NAVIGATION_BASE='44401e35690322fb3dbc29c443bff86d73279fcb';
+const EXPLORE_BASE='d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a';
 const names=git('ls-tree','-r','--name-only',INPUT_BASE).toString().trim().split('\n');
 const loaderPages=new Set(['index.html','gurdwara.html','pauri-2-lesson.html','simran.html','breathing.html','articles/index.html','articles/article.html','knowledge/index.html']);
 const nonApplication=/^(?:\.github|docs|evidence|tests|tools)\//;
@@ -68,17 +69,57 @@ async function navigationScope(){
  assert.deepEqual(record.files.map(f=>f.path),['index.html','library/catalog.mjs']);
  for(const item of record.files){
   assert.equal(hash(navigationComparable(item.path,git('show',NAVIGATION_BASE+':'+item.path))),item.beforeSha256,item.path+' navigation baseline');
-  assert.equal(hash(navigationComparable(item.path,await read(item.path))),item.afterSha256,item.path+' exact frozen Daily entrance change');
+  const dailyBytes=item.path==='index.html'?git('show',EXPLORE_BASE+':'+item.path):await read(item.path);
+  assert.equal(hash(navigationComparable(item.path,dailyBytes)),item.afterSha256,item.path+' exact frozen Daily entrance change');
  }
  return new Set(record.files.map(f=>f.path));
 }
 
-test('Existing application bytes stay frozen outside the exact Daily navigation scope, loader pins and worker manifest',async()=>{
- const navigation=await navigationScope();
+// New source-only collection needs a bounded shared reader extension. This records
+// exact before/after files, while all older source/teaching and module closures stay frozen.
+async function faridReaderScope(){
+ const record=JSON.parse(await read('evidence/salok-farid/inputs/reader-scope.json'));
+ assert.equal(record.schema,'glp.farid.reader-scope.v1');
+ assert.equal(record.base,'4eee4f26bf7bad7ce52d4c958c06a94da1262ecb');
+ assert.deepEqual(record.files.map(f=>f.path),['nitnem/reader.js','tools/refresh-reader-sri.mjs','nitnem/index.html','salok-mahalla9/index.html','salok-kabir/index.html']);
+ for(const item of record.files){
+  assert.equal(hash(git('show',record.base+':'+item.path)),item.beforeSha256,item.path+' Farid baseline');
+  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact Farid extension');
+  if(item.path.endsWith('.html'))assert.equal(loaderComparable((await read(item.path)).toString()),loaderComparable(git('show',record.base+':'+item.path).toString()),item.path+' existing markup unchanged');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+async function journeyScope(){
+ const record=JSON.parse(await read('evidence/knowledge-journey/inputs/change-scope.json'));
+ assert.equal(record.schema,'glp.knowledge.journey-change-scope.v1');
+ assert.equal(record.base,'7f36c3039ca95fac6e69ca28f631b9e3734c70e9');
+ assert.deepEqual(record.files.map(f=>f.path),['knowledge/app.mjs','knowledge/index.html','knowledge/style.css']);
+ for(const item of record.files){
+  assert.equal(hash(git('show',record.base+':'+item.path)),item.beforeSha256,item.path+' exact pre-journey input');
+  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact journey input');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+async function exploreScope(){
+ const record=JSON.parse(await read('evidence/explore-complete-passages/inputs/navigation-scope.json'));
+ assert.equal(record.schema,'glp.explore.complete-passages.scope.v1');
+ assert.equal(record.base,EXPLORE_BASE);
+ assert.deepEqual(record.files.map(f=>f.path),['index.html','library/app.mjs','library/library.css']);
+ for(const item of record.files){
+  assert.equal(hash(git('show',EXPLORE_BASE+':'+item.path)),item.beforeSha256,item.path+' Explore baseline');
+  assert.equal(hash(await read(item.path)),item.afterSha256,item.path+' exact complete-passage UI change');
+ }
+ return new Set(record.files.map(f=>f.path));
+}
+
+test('Existing application bytes stay frozen outside exact Daily, Farid, Haumai and Explore scopes, loader pins and worker manifest',async()=>{
+ const navigation=await navigationScope(),farid=await faridReaderScope(),journey=await journeyScope(),explore=await exploreScope();
  const application=names.filter(name=>!nonApplication.test(name));
  assert.ok(application.length>90,'protection must cover the application, not a small selected sample');
  for(const name of application){
-  if(name==='sw.js'||navigation.has(name))continue;
+  if(name==='sw.js'||navigation.has(name)||farid.has(name)||journey.has(name)||explore.has(name))continue;
   const previous=git('show',INPUT_BASE+':'+name),current=await read(name);
   if(loaderPages.has(name)){
    assert.equal(loaderComparable(current.toString()),loaderComparable(previous.toString()),name+' changed beyond loader pins or bundle URL');
@@ -88,10 +129,13 @@ test('Existing application bytes stay frozen outside the exact Daily navigation 
 
 test('Reader loader contract and reviewed original module closures remain exact',async()=>{
  const readerFiles=['full-japji.html','sukhmani.html','nitnem/index.html','salok-mahalla9/index.html','salok-kabir/index.html','tools/refresh-reader-sri.mjs'];
- for(const name of readerFiles)assert.deepEqual(await read(name),git('show',READER_BASE+':'+name),name);
+ const farid=await faridReaderScope();
+ for(const name of readerFiles)if(!farid.has(name))assert.deepEqual(await read(name),git('show',READER_BASE+':'+name),name);
  const originalModules=['library/app.mjs','library/catalog.mjs','library/core.mjs','articles/app.mjs','articles/core.mjs','articles/source-contracts.mjs','knowledge/app.mjs','knowledge/registry.mjs','knowledge/source-lock.mjs','knowledge/core.mjs','knowledge/kinds.mjs','knowledge/search.mjs'];
  for(const name of originalModules){
   if(name==='library/catalog.mjs'){await navigationScope();continue;}
+  if(name==='knowledge/app.mjs'){await journeyScope();continue;}
+  if(name==='library/app.mjs'){await exploreScope();continue;}
   assert.deepEqual(await read(name),git('show',INPUT_BASE+':'+name),name);
  }
  const priorFoundation='fb49ef41bd890db879d7f93a861585915ef81622';

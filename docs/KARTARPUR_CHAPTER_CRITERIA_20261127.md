@@ -1,0 +1,13 @@
+# Kartarpur source chapter — scope frozen before authoring
+
+27 November 2026. First historical content draft, not a published chapter or scholarly approval.
+
+1. Produce an engaging original English historical draft about Guru Nanak Dev Ji at Kartarpur, with explicit AI-assisted authorship and pending human review. Do not invent a human writer, reviewer, permission grant, dialogue, thought, eyewitness scene or historical detail.
+2. Inspect source content, not search snippets. Prioritize Bhai Gurdas's first Vaar and public-domain historical editions; use institutional secondary scholarship with attribution and precise section/page references. A later account is not an eyewitness report. A modern institution is not a second independent manuscript lineage by itself.
+3. Create actual source metadata and claim records using the existing history registry. Every historical sentence in the draft must map to one or more claim IDs and exact citations. Claims retain uncertainty, limitations and disagreement. Dates of founding and final settlement must not be silently conflated.
+4. Do not reproduce copyrighted modern translations, article prose, pictures or scans in the repository. No AI interpretation of Gurbani is added. Sacred original text may be linked; a verse quote is not needed for this first history draft.
+5. Preserve the existing history admission gate unchanged. Its human-authored chapter slot must not be satisfied with generated prose. Keep this draft in a separate explicitly non-admissible intake wrapper, with no publication/reviewer flags that can be toggled into approval. Its structural checker must withhold it even if all references resolve.
+6. Prepare the planned three reading depths as a short narrative, a source-study section and questions for further study. These questions are editorial prompts, not historical facts or scriptural claims. Do not fill theological explanation slots.
+7. Include a provenance register with retrieval dates, exact locator, source limitations and rights/reuse status. Record failed retrieval and gaps honestly. Do not infer scan page numbers from OCR offsets.
+8. Test useful contract failures: missing or stale claim link, changed draft digest, unknown/unsourced block, forged human authorship, a source field attempting to carry copied text, and accidental promotion. Keep test examples synthetic. Run the existing history contract checks without weakening them.
+9. No application route, scripture pack, reader, learning storage, audio, service worker, deployment, merge or live-site change. Independent review and the founder's release decision remain separate from successful mechanical checks.

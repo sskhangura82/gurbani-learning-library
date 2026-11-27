@@ -1,0 +1,223 @@
+{
+  "status": "PASS",
+  "files": 31,
+  "records": [
+    {
+      "path": "articles/catalog.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "f4dba5709c478d61f9d2313b784239e77f35ed028c03bcc0a1a560391886a35f",
+      "bytes": 1561,
+      "unchanged": true
+    },
+    {
+      "path": "articles/source-contracts.mjs",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "abb640e5e3e10f123c50b5fdbe16d3a42fbf2fdfe29e9090ad4f1016523d04d0",
+      "bytes": 3812,
+      "unchanged": true
+    },
+    {
+      "path": "hukamnama/events/2026-11-27.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd",
+      "bytes": 1875,
+      "unchanged": true
+    },
+    {
+      "path": "hukamnama/sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+      "bytes": 4364,
+      "unchanged": true
+    },
+    {
+      "path": "js/japji-full-data.js",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+      "bytes": 83714,
+      "unchanged": true
+    },
+    {
+      "path": "js/japji-lessons.js",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "4f77c593d2df8dd6e72ead4cb2b2012991a3ca0ad56495f6f5a30ae96a7d7078",
+      "bytes": 257626,
+      "unchanged": true
+    },
+    {
+      "path": "js/line-meanings.js",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "5f2ccfea58faa9fc5a31edac3ec9d3483e0ec2360e471fd3616f17eed005485a",
+      "bytes": 115470,
+      "unchanged": true
+    },
+    {
+      "path": "js/sukhmani-data.js",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+      "bytes": 1241749,
+      "unchanged": true
+    },
+    {
+      "path": "js/sukhmani-teaching.js",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "5c637bc1f098cfd2416ad28404c79cc8561143fd7ca5921b3238a8f9cab134e6",
+      "bytes": 1841631,
+      "unchanged": true
+    },
+    {
+      "path": "knowledge/pilot.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "c3136d8f170b1ed5623123cd133bf4c3b7d998644801c31a6b21d8a2311dcdaf",
+      "bytes": 27928,
+      "unchanged": true
+    },
+    {
+      "path": "knowledge/scripture.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "cf5b6e72f1cfaad9180d41f4214081cb3dc795644309696d8aba91f3ede64d7b",
+      "bytes": 21163,
+      "unchanged": true
+    },
+    {
+      "path": "knowledge/source-lock.mjs",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "d3e6ae095aaef13ad9d018a68b6b492fc00f37e86efc96a1b918406e5ea288d6",
+      "bytes": 211,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/anand.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+      "bytes": 127242,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/chaupai.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+      "bytes": 70494,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/jaap.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+      "bytes": 538376,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/library.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75",
+      "bytes": 2552,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/rehras.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+      "bytes": 149365,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/savaiye.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+      "bytes": 27078,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/data/sohila.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+      "bytes": 26637,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/learning/course.complete.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c",
+      "bytes": 2313550,
+      "unchanged": true
+    },
+    {
+      "path": "nitnem/learning/learning-ui.js",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "dc6da48882ceb647023e451eb6fff10c57f2af87e9a531486cf8bb89c87409b2",
+      "bytes": 9161,
+      "unchanged": true
+    },
+    {
+      "path": "salok-kabir/data/library.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "eae1fdfdd3e9fedd7937bf95ec6bbe64f35b8112ece472a8a4b252bdf40d6c8d",
+      "bytes": 814,
+      "unchanged": true
+    },
+    {
+      "path": "salok-kabir/data/salok-kabir.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "34698bcbbaa8c54416de495011ee38493f549a5c0b92720e684f8c399dcf64f2",
+      "bytes": 676775,
+      "unchanged": true
+    },
+    {
+      "path": "salok-kabir/learning/course.complete.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "909002381a351de0944cacb86ef2fd8b38438177e294a3fdd2b303a2ffbe86b9",
+      "bytes": 1543204,
+      "unchanged": true
+    },
+    {
+      "path": "salok-mahalla9/data/library.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "abba1e752d13bd6a3dadef63d287d992fd20ac8a2408163239d501db2971769e",
+      "bytes": 788,
+      "unchanged": true
+    },
+    {
+      "path": "salok-mahalla9/data/salok-mahalla9.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "f72690bb730b24e6631fbbabf574798e5451837987d227a807a3bcf49a366e75",
+      "bytes": 118876,
+      "unchanged": true
+    },
+    {
+      "path": "salok-mahalla9/learning/course.complete.json",
+      "input": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+      "sha256": "e8fdcba77ac0cbf0ab396218a86225e45901ff9cb5b1c8524c7f6261a443bc79",
+      "bytes": 435013,
+      "unchanged": true
+    },
+    {
+      "path": "salok-farid/data/library.json",
+      "input": "ea7186e7127d84a521bd965d71a659c0698a7404",
+      "sha256": "f239e62d2e55fb54c060d827f3596b94ca85ccf3833fa4525315684788ac538c",
+      "bytes": 803,
+      "unchanged": true
+    },
+    {
+      "path": "salok-farid/data/salok-farid.json",
+      "input": "ea7186e7127d84a521bd965d71a659c0698a7404",
+      "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643",
+      "bytes": 388513,
+      "unchanged": true
+    },
+    {
+      "path": "research/salok-farid/selection-ledger.json",
+      "input": "ea7186e7127d84a521bd965d71a659c0698a7404",
+      "sha256": "b7013c6677dc54b1f35220ed854c7872068aaab4246d3577fd7c9b1d031543e1",
+      "bytes": 9450,
+      "unchanged": true
+    },
+    {
+      "path": "research/salok-farid/secondary-display.json",
+      "input": "ea7186e7127d84a521bd965d71a659c0698a7404",
+      "sha256": "6b9c4b1b27a38afd9658c4eebec3376d0f267086b47f1e74c6b1212d36ea77a5",
+      "bytes": 41805,
+      "unchanged": true
+    }
+  ]
+}

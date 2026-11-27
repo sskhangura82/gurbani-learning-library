@@ -1,0 +1,226 @@
+TAP version 13
+# Subtest: 303 immutable owning units become302 unique complete passages, with the overlapping view preserved
+ok 1 - 303 immutable owning units become302 unique complete passages, with the overlapping view preserved
+  ---
+  duration_ms: 1.290458
+  type: 'test'
+  ...
+# Subtest: the complete crosswalk reproduces against the full 60,555-occurrence research packet
+ok 2 - the complete crosswalk reproduces against the full 60,555-occurrence research packet
+  ---
+  duration_ms: 513.915709
+  type: 'test'
+  ...
+# Subtest: literal Haumai matches return complete originals, retaining the remedy clause
+ok 3 - literal Haumai matches return complete originals, retaining the remedy clause
+  ---
+  duration_ms: 12.577334
+  type: 'test'
+  ...
+# Subtest: joined and spaced first-letter queries return the same complete Kabir unit
+ok 4 - joined and spaced first-letter queries return the same complete Kabir unit
+  ---
+  duration_ms: 0.95475
+  type: 'test'
+  ...
+# Subtest: English topic names, substring mistakes and unsupported syntax do not become scripture matches
+ok 5 - English topic names, substring mistakes and unsupported syntax do not become scripture matches
+  ---
+  duration_ms: 0.672292
+  type: 'test'
+  ...
+# Subtest: missing or corrupted source packages withhold the whole result set
+ok 6 - missing or corrupted source packages withhold the whole result set
+  ---
+  duration_ms: 14.266292
+  type: 'test'
+  ...
+# Subtest: retargeted, promoted, truncated, extra and duplicate-key crosswalks refuse before source disclosure
+ok 7 - retargeted, promoted, truncated, extra and duplicate-key crosswalks refuse before source disclosure
+  ---
+  duration_ms: 7.124417
+  type: 'test'
+  ...
+# Subtest: full ordered equality rejects first-line-only and normalization fallbacks, retaining ambiguity
+ok 8 - full ordered equality rejects first-line-only and normalization fallbacks, retaining ambiguity
+  ---
+  duration_ms: 13.142416
+  type: 'test'
+  ...
+# Subtest: source text and exact identities remain immutable after load and cannot be supplied by an unverified catalog
+ok 9 - source text and exact identities remain immutable after load and cannot be supplied by an unverified catalog
+  ---
+  duration_ms: 1.04925
+  type: 'test'
+  ...
+# Subtest: closed-library search mirrors are exactly the existing Knowledge implementation
+ok 10 - closed-library search mirrors are exactly the existing Knowledge implementation
+  ---
+  duration_ms: 3.745958
+  type: 'test'
+  ...
+# Subtest: cached response URLs accept only the same local path and one release marker; content digests remain required
+ok 11 - cached response URLs accept only the same local path and one release marker; content digests remain required
+  ---
+  duration_ms: 0.535375
+  type: 'test'
+  ...
+# Subtest: the directory names ten distinct existing readers and does not duplicate Japji
+ok 12 - the directory names ten distinct existing readers and does not duplicate Japji
+  ---
+  duration_ms: 1.2805
+  type: 'test'
+  ...
+# Subtest: every reader route exists and Saved entry preserves its exact reading route
+ok 13 - every reader route exists and Saved entry preserves its exact reading route
+  ---
+  duration_ms: 1.137
+  type: 'test'
+  ...
+# Subtest: each source binding matches exact file bytes and declared identity
+ok 14 - each source binding matches exact file bytes and declared identity
+  ---
+  duration_ms: 13.534708
+  type: 'test'
+  ...
+# Subtest: source package metadata and existing manifests agree with the directory bindings
+ok 15 - source package metadata and existing manifests agree with the directory bindings
+  ---
+  duration_ms: 0.29975
+  type: 'test'
+  ...
+# Subtest: Nitnem preserves its mixed source families instead of relabelling everything SGGS
+ok 16 - Nitnem preserves its mixed source families instead of relabelling everything SGGS
+  ---
+  duration_ms: 0.109042
+  type: 'test'
+  ...
+# Subtest: directory records contain navigation metadata, not verse copies or authority claims
+ok 17 - directory records contain navigation metadata, not verse copies or authority claims
+  ---
+  duration_ms: 0.250167
+  type: 'test'
+  ...
+# Subtest: all catalog arrays, records and nested aliases/bindings are immutable
+ok 18 - all catalog arrays, records and nested aliases/bindings are immutable
+  ---
+  duration_ms: 0.071
+  type: 'test'
+  ...
+# Subtest: whole-token directory search rejects substring traps and unrelated metadata
+ok 19 - whole-token directory search rejects substring traps and unrelated metadata
+  ---
+  duration_ms: 2.46
+  type: 'test'
+  ...
+# Subtest: explicit Punjabi and transliterated title aliases resolve without searching descriptions
+ok 20 - explicit Punjabi and transliterated title aliases resolve without searching descriptions
+  ---
+  duration_ms: 0.325042
+  type: 'test'
+  ...
+# Subtest: empty search shows readers, punctuation-only and invalid input do not
+ok 21 - empty search shows readers, punctuation-only and invalid input do not
+  ---
+  duration_ms: 0.090958
+  type: 'test'
+  ...
+# Subtest: only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+ok 22 - only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today
+  ---
+  duration_ms: 0.103083
+  type: 'test'
+  ...
+# Subtest: Explore only links existing destinations and preserves literal-topic status
+ok 23 - Explore only links existing destinations and preserves literal-topic status
+  ---
+  duration_ms: 0.271458
+  type: 'test'
+  ...
+# Subtest: Simran and physiology remain distinct navigation categories
+ok 24 - Simran and physiology remain distinct navigation categories
+  ---
+  duration_ms: 0.108083
+  type: 'test'
+  ...
+# Subtest: planned modules are unavailable metadata rather than functioning links or substitutes
+ok 25 - planned modules are unavailable metadata rather than functioning links or substitutes
+  ---
+  duration_ms: 0.078
+  type: 'test'
+  ...
+# Subtest: lookup helpers only return the declared catalogue entry
+ok 26 - lookup helpers only return the declared catalogue entry
+  ---
+  duration_ms: 0.058375
+  type: 'test'
+  ...
+# Subtest: Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+ok 27 - Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input
+  ---
+  duration_ms: 2001.800583
+  type: 'test'
+  ...
+# Subtest: Existing application bytes stay frozen outside exact Daily and Explore changes, loader pins and worker manifest
+ok 28 - Existing application bytes stay frozen outside exact Daily and Explore changes, loader pins and worker manifest
+  ---
+  duration_ms: 1584.13075
+  type: 'test'
+  ...
+# Subtest: Reader loader contract and reviewed original module closures remain exact
+ok 29 - Reader loader contract and reviewed original module closures remain exact
+  ---
+  duration_ms: 259.557541
+  type: 'test'
+  ...
+# Subtest: All 15 production pages carry exactly 52 independently inventoried script pins
+ok 30 - All 15 production pages carry exactly 52 independently inventoried script pins
+  ---
+  duration_ms: 194.814083
+  type: 'test'
+  ...
+# Subtest: Generated modules reproduce exactly and contain no executable import or export-from edges
+ok 31 - Generated modules reproduce exactly and contain no executable import or export-from edges
+  ---
+  duration_ms: 154.028958
+  type: 'test'
+  ...
+# Subtest: Ordinary check mode writes neither bundles nor HTML
+ok 32 - Ordinary check mode writes neither bundles nor HTML
+  ---
+  duration_ms: 132.6635
+  type: 'test'
+  ...
+# Subtest: Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+ok 33 - Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts
+  ---
+  duration_ms: 6.467041
+  type: 'test'
+  ...
+# Subtest: Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+ok 34 - Bundling rejects unexpected dependencies and unresolved dynamic executable loading
+  ---
+  duration_ms: 5.896583
+  type: 'test'
+  ...
+# Subtest: Extra HTML and stale source cannot silently pass default checks
+ok 35 - Extra HTML and stale source cannot silently pass default checks
+  ---
+  duration_ms: 287.3445
+  type: 'test'
+  ...
+# Subtest: A pinned bundle cannot retain secondary imports or recover an inline execution path
+ok 36 - A pinned bundle cannot retain secondary imports or recover an inline execution path
+  ---
+  duration_ms: 11.042
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3934.047416

@@ -1,0 +1,117 @@
+{
+  "schema": "glp.history.ai-draft.v1",
+  "id": "draft.kartarpur-after-journeys",
+  "title": "Kartarpur — after the journeys",
+  "status": "AI_ASSISTED_UNREVIEWED_DRAFT",
+  "authorship": {
+    "kind": "AI_ASSISTED_DRAFT",
+    "tool": "ChatGPT",
+    "humanWriter": null
+  },
+  "rights": "ORIGINAL_PROJECT_DRAFT_NO_SOURCE_REPRODUCTION",
+  "relationIds": [
+    "relation.nanak-at-kartarpur",
+    "relation.angad-at-kartarpur",
+    "relation.succession-at-kartarpur"
+  ],
+  "sections": [
+    {
+      "depth": "STORY",
+      "title": "A return, a household, a gathering",
+      "blocks": [
+        {
+          "id": "block.story-clothes",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "This chapter opens with a change of clothes. Bhai Gurdas Ji's account of Guru Nanak Dev Ji's return to Kartarpur describes the Guru putting aside the garb of an udasi and wearing the clothes of a householder. The detail is small enough to picture, and concrete enough to look up: the first two lines of Pauri 38 in the first Vaar.",
+          "claimIds": [
+            "claim.kartarpur-return-dress"
+          ]
+        },
+        {
+          "id": "block.story-place",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "The place is Kartarpur by the River Ravi. The Encyclopaedia of Sikhism distinguishes it from the Kartarpur in the Jalandhar region, and describes Guru Nanak Dev Ji living here with his family after his travels. A reader following the journeys has arrived at a home.",
+          "claimIds": [
+            "claim.kartarpur-ravi-place",
+            "claim.kartarpur-family-home"
+          ]
+        },
+        {
+          "id": "block.story-gathering",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "Bhai Gurdas Ji's pauri also gives us a gathering to study. It speaks of recitation and discussion, names Sodar and Aarti, and then refers to Jap at Amrit Vela. In these few lines, the account moves from the Guru's return and clothing to words spoken and sung. We can follow those details without pretending to recover an entire day.",
+          "claimIds": [
+            "claim.kartarpur-return-dress",
+            "claim.kartarpur-recitation"
+          ]
+        },
+        {
+          "id": "block.story-work",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "Work and shared food enter through another source. Harinder Singh's 2019 article for the Sikh Research Institute describes the Guru farming and a community hall and kitchen at Kartarpur. The fields, the gathering and the kitchen give us three settings to investigate.",
+          "claimIds": [
+            "claim.kartarpur-farm-kitchen"
+          ]
+        },
+        {
+          "id": "block.story-continuity",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "The account of Kartarpur also leads onward to Guru Angad Dev Ji. The Encyclopaedia places Bhai Lahina Ji's instruction here, followed by his nomination as Guru Nanak Dev Ji's successor. Bhai Gurdas Ji's same pauri names Guru Angad too. A chapter that begins with a return therefore opens the next part of the history: the continuation of the Guruship.",
+          "claimIds": [
+            "claim.kartarpur-lahina",
+            "claim.kartarpur-angad-in-vaar"
+          ]
+        }
+      ]
+    },
+    {
+      "depth": "SOURCE_STUDY",
+      "title": "Read the accounts closely",
+      "blocks": [
+        {
+          "id": "block.study-generation",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "An early account is not automatically an eyewitness account. The Encyclopaedia dates Bhai Gurdas Ji to 1551–1636 and Guru Nanak Dev Ji to 1469–1539. On that chronology, Bhai Gurdas Ji belongs to a later generation. His pauri is valuable early Sikh testimony; its exact date and manuscript history are separate questions still to research.",
+          "claimIds": [
+            "claim.kartarpur-source-generation",
+            "claim.kartarpur-return-dress"
+          ]
+        },
+        {
+          "id": "block.study-wording",
+          "kind": "HISTORICAL_NARRATIVE",
+          "text": "Macauliffe's 1909 compilation also describes the return, hymns and conversation at Kartarpur. At the turn of printed pages 180–181, it names Sodar and Sohila in the evening and Japji in the morning. Bhai Gurdas Ji's line names Aarti. We preserve that difference instead of silently replacing one title with another. The difference alone does not prove that the accounts describe incompatible practices.",
+          "claimIds": [
+            "claim.kartarpur-macauliffe-recitation",
+            "claim.kartarpur-source-wording",
+            "claim.kartarpur-return-dress"
+          ]
+        }
+      ]
+    },
+    {
+      "depth": "FURTHER_STUDY",
+      "title": "Questions to carry into the next reading",
+      "blocks": [
+        {
+          "id": "block.question-source",
+          "kind": "EDITORIAL_QUESTION",
+          "text": "Which detail in the story comes from Bhai Gurdas Ji's pauri, and which comes from a later writer? Try finding one of each before opening the references.",
+          "claimIds": []
+        },
+        {
+          "id": "block.question-community",
+          "kind": "EDITORIAL_QUESTION",
+          "text": "What would you want to learn about the work, shared meals and learning in this community? Write your question first; then ask what kind of source could answer it.",
+          "claimIds": []
+        },
+        {
+          "id": "block.question-precision",
+          "kind": "EDITORIAL_QUESTION",
+          "text": "When two accounts use different words, how can we preserve both fairly while we investigate further?",
+          "claimIds": []
+        }
+      ]
+    }
+  ]
+}
