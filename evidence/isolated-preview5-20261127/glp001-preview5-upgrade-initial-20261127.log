@@ -1,0 +1,12 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: TypeError: Cannot read properties of null (reading 'postMessage')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:77)
+    at async <anonymous>:337:30
+    at /private/tmp/glp001-iphoneqa-20261126/preview5-upgrade-check.mjs:5:753 {
+  log: []
+}
+
+Node.js v26.0.0

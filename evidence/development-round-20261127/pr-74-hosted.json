@@ -1,0 +1,40 @@
+{
+  "pullRequest": 74,
+  "headSha": "6b574e55e99187c8cb0a7dd3e89076e980008f62",
+  "runs": [
+    {
+      "id": 46040759164,
+      "name": "Complete passages in Explore",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46040759164",
+      "headSha": "6b574e55e99187c8cb0a7dd3e89076e980008f62"
+    },
+    {
+      "id": 46040758823,
+      "name": "GLP Knowledge Pilot QA",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46040758823",
+      "headSha": "6b574e55e99187c8cb0a7dd3e89076e980008f62"
+    },
+    {
+      "id": 46040758631,
+      "name": "Daily Hukamnama delivery and private learning",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46040758631",
+      "headSha": "6b574e55e99187c8cb0a7dd3e89076e980008f62"
+    },
+    {
+      "id": 46040758919,
+      "name": "Complete library script integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46040758919",
+      "headSha": "6b574e55e99187c8cb0a7dd3e89076e980008f62"
+    }
+  ],
+  "independentReview": false,
+  "physicalDeviceTest": false
+}

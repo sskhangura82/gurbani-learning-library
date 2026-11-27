@@ -1,0 +1,16 @@
+{
+  "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#reading') to be visible\u001b[22m\n\u001b[2m    - locator resolved to hidden <div hidden=\"\" id=\"reading\">…</div>\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <div id=\"reading\">…</div>\u001b[22m\n",
+  "checks": [
+    {
+      "name": "All runtime script integrity pins preserved, including preview update handler",
+      "passed": true,
+      "pins": 53
+    },
+    {
+      "name": "All four library entrances open on the reviewed preview",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "physicalDeviceTest": false
+}

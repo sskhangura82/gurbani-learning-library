@@ -1,0 +1,24 @@
+{
+  "message": "page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#continuous-reader[data-source-integrity=\"verified\"]') to be visible\u001b[22m\n",
+  "checks": [
+    {
+      "name": "All runtime script integrity pins preserved, including preview update handler",
+      "passed": true,
+      "pins": 53
+    },
+    {
+      "name": "All four library entrances open on the reviewed preview",
+      "passed": true
+    },
+    {
+      "name": "Exact complete Daily original, honest explanation slots and synthetic saved note survive reload",
+      "passed": true
+    },
+    {
+      "name": "Reviewed Knowledge search opens a source passage and excludes prior false matches",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "physicalDeviceTest": false
+}

@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "qaCommit": "17e6b6d2dd4c8dd5f9ddee909507065002c1e934",
+  "pagesBuildStatus": "built",
+  "checks": [
+    {
+      "path": "preview.html",
+      "status": 200,
+      "bytes": 3488,
+      "sha256": "6df15052407f0eb1f4d6e40bc8dd9d1bcd7227d3dd9855075fe9fb6a315a28ed",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "qa-build.json",
+      "status": 200,
+      "bytes": 1161,
+      "sha256": "52186e34d45e41523b08854eb3f6bdd5f90407027c6114e2cab4e43cdd9ea538",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 11758,
+      "sha256": "a9cda2d08136bf3f3fbe8c41f0f628cf35a9176f03f70f96d339638d31e517d0",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "full-japji.html",
+      "status": 200,
+      "bytes": 6865,
+      "sha256": "682c4935558a9bac618e8a4ceaae79b356ded010f20a8c976a5032df68425dc9",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "sukhmani.html",
+      "status": 200,
+      "bytes": 5637,
+      "sha256": "cd58cdbaf87e60291815bd07da5fc5328d230a6a83a63a199f5f858d6f1ae11f",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "knowledge/index.html",
+      "status": 200,
+      "bytes": 3336,
+      "sha256": "f09a9420eb3dd147de8091bbbdd08525e3abd6bbbd7082ee942293d54554164c",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "hukamnama/index.html",
+      "status": 200,
+      "bytes": 10414,
+      "sha256": "24d970fac3ee263f0f0b76601278a179ecf2360e7393d0a93235f97bb9bb561a",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "hukamnama/events/2026-11-27.json",
+      "status": 200,
+      "bytes": 1875,
+      "sha256": "620fb3809fa5348e1ab5bc89f13b57060b1d67b5e1af1c0de038792458cbf9dd",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "hukamnama/sources/c7f434800aae668f63cb398304cfcaf6159e6343156653778ebef37bf3bcb20d.json",
+      "status": 200,
+      "bytes": 4364,
+      "sha256": "981a6b2d8ccfc3485259104d5c7b209d9c0135a1367df28d3b7ebf5d758bca57",
+      "servedBytesMatchCommittedPreview": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "bytes": 10787,
+      "sha256": "debfbe124e65634841868e64a2e938c92ac49f1372acfae3c5e337dd04da402f",
+      "servedBytesMatchCommittedPreview": true
+    }
+  ],
+  "physicalPhoneChecked": false
+}

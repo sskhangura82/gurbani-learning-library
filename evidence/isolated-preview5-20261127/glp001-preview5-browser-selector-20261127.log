@@ -1,0 +1,16 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#continuous-reader[data-source-integrity="verified"]') to be visible[22m
+
+    at /private/tmp/glp001-iphoneqa-20261126/preview5-check.mjs:36:150 {
+  log: [
+    `  - waiting for locator('#continuous-reader[data-source-integrity="verified"]') to be visible`
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v26.0.0

@@ -1,0 +1,32 @@
+{
+  "buildId": "qa5-7f36c30",
+  "preparedAtUtc": "2026-11-27T16:56:54.064936+00:00",
+  "preparedAtPacific": "2026-11-27T08:56:54.064936-08:00",
+  "sourceRepository": "sskhangura82/gurbani-learning-library",
+  "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+  "sourcePullRequest": 62,
+  "independentReviewCommit": "539aff478cbe5f90892de274b7f1518ce0a6ddfd",
+  "independentReviews": [
+    "RT-021",
+    "RT-022",
+    "RT-023",
+    "RT-024",
+    "RT-025",
+    "RT-026",
+    "CHAIN-02"
+  ],
+  "previousQaCommit": "63780b0a15c56a974c9dafd41d3308c0b82c1bf7",
+  "cacheVersion": "iphone-qa5-7f36c30-20261127",
+  "runtimeScriptureChanges": false,
+  "physicalIphoneAcceptance": "NOT_RECORDED",
+  "qualifiedHumanReview": "STATUS_UNCHANGED",
+  "pdfCopyInteroperability": "OPEN",
+  "knowledgePilotIncluded": true,
+  "dailyDatedReaderIncluded": true,
+  "automaticDailyPublisherEnabled": false,
+  "haumaiPrivateJourneyIncluded": false,
+  "haumaiPrivateJourneyPendingPullRequest": 66,
+  "sourceBranchMerge": false,
+  "familySiteRelease": false,
+  "previewAuthorization": "Founder requested staging reviewed reader work on the isolated preview, 27 November 2026."
+}

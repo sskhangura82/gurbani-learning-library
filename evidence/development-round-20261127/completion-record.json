@@ -1,0 +1,39 @@
+{
+  "recordedAtUtc": "2026-11-27T17:21:08.245481+00:00",
+  "isolatedPreview": {
+    "qaCommit": "17e6b6d2dd4c8dd5f9ddee909507065002c1e934",
+    "sourceCommit": "7f36c3039ca95fac6e69ca28f631b9e3734c70e9",
+    "url": "https://glp001-iphone-qa.github.io/glp001-iphone-test/preview.html",
+    "pagesExactCommitBuilt": true,
+    "httpsAndFreshDesktopBrowserVerified": true,
+    "physicalDeviceVerified": false
+  },
+  "newCandidates": [
+    {
+      "pullRequest": 71,
+      "head": "64fcfd10aeb0b12d6db58586f93b0844b6357684"
+    },
+    {
+      "pullRequest": 72,
+      "head": "ea7186e7127d84a521bd965d71a659c0698a7404"
+    },
+    {
+      "pullRequest": 73,
+      "head": "43b0a37ec3102d4e1bdfb1b1cb7948b35cac5ff9"
+    },
+    {
+      "pullRequest": 74,
+      "head": "6b574e55e99187c8cb0a7dd3e89076e980008f62"
+    }
+  ],
+  "haumaiExistingComposite": {
+    "pullRequest": 66,
+    "head": "ebc190509759dcc2460f23005c81b217c5de40ee",
+    "alreadyContainsReviewedReader": true,
+    "newPrivateJourneyDeployed": false
+  },
+  "automaticPublisherActivated": false,
+  "sourceMainMerged": false,
+  "familyRelease": false,
+  "audioWork": false
+}
