@@ -140,3 +140,36 @@ which two in RT-021 were **repeats of errors I had already written down** — a
 crude regex reading a denial as a claim, and measuring the Nitnem landing page.
 Writing an error down has not been sufficient to stop me repeating it, which is
 the honest summary of my own reliability tonight.
+
+
+---
+
+## Second update — PR #60 and the build lock
+
+### Candidate added
+
+| PR | head | review | verdict |
+|---|---|---|---|
+| #60 | `44401e35` (app bytes identical to `69e24fe4`) | RT-022, RT-023 | **PASS.** Closes MOD-01; all 9 delta criteria met; CI green on all nine checks |
+
+### Findings that moved
+
+| ID | State |
+|---|---|
+| **MOD-01** | **CLOSED** by #60. Bundling removes transitive imports, so entry-point integrity covers the graph. The RT-018 exploit — neutralising the guard in the loose `registry.mjs` — now has no effect |
+| **BUILD-01** | **opened and CLOSED the same evening.** The lockfile held absolute paths from the generating machine, so `npm ci` and both documented checks could not run. Regenerated; install succeeds and the bundles now **reproduce byte-for-byte** from the reviewed modules |
+| **SRI-01** | reader pages (#59) and Library/Articles/Knowledge (#60) now covered — **14 pages, 51 scripts, all pinned and recomputed valid.** Still open for the served HTML document itself, the worker, and all of `main`, which has 43 script tags and 0 pins |
+| update-failure preservation | was "demonstrated by neither of us"; now **builder-demonstrated, not independently verified** — the previously skipped job ran and passed |
+
+### A correction that was not mine
+
+The builder corrected their own reference: the Explorer carrying EXP-01 is PR
+#41, not #50. My RT-017 findings already attributed it to #41, so nothing of
+mine needed changing. Recorded so the correction is not later credited to a fix
+of mine.
+
+### Error count
+
+Unchanged at twenty-three. RT-022 and RT-023 added none — but their frozen
+criteria caught a real gap in mine: I had tested nothing under a non-root URL
+path, which is how the site is actually served. It passes, on their criterion.
