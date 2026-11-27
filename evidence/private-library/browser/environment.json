@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "67125703fd04a370a74bb098470bb14368f4ac40",
+  "checkedAtUtc": "2026-11-27T20:57:30.080039+00:00",
+  "environment": "Temporary isolated desktop Chrome on authorized macOS device",
+  "platform": "Darwin",
+  "nodeVersion": "v22.15.0",
+  "chromeVersion": "Google Chrome 158.0.8127.37",
+  "playwrightVersion": "1.62.1",
+  "sourceSha256": {
+    "private-library/app.mjs": "9e82b7162761a5d6ac7b9dd08e0f40d3231495e14027dd3d6ce0d52dd540358b",
+    "private-library/index.html": "39807ac835a9c98307f3825c3ff339f4b49315ffe422af3c14eab009aabd484a",
+    "private-library/private-library.css": "bb12a11bd35a0d99c0f11bb229f259270da28240db7ce71364823bed2bd0eede",
+    "tests/private-library-browser.mjs": "9c7edf477b8d620c110880022817f2beb2c859885afd6254ceef8b5acec1c743"
+  },
+  "privateUserInputs": "None. The test creates synthetic ciphertext in memory.",
+  "profile": "Fresh temporary headless profile, closed by the test."
+}
