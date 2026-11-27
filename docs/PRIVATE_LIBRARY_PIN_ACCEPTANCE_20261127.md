@@ -10,10 +10,11 @@ policy for new collections; it does not change source-review status.
    silently change a supplied PIN. New seal operations reject every other
    credential format.
 2. The reader opens in PIN mode with a masked input, numeric mobile keyboard,
-   six-digit browser constraints and clear validation. An explicit previous
-   passphrase mode may unlock existing 24–256-character collections without
-   allowing new passphrase-based sealing. The credential mode does not change
-   the encrypted format or cryptographic algorithms.
+   six-digit browser constraints and clear validation. There is no previous
+   passphrase option in the product flow: the private feature is not deployed
+   and the owner will reseal its pack. Low-level decoding retains compatibility
+   with existing 24–256-character collections without allowing new
+   passphrase-based sealing. The encrypted format and algorithms stay the same.
 3. Preserve AES-256-GCM, a fresh salt and nonce for each seal, PBKDF2-SHA-256 at
    600,000 iterations, authenticated bounded schemas, generic wrong-credential
    and tampering refusal, and constant-stack Base64 handling.
