@@ -1,4 +1,5 @@
 import {SOURCES} from './source-lock.mjs';
+import {appendLearning} from './learning.mjs';
 import {
   verifyManifest, verifyChunk, unitsForPage, parseRoute, formatRoute,
   lineForRoute, makeProgress, progressUnit, validateProgress, progressKey
@@ -97,6 +98,7 @@ function renderUnit(unit, requestedPage) {
     row.append(original, locator); text.append(row);
   }
   article.append(text);
+  appendLearning({article, manifest, unit});
   // Names are provider attributions, not independently established authorship.
   const attribution = manifest.authors.find(value => value.id === unit.authorId);
   if (attribution) {

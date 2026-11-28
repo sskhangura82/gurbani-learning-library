@@ -27,7 +27,8 @@ const additions=[
  './salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json',
  './collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html',
  './collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html',
- './collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs'
+ './collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs',
+ './psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css'
 ];
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8',
  '.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8',
@@ -241,6 +242,21 @@ try{
   assert.deepEqual(await storage(),storageBefore,'Navigating the offline library does not modify private records');
   return {served,knowledgeCompleteOccurrences:expectedLines.length,completeSourceSheets:2,
    finalCacheVerifiedResponses:Object.keys(candidate.expected).length,preservedLearningRecords:Object.keys(seed).length};
+ });
+ await check('All three public psychology studies remain readable from the verified shell offline',async()=>{
+  const pages=[];
+  for(const [slug,title]of [['intellectual-humility','Intellectual humility'],['attention','Attention while reading'],['emotion-regulation','Emotion regulation']]){
+   const response=await page.goto(origin+prefix+'psychology/'+slug+'.html');
+   assert.equal(response.fromServiceWorker(),true);
+   assert.equal(await page.locator('main h1').textContent(),title);
+   assert.equal(await page.locator('script,input[type=password],form').count(),0);
+   for(const id of ['research','limits','reflection','sources'])
+    assert.ok((await page.locator('section[aria-labelledby="'+id+'"]').textContent()).length>80,id+' remains substantive offline');
+   pages.push(slug);
+  }
+  assert.deepEqual(await snapshot(cacheName(candidate)),expectedCache(candidate));
+  assert.deepEqual(await storage(),storageBefore,'Offline study never changes saved learning');
+  return {pages,publicAccess:true,savedLearningUnchanged:true};
  });
 }catch(error){report.failure=error.stack||String(error);process.exitCode=1;}
 finally{

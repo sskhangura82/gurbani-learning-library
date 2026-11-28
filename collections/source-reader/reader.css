@@ -4,3 +4,37 @@
 [data-theme=dark]{color-scheme:dark;--paper:#102c2b;--card:#173734;--ink:#f4ead5;--muted:#bdcabc;--line:#34504b;--accent:#b6d6bb;--wash:#203e37}
 @media(max-width:580px){.page-shell{padding:18px 16px 40px}.site-header{align-items:flex-start}.wordmark{max-width:148px}.site-header button{font-size:12px;padding:7px 10px}.reader-controls{padding:16px;grid-template-columns:1fr;gap:16px}.size-field{max-width:none}.size-field select{width:100%}.source-group{padding:20px 18px}.title-pa{font-size:23px}.gurmukhi{line-height:1.95}.page-navigation button{padding:8px 12px}.reading-actions{gap:8px}.reading-actions button{flex:1;padding:8px 10px}.group-heading{font-size:24px}}
 @media print{body{background:white;color:black}.page-shell{max-width:none;padding:0}.site-header,.back,.reader-controls,.reading-actions,.progress-status,footer nav{display:none}.source-group{border:0;padding:0;margin:28px 0;background:white}.source-line{break-inside:avoid}.gurmukhi{font-size:24px;line-height:1.8;outline:none!important}.edition-note{display:block}.line-locator,.group-context,.group-boundary{color:#333}.group-boundary{background:white}}
+
+/* Optional editorial learning remains outside every original-text node. */
+.source-learning{margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--wash);font-size:16px;min-width:0;overflow-wrap:anywhere}
+.source-learning-summary{min-height:44px;cursor:pointer;scroll-margin-top:100px}
+.source-learning-kicker{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--muted)}
+.source-learning-title,.source-learning-coverage{display:block;margin-top:5px}
+.source-learning-title{font-size:20px;font-weight:650;line-height:1.4}
+.source-learning-coverage{font-size:12px;font-weight:400;color:var(--muted)}
+.source-learning-review{font-size:13px;font-weight:650;margin:20px 0 8px}
+.source-learning-introduction,.source-learning-note,.source-learning-locator{font-size:13px;color:var(--muted)}
+.source-learning-controls{display:flex;flex-wrap:wrap;gap:18px 24px;margin:22px 0}
+.source-learning-controls fieldset{display:flex;flex-wrap:wrap;gap:8px;min-width:0;max-width:100%;padding:0;margin:0;border:0}
+.source-learning-controls legend{padding:0;margin-bottom:8px;font-size:13px;font-weight:650}
+.source-learning button{max-width:100%;min-width:0;font-size:14px;white-space:normal;overflow-wrap:anywhere}
+.source-learning-controls button[aria-pressed=true]{color:var(--paper);background:var(--accent);border-color:var(--accent)}
+.source-learning-section,.source-learning-reflection,.source-learning-psychology,.source-learning-sources{padding-top:18px;margin-top:20px;border-top:1px solid var(--line)}
+.source-learning h3{font-size:19px;line-height:1.5;margin:0 0 12px}
+.source-learning h4{font-size:15px;margin:18px 0 8px}
+.source-learning-paragraph{margin-bottom:22px}
+.source-learning-explanation{margin:0 0 10px;white-space:pre-wrap}
+.source-learning-row-links,.source-learning-witnesses{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:7px}
+.source-learning-reference-label{font-size:12px;color:var(--muted)}
+.source-learning-row-links button{font-size:12px;min-height:44px;padding:6px 10px;background:var(--card)}
+.source-learning-witness{font-size:13px;max-width:100%;overflow-wrap:anywhere}
+.source-learning ul{padding-left:22px;margin:10px 0}
+.source-learning li{padding-left:2px;margin-bottom:12px}
+.source-learning-locator{margin:4px 0 0}
+.source-learning[lang=pa-Guru]{font-family:"Gurmukhi MN","Noto Sans Gurmukhi",Raavi,sans-serif;line-height:1.9}
+.source-learning[lang=pa-Guru] .source-learning-explanation{font-size:18px}
+.source-learning [lang=en]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.source-learning-announcement{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.source-learning-unavailable{padding:14px 16px;margin-top:22px;border-left:3px solid var(--accent);font-size:14px;background:var(--wash)}
+@media(max-width:580px){.source-learning{padding:16px 12px;font-size:15px}.source-learning-title{font-size:18px}.source-learning-controls{gap:16px}.source-learning-controls button{padding:8px 10px}.source-learning h3{font-size:18px}}
+@media print{.source-learning,.source-learning-unavailable{display:none!important}}

@@ -27,6 +27,8 @@ additions.push('./collections/dasam/','./collections/dasam/index.html','./collec
 // Reader shells are small public assets. The 155 source chunks stay on demand;
 // a shell being available offline never implies a complete source can be read.
 additions.push('./collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html','./collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs');
+// The three public psychology modules are self-contained, script-free study pages.
+additions.push('./psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css');
 // The encrypted reading room is fetched on demand with no-store. It is not a
 // public offline/search asset, and decrypted content never enters this manifest.
 const expected={};
@@ -40,5 +42,5 @@ for(const name of inventory){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.28-original-collections-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.29-gurbani-learning-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

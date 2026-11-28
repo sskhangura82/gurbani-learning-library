@@ -95,7 +95,8 @@ const dailyShell=['./hukamnama/','./hukamnama/index.html','./hukamnama/style.css
 const reviewedAdditions=['./salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json','./library/complete-passages.json','./library/passage-contracts.mjs','./library/passages.mjs','./library/passage-ui.mjs','./library/search.mjs','./library/kinds.mjs'];
 const openCollections=['./collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html'];
 const originalReaderShells=['./collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html','./collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs'];
-const requiredAssets=[...priorAssets,...additions,...dailyShell,...reviewedAdditions,...openCollections,...originalReaderShells];
+const publicPsychology=['./psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css'];
+const requiredAssets=[...priorAssets,...additions,...dailyShell,...reviewedAdditions,...openCollections,...originalReaderShells,...publicPsychology];
 const expected=JSON.parse(source.match(/const EXPECTED=(\{[^\n]+\});/)[1]),version=source.match(/const VERSION="([^"]+)";/)[1];
 assert.equal(new Set(requiredAssets).size,requiredAssets.length,'Release inventory contains no duplicate URLs');
 assert.deepEqual(Object.keys(expected).sort(),[...requiredAssets].sort(),'The complete prior release, bundled Knowledge and Daily shell must remain present');

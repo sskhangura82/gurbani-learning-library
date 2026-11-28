@@ -1,0 +1,77 @@
+{
+  "schema": "glp.gurbani-learning.change-scope.v1",
+  "base": "68f47ffba4782271651716c71a97bc1825f96f48",
+  "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
+  "modified": [
+    {
+      "path": "collections/dasam/read.html",
+      "beforeSha256": "eefb1aaa785557ed0ab6c9cfb091a341dc52e1620e01bca3e617dcb3f175ca3e",
+      "afterSha256": "32b506ddcf1622ab5b8056fe168a8afe6ebdc88d68cbbe69de89becfe5249406"
+    },
+    {
+      "path": "collections/sggs/index.html",
+      "beforeSha256": "eef3064427e11cac7083af08cf0aa81696b5095facfa82a9c9504b6b26506a7b",
+      "afterSha256": "00d7aa568e1eb236cef0ec7587d22a1c63af9f15dd018af0a2f3e4339313b229"
+    },
+    {
+      "path": "collections/source-reader/core.mjs",
+      "beforeSha256": "97a2ec588071d317033c5da5842b8ab2402b7149f4b19f9cbcb85d112dbdc33c",
+      "afterSha256": "80475823a93c5b397edbf284f60be13db0f9f50d164a8ea8a4d82cdac9cd253e"
+    },
+    {
+      "path": "collections/source-reader/reader.bundle.mjs",
+      "beforeSha256": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
+      "afterSha256": "9e21f46d95a8ade467f5e865ab47a545b3e75f2be35264fcb4311e2acba904be"
+    },
+    {
+      "path": "collections/source-reader/reader.css",
+      "beforeSha256": "00267c6a5ad00651127a490aaeaafb90014275b8b633b2afd239e276b0fa792b",
+      "afterSha256": "041c8d475b555cb7d3962dac042b78624ef39cc114d20d2ec822575df4fc51b4"
+    },
+    {
+      "path": "collections/source-reader/reader.mjs",
+      "beforeSha256": "fddc5f2cd6a564a74689bd4377d1aee2be8a76e5fc1f44d35ea40a112e919a4d",
+      "afterSha256": "6343d0c25b6eea278cd26f1ad4daf3d229dac422fd46972d160e77b1c9434709"
+    },
+    {
+      "path": "psychology/index.html",
+      "beforeSha256": "fad092e674a34edba1979f54eae5a2da3ad3a73166332b98aa1ef862c5b84ab8",
+      "afterSha256": "3b3eaa617fc5fe588e52ff2a35dd3ac4bd6fc7af2b60b670267f28f3e4176d27"
+    },
+    {
+      "path": "sw.js",
+      "beforeSha256": "b5a537d946818da4164ffb7b96a7a84466f643f1cd6cc47c2cb2327a8a191e05",
+      "afterSha256": "aee61773e961cb06b8cfa1efdae555863cd0c4f766c852db13222b1cfc36daeb"
+    }
+  ],
+  "added": [
+    {
+      "path": "collections/source-reader/learning.mjs",
+      "sha256": "e82b55afd51cfda6d28dac6d89e140cb5d891c801d1a34ad7247e1e55752e269"
+    },
+    {
+      "path": "collections/source-reader/lesson-core.mjs",
+      "sha256": "29ee291e31155e6f1a695c712f93c67452ce5c6cf5877ed6c0caf93717455ef7"
+    },
+    {
+      "path": "collections/source-reader/lesson-data.mjs",
+      "sha256": "593c9dc6b6a1d799b7155befdaa8888041567109132e726515b75e0a95e5002d"
+    },
+    {
+      "path": "psychology/attention.html",
+      "sha256": "179233a853afb3ac08a4e6478cce0c74b5d0ea3520b71800f89e89ab04111f9d"
+    },
+    {
+      "path": "psychology/emotion-regulation.html",
+      "sha256": "2d4b64a71efdf79e6fbd665b99a1e392256e43d676060864958dc2aa63e99b7b"
+    },
+    {
+      "path": "psychology/intellectual-humility.html",
+      "sha256": "886a2a374074a8595732751b814ccd3a9be35fe39b8a0e57947b491813e19b7d"
+    },
+    {
+      "path": "psychology/study.css",
+      "sha256": "cba1bfba66f02af746bf3acade8b2e734aa38f3ec636252e136a3d2f279d7fce"
+    }
+  ]
+}
