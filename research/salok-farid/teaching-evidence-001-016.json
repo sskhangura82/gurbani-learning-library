@@ -1,0 +1,688 @@
+{
+  "schema": "glp.farid.teaching-evidence.v1",
+  "range": [
+    1,
+    16
+  ],
+  "teaching": {
+    "path": "research/salok-farid/teaching-001-016.json",
+    "sha256": "640ecbe1fdfb480e4186b1c269f80a8955cb0931e27ccd555965abf76b380e1c",
+    "status": "ORIGINAL_AI_AUTHORED_DRAFT"
+  },
+  "sourcePack": {
+    "path": "salok-farid/data/salok-farid.json",
+    "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643",
+    "editionId": "salok-farid-selected-witness-34d2a7c-20261127"
+  },
+  "commentaryWitness": {
+    "database": "@shabados/database 5.0.0-next.0 (master.sqlite)",
+    "databaseSha256": "517890c7e7c2f3dcef7f21b51d074a581b8eded4ebe14c504b84ea075ff16aeb",
+    "assets": {
+      "PSST": "Prof. Sahib Singh, Sri Guru Granth Darpan (Punjabi)",
+      "NKFT": "Faridkot Wala Teeka (Punjabi)",
+      "SBMS": "Bhai Manmohan Singh, Sri Guru Granth Sahib, English & Punjabi Translation (Punjabi text used)",
+      "DSSK": "Dr. Sant Singh Khalsa, Siri Guru Granth Sahib (English)"
+    },
+    "use": "Readings compared line by line. Differences are paraphrased and attributed by name. No commentary wording is imported; the overlap check below measures this.",
+    "lineMapping": "Each selected line was matched to the Shabad OS SSA2 line on Angs 1376–1385 after NFC normalisation and removal of the pause marks . , ;. Near matches differ only in nasal-mark encoding."
+  },
+  "overlapCheck": {
+    "path": "research/salok-farid/teaching-overlap-001-016.json",
+    "sha256": "051b56fe2f3ece69ae97418d7013ac2f00c82ae5042bb8cb7f13e35aa87bf708",
+    "status": "PASS",
+    "rule": "No authored field may share 8 or more consecutive words with the commentary text for the same Salok."
+  },
+  "humanReview": {
+    "qualifiedSikhReview": false,
+    "punjabiLanguageReview": false,
+    "independentAiReview": "PENDING_CHATGPT"
+  },
+  "lines": [
+    {
+      "lineId": "sggs.salok-farid.salok001.line01",
+      "sourceSha256": "1e0e8921768883c5cb28b91e23d6c4af88eb0f1b2b570df52105b74ebc06603a",
+      "shabadosLineId": "AGC0",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line02",
+      "sourceSha256": "da2c0c71bb9619f2b8df9615ceb181af9523c877041a682d1a6fa02a200f957f",
+      "shabadosLineId": "K78Q",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line03",
+      "sourceSha256": "4c9a3c5698439d1e9676874d1687a995668a9dec064e80967000703a457fa8d8",
+      "shabadosLineId": "FA4Z",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line04",
+      "sourceSha256": "f2fed31a932f7a9462078d631b10b6c7e7e035fc5d79c740a4164f689aa1362d",
+      "shabadosLineId": "0NJJ",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Faridkot Teeka"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line05",
+      "sourceSha256": "377276fe070a186a3bb25a585a1cbb39ec62516b3dceb9c85e61cbc45340d424",
+      "shabadosLineId": "H9GJ",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line06",
+      "sourceSha256": "ac84ef05ab0578cdd1d7737f969a45e7c32c3fe541d2264ef4e50badf376b5af",
+      "shabadosLineId": "1PX8",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line07",
+      "sourceSha256": "42715c193eb38cf8933ee56278fae05ab6c62b468842ecbfa873a8154f9b419e",
+      "shabadosLineId": "Q69L",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok001.line08",
+      "sourceSha256": "a84c99a33d64c0f288d6df9e020377b3ee7d10be7db97f34b10bb6c4e265ba16",
+      "shabadosLineId": "LU3C",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok002.line01",
+      "sourceSha256": "c636c9b30f847d82dfe059978622a4f32534f8c17c2c160801817df6b5194eff",
+      "shabadosLineId": "9RH3",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok002.line02",
+      "sourceSha256": "f9312b97a0b94ce0412cc998d0289563b75d966001558a156d94f616d5ab01b0",
+      "shabadosLineId": "V41B",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok003.line01",
+      "sourceSha256": "89fccadbea295400e80ba21e4ede491e3ad5ffd63c9a1fab041a99b4ab0758f6",
+      "shabadosLineId": "DJ5E",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok003.line02",
+      "sourceSha256": "d754edb1d5c4e29dd1f0d78ed2f444a16ebd1ba0849b5bd2c6221c0a5817252e",
+      "shabadosLineId": "ZZ0A",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok004.line01",
+      "sourceSha256": "f690a3fe80431ecf97678cb7327ff8220a58fb51aa07e0446e97a9382ffc6337",
+      "shabadosLineId": "7ZR8",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok004.line02",
+      "sourceSha256": "34e4fb9ca9fb341cb578a8838c56e358c3fd49b5363ad09dfcaa04341ac3bd8c",
+      "shabadosLineId": "6B1W",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok005.line01",
+      "sourceSha256": "ef549444a4bf7aa96eec3b43684aa6c7dc3ddaddaaf85b7365c3e37a4aadceba",
+      "shabadosLineId": "QPM6",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok005.line02",
+      "sourceSha256": "8db9fd4b599a178d4147d53f31cba43e5b1ec2814b606b861ae62df8782fa890",
+      "shabadosLineId": "THF1",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok006.line01",
+      "sourceSha256": "63c2926ad1f42452861d2b39f756d8dcb8e15787fa6f23e506d398f6a8575058",
+      "shabadosLineId": "K95Q",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok006.line02",
+      "sourceSha256": "79cf0c6983dffffce187cbad5ba5f32c9537580e8bb491585dde7fb27b86bb75",
+      "shabadosLineId": "TK0T",
+      "textMatch": "NEAR_0.988",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok007.line01",
+      "sourceSha256": "f6d386a608203e636ead2f14b9dec904a8d0782fab085f9082abb66c27e7f2f2",
+      "shabadosLineId": "BQUR",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok007.line02",
+      "sourceSha256": "949e814802cd6473ca5a6ad079dcff11f626414a1236e33733ba215bc639788a",
+      "shabadosLineId": "VC2K",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok008.line01",
+      "sourceSha256": "936ba29cc9403f0a5234124791b0841f840115870a0e843858b88ecc3dbd53ec",
+      "shabadosLineId": "7J2M",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok008.line02",
+      "sourceSha256": "4121dae50e405c2131e9ea4e3103d445d955235c7ac130874200f96e7056f74d",
+      "shabadosLineId": "PTK5",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Bhai Manmohan Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok009.line01",
+      "sourceSha256": "584530f688f18b52e25fa46dbe989ef0975cd66e1bc9e1b4a7799a39ec4afc68",
+      "shabadosLineId": "S8XP",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok009.line02",
+      "sourceSha256": "46fce5f374f9315e2271c3fab40adf658f52fdc4bf8ab44418bfe7791d47fd9f",
+      "shabadosLineId": "A46J",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok010.line01",
+      "sourceSha256": "efb32afb061b3dd0645924777efc718f02b5d459551b80066629e5c69cdb588c",
+      "shabadosLineId": "CTJ4",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok010.line02",
+      "sourceSha256": "14c09339766450bfa88661ad53ea7cc2c149e6f4e174fe3d798a542b71cbe77e",
+      "shabadosLineId": "KVHW",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok011.line01",
+      "sourceSha256": "8e537747f540650dda11d6da688344f35429711e0513af5dcd508c2a36de57eb",
+      "shabadosLineId": "090F",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok011.line02",
+      "sourceSha256": "3f4c1c403ec4be22954e7236b46e75f53aa33ec833d752343a494188ce3de3a3",
+      "shabadosLineId": "831W",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok012.line01",
+      "sourceSha256": "5cb33ad34b58762371983a6197b81a98e6613b8324f10809b1911ef305d73420",
+      "shabadosLineId": "7Z98",
+      "textMatch": "NEAR_0.988",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok012.line02",
+      "sourceSha256": "66a71bc9ed9273802d68233d94ac13b2ba3a2af6b2e5cf891de55b704fa1b07c",
+      "shabadosLineId": "Y7R2",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok013.line01",
+      "sourceSha256": "8be615f6d41ab1551b0b2ca2af3714d9fbb1a240dbd80e7f91a4d785f4adce23",
+      "shabadosLineId": "4T54",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Faridkot Teeka"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok013.line02",
+      "sourceSha256": "c2b8737d6701b096f76306c5b88f8ad8d9657b2b3c6fd59f91d075addd308d81",
+      "shabadosLineId": "P5LC",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok013.line03",
+      "sourceSha256": "565de3e4e823cb35034a1861e749e2c5eefc5fcd020194754f3fa24145911492",
+      "shabadosLineId": "H2RB",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok014.line01",
+      "sourceSha256": "16d423a25e183ec95b92c8d59cc6b87408c57962f06d1c0be2edb043d7a21f3f",
+      "shabadosLineId": "S0VU",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": []
+    },
+    {
+      "lineId": "sggs.salok-farid.salok014.line02",
+      "sourceSha256": "517bdc9004aa23aa6360c4d0304aac2eba3beb4a100a6fb2bf99fc35fc51a0df",
+      "shabadosLineId": "ZTRW",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok015.line01",
+      "sourceSha256": "05328e922a81d92489bd8ecc89263c813cf9c964c8372db33ccf2fc0bbf2dfb7",
+      "shabadosLineId": "C8J3",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok015.line02",
+      "sourceSha256": "2ebb217c79b59e9dc11c2e56bb23c78264cbe896e7151be2769c98a44fe7956a",
+      "shabadosLineId": "SKER",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok016.line01",
+      "sourceSha256": "ed50cfff499bef09b5186339bc4d26217e265672a462cf565f576997941b6927",
+      "shabadosLineId": "D7V0",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Faridkot Teeka"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok016.line02",
+      "sourceSha256": "ae06757d876952be8bac78603542722feae190ccb29d81432264db8e1e150310",
+      "shabadosLineId": "SD3N",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Faridkot Teeka",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok016.line03",
+      "sourceSha256": "8e8975ca0cc81f98ca788bb52952ace09b43af67c1e547adad3ca0a62ed4a980",
+      "shabadosLineId": "0M2G",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh",
+        "Bhai Manmohan Singh",
+        "Sant Singh Khalsa"
+      ]
+    },
+    {
+      "lineId": "sggs.salok-farid.salok016.line04",
+      "sourceSha256": "7b5af1da1791fb31db98b4de4b0417fe271048b9886a25597eae0095fac438b2",
+      "shabadosLineId": "TZ3S",
+      "textMatch": "EXACT",
+      "commentariesCompared": [
+        "PSST",
+        "NKFT",
+        "SBMS",
+        "DSSK"
+      ],
+      "commentatorsNamedInLineNote": [
+        "Prof. Sahib Singh"
+      ]
+    }
+  ]
+}

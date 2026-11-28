@@ -1,0 +1,452 @@
+{
+  "schema": "glp.farid.teaching-overlap-check.v1",
+  "maxAllowedRun": 7,
+  "database": {
+    "sha256": "517890c7e7c2f3dcef7f21b51d074a581b8eded4ebe14c504b84ea075ff16aeb"
+  },
+  "pack": {
+    "path": "salok-farid/data/salok-farid.json",
+    "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643"
+  },
+  "files": [
+    {
+      "path": "research/salok-farid/teaching-017-032.json",
+      "sha256": "f9395ac59bbc5acdaa32c82fc71d3e1e94df26c3e63af2d9f8493db308d02fbd",
+      "saloks": [
+        {
+          "ordinal": 17,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok017.line01",
+              "shabadosLineId": "N62M",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok017.line02",
+              "shabadosLineId": "139P",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "study.closeReading",
+              "text": "it is above us"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].simplePa",
+              "text": "ਹੇ ਫਰੀਦ ਮਿੱਟੀ ਨੂੰ"
+            }
+          }
+        },
+        {
+          "ordinal": 18,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok018.line01",
+              "shabadosLineId": "0XGS",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok018.line02",
+              "shabadosLineId": "Z9DZ",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[0].simpleEn",
+              "text": "can there be"
+            },
+            "pa": {
+              "words": 3,
+              "field": "lines[1].simplePa",
+              "text": "ਕਿੰਨਾ ਕੁ ਚਿਰ"
+            }
+          }
+        },
+        {
+          "ordinal": 19,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok019.line01",
+              "shabadosLineId": "9PV6",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok019.line02",
+              "shabadosLineId": "QV28",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[1].simpleEn",
+              "text": "in the heart why"
+            },
+            "pa": {
+              "words": 3,
+              "field": "lines[0].simplePa",
+              "text": "ਹੇ ਫਰੀਦ ਜੰਗਲ"
+            }
+          }
+        },
+        {
+          "ordinal": 20,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok020.line01",
+              "shabadosLineId": "U50Z",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok020.line02",
+              "shabadosLineId": "PEA4",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "these small legs i"
+            },
+            "pa": {
+              "words": 3,
+              "field": "lines[0].simplePa",
+              "text": "ਨਿੱਕੀਆਂ ਲੱਤਾਂ ਨਾਲ"
+            }
+          }
+        },
+        {
+          "ordinal": 21,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok021.line01",
+              "shabadosLineId": "GGFD",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok021.line02",
+              "shabadosLineId": "3MAF",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[1].simpleEn",
+              "text": "of those who"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].interpretiveCautionPa",
+              "text": "ਸਿਆਲ ਦੀਆਂ ਲੰਮੀਆਂ ਰਾਤਾਂ"
+            }
+          }
+        },
+        {
+          "ordinal": 22,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok022.line01",
+              "shabadosLineId": "9NFV",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok022.line02",
+              "shabadosLineId": "3YGF",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[0].simpleEn",
+              "text": "if i had"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[0].simplePa",
+              "text": "ਹੇ ਫਰੀਦ ਜੇ ਮੈਂ ਆਏ"
+            }
+          }
+        },
+        {
+          "ordinal": 23,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok023.line01",
+              "shabadosLineId": "74EB",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok023.line02",
+              "shabadosLineId": "MN5R",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "study.closeReading",
+              "text": "the farmer plants acacia"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].interpretiveCautionPa",
+              "text": "ਸੁਖੀ ਜੀਵਨ ਦੀ ਆਸ"
+            }
+          }
+        },
+        {
+          "ordinal": 24,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok024.line01",
+              "shabadosLineId": "YS8Y",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok024.line02",
+              "shabadosLineId": "TGJR",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "is muddy and the"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[0].simplePa",
+              "text": "ਦਾ ਘਰ ਦੂਰ ਹੈ ਪਰ"
+            }
+          }
+        },
+        {
+          "ordinal": 25,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok025.line01",
+              "shabadosLineId": "ME5P",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok025.line02",
+              "shabadosLineId": "8PGG",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].interpretiveCaution",
+              "text": "the lord s rain"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[1].simplePa",
+              "text": "ਤਾਂ ਜੋ ਮੇਰਾ ਪਿਆਰ"
+            }
+          }
+        },
+        {
+          "ordinal": 26,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok026.line01",
+              "shabadosLineId": "E7NW",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok026.line02",
+              "shabadosLineId": "CZH3",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[1].simpleEn",
+              "text": "dust will consume"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[0].simplePa",
+              "text": "ਹੇ ਫਰੀਦ ਮੈਨੂੰ ਆਪਣੀ ਪੱਗ"
+            }
+          }
+        },
+        {
+          "ordinal": 27,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok027.line01",
+              "shabadosLineId": "7YZM",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok027.line02",
+              "shabadosLineId": "2CQU",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[0].simpleEn",
+              "text": "honey and buffalo"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].simplePa",
+              "text": "ਹੇ ਫਰੀਦ ਸ਼ੱਕਰ ਖੰਡ"
+            }
+          }
+        },
+        {
+          "ordinal": 28,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok028.line01",
+              "shabadosLineId": "J9LB",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok028.line02",
+              "shabadosLineId": "YL0Z",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[1].simpleEn",
+              "text": "buttered bread will"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].interpretiveCautionPa",
+              "text": "ਆਪਣੇ ਹੱਥਾਂ ਦੀ ਕਮਾਈ"
+            }
+          }
+        },
+        {
+          "ordinal": 29,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok029.line01",
+              "shabadosLineId": "TXX2",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok029.line02",
+              "shabadosLineId": "RLGY",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 5,
+              "field": "lines[1].simpleEn",
+              "text": "s buttered bread do not"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[1].simplePa",
+              "text": "ਰੋਟੀ ਵੇਖ ਕੇ ਆਪਣਾ ਮਨ"
+            }
+          }
+        },
+        {
+          "ordinal": 30,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok030.line01",
+              "shabadosLineId": "1YPS",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok030.line02",
+              "shabadosLineId": "441H",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "my husband lord and"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].simplePa",
+              "text": "ਹੈ ਜਿਵੇਂ ਟੁੱਟ ਰਿਹਾ"
+            }
+          }
+        },
+        {
+          "ordinal": 31,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok031.line01",
+              "shabadosLineId": "4GL2",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok031.line02",
+              "shabadosLineId": "8M0H",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 2,
+              "field": "lines[0].simpleEn",
+              "text": "for her"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[0].simplePa",
+              "text": "ਪੇਕੇ ਘਰ ਕੋਈ ਥਾਂ"
+            }
+          }
+        },
+        {
+          "ordinal": 32,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok032.line01",
+              "shabadosLineId": "CXEW",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok032.line02",
+              "shabadosLineId": "BU38",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 5,
+              "field": "lines[0].simpleEn",
+              "text": "and in her parents home"
+            },
+            "pa": {
+              "words": 5,
+              "field": "study.closeReadingPa",
+              "text": "ਜੋ ਪਹੁੰਚ ਤੋਂ ਪਰੇ ਅਤੇ"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}
