@@ -1,0 +1,138 @@
+{
+ "reference": "Shabad OS Database 5.0.0-next.0, asset SSA2",
+ "checks": {
+  "vaar": {
+   "pauriGroupsFound": 24,
+   "numbersReadFromTheText": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "numberingIsOneToTwentyFour": true
+  },
+  "everyStructuralNameInTheVaarIsUnique": true,
+  "salokNamesInTheVaar": 374,
+  "namesUsedTwice": {},
+  "passagePlacement": {
+   "sggs.asa-di-vaar.pauri014.salok01": {
+    "claimedByItsName": {
+     "beforePauri": 14,
+     "salokNumber": 1
+    },
+    "bodyLines": 8,
+    "headingInCandidate": "ਸਲੋਕੁ ਮਃ ੧ ॥",
+    "foundInTheReferenceAs": "pauri014.salok01",
+    "nameMatchesWhereItActuallyIs": true,
+    "howManySalokMatchThatNameInTheReference": 1
+   },
+   "sggs.asa-di-vaar.pauri007.salok02": {
+    "claimedByItsName": {
+     "beforePauri": 7,
+     "salokNumber": 2
+    },
+    "bodyLines": 7,
+    "headingInCandidate": "ਮਹਲਾ ੨ ॥",
+    "foundInTheReferenceAs": "pauri007.salok02",
+    "nameMatchesWhereItActuallyIs": true,
+    "howManySalokMatchThatNameInTheReference": 1
+   },
+   "sggs.kabir.salok007": {
+    "claimedByItsName": null,
+    "bodyLines": 2,
+    "headingInCandidate": null,
+    "foundInTheReferenceAs": null,
+    "nameMatchesWhereItActuallyIs": false,
+    "howManySalokMatchThatNameInTheReference": null
+   }
+  },
+  "everySalokOnAng470": [
+   {
+    "name": "pauri013.salok01",
+    "author": "Guru Nanak",
+    "page": 470,
+    "lines": 6,
+    "first": "ਨਾਨਕ ਮੇਰੁ ਸਰੀਰ ਕਾ ਇਕੁ ਰਥੁ ਇਕੁ ਰਥਵਾਹੁ ॥"
+   },
+   {
+    "name": "pauri013.salok02",
+    "author": "Guru Nanak",
+    "page": 470,
+    "lines": 14,
+    "first": "ਸਾਮ ਕਹੈ ਸੇਤੰਬਰੁ ਸੁਆਮੀ ਸਚ ਮਹਿ ਆਛੈ ਸਾਚਿ ਰਹੇ ॥"
+   },
+   {
+    "name": "pauri014.salok01",
+    "author": "Guru Nanak",
+    "page": 470,
+    "lines": 8,
+    "first": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥"
+   },
+   {
+    "name": "pauri014.salok02",
+    "author": "Guru Nanak",
+    "page": 470,
+    "lines": 10,
+    "first": "ਪੜਿ ਪੁਸਤਕ ਸੰਧਿਆ ਬਾਦੰ ॥"
+   }
+  ],
+  "theTwoThatSharedTheOldNameNowDiffer": true,
+  "kabirSalok": {
+   "{\"Latn\":\"Chaubolas Fifth Mehl\"}": {
+    "section": "CZHO",
+    "groups": 1,
+    "ourPassageIsGroupNumber": null,
+    "lastVerseNumberOfThatGroup": null,
+    "page": null
+   },
+   "{\"Latn\":\"Salok Kabeer Jee\"}": {
+    "section": "SQST",
+    "groups": 242,
+    "ourPassageIsGroupNumber": 7,
+    "lastVerseNumberOfThatGroup": 7,
+    "page": 1364
+   }
+  },
+  "crosswalk": {
+   "oldPassageNames": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "oldOccurrenceNames": 19,
+   "passagesInFile": 3,
+   "occurrencesInFile": 19,
+   "everyOldPassageNamePointsAtARealPassage": true,
+   "everyOldOccurrenceNamePointsAtARealOccurrence": true,
+   "everyOccurrenceHasExactlyOneOldName": true,
+   "passagesWithNoOldName": [
+    "sggs.kabir.salok007"
+   ],
+   "anyNewNameClaimedByTwoOldNames": []
+  },
+  "fingerprints": {
+   "occurrences": 19,
+   "recompute": 19,
+   "wrong": []
+  }
+ }
+}

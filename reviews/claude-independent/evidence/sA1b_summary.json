@@ -1,0 +1,515 @@
+{
+ "totalQuotedRuns": 1889,
+ "byStatus": {
+  "occurs as written in the app's Gurbani text": 1829,
+  "not in the app's Gurbani text": 57,
+  "each word occurs in the app's Gurbani text, but not together in this order": 3
+ },
+ "byFile": {
+  "js/content.js": {
+   "occurs as written in the app's Gurbani text": 1
+  },
+  "js/japji-lessons.js": {
+   "occurs as written in the app's Gurbani text": 189,
+   "not in the app's Gurbani text": 3
+  },
+  "js/line-meanings.js": {
+   "occurs as written in the app's Gurbani text": 1
+  },
+  "js/sukhmani-teaching.js": {
+   "occurs as written in the app's Gurbani text": 1
+  },
+  "nitnem/learning/course.complete.json": {
+   "occurs as written in the app's Gurbani text": 1637,
+   "not in the app's Gurbani text": 54,
+   "each word occurs in the app's Gurbani text, but not together in this order": 3
+  }
+ },
+ "readOneByOne": {
+  "count": 60,
+  "verdict": "All 60 are labelled variant readings from other sources, dictionary headwords, grammar terms or modern Punjabi spellings given for comparison. None misquotes the line it discusses.",
+  "rows": [
+   {
+    "file": "js/japji-lessons.js",
+    "field": ".lessons.pauri11.pronunciation",
+    "quoted": "ਔਂਕੜ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Do not add a final ਔਂਕੜ to ਹਾਥ in the displayed line. Preserve the source"
+   },
+   {
+    "file": "js/japji-lessons.js",
+    "field": ".lessons.pauri32.pronunciation",
+    "quoted": "ਪਉੜੀ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ਪਵੜੀਆ here and the modern label ਪਉੜੀ share a stair-related image but are different wri"
+   },
+   {
+    "file": "js/japji-lessons.js",
+    "field": ".lessons.pauri38.pronunciation",
+    "quoted": "ਕੰਨਾ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "The contrast between ਭਉ and ਭਾਉ is essential; do not drop the ਕੰਨਾ in ਭਾਉ or make the two words identical. Keep ਘੜੀਐ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[61].title",
+    "quoted": "ਅਭਿਜ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Bhai Kahn Singh Nabha, Mahan Kosh: ਅਭਿਜ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[61].url",
+    "quoted": "ਅਭਿਜ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "https://punjabi.com/dictionary/wordmeaning?search=ਅਭਿਜ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[61].scope",
+    "quoted": "ਅਭਿਗ੍ਯ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Directly read the not-wet and not-softened senses and the ਅਭਿਗ੍ਯ cross-reference. The Jaap example accompanies the"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[62].scope",
+    "quoted": "ਅਭਿਜ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ad sense 3, fully knowing or well acquainted, to resolve the explicit ਅਭਿਜ cross-reference. Other modern dictionaries displa"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[64].title",
+    "quoted": "ਅਖਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Bhai Kahn Singh Nabha, Mahan Kosh: ਅਖਲ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[64].url",
+    "quoted": "ਅਖਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "https://punjabi.com/dictionary/wordmeaning?search=ਅਖਲ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[64].scope",
+    "quoted": "ਅਖਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Directly read all/whole as an ਅਖਿਲ-related sense, alongside separate non-low and non"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[78].scope",
+    "quoted": "ਚਿਤ੍ਰੰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Compared source forms, not translation authority. Differences include ਚਿਤ੍ਰੰ/ਚਿੱਤ੍ਰੰ, nukta forms, ਦਿਹਿੰਦ/ਦਿਹੰਦ, ਆਕਿਲ/ਆਕਲ and "
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[78].scope",
+    "quoted": "ਆਕਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ority. Differences include ਚਿਤ੍ਰੰ/ਚਿੱਤ੍ਰੰ, nukta forms, ਦਿਹਿੰਦ/ਦਿਹੰਦ, ਆਕਿਲ/ਆਕਲ and internal counters. Frozen source is not c"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[89].url",
+    "quoted": "ਇਮਾਨ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਇਮਾਨ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".meta.references[89].scope",
+    "quoted": "ਅਮੀਕੁਲ ਇਮਾਂ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "tly read the Mahan Kosh entry, which explicitly cites the Jaap phrase ਅਮੀਕੁਲ ਇਮਾਂ and relates it to profound dharam. Only this succ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".unitLessons.jaap|jaap074.simple.en",
+    "quoted": "ਅਖਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "planation preserves both source spellings and keeps the disputed ਅਖੱਲ/ਅਖਿਲ reading open for qualified review."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".unitLessons.jaap|jaap074.study.interpretationCare",
+    "quoted": "ਅਖਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "is kept separate from the four lines. Source differences include ਅਖੱਲ/ਅਖਿਲ, additional consonant marks and heading spacing; "
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".unitLessons.jaap|jaap074.study.teachBack",
+    "quoted": "ਅਖਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": " selected meanings of ਜੋਗੇ and ਭੋਗੇ, and identify the unresolved ਅਖੱਲ/ਅਖਿਲ difference."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".unitLessons.jaap|jaap179.study.closeReading",
+    "quoted": "ਅਮ੍ਰਿਤੇਸ੍ਵਰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "at no fashioned form encloses the Divine. Some witnesses instead have ਅਮ੍ਰਿਤੇਸ੍ਵਰ, inviting a nectar or immortality-related explana"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".unitLessons.jaap|jaap179.study.interpretationCare",
+    "quoted": "ਅਮ੍ਰਿਤੇਸ੍ਵਰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "o not derive nectar from the selected ਅਮਿਤੇਸ੍ਵਰ as if the source said ਅਮ੍ਰਿਤੇਸ੍ਵਰ. The alternative can be discussed without replaci"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap017.line03.interpretiveCaution",
+    "quoted": "ਮਜ਼ਹਬ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ਅਮਜਬੇ draws on ਮਜ਼ਹਬ, a religious way or creed, with a negative prefix"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap048.line03.interpretiveCaution",
+    "quoted": "ਪਾਣਿ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": " Sant Sewa Singh, the Bhai Vir Singh-derived account and Mahan Kosh’s ਪਾਣਿ/ਹੱਥ sense. Neki instead gives a drum-beating imag"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap048.line03.interpretiveCaution",
+    "quoted": "ਹੱਥ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": " Sewa Singh, the Bhai Vir Singh-derived account and Mahan Kosh’s ਪਾਣਿ/ਹੱਥ sense. Neki instead gives a drum-beating image. T"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap048.line04.interpretiveCaution",
+    "quoted": "ਵਾਦਯ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ਬਾਦ is read through ਵਾਦਯ, instrumental sound, following the musical contex"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap051.line02.interpretiveCaution",
+    "quoted": "ਬ੍ਰਿੱਧੇ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "body. The frozen ਬ੍ਰਿਧੇ is retained despite a comparator commentary’s ਬ੍ਰਿੱਧੇ spelling."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap052.line03.interpretiveCaution",
+    "quoted": "ਗਯਾਤਾ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": " The frozen ਗਿਆਤਾ spelling is retained; a consulted commentary prints ਗਯਾਤਾ, which is recorded as that witness’s form rather "
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap054.line01.interpretiveCaution",
+    "quoted": "ਕਰੂਰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ssion for human cruelty. The consulted texts differ between ਕ੍ਰੂਰ and ਕਰੂਰ; this explanation keeps the original wording."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap055.line03.interpretiveCaution",
+    "quoted": "ਸ਼ਾਹ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": " original is retained even though explanatory Punjabi commonly writes ਸ਼ਾਹ."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap056.line04.interpretiveCaution",
+    "quoted": "ਇਸਨਾਨੰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ndering is not adopted as a medical claim. Some other witnesses print ਇਸਨਾਨੰ; the original ਸਨਾਨੇ remains unchanged. The source"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap058.line02.interpretiveCaution",
+    "quoted": "ਸਮਸਤੁਲਿ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": " are three distinct claims in one source line. Another website prints ਸਮਸਤੁਲਿ; this text’s ਸਮਸਤੁਲ is retained. Divine presence "
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap059.line01.interpretiveCaution",
+    "quoted": "ਸਿਧਿਦਾ ਬੁਧਿਦਾ ਬ੍ਰਿਧਿ",
+    "words": 3,
+    "status": "not in the app's Gurbani text",
+    "context": "ਰਿਧ ਕਰਤਾ as bringing increase or growth. Another consulted text reads ਸਿਧਿਦਾ ਬੁਧਿਦਾ ਬ੍ਰਿਧਿ. The commentary-supported compound reading does n"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap068.line03.interpretiveCaution",
+    "quoted": "ਜੋਸ਼",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "Mahan Kosh cites this exact line under martial ardour or ਜੋਸ਼, while also listing anger among the senses of ਰੋਖ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap072.line03.interpretiveCaution",
+    "quoted": "ਅਭਿਜ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "planations of not being irritated or emotionally swayed. Mahan Kosh’s ਅਭਿਜ entry cites this Jaap phrase under a fully knowin"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap074.line03.interpretiveCaution",
+    "quoted": "ਅਖਿਲ ਜੋਗੇ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "The source reads ਅਖੱਲ ਜੋਗੇ; another consulted text reads ਅਖਿਲ ਜੋਗੇ. The selected all-inclusive union follows the Pun"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap074.line03.interpretiveCaution",
+    "quoted": "ਅਖਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "d all-inclusive union follows the Punjabi steeks and the dictionary’s ਅਖਲ/ਅਖਿਲ sense of all or whole. The Bhai Vir Singh-de"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap074.line03.interpretiveCaution",
+    "quoted": "ਅਖਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "l-inclusive union follows the Punjabi steeks and the dictionary’s ਅਖਲ/ਅਖਿਲ sense of all or whole. The Bhai Vir Singh-derived"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap075.line03.interpretiveCaution",
+    "quoted": "ਅਖਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ation of universal dharam and the dictionary’s all-or-whole sense for ਅਖਲ. Another Punjabi witness and the Bhai Vir Singh-d"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap088.line04.interpretiveCaution",
+    "quoted": "ਸ਼ਾਹਾਨ ਸ਼ਾਹੁ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "sifies sovereignty. The retained source spelling is not replaced with ਸ਼ਾਹਾਨ ਸ਼ਾਹੁ. The title is not a statement about breathing and"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap120.line03.interpretiveCaution",
+    "quoted": "ਆਕਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "cernment and knowing. The source preserves ਆਕਲ while another text has ਆਕਿਲ. The semantic explanation does not authorise norm"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap171.line01.interpretiveCaution",
+    "quoted": "ਆਲਯ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ਕਰੁਣਾ and ਆਲਯ combine compassion with the image of a dwelling o"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap179.line01.interpretiveCaution",
+    "quoted": "ਅਮ੍ਰਿਤੇਸ੍ਵਰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "The selected ਅਮਿਤੇਸ੍ਵਰ is read from ਅਮਿਤ, immeasurable. A different ਅਮ੍ਰਿਤੇਸ੍ਵਰ reading supports a nectar-related gloss; that is "
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap188.line01.interpretiveCaution",
+    "quoted": "ਕਲੰਕਾਰਿ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "is read in the unstained or enemy-of-stain sense, as in Sahib Singh's ਕਲੰਕਾਰਿ discussion. The selected source spelling is retai"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[10].finding",
+    "quoted": "ਸੁਖੰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ਸੋਖੰ is not silently changed into ਸੁਖੰ. Dissolution/nourishment and creation/removal rem"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[11].finding",
+    "quoted": "ਖ੍ਯਾਲੇ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ੇ, supported by the frozen comparison. A third digital witness prints ਖ੍ਯਾਲੇ but describes compassion. The original ਦਿਆਲੇ is p"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[15].finding",
+    "quoted": "ਰਫੀਕ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "and two unresolved flags: Chhand 32 has ਹੈਂ/ਹੈ and Chhand 36 has ਰਫ਼ੀਕ/ਰਫੀਕ. These are verb-form and orthographic differences"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[17].finding",
+    "quoted": "ਸਵਰਗ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "into a falsely certain derivation; ਅਸਰਗ is not silently confused with ਸਵਰਗ."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[32].finding",
+    "quoted": "ਕਰੂਰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "edger records ten matching groups and five unresolved flags: 54 ਕ੍ਰੂਰ/ਕਰੂਰ, 55 and 56 internal punctuation/grouping, 59 ਸਿਧਦ"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[32].finding",
+    "quoted": "ਸਿਧਿਦਾ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ags: 54 ਕ੍ਰੂਰ/ਕਰੂਰ, 55 and 56 internal punctuation/grouping, 59 ਸਿਧਦਾ/ਸਿਧਿਦਾ, ਬੁਧਦਾ/ਬੁਧਿਦਾ and ਬ੍ਰਿਧ/ਬ੍ਰਿਧਿ, and 60 ਸਿੱਧ/ਸਿਧਿ."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[32].finding",
+    "quoted": "ਬੁਧਿਦਾ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ਕਰੂਰ, 55 and 56 internal punctuation/grouping, 59 ਸਿਧਦਾ/ਸਿਧਿਦਾ, ਬੁਧਦਾ/ਬੁਧਿਦਾ and ਬ੍ਰਿਧ/ਬ੍ਰਿਧਿ, and 60 ਸਿੱਧ/ਸਿਧਿ. The last two "
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[32].finding",
+    "quoted": "ਬ੍ਰਿਧਿ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "nternal punctuation/grouping, 59 ਸਿਧਦਾ/ਸਿਧਿਦਾ, ਬੁਧਦਾ/ਬੁਧਿਦਾ and ਬ੍ਰਿਧ/ਬ੍ਰਿਧਿ, and 60 ਸਿੱਧ/ਸਿਧਿ. The last two affect grammatica"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[66].finding",
+    "quoted": "ਅਭਿਜ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "n-attachment, not being softened and indivisibility. The dictionary’s ਅਭਿਜ entry explicitly points its Jaap citation to full"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[69].finding",
+    "quoted": "ਅਖਿਲ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "e all/whole lexical comparison does not authorize replacing ਅਖੱਲ with ਅਖਿਲ or dismissing the recorded spelling flag."
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[71].finding",
+    "quoted": "ਜਤ੍ਰ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ness has differences including internal punctuation and subnumbering, ਜਤ੍ਰ versus the frozen ਜੱਤ੍ਰ, ਦੇਸ ਅਉਰ versus ਦੇਸ ਔਰ, a"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[71].finding",
+    "quoted": "ਚਤ੍ਰ ਚਕਿ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "ubnumbering, ਜਤ੍ਰ versus the frozen ਜੱਤ੍ਰ, ਦੇਸ ਅਉਰ versus ਦੇਸ ਔਰ, and ਚਤ੍ਰ ਚਕਿ versus ਚਤੁਰ ਚੱਕ. These are evidence of unresolved"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[72].finding",
+    "quoted": "ਆਜਾਨੁ ਬਾਹੁ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "son witness includes final-vowel and spacing differences, for example ਆਜਾਨੁ ਬਾਹੁ / ਆਜਾਨ ਬਾਹੁ and ਸਾਹਾਨੁ ਸਾਹੁ / ਸਾਹਾਨ ਸਾਹੁ at 88, p"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[72].finding",
+    "quoted": "ਸਾਹਾਨੁ ਸਾਹੁ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "vowel and spacing differences, for example ਆਜਾਨੁ ਬਾਹੁ / ਆਜਾਨ ਬਾਹੁ and ਸਾਹਾਨੁ ਸਾਹੁ / ਸਾਹਾਨ ਸਾਹੁ at 88, plus ਭਾਨੁ / ਭਾਨ at 89. All fr"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[72].finding",
+    "quoted": "ਭਾਨੁ",
+    "words": 1,
+    "status": "not in the app's Gurbani text",
+    "context": "ample ਆਜਾਨੁ ਬਾਹੁ / ਆਜਾਨ ਬਾਹੁ and ਸਾਹਾਨੁ ਸਾਹੁ / ਸਾਹਾਨ ਸਾਹੁ at 88, plus ਭਾਨੁ / ਭਾਨ at 89. All frozen readings remain untouched"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[79].finding",
+    "quoted": "ਚਤ੍ਰ ਚਕ੍ਰ",
+    "words": 2,
+    "status": "not in the app's Gurbani text",
+    "context": "everal different word forms. In particular, its directional phrase is ਚਤ੍ਰ ਚਕ੍ਰ, not the frozen spellings at 96-98; addak and fin"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap021.line02.interpretiveCaution",
+    "quoted": "ਭੇਦ ਰਹਿਤ",
+    "words": 2,
+    "status": "each word occurs in the app's Gurbani text, but not together in this order",
+    "context": "ngh-derived rendering. Neki’s no-secret wording and Sant Seva Singh’s ਭੇਦ ਰਹਿਤ point toward other readings. The main sentence do"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".closeTextNotes.jaap|jaap060.line02.interpretiveCaution",
+    "quoted": "ਸਿਧਿ ਦਾਤਾ",
+    "words": 2,
+    "status": "each word occurs in the app's Gurbani text, but not together in this order",
+    "context": "al spiritual accomplishments or powers. Another consulted text prints ਸਿਧਿ ਦਾਤਾ; the original ਸਿੱਧ ਦਾਤਾ is unchanged and the edit"
+   },
+   {
+    "file": "nitnem/learning/course.complete.json",
+    "field": ".sourceChecks[71].finding",
+    "quoted": "ਦੇਸ ਅਉਰ",
+    "words": 2,
+    "status": "each word occurs in the app's Gurbani text, but not together in this order",
+    "context": " internal punctuation and subnumbering, ਜਤ੍ਰ versus the frozen ਜੱਤ੍ਰ, ਦੇਸ ਅਉਰ versus ਦੇਸ ਔਰ, and ਚਤ੍ਰ ਚਕਿ versus ਚਤੁਰ ਚੱਕ. Thes"
+   }
+  ]
+ },
+ "notCovered": "Quotations inside Punjabi-language teaching text cannot be separated from prose by script and were not checked."
+}

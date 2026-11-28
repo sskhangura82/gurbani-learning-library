@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duality — article format proof v2</title>
+<style>
+:root{
+  --ink:#1a1a18; --ink-soft:#55534d; --ink-faint:#8a8780;
+  --rule:#ddd9d0; --paper:#fdfcfa; --warn-bg:#fdf4e3; --warn-ink:#633806; --warn-rule:#e0c79a;
+  --gurmukhi:"Gurmukhi MN","Mukta Mahee","Noto Sans Gurmukhi","Raavi",sans-serif;
+  --body:Charter,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:18px;line-height:1.65;-webkit-text-size-adjust:100%}
+.sheet{max-width:38rem;margin:0 auto;padding:2rem 1.25rem 4rem}
+.bar{font-family:var(--ui);font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-faint);display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid var(--rule);padding-bottom:.6rem;margin-bottom:2rem}
+h1{font-size:2rem;line-height:1.15;margin:0 0 .3rem;font-weight:500}
+h1 .gur{font-family:var(--gurmukhi);font-weight:400}
+.sub{font-family:var(--ui);font-size:13px;color:var(--ink-soft);margin:0 0 2rem}
+.notice{background:var(--warn-bg);border:1px solid var(--warn-rule);padding:.85rem 1rem;
+  font-family:var(--ui);font-size:13.5px;line-height:1.5;color:var(--warn-ink);margin:0 0 2.25rem}
+h2{font-family:var(--ui);font-size:12px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-faint);font-weight:600;margin:2.75rem 0 1rem;
+  border-bottom:1px solid var(--rule);padding-bottom:.4rem}
+p{margin:0 0 1.1rem}
+/* A verse and its explanation are ONE unit for pagination. */
+.pair{break-inside:avoid;page-break-inside:avoid;margin:0 0 2rem}
+.verse .gur{font-family:var(--gurmukhi);font-size:1.45rem;line-height:1.95;margin:0 0 .45rem}
+.cite{font-family:var(--ui);font-size:12.5px;color:var(--ink-soft);margin:0 0 .5rem}
+.basis{font-family:var(--ui);font-size:11.5px;color:var(--ink-faint);margin:0 0 .6rem;line-height:1.45}
+.slot{border:1px dashed #c4beb2;padding:.9rem 1rem;font-family:var(--ui);
+  font-size:13.5px;line-height:1.55;color:var(--ink-soft)}
+.slot .who{display:block;color:var(--ink-faint);font-size:11.5px;letter-spacing:.07em;
+  text-transform:uppercase;margin-bottom:.35rem}
+.counts{font-family:var(--ui);font-size:14px;border-collapse:collapse;width:100%}
+.counts th,.counts td{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--rule)}
+.counts th{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+.counts td+td,.counts th+th{text-align:right;font-variant-numeric:tabular-nums}
+.reg{font-family:var(--ui);font-size:13px;color:var(--ink-soft);line-height:1.6}
+.reg dt{font-weight:600;color:var(--ink);margin-top:.8rem}
+.reg dd{margin:.1rem 0 0}
+.tools{border-top:1px solid var(--rule);padding:.75rem 0;margin-top:3rem;font-family:var(--ui);font-size:14px}
+button{font:inherit;padding:.5rem .9rem;border:1px solid var(--ink-soft);background:transparent;
+  color:var(--ink);cursor:pointer;border-radius:4px}
+button:hover{background:#f0ede6}
+@media print{
+  @page{margin:18mm 16mm}
+  body{background:#fff;font-size:11.5pt}
+  .sheet{max-width:none;padding:0}
+  .tools{display:none}
+  .notice{background:#fff;border:1pt solid #999;color:#000}
+  .bar{color:#444}
+  h2{page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="bar"><span>Gurbani Learning Library</span><span>Format proof v2 · 26 Nov 2026</span></div>
+
+<h1>Duality <span class="gur" lang="pa">ਦੁਬਿਧਾ</span></h1>
+<p class="sub">Topic article — format demonstration</p>
+
+<div class="notice">
+<b>No exposition has been written.</b> Every Gurmukhi line below is verified against a
+digital source. The explanation slots are deliberately empty: this page shows the format
+and the governance, not a teaching. No AI-written interpretation appears here, and none
+will. A qualified human reviewer writes the exposition, or it stays empty.
+</div>
+
+<h2>What the source contains on this topic</h2>
+<p>Counted directly in the reference database rather than estimated. These are
+<b>term matches</b>, not reviewed thematic coverage, and the right-hand columns count
+<b>sections</b> of the source, which include non-raag forms such as Jap, Svaiyay, Phunhay
+and the Salok collections. They are not a count of the thirty-one principal raags.</p>
+<table class="counts">
+<thead><tr><th>Topic</th><th>Lines</th><th>Sections</th><th>Raag-named</th><th>Other forms</th></tr></thead>
+<tbody>
+<tr><td>Love</td><td>1,146</td><td>41</td><td>28</td><td>13</td></tr>
+<tr><td>Maya</td><td>988</td><td>40</td><td>31</td><td>9</td></tr>
+<tr><td>Duality</td><td>748</td><td>34</td><td>26</td><td>8</td></tr>
+<tr><td>Ego — Haumai</td><td>630</td><td>29</td><td>23</td><td>6</td></tr>
+<tr><td>Household life</td><td>128</td><td>28</td><td>23</td><td>5</td></tr>
+</tbody>
+</table>
+
+<h2>Verses</h2>
+
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਸਤਿਗੁਰੁ ਮਿਲੈ ਤ ਦੁਬਿਧਾ ਭਾਗੈ ॥</p></div>
+  <p class="cite">Guru Nanak · Raag Gauree · Ang 153</p>
+  <p class="basis">Locator basis: single digital lineage. Open Granth pinned 34d2a7c,
+  corpus/ang-0153.md, unique match, file digest confirmed. Open Granth states its own
+  source is the Shabad OS Database, so this is <b>not</b> an independent second witness
+  and <b>not</b> printed collation.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design. Whoever writes here is named on the page, and every claim they make
+  must carry a line reference the application checks.</div>
+</div>
+
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਅੰਤਰ ਕੀ ਦੁਬਿਧਾ ਅੰਤਰਿ ਮਰੈ ॥੧॥</p></div>
+  <p class="cite">Guru Nanak · Raag Dhanaasree · Ang 661</p>
+  <p class="basis">Open Granth pinned 34d2a7c, corpus/ang-0661.md, unique match, file
+  digest confirmed. Same single lineage caveat as above.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design.</div>
+</div>
+
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਇਹੁ ਮਨੁ ਜਾਗੈ ਇਸੁ ਮਨ ਕੀ ਦੁਬਿਧਾ ਮਰੈ ॥੪॥</p></div>
+  <p class="cite">Guru Amardas · Raag Bhairao · Ang 1129</p>
+  <p class="basis">Open Granth pinned 34d2a7c, corpus/ang-1129.md, unique match, file
+  digest confirmed. Same single lineage caveat as above.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design.</div>
+</div>
+
+<div class="pair">
+  <div class="verse"><p class="gur" lang="pa">ਛੋਡਹੁ ਵੇਸੁ ਭੇਖ ਚਤੁਰਾਈ ਦੁਬਿਧਾ ਇਹੁ ਫਲੁ ਨਾਹੀ ਜੀਉ ॥੧॥</p></div>
+  <p class="cite">Guru Nanak · Raag Sorath · Ang 598</p>
+  <p class="basis">Open Granth pinned 34d2a7c, corpus/ang-0598.md, unique match, file
+  digest confirmed. Same single lineage caveat as above.</p>
+  <div class="slot"><span class="who">Explanation — awaiting qualified review</span>
+  Empty by design.</div>
+</div>
+
+<h2>Source register</h2>
+<dl class="reg">
+<dt>Gurmukhi text</dt>
+<dd>Shabad OS Database v5.0.0-next.0, asset SSA2. Each line matched there on 26 Nov 2026.
+The lines are shown as the source carries them, without the editorial comma and semicolon
+phrasing marks that the Shabad OS records add. Those marks are not Gurbani.</dd>
+<dt>Ang locators, and their real strength</dt>
+<dd>Each Ang above was verified by this reviewer against Open Granth at pinned commit
+34d2a7c: unique match in the named file, with the file digest confirmed. But all 1,430
+files in that corpus declare <b>source: Shabad OS Database</b>, and its README states the
+corpus is built from it. So the Ang number and the Gurmukhi share one textual lineage.
+Two views of one database is not corroboration.</dd>
+<dt>What would make an Ang authoritative</dt>
+<dd>Collation against a printed Sri Guru Granth Sahib Ji. Not done. No amount of digital
+checking substitutes for it, and an Ang number is never sufficient authentication on its
+own.</dd>
+<dt>Exposition</dt>
+<dd>None. Not written, not generated, not borrowed.</dd>
+<dt>Printing</dt>
+<dd>Each verse, its citation, its basis note and its explanation slot form one block that
+is never split across a printed page.</dd>
+</dl>
+
+<div class="tools"><button onclick="window.print()">Print this article</button></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,737 @@
+{
+ "pilotSha256": "49b502f18f5899fb3d4f05d6377ac6fcd7e9d5e0538fb191201182c3c8cb03f4",
+ "counts": {
+  "nodes": 30,
+  "edges": 26,
+  "occurrences": 19,
+  "byType": {
+   "author": 3,
+   "collection": 4,
+   "composition": 2,
+   "concept": 6,
+   "course": 1,
+   "lesson": 2,
+   "passage": 3,
+   "raag": 1,
+   "study": 2,
+   "word": 6
+  }
+ },
+ "passages": [
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01",
+   "rows": 9,
+   "referenceGroupsEndingOnSameLine": 1,
+   "referenceLines": 9,
+   "referenceAuthor": "{\"Guru\":\"ਗੁਰੂ ਨਾਨਕ\",\"Latn\":\"Guru Nanak\"}",
+   "sameLength": true,
+   "firstLineSame": true,
+   "lastLineSame": true,
+   "rowBeforeInCitedFile": "ਕਰਿ ਕਿਰਪਾ ਪਾਰਿ ਉਤਾਰਿਆ ॥੧੩॥",
+   "rowAfterInCitedFile": "ਮਃ ੧ ॥",
+   "ordinalsConsecutive": true
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02",
+   "rows": 8,
+   "referenceGroupsEndingOnSameLine": 1,
+   "referenceLines": 8,
+   "referenceAuthor": "{\"Guru\":\"ਗੁਰੂ ਅੰਗਦ\",\"Latn\":\"Guru Angad\"}",
+   "sameLength": true,
+   "firstLineSame": true,
+   "lastLineSame": true,
+   "rowBeforeInCitedFile": "ਜੇਹਾ ਵੇਖਹਿ ਤੇਹਾ ਵੇਖੁ ॥੧॥",
+   "rowAfterInCitedFile": "ਪਉੜੀ ॥",
+   "ordinalsConsecutive": true
+  },
+  {
+   "id": "sggs.kabir.salok007",
+   "rows": 2,
+   "referenceGroupsEndingOnSameLine": 1,
+   "referenceLines": 2,
+   "referenceAuthor": "{\"Guru\":\"ਭਗਤ ਕਬੀਰ\",\"Latn\":\"Bhagat Kabir\"}",
+   "sameLength": true,
+   "firstLineSame": true,
+   "lastLineSame": true,
+   "rowBeforeInCitedFile": "ਮੋਹਿ ਮਿਲਿਓ ਪ੍ਰਭੁ ਆਪਨਾ ਸੰਗੀ ਭਜਹਿ ਗੋੁਬਿੰਦੁ ॥੬॥",
+   "rowAfterInCitedFile": "ਕਬੀਰ ਆਈ ਮੁਝਹਿ ਪਹਿ ਅਨਿਕ ਕਰੇ ਕਰਿ ਭੇਸ ॥",
+   "ordinalsConsecutive": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.heading01",
+   "ang": 470,
+   "ordinal": 29,
+   "printedLine": 12,
+   "text": "ਸਲੋਕੁ ਮਃ ੧ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 12,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 12,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line01",
+   "ang": 470,
+   "ordinal": 30,
+   "printedLine": 12,
+   "text": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 12,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 12,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line02",
+   "ang": 470,
+   "ordinal": 31,
+   "printedLine": 12,
+   "text": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 12,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 12,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line03",
+   "ang": 470,
+   "ordinal": 32,
+   "printedLine": 13,
+   "text": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 13,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 13,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line04",
+   "ang": 470,
+   "ordinal": 33,
+   "printedLine": 13,
+   "text": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 13,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 13,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line05",
+   "ang": 470,
+   "ordinal": 34,
+   "printedLine": 14,
+   "text": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 14,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 14,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line06",
+   "ang": 470,
+   "ordinal": 35,
+   "printedLine": 14,
+   "text": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 14,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 14,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line07",
+   "ang": 470,
+   "ordinal": 36,
+   "printedLine": 15,
+   "text": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 15,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 15,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri014.salok01.line08",
+   "ang": 470,
+   "ordinal": 37,
+   "printedLine": 15,
+   "text": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ ॥੧॥",
+   "equalsReference": true,
+   "referenceAng": 470,
+   "referenceLine": 15,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 15,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.heading01",
+   "ang": 466,
+   "ordinal": 40,
+   "printedLine": 16,
+   "text": "ਮਹਲਾ ੨ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 16,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 16,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line01",
+   "ang": 466,
+   "ordinal": 41,
+   "printedLine": 16,
+   "text": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 16,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 16,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line02",
+   "ang": 466,
+   "ordinal": 42,
+   "printedLine": 17,
+   "text": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 17,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 17,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line03",
+   "ang": 466,
+   "ordinal": 43,
+   "printedLine": 17,
+   "text": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 17,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 17,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line04",
+   "ang": 466,
+   "ordinal": 44,
+   "printedLine": 17,
+   "text": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 17,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 17,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line05",
+   "ang": 466,
+   "ordinal": 45,
+   "printedLine": 18,
+   "text": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 18,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 18,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line06",
+   "ang": 466,
+   "ordinal": 46,
+   "printedLine": 18,
+   "text": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 18,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 18,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.asa-di-vaar.pauri007.salok02.line07",
+   "ang": 466,
+   "ordinal": 47,
+   "printedLine": 19,
+   "text": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+   "equalsReference": true,
+   "referenceAng": 466,
+   "referenceLine": 19,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 19,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.kabir.salok007.line01",
+   "ang": 1364,
+   "ordinal": 33,
+   "printedLine": 16,
+   "text": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+   "equalsReference": true,
+   "referenceAng": 1364,
+   "referenceLine": 16,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 16,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  },
+  {
+   "id": "sggs.kabir.salok007.line02",
+   "ang": 1364,
+   "ordinal": 34,
+   "printedLine": 17,
+   "text": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ ॥੭॥",
+   "equalsReference": true,
+   "referenceAng": 1364,
+   "referenceLine": 17,
+   "angSame": true,
+   "printedLineSame": true,
+   "equalsCitedFileRow": true,
+   "citedFilePrintedLine": 17,
+   "citedFileFingerprintSame": true,
+   "nfc": true,
+   "oddCharacters": []
+  }
+ ],
+ "other": [
+  {
+   "path": "nodes.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਨਿਮਰਤਾ"
+  },
+  {
+   "path": "nodes.0.aliases.4",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਨਿਮਰਤਾ"
+  },
+  {
+   "path": "nodes.0.aliases.5",
+   "kind": "single form found in the source rows",
+   "text": "ਨੀਵੀ"
+  },
+  {
+   "path": "nodes.0.aliases.6",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਨਿਮ੍ਰਤਾ"
+  },
+  {
+   "path": "nodes.1.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.1.aliases.5",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.1.aliases.6",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਅਹੰਕਾਰ"
+  },
+  {
+   "path": "nodes.2.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਹੁਕਮ"
+  },
+  {
+   "path": "nodes.2.aliases.1",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਹੁਕਮ"
+  },
+  {
+   "path": "nodes.3.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਕਿਰਪਾ"
+  },
+  {
+   "path": "nodes.3.aliases.1",
+   "kind": "single form found in the source rows",
+   "text": "ਕਿਰਪਾ"
+  },
+  {
+   "path": "nodes.4.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸ਼ਬਦ"
+  },
+  {
+   "path": "nodes.4.aliases.1",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸ਼ਬਦ"
+  },
+  {
+   "path": "nodes.5.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸੇਵਾ"
+  },
+  {
+   "path": "nodes.5.aliases.1",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸੇਵਾ"
+  },
+  {
+   "path": "nodes.6.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਨੀਵੀ"
+  },
+  {
+   "path": "nodes.6.aliases.1",
+   "kind": "single form found in the source rows",
+   "text": "ਨੀਵੀ"
+  },
+  {
+   "path": "nodes.6.aliases.2",
+   "kind": "single form found in the source rows",
+   "text": "ਨੀਵੀ"
+  },
+  {
+   "path": "nodes.6.senses.0.form",
+   "kind": "single form found in the source rows",
+   "text": "ਨੀਵੀ"
+  },
+  {
+   "path": "nodes.6.senses.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਨੀਵਾਂ ਰਹਿਣਾ; ਇਸ ਸੰਦਰਭ ਵਿੱਚ ਨਿਮਰਤਾ।"
+  },
+  {
+   "path": "nodes.7.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਮਿਠਤੁ"
+  },
+  {
+   "path": "nodes.7.aliases.1",
+   "kind": "single form found in the source rows",
+   "text": "ਮਿਠਤੁ"
+  },
+  {
+   "path": "nodes.7.aliases.2",
+   "kind": "single form found in the source rows",
+   "text": "ਮਿਠਤੁ"
+  },
+  {
+   "path": "nodes.7.senses.0.form",
+   "kind": "single form found in the source rows",
+   "text": "ਮਿਠਤੁ"
+  },
+  {
+   "path": "nodes.7.senses.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਮਿਠਾਸ; ਚੰਗੇ ਵਿਹਾਰ ਦੀ ਮਿਠਾਸ।"
+  },
+  {
+   "path": "nodes.8.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.8.aliases.1",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.8.aliases.2",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.8.senses.0.form",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.8.senses.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਆਪੇ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਅਵਸਥਾ।"
+  },
+  {
+   "path": "nodes.9.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਹੁਕਮ"
+  },
+  {
+   "path": "nodes.9.aliases.1",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਹੁਕਮ"
+  },
+  {
+   "path": "nodes.9.aliases.2",
+   "kind": "single form found in the source rows",
+   "text": "ਹੁਕਮੁ"
+  },
+  {
+   "path": "nodes.9.senses.0.form",
+   "kind": "single form found in the source rows",
+   "text": "ਹੁਕਮੁ"
+  },
+  {
+   "path": "nodes.9.senses.0.en",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "The exact form ਹੁਕਮੁ in this passage refers to Divine order/command; full gra…"
+  },
+  {
+   "path": "nodes.9.senses.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਇਸ ਪੰਕਤੀ ਵਿੱਚ ਰੱਬੀ ਹੁਕਮ।"
+  },
+  {
+   "path": "nodes.10.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਕਿਰਪਾ"
+  },
+  {
+   "path": "nodes.10.aliases.1",
+   "kind": "single form found in the source rows",
+   "text": "ਕਿਰਪਾ"
+  },
+  {
+   "path": "nodes.10.aliases.2",
+   "kind": "single form found in the source rows",
+   "text": "ਕਿਰਪਾ"
+  },
+  {
+   "path": "nodes.10.senses.0.form",
+   "kind": "single form found in the source rows",
+   "text": "ਕਿਰਪਾ"
+  },
+  {
+   "path": "nodes.10.senses.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਮਿਹਰ ਜਾਂ ਕਿਰਪਾ।"
+  },
+  {
+   "path": "nodes.11.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਭਲੋ"
+  },
+  {
+   "path": "nodes.11.aliases.1",
+   "kind": "single form found in the source rows",
+   "text": "ਭਲੋ"
+  },
+  {
+   "path": "nodes.11.aliases.2",
+   "kind": "single form found in the source rows",
+   "text": "ਭਲੋ"
+  },
+  {
+   "path": "nodes.11.senses.0.form",
+   "kind": "single form found in the source rows",
+   "text": "ਭਲੋ"
+  },
+  {
+   "path": "nodes.11.senses.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਚੰਗਾ; ਆਪਣੇ ਆਪ ਨਾਲ ਕੀਤੀ ਤੁਲਨਾ ਵਿੱਚ।"
+  },
+  {
+   "path": "nodes.12.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ"
+  },
+  {
+   "path": "nodes.13.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਬੁੱਧ ਧਰਮ ਵਿੱਚ ਮਾਨ ਦਾ ਵਿਚਾਰ"
+  },
+  {
+   "path": "nodes.14.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਮਨ ਦੀ ਸਮਝ"
+  },
+  {
+   "path": "nodes.15.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਨਿਮਰਤਾ"
+  },
+  {
+   "path": "nodes.15.simple.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਨਿਮਰਤਾ ਦਾ ਭਾਵ ਆਪਣੇ ਆਪ ਨੂੰ ਵੱਡਾ ਸਮਝਣ ਦਾ ਅਹੰਕਾਰ ਛੱਡਣਾ ਅਤੇ ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ ਨੂੰ ਸੱ…"
+  },
+  {
+   "path": "nodes.15.detailed.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਅੰਗ ੪੭੦ ਦੇ ਸਲੋਕ ਵਿੱਚ ਬਾਹਰਲੇ ਦਿਖਾਵੇ ਅਤੇ ਅੰਦਰਲੀ ਸੱਚਾਈ ਦਾ ਫ਼ਰਕ ਹੈ। ਕਬੀਰ ਜੀ ਦਾ ਸਲ…"
+  },
+  {
+   "path": "nodes.15.deep.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸਿਰ ਨਿਵਾਉਣ ਨਾਲ ਹੀ ਨਿਮਰਤਾ ਸਾਬਤ ਨਹੀਂ ਹੁੰਦੀ। ਮਨ ਦੀ ਨੀਅਤ ਅਤੇ ਕਰਮ ਵੀ ਮਹੱਤਵਪੂਰਨ ਹਨ।…"
+  },
+  {
+   "path": "nodes.16.pa",
+   "kind": "single form found in the source rows",
+   "text": "ਹਉਮੈ"
+  },
+  {
+   "path": "nodes.16.simple.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਹਉਮੈ ਆਪਣੇ ਆਪ ਨੂੰ ਕੇਂਦਰ ਬਣਾਉਣ ਵਾਲੀ ਆਤਮਕ ਅਵਸਥਾ ਹੈ। ਇਹ ਸਿਰਫ਼ ਆਮ ਸਵੈ-ਪਛਾਣ ਨਹੀਂ। ਗ…"
+  },
+  {
+   "path": "nodes.16.detailed.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸਲੋਕ ਵਿੱਚ ਹਉਮੈ ਦੇ ਉਤਪੰਨ ਹੋਣ ਅਤੇ ਦੂਰ ਹੋਣ ਦਾ ਪ੍ਰਸ਼ਨ ਹੈ। ਹੁਕਮ, ਬੰਧਨ, ਜਨਮ ਅਤੇ ਰੋਗ …"
+  },
+  {
+   "path": "nodes.16.deep.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਮਨੋਵਿਗਿਆਨਕ ਸਵੈ-ਪਛਾਣ ਅਤੇ ਗੁਰਬਾਣੀ ਦੀ ਹਉਮੈ ਨੂੰ ਇਕੋ ਅਰਥ ਨਾ ਦਿਓ। ਰੋਗ ਦਾ ਰੂਪਕ ਡਾਕਟਰ…"
+  },
+  {
+   "path": "nodes.17.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ"
+  },
+  {
+   "path": "nodes.21.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ"
+  },
+  {
+   "path": "nodes.22.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ"
+  },
+  {
+   "path": "nodes.23.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਭਗਤ ਕਬੀਰ ਜੀ"
+  },
+  {
+   "path": "nodes.24.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਆਸਾ"
+  },
+  {
+   "path": "nodes.25.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਆਸਾ ਦੀ ਵਾਰ"
+  },
+  {
+   "path": "nodes.26.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ"
+  },
+  {
+   "path": "passageDescriptions.0.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਅਸਲੀ ਨਿਮਰਤਾ"
+  },
+  {
+   "path": "passageDescriptions.1.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ"
+  },
+  {
+   "path": "passageDescriptions.2.pa",
+   "kind": "other Gurmukhi (name, Punjabi teaching, label)",
+   "text": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ"
+  }
+ ],
+ "summary": {
+  "rows": 19,
+  "equalReference": 19,
+  "equalCitedFile": 19,
+  "angSame": 19,
+  "printedLineSame": 19,
+  "fingerprintSame": 19,
+  "nfc": 19,
+  "rowsWithOddCharacters": 0
+ },
+ "otherGurmukhiByKind": {
+  "other Gurmukhi (name, Punjabi teaching, label)": 39,
+  "single form found in the source rows": 28
+ }
+}

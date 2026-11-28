@@ -1,0 +1,48 @@
+{
+ "main": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+ "stringsInPublishedNitnemData": 7643,
+ "pullRequests": {
+  "23": {
+   "head": "24599fd",
+   "courseFile": "course.v1.json",
+   "strings": 506,
+   "foundWordForWordInPublishedData": 495,
+   "notFound": 11
+  },
+  "26": {
+   "head": "fed2cfc",
+   "courseFile": "course.v2.json",
+   "strings": 711,
+   "foundWordForWordInPublishedData": 700,
+   "notFound": 11
+  },
+  "28": {
+   "head": "545150b",
+   "courseFile": "course.v4.json",
+   "strings": 1364,
+   "foundWordForWordInPublishedData": 1348,
+   "notFound": 16
+  },
+  "31": {
+   "head": "4fc9aa0",
+   "courseFile": "course.v7.json",
+   "strings": 2130,
+   "foundWordForWordInPublishedData": 2115,
+   "notFound": 15
+  },
+  "32": {
+   "head": "daff3fd",
+   "courseFile": "course.v7.json",
+   "strings": 2130,
+   "foundWordForWordInPublishedData": 2115,
+   "notFound": 15
+  },
+  "33": {
+   "head": "0ea8e1c",
+   "courseFile": "course.v7.json",
+   "strings": 2130,
+   "foundWordForWordInPublishedData": 2115,
+   "notFound": 15
+  }
+ }
+}

@@ -1,0 +1,8171 @@
+{
+ "groups": {
+  "KQ-01 whole row · phrase": {
+   "cases": 19,
+   "ok": 19
+  },
+  "KQ-01 row without closing marks · phrase": {
+   "cases": 19,
+   "ok": 19
+  },
+  "KQ-01 two-word phrase · phrase": {
+   "cases": 18,
+   "ok": 18
+  },
+  "KQ-01 whole row · auto": {
+   "cases": 19,
+   "ok": 19
+  },
+  "KQ-01 row without closing marks · auto": {
+   "cases": 19,
+   "ok": 19
+  },
+  "KQ-01 two-word phrase · auto": {
+   "cases": 18,
+   "ok": 18
+  },
+  "KQ-01b not a phrase · phrase": {
+   "cases": 7,
+   "ok": 1
+  },
+  "KQ-01b not a phrase · auto": {
+   "cases": 7,
+   "ok": 1
+  },
+  "KQ-02 first letters, as written": {
+   "cases": 19,
+   "ok": 19
+  },
+  "KQ-02 first letters typed without choosing the mode": {
+   "cases": 19,
+   "ok": 0
+  },
+  "KQ-02 first letters with spaces": {
+   "cases": 19,
+   "ok": 19
+  },
+  "KQ-02 first four letters": {
+   "cases": 17,
+   "ok": 17
+  },
+  "KQ-02 first letters, vowel-carrier convention": {
+   "cases": 11,
+   "ok": 0
+  },
+  "KQ-03 Ang": {
+   "cases": 23,
+   "ok": 19
+  },
+  "KQ-03 Ang in another mode": {
+   "cases": 2,
+   "ok": 2
+  },
+  "KQ-04 curated name finds its item": {
+   "cases": 239,
+   "ok": 239
+  },
+  "KQ-04b spellings a learner would try": {
+   "cases": 36,
+   "ok": 16
+  },
+  "KQ-05 author filter returns only that author": {
+   "cases": 15,
+   "ok": 15
+  },
+  "KQ-06 should find nothing": {
+   "cases": 55,
+   "ok": 38
+  },
+  "KQ-07 order and reasons": {
+   "cases": 1,
+   "ok": 1
+  }
+ },
+ "cases": [
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸਲੋਕੁ ਮਃ ੧ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸਲੋਕੁ ਮਃ ੧",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਮਃ ੧",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸਲੋਕੁ ਮਃ ੧ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸਲੋਕੁ ਮਃ ੧",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਮਃ ੧",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਰੁਖੁ ਸਰਾਇਰਾ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਰੁਖੁ ਸਰਾਇਰਾ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਜਿ ਆਵਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਜਿ ਆਵਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਿਕੇ ਫੁਲ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਲ ਫਿਕੇ ਫੁਲ ਬਕਬਕੇ ਕੰਮਿ ਨ ਆਵਹਿ ਪਤ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਿਕੇ ਫੁਲ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਨੀਵੀ ਨਾਨਕਾ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "word.mithat",
+    "word.nivi",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "word.mithat",
+    "word.nivi",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਨੀਵੀ ਨਾਨਕਾ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "word.nivi",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਕੋ ਨਿਵੈ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਕੋ ਨਿਵੈ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਤਾਰਾਜੂ ਤੋਲੀਐ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਤਾਰਾਜੂ ਤੋਲੀਐ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਦੂਣਾ ਨਿਵੈ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਦੂਣਾ ਨਿਵੈ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ ॥੧॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਨਿਵਾਇਐ ਕਿਆ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ ॥੧॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸੀਸਿ ਨਿਵਾਇਐ ਕਿਆ ਥੀਐ ਜਾ ਰਿਦੈ ਕੁਸੁਧੇ ਜਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਨਿਵਾਇਐ ਕਿਆ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮਹਲਾ ੨ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮਹਲਾ ੨",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮਹਲਾ ੨ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮਹਲਾ ੨",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਏਹਾ ਜਾਤਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਏਹਾ ਜਾਤਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਏਈ ਬੰਧਨਾ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਏਈ ਬੰਧਨਾ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਕਿਥਹੁ ਊਪਜੈ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਕਿਥਹੁ ਊਪਜੈ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਏਹੋ ਹੁਕਮੁ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "concept.hukam",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "word.hukam"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "concept.hukam",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "word.hukam"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਏਹੋ ਹੁਕਮੁ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.hukam",
+    "word.hukam"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਦੀਰਘ ਰੋਗੁ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਦੀਰਘ ਰੋਗੁ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਰੇ ਜੇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.kirpa",
+    "word.kirpa"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.kirpa",
+    "word.kirpa"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਰੇ ਜੇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਕਹੈ ਸੁਣਹੁ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਕਹੈ ਸੁਣਹੁ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਸਭ ਤੇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007",
+    "word.bhalo"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007",
+    "word.bhalo"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਸਭ ਤੇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ ॥੭॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · phrase",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਐਸਾ ਕਰਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 whole row · auto",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ ॥੭॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 row without closing marks · auto",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਿਨਿ ਐਸਾ ਕਰਿ ਬੂਝਿਆ ਮੀਤੁ ਹਮਾਰਾ ਸੋਇ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01 two-word phrase · auto",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਐਸਾ ਕਰਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "one letter",
+   "query": "ਹ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "one letter",
+   "query": "ਹ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "one vowel sign",
+   "query": "ਿ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "one vowel sign",
+   "query": "ਿ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "two letters from inside a word",
+   "query": "ਉਮ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "two letters from inside a word",
+   "query": "ਉਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "words of one row in the wrong order",
+   "query": "ਰੋਗੁ ਦੀਰਘ ਹਉਮੈ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "words of one row in the wrong order",
+   "query": "ਰੋਗੁ ਦੀਰਘ ਹਉਮੈ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "end of one word + start of next",
+   "query": "ਮੈ ਦੀ",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "end of one word + start of next",
+   "query": "ਮੈ ਦੀ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "closing mark only",
+   "query": "॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "closing mark only",
+   "query": "॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-01b not a phrase · phrase",
+   "name": "a number mark only",
+   "query": "॥੧॥",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-01b not a phrase · auto",
+   "name": "a number mark only",
+   "query": "॥੧॥",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸਮ੧",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸਮ੧",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row29",
+   "query": "ਸ ਮ ੧",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਰਸਅਦਅਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਰਸਅ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸਰਸਅਦਅਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row30",
+   "query": "ਸ ਰ ਸ ਅ ਦ ਅ ਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਜਆਆਕਜਨਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ੳਜਅਅਕਜਨਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਜਆਆ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓਜਆਆਕਜਨਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row31",
+   "query": "ਓ ਜ ਆ ਆ ਕ ਜ ਨ ਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਫਫਬਕਨਆਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਫਫਬਕਨਅਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਫਫਬ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫਫਫਬਕਨਆਪ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row32",
+   "query": "ਫ ਫ ਫ ਬ ਕ ਨ ਆ ਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਨਨਗਚਤ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਨਨਗ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮਨਨਗਚਤ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row33",
+   "query": "ਮ ਨ ਨ ਗ ਚ ਤ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਕਨਆਕਪਕਨਨਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਕਨਅਕਪਕਨਨਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਕਨਆ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸਕਨਆਕਪਕਨਨਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row34",
+   "query": "ਸ ਕ ਨ ਆ ਕ ਪ ਕ ਨ ਨ ਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਤਤਨਸਗਹ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਤਤਨ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧਤਤਨਸਗਹ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row35",
+   "query": "ਧ ਤ ਤ ਨ ਸ ਗ ਹ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਦਨਜਹਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਦਨਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅਦਨਜਹਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row36",
+   "query": "ਅ ਦ ਨ ਜ ਹ ਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸਨਕਥਜਰਕਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸਨਕਥ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸਨਕਥਜਰਕਜ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang470.row37",
+   "query": "ਸ ਨ ਕ ਥ ਜ ਰ ਕ ਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮ੨",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮ੨",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row40",
+   "query": "ਮ ੨",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਏਜਹਹਕਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹੲਜਹਹਕਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਏਜਹ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹਏਜਹਹਕਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row41",
+   "query": "ਹ ਏ ਜ ਹ ਹ ਕ ਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਏਬਫਫਜਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹੲਬਫਫਜਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਏਬਫ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹਏਬਫਫਜਪ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row42",
+   "query": "ਹ ਏ ਬ ਫ ਫ ਜ ਪ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਕਊਕਸਇਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਕੳਕਸੲਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਕਊਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹਕਊਕਸਇਜ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row43",
+   "query": "ਹ ਕ ਊ ਕ ਸ ਇ ਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਏਹਹਪਕਫ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹੲਹਹਪਕਫ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਏਹਹ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹਏਹਹਪਕਫ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row44",
+   "query": "ਹ ਏ ਹ ਹ ਪ ਕ ਫ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਦਰਹਦਭਇਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਦਰਹਦਭੲਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਦਰਹ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹਦਰਹਦਭਇਮ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row45",
+   "query": "ਹ ਦ ਰ ਹ ਦ ਭ ਇ ਮ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਕਜਆਤਗਕਸਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਕਜਅਤਗਕਸਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਕਜਆ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕਕਜਆਤਗਕਸਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row46",
+   "query": "ਕ ਕ ਜ ਆ ਤ ਗ ਕ ਸ ਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਕਸਜਇਸਦਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਕਸਜੲਸਦਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਕਸਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨਕਸਜਇਸਦਜ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang466.row47",
+   "query": "ਨ ਕ ਸ ਜ ਇ ਸ ਦ ਜ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਸਤਹਬਹਤਭਸਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਸਤਹ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕਸਤਹਬਹਤਭਸਕ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row33",
+   "query": "ਕ ਸ ਤ ਹ ਬ ਹ ਤ ਭ ਸ ਕ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, as written",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਐਕਬਮਹਸ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters, vowel-carrier convention",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਅਕਬਮਹਸ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first four letters",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਐਕਬ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-02 first letters typed without choosing the mode",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜਐਕਬਮਹਸ",
+   "opts": {
+    "mode": "auto"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-02 first letters with spaces",
+   "name": "sggs.opengranth-34d2a7c.ang1364.row34",
+   "query": "ਜ ਐ ਕ ਬ ਮ ਹ ਸ",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "466",
+   "query": "466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "470",
+   "query": "470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "1364",
+   "query": "1364",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "Ang 466",
+   "query": "Ang 466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "ang470",
+   "query": "ang470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "ਅੰਗ ੪੬੬",
+   "query": "ਅੰਗ ੪੬੬",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "੪੭੦",
+   "query": "੪੭੦",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "੧੩੬੪",
+   "query": "੧੩੬੪",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "Ang 1364",
+   "query": "Ang 1364",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "465",
+   "query": "465",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "471",
+   "query": "471",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "0",
+   "query": "0",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "1431",
+   "query": "1431",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "14300",
+   "query": "14300",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "-1",
+   "query": "-1",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "466.5",
+   "query": "466.5",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "4 6 6",
+   "query": "4 6 6",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "page 466",
+   "query": "page 466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "Ang466 ",
+   "query": "Ang466 ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "ang 0466",
+   "query": "ang 0466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "p. 470",
+   "query": "p. 470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "Ank 470",
+   "query": "Ank 470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-03 Ang",
+   "name": "ਪੰਨਾ ੪੭੦",
+   "query": "ਪੰਨਾ ੪੭੦",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-03 Ang in another mode",
+   "name": "first-letter",
+   "query": "466",
+   "opts": {
+    "mode": "first-letter"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-03 Ang in another mode",
+   "name": "phrase",
+   "query": "466",
+   "opts": {
+    "mode": "phrase"
+   },
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.sggs",
+   "query": "Sri Guru Granth Sahib Ji",
+   "opts": {},
+   "expect": [
+    "collection.sggs"
+   ],
+   "got": [
+    "collection.sggs"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.sggs",
+   "query": "SRI GURU GRANTH SAHIB JI",
+   "opts": {},
+   "expect": [
+    "collection.sggs"
+   ],
+   "got": [
+    "collection.sggs"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.sggs",
+   "query": "  Sri Guru Granth Sahib Ji  ",
+   "opts": {},
+   "expect": [
+    "collection.sggs"
+   ],
+   "got": [
+    "collection.sggs"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.sggs",
+   "query": "ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ",
+   "opts": {},
+   "expect": [
+    "collection.sggs"
+   ],
+   "got": [
+    "collection.sggs"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.sggs",
+   "query": "  ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ  ",
+   "opts": {},
+   "expect": [
+    "collection.sggs"
+   ],
+   "got": [
+    "collection.sggs"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.dasam",
+   "query": "Dasam Bani",
+   "opts": {},
+   "expect": [
+    "collection.dasam"
+   ],
+   "got": [
+    "collection.dasam",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.dasam",
+   "query": "DASAM BANI",
+   "opts": {},
+   "expect": [
+    "collection.dasam"
+   ],
+   "got": [
+    "collection.dasam",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.dasam",
+   "query": "  Dasam Bani  ",
+   "opts": {},
+   "expect": [
+    "collection.dasam"
+   ],
+   "got": [
+    "collection.dasam",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.bhai-gurdas",
+   "query": "Vaaran Bhai Gurdas Ji",
+   "opts": {},
+   "expect": [
+    "collection.bhai-gurdas"
+   ],
+   "got": [
+    "collection.bhai-gurdas"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.bhai-gurdas",
+   "query": "VAARAN BHAI GURDAS JI",
+   "opts": {},
+   "expect": [
+    "collection.bhai-gurdas"
+   ],
+   "got": [
+    "collection.bhai-gurdas"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.bhai-gurdas",
+   "query": "  Vaaran Bhai Gurdas Ji  ",
+   "opts": {},
+   "expect": [
+    "collection.bhai-gurdas"
+   ],
+   "got": [
+    "collection.bhai-gurdas"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.bhai-nand-lal",
+   "query": "Bhai Nand Lal Ji",
+   "opts": {},
+   "expect": [
+    "collection.bhai-nand-lal"
+   ],
+   "got": [
+    "collection.bhai-nand-lal"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.bhai-nand-lal",
+   "query": "BHAI NAND LAL JI",
+   "opts": {},
+   "expect": [
+    "collection.bhai-nand-lal"
+   ],
+   "got": [
+    "collection.bhai-nand-lal"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "collection.bhai-nand-lal",
+   "query": "  Bhai Nand Lal Ji  ",
+   "opts": {},
+   "expect": [
+    "collection.bhai-nand-lal"
+   ],
+   "got": [
+    "collection.bhai-nand-lal"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "Guru Nanak Dev Ji",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "GURU NANAK DEV JI",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "  Guru Nanak Dev Ji  ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "  ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ  ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "nanak",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "NANAK",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "  nanak  ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "guru nanak",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "GURU NANAK",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-nanak",
+   "query": "  guru nanak  ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "Guru Angad Dev Ji",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "GURU ANGAD DEV JI",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "  Guru Angad Dev Ji  ",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "  ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ  ",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "angad",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "ANGAD",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "  angad  ",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "guru angad",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "GURU ANGAD",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.guru-angad",
+   "query": "  guru angad  ",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "Bhagat Kabir Ji",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "BHAGAT KABIR JI",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "  Bhagat Kabir Ji  ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "ਭਗਤ ਕਬੀਰ ਜੀ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "  ਭਗਤ ਕਬੀਰ ਜੀ  ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "kabir",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "KABIR",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "  kabir  ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "kabeer",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "KABEER",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "author.bhagat-kabir",
+   "query": "  kabeer  ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "Raag Asa",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "RAAG ASA",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "  Raag Asa  ",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "ਆਸਾ",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "  ਆਸਾ  ",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "asa",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "ASA",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "  asa  ",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "aasa",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "AASA",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "raag.asa",
+   "query": "  aasa  ",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "Asa Di Vaar",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "ASA DI VAAR",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "  Asa Di Vaar  ",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "ਆਸਾ ਦੀ ਵਾਰ",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "  ਆਸਾ ਦੀ ਵਾਰ  ",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "asa di var",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "ASA DI VAR",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "  asa di var  ",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "asa di vaar",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "ASA DI VAAR",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.asa-di-vaar",
+   "query": "  asa di vaar  ",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "Salok Bhagat Kabir Ji",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "SALOK BHAGAT KABIR JI",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "  Salok Bhagat Kabir Ji  ",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "  ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ  ",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "kabir saloks",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "KABIR SALOKS",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "composition.kabir-saloks",
+   "query": "  kabir saloks  ",
+   "opts": {},
+   "expect": [
+    "composition.kabir-saloks"
+   ],
+   "got": [
+    "composition.kabir-saloks",
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "Humility beyond appearances",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "HUMILITY BEYOND APPEARANCES",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "  Humility beyond appearances  ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "ਅਸਲੀ ਨਿਮਰਤਾ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "  ਅਸਲੀ ਨਿਮਰਤਾ  ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01",
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "ang 470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "ANG 470",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.470.m1.salok01",
+   "query": "  ang 470  ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "Understanding Haumai and grace",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "UNDERSTANDING HAUMAI AND GRACE",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "  Understanding Haumai and grace  ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "word.haumai"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "concept.kirpa",
+    "lesson.haumai.r1"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "  ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ  ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "concept.haumai",
+    "concept.kirpa",
+    "lesson.haumai.r1"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "ang 466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "ANG 466",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.asa.466.m2.salok02",
+   "query": "  ang 466  ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "Turning criticism inward",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "TURNING CRITICISM INWARD",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "  Turning criticism inward  ",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "  ਆਪਣੇ ਅੰਦਰ ਝਾਤ  ",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "ang 1364",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "ANG 1364",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "sggs.kabir.salok007",
+   "query": "  ang 1364  ",
+   "opts": {},
+   "expect": [
+    "sggs.kabir.salok007"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "Humility",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "HUMILITY",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  Humility  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "ਨਿਮਰਤਾ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  ਨਿਮਰਤਾ  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "nimarta",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "NIMARTA",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  nimarta  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "nimrata",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "NIMRATA",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  nimrata  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "humble",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "HUMBLE",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  humble  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "humility",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "HUMILITY",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  humility  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "ਨੀਵੀ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "word.nivi",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  ਨੀਵੀ  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "word.nivi",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "ਨਿਮ੍ਰਤਾ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.humility",
+   "query": "  ਨਿਮ੍ਰਤਾ  ",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "Haumai",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "HAUMAI",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  Haumai  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "ਹਉਮੈ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  ਹਉਮੈ  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "haumai",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "HAUMAI",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  haumai  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "haume",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "HAUME",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  haume  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "haumay",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "HAUMAY",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  haumay  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "ego",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "EGO",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  ego  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "self-centeredness",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "SELF-CENTEREDNESS",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  self-centeredness  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "ਅਹੰਕਾਰ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.haumai",
+   "query": "  ਅਹੰਕਾਰ  ",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.hukam",
+   "query": "Hukam",
+   "opts": {},
+   "expect": [
+    "concept.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.hukam",
+   "query": "HUKAM",
+   "opts": {},
+   "expect": [
+    "concept.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.hukam",
+   "query": "  Hukam  ",
+   "opts": {},
+   "expect": [
+    "concept.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.hukam",
+   "query": "ਹੁਕਮ",
+   "opts": {},
+   "expect": [
+    "concept.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.hukam",
+   "query": "  ਹੁਕਮ  ",
+   "opts": {},
+   "expect": [
+    "concept.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.kirpa",
+   "query": "Kirpa",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.kirpa",
+   "query": "KIRPA",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.kirpa",
+   "query": "  Kirpa  ",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.kirpa",
+   "query": "ਕਿਰਪਾ",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.kirpa",
+   "query": "  ਕਿਰਪਾ  ",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.shabad",
+   "query": "Shabad",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "concept.shabad"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.shabad",
+   "query": "SHABAD",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "concept.shabad"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.shabad",
+   "query": "  Shabad  ",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "concept.shabad"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.shabad",
+   "query": "ਸ਼ਬਦ",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "concept.shabad"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.shabad",
+   "query": "  ਸ਼ਬਦ  ",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "concept.shabad"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.seva",
+   "query": "Seva",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": [
+    "concept.seva"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.seva",
+   "query": "SEVA",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": [
+    "concept.seva"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.seva",
+   "query": "  Seva  ",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": [
+    "concept.seva"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.seva",
+   "query": "ਸੇਵਾ",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": [
+    "concept.seva"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "concept.seva",
+   "query": "  ਸੇਵਾ  ",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": [
+    "concept.seva"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.nivi",
+   "query": "Nivi",
+   "opts": {},
+   "expect": [
+    "word.nivi"
+   ],
+   "got": [
+    "word.nivi",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.nivi",
+   "query": "NIVI",
+   "opts": {},
+   "expect": [
+    "word.nivi"
+   ],
+   "got": [
+    "word.nivi",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.nivi",
+   "query": "  Nivi  ",
+   "opts": {},
+   "expect": [
+    "word.nivi"
+   ],
+   "got": [
+    "word.nivi",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.nivi",
+   "query": "ਨੀਵੀ",
+   "opts": {},
+   "expect": [
+    "word.nivi"
+   ],
+   "got": [
+    "concept.humility",
+    "word.nivi",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.nivi",
+   "query": "  ਨੀਵੀ  ",
+   "opts": {},
+   "expect": [
+    "word.nivi"
+   ],
+   "got": [
+    "concept.humility",
+    "word.nivi",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.mithat",
+   "query": "Mithat",
+   "opts": {},
+   "expect": [
+    "word.mithat"
+   ],
+   "got": [
+    "word.mithat",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.mithat",
+   "query": "MITHAT",
+   "opts": {},
+   "expect": [
+    "word.mithat"
+   ],
+   "got": [
+    "word.mithat",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.mithat",
+   "query": "  Mithat  ",
+   "opts": {},
+   "expect": [
+    "word.mithat"
+   ],
+   "got": [
+    "word.mithat",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.mithat",
+   "query": "ਮਿਠਤੁ",
+   "opts": {},
+   "expect": [
+    "word.mithat"
+   ],
+   "got": [
+    "word.mithat",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.mithat",
+   "query": "  ਮਿਠਤੁ  ",
+   "opts": {},
+   "expect": [
+    "word.mithat"
+   ],
+   "got": [
+    "word.mithat",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.haumai",
+   "query": "Haumai",
+   "opts": {},
+   "expect": [
+    "word.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.haumai",
+   "query": "HAUMAI",
+   "opts": {},
+   "expect": [
+    "word.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.haumai",
+   "query": "  Haumai  ",
+   "opts": {},
+   "expect": [
+    "word.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.haumai",
+   "query": "ਹਉਮੈ",
+   "opts": {},
+   "expect": [
+    "word.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.haumai",
+   "query": "  ਹਉਮੈ  ",
+   "opts": {},
+   "expect": [
+    "word.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "Hukam",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "HUKAM",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "  Hukam  ",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "ਹੁਕਮ",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "  ਹੁਕਮ  ",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "ਹੁਕਮੁ",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "word.hukam",
+    "sggs.asa.466.m2.salok02",
+    "concept.hukam"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.hukam",
+   "query": "  ਹੁਕਮੁ  ",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "word.hukam",
+    "sggs.asa.466.m2.salok02",
+    "concept.hukam"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.kirpa",
+   "query": "Kirpa",
+   "opts": {},
+   "expect": [
+    "word.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.kirpa",
+   "query": "KIRPA",
+   "opts": {},
+   "expect": [
+    "word.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.kirpa",
+   "query": "  Kirpa  ",
+   "opts": {},
+   "expect": [
+    "word.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.kirpa",
+   "query": "ਕਿਰਪਾ",
+   "opts": {},
+   "expect": [
+    "word.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.kirpa",
+   "query": "  ਕਿਰਪਾ  ",
+   "opts": {},
+   "expect": [
+    "word.kirpa"
+   ],
+   "got": [
+    "concept.kirpa",
+    "word.kirpa",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.bhalo",
+   "query": "Bhalo",
+   "opts": {},
+   "expect": [
+    "word.bhalo"
+   ],
+   "got": [
+    "word.bhalo",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.bhalo",
+   "query": "BHALO",
+   "opts": {},
+   "expect": [
+    "word.bhalo"
+   ],
+   "got": [
+    "word.bhalo",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.bhalo",
+   "query": "  Bhalo  ",
+   "opts": {},
+   "expect": [
+    "word.bhalo"
+   ],
+   "got": [
+    "word.bhalo",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.bhalo",
+   "query": "ਭਲੋ",
+   "opts": {},
+   "expect": [
+    "word.bhalo"
+   ],
+   "got": [
+    "word.bhalo",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "word.bhalo",
+   "query": "  ਭਲੋ  ",
+   "opts": {},
+   "expect": [
+    "word.bhalo"
+   ],
+   "got": [
+    "word.bhalo",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "Intellectual humility",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "INTELLECTUAL HUMILITY",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "  Intellectual humility  ",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "  ਗਿਆਨ ਦੀਆਂ ਹੱਦਾਂ ਦੀ ਪਛਾਣ  ",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "intellectual humility",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "INTELLECTUAL HUMILITY",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "  intellectual humility  ",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "psychology",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "PSYCHOLOGY",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "  psychology  ",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "self awareness",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "SELF AWARENESS",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.intellectual-humility",
+   "query": "  self awareness  ",
+   "opts": {},
+   "expect": [
+    "study.intellectual-humility"
+   ],
+   "got": [
+    "study.intellectual-humility"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "Buddhist reflection on conceit",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "BUDDHIST REFLECTION ON CONCEIT",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "  Buddhist reflection on conceit  ",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "ਬੁੱਧ ਧਰਮ ਵਿੱਚ ਮਾਨ ਦਾ ਵਿਚਾਰ",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "  ਬੁੱਧ ਧਰਮ ਵਿੱਚ ਮਾਨ ਦਾ ਵਿਚਾਰ  ",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "buddhism",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "BUDDHISM",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "  buddhism  ",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "buddhist",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "BUDDHIST",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "  buddhist  ",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "conceit",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "CONCEIT",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "study.buddhist-conceit",
+   "query": "  conceit  ",
+   "opts": {},
+   "expect": [
+    "study.buddhist-conceit"
+   ],
+   "got": [
+    "study.buddhist-conceit"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "course.human-mind",
+   "query": "Understanding the human mind",
+   "opts": {},
+   "expect": [
+    "course.human-mind"
+   ],
+   "got": [
+    "course.human-mind"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "course.human-mind",
+   "query": "UNDERSTANDING THE HUMAN MIND",
+   "opts": {},
+   "expect": [
+    "course.human-mind"
+   ],
+   "got": [
+    "course.human-mind"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "course.human-mind",
+   "query": "  Understanding the human mind  ",
+   "opts": {},
+   "expect": [
+    "course.human-mind"
+   ],
+   "got": [
+    "course.human-mind"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "course.human-mind",
+   "query": "ਮਨ ਦੀ ਸਮਝ",
+   "opts": {},
+   "expect": [
+    "course.human-mind"
+   ],
+   "got": [
+    "course.human-mind"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "course.human-mind",
+   "query": "  ਮਨ ਦੀ ਸਮਝ  ",
+   "opts": {},
+   "expect": [
+    "course.human-mind"
+   ],
+   "got": [
+    "course.human-mind"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.humility.r1",
+   "query": "Humility · guided study",
+   "opts": {},
+   "expect": [
+    "lesson.humility.r1"
+   ],
+   "got": [
+    "lesson.humility.r1",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.humility.r1",
+   "query": "HUMILITY · GUIDED STUDY",
+   "opts": {},
+   "expect": [
+    "lesson.humility.r1"
+   ],
+   "got": [
+    "lesson.humility.r1",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.humility.r1",
+   "query": "  Humility · guided study  ",
+   "opts": {},
+   "expect": [
+    "lesson.humility.r1"
+   ],
+   "got": [
+    "lesson.humility.r1",
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.humility.r1",
+   "query": "ਨਿਮਰਤਾ",
+   "opts": {},
+   "expect": [
+    "lesson.humility.r1"
+   ],
+   "got": [
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.humility.r1",
+   "query": "  ਨਿਮਰਤਾ  ",
+   "opts": {},
+   "expect": [
+    "lesson.humility.r1"
+   ],
+   "got": [
+    "concept.humility",
+    "lesson.humility.r1",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.haumai.r1",
+   "query": "Haumai · guided study",
+   "opts": {},
+   "expect": [
+    "lesson.haumai.r1"
+   ],
+   "got": [
+    "lesson.haumai.r1",
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.haumai.r1",
+   "query": "HAUMAI · GUIDED STUDY",
+   "opts": {},
+   "expect": [
+    "lesson.haumai.r1"
+   ],
+   "got": [
+    "lesson.haumai.r1",
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.haumai.r1",
+   "query": "  Haumai · guided study  ",
+   "opts": {},
+   "expect": [
+    "lesson.haumai.r1"
+   ],
+   "got": [
+    "lesson.haumai.r1",
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.haumai.r1",
+   "query": "ਹਉਮੈ",
+   "opts": {},
+   "expect": [
+    "lesson.haumai.r1"
+   ],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04 curated name finds its item",
+   "name": "lesson.haumai.r1",
+   "query": "  ਹਉਮੈ  ",
+   "opts": {},
+   "expect": [
+    "lesson.haumai.r1"
+   ],
+   "got": [
+    "concept.haumai",
+    "lesson.haumai.r1",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "humbleness",
+   "query": "humbleness",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "nimarta",
+   "query": "nimarta",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [
+    "concept.humility",
+    "sggs.asa.470.m1.salok01",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "nimrta",
+   "query": "nimrta",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Nimratā",
+   "query": "Nimratā",
+   "opts": {},
+   "expect": [
+    "concept.humility"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "houmai",
+   "query": "houmai",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "haumein",
+   "query": "haumein",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "haumai?",
+   "query": "haumai?",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "what is haumai",
+   "query": "what is haumai",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "word.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "egoism",
+   "query": "egoism",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [
+    "concept.haumai",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "pride",
+   "query": "pride",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "hankar",
+   "query": "hankar",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ahankar",
+   "query": "ahankar",
+   "opts": {},
+   "expect": [
+    "concept.haumai"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Asa Ki Vaar",
+   "query": "Asa Ki Vaar",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Asa di Var",
+   "query": "Asa di Var",
+   "opts": {},
+   "expect": [
+    "composition.asa-di-vaar"
+   ],
+   "got": [
+    "composition.asa-di-vaar",
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Aasaa",
+   "query": "Aasaa",
+   "opts": {},
+   "expect": [
+    "raag.asa"
+   ],
+   "got": [
+    "raag.asa",
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Kabeer",
+   "query": "Kabeer",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Bhagat Kabir",
+   "query": "Bhagat Kabir",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "author.bhagat-kabir",
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Guru Nanak Dev Ji",
+   "query": "Guru Nanak Dev Ji",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "author.guru-nanak",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Guru Angad Dev",
+   "query": "Guru Angad Dev",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "author.guru-angad",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Mahalla 2",
+   "query": "Mahalla 2",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "Mehl 1",
+   "query": "Mehl 1",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "M2",
+   "query": "M2",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਮਹਲਾ ੨",
+   "query": "ਮਹਲਾ ੨",
+   "opts": {},
+   "expect": [
+    "author.guru-angad"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਕਬੀਰ",
+   "query": "ਕਬੀਰ",
+   "opts": {},
+   "expect": [
+    "author.bhagat-kabir"
+   ],
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਗੁਰੂ ਨਾਨਕ",
+   "query": "ਗੁਰੂ ਨਾਨਕ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਨਾਨਕ",
+   "query": "ਨਾਨਕ",
+   "opts": {},
+   "expect": [
+    "author.guru-nanak"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02",
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "simmal",
+   "query": "simmal",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "simmal tree",
+   "query": "simmal tree",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "grace",
+   "query": "grace",
+   "opts": {},
+   "expect": [
+    "concept.kirpa"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "hukam",
+   "query": "hukam",
+   "opts": {},
+   "expect": [
+    "concept.hukam"
+   ],
+   "got": [
+    "concept.hukam",
+    "word.hukam",
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "sewa",
+   "query": "sewa",
+   "opts": {},
+   "expect": [
+    "concept.seva"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "shabad",
+   "query": "shabad",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "concept.shabad"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "sabad",
+   "query": "sabad",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਸਬਦੁ",
+   "query": "ਸਬਦੁ",
+   "opts": {},
+   "expect": [
+    "concept.shabad"
+   ],
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਹੁਕਮੁ",
+   "query": "ਹੁਕਮੁ",
+   "opts": {},
+   "expect": [
+    "word.hukam"
+   ],
+   "got": [
+    "word.hukam",
+    "sggs.asa.466.m2.salok02",
+    "concept.hukam"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-04b spellings a learner would try",
+   "name": "ਨਿਵੈ",
+   "query": "ਨਿਵੈ",
+   "opts": {},
+   "expect": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-nanak · humility",
+   "query": "humility",
+   "opts": {
+    "author": "author.guru-nanak"
+   },
+   "expect": "subset of sggs.asa.470.m1.salok01",
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-nanak · haumai",
+   "query": "haumai",
+   "opts": {
+    "author": "author.guru-nanak"
+   },
+   "expect": "subset of sggs.asa.470.m1.salok01",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-nanak · ਹਉਮੈ",
+   "query": "ਹਉਮੈ",
+   "opts": {
+    "author": "author.guru-nanak"
+   },
+   "expect": "subset of sggs.asa.470.m1.salok01",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-nanak · 470",
+   "query": "470",
+   "opts": {
+    "author": "author.guru-nanak"
+   },
+   "expect": "subset of sggs.asa.470.m1.salok01",
+   "got": [
+    "sggs.asa.470.m1.salok01"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-nanak · kabir",
+   "query": "kabir",
+   "opts": {
+    "author": "author.guru-nanak"
+   },
+   "expect": "subset of sggs.asa.470.m1.salok01",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-angad · humility",
+   "query": "humility",
+   "opts": {
+    "author": "author.guru-angad"
+   },
+   "expect": "subset of sggs.asa.466.m2.salok02",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-angad · haumai",
+   "query": "haumai",
+   "opts": {
+    "author": "author.guru-angad"
+   },
+   "expect": "subset of sggs.asa.466.m2.salok02",
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-angad · ਹਉਮੈ",
+   "query": "ਹਉਮੈ",
+   "opts": {
+    "author": "author.guru-angad"
+   },
+   "expect": "subset of sggs.asa.466.m2.salok02",
+   "got": [
+    "sggs.asa.466.m2.salok02"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-angad · 470",
+   "query": "470",
+   "opts": {
+    "author": "author.guru-angad"
+   },
+   "expect": "subset of sggs.asa.466.m2.salok02",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.guru-angad · kabir",
+   "query": "kabir",
+   "opts": {
+    "author": "author.guru-angad"
+   },
+   "expect": "subset of sggs.asa.466.m2.salok02",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.bhagat-kabir · humility",
+   "query": "humility",
+   "opts": {
+    "author": "author.bhagat-kabir"
+   },
+   "expect": "subset of sggs.kabir.salok007",
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.bhagat-kabir · haumai",
+   "query": "haumai",
+   "opts": {
+    "author": "author.bhagat-kabir"
+   },
+   "expect": "subset of sggs.kabir.salok007",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.bhagat-kabir · ਹਉਮੈ",
+   "query": "ਹਉਮੈ",
+   "opts": {
+    "author": "author.bhagat-kabir"
+   },
+   "expect": "subset of sggs.kabir.salok007",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.bhagat-kabir · 470",
+   "query": "470",
+   "opts": {
+    "author": "author.bhagat-kabir"
+   },
+   "expect": "subset of sggs.kabir.salok007",
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-05 author filter returns only that author",
+   "name": "author.bhagat-kabir · kabir",
+   "query": "kabir",
+   "opts": {
+    "author": "author.bhagat-kabir"
+   },
+   "expect": "subset of sggs.kabir.salok007",
+   "got": [
+    "sggs.kabir.salok007"
+   ],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"car\"",
+   "query": "car",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"war\"",
+   "query": "war",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ant\"",
+   "query": "ant",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"a\"",
+   "query": "a",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"the\"",
+   "query": "the",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"x\"",
+   "query": "x",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"?\"",
+   "query": "?",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"   \"",
+   "query": "   ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"\"",
+   "query": "",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"zzzz\"",
+   "query": "zzzz",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"category\"",
+   "query": "category",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (discusses · Haumai)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"Oregon\"",
+   "query": "Oregon",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (discusses · Haumai)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"San Diego\"",
+   "query": "San Diego",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (discusses · Haumai)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"negotiation\"",
+   "query": "negotiation",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.haumai (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (discusses · Haumai)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"basal\"",
+   "query": "basal",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (in_raag · Raag Asa)",
+    "sggs.asa.470.m1.salok01 (in_raag · Raag Asa)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"Pasadena\"",
+   "query": "Pasadena",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (in_raag · Raag Asa)",
+    "sggs.asa.470.m1.salok01 (in_raag · Raag Asa)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"NASA\"",
+   "query": "NASA",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (in_raag · Raag Asa)",
+    "sggs.asa.470.m1.salok01 (in_raag · Raag Asa)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"casa\"",
+   "query": "casa",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (in_raag · Raag Asa)",
+    "sggs.asa.470.m1.salok01 (in_raag · Raag Asa)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"Kasauli\"",
+   "query": "Kasauli",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "raag.asa (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (in_raag · Raag Asa)",
+    "sggs.asa.470.m1.salok01 (in_raag · Raag Asa)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"vegetable\"",
+   "query": "vegetable",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"humbug\"",
+   "query": "humbug",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"conceited\"",
+   "query": "conceited",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.buddhist-conceit (Curated alias in query)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"kabira\"",
+   "query": "kabira",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "author.bhagat-kabir (Curated alias in query)",
+    "sggs.kabir.salok007 (written_by · Bhagat Kabir Ji)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"nanakshahi calendar\"",
+   "query": "nanakshahi calendar",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "author.guru-nanak (Curated alias in query)",
+    "sggs.asa.470.m1.salok01 (written_by · Guru Nanak Dev Ji)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"sevadar\"",
+   "query": "sevadar",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "concept.seva (Curated alias in query)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"several\"",
+   "query": "several",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"angadi\"",
+   "query": "angadi",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "author.guru-angad (Curated alias in query)",
+    "sggs.asa.466.m2.salok02 (written_by · Guru Angad Dev Ji)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"psychology of colour\"",
+   "query": "psychology of colour",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.intellectual-humility (Curated alias in query)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"buddhist monastery in Tibet\"",
+   "query": "buddhist monastery in Tibet",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.buddhist-conceit (Curated alias in query)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"self awareness app\"",
+   "query": "self awareness app",
+   "opts": {},
+   "expect": [],
+   "got": [
+    "study.intellectual-humility (Curated alias in query)"
+   ],
+   "ok": false
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"<img src=x onerror=alert(1)>\"",
+   "query": "<img src=x onerror=alert(1)>",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"<script>alert(1)</script>\"",
+   "query": "<script>alert(1)</script>",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\".*\"",
+   "query": ".*",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"(\"",
+   "query": "(",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"[a-z]+\"",
+   "query": "[a-z]+",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"\\\\\"",
+   "query": "\\",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"%\"",
+   "query": "%",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"#%\"",
+   "query": "#%",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"SELECT * FROM lines\"",
+   "query": "SELECT * FROM lines",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"🙏\"",
+   "query": "🙏",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"​\"",
+   "query": "​",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"‍\"",
+   "query": "‍",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ਹ‍ਉਮੈ\"",
+   "query": "ਹ‍ਉਮੈ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"hੳumai\"",
+   "query": "hੳumai",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…\"",
+   "query": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"humility humility humility humility h…\"",
+   "query": "humility humility humility humility humility humility humility humility humility humili…",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ੴ\"",
+   "query": "ੴ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ਵਾਹਿਗੁਰੂ\"",
+   "query": "ਵਾਹਿਗੁਰੂ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ਜਪੁ\"",
+   "query": "ਜਪੁ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"waheguru\"",
+   "query": "waheguru",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"mool mantar\"",
+   "query": "mool mantar",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ik onkar\"",
+   "query": "ik onkar",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"japji\"",
+   "query": "japji",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ਸੋ ਦਰੁ\"",
+   "query": "ਸੋ ਦਰੁ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-06 should find nothing",
+   "name": "\"ਨਾਨਕ ਨਾਮ ਚੜ੍ਹਦੀ ਕਲਾ\"",
+   "query": "ਨਾਨਕ ਨਾਮ ਚੜ੍ਹਦੀ ਕਲਾ",
+   "opts": {},
+   "expect": [],
+   "got": [],
+   "ok": true
+  },
+  {
+   "group": "KQ-07 order and reasons",
+   "name": "same order on six queries × five repeats",
+   "query": "humility | haumai | ਹਉਮੈ | kabir | 466 | asa",
+   "opts": {},
+   "expect": {
+    "stable": true,
+    "reasons": true
+   },
+   "got": {
+    "stable": true,
+    "reasons": true
+   },
+   "ok": true
+  }
+ ],
+ "rowsWhereConventionDiffers": 11,
+ "reasonsSeen": [
+  "Exact title or curated alias",
+  "discusses · Humility",
+  "discusses · Haumai",
+  "Exact original text substring (search normalization only)",
+  "written_by · Bhagat Kabir Ji",
+  "Ang match",
+  "in_raag · Raag Asa"
+ ]
+}

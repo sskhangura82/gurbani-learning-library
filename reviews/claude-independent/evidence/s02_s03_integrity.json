@@ -1,0 +1,526 @@
+{
+ "total": 3809,
+ "s02": {
+  "with_stored_hash": 3809,
+  "without_stored_hash": 0,
+  "mismatches": [],
+  "without_ids_sample": [],
+  "without_by_comp": {}
+ },
+ "codepoints": [
+  {
+   "cp": "U+0020",
+   "ch": " ",
+   "name": "SPACE",
+   "count": 20090
+  },
+  {
+   "cp": "U+0965",
+   "ch": "॥",
+   "name": "DEVANAGARI DOUBLE DANDA",
+   "count": 4641
+  },
+  {
+   "cp": "U+0A02",
+   "ch": "ਂ",
+   "name": "GURMUKHI SIGN BINDI",
+   "count": 334
+  },
+  {
+   "cp": "U+0A03",
+   "ch": "ਃ",
+   "name": "GURMUKHI SIGN VISARGA",
+   "count": 1
+  },
+  {
+   "cp": "U+0A05",
+   "ch": "ਅ",
+   "name": "GURMUKHI LETTER A",
+   "count": 1108
+  },
+  {
+   "cp": "U+0A06",
+   "ch": "ਆ",
+   "name": "GURMUKHI LETTER AA",
+   "count": 1393
+  },
+  {
+   "cp": "U+0A07",
+   "ch": "ਇ",
+   "name": "GURMUKHI LETTER I",
+   "count": 772
+  },
+  {
+   "cp": "U+0A08",
+   "ch": "ਈ",
+   "name": "GURMUKHI LETTER II",
+   "count": 312
+  },
+  {
+   "cp": "U+0A09",
+   "ch": "ਉ",
+   "name": "GURMUKHI LETTER U",
+   "count": 617
+  },
+  {
+   "cp": "U+0A0A",
+   "ch": "ਊ",
+   "name": "GURMUKHI LETTER UU",
+   "count": 88
+  },
+  {
+   "cp": "U+0A0F",
+   "ch": "ਏ",
+   "name": "GURMUKHI LETTER EE",
+   "count": 328
+  },
+  {
+   "cp": "U+0A10",
+   "ch": "ਐ",
+   "name": "GURMUKHI LETTER AI",
+   "count": 118
+  },
+  {
+   "cp": "U+0A13",
+   "ch": "ਓ",
+   "name": "GURMUKHI LETTER OO",
+   "count": 89
+  },
+  {
+   "cp": "U+0A14",
+   "ch": "ਔ",
+   "name": "GURMUKHI LETTER AU",
+   "count": 1
+  },
+  {
+   "cp": "U+0A15",
+   "ch": "ਕ",
+   "name": "GURMUKHI LETTER KA",
+   "count": 3650
+  },
+  {
+   "cp": "U+0A16",
+   "ch": "ਖ",
+   "name": "GURMUKHI LETTER KHA",
+   "count": 863
+  },
+  {
+   "cp": "U+0A17",
+   "ch": "ਗ",
+   "name": "GURMUKHI LETTER GA",
+   "count": 1611
+  },
+  {
+   "cp": "U+0A18",
+   "ch": "ਘ",
+   "name": "GURMUKHI LETTER GHA",
+   "count": 122
+  },
+  {
+   "cp": "U+0A1A",
+   "ch": "ਚ",
+   "name": "GURMUKHI LETTER CA",
+   "count": 591
+  },
+  {
+   "cp": "U+0A1B",
+   "ch": "ਛ",
+   "name": "GURMUKHI LETTER CHA",
+   "count": 204
+  },
+  {
+   "cp": "U+0A1C",
+   "ch": "ਜ",
+   "name": "GURMUKHI LETTER JA",
+   "count": 1872
+  },
+  {
+   "cp": "U+0A1D",
+   "ch": "ਝ",
+   "name": "GURMUKHI LETTER JHA",
+   "count": 89
+  },
+  {
+   "cp": "U+0A1E",
+   "ch": "ਞ",
+   "name": "GURMUKHI LETTER NYA",
+   "count": 1
+  },
+  {
+   "cp": "U+0A1F",
+   "ch": "ਟ",
+   "name": "GURMUKHI LETTER TTA",
+   "count": 363
+  },
+  {
+   "cp": "U+0A20",
+   "ch": "ਠ",
+   "name": "GURMUKHI LETTER TTHA",
+   "count": 103
+  },
+  {
+   "cp": "U+0A21",
+   "ch": "ਡ",
+   "name": "GURMUKHI LETTER DDA",
+   "count": 180
+  },
+  {
+   "cp": "U+0A22",
+   "ch": "ਢ",
+   "name": "GURMUKHI LETTER DDHA",
+   "count": 25
+  },
+  {
+   "cp": "U+0A23",
+   "ch": "ਣ",
+   "name": "GURMUKHI LETTER NNA",
+   "count": 458
+  },
+  {
+   "cp": "U+0A24",
+   "ch": "ਤ",
+   "name": "GURMUKHI LETTER TA",
+   "count": 3314
+  },
+  {
+   "cp": "U+0A25",
+   "ch": "ਥ",
+   "name": "GURMUKHI LETTER THA",
+   "count": 270
+  },
+  {
+   "cp": "U+0A26",
+   "ch": "ਦ",
+   "name": "GURMUKHI LETTER DA",
+   "count": 1370
+  },
+  {
+   "cp": "U+0A27",
+   "ch": "ਧ",
+   "name": "GURMUKHI LETTER DHA",
+   "count": 722
+  },
+  {
+   "cp": "U+0A28",
+   "ch": "ਨ",
+   "name": "GURMUKHI LETTER NA",
+   "count": 4559
+  },
+  {
+   "cp": "U+0A2A",
+   "ch": "ਪ",
+   "name": "GURMUKHI LETTER PA",
+   "count": 2252
+  },
+  {
+   "cp": "U+0A2B",
+   "ch": "ਫ",
+   "name": "GURMUKHI LETTER PHA",
+   "count": 86
+  },
+  {
+   "cp": "U+0A2C",
+   "ch": "ਬ",
+   "name": "GURMUKHI LETTER BA",
+   "count": 1403
+  },
+  {
+   "cp": "U+0A2D",
+   "ch": "ਭ",
+   "name": "GURMUKHI LETTER BHA",
+   "count": 1116
+  },
+  {
+   "cp": "U+0A2E",
+   "ch": "ਮ",
+   "name": "GURMUKHI LETTER MA",
+   "count": 2671
+  },
+  {
+   "cp": "U+0A2F",
+   "ch": "ਯ",
+   "name": "GURMUKHI LETTER YA",
+   "count": 99
+  },
+  {
+   "cp": "U+0A30",
+   "ch": "ਰ",
+   "name": "GURMUKHI LETTER RA",
+   "count": 5434
+  },
+  {
+   "cp": "U+0A32",
+   "ch": "ਲ",
+   "name": "GURMUKHI LETTER LA",
+   "count": 1294
+  },
+  {
+   "cp": "U+0A35",
+   "ch": "ਵ",
+   "name": "GURMUKHI LETTER VA",
+   "count": 1353
+  },
+  {
+   "cp": "U+0A36",
+   "ch": "ਸ਼",
+   "name": "GURMUKHI LETTER SHA",
+   "count": 6
+  },
+  {
+   "cp": "U+0A38",
+   "ch": "ਸ",
+   "name": "GURMUKHI LETTER SA",
+   "count": 4360
+  },
+  {
+   "cp": "U+0A39",
+   "ch": "ਹ",
+   "name": "GURMUKHI LETTER HA",
+   "count": 3146
+  },
+  {
+   "cp": "U+0A3E",
+   "ch": "ਾ",
+   "name": "GURMUKHI VOWEL SIGN AA",
+   "count": 6180
+  },
+  {
+   "cp": "U+0A3F",
+   "ch": "ਿ",
+   "name": "GURMUKHI VOWEL SIGN I",
+   "count": 5950
+  },
+  {
+   "cp": "U+0A40",
+   "ch": "ੀ",
+   "name": "GURMUKHI VOWEL SIGN II",
+   "count": 1916
+  },
+  {
+   "cp": "U+0A41",
+   "ch": "ੁ",
+   "name": "GURMUKHI VOWEL SIGN U",
+   "count": 3855
+  },
+  {
+   "cp": "U+0A42",
+   "ch": "ੂ",
+   "name": "GURMUKHI VOWEL SIGN UU",
+   "count": 670
+  },
+  {
+   "cp": "U+0A47",
+   "ch": "ੇ",
+   "name": "GURMUKHI VOWEL SIGN EE",
+   "count": 2142
+  },
+  {
+   "cp": "U+0A48",
+   "ch": "ੈ",
+   "name": "GURMUKHI VOWEL SIGN AI",
+   "count": 1852
+  },
+  {
+   "cp": "U+0A4B",
+   "ch": "ੋ",
+   "name": "GURMUKHI VOWEL SIGN OO",
+   "count": 1491
+  },
+  {
+   "cp": "U+0A4C",
+   "ch": "ੌ",
+   "name": "GURMUKHI VOWEL SIGN AU",
+   "count": 21
+  },
+  {
+   "cp": "U+0A4D",
+   "ch": "੍",
+   "name": "GURMUKHI SIGN VIRAMA",
+   "count": 1096
+  },
+  {
+   "cp": "U+0A51",
+   "ch": "ੑ",
+   "name": "GURMUKHI SIGN UDAAT",
+   "count": 3
+  },
+  {
+   "cp": "U+0A59",
+   "ch": "ਖ਼",
+   "name": "GURMUKHI LETTER KHHA",
+   "count": 2
+  },
+  {
+   "cp": "U+0A5A",
+   "ch": "ਗ਼",
+   "name": "GURMUKHI LETTER GHHA",
+   "count": 8
+  },
+  {
+   "cp": "U+0A5B",
+   "ch": "ਜ਼",
+   "name": "GURMUKHI LETTER ZA",
+   "count": 21
+  },
+  {
+   "cp": "U+0A5C",
+   "ch": "ੜ",
+   "name": "GURMUKHI LETTER RRA",
+   "count": 82
+  },
+  {
+   "cp": "U+0A5E",
+   "ch": "ਫ਼",
+   "name": "GURMUKHI LETTER FA",
+   "count": 3
+  },
+  {
+   "cp": "U+0A66",
+   "ch": "੦",
+   "name": "GURMUKHI DIGIT ZERO",
+   "count": 47
+  },
+  {
+   "cp": "U+0A67",
+   "ch": "੧",
+   "name": "GURMUKHI DIGIT ONE",
+   "count": 303
+  },
+  {
+   "cp": "U+0A68",
+   "ch": "੨",
+   "name": "GURMUKHI DIGIT TWO",
+   "count": 140
+  },
+  {
+   "cp": "U+0A69",
+   "ch": "੩",
+   "name": "GURMUKHI DIGIT THREE",
+   "count": 116
+  },
+  {
+   "cp": "U+0A6A",
+   "ch": "੪",
+   "name": "GURMUKHI DIGIT FOUR",
+   "count": 102
+  },
+  {
+   "cp": "U+0A6B",
+   "ch": "੫",
+   "name": "GURMUKHI DIGIT FIVE",
+   "count": 91
+  },
+  {
+   "cp": "U+0A6C",
+   "ch": "੬",
+   "name": "GURMUKHI DIGIT SIX",
+   "count": 80
+  },
+  {
+   "cp": "U+0A6D",
+   "ch": "੭",
+   "name": "GURMUKHI DIGIT SEVEN",
+   "count": 80
+  },
+  {
+   "cp": "U+0A6E",
+   "ch": "੮",
+   "name": "GURMUKHI DIGIT EIGHT",
+   "count": 80
+  },
+  {
+   "cp": "U+0A6F",
+   "ch": "੯",
+   "name": "GURMUKHI DIGIT NINE",
+   "count": 55
+  },
+  {
+   "cp": "U+0A70",
+   "ch": "ੰ",
+   "name": "GURMUKHI TIPPI",
+   "count": 1474
+  },
+  {
+   "cp": "U+0A71",
+   "ch": "ੱ",
+   "name": "GURMUKHI ADDAK",
+   "count": 164
+  },
+  {
+   "cp": "U+0A74",
+   "ch": "ੴ",
+   "name": "GURMUKHI EK ONKAR",
+   "count": 9
+  },
+  {
+   "cp": "U+0A75",
+   "ch": "ੵ",
+   "name": "GURMUKHI SIGN YAKASH",
+   "count": 11
+  }
+ ],
+ "s03_violations": {
+  "not_NFC": {
+   "count": 26,
+   "ids": [
+    "jaap036.line02",
+    "jaap067.line03",
+    "jaap108.line01",
+    "jaap108.line04",
+    "jaap109.line02",
+    "jaap109.line04",
+    "jaap110.line01",
+    "jaap120.line02",
+    "jaap122.line01",
+    "jaap122.line02",
+    "jaap122.line04",
+    "jaap123.line01",
+    "jaap123.line04",
+    "jaap124.line03",
+    "jaap124.line04",
+    "jaap150.line01",
+    "jaap150.line02",
+    "jaap151.line01",
+    "jaap151.line02",
+    "jaap151.line04",
+    "jaap152.line01",
+    "jaap152.line02",
+    "jaap153.line01",
+    "jaap153.line02",
+    "jaap153.line03",
+    "jaap158.line01"
+   ]
+  },
+  "NFD_differs(precomposed present)": {
+   "count": 26,
+   "ids": [
+    "jaap036.line02",
+    "jaap067.line03",
+    "jaap108.line01",
+    "jaap108.line04",
+    "jaap109.line02",
+    "jaap109.line04",
+    "jaap110.line01",
+    "jaap120.line02",
+    "jaap122.line01",
+    "jaap122.line02",
+    "jaap122.line04",
+    "jaap123.line01",
+    "jaap123.line04",
+    "jaap124.line03",
+    "jaap124.line04",
+    "jaap150.line01",
+    "jaap150.line02",
+    "jaap151.line01",
+    "jaap151.line02",
+    "jaap151.line04",
+    "jaap152.line01",
+    "jaap152.line02",
+    "jaap153.line01",
+    "jaap153.line02",
+    "jaap153.line03",
+    "jaap158.line01"
+   ]
+  }
+ }
+}

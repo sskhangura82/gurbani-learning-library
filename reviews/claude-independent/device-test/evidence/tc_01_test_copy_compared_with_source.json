@@ -1,0 +1,173 @@
+{
+ "source": {
+  "commit": "09e829efd63e99fc5c3f5f849f122a49b0dc22a9",
+  "files": 240
+ },
+ "testCopy": {
+  "commit": "99297203cf1b30f700a6cef0b75e616026cc88ee",
+  "files": 60,
+  "commitsInRepository": 1
+ },
+ "byteIdentical": {
+  "count": 47,
+  "byType": {
+   "nojekyll": 1,
+   "css": 8,
+   "png": 3,
+   "js": 27,
+   "json": 8
+  },
+  "everyScriptIdentical": true,
+  "everyDataFileIdentical": true
+ },
+ "changed": {
+  "README.md": {
+   "removed": 62,
+   "added": 13,
+   "addedLines": [
+    "# GLP-001 — Isolated iPhone QA only",
+    "**TEST COPY — NOT THE LIBRARY.**",
+    "This public GitHub Pages repository stages existing, unreleased reader-repair",
+    "code for synthetic-only tests. Do not enter personal notes or sensitive material.",
+    "- Source: sskhangura82/gurbani-learning-library PR #40",
+    "- Pinned source commit: `09e829efd63e99fc5c3f5f849f122a49b0dc22a9`"
+   ]
+  },
+  "full-japji.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Japji Sahib · Continuous Reading</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "gurdwara.html": {
+   "removed": 2,
+   "added": 4,
+   "addedLines": [
+    "<meta name=\"theme-color\" content=\"#152338\"><title>TEST COPY · Gurdwara arrival · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"css/arrivals.css\"><link rel=\"apple-touch-icon\" href=\"icons/icon-180.png\"><link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "</head>",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "gurdwaras.html": {
+   "removed": 2,
+   "added": 4,
+   "addedLines": [
+    "<meta name=\"theme-color\" content=\"#f6eee1\"><title>TEST COPY · Visit a Gurdwara · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"css/arrivals.css\"><link rel=\"apple-touch-icon\" href=\"icons/icon-180.png\"><link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "</head>",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "index.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Gurbani Learning Library · A place to return</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "manifest.webmanifest": {
+   "removed": 3,
+   "added": 3,
+   "addedLines": [
+    "  \"name\": \"GLP-001 iPhone QA — Test Copy\",",
+    "  \"short_name\": \"GLP QA\",",
+    "  \"description\": \"Isolated test copy. Use made-up notes only. Not the published Gurbani Learning Library.\","
+   ]
+  },
+  "nitnem/index.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · ਪੂਰਾ ਨਿਤਨੇਮ · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"../qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "pauri-2-lesson.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Gurbani Learning Library · Japji Sahib</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "robots.txt": {
+   "removed": 1,
+   "added": 1,
+   "addedLines": [
+    "# Public, unlisted testing copy. noindex is not access control."
+   ]
+  },
+  "simran.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<meta name=\"theme-color\" content=\"#112e30\"><title>TEST COPY · Simran Room · Gurbani Learning Library</title><link rel=\"stylesheet\" href=\"css/simran.css\"><link rel=\"apple-touch-icon\" href=\"icons/icon-180.png\"><link rel=\"stylesheet\" href=\"qa",
+    "</head>",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "sukhmani.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Sukhmani Sahib · Ashtpadis 1–24 · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy, not the Gurbani Learning Library\"><strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar "
+   ]
+  },
+  "sw.js": {
+   "removed": 2,
+   "added": 2,
+   "addedLines": [
+    "const VERSION=\"iphone-qa-pr40-09e829e-1\";",
+    "const EXPECTED={\"./\":\"ce82a1bad8169560c47b19024b522a99445afd194e1220195ebab56f7dc8de90\",\"./full-japji.html\":\"d8a3c3e2fd091b895e05a24950469b3b370456abf16d2b4a9b29e94199934244\",\"./index.html\":\"ce82a1bad8169560c47b19024b522a99445afd194e122019"
+   ]
+  }
+ },
+ "onlyInTestCopy": [
+  "qa-banner.css"
+ ],
+ "notCopied": {
+  "count": 181,
+  "byTopFolder": {
+   ".github": 1,
+   "docs": 49,
+   "evidence": 74,
+   "research": 17,
+   "tests": 35,
+   "tools": 3,
+   "vendor": 2
+  },
+  "licenceAndNoticeFilesNotCopied": [
+   "vendor/opengranth/LICENSE",
+   "vendor/opengranth/NOTICE"
+  ]
+ },
+ "offlineList": {
+  "entries": 58,
+  "fingerprintMatchesFile": 58,
+  "problems": [],
+  "version": "iphone-qa-pr40-09e829e-1"
+ },
+ "pages": {
+  "count": 8,
+  "withTheTestBanner": 8,
+  "withANoIndexRequest": 8,
+  "bannerText": [
+   "<strong>TEST COPY — NOT THE LIBRARY</strong><small>Unreleased reader repair candidate · Use made-up notes only · Not scholar approved</small>"
+  ],
+  "buildLabelVisibleOnAnyPage": false
+ },
+ "personalDataScan": {
+  "emailAddresses": [],
+  "exportedLearningFiles": []
+ }
+}

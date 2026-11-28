@@ -1,0 +1,34 @@
+{
+ "candidate": "d8202caa1b7761c493f70eb9c13514f9b87f2801",
+ "note": "Remarks that exist only in the unmerged candidate PR #47. Kept out of the main findings register.",
+ "findings": [
+  {
+   "id": "RT3-01",
+   "severity": "S3",
+   "applies_to": "candidate PR #47 at d8202ca only",
+   "area": "Wording / use",
+   "title": "A first-time reader arriving by a link is told about a \"saved place\" they do not have, and nothing they read is remembered",
+   "location": "js/sukhmani-reader.js: updateVisitNotice() always names savedPosition, which defaults to the first line when nothing is stored.",
+   "evidence": "With empty storage, a link to Ashtpadi 17 shows \"Visiting a linked passage. Saved place: Ashtpadi 1 · Opening · Ang 262…\". Nothing is stored on arrival or after reading on, and the next ordinary opening starts at the beginning with nothing offered. reviews/claude-independent/retests/RT-003/evidence/r2x04_linked_visit.json (part J).",
+   "why_it_matters": "Someone who first meets the app through a shared link reads a whole Ashtpadi and the app remembers none of it, while telling them about a place they never set.",
+   "proposed_correction": "When nothing is stored: \"You have no saved place yet. Reading here will not be saved unless you choose to use it as your reading place.\"",
+   "acceptance_test": "With empty storage the visit notice does not name a saved place, and says plainly that reading here is not being saved.",
+   "status": "OPEN",
+   "origin": "RT-003"
+  },
+  {
+   "id": "RT3-02",
+   "severity": "S3",
+   "applies_to": "candidate PR #47 at d8202ca only",
+   "area": "Layout",
+   "title": "On a small phone the visit notice takes just over a third of the screen",
+   "location": "css/sukhmani.css: .sk-link-visit and .sk-visit-actions (buttons at flex 1 1 140px wrap onto separate rows below 360 pixels).",
+   "evidence": "Notice height 201 px of a 568 px screen (35 per cent) at 320 wide; 162 of 667 (24 per cent) at 375; 162 of 844 (19 per cent) at 390. Everything stays reachable and the linked line is clear of it. reviews/claude-independent/retests/RT-003/evidence/r2x04_linked_visit.json (part K).",
+   "why_it_matters": "On the smallest phones a third of the reading area is given to the notice for as long as the visit lasts.",
+   "proposed_correction": "Keep the two buttons side by side at narrow widths, or shorten the sentence once the reader has scrolled past the linked line.",
+   "acceptance_test": "The notice takes no more than about a fifth of the screen height at 320 pixels wide, with both buttons still at least 44 pixels.",
+   "status": "OPEN",
+   "origin": "RT-003"
+  }
+ ]
+}

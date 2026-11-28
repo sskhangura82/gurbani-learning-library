@@ -1,0 +1,359 @@
+{
+ "note": "emulation only (Chromium); made-up notes only",
+ "A_arrival_by_link": {
+  "before": {
+   "storedPlace": "sukhmani.a03.p01.l04",
+   "positionLabel": "Ashtpadi 3 Pauri 1"
+  },
+  "onArrival": {
+   "storedPlace": "sukhmani.a03.p01.l04",
+   "storedNotes": 0,
+   "positionLabel": "Ashtpadi 17 Salok · opening",
+   "address": "sukhmani.html#ashtpadi-17",
+   "visitNotice": {
+    "text": "Visiting a linked passage. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use this as your reading place. Return to saved place Use this as my reading place",
+    "top": 0,
+    "height": 162,
+    "insideScreen": true,
+    "shareOfScreenPercent": 24,
+    "buttons": [
+     {
+      "text": "Return to saved place",
+      "w": 155,
+      "h": 55,
+      "disabled": false,
+      "tapReachesIt": true
+     },
+     {
+      "text": "Use this as my reading place",
+      "w": 155,
+      "h": 55,
+      "disabled": false,
+      "tapReachesIt": true
+     }
+    ]
+   },
+   "resumeNotice": null,
+   "firstLineBelowTheNotice": "sukhmani.a17.salok.l01",
+   "firstLineTop": 294,
+   "pixelsOfThatLineUnderTheNotice": 0,
+   "writes": 0
+  },
+  "savedPlaceKept": true,
+  "writesToStorageOnArrival": 0,
+  "showsAshtpadi17": true
+ },
+ "B_reading_on_during_the_visit": {
+  "afterReadingOn": {
+   "storedPlace": "sukhmani.a03.p01.l04",
+   "storedNotes": 0,
+   "positionLabel": "Ashtpadi 17 Pauri 4",
+   "address": "sukhmani.html#ashtpadi-17",
+   "visitNotice": {
+    "text": "Visiting a linked passage. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use this as your reading place. Return to saved place Use this as my reading place",
+    "top": 0,
+    "height": 162,
+    "insideScreen": true,
+    "shareOfScreenPercent": 24,
+    "buttons": [
+     {
+      "text": "Return to saved place",
+      "w": 155,
+      "h": 55,
+      "disabled": false,
+      "tapReachesIt": true
+     },
+     {
+      "text": "Use this as my reading place",
+      "w": 155,
+      "h": 55,
+      "disabled": false,
+      "tapReachesIt": true
+     }
+    ]
+   },
+   "resumeNotice": null,
+   "firstLineBelowTheNotice": "sukhmani.a17.p04.l05",
+   "firstLineTop": 172,
+   "pixelsOfThatLineUnderTheNotice": 0,
+   "writes": 0
+  },
+  "savedPlaceKept": true,
+  "writesToStorage": 0,
+  "noticeStillOnScreen": true
+ },
+ "C_note_written_during_the_visit": {
+  "couldWrite": true,
+  "noteStored": true,
+  "savedPlaceKept": true,
+  "after": {
+   "storedPlace": "sukhmani.a03.p01.l04",
+   "storedNotes": 1,
+   "positionLabel": "Ashtpadi 19 Pauri 8",
+   "address": "sukhmani.html#ashtpadi-17",
+   "visitNotice": {
+    "text": "Visiting a linked passage. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use this as your reading place. Return to saved place Use this as my reading place",
+    "top": 0,
+    "height": 162,
+    "insideScreen": true,
+    "shareOfScreenPercent": 24,
+    "buttons": [
+     {
+      "text": "Return to saved place",
+      "w": 155,
+      "h": 55,
+      "disabled": false,
+      "tapReachesIt": true
+     },
+     {
+      "text": "Use this as my reading place",
+      "w": 155,
+      "h": 55,
+      "disabled": false,
+      "tapReachesIt": true
+     }
+    ]
+   },
+   "resumeNotice": null,
+   "firstLineBelowTheNotice": "sukhmani.a19.p08.l02",
+   "firstLineTop": 152,
+   "pixelsOfThatLineUnderTheNotice": 10,
+   "writes": 1
+  }
+ },
+ "D_return_to_saved_place": {
+  "after": {
+   "storedPlace": "sukhmani.a03.p01.l04",
+   "storedNotes": 1,
+   "positionLabel": "Ashtpadi 3 Pauri 1",
+   "address": "sukhmani.html",
+   "visitNotice": null,
+   "resumeNotice": null,
+   "firstLineBelowTheNotice": "sukhmani.a03.p01.l03",
+   "firstLineTop": -89,
+   "pixelsOfThatLineUnderTheNotice": 0,
+   "writes": 1
+  },
+  "backAtAshtpadi3": true,
+  "savedPlaceKept": true,
+  "linkGoneFromAddress": true,
+  "noticeGone": true,
+  "said": "Returned to your saved reading place.",
+  "afterReturningOrdinaryReadingIsSavedAgain": true
+ },
+ "E_use_this_as_my_reading_place": {
+  "after": {
+   "storedPlace": "sukhmani.a17.salok.l01",
+   "storedNotes": 0,
+   "positionLabel": "Ashtpadi 17 Salok · opening",
+   "address": "sukhmani.html",
+   "visitNotice": null,
+   "resumeNotice": null,
+   "firstLineBelowTheNotice": "sukhmani.a17.salok.l01",
+   "firstLineTop": 34,
+   "pixelsOfThatLineUnderTheNotice": 0,
+   "writes": 1
+  },
+  "storedPlaceIsNowInAshtpadi17": true,
+  "linkGoneFromAddress": true,
+  "noticeGone": true
+ },
+ "F_closed_then_opened_the_ordinary_way": {
+  "after": {
+   "storedPlace": "sukhmani.a03.p01.l04",
+   "storedNotes": 0,
+   "positionLabel": "Ashtpadi 3 Pauri 1",
+   "address": "sukhmani.html",
+   "visitNotice": null,
+   "resumeNotice": "Saved place: Ashtpadi 3 · Pauri 1 · Ang 265 Continue reading ×",
+   "firstLineBelowTheNotice": "sukhmani.intro.l01",
+   "firstLineTop": 838,
+   "pixelsOfThatLineUnderTheNotice": 0,
+   "writes": 0
+  },
+  "savedPlaceKept": true,
+  "opensAtOrOffersAshtpadi3": true
+ },
+ "G_reload_and_back": {
+  "afterReloadDuringVisit": {
+   "savedPlaceKept": true,
+   "stillAVisit": true,
+   "position": "Ashtpadi 17 Pauri 2"
+  },
+  "afterLeavingAndPressingBack": {
+   "savedPlaceKept": true,
+   "stillAVisit": true,
+   "position": "Ashtpadi 17 Pauri 2"
+  },
+  "linkFollowedInsideThePage": {
+   "savedPlaceKept": true,
+   "isAVisit": true,
+   "position": "Ashtpadi 17 Salok · opening"
+  },
+  "thenBack": {
+   "savedPlaceKept": true,
+   "visitEnded": true,
+   "position": "Ashtpadi 3 Pauri 1",
+   "address": "sukhmani.html"
+  }
+ },
+ "H_other_links": {
+  "a single line": {
+   "link": "#sukhmani.a17.p03.l02",
+   "savedPlaceKept": true,
+   "isAVisit": true,
+   "position": "Ashtpadi 17 Pauri 3",
+   "notice": "Visiting a linked passage. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use this as your reading place. Re",
+   "useThisDisabled": false,
+   "writes": 0
+  },
+  "a unit": {
+   "link": "#unit-sukhmani.a17.p01",
+   "savedPlaceKept": true,
+   "isAVisit": true,
+   "position": "Ashtpadi 17 Pauri 1",
+   "notice": "Visiting a linked passage. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use this as your reading place. Re",
+   "useThisDisabled": false,
+   "writes": 0
+  },
+  "a link that does not exist": {
+   "link": "#nope-nothing-here",
+   "savedPlaceKept": true,
+   "isAVisit": true,
+   "position": "Ashtpadi 3 Pauri 1",
+   "notice": "This passage link was not found in this reading pack. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use thi",
+   "useThisDisabled": true,
+   "writes": 0
+  },
+  "the skip link": {
+   "link": "#sukhmani-text",
+   "savedPlaceKept": false,
+   "isAVisit": false,
+   "position": "Ashtpadi 1 Salok · opening",
+   "notice": null,
+   "useThisDisabled": null,
+   "writes": 1
+  }
+ },
+ "H_unit_ids_sample": [
+  "unit-sukhmani.intro",
+  "unit-sukhmani.a01.salok",
+  "unit-sukhmani.a01.p01"
+ ],
+ "I_two_tabs": {
+  "otherTabMovedThePlaceTo": "sukhmani.a06.p01.l03",
+  "visitingTabNoticeNowSays": "Visiting a linked passage. Saved place: Ashtpadi 6 · Pauri 1 · Ang 269. It will stay unchanged unless you choose to use this as your reading",
+  "afterReturnVisitingTabIsAt": "Ashtpadi 6 Pauri 1",
+  "storedPlaceStillTheOtherTabs": true
+ },
+ "J_first_time_reader_arriving_by_link": {
+  "noticeSays": "Visiting a linked passage. Saved place: Ashtpadi 1 · Opening · Ang 262. It will stay unchanged unless you choose to use this as your reading place. Return to saved place Use this as my reading place",
+  "anythingStoredOnArrival": null,
+  "anythingStoredAfterReadingOn": null,
+  "nextOrdinaryOpeningStartsAt": "Ashtpadi 1 Salok · opening",
+  "offeredAnything": null
+ },
+ "K_notice_at_three_widths": [
+  {
+   "window": "320x568",
+   "noticeHeight": 201,
+   "shareOfScreenPercent": 35,
+   "insideScreen": true,
+   "buttons": [
+    [
+     "Return to saved place",
+     274,
+     44,
+     true
+    ],
+    [
+     "Use this as my reading place",
+     274,
+     44,
+     true
+    ]
+   ],
+   "linkedLineClearOfTheNotice": true,
+   "firstLineBelowTheNotice": "sukhmani.a17.salok.l01",
+   "sidewaysScroll": false,
+   "stillOnScreenAfterScrolling": true
+  },
+  {
+   "window": "375x667",
+   "noticeHeight": 162,
+   "shareOfScreenPercent": 24,
+   "insideScreen": true,
+   "buttons": [
+    [
+     "Return to saved place",
+     162,
+     55,
+     true
+    ],
+    [
+     "Use this as my reading place",
+     162,
+     55,
+     true
+    ]
+   ],
+   "linkedLineClearOfTheNotice": true,
+   "firstLineBelowTheNotice": "sukhmani.a17.salok.l01",
+   "sidewaysScroll": false,
+   "stillOnScreenAfterScrolling": true
+  },
+  {
+   "window": "390x844",
+   "noticeHeight": 162,
+   "shareOfScreenPercent": 19,
+   "insideScreen": true,
+   "buttons": [
+    [
+     "Return to saved place",
+     155,
+     55,
+     true
+    ],
+    [
+     "Use this as my reading place",
+     155,
+     55,
+     true
+    ]
+   ],
+   "linkedLineClearOfTheNotice": true,
+   "firstLineBelowTheNotice": "sukhmani.a17.salok.l01",
+   "sidewaysScroll": false,
+   "stillOnScreenAfterScrolling": true
+  }
+ ],
+ "K_what_a_screen_reader_is_given": "- region \"Linked passage visit\":\n  - status: \"Visiting a linked passage. Saved place: Ashtpadi 3 · Pauri 1 · Ang 265. It will stay unchanged unless you choose to use this as your reading place.\"\n  - button \"Return to saved place\"\n  - button \"Use this as my reading place\"",
+ "M_links_into_japji": {
+  "storedPlaceBefore": "pauri20.line01",
+  "tried": {
+   "#pauri05.line01": {
+    "storedPlaceAfter": "pauri20.line01",
+    "barSays": "Pauri 20 · line 1"
+   },
+   "#line-100": {
+    "storedPlaceAfter": "pauri20.line01",
+    "barSays": "Pauri 20 · line 1"
+   },
+   "#pauri-5": {
+    "storedPlaceAfter": "pauri20.line01",
+    "barSays": "Pauri 20 · line 1"
+   }
+  },
+  "anyLinkMovesTheReader": false,
+  "savedPlaceKeptEveryTime": true
+ },
+ "N_ordinary_reading_no_link": {
+  "placeMovesAsTheReaderReads": true,
+  "noVisitNotice": true,
+  "afterReload": {
+   "storedPlaceSame": false,
+   "offered": "Saved place: Ashtpadi 3 · Pauri 4 · Ang 266 Continue reading ×",
+   "position": "Ashtpadi 3 Pauri 4"
+  }
+ }
+}

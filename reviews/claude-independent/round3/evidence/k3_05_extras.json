@@ -1,0 +1,173 @@
+{
+ "text_size_setting": {
+  "lessonEnglish": {
+   "atDefault": 16,
+   "whenReaderDoubles": 16,
+   "follows": false
+  },
+  "lessonPunjabi": {
+   "atDefault": 18.4,
+   "whenReaderDoubles": 36.8,
+   "follows": true
+  },
+  "note": {
+   "atDefault": 13,
+   "whenReaderDoubles": 13,
+   "follows": false
+  },
+  "label": {
+   "atDefault": 11,
+   "whenReaderDoubles": 11,
+   "follows": false
+  },
+  "button": {
+   "atDefault": 16,
+   "whenReaderDoubles": 16,
+   "follows": false
+  },
+  "searchBox": {
+   "atDefault": 16,
+   "whenReaderDoubles": 16,
+   "follows": false
+  },
+  "gurbani": {
+   "atDefault": 24,
+   "whenReaderDoubles": 48,
+   "follows": true
+  }
+ },
+ "closing_mark_alone_on_a_line": {
+  "320": {
+   "rows": 19,
+   "closingMarkAlone": [],
+   "rowsOnOneLine": 2
+  },
+  "360": {
+   "rows": 19,
+   "closingMarkAlone": [
+    "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥"
+   ],
+   "rowsOnOneLine": 2
+  },
+  "375": {
+   "rows": 19,
+   "closingMarkAlone": [
+    "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+    "ਅਪਰਾਧੀ ਦੂਣਾ ਨਿਵੈ ਜੋ ਹੰਤਾ ਮਿਰਗਾਹਿ ॥",
+    "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+    "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥"
+   ],
+   "rowsOnOneLine": 2
+  },
+  "390": {
+   "rows": 19,
+   "closingMarkAlone": [
+    "ਧਰਿ ਤਾਰਾਜੂ ਤੋਲੀਐ ਨਿਵੈ ਸੁ ਗਉਰਾ ਹੋਇ ॥",
+    "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+    "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+    "ਹਉਮੈ ਦੀਰਘ ਰੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥"
+   ],
+   "rowsOnOneLine": 3
+  },
+  "412": {
+   "rows": 19,
+   "closingMarkAlone": [
+    "ਸਿੰਮਲ ਰੁਖੁ ਸਰਾਇਰਾ ਅਤਿ ਦੀਰਘ ਅਤਿ ਮੁਚੁ ॥",
+    "ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ ॥",
+    "ਸਭੁ ਕੋ ਨਿਵੈ ਆਪ ਕਉ ਪਰ ਕਉ ਨਿਵੈ ਨ ਕੋਇ ॥",
+    "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+    "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥"
+   ],
+   "rowsOnOneLine": 9
+  },
+  "430": {
+   "rows": 19,
+   "closingMarkAlone": [
+    "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+    "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+    "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥"
+   ],
+   "rowsOnOneLine": 14
+  },
+  "768": {
+   "rows": 19,
+   "closingMarkAlone": [
+    "ਓਇ ਜਿ ਆਵਹਿ ਆਸ ਕਰਿ ਜਾਹਿ ਨਿਰਾਸੇ ਕਿਤੁ ॥",
+    "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥",
+    "ਕਬੀਰ ਸਭ ਤੇ ਹਮ ਬੁਰੇ ਹਮ ਤਜਿ ਭਲੋ ਸਭੁ ਕੋਇ ॥"
+   ],
+   "rowsOnOneLine": 14
+  },
+  "1280": {
+   "rows": 19,
+   "closingMarkAlone": [],
+   "rowsOnOneLine": 19
+  }
+ },
+ "author_raag_composition_pages": {
+  "Guru Nanak Dev Ji": [
+   "← Previous learning page",
+   "AUTHOR · DEVELOPMENT DRAFT",
+   "Guru Nanak Dev Ji",
+   "ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
+   "Related knowledge",
+   "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ",
+   "written by"
+  ],
+  "Guru Angad Dev Ji": [
+   "← Previous learning page",
+   "AUTHOR · DEVELOPMENT DRAFT",
+   "Guru Angad Dev Ji",
+   "ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+   "Related knowledge",
+   "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "written by"
+  ],
+  "Bhagat Kabir Ji": [
+   "← Previous learning page",
+   "AUTHOR · DEVELOPMENT DRAFT",
+   "Bhagat Kabir Ji",
+   "ਭਗਤ ਕਬੀਰ ਜੀ",
+   "Related knowledge",
+   "Turning criticism inward · ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+   "written by"
+  ],
+  "Raag Asa": [
+   "← Previous learning page",
+   "RAAG · DEVELOPMENT DRAFT",
+   "Raag Asa",
+   "ਆਸਾ",
+   "Related knowledge",
+   "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ",
+   "in raag",
+   "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "in raag"
+  ],
+  "Asa Di Vaar": [
+   "← Previous learning page",
+   "COMPOSITION · DEVELOPMENT DRAFT",
+   "Asa Di Vaar",
+   "ਆਸਾ ਦੀ ਵਾਰ",
+   "Related knowledge",
+   "Humility beyond appearances · ਅਸਲੀ ਨਿਮਰਤਾ",
+   "contains",
+   "Understanding Haumai and grace · ਹਉਮੈ ਅਤੇ ਕਿਰਪਾ",
+   "contains"
+  ],
+  "Salok Bhagat Kabir Ji": [
+   "← Previous learning page",
+   "COMPOSITION · DEVELOPMENT DRAFT",
+   "Salok Bhagat Kabir Ji",
+   "ਸਲੋਕ ਭਗਤ ਕਬੀਰ ਜੀ",
+   "Related knowledge",
+   "Turning criticism inward · ਆਪਣੇ ਅੰਦਰ ਝਾਤ",
+   "contains"
+  ]
+ },
+ "start_exploring_buttons": [
+  "Humility · ਨਿਮਰਤਾ",
+  "Haumai · ਹਉਮੈ",
+  "Haumai · ਹਉਮੈ",
+  "Understanding the human mind · ਮਨ ਦੀ ਸਮਝ"
+ ]
+}

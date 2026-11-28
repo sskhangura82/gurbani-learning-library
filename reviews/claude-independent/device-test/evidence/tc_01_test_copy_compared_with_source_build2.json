@@ -1,0 +1,184 @@
+{
+ "source": {
+  "commit": "1470477b5a27a8f975f1efce74443a0e136aa94e",
+  "files": 265
+ },
+ "testCopy": {
+  "commit": "c1ab5030908ea172482a5659daa4027cda82b3f8",
+  "files": 65,
+  "commitsInRepository": 2
+ },
+ "byteIdentical": {
+  "count": 49,
+  "byType": {
+   "nojekyll": 1,
+   "css": 8,
+   "png": 3,
+   "js": 27,
+   "json": 8,
+   "vendor/opengranth/LICENSE": 1,
+   "vendor/opengranth/NOTICE": 1
+  },
+  "everyScriptIdentical": true,
+  "everyDataFileIdentical": true,
+  "dataFilesOnlyInTheTestCopy": [
+   "qa-build.json",
+   "qa-verification.json"
+  ]
+ },
+ "changed": {
+  "README.md": {
+   "removed": 62,
+   "added": 14,
+   "addedLines": [
+    "# GLP-001 — Isolated iPhone QA, candidate 2",
+    "**TEST COPY — NOT THE LIBRARY.** Public, unlisted test copy; use synthetic notes.",
+    "- Visible build: qa2-1470477, 26 November 2026 UTC.",
+    "- Source PR40: 1470477b5a27a8f975f1efce74443a0e136aa94e.",
+    "- Reviewed PR40 second repairs: 1470477b5a27a8f975f1efce74443a0e136aa94e.",
+    "- Previous QA commit: 99297203cf1b30f700a6cef0b75e616026cc88ee."
+   ]
+  },
+  "full-japji.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Japji Sahib · Continuous Reading</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "gurdwara.html": {
+   "removed": 2,
+   "added": 4,
+   "addedLines": [
+    "<meta name=\"theme-color\" content=\"#152338\"><title>TEST COPY · Gurdwara arrival · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"css/arrivals.css\"><link rel=\"apple-touch-icon\" href=\"icons/icon-180.png\"><link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "</head>",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "gurdwaras.html": {
+   "removed": 2,
+   "added": 4,
+   "addedLines": [
+    "<meta name=\"theme-color\" content=\"#f6eee1\"><title>TEST COPY · Visit a Gurdwara · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"css/arrivals.css\"><link rel=\"apple-touch-icon\" href=\"icons/icon-180.png\"><link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "</head>",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "index.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Gurbani Learning Library · A place to return</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "manifest.webmanifest": {
+   "removed": 3,
+   "added": 3,
+   "addedLines": [
+    "  \"name\": \"GLP-001 iPhone QA — Test Copy\",",
+    "  \"short_name\": \"GLP QA\",",
+    "  \"description\": \"Isolated test copy. Use made-up notes only. Not the published Gurbani Learning Library.\","
+   ]
+  },
+  "nitnem/index.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · ਪੂਰਾ ਨਿਤਨੇਮ · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"../qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "pauri-2-lesson.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Gurbani Learning Library · Japji Sahib</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "robots.txt": {
+   "removed": 1,
+   "added": 1,
+   "addedLines": [
+    "# Public, unlisted testing copy. noindex is not access control."
+   ]
+  },
+  "simran.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<meta name=\"theme-color\" content=\"#112e30\"><title>TEST COPY · Simran Room · Gurbani Learning Library</title><link rel=\"stylesheet\" href=\"css/simran.css\"><link rel=\"apple-touch-icon\" href=\"icons/icon-180.png\"><link rel=\"stylesheet\" href=\"qa",
+    "</head>",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "sukhmani.html": {
+   "removed": 1,
+   "added": 3,
+   "addedLines": [
+    "<title>TEST COPY · Sukhmani Sahib · Ashtpadis 1–24 · Gurbani Learning Library</title>",
+    "<link rel=\"stylesheet\" href=\"qa-banner.css\">",
+    "<aside class=\"glp-qa-banner\" role=\"note\" aria-label=\"Isolated iPhone test copy\"><strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Q"
+   ]
+  },
+  "sw.js": {
+   "removed": 2,
+   "added": 2,
+   "addedLines": [
+    "const VERSION=\"iphone-qa2-1470477-20261126\";",
+    "const EXPECTED={\"./\":\"e583df775789c83452e35c6d5297948dd92850052d6ab0135f693c007cdf903b\",\"./full-japji.html\":\"90762249d8ef8d56265cead422245984809d71a5e8f389546e2245f1e2d8df6b\",\"./index.html\":\"e583df775789c83452e35c6d5297948dd92850052d6ab013"
+   ]
+  },
+  "tools/build-offline.mjs": {
+   "removed": 1,
+   "added": 1,
+   "addedLines": [
+    "const next=source.replace(/const VERSION=\"[^\"]+\";/,'const VERSION=\"iphone-qa2-1470477-20261126\";').replace(/const EXPECTED=\\{[^\\n]+\\};/,'const EXPECTED='+JSON.stringify(expected)+';');"
+   ]
+  }
+ },
+ "onlyInTestCopy": [
+  "qa-banner.css",
+  "qa-build.json",
+  "qa-verification.json"
+ ],
+ "notCopied": {
+  "count": 203,
+  "byTopFolder": {
+   ".github": 1,
+   "docs": 50,
+   "evidence": 96,
+   "research": 17,
+   "tests": 37,
+   "tools": 2
+  },
+  "licenceAndNoticeFilesNotCopied": []
+ },
+ "offlineList": {
+  "entries": 61,
+  "fingerprintMatchesFile": 61,
+  "problems": [],
+  "version": "iphone-qa2-1470477-20261126"
+ },
+ "pages": {
+  "count": 8,
+  "withTheTestBanner": 8,
+  "withANoIndexRequest": 8,
+  "bannerText": [
+   "<strong>TEST COPY — NOT THE LIBRARY</strong><small id=\"glp-qa-build\">Source build ID: 1470477 · 26 Nov 2026 UTC · QA 2</small><small>Use made-up notes only · Qualified review pending</small>"
+  ],
+  "buildLabelVisibleOnAnyPage": true
+ },
+ "personalDataScan": {
+  "emailAddresses": [],
+  "exportedLearningFiles": []
+ }
+}

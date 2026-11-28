@@ -1,0 +1,204 @@
+{
+  "groundTruthSource": "local source packages, not any PDF",
+  "pdfs": {
+    "haumai-source-sheet-a4.pdf": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+    "haumai-source-sheet-letter.pdf": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+    "dubidha-source-sheet-a4.pdf": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+    "dubidha-source-sheet-letter.pdf": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8"
+  },
+  "engines": {},
+  "rows": [
+    {
+      "pdf": "haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 2,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 1,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "haumai-source-sheet-a4.pdf",
+      "sha256": "6a5bc6b63e2d1c54c0f8da852adc06ce228eeb0d9e84647bba934e998aba3a3c",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 2,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 1,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "haumai-source-sheet-letter.pdf",
+      "sha256": "a9035a923f947ec0fa77075fbf5fee10f46f38dbf46b722a8d2126869728a022",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 2,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 1,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "dubidha-source-sheet-a4.pdf",
+      "sha256": "ca89a4535ff855131111e6fdf66c55a4244ee16536dabf4501cc0166c0634d9f",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "engine": "PyMuPDF 1.26.6 / MuPDF 1.26.11",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 1,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "engine": "PDFium via pypdfium2 5.14.0",
+      "line": 2,
+      "exactSubstringPresent": false,
+      "nfcDiagnosticOnly": false
+    },
+    {
+      "pdf": "dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 1,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    },
+    {
+      "pdf": "dubidha-source-sheet-letter.pdf",
+      "sha256": "a1d3e147d10c691aad13561713222791049494b528e193ae35a2527af870bae8",
+      "engine": "Poppler 24.02.0 pdftotext",
+      "line": 2,
+      "exactSubstringPresent": true,
+      "nfcDiagnosticOnly": true
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+ "label": "second candidate 1470477",
+ "base": "http://127.0.0.1:8089/gurbani-learning-library/",
+ "filesInOfflineList": 57,
+ "readers": {
+  "japji": {
+   "before_damage": {
+    "integrity": "verified",
+    "scriptureLinesShown": 385,
+    "targetLineShown": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+    "message": "Mool Mantar ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Jap ॥ ਜਪੁ ॥ Opening Salok ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥ ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "action": "altered-in-offline-copy",
+   "reopened_online": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "reloaded_online_as_the_message_advises": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "reopened_offline": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "update_check_message": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+   "after_update_check_same_version": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "savedLearningKeysPresent": 1
+  },
+  "sukhmani": {
+   "before_damage": {
+    "integrity": "verified",
+    "scriptureLinesShown": 2027,
+    "targetLineShown": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+    "message": "Ashtpadi 1 Ang 262–263 Opening ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ang 262 Salok ਸਲੋਕੁ ॥ Ang 262 ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ang 262 ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ang 262 ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ An",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "action": "altered-in-offline-copy",
+   "reopened_online": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "reloaded_online_as_the_message_advises": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "reopened_offline": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "update_check_message": "The library is saved for offline reading on this device. Keep a separate learning backup.",
+   "after_update_check_same_version": {
+    "integrity": "failed",
+    "scriptureLinesShown": 0,
+    "targetLineShown": null,
+    "message": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before atte",
+    "servedByOfflineCopy": true,
+    "alteredTextDisplayed": false
+   },
+   "savedLearningKeysPresent": 1
+  }
+ },
+ "gurbani_from_unchecked_file": {
+  "japji_reader_related_teachings": {
+   "mainTextIntegrity": "verified",
+   "mainLines": 385,
+   "relatedCards": [
+    "Guru Angad Dev Ji · Ang 466 Haumai and its transformation ਹਉਮੈ ਦੀਰਘ ਭੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥ This salok examines the p",
+    "Guru Nanak Dev Ji · Ang 472 Hukam in a discussion of ritual impurity ਜੰਮਣੁ ਮਰਣਾ ਹੁਕਮੁ ਹੈ ਭਾਣੈ ਆਵੈ ਜਾਇ ॥ Birth and death ",
+    "Guru Arjan Dev Ji · Ang 394 Acceptance, remembrance and Naam ਤੇਰਾ ਕੀਆ ਮੀਠਾ ਲਾਗੈ ॥ The shabad expresses acceptance of Div"
+   ],
+   "contextLines": [
+    "ਮਹਲਾ ੨ ॥",
+    "ਹਉਮੈ ਏਹਾ ਜਾਤਿ ਹੈ ਹਉਮੈ ਕਰਮ ਕਮਾਹਿ ॥",
+    "ਹਉਮੈ ਏਈ ਬੰਧਨਾ ਫਿਰਿ ਫਿਰਿ ਜੋਨੀ ਪਾਹਿ ॥",
+    "ਹਉਮੈ ਕਿਥਹੁ ਊਪਜੈ ਕਿਤੁ ਸੰਜਮਿ ਇਹ ਜਾਇ ॥",
+    "ਹਉਮੈ ਏਹੋ ਹੁਕਮੁ ਹੈ ਪਇਐ ਕਿਰਤਿ ਫਿਰਾਹਿ ॥",
+    "ਹਉਮੈ ਦੀਰਘ ਭੋਗੁ ਹੈ ਦਾਰੂ ਭੀ ਇਸੁ ਮਾਹਿ ॥",
+    "ਕਿਰਪਾ ਕਰੇ ਜੇ ਆਪਣੀ ਤਾ ਗੁਰ ਕਾ ਸਬਦੁ ਕਮਾਹਿ ॥",
+    "ਨਾਨਕੁ ਕਹੈ ਸੁਣਹੁ ਜਨਹੁ ਇਤੁ ਸੰਜਮਿ ਦੁਖ ਜਾਹਿ ॥੨॥"
+   ],
+   "alteredGurbaniDisplayed": true,
+   "warningShown": false
+  },
+  "older_pauri2_lesson_page": {
+   "alteredGurbaniDisplayed": true,
+   "genuineLineDisplayed": false
+  }
+ }
+}

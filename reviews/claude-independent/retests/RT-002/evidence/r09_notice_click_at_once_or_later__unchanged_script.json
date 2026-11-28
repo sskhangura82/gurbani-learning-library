@@ -1,0 +1,60 @@
+{
+ "click_the_moment_the_reader_is_ready": [
+  {
+   "stateJustBeforeClick": {
+    "immersive": false,
+    "scrolledTo": 325
+   },
+   "clickSucceeded": true,
+   "savedLearningOpened": true,
+   "immersiveAfterwards": true
+  },
+  {
+   "stateJustBeforeClick": {
+    "immersive": false,
+    "scrolledTo": 325
+   },
+   "clickSucceeded": true,
+   "savedLearningOpened": true,
+   "immersiveAfterwards": false
+  },
+  {
+   "stateJustBeforeClick": {
+    "immersive": false,
+    "scrolledTo": 325
+   },
+   "clickSucceeded": true,
+   "savedLearningOpened": true,
+   "immersiveAfterwards": false
+  }
+ ],
+ "click_after_1500_ms": [
+  {
+   "stateJustBeforeClick": {
+    "immersive": true,
+    "scrolledTo": 24
+   },
+   "clickSucceeded": true,
+   "savedLearningOpened": true,
+   "immersiveAfterwards": true
+  },
+  {
+   "stateJustBeforeClick": {
+    "immersive": true,
+    "scrolledTo": 24
+   },
+   "clickSucceeded": true,
+   "savedLearningOpened": true,
+   "immersiveAfterwards": true
+  },
+  {
+   "stateJustBeforeClick": {
+    "immersive": true,
+    "scrolledTo": 24
+   },
+   "clickSucceeded": true,
+   "savedLearningOpened": true,
+   "immersiveAfterwards": true
+  }
+ ]
+}

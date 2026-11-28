@@ -1,0 +1,364 @@
+{
+  "schema": "glp.guru-history.contribution-map.v1",
+  "contentKind": "source-index",
+  "reviewStatus": "AWAITING_QUALIFIED_REVIEW",
+  "semanticReviewed": false,
+  "authoredBy": "Claude (independent reviewer seat), acting as author on founder instruction",
+  "independentlyReviewed": false,
+  "requiresReviewBy": "ChatGPT (builder) - author may not review own work",
+  "provenance": {
+    "method": "computed directly from the pinned reference database, not transcribed from any website",
+    "edition": "Shabad OS master.sqlite, source_id SGGS",
+    "query": "line_groups joined to sections and lines, grouped by author, filtered source_id='SGGS'",
+    "lineageCaveat": "ONE lineage, not an independent establishment. Per RT-005 and the builder's receipt, this edition traces upstream to SGPC Shabadaarth, and the portal and its archive are one publisher rather than two witnesses. Printed-source collation remains outstanding and is not closable by review.",
+    "requiredPhrasing": "as recorded in this edition",
+    "forbiddenPhrasing": "the number of hymns in the Guru Granth Sahib"
+  },
+  "totals": {
+    "lineGroups": 5549,
+    "lines": 60555,
+    "distinctAuthors": 35
+  },
+  "gurusAttributedInThisEdition": 6,
+  "disputeNote": "Published sources say the SGGS carries '6 gurus, possibly as many as 7 or 8', attributing a Salok Mahalla 7 and a Dohra Mahalla 10 to the seventh and tenth Gurus. This edition makes neither attribution. Guru Gobind Singh has zero lines in SGGS here; Guru Har Rai has no author record at all. State what this edition does and does not attribute; do not adjudicate the wider dispute.",
+  "signatureConvention": {
+    "fact": "Every Guru who contributed to the SGGS signed as Nanak; successors are identified by the Mahalla number, not by a different signature.",
+    "consequence": "A literal occurrence of the word Nanak in a composition is not evidence that Guru Nanak authored it.",
+    "relatedFinding": "SIG-01 - search returns a Guru Nanak passage because its author is Guru Nanak, while omitting sggs.asa-di-vaar.pauri007.salok02.line07, a Guru Angad composition in which the word occurs literally."
+  },
+  "authors": [
+    {
+      "authorId": "ARJN",
+      "nameLatn": "Guru Arjan",
+      "nameGurmukhi": "ਗੁਰੂ ਅਰਜਨ",
+      "lineGroups": 2374,
+      "lines": 24887,
+      "sharePercent": 41.1,
+      "isGuru": true,
+      "mahalla": 5
+    },
+    {
+      "authorId": "NANK",
+      "nameLatn": "Guru Nanak",
+      "nameGurmukhi": "ਗੁਰੂ ਨਾਨਕ",
+      "lineGroups": 793,
+      "lines": 12181,
+      "sharePercent": 20.12,
+      "isGuru": true,
+      "mahalla": 1
+    },
+    {
+      "authorId": "AMAR",
+      "nameLatn": "Guru Amardas",
+      "nameGurmukhi": "ਗੁਰੂ ਅਮਰਦਾਸ",
+      "lineGroups": 749,
+      "lines": 9999,
+      "sharePercent": 16.51,
+      "isGuru": true,
+      "mahalla": 3
+    },
+    {
+      "authorId": "RAMD",
+      "nameLatn": "Guru Ramdas",
+      "nameGurmukhi": "ਗੁਰੂ ਰਾਮਦਾਸ",
+      "lineGroups": 610,
+      "lines": 6560,
+      "sharePercent": 10.83,
+      "isGuru": true,
+      "mahalla": 4
+    },
+    {
+      "authorId": "KABI",
+      "nameLatn": "Bhagat Kabir",
+      "nameGurmukhi": "ਭਗਤ ਕਬੀਰ",
+      "lineGroups": 472,
+      "lines": 3385,
+      "sharePercent": 5.59,
+      "isGuru": false
+    },
+    {
+      "authorId": "NMDV",
+      "nameLatn": "Bhagat Namdev",
+      "nameGurmukhi": "ਭਗਤ ਨਾਮਦੇਵ",
+      "lineGroups": 60,
+      "lines": 751,
+      "sharePercent": 1.24,
+      "isGuru": false
+    },
+    {
+      "authorId": "TGBD",
+      "nameLatn": "Guru Tegh Bahadur",
+      "nameGurmukhi": "ਗੁਰੂ ਤੇਗ਼ ਬਹਾਦੁਰ",
+      "lineGroups": 116,
+      "lines": 591,
+      "sharePercent": 0.98,
+      "isGuru": true,
+      "mahalla": 9
+    },
+    {
+      "authorId": "RAVI",
+      "nameLatn": "Bhagat Ravidas",
+      "nameGurmukhi": "ਭਗਤ ਰਵਿਦਾਸ",
+      "lineGroups": 38,
+      "lines": 462,
+      "sharePercent": 0.76,
+      "isGuru": false
+    },
+    {
+      "authorId": "FRID",
+      "nameLatn": "Sheikh Farid",
+      "nameGurmukhi": "ਸੇਖ ਫਰੀਦ",
+      "lineGroups": 121,
+      "lines": 318,
+      "sharePercent": 0.53,
+      "isGuru": false
+    },
+    {
+      "authorId": "ANGD",
+      "nameLatn": "Guru Angad",
+      "nameGurmukhi": "ਗੁਰੂ ਅੰਗਦ",
+      "lineGroups": 63,
+      "lines": 295,
+      "sharePercent": 0.49,
+      "isGuru": true,
+      "mahalla": 2
+    },
+    {
+      "authorId": "KLSR",
+      "nameLatn": "Bhatt Kalh Sahar",
+      "nameGurmukhi": "ਭਟ ਕਲ-ਸਹਾਰ",
+      "lineGroups": 53,
+      "lines": 283,
+      "sharePercent": 0.47,
+      "isGuru": false
+    },
+    {
+      "authorId": "SETB",
+      "nameLatn": "Satta and Balwand",
+      "nameGurmukhi": "ਸਤਾ ਤੇ ਬਲਵੰਡਿ",
+      "lineGroups": 8,
+      "lines": 90,
+      "sharePercent": 0.15,
+      "isGuru": false
+    },
+    {
+      "authorId": "BENI",
+      "nameLatn": "Bhagat Bēṇi",
+      "nameGurmukhi": "ਭਗਤ ਬੈਣੀ",
+      "lineGroups": 3,
+      "lines": 89,
+      "sharePercent": 0.15,
+      "isGuru": false
+    },
+    {
+      "authorId": "NALH",
+      "nameLatn": "Bhatt Nalh",
+      "nameGurmukhi": "ਭਟ ਨਲ੍ਹ",
+      "lineGroups": 16,
+      "lines": 84,
+      "sharePercent": 0.14,
+      "isGuru": false
+    },
+    {
+      "authorId": "GYND",
+      "nameLatn": "Bhatt Gayand",
+      "nameGurmukhi": "ਭਟ ਗਯੰਦ",
+      "lineGroups": 13,
+      "lines": 80,
+      "sharePercent": 0.13,
+      "isGuru": false
+    },
+    {
+      "authorId": "MTHR",
+      "nameLatn": "Bhatt Mathura",
+      "nameGurmukhi": "ਭਟ ਮਥੁਰਾ",
+      "lineGroups": 14,
+      "lines": 64,
+      "sharePercent": 0.11,
+      "isGuru": false
+    },
+    {
+      "authorId": "ALAM",
+      "nameLatn": "Poet Alam",
+      "nameGurmukhi": " ਜੀ",
+      "lineGroups": 1,
+      "lines": 62,
+      "sharePercent": 0.1,
+      "isGuru": false
+    },
+    {
+      "authorId": "TRIL",
+      "nameLatn": "Bhagat Trilochan",
+      "nameGurmukhi": "ਭਗਤ ਤ੍ਰਿਲੋਚਨ",
+      "lineGroups": 4,
+      "lines": 57,
+      "sharePercent": 0.09,
+      "isGuru": false
+    },
+    {
+      "authorId": "KIRT",
+      "nameLatn": "Bhatt Keerat",
+      "nameGurmukhi": "ਭਟ ਕੀਰਤ",
+      "lineGroups": 8,
+      "lines": 40,
+      "sharePercent": 0.07,
+      "isGuru": false
+    },
+    {
+      "authorId": "SNDR",
+      "nameLatn": "Baba Sundar",
+      "nameGurmukhi": "ਬਾਬਾ ਸੁੰਦਰ",
+      "lineGroups": 1,
+      "lines": 38,
+      "sharePercent": 0.06,
+      "isGuru": false
+    },
+    {
+      "authorId": "JALP",
+      "nameLatn": "Bhatt Jaalap",
+      "nameGurmukhi": "ਭਟ ਜਾਲਪ",
+      "lineGroups": 5,
+      "lines": 31,
+      "sharePercent": 0.05,
+      "isGuru": false
+    },
+    {
+      "authorId": "DHNA",
+      "nameLatn": "Bhagat Dhanna",
+      "nameGurmukhi": "ਭਗਤ ਧੰਨਾ",
+      "lineGroups": 3,
+      "lines": 31,
+      "sharePercent": 0.05,
+      "isGuru": false
+    },
+    {
+      "authorId": "BALH",
+      "nameLatn": "Bhatt Balh",
+      "nameGurmukhi": "ਭਟ ਬਲ੍ਹ",
+      "lineGroups": 5,
+      "lines": 26,
+      "sharePercent": 0.04,
+      "isGuru": false
+    },
+    {
+      "authorId": "JEDV",
+      "nameLatn": "Bhagat Jaidev",
+      "nameGurmukhi": "ਭਟ ਜੈਦੇਵ",
+      "lineGroups": 2,
+      "lines": 23,
+      "sharePercent": 0.04,
+      "isGuru": false
+    },
+    {
+      "authorId": "BKHA",
+      "nameLatn": "Bhatt Bhikha",
+      "nameGurmukhi": "ਭਟ ਭਿਖਾ",
+      "lineGroups": 3,
+      "lines": 19,
+      "sharePercent": 0.03,
+      "isGuru": false
+    },
+    {
+      "authorId": "RMND",
+      "nameLatn": "Bhagat Ramanand",
+      "nameGurmukhi": "ਭਗਤ ਰਾਮਾਨੰਦ",
+      "lineGroups": 1,
+      "lines": 16,
+      "sharePercent": 0.03,
+      "isGuru": false
+    },
+    {
+      "authorId": "BKHN",
+      "nameLatn": "Bhagat Bheekhan",
+      "nameGurmukhi": "ਭਗਤ ਭੀਖਨ",
+      "lineGroups": 2,
+      "lines": 16,
+      "sharePercent": 0.03,
+      "isGuru": false
+    },
+    {
+      "authorId": "SDNA",
+      "nameLatn": "Bhagat Sadhna",
+      "nameGurmukhi": "ਭਗਤ ਸਧਨਾ",
+      "lineGroups": 1,
+      "lines": 12,
+      "sharePercent": 0.02,
+      "isGuru": false
+    },
+    {
+      "authorId": "SALH",
+      "nameLatn": "Bhatt Salh",
+      "nameGurmukhi": "ਭਟ ਸਲ੍ਹ",
+      "lineGroups": 2,
+      "lines": 12,
+      "sharePercent": 0.02,
+      "isGuru": false
+    },
+    {
+      "authorId": "HRBN",
+      "nameLatn": "Bhatt Harbans",
+      "nameGurmukhi": "ਭਟ ਹਿਰਬੰਸ",
+      "lineGroups": 2,
+      "lines": 12,
+      "sharePercent": 0.02,
+      "isGuru": false
+    },
+    {
+      "authorId": "SAIN",
+      "nameLatn": "Bhagat Sain",
+      "nameGurmukhi": "ਭਗਤ ਸੈਣ",
+      "lineGroups": 1,
+      "lines": 11,
+      "sharePercent": 0.02,
+      "isGuru": false
+    },
+    {
+      "authorId": "PMND",
+      "nameLatn": "Bhagat Parmanand",
+      "nameGurmukhi": "ਭਗਤ ਪਰਮਾਨੰਦ",
+      "lineGroups": 1,
+      "lines": 10,
+      "sharePercent": 0.02,
+      "isGuru": false
+    },
+    {
+      "authorId": "SRDS",
+      "nameLatn": "Bhagat Surdas",
+      "nameGurmukhi": "ਭਗਤ ਸੂਰਦਾਸ",
+      "lineGroups": 2,
+      "lines": 9,
+      "sharePercent": 0.01,
+      "isGuru": false
+    },
+    {
+      "authorId": "PIPA",
+      "nameLatn": "Bhagat Pipa",
+      "nameGurmukhi": "ਭਗਤ ਪੀਪਾ",
+      "lineGroups": 1,
+      "lines": 7,
+      "sharePercent": 0.01,
+      "isGuru": false
+    },
+    {
+      "authorId": "BHLH",
+      "nameLatn": "Bhatt Bhalh",
+      "nameGurmukhi": "ਭਟ ਭਲ੍ਹ",
+      "lineGroups": 1,
+      "lines": 4,
+      "sharePercent": 0.01,
+      "isGuru": false
+    }
+  ],
+  "guruGobindSinghBySource": [
+    {
+      "sourceId": "SDGR",
+      "lineGroups": 5470,
+      "lines": 67758
+    },
+    {
+      "sourceId": "SRBL",
+      "lineGroups": 4,
+      "lines": 78
+    }
+  ]
+}

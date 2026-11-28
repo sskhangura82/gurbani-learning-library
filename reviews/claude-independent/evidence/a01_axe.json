@@ -1,0 +1,652 @@
+{
+ "home:light": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 1,
+    "sample": [
+     {
+      "target": ".nitnem-card",
+      "html": "<a class=\"nitnem-card\" href=\"nitnem/index.html\" aria-label=\"Open all seven Nitnem banis\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 16
+   }
+  ]
+ },
+ "home:amrit": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 1,
+    "sample": [
+     {
+      "target": ".nitnem-card",
+      "html": "<a class=\"nitnem-card\" href=\"nitnem/index.html\" aria-label=\"Open all seven Nitnem banis\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 16
+   }
+  ]
+ },
+ "nitnem-collection:light": {
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "tags": [
+     "wcag2aa",
+     "wcag143"
+    ],
+    "nodes": 7,
+    "sample": [
+     {
+      "target": "a[href$=\"full-japji.html\"] > .num",
+      "html": "<span class=\"num\">01</span>",
+      "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.27 (foreground color: #9c865c, background color: #faf7ee, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": "button[data-open=\"jaap\"] > .num",
+      "html": "<span class=\"num\">02</span>",
+      "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.27 (foreground color: #9c865c, background color: #faf7ee, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": "button[data-open=\"savaiye\"] > .num",
+      "html": "<span class=\"num\">03</span>",
+      "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.27 (foreground color: #9c865c, background color: #faf7ee, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "aria-prohibited-attr",
+    "impact": "serious",
+    "nodes": 3
+   }
+  ]
+ },
+ "nitnem-collection:dark": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "aria-prohibited-attr",
+    "impact": "serious",
+    "nodes": 3
+   }
+  ]
+ },
+ "nitnem-reader-sohila:read:light": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 1,
+    "sample": [
+     {
+      "target": "#jump",
+      "html": "<button id=\"jump\" type=\"button\" class=\"position\" aria-label=\"Choose a passage or stanza\"><span id=\"position-label\">Shabad 1 · Gauree Deepakee · Guru Nanak Sahib",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 5
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 3
+   }
+  ]
+ },
+ "nitnem-reader-sohila:meaning:light": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 62,
+    "sample": [
+     {
+      "target": "button[data-meaning-line=\"sohila01.line01\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line01\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[data-meaning-line=\"sohila01.line02\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line02\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[data-meaning-line=\"sohila01.line03\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line03\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 7
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 3
+   }
+  ]
+ },
+ "nitnem-reader-sohila:study:light": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 57,
+    "sample": [
+     {
+      "target": "button[data-meaning-line=\"sohila01.line01\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line01\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[data-meaning-line=\"sohila01.line02\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line02\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[data-meaning-line=\"sohila01.line03\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line03\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 7
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 3
+   }
+  ]
+ },
+ "nitnem-reader-sohila:study:dark": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 57,
+    "sample": [
+     {
+      "target": "button[data-meaning-line=\"sohila01.line01\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line01\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[data-meaning-line=\"sohila01.line02\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line02\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[data-meaning-line=\"sohila01.line03\"]",
+      "html": "<button class=\"simple-meaning\" type=\"button\" data-meaning-line=\"sohila01.line03\" aria-label=\"Meaning for this line. Tap to explore.\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 7
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 3
+   }
+  ]
+ },
+ "nitnem-tools-dialog:dark": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ]
+ },
+ "nitnem-tools-dialog:light": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ]
+ },
+ "nitnem-jump-dialog:light": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ]
+ },
+ "japji:read": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 2,
+    "sample": [
+     {
+      "target": "#dock-position",
+      "html": "<button type=\"button\" id=\"dock-position\" aria-label=\"Mool Mantar · line 1. Jump to a passage\" title=\"Mool Mantar · line 1\"><span>Mool Mantar</span><small>Line 1",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "#pace-shortcut",
+      "html": "<button type=\"button\" id=\"pace-shortcut\" aria-label=\"Visual pace 70 tokens per minute. Adjust speed\" aria-haspopup=\"true\" aria-controls=\"pace-tray\" aria-expande",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 5
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 2
+   }
+  ]
+ },
+ "japji:meaning": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 387,
+    "sample": [
+     {
+      "target": ".simple-meaning[data-index=\"0\"][data-action=\"meaning\"]",
+      "html": "<button type=\"button\" class=\"simple-meaning\" data-action=\"meaning\" data-index=\"0\" aria-label=\"Read more about Mool Mantar line 1\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[aria-label=\"Read more about Jap line 1\"]",
+      "html": "<button type=\"button\" class=\"simple-meaning\" data-action=\"meaning\" data-index=\"1\" aria-label=\"Read more about Jap line 1\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": ".simple-meaning[data-index=\"2\"][data-action=\"meaning\"]",
+      "html": "<button type=\"button\" class=\"simple-meaning\" data-action=\"meaning\" data-index=\"2\" aria-label=\"Read more about Opening Salok line 1\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 6
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 2
+   }
+  ]
+ },
+ "japji:study": {
+  "violations": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 387,
+    "sample": [
+     {
+      "target": ".simple-meaning[data-index=\"0\"][data-action=\"meaning\"]",
+      "html": "<button type=\"button\" class=\"simple-meaning\" data-action=\"meaning\" data-index=\"0\" aria-label=\"Read more about Mool Mantar line 1\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "button[aria-label=\"Read more about Jap line 1\"]",
+      "html": "<button type=\"button\" class=\"simple-meaning\" data-action=\"meaning\" data-index=\"1\" aria-label=\"Read more about Jap line 1\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": ".simple-meaning[data-index=\"2\"][data-action=\"meaning\"]",
+      "html": "<button type=\"button\" class=\"simple-meaning\" data-action=\"meaning\" data-index=\"2\" aria-label=\"Read more about Opening Salok line 1\">",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 5
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 2
+   }
+  ]
+ },
+ "japji:tools": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ]
+ },
+ "sukhmani:read": {
+  "violations": [
+   {
+    "id": "aria-prohibited-attr",
+    "impact": "serious",
+    "help": "Elements must only use permitted ARIA attributes",
+    "tags": [
+     "wcag2a",
+     "wcag412"
+    ],
+    "nodes": 2027,
+    "sample": [
+     {
+      "target": "#sukhmani\\.intro\\.l01 > .line-meta > .line-saved[aria-label=\"Saved bookmark\"]",
+      "html": "<span class=\"line-saved\" aria-label=\"Saved bookmark\"></span>",
+      "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+     },
+     {
+      "target": "#sukhmani\\.a01\\.salok\\.l01 > .line-meta > .line-saved[aria-label=\"Saved bookmark\"]",
+      "html": "<span class=\"line-saved\" aria-label=\"Saved bookmark\"></span>",
+      "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+     },
+     {
+      "target": "#sukhmani\\.a01\\.salok\\.l02 > .line-meta > .line-saved[aria-label=\"Saved bookmark\"]",
+      "html": "<span class=\"line-saved\" aria-label=\"Saved bookmark\"></span>",
+      "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+     }
+    ]
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 1,
+    "sample": [
+     {
+      "target": "#sk-position",
+      "html": "<button type=\"button\" id=\"sk-position\" aria-label=\"Jump to a Salok or pauri\">Ashtpadi 1<small>Salok · opening</small></button>",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 1
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 2
+   }
+  ]
+ },
+ "sukhmani:meaning": {
+  "violations": [
+   {
+    "id": "aria-prohibited-attr",
+    "impact": "serious",
+    "help": "Elements must only use permitted ARIA attributes",
+    "tags": [
+     "wcag2a",
+     "wcag412"
+    ],
+    "nodes": 2027,
+    "sample": [
+     {
+      "target": "#sukhmani\\.intro\\.l01 > .line-meta > .line-saved[aria-label=\"Saved bookmark\"]",
+      "html": "<span class=\"line-saved\" aria-label=\"Saved bookmark\"></span>",
+      "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+     },
+     {
+      "target": "#sukhmani\\.a01\\.salok\\.l01 > .line-meta > .line-saved[aria-label=\"Saved bookmark\"]",
+      "html": "<span class=\"line-saved\" aria-label=\"Saved bookmark\"></span>",
+      "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+     },
+     {
+      "target": "#sukhmani\\.a01\\.salok\\.l02 > .line-meta > .line-saved[aria-label=\"Saved bookmark\"]",
+      "html": "<span class=\"line-saved\" aria-label=\"Saved bookmark\"></span>",
+      "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+     }
+    ]
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 2028,
+    "sample": [
+     {
+      "target": "#sukhmani\\.intro\\.l01 > .simple-meaning",
+      "html": "<button class=\"simple-meaning\" type=\"button\" aria-label=\"Study this passage: Ashtpadi 1 · Opening · Ang 262\"><span class=\"english\">Sukhmani in Raag Gauri, by th",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "#sukhmani\\.a01\\.salok\\.l01 > .simple-meaning",
+      "html": "<button class=\"simple-meaning\" type=\"button\" aria-label=\"Study this passage: Ashtpadi 1 · Salok · Ang 262\"><span class=\"english\">Salok: the introductory verse.<",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "#sukhmani\\.a01\\.salok\\.l02 > .simple-meaning",
+      "html": "<button class=\"simple-meaning\" type=\"button\" aria-label=\"Study this passage: Ashtpadi 1 · Salok · Ang 262\"><span class=\"english\">The One Divine Reality; through",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 1
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "nodes": 2
+   }
+  ]
+ },
+ "simran.html": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 25
+   }
+  ]
+ },
+ "gurdwaras.html": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 13
+   }
+  ]
+ },
+ "gurdwara.html": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 13
+   }
+  ]
+ },
+ "pauri-2-lesson.html": {
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "tags": [
+     "wcag2aa",
+     "wcag143"
+    ],
+    "nodes": 2,
+    "sample": [
+     {
+      "target": "button[data-mode=\"read\"] > span[lang=\"pa\"]",
+      "html": "<span lang=\"pa\">ਪਾਠ</span>",
+      "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #776e61, background color: #eee7d8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": "button[data-mode=\"study\"] > span[lang=\"pa\"]",
+      "html": "<span lang=\"pa\">ਵਿਸਥਾਰ</span>",
+      "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #776e61, background color: #eee7d8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "label-content-name-mismatch",
+    "impact": "serious",
+    "help": "Elements must have their visible text as part of their accessible name",
+    "tags": [
+     "wcag21a",
+     "wcag253"
+    ],
+    "nodes": 10,
+    "sample": [
+     {
+      "target": "#appearance-button",
+      "html": "<button id=\"appearance-button\" class=\"appearance-button\" aria-label=\"Reading appearance and focus\">Aa <span>Appearance</span></button>",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "#font-less",
+      "html": "<button id=\"font-less\" aria-label=\"Decrease Gurmukhi text size\">A−</button>",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     },
+     {
+      "target": "#font-more",
+      "html": "<button id=\"font-more\" aria-label=\"Increase Gurmukhi text size\">A+</button>",
+      "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+     }
+    ]
+   }
+  ],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ]
+ }
+}

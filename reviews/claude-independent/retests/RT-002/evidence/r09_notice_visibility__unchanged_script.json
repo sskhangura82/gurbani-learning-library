@@ -1,0 +1,153 @@
+{
+ "label": "second candidate 1470477",
+ "base": "http://127.0.0.1:8089/gurbani-learning-library/",
+ "situations": {
+  "returning_reader_at_the_start": {
+   "when_the_reader_opens": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 24,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "spoken_status_line_on_open": "",
+   "after_scrolling_down_a_little": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 524,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "after_scrolling_back_to_the_very_top": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 0,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "tools_menu_mentions_kept_aside_items": false,
+   "explore_menu_mentions_kept_aside_items": false,
+   "saved_learning_screen_shows_kept_aside_items": true,
+   "taps_from_reading_to_the_kept_aside_items": 3
+  },
+  "returning_reader_resuming_at_pauri_20": {
+   "when_the_reader_opens": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 16280,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "spoken_status_line_on_open": "",
+   "after_scrolling_down_a_little": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 16780,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "after_scrolling_back_to_the_very_top": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 0,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "tools_menu_mentions_kept_aside_items": false,
+   "explore_menu_mentions_kept_aside_items": false,
+   "saved_learning_screen_shows_kept_aside_items": true,
+   "taps_from_reading_to_the_kept_aside_items": 3
+  },
+  "returning_reader_resuming_at_pauri_2": {
+   "when_the_reader_opens": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 1370,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "spoken_status_line_on_open": "",
+   "after_scrolling_down_a_little": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 1870,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "after_scrolling_back_to_the_very_top": {
+    "noticeInPage": true,
+    "hiddenAttribute": false,
+    "immersiveMode": true,
+    "pageScrolledTo": 0,
+    "noticeWidthPx": 342,
+    "noticeHeightPx": 81,
+    "noticeTopRelativeToScreen": 0,
+    "insideTheScreen": true,
+    "drawnAtReadableSize": true,
+    "buttonCanBeTapped": true,
+    "aSightedReaderCanSeeIt": true,
+    "text": "2 saved items were kept aside. View or export them. View saved learning"
+   },
+   "tools_menu_mentions_kept_aside_items": false,
+   "explore_menu_mentions_kept_aside_items": false,
+   "saved_learning_screen_shows_kept_aside_items": true,
+   "taps_from_reading_to_the_kept_aside_items": 3
+  }
+ }
+}

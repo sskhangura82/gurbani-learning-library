@@ -1,0 +1,55 @@
+{
+ "note": "emulation only (Chromium, 390 x 844); made-up notes only",
+ "b_one_note_no_saved_line": {
+  "listed": [
+   "Pauri 7 · line 1 ਜੇ ਜੁਗ ਚਾਰੇ ਆਰਜਾ ਹੋਰ ਦਸੂਣੀ ਹੋਇ ॥ Reflection"
+  ],
+  "emptyMessageShown": null
+ },
+ "b0_nothing_saved": {
+  "listed": [],
+  "emptyMessageShown": "No saved lines or reflections yet."
+ },
+ "c_both_marks_and_order": {
+  "listed": [
+   "Mool Mantar · line 1 ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ",
+   "Pauri 5 · line 1 ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ Saved line · Reflection",
+   "Pauri 20 · line 1 ਭਰੀਐ ਹਥੁ ਪੈਰੁ ਤਨੁ ਦੇਹ ॥ Reflection",
+   "Pauri 38 · line 1 ਜਤੁ ਪਾਹਾਰਾ ਧੀਰਜੁ ਸੁਨਿਆਰੁ ॥ Saved line"
+  ],
+  "lineWithBothListedOnce": true,
+  "labelOnThatLine": "ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ Saved line · Reflection",
+  "inTheOrderOfTheBani": true,
+  "firstWordsOfANoteShownInTheList": false
+ },
+ "c_tapping_a_listed_note": {
+  "readerWentTo": "Pauri 20 · line 1",
+  "aPanelIsOpenAfterTheTap": false,
+  "theNoteItselfIsOnScreen": false
+ },
+ "c_names_given_to_a_screen_reader": "- button \"Mool Mantar · line 1 ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Reflection\"\n- button \"Pauri 5 · line 1 ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥ Saved line · Reflection\"\n- button \"Pauri 20 · line 1 ਭਰੀਐ ਹਥੁ ਪੈਰੁ ਤਨੁ ਦੇਹ ॥ Reflection\"\n- button \"Pauri 38 · line 1 ਜਤੁ ਪਾਹਾਰਾ ਧੀਰਜੁ ਸੁਨਿਆਰੁ ॥ Saved line\"",
+ "d_200_notes": {
+  "listed": 200,
+  "secondsToOpen": 1.3,
+  "sidewaysOverflow": false,
+  "canScroll": true,
+  "exportAndImportStillReachable": true,
+  "recordStillHolds200": true
+ },
+ "e_note_emptied": {
+  "listedBefore": [
+   "Pauri 7 · line 1 ਜੇ ਜੁਗ ਚਾਰੇ ਆਰਜਾ ਹੋਰ ਦਸੂਣੀ ਹੋਇ ॥ Reflection"
+  ],
+  "noteBoxHeld": "TEST NOTE ONLY",
+  "listedAfter": [],
+  "emptyMessageAfter": "No saved lines or reflections yet.",
+  "goneFromStorage": false
+ },
+ "f_where_notes_go": {
+  "hostsContacted": [
+   "127.0.0.1:8089"
+  ],
+  "anyRequestCarriedNoteText": false,
+  "requests": 96
+ }
+}

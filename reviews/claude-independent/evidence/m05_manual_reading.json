@@ -1,0 +1,3826 @@
+{
+ "what_this_is": "Line-by-line reading of the app's English and Punjabi meanings against the Gurmukhi by the reviewer (an AI system, not a qualified Sikh scholar). Observations are the reviewer's reading and need confirmation by qualified human reviewers.",
+ "entries_read": 342,
+ "entries_in_app": 3773,
+ "read_by_part": {
+  "japji": 85,
+  "sohila": 37,
+  "anand": 16,
+  "chaupai": 56,
+  "savaiye": 16,
+  "jaap": 51,
+  "sukhmani": 54,
+  "rehras:sggs-nine": 23,
+  "rehras:savaiya-dohira": 2,
+  "rehras:mundawani-slok": 2
+ },
+ "app_by_part": {
+  "japji": 385,
+  "sukhmani": 2027,
+  "anand": 208,
+  "sohila": 56,
+  "jaap": 782,
+  "savaiye": 40,
+  "chaupai": 116,
+  "rehras:sggs-nine": 23,
+  "rehras:chaupai": 100,
+  "rehras:savaiya-dohira": 2,
+  "rehras:anand": 32,
+  "rehras:mundawani-slok": 2
+ },
+ "entries_with_at_least_one_observation_by_part": {
+  "japji": 6,
+  "sohila": 10,
+  "anand": 11,
+  "chaupai": 38,
+  "savaiye": 10,
+  "jaap": 7,
+  "sukhmani": 2,
+  "rehras:sggs-nine": 22,
+  "rehras:savaiya-dohira": 2,
+  "rehras:mundawani-slok": 2
+ },
+ "observations_by_kind": {
+  "meta_in_meaning": 1,
+  "alt_reading_not_noted": 3,
+  "omission": 7,
+  "misreading": 4,
+  "en_pa_divergence": 6,
+  "reporting_voice": 51,
+  "addition": 3,
+  "softened": 10,
+  "awkward": 1,
+  "lexical_uncertain": 3,
+  "summary_not_line_meaning": 26
+ },
+ "observations_by_severity": {
+  "S3": 19,
+  "S2": 27,
+  "S1": 69
+ },
+ "rows": [
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "mool.line01",
+   "gurmukhi": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+   "app_en": "One all-pervading Reality: true Name, creative Being, without fear or enmity, timeless, beyond birth, self-existent; known through the Guru’s grace.",
+   "app_pa": "ਇੱਕ ਸਰਬ-ਵਿਆਪਕ ਹਸਤੀ: ਜਿਸ ਦਾ ਨਾਮ ਸਦਾ ਸੱਚ ਹੈ, ਜੋ ਰਚਨਹਾਰ ਹੈ, ਡਰ ਤੇ ਵੈਰ ਤੋਂ ਰਹਿਤ, ਸਮੇਂ ਤੇ ਜਨਮ ਤੋਂ ਪਰੇ ਅਤੇ ਆਪਣੇ ਆਪ ਤੋਂ ਹੈ; ਗੁਰੂ ਦੀ ਕਿਰਪਾ ਨਾਲ ਉਸ ਦੀ ਸੂਝ ਮਿਲਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "title.line01",
+   "gurmukhi": "॥ ਜਪੁ ॥",
+   "app_en": "Jap — the composition’s heading, inviting remembrance and contemplation.",
+   "app_pa": "ਜਪੁ — ਇਸ ਬਾਣੀ ਦਾ ਸਿਰਲੇਖ; ਸਿਮਰਨ ਅਤੇ ਵਿਚਾਰ ਵੱਲ ਸੱਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "opening.line01",
+   "gurmukhi": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+   "app_en": "True at the beginning; true through the ages.",
+   "app_pa": "ਆਰੰਭ ਤੋਂ ਸੱਚ; ਯੁੱਗਾਂ ਦੇ ਮੁੱਢ ਤੋਂ ਸੱਚ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "opening.line02",
+   "gurmukhi": "ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥",
+   "app_en": "True now too, Nanak says, and true in the time to come.",
+   "app_pa": "ਹੁਣ ਵੀ ਸੱਚ ਹੈ; ਨਾਨਕ ਆਖਦੇ ਹਨ, ਅੱਗੇ ਵੀ ਸੱਚ ਰਹੇਗਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri01.line01",
+   "gurmukhi": "ਸੋਚੈ ਸੋਚਿ ਨ ਹੋਵਈ ਜੇ ਸੋਚੀ ਲਖ ਵਾਰ ॥",
+   "app_en": "Outward cleansing does not bring inner purity, even if repeated countless times. Study notes discuss another reading of ਸੋਚੈ as thinking.",
+   "app_pa": "ਬਾਹਰਲੀ ਸੁੱਚ ਨਾਲ ਅੰਦਰਲੀ ਸੁੱਚ ਨਹੀਂ ਬਣਦੀ, ਭਾਵੇਂ ਇਹ ਜਤਨ ਲੱਖ ਵਾਰ ਕੀਤਾ ਜਾਵੇ। ਵਿਸਥਾਰ ਵਿੱਚ ਸੋਚੈ ਦੇ ਹੋਰ ਪਾਠ-ਅਰਥ ਦੀ ਵੀ ਚਰਚਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "meta_in_meaning",
+     "severity": "S3",
+     "note": "A study pointer (\"Study notes discuss another reading…\") sits inside the line meaning."
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri01.line02",
+   "gurmukhi": "ਚੁਪੈ ਚੁਪ ਨ ਹੋਵਈ ਜੇ ਲਾਇ ਰਹਾ ਲਿਵ ਤਾਰ ॥",
+   "app_en": "Outward silence does not quiet the mind, even through sustained absorbed sitting.",
+   "app_pa": "ਬਾਹਰੋਂ ਚੁੱਪ ਰਹਿਣ ਨਾਲ ਮਨ ਦੀ ਚੁੱਪ ਨਹੀਂ ਬਣਦੀ, ਭਾਵੇਂ ਲਗਾਤਾਰ ਲਿਵ ਜੋੜ ਕੇ ਬੈਠੇ ਰਹੀਏ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri01.line03",
+   "gurmukhi": "ਭੁਖਿਆ ਭੁਖ ਨ ਉਤਰੀ ਜੇ ਬੰਨਾ ਪੁਰੀਆ ਭਾਰ ॥",
+   "app_en": "Craving is not satisfied even by gathering the wealth of many worlds.",
+   "app_pa": "ਤ੍ਰਿਸ਼ਨਾ ਦੀ ਭੁੱਖ ਨਹੀਂ ਮੁੱਕਦੀ, ਭਾਵੇਂ ਕਈ ਲੋਕਾਂ ਜਿਤਨਾ ਧਨ ਇਕੱਠਾ ਕਰ ਲਈਏ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri01.line04",
+   "gurmukhi": "ਸਹਸ ਸਿਆਣਪਾ ਲਖ ਹੋਹਿ ਤ ਇਕ ਨ ਚਲੈ ਨਾਲਿ ॥",
+   "app_en": "Even thousands upon thousands of clever strategies cannot accompany us as the answer.",
+   "app_pa": "ਹਜ਼ਾਰਾਂ-ਲੱਖਾਂ ਚਤੁਰਾਈਆਂ ਹੋਣ, ਫਿਰ ਵੀ ਕੋਈ ਇਸ ਮੰਜ਼ਿਲ ਤੱਕ ਸਾਥ ਨਹੀਂ ਨਿਭਾਉਂਦੀ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri01.line05",
+   "gurmukhi": "ਕਿਵ ਸਚਿਆਰਾ ਹੋਈਐ ਕਿਵ ਕੂੜੈ ਤੁਟੈ ਪਾਲਿ ॥",
+   "app_en": "How, then, can we become truthful? How can the barrier of falsehood break?",
+   "app_pa": "ਫਿਰ ਸੱਚ ਨਾਲ ਜੀਉਣ ਵਾਲੇ ਕਿਵੇਂ ਬਣੀਏ? ਕੂੜ ਦੀ ਕੰਧ ਕਿਵੇਂ ਟੁੱਟੇ?",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri01.line06",
+   "gurmukhi": "ਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+   "app_en": "Nanak: live in accord with the Hukam of the One whose will sustains all; it is written with our very existence.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਰਜ਼ਾ ਦੇ ਮਾਲਕ ਦੇ ਹੁਕਮ ਵਿੱਚ ਤੁਰਨਾ ਹੈ; ਇਹ ਹੁਕਮ ਸਾਡੇ ਹੋਣ ਦੇ ਨਾਲ ਹੀ ਲਿਖਿਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri02.line01",
+   "gurmukhi": "ਹੁਕਮੀ ਹੋਵਨਿ ਆਕਾਰ ਹੁਕਮੁ ਨ ਕਹਿਆ ਜਾਈ ॥",
+   "app_en": "Forms come into being through Hukam; Hukam cannot be fully expressed in words.",
+   "app_pa": "ਹੁਕਮ ਅਨੁਸਾਰ ਸਾਰੇ ਰੂਪ ਬਣਦੇ ਹਨ; ਉਸ ਹੁਕਮ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਬਿਆਨ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri02.line02",
+   "gurmukhi": "ਹੁਕਮੀ ਹੋਵਨਿ ਜੀਅ ਹੁਕਮਿ ਮਿਲੈ ਵਡਿਆਈ ॥",
+   "app_en": "Living beings arise through Hukam; through Hukam, honour is received.",
+   "app_pa": "ਹੁਕਮ ਅਨੁਸਾਰ ਜੀਵ ਹੋਂਦ ਵਿਚ ਆਉਂਦੇ ਹਨ ਅਤੇ ਹੁਕਮ ਵਿਚ ਹੀ ਵਡਿਆਈ ਮਿਲਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri02.line03",
+   "gurmukhi": "ਹੁਕਮੀ ਉਤਮੁ ਨੀਚੁ ਹੁਕਮਿ ਲਿਖਿ ਦੁਖ ਸੁਖ ਪਾਈਅਹਿ ॥",
+   "app_en": "High and low, and the experience of suffering and comfort, are within Hukam.",
+   "app_pa": "ਉੱਚਾ-ਨੀਵਾਂ ਹੋਣਾ ਅਤੇ ਲਿਖੇ ਅਨੁਸਾਰ ਦੁੱਖ-ਸੁੱਖ ਭੋਗਣਾ ਵੀ ਹੁਕਮ ਦੇ ਅੰਦਰ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri02.line04",
+   "gurmukhi": "ਇਕਨਾ ਹੁਕਮੀ ਬਖਸੀਸ ਇਕਿ ਹੁਕਮੀ ਸਦਾ ਭਵਾਈਅਹਿ ॥",
+   "app_en": "Within Hukam, some receive grace; within Hukam, others continue to wander in the cycle of birth and death.",
+   "app_pa": "ਹੁਕਮ ਵਿਚ ਕਈਆਂ ਨੂੰ ਬਖ਼ਸ਼ਸ਼ ਮਿਲਦੀ ਹੈ ਅਤੇ ਕਈ ਜਨਮ-ਮਰਨ ਦੇ ਗੇੜ ਵਿਚ ਭਟਕਦੇ ਰਹਿੰਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri02.line05",
+   "gurmukhi": "ਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ ਬਾਹਰਿ ਹੁਕਮ ਨ ਕੋਇ ॥",
+   "app_en": "Everyone is within Hukam; no one is outside it.",
+   "app_pa": "ਹਰੇਕ ਜੀਵ ਹੁਕਮ ਦੇ ਅੰਦਰ ਹੈ; ਕੋਈ ਵੀ ਉਸ ਤੋਂ ਬਾਹਰ ਨਹੀਂ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri02.line06",
+   "gurmukhi": "ਨਾਨਕ ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ ॥੨॥",
+   "app_en": "O Nanak, one who understands Hukam no longer speaks from haumai—from self-centred “I-ness”.",
+   "app_pa": "ਹੇ ਨਾਨਕ! ਜੋ ਹੁਕਮ ਨੂੰ ਸਮਝ ਲੈਂਦਾ ਹੈ, ਉਹ ਹਉਮੈ ਦੀਆਂ ਗੱਲਾਂ ਨਹੀਂ ਕਰਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line01",
+   "gurmukhi": "ਸਾਚਾ ਸਾਹਿਬੁ ਸਾਚੁ ਨਾਇ ਭਾਖਿਆ ਭਾਉ ਅਪਾਰੁ ॥",
+   "app_en": "The Sovereign is enduring; the divine order is enduring, and love is its boundless language.",
+   "app_pa": "ਮਾਲਕ ਸਦਾ-ਥਿਰ ਹੈ; ਉਸ ਦਾ ਨਿਯਮ ਅਟੱਲ ਹੈ ਅਤੇ ਉਸ ਦੀ ਬੋਲੀ ਬੇਅੰਤ ਪ੍ਰੇਮ ਹੈ।",
+   "observations": [
+    {
+     "kind": "alt_reading_not_noted",
+     "severity": "S3",
+     "note": "ਸਾਚੁ ਨਾਇ rendered through the ਨਿਆਇ (order/justice) reading only; the widely taught \"true Name\" reading is not mentioned."
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line02",
+   "gurmukhi": "ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ ॥",
+   "app_en": "Beings keep asking, 'Give, give'; the generous One keeps bestowing.",
+   "app_pa": "ਜੀਵ ਮੁੜ-ਮੁੜ ਦਾਤਾਂ ਮੰਗਦੇ ਹਨ ਅਤੇ ਦਾਤਾਰ ਬਖ਼ਸ਼ਦਾ ਰਹਿੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line03",
+   "gurmukhi": "ਫੇਰਿ ਕਿ ਅਗੈ ਰਖੀਐ ਜਿਤੁ ਦਿਸੈ ਦਰਬਾਰੁ ॥",
+   "app_en": "Then what offering could we bring that opens a glimpse of the divine court?",
+   "app_pa": "ਫਿਰ ਅਸੀਂ ਕੀ ਭੇਟ ਰੱਖੀਏ ਜਿਸ ਨਾਲ ਉਸ ਦੇ ਦਰ ਦੀ ਝਲਕ ਮਿਲੇ?",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line04",
+   "gurmukhi": "ਮੁਹੌ ਕਿ ਬੋਲਣੁ ਬੋਲੀਐ ਜਿਤੁ ਸੁਣਿ ਧਰੇ ਪਿਆਰੁ ॥",
+   "app_en": "What could we say that would be heard in a relationship of love?",
+   "app_pa": "ਅਸੀਂ ਕਿਹੋ ਜਿਹੇ ਬੋਲ ਬੋਲੀਏ ਜਿਨ੍ਹਾਂ ਨੂੰ ਸੁਣ ਕੇ ਉਹ ਪਿਆਰ ਧਰੇ?",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line05",
+   "gurmukhi": "ਅੰਮ੍ਰਿਤ ਵੇਲਾ ਸਚੁ ਨਾਉ ਵਡਿਆਈ ਵੀਚਾਰੁ ॥",
+   "app_en": "In Amrit Vela, remember the enduring Naam and contemplate divine greatness.",
+   "app_pa": "ਅੰਮ੍ਰਿਤ ਵੇਲੇ ਸਦਾ-ਥਿਰ ਨਾਮ ਦੀ ਯਾਦ ਅਤੇ ਕਰਤਾਰ ਦੀ ਵਡਿਆਈ ਦੀ ਵਿਚਾਰ ਕਰੀਏ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line06",
+   "gurmukhi": "ਕਰਮੀ ਆਵੈ ਕਪੜਾ ਨਦਰੀ ਮੋਖੁ ਦੁਆਰੁ ॥",
+   "app_en": "In one reading, grace clothes us in praise; the gracious gaze opens liberation. Study explains the alternative body-and-deeds reading.",
+   "app_pa": "ਇੱਕ ਵਿਆਖਿਆ ਅਨੁਸਾਰ ਮਿਹਰ ਨਾਲ ਸਿਫ਼ਤਿ ਦਾ ਪਟੋਲਾ ਮਿਲਦਾ ਹੈ ਅਤੇ ਕਿਰਪਾ ਨਾਲ ਮੁਕਤੀ ਦਾ ਦਰ ਖੁੱਲ੍ਹਦਾ ਹੈ। ਦੇਹ ਤੇ ਕਰਮ ਵਾਲੀ ਵਿਆਖਿਆ ਅਧਿਐਨ ਵਿੱਚ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri04.line07",
+   "gurmukhi": "ਨਾਨਕ ਏਵੈ ਜਾਣੀਐ ਸਭੁ ਆਪੇ ਸਚਿਆਰੁ ॥੪॥",
+   "app_en": "Nanak: in this way, recognize the enduring One as present throughout.",
+   "app_pa": "ਨਾਨਕ: ਇਸ ਤਰ੍ਹਾਂ ਸਮਝ ਆਉਂਦੀ ਹੈ ਕਿ ਸਦਾ-ਥਿਰ ਕਰਤਾਰ ਸਭ ਥਾਂ ਆਪ ਹੀ ਵੱਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri05.line01",
+   "gurmukhi": "ਥਾਪਿਆ ਨ ਜਾਇ ਕੀਤਾ ਨ ਹੋਇ ॥",
+   "app_en": "The One cannot be installed into existence or made by us.",
+   "app_pa": "ਕਰਤਾਰ ਨੂੰ ਅਸੀਂ ਥਾਪ ਕੇ ਹੋਂਦ ਵਿੱਚ ਨਹੀਂ ਲਿਆ ਸਕਦੇ, ਨਾ ਆਪਣਾ ਬਣਾਇਆ ਬਣਾ ਸਕਦੇ ਹਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri05.line02",
+   "gurmukhi": "ਆਪੇ ਆਪਿ ਨਿਰੰਜਨੁ ਸੋਇ ॥",
+   "app_en": "That One exists of itself, untouched by stain.",
+   "app_pa": "ਉਹ ਆਪ ਹੀ ਆਪਣੇ ਆਪ ਹੈ ਅਤੇ ਮੈਲ ਦੇ ਪ੍ਰਭਾਵ ਤੋਂ ਪਰੇ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri05.line03",
+   "gurmukhi": "ਜਿਨਿ ਸੇਵਿਆ ਤਿਨਿ ਪਾਇਆ ਮਾਨੁ ॥",
+   "app_en": "Whoever has served the One has found true honor.",
+   "app_pa": "ਜਿਸ ਨੇ ਉਸ ਦੀ ਸੇਵਾ ਕੀਤੀ, ਉਸ ਨੇ ਅਸਲ ਮਾਣ ਪਾਇਆ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri05.line04",
+   "gurmukhi": "ਨਾਨਕ ਗਾਵੀਐ ਗੁਣੀ ਨਿਧਾਨੁ ॥",
+   "app_en": "Nanak: let us praise the inexhaustible source of qualities.",
+   "app_pa": "ਨਾਨਕ: ਆਓ, ਗੁਣਾਂ ਦੇ ਖ਼ਜ਼ਾਨੇ ਦਾ ਜਸ ਕਰੀਏ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri05.line05",
+   "gurmukhi": "ਗਾਵੀਐ ਸੁਣੀਐ ਮਨਿ ਰਖੀਐ ਭਾਉ ॥",
+   "app_en": "Let praise and listening be joined with love held in the mind.",
+   "app_pa": "ਗਾਈਏ ਵੀ, ਸੁਣੀਏ ਵੀ ਅਤੇ ਮਨ ਵਿੱਚ ਪ੍ਰੇਮ ਟਿਕਾਈਏ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri05.line06",
+   "gurmukhi": "ਦੁਖੁ ਪਰਹਰਿ ਸੁਖੁ ਘਰਿ ਲੈ ਜਾਇ ॥",
+   "app_en": "In this way, sorrow is set aside and peace is brought within.",
+   "app_pa": "ਇਸ ਤਰ੍ਹਾਂ ਦੁੱਖ ਦੂਰ ਕਰਕੇ ਅੰਦਰ ਸੁੱਖ ਵਸਾਇਆ ਜਾਂਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line01",
+   "gurmukhi": "ਪੰਚ ਪਰਵਾਣ ਪੰਚ ਪਰਧਾਨੁ ॥",
+   "app_en": "The spiritually accepted ones are esteemed and foremost.",
+   "app_pa": "ਨਾਮ ਵਿੱਚ ਟਿਕੇ ਪਰਵਾਣ ਜਨ ਮਾਣਯੋਗ ਅਤੇ ਅਗਵਾਈ ਵਾਲੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line02",
+   "gurmukhi": "ਪੰਚੇ ਪਾਵਹਿ ਦਰਗਹਿ ਮਾਨੁ ॥",
+   "app_en": "Those accepted ones receive honor in the divine court.",
+   "app_pa": "ਉਹ ਪਰਵਾਣ ਜਨ ਕਰਤਾਰ ਦੀ ਦਰਗਾਹ ਵਿੱਚ ਮਾਣ ਪਾਂਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line03",
+   "gurmukhi": "ਪੰਚੇ ਸੋਹਹਿ ਦਰਿ ਰਾਜਾਨੁ ॥",
+   "app_en": "They stand in dignity at the Sovereign's doorway.",
+   "app_pa": "ਉਹ ਪਾਤਸ਼ਾਹ ਦੇ ਦਰ ਉੱਤੇ ਸੋਭਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line04",
+   "gurmukhi": "ਪੰਚਾ ਕਾ ਗੁਰੁ ਏਕੁ ਧਿਆਨੁ ॥",
+   "app_en": "Their attention rests on the one Guru.",
+   "app_pa": "ਉਨ੍ਹਾਂ ਦੀ ਸੁਰਤਿ ਦਾ ਕੇਂਦਰ ਇੱਕ ਗੁਰੂ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line05",
+   "gurmukhi": "ਜੇ ਕੋ ਕਹੈ ਕਰੈ ਵੀਚਾਰੁ ॥",
+   "app_en": "Even if someone tries to speak and reflect upon it—",
+   "app_pa": "ਭਾਵੇਂ ਕੋਈ ਉਸ ਬਾਰੇ ਕਹਿਣ ਅਤੇ ਵਿਚਾਰ ਕਰਨ ਦਾ ਜਤਨ ਕਰੇ—",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line06",
+   "gurmukhi": "ਕਰਤੇ ਕੈ ਕਰਣੈ ਨਾਹੀ ਸੁਮਾਰੁ ॥",
+   "app_en": "The Creator's work has no total that can be counted.",
+   "app_pa": "ਕਰਤਾਰ ਦੀ ਰਚਨਾ ਦਾ ਪੂਰਾ ਹਿਸਾਬ ਨਹੀਂ ਲਾਇਆ ਜਾ ਸਕਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line07",
+   "gurmukhi": "ਧੌਲੁ ਧਰਮੁ ਦਇਆ ਕਾ ਪੂਤੁ ॥",
+   "app_en": "The supporting bull is pictured as dharam, born of compassion.",
+   "app_pa": "ਸਹਾਰਾ ਦੇਣ ਵਾਲੇ ਧੌਲ ਨੂੰ ਧਰਮ, ਅਤੇ ਧਰਮ ਨੂੰ ਦਇਆ ਦਾ ਪੁੱਤਰ ਦਰਸਾਇਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri16.line08",
+   "gurmukhi": "ਸੰਤੋਖੁ ਥਾਪਿ ਰਖਿਆ ਜਿਨਿ ਸੂਤਿ ॥",
+   "app_en": "Through that ordering, contentment is established and held in harmony.",
+   "app_pa": "ਉਸ ਮਰਯਾਦਾ ਰਾਹੀਂ ਸੰਤੋਖ ਟਿਕਾਇਆ ਅਤੇ ਇਕਸਾਰਤਾ ਵਿੱਚ ਰੱਖਿਆ ਗਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S3",
+     "note": "Loses what is held \"in the thread\" (ਜਿਨਿ ਸੂਤਿ): the object held in order is not stated."
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line01",
+   "gurmukhi": "ਭਰੀਐ ਹਥੁ ਪੈਰੁ ਤਨੁ ਦੇਹ ॥",
+   "app_en": "When hands, feet and the body become covered with dirt—",
+   "app_pa": "ਜਦੋਂ ਹੱਥ, ਪੈਰ ਅਤੇ ਸਰੀਰ ਮਿੱਟੀ ਨਾਲ ਮੈਲੇ ਹੋ ਜਾਣ—",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line02",
+   "gurmukhi": "ਪਾਣੀ ਧੋਤੈ ਉਤਰਸੁ ਖੇਹ ॥",
+   "app_en": "Washing with water removes that dust.",
+   "app_pa": "ਪਾਣੀ ਨਾਲ ਧੋਣ ਉੱਤੇ ਉਹ ਮਿੱਟੀ ਉਤਰ ਜਾਂਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line03",
+   "gurmukhi": "ਮੂਤ ਪਲੀਤੀ ਕਪੜੁ ਹੋਇ ॥",
+   "app_en": "When clothing is soiled with urine—",
+   "app_pa": "ਜਦੋਂ ਕੱਪੜਾ ਪਿਸ਼ਾਬ ਨਾਲ ਮੈਲਾ ਹੋ ਜਾਵੇ—",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line04",
+   "gurmukhi": "ਦੇ ਸਾਬੂਣੁ ਲਈਐ ਓਹੁ ਧੋਇ ॥",
+   "app_en": "Soap is applied and the garment can be washed.",
+   "app_pa": "ਸਾਬਣ ਲਾ ਕੇ ਉਹ ਕੱਪੜਾ ਧੋ ਲਿਆ ਜਾਂਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line05",
+   "gurmukhi": "ਭਰੀਐ ਮਤਿ ਪਾਪਾ ਕੈ ਸੰਗਿ ॥",
+   "app_en": "But when understanding is stained by association with wrongdoing—",
+   "app_pa": "ਪਰ ਜਦੋਂ ਮਤਿ ਪਾਪਾਂ ਦੇ ਸੰਗ ਨਾਲ ਮੈਲੀ ਹੋ ਜਾਵੇ—",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line06",
+   "gurmukhi": "ਓਹੁ ਧੋਪੈ ਨਾਵੈ ਕੈ ਰੰਗਿ ॥",
+   "app_en": "It is cleansed by being immersed in the love of Naam.",
+   "app_pa": "ਉਹ ਨਾਮ ਦੇ ਪ੍ਰੇਮ ਵਿੱਚ ਰੰਗੀ ਜਾ ਕੇ ਧੁਲਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line07",
+   "gurmukhi": "ਪੁੰਨੀ ਪਾਪੀ ਆਖਣੁ ਨਾਹਿ ॥",
+   "app_en": "Virtuous and sinful are not merely names we utter.",
+   "app_pa": "ਪੁੰਨੀ ਤੇ ਪਾਪੀ ਕੇਵਲ ਆਖਣ ਦੇ ਨਾਮ ਨਹੀਂ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line08",
+   "gurmukhi": "ਕਰਿ ਕਰਿ ਕਰਣਾ ਲਿਖਿ ਲੈ ਜਾਹੁ ॥",
+   "app_en": "Our repeated actions write the account that we carry with us.",
+   "app_pa": "ਆਪਣੇ ਕੀਤੇ ਕਰਮਾਂ ਦਾ ਲੇਖਾ ਲਿਖ ਕੇ ਅਸੀਂ ਆਪਣੇ ਨਾਲ ਲੈ ਜਾਂਦੇ ਹਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line09",
+   "gurmukhi": "ਆਪੇ ਬੀਜਿ ਆਪੇ ਹੀ ਖਾਹੁ ॥",
+   "app_en": "What we ourselves sow, we ourselves come to eat.",
+   "app_pa": "ਜੋ ਅਸੀਂ ਆਪ ਬੀਜਦੇ ਹਾਂ, ਉਸ ਦਾ ਫਲ ਵੀ ਆਪ ਹੀ ਖਾਂਦੇ ਹਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri20.line10",
+   "gurmukhi": "ਨਾਨਕ ਹੁਕਮੀ ਆਵਹੁ ਜਾਹੁ ॥੨੦॥",
+   "app_en": "Nanak: our coming and going takes place within Hukam.",
+   "app_pa": "ਨਾਨਕ: ਸਾਡਾ ਆਉਣਾ ਅਤੇ ਜਾਣਾ ਹੁਕਮ ਦੇ ਅੰਦਰ ਹੁੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri21.line01",
+   "gurmukhi": "ਤੀਰਥੁ ਤਪੁ ਦਇਆ ਦਤੁ ਦਾਨੁ ॥",
+   "app_en": "Pilgrimage, austerity, compassion and giving are named here.",
+   "app_pa": "ਇੱਥੇ ਤੀਰਥ, ਤਪ, ਦਇਆ ਅਤੇ ਦਾਨ ਦੀ ਗੱਲ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri21.line02",
+   "gurmukhi": "ਜੇ ਕੋ ਪਾਵੈ ਤਿਲ ਕਾ ਮਾਨੁ ॥",
+   "app_en": "These alone bring, at most, a little standing.",
+   "app_pa": "ਇਹਨਾਂ ਨਾਲ ਹੀ ਵੱਧ ਤੋਂ ਵੱਧ ਥੋੜ੍ਹਾ ਜਿਹਾ ਮਾਣ ਮਿਲ ਸਕਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri21.line03",
+   "gurmukhi": "ਸੁਣਿਆ ਮੰਨਿਆ ਮਨਿ ਕੀਤਾ ਭਾਉ ॥",
+   "app_en": "Listen, receive the teaching and give love a place within.",
+   "app_pa": "ਸੁਣੋ, ਸਿੱਖਿਆ ਨੂੰ ਮੰਨੋ ਅਤੇ ਮਨ ਵਿੱਚ ਪਿਆਰ ਵਸਾਓ।",
+   "observations": [
+    {
+     "kind": "misreading",
+     "severity": "S3",
+     "note": "Past-tense description (ਸੁਣਿਆ ਮੰਨਿਆ … ਕੀਤਾ) rendered as an instruction (\"Listen, receive…\")."
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri21.line04",
+   "gurmukhi": "ਅੰਤਰਗਤਿ ਤੀਰਥਿ ਮਲਿ ਨਾਉ ॥",
+   "app_en": "In this way, bathe deeply at the inward pilgrimage-place.",
+   "app_pa": "ਇਸ ਤਰ੍ਹਾਂ ਅੰਦਰਲੇ ਤੀਰਥ ਉੱਤੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਇਸ਼ਨਾਨ ਹੁੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri21.line05",
+   "gurmukhi": "ਸਭਿ ਗੁਣ ਤੇਰੇ ਮੈ ਨਾਹੀ ਕੋਇ ॥",
+   "app_en": "Every virtue is Yours; I claim none as my own.",
+   "app_pa": "ਸਾਰੇ ਗੁਣ ਤੇਰੇ ਹਨ; ਮੈਂ ਕਿਸੇ ਨੂੰ ਆਪਣਾ ਕਰਕੇ ਨਹੀਂ ਜਤਾਉਂਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri21.line06",
+   "gurmukhi": "ਵਿਣੁ ਗੁਣ ਕੀਤੇ ਭਗਤਿ ਨ ਹੋਇ ॥",
+   "app_en": "Without virtues taking root, devotion does not take shape.",
+   "app_pa": "ਗੁਣ ਪੈਦਾ ਹੋਏ ਬਿਨਾ ਭਗਤੀ ਦਾ ਜੀਵਨ ਨਹੀਂ ਬਣਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line01",
+   "gurmukhi": "ਕਰਮ ਖੰਡ ਕੀ ਬਾਣੀ ਜੋਰੁ ॥",
+   "app_en": "The realm of grace is characterized by strength.",
+   "app_pa": "ਮਿਹਰ ਦੇ ਕਰਮ ਖੰਡ ਦੀ ਪਛਾਣ ਬਲ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line02",
+   "gurmukhi": "ਤਿਥੈ ਹੋਰੁ ਨ ਕੋਈ ਹੋਰੁ ॥",
+   "app_en": "There, no competing other holds the heart.",
+   "app_pa": "ਉੱਥੇ ਮਨ ਵਿੱਚ ਹੋਰ ਕਿਸੇ ਦੀ ਵੱਖਰੀ ਹਕੂਮਤ ਨਹੀਂ ਰਹਿੰਦੀ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line03",
+   "gurmukhi": "ਤਿਥੈ ਜੋਧ ਮਹਾਬਲ ਸੂਰ ॥",
+   "app_en": "There are great warriors, strong and courageous.",
+   "app_pa": "ਉੱਥੇ ਜੋਧੇ, ਮਹਾਬਲੀ ਅਤੇ ਸੂਰਮੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line04",
+   "gurmukhi": "ਤਿਨ ਮਹਿ ਰਾਮੁ ਰਹਿਆ ਭਰਪੂਰ ॥",
+   "app_en": "The Divine fills them through and through.",
+   "app_pa": "ਉਹਨਾਂ ਵਿੱਚ ਰਾਮ ਪੂਰੀ ਤਰ੍ਹਾਂ ਵੱਸਿਆ ਹੋਇਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line05",
+   "gurmukhi": "ਤਿਥੈ ਸੀਤੋ ਸੀਤਾ ਮਹਿਮਾ ਮਾਹਿ ॥",
+   "app_en": "They are thoroughly woven into divine praise.",
+   "app_pa": "ਉਹ ਮਹਿਮਾ ਵਿੱਚ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਰੋਏ ਹੋਏ ਹਨ।",
+   "observations": [
+    {
+     "kind": "alt_reading_not_noted",
+     "severity": "S3",
+     "note": "ਸੀਤੋ ਸੀਤਾ given one reading only (\"woven\"); other traditional readings are not mentioned."
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line06",
+   "gurmukhi": "ਤਾ ਕੇ ਰੂਪ ਨ ਕਥਨੇ ਜਾਹਿ ॥",
+   "app_en": "Their beauty cannot be fully described.",
+   "app_pa": "ਉਹਨਾਂ ਦੇ ਰੂਪ ਦੀ ਸੋਭਾ ਪੂਰੀ ਕਹੀ ਨਹੀਂ ਜਾਂਦੀ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line07",
+   "gurmukhi": "ਨਾ ਓਹਿ ਮਰਹਿ ਨ ਠਾਗੇ ਜਾਹਿ ॥",
+   "app_en": "They are neither spiritually overcome nor deceived—",
+   "app_pa": "ਉਹ ਨਾ ਆਤਮਕ ਤੌਰ ਉੱਤੇ ਮਰਦੇ ਹਨ, ਨਾ ਠੱਗੇ ਜਾਂਦੇ ਹਨ—",
+   "observations": [
+    {
+     "kind": "en_pa_divergence",
+     "severity": "S3",
+     "note": "English \"spiritually overcome\" is softer than the Punjabi \"ਆਤਮਕ ਤੌਰ ਉੱਤੇ ਮਰਦੇ\"."
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line08",
+   "gurmukhi": "ਜਿਨ ਕੈ ਰਾਮੁ ਵਸੈ ਮਨ ਮਾਹਿ ॥",
+   "app_en": "Those whose hearts are home to the Divine.",
+   "app_pa": "ਜਿਨ੍ਹਾਂ ਦੇ ਮਨ ਵਿੱਚ ਰਾਮ ਵੱਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line09",
+   "gurmukhi": "ਤਿਥੈ ਭਗਤ ਵਸਹਿ ਕੇ ਲੋਅ ॥",
+   "app_en": "Devotees from many realms dwell there.",
+   "app_pa": "ਉੱਥੇ ਅਨੇਕ ਲੋਕਾਂ ਦੇ ਭਗਤ ਵੱਸਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line10",
+   "gurmukhi": "ਕਰਹਿ ਅਨੰਦੁ ਸਚਾ ਮਨਿ ਸੋਇ ॥",
+   "app_en": "They rejoice with the enduring One held within.",
+   "app_pa": "ਮਨ ਵਿੱਚ ਸੱਚੇ ਇੱਕ ਨੂੰ ਰੱਖ ਕੇ ਉਹ ਆਨੰਦ ਕਰਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line11",
+   "gurmukhi": "ਸਚ ਖੰਡਿ ਵਸੈ ਨਿਰੰਕਾਰੁ ॥",
+   "app_en": "In the realm of Truth dwells the Formless One.",
+   "app_pa": "ਸਚ ਖੰਡ ਵਿੱਚ ਨਿਰੰਕਾਰ ਵੱਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line12",
+   "gurmukhi": "ਕਰਿ ਕਰਿ ਵੇਖੈ ਨਦਰਿ ਨਿਹਾਲ ॥",
+   "app_en": "Creating and beholding, the One blesses with a gracious gaze.",
+   "app_pa": "ਰਚ ਕੇ ਸੰਭਾਲਦਾ ਹੈ ਅਤੇ ਮਿਹਰ ਦੀ ਨਜ਼ਰ ਨਾਲ ਨਿਹਾਲ ਕਰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line13",
+   "gurmukhi": "ਤਿਥੈ ਖੰਡ ਮੰਡਲ ਵਰਭੰਡ ॥",
+   "app_en": "There are regions, worlds and universes.",
+   "app_pa": "ਉੱਥੇ ਖੰਡ, ਮੰਡਲ ਅਤੇ ਬ੍ਰਹਿਮੰਡ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line14",
+   "gurmukhi": "ਜੇ ਕੋ ਕਥੈ ਤ ਅੰਤ ਨ ਅੰਤ ॥",
+   "app_en": "Describe them as one may, no final end appears.",
+   "app_pa": "ਜਿੰਨਾ ਵੀ ਉਹਨਾਂ ਦਾ ਵਰਣਨ ਕਰੀਏ, ਅੰਤ ਨਹੀਂ ਪੈਂਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line15",
+   "gurmukhi": "ਤਿਥੈ ਲੋਅ ਲੋਅ ਆਕਾਰ ॥",
+   "app_en": "World upon world unfolds in many forms.",
+   "app_pa": "ਲੋਕਾਂ ਤੋਂ ਅੱਗੇ ਹੋਰ ਲੋਕ ਅਤੇ ਅਨੇਕ ਆਕਾਰ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line16",
+   "gurmukhi": "ਜਿਵ ਜਿਵ ਹੁਕਮੁ ਤਿਵੈ ਤਿਵ ਕਾਰ ॥",
+   "app_en": "As hukam is, so the activity unfolds.",
+   "app_pa": "ਜਿਵੇਂ ਹੁਕਮ ਹੁੰਦਾ ਹੈ, ਤਿਵੇਂ ਹੀ ਕਾਰ ਚੱਲਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line17",
+   "gurmukhi": "ਵੇਖੈ ਵਿਗਸੈ ਕਰਿ ਵੀਚਾਰੁ ॥",
+   "app_en": "The One beholds, considers and rejoices.",
+   "app_pa": "ਉਹ ਵੇਖਦਾ, ਵਿਚਾਰਦਾ ਅਤੇ ਪ੍ਰਸੰਨ ਹੁੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri37.line18",
+   "gurmukhi": "ਨਾਨਕ ਕਥਨਾ ਕਰੜਾ ਸਾਰੁ ॥੩੭॥",
+   "app_en": "Nanak: describing this is as hard as iron.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਇਸ ਨੂੰ ਕਹਿਣਾ ਲੋਹੇ ਵਰਗਾ ਕਰੜਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line01",
+   "gurmukhi": "ਜਤੁ ਪਾਹਾਰਾ ਧੀਰਜੁ ਸੁਨਿਆਰੁ ॥",
+   "app_en": "Make self-restraint the workshop and patience the goldsmith.",
+   "app_pa": "ਜਤ ਨੂੰ ਕਾਰਖਾਨਾ ਅਤੇ ਧੀਰਜ ਨੂੰ ਸੁਨਿਆਰਾ ਬਣਾਓ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line02",
+   "gurmukhi": "ਅਹਰਣਿ ਮਤਿ ਵੇਦੁ ਹਥੀਆਰੁ ॥",
+   "app_en": "Let discernment be the anvil and knowledge the shaping tool.",
+   "app_pa": "ਮਤ ਅਹਰਣ ਬਣੇ ਅਤੇ ਗਿਆਨ ਘੜਨ ਵਾਲਾ ਹਥਿਆਰ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line03",
+   "gurmukhi": "ਭਉ ਖਲਾ ਅਗਨਿ ਤਪ ਤਾਉ ॥",
+   "app_en": "Let reverence be the bellows, and sustained discipline the fire.",
+   "app_pa": "ਭਉ ਧੌਂਕਣੀ ਬਣੇ ਅਤੇ ਘਾਲ ਦੀ ਤਪਸ਼ ਅੱਗ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line04",
+   "gurmukhi": "ਭਾਂਡਾ ਭਾਉ ਅੰਮ੍ਰਿਤੁ ਤਿਤੁ ਢਾਲਿ ॥",
+   "app_en": "Make love the vessel; pour the life-giving nectar into it.",
+   "app_pa": "ਪਿਆਰ ਨੂੰ ਭਾਂਡਾ ਬਣਾਓ ਅਤੇ ਉਸ ਵਿੱਚ ਅੰਮ੍ਰਿਤ ਢਾਲੋ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line05",
+   "gurmukhi": "ਘੜੀਐ ਸਬਦੁ ਸਚੀ ਟਕਸਾਲ ॥",
+   "app_en": "The Shabad takes shape in this true mint of living.",
+   "app_pa": "ਜੀਵਨ ਦੀ ਇਸ ਸੱਚੀ ਟਕਸਾਲ ਵਿੱਚ ਸਬਦ ਦੀ ਘਾੜਤ ਘੜੀ ਜਾਂਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line06",
+   "gurmukhi": "ਜਿਨ ਕਉ ਨਦਰਿ ਕਰਮੁ ਤਿਨ ਕਾਰ ॥",
+   "app_en": "Those receiving grace take up this work.",
+   "app_pa": "ਜਿਨ੍ਹਾਂ ਉੱਤੇ ਮਿਹਰ ਤੇ ਬਖ਼ਸ਼ਸ਼ ਹੈ, ਉਹ ਇਹ ਕਾਰ ਕਰਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "pauri38.line07",
+   "gurmukhi": "ਨਾਨਕ ਨਦਰੀ ਨਦਰਿ ਨਿਹਾਲ ॥੩੮॥",
+   "app_en": "Nanak: the gracious One’s regard brings fulfilment.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਮਿਹਰ ਵਾਲੇ ਦੀ ਨਜ਼ਰ ਨਿਹਾਲ ਕਰ ਦਿੰਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line01",
+   "gurmukhi": "ਸਲੋਕੁ ॥",
+   "app_en": "Salok — the heading of the closing verse.",
+   "app_pa": "ਸਲੋਕੁ — ਅੰਤਲੀ ਬਾਣੀ ਦਾ ਸਿਰਲੇਖ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line02",
+   "gurmukhi": "ਪਵਣੁ ਗੁਰੂ ਪਾਣੀ ਪਿਤਾ ਮਾਤਾ ਧਰਤਿ ਮਹਤੁ ॥",
+   "app_en": "Air is named as guru, water as father, and the great earth as mother.",
+   "app_pa": "ਪਵਣ ਨੂੰ ਗੁਰੂ, ਪਾਣੀ ਨੂੰ ਪਿਤਾ ਅਤੇ ਵੱਡੀ ਧਰਤੀ ਨੂੰ ਮਾਤਾ ਕਿਹਾ ਗਿਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line03",
+   "gurmukhi": "ਦਿਵਸੁ ਰਾਤਿ ਦੁਇ ਦਾਈ ਦਾਇਆ ਖੇਲੈ ਸਗਲ ਜਗਤੁ ॥",
+   "app_en": "Day and night are the two carers in whose care the whole world plays.",
+   "app_pa": "ਦਿਨ ਅਤੇ ਰਾਤ ਦੋ ਪਾਲਣਹਾਰ ਹਨ, ਜਿਨ੍ਹਾਂ ਦੀ ਗੋਦ ਵਿੱਚ ਸਾਰਾ ਜਗਤ ਖੇਡਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line04",
+   "gurmukhi": "ਚੰਗਿਆਈਆ ਬੁਰਿਆਈਆ ਵਾਚੈ ਧਰਮੁ ਹਦੂਰਿ ॥",
+   "app_en": "Good and harmful deeds are read by Dharam in the Divine presence.",
+   "app_pa": "ਹਜ਼ੂਰੀ ਵਿੱਚ ਧਰਮ ਚੰਗੇ ਅਤੇ ਮੰਦੇ ਕੀਤੇ ਕੰਮਾਂ ਦਾ ਲੇਖਾ ਪੜ੍ਹਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line05",
+   "gurmukhi": "ਕਰਮੀ ਆਪੋ ਆਪਣੀ ਕੇ ਨੇੜੈ ਕੇ ਦੂਰਿ ॥",
+   "app_en": "Through their own deeds, some are near and some remain far.",
+   "app_pa": "ਆਪਣੇ-ਆਪਣੇ ਕਰਮਾਂ ਅਨੁਸਾਰ ਕੋਈ ਨੇੜੇ ਹੁੰਦਾ ਹੈ ਤੇ ਕੋਈ ਦੂਰ ਰਹਿੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line06",
+   "gurmukhi": "ਜਿਨੀ ਨਾਮੁ ਧਿਆਇਆ ਗਏ ਮਸਕਤਿ ਘਾਲਿ ॥",
+   "app_en": "Those who dwelt on Naam departed after a life of earnest effort.",
+   "app_pa": "ਜਿਨ੍ਹਾਂ ਨੇ ਨਾਮ ਧਿਆਇਆ, ਉਹ ਮਿਹਨਤ-ਘਾਲ ਕਰਕੇ ਇੱਥੋਂ ਗਏ।",
+   "observations": []
+  },
+  {
+   "set": "A",
+   "part": "japji",
+   "id": "closing.line07",
+   "gurmukhi": "ਨਾਨਕ ਤੇ ਮੁਖ ਉਜਲੇ ਕੇਤੀ ਛੁਟੀ ਨਾਲਿ ॥੧॥",
+   "app_en": "Nanak: their faces are radiant, and many others are released along with them.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਉਹਨਾਂ ਦੇ ਮੁਖ ਉਜਲੇ ਹਨ ਅਤੇ ਉਹਨਾਂ ਦੇ ਸੰਗ ਹੋਰ ਵੀ ਅਨੇਕ ਮੁਕਤ ਹੁੰਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line01",
+   "gurmukhi": "ਸੋਹਿਲਾ ਰਾਗੁ ਗਉੜੀ ਦੀਪਕੀ ਮਹਲਾ ੧",
+   "app_en": "Source heading: this is Sohila, in Raag Gauree Deepakee, attributed to Guru Nanak Sahib (Mahala 1).",
+   "app_pa": "ਇਹ ਬਾਣੀ ਦਾ ਸਿਰਲੇਖ ਹੈ: ਸੋਹਿਲਾ, ਰਾਗ ਗਉੜੀ ਦੀਪਕੀ, ਮਹਲਾ ਪਹਿਲਾ — ਗੁਰੂ ਨਾਨਕ ਸਾਹਿਬ ਜੀ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line02",
+   "gurmukhi": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+   "app_en": "The opening invocation remembers the One, approached through the grace of the True Guru.",
+   "app_pa": "ਆਰੰਭ ਵਿੱਚ ਇੱਕ ਅਕਾਲ ਪੁਰਖ ਅਤੇ ਸਤਿਗੁਰੂ ਦੀ ਕਿਰਪਾ ਰਾਹੀਂ ਉਸ ਦੀ ਪਛਾਣ ਦੀ ਯਾਦ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "Describes the invocation instead of giving it."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line03",
+   "gurmukhi": "ਜੈ ਘਰਿ ਕੀਰਤਿ ਆਖੀਐ ਕਰਤੇ ਕਾ ਹੋਇ ਬੀਚਾਰੋ ॥",
+   "app_en": "Where the Creator is praised and reflected upon, spiritual understanding is cultivated.",
+   "app_pa": "ਜਿੱਥੇ ਕਰਤਾਰ ਦੀ ਸਿਫ਼ਤ ਅਤੇ ਵਿਚਾਰ ਹੁੰਦਾ ਹੈ, ਉੱਥੇ ਮਨ ਨੂੰ ਸਿੱਖਣ ਦਾ ਮੌਕਾ ਮਿਲਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "addition",
+     "severity": "S2",
+     "note": "Adds a main clause that is not in the line (\"spiritual understanding is cultivated\" / \"ਮਨ ਨੂੰ ਸਿੱਖਣ ਦਾ ਮੌਕਾ ਮਿਲਦਾ ਹੈ\"); the line is the opening clause of the next line."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line04",
+   "gurmukhi": "ਤਿਤੁ ਘਰਿ ਗਾਵਹੁ ਸੋਹਿਲਾ ਸਿਵਰਿਹੁ ਸਿਰਜਣਹਾਰੋ ॥੧॥",
+   "app_en": "In that place, sing the song of praise and keep the Creator in remembrance.",
+   "app_pa": "ਉਸ ਥਾਂ ਸਿਫ਼ਤ ਦਾ ਸੋਹਿਲਾ ਗਾਵੋ ਅਤੇ ਆਪਣੇ ਸਿਰਜਣਹਾਰ ਨੂੰ ਯਾਦ ਰੱਖੋ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line05",
+   "gurmukhi": "ਤੁਮ ਗਾਵਹੁ ਮੇਰੇ ਨਿਰਭਉ ਕਾ ਸੋਹਿਲਾ ॥",
+   "app_en": "Sing the joyful song of praise to the Fearless One.",
+   "app_pa": "ਮੇਰੇ ਨਿਰਭਉ ਪ੍ਰਭੂ ਦੀ ਵਡਿਆਈ ਦਾ ਸੋਹਿਲਾ ਗਾਓ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line06",
+   "gurmukhi": "ਹਉ ਵਾਰੀ ਜਿਤੁ ਸੋਹਿਲੈ ਸਦਾ ਸੁਖੁ ਹੋਇ ॥੧॥ ਰਹਾਉ ॥",
+   "app_en": "I cherish this song of praise, through which lasting spiritual peace is sought. This is the refrain.",
+   "app_pa": "ਮੈਂ ਉਸ ਸੋਹਿਲੇ ਤੋਂ ਸਦਕੇ ਜਾਂਦਾ ਹਾਂ ਜਿਸ ਨਾਲ ਟਿਕਾਊ ਆਤਮਕ ਸੁਖ ਮਿਲਦਾ ਹੈ; ਇਹ ਰਹਾਉ ਦੀ ਤੁਕ ਹੈ।",
+   "observations": [
+    {
+     "kind": "en_pa_divergence",
+     "severity": "S2",
+     "note": "ਹਉ ਵਾਰੀ → English \"I cherish\" (Punjabi correctly \"ਸਦਕੇ ਜਾਂਦਾ ਹਾਂ\"); ਸਦਾ ਸੁਖੁ ਹੋਇ → English \"is sought\" (Punjabi \"ਮਿਲਦਾ ਹੈ\"). \"This is the refrain.\" sits inside the meaning."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line07",
+   "gurmukhi": "ਨਿਤ ਨਿਤ ਜੀਅੜੇ ਸਮਾਲੀਅਨਿ ਦੇਖੈਗਾ ਦੇਵਣਹਾਰੁ ॥",
+   "app_en": "Living beings are continually cared for; the Giver watches over and sustains them.",
+   "app_pa": "ਜੀਵਾਂ ਦੀ ਨਿੱਤ ਸੰਭਾਲ ਹੁੰਦੀ ਹੈ; ਦਾਤਾਰ ਉਨ੍ਹਾਂ ਦੀ ਦੇਖਭਾਲ ਕਰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line08",
+   "gurmukhi": "ਤੇਰੇ ਦਾਨੈ ਕੀਮਤਿ ਨਾ ਪਵੈ ਤਿਸੁ ਦਾਤੇ ਕਵਣੁ ਸੁਮਾਰੁ ॥੨॥",
+   "app_en": "Your gifts cannot be fully measured; how could we set a limit on You, the Giver?",
+   "app_pa": "ਤੇਰੀਆਂ ਦਾਤਾਂ ਦਾ ਮੁੱਲ ਪੂਰਾ ਨਹੀਂ ਪਾਇਆ ਜਾ ਸਕਦਾ; ਉਸ ਦਾਤਾਰ ਦਾ ਅੰਤ ਕੌਣ ਜਾਣ ਸਕਦਾ ਹੈ?",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line09",
+   "gurmukhi": "ਸੰਬਤਿ ਸਾਹਾ ਲਿਖਿਆ ਮਿਲਿ ਕਰਿ ਪਾਵਹੁ ਤੇਲੁ ॥",
+   "app_en": "A date has been appointed; in wedding imagery, friends gather to prepare and anoint the bride with oil.",
+   "app_pa": "ਵਿਆਹ ਦੇ ਰੂਪਕ ਵਿੱਚ ਸਾਹਾ ਮਿਥਿਆ ਗਿਆ ਹੈ; ਸਹੇਲੀਆਂ ਰਲ ਕੇ ਤੇਲ ਦੀ ਰਸਮ ਦੀ ਤਿਆਰੀ ਕਰਦੀਆਂ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line10",
+   "gurmukhi": "ਦੇਹੁ ਸਜਣ ਅਸੀਸੜੀਆ ਜਿਉ ਹੋਵੈ ਸਾਹਿਬ ਸਿਉ ਮੇਲੁ ॥੩॥",
+   "app_en": "Friends, give your blessings so that union with the Beloved Lord may come about.",
+   "app_pa": "ਹੇ ਸੱਜਣੋ, ਅਸੀਸਾਂ ਦਿਓ ਕਿ ਮੇਰਾ ਆਪਣੇ ਸਾਹਿਬ ਨਾਲ ਮਿਲਾਪ ਹੋਵੇ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line11",
+   "gurmukhi": "ਘਰਿ ਘਰਿ ਏਹੋ ਪਾਹੁਚਾ ਸਦੜੇ ਨਿਤ ਪਵੰਨਿ ॥",
+   "app_en": "The invitation reaches every home; calls to depart keep arriving.",
+   "app_pa": "ਹਰ ਘਰ ਸੱਦੇ ਪਹੁੰਚਦੇ ਹਨ; ਵਿਦਾਈ ਦਾ ਬੁਲਾਵਾ ਨਿੱਤ ਆ ਰਿਹਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila01.line12",
+   "gurmukhi": "ਸਦਣਹਾਰਾ ਸਿਮਰੀਐ ਨਾਨਕ ਸੇ ਦਿਹ ਆਵੰਨਿ ॥੪॥੧॥",
+   "app_en": "Remember the One who calls, says Nanak; our own days of departure will also come.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਸੱਦਾ ਭੇਜਣ ਵਾਲੇ ਨੂੰ ਸਿਮਰੋ, ਕਿਉਂਕਿ ਸਾਡੇ ਲਈ ਵੀ ਉਹ ਦਿਨ ਆਉਣੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line01",
+   "gurmukhi": "ਰਾਗੁ ਧਨਾਸਰੀ ਮਹਲਾ ੧ ॥",
+   "app_en": "Source heading: Raag Dhanaasree, Mahala 1, attributed to Guru Nanak Sahib.",
+   "app_pa": "ਇਹ ਸਿਰਲੇਖ ਰਾਗ ਧਨਾਸਰੀ ਅਤੇ ਮਹਲਾ ਪਹਿਲਾ — ਗੁਰੂ ਨਾਨਕ ਸਾਹਿਬ ਜੀ — ਦੱਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line02",
+   "gurmukhi": "ਗਗਨ ਮੈ ਥਾਲੁ ਰਵਿ ਚੰਦੁ ਦੀਪਕ ਬਨੇ ਤਾਰਿਕਾ ਮੰਡਲ ਜਨਕ ਮੋਤੀ ॥",
+   "app_en": "The sky is imagined as a platter, the sun and moon as lamps, and stars as jewels.",
+   "app_pa": "ਆਕਾਸ਼ ਥਾਲ, ਸੂਰਜ ਤੇ ਚੰਦ ਦੀਵੇ ਅਤੇ ਤਾਰੇ ਮੋਤੀਆਂ ਵਾਂਗ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S3",
+     "note": "\"is imagined as\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line03",
+   "gurmukhi": "ਧੂਪੁ ਮਲਆਨਲੋ ਪਵਣੁ ਚਵਰੋ ਕਰੇ ਸਗਲ ਬਨਰਾਇ ਫੂਲੰਤ ਜੋਤੀ ॥੧॥",
+   "app_en": "Fragrant air becomes incense, the wind waves the ceremonial fan, and the flowering forest joins the light-filled offering.",
+   "app_pa": "ਸੁਗੰਧੀ ਹਵਾ ਧੂਪ ਵਾਂਗ, ਪਵਣ ਚੌਰ ਵਾਂਗ ਅਤੇ ਫੁੱਲਾਂ ਨਾਲ ਭਰੇ ਬਨ ਸਿਰਜਣਹਾਰ ਦੀ ਆਰਤੀ ਦਾ ਰੂਪ ਬਣਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line04",
+   "gurmukhi": "ਕੈਸੀ ਆਰਤੀ ਹੋਇ ॥",
+   "app_en": "What an extraordinary act of praise this is!",
+   "app_pa": "ਕਿੰਨੀ ਅਦਭੁਤ ਆਰਤੀ ਦੀ ਇਹ ਤਸਵੀਰ ਹੈ!",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line05",
+   "gurmukhi": "ਭਵ ਖੰਡਨਾ ਤੇਰੀ ਆਰਤੀ ॥",
+   "app_en": "O One who frees beings from the bondage of coming and going, this vast praise is Your aarti.",
+   "app_pa": "ਹੇ ਜਨਮ-ਮਰਨ ਦੇ ਬੰਧਨ ਕੱਟਣ ਵਾਲੇ, ਇਹ ਵਿਸ਼ਾਲ ਵਡਿਆਈ ਤੇਰੀ ਆਰਤੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line06",
+   "gurmukhi": "ਅਨਹਤਾ ਸਬਦ ਵਾਜੰਤ ਭੇਰੀ ॥੧॥ ਰਹਾਉ ॥",
+   "app_en": "The unstruck sound is imagined as a great drum of praise; the refrain calls attention to the divine offering.",
+   "app_pa": "ਅਨਹਦ ਸ਼ਬਦ ਵੱਡੀ ਭੇਰੀ ਦੇ ਨਾਦ ਵਾਂਗ ਵੱਜਦਾ ਦਿਖਾਇਆ ਹੈ; ਰਹਾਉ ਆਰਤੀ ਦੇ ਭਾਵ ਉੱਤੇ ਧਿਆਨ ਦਿਵਾਉਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "\"is imagined as … the refrain calls attention to\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line07",
+   "gurmukhi": "ਸਹਸ ਤਵ ਨੈਨ ਨਨ ਨੈਨ ਹਹਿ ਤੋਹਿ ਕਉ ਸਹਸ ਮੂਰਤਿ ਨਨਾ ਏਕ ਤੋੁਹੀ ॥",
+   "app_en": "You are praised as having countless eyes, yet no one limited eye; countless forms, yet no single confining form.",
+   "app_pa": "ਤੇਰੀਆਂ ਅਣਗਿਣਤ ਅੱਖਾਂ ਤੇ ਰੂਪ ਕਹੇ ਗਏ ਹਨ, ਫਿਰ ਵੀ ਤੂੰ ਕਿਸੇ ਇੱਕ ਅੱਖ ਜਾਂ ਰੂਪ ਦੀ ਹੱਦ ਵਿੱਚ ਨਹੀਂ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S3",
+     "note": "\"You are praised as having\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line08",
+   "gurmukhi": "ਸਹਸ ਪਦ ਬਿਮਲ ਨਨ ਏਕ ਪਦ ਗੰਧ ਬਿਨੁ ਸਹਸ ਤਵ ਗੰਧ ਇਵ ਚਲਤ ਮੋਹੀ ॥੨॥",
+   "app_en": "Countless pure feet and perceptions are Yours, yet You are not restricted to one physical foot or sense of smell; this wonder captivates the speaker.",
+   "app_pa": "ਅਨੇਕ ਪਵਿੱਤਰ ਚਰਨ ਅਤੇ ਸੁਗੰਧ ਦੇ ਅਨੁਭਵ ਤੇਰੇ ਦੱਸੇ ਹਨ, ਪਰ ਤੂੰ ਇੱਕ ਸਰੀਰਕ ਚਰਨ ਜਾਂ ਇੰਦਰੀ ਦੀ ਹੱਦ ਵਿੱਚ ਨਹੀਂ; ਇਹ ਅਚਰਜ ਮਨ ਨੂੰ ਮੋਹ ਲੈਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "Guru Sahib referred to as \"the speaker\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line09",
+   "gurmukhi": "ਸਭ ਮਹਿ ਜੋਤਿ ਜੋਤਿ ਹੈ ਸੋਇ ॥",
+   "app_en": "The One Divine Light is present within everyone.",
+   "app_pa": "ਸਭ ਦੇ ਅੰਦਰ ਉਸ ਇੱਕ ਪ੍ਰਭੂ ਦੀ ਜੋਤਿ ਮੌਜੂਦ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line10",
+   "gurmukhi": "ਤਿਸ ਦੈ ਚਾਨਣਿ ਸਭ ਮਹਿ ਚਾਨਣੁ ਹੋਇ ॥",
+   "app_en": "Through that Light, light shines within all beings.",
+   "app_pa": "ਉਸ ਦੀ ਜੋਤਿ ਦੇ ਚਾਨਣ ਨਾਲ ਸਭ ਜੀਵਾਂ ਵਿੱਚ ਚਾਨਣ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line11",
+   "gurmukhi": "ਗੁਰ ਸਾਖੀ ਜੋਤਿ ਪਰਗਟੁ ਹੋਇ ॥",
+   "app_en": "Through the Guru’s teaching and witness, that Light becomes known or revealed.",
+   "app_pa": "ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ ਤੇ ਸਾਖੀ ਰਾਹੀਂ ਉਹ ਜੋਤਿ ਸਮਝ ਵਿੱਚ ਪਰਗਟ ਹੁੰਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line12",
+   "gurmukhi": "ਜੋ ਤਿਸੁ ਭਾਵੈ ਸੁ ਆਰਤੀ ਹੋਇ ॥੩॥",
+   "app_en": "What pleases the Divine is the true aarti, the worthy act of praise.",
+   "app_pa": "ਜੋ ਪ੍ਰਭੂ ਨੂੰ ਭਾਉਂਦਾ ਹੈ, ਉਹੀ ਸੱਚੀ ਆਰਤੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line13",
+   "gurmukhi": "ਹਰਿ ਚਰਣ ਕਵਲ ਮਕਰੰਦ ਲੋਭਿਤ ਮਨੋ ਅਨਦਿਨੋੁ ਮੋਹਿ ਆਹੀ ਪਿਆਸਾ ॥",
+   "app_en": "My mind longs constantly for the nectar of the lotus-like Divine feet.",
+   "app_pa": "ਮੇਰਾ ਮਨ ਪ੍ਰਭੂ ਦੇ ਕਮਲ-ਚਰਨਾਂ ਦੇ ਰਸ ਲਈ ਦਿਨ-ਰਾਤ ਤਰਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila03.line14",
+   "gurmukhi": "ਕ੍ਰਿਪਾ ਜਲੁ ਦੇਹਿ ਨਾਨਕ ਸਾਰਿੰਗ ਕਉ ਹੋਇ ਜਾ ਤੇ ਤੇਰੈ ਨਾਇ ਵਾਸਾ ॥੪॥੩॥",
+   "app_en": "Grant the water of compassion to this thirsty bird-like soul, says Nanak, so that it may abide in Your Naam.",
+   "app_pa": "ਨਾਨਕ ਬੇਨਤੀ ਕਰਦੇ ਹਨ: ਤ੍ਰਿਸ਼ਨਾਤੁਰ ਸਾਰਿੰਗ ਵਾਂਗ ਇਸ ਮਨ ਨੂੰ ਕਿਰਪਾ ਦਾ ਜਲ ਦੇਹੋ ਤਾਂ ਜੋ ਇਹ ਤੇਰੇ ਨਾਮ ਵਿੱਚ ਟਿਕੇ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line01",
+   "gurmukhi": "ਰਾਗੁ ਗਉੜੀ ਪੂਰਬੀ ਮਹਲਾ ੫ ॥",
+   "app_en": "Source heading: Raag Gauree Poorbee, Mahala 5, attributed to Guru Arjan Sahib.",
+   "app_pa": "ਇਹ ਸਿਰਲੇਖ ਰਾਗ ਗਉੜੀ ਪੂਰਬੀ ਅਤੇ ਮਹਲਾ ਪੰਜਵਾਂ — ਗੁਰੂ ਅਰਜਨ ਸਾਹਿਬ ਜੀ — ਦੱਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line02",
+   "gurmukhi": "ਕਰਉ ਬੇਨੰਤੀ ਸੁਣਹੁ ਮੇਰੇ ਮੀਤਾ ਸੰਤ ਟਹਲ ਕੀ ਬੇਲਾ ॥",
+   "app_en": "Listen, friends: this is the time to serve with humility.",
+   "app_pa": "ਸੁਣੋ ਮਿੱਤਰੋ, ਇਹ ਸੇਵਾ ਦਾ ਵੇਲਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S2",
+     "note": "ਕਰਉ ਬੇਨੰਤੀ (\"I make this request\") dropped; ਸੰਤ ਟਹਲ (service of the Sants) reduced to \"serve with humility\" / \"ਸੇਵਾ ਦਾ ਵੇਲਾ\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line03",
+   "gurmukhi": "ਈਹਾ ਖਾਟਿ ਚਲਹੁ ਹਰਿ ਲਾਹਾ ਆਗੈ ਬਸਨੁ ਸੁਹੇਲਾ ॥੧॥",
+   "app_en": "Earn the true spiritual profit of remembering Hari in this life, so that your onward dwelling may be peaceful.",
+   "app_pa": "ਇਸ ਜੀਵਨ ਵਿੱਚ ਹਰਿ ਨਾਮ ਦਾ ਸੱਚਾ ਲਾਹਾ ਖੱਟੋ, ਤਾਂ ਜੋ ਅੱਗੇ ਦਾ ਸਫ਼ਰ ਸੁਖ ਵਾਲਾ ਹੋਵੇ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line04",
+   "gurmukhi": "ਅਉਧ ਘਟੈ ਦਿਨਸੁ ਰੈਣਾਰੇ ॥",
+   "app_en": "Our allotted span of life grows shorter as day and night pass.",
+   "app_pa": "ਦਿਨ ਅਤੇ ਰਾਤ ਦੇ ਲੰਘਣ ਨਾਲ ਜੀਵਨ ਦੀ ਅਉਧ ਘਟਦੀ ਜਾਂਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line05",
+   "gurmukhi": "ਮਨ ਗੁਰ ਮਿਲਿ ਕਾਜ ਸਵਾਰੇ ॥੧॥ ਰਹਾਉ ॥",
+   "app_en": "O mind, meet the Guru and bring the purpose of your life into order. This is the refrain.",
+   "app_pa": "ਹੇ ਮਨ, ਗੁਰੂ ਨੂੰ ਮਿਲ ਕੇ ਆਪਣੇ ਜੀਵਨ ਦਾ ਅਸਲ ਕੰਮ ਸੰਵਾਰ; ਇਹ ਰਹਾਉ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line06",
+   "gurmukhi": "ਇਹੁ ਸੰਸਾਰੁ ਬਿਕਾਰੁ ਸੰਸੇ ਮਹਿ ਤਰਿਓ ਬ੍ਰਹਮ ਗਿਆਨੀ ॥",
+   "app_en": "This world is full of entanglement, harmful impulses and doubt; spiritual wisdom helps one cross through.",
+   "app_pa": "ਇਸ ਸੰਸਾਰ ਵਿੱਚ ਵਿਕਾਰ ਅਤੇ ਸੰਸੇ ਹਨ; ਬ੍ਰਹਮ-ਗਿਆਨ ਵਾਲਾ ਮਨੁੱਖ ਇਨ੍ਹਾਂ ਤੋਂ ਪਾਰ ਹੋਣ ਦੀ ਸੇਧ ਪਾਉਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "en_pa_divergence",
+     "severity": "S2",
+     "note": "ਤਰਿਓ ਬ੍ਰਹਮ ਗਿਆਨੀ: English turns the Brahm Gyani into \"spiritual wisdom helps one cross\"; Punjabi keeps a person but weakens \"crosses over\" to \"gets guidance to cross\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line07",
+   "gurmukhi": "ਜਿਸਹਿ ਜਗਾਇ ਪੀਆਵੈ ਇਹੁ ਰਸੁ ਅਕਥ ਕਥਾ ਤਿਨਿ ਜਾਨੀ ॥੨॥",
+   "app_en": "The one awakened and given the sweetness of Divine awareness comes to know the otherwise indescribable teaching.",
+   "app_pa": "ਜਿਸ ਨੂੰ ਪ੍ਰਭੂ ਆਪ ਜਗਾ ਕੇ ਨਾਮ-ਰਸ ਦਾ ਸੁਆਦ ਦਿੰਦਾ ਹੈ, ਉਹ ਅਕਥ ਅਨੁਭਵ ਦੀ ਸਮਝ ਪਾਉਂਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line08",
+   "gurmukhi": "ਜਾ ਕਉ ਆਏ ਸੋਈ ਬਿਹਾਝਹੁ ਹਰਿ ਗੁਰ ਤੇ ਮਨਹਿ ਬਸੇਰਾ ॥",
+   "app_en": "Acquire the purpose for which you came into life: let Hari dwell within the mind through the Guru.",
+   "app_pa": "ਜਿਸ ਅਸਲ ਕੰਮ ਲਈ ਆਏ ਹੋ, ਉਸ ਦਾ ਲਾਹਾ ਲਵੋ; ਗੁਰੂ ਰਾਹੀਂ ਹਰਿ ਨੂੰ ਮਨ ਵਿੱਚ ਵਸਾਓ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line09",
+   "gurmukhi": "ਨਿਜ ਘਰਿ ਮਹਲੁ ਪਾਵਹੁ ਸੁਖ ਸਹਜੇ ਬਹੁਰਿ ਨ ਹੋਇਗੋ ਫੇਰਾ ॥੩॥",
+   "app_en": "Rest in your own true inner home and receive peace in natural poise; the verse speaks of freedom from the cycle of return.",
+   "app_pa": "ਆਪਣੇ ਨਿਜ ਘਰ ਵਿੱਚ ਸਹਜ ਦਾ ਸੁਖ ਪਾਓ; ਬਾਣੀ ਮੁੜ-ਮੁੜ ਆਉਣ ਦੇ ਚੱਕਰ ਤੋਂ ਮੁਕਤੀ ਦੀ ਤਸਵੀਰ ਦਿੰਦੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "\"the verse speaks of freedom from the cycle of return\" for a direct statement (ਬਹੁਰਿ ਨ ਹੋਇਗੋ ਫੇਰਾ)."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line10",
+   "gurmukhi": "ਅੰਤਰਜਾਮੀ ਪੁਰਖ ਬਿਧਾਤੇ ਸਰਧਾ ਮਨ ਕੀ ਪੂਰੇ ॥",
+   "app_en": "O Knower of hearts, the Creator, please receive and fulfil the sincere longing within my mind.",
+   "app_pa": "ਹੇ ਅੰਤਰਜਾਮੀ ਕਰਤਾਰ, ਮੇਰੇ ਮਨ ਦੀ ਸੱਚੀ ਸ਼ਰਧਾ ਅਤੇ ਤਾਂਘ ਨੂੰ ਕਬੂਲ ਕਰੋ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "sohila",
+   "id": "sohila05.line11",
+   "gurmukhi": "ਨਾਨਕ ਦਾਸੁ ਇਹੈ ਸੁਖੁ ਮਾਗੈ ਮੋ ਕਉ ਕਰਿ ਸੰਤਨ ਕੀ ਧੂਰੇ ॥੪॥੫॥",
+   "app_en": "Nanak asks for this joy alone: make me as humble as the dust beneath the feet of the saintly.",
+   "app_pa": "ਨਾਨਕ ਇਹੀ ਸੁਖ ਮੰਗਦੇ ਹਨ ਕਿ ਮੈਂ ਸੰਤ ਜਨਾਂ ਦੇ ਚਰਨਾਂ ਦੀ ਧੂੜ ਵਰਗਾ ਨਿਮਾਣਾ ਬਣਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand01.line01",
+   "gurmukhi": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥",
+   "app_en": "Bliss has arisen, O mother, because I have found the True Guru.",
+   "app_pa": "ਹੇ ਮਾਏ, ਸਤਿਗੁਰੂ ਮਿਲਣ ਨਾਲ ਮੇਰੇ ਅੰਦਰ ਅਨੰਦ ਹੋਇਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand01.line02",
+   "gurmukhi": "ਸਤਿਗੁਰੁ ਤ ਪਾਇਆ ਸਹਜ ਸੇਤੀ ਮਨਿ ਵਜੀਆ ਵਾਧਾਈਆ ॥",
+   "app_en": "I have found the True Guru and inward steadiness; celebration resounds in my mind.",
+   "app_pa": "ਸਤਿਗੁਰੂ ਮਿਲਣ ਨਾਲ ਮਨ ਸਹਜ ਵਿੱਚ ਟਿਕਿਆ ਹੈ ਅਤੇ ਅੰਦਰ ਖੁਸ਼ੀ ਦੀਆਂ ਵਧਾਈਆਂ ਗੂੰਜ ਰਹੀਆਂ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand01.line03",
+   "gurmukhi": "ਰਾਗ ਰਤਨ ਪਰਵਾਰ ਪਰੀਆ ਸਬਦ ਗਾਵਣ ਆਈਆ ॥",
+   "app_en": "Precious melodies and their companions are imagined arriving to sing the Guru’s Shabad.",
+   "app_pa": "ਰਾਗਾਂ ਦੇ ਰਤਨ ਤੇ ਉਨ੍ਹਾਂ ਦੇ ਸੰਗੀ ਮਨ ਵਿੱਚ ਸ਼ਬਦ ਗਾਉਣ ਆਏ ਹੋਏ ਦਿਖਾਏ ਗਏ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S3",
+     "note": "\"are imagined arriving\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand01.line04",
+   "gurmukhi": "ਸਬਦੋ ਤ ਗਾਵਹੁ ਹਰੀ ਕੇਰਾ ਮਨਿ ਜਿਨੀ ਵਸਾਇਆ ॥",
+   "app_en": "Sing the Shabad of Hari, whose remembrance has found a dwelling within the mind.",
+   "app_pa": "ਜਿਨ੍ਹਾਂ ਦੇ ਮਨ ਵਿੱਚ ਹਰਿ ਵੱਸਦਾ ਹੈ, ਉਹ ਹਰਿ ਦਾ ਸ਼ਬਦ ਗਾਉਣ।",
+   "observations": [
+    {
+     "kind": "en_pa_divergence",
+     "severity": "S2",
+     "note": "English reads ਮਨਿ ਜਿਨੀ ਵਸਾਇਆ as describing Hari; Punjabi (correctly) as the people who have enshrined the Shabad."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand01.line05",
+   "gurmukhi": "ਕਹੈ ਨਾਨਕੁ ਅਨੰਦੁ ਹੋਆ ਸਤਿਗੁਰੂ ਮੈ ਪਾਇਆ ॥੧॥",
+   "app_en": "Nanak concludes that joy has arisen because the True Guru has been found.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਸਤਿਗੁਰੂ ਮਿਲਣ ਨਾਲ ਮੇਰੇ ਅੰਦਰ ਅਨੰਦ ਜਾਗਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S3",
+     "note": "\"Nanak concludes that…\" for first-person speech."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand05.line01",
+   "gurmukhi": "ਵਾਜੇ ਪੰਚ ਸਬਦ ਤਿਤੁ ਘਰਿ ਸਭਾਗੈ ॥",
+   "app_en": "In that fortunate inner home, a fivefold music of celebration is pictured as resounding.",
+   "app_pa": "ਉਸ ਸੁਭਾਗੇ ਹਿਰਦੇ-ਘਰ ਵਿੱਚ ਮਾਨੋ ਪੰਜ ਕਿਸਮਾਂ ਦੇ ਸਾਜ਼ਾਂ ਦੀ ਸਾਂਝੀ ਧੁਨ ਵੱਜਦੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S3",
+     "note": "\"is pictured as resounding\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand05.line02",
+   "gurmukhi": "ਘਰਿ ਸਭਾਗੈ ਸਬਦ ਵਾਜੇ ਕਲਾ ਜਿਤੁ ਘਰਿ ਧਾਰੀਆ ॥",
+   "app_en": "That fortunate inner dwelling is pictured as filled with Shabad, sustained by Divine power.",
+   "app_pa": "ਉਸ ਸੁਭਾਗੇ ਹਿਰਦੇ-ਘਰ ਵਿੱਚ ਸ਼ਬਦ ਵੱਜਦਾ ਅਤੇ ਰੱਬੀ ਸ਼ਕਤੀ ਦਾ ਆਸਰਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S3",
+     "note": "\"is pictured as filled\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand05.line03",
+   "gurmukhi": "ਪੰਚ ਦੂਤ ਤੁਧੁ ਵਸਿ ਕੀਤੇ ਕਾਲੁ ਕੰਟਕੁ ਮਾਰਿਆ ॥",
+   "app_en": "The five harmful impulses are subdued and the thorn of death or fear is overcome in the poem’s image.",
+   "app_pa": "ਪੰਜ ਵਿਕਾਰਾਂ ਨੂੰ ਵੱਸ ਵਿੱਚ ਕੀਤਾ ਅਤੇ ਕਾਲ ਦੇ ਕੰਡੇ ਨੂੰ ਹਰਾਇਆ ਦੱਸਿਆ ਗਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S2",
+     "note": "ਤੁਧੁ (You — the Divine as the one who subdues the five and removes the thorn of death) is dropped; \"in the poem's image\" added."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand05.line04",
+   "gurmukhi": "ਧੁਰਿ ਕਰਮਿ ਪਾਇਆ ਤੁਧੁ ਜਿਨ ਕਉ ਸਿ ਨਾਮਿ ਹਰਿ ਕੈ ਲਾਗੇ ॥",
+   "app_en": "Those blessed through Divine grace become joined to Hari’s Naam.",
+   "app_pa": "ਜਿਨ੍ਹਾਂ ਉੱਤੇ ਧੁਰੋਂ ਕਿਰਪਾ ਹੋਈ, ਉਹ ਹਰਿ ਨਾਮ ਨਾਲ ਜੁੜੇ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand05.line05",
+   "gurmukhi": "ਕਹੈ ਨਾਨਕੁ ਤਹ ਸੁਖੁ ਹੋਆ ਤਿਤੁ ਘਰਿ ਅਨਹਦ ਵਾਜੇ ॥੫॥",
+   "app_en": "Nanak says there is profound peace in that inner home, where unstruck Shabad is heard.",
+   "app_pa": "ਨਾਨਕ ਆਖਦੇ ਹਨ: ਉਸ ਅੰਦਰਲੇ ਘਰ ਵਿੱਚ ਸੁਖ ਹੈ ਅਤੇ ਅਨਹਦ ਸ਼ਬਦ ਦੀ ਤਸਵੀਰ ਗੂੰਜਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand40.line01",
+   "gurmukhi": "ਅਨਦੁ ਸੁਣਹੁ ਵਡਭਾਗੀਹੋ ਸਗਲ ਮਨੋਰਥ ਪੂਰੇ ॥",
+   "app_en": "Listen, blessed ones, to this Anand; the heart’s longings are pictured as fulfilled.",
+   "app_pa": "ਹੇ ਵਡਭਾਗੀਓ, ਇਹ ਅਨੰਦ ਸੁਣੋ; ਮਨੋਰਥ ਪੂਰੇ ਹੋਣ ਦੀ ਭਗਤੀ-ਭਰੀ ਤਸਵੀਰ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are pictured as fulfilled\" / \"ਭਗਤੀ-ਭਰੀ ਤਸਵੀਰ ਹੈ\" for ਸਗਲ ਮਨੋਰਥ ਪੂਰੇ."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand40.line02",
+   "gurmukhi": "ਪਾਰਬ੍ਰਹਮੁ ਪ੍ਰਭੁ ਪਾਇਆ ਉਤਰੇ ਸਗਲ ਵਿਸੂਰੇ ॥",
+   "app_en": "Finding the Transcendent Divine, the poem says, removes deep anxieties and grief.",
+   "app_pa": "ਪਾਰਬ੍ਰਹਮ ਪ੍ਰਭੂ ਦੇ ਮਿਲਾਪ ਨਾਲ ਮਨ ਦੇ ਵਿਸੂਰੇ ਦੂਰ ਹੋਣ ਦੀ ਗੱਲ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"the poem says\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand40.line03",
+   "gurmukhi": "ਦੂਖ ਰੋਗ ਸੰਤਾਪ ਉਤਰੇ ਸੁਣੀ ਸਚੀ ਬਾਣੀ ॥",
+   "app_en": "Suffering, illness and burning distress are described as lifted by hearing the true Bani.",
+   "app_pa": "ਸੱਚੀ ਬਾਣੀ ਸੁਣਨ ਨਾਲ ਦੁੱਖ, ਰੋਗ ਤੇ ਸੰਤਾਪ ਦੂਰ ਹੋਣ ਦੀ ਧਾਰਮਿਕ ਅਸੀਸ ਦਿੱਤੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are described as lifted\" / \"ਧਾਰਮਿਕ ਅਸੀਸ ਦਿੱਤੀ ਹੈ\" for ਦੂਖ ਰੋਗ ਸੰਤਾਪ ਉਤਰੇ ਸੁਣੀ ਸਚੀ ਬਾਣੀ."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand40.line04",
+   "gurmukhi": "ਸੰਤ ਸਾਜਨ ਭਏ ਸਰਸੇ ਪੂਰੇ ਗੁਰ ਤੇ ਜਾਣੀ ॥",
+   "app_en": "Saintly companions become joyful, receiving understanding through the Perfect Guru.",
+   "app_pa": "ਸੰਤ ਤੇ ਸੱਜਣ ਪ੍ਰਸੰਨ ਹੋ ਜਾਂਦੇ ਅਤੇ ਪੂਰੇ ਗੁਰੂ ਰਾਹੀਂ ਸੂਝ ਪਾਂਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand40.line05",
+   "gurmukhi": "ਸੁਣਤੇ ਪੁਨੀਤ ਕਹਤੇ ਪਵਿਤੁ ਸਤਿਗੁਰੁ ਰਹਿਆ ਭਰਪੂਰੇ ॥",
+   "app_en": "Listening and speaking this Bani are praised as purifying because the True Guru is fully present.",
+   "app_pa": "ਇਸ ਬਾਣੀ ਨੂੰ ਸੁਣਨਾ ਤੇ ਕਹਿਣਾ ਨਿਰਮਲ ਕਰਨ ਵਾਲਾ ਦੱਸਿਆ ਹੈ; ਸਤਿਗੁਰੂ ਸਰਬ-ਵਿਆਪਕ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are praised as purifying\"."
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "part": "anand",
+   "id": "anand40.line06",
+   "gurmukhi": "ਬਿਨਵੰਤਿ ਨਾਨਕੁ ਗੁਰ ਚਰਣ ਲਾਗੇ ਵਾਜੇ ਅਨਹਦ ਤੂਰੇ ॥੪੦॥੧॥",
+   "app_en": "Nanak bows at the Guru’s feet, while the unstruck trumpets of joy resound in the poem.",
+   "app_pa": "ਨਾਨਕ ਗੁਰੂ ਦੇ ਚਰਨਾਂ ਨਾਲ ਜੁੜ ਕੇ ਅਨਹਦ ਤੂਰਿਆਂ ਦੀ ਖੁਸ਼ੀ ਵਾਲੀ ਤਸਵੀਰ ਦਿੰਦੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"resound in the poem\" / \"ਤਸਵੀਰ ਦਿੰਦੇ ਹਨ\"."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras01.line01",
+   "gurmukhi": "ਹਮਰੀ ਕਰੋ ਹਾਥ ਦੈ ਰੱਛਾ ॥",
+   "app_en": "An opening request for Divine protection.",
+   "app_pa": "ਪਹਿਲੀ ਤੁਕ ਵਿਚ ਰੱਬੀ ਰੱਖਿਆ ਦੀ ਬੇਨਤੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "No meaning given: \"An opening request for Divine protection.\" for ਹਮਰੀ ਕਰੋ ਹਾਥ ਦੈ ਰੱਛਾ."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras01.line02",
+   "gurmukhi": "ਪੂਰਨ ਹੋਇ ਚਿੱਤ ਕੀ ਇੱਛਾ ॥",
+   "app_en": "A prayer that heartfelt hopes may be fulfilled.",
+   "app_pa": "ਮਨ ਦੀਆਂ ਆਸਾਂ ਪੂਰੀਆਂ ਹੋਣ ਦੀ ਬੇਨਤੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "No meaning given: \"A prayer that heartfelt hopes may be fulfilled.\""
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras01.line03",
+   "gurmukhi": "ਤਵ ਚਰਨਨ ਮਨ ਰਹੈ ਹਮਾਰਾ ॥",
+   "app_en": "May my mind remain turned toward Your feet, an image of devoted refuge.",
+   "app_pa": "ਮੇਰਾ ਮਨ ਤੇਰੇ ਚਰਨਾਂ ਦੀ ਸ਼ਰਨ ਵਿਚ ਲੱਗਾ ਰਹੇ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras01.line04",
+   "gurmukhi": "ਅਪਨਾ ਜਾਨ ਕਰੋ ਪ੍ਰਤਿਪਾਰਾ ॥੧॥",
+   "app_en": "Care for me as one who belongs to You.",
+   "app_pa": "ਮੈਨੂੰ ਆਪਣਾ ਜਾਣ ਕੇ ਸੰਭਾਲੋ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras02.line01",
+   "gurmukhi": "ਹਮਰੇ ਦੁਸਟ ਸਭੈ ਤੁਮ ਘਾਵਹੁ ॥",
+   "app_en": "The speaker asks the Divine to defeat or remove those who threaten and harm.",
+   "app_pa": "ਬੇਨਤੀ ਹੈ ਕਿ ਹੇ ਪ੍ਰਭੂ, ਸਾਨੂੰ ਨੁਕਸਾਨ ਪਹੁੰਚਾਉਣ ਵਾਲੀਆਂ ਵੈਰੀ ਤਾਕਤਾਂ ਨੂੰ ਹਰਾ ਦੇਹੋ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "Guru Sahib called \"the speaker\"; ਦੁਸਟ (the wicked/enemies) turned into unnamed \"those who threaten\"."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras02.line02",
+   "gurmukhi": "ਆਪੁ ਹਾਥ ਦੈ ਮੋਹਿ ਬਚਾਵਹੁ ॥",
+   "app_en": "With Your own protecting hand, rescue me and keep me safe.",
+   "app_pa": "ਆਪਣੇ ਰੱਖਿਆ ਵਾਲੇ ਹੱਥ ਨਾਲ ਮੈਨੂੰ ਬਚਾ ਲਵੋ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras02.line03",
+   "gurmukhi": "ਸੁਖੀ ਬਸੈ ਮੋਰੋ ਪਰਿਵਾਰਾ ॥",
+   "app_en": "May my family dwell in peace and safety.",
+   "app_pa": "ਮੇਰਾ ਪਰਿਵਾਰ ਸੁਖ-ਸ਼ਾਂਤੀ ਨਾਲ ਵਸਦਾ ਰਹੇ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras02.line04",
+   "gurmukhi": "ਸੇਵਕ ਸਿੱਖਯ ਸਭੈ ਕਰਤਾਰਾ ॥੨॥",
+   "app_en": "O Creator, extend this care to the servants and Sikhs as well.",
+   "app_pa": "ਹੇ ਕਰਤਾਰ, ਆਪਣੇ ਸੇਵਕਾਂ ਅਤੇ ਸਿੱਖਾਂ ਦੀ ਵੀ ਸੰਭਾਲ ਕਰ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras03.line01",
+   "gurmukhi": "ਮੋ ਰੱਛਾ ਨਿਜੁ ਕਰ ਦੈ ਕਰਿਯੈ ॥",
+   "app_en": "Protect me through Your own hand and power, the speaker pleads.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਆਪਣੇ ਹੀ ਹੱਥ ਨਾਲ ਮੇਰੀ ਰੱਖਿਆ ਕਰ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\", the speaker pleads\"."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras03.line02",
+   "gurmukhi": "ਸਭ ਬੈਰਿਨ ਕੌ ਆਜ ਸੰਘਰਿਯੈ ॥",
+   "app_en": "May hostile and harmful opposition be brought to an end, the prayer continues.",
+   "app_pa": "ਮੇਰੇ ਨਾਲ ਵੈਰ ਤੇ ਨੁਕਸਾਨ ਕਰਨ ਵਾਲੀਆਂ ਤਾਕਤਾਂ ਦਾ ਅੰਤ ਹੋਵੇ—ਇਹ ਬੇਨਤੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\", the prayer continues\"; enemies (ਬੈਰਿਨ) turned into \"hostile and harmful opposition\"."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras03.line03",
+   "gurmukhi": "ਪੂਰਨ ਹੋਇ ਹਮਾਰੀ ਆਸਾ ॥",
+   "app_en": "May my hopes and sincere longings find completion.",
+   "app_pa": "ਮੇਰੀਆਂ ਆਸਾਂ ਅਤੇ ਮਨ ਦੀ ਸੱਚੀ ਚਾਹ ਪੂਰੀ ਹੋਵੇ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras03.line04",
+   "gurmukhi": "ਤੋਰਿ ਭਜਨ ਕੀ ਰਹੈ ਪਿਯਾਸਾ ॥੩॥",
+   "app_en": "Above all, may the thirst to remember and praise You remain within me.",
+   "app_pa": "ਸਭ ਤੋਂ ਵੱਧ ਤੇਰੇ ਭਜਨ ਦੀ ਪਿਆਸ ਮੇਰੇ ਅੰਦਰ ਸਦਾ ਬਣੀ ਰਹੇ।",
+   "observations": []
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras04.line01",
+   "gurmukhi": "ਤੁਮਹਿ ਛਾਡਿ ਕੋਈ ਅਵਰ ਨ ਧਯਾਊਂ ॥",
+   "app_en": "Apart from You, I do not turn my deepest contemplation toward another refuge.",
+   "app_pa": "ਤੇਰੇ ਬਿਨਾਂ ਮੈਂ ਹੋਰ ਕਿਸੇ ਨੂੰ ਆਪਣਾ ਅੰਤਿਮ ਆਸਰਾ ਮੰਨ ਕੇ ਨਹੀਂ ਧਿਆਉਂਦਾ।",
+   "observations": [
+    {
+     "kind": "addition",
+     "severity": "S2",
+     "note": "Adds \"deepest\" and \"refuge\" / \"ਆਪਣਾ ਅੰਤਿਮ ਆਸਰਾ ਮੰਨ ਕੇ\", qualifying the plain statement ਤੁਮਹਿ ਛਾਡਿ ਕੋਈ ਅਵਰ ਨ ਧਯਾਊਂ."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras04.line02",
+   "gurmukhi": "ਜੋ ਬਰ ਚਹੋਂ ਸੁ ਤੁਮਤੇ ਪਾਊਂ ॥",
+   "app_en": "Whatever blessing I ask for, I seek it from You.",
+   "app_pa": "ਜੋ ਵੀ ਵਰ ਮੰਗਦਾ ਹਾਂ, ਉਹ ਤੇਰੇ ਕੋਲੋਂ ਹੀ ਮੰਗਦਾ ਹਾਂ।",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S2",
+     "note": "ਪਾਊਂ (I obtain) rendered \"I seek\" / \"ਮੰਗਦਾ ਹਾਂ\"."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras04.line03",
+   "gurmukhi": "ਸੇਵਕ ਸਿੱਖਯ ਹਮਾਰੇ ਤਾਰਿਯਹਿ ॥",
+   "app_en": "Carry through danger the servants and Sikhs who rely upon You.",
+   "app_pa": "ਸਾਡੇ ਸੇਵਕਾਂ ਤੇ ਸਿੱਖਾਂ ਨੂੰ ਸੰਕਟਾਂ ਤੋਂ ਪਾਰ ਲੰਘਾ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S3",
+     "note": "English drops ਹਮਾਰੇ (my) and adds \"who rely upon You\"."
+    }
+   ]
+  },
+  {
+   "set": "D1",
+   "part": "chaupai",
+   "id": "chaupai-rehras04.line04",
+   "gurmukhi": "ਚੁਨ ਚੁਨ ਸੱਤ੍ਰੁ ਹਮਾਰੇ ਮਾਰਿਯਹਿ ॥੪॥",
+   "app_en": "The poet petitions for the defeat of every hostile force threatening his people.",
+   "app_pa": "ਕਵੀ ਆਪਣੇ ਲੋਕਾਂ ਨੂੰ ਨੁਕਸਾਨ ਦੇਣ ਵਾਲੀਆਂ ਵੈਰੀ ਤਾਕਤਾਂ ਦੇ ਨਾਸ ਦੀ ਬੇਨਤੀ ਕਰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "Guru Sahib called \"the poet\" / \"ਕਵੀ\"; ਚੁਨ ਚੁਨ ਸੱਤ੍ਰੁ … ਮਾਰਿਯਹਿ softened to \"defeat of every hostile force\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras05.line01",
+   "gurmukhi": "ਆਪੁ ਹਾਥ ਦੈ ਮੁਝੈ ਉਬਰਿਯੈ ॥",
+   "app_en": "With Your own hand, lift me up and rescue me.",
+   "app_pa": "ਆਪਣੇ ਹੱਥ ਨਾਲ ਮੈਨੂੰ ਉਬਾਰ ਕੇ ਬਚਾ ਲਵੋ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras05.line02",
+   "gurmukhi": "ਮਰਨ ਕਾਲ ਕਾ ਤ੍ਰਾਸ ਨਿਵਰਿਯੈ ॥",
+   "app_en": "May my fear at the time of death be taken away.",
+   "app_pa": "ਮੌਤ ਦੀ ਘੜੀ ਆਉਣ ਵੇਲੇ ਮੇਰਾ ਡਰ ਦੂਰ ਹੋਵੇ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras05.line03",
+   "gurmukhi": "ਹੂਜੋ ਸਦਾ ਹਮਾਰੇ ਪੱਛਾ ॥",
+   "app_en": "Always remain on my side as my support.",
+   "app_pa": "ਤੂੰ ਸਦਾ ਮੇਰਾ ਸਹਾਈ ਬਣ ਕੇ ਮੇਰੇ ਪੱਖ ਵਿੱਚ ਰਹਿ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras05.line04",
+   "gurmukhi": "ਸ੍ਰੀ ਅਸਿਧੁਜ ਜੂ ਕਰਿਯਹੁ ਰੱਛਾ ॥੫॥",
+   "app_en": "O revered Asidhuj, grant Your protection.",
+   "app_pa": "ਹੇ ਸ੍ਰੀ ਅਸਿਧੁਜ ਪ੍ਰਭੂ, ਮੇਰੀ ਰੱਖਿਆ ਕਰ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras09.line01",
+   "gurmukhi": "ਜਵਨ ਕਾਲ ਸਭ ਜਗਤ ਬਨਾਯੋ ॥",
+   "app_en": "That One created the whole world and its many forms.",
+   "app_pa": "ਉਸ ਇੱਕ ਨੇ ਇਹ ਸਾਰਾ ਜਗਤ ਰਚਿਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras09.line02",
+   "gurmukhi": "ਦੇਵ ਦੈਤ ਜੱਛਨ ਉਪਜਾਯੋ ॥",
+   "app_en": "Divine beings, adversarial beings and yakshas are also named among creation.",
+   "app_pa": "ਦੇਵ, ਦੈਤ ਅਤੇ ਜੱਖ ਵਰਗੇ ਪੁਰਾਣਕ ਪਾਤਰ ਵੀ ਉਸ ਦੀ ਰਚਨਾ ਵਿੱਚ ਗਿਣੇ ਗਏ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are also named among creation\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras09.line03",
+   "gurmukhi": "ਆਦਿ ਅੰਤਿ ਏਕੈ ਅਵਤਾਰਾ ॥",
+   "app_en": "The One alone is spoken of as present at the beginning and at the end.",
+   "app_pa": "ਆਦਿ ਤੋਂ ਅੰਤ ਤਕ ਉਹ ਇੱਕੋ ਆਸਰਾ ਮੰਨਿਆ ਗਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "en_pa_divergence",
+     "severity": "S2",
+     "note": "English \"present at the beginning and at the end\"; Punjabi \"ਇੱਕੋ ਆਸਰਾ ਮੰਨਿਆ ਗਿਆ ਹੈ\" (the one support) — they do not say the same thing, and both report rather than state."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras09.line04",
+   "gurmukhi": "ਸੋਈ ਗੁਰੂ ਸਮਝਿਯਹੁ ਹਮਾਰਾ ॥੯॥",
+   "app_en": "Know that same One as my Guru, the speaker declares.",
+   "app_pa": "ਕਵੀ ਆਖਦਾ ਹੈ: ਉਸੇ ਇੱਕ ਨੂੰ ਮੇਰਾ ਗੁਰੂ ਸਮਝੋ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"the speaker declares\" / \"ਕਵੀ ਆਖਦਾ ਹੈ\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras22.line01",
+   "gurmukhi": "ਜੋ ਕਲਿ ਕੌ ਇਕ ਬਾਰ ਧਿਐਹੈ ॥",
+   "app_en": "Whoever remembers the One even once in the difficulties of this age turns toward Divine refuge.",
+   "app_pa": "ਜੋ ਇਸ ਕਲਿਯੁਗ ਵਿੱਚ ਇੱਕ ਵਾਰ ਵੀ ਪ੍ਰਭੂ ਨੂੰ ਯਾਦ ਕਰਦਾ ਹੈ, ਉਹ ਉਸ ਦੀ ਸ਼ਰਨ ਵੱਲ ਮੁੜਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "misreading",
+     "severity": "S1",
+     "note": "ਕਲਿ ਕੌ is the object of ਧਿਐਹੈ (whoever meditates on ਕਲਿ even once); the app takes ਕਲਿ as \"in the difficulties of this age\" and adds \"turns toward Divine refuge\", which is not in the line. The reference database also spells ਕਲਿ (it differs only in ਕੋ/ਕੌ), so this is a question of meaning, not of text. Published renderings take the word as a name of the Divine. Needs scholar ruling."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras22.line02",
+   "gurmukhi": "ਤਾ ਕੇ ਕਾਲ ਨਿਕਟਿ ਨਹਿ ਐਹੈ ॥",
+   "app_en": "The poet portrays the power of death as unable to draw near that devotee.",
+   "app_pa": "ਕਵੀ ਦੀ ਭਗਤੀ-ਭਾਸ਼ਾ ਵਿੱਚ ਕਾਲ ਦੀ ਤਾਕਤ ਉਸ ਭਗਤ ਦੇ ਨੇੜੇ ਨਹੀਂ ਆਉਂਦੀ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The poet portrays…\" for ਤਾ ਕੇ ਕਾਲ ਨਿਕਟਿ ਨਹਿ ਐਹੈ."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras22.line03",
+   "gurmukhi": "ਰੱਛਾ ਹੋਇ ਤਾਹਿ ਸਭ ਕਾਲਾ ॥",
+   "app_en": "That protection is praised as available through all times.",
+   "app_pa": "ਉਸ ਰੱਖਿਆ ਨੂੰ ਹਰ ਵੇਲੇ ਦਾ ਸਹਾਰਾ ਦੱਸਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is praised as available\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras22.line04",
+   "gurmukhi": "ਦੁਸਟ ਅਰਿਸਟ ਟਰੇ ਤਤਕਾਲਾ ॥੨੨॥",
+   "app_en": "Hostility and harmful misfortune are envisioned as passing away at once.",
+   "app_pa": "ਵੈਰ ਅਤੇ ਬਿਪਤਾ ਤੁਰੰਤ ਹਟਦੇ ਹੋਏ ਦਿਖਾਏ ਗਏ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are envisioned as passing away\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras23.line01",
+   "gurmukhi": "ਕ੍ਰਿਪਾ ਦ੍ਰਿਸਟਿ ਤਨ ਜਾਹਿ ਨਿਹਰਿਹੋ ॥",
+   "app_en": "Those upon whom You look with Your merciful gaze—",
+   "app_pa": "ਜਿਨ੍ਹਾਂ ਵੱਲ ਤੂੰ ਕਿਰਪਾ ਦੀ ਨਿਗਾਹ ਨਾਲ ਤੱਕਦਾ ਹੈਂ—",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras23.line02",
+   "gurmukhi": "ਤਾਕੇ ਤਾਪ ਤਨਕ ਮਹਿ ਹਰਿਹੋ ॥",
+   "app_en": "The poem imagines their suffering and burning distress removed in a moment.",
+   "app_pa": "ਕਵੀ ਦੁੱਖ ਅਤੇ ਤਾਪ ਨੂੰ ਪਲ ਭਰ ਵਿੱਚ ਹਟਦਾ ਦਿਖਾਉਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The poem imagines…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras23.line03",
+   "gurmukhi": "ਰਿੱਧਿ ਸਿੱਧਿ ਘਰ ਮੋਂ ਸਭ ਹੋਈ ॥",
+   "app_en": "Prosperity and extraordinary gifts are described as present in that household.",
+   "app_pa": "ਰਿੱਧੀਆਂ-ਸਿੱਧੀਆਂ ਵਰਗੀਆਂ ਦਾਤਾਂ ਉਸ ਘਰ ਵਿੱਚ ਹੋਣ ਦੀ ਭਗਤੀ-ਤਸਵੀਰ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are described as present\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras23.line04",
+   "gurmukhi": "ਦੁਸਟ ਛਾਹ ਛ੍ਵੈ ਸਕੈ ਨ ਕੋਈ ॥੨੩॥",
+   "app_en": "No hostile shadow is pictured as able to touch or overwhelm them.",
+   "app_pa": "ਕੋਈ ਵੈਰੀ ਛਾਂ ਵੀ ਉਨ੍ਹਾਂ ਨੂੰ ਛੂਹ ਨਾ ਸਕੇ—ਅਜੇਹੀ ਰੱਖਿਆ ਦੀ ਤਸਵੀਰ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is pictured as able\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras24.line01",
+   "gurmukhi": "ਏਕ ਬਾਰ ਜਿਨ ਤੁਮੈਂ ਸੰਭਾਰਾ ॥",
+   "app_en": "Even once remembering You is described as turning a person toward rescue.",
+   "app_pa": "ਜਿਸ ਨੇ ਇੱਕ ਵਾਰ ਵੀ ਤੈਨੂੰ ਸਿਮਰਿਆ, ਉਸ ਨੂੰ ਤੇਰੀ ਸ਼ਰਨ ਵਿੱਚ ਆਇਆ ਦੱਸਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is described as turning a person toward rescue\" for ਏਕ ਬਾਰ ਜਿਨ ਤੁਮੈਂ ਸੰਭਾਰਾ."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras24.line02",
+   "gurmukhi": "ਕਾਲ ਫਾਸ ਤੇ ਤਾਹਿ ਉਬਾਰਾ ॥",
+   "app_en": "That one is pictured as rescued from death’s noose.",
+   "app_pa": "ਉਸ ਨੂੰ ਕਾਲ ਦੇ ਫੰਧੇ ਤੋਂ ਉਬਾਰਿਆ ਹੋਇਆ ਦਿਖਾਇਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is pictured as rescued\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras24.line03",
+   "gurmukhi": "ਜਿਨ ਨਰ ਨਾਮ ਤਿਹਾਰੋ ਕਹਾ ॥",
+   "app_en": "A person who speaks Your Name seeks its sustaining protection.",
+   "app_pa": "ਜੋ ਤੇਰਾ ਨਾਮ ਉਚਾਰਦਾ ਹੈ, ਉਹ ਉਸ ਦੇ ਸਹਾਰੇ ਦੀ ਬੇਨਤੀ ਕਰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "addition",
+     "severity": "S1",
+     "note": "\"seeks its sustaining protection\" / \"ਸਹਾਰੇ ਦੀ ਬੇਨਤੀ ਕਰਦਾ ਹੈ\" is invented; the line and the next say the one who utters the Name is kept from poverty, the wicked and suffering."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras24.line04",
+   "gurmukhi": "ਦਾਰਿਦ ਦੁਸਟ ਦੋਖ ਤੇ ਰਹਾ ॥੨੪॥",
+   "app_en": "The poet describes freedom from poverty, harm and moral wrongdoing.",
+   "app_pa": "ਕਵੀ ਦਰਿਦ੍ਰਤਾ, ਦੁਸ਼ਟਤਾ ਅਤੇ ਦੋਖ ਤੋਂ ਛੁਟਕਾਰੇ ਦੀ ਤਸਵੀਰ ਦਿੰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The poet describes…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras25.line01",
+   "gurmukhi": "ਖੜਗ ਕੇਤ ਮੈਂ ਸਰਨਿ ਤਿਹਾਰੀ ॥",
+   "app_en": "O Khargket, I come into Your refuge and seek protection.",
+   "app_pa": "ਹੇ ਖੜਗਕੇਤ ਪ੍ਰਭੂ, ਮੈਂ ਤੇਰੀ ਸ਼ਰਨ ਵਿੱਚ ਆਇਆ ਹਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras25.line02",
+   "gurmukhi": "ਆਪ ਹਾਥ ਦੈ ਲੇਹੁ ਉਬਾਰੀ ॥",
+   "app_en": "Stretch forth Your protecting hand and rescue me.",
+   "app_pa": "ਆਪਣਾ ਹੱਥ ਦੇ ਕੇ ਮੈਨੂੰ ਬਚਾ ਲਵੋ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras25.line03",
+   "gurmukhi": "ਸਰਬ ਠੌਰ ਮੋ ਹੋਹੁ ਸਹਾਈ ॥",
+   "app_en": "Be my helper in every place and every circumstance.",
+   "app_pa": "ਸਭ ਥਾਵਾਂ ਅਤੇ ਹਾਲਾਤਾਂ ਵਿੱਚ ਮੇਰਾ ਸਹਾਈ ਬਣ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-rehras25.line04",
+   "gurmukhi": "ਦੁਸਟ ਦੋਖ ਤੇ ਲੇਹੁ ਬਚਾਈ ॥੨੫॥",
+   "app_en": "Deliver me from harmful forces and the suffering they bring.",
+   "app_pa": "ਦੁਸ਼ਟ ਤਾਕਤਾਂ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਦੋਖ ਤੋਂ ਮੈਨੂੰ ਬਚਾ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long26.line01",
+   "gurmukhi": "ਕ੍ਰਿਪਾ ਕਰੀ ਹਮ ਪਰ ਜਗਮਾਤਾ ॥",
+   "app_en": "The poet speaks of compassionate grace shown to us by Jagmata, the Mother of the world.",
+   "app_pa": "ਕਵੀ ਜਗਮਾਤਾ ਵੱਲੋਂ ਸਾਡੇ ਉੱਤੇ ਕਿਰਪਾ ਹੋਣ ਦੀ ਗੱਲ ਕਰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The poet speaks of…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long26.line02",
+   "gurmukhi": "ਗ੍ਰੰਥ ਕਰਾ ਪੂਰਨ ਸੁਭ ਰਾਤਾ ॥",
+   "app_en": "Under that grace, the work or granth is described as brought to completion on an auspicious night.",
+   "app_pa": "ਉਸ ਕਿਰਪਾ ਨਾਲ ਗ੍ਰੰਥ ਨੂੰ ਸੁਭ ਰਾਤ ਵਿੱਚ ਪੂਰਾ ਕੀਤਾ ਦੱਸਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is described as brought to completion\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long26.line03",
+   "gurmukhi": "ਕਿਲਬਿਖ ਸਕਲ ਦੇਹ ਕੋ ਹਰਤਾ ॥",
+   "app_en": "The One is praised as removing the moral stains or faults of the body.",
+   "app_pa": "ਦੇਹ ਦੇ ਪਾਪ ਅਤੇ ਕਿਲਬਿਖ ਦੂਰ ਕਰਨ ਵਾਲੀ ਸ਼ਕਤੀ ਦੀ ਵਡਿਆਈ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is praised as removing\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long26.line04",
+   "gurmukhi": "ਦੁਸਟ ਦੋਖਿਯਨ ਕੋ ਛੈ ਕਰਤਾ ॥੨੬॥",
+   "app_en": "Hostile wickedness and the harm it causes are portrayed as overcome.",
+   "app_pa": "ਦੁਰਜਨਾਂ ਦੇ ਦੋਖ ਅਤੇ ਨੁਕਸਾਨ ਵਾਲੀਆਂ ਤਾਕਤਾਂ ਨੂੰ ਨਾਸ ਹੋਇਆ ਦੱਸਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are portrayed as overcome\"; the wicked (ਦੁਸਟ ਦੋਖਿਯਨ) turned into abstractions."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long27.line01",
+   "gurmukhi": "ਸ੍ਰੀ ਅਸਿਧੁਜ ਜਬ ਭਏ ਦਯਾਲਾ ॥",
+   "app_en": "When the revered Asidhuj became compassionate, says the poet, grace arrived.",
+   "app_pa": "ਸ੍ਰੀ ਅਸਿਧੁਜ ਦੇ ਦਇਆਲ ਹੋਣ ਉੱਤੇ ਕਿਰਪਾ ਪ੍ਰਗਟ ਹੋਈ ਦੱਸਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"says the poet\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long27.line02",
+   "gurmukhi": "ਪੂਰਨ ਕਰਾ ਗ੍ਰੰਥ ਤਤਕਾਲਾ ॥",
+   "app_en": "The granth was then completed without further delay.",
+   "app_pa": "ਤਦ ਗ੍ਰੰਥ ਨੂੰ ਤੁਰੰਤ ਪੂਰਾ ਕੀਤਾ ਗਿਆ—ਇਸ ਤਰ੍ਹਾਂ ਲਿਖਿਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long27.line03",
+   "gurmukhi": "ਮਨ ਬਾਂਛਤ ਫਲ ਪਾਵੈ ਸੋਈ ॥",
+   "app_en": "The speaker declares that a sincere person receives the fruit longed for in the mind.",
+   "app_pa": "ਮਨ ਦੀ ਤਾਂਘ ਵਾਲਾ ਫਲ ਮਿਲਣ ਦੀ ਭਗਤੀ-ਭਰੀ ਗੱਲ ਕੀਤੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The speaker declares…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long27.line04",
+   "gurmukhi": "ਦੂਖ ਨ ਤਿਸੈ ਬਿਆਪਤ ਕੋਈ ॥੨੭॥",
+   "app_en": "The verse depicts that person as free from overwhelming suffering.",
+   "app_pa": "ਉਸ ਵਿਅਕਤੀ ਨੂੰ ਦੁੱਖ ਤੋਂ ਬਚਿਆ ਹੋਇਆ ਦਿਖਾਇਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The verse depicts…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long28.line01",
+   "gurmukhi": "ਸੁਨੈ ਗੁੰਗ ਜੋ ਯਾਹਿ ਸੁ ਰਸਨਾ ਪਾਵਈ ॥",
+   "app_en": "The poet declares that even one unable to speak may receive a voice through hearing this composition.",
+   "app_pa": "ਕਵੀ ਕਹਿੰਦਾ ਹੈ ਕਿ ਗੂੰਗਾ ਮਨੁੱਖ ਵੀ ਇਸ ਬਾਣੀ ਨੂੰ ਸੁਣ ਕੇ ਬੋਲਣ ਦੀ ਦਾਤ ਪਾ ਸਕਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The poet declares…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long28.line02",
+   "gurmukhi": "ਸੁਨੈ ਮੂੜ੍ਹ ਚਿਤ ਲਾਇ ਚਤੁਰਤਾ ਆਵਈ ॥",
+   "app_en": "One without understanding is likewise pictured as gaining wisdom by listening attentively.",
+   "app_pa": "ਧਿਆਨ ਨਾਲ ਸੁਣਨ ਵਾਲੇ ਅਣਜਾਣ ਮਨੁੱਖ ਨੂੰ ਵੀ ਸਮਝ ਆਉਣ ਦੀ ਤਸਵੀਰ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"is likewise pictured as\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long28.line03",
+   "gurmukhi": "ਦੂਖ ਦਰਦ ਭੌ ਨਿਕਟ ਨ ਤਿਨ ਨਰ ਕੇ ਰਹੈ ॥",
+   "app_en": "Pain, distress and fear are said to remain far from such a person.",
+   "app_pa": "ਉਸ ਮਨੁੱਖ ਤੋਂ ਦੁੱਖ, ਦਰਦ ਅਤੇ ਡਰ ਦੂਰ ਰਹਿਣ ਦੀ ਅਸੀਸ ਵਰਗੀ ਗੱਲ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"are said to remain far\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long28.line04",
+   "gurmukhi": "ਹੋ ਜੋ ਯਾਕੀ ਏਕ ਬਾਰ ਚੌਪਈ ਕੋ ਕਹੈ ॥੨੮॥",
+   "app_en": "The poet associates these blessings with reciting the Chaupai even once.",
+   "app_pa": "ਇਹ ਦਾਤਾਂ ਇੱਕ ਵਾਰ ਵੀ ਚੌਪਈ ਉਚਾਰਨ ਨਾਲ ਜੁੜੀਆਂ ਦੱਸੀਆਂ ਗਈਆਂ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "\"The poet associates these blessings with…\"."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long29.line01",
+   "gurmukhi": "ਸੰਬਤ ਸੱਤ੍ਰਹ ਸਹਸ ਭਣਿੱਜੈ ॥",
+   "app_en": "The poet begins stating the year, described as seventeen hundred.",
+   "app_pa": "ਕਵੀ ਸੰਮਤ ਦੀ ਗਿਣਤੀ ਦੱਸਦਾ ਹੈ, ਜਿਸ ਦੀ ਸ਼ੁਰੂਆਤ ਸਤਾਰਾਂ ਸੌ ਤੋਂ ਹੁੰਦੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "\"The poet begins stating the year\" (colophon; description is more defensible here)."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long29.line02",
+   "gurmukhi": "ਅਰਧ ਸਹਸ ਫੁਨਿ ਤੀਨਿ ਕਹਿੱਜੈ ॥",
+   "app_en": "A further half hundred and three are added in the traditional date expression.",
+   "app_pa": "ਫਿਰ ਉਸ ਵਿੱਚ ਅੱਧਾ ਸੌ ਅਤੇ ਤਿੰਨ ਜੋੜੇ ਦੱਸੇ ਗਏ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "descriptive (colophon)."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long29.line03",
+   "gurmukhi": "ਭਾਦ੍ਰਵ ਸੁਦੀ ਅਸਟਮੀ ਰਵਿ ਵਾਰਾ ॥",
+   "app_en": "The date is described as the eighth bright lunar day of Bhadon, falling on Sunday.",
+   "app_pa": "ਭਾਦੋਂ ਸੁਦੀ ਅੱਠਮੀ, ਐਤਵਾਰ—ਇਹ ਤਾਰੀਖ ਇਸ ਤੁਕ ਵਿੱਚ ਲਿਖੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "descriptive (colophon)."
+    }
+   ]
+  },
+  {
+   "set": "D2",
+   "part": "chaupai",
+   "id": "chaupai-long29.line04",
+   "gurmukhi": "ਤੀਰ ਸਤੁੱਦ੍ਰਵ ਗ੍ਰੰਥ ਸੁਧਾਰਾ ॥੨੯॥",
+   "app_en": "The text states that the granth was completed beside the river Sutlej.",
+   "app_pa": "ਸਤਲੁਜ ਦਰਿਆ ਦੇ ਕੰਢੇ ਗ੍ਰੰਥ ਸੰਪੂਰਨ ਕਰਨ ਦਾ ਜ਼ਿਕਰ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "descriptive (colophon)."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye01.line01",
+   "gurmukhi": "ਸ੍ਰਾਵਗ ਸੁੱਧ ਸਮੂਹ ਸਿਧਾਨ ਕੇ ਦੇਖਿ ਫਿਰਿਓ ਘਰ ਜੋਗ ਜਤੀ ਕੇ ॥",
+   "app_en": "The speaker has explored communities of shravaks, siddhs, yogis and practitioners of restraint, considering many ways of spiritual discipline.",
+   "app_pa": "ਕਵੀ ਨੇ ਸ਼੍ਰਾਵਕਾਂ, ਸਿੱਧਾਂ, ਜੋਗੀਆਂ ਅਤੇ ਜਤੀਆਂ ਦੇ ਅਨੇਕ ਰਾਹ ਤੇ ਡੇਰੇ ਵੇਖੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S2",
+     "note": "Guru Sahib called \"the speaker\" / \"ਕਵੀ\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye01.line02",
+   "gurmukhi": "ਸੂਰ ਸੁਰਾਰਦਨ ਸੁੱਧ ਸੁਧਾਦਿਕ ਸੰਤ ਸਮੂਹ ਅਨੇਕ ਮਤੀ ਕੇ ॥",
+   "app_en": "Valiant figures and assemblies of saints from many ways of thought also enter this wide survey.",
+   "app_pa": "ਵੱਡੇ ਸੂਰਮਿਆਂ ਅਤੇ ਵੱਖ-ਵੱਖ ਮੱਤਾਂ ਦੇ ਸੰਤਾਂ ਦੇ ਸਮੂਹਾਂ ਦਾ ਵੀ ਵਿਸ਼ਾਲ ਜ਼ਿਕਰ ਹੈ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S2",
+     "note": "ਸੁਰਾਰਦਨ and ਸੁਧਾਦਿਕ are not rendered; \"also enter this wide survey\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye01.line03",
+   "gurmukhi": "ਸਾਰੇ ਹੀ ਦੇਸ ਕੋ ਦੇਖਿ ਰਹਿਓ ਮਤ ਕੋਊ ਨ ਦੇਖੀਅਤ ਪ੍ਰਾਨਪਤੀ ਕੇ ॥",
+   "app_en": "Having looked across many lands and opinions, the poet questions whether outward paths alone disclose the Lord of life.",
+   "app_pa": "ਅਨੇਕ ਦੇਸਾਂ ਤੇ ਮੱਤਾਂ ਨੂੰ ਵੇਖ ਕੇ ਕਵੀ ਪੁੱਛਦਾ ਹੈ ਕਿ ਕੀ ਬਾਹਰਲੇ ਰਾਹ ਹੀ ਪ੍ਰਾਣਾਂ ਦੇ ਮਾਲਕ ਦੀ ਸੱਚੀ ਪਛਾਣ ਦਿੰਦੇ ਹਨ?",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S1",
+     "note": "A flat statement (I have looked everywhere and see none who belong to the Lord of life) is turned into a question about \"outward paths alone\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye01.line04",
+   "gurmukhi": "ਸ੍ਰੀ ਭਗਵਾਨ ਕੀ ਭਾਇ ਕ੍ਰਿਪਾ ਹੂ ਤੇ ਏਕ ਰਤੀ ਬਿਨੁ ਏਕ ਰਤੀ ਕੇ ॥੧॥",
+   "app_en": "Without even a tiny measure of loving Divine grace, impressive outward practices carry little spiritual weight in this comparison.",
+   "app_pa": "ਪ੍ਰਭੂ ਦੀ ਪ੍ਰੇਮ-ਭਰੀ ਕਿਰਪਾ ਦੀ ਰਤਾ ਭਰ ਸਾਂਝ ਤੋਂ ਬਿਨਾਂ ਵੱਡੇ ਕਰਮ ਵੀ ਅਸਲ ਆਤਮਕ ਮੋਲ ਨਹੀਂ ਪਾਂਦੇ।",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S1",
+     "note": "\"carry little spiritual weight in this comparison\" for \"are not worth a single ratti\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye03.line01",
+   "gurmukhi": "ਜੀਤ ਫਿਰੈ ਸਭ ਦੇਸ ਦਿਸਾਨ ਕੋ ਬਾਜਤ ਢੋਲ ਮ੍ਰਿਦੰਗ ਨਗਾਰੇ ॥",
+   "app_en": "Victorious rulers travel across the lands while great drums and kettledrums announce their triumphs.",
+   "app_pa": "ਜਿੱਤਣ ਵਾਲੇ ਰਾਜੇ ਦੇਸਾਂ ਵਿੱਚ ਫਿਰਦੇ ਹਨ ਅਤੇ ਢੋਲ, ਮ੍ਰਿਦੰਗ ਤੇ ਨਗਾਰੇ ਉਨ੍ਹਾਂ ਦੀ ਜਿੱਤ ਗੂੰਜਾਉਂਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye03.line02",
+   "gurmukhi": "ਗੁੰਜਤ ਗੂੜ ਗਜਾਨ ਕੇ ਸੁੰਦਰ ਹਿੰਸਤ ਹੈਂ ਹਯਰਾਜ ਹਜਾਰੇ ॥",
+   "app_en": "Great elephants resound, and thousands of noble horses neigh amid the spectacle of military strength.",
+   "app_pa": "ਵੱਡੇ ਹਾਥੀਆਂ ਦੀ ਗੂੰਜ ਅਤੇ ਹਜ਼ਾਰਾਂ ਘੋੜਿਆਂ ਦੀ ਹਿਣਹਿਣਾਹਟ ਫੌਜੀ ਸ਼ਾਨ ਦਾ ਸ਼ੋਰ ਬਣਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye03.line03",
+   "gurmukhi": "ਭੂਤ ਭਵਿੱਖ ਭਵਾਨ ਕੇ ਭੂਪਤ ਕਉਨੁ ਗਨੈ ਨਹੀਂ ਜਾਤ ਬਿਚਾਰੇ ॥",
+   "app_en": "Who can count the many sovereigns who ruled in the past or will be rulers in the future?",
+   "app_pa": "ਭੂਤਕਾਲ ਅਤੇ ਭਵਿੱਖ ਦੇ ਸਾਰੇ ਰਾਜਿਆਂ ਦੀ ਗਿਣਤੀ ਕੌਣ ਕਰ ਸਕਦਾ ਹੈ?",
+   "observations": []
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye03.line04",
+   "gurmukhi": "ਸ੍ਰੀ ਪਤਿ ਸ੍ਰੀ ਭਗਵਾਨ ਭਜੇ ਬਿਨੁ ਅੰਤ ਕਉ ਅੰਤ ਕੇ ਧਾਮ ਸਿਧਾਰੇ ॥੩॥",
+   "app_en": "Without devoted remembrance of the Divine, even renowned rulers eventually reach the end of mortal life.",
+   "app_pa": "ਪ੍ਰਭੂ ਦੀ ਭਗਤੀ ਤੇ ਯਾਦ ਤੋਂ ਬਿਨਾਂ ਉਹ ਨਾਮੀ ਰਾਜੇ ਵੀ ਆਖ਼ਰ ਮੌਤ ਦੇ ਘਰ ਪਹੁੰਚਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye09.line01",
+   "gurmukhi": "ਕਹਾ ਭਯੋ ਜੋ ਦੋਉ ਲੋਚਨ ਮੂੰਦ ਕੈ ਬੈਠਿ ਰਹਿਓ ਬਕ ਧਿਆਨ ਲਗਾਇਓ ॥",
+   "app_en": "What is gained merely by closing the eyes and sitting in an impressive crane-like pose of meditation?",
+   "app_pa": "ਸਿਰਫ਼ ਅੱਖਾਂ ਮੀਟ ਕੇ ਬਗਲੇ ਵਾਂਗ ਧਿਆਨ ਦੇ ਦਿਖਾਵੇ ਵਿੱਚ ਬੈਠਣ ਨਾਲ ਕੀ ਲਾਭ?",
+   "observations": []
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye09.line02",
+   "gurmukhi": "ਨ੍ਹਾਤ ਫਿਰਿਓ ਲੀਏ ਸਾਤ ਸਮੁਦ੍ਰਨਿ ਲੋਕ ਗਯੋ ਪਰਲੋਕ ਗਵਾਇਓ ॥",
+   "app_en": "A person may bathe through the seven seas yet lose the deeper purpose of this life and the life beyond.",
+   "app_pa": "ਕੋਈ ਸੱਤ ਸਮੁੰਦਰਾਂ ਵਿੱਚ ਇਸ਼ਨਾਨ ਕਰ ਆਵੇ ਪਰ ਇਸ ਲੋਕ ਅਤੇ ਪਰਲੋਕ ਦਾ ਅਸਲ ਮਕਸਦ ਗਵਾ ਬੈਠੇ।",
+   "observations": []
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye09.line03",
+   "gurmukhi": "ਬਾਸ ਕੀਓ ਬਿਖਿਆਨ ਸੋ ਬੈਠ ਕੈ ਐਸੇ ਹੀ ਐਸੇ ਸੁ ਬੈਸ ਬਿਤਾਇਓ ॥",
+   "app_en": "Someone may spend an entire lifetime caught up in external attractions or formal practice without transforming the heart.",
+   "app_pa": "ਮਨੁੱਖ ਪੂਰੀ ਉਮਰ ਬਾਹਰਲੇ ਮੋਹ ਜਾਂ ਰਸਮਾਂ ਵਿੱਚ ਬਿਤਾ ਦੇਵੇ ਪਰ ਮਨ ਅੰਦਰੋਂ ਨਾ ਬਦਲੇ।",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S2",
+     "note": "ਬਿਖਿਆਨ (vices) rendered \"external attractions or formal practice\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye09.line04",
+   "gurmukhi": "ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ ॥੯॥",
+   "app_en": "The stanza culminates in a striking affirmation that love is the way to encounter the Divine.",
+   "app_pa": "ਆਖ਼ਰੀ ਤੁਕ ਪ੍ਰੇਮ ਨੂੰ ਪ੍ਰਭੂ ਨਾਲ ਮਿਲਾਪ ਦਾ ਮੁੱਖ ਰਾਹ ਦੱਸਦੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "The best-known line of the bani (ਸਾਚੁ ਕਹੋਂ ਸੁਨ ਲੇਹੁ ਸਭੈ ਜਿਨ ਪ੍ਰੇਮ ਕੀਓ ਤਿਨ ਹੀ ਪ੍ਰਭ ਪਾਇਓ) is replaced by a description (\"The stanza culminates in a striking affirmation…\"); ਤਿਨ ਹੀ (only they) becomes \"the main way\" in Punjabi."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye10.line01",
+   "gurmukhi": "ਕਾਹੂ ਲੈ ਪਾਹਨ ਪੂਜ ਧਰਯੋ ਸਿਰ ਕਾਹੂ ਲੈ ਲਿੰਗ ਗਰੇ ਲਟਕਾਇਓ ॥",
+   "app_en": "One person places a stone object for worship while another wears a sacred emblem around the neck.",
+   "app_pa": "ਕੋਈ ਪੱਥਰ ਦੀ ਮੂਰਤ ਰੱਖ ਕੇ ਪੂਜਦਾ ਹੈ ਅਤੇ ਕੋਈ ਗਲ ਵਿੱਚ ਧਾਰਮਿਕ ਚਿੰਨ੍ਹ ਪਹਿਨਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S2",
+     "note": "ਧਰਯੋ ਸਿਰ (placed on the head) dropped; ਲਿੰਗ rendered \"sacred emblem\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye10.line02",
+   "gurmukhi": "ਕਾਹੂ ਲਖਿਓ ਹਰਿ ਅਵਾਚੀ ਦਿਸਾ ਮਹਿ ਕਾਹੂ ਪਛਾਹ ਕੋ ਸੀਸੁ ਨਿਵਾਇਓ ॥",
+   "app_en": "Some direct their worship toward one region, while others turn west and bow their heads.",
+   "app_pa": "ਕੋਈ ਇੱਕ ਦਿਸ਼ਾ ਵੱਲ ਰੱਬ ਨੂੰ ਲੱਭਦਾ ਹੈ ਤੇ ਕੋਈ ਪੱਛਮ ਵੱਲ ਮੂੰਹ ਕਰ ਕੇ ਸੀਸ ਨਿਵਾਉਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S3",
+     "note": "ਅਵਾਚੀ ਦਿਸਾ (the south) rendered \"one region\"."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye10.line03",
+   "gurmukhi": "ਕੋਉ ਬੁਤਾਨ ਕੋ ਪੂਜਤ ਹੈ ਪਸੁ ਕੋਉ ਮ੍ਰਿਤਾਨ ਕੋ ਪੂਜਨ ਧਾਇਓ ॥",
+   "app_en": "Some bow before idols; others hurry to worship images or memorials associated with the dead.",
+   "app_pa": "ਕੋਈ ਬੁੱਤਾਂ ਨੂੰ ਪੂਜਦਾ ਹੈ ਅਤੇ ਕੋਈ ਮ੍ਰਿਤਕਾਂ ਨਾਲ ਜੁੜੇ ਚਿੰਨ੍ਹਾਂ ਦੀ ਪੂਜਾ ਵੱਲ ਜਾਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "omission",
+     "severity": "S2",
+     "note": "ਪਸੁ (the rebuke) dropped."
+    }
+   ]
+  },
+  {
+   "set": "E",
+   "part": "savaiye",
+   "id": "savaiye10.line04",
+   "gurmukhi": "ਕੂਰ ਕ੍ਰਿਆ ਉਰਝਿਓ ਸਭ ਹੀ ਜਗ ਸ੍ਰੀ ਭਗਵਾਨ ਕੋ ਭੇਦੁ ਨ ਪਾਇਓ ॥੧੦॥",
+   "app_en": "The poet’s conclusion is that entanglement in empty religious display can leave people without true recognition of the Divine.",
+   "app_pa": "ਕਵੀ ਦਾ ਨਿਸਕਰਸ਼ ਹੈ ਕਿ ਖੋਖਲੇ ਕਰਮਾਂ ਵਿੱਚ ਫਸ ਕੇ ਮਨੁੱਖ ਪ੍ਰਭੂ ਦੀ ਸੱਚੀ ਪਛਾਣ ਤੋਂ ਵਾਂਝਾ ਰਹਿ ਸਕਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S1",
+     "note": "\"The poet's conclusion is that entanglement … can leave people\" for ਕੂਰ ਕ੍ਰਿਆ ਉਰਝਿਓ ਸਭ ਹੀ ਜਗ (the whole world is entangled in false ritual)."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap001.line01",
+   "gurmukhi": "ਚੱਕ੍ਰ ਚਿਹਨ ਅਰੁ ਬਰਨ ਜਾਤਿ ਅਰੁ ਪਾਤਿ ਨਹਿਨ ਜਿਹ ॥",
+   "app_en": "The Divine is not contained by emblems, social colour, caste or inherited rank.",
+   "app_pa": "ਅਕਾਲ ਪੁਰਖ ਨੂੰ ਚਿੰਨ੍ਹ, ਰੰਗ, ਜਾਤ ਜਾਂ ਪਾਤ ਦੀ ਹੱਦ ਵਿਚ ਨਹੀਂ ਬੰਨ੍ਹ ਸਕਦੇ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap001.line02",
+   "gurmukhi": "ਰੂਪ ਰੰਗ ਅਰੁ ਰੇਖ ਭੇਖ ਕੋਊ ਕਹਿ ਨ ਸਕਤਿ ਕਿਹ ॥",
+   "app_en": "No outward shape, appearance, distinguishing mark or clothing can fully depict the One.",
+   "app_pa": "ਕੋਈ ਰੂਪ, ਰੰਗ, ਨਿਸ਼ਾਨ ਜਾਂ ਭੇਖ ਉਸ ਦੀ ਪੂਰੀ ਪਛਾਣ ਨਹੀਂ ਬਣਾ ਸਕਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap001.line03",
+   "gurmukhi": "ਅਚਲ ਮੂਰਤਿ ਅਨਭਉ ਪ੍ਰਕਾਸ ਅਮਿਤੋਜਿ ਕਹਿੱਜੈ ॥",
+   "app_en": "The One is described as unchanging, self-radiant and of immeasurable splendour.",
+   "app_pa": "ਪ੍ਰਭੂ ਨੂੰ ਅਡੋਲ, ਆਪ-ਪਰਕਾਸ਼ ਅਤੇ ਅਥਾਹ ਤੇਜ ਵਾਲਾ ਦੱਸਿਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap001.line04",
+   "gurmukhi": "ਕੋਟਿ ਇੰਦ੍ਰ ਇੰਦ੍ਰਾਣ ਸਾਹੁ ਸਾਹਾਣਿ ਗਣਿਜੈ ॥",
+   "app_en": "Even countless Indras and sovereigns cannot match the sovereignty attributed to the One.",
+   "app_pa": "ਕ੍ਰੋੜਾਂ ਇੰਦਰਾਂ ਅਤੇ ਬਾਦਸ਼ਾਹਾਂ ਤੋਂ ਵੀ ਉੱਚਾ ਉਸ ਇੱਕ ਦਾ ਰੁਤਬਾ ਦਿਖਾਇਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "softened",
+     "severity": "S3",
+     "note": "\"sovereignty attributed to the One\"."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap001.line05",
+   "gurmukhi": "ਤ੍ਰਿਭਵਣ ਮਹੀਪ ਸੁਰ ਨਰ ਅਸੁਰ ਨੇਤ ਨੇਤ ਬਨ ਤ੍ਰਿਣ ਕਹਤ ॥",
+   "app_en": "The three worlds, divine beings, humans, traditional adversaries, forests and grass all fall short of describing the One’s full extent.",
+   "app_pa": "ਤਿੰਨ ਲੋਕ, ਦੇਵਤੇ, ਮਨੁੱਖ, ਪੁਰਾਣਕ ਵਿਰੋਧੀ, ਜੰਗਲ ਤੇ ਘਾਹ ਤਕ ਉਸ ਬੇਅੰਤ ਦਾ ਪੂਰਾ ਵਰਣਨ ਨਹੀਂ ਕਰ ਸਕਦੇ।",
+   "observations": [
+    {
+     "kind": "misreading",
+     "severity": "S2",
+     "note": "ਤ੍ਰਿਭਵਣ ਮਹੀਪ (Sovereign of the three worlds — an epithet) is read as \"the three worlds\" in a list; ਨੇਤ ਨੇਤ … ਕਹਤ (\"they say neti neti\") becomes \"fall short of describing\"; ਅਸੁਰ rendered \"traditional adversaries\"."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap001.line06",
+   "gurmukhi": "ਤਵ ਸਰਬ ਨਾਮ ਕਥੈ ਕਵਨ ਕਰਮ ਨਾਮ ਬਰਨਤ ਸੁਮਤਿ ॥੧॥",
+   "app_en": "Who could tell all Your names? The poet turns to action-related Divine names and the limits of understanding.",
+   "app_pa": "ਤੇਰੇ ਸਾਰੇ ਨਾਮ ਕੌਣ ਗਿਣ ਸਕਦਾ ਹੈ? ਕਵੀ ਕਰਮ-ਨਾਮ ਅਤੇ ਸਮਝ ਦੀ ਹੱਦ ਵੱਲ ਧਿਆਨ ਦਿੰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "misreading",
+     "severity": "S2",
+     "note": "ਬਰਨਤ ਸੁਮਤਿ (the wise describe [Your names by Your deeds]) rendered as \"the poet turns to … the limits of understanding\"."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap002.line01",
+   "gurmukhi": "ਨਮਸਤ੍ਵੰ ਅਕਾਲੇ ॥",
+   "app_en": "A salutation to the Timeless One.",
+   "app_pa": "ਅਕਾਲ ਨੂੰ ਨਮਸਕਾਰ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap002.line02",
+   "gurmukhi": "ਨਮਸਤ੍ਵੰ ਕ੍ਰਿਪਾਲੇ ॥",
+   "app_en": "A salutation to the Compassionate One.",
+   "app_pa": "ਕਿਰਪਾਲੂ ਨੂੰ ਨਮਸਕਾਰ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap002.line03",
+   "gurmukhi": "ਨਮਸਤੰ ਅਰੂਪੇ ॥",
+   "app_en": "A salutation to the One beyond limiting form.",
+   "app_pa": "ਰੂਪ ਦੀ ਹੱਦ ਤੋਂ ਪਰੇ ਪ੍ਰਭੂ ਨੂੰ ਨਮਸਕਾਰ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap002.line04",
+   "gurmukhi": "ਨਮਸਤੰ ਅਨੂਪੇ ॥੨॥",
+   "app_en": "A salutation to the Incomparable One.",
+   "app_pa": "ਜਿਸ ਦੀ ਤੁਲਨਾ ਨਹੀਂ, ਉਸ ਨੂੰ ਨਮਸਕਾਰ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap003.line01",
+   "gurmukhi": "ਨਮਸਤੰ ਅਭੇਖੇ ॥",
+   "app_en": "Salutation to the One not confined to any visible costume, costume-based identity or outer appearance.",
+   "app_pa": "ਉਸ ਪ੍ਰਭੂ ਨੂੰ ਨਮਸਕਾਰ ਜੋ ਕਿਸੇ ਇੱਕ ਭੇਖ ਜਾਂ ਬਾਹਰਲੇ ਰੂਪ ਵਿੱਚ ਨਹੀਂ ਬੱਝਦਾ।",
+   "observations": [
+    {
+     "kind": "awkward",
+     "severity": "S3",
+     "note": "\"visible costume, costume-based identity or outer appearance\"."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap003.line02",
+   "gurmukhi": "ਨਮਸਤੰ ਅਲੇਖੇ ॥",
+   "app_en": "Salutation to the One beyond being fully written, numbered or exhaustively described.",
+   "app_pa": "ਉਸ ਨੂੰ ਨਮਸਕਾਰ ਜਿਸ ਦਾ ਪੂਰਾ ਲੇਖਾ ਜਾਂ ਵਰਣਨ ਨਹੀਂ ਲਿਖਿਆ ਜਾ ਸਕਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap003.line03",
+   "gurmukhi": "ਨਮਸਤੰ ਅਕਾਏ ॥",
+   "app_en": "Salutation to the One not confined to a limited material body.",
+   "app_pa": "ਉਸ ਨੂੰ ਨਮਸਕਾਰ ਜੋ ਕਿਸੇ ਸੀਮਤ ਸਰੀਰ ਦੀ ਹੱਦ ਵਿੱਚ ਨਹੀਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap003.line04",
+   "gurmukhi": "ਨਮਸਤੰ ਅਜਾਏ ॥੩॥",
+   "app_en": "Salutation to the birthless One, beyond coming into existence in an ordinary way.",
+   "app_pa": "ਉਸ ਅਜਨਮੇ ਪ੍ਰਭੂ ਨੂੰ ਨਮਸਕਾਰ ਜੋ ਆਮ ਜਨਮ ਦੀ ਹੱਦ ਤੋਂ ਪਰੇ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap062.line01",
+   "gurmukhi": "ਤੇਰਾ ਜੋਰੁ ॥",
+   "app_en": "I rely on Your strength.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਮੈਨੂੰ ਤੇਰੀ ਹੀ ਸਮਰੱਥਾ ਦਾ ਆਸਰਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap062.line02",
+   "gurmukhi": "ਜਲੇ ਹੈਂ ॥",
+   "app_en": "You are present in the waters.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਜਲਾਂ ਵਿੱਚ ਵਿਆਪਕ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap062.line03",
+   "gurmukhi": "ਥਲੇ ਹੈਂ ॥",
+   "app_en": "You are present throughout the land.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਧਰਤੀ ਉੱਤੇ ਵਿਆਪਕ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap062.line04",
+   "gurmukhi": "ਅਭੀਤ ਹੈਂ ॥",
+   "app_en": "You are free from fear of any other power.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੈਨੂੰ ਕਿਸੇ ਹੋਰ ਤਾਕਤ ਦਾ ਡਰ ਨਹੀਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap062.line05",
+   "gurmukhi": "ਅਭੇ ਹੈਂ ॥੬੨॥",
+   "app_en": "Your full mystery cannot be fathomed.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੇਰਾ ਪੂਰਾ ਭੇਦ ਨਹੀਂ ਪਾਇਆ ਜਾ ਸਕਦਾ।",
+   "observations": [
+    {
+     "kind": "lexical_uncertain",
+     "severity": "S3",
+     "note": "ਅਭੇ rendered \"mystery cannot be fathomed\"; other teekas read it as \"without difference\". One reading only."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap079.line01",
+   "gurmukhi": "ਆਦਿ ਰੂਪ ਅਨਾਦਿ ਮੂਰਤਿ ਅਜੋਨਿ ਪੁਰਖ ਅਪਾਰ ॥",
+   "app_en": "You are the primal reality with no beginning, beyond birth and without limit.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਸਭ ਦਾ ਮੁੱਢ ਹੈਂ ਪਰ ਆਪ ਮੁੱਢ ਤੋਂ ਰਹਿਤ, ਜਨਮ ਤੋਂ ਪਰੇ ਅਤੇ ਬੇਅੰਤ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap079.line02",
+   "gurmukhi": "ਸਰਬ ਮਾਨ ਤ੍ਰਿਮਾਨ ਦੇਵ ਅਭੇਵ ਆਦਿ ਉਦਾਰ ॥",
+   "app_en": "Honoured throughout existence, radiant and unfathomable, You are generous from the beginning.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਸਭ ਥਾਵਾਂ ਮਾਣਯੋਗ, ਪ੍ਰਕਾਸ਼ਮਾਨ ਅਤੇ ਅਗਾਧ ਤੂੰ ਹੈਂ; ਆਦਿ ਤੋਂ ਹੀ ਉਦਾਰ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap079.line03",
+   "gurmukhi": "ਸਰਬ ਪਾਲਕ ਸਰਬ ਘਾਲਕ ਸਰਬ ਕੋ ਪੁਨਿ ਕਾਲ ॥",
+   "app_en": "You sustain all, bring all to dissolution, and are the end of every finite being.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਸਭ ਨੂੰ ਪਾਲਦਾ, ਸਭ ਨੂੰ ਸਮੇਟਦਾ ਅਤੇ ਹਰ ਨਾਸਵੰਤ ਜੀਵ ਦਾ ਅੰਤ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap079.line04",
+   "gurmukhi": "ਜੱਤ੍ਰ ਤੱਤ੍ਰ ਬਿਰਾਜਹੀ ਅਵਧੂਤ ਰੂਪ ਰਿਸਾਲ ॥੭੯॥",
+   "app_en": "You are present everywhere, unattached yet full of living richness.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਹਰ ਥਾਂ ਵਿਆਪਕ ਹੈਂ—ਨਿਰਲੇਪ ਵੀ ਅਤੇ ਰਸ ਨਾਲ ਭਰਪੂਰ ਵੀ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap096.line01",
+   "gurmukhi": "ਚੱਤ੍ਰੁ ਚੱਕ੍ਰ ਕਰਤਾ ॥",
+   "app_en": "You are the creator in every direction.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਹਰ ਦਿਸ਼ਾ ਦੀ ਸ੍ਰਿਸ਼ਟੀ ਦਾ ਕਰਤਾ ਤੂੰ ਹੀ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap096.line02",
+   "gurmukhi": "ਚੱਤ੍ਰੁ ਚੱਕ੍ਰ ਹਰਤਾ ॥",
+   "app_en": "You are the power of dissolution in every direction.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਹਰ ਦਿਸ਼ਾ ਵਿੱਚ ਸ੍ਰਿਸ਼ਟੀ ਨੂੰ ਸਮੇਟਣ ਵਾਲਾ ਤੂੰ ਹੀ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap096.line03",
+   "gurmukhi": "ਚੱਤ੍ਰੁ ਚੱਕ੍ਰ ਦਾਨੇ ॥",
+   "app_en": "Your giving reaches every direction.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੇਰੀ ਦਾਤ ਹਰ ਦਿਸ਼ਾ ਤੱਕ ਪਹੁੰਚਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap096.line04",
+   "gurmukhi": "ਚੱਤ੍ਰੁ ਚੱਕ੍ਰ ਜਾਨੇ ॥੯੬॥",
+   "app_en": "You know all that is in every direction.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਹਰ ਦਿਸ਼ਾ ਵਿੱਚ ਜੋ ਕੁਝ ਹੈ ਤੂੰ ਜਾਣਦਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap103.line01",
+   "gurmukhi": "ਕਿ ਆਛਿੱਜ ਦੇਸੈ ॥",
+   "app_en": "Your realm cannot be worn away.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੇਰਾ ਦੇਸ ਛਿਜਣ ਜਾਂ ਮੁੱਕਣ ਵਾਲਾ ਨਹੀਂ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap103.line02",
+   "gurmukhi": "ਕਿ ਆਭਿੱਜ ਭੇਸੈ ॥",
+   "app_en": "Your form cannot be broken or divided.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੇਰਾ ਸਰੂਪ ਟੁੱਟਣ ਜਾਂ ਵੰਡੇ ਜਾਣ ਵਾਲਾ ਨਹੀਂ ਹੈ।",
+   "observations": [
+    {
+     "kind": "lexical_uncertain",
+     "severity": "S2",
+     "note": "ਆਭਿੱਜ rendered \"cannot be broken or divided\" here but \"unentangled\" at 104.1 (ਆਭਿਜ) — same word, two meanings."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap103.line03",
+   "gurmukhi": "ਕਿ ਆਗੰਜ ਕਰਮੈ ॥",
+   "app_en": "Your activity cannot be brought to an end by another power.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਕੋਈ ਹੋਰ ਸ਼ਕਤੀ ਤੇਰੇ ਕਰਮ ਨੂੰ ਮੁਕਾ ਨਹੀਂ ਸਕਦੀ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap103.line04",
+   "gurmukhi": "ਕਿ ਆਭੰਜ ਭਰਮੈ ॥੧੦੩॥",
+   "app_en": "You break through deeply held delusion.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਡੂੰਘੇ ਜਮੇ ਭਰਮ ਨੂੰ ਤੋੜਨ ਵਾਲਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap104.line01",
+   "gurmukhi": "ਕਿ ਆਭਿਜ ਲੋਕੈ ॥",
+   "app_en": "You remain unentangled in the worlds You pervade.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੂੰ ਲੋਕਾਂ ਵਿੱਚ ਵਿਆਪਕ ਹੋ ਕੇ ਵੀ ਉਨ੍ਹਾਂ ਨਾਲ ਲਿਪਤ ਨਹੀਂ ਹੁੰਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap104.line02",
+   "gurmukhi": "ਕਿ ਆਦਿਤ ਸੋਕੈ ॥",
+   "app_en": "Even the sun’s great radiance can be drawn to its end by You.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਸੂਰਜ ਦਾ ਵੱਡਾ ਤੇਜ ਵੀ ਤੇਰੇ ਅਧੀਨ ਮੁੱਕ ਸਕਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap104.line03",
+   "gurmukhi": "ਕਿ ਅਵਧੂਤ ਬਰਨੈ ॥",
+   "app_en": "You are described as utterly pure and unattached.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਤੈਨੂੰ ਪਵਿੱਤਰ ਅਤੇ ਨਿਰਲੇਪ ਸਰੂਪ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "lexical_uncertain",
+     "severity": "S2",
+     "note": "ਬਰਨੈ taken as \"described\"; it is commonly read as hue/complexion (ਬਰਨ). Needs scholar ruling."
+    }
+   ]
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap104.line04",
+   "gurmukhi": "ਕਿ ਬਿਭੂਤ ਕਰਨੈ ॥੧੦੪॥",
+   "app_en": "You are the source of splendour, abundance and power.",
+   "app_pa": "ਹੇ ਪ੍ਰਭੂ, ਸੋਭਾ, ਭਰਪੂਰਤਾ ਅਤੇ ਸਮਰੱਥਾ ਦਾ ਮੂਲ ਤੂੰ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap150.line01",
+   "gurmukhi": "ਕਿ ਜ਼ਾਹਰ ਜ਼ਹੂਰ ਹੈਂ ॥",
+   "app_en": "You are manifest in wondrous revelation.",
+   "app_pa": "ਤੂੰ ਅਚਰਜ ਪ੍ਰਗਟਾਵੇ ਵਿੱਚ ਜ਼ਾਹਰ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap150.line02",
+   "gurmukhi": "ਕਿ ਹਾਜ਼ਰ ਹਜ਼ੂਰ ਹੈਂ ॥",
+   "app_en": "You are here, immediately present.",
+   "app_pa": "ਤੂੰ ਇੱਥੇ ਹੀ ਹਾਜ਼ਰ ਹਜ਼ੂਰ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap150.line03",
+   "gurmukhi": "ਹਮੇਸੁਲ ਸਲਾਮ ਹੈਂ ॥",
+   "app_en": "You remain forever whole and enduring.",
+   "app_pa": "ਤੂੰ ਸਦਾ ਸਲਾਮਤ ਅਤੇ ਕਾਇਮ ਰਹਿਣ ਵਾਲਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap150.line04",
+   "gurmukhi": "ਸਮਸਤੁਲ ਕਲਾਮ ਹੈਂ ॥੧੫੦॥",
+   "app_en": "You are present through all speech.",
+   "app_pa": "ਸਭ ਬੋਲ ਅਤੇ ਬਾਣੀ ਵਿੱਚ ਤੇਰੀ ਹਜ਼ੂਰੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap197.line01",
+   "gurmukhi": "ਨਮਸਤੁਲ ਪ੍ਰਨਾਮੇ ਸਮਸਤੁਲ ਪ੍ਰਣਾਸੇ ॥",
+   "app_en": "I bow before the One worthy of reverence, who brings all to dissolution.",
+   "app_pa": "ਬੰਦਗੀ ਜੋਗ ਅਤੇ ਸਭ ਦਾ ਅੰਤ ਕਰਨ ਵਾਲੇ ਪ੍ਰਭੂ ਅੱਗੇ ਮੈਂ ਨਿਵਦਾ ਹਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap197.line02",
+   "gurmukhi": "ਅਗੰਜੁਲ ਅਨਾਮੇ ਸਮਸਤੁਲ ਨਿਵਾਸੇ ॥",
+   "app_en": "Unconquerable and beyond any single name, You dwell in all.",
+   "app_pa": "ਅਜਿੱਤ ਅਤੇ ਕਿਸੇ ਇੱਕ ਨਾਮ ਤੋਂ ਪਰੇ ਤੂੰ ਸਭ ਵਿੱਚ ਵੱਸਦਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap197.line03",
+   "gurmukhi": "ਨ੍ਰਿਕਾਮੰ ਬਿਭੂਤੇ ਸਮਸਤੁਲ ਸਰੂਪੇ ॥",
+   "app_en": "Free of desire in Your splendour, You are present as every form.",
+   "app_pa": "ਤੇਰਾ ਪ੍ਰਤਾਪ ਕਾਮਨਾ ਤੋਂ ਰਹਿਤ ਹੈ ਅਤੇ ਸਾਰੇ ਰੂਪ ਤੇਰਾ ਹੀ ਸਰੂਪ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap197.line04",
+   "gurmukhi": "ਕੁਕਰਮੰ ਪ੍ਰਣਾਸੀ ਸੁਧਰਮੰ ਬਿਭੂਤੇ ॥੧੯੭॥",
+   "app_en": "You destroy wrongful action; righteous duty displays Your splendour.",
+   "app_pa": "ਤੂੰ ਮੰਦੇ ਕਰਮਾਂ ਦਾ ਨਾਸ ਕਰਦਾ ਹੈਂ; ਨੇਕ ਧਰਮ ਵਿੱਚ ਤੇਰਾ ਪ੍ਰਤਾਪ ਦਿਸਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap198.line01",
+   "gurmukhi": "ਸਦਾ ਸੱਚਿਦਾਨੰਦ ਸੱਤ੍ਰੰ ਪ੍ਰਣਾਸੀ ॥",
+   "app_en": "Ever truth, awareness and bliss, You destroy adversaries.",
+   "app_pa": "ਸਦਾ ਸੱਚੀ ਹੋਂਦ, ਚੇਤਨਾ ਅਤੇ ਆਨੰਦ-ਰੂਪ ਤੂੰ ਵੈਰੀਆਂ ਨੂੰ ਨਾਸ ਕਰਦਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap198.line02",
+   "gurmukhi": "ਕਰੀਮੁਲ ਕੁਨਿੰਦਾ ਸਮਸਤੁਲ ਨਿਵਾਸੀ ॥",
+   "app_en": "Gracious Creator, You dwell within all.",
+   "app_pa": "ਬਖ਼ਸ਼ਿਸ਼ ਕਰਨ ਵਾਲੇ ਰਚਨਹਾਰ, ਤੂੰ ਸਭ ਵਿੱਚ ਵੱਸਦਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap198.line03",
+   "gurmukhi": "ਅਜਾਇਬ ਬਿਭੂਤੇ ਗਜਾਇਬ ਗਨੀਮੇ ॥",
+   "app_en": "Wondrous is Your splendour; You bring wrath upon adversaries.",
+   "app_pa": "ਤੇਰਾ ਪ੍ਰਤਾਪ ਅਚਰਜ ਹੈ; ਤੂੰ ਵੈਰੀਆਂ ਉੱਤੇ ਕਹਿਰ ਲਿਆਉਣ ਵਾਲਾ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap198.line04",
+   "gurmukhi": "ਹਰੀਅੰ ਕਰੀਅੰ ਕਰੀਮਲੁ ਰਹੀਮੇ ॥੧੯੮॥",
+   "app_en": "You take away and create, generous and merciful.",
+   "app_pa": "ਤੂੰ ਹਰਨ ਵਾਲਾ ਅਤੇ ਰਚਣ ਵਾਲਾ ਹੈਂ, ਬਖ਼ਸ਼ਿਸ਼ ਅਤੇ ਰਹਿਮ ਨਾਲ ਭਰਪੂਰ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap199.line01",
+   "gurmukhi": "ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਵਰਤੀ ਚੱਤ੍ਰ ਚੱਕ੍ਰ ਭੁਗਤੇ ॥",
+   "app_en": "You pervade every quarter and hold sovereignty throughout them all.",
+   "app_pa": "ਚਹੁੰ ਪਾਸੀਂ ਤੂੰ ਵਿਆਪਕ ਹੈਂ ਅਤੇ ਹਰ ਪਾਸੇ ਤੇਰੀ ਮਾਲਕੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap199.line02",
+   "gurmukhi": "ਸੁਯੰਭਵ ਸੁਭੰ ਸਰਬਦਾ ਸਰਬ ਜੁਗਤੇ ॥",
+   "app_en": "Self-existent and beautiful, You are always joined with all.",
+   "app_pa": "ਆਪਣੇ ਆਪ ਤੋਂ ਹੋਂਦ ਵਾਲੇ ਸੁੰਦਰ ਪ੍ਰਭੂ, ਤੂੰ ਸਦਾ ਸਭ ਨਾਲ ਜੁੜਿਆ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap199.line03",
+   "gurmukhi": "ਦੁਕਾਲੰ ਪ੍ਰਣਾਸੀ ਦਿਆਲੰ ਸਰੂਪੇ ॥",
+   "app_en": "You end the anguish of birth and death, the very embodiment of compassion.",
+   "app_pa": "ਜਨਮ ਮਰਨ ਦੀ ਔਖਿਆਈ ਮਿਟਾਉਣ ਵਾਲੇ, ਤੂੰ ਦਇਆ ਦਾ ਸਰੂਪ ਹੈਂ।",
+   "observations": []
+  },
+  {
+   "set": "F",
+   "part": "jaap",
+   "id": "jaap199.line04",
+   "gurmukhi": "ਸਦਾ ਅੰਗ ਸੰਗੇ ਅਭੰਗੰ ਬਿਭੂਤੇ ॥੧੯੯॥",
+   "app_en": "You are always beside us, Your splendour unbroken.",
+   "app_pa": "ਤੂੰ ਸਦਾ ਸਾਡੇ ਅੰਗ-ਸੰਗ ਹੈਂ; ਤੇਰਾ ਪ੍ਰਤਾਪ ਅਟੁੱਟ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.salok.l01",
+   "gurmukhi": "ਸਲੋਕੁ ॥",
+   "app_en": "Salok: the introductory verse.",
+   "app_pa": "ਸਲੋਕ: ਅੱਗੇ ਆਉਣ ਵਾਲੀ ਅਸਟਪਦੀ ਦਾ ਮੁੱਢਲਾ ਪਦ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.salok.l02",
+   "gurmukhi": "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+   "app_en": "The One Divine Reality; through the True Guru's grace.",
+   "app_pa": "ਇੱਕੋ ਪਰਮ ਸੱਚ ਹੈ; ਉਸ ਦੀ ਪਛਾਣ ਸਤਿਗੁਰੂ ਦੀ ਕਿਰਪਾ ਨਾਲ ਹੁੰਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.salok.l03",
+   "gurmukhi": "ਆਦਿ ਗੁਰਏ ਨਮਹ ॥",
+   "app_en": "I offer reverence to the Guru who is primal.",
+   "app_pa": "ਆਦਿ ਤੋਂ ਮੌਜੂਦ ਗੁਰੂ ਨੂੰ ਮੇਰਾ ਨਮਸਕਾਰ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.salok.l04",
+   "gurmukhi": "ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥",
+   "app_en": "I offer reverence to the Guru present from the beginning of the ages.",
+   "app_pa": "ਜੁਗਾਂ ਦੇ ਮੁੱਢ ਤੋਂ ਮੌਜੂਦ ਗੁਰੂ ਨੂੰ ਮੇਰਾ ਨਮਸਕਾਰ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.salok.l05",
+   "gurmukhi": "ਸਤਿਗੁਰਏ ਨਮਹ ॥",
+   "app_en": "I offer reverence to the True Guru.",
+   "app_pa": "ਸੱਚੇ ਗੁਰੂ ਅੱਗੇ ਮੈਂ ਨਿਮਰਤਾ ਨਾਲ ਨਮਸਕਾਰ ਕਰਦਾ ਹਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.salok.l06",
+   "gurmukhi": "ਸ੍ਰੀ ਗੁਰਦੇਵਏ ਨਮਹ ॥੧॥",
+   "app_en": "I offer reverence to the glorious, divine Guru.",
+   "app_pa": "ਪ੍ਰਕਾਸ਼ ਦੇਣ ਵਾਲੇ ਆਦਰਯੋਗ ਗੁਰਦੇਵ ਨੂੰ ਮੇਰਾ ਨਮਸਕਾਰ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l01",
+   "gurmukhi": "ਅਸਟਪਦੀ ॥",
+   "app_en": "Ashtpadi: a sequence of eight pauris.",
+   "app_pa": "ਅਸਟਪਦੀ: ਅੱਠ ਪਉੜੀਆਂ ਵਾਲਾ ਭਾਗ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l02",
+   "gurmukhi": "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥",
+   "app_en": "May I remember the Divine, and through repeated remembrance receive peace.",
+   "app_pa": "ਮੈਂ ਪ੍ਰਭੂ ਨੂੰ ਯਾਦ ਕਰਾਂ ਅਤੇ ਉਸ ਦੀ ਯਾਦ ਵਿੱਚ ਜੁੜ ਕੇ ਸੁਖ ਪਾਵਾਂ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l03",
+   "gurmukhi": "ਕਲਿ ਕਲੇਸ ਤਨ ਮਾਹਿ ਮਿਟਾਵਉ ॥",
+   "app_en": "May conflict and distress within me come to an end.",
+   "app_pa": "ਮੇਰੇ ਅੰਦਰੋਂ ਝਗੜੇ ਵਾਲੀ ਬਿਰਤੀ ਅਤੇ ਕਲੇਸ਼ ਮਿਟ ਜਾਣ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l04",
+   "gurmukhi": "ਸਿਮਰਉ ਜਾਸੁ ਬਿਸੁੰਭਰ ਏਕੈ ॥",
+   "app_en": "May I remember the One who sustains the whole world,",
+   "app_pa": "ਮੈਂ ਉਸ ਇੱਕ ਨੂੰ ਸਿਮਰਾਂ ਜੋ ਸਾਰੇ ਸੰਸਾਰ ਦੀ ਪਾਲਣਾ ਕਰਦਾ ਹੈ,",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l05",
+   "gurmukhi": "ਨਾਮੁ ਜਪਤ ਅਗਨਤ ਅਨੇਕੈ ॥",
+   "app_en": "whose Naam is remembered by innumerable beings.",
+   "app_pa": "ਜਿਸ ਦਾ ਨਾਮ ਅਣਗਿਣਤ ਜੀਵ ਜਪਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l06",
+   "gurmukhi": "ਬੇਦ ਪੁਰਾਨ ਸਿੰਮ੍ਰਿਤਿ ਸੁਧਾਖੵਰ ॥",
+   "app_en": "The Vedas, Puranas and Smritis regard as the pure, sacred utterance—",
+   "app_pa": "ਵੇਦ, ਪੁਰਾਣ ਅਤੇ ਸਿਮ੍ਰਿਤੀਆਂ ਜਿਸ ਨੂੰ ਪਵਿੱਤਰ ਬਚਨ ਮੰਨਦੀਆਂ ਹਨ—",
+   "observations": [
+    {
+     "kind": "alt_reading_not_noted",
+     "severity": "S3",
+     "note": "Follows Prof. Sahib Singh; the other common reading (the scriptures were made from the one Word of the Name) is not mentioned."
+    }
+   ]
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l07",
+   "gurmukhi": "ਕੀਨੇ ਰਾਮ ਨਾਮ ਇਕ ਆਖੵਰ ॥",
+   "app_en": "the Naam of the one Divine.",
+   "app_pa": "ਉਹ ਇੱਕ ਅਕਾਲ ਪੁਰਖ ਦਾ ਨਾਮ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l08",
+   "gurmukhi": "ਕਿਨਕਾ ਏਕ ਜਿਸੁ ਜੀਅ ਬਸਾਵੈ ॥",
+   "app_en": "If even a little of Naam is settled within someone's heart,",
+   "app_pa": "ਜਿਸ ਦੇ ਹਿਰਦੇ ਵਿੱਚ ਪ੍ਰਭੂ ਆਪਣੀ ਯਾਦ ਦਾ ਰਤਾ ਕੁ ਅੰਸ਼ ਵੀ ਵਸਾ ਦੇਵੇ,",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l09",
+   "gurmukhi": "ਤਾ ਕੀ ਮਹਿਮਾ ਗਨੀ ਨ ਆਵੈ ॥",
+   "app_en": "that person's spiritual worth cannot be fully counted.",
+   "app_pa": "ਉਸ ਮਨੁੱਖ ਦੀ ਆਤਮਕ ਵਡਿਆਈ ਦਾ ਪੂਰਾ ਹਿਸਾਬ ਨਹੀਂ ਹੋ ਸਕਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l10",
+   "gurmukhi": "ਕਾਂਖੀ ਏਕੈ ਦਰਸ ਤੁਹਾਰੋ ॥",
+   "app_en": "Those who long for Your presence alone—",
+   "app_pa": "ਜੋ ਕੇਵਲ ਤੇਰੇ ਦਰਸ ਦੇ ਚਾਹਵਾਨ ਹਨ—",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.p01.l11",
+   "gurmukhi": "ਨਾਨਕ ਉਨ ਸੰਗਿ ਮੋਹਿ ਉਧਾਰੋ ॥੧॥",
+   "app_en": "Nanak prays: bring me across in their company.",
+   "app_pa": "ਨਾਨਕ ਬੇਨਤੀ ਕਰਦਾ ਹੈ: ਉਨ੍ਹਾਂ ਦੀ ਸੰਗਤ ਨਾਲ ਮੇਰਾ ਵੀ ਪਾਰ ਉਤਾਰਾ ਕਰ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.rahau.l01",
+   "gurmukhi": "ਸੁਖਮਨੀ ਸੁਖ ਅੰਮ੍ਰਿਤ ਪ੍ਰਭ ਨਾਮੁ ॥",
+   "app_en": "The life-giving Naam of God is Sukhmani, the treasure of peace;",
+   "app_pa": "ਪ੍ਰਭੂ ਦਾ ਜੀਵਨ ਦੇਣ ਵਾਲਾ ਨਾਮ ਸੁਖਾਂ ਦੀ ਮਣੀ ਹੈ;",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a01.rahau.l02",
+   "gurmukhi": "ਭਗਤ ਜਨਾ ਕੈ ਮਨਿ ਬਿਸ੍ਰਾਮ ॥ ਰਹਾਉ ॥",
+   "app_en": "it rests within the minds of devoted people. Pause and attend to this.",
+   "app_pa": "ਇਹ ਭਗਤਾਂ ਦੇ ਮਨ ਵਿੱਚ ਟਿਕਿਆ ਰਹਿੰਦਾ ਹੈ। ਰਹਾਉ: ਇਸ ਕੇਂਦਰੀ ਭਾਵ ਉੱਤੇ ਠਹਿਰੋ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.salok.l01",
+   "gurmukhi": "ਸਲੋਕੁ ॥",
+   "app_en": "Salok: the introductory verse.",
+   "app_pa": "ਸਲੋਕ: ਅਸਟਪਦੀ ਦੇ ਮੁੱਢ ਦਾ ਪਦ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.salok.l02",
+   "gurmukhi": "ਮਨਿ ਸਾਚਾ ਮੁਖਿ ਸਾਚਾ ਸੋਇ ॥",
+   "app_en": "The True One is held in the mind and spoken upon the tongue.",
+   "app_pa": "ਮਨ ਵਿੱਚ ਸੱਚਾ ਪ੍ਰਭੂ ਵੱਸਦਾ ਹੈ ਅਤੇ ਮੂੰਹ ਉੱਤੇ ਉਸੇ ਦਾ ਬੋਲ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.salok.l03",
+   "gurmukhi": "ਅਵਰੁ ਨ ਪੇਖੈ ਏਕਸੁ ਬਿਨੁ ਕੋਇ ॥",
+   "app_en": "Apart from the One, no other is seen.",
+   "app_pa": "ਉਸ ਇੱਕ ਤੋਂ ਬਿਨਾਂ ਹੋਰ ਕੋਈ ਵੱਖਰਾ ਨਹੀਂ ਦਿੱਸਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.salok.l04",
+   "gurmukhi": "ਨਾਨਕ ਇਹ ਲਛਣ ਬ੍ਰਹਮ ਗਿਆਨੀ ਹੋਇ ॥੧॥",
+   "app_en": "Nanak: these are the marks of a Brahm Gyani, one who knows the Divine.",
+   "app_pa": "ਨਾਨਕ ਆਖਦਾ ਹੈ: ਇਹ ਬ੍ਰਹਮ ਨੂੰ ਜਾਣਨ ਵਾਲੇ ਬ੍ਰਹਮ ਗਿਆਨੀ ਦੇ ਲੱਛਣ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l01",
+   "gurmukhi": "ਅਸਟਪਦੀ ॥",
+   "app_en": "Ashtpadi: a sequence of eight pauris.",
+   "app_pa": "ਅਸਟਪਦੀ: ਅੱਠ ਪਉੜੀਆਂ ਵਾਲਾ ਭਾਗ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l02",
+   "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਸਦਾ ਨਿਰਲੇਪ ॥",
+   "app_en": "The Brahm Gyani remains untouched by attachment.",
+   "app_pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਮੋਹ ਦੇ ਲੇਪ ਤੋਂ ਸਦਾ ਬਚਿਆ ਰਹਿੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l03",
+   "gurmukhi": "ਜੈਸੇ ਜਲ ਮਹਿ ਕਮਲ ਅਲੇਪ ॥",
+   "app_en": "Like a lotus in water, remaining unsoiled.",
+   "app_pa": "ਜਿਵੇਂ ਪਾਣੀ ਵਿੱਚ ਕਮਲ ਨਿਰਲੇਪ ਰਹਿੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l04",
+   "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਸਦਾ ਨਿਰਦੋਖ ॥",
+   "app_en": "The Brahm Gyani remains free of wrongdoing.",
+   "app_pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਸਦਾ ਦੋਖ ਤੋਂ ਰਹਿਤ ਰਹਿੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l05",
+   "gurmukhi": "ਜੈਸੇ ਸੂਰੁ ਸਰਬ ਕਉ ਸੋਖ ॥",
+   "app_en": "Like the sun, which draws moisture from everything.",
+   "app_pa": "ਜਿਵੇਂ ਸੂਰਜ ਸਭ ਥਾਵਾਂ ਤੋਂ ਪਾਣੀ ਸੋਖ ਲੈਂਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l06",
+   "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਕੈ ਦ੍ਰਿਸਟਿ ਸਮਾਨਿ ॥",
+   "app_en": "The Brahm Gyani looks upon all with an equal gaze.",
+   "app_pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਦੀ ਸਭ ਵੱਲ ਇਕਸਾਰ ਨਜ਼ਰ ਹੁੰਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l07",
+   "gurmukhi": "ਜੈਸੇ ਰਾਜ ਰੰਕ ਕਉ ਲਾਗੈ ਤੁਲਿ ਪਵਾਨ ॥",
+   "app_en": "Like air, which reaches ruler and pauper alike.",
+   "app_pa": "ਜਿਵੇਂ ਹਵਾ ਰਾਜੇ ਅਤੇ ਕੰਗਾਲ ਨੂੰ ਇਕੋ ਜਿਹੀ ਲੱਗਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l08",
+   "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਕੈ ਧੀਰਜੁ ਏਕ ॥",
+   "app_en": "The Brahm Gyani's patience remains steady.",
+   "app_pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਦਾ ਧੀਰਜ ਇਕਸਾਰ ਰਹਿੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l09",
+   "gurmukhi": "ਜਿਉ ਬਸੁਧਾ ਕੋਊ ਖੋਦੈ ਕੋਊ ਚੰਦਨ ਲੇਪ ॥",
+   "app_en": "Like earth, whether someone digs it or spreads sandalwood upon it.",
+   "app_pa": "ਜਿਵੇਂ ਧਰਤੀ ਉੱਤੇ ਕੋਈ ਖੋਦਾਈ ਕਰੇ ਜਾਂ ਚੰਦਨ ਲਾਵੇ, ਉਹ ਇਕਸਾਰ ਰਹਿੰਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l10",
+   "gurmukhi": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਕਾ ਇਹੈ ਗੁਨਾਉ ॥",
+   "app_en": "Such is the Brahm Gyani's quality:",
+   "app_pa": "ਬ੍ਰਹਮ ਗਿਆਨੀ ਦਾ ਅਜਿਹਾ ਸੁਭਾਉ ਹੈ:",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a08.p01.l11",
+   "gurmukhi": "ਨਾਨਕ ਜਿਉ ਪਾਵਕ ਕਾ ਸਹਜ ਸੁਭਾਉ ॥੧॥",
+   "app_en": "Nanak: like fire's even, natural action.",
+   "app_pa": "ਨਾਨਕ ਆਖਦਾ ਹੈ: ਜਿਵੇਂ ਅੱਗ ਦਾ ਸਹਜ, ਇਕਸਾਰ ਸੁਭਾਉ ਹੁੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l01",
+   "gurmukhi": "ਜਬ ਲਗੁ ਜਾਨੈ ਮੁਝ ਤੇ ਕਛੁ ਹੋਇ ॥",
+   "app_en": "As long as one thinks, 'Something happens through my own power,'",
+   "app_pa": "ਜਦ ਤਕ ਜੀਵ ਸਮਝਦਾ ਹੈ, 'ਮੇਰੇ ਆਪਣੇ ਬਲ ਨਾਲ ਕੁਝ ਹੁੰਦਾ ਹੈ,'",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l02",
+   "gurmukhi": "ਤਬ ਇਸ ਕਉ ਸੁਖੁ ਨਾਹੀ ਕੋਇ ॥",
+   "app_en": "there is no peace for that person.",
+   "app_pa": "ਤਦ ਤਕ ਉਸ ਨੂੰ ਸੁਖ ਨਹੀਂ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l03",
+   "gurmukhi": "ਜਬ ਇਹ ਜਾਨੈ ਮੈ ਕਿਛੁ ਕਰਤਾ ॥",
+   "app_en": "As long as one thinks, 'I am the doer,'",
+   "app_pa": "ਜਦ ਤਕ ਇਹ ਮੰਨਦਾ ਹੈ, 'ਮੈਂ ਹੀ ਕਰਨ ਵਾਲਾ ਹਾਂ,'",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l04",
+   "gurmukhi": "ਤਬ ਲਗੁ ਗਰਭ ਜੋਨਿ ਮਹਿ ਫਿਰਤਾ ॥",
+   "app_en": "one continues passing through wombs and births.",
+   "app_pa": "ਤਦ ਤਕ ਗਰਭ ਦੀਆਂ ਜੂਨਾਂ ਵਿੱਚ ਫਿਰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l05",
+   "gurmukhi": "ਜਬ ਧਾਰੈ ਕੋਊ ਬੈਰੀ ਮੀਤੁ ॥",
+   "app_en": "As long as one fixes some as enemies and others as friends,",
+   "app_pa": "ਜਦ ਤਕ ਕਿਸੇ ਨੂੰ ਵੈਰੀ ਅਤੇ ਕਿਸੇ ਨੂੰ ਮਿੱਤਰ ਮਿਥਦਾ ਹੈ,",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l06",
+   "gurmukhi": "ਤਬ ਲਗੁ ਨਿਹਚਲੁ ਨਾਹੀ ਚੀਤੁ ॥",
+   "app_en": "the mind does not become steady.",
+   "app_pa": "ਤਦ ਤਕ ਚਿੱਤ ਅਡੋਲ ਨਹੀਂ ਹੁੰਦਾ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l07",
+   "gurmukhi": "ਜਬ ਲਗੁ ਮੋਹ ਮਗਨ ਸੰਗਿ ਮਾਇ ॥",
+   "app_en": "As long as one is submerged in attachment to Maya,",
+   "app_pa": "ਜਦ ਤਕ ਮਾਇਆ ਦੇ ਮੋਹ ਵਿੱਚ ਡੁੱਬਿਆ ਹੈ,",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l08",
+   "gurmukhi": "ਤਬ ਲਗੁ ਧਰਮ ਰਾਇ ਦੇਇ ਸਜਾਇ ॥",
+   "app_en": "the Judge of righteousness imposes the consequence.",
+   "app_pa": "ਤਦ ਤਕ ਧਰਮ ਰਾਇ ਸਜ਼ਾ ਦਿੰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "en_pa_divergence",
+     "severity": "S3",
+     "note": "English \"imposes the consequence\" is softer than the Punjabi \"ਸਜ਼ਾ ਦਿੰਦਾ ਹੈ\"."
+    }
+   ]
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l09",
+   "gurmukhi": "ਪ੍ਰਭ ਕਿਰਪਾ ਤੇ ਬੰਧਨ ਤੂਟੈ ॥",
+   "app_en": "By God's grace the bonds break.",
+   "app_pa": "ਪ੍ਰਭੂ ਦੀ ਮਿਹਰ ਨਾਲ ਬੰਧਨ ਟੁੱਟਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a12.p04.l10",
+   "gurmukhi": "ਗੁਰ ਪ੍ਰਸਾਦਿ ਨਾਨਕ ਹਉ ਛੂਟੈ ॥੪॥",
+   "app_en": "By the Guru's grace, Nanak says, ego is released.",
+   "app_pa": "ਗੁਰੂ ਦੀ ਕਿਰਪਾ ਨਾਲ, ਨਾਨਕ ਆਖਦਾ ਹੈ, ਹਉਮੈ ਛੁੱਟਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l01",
+   "gurmukhi": "ਜਿਸੁ ਮਨਿ ਬਸੈ ਸੁਨੈ ਲਾਇ ਪ੍ਰੀਤਿ ॥",
+   "app_en": "The one in whose mind Naam dwells, who listens with love—",
+   "app_pa": "ਜਿਸ ਦੇ ਮਨ ਵਿੱਚ ਨਾਮ ਵੱਸਦਾ ਹੈ ਅਤੇ ਜੋ ਪ੍ਰੀਤ ਨਾਲ ਸੁਣਦਾ ਹੈ—",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l02",
+   "gurmukhi": "ਤਿਸੁ ਜਨ ਆਵੈ ਹਰਿ ਪ੍ਰਭੁ ਚੀਤਿ ॥",
+   "app_en": "That person remembers the Divine.",
+   "app_pa": "ਉਸ ਜਨ ਨੂੰ ਹਰਿ-ਪ੍ਰਭੂ ਚਿੱਤ ਆਉਂਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l03",
+   "gurmukhi": "ਜਨਮ ਮਰਨ ਤਾ ਕਾ ਦੂਖੁ ਨਿਵਾਰੈ ॥",
+   "app_en": "The suffering of birth and death is removed.",
+   "app_pa": "ਉਸ ਦਾ ਜਨਮ ਮਰਨ ਦਾ ਦੁੱਖ ਦੂਰ ਹੁੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l04",
+   "gurmukhi": "ਦੁਲਭ ਦੇਹ ਤਤਕਾਲ ਉਧਾਰੈ ॥",
+   "app_en": "This rare human life is delivered at once.",
+   "app_pa": "ਦੁਰਲੱਭ ਮਨੁੱਖਾ ਦੇਹ ਉਸ ਵੇਲੇ ਉਧਾਰ ਪਾਉਂਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l05",
+   "gurmukhi": "ਨਿਰਮਲ ਸੋਭਾ ਅੰਮ੍ਰਿਤ ਤਾ ਕੀ ਬਾਨੀ ॥",
+   "app_en": "That person's honour is unstained and their speech life-giving.",
+   "app_pa": "ਉਸ ਦੀ ਸੋਭਾ ਨਿਰਮਲ ਅਤੇ ਉਸ ਦੇ ਬਚਨ ਅੰਮ੍ਰਿਤਮਈ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l06",
+   "gurmukhi": "ਏਕੁ ਨਾਮੁ ਮਨ ਮਾਹਿ ਸਮਾਨੀ ॥",
+   "app_en": "The One Naam has become absorbed within the mind.",
+   "app_pa": "ਮਨ ਵਿੱਚ ਇੱਕ ਨਾਮ ਹੀ ਸਮਾਇਆ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l07",
+   "gurmukhi": "ਦੂਖ ਰੋਗ ਬਿਨਸੇ ਭੈ ਭਰਮ ॥",
+   "app_en": "Sufferings, diseases, fears and delusions are dispelled.",
+   "app_pa": "ਦੁੱਖ, ਰੋਗ, ਡਰ ਅਤੇ ਭਰਮ ਮਿਟਦੇ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l08",
+   "gurmukhi": "ਸਾਧ ਨਾਮ ਨਿਰਮਲ ਤਾ ਕੇ ਕਰਮ ॥",
+   "app_en": "One is known as a holy person, whose deeds are pure.",
+   "app_pa": "ਉਸ ਦਾ ਨਾਂ ਸਾਧ ਪੈਂਦਾ ਹੈ ਅਤੇ ਉਸ ਦੇ ਕਰਮ ਨਿਰਮਲ ਹਨ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l09",
+   "gurmukhi": "ਸਭ ਤੇ ਊਚ ਤਾ ਕੀ ਸੋਭਾ ਬਨੀ ॥",
+   "app_en": "That person's honour becomes the highest.",
+   "app_pa": "ਉਸ ਦੀ ਸੋਭਾ ਸਭ ਤੋਂ ਉੱਚੀ ਬਣਦੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "G",
+   "part": "sukhmani",
+   "id": "sukhmani.a24.p08.l10",
+   "gurmukhi": "ਨਾਨਕ ਇਹ ਗੁਣਿ ਨਾਮੁ ਸੁਖਮਨੀ ॥੮॥੨੪॥",
+   "app_en": "Nanak says: by this virtue, Naam is Sukhmani—the jewel of peace.",
+   "app_pa": "ਨਾਨਕ ਆਖਦਾ ਹੈ: ਇਸ ਗੁਣ ਕਰਕੇ ਨਾਮ ਸੁਖਮਨੀ, ਸੁਖਾਂ ਦੀ ਮਣੀ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs01.line01",
+   "gurmukhi": "ਸੋ ਦਰੁ ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੧ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+   "app_en": "Source heading: So Dar in Raag Aasa, Mahala 1, opens under the invocation of the One through the Guru’s grace.",
+   "app_pa": "ਸਿਰਲੇਖ: ਸੋ ਦਰੁ, ਰਾਗ ਆਸਾ, ਮਹਲਾ ਪਹਿਲਾ; ਇੱਕ ਪ੍ਰਭੂ ਅਤੇ ਗੁਰੂ ਦੀ ਕਿਰਪਾ ਦੀ ਯਾਦ ਨਾਲ ਆਰੰਭ ਹੁੰਦਾ ਹੈ।",
+   "observations": []
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs01.line02",
+   "gurmukhi": "ਸੋ ਦਰੁ ਤੇਰਾ ਕੇਹਾ ਸੋ ਘਰੁ ਕੇਹਾ ਜਿਤੁ ਬਹਿ ਸਰਬ ਸਮਾਲੇ ॥ਵਾਜੇ ਤੇਰੇ ਨਾਦ ਅਨੇਕ ਅਸੰਖਾ ਕੇਤੇ ਤੇਰੇ ਵਾਵਣਹਾਰੇ ॥ਕੇਤੇ ਤੇਰੇ ਰਾਗ ਪਰੀ ਸਿਉ ਕਹੀਅਹਿ ਕੇਤੇ ਤੇਰੇ ਗਾਵਣਹਾਰੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਪਵਣੁ ਪਾਣੀ ਬੈਸੰਤਰੁ ਗਾਵੈ ਰਾਜਾ ਧਰਮੁ ਦੁਆਰੇ ॥",
+   "app_en": "The poet wonders at the Divine court and home, where countless sounds, raags and singers join the praise; even wind, water, fire and moral order are pictured singing.",
+   "app_pa": "ਕਵੀ ਪ੍ਰਭੂ ਦੇ ਦਰਬਾਰ ਦਾ ਅਚਰਜ ਦੱਸਦਾ ਹੈ; ਅਣਗਿਣਤ ਨਾਦ, ਰਾਗ ਤੇ ਗਾਇਕ, ਪਵਣ, ਪਾਣੀ, ਅੱਗ ਅਤੇ ਧਰਮ ਵੀ ਉਸ ਦੀ ਸਿਫ਼ਤ ਵਿੱਚ ਜੁੜੇ ਦਿਖਦੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    },
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "Guru Nanak Dev Ji called \"the poet\" / \"ਕਵੀ\"."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs01.line03",
+   "gurmukhi": "ਗਾਵਨਿ ਤੁਧਨੋ ਚਿਤੁ ਗੁਪਤੁ ਲਿਖਿ ਜਾਣਨਿ ਲਿਖਿ ਲਿਖਿ ਧਰਮੁ ਬੀਚਾਰੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਈਸਰੁ ਬ੍ਰਹਮਾ ਦੇਵੀ ਸੋਹਨਿ ਤੇਰੇ ਸਦਾ ਸਵਾਰੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਇੰਦ੍ਰ ਇੰਦ੍ਰਾਸਣਿ ਬੈਠੇ ਦੇਵਤਿਆ ਦਰਿ ਨਾਲੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਸਿਧ ਸਮਾਧੀ ਅੰਦਰਿ ਗਾਵਨਿ ਤੁਧਨੋ ਸਾਧ ਬੀਚਾਰੇ ॥",
+   "app_en": "Traditional recorders of deeds, Brahma, Shiva, Indra, siddhs and seekers all join this vast hymn of Divine praise.",
+   "app_pa": "ਧਰਮ ਦੇ ਲੇਖੇ ਵਾਲੇ ਪੁਰਾਣਕ ਪਾਤਰ, ਬ੍ਰਹਮਾ, ਸ਼ਿਵ, ਇੰਦਰ, ਸਿੱਧ ਅਤੇ ਸਾਧਕ ਸਭ ਪ੍ਰਭੂ ਦੀ ਵਡਿਆਈ ਕਰਦੇ ਦਿਖਾਏ ਗਏ ਹਨ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs01.line04",
+   "gurmukhi": "ਗਾਵਨਿ ਤੁਧਨੋ ਜਤੀ ਸਤੀ ਸੰਤੋਖੀ ਗਾਵਨਿ ਤੁਧਨੋ ਵੀਰ ਕਰਾਰੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਪੰਡਿਤ ਪੜਨਿ ਰਖੀਸੁਰ ਜੁਗੁ ਜੁਗੁ ਵੇਦਾ ਨਾਲੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਮੋਹਣੀਆ ਮਨੁ ਮੋਹਨਿ ਸੁਰਗੁ ਮਛੁ ਪਇਆਲੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਰਤਨ ਉਪਾਏ ਤੇਰੇ ਅਠਸਠਿ ਤੀਰਥ ਨਾਲੇ ॥",
+   "app_en": "Ascetics, truthful people, scholars, enchanting beings, created jewels and holy places are all portrayed as part of creation’s praise.",
+   "app_pa": "ਜਤੀ-ਸਤੀ, ਸੰਤੋਖੀ, ਪੰਡਿਤ, ਸੁੰਦਰ ਰਚਨਾਵਾਂ, ਰਤਨ ਅਤੇ ਤੀਰਥ ਸਾਰੇ ਸਿਰਜਣਹਾਰ ਦੀ ਸਿਫ਼ਤ ਵਾਲੇ ਵਿਸ਼ਾਲ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਆਉਂਦੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs01.line05",
+   "gurmukhi": "ਗਾਵਨਿ ਤੁਧਨੋ ਜੋਧ ਮਹਾਬਲ ਸੂਰਾ ਗਾਵਨਿ ਤੁਧਨੋ ਖਾਣੀ ਚਾਰੇ ॥ਗਾਵਨਿ ਤੁਧਨੋ ਖੰਡ ਮੰਡਲ ਬ੍ਰਹਮੰਡਾ ਕਰਿ ਕਰਿ ਰਖੇ ਤੇਰੇ ਧਾਰੇ ॥ਸੇਈ ਤੁਧਨੋ ਗਾਵਨਿ ਜੋ ਤੁਧੁ ਭਾਵਨਿ ਰਤੇ ਤੇਰੇ ਭਗਤ ਰਸਾਲੇ ॥ਹੋਰਿ ਕੇਤੇ ਤੁਧਨੋ ਗਾਵਨਿ ਸੇ ਮੈ ਚਿਤਿ ਨ ਆਵਨਿ ਨਾਨਕੁ ਕਿਆ ਬੀਚਾਰੇ ॥ਸੋਈ ਸੋਈ ਸਦਾ ਸਚੁ ਸਾਹਿਬੁ ਸਾਚਾ ਸਾਚੀ ਨਾਈ ॥",
+   "app_en": "Warriors, living beings and worlds beyond counting offer praise; those who please the One are absorbed in devotion, while the poet admits that the full number cannot be named.",
+   "app_pa": "ਸੂਰਮੇ, ਜੀਵ ਤੇ ਬੇਅੰਤ ਲੋਕ ਪ੍ਰਭੂ ਦੀ ਵਡਿਆਈ ਕਰਦੇ ਹਨ; ਉਸ ਨੂੰ ਪਿਆਰੇ ਭਗਤ ਨਾਮ ਨਾਲ ਰੰਗੇ ਹਨ ਅਤੇ ਕਵੀ ਸਭ ਦੀ ਗਿਣਤੀ ਤੋਂ ਅਸਮਰੱਥਤਾ ਮੰਨਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs01.line06",
+   "gurmukhi": "ਹੈ ਭੀ ਹੋਸੀ ਜਾਇ ਨ ਜਾਸੀ ਰਚਨਾ ਜਿਨਿ ਰਚਾਈ ॥ਰੰਗੀ ਰੰਗੀ ਭਾਤੀ ਕਰਿ ਕਰਿ ਜਿਨਸੀ ਮਾਇਆ ਜਿਨਿ ਉਪਾਈ ॥ਕਰਿ ਕਰਿ ਦੇਖੈ ਕੀਤਾ ਆਪਣਾ ਜਿਉ ਤਿਸ ਦੀ ਵਡਿਆਈ ॥ਜੋ ਤਿਸੁ ਭਾਵੈ ਸੋਈ ਕਰਸੀ ਫਿਰਿ ਹੁਕਮੁ ਨ ਕਰਣਾ ਜਾਈ ॥ਸੋ ਪਾਤਿਸਾਹੁ ਸਾਹਾ ਪਤਿਸਾਹਿਬੁ ਨਾਨਕ ਰਹਣੁ ਰਜਾਈ ॥੧॥",
+   "app_en": "The One true Lord remains through time, creates many forms and observes them, and the poet ends by counselling acceptance of Divine Hukam.",
+   "app_pa": "ਸੱਚਾ ਸਾਹਿਬ ਸਦਾ ਕਾਇਮ ਰਹਿੰਦਾ ਹੈ, ਅਨੇਕ ਰੂਪ ਰਚਦਾ ਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਵੇਖਦਾ ਹੈ; ਅੰਤ ਵਿੱਚ ਨਾਨਕ ਰਜ਼ਾ ਵਿੱਚ ਰਹਿਣ ਦੀ ਸੇਧ ਦਿੰਦੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs02.line01",
+   "gurmukhi": "ਆਸਾ ਮਹਲਾ ੧ ॥ਸੁਣਿ ਵਡਾ ਆਖੈ ਸਭੁ ਕੋਇ ॥ ਕੇਵਡੁ ਵਡਾ ਡੀਠਾ ਹੋਇ ॥ਕੀਮਤਿ ਪਾਇ ਨ ਕਹਿਆ ਜਾਇ ॥ ਕਹਣੈ ਵਾਲੇ ਤੇਰੇ ਰਹੇ ਸਮਾਇ ॥੧॥ਵਡੇ ਮੇਰੇ ਸਾਹਿਬਾ ਗਹਿਰ ਗੰਭੀਰਾ ਗੁਣੀ ਗਹੀਰਾ ॥ਕੋਇ ਨ ਜਾਣੈ ਤੇਰਾ ਕੇਤਾ ਕੇਵਡੁ ਚੀਰਾ ॥੧॥ ਰਹਾਉ ॥",
+   "app_en": "Everyone calls the Lord great, yet no one can fully measure or price that greatness; the refrain praises the deep, generous Sovereign beyond counting.",
+   "app_pa": "ਸਾਰੇ ਪ੍ਰਭੂ ਨੂੰ ਵੱਡਾ ਆਖਦੇ ਹਨ, ਪਰ ਉਸ ਦੀ ਮਹਿਮਾ ਦਾ ਪੂਰਾ ਮੋਲ ਨਹੀਂ ਪੈਂਦਾ; ਰਹਾਉ ਅਥਾਹ ਗੁਣਾਂ ਵਾਲੇ ਸਾਹਿਬ ਦੀ ਵਡਿਆਈ ਕਰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs02.line02",
+   "gurmukhi": "ਸਭਿ ਸੁਰਤੀ ਮਿਲਿ ਸੁਰਤਿ ਕਮਾਈ ॥ ਸਭ ਕੀਮਤਿ ਮਿਲਿ ਕੀਮਤਿ ਪਾਈ ॥ਗਿਆਨੀ ਧਿਆਨੀ ਗੁਰ ਗੁਰਹਾਈ ॥ ਕਹਣੁ ਨ ਜਾਈ ਤੇਰੀ ਤਿਲੁ ਵਡਿਆਈ ॥੨॥ਸਭਿ ਸਤ ਸਭਿ ਤਪ ਸਭਿ ਚੰਗਿਆਈਆ ॥ ਸਿਧਾ ਪੁਰਖਾ ਕੀਆ ਵਡਿਆਈਆ ॥ਤੁਧੁ ਵਿਣੁ ਸਿਧੀ ਕਿਨੈ ਨ ਪਾਈਆ ॥ ਕਰਮਿ ਮਿਲੈ ਨਾਹੀ ਠਾਕਿ ਰਹਾਈਆ ॥੩॥ਆਖਣ ਵਾਲਾ ਕਿਆ ਵੇਚਾਰਾ ॥ ਸਿਫਤੀ ਭਰੇ ਤੇਰੇ ਭੰਡਾਰਾ ॥ਜਿਸੁ ਤੂ ਦੇਹਿ ਤਿਸੈ ਕਿਆ ਚਾਰਾ ॥ ਨਾਨਕ ਸਚੁ ਸਵਾਰਣਹਾਰਾ ॥੪॥੨॥",
+   "app_en": "Even gathered sages, meditators and virtuous practitioners cannot exhaust the One’s glory; spiritual accomplishment is received through grace, and Nanak remembers the inexhaustible truth.",
+   "app_pa": "ਗਿਆਨੀ, ਧਿਆਨੀ ਤੇ ਨੇਕ ਕਰਮ ਵਾਲੇ ਮਿਲ ਕੇ ਵੀ ਉਸ ਦੀ ਵਡਿਆਈ ਪੂਰੀ ਨਹੀਂ ਕਹਿ ਸਕਦੇ; ਕਿਰਪਾ ਨਾਲ ਸੇਧ ਮਿਲਦੀ ਅਤੇ ਨਾਨਕ ਸੱਚ ਨੂੰ ਯਾਦ ਕਰਦੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs03.line01",
+   "gurmukhi": "ਆਸਾ ਮਹਲਾ ੧ ॥ਆਖਾ ਜੀਵਾ ਵਿਸਰੈ ਮਰਿ ਜਾਉ ॥ ਆਖਣਿ ਅਉਖਾ ਸਾਚਾ ਨਾਉ ॥ਸਾਚੇ ਨਾਮ ਕੀ ਲਾਗੈ ਭੂਖ ॥ ਉਤੁ ਭੂਖੈ ਖਾਇ ਚਲੀਅਹਿ ਦੂਖ ॥੧॥ਸੋ ਕਿਉ ਵਿਸਰੈ ਮੇਰੀ ਮਾਇ ॥ ਸਾਚਾ ਸਾਹਿਬੁ ਸਾਚੈ ਨਾਇ ॥੧॥ ਰਹਾਉ ॥ਸਾਚੇ ਨਾਮ ਕੀ ਤਿਲੁ ਵਡਿਆਈ ॥ ਆਖਿ ਥਕੇ ਕੀਮਤਿ ਨਹੀ ਪਾਈ ॥ਜੇ ਸਭਿ ਮਿਲਿ ਕੈ ਆਖਣ ਪਾਹਿ ॥ ਵਡਾ ਨ ਹੋਵੈ ਘਾਟਿ ਨ ਜਾਇ ॥੨॥",
+   "app_en": "The speaker lives through naming the True One and feels separation as spiritual death; the hunger for Naam helps put troubles into perspective, while the refrain asks why the mind forgets the True Lord.",
+   "app_pa": "ਸੱਚੇ ਨਾਮ ਦੀ ਯਾਦ ਜੀਵਨ ਦਾ ਆਸਰਾ ਹੈ ਤੇ ਵਿਸਾਰਨਾ ਅੰਦਰਲੀ ਮੌਤ ਵਰਗਾ ਲੱਗਦਾ ਹੈ; ਨਾਮ ਦੀ ਭੁੱਖ ਦੁੱਖ ਤੋਂ ਰਾਹ ਦਿਖਾਉਂਦੀ ਅਤੇ ਰਹਾਉ ਪ੍ਰਭੂ ਨੂੰ ਨਾ ਭੁੱਲਣ ਦੀ ਸੇਧ ਦਿੰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs03.line02",
+   "gurmukhi": "ਨਾ ਓਹੁ ਮਰੈ ਨ ਹੋਵੈ ਸੋਗੁ ॥ ਦੇਦਾ ਰਹੈ ਨ ਚੂਕੈ ਭੋਗੁ ॥ਗੁਣੁ ਏਹੋ ਹੋਰੁ ਨਾਹੀ ਕੋਇ ॥ ਨਾ ਕੋ ਹੋਆ ਨਾ ਕੋ ਹੋਇ ॥੩॥ਜੇਵਡੁ ਆਪਿ ਤੇਵਡ ਤੇਰੀ ਦਾਤਿ ॥ ਜਿਨਿ ਦਿਨੁ ਕਰਿ ਕੈ ਕੀਤੀ ਰਾਤਿ ॥ਖਸਮੁ ਵਿਸਾਰਹਿ ਤੇ ਕਮਜਾਤਿ ॥ ਨਾਨਕ ਨਾਵੈ ਬਾਝੁ ਸਨਾਤਿ ॥੪॥੩॥",
+   "app_en": "The Divine does not die or exhaust its giving; the Creator of day and night is praised as the true support, and forgetting Naam is condemned as spiritual disregard.",
+   "app_pa": "ਪ੍ਰਭੂ ਸਦਾ ਰਹਿਣ ਤੇ ਦਾਤ ਦੇਣ ਵਾਲਾ ਹੈ; ਦਿਨ-ਰਾਤ ਦੇ ਰਚਨਹਾਰ ਨੂੰ ਅਸਲ ਸਹਾਰਾ ਆਖਿਆ ਅਤੇ ਨਾਮ ਵਿਸਾਰਨ ਨੂੰ ਡੂੰਘੀ ਭੁੱਲ ਦੱਸਿਆ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    },
+    {
+     "kind": "softened",
+     "severity": "S1",
+     "note": "ਖਸਮੁ ਵਿਸਾਰਹਿ ਤੇ ਕਮਜਾਤਿ ॥ ਨਾਨਕ ਨਾਵੈ ਬਾਝੁ ਸਨਾਤਿ — the Guru's redefinition of \"low caste\" as forgetting the Master — reduced to \"condemned as spiritual disregard\"."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs04.line01",
+   "gurmukhi": "ਰਾਗੁ ਗੂਜਰੀ ਮਹਲਾ ੪ ॥ਹਰਿ ਕੇ ਜਨ ਸਤਿਗੁਰ ਸਤਪੁਰਖਾ ਬਿਨਉ ਕਰਉ ਗੁਰ ਪਾਸਿ ॥ਹਮ ਕੀਰੇ ਕਿਰਮ ਸਤਿਗੁਰ ਸਰਣਾਈ ਕਰਿ ਦਇਆ ਨਾਮੁ ਪਰਗਾਸਿ ॥੧॥ਮੇਰੇ ਮੀਤ ਗੁਰਦੇਵ ਮੋ ਕਉ ਰਾਮ ਨਾਮੁ ਪਰਗਾਸਿ ॥ਗੁਰਮਤਿ ਨਾਮੁ ਮੇਰਾ ਪ੍ਰਾਨ ਸਖਾਈ ਹਰਿ ਕੀਰਤਿ ਹਮਰੀ ਰਹਰਾਸਿ ॥੧॥ ਰਹਾਉ ॥",
+   "app_en": "With profound humility the speaker approaches the True Guru, asking for the light of Naam; the refrain calls Naam a companion of life and Hari’s praise the true evening Rahras.",
+   "app_pa": "ਨਿਮਰਤਾ ਨਾਲ ਸਤਿਗੁਰੂ ਦੀ ਸ਼ਰਨ ਆ ਕੇ ਨਾਮ ਦਾ ਚਾਨਣ ਮੰਗਿਆ ਹੈ; ਰਹਾਉ ਨਾਮ ਨੂੰ ਜੀਵਨ ਦਾ ਸਾਥੀ ਅਤੇ ਹਰਿ ਦੀ ਕੀਰਤ ਨੂੰ ਰਹਿਰਾਸਿ ਦੱਸਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs04.line02",
+   "gurmukhi": "ਹਰਿ ਜਨ ਕੇ ਵਡ ਭਾਗ ਵਡੇਰੇ ਜਿਨ ਹਰਿ ਹਰਿ ਸਰਧਾ ਹਰਿ ਪਿਆਸ ॥ਹਰਿ ਹਰਿ ਨਾਮੁ ਮਿਲੈ ਤ੍ਰਿਪਤਾਸਹਿ ਮਿਲਿ ਸੰਗਤਿ ਗੁਣ ਪਰਗਾਸਿ ॥੨॥ਜਿਨ ਹਰਿ ਹਰਿ ਹਰਿ ਰਸੁ ਨਾਮੁ ਨ ਪਾਇਆ ਤੇ ਭਾਗਹੀਣ ਜਮ ਪਾਸਿ ॥ਜੋ ਸਤਿਗੁਰ ਸਰਣਿ ਸੰਗਤਿ ਨਹੀ ਆਏ ਧ੍ਰਿਗੁ ਜੀਵੇ ਧ੍ਰਿਗੁ ਜੀਵਾਸਿ ॥੩॥ਜਿਨ ਹਰਿ ਜਨ ਸਤਿਗੁਰ ਸੰਗਤਿ ਪਾਈ ਤਿਨ ਧੁਰਿ ਮਸਤਕਿ ਲਿਖਿਆ ਲਿਖਾਸਿ ॥ਧਨੁ ਧੰਨੁ ਸਤਸੰਗਤਿ ਜਿਤੁ ਹਰਿ ਰਸੁ ਪਾਇਆ ਮਿਲਿ ਜਨ ਨਾਨਕ ਨਾਮੁ ਪਰਗਾਸਿ ॥੪॥੪॥",
+   "app_en": "The blessing of trusting Hari and joining the sangat is celebrated, while estrangement from Naam is pictured as a wasted opportunity; the hymn ends by praising the transformative sangat.",
+   "app_pa": "ਹਰਿ ਨਾਲ ਸ਼ਰਧਾ ਅਤੇ ਸੰਗਤ ਦੇ ਮਿਲਾਪ ਦੀ ਵਡਿਆਈ ਹੈ; ਨਾਮ ਤੋਂ ਦੂਰ ਜੀਵਨ ਨੂੰ ਗੁਆਇਆ ਮੌਕਾ ਦੱਸਿਆ, ਅੰਤ ਵਿੱਚ ਸਤਸੰਗਤ ਦਾ ਧੰਨਵਾਦ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    },
+    {
+     "kind": "softened",
+     "severity": "S2",
+     "note": "ਧ੍ਰਿਗੁ ਜੀਵੇ ਧ੍ਰਿਗੁ ਜੀਵਾਸਿ reduced to \"pictured as a wasted opportunity\"."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs05.line01",
+   "gurmukhi": "ਰਾਗੁ ਗੂਜਰੀ ਮਹਲਾ ੫ ॥ਕਾਹੇ ਰੇ ਮਨ ਚਿਤਵਹਿ ਉਦਮੁ ਜਾ ਆਹਰਿ ਹਰਿ ਜੀਉ ਪਰਿਆ ॥ਸੈਲ ਪਥਰ ਮਹਿ ਜੰਤ ਉਪਾਏ ਤਾ ਕਾ ਰਿਜਕੁ ਆਗੈ ਕਰਿ ਧਰਿਆ ॥੧॥ਮੇਰੇ ਮਾਧਉ ਜੀ ਸਤਸੰਗਤਿ ਮਿਲੇ ਸੁ ਤਰਿਆ ॥ਗੁਰ ਪਰਸਾਦਿ ਪਰਮ ਪਦੁ ਪਾਇਆ ਸੂਕੇ ਕਾਸਟ ਹਰਿਆ ॥੧॥ ਰਹਾਉ ॥",
+   "app_en": "The mind is asked why it worries constantly about provision when the One sustains even creatures among stones; the refrain recalls the uplifting presence of the sangat and Guru’s grace.",
+   "app_pa": "ਮਨ ਨੂੰ ਪੁੱਛਿਆ ਕਿ ਰੋਜ਼ੀ ਦੀ ਚਿੰਤਾ ਕਿਉਂ ਜਕੜਦੀ ਹੈ, ਜਦ ਪ੍ਰਭੂ ਪੱਥਰਾਂ ਵਿਚਲੇ ਜੀਵਾਂ ਦੀ ਵੀ ਸੰਭਾਲ ਕਰਦਾ ਹੈ; ਰਹਾਉ ਸੰਗਤ ਤੇ ਗੁਰੂ ਦੀ ਕਿਰਪਾ ਨੂੰ ਯਾਦ ਕਰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs05.line02",
+   "gurmukhi": "ਜਨਨਿ ਪਿਤਾ ਲੋਕ ਸੁਤ ਬਨਿਤਾ ਕੋਇ ਨ ਕਿਸ ਕੀ ਧਰਿਆ ॥ਸਿਰਿ ਸਿਰਿ ਰਿਜਕੁ ਸੰਬਾਹੇ ਠਾਕੁਰੁ ਕਾਹੇ ਮਨ ਭਉ ਕਰਿਆ ॥੨॥ਊਡੇ ਊਡਿ ਆਵੈ ਸੈ ਕੋਸਾ ਤਿਸੁ ਪਾਛੈ ਬਚਰੇ ਛਰਿਆ ॥ਤਿਨ ਕਵਣੁ ਖਲਾਵੈ ਕਵਣੁ ਚੁਗਾਵੈ ਮਨ ਮਹਿ ਸਿਮਰਨੁ ਕਰਿਆ ॥੩॥ਸਭਿ ਨਿਧਾਨ ਦਸ ਅਸਟ ਸਿਧਾਨ ਠਾਕੁਰ ਕਰ ਤਲ ਧਰਿਆ ॥ਜਨ ਨਾਨਕ ਬਲਿ ਬਲਿ ਸਦ ਬਲਿ ਜਾਈਐ ਤੇਰਾ ਅੰਤੁ ਨ ਪਾਰਾਵਰਿਆ ॥੪॥੫॥",
+   "app_en": "The One sustains people and creatures beyond what family members alone can provide; birds and their young become images of care, ending in gratitude for Divine gifts without limit.",
+   "app_pa": "ਪਰਿਵਾਰ ਤੋਂ ਵੀ ਵੱਡਾ ਪ੍ਰਭੂ ਦਾ ਆਸਰਾ ਯਾਦ ਕੀਤਾ ਹੈ; ਦੂਰ ਉੱਡਦੇ ਪੰਛੀਆਂ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਬੱਚਿਆਂ ਦੀ ਤਸਵੀਰ ਰਾਹੀਂ ਸੰਭਾਲ ਦਿਖਾ ਕੇ ਅੰਤ ਵਿੱਚ ਬੇਅੰਤ ਦਾਤਾਂ ਦਾ ਸ਼ੁਕਰਾਨਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs06.line01",
+   "gurmukhi": "ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੪ ਸੋ ਪੁਰਖੁ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ਸੋ ਪੁਰਖੁ ਨਿਰੰਜਨੁ ਹਰਿ ਪੁਰਖੁ ਨਿਰੰਜਨੁ ਹਰਿ ਅਗਮਾ ਅਗਮ ਅਪਾਰਾ ॥ਸਭਿ ਧਿਆਵਹਿ ਸਭਿ ਧਿਆਵਹਿ ਤੁਧੁ ਜੀ ਹਰਿ ਸਚੇ ਸਿਰਜਣਹਾਰਾ ॥ਸਭਿ ਜੀਅ ਤੁਮਾਰੇ ਜੀ ਤੂੰ ਜੀਆ ਕਾ ਦਾਤਾਰਾ ॥ ਹਰਿ ਧਿਆਵਹੁ ਸੰਤਹੁ ਜੀ ਸਭਿ ਦੂਖ ਵਿਸਾਰਣਹਾਰਾ ॥ਹਰਿ ਆਪੇ ਠਾਕੁਰੁ ਹਰਿ ਆਪੇ ਸੇਵਕੁ ਜੀ ਕਿਆ ਨਾਨਕ ਜੰਤ ਵਿਚਾਰਾ ॥੧॥",
+   "app_en": "So Purakh begins by praising the pure, boundless One whom all living beings remember, the Creator and sustainer of every life; Hari is depicted as both sovereign and present with devotees.",
+   "app_pa": "ਸੋ ਪੁਰਖੁ ਵਿੱਚ ਨਿਰੰਜਨ ਬੇਅੰਤ ਪ੍ਰਭੂ ਨੂੰ ਸਿਰਜਣਹਾਰ ਤੇ ਜੀਵਾਂ ਦਾ ਦਾਤਾਰ ਆਖਿਆ ਹੈ; ਸਾਰੇ ਉਸ ਨੂੰ ਯਾਦ ਕਰਦੇ ਅਤੇ ਉਹ ਭਗਤਾਂ ਦਾ ਸਹਾਰਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs06.line02",
+   "gurmukhi": "ਤੂੰ ਘਟ ਘਟ ਅੰਤਰਿ ਸਰਬ ਨਿਰੰਤਰਿ ਜੀ ਹਰਿ ਏਕੋ ਪੁਰਖੁ ਸਮਾਣਾ ॥ਇਕਿ ਦਾਤੇ ਇਕਿ ਭੇਖਾਰੀ ਜੀ ਸਭਿ ਤੇਰੇ ਚੋਜ ਵਿਡਾਣਾ ॥ਤੂੰ ਆਪੇ ਦਾਤਾ ਆਪੇ ਭੁਗਤਾ ਜੀ ਹਉ ਤੁਧੁ ਬਿਨੁ ਅਵਰੁ ਨ ਜਾਣਾ ॥ਤੂੰ ਪਾਰਬ੍ਰਹਮੁ ਬੇਅੰਤੁ ਬੇਅੰਤੁ ਜੀ ਤੇਰੇ ਕਿਆ ਗੁਣ ਆਖਿ ਵਖਾਣਾ ॥ਜੋ ਸੇਵਹਿ ਜੋ ਸੇਵਹਿ ਤੁਧੁ ਜੀ ਜਨੁ ਨਾਨਕੁ ਤਿਨ ਕੁਰਬਾਣਾ ॥੨॥",
+   "app_en": "The One pervades every heart; the poem sees giver and receiver alike within the Divine play, praising a Reality too vast for any one person to describe.",
+   "app_pa": "ਇੱਕ ਪ੍ਰਭੂ ਹਰ ਘਟ ਵਿੱਚ ਵਿਆਪਕ ਹੈ; ਦਾਤਾ ਤੇ ਮੰਗਤਾ ਉਸੇ ਦੇ ਖੇਲ ਵਿੱਚ ਹਨ, ਉਸ ਦੀ ਪੂਰੀ ਵਡਿਆਈ ਬਿਆਨ ਨਹੀਂ ਹੁੰਦੀ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs06.line03",
+   "gurmukhi": "ਹਰਿ ਧਿਆਵਹਿ ਹਰਿ ਧਿਆਵਹਿ ਤੁਧੁ ਜੀ ਸੇ ਜਨ ਜੁਗ ਮਹਿ ਸੁਖਵਾਸੀ ॥ਸੇ ਮੁਕਤੁ ਸੇ ਮੁਕਤੁ ਭਏ ਜਿਨ ਹਰਿ ਧਿਆਇਆ ਜੀ ਤਿਨ ਤੂਟੀ ਜਮ ਕੀ ਫਾਸੀ ॥ਜਿਨ ਨਿਰਭਉ ਜਿਨ ਹਰਿ ਨਿਰਭਉ ਧਿਆਇਆ ਜੀ ਤਿਨ ਕਾ ਭਉ ਸਭੁ ਗਵਾਸੀ ॥ਜਿਨ ਸੇਵਿਆ ਜਿਨ ਸੇਵਿਆ ਮੇਰਾ ਹਰਿ ਜੀ ਤੇ ਹਰਿ ਹਰਿ ਰੂਪਿ ਸਮਾਸੀ ॥ਸੇ ਧੰਨੁ ਸੇ ਧੰਨੁ ਜਿਨ ਹਰਿ ਧਿਆਇਆ ਜੀ ਜਨੁ ਨਾਨਕੁ ਤਿਨ ਬਲਿ ਜਾਸੀ ॥੩॥",
+   "app_en": "Those who remember the Fearless One are praised as finding peace and freedom from bondage to death and fear, and the devotee gives thanks for such remembrance.",
+   "app_pa": "ਨਿਰਭਉ ਹਰਿ ਦੀ ਯਾਦ ਨਾਲ ਸੁਖ, ਡਰ ਤੇ ਕਾਲ ਦੇ ਬੰਧਨ ਤੋਂ ਮੁਕਤੀ ਦੀ ਆਤਮਕ ਤਸਵੀਰ ਹੈ; ਭਗਤ ਇਸ ਦਾਤ ਲਈ ਸਦਕੇ ਜਾਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs06.line04",
+   "gurmukhi": "ਤੇਰੀ ਭਗਤਿ ਤੇਰੀ ਭਗਤਿ ਭੰਡਾਰ ਜੀ ਭਰੇ ਬਿਅੰਤ ਬੇਅੰਤਾ ॥ਤੇਰੇ ਭਗਤ ਤੇਰੇ ਭਗਤ ਸਲਾਹਨਿ ਤੁਧੁ ਜੀ ਹਰਿ ਅਨਿਕ ਅਨੇਕ ਅਨੰਤਾ ॥ਤੇਰੀ ਅਨਿਕ ਤੇਰੀ ਅਨਿਕ ਕਰਹਿ ਹਰਿ ਪੂਜਾ ਜੀ ਤਪੁ ਤਾਪਹਿ ਜਪਹਿ ਬੇਅੰਤਾ ॥ਤੇਰੇ ਅਨੇਕ ਤੇਰੇ ਅਨੇਕ ਪੜਹਿ ਬਹੁ ਸਿਮ੍ਰਿਤਿ ਸਾਸਤ ਜੀ ਕਰਿ ਕਿਰਿਆ ਖਟੁ ਕਰਮ ਕਰੰਤਾ ॥ਸੇ ਭਗਤ ਸੇ ਭਗਤ ਭਲੇ ਜਨ ਨਾਨਕ ਜੀ ਜੋ ਭਾਵਹਿ ਮੇਰੇ ਹਰਿ ਭਗਵੰਤਾ ॥੪॥",
+   "app_en": "Many people praise through devotion, worship, study, austerity and traditional practices; the poem honours those who are sincerely dear to the One.",
+   "app_pa": "ਅਨੇਕ ਭਗਤ, ਪੂਜਾ, ਪਾਠ ਤੇ ਤਪਸਿਆ ਦੇ ਢੰਗਾਂ ਦਾ ਜ਼ਿਕਰ ਹੈ; ਪ੍ਰਭੂ ਨੂੰ ਪਿਆਰੇ ਸੱਚੇ ਭਗਤਾਂ ਦੀ ਵਡਿਆਈ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs06.line05",
+   "gurmukhi": "ਤੂੰ ਆਦਿ ਪੁਰਖੁ ਅਪਰੰਪਰੁ ਕਰਤਾ ਜੀ ਤੁਧੁ ਜੇਵਡੁ ਅਵਰੁ ਨ ਕੋਈ ॥ਤੂੰ ਜੁਗੁ ਜੁਗੁ ਏਕੋ ਸਦਾ ਸਦਾ ਤੂੰ ਏਕੋ ਜੀ ਤੂੰ ਨਿਹਚਲੁ ਕਰਤਾ ਸੋਈ ॥ਤੁਧੁ ਆਪੇ ਭਾਵੈ ਸੋਈ ਵਰਤੈ ਜੀ ਤੂੰ ਆਪੇ ਕਰਹਿ ਸੁ ਹੋਈ ॥ਤੁਧੁ ਆਪੇ ਸ੍ਰਿਸਟਿ ਸਭ ਉਪਾਈ ਜੀ ਤੁਧੁ ਆਪੇ ਸਿਰਜਿ ਸਭ ਗੋਈ ॥ਜਨੁ ਨਾਨਕੁ ਗੁਣ ਗਾਵੈ ਕਰਤੇ ਕੇ ਜੀ ਜੋ ਸਭਸੈ ਕਾ ਜਾਣੋਈ ॥੫॥੧॥",
+   "app_en": "The One eternal Creator remains through all ages, brings forth and withdraws the creation, and Nanak sings of the Lord who knows everyone.",
+   "app_pa": "ਇੱਕੋ ਕਰਤਾਰ ਜੁਗਾਂ ਤੋਂ ਅਡੋਲ ਹੈ; ਸ੍ਰਿਸ਼ਟੀ ਰਚਦਾ ਤੇ ਸਮੇਟਦਾ ਹੈ ਅਤੇ ਨਾਨਕ ਸਭ ਨੂੰ ਜਾਣਨ ਵਾਲੇ ਪ੍ਰਭੂ ਦੇ ਗੁਣ ਗਾਉਂਦੇ ਹਨ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs07.line01",
+   "gurmukhi": "ਆਸਾ ਮਹਲਾ ੪ ॥ਤੂੰ ਕਰਤਾ ਸਚਿਆਰੁ ਮੈਡਾ ਸਾਂਈ ॥ ਜੋ ਤਉ ਭਾਵੈ ਸੋਈ ਥੀਸੀ ਜੋ ਤੂੰ ਦੇਹਿ ਸੋਈ ਹਉ ਪਾਈ ॥੧॥ ਰਹਾਉ ॥ਸਭ ਤੇਰੀ ਤੂੰ ਸਭਨੀ ਧਿਆਇਆ ॥ ਜਿਸ ਨੋ ਕ੍ਰਿਪਾ ਕਰਹਿ ਤਿਨਿ ਨਾਮ ਰਤਨੁ ਪਾਇਆ ॥ਗੁਰਮੁਖਿ ਲਾਧਾ ਮਨਮੁਖਿ ਗਵਾਇਆ ॥ ਤੁਧੁ ਆਪਿ ਵਿਛੋੜਿਆ ਆਪਿ ਮਿਲਾਇਆ ॥੧॥ਤੂੰ ਦਰੀਆਉ ਸਭ ਤੁਝ ਹੀ ਮਾਹਿ ॥ ਤੁਝ ਬਿਨੁ ਦੂਜਾ ਕੋਈ ਨਾਹਿ ॥ਜੀਅ ਜੰਤ ਸਭਿ ਤੇਰਾ ਖੇਲੁ ॥ ਵਿਜੋਗਿ ਮਿਲਿ ਵਿਛੁੜਿਆ ਸੰਜੋਗੀ ਮੇਲੁ ॥੨॥",
+   "app_en": "You are the truthful Creator and Sovereign; all belongs to You, Naam is received through grace, and the river-like Divine holds creation and the changing meetings of living beings.",
+   "app_pa": "ਤੂੰ ਸੱਚਾ ਕਰਤਾਰ ਤੇ ਸਾਹਿਬ ਹੈਂ; ਸਭ ਤੇਰਾ ਹੈ, ਕਿਰਪਾ ਨਾਲ ਨਾਮ-ਰਤਨ ਮਿਲਦਾ ਹੈ, ਅਤੇ ਦਰਿਆ ਵਰਗੇ ਪ੍ਰਭੂ ਵਿੱਚ ਜੀਵਾਂ ਦੇ ਮਿਲਾਪ-ਵਿਛੋੜੇ ਦਾ ਖੇਲ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs07.line02",
+   "gurmukhi": "ਜਿਸ ਨੋ ਤੂ ਜਾਣਾਇਹਿ ਸੋਈ ਜਨੁ ਜਾਣੈ ॥ ਹਰਿ ਗੁਣ ਸਦ ਹੀ ਆਖਿ ਵਖਾਣੈ ॥ਜਿਨਿ ਹਰਿ ਸੇਵਿਆ ਤਿਨਿ ਸੁਖੁ ਪਾਇਆ ॥ ਸਹਜੇ ਹੀ ਹਰਿ ਨਾਮਿ ਸਮਾਇਆ ॥੩॥ਤੂ ਆਪੇ ਕਰਤਾ ਤੇਰਾ ਕੀਆ ਸਭੁ ਹੋਇ ॥ ਤੁਧੁ ਬਿਨੁ ਦੂਜਾ ਅਵਰੁ ਨ ਕੋਇ ॥ਤੂ ਕਰਿ ਕਰਿ ਵੇਖਹਿ ਜਾਣਹਿ ਸੋਇ ॥ ਜਨ ਨਾਨਕ ਗੁਰਮੁਖਿ ਪਰਗਟੁ ਹੋਇ ॥੪॥੨॥",
+   "app_en": "Only those You make understand can know You; the hymn celebrates Hari’s virtues, natural peace and the Guru-oriented recognition that the Creator does everything.",
+   "app_pa": "ਜਿਸ ਨੂੰ ਪ੍ਰਭੂ ਸੂਝ ਬਖ਼ਸ਼ਦਾ ਉਹੀ ਪਛਾਣਦਾ ਹੈ; ਹਰਿ ਦੀ ਸਿਫ਼ਤ, ਸਹਜ ਦਾ ਸੁਖ ਅਤੇ ਗੁਰਮੁਖ ਜੀਵਨ ਵਿੱਚ ਕਰਤਾਰ ਦੀ ਪਛਾਣ ਦੀ ਵਡਿਆਈ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs08.line01",
+   "gurmukhi": "ਆਸਾ ਮਹਲਾ ੧ ॥ਤਿਤੁ ਸਰਵਰੜੈ ਭਈਲੇ ਨਿਵਾਸਾ ਪਾਣੀ ਪਾਵਕੁ ਤਿਨਹਿ ਕੀਆ ॥ਪੰਕਜੁ ਮੋਹ ਪਗੁ ਨਹੀ ਚਾਲੈ ਹਮ ਦੇਖਾ ਤਹ ਡੂਬੀਅਲੇ ॥੧॥ਮਨ ਏਕੁ ਨ ਚੇਤਸਿ ਮੂੜ ਮਨਾ ॥ ਹਰਿ ਬਿਸਰਤ ਤੇਰੇ ਗੁਣ ਗਲਿਆ ॥੧॥ ਰਹਾਉ ॥ਨਾ ਹਉ ਜਤੀ ਸਤੀ ਨਹੀ ਪੜਿਆ ਮੂਰਖ ਮੁਗਧਾ ਜਨਮੁ ਭਇਆ ॥ਪ੍ਰਣਵਤਿ ਨਾਨਕ ਤਿਨ ਕੀ ਸਰਣਾ ਜਿਨ ਤੂ ਨਾਹੀ ਵੀਸਰਿਆ ॥੨॥੩॥",
+   "app_en": "The hymn pictures life in a pool whose water burns with craving, with feet caught in the mud of attachment; the refrain calls the forgetful mind back to the One, and the speaker seeks those who keep the Divine in remembrance.",
+   "app_pa": "ਜੀਵਨ ਨੂੰ ਅਜਿਹੇ ਸਰੋਵਰ ਨਾਲ ਜੋੜਿਆ ਹੈ ਜਿੱਥੇ ਤ੍ਰਿਸ਼ਨਾ ਦੀ ਅੱਗ ਅਤੇ ਮੋਹ ਦਾ ਚਿੱਕੜ ਪੈਰ ਰੋਕਦੇ ਹਨ; ਰਹਾਉ ਮਨ ਨੂੰ ਇੱਕ ਪ੍ਰਭੂ ਦੀ ਯਾਦ ਵੱਲ ਮੋੜਦਾ ਹੈ ਅਤੇ ਅੰਤ ਵਿੱਚ ਪ੍ਰਭੂ ਨੂੰ ਨਾ ਭੁੱਲਣ ਵਾਲਿਆਂ ਦੀ ਸ਼ਰਨ ਮੰਗੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:sggs-nine",
+   "id": "rehras.sggs09.line01",
+   "gurmukhi": "ਆਸਾ ਮਹਲਾ ੫ ॥ਭਈ ਪਰਾਪਤਿ ਮਾਨੁਖ ਦੇਹੁਰੀਆ ॥ ਗੋਬਿੰਦ ਮਿਲਣ ਕੀ ਇਹ ਤੇਰੀ ਬਰੀਆ ॥ਅਵਰਿ ਕਾਜ ਤੇਰੈ ਕਿਤੈ ਨ ਕਾਮ ॥ ਮਿਲੁ ਸਾਧਸੰਗਤਿ ਭਜੁ ਕੇਵਲ ਨਾਮ ॥੧॥ਸਰੰਜਾਮਿ ਲਾਗੁ ਭਵਜਲ ਤਰਨ ਕੈ ॥ ਜਨਮੁ ਬ੍ਰਿਥਾ ਜਾਤ ਰੰਗਿ ਮਾਇਆ ਕੈ ॥੧॥ ਰਹਾਉ ॥ਜਪੁ ਤਪੁ ਸੰਜਮੁ ਧਰਮੁ ਨ ਕਮਾਇਆ ॥ ਸੇਵਾ ਸਾਧ ਨ ਜਾਨਿਆ ਹਰਿ ਰਾਇਆ ॥ਕਹੁ ਨਾਨਕ ਹਮ ਨੀਚ ਕਰੰਮਾ ॥ ਸਰਣਿ ਪਰੇ ਕੀ ਰਾਖਹੁ ਸਰਮਾ ॥੨॥੪॥",
+   "app_en": "Human birth is described as an opportunity to meet Gobind through Naam and the sangat; the hymn urges the mind not to lose that opportunity in attachment and ends in a humble request for protection.",
+   "app_pa": "ਮਨੁੱਖਾ ਜਨਮ ਗੋਬਿੰਦ ਨਾਲ ਮਿਲਾਪ ਦਾ ਮੌਕਾ ਹੈ; ਨਾਮ ਤੇ ਸਾਧਸੰਗਤ ਨਾਲ ਜੁੜ ਕੇ ਮਾਇਆ ਦੇ ਮੋਹ ਵਿੱਚ ਮੌਕਾ ਨਾ ਗੁਆਉਣ ਦੀ ਸੇਧ ਹੈ ਅਤੇ ਅੰਤ ਵਿੱਚ ਸ਼ਰਨ ਦੀ ਬੇਨਤੀ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:savaiya-dohira",
+   "id": "rehras.savaiya01.line01",
+   "gurmukhi": "ਸ੍ਵੈਯਾ ॥ਪਾਂਇ ਗਹੇ ਜਬ ਤੇ ਤੁਮਰੇ ਤਬ ਤੇ ਕੋਊ ਆਂਖ ਤਰੇ ਨਹੀ ਆਨਯੋ ॥ਰਾਮ ਰਹੀਮ ਪੁਰਾਨ ਕੁਰਾਨ ਅਨੇਕ ਕਹੈਂ ਮਤ ਏਕ ਨ ਮਾਨਯੋ ॥ਸਿੰਮ੍ਰਿਤਿ ਸਾਸਤ੍ਰ ਬੇਦ ਸਭੈ ਬਹੁ ਭੇਦ ਕਹੈ ਹਮ ਏਕ ਨ ਜਾਨਯੋ ॥ਸ੍ਰੀ ਅਸਿਪਾਨ ਕ੍ਰਿਪਾ ਤੁਮਰੀ ਕਰਿ ਮੈ ਨ ਕਹਯੋ ਸਭ ਤੋਹਿ ਬਖਾਨਯੋ ॥੧॥",
+   "app_en": "The poet takes refuge at the Divine feet, declining to make another ultimate refuge; Rama, Rahim and named scriptural traditions appear in a strong comparison that ends by attributing the words spoken to Asipan’s grace.",
+   "app_pa": "ਕਵੀ ਪ੍ਰਭੂ ਦੇ ਚਰਨਾਂ ਦੀ ਸ਼ਰਨ ਲੈ ਕੇ ਹੋਰ ਅੰਤਿਮ ਆਸਰਾ ਨਾ ਭਾਲਣ ਦੀ ਗੱਲ ਕਰਦਾ ਹੈ; ਰਾਮ-ਰਹੀਮ ਤੇ ਧਾਰਮਿਕ ਗ੍ਰੰਥਾਂ ਦਾ ਜ਼ਿਕਰ ਕਰਕੇ ਅੰਤ ਵਿੱਚ ਆਪਣੇ ਕਹੇ ਬਚਨਾਂ ਦਾ ਸਿਹਰਾ ਅਸਿਪਾਨ ਦੀ ਕਿਰਪਾ ਨੂੰ ਦਿੰਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    },
+    {
+     "kind": "softened",
+     "severity": "S1",
+     "note": "The Swaiya's statement about Ram, Rahim, Puran, Quran, Simritis, Shastras and Vedas (ਮਤ ਏਕ ਨ ਮਾਨਯੋ … ਹਮ ਏਕ ਨ ਜਾਨਯੋ) is not conveyed: they \"appear in a strong comparison\"."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:savaiya-dohira",
+   "id": "rehras.dohira01.line01",
+   "gurmukhi": "ਦੋਹਰਾ ॥ਸਗਲ ਦੁਆਰ ਕਉ ਛਾਡਿ ਕੈ ਗਹਯੋ ਤੁਹਾਰੋ ਦੁਆਰ ॥ਬਾਂਹਿ ਗਹੇ ਕੀ ਲਾਜ ਅਸਿ ਗੋਬਿੰਦ ਦਾਸ ਤੁਹਾਰ ॥",
+   "app_en": "Leaving every other doorway, the poet seeks the Divine doorway and asks the One to honour the protection of a servant who has grasped that refuge.",
+   "app_pa": "ਹੋਰ ਸਭ ਦਰ ਛੱਡ ਕੇ ਕਵੀ ਪ੍ਰਭੂ ਦੇ ਦਰ ਦੀ ਸ਼ਰਨ ਲੈਂਦਾ ਹੈ ਅਤੇ ਬੇਨਤੀ ਕਰਦਾ ਹੈ ਕਿ ਆਪਣੀ ਬਾਂਹ ਫੜੇ ਸੇਵਕ ਦੀ ਲਾਜ ਰੱਖ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:mundawani-slok",
+   "id": "rehras.mundawani.line01",
+   "gurmukhi": "ਮੁੰਦਾਵਣੀ ਮਹਲਾ ੫ ॥ਥਾਲ ਵਿਚਿ ਤਿੰਨਿ ਵਸਤੂ ਪਈਓ ਸਤੁ ਸੰਤੋਖੁ ਵੀਚਾਰੋ ॥ਅੰਮ੍ਰਿਤ ਨਾਮੁ ਠਾਕੁਰ ਕਾ ਪਇਓ ਜਿਸ ਕਾ ਸਭਸੁ ਅਧਾਰੋ ॥ਜੇ ਕੋ ਖਾਵੈ ਜੇ ਕੋ ਭੁੰਚੈ ਤਿਸ ਕਾ ਹੋਇ ਉਧਾਰੋ ॥ਏਹ ਵਸਤੁ ਤਜੀ ਨਹ ਜਾਈ ਨਿਤ ਨਿਤ ਰਖੁ ਉਰਿ ਧਾਰੋ ॥ਤਮ ਸੰਸਾਰੁ ਚਰਨ ਲਗਿ ਤਰੀਐ ਸਭੁ ਨਾਨਕ ਬ੍ਰਹਮ ਪਸਾਰੋ ॥੧॥",
+   "app_en": "In the poetic platter lie truth, contentment and reflective understanding, together with the nourishing Naam of the Lord; those who receive and live this gift are pictured as crossing worldly darkness.",
+   "app_pa": "ਰੂਪਕ ਵਾਲੇ ਥਾਲ ਵਿੱਚ ਸਤ, ਸੰਤੋਖ ਤੇ ਵਿਚਾਰ ਦੀਆਂ ਤਿੰਨ ਵਸਤਾਂ ਹਨ; ਹਰਿ ਦਾ ਅੰਮ੍ਰਿਤ ਨਾਮ ਸਹਾਰਾ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਮਨ ਵਿੱਚ ਵਸਾਉਣ ਵਾਲਾ ਭਵਜਲ ਤੋਂ ਪਾਰ ਹੋਣ ਦੀ ਸੇਧ ਲੈਂਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    }
+   ]
+  },
+  {
+   "set": "H",
+   "part": "rehras:mundawani-slok",
+   "id": "rehras.slok.line01",
+   "gurmukhi": "ਸਲੋਕ ਮਹਲਾ ੫ ॥ਤੇਰਾ ਕੀਤਾ ਜਾਤੋ ਨਾਹੀ ਮੈਨੋ ਜੋਗੁ ਕੀਤੋਈ ॥ਮੈ ਨਿਰਗੁਣਿਆਰੇ ਕੋ ਗੁਣੁ ਨਾਹੀ ਆਪੇ ਤਰਸੁ ਪਇਓਈ ॥ਤਰਸੁ ਪਇਆ ਮਿਹਰਾਮਤਿ ਹੋਈ ਸਤਿਗੁਰੁ ਸਜਣੁ ਮਿਲਿਆ ॥ਨਾਨਕ ਨਾਮੁ ਮਿਲੈ ਤਾਂ ਜੀਵਾਂ ਤਨੁ ਮਨੁ ਥੀਵੈ ਹਰਿਆ ॥੧॥",
+   "app_en": "The speaker admits that the Divine gifts cannot be fully understood, expresses humility and gratitude for compassion and the True Guru, and describes Naam as bringing renewed life to body and mind.",
+   "app_pa": "ਕਵੀ ਮੰਨਦਾ ਹੈ ਕਿ ਪ੍ਰਭੂ ਦੀਆਂ ਦਾਤਾਂ ਪੂਰੀਆਂ ਨਹੀਂ ਸਮਝੀਆਂ ਜਾਂਦੀਆਂ; ਨਿਮਰਤਾ ਨਾਲ ਕਿਰਪਾ ਤੇ ਸਤਿਗੁਰੂ ਦਾ ਸ਼ੁਕਰ ਕਰਦਾ ਅਤੇ ਨਾਮ ਨੂੰ ਮਨ-ਤਨ ਦੀ ਹਰਿਆਵਲ ਦਾ ਆਸਰਾ ਦੱਸਦਾ ਹੈ।",
+   "observations": [
+    {
+     "kind": "summary_not_line_meaning",
+     "severity": "S1",
+     "note": "One short summary stands in for a whole run of tuks; individual lines have no meaning of their own."
+    },
+    {
+     "kind": "reporting_voice",
+     "severity": "S1",
+     "note": "Guru Arjan Dev Ji called \"the speaker\" / \"ਕਵੀ\"."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "glp.source-integrity-browser.v1",
+  "startedAtUtc": "2026-11-25T20:26:54.816Z",
+  "engine": "Chromium",
+  "checks": [
+    {
+      "kind": "japji",
+      "name": "Unchanged published source passes SRI, every line hash and complete-object verification",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Pending real WebCrypto leaves scripture unrendered and controls disabled",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Browser SRI rejects a changed source JavaScript byte stream",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Missing verification module fails closed",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Changed text with matching stored hash is caught after legitimate SRI",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Missing source unit is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Changed Ang metadata is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "japji",
+      "name": "Reordered lines are caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Unchanged published source passes SRI, every line hash and complete-object verification",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Pending real WebCrypto leaves scripture unrendered and controls disabled",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Browser SRI rejects a changed source JavaScript byte stream",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Missing verification module fails closed",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Changed text with matching stored hash is caught after legitimate SRI",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Missing source unit is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Changed Ang metadata is caught before render",
+      "status": "passed"
+    },
+    {
+      "kind": "sukhmani",
+      "name": "Reordered lines are caught before render",
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "limitations": [
+    "Ephemeral desktop Chromium on localhost; no physical iPhone or Safari verification.",
+    "Runtime corruption is deliberately injected immediately before the production reader executes, after the original data passes SRI.",
+    "Digest-delay coverage waits on the real WebCrypto result; it does not substitute a passing digest."
+  ],
+  "browserVersion": "153.0.8010.12",
+  "completedAtUtc": "2026-11-25T20:27:01.509Z",
+  "status": "PASS"
+}

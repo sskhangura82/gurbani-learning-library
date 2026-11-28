@@ -1,0 +1,469 @@
+{
+ "reference": "Shabad OS Database v5.0.0-next.0, asset SSA2",
+ "referenceLinesInAshtpadi17": 84,
+ "referenceUnits": {
+  "salok": {
+   "lines": 2,
+   "pages": [
+    285
+   ],
+   "first": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+   "last": "ਹੈ ਭਿ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭਿ ਸਚੁ ॥੧॥"
+  },
+  "headings": {
+   "lines": 2,
+   "pages": [
+    285
+   ],
+   "first": "ਸਲੋਕੁ ॥",
+   "last": "ਅਸਟਪਦੀ ॥"
+  },
+  "pauri-1": {
+   "lines": 10,
+   "pages": [
+    285
+   ],
+   "first": "ਚਰਨ ਸਤਿ ਸਤਿ ਪਰਸਨਹਾਰ ॥",
+   "last": "ਨਾਨਕ ਸਤਿ ਸਤਿ ਪ੍ਰਭੁ ਸੋਇ ॥੧॥"
+  },
+  "pauri-2": {
+   "lines": 10,
+   "pages": [
+    285
+   ],
+   "first": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+   "last": "ਨਾਰਾਇਨ ਮਿਲੇ ਨਾਨਕ ਏਕ ॥੨॥"
+  },
+  "pauri-3": {
+   "lines": 10,
+   "pages": [
+    285
+   ],
+   "first": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+   "last": "ਨਾਨਕ ਸੋ ਸੇਵਕੁ ਸਾਸਿ ਸਾਸਿ ਸਮਾਰੈ ॥੩॥"
+  },
+  "pauri-4": {
+   "lines": 10,
+   "pages": [
+    285
+   ],
+   "first": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+   "last": "ਨਾਨਕ ਸੋ ਸੇਵਕੁ ਦਹ ਦਿਸਿ ਪ੍ਰਗਟਾਇਆ ॥੪॥"
+  },
+  "pauri-5": {
+   "lines": 10,
+   "pages": [
+    285,
+    286
+   ],
+   "first": "ਨੀਕੀ ਕੀਰੀ ਮਹਿ ਕਲ ਰਾਖੈ ॥",
+   "last": "ਜਪਿ ਨਾਨਕ ਪ੍ਰਭ ਅਲਖ ਵਿਡਾਣੀ ॥੫॥"
+  },
+  "pauri-6": {
+   "lines": 10,
+   "pages": [
+    286
+   ],
+   "first": "ਬਾਰੰ ਬਾਰ ਬਾਰ ਪ੍ਰਭੁ ਜਪੀਐ ॥",
+   "last": "ਕਹੁ ਨਾਨਕ ਜਨ ਕੈ ਸਦ ਕਾਮ ॥੬॥"
+  },
+  "pauri-7": {
+   "lines": 10,
+   "pages": [
+    286
+   ],
+   "first": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+   "last": "ਕਹੁ ਨਾਨਕ ਸੇਈ ਜਨ ਪੂਰੇ ॥੭॥"
+  },
+  "pauri-8": {
+   "lines": 10,
+   "pages": [
+    286
+   ],
+   "first": "ਮਨ ਮੇਰੇ ਤਿਨ ਕੀ ਓਟ ਲੇਹਿ ॥",
+   "last": "ਨਾਨਕ ਤਿਸੁ ਜਨ ਕੇ ਪੂਜਹੁ ਸਦ ਪੈਰਾ ॥੮॥੧੭॥"
+  }
+ },
+ "units": [
+  {
+   "unit": "salok",
+   "cue": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "285",
+   "angInReference": [
+    285
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਆਦਿ",
+     "roman": "ād",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਜੁਗਾਦਿ",
+     "roman": "jugād",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਸਤਿ",
+     "roman": "sat",
+     "inThisUnitExactly": false,
+     "foundInstead": [
+      "pauri-1",
+      "pauri-2"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": "pauri-1",
+   "cue": "ਚਰਨ ਸਤਿ ਸਤਿ ਪਰਸਨਹਾਰ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "285",
+   "angInReference": [
+    285
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਚਰਨ",
+     "roman": "charan",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਦਰਸਨੁ",
+     "roman": "darsan",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਸੁਰਤਿ",
+     "roman": "surat",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  },
+  {
+   "unit": "pauri-2",
+   "cue": "ਸਤਿ ਸਰੂਪੁ ਰਿਦੈ ਜਿਨਿ ਮਾਨਿਆ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "285",
+   "angInReference": [
+    285
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਰਿਦੈ",
+     "roman": "ridai",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਬਿਬੇਕ",
+     "roman": "bibek",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਨਿਰਭਉ",
+     "roman": "nirbhau",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  },
+  {
+   "unit": "pauri-3",
+   "cue": "ਠਾਕੁਰ ਕਾ ਸੇਵਕੁ ਆਗਿਆਕਾਰੀ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "285",
+   "angInReference": [
+    285
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਸੇਵਕੁ",
+     "roman": "sevak",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਨਿਰਮਲ ਰੀਤਿ",
+     "roman": "nirmal rīt",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਸਾਸਿ ਸਾਸਿ",
+     "roman": "sās sās",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  },
+  {
+   "unit": "pauri-4",
+   "cue": "ਅਪੁਨੇ ਜਨ ਕਾ ਪਰਦਾ ਢਾਕੈ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "285",
+   "angInReference": [
+    285
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਪਰਦਾ ਢਾਕੈ",
+     "roman": "pardā dhākai",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਪਤਿ",
+     "roman": "pat",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਦਇਆ",
+     "roman": "dayā",
+     "inThisUnitExactly": false,
+     "foundInstead": [
+      "pauri-3"
+     ]
+    }
+   ]
+  },
+  {
+   "unit": "pauri-5",
+   "cue": "ਨੀਕੀ ਕੀਰੀ ਮਹਿ ਕਲ ਰਾਖੈ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "285–286",
+   "angInReference": [
+    285,
+    286
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਕੀਰੀ",
+     "roman": "kīrī",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਕਲ",
+     "roman": "kal",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਅਲਖ",
+     "roman": "alakh",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  },
+  {
+   "unit": "pauri-6",
+   "cue": "ਬਾਰੰ ਬਾਰ ਬਾਰ ਪ੍ਰਭੁ ਜਪੀਐ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "286",
+   "angInReference": [
+    286
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਬਾਰੰ ਬਾਰ",
+     "roman": "bāraṅ bār",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਨਾਮੁ",
+     "roman": "nām",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਤ੍ਰਿਪਤਾਨੇ",
+     "roman": "tripṭāne",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  },
+  {
+   "unit": "pauri-7",
+   "cue": "ਬੋਲਹੁ ਜਸੁ ਜਿਹਬਾ ਦਿਨੁ ਰਾਤਿ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "286",
+   "angInReference": [
+    286
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਹੁਕਮੁ",
+     "roman": "hukam",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਹਜੂਰੇ",
+     "roman": "hajūre",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਆਠ ਪਹਰ",
+     "roman": "āṭh pahar",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  },
+  {
+   "unit": "pauri-8",
+   "cue": "ਮਨ ਮੇਰੇ ਤਿਨ ਕੀ ਓਟ ਲੇਹਿ ॥",
+   "cueIsFirstLineOfUnit": true,
+   "cueFoundExactlyInUnit": true,
+   "angClaimed": "286",
+   "angInReference": [
+    286
+   ],
+   "angMatches": true,
+   "nfcStable": true,
+   "vocabulary": [
+    {
+     "word": "ਓਟ",
+     "roman": "oṭ",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਸਰਨਿ",
+     "roman": "saran",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    },
+    {
+     "word": "ਆਵਨੁ ਜਾਨੁ",
+     "roman": "āvan jān",
+     "inThisUnitExactly": true,
+     "foundInstead": null
+    }
+   ]
+  }
+ ],
+ "gurmukhiQuotedInEnglish": [
+  {
+   "unit": "salok",
+   "field": "deep",
+   "text": "ਭੀ",
+   "wordInAshtpadi17": false
+  },
+  {
+   "unit": "salok",
+   "field": "deep",
+   "text": "ਭਿ",
+   "wordInAshtpadi17": true
+  },
+  {
+   "unit": "salok",
+   "field": "deep",
+   "text": "ਸਤਿ",
+   "wordInAshtpadi17": true
+  }
+ ],
+ "japjiLine": "ਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥",
+ "sukhmaniSalokLine2": "ਹੈ ਭਿ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭਿ ਸਚੁ ॥੧॥",
+ "cueFoundInAppReaderData": {
+  "salok": [
+   "js/sukhmani-data.js",
+   "js/japji-full-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-1": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-2": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-3": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-4": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-5": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-6": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-7": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ],
+  "pauri-8": [
+   "js/sukhmani-data.js",
+   "evidence/sukhmani-srigranth-gurmukhi.json"
+  ]
+ },
+ "summary": {
+  "units": 9,
+  "cuesExact": 9,
+  "cuesAreFirstLine": 9,
+  "angsMatch": 9,
+  "vocabularyWords": 27,
+  "vocabularyInItsUnit": 25,
+  "vocabularyNotInItsUnit": [
+   [
+    "salok",
+    "ਸਤਿ",
+    [
+     "pauri-1",
+     "pauri-2"
+    ]
+   ],
+   [
+    "pauri-4",
+    "ਦਇਆ",
+    [
+     "pauri-3"
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "totalHeadwords": 1508,
+ "byStatus": {
+  "in its own passage, as written": 1498,
+  "in its own passage only as part of a longer word": 4,
+  "each word is in its own passage, but not side by side": 2,
+  "elsewhere in the same composition, not in its own passage": 1,
+  "not in the composition as written": 3
+ },
+ "byFile": {
+  "js/japji-lessons.js": {
+   "in its own passage, as written": 162
+  },
+  "js/sukhmani-teaching.js": {
+   "in its own passage, as written": 216,
+   "in its own passage only as part of a longer word": 1,
+   "each word is in its own passage, but not side by side": 2
+  },
+  "nitnem course": {
+   "in its own passage, as written": 1108,
+   "in its own passage only as part of a longer word": 3,
+   "elsewhere in the same composition, not in its own passage": 1,
+   "not in the composition as written": 3
+  },
+  "js/content.js": {
+   "in its own passage, as written": 12
+  }
+ },
+ "exceptions": [
+  {
+   "file": "js/sukhmani-teaching.js",
+   "composition": "sukhmani",
+   "passage": "11",
+   "field": "vocabulary",
+   "headword": "ਹੁਕਮ",
+   "headwordField": "ਹੁਕਮ",
+   "gloss": "Divine command or ordering",
+   "status": "in its own passage only as part of a longer word",
+   "passageKnown": true,
+   "passageHas": [
+    "ਹੁਕਮਿ",
+    "ਹੁਕਮੇ"
+   ]
+  },
+  {
+   "file": "js/sukhmani-teaching.js",
+   "composition": "sukhmani",
+   "passage": "18",
+   "field": "vocabulary",
+   "headword": "ਨਿਰਗੁਨੁ ਸਰਗੁਨੁ",
+   "headwordField": "ਨਿਰਗੁਨੁ ਸਰਗੁਨੁ",
+   "gloss": "beyond qualities and manifest with qualities",
+   "status": "each word is in its own passage, but not side by side",
+   "passageKnown": true,
+   "passageHas": []
+  },
+  {
+   "file": "js/sukhmani-teaching.js",
+   "composition": "sukhmani",
+   "passage": "23",
+   "field": "vocabulary",
+   "headword": "ਅਨਹਤ ਨਾਦ",
+   "headwordField": "ਅਨਹਤ ਨਾਦ",
+   "gloss": "unstruck sound; the continuous spiritual resonance of the passage",
+   "status": "each word is in its own passage, but not side by side",
+   "passageKnown": true,
+   "passageHas": []
+  },
+  {
+   "file": "nitnem course",
+   "composition": "sohila",
+   "passage": "sohila01",
+   "field": "study.words",
+   "headword": "ਸਿਰਜਣਹਾਰ",
+   "headwordField": "ਸਿਰਜਣਹਾਰ",
+   "gloss": "Creator",
+   "status": "in its own passage only as part of a longer word",
+   "passageKnown": true,
+   "passageHas": [
+    "ਸਿਰਜਣਹਾਰੋ"
+   ]
+  },
+  {
+   "file": "nitnem course",
+   "composition": "anand",
+   "passage": "anand06",
+   "field": "study.words",
+   "headword": "ਲਿਵ",
+   "headwordField": "ਲਿਵ",
+   "gloss": "Loving concentration or attunement",
+   "status": "elsewhere in the same composition, not in its own passage",
+   "passageKnown": true,
+   "passageHas": [
+    "ਲਿਵੈ"
+   ]
+  },
+  {
+   "file": "nitnem course",
+   "composition": "jaap",
+   "passage": "(whole composition)",
+   "field": "banis.words",
+   "headword": "ਕ੍ਰਿਪਾਲ",
+   "headwordField": "ਕ੍ਰਿਪਾਲ",
+   "gloss": "Compassionate",
+   "status": "in its own passage only as part of a longer word",
+   "passageKnown": true,
+   "passageHas": [
+    "ਕ੍ਰਿਪਾਲੇ",
+    "ਕ੍ਰਿਪਾਲੰ"
+   ]
+  },
+  {
+   "file": "nitnem course",
+   "composition": "chaupai",
+   "passage": "(whole composition)",
+   "field": "banis.words",
+   "headword": "ਚਰਨ",
+   "headwordField": "ਚਰਨ",
+   "gloss": "Feet; often a metaphor for humble refuge",
+   "status": "in its own passage only as part of a longer word",
+   "passageKnown": true,
+   "passageHas": [
+    "ਚਰਨਨ"
+   ]
+  },
+  {
+   "file": "nitnem course",
+   "composition": "rehras",
+   "passage": "(whole composition)",
+   "field": "banis.words",
+   "headword": "ਰਹਿਰਾਸਿ",
+   "headwordField": "ਰਹਿਰਾਸਿ",
+   "gloss": "Evening prayer or devotional routine",
+   "status": "not in the composition as written",
+   "passageKnown": true,
+   "passageHas": []
+  },
+  {
+   "file": "nitnem course",
+   "composition": "rehras",
+   "passage": "(whole composition)",
+   "field": "banis.words",
+   "headword": "ਬਖ਼ਸ਼ਿਸ਼",
+   "headwordField": "ਬਖ਼ਸ਼ਿਸ਼",
+   "gloss": "Grace or gift",
+   "status": "not in the composition as written",
+   "passageKnown": true,
+   "passageHas": []
+  },
+  {
+   "file": "nitnem course",
+   "composition": "rehras",
+   "passage": "(whole composition)",
+   "field": "banis.words",
+   "headword": "ਅਰਦਾਸ",
+   "headwordField": "ਅਰਦਾਸ",
+   "gloss": "Supplication; kept as a companion practice",
+   "status": "not in the composition as written",
+   "passageKnown": true,
+   "passageHas": []
+  }
+ ]
+}

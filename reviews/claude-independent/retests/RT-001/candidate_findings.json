@@ -1,0 +1,32 @@
+[
+ {
+  "id": "RT1-01",
+  "severity": "S1",
+  "applies_to": "Candidate PR #40 only (head 09e829efd63e99fc5c3f5f849f122a49b0dc22a9). Not a defect of the published version, which has no kept-aside items.",
+  "area": "Reliability",
+  "title": "Kept-aside notes and bookmarks are destroyed, without a word, when an older copy of the Japji reader opens the same saved record",
+  "location": "js/continuous-core.js normalise() — the saved record gains a new part, keptAside, but keeps version number 2; js/shared-learning.js read() and save(). The published reader (a3476ac) accepts a version-2 record as its own and writes it back from the parts it knows.",
+  "composition_or_verse": "Japji Sahib reader, saved record glp001.continuous.v2",
+  "evidence": "Two ordinary routes, both reproduced with synthetic notes. (1) Rollback: the candidate kept aside a note on an unknown line, a 12,500-character note and an unknown bookmark; the site was then rolled back to the published version; on the very next opening all three were gone from storage, with no message; rolling forward again did not bring them back. (2) Old tab: a Japji tab opened before the update stayed open; in a new tab the updated reader restored a backup holding kept-aside items; the reader then went back to the old tab and simply kept reading; the kept-aside items were gone, the old tab said nothing, and the notice in the new tab disappeared. An ordinary note written in the old tab survived. Evidence: retests/RT-001/evidence/r02_older_copy_of_reader.json. The candidate's own Saved-learning screen already says \"Close old reader tabs after updating\", so the hazard was foreseen but not prevented.",
+  "why_it_matters": "This repair exists to end silent loss of notes. As written it can itself lose them silently, and a rollback — the standard remedy if a release misbehaves — would do it for every reader who has such items.",
+  "proposed_correction": "Keep kept-aside items under their own storage name, which older copies of the reader never read or write. (Raising the record's version number also protects them — the published reader was tested to leave a newer-version record untouched — but it stops an older copy from saving anything at all until it is updated, so the separate name is kinder.)",
+  "acceptance_test": "The rollback test and the old-tab test both end with every kept-aside item still in storage and still shown after rolling forward. Both tests are added to the browser suite in the quality gate.",
+  "status": "OPEN — recommended before merge",
+  "origin": "RETEST RT-001"
+ },
+ {
+  "id": "RT1-02",
+  "severity": "GATE",
+  "applies_to": "Candidate PR #40 only",
+  "area": "Release condition, not a defect",
+  "title": "Before this is made public: open Japji and Sukhmani once in real Safari on an iPhone, online and in airplane mode",
+  "location": "full-japji.html and sukhmani.html (file-integrity tags on two script files); js/source-integrity.js (needs WebCrypto); sw.js (the offline copy answers every request first)",
+  "composition_or_verse": "Japji Sahib and Sukhmani Sahib readers",
+  "evidence": "These two readers now show nothing at all when a check fails. That is the right behaviour — and it means any difference in how Safari handles the file check, WebCrypto or the offline worker would leave them blank for every iPhone reader, with the backup button switched off (CI-R-08). What has been shown: every test passes in Chromium; in the WebKit engine on Linux (WebKitGTK 2.52.6 — the engine family Safari is built on, but not Safari and not iOS) the genuine text opens online and from the offline copy, and altered text is refused by both layers (retests/RT-001/evidence/r01_webkit_engine_candidate.json). What has not been shown by anyone: Safari itself, iOS, the Home Screen app, a physical device.",
+  "why_it_matters": "A fail-closed check raises the cost of a platform surprise from 'a small flaw' to 'two readers gone'.",
+  "proposed_correction": "No code change. A two-minute check on one iPhone before release, or a staged release.",
+  "acceptance_test": "On an iPhone, in Safari and from the Home Screen icon, Japji Sahib and Sukhmani Sahib open with their text, first online and then in airplane mode.",
+  "status": "OPEN — needs a device; cannot be done by either AI reviewer",
+  "origin": "RETEST RT-001"
+ }
+]

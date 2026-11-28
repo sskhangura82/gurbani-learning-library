@@ -1,0 +1,96 @@
+{
+ "builder_test_window_390x844": [
+  {
+   "timeline_ms_state_scroll": [
+    [
+     242,
+     "ON SCREEN|normal",
+     325
+    ],
+    [
+     371,
+     "ON SCREEN|immersive",
+     24
+    ]
+   ],
+   "msOnScreen": "stayed on screen"
+  },
+  {
+   "timeline_ms_state_scroll": [
+    [
+     187,
+     "ON SCREEN|normal",
+     325
+    ],
+    [
+     327,
+     "ON SCREEN|immersive",
+     24
+    ]
+   ],
+   "msOnScreen": "stayed on screen"
+  },
+  {
+   "timeline_ms_state_scroll": [
+    [
+     170,
+     "ON SCREEN|normal",
+     325
+    ],
+    [
+     298,
+     "ON SCREEN|immersive",
+     24
+    ]
+   ],
+   "msOnScreen": "stayed on screen"
+  }
+ ],
+ "phone_emulation": [
+  {
+   "timeline_ms_state_scroll": [
+    [
+     228,
+     "ON SCREEN|normal",
+     325
+    ],
+    [
+     363,
+     "ON SCREEN|immersive",
+     24
+    ]
+   ],
+   "msOnScreen": "stayed on screen"
+  },
+  {
+   "timeline_ms_state_scroll": [
+    [
+     256,
+     "ON SCREEN|normal",
+     325
+    ],
+    [
+     382,
+     "ON SCREEN|immersive",
+     24
+    ]
+   ],
+   "msOnScreen": "stayed on screen"
+  },
+  {
+   "timeline_ms_state_scroll": [
+    [
+     190,
+     "ON SCREEN|normal",
+     325
+    ],
+    [
+     339,
+     "ON SCREEN|immersive",
+     24
+    ]
+   ],
+   "msOnScreen": "stayed on screen"
+  }
+ ]
+}

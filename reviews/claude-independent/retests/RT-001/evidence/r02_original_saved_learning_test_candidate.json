@@ -1,0 +1,97 @@
+{
+ "japji_note": {
+  "persisted": {
+   "mool.line01": "JAPJI-SYNTH <img src=x onerror=\"window.__xss=1\"><svg onload=\"window.__xss=2\"></svg><b id=\"inj\">B</b>"
+  },
+  "textarea_value_after_reload": "JAPJI-SYNTH <img src=x onerror=\"window.__xss=1\"><svg onload=\"window.__xss=2\"></svg><b id=\"inj\">B</b>",
+  "injected_element": false,
+  "xss": null,
+  "dialog": "PERSONAL NOTES |  | Your reflection | × |  | ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥ |  | Mool Mantar · line 1 |  | Only this tab can edit reflections until you close this panel. Changes save in this browser. |  | Export learning"
+ },
+ "japji_corrupt_truncated_json": {
+  "lines_rendered": 385,
+  "raw_unchanged": true,
+  "raw_still_contains_note": true,
+  "other_keys": [
+   "glp001.continuous.v2"
+  ],
+  "messages": [
+   "Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup.\n\nView saved learning",
+   "Saved learning needs recovery and has not been overwritten. Export a backup."
+  ],
+  "page_errors": [],
+  "console": [
+   [
+    "error",
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+   ]
+  ],
+  "raw_unchanged_after_scrolling": true,
+  "note_survives_after_scrolling": true
+ },
+ "japji_corrupt_wrong_version": {
+  "lines_rendered": 385,
+  "raw_unchanged": true,
+  "raw_still_contains_note": true,
+  "other_keys": [
+   "glp001.continuous.v2"
+  ],
+  "messages": [
+   "Your saved learning needs recovery. Its original contents have been kept unchanged; you can export a backup.\n\nView saved learning",
+   "Saved learning needs recovery and has not been overwritten. Export a backup."
+  ],
+  "page_errors": [],
+  "console": [
+   [
+    "error",
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+   ]
+  ],
+  "raw_unchanged_after_scrolling": true,
+  "note_survives_after_scrolling": true
+ },
+ "japji_corrupt_unknown_line": {
+  "lines_rendered": 385,
+  "raw_unchanged": false,
+  "raw_still_contains_note": true,
+  "other_keys": [
+   "glp001.continuous.v2"
+  ],
+  "messages": [
+   "2 saved items were kept aside because this reader could not place or edit them. You can view and export them. Other learning can still be saved.\n\nView saved learning"
+  ],
+  "page_errors": [],
+  "console": [
+   [
+    "error",
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."
+   ]
+  ],
+  "raw_unchanged_after_scrolling": false,
+  "note_survives_after_scrolling": true
+ },
+ "sukhmani_corrupt_truncated_json": {
+  "lines_rendered": 2027,
+  "raw_unchanged": true,
+  "note_survives": true,
+  "keys": [
+   "glp001.sukhmani.v1"
+  ],
+  "messages": [
+   "Saved learning could not be read. Its original record has been preserved; download a backup for recovery."
+  ],
+  "page_errors": []
+ },
+ "sukhmani_corrupt_unknown_line": {
+  "lines_rendered": 2027,
+  "raw_unchanged": true,
+  "note_survives": true,
+  "keys": [
+   "glp001.sukhmani.v1"
+  ],
+  "messages": [
+   "Saved learning refers to a line outside this reading pack. The original record has been preserved."
+  ],
+  "page_errors": []
+ }
+}

@@ -1,0 +1,228 @@
+{
+ "note": "emulation only (Chromium, iPhone 14 profile); made-up notes only",
+ "filesInOfflineList": 57,
+ "readers": {
+  "japji": {
+   "before_damage": {
+    "check": "verified",
+    "gurbaniLinesShown": 385
+   },
+   "savedRecordsBefore": {
+    "glp001.continuous.retained.v1": 135,
+    "glp001.continuous.v2": 402,
+    "glp001.sukhmani.v1": 228
+   },
+   "damage": "altered-in-offline-copy",
+   "reopened_online": {
+    "check": "failed",
+    "gurbaniLinesShown": 0,
+    "wordsOnScreen": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup. Export original learning",
+    "exportButton": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "servedByOfflineCopy": true,
+    "exportButtonAfterScrollingToIt": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "export": {
+     "fileArrivedWithinSeconds": 0.1,
+     "fileName": "Gurbani-learning.json",
+     "format": "glp-family-learning",
+     "japjiRecordExact": true,
+     "keptAsideArchiveExact": true,
+     "sukhmaniRecordExact": null,
+     "holdsOrdinaryNote": true,
+     "holdsKeptAsideNote": true,
+     "holdsSukhmaniNote": false
+    },
+    "whatItSaidAfterwards": "Backup download requested. Keep the file and check it before removing any site data. / Original learning backup prepared.",
+    "storageUntouched": true
+   },
+   "reloaded_online": {
+    "check": "failed",
+    "gurbaniLinesShown": 0,
+    "wordsOnScreen": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup. Export original learning",
+    "exportButton": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "servedByOfflineCopy": true,
+    "exportButtonAfterScrollingToIt": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "export": {
+     "fileArrivedWithinSeconds": 0.1,
+     "fileName": "Gurbani-learning.json",
+     "format": "glp-family-learning",
+     "japjiRecordExact": true,
+     "keptAsideArchiveExact": true,
+     "sukhmaniRecordExact": null,
+     "holdsOrdinaryNote": true,
+     "holdsKeptAsideNote": true,
+     "holdsSukhmaniNote": false
+    },
+    "whatItSaidAfterwards": "Backup download requested. Keep the file and check it before removing any site data. / Original learning backup prepared.",
+    "storageUntouched": true
+   },
+   "reopened_with_the_network_off": {
+    "check": "failed",
+    "gurbaniLinesShown": 0,
+    "wordsOnScreen": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup. Export original learning",
+    "exportButton": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "servedByOfflineCopy": true,
+    "exportButtonAfterScrollingToIt": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "export": {
+     "fileArrivedWithinSeconds": 0.1,
+     "fileName": "Gurbani-learning.json",
+     "format": "glp-family-learning",
+     "japjiRecordExact": true,
+     "keptAsideArchiveExact": true,
+     "sukhmaniRecordExact": null,
+     "holdsOrdinaryNote": true,
+     "holdsKeptAsideNote": true,
+     "holdsSukhmaniNote": false
+    },
+    "whatItSaidAfterwards": "Backup download requested. Keep the file and check it before removing any site data. / Original learning backup prepared.",
+    "storageUntouched": true
+   }
+  },
+  "sukhmani": {
+   "before_damage": {
+    "check": "verified",
+    "gurbaniLinesShown": 2027
+   },
+   "savedRecordsBefore": {
+    "glp001.continuous.retained.v1": 146,
+    "glp001.continuous.v2": 90,
+    "glp001.sukhmani.v1": 228
+   },
+   "damage": "altered-in-offline-copy",
+   "reopened_online": {
+    "check": "failed",
+    "gurbaniLinesShown": 0,
+    "wordsOnScreen": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup. Export original learning",
+    "exportButton": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": false
+    },
+    "servedByOfflineCopy": true,
+    "exportButtonAfterScrollingToIt": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "export": {
+     "fileArrivedWithinSeconds": 0.1,
+     "fileName": "sukhmani-learning.json",
+     "format": "glp-sukhmani-learning",
+     "japjiRecordExact": null,
+     "keptAsideArchiveExact": null,
+     "sukhmaniRecordExact": true,
+     "holdsOrdinaryNote": false,
+     "holdsKeptAsideNote": false,
+     "holdsSukhmaniNote": true
+    },
+    "whatItSaidAfterwards": "Backup download requested. Keep the file and check it before removing any site data. / Scripture verification failed. Original learning export remains available.",
+    "storageUntouched": true
+   },
+   "reloaded_online": {
+    "check": "failed",
+    "gurbaniLinesShown": 0,
+    "wordsOnScreen": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup. Export original learning",
+    "exportButton": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "servedByOfflineCopy": true,
+    "exportButtonAfterScrollingToIt": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "export": {
+     "fileArrivedWithinSeconds": 0.1,
+     "fileName": "sukhmani-learning.json",
+     "format": "glp-sukhmani-learning",
+     "japjiRecordExact": null,
+     "keptAsideArchiveExact": null,
+     "sukhmaniRecordExact": true,
+     "holdsOrdinaryNote": false,
+     "holdsKeptAsideNote": false,
+     "holdsSukhmaniNote": true
+    },
+    "whatItSaidAfterwards": "Backup download requested. Keep the file and check it before removing any site data. / Scripture verification failed. Original learning export remains available.",
+    "storageUntouched": true
+   },
+   "reopened_with_the_network_off": {
+    "check": "failed",
+    "gurbaniLinesShown": 0,
+    "wordsOnScreen": "The original scripture could not be verified, so it has not been displayed. Your saved learning has not been changed. Export your learning before attempting recovery. A normal reload may still use a damaged offline copy. Do not clear website data or remove the installed app until you have checked your backup. Export original learning",
+    "exportButton": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": false
+    },
+    "servedByOfflineCopy": true,
+    "exportButtonAfterScrollingToIt": {
+     "text": "Export original learning",
+     "width": 161,
+     "height": 44,
+     "insideTheScreen": true,
+     "tapReachesIt": true
+    },
+    "export": {
+     "fileArrivedWithinSeconds": 0.1,
+     "fileName": "sukhmani-learning.json",
+     "format": "glp-sukhmani-learning",
+     "japjiRecordExact": null,
+     "keptAsideArchiveExact": null,
+     "sukhmaniRecordExact": true,
+     "holdsOrdinaryNote": false,
+     "holdsKeptAsideNote": false,
+     "holdsSukhmaniNote": true
+    },
+    "whatItSaidAfterwards": "Backup download requested. Keep the file and check it before removing any site data. / Scripture verification failed. Original learning export remains available.",
+    "storageUntouched": true
+   }
+  }
+ }
+}

@@ -1,0 +1,477 @@
+{
+ "part1_same35EditsThroughThePagesDataCheck": {
+  "cases": [
+   {
+    "group": "Gurbani",
+    "name": "one nasal sign dropped from a word that has no dictionary entry (ਸਿੰਮਲ → ਸਿਮਲ)",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "one sign dropped from a word that has a dictionary entry (ਮਿਠਤੁ → ਮਿਠਤ)",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "the text of two rows exchanged (order of the Salok changed)",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "a middle row removed everywhere, counts adjusted",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "the last row of a Salok removed everywhere, counts adjusted",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "the heading row removed everywhere, counts adjusted",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "the closing number changed (॥੧॥ → ॥੨॥)",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "a word repeated",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "a row from the neighbouring Salok appended to Kabir Ji's Salok 7",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "an invisible character inserted in a word",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Gurbani",
+    "name": "pause marks added (; and .)",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Attribution",
+    "name": "the Mahalla 2 Salok attributed to Guru Nanak Dev Ji (field and connection both changed)",
+    "noticed": null,
+    "applyError": "Cannot set properties of undefined (setting 'authorId')"
+   },
+   {
+    "group": "Attribution",
+    "name": "the Mahalla 2 Salok attributed to Guru Nanak Dev Ji (field only)",
+    "noticed": null,
+    "applyError": "Cannot set properties of undefined (setting 'authorId')"
+   },
+   {
+    "group": "Attribution",
+    "name": "Ang changed from 470 to 471 throughout",
+    "noticed": null,
+    "applyError": "Cannot set properties of undefined (setting 'angEnd')"
+   },
+   {
+    "group": "Attribution",
+    "name": "Kabir Ji's Salok given a Raag",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Attribution",
+    "name": "Salok number changed (7 → 8)",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Attribution",
+    "name": "source file fingerprint replaced by another 40 characters",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Status",
+    "name": "lesson marked approved",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Status",
+    "name": "passage marked reviewed",
+    "noticed": null,
+    "applyError": "Cannot set properties of undefined (setting 'review')"
+   },
+   {
+    "group": "Status",
+    "name": "qualified approvals counted as 3",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Status",
+    "name": "edition marked as collated by a person",
+    "noticed": null,
+    "applyError": "Cannot set properties of undefined (setting 'humanCollated')"
+   },
+   {
+    "group": "Status",
+    "name": "file status changed to published",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Status",
+    "name": "concept marked reviewed",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Teaching",
+    "name": "a lesson's meaning reversed (\"It is not self-hatred\" → \"It is self-hatred\")",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Teaching",
+    "name": "Punjabi of one depth blanked",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Teaching",
+    "name": "a dictionary sense tied to a row where the word does not occur",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Teaching",
+    "name": "a dictionary meaning swapped for another word's",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Teaching",
+    "name": "the \"difference\" removed from the Buddhist comparison",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Teaching",
+    "name": "the comparison's reference changed to an insecure address",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Structure",
+    "name": "a connection pointed at an item that does not exist",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Structure",
+    "name": "a connection duplicated under a new id",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Structure",
+    "name": "a connection reversed (concept → passage for \"discusses\")",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Structure",
+    "name": "two items given the same id",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Structure",
+    "name": "an item connected to itself",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   },
+   {
+    "group": "Structure",
+    "name": "course pointing at a lesson that does not exist",
+    "noticed": true,
+    "message": "Not a development knowledge pack"
+   }
+  ],
+  "baselineError": "Not a development knowledge pack",
+  "baselinePasses": false,
+  "total": {
+   "applied": 30,
+   "noticed": 30,
+   "couldNotApply": 5
+  },
+  "byGroup": {
+   "Gurbani": {
+    "cases": 11,
+    "noticed": 11
+   },
+   "Attribution": {
+    "cases": 3,
+    "noticed": 3
+   },
+   "Status": {
+    "cases": 4,
+    "noticed": 4
+   },
+   "Teaching": {
+    "cases": 6,
+    "noticed": 6
+   },
+   "Structure": {
+    "cases": 6,
+    "noticed": 6
+   }
+  }
+ },
+ "part2_theTwoFileDesign": {
+  "cases": [
+   {
+    "group": "scripture",
+    "name": "one letter changed in a line of Gurbani (nasal sign dropped), file pin regenerated",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Line fingerprint mismatch"
+   },
+   {
+    "group": "scripture",
+    "name": "one letter changed AND that line fingerprint recomputed",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Passage fingerprint mismatch"
+   },
+   {
+    "group": "scripture",
+    "name": "two lines of a Salok swapped",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Passage fingerprint mismatch"
+   },
+   {
+    "group": "scripture",
+    "name": "a line removed and the count adjusted",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Pilot source coverage changed"
+   },
+   {
+    "group": "scripture",
+    "name": "the author of a Salok changed (Guru Nanak to Guru Angad)",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Passage fingerprint mismatch"
+   },
+   {
+    "group": "scripture",
+    "name": "the Pauri number changed but the identity left alone",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Structural passage identity mismatch"
+   },
+   {
+    "group": "scripture",
+    "name": "identity and Pauri number changed together (a believable renaming)",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid logical line identity"
+   },
+   {
+    "group": "scripture",
+    "name": "the Ang changed",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid edition locator"
+   },
+   {
+    "group": "scripture",
+    "name": "the edition swapped for an unpinned one",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid occurrence membership"
+   },
+   {
+    "group": "scripture",
+    "name": "the edition marked as human-collated (a false claim of review)",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid scripture status"
+   },
+   {
+    "group": "scripture",
+    "name": "a source witness blob changed",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid edition locator"
+   },
+   {
+    "group": "scripture",
+    "name": "the crosswalk emptied",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Incomplete migration crosswalk"
+   },
+   {
+    "group": "scripture",
+    "name": "two old names pointed at one new line",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Incomplete migration crosswalk"
+   },
+   {
+    "group": "scripture",
+    "name": "a fourth Salok added",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Pilot source coverage changed"
+   },
+   {
+    "group": "scripture",
+    "name": "everything recomputed: line text, line fingerprint, passage fingerprint, file pin",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Source binding stale or wrong: sggs.asa-di-vaar.pauri014.salok01"
+   },
+   {
+    "group": "teaching",
+    "name": "the teaching pack carries its own copy of the lines",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid editorial pack"
+   },
+   {
+    "group": "teaching",
+    "name": "the teaching pack declares a passage node",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Editorial pack attempts to define scripture or its attribution"
+   },
+   {
+    "group": "teaching",
+    "name": "the teaching pack declares an author",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Editorial pack attempts to define scripture or its attribution"
+   },
+   {
+    "group": "teaching",
+    "name": "an editorial title put where the original name belongs",
+    "noticed": false,
+    "refusedBy": null,
+    "message": null
+   },
+   {
+    "group": "teaching",
+    "name": "an extra field smuggled into a passage description",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid editorial passage description"
+   },
+   {
+    "group": "teaching",
+    "name": "a passage description for a passage that does not exist",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid editorial passage description"
+   },
+   {
+    "group": "teaching",
+    "name": "a passage left with no description",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Missing passage description"
+   },
+   {
+    "group": "teaching",
+    "name": "a lesson claims a passage it is not bound to",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Source bindings missing"
+   },
+   {
+    "group": "teaching",
+    "name": "a lesson binding left stale after the passage changed",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Source binding stale or wrong: sggs.asa-di-vaar.pauri014.salok01"
+   },
+   {
+    "group": "teaching",
+    "name": "a dictionary sense points at a line it does not cite",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Source binding stale or wrong: sggs.asa-di-vaar.pauri014.salok01.heading01"
+   },
+   {
+    "group": "teaching",
+    "name": "the teaching status changed to something that sounds approved",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Invalid editorial pack"
+   },
+   {
+    "group": "teaching",
+    "name": "an ordinary teaching edit (a lesson sentence reworded) — must be allowed",
+    "noticed": false,
+    "refusedBy": null,
+    "message": null
+   },
+   {
+    "group": "teaching",
+    "name": "a new concept added — must be allowed",
+    "noticed": false,
+    "refusedBy": null,
+    "message": null
+   },
+   {
+    "group": "pin",
+    "name": "scripture edited and the file pin NOT regenerated (what the page actually ships with)",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Independent scripture digest mismatch"
+   },
+   {
+    "group": "pin",
+    "name": "teaching edited and the teaching pin NOT regenerated",
+    "noticed": true,
+    "refusedBy": "the source/teaching check",
+    "message": "Editorial digest mismatch"
+   }
+  ],
+  "total": {
+   "applied": 30,
+   "noticed": 27
+  },
+  "byGroup": {
+   "scripture": {
+    "cases": 15,
+    "noticed": 15
+   },
+   "teaching": {
+    "cases": 13,
+    "noticed": 10
+   },
+   "pin": {
+    "cases": 2,
+    "noticed": 2
+   }
+  }
+ }
+}

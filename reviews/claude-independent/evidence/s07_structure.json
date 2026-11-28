@@ -1,0 +1,586 @@
+{
+ "japji": {
+  "units": 42,
+  "unit_ids": [
+   "mool",
+   "title",
+   "opening",
+   "pauri01",
+   "pauri02",
+   "pauri03",
+   "pauri04",
+   "pauri05",
+   "pauri06",
+   "pauri07",
+   "pauri08",
+   "pauri09",
+   "pauri10",
+   "pauri11",
+   "pauri12",
+   "pauri13",
+   "pauri14",
+   "pauri15",
+   "pauri16",
+   "pauri17",
+   "pauri18",
+   "pauri19",
+   "pauri20",
+   "pauri21",
+   "pauri22",
+   "pauri23",
+   "pauri24",
+   "pauri25",
+   "pauri26",
+   "pauri27",
+   "pauri28",
+   "pauri29",
+   "pauri30",
+   "pauri31",
+   "pauri32",
+   "pauri33",
+   "pauri34",
+   "pauri35",
+   "pauri36",
+   "pauri37",
+   "pauri38",
+   "closing"
+  ],
+  "lines": 385,
+  "anomalies": [],
+  "pauris": 38
+ },
+ "jaap": {
+  "units": 199,
+  "lines": 782,
+  "anomalies": [],
+  "lines_per_unit_histogram": {
+   "6": 1,
+   "4": 188,
+   "2": 8,
+   "5": 1,
+   "3": 1
+  }
+ },
+ "savaiye": {
+  "units": 10,
+  "lines": 40,
+  "anomalies": [],
+  "lines_per_unit_histogram": {
+   "4": 10
+  }
+ },
+ "chaupai": {
+  "units": 29,
+  "lines": 116,
+  "anomalies": [],
+  "lines_per_unit_histogram": {
+   "4": 29
+  }
+ },
+ "anand": {
+  "units": 40,
+  "lines": 208,
+  "anomalies": [],
+  "lines_per_unit_histogram": {
+   "5": 32,
+   "6": 8
+  }
+ },
+ "sohila": {
+  "units": 5,
+  "lines": 56,
+  "closing": {
+   "sohila01": [
+    [
+     4,
+     1
+    ]
+   ],
+   "sohila02": [
+    [
+     2,
+     2
+    ]
+   ],
+   "sohila03": [
+    [
+     4,
+     3
+    ]
+   ],
+   "sohila04": [
+    [
+     4,
+     4
+    ]
+   ],
+   "sohila05": [
+    [
+     4,
+     5
+    ]
+   ]
+  },
+  "all_marks": {
+   "sohila01": [
+    [
+     "line04",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line06",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line08",
+     [
+      [
+       2
+      ]
+     ]
+    ],
+    [
+     "line10",
+     [
+      [
+       3
+      ]
+     ]
+    ],
+    [
+     "line12",
+     [
+      [
+       4,
+       1
+      ]
+     ]
+    ]
+   ],
+   "sohila02": [
+    [
+     "line03",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line05",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line08",
+     [
+      [
+       2,
+       2
+      ]
+     ]
+    ]
+   ],
+   "sohila03": [
+    [
+     "line03",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line06",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line08",
+     [
+      [
+       2
+      ]
+     ]
+    ],
+    [
+     "line12",
+     [
+      [
+       3
+      ]
+     ]
+    ],
+    [
+     "line14",
+     [
+      [
+       4,
+       3
+      ]
+     ]
+    ]
+   ],
+   "sohila04": [
+    [
+     "line03",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line05",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line07",
+     [
+      [
+       2
+      ]
+     ]
+    ],
+    [
+     "line09",
+     [
+      [
+       3
+      ]
+     ]
+    ],
+    [
+     "line11",
+     [
+      [
+       4,
+       4
+      ]
+     ]
+    ]
+   ],
+   "sohila05": [
+    [
+     "line03",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line05",
+     [
+      [
+       1
+      ]
+     ]
+    ],
+    [
+     "line07",
+     [
+      [
+       2
+      ]
+     ]
+    ],
+    [
+     "line09",
+     [
+      [
+       3
+      ]
+     ]
+    ],
+    [
+     "line11",
+     [
+      [
+       4,
+       5
+      ]
+     ]
+    ]
+   ]
+  },
+  "anomalies": []
+ },
+ "rehras": {
+  "units": 44,
+  "lines": 159,
+  "closing": {
+   "rehras.sggs01": [
+    [
+     1
+    ]
+   ],
+   "rehras.sggs02": [
+    [
+     4,
+     2
+    ]
+   ],
+   "rehras.sggs03": [
+    [
+     4,
+     3
+    ]
+   ],
+   "rehras.sggs04": [
+    [
+     4,
+     4
+    ]
+   ],
+   "rehras.sggs05": [
+    [
+     4,
+     5
+    ]
+   ],
+   "rehras.sggs06": [
+    [
+     5,
+     1
+    ]
+   ],
+   "rehras.sggs07": [
+    [
+     4,
+     2
+    ]
+   ],
+   "rehras.sggs08": [
+    [
+     2,
+     3
+    ]
+   ],
+   "rehras.sggs09": [
+    [
+     2,
+     4
+    ]
+   ],
+   "rehras.chaupai01": [
+    [
+     1
+    ]
+   ],
+   "rehras.chaupai02": [
+    [
+     2
+    ]
+   ],
+   "rehras.chaupai03": [
+    [
+     3
+    ]
+   ],
+   "rehras.chaupai04": [
+    [
+     4
+    ]
+   ],
+   "rehras.chaupai05": [
+    [
+     5
+    ]
+   ],
+   "rehras.chaupai06": [
+    [
+     6
+    ]
+   ],
+   "rehras.chaupai07": [
+    [
+     7
+    ]
+   ],
+   "rehras.chaupai08": [
+    [
+     8
+    ]
+   ],
+   "rehras.chaupai09": [
+    [
+     9
+    ]
+   ],
+   "rehras.chaupai10": [
+    [
+     10
+    ]
+   ],
+   "rehras.chaupai11": [
+    [
+     11
+    ]
+   ],
+   "rehras.chaupai12": [
+    [
+     12
+    ]
+   ],
+   "rehras.chaupai13": [
+    [
+     13
+    ]
+   ],
+   "rehras.chaupai14": [
+    [
+     14
+    ]
+   ],
+   "rehras.chaupai15": [
+    [
+     15
+    ]
+   ],
+   "rehras.chaupai16": [
+    [
+     16
+    ]
+   ],
+   "rehras.chaupai17": [
+    [
+     17
+    ]
+   ],
+   "rehras.chaupai18": [
+    [
+     18
+    ]
+   ],
+   "rehras.chaupai19": [
+    [
+     19
+    ]
+   ],
+   "rehras.chaupai20": [
+    [
+     20
+    ]
+   ],
+   "rehras.chaupai21": [
+    [
+     21
+    ]
+   ],
+   "rehras.chaupai22": [
+    [
+     22
+    ]
+   ],
+   "rehras.chaupai23": [
+    [
+     23
+    ]
+   ],
+   "rehras.chaupai24": [
+    [
+     24
+    ]
+   ],
+   "rehras.chaupai25": [
+    [
+     25
+    ]
+   ],
+   "rehras.savaiya01": [
+    [
+     1
+    ]
+   ],
+   "rehras.dohira01": [],
+   "rehras.anand01": [
+    [
+     1
+    ]
+   ],
+   "rehras.anand02": [
+    [
+     2
+    ]
+   ],
+   "rehras.anand03": [
+    [
+     3
+    ]
+   ],
+   "rehras.anand04": [
+    [
+     4
+    ]
+   ],
+   "rehras.anand05": [
+    [
+     5
+    ]
+   ],
+   "rehras.anand40": [
+    [
+     40,
+     1
+    ]
+   ],
+   "rehras.mundawani": [
+    [
+     1
+    ]
+   ],
+   "rehras.slok": [
+    [
+     1
+    ]
+   ]
+  },
+  "anomalies": []
+ },
+ "sukhmani": {
+  "ashtpadis": 24,
+  "lines": 2027,
+  "anomalies": [],
+  "kinds": {
+   "heading": 50,
+   "salok": 55,
+   "pauri": 1920,
+   "rahau": 2
+  },
+  "pauris": 192,
+  "saloks": 24,
+  "rahau_lines": [
+   "ਸੁਖਮਨੀ ਸੁਖ ਅੰਮ੍ਰਿਤ ਪ੍ਰਭ ਨਾਮੁ ॥",
+   "ਭਗਤ ਜਨਾ ਕੈ ਮਨਿ ਬਿਸ੍ਰਾਮ ॥ ਰਹਾਉ ॥"
+  ],
+  "headings": {
+   "ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥": 1,
+   "ਸਲੋਕੁ ॥": 24,
+   "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥": 1,
+   "ਅਸਟਪਦੀ ॥": 24
+  },
+  "ang_range": [
+   262,
+   296
+  ]
+ }
+}

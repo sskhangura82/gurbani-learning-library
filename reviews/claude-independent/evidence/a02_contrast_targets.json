@@ -1,0 +1,927 @@
+{
+ "home:day": [
+  {
+   "name": "hero copy",
+   "sel": ".hero-copy",
+   "size": "13px",
+   "weight": "400",
+   "ratio": 5.89,
+   "fg": "rgb(101, 92, 78)",
+   "bg": "rgb(247,242,231)",
+   "text": "Read the original words. Under"
+  },
+  {
+   "name": "smallline",
+   "sel": ".smallline",
+   "size": "10px",
+   "weight": "600",
+   "ratio": 5.2,
+   "fg": "rgb(128, 96, 39)",
+   "bg": "rgb(247,242,231)",
+   "text": "A QUIET PLACE TO RETURN"
+  },
+  {
+   "name": "card kicker",
+   "sel": ".section-kicker",
+   "size": "11px",
+   "weight": "650",
+   "ratio": 5.2,
+   "fg": "rgb(128, 96, 39)",
+   "bg": "rgb(247,242,231)",
+   "text": "ਨਿਤਨੇਮ · NITNEM"
+  },
+  {
+   "name": "card paragraph",
+   "sel": ".nitnem-card p",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 5.89,
+   "fg": "rgb(101, 92, 78)",
+   "bg": "rgb(247,242,231)",
+   "text": "All seven banis, from morning "
+  },
+  {
+   "name": "card foot",
+   "sel": ".card-foot",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 5.89,
+   "fg": "rgb(101, 92, 78)",
+   "bg": "rgb(247,242,231)",
+   "text": "Seven banis · Continuous readi"
+  },
+  {
+   "name": "footer p",
+   "sel": ".footer p",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 5.89,
+   "fg": "rgb(101, 92, 78)",
+   "bg": "rgb(247,242,231)",
+   "text": "Original Gurbani at the center"
+  },
+  {
+   "name": "footer small",
+   "sel": ".footer .small",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 5.89,
+   "fg": "rgb(101, 92, 78)",
+   "bg": "rgb(247,242,231)",
+   "text": "A family learning project · no"
+  },
+  {
+   "name": "japji link",
+   "sel": "#japji-action",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 8.42,
+   "fg": "rgb(0, 0, 238)",
+   "bg": "rgb(247,242,231)",
+   "text": "Open Japji Sahib directly"
+  },
+  {
+   "name": "coming",
+   "sel": ".coming",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 5.89,
+   "fg": "rgb(101, 92, 78)",
+   "bg": "rgb(247,242,231)",
+   "text": "Next in the library: Salok Mah"
+  }
+ ],
+ "home:day:targets": {
+  "total": 8,
+  "under24": 1,
+  "under24_samples": [
+   "#japji-action Open Japji Sahib directly 165x17"
+  ],
+  "between24and44": 1,
+  "b_samples": [
+   "GURBANI LEARNING LIBRARY 106x32"
+  ]
+ },
+ "home:amrit": [
+  {
+   "name": "hero copy",
+   "sel": ".hero-copy",
+   "size": "13px",
+   "weight": "400",
+   "ratio": 8.7,
+   "fg": "rgb(193, 182, 163)",
+   "bg": "rgb(17,26,42)",
+   "text": "Read the original words. Under"
+  },
+  {
+   "name": "smallline",
+   "sel": ".smallline",
+   "size": "10px",
+   "weight": "600",
+   "ratio": 11.6,
+   "fg": "rgb(240, 207, 135)",
+   "bg": "rgb(17,26,42)",
+   "text": "A QUIET PLACE TO RETURN"
+  },
+  {
+   "name": "card kicker",
+   "sel": ".section-kicker",
+   "size": "11px",
+   "weight": "650",
+   "ratio": 11.6,
+   "fg": "rgb(240, 207, 135)",
+   "bg": "rgb(17,26,42)",
+   "text": "ਨਿਤਨੇਮ · NITNEM"
+  },
+  {
+   "name": "card paragraph",
+   "sel": ".nitnem-card p",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 8.7,
+   "fg": "rgb(193, 182, 163)",
+   "bg": "rgb(17,26,42)",
+   "text": "All seven banis, from morning "
+  },
+  {
+   "name": "card foot",
+   "sel": ".card-foot",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 8.7,
+   "fg": "rgb(193, 182, 163)",
+   "bg": "rgb(17,26,42)",
+   "text": "Seven banis · Continuous readi"
+  },
+  {
+   "name": "footer p",
+   "sel": ".footer p",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 8.7,
+   "fg": "rgb(193, 182, 163)",
+   "bg": "rgb(17,26,42)",
+   "text": "Original Gurbani at the center"
+  },
+  {
+   "name": "footer small",
+   "sel": ".footer .small",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 8.7,
+   "fg": "rgb(193, 182, 163)",
+   "bg": "rgb(17,26,42)",
+   "text": "A family learning project · no"
+  },
+  {
+   "name": "japji link",
+   "sel": "#japji-action",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 7.29,
+   "fg": "rgb(158, 158, 255)",
+   "bg": "rgb(17,26,42)",
+   "text": "Open Japji Sahib directly"
+  },
+  {
+   "name": "coming",
+   "sel": ".coming",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 8.7,
+   "fg": "rgb(193, 182, 163)",
+   "bg": "rgb(17,26,42)",
+   "text": "Next in the library: Salok Mah"
+  }
+ ],
+ "nitnem-collection:light": [
+  {
+   "name": "eyebrow",
+   "sel": ".eyebrow",
+   "size": "10px",
+   "weight": "700",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "OUR DAILY PRACTICE · ONE LIBRA"
+  },
+  {
+   "name": "lede",
+   "sel": ".lede",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "Read all seven banis in one pl"
+  },
+  {
+   "name": "bani number",
+   "sel": ".bani-card .num",
+   "size": "17px",
+   "weight": "400",
+   "ratio": 3.28,
+   "fg": "rgb(156, 134, 92)",
+   "bg": "rgb(250,247,238)",
+   "text": "01"
+  },
+  {
+   "name": "bani small",
+   "sel": ".bani-card small",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "Complete reading, meanings and"
+  },
+  {
+   "name": "footer p",
+   "sel": ".collection-footer p",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "Your place, bookmarks and refl"
+  },
+  {
+   "name": "group heading span",
+   "sel": ".group-heading span",
+   "size": "20px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "01–05"
+  },
+  {
+   "name": "summary",
+   "sel": ".about-reading summary",
+   "size": "13px",
+   "weight": "650",
+   "ratio": 11.09,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(250,247,238)",
+   "text": "About this reading collection"
+  }
+ ],
+ "nitnem-collection:light:targets": {
+  "total": 13,
+  "under24": 1,
+  "under24_samples": [
+   "Back to the library 103x15"
+  ],
+  "between24and44": 2,
+  "b_samples": [
+   "GURBANI LEARNING LIBRARY 252x26",
+   "About this reading collection 366x30"
+  ]
+ },
+ "nitnem-collection:dark": [
+  {
+   "name": "eyebrow",
+   "sel": ".eyebrow",
+   "size": "10px",
+   "weight": "700",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "OUR DAILY PRACTICE · ONE LIBRA"
+  },
+  {
+   "name": "lede",
+   "sel": ".lede",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "Read all seven banis in one pl"
+  },
+  {
+   "name": "bani number",
+   "sel": ".bani-card .num",
+   "size": "17px",
+   "weight": "400",
+   "ratio": 4.92,
+   "fg": "rgb(156, 134, 92)",
+   "bg": "rgb(16,28,37)",
+   "text": "01"
+  },
+  {
+   "name": "bani small",
+   "sel": ".bani-card small",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "Complete reading, meanings and"
+  },
+  {
+   "name": "footer p",
+   "sel": ".collection-footer p",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "Your place, bookmarks and refl"
+  },
+  {
+   "name": "group heading span",
+   "sel": ".group-heading span",
+   "size": "20px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "01–05"
+  },
+  {
+   "name": "summary",
+   "sel": ".about-reading summary",
+   "size": "13px",
+   "weight": "650",
+   "ratio": 14.91,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(16,28,37)",
+   "text": "About this reading collection"
+  }
+ ],
+ "nitnem-reader:light": [
+  {
+   "name": "Gurbani tuk",
+   "sel": ".scripture-line .tuk",
+   "size": "30px",
+   "weight": "400",
+   "ratio": 11.09,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(250,247,238)",
+   "text": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ "
+  },
+  {
+   "name": "meaning English",
+   "sel": ".simple-meaning .english",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "Bliss has arisen, O mother, be"
+  },
+  {
+   "name": "meaning Punjabi",
+   "sel": ".simple-meaning .punjabi",
+   "size": "16px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "ਹੇ ਮਾਏ, ਸਤਿਗੁਰੂ ਮਿਲਣ ਨਾਲ ਮੇਰੇ "
+  },
+  {
+   "name": "tap hint",
+   "sel": ".simple-meaning .expand-hint",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 5.87,
+   "fg": "rgb(72, 103, 83)",
+   "bg": "rgb(250,247,238)",
+   "text": "Draft meaning · tap to explore"
+  },
+  {
+   "name": "reader subtitle",
+   "sel": "#bani-subtitle",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "40 passages · Read, Meaning an"
+  },
+  {
+   "name": "variant/caveat",
+   "sel": "#bani-variant",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "Sri Guru Granth Sahib Ji, Ang "
+  },
+  {
+   "name": "editorial note",
+   "sel": ".editorial-note",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "English and Punjabi meanings a"
+  },
+  {
+   "name": "view help",
+   "sel": "#view-help",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 4.73,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(250,247,238)",
+   "text": "Gurmukhi flows through the ent"
+  },
+  {
+   "name": "draft label",
+   "sel": ".unit-lesson .draft-label",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 4.98,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(255,253,248)",
+   "text": "EDUCATIONAL DRAFT · QUALIFIED "
+  },
+  {
+   "name": "lesson paragraph",
+   "sel": ".unit-lesson p[lang=en]",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 11.69,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(255,253,248)",
+   "text": "The opening celebrates a kind "
+  },
+  {
+   "name": "lesson punjabi",
+   "sel": ".unit-lesson .punjabi-text",
+   "size": "17px",
+   "weight": "400",
+   "ratio": 11.69,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(255,253,248)",
+   "text": "ਪਹਿਲੀ ਪਉੜੀ ਵਿਚ ਸਤਿਗੁਰੂ ਨੂੰ ਪਾ "
+  },
+  {
+   "name": "dock position small",
+   "sel": "#position-detail",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 4.98,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(255,253,248)",
+   "text": "Line 1 of 5"
+  },
+  {
+   "name": "dock mode inactive",
+   "sel": ".modes button[aria-pressed=false]",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 4.98,
+   "fg": "rgb(100, 114, 103)",
+   "bg": "rgb(255,253,248)",
+   "text": "●\nRead"
+  },
+  {
+   "name": "dock mode active",
+   "sel": ".modes button[aria-pressed=true]",
+   "size": "11px",
+   "weight": "650",
+   "ratio": 10.07,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(232,238,230)",
+   "text": "●\nStudy"
+  },
+  {
+   "name": "source hash",
+   "sel": ".source-hash",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 11.69,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(255,253,248)",
+   "text": ""
+  },
+  {
+   "name": "preface",
+   "sel": ".original-preface",
+   "size": "25.2px",
+   "weight": "400",
+   "ratio": 11.09,
+   "fg": "rgb(36, 60, 50)",
+   "bg": "rgb(250,247,238)",
+   "text": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ"
+  }
+ ],
+ "nitnem-reader-study:light:targets": {
+  "total": 272,
+  "under24": 2,
+  "under24_samples": [
+   "A 193x19",
+   "A 204x19"
+  ],
+  "between24and44": 5,
+  "b_samples": [
+   "GURBANI LEARNING LIBRARY 202x26",
+   "A 294x42",
+   "A 275x42"
+  ]
+ },
+ "nitnem-reader:dark": [
+  {
+   "name": "Gurbani tuk",
+   "sel": ".scripture-line .tuk",
+   "size": "30px",
+   "weight": "400",
+   "ratio": 14.91,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(16,28,37)",
+   "text": "ਅਨੰਦੁ ਭਇਆ ਮੇਰੀ ਮਾਏ ਸਤਿਗੁਰੂ ਮੈ "
+  },
+  {
+   "name": "meaning English",
+   "sel": ".simple-meaning .english",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "Bliss has arisen, O mother, be"
+  },
+  {
+   "name": "meaning Punjabi",
+   "sel": ".simple-meaning .punjabi",
+   "size": "16px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "ਹੇ ਮਾਏ, ਸਤਿਗੁਰੂ ਮਿਲਣ ਨਾਲ ਮੇਰੇ "
+  },
+  {
+   "name": "tap hint",
+   "sel": ".simple-meaning .expand-hint",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 10.76,
+   "fg": "rgb(178, 212, 192)",
+   "bg": "rgb(16,28,37)",
+   "text": "Draft meaning · tap to explore"
+  },
+  {
+   "name": "reader subtitle",
+   "sel": "#bani-subtitle",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "40 passages · Read, Meaning an"
+  },
+  {
+   "name": "variant/caveat",
+   "sel": "#bani-variant",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "Sri Guru Granth Sahib Ji, Ang "
+  },
+  {
+   "name": "editorial note",
+   "sel": ".editorial-note",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "English and Punjabi meanings a"
+  },
+  {
+   "name": "view help",
+   "sel": "#view-help",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 8.93,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(16,28,37)",
+   "text": "Gurmukhi flows through the ent"
+  },
+  {
+   "name": "draft label",
+   "sel": ".unit-lesson .draft-label",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 7.47,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(26,44,51)",
+   "text": "EDUCATIONAL DRAFT · QUALIFIED "
+  },
+  {
+   "name": "lesson paragraph",
+   "sel": ".unit-lesson p[lang=en]",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 12.48,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(26,44,51)",
+   "text": "The opening celebrates a kind "
+  },
+  {
+   "name": "lesson punjabi",
+   "sel": ".unit-lesson .punjabi-text",
+   "size": "17px",
+   "weight": "400",
+   "ratio": 12.48,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(26,44,51)",
+   "text": "ਪਹਿਲੀ ਪਉੜੀ ਵਿਚ ਸਤਿਗੁਰੂ ਨੂੰ ਪਾ "
+  },
+  {
+   "name": "dock position small",
+   "sel": "#position-detail",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 7.47,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(26,44,51)",
+   "text": "Line 1 of 5"
+  },
+  {
+   "name": "dock mode inactive",
+   "sel": ".modes button[aria-pressed=false]",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 7.47,
+   "fg": "rgb(180, 188, 187)",
+   "bg": "rgb(26,44,51)",
+   "text": "●\nRead"
+  },
+  {
+   "name": "dock mode active",
+   "sel": ".modes button[aria-pressed=true]",
+   "size": "11px",
+   "weight": "650",
+   "ratio": 10.25,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(36,59,61)",
+   "text": "●\nStudy"
+  },
+  {
+   "name": "source hash",
+   "sel": ".source-hash",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 12.48,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(26,44,51)",
+   "text": ""
+  },
+  {
+   "name": "preface",
+   "sel": ".original-preface",
+   "size": "25.2px",
+   "weight": "400",
+   "ratio": 14.91,
+   "fg": "rgb(243, 238, 224)",
+   "bg": "rgb(16,28,37)",
+   "text": "ਰਾਮਕਲੀ ਮਹਲਾ ੩ ਅਨੰਦੁ"
+  }
+ ],
+ "japji:day": [
+  {
+   "name": "Gurbani tuk",
+   "sel": ".scripture-line .tuk",
+   "size": "30px",
+   "weight": "600",
+   "ratio": 12.27,
+   "fg": "rgb(53, 47, 38)",
+   "bg": "rgb(250,246,236)",
+   "text": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿ"
+  },
+  {
+   "name": "active word",
+   "sel": ".g-word[data-active=true]",
+   "size": "30px",
+   "weight": "600",
+   "ratio": 6.18,
+   "fg": "rgb(120, 86, 28)",
+   "bg": "rgb(250,246,236)",
+   "text": "ੴ"
+  },
+  {
+   "name": "meaning English",
+   "sel": ".simple-meaning .english, .simple-meaning span",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "One all-pervading Reality: tru"
+  },
+  {
+   "name": "intro p",
+   "sel": ".intro p",
+   "size": "10px",
+   "weight": "600",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "ONE CONTINUOUS READING"
+  },
+  {
+   "name": "eyebrow",
+   "sel": ".intro .eyebrow",
+   "size": "10px",
+   "weight": "600",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "ONE CONTINUOUS READING"
+  },
+  {
+   "name": "dock inactive mode",
+   "sel": ".modes button[aria-pressed=false]",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 6.49,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(255,252,244)",
+   "text": "●\nRead"
+  },
+  {
+   "name": "pace small",
+   "sel": "#pace-shortcut small",
+   "size": "9px",
+   "weight": "450",
+   "ratio": 6.49,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(255,252,244)",
+   "text": "pace"
+  },
+  {
+   "name": "dock small",
+   "sel": "#dock-position small",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 6.49,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(255,252,244)",
+   "text": "Line 1"
+  },
+  {
+   "name": "section caption",
+   "sel": ".section-caption h2",
+   "size": "10px",
+   "weight": "550",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "Mool Mantar"
+  },
+  {
+   "name": "deep study p",
+   "sel": ".deep-study p",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "EXPLANATION · EDUCATIONAL DRAF"
+  },
+  {
+   "name": "draft label",
+   "sel": ".draft-label",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 6.49,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(255,252,244)",
+   "text": "ORIGINAL STUDY DRAFT · HUMAN R"
+  },
+  {
+   "name": "version",
+   "sel": ".version",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "GLP-001 · 0.9-japji-v1 · revis"
+  }
+ ],
+ "japji-study:day:targets": {
+  "total": 587,
+  "under24": 32,
+  "under24_samples": [
+   "A 296x20",
+   "Sri Guru Granth Darpan · Ang 1 ↗ 322x20"
+  ],
+  "between24and44": 73,
+  "b_samples": [
+   "GURBANI LEARNING LIBRARY 101x34",
+   "A 296x41"
+  ]
+ },
+ "sukhmani:day": [
+  {
+   "name": "Gurbani tuk",
+   "sel": ".sk-line .tuk",
+   "size": "30px",
+   "weight": "400",
+   "ratio": 6.18,
+   "fg": "rgb(120, 86, 28)",
+   "bg": "rgb(250,246,236)",
+   "text": "ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥"
+  },
+  {
+   "name": "current line tuk",
+   "sel": ".sk-line[data-current=true] .tuk",
+   "size": "30px",
+   "weight": "400",
+   "ratio": 6.18,
+   "fg": "rgb(120, 86, 28)",
+   "bg": "rgb(250,246,236)",
+   "text": "ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥"
+  },
+  {
+   "name": "meaning English",
+   "sel": ".simple-meaning .english",
+   "size": "14px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "Sukhmani in Raag Gauri, by the"
+  },
+  {
+   "name": "meaning Punjabi",
+   "sel": ".simple-meaning .punjabi",
+   "size": "16px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "ਰਾਗ ਗਉੜੀ ਵਿੱਚ ਸੁਖਮਨੀ ਬਾਣੀ, ਪੰਜ"
+  },
+  {
+   "name": "transliteration",
+   "sel": ".transliteration",
+   "size": "13px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "gauRee sukhamanee mah 5 ||"
+  },
+  {
+   "name": "Ang label",
+   "sel": ".ang-label",
+   "size": "10px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "Ang 262"
+  },
+  {
+   "name": "scope",
+   "sel": "#sk-scope",
+   "size": "12px",
+   "weight": "400",
+   "ratio": 6.17,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(250,246,236)",
+   "text": "This pack contains 24 introduc"
+  },
+  {
+   "name": "dock small",
+   "sel": "#sk-position small",
+   "size": "9px",
+   "weight": "400",
+   "ratio": 6.49,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(255,252,244)",
+   "text": "Salok · opening"
+  },
+  {
+   "name": "dock inactive",
+   "sel": ".modes button[aria-pressed=false]",
+   "size": "11px",
+   "weight": "400",
+   "ratio": 6.49,
+   "fg": "rgb(101, 91, 76)",
+   "bg": "rgb(255,252,244)",
+   "text": "Read"
+  }
+ ],
+ "sukhmani-meaning:day:targets": {
+  "total": 4089,
+  "under24": 0,
+  "under24_samples": [],
+  "between24and44": 1,
+  "b_samples": [
+   "GURBANI LEARNING LIBRARY 101x34"
+  ]
+ }
+}

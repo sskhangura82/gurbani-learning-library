@@ -1,0 +1,517 @@
+{
+ "A06_reflow_320": {
+  "home": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "nitnem-collection": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": [
+    "A.skip -10000..-9894",
+    "SPAN#appearance-status.sr-only -10000..-9999",
+    "DIV#announcer.sr-only -10000..-9999"
+   ]
+  },
+  "nitnem-jaap": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": [
+    "A.skip -10000..-9894",
+    "SPAN#appearance-status.sr-only -10000..-9999",
+    "DIV#announcer.sr-only -10000..-9999"
+   ]
+  },
+  "nitnem-rehras": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": [
+    "A.skip -10000..-9894",
+    "SPAN#appearance-status.sr-only -10000..-9999",
+    "DIV#announcer.sr-only -10000..-9999"
+   ]
+  },
+  "japji": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "sukhmani": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": [
+    "SPAN.ang-label -16..28",
+    "SPAN.ang-label -16..28",
+    "SPAN.ang-label -16..28",
+    "SPAN.ang-label -16..28",
+    "SPAN.ang-label -16..28",
+    "SPAN.ang-label -16..28"
+   ]
+  },
+  "simran": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "gurdwaras": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "arrivals": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "pauri2-lesson": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "nitnem-jaap:meaning": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": [
+    "A.skip -10000..-9894",
+    "SPAN#appearance-status.sr-only -10000..-9999",
+    "DIV#announcer.sr-only -10000..-9999"
+   ]
+  },
+  "nitnem-jaap:study": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": [
+    "A.skip -10000..-9894",
+    "SPAN#appearance-status.sr-only -10000..-9999",
+    "DIV#announcer.sr-only -10000..-9999"
+   ]
+  },
+  "japji:understand": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "japji:study": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "sukhmani:understand": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  },
+  "sukhmani:study": {
+   "vw": 320,
+   "sw": 320,
+   "horizontalScroll": false,
+   "sample": []
+  }
+ },
+ "U16_landscape": {
+  "home": {
+   "overflow": {
+    "vw": 750,
+    "sw": 750,
+    "horizontalScroll": false,
+    "sample": []
+   },
+   "chrome": {
+    "innerHeight": 340,
+    "fixedTop": 0,
+    "fixedBottom": 0,
+    "readingArea": 340
+   }
+  },
+  "nitnem-collection": {
+   "overflow": {
+    "vw": 750,
+    "sw": 750,
+    "horizontalScroll": false,
+    "sample": [
+     "A.skip -10000..-9894",
+     "SPAN#appearance-status.sr-only -10000..-9999",
+     "DIV#announcer.sr-only -10000..-9999"
+    ]
+   },
+   "chrome": {
+    "innerHeight": 340,
+    "fixedTop": 71,
+    "fixedBottom": 0,
+    "readingArea": 269
+   }
+  },
+  "nitnem-jaap": {
+   "overflow": {
+    "vw": 750,
+    "sw": 750,
+    "horizontalScroll": false,
+    "sample": [
+     "A.skip -10000..-9894",
+     "SPAN#appearance-status.sr-only -10000..-9999",
+     "DIV#announcer.sr-only -10000..-9999"
+    ]
+   },
+   "chrome": {
+    "innerHeight": 340,
+    "fixedTop": 71,
+    "fixedBottom": 0,
+    "readingArea": 269
+   }
+  },
+  "japji": {
+   "overflow": {
+    "vw": 750,
+    "sw": 750,
+    "horizontalScroll": false,
+    "sample": []
+   },
+   "chrome": {
+    "innerHeight": 340,
+    "fixedTop": 0,
+    "fixedBottom": 0,
+    "readingArea": 340
+   }
+  },
+  "sukhmani": {
+   "overflow": {
+    "vw": 750,
+    "sw": 750,
+    "horizontalScroll": false,
+    "sample": [
+     "SPAN.ang-label -2..42",
+     "SPAN.ang-label -2..42",
+     "SPAN.ang-label -2..42",
+     "SPAN.ang-label -2..42",
+     "SPAN.ang-label -2..42",
+     "SPAN.ang-label -2..42"
+    ]
+   },
+   "chrome": {
+    "innerHeight": 340,
+    "fixedTop": 0,
+    "fixedBottom": 0,
+    "readingArea": 340
+   }
+  }
+ },
+ "portrait_reading_area": {
+  "nitnem-jaap": {
+   "innerHeight": 664,
+   "fixedTop": 71,
+   "fixedBottom": 0,
+   "readingArea": 593
+  },
+  "japji": {
+   "innerHeight": 664,
+   "fixedTop": 0,
+   "fixedBottom": 0,
+   "readingArea": 664
+  },
+  "sukhmani": {
+   "innerHeight": 664,
+   "fixedTop": 0,
+   "fixedBottom": 0,
+   "readingArea": 664
+  }
+ },
+ "A06_root_font_scaling": {
+  "home": {
+   "textElements": 35,
+   "scaledWithRootFont": 1,
+   "fixedPixelSize": 34
+  },
+  "nitnem-jaap": {
+   "textElements": 401,
+   "scaledWithRootFont": 0,
+   "fixedPixelSize": 401
+  },
+  "japji": {
+   "textElements": 401,
+   "scaledWithRootFont": 0,
+   "fixedPixelSize": 401
+  },
+  "sukhmani": {
+   "textElements": 401,
+   "scaledWithRootFont": 0,
+   "fixedPixelSize": 401
+  }
+ },
+ "A07_reduced_motion": {
+  "nitnem-jaap": {
+   "css": {
+    "withTransition": 0,
+    "withAnimation": 0,
+    "mq": true
+   },
+   "guideButtonLabel": "Play silent visual guide",
+   "scrolledPxIn6sWithGuide": 0,
+   "activeMarkers": 1
+  },
+  "japji": {
+   "css": {
+    "withTransition": 0,
+    "withAnimation": 0,
+    "mq": true
+   },
+   "guideButtonLabel": "Play silent visual guide",
+   "scrolledPxIn6sWithGuide": 0,
+   "activeMarkers": 1
+  },
+  "sukhmani": {
+   "css": {
+    "withTransition": 0,
+    "withAnimation": 0,
+    "mq": true
+   },
+   "guideButtonLabel": "Start silent line guide",
+   "scrolledPxIn6sWithGuide": 631,
+   "activeMarkers": 0
+  }
+ },
+ "A04_keyboard": {
+  "home": {
+   "first40TabStops": [
+    "Skip to library",
+    "GURBANI LEARNING LIBRARY",
+    "Switch to Amrit Vela appearance",
+    "Open all seven Nitnem banis",
+    "READ & LEARN · ਸੁਖਮਨੀ ਸਾਹਿਬ Sukhmani Sahib ↗ All 2",
+    "VISIT · ਸੁਣਨਾ ✧ Gurdwaras Arrive somewhere meaning",
+    "STILLNESS · ਸਿਮਰਨ ◌ Simran Room A quieter space fo",
+    "Open Japji Sahib directly",
+    "On your iPhone",
+    "Skip to library",
+    "GURBANI LEARNING LIBRARY",
+    "Switch to Amrit Vela appearance",
+    "Open all seven Nitnem banis",
+    "READ & LEARN · ਸੁਖਮਨੀ ਸਾਹਿਬ Sukhmani Sahib ↗ All 2",
+    "VISIT · ਸੁਣਨਾ ✧ Gurdwaras Arrive somewhere meaning",
+    "STILLNESS · ਸਿਮਰਨ ◌ Simran Room A quieter space fo",
+    "Open Japji Sahib directly",
+    "On your iPhone",
+    "Skip to library",
+    "GURBANI LEARNING LIBRARY",
+    "Switch to Amrit Vela appearance",
+    "Open all seven Nitnem banis",
+    "READ & LEARN · ਸੁਖਮਨੀ ਸਾਹਿਬ Sukhmani Sahib ↗ All 2",
+    "VISIT · ਸੁਣਨਾ ✧ Gurdwaras Arrive somewhere meaning",
+    "STILLNESS · ਸਿਮਰਨ ◌ Simran Room A quieter space fo",
+    "Open Japji Sahib directly",
+    "On your iPhone",
+    "Skip to library",
+    "GURBANI LEARNING LIBRARY",
+    "Switch to Amrit Vela appearance",
+    "Open all seven Nitnem banis",
+    "READ & LEARN · ਸੁਖਮਨੀ ਸਾਹਿਬ Sukhmani Sahib ↗ All 2",
+    "VISIT · ਸੁਣਨਾ ✧ Gurdwaras Arrive somewhere meaning",
+    "STILLNESS · ਸਿਮਰਨ ◌ Simran Room A quieter space fo",
+    "Open Japji Sahib directly",
+    "On your iPhone"
+   ],
+   "withoutVisibleFocusRing": 0,
+   "focusOnInvisibleElement": 0
+  },
+  "nitnem-jaap": {
+   "first40TabStops": [
+    "Skip to reading",
+    "Return to the Nitnem collection",
+    "Gurbani Learning Library — Full Nitnem",
+    "Light",
+    "Dark",
+    "Continuous reading",
+    "One passage",
+    "Next passage →",
+    "Play silent visual guide",
+    "Choose a passage or stanza",
+    "Read · original Gurmukhi",
+    "Meaning · concise bilingual explanations",
+    "Study · deeper learning",
+    "Expand reading controls and saved learning",
+    "Skip to reading",
+    "Return to the Nitnem collection",
+    "Gurbani Learning Library — Full Nitnem",
+    "Light",
+    "Dark",
+    "Continuous reading",
+    "One passage",
+    "Next passage →",
+    "Play silent visual guide",
+    "Choose a passage or stanza",
+    "Read · original Gurmukhi",
+    "Meaning · concise bilingual explanations",
+    "Study · deeper learning",
+    "Expand reading controls and saved learning",
+    "Skip to reading",
+    "Return to the Nitnem collection",
+    "Gurbani Learning Library — Full Nitnem",
+    "Light",
+    "Dark",
+    "Continuous reading",
+    "One passage",
+    "Next passage →",
+    "Play silent visual guide",
+    "Choose a passage or stanza"
+   ],
+   "withoutVisibleFocusRing": 0,
+   "focusOnInvisibleElement": 0
+  },
+  "japji": {
+   "first40TabStops": [
+    "Skip to Gurbani",
+    "Return to Gurbani Learning Library home",
+    "Explore ↗",
+    "Return to the beginning",
+    "Sources & teaching coverage",
+    "Play silent visual guide",
+    "Mool Mantar · line 1. Jump to a passage",
+    "Read · Gurmukhi only",
+    "Meaning · Understand in English and Punjabi",
+    "Study · deeper learning",
+    "Visual pace 70 tokens per minute. Adjust speed",
+    "Expand reading controls",
+    "Skip to Gurbani",
+    "Return to Gurbani Learning Library home",
+    "Explore ↗",
+    "Return to the beginning",
+    "Sources & teaching coverage",
+    "Play silent visual guide",
+    "Mool Mantar · line 1. Jump to a passage",
+    "Read · Gurmukhi only",
+    "Meaning · Understand in English and Punjabi",
+    "Study · deeper learning",
+    "Visual pace 70 tokens per minute. Adjust speed",
+    "Expand reading controls",
+    "Skip to Gurbani",
+    "Return to Gurbani Learning Library home",
+    "Explore ↗",
+    "Return to the beginning",
+    "Sources & teaching coverage",
+    "Play silent visual guide",
+    "Mool Mantar · line 1. Jump to a passage",
+    "Read · Gurmukhi only",
+    "Meaning · Understand in English and Punjabi",
+    "Study · deeper learning",
+    "Visual pace 70 tokens per minute. Adjust speed",
+    "Expand reading controls",
+    "Skip to Gurbani"
+   ],
+   "withoutVisibleFocusRing": 0,
+   "focusOnInvisibleElement": 0
+  },
+  "sukhmani": {
+   "first40TabStops": [
+    "Skip to Gurbani",
+    "Return to Gurbani Learning Library home",
+    "About this reading",
+    "Read Ashtpadi 1",
+    "Read Ashtpadi 2",
+    "Read Ashtpadi 3",
+    "Read Ashtpadi 4",
+    "Read Ashtpadi 5",
+    "Read Ashtpadi 6",
+    "Read Ashtpadi 7",
+    "Read Ashtpadi 8",
+    "Read Ashtpadi 9",
+    "Read Ashtpadi 10",
+    "Read Ashtpadi 11",
+    "Read Ashtpadi 12",
+    "Read Ashtpadi 13",
+    "Read Ashtpadi 14",
+    "Read Ashtpadi 15",
+    "Read Ashtpadi 16",
+    "Read Ashtpadi 17",
+    "Read Ashtpadi 18",
+    "Read Ashtpadi 19",
+    "Read Ashtpadi 20",
+    "Read Ashtpadi 21",
+    "Read Ashtpadi 22",
+    "Read Ashtpadi 23",
+    "Read Ashtpadi 24",
+    "ਗਉੜੀ ਸੁਖਮਨੀ ਮਃ ੫ ॥ Ashtpadi 1 · Opening · Ang 262.",
+    "ਸਲੋਕੁ ॥ Ashtpadi 1 · Salok · Ang 262. Open line de",
+    "ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥ Ashtpadi 1 · Salok · Ang 262. O",
+    "ਆਦਿ ਗੁਰਏ ਨਮਹ ॥ Ashtpadi 1 · Salok · Ang 262. Open ",
+    "ਜੁਗਾਦਿ ਗੁਰਏ ਨਮਹ ॥ Ashtpadi 1 · Salok · Ang 262. Op",
+    "ਸਤਿਗੁਰਏ ਨਮਹ ॥ Ashtpadi 1 · Salok · Ang 262. Open l",
+    "ਸ੍ਰੀ ਗੁਰਦੇਵਏ ਨਮਹ ॥੧॥ Ashtpadi 1 · Salok · Ang 262.",
+    "ਅਸਟਪਦੀ ॥ Ashtpadi 1 · Pauri 1 · Ang 262. Open line",
+    "ਸਿਮਰਉ ਸਿਮਰਿ ਸਿਮਰਿ ਸੁਖੁ ਪਾਵਉ ॥ Ashtpadi 1 · Pauri 1",
+    "ਕਲਿ ਕਲੇਸ ਤਨ ਮਾਹਿ ਮਿਟਾਵਉ ॥ Ashtpadi 1 · Pauri 1 · A",
+    "ਸਿਮਰਉ ਜਾਸੁ ਬਿਸੁੰਭਰ ਏਕੈ ॥ Ashtpadi 1 · Pauri 1 · An",
+    "ਨਾਮੁ ਜਪਤ ਅਗਨਤ ਅਨੇਕੈ ॥ Ashtpadi 1 · Pauri 1 · Ang 2",
+    "ਬੇਦ ਪੁਰਾਨ ਸਿੰਮ੍ਰਿਤਿ ਸੁਧਾਖੵਰ ॥ Ashtpadi 1 · Pauri 1"
+   ],
+   "withoutVisibleFocusRing": 0,
+   "focusOnInvisibleElement": 0
+  },
+  "nitnem-jaap:dialog": {
+   "openedWithEnter": true,
+   "tabStopsThatLeftTheDialog_of60": 0,
+   "escapeCloses": true,
+   "focusReturnedTo": "reading-tools",
+   "expected": "reading-tools"
+  },
+  "japji:dialog": {
+   "openedWithEnter": true,
+   "tabStopsThatLeftTheDialog_of60": 0,
+   "escapeCloses": true,
+   "focusReturnedTo": "tools-open",
+   "expected": "tools-open"
+  },
+  "sukhmani:dialog": {
+   "openedWithEnter": true,
+   "tabStopsThatLeftTheDialog_of60": 0,
+   "escapeCloses": true,
+   "focusReturnedTo": "sk-tools",
+   "expected": "sk-tools"
+  }
+ },
+ "U07_max_size": {
+  "nitnem": {
+   "max": "60",
+   "overflow": {
+    "vw": 390,
+    "sw": 390,
+    "horizontalScroll": false,
+    "sample": [
+     "A.skip -10000..-9894",
+     "SPAN#appearance-status.sr-only -10000..-9999",
+     "DIV#announcer.sr-only -10000..-9999"
+    ]
+   },
+   "gurmukhiPx": "44px",
+   "persistsAfterReload": "60"
+  }
+ },
+ "R06_slow_connection": {
+  "home": {
+   "secondsToFirstGurmukhiText_400kbps_400ms_cpu4x": 0.6
+  },
+  "nitnem-jaap": {
+   "secondsToFirstGurmukhiText_400kbps_400ms_cpu4x": 2.1
+  },
+  "japji": {
+   "secondsToFirstGurmukhiText_400kbps_400ms_cpu4x": 0.6
+  },
+  "sukhmani": {
+   "secondsToFirstGurmukhiText_400kbps_400ms_cpu4x": 0.6
+  }
+ }
+}

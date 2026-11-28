@@ -1,0 +1,190 @@
+{
+ "1_on_published_version": {
+  "offline": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "offlineCopies": {
+    "0.14-nitnem-complete-preview-20261125-1": 56
+   },
+   "inControl": true
+  },
+  "savedKeys": [
+   "glp001.continuous.v2",
+   "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125",
+   "glp001.nitnem.appearance.v1",
+   "glp001.sukhmani.v1"
+  ],
+  "notesPresent": {
+   "glp001.continuous.v2": true,
+   "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": true,
+   "glp001.nitnem.appearance.v1": false,
+   "glp001.sukhmani.v1": true
+  }
+ },
+ "2_update_is_waiting": {
+  "offline": {
+   "active": "activated",
+   "waiting": true,
+   "installing": false,
+   "offlineCopies": {
+    "0.14-nitnem-complete-preview-20261125-1": 56,
+    "0.14.1-claude-review-repairs-20261125-1": 57
+   },
+   "inControl": true
+  },
+  "readerIsTold": "An app update is ready. Load it when you are ready.",
+  "loadButtonShown": true,
+  "readerStillRunsPublishedCode": true
+ },
+ "3_after_loading_the_update": {
+  "offline": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "offlineCopies": {
+    "0.14.1-claude-review-repairs-20261125-1": 57
+   },
+   "inControl": true
+  },
+  "everySavedRecordUnchangedByTheUpdate": {
+   "glp001.continuous.v2": true,
+   "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.sohila.sohila-srigranth-digitally-collated-20261125": true,
+   "glp001.nitnem.appearance.v1": true,
+   "glp001.sukhmani.v1": true
+  }
+ },
+ "4_text_on_screen_vs_register": {
+  "jaap": {
+   "rowsOnScreen": 808,
+   "rowsInRegister": 808,
+   "identicalInOrder": true,
+   "sourceNotice": "chhands · Named BaniDB digital reading; historical spelling variants recorded. Qualified human review pending."
+  },
+  "savaiye": {
+   "rowsOnScreen": 43,
+   "rowsInRegister": 43,
+   "identicalInOrder": true,
+   "sourceNotice": "tained. Qualified human review pending. The Gurmukhi text is awaiting comparison with a named printed edition."
+  },
+  "chaupai": {
+   "rowsOnScreen": 121,
+   "rowsInRegister": 121,
+   "identicalInOrder": true,
+   "sourceNotice": "fter25. Qualified human review pending. The Gurmukhi text is awaiting comparison with a named printed edition."
+  },
+  "anand": {
+   "rowsOnScreen": 210,
+   "rowsInRegister": 210,
+   "identicalInOrder": true,
+   "sourceNotice": "pauris included; one legacy font encoding repaired from named digital sources. Qualified human review pending."
+  },
+  "rehras": {
+   "rowsOnScreen": 159,
+   "rowsInRegister": 159,
+   "identicalInOrder": true,
+   "sourceNotice": "n review pending. The Chaupai, Swaiya and Dohra sections are awaiting comparison with a named printed edition."
+  },
+  "sohila": {
+   "rowsOnScreen": 56,
+   "rowsInRegister": 56,
+   "identicalInOrder": true,
+   "sourceNotice": "All five shabads included; heading and line-segmentation differences recorded. Qualified human review pending."
+  },
+  "japji": {
+   "rowsOnScreen": 385,
+   "rowsInRegister": 385,
+   "identicalInOrder": true,
+   "check": "verified",
+   "noteStillThere": "RT4-JAPJI-NOTE"
+  },
+  "sukhmani": {
+   "rowsOnScreen": 2027,
+   "rowsInRegister": 2027,
+   "identicalInOrder": true,
+   "check": "verified"
+  }
+ },
+ "5_network_off_on_repair_candidate": {
+  "jaap": {
+   "lines": 782,
+   "meanings": 782
+  },
+  "savaiye": {
+   "lines": 40,
+   "meanings": 40
+  },
+  "chaupai": {
+   "lines": 116,
+   "meanings": 116
+  },
+  "anand": {
+   "lines": 208,
+   "meanings": 208
+  },
+  "rehras": {
+   "lines": 159,
+   "meanings": 159
+  },
+  "sohila": {
+   "lines": 56,
+   "meanings": 56
+  },
+  "full-japji.html": {
+   "lines": 385,
+   "check": "verified"
+  },
+  "sukhmani.html": {
+   "lines": 2027,
+   "check": "verified"
+  },
+  "index.html": true,
+  "simran.html": true,
+  "gurdwaras.html": true,
+  "pauri-2-lesson.html": true
+ },
+ "6_broken_release_offered": {
+  "offline": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "offlineCopies": {
+    "0.14.1-claude-review-repairs-20261125-1": 57
+   },
+   "inControl": true
+  },
+  "readerIsTold": "Offline installation did not finish. Online reading is available; try again when connected.",
+  "loadButtonShown": false,
+  "japjiStillOpensOffline": {
+   "lines": 385,
+   "check": "verified"
+  }
+ },
+ "7_damaged_offline_copy_then_later_release": {
+  "action": "damaged",
+  "afterDamage": "failed",
+  "laterReleaseOffered": true,
+  "offline": {
+   "active": "activated",
+   "waiting": false,
+   "installing": false,
+   "offlineCopies": {
+    "0.14.1-claude-review-repairs-20261125-1-reviewer-test-later-release": 57
+   },
+   "inControl": true
+  },
+  "afterLoadingLaterRelease": {
+   "check": "verified",
+   "lines": 385
+  },
+  "synthetic_notes_still_present_at_the_end": {
+   "RT4-NITNEM-NOTE": true,
+   "RT4-JAPJI-NOTE": true,
+   "RT4-SUKHMANI-NOTE": true
+  }
+ },
+ "8_every_address_contacted_during_the_whole_run": [
+  "127.0.0.1:8090"
+ ],
+ "9_page_errors": []
+}
