@@ -1,0 +1,171 @@
+{
+  "schema": "glp.gurbani-learning.verification.v1",
+  "preparedDate": "2026-11-27",
+  "preparedTimeZone": "America/Los_Angeles",
+  "baseCommit": "68f47ffba4782271651716c71a97bc1825f96f48",
+  "runtimeCommit": "90b232c39742ef64d817f3273ee4a98218f89486",
+  "branch": "feature/gurbani-learning-next-20261127",
+  "status": "PASS",
+  "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
+  "actualClaudeReview": "PENDING",
+  "runtimeInventory": {
+    "path": "evidence/gurbani-learning/verification/runtime-digests.json",
+    "bytes": 63920,
+    "sha256": "e8a5a60024fa4311813c913ca64e5b3fdf59e707f5be3fc13bd2e021810a976d"
+  },
+  "applicationFilesCompared": 366,
+  "applicationBytesMatchTestedCommit": true,
+  "macRunController": {
+    "path": "evidence/gurbani-learning/mac-runs/90b232c/run-results.json",
+    "bytes": 1095,
+    "sha256": "bc7f9c45d0ca837413c5b700b458b1faa12c791ba3ff74d1e36d047562f89e62"
+  },
+  "browserSuites": {
+    "learning": {
+      "path": "evidence/gurbani-learning/browser/90b232c/report.json",
+      "bytes": 43538,
+      "sha256": "ec26082595d8ed2e379847fb6123d96a3182140677e8a6a4e10b9c8f543b6dff",
+      "passed": 25,
+      "failed": 0,
+      "fixture": {
+        "path": "tests/gurbani-learning-browser.mjs",
+        "bytes": 33904,
+        "sha256": "36f2adcefaa1e3300abef3cfb8151bc143168c2119bd08f90154de9aeff68dc0"
+      },
+      "verifiedReportSourceHashes": 14,
+      "recordedRunHead": "90b232c39742ef64d817f3273ee4a98218f89486"
+    },
+    "sourceReader": {
+      "path": "evidence/gurbani-learning/source-browser/90b232c/report.json",
+      "bytes": 50680,
+      "sha256": "91eba29e9a7f3b8dbcd197f300075a3fe814aca24534ce7087ec2a8818a104aa",
+      "passed": 35,
+      "failed": 0,
+      "fixture": {
+        "path": "tests/source-reader-browser.mjs",
+        "bytes": 28226,
+        "sha256": "ada8590a2fb199054b7f3f946217f662275fbd3d31f998fd365cea9d7b5a0c04"
+      },
+      "verifiedReportSourceHashes": 29,
+      "recordedRunHead": "90b232c39742ef64d817f3273ee4a98218f89486"
+    },
+    "navigation": {
+      "path": "evidence/gurbani-learning/navigation-browser/90b232c/results.json",
+      "bytes": 4671,
+      "sha256": "11848ac278f5df5814aa30ef008490c69ea4c23e978e1ba403018042ac11236c",
+      "passed": 10,
+      "failed": 0,
+      "fixture": {
+        "path": "tests/private-library-navigation-smoke.mjs",
+        "bytes": 7890,
+        "sha256": "04888ad5cadaa528c95020893aee35d593ffa14a5c25d8a4d8e8e6e0b441d062"
+      },
+      "verifiedReportSourceHashes": 31,
+      "recordedRunHead": "90b232c39742ef64d817f3273ee4a98218f89486",
+      "provenance": "Run controller records head; retained public-shell hashes and current fixture are matched to that commit. Navigation report itself does not embed a commit or fixture hash."
+    },
+    "offline": {
+      "path": "evidence/library-script-integrity/offline/2026-11-28T00-34-17-105Z/report.json",
+      "bytes": 143635,
+      "sha256": "edc065bfa4a60036cb4929a184fd4106c05f17904a080b9a64b65ba25e6a6047",
+      "passed": 7,
+      "failed": 0,
+      "fixture": {
+        "path": "tests/library-script-integrity-offline.mjs",
+        "bytes": 19146,
+        "sha256": "453336c4548ab142935f52d71284b1d1be64cc4cb112e9f523aef9c1425afb34"
+      },
+      "verifiedReportSourceHashes": 0,
+      "recordedRunHead": "90b232c39742ef64d817f3273ee4a98218f89486",
+      "verifiedOfflineAssets": 121
+    }
+  },
+  "localChecks": {
+    "integratedContracts": {
+      "path": "evidence/gurbani-learning/verification/integration-contracts.tap",
+      "bytes": 5173,
+      "sha256": "85c547d6120fe33f16603c572e2b7bbe4c1ec5558be38964146d42e5f6ee82ae",
+      "passed": 50,
+      "failed": 0
+    },
+    "sourceCore": {
+      "path": "evidence/gurbani-learning/verification/source-core.tap",
+      "bytes": 2230,
+      "sha256": "4d0b05994ec3c62b28dcb05710415921e0eb52f62ff01a073877160b925a3e8f",
+      "passed": 16,
+      "verifiedCollections": [
+        {
+          "collectionId": "sggs",
+          "units": 5549,
+          "lines": 60555,
+          "pages": 1430,
+          "chunks": 75
+        },
+        {
+          "collectionId": "dasam",
+          "units": 5470,
+          "lines": 67758,
+          "pages": 1428,
+          "chunks": 80
+        }
+      ]
+    },
+    "serviceWorker": {
+      "path": "evidence/gurbani-learning/verification/service-worker.json",
+      "bytes": 28,
+      "sha256": "b441a300e8f4b741b60177fe6d79d235d44dea7214520dfa95494fe1ca40c323",
+      "passed": 9
+    },
+    "delivery": {
+      "bundle-build": {
+        "status": "PASS",
+        "mode": "check",
+        "applications": 5,
+        "changedFiles": [],
+        "sourceInputs": 32
+      },
+      "app-sri": {
+        "status": "PASS",
+        "mode": "check",
+        "pages": 24,
+        "scriptOccurrences": 61,
+        "moduleOccurrences": 8,
+        "changedPages": [],
+        "scope": "Subresource protection under trusted HTML; HTML and worker authenticity remain outside this check."
+      },
+      "reader-sri": {
+        "status": "PASS",
+        "mode": "check",
+        "pages": 6,
+        "scriptOccurrences": 42,
+        "changedPages": [],
+        "scope": "Six reader pages only; trusted HTML, worker and library module graph remain outside this check."
+      }
+    }
+  },
+  "sourceRecords": [
+    {
+      "path": "docs/SGGS_OPENING_EDITORIAL_SOURCES_20261127.md",
+      "bytes": 6763,
+      "sha256": "c830964087bd10e1d7a9d0da5a2241d2b6d829593f4b935659e13af100b56ad2"
+    },
+    {
+      "path": "docs/PSYCHOLOGY_STUDY_SOURCES_20261127.md",
+      "bytes": 6529,
+      "sha256": "8a88991ea7b8af4906d1cbb2cd79941c7f4674985de9bd096a92e1b5bcd94b67"
+    },
+    {
+      "path": "evidence/gurbani-learning/change-scope.json",
+      "bytes": 3128,
+      "sha256": "8a2cf505ea660e7f3897b46bf6842f1510d8f210d35b20b300873be2d67b30d1"
+    }
+  ],
+  "limitations": [
+    "Counts overlap; they are not an aggregate of unique behavior.",
+    "Actual desktop Chrome with fresh contexts and synthetic records; no physical iPhone, Safari, VoiceOver or physical airplane-mode acceptance.",
+    "Retained screenshots and visual inspection cover selected viewports, not a complete-page visual audit.",
+    "The full original-text corpora are fetched on demand and are not covered by public-shell offline availability.",
+    "Engineering tests and builder source inspection do not certify meaning, research efficacy, printed collation or actual Claude review.",
+    "Exact-head GitHub CI is a separate record in the stacked draft pull request Checks. No deployment or merge is represented."
+  ]
+}

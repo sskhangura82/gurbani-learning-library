@@ -75,7 +75,8 @@ export async function verifyManifest(input, binding) {
     && integer(binding.bytes, MANIFEST_LIMIT), 'SOURCE_BINDING');
   const raw = inputBytes(input, MANIFEST_LIMIT);
   need(raw.byteLength === binding.bytes, 'SOURCE_MANIFEST_SIZE');
-  need(await sha256(raw) === binding.sha256, 'SOURCE_MANIFEST_DIGEST');
+  const manifestSha256 = await sha256(raw);
+  need(manifestSha256 === binding.sha256, 'SOURCE_MANIFEST_DIGEST');
   const manifest = parse(raw);
   keys(manifest, ['schema', 'status', 'locatorStatus', 'collectionId', 'editionId', 'name', 'source', 'counts', 'sections', 'authors', 'units', 'chunks']);
   need(manifest.schema === 'glp.sikh-reader.manifest.v1'
@@ -152,7 +153,7 @@ export async function verifyManifest(input, binding) {
   need(unitIndex === manifest.units.length, 'SOURCE_CHUNK_COVERAGE');
   for (const list of byPage.values()) Object.freeze(list);
   freeze(manifest);
-  manifests.set(manifest, {byUnit, byChunk, byPage, lineOwners: new Map()});
+  manifests.set(manifest, {byUnit, byChunk, byPage, lineOwners: new Map(), manifestSha256});
   return manifest;
 }
 
@@ -243,6 +244,14 @@ export function lineForRoute(manifest, value, unit) {
   const line = unit.lines.find(item => item.id === route.lineId);
   need(line && line.page === route.page, 'SOURCE_ROUTE_LINE');
   return line;
+}
+
+// This receipt describes bytes already verified by this module. It grants no
+// editorial or historical approval and cannot be made from copied JSON objects.
+export function verifiedSourceIdentity(manifest, unit) {
+  const state = manifestState(manifest), descriptor = verifiedUnit(manifest, unit);
+  return Object.freeze({collectionId: manifest.collectionId, editionId: manifest.editionId,
+    manifestSha256: state.manifestSha256, unitId: descriptor.id, unitSha256: descriptor.sha256});
 }
 
 export function progressKey(manifest) {

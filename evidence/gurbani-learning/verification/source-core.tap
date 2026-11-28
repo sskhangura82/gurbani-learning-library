@@ -1,0 +1,46 @@
+{
+  "passed": 16,
+  "verifiedCollections": [
+    {
+      "collectionId": "sggs",
+      "units": 5549,
+      "lines": 60555,
+      "pages": 1430,
+      "chunks": 75
+    },
+    {
+      "collectionId": "dasam",
+      "units": 5470,
+      "lines": 67758,
+      "pages": 1428,
+      "chunks": 80
+    }
+  ],
+  "tests": [
+    "Manifest and chunk require separately trusted exact byte lengths and digests",
+    "Duplicate JSON keys, escaped duplicate aliases, BOM and invalid UTF-8 refuse even with a renewed fixture pin",
+    "Closed source schema refuses teaching fields, translations, wrong selected asset and verified-commit claims",
+    "Manifest coverage rejects dropped or duplicated units, false counts, page gaps, reordered groups and unsafe paths",
+    "Independent whole-unit hash refuses text, punctuation, metadata or order changes after a chunk repin",
+    "Renewed pins cannot admit clipped groups, duplicate lines, false page sets, missing null locators or extra fields",
+    "Cross-chunk line collisions refuse on verification without granting a partial verified unit",
+    "Page lookup returns complete ordered owning descriptors and verified text remains byte-exact and immutable",
+    "Stable routes round-trip while malformed, foreign, duplicated and unowned destinations refuse explicitly",
+    "A route line must belong to both its verified unit and the selected reported page",
+    "Progress is separately source-bound and resume requires a verified actual line and page",
+    "Malformed, newer or foreign saved records refuse unchanged, without reading or writing any storage",
+    "Every sggs chunk and whole unit verifies, with exact total coverage and globally unique lines",
+    "Every dasam chunk and whole unit verifies, with exact total coverage and globally unique lines",
+    "Real SGGS page boundaries retain all source-declared lines, stable line links and the reported Raagmala attribution",
+    "Real Dasam preserves the largest complete unit, null printed lines, and reported-page regressions without inventing corrections"
+  ]
+}
+✔ tests/sikh-source-reader-core.mjs (1373.59772ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1382.507426

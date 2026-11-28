@@ -222,9 +222,12 @@ const graphs={
     "entry": "collections/source-reader/reader.mjs",
     "output": "collections/source-reader/reader.bundle.mjs",
     "inputs": {
-      "collections/source-reader/reader.mjs": "fddc5f2cd6a564a74689bd4377d1aee2be8a76e5fc1f44d35ea40a112e919a4d",
-      "collections/source-reader/core.mjs": "97a2ec588071d317033c5da5842b8ab2402b7149f4b19f9cbcb85d112dbdc33c",
-      "collections/source-reader/source-lock.mjs": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807"
+      "collections/source-reader/reader.mjs": "6343d0c25b6eea278cd26f1ad4daf3d229dac422fd46972d160e77b1c9434709",
+      "collections/source-reader/core.mjs": "80475823a93c5b397edbf284f60be13db0f9f50d164a8ea8a4d82cdac9cd253e",
+      "collections/source-reader/source-lock.mjs": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807",
+      "collections/source-reader/learning.mjs": "e82b55afd51cfda6d28dac6d89e140cb5d891c801d1a34ad7247e1e55752e269",
+      "collections/source-reader/lesson-core.mjs": "29ee291e31155e6f1a695c712f93c67452ce5c6cf5877ed6c0caf93717455ef7",
+      "collections/source-reader/lesson-data.mjs": "593c9dc6b6a1d799b7155befdaa8888041567109132e726515b75e0a95e5002d"
     },
     "imports": {
       "collections/source-reader/reader.mjs": [
@@ -234,11 +237,32 @@ const graphs={
         ],
         [
           "import-statement",
+          "collections/source-reader/learning.mjs"
+        ],
+        [
+          "import-statement",
           "collections/source-reader/core.mjs"
         ]
       ],
       "collections/source-reader/core.mjs": [],
-      "collections/source-reader/source-lock.mjs": []
+      "collections/source-reader/source-lock.mjs": [],
+      "collections/source-reader/learning.mjs": [
+        [
+          "import-statement",
+          "collections/source-reader/lesson-core.mjs"
+        ]
+      ],
+      "collections/source-reader/lesson-core.mjs": [
+        [
+          "import-statement",
+          "collections/source-reader/core.mjs"
+        ],
+        [
+          "import-statement",
+          "collections/source-reader/lesson-data.mjs"
+        ]
+      ],
+      "collections/source-reader/lesson-data.mjs": []
     }
   }
 };
@@ -255,6 +279,9 @@ const nonreaders=[
   {page:'collections/dasam/read.html',scripts:[module('../source-reader/reader.bundle.mjs','source-reader')]},
   {page:'collections/sggs/index.html',scripts:[module('../source-reader/reader.bundle.mjs','source-reader')]},
   {page:'psychology/index.html',scripts:[]},
+  {page:'psychology/intellectual-humility.html',scripts:[]},
+  {page:'psychology/attention.html',scripts:[]},
+  {page:'psychology/emotion-regulation.html',scripts:[]},
   {page:'private-library/index.html',scripts:[module('./app.mjs','private-library')]},
   {page:'hukamnama/index.html',scripts:[module('./reader.bundle.mjs','hukamnama')]},
   {page:'breathing.html',scripts:[classic('js/breathing-core.js',true),classic('js/breathing.js',true)]},

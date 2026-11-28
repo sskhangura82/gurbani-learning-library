@@ -1,0 +1,25 @@
+{
+  "head": "90b232c39742ef64d817f3273ee4a98218f89486",
+  "results": [
+    {
+      "test": "tests/private-library-navigation-smoke.mjs",
+      "exitCode": 0,
+      "tail": "Combined navigation smoke: 10 checks passed.\n"
+    },
+    {
+      "test": "tests/library-script-integrity-offline.mjs",
+      "exitCode": 0,
+      "tail": "{\"status\":\"PASS\",\"checks\":7,\"failure\":null,\"evidence\":\"evidence/library-script-integrity/offline/2026-11-28T00-34-17-105Z\"}\n"
+    },
+    {
+      "test": "tests/source-reader-browser.mjs",
+      "exitCode": 0,
+      "tail": "{\"status\":\"PASS\",\"checks\":35,\"failures\":[],\"evidence\":\"/var/folders/hk/7t90scbj1wbd5q1wh0ztvxz80000gn/T/glp-learning-review-qvgesglq/repo/evidence/gurbani-learning/source-browser/90b232c\"}\n"
+    },
+    {
+      "test": "tests/gurbani-learning-browser.mjs",
+      "exitCode": 0,
+      "tail": "{\"status\":\"PASS\",\"checks\":25,\"passed\":25,\"failures\":[],\"evidence\":\"/var/folders/hk/7t90scbj1wbd5q1wh0ztvxz80000gn/T/glp-learning-review-qvgesglq/repo/evidence/gurbani-learning/browser/90b232c\"}\n"
+    }
+  ]
+}

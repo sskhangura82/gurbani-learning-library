@@ -362,18 +362,54 @@
       "inputs": [
         {
           "path": "collections/source-reader/core.mjs",
-          "bytes": 16350,
-          "sha256": "97a2ec588071d317033c5da5842b8ab2402b7149f4b19f9cbcb85d112dbdc33c",
+          "bytes": 16900,
+          "sha256": "80475823a93c5b397edbf284f60be13db0f9f50d164a8ea8a4d82cdac9cd253e",
+          "imports": []
+        },
+        {
+          "path": "collections/source-reader/learning.mjs",
+          "bytes": 11172,
+          "sha256": "e82b55afd51cfda6d28dac6d89e140cb5d891c801d1a34ad7247e1e55752e269",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/lesson-core.mjs"
+            }
+          ]
+        },
+        {
+          "path": "collections/source-reader/lesson-core.mjs",
+          "bytes": 7769,
+          "sha256": "29ee291e31155e6f1a695c712f93c67452ce5c6cf5877ed6c0caf93717455ef7",
+          "imports": [
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/core.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/lesson-data.mjs"
+            }
+          ]
+        },
+        {
+          "path": "collections/source-reader/lesson-data.mjs",
+          "bytes": 55861,
+          "sha256": "593c9dc6b6a1d799b7155befdaa8888041567109132e726515b75e0a95e5002d",
           "imports": []
         },
         {
           "path": "collections/source-reader/reader.mjs",
-          "bytes": 13418,
-          "sha256": "fddc5f2cd6a564a74689bd4377d1aee2be8a76e5fc1f44d35ea40a112e919a4d",
+          "bytes": 13510,
+          "sha256": "6343d0c25b6eea278cd26f1ad4daf3d229dac422fd46972d160e77b1c9434709",
           "imports": [
             {
               "kind": "import-statement",
               "path": "collections/source-reader/source-lock.mjs"
+            },
+            {
+              "kind": "import-statement",
+              "path": "collections/source-reader/learning.mjs"
             },
             {
               "kind": "import-statement",
@@ -390,9 +426,9 @@
       ],
       "output": {
         "path": "collections/source-reader/reader.bundle.mjs",
-        "bytes": 30029,
-        "sha256": "cfabe33b6c174b44e34cdf932d80cac47867b8efb1c5fdcd47450b53c78fc704",
-        "integrity": "sha384-mbsKG/ldpgpQb9R2jDaHkm9KmeskuVKH/WIpwU2gGyEA5BtvFgWdd7eY4cevOni7",
+        "bytes": 104825,
+        "sha256": "9e21f46d95a8ade467f5e865ab47a545b3e75f2be35264fcb4311e2acba904be",
+        "integrity": "sha384-tdqdjOoflg0J/1Pq1nD4iu+lze3t782iSsYJ+TrjUb7dsAy36DBCeG/G5fZzADxd",
         "imports": []
       }
     }
