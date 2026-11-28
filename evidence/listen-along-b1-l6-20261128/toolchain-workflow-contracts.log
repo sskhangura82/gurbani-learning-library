@@ -1,0 +1,24 @@
+✔ Private toolchain lock is portable, complete, and preserves every registry pin (3.155844ms)
+✔ The observed logical-/tmp prefix lock corruption is refused before install (2.061372ms)
+✔ Missing platform packages and changed package integrity cannot pass the lock gate (2.25918ms)
+✔ all current quality workflows cover any candidate base (16.782775ms)
+✔ path-only trigger remains allowed without pretending every path is covered (1.202134ms)
+✔ refuses base filtering via branches (0.561498ms)
+✔ refuses base filtering via branches-ignore (0.158068ms)
+✔ refuses base filtering via "branches" (0.140352ms)
+✔ refuses base filtering via 'branches-ignore' (0.148004ms)
+✔ refuses unsupported or restricted trigger: "    branches:\n      - main\n" (0.263668ms)
+✔ refuses unsupported or restricted trigger: "   branches: [main]\n" (0.17197ms)
+✔ refuses unsupported or restricted trigger: "    <<: *trigger\n" (0.197458ms)
+✔ refuses unsupported or restricted trigger: "    types: [opened]\n" (0.327415ms)
+✔ refuses unsupported or restricted trigger: "    paths:\n" (0.176987ms)
+✔ refuses unsupported or restricted trigger: "    paths:\n      - x\n    paths:\n      - y\n" (0.129976ms)
+✔ inline, missing, quoted and duplicate pull_request triggers fail closed (0.361606ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 146.210681

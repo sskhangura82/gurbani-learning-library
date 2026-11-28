@@ -1,0 +1,159 @@
+{
+  "status": "FAIL",
+  "started": "2026-11-28T13:01:34.174Z",
+  "sourceCommit": "206cddbff9e0c23852fb844b02a24ee60f394e74",
+  "scenarioFilter": "Player readiness waits",
+  "checks": [
+    {
+      "name": "Player readiness waits for controls installed by the iframe ready event",
+      "status": "FAIL",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at scenario.sdk.manualReady (file:///workspace/scratch/614874a66476/gurbani-pr78/tests/youtube-read-along-browser.mjs:536:58)\n    at async scenario (file:///workspace/scratch/614874a66476/gurbani-pr78/tests/youtube-read-along-browser.mjs:449:5)\n    at async file:///workspace/scratch/614874a66476/gurbani-pr78/tests/youtube-read-along-browser.mjs:531:3"
+    }
+  ],
+  "failures": [
+    {
+      "name": "Player readiness waits for controls installed by the iframe ready event",
+      "error": "Expected values to be strictly equal:\n\ntrue !== false\n"
+    }
+  ],
+  "sourceHashes": {
+    "collections/source-data/sggs/manifest.json": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+    "collections/source-data/dasam/manifest.json": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+    "js/japji-full-data.js": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+    "nitnem/data/jaap.json": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+    "nitnem/data/savaiye.json": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+    "nitnem/data/chaupai.json": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+    "nitnem/data/anand.json": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+    "nitnem/data/rehras.json": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+    "nitnem/data/sohila.json": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+    "js/sukhmani-data.js": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+    "collections/source-data/sggs/chunks/c0001.json": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f",
+    "collections/source-data/sggs/chunks/c0049.json": "63a9624a4b5e5f8c11082df612680847abd73361e2de0a8ae451e4bca312af65",
+    "collections/source-data/dasam/chunks/c0040.json": "bc56ae81c80270ad4aab216fd754a07988d805bce40220ee5e61b69055e58807",
+    "collections/source-data/dasam/chunks/c0041.json": "94570526bd53d3fa7e1cf61f24920c46a7b1d6357a600612c5bc0502c8c63f34",
+    "collections/source-reader/read-along.bundle.mjs": "75112d5c87fd353e3734e012c27bd2cc9bcbb5320f077d154c767c8afeba9308",
+    "listen/index.html": "2cc55a1641774e2e73790ad043f21e51de8fafb7d32f0c5c00cc2369afd7b7b8",
+    "collections/source-reader/read-along-config.mjs": "cbc2be9b686cd3cbb858f34b6245ad325e6743867f155be8928f1ecc83b7c27e",
+    "listen/read-along.css": "e1cf07b27a0f3518f4cd9633e7f26112f2f5b72f7545d35b2f0c4508dcb75573"
+  },
+  "sourceBytes": {
+    "collections/source-data/sggs/manifest.json": 1116397,
+    "collections/source-data/dasam/manifest.json": 1101376,
+    "js/japji-full-data.js": 83714,
+    "nitnem/data/jaap.json": 538376,
+    "nitnem/data/savaiye.json": 27078,
+    "nitnem/data/chaupai.json": 70494,
+    "nitnem/data/anand.json": 127242,
+    "nitnem/data/rehras.json": 149365,
+    "nitnem/data/sohila.json": 26637,
+    "js/sukhmani-data.js": 1241749,
+    "collections/source-data/sggs/chunks/c0001.json": 128986,
+    "collections/source-data/sggs/chunks/c0049.json": 130305,
+    "collections/source-data/dasam/chunks/c0040.json": 101868,
+    "collections/source-data/dasam/chunks/c0041.json": 129235,
+    "collections/source-reader/read-along.bundle.mjs": 104555,
+    "listen/index.html": 11629,
+    "collections/source-reader/read-along-config.mjs": 276,
+    "listen/read-along.css": 9540
+  },
+  "limits": [
+    "Actual desktop Chrome, production owned bundle and DOM, with fresh contexts and synthetic records only.",
+    "The positive fixture replaces only the public provider configuration in an independently repinned owned bundle.",
+    "Official metadata, API script and player iframe requests receive TEST ONLY responses. No real YouTube request is allowed through.",
+    "The simulated player exposes documented method/event shapes and an explicitly controlled media clock; it is not actual video playback.",
+    "Default empty provider configuration is tested separately using the unchanged candidate bundle.",
+    "Original expectations derive independently from fixed source manifests and whole-group hashes, not the production source adapter.",
+    "No existing user browser profile, owner PIN, private plaintext, Claude session or real personal reflection is accessed.",
+    "Service workers are blocked to isolate this feature; desktop viewports do not establish Safari, VoiceOver or physical-iPhone behavior."
+  ],
+  "syntheticFixture": {
+    "mode": "synthetic-fixture",
+    "overridePaths": [
+      "collections/source-reader/read-along-config.mjs"
+    ],
+    "bundleSha256": "d7e26192389160b82227b056a30a6ad9e0d0586e53bc08b8a0c7bdae36b2fbdd",
+    "htmlSha256": "cf35f4080925c58f4bd7d3da1ad0372338fbce79587c8040ae871c5201d6e3d4",
+    "disclosure": "TEST ONLY provider configuration and responses"
+  },
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "browser": "158.0.8127.0",
+    "executable": "/tmp/chromium"
+  },
+  "sourceCommitMatchesAllReadFiles": true,
+  "filesDifferentFromRecordedHead": [],
+  "finished": "2026-11-28T13:01:36.064Z",
+  "fixtureSha256": "7a341498158458dcaa11f6f1d87de25b8f0429470a2acd2046cd758d5a0cceeb",
+  "passed": 0,
+  "failed": 1
+}

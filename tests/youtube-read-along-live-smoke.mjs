@@ -225,7 +225,7 @@ try {
   assert.deepEqual(followed,[1,2,3,4,null],'Recorded marks follow real media in order and stop at text pause');
   await command('pauseVideo');
   for(const kind of ['official-iframe-sdk','nocookie-embed','streamed-media'])assert.ok(completedProviderKinds.has(kind),'Actual provider response observed: '+kind);
-  assert.deepEqual(report.pageErrors.filter(error=>error.application),[],'No identified application page errors');
+  assert.deepEqual(report.pageErrors,[],'No uncaught page errors during the live diagnostic');
   report.status='PASS';
 } catch(error) {
   report.error=error.stack || String(error);note('failure',String(error.message||error));
