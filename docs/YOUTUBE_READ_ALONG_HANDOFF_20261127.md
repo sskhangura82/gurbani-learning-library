@@ -47,3 +47,22 @@ The focused Node tests cover recognized URL admission, exact originals, repetiti
 The actual-browser fixture uses a real Chrome browser and fresh contexts. Its default-config case runs the unchanged candidate. Positive cases replace only the provider key in a separately repinned fixture bundle and intercept metadata, the official SDK request and the iframe with visibly labelled **TEST ONLY** responses. They establish the owned interface's behavior with a controlled media clock; they do not establish live YouTube playback, rights to a recording, actual recitation timing, physical iPhone/Safari behavior or independent editorial approval.
 
 Final run identities, checks, hashes and screenshots belong in the adjacent verification evidence. Read those recorded results before treating this candidate as ready for release.
+
+## Recorded candidate results
+
+The application runtime tested in actual desktop Chrome is `1dc89e1e6532a9e51204701d8c264197cd49f5b5`. The final packaging change adds evidence, documentation and the CI artifact destination; a complete application digest inventory proves that its application bytes match that tested runtime.
+
+| Check | Result |
+| --- | --- |
+| Focused timing/provider/source and existing integrity/access contracts | 69 passed |
+| Additional original-input, public-access and toolchain preservation checks | 18 passed |
+| New read-along interface in actual Chrome | 28 passed |
+| Existing combined navigation in actual Chrome | 10 passed |
+| Actual service-worker installation/update/offline regressions | 7 passed |
+| Service-worker simulation | 9 passed |
+
+The browser fixture records Chrome `158.0.8127.37`, Node `v22.15.0`, fresh contexts and exact source-input digests. All recorded read-along inputs match the run's Git commit. The 320px and 1280px screenshots were inspected visually. This layout review led to the collapsed timing editor, which keeps the complete opening source row visible in the tested 320×900 reading viewport. The positive screenshots explicitly say **TEST ONLY — No recording is playing**; the unchanged candidate screenshot displays the actual missing-setup fallback.
+
+Six owned bundles, 39 declared graph inputs, 25 HTML pages and 62 script integrity attributes verify. The public offline shell has 125 assets. New unique route HTML, stylesheet and owned bundle total **97,758 bytes**, before transport compression; this excludes YouTube's own resources and the existing on-demand source files. Per-recording timing-map size is reported separately above.
+
+Review [verification/summary.json](../evidence/youtube-read-along/verification/summary.json), [the read-along browser report](../evidence/youtube-read-along/browser/1dc89e1/read-along/report.json) and [the actual offline report](../evidence/youtube-read-along/browser/1dc89e1/offline/report.json). GitHub CI on the final packaging head is a separate check; consult the draft pull request's Checks for that exact result. Actual Claude review and configured live-provider verification remain pending.

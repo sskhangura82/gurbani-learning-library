@@ -55,7 +55,7 @@ jobs:
           node tests/private-library-navigation-smoke.mjs
           node tests/source-reader-browser.mjs
           node tests/gurbani-learning-browser.mjs
-          node tests/youtube-read-along-browser.mjs
+          GLP_YOUTUBE_OUTPUT="$GITHUB_WORKSPACE/evidence/youtube-read-along/browser/ci" node tests/youtube-read-along-browser.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
