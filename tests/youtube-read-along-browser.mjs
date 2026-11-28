@@ -163,6 +163,8 @@ const ready = page => page.waitForSelector('#source-status[data-state="ready"]')
 async function openApp(page) {
   await page.goto(origin + prefix + pagePath); await ready(page);
   await page.waitForFunction(() => document.querySelectorAll('#read-along-text [data-line-id]').length === 385);
+  assert.equal(await page.locator('#timing-editor').evaluate(element => element.open), false,
+    'Timing editor starts closed so the reading remains prominent');
 }
 async function eventually(predicate, label) {
   const until = Date.now() + 15000;
@@ -181,6 +183,14 @@ async function exactSource(page, reading) {
 async function selectedLine(page, id) {
   await page.locator('#read-along-text [data-line-id="' + id + '"]').click();
   await page.waitForFunction(id => document.querySelector('#read-along-text [data-line-id="' + id + '"]')?.dataset.selected === 'true', id);
+}
+async function clickTimingEditorControl(page, id) {
+  const button = page.locator('#' + id);
+  const editorId = await button.evaluate(element => element.closest('details')?.id);
+  assert.equal(editorId, 'timing-editor', 'Marking controls belong to the optional timing editor');
+  const editor = page.locator('#' + editorId);
+  if (!await editor.evaluate(element => element.open)) await editor.locator(':scope > summary').click();
+  await button.click();
 }
 async function connect(page, video = VIDEO, input) {
   await page.locator('#video-url').fill(input || 'https://www.youtube.com/watch?v=' + video);
@@ -248,6 +258,8 @@ async function preserveLearning(page, {noWrites = false} = {}) {
 }
 async function geometry(page, width) {
   await page.setViewportSize({width, height: 900});
+  assert.equal(await page.locator('#timing-editor').evaluate(element => element.open), false,
+    'Reading screenshots retain the initially collapsed timing editor');
   const fixtureBody = page.frameLocator('#youtube-player iframe').locator('body')
     .filter({hasText: 'TEST ONLY'}).filter({hasText: 'No recording is playing'});
   await fixtureBody.waitFor({state: 'visible'});
@@ -516,14 +528,14 @@ try {
 
   await scenario('Mark selected, next, pause, repeat and undo create only explicit per-video annotations; save/export/replay are exact', async (page, check) => {
     await openApp(page); await connect(page); await selectedLine(page, first);
-    await mediaClock(page, 10); await page.locator('#mark-selected').click();
-    await mediaClock(page, 20); await page.locator('#mark-next').click();
-    await mediaClock(page, 30); await page.locator('#mark-pause').click();
-    await page.locator('#timing-undo').click();
+    await mediaClock(page, 10); await clickTimingEditorControl(page, 'mark-selected');
+    await mediaClock(page, 20); await clickTimingEditorControl(page, 'mark-next');
+    await mediaClock(page, 30); await clickTimingEditorControl(page, 'mark-pause');
+    await clickTimingEditorControl(page, 'timing-undo');
     await mediaClock(page, 25); await activeLine(page, null);
-    await mediaClock(page, 30); await page.locator('#mark-pause').click();
-    await selectedLine(page, first); await mediaClock(page, 40); await page.locator('#mark-selected').click();
-    await mediaClock(page, 50); await page.locator('#mark-pause').click();
+    await mediaClock(page, 30); await clickTimingEditorControl(page, 'mark-pause');
+    await selectedLine(page, first); await mediaClock(page, 40); await clickTimingEditorControl(page, 'mark-selected');
+    await mediaClock(page, 50); await clickTimingEditorControl(page, 'mark-pause');
     await preserveLearning(page, {noWrites: true});
     const exportedMap = await exported(page); assert.deepEqual(exportedMap.value, marked); check.export = exportedMap;
     await page.locator('#timing-save').click();
@@ -597,7 +609,7 @@ try {
 
   await scenario('Dirty source replacement requires a real choice; cancel preserves marks and confirm replaces only the draft', async (page, check) => {
     await openApp(page); await connect(page); await selectedLine(page, first);
-    await mediaClock(page, 10); await page.locator('#mark-selected').click();
+    await mediaClock(page, 10); await clickTimingEditorControl(page, 'mark-selected');
     const before = (await exported(page)).value;
     await openSourceChooser(page);
     await page.locator('#source-mode').selectOption('sggs'); await page.locator('#source-page').fill('1'); await page.locator('#source-find').click();
@@ -625,7 +637,7 @@ try {
   await scenario('Save and continue before loading timings restores the newly saved draft rather than a stale captured map', async (page, check) => {
     await openApp(page); await connect(page); await page.locator('#timing-load').click();
     assert.deepEqual((await exported(page)).value, marked);
-    await selectedLine(page, first); await mediaClock(page, 55); await page.locator('#mark-selected').click();
+    await selectedLine(page, first); await mediaClock(page, 55); await clickTimingEditorControl(page, 'mark-selected');
     const revised = clone(marked); revised.cues.push({at: 55000, lineId: first});
     assert.deepEqual((await exported(page)).value, revised);
     await page.locator('#timing-load').click(); await page.waitForSelector('#discard-dialog[open]');
@@ -719,8 +731,8 @@ try {
 
   await scenario('Storage quota failure preserves previous records and keeps unsaved marks exportable', async (page, check) => {
     await openApp(page); await connect(page); await selectedLine(page, first);
-    await mediaClock(page, 10); await page.locator('#mark-selected').click();
-    await mediaClock(page, 20); await page.locator('#mark-pause').click();
+    await mediaClock(page, 10); await clickTimingEditorControl(page, 'mark-selected');
+    await mediaClock(page, 20); await clickTimingEditorControl(page, 'mark-pause');
     await page.locator('#timing-save').click(); await page.waitForSelector('#timing-status[data-state="refused"]');
     const unsaved = timing(japji, [{at: 10000, lineId: first}, {at: 20000, lineId: null}]);
     assert.deepEqual((await exported(page)).value, unsaved);

@@ -278,7 +278,7 @@ graphs['read-along']={
   "entry": "collections/source-reader/read-along.mjs",
   "output": "collections/source-reader/read-along.bundle.mjs",
   "inputs": {
-    "collections/source-reader/read-along.mjs": "8d618896031f6e6ad5948ae9472f6e67a0fc76fffb7385854cd3b1ab65bf4e8a",
+    "collections/source-reader/read-along.mjs": "dcf0c46c16d1f40722343c368d0faf402fc8f97fe5401a8e029135da5b940aca",
     "collections/source-reader/read-along-core.mjs": "056b2c0b38c6b6d79515ffd5485f934436e5e80e0382a7112a79cf649edae5c0",
     "collections/source-reader/read-along-source.mjs": "cd0060d031c79219dec4e9ae07813d8eef36a23795f551c17992f42d41bb89ef",
     "collections/source-reader/read-along-player.mjs": "ddc878748aa3aa2288251512affe7a244497da6ff3c1c39aa5f4a613b64721a1",

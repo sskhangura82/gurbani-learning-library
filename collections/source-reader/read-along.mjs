@@ -167,7 +167,7 @@ function renderSource() {
   });
   textPanel.replaceChildren(fragment); textPanel.scrollTop = 0; textPanel.setAttribute('aria-busy', 'false');
   text('source-title', expected.title);
-  status('source-status', 'ready', expected.lines.length + ' original rows checked · ' + expected.binding.units.length + ' complete source ' + (expected.binding.units.length === 1 ? 'group' : 'groups'));
+  status('source-status', 'ready', expected.lines.length + ' original rows checked');
   text('source-provenance', 'Named edition: ' + expected.binding.editionId + '. This selection contains ' + expected.lines.length
     + ' original rows in ' + expected.binding.units.length + ' complete source ' + (expected.binding.units.length === 1 ? 'group.' : 'groups.'));
   document.documentElement.dataset.readAlongState = 'ready';
