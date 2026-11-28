@@ -1,0 +1,2700 @@
+{
+  "status": "PASS",
+  "started": "2026-11-28T01:33:36.655Z",
+  "sourceCommit": "38290310c94a30dd92ba3d7c479bac3181ddb047",
+  "checks": [
+    {
+      "name": "Actual default build reads full Japji and refuses unconfigured playback without any provider request",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "screenshot": "actual-candidate-unconfigured-1280.png",
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Configured fixture stays disconnected until Load and preserves a visible native-provider surface at 320 and 1280px",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "narrow": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "frame": {
+          "x": 32,
+          "y": 62.703125,
+          "width": 256,
+          "height": 200
+        },
+        "centreUncovered": true
+      },
+      "desktop": {
+        "viewport": 1280,
+        "documentWidth": 1280,
+        "frame": {
+          "x": 80,
+          "y": 72.390625,
+          "width": 481.3125,
+          "height": 270.734375
+        },
+        "centreUncovered": true
+      },
+      "screenshots": [
+        "synthetic-player-320.png",
+        "synthetic-player-1280.png"
+      ],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Metadata preflight refuses embedding disabled before loading the player script",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Metadata preflight refuses missing MadeForKids status before loading the player script",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Metadata preflight refuses ambiguous video identity before loading the player script",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Metadata preflight refuses live timeline before loading the player script",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Metadata preflight refuses missing recording before loading the player script",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Provider metadata HTTP failure remains an honest fallback",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Checked MadeForKids recording with a positive link offset and synchronous readiness seeks while paused without autoplay",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "An arbitrary host or iframe HTML never becomes a provider request",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Source selection exposes complete SGGS cross-Ang groups without contacting YouTube",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0049.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Dasam page 738 offers both complete owning groups and opens all 426 rows of 4TJ",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/dasam/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/dasam/chunks/c0040.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/dasam/chunks/c0041.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Mark selected, next, pause, repeat and undo create only explicit per-video annotations; save/export/replay are exact",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "export": {
+        "value": {
+          "schema": "glp.youtube-read-along.v1",
+          "timingStatus": "USER_MARKED",
+          "videoId": "fixture0001",
+          "source": {
+            "collectionId": "sggs",
+            "editionId": "shabados-5.0.0-next.0-SGGS-SSA2",
+            "manifestSha256": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+            "selectionId": "section:1DSA",
+            "units": [
+              {
+                "id": "DMP",
+                "sha256": "ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566"
+              },
+              {
+                "id": "LLL",
+                "sha256": "55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab"
+              },
+              {
+                "id": "ZKH",
+                "sha256": "bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77"
+              },
+              {
+                "id": "V2A",
+                "sha256": "837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a"
+              },
+              {
+                "id": "ZF2",
+                "sha256": "c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f"
+              },
+              {
+                "id": "6UA",
+                "sha256": "f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483"
+              },
+              {
+                "id": "MUY",
+                "sha256": "1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8"
+              },
+              {
+                "id": "2CT",
+                "sha256": "5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5"
+              },
+              {
+                "id": "EWS",
+                "sha256": "f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0"
+              },
+              {
+                "id": "4AZ",
+                "sha256": "01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9"
+              },
+              {
+                "id": "CQX",
+                "sha256": "82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564"
+              },
+              {
+                "id": "7XM",
+                "sha256": "f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1"
+              },
+              {
+                "id": "MET",
+                "sha256": "700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107"
+              },
+              {
+                "id": "B09",
+                "sha256": "b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3"
+              },
+              {
+                "id": "HN6",
+                "sha256": "c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4"
+              },
+              {
+                "id": "CXN",
+                "sha256": "c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03"
+              },
+              {
+                "id": "2VK",
+                "sha256": "92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646"
+              },
+              {
+                "id": "0HP",
+                "sha256": "eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9"
+              },
+              {
+                "id": "17Z",
+                "sha256": "b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8"
+              },
+              {
+                "id": "T6J",
+                "sha256": "00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352"
+              },
+              {
+                "id": "1ZF",
+                "sha256": "e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9"
+              },
+              {
+                "id": "345",
+                "sha256": "f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784"
+              },
+              {
+                "id": "EJT",
+                "sha256": "b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94"
+              },
+              {
+                "id": "DD0",
+                "sha256": "91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192"
+              },
+              {
+                "id": "KP5",
+                "sha256": "515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05"
+              },
+              {
+                "id": "LCC",
+                "sha256": "3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d"
+              },
+              {
+                "id": "F7J",
+                "sha256": "8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf"
+              },
+              {
+                "id": "DJQ",
+                "sha256": "60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248"
+              },
+              {
+                "id": "EG0",
+                "sha256": "2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d"
+              },
+              {
+                "id": "ELX",
+                "sha256": "773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca"
+              },
+              {
+                "id": "J2V",
+                "sha256": "b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96"
+              },
+              {
+                "id": "5XX",
+                "sha256": "4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1"
+              },
+              {
+                "id": "A8N",
+                "sha256": "57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a"
+              },
+              {
+                "id": "F40",
+                "sha256": "7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551"
+              },
+              {
+                "id": "8MC",
+                "sha256": "77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084"
+              },
+              {
+                "id": "L9B",
+                "sha256": "c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091"
+              },
+              {
+                "id": "GCL",
+                "sha256": "c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923"
+              },
+              {
+                "id": "KR0",
+                "sha256": "4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1"
+              },
+              {
+                "id": "BB8",
+                "sha256": "50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e"
+              }
+            ]
+          },
+          "cues": [
+            {
+              "at": 10000,
+              "lineId": "0NVY"
+            },
+            {
+              "at": 20000,
+              "lineId": "RBP6"
+            },
+            {
+              "at": 30000,
+              "lineId": null
+            },
+            {
+              "at": 40000,
+              "lineId": "0NVY"
+            },
+            {
+              "at": 50000,
+              "lineId": null
+            }
+          ]
+        },
+        "sha256": "4db32fb270249dca720d813ce886f99b71dfe72cee4fb63ab67ce150211db388",
+        "bytes": 3915,
+        "name": "Gurbani-timings-fixture0001-section-1DSA.json"
+      }
+    },
+    {
+      "name": "Explicit local load restores the exact map; actual clock handles gaps, repetition, pause, seek, rate and buffering",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ]
+          ],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA": "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null}]}",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Follow can be disabled while exact line highlighting continues without taking focus",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Import rejects wrong video, source identity, order, row, schema, malformed and oversized files while retaining the loaded map",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "Valid import/export is lossless and a group-bound map cannot be applied to full Japji",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA",
+              "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null}]}"
+            ]
+          ],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA": "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null}]}",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Dirty source replacement requires a real choice; cancel preserves marks and confirm replaces only the draft",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Save and continue before loading timings restores the newly saved draft rather than a stale captured map",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ],
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ],
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ]
+          ],
+          "writes": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA",
+              "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null},{\"at\":55000,\"lineId\":\"0NVY\"}]}"
+            ]
+          ],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA": "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null},{\"at\":55000,\"lineId\":\"0NVY\"}]}",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Switching videos destroys the previous player and ignores its late ready/time callbacks",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0002",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0002"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0002",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0002"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "Disconnect cancels an unfinished metadata attempt and its late response cannot replace the next recording",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0002",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0002"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0002",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0002"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "A native autoplay block reports a recoverable state and native Play can restore following",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ]
+          ],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA": "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null}]}",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Native provider navigation to another recording stops associating the old timing map",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ]
+          ],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA": "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null}]}",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Player errors clear alignment and retain the exact saved annotations and original text",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [
+            [
+              "local",
+              "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA"
+            ]
+          ],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.youtube-timing.v1:fixture0001:sggs:04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def:section:1DSA": "{\"schema\":\"glp.youtube-read-along.v1\",\"timingStatus\":\"USER_MARKED\",\"videoId\":\"fixture0001\",\"source\":{\"collectionId\":\"sggs\",\"editionId\":\"shabados-5.0.0-next.0-SGGS-SSA2\",\"manifestSha256\":\"04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def\",\"selectionId\":\"section:1DSA\",\"units\":[{\"id\":\"DMP\",\"sha256\":\"ae2d9ba49508ddb5b05c818c55925fa7e51c9067aa62a26f00730c4babcd6566\"},{\"id\":\"LLL\",\"sha256\":\"55bd7530247d2464e0cde6eac490588557c8f1676d3e618737d7006dce4d6eab\"},{\"id\":\"ZKH\",\"sha256\":\"bc3275de1d5ddb6720801a23e8d6b9a64b6ff129330b3115db2af698c2d2ec77\"},{\"id\":\"V2A\",\"sha256\":\"837a9300a35f33812a3ef443a3b6e04e1ab96340490625afe5538b24590d5c2a\"},{\"id\":\"ZF2\",\"sha256\":\"c31324e7207910fd4a2636094a389aa2a9e7ad4efa76dcd1b8deccc6aa0ddb1f\"},{\"id\":\"6UA\",\"sha256\":\"f35fd7f707694520aa9cf9cb23421e81b21affaf272afdcefbc6182b417b3483\"},{\"id\":\"MUY\",\"sha256\":\"1ce1c0b5c88208588c4024afb8651fadac90692e774f436b841b35f5bf1d85d8\"},{\"id\":\"2CT\",\"sha256\":\"5c58e3c3d0b4319639a504a5f4b545c6bcf3f03159f19f82c4096709fef727e5\"},{\"id\":\"EWS\",\"sha256\":\"f15c4ddd604474f79f55c5425a400f33405a6084bf944a5414481af98abc7be0\"},{\"id\":\"4AZ\",\"sha256\":\"01b032cf0f508cc169eabd1d1d5625ec5b3a0fbe6b2c553282a86fd802eda8b9\"},{\"id\":\"CQX\",\"sha256\":\"82979a064cb66d6ea1f41f8563452080adaeece89296d917eac95241368db564\"},{\"id\":\"7XM\",\"sha256\":\"f5d0fcb7c8f252f7d13a5458c46d580833be18a4d1ef6a323f01f6f535f5dca1\"},{\"id\":\"MET\",\"sha256\":\"700bbdba211f4a2e158d1ac997781f1a2ffbec851460884dfe174010fe7b1107\"},{\"id\":\"B09\",\"sha256\":\"b560ef3ff3a8316cf7d197868fbc6b11ab9038fe97d28b3fd32dd09f334770c3\"},{\"id\":\"HN6\",\"sha256\":\"c15a7e2e9d11587ea810c55d033230a4d4030a56a8c5606b0f1a6280dcc544e4\"},{\"id\":\"CXN\",\"sha256\":\"c2dcb12a70c63068b557684fea537dd06c6817efb4616a5b1f00da599f838c03\"},{\"id\":\"2VK\",\"sha256\":\"92efd7cd582f7cde4f7893723b78aaa3d53ad93967bfdb2096078f0e95a92646\"},{\"id\":\"0HP\",\"sha256\":\"eee7acf4309add38dad9f3f189dd86c1526a124053311b792ea056f10d56d7f9\"},{\"id\":\"17Z\",\"sha256\":\"b553584e0f7810986da920a6476d5bc310d29924a5758c85012c8c16d547e7a8\"},{\"id\":\"T6J\",\"sha256\":\"00869453c0f7866451fbbc0a46c3676429d6010ce735b84197f233cb0b803352\"},{\"id\":\"1ZF\",\"sha256\":\"e869f5463bad3dfcc128d64013631f5e4ac11767d105dfbac9ac1bbe08be1bb9\"},{\"id\":\"345\",\"sha256\":\"f2ab74a7e16b70f792b147faf18030a6d5ec5ff02f03f2fe66c33c9e6132b784\"},{\"id\":\"EJT\",\"sha256\":\"b3c0ec838f030eb33b7d88d9d4550d83d5ebbfe20473e4be953365dcb7d61b94\"},{\"id\":\"DD0\",\"sha256\":\"91bced9ffca3c9b6ad284ed8ffaa325dcdc3b852f89d465cef06cb00435d6192\"},{\"id\":\"KP5\",\"sha256\":\"515868563cc6caefca945973c76066bdf63ebbdbc9204abe78d6b5e53c730b05\"},{\"id\":\"LCC\",\"sha256\":\"3627af1789a5831204cde60247b6a5322590d9475de99290e5f07997a047ca2d\"},{\"id\":\"F7J\",\"sha256\":\"8a751205a454400380b992921bc3d33696f7e05fc845b4646cba1b0d783f22cf\"},{\"id\":\"DJQ\",\"sha256\":\"60e368f565fbb49c1a6c65910093b554aa8d2f79f0b8ef8b4a6c3b0019e01248\"},{\"id\":\"EG0\",\"sha256\":\"2d4e95b7e8d103f66c1b66f3a629e8fe7373ccfaec91a4945c1eae21dcfacd0d\"},{\"id\":\"ELX\",\"sha256\":\"773a57d0050cb99e5db46054a507d43eb22c784ec64395e9414718b00ffc6fca\"},{\"id\":\"J2V\",\"sha256\":\"b83b39fa7d4600a9bfcb8fd0282e5cf31e8be3cb171e727edeb87b580ad9fb96\"},{\"id\":\"5XX\",\"sha256\":\"4d5f249a8afc8966e6cc1c75efde51e51a2a0e053242fde69ab2ff51afa896b1\"},{\"id\":\"A8N\",\"sha256\":\"57fb82d2defe3a97f3a362a791e6e67731bc83267702cad0426c8c5ddb712e2a\"},{\"id\":\"F40\",\"sha256\":\"7db8693403d9989bbb616e414e5e741c0428b10667ce05cdc0ffe2836c0c4551\"},{\"id\":\"8MC\",\"sha256\":\"77228bfadb5cebc7b834ef4c0758141f77192a0382200ce88273ec4377a48084\"},{\"id\":\"L9B\",\"sha256\":\"c084b7e9e14f16b5a3dda7d06b4590579e7d1abffcf755f89721bb1b5ae8a091\"},{\"id\":\"GCL\",\"sha256\":\"c31a4f8c50c69ff3914455259f82ea1f9c5bc5e5391f2558f3c3614c7d24e923\"},{\"id\":\"KR0\",\"sha256\":\"4c08d304fa36149121b529c52ce6024ca1d4f615d816fa28fdc46467f54168b1\"},{\"id\":\"BB8\",\"sha256\":\"50a642efe773df2294499cfcc82e0f993ab8856e369cac51635bf37c92c1300e\"}]},\"cues\":[{\"at\":10000,\"lineId\":\"0NVY\"},{\"at\":20000,\"lineId\":\"RBP6\"},{\"at\":30000,\"lineId\":null},{\"at\":40000,\"lineId\":\"0NVY\"},{\"at\":50000,\"lineId\":null}]}",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "SDK network failure leaves a fallback and usable exact source",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    },
+    {
+      "name": "Explicit deletion removes only this companion profile",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "Storage quota failure preserves previous records and keeps unsaved marks exportable",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [
+        {
+          "host": "www.googleapis.com",
+          "path": "/youtube/v3/videos",
+          "method": "GET",
+          "kind": "metadata",
+          "videoId": "fixture0001"
+        },
+        {
+          "host": "www.youtube.com",
+          "path": "/iframe_api",
+          "method": "GET",
+          "kind": "sdk"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/fixture0001",
+          "method": "GET",
+          "kind": "frame",
+          "videoId": "fixture0001"
+        }
+      ],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "Same-length source corruption refuses the complete reading without exposing partial source or touching notes",
+      "status": "PASS",
+      "requests": [
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/listen/read-along.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-reader/read-along.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "host": "127.0.0.1",
+          "path": "/youtube-read-along-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "provider": [],
+      "unexpectedExternal": [],
+      "routeErrors": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "audit": {
+          "reads": [],
+          "writes": [],
+          "removes": [],
+          "clears": []
+        },
+        "local": {
+          "glp001.continuous.v2": "{\"version\":999,\"notes\":{\"mool.line01\":\"SYNTHETIC old Japji reflection — ਪੰਜਾਬੀ\"},\"future\":\"preserve exactly\"}",
+          "glp001.fullJapji.v1": "{SYNTHETIC malformed legacy record, deliberately unrepaired",
+          "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2": "SYNTHETIC SGGS place — untouched",
+          "private.synthetic.do-not-read": "SYNTHETIC private-data sentinel, not an owner PIN",
+          "glp001.nitnem.PRIVATE-SOURCE-REVIEW.v1.jaap.fixture": "SYNTHETIC Nitnem reflection — untouched",
+          "glp001.sukhmani.v1": "SYNTHETIC Sukhmani record — untouched",
+          "glp001.knowledge.learning.v1": "{\"SYNTHETIC\":\"knowledge reflection\"}",
+          "unrelated.synthetic.reflection": "SYNTHETIC unrelated record — untouched"
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "sourceHashes": {
+    "collections/source-data/sggs/manifest.json": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+    "collections/source-data/dasam/manifest.json": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+    "collections/source-data/sggs/chunks/c0001.json": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f",
+    "collections/source-data/sggs/chunks/c0049.json": "63a9624a4b5e5f8c11082df612680847abd73361e2de0a8ae451e4bca312af65",
+    "collections/source-data/dasam/chunks/c0040.json": "bc56ae81c80270ad4aab216fd754a07988d805bce40220ee5e61b69055e58807",
+    "collections/source-data/dasam/chunks/c0041.json": "94570526bd53d3fa7e1cf61f24920c46a7b1d6357a600612c5bc0502c8c63f34",
+    "collections/source-reader/read-along.bundle.mjs": "105514055eae31c6853dd5defc284fad04cfddd121cc7d3f924864382e15bf7f",
+    "listen/index.html": "55a716ef12a91639389c14ae50753739fb37e2fd30ce0360072cf650faa743ce",
+    "collections/source-reader/read-along-config.mjs": "cbc2be9b686cd3cbb858f34b6245ad325e6743867f155be8928f1ecc83b7c27e",
+    "listen/read-along.css": "1dfe034c68b2fe428238a37ea324d0674194a6c68f9638187de464f64ec8b379"
+  },
+  "sourceBytes": {
+    "collections/source-data/sggs/manifest.json": 1116397,
+    "collections/source-data/dasam/manifest.json": 1101376,
+    "collections/source-data/sggs/chunks/c0001.json": 128986,
+    "collections/source-data/sggs/chunks/c0049.json": 130305,
+    "collections/source-data/dasam/chunks/c0040.json": 101868,
+    "collections/source-data/dasam/chunks/c0041.json": 129235,
+    "collections/source-reader/read-along.bundle.mjs": 80222,
+    "listen/index.html": 10359,
+    "collections/source-reader/read-along-config.mjs": 276,
+    "listen/read-along.css": 8451
+  },
+  "limits": [
+    "Actual desktop Chrome, production owned bundle and DOM, with fresh contexts and synthetic records only.",
+    "The positive fixture replaces only the public provider configuration in an independently repinned owned bundle.",
+    "Official metadata, API script and player iframe requests receive TEST ONLY responses. No real YouTube request is allowed through.",
+    "The simulated player exposes documented method/event shapes and an explicitly controlled media clock; it is not actual video playback.",
+    "Default empty provider configuration is tested separately using the unchanged candidate bundle.",
+    "Original expectations derive independently from fixed source manifests and whole-group hashes, not the production source adapter.",
+    "No existing user browser profile, owner PIN, private plaintext, Claude session or real personal reflection is accessed.",
+    "Service workers are blocked to isolate this feature; desktop viewports do not establish Safari, VoiceOver or physical-iPhone behavior."
+  ],
+  "syntheticFixture": {
+    "mode": "synthetic-fixture",
+    "overridePaths": [
+      "collections/source-reader/read-along-config.mjs"
+    ],
+    "bundleSha256": "3870eb65e84c56a61ba696dbf986cebe975371638281010a04c5a1414c2f654c",
+    "htmlSha256": "4616f3ca148302b048d3c2e3808e5dd6d6776d84acc946822223cd0569041f86",
+    "disclosure": "TEST ONLY provider configuration and responses"
+  },
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "darwin",
+    "browser": "158.0.8127.37",
+    "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "sourceCommitMatchesAllReadFiles": true,
+  "filesDifferentFromRecordedHead": [],
+  "finished": "2026-11-28T01:33:49.441Z",
+  "fixtureSha256": "41017d7bcf58690f70c378989078dba9f1dce10d2289e8e1771ca2bd10c436e5",
+  "passed": 28,
+  "failed": 0
+}

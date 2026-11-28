@@ -1,6 +1,6 @@
 {
   "schema": "glp.application-runtime-equivalence.v1",
-  "runtime": "1dc89e1e6532a9e51204701d8c264197cd49f5b5",
+  "runtime": "38290310c94a30dd92ba3d7c479bac3181ddb047",
   "status": "PASS",
   "files": [
     {
@@ -1365,8 +1365,8 @@
     },
     {
       "path": "listen/index.html",
-      "bytes": 9085,
-      "sha256": "67f1cd878d8115bcb8a8a8cbdf568ac8b6372c4825d651226384e78b8eaa03d0"
+      "bytes": 10359,
+      "sha256": "55a716ef12a91639389c14ae50753739fb37e2fd30ce0360072cf650faa743ce"
     },
     {
       "path": "listen/read-along.css",
@@ -1861,7 +1861,7 @@
     {
       "path": "sw.js",
       "bytes": 13526,
-      "sha256": "51924c7dde5b50615ff114c5e09cff0b2b86296bb14cb34bbb56106650720749"
+      "sha256": "cbcdb5cf11fc99b9686973601ad52b69351b9a3becb1f506174de709c803b045"
     },
     {
       "path": "vendor/opengranth/LICENSE",

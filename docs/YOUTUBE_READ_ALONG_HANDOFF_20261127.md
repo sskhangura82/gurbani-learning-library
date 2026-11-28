@@ -24,7 +24,7 @@ The public offline shell adds only this route, stylesheet and owned bundle. It c
 
 `collections/source-reader/read-along-config.mjs` intentionally contains an empty `YOUTUBE_DATA_API_KEY`. The unchanged candidate therefore reports that playback setup is not connected and offers **Watch this recording on YouTube**. It makes no provider request before this refusal, and original-text reading remains available.
 
-An owner-controlled YouTube Data API v3 browser key is needed for the required recording-status lookup. Restrict it to the intended website referrers and YouTube Data API v3; a browser key is visible to clients. Do not substitute a private credential, account password or OAuth client secret. No cloud project, credentials, billing commitment or deployment has been created by this work. The ordinary reader screen does not ask visitors for a key.
+An owner-controlled YouTube Data API v3 browser key is needed for the required recording-status lookup. Restrict it to the intended website referrers and YouTube Data API v3; a browser key is visible to clients. Do not substitute a private credential, account password or OAuth client secret. No cloud project, credentials, billing commitment or deployment has been created by this work. The ordinary reader screen does not ask visitors for a key. Its Load video notice links the read-along privacy terms and YouTube Terms before connecting; the disclosure remains available on the page.
 
 Configuration changes owned application bytes. After setting the key, update the read-along input hash in `tools/script-integrity/policy.mjs`, rebuild the owned bundle, refresh its HTML SRI, regenerate the public offline hashes, and create a fresh explicit change-scope/verification record for the configured candidate. Run the relevant checks and test real permitted Gurbani recordings on the intended HTTPS origin. A key added after the recorded browser run is a new runtime, not covered by those prior hashes.
 
@@ -50,7 +50,7 @@ Final run identities, checks, hashes and screenshots belong in the adjacent veri
 
 ## Recorded candidate results
 
-The application runtime tested in actual desktop Chrome is `1dc89e1e6532a9e51204701d8c264197cd49f5b5`. The final packaging change adds evidence, documentation and the CI artifact destination; a complete application digest inventory proves that its application bytes match that tested runtime.
+The application runtime tested in actual desktop Chrome is `38290310c94a30dd92ba3d7c479bac3181ddb047`. The final packaging change adds refreshed evidence and documentation; a complete application digest inventory proves that its application bytes match that tested runtime.
 
 | Check | Result |
 | --- | --- |
@@ -63,6 +63,6 @@ The application runtime tested in actual desktop Chrome is `1dc89e1e6532a9e51204
 
 The browser fixture records Chrome `158.0.8127.37`, Node `v22.15.0`, fresh contexts and exact source-input digests. All recorded read-along inputs match the run's Git commit. The 320px and 1280px screenshots were inspected visually. This layout review led to the collapsed timing editor, which keeps the complete opening source row visible in the tested 320×900 reading viewport. The positive screenshots explicitly say **TEST ONLY — No recording is playing**; the unchanged candidate screenshot displays the actual missing-setup fallback.
 
-Six owned bundles, 39 declared graph inputs, 25 HTML pages and 62 script integrity attributes verify. The public offline shell has 125 assets. New unique route HTML, stylesheet and owned bundle total **97,758 bytes**, before transport compression; this excludes YouTube's own resources and the existing on-demand source files. Per-recording timing-map size is reported separately above.
+Six owned bundles, 39 declared graph inputs, 25 HTML pages and 62 script integrity attributes verify. The public offline shell has 125 assets. New unique route HTML, stylesheet and owned bundle total **99,032 bytes**, before transport compression; this excludes YouTube's own resources and the existing on-demand source files. Per-recording timing-map size is reported separately above.
 
-Review [verification/summary.json](../evidence/youtube-read-along/verification/summary.json), [the read-along browser report](../evidence/youtube-read-along/browser/1dc89e1/read-along/report.json) and [the actual offline report](../evidence/youtube-read-along/browser/1dc89e1/offline/report.json). GitHub CI on the final packaging head is a separate check; consult the draft pull request's Checks for that exact result. Actual Claude review and configured live-provider verification remain pending.
+Review [verification/summary.json](../evidence/youtube-read-along/verification/summary.json), [the read-along browser report](../evidence/youtube-read-along/browser/3829031/read-along/report.json) and [the actual offline report](../evidence/youtube-read-along/browser/3829031/offline/report.json). GitHub CI on the final packaging head is a separate check; consult the draft pull request's Checks for that exact result. Actual Claude review and configured live-provider verification remain pending.

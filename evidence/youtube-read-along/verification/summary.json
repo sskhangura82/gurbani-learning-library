@@ -2,7 +2,7 @@
   "schema": "glp.youtube-read-along.verification.v1",
   "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
   "base": "cfded3e2186c1f6e325d135f1fa62da1f03d34bb",
-  "runtime": "1dc89e1e6532a9e51204701d8c264197cd49f5b5",
+  "runtime": "38290310c94a30dd92ba3d7c479bac3181ddb047",
   "applicationFileCount": 374,
   "applicationBytesMatchTestedRuntime": true,
   "checks": {
@@ -23,7 +23,7 @@
   "size": {
     "syntheticFullJapjiTimingBytes": 15512,
     "syntheticFullJapjiCues": 386,
-    "newUniqueOwnedAssetsBytes": 97758,
+    "newUniqueOwnedAssetsBytes": 99032,
     "containsMedia": false
   },
   "provider": {
@@ -57,5 +57,6 @@
     "Positive player cases use a controlled synthetic clock; advertisements and real recitation alignment are unverified.",
     "Desktop Chrome viewports do not establish physical iPhone, Safari or assistive-technology acceptance.",
     "Actual independent Claude review remains pending."
-  ]
+  ],
+  "connectionNotice": "Load video assents to named read-along privacy terms and YouTube Terms; notice remains available"
 }
