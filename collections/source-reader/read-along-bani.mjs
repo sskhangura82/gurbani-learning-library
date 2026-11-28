@@ -94,11 +94,17 @@ function originalRows(data, source) {
         need(line && typeof line.id === 'string' && !byId.has(line.id), 'BANI_SOURCE_ORDER');
         byId.set(line.id, line);
       }
+      let linePosition = 0, headingPosition = 0;
       for (const item of unit.sourceDisplayOrder) {
         let row, key, kind;
-        if (item?.kind === 'line') { row = byId.get(item.id); key = 'line:' + item.id; kind = 'line'; }
+        if (item?.kind === 'line') {
+          need(item.id === unit.lines[linePosition]?.id, 'BANI_SOURCE_ORDER');
+          linePosition += 1; row = byId.get(item.id); key = 'line:' + item.id; kind = 'line';
+        }
         else if (item?.kind === 'metricalHeading' && Number.isSafeInteger(item.index)
           && item.index >= 0 && item.index < headings.length) {
+          need(item.index === headingPosition, 'BANI_SOURCE_ORDER');
+          headingPosition += 1;
           row = headings[item.index]; key = 'heading:' + item.index; kind = 'heading';
         } else fail('BANI_SOURCE_ORDER');
         need(row && !seen.has(key), 'BANI_SOURCE_ORDER');

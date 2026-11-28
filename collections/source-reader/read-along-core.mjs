@@ -131,11 +131,21 @@ export function putCue(map, reading, atMs, lineId) {
   return validateTiming({...checked, cues}, reading, checked.videoId);
 }
 
+// Markers have integer-millisecond resolution. Use that same conversion when
+// reading the media clock so a seconds round-trip cannot move a marker earlier.
+// This is numeric rounding, not a tolerance for a provider's earlier keyframe.
+export function mediaTimeMs(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0 || seconds > MAX_TIME_MS / 1000) return null;
+  const time = Math.round(seconds * 1000);
+  return Number.isSafeInteger(time) && time >= 0 && time <= MAX_TIME_MS ? time : null;
+}
+
 // Only a bounded interval has an asserted active line. An unfinished last mark
 // never invents timing for the remainder of a recording.
 export function lineAt(map, mediaSeconds) {
-  if (!Number.isFinite(mediaSeconds) || mediaSeconds < 0 || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
-  const time = mediaSeconds * 1000, cues = map.cues;
+  const time = mediaTimeMs(mediaSeconds);
+  if (time === null || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
+  const cues = map.cues;
   let left = 0, right = cues.length;
   while (left < right) { const middle = (left + right) >>> 1; if (cues[middle].at <= time) left = middle + 1; else right = middle; }
   const index = left - 1;

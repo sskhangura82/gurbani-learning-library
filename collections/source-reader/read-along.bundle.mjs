@@ -757,13 +757,18 @@ function originalRows(data, source2) {
         need2(line && typeof line.id === "string" && !byId.has(line.id), "BANI_SOURCE_ORDER");
         byId.set(line.id, line);
       }
+      let linePosition = 0, headingPosition = 0;
       for (const item of unit.sourceDisplayOrder) {
         let row, key, kind;
         if (item?.kind === "line") {
+          need2(item.id === unit.lines[linePosition]?.id, "BANI_SOURCE_ORDER");
+          linePosition += 1;
           row = byId.get(item.id);
           key = "line:" + item.id;
           kind = "line";
         } else if (item?.kind === "metricalHeading" && Number.isSafeInteger(item.index) && item.index >= 0 && item.index < headings.length) {
+          need2(item.index === headingPosition, "BANI_SOURCE_ORDER");
+          headingPosition += 1;
           row = headings[item.index];
           key = "heading:" + item.index;
           kind = "heading";
@@ -1019,9 +1024,15 @@ function putCue(map, reading2, atMs, lineId) {
   cues.sort((a, b) => a.at - b.at);
   return validateTiming({ ...checked, cues }, reading2, checked.videoId);
 }
+function mediaTimeMs(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0 || seconds > MAX_TIME_MS / 1e3) return null;
+  const time = Math.round(seconds * 1e3);
+  return Number.isSafeInteger(time) && time >= 0 && time <= MAX_TIME_MS ? time : null;
+}
 function lineAt(map, mediaSeconds) {
-  if (!Number.isFinite(mediaSeconds) || mediaSeconds < 0 || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
-  const time = mediaSeconds * 1e3, cues = map.cues;
+  const time = mediaTimeMs(mediaSeconds);
+  if (time === null || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
+  const cues = map.cues;
   let left = 0, right = cues.length;
   while (left < right) {
     const middle = left + right >>> 1;
@@ -1494,7 +1505,7 @@ var baniIds = /* @__PURE__ */ new Set(["japji", "jaap", "savaiye", "chaupai", "a
 var reading = null, timing = null, video = null, controller = null, media = null;
 var sourceSequence = 0, playerSequence = 0, contextSequence = 0, browseSequence = 0, importSequence = 0, mapRevision = 0;
 var selectedId = null, activeId = null, baseline = null, dirty = false, connecting = false, browsing = false;
-var pendingStart = null, undo = [], options = [], optionBinding = null, pendingAction = null, dialogReturn = null;
+var pendingStart = null, startNotice = null, undo = [], options = [], optionBinding = null, pendingAction = null, dialogReturn = null;
 var teaching = false, teachLineId = null;
 var rows = /* @__PURE__ */ new Map(), lineIndices = /* @__PURE__ */ new Map();
 function node(tag, className, text3) {
@@ -1511,11 +1522,11 @@ function status(id, state, message) {
   text2(id, message);
 }
 function hasClock(snapshot = media) {
-  return Boolean(controller && video && reading && snapshot?.ready && snapshot.videoId === video.videoId && snapshot.state !== "error" && Number.isFinite(snapshot.timeSeconds) && snapshot.timeSeconds >= 0);
+  return Boolean(controller && video && reading && snapshot?.ready && snapshot.videoId === video.videoId && snapshot.state !== "error" && mediaTimeMs(snapshot.timeSeconds) !== null);
 }
 function currentCue(snapshot = media) {
   if (!hasClock(snapshot) || !timing) return null;
-  const at = snapshot.timeSeconds * 1e3;
+  const at = mediaTimeMs(snapshot.timeSeconds);
   let left = 0, right = timing.cues.length;
   while (left < right) {
     const middle = left + right >>> 1;
@@ -1543,7 +1554,7 @@ function updateTeaching() {
   }
   text2("teach-line", line?.text || "");
   preview.hidden = !line;
-  text2("teach-line-label", line ? "Next to mark · line " + (index + 1) + " of " + reading.lines.length : teaching && reading ? "You have reached the last line. Mark a text pause or end, or select a line to repeat." : "Choose a line to begin.");
+  text2("teach-line-label", line ? "Next: " + (line.kind === "heading" ? "source heading " : "line ") + (index + 1) + " of " + reading.lines.length : teaching && reading ? "You have reached the last line. Mark a text pause or end, or select a line to repeat." : "Choose a line to begin.");
   $("teach-next").disabled = !teaching || !line || !timing || !hasClock();
 }
 function revealTeaching() {
@@ -1595,7 +1606,11 @@ function rowState(id) {
   row.setAttribute("aria-pressed", String(selected));
   if (active) row.setAttribute("aria-current", "true");
   else row.removeAttribute("aria-current");
-  row.querySelector(".read-along-line-state").textContent = [selected ? "Selected" : "", active ? "Timed line" : ""].filter(Boolean).join(" · ");
+  row.querySelector(".read-along-line-state").textContent = [
+    row.dataset.kind === "heading" ? "Source heading" : "",
+    selected ? "Selected" : "",
+    active ? "Timed line" : ""
+  ].filter(Boolean).join(" · ");
 }
 function revealRow(id, { follow = false } = {}) {
   const row = rows.get(id);
@@ -1605,7 +1620,7 @@ function revealRow(id, { follow = false } = {}) {
   const top = textPanel.scrollTop + box.top - panelBox.top - 12;
   textPanel.scrollTo({ top: Math.max(0, top), behavior: "auto" });
 }
-function selectLine(id, { focus = false, reveal = false, updateTeach = true } = {}) {
+function selectLine(id, { focus = false, reveal = false, updateTeach = true, revealTeach = true } = {}) {
   if (!lineIndices.has(id)) return;
   const previous = selectedId;
   selectedId = id;
@@ -1613,11 +1628,11 @@ function selectLine(id, { focus = false, reveal = false, updateTeach = true } = 
   rowState(id);
   if (teaching && updateTeach) teachLineId = id;
   const index = lineIndices.get(id), line = reading.lines[index];
-  text2("selected-line", "Selected: line " + (index + 1) + " of " + reading.lines.length + " · " + line.label);
+  text2("selected-line", "Selected: " + (line.kind === "heading" ? "source heading " : "line ") + (index + 1) + " of " + reading.lines.length + " · " + line.label);
   if (reveal) revealRow(id);
   if (focus) rows.get(id).focus({ preventScroll: true });
   updateControls();
-  if (teaching && updateTeach) revealTeaching();
+  if (teaching && updateTeach && revealTeach) revealTeaching();
 }
 function setActive(id) {
   if (id && !rows.has(id)) id = null;
@@ -1634,7 +1649,7 @@ function alignmentMessage() {
   if (!timing.cues.length) return "No timing markers yet. Select a line and mark its start.";
   if (!hasClock()) return "Timings are open. Connect the recording to follow its clock.";
   if (activeId) return "Timed line " + (lineIndices.get(activeId) + 1) + " · " + reading.lines[lineIndices.get(activeId)].label;
-  const at = media.timeSeconds * 1e3;
+  const at = mediaTimeMs(media.timeSeconds);
   let left = 0, right = timing.cues.length;
   while (left < right) {
     const middle = left + right >>> 1;
@@ -1662,35 +1677,61 @@ function updateClock() {
 function acceptSnapshot(snapshot, token, expectedReading, expectedVideo) {
   if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo || snapshot?.videoId !== expectedVideo) return;
   media = snapshot;
-  if (controller && snapshot.ready && pendingStart !== null) {
+  const target = controller;
+  const current = () => token === playerSequence && controller === target && reading === expectedReading && video?.videoId === expectedVideo;
+  if (target && snapshot.ready && pendingStart !== null) {
     const start = pendingStart;
-    pendingStart = null;
-    if (start > 0) {
-      controller.pause();
-      controller.seek(start);
-      const current = controller.snapshot();
-      if (token !== playerSequence || reading !== expectedReading || current?.videoId !== expectedVideo) return;
-      media = current;
+    if (start <= 0) pendingStart = null;
+    else if (Number.isFinite(snapshot.durationSeconds) && snapshot.durationSeconds > 0) {
+      pendingStart = null;
+      if (start > snapshot.durationSeconds) {
+        startNotice = "Recording connected. The link’s start time is beyond this recording’s length, so that offset was ignored. Use YouTube’s controls to choose a point.";
+      } else {
+        startNotice = null;
+        const paused = target.pause();
+        if (!current()) return;
+        if (paused === false) {
+          playerError({ code: "YOUTUBE_PAUSE_FAILED", message: "The player could not pause for the link’s start time. Reconnect to continue." }, token, expectedReading, expectedVideo);
+          return;
+        }
+        const moved = target.seek(start);
+        if (!current()) return;
+        if (moved === false) {
+          playerError({ code: "YOUTUBE_SEEK_FAILED", message: "The player could not move to the link’s start time. Reconnect to continue." }, token, expectedReading, expectedVideo);
+          return;
+        }
+        const next = target.snapshot();
+        if (!current() || next?.videoId !== expectedVideo) return;
+        media = next;
+      }
+    } else {
+      startNotice = "Recording connected. Waiting for its length before applying the link’s start time.";
     }
   }
-  if (media.ready && media.state !== "error" && $("video-status").dataset.state !== "ready")
-    status("video-status", "ready", "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.");
+  if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo) return;
+  if (media?.ready && media.state !== "error")
+    status("video-status", "ready", startNotice || "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.");
   updateClock();
 }
 function playerError(error, token, expectedReading, expectedVideo) {
   if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo || error?.code === "YOUTUBE_CANCELLED") return;
   const message = error?.code === "YOUTUBE_NOT_CONFIGURED" ? "YouTube playback setup is not connected yet. You can still read here or open the video on YouTube." : error?.code === "YOUTUBE_CONFIGURATION" ? "YouTube playback setup is unavailable. You can still read here or open the video on YouTube." : error?.message || "The recording could not be opened here. You can still read or watch it on YouTube.";
-  status("video-status", "unavailable", message);
-  if (error?.code !== "YOUTUBE_PLAYBACK_BLOCKED") {
+  if (error?.code === "YOUTUBE_RECORDING_CHANGED" && controller) {
     media = null;
+    pendingStart = null;
+    startNotice = null;
     updateClock();
+  } else if (error?.code !== "YOUTUBE_PLAYBACK_BLOCKED") {
+    detachPlayer();
   }
+  status("video-status", "unavailable", message);
   updateFallback();
 }
 function detachPlayer(message) {
   ++playerSequence;
   connecting = false;
   pendingStart = null;
+  startNotice = null;
   const previous = controller;
   controller = null;
   media = null;
@@ -1731,6 +1772,7 @@ function renderSource() {
     const row = node("button", "read-along-line");
     row.type = "button";
     row.dataset.lineId = line.id;
+    row.dataset.kind = line.kind || "line";
     row.dataset.selected = "false";
     row.dataset.active = "false";
     row.tabIndex = -1;
@@ -1739,7 +1781,7 @@ function renderSource() {
     row.append(
       original,
       node("span", "read-along-locator", line.label + " · Line " + (index + 1)),
-      node("span", "read-along-line-state")
+      node("span", "read-along-line-state", line.kind === "heading" ? "Source heading" : "")
     );
     row.addEventListener("click", () => {
       if (reading === expected) selectLine(line.id);
@@ -1821,7 +1863,7 @@ function chooserChanged() {
   text2("source-page-label", mode === "dasam" ? "Source page · 1–1428" : "Ang number · 1–1430");
   $("source-group").replaceChildren(node("option", "", "Find passages to choose one"));
   $("source-group").disabled = true;
-  text2("source-options-status", isJapji ? "Japji includes all 385 original rows in this named digital edition." : isBani ? "Choose one of the library’s named Bani readers, or Morning Nitnem: Japji, Jaap, Tav-Prasad Savaiye, Benti Chaupai and Anand. These editions keep separate timing maps from the full-source reader." : "Find a page, then choose the passage beginning you want. The complete provider group will open.");
+  text2("source-options-status", isJapji ? "Japji includes all 385 original rows in this named digital edition." : isBani ? "Choose one of the library’s named Bani readers, or the Morning Bani selection: Japji, Jaap, Tav-Prasad Savaiye, Benti Chaupai and Anand. These editions keep separate timing maps from the full-source reader." : "Find a page, then choose the passage beginning you want. The complete provider group will open.");
   updateControls();
 }
 async function browse() {
@@ -1936,15 +1978,11 @@ async function connectVideo(identity) {
     updateControls();
   } catch (error) {
     if (token !== playerSequence || reading !== expectedReading || video?.videoId !== identity.videoId) return;
-    connecting = false;
-    controller = null;
-    media = null;
-    mount.replaceChildren();
-    mount.hidden = true;
-    $("player-placeholder").hidden = false;
+    if (error?.code === "YOUTUBE_CANCELLED") {
+      detachPlayer("The video connection stopped. Choose Load video to try again.");
+      return;
+    }
     playerError(error, token, expectedReading, identity.videoId);
-    updateClock();
-    updateControls();
   }
 }
 function loadVideo(event) {
@@ -1997,7 +2035,8 @@ function renderTiming() {
   $("timing-cues").start = first + 1;
   for (let index = first; index < timing.cues.length; index++) {
     const cue = timing.cues[index], item = node("li");
-    const label = cue.lineId === null ? "Text pause or end" : "Line " + (lineIndices.get(cue.lineId) + 1) + " · " + reading.lines[lineIndices.get(cue.lineId)].label;
+    const lineIndex = lineIndices.get(cue.lineId), line = reading.lines[lineIndex];
+    const label = cue.lineId === null ? "Text pause or end" : (line.kind === "heading" ? "Source heading · row " : "Line ") + (lineIndex + 1) + " · " + line.label;
     const go = node("button", "quiet", formatTime(cue.at / 1e3) + " · " + label);
     go.type = "button";
     go.dataset.cueAt = String(cue.at);
@@ -2013,7 +2052,7 @@ function currentClock() {
   const snapshot = controller.snapshot();
   if (!hasClock(snapshot)) return null;
   media = snapshot;
-  return Math.round(snapshot.timeSeconds * 1e3);
+  return mediaTimeMs(snapshot.timeSeconds);
 }
 function mark(lineId, { select = false } = {}) {
   if (!timing || !reading) return false;
@@ -2167,7 +2206,7 @@ textPanel.addEventListener("keydown", (event) => {
   event.preventDefault();
   let index = lineIndices.get(selectedId) ?? 0;
   index = event.key === "Home" ? 0 : event.key === "End" ? reading.lines.length - 1 : Math.max(0, Math.min(reading.lines.length - 1, index + (event.key === "ArrowDown" ? 1 : -1)));
-  selectLine(reading.lines[index].id, { focus: true, reveal: true });
+  selectLine(reading.lines[index].id, { focus: true, reveal: true, revealTeach: false });
 });
 $("mark-selected").addEventListener("click", () => {
   if (selectedId) mark(selectedId);

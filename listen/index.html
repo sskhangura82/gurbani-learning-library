@@ -22,7 +22,7 @@
 <details class="source-chooser"><summary>Choose the original text</summary>
 <div class="source-fields">
 <div><label for="source-mode">Reading</label><select id="source-mode"><option value="japji">Complete Japji Sahib</option><option value="bani">Daily Bani collection</option><option value="sggs">Shabad or Salok from SGGS</option><option value="dasam">Dasam Granth passage</option></select></div>
-<div id="source-bani-field" hidden><label for="source-bani">Choose a Bani</label><select id="source-bani"><option value="japji">Japji Sahib</option><option value="jaap">Jaap Sahib</option><option value="savaiye">Tav-Prasad Savaiye</option><option value="chaupai">Benti Chaupai Sahib</option><option value="anand">Anand Sahib</option><option value="rehras">Rehras Sahib</option><option value="sohila">Sohila Sahib</option><option value="sukhmani">Sukhmani Sahib</option><option value="morning">Morning Nitnem · five Banis</option></select></div>
+<div id="source-bani-field" hidden><label for="source-bani">Choose a Bani</label><select id="source-bani"><option value="japji">Japji Sahib</option><option value="jaap">Jaap Sahib</option><option value="savaiye">Tav-Prasad Savaiye</option><option value="chaupai">Benti Chaupai Sahib</option><option value="anand">Anand Sahib</option><option value="rehras">Sodar Rehras Sahib</option><option value="sohila">Kirtan Sohila</option><option value="sukhmani">Sukhmani Sahib</option><option value="morning">Morning Bani selection</option></select></div>
 <div id="source-page-field" hidden><label id="source-page-label" for="source-page">Ang number</label><div class="page-row"><input id="source-page" type="text" inputmode="numeric" pattern="[1-9][0-9]*" maxlength="4" value="1" autocomplete="off"><button id="source-find" type="button" disabled>Find passages</button></div></div>
 <div id="source-group-field" class="full-field" hidden><label for="source-group">Passage beginning</label><select id="source-group" disabled><option value="">Choose an Ang or page first</option></select></div>
 <button id="source-open" type="button">Open selected text</button>
@@ -40,7 +40,7 @@
 <div id="youtube-player" aria-label="YouTube player" hidden></div>
 <div id="player-placeholder" class="player-placeholder"><span>Read first, or connect a recording.</span><small>The video appears here after you choose Load video.</small></div>
 </div>
-<div class="media-bar"><span id="player-state">Not connected</span><output id="media-time" aria-label="Recording time">—</output><span id="playback-rate" aria-label="Playback speed"></span><button id="timing-replay" class="quiet" type="button" aria-label="Replay current marked line" disabled>↺ Replay line</button></div>
+<div class="media-bar"><span id="player-state">Not connected</span><output id="media-time" aria-label="Recording time" aria-live="off">—</output><span id="playback-rate" aria-label="Playback speed"></span><button id="timing-replay" class="quiet" type="button" aria-label="Replay current marked line" disabled>↺ Replay line</button></div>
 </section>
 
 <section class="text-card" aria-labelledby="source-title">
@@ -59,7 +59,7 @@
 <p id="teach-help" class="small" hidden>Each tap marks the previewed line, then shows the next. Select any line to repeat.</p>
 </details>
 <label class="follow-control"><input id="follow-timings" type="checkbox" checked> Follow recorded timings <span>Scroll to the marked line</span></label>
-<p id="alignment-status" class="alignment-status" role="status" aria-live="polite">No timing intervals yet.</p>
+<p id="alignment-status" class="alignment-status" aria-live="off">No timing intervals yet.</p>
 <div id="read-along-text" class="read-along-text" role="region" aria-label="Verified original text" aria-describedby="text-help" tabindex="-1" aria-busy="true"></div>
 <p id="text-help" class="small">Select a line, then mark its start at the recording's current time. Mark the next line, or a text pause/end, to close that interval. Select an earlier line for a repetition. These are your manual timings; words are not recognised automatically.</p>
 </section>
@@ -88,5 +88,5 @@
 <h2 id="discard-title">Keep your timing changes?</h2><p id="discard-description">There are timing changes you have not saved. Save or export a copy before replacing this map.</p>
 <div class="dialog-actions"><button id="discard-save" type="button">Save and continue</button><button id="discard-export" class="quiet" type="button">Export a copy</button><button id="discard-cancel" class="quiet" type="button" autofocus>Keep editing</button><button id="discard-confirm" class="quiet" type="button">Discard changes and continue</button></div><p id="discard-status" class="status" role="status"></p>
 </dialog>
-<script type="module" src="../collections/source-reader/read-along.bundle.mjs" integrity="sha384-IWil4Gdhqn9oAHHFCdkg62mKY0uhD87DIcztTzTfayY0J2OVrkJdij6zIQ0ZXCWL" crossorigin="anonymous"></script>
+<script type="module" src="../collections/source-reader/read-along.bundle.mjs" integrity="sha384-hekHg7B2gx2I0YyV2igntUrMMRF6zSgvU3ykV3B1yRz+XuiuWxkyFKHNqy7OuEjX" crossorigin="anonymous"></script>
 </body></html>

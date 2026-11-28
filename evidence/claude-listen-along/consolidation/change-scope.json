@@ -12,43 +12,43 @@
     {
       "path": "collections/source-reader/read-along-bani.mjs",
       "kind": "added",
-      "afterSha256": "95c8e8f432bc055ba4e7d183348c612e739fc4abc7c452018e7bca400ea0d2f6"
+      "afterSha256": "e4cb3e39842d4266b96049ad8d6e8922f78f50017f5b71763c134e70539f6d6b"
     },
     {
       "path": "collections/source-reader/read-along-core.mjs",
       "kind": "modified",
       "beforeSha256": "056b2c0b38c6b6d79515ffd5485f934436e5e80e0382a7112a79cf649edae5c0",
-      "afterSha256": "2d04b8b2c3a8faa58df00212609147a1a11eb68c7009e266f18cbf57b5aef3a3"
+      "afterSha256": "c2416a61de85d9c7ff4b386d4fc02b8448e5df6eaceab8b3a2729ca16aa814f6"
     },
     {
       "path": "collections/source-reader/read-along.bundle.mjs",
       "kind": "modified",
       "beforeSha256": "105514055eae31c6853dd5defc284fad04cfddd121cc7d3f924864382e15bf7f",
-      "afterSha256": "35e9e87aa786859cb0ba908a4c75a3e77cea6a4057b033d42d63587b9896da8a"
+      "afterSha256": "75112d5c87fd353e3734e012c27bd2cc9bcbb5320f077d154c767c8afeba9308"
     },
     {
       "path": "collections/source-reader/read-along.mjs",
       "kind": "modified",
       "beforeSha256": "dcf0c46c16d1f40722343c368d0faf402fc8f97fe5401a8e029135da5b940aca",
-      "afterSha256": "2d34a3b6f4290bb212e2f08220b17705dd104e590c6068caa82e1991dac3e5eb"
+      "afterSha256": "7a9ac308d81ecee15aee212c20b52111b684aca1ac2ba8edd10a8b3520011051"
     },
     {
       "path": "listen/index.html",
       "kind": "modified",
       "beforeSha256": "55a716ef12a91639389c14ae50753739fb37e2fd30ce0360072cf650faa743ce",
-      "afterSha256": "35c1685bf058eb22a4d876a811fe93ed833d31ac88464c36c64c36048c5d1db4"
+      "afterSha256": "2cc55a1641774e2e73790ad043f21e51de8fafb7d32f0c5c00cc2369afd7b7b8"
     },
     {
       "path": "listen/read-along.css",
       "kind": "modified",
       "beforeSha256": "1dfe034c68b2fe428238a37ea324d0674194a6c68f9638187de464f64ec8b379",
-      "afterSha256": "d1b4ed33742be9c7a1097769f1bdfb3570ac8c515018eb96ba279d35c6b3c62d"
+      "afterSha256": "e1cf07b27a0f3518f4cd9633e7f26112f2f5b72f7545d35b2f0c4508dcb75573"
     },
     {
       "path": "sw.js",
       "kind": "modified",
       "beforeSha256": "cbcdb5cf11fc99b9686973601ad52b69351b9a3becb1f506174de709c803b045",
-      "afterSha256": "c789822c4baeb88299e0cd027695fa267c6ccf36e6e041ad76ef99963d19fb1e"
+      "afterSha256": "7a48f40e9486f7b811f749b9322d1c0170dd30dacac309661be2994f07365584"
     }
   ]
 }

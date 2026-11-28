@@ -66,7 +66,7 @@ The original prototype also underwent native YouTube diagnostics with fresh brow
 
 ## Independent Claude Code review
 
-The connected Claude Code review is being recorded separately for runtime `8ec9b599dba4d112b6cc371e69d1515d2c9591ab`. Its final result belongs in the adjacent evidence before this handoff is finalized. Builder records retain their original review labels; any independent review is scoped to this increment and cannot be treated as historical-content approval or approval of the older stack.
+The connected Claude Code reviewed runtime `8ec9b599dba4d112b6cc371e69d1515d2c9591ab` and returned **changes required**. Its floating-point Replay defect was independently reproduced; the code repairs and new regression tests are implemented, with expanded browser verification and a focused Claude follow-up still pending. Read the [complete original review](../evidence/claude-listen-along/consolidation/claude-code/review.md) and [repair response](CLAUDE_LISTEN_ALONG_REPAIR_RESPONSE_20261127.md). Builder records retain their original review labels; this review is scoped to the increment and is not historical-content or older-stack approval.
 
 ## Size, build and preservation
 
