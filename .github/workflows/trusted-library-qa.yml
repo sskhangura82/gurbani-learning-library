@@ -27,7 +27,7 @@ jobs:
           node --test tests/sikh-source-reader-core.mjs
           node --test tests/gurbani-learning-contracts.mjs tests/gurbani-learning-inputs.mjs
           npm ci --prefix tools/script-integrity
-          node --test tests/youtube-read-along-core.mjs tests/youtube-player-contracts.mjs tests/youtube-read-along-inputs.mjs tests/youtube-loader-capability.mjs
+          node --test tests/youtube-read-along-core.mjs tests/youtube-player-contracts.mjs tests/youtube-read-along-inputs.mjs tests/youtube-loader-capability.mjs tests/youtube-bani-read-along.mjs
       - name: Preserve checks of historical review provenance
         run: |
           node --test tests/history-registry.mjs tests/history-draft.mjs tests/history-editorial.mjs

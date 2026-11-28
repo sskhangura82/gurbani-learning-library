@@ -1,0 +1,2878 @@
+{
+  "status": "PASS",
+  "started": "2026-11-28T13:12:35.904Z",
+  "sourceCommit": "55ccad9b150de130370cda5eeaefec2bc6974ac9",
+  "video": "8soV6l6is4Q",
+  "inputHashes": {
+    "listen/index.html": "02e905c48e5649effede1fa590f2af0681531df99282f3b0015646b7b11de0ef",
+    "collections/source-reader/read-along.bundle.mjs": "b6452f134127b08c3608b02a76cb1a5c6cd7a88727c75ab6048b8a9ab87e153b",
+    "listen/read-along.css": "e1cf07b27a0f3518f4cd9633e7f26112f2f5b72f7545d35b2f0c4508dcb75573",
+    "collections/source-reader/read-along-config.mjs": "cbc2be9b686cd3cbb858f34b6245ad325e6743867f155be8928f1ecc83b7c27e",
+    "collections/source-reader/read-along-player.mjs": "1c3aa3a0184ef0471565f60230f1900dea771ae1f237c4ea1199084bb59da797",
+    "collections/source-reader/read-along.mjs": "17c97daedd305f7ea2363998c78e5fdc6fa91b01e6a7edd588b3f3a975ffee42"
+  },
+  "servedHashes": {
+    "listen/read-along.css": "e1cf07b27a0f3518f4cd9633e7f26112f2f5b72f7545d35b2f0c4508dcb75573",
+    "collections/source-data/sggs/manifest.json": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+    "collections/source-data/sggs/chunks/c0001.json": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f"
+  },
+  "metadataLookupsStubbed": 1,
+  "events": [
+    {
+      "at": "2026-11-28T13:12:36.642Z",
+      "name": "source",
+      "value": "385 original rows checked"
+    },
+    {
+      "at": "2026-11-28T13:12:37.624Z",
+      "name": "B1-native-ready",
+      "value": {
+        "state": "Ready",
+        "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+        "time": "0:00 / 23:27",
+        "timeSeconds": 0,
+        "durationSeconds": 1407,
+        "activeRow": null,
+        "rate": "1×",
+        "frame": {
+          "top": 668.90625,
+          "bottom": 939.640625,
+          "left": 80,
+          "right": 561.3125,
+          "width": 481.3125,
+          "height": 270.734375,
+          "fullyVisible": false
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:12:37.626Z",
+      "name": "test-harness-native-command",
+      "value": "mute"
+    },
+    {
+      "at": "2026-11-28T13:12:37.721Z",
+      "name": "test-harness-native-command",
+      "value": "playVideo"
+    },
+    {
+      "at": "2026-11-28T13:12:41.344Z",
+      "name": "native-playing",
+      "value": {
+        "state": "Playing",
+        "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+        "time": "0:03 / 23:26",
+        "timeSeconds": 3,
+        "durationSeconds": 1406,
+        "activeRow": null,
+        "rate": "1×",
+        "frame": {
+          "top": 72.390625,
+          "bottom": 343.125,
+          "left": 80,
+          "right": 561.3125,
+          "width": 481.3125,
+          "height": 270.734375,
+          "fullyVisible": true
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:12:41.381Z",
+      "name": "mark-1",
+      "value": {
+        "at": 3095,
+        "sample": {
+          "state": "Playing",
+          "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+          "time": "0:03 / 23:26",
+          "timeSeconds": 3,
+          "durationSeconds": 1406,
+          "activeRow": null,
+          "rate": "1×",
+          "frame": {
+            "top": 72.390625,
+            "bottom": 343.125,
+            "left": 80,
+            "right": 561.3125,
+            "width": 481.3125,
+            "height": 270.734375,
+            "fullyVisible": true
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:12:46.417Z",
+      "name": "mark-2",
+      "value": {
+        "at": 8129,
+        "sample": {
+          "state": "Playing",
+          "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+          "time": "0:08 / 23:26",
+          "timeSeconds": 8,
+          "durationSeconds": 1406,
+          "activeRow": null,
+          "rate": "1×",
+          "frame": {
+            "top": 72.390625,
+            "bottom": 343.125,
+            "left": 80,
+            "right": 561.3125,
+            "width": 481.3125,
+            "height": 270.734375,
+            "fullyVisible": true
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:12:51.453Z",
+      "name": "mark-3",
+      "value": {
+        "at": 13166,
+        "sample": {
+          "state": "Playing",
+          "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+          "time": "0:13 / 23:26",
+          "timeSeconds": 13,
+          "durationSeconds": 1406,
+          "activeRow": null,
+          "rate": "1×",
+          "frame": {
+            "top": 72.390625,
+            "bottom": 343.125,
+            "left": 80,
+            "right": 561.3125,
+            "width": 481.3125,
+            "height": 270.734375,
+            "fullyVisible": true
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:12:56.485Z",
+      "name": "mark-4",
+      "value": {
+        "at": 18201,
+        "sample": {
+          "state": "Playing",
+          "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+          "time": "0:18 / 23:26",
+          "timeSeconds": 18,
+          "durationSeconds": 1406,
+          "activeRow": null,
+          "rate": "1×",
+          "frame": {
+            "top": 72.390625,
+            "bottom": 343.125,
+            "left": 80,
+            "right": 561.3125,
+            "width": 481.3125,
+            "height": 270.734375,
+            "fullyVisible": true
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:13:01.517Z",
+      "name": "test-harness-native-command",
+      "value": "pauseVideo"
+    },
+    {
+      "at": "2026-11-28T13:13:01.608Z",
+      "name": "before-marker-jump",
+      "value": {
+        "state": "Paused",
+        "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+        "time": "0:23 / 23:27",
+        "timeSeconds": 23,
+        "durationSeconds": 1407,
+        "activeRow": null,
+        "rate": "1×",
+        "frame": {
+          "top": -216.78125,
+          "bottom": 53.953125,
+          "left": 80,
+          "right": 561.3125,
+          "width": 481.3125,
+          "height": 270.734375,
+          "fullyVisible": false
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:13:01.641Z",
+      "name": "L6-after-marker-click",
+      "value": {
+        "state": "Paused",
+        "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+        "time": "0:23 / 23:27",
+        "timeSeconds": 23,
+        "durationSeconds": 1407,
+        "activeRow": null,
+        "rate": "1×",
+        "frame": {
+          "top": 72.390625,
+          "bottom": 343.125,
+          "left": 80,
+          "right": 561.3125,
+          "width": 481.3125,
+          "height": 270.734375,
+          "fullyVisible": true
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:13:02.847Z",
+      "name": "L6-settled",
+      "value": {
+        "state": "Paused",
+        "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+        "time": "0:03 / 23:27",
+        "timeSeconds": 3,
+        "durationSeconds": 1407,
+        "activeRow": 1,
+        "rate": "1×",
+        "frame": {
+          "top": 72.390625,
+          "bottom": 343.125,
+          "left": 80,
+          "right": 561.3125,
+          "width": 481.3125,
+          "height": 270.734375,
+          "fullyVisible": true
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        }
+      }
+    },
+    {
+      "at": "2026-11-28T13:13:02.942Z",
+      "name": "test-harness-native-command",
+      "value": "playVideo"
+    },
+    {
+      "at": "2026-11-28T13:13:25.003Z",
+      "name": "real-media-row-transitions",
+      "value": [
+        1,
+        2,
+        3,
+        4,
+        null
+      ]
+    },
+    {
+      "at": "2026-11-28T13:13:25.005Z",
+      "name": "test-harness-native-command",
+      "value": "pauseVideo"
+    }
+  ],
+  "browser": {
+    "version": "158.0.8127.37",
+    "headless": true,
+    "audioMuted": true,
+    "autoplayOverride": true,
+    "executable": null,
+    "channel": "chrome"
+  },
+  "limits": [
+    "Builder diagnostic, not an independent review or release approval.",
+    "Actual official YouTube IFrame SDK, youtube-nocookie embed and streamed recording. Those responses are not stubbed.",
+    "Only the YouTube Data API status lookup and an empty public key slot are replaced with TEST ONLY values in the isolated browser.",
+    "The HTML integrity attribute is recomputed for that configuration-only in-memory bundle. Repository files are not changed.",
+    "The metadata fixture does not establish this recording’s actual eligibility, Made-for-Kids status or owner permissions.",
+    "Fresh headless desktop Chrome; audio muted by browser flag and an IFrame mute command. Playback is API-triggered with a headless autoplay override.",
+    "No real tap-to-play, physical iPhone/Safari/VoiceOver, or systematic advertisement behavior is tested.",
+    "Four deliberately spaced marks test the real media clock. They are not recitation-aligned timings and must not ship as a usable timing map.",
+    "Marker-jump geometry is observed immediately after the synchronous click handler and after settling; exact geometry inside seekTo is covered separately by the synthetic regression.",
+    "Service workers are blocked. No existing browser profile, saved learning, owner key or private data is used."
+  ],
+  "inMemoryConfigBundleSha256": "16b67bda8bc68e291122eca9e4cb3d16bbd33c646fd5920e8424fbd20c5fcd4f",
+  "inMemoryRepinnedHTMLSha256": "96119deb38436fae61c3ae3220d85d82c5f2200d97a68a6dfdd37626c4610462",
+  "harnessSha256": "d36206f0ce85a1b55eb19dbdb074c7b733e5ff99a5f922cec642e10a2523105f",
+  "pageErrors": [],
+  "failedProviderRequests": [],
+  "markedSourceRows": [
+    {
+      "id": "0NVY",
+      "text": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ; ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥"
+    },
+    {
+      "id": "RBP6",
+      "text": "॥ ਜਪੁ ॥"
+    },
+    {
+      "id": "J92N",
+      "text": "ਆਦਿ ਸਚੁ; ਜੁਗਾਦਿ ਸਚੁ ॥"
+    },
+    {
+      "id": "K0U6",
+      "text": "ਹੈ ਭੀ ਸਚੁ; ਨਾਨਕ. ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥"
+    }
+  ],
+  "markers": [
+    {
+      "at": 3095,
+      "row": 1
+    },
+    {
+      "at": 8129,
+      "row": 2
+    },
+    {
+      "at": 13166,
+      "row": 3
+    },
+    {
+      "at": 18201,
+      "row": 4
+    },
+    {
+      "at": 23233,
+      "row": null
+    }
+  ],
+  "markerJumpClickGeometry": [
+    {
+      "at": 3095,
+      "stage": "after synchronous application click handler",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "fullyVisible": true
+      }
+    }
+  ],
+  "followSamples": [
+    {
+      "observedAt": "2026-11-28T13:13:03.224Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:03 / 23:27",
+      "timeSeconds": 3,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:03.428Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:03 / 23:27",
+      "timeSeconds": 3,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:03.633Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:03 / 23:27",
+      "timeSeconds": 3,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:03.838Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:03 / 23:27",
+      "timeSeconds": 3,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:04.043Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:04 / 23:27",
+      "timeSeconds": 4,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:04.249Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:04 / 23:27",
+      "timeSeconds": 4,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:04.453Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:04 / 23:27",
+      "timeSeconds": 4,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:04.659Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:04 / 23:27",
+      "timeSeconds": 4,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:04.864Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:04 / 23:27",
+      "timeSeconds": 4,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:05.068Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:05 / 23:27",
+      "timeSeconds": 5,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:05.273Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:05 / 23:27",
+      "timeSeconds": 5,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:05.478Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:05 / 23:27",
+      "timeSeconds": 5,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:05.682Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:05 / 23:27",
+      "timeSeconds": 5,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:05.888Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:05 / 23:27",
+      "timeSeconds": 5,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:06.092Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:06 / 23:27",
+      "timeSeconds": 6,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:06.297Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:06 / 23:27",
+      "timeSeconds": 6,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:06.500Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:06 / 23:27",
+      "timeSeconds": 6,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:06.703Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:06 / 23:27",
+      "timeSeconds": 6,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:06.909Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:06 / 23:27",
+      "timeSeconds": 6,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:07.115Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:07 / 23:27",
+      "timeSeconds": 7,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:07.323Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:07 / 23:27",
+      "timeSeconds": 7,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:07.527Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:07 / 23:27",
+      "timeSeconds": 7,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:07.730Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:07 / 23:27",
+      "timeSeconds": 7,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:07.935Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:07 / 23:27",
+      "timeSeconds": 7,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:08.139Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:08 / 23:27",
+      "timeSeconds": 8,
+      "durationSeconds": 1407,
+      "activeRow": 1,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:08.343Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:08 / 23:27",
+      "timeSeconds": 8,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:08.549Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:08 / 23:27",
+      "timeSeconds": 8,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:08.753Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:08 / 23:27",
+      "timeSeconds": 8,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:08.957Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:08 / 23:27",
+      "timeSeconds": 8,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:09.163Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:09 / 23:27",
+      "timeSeconds": 9,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:09.366Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:09 / 23:27",
+      "timeSeconds": 9,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:09.573Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:09 / 23:27",
+      "timeSeconds": 9,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:09.779Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:09 / 23:27",
+      "timeSeconds": 9,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:09.982Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:09 / 23:27",
+      "timeSeconds": 9,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:10.186Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:10 / 23:27",
+      "timeSeconds": 10,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:10.391Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:10 / 23:27",
+      "timeSeconds": 10,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:10.594Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:10 / 23:27",
+      "timeSeconds": 10,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:10.799Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:10 / 23:27",
+      "timeSeconds": 10,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:11.004Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:10 / 23:27",
+      "timeSeconds": 10,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:11.207Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:11 / 23:27",
+      "timeSeconds": 11,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:11.413Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:11 / 23:27",
+      "timeSeconds": 11,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:11.618Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:11 / 23:27",
+      "timeSeconds": 11,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:11.823Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:11 / 23:27",
+      "timeSeconds": 11,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:12.028Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:11 / 23:27",
+      "timeSeconds": 11,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:12.233Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:12 / 23:27",
+      "timeSeconds": 12,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:12.438Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:12 / 23:27",
+      "timeSeconds": 12,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:12.643Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:12 / 23:27",
+      "timeSeconds": 12,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:12.847Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:12 / 23:27",
+      "timeSeconds": 12,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:13.053Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:12 / 23:27",
+      "timeSeconds": 12,
+      "durationSeconds": 1407,
+      "activeRow": 2,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:13.257Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:13 / 23:27",
+      "timeSeconds": 13,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:13.525Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:13 / 23:27",
+      "timeSeconds": 13,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:13.729Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:13 / 23:27",
+      "timeSeconds": 13,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:13.933Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:13 / 23:27",
+      "timeSeconds": 13,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:14.138Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:14 / 23:27",
+      "timeSeconds": 14,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:14.343Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:14 / 23:27",
+      "timeSeconds": 14,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:14.549Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:14 / 23:27",
+      "timeSeconds": 14,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:14.754Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:14 / 23:27",
+      "timeSeconds": 14,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:14.959Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:14 / 23:27",
+      "timeSeconds": 14,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:15.164Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:15 / 23:27",
+      "timeSeconds": 15,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:15.369Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:15 / 23:27",
+      "timeSeconds": 15,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:15.575Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:15 / 23:27",
+      "timeSeconds": 15,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:15.780Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:15 / 23:27",
+      "timeSeconds": 15,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:15.985Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:15 / 23:27",
+      "timeSeconds": 15,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:16.189Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:16 / 23:27",
+      "timeSeconds": 16,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:16.394Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:16 / 23:27",
+      "timeSeconds": 16,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:16.599Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:16 / 23:27",
+      "timeSeconds": 16,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:16.804Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:16 / 23:27",
+      "timeSeconds": 16,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:17.009Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:16 / 23:27",
+      "timeSeconds": 16,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:17.213Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:17 / 23:27",
+      "timeSeconds": 17,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:17.419Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:17 / 23:27",
+      "timeSeconds": 17,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:17.623Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:17 / 23:27",
+      "timeSeconds": 17,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:17.829Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:17 / 23:27",
+      "timeSeconds": 17,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:18.035Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:17 / 23:27",
+      "timeSeconds": 17,
+      "durationSeconds": 1407,
+      "activeRow": 3,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:18.239Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:18 / 23:27",
+      "timeSeconds": 18,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:18.444Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:18 / 23:27",
+      "timeSeconds": 18,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:18.649Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:18 / 23:27",
+      "timeSeconds": 18,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:18.854Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:18 / 23:27",
+      "timeSeconds": 18,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:19.058Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:18 / 23:27",
+      "timeSeconds": 18,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:19.264Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:19 / 23:27",
+      "timeSeconds": 19,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:19.470Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:19 / 23:27",
+      "timeSeconds": 19,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:19.676Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:19 / 23:27",
+      "timeSeconds": 19,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:19.882Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:19 / 23:27",
+      "timeSeconds": 19,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:20.087Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:19 / 23:27",
+      "timeSeconds": 19,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:20.293Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:20 / 23:27",
+      "timeSeconds": 20,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:20.498Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:20 / 23:27",
+      "timeSeconds": 20,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:20.702Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:20 / 23:27",
+      "timeSeconds": 20,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:20.907Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:20 / 23:27",
+      "timeSeconds": 20,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:21.112Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:20 / 23:27",
+      "timeSeconds": 20,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:21.315Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:21 / 23:27",
+      "timeSeconds": 21,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:21.520Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:21 / 23:27",
+      "timeSeconds": 21,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:21.725Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:21 / 23:27",
+      "timeSeconds": 21,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:21.929Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:22 / 23:27",
+      "timeSeconds": 22,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:22.134Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:22 / 23:27",
+      "timeSeconds": 22,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:22.340Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:22 / 23:27",
+      "timeSeconds": 22,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:22.544Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:22 / 23:27",
+      "timeSeconds": 22,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:22.748Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:22 / 23:27",
+      "timeSeconds": 22,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:22.953Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:23 / 23:27",
+      "timeSeconds": 23,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:23.157Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:23 / 23:27",
+      "timeSeconds": 23,
+      "durationSeconds": 1407,
+      "activeRow": 4,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:23.361Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:23 / 23:27",
+      "timeSeconds": 23,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:23.566Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:23 / 23:27",
+      "timeSeconds": 23,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:23.772Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:23 / 23:27",
+      "timeSeconds": 23,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:23.978Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:24 / 23:27",
+      "timeSeconds": 24,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:24.183Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:24 / 23:27",
+      "timeSeconds": 24,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:24.386Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:24 / 23:27",
+      "timeSeconds": 24,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:24.591Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:24 / 23:27",
+      "timeSeconds": 24,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:24.797Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:24 / 23:27",
+      "timeSeconds": 24,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "observedAt": "2026-11-28T13:13:25.003Z",
+      "state": "Playing",
+      "status": "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.",
+      "time": "0:25 / 23:27",
+      "timeSeconds": 25,
+      "durationSeconds": 1407,
+      "activeRow": null,
+      "rate": "1×",
+      "frame": {
+        "top": 72.390625,
+        "bottom": 343.125,
+        "left": 80,
+        "right": 561.3125,
+        "width": 481.3125,
+        "height": 270.734375,
+        "fullyVisible": true
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    }
+  ],
+  "followedRowTransitions": [
+    1,
+    2,
+    3,
+    4,
+    null
+  ],
+  "providerHosts": [
+    "i.ytimg.com",
+    "rr4---sn-o097znse.googlevideo.com",
+    "www.youtube-nocookie.com",
+    "www.youtube.com"
+  ],
+  "completedProviderKinds": [
+    "nocookie-embed",
+    "official-iframe-sdk",
+    "provider-support",
+    "streamed-media"
+  ],
+  "inputsUnchanged": {
+    "listen/index.html": true,
+    "collections/source-reader/read-along.bundle.mjs": true,
+    "listen/read-along.css": true,
+    "collections/source-reader/read-along-config.mjs": true,
+    "collections/source-reader/read-along-player.mjs": true,
+    "collections/source-reader/read-along.mjs": true
+  },
+  "finished": "2026-11-28T13:13:25.087Z"
+}

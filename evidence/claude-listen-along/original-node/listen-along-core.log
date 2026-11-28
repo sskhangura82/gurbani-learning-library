@@ -1,0 +1,18 @@
+ok - Japji keeps all 385 original lines, in order, unchanged
+ok - Every bani the app ships normalizes with matching fingerprints
+ok - Jaap Sahib keeps the source display order for a mid-chhand heading
+ok - Morning Nitnem composite has no duplicate line keys
+ok - Weights: letters count, vowel signs and verse numbers do not
+ok - No marks: nothing is lit and the app says so
+ok - One mark plus video length spreads the bani across the rest of the video
+ok - Between two marks the light moves in proportion to the words
+ok - After marks run out, the measured pace carries on
+ok - A correction tap in paath removes marks that contradict it
+ok - Kirtan holds each tapped line and allows repeats
+ok - Tap latency shifts the mark slightly earlier; close taps replace each other
+ok - Jumping to a line finds its time from marks
+ok - End of bani is reported
+ok - Timing file round-trips and names lines by key, never by text
+ok - A full tap-along timing for Japji stays small
+ok - YouTube links of every common shape are understood
+17 listen-along core tests passed

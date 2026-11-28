@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
-import {parseYouTubeURL, emptyTiming, validateTiming, putCue, lineAt, timingKey, serializeTiming,
+import {parseYouTubeURL, emptyTiming, validateTiming, putCue, lineAt, mediaTimeMs, timingKey, serializeTiming,
   formatTime, MAX_TIMING_BYTES, MAX_CUES, MAX_TIME_MS} from '../collections/source-reader/read-along-core.mjs';
 import {createReadAlongSource} from '../collections/source-reader/read-along-source.mjs';
 
@@ -71,6 +71,33 @@ test('Timing uses bounded media intervals, handles repeated lines and explicit g
   const replaced = putCue(map, reading, 16000, a);
   assert.equal(replaced.cues.length, map.cues.length); assert.equal(lineAt(replaced, 18), a);
   assert.equal(lineAt(map, 18), b, 'Prior revisions remain immutable for Undo');
+});
+
+test('Media-clock conversion retains exact integer-millisecond marks and rejects invalid or out-of-range clocks', () => {
+  assert.ok((1005 / 1000) * 1000 < 1005, 'Exercise the actual binary floating-point regression');
+  for (const [seconds, milliseconds] of [[0,0], [1.005,1005], [40.001,40001],
+    [1.004,1004], [1.0044,1004], [40,40000], [MAX_TIME_MS / 1000,MAX_TIME_MS]])
+    assert.equal(mediaTimeMs(seconds), milliseconds, 'Clock ' + seconds);
+  for (const invalid of [undefined, null, '1.005', {}, NaN, Infinity, -Infinity, -0.001,
+    MAX_TIME_MS / 1000 + 0.0001, Number.MAX_VALUE])
+    assert.equal(mediaTimeMs(invalid), null, 'Invalid clock ' + String(invalid));
+});
+
+test('Fractional-second cue boundaries round-trip without moving to an earlier line or filling a true gap', () => {
+  const a = reading.lines[0].id, b = reading.lines[1].id;
+  const map = validateTiming({...emptyTiming(video, reading), cues: [
+    {at: 0, lineId: a}, {at: 1005, lineId: b}, {at: 2000, lineId: null},
+    {at: 40001, lineId: a}, {at: 41000, lineId: null}
+  ]}, reading, video);
+  for (const [time, expected] of [[0,a], [1.004,a], [1.005,b], [1.006,b], [1.999,b],
+    [2,null], [39.999,null], [40,null], [40.001,a], [40.002,a], [40.999,a], [41,null]])
+    assert.equal(lineAt(map, time), expected, 'Actual media seconds ' + time);
+  for (let attempt = 0; attempt < 5; attempt++) {
+    assert.equal(lineAt(map, 1005 / 1000), b, 'Repeated paused replay stays at the second line');
+    assert.equal(lineAt(map, 40001 / 1000), a, 'Repeated paused replay stays at the repeated occurrence');
+  }
+  assert.equal(lineAt(map, 40), null, 'A real clock one millisecond before the mark remains in the gap');
+  assert.equal(lineAt(map, MAX_TIME_MS / 1000 + 1), null, 'Out-of-range clocks never select a line');
 });
 
 test('Wrong videos, editions, digests, group ordering, invented review status and foreign lines refuse', () => {

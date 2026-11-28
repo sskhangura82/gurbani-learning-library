@@ -9,6 +9,8 @@ const root = fileURLToPath(new URL('../../', import.meta.url));
 export const READ_ALONG_BASE = 'cfded3e2186c1f6e325d135f1fa62da1f03d34bb';
 export const READ_ALONG_MODIFIED = ['index.html', 'sw.js'];
 export const READ_ALONG_ADDED = [
+  'collections/source-reader/read-along-bani-lock.mjs',
+  'collections/source-reader/read-along-bani.mjs',
   'collections/source-reader/read-along-config.mjs',
   'collections/source-reader/read-along-core.mjs',
   'collections/source-reader/read-along-player.mjs',

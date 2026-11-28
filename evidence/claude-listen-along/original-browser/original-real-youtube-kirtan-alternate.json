@@ -1,0 +1,65 @@
+{
+  "time": "2026-11-28T01:57:22.646Z",
+  "testedCommit": "b2d34796a4a5f22d3d526b0fd04d495fa0744d30",
+  "scope": "Diagnostic of untouched supplied prototype; no interception or disabled provider checks; not a release approval. No claim of recitation alignment.",
+  "browser": "Desktop Chrome fresh contexts",
+  "results": [
+    {
+      "label": "Kirtan-alternate",
+      "bani": "sukhmani",
+      "videoId": "kDI-2FPyu3w",
+      "providerStubbed": false,
+      "origin": "http://127.0.0.1:60817",
+      "externalBeforeOpen": [],
+      "notice": "",
+      "ready": true,
+      "frames": [
+        {
+          "host": "127.0.0.1",
+          "path": "/listen-along.html"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/kDI-2FPyu3w"
+        }
+      ],
+      "playButton": "Pause",
+      "markedStatus": "Estimating from the video’s length. If the light drifts, tap the line being recited. · 1 mark",
+      "speedControl": "0.75",
+      "markedIndex": "4",
+      "markMeaning": "Synthetic interaction marker solely to exercise live clock/UI; not asserted to match the recited words.",
+      "status": "Estimating from the video’s length. If the light drifts, tap the line being recited. · 1 mark",
+      "nativeVideo": [
+        {
+          "frameText": "",
+          "video": {
+            "paused": false,
+            "currentTime": 6.921885,
+            "duration": 600.341,
+            "readyState": 4,
+            "playbackRate": 0.75,
+            "error": null
+          }
+        }
+      ],
+      "requestHosts": [
+        "127.0.0.1",
+        "www.youtube.com",
+        "www.youtube-nocookie.com",
+        "fonts.gstatic.com",
+        "www.google.com",
+        "jnn-pa.googleapis.com",
+        "rr3---sn-n4v7snse.googlevideo.com",
+        "i.ytimg.com",
+        "yt3.ggpht.com",
+        "www.gstatic.com",
+        "r5---sn-bvvbaxivnuxq5uu-p5il.googlevideo.com"
+      ],
+      "failed": [],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    }
+  ]
+}

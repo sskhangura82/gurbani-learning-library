@@ -327,6 +327,14 @@ export async function createYouTubePlayer({mount, videoId, onUpdate, onError, ap
         return;
       }
       if (type === 'ready') {
+        // YouTube attaches playback and clock methods when the iframe is ready,
+        // not when its SDK constructor returns. Validate before reading any of them.
+        if (['getPlayerState', 'getCurrentTime', 'getDuration', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo', 'destroy']
+          .some(method => typeof player[method] !== 'function')) {
+          fail(problem('YOUTUBE_PLAYER_INVALID', 'The YouTube player did not expose the required controls.'), {pausePlayer: false});
+          controller.destroy();
+          return;
+        }
         ready = true;
         clearTimeout(readyTimeout);
         if (document.hidden || pauseOnReady) pause();
@@ -346,14 +354,14 @@ export async function createYouTubePlayer({mount, videoId, onUpdate, onError, ap
         onAutoplayBlocked: event => handleEvent('blocked', event)
       }});
     } finally { constructing = false; }
-    if (!player || ['getPlayerState', 'getCurrentTime', 'getDuration', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo', 'destroy']
-      .some(method => typeof player[method] !== 'function')) {
+    // Cleanup must remain possible while the iframe is still loading.
+    if (!player || typeof player.destroy !== 'function') {
       throw problem('YOUTUBE_PLAYER_INVALID', 'The YouTube player did not expose the required controls.');
     }
     for (const [type, event] of pendingEvents) handleEvent(type, event);
     pendingEvents = [];
-    if (!isCurrent()) throw cancelled();
     if (failure) throw failure;
+    if (!isCurrent()) throw cancelled();
     if (typeof IntersectionObserver === 'function') {
       visibilityObserver = new IntersectionObserver(entries => {
         if (!isCurrent()) { controller.destroy(); return; }

@@ -1,0 +1,91 @@
+{
+  "head": "b2d34796a4a5f22d3d526b0fd04d495fa0744d30",
+  "node": "v24.22.3",
+  "output": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm",
+  "reportRedirectionOnly": true,
+  "sourceCheckoutUnchanged": true,
+  "dirty": "",
+  "results": [
+    {
+      "file": "tests/listen-along-core.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "17 listen-along core tests passed",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/listen-along-core.log"
+    },
+    {
+      "file": "tests/verify.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":27,\"status\":\"PASS\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/verify.log"
+    },
+    {
+      "file": "tests/service-worker.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":8,\"status\":\"PASS\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/service-worker.log"
+    },
+    {
+      "file": "tests/shared-learning.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":12,\"status\":\"PASS\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/shared-learning.log"
+    },
+    {
+      "file": "tests/r6-contract.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":7,\"status\":\"PASS\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/r6-contract.log"
+    },
+    {
+      "file": "tests/r7-contract.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":12,\"checks\":[\"Entry points are distinct home and unchanged continuous Japji\",\"Home has three direct accessible destinations without login\",\"PWA Home Screen starts at root with unchanged app id\",\"Guide pace normalizer accepts every five step up to 160\",\"Old and new pace preferences remain compatible\",\"Reader exposes one-tap numeric pace control and no media\",\"Pace logic enters existing synchronized preference-merging mechanism\",\"The frozen scripture and editorial layers remain separate\",\"Three gurdwara sources are official HTTPS and not media embeds\",\"Simran preview is silent and does not persist meditation metrics\",\"External place links use explicit new-tab protections\",\"New routes and scripts are included in offline release\"],\"status\":\"PASS\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/r7-contract.log"
+    },
+    {
+      "file": "tests/sukhmani-content.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"status\":\"PASS\",\"total\":11,\"checks\":[\"Exactly all 24 Ashtpadis, with complete source coverage explicitly recorded\",\"All original Unicode bytes match the frozen full-composition sequence\",\"The first-six source records, IDs, meanings and studies remain exactly preserved\",\"The published first-twelve source objects, meanings and studies remain exactly preserved\",\"The published first-eighteen source objects, meanings and studies remain exactly preserved\",\"A separately retrieved transcription agrees in exact order, text and Ang\",\"Twenty-four complete Saloks, 192 ten-line pauris, both Rahau lines and all headings survive\",\"Every source occurrence has its own bilingual draft and optional reading aid\",\"Twenty-four introductions and all 217 passage studies have exact contextual anchors\",\"Source and editorial content remain separate and source attribution is retained\",\"Existing library entry and offline shell include the functional reader\"],\"sourceOccurrences\":2027,\"newSourceOccurrences\":504,\"firstSixPreserved\":true,\"firstTwelvePreserved\":true,\"firstEighteenPreserved\":true,\"completeComposition\":true,\"pauriVerseLines\":1920,\"salokVerseLines\":55,\"rahauLines\":2,\"headings\":50,\"meaningDrafts\":2027,\"passageStudyDrafts\":217,\"humanReviewed\":0}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/sukhmani-content.log"
+    },
+    {
+      "file": "tests/sukhmani-reader-core.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/sukhmani-reader-core.log"
+    },
+    {
+      "file": "tests/nitnem-content.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"status\":\"PASS\",\"total\":18,\"sourceRecords\":1361,\"studyDrafts\":327,\"courseSHA256\":\"5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/nitnem-content.log"
+    },
+    {
+      "file": "tests/nitnem-learning.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":9,\"status\":\"PASS\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/nitnem-learning.log"
+    },
+    {
+      "file": "tests/nitnem-ui-lifecycle.mjs",
+      "status": 0,
+      "signal": null,
+      "summary": "{\"total\":21,\"status\":\"PASS\",\"readerSHA256\":\"3868b70607f69f06d60ffc0941faf9bc971c279655fa6ef5de61584788f09c03\"}",
+      "log": "/workspace/scratch/d7e763e55ff9/claude-listen-audit-SulMlm/nitnem-ui-lifecycle.log"
+    }
+  ],
+  "syntax": {
+    "status": 0,
+    "output": ""
+  }
+}

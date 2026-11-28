@@ -1,0 +1,125 @@
+{
+  "schema": "glp.listen-along-b1-l6.verification.v1",
+  "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
+  "outcome": "B1_L6_REPAIRED_RELEASE_PENDING",
+  "baseline": "206cddbff9e0c23852fb844b02a24ee60f394e74",
+  "runtime": "55ccad9b150de130370cda5eeaefec2bc6974ac9",
+  "implementation": "3e6017453a2b1f6702cc859d82431b7e08c896cf",
+  "claudeFinding": "https://github.com/sskhangura82/gurbani-learning-library/pull/78#issuecomment-7234549597",
+  "regressions": {
+    "B1": "required methods attach at readiness; invalid ready is disposed",
+    "L6": "visible player before seek; pointer and keyboard; paused state retained",
+    "oldBrowserFailures": 3,
+    "repairedPlayerContracts": 25,
+    "focusedNodeContracts": 88,
+    "toolchainAndWorkflowContracts": 16,
+    "workerSimulation": 9,
+    "featureBrowser": 42,
+    "offlineBrowser": 7
+  },
+  "featureEvidence": {
+    "testedCommit": "3e6017453a2b1f6702cc859d82431b7e08c896cf",
+    "sourceCommitMatchesAllReadFiles": true,
+    "allReadInputsMatchFinalRuntime": true,
+    "fixtureSha256": "7a341498158458dcaa11f6f1d87de25b8f0429470a2acd2046cd758d5a0cceeb",
+    "provider": "SYNTHETIC_METADATA_SDK_AND_IFRAME"
+  },
+  "nativeEvidence": {
+    "testedCommit": "55ccad9b150de130370cda5eeaefec2bc6974ac9",
+    "provider": "REAL_SDK_IFRAME_AND_STREAMED_MEDIA",
+    "metadata": "TEST_ONLY_STATUS_RESPONSE",
+    "publicKey": "TEST_ONLY_IN_MEMORY_EMPTY_SLOT_SUBSTITUTION",
+    "harnessSha256": "d36206f0ce85a1b55eb19dbdb074c7b733e5ff99a5f922cec642e10a2523105f",
+    "markers": [
+      {
+        "at": 3095,
+        "row": 1
+      },
+      {
+        "at": 8129,
+        "row": 2
+      },
+      {
+        "at": 13166,
+        "row": 3
+      },
+      {
+        "at": 18201,
+        "row": 4
+      },
+      {
+        "at": 23233,
+        "row": null
+      }
+    ],
+    "followedRowTransitions": [
+      1,
+      2,
+      3,
+      4,
+      null
+    ],
+    "nativeMarkerClickVisibleAndPaused": true,
+    "pageErrors": [],
+    "inputsUnchanged": {
+      "listen/index.html": true,
+      "collections/source-reader/read-along.bundle.mjs": true,
+      "listen/read-along.css": true,
+      "collections/source-reader/read-along-config.mjs": true,
+      "collections/source-reader/read-along-player.mjs": true,
+      "collections/source-reader/read-along.mjs": true
+    },
+    "audio": "MUTED",
+    "playbackStart": "API_WITH_HEADLESS_AUTOPLAY_OVERRIDE",
+    "recitationAligned": false,
+    "browser": {
+      "version": "158.0.8127.37",
+      "headless": true,
+      "audioMuted": true,
+      "autoplayOverride": true,
+      "executable": null,
+      "channel": "chrome"
+    }
+  },
+  "offline": {
+    "versionBefore": "0.31-youtube-bani-read-along-20261127-3",
+    "versionAfter": "0.31-youtube-bani-read-along-20261128-1",
+    "assets": 125,
+    "testedPriorRelease": "e0a6cff22771d42ce3a2fe91ad96863daae214ed",
+    "failedUpdateRetainsPriorCacheAndSyntheticLearning": true
+  },
+  "preservation": {
+    "applicationFiles": 376,
+    "unchanged": 371,
+    "changed": [
+      "collections/source-reader/read-along-player.mjs",
+      "collections/source-reader/read-along.bundle.mjs",
+      "collections/source-reader/read-along.mjs",
+      "listen/index.html",
+      "sw.js"
+    ]
+  },
+  "github": {
+    "runtime": "55ccad9b150de130370cda5eeaefec2bc6974ac9",
+    "successfulWorkflows": 12,
+    "successfulJobs": 22
+  },
+  "review": {
+    "builderPeerInspection": "NO_BLOCKING_B1_L6_FINDINGS; candidate cache version concern repaired",
+    "claudeCorrectionReview": "PENDING",
+    "releaseApproval": "NOT_GRANTED"
+  },
+  "limits": [
+    "Real Data API lookup with restricted owner key remains unverified.",
+    "Native human tap-to-play and advertisement behavior remain unverified.",
+    "Physical iPhone, Safari and VoiceOver acceptance remain unverified.",
+    "Four synthetic timing marks verify real-clock following, not recitation alignment.",
+    "Claude L1-L5 product observations remain in their existing workstream."
+  ],
+  "release": {
+    "prDraft": true,
+    "merged": false,
+    "productionDeployed": false,
+    "providerConfiguration": "EMPTY"
+  }
+}

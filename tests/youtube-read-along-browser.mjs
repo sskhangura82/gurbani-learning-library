@@ -13,6 +13,7 @@ const directory = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const root = await fs.realpath(process.env.GLP_TARGET_DIRECTORY || directory);
 const stamp = new Date().toISOString().replace(/[:.]/g, '-');
 const out = path.resolve(process.env.GLP_YOUTUBE_OUTPUT || path.join(os.tmpdir(), 'glp-youtube-read-along-browser', stamp));
+const scenarioFilter = process.env.GLP_YOUTUBE_SCENARIO || '';
 await fs.mkdir(out, {recursive: true});
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const sri = bytes => 'sha384-' + createHash('sha384').update(bytes).digest('base64');
@@ -23,13 +24,14 @@ const configPath = 'collections/source-reader/read-along-config.mjs';
 const VIDEO = 'fixture0001', OTHER_VIDEO = 'fixture0002';
 const TIMING_PREFIX = 'glp001.youtube-timing.v1:';
 const publicPaths = new Set([pagePath, bundlePath, 'listen/read-along.css', 'collections/collections.css',
-  'collections/source-reader/reader.css', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png']);
+  'collections/source-reader/reader.css', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png',
+  'js/japji-full-data.js', 'js/sukhmani-data.js', ...['jaap','savaiye','chaupai','anand','rehras','sohila'].map(id => 'nitnem/data/' + id + '.json')]);
 const publicSource = value => /^collections\/source-data\/(?:sggs|dasam)\/(?:manifest\.json|chunks\/c[0-9]{4}\.json)$/.test(value);
 const isPublic = value => publicPaths.has(value) || publicSource(value);
 const isUnbundled = value => value.startsWith('collections/source-reader/') && value.endsWith('.mjs') && value !== bundlePath;
 const mime = {'.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8',
-  '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png'};
-const report = {status: 'PASS', started: new Date().toISOString(), sourceCommit: null,
+  '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png'};
+const report = {status: 'PASS', started: new Date().toISOString(), sourceCommit: null, scenarioFilter,
   checks: [], failures: [], sourceHashes: {}, sourceBytes: {}, limits: [
     'Actual desktop Chrome, production owned bundle and DOM, with fresh contexts and synthetic records only.',
     'The positive fixture replaces only the public provider configuration in an independently repinned owned bundle.',
@@ -61,6 +63,50 @@ const specs = {
     sha256: '2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6'}
 };
 const fixtures = {};
+const baniSpecs = {
+  japji: {path: 'js/japji-full-data.js', count: 385, sha256: '7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808', selection: '0cb9ffa9b4e787a287cfb08326f1663fb718d16bdb406eb4cd2d13bc4a27c6e5'},
+  jaap: {path: 'nitnem/data/jaap.json', count: 808, sha256: 'f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec', selection: '12c5742dc062f1859914caccd97f90c151352424e6cf5d18cf26e145732ae671'},
+  savaiye: {path: 'nitnem/data/savaiye.json', count: 43, sha256: '7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa', selection: '414cdbe09c4c691f8d0a5279c5a3a7aa489d843b634c92c7a246fc6d2c8f0b9f'},
+  chaupai: {path: 'nitnem/data/chaupai.json', count: 121, sha256: '289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046', selection: '03f25df63e1e67a89346c21f8119736dff03479ef9a65a749fc0183e2388d81f'},
+  anand: {path: 'nitnem/data/anand.json', count: 210, sha256: '124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a', selection: 'a951c8f897f2b86a71a70f4844899878499032da2cd65187b87e49a77e89f287'},
+  rehras: {path: 'nitnem/data/rehras.json', count: 159, sha256: '81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b', selection: 'c3ac38e711ff9115af16a8d1ea53524ee17136602ce397d229c8de144a3f0254'},
+  sohila: {path: 'nitnem/data/sohila.json', count: 56, sha256: '7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673', selection: '9a3ba57baaa353fa3408ba3e68b4f031261a90e748354bc69b024dfa14ebd204'},
+  sukhmani: {path: 'js/sukhmani-data.js', count: 2027, sha256: '0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6', selection: 'd4dc1072c401e20783adab6f703bfb6d2d58cb04a90164da9eaf2efa26071529'}
+};
+const baniReadings = new Map(), baniRaw = new Map();
+async function prepareBanis() {
+  for (const [id, spec] of Object.entries(baniSpecs)) {
+    const bytes = await readPublic(spec.path); assert.equal(hash(bytes), spec.sha256);
+    baniRaw.set(id, bytes);
+    let literal = bytes.toString('utf8');
+    if (spec.path.endsWith('.js')) literal = literal.slice(literal.indexOf('=') + 1).trim().replace(/;$/, '');
+    const data = JSON.parse(literal), rows = [];
+    if (id === 'japji' || id === 'sukhmani') {
+      for (const unit of data[id === 'japji' ? 'units' : 'ashtpadis'])
+        for (const line of unit.lines) rows.push({text: line[id === 'japji' ? 'text' : 'gurmukhi'], sourceUnitId: unit.id, sha256: line.sha256});
+    } else {
+      for (const line of data.preface || []) rows.push({...line, sourceUnitId: data.units[0].id});
+      for (const unit of data.units) {
+        const ordered = unit.sourceDisplayOrder ? unit.sourceDisplayOrder.map(item => item.kind === 'line'
+          ? unit.lines.find(line => line.id === item.id) : unit.metricalHeadings[item.index])
+          : [...(unit.metricalHeadings || []), ...unit.lines];
+        for (const line of ordered) rows.push({...line, sourceUnitId: unit.id});
+      }
+    }
+    assert.equal(rows.length, spec.count);
+    for (const row of rows) assert.equal(hash(row.text), row.sha256);
+    baniReadings.set(id, {binding: {collectionId: 'daily-bani', editionId: 'glp-daily-bani-pinned-originals-20261127-v1',
+      manifestSha256: spec.selection, selectionId: 'bani:' + id, units: [{id, sha256: spec.sha256}]},
+      lines: rows.map((row, index) => ({id: id + '-l' + String(index + 1).padStart(4, '0'),
+        text: row.text, unitId: id, sourceUnitId: row.sourceUnitId, sha256: row.sha256}))});
+  }
+  const parts = ['japji', 'jaap', 'savaiye', 'chaupai', 'anand'];
+  baniReadings.set('morning', {binding: {collectionId: 'daily-bani', editionId: 'glp-daily-bani-pinned-originals-20261127-v1',
+    manifestSha256: '71109f361d9039db365987d5af016376a7ad2a33f7e69e540520ada3c477ede3', selectionId: 'bani:morning',
+    units: parts.map(id => ({id, sha256: baniSpecs[id].sha256}))}, lines: parts.flatMap(id => baniReadings.get(id).lines)});
+  assert.equal([...baniReadings.values()].slice(0, 8).reduce((sum, reading) => sum + reading.lines.length, 0), 3809);
+  assert.equal(baniReadings.get('morning').lines.length, 1567);
+}
 async function prepareSource(collectionId) {
   const spec = specs[collectionId], base = 'collections/source-data/' + collectionId + '/';
   const bytes = await readPublic(base + 'manifest.json');
@@ -113,30 +159,50 @@ function testOnlyYouTubeSDK(configuration) {
       this.frame = frame; this.events = options.events || {}; this.videoId = new URL(frame.src).pathname.split('/').at(-1);
       this.time = 0; this.duration = 600; this.state = -1; this.rate = 1; this.destroyed = false;
       this.index = players.length; players.push(this); calls.push(['construct', this.index, this.videoId]);
-      const ready = () => this.emit('onReady');
-      if (configuration.synchronousReady) ready(); else setTimeout(ready, configuration.readyDelayMs || 0);
+      this.ready = false;
+      calls.push(['constructionControlsAbsent', this.index,
+        ['getCurrentTime', 'getDuration', 'getPlayerState', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo']
+          .every(name => typeof this[name] === 'undefined')]);
+      // Real YouTube installs these methods only when the iframe is ready.
+      // Keep them off the prototype too, so a premature check really fails.
+      this.becomeReady = () => {
+        Object.assign(this, {
+          getCurrentTime: () => { calls.push(['getCurrentTime', this.index]); return this.time; },
+          getDuration: () => this.duration,
+          getPlayerState: () => this.state,
+          getPlaybackRate: () => this.rate,
+          getVideoUrl: () => 'https://www.youtube.com/watch?v=' + this.videoId,
+          seekTo: (seconds, allowSeekAhead) => {
+            const previousState = this.state, rect = this.frame.getBoundingClientRect();
+            const geometry = {x: rect.x, y: rect.y, width: rect.width, height: rect.height,
+              fullyVisible: rect.top >= 0 && rect.left >= 0 && rect.bottom <= innerHeight && rect.right <= innerWidth,
+              centreUncovered: document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2) === this.frame};
+            calls.push(['seekTo', this.index, seconds, allowSeekAhead, previousState, geometry]); this.time = seconds;
+            // A paused player stays paused; other states start playback on seek.
+            if (previousState !== 2) { this.state = 1; this.emit('onStateChange', 1); }
+          },
+          pauseVideo: () => {
+            calls.push(['pauseVideo', this.index]);
+            if (this.failPause) { this.failPause = false; throw Error('TEST ONLY pause failure'); }
+            this.state = 2; this.emit('onStateChange', 2);
+          }
+        });
+        this.ready = true; calls.push(['ready', this.index]); this.emit('onReady');
+      };
+      if (configuration.synchronousReady) this.becomeReady();
+      else if (!configuration.manualReady) setTimeout(this.becomeReady, configuration.readyDelayMs || 0);
     }
     emit(name, data) { this.events[name]?.({target: this, data}); }
-    getCurrentTime() { calls.push(['getCurrentTime', this.index]); return this.time; }
-    getDuration() { return this.duration; }
-    getPlayerState() { return this.state; }
-    getPlaybackRate() { return this.rate; }
-    getVideoUrl() { return 'https://www.youtube.com/watch?v=' + this.videoId; }
-    seekTo(seconds, allowSeekAhead) {
-      const previousState = this.state;
-      calls.push(['seekTo', this.index, seconds, allowSeekAhead, previousState]); this.time = seconds;
-      // Official behavior: a paused player stays paused; seeking from another
-      // state starts playback. This deliberately exposes accidental autoplay.
-      if (previousState !== 2) { this.state = 1; this.emit('onStateChange', 1); }
-    }
-    pauseVideo() { calls.push(['pauseVideo', this.index]); this.state = 2; this.emit('onStateChange', 2); }
     destroy() { calls.push(['destroy', this.index]); this.destroyed = true; this.frame.remove(); }
   }
   window.YT = {Player, PlayerState: {UNSTARTED: -1, ENDED: 0, PLAYING: 1, PAUSED: 2, BUFFERING: 3, CUED: 5}};
   const current = () => players.filter(player => !player.destroyed).at(-1);
   window.__TEST_ONLY_YOUTUBE = {
     snapshot() { return {players: players.map(p => ({index: p.index, videoId: p.videoId, time: p.time,
-      state: p.state, rate: p.rate, destroyed: p.destroyed})), calls: calls.map(value => [...value])}; },
+      state: p.state, rate: p.rate, ready: p.ready, destroyed: p.destroyed,
+      controlsAvailable: ['getCurrentTime', 'getDuration', 'getPlayerState', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo']
+        .filter(name => typeof p[name] === 'function')})), calls: calls.map(value => [...value])}; },
+    ready(index = players.length - 1) { players[index].becomeReady(); },
     clock(seconds, state, rate) {
       const player = current(); if (!player) throw Error('No synthetic player');
       player.time = seconds;
@@ -145,6 +211,7 @@ function testOnlyYouTubeSDK(configuration) {
     },
     nativeSeek(seconds) { const player = current(); player.seekTo(seconds, true); },
     error(code) { current().emit('onError', code); },
+    failNextPause() { current().failPause = true; },
     blocked() { current().emit('onAutoplayBlocked'); },
     changeRecording(videoId) { const player = current(); player.videoId = videoId; player.state = 1; player.emit('onStateChange', 1); },
     late(index, seconds, state = 1) { const player = players[index]; player.time = seconds; player.state = state;
@@ -229,6 +296,20 @@ async function browseGroup(page, collection, pageNumber, unitId) {
   }, {first: reading.lines[0].id, length: reading.lines.length});
   await exactSource(page, reading); return reading;
 }
+async function chooseBani(page, id) {
+  await openSourceChooser(page);
+  await page.locator('#source-mode').selectOption('bani');
+  await page.locator('#source-bani').selectOption(id);
+}
+async function openBani(page, id) {
+  await chooseBani(page, id); await page.locator('#source-open').click(); await ready(page);
+  const reading = baniReadings.get(id);
+  await page.waitForFunction(({first, count}) => {
+    const rows = document.querySelectorAll('#read-along-text [data-line-id]');
+    return rows.length === count && rows[0]?.dataset.lineId === first;
+  }, {first: reading.lines[0].id, count: reading.lines.length});
+  await exactSource(page, reading); return reading;
+}
 async function exported(page) {
   const pending = page.waitForEvent('download'); await page.locator('#timing-export').click();
   const download = await pending, stream = await download.createReadStream(); assert.ok(stream);
@@ -283,6 +364,7 @@ async function geometry(page, width) {
 }
 
 async function scenario(name, run, options = {}) {
+  if (scenarioFilter && !name.includes(scenarioFilter)) return;
   const check = {name, status: 'PASS', requests: [], provider: [], unexpectedExternal: [], routeErrors: [], pageErrors: [], consoleErrors: []};
   report.checks.push(check);
   const context = await browser.newContext({viewport: {width: 320, height: 900}, serviceWorkers: 'block',
@@ -317,6 +399,7 @@ async function scenario(name, run, options = {}) {
     const request = route.request(), url = new URL(request.url());
     if (url.origin === origin) {
       const relative = url.pathname.startsWith(prefix) ? url.pathname.slice(prefix.length) : '';
+      if (options.beforeLocal) await options.beforeLocal(relative, check);
       const mutations = {...(options.configured === false ? {} : {[pagePath]: positiveHTML, [bundlePath]: positiveBundle}), ...options.mutations};
       if (Object.hasOwn(mutations, relative)) {
         await route.fulfill({status: 200, contentType: mime[path.extname(relative)], body: mutations[relative]}); return;
@@ -378,6 +461,7 @@ async function scenario(name, run, options = {}) {
 try {
   const {chromium} = await import(process.env.GLP_PLAYWRIGHT_MODULE || 'playwright');
   await prepareSource('sggs'); await prepareSource('dasam');
+  await prepareBanis();
   japji = await expectedReading('sggs', 'section:1DSA');
   assert.equal(japji.binding.units.length, 39); assert.equal(japji.lines.length, 385);
   assert.deepEqual(japji.binding.units.map(unit => unit.id).slice(0, 2), ['DMP', 'LLL']);
@@ -444,6 +528,26 @@ try {
     check.storage = await preserveLearning(page, {noWrites: true});
   }, {configured: false});
 
+  await scenario('Player readiness waits for controls installed by the iframe ready event', async (page, check) => {
+    await openApp(page);
+    await page.locator('#video-url').fill('https://youtu.be/' + VIDEO); await page.locator('#video-load').click();
+    await page.waitForFunction(() => window.__TEST_ONLY_YOUTUBE?.snapshot().players.length === 1);
+    const before = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+    assert.equal(before.players[0].ready, false); assert.equal(before.players[0].destroyed, false);
+    assert.deepEqual(before.players[0].controlsAvailable, [], 'No playback controls exist before onReady');
+    assert.ok(before.calls.some(call => call[0] === 'constructionControlsAbsent' && call[2] === true));
+    assert.equal(before.calls.some(call => ['getCurrentTime', 'seekTo', 'pauseVideo'].includes(call[0])), false,
+      'The adapter does not read or control the unready player');
+    assert.equal(await page.locator('#youtube-player iframe').count(), 1, 'Keep the connecting iframe');
+    assert.equal(await page.locator('#mark-selected').isDisabled(), true);
+    await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.ready());
+    await page.waitForSelector('#video-status[data-state="ready"]');
+    const after = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+    assert.equal(after.players[0].controlsAvailable.length, 7); assert.equal(after.players[0].destroyed, false);
+    assert.equal(await page.locator('#mark-selected').isDisabled(), false);
+    check.lifecycle = {before, after}; check.storage = await preserveLearning(page, {noWrites: true});
+  }, {sdk: {manualReady: true}});
+
   await scenario('Configured fixture stays disconnected until Load and preserves a visible native-provider surface at 320 and 1280px', async (page, check) => {
     await openApp(page); await exactSource(page, japji); assert.deepEqual(check.provider, []);
     await connect(page, VIDEO, 'https://youtu.be/' + VIDEO);
@@ -497,6 +601,24 @@ try {
   }, {metadata: async id => { const body = validMetadata(id); body.items[0].status.madeForKids = true; return {body}; },
     sdk: {synchronousReady: true}});
 
+  await scenario('A share-link offset beyond the recording is ignored with a clear notice while the native player remains connected', async (page, check) => {
+    await openApp(page); await connect(page, VIDEO, 'https://youtu.be/' + VIDEO + '?t=601');
+    const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+    const player = snapshot.players.find(value => !value.destroyed);
+    assert.ok(player, 'The 600-second fixture recording remains open');
+    assert.equal(player.time, 0); assert.notEqual(player.state, 1, 'Ignoring an offset does not autoplay');
+    assert.deepEqual(snapshot.calls.filter(call => call[0] === 'seekTo'), [], 'No invalid seek is sent to the provider');
+    assert.equal(await page.locator('#youtube-player iframe').count(), 1);
+    assert.equal(await page.locator('#video-disconnect').isDisabled(), false);
+    const message = await page.locator('#video-status').textContent();
+    assert.match(message, /offset|start time/i); assert.match(message, /ignored/i);
+    assert.doesNotMatch(message, /timing marker|unavailable/i);
+    await mediaClock(page, 5, 2);
+    assert.equal(await page.locator('#video-status').getAttribute('data-state'), 'ready');
+    assert.equal(await page.locator('#mark-selected').isDisabled(), false, 'A valid recording still supplies a usable clock');
+    await exactSource(page, japji); check.storage = await preserveLearning(page, {noWrites: true});
+  }, {sdk: {synchronousReady: true}});
+
   await scenario('An arbitrary host or iframe HTML never becomes a provider request', async (page, check) => {
     await openApp(page);
     for (const input of ['https://youtube.com.evil.invalid/watch?v=' + VIDEO, '<iframe src="https://www.youtube.com/embed/' + VIDEO + '"></iframe>']) {
@@ -526,6 +648,54 @@ try {
     {at: 30000, lineId: null}, {at: 40000, lineId: first}, {at: 50000, lineId: null}]);
   const key = timingKey(VIDEO, japji);
 
+  for (const viewport of [{width: 320, height: 640}, {width: 1280, height: 900}])
+    await scenario('Marker jump restores the player before seeking at ' + viewport.width + 'px', async (page, check) => {
+      await page.setViewportSize(viewport); await openApp(page); await connect(page);
+      await page.locator('#timing-load').click();
+      await page.locator('.cue-details > summary').click();
+      const cue = page.locator('#timing-cues button[data-cue-at="40000"]');
+      check.jumps = [];
+      for (const activation of ['pointer', 'keyboard']) {
+        await page.locator('.workspace').evaluate(element => {
+          window.scrollTo({top: Math.max(0, scrollY + element.getBoundingClientRect().top - 16), behavior: 'instant'});
+        });
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        await mediaClock(page, 12, 1);
+        await cue.scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => window.__TEST_ONLY_YOUTUBE.snapshot().players.find(p => !p.destroyed).state === 2);
+        const before = await page.evaluate(() => {
+          const rect = document.querySelector('#youtube-player iframe').getBoundingClientRect();
+          return {offscreen: rect.bottom <= 0 || rect.top >= innerHeight, provider: window.__TEST_ONLY_YOUTUBE.snapshot()};
+        });
+        assert.equal(before.offscreen, true, 'Reviewing the lower marker list moves the player offscreen');
+        assert.equal(before.provider.players.find(p => !p.destroyed).state, 2, 'The offscreen pause still works');
+        if (activation === 'pointer') await cue.click();
+        else { await cue.focus(); await page.keyboard.press('Enter'); }
+        await activeLine(page, first);
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        const after = await page.evaluate(() => {
+          const frame = document.querySelector('#youtube-player iframe'), rect = frame.getBoundingClientRect();
+          return {provider: window.__TEST_ONLY_YOUTUBE.snapshot(), frame: {x: rect.x, y: rect.y, width: rect.width, height: rect.height},
+            fullyVisible: rect.top >= 0 && rect.left >= 0 && rect.bottom <= innerHeight && rect.right <= innerWidth,
+            centreUncovered: document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2) === frame,
+            focused: document.activeElement === frame};
+        });
+        const seeks = after.provider.calls.slice(before.provider.calls.length).filter(call => call[0] === 'seekTo');
+        assert.equal(seeks.length, 1); assert.equal(seeks[0][2], 40, 'Jump to the repeated occurrence, not its earlier mark');
+        assert.equal(seeks[0][5].fullyVisible, true, 'Player is fully onscreen when seek is called');
+        assert.equal(seeks[0][5].centreUncovered, true, 'Nothing covers the player during seek');
+        assert.equal(after.fullyVisible, true, 'Player remains onscreen after observer callbacks');
+        assert.equal(after.centreUncovered, true); assert.equal(after.focused, true, 'Keyboard focus follows the jump to the native player');
+        const player = after.provider.players.find(p => !p.destroyed);
+        assert.equal(player.time, 40); assert.equal(player.state, 2, 'Jumping never resumes a paused recording');
+        assert.equal(await page.locator('#player-state').textContent(), 'Paused');
+        check.jumps.push({activation, before, after});
+      }
+      check.screenshot = 'marker-jump-' + viewport.width + '.png';
+      await page.screenshot({path: path.join(out, check.screenshot), fullPage: false});
+      check.storage = await preserveLearning(page, {noWrites: true});
+    }, {records: {[key]: JSON.stringify(marked)}, sdk: {synchronousReady: true}});
+
   await scenario('Mark selected, next, pause, repeat and undo create only explicit per-video annotations; save/export/replay are exact', async (page, check) => {
     await openApp(page); await connect(page); await selectedLine(page, first);
     await mediaClock(page, 10); await clickTimingEditorControl(page, 'mark-selected');
@@ -541,9 +711,11 @@ try {
     await page.locator('#timing-save').click();
     await page.waitForFunction(key => window.__TEST_READ_ALONG_STORAGE_SNAPSHOT().local[key] !== undefined, key);
     assert.deepEqual(JSON.parse((await preserveLearning(page)).local[key]), marked);
+    await mediaClock(page, 22, 2); await activeLine(page, second);
     await page.locator('#timing-replay').click();
     const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
-    assert.ok(snapshot.calls.some(call => call[0] === 'seekTo' && call[2] === 10 && call[3] === true));
+    assert.ok(snapshot.calls.some(call => call[0] === 'seekTo' && call[2] === 20 && call[3] === true));
+    assert.equal(snapshot.players.find(player => !player.destroyed).state, 2, 'Replay preserves a paused recording');
     await exactSource(page, japji);
   });
 
@@ -560,6 +732,11 @@ try {
     await mediaClock(page, 12, 2); const before = await page.locator('[data-line-id][data-active="true"]').getAttribute('data-line-id');
     await page.waitForTimeout(550);
     assert.equal(await page.locator('[data-line-id][data-active="true"]').getAttribute('data-line-id'), before, 'Paused media position does not become an illustrative timer');
+    assert.ok([null, 'off'].includes(await page.locator('#alignment-status').getAttribute('aria-live')),
+      'Automatic clock following is not a repeated live announcement');
+    assert.notEqual(await page.locator('#alignment-status').getAttribute('role'), 'status');
+    assert.equal(await page.locator('#media-time').getAttribute('aria-live'), 'off', 'Polling clock output does not announce each tick');
+    assert.equal(await page.locator('#timing-status').getAttribute('aria-live'), 'polite', 'Deliberate marker actions retain their status feedback');
     await exactSource(page, japji); check.storage = await preserveLearning(page, {noWrites: true});
   }, {records: {[key]: JSON.stringify(marked)}});
 
@@ -713,6 +890,41 @@ try {
     check.storage = await preserveLearning(page, {noWrites: true});
   }, {records: {[key]: JSON.stringify(marked)}});
 
+  await scenario('A self-destroying pause failure cannot reopen an empty player after discard cancellation or interfere with reconnection', async (page, check) => {
+    await openApp(page); await connect(page); await page.locator('#timing-load').click();
+    await selectedLine(page, first); await mediaClock(page, 12, 2);
+    await clickTimingEditorControl(page, 'mark-selected');
+    const revised = timing(japji, [{at: 10000, lineId: first}, {at: 12000, lineId: first},
+      {at: 20000, lineId: second}, {at: 30000, lineId: null}, {at: 40000, lineId: first}, {at: 50000, lineId: null}]);
+    await chooseBani(page, 'sohila');
+    await page.locator('#source-open').scrollIntoViewIfNeeded();
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.failNextPause());
+    await page.locator('#source-open').click();
+    await page.waitForSelector('#discard-dialog[open]');
+    await page.waitForSelector('#video-status[data-state="unavailable"]');
+    assert.match(await page.locator('#video-status').textContent(), /pause|closed|reconnect/i);
+    await page.locator('#discard-cancel').click();
+    await page.waitForSelector('#discard-dialog', {state: 'hidden'});
+    assert.equal(await page.locator('#youtube-player iframe').count(), 0);
+    assert.equal(await page.locator('#youtube-player').isHidden(), true, 'Dialog close does not expose an empty player box');
+    assert.equal(await page.locator('#player-placeholder').isVisible(), true);
+    for (const id of ['video-disconnect', 'mark-selected', 'mark-pause', 'timing-replay'])
+      assert.equal(await page.locator('#' + id).isDisabled(), true, id + ' has no stale controller');
+    await exactSource(page, japji); assert.deepEqual((await exported(page)).value, revised);
+    await connect(page);
+    await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.late(0, 42));
+    await mediaClock(page, 12, 2); await activeLine(page, first);
+    const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+    assert.equal(snapshot.players[0].destroyed, true);
+    assert.equal(snapshot.players.filter(player => !player.destroyed).length, 1);
+    assert.equal(await page.locator('#youtube-player iframe').count(), 1);
+    assert.equal(await page.locator('#video-status').getAttribute('data-state'), 'ready');
+    assert.equal(await page.locator('#video-disconnect').isDisabled(), false);
+    assert.deepEqual((await exported(page)).value, revised);
+    check.storage = await preserveLearning(page, {noWrites: true});
+  }, {records: {[key]: JSON.stringify(marked)}});
+
   await scenario('SDK network failure leaves a fallback and usable exact source', async (page, check) => {
     await openApp(page); await page.locator('#video-url').fill('https://www.youtube.com/watch?v=' + VIDEO); await page.locator('#video-load').click();
     await page.waitForSelector('#video-status[data-state="unavailable"], #video-status[data-state="refused"]');
@@ -738,6 +950,295 @@ try {
     assert.deepEqual((await exported(page)).value, unsaved);
     const kept = await preserveLearning(page); assert.equal(kept.local[key], JSON.stringify(marked));
   }, {quota: true, records: {[key]: JSON.stringify(marked)}});
+
+  await scenario('Named Bani presets expose all 3809 originals and Morning 1567 only after Open, without connecting a provider or restoring an old shared address', async (page, check) => {
+    await page.goto(origin + prefix + pagePath + '#v=' + VIDEO + '&b=jaap&s=p&n=808&a=0~0');
+    await ready(page); await exactSource(page, japji); assert.deepEqual(check.provider, []);
+    await page.locator('#video-url').fill('https://youtu.be/' + VIDEO);
+    await chooseBani(page, 'jaap');
+    assert.deepEqual(await page.locator('#source-bani option').evaluateAll(options => options.map(option => option.value)),
+      ['japji','jaap','savaiye','chaupai','anand','rehras','sohila','sukhmani','morning']);
+    assert.deepEqual(await page.locator('#source-bani option').evaluateAll(options => options.map(option => option.textContent)),
+      ['Japji Sahib','Jaap Sahib','Tav-Prasad Savaiye','Benti Chaupai Sahib','Anand Sahib',
+        'Sodar Rehras Sahib','Kirtan Sohila','Sukhmani Sahib','Morning Bani selection']);
+    await exactSource(page, japji);
+    assert.ok(!check.requests.some(request => request.path === prefix + baniSpecs.jaap.path), 'Menu choice alone does not load a source');
+    for (const id of [...Object.keys(baniSpecs), 'morning']) {
+      const reading = await openBani(page, id);
+      assert.equal(reading.lines.length, id === 'morning' ? 1567 : baniSpecs[id].count);
+      assert.equal(await page.locator('#youtube-player iframe').count(), 0);
+      assert.deepEqual(check.provider, []);
+    }
+    assert.equal(await page.locator('#timing-editor').evaluate(element => element.open), false);
+    check.storage = await preserveLearning(page, {noWrites: true});
+    assert.deepEqual(check.storage.audit.reads, [], 'Preset browsing does not read saved reader or timing state');
+  });
+
+  await scenario('Equal-length named Japji and full-SGGS timing maps cannot cross editions; refused import preserves source and both saved profiles', async (page, check) => {
+    await openApp(page); await connect(page); await page.locator('#timing-load').click();
+    const providerCount = check.provider.length, named = await openBani(page, 'japji');
+    assert.equal(check.provider.length, providerCount, 'Opening a preset does not reconnect the recording');
+    assert.equal(named.lines.length, japji.lines.length); assert.equal(await page.locator('#youtube-player iframe').count(), 0);
+    await connect(page);
+    await importTiming(page, marked); await page.waitForSelector('#timing-status[data-state="refused"]');
+    await exactSource(page, named); assert.deepEqual((await exported(page)).value, timing(named, []));
+    const own = timing(named, [{at: 1000, lineId: named.lines[0].id}, {at: 2000, lineId: null}]);
+    const foreign = clone(own); foreign.source.editionId += '-different';
+    await importTiming(page, foreign); await page.waitForSelector('#timing-status[data-state="refused"]');
+    await exactSource(page, named); assert.deepEqual((await exported(page)).value, timing(named, []));
+    await importTiming(page, own); await page.locator('#timing-save').click();
+    const ownKey = timingKey(VIDEO, named), kept = await preserveLearning(page);
+    assert.notEqual(ownKey, key); assert.equal(kept.local[key], JSON.stringify(marked));
+    assert.deepEqual(JSON.parse(kept.local[ownKey]), own); check.storage = kept;
+  }, {records: {[key]: JSON.stringify(marked)}});
+
+  await scenario('Compact teaching records exact Jaap62 rows including its mid-unit heading, repetitions and the final row without automatic saving', async (page, check) => {
+    await openApp(page); const named = await openBani(page, 'jaap'); await connect(page);
+    const rows = named.lines.filter(line => line.sourceUnitId === 'jaap062');
+    assert.deepEqual(rows.slice(0, 3).map(line => line.text), ['ਤੇਰਾ ਜੋਰੁ ॥', 'ਚਾਚਰੀ ਛੰਦ ॥', 'ਜਲੇ ਹੈਂ ॥']);
+    assert.equal(await page.locator('[data-line-id="' + rows[0].id + '"]').getAttribute('data-kind'), 'line');
+    assert.equal(await page.locator('[data-line-id="' + rows[1].id + '"]').getAttribute('data-kind'), 'heading');
+    assert.match(await page.locator('[data-line-id="' + rows[1].id + '"] .read-along-line-state').textContent(), /Source heading/);
+    assert.equal(await page.locator('#teach-toggle').getAttribute('aria-pressed'), 'false');
+    await selectedLine(page, rows[0].id); await clickTimingEditorControl(page, 'teach-toggle');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[0].text);
+    await mediaClock(page, 10, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[1].text);
+    await mediaClock(page, 20, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[2].text);
+    await clickTimingEditorControl(page, 'timing-undo');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[1].text, 'Teaching Undo returns to the just-marked row for a corrected tap');
+    assert.equal(await page.locator('#teach-next').isDisabled(), false);
+    assert.deepEqual((await exported(page)).value, timing(named, [{at: 10000, lineId: rows[0].id}]),
+      'Teaching Undo restores the exact previous map');
+    await mediaClock(page, 20, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[2].text);
+    await mediaClock(page, 30, 2); await clickTimingEditorControl(page, 'mark-pause');
+    await selectedLine(page, rows[0].id);
+    assert.equal(await page.locator('#teach-line').textContent(), rows[0].text, 'Selecting a previous row prepares a repetition');
+    await mediaClock(page, 40, 2); await clickTimingEditorControl(page, 'teach-next');
+    await mediaClock(page, 50, 2); await clickTimingEditorControl(page, 'mark-pause');
+    const final = named.lines.at(-1); await selectedLine(page, final.id);
+    assert.equal(await page.locator('#teach-line').textContent(), final.text);
+    await mediaClock(page, 60, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-next').isDisabled(), true);
+    assert.equal(await page.locator('#teach-line').textContent(), '');
+    await mediaClock(page, 70, 2); await clickTimingEditorControl(page, 'mark-pause');
+    assert.deepEqual((await exported(page)).value, timing(named, [
+      {at: 10000, lineId: rows[0].id}, {at: 20000, lineId: rows[1].id}, {at: 30000, lineId: null},
+      {at: 40000, lineId: rows[0].id}, {at: 50000, lineId: null}, {at: 60000, lineId: final.id}, {at: 70000, lineId: null}
+    ]));
+    await exactSource(page, named); check.storage = await preserveLearning(page, {noWrites: true});
+  });
+
+  await scenario('Replay follows the current bounded occurrence, preserves pause, and refuses gaps and an unfinished tail', async (page, check) => {
+    await openApp(page); await connect(page); await page.locator('#timing-load').click();
+    for (const [time, start, line] of [[12,10,first],[22,20,second],[42,40,first]]) {
+      await mediaClock(page, time, 2); await activeLine(page, line);
+      await page.locator('#timing-replay').click();
+      const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+      assert.equal(snapshot.calls.filter(call => call[0] === 'seekTo').at(-1)[2], start);
+      const player = snapshot.players.find(player => !player.destroyed);
+      assert.equal(player.time, start); assert.equal(player.state, 2);
+    }
+    for (const time of [9,35,50]) {
+      await mediaClock(page, time, 2); await activeLine(page, null);
+      assert.equal(await page.locator('#timing-replay').isDisabled(), true);
+    }
+    await importTiming(page, timing(japji, [{at: 0, lineId: first}, {at: 10000, lineId: second}]));
+    await mediaClock(page, 12, 2); await activeLine(page, null);
+    assert.equal(await page.locator('#timing-replay').isDisabled(), true, 'No guessed end for an unfinished final marker');
+    check.storage = await preserveLearning(page, {noWrites: true});
+  }, {records: {[key]: JSON.stringify(marked)}});
+
+  await scenario('Fractional-second replay stays on the same paused occurrence and never bridges a genuinely earlier gap', async (page, check) => {
+    await openApp(page); await connect(page);
+    const fractional = timing(japji, [{at: 0, lineId: first}, {at: 1005, lineId: second},
+      {at: 2000, lineId: null}, {at: 40001, lineId: first}, {at: 41000, lineId: null}]);
+    await importTiming(page, fractional);
+    for (const [inside, cueMs, expected] of [[1.5,1005,second], [40.5,40001,first]]) {
+      await mediaClock(page, inside, 2); await activeLine(page, expected);
+      for (let attempt = 0; attempt < 3; attempt++) {
+        await page.locator('#timing-replay').click(); await activeLine(page, expected);
+        const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+        const player = snapshot.players.find(player => !player.destroyed);
+        assert.equal(snapshot.calls.filter(call => call[0] === 'seekTo').at(-1)[2], cueMs / 1000);
+        assert.equal(player.time, cueMs / 1000); assert.equal(player.state, 2);
+        assert.equal(await page.locator('#timing-replay').isDisabled(), false);
+        assert.match(await page.locator('#alignment-status').textContent(), /Timed line/);
+      }
+    }
+    await mediaClock(page, 1.004, 2); await activeLine(page, first);
+    for (const time of [2,39.999,40,41]) {
+      await mediaClock(page, time, 2); await activeLine(page, null);
+      assert.equal(await page.locator('#timing-replay').isDisabled(), true, 'Real earlier or ended interval ' + time);
+    }
+    await mediaClock(page, 40, 2);
+    assert.match(await page.locator('#alignment-status').textContent(), /text pause/i, 'One millisecond early remains a real gap');
+    assert.deepEqual((await exported(page)).value, fractional);
+    check.storage = await preserveLearning(page, {noWrites: true});
+  });
+
+  await scenario('Keyboard navigation during teaching keeps the focused original row visible without jumping back to the teaching panel', async (page, check) => {
+    await page.setViewportSize({width: 320, height: 640}); await openApp(page);
+    const named = await openBani(page, 'jaap');
+    const index = named.lines.findIndex(line => line.sourceUnitId === 'jaap062');
+    await selectedLine(page, named.lines[index].id); await clickTimingEditorControl(page, 'teach-toggle');
+    await page.evaluate(id => {
+      const panel = document.getElementById('read-along-text');
+      const top = document.querySelector('.video-card').getBoundingClientRect().height + 8;
+      window.scrollTo({top: scrollY + panel.getBoundingClientRect().top - top, behavior: 'instant'});
+      panel.querySelector('[data-line-id="' + id + '"]').focus({preventScroll: true});
+    }, named.lines[index].id);
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    const before = await page.evaluate(() => window.scrollY);
+    check.keyboard = [];
+    for (const [key, row] of [['ArrowDown',named.lines[index + 1]], ['ArrowUp',named.lines[index]],
+      ['End',named.lines.at(-1)], ['Home',named.lines[0]]]) {
+      await page.keyboard.press(key);
+      await page.waitForFunction(id => document.activeElement?.dataset.lineId === id, row.id);
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      assert.equal(await page.locator('#teach-line').textContent(), row.text, key + ' updates exact teaching preview');
+      const metrics = await page.evaluate(() => {
+        const row = document.activeElement, rect = row.getBoundingClientRect();
+        const panel = document.getElementById('read-along-text').getBoundingClientRect();
+        const hit = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        return {windowY: scrollY, lineId: row.dataset.lineId, selected: row.dataset.selected,
+          top: rect.top, bottom: rect.bottom, height: rect.height, panelTop: panel.top, panelBottom: panel.bottom,
+          inViewport: rect.top >= 0 && rect.bottom <= innerHeight,
+          inPanel: rect.top >= panel.top && rect.bottom <= panel.bottom,
+          uncovered: hit === row || row.contains(hit)};
+      });
+      check.keyboard.push({key, ...metrics});
+      assert.equal(metrics.windowY, before, key + ' does not move the window to the teaching controls');
+      assert.equal(metrics.lineId, row.id); assert.equal(metrics.selected, 'true');
+      assert.equal(metrics.inViewport, true, key + ' focused row stays in the viewport');
+      assert.equal(metrics.inPanel, true, key + ' focused row stays in the original-text panel');
+      assert.equal(metrics.uncovered, true, key + ' focused row is not hidden under another surface');
+    }
+    assert.deepEqual(check.provider, []); check.storage = await preserveLearning(page, {noWrites: true});
+  });
+
+  let releaseBani, pendingBaniReleased = false;
+  const pendingBani = new Promise(resolve => { releaseBani = resolve; });
+  await scenario('A slow earlier Bani load cannot replace the source chosen later', async (page, check) => {
+    try {
+      await openApp(page); await chooseBani(page, 'jaap'); await page.locator('#source-open').click();
+      await eventually(() => check.requests.some(request => request.path === prefix + baniSpecs.jaap.path), 'held Jaap source request');
+      const later = await openBani(page, 'sohila');
+      const response = page.waitForResponse(value => new URL(value.url()).pathname === prefix + baniSpecs.jaap.path);
+      releaseBani(); await response; await eventually(() => pendingBaniReleased, 'held source released');
+      await page.waitForTimeout(750);
+      await exactSource(page, later); assert.deepEqual(check.provider, []);
+      check.storage = await preserveLearning(page, {noWrites: true});
+    } finally { releaseBani(); }
+  }, {beforeLocal: async relative => {
+    if (relative === baniSpecs.jaap.path) { await pendingBani; pendingBaniReleased = true; }
+  }});
+
+  const jaapOriginal = baniReadings.get('jaap').lines[0];
+  const forgedText = jaapOriginal.text.replace(/[\u0A00-\u0A7F]/u, char => char === 'ਕ' ? 'ਖ' : 'ਕ');
+  const forgedJaap = baniRaw.get('jaap').toString().replace(JSON.stringify(jaapOriginal.text), JSON.stringify(forgedText))
+    .replace(jaapOriginal.sha256, hash(forgedText));
+  assert.equal(Buffer.byteLength(forgedJaap), baniRaw.get('jaap').length);
+  await scenario('A forged named-Bani row with its matching replacement line hash refuses before any partial text is rendered', async (page, check) => {
+    await openApp(page); await chooseBani(page, 'jaap'); await page.locator('#source-open').click();
+    await page.waitForSelector('#source-status[data-state="refused"]');
+    assert.equal(await page.locator('#read-along-text [data-line-id]').count(), 0);
+    assert.equal(await page.locator('#video-load').isDisabled(), true);
+    assert.deepEqual(check.provider, []); check.storage = await preserveLearning(page, {noWrites: true});
+  }, {mutations: {[baniSpecs.jaap.path]: forgedJaap}});
+
+  await scenario('Teaching keeps the native player, exact preview and tap control visible together on phone and desktop after explicit actions', async (page, check, context) => {
+    check.layouts = []; check.screenshots = [];
+    const layoutFailures = [];
+    const viewports = [{width: 320, height: 640}, {width: 390, height: 844}, {width: 1280, height: 900}];
+    let firstPage = true;
+    async function visibleTeaching(surface, expectedText, label) {
+      // Observe the application's own explicit-action reveal. No test scrolling
+      // repairs a hidden preview or control before these assertions.
+      await surface.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      assert.equal(await surface.locator('#teach-line').textContent(), expectedText, label + ' complete original preview');
+      const metrics = await surface.evaluate(() => {
+        const box = element => {
+          const rect = element.getBoundingClientRect();
+          const points = [[rect.left + 8, rect.top + 8], [rect.right - 8, rect.top + 8],
+            [rect.left + 8, rect.bottom - 8], [rect.right - 8, rect.bottom - 8],
+            [rect.left + rect.width / 2, rect.top + rect.height / 2]];
+          return {x: rect.x, y: rect.y, width: rect.width, height: rect.height,
+            right: rect.right, bottom: rect.bottom,
+            fullyVisible: rect.width > 0 && rect.height > 0 && rect.left >= 0 && rect.top >= 0
+              && rect.right <= innerWidth + 0.01 && rect.bottom <= innerHeight + 0.01,
+            uncovered: points.every(([x, y]) => {
+              const hit = document.elementFromPoint(x, y); return hit === element || element.contains(hit);
+            })};
+        };
+        return {viewport: {width: innerWidth, height: innerHeight}, documentWidth: document.documentElement.scrollWidth,
+          frame: box(document.querySelector('#youtube-player iframe')),
+          preview: box(document.querySelector('#teach-panel .teach-preview')),
+          control: box(document.getElementById('teach-next')),
+          previewTextHeight: document.getElementById('teach-line').scrollHeight,
+          previewClientHeight: document.getElementById('teach-line').clientHeight};
+      });
+      check.layouts.push({label, ...metrics});
+      assert.ok(metrics.documentWidth <= metrics.viewport.width, label + ' no horizontal overflow');
+      assert.ok(metrics.frame.width >= 200 && metrics.frame.height >= 200, label + ' at least 200×200 native player');
+      for (const item of ['frame', 'preview', 'control']) {
+        assert.equal(metrics[item].fullyVisible, true, label + ' entire ' + item + ' is inside viewport: ' + JSON.stringify(metrics[item]));
+        assert.equal(metrics[item].uncovered, true, label + ' ' + item + ' is not covered by another app surface');
+      }
+      assert.equal(await surface.locator('#teach-next').isDisabled(), false, label + ' tap remains usable');
+      if (metrics.previewTextHeight > metrics.previewClientHeight + 1) {
+        const before = await surface.evaluate(() => window.scrollY);
+        const preview = surface.locator('#teach-line');
+        await preview.evaluate(element => element.focus({preventScroll: true}));
+        await surface.keyboard.press('End');
+        await surface.waitForFunction(() => {
+          const element = document.getElementById('teach-line');
+          return element.scrollTop > 0 && element.scrollTop + element.clientHeight >= element.scrollHeight - 1;
+        });
+        assert.equal(await preview.textContent(), expectedText, label + ' scrolling retains the complete original');
+        assert.equal(await surface.evaluate(() => window.scrollY), before, label + ' preview scrolling does not hide the player or tap button');
+        await surface.keyboard.press('Home');
+        await surface.waitForFunction(() => document.getElementById('teach-line').scrollTop === 0);
+        await preview.evaluate(element => element.blur());
+      }
+    }
+    for (const viewport of viewports) for (const id of ['japji', 'jaap']) {
+      const surface = firstPage ? page : await context.newPage();
+      if (!firstPage) {
+        surface.setDefaultTimeout(15000);
+        surface.on('request', request => check.requests.push({host: new URL(request.url()).hostname,
+          path: new URL(request.url()).pathname, method: request.method(), body: request.postData()}));
+        surface.on('pageerror', error => check.pageErrors.push(error.message));
+        surface.on('console', message => { if (message.type() === 'error') check.consoleErrors.push(message.text()); });
+      }
+      firstPage = false;
+      try {
+        await surface.setViewportSize(viewport); await openApp(surface);
+        const named = await openBani(surface, id); await connect(surface);
+        await surface.frameLocator('#youtube-player iframe').locator('body')
+          .filter({hasText: 'TEST ONLY'}).filter({hasText: 'No recording is playing'}).waitFor({state: 'visible'});
+        const selected = id === 'japji' ? named.lines[0]
+          : named.lines.find(line => line.sourceUnitId === 'jaap062' && line.text === 'ਤੇਰਾ ਜੋਰੁ ॥');
+        assert.ok(selected); if (id === 'japji') assert.ok(selected.text.length > 60, 'Use the full long opening invocation');
+        await selectedLine(surface, selected.id); await mediaClock(surface, 12, 2);
+        await clickTimingEditorControl(surface, 'teach-toggle');
+        await visibleTeaching(surface, selected.text, viewport.width + '×' + viewport.height + ' ' + id + ' enabled');
+        if (id === 'japji' && [320,1280].includes(viewport.width)) {
+          const name = 'bani-teach-' + viewport.width + '.png';
+          await surface.screenshot({path: path.join(out, name), fullPage: false}); check.screenshots.push(name);
+        }
+        await clickTimingEditorControl(surface, 'teach-next');
+        const next = named.lines[named.lines.findIndex(line => line.id === selected.id) + 1];
+        await visibleTeaching(surface, next.text, viewport.width + '×' + viewport.height + ' ' + id + ' after tap');
+        await preserveLearning(surface, {noWrites: true});
+      } catch (error) {
+        layoutFailures.push({viewport, bani: id, error: error.stack || String(error)});
+      } finally { await surface.close(); }
+    }
+    assert.deepEqual(layoutFailures, [], 'Every teaching viewport and original-row length must remain usable');
+  });
 
   const corrupted = fixtures.sggs.chunks.get('c0001').bytes.toString().replace('ੴ', '੨');
   assert.equal(Buffer.byteLength(corrupted), fixtures.sggs.chunks.get('c0001').bytes.length);

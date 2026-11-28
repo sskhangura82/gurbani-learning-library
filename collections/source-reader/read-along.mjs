@@ -1,15 +1,19 @@
 import {createReadAlongSource} from './read-along-source.mjs';
-import {parseYouTubeURL, emptyTiming, validateTiming, putCue, lineAt, timingKey,
+import {createBaniReadAlongSource} from './read-along-bani.mjs';
+import {parseYouTubeURL, emptyTiming, validateTiming, putCue, lineAt, timingKey, mediaTimeMs,
   serializeTiming, formatTime, MAX_TIMING_BYTES} from './read-along-core.mjs';
 import {createYouTubePlayer} from './read-along-player.mjs';
 
 const $ = id => document.getElementById(id);
 const textPanel = $('read-along-text'), mount = $('youtube-player');
 const source = createReadAlongSource();
+const baniSource = createBaniReadAlongSource();
+const baniIds = new Set(['japji', 'jaap', 'savaiye', 'chaupai', 'anand', 'rehras', 'sohila', 'sukhmani', 'morning']);
 let reading = null, timing = null, video = null, controller = null, media = null;
 let sourceSequence = 0, playerSequence = 0, contextSequence = 0, browseSequence = 0, importSequence = 0, mapRevision = 0;
 let selectedId = null, activeId = null, baseline = null, dirty = false, connecting = false, browsing = false;
-let pendingStart = null, undo = [], options = [], optionBinding = null, pendingAction = null, dialogReturn = null;
+let pendingStart = null, startNotice = null, undo = [], options = [], optionBinding = null, pendingAction = null, dialogReturn = null;
+let teaching = false, teachLineId = null;
 const rows = new Map(), lineIndices = new Map();
 
 function node(tag, className, text) {
@@ -24,7 +28,39 @@ function status(id, state, message) {
 }
 function hasClock(snapshot = media) {
   return Boolean(controller && video && reading && snapshot?.ready && snapshot.videoId === video.videoId
-    && snapshot.state !== 'error' && Number.isFinite(snapshot.timeSeconds) && snapshot.timeSeconds >= 0);
+    && snapshot.state !== 'error' && mediaTimeMs(snapshot.timeSeconds) !== null);
+}
+function currentCue(snapshot = media) {
+  if (!hasClock(snapshot) || !timing) return null;
+  const at = mediaTimeMs(snapshot.timeSeconds);
+  let left = 0, right = timing.cues.length;
+  while (left < right) { const middle = (left + right) >>> 1; if (timing.cues[middle].at <= at) left = middle + 1; else right = middle; }
+  const index = left - 1, cue = timing.cues[index];
+  return index >= 0 && index < timing.cues.length - 1 && cue.lineId !== null ? cue : null;
+}
+function updateTeaching() {
+  $('teach-toggle').disabled = !reading;
+  $('teach-toggle').setAttribute('aria-pressed', String(teaching));
+  text('teach-toggle', teaching ? 'Stop teaching' : 'Teach line by line');
+  $('teach-panel').hidden = !teaching;
+  $('timing-editor').dataset.teaching = String(teaching);
+  $('selected-line').hidden = teaching; $('mark-selected').hidden = teaching; $('mark-next').hidden = teaching;
+  $('teach-help').hidden = !teaching;
+  const index = lineIndices.get(teachLineId), line = index === undefined ? null : reading?.lines[index];
+  const preview = $('teach-line'), previewId = line?.id || '';
+  if (preview.dataset.lineId !== previewId) { preview.dataset.lineId = previewId; preview.scrollTop = 0; }
+  text('teach-line', line?.text || '');
+  preview.hidden = !line;
+  text('teach-line-label', line ? 'Next: ' + (line.kind === 'heading' ? 'source heading ' : 'line ') + (index + 1) + ' of ' + reading.lines.length
+    : teaching && reading ? 'You have reached the last line. Mark a text pause or end, or select a line to repeat.' : 'Choose a line to begin.');
+  $('teach-next').disabled = !teaching || !line || !timing || !hasClock();
+}
+function revealTeaching() {
+  if (!teaching || !$('timing-editor').open || $('teach-panel').hidden) return;
+  const panel = $('teach-panel').getBoundingClientRect();
+  const stacked = window.matchMedia('(max-width: 760px)').matches;
+  const top = stacked ? document.querySelector('.video-card').getBoundingClientRect().height + 8 : 16;
+  window.scrollTo({top: Math.max(0, window.scrollY + panel.top - top), behavior: 'instant'});
 }
 function updateFallback() {
   let identity;
@@ -47,11 +83,13 @@ function updateControls() {
   $('timing-import').disabled = !timing;
   $('timing-delete').disabled = !timing;
   $('timing-clear').disabled = !timing?.cues.length;
-  $('timing-replay').disabled = !clock || !timing?.cues.length;
+  $('timing-replay').disabled = !currentCue();
   for (const button of $('timing-cues').querySelectorAll('button')) button.disabled = !clock;
   const mode = $('source-mode').value;
-  $('source-find').disabled = mode === 'japji' || browsing;
-  $('source-open').disabled = mode !== 'japji' && (!optionBinding || !options.some(option => option.id === $('source-group').value));
+  $('source-find').disabled = !['sggs', 'dasam'].includes(mode) || browsing;
+  $('source-open').disabled = mode === 'bani' ? !baniIds.has($('source-bani').value)
+    : mode !== 'japji' && (!optionBinding || !options.some(option => option.id === $('source-group').value));
+  updateTeaching();
 }
 function rowState(id) {
   const row = rows.get(id); if (!row) return;
@@ -60,7 +98,8 @@ function rowState(id) {
   row.tabIndex = selected ? 0 : -1;
   row.setAttribute('aria-pressed', String(selected));
   if (active) row.setAttribute('aria-current', 'true'); else row.removeAttribute('aria-current');
-  row.querySelector('.read-along-line-state').textContent = [selected ? 'Selected' : '', active ? 'Timed line' : ''].filter(Boolean).join(' · ');
+  row.querySelector('.read-along-line-state').textContent = [row.dataset.kind === 'heading' ? 'Source heading' : '',
+    selected ? 'Selected' : '', active ? 'Timed line' : ''].filter(Boolean).join(' · ');
 }
 function revealRow(id, {follow = false} = {}) {
   const row = rows.get(id); if (!row?.isConnected) return;
@@ -69,14 +108,16 @@ function revealRow(id, {follow = false} = {}) {
   const top = textPanel.scrollTop + box.top - panelBox.top - 12;
   textPanel.scrollTo({top: Math.max(0, top), behavior: 'auto'});
 }
-function selectLine(id, {focus = false, reveal = false} = {}) {
+function selectLine(id, {focus = false, reveal = false, updateTeach = true, revealTeach = true} = {}) {
   if (!lineIndices.has(id)) return;
   const previous = selectedId; selectedId = id; rowState(previous); rowState(id);
+  if (teaching && updateTeach) teachLineId = id;
   const index = lineIndices.get(id), line = reading.lines[index];
-  text('selected-line', 'Selected: line ' + (index + 1) + ' of ' + reading.lines.length + ' · ' + line.label);
+  text('selected-line', 'Selected: ' + (line.kind === 'heading' ? 'source heading ' : 'line ') + (index + 1) + ' of ' + reading.lines.length + ' · ' + line.label);
   if (reveal) revealRow(id);
   if (focus) rows.get(id).focus({preventScroll: true});
   updateControls();
+  if (teaching && updateTeach && revealTeach) revealTeaching();
 }
 function setActive(id) {
   if (id && !rows.has(id)) id = null;
@@ -90,7 +131,7 @@ function alignmentMessage() {
   if (!timing.cues.length) return 'No timing markers yet. Select a line and mark its start.';
   if (!hasClock()) return 'Timings are open. Connect the recording to follow its clock.';
   if (activeId) return 'Timed line ' + (lineIndices.get(activeId) + 1) + ' · ' + reading.lines[lineIndices.get(activeId)].label;
-  const at = media.timeSeconds * 1000;
+  const at = mediaTimeMs(media.timeSeconds);
   let left = 0, right = timing.cues.length;
   while (left < right) { const middle = (left + right) >>> 1; if (timing.cues[middle].at <= at) left = middle + 1; else right = middle; }
   const index = left - 1;
@@ -114,18 +155,39 @@ function updateClock() {
 function acceptSnapshot(snapshot, token, expectedReading, expectedVideo) {
   if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo || snapshot?.videoId !== expectedVideo) return;
   media = snapshot;
-  if (controller && snapshot.ready && pendingStart !== null) {
-    const start = pendingStart; pendingStart = null;
-    if (start > 0) {
-      controller.pause();
-      controller.seek(start);
-      const current = controller.snapshot();
-      if (token !== playerSequence || reading !== expectedReading || current?.videoId !== expectedVideo) return;
-      media = current;
+  const target = controller;
+  const current = () => token === playerSequence && controller === target
+    && reading === expectedReading && video?.videoId === expectedVideo;
+  if (target && snapshot.ready && pendingStart !== null) {
+    const start = pendingStart;
+    if (start <= 0) pendingStart = null;
+    else if (Number.isFinite(snapshot.durationSeconds) && snapshot.durationSeconds > 0) {
+      pendingStart = null;
+      if (start > snapshot.durationSeconds) {
+        startNotice = 'Recording connected. The link’s start time is beyond this recording’s length, so that offset was ignored. Use YouTube’s controls to choose a point.';
+      } else {
+        startNotice = null;
+        const paused = target.pause();
+        if (!current()) return;
+        if (paused === false) {
+          playerError({code: 'YOUTUBE_PAUSE_FAILED', message: 'The player could not pause for the link’s start time. Reconnect to continue.'}, token, expectedReading, expectedVideo); return;
+        }
+        const moved = target.seek(start);
+        if (!current()) return;
+        if (moved === false) {
+          playerError({code: 'YOUTUBE_SEEK_FAILED', message: 'The player could not move to the link’s start time. Reconnect to continue.'}, token, expectedReading, expectedVideo); return;
+        }
+        const next = target.snapshot();
+        if (!current() || next?.videoId !== expectedVideo) return;
+        media = next;
+      }
+    } else {
+      startNotice = 'Recording connected. Waiting for its length before applying the link’s start time.';
     }
   }
-  if (media.ready && media.state !== 'error' && $('video-status').dataset.state !== 'ready')
-    status('video-status', 'ready', 'Recording connected. Use YouTube’s controls for play, pause, seeking and speed.');
+  if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo) return;
+  if (media?.ready && media.state !== 'error')
+    status('video-status', 'ready', startNotice || 'Recording connected. Use YouTube’s controls for play, pause, seeking and speed.');
   updateClock();
 }
 function playerError(error, token, expectedReading, expectedVideo) {
@@ -135,12 +197,18 @@ function playerError(error, token, expectedReading, expectedVideo) {
     : error?.code === 'YOUTUBE_CONFIGURATION'
       ? 'YouTube playback setup is unavailable. You can still read here or open the video on YouTube.'
       : error?.message || 'The recording could not be opened here. You can still read or watch it on YouTube.';
+  if (error?.code === 'YOUTUBE_RECORDING_CHANGED' && controller) {
+    // Native YouTube navigation remains available; only the old alignment stops.
+    media = null; pendingStart = null; startNotice = null; updateClock();
+  } else if (error?.code !== 'YOUTUBE_PLAYBACK_BLOCKED') {
+    // Invalidate callbacks before disposing an adapter that cannot recover its clock.
+    detachPlayer();
+  }
   status('video-status', 'unavailable', message);
-  if (error?.code !== 'YOUTUBE_PLAYBACK_BLOCKED') { media = null; updateClock(); }
   updateFallback();
 }
 function detachPlayer(message) {
-  ++playerSequence; connecting = false; pendingStart = null;
+  ++playerSequence; connecting = false; pendingStart = null; startNotice = null;
   const previous = controller; controller = null; media = null;
   try { previous?.pause(); } catch {}
   try { previous?.destroy(); } catch {}
@@ -150,6 +218,7 @@ function detachPlayer(message) {
 }
 function resetTiming() {
   timing = null; video = null; baseline = null; dirty = false; undo = [];
+  teaching = false; teachLineId = null;
   ++mapRevision; ++importSequence;
   renderTiming();
 }
@@ -158,18 +227,31 @@ function renderSource() {
   rows.clear(); lineIndices.clear(); selectedId = null; activeId = null;
   expected.lines.forEach((line, index) => {
     const row = node('button', 'read-along-line'); row.type = 'button';
-    row.dataset.lineId = line.id; row.dataset.selected = 'false'; row.dataset.active = 'false'; row.tabIndex = -1;
+    row.dataset.lineId = line.id; row.dataset.kind = line.kind || 'line';
+    row.dataset.selected = 'false'; row.dataset.active = 'false'; row.tabIndex = -1;
     const original = node('span', 'read-along-original', line.text); original.lang = 'pa-Guru';
     row.append(original, node('span', 'read-along-locator', line.label + ' · Line ' + (index + 1)),
-      node('span', 'read-along-line-state'));
+      node('span', 'read-along-line-state', line.kind === 'heading' ? 'Source heading' : ''));
     row.addEventListener('click', () => { if (reading === expected) selectLine(line.id); });
     rows.set(line.id, row); lineIndices.set(line.id, index); fragment.append(row);
   });
   textPanel.replaceChildren(fragment); textPanel.scrollTop = 0; textPanel.setAttribute('aria-busy', 'false');
   text('source-title', expected.title);
   status('source-status', 'ready', expected.lines.length + ' original rows checked');
-  text('source-provenance', 'Named edition: ' + expected.binding.editionId + '. This selection contains ' + expected.lines.length
-    + ' original rows in ' + expected.binding.units.length + ' complete source ' + (expected.binding.units.length === 1 ? 'group.' : 'groups.'));
+  const isBani = expected.binding.collectionId === 'daily-bani';
+  text('source-provenance', (isBani ? 'Named Bani reader edition: ' : 'Named edition: ') + expected.binding.editionId + '. This selection contains ' + expected.lines.length
+    + ' original rows in ' + expected.binding.units.length + (isBani ? ' pinned source ' + (expected.binding.units.length === 1 ? 'file.' : 'files.')
+      : ' complete source ' + (expected.binding.units.length === 1 ? 'group.' : 'groups.')));
+  text('source-edition-note', isBani
+    ? 'These rows come from the library’s existing named Bani readers, including their source spelling, headings and order. Byte and row-fingerprint checks preserve that digital edition; human collation and teaching review remain pending. Timing notes belong to this exact edition and one recording.'
+    : 'Text follows the named Shabad OS digital edition, including its spelling, order and complete source groups. A provider’s grouping does not establish every traditional composition boundary. Timing notes belong to this exact edition and one recording.');
+  $('source-bibliography').hidden = isBani;
+  $('source-editions').replaceChildren(); $('source-editions').hidden = !isBani;
+  if (isBani) for (const edition of expected.sourceEditions || []) {
+    const item = node('li'), link = node('a', '', edition.title + ' · original reader');
+    link.href = new URL(edition.readerPath, import.meta.url).href;
+    item.append(link, node('span', '', ' — ' + edition.editionId)); $('source-editions').append(item);
+  }
   document.documentElement.dataset.readAlongState = 'ready';
   selectLine(expected.lines[0].id); updateAlignment(); updateControls();
 }
@@ -179,6 +261,9 @@ async function openSource(load) {
   resetTiming(); reading = null; rows.clear(); lineIndices.clear(); selectedId = null; activeId = null;
   textPanel.replaceChildren(); textPanel.setAttribute('aria-busy', 'true');
   text('source-title', 'Opening original text'); text('selected-line', 'Select a source line after it has been checked.');
+  text('source-provenance', 'Original source files are checked before they appear.');
+  text('source-edition-note', 'Each reading preserves its named digital edition. Timing notes belong to that exact edition and one recording.');
+  $('source-editions').replaceChildren(); $('source-editions').hidden = true; $('source-bibliography').hidden = true;
   status('source-status', 'loading', 'Checking the complete original text…');
   document.documentElement.dataset.readAlongState = 'loading'; updateControls(); updateFallback();
   try {
@@ -196,12 +281,15 @@ async function openSource(load) {
 }
 function chooserChanged() {
   ++browseSequence; browsing = false; options = []; optionBinding = null;
-  const mode = $('source-mode').value, isJapji = mode === 'japji';
-  $('source-page-field').hidden = isJapji; $('source-group-field').hidden = isJapji;
+  const mode = $('source-mode').value, isJapji = mode === 'japji', isBani = mode === 'bani';
+  $('source-page-field').hidden = isJapji || isBani; $('source-group-field').hidden = isJapji || isBani;
+  $('source-bani-field').hidden = !isBani;
   text('source-page-label', mode === 'dasam' ? 'Source page · 1–1428' : 'Ang number · 1–1430');
   $('source-group').replaceChildren(node('option', '', 'Find passages to choose one'));
   $('source-group').disabled = true;
-  text('source-options-status', isJapji ? 'Japji includes all 385 original rows in this named digital edition.' : 'Find a page, then choose the passage beginning you want. The complete provider group will open.');
+  text('source-options-status', isJapji ? 'Japji includes all 385 original rows in this named digital edition.'
+    : isBani ? 'Choose one of the library’s named Bani readers, or the Morning Bani selection: Japji, Jaap, Tav-Prasad Savaiye, Benti Chaupai and Anand. These editions keep separate timing maps from the full-source reader.'
+      : 'Find a page, then choose the passage beginning you want. The complete provider group will open.');
   updateControls();
 }
 async function browse() {
@@ -252,6 +340,7 @@ async function connectVideo(identity) {
     ++contextSequence; ++importSequence; ++mapRevision;
     video = identity; timing = emptyTiming(identity.videoId, expectedReading);
     baseline = serializeTiming(timing); dirty = false; undo = [];
+    teaching = false; teachLineId = null;
     status('timing-status', 'idle', 'New recording and text selected. Mark timings or explicitly load a saved map.');
   } else video = identity;
   const token = playerSequence;
@@ -272,10 +361,10 @@ async function connectVideo(identity) {
     updateControls();
   } catch (error) {
     if (token !== playerSequence || reading !== expectedReading || video?.videoId !== identity.videoId) return;
-    connecting = false; controller = null; media = null;
-    mount.replaceChildren(); mount.hidden = true; $('player-placeholder').hidden = false;
+    if (error?.code === 'YOUTUBE_CANCELLED') {
+      detachPlayer('The video connection stopped. Choose Load video to try again.'); return;
+    }
     playerError(error, token, expectedReading, identity.videoId);
-    updateClock(); updateControls();
   }
 }
 function loadVideo(event) {
@@ -309,9 +398,10 @@ function renderTiming() {
   $('timing-cues').start = first + 1;
   for (let index = first; index < timing.cues.length; index++) {
     const cue = timing.cues[index], item = node('li');
-    const label = cue.lineId === null ? 'Text pause or end' : 'Line ' + (lineIndices.get(cue.lineId) + 1) + ' · ' + reading.lines[lineIndices.get(cue.lineId)].label;
+    const lineIndex = lineIndices.get(cue.lineId), line = reading.lines[lineIndex];
+    const label = cue.lineId === null ? 'Text pause or end' : (line.kind === 'heading' ? 'Source heading · row ' : 'Line ') + (lineIndex + 1) + ' · ' + line.label;
     const go = node('button', 'quiet', formatTime(cue.at / 1000) + ' · ' + label); go.type = 'button'; go.dataset.cueAt = String(cue.at);
-    go.addEventListener('click', () => seek(cue.at / 1000)); item.append(go);
+    go.addEventListener('click', () => seek(cue.at / 1000, {showPlayer: true})); item.append(go);
     if (index === timing.cues.length - 1 && cue.lineId !== null) item.append(node('small', '', 'This final line marker needs a following marker to define its interval.'));
     $('timing-cues').append(item);
   }
@@ -321,23 +411,31 @@ function currentClock() {
   if (!controller || !video || !reading) return null;
   const snapshot = controller.snapshot();
   if (!hasClock(snapshot)) return null;
-  media = snapshot; return Math.round(snapshot.timeSeconds * 1000);
+  media = snapshot; return mediaTimeMs(snapshot.timeSeconds);
 }
 function mark(lineId, {select = false} = {}) {
-  if (!timing || !reading) return;
+  if (!timing || !reading) return false;
   const at = currentClock();
-  if (at === null) { status('timing-status', 'refused', 'The recording clock is not available. Use the player controls or reconnect before marking.'); updateClock(); return; }
+  if (at === null) { status('timing-status', 'refused', 'The recording clock is not available. Use the player controls or reconnect before marking.'); updateClock(); return false; }
   try {
     const next = putCue(timing, reading, at, lineId);
     replaceTiming(next);
     if (select && lineId) selectLine(lineId, {reveal: true});
     status('timing-status', dirty ? 'dirty' : 'loaded', (lineId === null ? 'Text pause/end' : 'Selected line') + ' marked at ' + formatTime(at / 1000) + '. Choose Save on device to keep your changes.');
-  } catch { status('timing-status', 'refused', 'This marker could not be added. Your current map is unchanged; check the recording time or export your map.'); }
+    return true;
+  } catch { status('timing-status', 'refused', 'This marker could not be added. Your current map is unchanged; check the recording time or export your map.'); return false; }
 }
-function seek(seconds) {
+function seek(seconds, {showPlayer = false} = {}) {
   const target = controller, snapshot = target?.snapshot();
   if (!hasClock(snapshot)) return false;
   const token = playerSequence, expectedReading = reading, expectedVideo = video.videoId;
+  if (showPlayer) {
+    // The card is sticky only inside the workspace; marker notes sit below it.
+    // Reveal its stable container before seeking, and keep keyboard focus with it.
+    const workspace = mount.closest('.workspace');
+    window.scrollTo({top: Math.max(0, window.scrollY + workspace.getBoundingClientRect().top - 16), behavior: 'instant'});
+    mount.querySelector('iframe')?.focus({preventScroll: true});
+  }
   if (!['playing', 'buffering'].includes(snapshot.state) && target.pause() === false) return false;
   if (token !== playerSequence || controller !== target) return false;
   const moved = target.seek(seconds);
@@ -412,12 +510,17 @@ $('video-form').addEventListener('submit', loadVideo);
 $('video-url').addEventListener('input', updateFallback);
 $('video-disconnect').addEventListener('click', () => detachPlayer('Video disconnected. Your current timings remain open to save or export.'));
 $('source-mode').addEventListener('change', chooserChanged);
+$('source-bani').addEventListener('change', updateControls);
 $('source-page').addEventListener('input', chooserChanged);
 $('source-find').addEventListener('click', () => { void browse(); });
 $('source-group').addEventListener('change', updateControls);
 $('source-open').addEventListener('click', () => {
   const mode = $('source-mode').value;
   if (mode === 'japji') proceed(() => { void openSource(() => source.japji()); }, 'open complete Japji Sahib');
+  else if (mode === 'bani' && baniIds.has($('source-bani').value)) {
+    const id = $('source-bani').value;
+    proceed(() => { void openSource(() => baniSource.reading(id)); }, 'open a different Bani reading');
+  }
   else if (optionBinding && options.some(option => option.id === $('source-group').value)) {
     const {collectionId, page} = optionBinding, unitId = $('source-group').value;
     proceed(() => { void openSource(() => source.group(collectionId, page, unitId)); }, 'change the source passage');
@@ -429,7 +532,7 @@ textPanel.addEventListener('keydown', event => {
   let index = lineIndices.get(selectedId) ?? 0;
   index = event.key === 'Home' ? 0 : event.key === 'End' ? reading.lines.length - 1
     : Math.max(0, Math.min(reading.lines.length - 1, index + (event.key === 'ArrowDown' ? 1 : -1)));
-  selectLine(reading.lines[index].id, {focus: true, reveal: true});
+  selectLine(reading.lines[index].id, {focus: true, reveal: true, revealTeach: false});
 });
 $('mark-selected').addEventListener('click', () => { if (selectedId) mark(selectedId); });
 $('mark-next').addEventListener('click', () => {
@@ -437,9 +540,23 @@ $('mark-next').addEventListener('click', () => {
   if (reading && index !== undefined && index + 1 < reading.lines.length) mark(reading.lines[index + 1].id, {select: true});
 });
 $('mark-pause').addEventListener('click', () => mark(null));
+$('teach-toggle').addEventListener('click', () => {
+  if (!reading) return;
+  teaching = !teaching; teachLineId = teaching ? selectedId : null; updateTeaching();
+  if (teaching) revealTeaching();
+});
+$('teach-next').addEventListener('click', () => {
+  const index = lineIndices.get(teachLineId);
+  if (!teaching || !reading || index === undefined) return;
+  const id = teachLineId;
+  if (!mark(id)) return;
+  selectLine(id, {reveal: true, updateTeach: false});
+  teachLineId = reading.lines[index + 1]?.id || null; updateTeaching(); revealTeaching();
+});
 $('timing-undo').addEventListener('click', () => {
   const previous = undo.pop(); if (!previous) return;
   replaceTiming(previous, {keepUndo: false});
+  if (teaching) { teachLineId = selectedId; updateTeaching(); revealTeaching(); }
   status('timing-status', dirty ? 'dirty' : 'loaded', 'Previous timing map restored.');
 });
 $('follow-timings').addEventListener('change', () => { if (activeId) revealRow(activeId, {follow: true}); });
@@ -448,9 +565,11 @@ $('timing-load').addEventListener('click', loadSaved);
 $('timing-export').addEventListener('click', exportTiming);
 $('timing-import').addEventListener('change', event => { void importTiming(event); });
 $('timing-replay').addEventListener('click', () => {
-  if (!timing?.cues.length) return;
-  if (seek(timing.cues[0].at / 1000))
-    status('timing-status', dirty ? 'dirty' : 'loaded', 'Moved to the first marker. Use the YouTube Play control to replay.');
+  const snapshot = controller?.snapshot(), cue = currentCue(snapshot);
+  if (!cue) { if (hasClock(snapshot)) media = snapshot; updateClock(); return; }
+  if (seek(cue.at / 1000))
+    status('timing-status', dirty ? 'dirty' : 'loaded', 'Moved to the start of the current marked line at ' + formatTime(cue.at / 1000)
+      + '. Playback keeps its current state; use the YouTube Play control if paused.');
 });
 $('timing-clear').addEventListener('click', () => {
   if (!timing || !reading || !video) return;

@@ -1,0 +1,55 @@
+{
+  "schema": "glp.review-target-preservation.v1",
+  "checkedAtUTC": "2026-11-28T02:23:02.917Z",
+  "stage": "runtime verified; final evidence packaging not yet pushed",
+  "targets": [
+    {
+      "pr": 75,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "68f47ffba4782271651716c71a97bc1825f96f48",
+      "branch": "feature/trusted-library-continuation-20261127",
+      "base": "main",
+      "baseSha": "a3476ac4b9be90dde350fb35dd13ce0b672c120d",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/75"
+    },
+    {
+      "pr": 76,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "cfded3e2186c1f6e325d135f1fa62da1f03d34bb",
+      "branch": "feature/gurbani-learning-next-20261127",
+      "base": "feature/trusted-library-continuation-20261127",
+      "baseSha": "68f47ffba4782271651716c71a97bc1825f96f48",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/76"
+    },
+    {
+      "pr": 77,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58",
+      "branch": "feature/youtube-read-along-20261127",
+      "base": "feature/gurbani-learning-next-20261127",
+      "baseSha": "cfded3e2186c1f6e325d135f1fa62da1f03d34bb",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/77"
+    },
+    {
+      "pr": 78,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+      "branch": "feature/listen-along-bani-menu-20261127",
+      "base": "feature/youtube-read-along-20261127",
+      "baseSha": "7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/pull/78"
+    },
+    {
+      "branch": "main",
+      "head": "a3476ac4b9be90dde350fb35dd13ce0b672c120d"
+    }
+  ]
+}

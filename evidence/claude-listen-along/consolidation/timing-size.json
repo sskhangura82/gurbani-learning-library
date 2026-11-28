@@ -1,0 +1,28 @@
+{
+  "schema": "glp.listen-along-timing-size.v1",
+  "runtime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+  "syntheticOnly": true,
+  "videoId": "fixture0001",
+  "intervalMs": 3000,
+  "description": "Every original row at a synthetic three-second interval plus an explicit end; capacity measurement, not recitation timing.",
+  "results": [
+    {
+      "selection": "japji",
+      "sourceRows": 385,
+      "cues": 386,
+      "bytes": 14693
+    },
+    {
+      "selection": "sukhmani",
+      "sourceRows": 2027,
+      "cues": 2028,
+      "bytes": 83176
+    },
+    {
+      "selection": "morning",
+      "sourceRows": 1567,
+      "cues": 1568,
+      "bytes": 59498
+    }
+  ]
+}

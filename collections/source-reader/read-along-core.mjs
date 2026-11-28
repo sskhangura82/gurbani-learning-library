@@ -59,9 +59,13 @@ export function parseYouTubeURL(input) {
 function checkedReading(reading) {
   const binding = reading?.binding;
   need(ownKeys(binding, ['collectionId', 'editionId', 'manifestSha256', 'selectionId', 'units']), 'TIMING_SOURCE');
-  need(['sggs', 'dasam'].includes(binding.collectionId) && typeof binding.editionId === 'string'
+  const dailyBani = binding.collectionId === 'daily-bani';
+  const selectionPattern = dailyBani
+    ? /^bani:(?:japji|jaap|savaiye|chaupai|anand|rehras|sohila|sukhmani|morning)$/
+    : /^(?:section|unit):[A-Za-z0-9_-]{1,80}$/;
+  need((dailyBani || ['sggs', 'dasam'].includes(binding.collectionId)) && typeof binding.editionId === 'string'
     && binding.editionId.length <= 120 && SHA.test(binding.manifestSha256)
-    && /^(?:section|unit):[A-Za-z0-9_-]{1,80}$/.test(binding.selectionId), 'TIMING_SOURCE');
+    && selectionPattern.test(binding.selectionId), 'TIMING_SOURCE');
   need(Array.isArray(binding.units) && binding.units.length > 0 && binding.units.length <= 100, 'TIMING_SOURCE');
   const units = new Set();
   for (const unit of binding.units) {
@@ -127,11 +131,21 @@ export function putCue(map, reading, atMs, lineId) {
   return validateTiming({...checked, cues}, reading, checked.videoId);
 }
 
+// Markers have integer-millisecond resolution. Use that same conversion when
+// reading the media clock so a seconds round-trip cannot move a marker earlier.
+// This is numeric rounding, not a tolerance for a provider's earlier keyframe.
+export function mediaTimeMs(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0 || seconds > MAX_TIME_MS / 1000) return null;
+  const time = Math.round(seconds * 1000);
+  return Number.isSafeInteger(time) && time >= 0 && time <= MAX_TIME_MS ? time : null;
+}
+
 // Only a bounded interval has an asserted active line. An unfinished last mark
 // never invents timing for the remainder of a recording.
 export function lineAt(map, mediaSeconds) {
-  if (!Number.isFinite(mediaSeconds) || mediaSeconds < 0 || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
-  const time = mediaSeconds * 1000, cues = map.cues;
+  const time = mediaTimeMs(mediaSeconds);
+  if (time === null || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
+  const cues = map.cues;
   let left = 0, right = cues.length;
   while (left < right) { const middle = (left + right) >>> 1; if (cues[middle].at <= time) left = middle + 1; else right = middle; }
   const index = left - 1;

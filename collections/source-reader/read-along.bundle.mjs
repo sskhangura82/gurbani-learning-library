@@ -439,24 +439,468 @@ function createReadAlongSource({ fetcher = globalThis.fetch, baseURL = import.me
   });
 }
 
-// collections/source-reader/read-along-core.mjs
-var MAX_TIMING_BYTES = 262144;
-var MAX_CUES = 5e3;
-var MAX_TIME_MS = 7 * 24 * 60 * 60 * 1e3;
-var SCHEMA = "glp.youtube-read-along.v1";
-var VIDEO = /^[A-Za-z0-9_-]{11}$/;
+// collections/source-reader/read-along-bani-lock.mjs
+var freeze3 = (value) => {
+  if (value && typeof value === "object") {
+    for (const child of Object.values(value)) freeze3(child);
+    Object.freeze(value);
+  }
+  return value;
+};
+var BANI_COLLECTION_ID = "daily-bani";
+var BANI_EDITION_ID = "glp-daily-bani-pinned-originals-20261127-v1";
+var BANI_ORDER_VERSION = "stored-source-display-order-v1";
+var BANI_SOURCES = freeze3({
+  "japji": {
+    "id": "japji",
+    "title": "Japji Sahib",
+    "titlePunjabi": "ਜਪੁਜੀ ਸਾਹਿਬ",
+    "sourceEdition": "0.7-japji-read-candidate",
+    "format": "japji",
+    "path": "../../js/japji-full-data.js",
+    "bytes": 83714,
+    "sha256": "7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808",
+    "lineCount": 385,
+    "unitCount": 42,
+    "readerPath": "../../full-japji.html"
+  },
+  "jaap": {
+    "id": "jaap",
+    "title": "Jaap Sahib",
+    "titlePunjabi": "ਜਾਪੁ ਸਾਹਿਬ",
+    "sourceEdition": "jaap-banidb-direct-20261125",
+    "format": "nitnem",
+    "path": "../../nitnem/data/jaap.json",
+    "bytes": 538376,
+    "sha256": "f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec",
+    "lineCount": 808,
+    "unitCount": 199,
+    "readerPath": "../../nitnem/index.html"
+  },
+  "savaiye": {
+    "id": "savaiye",
+    "title": "Tav-Prasad Savaiye",
+    "titlePunjabi": "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ",
+    "sourceEdition": "savaiye-discover-narrow-repairs-20261125",
+    "format": "nitnem",
+    "path": "../../nitnem/data/savaiye.json",
+    "bytes": 27078,
+    "sha256": "7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa",
+    "lineCount": 43,
+    "unitCount": 10,
+    "readerPath": "../../nitnem/index.html"
+  },
+  "chaupai": {
+    "id": "chaupai",
+    "title": "Benti Chaupai Sahib",
+    "titlePunjabi": "ਬੇਨਤੀ ਚੌਪਈ ਸਾਹਿਬ",
+    "sourceEdition": "chaupai-expanded29-narrow-repairs-20261125",
+    "format": "nitnem",
+    "path": "../../nitnem/data/chaupai.json",
+    "bytes": 70494,
+    "sha256": "289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046",
+    "lineCount": 121,
+    "unitCount": 29,
+    "readerPath": "../../nitnem/index.html"
+  },
+  "anand": {
+    "id": "anand",
+    "title": "Anand Sahib",
+    "titlePunjabi": "ਅਨੰਦੁ ਸਾਹਿਬ",
+    "sourceEdition": "anand-opengranth-pinned-20261125",
+    "format": "nitnem",
+    "path": "../../nitnem/data/anand.json",
+    "bytes": 127242,
+    "sha256": "124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a",
+    "lineCount": 210,
+    "unitCount": 40,
+    "readerPath": "../../nitnem/index.html"
+  },
+  "rehras": {
+    "id": "rehras",
+    "title": "Sodar Rehras Sahib",
+    "titlePunjabi": "ਸੋ ਦਰੁ ਰਹਿਰਾਸ ਸਾਹਿਬ",
+    "sourceEdition": "rehras-sgpc-selection-narrow-repairs-20261125",
+    "format": "nitnem",
+    "path": "../../nitnem/data/rehras.json",
+    "bytes": 149365,
+    "sha256": "81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b",
+    "lineCount": 159,
+    "unitCount": 44,
+    "readerPath": "../../nitnem/index.html"
+  },
+  "sohila": {
+    "id": "sohila",
+    "title": "Kirtan Sohila",
+    "titlePunjabi": "ਸੋਹਿਲਾ",
+    "sourceEdition": "sohila-srigranth-digitally-collated-20261125",
+    "format": "nitnem",
+    "path": "../../nitnem/data/sohila.json",
+    "bytes": 26637,
+    "sha256": "7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673",
+    "lineCount": 56,
+    "unitCount": 5,
+    "readerPath": "../../nitnem/index.html"
+  },
+  "sukhmani": {
+    "id": "sukhmani",
+    "title": "Sukhmani Sahib",
+    "titlePunjabi": "ਸੁਖਮਨੀ ਸਾਹਿਬ",
+    "sourceEdition": "GLP-SUKHMANI-SOURCE-1",
+    "format": "sukhmani",
+    "path": "../../js/sukhmani-data.js",
+    "bytes": 1241749,
+    "sha256": "0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6",
+    "lineCount": 2027,
+    "unitCount": 24,
+    "readerPath": "../../sukhmani.html"
+  }
+});
+var BANI_SELECTIONS = freeze3({
+  "japji": {
+    "title": "Japji Sahib",
+    "titlePunjabi": "ਜਪੁਜੀ ਸਾਹਿਬ",
+    "parts": [
+      "japji"
+    ],
+    "lineCount": 385,
+    "manifestSha256": "0cb9ffa9b4e787a287cfb08326f1663fb718d16bdb406eb4cd2d13bc4a27c6e5"
+  },
+  "jaap": {
+    "title": "Jaap Sahib",
+    "titlePunjabi": "ਜਾਪੁ ਸਾਹਿਬ",
+    "parts": [
+      "jaap"
+    ],
+    "lineCount": 808,
+    "manifestSha256": "12c5742dc062f1859914caccd97f90c151352424e6cf5d18cf26e145732ae671"
+  },
+  "savaiye": {
+    "title": "Tav-Prasad Savaiye",
+    "titlePunjabi": "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ",
+    "parts": [
+      "savaiye"
+    ],
+    "lineCount": 43,
+    "manifestSha256": "414cdbe09c4c691f8d0a5279c5a3a7aa489d843b634c92c7a246fc6d2c8f0b9f"
+  },
+  "chaupai": {
+    "title": "Benti Chaupai Sahib",
+    "titlePunjabi": "ਬੇਨਤੀ ਚੌਪਈ ਸਾਹਿਬ",
+    "parts": [
+      "chaupai"
+    ],
+    "lineCount": 121,
+    "manifestSha256": "03f25df63e1e67a89346c21f8119736dff03479ef9a65a749fc0183e2388d81f"
+  },
+  "anand": {
+    "title": "Anand Sahib",
+    "titlePunjabi": "ਅਨੰਦੁ ਸਾਹਿਬ",
+    "parts": [
+      "anand"
+    ],
+    "lineCount": 210,
+    "manifestSha256": "a951c8f897f2b86a71a70f4844899878499032da2cd65187b87e49a77e89f287"
+  },
+  "rehras": {
+    "title": "Sodar Rehras Sahib",
+    "titlePunjabi": "ਸੋ ਦਰੁ ਰਹਿਰਾਸ ਸਾਹਿਬ",
+    "parts": [
+      "rehras"
+    ],
+    "lineCount": 159,
+    "manifestSha256": "c3ac38e711ff9115af16a8d1ea53524ee17136602ce397d229c8de144a3f0254"
+  },
+  "sohila": {
+    "title": "Kirtan Sohila",
+    "titlePunjabi": "ਸੋਹਿਲਾ",
+    "parts": [
+      "sohila"
+    ],
+    "lineCount": 56,
+    "manifestSha256": "9a3ba57baaa353fa3408ba3e68b4f031261a90e748354bc69b024dfa14ebd204"
+  },
+  "sukhmani": {
+    "title": "Sukhmani Sahib",
+    "titlePunjabi": "ਸੁਖਮਨੀ ਸਾਹਿਬ",
+    "parts": [
+      "sukhmani"
+    ],
+    "lineCount": 2027,
+    "manifestSha256": "d4dc1072c401e20783adab6f703bfb6d2d58cb04a90164da9eaf2efa26071529"
+  },
+  "morning": {
+    "title": "Morning Bani selection",
+    "titlePunjabi": "ਸਵੇਰ ਦੀਆਂ ਬਾਣੀਆਂ",
+    "parts": [
+      "japji",
+      "jaap",
+      "savaiye",
+      "chaupai",
+      "anand"
+    ],
+    "lineCount": 1567,
+    "manifestSha256": "71109f361d9039db365987d5af016376a7ad2a33f7e69e540520ada3c477ede3"
+  }
+});
+
+// collections/source-reader/read-along-bani.mjs
 var SHA = /^[a-f0-9]{64}$/;
-var ID2 = /^[A-Za-z0-9_-]{1,80}$/;
 var fail = (code) => {
   throw new Error(code);
 };
 var need2 = (value, code) => {
   if (!value) fail(code);
 };
-var ownKeys = (value, expected) => value && typeof value === "object" && !Array.isArray(value) && Object.getPrototypeOf(value) === Object.prototype && JSON.stringify(Object.keys(value).sort()) === JSON.stringify([...expected].sort());
-function freeze3(value) {
+var freeze4 = (value) => {
   if (value && typeof value === "object") {
-    for (const child of Object.values(value)) freeze3(child);
+    for (const child of Object.values(value)) freeze4(child);
+    Object.freeze(value);
+  }
+  return value;
+};
+function requireCrypto() {
+  need2(typeof globalThis.crypto?.subtle?.digest === "function", "BANI_CRYPTO_UNAVAILABLE");
+}
+async function sha2562(bytes) {
+  requireCrypto();
+  const result = await globalThis.crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(result), (byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+function selectionIdentity(id, selection) {
+  return JSON.stringify({
+    schema: "glp.read-along-bani-selection.v1",
+    collectionId: BANI_COLLECTION_ID,
+    editionId: BANI_EDITION_ID,
+    selectionId: "bani:" + id,
+    orderVersion: BANI_ORDER_VERSION,
+    sources: selection.parts.map((part) => {
+      const source2 = BANI_SOURCES[part];
+      return {
+        id: source2.id,
+        format: source2.format,
+        path: source2.path,
+        bytes: source2.bytes,
+        sha256: source2.sha256,
+        lineCount: source2.lineCount,
+        unitCount: source2.unitCount,
+        sourceEdition: source2.sourceEdition
+      };
+    })
+  });
+}
+function parseSource(bytes, source2) {
+  let text3;
+  try {
+    text3 = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+  } catch {
+    fail("BANI_SOURCE_ENCODING");
+  }
+  if (source2.format !== "nitnem") {
+    const prefix = source2.format === "japji" ? "/* Source: Shabad OS via Open Granth; original Gurmukhi only. */\nwindow.GLP_FULL_JAPJI = " : "/* Original Gurmukhi: immutable source layer. Meanings are stored separately. */\nwindow.GLP_SUKHMANI = ";
+    need2(text3.startsWith(prefix) && text3.endsWith(";\n"), "BANI_SOURCE_WRAPPER");
+    text3 = text3.slice(prefix.length, -2);
+  }
+  let data;
+  try {
+    data = JSON.parse(text3);
+  } catch {
+    fail("BANI_SOURCE_JSON");
+  }
+  need2(data && typeof data === "object" && !Array.isArray(data), "BANI_SOURCE_SHAPE");
+  if (source2.format === "japji") need2(data.release === source2.sourceEdition, "BANI_SOURCE_EDITION");
+  else {
+    need2(data.compositionId === source2.id, "BANI_SOURCE_EDITION");
+    need2((source2.format === "sukhmani" ? data.schema : data.editionId) === source2.sourceEdition, "BANI_SOURCE_EDITION");
+  }
+  return data;
+}
+function originalRows(data, source2) {
+  const units2 = source2.format === "sukhmani" ? data.ashtpadis : data.units;
+  need2(Array.isArray(units2) && units2.length === source2.unitCount, "BANI_SOURCE_UNITS");
+  const rows2 = [], unitIds = /* @__PURE__ */ new Set();
+  function add(row, unit, kind) {
+    const text3 = source2.format === "sukhmani" ? row?.gurmukhi : row?.text;
+    need2(typeof text3 === "string" && text3.length > 0 && typeof row.sha256 === "string" && SHA.test(row.sha256), "BANI_SOURCE_ROW");
+    const reported = source2.format === "nitnem" ? row.location : row;
+    const page = Number.isSafeInteger(reported?.ang) && reported.ang > 0 ? reported.ang : null;
+    const end = page !== null && Number.isSafeInteger(reported?.angEnd) && reported.angEnd >= page ? reported.angEnd : page;
+    const unitTitle = unit.title.startsWith(source2.title) ? unit.title : source2.title + " · " + unit.title;
+    rows2.push({
+      id: source2.id + "-l" + String(rows2.length + 1).padStart(4, "0"),
+      text: text3,
+      page,
+      unitId: source2.id,
+      sourceUnitId: unit.id,
+      kind,
+      sha256: row.sha256,
+      label: unitTitle + (page === null ? "" : " · Ang " + page + (end === page ? "" : "–" + end))
+    });
+  }
+  for (const [index, unit] of units2.entries()) {
+    need2(unit && typeof unit.id === "string" && unit.id.length > 0 && !unitIds.has(unit.id) && typeof unit.title === "string" && Array.isArray(unit.lines), "BANI_SOURCE_UNIT");
+    unitIds.add(unit.id);
+    if (source2.format !== "nitnem") {
+      for (const line of unit.lines) add(line, unit, line.kind === "heading" ? "heading" : "line");
+      continue;
+    }
+    const headings = unit.metricalHeadings ?? [];
+    need2(Array.isArray(headings), "BANI_SOURCE_HEADINGS");
+    if (index === 0) {
+      need2(Array.isArray(data.preface), "BANI_SOURCE_PREFACE");
+      for (const heading of data.preface) add(heading, unit, "heading");
+    }
+    if (unit.sourceDisplayOrder !== void 0) {
+      need2(Array.isArray(unit.sourceDisplayOrder), "BANI_SOURCE_ORDER");
+      const byId = /* @__PURE__ */ new Map(), seen = /* @__PURE__ */ new Set();
+      for (const line of unit.lines) {
+        need2(line && typeof line.id === "string" && !byId.has(line.id), "BANI_SOURCE_ORDER");
+        byId.set(line.id, line);
+      }
+      let linePosition = 0, headingPosition = 0;
+      for (const item of unit.sourceDisplayOrder) {
+        let row, key, kind;
+        if (item?.kind === "line") {
+          need2(item.id === unit.lines[linePosition]?.id, "BANI_SOURCE_ORDER");
+          linePosition += 1;
+          row = byId.get(item.id);
+          key = "line:" + item.id;
+          kind = "line";
+        } else if (item?.kind === "metricalHeading" && Number.isSafeInteger(item.index) && item.index >= 0 && item.index < headings.length) {
+          need2(item.index === headingPosition, "BANI_SOURCE_ORDER");
+          headingPosition += 1;
+          row = headings[item.index];
+          key = "heading:" + item.index;
+          kind = "heading";
+        } else fail("BANI_SOURCE_ORDER");
+        need2(row && !seen.has(key), "BANI_SOURCE_ORDER");
+        seen.add(key);
+        add(row, unit, kind);
+      }
+      need2(seen.size === unit.lines.length + headings.length, "BANI_SOURCE_ORDER");
+    } else {
+      for (const heading of headings) add(heading, unit, "heading");
+      for (const line of unit.lines) add(line, unit, "line");
+    }
+  }
+  need2(rows2.length === source2.lineCount && rows2.length <= 2048, "BANI_SOURCE_LINE_COUNT");
+  return rows2;
+}
+function createBaniReadAlongSource({ fetcher = globalThis.fetch, baseURL = import.meta.url } = {}) {
+  const states = /* @__PURE__ */ new Map();
+  async function bounded(source2) {
+    need2(typeof fetcher === "function", "BANI_SOURCE_FETCH");
+    const controller2 = new AbortController(), timer = setTimeout(() => controller2.abort(), 2e4);
+    try {
+      const response = await fetcher(new URL(source2.path, baseURL), {
+        credentials: "omit",
+        cache: "no-store",
+        redirect: "error",
+        signal: controller2.signal
+      });
+      need2(response.ok && !response.redirected, "BANI_SOURCE_UNAVAILABLE");
+      const length = response.headers.get("content-length"), encoding = response.headers.get("content-encoding");
+      if ((!encoding || encoding === "identity") && length !== null) {
+        need2(/^\d+$/.test(length) && Number(length) === source2.bytes, "BANI_SOURCE_LENGTH");
+      }
+      const reader = response.body?.getReader();
+      need2(reader, "BANI_SOURCE_STREAM");
+      const bytes = new Uint8Array(source2.bytes);
+      let offset = 0;
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          need2(value instanceof Uint8Array && offset + value.length <= bytes.length, "BANI_SOURCE_LENGTH");
+          bytes.set(value, offset);
+          offset += value.length;
+        }
+      } catch (error) {
+        await reader.cancel().catch(() => {
+        });
+        throw error;
+      } finally {
+        reader.releaseLock();
+      }
+      need2(offset === bytes.length, "BANI_SOURCE_LENGTH");
+      return bytes;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  async function sourceRows(id) {
+    if (states.has(id)) return states.get(id);
+    const source2 = BANI_SOURCES[id];
+    const request = (async () => {
+      const bytes = await bounded(source2);
+      need2(await sha2562(bytes) === source2.sha256, "BANI_SOURCE_DIGEST");
+      const rows2 = originalRows(parseSource(bytes, source2), source2);
+      for (let offset = 0; offset < rows2.length; offset += 64) {
+        await Promise.all(rows2.slice(offset, offset + 64).map(async (row) => {
+          need2(await sha2562(new TextEncoder().encode(row.text)) === row.sha256, "BANI_SOURCE_ROW_DIGEST");
+        }));
+      }
+      return freeze4(rows2);
+    })();
+    states.set(id, request);
+    try {
+      return await request;
+    } catch (error) {
+      if (states.get(id) === request) states.delete(id);
+      throw error;
+    }
+  }
+  return Object.freeze({
+    async reading(id) {
+      requireCrypto();
+      need2(typeof id === "string" && Object.hasOwn(BANI_SELECTIONS, id), "BANI_SELECTION");
+      const selection = BANI_SELECTIONS[id];
+      need2(await sha2562(new TextEncoder().encode(selectionIdentity(id, selection))) === selection.manifestSha256, "BANI_SELECTION_DIGEST");
+      const parts = await Promise.all(selection.parts.map((part) => sourceRows(part)));
+      const lines = parts.flat();
+      need2(lines.length === selection.lineCount && lines.length <= 2048 && new Set(lines.map((line) => line.id)).size === lines.length && selection.parts.length <= 8, "BANI_SELECTION_LINES");
+      return freeze4({
+        title: selection.title,
+        titlePunjabi: selection.titlePunjabi,
+        locator: "Source unit / reported Ang",
+        binding: {
+          collectionId: BANI_COLLECTION_ID,
+          editionId: BANI_EDITION_ID,
+          manifestSha256: selection.manifestSha256,
+          selectionId: "bani:" + id,
+          units: selection.parts.map((part) => ({ id: part, sha256: BANI_SOURCES[part].sha256 }))
+        },
+        sourceEditions: selection.parts.map((part) => ({
+          id: part,
+          title: BANI_SOURCES[part].title,
+          editionId: BANI_SOURCES[part].sourceEdition,
+          sha256: BANI_SOURCES[part].sha256,
+          readerPath: BANI_SOURCES[part].readerPath
+        })),
+        lines
+      });
+    }
+  });
+}
+
+// collections/source-reader/read-along-core.mjs
+var MAX_TIMING_BYTES = 262144;
+var MAX_CUES = 5e3;
+var MAX_TIME_MS = 7 * 24 * 60 * 60 * 1e3;
+var SCHEMA = "glp.youtube-read-along.v1";
+var VIDEO = /^[A-Za-z0-9_-]{11}$/;
+var SHA2 = /^[a-f0-9]{64}$/;
+var ID2 = /^[A-Za-z0-9_-]{1,80}$/;
+var fail2 = (code) => {
+  throw new Error(code);
+};
+var need3 = (value, code) => {
+  if (!value) fail2(code);
+};
+var ownKeys = (value, expected) => value && typeof value === "object" && !Array.isArray(value) && Object.getPrototypeOf(value) === Object.prototype && JSON.stringify(Object.keys(value).sort()) === JSON.stringify([...expected].sort());
+function freeze5(value) {
+  if (value && typeof value === "object") {
+    for (const child of Object.values(value)) freeze5(child);
     Object.freeze(value);
   }
   return value;
@@ -467,14 +911,14 @@ function secondsFromLink(value) {
   if (/^\d+(?:\.\d{1,3})?$/.test(value)) seconds = Number(value);
   else {
     const match = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+(?:\.\d{1,3})?)s)?$/.exec(value);
-    need2(match && match[0], "YOUTUBE_LINK_TIME");
+    need3(match && match[0], "YOUTUBE_LINK_TIME");
     seconds = Number(match[1] || 0) * 3600 + Number(match[2] || 0) * 60 + Number(match[3] || 0);
   }
-  need2(Number.isFinite(seconds) && seconds >= 0 && seconds * 1e3 <= MAX_TIME_MS, "YOUTUBE_LINK_TIME");
+  need3(Number.isFinite(seconds) && seconds >= 0 && seconds * 1e3 <= MAX_TIME_MS, "YOUTUBE_LINK_TIME");
   return seconds;
 }
 function parseYouTubeURL(input) {
-  need2(typeof input === "string" && input.length <= 2048 && !/[\u0000-\u001f\u007f]/.test(input), "YOUTUBE_LINK");
+  need3(typeof input === "string" && input.length <= 2048 && !/[\u0000-\u001f\u007f]/.test(input), "YOUTUBE_LINK");
   let value = input.trim();
   if (VIDEO.test(value)) return Object.freeze({ videoId: value, startSeconds: 0 });
   if (/^(?:www\.|m\.|music\.)?youtube\.com\//i.test(value) || /^youtu\.be\//i.test(value)) value = "https://" + value;
@@ -482,9 +926,9 @@ function parseYouTubeURL(input) {
   try {
     url = new URL(value);
   } catch {
-    fail("YOUTUBE_LINK");
+    fail2("YOUTUBE_LINK");
   }
-  need2(url.protocol === "https:" && !url.username && !url.password && !url.port, "YOUTUBE_LINK");
+  need3(url.protocol === "https:" && !url.username && !url.password && !url.port, "YOUTUBE_LINK");
   const host = url.hostname.toLowerCase();
   let videoId;
   if (host === "youtu.be") {
@@ -492,32 +936,34 @@ function parseYouTubeURL(input) {
     videoId = match?.[1];
   } else if (["youtube.com", "www.youtube.com", "m.youtube.com", "music.youtube.com"].includes(host)) {
     if (url.pathname === "/watch") {
-      need2(url.searchParams.getAll("v").length === 1, "YOUTUBE_LINK");
+      need3(url.searchParams.getAll("v").length === 1, "YOUTUBE_LINK");
       videoId = url.searchParams.get("v");
     } else videoId = /^\/(?:embed|shorts|live)\/([A-Za-z0-9_-]{11})\/?$/.exec(url.pathname)?.[1];
   } else if (host === "www.youtube-nocookie.com" || host === "youtube-nocookie.com") {
     videoId = /^\/embed\/([A-Za-z0-9_-]{11})\/?$/.exec(url.pathname)?.[1];
   }
-  need2(typeof videoId === "string" && VIDEO.test(videoId), "YOUTUBE_LINK");
+  need3(typeof videoId === "string" && VIDEO.test(videoId), "YOUTUBE_LINK");
   const times = [...url.searchParams.getAll("t"), ...url.searchParams.getAll("start")];
   if (url.hash.startsWith("#t=")) times.push(url.hash.slice(3));
-  need2(times.length <= 1, "YOUTUBE_LINK_TIME");
+  need3(times.length <= 1, "YOUTUBE_LINK_TIME");
   return Object.freeze({ videoId, startSeconds: secondsFromLink(times[0] ?? null) });
 }
 function checkedReading(reading2) {
   const binding = reading2?.binding;
-  need2(ownKeys(binding, ["collectionId", "editionId", "manifestSha256", "selectionId", "units"]), "TIMING_SOURCE");
-  need2(["sggs", "dasam"].includes(binding.collectionId) && typeof binding.editionId === "string" && binding.editionId.length <= 120 && SHA.test(binding.manifestSha256) && /^(?:section|unit):[A-Za-z0-9_-]{1,80}$/.test(binding.selectionId), "TIMING_SOURCE");
-  need2(Array.isArray(binding.units) && binding.units.length > 0 && binding.units.length <= 100, "TIMING_SOURCE");
+  need3(ownKeys(binding, ["collectionId", "editionId", "manifestSha256", "selectionId", "units"]), "TIMING_SOURCE");
+  const dailyBani = binding.collectionId === "daily-bani";
+  const selectionPattern = dailyBani ? /^bani:(?:japji|jaap|savaiye|chaupai|anand|rehras|sohila|sukhmani|morning)$/ : /^(?:section|unit):[A-Za-z0-9_-]{1,80}$/;
+  need3((dailyBani || ["sggs", "dasam"].includes(binding.collectionId)) && typeof binding.editionId === "string" && binding.editionId.length <= 120 && SHA2.test(binding.manifestSha256) && selectionPattern.test(binding.selectionId), "TIMING_SOURCE");
+  need3(Array.isArray(binding.units) && binding.units.length > 0 && binding.units.length <= 100, "TIMING_SOURCE");
   const units2 = /* @__PURE__ */ new Set();
   for (const unit of binding.units) {
-    need2(ownKeys(unit, ["id", "sha256"]) && typeof unit.id === "string" && ID2.test(unit.id) && typeof unit.sha256 === "string" && SHA.test(unit.sha256) && !units2.has(unit.id), "TIMING_SOURCE");
+    need3(ownKeys(unit, ["id", "sha256"]) && typeof unit.id === "string" && ID2.test(unit.id) && typeof unit.sha256 === "string" && SHA2.test(unit.sha256) && !units2.has(unit.id), "TIMING_SOURCE");
     units2.add(unit.id);
   }
-  need2(Array.isArray(reading2.lines) && reading2.lines.length > 0 && reading2.lines.length <= 2048, "TIMING_SOURCE");
+  need3(Array.isArray(reading2.lines) && reading2.lines.length > 0 && reading2.lines.length <= 2048, "TIMING_SOURCE");
   const lines = /* @__PURE__ */ new Set();
   for (const line of reading2.lines) {
-    need2(line && typeof line.id === "string" && ID2.test(line.id) && units2.has(line.unitId) && !lines.has(line.id), "TIMING_SOURCE");
+    need3(line && typeof line.id === "string" && ID2.test(line.id) && units2.has(line.unitId) && !lines.has(line.id), "TIMING_SOURCE");
     lines.add(line.id);
   }
   return { binding, lines };
@@ -528,9 +974,9 @@ function sameBinding(actual, expected) {
   return Array.isArray(actual.units) && actual.units.length === expected.units.length && actual.units.every((unit, index) => ownKeys(unit, ["id", "sha256"]) && unit.id === expected.units[index].id && unit.sha256 === expected.units[index].sha256);
 }
 function emptyTiming(videoId, reading2) {
-  need2(VIDEO.test(videoId), "TIMING_VIDEO");
+  need3(VIDEO.test(videoId), "TIMING_VIDEO");
   const { binding } = checkedReading(reading2);
-  return freeze3({
+  return freeze5({
     schema: SCHEMA,
     timingStatus: "USER_MARKED",
     videoId,
@@ -540,24 +986,24 @@ function emptyTiming(videoId, reading2) {
 }
 function validateTiming(input, reading2, videoId) {
   const { binding, lines } = checkedReading(reading2);
-  need2(VIDEO.test(videoId), "TIMING_VIDEO");
+  need3(VIDEO.test(videoId), "TIMING_VIDEO");
   let value = input;
   if (typeof input === "string") {
-    need2(new TextEncoder().encode(input).length <= MAX_TIMING_BYTES, "TIMING_TOO_LARGE");
+    need3(new TextEncoder().encode(input).length <= MAX_TIMING_BYTES, "TIMING_TOO_LARGE");
     try {
       value = JSON.parse(input);
     } catch {
-      fail("TIMING_JSON");
+      fail2("TIMING_JSON");
     }
   }
-  need2(ownKeys(value, ["schema", "timingStatus", "videoId", "source", "cues"]) && value.schema === SCHEMA && value.timingStatus === "USER_MARKED", "TIMING_SCHEMA");
-  need2(value.videoId === videoId, "TIMING_VIDEO");
-  need2(sameBinding(value.source, binding), "TIMING_SOURCE_MISMATCH");
-  need2(Array.isArray(value.cues) && value.cues.length <= MAX_CUES, "TIMING_CUES");
+  need3(ownKeys(value, ["schema", "timingStatus", "videoId", "source", "cues"]) && value.schema === SCHEMA && value.timingStatus === "USER_MARKED", "TIMING_SCHEMA");
+  need3(value.videoId === videoId, "TIMING_VIDEO");
+  need3(sameBinding(value.source, binding), "TIMING_SOURCE_MISMATCH");
+  need3(Array.isArray(value.cues) && value.cues.length <= MAX_CUES, "TIMING_CUES");
   let previous = -1;
   for (const cue of value.cues) {
-    need2(ownKeys(cue, ["at", "lineId"]) && Number.isSafeInteger(cue.at) && cue.at >= 0 && cue.at <= MAX_TIME_MS && cue.at > previous, "TIMING_ORDER");
-    need2(cue.lineId === null || typeof cue.lineId === "string" && lines.has(cue.lineId), "TIMING_LINE");
+    need3(ownKeys(cue, ["at", "lineId"]) && Number.isSafeInteger(cue.at) && cue.at >= 0 && cue.at <= MAX_TIME_MS && cue.at > previous, "TIMING_ORDER");
+    need3(cue.lineId === null || typeof cue.lineId === "string" && lines.has(cue.lineId), "TIMING_LINE");
     previous = cue.at;
   }
   const result = {
@@ -567,20 +1013,26 @@ function validateTiming(input, reading2, videoId) {
     source: structuredClone(binding),
     cues: value.cues.map((cue) => ({ at: cue.at, lineId: cue.lineId }))
   };
-  need2(new TextEncoder().encode(JSON.stringify(result)).length <= MAX_TIMING_BYTES, "TIMING_TOO_LARGE");
-  return freeze3(result);
+  need3(new TextEncoder().encode(JSON.stringify(result)).length <= MAX_TIMING_BYTES, "TIMING_TOO_LARGE");
+  return freeze5(result);
 }
 function putCue(map, reading2, atMs, lineId) {
   const checked = validateTiming(map, reading2, map?.videoId);
-  need2(Number.isSafeInteger(atMs) && atMs >= 0 && atMs <= MAX_TIME_MS, "TIMING_TIME");
+  need3(Number.isSafeInteger(atMs) && atMs >= 0 && atMs <= MAX_TIME_MS, "TIMING_TIME");
   const cues = checked.cues.filter((cue) => cue.at !== atMs).map((cue) => ({ ...cue }));
   cues.push({ at: atMs, lineId });
   cues.sort((a, b) => a.at - b.at);
   return validateTiming({ ...checked, cues }, reading2, checked.videoId);
 }
+function mediaTimeMs(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0 || seconds > MAX_TIME_MS / 1e3) return null;
+  const time = Math.round(seconds * 1e3);
+  return Number.isSafeInteger(time) && time >= 0 && time <= MAX_TIME_MS ? time : null;
+}
 function lineAt(map, mediaSeconds) {
-  if (!Number.isFinite(mediaSeconds) || mediaSeconds < 0 || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
-  const time = mediaSeconds * 1e3, cues = map.cues;
+  const time = mediaTimeMs(mediaSeconds);
+  if (time === null || !Array.isArray(map?.cues) || map.cues.length < 2) return null;
+  const cues = map.cues;
   let left = 0, right = cues.length;
   while (left < right) {
     const middle = left + right >>> 1;
@@ -591,13 +1043,13 @@ function lineAt(map, mediaSeconds) {
   return index >= 0 && index < cues.length - 1 && time < cues[index + 1].at ? cues[index].lineId : null;
 }
 function timingKey(videoId, reading2) {
-  need2(VIDEO.test(videoId), "TIMING_VIDEO");
+  need3(VIDEO.test(videoId), "TIMING_VIDEO");
   const { binding } = checkedReading(reading2);
   return `glp001.youtube-timing.v1:${videoId}:${binding.collectionId}:${binding.manifestSha256}:${binding.selectionId}`;
 }
 function serializeTiming(map) {
   const value = JSON.stringify(map);
-  need2(typeof value === "string" && new TextEncoder().encode(value).length <= MAX_TIMING_BYTES, "TIMING_TOO_LARGE");
+  need3(typeof value === "string" && new TextEncoder().encode(value).length <= MAX_TIMING_BYTES, "TIMING_TOO_LARGE");
   return value;
 }
 function formatTime(seconds) {
@@ -805,10 +1257,10 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
       try {
         onUpdate(current);
       } catch {
-        fail2(problem("YOUTUBE_UPDATE_FAILED", "The reading display could not receive the player update. Reconnect to continue."));
+        fail3(problem("YOUTUBE_UPDATE_FAILED", "The reading display could not receive the player update. Reconnect to continue."));
       }
     };
-    const fail2 = (error, { pausePlayer = true, actualId = videoId } = {}) => {
+    const fail3 = (error, { pausePlayer = true, actualId = videoId } = {}) => {
       if (!isCurrent() || failure) return;
       failure = error;
       ready = false;
@@ -833,7 +1285,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
         const playerUrl = player.getVideoUrl();
         const actualId = videoFromPlayerUrl(playerUrl);
         if (actualId && actualId !== videoId) {
-          fail2(problem("YOUTUBE_RECORDING_CHANGED", "The YouTube player changed recordings. Select that recording explicitly to align its text."), { pausePlayer: false, actualId });
+          fail3(problem("YOUTUBE_RECORDING_CHANGED", "The YouTube player changed recordings. Select that recording explicitly to align its text."), { pausePlayer: false, actualId });
           return current;
         }
         if (!state || ![timeSeconds, durationSeconds, rate].every(Number.isFinite) || timeSeconds < 0 || durationSeconds < 0 || rate <= 0 || !actualId && (state === "playing" || timeSeconds > 0)) {
@@ -841,7 +1293,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
         }
         current = Object.freeze({ ready: true, videoId, timeSeconds, durationSeconds, state, rate });
       } catch (error) {
-        fail2(typeof error?.code === "string" && error.code.startsWith("YOUTUBE_") ? error : problem("YOUTUBE_CLOCK_UNAVAILABLE", "The recording clock could not be read. Following has stopped."));
+        fail3(typeof error?.code === "string" && error.code.startsWith("YOUTUBE_") ? error : problem("YOUTUBE_CLOCK_UNAVAILABLE", "The recording clock could not be read. Following has stopped."));
       } finally {
         reading2 = false;
       }
@@ -870,7 +1322,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
           player.pauseVideo();
           refresh();
         } catch {
-          fail2(problem("YOUTUBE_PAUSE_FAILED", "The player could not pause and has been closed. Reconnect to continue."));
+          fail3(problem("YOUTUBE_PAUSE_FAILED", "The player could not pause and has been closed. Reconnect to continue."));
           controller2.destroy();
           return false;
         }
@@ -906,7 +1358,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
       seek(seconds) {
         if (!isCurrent() || !ready || failure) return false;
         if (!Number.isFinite(seconds) || seconds < 0 || current.durationSeconds > 0 && seconds > current.durationSeconds) {
-          fail2(problem("YOUTUBE_SEEK_INVALID", "This timing marker is outside the recording."));
+          fail3(problem("YOUTUBE_SEEK_INVALID", "This timing marker is outside the recording."));
           return false;
         }
         try {
@@ -915,7 +1367,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
           schedule();
           return !failure;
         } catch {
-          fail2(problem("YOUTUBE_SEEK_FAILED", "The player could not seek to that timing marker."));
+          fail3(problem("YOUTUBE_SEEK_FAILED", "The player could not seek to that timing marker."));
           return false;
         }
       },
@@ -988,7 +1440,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
           150: "The recording owner does not allow embedded playback.",
           153: "YouTube could not identify this embedding page. Open the recording on YouTube."
         };
-        fail2(problem(`YOUTUBE_PLAYER_${code}`, messages[code] || "YouTube reported a playback error. Open the recording on YouTube."));
+        fail3(problem(`YOUTUBE_PLAYER_${code}`, messages[code] || "YouTube reported a playback error. Open the recording on YouTube."));
         return;
       }
       if (type === "blocked") {
@@ -997,6 +1449,11 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
         return;
       }
       if (type === "ready") {
+        if (["getPlayerState", "getCurrentTime", "getDuration", "getPlaybackRate", "getVideoUrl", "seekTo", "pauseVideo", "destroy"].some((method) => typeof player[method] !== "function")) {
+          fail3(problem("YOUTUBE_PLAYER_INVALID", "The YouTube player did not expose the required controls."), { pausePlayer: false });
+          controller2.destroy();
+          return;
+        }
         ready = true;
         clearTimeout(readyTimeout);
         if (document.hidden || pauseOnReady) pause();
@@ -1004,7 +1461,7 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
       refresh();
       schedule();
     };
-    readyTimeout = setTimeout(() => fail2(problem("YOUTUBE_PLAYER_TIMEOUT", "The YouTube player did not become ready. Try connecting again.")), PLAYER_TIMEOUT_MS);
+    readyTimeout = setTimeout(() => fail3(problem("YOUTUBE_PLAYER_TIMEOUT", "The YouTube player did not become ready. Try connecting again.")), PLAYER_TIMEOUT_MS);
     if (!isCurrent()) throw cancelled();
     constructing = true;
     try {
@@ -1018,13 +1475,13 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
     } finally {
       constructing = false;
     }
-    if (!player || ["getPlayerState", "getCurrentTime", "getDuration", "getPlaybackRate", "getVideoUrl", "seekTo", "pauseVideo", "destroy"].some((method) => typeof player[method] !== "function")) {
+    if (!player || typeof player.destroy !== "function") {
       throw problem("YOUTUBE_PLAYER_INVALID", "The YouTube player did not expose the required controls.");
     }
     for (const [type, event] of pendingEvents) handleEvent(type, event);
     pendingEvents = [];
-    if (!isCurrent()) throw cancelled();
     if (failure) throw failure;
+    if (!isCurrent()) throw cancelled();
     if (typeof IntersectionObserver === "function") {
       visibilityObserver = new IntersectionObserver((entries) => {
         if (!isCurrent()) {
@@ -1048,10 +1505,13 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
 var $ = (id) => document.getElementById(id);
 var textPanel = $("read-along-text"), mount = $("youtube-player");
 var source = createReadAlongSource();
+var baniSource = createBaniReadAlongSource();
+var baniIds = /* @__PURE__ */ new Set(["japji", "jaap", "savaiye", "chaupai", "anand", "rehras", "sohila", "sukhmani", "morning"]);
 var reading = null, timing = null, video = null, controller = null, media = null;
 var sourceSequence = 0, playerSequence = 0, contextSequence = 0, browseSequence = 0, importSequence = 0, mapRevision = 0;
 var selectedId = null, activeId = null, baseline = null, dirty = false, connecting = false, browsing = false;
-var pendingStart = null, undo = [], options = [], optionBinding = null, pendingAction = null, dialogReturn = null;
+var pendingStart = null, startNotice = null, undo = [], options = [], optionBinding = null, pendingAction = null, dialogReturn = null;
+var teaching = false, teachLineId = null;
 var rows = /* @__PURE__ */ new Map(), lineIndices = /* @__PURE__ */ new Map();
 function node(tag, className, text3) {
   const element = document.createElement(tag);
@@ -1067,7 +1527,47 @@ function status(id, state, message) {
   text2(id, message);
 }
 function hasClock(snapshot = media) {
-  return Boolean(controller && video && reading && snapshot?.ready && snapshot.videoId === video.videoId && snapshot.state !== "error" && Number.isFinite(snapshot.timeSeconds) && snapshot.timeSeconds >= 0);
+  return Boolean(controller && video && reading && snapshot?.ready && snapshot.videoId === video.videoId && snapshot.state !== "error" && mediaTimeMs(snapshot.timeSeconds) !== null);
+}
+function currentCue(snapshot = media) {
+  if (!hasClock(snapshot) || !timing) return null;
+  const at = mediaTimeMs(snapshot.timeSeconds);
+  let left = 0, right = timing.cues.length;
+  while (left < right) {
+    const middle = left + right >>> 1;
+    if (timing.cues[middle].at <= at) left = middle + 1;
+    else right = middle;
+  }
+  const index = left - 1, cue = timing.cues[index];
+  return index >= 0 && index < timing.cues.length - 1 && cue.lineId !== null ? cue : null;
+}
+function updateTeaching() {
+  $("teach-toggle").disabled = !reading;
+  $("teach-toggle").setAttribute("aria-pressed", String(teaching));
+  text2("teach-toggle", teaching ? "Stop teaching" : "Teach line by line");
+  $("teach-panel").hidden = !teaching;
+  $("timing-editor").dataset.teaching = String(teaching);
+  $("selected-line").hidden = teaching;
+  $("mark-selected").hidden = teaching;
+  $("mark-next").hidden = teaching;
+  $("teach-help").hidden = !teaching;
+  const index = lineIndices.get(teachLineId), line = index === void 0 ? null : reading?.lines[index];
+  const preview = $("teach-line"), previewId = line?.id || "";
+  if (preview.dataset.lineId !== previewId) {
+    preview.dataset.lineId = previewId;
+    preview.scrollTop = 0;
+  }
+  text2("teach-line", line?.text || "");
+  preview.hidden = !line;
+  text2("teach-line-label", line ? "Next: " + (line.kind === "heading" ? "source heading " : "line ") + (index + 1) + " of " + reading.lines.length : teaching && reading ? "You have reached the last line. Mark a text pause or end, or select a line to repeat." : "Choose a line to begin.");
+  $("teach-next").disabled = !teaching || !line || !timing || !hasClock();
+}
+function revealTeaching() {
+  if (!teaching || !$("timing-editor").open || $("teach-panel").hidden) return;
+  const panel = $("teach-panel").getBoundingClientRect();
+  const stacked = window.matchMedia("(max-width: 760px)").matches;
+  const top = stacked ? document.querySelector(".video-card").getBoundingClientRect().height + 8 : 16;
+  window.scrollTo({ top: Math.max(0, window.scrollY + panel.top - top), behavior: "instant" });
 }
 function updateFallback() {
   let identity;
@@ -1094,11 +1594,12 @@ function updateControls() {
   $("timing-import").disabled = !timing;
   $("timing-delete").disabled = !timing;
   $("timing-clear").disabled = !timing?.cues.length;
-  $("timing-replay").disabled = !clock || !timing?.cues.length;
+  $("timing-replay").disabled = !currentCue();
   for (const button of $("timing-cues").querySelectorAll("button")) button.disabled = !clock;
   const mode = $("source-mode").value;
-  $("source-find").disabled = mode === "japji" || browsing;
-  $("source-open").disabled = mode !== "japji" && (!optionBinding || !options.some((option) => option.id === $("source-group").value));
+  $("source-find").disabled = !["sggs", "dasam"].includes(mode) || browsing;
+  $("source-open").disabled = mode === "bani" ? !baniIds.has($("source-bani").value) : mode !== "japji" && (!optionBinding || !options.some((option) => option.id === $("source-group").value));
+  updateTeaching();
 }
 function rowState(id) {
   const row = rows.get(id);
@@ -1110,7 +1611,11 @@ function rowState(id) {
   row.setAttribute("aria-pressed", String(selected));
   if (active) row.setAttribute("aria-current", "true");
   else row.removeAttribute("aria-current");
-  row.querySelector(".read-along-line-state").textContent = [selected ? "Selected" : "", active ? "Timed line" : ""].filter(Boolean).join(" · ");
+  row.querySelector(".read-along-line-state").textContent = [
+    row.dataset.kind === "heading" ? "Source heading" : "",
+    selected ? "Selected" : "",
+    active ? "Timed line" : ""
+  ].filter(Boolean).join(" · ");
 }
 function revealRow(id, { follow = false } = {}) {
   const row = rows.get(id);
@@ -1120,17 +1625,19 @@ function revealRow(id, { follow = false } = {}) {
   const top = textPanel.scrollTop + box.top - panelBox.top - 12;
   textPanel.scrollTo({ top: Math.max(0, top), behavior: "auto" });
 }
-function selectLine(id, { focus = false, reveal = false } = {}) {
+function selectLine(id, { focus = false, reveal = false, updateTeach = true, revealTeach = true } = {}) {
   if (!lineIndices.has(id)) return;
   const previous = selectedId;
   selectedId = id;
   rowState(previous);
   rowState(id);
+  if (teaching && updateTeach) teachLineId = id;
   const index = lineIndices.get(id), line = reading.lines[index];
-  text2("selected-line", "Selected: line " + (index + 1) + " of " + reading.lines.length + " · " + line.label);
+  text2("selected-line", "Selected: " + (line.kind === "heading" ? "source heading " : "line ") + (index + 1) + " of " + reading.lines.length + " · " + line.label);
   if (reveal) revealRow(id);
   if (focus) rows.get(id).focus({ preventScroll: true });
   updateControls();
+  if (teaching && updateTeach && revealTeach) revealTeaching();
 }
 function setActive(id) {
   if (id && !rows.has(id)) id = null;
@@ -1147,7 +1654,7 @@ function alignmentMessage() {
   if (!timing.cues.length) return "No timing markers yet. Select a line and mark its start.";
   if (!hasClock()) return "Timings are open. Connect the recording to follow its clock.";
   if (activeId) return "Timed line " + (lineIndices.get(activeId) + 1) + " · " + reading.lines[lineIndices.get(activeId)].label;
-  const at = media.timeSeconds * 1e3;
+  const at = mediaTimeMs(media.timeSeconds);
   let left = 0, right = timing.cues.length;
   while (left < right) {
     const middle = left + right >>> 1;
@@ -1175,35 +1682,61 @@ function updateClock() {
 function acceptSnapshot(snapshot, token, expectedReading, expectedVideo) {
   if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo || snapshot?.videoId !== expectedVideo) return;
   media = snapshot;
-  if (controller && snapshot.ready && pendingStart !== null) {
+  const target = controller;
+  const current = () => token === playerSequence && controller === target && reading === expectedReading && video?.videoId === expectedVideo;
+  if (target && snapshot.ready && pendingStart !== null) {
     const start = pendingStart;
-    pendingStart = null;
-    if (start > 0) {
-      controller.pause();
-      controller.seek(start);
-      const current = controller.snapshot();
-      if (token !== playerSequence || reading !== expectedReading || current?.videoId !== expectedVideo) return;
-      media = current;
+    if (start <= 0) pendingStart = null;
+    else if (Number.isFinite(snapshot.durationSeconds) && snapshot.durationSeconds > 0) {
+      pendingStart = null;
+      if (start > snapshot.durationSeconds) {
+        startNotice = "Recording connected. The link’s start time is beyond this recording’s length, so that offset was ignored. Use YouTube’s controls to choose a point.";
+      } else {
+        startNotice = null;
+        const paused = target.pause();
+        if (!current()) return;
+        if (paused === false) {
+          playerError({ code: "YOUTUBE_PAUSE_FAILED", message: "The player could not pause for the link’s start time. Reconnect to continue." }, token, expectedReading, expectedVideo);
+          return;
+        }
+        const moved = target.seek(start);
+        if (!current()) return;
+        if (moved === false) {
+          playerError({ code: "YOUTUBE_SEEK_FAILED", message: "The player could not move to the link’s start time. Reconnect to continue." }, token, expectedReading, expectedVideo);
+          return;
+        }
+        const next = target.snapshot();
+        if (!current() || next?.videoId !== expectedVideo) return;
+        media = next;
+      }
+    } else {
+      startNotice = "Recording connected. Waiting for its length before applying the link’s start time.";
     }
   }
-  if (media.ready && media.state !== "error" && $("video-status").dataset.state !== "ready")
-    status("video-status", "ready", "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.");
+  if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo) return;
+  if (media?.ready && media.state !== "error")
+    status("video-status", "ready", startNotice || "Recording connected. Use YouTube’s controls for play, pause, seeking and speed.");
   updateClock();
 }
 function playerError(error, token, expectedReading, expectedVideo) {
   if (token !== playerSequence || reading !== expectedReading || video?.videoId !== expectedVideo || error?.code === "YOUTUBE_CANCELLED") return;
   const message = error?.code === "YOUTUBE_NOT_CONFIGURED" ? "YouTube playback setup is not connected yet. You can still read here or open the video on YouTube." : error?.code === "YOUTUBE_CONFIGURATION" ? "YouTube playback setup is unavailable. You can still read here or open the video on YouTube." : error?.message || "The recording could not be opened here. You can still read or watch it on YouTube.";
-  status("video-status", "unavailable", message);
-  if (error?.code !== "YOUTUBE_PLAYBACK_BLOCKED") {
+  if (error?.code === "YOUTUBE_RECORDING_CHANGED" && controller) {
     media = null;
+    pendingStart = null;
+    startNotice = null;
     updateClock();
+  } else if (error?.code !== "YOUTUBE_PLAYBACK_BLOCKED") {
+    detachPlayer();
   }
+  status("video-status", "unavailable", message);
   updateFallback();
 }
 function detachPlayer(message) {
   ++playerSequence;
   connecting = false;
   pendingStart = null;
+  startNotice = null;
   const previous = controller;
   controller = null;
   media = null;
@@ -1228,6 +1761,8 @@ function resetTiming() {
   baseline = null;
   dirty = false;
   undo = [];
+  teaching = false;
+  teachLineId = null;
   ++mapRevision;
   ++importSequence;
   renderTiming();
@@ -1242,6 +1777,7 @@ function renderSource() {
     const row = node("button", "read-along-line");
     row.type = "button";
     row.dataset.lineId = line.id;
+    row.dataset.kind = line.kind || "line";
     row.dataset.selected = "false";
     row.dataset.active = "false";
     row.tabIndex = -1;
@@ -1250,7 +1786,7 @@ function renderSource() {
     row.append(
       original,
       node("span", "read-along-locator", line.label + " · Line " + (index + 1)),
-      node("span", "read-along-line-state")
+      node("span", "read-along-line-state", line.kind === "heading" ? "Source heading" : "")
     );
     row.addEventListener("click", () => {
       if (reading === expected) selectLine(line.id);
@@ -1264,7 +1800,18 @@ function renderSource() {
   textPanel.setAttribute("aria-busy", "false");
   text2("source-title", expected.title);
   status("source-status", "ready", expected.lines.length + " original rows checked");
-  text2("source-provenance", "Named edition: " + expected.binding.editionId + ". This selection contains " + expected.lines.length + " original rows in " + expected.binding.units.length + " complete source " + (expected.binding.units.length === 1 ? "group." : "groups."));
+  const isBani = expected.binding.collectionId === "daily-bani";
+  text2("source-provenance", (isBani ? "Named Bani reader edition: " : "Named edition: ") + expected.binding.editionId + ". This selection contains " + expected.lines.length + " original rows in " + expected.binding.units.length + (isBani ? " pinned source " + (expected.binding.units.length === 1 ? "file." : "files.") : " complete source " + (expected.binding.units.length === 1 ? "group." : "groups.")));
+  text2("source-edition-note", isBani ? "These rows come from the library’s existing named Bani readers, including their source spelling, headings and order. Byte and row-fingerprint checks preserve that digital edition; human collation and teaching review remain pending. Timing notes belong to this exact edition and one recording." : "Text follows the named Shabad OS digital edition, including its spelling, order and complete source groups. A provider’s grouping does not establish every traditional composition boundary. Timing notes belong to this exact edition and one recording.");
+  $("source-bibliography").hidden = isBani;
+  $("source-editions").replaceChildren();
+  $("source-editions").hidden = !isBani;
+  if (isBani) for (const edition of expected.sourceEditions || []) {
+    const item = node("li"), link = node("a", "", edition.title + " · original reader");
+    link.href = new URL(edition.readerPath, import.meta.url).href;
+    item.append(link, node("span", "", " — " + edition.editionId));
+    $("source-editions").append(item);
+  }
   document.documentElement.dataset.readAlongState = "ready";
   selectLine(expected.lines[0].id);
   updateAlignment();
@@ -1284,6 +1831,11 @@ async function openSource(load) {
   textPanel.setAttribute("aria-busy", "true");
   text2("source-title", "Opening original text");
   text2("selected-line", "Select a source line after it has been checked.");
+  text2("source-provenance", "Original source files are checked before they appear.");
+  text2("source-edition-note", "Each reading preserves its named digital edition. Timing notes belong to that exact edition and one recording.");
+  $("source-editions").replaceChildren();
+  $("source-editions").hidden = true;
+  $("source-bibliography").hidden = true;
   status("source-status", "loading", "Checking the complete original text…");
   document.documentElement.dataset.readAlongState = "loading";
   updateControls();
@@ -1309,13 +1861,14 @@ function chooserChanged() {
   browsing = false;
   options = [];
   optionBinding = null;
-  const mode = $("source-mode").value, isJapji = mode === "japji";
-  $("source-page-field").hidden = isJapji;
-  $("source-group-field").hidden = isJapji;
+  const mode = $("source-mode").value, isJapji = mode === "japji", isBani = mode === "bani";
+  $("source-page-field").hidden = isJapji || isBani;
+  $("source-group-field").hidden = isJapji || isBani;
+  $("source-bani-field").hidden = !isBani;
   text2("source-page-label", mode === "dasam" ? "Source page · 1–1428" : "Ang number · 1–1430");
   $("source-group").replaceChildren(node("option", "", "Find passages to choose one"));
   $("source-group").disabled = true;
-  text2("source-options-status", isJapji ? "Japji includes all 385 original rows in this named digital edition." : "Find a page, then choose the passage beginning you want. The complete provider group will open.");
+  text2("source-options-status", isJapji ? "Japji includes all 385 original rows in this named digital edition." : isBani ? "Choose one of the library’s named Bani readers, or the Morning Bani selection: Japji, Jaap, Tav-Prasad Savaiye, Benti Chaupai and Anand. These editions keep separate timing maps from the full-source reader." : "Find a page, then choose the passage beginning you want. The complete provider group will open.");
   updateControls();
 }
 async function browse() {
@@ -1395,6 +1948,8 @@ async function connectVideo(identity) {
     baseline = serializeTiming(timing);
     dirty = false;
     undo = [];
+    teaching = false;
+    teachLineId = null;
     status("timing-status", "idle", "New recording and text selected. Mark timings or explicitly load a saved map.");
   } else video = identity;
   const token = playerSequence;
@@ -1428,15 +1983,11 @@ async function connectVideo(identity) {
     updateControls();
   } catch (error) {
     if (token !== playerSequence || reading !== expectedReading || video?.videoId !== identity.videoId) return;
-    connecting = false;
-    controller = null;
-    media = null;
-    mount.replaceChildren();
-    mount.hidden = true;
-    $("player-placeholder").hidden = false;
+    if (error?.code === "YOUTUBE_CANCELLED") {
+      detachPlayer("The video connection stopped. Choose Load video to try again.");
+      return;
+    }
     playerError(error, token, expectedReading, identity.videoId);
-    updateClock();
-    updateControls();
   }
 }
 function loadVideo(event) {
@@ -1489,11 +2040,12 @@ function renderTiming() {
   $("timing-cues").start = first + 1;
   for (let index = first; index < timing.cues.length; index++) {
     const cue = timing.cues[index], item = node("li");
-    const label = cue.lineId === null ? "Text pause or end" : "Line " + (lineIndices.get(cue.lineId) + 1) + " · " + reading.lines[lineIndices.get(cue.lineId)].label;
+    const lineIndex = lineIndices.get(cue.lineId), line = reading.lines[lineIndex];
+    const label = cue.lineId === null ? "Text pause or end" : (line.kind === "heading" ? "Source heading · row " : "Line ") + (lineIndex + 1) + " · " + line.label;
     const go = node("button", "quiet", formatTime(cue.at / 1e3) + " · " + label);
     go.type = "button";
     go.dataset.cueAt = String(cue.at);
-    go.addEventListener("click", () => seek(cue.at / 1e3));
+    go.addEventListener("click", () => seek(cue.at / 1e3, { showPlayer: true }));
     item.append(go);
     if (index === timing.cues.length - 1 && cue.lineId !== null) item.append(node("small", "", "This final line marker needs a following marker to define its interval."));
     $("timing-cues").append(item);
@@ -1505,29 +2057,36 @@ function currentClock() {
   const snapshot = controller.snapshot();
   if (!hasClock(snapshot)) return null;
   media = snapshot;
-  return Math.round(snapshot.timeSeconds * 1e3);
+  return mediaTimeMs(snapshot.timeSeconds);
 }
 function mark(lineId, { select = false } = {}) {
-  if (!timing || !reading) return;
+  if (!timing || !reading) return false;
   const at = currentClock();
   if (at === null) {
     status("timing-status", "refused", "The recording clock is not available. Use the player controls or reconnect before marking.");
     updateClock();
-    return;
+    return false;
   }
   try {
     const next = putCue(timing, reading, at, lineId);
     replaceTiming(next);
     if (select && lineId) selectLine(lineId, { reveal: true });
     status("timing-status", dirty ? "dirty" : "loaded", (lineId === null ? "Text pause/end" : "Selected line") + " marked at " + formatTime(at / 1e3) + ". Choose Save on device to keep your changes.");
+    return true;
   } catch {
     status("timing-status", "refused", "This marker could not be added. Your current map is unchanged; check the recording time or export your map.");
+    return false;
   }
 }
-function seek(seconds) {
+function seek(seconds, { showPlayer = false } = {}) {
   const target = controller, snapshot = target?.snapshot();
   if (!hasClock(snapshot)) return false;
   const token = playerSequence, expectedReading = reading, expectedVideo = video.videoId;
+  if (showPlayer) {
+    const workspace = mount.closest(".workspace");
+    window.scrollTo({ top: Math.max(0, window.scrollY + workspace.getBoundingClientRect().top - 16), behavior: "instant" });
+    mount.querySelector("iframe")?.focus({ preventScroll: true });
+  }
   if (!["playing", "buffering"].includes(snapshot.state) && target.pause() === false) return false;
   if (token !== playerSequence || controller !== target) return false;
   const moved = target.seek(seconds);
@@ -1629,6 +2188,7 @@ $("video-form").addEventListener("submit", loadVideo);
 $("video-url").addEventListener("input", updateFallback);
 $("video-disconnect").addEventListener("click", () => detachPlayer("Video disconnected. Your current timings remain open to save or export."));
 $("source-mode").addEventListener("change", chooserChanged);
+$("source-bani").addEventListener("change", updateControls);
 $("source-page").addEventListener("input", chooserChanged);
 $("source-find").addEventListener("click", () => {
   void browse();
@@ -1639,7 +2199,12 @@ $("source-open").addEventListener("click", () => {
   if (mode === "japji") proceed(() => {
     void openSource(() => source.japji());
   }, "open complete Japji Sahib");
-  else if (optionBinding && options.some((option) => option.id === $("source-group").value)) {
+  else if (mode === "bani" && baniIds.has($("source-bani").value)) {
+    const id = $("source-bani").value;
+    proceed(() => {
+      void openSource(() => baniSource.reading(id));
+    }, "open a different Bani reading");
+  } else if (optionBinding && options.some((option) => option.id === $("source-group").value)) {
     const { collectionId, page } = optionBinding, unitId = $("source-group").value;
     proceed(() => {
       void openSource(() => source.group(collectionId, page, unitId));
@@ -1651,7 +2216,7 @@ textPanel.addEventListener("keydown", (event) => {
   event.preventDefault();
   let index = lineIndices.get(selectedId) ?? 0;
   index = event.key === "Home" ? 0 : event.key === "End" ? reading.lines.length - 1 : Math.max(0, Math.min(reading.lines.length - 1, index + (event.key === "ArrowDown" ? 1 : -1)));
-  selectLine(reading.lines[index].id, { focus: true, reveal: true });
+  selectLine(reading.lines[index].id, { focus: true, reveal: true, revealTeach: false });
 });
 $("mark-selected").addEventListener("click", () => {
   if (selectedId) mark(selectedId);
@@ -1661,10 +2226,32 @@ $("mark-next").addEventListener("click", () => {
   if (reading && index !== void 0 && index + 1 < reading.lines.length) mark(reading.lines[index + 1].id, { select: true });
 });
 $("mark-pause").addEventListener("click", () => mark(null));
+$("teach-toggle").addEventListener("click", () => {
+  if (!reading) return;
+  teaching = !teaching;
+  teachLineId = teaching ? selectedId : null;
+  updateTeaching();
+  if (teaching) revealTeaching();
+});
+$("teach-next").addEventListener("click", () => {
+  const index = lineIndices.get(teachLineId);
+  if (!teaching || !reading || index === void 0) return;
+  const id = teachLineId;
+  if (!mark(id)) return;
+  selectLine(id, { reveal: true, updateTeach: false });
+  teachLineId = reading.lines[index + 1]?.id || null;
+  updateTeaching();
+  revealTeaching();
+});
 $("timing-undo").addEventListener("click", () => {
   const previous = undo.pop();
   if (!previous) return;
   replaceTiming(previous, { keepUndo: false });
+  if (teaching) {
+    teachLineId = selectedId;
+    updateTeaching();
+    revealTeaching();
+  }
   status("timing-status", dirty ? "dirty" : "loaded", "Previous timing map restored.");
 });
 $("follow-timings").addEventListener("change", () => {
@@ -1677,9 +2264,14 @@ $("timing-import").addEventListener("change", (event) => {
   void importTiming(event);
 });
 $("timing-replay").addEventListener("click", () => {
-  if (!timing?.cues.length) return;
-  if (seek(timing.cues[0].at / 1e3))
-    status("timing-status", dirty ? "dirty" : "loaded", "Moved to the first marker. Use the YouTube Play control to replay.");
+  const snapshot = controller?.snapshot(), cue = currentCue(snapshot);
+  if (!cue) {
+    if (hasClock(snapshot)) media = snapshot;
+    updateClock();
+    return;
+  }
+  if (seek(cue.at / 1e3))
+    status("timing-status", dirty ? "dirty" : "loaded", "Moved to the start of the current marked line at " + formatTime(cue.at / 1e3) + ". Playback keeps its current state; use the YouTube Play control if paused.");
 });
 $("timing-clear").addEventListener("click", () => {
   if (!timing || !reading || !video) return;

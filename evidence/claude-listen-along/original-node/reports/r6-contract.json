@@ -1,0 +1,34 @@
+{
+  "environment": "Node portable contracts",
+  "checks": [
+    {
+      "name": "Library home is distinct and complete Japji reader remains intact",
+      "status": "PASS"
+    },
+    {
+      "name": "Frozen scripture, bilingual drafts, Study drafts and sharing module remain byte-identical to R5",
+      "status": "PASS"
+    },
+    {
+      "name": "Pace accepts 150, 155, 160 and preserves legacy 140",
+      "status": "PASS"
+    },
+    {
+      "name": "Persistent-control preference defaults safely, validates boolean and survives export/import",
+      "status": "PASS"
+    },
+    {
+      "name": "A stale tab cannot overwrite the persistent-control preference or saved notes",
+      "status": "PASS"
+    },
+    {
+      "name": "One complete guide traversal visits all 385 original lines once in order without an early stop",
+      "status": "PASS"
+    },
+    {
+      "name": "Forced reduced-motion fixture exactly matches production declarations",
+      "status": "PASS"
+    }
+  ],
+  "total": 7
+}

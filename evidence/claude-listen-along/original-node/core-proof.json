@@ -1,0 +1,102 @@
+{
+  "fingerprintMismatchAccepted": {
+    "videoId": "AbCdEfGhIjK",
+    "bani": "japji",
+    "style": "paath",
+    "marks": [
+      {
+        "t": 10,
+        "i": 0
+      },
+      {
+        "t": 20,
+        "i": 1
+      }
+    ],
+    "missing": 0,
+    "editionMatches": true
+  },
+  "wrongCountReturnedRatherThanRefused": false,
+  "foreignLineDroppedRatherThanRefused": {
+    "videoId": "AbCdEfGhIjK",
+    "bani": "japji",
+    "style": "paath",
+    "marks": [
+      {
+        "t": 10,
+        "i": 0
+      },
+      {
+        "t": 20,
+        "i": 1
+      }
+    ],
+    "missing": 1,
+    "editionMatches": true
+  },
+  "negativeTimeReturnedThenSilentlyDropped": {
+    "read": 3,
+    "afterSetMarks": 2
+  },
+  "whitespace": [
+    {
+      "bani": "japji",
+      "rows": 385,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "sukhmani",
+      "rows": 2027,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "jaap",
+      "rows": 808,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "savaiye",
+      "rows": 43,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "chaupai",
+      "rows": 121,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "anand",
+      "rows": 210,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "rehras",
+      "rows": 159,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    },
+    {
+      "bani": "sohila",
+      "rows": 56,
+      "changedWhitespace": 0,
+      "firstAffected": []
+    }
+  ],
+  "completeMapBytes": {
+    "compact": 16379,
+    "prettyActualUI": 22583,
+    "shareEncodedChars": 2617
+  },
+  "truncatedShareAccepted": [
+    {
+      "t": 10,
+      "i": 0
+    }
+  ]
+}

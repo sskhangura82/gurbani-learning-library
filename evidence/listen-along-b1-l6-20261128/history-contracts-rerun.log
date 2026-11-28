@@ -1,0 +1,14 @@
+✔ Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input (700.634373ms)
+✔ The current public Knowledge amendment has exactly its declared before/after bytes (15.17167ms)
+✔ Continuation navigation has exact before/after bytes independently of loader pins (73.770965ms)
+✔ Named-edition reader navigation has exact bytes and preserves earlier review scopes (26.624209ms)
+✔ Existing application bytes stay frozen through the exact public Knowledge amendment and prior Daily, Farid, Haumai and Explore scopes (816.577354ms)
+✔ Reader loader contract and reviewed original module closures remain exact (340.696398ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2143.000465

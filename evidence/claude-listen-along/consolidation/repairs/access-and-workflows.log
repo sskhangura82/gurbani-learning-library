@@ -1,0 +1,23 @@
+Private library contract: 24 checks passed.
+✔ tests/private-library-contract.mjs (4249.928738ms)
+✔ all current quality workflows cover any candidate base (20.043983ms)
+✔ path-only trigger remains allowed without pretending every path is covered (1.188078ms)
+✔ refuses base filtering via branches (0.479162ms)
+✔ refuses base filtering via branches-ignore (0.200592ms)
+✔ refuses base filtering via "branches" (0.145099ms)
+✔ refuses base filtering via 'branches-ignore' (0.245159ms)
+✔ refuses unsupported or restricted trigger: "    branches:\n      - main\n" (0.214032ms)
+✔ refuses unsupported or restricted trigger: "   branches: [main]\n" (0.151758ms)
+✔ refuses unsupported or restricted trigger: "    <<: *trigger\n" (0.17966ms)
+✔ refuses unsupported or restricted trigger: "    types: [opened]\n" (0.259791ms)
+✔ refuses unsupported or restricted trigger: "    paths:\n" (0.158578ms)
+✔ refuses unsupported or restricted trigger: "    paths:\n      - x\n    paths:\n      - y\n" (0.147893ms)
+✔ inline, missing, quoted and duplicate pull_request triggers fail closed (0.337568ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4260.464339

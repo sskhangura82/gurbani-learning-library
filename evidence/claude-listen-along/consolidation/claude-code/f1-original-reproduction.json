@@ -1,0 +1,10 @@
+{
+  "schema": "glp.listen-along-claude-f1-reproduction.v1",
+  "runtime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+  "markerAtMs": 1005,
+  "seekToSeconds": 1.005,
+  "roundTrippedMs": 1004.9999999999999,
+  "expectedLine": "replayed",
+  "observedLine": "previous",
+  "status": "DEFECT_REPRODUCED"
+}

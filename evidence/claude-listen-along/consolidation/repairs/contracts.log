@@ -1,0 +1,134 @@
+✔ The two admitted lessons cover the actual complete opening groups at all six language/depth choices (8.959282ms)
+✔ A verified byte receipt refuses copied or cross-instance source objects (107.338502ms)
+✔ An independently repinned manifest cannot transfer the lesson to changed source metadata (70.108849ms)
+✔ Neighbouring and Dasam source groups never inherit opening explanations (65.162635ms)
+✔ Lesson binding refuses legacy identity, stale digests, changed revisions and incomplete or reordered source rows (1.773202ms)
+✔ Review status cannot be promoted by an editable lesson field (1.050273ms)
+✔ Every section and level requires complete ordered ownership and resolvable paragraph references (7.181394ms)
+✔ Editorial citation and psychology routes cannot become executable, private or unrelated destinations (3.752044ms)
+✔ Learning continuation declares exact modified and new application bytes from the stable Claude review target (153.406441ms)
+✔ Every other existing application file, including scripture, private pack and saved-learning code, remains byte-identical (2538.55621ms)
+✔ Shared Dasam shell changes only its exact bundle integrity attribute (5.900831ms)
+✔ the directory names ten distinct existing readers and does not duplicate Japji (3.564332ms)
+✔ every reader route exists and Saved entry preserves its exact reading route (2.22343ms)
+✔ each source binding matches exact file bytes and declared identity (104.297805ms)
+✔ source package metadata and existing manifests agree with the directory bindings (0.975339ms)
+✔ Nitnem preserves its mixed source families instead of relabelling everything SGGS (0.370098ms)
+✔ directory records contain navigation metadata, not verse copies or authority claims (0.804182ms)
+✔ all catalog arrays, records and nested aliases/bindings are immutable (0.35827ms)
+✔ whole-token directory search rejects substring traps and unrelated metadata (8.189653ms)
+✔ explicit Punjabi and transliterated title aliases resolve without searching descriptions (3.961801ms)
+✔ empty search shows readers, punctuation-only and invalid input do not (0.315605ms)
+✔ only one explicit valid view is accepted; ambiguous and malformed view state defaults to Today (0.333823ms)
+✔ Explore only links existing destinations and preserves literal-topic status (0.784012ms)
+✔ Simran and physiology remain distinct navigation categories (0.336057ms)
+✔ planned modules are unavailable metadata rather than functioning links or substitutes (0.307633ms)
+✔ lookup helpers only return the declared catalogue entry (0.196937ms)
+✔ Complete Knowledge unit has exact provenance; no partial chain or overwritten reader input (1170.60212ms)
+✔ The current public Knowledge amendment has exactly its declared before/after bytes (20.56898ms)
+✔ Continuation navigation has exact before/after bytes independently of loader pins (91.996331ms)
+✔ Named-edition reader navigation has exact bytes and preserves earlier review scopes (34.545478ms)
+✔ Existing application bytes stay frozen through the exact public Knowledge amendment and prior Daily, Farid, Haumai and Explore scopes (1090.444576ms)
+✔ Reader loader contract and reviewed original module closures remain exact (395.319447ms)
+✔ All 25 application pages carry exactly 62 independently inventoried owned-script pins (273.371312ms)
+✔ Generated modules reproduce exactly and contain no executable import or export-from edges (1437.154895ms)
+✔ Ordinary check mode writes neither bundles nor HTML (717.790938ms)
+✔ Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts (33.463467ms)
+✔ Bundling rejects unexpected dependencies and unresolved dynamic executable loading (19.05574ms)
+✔ Extra HTML and stale source cannot silently pass default checks (1034.302988ms)
+✔ A pinned bundle cannot retain secondary imports or recover an inline execution path (51.235303ms)
+✔ Private toolchain lock is portable, complete, and preserves every registry pin (4.955469ms)
+✔ The observed logical-/tmp prefix lock corruption is refused before install (3.74853ms)
+✔ Missing platform packages and changed package integrity cannot pass the lock gate (3.431461ms)
+✔ Committed private pack has only a valid encrypted envelope (1782.58129ms)
+✔ Offline regeneration refuses private entries inherited from any earlier inventory (245.768372ms)
+{
+  "passed": 16,
+  "verifiedCollections": [
+    {
+      "collectionId": "sggs",
+      "units": 5549,
+      "lines": 60555,
+      "pages": 1430,
+      "chunks": 75
+    },
+    {
+      "collectionId": "dasam",
+      "units": 5470,
+      "lines": 67758,
+      "pages": 1428,
+      "chunks": 80
+    }
+  ],
+  "tests": [
+    "Manifest and chunk require separately trusted exact byte lengths and digests",
+    "Duplicate JSON keys, escaped duplicate aliases, BOM and invalid UTF-8 refuse even with a renewed fixture pin",
+    "Closed source schema refuses teaching fields, translations, wrong selected asset and verified-commit claims",
+    "Manifest coverage rejects dropped or duplicated units, false counts, page gaps, reordered groups and unsafe paths",
+    "Independent whole-unit hash refuses text, punctuation, metadata or order changes after a chunk repin",
+    "Renewed pins cannot admit clipped groups, duplicate lines, false page sets, missing null locators or extra fields",
+    "Cross-chunk line collisions refuse on verification without granting a partial verified unit",
+    "Page lookup returns complete ordered owning descriptors and verified text remains byte-exact and immutable",
+    "Stable routes round-trip while malformed, foreign, duplicated and unowned destinations refuse explicitly",
+    "A route line must belong to both its verified unit and the selected reported page",
+    "Progress is separately source-bound and resume requires a verified actual line and page",
+    "Malformed, newer or foreign saved records refuse unchanged, without reading or writing any storage",
+    "Every sggs chunk and whole unit verifies, with exact total coverage and globally unique lines",
+    "Every dasam chunk and whole unit verifies, with exact total coverage and globally unique lines",
+    "Real SGGS page boundaries retain all source-declared lines, stable line links and the reported Raagmala attribution",
+    "Real Dasam preserves the largest complete unit, null printed lines, and reported-page regressions without inventing corrections"
+  ]
+}
+✔ tests/sikh-source-reader-core.mjs (1810.942828ms)
+✔ All eight named Bani selections retain all 3,809 original rows, exact text, order and isolated source identities (252.527729ms)
+✔ Morning Nitnem contains exactly the five complete constituent editions in their established order (71.793979ms)
+✔ Jaap 62 retains the mid-chhand heading after its first line, including in Morning Nitnem (94.81891ms)
+✔ Changing original text and its matching per-line hash cannot defeat the independently pinned raw source file (87.612119ms)
+✔ Missing crypto refuses a new reading before requesting or displaying original source (0.618492ms)
+✔ An unsupported selection, failed fetch or truncated constituent cannot return partial scripture (5.556183ms)
+✔ Timing maps stay bound to each named selection, its exact edition and constituent digest order (256.505714ms)
+✔ Only the new pinned player module and generated companion admit one exact official SDK loader (672.990579ms)
+✔ Altered, indirect, missing, reassigned and multiple provider loaders refuse (50.115368ms)
+✔ Companion provider policy is isolated; no autoplay, arbitrary frame source or weakened old HTML (3.619825ms)
+✔ Module import and an empty default key make zero provider requests or frames (11.758882ms)
+✔ Preflight asks only for required official status/live fields and keeps response memory-only (3.515538ms)
+✔ Preflight rejects ambiguous status, wrong IDs, private/non-embeddable and live recordings before loading a player (7.360853ms)
+✔ Bad identifiers and invalid configuration fail before a fetch; provider error bodies never leak a key (3.068514ms)
+✔ Metadata timeout settles even when the transport ignores abort (2.498265ms)
+✔ Successful creation orders preflight, official loader and privacy-enhanced iframe; synchronous ready is safe (6.226313ms)
+✔ Following uses actual media time through pause, rate, buffering and native paused seeks (9.330331ms)
+✔ Hidden pages and out-of-view players pause; showing the page never starts playback (4.071085ms)
+✔ Pending async ready is paused if the page hides before it fires, and errors from an unrelated target are ignored (5.087197ms)
+✔ A failed pause closes its iframe even when provider cleanup methods throw (5.70674ms)
+✔ Disconnect during preflight cancels without a script, frame or stale error callback (5.4609ms)
+✔ Disconnect while the SDK is pending cannot create a late hidden player (4.641365ms)
+✔ A same-mount replacement cancels the old preflight and old destruction cannot remove the new player (4.237576ms)
+✔ Late events from a destroyed player cannot change updates or clear a new mount (3.064218ms)
+✔ Synchronous consumer replacement during onReady cannot resurrect the old player (3.196708ms)
+✔ SDK error and timeout report explicit failure and support a later deliberate retry (6.417582ms)
+✔ Constructor error, synchronous player error and readiness timeout all settle visibly (11.307961ms)
+✔ Playback errors clear ready/clock, while autoplay blocking allows a later native Play recovery (5.124133ms)
+✔ Native related-video navigation stops old-text association without hiding native player UI (5.856376ms)
+✔ Non-finite clocks and invalid seek targets cannot produce apparently aligned time (6.42966ms)
+✔ Loader has one explicit external script capability and no persistence/media extraction calls (23.392734ms)
+{"syntheticFullJapjiTimingBytes":15512,"cues":386,"mediaStored":false}
+✔ Only recognized single-recording YouTube links become safe video IDs and start times (2.769344ms)
+✔ Full Japji is the independently pinned complete SGGS section, without importing legacy reader state (2.235809ms)
+✔ Timing uses bounded media intervals, handles repeated lines and explicit gaps, and never estimates the tail (6.455088ms)
+✔ Media-clock conversion retains exact integer-millisecond marks and rejects invalid or out-of-range clocks (0.25875ms)
+✔ Fractional-second cue boundaries round-trip without moving to an earlier line or filling a true gap (0.678522ms)
+✔ Wrong videos, editions, digests, group ordering, invented review status and foreign lines refuse (5.836416ms)
+✔ Timing storage belongs to the exact video and source; complete Japji annotations stay small (1.663317ms)
+✔ Page/group selection preserves complete cross-page units and refuses unowned locations (64.231271ms)
+✔ Corrupt or truncated source bytes refuse before any reading can be aligned (82.35102ms)
+✔ Read-along changes exactly its declared new application files, navigation and offline shell (1883.122225ms)
+✔ Older reader pages keep their exact no-frame/script policies and no provider dependency (27.331407ms)
+✔ The public shell contains only owned companion assets; no provider, video or source corpus is precached (1.43371ms)
+ℹ tests 88
+ℹ suites 0
+ℹ pass 88
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3806.817346

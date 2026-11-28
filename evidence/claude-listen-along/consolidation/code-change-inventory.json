@@ -1,0 +1,160 @@
+{
+  "schema": "glp.listen-along-code-change-inventory.v1",
+  "base": "7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58",
+  "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
+  "scope": "All application, workflow, test and build-tool changes plus the two gate-consumed scope receipts; documentation, screenshots and result logs are excluded. This inventory does not hash itself.",
+  "changes": [
+    {
+      "path": ".github/workflows/trusted-library-qa.yml",
+      "category": "github",
+      "kind": "modified",
+      "beforeSha256": "c2b906f345ef0928438fe84bdfaaaa12f0b913f448d896d2687c4edb5a6f43d1",
+      "afterSha256": "78d577cb98452b20b55ab75705120c53d210bff8c116b346616f2a153d38d5fa",
+      "bytes": 2931
+    },
+    {
+      "path": "collections/source-reader/read-along-bani-lock.mjs",
+      "category": "application",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "5a355a4bf7c85ee49ae89f51787dd040618188748afae455aa9201830f7bdd9c",
+      "bytes": 6818
+    },
+    {
+      "path": "collections/source-reader/read-along-bani.mjs",
+      "category": "application",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "e4cb3e39842d4266b96049ad8d6e8922f78f50017f5b71763c134e70539f6d6b",
+      "bytes": 9833
+    },
+    {
+      "path": "collections/source-reader/read-along-core.mjs",
+      "category": "application",
+      "kind": "modified",
+      "beforeSha256": "056b2c0b38c6b6d79515ffd5485f934436e5e80e0382a7112a79cf649edae5c0",
+      "afterSha256": "c2416a61de85d9c7ff4b386d4fc02b8448e5df6eaceab8b3a2729ca16aa814f6",
+      "bytes": 9070
+    },
+    {
+      "path": "collections/source-reader/read-along.bundle.mjs",
+      "category": "application",
+      "kind": "modified",
+      "beforeSha256": "105514055eae31c6853dd5defc284fad04cfddd121cc7d3f924864382e15bf7f",
+      "afterSha256": "75112d5c87fd353e3734e012c27bd2cc9bcbb5320f077d154c767c8afeba9308",
+      "bytes": 104555
+    },
+    {
+      "path": "collections/source-reader/read-along.mjs",
+      "category": "application",
+      "kind": "modified",
+      "beforeSha256": "dcf0c46c16d1f40722343c368d0faf402fc8f97fe5401a8e029135da5b940aca",
+      "afterSha256": "7a9ac308d81ecee15aee212c20b52111b684aca1ac2ba8edd10a8b3520011051",
+      "bytes": 37666
+    },
+    {
+      "path": "evidence/claude-listen-along/consolidation/change-scope.json",
+      "category": "gating-receipt",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "30ff85acb69ebc88bb3018a2ec03f6e9d591629044752f98b1d78c573d073c77",
+      "bytes": 2173
+    },
+    {
+      "path": "evidence/youtube-read-along/change-scope.json",
+      "category": "gating-receipt",
+      "kind": "modified",
+      "beforeSha256": "6f93293ed8c95c1ec55d88436befd260d13c5785f0604a36ac4d949a08a02e30",
+      "afterSha256": "fdf4b555e2346c122fbdd1a1505021bf02789450569f1bec40697b58890e2f94",
+      "bytes": 2174
+    },
+    {
+      "path": "listen/index.html",
+      "category": "application",
+      "kind": "modified",
+      "beforeSha256": "55a716ef12a91639389c14ae50753739fb37e2fd30ce0360072cf650faa743ce",
+      "afterSha256": "2cc55a1641774e2e73790ad043f21e51de8fafb7d32f0c5c00cc2369afd7b7b8",
+      "bytes": 11629
+    },
+    {
+      "path": "listen/read-along.css",
+      "category": "application",
+      "kind": "modified",
+      "beforeSha256": "1dfe034c68b2fe428238a37ea324d0674194a6c68f9638187de464f64ec8b379",
+      "afterSha256": "e1cf07b27a0f3518f4cd9633e7f26112f2f5b72f7545d35b2f0c4508dcb75573",
+      "bytes": 9540
+    },
+    {
+      "path": "sw.js",
+      "category": "application",
+      "kind": "modified",
+      "beforeSha256": "cbcdb5cf11fc99b9686973601ad52b69351b9a3becb1f506174de709c803b045",
+      "afterSha256": "7a48f40e9486f7b811f749b9322d1c0170dd30dacac309661be2994f07365584",
+      "bytes": 13531
+    },
+    {
+      "path": "tests/helpers/youtube-read-along-scope.mjs",
+      "category": "tests",
+      "kind": "modified",
+      "beforeSha256": "5182a02983a82509729c99409c404f86a3e402edf19c80501db3828f22b07aeb",
+      "afterSha256": "b6e4345b15b4acc67dbcf5236e11bd1765c02e19c5d04f1b334b8601035c1adf",
+      "bytes": 2336
+    },
+    {
+      "path": "tests/library-script-integrity.mjs",
+      "category": "tests",
+      "kind": "modified",
+      "beforeSha256": "d3f783e4c0244380f2a43f49f668e4ae5c0f887850df0f8e5078148077958772",
+      "afterSha256": "d2166bf09f62fd379eb7fbdfdca3daa22bf5064ba308a01779f87e2290fc88a0",
+      "bytes": 12834
+    },
+    {
+      "path": "tests/youtube-bani-read-along.mjs",
+      "category": "tests",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "fd226647504a98f2dd9358fce9066b12ba5bd0426a290e7a9dc655b3c7cfacce",
+      "bytes": 12686
+    },
+    {
+      "path": "tests/youtube-read-along-browser.mjs",
+      "category": "tests",
+      "kind": "modified",
+      "beforeSha256": "41017d7bcf58690f70c378989078dba9f1dce10d2289e8e1771ca2bd10c436e5",
+      "afterSha256": "6e3034777e74a3f4aef6854f2174bf3b927d29ee0455f5ca377a169695216d1b",
+      "bytes": 88383
+    },
+    {
+      "path": "tests/youtube-read-along-core.mjs",
+      "category": "tests",
+      "kind": "modified",
+      "beforeSha256": "b615a219096c04c1c50593f41c0863d087e1bae9fea41bbe60e76f08664c0da7",
+      "afterSha256": "1ed779b7467d3f6627407fdb363143fa644ac9b0602d0b8d1fb25ca65ce830d4",
+      "bytes": 10814
+    },
+    {
+      "path": "tools/build-offline.mjs",
+      "category": "tools",
+      "kind": "modified",
+      "beforeSha256": "ea8825dfa6048b1628601d4e406901860a437ef7bfa83df967dcf2402e6d0a2e",
+      "afterSha256": "f2d9c0850f17d3739b030d337aa0c60963be2e0d3b4954c288284d9949280200",
+      "bytes": 4804
+    },
+    {
+      "path": "tools/script-integrity/app-graphs.json",
+      "category": "tools",
+      "kind": "modified",
+      "beforeSha256": "b79bb43d2dc6668fa5f9c2ef8d888407adfde35e5fc5058d8ca2806ebd52513d",
+      "afterSha256": "bfd42267745511bbdc9d8e22a2f2d6a1fda61e531081471af807fdf6c8a0c579",
+      "bytes": 17214
+    },
+    {
+      "path": "tools/script-integrity/policy.mjs",
+      "category": "tools",
+      "kind": "modified",
+      "beforeSha256": "addc4e4bfd025e5abfb9654597753378a57cfecd2f2e7a020fdc5124ad74305a",
+      "afterSha256": "dd93fc8f87a7b1f0ac4983186a0e9770e7d8a2295cf70aa72a8f4fdc7dbd0506",
+      "bytes": 14472
+    }
+  ]
+}
