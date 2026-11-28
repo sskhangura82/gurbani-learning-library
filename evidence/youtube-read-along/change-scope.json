@@ -11,7 +11,7 @@
     {
       "path": "sw.js",
       "beforeSha256": "aee61773e961cb06b8cfa1efdae555863cd0c4f766c852db13222b1cfc36daeb",
-      "afterSha256": "7a48f40e9486f7b811f749b9322d1c0170dd30dacac309661be2994f07365584"
+      "afterSha256": "8439075cbf5cb27bbb4b3e0ec10c965eee5ba3d54f194459b09be255688351b9"
     }
   ],
   "added": [
@@ -33,7 +33,7 @@
     },
     {
       "path": "collections/source-reader/read-along-player.mjs",
-      "sha256": "ddc878748aa3aa2288251512affe7a244497da6ff3c1c39aa5f4a613b64721a1"
+      "sha256": "1c3aa3a0184ef0471565f60230f1900dea771ae1f237c4ea1199084bb59da797"
     },
     {
       "path": "collections/source-reader/read-along-source.mjs",
@@ -41,15 +41,15 @@
     },
     {
       "path": "collections/source-reader/read-along.bundle.mjs",
-      "sha256": "75112d5c87fd353e3734e012c27bd2cc9bcbb5320f077d154c767c8afeba9308"
+      "sha256": "b6452f134127b08c3608b02a76cb1a5c6cd7a88727c75ab6048b8a9ab87e153b"
     },
     {
       "path": "collections/source-reader/read-along.mjs",
-      "sha256": "7a9ac308d81ecee15aee212c20b52111b684aca1ac2ba8edd10a8b3520011051"
+      "sha256": "17c97daedd305f7ea2363998c78e5fdc6fa91b01e6a7edd588b3f3a975ffee42"
     },
     {
       "path": "listen/index.html",
-      "sha256": "2cc55a1641774e2e73790ad043f21e51de8fafb7d32f0c5c00cc2369afd7b7b8"
+      "sha256": "02e905c48e5649effede1fa590f2af0681531df99282f3b0015646b7b11de0ef"
     },
     {
       "path": "listen/read-along.css",

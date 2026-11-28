@@ -5,6 +5,7 @@ import fs from 'node:fs/promises';
 
 const VIDEO = 'abcdefghijk';
 const OTHER = 'zyxwvutsrqp';
+const READY_CONTROLS = ['getPlayerState', 'getCurrentTime', 'getDuration', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo'];
 let importNumber = 0;
 const moduleUrl = new URL('../collections/source-reader/read-along-player.mjs', import.meta.url);
 const flush = async () => { for (let i = 0; i < 12; i++) await Promise.resolve(); };
@@ -32,7 +33,8 @@ function environment(options = {}) {
   let timerId = 0;
   const document = new Events();
   const env = {document, nodes: [], requests: [], players: [], scriptMode: options.scriptMode || 'ready',
-    readyMode: options.readyMode || 'sync', fetcher: options.fetcher || (async url => response(metadata(new URL(url).searchParams.get('id'))))};
+    readyMode: options.readyMode || 'async', missingReadyControls: options.missingReadyControls || [],
+    fetcher: options.fetcher || (async url => response(metadata(new URL(url).searchParams.get('id'))))};
   function mutate() { queueMicrotask(() => { for (const observer of [...mutations]) observer.callback([]); }); }
   class Element extends Events {
     constructor(tag) {
@@ -70,27 +72,39 @@ function environment(options = {}) {
     this.frame = frame; this.events = events; this.id = new URL(frame.src).pathname.split('/').at(-1);
     this.time = 0; this.duration = 600; this.state = 5; this.rate = 1;
     this.pauseCalls = 0; this.destroyCalls = 0; this.seekCalls = [];
-    this.getPlayerState = () => this.state;
-    this.getCurrentTime = () => this.time;
-    this.getDuration = () => this.duration;
-    this.getPlaybackRate = () => this.rate;
-    this.getVideoUrl = () => `https://www.youtube.com/watch?v=${this.id}`;
+    let controlsAttached = false;
+    const controls = {
+      getPlayerState: () => this.state,
+      getCurrentTime: () => this.time,
+      getDuration: () => this.duration,
+      getPlaybackRate: () => this.rate,
+      getVideoUrl: () => `https://www.youtube.com/watch?v=${this.id}`,
+      pauseVideo: () => { this.pauseCalls++; if (this.state !== 0) this.event('onStateChange', 2); },
+      seekTo: (seconds, allowSeekAhead) => {
+        this.seekCalls.push([seconds, allowSeekAhead]);
+        this.time = this.seekLanding ?? seconds;
+        this.event('onStateChange', this.state === 2 ? 2 : 1);
+      }
+    };
     this.event = (name, data) => {
+      // The real IFrame SDK exposes playback/clock controls only when ready.
+      // Constructor availability must never make the synthetic player stronger.
+      if (name === 'onReady' && !controlsAttached) {
+        controlsAttached = true;
+        for (const [method, callback] of Object.entries(controls)) {
+          if (!env.missingReadyControls.includes(method)) this[method] = callback;
+        }
+      }
       if (name === 'onStateChange') this.state = data;
       if (name === 'onPlaybackRateChange') this.rate = data;
       events[name]?.({target: this, data});
-    };
-    this.pauseVideo = () => { this.pauseCalls++; if (this.state !== 0) this.event('onStateChange', 2); };
-    this.seekTo = (seconds, allowSeekAhead) => {
-      this.seekCalls.push([seconds, allowSeekAhead]);
-      this.time = this.seekLanding ?? seconds;
-      this.event('onStateChange', this.state === 2 ? 2 : 1);
     };
     this.destroy = () => { this.destroyCalls++; frame.remove(); };
     env.players.push(this);
     if (env.readyMode === 'throw') throw new Error('Synthetic constructor failure');
     if (env.readyMode === 'error') this.event('onError', 153);
     if (env.readyMode === 'sync') this.event('onReady');
+    if (env.readyMode === 'async') queueMicrotask(() => this.event('onReady'));
   };
   env.deliverSDK = () => { window.YT = {Player: stub}; window.onYouTubeIframeAPIReady?.(); };
   env.mount = () => { const mount = new Element('div'); document.body.append(mount); return mount; };
@@ -209,7 +223,7 @@ test('Metadata timeout settles even when the transport ignores abort', async t =
 });
 
 test('Successful creation orders preflight, official loader and privacy-enhanced iframe; synchronous ready is safe', async t => {
-  const env = await fixture(t), updates = [];
+  const env = await fixture(t, {readyMode: 'sync'}), updates = [];
   const controller = await env.api.createYouTubePlayer({mount: env.mount(), videoId: VIDEO, apiKey: 'fixture-key', onUpdate: value => updates.push(value)});
   assert.deepEqual(env.requests.map(request => request.type), ['fetch', 'script', 'iframe']);
   const frame = env.players[0].frame, url = new URL(frame.src);
@@ -221,6 +235,80 @@ test('Successful creation orders preflight, official loader and privacy-enhanced
   assert.equal(env.pending(250), 1);
   controller.destroy();
   assert.equal(env.pending(250), 0); assert.equal(frame.isConnected, false);
+});
+
+test('Delayed ready accepts a cleanup-only constructor and waits for controls without rejecting a zero duration', async t => {
+  const env = await fixture(t, {readyMode: 'later'}), updates = [], errors = [];
+  const controller = await env.api.createYouTubePlayer({mount: env.mount(), videoId: VIDEO, apiKey: 'fixture-key',
+    onUpdate: value => updates.push(value), onError: error => errors.push(error)});
+  const player = env.players[0];
+  assert.equal(typeof player.destroy, 'function');
+  for (const method of READY_CONTROLS) assert.equal(typeof player[method], 'undefined', `${method} must wait for ready`);
+  assert.equal(controller.snapshot().ready, false); assert.equal(controller.seek(2), false);
+  assert.equal(player.frame.isConnected, true); assert.equal(env.pending(250), 0); assert.equal(env.pending(15000), 1);
+  player.events.onReady({target: {}});
+  assert.equal(controller.snapshot().ready, false); assert.deepEqual(updates, []); assert.deepEqual(errors, []);
+  player.duration = 0;
+  player.event('onReady');
+  assert.equal(controller.snapshot().ready, true); assert.equal(controller.snapshot().durationSeconds, 0);
+  assert.equal(player.pauseCalls, 0, 'ready does not start or pause a visible recording');
+  assert.equal(env.pending(15000), 0); assert.equal(env.pending(250), 1); assert.deepEqual(errors, []);
+  player.duration = 600; player.time = 7.25; player.event('onStateChange', 1);
+  assert.equal(updates.at(-1).timeSeconds, 7.25); assert.equal(updates.at(-1).state, 'playing');
+  controller.destroy();
+});
+
+test('An incomplete asynchronous ready reports once and removes its iframe without consumer cleanup', async t => {
+  const env = await fixture(t, {readyMode: 'later'}), mount = env.mount();
+  for (const missing of READY_CONTROLS) {
+    env.missingReadyControls = [missing];
+    const errors = [], updates = [];
+    const controller = await env.api.createYouTubePlayer({mount, videoId: VIDEO, apiKey: 'fixture-key',
+      onUpdate: value => updates.push(value), onError: error => errors.push(error)});
+    const player = env.players.at(-1);
+    assert.doesNotThrow(() => player.event('onReady'), `missing ${missing} must not throw from an async event`);
+    assert.deepEqual(errors.map(error => error.code), ['YOUTUBE_PLAYER_INVALID'], missing);
+    assert.equal(controller.snapshot().state, 'error'); assert.equal(controller.snapshot().ready, false);
+    assert.equal(player.frame.isConnected, false); assert.equal(player.destroyCalls, 1);
+    assert.equal(env.pending(15000), 0); assert.equal(env.pending(250), 0);
+    const count = updates.length;
+    player.event('onReady'); player.event('onStateChange', 1); player.event('onError', 153);
+    assert.equal(updates.length, count); assert.equal(errors.length, 1); assert.equal(player.destroyCalls, 1);
+  }
+  env.missingReadyControls = [];
+  const retry = await env.api.createYouTubePlayer({mount, videoId: VIDEO, apiKey: 'fixture-key'});
+  env.players.at(-1).event('onReady');
+  assert.equal(retry.snapshot().ready, true); retry.destroy();
+});
+
+test('An incomplete constructor-synchronous ready rejects as invalid and cleans up once', async t => {
+  const env = await fixture(t, {readyMode: 'sync', missingReadyControls: ['seekTo']}), errors = [];
+  await assert.rejects(env.api.createYouTubePlayer({mount: env.mount(), videoId: VIDEO, apiKey: 'fixture-key',
+    onError: error => errors.push(error)}), {code: 'YOUTUBE_PLAYER_INVALID'});
+  assert.deepEqual(errors.map(error => error.code), ['YOUTUBE_PLAYER_INVALID']);
+  assert.equal(env.players[0].frame.isConnected, false); assert.equal(env.players[0].destroyCalls, 1);
+  assert.equal(env.pending(15000), 0); assert.equal(env.pending(250), 0);
+});
+
+test('Closing or replacing a player before ready prevents late controls from reviving it', async t => {
+  const env = await fixture(t, {readyMode: 'later'}), mount = env.mount(), updates = [], errors = [];
+  const closed = await env.api.createYouTubePlayer({mount, videoId: VIDEO, apiKey: 'fixture-key',
+    onUpdate: value => updates.push(value), onError: error => errors.push(error)});
+  const closedPlayer = env.players[0]; closed.destroy();
+  closedPlayer.event('onReady'); closedPlayer.event('onStateChange', 1);
+  assert.equal(closed.snapshot().ready, false); assert.equal(closedPlayer.frame.isConnected, false);
+  assert.equal(closedPlayer.destroyCalls, 1); assert.equal(env.pending(15000), 0); assert.equal(env.pending(250), 0);
+  const old = await env.api.createYouTubePlayer({mount, videoId: VIDEO, apiKey: 'fixture-key',
+    onUpdate: value => updates.push(value), onError: error => errors.push(error)});
+  const oldPlayer = env.players[1];
+  const active = await env.api.createYouTubePlayer({mount, videoId: OTHER, apiKey: 'fixture-key'});
+  oldPlayer.event('onReady'); oldPlayer.event('onStateChange', 1); oldPlayer.event('onError', 153); old.destroy();
+  assert.equal(oldPlayer.frame.isConnected, false); assert.equal(oldPlayer.destroyCalls, 1);
+  assert.equal(env.players[2].frame.isConnected, true); assert.equal(active.snapshot().ready, false);
+  assert.deepEqual(updates, []); assert.deepEqual(errors, []); assert.equal(env.pending(250), 0);
+  env.players[2].event('onReady');
+  assert.equal(active.snapshot().ready, true); assert.equal(active.snapshot().videoId, OTHER);
+  assert.equal(env.pending(15000), 0); assert.equal(env.pending(250), 1); active.destroy();
 });
 
 test('Following uses actual media time through pause, rate, buffering and native paused seeks', async t => {
@@ -325,7 +413,7 @@ test('Late events from a destroyed player cannot change updates or clear a new m
 });
 
 test('Synchronous consumer replacement during onReady cannot resurrect the old player', async t => {
-  const env = await fixture(t), mount = env.mount(); let next;
+  const env = await fixture(t, {readyMode: 'sync'}), mount = env.mount(); let next;
   await assert.rejects(env.api.createYouTubePlayer({mount, videoId: VIDEO, apiKey: 'fixture-key', onUpdate() {
     if (!next) next = env.api.createYouTubePlayer({mount, videoId: OTHER, apiKey: 'fixture-key'});
   }}), {code: 'YOUTUBE_CANCELLED'});
@@ -357,7 +445,11 @@ test('Constructor error, synchronous player error and readiness timeout all sett
   const controller = await env.api.createYouTubePlayer({mount: env.mount(), videoId: VIDEO, apiKey: 'fixture-key', onError: error => errors.push(error)});
   env.tick(15000);
   assert.equal(controller.snapshot().state, 'error'); assert.equal(errors.at(-1).code, 'YOUTUBE_PLAYER_TIMEOUT');
-  assert.equal(env.pending(250), 0); controller.destroy();
+  assert.equal(env.pending(250), 0);
+  const count = errors.length;
+  env.players.at(-1).event('onReady'); env.players.at(-1).event('onStateChange', 1);
+  assert.equal(controller.snapshot().ready, false); assert.equal(controller.snapshot().state, 'error');
+  assert.equal(errors.length, count); assert.equal(env.pending(250), 0); controller.destroy();
 });
 
 test('Playback errors clear ready/clock, while autoplay blocking allows a later native Play recovery', async t => {

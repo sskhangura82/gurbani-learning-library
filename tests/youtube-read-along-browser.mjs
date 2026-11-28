@@ -13,6 +13,7 @@ const directory = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const root = await fs.realpath(process.env.GLP_TARGET_DIRECTORY || directory);
 const stamp = new Date().toISOString().replace(/[:.]/g, '-');
 const out = path.resolve(process.env.GLP_YOUTUBE_OUTPUT || path.join(os.tmpdir(), 'glp-youtube-read-along-browser', stamp));
+const scenarioFilter = process.env.GLP_YOUTUBE_SCENARIO || '';
 await fs.mkdir(out, {recursive: true});
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const sri = bytes => 'sha384-' + createHash('sha384').update(bytes).digest('base64');
@@ -30,7 +31,7 @@ const isPublic = value => publicPaths.has(value) || publicSource(value);
 const isUnbundled = value => value.startsWith('collections/source-reader/') && value.endsWith('.mjs') && value !== bundlePath;
 const mime = {'.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png'};
-const report = {status: 'PASS', started: new Date().toISOString(), sourceCommit: null,
+const report = {status: 'PASS', started: new Date().toISOString(), sourceCommit: null, scenarioFilter,
   checks: [], failures: [], sourceHashes: {}, sourceBytes: {}, limits: [
     'Actual desktop Chrome, production owned bundle and DOM, with fresh contexts and synthetic records only.',
     'The positive fixture replaces only the public provider configuration in an independently repinned owned bundle.',
@@ -158,34 +159,50 @@ function testOnlyYouTubeSDK(configuration) {
       this.frame = frame; this.events = options.events || {}; this.videoId = new URL(frame.src).pathname.split('/').at(-1);
       this.time = 0; this.duration = 600; this.state = -1; this.rate = 1; this.destroyed = false;
       this.index = players.length; players.push(this); calls.push(['construct', this.index, this.videoId]);
-      const ready = () => this.emit('onReady');
-      if (configuration.synchronousReady) ready(); else setTimeout(ready, configuration.readyDelayMs || 0);
+      this.ready = false;
+      calls.push(['constructionControlsAbsent', this.index,
+        ['getCurrentTime', 'getDuration', 'getPlayerState', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo']
+          .every(name => typeof this[name] === 'undefined')]);
+      // Real YouTube installs these methods only when the iframe is ready.
+      // Keep them off the prototype too, so a premature check really fails.
+      this.becomeReady = () => {
+        Object.assign(this, {
+          getCurrentTime: () => { calls.push(['getCurrentTime', this.index]); return this.time; },
+          getDuration: () => this.duration,
+          getPlayerState: () => this.state,
+          getPlaybackRate: () => this.rate,
+          getVideoUrl: () => 'https://www.youtube.com/watch?v=' + this.videoId,
+          seekTo: (seconds, allowSeekAhead) => {
+            const previousState = this.state, rect = this.frame.getBoundingClientRect();
+            const geometry = {x: rect.x, y: rect.y, width: rect.width, height: rect.height,
+              fullyVisible: rect.top >= 0 && rect.left >= 0 && rect.bottom <= innerHeight && rect.right <= innerWidth,
+              centreUncovered: document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2) === this.frame};
+            calls.push(['seekTo', this.index, seconds, allowSeekAhead, previousState, geometry]); this.time = seconds;
+            // A paused player stays paused; other states start playback on seek.
+            if (previousState !== 2) { this.state = 1; this.emit('onStateChange', 1); }
+          },
+          pauseVideo: () => {
+            calls.push(['pauseVideo', this.index]);
+            if (this.failPause) { this.failPause = false; throw Error('TEST ONLY pause failure'); }
+            this.state = 2; this.emit('onStateChange', 2);
+          }
+        });
+        this.ready = true; calls.push(['ready', this.index]); this.emit('onReady');
+      };
+      if (configuration.synchronousReady) this.becomeReady();
+      else if (!configuration.manualReady) setTimeout(this.becomeReady, configuration.readyDelayMs || 0);
     }
     emit(name, data) { this.events[name]?.({target: this, data}); }
-    getCurrentTime() { calls.push(['getCurrentTime', this.index]); return this.time; }
-    getDuration() { return this.duration; }
-    getPlayerState() { return this.state; }
-    getPlaybackRate() { return this.rate; }
-    getVideoUrl() { return 'https://www.youtube.com/watch?v=' + this.videoId; }
-    seekTo(seconds, allowSeekAhead) {
-      const previousState = this.state;
-      calls.push(['seekTo', this.index, seconds, allowSeekAhead, previousState]); this.time = seconds;
-      // Official behavior: a paused player stays paused; seeking from another
-      // state starts playback. This deliberately exposes accidental autoplay.
-      if (previousState !== 2) { this.state = 1; this.emit('onStateChange', 1); }
-    }
-    pauseVideo() {
-      calls.push(['pauseVideo', this.index]);
-      if (this.failPause) { this.failPause = false; throw Error('TEST ONLY pause failure'); }
-      this.state = 2; this.emit('onStateChange', 2);
-    }
     destroy() { calls.push(['destroy', this.index]); this.destroyed = true; this.frame.remove(); }
   }
   window.YT = {Player, PlayerState: {UNSTARTED: -1, ENDED: 0, PLAYING: 1, PAUSED: 2, BUFFERING: 3, CUED: 5}};
   const current = () => players.filter(player => !player.destroyed).at(-1);
   window.__TEST_ONLY_YOUTUBE = {
     snapshot() { return {players: players.map(p => ({index: p.index, videoId: p.videoId, time: p.time,
-      state: p.state, rate: p.rate, destroyed: p.destroyed})), calls: calls.map(value => [...value])}; },
+      state: p.state, rate: p.rate, ready: p.ready, destroyed: p.destroyed,
+      controlsAvailable: ['getCurrentTime', 'getDuration', 'getPlayerState', 'getPlaybackRate', 'getVideoUrl', 'seekTo', 'pauseVideo']
+        .filter(name => typeof p[name] === 'function')})), calls: calls.map(value => [...value])}; },
+    ready(index = players.length - 1) { players[index].becomeReady(); },
     clock(seconds, state, rate) {
       const player = current(); if (!player) throw Error('No synthetic player');
       player.time = seconds;
@@ -347,6 +364,7 @@ async function geometry(page, width) {
 }
 
 async function scenario(name, run, options = {}) {
+  if (scenarioFilter && !name.includes(scenarioFilter)) return;
   const check = {name, status: 'PASS', requests: [], provider: [], unexpectedExternal: [], routeErrors: [], pageErrors: [], consoleErrors: []};
   report.checks.push(check);
   const context = await browser.newContext({viewport: {width: 320, height: 900}, serviceWorkers: 'block',
@@ -510,6 +528,26 @@ try {
     check.storage = await preserveLearning(page, {noWrites: true});
   }, {configured: false});
 
+  await scenario('Player readiness waits for controls installed by the iframe ready event', async (page, check) => {
+    await openApp(page);
+    await page.locator('#video-url').fill('https://youtu.be/' + VIDEO); await page.locator('#video-load').click();
+    await page.waitForFunction(() => window.__TEST_ONLY_YOUTUBE?.snapshot().players.length === 1);
+    const before = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+    assert.equal(before.players[0].ready, false); assert.equal(before.players[0].destroyed, false);
+    assert.deepEqual(before.players[0].controlsAvailable, [], 'No playback controls exist before onReady');
+    assert.ok(before.calls.some(call => call[0] === 'constructionControlsAbsent' && call[2] === true));
+    assert.equal(before.calls.some(call => ['getCurrentTime', 'seekTo', 'pauseVideo'].includes(call[0])), false,
+      'The adapter does not read or control the unready player');
+    assert.equal(await page.locator('#youtube-player iframe').count(), 1, 'Keep the connecting iframe');
+    assert.equal(await page.locator('#mark-selected').isDisabled(), true);
+    await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.ready());
+    await page.waitForSelector('#video-status[data-state="ready"]');
+    const after = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+    assert.equal(after.players[0].controlsAvailable.length, 7); assert.equal(after.players[0].destroyed, false);
+    assert.equal(await page.locator('#mark-selected').isDisabled(), false);
+    check.lifecycle = {before, after}; check.storage = await preserveLearning(page, {noWrites: true});
+  }, {sdk: {manualReady: true}});
+
   await scenario('Configured fixture stays disconnected until Load and preserves a visible native-provider surface at 320 and 1280px', async (page, check) => {
     await openApp(page); await exactSource(page, japji); assert.deepEqual(check.provider, []);
     await connect(page, VIDEO, 'https://youtu.be/' + VIDEO);
@@ -609,6 +647,54 @@ try {
   const marked = timing(japji, [{at: 10000, lineId: first}, {at: 20000, lineId: second},
     {at: 30000, lineId: null}, {at: 40000, lineId: first}, {at: 50000, lineId: null}]);
   const key = timingKey(VIDEO, japji);
+
+  for (const viewport of [{width: 320, height: 640}, {width: 1280, height: 900}])
+    await scenario('Marker jump restores the player before seeking at ' + viewport.width + 'px', async (page, check) => {
+      await page.setViewportSize(viewport); await openApp(page); await connect(page);
+      await page.locator('#timing-load').click();
+      await page.locator('.cue-details > summary').click();
+      const cue = page.locator('#timing-cues button[data-cue-at="40000"]');
+      check.jumps = [];
+      for (const activation of ['pointer', 'keyboard']) {
+        await page.locator('.workspace').evaluate(element => {
+          window.scrollTo({top: Math.max(0, scrollY + element.getBoundingClientRect().top - 16), behavior: 'instant'});
+        });
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        await mediaClock(page, 12, 1);
+        await cue.scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => window.__TEST_ONLY_YOUTUBE.snapshot().players.find(p => !p.destroyed).state === 2);
+        const before = await page.evaluate(() => {
+          const rect = document.querySelector('#youtube-player iframe').getBoundingClientRect();
+          return {offscreen: rect.bottom <= 0 || rect.top >= innerHeight, provider: window.__TEST_ONLY_YOUTUBE.snapshot()};
+        });
+        assert.equal(before.offscreen, true, 'Reviewing the lower marker list moves the player offscreen');
+        assert.equal(before.provider.players.find(p => !p.destroyed).state, 2, 'The offscreen pause still works');
+        if (activation === 'pointer') await cue.click();
+        else { await cue.focus(); await page.keyboard.press('Enter'); }
+        await activeLine(page, first);
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        const after = await page.evaluate(() => {
+          const frame = document.querySelector('#youtube-player iframe'), rect = frame.getBoundingClientRect();
+          return {provider: window.__TEST_ONLY_YOUTUBE.snapshot(), frame: {x: rect.x, y: rect.y, width: rect.width, height: rect.height},
+            fullyVisible: rect.top >= 0 && rect.left >= 0 && rect.bottom <= innerHeight && rect.right <= innerWidth,
+            centreUncovered: document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2) === frame,
+            focused: document.activeElement === frame};
+        });
+        const seeks = after.provider.calls.slice(before.provider.calls.length).filter(call => call[0] === 'seekTo');
+        assert.equal(seeks.length, 1); assert.equal(seeks[0][2], 40, 'Jump to the repeated occurrence, not its earlier mark');
+        assert.equal(seeks[0][5].fullyVisible, true, 'Player is fully onscreen when seek is called');
+        assert.equal(seeks[0][5].centreUncovered, true, 'Nothing covers the player during seek');
+        assert.equal(after.fullyVisible, true, 'Player remains onscreen after observer callbacks');
+        assert.equal(after.centreUncovered, true); assert.equal(after.focused, true, 'Keyboard focus follows the jump to the native player');
+        const player = after.provider.players.find(p => !p.destroyed);
+        assert.equal(player.time, 40); assert.equal(player.state, 2, 'Jumping never resumes a paused recording');
+        assert.equal(await page.locator('#player-state').textContent(), 'Paused');
+        check.jumps.push({activation, before, after});
+      }
+      check.screenshot = 'marker-jump-' + viewport.width + '.png';
+      await page.screenshot({path: path.join(out, check.screenshot), fullPage: false});
+      check.storage = await preserveLearning(page, {noWrites: true});
+    }, {records: {[key]: JSON.stringify(marked)}, sdk: {synchronousReady: true}});
 
   await scenario('Mark selected, next, pause, repeat and undo create only explicit per-video annotations; save/export/replay are exact', async (page, check) => {
     await openApp(page); await connect(page); await selectedLine(page, first);

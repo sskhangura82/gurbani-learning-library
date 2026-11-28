@@ -401,7 +401,7 @@ function renderTiming() {
     const lineIndex = lineIndices.get(cue.lineId), line = reading.lines[lineIndex];
     const label = cue.lineId === null ? 'Text pause or end' : (line.kind === 'heading' ? 'Source heading · row ' : 'Line ') + (lineIndex + 1) + ' · ' + line.label;
     const go = node('button', 'quiet', formatTime(cue.at / 1000) + ' · ' + label); go.type = 'button'; go.dataset.cueAt = String(cue.at);
-    go.addEventListener('click', () => seek(cue.at / 1000)); item.append(go);
+    go.addEventListener('click', () => seek(cue.at / 1000, {showPlayer: true})); item.append(go);
     if (index === timing.cues.length - 1 && cue.lineId !== null) item.append(node('small', '', 'This final line marker needs a following marker to define its interval.'));
     $('timing-cues').append(item);
   }
@@ -425,10 +425,17 @@ function mark(lineId, {select = false} = {}) {
     return true;
   } catch { status('timing-status', 'refused', 'This marker could not be added. Your current map is unchanged; check the recording time or export your map.'); return false; }
 }
-function seek(seconds) {
+function seek(seconds, {showPlayer = false} = {}) {
   const target = controller, snapshot = target?.snapshot();
   if (!hasClock(snapshot)) return false;
   const token = playerSequence, expectedReading = reading, expectedVideo = video.videoId;
+  if (showPlayer) {
+    // The card is sticky only inside the workspace; marker notes sit below it.
+    // Reveal its stable container before seeking, and keep keyboard focus with it.
+    const workspace = mount.closest('.workspace');
+    window.scrollTo({top: Math.max(0, window.scrollY + workspace.getBoundingClientRect().top - 16), behavior: 'instant'});
+    mount.querySelector('iframe')?.focus({preventScroll: true});
+  }
   if (!['playing', 'buffering'].includes(snapshot.state) && target.pause() === false) return false;
   if (token !== playerSequence || controller !== target) return false;
   const moved = target.seek(seconds);

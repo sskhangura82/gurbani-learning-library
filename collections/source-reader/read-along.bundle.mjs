@@ -1449,6 +1449,11 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
         return;
       }
       if (type === "ready") {
+        if (["getPlayerState", "getCurrentTime", "getDuration", "getPlaybackRate", "getVideoUrl", "seekTo", "pauseVideo", "destroy"].some((method) => typeof player[method] !== "function")) {
+          fail3(problem("YOUTUBE_PLAYER_INVALID", "The YouTube player did not expose the required controls."), { pausePlayer: false });
+          controller2.destroy();
+          return;
+        }
         ready = true;
         clearTimeout(readyTimeout);
         if (document.hidden || pauseOnReady) pause();
@@ -1470,13 +1475,13 @@ async function createYouTubePlayer({ mount: mount2, videoId, onUpdate, onError, 
     } finally {
       constructing = false;
     }
-    if (!player || ["getPlayerState", "getCurrentTime", "getDuration", "getPlaybackRate", "getVideoUrl", "seekTo", "pauseVideo", "destroy"].some((method) => typeof player[method] !== "function")) {
+    if (!player || typeof player.destroy !== "function") {
       throw problem("YOUTUBE_PLAYER_INVALID", "The YouTube player did not expose the required controls.");
     }
     for (const [type, event] of pendingEvents) handleEvent(type, event);
     pendingEvents = [];
-    if (!isCurrent()) throw cancelled();
     if (failure) throw failure;
+    if (!isCurrent()) throw cancelled();
     if (typeof IntersectionObserver === "function") {
       visibilityObserver = new IntersectionObserver((entries) => {
         if (!isCurrent()) {
@@ -2040,7 +2045,7 @@ function renderTiming() {
     const go = node("button", "quiet", formatTime(cue.at / 1e3) + " · " + label);
     go.type = "button";
     go.dataset.cueAt = String(cue.at);
-    go.addEventListener("click", () => seek(cue.at / 1e3));
+    go.addEventListener("click", () => seek(cue.at / 1e3, { showPlayer: true }));
     item.append(go);
     if (index === timing.cues.length - 1 && cue.lineId !== null) item.append(node("small", "", "This final line marker needs a following marker to define its interval."));
     $("timing-cues").append(item);
@@ -2073,10 +2078,15 @@ function mark(lineId, { select = false } = {}) {
     return false;
   }
 }
-function seek(seconds) {
+function seek(seconds, { showPlayer = false } = {}) {
   const target = controller, snapshot = target?.snapshot();
   if (!hasClock(snapshot)) return false;
   const token = playerSequence, expectedReading = reading, expectedVideo = video.videoId;
+  if (showPlayer) {
+    const workspace = mount.closest(".workspace");
+    window.scrollTo({ top: Math.max(0, window.scrollY + workspace.getBoundingClientRect().top - 16), behavior: "instant" });
+    mount.querySelector("iframe")?.focus({ preventScroll: true });
+  }
   if (!["playing", "buffering"].includes(snapshot.state) && target.pause() === false) return false;
   if (token !== playerSequence || controller !== target) return false;
   const moved = target.seek(seconds);

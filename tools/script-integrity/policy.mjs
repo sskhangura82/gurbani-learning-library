@@ -278,10 +278,10 @@ graphs['read-along']={
   "entry": "collections/source-reader/read-along.mjs",
   "output": "collections/source-reader/read-along.bundle.mjs",
   "inputs": {
-    "collections/source-reader/read-along.mjs": "7a9ac308d81ecee15aee212c20b52111b684aca1ac2ba8edd10a8b3520011051",
+    "collections/source-reader/read-along.mjs": "17c97daedd305f7ea2363998c78e5fdc6fa91b01e6a7edd588b3f3a975ffee42",
     "collections/source-reader/read-along-core.mjs": "c2416a61de85d9c7ff4b386d4fc02b8448e5df6eaceab8b3a2729ca16aa814f6",
     "collections/source-reader/read-along-source.mjs": "cd0060d031c79219dec4e9ae07813d8eef36a23795f551c17992f42d41bb89ef",
-    "collections/source-reader/read-along-player.mjs": "ddc878748aa3aa2288251512affe7a244497da6ff3c1c39aa5f4a613b64721a1",
+    "collections/source-reader/read-along-player.mjs": "1c3aa3a0184ef0471565f60230f1900dea771ae1f237c4ea1199084bb59da797",
     "collections/source-reader/read-along-config.mjs": "cbc2be9b686cd3cbb858f34b6245ad325e6743867f155be8928f1ecc83b7c27e",
     "collections/source-reader/core.mjs": "80475823a93c5b397edbf284f60be13db0f9f50d164a8ea8a4d82cdac9cd253e",
     "collections/source-reader/source-lock.mjs": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807",
