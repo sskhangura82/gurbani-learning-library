@@ -1,0 +1,109 @@
+{
+  "schema": "glp.listen-along-consolidation.verification.v1",
+  "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
+  "base": "7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58",
+  "runtime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+  "applicationFileCount": 376,
+  "applicationBytesMatchTestedRuntime": true,
+  "originalPrototype": {
+    "runtime": "b2d34796a4a5f22d3d526b0fd04d495fa0744d30",
+    "patchBytes": 790219,
+    "patchSha256": "bbd3eac9cbc238cef40c4fb2d671c4b36f69cf4f5fb5bfeaabeeb8e022d173f4",
+    "logicChecks": 17,
+    "olderNodeChecks": 137,
+    "browserPassed": 22,
+    "browserFailed": 1,
+    "nativePlaybackSucceeded": [
+      "8soV6l6is4Q",
+      "0TzTgHveO_I",
+      "kDI-2FPyu3w"
+    ],
+    "nativeEmbeddingRefused": [
+      "BpMxd2gT9G0"
+    ],
+    "nativeKirtanObservedPlaybackRate": 0.75,
+    "measuredRecitationAlignmentVerified": false
+  },
+  "checks": {
+    "focusedNodeContracts": 86,
+    "additionalAccessAndWorkflowContracts": 14,
+    "serviceWorkerSimulation": 9,
+    "readAlongBrowser": 35,
+    "navigationBrowser": 10,
+    "offlineBrowser": 7,
+    "githubRuntimeChecks": 22,
+    "githubRuntimeWorkflows": 12
+  },
+  "namedBani": {
+    "distinctCompositions": 8,
+    "distinctOriginalRows": 3809,
+    "morningSequenceRows": 1567,
+    "sourceFilesChanged": false,
+    "missingCrypto": "REFUSE",
+    "rawAndRowDigests": "REQUIRED",
+    "crossEditionTimings": "REFUSE"
+  },
+  "ownedBuild": {
+    "bundles": 6,
+    "declaredGraphInputs": 41,
+    "htmlPages": 25,
+    "scriptIntegrityAttributes": 62,
+    "offlineAssets": 125
+  },
+  "size": {
+    "uniqueOwnedPageStyleBundleBytes": 123273,
+    "increaseOverParentBytes": 24241,
+    "syntheticNamedJapjiTimingBytes": 14693,
+    "syntheticSukhmaniTimingBytes": 83176,
+    "syntheticMorningTimingBytes": 59498,
+    "containsMedia": false
+  },
+  "provider": {
+    "configuration": "EMPTY",
+    "combinedRealPlaybackVerified": false,
+    "positiveBrowserFixture": "SYNTHETIC_METADATA_SDK_AND_IFRAME",
+    "defaultCandidateProviderRequests": 0,
+    "originalPrototypeNativeDiagnosticsDoNotCertifyCombinedRuntime": true
+  },
+  "visualReview": {
+    "teachingViewportsCssPx": [
+      [
+        320,
+        640
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        1280,
+        900
+      ]
+    ],
+    "longAndShortPreviewGeometryChecked": true,
+    "teachingScreenshotsVisuallyInspected": [
+      320,
+      1280
+    ],
+    "timingEditor": "collapsed by default"
+  },
+  "independentClaudeReview": {
+    "status": "PENDING",
+    "scope": "combined runtime source, timing and UI increment; no editorial or earlier-stack approval"
+  },
+  "preservation": {
+    "newApplicationFiles": 2,
+    "modifiedApplicationFiles": 6,
+    "oldSourceTextChanged": false,
+    "oldLearningStorageSchemaChanged": false,
+    "productionMerged": false,
+    "productionDeployed": false
+  },
+  "limits": [
+    "The combined runtime has empty provider configuration and no real YouTube integration verification.",
+    "Native original-prototype playback is diagnostic only; it does not certify the combined runtime.",
+    "No automatic speech recognition, measured word timing or trustworthy timing from a pasted link alone.",
+    "Actual recitation alignment and advertisement behavior remain unverified.",
+    "Physical iPhone, Safari and assistive-technology acceptance remain unverified."
+  ]
+}
