@@ -1,0 +1,52 @@
+{
+  "schema": "glp.meditation-breathing.verification.v1",
+  "base": "cfded3e2186c1f6e325d135f1fa62da1f03d34bb",
+  "status": "LOCAL_CHECKS_PASSED",
+  "branch": "feature/meditation-breathing-room-20261128",
+  "breathingBrowser": {
+    "passed": 36,
+    "failed": 0,
+    "browser": "158.0.8127.0",
+    "privacyAudits": 34,
+    "report": "evidence/breathing/report.json"
+  },
+  "meditationBrowser": {
+    "passed": 14,
+    "failed": 0,
+    "report": "evidence/meditation-room/report.json"
+  },
+  "offline": {
+    "passed": 8,
+    "assets": 125,
+    "report": "evidence/learning-practice/offline.json"
+  },
+  "nodeContracts": {
+    "passed": 53,
+    "failed": 0,
+    "log": "evidence/meditation-breathing-room/node-contracts.log"
+  },
+  "workerSimulation": {
+    "passed": 9,
+    "failed": 0,
+    "log": "evidence/meditation-breathing-room/service-worker.log"
+  },
+  "scriptIntegrity": {
+    "pages": 26,
+    "pins": 62,
+    "bundles": 5,
+    "bundleInputs": 32
+  },
+  "preservation": {
+    "baselineInventory": 366,
+    "unchanged": 360,
+    "existingChanged": 6,
+    "added": 4,
+    "scope": "evidence/meditation-breathing-room/change-scope.json"
+  },
+  "limitations": [
+    "No physical iPhone, Safari or VoiceOver acceptance.",
+    "No clinical validation or specialist religious approval.",
+    "External source papers need a network connection.",
+    "No merge or deployment."
+  ]
+}

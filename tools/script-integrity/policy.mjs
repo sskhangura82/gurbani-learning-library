@@ -285,6 +285,8 @@ const nonreaders=[
   {page:'private-library/index.html',scripts:[module('./app.mjs','private-library')]},
   {page:'hukamnama/index.html',scripts:[module('./reader.bundle.mjs','hukamnama')]},
   {page:'breathing.html',scripts:[classic('js/breathing-core.js',true),classic('js/breathing.js',true)]},
+  {page:'meditation.html',scripts:[classic('js/meditation.js',true)]},
+  {page:'practice-sources.html',scripts:[]},
   {page:'simran.html',scripts:[classic('js/simran.js')]},
   {page:'gurdwara.html',scripts:[classic('js/arrivals.js')]},
   {page:'gurdwaras.html',scripts:[]},

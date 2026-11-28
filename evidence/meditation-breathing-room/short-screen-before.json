@@ -1,0 +1,414 @@
+{
+  "startedAt": "2026-11-28T14:11:09.305Z",
+  "browser": "158.0.8127.0",
+  "checks": [
+    {
+      "name": "The frozen default remains a two-phase 5:5 physiological guide without holds",
+      "status": "passed"
+    },
+    {
+      "name": "The guide loads idle, defaults to no holds, and states its comfort and medical limits",
+      "status": "passed"
+    },
+    {
+      "name": "Standard even: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "status": "passed"
+    },
+    {
+      "name": "Standard longer-exhale: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "status": "passed"
+    },
+    {
+      "name": "Standard box: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "status": "passed"
+    },
+    {
+      "name": "Shorter even: adapted timings are labelled and used in the pacer",
+      "status": "passed"
+    },
+    {
+      "name": "Shorter box: adapted timings are labelled and used in the pacer",
+      "status": "passed"
+    },
+    {
+      "name": "The box marker follows its sides while the circle stays fixed during a hold",
+      "status": "passed"
+    },
+    {
+      "name": "Pausing during a hold gives a neutral cue; restart begins a fresh inhale",
+      "status": "passed"
+    },
+    {
+      "name": "Switching away from holds selects 4:4, stops, and requires a fresh Start",
+      "status": "passed"
+    },
+    {
+      "name": "Changing a pattern or pace stops a running guide instead of inheriting its clock",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid pattern and pace selections fail closed and can recover through a valid choice",
+      "status": "passed"
+    },
+    {
+      "name": "Escape stops a hold, exits focus view, and restores Start focus",
+      "status": "passed"
+    },
+    {
+      "name": "Hiding a running guide stops it; becoming visible does not resume it",
+      "status": "passed"
+    },
+    {
+      "name": "Hiding a paused guide stops it; becoming visible does not resume it",
+      "status": "passed"
+    },
+    {
+      "name": "Page exit and a persisted page return leave an active guide stopped",
+      "status": "passed"
+    },
+    {
+      "name": "A delayed animation frame stops instead of jumping into a missed hold",
+      "status": "passed"
+    },
+    {
+      "name": "Actual scrolling away from the visual guide stops it and returning does not restart it",
+      "status": "passed"
+    },
+    {
+      "name": "A manual still guide keeps text cues moving without moving the orb or box marker",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion starts still, cannot accidentally be overridden, and retains phase guidance",
+      "status": "passed"
+    },
+    {
+      "name": "A live reduced-motion preference change stops visual motion without stopping text guidance",
+      "status": "passed"
+    },
+    {
+      "name": "Focus view at 320×568, even: keyboard access and visible Stop",
+      "status": "passed"
+    },
+    {
+      "name": "Focus view at 320×568, box: keyboard access and visible Stop",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Stop must be visible without scrolling: {\"bounds\":{\"x\":171.171875,\"y\":680.375,\"width\":110,\"height\":49},\"viewport\":{\"width\":320,\"height\":568}}\n    at reachableStop (file:///workspace/scratch/614874a66476/gurbani-meditation/tests/breathing-browser.mjs:104:9)\n    at async scenario.viewport.viewport (file:///workspace/scratch/614874a66476/gurbani-meditation/tests/breathing-browser.mjs:325:5)\n    at async file:///workspace/scratch/614874a66476/gurbani-meditation/tests/breathing-browser.mjs:73:7\n    at async check (file:///workspace/scratch/614874a66476/gurbani-meditation/tests/breathing-browser.mjs:29:6)\n    at async scenario (file:///workspace/scratch/614874a66476/gurbani-meditation/tests/breathing-browser.mjs:71:2)\n    at async file:///workspace/scratch/614874a66476/gurbani-meditation/tests/breathing-browser.mjs:319:4"
+    },
+    {
+      "name": "Focus view at 390×844, even: keyboard access and visible Stop",
+      "status": "passed"
+    },
+    {
+      "name": "Focus view at 390×844, box: keyboard access and visible Stop",
+      "status": "passed"
+    },
+    {
+      "name": "The desktop catalogue selects a pattern, mirrors the mobile selector, and fits wide layouts",
+      "status": "passed"
+    },
+    {
+      "name": "The narrow active guide is captured with readable cues and an enabled Stop",
+      "status": "passed"
+    },
+    {
+      "name": "Research copy names its limits and local source links resolve to actual sections",
+      "status": "passed"
+    },
+    {
+      "name": "An incorrect document boundary (wrong-layer) cannot activate the controller",
+      "status": "passed"
+    },
+    {
+      "name": "An incorrect document boundary (wrong-practice) cannot activate the controller",
+      "status": "passed"
+    },
+    {
+      "name": "No runtime errors, failed requests, external requests, storage access or cookies occurred",
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "requestFailures": [],
+  "externalRequests": [],
+  "privacyChecks": [
+    {
+      "name": "The guide loads idle, defaults to no holds, and states its comfort and medical limits",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Standard even: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Standard longer-exhale: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Standard box: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Shorter even: adapted timings are labelled and used in the pacer",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Shorter box: adapted timings are labelled and used in the pacer",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "The box marker follows its sides while the circle stays fixed during a hold",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Pausing during a hold gives a neutral cue; restart begins a fresh inhale",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Switching away from holds selects 4:4, stops, and requires a fresh Start",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Changing a pattern or pace stops a running guide instead of inheriting its clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Invalid pattern and pace selections fail closed and can recover through a valid choice",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Escape stops a hold, exits focus view, and restores Start focus",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Hiding a running guide stops it; becoming visible does not resume it",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Hiding a paused guide stops it; becoming visible does not resume it",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Page exit and a persisted page return leave an active guide stopped",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "A delayed animation frame stops instead of jumping into a missed hold",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Actual scrolling away from the visual guide stops it and returning does not restart it",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "A manual still guide keeps text cues moving without moving the orb or box marker",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Reduced motion starts still, cannot accidentally be overridden, and retains phase guidance",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "A live reduced-motion preference change stops visual motion without stopping text guidance",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Focus view at 320×568, even: keyboard access and visible Stop",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Focus view at 390×844, even: keyboard access and visible Stop",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Focus view at 390×844, box: keyboard access and visible Stop",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "The desktop catalogue selects a pattern, mirrors the mobile selector, and fits wide layouts",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "The narrow active guide is captured with readable cues and an enabled Stop",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Research copy names its limits and local source links resolve to actual sections",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "An incorrect document boundary (wrong-layer) cannot activate the controller",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "An incorrect document boundary (wrong-practice) cannot activate the controller",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    }
+  ],
+  "screenshots": [
+    "evidence/breathing/ready-390.png",
+    "evidence/breathing/reduced-motion-390.png",
+    "evidence/breathing/focus-320.png",
+    "evidence/breathing/box-focus-390.png",
+    "evidence/breathing/ready-1440.png",
+    "evidence/breathing/active-390.png"
+  ],
+  "limitations": [
+    "Desktop Chromium, including narrow viewport emulation. No physical iPhone, Safari, VoiceOver or human usability acceptance.",
+    "Lifecycle checks include synthetic visibility/page transition events and an emulated delayed animation frame. Real device suspension still needs acceptance.",
+    "Research and traditional-context copy require independent review. Browser tests do not establish clinical efficacy, individual safety or religious authority.",
+    "Links are checked for local destinations and named external source addresses. This suite does not establish continuing remote source availability."
+  ],
+  "inputSha256": {
+    "breathing.html": "abed201f101b1c45994e4464df0addefd13d43a570980026b60cfa04cc95e490",
+    "css/breathing.css": "062b5afd5bcf567df1b6a985662141d0884725ee61a65d44f8f331593018b28d",
+    "js/breathing-core.js": "0d9c46bfa2c8c9167ada7500da75e91b7eaa096797064d1074c8200af41b2391",
+    "js/breathing.js": "1b3938619ad1f2a001c145a466e7cb456e5dbf2ccada0215a58804bd10d41c87",
+    "meditation.html": "4bd2ac3f6bf1855b9ebd5134416f93ec3b6457f8716f4f696f6e5c4279bd10f4",
+    "practice-sources.html": "32f856556d60343ad1c3bac3766ce2f4f7d643da994e6e05091650ef26d9ffc9",
+    "tests/breathing-browser.mjs": "76eda69203c40a0b77e874f665d6b48e5d95b9ee0b2e4c6915d381e9cbc7d256"
+  },
+  "finishedAt": "2026-11-28T14:11:38.143Z",
+  "passed": 30,
+  "failed": 1
+}

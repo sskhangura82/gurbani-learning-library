@@ -10,6 +10,9 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Exact room preservation checks read the frozen learning candidate.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -28,6 +31,7 @@ jobs:
           node tests/salok-mahalla9-content.mjs
           node tests/salok-kabir-content.mjs
           node tests/salok-kabir-bindings.mjs
+          node --test tests/breathing-core.mjs tests/meditation-preservation.mjs
           node tests/service-worker.mjs
       - name: Verify reproducible shared-script pins and complete offline shell
         run: |
@@ -39,6 +43,7 @@ jobs:
           node --check js/simran.js
           node --check js/breathing-core.js
           node --check js/breathing.js
+          node --check js/meditation.js
           node --check nitnem/local-learning.js
   focused-browser:
     runs-on: ubuntu-latest
@@ -62,6 +67,7 @@ jobs:
           node tests/nitnem-storage-quota-browser.mjs
           node tests/simran-session-browser.mjs
           node tests/breathing-browser.mjs
+          node tests/meditation-room.mjs
           node tests/learning-practice-offline.mjs
       - name: Retain focused evidence
         if: always()
@@ -73,6 +79,8 @@ jobs:
             evidence/storage-quota/
             evidence/simran-session/
             evidence/breathing/
+            evidence/meditation-room/
+            evidence/meditation-breathing-room/
             evidence/learning-practice/
           if-no-files-found: warn
   shared-readers:
