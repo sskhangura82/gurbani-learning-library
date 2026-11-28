@@ -43,11 +43,24 @@ function updateTeaching() {
   $('teach-toggle').setAttribute('aria-pressed', String(teaching));
   text('teach-toggle', teaching ? 'Stop teaching' : 'Teach line by line');
   $('teach-panel').hidden = !teaching;
+  $('timing-editor').dataset.teaching = String(teaching);
+  $('selected-line').hidden = teaching; $('mark-selected').hidden = teaching; $('mark-next').hidden = teaching;
+  $('teach-help').hidden = !teaching;
   const index = lineIndices.get(teachLineId), line = index === undefined ? null : reading?.lines[index];
+  const preview = $('teach-line'), previewId = line?.id || '';
+  if (preview.dataset.lineId !== previewId) { preview.dataset.lineId = previewId; preview.scrollTop = 0; }
   text('teach-line', line?.text || '');
-  text('teach-line-label', line ? 'Next to mark · line ' + (index + 1) + ' of ' + reading.lines.length + ' · ' + line.label
+  preview.hidden = !line;
+  text('teach-line-label', line ? 'Next to mark · line ' + (index + 1) + ' of ' + reading.lines.length
     : teaching && reading ? 'You have reached the last line. Mark a text pause or end, or select a line to repeat.' : 'Choose a line to begin.');
   $('teach-next').disabled = !teaching || !line || !timing || !hasClock();
+}
+function revealTeaching() {
+  if (!teaching || !$('timing-editor').open || $('teach-panel').hidden) return;
+  const panel = $('teach-panel').getBoundingClientRect();
+  const stacked = window.matchMedia('(max-width: 760px)').matches;
+  const top = stacked ? document.querySelector('.video-card').getBoundingClientRect().height + 8 : 16;
+  window.scrollTo({top: Math.max(0, window.scrollY + panel.top - top), behavior: 'instant'});
 }
 function updateFallback() {
   let identity;
@@ -103,6 +116,7 @@ function selectLine(id, {focus = false, reveal = false, updateTeach = true} = {}
   if (reveal) revealRow(id);
   if (focus) rows.get(id).focus({preventScroll: true});
   updateControls();
+  if (teaching && updateTeach) revealTeaching();
 }
 function setActive(id) {
   if (id && !rows.has(id)) id = null;
@@ -492,6 +506,7 @@ $('mark-pause').addEventListener('click', () => mark(null));
 $('teach-toggle').addEventListener('click', () => {
   if (!reading) return;
   teaching = !teaching; teachLineId = teaching ? selectedId : null; updateTeaching();
+  if (teaching) revealTeaching();
 });
 $('teach-next').addEventListener('click', () => {
   const index = lineIndices.get(teachLineId);
@@ -499,12 +514,12 @@ $('teach-next').addEventListener('click', () => {
   const id = teachLineId;
   if (!mark(id)) return;
   selectLine(id, {reveal: true, updateTeach: false});
-  teachLineId = reading.lines[index + 1]?.id || null; updateTeaching();
+  teachLineId = reading.lines[index + 1]?.id || null; updateTeaching(); revealTeaching();
 });
 $('timing-undo').addEventListener('click', () => {
   const previous = undo.pop(); if (!previous) return;
   replaceTiming(previous, {keepUndo: false});
-  if (teaching) { teachLineId = selectedId; updateTeaching(); }
+  if (teaching) { teachLineId = selectedId; updateTeaching(); revealTeaching(); }
   status('timing-status', dirty ? 'dirty' : 'loaded', 'Previous timing map restored.');
 });
 $('follow-timings').addEventListener('change', () => { if (activeId) revealRow(activeId, {follow: true}); });

@@ -919,6 +919,82 @@ try {
     assert.deepEqual(check.provider, []); check.storage = await preserveLearning(page, {noWrites: true});
   }, {mutations: {[baniSpecs.jaap.path]: forgedJaap}});
 
+  await scenario('Teaching keeps the native player, exact preview and tap control visible together on phone and desktop after explicit actions', async (page, check, context) => {
+    check.layouts = []; check.screenshots = [];
+    const layoutFailures = [];
+    const viewports = [{width: 320, height: 640}, {width: 390, height: 844}, {width: 1280, height: 900}];
+    let firstPage = true;
+    async function visibleTeaching(surface, expectedText, label) {
+      // Observe the application's own explicit-action reveal. No test scrolling
+      // repairs a hidden preview or control before these assertions.
+      await surface.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      assert.equal(await surface.locator('#teach-line').textContent(), expectedText, label + ' complete original preview');
+      const metrics = await surface.evaluate(() => {
+        const box = element => {
+          const rect = element.getBoundingClientRect();
+          const points = [[rect.left + 8, rect.top + 8], [rect.right - 8, rect.top + 8],
+            [rect.left + 8, rect.bottom - 8], [rect.right - 8, rect.bottom - 8],
+            [rect.left + rect.width / 2, rect.top + rect.height / 2]];
+          return {x: rect.x, y: rect.y, width: rect.width, height: rect.height,
+            right: rect.right, bottom: rect.bottom,
+            fullyVisible: rect.width > 0 && rect.height > 0 && rect.left >= 0 && rect.top >= 0
+              && rect.right <= innerWidth + 0.01 && rect.bottom <= innerHeight + 0.01,
+            uncovered: points.every(([x, y]) => {
+              const hit = document.elementFromPoint(x, y); return hit === element || element.contains(hit);
+            })};
+        };
+        return {viewport: {width: innerWidth, height: innerHeight}, documentWidth: document.documentElement.scrollWidth,
+          frame: box(document.querySelector('#youtube-player iframe')),
+          preview: box(document.querySelector('#teach-panel .teach-preview')),
+          control: box(document.getElementById('teach-next')),
+          previewTextHeight: document.getElementById('teach-line').scrollHeight,
+          previewClientHeight: document.getElementById('teach-line').clientHeight};
+      });
+      check.layouts.push({label, ...metrics});
+      assert.ok(metrics.documentWidth <= metrics.viewport.width, label + ' no horizontal overflow');
+      assert.ok(metrics.frame.width >= 200 && metrics.frame.height >= 200, label + ' at least 200×200 native player');
+      for (const item of ['frame', 'preview', 'control']) {
+        assert.equal(metrics[item].fullyVisible, true, label + ' entire ' + item + ' is inside viewport: ' + JSON.stringify(metrics[item]));
+        assert.equal(metrics[item].uncovered, true, label + ' ' + item + ' is not covered by another app surface');
+      }
+      assert.equal(await surface.locator('#teach-next').isDisabled(), false, label + ' tap remains usable');
+    }
+    for (const viewport of viewports) for (const id of ['japji', 'jaap']) {
+      const surface = firstPage ? page : await context.newPage();
+      if (!firstPage) {
+        surface.setDefaultTimeout(15000);
+        surface.on('request', request => check.requests.push({host: new URL(request.url()).hostname,
+          path: new URL(request.url()).pathname, method: request.method(), body: request.postData()}));
+        surface.on('pageerror', error => check.pageErrors.push(error.message));
+        surface.on('console', message => { if (message.type() === 'error') check.consoleErrors.push(message.text()); });
+      }
+      firstPage = false;
+      try {
+        await surface.setViewportSize(viewport); await openApp(surface);
+        const named = await openBani(surface, id); await connect(surface);
+        await surface.frameLocator('#youtube-player iframe').locator('body')
+          .filter({hasText: 'TEST ONLY'}).filter({hasText: 'No recording is playing'}).waitFor({state: 'visible'});
+        const selected = id === 'japji' ? named.lines[0]
+          : named.lines.find(line => line.sourceUnitId === 'jaap062' && line.text === 'ਤੇਰਾ ਜੋਰੁ ॥');
+        assert.ok(selected); if (id === 'japji') assert.ok(selected.text.length > 60, 'Use the full long opening invocation');
+        await selectedLine(surface, selected.id); await mediaClock(surface, 12, 2);
+        await clickTimingEditorControl(surface, 'teach-toggle');
+        await visibleTeaching(surface, selected.text, viewport.width + '×' + viewport.height + ' ' + id + ' enabled');
+        if (id === 'japji' && [320,1280].includes(viewport.width)) {
+          const name = 'bani-teach-' + viewport.width + '.png';
+          await surface.screenshot({path: path.join(out, name), fullPage: false}); check.screenshots.push(name);
+        }
+        await clickTimingEditorControl(surface, 'teach-next');
+        const next = named.lines[named.lines.findIndex(line => line.id === selected.id) + 1];
+        await visibleTeaching(surface, next.text, viewport.width + '×' + viewport.height + ' ' + id + ' after tap');
+        await preserveLearning(surface, {noWrites: true});
+      } catch (error) {
+        layoutFailures.push({viewport, bani: id, error: error.stack || String(error)});
+      } finally { await surface.close(); }
+    }
+    assert.deepEqual(layoutFailures, [], 'Every teaching viewport and original-row length must remain usable');
+  });
+
   const corrupted = fixtures.sggs.chunks.get('c0001').bytes.toString().replace('ੴ', '੨');
   assert.equal(Buffer.byteLength(corrupted), fixtures.sggs.chunks.get('c0001').bytes.length);
   await scenario('Same-length source corruption refuses the complete reading without exposing partial source or touching notes', async (page, check) => {

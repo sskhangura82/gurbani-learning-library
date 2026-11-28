@@ -500,8 +500,8 @@
         },
         {
           "path": "collections/source-reader/read-along.mjs",
-          "bytes": 34764,
-          "sha256": "59003e9315ae7830f037600fe52461030a7bdffd86b5a7737ea67576e5965dc1",
+          "bytes": 35697,
+          "sha256": "2d34a3b6f4290bb212e2f08220b17705dd104e590c6068caa82e1991dac3e5eb",
           "imports": [
             {
               "kind": "import-statement",
@@ -530,9 +530,9 @@
       ],
       "output": {
         "path": "collections/source-reader/read-along.bundle.mjs",
-        "bytes": 101299,
-        "sha256": "4cf641ac0f46462024cc5c63457dbfcb5b230ac62cc736b9e334c43224a58623",
-        "integrity": "sha384-L3KCuHZpXLH59Lsb97Fur/qbkioYAaB179lSOkYjqdnBZ/WupKrd3gTc4uRZymgg",
+        "bytes": 102254,
+        "sha256": "35e9e87aa786859cb0ba908a4c75a3e77cea6a4057b033d42d63587b9896da8a",
+        "integrity": "sha384-IWil4Gdhqn9oAHHFCdkg62mKY0uhD87DIcztTzTfayY0J2OVrkJdij6zIQ0ZXCWL",
         "imports": []
       },
       "externalProviderScript": {

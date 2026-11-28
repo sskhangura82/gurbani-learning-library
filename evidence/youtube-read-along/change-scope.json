@@ -11,7 +11,7 @@
     {
       "path": "sw.js",
       "beforeSha256": "aee61773e961cb06b8cfa1efdae555863cd0c4f766c852db13222b1cfc36daeb",
-      "afterSha256": "7d64b3e7e8042b18f0201d2c0b25d3a86c5bf9adfac237aae7b681c18491d18a"
+      "afterSha256": "c789822c4baeb88299e0cd027695fa267c6ccf36e6e041ad76ef99963d19fb1e"
     }
   ],
   "added": [
@@ -41,19 +41,19 @@
     },
     {
       "path": "collections/source-reader/read-along.bundle.mjs",
-      "sha256": "4cf641ac0f46462024cc5c63457dbfcb5b230ac62cc736b9e334c43224a58623"
+      "sha256": "35e9e87aa786859cb0ba908a4c75a3e77cea6a4057b033d42d63587b9896da8a"
     },
     {
       "path": "collections/source-reader/read-along.mjs",
-      "sha256": "59003e9315ae7830f037600fe52461030a7bdffd86b5a7737ea67576e5965dc1"
+      "sha256": "2d34a3b6f4290bb212e2f08220b17705dd104e590c6068caa82e1991dac3e5eb"
     },
     {
       "path": "listen/index.html",
-      "sha256": "7f50f8caf5827a9124964e30e339e43d7f8b1a70c3164da749c25a13d9e4e41a"
+      "sha256": "35c1685bf058eb22a4d876a811fe93ed833d31ac88464c36c64c36048c5d1db4"
     },
     {
       "path": "listen/read-along.css",
-      "sha256": "b614f11f662f4e2d2d2ca7d9e744c47827a85801ec294c3fe2fff90839407760"
+      "sha256": "d1b4ed33742be9c7a1097769f1bdfb3570ac8c515018eb96ba279d35c6b3c62d"
     }
   ]
 }
