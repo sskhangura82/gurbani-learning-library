@@ -55,6 +55,7 @@ The source guide records the limits of the available evidence. It does not label
 | Breathing browser scenarios | 36 passed | `evidence/breathing/report.json` |
 | Meditation browser scenarios | 14 passed | `evidence/meditation-room/report.json` |
 | Real worker / offline navigation | 8 passed | `evidence/learning-practice/offline.json` |
+| Full worker update / failed-update preservation | 7 passed | `evidence/library-script-integrity/offline/2026-11-28T14-33-34-615Z/report.json` |
 | Script pins | 26 pages, 62 pins; check mode passes | `node tools/refresh-app-sri.mjs --check` |
 | Existing bundle reproducibility | Five bundles, 32 inputs; unchanged | `node tools/build-app-bundles.mjs --check` |
 
@@ -69,6 +70,7 @@ The offline test installs and verifies every byte of the 125-asset shell, then d
 1. **Short phone screen:** the initial box layout placed Stop below a 320 × 568 viewport. On narrow screens, Start now brings the cue and adjacent controls into view together. Tests measure and hit-test both Stop and Switch to no holds in normal/focus views at 320 × 568 and 390 × 844. The initial failure is retained in `evidence/meditation-breathing-room/short-screen-before.json`.
 2. **Hidden accessibility description:** the initial Start button referenced the box warning even for no-hold patterns. The description now includes that warning only for box breathing. A regression reads Chromium’s actual accessibility tree for default even, longer exhale, box and the no-hold escape; the resolved descriptions are retained in the report.
 3. **Small-screen heading spacing:** hiding a line break joined two words in the attention heading. The source now contains the separating space at either layout.
+4. **Legacy offline-update inventory:** the first GitHub run caught an older upgrade test whose expected asset list omitted the four new room assets. The test now uses the four fixed declared additions, validates the bounded amendment, and retains its independent exact-set and per-file-hash checks. All seven real upgrade scenarios pass locally, including rejection of corrupt/missing bundles while preserving the old cache and saved learning. No application bytes changed for this correction.
 
 ### Reproduce focused checks
 
@@ -80,6 +82,7 @@ node tools/build-app-bundles.mjs --check
 CHROMIUM_PATH=/path/to/chromium node tests/breathing-browser.mjs
 CHROMIUM_PATH=/path/to/chromium node tests/meditation-room.mjs
 CHROMIUM_PATH=/path/to/chromium node tests/learning-practice-offline.mjs
+CHROMIUM_PATH=/path/to/chromium node tests/library-script-integrity-offline.mjs
 ```
 
 The existing focused CI workflow now includes the new contracts and meditation browser test. GitHub execution is recorded separately from these local results.

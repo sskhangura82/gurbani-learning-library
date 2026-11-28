@@ -10,6 +10,7 @@ import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
+import {meditationRoomScope,MEDITATION_ROOM_ADDITIONS} from './helpers/meditation-room-scope.mjs';
 
 const root=path.resolve(fileURLToPath(new URL('../',import.meta.url)));
 const priorRef='e0a6cff22771d42ce3a2fe91ad96863daae214ed';
@@ -28,7 +29,8 @@ const additions=[
  './collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html',
  './collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html',
  './collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs',
- './psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css'
+ './psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css',
+ ...MEDITATION_ROOM_ADDITIONS.map(name=>'./'+name)
 ];
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8',
  '.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8',
@@ -122,7 +124,10 @@ try{
  prior=workerSpec(await read('prior','sw.js'));candidate=workerSpec(await read('candidate','sw.js'));
  report.prior=prior;report.candidate=candidate;
  report.testSha256=sha(await fs.readFile(fileURLToPath(import.meta.url)));
- await check('Candidate inventory preserves the prior release, Knowledge/Daily shell and exact Farid source-only additions',async()=>{
+ await check('Candidate inventory preserves the prior release and exact declared library, study and room additions',async()=>{
+  // Validate the bounded amendment before extending this independent inventory;
+  // the candidate worker's own EXPECTED object never defines the allowed set.
+  await meditationRoomScope();
   assert.notEqual(candidate.version,prior.version,'A changed release needs a distinct cache version');
   assert.notEqual(candidate.workerSha256,prior.workerSha256);
   assert.equal(Object.keys(prior.expected).length,85,'Frozen prior reference contains the known 85-asset release');

@@ -20,6 +20,13 @@
     "assets": 125,
     "report": "evidence/learning-practice/offline.json"
   },
+  "offlineUpgrade": {
+    "passed": 7,
+    "failed": 0,
+    "priorAssets": 85,
+    "candidateAssets": 125,
+    "report": "evidence/library-script-integrity/offline/2026-11-28T14-33-34-615Z/report.json"
+  },
   "nodeContracts": {
     "passed": 53,
     "failed": 0,
