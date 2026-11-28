@@ -1,0 +1,103 @@
+{
+ "ranAt": "2026-11-28T01:09:53.724Z",
+ "engine": "chromium",
+ "stubbedYouTube": true,
+ "limitations": [
+  "YouTube itself is replaced by a stand-in that implements the documented calls; real YouTube playback was not exercised by this test.",
+  "No physical iPhone or Safari test."
+ ],
+ "results": [
+  [
+   "ok",
+   "Page opens calmly with no errors and contacts nobody before Open"
+  ],
+  [
+   "ok",
+   "Rejects a link that is not YouTube, in plain words"
+  ],
+  [
+   "ok",
+   "Opens a video through the privacy-enhanced player and shows the verified Japji text"
+  ],
+  [
+   "ok",
+   "Every displayed line is the library text, unchanged and in order"
+  ],
+  [
+   "ok",
+   "Before any timing, nothing glows and the next step is offered"
+  ],
+  [
+   "ok",
+   "One tap at the first line spreads the bani across the video length"
+  ],
+  [
+   "ok",
+   "Tapping the line being recited moves the light there and learns the pace"
+  ],
+  [
+   "ok",
+   "Undo in the message takes the correction back"
+  ],
+  [
+   "ok",
+   "Teach mode shows the next line and marks it with one big tap"
+  ],
+  [
+   "ok",
+   "Speed changes keep the text matched to the video"
+  ],
+  [
+   "ok",
+   "Paused: tapping a line moves the video to that line"
+  ],
+  [
+   "ok",
+   "Hear-this-line-again jumps back to the start of the glowing line"
+  ],
+  [
+   "ok",
+   "A share link carries the timing to another device"
+  ],
+  [
+   "ok",
+   "The timing is remembered on this device after a reload"
+  ],
+  [
+   "ok",
+   "Kirtan style holds the tapped line instead of moving on"
+  ],
+  [
+   "ok",
+   "Clearing asks first and can be undone"
+  ],
+  [
+   "ok",
+   "A video whose owner blocks embedding gets a clear message and a YouTube link"
+  ],
+  [
+   "ok",
+   "Sukhmani Sahib loads on demand and verifies all 2,027 lines"
+  ],
+  [
+   "ok",
+   "Morning Nitnem joins five banis in order"
+  ],
+  [
+   "ok",
+   "No page errors and no other outside hosts during the whole session"
+  ],
+  [
+   "ok",
+   "Wide screen: video and controls beside the Gurbani, nothing overlapping the player"
+  ],
+  [
+   "ok",
+   "Day background reads well too"
+  ],
+  [
+   "ok",
+   "Narrow 320px phone: nothing wider than the screen, controls reachable"
+  ]
+ ]
+}

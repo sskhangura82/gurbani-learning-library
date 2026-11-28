@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-theme="amrit">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark"><meta name="robots" content="noindex,nofollow">
+<!-- Listen-along is the only page that talks to an outside service: YouTube's own player, in privacy-enhanced mode. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.youtube.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com; img-src 'self' data: https://i.ytimg.com; style-src 'self'; style-src-attr 'unsafe-inline'; font-src 'self'; connect-src 'self'; worker-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#111929">
+<title>Listen along · Gurbani Learning Library</title>
+<link rel="stylesheet" href="css/listen-along.css"><link rel="apple-touch-icon" href="icons/icon-180.png">
+</head>
+<body>
+<a class="skip" href="#bani-text">Skip to Gurbani</a>
+<header class="top">
+ <a href="index.html" class="brand" aria-label="Return to Gurbani Learning Library home">GURBANI <span>LEARNING LIBRARY</span></a>
+ <p class="top-title">Listen along <span lang="pa">ਨਾਲ ਸੁਣੋ</span></p>
+ <button type="button" id="open-settings" class="quiet" aria-haspopup="dialog">Settings</button>
+</header>
+
+<div class="layout">
+ <div class="left">
+ <section class="dock" aria-label="Video and controls">
+  <div class="player-box"><div id="player"></div>
+   <div id="player-empty" class="player-empty"><p lang="pa" aria-hidden="true">ੴ</p><p>Choose a bani, paste a YouTube link, and the Gurbani will follow the recitation.</p></div>
+  </div>
+  <div id="controls" class="controls" hidden>
+   <div class="row">
+    <button type="button" id="play" class="primary play" aria-label="Play">▶</button>
+    <div class="modes" role="group" aria-label="Mode">
+     <button type="button" data-mode="follow" aria-pressed="true">Follow</button>
+     <button type="button" data-mode="teach" aria-pressed="false"><span class="long">Teach timing</span><span class="short">Teach</span></button>
+    </div>
+    <button type="button" id="again" class="again" aria-label="Hear this line again" title="Hear this line again">↺</button>
+    <select id="speed" aria-label="Playback speed"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select>
+   </div>
+   <div id="teach-panel" class="teach" hidden>
+    <button type="button" id="next-line" class="primary next"><span class="next-label">Tap as this line begins</span><span id="next-text" class="next-text" lang="pa"></span></button>
+    <button type="button" id="undo" class="undo" disabled>Undo</button>
+   </div>
+   <div class="status-row"><p id="status" class="status" aria-live="polite"></p><button type="button" id="mark-first" class="mark-first" hidden>First line starts now</button></div>
+  </div>
+ </section>
+
+ <section class="side" aria-label="Choose what to listen to">
+  <form id="chooser" class="chooser" autocomplete="off">
+   <label for="bani">Bani</label>
+   <select id="bani">
+    <option value="japji">Japji Sahib · ਜਪੁਜੀ ਸਾਹਿਬ</option>
+    <option value="jaap">Jaap Sahib · ਜਾਪੁ ਸਾਹਿਬ</option>
+    <option value="savaiye">Tav-Prasad Savaiye · ਸਵੱਯੇ</option>
+    <option value="chaupai">Benti Chaupai Sahib · ਚੌਪਈ ਸਾਹਿਬ</option>
+    <option value="anand">Anand Sahib · ਅਨੰਦੁ ਸਾਹਿਬ</option>
+    <option value="morning">Morning Nitnem · all five in order</option>
+    <option value="rehras">Rehras Sahib · ਰਹਰਾਸਿ ਸਾਹਿਬ</option>
+    <option value="sohila">Kirtan Sohila · ਕੀਰਤਨ ਸੋਹਿਲਾ</option>
+    <option value="sukhmani">Sukhmani Sahib · ਸੁਖਮਨੀ ਸਾਹਿਬ</option>
+   </select>
+   <label for="link">YouTube link</label>
+   <div class="link-row"><input id="link" type="url" inputmode="url" placeholder="https://youtu.be/…" spellcheck="false" autocapitalize="off"><button type="submit" class="primary">Open</button></div>
+   <p id="chooser-error" class="error" role="alert" hidden></p>
+  </form>
+  <ol class="how" id="how">
+   <li><b>Open</b> a Gurbani video and press play.</li>
+   <li><b>Tap “First line starts now”</b> when the recitation begins. The light spreads the bani across the video.</li>
+   <li><b>If the light drifts, tap the line being recited.</b> It snaps there and learns the pace. For an exact match, use <b>Teach timing</b> once; after that the video always follows.</li>
+  </ol>
+  <p class="side-actions"><button type="button" id="share" class="quiet">Share this video’s timing</button></p>
+  <p id="text-check" class="text-check"></p>
+ </section>
+ </div>
+
+ <section class="reading" aria-label="Gurbani text">
+  <div id="bani-text" tabindex="-1"></div>
+  <button type="button" id="return" class="return" hidden>Return to the recitation</button>
+ </section>
+</div>
+
+<div id="toast" class="toast" role="status" hidden><span id="toast-text"></span><button type="button" id="toast-undo" hidden>Undo</button></div>
+
+<dialog id="settings" aria-labelledby="settings-title">
+ <div class="dialog-head"><h2 id="settings-title">Settings</h2><button type="button" class="close" data-close aria-label="Close">×</button></div>
+ <div class="dialog-body">
+  <label class="setting">Reading style
+   <select id="style"><option value="paath">Paath — steady recitation (light moves smoothly)</option><option value="kirtan">Kirtan — lines repeat (light waits for your tap)</option></select></label>
+  <label class="setting">Text size <input id="size" type="range" min="22" max="44" step="2" value="30"></label>
+  <label class="setting">Light a little earlier or later <input id="offset" type="range" min="-2" max="2" step="0.25" value="0"><output id="offset-out">0 s</output></label>
+  <label class="setting">Glow word by word <input id="words" type="checkbox" checked></label>
+  <label class="setting">Night background <input id="night" type="checkbox" checked></label>
+  <h3>This video's timing</h3>
+  <p class="plain" id="timing-summary"></p>
+  <div class="stack-buttons">
+   <button type="button" id="copy-link">Copy a link with this timing</button>
+   <button type="button" id="download">Save timing file</button>
+   <button type="button" id="copy-file">Copy timing file</button>
+   <label class="file-pick">Open a timing file <input type="file" id="open-file" accept="application/json,.json"></label>
+   <button type="button" id="clear" class="danger">Clear this video's timing</button>
+  </div>
+  <h3>About</h3>
+  <p class="plain">The video plays inside YouTube's own player in privacy-enhanced mode. Nothing is downloaded and nothing listens to the sound. The timing is a small list of "this line starts at this second" marks, kept only on this device unless you share it. The Gurbani shown is the library's own text, checked line by line against its stored fingerprints before it appears.</p>
+ </div>
+</dialog>
+
+<dialog id="confirm" aria-labelledby="confirm-title">
+ <div class="dialog-body"><h2 id="confirm-title">Clear the timing?</h2><p class="plain">This removes every mark for this video on this device. You can undo it until you leave the page.</p>
+ <div class="row"><button type="button" data-close>Keep it</button><button type="button" id="confirm-clear" class="danger">Clear</button></div></div>
+</dialog>
+
+<script src="js/listen-along-core.js"></script>
+<script src="js/japji-full-data.js"></script>
+<script src="js/listen-along.js"></script>
+</body>
+</html>

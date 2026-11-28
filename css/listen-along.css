@@ -1,0 +1,112 @@
+/* VOICE: quiet, reverent — the darbar at Amrit Vela.
+   IDEA: the video is the kirtan stage; the text is the open Gutka beside it.
+   PICTURE: the line being recited glows softly; nothing else moves.
+   COLOUR and TYPE: the library's own Day/Amrit palette and Gurmukhi serif.
+   LAYOUT: phone — video and controls stay on top, Gurbani scrolls below; wide — video left, Gurbani right. */
+:root{--paper:#faf6ec;--surface:#fffcf4;--ink:#352f26;--muted:#655b4c;--line:#dcd1bf;--accent:#78561c;--wash:#f4e9cf;--glow:rgba(176,123,35,.30);--size:30px;color-scheme:light}
+:root[data-theme=amrit]{--paper:#111929;--surface:#192337;--ink:#f3e6c7;--muted:#c8bea9;--line:#3b465c;--accent:#f6d28a;--wash:#232c42;--glow:rgba(247,198,104,.45);color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:330px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:clip}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:8px 14px;min-height:44px;touch-action:manipulation}
+button:hover{background:var(--wash)}button:disabled{opacity:.45;cursor:default}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+select,input[type=url]{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 12px;min-height:44px;font-size:16px}
+a{color:var(--accent)}[hidden]{display:none!important}
+.primary{background:var(--accent);color:var(--paper);border-color:var(--accent);font-weight:600}
+.primary:hover{background:var(--accent);filter:brightness(1.07)}
+.quiet{background:transparent;font-size:13px}
+.danger{color:#b3261e;border-color:currentColor;background:transparent}
+:root[data-theme=amrit] .danger{color:#ffb4a9}
+.skip{position:fixed;top:-90px;left:12px;z-index:99;background:var(--surface);padding:12px}.skip:focus{top:10px}
+
+.top{display:flex;align-items:center;gap:12px;padding:8px max(16px,env(safe-area-inset-left)) 8px;max-width:1240px;margin:auto}
+.brand{font-size:11px;font-weight:650;letter-spacing:2px;line-height:1.7;color:var(--ink);text-decoration:none}.brand span{display:block;font-size:8px;letter-spacing:1.5px;color:var(--muted)}
+.top-title{flex:1;margin:0;text-align:center;font:20px/1.2 Georgia,serif}.top-title span{font:15px 'Gurmukhi MN','Noto Sans Gurmukhi',sans-serif;color:var(--muted);margin-left:6px}
+
+.layout{max-width:1240px;margin:auto;padding:0 max(12px,env(safe-area-inset-left)) 120px}
+.dock{position:sticky;top:0;z-index:10;background:var(--paper);padding-bottom:6px;border-bottom:1px solid var(--line)}
+.player-box{position:relative;aspect-ratio:16/9;width:100%;min-height:200px;background:#000;border-radius:12px;overflow:hidden}
+.player-box iframe,#player{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player-empty{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:20px;background:radial-gradient(circle at 50% 38%,#2a3350,#0b1020 70%);color:#f3e6c7}
+.player-empty p{margin:4px 0;max-width:34ch;font-size:14px;opacity:.85}
+.player-empty p[lang=pa]{font:54px/1.1 'Gurmukhi MN','Noto Serif Gurmukhi',serif;opacity:1;color:#f6d28a;text-shadow:0 0 18px rgba(247,198,104,.55)}
+.controls{padding-top:8px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.play{min-width:64px;font-size:18px}
+.again{min-width:48px;font-size:20px;padding:6px 10px}
+.modes{display:flex;flex:1;border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:180px}
+.modes button{flex:1;border:0;border-radius:0;background:transparent;font-size:14px}
+.modes button+button{border-left:1px solid var(--line)}
+.modes button[aria-pressed=true]{background:var(--wash);font-weight:650;box-shadow:inset 0 -2px 0 var(--accent)}
+#speed{width:76px;padding:8px}
+.teach{display:flex;gap:8px;margin-top:8px}
+.next{flex:1;display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-height:64px;padding:8px 14px}
+.next-label{font-size:11px;font-weight:600;opacity:.85}
+.next-text{font:19px/1.5 'Gurmukhi MN','Noto Serif Gurmukhi',serif;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.undo{min-width:72px}
+.status-row{display:flex;gap:8px;align-items:center;margin-top:6px;min-height:32px}
+.status{flex:1;margin:0;font-size:13px;color:var(--muted);line-height:1.45}
+.mark-first{background:var(--accent);color:var(--paper);border-color:var(--accent);font-weight:600;font-size:14px;min-height:40px}
+
+.side{padding:14px 2px 4px}
+.chooser{display:grid;gap:6px}
+.chooser label{font-size:13px;color:var(--muted)}
+.link-row{display:flex;gap:8px}.link-row input{flex:1}
+.error{color:#b3261e;font-size:14px;margin:4px 0}:root[data-theme=amrit] .error{color:#ffb4a9}
+.how{margin:14px 0 4px;padding-left:22px;font-size:14px;color:var(--muted)}.how li{margin:6px 0}.how b{color:var(--ink);font-weight:600}
+.text-check{font-size:12px;color:var(--muted);margin:10px 0 0}
+
+.reading{position:relative}
+.unit{padding:18px 0 4px}
+.unit h2{display:flex;align-items:center;gap:12px;margin:6px 0 10px;font-size:11px;font-weight:550;letter-spacing:1px;color:var(--muted)}
+.unit h2:after{content:'';height:1px;background:var(--line);flex:1;opacity:.6}
+.unit h2.bani-start{font:22px/1.3 Georgia,serif;letter-spacing:0;color:var(--ink)}
+.tuk{display:block;width:100%;margin:0;border:0;background:transparent;text-align:center;cursor:pointer;
+ font:400 var(--size)/2 'Gurmukhi MN','Noto Serif Gurmukhi','Raavi',serif;padding:6px 8px;border-radius:10px;color:var(--ink);transition:color .5s ease,background-color .5s ease,opacity .5s ease;min-height:0}
+.tuk:hover{background:transparent}
+.tuk.heading{font-size:calc(var(--size)*.72);color:var(--muted)}
+.tuk.past{opacity:.55}
+.tuk[aria-current=true]{background:var(--wash);opacity:1;text-shadow:0 0 10px var(--glow),0 0 22px var(--glow)}
+.tuk.estimated[aria-current=true]{background:transparent;box-shadow:inset 0 0 0 1px var(--line)}
+.w{transition:color .25s ease,text-shadow .25s ease}
+.words .tuk[aria-current=true] .w.on{color:var(--accent);text-shadow:0 0 8px var(--glow),0 0 18px var(--glow)}
+.return{position:fixed;left:50%;transform:translateX(-50%);bottom:max(18px,env(safe-area-inset-bottom));z-index:12;background:var(--accent);color:var(--paper);border-color:var(--accent);font-weight:600;box-shadow:0 6px 24px #0005}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:max(76px,calc(env(safe-area-inset-bottom) + 60px));z-index:13;display:flex;gap:10px;align-items:center;margin:0;padding:8px 10px 8px 16px;border-radius:12px;background:var(--ink);color:var(--paper);font-size:14px;box-shadow:0 6px 24px #0005;max-width:calc(100% - 24px)}
+.toast button{min-height:36px;background:transparent;color:var(--paper);border-color:var(--paper);padding:4px 12px}
+
+dialog{color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:0;border-radius:14px;max-height:88vh;width:min(560px,calc(100% - 24px))}
+dialog::backdrop{background:#0007}
+.dialog-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--paper)}
+.dialog-head h2{margin:0;font:24px Georgia,serif}.close{font-size:24px;min-width:44px;padding:0}
+.dialog-body{padding:16px 20px 22px}.dialog-body h2{font:22px Georgia,serif;margin:0 0 8px}
+.dialog-body h3{font:18px Georgia,serif;margin:22px 0 6px}
+.setting{display:flex;justify-content:space-between;align-items:center;gap:14px;margin:12px 0;font-size:14px}
+.setting select{max-width:62%}.setting input[type=range]{width:45%}.setting input[type=checkbox]{width:24px;height:24px}
+.setting output{font-size:12px;color:var(--muted);min-width:3.5em;text-align:right}
+.plain{font-size:13px;color:var(--muted);margin:6px 0}
+.stack-buttons{display:grid;gap:8px}
+.file-pick{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px}
+.file-pick input{max-width:55%;font-size:12px}
+
+.short{display:none}
+@media(max-width:599px){.wide-only{display:none}html{scroll-padding-top:300px}.top-title{font-size:17px}}
+@media(max-width:420px){
+ .layout{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right))}
+ .row{flex-wrap:nowrap;gap:6px}.play{min-width:48px;padding:6px}.modes{min-width:0}.modes button{font-size:13px;padding:6px 4px}
+ .long{display:none}.short{display:inline}#speed{width:62px;padding:6px}.again{min-width:44px;padding:6px}
+ .next{min-height:52px;padding:6px 10px}.next-text{font-size:17px}.undo{min-width:60px;padding:6px}
+ .status-row{min-height:0;margin-top:4px}.status{font-size:12px}.controls{padding-top:6px}.teach{margin-top:6px}
+ .top{padding-top:4px;padding-bottom:4px}.top-title span{display:none}.top-title{font-size:16px}
+}
+.left{display:contents}
+@media(min-width:900px){
+ html{scroll-padding-top:120px}
+ .layout{display:grid;grid-template-columns:minmax(0,460px) minmax(0,1fr);column-gap:36px;align-items:start}
+ .left{display:block;position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}
+ .dock{position:static;border-bottom:0}
+ .reading{max-width:760px}
+}
+@media(prefers-reduced-motion:reduce){.tuk,.w{transition:none}}
+.side-actions{margin:12px 0 0}

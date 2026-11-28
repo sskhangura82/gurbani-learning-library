@@ -45,6 +45,10 @@ jobs:
           node --check nitnem/local-learning.js
           node --check nitnem/learning/learning-ui.js
           node --check nitnem/offline.js
+      - name: Listen-along timing logic (scripture read-only)
+        run: |
+          node tests/listen-along-core.mjs
+          node --check js/listen-along.js
   verify-sukhmani-browser:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -94,4 +98,29 @@ jobs:
           path: |
             evidence/nitnem-browser-verification.json
             evidence/screenshots/nitnem/
+          if-no-files-found: warn
+  verify-listen-along-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser test tools
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Install Chromium and Gurmukhi fonts
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-core
+      - name: Test the listen-along page with a stand-in YouTube player
+        run: node tests/listen-along-browser.mjs
+      - name: Retain listen-along browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: listen-along-browser-evidence
+          path: |
+            evidence/listen-along-browser.json
+            evidence/screenshots/listen-along/
           if-no-files-found: warn
