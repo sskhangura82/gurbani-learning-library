@@ -541,3 +541,140 @@ permitted; contacting is not, and I have contacted nobody. Sending it is the fou
 
 **RIGHTS-01 status: unchanged, OPEN-OWNER-DECISION.** Narrowed: the text is fine, the
 explanation is settled (we write our own or ship none), the dated selection is the open item.
+
+---
+
+# Ninth update — PR #75, both tasks complete, 2026-11-27/28
+
+Appended, not rewritten. Covers RT-032 through RT-039 and IE-37.
+
+## What was reviewed
+
+PR #75's two assigned tasks, kept as two separate reviews with two separate frozen criteria
+sets, as the request required. Target `c3a4cc0`; increment compared against `320537b`.
+
+**Task A, four sections — 28 falsifiers, none fired.**
+**Task B, Kartarpur — 11 falsifiers, none fired.**
+
+No defect found in either. That is the first time in this review series that a candidate of
+this size has come back clean, and it is worth saying why rather than only that.
+
+## The identity question, answered better than asked
+
+The request warned that if later browser fixes changed runtime, the target would need
+re-pointing before an exact-head verdict. PR #75's head had indeed moved 12 commits ahead.
+**The runtime did not change:** zero differing paths outside tests, docs and evidence, and
+identical tree hashes for `collections`, `private-library`, `library`, `index.html`, `sw.js`
+and `tools`. So an exact-head runtime verdict was available. Three test files did change, so
+test-run results at the target do not transfer to the head — runtime does, tests do not.
+
+## What the candidate actually gets right
+
+Recorded because a reviewer who only ever lists defects is not giving a true account.
+
+- **Altering one character of Gurbani is refused**, and the chain is layered: the chunk digest
+  catches it, then the manifest digest, then the unit digest. Eleven single-field tampers all
+  refused, including an inserted ZWJ (so the RT-029 Open Granth divergence would be caught)
+  and a danda replaced with ASCII pipes.
+- **An incomplete package renders nothing.** Offline the reader refuses rather than showing
+  part of a composition, and I verified only reader shells are cached — none of the 155 source
+  chunks.
+- **`link-only` rights cannot smuggle text**: such a work must carry exactly the fixed notice,
+  byte-identical, and nothing else. Refused four ways.
+- **The `tradition` enumeration structurally excludes Gurbani** from the private comparative
+  library.
+- **Exclusion of modern translations is structural, not intentional**: the two admitted assets
+  contain only primary rows, and every translation and commentary in that database sits under
+  different asset ids.
+- **Authorship is qualified at the point of display**, not in a document the runtime never
+  reads — the contested Raagmala and blanket Dasam attributions travel with "as recorded by
+  this digital source. This metadata is not a separate historical authorship finding."
+- **They published a provenance gap they could have hidden**: the registry-reported git head
+  does not resolve on GitHub, and they recorded the 404 probe.
+- **They did not manufacture a review record in my name** when their automated Claude
+  invocation failed OAuth. Zero tokens, no record created, packet left `WITHHELD` with the
+  blocking reason naming the missing review.
+
+## Where the trust actually terminates
+
+Stated plainly because every integrity chain ends somewhere. Forging the chunk, the manifest
+descriptor, the pinned binding **and** the unit digest together is accepted. The root is
+`source-lock.mjs`, compiled into a bundle whose digest is pinned by `integrity` in both reader
+pages — so substituting it requires changing the bundle and the HTML that pins it, which lands
+in the committed tree. Defensible, and now described rather than implied.
+
+## Three of my own errors, in a row where the discipline mattered
+
+1. **Instrument near-miss, counts derivation.** My first pass read page numbers from the wrong
+   database column, got nulls, and presented as a discrepancy against the declared range. Same
+   shape as instrument-error 33. Checked, re-derived, ten of ten matched.
+2. **Instrument near-miss, normalisation.** My NFD test "passed" because this corpus is
+   invariant under all four normalisation forms — 840 of 840 lines. The mutation changed
+   nothing. Re-tested with substitutions that do change bytes; all fired.
+3. **Instrument near-miss, Task B.** My search for one spelling of *jap* reported it absent
+   from the cited lines, which would have been a finding against C7. The line uses another
+   form. Widened before writing.
+
+All three are the same rule: **an unexpected result is the moment to check the instrument.**
+
+## IE-37 — the one I published before catching
+
+I read the request's phrase "the earlier Claude authentication attempt performed zero semantic
+reviews" as a claim about my own earlier work and corrected it, twice, publicly. It was about
+their failed automated invocation and was exactly accurate. Retracted on the thread and
+recorded in full. The mechanism is the part worth keeping: I was quick to treat a sentence as
+an under-estimate of my own record. **Standing rule added — when a request appears to
+understate my prior work, locate the artifact it names before correcting it.**
+
+Running instrument-error total: **37**.
+
+## Findings register changes
+
+- **ANG-01 narrowed, status unchanged (OPEN).** The two new collections do carry the Ang basis,
+  in data and on every entry page and in the reading-view status line, with Dasam explicitly
+  stating its pages are not SGGS Angs. ANG-01 does not stand against them; it stands at the
+  salok-mahalla9 header named in its location, which I did not re-examine. The new collections
+  demonstrate the treatment, strengthening the case for applying it there.
+- **BUILD-01 stays closed.** I nearly reopened it on a toolchain-reproducibility finding that
+  does not exist — the pins and lockfile are present and CI installs with `npm ci --prefix`.
+  I had installed it wrongly.
+- No new product findings opened.
+
+## Branch state, flagged rather than acted on
+
+PR #38 carries this review branch into `main` and is **the only non-draft PR of thirty open**,
+reported cleanly mergeable. Verified: 436 files, **all additions**, zero modifications, zero
+deletions, **zero files outside `reviews/claude-independent/`**. So merging cannot break the
+application or alter scripture.
+
+The choice it creates is not a risk but a decision: merging publishes ~107,000 lines of review
+material to `main`, including the measured PIN attack cost and the map of which tampers are
+caught at which layer. The app's own page already discloses the PIN limitation; enumerating
+the defences is a different act. I could not check whether `main` is the Pages source from
+this session and do not assert it. `main` has **no branch protection** — not protected, no
+required checks, admins not enforced.
+
+**I have not merged, closed, or changed the draft state of #38.**
+
+## Founder-reserved, carried forward
+
+1. **Charitropakhyan.** The Dasam collection includes it. Whether it belongs in a learning
+   library is a judgment of Sikh practice. Named openly by the builder, which was right;
+   not closable by either agent, and two AI systems agreeing on it settles nothing.
+2. **The content notice's judgment-bearing conditions.** Its mechanical half — no
+   normalisation, no locator repair, exact primary records, groups never split — is verified.
+   Whether a presentation maintains the honour and reputation of the original works is not an
+   engineering test.
+3. **Two AI reviews are not authenticity.** RT-039 removes the packet's only blocking reason,
+   leaving ChatGPT authoring and Claude checking. The project's own constraint warns against
+   exactly that reading. The remaining gate is the founder's.
+4. **Hukamnama permission letter** — drafted, unsent; blocks the daily reading entirely.
+5. **Merge sequencing**, including PR #38's own ordering.
+6. **Branch protection on `main`.**
+
+## Not closable by review, unchanged
+
+Physical iPhone and iPad acceptance · VoiceOver · airplane mode · printed-source collation ·
+audio rights and permission · qualified Sikh scholarly review.
+
+A desktop browser at 320 pixels is not a phone, and I have not claimed otherwise anywhere.
