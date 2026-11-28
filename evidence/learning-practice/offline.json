@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T20:34:01.066Z",
+  "checkedAt": "2026-11-28T14:20:28.241Z",
   "engine": "Desktop Chromium",
   "checks": [
     {
@@ -15,18 +15,31 @@
       "status": "PASS"
     },
     {
+      "name": "The new room and manually advanced attention guide work offline",
+      "status": "PASS"
+    },
+    {
+      "name": "Evidence and traditional-context summaries are readable offline",
+      "status": "PASS"
+    },
+    {
       "name": "The refined Simran Room also opens and runs offline without a visible countdown",
       "status": "PASS"
     },
     {
       "name": "Neither offline tool creates practice records or changes existing local storage",
       "status": "PASS"
+    },
+    {
+      "name": "Offline practice navigation produces no runtime errors",
+      "status": "PASS"
     }
   ],
+  "runtimeErrors": [],
   "limitations": [
     "Network emulation, not physical airplane-mode acceptance. No iPhone or VoiceOver testing."
   ],
-  "browserVersion": "158.0.8127.37",
+  "browserVersion": "158.0.8127.0",
   "homeVisuals": {
     "capture": "Fresh fixed-width desktop context; viewport captures before and after actual scrolling",
     "counts": {
@@ -35,9 +48,9 @@
       "tools": 1
     },
     "toolsPosition": {
-      "scrollY": 1252,
-      "top": 295.484375,
-      "bottom": 547.65625,
+      "scrollY": 1124,
+      "top": 182.40625,
+      "bottom": 660.90625,
       "viewport": 844
     },
     "files": [
@@ -45,5 +58,5 @@
       "home-tools-390.png"
     ]
   },
-  "workerSHA256": "d92308fcde4b32982160825080421ef702ed74f2288b31b3000b38fff4bea610"
+  "workerSHA256": "b6f658cd1d5ff8e496bbff03f811a39f182a9be9e78ed25b380051ae056c0e1a"
 }

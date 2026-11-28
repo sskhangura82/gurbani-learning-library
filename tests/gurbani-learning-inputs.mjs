@@ -6,11 +6,13 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {meditationRoomScope,readBeforeMeditationRoom,readBeforeMeditationWorker,MEDITATION_ROOM_ADDITIONS} from './helpers/meditation-room-scope.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const base = '68f47ffba4782271651716c71a97bc1825f96f48';
 const git = (...args) => execFileSync('git', args, {cwd: root, maxBuffer: 64 * 1024 * 1024});
 const read = name => fs.readFile(path.join(root, name));
+const readBeforeRoom = name => readBeforeMeditationWorker(name, next => readBeforeMeditationRoom(next, read));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const application = name => !/^(?:\.github|docs|evidence|tests|tools)\//.test(name);
 const modified = [
@@ -33,7 +35,7 @@ test('Learning continuation declares exact modified and new application bytes fr
   assert.deepEqual(record.modified.map(value => value.path), modified);
   assert.deepEqual(record.added.map(value => value.path), added);
   for (const row of record.modified) {
-    const previous = git('show', base + ':' + row.path), current = await read(row.path);
+    const previous = git('show', base + ':' + row.path), current = await readBeforeRoom(row.path);
     assert.equal(hash(previous), row.beforeSha256, row.path + ' exact stable baseline');
     assert.equal(hash(current), row.afterSha256, row.path + ' explicit continuation bytes');
     assert.notEqual(row.beforeSha256, row.afterSha256, row.path + ' is an actual change');
@@ -42,13 +44,14 @@ test('Learning continuation declares exact modified and new application bytes fr
 });
 
 test('Every other existing application file, including scripture, private pack and saved-learning code, remains byte-identical', async () => {
+  await meditationRoomScope();
   const previousNames = git('ls-tree', '-r', '--name-only', base).toString().trim().split('\n').filter(application);
-  const currentNames = git('ls-files', '--cached', '--others', '--exclude-standard').toString().trim().split('\n').filter(application);
+  const currentNames = git('ls-files', '--cached', '--others', '--exclude-standard').toString().trim().split('\n').filter(application).filter(name => !MEDITATION_ROOM_ADDITIONS.includes(name));
   assert.deepEqual([...new Set(currentNames)].sort(), [...previousNames, ...added].sort(), 'No extra application files or deleted old inputs');
   const exempt = new Set(modified);
   for (const name of previousNames) {
     if (exempt.has(name)) continue;
-    assert.deepEqual(await read(name), git('show', base + ':' + name), name + ' preserved exactly');
+    assert.deepEqual(await readBeforeRoom(name), git('show', base + ':' + name), name + ' preserved exactly before the verified room amendment');
   }
 });
 

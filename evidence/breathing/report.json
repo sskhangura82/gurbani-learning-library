@@ -1,79 +1,506 @@
 {
-  "startedAt": "2026-11-26T20:23:24.873Z",
-  "browser": "158.0.8127.37",
+  "startedAt": "2026-11-28T14:21:12.600Z",
+  "browser": "158.0.8127.0",
   "checks": [
     {
-      "name": "The physiology contract has exactly two equal phases and no configurable holding phase",
+      "name": "The frozen default remains a two-phase 5:5 physiological guide without holds",
       "status": "passed"
     },
     {
-      "name": "The tool is explicitly physiological, starts idle and includes comfort and not-treatment instructions",
+      "name": "The guide loads idle, defaults to no holds, and states its comfort and medical limits",
       "status": "passed"
     },
     {
-      "name": "All three source links resolve to in-page references and no unsupported individual outcome is promised",
+      "name": "Chromium exposes the box hold warning to assistive technology only when box breathing is selected",
       "status": "passed"
     },
     {
-      "name": "Layout fits at 320, 390, 820 and 1440 pixels with a usable Stop target",
+      "name": "Standard even: all phase boundaries, labels and current-step indicators follow the actual browser clock",
       "status": "passed"
     },
     {
-      "name": "Keyboard activation starts immediately with inhale, reaches exhale at five seconds and inhale at ten without a hold",
+      "name": "Standard longer-exhale: all phase boundaries, labels and current-step indicators follow the actual browser clock",
       "status": "passed"
     },
     {
-      "name": "Stopping cancels the guide and restores keyboard focus without storing a session",
+      "name": "Standard box: all phase boundaries, labels and current-step indicators follow the actual browser clock",
       "status": "passed"
     },
     {
-      "name": "Motion can be turned off while the guide remains usable through words",
+      "name": "Shorter even: adapted timings are labelled and used in the pacer",
       "status": "passed"
     },
     {
-      "name": "A hidden-page event stops the guide and returning does not restart it",
+      "name": "Shorter box: adapted timings are labelled and used in the pacer",
       "status": "passed"
     },
     {
-      "name": "Page exit and a persisted return leave the guide stopped",
+      "name": "The box marker follows its sides while the circle stays fixed during a hold",
       "status": "passed"
     },
     {
-      "name": "The guide never reads or writes web storage, fetches data or creates cookies",
+      "name": "Pausing during a hold gives a neutral cue; restart begins a fresh inhale",
       "status": "passed"
     },
     {
-      "name": "Reduced-motion preference disables animation initially and cannot be overridden accidentally",
+      "name": "Switching away from holds selects 4:4, stops, and requires a fresh Start",
       "status": "passed"
     },
     {
-      "name": "A mismatched content layer cannot start the physiological controller",
+      "name": "Changing a pattern or pace stops a running guide instead of inheriting its clock",
       "status": "passed"
     },
     {
-      "name": "No runtime JavaScript failures occurred",
+      "name": "Invalid pattern and pace selections fail closed and can recover through a valid choice",
+      "status": "passed"
+    },
+    {
+      "name": "Escape stops a hold, exits focus view, and restores Start focus",
+      "status": "passed"
+    },
+    {
+      "name": "Hiding a running guide stops it; becoming visible does not resume it",
+      "status": "passed"
+    },
+    {
+      "name": "Hiding a paused guide stops it; becoming visible does not resume it",
+      "status": "passed"
+    },
+    {
+      "name": "Page exit and a persisted page return leave an active guide stopped",
+      "status": "passed"
+    },
+    {
+      "name": "A delayed animation frame stops instead of jumping into a missed hold",
+      "status": "passed"
+    },
+    {
+      "name": "Actual scrolling away from the visual guide stops it and returning does not restart it",
+      "status": "passed"
+    },
+    {
+      "name": "A manual still guide keeps text cues moving without moving the orb or box marker",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion starts still, cannot accidentally be overridden, and retains phase guidance",
+      "status": "passed"
+    },
+    {
+      "name": "A live reduced-motion preference change stops visual motion without stopping text guidance",
+      "status": "passed"
+    },
+    {
+      "name": "normal view at 320×568, even: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "normal view at 320×568, box: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "focus view at 320×568, even: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "focus view at 320×568, box: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "normal view at 390×844, even: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "normal view at 390×844, box: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "focus view at 390×844, even: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "focus view at 390×844, box: keyboard access and reachable exit controls",
+      "status": "passed"
+    },
+    {
+      "name": "The desktop catalogue selects a pattern, mirrors the mobile selector, and fits wide layouts",
+      "status": "passed"
+    },
+    {
+      "name": "The narrow active guide is captured with readable cues and an enabled Stop",
+      "status": "passed"
+    },
+    {
+      "name": "Research copy names its limits and local source links resolve to actual sections",
+      "status": "passed"
+    },
+    {
+      "name": "An incorrect document boundary (wrong-layer) cannot activate the controller",
+      "status": "passed"
+    },
+    {
+      "name": "An incorrect document boundary (wrong-practice) cannot activate the controller",
+      "status": "passed"
+    },
+    {
+      "name": "No runtime errors, failed requests, external requests, storage access or cookies occurred",
       "status": "passed"
     }
   ],
   "runtimeErrors": [],
+  "requestFailures": [],
+  "externalRequests": [],
+  "privacyChecks": [
+    {
+      "name": "The guide loads idle, defaults to no holds, and states its comfort and medical limits",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Chromium exposes the box hold warning to assistive technology only when box breathing is selected",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Standard even: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Standard longer-exhale: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Standard box: all phase boundaries, labels and current-step indicators follow the actual browser clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Shorter even: adapted timings are labelled and used in the pacer",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Shorter box: adapted timings are labelled and used in the pacer",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "The box marker follows its sides while the circle stays fixed during a hold",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Pausing during a hold gives a neutral cue; restart begins a fresh inhale",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Switching away from holds selects 4:4, stops, and requires a fresh Start",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Changing a pattern or pace stops a running guide instead of inheriting its clock",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Invalid pattern and pace selections fail closed and can recover through a valid choice",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Escape stops a hold, exits focus view, and restores Start focus",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Hiding a running guide stops it; becoming visible does not resume it",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Hiding a paused guide stops it; becoming visible does not resume it",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Page exit and a persisted page return leave an active guide stopped",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "A delayed animation frame stops instead of jumping into a missed hold",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Actual scrolling away from the visual guide stops it and returning does not restart it",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "A manual still guide keeps text cues moving without moving the orb or box marker",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Reduced motion starts still, cannot accidentally be overridden, and retains phase guidance",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "A live reduced-motion preference change stops visual motion without stopping text guidance",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "normal view at 320×568, even: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "normal view at 320×568, box: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "focus view at 320×568, even: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "focus view at 320×568, box: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "normal view at 390×844, even: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "normal view at 390×844, box: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "focus view at 390×844, even: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "focus view at 390×844, box: keyboard access and reachable exit controls",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "The desktop catalogue selects a pattern, mirrors the mobile selector, and fits wide layouts",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "The narrow active guide is captured with readable cues and an enabled Stop",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "Research copy names its limits and local source links resolve to actual sections",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "An incorrect document boundary (wrong-layer) cannot activate the controller",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    },
+    {
+      "name": "An incorrect document boundary (wrong-practice) cannot activate the controller",
+      "storageReads": 0,
+      "storageWrites": 0,
+      "fetches": 0,
+      "indexedDBOpens": 0,
+      "beacons": 0,
+      "cookies": 0
+    }
+  ],
+  "accessibleDescriptions": [
+    {
+      "selection": "default even",
+      "description": "Keep the breath gentle, without taking bigger breaths to keep up. You do not need to fill or empty your lungs completely. Stop if you feel dizzy, short of breath or more distressed. Return to your normal breathing. This is not treatment and does not replace medical care."
+    },
+    {
+      "selection": "longer exhale",
+      "description": "Keep the breath gentle, without taking bigger breaths to keep up. You do not need to fill or empty your lungs completely. Stop if you feel dizzy, short of breath or more distressed. Return to your normal breathing. This is not treatment and does not replace medical care."
+    },
+    {
+      "selection": "box",
+      "description": "Keep the breath gentle, without taking bigger breaths to keep up. You do not need to fill or empty your lungs completely. Stop if you feel dizzy, short of breath or more distressed. Return to your normal breathing. This is not treatment and does not replace medical care. Box breathing includes two holds. Do not strain or wait for the cue if you need to breathe. You can switch to no holds below."
+    },
+    {
+      "selection": "even after switching away from holds",
+      "description": "Keep the breath gentle, without taking bigger breaths to keep up. You do not need to fill or empty your lungs completely. Stop if you feel dizzy, short of breath or more distressed. Return to your normal breathing. This is not treatment and does not replace medical care."
+    }
+  ],
   "screenshots": [
     "evidence/breathing/ready-390.png",
-    "evidence/breathing/active-390.png",
-    "evidence/breathing/reduced-motion-390.png"
+    "evidence/breathing/reduced-motion-390.png",
+    "evidence/breathing/box-active-320.png",
+    "evidence/breathing/focus-320.png",
+    "evidence/breathing/box-focus-390.png",
+    "evidence/breathing/ready-1440.png",
+    "evidence/breathing/active-390.png"
   ],
   "limitations": [
-    "Desktop Chromium with narrow viewport emulation only. No physical iPhone, Safari, VoiceOver or human usability acceptance.",
-    "Visibility suspension is tested with a synthetic hidden-state event; mobile background timing needs a real-device check.",
-    "Research copy awaits independent review; browser checks do not establish clinical efficacy or safety for an individual."
+    "Desktop Chromium, including narrow viewport emulation. No physical iPhone, Safari, VoiceOver or human usability acceptance.",
+    "Lifecycle checks include synthetic visibility/page transition events and an emulated delayed animation frame. Real device suspension still needs acceptance.",
+    "Research and traditional-context copy require independent review. Browser tests do not establish clinical efficacy, individual safety or religious authority.",
+    "Links are checked for local destinations and named external source addresses. This suite does not establish continuing remote source availability."
   ],
   "inputSha256": {
-    "breathing.html": "82313f11d91a9dcd44f8674d4484d1ecc7fe0014c0af5129fe9c347b06f5bb11",
-    "css/breathing.css": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f",
-    "js/breathing-core.js": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5",
-    "js/breathing.js": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38",
-    "tests/breathing-browser.mjs": "f54d1744c9de2e3e28cdc53400d94ad9adac6b3f8f8ecadfc57a16832b6b55c6"
+    "breathing.html": "e34b343879aa4bfbdc48819baf0dcb430aa7e309a1cfb838999addd5fa9b6736",
+    "css/breathing.css": "062b5afd5bcf567df1b6a985662141d0884725ee61a65d44f8f331593018b28d",
+    "js/breathing-core.js": "0d9c46bfa2c8c9167ada7500da75e91b7eaa096797064d1074c8200af41b2391",
+    "js/breathing.js": "d1e5fe48770ccaf3e0bc366314e2e93014c0683b9bd66d02ca6842e9c9b978c2",
+    "meditation.html": "d34b35e9cd8705da681dffa89a9ca3fcaa2ab5fd179cf2f038a1099b0d3c86c9",
+    "practice-sources.html": "32f856556d60343ad1c3bac3766ce2f4f7d643da994e6e05091650ef26d9ffc9",
+    "tests/breathing-browser.mjs": "c1c5b4b24c5ac4f1688dfdc9c4050aaa54ed27f1ae331d44c04f60cb3420f5ed"
   },
-  "finishedAt": "2026-11-26T20:23:30.691Z",
-  "passed": 13,
+  "finishedAt": "2026-11-28T14:21:43.226Z",
+  "passed": 36,
   "failed": 0
 }

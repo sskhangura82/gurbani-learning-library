@@ -1,0 +1,59 @@
+{
+  "schema": "glp.meditation-breathing.change-scope.v1",
+  "base": "cfded3e2186c1f6e325d135f1fa62da1f03d34bb",
+  "files": [
+    {
+      "path": "index.html",
+      "hashMode": "script-loader-normalized",
+      "beforeSha256": "8bfaebfe80ccaa6808b02afa426043a27b13575a630b8af2eeb15657c0397d47",
+      "afterSha256": "41db872518fc4ba43c6c0c8b5e4610cd90d21ac0daaf68557075d9bea4fe8e54"
+    },
+    {
+      "path": "breathing.html",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "3eb16e943ebf7b265bdd68843f310e0f5bbc1150c65291006fec2e81b401aca2",
+      "afterSha256": "e34b343879aa4bfbdc48819baf0dcb430aa7e309a1cfb838999addd5fa9b6736"
+    },
+    {
+      "path": "css/breathing.css",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "54022c5e78f0eb78deff8d5a2b82c11f1ef941d6a597435a9c2e27399393ca3f",
+      "afterSha256": "062b5afd5bcf567df1b6a985662141d0884725ee61a65d44f8f331593018b28d"
+    },
+    {
+      "path": "js/breathing-core.js",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "13263739bebcbb94f2fb28cb1b743a9cec0f9ecb4aa33397d4886017f866aca5",
+      "afterSha256": "0d9c46bfa2c8c9167ada7500da75e91b7eaa096797064d1074c8200af41b2391"
+    },
+    {
+      "path": "js/breathing.js",
+      "hashMode": "raw-bytes",
+      "beforeSha256": "c894c9a693a6baa9fce3a3adc22662b2dc72a8a9fda4f3fc674152235e8abb38",
+      "afterSha256": "d1e5fe48770ccaf3e0bc366314e2e93014c0683b9bd66d02ca6842e9c9b978c2"
+    }
+  ],
+  "added": [
+    {
+      "path": "meditation.html",
+      "sha256": "d34b35e9cd8705da681dffa89a9ca3fcaa2ab5fd179cf2f038a1099b0d3c86c9"
+    },
+    {
+      "path": "practice-sources.html",
+      "sha256": "32f856556d60343ad1c3bac3766ce2f4f7d643da994e6e05091650ef26d9ffc9"
+    },
+    {
+      "path": "css/meditation.css",
+      "sha256": "374336bfc068cf7ecdd8303abc09611b2f664686fe354ccb35bbd54815f7de86"
+    },
+    {
+      "path": "js/meditation.js",
+      "sha256": "2cafee1c247f62303b14170195409314d26886bb2bbcee7fd16e39cc83c73909"
+    }
+  ],
+  "worker": {
+    "path": "sw.js",
+    "beforeSha256": "aee61773e961cb06b8cfa1efdae555863cd0c4f766c852db13222b1cfc36daeb",
+    "afterSha256": "b6f658cd1d5ff8e496bbff03f811a39f182a9be9e78ed25b380051ae056c0e1a"
+  }
+}

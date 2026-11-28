@@ -10,7 +10,7 @@ const root=fileURLToPath(new URL('../',import.meta.url)),prefix='/glp-review/';
 const out=path.join(root,'evidence/learning-practice');
 const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8',
  '.mjs':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.webmanifest':'application/manifest+json'};
-const report={checkedAt:new Date().toISOString(),engine:'Desktop Chromium',checks:[],
+const report={checkedAt:new Date().toISOString(),engine:'Desktop Chromium',checks:[],runtimeErrors:[],
  limitations:['Network emulation, not physical airplane-mode acceptance. No iPhone or VoiceOver testing.']};
 const server=http.createServer(async(req,res)=>{
  try{
@@ -62,10 +62,11 @@ try{
  report.browserVersion=browser.version();
  context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'allow'});
  const page=await context.newPage();page.setDefaultTimeout(20000);
+ page.on('pageerror',error=>report.runtimeErrors.push(error.message));
  await page.goto(origin+prefix);
  await page.waitForFunction(()=>navigator.serviceWorker.controller!==null&&document.documentElement.dataset.libraryState==='ready');
  const cache=await verifiedReleaseCache(page);
- for(const asset of ['breathing.html','css/breathing.css','js/breathing-core.js','js/breathing.js','simran.html','js/simran.js'])assert.ok(cache.paths.includes(prefix+asset));
+ for(const asset of ['breathing.html','css/breathing.css','js/breathing-core.js','js/breathing.js','simran.html','js/simran.js','meditation.html','css/meditation.css','js/meditation.js','practice-sources.html'])assert.ok(cache.paths.includes(prefix+asset));
  report.checks.push({name:'Home installs the complete hashed candidate shell including both separate practice pages',status:'PASS'});
  assert.equal(await page.locator('.today-quiet a[href="breathing.html"]').count(),1);
  assert.equal(await page.locator('#reader-list a[href="breathing.html"]').count(),0);
@@ -95,23 +96,36 @@ try{
  report.checks.push({name:'The home link stays in a distinct optional personal-tools section at narrow and wide sizes',status:'PASS'});
  const priorStorage=await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).map(k=>[k,localStorage.getItem(k)])));
  await context.setOffline(true);
- const response=page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'breathing.html');
- await page.locator('.today-quiet a[href="breathing.html"]').click();
- assert.equal((await response).fromServiceWorker(),true);
+ const [response]=await Promise.all([page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'breathing.html'),page.locator('.today-quiet a[href="breathing.html"]').click()]);
+ assert.equal(response.fromServiceWorker(),true);
  await page.locator('#breathing-start').click();
  assert.equal(await page.locator('#pacer-stage').getAttribute('data-state'),'running');
  await page.locator('#breathing-stop').click();
  assert.equal(await page.locator('#pacer-stage').getAttribute('data-state'),'ready');
  report.checks.push({name:'Breathing opens from its cached home link and starts/stops with the network unavailable',status:'PASS'});
- await page.locator('.tool-header a').click();
- const simranResponse=page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'simran.html');
- await page.locator('a[href="simran.html"]').click();
- assert.equal((await simranResponse).fromServiceWorker(),true);
+ const [roomResponse]=await Promise.all([page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'meditation.html'),page.locator('.tool-header a[href="meditation.html"]').click()]);
+ assert.equal(roomResponse.fromServiceWorker(),true);
+ await page.locator('#attention-start').click();
+ assert.equal(await page.locator('#natural-attention').getAttribute('data-state'),'active');
+ await page.locator('#attention-next').click();
+ assert.match(await page.locator('#attention-instruction').textContent(),/own pace/);
+ await page.locator('#attention-end').click();
+ assert.equal(await page.locator('#natural-attention').getAttribute('data-state'),'idle');
+ report.checks.push({name:'The new room and manually advanced attention guide work offline',status:'PASS'});
+ const [sourcesResponse]=await Promise.all([page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'practice-sources.html'),page.locator('.room-header a[href="practice-sources.html"]').click()]);
+ assert.equal(sourcesResponse.fromServiceWorker(),true);
+ for(const id of ['study-marchant','study-mcallister','traditions','natural-attention'])assert.equal(await page.locator('#'+id).count(),1);
+ report.checks.push({name:'Evidence and traditional-context summaries are readable offline',status:'PASS'});
+ await page.locator('.tool-header a[href="meditation.html"]').click();
+ const [simranResponse]=await Promise.all([page.waitForResponse(r=>new URL(r.url()).pathname===prefix+'simran.html'),page.locator('.entrance-simran a[href="simran.html"]').click()]);
+ assert.equal(simranResponse.fromServiceWorker(),true);
  await page.locator('#sit-start').click();assert.equal(await page.locator('#sit-setup').isVisible(),false);
  await page.locator('#sit-stop').click();assert.equal(await page.locator('#sit-setup').isVisible(),true);
  report.checks.push({name:'The refined Simran Room also opens and runs offline without a visible countdown',status:'PASS'});
  assert.deepEqual(await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).map(k=>[k,localStorage.getItem(k)]))),priorStorage);
  report.checks.push({name:'Neither offline tool creates practice records or changes existing local storage',status:'PASS'});
+ assert.deepEqual(report.runtimeErrors,[]);
+ report.checks.push({name:'Offline practice navigation produces no runtime errors',status:'PASS'});
 }catch(error){report.failure=error.stack||String(error);process.exitCode=1;}
 finally{
  if(context)await context.close();if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));

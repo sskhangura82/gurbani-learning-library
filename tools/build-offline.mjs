@@ -9,6 +9,7 @@ const previous=JSON.parse(source.match(/const EXPECTED=(\{[^\n]+\});/)[1]);
 const additions=['./nitnem/','./nitnem/index.html','./nitnem/reader.js','./nitnem/reader.css','./nitnem/continuous-core.js','./nitnem/appearance.js','./nitnem/appearance.css','./nitnem/local-learning.js','./nitnem/offline.js','./nitnem/learning/learning-ui.js','./nitnem/learning/course.complete.json','./nitnem/data/library.json',...['jaap','savaiye','chaupai','anand','rehras','sohila'].map(name=>'./nitnem/data/'+name+'.json')];
 additions.push('./js/source-integrity.js');
 additions.push('./breathing.html','./css/breathing.css','./js/breathing-core.js','./js/breathing.js');
+additions.push('./meditation.html','./practice-sources.html','./css/meditation.css','./js/meditation.js');
 additions.push('./salok-mahalla9/','./salok-mahalla9/index.html','./salok-mahalla9/data/library.json','./salok-mahalla9/data/salok-mahalla9.json','./salok-mahalla9/learning/course.complete.json');
 additions.push('./salok-kabir/','./salok-kabir/index.html','./salok-kabir/data/library.json','./salok-kabir/data/salok-kabir.json','./salok-kabir/learning/course.complete.json');
 additions.push('./salok-farid/','./salok-farid/index.html','./salok-farid/data/library.json','./salok-farid/data/salok-farid.json');
@@ -42,5 +43,5 @@ for(const name of inventory){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.29-gurbani-learning-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.32-meditation-breathing-20261128-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));

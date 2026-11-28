@@ -5,6 +5,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import {readBeforeMeditationRoom} from './meditation-room-scope.mjs';
 const root=fileURLToPath(new URL('../../',import.meta.url));
 const BASE='320537b0cc4aceb2e6007b32057a3c4a36c83520';
 const files=['index.html','library/catalog.mjs','collections/dasam/index.html'];
@@ -20,7 +21,7 @@ export async function sourceReaderNavigationScope(){
   for(const item of record.files){
     assert.equal(item.hashMode,item.path==='index.html'?'script-loader-normalized':'raw-bytes');
     assert.equal(hash(comparable(item.path,prior(item.path))),item.beforeSha256,item.path+' exact pre-collection input');
-    assert.equal(hash(comparable(item.path,await read(item.path))),item.afterSha256,item.path+' exact full-collection navigation');
+    assert.equal(hash(comparable(item.path,await readBeforeMeditationRoom(item.path,read))),item.afterSha256,item.path+' exact full-collection navigation before the verified room entrance');
   }
   return new Set(files);
 }

@@ -1,0 +1,83 @@
+{
+  "startedAt": "2026-11-28T14:21:41.450Z",
+  "browser": "158.0.8127.0",
+  "checks": [
+    {
+      "name": "The room loads one integrity-pinned controller with a restrictive no-media, no-connect CSP",
+      "status": "passed"
+    },
+    {
+      "name": "The hub keeps Simran, physiological breathing and modern attention as distinct entrances",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard Start reveals the first prompt and puts focus on its heading",
+      "status": "passed"
+    },
+    {
+      "name": "Time never advances a prompt; Next and Back preserve the selected guide",
+      "status": "passed"
+    },
+    {
+      "name": "Every prompt can be reached and Finish returns focus to Start without a completion score",
+      "status": "passed"
+    },
+    {
+      "name": "The surroundings path offers contact, sight or sound without paced-breath instructions",
+      "status": "passed"
+    },
+    {
+      "name": "Escape and the persistent End control both finish immediately and restore Start focus",
+      "status": "passed"
+    },
+    {
+      "name": "Page hiding ends the guide, and becoming visible never silently resumes it",
+      "status": "passed"
+    },
+    {
+      "name": "Page exit and a persisted history return keep the guide ended",
+      "status": "passed"
+    },
+    {
+      "name": "Sources keep the guide an introduction and the Stoic reflection a philosophical prompt",
+      "status": "passed"
+    },
+    {
+      "name": "The layout fits 320, 390, 820 and 1440 pixels with readable type and useful touch targets",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion preserves the manual guide and visible End control at a narrow width",
+      "status": "passed"
+    },
+    {
+      "name": "A mismatched document layer cannot enable the attention controller",
+      "status": "passed"
+    },
+    {
+      "name": "The guide performs no persistence or data fetch, creates no cookies and requests no external resources",
+      "status": "passed"
+    }
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "evidence/meditation-room/room-1440.png",
+    "evidence/meditation-room/room-320.png",
+    "evidence/meditation-room/attention-active-390.png"
+  ],
+  "limitations": [
+    "Desktop Chromium with responsive viewport checks. No physical iPhone, Safari or VoiceOver acceptance.",
+    "Visibility and page-history events are synthetic. Actual device backgrounding remains unverified.",
+    "These checks establish interface behavior, not therapeutic outcomes or religious approval."
+  ],
+  "inputSha256": {
+    "meditation.html": "d34b35e9cd8705da681dffa89a9ca3fcaa2ab5fd179cf2f038a1099b0d3c86c9",
+    "css/meditation.css": "374336bfc068cf7ecdd8303abc09611b2f664686fe354ccb35bbd54815f7de86",
+    "js/meditation.js": "2cafee1c247f62303b14170195409314d26886bb2bbcee7fd16e39cc83c73909",
+    "tests/meditation-room.mjs": "22e268133225cb08682dd0d390ac949abbc39a80b98f0848e6f760398b5eed1b"
+  },
+  "finishedAt": "2026-11-28T14:21:46.924Z",
+  "passed": 14,
+  "failed": 0
+}

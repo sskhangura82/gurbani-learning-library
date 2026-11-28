@@ -9,6 +9,7 @@ import {fileURLToPath} from 'node:url';
 import {publicKnowledgeScope,readBeforePublicKnowledge} from './helpers/public-knowledge-scope.mjs';
 import {continuationNavigationScope,readBeforeContinuationNavigation} from './helpers/continuation-navigation-scope.mjs';
 import {sourceReaderNavigationScope} from './helpers/source-reader-navigation-scope.mjs';
+import {readBeforeMeditationRoom} from './helpers/meditation-room-scope.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export const INPUT_BASE='bf744d1ac5b845d63c3324ed1f231c3fec31e40e';
@@ -17,7 +18,7 @@ const KNOWLEDGE_BASE='a3476ac4b9be90dde350fb35dd13ce0b672c120d';
 const KNOWLEDGE_TIP='b68e080043bb0b4e5cb3d17977e65c8cd62c15b3';
 const git=(...args)=>execFileSync('git',args,{cwd:root,maxBuffer:64*1024*1024});
 const read=name=>fs.readFile(path.join(root,name));
-const readBeforeContinuation=name=>readBeforeContinuationNavigation(name,readBeforePublicKnowledge);
+const readBeforeContinuation=name=>readBeforeContinuationNavigation(name,next=>readBeforeMeditationRoom(next,readBeforePublicKnowledge));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const NAVIGATION_BASE='44401e35690322fb3dbc29c443bff86d73279fcb';
 const EXPLORE_BASE='d1fe71f4eabf8e2fb8695e1b624880fa1a8c639a';
