@@ -248,7 +248,15 @@ async function preserveLearning(page, {noWrites = false} = {}) {
 }
 async function geometry(page, width) {
   await page.setViewportSize({width, height: 900});
-  await page.locator('#youtube-player iframe').scrollIntoViewIfNeeded();
+  const fixtureBody = page.frameLocator('#youtube-player iframe').locator('body')
+    .filter({hasText: 'TEST ONLY'}).filter({hasText: 'No recording is playing'});
+  await fixtureBody.waitFor({state: 'visible'});
+  await page.evaluate(async () => {
+    const workspace = document.querySelector('.workspace');
+    window.scrollTo({top: Math.max(0, scrollY + workspace.getBoundingClientRect().top - 16), behavior: 'instant'});
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  });
+  await fixtureBody.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
   const metrics = await page.evaluate(() => {
     const frame = document.querySelector('#youtube-player iframe'), rect = frame?.getBoundingClientRect();
     return {viewport: innerWidth, documentWidth: document.documentElement.scrollWidth,
