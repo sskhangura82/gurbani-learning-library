@@ -4,7 +4,7 @@ Prepared 2026-11-27 (America/Los_Angeles).
 
 ## Outcome and review target
 
-[Draft PR #78](https://github.com/sskhangura82/gurbani-learning-library/pull/78) adds verified Bani choices and compact line-by-line teaching to the existing optional `listen/` companion. It is stacked on PR #77 at `7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58`. The tested application runtime is `8ec9b599dba4d112b6cc371e69d1515d2c9591ab`. Subsequent packaging consists of documentation and evidence; the [complete application digest inventory](../evidence/claude-listen-along/consolidation/application-runtime-hashes.json) records all 376 application files against that runtime.
+[Draft PR #78](https://github.com/sskhangura82/gurbani-learning-library/pull/78) adds verified Bani choices and compact line-by-line teaching to the existing optional `listen/` companion. It is stacked on PR #77 at `7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58`. The tested repaired application runtime is `4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd`. Subsequent packaging consists of documentation and evidence; the [complete application digest inventory](../evidence/claude-listen-along/consolidation/application-runtime-hashes.json) records all 376 application files against that runtime.
 
 Claude's supplied patch was retrieved intact, applied with `git am` on its matching production base, and preserved separately as `review/claude-listen-along-20261127` at `b2d34796a4a5f22d3d526b0fd04d495fa0744d30`. Its useful Bani picker, teaching and replay interactions were carried into the newer companion. Its alternate page and weaker timing/import/provider boundaries were not merged wholesale. The [prototype review](CLAUDE_LISTEN_ALONG_REVIEW_20261127.md) records the original reproduction and findings.
 
@@ -32,7 +32,7 @@ Inside **Set or adjust line timings**, turn on **Teach line by line**. The previ
 
 **Replay line**, beside the visible player, seeks to the start of the currently bounded occurrence. A repeated line uses the occurrence at the present media time. A gap, text pause or unfinished last marker does not invent a line interval. Seeking preserves the existing paused state; replay does not silently force playback.
 
-The player stays beside the text on desktop and above it on a narrow screen. Teaching uses one preview and one large tap button. Long source rows scroll within the preview instead of hiding the button. The final browser checks covered 320×640, 390×844 and 1280×900 layouts with both a long Mool Mantar row and Jaap's short interleaved heading, before and after a teaching tap. They verified the visible player, preview and hit-tested button without corrective test scrolling. The 320px and 1280px screenshots were also inspected visually.
+The player stays beside the text on desktop and above it on a narrow screen. Teaching uses one preview and one large tap button. Long source rows scroll within the preview instead of hiding the button. The final browser checks covered 320×640, 390×844 and 1280×900 layouts with both a long Mool Mantar row and Jaap's short interleaved heading, before and after a teaching tap. They verified the visible player, preview and hit-tested button without corrective test scrolling. The 320px and 1280px screenshots were also inspected visually. The expanded repair checks confirm keyboard scrolling through overflowing original text, stable in-panel focus, teaching Undo, source-heading labels and quiet automatic clock announcements.
 
 Line markers are the listener's annotations. There is no automatic speech recognition, inferred word timing, estimated pace mode or claim of perfect alignment from a pasted link. Playback-rate changes follow the player's real clock; the accuracy of a saved map still depends on when its marks were made.
 
@@ -40,21 +40,21 @@ Line markers are the listener's annotations. There is no automatic speech recogn
 
 The adapter fetches only the selected existing files, bounds their bytes and verifies independent pinned SHA-256 receipts before parsing. Existing JavaScript data wrappers are parsed as inert JSON, never evaluated as scripts. Every row's existing digest is checked, full original strings are retained, and missing crypto or a failed constituent prevents the whole selection from rendering. Prefaces, headings and Jaap Chhand 62's interleaved heading retain their exact order.
 
-Named Bani readings have a separate edition identity from the complete SGGS/Dasam corpus. Timing files bind the recording, collection, exact selection, edition receipt, constituent order and all source hashes. Identical row counts do not permit cross-edition reuse. Invalid or foreign imports leave the current reading and timings intact. This verifies fidelity to the pinned digital edition; it does not upgrade that edition's editorial or collation status.
+Named Bani readings have a separate edition identity from the complete SGGS/Dasam corpus. Timing files bind the recording, collection, exact selection, edition receipt, constituent order and all source hashes. Identical row counts do not permit cross-edition reuse. Invalid or foreign imports leave the current reading and timings intact. This verifies fidelity to the pinned digital edition; it does not upgrade that edition's editorial or collation status. The selection receipt is not a separate signature: the pins are trusted through the owned release, declared build inputs, HTML SRI and verified offline manifest.
 
 The existing provider adapter and configuration are unchanged. Explicit Load consent, required video-status lookup, current video identity checks, stale-request cancellation, hidden/offscreen pauses, disposal and the privacy/YouTube-terms notice are retained. A source selection or shared address does not connect to YouTube automatically. Saved timing operations remain separate from older notes, bookmarks and private storage.
 
 ## Recorded verification
 
-| Combined runtime 8ec9b59 | Result |
+| Repaired runtime 4a8ff80 | Result |
 | --- | --- |
-| Source, timing, provider, integrity and access Node contracts | 86 passed |
+| Source, timing, provider, integrity and access Node contracts | 88 passed |
 | Additional private-library and workflow contracts | 14 passed |
 | Service-worker simulation | 9 passed |
-| Read-along UI in actual Mac Chrome | 35 passed |
+| Read-along UI in actual Mac Chrome | 39 passed |
 | Existing navigation in actual Mac Chrome | 10 passed |
 | Actual offline/update regressions in Mac Chrome | 7 passed |
-| GitHub checks on runtime 8ec9b59 | 22 passed across 12 workflows |
+| GitHub checks on repaired runtime 4a8ff80 | 22 passed across 12 workflows |
 
 The new Bani source tests verify all 3,809 distinct rows and the 1,567-row Morning sequence, raw receipts, literal strings, interleaved headings, forged text plus a changed embedded row digest, missing crypto, partial failure and cross-edition refusal.
 
@@ -66,20 +66,20 @@ The original prototype also underwent native YouTube diagnostics with fresh brow
 
 ## Independent Claude Code review
 
-The connected Claude Code reviewed runtime `8ec9b599dba4d112b6cc371e69d1515d2c9591ab` and returned **changes required**. Its floating-point Replay defect was independently reproduced; the code repairs and new regression tests are implemented, with expanded browser verification and a focused Claude follow-up still pending. Read the [complete original review](../evidence/claude-listen-along/consolidation/claude-code/review.md) and [repair response](CLAUDE_LISTEN_ALONG_REPAIR_RESPONSE_20261127.md). Builder records retain their original review labels; this review is scoped to the increment and is not historical-content or older-stack approval.
+The connected Claude Code reviewed runtime `8ec9b599dba4d112b6cc371e69d1515d2c9591ab` and returned **changes required**. Its floating-point Replay defect was independently reproduced; the code repairs and new regression tests are implemented, and the repaired build passes 88 focused Node tests and all 39 feature-browser checks. The actual-Claude focused follow-up reports **F1 resolved and no blocking repair findings**, without release approval. Its CLI return contains only the final summary; the referenced earlier narrative and two non-blocking recommendation details were not captured. That limitation is recorded explicitly rather than inventing the missing findings. A separate [structured review of the supplied repair diff](../evidence/claude-listen-along/consolidation/claude-code/structured-notes/review.json) also reports F1 resolved and no blocking repair findings. Its concrete non-blocking suggestions and the full-code disposition are recorded in the repair response. Neither review is a release approval. Read the [captured focused verdict](../evidence/claude-listen-along/consolidation/claude-code/followup/result.json), [capture qualification](../evidence/claude-listen-along/consolidation/claude-code/followup/capture-notes.json), [complete original review](../evidence/claude-listen-along/consolidation/claude-code/review.md) and [repair response](CLAUDE_LISTEN_ALONG_REPAIR_RESPONSE_20261127.md). Builder records retain their original review labels; this review is scoped to the increment and is not historical-content or older-stack approval.
 
 ## Size, build and preservation
 
-The companion's unique owned HTML, stylesheet and bundle total **123,273 bytes** before transport compression, an increase of **24,241 bytes** over PR #77. This excludes YouTube's resources, existing on-demand source files and timing maps. No audio/video file is downloaded or hosted by the application.
+The companion's unique owned HTML, stylesheet and bundle total **125,724 bytes** before transport compression, an increase of **26,692 bytes** over PR #77. This excludes YouTube's resources, existing on-demand source files and timing maps. The application stores no audio/video file; playback uses the native streaming player.
 
 A synthetic map marking every named Japji row plus its end is **14,693 bytes**; equivalent capacity examples are 83,176 bytes for Sukhmani and 59,498 bytes for Morning. These use synthetic three-second intervals and are size measurements, not measured recitation maps. The exact construction and byte counts are in [timing-size.json](../evidence/claude-listen-along/consolidation/timing-size.json). The accepted timing-file limit remains 256 KiB. No media enters the public offline cache.
 
-The owned build contains six bundles, 41 declared graph inputs, 25 HTML pages and 62 script-integrity attributes. The public offline shell has 125 assets. Only two application modules are added; six existing application files change relative to PR #77. The exact eight-path increment is in [change-scope.json](../evidence/claude-listen-along/consolidation/change-scope.json). Source text files, provider adapter, provider configuration, private material and older learning schemas are unchanged.
+The owned build contains six bundles, 41 declared graph inputs, 25 HTML pages and 62 script-integrity attributes. The public offline shell has 125 assets. Only two application modules are added; six existing application files change relative to PR #77. The exact eight-path application increment is in [change-scope.json](../evidence/claude-listen-along/consolidation/change-scope.json). The [complete code and gating inventory](../evidence/claude-listen-along/consolidation/code-change-inventory.json) additionally records workflow, tests, build tools and gate-consumed scope receipts. Source text files, provider adapter, provider configuration, private material and older learning schemas are unchanged.
 
 ## Remaining release work
 
 1. Configure an owner-controlled YouTube Data API v3 browser key restricted to the intended website referrers and that API. The browser key is public client configuration, not a private account credential. No project, credential or billing setting was created in this work.
-2. Rebuild the owned bundle and refresh its integrity/offline/change-scope records for that configured runtime, then test the combined app with real permitted Japji, Jaap and kirtan recordings on the intended HTTPS origin. Verify seeks, speed changes, pauses, timing correspondence and advertisements where present.
+2. Rebuild the owned bundle and refresh its integrity/offline/change-scope records for that configured runtime, then test the combined app with real permitted Japji, Jaap and kirtan recordings on the intended HTTPS origin. Verify seeks (including keyframe landing), speed changes, pauses, timing correspondence and advertisements where present; record the native video-URL result, CSP reports and actual player controls/geometry.
 3. Test the final configured page on a physical iPhone in Safari, including the short viewport, scrolling, rotations and foreground/background transitions. Desktop phone-size viewports are not an iPhone acceptance test. No physical iPhone was accessible in this session.
 4. Keep the draft unmerged until Steve's merge decision. Existing historical review and daily-publishing decisions remain separate.
 
@@ -88,10 +88,10 @@ The status lookup requirement is documented in YouTube's [developer policies](ht
 ## Evidence
 
 - [Verification summary](../evidence/claude-listen-along/consolidation/summary.json)
-- [Read-along browser report](../evidence/claude-listen-along/browser/8ec9b59/read-along/report.json)
-- [Browser execution and clean-checkout receipt](../evidence/claude-listen-along/browser/8ec9b59/execution.json)
-- [Navigation report](../evidence/claude-listen-along/browser/8ec9b59/navigation/results.json)
-- [Offline/update report](../evidence/claude-listen-along/browser/8ec9b59/offline/report.json)
-- [320px teaching screenshot — synthetic player](../evidence/claude-listen-along/browser/8ec9b59/read-along/bani-teach-320.png)
-- [1280px teaching screenshot — synthetic player](../evidence/claude-listen-along/browser/8ec9b59/read-along/bani-teach-1280.png)
+- [Read-along browser report](../evidence/claude-listen-along/browser/4a8ff80/read-along/report.json)
+- [Browser execution and clean-checkout receipt](../evidence/claude-listen-along/browser/4a8ff80/execution.json)
+- [Navigation report](../evidence/claude-listen-along/browser/4a8ff80/navigation/results.json)
+- [Offline/update report](../evidence/claude-listen-along/browser/4a8ff80/offline/report.json)
+- [320px teaching screenshot — synthetic player](../evidence/claude-listen-along/browser/4a8ff80/read-along/bani-teach-320.png)
+- [1280px teaching screenshot — synthetic player](../evidence/claude-listen-along/browser/4a8ff80/read-along/bani-teach-1280.png)
 - [Original prototype review and native playback evidence](CLAUDE_LISTEN_ALONG_REVIEW_20261127.md)

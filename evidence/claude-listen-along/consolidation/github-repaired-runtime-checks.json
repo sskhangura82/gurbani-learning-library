@@ -1,0 +1,259 @@
+{
+  "schema": "glp.github-ci-receipt.v1",
+  "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd",
+  "checkedAtUTC": "2026-11-28T02:42:46.508Z",
+  "checks": [
+    {
+      "id": 140837353154,
+      "name": "isolated-browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104991/job/140837353154"
+    },
+    {
+      "id": 140837343404,
+      "name": "browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104906/job/140837343404"
+    },
+    {
+      "id": 140837341361,
+      "name": "browser-learning-and-offline",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104876/job/140837341361"
+    },
+    {
+      "id": 140837340040,
+      "name": "browser-enforcement-and-update-preservation",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104975/job/140837340040"
+    },
+    {
+      "id": 140837245912,
+      "name": "source-contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104992/job/140837245912"
+    },
+    {
+      "id": 140837245687,
+      "name": "verify-review-repairs-browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104911/job/140837245687"
+    },
+    {
+      "id": 140837245678,
+      "name": "verify-reader",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104911/job/140837245678"
+    },
+    {
+      "id": 140837245638,
+      "name": "source-and-access-boundaries",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104991/job/140837245638"
+    },
+    {
+      "id": 140837245628,
+      "name": "browser-and-print",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104992/job/140837245628"
+    },
+    {
+      "id": 140837245607,
+      "name": "verify-nitnem-browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104911/job/140837245607"
+    },
+    {
+      "id": 140837245550,
+      "name": "frozen-inputs-and-delivery-contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104975/job/140837245550"
+    },
+    {
+      "id": 140837245400,
+      "name": "focused-browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104839/job/140837245400"
+    },
+    {
+      "id": 140837245385,
+      "name": "verify-sukhmani-browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104911/job/140837245385"
+    },
+    {
+      "id": 140837245285,
+      "name": "contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104839/job/140837245285"
+    },
+    {
+      "id": 140837245246,
+      "name": "contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104906/job/140837245246"
+    },
+    {
+      "id": 140837245236,
+      "name": "original-source-and-learning-contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104876/job/140837245236"
+    },
+    {
+      "id": 140837245229,
+      "name": "library-candidate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104888/job/140837245229"
+    },
+    {
+      "id": 140837245182,
+      "name": "verify-salok-kabir",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104923/job/140837245182"
+    },
+    {
+      "id": 140837245131,
+      "name": "verify-candidate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104799/job/140837245131"
+    },
+    {
+      "id": 140837245061,
+      "name": "shared-readers",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104839/job/140837245061"
+    },
+    {
+      "id": 140837245029,
+      "name": "verify-salok-mahalla9",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104816/job/140837245029"
+    },
+    {
+      "id": 140837244974,
+      "name": "exact-source-and-browser",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104833/job/140837244974"
+    }
+  ],
+  "workflows": [
+    {
+      "id": 46099104816,
+      "name": "Salok Mahalla 9 source and reader checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104816",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104888,
+      "name": "Unified library and saved-entry checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104888",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104992,
+      "name": "Source reading sheets and print evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104992",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104833,
+      "name": "Complete passages in Explore",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104833",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104876,
+      "name": "Daily Hukamnama delivery and private learning",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104876",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104975,
+      "name": "Complete library script integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104975",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104991,
+      "name": "Open collections and private reading",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104991",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104906,
+      "name": "GLP Knowledge Pilot QA",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104906",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104911,
+      "name": "GLP Reader Quality Gate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104911",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104799,
+      "name": "Farid selected source-only reader checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104799",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104923,
+      "name": "Salok Kabir source and reader checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104923",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    },
+    {
+      "id": 46099104839,
+      "name": "Learning reliability and separate practice tools",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/sskhangura82/gurbani-learning-library/actions/runs/46099104839",
+      "head": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd"
+    }
+  ]
+}

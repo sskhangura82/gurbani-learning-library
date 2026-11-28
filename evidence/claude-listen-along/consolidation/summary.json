@@ -2,7 +2,7 @@
   "schema": "glp.listen-along-consolidation.verification.v1",
   "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
   "base": "7b0f8a35a093b4d4f10e95a1f65b2201f80d0c58",
-  "runtime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+  "runtime": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd",
   "applicationFileCount": 376,
   "applicationBytesMatchTestedRuntime": true,
   "originalPrototype": {
@@ -25,10 +25,10 @@
     "measuredRecitationAlignmentVerified": false
   },
   "checks": {
-    "focusedNodeContracts": 86,
+    "focusedNodeContracts": 88,
     "additionalAccessAndWorkflowContracts": 14,
     "serviceWorkerSimulation": 9,
-    "readAlongBrowser": 35,
+    "readAlongBrowser": 39,
     "navigationBrowser": 10,
     "offlineBrowser": 7,
     "githubRuntimeChecks": 22,
@@ -51,12 +51,13 @@
     "offlineAssets": 125
   },
   "size": {
-    "uniqueOwnedPageStyleBundleBytes": 123273,
-    "increaseOverParentBytes": 24241,
+    "uniqueOwnedPageStyleBundleBytes": 125724,
+    "increaseOverParentBytes": 26692,
     "syntheticNamedJapjiTimingBytes": 14693,
     "syntheticSukhmaniTimingBytes": 83176,
     "syntheticMorningTimingBytes": 59498,
-    "containsMedia": false
+    "containsMedia": false,
+    "timingMeasurementRuntime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab"
   },
   "provider": {
     "configuration": "EMPTY",
@@ -88,13 +89,20 @@
     "timingEditor": "collapsed by default"
   },
   "independentClaudeReview": {
-    "status": "CHANGES_REQUIRED",
-    "runtime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+    "initialVerdict": "CHANGES_REQUIRED",
+    "initialRuntime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+    "initialResult": "claude-code/result.json",
     "toolPermissionDenials": [],
-    "result": "claude-code/result.json",
-    "response": "../../../docs/CLAUDE_LISTEN_ALONG_REPAIR_RESPONSE_20261127.md",
-    "repairStatus": "CODE_IMPLEMENTED_BROWSER_AND_FOCUSED_REVIEW_PENDING",
-    "scope": "combined runtime source, timing and UI increment; no editorial or earlier-stack approval"
+    "repairRuntime": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd",
+    "repairVerification": "88 focused Node +14 access/workflow +9 worker +39 feature browser +10 navigation +7 offline passed",
+    "focusedFollowup": "F1_RESOLVED_NO_BLOCKING_REPAIR_FINDINGS_SUMMARY_CAPTURED",
+    "scope": "source, timing and UI increment and repair; no editorial, historical, production or earlier-stack approval",
+    "focusedFollowupResult": "claude-code/followup/result.json",
+    "focusedFullNarrativeAvailable": false,
+    "structuredClarification": "F1_RESOLVED_NO_BLOCKING_REPAIR_FINDINGS_LIMITED_DIFF_REVIEW",
+    "structuredResult": "claude-code/structured-notes/review.json",
+    "fullCodeDisposition": "../../../docs/CLAUDE_LISTEN_ALONG_REPAIR_RESPONSE_20261127.md",
+    "noReleaseOrContentApproval": true
   },
   "preservation": {
     "newApplicationFiles": 2,
@@ -110,5 +118,18 @@
     "No automatic speech recognition, measured word timing or trustworthy timing from a pasted link alone.",
     "Actual recitation alignment and advertisement behavior remain unverified.",
     "Physical iPhone, Safari and assistive-technology acceptance remain unverified."
-  ]
+  ],
+  "githubStatus": "PASS",
+  "repairFindings": {
+    "F1": "Numeric boundary fixed; original defect independently reproduced and fractional/repeated replay regressed.",
+    "F3": "Out-of-duration link offsets ignored with notice; player preserved.",
+    "F4": "Terminal cleanup and re-entrant callbacks fixed; native recording change and autoplay-block behavior preserved.",
+    "F5_F7": "Source headings and pinned menu titles preserved in UI.",
+    "F6": "Relative sourceDisplayOrder contract aligned.",
+    "F8_F9": "Keyboard row focus and automatic announcements corrected.",
+    "F10": "Accepted bounded full-text preview; keyboard scroll verified.",
+    "F11": "Universal privacy-enhanced treatment assessed against official documentation; no new owner gate.",
+    "F2_F12": "Configured live seek/CSP/provider-contract checks remain pending.",
+    "F13_F14": "Trust boundary and complete code/gating scope clarified."
+  }
 }

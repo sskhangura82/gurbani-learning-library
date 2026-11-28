@@ -1,0 +1,8 @@
+{
+  "scope": "Actual connected Claude Code follow-up on4a8ff80",
+  "capture": "CLI JSON returned only the last assistant summary. Its referenced preceding narrative and two non-blocking recommendation details are not present in the returned output.",
+  "scopedRecovery": "No transcript/debug record exists for this exact review session because persistence was disabled. No unrelated sessions were inspected.",
+  "verdictAvailable": true,
+  "fullNarrativeAvailable": false,
+  "noInventedRecommendationDetails": true
+}

@@ -1,6 +1,6 @@
 {
   "schema": "glp.application-runtime-equivalence.v1",
-  "runtime": "8ec9b599dba4d112b6cc371e69d1515d2c9591ab",
+  "runtime": "4a8ff80ce154d0d4d1bcaf101b597c2e3dd533cd",
   "status": "PASS",
   "fileCount": 376,
   "files": [
@@ -901,8 +901,8 @@
     },
     {
       "path": "collections/source-reader/read-along-bani.mjs",
-      "bytes": 9567,
-      "sha256": "95c8e8f432bc055ba4e7d183348c612e739fc4abc7c452018e7bca400ea0d2f6"
+      "bytes": 9833,
+      "sha256": "e4cb3e39842d4266b96049ad8d6e8922f78f50017f5b71763c134e70539f6d6b"
     },
     {
       "path": "collections/source-reader/read-along-config.mjs",
@@ -911,8 +911,8 @@
     },
     {
       "path": "collections/source-reader/read-along-core.mjs",
-      "bytes": 8589,
-      "sha256": "2d04b8b2c3a8faa58df00212609147a1a11eb68c7009e266f18cbf57b5aef3a3"
+      "bytes": 9070,
+      "sha256": "c2416a61de85d9c7ff4b386d4fc02b8448e5df6eaceab8b3a2729ca16aa814f6"
     },
     {
       "path": "collections/source-reader/read-along-player.mjs",
@@ -926,13 +926,13 @@
     },
     {
       "path": "collections/source-reader/read-along.bundle.mjs",
-      "bytes": 102254,
-      "sha256": "35e9e87aa786859cb0ba908a4c75a3e77cea6a4057b033d42d63587b9896da8a"
+      "bytes": 104555,
+      "sha256": "75112d5c87fd353e3734e012c27bd2cc9bcbb5320f077d154c767c8afeba9308"
     },
     {
       "path": "collections/source-reader/read-along.mjs",
-      "bytes": 35697,
-      "sha256": "2d34a3b6f4290bb212e2f08220b17705dd104e590c6068caa82e1991dac3e5eb"
+      "bytes": 37666,
+      "sha256": "7a9ac308d81ecee15aee212c20b52111b684aca1ac2ba8edd10a8b3520011051"
     },
     {
       "path": "collections/source-reader/reader.bundle.mjs",
@@ -1377,12 +1377,12 @@
     {
       "path": "listen/index.html",
       "bytes": 11629,
-      "sha256": "35c1685bf058eb22a4d876a811fe93ed833d31ac88464c36c64c36048c5d1db4"
+      "sha256": "2cc55a1641774e2e73790ad043f21e51de8fafb7d32f0c5c00cc2369afd7b7b8"
     },
     {
       "path": "listen/read-along.css",
-      "bytes": 9390,
-      "sha256": "d1b4ed33742be9c7a1097769f1bdfb3570ac8c515018eb96ba279d35c6b3c62d"
+      "bytes": 9540,
+      "sha256": "e1cf07b27a0f3518f4cd9633e7f26112f2f5b72f7545d35b2f0c4508dcb75573"
     },
     {
       "path": "manifest.webmanifest",
@@ -1872,7 +1872,7 @@
     {
       "path": "sw.js",
       "bytes": 13531,
-      "sha256": "c789822c4baeb88299e0cd027695fa267c6ccf36e6e041ad76ef99963d19fb1e"
+      "sha256": "7a48f40e9486f7b811f749b9322d1c0170dd30dacac309661be2994f07365584"
     },
     {
       "path": "vendor/opengranth/LICENSE",
