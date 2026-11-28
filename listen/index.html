@@ -18,7 +18,7 @@
 <label for="video-url">YouTube recording link</label>
 <div class="url-row"><input id="video-url" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" placeholder="Paste a YouTube link"><button id="video-load" type="submit" disabled>Load video</button><button id="video-disconnect" class="quiet" type="button" disabled>Disconnect</button></div>
 </form>
-<p class="small">Load video connects to YouTube and Google's video-status service. Playback uses YouTube's own player and controls. <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube terms</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google privacy</a></p>
+<p class="small">By choosing Load video, you agree to this <a href="#read-along-privacy">read-along privacy notice</a> and the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. This connects your browser to Google/YouTube. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 <details class="source-chooser"><summary>Choose the original text</summary>
 <div class="source-fields">
 <div><label for="source-mode">Reading</label><select id="source-mode"><option value="japji">Complete Japji Sahib</option><option value="sggs">Shabad or Salok from SGGS</option><option value="dasam">Dasam Granth passage</option></select></div>
@@ -67,6 +67,11 @@
 <p id="timing-status" class="status" data-state="idle" role="status" aria-live="polite">Timing files contain markers and their recording/source identity. Video and audio are not stored here.</p>
 <details class="cue-details"><summary>Review timing markers</summary><p id="cue-count" class="small">No markers yet.</p><ol id="timing-cues" class="cue-list"></ol></details>
 </section>
+<details id="read-along-privacy" class="provenance"><summary>Read-along privacy and YouTube terms</summary>
+<p>This feature uses YouTube API Services. Using this read-along's YouTube features means you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. Choosing Load video sends the chosen video ID to Google for a status check. Google/YouTube may process connection and device information, use cookies and show ads through the embedded player under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+<p>Original text comes from the library. For library timing notes, only choosing Save on device stores the video/source identifiers and manual markers in this browser. Delete saved timings removes the saved map for the current recording and source selection on this device. Exported files remain separate copies; delete them separately if no longer wanted.</p>
+<p>Our read-along and timing code adds no analytics, does not upload timing files, and does not access other library notes. Disconnect stops the player; it does not delete Google-held data or cookies.</p>
+</details>
 <details class="provenance"><summary>Original text and timing notes</summary><p id="source-provenance">Original source files are checked before they appear.</p><p>Text follows the named Shabad OS digital edition, including its spelling, order and complete source groups. A provider's grouping does not establish every traditional composition boundary. Your timing annotations belong to this exact edition and one recording.</p><p>YouTube supplies the video. The original-text panel and manual timing notes belong to this library. A recording link alone does not establish which words are being recited.</p><a href="https://www.shabados.com/docs/database/sources/" target="_blank" rel="noopener">Shabad OS source bibliography</a></details>
 <noscript><p>This companion needs JavaScript to verify the original text and connect the optional player. Continue through <a href="../index.html?view=read">All readings</a>.</p></noscript>
 </main>
