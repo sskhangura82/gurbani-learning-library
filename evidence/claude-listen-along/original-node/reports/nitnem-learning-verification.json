@@ -1,0 +1,41 @@
+{
+  "environment": "Node; synthetic storage and lock scheduling, not browser acceptance",
+  "checks": [
+    {
+      "name": "Reading a valid old Meaning record preserves pace 200 and writes nothing",
+      "status": "PASS"
+    },
+    {
+      "name": "Documented source-edition transition copies learning on save and leaves original record intact",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed, future and unknown-field records refuse writes while retaining original bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "Two stale tabs preserve disjoint reflections and bookmarks while saving positions",
+      "status": "PASS"
+    },
+    {
+      "name": "Import unions bookmarks, retains both conflicting reflections and current reading preferences",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid imports and overlong conflict merges leave current data unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Only one tab may edit a reflection at a time; release restores access",
+      "status": "PASS"
+    },
+    {
+      "name": "Without safe locks, reading and export work and writes are refused",
+      "status": "PASS"
+    },
+    {
+      "name": "Nitnem saves and imports never touch Japji or Sukhmani learning",
+      "status": "PASS"
+    }
+  ]
+}

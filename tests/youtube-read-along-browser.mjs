@@ -23,12 +23,13 @@ const configPath = 'collections/source-reader/read-along-config.mjs';
 const VIDEO = 'fixture0001', OTHER_VIDEO = 'fixture0002';
 const TIMING_PREFIX = 'glp001.youtube-timing.v1:';
 const publicPaths = new Set([pagePath, bundlePath, 'listen/read-along.css', 'collections/collections.css',
-  'collections/source-reader/reader.css', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png']);
+  'collections/source-reader/reader.css', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png',
+  'js/japji-full-data.js', 'js/sukhmani-data.js', ...['jaap','savaiye','chaupai','anand','rehras','sohila'].map(id => 'nitnem/data/' + id + '.json')]);
 const publicSource = value => /^collections\/source-data\/(?:sggs|dasam)\/(?:manifest\.json|chunks\/c[0-9]{4}\.json)$/.test(value);
 const isPublic = value => publicPaths.has(value) || publicSource(value);
 const isUnbundled = value => value.startsWith('collections/source-reader/') && value.endsWith('.mjs') && value !== bundlePath;
 const mime = {'.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8',
-  '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png'};
+  '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png'};
 const report = {status: 'PASS', started: new Date().toISOString(), sourceCommit: null,
   checks: [], failures: [], sourceHashes: {}, sourceBytes: {}, limits: [
     'Actual desktop Chrome, production owned bundle and DOM, with fresh contexts and synthetic records only.',
@@ -61,6 +62,50 @@ const specs = {
     sha256: '2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6'}
 };
 const fixtures = {};
+const baniSpecs = {
+  japji: {path: 'js/japji-full-data.js', count: 385, sha256: '7f5f78ac33da1a944e14c3d2b901926686df7e520e6fe681f6a28802d85e9808', selection: '0cb9ffa9b4e787a287cfb08326f1663fb718d16bdb406eb4cd2d13bc4a27c6e5'},
+  jaap: {path: 'nitnem/data/jaap.json', count: 808, sha256: 'f00ab63bfe27ad36fac6b7b285c480f3265780f5eb02bb077cafcc29c9e7dcec', selection: '12c5742dc062f1859914caccd97f90c151352424e6cf5d18cf26e145732ae671'},
+  savaiye: {path: 'nitnem/data/savaiye.json', count: 43, sha256: '7d5e6fe9ac801b7649e4ef3547a25a79ee1f543f70c4f6bb52492d2d8f37cfaa', selection: '414cdbe09c4c691f8d0a5279c5a3a7aa489d843b634c92c7a246fc6d2c8f0b9f'},
+  chaupai: {path: 'nitnem/data/chaupai.json', count: 121, sha256: '289bbd6d725a7921bf1e160620b14ac927fe5e5874c219849168ee70b9389046', selection: '03f25df63e1e67a89346c21f8119736dff03479ef9a65a749fc0183e2388d81f'},
+  anand: {path: 'nitnem/data/anand.json', count: 210, sha256: '124245dfbfa260efd618f513683cbd5dd273e5f7aefdf86bee28db4ee778471a', selection: 'a951c8f897f2b86a71a70f4844899878499032da2cd65187b87e49a77e89f287'},
+  rehras: {path: 'nitnem/data/rehras.json', count: 159, sha256: '81bff60d8c942a7eafc30a0b7f3ba994816c6e86a0c8d8daeb7c1ca2f2cebc3b', selection: 'c3ac38e711ff9115af16a8d1ea53524ee17136602ce397d229c8de144a3f0254'},
+  sohila: {path: 'nitnem/data/sohila.json', count: 56, sha256: '7fe21aec71a889c452d639141994087ee2a1390d800c78b59bf604c4496df673', selection: '9a3ba57baaa353fa3408ba3e68b4f031261a90e748354bc69b024dfa14ebd204'},
+  sukhmani: {path: 'js/sukhmani-data.js', count: 2027, sha256: '0cdd704749265c09ead442ec5fd6c84569b1da34dd40ec021585dacd4a1c65f6', selection: 'd4dc1072c401e20783adab6f703bfb6d2d58cb04a90164da9eaf2efa26071529'}
+};
+const baniReadings = new Map(), baniRaw = new Map();
+async function prepareBanis() {
+  for (const [id, spec] of Object.entries(baniSpecs)) {
+    const bytes = await readPublic(spec.path); assert.equal(hash(bytes), spec.sha256);
+    baniRaw.set(id, bytes);
+    let literal = bytes.toString('utf8');
+    if (spec.path.endsWith('.js')) literal = literal.slice(literal.indexOf('=') + 1).trim().replace(/;$/, '');
+    const data = JSON.parse(literal), rows = [];
+    if (id === 'japji' || id === 'sukhmani') {
+      for (const unit of data[id === 'japji' ? 'units' : 'ashtpadis'])
+        for (const line of unit.lines) rows.push({text: line[id === 'japji' ? 'text' : 'gurmukhi'], sourceUnitId: unit.id, sha256: line.sha256});
+    } else {
+      for (const line of data.preface || []) rows.push({...line, sourceUnitId: data.units[0].id});
+      for (const unit of data.units) {
+        const ordered = unit.sourceDisplayOrder ? unit.sourceDisplayOrder.map(item => item.kind === 'line'
+          ? unit.lines.find(line => line.id === item.id) : unit.metricalHeadings[item.index])
+          : [...(unit.metricalHeadings || []), ...unit.lines];
+        for (const line of ordered) rows.push({...line, sourceUnitId: unit.id});
+      }
+    }
+    assert.equal(rows.length, spec.count);
+    for (const row of rows) assert.equal(hash(row.text), row.sha256);
+    baniReadings.set(id, {binding: {collectionId: 'daily-bani', editionId: 'glp-daily-bani-pinned-originals-20261127-v1',
+      manifestSha256: spec.selection, selectionId: 'bani:' + id, units: [{id, sha256: spec.sha256}]},
+      lines: rows.map((row, index) => ({id: id + '-l' + String(index + 1).padStart(4, '0'),
+        text: row.text, unitId: id, sourceUnitId: row.sourceUnitId, sha256: row.sha256}))});
+  }
+  const parts = ['japji', 'jaap', 'savaiye', 'chaupai', 'anand'];
+  baniReadings.set('morning', {binding: {collectionId: 'daily-bani', editionId: 'glp-daily-bani-pinned-originals-20261127-v1',
+    manifestSha256: '71109f361d9039db365987d5af016376a7ad2a33f7e69e540520ada3c477ede3', selectionId: 'bani:morning',
+    units: parts.map(id => ({id, sha256: baniSpecs[id].sha256}))}, lines: parts.flatMap(id => baniReadings.get(id).lines)});
+  assert.equal([...baniReadings.values()].slice(0, 8).reduce((sum, reading) => sum + reading.lines.length, 0), 3809);
+  assert.equal(baniReadings.get('morning').lines.length, 1567);
+}
 async function prepareSource(collectionId) {
   const spec = specs[collectionId], base = 'collections/source-data/' + collectionId + '/';
   const bytes = await readPublic(base + 'manifest.json');
@@ -229,6 +274,20 @@ async function browseGroup(page, collection, pageNumber, unitId) {
   }, {first: reading.lines[0].id, length: reading.lines.length});
   await exactSource(page, reading); return reading;
 }
+async function chooseBani(page, id) {
+  await openSourceChooser(page);
+  await page.locator('#source-mode').selectOption('bani');
+  await page.locator('#source-bani').selectOption(id);
+}
+async function openBani(page, id) {
+  await chooseBani(page, id); await page.locator('#source-open').click(); await ready(page);
+  const reading = baniReadings.get(id);
+  await page.waitForFunction(({first, count}) => {
+    const rows = document.querySelectorAll('#read-along-text [data-line-id]');
+    return rows.length === count && rows[0]?.dataset.lineId === first;
+  }, {first: reading.lines[0].id, count: reading.lines.length});
+  await exactSource(page, reading); return reading;
+}
 async function exported(page) {
   const pending = page.waitForEvent('download'); await page.locator('#timing-export').click();
   const download = await pending, stream = await download.createReadStream(); assert.ok(stream);
@@ -317,6 +376,7 @@ async function scenario(name, run, options = {}) {
     const request = route.request(), url = new URL(request.url());
     if (url.origin === origin) {
       const relative = url.pathname.startsWith(prefix) ? url.pathname.slice(prefix.length) : '';
+      if (options.beforeLocal) await options.beforeLocal(relative, check);
       const mutations = {...(options.configured === false ? {} : {[pagePath]: positiveHTML, [bundlePath]: positiveBundle}), ...options.mutations};
       if (Object.hasOwn(mutations, relative)) {
         await route.fulfill({status: 200, contentType: mime[path.extname(relative)], body: mutations[relative]}); return;
@@ -378,6 +438,7 @@ async function scenario(name, run, options = {}) {
 try {
   const {chromium} = await import(process.env.GLP_PLAYWRIGHT_MODULE || 'playwright');
   await prepareSource('sggs'); await prepareSource('dasam');
+  await prepareBanis();
   japji = await expectedReading('sggs', 'section:1DSA');
   assert.equal(japji.binding.units.length, 39); assert.equal(japji.lines.length, 385);
   assert.deepEqual(japji.binding.units.map(unit => unit.id).slice(0, 2), ['DMP', 'LLL']);
@@ -541,9 +602,11 @@ try {
     await page.locator('#timing-save').click();
     await page.waitForFunction(key => window.__TEST_READ_ALONG_STORAGE_SNAPSHOT().local[key] !== undefined, key);
     assert.deepEqual(JSON.parse((await preserveLearning(page)).local[key]), marked);
+    await mediaClock(page, 22, 2); await activeLine(page, second);
     await page.locator('#timing-replay').click();
     const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
-    assert.ok(snapshot.calls.some(call => call[0] === 'seekTo' && call[2] === 10 && call[3] === true));
+    assert.ok(snapshot.calls.some(call => call[0] === 'seekTo' && call[2] === 20 && call[3] === true));
+    assert.equal(snapshot.players.find(player => !player.destroyed).state, 2, 'Replay preserves a paused recording');
     await exactSource(page, japji);
   });
 
@@ -738,6 +801,123 @@ try {
     assert.deepEqual((await exported(page)).value, unsaved);
     const kept = await preserveLearning(page); assert.equal(kept.local[key], JSON.stringify(marked));
   }, {quota: true, records: {[key]: JSON.stringify(marked)}});
+
+  await scenario('Named Bani presets expose all 3809 originals and Morning 1567 only after Open, without connecting a provider or restoring an old shared address', async (page, check) => {
+    await page.goto(origin + prefix + pagePath + '#v=' + VIDEO + '&b=jaap&s=p&n=808&a=0~0');
+    await ready(page); await exactSource(page, japji); assert.deepEqual(check.provider, []);
+    await page.locator('#video-url').fill('https://youtu.be/' + VIDEO);
+    await chooseBani(page, 'jaap');
+    assert.deepEqual(await page.locator('#source-bani option').evaluateAll(options => options.map(option => option.value)),
+      ['japji','jaap','savaiye','chaupai','anand','rehras','sohila','sukhmani','morning']);
+    await exactSource(page, japji);
+    assert.ok(!check.requests.some(request => request.path === prefix + baniSpecs.jaap.path), 'Menu choice alone does not load a source');
+    for (const id of [...Object.keys(baniSpecs), 'morning']) {
+      const reading = await openBani(page, id);
+      assert.equal(reading.lines.length, id === 'morning' ? 1567 : baniSpecs[id].count);
+      assert.equal(await page.locator('#youtube-player iframe').count(), 0);
+      assert.deepEqual(check.provider, []);
+    }
+    assert.equal(await page.locator('#timing-editor').evaluate(element => element.open), false);
+    check.storage = await preserveLearning(page, {noWrites: true});
+    assert.deepEqual(check.storage.audit.reads, [], 'Preset browsing does not read saved reader or timing state');
+  });
+
+  await scenario('Equal-length named Japji and full-SGGS timing maps cannot cross editions; refused import preserves source and both saved profiles', async (page, check) => {
+    await openApp(page); await connect(page); await page.locator('#timing-load').click();
+    const providerCount = check.provider.length, named = await openBani(page, 'japji');
+    assert.equal(check.provider.length, providerCount, 'Opening a preset does not reconnect the recording');
+    assert.equal(named.lines.length, japji.lines.length); assert.equal(await page.locator('#youtube-player iframe').count(), 0);
+    await connect(page);
+    await importTiming(page, marked); await page.waitForSelector('#timing-status[data-state="refused"]');
+    await exactSource(page, named); assert.deepEqual((await exported(page)).value, timing(named, []));
+    const own = timing(named, [{at: 1000, lineId: named.lines[0].id}, {at: 2000, lineId: null}]);
+    const foreign = clone(own); foreign.source.editionId += '-different';
+    await importTiming(page, foreign); await page.waitForSelector('#timing-status[data-state="refused"]');
+    await exactSource(page, named); assert.deepEqual((await exported(page)).value, timing(named, []));
+    await importTiming(page, own); await page.locator('#timing-save').click();
+    const ownKey = timingKey(VIDEO, named), kept = await preserveLearning(page);
+    assert.notEqual(ownKey, key); assert.equal(kept.local[key], JSON.stringify(marked));
+    assert.deepEqual(JSON.parse(kept.local[ownKey]), own); check.storage = kept;
+  }, {records: {[key]: JSON.stringify(marked)}});
+
+  await scenario('Compact teaching records exact Jaap62 rows including its mid-unit heading, repetitions and the final row without automatic saving', async (page, check) => {
+    await openApp(page); const named = await openBani(page, 'jaap'); await connect(page);
+    const rows = named.lines.filter(line => line.sourceUnitId === 'jaap062');
+    assert.deepEqual(rows.slice(0, 3).map(line => line.text), ['ਤੇਰਾ ਜੋਰੁ ॥', 'ਚਾਚਰੀ ਛੰਦ ॥', 'ਜਲੇ ਹੈਂ ॥']);
+    assert.equal(await page.locator('#teach-toggle').getAttribute('aria-pressed'), 'false');
+    await selectedLine(page, rows[0].id); await clickTimingEditorControl(page, 'teach-toggle');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[0].text);
+    await mediaClock(page, 10, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[1].text);
+    await mediaClock(page, 20, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-line').textContent(), rows[2].text);
+    await mediaClock(page, 30, 2); await clickTimingEditorControl(page, 'mark-pause');
+    await selectedLine(page, rows[0].id);
+    assert.equal(await page.locator('#teach-line').textContent(), rows[0].text, 'Selecting a previous row prepares a repetition');
+    await mediaClock(page, 40, 2); await clickTimingEditorControl(page, 'teach-next');
+    await mediaClock(page, 50, 2); await clickTimingEditorControl(page, 'mark-pause');
+    const final = named.lines.at(-1); await selectedLine(page, final.id);
+    assert.equal(await page.locator('#teach-line').textContent(), final.text);
+    await mediaClock(page, 60, 2); await clickTimingEditorControl(page, 'teach-next');
+    assert.equal(await page.locator('#teach-next').isDisabled(), true);
+    assert.equal(await page.locator('#teach-line').textContent(), '');
+    await mediaClock(page, 70, 2); await clickTimingEditorControl(page, 'mark-pause');
+    assert.deepEqual((await exported(page)).value, timing(named, [
+      {at: 10000, lineId: rows[0].id}, {at: 20000, lineId: rows[1].id}, {at: 30000, lineId: null},
+      {at: 40000, lineId: rows[0].id}, {at: 50000, lineId: null}, {at: 60000, lineId: final.id}, {at: 70000, lineId: null}
+    ]));
+    await exactSource(page, named); check.storage = await preserveLearning(page, {noWrites: true});
+  });
+
+  await scenario('Replay follows the current bounded occurrence, preserves pause, and refuses gaps and an unfinished tail', async (page, check) => {
+    await openApp(page); await connect(page); await page.locator('#timing-load').click();
+    for (const [time, start, line] of [[12,10,first],[22,20,second],[42,40,first]]) {
+      await mediaClock(page, time, 2); await activeLine(page, line);
+      await page.locator('#timing-replay').click();
+      const snapshot = await page.evaluate(() => window.__TEST_ONLY_YOUTUBE.snapshot());
+      assert.equal(snapshot.calls.filter(call => call[0] === 'seekTo').at(-1)[2], start);
+      const player = snapshot.players.find(player => !player.destroyed);
+      assert.equal(player.time, start); assert.equal(player.state, 2);
+    }
+    for (const time of [9,35,50]) {
+      await mediaClock(page, time, 2); await activeLine(page, null);
+      assert.equal(await page.locator('#timing-replay').isDisabled(), true);
+    }
+    await importTiming(page, timing(japji, [{at: 0, lineId: first}, {at: 10000, lineId: second}]));
+    await mediaClock(page, 12, 2); await activeLine(page, null);
+    assert.equal(await page.locator('#timing-replay').isDisabled(), true, 'No guessed end for an unfinished final marker');
+    check.storage = await preserveLearning(page, {noWrites: true});
+  }, {records: {[key]: JSON.stringify(marked)}});
+
+  let releaseBani, pendingBaniReleased = false;
+  const pendingBani = new Promise(resolve => { releaseBani = resolve; });
+  await scenario('A slow earlier Bani load cannot replace the source chosen later', async (page, check) => {
+    try {
+      await openApp(page); await chooseBani(page, 'jaap'); await page.locator('#source-open').click();
+      await eventually(() => check.requests.some(request => request.path === prefix + baniSpecs.jaap.path), 'held Jaap source request');
+      const later = await openBani(page, 'sohila');
+      const response = page.waitForResponse(value => new URL(value.url()).pathname === prefix + baniSpecs.jaap.path);
+      releaseBani(); await response; await eventually(() => pendingBaniReleased, 'held source released');
+      await page.waitForTimeout(750);
+      await exactSource(page, later); assert.deepEqual(check.provider, []);
+      check.storage = await preserveLearning(page, {noWrites: true});
+    } finally { releaseBani(); }
+  }, {beforeLocal: async relative => {
+    if (relative === baniSpecs.jaap.path) { await pendingBani; pendingBaniReleased = true; }
+  }});
+
+  const jaapOriginal = baniReadings.get('jaap').lines[0];
+  const forgedText = jaapOriginal.text.replace(/[\u0A00-\u0A7F]/u, char => char === 'ਕ' ? 'ਖ' : 'ਕ');
+  const forgedJaap = baniRaw.get('jaap').toString().replace(JSON.stringify(jaapOriginal.text), JSON.stringify(forgedText))
+    .replace(jaapOriginal.sha256, hash(forgedText));
+  assert.equal(Buffer.byteLength(forgedJaap), baniRaw.get('jaap').length);
+  await scenario('A forged named-Bani row with its matching replacement line hash refuses before any partial text is rendered', async (page, check) => {
+    await openApp(page); await chooseBani(page, 'jaap'); await page.locator('#source-open').click();
+    await page.waitForSelector('#source-status[data-state="refused"]');
+    assert.equal(await page.locator('#read-along-text [data-line-id]').count(), 0);
+    assert.equal(await page.locator('#video-load').isDisabled(), true);
+    assert.deepEqual(check.provider, []); check.storage = await preserveLearning(page, {noWrites: true});
+  }, {mutations: {[baniSpecs.jaap.path]: forgedJaap}});
 
   const corrupted = fixtures.sggs.chunks.get('c0001').bytes.toString().replace('ੴ', '੨');
   assert.equal(Buffer.byteLength(corrupted), fixtures.sggs.chunks.get('c0001').bytes.length);

@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "environment": "Node content/preservation verification; not visual or qualified scholarly approval",
+  "total": 18,
+  "checks": [
+    {
+      "name": "The immutable V16 entry-hash baseline remains intact",
+      "status": "PASS"
+    },
+    {
+      "name": "Six additional banis retain all 327 units and 1,361 source IDs in their original order",
+      "status": "PASS"
+    },
+    {
+      "name": "All source characters, hashes and sequence changes match the independently documented amendments",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent unit-boundary records agree with every first and last source occurrence",
+      "status": "PASS"
+    },
+    {
+      "name": "Jaap has exactly 199 numbered chhands and closes at its documented terminal line",
+      "status": "PASS"
+    },
+    {
+      "name": "Jaap 62 requires tera jor before the Chachari heading and preserves the remaining line order",
+      "status": "PASS"
+    },
+    {
+      "name": "Anand has all 40 pauris and the six-record Pauri 24 is repaired and fully released from its hold",
+      "status": "PASS"
+    },
+    {
+      "name": "Chaupai clearly separates its 25 core groups from four selected closing groups",
+      "status": "PASS"
+    },
+    {
+      "name": "Rehras preserves the six-section sequence and its distinct morning/evening source boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "SGGS records carry exact Ang mappings and Dasam records never borrow an SGGS Ang",
+      "status": "PASS"
+    },
+    {
+      "name": "Every original source record has a bound bilingual meaning and every unit a complete study",
+      "status": "PASS"
+    },
+    {
+      "name": "Exactly 322 meanings and 80 studies are added; all 80 new studies have substantial Punjabi detail",
+      "status": "PASS"
+    },
+    {
+      "name": "The previous 1,039 meanings and 247 studies change only through exact documented before/after entries",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact-source reuse keeps provenance bound to the repaired origin and destination",
+      "status": "PASS"
+    },
+    {
+      "name": "Every cited reference and new metrical heading resolves to actual retained evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Publication and review labels distinguish source checks, model drafts and qualified human review",
+      "status": "PASS"
+    },
+    {
+      "name": "The manifest, complete course, reader pins and offline assets agree byte for byte",
+      "status": "PASS"
+    },
+    {
+      "name": "Published Japji and complete Sukhmani source, teaching and reading files remain byte-identical",
+      "status": "PASS"
+    }
+  ],
+  "sourceRecords": 1361,
+  "sourceUnits": 327,
+  "meaningDrafts": 1361,
+  "studyDrafts": 327,
+  "additionalMeanings": 322,
+  "additionalStudies": 80,
+  "documentedSourceAmendments": 12,
+  "documentedEditorialAmendments": 14,
+  "priorMeaningEntries": 1039,
+  "priorStudyEntries": 247,
+  "sourceIDsAndOrderPreserved": true,
+  "jaap62SourceDisplayOrderVerified": true,
+  "qualifiedHumanReviewed": 0,
+  "courseSHA256": "5f9f877b37e2e0dba58076cdf6bfb5ec9201b2b5f02619d7b52821ec12d0e10c",
+  "manifestSHA256": "9cf422955cba07ee9a8f49fbcedc4969b84232d497658fcaafe37a4aa63f4d75"
+}

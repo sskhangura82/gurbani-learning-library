@@ -278,19 +278,25 @@ graphs['read-along']={
   "entry": "collections/source-reader/read-along.mjs",
   "output": "collections/source-reader/read-along.bundle.mjs",
   "inputs": {
-    "collections/source-reader/read-along.mjs": "dcf0c46c16d1f40722343c368d0faf402fc8f97fe5401a8e029135da5b940aca",
-    "collections/source-reader/read-along-core.mjs": "056b2c0b38c6b6d79515ffd5485f934436e5e80e0382a7112a79cf649edae5c0",
+    "collections/source-reader/read-along.mjs": "59003e9315ae7830f037600fe52461030a7bdffd86b5a7737ea67576e5965dc1",
+    "collections/source-reader/read-along-core.mjs": "2d04b8b2c3a8faa58df00212609147a1a11eb68c7009e266f18cbf57b5aef3a3",
     "collections/source-reader/read-along-source.mjs": "cd0060d031c79219dec4e9ae07813d8eef36a23795f551c17992f42d41bb89ef",
     "collections/source-reader/read-along-player.mjs": "ddc878748aa3aa2288251512affe7a244497da6ff3c1c39aa5f4a613b64721a1",
     "collections/source-reader/read-along-config.mjs": "cbc2be9b686cd3cbb858f34b6245ad325e6743867f155be8928f1ecc83b7c27e",
     "collections/source-reader/core.mjs": "80475823a93c5b397edbf284f60be13db0f9f50d164a8ea8a4d82cdac9cd253e",
-    "collections/source-reader/source-lock.mjs": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807"
+    "collections/source-reader/source-lock.mjs": "5313e5b2103e5cc9ec12fbada297b2544447482a829b030757e4db5853a7f807",
+    "collections/source-reader/read-along-bani.mjs": "95c8e8f432bc055ba4e7d183348c612e739fc4abc7c452018e7bca400ea0d2f6",
+    "collections/source-reader/read-along-bani-lock.mjs": "5a355a4bf7c85ee49ae89f51787dd040618188748afae455aa9201830f7bdd9c"
   },
   "imports": {
     "collections/source-reader/read-along.mjs": [
       [
         "import-statement",
         "collections/source-reader/read-along-source.mjs"
+      ],
+      [
+        "import-statement",
+        "collections/source-reader/read-along-bani.mjs"
       ],
       [
         "import-statement",
@@ -320,7 +326,14 @@ graphs['read-along']={
     ],
     "collections/source-reader/read-along-config.mjs": [],
     "collections/source-reader/core.mjs": [],
-    "collections/source-reader/source-lock.mjs": []
+    "collections/source-reader/source-lock.mjs": [],
+    "collections/source-reader/read-along-bani.mjs": [
+      [
+        "import-statement",
+        "collections/source-reader/read-along-bani-lock.mjs"
+      ]
+    ],
+    "collections/source-reader/read-along-bani-lock.mjs": []
   }
 };
 function freeze(value){if(value&&typeof value==='object'){for(const child of Object.values(value))freeze(child);Object.freeze(value);}return value;}

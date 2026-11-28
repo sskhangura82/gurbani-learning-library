@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-11-28T01:52:39.401Z",
+  "environment": "Node VM running actual nitnem/reader.js and actual local-learning.js; synthetic DOM, records, and controlled write/editor locks",
+  "browserAcceptance": false,
+  "readerSHA256": "3868b70607f69f06d60ffc0941faf9bc971c279655fa6ef5de61584788f09c03",
+  "storageSHA256": "157b2814e743acd32df4a1b05e9239899080644af64f2bc51f81a714be57867c",
+  "scope": "Async dialog lifetimes, captured-bani persistence, draft preservation, editor leases, import/export/update, and real-versus-programmatic scroll intent",
+  "dataPolicy": "Only invented SYNTHETIC learning data; no user browser or saved learning accessed",
+  "checks": [
+    {
+      "name": "A delayed file read from a closed dialog cannot import or change another bani editor",
+      "status": "PASS"
+    },
+    {
+      "name": "An import already waiting for its write lock stays bound to the old bani and preserves its lease until completion",
+      "status": "PASS"
+    },
+    {
+      "name": "Close freezes editing while saving and preserves a newer programmatic draft instead of closing it",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit Save permits continued typing, keeps the later draft and marks it unsaved",
+      "status": "PASS"
+    },
+    {
+      "name": "A late export after a switch creates no download and cannot alter the new editor",
+      "status": "PASS"
+    },
+    {
+      "name": "An ordinary export uses the captured bani and contains the saved reflection",
+      "status": "PASS"
+    },
+    {
+      "name": "A late bookmark completes only in the original record and leaves a new dialog unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "A saved-line navigation waiting on an old note cannot close or move the new bani",
+      "status": "PASS"
+    },
+    {
+      "name": "A current saved-line navigation saves its reflection and then moves to the selected line",
+      "status": "PASS"
+    },
+    {
+      "name": "An obsolete lease result never replaces the lease of a newly opened dialog",
+      "status": "PASS"
+    },
+    {
+      "name": "A queued close event from the previous dialog does not retire a newly opened session",
+      "status": "PASS"
+    },
+    {
+      "name": "A stale close completion cannot close a newly opened dialog for the same bani",
+      "status": "PASS"
+    },
+    {
+      "name": "Before-update freezes a pending reflection, rejects a stale session and preserves the new editor",
+      "status": "PASS"
+    },
+    {
+      "name": "An active import blocks overlapping close and update until it completes",
+      "status": "PASS"
+    },
+    {
+      "name": "Save failures keep the draft visible and selectable, block close and update, and preserve stored bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "A failed import restores its controls and leaves the existing note unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Programmatic scrolling alone remains suppressed and does not overwrite the selected reading place",
+      "status": "PASS"
+    },
+    {
+      "name": "A real wheel intent ends suppression and persists the visible reading line",
+      "status": "PASS"
+    },
+    {
+      "name": "A real touchmove intent ends suppression and persists the visible reading line",
+      "status": "PASS"
+    },
+    {
+      "name": "A real keydown intent ends suppression and persists the visible reading line",
+      "status": "PASS"
+    },
+    {
+      "name": "Synthetic events, text-field arrows and unrelated keys do not cancel programmatic-scroll suppression",
+      "status": "PASS"
+    }
+  ]
+}

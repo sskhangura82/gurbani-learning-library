@@ -59,9 +59,13 @@ export function parseYouTubeURL(input) {
 function checkedReading(reading) {
   const binding = reading?.binding;
   need(ownKeys(binding, ['collectionId', 'editionId', 'manifestSha256', 'selectionId', 'units']), 'TIMING_SOURCE');
-  need(['sggs', 'dasam'].includes(binding.collectionId) && typeof binding.editionId === 'string'
+  const dailyBani = binding.collectionId === 'daily-bani';
+  const selectionPattern = dailyBani
+    ? /^bani:(?:japji|jaap|savaiye|chaupai|anand|rehras|sohila|sukhmani|morning)$/
+    : /^(?:section|unit):[A-Za-z0-9_-]{1,80}$/;
+  need((dailyBani || ['sggs', 'dasam'].includes(binding.collectionId)) && typeof binding.editionId === 'string'
     && binding.editionId.length <= 120 && SHA.test(binding.manifestSha256)
-    && /^(?:section|unit):[A-Za-z0-9_-]{1,80}$/.test(binding.selectionId), 'TIMING_SOURCE');
+    && selectionPattern.test(binding.selectionId), 'TIMING_SOURCE');
   need(Array.isArray(binding.units) && binding.units.length > 0 && binding.units.length <= 100, 'TIMING_SOURCE');
   const units = new Set();
   for (const unit of binding.units) {

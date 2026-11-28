@@ -1,0 +1,15 @@
+✔ All 25 application pages carry exactly 62 independently inventoried owned-script pins (192.233846ms)
+✔ Generated modules reproduce exactly and contain no executable import or export-from edges (736.140923ms)
+✔ Ordinary check mode writes neither bundles nor HTML (589.38804ms)
+✔ Loader policy refuses missing, extra, inline, duplicate, reordered, async and foreign scripts (34.587345ms)
+✔ Bundling rejects unexpected dependencies and unresolved dynamic executable loading (16.113559ms)
+✔ Extra HTML and stale source cannot silently pass default checks (996.095182ms)
+✔ A pinned bundle cannot retain secondary imports or recover an inline execution path (47.230164ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2742.423093

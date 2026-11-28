@@ -1,0 +1,154 @@
+{
+  "time": "2026-11-28T01:56:13.065Z",
+  "testedCommit": "b2d34796a4a5f22d3d526b0fd04d495fa0744d30",
+  "scope": "Diagnostic of untouched supplied prototype; no interception or disabled provider checks; not a release approval. No claim of recitation alignment.",
+  "browser": "Desktop Chrome fresh contexts",
+  "results": [
+    {
+      "label": "Japji",
+      "bani": "japji",
+      "videoId": "8soV6l6is4Q",
+      "providerStubbed": false,
+      "origin": "http://127.0.0.1:60790",
+      "externalBeforeOpen": [],
+      "notice": "",
+      "ready": true,
+      "frames": [
+        {
+          "host": "127.0.0.1",
+          "path": "/listen-along.html"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/8soV6l6is4Q"
+        }
+      ],
+      "playButton": "Pause",
+      "status": "When the recitation begins, tap “First line starts now”.",
+      "nativeVideo": [
+        {
+          "frameText": "",
+          "video": {
+            "paused": false,
+            "currentTime": 4.867423,
+            "duration": 1406.061,
+            "readyState": 4,
+            "error": null
+          }
+        }
+      ],
+      "requestHosts": [
+        "127.0.0.1",
+        "www.youtube.com",
+        "www.youtube-nocookie.com",
+        "fonts.gstatic.com",
+        "www.google.com",
+        "i.ytimg.com",
+        "www.gstatic.com",
+        "yt3.ggpht.com",
+        "jnn-pa.googleapis.com",
+        "rr4---sn-o097znse.googlevideo.com"
+      ],
+      "failed": [],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "label": "Jaap",
+      "bani": "jaap",
+      "videoId": "0TzTgHveO_I",
+      "providerStubbed": false,
+      "origin": "http://127.0.0.1:60790",
+      "externalBeforeOpen": [],
+      "notice": "",
+      "ready": true,
+      "frames": [
+        {
+          "host": "127.0.0.1",
+          "path": "/listen-along.html"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/0TzTgHveO_I"
+        }
+      ],
+      "playButton": "Pause",
+      "status": "When the recitation begins, tap “First line starts now”.",
+      "nativeVideo": [
+        {
+          "frameText": "",
+          "video": {
+            "paused": false,
+            "currentTime": 5.142693,
+            "duration": 1441.821,
+            "readyState": 4,
+            "error": null
+          }
+        }
+      ],
+      "requestHosts": [
+        "127.0.0.1",
+        "www.youtube.com",
+        "www.youtube-nocookie.com",
+        "fonts.gstatic.com",
+        "www.google.com",
+        "i.ytimg.com",
+        "www.gstatic.com",
+        "yt3.ggpht.com",
+        "jnn-pa.googleapis.com",
+        "rr2---sn-n4v7snse.googlevideo.com"
+      ],
+      "failed": [],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "label": "Kirtan",
+      "bani": "sukhmani",
+      "videoId": "BpMxd2gT9G0",
+      "providerStubbed": false,
+      "origin": "http://127.0.0.1:60790",
+      "externalBeforeOpen": [],
+      "notice": "The owner of this video does not allow it to play inside other apps. Choose another video. Open it on YouTube instead.",
+      "ready": true,
+      "frames": [
+        {
+          "host": "127.0.0.1",
+          "path": "/listen-along.html"
+        },
+        {
+          "host": "www.youtube-nocookie.com",
+          "path": "/embed/BpMxd2gT9G0"
+        }
+      ],
+      "playButton": "Play",
+      "status": "Press play. When the recitation begins, tap “First line starts now”.",
+      "nativeVideo": [
+        {
+          "frameText": "This video is unavailable\nWatch on YouTube",
+          "video": {
+            "paused": true,
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "error": null
+          }
+        }
+      ],
+      "requestHosts": [
+        "127.0.0.1",
+        "www.youtube.com",
+        "www.youtube-nocookie.com",
+        "fonts.gstatic.com",
+        "www.google.com",
+        "jnn-pa.googleapis.com",
+        "ssl.gstatic.com"
+      ],
+      "failed": [],
+      "errors": []
+    }
+  ]
+}
