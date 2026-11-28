@@ -1,0 +1,497 @@
+{
+  "schema": "glp.farid.teaching-overlap-check.v1",
+  "maxAllowedRun": 7,
+  "database": {
+    "sha256": "517890c7e7c2f3dcef7f21b51d074a581b8eded4ebe14c504b84ea075ff16aeb"
+  },
+  "pack": {
+    "path": "salok-farid/data/salok-farid.json",
+    "sha256": "4141000d0d1b408d277163408d92fa88d530050ad5f89cc1ea1ad0330e01d643"
+  },
+  "files": [
+    {
+      "path": "research/salok-farid/teaching-001-016.json",
+      "sha256": "640ecbe1fdfb480e4186b1c269f80a8955cb0931e27ccd555965abf76b380e1c",
+      "saloks": [
+        {
+          "ordinal": 1,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok001.line01",
+              "shabadosLineId": "AGC0",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line02",
+              "shabadosLineId": "K78Q",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line03",
+              "shabadosLineId": "FA4Z",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line04",
+              "shabadosLineId": "0NJJ",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line05",
+              "shabadosLineId": "H9GJ",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line06",
+              "shabadosLineId": "1PX8",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line07",
+              "shabadosLineId": "Q69L",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok001.line08",
+              "shabadosLineId": "LU3C",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 5,
+              "field": "lines[1].simpleEn",
+              "text": "comes and shows its face"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[3].simplePa",
+              "text": "ਜਿੰਦ ਨੂੰ ਇਹ ਗੱਲ ਸਮਝਾ"
+            }
+          }
+        },
+        {
+          "ordinal": 2,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok002.line01",
+              "shabadosLineId": "9RH3",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok002.line02",
+              "shabadosLineId": "V41B",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 5,
+              "field": "lines[0].simpleEn",
+              "text": "at the lord s door"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[1].simplePa",
+              "text": "ਹੈ ਇਸ ਨੂੰ ਸੁੱਟ ਕੇ"
+            }
+          }
+        },
+        {
+          "ordinal": 3,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok003.line01",
+              "shabadosLineId": "DJ5E",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok003.line02",
+              "shabadosLineId": "ZZ0A",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "the world is a"
+            },
+            "pa": {
+              "words": 3,
+              "field": "lines[0].simplePa",
+              "text": "ਲੁਕਵੀਂ ਅੱਗ ਹੈ"
+            }
+          }
+        },
+        {
+          "ordinal": 4,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok004.line01",
+              "shabadosLineId": "7ZR8",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok004.line02",
+              "shabadosLineId": "6B1W",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[1].simpleEn",
+              "text": "my husband lord was"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[1].simplePa",
+              "text": "ਜੇ ਮੈਨੂੰ ਪਤਾ ਹੋਵੇ ਕਿ"
+            }
+          }
+        },
+        {
+          "ordinal": 5,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok005.line01",
+              "shabadosLineId": "QPM6",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok005.line02",
+              "shabadosLineId": "THF1",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[1].simpleEn",
+              "text": "as great as you"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[1].simplePa",
+              "text": "ਕੇ ਵੇਖ ਲਿਆ ਹੈ ਤੇਰੇ"
+            }
+          }
+        },
+        {
+          "ordinal": 6,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok006.line01",
+              "shabadosLineId": "K95Q",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok006.line02",
+              "shabadosLineId": "TK0T",
+              "match": 0.988
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "do not write black"
+            },
+            "pa": {
+              "words": 3,
+              "field": "lines[0].simplePa",
+              "text": "ਹੇ ਫਰੀਦ ਜੇ"
+            }
+          }
+        },
+        {
+          "ordinal": 7,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok007.line01",
+              "shabadosLineId": "BQUR",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok007.line02",
+              "shabadosLineId": "VC2K",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "you with their fists"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[1].simplePa",
+              "text": "ਚੁੰਮ ਕੇ ਆਪਣੇ ਘਰ"
+            }
+          }
+        },
+        {
+          "ordinal": 8,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok008.line01",
+              "shabadosLineId": "7J2M",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok008.line02",
+              "shabadosLineId": "PTK5",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 2,
+              "field": "lines[0].simpleEn",
+              "text": "to earn"
+            },
+            "pa": {
+              "words": 4,
+              "field": "study.closeReadingPa",
+              "text": "ਖੱਟਣ ਦਾ ਵੇਲਾ ਸੀ"
+            }
+          }
+        },
+        {
+          "ordinal": 9,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok009.line01",
+              "shabadosLineId": "S8XP",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok009.line02",
+              "shabadosLineId": "A46J",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 3,
+              "field": "lines[1].simpleEn",
+              "text": "is left far"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[0].simplePa",
+              "text": "ਫਰੀਦ ਕੀ ਹੋ ਗਿਆ ਹੈ"
+            }
+          }
+        },
+        {
+          "ordinal": 10,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok010.line01",
+              "shabadosLineId": "CTJ4",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok010.line02",
+              "shabadosLineId": "KVHW",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "study.closeReading",
+              "text": "sugar has become poison"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[0].simplePa",
+              "text": "ਫਰੀਦ ਕੀ ਹੋ ਗਿਆ ਹੈ"
+            }
+          }
+        },
+        {
+          "ordinal": 11,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok011.line01",
+              "shabadosLineId": "090F",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok011.line02",
+              "shabadosLineId": "831W",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[1].simpleEn",
+              "text": "the body s crop"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[0].interpretiveCautionPa",
+              "text": "ਜਗਤ ਦੇ ਰੰਗ ਤਮਾਸ਼ੇ ਤਾਂ"
+            }
+          }
+        },
+        {
+          "ordinal": 12,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok012.line01",
+              "shabadosLineId": "7Z98",
+              "match": 0.988
+            },
+            {
+              "lineId": "sggs.salok-farid.salok012.line02",
+              "shabadosLineId": "Y7R2",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 5,
+              "field": "lines[0].simpleEn",
+              "text": "those who did not enjoy"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[1].simplePa",
+              "text": "ਨਾਲ ਪਿਆਰ ਕਰ ਤਾਂ ਜੋ"
+            }
+          }
+        },
+        {
+          "ordinal": 13,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok013.line01",
+              "shabadosLineId": "4T54",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok013.line02",
+              "shabadosLineId": "P5LC",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok013.line03",
+              "shabadosLineId": "H2RB",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[1].simpleEn",
+              "text": "by one s own"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[2].simplePa",
+              "text": "ਹੈ ਜਿਸ ਨੂੰ ਉਸ ਦੀ"
+            }
+          }
+        },
+        {
+          "ordinal": 14,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok014.line01",
+              "shabadosLineId": "S0VU",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok014.line02",
+              "shabadosLineId": "ZTRW",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[1].simpleEn",
+              "text": "their young in them"
+            },
+            "pa": {
+              "words": 3,
+              "field": "lines[0].simplePa",
+              "text": "ਨੇ ਜਗਤ ਨੂੰ"
+            }
+          }
+        },
+        {
+          "ordinal": 15,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok015.line01",
+              "shabadosLineId": "C8J3",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok015.line02",
+              "shabadosLineId": "SKER",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 5,
+              "field": "lines[1].simpleEn",
+              "text": "how can they turn their"
+            },
+            "pa": {
+              "words": 4,
+              "field": "lines[1].simplePa",
+              "text": "ਜਿਨ੍ਹਾਂ ਨੂੰ ਸ਼ੈਤਾਨ ਨੇ"
+            }
+          }
+        },
+        {
+          "ordinal": 16,
+          "mappedLines": [
+            {
+              "lineId": "sggs.salok-farid.salok016.line01",
+              "shabadosLineId": "D7V0",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok016.line02",
+              "shabadosLineId": "SD3N",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok016.line03",
+              "shabadosLineId": "0M2G",
+              "match": 1.0
+            },
+            {
+              "lineId": "sggs.salok-farid.salok016.line04",
+              "shabadosLineId": "TZ3S",
+              "match": 1.0
+            }
+          ],
+          "longestSharedRun": {
+            "en": {
+              "words": 4,
+              "field": "lines[0].simpleEn",
+              "text": "grass on the path"
+            },
+            "pa": {
+              "words": 5,
+              "field": "lines[2].simplePa",
+              "text": "ਪੈਰਾਂ ਹੇਠ ਲਤਾੜੇ ਜਾਂਦੇ ਹਨ"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}
