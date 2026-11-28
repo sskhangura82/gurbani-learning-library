@@ -1,0 +1,62 @@
+{
+  "schema": "glp.youtube-read-along.verification.v1",
+  "reviewStatus": "BUILDER_RECORD_UNREVIEWED",
+  "base": "cfded3e2186c1f6e325d135f1fa62da1f03d34bb",
+  "runtime": "38290310c94a30dd92ba3d7c479bac3181ddb047",
+  "applicationFileCount": 374,
+  "applicationBytesMatchTestedRuntime": true,
+  "checks": {
+    "focusedNodeContracts": 69,
+    "additionalPreservationContracts": 18,
+    "newReadAlongBrowser": 28,
+    "existingNavigationBrowser": 10,
+    "actualOfflineBrowser": 7,
+    "serviceWorkerSimulation": 9
+  },
+  "ownedBuild": {
+    "bundles": 6,
+    "declaredGraphInputs": 39,
+    "htmlPages": 25,
+    "scriptIntegrityAttributes": 62,
+    "offlineAssets": 125
+  },
+  "size": {
+    "syntheticFullJapjiTimingBytes": 15512,
+    "syntheticFullJapjiCues": 386,
+    "newUniqueOwnedAssetsBytes": 99032,
+    "containsMedia": false
+  },
+  "provider": {
+    "configuration": "EMPTY",
+    "realPlaybackVerified": false,
+    "positiveBrowserFixture": "SYNTHETIC_METADATA_SDK_AND_IFRAME",
+    "defaultCandidateProviderRequests": 0
+  },
+  "visualReview": {
+    "widthsCssPx": [
+      320,
+      1280
+    ],
+    "screenshotsInspected": 3,
+    "timingEditor": "collapsed by default"
+  },
+  "preservation": {
+    "newApplicationFiles": 8,
+    "modifiedApplicationFiles": [
+      "index.html",
+      "sw.js"
+    ],
+    "oldSourceTextChanged": false,
+    "oldLearningStorageSchemaChanged": false,
+    "productionMerged": false,
+    "productionDeployed": false
+  },
+  "limits": [
+    "No configured or real YouTube playback verification.",
+    "No automatic speech recognition or trustworthy timing map from a link alone.",
+    "Positive player cases use a controlled synthetic clock; advertisements and real recitation alignment are unverified.",
+    "Desktop Chrome viewports do not establish physical iPhone, Safari or assistive-technology acceptance.",
+    "Actual independent Claude review remains pending."
+  ],
+  "connectionNotice": "Load video assents to named read-along privacy terms and YouTube Terms; notice remains available"
+}

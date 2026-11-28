@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-read-along-state="loading">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.youtube.com/iframe_api https://www.youtube.com/s/player/; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'self' https://www.googleapis.com; frame-src https://www.youtube-nocookie.com; base-uri 'none'; object-src 'none'; form-action 'none'">
+<meta name="theme-color" content="#f7f2e7">
+<title>Read along with YouTube · Gurbani Learning Library</title>
+<link rel="stylesheet" href="read-along.css">
+</head>
+<body><a class="skip" href="#read-along-text">Skip to original text</a><div class="page">
+<header class="site-header"><a class="wordmark" href="../index.html">GURBANI LEARNING LIBRARY</a><a href="../index.html?view=read">All readings</a></header>
+<main id="main">
+<p class="kicker">Listen and read</p><h1>Read along with YouTube</h1>
+<p class="intro">Play a recording beside the original Gurbani. Mark when each line starts, then follow your timings as you listen again.</p>
+<section class="setup-card" aria-label="Recording and text">
+<form id="video-form">
+<label for="video-url">YouTube recording link</label>
+<div class="url-row"><input id="video-url" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" placeholder="Paste a YouTube link"><button id="video-load" type="submit" disabled>Load video</button><button id="video-disconnect" class="quiet" type="button" disabled>Disconnect</button></div>
+</form>
+<p class="small">By choosing Load video, you agree to this <a href="#read-along-privacy">read-along privacy notice</a> and the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. This connects your browser to Google/YouTube. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+<details class="source-chooser"><summary>Choose the original text</summary>
+<div class="source-fields">
+<div><label for="source-mode">Reading</label><select id="source-mode"><option value="japji">Complete Japji Sahib</option><option value="sggs">Shabad or Salok from SGGS</option><option value="dasam">Dasam Granth passage</option></select></div>
+<div id="source-page-field" hidden><label id="source-page-label" for="source-page">Ang number</label><div class="page-row"><input id="source-page" type="text" inputmode="numeric" pattern="[1-9][0-9]*" maxlength="4" value="1" autocomplete="off"><button id="source-find" type="button" disabled>Find passages</button></div></div>
+<div id="source-group-field" class="full-field" hidden><label for="source-group">Passage beginning</label><select id="source-group" disabled><option value="">Choose an Ang or page first</option></select></div>
+<button id="source-open" type="button">Open selected text</button>
+</div>
+<p id="source-options-status" class="small" role="status" aria-live="polite">Japji includes all 385 original rows in this named digital edition.</p>
+</details>
+<p id="video-status" class="status" data-state="idle" role="status" aria-live="polite">Choose a recording when you are ready. You can read without connecting.</p>
+<a id="youtube-fallback" class="fallback" target="_blank" rel="noopener" hidden>Watch this recording on YouTube →</a>
+</section>
+
+<div class="workspace">
+<section class="video-card" aria-labelledby="video-heading">
+<h2 id="video-heading">Recording</h2>
+<div class="player-viewport">
+<div id="youtube-player" aria-label="YouTube player" hidden></div>
+<div id="player-placeholder" class="player-placeholder"><span>Read first, or connect a recording.</span><small>The video appears here after you choose Load video.</small></div>
+</div>
+<div class="media-bar"><span id="player-state">Not connected</span><output id="media-time" aria-label="Recording time">—</output><span id="playback-rate" aria-label="Playback speed"></span></div>
+</section>
+
+<section class="text-card" aria-labelledby="source-title">
+<h2 id="source-title">Japji Sahib</h2>
+<p id="source-status" class="source-status" data-state="loading" role="status" aria-live="polite">Checking the complete original text…</p>
+<details id="timing-editor" class="timing-editor"><summary>Set or adjust line timings</summary>
+<p id="selected-line" class="selected-label">Select a line to mark its start.</p>
+<div class="mark-controls" role="group" aria-label="Record timing markers">
+<button id="mark-selected" type="button" disabled>Mark selected line</button><button id="mark-next" type="button" disabled>Next line starts</button><button id="mark-pause" class="quiet" type="button" disabled>Text pause or end</button><button id="timing-undo" class="quiet" type="button" disabled>Undo marker</button>
+</div>
+</details>
+<label class="follow-control"><input id="follow-timings" type="checkbox" checked> Follow recorded timings <span>Scroll to the marked line</span></label>
+<p id="alignment-status" class="alignment-status" role="status" aria-live="polite">No timing intervals yet.</p>
+<div id="read-along-text" class="read-along-text" role="region" aria-label="Verified original text" aria-describedby="text-help" tabindex="-1" aria-busy="true"></div>
+<p id="text-help" class="small">Select a line, then mark its start at the recording's current time. Mark the next line, or a text pause/end, to close that interval. Select an earlier line for a repetition. These are your manual timings; words are not recognised automatically.</p>
+</section>
+</div>
+
+<section class="timing-card" aria-labelledby="timing-heading">
+<h2 id="timing-heading">Your timing notes</h2>
+<p id="timing-summary">Connect a recording to create or load timings for this text.</p>
+<div class="timing-controls"><button id="timing-save" type="button" disabled>Save on device</button><button id="timing-load" class="quiet" type="button" disabled>Load saved timings</button><button id="timing-export" class="quiet" type="button" disabled>Export JSON</button><button id="timing-replay" class="quiet" type="button" disabled>Go to first marker</button></div>
+<div class="import-row"><label for="timing-import">Import a timing file</label><input id="timing-import" type="file" accept=".json,application/json" disabled></div>
+<div class="timing-controls"><button id="timing-clear" class="quiet" type="button" disabled>Clear current map</button><button id="timing-delete" class="quiet" type="button" disabled>Delete saved timings</button></div>
+<p id="timing-status" class="status" data-state="idle" role="status" aria-live="polite">Timing files contain markers and their recording/source identity. Video and audio are not stored here.</p>
+<details class="cue-details"><summary>Review timing markers</summary><p id="cue-count" class="small">No markers yet.</p><ol id="timing-cues" class="cue-list"></ol></details>
+</section>
+<details id="read-along-privacy" class="provenance"><summary>Read-along privacy and YouTube terms</summary>
+<p>This feature uses YouTube API Services. Using this read-along's YouTube features means you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. Choosing Load video sends the chosen video ID to Google for a status check. Google/YouTube may process connection and device information, use cookies and show ads through the embedded player under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+<p>Original text comes from the library. For library timing notes, only choosing Save on device stores the video/source identifiers and manual markers in this browser. Delete saved timings removes the saved map for the current recording and source selection on this device. Exported files remain separate copies; delete them separately if no longer wanted.</p>
+<p>Our read-along and timing code adds no analytics, does not upload timing files, and does not access other library notes. Disconnect stops the player; it does not delete Google-held data or cookies.</p>
+</details>
+<details class="provenance"><summary>Original text and timing notes</summary><p id="source-provenance">Original source files are checked before they appear.</p><p>Text follows the named Shabad OS digital edition, including its spelling, order and complete source groups. A provider's grouping does not establish every traditional composition boundary. Your timing annotations belong to this exact edition and one recording.</p><p>YouTube supplies the video. The original-text panel and manual timing notes belong to this library. A recording link alone does not establish which words are being recited.</p><a href="https://www.shabados.com/docs/database/sources/" target="_blank" rel="noopener">Shabad OS source bibliography</a></details>
+<noscript><p>This companion needs JavaScript to verify the original text and connect the optional player. Continue through <a href="../index.html?view=read">All readings</a>.</p></noscript>
+</main>
+<footer><a href="../collections/sggs/index.html">Full SGGS source reader</a><a href="../collections/dasam/read.html">Dasam source reader</a><a href="../psychology/index.html">Psychology</a></footer>
+</div>
+<dialog id="discard-dialog" aria-labelledby="discard-title" aria-describedby="discard-description">
+<h2 id="discard-title">Keep your timing changes?</h2><p id="discard-description">There are timing changes you have not saved. Save or export a copy before replacing this map.</p>
+<div class="dialog-actions"><button id="discard-save" type="button">Save and continue</button><button id="discard-export" class="quiet" type="button">Export a copy</button><button id="discard-cancel" class="quiet" type="button" autofocus>Keep editing</button><button id="discard-confirm" class="quiet" type="button">Discard changes and continue</button></div><p id="discard-status" class="status" role="status"></p>
+</dialog>
+<script type="module" src="../collections/source-reader/read-along.bundle.mjs" integrity="sha384-JJu2g4Pe9G8hIKhQhGZAvHvKsPB9NkwtwbFDunRubRGtsw4IM85QlLCt0FwcdXdG" crossorigin="anonymous"></script>
+</body></html>

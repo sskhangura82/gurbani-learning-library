@@ -29,6 +29,9 @@ additions.push('./collections/dasam/','./collections/dasam/index.html','./collec
 additions.push('./collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html','./collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs');
 // The three public psychology modules are self-contained, script-free study pages.
 additions.push('./psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css');
+// The optional YouTube companion shell contains no video, provider scripts or
+// provider metadata. Playback and the full-source corpus require a connection.
+additions.push('./listen/','./listen/index.html','./listen/read-along.css','./collections/source-reader/read-along.bundle.mjs');
 // The encrypted reading room is fetched on demand with no-store. It is not a
 // public offline/search asset, and decrypted content never enters this manifest.
 const expected={};
@@ -42,5 +45,5 @@ for(const name of inventory){
  const filename=path.join(root,name.endsWith('/')?name+'index.html':name);
  expected[name]=crypto.createHash('sha256').update(fs.readFileSync(filename)).digest('hex');
 }
-const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.29-gurbani-learning-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
+const next=source.replace(/const VERSION="[^"]+";/,'const VERSION="0.30-youtube-read-along-20261127-1";').replace(/const EXPECTED=\{[^\n]+\};/,'const EXPECTED='+JSON.stringify(expected)+';');
 fs.writeFileSync(file,next);console.log(JSON.stringify({assets:Object.keys(expected).length,status:'hashes regenerated'}));
