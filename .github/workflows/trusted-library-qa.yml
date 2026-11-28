@@ -26,6 +26,8 @@ jobs:
           python3 tests/shabados-original-importer.py
           node --test tests/sikh-source-reader-core.mjs
           node --test tests/gurbani-learning-contracts.mjs tests/gurbani-learning-inputs.mjs
+          npm ci --prefix tools/script-integrity
+          node --test tests/youtube-read-along-core.mjs tests/youtube-player-contracts.mjs tests/youtube-read-along-inputs.mjs tests/youtube-loader-capability.mjs
       - name: Preserve checks of historical review provenance
         run: |
           node --test tests/history-registry.mjs tests/history-draft.mjs tests/history-editorial.mjs
@@ -45,6 +47,7 @@ jobs:
       - name: Install isolated browser test tools
         run: |
           npm install --no-save --package-lock=false playwright@1.62.1
+          npm ci --prefix tools/script-integrity
           npx playwright install --with-deps chromium
       - name: Exercise synthetic private reading and open collection navigation
         run: |
@@ -52,6 +55,7 @@ jobs:
           node tests/private-library-navigation-smoke.mjs
           node tests/source-reader-browser.mjs
           node tests/gurbani-learning-browser.mjs
+          node tests/youtube-read-along-browser.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -61,4 +65,5 @@ jobs:
             evidence/continuation-navigation-smoke/
             evidence/source-readers/browser/
             evidence/gurbani-learning/browser/
+            evidence/youtube-read-along/browser/
           if-no-files-found: error

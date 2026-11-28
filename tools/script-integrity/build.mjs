@@ -3,7 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import * as esbuild from 'esbuild';
-import {APP_GRAPHS,BASELINE_COMMIT,BUILD_OPTIONS,GRAPH_MANIFEST,TOOL_VERSIONS} from './policy.mjs';
+import {APP_GRAPHS,BASELINE_COMMIT,BUILD_OPTIONS,GRAPH_MANIFEST,TOOL_VERSIONS,YOUTUBE_SCRIPT_CAPABILITY} from './policy.mjs';
 import {inspectModule} from './javascript.mjs';
 
 export const DEFAULT_DIRECTORY=fileURLToPath(new URL('../../',import.meta.url));
@@ -72,6 +72,8 @@ export async function buildAppBundle(appId,{directory=DEFAULT_DIRECTORY,override
     inputs:inputRecords,
     output:{path:policy.output,bytes:generated.contents.length,sha256:sha(generated.contents),integrity:'sha384-'+sha(generated.contents,'sha384','base64'),imports:[]}
   };
+  if(appId==='read-along')graph.externalProviderScript={url:YOUTUBE_SCRIPT_CAPABILITY.url,
+    loading:'explicit user action after metadata preflight',integrity:'Provider-managed; outside owned-bundle SRI'};
   return {code,outputPath:policy.output,graph};
 }
 

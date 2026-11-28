@@ -28,7 +28,8 @@ const additions=[
  './collections/dasam/','./collections/dasam/index.html','./collections/collections.css','./psychology/','./psychology/index.html',
  './collections/sggs/','./collections/sggs/index.html','./collections/dasam/read.html',
  './collections/source-reader/reader.css','./collections/source-reader/reader.bundle.mjs',
- './psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css'
+ './psychology/intellectual-humility.html','./psychology/attention.html','./psychology/emotion-regulation.html','./psychology/study.css',
+ './listen/','./listen/index.html','./listen/read-along.css','./collections/source-reader/read-along.bundle.mjs'
 ];
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8',
  '.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8',

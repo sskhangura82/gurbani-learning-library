@@ -6,11 +6,12 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {readAlongScope, readBeforeReadAlong, READ_ALONG_ADDED} from './helpers/youtube-read-along-scope.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const base = '68f47ffba4782271651716c71a97bc1825f96f48';
 const git = (...args) => execFileSync('git', args, {cwd: root, maxBuffer: 64 * 1024 * 1024});
-const read = name => fs.readFile(path.join(root, name));
+const read = name => readBeforeReadAlong(name, file => fs.readFile(path.join(root, file)));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const application = name => !/^(?:\.github|docs|evidence|tests|tools)\//.test(name);
 const modified = [
@@ -42,8 +43,9 @@ test('Learning continuation declares exact modified and new application bytes fr
 });
 
 test('Every other existing application file, including scripture, private pack and saved-learning code, remains byte-identical', async () => {
+  await readAlongScope();
   const previousNames = git('ls-tree', '-r', '--name-only', base).toString().trim().split('\n').filter(application);
-  const currentNames = git('ls-files', '--cached', '--others', '--exclude-standard').toString().trim().split('\n').filter(application);
+  const currentNames = git('ls-files', '--cached', '--others', '--exclude-standard').toString().trim().split('\n').filter(application).filter(name => !READ_ALONG_ADDED.includes(name));
   assert.deepEqual([...new Set(currentNames)].sort(), [...previousNames, ...added].sort(), 'No extra application files or deleted old inputs');
   const exempt = new Set(modified);
   for (const name of previousNames) {
