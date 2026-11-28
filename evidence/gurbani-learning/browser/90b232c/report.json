@@ -1,0 +1,1472 @@
+{
+  "status": "PASS",
+  "started": "2026-11-28T00:34:14.899Z",
+  "sourceCommit": "90b232c39742ef64d817f3273ee4a98218f89486",
+  "sourceCommitMatchesAllReadFiles": true,
+  "checks": [
+    {
+      "name": "Ang 1 has exactly DMP and LLL optional drafts; ZKH has none",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "DMP: exact en simple teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "DMP",
+        "sourceRows": 10,
+        "language": "en",
+        "depth": "simple",
+        "paragraphs": 6,
+        "focusedRows": [
+          "0NVY",
+          "RBP6",
+          "J92N",
+          "K0U6",
+          "BL70",
+          "GJW9",
+          "ZERL",
+          "9MN2",
+          "MK1Q",
+          "H0PC"
+        ]
+      }
+    },
+    {
+      "name": "DMP: exact en detailed teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "DMP",
+        "sourceRows": 10,
+        "language": "en",
+        "depth": "detailed",
+        "paragraphs": 10,
+        "focusedRows": [
+          "0NVY",
+          "RBP6",
+          "J92N",
+          "K0U6",
+          "BL70",
+          "GJW9",
+          "ZERL",
+          "9MN2",
+          "MK1Q",
+          "H0PC"
+        ]
+      }
+    },
+    {
+      "name": "DMP: exact en deep teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "DMP",
+        "sourceRows": 10,
+        "language": "en",
+        "depth": "deep",
+        "paragraphs": 8,
+        "focusedRows": [
+          "0NVY",
+          "RBP6",
+          "J92N",
+          "K0U6",
+          "BL70",
+          "GJW9",
+          "ZERL",
+          "9MN2",
+          "MK1Q",
+          "H0PC"
+        ]
+      }
+    },
+    {
+      "name": "DMP: exact pa simple teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "DMP",
+        "sourceRows": 10,
+        "language": "pa",
+        "depth": "simple",
+        "paragraphs": 6,
+        "focusedRows": [
+          "0NVY",
+          "RBP6",
+          "J92N",
+          "K0U6",
+          "BL70",
+          "GJW9",
+          "ZERL",
+          "9MN2",
+          "MK1Q",
+          "H0PC"
+        ]
+      }
+    },
+    {
+      "name": "DMP: exact pa detailed teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "DMP",
+        "sourceRows": 10,
+        "language": "pa",
+        "depth": "detailed",
+        "paragraphs": 10,
+        "focusedRows": [
+          "0NVY",
+          "RBP6",
+          "J92N",
+          "K0U6",
+          "BL70",
+          "GJW9",
+          "ZERL",
+          "9MN2",
+          "MK1Q",
+          "H0PC"
+        ]
+      }
+    },
+    {
+      "name": "DMP: exact pa deep teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "DMP",
+        "sourceRows": 10,
+        "language": "pa",
+        "depth": "deep",
+        "paragraphs": 8,
+        "focusedRows": [
+          "0NVY",
+          "RBP6",
+          "J92N",
+          "K0U6",
+          "BL70",
+          "GJW9",
+          "ZERL",
+          "9MN2",
+          "MK1Q",
+          "H0PC"
+        ]
+      }
+    },
+    {
+      "name": "LLL: exact en simple teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "LLL",
+        "sourceRows": 6,
+        "language": "en",
+        "depth": "simple",
+        "paragraphs": 3,
+        "focusedRows": [
+          "60LK",
+          "UVSL",
+          "GLXS",
+          "P2VG",
+          "MX4P",
+          "FKUU"
+        ]
+      }
+    },
+    {
+      "name": "LLL: exact en detailed teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "LLL",
+        "sourceRows": 6,
+        "language": "en",
+        "depth": "detailed",
+        "paragraphs": 6,
+        "focusedRows": [
+          "60LK",
+          "UVSL",
+          "GLXS",
+          "P2VG",
+          "MX4P",
+          "FKUU"
+        ]
+      }
+    },
+    {
+      "name": "LLL: exact en deep teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "LLL",
+        "sourceRows": 6,
+        "language": "en",
+        "depth": "deep",
+        "paragraphs": 3,
+        "focusedRows": [
+          "60LK",
+          "UVSL",
+          "GLXS",
+          "P2VG",
+          "MX4P",
+          "FKUU"
+        ]
+      }
+    },
+    {
+      "name": "LLL: exact pa simple teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "LLL",
+        "sourceRows": 6,
+        "language": "pa",
+        "depth": "simple",
+        "paragraphs": 3,
+        "focusedRows": [
+          "60LK",
+          "UVSL",
+          "GLXS",
+          "P2VG",
+          "MX4P",
+          "FKUU"
+        ]
+      }
+    },
+    {
+      "name": "LLL: exact pa detailed teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "LLL",
+        "sourceRows": 6,
+        "language": "pa",
+        "depth": "detailed",
+        "paragraphs": 6,
+        "focusedRows": [
+          "60LK",
+          "UVSL",
+          "GLXS",
+          "P2VG",
+          "MX4P",
+          "FKUU"
+        ]
+      }
+    },
+    {
+      "name": "LLL: exact pa deep teaching, original rows and source anchors",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      },
+      "coverage": {
+        "unit": "LLL",
+        "sourceRows": 6,
+        "language": "pa",
+        "depth": "deep",
+        "paragraphs": 3,
+        "focusedRows": [
+          "60LK",
+          "UVSL",
+          "GLXS",
+          "P2VG",
+          "MX4P",
+          "FKUU"
+        ]
+      }
+    },
+    {
+      "name": "Disclosure and language/depth controls work by keyboard without losing focus",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Ang 2 inherits no lesson; Back/Forward and reload retain correct source ownership",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Dasam remains original-text only",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/dasam/read.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/dasam/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/dasam/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:dasam:shabados-5.0.0-next.0-SDGR-DGDG"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Changed source chunk withholds both original and learning",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "mutation": {
+        "path": "collections/source-data/sggs/chunks/c0001.json",
+        "before": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f",
+        "after": "fef737ee13b36c7dba78b603e857eba8b634ca3006054ba38873842cedff695d"
+      },
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Re-signed synthetic optional teaching with stale unit digest refuses DMP locally; LLL and originals remain available",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "mutation": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "before": "9e21f46d95a8ade467f5e865ab47a545b3e75f2be35264fcb4311e2acba904be",
+        "after": "c7e4a978b8f0b9a7fd9598efc33b94ed9972321e6e4e7afd584c4d45d52a7f26",
+        "syntheticResignedHTML": "3b1c8d1a0328388fbdf53195ee72bfaf8d7c49e0f2995966f1ba030cd9d20c1f",
+        "kind": "stale unit digest"
+      },
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Re-signed synthetic optional teaching with invented completed review refuses DMP locally; LLL and originals remain available",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "mutation": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "before": "9e21f46d95a8ade467f5e865ab47a545b3e75f2be35264fcb4311e2acba904be",
+        "after": "420d4ad0bee123ecace2c90a686cc35c6e4d55bff2608270ed8423e17a57acae",
+        "syntheticResignedHTML": "a643602dee93e9e5ff51feac922899556669d8c761bc9c09b285e64b61ef8093",
+        "kind": "invented completed review"
+      },
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Native unchanged SRI blocks altered bundle before any source or teaching appears",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:58727/gurbani-learning-review/collections/source-reader/reader.bundle.mjs' with computed SHA-384 integrity '7o8twT2JU6PqjL+aE2Wo3aS2oVMzauqVi94qvxdIjS9GiLx8OpqzQ+zugGn6GZSE'. The resource has been blocked."
+      ],
+      "mutation": {
+        "path": "collections/source-reader/reader.bundle.mjs",
+        "before": "9e21f46d95a8ade467f5e865ab47a545b3e75f2be35264fcb4311e2acba904be",
+        "after": "9afd53abeb468274826fe38ef21b8cf22330908f877d087f5b885d380d367257"
+      },
+      "storage": {
+        "reads": [],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "Punjabi Deep study fits 320px with largest original text, dark appearance and desktop layout",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "largestGeometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "studyGeometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "darkGeometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "desktopGeometry": {
+        "viewport": 1280,
+        "documentWidth": 1280
+      },
+      "screenshots": [
+        "original-largest-320.png",
+        "study-punjabi-deep-320.png",
+        "study-punjabi-dark-320.png",
+        "study-english-desktop.png"
+      ],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    },
+    {
+      "name": "psychology/intellectual-humility.html: substantive open study works without JavaScript at 320px",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/psychology/intellectual-humility.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/collections.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/psychology/study.css",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "citations": [
+        "https://chaycebaldwin.com/uploads/clarifying-content-ih.pdf#page=10",
+        "https://www.pittcorelab.com/uploads/1/1/5/5/115561629/intellectual_humility_predicts_mastery_behaviors_when_learning.pdf#page=7",
+        "https://www.pittcorelab.com/uploads/1/1/5/5/115561629/intellectual_humility_predicts_mastery_behaviors_when_learning.pdf#page=9"
+      ],
+      "sources": [
+        "https://doi.org/10.1080/00223891.2021.1975725",
+        "https://chaycebaldwin.com/uploads/clarifying-content-ih.pdf",
+        "https://doi.org/10.1016/j.lindif.2020.101888",
+        "https://www.pittcorelab.com/uploads/1/1/5/5/115561629/intellectual_humility_predicts_mastery_behaviors_when_learning.pdf"
+      ],
+      "screenshot": "intellectual-humility-no-js-320.png"
+    },
+    {
+      "name": "psychology/attention.html: substantive open study works without JavaScript at 320px",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/psychology/attention.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/collections.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/psychology/study.css",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "citations": [
+        "https://maidlab.uoregon.edu/PDFs/PDFs/Unsworth%26McMillan%282013%29LMC.pdf#page=4",
+        "https://maidlab.uoregon.edu/PDFs/PDFs/Unsworth%26McMillan%282013%29LMC.pdf#page=9",
+        "https://maidlab.uoregon.edu/PDFs/PDFs/Unsworth%26McMillan%282013%29LMC.pdf#page=9"
+      ],
+      "sources": [
+        "https://doi.org/10.1037/a0029669",
+        "https://maidlab.uoregon.edu/PDFs/PDFs/Unsworth%26McMillan%282013%29LMC.pdf"
+      ],
+      "screenshot": "attention-no-js-320.png"
+    },
+    {
+      "name": "psychology/emotion-regulation.html: substantive open study works without JavaScript at 320px",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/psychology/emotion-regulation.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/collections.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/psychology/study.css",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320
+      },
+      "citations": [
+        "https://people.socsci.tau.ac.il/mu/galsheppes/files/2016/10/Sheppes-G.-Scheibe-S.-Suri-G.-Gross-J.J.-2011.-Emotion-Regulation-Choice.pdf#page=2",
+        "https://people.socsci.tau.ac.il/mu/galsheppes/files/2016/10/Sheppes-G.-Scheibe-S.-Suri-G.-Gross-J.J.-2011.-Emotion-Regulation-Choice.pdf#page=3",
+        "https://people.socsci.tau.ac.il/mu/galsheppes/files/2016/10/Sheppes-G.-Scheibe-S.-Suri-G.-Gross-J.J.-2011.-Emotion-Regulation-Choice.pdf#page=5"
+      ],
+      "sources": [
+        "https://doi.org/10.1177/0956797611418350",
+        "https://people.socsci.tau.ac.il/mu/galsheppes/files/2016/10/Sheppes-G.-Scheibe-S.-Suri-G.-Gross-J.J.-2011.-Emotion-Regulation-Choice.pdf"
+      ],
+      "screenshot": "emotion-regulation-no-js-320.png"
+    },
+    {
+      "name": "Optional psychology link opens public study and Back returns to the exact source route without saving anything",
+      "status": "PASS",
+      "requests": [
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/psychology/intellectual-humility.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/collections.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/psychology/study.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/sggs/index.html",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-reader/reader.bundle.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/manifest.json",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "path": "/gurbani-learning-review/collections/source-data/sggs/chunks/c0001.json",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "external": [],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "storage": {
+        "reads": [
+          [
+            "local",
+            "glp001.sikh-source-place.v1:sggs:shabados-5.0.0-next.0-SGGS-SSA2"
+          ]
+        ],
+        "writes": [],
+        "removes": [],
+        "clears": []
+      }
+    }
+  ],
+  "failures": [],
+  "sourceHashes": {
+    "collections/source-data/sggs/manifest.json": "04da157b5e7ba85ce0fe35aae983baba3284bc75990be374e556ab3c52da5def",
+    "collections/source-data/sggs/chunks/c0001.json": "03f2aaf5eb520cecb97829bdba098ebda9458659c28433c97bc64bde05ad3d4f",
+    "collections/source-data/dasam/manifest.json": "2ba6005655429eeb07b4477d4bf9a18b4f62e86224107d72793ec5f2bd441ad6",
+    "collections/source-data/dasam/chunks/c0001.json": "3585c5bd996f28297def529a5a38a347200f166e94cdc4855b546037dcf0f18e",
+    "collections/source-reader/lesson-data.mjs": "593c9dc6b6a1d799b7155befdaa8888041567109132e726515b75e0a95e5002d",
+    "collections/source-reader/reader.bundle.mjs": "9e21f46d95a8ade467f5e865ab47a545b3e75f2be35264fcb4311e2acba904be",
+    "collections/sggs/index.html": "00d7aa568e1eb236cef0ec7587d22a1c63af9f15dd018af0a2f3e4339313b229",
+    "collections/source-reader/reader.css": "041c8d475b555cb7d3962dac042b78624ef39cc114d20d2ec822575df4fc51b4",
+    "collections/dasam/read.html": "32b506ddcf1622ab5b8056fe168a8afe6ebdc88d68cbbe69de89becfe5249406",
+    "psychology/intellectual-humility.html": "886a2a374074a8595732751b814ccd3a9be35fe39b8a0e57947b491813e19b7d",
+    "collections/collections.css": "e0235b8eea260b0adb85a8676188c34b71db9842cc75f8fd4edeae1b4d163b09",
+    "psychology/study.css": "cba1bfba66f02af746bf3acade8b2e734aa38f3ec636252e136a3d2f279d7fce",
+    "psychology/attention.html": "179233a853afb3ac08a4e6478cce0c74b5d0ea3520b71800f89e89ab04111f9d",
+    "psychology/emotion-regulation.html": "2d4b64a71efdf79e6fbd665b99a1e392256e43d676060864958dc2aa63e99b7b"
+  },
+  "sourceBytes": {
+    "collections/source-data/sggs/manifest.json": 1116397,
+    "collections/source-data/sggs/chunks/c0001.json": 128986,
+    "collections/source-data/dasam/manifest.json": 1101376,
+    "collections/source-data/dasam/chunks/c0001.json": 128082,
+    "collections/source-reader/lesson-data.mjs": 55861,
+    "collections/source-reader/reader.bundle.mjs": 104825,
+    "collections/sggs/index.html": 5574,
+    "collections/source-reader/reader.css": 9052,
+    "collections/dasam/read.html": 5306,
+    "psychology/intellectual-humility.html": 6215,
+    "collections/collections.css": 2382,
+    "psychology/study.css": 1152,
+    "psychology/attention.html": 5385,
+    "psychology/emotion-regulation.html": 5548
+  },
+  "limits": [
+    "Actual desktop Chrome with fresh contexts and synthetic records only; no existing browser profile, owner PIN, private collection or personal reflection.",
+    "UI and declared teaching transfer are checked; this is not independent interpretation, medical efficacy, printed collation or Claude review.",
+    "Original DMP and LLL are independently hash-pinned; teaching expectations come from the separate declared lesson data.",
+    "Service workers are blocked here to isolate learning delivery; the integration suite owns offline and update behavior.",
+    "Narrow desktop viewports do not establish physical iPhone, Safari or VoiceOver behavior."
+  ],
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "darwin",
+    "browser": "158.0.8127.37",
+    "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "filesDifferentFromRecordedHead": [],
+  "finished": "2026-11-28T00:34:27.233Z",
+  "fixtureSha256": "36f2adcefaa1e3300abef3cfb8151bc143168c2119bd08f90154de9aeff68dc0",
+  "passed": 25,
+  "failed": 0
+}

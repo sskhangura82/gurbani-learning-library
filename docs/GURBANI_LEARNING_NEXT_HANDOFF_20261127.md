@@ -58,7 +58,23 @@ The three pages and their stylesheet are added to the public offline shell. This
 - `tests/gurbani-learning-inputs.mjs` checks every pre-existing application file against the parent, allowing only the declared changes and additions.
 - `tests/gurbani-learning-browser.mjs` checks actual UI behavior in isolated browser contexts with synthetic saved data.
 
-Final verification results are recorded separately alongside their exact application digests. Tests establish the stated engineering behavior; the bilingual meaning, named interpretation differences and research summaries still need Claude's source-by-source review of this new revision.
+The tested runtime commit is `90b232c39742ef64d817f3273ee4a98218f89486`. Later packaging adds evidence and review documentation only. `evidence/gurbani-learning/verification/runtime-digests.json` records the exact application inventory, and `summary.json` binds the retained reports and fixtures.
+
+| Verification | Result |
+| --- | --- |
+| New lesson/input contracts and existing integrity, catalog, public-access and private-offline contracts | 50 passed |
+| Full-source core checks | 16 passed; all 155 chunks, 11,019 groups and 128,313 original records verified |
+| New learning behavior in actual Chrome | 25 passed |
+| Existing full-source reader behavior in actual Chrome | 35 passed |
+| Combined library navigation in actual Chrome | 10 passed |
+| Actual service-worker installation, failed updates, saved-learning preservation and offline psychology | 7 passed |
+| Service-worker simulation | 9 passed |
+
+Counts overlap and are not an aggregate count of unique behaviors. Browser evidence uses fresh desktop Chrome contexts on macOS, including 320px layouts, synthetic saved records and emulated offline networking. It does not establish physical iPhone, Safari or VoiceOver acceptance. The new browser fixture additionally verified that all 14 files it read matched the tested Git commit. Screenshots were inspected for the desktop explanation, narrow Punjabi explanation and script-free psychology layout.
+
+The built delivery inventory remains five closed bundles, now with 32 declared inputs, 24 HTML pages, 61 script integrity attributes and 121 public offline assets. Exact-head GitHub verification belongs to the separate stacked draft PR's Checks; local browser evidence is not presented as a GitHub run.
+
+Tests establish the stated engineering behavior; the bilingual meaning, named interpretation differences and research summaries still need Claude's source-by-source review of this new revision. `docs/CLAUDE_GURBANI_LEARNING_REVIEW_20261127.md` supplies a focused review scope without changing PR #75's review packet.
 
 ## Next editorial work
 
